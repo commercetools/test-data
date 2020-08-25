@@ -1,0 +1,31 @@
+{
+  "name": "@commercetools-test-data/core",
+  "version": "1.0.0",
+  "description": "This package provides the core functions to define the data models",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "core"
+  },
+  "keywords": [
+    "javascript",
+    "test-data"
+  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/core.cjs.js",
+  "module": "./dist/core.es.js",
+  "typings": "./dist/typings/index.d.ts",
+  "types": "./dist/typings/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {}
+}
