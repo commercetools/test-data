@@ -27,5 +27,8 @@
     "LICENSE",
     "README.md"
   ],
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "@jackfranklin/test-data-bot": "1.3.0"
+  }
 }
