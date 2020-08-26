@@ -43,21 +43,19 @@ export type TGeneratorResult<FactoryResultType> = {
 };
 export type TTransformType = 'default' | 'graphql' | 'rest';
 export type TTransformBuildName = 'build' | 'buildGraphql' | 'buildRest';
-export type TTransformsObject<
+export type TTransformerOptions<
   Model extends Json,
   TransformedModel extends Json
 > = {
-  [name in TTransformType]?: {
-    addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
-    replaceFields?: (args: { fields: Model }) => Partial<Model>;
-    removeFields?: (keyof Model)[];
-    buildFields?: (keyof Model)[];
-  };
+  addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
+  replaceFields?: (args: { fields: Model }) => Partial<Model>;
+  removeFields?: (keyof Model)[];
+  buildFields?: (keyof Model)[];
 };
-export type TTransformer<Model extends Json, TransformedModel extends Json> = {
-  hasTransform(name: TTransformType): boolean;
-  transform(args: { name: TTransformType; fields: Model }): TransformedModel;
-};
+export interface TTransformer<Model extends Json> {
+  type: TTransformType;
+  transform(fields: Model): unknown;
+}
 export type TPropertyFieldUpdater<Model extends Json> = (
   fnOrValue: string | TMapFunction<Model>
 ) => TPropertyBuilder<Model>;
@@ -67,30 +65,65 @@ export type TPropertyBuilder<Model extends Json> = {
   get: () => Partial<Model>;
   update: (obj: Partial<Model>) => TPropertyBuilder<Model>;
 };
-export type TFieldUpdater<Model extends Json, Value, FullModel extends Json> = (
+export type TFieldUpdater<
+  TransformerType extends TTransformType,
+  Model extends Json,
+  Value,
+  FullModel extends Json
+> = (
   fnOrValue: TMapFunction<FullModel> | Value
-) => TBuilder<Model, FullModel>;
-export type TFieldBuilder<Model extends Json> = (args?: {
-  omitFields?: string[];
-  onlyFields?: string[];
-}) => Model;
-export type TBuilder<Model extends Json, FullModel extends Json = Model> = {
+) => TBuilder<TransformerType, Model, FullModel>;
+export type TFieldBuilderArgs<Model extends Json> = {
+  omitFields?: (keyof Model)[];
+  onlyFields?: (keyof Model)[];
+};
+export type TBuilder<
+  TransformerType extends TTransformType,
+  Model extends Json,
+  FullModel extends Json = Model
+> = {
   [K in keyof Required<Model>]: TFieldUpdater<
+    TransformerType,
     Omit<Model, K>,
     Model[K],
     FullModel
   >;
 } & {
-  build: TFieldBuilder<FullModel>;
-  // TODO: additionally add the fields from the transformer
+  build<TransformedModel extends Json>(
+    args?: TFieldBuilderArgs<TransformedModel>
+  ): TransformedModel;
+  buildGraphql<TransformedModel extends Json>(
+    args?: TFieldBuilderArgs<TransformedModel>
+  ): 'graphql' extends TransformerType ? TransformedModel : never;
+  buildRest<TransformedModel extends Json>(
+    args?: TFieldBuilderArgs<TransformedModel>
+  ): 'rest' extends TransformerType ? TransformedModel : never;
 };
-export type TBuilderOptions<
-  Model extends Json,
-  TransformedModel extends Json = Model
-> = {
+export type TDefaultTransformer<
+  TransformerType extends TTransformType,
+  Model extends Json
+> = 'default' extends TransformerType
+  ? { default: TTransformer<Model> }
+  : never;
+export type TGraphqlTransformer<
+  TransformerType extends TTransformType,
+  Model extends Json
+> = 'graphql' extends TransformerType
+  ? { graphql: TTransformer<Model> }
+  : never;
+export type TRestTransformer<
+  TransformerType extends TTransformType,
+  Model extends Json
+> = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
+export type TBuilderOptions<Model extends Json> = {
   defaults?: Partial<Model>;
   generator?: TGeneratorResult<Model>;
-  transformer?: TTransformer<Model, TransformedModel>;
+  // transformers?: TDefaultTransformer<TransformerType, Model> &
+  //   TGraphqlTransformer<TransformerType, Model> &
+  //   TRestTransformer<TransformerType, Model>;
+  transformers?: {
+    [Key in TTransformType]?: TTransformer<Model>;
+  };
 };
 
 /* TYPES DECLARATIONS FROM @jackfranklin/test-data-bot */

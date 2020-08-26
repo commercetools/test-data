@@ -1,10 +1,11 @@
 import { sequence, fake } from '@jackfranklin/test-data-bot';
-import Builder, {
+import {
   buildField,
   buildFields,
   buildGraphqlList,
   buildRestList,
-} from './builder';
+} from './helpers';
+import Builder from './builder';
 import Generator from './generator';
 import Transformer from './transformer';
 
@@ -55,15 +56,15 @@ describe('building', () => {
       describe('when adding fields', () => {
         describe('when field does not exist', () => {
           it('should add the desired fields', () => {
-            const transformer = Transformer({
-              graphql: {
+            const transformers = {
+              graphql: Transformer('graphql', {
                 addFields: ({ fields }) => ({
                   identifier: fields.id,
                 }),
-              },
-            });
+              }),
+            };
             const built = Builder({
-              transformer,
+              transformers,
             })
               .id(1)
               .userName('Fred')
@@ -89,15 +90,15 @@ describe('building', () => {
 
         describe('when field exists', () => {
           it('should not add the desired fields', () => {
-            const transformer = Transformer({
-              graphql: {
+            const transformers = {
+              graphql: Transformer('graphql', {
                 addFields: () => ({
                   id: 2,
                 }),
-              },
-            });
+              }),
+            };
             const built = Builder({
-              transformer,
+              transformers,
             })
               .id(1)
               .userName('Fred')
@@ -125,15 +126,15 @@ describe('building', () => {
       describe('when replacing fields', () => {
         describe('when field does not exist', () => {
           it('should not add the desired fields', () => {
-            const transformer = Transformer({
-              graphql: {
+            const transformers = {
+              graphql: Transformer('graphql', {
                 replaceFields: ({ fields }) => ({
                   identifier: fields.id,
                 }),
-              },
-            });
+              }),
+            };
             const built = Builder({
-              transformer,
+              transformers,
             })
               .id(1)
               .userName('Fred')
@@ -159,15 +160,15 @@ describe('building', () => {
 
         describe('when field exists', () => {
           it('should replace the desired fields', () => {
-            const transformer = Transformer({
-              graphql: {
+            const transformers = {
+              graphql: Transformer('graphql', {
                 replaceFields: ({ fields }) => ({
                   id: fields.id + 1,
                 }),
-              },
-            });
+              }),
+            };
             const built = Builder({
-              transformer,
+              transformers,
             })
               .id(1)
               .userName('Fred')
@@ -195,13 +196,14 @@ describe('building', () => {
 
     describe('when removing fields', () => {
       it('should remove the desired fields', () => {
-        const transformer = Transformer({
-          graphql: {
+        const transformers = {
+          graphql: Transformer('graphql', {
             removeFields: ['id'],
-          },
-        });
+          }),
+        };
+
         const built = Builder({
-          transformer,
+          transformers,
         })
           .id(1)
           .userName('Fred')
@@ -266,8 +268,8 @@ describe('building', () => {
     });
 
     it('should build all build upon properties with transforms', () => {
-      const transformer = Transformer({
-        graphql: {
+      const transformers = {
+        graphql: Transformer('graphql', {
           addFields: ({ fields }) => {
             const identifier = 1;
 
@@ -277,11 +279,11 @@ describe('building', () => {
             };
           },
           removeFields: ['id', 'version'],
-        },
-      });
+        }),
+      };
       const built = Builder({
         generator,
-        transformer,
+        transformers,
         defaults: {
           version: 2,
         },
@@ -363,12 +365,12 @@ describe('building', () => {
       describe('with default transform', () => {
         describe('with property', () => {
           it('should build nested builder on demand', () => {
-            const transformer = Transformer({
-              default: {
+            const transformers = {
+              default: Transformer('default', {
                 buildFields: ['user'],
-              },
-            });
-            const built = Builder({ transformer })
+              }),
+            };
+            const built = Builder({ transformers })
               .id('my-id')
               .user(Builder().name('My name'))
               .build();
@@ -389,12 +391,12 @@ describe('building', () => {
       describe('with named transform', () => {
         describe('with property', () => {
           it('should build nested builder on demand', () => {
-            const transformer = Transformer({
-              graphql: {
+            const transformers = {
+              graphql: Transformer('graphql', {
                 buildFields: ['user'],
-              },
-            });
-            const built = Builder({ transformer })
+              }),
+            };
+            const built = Builder({ transformers })
               .id('my-id')
               .user(Builder().name('My name'))
               .buildGraphql();
@@ -413,23 +415,25 @@ describe('building', () => {
 
         describe('with list', () => {
           it('should build nested builders', () => {
-            const teamTransformer = Transformer({
-              graphql: {
+            const teamTransformers = {
+              graphql: Transformer('graphql', {
                 buildFields: ['users'],
-              },
-            });
-            const userTransformer = Transformer({
-              graphql: {
+              }),
+            };
+            const userTransformers = {
+              graphql: Transformer('graphql', {
                 addFields: () => ({
                   id: 1,
                 }),
-              },
-            });
-            const built = Builder({ transformer: teamTransformer })
+              }),
+            };
+            const built = Builder({ transformers: teamTransformers })
               .id('my-id')
               .users([
-                Builder({ transformer: userTransformer }).name('My name'),
-                Builder({ transformer: userTransformer }).name('My other name'),
+                Builder({ transformers: userTransformers }).name('My name'),
+                Builder({ transformers: userTransformers }).name(
+                  'My other name'
+                ),
               ])
               .buildGraphql();
 
@@ -457,14 +461,14 @@ describe('building', () => {
     describe('building in transform', () => {
       describe('with property', () => {
         it('should build nested builders on demand', () => {
-          const transformer = Transformer({
-            graphql: {
+          const transformers = {
+            graphql: Transformer('graphql', {
               replaceFields: ({ fields }) => ({
                 user: buildField(fields.user),
               }),
-            },
-          });
-          const built = Builder({ transformer })
+            }),
+          };
+          const built = Builder({ transformers })
             .id('my-id')
             .user(Builder().name('My name'))
             .buildGraphql();
@@ -483,25 +487,25 @@ describe('building', () => {
 
       describe('with list', () => {
         it('should build nested builders on demand', () => {
-          const teamTransformer = Transformer({
-            graphql: {
+          const teamTransformers = {
+            graphql: Transformer('graphql', {
               replaceFields: ({ fields }) => ({
                 users: buildFields(fields.users, 'graphql'),
               }),
-            },
-          });
-          const userTransformer = Transformer({
-            graphql: {
+            }),
+          };
+          const userTransformers = {
+            graphql: Transformer('graphql', {
               addFields: () => ({
                 id: 1,
               }),
-            },
-          });
-          const built = Builder({ transformer: teamTransformer })
+            }),
+          };
+          const built = Builder({ transformers: teamTransformers })
             .id('my-id')
             .users([
-              Builder({ transformer: userTransformer }).name('My name'),
-              Builder({ transformer: userTransformer }).name('My other name'),
+              Builder({ transformers: userTransformers }).name('My name'),
+              Builder({ transformers: userTransformers }).name('My other name'),
             ])
             .buildGraphql();
 

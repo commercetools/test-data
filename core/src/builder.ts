@@ -4,13 +4,13 @@ import type {
   TBuilderOptions,
   TBuilder,
   TPropertyBuilder,
-  TTransformBuildName,
+  TTransformType,
 } from './types';
 
 import {
   isFunction,
+  isBuilderFunction,
   isString,
-  convertBuiltNameToTransformName,
   onlyProps,
   omitMany,
 } from './helpers';
@@ -77,11 +77,11 @@ function PropertyBuilder<Model extends Json>({
   return builder;
 }
 
-function Builder<Model extends Json, TransformedModel extends Json>({
+function Builder<Model extends Json, TransformerType extends TTransformType>({
   defaults,
   generator,
-  transformer,
-}: TBuilderOptions<Model, TransformedModel> = {}): TBuilder<Model> {
+  transformers,
+}: TBuilderOptions<Model> = {}): TBuilder<TransformerType, Model> {
   const propertyBuilder = PropertyBuilder<Model>({ defaults });
   const applyGeneratorIfExists = (): Partial<Model> => {
     if (!generator) return {};
@@ -90,14 +90,14 @@ function Builder<Model extends Json, TransformedModel extends Json>({
 
   const builder: {
     generated: Partial<Model> | null;
-    proxy: TBuilder<Model>;
+    proxy: TBuilder<TransformerType, Model>;
   } = {
     generated: null,
-    proxy: new CustomProxy<Partial<Model>, TBuilder<Model>>(
+    proxy: new CustomProxy<Partial<Model>, TBuilder<TransformerType, Model>>(
       {},
       {
         get(_target, propToSet) {
-          if (isString(propToSet) && propToSet.startsWith('build')) {
+          if (isBuilderFunction(propToSet)) {
             if (!builder.generated) {
               builder.generated = applyGeneratorIfExists();
             }
@@ -108,30 +108,37 @@ function Builder<Model extends Json, TransformedModel extends Json>({
                 ...propertyBuilder.get(),
               } as Model;
 
-              const nameOfTransform = convertBuiltNameToTransformName(
-                propToSet as TTransformBuildName
-              );
-
-              if (
-                propToSet === 'built' ||
-                !transformer?.hasTransform(nameOfTransform)
-              ) {
-                return onlyProps<Model>(
-                  onlyFields,
-                  omitMany(built, omitFields)
-                );
+              switch (propToSet) {
+                case 'build':
+                  return onlyProps<Model>(
+                    onlyFields,
+                    omitMany(
+                      transformers?.default?.transform(built) ?? built,
+                      omitFields
+                    )
+                  );
+                case 'buildGraphql':
+                  return onlyProps<Model>(
+                    onlyFields,
+                    omitMany(
+                      transformers?.graphql?.transform(built) ?? built,
+                      omitFields
+                    )
+                  );
+                case 'buildRest':
+                  return onlyProps<Model>(
+                    onlyFields,
+                    omitMany(
+                      transformers?.rest?.transform(built) ?? built,
+                      omitFields
+                    )
+                  );
+                default:
+                  return onlyProps<Model>(
+                    onlyFields,
+                    omitMany(built, omitFields)
+                  );
               }
-
-              return onlyProps<TransformedModel>(
-                onlyFields,
-                omitMany(
-                  transformer.transform({
-                    name: nameOfTransform,
-                    fields: built,
-                  }),
-                  omitFields
-                )
-              );
             };
           }
 

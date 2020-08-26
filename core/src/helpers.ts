@@ -8,7 +8,6 @@ import type {
   TGraphqlPaginatedQueryResult,
   TGraphqlPaginatedQueryResultOptions,
   TBuildFieldMeta,
-  TFieldBuilder,
   TTransformType,
   TTransformBuildName,
 } from './types';
@@ -18,23 +17,12 @@ const isFunction = <Fn>(value: unknown): value is Fn =>
 const isString = (value: unknown): value is string => typeof value === 'string';
 const isObject = (value: unknown): value is object =>
   Object.prototype.toString.call(value) === '[object Object]';
+const isBuilderFunction = (value: unknown): value is TTransformBuildName =>
+  ['build', 'buildGraphql', 'buildRest'].includes(value as TTransformBuildName);
 const upperFirst = (value: string): string =>
   value.charAt(0).toUpperCase() + value.slice(1);
 const lowerFirst = (value: string): string =>
   value.charAt(0).toLowerCase() + value.slice(1);
-// const removeProps = <Model extends Json>(
-//   propsToRemove: (keyof Model)[],
-//   built: Model
-// ): Omit<Model, typeof propsToRemove> =>
-//   Object.entries(built).reduce((objectWithoutProps, [propKey, propValue]) => {
-//     if (propsToRemove.includes(propKey)) {
-//       return objectWithoutProps;
-//     }
-//     return {
-//       ...objectWithoutProps,
-//       [propKey]: propValue,
-//     };
-//   }, {});
 const omitOne = <T, K extends keyof T>(entity: T, prop: K): Omit<T, K> => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { [prop]: deleted, ...newState } = entity;
@@ -122,8 +110,8 @@ const toGraphqlPaginatedQueryResult = <Model extends Json>(
     ...toRestPaginatedQueryResult(list, remainingOptions),
   };
 };
-const buildField = <Model extends Json>(
-  builder: TBuilder<Model>,
+const buildField = <TransformerType extends TTransformType, Model extends Json>(
+  builder: TBuilder<TransformerType, Model>,
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Partial<Model> => {
@@ -133,20 +121,26 @@ const buildField = <Model extends Json>(
       `Builder with name '${buildName}' does not exist on field '${meta?.fieldToBuild}'.`
     );
   }
-  return ((builder[buildName] as unknown) as TFieldBuilder<Model>)();
+  return ((builder[buildName] as unknown) as () => Model)();
 };
-const buildFields = <Model extends Json>(
-  builders: TBuilder<Model>[],
+const buildFields = <
+  TransformerType extends TTransformType,
+  Model extends Json
+>(
+  builders: TBuilder<TransformerType, Model>[],
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Partial<Model>[] =>
   builders.map((builder) => buildField(builder, transformName, meta));
-const buildGraphqlList = <Model extends Json>(
-  builders: TBuilder<Model>[],
+const buildGraphqlList = <
+  TransformerType extends TTransformType,
+  Model extends Json
+>(
+  builders: TBuilder<TransformerType, Model>[],
   { name, total, offset }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
   return toGraphqlPaginatedQueryResult<Model>(
-    buildFields<Model>(builders, 'graphql'),
+    buildFields<TransformerType, Model>(builders, 'graphql'),
     {
       name,
       total,
@@ -154,8 +148,11 @@ const buildGraphqlList = <Model extends Json>(
     }
   );
 };
-const buildRestList = <Model extends Json>(
-  builders: TBuilder<Model>[],
+const buildRestList = <
+  TransformerType extends TTransformType,
+  Model extends Json
+>(
+  builders: TBuilder<TransformerType, Model>[],
   { total, offset }: TPaginatedQueryResultOptions
 ): TPaginatedQueryResult<Model> => {
   return toRestPaginatedQueryResult(buildFields(builders, 'rest'), {
@@ -168,6 +165,7 @@ export {
   isFunction,
   isString,
   isObject,
+  isBuilderFunction,
   upperFirst,
   lowerFirst,
   onlyProps,
