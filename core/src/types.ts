@@ -25,8 +25,8 @@ export type TGraphqlPaginatedQueryResultOptions = {
 export type TGraphqlPaginatedQueryResult<Model extends Json> = {
   __typename: string;
 } & TPaginatedQueryResult<Model>;
-export type TBuildFieldMeta = {
-  fieldToBuild: string;
+export type TBuildFieldMeta<Model extends Json> = {
+  fieldToBuild: keyof Model;
 };
 export type TMapFunction<Model extends Json> = (
   state: Partial<Model>
@@ -41,20 +41,22 @@ export type TGeneratorResult<FactoryResultType> = {
     defaults?: Partial<FactoryResultType>;
   }) => FactoryResultType;
 };
+export type TTransformType = 'default' | 'graphql' | 'rest';
+export type TTransformBuildName = 'build' | 'buildGraphql' | 'buildRest';
 export type TTransformsObject<
   Model extends Json,
-  NewModel extends Json = Model
+  TransformedModel extends Json
 > = {
-  [name: string]: {
-    addFields?: (args: { fields: Model }) => Partial<NewModel>;
-    replaceFields?: (args: { fields: Model }) => Partial<NewModel>;
-    removeFields?: string[];
-    buildFields?: string[];
+  [name in TTransformType]?: {
+    addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
+    replaceFields?: (args: { fields: Model }) => Partial<Model>;
+    removeFields?: (keyof Model)[];
+    buildFields?: (keyof Model)[];
   };
 };
-export type TTransformer<Model extends Json, NewModel extends Json = Model> = {
-  hasTransform: (name: string) => boolean;
-  transform: (args: { name: string; fields: Model }) => NewModel;
+export type TTransformer<Model extends Json, TransformedModel extends Json> = {
+  hasTransform(name: TTransformType): boolean;
+  transform(args: { name: TTransformType; fields: Model }): TransformedModel;
 };
 export type TPropertyFieldUpdater<Model extends Json> = (
   fnOrValue: string | TMapFunction<Model>
@@ -84,11 +86,11 @@ export type TBuilder<Model extends Json, FullModel extends Json = Model> = {
 };
 export type TBuilderOptions<
   Model extends Json,
-  NewModel extends Json = Model
+  TransformedModel extends Json = Model
 > = {
   defaults?: Partial<Model>;
   generator?: TGeneratorResult<Model>;
-  transformer?: TTransformer<Model, NewModel>;
+  transformer?: TTransformer<Model, TransformedModel>;
 };
 
 /* TYPES DECLARATIONS FROM @jackfranklin/test-data-bot */

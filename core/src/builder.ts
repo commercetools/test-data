@@ -4,6 +4,7 @@ import type {
   TBuilderOptions,
   TBuilder,
   TPropertyBuilder,
+  TTransformBuildName,
 } from './types';
 
 import {
@@ -11,7 +12,7 @@ import {
   isString,
   convertBuiltNameToTransformName,
   onlyProps,
-  removeProps,
+  omitMany,
 } from './helpers';
 
 interface CustomProxyConstructor {
@@ -76,11 +77,11 @@ function PropertyBuilder<Model extends Json>({
   return builder;
 }
 
-function Builder<Model extends Json, NewModel extends Json = Model>({
+function Builder<Model extends Json, TransformedModel extends Json>({
   defaults,
   generator,
   transformer,
-}: TBuilderOptions<Model, NewModel> = {}): TBuilder<Model> {
+}: TBuilderOptions<Model, TransformedModel> = {}): TBuilder<Model> {
   const propertyBuilder = PropertyBuilder<Model>({ defaults });
   const applyGeneratorIfExists = (): Partial<Model> => {
     if (!generator) return {};
@@ -108,7 +109,7 @@ function Builder<Model extends Json, NewModel extends Json = Model>({
               } as Model;
 
               const nameOfTransform = convertBuiltNameToTransformName(
-                propToSet
+                propToSet as TTransformBuildName
               );
 
               if (
@@ -117,18 +118,18 @@ function Builder<Model extends Json, NewModel extends Json = Model>({
               ) {
                 return onlyProps<Model>(
                   onlyFields,
-                  removeProps<Model>(omitFields, built)
+                  omitMany(built, omitFields)
                 );
               }
 
-              return onlyProps<NewModel>(
+              return onlyProps<TransformedModel>(
                 onlyFields,
-                removeProps<NewModel>(
-                  omitFields,
+                omitMany(
                   transformer.transform({
                     name: nameOfTransform,
                     fields: built,
-                  })
+                  }),
+                  omitFields
                 )
               );
             };

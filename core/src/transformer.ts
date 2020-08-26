@@ -6,16 +6,11 @@ import type {
   TBuilder,
 } from './types';
 
-import {
-  isObject,
-  buildField,
-  buildFields,
-  isDefaultTransform,
-} from './helpers';
+import { isObject, buildField, buildFields } from './helpers';
 
-function Transformer<Model extends Json, NewModel extends Json = Model>(
-  transforms: TTransformsObject<Model, NewModel>
-): TTransformer<Model, NewModel> {
+function Transformer<Model extends Json, TransformedModel extends Json>(
+  transforms: TTransformsObject<Model, TransformedModel>
+): TTransformer<Model, TransformedModel> {
   return {
     hasTransform(name) {
       return Boolean(transforms[name]);
@@ -51,8 +46,8 @@ function Transformer<Model extends Json, NewModel extends Json = Model>(
 
       // The default transformer only allows building nested fields to not
       // allow re-transforming model shape
-      if (isDefaultTransform(name))
-        return (transformedFields as unknown) as NewModel;
+      if (name === 'default')
+        return (transformedFields as unknown) as TransformedModel;
 
       if (fieldsAdder) {
         const fieldsToAdd = fieldsAdder({ fields });
@@ -84,7 +79,7 @@ function Transformer<Model extends Json, NewModel extends Json = Model>(
         });
       }
 
-      return (transformedFields as unknown) as NewModel;
+      return (transformedFields as unknown) as TransformedModel;
     },
   };
 }
