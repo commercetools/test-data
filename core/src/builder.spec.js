@@ -337,11 +337,11 @@ describe('building', () => {
         });
       });
 
-      describe('with `onlyFields`', () => {
+      describe('with `keepFields`', () => {
         it('should build properties and omit as requested', () => {
           const built = Builder({ generator })
             .email('fred@foo.com')
-            .build({ onlyFields: ['id', 'version'] });
+            .build({ keepFields: ['id', 'version'] });
 
           expect(built).toEqual(
             expect.objectContaining({

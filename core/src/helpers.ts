@@ -1,6 +1,6 @@
 import type {
   Json,
-  TData,
+  TReferenceObject,
   TExpandedReference,
   TBuilder,
   TPaginatedQueryResult,
@@ -14,21 +14,30 @@ import type {
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
   typeof value === 'function';
+
 const isString = (value: unknown): value is string => typeof value === 'string';
+
 const isObject = (value: unknown): value is object =>
   Object.prototype.toString.call(value) === '[object Object]';
+
 const isBuilderFunction = (value: unknown): value is TTransformBuildName =>
   ['build', 'buildGraphql', 'buildRest'].includes(value as TTransformBuildName);
+
 const upperFirst = (value: string): string =>
   value.charAt(0).toUpperCase() + value.slice(1);
+
 const lowerFirst = (value: string): string =>
   value.charAt(0).toLowerCase() + value.slice(1);
+
 const omitOne = <T, K extends keyof T>(entity: T, prop: K): Omit<T, K> => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { [prop]: deleted, ...newState } = entity;
   return newState;
 };
-const omitMany = <T, K extends keyof T>(entity: T, props: K[]): Omit<T, K> => {
+const omitMany = <T, K extends keyof T = keyof T>(
+  entity: T,
+  ...props: K[]
+): Omit<T, K> => {
   let result = entity as Omit<T, K>;
   props.forEach((prop) => {
     result = omitOne(result, (prop as unknown) as keyof Omit<T, K>) as Omit<
@@ -38,20 +47,15 @@ const omitMany = <T, K extends keyof T>(entity: T, props: K[]): Omit<T, K> => {
   });
   return result;
 };
-const onlyProps = <Model extends Json>(
-  propsToKeep: string[] | null,
-  built: Partial<Model>
-): Partial<Model> => {
-  if (propsToKeep === null) return built;
 
-  Object.keys(built).forEach((prop) => {
-    if (!propsToKeep.includes(prop)) {
-      delete built[prop];
-    }
-  });
-
-  return built;
+const pickMany = <T, K extends keyof T = keyof T>(
+  entity: T,
+  ...props: K[]
+): Pick<T, K> => {
+  const entries = props.map((prop) => [prop, entity[prop]]);
+  return Object.fromEntries(entries);
 };
+
 const convertBuiltNameToTransformName = (
   buildName: TTransformBuildName
 ): TTransformType => {
@@ -66,6 +70,7 @@ const convertBuiltNameToTransformName = (
       throw new Error(`Unknown property build name ${buildName}`);
   }
 };
+
 const convertTransformNameToBuildName = (
   transformName: TTransformType
 ): TTransformBuildName => {
@@ -80,8 +85,9 @@ const convertTransformNameToBuildName = (
       throw new Error(`Unknown property build name ${transformName}`);
   }
 };
+
 const toExpandedReference = (typeId?: string) => (
-  data?: TData
+  data?: TReferenceObject
 ): TExpandedReference | null =>
   typeId && data?.id
     ? {
@@ -90,6 +96,7 @@ const toExpandedReference = (typeId?: string) => (
         obj: data,
       }
     : null;
+
 const toRestPaginatedQueryResult = <Model extends Json>(
   list: Partial<Model>[],
   { total = 100, offset = 0 }: TPaginatedQueryResultOptions = {}
@@ -101,6 +108,7 @@ const toRestPaginatedQueryResult = <Model extends Json>(
     results: list,
   };
 };
+
 const toGraphqlPaginatedQueryResult = <Model extends Json>(
   list: Partial<Model>[],
   { name, ...remainingOptions }: TGraphqlPaginatedQueryResultOptions
@@ -110,6 +118,7 @@ const toGraphqlPaginatedQueryResult = <Model extends Json>(
     ...toRestPaginatedQueryResult(list, remainingOptions),
   };
 };
+
 const buildField = <TransformerType extends TTransformType, Model extends Json>(
   builder: TBuilder<TransformerType, Model>,
   transformName: TTransformType = 'default',
@@ -123,6 +132,7 @@ const buildField = <TransformerType extends TTransformType, Model extends Json>(
   }
   return ((builder[buildName] as unknown) as () => Model)();
 };
+
 const buildFields = <
   TransformerType extends TTransformType,
   Model extends Json
@@ -132,6 +142,7 @@ const buildFields = <
   meta?: TBuildFieldMeta<Model>
 ): Partial<Model>[] =>
   builders.map((builder) => buildField(builder, transformName, meta));
+
 const buildGraphqlList = <
   TransformerType extends TTransformType,
   Model extends Json
@@ -148,6 +159,7 @@ const buildGraphqlList = <
     }
   );
 };
+
 const buildRestList = <
   TransformerType extends TTransformType,
   Model extends Json
@@ -168,8 +180,8 @@ export {
   isBuilderFunction,
   upperFirst,
   lowerFirst,
-  onlyProps,
   omitMany,
+  pickMany,
   convertBuiltNameToTransformName,
   convertTransformNameToBuildName,
   toExpandedReference,

@@ -1,7 +1,8 @@
 import type {
   Json,
-  TMapFunction,
+  TBuilderMapStateFunction,
   TBuilderOptions,
+  TFieldBuilderArgs,
   TBuilder,
   TPropertyBuilder,
   TTransformType,
@@ -11,15 +12,21 @@ import {
   isFunction,
   isBuilderFunction,
   isString,
-  onlyProps,
   omitMany,
+  pickMany,
 } from './helpers';
 
+// The Proxy constructor type does not differentiate between the target and the return type.
+// Therefore, we define a custom constructor that requires a different return type.
 interface CustomProxyConstructor {
-  new <T, H extends object>(target: T, handler: ProxyHandler<H>): H;
+  new <T extends object, H extends object>(
+    target: T,
+    handler: ProxyHandler<H>
+  ): H;
 }
 const CustomProxy = Proxy as CustomProxyConstructor;
 
+// Internal state object to build up the final model.
 const createState = <Model extends Json>({
   initial,
 }: {
@@ -61,8 +68,8 @@ function PropertyBuilder<Model extends Json>({
             };
           }
           default: {
-            return (fnOrValue: TMapFunction<Model> | unknown) => {
-              if (isFunction<TMapFunction<Model>>(fnOrValue)) {
+            return (fnOrValue: TBuilderMapStateFunction<Model> | unknown) => {
+              if (isFunction<TBuilderMapStateFunction<Model>>(fnOrValue)) {
                 state.merge(fnOrValue(state.get()));
               } else if (isString(prop)) {
                 state.set(prop, fnOrValue);
@@ -102,50 +109,49 @@ function Builder<Model extends Json, TransformerType extends TTransformType>({
               builder.generated = applyGeneratorIfExists();
             }
 
-            return ({ omitFields = [], onlyFields = null } = {}) => {
+            return ({
+              omitFields = [],
+              keepFields = [],
+            }: TFieldBuilderArgs<Model> = {}) => {
               const built = {
                 ...builder.generated,
                 ...propertyBuilder.get(),
               } as Model;
 
+              let transformed = built;
+
               switch (propToSet) {
-                case 'build':
-                  return onlyProps<Model>(
-                    onlyFields,
-                    omitMany(
-                      transformers?.default?.transform(built) ?? built,
-                      omitFields
-                    )
-                  );
-                case 'buildGraphql':
-                  return onlyProps<Model>(
-                    onlyFields,
-                    omitMany(
-                      transformers?.graphql?.transform(built) ?? built,
-                      omitFields
-                    )
-                  );
-                case 'buildRest':
-                  return onlyProps<Model>(
-                    onlyFields,
-                    omitMany(
-                      transformers?.rest?.transform(built) ?? built,
-                      omitFields
-                    )
-                  );
+                case 'build': {
+                  transformed = (transformers?.default?.transform(built) ??
+                    built) as Model;
+                  break;
+                }
+                case 'buildGraphql': {
+                  transformed = (transformers?.graphql?.transform(built) ??
+                    built) as Model;
+                  break;
+                }
+                case 'buildRest': {
+                  transformed = (transformers?.rest?.transform(built) ??
+                    built) as Model;
+                  break;
+                }
                 default:
-                  return onlyProps<Model>(
-                    onlyFields,
-                    omitMany(built, omitFields)
-                  );
+                  break;
               }
+
+              if (keepFields.length > 0) {
+                return pickMany<Model>(transformed, ...keepFields);
+              }
+
+              return omitMany<Model>(transformed, ...omitFields);
             };
           }
 
-          return (fnOrValue: string | TMapFunction<Model>) => {
+          return (fnOrValue: string | TBuilderMapStateFunction<Model>) => {
             if (!builder.generated) {
               builder.generated = applyGeneratorIfExists();
-              // So generated data is available in functional chaining of builder.
+              // Make the generated data available as functional chaining of the builder.
               propertyBuilder.update(builder.generated);
             }
 
