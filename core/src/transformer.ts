@@ -1,5 +1,6 @@
+// import type { Field } from '@jackfranklin/test-data-bot';
+import type { Field } from './generator';
 import type {
-  Field,
   Json,
   TTransformer,
   TTransformerOptions,

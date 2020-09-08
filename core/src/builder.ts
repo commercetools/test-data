@@ -84,7 +84,7 @@ function PropertyBuilder<Model extends Json>({
   return builder;
 }
 
-function Builder<Model extends Json, TransformerType extends TTransformType>({
+function Builder<TransformerType extends TTransformType, Model extends Json>({
   defaults,
   generator,
   transformers,

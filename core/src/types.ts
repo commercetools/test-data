@@ -40,16 +40,8 @@ export type TBuilderMapStateFunction<Model extends Json> = (
   state: Partial<Model>
 ) => Partial<Model>;
 
-export type TGeneratorOptions<FactoryResultType> = {
-  name: string | BuildConfiguration<FactoryResultType>;
-  fields: BuildConfiguration<FactoryResultType>['fields'];
-  postBuild?: BuildConfiguration<FactoryResultType>['postBuild'];
-};
-
-export type TGeneratorResult<FactoryResultType> = {
-  generate: (options: {
-    defaults?: Partial<FactoryResultType>;
-  }) => FactoryResultType;
+export type TGeneratorResult<Model> = {
+  generate: (options: { defaults?: Partial<Model> }) => Model;
 };
 
 export type TTransformType = 'default' | 'graphql' | 'rest';
@@ -145,75 +137,7 @@ export type TRestTransformer<
 export type TBuilderOptions<Model extends Json> = {
   defaults?: Partial<Model>;
   generator?: TGeneratorResult<Model>;
-  // transformers?: TDefaultTransformer<TransformerType, Model> &
-  //   TGraphqlTransformer<TransformerType, Model> &
-  //   TRestTransformer<TransformerType, Model>;
   transformers?: {
     [Key in TTransformType]?: TTransformer<Model>;
   };
 };
-
-/* TYPES DECLARATIONS FROM @jackfranklin/test-data-bot */
-
-export type SequenceFunction = (counter: number) => unknown;
-
-export interface SequenceGenerator {
-  generatorType: 'sequence';
-  userProvidedFunction: SequenceFunction;
-  call: (userProvidedFunction: SequenceFunction, counter: number) => unknown;
-}
-
-export interface FakerGenerator {
-  generatorType: 'faker';
-  call: (fake: Faker.FakerStatic) => unknown;
-}
-
-export interface PerBuildGenerator {
-  generatorType: 'perBuild';
-  func: () => unknown;
-  call: (f: () => unknown) => unknown;
-}
-
-export interface OneOfGenerator {
-  generatorType: 'oneOf';
-  options: unknown[];
-  call: <T>(options: T[]) => T;
-}
-
-export type FieldGenerator =
-  | FakerGenerator
-  | SequenceGenerator
-  | OneOfGenerator
-  | PerBuildGenerator;
-
-export type Field =
-  | string
-  | number
-  | null
-  | FieldGenerator
-  | {
-      [x: string]: Field | {};
-    }
-  | unknown[];
-
-export type FieldsConfiguration<FactoryResultType> = {
-  readonly [x in keyof FactoryResultType]: Field;
-};
-
-export interface Overrides {
-  [x: string]: Field;
-}
-
-export interface TraitsConfiguration<FactoryResultType> {
-  readonly [traitName: string]: {
-    overrides?: Overrides;
-    postBuild?: (builtThing: FactoryResultType) => FactoryResultType;
-  };
-}
-
-export interface BuildConfiguration<FactoryResultType> {
-  readonly fields: FieldsConfiguration<FactoryResultType>;
-  readonly traits?: TraitsConfiguration<FactoryResultType>;
-  readonly postBuild?: (x: FactoryResultType) => FactoryResultType;
-}
-/* --- */

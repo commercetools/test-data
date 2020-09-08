@@ -1,5 +1,5 @@
 // import type { Overrides } from '@jackfranklin/test-data-bot';
-import type { TGeneratorOptions, TGeneratorResult } from './types';
+import type { TGeneratorResult } from './types';
 
 import { build } from '@jackfranklin/test-data-bot';
 
@@ -56,6 +56,12 @@ export interface BuildConfiguration<FactoryResultType> {
   readonly postBuild?: (x: FactoryResultType) => FactoryResultType;
 }
 /* --- */
+
+type TGeneratorOptions<Model> = {
+  name: string | BuildConfiguration<Model>;
+  fields: BuildConfiguration<Model>['fields'];
+  postBuild?: BuildConfiguration<Model>['postBuild'];
+};
 
 function Generator<FactoryResultType>({
   name,
