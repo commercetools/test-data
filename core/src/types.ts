@@ -3,7 +3,7 @@ export type Json = {
 };
 
 export type TReferenceObject = {
-  id: string;
+  id?: string;
 };
 
 export type TExpandedReference = {
@@ -43,7 +43,7 @@ export type TBuilderMapStateFunction<Model extends Json> = (
 export type TGeneratorOptions<FactoryResultType> = {
   name: string | BuildConfiguration<FactoryResultType>;
   fields: BuildConfiguration<FactoryResultType>['fields'];
-  postBuild: BuildConfiguration<FactoryResultType>['postBuild'];
+  postBuild?: BuildConfiguration<FactoryResultType>['postBuild'];
 };
 
 export type TGeneratorResult<FactoryResultType> = {
@@ -88,7 +88,11 @@ export type TFieldUpdater<
   Value,
   FullModel extends Json
 > = (
-  fnOrValue: TBuilderMapStateFunction<FullModel> | Value
+  fnOrValue:
+    | TBuilderMapStateFunction<FullModel>
+    | TBuilder<TransformerType, Model, FullModel>
+    | TBuilder<TransformerType, Model, FullModel>[]
+    | Value
 ) => TBuilder<TransformerType, Model, FullModel>;
 
 export type TFieldBuilderArgs<Model extends Json> = {
@@ -109,13 +113,13 @@ export type TBuilder<
   >;
 } & {
   build<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<TransformedModel>
+    args?: TFieldBuilderArgs<Model>
   ): TransformedModel;
   buildGraphql<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<TransformedModel>
+    args?: TFieldBuilderArgs<Model>
   ): 'graphql' extends TransformerType ? TransformedModel : never;
   buildRest<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<TransformedModel>
+    args?: TFieldBuilderArgs<Model>
   ): 'rest' extends TransformerType ? TransformedModel : never;
 };
 

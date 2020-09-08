@@ -43,12 +43,11 @@
       "node_modules/@types"
     ]
   },
-  // "include": [
-  //   // "jest.d.ts",
-  //   // "@types-extensions/*",
-  //   "**/*.spec.ts",
-  //   // "**/*.spec.tsx"
-  // ],
+  "include": [
+    // "jest.d.ts",
+    // "@types-extensions/*",
+    "**/*.spec.ts",
+  ],
   "exclude": [
     "**/node_modules",
     "**/dist/**/*"

@@ -7,7 +7,7 @@ import {
 describe('expanding reference', () => {
   describe('with typeId and id', () => {
     it('should return expanded reference', () => {
-      const channel = { id: 'channel-id ' };
+      const channel = { id: 'channel-id' };
       expect(toExpandedReference('channel')(channel)).toEqual({
         typeId: 'channel',
         id: channel.id,
@@ -17,7 +17,7 @@ describe('expanding reference', () => {
   });
   describe('without typeId', () => {
     it('should return null', () => {
-      expect(toExpandedReference(null)({ id: 'channel-id ' })).toEqual(null);
+      expect(toExpandedReference()({ id: 'channel-id' })).toEqual(null);
     });
   });
   describe('without data.id', () => {

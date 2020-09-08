@@ -143,9 +143,26 @@ function Builder<Model extends Json, TransformerType extends TTransformType>({
               if (keepFields.length > 0) {
                 return pickMany<Model>(transformed, ...keepFields);
               }
-
-              return omitMany<Model>(transformed, ...omitFields);
+              if (omitFields.length > 0) {
+                return omitMany<Model>(transformed, ...omitFields);
+              }
+              return transformed;
             };
+          }
+
+          // Cypress specs and files that they import are now bundled with
+          // webpack starting from Cypress 5 (webpack is now the default preprocessor).
+          // This result in non-null check of
+          // properties like `__esModule` and `default` to decide what has to be
+          // provided as a module export. This means that e.g
+          // `empty` in `LocalizedString.presets.empty.en` will be evaluated
+          // to the returned function below this check, instead of `Proxy`. To avoid this
+          // we need to check against these special properties.
+          if (
+            isString(propToSet) &&
+            ['__esModule', 'default'].includes(propToSet)
+          ) {
+            return builder.proxy;
           }
 
           return (fnOrValue: string | TBuilderMapStateFunction<Model>) => {

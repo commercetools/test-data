@@ -62,7 +62,7 @@ function Generator<FactoryResultType>({
   fields,
   postBuild,
 }: TGeneratorOptions<FactoryResultType>): TGeneratorResult<FactoryResultType> {
-  const generate = build(name, {
+  const generate = build<FactoryResultType>(name, {
     fields,
     postBuild,
   });
