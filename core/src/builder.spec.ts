@@ -439,15 +439,12 @@ describe('building', () => {
               .user(userBuilder)
               .build<TestUserReference>();
 
-            expect(built.user.name).toEqual('My name');
-            expect(built).toMatchInlineSnapshot(`
-              Object {
-                "id": "my-id",
-                "user": Object {
-                  "name": "My name",
-                },
-              }
-            `);
+            expect(built).toEqual({
+              id: 'my-id',
+              user: {
+                name: 'My name',
+              },
+            });
           });
         });
       });
@@ -474,15 +471,12 @@ describe('building', () => {
               .user(userBuilder)
               .buildGraphql<TestUserReference>();
 
-            expect(built.user.name).toEqual('My name');
-            expect(built).toMatchInlineSnapshot(`
-              Object {
-                "id": "my-id",
-                "user": Object {
-                  "name": "My name",
-                },
-              }
-            `);
+            expect(built).toEqual({
+              id: 'my-id',
+              user: {
+                name: 'My name',
+              },
+            });
           });
         });
 
@@ -516,22 +510,19 @@ describe('building', () => {
               .users([userBuilder1, userBuilder2])
               .buildGraphql<TestTeam>();
 
-            expect(built.users).toHaveLength(2);
-            expect(built).toMatchInlineSnapshot(`
-              Object {
-                "id": "my-id",
-                "users": Array [
-                  Object {
-                    "id": 1,
-                    "name": "My name",
-                  },
-                  Object {
-                    "id": 1,
-                    "name": "My other name",
-                  },
-                ],
-              }
-            `);
+            expect(built).toEqual({
+              id: 'my-id',
+              users: [
+                {
+                  __typename: 'User',
+                  name: 'My name',
+                },
+                {
+                  __typename: 'User',
+                  name: 'My other name',
+                },
+              ],
+            });
           });
         });
       });
@@ -545,7 +536,9 @@ describe('building', () => {
               'graphql',
               {
                 replaceFields: ({ fields }) => ({
-                  user: buildField<'graphql', TestUserReference>(fields.user),
+                  user: buildField<'graphql', TestExpandedUserReference>(
+                    fields.user
+                  ),
                 }),
               }
             ),
@@ -557,15 +550,12 @@ describe('building', () => {
             )
             .buildGraphql<TestUserReference>();
 
-          expect(built.user.name).toEqual('My name');
-          expect(built).toMatchInlineSnapshot(`
-            Object {
-              "id": "my-id",
-              "user": Object {
-                "name": "My name",
-              },
-            }
-          `);
+          expect(built).toEqual({
+            id: 'my-id',
+            user: {
+              name: 'My name',
+            },
+          });
         });
       });
 
@@ -574,7 +564,10 @@ describe('building', () => {
           const teamTransformers = {
             graphql: Transformer<TestTeam, TestTeam>('graphql', {
               replaceFields: ({ fields }) => ({
-                users: buildFields(fields.users, 'graphql'),
+                users: buildFields<'graphql', TestExpandedUserReferenceGraphql>(
+                  fields.users,
+                  'graphql'
+                ),
               }),
             }),
           };
@@ -602,22 +595,19 @@ describe('building', () => {
             ])
             .buildGraphql<TestTeam>();
 
-          expect(built.users).toHaveLength(2);
-          expect(built).toMatchInlineSnapshot(`
-            Object {
-              "id": "my-id",
-              "users": Array [
-                Object {
-                  "id": 1,
-                  "name": "My name",
-                },
-                Object {
-                  "id": 1,
-                  "name": "My other name",
-                },
-              ],
-            }
-          `);
+          expect(built).toEqual({
+            id: 'my-id',
+            users: [
+              {
+                __typename: 'User',
+                name: 'My name',
+              },
+              {
+                __typename: 'User',
+                name: 'My other name',
+              },
+            ],
+          });
         });
       });
     });
@@ -648,6 +638,7 @@ describe('building', () => {
           __typename: 'OrganizationQueryResult',
           total: 10,
           offset: 2,
+          count: 2,
           results: expect.arrayContaining([
             expect.objectContaining({ id: 'my-id' }),
           ]),
@@ -668,6 +659,7 @@ describe('building', () => {
         expect(list).toEqual({
           total: 10,
           offset: 2,
+          count: 2,
           results: expect.arrayContaining([
             expect.objectContaining({ id: 'my-id' }),
           ]),

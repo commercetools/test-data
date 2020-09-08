@@ -21,7 +21,7 @@ export type TPaginatedQueryResult<Model extends Json> = {
   total: number;
   offset: number;
   count: number;
-  results: Partial<Model>[];
+  results: Model[];
 };
 
 export type TGraphqlPaginatedQueryResultOptions = {
