@@ -27,8 +27,16 @@
     "LICENSE",
     "README.md"
   ],
-  "scripts": {},
+  "scripts": {
+    "prebuild": "rimraf dist/**",
+    "build": "yarn build:bundles && yarn build:typings",
+    "build:bundles": "cross-env NODE_ENV=production rollup -c ../rollup.config.js -i ./src/index.ts --dir dist",
+    "build:bundles:watch": "yarn build:bundles -w",
+    "build:typings": "cross-env tsc -p tsconfig.declarations.json --emitDeclarationOnly --declarationDir dist/typings"
+  },
   "dependencies": {
+    "@babel/runtime": "7.11.2",
+    "@babel/runtime-corejs3": "7.11.2",
     "@jackfranklin/test-data-bot": "1.3.0"
   }
 }
