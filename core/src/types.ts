@@ -76,16 +76,15 @@ export type TPropertyBuilder<Model extends Json> = {
 
 export type TFieldUpdater<
   TransformerType extends TTransformType,
-  Model extends Json,
-  Value,
-  FullModel extends Json
-> = (
+  OriginalModel extends Json,
+  Value
+> = <Model extends Json = OriginalModel>(
   fnOrValue:
-    | TBuilderMapStateFunction<FullModel>
-    | TBuilder<TransformerType, Model, FullModel>
-    | TBuilder<TransformerType, Model, FullModel>[]
+    | TBuilderMapStateFunction<OriginalModel>
+    | TBuilder<TransformerType, Model>
+    | TBuilder<TransformerType, Model>[]
     | Value
-) => TBuilder<TransformerType, Model, FullModel>;
+) => TBuilder<TransformerType, OriginalModel>;
 
 export type TFieldBuilderArgs<Model extends Json> = {
   omitFields?: (keyof Model)[];
@@ -94,24 +93,22 @@ export type TFieldBuilderArgs<Model extends Json> = {
 
 export type TBuilder<
   TransformerType extends TTransformType,
-  Model extends Json,
-  FullModel extends Json = Model
+  OriginalModel extends Json
 > = {
-  [K in keyof Required<Model>]: TFieldUpdater<
+  [K in keyof Required<OriginalModel>]: TFieldUpdater<
     TransformerType,
-    Omit<Model, K>,
-    Model[K],
-    FullModel
+    OriginalModel,
+    OriginalModel[K]
   >;
 } & {
   build<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<Model>
+    args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
   buildGraphql<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<Model>
+    args?: TFieldBuilderArgs<OriginalModel>
   ): 'graphql' extends TransformerType ? TransformedModel : never;
   buildRest<TransformedModel extends Json>(
-    args?: TFieldBuilderArgs<Model>
+    args?: TFieldBuilderArgs<OriginalModel>
   ): 'rest' extends TransformerType ? TransformedModel : never;
 };
 

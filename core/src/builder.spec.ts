@@ -436,7 +436,7 @@ describe('building', () => {
               transformers,
             })
               .id('my-id')
-              .user(userBuilder)
+              .user<TestExpandedUserReference>(userBuilder)
               .build<TestUserReference>();
 
             expect(built).toEqual({
@@ -468,7 +468,7 @@ describe('building', () => {
               transformers,
             })
               .id('my-id')
-              .user(userBuilder)
+              .user<TestExpandedUserReference>(userBuilder)
               .buildGraphql<TestUserReference>();
 
             expect(built).toEqual({
@@ -507,7 +507,7 @@ describe('building', () => {
               transformers: teamTransformers,
             })
               .id('my-id')
-              .users([userBuilder1, userBuilder2])
+              .users<TestExpandedUserReference>([userBuilder1, userBuilder2])
               .buildGraphql<TestTeam>();
 
             expect(built).toEqual({
@@ -543,11 +543,13 @@ describe('building', () => {
               }
             ),
           };
+          const userBuilder = Builder<
+            'default',
+            TestExpandedUserReference
+          >().name('My name');
           const built = Builder<'graphql', TestUserReference>({ transformers })
             .id('my-id')
-            .user(
-              Builder<'default', TestExpandedUserReference>().name('My name')
-            )
+            .user<TestExpandedUserReference>(userBuilder)
             .buildGraphql<TestUserReference>();
 
           expect(built).toEqual({
@@ -581,17 +583,25 @@ describe('building', () => {
               }),
             }),
           };
+          const userBuilder1 = Builder<
+            'graphql',
+            TestExpandedUserReferenceGraphql
+          >({
+            transformers: userTransformers,
+          }).name('My name');
+          const userBuilder2 = Builder<
+            'graphql',
+            TestExpandedUserReferenceGraphql
+          >({
+            transformers: userTransformers,
+          }).name('My other name');
           const built = Builder<'graphql', TestTeam>({
             transformers: teamTransformers,
           })
             .id('my-id')
-            .users([
-              Builder<'graphql', TestExpandedUserReferenceGraphql>({
-                transformers: userTransformers,
-              }).name('My name'),
-              Builder<'graphql', TestExpandedUserReferenceGraphql>({
-                transformers: userTransformers,
-              }).name('My other name'),
+            .users<TestExpandedUserReferenceGraphql>([
+              userBuilder1,
+              userBuilder2,
             ])
             .buildGraphql<TestTeam>();
 
