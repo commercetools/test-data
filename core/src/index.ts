@@ -11,3 +11,8 @@ export {
   toRestPaginatedQueryResult,
   toGraphqlPaginatedQueryResult,
 } from './helpers';
+
+export * from './types';
+
+// Re-export from `@jackfranklin/test-data-bot`
+export { fake, sequence, oneOf, bool } from '@jackfranklin/test-data-bot';

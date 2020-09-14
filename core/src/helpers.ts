@@ -119,8 +119,8 @@ const toGraphqlPaginatedQueryResult = <Model extends Json>(
   };
 };
 
-const buildField = <TransformerType extends TTransformType, Model extends Json>(
-  builder: Model | TBuilder<TransformerType, Model>,
+const buildField = <Model extends Json>(
+  builder: Model | TBuilder<Model>,
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Model => {
@@ -135,25 +135,19 @@ const buildField = <TransformerType extends TTransformType, Model extends Json>(
   return (builder[buildName] as () => Model)();
 };
 
-const buildFields = <
-  TransformerType extends TTransformType,
-  Model extends Json
->(
-  builders: (Model | TBuilder<TransformerType, Model>)[],
+const buildFields = <Model extends Json>(
+  builders: (Model | TBuilder<Model>)[],
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Model[] =>
   builders.map((builder) => buildField(builder, transformName, meta));
 
-const buildGraphqlList = <
-  TransformerType extends TTransformType,
-  Model extends Json
->(
-  builders: TBuilder<TransformerType, Model>[],
+const buildGraphqlList = <Model extends Json>(
+  builders: TBuilder<Model>[],
   { name, total, offset }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
   return toGraphqlPaginatedQueryResult<Model>(
-    buildFields<TransformerType, Model>(builders, 'graphql'),
+    buildFields<Model>(builders, 'graphql'),
     {
       name,
       total,
@@ -162,11 +156,8 @@ const buildGraphqlList = <
   );
 };
 
-const buildRestList = <
-  TransformerType extends TTransformType,
-  Model extends Json
->(
-  builders: TBuilder<TransformerType, Model>[],
+const buildRestList = <Model extends Json>(
+  builders: TBuilder<Model>[],
   { total, offset }: TPaginatedQueryResultOptions
 ): TPaginatedQueryResult<Model> => {
   return toRestPaginatedQueryResult(buildFields(builders, 'rest'), {

@@ -56,7 +56,7 @@ describe('building', () => {
   describe('without generator', () => {
     describe('without defaults', () => {
       it('should build all properties', () => {
-        const built = Builder<'default', TestUser>()
+        const built = Builder<TestUser>()
           .id(1)
           .userName('Fred')
           .email('fred@foo.com')
@@ -78,7 +78,7 @@ describe('building', () => {
           street: 'Homestreet 14',
         };
 
-        const built = Builder<'default', TestUser>({ defaults })
+        const built = Builder<TestUser>({ defaults })
           .id(1)
           .userName('Fred')
           .email('fred@foo.com')
@@ -106,7 +106,7 @@ describe('building', () => {
                 }),
               }),
             };
-            const built = Builder<'graphql', TestUser>({
+            const built = Builder<TestUser>({
               transformers,
             })
               .id(1)
@@ -140,7 +140,7 @@ describe('building', () => {
                 }),
               }),
             };
-            const built = Builder<'graphql', TestUser>({
+            const built = Builder<TestUser>({
               transformers,
             })
               .id(1)
@@ -179,7 +179,7 @@ describe('building', () => {
                 }),
               }),
             };
-            const built = Builder<'graphql', TestUser>({
+            const built = Builder<TestUser>({
               transformers,
             })
               .id(1)
@@ -213,7 +213,7 @@ describe('building', () => {
                 }),
               }),
             };
-            const built = Builder<'graphql', TestUser>({
+            const built = Builder<TestUser>({
               transformers,
             })
               .id(1)
@@ -248,7 +248,7 @@ describe('building', () => {
           }),
         };
 
-        const built = Builder<'graphql', TestUser>({
+        const built = Builder<TestUser>({
           transformers,
         })
           .id(1)
@@ -285,7 +285,7 @@ describe('building', () => {
     });
 
     it('should build all properties with custom properties', () => {
-      const built = Builder<'default', TestOrganization>({ generator })
+      const built = Builder<TestOrganization>({ generator })
         .id('my-id')
         .build();
 
@@ -298,7 +298,7 @@ describe('building', () => {
     });
 
     it('should build all build upon properties with callbacks', () => {
-      const built = Builder<'default', TestOrganization>({ generator })
+      const built = Builder<TestOrganization>({ generator })
         .id('my-id')
         .name(({ version }) => ({
           name: 'My name',
@@ -332,7 +332,7 @@ describe('building', () => {
           }
         ),
       };
-      const built = Builder<'graphql', TestOrganization>({
+      const built = Builder<TestOrganization>({
         generator,
         transformers,
         defaults: {
@@ -369,7 +369,7 @@ describe('building', () => {
     describe('when fields should be omitted', () => {
       describe('with `omitFields`', () => {
         it('should build properties and omit as requested', () => {
-          const built = Builder<'default', TestOrganization>({ generator })
+          const built = Builder<TestOrganization>({ generator })
             .email('fred@foo.com')
             .build<TestOrganizationTransformedWithEmail>({
               omitFields: ['id', 'version'],
@@ -392,7 +392,7 @@ describe('building', () => {
 
       describe('with `keepFields`', () => {
         it('should build properties and omit as requested', () => {
-          const built = Builder<'default', TestOrganization>({ generator })
+          const built = Builder<TestOrganization>({ generator })
             .email('fred@foo.com')
             .build<TestOrganizationTransformedWithIdAndVersion>({
               keepFields: ['id', 'version'],
@@ -428,11 +428,10 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder = Builder<
-              'default',
-              TestExpandedUserReference
-            >().name('My name');
-            const built = Builder<'default', TestUserReference>({
+            const userBuilder = Builder<TestExpandedUserReference>().name(
+              'My name'
+            );
+            const built = Builder<TestUserReference>({
               transformers,
             })
               .id('my-id')
@@ -460,11 +459,10 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder = Builder<
-              'graphql',
-              TestExpandedUserReference
-            >().name('My name');
-            const built = Builder<'graphql', TestUserReference>({
+            const userBuilder = Builder<TestExpandedUserReference>().name(
+              'My name'
+            );
+            const built = Builder<TestUserReference>({
               transformers,
             })
               .id('my-id')
@@ -497,13 +495,13 @@ describe('building', () => {
                 }),
               }),
             };
-            const userBuilder1 = Builder<'graphql', TestExpandedUserReference>({
+            const userBuilder1 = Builder<TestExpandedUserReference>({
               transformers: userTransformers,
             }).name('My name');
-            const userBuilder2 = Builder<'graphql', TestExpandedUserReference>({
+            const userBuilder2 = Builder<TestExpandedUserReference>({
               transformers: userTransformers,
             }).name('My other name');
-            const built = Builder<'graphql', TestTeam>({
+            const built = Builder<TestTeam>({
               transformers: teamTransformers,
             })
               .id('my-id')
@@ -536,18 +534,15 @@ describe('building', () => {
               'graphql',
               {
                 replaceFields: ({ fields }) => ({
-                  user: buildField<'graphql', TestExpandedUserReference>(
-                    fields.user
-                  ),
+                  user: buildField<TestExpandedUserReference>(fields.user),
                 }),
               }
             ),
           };
-          const userBuilder = Builder<
-            'default',
-            TestExpandedUserReference
-          >().name('My name');
-          const built = Builder<'graphql', TestUserReference>({ transformers })
+          const userBuilder = Builder<TestExpandedUserReference>().name(
+            'My name'
+          );
+          const built = Builder<TestUserReference>({ transformers })
             .id('my-id')
             .user<TestExpandedUserReference>(userBuilder)
             .buildGraphql<TestUserReference>();
@@ -566,7 +561,7 @@ describe('building', () => {
           const teamTransformers = {
             graphql: Transformer<TestTeam, TestTeam>('graphql', {
               replaceFields: ({ fields }) => ({
-                users: buildFields<'graphql', TestExpandedUserReferenceGraphql>(
+                users: buildFields<TestExpandedUserReferenceGraphql>(
                   fields.users,
                   'graphql'
                 ),
@@ -583,19 +578,13 @@ describe('building', () => {
               }),
             }),
           };
-          const userBuilder1 = Builder<
-            'graphql',
-            TestExpandedUserReferenceGraphql
-          >({
+          const userBuilder1 = Builder<TestExpandedUserReferenceGraphql>({
             transformers: userTransformers,
           }).name('My name');
-          const userBuilder2 = Builder<
-            'graphql',
-            TestExpandedUserReferenceGraphql
-          >({
+          const userBuilder2 = Builder<TestExpandedUserReferenceGraphql>({
             transformers: userTransformers,
           }).name('My other name');
-          const built = Builder<'graphql', TestTeam>({
+          const built = Builder<TestTeam>({
             transformers: teamTransformers,
           })
             .id('my-id')
@@ -635,9 +624,7 @@ describe('building', () => {
 
     describe('with graphql transform', () => {
       it('should build a paginated graphql list', () => {
-        const builder = Builder<'graphql', TestOrganization>({ generator }).id(
-          'my-id'
-        );
+        const builder = Builder<TestOrganization>({ generator }).id('my-id');
         const list = buildGraphqlList([builder, builder], {
           name: 'Organization',
           total: 10,
@@ -658,9 +645,7 @@ describe('building', () => {
 
     describe('with rest transform', () => {
       it('should build a paginated rest list', () => {
-        const builder = Builder<'rest', TestOrganization>({ generator }).id(
-          'my-id'
-        );
+        const builder = Builder<TestOrganization>({ generator }).id('my-id');
         const list = buildRestList([builder, builder], {
           total: 10,
           offset: 2,
