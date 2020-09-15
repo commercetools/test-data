@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@1.3.0/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "commercetools/test-data"
+    }
+  ],
+  "commit": false,
+  "linked": [
+    [
+      "@commercetools-test-data/core"
+    ]
+  ],
+  "access": "restricted",
+  "baseBranch": "main"
+}
