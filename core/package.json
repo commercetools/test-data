@@ -17,8 +17,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/core.cjs.js",
-  "module": "./dist/core.es.js",
+  "main": "./dist/core-index.cjs.js",
+  "module": "./dist/core-index.es.js",
   "typings": "./dist/typings/index.d.ts",
   "types": "./dist/typings/index.d.ts",
   "files": [

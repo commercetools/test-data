@@ -5,7 +5,6 @@ import type {
   TFieldBuilderArgs,
   TBuilder,
   TPropertyBuilder,
-  TTransformType,
 } from './types';
 
 import {
@@ -84,11 +83,11 @@ function PropertyBuilder<Model extends Json>({
   return builder;
 }
 
-function Builder<TransformerType extends TTransformType, Model extends Json>({
+function Builder<Model extends Json>({
   defaults,
   generator,
   transformers,
-}: TBuilderOptions<Model> = {}): TBuilder<TransformerType, Model> {
+}: TBuilderOptions<Model> = {}): TBuilder<Model> {
   const propertyBuilder = PropertyBuilder<Model>({ defaults });
   const applyGeneratorIfExists = (): Partial<Model> => {
     if (!generator) return {};
@@ -97,10 +96,10 @@ function Builder<TransformerType extends TTransformType, Model extends Json>({
 
   const builder: {
     generated: Partial<Model> | null;
-    proxy: TBuilder<TransformerType, Model>;
+    proxy: TBuilder<Model>;
   } = {
     generated: null,
-    proxy: new CustomProxy<Partial<Model>, TBuilder<TransformerType, Model>>(
+    proxy: new CustomProxy<Partial<Model>, TBuilder<Model>>(
       {},
       {
         get(_target, propToSet) {
