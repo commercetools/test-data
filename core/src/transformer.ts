@@ -1,5 +1,3 @@
-// import type { Field } from '@jackfranklin/test-data-bot';
-import type { Field } from './generator';
 import type {
   Json,
   TTransformer,
@@ -8,25 +6,18 @@ import type {
   TTransformType,
 } from './types';
 
-import { isObject, buildField, buildFields } from './helpers';
+import { buildField, buildFields } from './helpers';
 
-function Transformer<Model extends Json, TransformedModel extends Json>(
+function Transformer<Model extends Json, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
   function transform(fields: Model) {
     let transformedFields = { ...fields };
-    const fieldsAdder = transformOptions?.addFields;
     const fieldsReplacer = transformOptions?.replaceFields;
+    const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
     const fieldsToBuild = transformOptions?.buildFields;
-
-    const addOrReplaceField = (fieldName: string, fieldValue: Field) => {
-      transformedFields = {
-        ...transformedFields,
-        [fieldName]: fieldValue,
-      };
-    };
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {
@@ -49,31 +40,35 @@ function Transformer<Model extends Json, TransformedModel extends Json>(
 
     // The default transformer only allows building nested fields to not
     // allow re-transforming model shape
-    if (transformType === 'default')
+    if (transformType === 'default') {
       return (transformedFields as unknown) as TransformedModel;
+    }
+
+    // If this is defined, all other options are ignored, as the transformed value
+    // can be anything (object, array, scalar, etc.).
+    if (fieldsReplacer) {
+      if (fieldsAdder) {
+        console.warn(
+          `The "replaceFields" option takes precedence over the "addFields" option, making it unsed.`
+        );
+      }
+      if (fieldsToRemove) {
+        console.warn(
+          `The "replaceFields" option takes precedence over the "removeFields" option, making it unsed.`
+        );
+      }
+      return (fieldsReplacer({ fields }) as unknown) as TransformedModel;
+    }
 
     if (fieldsAdder) {
       const fieldsToAdd = fieldsAdder({ fields });
-
       Object.entries(fieldsToAdd).forEach(([fieldName, fieldValue]) => {
         if (transformedFields[fieldName]) return;
-
-        addOrReplaceField(fieldName, fieldValue);
+        transformedFields = {
+          ...transformedFields,
+          [fieldName]: fieldValue,
+        };
       });
-    }
-
-    if (fieldsReplacer) {
-      const fieldsToReplace = fieldsReplacer({ fields });
-
-      if (isObject(fieldsToReplace))
-        Object.entries(fieldsToReplace).forEach(([fieldName, fieldValue]) => {
-          if (!transformedFields[fieldName]) return;
-
-          addOrReplaceField(fieldName, fieldValue);
-        });
-      else {
-        transformedFields = fieldsToReplace;
-      }
     }
 
     if (fieldsToRemove) {

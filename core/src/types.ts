@@ -48,13 +48,10 @@ export type TTransformType = 'default' | 'graphql' | 'rest';
 
 export type TTransformBuildName = 'build' | 'buildGraphql' | 'buildRest';
 
-export type TTransformerOptions<
-  Model extends Json,
-  TransformedModel extends Json
-> = {
+export type TTransformerOptions<Model extends Json, TransformedModel> = {
   addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
-  replaceFields?: (args: { fields: Model }) => Partial<Model>;
   removeFields?: (keyof Model)[];
+  replaceFields?: (args: { fields: Model }) => TransformedModel;
   buildFields?: (keyof Model)[];
 };
 
@@ -95,13 +92,13 @@ export type TBuilder<OriginalModel extends Json> = {
     OriginalModel[K]
   >;
 } & {
-  build<TransformedModel extends Json>(
+  build<TransformedModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
-  buildGraphql<TransformedModel extends Json>(
+  buildGraphql<TransformedModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
-  buildRest<TransformedModel extends Json>(
+  buildRest<TransformedModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
 };
