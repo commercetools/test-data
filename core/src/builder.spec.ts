@@ -167,48 +167,12 @@ describe('building', () => {
       });
 
       describe('when replacing fields', () => {
-        describe('when field does not exist', () => {
-          it('should not add the desired fields', () => {
-            const transformers = {
-              graphql: Transformer<TestUser, TestUser>('graphql', {
-                // The `identifier` is not part of the `TestUser`, so TS yells at us as expected.
-                // However for the purpose of the test, we ignore the type check.
-                // @ts-ignore
-                replaceFields: ({ fields }) => ({
-                  identifier: fields.id,
-                }),
-              }),
-            };
-            const built = Builder<TestUser>({
-              transformers,
-            })
-              .id(1)
-              .userName('Fred')
-              .email('fred@foo.com')
-              .buildGraphql<TestUser>();
-
-            // Contains regularily built properties
-            expect(built).toEqual(
-              expect.objectContaining({
-                userName: 'Fred',
-                email: 'fred@foo.com',
-              })
-            );
-
-            // Does not contain properties through transforms
-            expect(built).toEqual(
-              expect.not.objectContaining({
-                identifier: built.id,
-              })
-            );
-          });
-        });
-
         describe('when field exists', () => {
           it('should replace the desired fields', () => {
             const transformers = {
               graphql: Transformer<TestUser, TestUser>('graphql', {
                 replaceFields: ({ fields }) => ({
+                  ...fields,
                   id: fields.id + 1,
                 }),
               }),
@@ -235,6 +199,58 @@ describe('building', () => {
                 id: 2,
               })
             );
+          });
+        });
+
+        describe('when transforming from object to array', () => {
+          it('should work', () => {
+            const transformers = {
+              graphql: Transformer<
+                { a: number; b: number },
+                { label: string; value: number }[]
+              >('graphql', {
+                replaceFields: ({ fields }) =>
+                  Object.entries(fields).map(([label, value]) => ({
+                    label,
+                    value,
+                  })),
+              }),
+            };
+            const built = Builder<{ a: number; b: number }>({
+              transformers,
+            })
+              .a(1)
+              .b(2)
+              .buildGraphql<{ label: string; value: number }[]>();
+
+            expect(built).toEqual([
+              { label: 'a', value: 1 },
+              { label: 'b', value: 2 },
+            ]);
+          });
+        });
+        describe('when transforming from object to primitive (number)', () => {
+          it('should work', () => {
+            const transformers = {
+              graphql: Transformer<{ a: number; b: number }, number>(
+                'graphql',
+                {
+                  replaceFields: ({ fields }) =>
+                    Object.values(fields).reduce(
+                      (total, value) => total + value,
+                      0
+                    ),
+                }
+              ),
+            };
+            const built = Builder<{ a: number; b: number }>({
+              transformers,
+            })
+              .a(1)
+              .b(2)
+              .buildGraphql<number>();
+
+            expect(built).toEqual(3);
           });
         });
       });
@@ -322,7 +338,6 @@ describe('building', () => {
           {
             addFields: ({ fields }) => {
               const identifier = 1;
-
               return {
                 identifier,
                 v: `${fields.version}-${identifier}`,
@@ -534,6 +549,7 @@ describe('building', () => {
               'graphql',
               {
                 replaceFields: ({ fields }) => ({
+                  ...fields,
                   user: buildField<TestExpandedUserReference>(fields.user),
                 }),
               }
@@ -561,6 +577,7 @@ describe('building', () => {
           const teamTransformers = {
             graphql: Transformer<TestTeam, TestTeam>('graphql', {
               replaceFields: ({ fields }) => ({
+                ...fields,
                 users: buildFields<TestExpandedUserReferenceGraphql>(
                   fields.users,
                   'graphql'
