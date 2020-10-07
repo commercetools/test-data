@@ -6,7 +6,7 @@
   "private": true,
   "workspaces": [
     "core",
-    "models"
+    "models/*"
   ],
   "scripts": {
     "build": "yarn workspaces run build",
