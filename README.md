@@ -10,7 +10,7 @@ This repository contains data models within the commercetools platform ecosystem
 
 > In time, we will continue to implement and open source test data models. If you are interested or missing a specific data model, feel free to open a feature request or try to contribute to the repository.
 
-Each model is published as a standalone NPM package. Models are defined in the `models/*` workspace.
+Models are defined in the `models/*` workspace and are grouped by domain in different packages.
 
 All models are built using the `core` package, which contains the necessary methods to implement and work with models. The `core` package is very much agnostic of the commercetools platform domain, so you can potentially use it to build your own models for other domains.
 
@@ -20,11 +20,13 @@ To know more about how to work and build data models, [check out the documentati
 
 Using models is pretty straightforward. You import the package and build the model, which returns the data in the requested shape.
 
-For example, assuming we have an `Author` model:
+For example, assuming we have an `Author` model from a `stories` package:
 
 ```ts
-import * as Author from '@commercetools-test-data/author';
+import type { TAuthor } from '@commercetools-test-data/stories';
 
-const author1 = Author.random().firstName('John').buildGraphql();
-const author2 = Author.random().firstName('Rebecca').buildGraphql();
+import { Author } from '@commercetools-test-data/stories';
+
+const author1 = Author.random().firstName('John').buildGraphql<TAuthor>();
+const author2 = Author.random().firstName('Rebecca').buildGraphql<TAuthor>();
 ```

@@ -10,7 +10,7 @@ $ yarn add -D @commercetools-test-data/core
 
 ## Creating a new data model
 
-Models are treated packages. Each model will be published as a standalone NPM package.
+Models are defined in the `models/*` workspace and are grouped by domain in different packages.
 
 To create a new model, add a new package in the `models` workspace with the following structure:
 
@@ -21,13 +21,14 @@ models/<package_name>
 ├── index.ts
 ├── package.json
 ├── src
-│   ├── builder.ts
-│   ├── generator.ts
-│   ├── index.ts
-│   ├── presets
-│   │   └── index.ts
-│   ├── transformers.ts
-│   └── types.ts
+│   └── <model_name>
+│       ├── builder.ts
+│       ├── generator.ts
+│       ├── index.ts
+│       ├── presets
+│       │   └── index.ts
+│       ├── transformers.ts
+│       └── types.ts
 ├── tsconfig.declarations.json
 └── tsconfig.json
 ```
@@ -46,7 +47,7 @@ Builders are essentially composed by a generator and (optionally) transformers.
 
 A generator is what describes the initial model shape and data. Most of the fields can and should be initialized with some values. You can define random values using `fake` or static values.
 
-```ts
+````ts
 import { Generator, fake } from '@commercetools-test-data/core';
 
 const generator = Generator<TAuthor>({
@@ -73,7 +74,7 @@ const generator = Generator<TAuthor>({
     books: null,
   },
 });
-```
+````
 
 Books are defined as another model:
 

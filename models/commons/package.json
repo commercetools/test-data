@@ -1,12 +1,12 @@
 {
-  "name": "@commercetools-test-data/localized-string",
+  "name": "@commercetools-test-data/commons",
   "version": "0.1.0",
-  "description": "Data model for LocalizesString type",
+  "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/localized-string"
+    "directory": "models/commons"
   },
   "keywords": [
     "javascript",
@@ -18,8 +18,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/localized-string-index.cjs.js",
-  "module": "./dist/localized-string-index.es.js",
+  "main": "./dist/commons-index.cjs.js",
+  "module": "./dist/commons-index.es.js",
   "typings": "./dist/typings/index.d.ts",
   "types": "./dist/typings/index.d.ts",
   "files": [
