@@ -9,7 +9,8 @@
   "commit": false,
   "linked": [
     [
-      "@commercetools-test-data/core"
+      "@commercetools-test-data/core",
+      "@commercetools-test-data/commons"
     ]
   ],
   "access": "restricted",

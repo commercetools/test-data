@@ -1,5 +1,5 @@
 ---
-'@commercetools-test-data/localized-string': minor
+'@commercetools-test-data/commons': minor
 ---
 
 Add new model for `LocalizedString` type
