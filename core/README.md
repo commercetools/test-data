@@ -36,7 +36,7 @@ To define and build new models, you need to use the core package `@commercetools
 
 ### Builder
 
-A builder is the result of the data model. Builders allow composition with other models and to transform the data into different shapes, for example `rest` or `graphql`.
+A builder is the result of the data model. Builders allow compositions with other models and to transform the data into different shapes, for example `rest` or `graphql`.
 
 When you want to get the generated data, you would **build** the model (builder).
 
@@ -44,9 +44,11 @@ Builders are essentially composed by a generator and (optionally) transformers.
 
 ### Generator
 
-A generator is what describes the initial model shape. Most of the fields can and should be initialized with some values. You can define random values using `fake` or static values.
+A generator is what describes the initial model shape and data. Most of the fields can and should be initialized with some values. You can define random values using `fake` or static values.
 
 ```ts
+import { Generator, fake } from '@commercetools-test-data/core';
+
 const generator = Generator<TAuthor>({
   name: 'Author',
   fields: {
@@ -54,7 +56,6 @@ const generator = Generator<TAuthor>({
     locale: 'en',
   },
 });
-```
 
 > The shape of the generator model is what usually is used in the UI and does not need transformation.
 

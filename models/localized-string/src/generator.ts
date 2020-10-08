@@ -2,10 +2,7 @@ import type { TLocalizedString } from './types';
 
 import { Generator, fake } from '@commercetools-test-data/core';
 
-/**
- * A localized string is a JSON object where the keys are of ↗ IETF language tag,
- * and the values the corresponding strings used for that language.
- */
+// https://docs.commercetools.com/api/types#localizedstring
 const generator = Generator<TLocalizedString>({
   name: 'LocalizedString',
   fields: {

@@ -12,13 +12,13 @@ This repository contains data models within the commercetools platform ecosystem
 
 Each model is published as a standalone NPM package. Models are defined in the `models/*` workspace.
 
-All models are built using the `core` package, which contains the necessary methods to implement and work with models. The `core` package is very much agnostic of the commercetools platform models, so you can potentially use it to build your own models for other systems.
+All models are built using the `core` package, which contains the necessary methods to implement and work with models. The `core` package is very much agnostic of the commercetools platform domain, so you can potentially use it to build your own models for other domains.
 
 To know more about how to work and build data models, [check out the documentation of the `core` package](./core).
 
 # Usage
 
-Using models is pretty straightforward. You import the package and build the model, which returns the data in the request shape.
+Using models is pretty straightforward. You import the package and build the model, which returns the data in the requested shape.
 
 For example, assuming we have an `Author` model:
 
