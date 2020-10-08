@@ -1,5 +1,3 @@
-import { type } from 'os';
-
 // Export types
 export * from './localized-string/types';
 
