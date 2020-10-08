@@ -1,5 +1,14 @@
 # @commercetools-test-data/commons
 
+## 1.1.2
+
+### Patch Changes
+
+- [`d7932e1`](https://github.com/commercetools/test-data/commit/d7932e125cb31c88eee4fa99312774d0ed838af5) [#17](https://github.com/commercetools/test-data/pull/17) Thanks [@emmenko](https://github.com/emmenko)! - Fix type declarations generation to only include declarations files of each specific package
+
+- Updated dependencies [[`d7932e1`](https://github.com/commercetools/test-data/commit/d7932e125cb31c88eee4fa99312774d0ed838af5)]:
+  - @commercetools-test-data/core@1.1.2
+
 ## 1.1.1
 
 ### Patch Changes
