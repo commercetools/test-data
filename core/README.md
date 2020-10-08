@@ -163,7 +163,41 @@ A transformer can be configured with different options:
 
 ### Presets
 
-Presets are pre-configured models (builders) that can be defined for specific use cases.
+Presets are pre-configured models (builders) that can be defined for specific use cases and re-used.
+
+For example:
+
+```ts
+// presets/author-with-one-book.ts
+import type { TAuthorBuilder } from './types';
+import * as Book from '../../book';
+import Author from './builder';
+
+const preset = (): TAuthorBuilder => Author.random().books([Book.random()]);
+export default preset;
+
+// presets/index.ts
+export { default as authorWithOneBook } from './author-with-one-book';
+```
+
+Note that the preset exports a function. The function is useful in case the preset requires to use some random data, using the `faker` package. This ensures that on every function invocation, the returned data is indeed random.
+
+For example:
+
+```ts
+// presets/author-with-one-book.ts
+import type { TAuthorBuilder } from './types';
+import * as faker from 'faker';
+import * as Book from '../../book';
+import Author from './builder';
+
+const preset = (): TAuthorBuilder =>
+  Author.random().books([Book.random().title(faker.random.words())]);
+export default preset;
+
+// presets/index.ts
+export { default as authorWithOneBook } from './author-with-one-book';
+```
 
 ### Types
 
