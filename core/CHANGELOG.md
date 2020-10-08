@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 1.1.1
+
+### Patch Changes
+
+- [`716fad7`](https://github.com/commercetools/test-data/commit/716fad74520d8bacf895756f5fffaef1216d2f69) [#15](https://github.com/commercetools/test-data/pull/15) Thanks [@emmenko](https://github.com/emmenko)! - Fix bundle compatibility with browser environments
+
 ## 1.1.0
 
 ### Patch Changes
