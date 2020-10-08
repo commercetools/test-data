@@ -1,0 +1,44 @@
+{
+  "name": "@commercetools-test-data/commons",
+  "version": "0.1.0",
+  "description": "Data model for commercetools platform common types",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/commons"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/commons-index.cjs.js",
+  "module": "./dist/commons-index.es.js",
+  "typings": "./dist/typings/index.d.ts",
+  "types": "./dist/typings/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist/**",
+    "build": "yarn build:bundles && yarn build:typings",
+    "build:bundles": "cross-env NODE_ENV=production rollup -c ../../rollup.config.js -i ./src/index.ts --dir dist",
+    "build:bundles:watch": "yarn build:bundles -w",
+    "build:typings": "cross-env tsc -p tsconfig.declarations.json --emitDeclarationOnly --declarationDir dist/typings"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.11.2",
+    "@babel/runtime-corejs3": "7.11.2",
+    "@commercetools-test-data/core": "1.0.1",
+    "faker": "^4.1.0"
+  }
+}
