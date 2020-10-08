@@ -292,7 +292,6 @@ describe('building', () => {
 
   describe('with generator', () => {
     const generator = Generator<TestOrganization>({
-      name: 'Organization',
       fields: {
         id: fake((f) => f.random.uuid()),
         version: sequence(),
@@ -631,7 +630,6 @@ describe('building', () => {
 
   describe('paginated list', () => {
     const generator = Generator<TestOrganization>({
-      name: 'Organization',
       fields: {
         id: fake((f) => f.random.uuid()),
         version: sequence(),

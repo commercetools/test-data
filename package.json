@@ -9,6 +9,7 @@
     "models/*"
   ],
   "scripts": {
+    "clean": "yarn workspaces run prebuild",
     "build": "yarn workspaces run build",
     "lint": "jest --projects jest.eslint.config.js",
     "lint:js": "jest --config jest.eslint.config.js",

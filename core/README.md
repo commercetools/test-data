@@ -47,16 +47,17 @@ Builders are essentially composed by a generator and (optionally) transformers.
 
 A generator is what describes the initial model shape and data. Most of the fields can and should be initialized with some values. You can define random values using `fake` or static values.
 
-````ts
+```ts
+import type { TAuthor } from './types';
 import { Generator, fake } from '@commercetools-test-data/core';
 
 const generator = Generator<TAuthor>({
-  name: 'Author',
   fields: {
     firstName: fake((f) => f.name.firstName()),
     locale: 'en',
   },
 });
+```
 
 > The shape of the generator model is what usually is used in the UI and does not need transformation.
 
@@ -66,19 +67,24 @@ In this case, the generator can define the value of the nested field as `null`. 
 For example, the author model can have a list of books:
 
 ```ts
+import type { TAuthor } from './types';
+import { Generator, fake } from '@commercetools-test-data/core';
+
 const generator = Generator<TAuthor>({
-  name: 'Author',
   fields: {
     firstName: fake((f) => f.name.firstName()),
     locale: 'en',
     books: null,
   },
 });
-````
+```
 
 Books are defined as another model:
 
 ```ts
+import type { TBook } from './types';
+import { Generator, fake } from '@commercetools-test-data/core';
+
 const generator = Generator<TBook>({
   name: 'Book',
   fields: {
@@ -90,6 +96,10 @@ const generator = Generator<TBook>({
 When defining the builder for the `Author`, we can then initialize the `books` field by referencing the `Book` model.
 
 ```ts
+import type { TAuthor } from './types';
+import { Builder } from '@commercetools-test-data/core';
+import * as Book from '../book';
+
 const Author = Builder<TAuthor>({
   generator,
   transformers,
@@ -99,15 +109,13 @@ const Author = Builder<TAuthor>({
 At the same time, we also need to tell the transformers that the `books` field can be built. We do that by specifying the field in the `buildFields` option:
 
 ```ts
+import type { TAuthor, TAuthorGraphql } from './types';
+import { Transformer } from '@commercetools-test-data/core';
+
 const transformers = {
-  default: Transformer<TAuthor, TAuthor>('default', {
-    buildFields: ['books'],
-  }),
   graphql: Transformer<TAuthor, TAuthorGraphql>('graphql', {
     buildFields: ['books'],
-    addFields: () => ({
-      __typename: 'Author',
-    }),
+    // ...
   }),
 };
 ```
@@ -127,10 +135,10 @@ Defining a `graphql` and/or a `rest` transformer is optional and depends on what
 For example, for the `Author` we can define a `graphql` transformer like this:
 
 ```ts
+import type { TAuthor, TAuthorGraphql } from './types';
+import { Transformer } from '@commercetools-test-data/core';
+
 const transformers = {
-  default: Transformer<TAuthor, TAuthor>('default', {
-    buildFields: ['books'],
-  }),
   graphql: Transformer<TAuthor, TAuthorGraphql>('graphql', {
     buildFields: ['books'],
     addFields: () => ({

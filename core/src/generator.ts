@@ -58,24 +58,19 @@ export interface BuildConfiguration<FactoryResultType> {
 /* --- */
 
 type TGeneratorOptions<Model> = {
-  name: string | BuildConfiguration<Model>;
   fields: BuildConfiguration<Model>['fields'];
   postBuild?: BuildConfiguration<Model>['postBuild'];
 };
 
 function Generator<FactoryResultType>({
-  name,
   fields,
   postBuild,
 }: TGeneratorOptions<FactoryResultType>): TGeneratorResult<FactoryResultType> {
-  const generate = build<FactoryResultType>(name, {
-    fields,
-    postBuild,
-  });
+  const originalGenerate = build<FactoryResultType>({ fields, postBuild });
 
   return {
     generate({ defaults = {} } = {}) {
-      return generate({
+      return originalGenerate({
         overrides: (defaults as unknown) as Overrides,
       });
     },
