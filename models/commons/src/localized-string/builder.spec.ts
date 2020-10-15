@@ -57,6 +57,20 @@ describe('building as GraphQL', () => {
     );
   });
 
+  it('should drop undefined locales', () => {
+    const built = LocalizedString()
+      .en(undefined)
+      .buildGraphql<TLocalizedString>();
+
+    expect(built).toEqual(
+      expect.not.arrayContaining([
+        expect.objectContaining({
+          locale: 'en',
+        }),
+      ])
+    );
+  });
+
   it('should remove all language keys', () => {
     const built = LocalizedString().buildGraphql<TLocalizedString>();
 
