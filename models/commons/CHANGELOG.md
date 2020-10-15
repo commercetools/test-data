@@ -1,5 +1,11 @@
 # @commercetools-test-data/commons
 
+## 1.1.3
+
+### Patch Changes
+
+- [`b9953cc`](https://github.com/commercetools/test-data/commit/b9953ccc5d497dc337226984fe2f6529063000fa) [#20](https://github.com/commercetools/test-data/pull/20) Thanks [@pa3](https://github.com/pa3)! - Filter out empty translations from LocalizedString
+
 ## 1.1.2
 
 ### Patch Changes
