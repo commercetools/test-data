@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 2.0.0
+
+### Major Changes
+
+- [`0c35ac4`](https://github.com/commercetools/test-data/commit/0c35ac491d3ff8703f5d6293a73acfdb607410cd) [#24](https://github.com/commercetools/test-data/pull/24) Thanks [@pa3](https://github.com/pa3)! - drop `default` prop from builder initializer
+
 ## 1.1.2
 
 ### Patch Changes
