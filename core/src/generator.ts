@@ -1,4 +1,3 @@
-// import type { Overrides } from '@jackfranklin/test-data-bot';
 import type { TGeneratorResult } from './types';
 
 import { build } from '@jackfranklin/test-data-bot';
@@ -41,12 +40,8 @@ export type Field =
 export type FieldsConfiguration<FactoryResultType> = {
   readonly [x in keyof FactoryResultType]: Field;
 };
-export interface Overrides {
-  [x: string]: Field;
-}
 export interface TraitsConfiguration<FactoryResultType> {
   readonly [traitName: string]: {
-    overrides?: Overrides;
     postBuild?: (builtThing: FactoryResultType) => FactoryResultType;
   };
 }
@@ -69,10 +64,8 @@ function Generator<FactoryResultType>({
   const originalGenerate = build<FactoryResultType>({ fields, postBuild });
 
   return {
-    generate({ defaults = {} } = {}) {
-      return originalGenerate({
-        overrides: (defaults as unknown) as Overrides,
-      });
+    generate() {
+      return originalGenerate();
     },
   };
 }

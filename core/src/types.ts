@@ -41,7 +41,7 @@ export type TBuilderMapStateFunction<Model extends Json> = (
 ) => Partial<Model>;
 
 export type TGeneratorResult<Model> = {
-  generate: (options: { defaults?: Partial<Model> }) => Model;
+  generate: () => Model;
 };
 
 export type TTransformType = 'default' | 'graphql' | 'rest';
@@ -123,7 +123,6 @@ export type TRestTransformer<
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
 export type TBuilderOptions<Model extends Json> = {
-  defaults?: Partial<Model>;
   generator?: TGeneratorResult<Model>;
   transformers?: {
     [Key in TTransformType]?: TTransformer<Model>;
