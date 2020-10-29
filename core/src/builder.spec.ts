@@ -54,45 +54,20 @@ type TestTeam = {
 
 describe('building', () => {
   describe('without generator', () => {
-    describe('without defaults', () => {
-      it('should build all properties', () => {
-        const built = Builder<TestUser>()
-          .id(1)
-          .userName('Fred')
-          .email('fred@foo.com')
-          .build();
+    it('should build all properties', () => {
+      const built = Builder<TestUser>()
+        .id(1)
+        .userName('Fred')
+        .email('fred@foo.com')
+        .build();
 
-        expect(built).toEqual(
-          expect.objectContaining({
-            id: 1,
-            userName: 'Fred',
-            email: 'fred@foo.com',
-          })
-        );
-      });
-    });
-
-    describe('with defaults', () => {
-      it('should include defaults in all build properties', () => {
-        const defaults = {
-          street: 'Homestreet 14',
-        };
-
-        const built = Builder<TestUser>({ defaults })
-          .id(1)
-          .userName('Fred')
-          .email('fred@foo.com')
-          .build();
-
-        expect(built).toEqual(
-          expect.objectContaining({
-            ...defaults,
-            id: 1,
-            userName: 'Fred',
-            email: 'fred@foo.com',
-          })
-        );
-      });
+      expect(built).toEqual(
+        expect.objectContaining({
+          id: 1,
+          userName: 'Fred',
+          email: 'fred@foo.com',
+        })
+      );
     });
 
     describe('with transformer', () => {
@@ -349,25 +324,22 @@ describe('building', () => {
       const built = Builder<TestOrganization>({
         generator,
         transformers,
-        defaults: {
-          version: 2,
-        },
       })
         .name('My name')
         .buildGraphql<TestOrganizationTransformed>();
 
-      // Should keep non defaulted and non overwritten properties
+      // Should keep non overwritten properties
       expect(built).toEqual(
         expect.objectContaining({
           name: 'My name',
         })
       );
 
-      // Should allow overwriting while using defaults
+      // Should allow overwriting generated properties
       expect(built).toEqual(
         expect.objectContaining({
           identifier: 1,
-          v: '2-1',
+          v: '3-1',
         })
       );
 
