@@ -1,12 +1,13 @@
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.BUILD_ROLLUP = true;
 
-const fs = require('fs');
-const { babel } = require('@rollup/plugin-babel');
-const readPkgUp = require('read-pkg-up');
-const { nodeResolve } = require('@rollup/plugin-node-resolve');
-const commonjs = require('@rollup/plugin-commonjs');
-const builtins = require('rollup-plugin-node-builtins');
+import fs from 'fs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import babel from '@rollup/plugin-babel';
+import builtins from 'rollup-plugin-node-builtins';
+import peerDeps from 'rollup-plugin-peer-deps-external';
+import readPkgUp from 'read-pkg-up';
 
 const { packageJson: pkg } = readPkgUp.sync({
   cwd: fs.realpathSync(process.cwd()),
@@ -15,6 +16,9 @@ const [, packageName] = pkg.name.split('@commercetools-test-data/');
 const extensions = ['.js', '.ts', '.tsx'];
 
 const plugins = [
+  peerDeps({
+    includeDependencies: true,
+  }),
   babel({ extensions, babelHelpers: 'runtime', root: __dirname }),
   // To convert CJS modules to ES6
   commonjs({
