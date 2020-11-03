@@ -1,5 +1,14 @@
 # @commercetools-test-data/commons
 
+## 2.0.1
+
+### Patch Changes
+
+- [`95b701b`](https://github.com/commercetools/test-data/commit/95b701b4445cb3374b43a4efc81eef6b31f88536) [#27](https://github.com/commercetools/test-data/pull/27) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update all dependencies
+
+- Updated dependencies [[`95b701b`](https://github.com/commercetools/test-data/commit/95b701b4445cb3374b43a4efc81eef6b31f88536)]:
+  - @commercetools-test-data/core@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
