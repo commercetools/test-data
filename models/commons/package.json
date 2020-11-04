@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/commons",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -38,7 +38,7 @@
   "dependencies": {
     "@babel/runtime": "7.12.1",
     "@babel/runtime-corejs3": "7.12.1",
-    "@commercetools-test-data/core": "2.0.0",
+    "@commercetools-test-data/core": "2.0.1",
     "faker": "^4.1.0"
   }
 }
