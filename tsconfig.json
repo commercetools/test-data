@@ -30,26 +30,9 @@
     "stripInternal": true,
     "target": "ES2019",
     "allowJs": false,
-    "baseUrl": ".",
-    // https://stackoverflow.com/a/40326719
-    "paths": {
-      "*": [
-        // "@types/*",
-        "*"
-      ]
-    },
     "typeRoots": [
       // "@types",
       "node_modules/@types"
     ]
-  },
-  "include": [
-    // "jest.d.ts",
-    // "@types-extensions/*",
-    "**/*.spec.ts",
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/dist/**/*"
-  ]
+  }
 }

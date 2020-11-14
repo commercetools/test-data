@@ -1,12 +1,5 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 8,
-    sourceType: 'module',
-  },
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
@@ -49,6 +42,12 @@ module.exports = {
     },
   },
   overrides: [
+    {
+      files: ['*.spec.ts'],
+      env: {
+        jest: true,
+      },
+    },
     {
       files: ['*.ts', '*.tsx'],
       rules: {

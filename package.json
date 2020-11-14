@@ -8,9 +8,17 @@
     "core",
     "models/*"
   ],
+  "preconstruct": {
+    "packages": [
+      "core",
+      "models/*"
+    ]
+  },
   "scripts": {
+    "postinstall": "preconstruct dev && manypkg check",
+    "build": "preconstruct build",
+    "watch": "preconstruct watch",
     "clean": "yarn workspaces run prebuild",
-    "build": "yarn workspaces run build",
     "lint": "jest --projects jest.eslint.config.js",
     "lint:js": "jest --config jest.eslint.config.js",
     "format": "yarn format:js && yarn format:md",
@@ -19,7 +27,7 @@
     "test": "jest --config jest.test.config.js",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/plugin-transform-runtime": "7.12.1",
     "@babel/preset-env": "7.12.1",
     "@babel/preset-typescript": "7.12.1",
@@ -27,13 +35,12 @@
     "@changesets/cli": "2.11.2",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@rollup/plugin-babel": "5.2.1",
-    "@rollup/plugin-commonjs": "16.0.0",
-    "@rollup/plugin-node-resolve": "10.0.0",
+    "@manypkg/cli": "0.16.1",
+    "@preconstruct/cli": "1.1.34",
     "@types/node": "14.14.6",
     "@typescript-eslint/eslint-plugin": "4.6.1",
     "@typescript-eslint/parser": "4.6.1",
-    "babel-jest": "26.6.2",
+    "babel-jest": "26.6.3",
     "cross-env": "7.0.2",
     "eslint": "7.12.1",
     "eslint-config-airbnb-base": "14.2.0",
@@ -45,7 +52,7 @@
     "eslint-plugin-jest": "24.1.0",
     "eslint-plugin-prettier": "3.1.4",
     "husky": "4.3.0",
-    "jest": "26.6.2",
+    "jest": "26.6.3",
     "jest-runner-eslint": "0.10.0",
     "jest-silent-reporter": "0.3.0",
     "jest-watch-master": "1.0.0",
@@ -54,10 +61,10 @@
     "prettier": "2.1.2",
     "read-pkg-up": "7.0.1",
     "rimraf": "3.0.2",
-    "rollup": "2.33.1",
-    "rollup-plugin-node-builtins": "2.1.2",
-    "rollup-plugin-peer-deps-external": "2.2.4",
     "ts-jest": "26.4.3",
     "typescript": "4.0.5"
+  },
+  "resolutions": {
+    "**/jest-haste-map/fsevents": "2.1.3"
   }
 }
