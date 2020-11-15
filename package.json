@@ -63,11 +63,5 @@
     "rimraf": "3.0.2",
     "ts-jest": "26.4.3",
     "typescript": "4.0.5"
-  },
-  "optionalDependencies" : {
-    "fsevents": "^2.2.1"
-  },
-  "resolutions": {
-    "fsevents": "2.2.1"
   }
 }
