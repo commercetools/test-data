@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 2.1.0
+
+### Minor Changes
+
+- [`965dce5`](https://github.com/commercetools/test-data/commit/965dce5860972e92f09010793bbfacddeb35266f) [#38](https://github.com/commercetools/test-data/pull/38) Thanks [@emmenko](https://github.com/emmenko)! - Compile and bundle packages using [preconstruct](https://preconstruct.tools)
+
+### Patch Changes
+
+- Updated dependencies [[`965dce5`](https://github.com/commercetools/test-data/commit/965dce5860972e92f09010793bbfacddeb35266f)]:
+  - @commercetools-test-data/core@2.1.0
+
 ## 2.0.1
 
 ### Patch Changes
