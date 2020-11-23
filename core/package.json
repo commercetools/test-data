@@ -17,8 +17,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/core.cjs.js",
-  "module": "dist/core.esm.js",
+  "main": "dist/commercetools-test-data-core.cjs.js",
+  "module": "dist/commercetools-test-data-core.esm.js",
   "files": [
     "dist",
     "package.json",

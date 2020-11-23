@@ -18,8 +18,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commons.cjs.js",
-  "module": "dist/commons.esm.js",
+  "main": "dist/commercetools-test-data-commons.cjs.js",
+  "module": "dist/commercetools-test-data-commons.esm.js",
   "files": [
     "dist",
     "package.json",
