@@ -21,7 +21,9 @@ function Transformer<Model extends Json, TransformedModel>(
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {
-        const field = transformedFields[fieldToBuild] as TBuilder<Model>;
+        const field = transformedFields[fieldToBuild] as
+          | TBuilder<Model>
+          | TBuilder<Model>[];
         // Build only fields that are not null or undefined
         if (field) {
           transformedFields = {
