@@ -1,67 +1,13 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:jest/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-  ],
-  plugins: ['import', 'jest', 'prettier', '@typescript-eslint/eslint-plugin'],
-  rules: {
-    '@typescript-eslint/ban-types': 0,
-    '@typescript-eslint/naming-convention': 0,
-    '@typescript-eslint/consistent-type-definitions': 0,
-    '@typescript-eslint/no-explicit-any': 2,
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      {
-        functions: false,
-      },
-    ],
-    '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/unbound-method': 0,
-    'import/no-extraneous-dependencies': 0,
-    'import/no-named-as-default': 0,
-    'import/no-named-as-default-member': 0,
-    'import/default': 0,
-    'import/no-unresolved': 2,
-  },
+  extends: ['@commercetools-frontend/eslint-config-mc-app'],
   settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.js', '.jsx', '.ts', '.tsx'],
-    },
-    'import/resolver': {
-      'eslint-import-resolver-typescript': true,
-      typescript: {},
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
+    react: {
+      // That's a lie, we don't use React here. However, the ESLint preset
+      // comes with the react plugin and `version: detect`, so we pass
+      // `latest` to avoid logging a warning.
+      // TODO: maybe we need to ship a more modulare ESLint config,
+      // so that it can be used in a non-react environment.
+      version: 'latest',
     },
   },
-  overrides: [
-    {
-      files: ['*.spec.ts'],
-      env: {
-        jest: true,
-      },
-    },
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        '@typescript-eslint/ban-ts-comment': 0,
-        '@typescript-eslint/explicit-function-return-type': 0,
-        '@typescript-eslint/explicit-member-accessibility': [
-          2,
-          {
-            accessibility: 'no-public',
-          },
-        ],
-        '@typescript-eslint/no-require-imports': 0,
-        '@typescript-eslint/promise-function-async': 0,
-      },
-    },
-  ],
 };
