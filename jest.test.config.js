@@ -7,5 +7,5 @@ module.exports = {
   },
   testRegex: '\\.spec\\.[j|t]sx?$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-master'],
+  watchPlugins: ['jest-watch-typeahead/filename'],
 };
