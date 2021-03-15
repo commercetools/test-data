@@ -51,12 +51,12 @@ function Transformer<Model extends Json, TransformedModel>(
     if (fieldsReplacer) {
       if (fieldsAdder) {
         console.warn(
-          `The "replaceFields" option takes precedence over the "addFields" option, making it unsed.`
+          `The "replaceFields" option takes precedence over the "addFields" option, making it unused.`
         );
       }
       if (fieldsToRemove) {
         console.warn(
-          `The "replaceFields" option takes precedence over the "removeFields" option, making it unsed.`
+          `The "replaceFields" option takes precedence over the "removeFields" option, making it unused.`
         );
       }
       return (fieldsReplacer({ fields }) as unknown) as TransformedModel;
