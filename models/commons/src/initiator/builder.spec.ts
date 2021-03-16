@@ -12,11 +12,13 @@ describe('building', () => {
     expect(built.customerRef).toEqual(
       expect.objectContaining({
         id: expect.any(String),
+        typeId: 'customer',
       })
     );
     expect(built.userRef).toEqual(
       expect.objectContaining({
         id: expect.any(String),
+        typeId: 'user',
       })
     );
   });

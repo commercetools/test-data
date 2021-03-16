@@ -8,8 +8,8 @@ const generator = Generator<TInitiator>({
     externalUserId: fake((f) => f.random.uuid()),
     anonymousId: fake((f) => f.random.uuid()),
     clientId: fake((f) => f.random.uuid()),
-    customerRef: Reference.random().build(),
-    userRef: Reference.random().build(),
+    customerRef: Reference.random().typeId('customer').build(),
+    userRef: Reference.random().typeId('user').build(),
   },
 });
 
