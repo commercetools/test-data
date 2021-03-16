@@ -2,6 +2,7 @@ import type { TInitiator } from './types';
 import Reference from '../reference';
 import { Generator, fake } from '@commercetools-test-data/core';
 
+// https://docs.commercetools.com/api/types#client-logging
 const generator = Generator<TInitiator>({
   fields: {
     isPlatformClient: fake((f) => f.random.boolean()),
