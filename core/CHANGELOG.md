@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 2.1.2
+
+### Patch Changes
+
+- [#52](https://github.com/commercetools/test-data/pull/52) [`54b4586`](https://github.com/commercetools/test-data/commit/54b4586fea89dbef8bd6086eeeaeae52e6a3a394) Thanks [@renovate](https://github.com/apps/renovate)! - chore: update all deps
+
 ## 2.1.1
 
 ### Patch Changes
