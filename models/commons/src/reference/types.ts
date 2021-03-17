@@ -1,6 +1,6 @@
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TReferenceBuilder = TBuilder<TReference>;
+export type TReferenceBuilder = TBuilder<TReference<TExpandedReferenceObject>>;
 
 export type TCreateReferenceBuilder = () => TReferenceBuilder;
 
@@ -9,14 +9,16 @@ type TExpandedReferenceObject = {
   [key: string]: unknown;
 };
 
-export type TReference = {
+export type TReference<
+  T extends TExpandedReferenceObject = TExpandedReferenceObject
+> = {
   typeId: string;
-  id: TExpandedReferenceObject['id'];
-  obj?: TExpandedReferenceObject;
+  id: T['id'];
+  obj?: T;
 };
 
-export type TReferenceGraphql = TReference & {
+export type TReferenceGraphql = TReference<TExpandedReferenceObject> & {
   __typename: 'Reference';
 };
 
-export type TReferenceRest = TReference;
+export type TReferenceRest = TReference<TExpandedReferenceObject>;
