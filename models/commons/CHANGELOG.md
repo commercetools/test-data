@@ -1,5 +1,11 @@
 # @commercetools-test-data/commons
 
+## 2.2.0
+
+### Minor Changes
+
+- [#58](https://github.com/commercetools/test-data/pull/58) [`288b012`](https://github.com/commercetools/test-data/commit/288b012823c7df21b01dd29a7d11bd724c39e407) Thanks [@adnasa](https://github.com/adnasa)! - add `Reference` and `Initiator`
+
 ## 2.1.2
 
 ### Patch Changes
