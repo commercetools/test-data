@@ -18,7 +18,7 @@
     "postinstall": "preconstruct dev && manypkg check",
     "build": "preconstruct build",
     "watch": "preconstruct watch",
-    "clean": "yarn workspaces run prebuild",
+    "clean": "manypkg exec rm -rf build dist",
     "lint": "jest --projects jest.eslint.config.js",
     "lint:js": "jest --config jest.eslint.config.js",
     "format": "yarn format:js && yarn format:md",

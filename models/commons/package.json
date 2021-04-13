@@ -27,9 +27,10 @@
     "README.md"
   ],
   "dependencies": {
-    "@babel/runtime": "7.13.10",
-    "@babel/runtime-corejs3": "7.13.10",
+    "@babel/runtime": "^7.13.10",
+    "@babel/runtime-corejs3": "^7.13.10",
     "@commercetools-test-data/core": "2.1.2",
-    "faker": "^4.1.0"
+    "@types/faker": "^5.5.1",
+    "faker": "^5.5.3"
   }
 }
