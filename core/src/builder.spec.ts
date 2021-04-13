@@ -1,4 +1,4 @@
-import { sequence, fake } from '@jackfranklin/test-data-bot';
+import { sequence, fake } from './@jackfranklin/test-data-bot';
 import {
   buildField,
   buildFields,
@@ -268,7 +268,7 @@ describe('building', () => {
   describe('with generator', () => {
     const generator = Generator<TestOrganization>({
       fields: {
-        id: fake((f) => f.random.uuid()),
+        id: fake((f) => f.datatype.uuid()),
         version: sequence(),
         name: fake((f) => f.company.companyName()),
       },
@@ -603,7 +603,7 @@ describe('building', () => {
   describe('paginated list', () => {
     const generator = Generator<TestOrganization>({
       fields: {
-        id: fake((f) => f.random.uuid()),
+        id: fake((f) => f.datatype.uuid()),
         version: sequence(),
         name: fake((f) => f.company.companyName()),
       },
