@@ -26,7 +26,8 @@
     "format:js": "prettier --write '**/*.{js,ts,tsx}'",
     "format:md": "prettier --write --parser markdown '**/*.md'",
     "test": "jest --config jest.test.config.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json'"
   },
   "dependencies": {
     "@changesets/changelog-github": "0.3.0",
