@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 2.3.0
+
+### Minor Changes
+
+- [#67](https://github.com/commercetools/test-data/pull/67) [`3e36d52`](https://github.com/commercetools/test-data/commit/3e36d5214d002309d7f3107c3ffda09a5bfdc048) Thanks [@emmenko](https://github.com/emmenko)! - Use `faker` v5
+
 ## 2.1.2
 
 ### Patch Changes
