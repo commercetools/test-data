@@ -1,4 +1,5 @@
-import type { TReference, TReferenceGraphql } from './types';
+import type { TReference, TReferenceGraphql, TReferenceRest } from './types';
+import omit from 'lodash/omit';
 import { Transformer } from '@commercetools-test-data/core';
 
 const transformers = {
@@ -8,6 +9,12 @@ const transformers = {
   graphql: Transformer<TReference, TReferenceGraphql>('graphql', {
     addFields: () => ({
       __typename: 'Reference',
+    }),
+  }),
+  rest: Transformer<TReferenceRest, TReferenceRest>('rest', {
+    replaceFields: ({ fields }) => ({
+      ...fields,
+      obj: omit(fields, ['typeId']),
     }),
   }),
 };
