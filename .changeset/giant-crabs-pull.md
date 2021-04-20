@@ -1,16 +1,11 @@
-# `@commercetools-test-data/category`
+---
+'@commercetools-test-data/category': patch
+'@commercetools-test-data/utils': patch
+---
 
-This package provides the data model for the commercetools platform `Category` type
+Add `models/category`, `utils/`
 
-https://docs.commercetools.com/api/projects/categories
-
-## Install
-
-```bash
-$ yarn add -D @commercetools-test-data/category
-```
-
-## Usage
+\*\*Example usage of `models/category`
 
 ```tsx
 import Category from '@commercetools-test-data/category';
