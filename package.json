@@ -4,9 +4,17 @@
   "description": "Modules to generate test data for commercetools APIs",
   "license": "MIT",
   "private": true,
-  "workspaces": ["core", "models/*"],
+  "workspaces": [
+    "core",
+    "models/*",
+    "utils"
+  ],
   "preconstruct": {
-    "packages": ["core", "models/*"]
+    "packages": [
+      "core",
+      "models/*",
+      "utils"
+    ]
   },
   "scripts": {
     "prepare": "husky install",
