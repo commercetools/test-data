@@ -7,7 +7,7 @@ Add `models/category`, `utils/`
 
 \*\*Example usage of `models/category`
 
-```tsx
+```ts
 import Category from '@commercetools-test-data/category';
 const category = Category.random().build();
 console.log(category);
@@ -26,4 +26,19 @@ console.log(category);
 //   "orderHint": "0.01",
 //   "assets": []
 // }
+```
+
+\*\*Example usage of `createRelatedDates`
+
+```ts
+import type { TCategory } from '@commercetools-test-data/category';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+
+const [getOlderDate, getNewerDate] = createRelatedDates();
+const generator = Generator<TCategory>({
+  fields: {
+    createdAt: fake(getOlderDate),
+    lastModifiedAt: fake(getNewerDate),
+  },
+});
 ```
