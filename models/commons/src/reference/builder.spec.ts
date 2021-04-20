@@ -1,4 +1,4 @@
-import type { TReference, TReferenceGraphql } from './types';
+import { TReference, TReferenceGraphql, TReferenceRest } from './types';
 
 import Reference from './builder';
 
@@ -20,5 +20,18 @@ describe('building as GraphQL', () => {
         __typename: 'Reference',
       })
     );
+  });
+});
+
+describe('building as REST', () => {
+  it('should add `obj` as expanded reference', () => {
+    const built = Reference().typeId('category').buildRest<TReferenceRest>();
+    expect(built).toEqual({
+      id: expect.any(String),
+      typeId: expect.any(String),
+      obj: expect.objectContaining({
+        id: expect.any(String),
+      }),
+    });
   });
 });
