@@ -31,9 +31,9 @@
  * it's expecting to be invoked with faker as parameter
  */
 const createRelatedDates = (recentDaysFromPastReference: number = 10) => {
-  const pastReference = Date.now();
+  const pastReference = new Date();
   const getOlderDate = (f: Faker.FakerStatic) =>
-    f.date.recent(recentDaysFromPastReference, pastReference.toString());
+    f.date.recent(recentDaysFromPastReference, pastReference.toISOString());
 
   const getNewerDate = (f: Faker.FakerStatic) =>
     f.date.between(
