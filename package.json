@@ -34,7 +34,7 @@
   "dependencies": {
     "@changesets/changelog-github": "0.4.0",
     "@changesets/cli": "2.16.0",
-    "@commercetools-frontend/babel-preset-mc-app": "18.7.0",
+    "@commercetools-frontend/babel-preset-mc-app": "19.3.1",
     "@commercetools-frontend/eslint-config-mc-app": "18.7.0",
     "@commitlint/cli": "12.1.1",
     "@commitlint/config-conventional": "12.1.1",
