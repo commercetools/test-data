@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 2.4.0
+
+### Patch Changes
+
+- [#73](https://github.com/commercetools/test-data/pull/73) [`747e744`](https://github.com/commercetools/test-data/commit/747e7446ada62f6407ab8c3e2a66997c30a7821d) Thanks [@adnasa](https://github.com/adnasa)! - Update LICENSE
+
 ## 2.3.0
 
 ### Minor Changes

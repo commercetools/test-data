@@ -1,5 +1,18 @@
 # @commercetools-test-data/commons
 
+## 2.4.0
+
+### Minor Changes
+
+- [#69](https://github.com/commercetools/test-data/pull/69) [`cc1789d`](https://github.com/commercetools/test-data/commit/cc1789d77a3b6d12e6f44cb8edc6447aba0141c1) Thanks [@adnasa](https://github.com/adnasa)! - Fix Reference to distinguish expanded `graphql and`rest` shape respectively
+
+### Patch Changes
+
+- [#73](https://github.com/commercetools/test-data/pull/73) [`747e744`](https://github.com/commercetools/test-data/commit/747e7446ada62f6407ab8c3e2a66997c30a7821d) Thanks [@adnasa](https://github.com/adnasa)! - Update LICENSE
+
+- Updated dependencies [[`747e744`](https://github.com/commercetools/test-data/commit/747e7446ada62f6407ab8c3e2a66997c30a7821d)]:
+  - @commercetools-test-data/core@2.4.0
+
 ## 2.3.0
 
 ### Minor Changes
