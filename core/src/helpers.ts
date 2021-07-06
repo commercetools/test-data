@@ -40,10 +40,7 @@ const omitMany = <T, K extends keyof T = keyof T>(
 ): Omit<T, K> => {
   let result = entity as Omit<T, K>;
   props.forEach((prop) => {
-    result = omitOne(result, (prop as unknown) as keyof Omit<T, K>) as Omit<
-      T,
-      K
-    >;
+    result = omitOne(result, prop as unknown as keyof Omit<T, K>) as Omit<T, K>;
   });
   return result;
 };
@@ -86,16 +83,16 @@ const convertTransformNameToBuildName = (
   }
 };
 
-const toExpandedReference = (typeId?: string) => (
-  data?: TReferenceObject
-): TExpandedReference | null =>
-  typeId && data?.id
-    ? {
-        typeId,
-        id: data.id,
-        obj: data,
-      }
-    : null;
+const toExpandedReference =
+  (typeId?: string) =>
+  (data?: TReferenceObject): TExpandedReference | null =>
+    typeId && data?.id
+      ? {
+          typeId,
+          id: data.id,
+          obj: data,
+        }
+      : null;
 
 const toRestPaginatedQueryResult = <Model extends Json>(
   list: Model[],

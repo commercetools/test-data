@@ -8,9 +8,9 @@ Writing tests often times requires to provide meaningful test data. But how can 
 
 We want to provide a shared implementation to define test data across applications that adheres to the following patterns:
 
-* Test data generation should not be provided inline in each test, but be defined in a central and reusable place.
-* Test data should be randomly generated but still be as representative of real production data as possible
-* Test data generation should be customizable for different scenarios and not altered in the tests themselves.
+- Test data generation should not be provided inline in each test, but be defined in a central and reusable place.
+- Test data should be randomly generated but still be as representative of real production data as possible
+- Test data generation should be customizable for different scenarios and not altered in the tests themselves.
 
 ## Submitting a Pull Request
 

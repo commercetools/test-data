@@ -4,7 +4,6 @@ about: Something is not working?
 title: ''
 labels: bug
 assignees: ''
-
 ---
 
 **Describe the issue**

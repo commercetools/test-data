@@ -91,9 +91,9 @@ export const build = <FactoryResultType>(
 ): ((
   buildTimeConfig?: BuildTimeConfig<FactoryResultType>
 ) => FactoryResultType) => {
-  const config = (typeof factoryNameOrConfig === 'string'
-    ? configObject
-    : factoryNameOrConfig) as BuildConfiguration<FactoryResultType>;
+  const config = (
+    typeof factoryNameOrConfig === 'string' ? configObject : factoryNameOrConfig
+  ) as BuildConfiguration<FactoryResultType>;
 
   let sequenceCounter = 0;
 
@@ -169,7 +169,8 @@ export const build = <FactoryResultType>(
       // as typeof null === 'object'
       calculatedValue = fieldValue;
     } else if (typeof fieldValue === 'object') {
-      const nestedFieldsObject = fieldValue as FieldsConfiguration<FactoryResultType>;
+      const nestedFieldsObject =
+        fieldValue as FieldsConfiguration<FactoryResultType>;
 
       calculatedValue = expandConfigFields(nestedFieldsObject);
     } else {
