@@ -414,8 +414,9 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder =
-              Builder<TestExpandedUserReference>().name('My name');
+            const userBuilder = Builder<TestExpandedUserReference>().name(
+              'My name'
+            );
             const built = Builder<TestUserReference>({
               transformers,
             })
@@ -444,8 +445,9 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder =
-              Builder<TestExpandedUserReference>().name('My name');
+            const userBuilder = Builder<TestExpandedUserReference>().name(
+              'My name'
+            );
             const built = Builder<TestUserReference>({
               transformers,
             })
@@ -524,8 +526,9 @@ describe('building', () => {
               }
             ),
           };
-          const userBuilder =
-            Builder<TestExpandedUserReference>().name('My name');
+          const userBuilder = Builder<TestExpandedUserReference>().name(
+            'My name'
+          );
           const built = Builder<TestUserReference>({ transformers })
             .id('my-id')
             .user<TestExpandedUserReference>(userBuilder)
@@ -636,6 +639,27 @@ describe('building', () => {
         });
 
         expect(list).toEqual({
+          total: 10,
+          offset: 2,
+          count: 2,
+          results: expect.arrayContaining([
+            expect.objectContaining({ id: 'my-id' }),
+          ]),
+        });
+      });
+    });
+
+    describe('with typename overwrite', () => {
+      it('should build a paginated list with an overwritten typename', () => {
+        const builder = Builder<TestOrganization>({ generator }).id('my-id');
+        const list = buildGraphqlList([builder, builder], {
+          total: 10,
+          offset: 2,
+          typename: 'OrganizationPaginatedResultList',
+        });
+
+        expect(list).toEqual({
+          __typename: 'OrganizationPaginatedResultList',
           total: 10,
           offset: 2,
           count: 2,
