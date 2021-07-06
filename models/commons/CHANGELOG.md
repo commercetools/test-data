@@ -1,5 +1,12 @@
 # @commercetools-test-data/commons
 
+## 2.4.1
+
+### Patch Changes
+
+- Updated dependencies [[`3a8d03e`](https://github.com/commercetools/test-data/commit/3a8d03e14fc166bddc8e57039b6c379ef2d0904e), [`2085e1e`](https://github.com/commercetools/test-data/commit/2085e1ea59a923e2fbc5a24d33e2ac65de816978)]:
+  - @commercetools-test-data/core@2.4.1
+
 ## 2.4.0
 
 ### Minor Changes
