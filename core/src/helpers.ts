@@ -108,10 +108,10 @@ const toRestPaginatedQueryResult = <Model extends Json>(
 
 const toGraphqlPaginatedQueryResult = <Model extends Json>(
   list: Model[],
-  { name, typename, ...remainingOptions }: TGraphqlPaginatedQueryResultOptions
+  { name, __typename, ...remainingOptions }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
   return {
-    __typename: typename ?? `${name}QueryResult`,
+    __typename: __typename ?? `${name}QueryResult`,
     ...toRestPaginatedQueryResult(list, remainingOptions),
   };
 };
@@ -141,13 +141,13 @@ const buildFields = <Model extends Json>(
 
 const buildGraphqlList = <Model extends Json>(
   builders: TBuilder<Model>[],
-  { name, total, offset, typename }: TGraphqlPaginatedQueryResultOptions
+  { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
   return toGraphqlPaginatedQueryResult<Model>(
     buildFields<Model>(builders, 'graphql'),
     {
       name,
-      typename,
+      __typename,
       total,
       offset,
     }

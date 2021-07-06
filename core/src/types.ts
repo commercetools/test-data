@@ -26,7 +26,7 @@ export type TPaginatedQueryResult<Model extends Json> = {
 
 export type TGraphqlPaginatedQueryResultOptions = {
   name?: string;
-  typename?: string;
+  __typename?: string;
 } & TPaginatedQueryResultOptions;
 
 export type TGraphqlPaginatedQueryResult<Model extends Json> = {

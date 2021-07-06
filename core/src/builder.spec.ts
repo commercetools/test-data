@@ -414,9 +414,8 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder = Builder<TestExpandedUserReference>().name(
-              'My name'
-            );
+            const userBuilder =
+              Builder<TestExpandedUserReference>().name('My name');
             const built = Builder<TestUserReference>({
               transformers,
             })
@@ -445,9 +444,8 @@ describe('building', () => {
                 }
               ),
             };
-            const userBuilder = Builder<TestExpandedUserReference>().name(
-              'My name'
-            );
+            const userBuilder =
+              Builder<TestExpandedUserReference>().name('My name');
             const built = Builder<TestUserReference>({
               transformers,
             })
@@ -526,9 +524,8 @@ describe('building', () => {
               }
             ),
           };
-          const userBuilder = Builder<TestExpandedUserReference>().name(
-            'My name'
-          );
+          const userBuilder =
+            Builder<TestExpandedUserReference>().name('My name');
           const built = Builder<TestUserReference>({ transformers })
             .id('my-id')
             .user<TestExpandedUserReference>(userBuilder)
@@ -655,7 +652,7 @@ describe('building', () => {
         const list = buildGraphqlList([builder, builder], {
           total: 10,
           offset: 2,
-          typename: 'OrganizationPaginatedResultList',
+          __typename: 'OrganizationPaginatedResultList',
         });
 
         expect(list).toEqual({
