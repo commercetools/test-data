@@ -43,7 +43,7 @@ function Transformer<Model extends Json, TransformedModel>(
     // The default transformer only allows building nested fields to not
     // allow re-transforming model shape
     if (transformType === 'default') {
-      return (transformedFields as unknown) as TransformedModel;
+      return transformedFields as unknown as TransformedModel;
     }
 
     // If this is defined, all other options are ignored, as the transformed value
@@ -59,7 +59,7 @@ function Transformer<Model extends Json, TransformedModel>(
           `The "replaceFields" option takes precedence over the "removeFields" option, making it unused.`
         );
       }
-      return (fieldsReplacer({ fields }) as unknown) as TransformedModel;
+      return fieldsReplacer({ fields }) as unknown as TransformedModel;
     }
 
     if (fieldsAdder) {
@@ -79,7 +79,7 @@ function Transformer<Model extends Json, TransformedModel>(
       });
     }
 
-    return (transformedFields as unknown) as TransformedModel;
+    return transformedFields as unknown as TransformedModel;
   }
 
   return { type: transformType, transform };
