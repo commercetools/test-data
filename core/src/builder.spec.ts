@@ -645,5 +645,26 @@ describe('building', () => {
         });
       });
     });
+
+    describe('with typename overwrite', () => {
+      it('should build a paginated list with an overwritten typename', () => {
+        const builder = Builder<TestOrganization>({ generator }).id('my-id');
+        const list = buildGraphqlList([builder, builder], {
+          total: 10,
+          offset: 2,
+          __typename: 'OrganizationPaginatedResultList',
+        });
+
+        expect(list).toEqual({
+          __typename: 'OrganizationPaginatedResultList',
+          total: 10,
+          offset: 2,
+          count: 2,
+          results: expect.arrayContaining([
+            expect.objectContaining({ id: 'my-id' }),
+          ]),
+        });
+      });
+    });
   });
 });
