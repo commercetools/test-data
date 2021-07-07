@@ -1,5 +1,23 @@
 # @commercetools-test-data/core
 
+## 2.4.1
+
+### Patch Changes
+
+- [#79](https://github.com/commercetools/test-data/pull/79) [`3a8d03e`](https://github.com/commercetools/test-data/commit/3a8d03e14fc166bddc8e57039b6c379ef2d0904e) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update all dependencies
+
+* [#87](https://github.com/commercetools/test-data/pull/87) [`2085e1e`](https://github.com/commercetools/test-data/commit/2085e1ea59a923e2fbc5a24d33e2ac65de816978) Thanks [@tdeekens](https://github.com/tdeekens)! - Add support for a `__typename` property when building a GraphQL list
+
+  ```js
+  const list = buildGraphqlList([builder, builder], {
+    total: 10,
+    offset: 2,
+    __typename: 'OrganizationPaginatedResultList',
+  });
+  ```
+
+  Please note that whenever a `name` is specified the old behaviour of concatinating the `name` with `QueryResult` will remain. If that behaviour is not adequate for your use case feel free to use `__typename`.
+
 ## 2.4.0
 
 ### Patch Changes
