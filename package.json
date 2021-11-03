@@ -2,11 +2,19 @@
   "name": "@commercetools-test-data/monorepo",
   "version": "1.0.0",
   "description": "Modules to generate test data for commercetools APIs",
-  "license": "MIT",
   "private": true,
-  "workspaces": ["core", "models/*", "utils"],
+  "packageManager": "yarn@3.1.0",
+  "workspaces": [
+    "core",
+    "models/*",
+    "utils"
+  ],
   "preconstruct": {
-    "packages": ["core", "models/*", "utils"]
+    "packages": [
+      "core",
+      "models/*",
+      "utils"
+    ]
   },
   "scripts": {
     "prepare": "husky install",

@@ -8,15 +8,23 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/category"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-category.cjs.js",
   "module": "dist/commercetools-test-data-category.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@babel/runtime-corejs3": "^7.13.10",
