@@ -17,8 +17,7 @@
     ]
   },
   "scripts": {
-    "prepare": "husky install",
-    "postinstall": "preconstruct dev && manypkg check",
+    "setup": "husky install && preconstruct dev && manypkg check",
     "build": "preconstruct build",
     "watch": "preconstruct watch",
     "clean": "manypkg exec rm -rf build dist",
