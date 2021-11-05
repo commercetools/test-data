@@ -1,1 +1,2 @@
-/.yarn/** linguist-vendored
+.yarn/** linguist-vendored
+.yarn/** linguist-generated=true
