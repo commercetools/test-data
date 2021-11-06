@@ -20,7 +20,7 @@
     "format:md": "prettier --write --parser markdown '**/*.md'",
     "test": "jest --config jest.test.config.js",
     "typecheck": "tsc --noEmit",
-    "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json'"
+    "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json' && yarn install"
   },
   "dependencies": {
     "@changesets/changelog-github": "0.4.1",
