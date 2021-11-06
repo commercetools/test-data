@@ -10,7 +10,6 @@
   },
   "keywords": ["javascript", "test-data"],
   "license": "MIT",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
