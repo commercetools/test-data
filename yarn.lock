@@ -1928,7 +1928,7 @@ __metadata:
     "@manypkg/cli": 0.19.0
     "@preconstruct/cli": 2.1.5
     "@types/jest": ^26.0.20
-    "@types/node": 14.17.32
+    "@types/node": 16.11.9
     babel-jest: 27.3.1
     cross-env: 7.0.3
     eslint: 7.32.0
@@ -3005,10 +3005,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.32":
-  version: 14.17.32
-  resolution: "@types/node@npm:14.17.32"
-  checksum: c3ec45db5d8ca6ed80bcc2fe3cd9f15c1518d43cf048dd5444d1fcbe308d302a42721cb3f19548ac2e7b8b7db4f7f6cd4bf9ed58ab1d30a0bf61758350edd9d5
+"@types/node@npm:16.11.9":
+  version: 16.11.9
+  resolution: "@types/node@npm:16.11.9"
+  checksum: baec2e6471ee58fd1e9874e6f47ab95a918a0f46b42424392e4c13e3e07f078f8b72b6b48073b0b14f710ed66c5f1b2e497df43f28151000f11f5f299382cfe2
   languageName: node
   linkType: hard
 
