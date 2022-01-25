@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import * as faker from 'faker';
+import type { Faker } from '@faker-js/faker';
+import faker from '@faker-js/faker';
 import { mapValues } from 'lodash';
 
 export type SequenceFunction = (counter: number) => unknown;
@@ -12,7 +13,7 @@ export interface SequenceGenerator {
 
 export interface FakerGenerator {
   generatorType: 'faker';
-  call: (fake: Faker.FakerStatic) => any;
+  call: (fake: Faker) => any;
 }
 
 export interface PerBuildGenerator {
@@ -239,7 +240,7 @@ export const perBuild = <T>(func: () => T): PerBuildGenerator => {
   };
 };
 
-export type FakerUserArgs = (fake: Faker.FakerStatic) => any;
+export type FakerUserArgs = (fake: Faker) => any;
 
 export const fake = (userDefinedUsage: FakerUserArgs): FakerGenerator => {
   return {
