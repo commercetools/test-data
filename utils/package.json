@@ -19,7 +19,6 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@babel/runtime-corejs3": "^7.13.10",
-    "@types/faker": "^5.5.1",
-    "faker": "^5.5.3"
+    "@faker-js/faker": "^6.0.0-alpha.3"
   }
 }

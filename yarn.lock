@@ -1883,8 +1883,7 @@ __metadata:
     "@babel/runtime-corejs3": ^7.13.10
     "@commercetools-test-data/core": 2.4.1
     "@commercetools-test-data/utils": 2.4.0
-    "@types/faker": ^5.5.1
-    faker: ^5.5.3
+    "@faker-js/faker": ^6.0.0-alpha.3
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1896,8 +1895,7 @@ __metadata:
     "@babel/runtime": ^7.13.10
     "@babel/runtime-corejs3": ^7.13.10
     "@commercetools-test-data/core": 2.4.1
-    "@types/faker": ^5.5.1
-    faker: ^5.5.3
+    "@faker-js/faker": ^6.0.0-alpha.3
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1908,9 +1906,8 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.13.10
     "@babel/runtime-corejs3": ^7.13.10
-    "@types/faker": ^5.5.1
+    "@faker-js/faker": ^6.0.0-alpha.3
     "@types/lodash": ^4.14.168
-    faker: ^5.5.3
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1953,8 +1950,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.13.10
     "@babel/runtime-corejs3": ^7.13.10
-    "@types/faker": ^5.5.1
-    faker: ^5.5.3
+    "@faker-js/faker": ^6.0.0-alpha.3
   languageName: unknown
   linkType: soft
 
@@ -2248,6 +2244,13 @@ __metadata:
     minimatch: ^3.0.4
     strip-json-comments: ^3.1.1
   checksum: 03a7704150b868c318aab6a94d87a33d30dc2ec579d27374575014f06237ba1370ae11178db772f985ef680d469dc237e7b16a1c5d8edaaeb8c3733e7a95a6d3
+  languageName: node
+  linkType: hard
+
+"@faker-js/faker@npm:^6.0.0-alpha.3":
+  version: 6.0.0-alpha.4
+  resolution: "@faker-js/faker@npm:6.0.0-alpha.4"
+  checksum: afcb4651cf4328e7982e54956ba11e0f0a2c0bd52b16d7431c730dcd4e8fc2cefdc821f7ba12b0f2cba96248bfa33de7f5fa1cfbb181b4038907bfa4185255b4
   languageName: node
   linkType: hard
 
@@ -2890,13 +2893,6 @@ __metadata:
   version: 0.0.39
   resolution: "@types/estree@npm:0.0.39"
   checksum: 412fb5b9868f2c418126451821833414189b75cc6bf84361156feed733e3d92ec220b9d74a89e52722e03d5e241b2932732711b7497374a404fad49087adc248
-  languageName: node
-  linkType: hard
-
-"@types/faker@npm:^5.5.1":
-  version: 5.5.9
-  resolution: "@types/faker@npm:5.5.9"
-  checksum: c2cbd082abe29047c89cf29b86257e582d2a177a9d1ed3abf99aa1cc025d5e8a3d201dfaddf8441bfcc57ed43e4da80e666951e1c23a5b759ac441a5855b5c36
   languageName: node
   linkType: hard
 
@@ -5666,13 +5662,6 @@ __metadata:
     snapdragon: ^0.8.1
     to-regex: ^3.0.1
   checksum: a41531b8934735b684cef5e8c5a01d0f298d7d384500ceca38793a9ce098125aab04ee73e2d75d5b2901bc5dddd2b64e1b5e3bf19139ea48bac52af4a92f1d00
-  languageName: node
-  linkType: hard
-
-"faker@npm:^5.5.3":
-  version: 5.5.3
-  resolution: "faker@npm:5.5.3"
-  checksum: 684fd64c8d3897e54248f95b4f6319f75d97691b8500cd13adf4af2c28f9204f766c1d1aaa6b41338f0beaaa87256c3132f8708a1a8f189d122b92f6b98081c3
   languageName: node
   linkType: hard
 

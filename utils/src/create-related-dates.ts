@@ -1,3 +1,5 @@
+import type { Faker } from '@faker-js/faker';
+
 /**
  * Create two related dates (one comes before the other) by using a reference
  * in the past. The reference will be the result of invoking `Date.now()` when this
@@ -32,15 +34,15 @@
  */
 const createRelatedDates = (recentDaysFromPastReference: number = 10) => {
   const pastReference = new Date();
-  const getOlderDate = (f: Faker.FakerStatic) =>
+  const getOlderDate = (f: Faker) =>
     f.date.recent(recentDaysFromPastReference, pastReference.toISOString());
 
-  const getNewerDate = (f: Faker.FakerStatic) =>
+  const getNewerDate = (f: Faker) =>
     f.date.between(
       new Date(pastReference).toISOString(),
       new Date().toISOString()
     );
-  const getFutureDate = (f: Faker.FakerStatic) => f.date.future();
+  const getFutureDate = (f: Faker) => f.date.future();
   return [getOlderDate, getNewerDate, getFutureDate];
 };
 
