@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.2.0",
   "workspaces": ["core", "models/*", "utils"],
   "preconstruct": {
     "packages": ["core", "models/*", "utils"]
