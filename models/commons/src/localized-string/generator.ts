@@ -1,6 +1,5 @@
-import type { TLocalizedString } from './types';
-
 import { Generator, fake } from '@commercetools-test-data/core';
+import type { TLocalizedString } from './types';
 
 // https://docs.commercetools.com/api/types#localizedstring
 const generator = Generator<TLocalizedString>({

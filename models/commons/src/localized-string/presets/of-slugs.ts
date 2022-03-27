@@ -1,6 +1,5 @@
-import type { TLocalizedStringBuilder } from '../types';
-
 import faker from '@faker-js/faker';
+import type { TLocalizedStringBuilder } from '../types';
 import LocalizedString from '../builder';
 
 const ofSlugs = (): TLocalizedStringBuilder =>

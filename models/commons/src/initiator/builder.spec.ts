@@ -1,10 +1,10 @@
 import type { TInitiator, TInitiatorGraphql } from './types';
-
-import Initiator from './builder';
+import * as Initiator from '.';
 
 describe('building', () => {
   it('should build all primitive properties', () => {
-    const built = Initiator().build<TInitiator>();
+    const built = Initiator.random().build<TInitiator>();
+
     expect(built.isPlatformClient).toEqual(expect.any(Boolean));
     expect(built.externalUserId).toEqual(expect.any(String));
     expect(built.anonymousId).toEqual(expect.any(String));
@@ -26,7 +26,8 @@ describe('building', () => {
 
 describe('building as GraphQL', () => {
   it('should add the __typename', () => {
-    const built = Initiator().buildGraphql<TInitiatorGraphql>();
+    const built = Initiator.random().buildGraphql<TInitiatorGraphql>();
+
     expect(built).toEqual(
       expect.objectContaining({
         __typename: 'Initiator',
