@@ -17,10 +17,10 @@
   "module": "dist/commercetools-test-data-commons.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
-    "@babel/runtime": "^7.13.10",
-    "@babel/runtime-corejs3": "^7.13.10",
+    "@babel/runtime": "^7.17.8",
+    "@babel/runtime-corejs3": "^7.17.8",
     "@commercetools-test-data/core": "2.4.1",
-    "@faker-js/faker": "^6.0.0-alpha.5",
+    "@faker-js/faker": "^6.0.0",
     "lodash": "^4.17.21"
   }
 }

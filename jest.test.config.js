@@ -1,11 +1,9 @@
 module.exports = {
-  preset: 'ts-jest',
   testEnvironment: 'node',
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(js|ts)$': 'babel-jest',
   },
-  testRegex: '\\.spec\\.[j|t]sx?$',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  testMatch: ['**/*.spec.js', '**/*.spec.ts'],
+  moduleFileExtensions: ['ts', 'js'],
   watchPlugins: ['jest-watch-typeahead/filename'],
 };

@@ -1,4 +1,8 @@
+/**
+ * @type {import("eslint").Linter.Config}
+ */
 module.exports = {
+  // TODO: use the new `eslint-config-node`?
   extends: ['@commercetools-frontend/eslint-config-mc-app'],
   settings: {
     react: {
@@ -7,7 +11,7 @@ module.exports = {
       // `latest` to avoid logging a warning.
       // TODO: maybe we need to ship a more modulare ESLint config,
       // so that it can be used in a non-react environment.
-      version: 'latest',
+      version: '17',
     },
   },
 };
