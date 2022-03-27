@@ -7,6 +7,10 @@
   "separateMajorMinor": true,
   "packageRules": [
     {
+      "sourceUrlPrefixes": ["https://github.com/commercetools/merchant-center-application-kit"],
+      "groupName": "all application-kit packages"
+    },
+    {
       "packagePatterns": [
         "*"
       ],
