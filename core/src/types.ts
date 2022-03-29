@@ -1,7 +1,3 @@
-// export type Json = {
-//   [key: string]: unknown;
-// };
-
 export type TReferenceObject = {
   id?: string;
 };

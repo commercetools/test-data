@@ -3,7 +3,8 @@ import { Transformer } from '@commercetools-test-data/core';
 import type { TReference, TReferenceGraphql, TReferenceRest } from './types';
 
 const transformers = {
-  rest: Transformer<TReferenceRest, TReferenceRest>('rest', {
+  default: Transformer<TReference, TReference>('default', {}),
+  rest: Transformer<TReference, TReferenceRest>('rest', {
     replaceFields: ({ fields }) => ({
       ...fields,
       obj: omit(fields, ['typeId']),

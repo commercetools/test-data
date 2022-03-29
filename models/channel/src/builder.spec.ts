@@ -1,12 +1,15 @@
-import { TChannel, TChannelGraphql } from './types';
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import type { TChannel, TChannelGraphql } from './types';
 import { roles } from './constants';
 import * as Channel from '.';
 
-describe('building', () => {
-  it('should build all primitive properties', () => {
-    const built = Channel.random().build<TChannel>();
-
-    expect(built).toEqual(
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TChannel, TChannel>(
+      'default',
+      Channel.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -34,15 +37,45 @@ describe('building', () => {
         geoLocation: null,
         roles: [roles.Primary],
       })
-    );
-  });
-});
-
-describe('building as GraphQL', () => {
-  it('should build all nested properties specific to graphql', () => {
-    const built = Channel.random().buildGraphql<TChannelGraphql>();
-
-    expect(built).toEqual(
+    )
+  );
+  it(
+    ...createBuilderSpec<TChannel, TChannel>(
+      'rest',
+      Channel.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        name: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        description: null,
+        address: expect.objectContaining({
+          country: expect.any(String),
+          // ...
+        }),
+        reviewRatingStatistics: null,
+        custom: null,
+        geoLocation: null,
+        roles: [roles.Primary],
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TChannel, TChannelGraphql>(
+      'graphql',
+      Channel.random(),
       expect.objectContaining({
         __typename: 'Channel',
         nameAllLocales: expect.any(Array),
@@ -56,6 +89,6 @@ describe('building as GraphQL', () => {
           userRef: expect.objectContaining({ typeId: 'user' }),
         }),
       })
-    );
-  });
+    )
+  );
 });
