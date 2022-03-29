@@ -1,10 +1,10 @@
-import type { TCategory } from './types';
 import { Generator, fake, sequence } from '@commercetools-test-data/core';
+import { Initiator, LocalizedString } from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import type { TCategory } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/types#referencetype
 const generator = Generator<TCategory>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
@@ -12,8 +12,10 @@ const generator = Generator<TCategory>({
     key: fake((f) => f.lorem.slug(2)),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
-    name: null,
-    slug: null,
+    createdBy: fake(() => Initiator.random()),
+    lastModifiedBy: fake(() => Initiator.random()),
+    name: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.random()),
     description: null,
     ancestors: [],
     parent: null,

@@ -1,6 +1,6 @@
-import type { TInitiator } from './types';
 import { Generator, fake } from '@commercetools-test-data/core';
-import Reference from '../reference';
+import * as Reference from '../reference';
+import type { TInitiator } from './types';
 
 // https://docs.commercetools.com/api/types#client-logging
 const generator = Generator<TInitiator>({

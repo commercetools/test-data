@@ -1,5 +1,4 @@
 import type { TLocalizedString } from '../types';
-
 import empty from './empty';
 
 it('should set all locales to undefined', () => {

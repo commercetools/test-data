@@ -1,5 +1,4 @@
 import type { TReference } from '../types';
-
 import categoryReference from './category-reference';
 
 it('should build category reference', () => {

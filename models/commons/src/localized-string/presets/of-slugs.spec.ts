@@ -1,5 +1,4 @@
 import type { TLocalizedString } from '../types';
-
 import ofSlugs from './of-slugs';
 
 it('should build a localized string of slugs', () => {
