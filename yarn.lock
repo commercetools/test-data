@@ -1896,7 +1896,6 @@ __metadata:
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
     "@manypkg/cli": 0.19.1
-    "@matt-tingen/jest-macros": ^0.1.4
     "@preconstruct/cli": 2.1.5
     "@types/jest": ^27.4.1
     "@types/node": 16.11.26
@@ -2622,13 +2621,6 @@ __metadata:
     globby: ^11.0.0
     read-yaml-file: ^1.1.0
   checksum: f5a756e5a659e0e1c33f48852d56826d170d5b10a3cdea89ce4fcaa77678d8799aa4004b30e1985c87b73dbc390b95bb6411b78336dd1e0db87c08c74b5c0e74
-  languageName: node
-  linkType: hard
-
-"@matt-tingen/jest-macros@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@matt-tingen/jest-macros@npm:0.1.4"
-  checksum: 7172d28adbe37ebef2d3c8681f998eb25ea25bd66b1ccc8bc4b12aee91342bbcba92f85e760fc4fc73fd33d8185f4c83800420266f9fc0d4969ac05ffe6f4a65
   languageName: node
   linkType: hard
 
