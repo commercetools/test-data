@@ -3,10 +3,10 @@ import type { TCreateLocalizedStringBuilder, TLocalizedString } from './types';
 import generator from './generator';
 import transformers from './transformers';
 
-const LocalizedString: TCreateLocalizedStringBuilder = () =>
+const Model: TCreateLocalizedStringBuilder = () =>
   Builder<TLocalizedString>({
     generator,
     transformers,
   });
 
-export default LocalizedString;
+export default Model;

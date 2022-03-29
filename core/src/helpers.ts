@@ -1,5 +1,4 @@
 import type {
-  Json,
   TReferenceObject,
   TExpandedReference,
   TBuilder,
@@ -94,7 +93,7 @@ const toExpandedReference =
         }
       : null;
 
-const toRestPaginatedQueryResult = <Model extends Json>(
+const toRestPaginatedQueryResult = <Model>(
   list: Model[],
   { total = 100, offset = 0 }: TPaginatedQueryResultOptions = {}
 ): TPaginatedQueryResult<Model> => {
@@ -106,7 +105,7 @@ const toRestPaginatedQueryResult = <Model extends Json>(
   };
 };
 
-const toGraphqlPaginatedQueryResult = <Model extends Json>(
+const toGraphqlPaginatedQueryResult = <Model>(
   list: Model[],
   { name, __typename, ...remainingOptions }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
@@ -116,30 +115,33 @@ const toGraphqlPaginatedQueryResult = <Model extends Json>(
   };
 };
 
-const buildField = <Model extends Json>(
+const buildField = <Model>(
   builder: Model | TBuilder<Model>,
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Model => {
   const buildName = convertTransformNameToBuildName(transformName);
-  if (!builder[buildName]) {
+  // @ts-ignore: TS does not know about the `Model` being an object.
+  const builderField = builder[buildName];
+  // We need to cast this to `() => Model` as otherwise the value is unknown.
+  // We know it's a function because of the proxy builder.
+  const builderFn = builderField as (() => Model) | undefined;
+  if (!builderFn) {
     throw new Error(
       `Builder with name '${buildName}' does not exist on field '${meta?.fieldToBuild}'.`
     );
   }
-  // We need to cast this to `() => Model` as otherwise the value is unknown.
-  // We know it's a function because of the proxy builder.
-  return (builder[buildName] as () => Model)();
+  return builderFn();
 };
 
-const buildFields = <Model extends Json>(
+const buildFields = <Model>(
   builders: (Model | TBuilder<Model>)[],
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
 ): Model[] =>
   builders.map((builder) => buildField(builder, transformName, meta));
 
-const buildGraphqlList = <Model extends Json>(
+const buildGraphqlList = <Model>(
   builders: TBuilder<Model>[],
   { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<Model> => {
@@ -154,7 +156,7 @@ const buildGraphqlList = <Model extends Json>(
   );
 };
 
-const buildRestList = <Model extends Json>(
+const buildRestList = <Model>(
   builders: TBuilder<Model>[],
   { total, offset }: TPaginatedQueryResultOptions
 ): TPaginatedQueryResult<Model> => {

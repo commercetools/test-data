@@ -1,5 +1,4 @@
 import type {
-  Json,
   TTransformer,
   TTransformerOptions,
   TBuilder,
@@ -8,7 +7,7 @@ import type {
 
 import { buildField, buildFields } from './helpers';
 
-function Transformer<Model extends Json, TransformedModel>(
+function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
@@ -21,7 +20,7 @@ function Transformer<Model extends Json, TransformedModel>(
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {
-        const field = transformedFields[fieldToBuild] as
+        const field = transformedFields[fieldToBuild] as unknown as
           | TBuilder<Model>
           | TBuilder<Model>[];
         // Build only fields that are not null or undefined
@@ -65,6 +64,7 @@ function Transformer<Model extends Json, TransformedModel>(
     if (fieldsAdder) {
       const fieldsToAdd = fieldsAdder({ fields });
       Object.entries(fieldsToAdd).forEach(([fieldName, fieldValue]) => {
+        // @ts-ignore: TS does not know about the `Model` being an object.
         if (transformedFields[fieldName]) return;
         transformedFields = {
           ...transformedFields,

@@ -20,7 +20,6 @@ describe('building', () => {
         city: expect.any(String),
         region: null,
         state: expect.any(String),
-        countryName: expect.any(String),
         country: expect.any(String),
         company: expect.any(String),
         department: expect.any(String),

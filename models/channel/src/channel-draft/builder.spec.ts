@@ -19,7 +19,6 @@ describe('building', () => {
           de: expect.any(String),
           fr: expect.any(String),
         }),
-        reviewRatingStatistics: null,
         custom: null,
         geoLocation: null,
         roles: [roles.Primary],

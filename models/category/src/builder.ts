@@ -3,10 +3,10 @@ import generator from './generator';
 import transformers from './transformers';
 import type { TCreateCategoryBuilder, TCategory } from './types';
 
-const Category: TCreateCategoryBuilder = () =>
+const Model: TCreateCategoryBuilder = () =>
   Builder<TCategory>({
     generator,
     transformers,
   });
 
-export default Category;
+export default Model;

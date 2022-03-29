@@ -14,21 +14,17 @@ describe('building', () => {
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         createdBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         lastModifiedBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
           fr: expect.any(String),
         }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
+        description: null,
         address: expect.objectContaining({
           country: expect.any(String),
           // ...
@@ -40,28 +36,26 @@ describe('building', () => {
       })
     );
   });
-
-  it('should build all nested properties', () => {
-    const built = Channel.random().build<TChannel>();
-
-    expect(built.name).toBeDefined();
-    expect(built.description).toBeDefined();
-    expect(built.address).toBeDefined();
-  });
 });
 
 describe('building as GraphQL', () => {
-  it('should add the __typename', () => {
+  it('should build all nested properties specific to graphql', () => {
     const built = Channel.random().buildGraphql<TChannelGraphql>();
 
-    expect(built.__typename).toEqual('Channel');
-  });
-
-  it('should build all nested properties', () => {
-    const built = Channel.random().buildGraphql<TChannelGraphql>();
-
-    expect(built.nameAllLocales).toBeDefined();
-    expect(built.descriptionAllLocales).toBeDefined();
-    expect(built.address).toBeDefined();
+    expect(built).toEqual(
+      expect.objectContaining({
+        __typename: 'Channel',
+        nameAllLocales: expect.any(Array),
+        descriptionAllLocales: expect.any(Array),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+      })
+    );
   });
 });

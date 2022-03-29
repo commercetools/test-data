@@ -4,10 +4,10 @@ import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
 
-const Reference: TCreateReferenceBuilder = () =>
+const Model: TCreateReferenceBuilder = () =>
   Builder<TReference>({
     generator,
     transformers,
   });
 
-export default Reference;
+export default Model;

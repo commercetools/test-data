@@ -1,9 +1,13 @@
 import { Transformer, buildField } from '@commercetools-test-data/core';
-import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
-import type { TChannel, TChannelGraphql } from './types';
+import {
+  LocalizedString,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
+import type { Channel } from '@commercetools/platform-sdk';
+import type { TChannelGraphql } from './types';
 
 const transformers = {
-  default: Transformer<TChannel, TChannel>('default', {
+  default: Transformer<Channel, Channel>('default', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -12,7 +16,7 @@ const transformers = {
       'address',
     ],
   }),
-  rest: Transformer<TChannel, TChannel>('rest', {
+  rest: Transformer<Channel, Channel>('rest', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -21,27 +25,19 @@ const transformers = {
       'address',
     ],
   }),
-  graphql: Transformer<TChannel, TChannelGraphql>('graphql', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'name',
-      'description',
-      'address',
-    ],
-    addFields: ({ fields }) => {
-      const nameAllLocales = buildField(fields.name ?? {}, 'graphql', {
-        fieldToBuild: 'name',
-      }) as unknown as TLocalizedStringGraphql;
-      const descriptionAllLocales = buildField(
-        fields.description ?? {},
-        'graphql',
-        {
-          fieldToBuild: 'description',
-        }
-      ) as unknown as TLocalizedStringGraphql;
+  graphql: Transformer<Channel, TChannelGraphql>('graphql', {
+    buildFields: ['address', 'createdBy', 'lastModifiedBy'],
+    addFields: () => {
+      const nameAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
+      const descriptionAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
 
-      return { __typename: 'Channel', nameAllLocales, descriptionAllLocales };
+      return {
+        __typename: 'Channel',
+        nameAllLocales,
+        descriptionAllLocales,
+      };
     },
   }),
 };

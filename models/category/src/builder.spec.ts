@@ -10,10 +10,10 @@ describe('building', () => {
         id: expect.any(String),
         version: expect.any(Number),
         createdBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         lastModifiedBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         name: expect.objectContaining({
           en: expect.any(String),
@@ -37,6 +37,16 @@ describe('building as GraphQL', () => {
     expect(built).toEqual(
       expect.objectContaining({
         __typename: 'Category',
+        nameAllLocales: expect.any(Array),
+        descriptionAllLocales: expect.any(Array),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
       })
     );
   });
