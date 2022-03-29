@@ -78,8 +78,40 @@ describe('builder', () => {
       Channel.random(),
       expect.objectContaining({
         __typename: 'Channel',
-        nameAllLocales: expect.any(Array),
-        descriptionAllLocales: expect.any(Array),
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),

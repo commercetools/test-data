@@ -1,13 +1,12 @@
-import { Transformer, buildField } from '@commercetools-test-data/core';
+import { Transformer } from '@commercetools-test-data/core';
 import {
   LocalizedString,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
-import type { Channel } from '@commercetools/platform-sdk';
-import type { TChannelGraphql } from './types';
+import type { TChannel, TChannelGraphql } from './types';
 
 const transformers = {
-  default: Transformer<Channel, Channel>('default', {
+  default: Transformer<TChannel, TChannel>('default', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -16,7 +15,7 @@ const transformers = {
       'address',
     ],
   }),
-  rest: Transformer<Channel, Channel>('rest', {
+  rest: Transformer<TChannel, TChannel>('rest', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -25,7 +24,7 @@ const transformers = {
       'address',
     ],
   }),
-  graphql: Transformer<Channel, TChannelGraphql>('graphql', {
+  graphql: Transformer<TChannel, TChannelGraphql>('graphql', {
     buildFields: ['address', 'createdBy', 'lastModifiedBy'],
     addFields: () => {
       const nameAllLocales =
