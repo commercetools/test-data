@@ -1,61 +1,55 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TLocalizedString, TLocalizedStringGraphql } from './types';
 import * as LocalizedString from '.';
 
-describe('building', () => {
-  it('should build all primitive properties', () => {
-    const built = LocalizedString.random().build<TLocalizedString>();
-
-    expect(built.de).toEqual(expect.any(String));
-    expect(built.en).toEqual(expect.any(String));
-    expect(built.fr).toEqual(expect.any(String));
-  });
-});
-
-describe('building as GraphQL', () => {
-  it('should add the __typename', () => {
-    const built =
-      LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
-
-    expect(built).toEqual(
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TLocalizedString, TLocalizedString>(
+      'default',
+      LocalizedString.random(),
+      expect.objectContaining({
+        de: expect.any(String),
+        en: expect.any(String),
+        fr: expect.any(String),
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TLocalizedString, TLocalizedString>(
+      'rest',
+      LocalizedString.random(),
+      expect.objectContaining({
+        de: expect.any(String),
+        en: expect.any(String),
+        fr: expect.any(String),
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TLocalizedString, TLocalizedStringGraphql>(
+      'graphql',
+      LocalizedString.random(),
       expect.arrayContaining([
         expect.objectContaining({
           __typename: 'LocalizedString',
-        }),
-      ])
-    );
-  });
-
-  it('should transform all locales', () => {
-    const built = LocalizedString.random().buildGraphql<TLocalizedString>();
-
-    expect(built).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
           locale: 'de',
+          value: expect.any(String),
         }),
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
+          value: expect.any(String),
         }),
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'fr',
-        }),
-      ])
-    );
-
-    expect(built).toEqual(
-      expect.arrayContaining([
-        expect.objectContaining({
-          value: expect.any(String),
-        }),
-        expect.objectContaining({
-          value: expect.any(String),
-        }),
-        expect.objectContaining({
           value: expect.any(String),
         }),
       ])
-    );
-  });
+    )
+  );
 
   it('should drop undefined locales', () => {
     const built = LocalizedString.random()

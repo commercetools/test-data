@@ -11,7 +11,6 @@ const generator = Generator<TChannelDraft>({
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     address: fake(() => Address.random()),
-    reviewRatingStatistics: null,
     custom: null,
     geoLocation: null,
   },

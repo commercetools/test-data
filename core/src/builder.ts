@@ -1,10 +1,10 @@
 import type {
-  Json,
   TBuilderMapStateFunction,
   TBuilderOptions,
   TFieldBuilderArgs,
   TBuilder,
   TPropertyBuilder,
+  TPropertyFieldUpdater,
 } from './types';
 
 import {
@@ -26,7 +26,7 @@ interface CustomProxyConstructor {
 const CustomProxy = Proxy as CustomProxyConstructor;
 
 // Internal state object to build up the final model.
-const createState = <Model extends Json>({
+const createState = <Model>({
   initial,
 }: {
   initial?: Partial<Model>;
@@ -44,7 +44,7 @@ const createState = <Model extends Json>({
   };
 };
 
-function PropertyBuilder<Model extends Json>(initialProps?: Partial<Model>) {
+function PropertyBuilder<Model>(initialProps?: Partial<Model>) {
   const state = createState<Model>({ initial: initialProps });
 
   const builder: TPropertyBuilder<Model> = new CustomProxy<
@@ -75,7 +75,7 @@ function PropertyBuilder<Model extends Json>(initialProps?: Partial<Model>) {
   return builder;
 }
 
-function Builder<Model extends Json>({
+function Builder<Model>({
   generator,
   transformers,
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
@@ -148,7 +148,12 @@ function Builder<Model extends Json>({
 
           return (fnOrValue: string | TBuilderMapStateFunction<Model>) => {
             if (isString(propToSet)) {
-              propertyBuilder[propToSet](fnOrValue);
+              // @ts-ignore: TS does not know about the `Model` being an object.
+              const propertyField = propertyBuilder[propToSet];
+              const propertyFieldUpdater = propertyField as
+                | TPropertyFieldUpdater<Model>
+                | undefined;
+              propertyFieldUpdater?.(fnOrValue);
             }
 
             return builder.proxy;

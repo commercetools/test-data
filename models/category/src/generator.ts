@@ -1,5 +1,8 @@
 import { Generator, fake, sequence } from '@commercetools-test-data/core';
-import { Initiator, LocalizedString } from '@commercetools-test-data/commons';
+import {
+  ClientLogging,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import type { TCategory } from './types';
 
@@ -12,8 +15,8 @@ const generator = Generator<TCategory>({
     key: fake((f) => f.lorem.slug(2)),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
-    createdBy: fake(() => Initiator.random()),
-    lastModifiedBy: fake(() => Initiator.random()),
+    createdBy: fake(() => ClientLogging.random()),
+    lastModifiedBy: fake(() => ClientLogging.random()),
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.random()),
     description: null,

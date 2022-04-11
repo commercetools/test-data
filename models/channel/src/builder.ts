@@ -1,12 +1,13 @@
 import { Builder } from '@commercetools-test-data/core';
+import type { Channel } from '@commercetools/platform-sdk';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateChannelBuilder, TChannel } from './types';
+import type { TCreateChannelBuilder } from './types';
 
-const Channel: TCreateChannelBuilder = () =>
-  Builder<TChannel>({
+const Model: TCreateChannelBuilder = () =>
+  Builder<Channel>({
     generator,
     transformers,
   });
 
-export default Channel;
+export default Model;

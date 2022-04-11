@@ -1,5 +1,8 @@
-import { Transformer, buildField } from '@commercetools-test-data/core';
-import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import { Transformer } from '@commercetools-test-data/core';
+import {
+  LocalizedString,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import type { TChannel, TChannelGraphql } from './types';
 
 const transformers = {
@@ -22,26 +25,18 @@ const transformers = {
     ],
   }),
   graphql: Transformer<TChannel, TChannelGraphql>('graphql', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'name',
-      'description',
-      'address',
-    ],
-    addFields: ({ fields }) => {
-      const nameAllLocales = buildField(fields.name ?? {}, 'graphql', {
-        fieldToBuild: 'name',
-      }) as unknown as TLocalizedStringGraphql;
-      const descriptionAllLocales = buildField(
-        fields.description ?? {},
-        'graphql',
-        {
-          fieldToBuild: 'description',
-        }
-      ) as unknown as TLocalizedStringGraphql;
+    buildFields: ['address', 'createdBy', 'lastModifiedBy'],
+    addFields: () => {
+      const nameAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
+      const descriptionAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
 
-      return { __typename: 'Channel', nameAllLocales, descriptionAllLocales };
+      return {
+        __typename: 'Channel',
+        nameAllLocales,
+        descriptionAllLocales,
+      };
     },
   }),
 };

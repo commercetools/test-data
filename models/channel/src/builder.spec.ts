@@ -1,12 +1,15 @@
-import { TChannel, TChannelGraphql } from './types';
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import type { TChannel, TChannelGraphql } from './types';
 import { roles } from './constants';
 import * as Channel from '.';
 
-describe('building', () => {
-  it('should build all primitive properties', () => {
-    const built = Channel.random().build<TChannel>();
-
-    expect(built).toEqual(
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TChannel, TChannel>(
+      'default',
+      Channel.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -14,21 +17,17 @@ describe('building', () => {
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         createdBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         lastModifiedBy: expect.objectContaining({
-          userRef: expect.objectContaining({ typeId: 'user' }),
+          customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
           fr: expect.any(String),
         }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
+        description: null,
         address: expect.objectContaining({
           country: expect.any(String),
           // ...
@@ -38,30 +37,90 @@ describe('building', () => {
         geoLocation: null,
         roles: [roles.Primary],
       })
-    );
-  });
-
-  it('should build all nested properties', () => {
-    const built = Channel.random().build<TChannel>();
-
-    expect(built.name).toBeDefined();
-    expect(built.description).toBeDefined();
-    expect(built.address).toBeDefined();
-  });
-});
-
-describe('building as GraphQL', () => {
-  it('should add the __typename', () => {
-    const built = Channel.random().buildGraphql<TChannelGraphql>();
-
-    expect(built.__typename).toEqual('Channel');
-  });
-
-  it('should build all nested properties', () => {
-    const built = Channel.random().buildGraphql<TChannelGraphql>();
-
-    expect(built.nameAllLocales).toBeDefined();
-    expect(built.descriptionAllLocales).toBeDefined();
-    expect(built.address).toBeDefined();
-  });
+    )
+  );
+  it(
+    ...createBuilderSpec<TChannel, TChannel>(
+      'rest',
+      Channel.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        name: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        description: null,
+        address: expect.objectContaining({
+          country: expect.any(String),
+          // ...
+        }),
+        reviewRatingStatistics: null,
+        custom: null,
+        geoLocation: null,
+        roles: [roles.Primary],
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TChannel, TChannelGraphql>(
+      'graphql',
+      Channel.random(),
+      expect.objectContaining({
+        __typename: 'Channel',
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+      })
+    )
+  );
 });

@@ -1,12 +1,12 @@
 import { Builder } from '@commercetools-test-data/core';
-import type { TCreateInitiatorBuilder, TInitiator } from './types';
+import type { TCreateClientLoggingBuilder, TClientLogging } from './types';
 import generator from './generator';
 import transformers from './transformers';
 
-const Initiator: TCreateInitiatorBuilder = () =>
-  Builder<TInitiator>({
+const Model: TCreateClientLoggingBuilder = () =>
+  Builder<TClientLogging>({
     generator,
     transformers,
   });
 
-export default Initiator;
+export default Model;

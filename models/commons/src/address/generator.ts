@@ -20,9 +20,6 @@ const generator = Generator<TAddress>({
     city: fake((f) => f.address.city()),
     region: null,
     state: fake((f) => f.address.state()),
-    // faker will treat country name and code fields separately and as a result the country name and code might not match.
-    // Therefore, a static value for country name and code is used for now till a better solution is provided.
-    countryName: 'Germany',
     country: 'DE',
     company: fake((f) => f.company.companyName()),
     department: fake((f) => f.commerce.department()),
@@ -35,6 +32,7 @@ const generator = Generator<TAddress>({
     email: fake((f) => f.internet.email()),
     additionalAddressInfo: null,
     externalId: null,
+    custom: null,
   },
 });
 

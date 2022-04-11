@@ -1,8 +1,12 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TCategory, TCategoryGraphql, TCategoryRest } from './types';
+import {
+  LocalizedString,
+  type TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
+import type { TCategory, TCategoryGraphql } from './types';
 
 const transformers = {
-  default: Transformer<TCategory, TCategoryRest>('default', {
+  default: Transformer<TCategory, TCategory>('default', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -18,7 +22,7 @@ const transformers = {
       'assets',
     ],
   }),
-  rest: Transformer<TCategory, TCategoryRest>('rest', {
+  rest: Transformer<TCategory, TCategory>('rest', {
     buildFields: [
       'createdBy',
       'lastModifiedBy',
@@ -49,9 +53,18 @@ const transformers = {
       'custom',
       'assets',
     ],
-    addFields: () => ({
-      __typename: 'Category',
-    }),
+    addFields: () => {
+      const nameAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
+      const descriptionAllLocales =
+        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
+
+      return {
+        __typename: 'Category',
+        nameAllLocales,
+        descriptionAllLocales,
+      };
+    },
   }),
 };
 
