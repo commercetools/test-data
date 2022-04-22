@@ -17,8 +17,8 @@
   "module": "dist/commercetools-test-data-utils.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
-    "@babel/runtime": "^7.17.8",
-    "@babel/runtime-corejs3": "^7.17.8",
-    "@faker-js/faker": "^6.0.0"
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@faker-js/faker": "^6.2.0"
   }
 }

@@ -30,7 +30,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.17.8, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.7, @babel/core@npm:^7.8.0":
+"@babel/core@npm:^7.1.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.17.9, @babel/core@npm:^7.7.2, @babel/core@npm:^7.7.7, @babel/core@npm:^7.8.0":
   version: 7.17.9
   resolution: "@babel/core@npm:7.17.9"
   dependencies:
@@ -1135,7 +1135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-regenerator@npm:^7.16.7":
+"@babel/plugin-transform-regenerator@npm:^7.16.7, @babel/plugin-transform-regenerator@npm:^7.17.9":
   version: 7.17.9
   resolution: "@babel/plugin-transform-regenerator@npm:7.17.9"
   dependencies:
@@ -1393,7 +1393,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:^7.10.2, @babel/runtime-corejs3@npm:^7.17.8":
+"@babel/runtime-corejs3@npm:^7.10.2, @babel/runtime-corejs3@npm:^7.17.9":
   version: 7.17.9
   resolution: "@babel/runtime-corejs3@npm:7.17.9"
   dependencies:
@@ -1403,7 +1403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.7, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.10.4, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.7, @babel/runtime@npm:^7.8.4":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -1720,11 +1720,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commercetools-frontend/babel-preset-mc-app@npm:21.3.2, @commercetools-frontend/babel-preset-mc-app@npm:^21.3.0":
-  version: 21.3.2
-  resolution: "@commercetools-frontend/babel-preset-mc-app@npm:21.3.2"
+"@commercetools-frontend/babel-preset-mc-app@npm:21.3.4, @commercetools-frontend/babel-preset-mc-app@npm:^21.3.4":
+  version: 21.3.4
+  resolution: "@commercetools-frontend/babel-preset-mc-app@npm:21.3.4"
   dependencies:
-    "@babel/core": ^7.17.8
+    "@babel/core": ^7.17.9
     "@babel/plugin-proposal-class-properties": ^7.16.7
     "@babel/plugin-proposal-do-expressions": ^7.16.7
     "@babel/plugin-proposal-export-default-from": ^7.16.7
@@ -1734,14 +1734,14 @@ __metadata:
     "@babel/plugin-proposal-private-methods": ^7.16.11
     "@babel/plugin-proposal-private-property-in-object": ^7.16.7
     "@babel/plugin-transform-destructuring": ^7.17.7
-    "@babel/plugin-transform-regenerator": ^7.16.7
+    "@babel/plugin-transform-regenerator": ^7.17.9
     "@babel/plugin-transform-runtime": ^7.17.0
     "@babel/preset-env": ^7.16.11
     "@babel/preset-react": ^7.16.7
     "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
-    "@emotion/babel-plugin": ^11.7.2
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@emotion/babel-plugin": ^11.9.2
     "@emotion/babel-preset-css-prop": ^11.2.0
     babel-plugin-dev-expression: ^0.2.3
     babel-plugin-lodash: ^3.3.4
@@ -1749,35 +1749,35 @@ __metadata:
     babel-plugin-preval: ^5.1.0
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     core-js: ^3.21.1
-  checksum: 3a376962848ef5f8c7067f2de70d8db81b3a89dfaf0797e9163f81cbb21626b27c8375020c8a657ff8f0f15d6f09e1eb20f164465d2a5a6a6c74d56db28bce42
+  checksum: 2a843727e919bb95a12e4539d048d004919a7fe09f0e1c0388fdd567dcce2bf269be92545a6a072f11c04f2da70e1aa222c8336dab68fd9668c0195f15680ea1
   languageName: node
   linkType: hard
 
-"@commercetools-frontend/eslint-config-mc-app@npm:21.3.1":
-  version: 21.3.1
-  resolution: "@commercetools-frontend/eslint-config-mc-app@npm:21.3.1"
+"@commercetools-frontend/eslint-config-mc-app@npm:21.3.4":
+  version: 21.3.4
+  resolution: "@commercetools-frontend/eslint-config-mc-app@npm:21.3.4"
   dependencies:
-    "@babel/core": ^7.17.8
+    "@babel/core": ^7.17.9
     "@babel/eslint-parser": ^7.17.0
-    "@commercetools-frontend/babel-preset-mc-app": ^21.3.0
-    "@rushstack/eslint-patch": ^1.1.1
-    "@typescript-eslint/eslint-plugin": ^5.17.0
-    "@typescript-eslint/parser": ^5.17.0
+    "@commercetools-frontend/babel-preset-mc-app": ^21.3.4
+    "@rushstack/eslint-patch": ^1.1.2
+    "@typescript-eslint/eslint-plugin": ^5.19.0
+    "@typescript-eslint/parser": ^5.19.0
     confusing-browser-globals: ^1.0.11
     eslint-config-prettier: ^8.5.0
-    eslint-import-resolver-typescript: ^2.7.0
+    eslint-import-resolver-typescript: ^2.7.1
     eslint-plugin-cypress: ^2.12.1
-    eslint-plugin-import: ^2.25.4
+    eslint-plugin-import: ^2.26.0
     eslint-plugin-jest: ^25.7.0
     eslint-plugin-jest-dom: ^4.0.1
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.29.4
     eslint-plugin-react-hooks: ^4.4.0
-    eslint-plugin-testing-library: ^5.1.0
+    eslint-plugin-testing-library: ^5.3.0
   peerDependencies:
     eslint: 8.x
-  checksum: ec1395395e0465a442ce4cea5e330341a6e6d3b96ca486650414b7002e265aea513fd17a6498edfc4e5d41b9fb923446b7ace86b42581ec897bbc6358e49278e
+  checksum: 6620c9a2337365f9ceef6b3ae4f441dde54458a32bd3a647231df8c2c789d15f485b714ea920821532240317762072ddbfd1f5b2b604f732f04c7a2419336320
   languageName: node
   linkType: hard
 
@@ -1785,13 +1785,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/category@workspace:models/category"
   dependencies:
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/commons": 3.0.0
     "@commercetools-test-data/core": 3.0.0
     "@commercetools-test-data/utils": 3.0.0
-    "@commercetools/platform-sdk": ^2.5.0
-    "@faker-js/faker": ^6.0.0
+    "@commercetools/platform-sdk": ^2.6.0
+    "@faker-js/faker": ^6.2.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1800,13 +1800,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/channel@workspace:models/channel"
   dependencies:
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/commons": 3.0.0
     "@commercetools-test-data/core": 3.0.0
     "@commercetools-test-data/utils": 3.0.0
-    "@commercetools/platform-sdk": ^2.5.0
-    "@faker-js/faker": ^6.0.0
+    "@commercetools/platform-sdk": ^2.6.0
+    "@faker-js/faker": ^6.2.0
   languageName: unknown
   linkType: soft
 
@@ -1814,11 +1814,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/commons@workspace:models/commons"
   dependencies:
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/core": 3.0.0
-    "@commercetools/platform-sdk": ^2.5.0
-    "@faker-js/faker": ^6.0.0
+    "@commercetools/platform-sdk": ^2.6.0
+    "@faker-js/faker": ^6.2.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1827,10 +1827,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/core@workspace:core"
   dependencies:
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
-    "@faker-js/faker": ^6.0.0
-    "@types/lodash": ^4.14.168
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@faker-js/faker": ^6.2.0
+    "@types/lodash": ^4.14.182
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1841,14 +1841,14 @@ __metadata:
   dependencies:
     "@changesets/changelog-github": 0.4.4
     "@changesets/cli": 2.22.0
-    "@commercetools-frontend/babel-preset-mc-app": 21.3.2
-    "@commercetools-frontend/eslint-config-mc-app": 21.3.1
+    "@commercetools-frontend/babel-preset-mc-app": 21.3.4
+    "@commercetools-frontend/eslint-config-mc-app": 21.3.4
     "@commitlint/cli": 16.2.3
     "@commitlint/config-conventional": 16.2.1
     "@manypkg/cli": 0.19.1
     "@preconstruct/cli": 2.1.5
     "@types/jest": ^27.4.1
-    "@types/node": 16.11.26
+    "@types/node": 16.11.27
     babel-jest: 27.5.1
     cross-env: 7.0.3
     eslint: 8.13.0
@@ -1859,7 +1859,7 @@ __metadata:
     jest-runner-eslint: 1.0.0
     jest-silent-reporter: 0.5.0
     jest-watch-typeahead: 1.0.0
-    lint-staged: 12.3.7
+    lint-staged: 12.4.0
     prettier: 2.6.2
     rimraf: 3.0.2
     tsc-files: ^1.1.3
@@ -1871,13 +1871,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/utils@workspace:utils"
   dependencies:
-    "@babel/runtime": ^7.17.8
-    "@babel/runtime-corejs3": ^7.17.8
-    "@faker-js/faker": ^6.0.0
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@faker-js/faker": ^6.2.0
   languageName: unknown
   linkType: soft
 
-"@commercetools/platform-sdk@npm:^2.5.0":
+"@commercetools/platform-sdk@npm:^2.6.0":
   version: 2.6.0
   resolution: "@commercetools/platform-sdk@npm:2.6.0"
   dependencies:
@@ -2139,7 +2139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.2.0, @emotion/babel-plugin@npm:^11.7.2":
+"@emotion/babel-plugin@npm:^11.2.0, @emotion/babel-plugin@npm:^11.9.2":
   version: 11.9.2
   resolution: "@emotion/babel-plugin@npm:11.9.2"
   dependencies:
@@ -2233,10 +2233,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@faker-js/faker@npm:^6.0.0":
-  version: 6.1.2
-  resolution: "@faker-js/faker@npm:6.1.2"
-  checksum: 953d0301f71e264330a2aa1e04ae4ecd8c7af5276ce932f92138923d3ef2cc69354a879a7d232805066728e6c65d1021a3f20a72b9b4c49d0ee880db9fcecada
+"@faker-js/faker@npm:^6.2.0":
+  version: 6.2.0
+  resolution: "@faker-js/faker@npm:6.2.0"
+  checksum: 8caffc9e55c9eb5bc5ee8824366338cb81469ed9cb591c38f06be73e8e4366d48eb6ced78e9f4c3530d0ed5f4c63bf50edf45c514cb25151a9567a7ebe45a4b1
   languageName: node
   linkType: hard
 
@@ -2777,10 +2777,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/eslint-patch@npm:^1.1.1":
-  version: 1.1.2
-  resolution: "@rushstack/eslint-patch@npm:1.1.2"
-  checksum: 81cf671853fde5f696f4b79ba169484ace61831183784b3849764dca9f58b4e9d4d937064fc08d1053d0dccf9f214b80a5f6fafad985037ca9b049dc8d961732
+"@rushstack/eslint-patch@npm:^1.1.2":
+  version: 1.1.3
+  resolution: "@rushstack/eslint-patch@npm:1.1.3"
+  checksum: 53752d1e34e45a91b30a016b837c33054fcbd0a295c0312b0812dab78289ea680d7c0c3f19c1f885f49764d416727747133765ff5bfce31a9c4cc93c7a56ebe1
   languageName: node
   linkType: hard
 
@@ -3034,10 +3034,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.168":
-  version: 4.14.181
-  resolution: "@types/lodash@npm:4.14.181"
-  checksum: 0d1863d8383fd2f8bb42e9e3fc1d6255bb88ff034d6df848941063698944313dae944fc1270315613e3d303fae7c7a9a86085ad3235ed6204c56c4b0b3699aa9
+"@types/lodash@npm:^4.14.182":
+  version: 4.14.182
+  resolution: "@types/lodash@npm:4.14.182"
+  checksum: 7dd137aa9dbabd632408bd37009d984655164fa1ecc3f2b6eb94afe35bf0a5852cbab6183148d883e9c73a958b7fec9a9bcf7c8e45d41195add6a18c34958209
   languageName: node
   linkType: hard
 
@@ -3062,10 +3062,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.26":
-  version: 16.11.26
-  resolution: "@types/node@npm:16.11.26"
-  checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
+"@types/node@npm:16.11.27":
+  version: 16.11.27
+  resolution: "@types/node@npm:16.11.27"
+  checksum: 6ed0c8c4d29a549d0cfd607d19edf9a4668fbd39087701d923b4a04cd760564e47ad27f9403968cb9c11ee006f0ea6ab698b2491b4b2d2dec3f4a53d0fc22df7
   languageName: node
   linkType: hard
 
@@ -3154,13 +3154,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.17.0":
-  version: 5.18.0
-  resolution: "@typescript-eslint/eslint-plugin@npm:5.18.0"
+"@typescript-eslint/eslint-plugin@npm:^5.19.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:5.20.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.18.0
-    "@typescript-eslint/type-utils": 5.18.0
-    "@typescript-eslint/utils": 5.18.0
+    "@typescript-eslint/scope-manager": 5.20.0
+    "@typescript-eslint/type-utils": 5.20.0
+    "@typescript-eslint/utils": 5.20.0
     debug: ^4.3.2
     functional-red-black-tree: ^1.0.1
     ignore: ^5.1.8
@@ -3173,7 +3173,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: e8f0e7cfa0d102b1006a0f674fbba6cfc3d5a609d3ebb07306d744d3db91080659cd2b9935ccbde2ad9bbbe9543bc47540df1ffada0e7676dd38957cdffd7436
+  checksum: 276251535b38dc5e9165c86d7f9b0a6d601cef82f02dc2a94b4133ad08d8825cb3e27bfd3b686b21b0627e05fa25c5e456c89cc3a66583b109637d1cf2d6c06a
   languageName: node
   linkType: hard
 
@@ -3188,20 +3188,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.17.0":
-  version: 5.18.0
-  resolution: "@typescript-eslint/parser@npm:5.18.0"
+"@typescript-eslint/parser@npm:^5.19.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/parser@npm:5.20.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.18.0
-    "@typescript-eslint/types": 5.18.0
-    "@typescript-eslint/typescript-estree": 5.18.0
+    "@typescript-eslint/scope-manager": 5.20.0
+    "@typescript-eslint/types": 5.20.0
+    "@typescript-eslint/typescript-estree": 5.20.0
     debug: ^4.3.2
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 8e007a4980eb8794621bf51404b6ecc923eeffc661d7da2fac9d5c79f6ea70735322953dd88ee4a9b06d916f43e4cc633d724a5cf70c0a10a8cd251d54e67ff4
+  checksum: 0a72c5c0fbea3ef30332a20a7fc673461a4106225d7d4b78e1d4eb3cd0343d26132deb0cdaa17fd31b90711c63978996216faf1fb9a7abdee367e3b42f812e21
   languageName: node
   linkType: hard
 
@@ -3215,11 +3215,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:5.18.0":
-  version: 5.18.0
-  resolution: "@typescript-eslint/type-utils@npm:5.18.0"
+"@typescript-eslint/scope-manager@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/scope-manager@npm:5.20.0"
   dependencies:
-    "@typescript-eslint/utils": 5.18.0
+    "@typescript-eslint/types": 5.20.0
+    "@typescript-eslint/visitor-keys": 5.20.0
+  checksum: 904fd43f559dc2579958496ffad837eca124940b4a172666f0ea54ed606074d9ec7d2bec0f2141c3f9a8b894dd2644817cb86809e79a7a73ecba2b7babcdb5c9
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/type-utils@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/type-utils@npm:5.20.0"
+  dependencies:
+    "@typescript-eslint/utils": 5.20.0
     debug: ^4.3.2
     tsutils: ^3.21.0
   peerDependencies:
@@ -3227,7 +3237,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a9722e18635d98ed7b468b1915d4bc9ef3de6dd85bfe734d932465977f9952655171cb5c886c7d42145ebb8ef1b5b7fcf50e9937a9370080246a7bae4cbd1047
+  checksum: c9c436122b715d144edae9d36ebd34e9b02b282ada829382770e15170c58f4f27cfde2d5847ea3c4a1b70ca42e2460a204e920eea50b3d05e9d342e8836d4d12
   languageName: node
   linkType: hard
 
@@ -3235,6 +3245,13 @@ __metadata:
   version: 5.18.0
   resolution: "@typescript-eslint/types@npm:5.18.0"
   checksum: 25d8d6f2f70ac4e93f4759a4927290749f528bce2150a87cde08200d706a6147880ca2ceeb8c93e0f370aace096c878096cd45427a59538877ac2121df8aaa01
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/types@npm:5.20.0"
+  checksum: d7f6e51e23f59feee8857340828c47a98a0dd5eaa1b045e936dc11199b55754cf78ae5cd8d56c1fafb1b5a40a6f472c1ac921072951217caffe3f06a717fa61c
   languageName: node
   linkType: hard
 
@@ -3256,6 +3273,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/typescript-estree@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/typescript-estree@npm:5.20.0"
+  dependencies:
+    "@typescript-eslint/types": 5.20.0
+    "@typescript-eslint/visitor-keys": 5.20.0
+    debug: ^4.3.2
+    globby: ^11.0.4
+    is-glob: ^4.0.3
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 2b709292b7df3675d1f8eaf2f4e1ecf491f70fc525012c6a0fb5164aa893c165317b0a419022b8b00aaed502864d5b5b84092b58a9950d2633248e8d7627abd8
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/utils@npm:5.18.0, @typescript-eslint/utils@npm:^5.13.0":
   version: 5.18.0
   resolution: "@typescript-eslint/utils@npm:5.18.0"
@@ -3272,6 +3307,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/utils@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/utils@npm:5.20.0"
+  dependencies:
+    "@types/json-schema": ^7.0.9
+    "@typescript-eslint/scope-manager": 5.20.0
+    "@typescript-eslint/types": 5.20.0
+    "@typescript-eslint/typescript-estree": 5.20.0
+    eslint-scope: ^5.1.1
+    eslint-utils: ^3.0.0
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: e387cf96124e34d079804220c5cb9134148fb3efc68d852a344453e285e3016e0b7e37b11308ef58c0e7afc638f145002cebc27c5da0fd03e0c074ff97d8210e
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/visitor-keys@npm:5.18.0":
   version: 5.18.0
   resolution: "@typescript-eslint/visitor-keys@npm:5.18.0"
@@ -3279,6 +3330,16 @@ __metadata:
     "@typescript-eslint/types": 5.18.0
     eslint-visitor-keys: ^3.0.0
   checksum: c856e3cf2fde3008e1d9bea3c73bc60d9060c7cb6d6ea186c20db9d74eff84986365f518dd1b4e142dca179e9a5cd7a6ed4381173d6abfd0ebd4d16d5cf50b94
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/visitor-keys@npm:5.20.0":
+  version: 5.20.0
+  resolution: "@typescript-eslint/visitor-keys@npm:5.20.0"
+  dependencies:
+    "@typescript-eslint/types": 5.20.0
+    eslint-visitor-keys: ^3.0.0
+  checksum: 1e1aa5f14fd60f1846ee26947d571953898dc82eb635a7eab3984c6b7db9bb8897743416713a129cc95c8cd63325cc0c64b3935d264f73100911fc5da76fc65f
   languageName: node
   linkType: hard
 
@@ -5195,7 +5256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^2.7.0":
+"eslint-import-resolver-typescript@npm:^2.7.1":
   version: 2.7.1
   resolution: "eslint-import-resolver-typescript@npm:2.7.1"
   dependencies:
@@ -5232,7 +5293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.25.4":
+"eslint-plugin-import@npm:^2.26.0":
   version: 2.26.0
   resolution: "eslint-plugin-import@npm:2.26.0"
   dependencies:
@@ -5355,14 +5416,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^5.1.0":
-  version: 5.2.1
-  resolution: "eslint-plugin-testing-library@npm:5.2.1"
+"eslint-plugin-testing-library@npm:^5.3.0":
+  version: 5.3.1
+  resolution: "eslint-plugin-testing-library@npm:5.3.1"
   dependencies:
     "@typescript-eslint/utils": ^5.13.0
   peerDependencies:
     eslint: ^7.5.0 || ^8.0.0
-  checksum: dc433a0e0033572463a859bdfb8e375885e81757b16c0d2b77a5f2cb231651962cfcaba0e1076edb4af95689aaf9fa029454c9dde3e28b6d46a4234561305b9c
+  checksum: 39b11c5a412ddba994bc8e0734f6e6ba23ef88c99995d6a0e9e9e7c572c6d71f19589fe4d1bbafd8589cf7438d35559aeca6227e885d2b5f6d8baf8d7304e31e
   languageName: node
   linkType: hard
 
@@ -7891,9 +7952,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:12.3.7":
-  version: 12.3.7
-  resolution: "lint-staged@npm:12.3.7"
+"lint-staged@npm:12.4.0":
+  version: 12.4.0
+  resolution: "lint-staged@npm:12.4.0"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -7911,7 +7972,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: b595097556880eb2ab7ce2cf105047f6f22525ccfd608fbdc63ab243259aa36a26949576fadff673748fb885e7cb37ad3f4471d964ad54c1205d57a58999ba24
+  checksum: e25b273a73b79f224ff1ccb22432c34a9050fe8318b9cf7e08c748e2efc80e1f48ed4f2aa61cd16a701bb7fd6323ecf0d94a497c97732db04f2b5382d6b70131
   languageName: node
   linkType: hard
 
