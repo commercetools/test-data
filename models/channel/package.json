@@ -17,12 +17,12 @@
   "module": "dist/commercetools-test-data-channel.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
-    "@babel/runtime": "^7.17.8",
-    "@babel/runtime-corejs3": "^7.17.8",
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "3.0.0",
     "@commercetools-test-data/core": "3.0.0",
     "@commercetools-test-data/utils": "3.0.0",
-    "@commercetools/platform-sdk": "^2.5.0",
-    "@faker-js/faker": "^6.0.0"
+    "@commercetools/platform-sdk": "^2.6.0",
+    "@faker-js/faker": "^6.2.0"
   }
 }
