@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 3.0.2
+
+### Patch Changes
+
+- [#126](https://github.com/commercetools/test-data/pull/126) [`4c94ecc`](https://github.com/commercetools/test-data/commit/4c94ecc68d2481d9c13fd92c0c058430fb79f746) Thanks [@emmenko](https://github.com/emmenko)! - Update platform-sdk dependency
+
+* [#124](https://github.com/commercetools/test-data/pull/124) [`0331f2e`](https://github.com/commercetools/test-data/commit/0331f2ea16689523908b71199934456673b9af39) Thanks [@emmenko](https://github.com/emmenko)! - Update license year
+
+* Updated dependencies [[`0331f2e`](https://github.com/commercetools/test-data/commit/0331f2ea16689523908b71199934456673b9af39)]:
+  - @commercetools-test-data/core@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes
