@@ -2,10 +2,13 @@
 '@commercetools-test-data/commons': minor
 ---
 
-Add address draft preset.
+Add `AddressDraft` model.
 
 ```ts
-import { Address, type TAddress } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  type TAddressDraft,
+} from '@commercetools-test-data/commons';
 
-const addressDraft = Address.presets.draft().build<TAddress>();
+const addressDraft = AddressDraft.random().build<TAddressDraft>();
 ```
