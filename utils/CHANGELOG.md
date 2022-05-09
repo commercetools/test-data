@@ -1,5 +1,11 @@
 # @commercetools-test-data/utils
 
+## 3.0.2
+
+### Patch Changes
+
+- [#124](https://github.com/commercetools/test-data/pull/124) [`0331f2e`](https://github.com/commercetools/test-data/commit/0331f2ea16689523908b71199934456673b9af39) Thanks [@emmenko](https://github.com/emmenko)! - Update license year
+
 ## 3.0.1
 
 ### Patch Changes
