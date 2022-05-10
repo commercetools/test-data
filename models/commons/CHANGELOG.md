@@ -1,5 +1,25 @@
 # @commercetools-test-data/commons
 
+## 3.1.0
+
+### Minor Changes
+
+- [#127](https://github.com/commercetools/test-data/pull/127) [`1788be7`](https://github.com/commercetools/test-data/commit/1788be7b8032a4720cd4dcd4ae069b21b276c36d) Thanks [@emmenko](https://github.com/emmenko)! - Add `AddressDraft` model.
+
+  ```ts
+  import {
+    AddressDraft,
+    type TAddressDraft,
+  } from '@commercetools-test-data/commons';
+
+  const addressDraft = AddressDraft.random().build<TAddressDraft>();
+  ```
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@3.1.0
+
 ## 3.0.2
 
 ### Patch Changes
