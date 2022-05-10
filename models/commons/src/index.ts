@@ -6,6 +6,7 @@ export * from './reference/types';
 
 // Export models
 export * as Address from './address';
+export * as AddressDraft from './address/address-draft';
 export * as ClientLogging from './client-logging';
 export * as LocalizedString from './localized-string';
 export * as Reference from './reference';

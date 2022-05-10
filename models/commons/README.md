@@ -1,26 +1,32 @@
-# `@commercetools-test-data/commons`
+# @commercetools-test-data/commons
 
 This package provides the data model for the commercetools platform common types
 
 https://docs.commercetools.com/api/types
 
-## Install
+# Install
 
 ```bash
 $ yarn add -D @commercetools-test-data/commons
 ```
 
-## Models
+# Usage
 
-### `Address`
+## `Address`
 
 ```ts
-import { Address, type TAddress } from '@commercetools-test-data/commons';
+import {
+  Address,
+  AddressDraft,
+  type TAddress,
+  type TAddressDraft,
+} from '@commercetools-test-data/commons';
 
 const address = Address.random().build<TAddress>();
+const addressDraft = AddressDraft.random().build<TAddressDraft>();
 ```
 
-### `LocalizedString`
+## `LocalizedString`
 
 ```ts
 import {
@@ -29,12 +35,22 @@ import {
 } from '@commercetools-test-data/commons';
 
 const name = LocalizedString.random().build<TLocalizedString>();
+
+// Presets
+const emptyName = LocalizedString.presets.empty().build<TLocalizedString>();
 ```
 
-### `Reference`
+## `Reference`
 
 ```ts
 import { Reference, type TReference } from '@commercetools-test-data/commons';
 
-const productRef = Reference.random().build<TReference<'product'>>();
+const productRef = Reference.random()
+  .typeId('product')
+  .build<TReference<'product'>>();
+
+// Presets
+const categoryRef = Reference.presets
+  .category()
+  .build<TReference<'category'>>();
 ```

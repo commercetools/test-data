@@ -1,18 +1,18 @@
-# `@commercetools-test-data/channel`
+# @commercetools-test-data/channel
 
 This package provides the data model for the commercetools platform `Channel` type
 
 https://docs.commercetools.com/api/projects/channels
 
-## Install
+# Install
 
 ```bash
 $ yarn add -D @commercetools-test-data/channel
 ```
 
-## Usage
+# Usage
 
-```tsx
+```ts
 import type { TChannel, TChannelDraft } from '@commercetools-test-data/channel';
 import * as Channel from '@commercetools-test-data/channel';
 

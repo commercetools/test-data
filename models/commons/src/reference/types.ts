@@ -2,10 +2,10 @@ import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
 
-export type TReference<TypeId = string> = {
+export interface TReference<TypeId = string> {
   typeId: TypeId;
   id: string;
-};
+}
 
 export type TExpandedReferenceObject<TypeId = string> = {
   id: TReference<TypeId>['id'];
@@ -13,7 +13,8 @@ export type TExpandedReferenceObject<TypeId = string> = {
   [key: string]: unknown;
 };
 
-export type TCreateReferenceBuilder = () => TReferenceBuilder;
+export type TCreateReferenceBuilder<TypeId = string> =
+  () => TReferenceBuilder<TypeId>;
 
 export type TReferenceRest<
   TypeId = string,
