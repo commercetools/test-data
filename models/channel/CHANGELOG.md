@@ -1,5 +1,16 @@
 # @commercetools-test-data/channel
 
+## 3.1.0
+
+### Patch Changes
+
+- [#127](https://github.com/commercetools/test-data/pull/127) [`1788be7`](https://github.com/commercetools/test-data/commit/1788be7b8032a4720cd4dcd4ae069b21b276c36d) Thanks [@emmenko](https://github.com/emmenko)! - Refine docs and types
+
+- Updated dependencies [[`1788be7`](https://github.com/commercetools/test-data/commit/1788be7b8032a4720cd4dcd4ae069b21b276c36d)]:
+  - @commercetools-test-data/commons@3.1.0
+  - @commercetools-test-data/core@3.1.0
+  - @commercetools-test-data/utils@3.1.0
+
 ## 3.0.2
 
 ### Patch Changes
