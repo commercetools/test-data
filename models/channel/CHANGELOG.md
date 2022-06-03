@@ -1,5 +1,16 @@
 # @commercetools-test-data/channel
 
+## 3.1.1
+
+### Patch Changes
+
+- [#131](https://github.com/commercetools/test-data/pull/131) [`44a122e`](https://github.com/commercetools/test-data/commit/44a122e1cf9fbd8c57d5453bdcff0fb1d7b4091a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @faker-js/faker to v7
+
+- Updated dependencies [[`44a122e`](https://github.com/commercetools/test-data/commit/44a122e1cf9fbd8c57d5453bdcff0fb1d7b4091a)]:
+  - @commercetools-test-data/core@3.1.1
+  - @commercetools-test-data/commons@3.1.1
+  - @commercetools-test-data/utils@3.1.1
+
 ## 3.1.0
 
 ### Patch Changes
