@@ -128,7 +128,9 @@ const buildField = <Model>(
   const builderFn = builderField as (() => Model) | undefined;
   if (!builderFn) {
     throw new Error(
-      `Builder with name '${buildName}' does not exist on field '${meta?.fieldToBuild}'.`
+      `Builder with name '${buildName}' does not exist on field '${String(
+        meta?.fieldToBuild
+      )}'.`
     );
   }
   return builderFn();
