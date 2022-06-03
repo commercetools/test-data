@@ -1,4 +1,4 @@
-import faker from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TClientLogging, TClientLoggingGraphql } from './types';
 import * as Reference from '../reference';

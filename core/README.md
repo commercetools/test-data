@@ -187,12 +187,12 @@ For example:
 ```ts
 // presets/author-with-one-book.ts
 import type { TAuthorBuilder } from './types';
-import faker from '@faker-js/faker';
+import { faker } from '@faker-js/faker';
 import * as Book from '../../book';
 import Author from './builder';
 
 const preset = (): TAuthorBuilder =>
-  Author.random().books([Book.random().title(faker.random.words())]);
+  Author.random().books([Book.random().title(faker.helpers.words())]);
 export default preset;
 
 // presets/index.ts
