@@ -192,7 +192,7 @@ import * as Book from '../../book';
 import Author from './builder';
 
 const preset = (): TAuthorBuilder =>
-  Author.random().books([Book.random().title(faker.random.words())]);
+  Author.random().books([Book.random().title(faker.helpers.words())]);
 export default preset;
 
 // presets/index.ts
