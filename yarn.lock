@@ -1911,7 +1911,7 @@ __metadata:
     "@commercetools-test-data/core": 3.1.1
     "@commercetools-test-data/utils": 3.1.1
     "@commercetools/platform-sdk": ^2.7.0
-    "@faker-js/faker": ^7.0.0
+    "@faker-js/faker": ^7.3.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1926,7 +1926,7 @@ __metadata:
     "@commercetools-test-data/core": 3.1.1
     "@commercetools-test-data/utils": 3.1.1
     "@commercetools/platform-sdk": ^2.7.0
-    "@faker-js/faker": ^7.0.0
+    "@faker-js/faker": ^7.3.0
   languageName: unknown
   linkType: soft
 
@@ -1938,7 +1938,7 @@ __metadata:
     "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/core": 3.1.1
     "@commercetools/platform-sdk": ^2.7.0
-    "@faker-js/faker": ^7.0.0
+    "@faker-js/faker": ^7.3.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
@@ -1949,7 +1949,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@faker-js/faker": ^7.0.0
+    "@faker-js/faker": ^7.3.0
     "@types/lodash": ^4.14.182
     lodash: ^4.17.21
   languageName: unknown
@@ -1993,7 +1993,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@faker-js/faker": ^7.0.0
+    "@faker-js/faker": ^7.3.0
   languageName: unknown
   linkType: soft
 
@@ -2347,10 +2347,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@faker-js/faker@npm:^7.0.0":
-  version: 7.1.0
-  resolution: "@faker-js/faker@npm:7.1.0"
-  checksum: 3538266d5b3c38461e1490c1389ca8c5103c061545033caad9a8de17ca178e24f4cff7b9c83d74d2e1049d9775a270f5431b4f833081b9502b4a0eec4bd88546
+"@faker-js/faker@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "@faker-js/faker@npm:7.3.0"
+  checksum: ef5b64af30ce0ec76cb22798fbbe50184946fac389b4d81235f9d8d9eaaa77d67a80f46954fa993996b7c774bae23314529a95a42a6b68794f0795976c9be82b
   languageName: node
   linkType: hard
 
