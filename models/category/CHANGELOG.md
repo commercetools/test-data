@@ -1,5 +1,18 @@
 # @commercetools-test-data/category
 
+## 3.1.2
+
+### Patch Changes
+
+- [#136](https://github.com/commercetools/test-data/pull/136) [`abb2aca`](https://github.com/commercetools/test-data/commit/abb2acae91ccb274dcc066c73efa7d4e29368b75) Thanks [@emmenko](https://github.com/emmenko)! - Export types
+
+* [#135](https://github.com/commercetools/test-data/pull/135) [`7ef8141`](https://github.com/commercetools/test-data/commit/7ef8141cdbf024791101168e0211211b22d8085c) Thanks [@emmenko](https://github.com/emmenko)! - Fix faker deprecated methods
+
+* Updated dependencies [[`7ef8141`](https://github.com/commercetools/test-data/commit/7ef8141cdbf024791101168e0211211b22d8085c)]:
+  - @commercetools-test-data/core@3.1.2
+  - @commercetools-test-data/commons@3.1.2
+  - @commercetools-test-data/utils@3.1.2
+
 ## 3.1.1
 
 ### Patch Changes
