@@ -23,7 +23,7 @@
     "@commercetools-test-data/core": "3.1.1",
     "@commercetools-test-data/utils": "3.1.1",
     "@commercetools/platform-sdk": "^2.7.0",
-    "@faker-js/faker": "^7.0.0",
+    "@faker-js/faker": "^7.3.0",
     "lodash": "^4.17.21"
   }
 }
