@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 3.1.2
+
+### Patch Changes
+
+- [#135](https://github.com/commercetools/test-data/pull/135) [`7ef8141`](https://github.com/commercetools/test-data/commit/7ef8141cdbf024791101168e0211211b22d8085c) Thanks [@emmenko](https://github.com/emmenko)! - Fix faker deprecated methods
+
 ## 3.1.1
 
 ### Patch Changes
