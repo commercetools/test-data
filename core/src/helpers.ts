@@ -122,7 +122,7 @@ const buildField = <Model>(
 ): Model => {
   const buildName = convertTransformNameToBuildName(transformName);
   // @ts-ignore: TS does not know about the `Model` being an object.
-  const builderField = builder[buildName];
+  const builderField = builder?.[buildName];
   // We need to cast this to `() => Model` as otherwise the value is unknown.
   // We know it's a function because of the proxy builder.
   const builderFn = builderField as (() => Model) | undefined;
