@@ -13,7 +13,7 @@ export type TCategoryGraphql = Omit<
   'name' | 'description' | 'createdBy' | 'lastModifiedBy'
 > & {
   __typename: 'Category';
-  // name?: string;
+  // name: string;
   // description?: string;
   createdBy: TClientLoggingGraphql;
   lastModifiedBy: TClientLoggingGraphql;
