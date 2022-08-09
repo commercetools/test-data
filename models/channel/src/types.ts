@@ -21,7 +21,7 @@ export type TChannelGraphql = Omit<
   TChannel,
   // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
   | 'name'
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
+  // In GraphQL, we prefer to use `descriptionAllLocales` instead of `description`.
   | 'description'
   // In GraphQL, the object shape is different.
   | 'createdBy'
