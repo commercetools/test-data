@@ -21,7 +21,7 @@ const generator = Generator<Channel>({
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedBy: fake(() => ClientLogging.random()),
     roles: [roles.Primary],
-    name: fake(() => LocalizedString.random()),
+    name: null,
     description: null,
     address: fake(() => Address.random()),
     reviewRatingStatistics: null,
