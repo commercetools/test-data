@@ -1,5 +1,26 @@
 # @commercetools-test-data/commons
 
+## 4.0.0
+
+### Minor Changes
+
+- [#143](https://github.com/commercetools/test-data/pull/143) [`ad6754d`](https://github.com/commercetools/test-data/commit/ad6754d23149a66d9ea6cb5695415a0a8e909539) Thanks [@emmenko](https://github.com/emmenko)! - Adjust graphql transformers to use given properties data. This fixes a regression when overwriting certain model fields.
+
+  For example, when building a `Channel` the `name` property can be overwritten with a `LocalizedString` model.
+
+  ```js
+  Channel.random().name(LocalizedString.random().en('Store')).buildGraphql();
+  ```
+
+  This resulted in the `nameAllLocales` field to NOT include the `Store` value for the `en` locale.
+
+  Now this is fixed and working as expected. Similarly, other models with the same logic have been fixed.
+
+### Patch Changes
+
+- Updated dependencies [[`ad6754d`](https://github.com/commercetools/test-data/commit/ad6754d23149a66d9ea6cb5695415a0a8e909539)]:
+  - @commercetools-test-data/core@4.0.0
+
 ## 3.1.2
 
 ### Patch Changes

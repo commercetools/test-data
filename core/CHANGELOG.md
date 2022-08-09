@@ -1,5 +1,11 @@
 # @commercetools-test-data/core
 
+## 4.0.0
+
+### Patch Changes
+
+- [#143](https://github.com/commercetools/test-data/pull/143) [`ad6754d`](https://github.com/commercetools/test-data/commit/ad6754d23149a66d9ea6cb5695415a0a8e909539) Thanks [@emmenko](https://github.com/emmenko)! - Better null check for property access.
+
 ## 3.1.2
 
 ### Patch Changes
