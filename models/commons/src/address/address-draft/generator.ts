@@ -16,7 +16,7 @@ const generator = Generator<TAddressDraft>({
     lastName: fake((f) => f.name.lastName()),
     streetName: fake((f) => f.address.street()),
     streetNumber: fake((f) => String(f.datatype.number())),
-    additionalStreetInfo: fake((f) => f.address.streetSuffix()),
+    additionalStreetInfo: fake((f) => f.address.street()),
     postalCode: fake((f) => f.address.zipCode()),
     city: fake((f) => f.address.city()),
     region: null,
