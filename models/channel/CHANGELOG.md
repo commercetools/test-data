@@ -1,5 +1,14 @@
 # @commercetools-test-data/channel
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [[`467ac5f`](https://github.com/commercetools/test-data/commit/467ac5f041a733b05d71b7c3d69723369e658e17)]:
+  - @commercetools-test-data/commons@4.0.1
+  - @commercetools-test-data/core@4.0.1
+  - @commercetools-test-data/utils@4.0.1
+
 ## 4.0.0
 
 ### Major Changes
