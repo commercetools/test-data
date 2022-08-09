@@ -5,6 +5,7 @@ const isNil = (value: string | undefined) =>
   value === undefined || value === null;
 
 const transformers = {
+  default: Transformer<TLocalizedString, TLocalizedString>('default', {}),
   rest: Transformer<TLocalizedString, TLocalizedString>('rest', {}),
   graphql: Transformer<TLocalizedString, TLocalizedStringGraphql>('graphql', {
     replaceFields: ({ fields }) =>

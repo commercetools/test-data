@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { Transformer } from '@commercetools-test-data/core';
+import { buildField, Transformer } from '@commercetools-test-data/core';
 import type { TClientLogging, TClientLoggingGraphql } from './types';
 import * as Reference from '../reference';
 import { TReference } from '../reference/types';
@@ -13,9 +13,10 @@ const transformers = {
   }),
   graphql: Transformer<TClientLogging, TClientLoggingGraphql>('graphql', {
     replaceFields: ({ fields }) => {
-      const customerRef = Reference.random()
-        .typeId('customer')
-        .buildGraphql<TReference<'customer'>>();
+      const customerRef = buildField(
+        fields.customer,
+        'graphql'
+      ) as TReference<'customer'>;
       const userRef = Reference.random()
         .typeId('user')
         .buildGraphql<TReference<'user'>>();
