@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/commons",
-  "version": "3.1.2",
+  "version": "4.0.0",
   "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/core": "3.1.2",
+    "@commercetools-test-data/core": "4.0.0",
     "@commercetools/platform-sdk": "^2.7.0",
     "@faker-js/faker": "^7.3.0",
     "lodash": "^4.17.21"
