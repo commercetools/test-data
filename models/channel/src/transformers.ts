@@ -1,8 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import {
-  LocalizedString,
-  TLocalizedStringGraphql,
-} from '@commercetools-test-data/commons';
+import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TChannel, TChannelGraphql } from './types';
 
 const transformers = {
@@ -26,11 +23,11 @@ const transformers = {
   }),
   graphql: Transformer<TChannel, TChannelGraphql>('graphql', {
     buildFields: ['address', 'createdBy', 'lastModifiedBy'],
-    addFields: () => {
-      const nameAllLocales =
-        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
-      const descriptionAllLocales =
-        LocalizedString.random().buildGraphql<TLocalizedStringGraphql>();
+    addFields: ({ fields }) => {
+      const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
+      const descriptionAllLocales = LocalizedString.toLocalizedField(
+        fields.description
+      );
 
       return {
         __typename: 'Channel',

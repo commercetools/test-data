@@ -4,6 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TChannel, TChannelGraphql } from './types';
 import { roles } from './constants';
 import * as Channel from '.';
+import { LocalizedString } from '@commercetools-test-data/commons';
 
 describe('builder', () => {
   it(
@@ -22,11 +23,7 @@ describe('builder', () => {
         lastModifiedBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
+        name: null,
         description: null,
         address: expect.objectContaining({
           country: expect.any(String),
@@ -42,7 +39,9 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TChannel, TChannel>(
       'rest',
-      Channel.random(),
+      Channel.random().name(
+        LocalizedString.random().en('Food Store').de('Lebensmittelgeschäft')
+      ),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -56,8 +55,8 @@ describe('builder', () => {
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
+          en: 'Food Store',
+          de: 'Lebensmittelgeschäft',
           fr: expect.any(String),
         }),
         description: null,
@@ -75,19 +74,21 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TChannel, TChannelGraphql>(
       'graphql',
-      Channel.random(),
+      Channel.random().name(
+        LocalizedString.random().en('Food Store').de('Lebensmittelgeschäft')
+      ),
       expect.objectContaining({
         __typename: 'Channel',
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',
             locale: 'de',
-            value: expect.any(String),
+            value: 'Lebensmittelgeschäft',
           }),
           expect.objectContaining({
             __typename: 'LocalizedString',
             locale: 'en',
-            value: expect.any(String),
+            value: 'Food Store',
           }),
           expect.objectContaining({
             __typename: 'LocalizedString',
@@ -95,23 +96,7 @@ describe('builder', () => {
             value: expect.any(String),
           }),
         ]),
-        descriptionAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'de',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'en',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'fr',
-            value: expect.any(String),
-          }),
-        ]),
+        descriptionAllLocales: undefined,
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),
