@@ -1,5 +1,14 @@
 # @commercetools-test-data/commons
 
+## 4.0.1
+
+### Patch Changes
+
+- [#145](https://github.com/commercetools/test-data/pull/145) [`467ac5f`](https://github.com/commercetools/test-data/commit/467ac5f041a733b05d71b7c3d69723369e658e17) Thanks [@NickDevG](https://github.com/NickDevG)! - fix(address): replacing depracated fake address function
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.0.1
+
 ## 4.0.0
 
 ### Minor Changes
