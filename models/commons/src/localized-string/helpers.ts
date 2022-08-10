@@ -3,7 +3,7 @@ import { TLocalizedStringGraphql } from './types';
 
 const toLocalizedField = <Model>(value?: Model) => {
   if (!value) {
-    return undefined;
+    return null;
   }
 
   const localizedField = buildField<Model>(
