@@ -31,8 +31,8 @@ export type TChannelGraphql = Omit<
   __typename: 'Channel';
   createdBy: TClientLoggingGraphql;
   lastModifiedBy: TClientLoggingGraphql;
-  nameAllLocales: TLocalizedStringGraphql | null;
-  descriptionAllLocales: TLocalizedStringGraphql | null;
+  nameAllLocales?: TLocalizedStringGraphql | null;
+  descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
 
 export type TChannelBuilder = TBuilder<Channel>;
