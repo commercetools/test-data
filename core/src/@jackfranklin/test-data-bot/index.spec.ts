@@ -112,7 +112,7 @@ describe('test-data-bot', () => {
 
     const userBuilder = build<User>('User', {
       fields: {
-        name: fake((f) => f.name.findName()),
+        name: fake((f) => f.name.fullName()),
       },
     });
 
@@ -201,7 +201,7 @@ describe('test-data-bot', () => {
 
       const userBuilder = build<User>('User', {
         fields: {
-          name: fake((f) => f.name.findName()),
+          name: fake((f) => f.name.fullName()),
           sports: {
             football: true,
             rugby: false,
@@ -255,7 +255,7 @@ describe('test-data-bot', () => {
           return user;
         },
         fields: {
-          name: fake((f) => f.name.findName()),
+          name: fake((f) => f.name.fullName()),
         },
       });
 
@@ -279,7 +279,7 @@ describe('test-data-bot', () => {
           return user;
         },
         fields: {
-          name: fake((f) => f.name.findName()),
+          name: fake((f) => f.name.fullName()),
         },
       });
 
@@ -305,7 +305,7 @@ describe('test-data-bot', () => {
 
       const userBuilder = build<User>('User', {
         fields: {
-          name: fake((f) => f.name.findName()),
+          name: fake((f) => f.name.fullName()),
         },
       });
 
@@ -358,8 +358,8 @@ describe('test-data-bot', () => {
         fields: {
           friends: {
             names: [
-              fake((f) => f.name.findName()),
-              fake((f) => f.name.findName()),
+              fake((f) => f.name.fullName()),
+              fake((f) => f.name.fullName()),
             ],
           },
         },
@@ -389,7 +389,7 @@ describe('test-data-bot', () => {
 
       const friendBuilder = build<Friend>('Friend', {
         fields: {
-          name: fake((f) => f.name.findName()),
+          name: fake((f) => f.name.fullName()),
           sports: {
             football: bool(),
             basketball: false,
@@ -445,7 +445,7 @@ describe('test-data-bot', () => {
       const userBuilder = build<User>('User', {
         fields: {
           details: {
-            name: fake((f) => f.name.findName()),
+            name: fake((f) => f.name.fullName()),
           },
           admin: bool(),
         },

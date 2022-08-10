@@ -22,7 +22,7 @@ const generator = Generator<TAddressDraft>({
     region: null,
     state: fake((f) => f.address.state()),
     country: 'DE',
-    company: fake((f) => f.company.companyName()),
+    company: fake((f) => f.company.name()),
     department: fake((f) => f.commerce.department()),
     building: null,
     apartment: null,

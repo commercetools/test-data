@@ -270,7 +270,7 @@ describe('building', () => {
       fields: {
         id: fake((f) => f.datatype.uuid()),
         version: sequence(),
-        name: fake((f) => f.company.companyName()),
+        name: fake((f) => f.company.name()),
       },
     });
 
@@ -602,7 +602,7 @@ describe('building', () => {
       fields: {
         id: fake((f) => f.datatype.uuid()),
         version: sequence(),
-        name: fake((f) => f.company.companyName()),
+        name: fake((f) => f.company.name()),
       },
     });
 
