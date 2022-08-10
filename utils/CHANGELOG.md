@@ -1,5 +1,11 @@
 # @commercetools-test-data/utils
 
+## 4.0.2
+
+### Patch Changes
+
+- [#147](https://github.com/commercetools/test-data/pull/147) [`7f5a9a5`](https://github.com/commercetools/test-data/commit/7f5a9a5c44520dacaede323d4cb1ab7108ee1240) Thanks [@NickDevG](https://github.com/NickDevG)! - fix(faker): updating deprecated fields
+
 ## 4.0.1
 
 ## 4.0.0
