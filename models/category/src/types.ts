@@ -22,6 +22,6 @@ export type TCategoryGraphql = Omit<
   __typename: 'Category';
   createdBy: TClientLoggingGraphql;
   lastModifiedBy: TClientLoggingGraphql;
-  nameAllLocales?: TLocalizedStringGraphql;
-  descriptionAllLocales?: TLocalizedStringGraphql;
+  nameAllLocales: TLocalizedStringGraphql | null;
+  descriptionAllLocales: TLocalizedStringGraphql | null;
 };
