@@ -1,5 +1,14 @@
 # @commercetools-test-data/commons
 
+## 4.0.3
+
+### Patch Changes
+
+- [#150](https://github.com/commercetools/test-data/pull/150) [`4f87f72`](https://github.com/commercetools/test-data/commit/4f87f72c0a1c3530392b2002f6fb3fa9dba58221) Thanks [@NickDevG](https://github.com/NickDevG)! - fix(localized-string): to-localized-field to return null when no value is received
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.0.3
+
 ## 4.0.2
 
 ### Patch Changes
