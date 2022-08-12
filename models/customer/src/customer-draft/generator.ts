@@ -22,7 +22,7 @@ const generator = Generator<TCustomerDraft>({
     dateOfBirth: fake((f) => f.date.past(60)),
     companyName: fake((f) => f.company.companyName()),
     vatId: fake((f) => f.random.alphaNumeric(12)),
-    isEmailVerified: true,
+    isEmailVerified: fake((f) => f.datatype.boolean()),
     customerGroup: null,
     addresses: null,
     defaultBillingAddress: null,

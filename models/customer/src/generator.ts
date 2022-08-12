@@ -37,7 +37,7 @@ const generator = Generator<TCustomer>({
     shippingAddressIds: null,
     defaultBillingAddressId: null,
     billingAddressIds: null,
-    isEmailVerified: true,
+    isEmailVerified: fake((f) => f.datatype.boolean()),
     externalId: fake((f) => f.datatype.uuid()),
     customerGroup: null,
     custom: null,
