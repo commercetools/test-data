@@ -38,6 +38,7 @@
     "find-up": "^6.3.0",
     "husky": "8.0.1",
     "jest": "28.1.0",
+    "jest-fail-on-console": "2.4.2",
     "jest-runner-eslint": "1.0.1",
     "jest-silent-reporter": "0.5.0",
     "jest-watch-typeahead": "1.1.0",

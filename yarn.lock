@@ -1976,6 +1976,7 @@ __metadata:
     find-up: ^6.3.0
     husky: 8.0.1
     jest: 28.1.0
+    jest-fail-on-console: 2.4.2
     jest-runner-eslint: 1.0.1
     jest-silent-reporter: 0.5.0
     jest-watch-typeahead: 1.1.0
@@ -7288,6 +7289,15 @@ __metadata:
     jest-mock: ^28.1.0
     jest-util: ^28.1.0
   checksum: e65e83962b6d6d8879611e230d878cd2690acd20d1295071f67de7b02dfc4194438961be2a73acf005fc022fb2f73f9dafd50c23088d4e6b70156f8998b19beb
+  languageName: node
+  linkType: hard
+
+"jest-fail-on-console@npm:2.4.2":
+  version: 2.4.2
+  resolution: "jest-fail-on-console@npm:2.4.2"
+  dependencies:
+    chalk: ^4.1.0
+  checksum: 76c55424180640dff176cc89f39f43929a3d5a44d66af227d9117767bf32c2ec0da23712e345e15aec1caf4d14fb6626f897c23ca8643559ca069e18ed969186
   languageName: node
   linkType: hard
 

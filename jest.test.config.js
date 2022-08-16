@@ -9,4 +9,5 @@ module.exports = {
   testMatch: ['**/*.spec.js', '**/*.spec.ts'],
   moduleFileExtensions: ['ts', 'js'],
   watchPlugins: ['jest-watch-typeahead/filename'],
+  setupFilesAfterEnv: ['./setup-test-framework.js'],
 };
