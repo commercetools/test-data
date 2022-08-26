@@ -1,7 +1,7 @@
 import { fake, oneOf, Generator } from '@commercetools-test-data/core';
 import { TAddressDraft } from '../types';
 
-// https://docs.commercetools.com/api/projects/channels#channeldraft
+// https://docs.commercetools.com/api/types#addressdraft
 const generator = Generator<TAddressDraft>({
   fields: {
     id: null,
