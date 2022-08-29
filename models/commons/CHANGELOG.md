@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 4.1.0
+
+### Minor Changes
+
+- [#140](https://github.com/commercetools/test-data/pull/140) [`0ee1463`](https://github.com/commercetools/test-data/commit/0ee14631bc546c6fabf1150bd6a024cea8335674) Thanks [@valoriecarli](https://github.com/valoriecarli)! - feat(customer): add customer and customer draft models
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.1.0
+
 ## 4.0.3
 
 ### Patch Changes
