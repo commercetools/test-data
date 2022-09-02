@@ -1910,7 +1910,7 @@ __metadata:
     "@commercetools-test-data/commons": 4.1.0
     "@commercetools-test-data/core": 4.1.0
     "@commercetools-test-data/utils": 4.1.0
-    "@commercetools/platform-sdk": ^2.7.0
+    "@commercetools/platform-sdk": ^3.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
@@ -1925,7 +1925,7 @@ __metadata:
     "@commercetools-test-data/commons": 4.1.0
     "@commercetools-test-data/core": 4.1.0
     "@commercetools-test-data/utils": 4.1.0
-    "@commercetools/platform-sdk": ^2.7.0
+    "@commercetools/platform-sdk": ^3.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
@@ -1937,7 +1937,7 @@ __metadata:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/core": 4.1.0
-    "@commercetools/platform-sdk": ^2.7.0
+    "@commercetools/platform-sdk": ^3.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
@@ -1998,16 +1998,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools/platform-sdk@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "@commercetools/platform-sdk@npm:2.7.0"
+"@commercetools/platform-sdk@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@commercetools/platform-sdk@npm:3.0.0"
   dependencies:
     "@commercetools/sdk-client-v2": ^1.4.0
     "@commercetools/sdk-middleware-auth": ^6.0.4
     "@commercetools/sdk-middleware-http": ^6.0.4
     "@commercetools/sdk-middleware-logger": ^2.1.1
     querystring: ^0.2.1
-  checksum: 975bcf9e87b8b2e262e9fd34bd90e335de236a76b437dbbd2692b57346e5e022c0af446d338c13a710e09eae7e72b7c3ddbaaa2fb5659d6a53e31e025f6cddf8
+  checksum: 00a796cc65e739e298048ec548a5c9bd67456f67e0d5e8dde5e7714c71d60a485d3f6e1de42322141b66939e275e0e11b6b58882007086cd54b2bae65ccb92b9
   languageName: node
   linkType: hard
 
