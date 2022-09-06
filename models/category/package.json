@@ -22,7 +22,7 @@
     "@commercetools-test-data/commons": "4.1.0",
     "@commercetools-test-data/core": "4.1.0",
     "@commercetools-test-data/utils": "4.1.0",
-    "@commercetools/platform-sdk": "^2.7.0",
+    "@commercetools/platform-sdk": "^3.0.0",
     "@faker-js/faker": "^7.4.0",
     "lodash": "^4.17.21"
   }
