@@ -1,28 +1,37 @@
 {
-  "name": "@commercetools-test-data/standalone-prices",
+  "name": "@commercetools-test-data/standalone-price",
   "version": "4.1.0",
-  "description": "Data model for commercetools API Standalone Prices",
+  "description": "Data model for commercetools API Standalone Price",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/standalone-prices"
+    "directory": "models/standalone-price"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-standalone-prices.cjs.js",
-  "module": "dist/commercetools-test-data-standalone-prices.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "main": "dist/commercetools-test-data-standalone-price.cjs.js",
+  "module": "dist/commercetools-test-data-standalone-price.esm.js",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "4.1.0",
     "@commercetools-test-data/core": "4.1.0",
     "@commercetools-test-data/utils": "4.1.0",
-    "@commercetools/platform-sdk": "^2.7.0",
+    "@commercetools/platform-sdk": "^3.0.0",
     "@faker-js/faker": "^7.4.0"
   }
 }
