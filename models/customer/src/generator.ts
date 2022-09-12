@@ -6,7 +6,7 @@ import {
 } from '@commercetools-test-data/core';
 import { Address, ClientLogging } from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TCustomer } from '../types';
+import { TCustomer } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -30,7 +30,7 @@ const generator = Generator<TCustomer>({
     title: fake((f) => f.name.jobTitle()),
     salutation: oneOf('Dr.', 'Ms.', 'Mr.'),
     dateOfBirth: fake((f) => f.date.past(60)),
-    companyName: fake((f) => f.company.companyName()),
+    companyName: fake((f) => f.company.name()),
     vatId: fake((f) => f.random.alphaNumeric(12)),
     addresses: fake(() => Address.random()),
     defaultShippingAddressId: null,

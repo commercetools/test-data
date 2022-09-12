@@ -1,5 +1,5 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TCustomerDraft } from '../../types';
+import { TCustomerDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/customers#customerdraft
 //** Required values:  email, password
@@ -20,7 +20,7 @@ const generator = Generator<TCustomerDraft>({
     anonymousId: null,
     externalId: fake((f) => f.datatype.uuid()),
     dateOfBirth: fake((f) => f.date.past(60)),
-    companyName: fake((f) => f.company.companyName()),
+    companyName: fake((f) => f.company.name()),
     vatId: fake((f) => f.random.alphaNumeric(12)),
     isEmailVerified: fake((f) => f.datatype.boolean()),
     customerGroup: null,

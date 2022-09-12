@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateCustomerBuilder, TCustomer } from '../types';
+import type { TCreateCustomerBuilder, TCustomer } from './types';
 
 const Model: TCreateCustomerBuilder = () =>
   Builder<TCustomer>({

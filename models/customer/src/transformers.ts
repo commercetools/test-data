@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TCustomer, TCustomerGraphql } from '../types';
+import type { TCustomer, TCustomerGraphql } from './types';
 
 const transformers = {
   default: Transformer<TCustomer, TCustomer>('default', {
