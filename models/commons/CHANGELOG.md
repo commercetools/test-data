@@ -1,5 +1,14 @@
 # @commercetools-test-data/commons
 
+## 4.1.1
+
+### Patch Changes
+
+- [#141](https://github.com/commercetools/test-data/pull/141) [`219002d`](https://github.com/commercetools/test-data/commit/219002d7b945045c13930bf03b5a42be6604183d) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @commercetools/platform-sdk to v3
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.1.1
+
 ## 4.1.0
 
 ### Minor Changes
