@@ -13,8 +13,13 @@ $ yarn add -D @commercetools-test-data/standalone-price
 # Usage
 
 ```ts
-import type { TStandalonePrice } from '@commercetools-test-data/standalone-price';
+import type {
+  TStandalonePrice,
+  TStandalonePriceDraft,
+} from '@commercetools-test-data/standalone-price';
 import * as StandalonePrice from '@commercetools-test-data/standalone-price';
 
 const standalonePrice = StandalonePrice.random().build<TStandalonePrice>();
+const standalonePriceDraft =
+  StandalonePrice.StandalonePriceDraft.random().build<TStandalonePriceDraft>();
 ```
