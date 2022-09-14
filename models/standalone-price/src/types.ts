@@ -11,7 +11,7 @@ export type TStandalonePriceGraphQL = TStandalonePrice & {
   __typename: 'StandalonePrice';
 };
 
-export type TStandalonePriceGraphQLDraft = TStandalonePriceDraft & {
+export type TStandalonePriceDraftGraphQL = TStandalonePriceDraft & {
   __typename: 'StandalonePriceDraft';
 };
 

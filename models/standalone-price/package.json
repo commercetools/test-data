@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "4.1.0",
-    "@commercetools-test-data/core": "4.1.0",
-    "@commercetools-test-data/utils": "4.1.0",
+    "@commercetools-test-data/commons": "4.1.1",
+    "@commercetools-test-data/core": "4.1.1",
+    "@commercetools-test-data/utils": "4.1.1",
     "@commercetools/platform-sdk": "^3.0.0",
     "@faker-js/faker": "^7.4.0"
   }

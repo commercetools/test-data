@@ -2002,6 +2002,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@commercetools-test-data/standalone-price@workspace:models/standalone-price":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/standalone-price@workspace:models/standalone-price"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.1.1
+    "@commercetools-test-data/core": 4.1.1
+    "@commercetools-test-data/utils": 4.1.1
+    "@commercetools/platform-sdk": ^3.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
 "@commercetools-test-data/utils@4.1.1, @commercetools-test-data/utils@workspace:utils":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/utils@workspace:utils"
