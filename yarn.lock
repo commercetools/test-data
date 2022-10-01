@@ -1910,7 +1910,7 @@ __metadata:
     "@commercetools-test-data/commons": 4.1.1
     "@commercetools-test-data/core": 4.1.1
     "@commercetools-test-data/utils": 4.1.1
-    "@commercetools/platform-sdk": ^3.0.0
+    "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
@@ -1925,7 +1925,7 @@ __metadata:
     "@commercetools-test-data/commons": 4.1.1
     "@commercetools-test-data/core": 4.1.1
     "@commercetools-test-data/utils": 4.1.1
-    "@commercetools/platform-sdk": ^3.0.0
+    "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
@@ -1937,7 +1937,7 @@ __metadata:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/core": 4.1.1
-    "@commercetools/platform-sdk": ^3.0.0
+    "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
@@ -1964,7 +1964,7 @@ __metadata:
     "@commercetools-test-data/commons": 4.1.1
     "@commercetools-test-data/core": 4.1.1
     "@commercetools-test-data/utils": 4.1.1
-    "@commercetools/platform-sdk": ^3.0.0
+    "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
@@ -2012,27 +2012,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools/platform-sdk@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@commercetools/platform-sdk@npm:3.0.0"
+"@commercetools/platform-sdk@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@commercetools/platform-sdk@npm:4.0.0"
   dependencies:
-    "@commercetools/sdk-client-v2": ^1.4.0
+    "@commercetools/sdk-client-v2": ^2.0.0
     "@commercetools/sdk-middleware-auth": ^6.0.4
     "@commercetools/sdk-middleware-http": ^6.0.4
     "@commercetools/sdk-middleware-logger": ^2.1.1
     querystring: ^0.2.1
-  checksum: 00a796cc65e739e298048ec548a5c9bd67456f67e0d5e8dde5e7714c71d60a485d3f6e1de42322141b66939e275e0e11b6b58882007086cd54b2bae65ccb92b9
+  checksum: 64c922639648fd3e7bc3afcbf366122e7f38911cf6078ff4f0d786d0b4c9f9d1e7f2fe9ff78fa72307604652cea2383a773a1f5cac6667e1b800650a06a4d046
   languageName: node
   linkType: hard
 
-"@commercetools/sdk-client-v2@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@commercetools/sdk-client-v2@npm:1.4.0"
+"@commercetools/sdk-client-v2@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@commercetools/sdk-client-v2@npm:2.0.0"
   dependencies:
     buffer: ^6.0.3
     node-fetch: ^2.6.1
     querystring: ^0.2.1
-  checksum: 78caba7fc938d15312e36969e509732ab4c8f19d1154b7a2fcc5a19044eb4eb7cf40b1302a055f3cb348a0437b2fa4bf805a52d0310628c34f3b6337607e2588
+  checksum: bcfe0bddb993b384d7bb7d647b1f1e69c5ffadcb189010e46c899cffb483f6b0230a4ea4babc7a67a5fe0b5734fc3bd62bd4f52bf9120d6b07b5513d911ffe53
   languageName: node
   linkType: hard
 
