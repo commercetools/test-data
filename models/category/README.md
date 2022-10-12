@@ -8,6 +8,7 @@ https://docs.commercetools.com/api/projects/categories
 
 ```bash
 $ yarn add -D @commercetools-test-data/category
+$ pnpm add -D @commercetools-test-data/category
 ```
 
 ## Usage

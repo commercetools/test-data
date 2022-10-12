@@ -8,6 +8,7 @@ https://docs.commercetools.com/api/projects/channels
 
 ```bash
 $ yarn add -D @commercetools-test-data/channel
+$ pnpm add -D @commercetools-test-data/channel
 ```
 
 # Usage

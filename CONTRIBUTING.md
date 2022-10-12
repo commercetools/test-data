@@ -28,15 +28,16 @@ To know more about how to work and build data models, [check out the documentati
 ## Setting up a local copy
 
 1. Clone the repository
-2. Run `yarn` in the root folder
+2. Make sure you have [pnpm](https://pnpm.io/installation) installed. We recommend [using Corepack](https://pnpm.io/installation#using-corepack).
+3. Run `pnpm install` in the root folder
 
-Once it's done, you can run `yarn test` to test your changes.
+Once it's done, you can run `pnpm test` to test your changes.
 
 ## Adding changesets
 
 commercetools test-data uses [changesets](https://github.com/atlassian/changesets) to do versioning and creating changelogs.
 
-As a contributor you need to add a changeset by running `yarn changeset`.
+As a contributor you need to add a changeset by running `pnpm changeset`.
 The command will prompt to select the packages that should be bumped, their associated semver bump types and some markdown which will be inserted into the changelogs.
 
 When opening a Pull Request, a `changeset-bot` checks that the Pull Request contains a changeset. A changeset is **not required**, as things like documentation or other changes in the repository itself generally don't need a changeset.
