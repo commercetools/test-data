@@ -10,9 +10,6 @@ on:
       - main
   pull_request:
 
-env:
-  PNPM_CACHE_FOLDER: .pnpm-store
-
 jobs:
   build_lint_and_test:
     runs-on: ubuntu-latest
