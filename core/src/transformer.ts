@@ -39,12 +39,6 @@ function Transformer<Model, TransformedModel>(
       });
     }
 
-    // The default transformer only allows building nested fields to not
-    // allow re-transforming model shape
-    if (transformType === 'default') {
-      return transformedFields as unknown as TransformedModel;
-    }
-
     // If this is defined, all other options are ignored, as the transformed value
     // can be anything (object, array, scalar, etc.).
     if (fieldsReplacer) {
