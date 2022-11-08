@@ -42,7 +42,7 @@ const generator = Generator<TCustomer>({
     customerGroup: null,
     custom: null,
     locale: fake((f) => f.random.locale()),
-    // authenticationMode - currently in beta
+    authenticationMode: 'password',
   },
 });
 
