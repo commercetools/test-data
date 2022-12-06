@@ -1,3 +1,3 @@
-export default {
-  // @TODO: add `category-draft`
-};
+const presets = {};
+
+export default presets;
