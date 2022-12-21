@@ -3,13 +3,13 @@ import type { TCategoryDraft, TCategoryDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TCategoryDraft, TCategoryDraft>('default', {
-    buildFields: ['name', 'slug'],
+    buildFields: ['description', 'name', 'slug'],
   }),
   rest: Transformer<TCategoryDraft, TCategoryDraft>('rest', {
-    buildFields: ['name', 'slug'],
+    buildFields: ['description', 'name', 'slug'],
   }),
   graphql: Transformer<TCategoryDraft, TCategoryDraftGraphql>('graphql', {
-    buildFields: ['name', 'slug'],
+    buildFields: ['description', 'name', 'slug'],
     addFields: () => ({
       __typename: 'CategoryDraft',
     }),
