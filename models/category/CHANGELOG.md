@@ -1,5 +1,18 @@
 # @commercetools-test-data/category
 
+## 4.2.0
+
+### Minor Changes
+
+- [#167](https://github.com/commercetools/test-data/pull/167) [`e7114c1`](https://github.com/commercetools/test-data/commit/e7114c11fa8a97c0f9ba802c58966cd430c6a3f6) Thanks [@valoriecarli](https://github.com/valoriecarli)! - feat(category): add category draft
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.2.0
+  - @commercetools-test-data/commons@4.2.0
+  - @commercetools-test-data/utils@4.2.0
+
 ## 4.1.1
 
 ### Patch Changes
