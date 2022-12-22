@@ -1,5 +1,16 @@
 # @commercetools-test-data/customer
 
+## 4.2.0
+
+### Patch Changes
+
+- [#134](https://github.com/commercetools/test-data/pull/134) [`fce7cc2`](https://github.com/commercetools/test-data/commit/fce7cc227d62b3409fd51cf623ebe8f9b8826dec) Thanks [@renovate](https://github.com/apps/renovate)! - Add `authenticationMode` to customer defaulting to `password`.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.2.0
+  - @commercetools-test-data/commons@4.2.0
+  - @commercetools-test-data/utils@4.2.0
+
 ## 4.1.1
 
 ### Patch Changes

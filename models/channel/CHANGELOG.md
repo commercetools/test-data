@@ -1,5 +1,14 @@
 # @commercetools-test-data/channel
 
+## 4.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.2.0
+  - @commercetools-test-data/commons@4.2.0
+  - @commercetools-test-data/utils@4.2.0
+
 ## 4.1.1
 
 ### Patch Changes
