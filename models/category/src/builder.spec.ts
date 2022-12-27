@@ -13,6 +13,7 @@ describe('builder', () => {
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
+        orderHint: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
@@ -39,6 +40,7 @@ describe('builder', () => {
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
+        orderHint: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
@@ -81,6 +83,7 @@ describe('builder', () => {
             value: expect.any(String),
           }),
         ]),
+        orderHint: expect.any(String),
         descriptionAllLocales: null,
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
