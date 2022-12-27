@@ -1,5 +1,16 @@
 # @commercetools-test-data/category
 
+## 4.2.1
+
+### Patch Changes
+
+- [#169](https://github.com/commercetools/test-data/pull/169) [`5c30800`](https://github.com/commercetools/test-data/commit/5c30800246a78d4cd0db5e71c6a810e46be68213) Thanks [@valoriecarli](https://github.com/valoriecarli)! - add slug presets and updated orderhint type
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.2.1
+  - @commercetools-test-data/commons@4.2.1
+  - @commercetools-test-data/utils@4.2.1
+
 ## 4.2.0
 
 ### Minor Changes
