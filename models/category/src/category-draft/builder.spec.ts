@@ -13,6 +13,7 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         externalId: expect.any(String),
+        orderHint: expect.any(String),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -34,7 +35,7 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         externalId: expect.any(String),
-        orderHint: expect.any(Number),
+        orderHint: expect.any(String),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -56,6 +57,7 @@ describe('builder', () => {
         __typename: 'CategoryDraft',
         key: expect.any(String),
         externalId: expect.any(String),
+        orderHint: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',

@@ -18,11 +18,13 @@ const generator = Generator<TCategory>({
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedBy: fake(() => ClientLogging.random()),
     name: fake(() => LocalizedString.random()),
-    slug: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
     ancestors: [],
     parent: null,
-    orderHint: fake((f) => f.datatype.float({ min: 0.01, max: 0.99 })),
+    orderHint: fake((f) =>
+      f.datatype.float({ min: 0.01, max: 0.99 }).toString()
+    ),
     externalId: fake((f) => f.datatype.uuid()),
     metaTitle: null,
     metaDescription: null,

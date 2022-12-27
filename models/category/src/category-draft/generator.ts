@@ -9,10 +9,12 @@ const generator = Generator<TCategoryDraft>({
     key: fake((f) => f.lorem.slug(2)),
     externalId: fake((f) => f.datatype.uuid()),
     name: fake(() => LocalizedString.random()),
-    slug: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
     parent: null,
-    orderHint: fake((f) => f.datatype.float({ min: 0.01, max: 0.99 })),
+    orderHint: fake((f) =>
+      f.datatype.float({ min: 0.01, max: 0.99 }).toString()
+    ),
     metaTitle: null,
     metaDescription: null,
     metaKeywords: null,
