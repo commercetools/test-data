@@ -1,5 +1,16 @@
 # @commercetools-test-data/category
 
+## 4.2.2
+
+### Patch Changes
+
+- [#171](https://github.com/commercetools/test-data/pull/171) [`a40573d`](https://github.com/commercetools/test-data/commit/a40573d2e1986fa14600fe192887de5beb4de622) Thanks [@valoriecarli](https://github.com/valoriecarli)! - add categorydraft to index
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.2.2
+  - @commercetools-test-data/commons@4.2.2
+  - @commercetools-test-data/utils@4.2.2
+
 ## 4.2.1
 
 ### Patch Changes
