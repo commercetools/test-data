@@ -1907,6 +1907,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@commercetools-test-data/zone@workspace:models/zone":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/zone@workspace:models/zone"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.2.2
+    "@commercetools-test-data/core": 4.2.2
+    "@commercetools-test-data/utils": 4.2.2
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+    lodash: ^4.17.21
+  languageName: unknown
+  linkType: soft
+
 "@commercetools/platform-sdk@npm:^4.0.0":
   version: 4.2.0
   resolution: "@commercetools/platform-sdk@npm:4.2.0"
