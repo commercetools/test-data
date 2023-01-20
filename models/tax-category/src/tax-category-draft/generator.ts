@@ -1,6 +1,6 @@
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TTaxCategoryDraft } from '../types';
-import * as TaxRateDraft from '../../../../models/tax-rate/src/tax-rate-draft';
+import * as TaxRateDraft from '@commercetools-test-data/tax-rate';
 
 // https://docs.commercetools.com/api/projects/taxCategories#taxcategorydraft
 

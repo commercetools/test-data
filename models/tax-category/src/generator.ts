@@ -2,7 +2,8 @@ import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { TTaxCategory } from './types';
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as TaxRate from '../../tax-rate';
+import * as TaxRate from '@commercetools-test-data/tax-rate';
+
 //https://docs.commercetools.com/api/projects/taxCategories#taxcategory
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
