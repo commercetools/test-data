@@ -3,7 +3,6 @@ import { TTaxCategory } from './types';
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as TaxRate from '../../tax-rate';
-
 //https://docs.commercetools.com/api/projects/taxCategories#taxcategory
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
