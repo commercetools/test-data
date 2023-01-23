@@ -1,5 +1,5 @@
 import TaxCategoryDraft from '../builder';
-import * as TaxRateDraft from '../../../../tax-rate/src/tax-rate-draft';
+import { TaxRateDraft } from '@commercetools-test-data/tax-rate';
 
 const withTaxRateCountryUsaAndIncludedInPrice = () =>
   TaxCategoryDraft().rates([
