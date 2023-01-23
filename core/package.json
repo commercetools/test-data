@@ -8,10 +8,7 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "core"
   },
-  "keywords": [
-    "javascript",
-    "test-data"
-  ],
+  "keywords": ["javascript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -19,18 +16,9 @@
   "main": "dist/commercetools-test-data-core.cjs.js",
   "module": "dist/commercetools-test-data-core.esm.js",
   "preconstruct": {
-    "entrypoints": [
-      "./index.ts",
-      "./test-utils.ts"
-    ]
+    "entrypoints": ["./index.ts", "./test-utils.ts"]
   },
-  "files": [
-    "dist",
-    "test-utils",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["dist", "test-utils", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
