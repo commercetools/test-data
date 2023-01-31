@@ -1806,21 +1806,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commercetools-test-data/attribute-type@workspace:models/attribute-type":
-  version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/attribute-type@workspace:models/attribute-type"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-    "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/tax-rate": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
-    "@commercetools/platform-sdk": ^4.0.0
-    "@faker-js/faker": ^7.4.0
-  languageName: unknown
-  linkType: soft
-
 "@commercetools-test-data/category@workspace:models/category":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/category@workspace:models/category"
