@@ -1,9 +1,7 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import { AttributePlainEnumValue } from '@commercetools/platform-sdk';
 
-export type TPlainEnumValue = {
-  key: string;
-  label: string | undefined;
-};
+export type TPlainEnumValue = AttributePlainEnumValue;
 
 export type TPlainEnumValueGraphql = TPlainEnumValue & {
   __typename: 'PlainEnumValue';
