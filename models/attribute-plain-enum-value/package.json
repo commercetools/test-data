@@ -1,20 +1,20 @@
 {
-  "name": "@commercetools-test-data/plain-enum-value",
+  "name": "@commercetools-test-data/attribute-plain-enum-value",
   "version": "4.4.0",
-  "description": "Data model for commercetools API PlainEnumValue",
+  "description": "Data model for commercetools API AttributePlainEnumValue",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/plain-enum-value"
+    "directory": "models/attribute-plain-enum-value"
   },
   "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-plain-enum-value.cjs.js",
-  "module": "dist/commercetools-test-data-plain-enum-value.esm.js",
+  "main": "dist/commercetools-test-data-attribute-plain-enum-value.cjs.js",
+  "module": "dist/commercetools-test-data-attribute-plain-enum-value.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",

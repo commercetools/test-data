@@ -1,14 +1,17 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TPlainEnumValue, TPlainEnumValueGraphql } from './types';
-import * as PlainEnumValue from '.';
+import {
+  TAttributePlainEnumValue,
+  TAttributePlainEnumValueGraphql,
+} from './types';
+import * as AttributePlainEnumValue from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TPlainEnumValue, TPlainEnumValue>(
+    ...createBuilderSpec<TAttributePlainEnumValue, TAttributePlainEnumValue>(
       'default',
-      PlainEnumValue.random(),
+      AttributePlainEnumValue.random(),
       expect.objectContaining({
         key: expect.any(String),
         label: expect.any(String),
@@ -17,9 +20,9 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TPlainEnumValue, TPlainEnumValue>(
+    ...createBuilderSpec<TAttributePlainEnumValue, TAttributePlainEnumValue>(
       'rest',
-      PlainEnumValue.random(),
+      AttributePlainEnumValue.random(),
       expect.objectContaining({
         key: expect.any(String),
         label: expect.any(String),
@@ -28,10 +31,14 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TPlainEnumValue, TPlainEnumValueGraphql>(
+    ...createBuilderSpec<
+      TAttributePlainEnumValue,
+      TAttributePlainEnumValueGraphql
+    >(
       'graphql',
-      PlainEnumValue.random(),
+      AttributePlainEnumValue.random(),
       expect.objectContaining({
+        __typename: 'AttributePlainEnumValue',
         key: expect.any(String),
         label: expect.any(String),
       })

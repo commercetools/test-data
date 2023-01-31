@@ -1806,6 +1806,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@commercetools-test-data/attribute-plain-enum-value@workspace:models/attribute-plain-enum-value":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/attribute-plain-enum-value@workspace:models/attribute-plain-enum-value"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.4.0
+    "@commercetools-test-data/core": 4.4.0
+    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
 "@commercetools-test-data/category@workspace:models/category":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/category@workspace:models/category"
@@ -1904,20 +1918,6 @@ __metadata:
     rimraf: 3.0.2
     tsc-files: ^1.1.3
     typescript: 4.9.4
-  languageName: unknown
-  linkType: soft
-
-"@commercetools-test-data/plain-enum-value@workspace:models/plain-enum-value":
-  version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/plain-enum-value@workspace:models/plain-enum-value"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-    "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
-    "@commercetools/platform-sdk": ^4.0.0
-    "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
 

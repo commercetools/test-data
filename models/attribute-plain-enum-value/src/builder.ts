@@ -1,10 +1,13 @@
 import { Builder } from '@commercetools-test-data/core';
-import { TPlainEnumValue, TCreatePlainEnumValueBuilder } from './types';
+import {
+  TAttributePlainEnumValue,
+  TCreateAttributePlainEnumValueBuilder,
+} from './types';
 import generator from './generator';
 import transformers from './transformers';
 
-const Model: TCreatePlainEnumValueBuilder = () =>
-  Builder<TPlainEnumValue>({
+const Model: TCreateAttributePlainEnumValueBuilder = () =>
+  Builder<TAttributePlainEnumValue>({
     generator,
     transformers,
   });
