@@ -1,19 +1,21 @@
 {
-  "name": "@commercetools-test-data/category",
+  "name": "@commercetools-test-data/product-discount-value-relative",
   "version": "4.4.0",
-  "description": "Data model for commercetools API Category",
+  "description": "Data model for commercetools API ProductDiscountValueRelative",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/category"
+    "directory": "models/product-discount-value-relative"
   },
+  "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-category.cjs.js",
-  "module": "dist/commercetools-test-data-category.esm.js",
+  "main": "dist/commercetools-test-data-product-discount-value-relative.cjs.js",
+  "module": "dist/commercetools-test-data-product-discount-value-relative.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
@@ -21,7 +23,6 @@
     "@commercetools-test-data/core": "4.4.0",
     "@commercetools-test-data/utils": "4.4.0",
     "@commercetools/platform-sdk": "^4.0.0",
-    "@faker-js/faker": "^7.4.0",
-    "lodash": "^4.17.21"
+    "@faker-js/faker": "^7.4.0"
   }
 }
