@@ -1,9 +1,9 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueRelative } from './types';
+import { TProductDiscountValueRelativeDraft } from './types';
 
-// https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvaluerelative
+// https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvaluerelativedraft
 
-const generator = Generator<TProductDiscountValueRelative>({
+const generator = Generator<TProductDiscountValueRelativeDraft>({
   fields: {
     type: 'relative',
     permyriad: fake((f) =>
