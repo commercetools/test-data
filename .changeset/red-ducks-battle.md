@@ -1,5 +1,5 @@
 ---
-'@commercetools-test-data/plain-enum-value': minor
+'@commercetools-test-data/attribute-plain-enum-value': minor
 ---
 
-create plain-enum-value model
+Add model for `AttributePlainEnumValue`.
