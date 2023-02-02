@@ -2,7 +2,7 @@
 
 This package provides the data model for the commercetools platform `ProductDiscountValueRelative` type
 
-https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalue
+https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvaluerelative
 
 # Install
 
