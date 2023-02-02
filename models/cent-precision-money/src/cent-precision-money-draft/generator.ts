@@ -1,7 +1,7 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TCentPrecisionMoneyDraft } from './types';
 
-// https://docs.commercetools.com/api/types#money
+// https://docs.commercetools.com/api/types#centprecisionmoneydraft
 
 const generator = Generator<TCentPrecisionMoneyDraft>({
   fields: {
