@@ -5,8 +5,8 @@ import { TMoney } from './types';
 
 const generator = Generator<TMoney>({
   fields: {
-    currencyCode: oneOf('EUR', 'USD'),
     centAmount: fake((f) => f.datatype.number({ min: 10 })),
+    currencyCode: oneOf('EUR', 'USD'),
   },
 });
 
