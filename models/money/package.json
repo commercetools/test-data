@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/money",
   "version": "4.4.0",
-  "description": "Data model for commercetools API CentPrecisionMoney",
+  "description": "Data model for commercetools API Money",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
