@@ -1,3 +1,4 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TProductDiscountDraft,
@@ -7,16 +8,22 @@ import type {
 const transformers = {
   default: Transformer<TProductDiscountDraft, TProductDiscountDraft>(
     'default',
-    { buildFields: [] }
+    { buildFields: ['value', 'name', 'description'] }
   ),
   rest: Transformer<TProductDiscountDraft, TProductDiscountDraft>('rest', {
-    buildFields: [],
+    buildFields: ['value', 'name', 'description'],
   }),
   graphql: Transformer<TProductDiscountDraft, TProductDiscountDraftGraphql>(
     'graphql',
     {
-      buildFields: [],
-      addFields: () => ({ __typename: 'MoneyInput' }),
+      buildFields: ['value'],
+      addFields: ({ fields }) => ({
+        nameAllLocales: LocalizedString.toLocalizedField(fields.name),
+        descriptionAllLocales: LocalizedString.toLocalizedField(
+          fields.description
+        ),
+        __typename: 'ProductDiscountDraft',
+      }),
     }
   ),
 };

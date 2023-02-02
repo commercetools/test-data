@@ -9,7 +9,23 @@ describe('builder', () => {
     ...createBuilderSpec<TProductDiscountDraft, TProductDiscountDraft>(
       'default',
       ProductDiscountDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        key: expect.any(String),
+        name: expect.objectContaining({
+          en: expect.any(String),
+        }),
+        description: expect.objectContaining({
+          en: expect.any(String),
+        }),
+        value: expect.objectContaining({
+          type: expect.any(String),
+        }),
+        predicate: '1=1',
+        sortOrder: expect.any(String),
+        isActive: expect.any(Boolean),
+        validFrom: expect.any(String),
+        validUntil: expect.any(String),
+      })
     )
   );
 
@@ -17,7 +33,23 @@ describe('builder', () => {
     ...createBuilderSpec<TProductDiscountDraft, TProductDiscountDraft>(
       'rest',
       ProductDiscountDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        key: expect.any(String),
+        name: expect.objectContaining({
+          en: expect.any(String),
+        }),
+        description: expect.objectContaining({
+          en: expect.any(String),
+        }),
+        value: expect.objectContaining({
+          type: expect.any(String),
+        }),
+        predicate: '1=1',
+        sortOrder: expect.any(String),
+        isActive: expect.any(Boolean),
+        validFrom: expect.any(String),
+        validUntil: expect.any(String),
+      })
     )
   );
 
@@ -26,6 +58,29 @@ describe('builder', () => {
       'graphql',
       ProductDiscountDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        value: expect.objectContaining({
+          type: expect.any(String),
+        }),
+        predicate: '1=1',
+        sortOrder: expect.any(String),
+        isActive: expect.any(Boolean),
+        validFrom: expect.any(String),
+        validUntil: expect.any(String),
         __typename: 'ProductDiscountDraft',
       })
     )
