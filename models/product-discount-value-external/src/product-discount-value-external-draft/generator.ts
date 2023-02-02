@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueExternalDraft } from './types';
+import { TProductDiscountValueExternalDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalueexternaldraft
 

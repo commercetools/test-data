@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
   TCentPrecisionMoneyDraft,
   TCentPrecisionMoneyDraftGraphql,
-} from './types';
+} from '../types';
 import * as CentPrecisionMoneyDraft from '.';
 
 describe('builder', () => {

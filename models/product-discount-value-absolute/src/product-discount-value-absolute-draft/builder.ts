@@ -4,7 +4,7 @@ import transformers from './transformers';
 import type {
   TCreateProductDiscountValueAbsoluteDraftBuilder,
   TProductDiscountValueAbsoluteDraft,
-} from './types';
+} from '../types';
 
 const Model: TCreateProductDiscountValueAbsoluteDraftBuilder = () =>
   Builder<TProductDiscountValueAbsoluteDraft>({

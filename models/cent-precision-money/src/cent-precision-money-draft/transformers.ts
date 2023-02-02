@@ -2,7 +2,7 @@ import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCentPrecisionMoneyDraft,
   TCentPrecisionMoneyDraftGraphql,
-} from './types';
+} from '../types';
 
 const transformers = {
   default: Transformer<TCentPrecisionMoneyDraft, TCentPrecisionMoneyDraft>(

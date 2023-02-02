@@ -2,7 +2,7 @@ import { Transformer } from '@commercetools-test-data/core';
 import type {
   TProductDiscountValueRelativeDraft,
   TProductDiscountValueRelativeDraftGraphql,
-} from './types';
+} from '../types';
 
 const transformers = {
   default: Transformer<

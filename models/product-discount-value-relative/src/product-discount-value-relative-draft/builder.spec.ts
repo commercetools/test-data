@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
   TProductDiscountValueRelativeDraft,
   TProductDiscountValueRelativeDraftGraphql,
-} from './types';
+} from '../types';
 import * as ProductDiscountValueRelativeDraft from '.';
 
 describe('builder', () => {

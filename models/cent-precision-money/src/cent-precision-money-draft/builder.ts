@@ -4,7 +4,7 @@ import transformers from './transformers';
 import type {
   TCreateCentPrecisionMoneyDraftBuilder,
   TCentPrecisionMoneyDraft,
-} from './types';
+} from '../types';
 
 const Model: TCreateCentPrecisionMoneyDraftBuilder = () =>
   Builder<TCentPrecisionMoneyDraft>({

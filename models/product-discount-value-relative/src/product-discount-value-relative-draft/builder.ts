@@ -4,7 +4,7 @@ import transformers from './transformers';
 import type {
   TCreateProductDiscountValueRelativeDraftBuilder,
   TProductDiscountValueRelativeDraft,
-} from './types';
+} from '../types';
 
 const Model: TCreateProductDiscountValueRelativeDraftBuilder = () =>
   Builder<TProductDiscountValueRelativeDraft>({
