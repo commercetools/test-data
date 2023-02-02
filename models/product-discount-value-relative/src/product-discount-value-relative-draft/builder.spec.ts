@@ -1,0 +1,53 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import {
+  TProductDiscountValueRelativeDraft,
+  TProductDiscountValueRelativeDraftGraphql,
+} from '../types';
+import * as ProductDiscountValueRelativeDraft from '.';
+
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<
+      TProductDiscountValueRelativeDraft,
+      TProductDiscountValueRelativeDraft
+    >(
+      'default',
+      ProductDiscountValueRelativeDraft.random(),
+      expect.objectContaining({
+        type: 'relative',
+        permyriad: expect.any(Number),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<
+      TProductDiscountValueRelativeDraft,
+      TProductDiscountValueRelativeDraft
+    >(
+      'rest',
+      ProductDiscountValueRelativeDraft.random(),
+      expect.objectContaining({
+        type: 'relative',
+        permyriad: expect.any(Number),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<
+      TProductDiscountValueRelativeDraft,
+      TProductDiscountValueRelativeDraftGraphql
+    >(
+      'graphql',
+      ProductDiscountValueRelativeDraft.random(),
+      expect.objectContaining({
+        type: 'relative',
+        permyriad: expect.any(Number),
+        __typename: 'ProductDiscountValueRelativeDraft',
+      })
+    )
+  );
+});
