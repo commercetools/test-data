@@ -1,6 +1,16 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TAttributeType } from './types';
-import { typeWithNoAdditionalFieldsNames } from './constants';
+
+const typeWithNoAdditionalFieldsNames = [
+  'boolean',
+  'text',
+  'ltext',
+  'number',
+  'money',
+  'date',
+  'time',
+  'datetime',
+];
 
 // https://docs.commercetools.com/api/projects/productTypes#attributetype
 
