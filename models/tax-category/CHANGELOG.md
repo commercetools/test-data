@@ -1,5 +1,15 @@
 # @commercetools-test-data/tax-category
 
+## 4.5.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.5.0
+  - @commercetools-test-data/commons@4.5.0
+  - @commercetools-test-data/tax-rate@4.5.0
+  - @commercetools-test-data/utils@4.5.0
+
 ## 4.4.0
 
 ### Minor Changes
