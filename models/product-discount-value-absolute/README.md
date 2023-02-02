@@ -19,8 +19,6 @@ import type {
 } from '@commercetools-test-data/product-discount-value-absolute';
 import * as ProductDiscountValueAbsolute from '@commercetools-test-data/product-discount-value-absolute';
 
-const productDiscountValueAbsolute =
-  ProductDiscountValueAbsolute.random().build<TProductDiscountValueAbsolute>();
-const productDiscountValueAbsoluteDraft =
-  ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random().build<TProductDiscountValueAbsoluteDraft>();
+const productDiscountValueAbsolute = ProductDiscountValueAbsolute.random().build<TProductDiscountValueAbsolute>();
+const productDiscountValueAbsoluteDraft = ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random().build<TProductDiscountValueAbsoluteDraft>();
 ```
