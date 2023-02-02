@@ -1,29 +1,29 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type {
-  TProductDiscountValueRelativeDraft,
-  TProductDiscountValueRelativeDraftGraphql,
+  TProductDiscountValueAbsoluteDraft,
+  TProductDiscountValueAbsoluteDraftGraphql,
 } from './types';
 
 const transformers = {
   default: Transformer<
-    TProductDiscountValueRelativeDraft,
-    TProductDiscountValueRelativeDraft
+    TProductDiscountValueAbsoluteDraft,
+    TProductDiscountValueAbsoluteDraft
   >('default', {
-    buildFields: [],
+    buildFields: ['money'],
   }),
   rest: Transformer<
-    TProductDiscountValueRelativeDraft,
-    TProductDiscountValueRelativeDraft
+    TProductDiscountValueAbsoluteDraft,
+    TProductDiscountValueAbsoluteDraft
   >('rest', {
-    buildFields: [],
+    buildFields: ['money'],
   }),
   graphql: Transformer<
-    TProductDiscountValueRelativeDraft,
-    TProductDiscountValueRelativeDraftGraphql
+    TProductDiscountValueAbsoluteDraft,
+    TProductDiscountValueAbsoluteDraftGraphql
   >('graphql', {
-    buildFields: [],
+    buildFields: ['money'],
     addFields: () => ({
-      __typename: 'ProductDiscountValueRelativeDraft',
+      __typename: 'ProductDiscountValueAbsoluteDraft',
     }),
   }),
 };

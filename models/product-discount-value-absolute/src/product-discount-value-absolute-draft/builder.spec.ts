@@ -2,51 +2,63 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
-  TProductDiscountValueRelativeDraft,
-  TProductDiscountValueRelativeDraftGraphql,
+  TProductDiscountValueAbsoluteDraft,
+  TProductDiscountValueAbsoluteDraftGraphql,
 } from './types';
-import * as ProductDiscountValueRelative from '.';
+import * as ProductDiscountValueAbsolute from '.';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<
-      TProductDiscountValueRelativeDraft,
-      TProductDiscountValueRelativeDraft
+      TProductDiscountValueAbsoluteDraft,
+      TProductDiscountValueAbsoluteDraft
     >(
       'default',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueAbsolute.random(),
       expect.objectContaining({
-        type: 'relative',
-        permyriad: expect.any(Number),
+        type: 'absolute',
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            centAmount: expect.any(Number),
+          }),
+        ]),
       })
     )
   );
 
   it(
     ...createBuilderSpec<
-      TProductDiscountValueRelativeDraft,
-      TProductDiscountValueRelativeDraft
+      TProductDiscountValueAbsoluteDraft,
+      TProductDiscountValueAbsoluteDraft
     >(
       'rest',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueAbsolute.random(),
       expect.objectContaining({
-        type: 'relative',
-        permyriad: expect.any(Number),
+        type: 'absolute',
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            centAmount: expect.any(Number),
+          }),
+        ]),
       })
     )
   );
 
   it(
     ...createBuilderSpec<
-      TProductDiscountValueRelativeDraft,
-      TProductDiscountValueRelativeDraftGraphql
+      TProductDiscountValueAbsoluteDraft,
+      TProductDiscountValueAbsoluteDraftGraphql
     >(
       'graphql',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueAbsolute.random(),
       expect.objectContaining({
-        type: 'relative',
-        permyriad: expect.any(Number),
-        __typename: 'ProductDiscountValueRelativeDraft',
+        type: 'absolute',
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            centAmount: expect.any(Number),
+          }),
+        ]),
+        __typename: 'ProductDiscountValueAbsoluteDraft',
       })
     )
   );

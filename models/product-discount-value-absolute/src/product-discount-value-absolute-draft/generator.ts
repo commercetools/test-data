@@ -1,17 +1,13 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueRelativeDraft } from './types';
+import { TProductDiscountValueAbsoluteDraft } from './types';
+import * as Money from '@commercetools-test-data/money';
 
-// https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvaluerelativedraft
+// https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalueabsolutedraft
 
-const generator = Generator<TProductDiscountValueRelativeDraft>({
+const generator = Generator<TProductDiscountValueAbsoluteDraft>({
   fields: {
-    type: 'relative',
-    permyriad: fake((f) =>
-      f.datatype.number({
-        min: 0,
-        max: 10000,
-      })
-    ),
+    type: 'absolute',
+    money: fake(() => [Money.random()]),
   },
 });
 

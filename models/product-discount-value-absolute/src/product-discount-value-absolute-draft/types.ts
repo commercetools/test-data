@@ -1,15 +1,15 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { ProductDiscountValueRelativeDraft } from '@commercetools/platform-sdk';
+import { ProductDiscountValueAbsoluteDraft } from '@commercetools/platform-sdk';
 
-export type TProductDiscountValueRelativeDraft =
-  ProductDiscountValueRelativeDraft;
+export type TProductDiscountValueAbsoluteDraft =
+  ProductDiscountValueAbsoluteDraft;
 
-export type TProductDiscountValueRelativeDraftGraphql =
-  TProductDiscountValueRelativeDraft & {
-    __typename: 'ProductDiscountValueRelativeDraft';
+export type TProductDiscountValueAbsoluteDraftGraphql =
+  TProductDiscountValueAbsoluteDraft & {
+    __typename: 'ProductDiscountValueAbsoluteDraft';
   };
 
-export type TProductDiscountValueRelativeDraftBuilder =
-  TBuilder<TProductDiscountValueRelativeDraft>;
-export type TCreateProductDiscountValueRelativeDraftBuilder =
-  () => TProductDiscountValueRelativeDraftBuilder;
+export type TProductDiscountValueAbsoluteDraftBuilder =
+  TBuilder<TProductDiscountValueAbsoluteDraft>;
+export type TCreateProductDiscountValueAbsoluteDraftBuilder =
+  () => TProductDiscountValueAbsoluteDraftBuilder;
