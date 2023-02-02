@@ -15,7 +15,7 @@ $ yarn add -D @commercetools-test-data/product-discount-value-relative
 ```ts
 import type {
   TProductDiscountValueRelative,
-  TProductDiscountValueRelative,
+  TProductDiscountValueRelativeDraft,
 } from '@commercetools-test-data/product-discount-value-relative';
 import * as ProductDiscountValueRelative from '@commercetools-test-data/product-discount-value-relative';
 

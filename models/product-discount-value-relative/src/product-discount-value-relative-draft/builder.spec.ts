@@ -5,7 +5,7 @@ import {
   TProductDiscountValueRelativeDraft,
   TProductDiscountValueRelativeDraftGraphql,
 } from './types';
-import * as ProductDiscountValueRelative from '.';
+import * as ProductDiscountValueRelativeDraft from '.';
 
 describe('builder', () => {
   it(
@@ -14,7 +14,7 @@ describe('builder', () => {
       TProductDiscountValueRelativeDraft
     >(
       'default',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueRelativeDraft.random(),
       expect.objectContaining({
         type: 'relative',
         permyriad: expect.any(Number),
@@ -28,7 +28,7 @@ describe('builder', () => {
       TProductDiscountValueRelativeDraft
     >(
       'rest',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueRelativeDraft.random(),
       expect.objectContaining({
         type: 'relative',
         permyriad: expect.any(Number),
@@ -42,7 +42,7 @@ describe('builder', () => {
       TProductDiscountValueRelativeDraftGraphql
     >(
       'graphql',
-      ProductDiscountValueRelative.random(),
+      ProductDiscountValueRelativeDraft.random(),
       expect.objectContaining({
         type: 'relative',
         permyriad: expect.any(Number),

@@ -15,12 +15,8 @@ $ yarn add -D @commercetools-test-data/cent-precision-money
 ```ts
 import type {
   TCentPrecisionMoney,
-  TCentPrecisionMoneyDraft,
 } from '@commercetools-test-data/cent-precision-money';
 import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
 
-const centPrecisionMoney =
-  CentPrecisionMoney.random().build<TCentPrecisionMoney>();
-const centPrecisionMoneyDraft =
-  CentPrecisionMoney.CentPrecisionMoneyDraft.random().build<TCentPrecisionMoneyDraft>();
+const centPrecisionMoney = CentPrecisionMoney.random().build<TCentPrecisionMoney>();
 ```

@@ -15,7 +15,7 @@ $ yarn add -D @commercetools-test-data/product-discount-value-external
 ```ts
 import type {
   TProductDiscountValueExternal,
-  TProductDiscountValueExternal,
+  TProductDiscountValueExternalDraft,
 } from '@commercetools-test-data/product-discount-value-external';
 import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount-value-external';
 

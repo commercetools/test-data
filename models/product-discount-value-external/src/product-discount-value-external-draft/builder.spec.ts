@@ -5,7 +5,7 @@ import {
   TProductDiscountValueExternalDraft,
   TProductDiscountValueExternalDraftGraphql,
 } from './types';
-import * as ProductDiscountValueExternal from '.';
+import * as ProductDiscountValueExternalDraft from '.';
 
 describe('builder', () => {
   it(
@@ -14,7 +14,7 @@ describe('builder', () => {
       TProductDiscountValueExternalDraft
     >(
       'default',
-      ProductDiscountValueExternal.random(),
+      ProductDiscountValueExternalDraft.random(),
       expect.objectContaining({
         type: 'external',
       })
@@ -27,7 +27,7 @@ describe('builder', () => {
       TProductDiscountValueExternalDraft
     >(
       'rest',
-      ProductDiscountValueExternal.random(),
+      ProductDiscountValueExternalDraft.random(),
       expect.objectContaining({
         type: 'external',
       })
@@ -40,7 +40,7 @@ describe('builder', () => {
       TProductDiscountValueExternalDraftGraphql
     >(
       'graphql',
-      ProductDiscountValueExternal.random(),
+      ProductDiscountValueExternalDraft.random(),
       expect.objectContaining({
         type: 'external',
         __typename: 'ProductDiscountValueExternalDraft',

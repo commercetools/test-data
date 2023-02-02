@@ -5,7 +5,7 @@ import {
   TProductDiscountValueAbsoluteDraft,
   TProductDiscountValueAbsoluteDraftGraphql,
 } from './types';
-import * as ProductDiscountValueAbsolute from '.';
+import * as ProductDiscountValueAbsoluteDraft from '.';
 
 describe('builder', () => {
   it(
@@ -14,7 +14,7 @@ describe('builder', () => {
       TProductDiscountValueAbsoluteDraft
     >(
       'default',
-      ProductDiscountValueAbsolute.random(),
+      ProductDiscountValueAbsoluteDraft.random(),
       expect.objectContaining({
         type: 'absolute',
         money: expect.arrayContaining([
@@ -32,7 +32,7 @@ describe('builder', () => {
       TProductDiscountValueAbsoluteDraft
     >(
       'rest',
-      ProductDiscountValueAbsolute.random(),
+      ProductDiscountValueAbsoluteDraft.random(),
       expect.objectContaining({
         type: 'absolute',
         money: expect.arrayContaining([
@@ -50,7 +50,7 @@ describe('builder', () => {
       TProductDiscountValueAbsoluteDraftGraphql
     >(
       'graphql',
-      ProductDiscountValueAbsolute.random(),
+      ProductDiscountValueAbsoluteDraft.random(),
       expect.objectContaining({
         type: 'absolute',
         money: expect.arrayContaining([
