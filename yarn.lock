@@ -1812,9 +1812,9 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1826,24 +1826,24 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/cent-precision-money@4.4.0, @commercetools-test-data/cent-precision-money@workspace:models/cent-precision-money":
+"@commercetools-test-data/cent-precision-money@4.5.0, @commercetools-test-data/cent-precision-money@workspace:models/cent-precision-money":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/cent-precision-money@workspace:models/cent-precision-money"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1855,28 +1855,28 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/commons@4.4.0, @commercetools-test-data/commons@workspace:models/commons":
+"@commercetools-test-data/commons@4.5.0, @commercetools-test-data/commons@workspace:models/commons":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/commons@workspace:models/commons"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/core": 4.4.0
+    "@commercetools-test-data/core": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/core@4.4.0, @commercetools-test-data/core@workspace:core":
+"@commercetools-test-data/core@4.5.0, @commercetools-test-data/core@workspace:core":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/core@workspace:core"
   dependencies:
@@ -1894,23 +1894,23 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/money@4.4.0, @commercetools-test-data/money@workspace:models/money":
+"@commercetools-test-data/money@4.5.0, @commercetools-test-data/money@workspace:models/money":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/money@workspace:models/money"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1955,11 +1955,11 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/cent-precision-money": 4.4.0
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/money": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/cent-precision-money": 4.5.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/money": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1971,9 +1971,9 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1985,9 +1985,9 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
@@ -1999,30 +1999,30 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/tax-rate": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/tax-rate": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/tax-rate@4.4.0, @commercetools-test-data/tax-rate@workspace:models/tax-rate":
+"@commercetools-test-data/tax-rate@4.5.0, @commercetools-test-data/tax-rate@workspace:models/tax-rate":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/tax-rate@workspace:models/tax-rate"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/utils@4.4.0, @commercetools-test-data/utils@workspace:utils":
+"@commercetools-test-data/utils@4.5.0, @commercetools-test-data/utils@workspace:utils":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/utils@workspace:utils"
   dependencies:
@@ -2038,9 +2038,9 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.4.0
-    "@commercetools-test-data/core": 4.4.0
-    "@commercetools-test-data/utils": 4.4.0
+    "@commercetools-test-data/commons": 4.5.0
+    "@commercetools-test-data/core": 4.5.0
+    "@commercetools-test-data/utils": 4.5.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
     lodash: ^4.17.21
