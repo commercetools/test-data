@@ -2,4 +2,4 @@
 '@commercetools-test-data/attribute-type': minor
 ---
 
-Add `attribute-type`
+Add `attribute-type` model.
