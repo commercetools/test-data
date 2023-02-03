@@ -1,5 +1,5 @@
-import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { Address, ClientLogging } from '@commercetools-test-data/commons';
+import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import type { Channel } from '@commercetools/platform-sdk';
 import { roles } from './constants';

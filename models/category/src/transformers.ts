@@ -1,5 +1,5 @@
-import { Transformer } from '@commercetools-test-data/core';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import { Transformer } from '@commercetools-test-data/core';
 import type { TCategory, TCategoryGraphql } from './types';
 
 const transformers = {

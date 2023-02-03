@@ -1,10 +1,10 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TChannel, TChannelGraphql } from './types';
-import { roles } from './constants';
-import * as Channel from '.';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { roles } from './constants';
+import type { TChannel, TChannelGraphql } from './types';
+import * as Channel from '.';
 
 describe('builder', () => {
   it(

@@ -1,12 +1,12 @@
 import { sequence, fake } from './@jackfranklin/test-data-bot';
+import Builder from './builder';
+import Generator from './generator';
 import {
   buildField,
   buildFields,
   buildGraphqlList,
   buildRestList,
 } from './helpers';
-import Builder from './builder';
-import Generator from './generator';
 import Transformer from './transformer';
 
 type TestUser = {

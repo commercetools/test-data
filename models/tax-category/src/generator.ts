@@ -1,8 +1,8 @@
-import { sequence, fake, Generator } from '@commercetools-test-data/core';
-import { TTaxCategory } from './types';
 import { ClientLogging } from '@commercetools-test-data/commons';
-import { createRelatedDates } from '@commercetools-test-data/utils';
+import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { random } from '@commercetools-test-data/tax-rate';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import { TTaxCategory } from './types';
 
 //https://docs.commercetools.com/api/projects/taxCategories#taxcategory
 

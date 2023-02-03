@@ -1,6 +1,6 @@
-import withInventorySupplyRole from './with-inventory-supply-role';
 import { roles } from '../../constants';
 import { TChannelDraft } from '../../types';
+import withInventorySupplyRole from './with-inventory-supply-role';
 
 describe('with inventory supply role', () => {
   it('should have InventorySupply only role', () => {

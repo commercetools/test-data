@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueAbsoluteDraft } from '../types';
 import * as Money from '@commercetools-test-data/money';
+import { TProductDiscountValueAbsoluteDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalueabsolutedraft
 
