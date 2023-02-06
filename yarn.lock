@@ -1878,6 +1878,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@commercetools-test-data/cart-discount-value-fixed@workspace:models/cart-discount-value-fixed":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/cart-discount-value-fixed@workspace:models/cart-discount-value-fixed"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/cent-precision-money": 4.6.0
+    "@commercetools-test-data/commons": 4.6.0
+    "@commercetools-test-data/core": 4.6.0
+    "@commercetools-test-data/money": 4.6.0
+    "@commercetools-test-data/utils": 4.6.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
 "@commercetools-test-data/cart-discount-value-relative@workspace:models/cart-discount-value-relative":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/cart-discount-value-relative@workspace:models/cart-discount-value-relative"
