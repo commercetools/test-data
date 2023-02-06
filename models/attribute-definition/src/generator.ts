@@ -1,6 +1,6 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as AttributeType from '../../attribute-type';
-import { LocalizedString } from '../../commons';
 import { TAttributeDefinition } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributedefinition
