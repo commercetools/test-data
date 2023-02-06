@@ -1,7 +1,7 @@
-import type { TGeneratorResult } from './types';
 import type { BuildConfiguration } from './@jackfranklin/test-data-bot';
 
 import { build } from './@jackfranklin/test-data-bot';
+import type { TGeneratorResult } from './types';
 
 type TGeneratorOptions<Model> = {
   fields: BuildConfiguration<Model>['fields'];

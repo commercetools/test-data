@@ -1,5 +1,5 @@
-import omit from 'lodash/omit';
 import { Transformer } from '@commercetools-test-data/core';
+import omit from 'lodash/omit';
 import type { TReference, TReferenceGraphql, TReferenceRest } from './types';
 
 const transformers = {

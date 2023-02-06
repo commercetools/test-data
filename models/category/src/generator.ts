@@ -1,8 +1,8 @@
-import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import {
   ClientLogging,
   LocalizedString,
 } from '@commercetools-test-data/commons';
+import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import type { TCategory } from './types';
 

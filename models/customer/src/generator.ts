@@ -1,10 +1,10 @@
+import { Address, ClientLogging } from '@commercetools-test-data/commons';
 import {
   Generator,
   fake,
   sequence,
   oneOf,
 } from '@commercetools-test-data/core';
-import { Address, ClientLogging } from '@commercetools-test-data/commons';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TCustomer } from './types';
 

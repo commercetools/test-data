@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import type {
   TaxCategory,
   TaxCategoryDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TTaxCategory = TaxCategory;
 export type TTaxCategoryDraft = TaxCategoryDraft;

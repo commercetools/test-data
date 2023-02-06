@@ -1,5 +1,5 @@
-import { Generator, fake } from '@commercetools-test-data/core';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import { Generator, fake } from '@commercetools-test-data/core';
 import type { TCategoryDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/categories#categorydraft

@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TChannelDraft, TChannelDraftGraphql } from '../types';
 import { roles } from '../constants';
+import { TChannelDraft, TChannelDraftGraphql } from '../types';
 import * as ChannelDraft from './';
 
 describe('builder', () => {

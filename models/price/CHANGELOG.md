@@ -1,0 +1,2 @@
+# @commercetools-test-data/price
+

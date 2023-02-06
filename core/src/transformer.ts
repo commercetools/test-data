@@ -1,11 +1,10 @@
+import { buildField, buildFields } from './helpers';
 import type {
   TTransformer,
   TTransformerOptions,
   TBuilder,
   TTransformType,
 } from './types';
-
-import { buildField, buildFields } from './helpers';
 
 function Transformer<Model, TransformedModel>(
   transformType: TTransformType,

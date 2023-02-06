@@ -1,5 +1,5 @@
-import { Transformer } from '@commercetools-test-data/core';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import { Transformer } from '@commercetools-test-data/core';
 import type { TChannel, TChannelGraphql } from './types';
 
 const transformers = {

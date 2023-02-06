@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
-import generator from './generator';
-import transformers from './transformers';
 import type {
   TCreateTaxCategoryDraftBuilder,
   TTaxCategoryDraft,
 } from '../types';
+import generator from './generator';
+import transformers from './transformers';
 
 const Model: TCreateTaxCategoryDraftBuilder = () =>
   Builder<TTaxCategoryDraft>({

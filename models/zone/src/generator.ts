@@ -1,7 +1,7 @@
-import { sequence, fake, Generator } from '@commercetools-test-data/core';
-import { TZone } from './types';
 import { ClientLogging } from '@commercetools-test-data/commons';
+import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { TZone } from './types';
 
 //https://docs.commercetools.com/api/projects/zones#zone
 

@@ -1,3 +1,10 @@
+import {
+  isFunction,
+  isBuilderFunction,
+  isString,
+  omitMany,
+  pickMany,
+} from './helpers';
 import type {
   TBuilderMapStateFunction,
   TBuilderOptions,
@@ -6,14 +13,6 @@ import type {
   TPropertyBuilder,
   TPropertyFieldUpdater,
 } from './types';
-
-import {
-  isFunction,
-  isBuilderFunction,
-  isString,
-  omitMany,
-  pickMany,
-} from './helpers';
 
 // The Proxy constructor type does not differentiate between the target and the return type.
 // Therefore, we define a custom constructor that requires a different return type.

@@ -1,5 +1,5 @@
-import { fake, Generator } from '@commercetools-test-data/core';
 import { LocalizedString, Address } from '@commercetools-test-data/commons';
+import { fake, Generator } from '@commercetools-test-data/core';
 import { roles } from '../constants';
 import { TChannelDraft } from '../types';
 
