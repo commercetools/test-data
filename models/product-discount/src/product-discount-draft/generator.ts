@@ -8,7 +8,8 @@ import * as ProductDiscountValueExternal from '@commercetools-test-data/product-
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountdraft
 
-const [getOlderDate, getNewerDate] = createRelatedDates();
+// eslint-disable-next-line
+const [getValidFrom, _, getValidUntil] = createRelatedDates();
 
 const generator = Generator<TProductDiscountDraft>({
   fields: {
@@ -25,8 +26,8 @@ const generator = Generator<TProductDiscountDraft>({
     predicate: '1=1',
     sortOrder: fake((f) => String(Math.random())),
     isActive: fake((f) => f.datatype.boolean()),
-    validFrom: fake(getOlderDate),
-    validUntil: fake(getNewerDate),
+    validFrom: fake(getValidFrom),
+    validUntil: fake(getValidUntil),
   },
 });
 

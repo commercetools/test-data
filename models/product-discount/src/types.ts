@@ -1,4 +1,7 @@
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import {
+  TClientLoggingGraphql,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductDiscount,
@@ -10,6 +13,10 @@ export type TProductDiscountDraft = ProductDiscountDraft;
 
 export type TProductDiscountGraphql = TProductDiscount & {
   __typename: 'ProductDiscount';
+  createdBy: TClientLoggingGraphql;
+  lastModifiedBy: TClientLoggingGraphql;
+  nameAllLocales?: TLocalizedStringGraphql | null;
+  descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
 export type TProductDiscountDraftGraphql = TProductDiscountDraft & {
   __typename: 'ProductDiscountDraft';
