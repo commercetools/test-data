@@ -5,7 +5,7 @@ import { TReview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/projects/reviews#reviewdraft
+// https://docs.commercetools.com/api/projects/reviews#review
 
 const generator = Generator<TReview>({
   fields: {
