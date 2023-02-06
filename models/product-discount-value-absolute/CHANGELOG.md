@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-discount-value-absolute
 
+## 4.7.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.7.0
+  - @commercetools-test-data/cent-precision-money@4.7.0
+  - @commercetools-test-data/commons@4.7.0
+  - @commercetools-test-data/money@4.7.0
+  - @commercetools-test-data/utils@4.7.0
+
 ## 4.6.0
 
 ### Patch Changes
