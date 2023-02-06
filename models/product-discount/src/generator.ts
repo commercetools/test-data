@@ -1,13 +1,13 @@
-import { fake, Generator, sequence } from '@commercetools-test-data/core';
-import { TProductDiscount } from './types';
 import {
   ClientLogging,
   LocalizedString,
 } from '@commercetools-test-data/commons';
-import { createRelatedDates } from '@commercetools-test-data/utils';
+import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import * as ProductDiscountValueAbsolute from '@commercetools-test-data/product-discount-value-absolute';
-import * as ProductDiscountValueRelative from '@commercetools-test-data/product-discount-value-relative';
 import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount-value-external';
+import * as ProductDiscountValueRelative from '@commercetools-test-data/product-discount-value-relative';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import { TProductDiscount } from './types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscount
 
