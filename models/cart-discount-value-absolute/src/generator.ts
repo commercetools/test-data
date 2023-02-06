@@ -7,7 +7,7 @@ import { TCartDiscountValueAbsolute } from './types';
 const generator = Generator<TCartDiscountValueAbsolute>({
   fields: {
     type: 'absolute',
-    money: fake(() => CentPrecisionMoney.random()),
+    money: fake(() => [CentPrecisionMoney.random()]),
   },
 });
 

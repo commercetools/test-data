@@ -14,9 +14,11 @@ describe('builder', () => {
       CartDiscountValueFixed.random(),
       expect.objectContaining({
         type: 'fixed',
-        money: expect.objectContaining({
-          type: 'centPrecision',
-        }),
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            type: 'centPrecision',
+          }),
+        ]),
       })
     )
   );
@@ -27,9 +29,11 @@ describe('builder', () => {
       CartDiscountValueFixed.random(),
       expect.objectContaining({
         type: 'fixed',
-        money: expect.objectContaining({
-          type: 'centPrecision',
-        }),
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            type: 'centPrecision',
+          }),
+        ]),
       })
     )
   );
@@ -43,9 +47,11 @@ describe('builder', () => {
       CartDiscountValueFixed.random(),
       expect.objectContaining({
         type: 'fixed',
-        money: expect.objectContaining({
-          type: 'centPrecision',
-        }),
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            type: 'centPrecision',
+          }),
+        ]),
         __typename: 'CartDiscountValueFixed',
       })
     )

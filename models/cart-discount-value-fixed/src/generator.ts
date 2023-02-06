@@ -7,7 +7,7 @@ import { TCartDiscountValueFixed } from './types';
 const generator = Generator<TCartDiscountValueFixed>({
   fields: {
     type: 'fixed',
-    money: fake(() => CentPrecisionMoney.random()),
+    money: fake(() => [CentPrecisionMoney.random()]),
   },
 });
 
