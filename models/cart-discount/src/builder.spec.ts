@@ -116,13 +116,13 @@ describe('builder', () => {
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),
-          __typename: expect.any(String),
+          __typename: 'Initiator',
         }),
         lastModifiedAt: expect.any(String),
         lastModifiedBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),
-          __typename: expect.any(String),
+          __typename: 'Initiator',
         }),
         __typename: 'CartDiscount',
       })
