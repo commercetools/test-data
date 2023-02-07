@@ -1,0 +1,53 @@
+import * as CartDiscountValueAbsolute from '@commercetools-test-data/cart-discount-value-absolute';
+import * as CartDiscountValueFixed from '@commercetools-test-data/cart-discount-value-fixed';
+import * as CartDiscountValueGiftLineItem from '@commercetools-test-data/cart-discount-value-gift-line-item';
+import * as CartDiscountValueRelative from '@commercetools-test-data/cart-discount-value-relative';
+import {
+  ClientLogging,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import { fake, Generator, sequence } from '@commercetools-test-data/core';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import { TCartDiscount } from './types';
+
+// https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscount
+
+// eslint-disable-next-line
+const [getValidFrom, _, getValidUntil] = createRelatedDates();
+const [getCreatedAt, getLastModifiedAt] = createRelatedDates();
+
+const generator = Generator<TCartDiscount>({
+  fields: {
+    id: fake((f) => f.random.alphaNumeric(8)),
+    version: sequence(),
+    key: fake((f) => f.lorem.slug(2)),
+    name: fake(() => LocalizedString.random()),
+    description: fake(() => LocalizedString.random()),
+    value: fake((f) =>
+      f.helpers.arrayElement([
+        CartDiscountValueAbsolute.CartDiscountValueAbsoluteDraft.random(),
+        CartDiscountValueFixed.CartDiscountValueFixedDraft.random(),
+        CartDiscountValueGiftLineItem.CartDiscountValueGiftLineItemDraft.random(),
+        CartDiscountValueRelative.CartDiscountValueRelativeDraft.random(),
+      ])
+    ),
+    cartPredicate: '1=1',
+    target: null,
+    sortOrder: fake((f) => String(Math.random())),
+    isActive: fake((f) => f.datatype.boolean()),
+    validFrom: fake(getValidFrom),
+    validUntil: fake(getValidUntil),
+    requiresDiscountCode: fake((f) => f.datatype.boolean()),
+    references: [],
+    stackingMode: fake((f) =>
+      f.helpers.arrayElement(['Stacking', 'StopAfterThisDiscount'])
+    ),
+    custom: null,
+    createdAt: fake(getCreatedAt),
+    createdBy: fake(() => ClientLogging.random()),
+    lastModifiedAt: fake(getLastModifiedAt),
+    lastModifiedBy: fake(() => ClientLogging.random()),
+  },
+});
+
+export default generator;
