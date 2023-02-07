@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { ClientLogging } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 import type { TReference } from '../reference/types';
 
 export type TClientLogging = ClientLogging;

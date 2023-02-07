@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { TaxRate, TaxRateDraft } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TTaxRate = TaxRate;
 export type TTaxRateDraft = TaxRateDraft;

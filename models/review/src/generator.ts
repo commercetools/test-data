@@ -1,21 +1,33 @@
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
-import * as TaxRate from '@commercetools-test-data/tax-rate';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TTaxCategory } from './types';
-
-//https://docs.commercetools.com/api/projects/taxCategories#taxcategory
+import { TReview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const generator = Generator<TTaxCategory>({
+// https://docs.commercetools.com/api/projects/reviews#review
+
+const generator = Generator<TReview>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    name: fake((f) => f.lorem.words(2)),
-    description: fake((f) => f.lorem.sentence()),
-    rates: fake(() => [TaxRate.random()]),
+    uniquenessValue: null,
+    locale: fake((f) => f.random.locale()),
+    authorName: fake((f) => f.name.fullName()),
+    title: fake((f) => f.word.interjection()),
+    text: fake((f) => f.hacker.phrase()),
+    target: null,
+    includedInStatistics: fake((f) => f.datatype.boolean()),
+    rating: fake((f) =>
+      f.datatype.number({
+        min: -100,
+        max: 100,
+      })
+    ),
+    state: null,
+    customer: null,
+    custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
