@@ -1,9 +1,9 @@
+import type { Category, CategoryDraft } from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { Category, CategoryDraft } from '@commercetools/platform-sdk';
 
 //CategoryDraft
 export type TCategoryDraft = CategoryDraft;

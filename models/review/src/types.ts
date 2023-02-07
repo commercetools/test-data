@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { Review, ReviewDraft } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TReview = Review;
 export type TReviewDraft = ReviewDraft;

@@ -1,7 +1,7 @@
+import type { Price } from '@commercetools/platform-sdk';
 import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import type { Price } from '@commercetools/platform-sdk';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
