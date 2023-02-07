@@ -1,5 +1,14 @@
 # @commercetools-test-data/product-discount-value-external
 
+## 4.8.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.8.0
+  - @commercetools-test-data/commons@4.8.0
+  - @commercetools-test-data/utils@4.8.0
+
 ## 4.7.0
 
 ### Patch Changes
