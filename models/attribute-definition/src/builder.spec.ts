@@ -65,7 +65,7 @@ describe('builder', () => {
           __typename: expect.any(String),
         }),
         name: expect.any(String),
-        label: expect.arrayContaining([
+        labelAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: expect.any(String),
             locale: expect.any(String),
@@ -74,7 +74,7 @@ describe('builder', () => {
         ]),
         isRequired: expect.any(Boolean),
         attributeConstraint: expect.any(String),
-        inputTip: expect.arrayContaining([
+        inputTipAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: expect.any(String),
             locale: expect.any(String),
