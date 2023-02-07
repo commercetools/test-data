@@ -1862,6 +1862,66 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@commercetools-test-data/cart-discount-value-absolute@workspace:models/cart-discount-value-absolute":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/cart-discount-value-absolute@workspace:models/cart-discount-value-absolute"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/cent-precision-money": 4.7.0
+    "@commercetools-test-data/commons": 4.7.0
+    "@commercetools-test-data/core": 4.7.0
+    "@commercetools-test-data/money": 4.7.0
+    "@commercetools-test-data/utils": 4.7.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@commercetools-test-data/cart-discount-value-fixed@workspace:models/cart-discount-value-fixed":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/cart-discount-value-fixed@workspace:models/cart-discount-value-fixed"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/cent-precision-money": 4.7.0
+    "@commercetools-test-data/commons": 4.7.0
+    "@commercetools-test-data/core": 4.7.0
+    "@commercetools-test-data/money": 4.7.0
+    "@commercetools-test-data/utils": 4.7.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@commercetools-test-data/cart-discount-value-gift-line-item@workspace:models/cart-discount-value-gift-line-item":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/cart-discount-value-gift-line-item@workspace:models/cart-discount-value-gift-line-item"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.7.0
+    "@commercetools-test-data/core": 4.7.0
+    "@commercetools-test-data/utils": 4.7.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@commercetools-test-data/cart-discount-value-relative@workspace:models/cart-discount-value-relative":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/cart-discount-value-relative@workspace:models/cart-discount-value-relative"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.7.0
+    "@commercetools-test-data/core": 4.7.0
+    "@commercetools-test-data/utils": 4.7.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
 "@commercetools-test-data/category@workspace:models/category":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/category@workspace:models/category"
@@ -5094,9 +5154,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.284":
-  version: 1.4.287
-  resolution: "electron-to-chromium@npm:1.4.287"
-  checksum: 69f106357f9cc119ed6460460d77c9c15813d75d0f11cd52394342dd540764b1a62a95fc7b49a98f092a26d424d1a70352e47e695203e451f6f69f35813a4023
+  version: 1.4.286
+  resolution: "electron-to-chromium@npm:1.4.286"
+  checksum: 6b53e2aea63892cb4af85ea4ee5ed2b6d848713519987efcf4c1177a32e2fe6d04a7f591f5bcd1feab0b3c88890c6eaf65b6feb16c0e0319bf07e31de31930af
   languageName: node
   linkType: hard
 
