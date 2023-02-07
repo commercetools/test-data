@@ -22,7 +22,13 @@ const transformers = {
     ],
   }),
   graphql: Transformer<TProductDiscount, TProductDiscountGraphql>('graphql', {
-    buildFields: ['value', 'createdBy', 'lastModifiedBy'],
+    buildFields: [
+      'value',
+      'name',
+      'description',
+      'createdBy',
+      'lastModifiedBy',
+    ],
     addFields: ({ fields }) => ({
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       descriptionAllLocales: LocalizedString.toLocalizedField(
