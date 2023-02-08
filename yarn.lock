@@ -2099,7 +2099,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/product-discount-value-absolute@workspace:models/product-discount-value-absolute":
+"@commercetools-test-data/product-discount-value-absolute@4.8.0, @commercetools-test-data/product-discount-value-absolute@workspace:models/product-discount-value-absolute":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/product-discount-value-absolute@workspace:models/product-discount-value-absolute"
   dependencies:
@@ -2115,7 +2115,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/product-discount-value-external@workspace:models/product-discount-value-external":
+"@commercetools-test-data/product-discount-value-external@4.8.0, @commercetools-test-data/product-discount-value-external@workspace:models/product-discount-value-external":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/product-discount-value-external@workspace:models/product-discount-value-external"
   dependencies:
@@ -2129,7 +2129,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/product-discount-value-relative@workspace:models/product-discount-value-relative":
+"@commercetools-test-data/product-discount-value-relative@4.8.0, @commercetools-test-data/product-discount-value-relative@workspace:models/product-discount-value-relative":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/product-discount-value-relative@workspace:models/product-discount-value-relative"
   dependencies:
@@ -2137,6 +2137,23 @@ __metadata:
     "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/commons": 4.8.0
     "@commercetools-test-data/core": 4.8.0
+    "@commercetools-test-data/utils": 4.8.0
+    "@commercetools/platform-sdk": ^4.0.0
+    "@faker-js/faker": ^7.4.0
+  languageName: unknown
+  linkType: soft
+
+"@commercetools-test-data/product-discount@workspace:models/product-discount":
+  version: 0.0.0-use.local
+  resolution: "@commercetools-test-data/product-discount@workspace:models/product-discount"
+  dependencies:
+    "@babel/runtime": ^7.17.9
+    "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/commons": 4.8.0
+    "@commercetools-test-data/core": 4.8.0
+    "@commercetools-test-data/product-discount-value-absolute": 4.8.0
+    "@commercetools-test-data/product-discount-value-external": 4.8.0
+    "@commercetools-test-data/product-discount-value-relative": 4.8.0
     "@commercetools-test-data/utils": 4.8.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
