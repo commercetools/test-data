@@ -33,7 +33,10 @@ const generator = Generator<TCartDiscount>({
     ),
     cartPredicate: '1=1',
     target: null,
-    sortOrder: fake((f) => String(Math.random())),
+    // Faker `min` and `max` bounds are inclusive, we need between 0 and 1
+    sortOrder: fake((f) =>
+      String(f.datatype.number({ min: 0.00001, max: 0.99999 }))
+    ),
     isActive: fake((f) => f.datatype.boolean()),
     validFrom: fake(getValidFrom),
     validUntil: fake(getValidUntil),
