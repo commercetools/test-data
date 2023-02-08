@@ -22,6 +22,7 @@ describe('builder', () => {
         value: expect.objectContaining({
           type: expect.any(String),
         }),
+        target: null,
         cartPredicate: '1=1',
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),
@@ -30,6 +31,7 @@ describe('builder', () => {
         requiresDiscountCode: expect.any(Boolean),
         references: expect.arrayContaining([]),
         stackingMode: expect.any(String),
+        custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),

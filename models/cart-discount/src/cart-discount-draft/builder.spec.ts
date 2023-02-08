@@ -21,12 +21,14 @@ describe('builder', () => {
           type: expect.any(String),
         }),
         cartPredicate: '1=1',
+        target: null,
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
         requiresDiscountCode: expect.any(Boolean),
         stackingMode: expect.any(String),
+        custom: null,
       })
     )
   );
