@@ -5,6 +5,7 @@ import * as CartDiscountValueRelative from '@commercetools-test-data/cart-discou
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { stackingMode } from '../constants';
 import { TCartDiscountDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountdraft
@@ -36,7 +37,7 @@ const generator = Generator<TCartDiscountDraft>({
     validUntil: fake(getValidUntil),
     requiresDiscountCode: fake((f) => f.datatype.boolean()),
     stackingMode: fake((f) =>
-      f.helpers.arrayElement(['Stacking', 'StopAfterThisDiscount'])
+      f.helpers.arrayElement(Object.values(stackingMode))
     ),
     custom: null,
   },

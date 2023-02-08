@@ -8,6 +8,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { stackingMode } from './constants';
 import { TCartDiscount } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscount
@@ -43,7 +44,7 @@ const generator = Generator<TCartDiscount>({
     requiresDiscountCode: fake((f) => f.datatype.boolean()),
     references: [],
     stackingMode: fake((f) =>
-      f.helpers.arrayElement(['Stacking', 'StopAfterThisDiscount'])
+      f.helpers.arrayElement(Object.values(stackingMode))
     ),
     custom: null,
     createdAt: fake(getCreatedAt),
