@@ -14,9 +14,9 @@ const generator = Generator<TAttributeDefinitionDraft>({
     inputTip: fake(() => LocalizedString.random()),
     isRequired: fake((f) => f.datatype.boolean()),
     attributeConstraint: fake((f) =>
-      f.helpers.arrayElement(attributeConstraints)
+      f.helpers.arrayElement(Object.values(attributeConstraints))
     ),
-    inputHint: fake((f) => f.helpers.arrayElement(inputHints)),
+    inputHint: fake((f) => f.helpers.arrayElement(Object.values(inputHints))),
     isSearchable: fake((f) => f.datatype.boolean()),
   },
 });

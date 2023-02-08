@@ -1,10 +1,13 @@
-const attributeConstraints = [
-  'SameForAll',
-  'None',
-  'Unique',
-  'CombinationUnique',
-] as const;
+const attributeConstraints = {
+  SameForAll: 'SameForAll',
+  None: 'None',
+  Unique: 'Unique',
+  CombinationUnique: 'CombinationUnique',
+} as const;
 
-const inputHints = ['SingleLine', 'MultiLine'] as const;
+const inputHints = {
+  SingleLine: 'SingleLine',
+  MultiLine: 'MultiLine',
+} as const;
 
 export { attributeConstraints, inputHints };

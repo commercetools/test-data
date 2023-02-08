@@ -18,18 +18,8 @@ const transformers = {
     TAttributeDefinitionDraft,
     TAttributeDefinitionDraftGraphql
   >('graphql', {
-    buildFields: ['type'],
-    addFields: ({ fields }) => {
-      const labelAllLocales = LocalizedString.toLocalizedField(fields.label);
-      const inputTipAllLocales = LocalizedString.toLocalizedField(
-        fields.inputTip
-      );
-      return {
-        __typename: 'AttributeDefinitionDraft',
-        labelAllLocales,
-        inputTipAllLocales,
-      };
-    },
+    buildFields: ['label', 'inputTip', 'type'],
+    addFields: () => ({ __typename: 'AttributeDefinitionDraft' }),
   }),
 };
 
