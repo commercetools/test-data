@@ -1,4 +1,3 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TProductDiscountDraft,
@@ -17,11 +16,7 @@ const transformers = {
     'graphql',
     {
       buildFields: ['value', 'name', 'description'],
-      addFields: ({ fields }) => ({
-        nameAllLocales: LocalizedString.toLocalizedField(fields.name),
-        descriptionAllLocales: LocalizedString.toLocalizedField(
-          fields.description
-        ),
+      addFields: () => ({
         __typename: 'ProductDiscountDraft',
       }),
     }

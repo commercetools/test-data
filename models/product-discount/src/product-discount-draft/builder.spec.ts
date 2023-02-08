@@ -59,18 +59,16 @@ describe('builder', () => {
       ProductDiscountDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        nameAllLocales: expect.arrayContaining([
+        name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
         ]),
-        descriptionAllLocales: expect.arrayContaining([
+        description: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
         ]),
         value: expect.objectContaining({
