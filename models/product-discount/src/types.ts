@@ -20,8 +20,6 @@ export type TProductDiscountGraphql = TProductDiscount & {
 };
 export type TProductDiscountDraftGraphql = TProductDiscountDraft & {
   __typename: 'ProductDiscountDraft';
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
 
 export type TProductDiscountBuilder = TBuilder<TProductDiscount>;
