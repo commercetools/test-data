@@ -1,9 +1,8 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinitionDraft,
   TAttributeDefinitionDraftGraphql,
-} from './types';
+} from '../types';
 
 const transformers = {
   default: Transformer<TAttributeDefinitionDraft, TAttributeDefinitionDraft>(

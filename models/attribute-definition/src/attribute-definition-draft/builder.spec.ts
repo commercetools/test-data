@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
   TAttributeDefinitionDraft,
   TAttributeDefinitionDraftGraphql,
-} from './types';
+} from '../types';
 import * as AttributeDefinitionDraft from '.';
 
 describe('builder', () => {
