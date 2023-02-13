@@ -1,5 +1,11 @@
 # @commercetools-test-data/utils
 
+## 4.9.0
+
+### Patch Changes
+
+- [#193](https://github.com/commercetools/test-data/pull/193) [`8f9abe0`](https://github.com/commercetools/test-data/commit/8f9abe097d790a018e836d78b9982e5abba24980) Thanks [@jaikamat](https://github.com/jaikamat)! - remove copyright year from licenses
+
 ## 4.8.0
 
 ## 4.7.0

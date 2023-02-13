@@ -1,5 +1,16 @@
 # @commercetools-test-data/cart-discount-value-absolute
 
+## 4.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`8f9abe0`](https://github.com/commercetools/test-data/commit/8f9abe097d790a018e836d78b9982e5abba24980)]:
+  - @commercetools-test-data/cent-precision-money@4.9.0
+  - @commercetools-test-data/commons@4.9.0
+  - @commercetools-test-data/money@4.9.0
+  - @commercetools-test-data/utils@4.9.0
+  - @commercetools-test-data/core@4.9.0
+
 ## 4.8.0
 
 ### Minor Changes
