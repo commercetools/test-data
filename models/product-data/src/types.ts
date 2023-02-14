@@ -4,9 +4,9 @@ import {
   ProductVariant,
   SearchKeyword,
 } from '@commercetools/platform-sdk';
+import { TCategoryGraphql } from '@commercetools-test-data/category';
 import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCategoryGraphql } from '../../category/src';
 
 export type TProductData = ProductData;
 
