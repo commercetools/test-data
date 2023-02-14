@@ -2,7 +2,7 @@
 
 This package provides the data model for the commercetools platform `ProductData` type
 
-https://docs.commercetools.com/api/types#centprecisionmoney
+https://docs.commercetools.com/api/projects/products#productdata
 
 # Install
 
