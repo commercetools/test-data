@@ -13,7 +13,7 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         uniquenessValue: null,
-        locale: expect.any(String),
+        locale: null,
         authorName: expect.any(String),
         title: expect.any(String),
         text: expect.any(String),
@@ -33,7 +33,7 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         uniquenessValue: null,
-        locale: expect.any(String),
+        locale: null,
         authorName: expect.any(String),
         title: expect.any(String),
         text: expect.any(String),
@@ -54,7 +54,7 @@ describe('builder', () => {
         __typename: 'ReviewDraft',
         key: expect.any(String),
         uniquenessValue: null,
-        locale: expect.any(String),
+        locale: null,
         authorName: expect.any(String),
         title: expect.any(String),
         text: expect.any(String),
