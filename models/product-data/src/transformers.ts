@@ -34,15 +34,6 @@ const transformers = {
     ],
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
-    buildFields: [
-      'name',
-      'categories',
-      'description',
-      'slug',
-      'metaTitle',
-      'metaDescription',
-      'metaKeywords',
-    ],
     /**
      * We choose `replaceFields` because the type of the `categories` field differs
      * between REST and GraphQL, and it must be replaced.
