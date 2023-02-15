@@ -24,6 +24,8 @@ const transformers = {
       'metaTitle',
       'metaDescription',
       'metaKeywords',
+      'masterVariant',
+      'searchKeywords',
     ],
   }),
   rest: Transformer<TProductData, TProductData>('rest', {
@@ -35,6 +37,8 @@ const transformers = {
       'metaTitle',
       'metaDescription',
       'metaKeywords',
+      'masterVariant',
+      'searchKeywords',
     ],
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
