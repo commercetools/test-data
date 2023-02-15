@@ -8,7 +8,11 @@ import { TCategoryGraphql } from '@commercetools-test-data/category';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import { faker } from '@faker-js/faker';
-import type { TProductData, TProductDataGraphql } from './types';
+import type {
+  TCategoryOrderHintGraphql,
+  TProductData,
+  TProductDataGraphql,
+} from './types';
 
 const transformers = {
   default: Transformer<TProductData, TProductData>('default', {
@@ -54,6 +58,12 @@ const transformers = {
         fields.metaDescription
       );
       const categoryOrderHint = faker.lorem.word();
+      const categoryOrderHints: Array<TCategoryOrderHintGraphql> =
+        Object.entries(fields.categoryOrderHints!).map(([k, v]) => ({
+          categoryId: k,
+          orderHint: v,
+          __typename: 'CategoryOrderHint',
+        }));
       const categoriesRef: Array<CategoryReference> = [
         Reference.presets.category().buildGraphql(),
       ];
@@ -78,6 +88,7 @@ const transformers = {
         metaKeywordsAllLocales,
         metaDescriptionAllLocales,
         categoryOrderHint,
+        categoryOrderHints,
         categoriesRef,
         categories,
         searchKeyword,

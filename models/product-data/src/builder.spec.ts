@@ -104,7 +104,13 @@ describe('builder', () => {
           }),
         ]),
         categoryOrderHint: expect.any(String),
-        categoryOrderHints: expect.any(Object),
+        categoryOrderHints: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'CategoryOrderHint',
+            categoryId: expect.any(String),
+            orderHint: expect.any(String),
+          }),
+        ]),
         categoriesRef: expect.arrayContaining([
           {
             typeId: 'category',
