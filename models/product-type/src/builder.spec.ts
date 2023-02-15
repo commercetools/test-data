@@ -98,7 +98,6 @@ describe('builder', () => {
         id: expect.any(String),
         key: expect.any(String),
         version: expect.any(Number),
-        attributes: expect.any(Object),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
@@ -111,11 +110,14 @@ describe('builder', () => {
         }),
         name: expect.any(String),
         description: expect.any(String),
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'AttributeDefinition',
-          }),
-        ]),
+        attributeDefinitions: expect.objectContaining({
+          results: expect.arrayContaining([
+            expect.objectContaining({
+              __typename: 'AttributeDefinition',
+            }),
+          ]),
+          __typename: 'AttributeDefinitionResult',
+        }),
       })
     )
   );

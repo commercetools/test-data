@@ -1,6 +1,7 @@
 import {
   ProductType,
   ProductTypeDraft,
+  AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -10,7 +11,10 @@ export type TProductType = ProductType;
 export type TProductTypeDraft = ProductTypeDraft;
 
 export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
-  attributeDefinitions: Array<AttributeDefinitionDraft>;
+  attributeDefinitions: {
+    results: Array<AttributeDefinition>;
+    __typename: 'AttributeDefinitionResult';
+  };
   __typename: 'ProductTypeDefinition';
 };
 

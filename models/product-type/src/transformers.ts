@@ -1,4 +1,4 @@
-import * as AttributeDefinitionDraft from '@commercetools-test-data/attribute-definition';
+import * as AttributeDefinition from '@commercetools-test-data/attribute-definition';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TProductType, TProductTypeGraphql } from './types';
 
@@ -13,7 +13,11 @@ const transformers = {
     buildFields: ['createdBy', 'lastModifiedBy'],
     addFields: () => ({
       __typename: 'ProductTypeDefinition',
-      attributeDefinitions: [AttributeDefinitionDraft.random().buildGraphql()],
+      // should this pattern be generalized?
+      attributeDefinitions: {
+        results: [AttributeDefinition.random().buildGraphql()],
+        __typename: 'AttributeDefinitionResult',
+      },
     }),
   }),
 };
