@@ -14,7 +14,13 @@ describe('builder', () => {
         key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         name: expect.any(String),
         description: expect.any(String),
         attributes: expect.arrayContaining([
@@ -50,7 +56,13 @@ describe('builder', () => {
         key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         name: expect.any(String),
         description: expect.any(String),
         attributes: expect.arrayContaining([
@@ -82,42 +94,34 @@ describe('builder', () => {
       'graphql',
       ProductType.random(),
       expect.objectContaining({
-        __typename: 'ProductType',
+        __typename: 'ProductTypeDefinition',
         id: expect.any(String),
         key: expect.any(String),
         version: expect.any(Number),
+        attributes: expect.any(Object),
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
         lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
         name: expect.any(String),
         description: expect.any(String),
-        attributes: expect.arrayContaining([
-          expect.objectContaining({
-            type: expect.objectContaining({
-              name: expect.any(String),
-              __typename: expect.any(String),
+        attributeDefinitions: expect.objectContaining({
+          limit: 0,
+          offset: 0,
+          total: 0,
+          results: expect.arrayContaining([
+            expect.objectContaining({
+              __typename: 'AttributeDefinition',
             }),
-            name: expect.any(String),
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                __typename: 'LocalizedString',
-                locale: expect.any(String),
-                value: expect.any(String),
-              }),
-            ]),
-            isRequired: expect.any(Boolean),
-            attributeConstraint: expect.any(String),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                __typename: 'LocalizedString',
-                locale: expect.any(String),
-                value: expect.any(String),
-              }),
-            ]),
-            inputHint: expect.any(String),
-            isSearchable: expect.any(Boolean),
-            __typename: 'AttributeDefinition',
-          }),
-        ]),
+          ]),
+          __typename: 'AttributeDefinitionResult',
+        }),
       })
     )
   );

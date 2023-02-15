@@ -1,15 +1,33 @@
-import { ProductType, ProductTypeDraft } from '@commercetools/platform-sdk';
+import {
+  ProductType,
+  ProductTypeDraft,
+  AttributeDefinition,
+} from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductType = ProductType;
 
 export type TProductTypeDraft = ProductTypeDraft;
 
-export type TProductTypeGraphql = TProductType & {
-  __typename: 'ProductType';
+export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
+  attributeDefinitions: {
+    limit: Number;
+    offset: Number;
+    total: Number;
+    results: Array<AttributeDefinition>;
+    __typename: 'AttributeDefinitionResult';
+  };
+  __typename: 'ProductTypeDefinition';
 };
 
-export type TProductTypeDraftGraphql = TProductTypeDraft & {
+export type TProductTypeDraftGraphql = Omit<TProductTypeDraft, 'attributes'> & {
+  attributeDefinitions: {
+    limit: Number;
+    offset: Number;
+    total: Number;
+    results: Array<AttributeDefinition>;
+    __typename: 'AttributeDefinitionResult';
+  };
   __typename: 'ProductTypeDraft';
 };
 

@@ -78,34 +78,17 @@ describe('builder', () => {
         key: expect.any(String),
         name: expect.any(String),
         description: expect.any(String),
-        attributes: expect.arrayContaining([
-          expect.objectContaining({
-            type: expect.objectContaining({
-              name: expect.any(String),
-              __typename: expect.any(String),
+        attributeDefinitions: expect.objectContaining({
+          limit: 0,
+          offset: 0,
+          total: 0,
+          results: expect.arrayContaining([
+            expect.objectContaining({
+              __typename: 'AttributeDefinition',
             }),
-            name: expect.any(String),
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                __typename: 'LocalizedString',
-                locale: expect.any(String),
-                value: expect.any(String),
-              }),
-            ]),
-            isRequired: expect.any(Boolean),
-            attributeConstraint: expect.any(String),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                __typename: 'LocalizedString',
-                locale: expect.any(String),
-                value: expect.any(String),
-              }),
-            ]),
-            inputHint: expect.any(String),
-            isSearchable: expect.any(Boolean),
-            __typename: 'AttributeDefinitionDraft',
-          }),
-        ]),
+          ]),
+          __typename: 'AttributeDefinitionResult',
+        }),
       })
     )
   );
