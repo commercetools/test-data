@@ -1,4 +1,4 @@
-import * as AttributeDefinition from '@commercetools-test-data/attribute-definition';
+import * as AttributeDefinitionDraft from '@commercetools-test-data/attribute-definition';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TProductTypeDraft, TProductTypeDraftGraphql } from '../types';
 
@@ -12,13 +12,7 @@ const transformers = {
   graphql: Transformer<TProductTypeDraft, TProductTypeDraftGraphql>('graphql', {
     addFields: () => ({
       __typename: 'ProductTypeDraft',
-      attributeDefinitions: {
-        limit: 0,
-        offset: 0,
-        total: 0,
-        results: [AttributeDefinition.random().buildGraphql()],
-        __typename: 'AttributeDefinitionResult',
-      },
+      attributeDefinitions: [AttributeDefinitionDraft.random().buildGraphql()],
     }),
   }),
 };
