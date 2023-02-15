@@ -9,7 +9,7 @@ import { TAttributeDefinition } from './types';
 const generator = Generator<TAttributeDefinition>({
   fields: {
     type: fake(() => AttributeType.random()),
-    name: fake((f) => f.commerce.productName()),
+    name: fake((f) => f.lorem.slug(3)),
     label: fake(() => LocalizedString.random()),
     inputTip: fake(() => LocalizedString.random()),
     isRequired: fake((f) => f.datatype.boolean()),

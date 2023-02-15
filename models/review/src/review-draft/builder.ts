@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
+import type { TCreateReviewDraftBuilder, TReviewDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateReviewDraftBuilder, TReviewDraft } from '../types';
 
 const Model: TCreateReviewDraftBuilder = () =>
   Builder<TReviewDraft>({

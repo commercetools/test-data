@@ -7,7 +7,7 @@ const generator = Generator<TReviewDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,
-    locale: fake((f) => f.random.locale()),
+    locale: null,
     authorName: fake((f) => f.name.fullName()),
     title: fake((f) => f.word.interjection()),
     text: fake((f) => f.hacker.phrase()),
