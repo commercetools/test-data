@@ -1,18 +1,27 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TProductTypeDraft, TProductTypeDraftGraphql } from '../types';
+import {
+  TProductTypeDraftDefault,
+  TProductTypeDraft,
+  TProductTypeDraftGraphql,
+} from '../types';
 import * as ProductTypeDraft from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraft>(
+    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraftDefault>(
       'default',
       ProductTypeDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
         name: expect.any(String),
         description: expect.any(String),
+        attributeDefinitions: expect.arrayContaining([
+          expect.objectContaining({
+            attributeConstraint: expect.any(String),
+          }),
+        ]),
         attributes: expect.arrayContaining([
           expect.objectContaining({
             type: expect.objectContaining({ name: expect.any(String) }),
@@ -38,7 +47,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraft>(
+    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraft>(
       'rest',
       ProductTypeDraft.random(),
       expect.objectContaining({
@@ -70,7 +79,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraftGraphql>(
+    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraftGraphql>(
       'graphql',
       ProductTypeDraft.random(),
       expect.objectContaining({
@@ -80,7 +89,7 @@ describe('builder', () => {
         description: expect.any(String),
         attributeDefinitions: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'AttributeDefinition',
+            __typename: 'AttributeDefinitionDraft',
           }),
         ]),
       })

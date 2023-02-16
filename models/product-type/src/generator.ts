@@ -2,13 +2,13 @@ import * as AttributeDefinition from '@commercetools-test-data/attribute-definit
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TProductType } from './types';
+import { TProductTypeDefault } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/projects/productTypes#product-types
 
-const generator = Generator<TProductType>({
+const generator = Generator<TProductTypeDefault>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
     version: fake((f) => f.datatype.number()),
@@ -16,6 +16,7 @@ const generator = Generator<TProductType>({
     name: fake((f) => f.name.fullName()),
     description: fake((f) => f.random.words()),
     attributes: fake(() => [AttributeDefinition.random()]),
+    attributeDefinitions: fake(() => [AttributeDefinition.random()]),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

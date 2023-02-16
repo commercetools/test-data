@@ -14,12 +14,12 @@ $ yarn add -D @commercetools-test-data/product-type
 
 ```ts
 import type {
-  TProductType,
-  TProductTypeDraft,
+  TProductTypeDefault,
+  TProductTypeDraftDefault,
 } from '@commercetools-test-data/product-type';
 import * as ProductType from '@commercetools-test-data/product-type';
 
-const productType = ProductType.random().build<TProductType>();
+const productType = ProductType.random().build<TProductTypeDefault>();
 const productTypeDraft =
-  ProductType.ProductTypeDraft.random().build<TProductTypeDraft>();
+  ProductType.ProductTypeDraft.random().build<TProductTypeDraftDefault>();
 ```

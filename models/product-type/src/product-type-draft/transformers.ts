@@ -1,20 +1,31 @@
-import * as AttributeDefinitionDraft from '@commercetools-test-data/attribute-definition';
 import { Transformer } from '@commercetools-test-data/core';
-import type { TProductTypeDraft, TProductTypeDraftGraphql } from '../types';
+import type {
+  TProductTypeDraftDefault,
+  TProductTypeDraft,
+  TProductTypeDraftGraphql,
+} from '../types';
 
 const transformers = {
-  default: Transformer<TProductTypeDraft, TProductTypeDraft>('default', {
+  default: Transformer<TProductTypeDraftDefault, TProductTypeDraftDefault>(
+    'default',
+    {
+      buildFields: ['attributes', 'attributeDefinitions'],
+    }
+  ),
+  rest: Transformer<TProductTypeDraftDefault, TProductTypeDraft>('rest', {
     buildFields: ['attributes'],
+    removeFields: ['attributeDefinitions'],
   }),
-  rest: Transformer<TProductTypeDraft, TProductTypeDraft>('rest', {
-    buildFields: ['attributes'],
-  }),
-  graphql: Transformer<TProductTypeDraft, TProductTypeDraftGraphql>('graphql', {
-    addFields: () => ({
-      __typename: 'ProductTypeDraft',
-      attributeDefinitions: [AttributeDefinitionDraft.random().buildGraphql()],
-    }),
-  }),
+  graphql: Transformer<TProductTypeDraftDefault, TProductTypeDraftGraphql>(
+    'graphql',
+    {
+      buildFields: ['attributeDefinitions'],
+      removeFields: ['attributes'],
+      addFields: () => ({
+        __typename: 'ProductTypeDraft',
+      }),
+    }
+  ),
 };
 
 export default transformers;

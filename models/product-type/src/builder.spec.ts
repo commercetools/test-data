@@ -1,12 +1,16 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TProductType, TProductTypeGraphql } from './types';
+import {
+  TProductTypeDefault,
+  TProductType,
+  TProductTypeGraphql,
+} from './types';
 import * as ProductType from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductType, TProductType>(
+    ...createBuilderSpec<TProductTypeDefault, TProductTypeDefault>(
       'default',
       ProductType.random(),
       expect.objectContaining({
@@ -43,12 +47,17 @@ describe('builder', () => {
             isSearchable: expect.any(Boolean),
           }),
         ]),
+        attributeDefinitions: expect.arrayContaining([
+          expect.objectContaining({
+            attributeConstraint: expect.any(String),
+          }),
+        ]),
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TProductType, TProductType>(
+    ...createBuilderSpec<TProductTypeDefault, TProductType>(
       'rest',
       ProductType.random(),
       expect.objectContaining({
@@ -90,7 +99,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductType, TProductTypeGraphql>(
+    ...createBuilderSpec<TProductTypeDefault, TProductTypeGraphql>(
       'graphql',
       ProductType.random(),
       expect.objectContaining({
@@ -110,14 +119,11 @@ describe('builder', () => {
         }),
         name: expect.any(String),
         description: expect.any(String),
-        attributeDefinitions: expect.objectContaining({
-          results: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: 'AttributeDefinition',
-            }),
-          ]),
-          __typename: 'AttributeDefinitionResult',
-        }),
+        attributeDefinitions: expect.arrayContaining([
+          expect.objectContaining({
+            attributeConstraint: expect.any(String),
+          }),
+        ]),
       })
     )
   );

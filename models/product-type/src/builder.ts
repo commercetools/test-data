@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import type { TProductType, TCreateProductTypeBuilder } from './types';
+import type { TCreateProductTypeBuilder, TProductTypeDefault } from './types';
 
 const Model: TCreateProductTypeBuilder = () =>
-  Builder<TProductType>({
+  Builder<TProductTypeDefault>({
     generator,
     transformers,
   });
