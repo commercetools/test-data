@@ -7,6 +7,10 @@ const transformers = {
   }),
   rest: Transformer<TAttributeDefault, TAttribute>('rest', {
     buildFields: [],
+    replaceFields: ({ fields }) => ({
+      name: fields.name,
+      value: fields.value,
+    }),
   }),
   graphql: Transformer<TAttributeDefault, TAttributeGraphql>('graphql', {
     buildFields: ['attributeDefinition'],
