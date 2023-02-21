@@ -8,8 +8,8 @@ const hub = () =>
     .address(undefined)
     .geoLocation(undefined)
     .custom(undefined)
-    .description(LocalizedString.presets.empty().en('Hub'))
-    .name(LocalizedString.presets.empty().en('Hub'))
+    .description(LocalizedString.presets.empty()['en-US']('Hub'))
+    .name(LocalizedString.presets.empty()['en-US']('Hub'))
     .roles([roles.ProductDistribution, roles.InventorySupply]);
 
 export default hub;

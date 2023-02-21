@@ -8,8 +8,8 @@ const storeOther = () =>
     .address(undefined)
     .geoLocation(undefined)
     .custom(undefined)
-    .description(LocalizedString.presets.empty().en('Store Other'))
-    .name(LocalizedString.presets.empty().en('Store Other'))
+    .description(LocalizedString.presets.empty()['en-US']('Store Other'))
+    .name(LocalizedString.presets.empty()['en-US']('Store Other'))
     .roles([roles.ProductDistribution]);
 
 export default storeOther;

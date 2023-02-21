@@ -11,14 +11,16 @@ describe('store-other channel', () => {
         "custom": undefined,
         "description": {
           "de": undefined,
-          "en": "Store Other",
+          "en": undefined,
+          "en-US": "Store Other",
           "fr": undefined,
         },
         "geoLocation": undefined,
         "key": "store_other",
         "name": {
           "de": undefined,
-          "en": "Store Other",
+          "en": undefined,
+          "en-US": "Store Other",
           "fr": undefined,
         },
         "roles": [
@@ -39,7 +41,7 @@ describe('store-other channel', () => {
         "description": [
           {
             "__typename": "LocalizedString",
-            "locale": "en",
+            "locale": "en-US",
             "value": "Store Other",
           },
         ],
@@ -48,7 +50,7 @@ describe('store-other channel', () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en",
+            "locale": "en-US",
             "value": "Store Other",
           },
         ],

@@ -11,14 +11,16 @@ describe('hub channel', () => {
         "custom": undefined,
         "description": {
           "de": undefined,
-          "en": "Hub",
+          "en": undefined,
+          "en-US": "Hub",
           "fr": undefined,
         },
         "geoLocation": undefined,
         "key": "hub",
         "name": {
           "de": undefined,
-          "en": "Hub",
+          "en": undefined,
+          "en-US": "Hub",
           "fr": undefined,
         },
         "roles": [
@@ -40,7 +42,7 @@ describe('hub channel', () => {
         "description": [
           {
             "__typename": "LocalizedString",
-            "locale": "en",
+            "locale": "en-US",
             "value": "Hub",
           },
         ],
@@ -49,7 +51,7 @@ describe('hub channel', () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en",
+            "locale": "en-US",
             "value": "Hub",
           },
         ],
