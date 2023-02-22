@@ -35,7 +35,8 @@ const transformers = {
       const { categories } = fields;
 
       const categoryReferences: Array<CategoryReference> = buildFields(
-        categories
+        categories,
+        'rest'
       ).map((category) => ({
         id: category.id,
         typeId: 'category',
@@ -49,12 +50,12 @@ const transformers = {
         // Un-built fields with no model dependencies
         ...fields,
         // These have model dependencies and must be built
-        name: buildField(fields.name),
-        description: buildField(fields.description),
-        slug: buildField(fields.slug),
-        metaTitle: buildField(fields.metaTitle),
-        metaDescription: buildField(fields.metaDescription),
-        metaKeywords: buildField(fields.metaKeywords),
+        name: buildField(fields.name, 'rest'),
+        description: buildField(fields.description, 'rest'),
+        slug: buildField(fields.slug, 'rest'),
+        metaTitle: buildField(fields.metaTitle, 'rest'),
+        metaDescription: buildField(fields.metaDescription, 'rest'),
+        metaKeywords: buildField(fields.metaKeywords, 'rest'),
         categories: categoryReferences,
       };
     },
