@@ -1,9 +1,9 @@
-import { TChannelDraft, TChannelDraftGraphql } from '../../types';
-import hub from './hub';
+import { TChannelDraft, TChannelDraftGraphql } from '../../../types';
+import storeOther from './store-other';
 
-describe('hub channel', () => {
+describe('store-other channel', () => {
   it('should match REST snapshot', () => {
-    const channel = hub().build<TChannelDraft>();
+    const channel = storeOther().build<TChannelDraft>();
 
     expect(channel).toMatchInlineSnapshot(`
       {
@@ -12,27 +12,26 @@ describe('hub channel', () => {
         "description": {
           "de": undefined,
           "en": undefined,
-          "en-US": "Hub",
+          "en-US": "Store Other",
           "fr": undefined,
         },
         "geoLocation": undefined,
-        "key": "hub",
+        "key": "store_other",
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-US": "Hub",
+          "en-US": "Store Other",
           "fr": undefined,
         },
         "roles": [
           "ProductDistribution",
-          "InventorySupply",
         ],
       }
     `);
   });
 
   it('should match graphql snapshot', () => {
-    const channel = hub().buildGraphql<TChannelDraftGraphql>();
+    const channel = storeOther().buildGraphql<TChannelDraftGraphql>();
 
     expect(channel).toMatchInlineSnapshot(`
       {
@@ -43,21 +42,20 @@ describe('hub channel', () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Hub",
+            "value": "Store Other",
           },
         ],
         "geoLocation": undefined,
-        "key": "hub",
+        "key": "store_other",
         "name": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Hub",
+            "value": "Store Other",
           },
         ],
         "roles": [
           "ProductDistribution",
-          "InventorySupply",
         ],
       }
     `);

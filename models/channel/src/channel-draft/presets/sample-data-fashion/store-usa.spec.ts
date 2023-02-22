@@ -1,4 +1,4 @@
-import { TChannelDraft, TChannelDraftGraphql } from '../../types';
+import { TChannelDraft, TChannelDraftGraphql } from '../../../types';
 import storeUsa from './store-usa';
 
 describe('store-usa channel', () => {

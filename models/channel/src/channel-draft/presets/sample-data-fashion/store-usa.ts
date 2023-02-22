@@ -1,6 +1,6 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import { roles } from '../../constants';
-import ChannelDraft from '../builder';
+import { roles } from '../../../constants';
+import ChannelDraft from '../../builder';
 
 const storeUsa = () =>
   ChannelDraft()
