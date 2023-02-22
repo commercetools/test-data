@@ -4,13 +4,27 @@ import {
   ProductVariant,
   SearchKeyword,
   CategoryOrderHints,
+  Category,
 } from '@commercetools/platform-sdk';
-import { TCategoryGraphql } from '@commercetools-test-data/category';
 import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-data-bot';
 
-export type TProductData = ProductData;
+// The base generator model. Consumers configure these fields.
+export type TProductData = Omit<ProductData, 'categories'> & {
+  categories: Array<Category>;
+  categoryOrderHint: String | null;
+  categoriesRef: Array<CategoryReference>;
+  searchKeyword?: Array<SearchKeyword> | null;
+  allVariants: Array<ProductVariant>;
+  variant: ProductVariant;
+  skus: Array<String>;
+};
+
+// Fields here must be transformable from the base model
+export type TProductDataRest = Omit<ProductData, 'categories'> & {
+  categories: Array<CategoryReference>;
+};
 
 // This type only appears in the GraphQL representation
 export type TCategoryOrderHintGraphql = {
@@ -19,23 +33,19 @@ export type TCategoryOrderHintGraphql = {
   __typename: 'CategoryOrderHint';
 };
 
+// Fields here must be transformable from the base model
 export type TProductDataGraphql = Omit<
   TProductData,
   'categories' | 'categoryOrderHints'
 > & {
+  categoryOrderHints: Array<TCategoryOrderHintGraphql>;
+  categories: Array<Category>;
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   slugAllLocales?: TLocalizedStringGraphql | null;
   metaTitleAllLocales?: TLocalizedStringGraphql | null;
   metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
   metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
-  categoryOrderHint?: String | null;
-  categoryOrderHints: Array<TCategoryOrderHintGraphql>;
-  categoriesRef: Array<CategoryReference>;
-  categories: Array<TCategoryGraphql>;
-  searchKeyword?: Array<SearchKeyword> | null;
-  allVariants: Array<ProductVariant>;
-  variant?: ProductVariant | null;
   __typename: 'ProductData';
 };
 

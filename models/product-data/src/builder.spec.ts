@@ -15,10 +15,10 @@ describe('builder', () => {
         }),
         categories: expect.arrayContaining([
           expect.objectContaining({
-            typeId: 'category',
+            id: expect.any(String),
+            key: expect.any(String),
           }),
         ]),
-        categoryOrderHints: expect.any(Object),
         description: expect.objectContaining({
           en: expect.any(String),
         }),
@@ -35,8 +35,18 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         masterVariant: null,
-        variants: [],
+        variant: null,
+        variants: expect.arrayContaining([]),
+        allVariants: expect.arrayContaining([]),
         searchKeywords: null,
+        searchKeyword: expect.arrayContaining([]),
+        categoriesRef: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'category',
+          }),
+        ]),
+        categoryOrderHints: expect.any(Object),
       })
     )
   );
@@ -51,6 +61,7 @@ describe('builder', () => {
         }),
         categories: expect.arrayContaining([
           expect.objectContaining({
+            id: expect.any(String),
             typeId: 'category',
           }),
         ]),
@@ -70,9 +81,6 @@ describe('builder', () => {
         metaKeywords: expect.objectContaining({
           en: expect.any(String),
         }),
-        masterVariant: null,
-        variants: [],
-        searchKeywords: null,
       })
     )
   );
@@ -120,6 +128,8 @@ describe('builder', () => {
         ]),
         categories: expect.arrayContaining([
           expect.objectContaining({
+            id: expect.any(String),
+            key: expect.any(String),
             __typename: 'Category',
           }),
         ]),

@@ -1,17 +1,15 @@
+import { CategoryReference } from '@commercetools/platform-sdk';
+import { LocalizedString } from '@commercetools-test-data/commons';
 import {
-  CategoryReference,
-  ProductVariant,
-  SearchKeyword,
-} from '@commercetools/platform-sdk';
-import * as Category from '@commercetools-test-data/category';
-import { TCategoryGraphql } from '@commercetools-test-data/category';
-import { LocalizedString, Reference } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
-import { faker } from '@faker-js/faker';
+  buildField,
+  buildFields,
+  Transformer,
+} from '@commercetools-test-data/core';
 import type {
   TCategoryOrderHintGraphql,
   TProductData,
   TProductDataGraphql,
+  TProductDataRest,
 } from './types';
 
 const transformers = {
@@ -25,27 +23,44 @@ const transformers = {
       'metaDescription',
       'metaKeywords',
       'masterVariant',
+      'variant',
+      'variants',
+      'allVariants',
       'searchKeywords',
+      'searchKeyword',
+      'categoriesRef',
     ],
   }),
-  rest: Transformer<TProductData, TProductData>('rest', {
-    buildFields: [
-      'name',
-      'categories',
-      'description',
-      'slug',
-      'metaTitle',
-      'metaDescription',
-      'metaKeywords',
-      'masterVariant',
-      'searchKeywords',
-    ],
+  rest: Transformer<TProductData, TProductDataRest>('rest', {
+    replaceFields: ({ fields }) => {
+      const { categories } = fields;
+
+      const categoryReferences: Array<CategoryReference> = buildFields(
+        categories
+      ).map((category) => ({
+        id: category.id,
+        typeId: 'category',
+      }));
+
+      /**
+       * We cannot use `replaceFields` in conjunction with `buildFields`,
+       * so we need to explicity build fields where necessary.
+       */
+      return {
+        // Un-built fields with no model dependencies
+        ...fields,
+        // These have model dependencies and must be built
+        name: buildField(fields.name),
+        description: buildField(fields.description),
+        slug: buildField(fields.slug),
+        metaTitle: buildField(fields.metaTitle),
+        metaDescription: buildField(fields.metaDescription),
+        metaKeywords: buildField(fields.metaKeywords),
+        categories: categoryReferences,
+      };
+    },
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
-    /**
-     * We choose `replaceFields` because the type of the `categories` field differs
-     * between REST and GraphQL, and it must be replaced.
-     */
     replaceFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(
@@ -61,29 +76,15 @@ const transformers = {
       const metaDescriptionAllLocales = LocalizedString.toLocalizedField(
         fields.metaDescription
       );
-      const categoryOrderHint = faker.lorem.word();
+
       const categoryOrderHints: Array<TCategoryOrderHintGraphql> =
-        Object.entries(fields.categoryOrderHints!).map(([k, v]) => ({
+        Object.entries(fields.categoryOrderHints || []).map(([k, v]) => ({
           categoryId: k,
           orderHint: v,
           __typename: 'CategoryOrderHint',
         }));
-      const categoriesRef: Array<CategoryReference> = [
-        Reference.presets.category().buildGraphql(),
-      ];
-      const categories: Array<TCategoryGraphql> = [
-        Category.random().buildGraphql(),
-      ];
-      // TODO: add SearchKeyword when available
-      const searchKeyword: Array<SearchKeyword> = [];
-      // TODO: Add ProductVariants when available
-      const allVariants: Array<ProductVariant> = [];
-      // TODO: Add ProductVariant when available
-      const variant = null;
-      const skus = [faker.random.alphaNumeric(8)];
 
       return {
-        // Include all preexisting fields as we are performing a full replacement
         ...fields,
         nameAllLocales,
         descriptionAllLocales,
@@ -91,14 +92,8 @@ const transformers = {
         metaTitleAllLocales,
         metaKeywordsAllLocales,
         metaDescriptionAllLocales,
-        categoryOrderHint,
         categoryOrderHints,
-        categoriesRef,
-        categories,
-        searchKeyword,
-        allVariants,
-        variant,
-        skus,
+        categories: buildFields(fields.categories, 'graphql'),
         __typename: 'ProductData',
       };
     },

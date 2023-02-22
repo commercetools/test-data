@@ -1,3 +1,4 @@
+import * as Category from '@commercetools-test-data/category';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TProductData } from './types';
@@ -7,7 +8,7 @@ import { TProductData } from './types';
 const generator = Generator<TProductData>({
   fields: {
     name: fake(() => LocalizedString.random()),
-    categories: fake(() => [Reference.presets.category()]),
+    categories: fake(() => [Category.random()]),
     categoryOrderHints: fake((f) => ({
       [f.datatype.uuid()]: String(Math.random()),
     })),
@@ -18,9 +19,19 @@ const generator = Generator<TProductData>({
     metaKeywords: fake(() => LocalizedString.random()),
     // TODO: Include random ProductVariant when available
     masterVariant: null,
+    // TODO: Include random ProductVariant when available
+    variant: null,
+    // TODO: Include random ProductVariant[] when available
     variants: [],
+    // TODO: Include random ProductVariant[] when available
+    allVariants: [],
     // TODO: Include random SearchKeywords when available
     searchKeywords: null,
+    // TODO: Include random SearchKeywords[] when available
+    searchKeyword: [],
+    categoriesRef: fake(() => [Reference.presets.category()]),
+    categoryOrderHint: fake((f) => f.lorem.word()),
+    skus: fake((f) => [f.lorem.word()]),
   },
 });
 
