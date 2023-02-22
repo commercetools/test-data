@@ -5,9 +5,6 @@ import ChannelDraft from '../../builder';
 const storeOther = () =>
   ChannelDraft()
     .key('store_other')
-    .address(undefined)
-    .geoLocation(undefined)
-    .custom(undefined)
     .description(LocalizedString.presets.empty()['en-US']('Store Other'))
     .name(LocalizedString.presets.empty()['en-US']('Store Other'))
     .roles([roles.ProductDistribution]);
