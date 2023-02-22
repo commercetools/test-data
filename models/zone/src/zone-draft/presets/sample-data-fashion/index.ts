@@ -1,11 +1,11 @@
-import withCountryAustralia from './with-country-australia';
-import withCountrySpainAndGermany from './with-country-spain-and-germany';
-import withCountryUsa from './with-country-usa';
+import countryAustralia from './country-australia';
+import countrySpainAndGermany from './country-spain-and-germany';
+import countryUsa from './country-usa';
 
 const presets = {
-  withCountryAustralia,
-  withCountrySpainAndGermany,
-  withCountryUsa,
+  countryAustralia,
+  countrySpainAndGermany,
+  countryUsa,
 };
 
 export default presets;

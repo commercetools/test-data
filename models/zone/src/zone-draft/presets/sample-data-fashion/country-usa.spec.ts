@@ -1,9 +1,9 @@
 import { TZoneDraft, TZoneDraftGraphql } from '../../../types';
-import withCountryUsa from './with-country-usa';
+import countryUsa from './country-usa';
 
 describe('with the preset `country usa`', () => {
   it('should return a zone with name `USA`', () => {
-    const zone = withCountryUsa().build<TZoneDraft>();
+    const zone = countryUsa().build<TZoneDraft>();
 
     expect(zone).toEqual(
       expect.objectContaining({
@@ -19,7 +19,7 @@ describe('with the preset `country usa`', () => {
   });
 
   it('should return a zone with name `USA` when built for GraphQL', () => {
-    const zone = withCountryUsa().buildGraphql<TZoneDraftGraphql>();
+    const zone = countryUsa().buildGraphql<TZoneDraftGraphql>();
 
     expect(zone).toEqual(
       expect.objectContaining({

@@ -1,9 +1,9 @@
 import ZoneDraft from '../../builder';
 
-const withCountryUsa = () =>
+const countryUsa = () =>
   ZoneDraft()
     .name('USA')
     .key('usa')
     .locations([{ country: 'US' }]);
 
-export default withCountryUsa;
+export default countryUsa;
