@@ -77,11 +77,15 @@ const transformers = {
       );
 
       const categoryOrderHints: Array<TCategoryOrderHintGraphql> =
-        Object.entries(fields.categoryOrderHints || []).map(([k, v]) => ({
+        Object.entries(fields.categoryOrderHints || {}).map(([k, v]) => ({
           categoryId: k,
           orderHint: v,
           __typename: 'CategoryOrderHint',
         }));
+
+      const categoryOrderHint: String = Object.values(
+        fields.categoryOrderHints || {}
+      )[0];
 
       const categoriesRef = buildFields(fields.categories).map((category) => ({
         id: category.id,
@@ -98,6 +102,7 @@ const transformers = {
         metaKeywordsAllLocales,
         metaDescriptionAllLocales,
         categoryOrderHints,
+        categoryOrderHint,
         categoriesRef,
         categories: buildFields(fields.categories, 'graphql'),
         __typename: 'ProductData',

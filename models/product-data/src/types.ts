@@ -13,7 +13,6 @@ import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-da
 // The base generator model. Consumers configure these fields.
 export type TProductData = Omit<ProductData, 'categories'> & {
   categories: Array<Category>;
-  categoryOrderHint: String | null;
   searchKeyword?: Array<SearchKeyword> | null;
   allVariants: Array<ProductVariant>;
   variant: ProductVariant;
@@ -42,6 +41,7 @@ export type TProductDataGraphql = Omit<
   'categories' | 'categoryOrderHints'
 > & {
   categoryOrderHints: Array<TCategoryOrderHintGraphql>;
+  categoryOrderHint: String | null;
   categoriesRef: Array<TCategoryReferenceGraphql>;
   categories: Array<Category>;
   nameAllLocales?: TLocalizedStringGraphql | null;
