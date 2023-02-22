@@ -16,5 +16,9 @@ $ yarn add -D @commercetools-test-data/product-data
 import type { TProductData } from '@commercetools-test-data/product-data';
 import * as ProductData from '@commercetools-test-data/product-data';
 
-const productData = ProductData.random().build<TProductData>();
+// For REST entities
+const productDataRest = ProductData.random().buildRest<TProductData>();
+
+// For Graphql entities
+const productDataGraphql = ProductData.random().buildGraphql<TProductData>();
 ```
