@@ -40,12 +40,6 @@ describe('builder', () => {
         allVariants: expect.arrayContaining([]),
         searchKeywords: null,
         searchKeyword: expect.arrayContaining([]),
-        categoriesRef: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            typeId: 'category',
-          }),
-        ]),
         categoryOrderHints: expect.any(Object),
       })
     )

@@ -28,7 +28,6 @@ const transformers = {
       'allVariants',
       'searchKeywords',
       'searchKeyword',
-      'categoriesRef',
     ],
   }),
   rest: Transformer<TProductData, TProductDataRest>('rest', {
@@ -84,6 +83,12 @@ const transformers = {
           __typename: 'CategoryOrderHint',
         }));
 
+      const categoriesRef = buildFields(fields.categories).map((category) => ({
+        id: category.id,
+        typeId: 'category' as const,
+        __typename: 'Reference' as const,
+      }));
+
       return {
         ...fields,
         nameAllLocales,
@@ -93,6 +98,7 @@ const transformers = {
         metaKeywordsAllLocales,
         metaDescriptionAllLocales,
         categoryOrderHints,
+        categoriesRef,
         categories: buildFields(fields.categories, 'graphql'),
         __typename: 'ProductData',
       };

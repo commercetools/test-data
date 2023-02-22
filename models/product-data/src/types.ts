@@ -14,7 +14,6 @@ import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-da
 export type TProductData = Omit<ProductData, 'categories'> & {
   categories: Array<Category>;
   categoryOrderHint: String | null;
-  categoriesRef: Array<CategoryReference>;
   searchKeyword?: Array<SearchKeyword> | null;
   allVariants: Array<ProductVariant>;
   variant: ProductVariant;
@@ -33,12 +32,17 @@ export type TCategoryOrderHintGraphql = {
   __typename: 'CategoryOrderHint';
 };
 
+export type TCategoryReferenceGraphql = CategoryReference & {
+  __typename: 'Reference';
+};
+
 // Fields here must be transformable from the base model
 export type TProductDataGraphql = Omit<
   TProductData,
   'categories' | 'categoryOrderHints'
 > & {
   categoryOrderHints: Array<TCategoryOrderHintGraphql>;
+  categoriesRef: Array<TCategoryReferenceGraphql>;
   categories: Array<Category>;
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
