@@ -1,9 +1,9 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { roles } from '../../constants';
-import Channel from '../builder';
+import ChannelDraft from '../builder';
 
 const storeUsa = () =>
-  Channel()
+  ChannelDraft()
     .key('store_usa')
     .address(undefined)
     .geoLocation(undefined)
