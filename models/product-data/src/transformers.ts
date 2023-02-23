@@ -1,10 +1,6 @@
 import { CategoryReference } from '@commercetools/platform-sdk';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import {
-  buildField,
-  buildFields,
-  Transformer,
-} from '@commercetools-test-data/core';
+import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCategoryOrderHintGraphql,
   TProductData,
@@ -31,16 +27,24 @@ const transformers = {
     ],
   }),
   rest: Transformer<TProductData, TProductDataRest>('rest', {
+    buildFields: [
+      'name',
+      'description',
+      'slug',
+      'metaTitle',
+      'metaDescription',
+      'metaKeywords',
+      'categories',
+    ],
     replaceFields: ({ fields }) => {
       const { categories } = fields;
 
-      const categoryReferences: Array<CategoryReference> = buildFields(
-        categories,
-        'rest'
-      ).map((category) => ({
-        id: category.id,
-        typeId: 'category',
-      }));
+      const categoryReferences: Array<CategoryReference> = categories.map(
+        (category) => ({
+          id: category.id,
+          typeId: 'category',
+        })
+      );
 
       /**
        * We cannot use `replaceFields` in conjunction with `buildFields`,
@@ -50,17 +54,18 @@ const transformers = {
         // Un-built fields with no model dependencies
         ...fields,
         // These have model dependencies and must be built
-        name: buildField(fields.name, 'rest'),
-        description: buildField(fields.description, 'rest'),
-        slug: buildField(fields.slug, 'rest'),
-        metaTitle: buildField(fields.metaTitle, 'rest'),
-        metaDescription: buildField(fields.metaDescription, 'rest'),
-        metaKeywords: buildField(fields.metaKeywords, 'rest'),
+        name: fields.name,
+        description: fields.description,
+        slug: fields.slug,
+        metaTitle: fields.metaTitle,
+        metaDescription: fields.metaDescription,
+        metaKeywords: fields.metaKeywords,
         categories: categoryReferences,
       };
     },
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
+    buildFields: ['categories'],
     replaceFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(
@@ -88,7 +93,7 @@ const transformers = {
         fields.categoryOrderHints || {}
       )[0];
 
-      const categoriesRef = buildFields(fields.categories).map((category) => ({
+      const categoriesRef = fields.categories.map((category) => ({
         id: category.id,
         typeId: 'category' as const,
         __typename: 'Reference' as const,
@@ -105,7 +110,7 @@ const transformers = {
         categoryOrderHints,
         categoryOrderHint,
         categoriesRef,
-        categories: buildFields(fields.categories, 'graphql'),
+        categories: fields.categories,
         __typename: 'ProductData',
       };
     },
