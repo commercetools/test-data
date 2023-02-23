@@ -1,18 +1,18 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TAttribute, TAttributeDefault, TAttributeGraphql } from './types';
+import type { TAttribute, TAttributeRest, TAttributeGraphql } from './types';
 
 const transformers = {
-  default: Transformer<TAttributeDefault, TAttributeDefault>('default', {
+  default: Transformer<TAttribute, TAttribute>('default', {
     buildFields: ['attributeDefinition'],
   }),
-  rest: Transformer<TAttributeDefault, TAttribute>('rest', {
+  rest: Transformer<TAttribute, TAttributeRest>('rest', {
     buildFields: [],
     replaceFields: ({ fields }) => ({
       name: fields.name,
       value: fields.value,
     }),
   }),
-  graphql: Transformer<TAttributeDefault, TAttributeGraphql>('graphql', {
+  graphql: Transformer<TAttribute, TAttributeGraphql>('graphql', {
     buildFields: ['attributeDefinition'],
     addFields: () => ({
       __typename: 'RawProductAttribute',

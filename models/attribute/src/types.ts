@@ -1,23 +1,24 @@
 import { Attribute, AttributeDefinition } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-// This is the REST representation
-export type TAttribute = Attribute;
-
 export type TReferenceExpandable = {
   id: String;
 };
 
-// This is the generator "catchall" representation
-export type TAttributeDefault = TAttribute & {
+// Base representation
+export type TAttribute = TAttributeRest & {
   attributeDefinition: AttributeDefinition;
   referencedResource: TReferenceExpandable;
   referencedResourceSet: Array<TReferenceExpandable>;
 };
 
-export type TAttributeGraphql = TAttributeDefault & {
+// REST representation
+export type TAttributeRest = Attribute;
+
+// Graphql representation
+export type TAttributeGraphql = TAttribute & {
   __typename: 'RawProductAttribute';
 };
 
-export type TAttributeBuilder = TBuilder<TAttributeDefault>;
+export type TAttributeBuilder = TBuilder<TAttribute>;
 export type TCreateAttributeBuilder = () => TAttributeBuilder;
