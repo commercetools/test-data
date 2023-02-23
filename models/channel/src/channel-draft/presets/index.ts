@@ -1,4 +1,4 @@
-import * as SampleDataFashion from './sample-data-fashion';
+import SampleDataFashion from './sample-data-fashion';
 import withInventorySupplyAndProductDistributionRoles from './with-inventory-supply-and-product-distribution-roles';
 import withInventorySupplyAndProductDistributionRolesNoAddress from './with-inventory-supply-and-product-distribution-roles-no-address';
 import withInventorySupplyRole from './with-inventory-supply-role';
