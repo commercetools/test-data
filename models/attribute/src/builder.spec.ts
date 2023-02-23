@@ -1,12 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TAttribute, TAttributeDefault, TAttributeGraphql } from './types';
+import { TAttribute, TAttributeRest, TAttributeGraphql } from './types';
 import * as Attribute from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TAttributeDefault, TAttributeDefault>(
+    ...createBuilderSpec<TAttribute, TAttribute>(
       'default',
       Attribute.random(),
       expect.objectContaining({
@@ -28,7 +28,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TAttributeDefault, TAttribute>(
+    ...createBuilderSpec<TAttribute, TAttributeRest>(
       'rest',
       Attribute.random(),
       expect.objectContaining({
@@ -39,7 +39,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TAttributeDefault, TAttributeGraphql>(
+    ...createBuilderSpec<TAttribute, TAttributeGraphql>(
       'graphql',
       Attribute.random(),
       expect.objectContaining({

@@ -5,7 +5,6 @@ const transformers = {
   default: Transformer<TAttributeDraft, TAttributeDraft>('default', {}),
   rest: Transformer<TAttributeDraft, TAttributeDraft>('rest', {}),
   graphql: Transformer<TAttributeDraft, TAttributeDraftGraphql>('graphql', {
-    buildFields: [],
     addFields: () => ({ __typename: 'ProductAttributeInput' }),
   }),
 };
