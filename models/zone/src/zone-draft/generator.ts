@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TZoneDraft } from '..//types';
+import { TZoneDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/zones#zonedraft
 
