@@ -12,6 +12,8 @@ export type TAttribute = TAttributeRest & {
   referencedResourceSet: Array<TReferenceExpandable>;
 };
 
+export type TAttributeDraft = Attribute;
+
 // REST representation
 export type TAttributeRest = Attribute;
 
@@ -20,5 +22,11 @@ export type TAttributeGraphql = TAttribute & {
   __typename: 'RawProductAttribute';
 };
 
+export type TAttributeDraftGraphql = TAttributeDraft & {
+  __typename: 'ProductAttributeInput';
+};
+
 export type TAttributeBuilder = TBuilder<TAttribute>;
+export type TAttributeDraftBuilder = TBuilder<TAttributeDraft>;
 export type TCreateAttributeBuilder = () => TAttributeBuilder;
+export type TCreateAttributeDraftBuilder = () => TAttributeDraftBuilder;

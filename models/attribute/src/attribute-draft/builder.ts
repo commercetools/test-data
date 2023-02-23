@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
+import type { TAttributeDraft, TCreateAttributeDraftBuilder } from '../types';
 import generator from './generator';
 import transformers from './transformers';
-import type { TAttribute, TCreateAttributeBuilder } from './types';
 
-const Model: TCreateAttributeBuilder = () =>
-  Builder<TAttribute>({
+const Model: TCreateAttributeDraftBuilder = () =>
+  Builder<TAttributeDraft>({
     generator,
     transformers,
   });
