@@ -6,15 +6,15 @@ import type {
 
 const transformers = {
   default: Transformer<TProductVariantDraft, TProductVariantDraft>('default', {
-    buildFields: [],
+    buildFields: ['prices', 'images', 'attributes'],
   }),
   rest: Transformer<TProductVariantDraft, TProductVariantDraft>('rest', {
-    buildFields: [],
+    buildFields: ['prices', 'images'],
   }),
   graphql: Transformer<TProductVariantDraft, TProductVariantDraftGraphql>(
     'graphql',
     {
-      buildFields: [],
+      buildFields: ['prices', 'images'],
       addFields: () => ({ __typename: 'ProductVariantInput' }),
     }
   ),

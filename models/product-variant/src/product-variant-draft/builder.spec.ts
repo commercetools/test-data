@@ -9,7 +9,22 @@ describe('builder', () => {
     ...createBuilderSpec<TProductVariantDraft, TProductVariantDraft>(
       'default',
       ProductVariantDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        key: expect.any(String),
+        sku: expect.any(String),
+        prices: expect.arrayContaining([
+          expect.objectContaining({
+            value: expect.any(Object),
+          }),
+        ]),
+        images: expect.arrayContaining([
+          expect.objectContaining({
+            url: expect.any(String),
+          }),
+        ]),
+        attributes: expect.arrayContaining([]),
+        assets: expect.arrayContaining([]),
+      })
     )
   );
 
@@ -17,7 +32,22 @@ describe('builder', () => {
     ...createBuilderSpec<TProductVariantDraft, TProductVariantDraft>(
       'rest',
       ProductVariantDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        key: expect.any(String),
+        sku: expect.any(String),
+        prices: expect.arrayContaining([
+          expect.objectContaining({
+            value: expect.any(Object),
+          }),
+        ]),
+        images: expect.arrayContaining([
+          expect.objectContaining({
+            url: expect.any(String),
+          }),
+        ]),
+        attributes: expect.arrayContaining([]),
+        assets: expect.arrayContaining([]),
+      })
     )
   );
 
@@ -26,7 +56,26 @@ describe('builder', () => {
       'graphql',
       ProductVariantDraft.random(),
       expect.objectContaining({
-        __typename: 'ProductVariantDraft',
+        key: expect.any(String),
+        sku: expect.any(String),
+        prices: expect.arrayContaining([
+          expect.objectContaining({
+            value: expect.any(Object),
+            __typename: 'ProductPriceDataInput',
+          }),
+        ]),
+        images: expect.arrayContaining([
+          expect.objectContaining({
+            url: expect.any(String),
+            // TODO: This is not the correct typename, but it saves
+            // us from having to create a dummy ImageDraft.
+            // TODO: pull in ImageDraft in the generator when it's created
+            __typename: 'Image',
+          }),
+        ]),
+        attributes: expect.arrayContaining([]),
+        assets: expect.arrayContaining([]),
+        __typename: 'ProductVariantInput',
       })
     )
   );
