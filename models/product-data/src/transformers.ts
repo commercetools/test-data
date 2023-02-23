@@ -46,14 +46,8 @@ const transformers = {
         })
       );
 
-      /**
-       * We cannot use `replaceFields` in conjunction with `buildFields`,
-       * so we need to explicity build fields where necessary.
-       */
       return {
-        // Un-built fields with no model dependencies
         ...fields,
-        // These have model dependencies and must be built
         name: fields.name,
         description: fields.description,
         slug: fields.slug,
