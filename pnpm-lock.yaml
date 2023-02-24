@@ -74,6 +74,26 @@ importers:
       '@types/lodash': 4.14.186
       lodash: 4.17.21
 
+  models/attribute:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/attribute-definition': 4.9.0
+      '@commercetools-test-data/commons': 4.9.0
+      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools/platform-sdk': ^4.0.0
+      '@faker-js/faker': ^7.4.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/attribute-definition': link:../attribute-definition
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+
   models/attribute-definition:
     specifiers:
       '@babel/runtime': ^7.17.9
@@ -1935,7 +1955,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       core-js-pure: 3.25.5
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.11
     dev: false
 
   /@babel/runtime/7.19.4:

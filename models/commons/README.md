@@ -8,7 +8,6 @@ https://docs.commercetools.com/api/types
 
 ```bash
 $ yarn add -D @commercetools-test-data/commons
-$ pnpm add -D @commercetools-test-data/commons
 ```
 
 # Usage
