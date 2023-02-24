@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductDiscountValueExternal,
   ProductDiscountValueExternalDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductDiscountValueExternal = ProductDiscountValueExternal;
 export type TProductDiscountValueExternalDraft =

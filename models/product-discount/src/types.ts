@@ -1,12 +1,12 @@
 import {
-  ProductDiscount,
-  ProductDiscountDraft,
-} from '@commercetools/platform-sdk';
-import {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  ProductDiscount,
+  ProductDiscountDraft,
+} from '@commercetools/platform-sdk';
 
 export type TProductDiscount = ProductDiscount;
 export type TProductDiscountDraft = ProductDiscountDraft;

@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductDiscountValueAbsolute,
   ProductDiscountValueAbsoluteDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductDiscountValueAbsolute = ProductDiscountValueAbsolute;
 export type TProductDiscountValueAbsoluteDraft =

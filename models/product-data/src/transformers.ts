@@ -1,6 +1,6 @@
-import { CategoryReference } from '@commercetools/platform-sdk';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
+import { CategoryReference } from '@commercetools/platform-sdk';
 import type {
   TCategoryOrderHintGraphql,
   TProductData,

@@ -1,5 +1,5 @@
-import type { AttributeType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { AttributeType } from '@commercetools/platform-sdk';
 
 export type TAttributeType = AttributeType;
 

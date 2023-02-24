@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CentPrecisionMoney,
   CentPrecisionMoneyDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCentPrecisionMoney = CentPrecisionMoney;
 export type TCentPrecisionMoneyDraft = CentPrecisionMoneyDraft;
