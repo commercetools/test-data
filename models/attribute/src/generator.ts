@@ -7,7 +7,7 @@ import { TAttribute } from './types';
 const generator = Generator<TAttribute>({
   fields: {
     name: fake((f) => f.lorem.slug(3)),
-    // `value` is an overloaded field. It might be best to create your own
+    // `value` is an overloaded field. It might be best to create your own.
     value: null,
     attributeDefinition: fake(() => AttributeDefinition.random()),
     referencedResource: null,

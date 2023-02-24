@@ -38,4 +38,15 @@ describe('builder', () => {
       })
     )
   );
+
+  it(
+    ...createBuilderSpec<TAttributeDraft, TAttributeDraft>(
+      'rest',
+      AttributeDraft.random().value({ foo: 'bar' }),
+      expect.objectContaining({
+        name: expect.any(String),
+        value: { foo: 'bar' },
+      })
+    )
+  );
 });
