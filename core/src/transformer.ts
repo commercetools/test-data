@@ -57,7 +57,9 @@ function Transformer<Model, TransformedModel>(
           `The "replaceFields" option takes precedence over the "removeFields" option, making it unused.`
         );
       }
-      return fieldsReplacer({ fields }) as unknown as TransformedModel;
+      return fieldsReplacer({
+        fields: transformedFields,
+      }) as unknown as TransformedModel;
     }
 
     if (fieldsAdder) {
