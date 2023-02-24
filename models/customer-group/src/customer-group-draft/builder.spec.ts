@@ -12,7 +12,7 @@ describe('builder', () => {
       expect.objectContaining({
         groupName: expect.any(String),
         key: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
       })
     )
   );
@@ -24,7 +24,7 @@ describe('builder', () => {
       expect.objectContaining({
         groupName: expect.any(String),
         key: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
       })
     )
   );
@@ -37,7 +37,7 @@ describe('builder', () => {
         __typename: 'CustomerGroupDraft',
         groupName: expect.any(String),
         key: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
       })
     )
   );

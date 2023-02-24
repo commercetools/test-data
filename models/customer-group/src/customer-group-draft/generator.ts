@@ -7,7 +7,7 @@ const generator = Generator<TCustomerGroupDraft>({
   fields: {
     groupName: fake((f) => f.lorem.words(2)),
     key: fake((f) => f.lorem.slug(2)),
-    custom: [],
+    custom: null,
   },
 });
 

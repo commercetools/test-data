@@ -13,7 +13,7 @@ const generator = Generator<TCustomerGroup>({
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake((f) => f.lorem.words(2)),
-    custom: [],
+    custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

@@ -14,7 +14,7 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         name: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -36,7 +36,7 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         name: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -59,7 +59,7 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         name: expect.any(String),
-        custom: expect.any(Array),
+        custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
