@@ -11,7 +11,15 @@ const transformers = {
   }),
   graphql: Transformer<TProductVariant, TProductVariantGraphql>('graphql', {
     buildFields: ['price', 'prices', 'images', 'attributes'],
-    replaceFields: ({ fields: { attributes, ...rest } }) => ({
+    replaceFields: ({
+      fields: {
+        attributes,
+        isMatchingVariant,
+        scopedPrice,
+        scopedPriceDiscounted,
+        ...rest
+      },
+    }) => ({
       ...rest,
       attributesRaw: attributes as Array<TAttributeGraphql>,
       __typename: 'ProductVariant',

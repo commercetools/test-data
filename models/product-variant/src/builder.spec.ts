@@ -32,9 +32,9 @@ describe('builder', () => {
         ]),
         assets: expect.arrayContaining([]),
         availability: null,
-        isMatchingVariant: null,
+        isMatchingVariant: expect.any(Boolean),
         scopedPrice: null,
-        scopedPriceDiscounted: null,
+        scopedPriceDiscounted: expect.any(Boolean),
       })
     )
   );
@@ -66,9 +66,9 @@ describe('builder', () => {
         ]),
         assets: expect.arrayContaining([]),
         availability: null,
-        isMatchingVariant: null,
+        isMatchingVariant: expect.any(Boolean),
         scopedPrice: null,
-        scopedPriceDiscounted: null,
+        scopedPriceDiscounted: expect.any(Boolean),
       })
     )
   );
@@ -78,6 +78,7 @@ describe('builder', () => {
       'graphql',
       ProductVariant.random(),
       expect.objectContaining({
+        id: expect.any(String),
         key: expect.any(String),
         sku: expect.any(String),
         prices: expect.arrayContaining([
@@ -104,9 +105,6 @@ describe('builder', () => {
         ]),
         assets: expect.arrayContaining([]),
         availability: null,
-        isMatchingVariant: null,
-        scopedPrice: null,
-        scopedPriceDiscounted: null,
         __typename: 'ProductVariant',
       })
     )
