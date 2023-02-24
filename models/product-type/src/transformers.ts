@@ -11,7 +11,7 @@ const transformers = {
     removeFields: ['attributeDefinitions'],
   }),
   graphql: Transformer<TProductType, TProductTypeGraphql>('graphql', {
-    buildFields: ['attributeDefinitions', 'createdBy', 'lastModifiedBy'],
+    buildFields: ['createdBy', 'lastModifiedBy'],
     removeFields: ['attributes'],
     addFields: () => ({
       __typename: 'ProductTypeDefinition',

@@ -6,7 +6,6 @@ import {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-// attempting to consolidate types to stick with just base and graphql
 export type TProductType = ProductType & {
   attributeDefinitions: {
     results: Array<AttributeDefinition>;
@@ -18,21 +17,17 @@ export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
   __typename: 'ProductTypeDefinition';
 };
 
-// Draft Default
-export type TProductTypeDraftDefault = ProductTypeDraft & {
+export type TProductTypeDraft = ProductTypeDraft & {
   attributeDefinitions: Array<AttributeDefinitionDraft>;
 };
 
-// Build REST and GraphQL from Default
-export type TProductTypeDraft = Omit<ProductTypeDraft, 'attributeDefinitions'>;
-
-export type TProductTypeDraftGraphql = Omit<TProductTypeDraft, 'attributes'> & {
+export type TProductTypeDraftGraphql = TProductTypeDraft & {
   __typename: 'ProductTypeDraft';
 };
 
 export type TProductTypeBuilder = TBuilder<TProductType>;
 
-export type TProductTypeDraftBuilder = TBuilder<TProductTypeDraftDefault>;
+export type TProductTypeDraftBuilder = TBuilder<TProductTypeDraft>;
 
 export type TCreateProductTypeBuilder = () => TProductTypeBuilder;
 

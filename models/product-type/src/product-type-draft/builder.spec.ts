@@ -1,16 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
-  TProductTypeDraftDefault,
-  TProductTypeDraft,
-  TProductTypeDraftGraphql,
-} from '../types';
+import { TProductTypeDraft, TProductTypeDraftGraphql } from '../types';
 import * as ProductTypeDraft from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraftDefault>(
+    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraft>(
       'default',
       ProductTypeDraft.random(),
       expect.objectContaining({
@@ -47,7 +43,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraft>(
+    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraft>(
       'rest',
       ProductTypeDraft.random(),
       expect.objectContaining({
@@ -79,7 +75,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDraftDefault, TProductTypeDraftGraphql>(
+    ...createBuilderSpec<TProductTypeDraft, TProductTypeDraftGraphql>(
       'graphql',
       ProductTypeDraft.random(),
       expect.objectContaining({

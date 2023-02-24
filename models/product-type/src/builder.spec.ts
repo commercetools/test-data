@@ -110,13 +110,8 @@ describe('builder', () => {
         }),
         name: expect.any(String),
         description: expect.any(String),
-        // Gets error: Builder with name 'buildGraphql' does not exist on field 'attributeDefinitions'.
         attributeDefinitions: expect.objectContaining({
-          results: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: 'AttributeDefinitionResult',
-            }),
-          ]),
+          __typename: 'AttributeDefinitionResult',
         }),
       })
     )
