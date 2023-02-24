@@ -1,3 +1,4 @@
+import * as Attribute from '@commercetools-test-data/attribute';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as Image from '@commercetools-test-data/image';
 import * as Price from '@commercetools-test-data/price';
@@ -10,8 +11,7 @@ const generator = Generator<TProductVariantDraft>({
     key: fake((f) => f.lorem.slug(2)),
     sku: fake((f) => f.random.word()),
     prices: fake(() => [Price.PriceDraft.random()]),
-    // TODO: place Attributes here when rebasing
-    attributes: [],
+    attributes: fake(() => [Attribute.AttributeDraft.random()]),
     images: fake(() => [Image.random()]),
     assets: [],
   },

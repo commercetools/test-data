@@ -22,7 +22,11 @@ describe('builder', () => {
             url: expect.any(String),
           }),
         ]),
-        attributes: expect.arrayContaining([]),
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+          }),
+        ]),
         assets: expect.arrayContaining([]),
       })
     )
@@ -45,7 +49,11 @@ describe('builder', () => {
             url: expect.any(String),
           }),
         ]),
-        attributes: expect.arrayContaining([]),
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+          }),
+        ]),
         assets: expect.arrayContaining([]),
       })
     )
@@ -67,13 +75,20 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
-            // TODO: This is not the correct typename, but it saves
-            // us from having to create a dummy ImageDraft.
-            // TODO: pull in ImageDraft in the generator when it's created
+            /**
+             * This is not the correct typename, but it saves us from having to create a dummy ImageDraft.
+             *
+             * TODO: pull in ImageDraft in the generator when it's created
+             */
             __typename: 'Image',
           }),
         ]),
-        attributes: expect.arrayContaining([]),
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+            __typename: 'ProductAttributeInput',
+          }),
+        ]),
         assets: expect.arrayContaining([]),
         __typename: 'ProductVariantInput',
       })

@@ -1877,7 +1877,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/attribute@workspace:models/attribute":
+"@commercetools-test-data/attribute@4.9.0, @commercetools-test-data/attribute@workspace:models/attribute":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/attribute@workspace:models/attribute"
   dependencies:
@@ -2240,6 +2240,7 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
+    "@commercetools-test-data/attribute": 4.9.0
     "@commercetools-test-data/commons": 4.9.0
     "@commercetools-test-data/core": 4.9.0
     "@commercetools-test-data/image": 4.9.0

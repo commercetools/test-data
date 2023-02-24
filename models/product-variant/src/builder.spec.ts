@@ -25,8 +25,11 @@ describe('builder', () => {
             url: expect.any(String),
           }),
         ]),
-        // TODO: test for attributes
-        attributes: expect.arrayContaining([]),
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+          }),
+        ]),
         assets: expect.arrayContaining([]),
         availability: null,
         isMatchingVariant: null,
@@ -56,7 +59,11 @@ describe('builder', () => {
             url: expect.any(String),
           }),
         ]),
-        attributes: expect.arrayContaining([]),
+        attributes: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+          }),
+        ]),
         assets: expect.arrayContaining([]),
         availability: null,
         isMatchingVariant: null,
@@ -89,7 +96,12 @@ describe('builder', () => {
             __typename: 'Image',
           }),
         ]),
-        attributes: expect.arrayContaining([]),
+        attributesRaw: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+            __typename: 'RawProductAttribute',
+          }),
+        ]),
         assets: expect.arrayContaining([]),
         availability: null,
         isMatchingVariant: null,

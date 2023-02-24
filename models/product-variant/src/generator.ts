@@ -1,3 +1,4 @@
+import * as Attribute from '@commercetools-test-data/attribute';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as Image from '@commercetools-test-data/image';
 import * as Price from '@commercetools-test-data/price';
@@ -12,8 +13,7 @@ const generator = Generator<TProductVariant>({
     sku: fake((f) => f.random.word()),
     prices: fake(() => [Price.random()]),
     price: fake(() => Price.random()),
-    // TODO: add attributes and transform to `RawProductAttribute` for gql when necessary
-    attributes: [],
+    attributes: fake(() => [Attribute.random()]),
     images: fake(() => [Image.random()]),
     assets: [],
     availability: null,

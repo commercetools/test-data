@@ -2,6 +2,10 @@ import {
   ProductVariant,
   ProductVariantDraft,
 } from '@commercetools/platform-sdk';
+import type {
+  TAttributeDraftGraphql,
+  TAttributeGraphql,
+} from '@commercetools-test-data/attribute';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductVariant = ProductVariant;
@@ -11,11 +15,14 @@ export type TProductVariantGraphql = Omit<
   TProductVariant,
   'attributes' | 'isMatchingVariant' | 'scopedPrice' | 'scopedPriceDiscounted'
 > & {
-  // TODO: require in the Graphql type from the Attributes package after rebasing
-  attributesRaw: unknown;
+  attributesRaw: Array<TAttributeGraphql>;
   __typename: 'ProductVariant';
 };
-export type TProductVariantDraftGraphql = TProductVariantDraft & {
+export type TProductVariantDraftGraphql = Omit<
+  TProductVariantDraft,
+  'attributes'
+> & {
+  attributes: Array<TAttributeDraftGraphql>;
   __typename: 'ProductVariantInput';
 };
 
