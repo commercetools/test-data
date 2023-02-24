@@ -17,5 +17,5 @@ import type { TZone, TZoneDraft } from '@commercetools-test-data/zone';
 import * as Zone from '@commercetools-test-data/zone';
 
 const zone = Zone.random().build<TZone>();
-const zoneDraft = Zone.Zone.random().build<TZoneDraft>();
+const zoneDraft = Zone.ZoneDraft.random().build<TZoneDraft>();
 ```
