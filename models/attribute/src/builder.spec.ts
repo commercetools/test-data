@@ -15,14 +15,8 @@ describe('builder', () => {
         attributeDefinition: expect.objectContaining({
           name: expect.any(String),
         }),
-        referencedResource: expect.objectContaining({
-          id: expect.any(String),
-        }),
-        referencedResourceSet: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-          }),
-        ]),
+        referencedResource: null,
+        referencedResourceSet: expect.arrayContaining([]),
       })
     )
   );
@@ -49,14 +43,8 @@ describe('builder', () => {
           name: expect.any(String),
           __typename: 'AttributeDefinition',
         }),
-        referencedResource: expect.objectContaining({
-          id: expect.any(String),
-        }),
-        referencedResourceSet: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-          }),
-        ]),
+        referencedResource: null,
+        referencedResourceSet: expect.arrayContaining([]),
         __typename: 'RawProductAttribute',
       })
     )

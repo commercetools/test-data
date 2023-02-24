@@ -10,8 +10,8 @@ const generator = Generator<TAttribute>({
     // `value` is an overloaded field. It might be best to create your own
     value: null,
     attributeDefinition: fake(() => AttributeDefinition.random()),
-    referencedResource: fake((f) => ({ id: f.datatype.uuid() })),
-    referencedResourceSet: fake((f) => [{ id: f.datatype.uuid() }]),
+    referencedResource: null,
+    referencedResourceSet: [],
   },
 });
 
