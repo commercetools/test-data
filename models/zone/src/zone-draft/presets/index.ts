@@ -1,4 +1,4 @@
-import * as SampleDataFashion from './sample-data-fashion';
+import SampleDataFashion from './sample-data-fashion';
 
 const presets = { SampleDataFashion };
 
