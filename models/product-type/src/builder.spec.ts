@@ -1,16 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
-  TProductTypeDefault,
-  TProductType,
-  TProductTypeGraphql,
-} from './types';
+import { TProductType, TProductTypeGraphql } from './types';
 import * as ProductType from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductTypeDefault, TProductTypeDefault>(
+    ...createBuilderSpec<TProductType, TProductType>(
       'default',
       ProductType.random(),
       expect.objectContaining({
@@ -47,17 +43,12 @@ describe('builder', () => {
             isSearchable: expect.any(Boolean),
           }),
         ]),
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            attributeConstraint: expect.any(String),
-          }),
-        ]),
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDefault, TProductType>(
+    ...createBuilderSpec<TProductType, TProductType>(
       'rest',
       ProductType.random(),
       expect.objectContaining({
@@ -99,7 +90,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductTypeDefault, TProductTypeGraphql>(
+    ...createBuilderSpec<TProductType, TProductTypeGraphql>(
       'graphql',
       ProductType.random(),
       expect.objectContaining({
@@ -119,11 +110,14 @@ describe('builder', () => {
         }),
         name: expect.any(String),
         description: expect.any(String),
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            attributeConstraint: expect.any(String),
-          }),
-        ]),
+        // Gets error: Builder with name 'buildGraphql' does not exist on field 'attributeDefinitions'.
+        attributeDefinitions: expect.objectContaining({
+          results: expect.arrayContaining([
+            expect.objectContaining({
+              __typename: 'AttributeDefinitionResult',
+            }),
+          ]),
+        }),
       })
     )
   );

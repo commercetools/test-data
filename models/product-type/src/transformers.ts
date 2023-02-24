@@ -1,24 +1,16 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type {
-  TProductTypeDefault,
-  TProductType,
-  TProductTypeGraphql,
-} from './types';
+import type { TProductType, TProductTypeGraphql } from './types';
 
 const transformers = {
-  default: Transformer<TProductTypeDefault, TProductTypeDefault>('default', {
-    buildFields: [
-      'attributes',
-      'attributeDefinitions',
-      'createdBy',
-      'lastModifiedBy',
-    ],
-  }),
-  rest: Transformer<TProductTypeDefault, TProductType>('rest', {
+  default: Transformer<TProductType, TProductType>('default', {
     buildFields: ['attributes', 'createdBy', 'lastModifiedBy'],
     removeFields: ['attributeDefinitions'],
   }),
-  graphql: Transformer<TProductTypeDefault, TProductTypeGraphql>('graphql', {
+  rest: Transformer<TProductType, TProductType>('rest', {
+    buildFields: ['attributes', 'createdBy', 'lastModifiedBy'],
+    removeFields: ['attributeDefinitions'],
+  }),
+  graphql: Transformer<TProductType, TProductTypeGraphql>('graphql', {
     buildFields: ['attributeDefinitions', 'createdBy', 'lastModifiedBy'],
     removeFields: ['attributes'],
     addFields: () => ({
