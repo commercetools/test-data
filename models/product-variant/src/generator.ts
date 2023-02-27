@@ -12,14 +12,14 @@ const generator = Generator<TProductVariant>({
     key: fake((f) => f.lorem.slug(2)),
     sku: fake((f) => f.random.word()),
     prices: fake(() => [Price.random()]),
-    price: fake(() => Price.random()),
+    price: null,
     attributes: fake(() => [Attribute.random()]),
     images: fake(() => [Image.random()]),
     assets: [],
     availability: null,
     isMatchingVariant: fake((f) => f.datatype.boolean()),
     scopedPrice: null,
-    scopedPriceDiscounted: fake((f) => f.datatype.boolean()),
+    scopedPriceDiscounted: null,
   },
 });
 

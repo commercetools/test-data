@@ -17,9 +17,7 @@ describe('builder', () => {
             value: expect.any(Object),
           }),
         ]),
-        price: expect.objectContaining({
-          value: expect.any(Object),
-        }),
+        price: null,
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
@@ -34,7 +32,7 @@ describe('builder', () => {
         availability: null,
         isMatchingVariant: expect.any(Boolean),
         scopedPrice: null,
-        scopedPriceDiscounted: expect.any(Boolean),
+        scopedPriceDiscounted: null,
       })
     )
   );
@@ -51,9 +49,7 @@ describe('builder', () => {
             value: expect.any(Object),
           }),
         ]),
-        price: expect.objectContaining({
-          value: expect.any(Object),
-        }),
+        price: null,
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
@@ -68,7 +64,7 @@ describe('builder', () => {
         availability: null,
         isMatchingVariant: expect.any(Boolean),
         scopedPrice: null,
-        scopedPriceDiscounted: expect.any(Boolean),
+        scopedPriceDiscounted: null,
       })
     )
   );
@@ -87,10 +83,7 @@ describe('builder', () => {
             __typename: 'ProductPrice',
           }),
         ]),
-        price: expect.objectContaining({
-          value: expect.any(Object),
-          __typename: 'ProductPrice',
-        }),
+        price: null,
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
