@@ -1,10 +1,10 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductType,
   ProductTypeDraft,
   AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductType = ProductType & {
   attributeDefinitions: {
