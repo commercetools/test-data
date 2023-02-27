@@ -1,0 +1,31 @@
+{
+  "name": "@commercetools-test-data/product-variant",
+  "version": "4.9.0",
+  "description": "Data model for commercetools API ProductVariant",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/product-variant"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-product-variant.cjs.js",
+  "module": "dist/commercetools-test-data-product-variant.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/attribute": "4.9.0",
+    "@commercetools-test-data/commons": "4.9.0",
+    "@commercetools-test-data/core": "4.9.0",
+    "@commercetools-test-data/image": "4.9.0",
+    "@commercetools-test-data/price": "4.9.0",
+    "@commercetools-test-data/utils": "4.9.0",
+    "@commercetools/platform-sdk": "^4.0.0",
+    "@faker-js/faker": "^7.4.0"
+  }
+}

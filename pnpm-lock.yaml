@@ -548,6 +548,30 @@ importers:
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
 
+  models/product-variant:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/attribute': 4.9.0
+      '@commercetools-test-data/commons': 4.9.0
+      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/image': 4.9.0
+      '@commercetools-test-data/price': 4.9.0
+      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools/platform-sdk': ^4.0.0
+      '@faker-js/faker': ^7.4.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/attribute': link:../attribute
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/image': link:../image
+      '@commercetools-test-data/price': link:../price
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+
   models/review:
     specifiers:
       '@babel/runtime': ^7.17.9
