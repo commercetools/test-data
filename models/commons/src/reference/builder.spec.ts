@@ -12,6 +12,7 @@ describe('builder', () => {
       {
         id: expect.any(String),
         typeId: null,
+        key: expect.any(String),
       }
     )
   );
@@ -22,8 +23,10 @@ describe('builder', () => {
       {
         id: expect.any(String),
         typeId: 'product',
+        key: expect.any(String),
         obj: {
           id: expect.any(String),
+          key: expect.any(String),
         },
       }
     )
@@ -36,6 +39,7 @@ describe('builder', () => {
         __typename: 'Reference',
         id: expect.any(String),
         typeId: 'product',
+        key: expect.any(String),
       }
     )
   );
