@@ -1,5 +1,5 @@
-import { Attribute, AttributeDefinition } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { Attribute, AttributeDefinition } from '@commercetools/platform-sdk';
 
 export type TReferenceExpandable = {
   id: String;

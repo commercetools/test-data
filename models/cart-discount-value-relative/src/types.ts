@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CartDiscountValueRelative,
   CartDiscountValueRelativeDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueRelative = CartDiscountValueRelative;
 export type TCartDiscountValueRelativeDraft = CartDiscountValueRelativeDraft;

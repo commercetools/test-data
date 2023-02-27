@@ -1,3 +1,4 @@
 **/dist/
 .cache
-.yarn
+pnpm-lock.yaml
+pnpm-workspace.yaml

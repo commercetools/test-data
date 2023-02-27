@@ -13,7 +13,10 @@ $ yarn add -D @commercetools-test-data/customer
 # Usage
 
 ```ts
-import type { TCustomer, TCustomerDraft } from '@commercetools-test-data/customer';
+import type {
+  TCustomer,
+  TCustomerDraft,
+} from '@commercetools-test-data/customer';
 import * as Customer from '@commercetools-test-data/customer';
 
 const customer = Customer.random().build<TCustomer>();

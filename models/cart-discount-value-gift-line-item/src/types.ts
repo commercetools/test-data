@@ -1,8 +1,8 @@
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
 export type TCartDiscountValueGiftLineItemDraft =

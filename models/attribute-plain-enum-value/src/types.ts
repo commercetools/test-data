@@ -1,5 +1,5 @@
-import { AttributePlainEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { AttributePlainEnumValue } from '@commercetools/platform-sdk';
 
 export type TAttributePlainEnumValue = AttributePlainEnumValue;
 
