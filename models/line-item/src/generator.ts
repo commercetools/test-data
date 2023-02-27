@@ -3,7 +3,7 @@ import * as Channel from '@commercetools-test-data/channel';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import * as Price from '@commercetools-test-data/price';
-// import * as ProductVariant from '@commercetools-test-data/product-variant';
+import * as ProductVariant from '@commercetools-test-data/product-variant';
 import * as TaxRate from '@commercetools-test-data/tax-rate';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode, lineItemMode, priceMode } from './constants';
@@ -21,8 +21,7 @@ const generator = Generator<TLineItem>({
     name: fake(() => LocalizedString.random()),
     productSlug: fake(() => LocalizedString.presets.ofSlugs()),
     productType: fake(() => Reference.random().typeId('product-type')),
-    // TODO: add ProductVariant when rebased on top
-    variant: null,
+    variant: fake(() => ProductVariant.random()),
     price: fake(() => Price.random()),
     taxedPrice: null,
     taxedPricePortions: [],

@@ -22,7 +22,9 @@ describe('builder', () => {
         productType: expect.objectContaining({
           typeId: 'product-type',
         }),
-        variant: null,
+        variant: expect.objectContaining({
+          attributes: expect.any(Array),
+        }),
         price: expect.objectContaining({
           id: expect.any(String),
           value: expect.any(Object),
@@ -76,7 +78,9 @@ describe('builder', () => {
         productType: expect.objectContaining({
           typeId: 'product-type',
         }),
-        variant: null,
+        variant: expect.objectContaining({
+          attributes: expect.any(Array),
+        }),
         price: expect.objectContaining({
           id: expect.any(String),
           value: expect.any(Object),
@@ -132,7 +136,10 @@ describe('builder', () => {
         productTypeRef: expect.objectContaining({
           typeId: 'product-type',
         }),
-        variant: null,
+        variant: expect.objectContaining({
+          attributesRaw: expect.any(Array),
+          __typename: 'ProductVariant',
+        }),
         price: expect.objectContaining({
           id: expect.any(String),
           value: expect.any(Object),
