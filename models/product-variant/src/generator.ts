@@ -17,7 +17,7 @@ const generator = Generator<TProductVariant>({
     images: fake(() => [Image.random()]),
     assets: [],
     availability: null,
-    isMatchingVariant: fake((f) => f.datatype.boolean()),
+    isMatchingVariant: fake(() => false),
     scopedPrice: null,
     scopedPriceDiscounted: null,
   },
