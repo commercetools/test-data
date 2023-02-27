@@ -8,7 +8,7 @@ import {
   taxCalculationMode,
   taxMode,
   taxRoundingMode,
-} from './constants';
+} from '../constants';
 
 // https://docs.commercetools.com/api/projects/carts#cartdraft
 

@@ -1,0 +1,34 @@
+import { Reference } from '@commercetools-test-data/commons';
+import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import * as Money from '@commercetools-test-data/money';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import { inventoryMode } from '../constants';
+import { TLineItemDraft } from '../types';
+
+// https://docs.commercetools.com/api/projects/carts#lineitemdraft
+
+const [addedAt] = createRelatedDates();
+
+const generator = Generator<TLineItemDraft>({
+  fields: {
+    productId: fake((f) => f.datatype.uuid()),
+    sku: fake((f) => f.lorem.word()),
+    quantity: fake((f) =>
+      f.datatype.number({
+        min: 1,
+      })
+    ),
+    variantId: fake((f) => f.datatype.uuid()),
+    supplyChannel: fake(() => Reference.random().typeId('channel')),
+    distributionChannel: fake(() => Reference.random().typeId('channel')),
+    externalTaxRate: null,
+    externalPrice: fake(() => Money.random()),
+    externalTotalPrice: null,
+    custom: null,
+    inventoryMode: oneOf(...Object.values(inventoryMode)),
+    shippingDetails: null,
+    addedAt: fake(addedAt),
+  },
+});
+
+export default generator;
