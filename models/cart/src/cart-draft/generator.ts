@@ -1,6 +1,14 @@
 import { Reference, AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TCartDraft } from '../types';
+import {
+  inventoryMode,
+  origin,
+  shippingMode,
+  taxCalculationMode,
+  taxMode,
+  taxRoundingMode,
+} from './constants';
 
 // https://docs.commercetools.com/api/projects/carts#cartdraft
 
@@ -15,13 +23,31 @@ const generator = Generator<TCartDraft>({
     businessUnit: fake(() => Reference.random().typeId('business-unit')),
     store: null,
     country: fake((f) => f.address.countryCode()),
-    // TODO: create constants, or something?
-    inventoryMode: fake(() => oneOf('TrackOnly', 'ReserveOnOrder', 'None')),
-    taxMode: fake(() =>
-      oneOf('Platform', 'External', 'ExternalAmount', 'Disabled')
+    inventoryMode: fake(() =>
+      oneOf(
+        inventoryMode.TrackOnly,
+        inventoryMode.ReserveOnOrder,
+        inventoryMode.None
+      )
     ),
-    taxRoundingMode: fake(() => oneOf('HalfEven', 'HalfUp', 'HalfDown')),
-    taxCalculationMode: fake(() => oneOf('LineItemLevel', 'UnitPriceLevel')),
+    taxMode: fake(() =>
+      oneOf(
+        taxMode.Platform,
+        taxMode.External,
+        taxMode.ExternalAmount,
+        taxMode.Disabled
+      )
+    ),
+    taxRoundingMode: fake(() =>
+      oneOf(
+        taxRoundingMode.HalfEven,
+        taxRoundingMode.HalfUp,
+        taxRoundingMode.HalfDown
+      )
+    ),
+    taxCalculationMode: fake(() =>
+      oneOf(taxCalculationMode.LineItemLevel, taxCalculationMode.UnitPriceLevel)
+    ),
     // TODO: integrate a `LineItems` model
     lineItems: [],
     customLineItems: [],
@@ -33,8 +59,8 @@ const generator = Generator<TCartDraft>({
     locale: fake((f) => f.random.locale()),
     deleteDaysAfterLastModification: null,
     shippingRateInput: null,
-    origin: fake(() => oneOf('Customer', 'Merchant', 'Quote')),
-    shippingMode: fake(() => oneOf('Single', 'Multiple')),
+    origin: fake(() => oneOf(origin.Customer, origin.Merchant, origin.Quote)),
+    shippingMode: fake(() => oneOf(shippingMode.Single, shippingMode.Multiple)),
     customShipping: null,
     shipping: [],
     itemShippingAddresses: [],
