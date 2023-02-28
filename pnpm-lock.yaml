@@ -154,17 +154,19 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.4.0
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools-test-data/utils': 4.4.0
+      '@commercetools-test-data/commons': 4.9.0
+      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/line-item': 4.9.0
+      '@commercetools-test-data/utils': 4.9.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
       '@babel/runtime': 7.21.0
       '@babel/runtime-corejs3': 7.19.4
-      '@commercetools-test-data/commons': 4.4.0
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools-test-data/utils': 4.4.0
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/line-item': link:../line-item
+      '@commercetools-test-data/utils': link:../../utils
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
 
@@ -2360,37 +2362,6 @@ packages:
       - prettier
       - supports-color
       - typescript
-    dev: false
-
-  /@commercetools-test-data/commons/4.4.0:
-    resolution: {integrity: sha512-C5XWXs/4Ayjf96CCAQGkbnX5TfxTRFTP2BDvfm30007yfeQdRfgvgB+HWqpRDTmHOJFcuncQrsDIUkWsahNkqQ==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.19.4
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools/platform-sdk': 4.5.0
-      '@faker-js/faker': 7.6.0
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
-  /@commercetools-test-data/core/4.4.0:
-    resolution: {integrity: sha512-TivhKE1KO53txHnHp6Hz/wpYVLg9AYUXgzoOX11eytimA3T4BN5sBCAa5cyatidlgUCxIaGlBxOQnETdiRQeXQ==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.19.4
-      '@faker-js/faker': 7.6.0
-      '@types/lodash': 4.14.186
-      lodash: 4.17.21
-    dev: false
-
-  /@commercetools-test-data/utils/4.4.0:
-    resolution: {integrity: sha512-o9jafDjtxtRh8VGbBwgfslvmX12CrR3KJaHOMv00KY9kwquoIBk4ppm6srLxe6XkM/HJDU911H4IShjE0KOH4Q==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.19.4
-      '@faker-js/faker': 7.6.0
     dev: false
 
   /@commercetools/platform-sdk/4.5.0:

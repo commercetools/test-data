@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/cart",
-  "version": "4.4.0",
+  "version": "4.9.0",
   "description": "Data model for commercetools API Cart",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,10 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "4.4.0",
-    "@commercetools-test-data/core": "4.4.0",
-    "@commercetools-test-data/utils": "4.4.0",
+    "@commercetools-test-data/commons": "4.9.0",
+    "@commercetools-test-data/core": "4.9.0",
+    "@commercetools-test-data/utils": "4.9.0",
+    "@commercetools-test-data/line-item": "4.9.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }
