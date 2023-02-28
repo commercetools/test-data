@@ -1,11 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
-  TLineItemDraft,
-  TLineItemDraftGraphql,
-  TLineItemDraftRest,
-} from '../types';
+import { TLineItemDraft, TLineItemDraftGraphql } from '../types';
 import * as LineItemDraft from '.';
 
 describe('builder', () => {
@@ -38,7 +34,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TLineItemDraft, TLineItemDraftRest>(
+    ...createBuilderSpec<TLineItemDraft, TLineItemDraft>(
       'rest',
       LineItemDraft.random(),
       expect.objectContaining({

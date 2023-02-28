@@ -27,13 +27,7 @@ export type TLineItemGraphql = TLineItem & {
 export type TLineItemBuilder = TBuilder<TLineItem>;
 export type TCreateLineItemBuilder = () => TLineItemBuilder;
 
-export type TLineItemDraft = LineItemDraft & {
-  productId: string;
-  sku: string;
-  variantId: string;
-};
-
-export type TLineItemDraftRest = LineItemDraft;
+export type TLineItemDraft = LineItemDraft;
 
 export type TLineItemDraftGraphql = TLineItemDraft & {
   __typename: 'LineItemDraft';

@@ -15,40 +15,19 @@ import { TCartDraft } from '../types';
 
 const generator = Generator<TCartDraft>({
   fields: {
-    currency: fake(() => oneOf('EUR', 'USD')),
+    currency: oneOf('EUR', 'USD'),
     key: fake((f) => f.lorem.slug(2)),
-    customerId: null,
+    customerId: fake((f) => f.datatype.uuid()),
     customerEmail: fake((f) => f.internet.email()),
     customerGroup: fake(() => Reference.random().typeId('customer-group')),
-    anonymousId: null,
+    anonymousId: fake((f) => f.datatype.uuid()),
     businessUnit: fake(() => Reference.random().typeId('business-unit')),
     store: null,
     country: fake((f) => f.address.countryCode()),
-    inventoryMode: fake(() =>
-      oneOf(
-        inventoryMode.TrackOnly,
-        inventoryMode.ReserveOnOrder,
-        inventoryMode.None
-      )
-    ),
-    taxMode: fake(() =>
-      oneOf(
-        taxMode.Platform,
-        taxMode.External,
-        taxMode.ExternalAmount,
-        taxMode.Disabled
-      )
-    ),
-    taxRoundingMode: fake(() =>
-      oneOf(
-        taxRoundingMode.HalfEven,
-        taxRoundingMode.HalfUp,
-        taxRoundingMode.HalfDown
-      )
-    ),
-    taxCalculationMode: fake(() =>
-      oneOf(taxCalculationMode.LineItemLevel, taxCalculationMode.UnitPriceLevel)
-    ),
+    inventoryMode: oneOf(...Object.values(inventoryMode)),
+    taxMode: oneOf(...Object.values(taxMode)),
+    taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
+    taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
     lineItems: fake(() => [LineItem.LineItemDraft.random()]),
     customLineItems: [],
     shippingAddress: fake(() => AddressDraft.random()),
@@ -59,8 +38,8 @@ const generator = Generator<TCartDraft>({
     locale: fake((f) => f.random.locale()),
     deleteDaysAfterLastModification: null,
     shippingRateInput: null,
-    origin: fake(() => oneOf(origin.Customer, origin.Merchant, origin.Quote)),
-    shippingMode: fake(() => oneOf(shippingMode.Single, shippingMode.Multiple)),
+    origin: oneOf(...Object.values(origin)),
+    shippingMode: oneOf(...Object.values(shippingMode)),
     customShipping: null,
     shipping: [],
     itemShippingAddresses: [],

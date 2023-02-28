@@ -2,6 +2,7 @@ import {
   LocalizedString,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TLineItem, TLineItemGraphql, TLineItemRest } from './types';
 
@@ -62,21 +63,20 @@ const transformers = {
       const productSlugAllLocales = LocalizedString.toLocalizedField(
         fields.productSlug
       );
-      const supplyChannelRef: TReferenceGraphql = {
-        id: fields.supplyChannel.id,
-        typeId: 'channel',
-        __typename: 'Reference',
-      };
-      const distributionChannelRef: TReferenceGraphql = {
-        id: fields.distributionChannel.id,
-        typeId: 'channel',
-        __typename: 'Reference',
-      };
-      const productTypeRef: TReferenceGraphql = {
-        id: fields.productType.id,
-        typeId: 'product-type',
-        __typename: 'Reference',
-      };
+      const supplyChannelRef: TReferenceGraphql = Reference.random()
+        .id(fields.supplyChannel.id)
+        .typeId('channel')
+        .buildGraphql();
+
+      const distributionChannelRef: TReferenceGraphql = Reference.random()
+        .id(fields.distributionChannel.id)
+        .typeId('channel')
+        .buildGraphql();
+
+      const productTypeRef: TReferenceGraphql = Reference.random()
+        .id(fields.distributionChannel.id)
+        .typeId('product-type')
+        .buildGraphql();
 
       return {
         nameAllLocales,
