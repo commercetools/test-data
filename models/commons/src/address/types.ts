@@ -8,7 +8,7 @@ export type TAddressGraphql = TAddress & {
   __typename: 'Address';
 };
 export type TAddressDraftGraphql = TAddressDraft & {
-  __typename: 'AddressInput';
+  __typename: 'AddressDraft';
 };
 
 export type TAddressBuilder = TBuilder<TAddress>;

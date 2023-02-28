@@ -76,7 +76,7 @@ describe('builder', () => {
       'graphql',
       AddressDraft.random(),
       expect.objectContaining({
-        __typename: 'AddressInput',
+        __typename: 'AddressDraft',
         // ...
       })
     )

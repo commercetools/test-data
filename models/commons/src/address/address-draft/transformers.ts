@@ -6,7 +6,7 @@ const transformers = {
   rest: Transformer<TAddressDraft, TAddressDraft>('rest', {}),
   graphql: Transformer<TAddressDraft, TAddressDraftGraphql>('graphql', {
     addFields: () => ({
-      __typename: 'AddressInput',
+      __typename: 'AddressDraft',
     }),
   }),
 };
