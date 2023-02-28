@@ -1,6 +1,6 @@
 import { Reference, AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TCartDraft } from '../types';
+import * as LineItem from '@commercetools-test-data/line-item';
 import {
   inventoryMode,
   origin,
@@ -9,6 +9,7 @@ import {
   taxMode,
   taxRoundingMode,
 } from '../constants';
+import { TCartDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/carts#cartdraft
 
@@ -48,8 +49,7 @@ const generator = Generator<TCartDraft>({
     taxCalculationMode: fake(() =>
       oneOf(taxCalculationMode.LineItemLevel, taxCalculationMode.UnitPriceLevel)
     ),
-    // TODO: integrate a `LineItems` model
-    lineItems: [],
+    lineItems: fake(() => [LineItem.LineItemDraft.random()]),
     customLineItems: [],
     shippingAddress: fake(() => AddressDraft.random()),
     billingAddress: fake(() => AddressDraft.random()),
