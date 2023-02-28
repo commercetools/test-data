@@ -23,6 +23,7 @@
     "@commercetools-test-data/core": "4.9.0",
     "@commercetools-test-data/utils": "4.9.0",
     "@commercetools-test-data/line-item": "4.9.0",
+    "@commercetools-test-data/cent-precision-money": "4.9.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }

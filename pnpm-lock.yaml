@@ -154,6 +154,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/cent-precision-money': 4.9.0
       '@commercetools-test-data/commons': 4.9.0
       '@commercetools-test-data/core': 4.9.0
       '@commercetools-test-data/line-item': 4.9.0
@@ -163,6 +164,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.21.0
       '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
       '@commercetools-test-data/commons': link:../commons
       '@commercetools-test-data/core': link:../../core
       '@commercetools-test-data/line-item': link:../line-item
