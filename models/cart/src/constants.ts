@@ -32,3 +32,10 @@ export const shippingMode = {
   Single: 'Single',
   Multiple: 'Multiple',
 };
+
+export const cartState = {
+  Active: 'Active',
+  Merged: 'Merged',
+  Ordered: 'Ordered',
+  Frozen: 'Frozen',
+};

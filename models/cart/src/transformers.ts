@@ -3,13 +3,40 @@ import type { TCart, TCartGraphql } from './types';
 
 const transformers = {
   default: Transformer<TCart, TCart>('default', {
-    buildFields: [],
+    buildFields: [
+      'customerGroup',
+      'businessUnit',
+      'lineItems',
+      'shippingAddress',
+      'billingAddress',
+      'totalPrice',
+      'refusedGifts',
+      'createdBy',
+    ],
   }),
   rest: Transformer<TCart, TCart>('rest', {
-    buildFields: [],
+    buildFields: [
+      'customerGroup',
+      'businessUnit',
+      'lineItems',
+      'shippingAddress',
+      'billingAddress',
+      'totalPrice',
+      'refusedGifts',
+      'createdBy',
+    ],
   }),
   graphql: Transformer<TCart, TCartGraphql>('graphql', {
-    buildFields: [],
+    buildFields: [
+      'customerGroup',
+      'businessUnit',
+      'lineItems',
+      'shippingAddress',
+      'billingAddress',
+      'totalPrice',
+      'refusedGifts',
+      'createdBy',
+    ],
     addFields: () => ({
       __typename: 'Cart',
     }),
