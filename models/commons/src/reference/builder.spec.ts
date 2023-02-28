@@ -12,7 +12,12 @@ describe('builder', () => {
       {
         id: expect.any(String),
         typeId: null,
-        key: expect.any(String),
+        /**
+         * `key` or `id` is required. In this case, we choose to leave `key` as
+         * `null` so that random generations of this model doesn't yield a reference
+         * with both a `key` and `id`, which would be illegal.
+         */
+        key: null,
       }
     )
   );
@@ -23,10 +28,10 @@ describe('builder', () => {
       {
         id: expect.any(String),
         typeId: 'product',
-        key: expect.any(String),
+        key: null,
         obj: {
           id: expect.any(String),
-          key: expect.any(String),
+          key: null,
         },
       }
     )
@@ -39,7 +44,7 @@ describe('builder', () => {
         __typename: 'Reference',
         id: expect.any(String),
         typeId: 'product',
-        key: expect.any(String),
+        key: null,
       }
     )
   );
