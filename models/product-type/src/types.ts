@@ -1,20 +1,19 @@
+import { TAttributeDefinitionGraphql } from '@commercetools-test-data/attribute-definition';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductType,
   ProductTypeDraft,
-  AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
 
-export type TProductType = ProductType & {
-  attributeDefinitions: {
-    results: Array<AttributeDefinition>;
-    __typename: 'AttributeDefinitionResult';
-  };
-};
+export type TProductType = ProductType;
 
 export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
   __typename: 'ProductTypeDefinition';
+  attributeDefinitions: {
+    results: Array<TAttributeDefinitionGraphql>;
+    __typename: 'AttributeDefinitionResult';
+  };
 };
 
 export type TProductTypeDraft = ProductTypeDraft & {

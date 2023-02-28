@@ -16,10 +16,6 @@ const generator = Generator<TProductType>({
     name: fake((f) => f.name.fullName()),
     description: fake((f) => f.random.words()),
     attributes: fake(() => [AttributeDefinition.random()]),
-    attributeDefinitions: fake(() => ({
-      results: [AttributeDefinition.random()],
-      __typename: 'AttributeDefinitionResult',
-    })),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
