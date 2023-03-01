@@ -40,7 +40,7 @@ const generator = Generator<TCartDraft>({
     shippingRateInput: null,
     origin: oneOf(...Object.values(origin)),
     shippingMode: oneOf(...Object.values(shippingMode)),
-    customShipping: null,
+    customShipping: [],
     shipping: [],
     itemShippingAddresses: [],
     discountCodes: fake((f) => [f.random.word()]),
