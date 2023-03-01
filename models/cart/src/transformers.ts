@@ -12,6 +12,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'itemShippingAddresses',
     ],
   }),
   rest: Transformer<TCart, TCart>('rest', {
@@ -24,6 +25,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'itemShippingAddresses',
     ],
   }),
   graphql: Transformer<TCart, TCartGraphql>('graphql', {
@@ -36,6 +38,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'itemShippingAddresses',
     ],
     addFields: () => ({
       __typename: 'Cart',

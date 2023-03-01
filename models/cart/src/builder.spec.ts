@@ -52,7 +52,13 @@ describe('builder', () => {
         origin: expect.any(String),
         shippingMode: expect.any(String),
         shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
+        itemShippingAddresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+        ]),
         discountCodes: expect.arrayContaining([expect.any(String)]),
         totalPrice: expect.objectContaining({
           centAmount: expect.any(Number),
@@ -120,7 +126,13 @@ describe('builder', () => {
         origin: expect.any(String),
         shippingMode: expect.any(String),
         shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
+        itemShippingAddresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+        ]),
         discountCodes: expect.arrayContaining([expect.any(String)]),
         totalPrice: expect.objectContaining({
           centAmount: expect.any(Number),
@@ -193,7 +205,14 @@ describe('builder', () => {
         origin: expect.any(String),
         shippingMode: expect.any(String),
         shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
+        itemShippingAddresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+            __typename: 'Address',
+          }),
+        ]),
         discountCodes: expect.arrayContaining([expect.any(String)]),
         totalPrice: expect.objectContaining({
           centAmount: expect.any(Number),
