@@ -150,6 +150,28 @@ importers:
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
 
+  models/cart:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/cent-precision-money': 4.9.0
+      '@commercetools-test-data/commons': 4.9.0
+      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/line-item': 4.9.0
+      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools/platform-sdk': ^4.0.0
+      '@faker-js/faker': ^7.4.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/line-item': link:../line-item
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+
   models/cart-discount:
     specifiers:
       '@babel/runtime': ^7.17.9
@@ -407,6 +429,36 @@ importers:
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
       lodash: 4.17.21
+
+  models/line-item:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/cent-precision-money': 4.9.0
+      '@commercetools-test-data/channel': 4.9.0
+      '@commercetools-test-data/commons': 4.9.0
+      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/money': 4.9.0
+      '@commercetools-test-data/price': 4.9.0
+      '@commercetools-test-data/product-variant': 4.9.0
+      '@commercetools-test-data/tax-rate': 4.9.0
+      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools/platform-sdk': ^4.0.0
+      '@faker-js/faker': ^7.4.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
+      '@commercetools-test-data/channel': link:../channel
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/money': link:../money
+      '@commercetools-test-data/price': link:../price
+      '@commercetools-test-data/product-variant': link:../product-variant
+      '@commercetools-test-data/tax-rate': link:../tax-rate
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
 
   models/money:
     specifiers:
