@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/cart-discount",
-  "version": "4.9.0",
+  "version": "4.10.0",
   "description": "Data model for commercetools API CartDiscount",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,13 +19,13 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/cart-discount-value-absolute": "4.9.0",
-    "@commercetools-test-data/cart-discount-value-fixed": "4.9.0",
-    "@commercetools-test-data/cart-discount-value-gift-line-item": "4.9.0",
-    "@commercetools-test-data/cart-discount-value-relative": "4.9.0",
-    "@commercetools-test-data/commons": "4.9.0",
-    "@commercetools-test-data/core": "4.9.0",
-    "@commercetools-test-data/utils": "4.9.0",
+    "@commercetools-test-data/cart-discount-value-absolute": "4.10.0",
+    "@commercetools-test-data/cart-discount-value-fixed": "4.10.0",
+    "@commercetools-test-data/cart-discount-value-gift-line-item": "4.10.0",
+    "@commercetools-test-data/cart-discount-value-relative": "4.10.0",
+    "@commercetools-test-data/commons": "4.10.0",
+    "@commercetools-test-data/core": "4.10.0",
+    "@commercetools-test-data/utils": "4.10.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }
