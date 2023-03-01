@@ -78,6 +78,12 @@ describe('builder', () => {
         lastModifiedBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
+        totalLineItemQuantity: expect.any(Number),
+        shippingInfo: null,
+        directDiscounts: expect.arrayContaining([]),
+        taxedPrice: null,
+        taxedShippingPrice: null,
+        paymentInfo: null,
       })
     )
   );
@@ -155,6 +161,12 @@ describe('builder', () => {
         lastModifiedBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
+        totalLineItemQuantity: expect.any(Number),
+        shippingInfo: null,
+        directDiscounts: expect.arrayContaining([]),
+        taxedPrice: null,
+        taxedShippingPrice: null,
+        paymentInfo: null,
       })
     )
   );
@@ -242,6 +254,12 @@ describe('builder', () => {
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),
         }),
+        totalLineItemQuantity: expect.any(Number),
+        shippingInfo: null,
+        directDiscounts: expect.arrayContaining([]),
+        taxedPrice: null,
+        taxedShippingPrice: null,
+        paymentInfo: null,
         __typename: 'Cart',
       })
     )
