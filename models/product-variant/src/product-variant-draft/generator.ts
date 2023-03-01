@@ -12,7 +12,7 @@ const generator = Generator<TProductVariantDraft>({
     sku: fake((f) => f.random.word()),
     prices: fake(() => [Price.PriceDraft.random()]),
     attributes: fake(() => [Attribute.AttributeDraft.random()]),
-    images: fake(() => [Image.random()]),
+    images: fake(() => [Image.ImageDraft.random()]),
     assets: [],
   },
 });

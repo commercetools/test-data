@@ -74,13 +74,14 @@ describe('builder', () => {
         ]),
         images: expect.arrayContaining([
           expect.objectContaining({
+            label: expect.any(String),
             url: expect.any(String),
-            /**
-             * This is not the correct typename, but it saves us from having to create a dummy ImageDraft.
-             *
-             * TODO: pull in ImageDraft in the generator when it's created
-             */
-            __typename: 'Image',
+            dimensions: expect.objectContaining({
+              w: expect.any(Number),
+              h: expect.any(Number),
+              __typename: 'DimensionsInput',
+            }),
+            __typename: 'ImageInput',
           }),
         ]),
         attributes: expect.arrayContaining([
