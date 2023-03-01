@@ -13,7 +13,7 @@ describe('builder', () => {
         productId: expect.any(String),
         sku: expect.any(String),
         quantity: expect.any(Number),
-        variantId: expect.any(String),
+        variantId: expect.any(Number),
         supplyChannel: expect.objectContaining({
           typeId: 'channel',
         }),
@@ -38,7 +38,10 @@ describe('builder', () => {
       'rest',
       LineItemDraft.random(),
       expect.objectContaining({
+        productId: expect.any(String),
+        sku: expect.any(String),
         quantity: expect.any(Number),
+        variantId: expect.any(Number),
         supplyChannel: expect.objectContaining({
           typeId: 'channel',
         }),
@@ -66,7 +69,7 @@ describe('builder', () => {
         productId: expect.any(String),
         sku: expect.any(String),
         quantity: expect.any(Number),
-        variantId: expect.any(String),
+        variantId: expect.any(Number),
         supplyChannel: expect.objectContaining({
           typeId: 'channel',
           __typename: 'Reference',

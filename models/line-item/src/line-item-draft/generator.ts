@@ -1,5 +1,10 @@
 import { Reference } from '@commercetools-test-data/commons';
-import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import {
+  fake,
+  Generator,
+  oneOf,
+  sequence,
+} from '@commercetools-test-data/core';
 import * as Money from '@commercetools-test-data/money';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode } from '../constants';
@@ -18,7 +23,7 @@ const generator = Generator<TLineItemDraft>({
         min: 1,
       })
     ),
-    variantId: fake((f) => f.datatype.uuid()),
+    variantId: sequence(),
     supplyChannel: fake(() => Reference.random().typeId('channel')),
     distributionChannel: fake(() => Reference.random().typeId('channel')),
     externalTaxRate: null,
