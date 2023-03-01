@@ -1877,21 +1877,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/attribute@4.9.0, @commercetools-test-data/attribute@workspace:models/attribute":
-  version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/attribute@workspace:models/attribute"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-    "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/attribute-definition": 4.9.0
-    "@commercetools-test-data/commons": 4.9.0
-    "@commercetools-test-data/core": 4.9.0
-    "@commercetools-test-data/utils": 4.9.0
-    "@commercetools/platform-sdk": ^4.0.0
-    "@faker-js/faker": ^7.4.0
-  languageName: unknown
-  linkType: soft
-
 "@commercetools-test-data/cart-discount-value-absolute@4.9.0, @commercetools-test-data/cart-discount-value-absolute@workspace:models/cart-discount-value-absolute":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/cart-discount-value-absolute@workspace:models/cart-discount-value-absolute"
@@ -1970,7 +1955,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/category@4.9.0, @commercetools-test-data/category@workspace:models/category":
+"@commercetools-test-data/category@workspace:models/category":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/category@workspace:models/category"
   dependencies:
@@ -2038,21 +2023,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/customer-group@workspace:models/customer-group":
-  version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/customer-group@workspace:models/customer-group"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-    "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/commons": 4.9.0
-    "@commercetools-test-data/core": 4.9.0
-    "@commercetools-test-data/utils": 4.9.0
-    "@commercetools/platform-sdk": ^4.0.0
-    "@faker-js/faker": ^7.4.0
-    lodash: ^4.17.21
-  languageName: unknown
-  linkType: soft
-
 "@commercetools-test-data/customer@workspace:models/customer":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/customer@workspace:models/customer"
@@ -2081,7 +2051,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/image@4.9.0, @commercetools-test-data/image@workspace:models/image":
+"@commercetools-test-data/image@workspace:models/image":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/image@workspace:models/image"
   dependencies:
@@ -2143,28 +2113,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/price@4.9.0, @commercetools-test-data/price@workspace:models/price":
+"@commercetools-test-data/price@workspace:models/price":
   version: 0.0.0-use.local
   resolution: "@commercetools-test-data/price@workspace:models/price"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
     "@commercetools-test-data/cent-precision-money": 4.9.0
-    "@commercetools-test-data/commons": 4.9.0
-    "@commercetools-test-data/core": 4.9.0
-    "@commercetools-test-data/utils": 4.9.0
-    "@commercetools/platform-sdk": ^4.0.0
-    "@faker-js/faker": ^7.4.0
-  languageName: unknown
-  linkType: soft
-
-"@commercetools-test-data/product-data@workspace:models/product-data":
-  version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/product-data@workspace:models/product-data"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-    "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/category": 4.9.0
     "@commercetools-test-data/commons": 4.9.0
     "@commercetools-test-data/core": 4.9.0
     "@commercetools-test-data/utils": 4.9.0
@@ -2234,17 +2189,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@commercetools-test-data/product-variant@workspace:models/product-variant":
+"@commercetools-test-data/product-type@workspace:models/product-type":
   version: 0.0.0-use.local
-  resolution: "@commercetools-test-data/product-variant@workspace:models/product-variant"
+  resolution: "@commercetools-test-data/product-type@workspace:models/product-type"
   dependencies:
     "@babel/runtime": ^7.17.9
     "@babel/runtime-corejs3": ^7.17.9
-    "@commercetools-test-data/attribute": 4.9.0
+    "@commercetools-test-data/attribute-definition": 4.9.0
     "@commercetools-test-data/commons": 4.9.0
     "@commercetools-test-data/core": 4.9.0
-    "@commercetools-test-data/image": 4.9.0
-    "@commercetools-test-data/price": 4.9.0
     "@commercetools-test-data/utils": 4.9.0
     "@commercetools/platform-sdk": ^4.0.0
     "@faker-js/faker": ^7.4.0
