@@ -31,11 +31,11 @@ export const origin = {
 export const shippingMode = {
   Single: 'Single',
   Multiple: 'Multiple',
-};
+} as const;
 
 export const cartState = {
   Active: 'Active',
   Merged: 'Merged',
   Ordered: 'Ordered',
   Frozen: 'Frozen',
-};
+} as const;
