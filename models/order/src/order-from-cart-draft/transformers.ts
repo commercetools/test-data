@@ -3,16 +3,16 @@ import type { TOrderFromCartDraft, TOrderFromCartDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TOrderFromCartDraft, TOrderFromCartDraft>('default', {
-    buildFields: [],
+    buildFields: ['cart', 'state'],
   }),
   rest: Transformer<TOrderFromCartDraft, TOrderFromCartDraft>('rest', {
-    buildFields: [],
+    buildFields: ['cart', 'state'],
   }),
   graphql: Transformer<TOrderFromCartDraft, TOrderFromCartDraftGraphql>(
     'graphql',
     {
-      buildFields: [],
-      addFields: () => ({ __typename: 'MoneyInput' }),
+      buildFields: ['cart', 'state'],
+      addFields: () => ({ __typename: 'OrderCartCommand' }),
     }
   ),
 };
