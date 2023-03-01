@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/attribute": "4.10.0",
+    "@commercetools-test-data/attribute": "0.0.0-canary-20230301164401",
     "@commercetools-test-data/commons": "4.10.0",
     "@commercetools-test-data/core": "4.10.0",
     "@commercetools-test-data/image": "4.10.0",

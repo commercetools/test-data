@@ -644,7 +644,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/attribute': 4.10.0
+      '@commercetools-test-data/attribute': 0.0.0-canary-20230301164401
       '@commercetools-test-data/commons': 4.10.0
       '@commercetools-test-data/core': 4.10.0
       '@commercetools-test-data/image': 4.10.0
@@ -655,7 +655,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.21.0
       '@babel/runtime-corejs3': 7.19.4
-      '@commercetools-test-data/attribute': link:../attribute
+      '@commercetools-test-data/attribute': 0.0.0-canary-20230301164401
       '@commercetools-test-data/commons': link:../commons
       '@commercetools-test-data/core': link:../../core
       '@commercetools-test-data/image': link:../image
@@ -2404,6 +2404,82 @@ packages:
       - prettier
       - supports-color
       - typescript
+    dev: false
+
+  /@commercetools-test-data/attribute-definition/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-AfX9WykTWIt/XR4rHdarrKV76vwpPgUwuFuKX+UHobOeM4AokPPAHQ5CYQ2rldtFbtjlp8tl0ubGmpHkT1G4ow==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/attribute-type': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/commons': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/core': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/utils': 0.0.0-canary-20230301164401
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/attribute-type/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-cjha0rnf2uGhH9GjxswONCZLq22RdvHSNYYR3L3gv6G5U4mRxMJ43/w4SX5UcMPiAUpWow6xV9ND73C7VltoqQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/commons': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/core': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/utils': 0.0.0-canary-20230301164401
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/attribute/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-P4SpWpnSL0sYIOtvgUAZ0vQaXKJCVws/w3HCn65AXNGxoNcTsnQa7KlUw8wx+IYAXHSmWCUpPfqItWdGxZwwaA==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/attribute-definition': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/commons': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/core': 0.0.0-canary-20230301164401
+      '@commercetools-test-data/utils': 0.0.0-canary-20230301164401
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/commons/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-dr7OvGrrja7fi/AEep6vYotX0qVRlcit4kj74Z1vpkb8qJTRz5nooRJuSVPwyqPAb121vFHCpn3LNRzPaGRRpw==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@commercetools-test-data/core': 0.0.0-canary-20230301164401
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+      '@types/lodash': 4.14.186
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/core/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-7UsD0sUpASo25vQvBV9VuHBltx8anUkJQ0QGJoDEUt1aJ+Zt2qXT3UmjWlxTwfi0xIE/Yv5H4z9T+nNHJ8340A==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@faker-js/faker': 7.6.0
+      '@types/lodash': 4.14.186
+      lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/utils/0.0.0-canary-20230301164401:
+    resolution: {integrity: sha512-9kQTfQ13TfuXQ3CritiI14/dvsd4YQCNao3BHtcdZG/7U75Po6ITo/C5+m9kAuO4DBNUBhWNqQmwwzoLc7aw1g==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.19.4
+      '@faker-js/faker': 7.6.0
     dev: false
 
   /@commercetools/platform-sdk/4.5.0:
