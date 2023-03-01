@@ -12,6 +12,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'lastModifiedBy',
       'itemShippingAddresses',
     ],
   }),
@@ -25,6 +26,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'lastModifiedBy',
       'itemShippingAddresses',
     ],
   }),
@@ -38,6 +40,7 @@ const transformers = {
       'totalPrice',
       'refusedGifts',
       'createdBy',
+      'lastModifiedBy',
       'itemShippingAddresses',
     ],
     addFields: () => ({

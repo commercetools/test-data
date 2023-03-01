@@ -75,6 +75,9 @@ describe('builder', () => {
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
       })
     )
   );
@@ -147,6 +150,9 @@ describe('builder', () => {
           }),
         ]),
         createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
       })
@@ -229,6 +235,10 @@ describe('builder', () => {
           }),
         ]),
         createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+        }),
+        lastModifiedBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),
         }),

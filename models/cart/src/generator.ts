@@ -60,6 +60,7 @@ const generator = Generator<TCart>({
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
+    lastModifiedBy: fake(() => ClientLogging.random()),
     cartState: oneOf(...Object.values(cartState)),
     refusedGifts: fake(() => [Reference.random().typeId('cart-discount')]),
   },
