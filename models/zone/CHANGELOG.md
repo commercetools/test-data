@@ -1,5 +1,22 @@
 # @commercetools-test-data/zone
 
+## 4.10.0
+
+### Minor Changes
+
+- [#205](https://github.com/commercetools/test-data/pull/205) [`d6b7d6e`](https://github.com/commercetools/test-data/commit/d6b7d6ea8cc7c9ed7b91e3aa63170680b98295b5) Thanks [@jaikamat](https://github.com/jaikamat)! - adjust Zone preset and extend Channels presets
+
+- [#204](https://github.com/commercetools/test-data/pull/204) [`a51ad67`](https://github.com/commercetools/test-data/commit/a51ad67d19d08c73eee82011069bdc8585015914) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Adds presets specific to `Sample-Data-Fashion`.
+
+### Patch Changes
+
+- [#159](https://github.com/commercetools/test-data/pull/159) [`c6d5c43`](https://github.com/commercetools/test-data/commit/c6d5c438d994c83d1578809f1ab8d54ce9a333cb) Thanks [@emmenko](https://github.com/emmenko)! - Use pnpm as the package manager
+
+- Updated dependencies [[`ba91abc`](https://github.com/commercetools/test-data/commit/ba91abca0afd7ca67f9bc68a30cfdc2ce0f728c6), [`c6d5c43`](https://github.com/commercetools/test-data/commit/c6d5c438d994c83d1578809f1ab8d54ce9a333cb)]:
+  - @commercetools-test-data/commons@4.10.0
+  - @commercetools-test-data/core@4.10.0
+  - @commercetools-test-data/utils@4.10.0
+
 ## 4.9.0
 
 ### Patch Changes

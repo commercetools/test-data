@@ -78,10 +78,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/attribute-definition': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/attribute-definition': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -98,10 +98,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/attribute-type': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/attribute-type': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -118,9 +118,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -136,9 +136,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -154,11 +154,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/line-item': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/line-item': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -176,13 +176,13 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cart-discount-value-absolute': 4.9.0
-      '@commercetools-test-data/cart-discount-value-fixed': 4.9.0
-      '@commercetools-test-data/cart-discount-value-gift-line-item': 4.9.0
-      '@commercetools-test-data/cart-discount-value-relative': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cart-discount-value-absolute': 4.10.0
+      '@commercetools-test-data/cart-discount-value-fixed': 4.10.0
+      '@commercetools-test-data/cart-discount-value-gift-line-item': 4.10.0
+      '@commercetools-test-data/cart-discount-value-relative': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -202,11 +202,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/money': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/money': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -224,11 +224,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/money': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/money': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -246,9 +246,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -264,9 +264,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -282,9 +282,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
       '@types/lodash': ^4.14.182
@@ -304,9 +304,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -322,9 +322,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -340,7 +340,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/core': 4.9.0
+      '@commercetools-test-data/core': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
       '@types/lodash': ^4.14.182
@@ -358,9 +358,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -376,9 +376,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
       lodash: ^4.17.21
@@ -396,9 +396,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -414,9 +414,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
       lodash: ^4.17.21
@@ -434,15 +434,15 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/channel': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/money': 4.9.0
-      '@commercetools-test-data/price': 4.9.0
-      '@commercetools-test-data/product-variant': 4.9.0
-      '@commercetools-test-data/tax-rate': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/channel': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/money': 4.10.0
+      '@commercetools-test-data/price': 4.10.0
+      '@commercetools-test-data/product-variant': 4.10.0
+      '@commercetools-test-data/tax-rate': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -464,9 +464,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -482,10 +482,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -502,10 +502,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/product-data': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/product-data': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -522,10 +522,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/category': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/category': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -542,12 +542,12 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/product-discount-value-absolute': 4.9.0
-      '@commercetools-test-data/product-discount-value-external': 4.9.0
-      '@commercetools-test-data/product-discount-value-relative': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/product-discount-value-absolute': 4.10.0
+      '@commercetools-test-data/product-discount-value-external': 4.10.0
+      '@commercetools-test-data/product-discount-value-relative': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -566,11 +566,11 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/cent-precision-money': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/money': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/money': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -588,9 +588,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -606,9 +606,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -624,10 +624,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/attribute-definition': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/attribute-definition': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -644,12 +644,12 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/attribute': 4.9.0
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/image': 4.9.0
-      '@commercetools-test-data/price': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/attribute': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/image': 4.10.0
+      '@commercetools-test-data/price': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -668,9 +668,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -686,10 +686,10 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/tax-rate': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/tax-rate': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -706,9 +706,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
@@ -724,9 +724,9 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.9.0
-      '@commercetools-test-data/core': 4.9.0
-      '@commercetools-test-data/utils': 4.9.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
       lodash: ^4.17.21

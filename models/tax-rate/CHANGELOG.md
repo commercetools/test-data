@@ -1,5 +1,20 @@
 # @commercetools-test-data/tax-rate
 
+## 4.10.0
+
+### Minor Changes
+
+- [#208](https://github.com/commercetools/test-data/pull/208) [`c97c711`](https://github.com/commercetools/test-data/commit/c97c7115dbf01efdcf2cc6e2ce27fada9c5a554a) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Update export for `TaxRateDraft` and add sample data preset for `TaxCategoryDraft`.
+
+### Patch Changes
+
+- [#159](https://github.com/commercetools/test-data/pull/159) [`c6d5c43`](https://github.com/commercetools/test-data/commit/c6d5c438d994c83d1578809f1ab8d54ce9a333cb) Thanks [@emmenko](https://github.com/emmenko)! - Use pnpm as the package manager
+
+- Updated dependencies [[`ba91abc`](https://github.com/commercetools/test-data/commit/ba91abca0afd7ca67f9bc68a30cfdc2ce0f728c6), [`c6d5c43`](https://github.com/commercetools/test-data/commit/c6d5c438d994c83d1578809f1ab8d54ce9a333cb)]:
+  - @commercetools-test-data/commons@4.10.0
+  - @commercetools-test-data/core@4.10.0
+  - @commercetools-test-data/utils@4.10.0
+
 ## 4.9.0
 
 ### Patch Changes
