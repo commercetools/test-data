@@ -1,4 +1,3 @@
-import { fake, oneOf } from '@commercetools-test-data/core';
 import type { TAddressDraft } from '../../types';
 import empty from './empty';
 

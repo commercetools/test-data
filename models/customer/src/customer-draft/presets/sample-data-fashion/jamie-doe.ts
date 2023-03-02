@@ -1,6 +1,6 @@
 import { AddressDraft, Reference } from '@commercetools-test-data/commons';
-import * as CustomerGroup from '@commercetools-test-data/customer-group';
 import type { TCustomerGroupDraft } from '@commercetools-test-data/customer-group';
+import * as CustomerGroup from '@commercetools-test-data/customer-group';
 import { TCustomerDraftBuilder } from '../../../types';
 import CustomerDraft from '../../builder';
 
@@ -28,6 +28,7 @@ const jamieDoe = (): TCustomerDraftBuilder =>
     ])
     .customerGroup(
       Reference.random().key(customerGroup.key!).typeId('customer-group')
-    );
+    )
+    .isEmailVerified(false);
 
 export default jamieDoe;

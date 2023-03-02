@@ -9,19 +9,20 @@ describe('with the preset `jamieDoe`', () => {
     expect(customer.email).toMatchInlineSnapshot(`"jamie.doe@example.com"`);
     expect(customer.firstName).toMatchInlineSnapshot(`"Jamie"`);
     expect(customer.lastName).toMatchInlineSnapshot(`"Doe"`);
-    //   expect(customer.addresses).toMatchInlineSnapshot(`
-    //     [{
-    //       "firstName": "Jamie",
-    //       "lastName": "Doe",
-    //       "streetName": "Main Street",
-    //       "streetNumber": "1",
-    //       "postalCode": "56789",
-    //       "city": "Mainville",
-    //       "state": "New Jersey",
-    //       "country": "US",
-    //     }]
-    //   `);
+
+    expect(customer.addresses![0].firstName).toMatchInlineSnapshot(`"Jamie"`);
+    expect(customer.addresses![0].lastName).toMatchInlineSnapshot(`"Doe"`);
+    expect(customer.addresses![0].streetName).toMatchInlineSnapshot(
+      `"Main Street"`
+    );
+    expect(customer.addresses![0].streetNumber).toMatchInlineSnapshot(`"1"`);
+    expect(customer.addresses![0].postalCode).toMatchInlineSnapshot(`"56789"`);
+    expect(customer.addresses![0].city).toMatchInlineSnapshot(`"Mainville"`);
+    expect(customer.addresses![0].state).toMatchInlineSnapshot(`"New Jersey"`);
+    expect(customer.addresses![0].country).toMatchInlineSnapshot(`"US"`);
+
     expect(customer.customerGroup!.key).toMatchInlineSnapshot('"vip"');
+    expect(customer.isEmailVerified).toMatchInlineSnapshot(`false`);
   });
 
   it('should return a customer draft with name `Jamie Doe` when built for GraphQL', () => {
@@ -31,18 +32,19 @@ describe('with the preset `jamieDoe`', () => {
     expect(customer.email).toMatchInlineSnapshot(`"jamie.doe@example.com"`);
     expect(customer.firstName).toMatchInlineSnapshot(`"Jamie"`);
     expect(customer.lastName).toMatchInlineSnapshot(`"Doe"`);
-    //   expect(customer.addresses).toMatchInlineSnapshot(`
-    //     [{
-    //       "firstName": "Jamie",
-    //       "lastName": "Doe",
-    //       "streetName": "Main Street",
-    //       "streetNumber": "1",
-    //       "postalCode": "56789",
-    //       "city": "Mainville",
-    //       "state": "New Jersey",
-    //       "country": "US",
-    //     }]
-    //   `);
+
+    expect(customer.addresses![0].firstName).toMatchInlineSnapshot(`"Jamie"`);
+    expect(customer.addresses![0].lastName).toMatchInlineSnapshot(`"Doe"`);
+    expect(customer.addresses![0].streetName).toMatchInlineSnapshot(
+      `"Main Street"`
+    );
+    expect(customer.addresses![0].streetNumber).toMatchInlineSnapshot(`"1"`);
+    expect(customer.addresses![0].postalCode).toMatchInlineSnapshot(`"56789"`);
+    expect(customer.addresses![0].city).toMatchInlineSnapshot(`"Mainville"`);
+    expect(customer.addresses![0].state).toMatchInlineSnapshot(`"New Jersey"`);
+    expect(customer.addresses![0].country).toMatchInlineSnapshot(`"US"`);
+
     expect(customer.customerGroup!.key).toMatchInlineSnapshot('"vip"');
+    expect(customer.isEmailVerified).toMatchInlineSnapshot(`false`);
   });
 });

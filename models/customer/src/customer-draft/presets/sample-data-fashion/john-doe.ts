@@ -15,8 +15,9 @@ const johnDoe = (): TCustomerDraftBuilder =>
     .firstName('John')
     .lastName('Doe')
     .addresses([
-      AddressDraft.random()
-        .firstName('Jamie')
+      AddressDraft.presets
+        .empty()
+        .firstName('John')
         .lastName('Doe')
         .streetName('Center Road')
         .streetNumber('1')
@@ -26,6 +27,7 @@ const johnDoe = (): TCustomerDraftBuilder =>
     ])
     .customerGroup(
       Reference.random().key(customerGroup.key!).typeId('customer-group')
-    );
+    )
+    .isEmailVerified(false);
 
 export default johnDoe;
