@@ -1,9 +1,10 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
+import * as CustomerDraft from '../../';
 import { TCustomerDraftBuilder } from '../../../types';
-import CustomerDraft from '../../builder';
 
 const marySmith = (): TCustomerDraftBuilder =>
-  CustomerDraft()
+  CustomerDraft.presets
+    .empty()
     .key('123456')
     .email('mary.smith@example.com')
     .firstName('Mary')
