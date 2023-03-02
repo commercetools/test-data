@@ -28,7 +28,13 @@ describe('builder', () => {
         vatId: expect.any(String),
         isEmailVerified: expect.any(Boolean),
         customerGroup: null,
-        addresses: null,
+        addresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+        ]),
         defaultBillingAddress: null,
         billingAddresses: null,
         defaultShippingAddress: null,
@@ -62,7 +68,13 @@ describe('builder', () => {
         vatId: expect.any(String),
         isEmailVerified: expect.any(Boolean),
         customerGroup: null,
-        addresses: null,
+        addresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+        ]),
         defaultBillingAddress: null,
         billingAddresses: null,
         defaultShippingAddress: null,
@@ -97,7 +109,14 @@ describe('builder', () => {
         vatId: expect.any(String),
         isEmailVerified: expect.any(Boolean),
         customerGroup: null,
-        addresses: null,
+        addresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+            __typename: 'AddressDraft',
+          }),
+        ]),
         defaultBillingAddress: null,
         billingAddresses: null,
         defaultShippingAddress: null,
