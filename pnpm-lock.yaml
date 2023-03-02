@@ -485,6 +485,7 @@ importers:
       '@commercetools-test-data/cent-precision-money': 4.10.0
       '@commercetools-test-data/commons': 4.10.0
       '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/money': 4.10.0
       '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
@@ -494,6 +495,7 @@ importers:
       '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
       '@commercetools-test-data/commons': link:../commons
       '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/money': link:../money
       '@commercetools-test-data/utils': link:../../utils
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
