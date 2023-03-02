@@ -482,17 +482,25 @@ importers:
     specifiers:
       '@babel/runtime': ^7.17.9
       '@babel/runtime-corejs3': ^7.17.9
-      '@commercetools-test-data/commons': 4.4.0
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools-test-data/utils': 4.4.0
+      '@commercetools-test-data/cart': 4.10.0
+      '@commercetools-test-data/cart-discount': 4.10.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/line-item': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.5.0
       '@faker-js/faker': ^7.4.0
     dependencies:
       '@babel/runtime': 7.21.0
       '@babel/runtime-corejs3': 7.21.0
-      '@commercetools-test-data/commons': 4.4.0
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools-test-data/utils': 4.4.0
+      '@commercetools-test-data/cart': link:../cart
+      '@commercetools-test-data/cart-discount': link:../cart-discount
+      '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/line-item': link:../line-item
+      '@commercetools-test-data/utils': link:../../utils
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
 
@@ -2432,37 +2440,6 @@ packages:
       - typescript
     dev: false
 
-  /@commercetools-test-data/commons/4.4.0:
-    resolution: {integrity: sha512-C5XWXs/4Ayjf96CCAQGkbnX5TfxTRFTP2BDvfm30007yfeQdRfgvgB+HWqpRDTmHOJFcuncQrsDIUkWsahNkqQ==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
-      '@commercetools-test-data/core': 4.4.0
-      '@commercetools/platform-sdk': 4.5.0
-      '@faker-js/faker': 7.6.0
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
-  /@commercetools-test-data/core/4.4.0:
-    resolution: {integrity: sha512-TivhKE1KO53txHnHp6Hz/wpYVLg9AYUXgzoOX11eytimA3T4BN5sBCAa5cyatidlgUCxIaGlBxOQnETdiRQeXQ==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
-      '@faker-js/faker': 7.6.0
-      '@types/lodash': 4.14.191
-      lodash: 4.17.21
-    dev: false
-
-  /@commercetools-test-data/utils/4.4.0:
-    resolution: {integrity: sha512-o9jafDjtxtRh8VGbBwgfslvmX12CrR3KJaHOMv00KY9kwquoIBk4ppm6srLxe6XkM/HJDU911H4IShjE0KOH4Q==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
-      '@faker-js/faker': 7.6.0
-    dev: false
-
   /@commercetools/platform-sdk/4.5.0:
     resolution: {integrity: sha512-WbvK/FxbYp5FMK7oRdXrMBxX1vGmpZHws9MG/l2g2q7qwGBdqSUxc0hPODJBISNh1LGkzW95MJAcC1ihV0ys7g==}
     engines: {node: '>=14'}
@@ -3457,10 +3434,6 @@ packages:
 
   /@types/lodash/4.14.186:
     resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
-    dev: false
-
-  /@types/lodash/4.14.191:
-    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: false
 
   /@types/minimist/1.2.2:

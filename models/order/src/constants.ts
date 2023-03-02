@@ -22,3 +22,32 @@ export const shipmentState = {
   Partial: 'Partial',
   Backorder: 'Backorder',
 } as const;
+
+export const shippingMode = {
+  Single: 'Single',
+  Multiple: 'Multiple',
+} as const;
+
+export const taxMode = {
+  Platform: 'Platform',
+  External: 'External',
+  ExternalAmount: 'ExternalAmount',
+  Disabled: 'Disabled',
+} as const;
+
+export const taxRoundingMode = {
+  HalfEven: 'HalfEven',
+  HalfUp: 'HalfUp',
+  HalfDown: 'HalfDown',
+} as const;
+
+export const taxCalculationMode = {
+  LineItemLevel: 'LineItemLevel',
+  UnitPriceLevel: 'UnitPriceLevel',
+} as const;
+
+export const inventoryMode = {
+  TrackOnly: 'TrackOnly',
+  ReserveOnOrder: 'ReserveOnOrder',
+  None: 'None',
+} as const;
