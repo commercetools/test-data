@@ -490,7 +490,7 @@ importers:
       '@commercetools-test-data/customer-group': 4.10.0
       '@commercetools-test-data/line-item': 4.10.0
       '@commercetools-test-data/utils': 4.10.0
-      '@commercetools/platform-sdk': ^4.5.0
+      '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
     dependencies:
       '@babel/runtime': 7.21.0
