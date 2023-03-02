@@ -3,13 +3,13 @@ import type { TCustomerDraft, TCustomerDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TCustomerDraft, TCustomerDraft>('default', {
-    buildFields: [],
+    buildFields: ['addresses', 'customerGroup'],
   }),
   rest: Transformer<TCustomerDraft, TCustomerDraft>('rest', {
-    buildFields: [],
+    buildFields: ['addresses', 'customerGroup'],
   }),
   graphql: Transformer<TCustomerDraft, TCustomerDraftGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['addresses', 'customerGroup'],
     addFields: () => ({
       __typename: 'CustomerDraft',
     }),
