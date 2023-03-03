@@ -1,7 +1,7 @@
 import { ClientLogging, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as ProductCatalogData from '../../product-catalog-data';
+import * as ProductCatalogData from '../../product-catalog-data'; // TODO: fix import
 import { productPriceMode } from './constants';
 import { TProduct } from './types';
 
