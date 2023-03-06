@@ -14,14 +14,18 @@ const transformers = {
     ],
   }),
   rest: Transformer<TProduct, TProductRest>('rest', {
-    buildFields: [
-      'productType',
-      'masterData',
-      'taxCategory',
-      'state',
-      'createdBy',
-      'lastModifiedBy',
-    ],
+    buildFields: ['masterData', 'createdBy', 'lastModifiedBy'],
+    replaceFields: ({ fields }) => {
+      return {
+        ...fields,
+        productType: Reference.random().typeId('product-type').buildRest(),
+        taxCategory: Reference.random().typeId('tax-category').buildRest(),
+        // TODO: transform from field when state model is available
+        state: fields.state
+          ? Reference.random().id(fields.state.id).typeId('state').buildRest()
+          : undefined,
+      };
+    },
   }),
   graphql: Transformer<TProduct, TProductGraphql>('graphql', {
     buildFields: [

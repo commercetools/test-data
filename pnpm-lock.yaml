@@ -505,7 +505,9 @@ importers:
       '@commercetools-test-data/commons': 4.10.0
       '@commercetools-test-data/core': 4.10.0
       '@commercetools-test-data/product-catalog-data': 4.10.0
+      '@commercetools-test-data/product-type': 4.10.0
       '@commercetools-test-data/product-variant': 4.10.0
+      '@commercetools-test-data/tax-category': 4.10.0
       '@commercetools-test-data/utils': 4.10.0
       '@commercetools/platform-sdk': ^4.0.0
       '@faker-js/faker': ^7.4.0
@@ -515,7 +517,9 @@ importers:
       '@commercetools-test-data/commons': link:../commons
       '@commercetools-test-data/core': link:../../core
       '@commercetools-test-data/product-catalog-data': link:../product-catalog-data
+      '@commercetools-test-data/product-type': link:../product-type
       '@commercetools-test-data/product-variant': link:../product-variant
+      '@commercetools-test-data/tax-category': link:../tax-category
       '@commercetools-test-data/utils': link:../../utils
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
