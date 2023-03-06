@@ -22,6 +22,7 @@ describe('builder', () => {
           }),
         }),
         priceMode: expect.any(String),
+        skus: expect.arrayContaining([]),
         state: expect.objectContaining({
           typeId: 'state',
         }),
@@ -104,7 +105,7 @@ describe('builder', () => {
           typeId: 'tax-category',
         }),
         taxCategoryRef: expect.objectContaining({
-          typeId: 'product-type',
+          typeId: 'tax-category',
         }),
         productType: expect.objectContaining({
           typeId: 'product-type',

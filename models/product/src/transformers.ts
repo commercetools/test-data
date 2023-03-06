@@ -1,6 +1,6 @@
 import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
-import type { TProduct, TProductGraphql } from './types';
+import type { TProduct, TProductRest, TProductGraphql } from './types';
 
 const transformers = {
   default: Transformer<TProduct, TProduct>('default', {
@@ -13,8 +13,7 @@ const transformers = {
       'lastModifiedBy',
     ],
   }),
-  rest: Transformer<TProduct, TProduct>('rest', {
-    removeFields: ['skus'],
+  rest: Transformer<TProduct, TProductRest>('rest', {
     buildFields: [
       'productType',
       'masterData',
@@ -46,7 +45,7 @@ const transformers = {
 
       const taxCategoryRef: TReferenceGraphql = Reference.random()
         .id(fields.productType.id)
-        .typeId('product-type')
+        .typeId('tax-category')
         .buildGraphql();
 
       return {

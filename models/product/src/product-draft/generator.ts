@@ -13,7 +13,7 @@ const generator = Generator<TProductDraft>({
     slug: fake(() => LocalizedString.random()),
     key: fake((f) => f.lorem.slug()),
     description: fake(() => LocalizedString.random()),
-    categories: fake(() => [Reference.random().typeId('categories')]),
+    categories: fake(() => [Reference.random().typeId('category')]),
     categoryOrderHints: null,
     metaTitle: null,
     metaDescription: null,

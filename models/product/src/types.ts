@@ -6,6 +6,8 @@ export type TProduct = Product & {
   skus: Array<String>;
 };
 
+export type TProductRest = Omit<TProduct, 'skus'>;
+
 export type TProductGraphql = TProduct & {
   productTypeRef: TReferenceGraphql;
   stateRef: TReferenceGraphql;
