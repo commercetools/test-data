@@ -13,7 +13,7 @@ importers:
       '@commitlint/config-conventional': 17.4.2
       '@manypkg/cli': 0.19.2
       '@preconstruct/cli': 2.3.0
-      '@types/jest': ^29.0.0
+      '@types/jest': ^29.4.0
       '@types/node': 18.11.18
       babel-jest: 29.3.1
       cross-env: 7.0.3
@@ -474,6 +474,34 @@ importers:
       '@babel/runtime-corejs3': 7.19.4
       '@commercetools-test-data/commons': link:../commons
       '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+
+  models/order:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/cart': 4.10.0
+      '@commercetools-test-data/cart-discount': 4.10.0
+      '@commercetools-test-data/cent-precision-money': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/customer-group': 4.10.0
+      '@commercetools-test-data/line-item': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
+      '@commercetools/platform-sdk': ^4.0.0
+      '@faker-js/faker': ^7.4.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/cart': link:../cart
+      '@commercetools-test-data/cart-discount': link:../cart-discount
+      '@commercetools-test-data/cent-precision-money': link:../cent-precision-money
+      '@commercetools-test-data/commons': link:../commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/customer-group': link:../customer-group
+      '@commercetools-test-data/line-item': link:../line-item
       '@commercetools-test-data/utils': link:../../utils
       '@commercetools/platform-sdk': 4.5.0
       '@faker-js/faker': 7.6.0
@@ -2076,6 +2104,14 @@ packages:
       regenerator-runtime: 0.13.11
     dev: false
 
+  /@babel/runtime-corejs3/7.21.0:
+    resolution: {integrity: sha512-TDD4UJzos3JJtM+tHX+w2Uc+KWj7GV+VKKFdMVd2Rx8sdA19hcc3P3AHFYd5LVOw+pYuSd5lICC3gm52B6Rwxw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      core-js-pure: 3.29.0
+      regenerator-runtime: 0.13.11
+    dev: false
+
   /@babel/runtime/7.19.4:
     resolution: {integrity: sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==}
     engines: {node: '>=6.9.0'}
@@ -2361,8 +2397,8 @@ packages:
       '@babel/preset-env': 7.19.4_@babel+core@7.21.0
       '@babel/preset-react': 7.18.6_@babel+core@7.21.0
       '@babel/preset-typescript': 7.18.6_@babel+core@7.21.0
-      '@babel/runtime': 7.19.4
-      '@babel/runtime-corejs3': 7.19.4
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
       '@emotion/babel-plugin': 11.10.2_@babel+core@7.21.0
       '@emotion/babel-preset-css-prop': 11.10.0_@babel+core@7.21.0
       babel-plugin-dev-expression: 0.2.3_@babel+core@7.21.0
@@ -2426,7 +2462,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       buffer: 6.0.3
-      node-fetch: 2.6.7
+      node-fetch: 2.6.9
       querystring: 0.2.1
     transitivePeerDependencies:
       - encoding
@@ -2436,7 +2472,7 @@ packages:
     resolution: {integrity: sha512-XLRm+o3Yd0mkVoyzsOA98PUu0U0ajQdBHMhZ8N2XMOtL4OY8zsgT8ap5JneXV8zWZNiwIYYAYoUDwBlLZh2lAQ==}
     engines: {node: '>=14'}
     dependencies:
-      node-fetch: 2.6.7
+      node-fetch: 2.6.9
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -3038,7 +3074,7 @@ packages:
     resolution: {integrity: sha512-DXx/P1lyunNoFWwOj1MWBucUhaIJljoiAGOpO2fE0GKMBCI6EZBZD0Up1+fQZoXBecKXRgV9mGgLvIB2fOQ0KQ==}
     hasBin: true
     dependencies:
-      '@babel/runtime': 7.19.4
+      '@babel/runtime': 7.21.0
       '@manypkg/get-packages': 1.1.3
       chalk: 2.4.2
       detect-indent: 6.1.0
@@ -3724,7 +3760,7 @@ packages:
     engines: {node: '>=6.0'}
     dependencies:
       '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.19.4
+      '@babel/runtime-corejs3': 7.21.0
     dev: false
 
   /aria-query/5.0.2:
@@ -4308,6 +4344,11 @@ packages:
 
   /core-js-pure/3.25.5:
     resolution: {integrity: sha512-oml3M22pHM+igfWHDfdLVq2ShWmjM2V4L+dQEBs0DWVIqEm9WHCwGAlZ6BmyBQGy5sFrJmcx+856D9lVKyGWYg==}
+    requiresBuild: true
+    dev: false
+
+  /core-js-pure/3.29.0:
+    resolution: {integrity: sha512-v94gUjN5UTe1n0yN/opTihJ8QBWD2O8i19RfTZR7foONPWArnjB96QA/wk5ozu1mm6ja3udQCzOzwQXTxi3xOQ==}
     requiresBuild: true
     dev: false
 
@@ -6906,6 +6947,18 @@ packages:
 
   /node-fetch/2.6.7:
     resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: false
+
+  /node-fetch/2.6.9:
+    resolution: {integrity: sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
