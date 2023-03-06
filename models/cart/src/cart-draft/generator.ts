@@ -35,7 +35,7 @@ const generator = Generator<TCartDraft>({
     shippingMethod: fake(() => Reference.random().typeId('shipping-method')),
     externalTaxRateForShippingMethod: null,
     custom: null,
-    locale: fake((f) => f.random.locale()),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     deleteDaysAfterLastModification: null,
     shippingRateInput: null,
     origin: oneOf(...Object.values(origin)),

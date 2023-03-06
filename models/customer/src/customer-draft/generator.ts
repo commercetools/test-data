@@ -30,7 +30,7 @@ const generator = Generator<TCustomerDraft>({
     defaultShippingAddress: null,
     shippingAddresses: null,
     custom: null,
-    locale: fake((f) => f.random.locale()),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     // authenticationMode - currently in beta.
   },
 });

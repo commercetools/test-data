@@ -1,5 +1,10 @@
 import { ClientLogging } from '@commercetools-test-data/commons';
-import { sequence, fake, Generator } from '@commercetools-test-data/core';
+import {
+  sequence,
+  fake,
+  Generator,
+  oneOf,
+} from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TReview } from './types';
 
@@ -13,7 +18,7 @@ const generator = Generator<TReview>({
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,
-    locale: null,
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     authorName: fake((f) => f.name.fullName()),
     title: fake((f) => f.word.interjection()),
     text: fake((f) => f.hacker.phrase()),

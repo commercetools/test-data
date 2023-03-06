@@ -41,7 +41,7 @@ const generator = Generator<TCustomer>({
     externalId: fake((f) => f.datatype.uuid()),
     customerGroup: null,
     custom: null,
-    locale: fake((f) => f.random.locale()),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     authenticationMode: 'password',
   },
 });
