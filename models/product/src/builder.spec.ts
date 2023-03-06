@@ -112,7 +112,7 @@ describe('builder', () => {
         productTypeRef: expect.objectContaining({
           typeId: 'product-type',
         }),
-        skus: expect.arrayContaining([expect.any(String)]),
+        skus: expect.arrayContaining([]),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
           userRef: expect.objectContaining({ typeId: 'user' }),

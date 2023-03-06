@@ -1,7 +1,7 @@
 import { ClientLogging, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import * as ProductCatalogData from '@commercetools-test-data/product-catalog-data'; // TODO: fix import
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as ProductCatalogData from '../../product-catalog-data'; // TODO: fix import
 import { productPriceMode } from './constants';
 import { TProduct } from './types';
 
@@ -20,6 +20,7 @@ const generator = Generator<TProduct>({
     state: fake(() => Reference.random().typeId('state')),
     reviewRatingStatistics: null,
     priceMode: oneOf(...Object.values(productPriceMode)),
+    skus: [],
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

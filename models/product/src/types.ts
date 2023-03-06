@@ -2,14 +2,15 @@ import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import { Product, ProductDraft } from '@commercetools/platform-sdk';
 
-export type TProduct = Product;
+export type TProduct = Product & {
+  skus: Array<String>;
+};
 
 export type TProductGraphql = TProduct & {
   productTypeRef: TReferenceGraphql;
   stateRef: TReferenceGraphql;
   taxCategoryRef: TReferenceGraphql;
   // TODO: add productSelectionRefs
-  skus: Array<String>;
   __typename: 'Product';
 };
 

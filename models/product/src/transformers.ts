@@ -14,6 +14,7 @@ const transformers = {
     ],
   }),
   rest: Transformer<TProduct, TProduct>('rest', {
+    removeFields: ['skus'],
     buildFields: [
       'productType',
       'masterData',
@@ -48,15 +49,10 @@ const transformers = {
         .typeId('product-type')
         .buildGraphql();
 
-      // TODO: doesn't exist on REST
-      // How should it be handled/built for graphql?
-      const skus: Array<String> = ['foo'];
-
       return {
         productTypeRef,
         stateRef,
         taxCategoryRef,
-        skus,
         __typename: 'Product',
       };
     },
