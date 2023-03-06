@@ -74,7 +74,7 @@ const generator = Generator<TOrder>({
     quote: null,
     custom: null,
     paymentInfo: null,
-    locale: fake((f) => f.random.locale()),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     inventoryMode: oneOf(...Object.values(inventoryMode)),
     shippingRateInput: null,
     origin: null,
