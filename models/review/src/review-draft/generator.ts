@@ -1,4 +1,4 @@
-import { fake, Generator } from '@commercetools-test-data/core';
+import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TReviewDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/reviews#reviewdraft
@@ -7,7 +7,7 @@ const generator = Generator<TReviewDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,
-    locale: null,
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     authorName: fake((f) => f.name.fullName()),
     title: fake((f) => f.word.interjection()),
     text: fake((f) => f.hacker.phrase()),

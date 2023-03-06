@@ -49,7 +49,7 @@ const generator = Generator<TCart>({
     shippingAddress: fake(() => Address.random()),
     billingAddress: fake(() => Address.random()),
     custom: null,
-    locale: fake((f) => f.random.locale()),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     deleteDaysAfterLastModification: null,
     shippingRateInput: null,
     origin: oneOf(...Object.values(origin)),
