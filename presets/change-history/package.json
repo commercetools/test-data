@@ -1,0 +1,38 @@
+{
+  "name": "@commercetools-test-data/change-history",
+  "version": "4.10.0",
+  "description": "Test Data preset for commercetools application: Change History",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "presets/change-history"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-change-history.cjs.js",
+  "module": "dist/commercetools-test-data-change-history.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/attribute-definition": "4.10.0",
+    "@commercetools-test-data/attribute-type": "4.10.0",
+    "@commercetools-test-data/category": "4.10.0",
+    "@commercetools-test-data/channel": "4.10.0",
+    "@commercetools-test-data/commons": "4.10.0",
+    "@commercetools-test-data/core": "4.10.0",
+    "@commercetools-test-data/customer": "4.10.0",
+    "@commercetools-test-data/review": "4.10.0",
+    "@commercetools-test-data/tax-category": "4.10.0",
+    "@commercetools-test-data/tax-rate": "4.10.0",
+    "@commercetools-test-data/utils": "4.10.0",
+    "@commercetools-test-data/zone": "4.10.0",
+    "@commercetools/platform-sdk": "^4.0.0",
+    "@faker-js/faker": "^7.4.0",
+    "lodash": "^4.17.21"
+  }
+}
