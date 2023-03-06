@@ -27,7 +27,7 @@ describe('builder', () => {
         }),
         categories: expect.arrayContaining([
           expect.objectContaining({
-            typeId: 'categories',
+            typeId: 'category',
           }),
         ]),
         categoryOrderHints: null,
@@ -111,7 +111,7 @@ describe('builder', () => {
         }),
         categories: expect.arrayContaining([
           expect.objectContaining({
-            typeId: 'categories',
+            typeId: 'category',
           }),
         ]),
         categoryOrderHints: null,
@@ -195,7 +195,7 @@ describe('builder', () => {
         ]),
         categories: expect.arrayContaining([
           expect.objectContaining({
-            typeId: 'categories',
+            typeId: 'category',
           }),
         ]),
         categoryOrderHints: null,
