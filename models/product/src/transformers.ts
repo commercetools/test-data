@@ -36,7 +36,6 @@ const transformers = {
       'lastModifiedBy',
     ],
     addFields: ({ fields }) => {
-      // TODO: `productType` will be a reference here, should ideally be set to null
       const productTypeRef: TReferenceGraphql = Reference.random()
         .id(fields.productType.id)
         .typeId('product-type')
