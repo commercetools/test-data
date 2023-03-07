@@ -1,5 +1,14 @@
 # @commercetools-test-data/attribute-plain-enum-value
 
+## 4.11.0
+
+### Patch Changes
+
+- Updated dependencies [[`06abaa6`](https://github.com/commercetools/test-data/commit/06abaa6cee4c712ba9307258d65cb8861e3af42d)]:
+  - @commercetools-test-data/commons@4.11.0
+  - @commercetools-test-data/core@4.11.0
+  - @commercetools-test-data/utils@4.11.0
+
 ## 4.10.0
 
 ### Patch Changes

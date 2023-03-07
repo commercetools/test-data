@@ -1,5 +1,18 @@
 # @commercetools-test-data/cart
 
+## 4.11.0
+
+### Patch Changes
+
+- [#220](https://github.com/commercetools/test-data/pull/220) [`4b56c01`](https://github.com/commercetools/test-data/commit/4b56c01d5c74ebf746122b659bbfd85a45e156ba) Thanks [@valoriecarli](https://github.com/valoriecarli)! - set locales across models to be one of en-US, de-DE, es-ES'
+
+- Updated dependencies [[`06abaa6`](https://github.com/commercetools/test-data/commit/06abaa6cee4c712ba9307258d65cb8861e3af42d)]:
+  - @commercetools-test-data/commons@4.11.0
+  - @commercetools-test-data/cent-precision-money@4.11.0
+  - @commercetools-test-data/line-item@4.11.0
+  - @commercetools-test-data/core@4.11.0
+  - @commercetools-test-data/utils@4.11.0
+
 ## 4.10.0
 
 ### Minor Changes

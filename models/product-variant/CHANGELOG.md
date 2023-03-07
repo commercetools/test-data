@@ -1,5 +1,23 @@
 # @commercetools-test-data/product-variant
 
+## 4.11.0
+
+### Minor Changes
+
+- [#215](https://github.com/commercetools/test-data/pull/215) [`50771bb`](https://github.com/commercetools/test-data/commit/50771bb86398d5bd3ce588196f209c703c71ac97) Thanks [@valoriecarli](https://github.com/valoriecarli)! - add additional presets to Price & ProductVariant
+
+- [#219](https://github.com/commercetools/test-data/pull/219) [`11ad422`](https://github.com/commercetools/test-data/commit/11ad422536698aa09375ad45dcd17ce43a286d70) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add `product` model and expose `product-variant` draft.
+
+### Patch Changes
+
+- Updated dependencies [[`06abaa6`](https://github.com/commercetools/test-data/commit/06abaa6cee4c712ba9307258d65cb8861e3af42d), [`50771bb`](https://github.com/commercetools/test-data/commit/50771bb86398d5bd3ce588196f209c703c71ac97)]:
+  - @commercetools-test-data/commons@4.11.0
+  - @commercetools-test-data/price@4.11.0
+  - @commercetools-test-data/attribute@4.11.0
+  - @commercetools-test-data/image@4.11.0
+  - @commercetools-test-data/core@4.11.0
+  - @commercetools-test-data/utils@4.11.0
+
 ## 4.10.0
 
 ### Minor Changes

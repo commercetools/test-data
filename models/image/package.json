@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/image",
-  "version": "4.10.0",
+  "version": "4.11.0",
   "description": "Data model for commercetools API Images",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "4.10.0",
-    "@commercetools-test-data/core": "4.10.0",
-    "@commercetools-test-data/utils": "4.10.0",
+    "@commercetools-test-data/commons": "4.11.0",
+    "@commercetools-test-data/core": "4.11.0",
+    "@commercetools-test-data/utils": "4.11.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0",
     "lodash": "^4.17.21"
