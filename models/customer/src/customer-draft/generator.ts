@@ -1,3 +1,4 @@
+import { AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TCustomerDraft } from '../types';
 
@@ -24,7 +25,7 @@ const generator = Generator<TCustomerDraft>({
     vatId: fake((f) => f.random.alphaNumeric(12)),
     isEmailVerified: fake((f) => f.datatype.boolean()),
     customerGroup: null,
-    addresses: null,
+    addresses: fake(() => [AddressDraft.random()]),
     defaultBillingAddress: null,
     billingAddresses: null,
     defaultShippingAddress: null,

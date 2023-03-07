@@ -21,6 +21,7 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "4.10.0",
     "@commercetools-test-data/core": "4.10.0",
+    "@commercetools-test-data/customer-group": "4.10.0",
     "@commercetools-test-data/utils": "4.10.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
