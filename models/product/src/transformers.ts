@@ -20,7 +20,6 @@ const transformers = {
         ...fields,
         productType: Reference.random().typeId('product-type').buildRest(),
         taxCategory: Reference.random().typeId('tax-category').buildRest(),
-        // TODO: transform from field when state model is available
         state: fields.state
           ? Reference.random().id(fields.state.id).typeId('state').buildRest()
           : undefined,
