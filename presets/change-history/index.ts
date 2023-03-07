@@ -1,1 +1,1 @@
-//TODO: what to include here?
+export * from './src';
