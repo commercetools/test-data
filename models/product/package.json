@@ -1,0 +1,41 @@
+{
+  "name": "@commercetools-test-data/product",
+  "version": "4.10.0",
+  "description": "Data model for commercetools API Product",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/product"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-product.cjs.js",
+  "module": "dist/commercetools-test-data-product.esm.js",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "4.10.0",
+    "@commercetools-test-data/core": "4.10.0",
+    "@commercetools-test-data/product-catalog-data": "4.10.0",
+    "@commercetools-test-data/product-type": "4.10.0",
+    "@commercetools-test-data/product-variant": "4.10.0",
+    "@commercetools-test-data/tax-category": "4.10.0",
+    "@commercetools-test-data/utils": "4.10.0",
+    "@commercetools/platform-sdk": "^4.0.0",
+    "@faker-js/faker": "^7.4.0"
+  }
+}
