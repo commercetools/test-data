@@ -798,6 +798,38 @@ importers:
       '@faker-js/faker': 7.6.0
       lodash: 4.17.21
 
+  presets/change-history:
+    specifiers:
+      '@babel/runtime': ^7.17.9
+      '@babel/runtime-corejs3': ^7.17.9
+      '@commercetools-test-data/attribute-definition': 4.10.0
+      '@commercetools-test-data/attribute-type': 4.10.0
+      '@commercetools-test-data/category': 4.10.0
+      '@commercetools-test-data/channel': 4.10.0
+      '@commercetools-test-data/commons': 4.10.0
+      '@commercetools-test-data/core': 4.10.0
+      '@commercetools-test-data/customer': 4.10.0
+      '@commercetools-test-data/review': 4.10.0
+      '@commercetools-test-data/tax-category': 4.10.0
+      '@commercetools-test-data/tax-rate': 4.10.0
+      '@commercetools-test-data/utils': 4.10.0
+      '@commercetools-test-data/zone': 4.10.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/attribute-definition': link:../../models/attribute-definition
+      '@commercetools-test-data/attribute-type': link:../../models/attribute-type
+      '@commercetools-test-data/category': link:../../models/category
+      '@commercetools-test-data/channel': link:../../models/channel
+      '@commercetools-test-data/commons': link:../../models/commons
+      '@commercetools-test-data/core': link:../../core
+      '@commercetools-test-data/customer': link:../../models/customer
+      '@commercetools-test-data/review': link:../../models/review
+      '@commercetools-test-data/tax-category': link:../../models/tax-category
+      '@commercetools-test-data/tax-rate': link:../../models/tax-rate
+      '@commercetools-test-data/utils': link:../../utils
+      '@commercetools-test-data/zone': link:../../models/zone
+
   utils:
     specifiers:
       '@babel/runtime': ^7.17.9

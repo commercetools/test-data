@@ -30,9 +30,6 @@
     "@commercetools-test-data/tax-category": "4.10.0",
     "@commercetools-test-data/tax-rate": "4.10.0",
     "@commercetools-test-data/utils": "4.10.0",
-    "@commercetools-test-data/zone": "4.10.0",
-    "@commercetools/platform-sdk": "^4.0.0",
-    "@faker-js/faker": "^7.4.0",
-    "lodash": "^4.17.21"
+    "@commercetools-test-data/zone": "4.10.0"
   }
 }
