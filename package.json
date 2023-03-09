@@ -4,11 +4,7 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": [
-      "core",
-      "models/*",
-      "utils"
-    ]
+    "packages": ["core", "models/*", "utils"]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",

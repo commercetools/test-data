@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 4.11.0
+
+### Minor Changes
+
+- [#218](https://github.com/commercetools/test-data/pull/218) [`06abaa6`](https://github.com/commercetools/test-data/commit/06abaa6cee4c712ba9307258d65cb8861e3af42d) Thanks [@jaikamat](https://github.com/jaikamat)! - create AddressDraft empty functionality and CustomerDraft presets
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.11.0
+
 ## 4.10.0
 
 ### Minor Changes
