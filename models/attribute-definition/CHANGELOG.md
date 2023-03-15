@@ -1,5 +1,17 @@
 # @commercetools-test-data/attribute-definition
 
+## 4.11.1
+
+### Patch Changes
+
+- [#223](https://github.com/commercetools/test-data/pull/223) [`c94d229`](https://github.com/commercetools/test-data/commit/c94d22961830a472dee5f0b66dededed1c362238) Thanks [@valoriecarli](https://github.com/valoriecarli)! - expose addtl drafts
+
+- Updated dependencies [[`c94d229`](https://github.com/commercetools/test-data/commit/c94d22961830a472dee5f0b66dededed1c362238)]:
+  - @commercetools-test-data/attribute-type@4.11.1
+  - @commercetools-test-data/core@4.11.1
+  - @commercetools-test-data/commons@4.11.1
+  - @commercetools-test-data/utils@4.11.1
+
 ## 4.11.0
 
 ### Patch Changes

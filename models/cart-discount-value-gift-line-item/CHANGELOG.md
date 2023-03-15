@@ -1,5 +1,14 @@
 # @commercetools-test-data/cart-discount-value-gift-line-item
 
+## 4.11.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.11.1
+  - @commercetools-test-data/commons@4.11.1
+  - @commercetools-test-data/utils@4.11.1
+
 ## 4.11.0
 
 ### Patch Changes
