@@ -1,5 +1,15 @@
 # @commercetools-test-data/customer
 
+## 4.11.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@4.11.1
+  - @commercetools-test-data/commons@4.11.1
+  - @commercetools-test-data/customer-group@4.11.1
+  - @commercetools-test-data/utils@4.11.1
+
 ## 4.11.0
 
 ### Minor Changes
