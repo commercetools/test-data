@@ -1,4 +1,4 @@
-import * as AttributeType from '@commercetools-test-data/attribute-type';
+import { AttributeType } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { attributeConstraints, inputHints } from './constants';
