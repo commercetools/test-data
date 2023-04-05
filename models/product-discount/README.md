@@ -19,8 +19,7 @@ import type {
 } from '@commercetools-test-data/product-discount';
 import * as ProductDiscount from '@commercetools-test-data/product-discount';
 
-const productDiscount =
-  ProductDiscount.random().build<TProductDiscount>();
+const productDiscount = ProductDiscount.random().build<TProductDiscount>();
 const productDiscountDraft =
   ProductDiscount.ProductDiscountDraft.random().build<TProductDiscountDraft>();
 ```

@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { Address, AddressDraft } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TAddress = Address;
 export type TAddressDraft = AddressDraft;

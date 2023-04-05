@@ -19,8 +19,7 @@ import type {
 } from '@commercetools-test-data/product-variant';
 import * as ProductVariant from '@commercetools-test-data/product-variant';
 
-const productVariant =
-  ProductVariant.random().build<TProductVariant>();
+const productVariant = ProductVariant.random().build<TProductVariant>();
 const productVariantDraft =
   ProductVariant.ProductVariantDraft.random().build<TProductVariantDraft>();
 ```

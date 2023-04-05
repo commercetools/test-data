@@ -1,6 +1,3 @@
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
-import type { TBuilder } from '@commercetools-test-data/core';
-import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-data-bot';
 import {
   CategoryReference,
   ProductData,
@@ -9,6 +6,9 @@ import {
   CategoryOrderHints,
   Category,
 } from '@commercetools/platform-sdk';
+import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
+import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-data-bot';
 
 // The base generator model. Consumers configure these fields.
 export type TProductData = Omit<ProductData, 'categories'> & {

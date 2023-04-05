@@ -1,5 +1,3 @@
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
-import type { TBuilder } from '@commercetools-test-data/core';
 import {
   BusinessUnit,
   Cart,
@@ -11,6 +9,8 @@ import {
   State,
   Store,
 } from '@commercetools/platform-sdk';
+import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TOrder = Omit<
   Order,

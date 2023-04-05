@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { Image } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TImage = Image;
 export type TImageDraft = Image;

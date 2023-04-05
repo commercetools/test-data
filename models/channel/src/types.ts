@@ -1,9 +1,9 @@
+import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 
 export type TChannel = Channel;
 export type TChannelDraft = ChannelDraft;

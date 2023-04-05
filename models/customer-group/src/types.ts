@@ -1,8 +1,8 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type {
   CustomerGroup,
   CustomerGroupDraft,
 } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCustomerGroup = CustomerGroup;
 export type TCustomerGroupDraft = CustomerGroupDraft;

@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import { Money } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TMoney = Money;
 
