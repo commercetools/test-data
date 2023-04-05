@@ -400,12 +400,6 @@ importers:
       '@faker-js/faker':
         specifier: ^7.4.0
         version: 7.6.0
-      '@types/lodash':
-        specifier: ^4.14.182
-        version: 4.14.186
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
 
   models/cent-precision-money:
     dependencies:
@@ -529,9 +523,6 @@ importers:
       '@faker-js/faker':
         specifier: ^7.4.0
         version: 7.6.0
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
 
   models/discount-code:
     dependencies:
@@ -580,9 +571,6 @@ importers:
       '@faker-js/faker':
         specifier: ^7.4.0
         version: 7.6.0
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
 
   models/line-item:
     dependencies:
@@ -1078,9 +1066,6 @@ importers:
       '@faker-js/faker':
         specifier: ^7.4.0
         version: 7.6.0
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
 
   utils:
     dependencies:
