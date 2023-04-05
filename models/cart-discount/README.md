@@ -19,8 +19,7 @@ import type {
 } from '@commercetools-test-data/cart-discount';
 import * as CartDiscount from '@commercetools-test-data/cart-discount';
 
-const cartDiscount =
-  CartDiscount.random().build<TCartDiscount>();
+const cartDiscount = CartDiscount.random().build<TCartDiscount>();
 const cartDiscountDraft =
   CartDiscount.CartDiscountDraft.random().build<TCartDiscountDraft>();
 ```

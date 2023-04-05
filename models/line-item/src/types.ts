@@ -1,9 +1,9 @@
+import { Channel, LineItem, LineItemDraft } from '@commercetools/platform-sdk';
 import {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { Channel, LineItem, LineItemDraft } from '@commercetools/platform-sdk';
 
 export type TLineItem = Omit<
   LineItem,

@@ -19,8 +19,6 @@ import type {
 } from '@commercetools-test-data/line-item';
 import * as LineItem from '@commercetools-test-data/line-item';
 
-const lineItem =
-  LineItem.random().build<TLineItem>();
-const lineItemDraft =
-  LineItem.LineItemDraft.random().build<TLineItemDraft>();
+const lineItem = LineItem.random().build<TLineItem>();
+const lineItemDraft = LineItem.LineItemDraft.random().build<TLineItemDraft>();
 ```

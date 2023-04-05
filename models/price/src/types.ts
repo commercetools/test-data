@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import type { Price, PriceDraft } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TPrice = Price;
 export type TPriceDraft = PriceDraft;

@@ -1,10 +1,10 @@
-import { TAttributeDefinitionGraphql } from '@commercetools-test-data/attribute-definition';
-import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductType,
   ProductTypeDraft,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
+import { TAttributeDefinitionGraphql } from '@commercetools-test-data/attribute-definition';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductType = ProductType;
 

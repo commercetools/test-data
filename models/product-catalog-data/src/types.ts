@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
 import { ProductCatalogData } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductCatalogData = ProductCatalogData;
 

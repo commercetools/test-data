@@ -1,9 +1,9 @@
+import { CartDiscount, CartDiscountDraft } from '@commercetools/platform-sdk';
 import {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { CartDiscount, CartDiscountDraft } from '@commercetools/platform-sdk';
 
 export type TCartDiscount = CartDiscount;
 export type TCartDiscountDraft = CartDiscountDraft;

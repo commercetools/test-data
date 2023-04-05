@@ -19,6 +19,8 @@ import type {
 } from '@commercetools-test-data/product-discount-value-external';
 import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount-value-external';
 
-const productDiscountValueExternal = ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
-const productDiscountValueExternalDraft = ProductDiscountValueExternal.ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
+const productDiscountValueExternal =
+  ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
+const productDiscountValueExternalDraft =
+  ProductDiscountValueExternal.ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
 ```
