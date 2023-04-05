@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Faker } from '@faker-js/faker';
 import { faker } from '@faker-js/faker';
-import { mapValues } from 'lodash';
+import mapValues from 'lodash/mapValues';
 
 export type SequenceFunction = (counter: number) => unknown;
 
