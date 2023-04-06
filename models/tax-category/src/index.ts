@@ -1,7 +1,9 @@
-import * as TaxCategoryDraft from './tax-category-draft';
-export { TaxCategoryDraft };
+// Export types
+export * from './tax-category/types';
+export * from './tax-rate/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './tax-category-draft/presets';
-export * from './types';
+// Export models
+export * as TaxCategory from './tax-category';
+export * as TaxCategoryDraft from './tax-category/tax-category-draft';
+export * as TaxRate from './tax-rate';
+export * as TaxRateDraft from './tax-rate/tax-rate-draft';

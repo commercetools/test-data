@@ -2,7 +2,7 @@ import { ClientLogging } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import * as ProductCatalogData from '@commercetools-test-data/product-catalog-data';
 import * as ProductType from '@commercetools-test-data/product-type';
-import * as TaxCategory from '@commercetools-test-data/tax-category';
+import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { productPriceMode } from './constants';
 import { TProduct } from './types';
