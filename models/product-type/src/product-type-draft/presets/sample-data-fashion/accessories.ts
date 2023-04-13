@@ -1,7 +1,7 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
+import * as AttributeType from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as ProductTypeDraft from '../..';
-import * as AttributeType from '../../../../../attribute-type';
 import { TProductTypeDraftBuilder } from '../../../types';
 
 const accessories = (): TProductTypeDraftBuilder =>

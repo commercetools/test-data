@@ -1,11 +1,11 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
+import * as AttributeType from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as ProductType from '../../';
-import * as AttributeType from '../../../../../attribute-type';
+import * as ProductTypeDraft from '../..';
 import { TProductTypeDraftBuilder } from '../../../types';
 
 const pants = (): TProductTypeDraftBuilder =>
-  ProductType.presets
+  ProductTypeDraft.presets
     .empty()
     .key('pants')
     .name('Pants')
