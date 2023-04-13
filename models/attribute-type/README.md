@@ -16,7 +16,7 @@ $ yarn add -D @commercetools-test-data/attribute-type
 
 ```ts
 import type { TAttributeType } from '@commercetools-test-data/attribute-type';
-import * as AttributeType from '@commercetools-test-data/attribute-type';
+import { AttributeType } from '@commercetools-test-data/attribute-type';
 
 const attributeType = AttributeType.random().build<TAttributeType>();
 ```
@@ -28,7 +28,7 @@ import type {
   TAttributePlainEnumValue,
   TAttributePlainEnumValueGraphql,
 } from '@commercetools-test-data/attribute-type';
-import * as AttributePlainEnumValue from '@commercetools-test-data/attribute-type';
+import { AttributePlainEnumValue } from '@commercetools-test-data/attribute-type';
 
 const attributePlainEnumValue =
   AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();
