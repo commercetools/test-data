@@ -7,6 +7,6 @@ export type TAttributeTypeGraphql = TAttributeType & {
   __typename: TAttributeType['name'];
 };
 
-export type TAttributeTypeBuilder = TBuilder<TAttributeType>;
+export type TAttributeTypeBuilder<T> = TBuilder<T>;
 
-export type TCreateAttributeTypeBuilder = () => TAttributeTypeBuilder;
+export type TCreateAttributeTypeBuilder<T> = () => TAttributeTypeBuilder<T>;
