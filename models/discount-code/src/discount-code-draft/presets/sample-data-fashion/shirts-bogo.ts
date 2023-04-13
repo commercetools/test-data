@@ -1,6 +1,14 @@
+import {
+  CartDiscountDraft,
+  TCartDiscountDraft,
+} from '@commercetools-test-data/cart-discount';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import * as DiscountCodeDraft from '../..';
 import { TDiscountCodeDraftBuilder } from '../../../types';
+
+const cartDiscountDraft = CartDiscountDraft.presets.sampleDataFashion
+  .shirtsBogo()
+  .build<TCartDiscountDraft>();
 
 const shirtsBogo = (): TDiscountCodeDraftBuilder =>
   DiscountCodeDraft.presets
@@ -8,9 +16,8 @@ const shirtsBogo = (): TDiscountCodeDraftBuilder =>
     .code('BOGO')
     .name(LocalizedString.presets.empty()['en-US']('BOGO'))
     .description(LocalizedString.presets.empty())
-    // TODO: use the cart discount preset key here when available
     .cartDiscounts([
-      Reference.random().key('ShirtsBOGO').typeId('cart-discount'),
+      Reference.random().key(cartDiscountDraft.key!).typeId('cart-discount'),
     ])
     .isActive(true)
     .maxApplications(1)
