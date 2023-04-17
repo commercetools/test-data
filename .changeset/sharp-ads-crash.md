@@ -1,5 +1,5 @@
 ---
-'@commercetools-test-data/product-discount': patch
+'@commercetools-test-data/product-discount': minor
 ---
 
 Create product discount presets

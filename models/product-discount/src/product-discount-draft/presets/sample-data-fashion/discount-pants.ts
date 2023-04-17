@@ -6,11 +6,7 @@ import { TProductDiscountDraftBuilder } from '../../../types';
 const discountPants = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
     .empty()
-    .value(
-      ProductDiscountValueRelativeDraft.random()
-        .type('relative')
-        .permyriad(1000)
-    )
+    .value(ProductDiscountValueRelativeDraft.random().permyriad(1000))
     // TODO: integrate product type keys
     .predicate('productType.key = "pants"')
     .name(LocalizedString.presets.empty()['en-US']('10% Off All Pants'))

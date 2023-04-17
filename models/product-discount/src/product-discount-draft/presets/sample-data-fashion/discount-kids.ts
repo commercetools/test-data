@@ -6,11 +6,7 @@ import { TProductDiscountDraftBuilder } from '../../../types';
 const discountKids = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
     .empty()
-    .value(
-      ProductDiscountValueRelativeDraft.random()
-        .type('relative')
-        .permyriad(2000)
-    )
+    .value(ProductDiscountValueRelativeDraft.random().permyriad(2000))
     // TODO: integrate product type keys
     .predicate('categories.key contains "kids"')
     .name(

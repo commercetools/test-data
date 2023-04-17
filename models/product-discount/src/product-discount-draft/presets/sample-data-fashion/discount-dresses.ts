@@ -8,14 +8,12 @@ const discountDresses = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
     .empty()
     .value(
-      ProductDiscountValueAbsoluteDraft.random()
-        .type('absolute')
-        .money(
-          CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(500)
-            .fractionDigits(2)
-        )
+      ProductDiscountValueAbsoluteDraft.random().money(
+        CentPrecisionMoneyDraft.random()
+          .currencyCode('EUR')
+          .centAmount(500)
+          .fractionDigits(2)
+      )
     )
     // TODO: integrate product type keys
     .predicate('productType.key = "dresses"')
