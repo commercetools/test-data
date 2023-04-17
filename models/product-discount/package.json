@@ -24,6 +24,7 @@
     "@commercetools-test-data/product-discount-value-absolute": "4.11.1",
     "@commercetools-test-data/product-discount-value-external": "4.11.1",
     "@commercetools-test-data/product-discount-value-relative": "4.11.1",
+    "@commercetools-test-data/cent-precision-money": "4.11.1",
     "@commercetools-test-data/utils": "4.11.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
