@@ -9,7 +9,6 @@ describe('with the preset `summerFlips`', () => {
       {
         "distributionChannel": undefined,
         "product": {
-          "id": undefined,
           "key": "summer_dress",
           "typeId": "product",
         },
@@ -58,7 +57,6 @@ describe('with the preset `summerFlips`', () => {
         "distributionChannel": undefined,
         "product": {
           "__typename": "Reference",
-          "id": undefined,
           "key": "summer_dress",
           "typeId": "product",
         },

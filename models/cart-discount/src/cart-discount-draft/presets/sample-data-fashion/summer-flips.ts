@@ -1,5 +1,8 @@
 import { CartDiscountValueGiftLineItemDraft } from '@commercetools-test-data/cart-discount-value-gift-line-item';
-import { LocalizedString, Reference } from '@commercetools-test-data/commons';
+import {
+  LocalizedString,
+  KeyReference,
+} from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
@@ -11,9 +14,7 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
       CartDiscountValueGiftLineItemDraft.presets
         .empty()
         // TODO: integrate product preset key
-        .product(
-          Reference.presets.empty().typeId('product').key('summer_dress')
-        )
+        .product(KeyReference.random().typeId('product').key('summer_dress'))
         .variantId(1)
     )
     .cartPredicate('lineItemExists(product.key = "summer_dress") = true')
