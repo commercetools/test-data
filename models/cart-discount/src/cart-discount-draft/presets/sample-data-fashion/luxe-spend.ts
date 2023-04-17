@@ -1,9 +1,17 @@
 import { CartDiscountValueAbsoluteDraft } from '@commercetools-test-data/cart-discount-value-absolute';
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import {
+  CustomerGroupDraft,
+  TCustomerGroupDraft,
+} from '@commercetools-test-data/customer-group';
 import * as CartDiscountDraft from '../..';
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
+
+const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
+  .luxe()
+  .build<TCustomerGroupDraft>();
 
 const luxeSpend = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
@@ -19,7 +27,7 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
         )
     )
     .cartPredicate(
-      'totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe"'
+      `totalPrice = "500.00 EUR" and customer.customerGroup.key = "${customerGroupDraft.key}"`
     )
     // TODO: create `target` model
     .target(undefined)
