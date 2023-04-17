@@ -5,7 +5,7 @@ import {
 import discountDresses from './discount-dresses';
 
 describe('with the preset `discountDresses`', () => {
-  it('should return a discount code draft', () => {
+  it('should return a product discount draft', () => {
     const productDiscountDraft =
       discountDresses().build<TProductDiscountDraft>();
 
@@ -42,7 +42,7 @@ describe('with the preset `discountDresses`', () => {
     `);
   });
 
-  it('should return a discount code draft when built for GraphQL', () => {
+  it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
       discountDresses().buildGraphql<TProductDiscountDraftGraphql>();
 

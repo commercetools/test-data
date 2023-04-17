@@ -5,7 +5,7 @@ import {
 import discountKids from './discount-kids';
 
 describe('with the preset `discountKids`', () => {
-  it('should return a discount code draft', () => {
+  it('should return a product discount draft', () => {
     const productDiscountDraft = discountKids().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
@@ -36,7 +36,7 @@ describe('with the preset `discountKids`', () => {
     `);
   });
 
-  it('should return a discount code draft when built for GraphQL', () => {
+  it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
       discountKids().buildGraphql<TProductDiscountDraftGraphql>();
 

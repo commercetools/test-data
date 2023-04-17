@@ -5,7 +5,7 @@ import {
 import discountPants from './discount-pants';
 
 describe('with the preset `discountPants`', () => {
-  it('should return a discount code draft', () => {
+  it('should return a product discount draft', () => {
     const productDiscountDraft = discountPants().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
@@ -36,7 +36,7 @@ describe('with the preset `discountPants`', () => {
     `);
   });
 
-  it('should return a discount code draft when built for GraphQL', () => {
+  it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
       discountPants().buildGraphql<TProductDiscountDraftGraphql>();
 
