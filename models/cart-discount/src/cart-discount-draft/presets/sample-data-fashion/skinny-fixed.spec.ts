@@ -5,90 +5,86 @@ describe('with the preset `skinnyFixed`', () => {
   it('should return a cart discount draft', () => {
     const cartDiscountDraft = skinnyFixed().build<TCartDiscountDraft>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "money": {
-          "centAmount": 2500,
-          "currencyCode": "EUR",
-          "fractionDigits": 2,
-          "type": "centPrecision",
+        "cartPredicate": "1 = 1",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Save on Skinny Jeans at 25EUR per pair",
+          "fr": undefined,
         },
-        "type": "fixed",
+        "isActive": true,
+        "key": "SkinnyFixed25",
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Save on Skinny Jeans - 25 EUR per pair",
+          "fr": undefined,
+        },
+        "requiresDiscountCode": false,
+        "sortOrder": "0.6",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "money": {
+            "centAmount": 2500,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "fixed",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(`"1 = 1"`);
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Save on Skinny Jeans - 25 EUR per pair",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Save on Skinny Jeans at 25EUR per pair",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.6"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"SkinnyFixed25"`);
   });
 
   it('should return a cart discount draft when built for GraphQL', () => {
     const cartDiscountDraft =
       skinnyFixed().buildGraphql<TCartDiscountDraftGraphql>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueFixedDraft",
-        "money": {
-          "__typename": "MoneyInput",
-          "centAmount": 2500,
-          "currencyCode": "EUR",
-          "fractionDigits": 2,
-          "type": "centPrecision",
+        "__typename": "CartDiscountDraft",
+        "cartPredicate": "1 = 1",
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Save on Skinny Jeans at 25EUR per pair",
+          },
+        ],
+        "isActive": true,
+        "key": "SkinnyFixed25",
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Save on Skinny Jeans - 25 EUR per pair",
+          },
+        ],
+        "requiresDiscountCode": false,
+        "sortOrder": "0.6",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "__typename": "CartDiscountValueFixedDraft",
+          "money": {
+            "__typename": "MoneyInput",
+            "centAmount": 2500,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "fixed",
         },
-        "type": "fixed",
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(`"1 = 1"`);
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Save on Skinny Jeans - 25 EUR per pair",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Save on Skinny Jeans at 25EUR per pair",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.6"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"SkinnyFixed25"`);
-    expect(cartDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"CartDiscountDraft"`
-    );
   });
 });

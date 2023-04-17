@@ -5,79 +5,75 @@ describe('with the preset `freeShipping`', () => {
   it('should return a cart discount draft', () => {
     const cartDiscountDraft = freeShipping().build<TCartDiscountDraft>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "permyriad": 10000,
-        "type": "relative",
+        "cartPredicate": "1 = 1",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Free shipping when your order is at least 100 EUR",
+          "fr": undefined,
+        },
+        "isActive": true,
+        "key": "FreeShip100",
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Free Shipping when you spend 100EUR",
+          "fr": undefined,
+        },
+        "requiresDiscountCode": false,
+        "sortOrder": "0.222",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "permyriad": 10000,
+          "type": "relative",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(`"1 = 1"`);
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Free Shipping when you spend 100EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Free shipping when your order is at least 100 EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.222"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"FreeShip100"`);
   });
 
   it('should return a cart discount draft when built for GraphQL', () => {
     const cartDiscountDraft =
       freeShipping().buildGraphql<TCartDiscountDraftGraphql>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelativeDraft",
-        "permyriad": 10000,
-        "type": "relative",
+        "__typename": "CartDiscountDraft",
+        "cartPredicate": "1 = 1",
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Free shipping when your order is at least 100 EUR",
+          },
+        ],
+        "isActive": true,
+        "key": "FreeShip100",
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Free Shipping when you spend 100EUR",
+          },
+        ],
+        "requiresDiscountCode": false,
+        "sortOrder": "0.222",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "__typename": "CartDiscountValueRelativeDraft",
+          "permyriad": 10000,
+          "type": "relative",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(`"1 = 1"`);
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Free Shipping when you spend 100EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Free shipping when your order is at least 100 EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.222"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"FreeShip100"`);
-    expect(cartDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"CartDiscountDraft"`
-    );
   });
 });

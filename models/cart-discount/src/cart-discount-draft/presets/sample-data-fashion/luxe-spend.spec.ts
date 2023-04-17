@@ -5,94 +5,86 @@ describe('with the preset `luxeSpend`', () => {
   it('should return a cart discount draft', () => {
     const cartDiscountDraft = luxeSpend().build<TCartDiscountDraft>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "money": {
-          "centAmount": 3000,
-          "currencyCode": "EUR",
-          "fractionDigits": 2,
-          "type": "centPrecision",
+        "cartPredicate": "totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe"",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Luxe customers - Get 30 EUR back when you spend 500EUR",
+          "fr": undefined,
         },
-        "type": "absolute",
+        "isActive": true,
+        "key": "LuxeSpend500Save30",
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Luxe customers! Spend 500EUR and Save 30EUR",
+          "fr": undefined,
+        },
+        "requiresDiscountCode": false,
+        "sortOrder": "0.876899",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "money": {
+            "centAmount": 3000,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "absolute",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
-      `"totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe""`
-    );
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Luxe customers! Spend 500EUR and Save 30EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Luxe customers - Get 30 EUR back when you spend 500EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.876899"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"LuxeSpend500Save30"`);
   });
 
   it('should return a cart discount draft when built for GraphQL', () => {
     const cartDiscountDraft =
       luxeSpend().buildGraphql<TCartDiscountDraftGraphql>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueAbsoluteDraft",
-        "money": {
-          "__typename": "MoneyInput",
-          "centAmount": 3000,
-          "currencyCode": "EUR",
-          "fractionDigits": 2,
-          "type": "centPrecision",
+        "__typename": "CartDiscountDraft",
+        "cartPredicate": "totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe"",
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Luxe customers - Get 30 EUR back when you spend 500EUR",
+          },
+        ],
+        "isActive": true,
+        "key": "LuxeSpend500Save30",
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Luxe customers! Spend 500EUR and Save 30EUR",
+          },
+        ],
+        "requiresDiscountCode": false,
+        "sortOrder": "0.876899",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "__typename": "CartDiscountValueAbsoluteDraft",
+          "money": {
+            "__typename": "MoneyInput",
+            "centAmount": 3000,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "absolute",
         },
-        "type": "absolute",
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
-      `"totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe""`
-    );
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Luxe customers! Spend 500EUR and Save 30EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Luxe customers - Get 30 EUR back when you spend 500EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.876899"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(`"LuxeSpend500Save30"`);
-    expect(cartDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"CartDiscountDraft"`
-    );
   });
 });

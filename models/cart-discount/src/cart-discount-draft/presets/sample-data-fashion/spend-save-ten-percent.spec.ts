@@ -5,87 +5,75 @@ describe('with the preset `spendSaveTenPercent`', () => {
   it('should return a cart discount draft', () => {
     const cartDiscountDraft = spendSaveTenPercent().build<TCartDiscountDraft>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "permyriad": 1000,
-        "type": "relative",
+        "cartPredicate": "totalPrice = "100.00 EUR"",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Save 10% when you spend 100EUR",
+          "fr": undefined,
+        },
+        "isActive": true,
+        "key": "Spend100EURSave10pct",
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Save 10% when you spend 100EUR",
+          "fr": undefined,
+        },
+        "requiresDiscountCode": false,
+        "sortOrder": "0.897987087",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "permyriad": 1000,
+          "type": "relative",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
-      `"totalPrice = "100.00 EUR""`
-    );
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Save 10% when you spend 100EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Save 10% when you spend 100EUR",
-        "fr": undefined,
-      }
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.897987087"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(
-      `"Spend100EURSave10pct"`
-    );
   });
 
   it('should return a cart discount draft when built for GraphQL', () => {
     const cartDiscountDraft =
       spendSaveTenPercent().buildGraphql<TCartDiscountDraftGraphql>();
 
-    expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
+    expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelativeDraft",
-        "permyriad": 1000,
-        "type": "relative",
+        "__typename": "CartDiscountDraft",
+        "cartPredicate": "totalPrice = "100.00 EUR"",
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Save 10% when you spend 100EUR",
+          },
+        ],
+        "isActive": true,
+        "key": "Spend100EURSave10pct",
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Save 10% when you spend 100EUR",
+          },
+        ],
+        "requiresDiscountCode": false,
+        "sortOrder": "0.897987087",
+        "stackingMode": "Stacking",
+        "target": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "__typename": "CartDiscountValueRelativeDraft",
+          "permyriad": 1000,
+          "type": "relative",
+        },
       }
     `);
-    expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
-      `"totalPrice = "100.00 EUR""`
-    );
-    expect(cartDiscountDraft.target).toMatchInlineSnapshot(`undefined`);
-    expect(cartDiscountDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Save 10% when you spend 100EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.description).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Save 10% when you spend 100EUR",
-        },
-      ]
-    `);
-    expect(cartDiscountDraft.stackingMode).toMatchInlineSnapshot(`"Stacking"`);
-    expect(cartDiscountDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(cartDiscountDraft.requiresDiscountCode).toMatchInlineSnapshot(
-      `false`
-    );
-    expect(cartDiscountDraft.sortOrder).toMatchInlineSnapshot(`"0.897987087"`);
-    expect(cartDiscountDraft.key).toMatchInlineSnapshot(
-      `"Spend100EURSave10pct"`
-    );
-    expect(cartDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"CartDiscountDraft"`
-    );
   });
 });
