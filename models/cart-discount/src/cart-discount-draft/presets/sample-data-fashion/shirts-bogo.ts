@@ -1,6 +1,7 @@
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const shirtsBogo = (): TCartDiscountDraftBuilder =>
@@ -22,7 +23,7 @@ const shirtsBogo = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']('Two for one on all Shirts (discount on the cheapest item)')
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(true)
     .sortOrder('0.2')

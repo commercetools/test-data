@@ -1,6 +1,7 @@
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const percentOffWomensWear = (): TCartDiscountDraftBuilder =>
@@ -22,7 +23,7 @@ const percentOffWomensWear = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']("Take 15% off any full priced item from our Women's category")
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.3445')

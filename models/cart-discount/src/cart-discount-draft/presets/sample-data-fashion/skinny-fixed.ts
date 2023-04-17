@@ -2,6 +2,7 @@ import { CartDiscountValueFixedDraft } from '@commercetools-test-data/cart-disco
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const skinnyFixed = (): TCartDiscountDraftBuilder =>
@@ -30,7 +31,7 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']('Save on Skinny Jeans at 25EUR per pair')
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.6')

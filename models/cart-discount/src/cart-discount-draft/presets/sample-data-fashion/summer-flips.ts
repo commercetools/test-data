@@ -1,6 +1,7 @@
 import { CartDiscountValueGiftLineItemDraft } from '@commercetools-test-data/cart-discount-value-gift-line-item';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const summerFlips = (): TCartDiscountDraftBuilder =>
@@ -29,7 +30,7 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']('Purchase the Summer Dress and get a free pair of flip flops')
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.888')

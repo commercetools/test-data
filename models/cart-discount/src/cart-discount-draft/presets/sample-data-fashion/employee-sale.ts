@@ -5,6 +5,7 @@ import {
   TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
@@ -22,7 +23,7 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
     .target(undefined)
     .name(LocalizedString.presets.empty()['en-US']('Employee Sale'))
     .description(LocalizedString.presets.empty()['en-US']('employee_sale'))
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(true)
     .sortOrder('0.8')

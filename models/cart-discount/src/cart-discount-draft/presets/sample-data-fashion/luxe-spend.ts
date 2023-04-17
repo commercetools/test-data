@@ -2,6 +2,7 @@ import { CartDiscountValueAbsoluteDraft } from '@commercetools-test-data/cart-di
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const luxeSpend = (): TCartDiscountDraftBuilder =>
@@ -32,7 +33,7 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']('Luxe customers - Get 30 EUR back when you spend 500EUR')
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.876899')

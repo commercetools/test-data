@@ -1,6 +1,7 @@
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
 const freeShipping = (): TCartDiscountDraftBuilder =>
@@ -22,7 +23,7 @@ const freeShipping = (): TCartDiscountDraftBuilder =>
         .empty()
         ['en-US']('Free shipping when your order is at least 100 EUR')
     )
-    .stackingMode('Stacking')
+    .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.222')
