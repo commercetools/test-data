@@ -19,7 +19,6 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
         .type('relative')
         .permyriad(1500)
     )
-    // TODO: integrate customer group preset key
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
     // TODO: create `target` model
     .target(undefined)
