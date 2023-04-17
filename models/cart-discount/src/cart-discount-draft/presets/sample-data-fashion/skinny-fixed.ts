@@ -1,5 +1,5 @@
-import * as CartDiscountValueFixed from '@commercetools-test-data/cart-discount-value-fixed';
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
+import { CartDiscountValueFixedDraft } from '@commercetools-test-data/cart-discount-value-fixed';
+import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
 import { TCartDiscountDraftBuilder } from '../../../types';
@@ -8,10 +8,10 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueFixed.CartDiscountValueFixedDraft.random()
+      CartDiscountValueFixedDraft.random()
         .type('fixed')
         .money(
-          CentPrecisionMoney.random()
+          CentPrecisionMoneyDraft.random()
             .currencyCode('EUR')
             .centAmount(2500)
             .fractionDigits(2)

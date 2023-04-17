@@ -1,5 +1,5 @@
-import * as CartDiscountValueAbsolute from '@commercetools-test-data/cart-discount-value-absolute';
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
+import { CartDiscountValueAbsoluteDraft } from '@commercetools-test-data/cart-discount-value-absolute';
+import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
 import { TCartDiscountDraftBuilder } from '../../../types';
@@ -8,10 +8,10 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueAbsolute.CartDiscountValueAbsoluteDraft.random()
+      CartDiscountValueAbsoluteDraft.random()
         .type('absolute')
         .money(
-          CentPrecisionMoney.random()
+          CentPrecisionMoneyDraft.random()
             .currencyCode('EUR')
             .centAmount(3000)
             .fractionDigits(2)

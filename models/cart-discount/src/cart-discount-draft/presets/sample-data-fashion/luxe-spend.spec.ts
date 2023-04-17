@@ -53,7 +53,7 @@ describe('with the preset `luxeSpend`', () => {
       {
         "__typename": "CartDiscountValueAbsoluteDraft",
         "money": {
-          "__typename": "Money",
+          "__typename": "MoneyInput",
           "centAmount": 3000,
           "currencyCode": "EUR",
           "fractionDigits": 2,

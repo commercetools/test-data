@@ -1,4 +1,4 @@
-import * as CartDiscountValueRelative from '@commercetools-test-data/cart-discount-value-relative';
+import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
@@ -15,9 +15,7 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueRelative.CartDiscountValueRelativeDraft.random()
-        .type('relative')
-        .permyriad(1500)
+      CartDiscountValueRelativeDraft.random().type('relative').permyriad(1500)
     )
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
     // TODO: create `target` model

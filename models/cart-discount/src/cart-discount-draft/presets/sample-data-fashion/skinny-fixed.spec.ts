@@ -51,7 +51,7 @@ describe('with the preset `skinnyFixed`', () => {
       {
         "__typename": "CartDiscountValueFixedDraft",
         "money": {
-          "__typename": "Money",
+          "__typename": "MoneyInput",
           "centAmount": 2500,
           "currencyCode": "EUR",
           "fractionDigits": 2,

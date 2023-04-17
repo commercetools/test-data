@@ -1,4 +1,4 @@
-import * as CartDiscountValueRelative from '@commercetools-test-data/cart-discount-value-relative';
+import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
 import { TCartDiscountDraftBuilder } from '../../../types';
@@ -7,9 +7,7 @@ const spendSaveTenPercent = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueRelative.CartDiscountValueRelativeDraft.random()
-        .type('relative')
-        .permyriad(1000)
+      CartDiscountValueRelativeDraft.random().type('relative').permyriad(1000)
     )
     .cartPredicate('totalPrice = "100.00 EUR"')
     // TODO: create `target` model
