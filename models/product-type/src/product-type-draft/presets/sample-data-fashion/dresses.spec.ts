@@ -7,255 +7,179 @@ import dresses from './dresses';
 describe(`with dresses preset`, () => {
   it(`should create a dresses product type draft`, () => {
     const dressesProductType = dresses().build<TProductTypeDraft>();
-    expect(dressesProductType).toEqual(
-      expect.objectContaining({
-        key: 'dresses',
-        name: 'Dresses',
-        description: 'Dresses',
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'length',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Length',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Length',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Maxi',
-                  label: 'Maxi',
-                }),
-                expect.objectContaining({
-                  key: 'Knee Length',
-                  label: 'Knee Length',
-                }),
-                expect.objectContaining({
-                  key: 'Mini',
-                  label: 'Mini',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-          expect.objectContaining({
-            name: 'color',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Color',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Color',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'White',
-                  label: 'White',
-                }),
-                expect.objectContaining({
-                  key: 'Pink',
-                  label: 'Pink',
-                }),
-                expect.objectContaining({
-                  key: 'Floral',
-                  label: 'Floral',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-        ]),
-        attributes: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'length',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Length',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Length',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Maxi',
-                  label: 'Maxi',
-                }),
-                expect.objectContaining({
-                  key: 'Knee Length',
-                  label: 'Knee Length',
-                }),
-                expect.objectContaining({
-                  key: 'Mini',
-                  label: 'Mini',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-          expect.objectContaining({
-            name: 'color',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Color',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Color',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'White',
-                  label: 'White',
-                }),
-                expect.objectContaining({
-                  key: 'Pink',
-                  label: 'Pink',
-                }),
-                expect.objectContaining({
-                  key: 'Floral',
-                  label: 'Floral',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-        ]),
-      })
-    );
+    expect(dressesProductType.name).toMatchInlineSnapshot(`"Dresses"`);
+    expect(dressesProductType.key).toMatchInlineSnapshot(`"dresses"`);
+    expect(dressesProductType.description).toMatchInlineSnapshot(`"Dresses"`);
+    expect(dressesProductType.attributes).toMatchInlineSnapshot(`
+      [
+        {
+          "attributeConstraint": "CombinationUnique",
+          "inputHint": "SingleLine",
+          "inputTip": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Length",
+            "fr": undefined,
+          },
+          "isRequired": false,
+          "isSearchable": false,
+          "label": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Length",
+            "fr": undefined,
+          },
+          "name": "length",
+          "type": {
+            "name": "enum",
+            "values": [
+              {
+                "key": "Maxi",
+                "label": "Maxi",
+              },
+              {
+                "key": "Knee Length",
+                "label": "Knee Length",
+              },
+              {
+                "key": "Mini",
+                "label": "Mini",
+              },
+            ],
+          },
+        },
+        {
+          "attributeConstraint": "CombinationUnique",
+          "inputHint": "SingleLine",
+          "inputTip": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Color",
+            "fr": undefined,
+          },
+          "isRequired": false,
+          "isSearchable": false,
+          "label": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Color",
+            "fr": undefined,
+          },
+          "name": "color",
+          "type": {
+            "name": "enum",
+            "values": [
+              {
+                "key": "White",
+                "label": "White",
+              },
+              {
+                "key": "Pink",
+                "label": "Pink",
+              },
+              {
+                "key": "Floral",
+                "label": "Floral",
+              },
+            ],
+          },
+        },
+      ]
+    `);
   });
 
   it(`should create a dresses product type draft when built for graphql`, () => {
     const dressesProductTypeGraphql =
       dresses().buildGraphql<TProductTypeDraftGraphql>();
-    expect(dressesProductTypeGraphql).toEqual(
-      expect.objectContaining({
-        key: 'dresses',
-        name: 'Dresses',
-        description: 'Dresses',
-        __typename: 'ProductTypeDraft',
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'length',
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Length',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Length',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              __typename: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Maxi',
-                  label: 'Maxi',
-                }),
-                expect.objectContaining({
-                  key: 'Knee Length',
-                  label: 'Knee Length',
-                }),
-                expect.objectContaining({
-                  key: 'Mini',
-                  label: 'Mini',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-            __typename: 'AttributeDefinitionDraft',
-          }),
-          expect.objectContaining({
-            name: 'color',
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Color',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Color',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'enum',
-              __typename: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'White',
-                  label: 'White',
-                }),
-                expect.objectContaining({
-                  key: 'Pink',
-                  label: 'Pink',
-                }),
-                expect.objectContaining({
-                  key: 'Floral',
-                  label: 'Floral',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'CombinationUnique',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-            __typename: 'AttributeDefinitionDraft',
-          }),
-        ]),
-      })
+    expect(dressesProductTypeGraphql.name).toMatchInlineSnapshot(`"Dresses"`);
+    expect(dressesProductTypeGraphql.key).toMatchInlineSnapshot(`"dresses"`);
+    expect(dressesProductTypeGraphql.description).toMatchInlineSnapshot(
+      `"Dresses"`
     );
+    expect(dressesProductTypeGraphql.attributeDefinitions)
+      .toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "AttributeDefinitionDraft",
+          "attributeConstraint": "CombinationUnique",
+          "inputHint": "SingleLine",
+          "inputTip": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Length",
+            },
+          ],
+          "isRequired": false,
+          "isSearchable": false,
+          "label": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Length",
+            },
+          ],
+          "name": "length",
+          "type": {
+            "__typename": "enum",
+            "name": "enum",
+            "values": [
+              {
+                "key": "Maxi",
+                "label": "Maxi",
+              },
+              {
+                "key": "Knee Length",
+                "label": "Knee Length",
+              },
+              {
+                "key": "Mini",
+                "label": "Mini",
+              },
+            ],
+          },
+        },
+        {
+          "__typename": "AttributeDefinitionDraft",
+          "attributeConstraint": "CombinationUnique",
+          "inputHint": "SingleLine",
+          "inputTip": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Color",
+            },
+          ],
+          "isRequired": false,
+          "isSearchable": false,
+          "label": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Color",
+            },
+          ],
+          "name": "color",
+          "type": {
+            "__typename": "enum",
+            "name": "enum",
+            "values": [
+              {
+                "key": "White",
+                "label": "White",
+              },
+              {
+                "key": "Pink",
+                "label": "Pink",
+              },
+              {
+                "key": "Floral",
+                "label": "Floral",
+              },
+            ],
+          },
+        },
+      ]
+    `);
   });
 });

@@ -8,6 +8,5 @@ it(`should set key and attributes fields to undefined`, () => {
     name: expect.any(String),
     description: expect.any(String),
     attributes: undefined,
-    attributeDefinitions: expect.any(Array),
   });
 });

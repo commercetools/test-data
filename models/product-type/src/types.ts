@@ -3,12 +3,15 @@ import {
   ProductTypeDraft,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
-import { TAttributeDefinitionGraphql } from '@commercetools-test-data/attribute-definition';
+import {
+  TAttributeDefinitionGraphql,
+  TAttributeDefinitionDraftGraphql,
+} from '@commercetools-test-data/attribute-definition';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProductType = ProductType;
 
-export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
+export type TProductTypeGraphql = TProductType & {
   __typename: 'ProductTypeDefinition';
   attributeDefinitions: {
     results: Array<TAttributeDefinitionGraphql>;
@@ -16,12 +19,11 @@ export type TProductTypeGraphql = Omit<TProductType, 'attributes'> & {
   };
 };
 
-export type TProductTypeDraft = ProductTypeDraft & {
-  attributeDefinitions: Array<AttributeDefinitionDraft>;
-};
+export type TProductTypeDraft = ProductTypeDraft;
 
 export type TProductTypeDraftGraphql = TProductTypeDraft & {
   __typename: 'ProductTypeDraft';
+  attributeDefinitions: Array<TAttributeDefinitionDraftGraphql>;
 };
 
 export type TProductTypeBuilder = TBuilder<TProductType>;

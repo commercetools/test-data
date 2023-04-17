@@ -7,213 +7,152 @@ import accessories from './accessories';
 describe(`with accessories preset`, () => {
   it(`should create an accesories product type draft`, () => {
     const accesoriesProductType = accessories().build<TProductTypeDraft>();
-    expect(accesoriesProductType).toEqual(
-      expect.objectContaining({
-        key: 'accessories',
-        name: 'Accessories',
-        description: 'Accessories',
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'type',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Type',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Type',
-              fr: undefined,
-            }),
-            isRequired: true,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Jewelry',
-                  label: 'Jewelry',
-                }),
-                expect.objectContaining({
-                  key: 'Bag',
-                  label: 'Bag',
-                }),
-                expect.objectContaining({
-                  key: 'Shoes',
-                  label: 'Shoes',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'None',
-            isSearchable: true,
-            inputHint: 'SingleLine',
-          }),
-          expect.objectContaining({
-            name: 'engraving',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Engraving',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Engraving',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'text',
-            }),
-            attributeConstraint: 'None',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-        ]),
-        attributes: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'type',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Type',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Type',
-              fr: undefined,
-            }),
-            isRequired: true,
-            type: expect.objectContaining({
-              name: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Jewelry',
-                  label: 'Jewelry',
-                }),
-                expect.objectContaining({
-                  key: 'Bag',
-                  label: 'Bag',
-                }),
-                expect.objectContaining({
-                  key: 'Shoes',
-                  label: 'Shoes',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'None',
-            isSearchable: true,
-            inputHint: 'SingleLine',
-          }),
-          expect.objectContaining({
-            name: 'engraving',
-            label: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Engraving',
-              fr: undefined,
-            }),
-            inputTip: expect.objectContaining({
-              de: undefined,
-              en: undefined,
-              'en-US': 'Engraving',
-              fr: undefined,
-            }),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'text',
-            }),
-            attributeConstraint: 'None',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-          }),
-        ]),
-      })
+    expect(accesoriesProductType.name).toMatchInlineSnapshot(`"Accessories"`);
+    expect(accesoriesProductType.key).toMatchInlineSnapshot(`"accessories"`);
+    expect(accesoriesProductType.description).toMatchInlineSnapshot(
+      `"Accessories"`
     );
+    expect(accesoriesProductType.attributes).toMatchInlineSnapshot(`
+      [
+        {
+          "attributeConstraint": "None",
+          "inputHint": "SingleLine",
+          "inputTip": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Type",
+            "fr": undefined,
+          },
+          "isRequired": true,
+          "isSearchable": true,
+          "label": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Type",
+            "fr": undefined,
+          },
+          "name": "type",
+          "type": {
+            "name": "enum",
+            "values": [
+              {
+                "key": "Jewelry",
+                "label": "Jewelry",
+              },
+              {
+                "key": "Bag",
+                "label": "Bag",
+              },
+              {
+                "key": "Shoes",
+                "label": "Shoes",
+              },
+            ],
+          },
+        },
+        {
+          "attributeConstraint": "None",
+          "inputHint": "SingleLine",
+          "inputTip": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Engraving",
+            "fr": undefined,
+          },
+          "isRequired": false,
+          "isSearchable": false,
+          "label": {
+            "de": undefined,
+            "en": undefined,
+            "en-US": "Engraving",
+            "fr": undefined,
+          },
+          "name": "engraving",
+          "type": {
+            "name": "text",
+          },
+        },
+      ]
+    `);
   });
 
   it(`should create an accesories product type draft when built for GraphQl`, () => {
     const accesoriesProductType =
       accessories().buildGraphql<TProductTypeDraftGraphql>();
-    expect(accesoriesProductType).toEqual(
-      expect.objectContaining({
-        key: 'accessories',
-        name: 'Accessories',
-        description: 'Accessories',
-        __typename: 'ProductTypeDraft',
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            name: 'type',
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Type',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Type',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            isRequired: true,
-            type: expect.objectContaining({
-              name: 'enum',
-              __typename: 'enum',
-              values: expect.arrayContaining([
-                expect.objectContaining({
-                  key: 'Jewelry',
-                  label: 'Jewelry',
-                }),
-                expect.objectContaining({
-                  key: 'Bag',
-                  label: 'Bag',
-                }),
-                expect.objectContaining({
-                  key: 'Shoes',
-                  label: 'Shoes',
-                }),
-              ]),
-            }),
-            attributeConstraint: 'None',
-            isSearchable: true,
-            inputHint: 'SingleLine',
-            __typename: 'AttributeDefinitionDraft',
-          }),
-          expect.objectContaining({
-            name: 'engraving',
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Engraving',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            inputTip: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en-US',
-                value: 'Engraving',
-                __typename: 'LocalizedString',
-              }),
-            ]),
-            isRequired: false,
-            type: expect.objectContaining({
-              name: 'text',
-              __typename: 'text',
-            }),
-            attributeConstraint: 'None',
-            isSearchable: false,
-            inputHint: 'SingleLine',
-            __typename: 'AttributeDefinitionDraft',
-          }),
-        ]),
-      })
+    expect(accesoriesProductType.name).toMatchInlineSnapshot(`"Accessories"`);
+    expect(accesoriesProductType.key).toMatchInlineSnapshot(`"accessories"`);
+    expect(accesoriesProductType.description).toMatchInlineSnapshot(
+      `"Accessories"`
     );
+    expect(accesoriesProductType.attributeDefinitions).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "AttributeDefinitionDraft",
+          "attributeConstraint": "None",
+          "inputHint": "SingleLine",
+          "inputTip": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Type",
+            },
+          ],
+          "isRequired": true,
+          "isSearchable": true,
+          "label": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Type",
+            },
+          ],
+          "name": "type",
+          "type": {
+            "__typename": "enum",
+            "name": "enum",
+            "values": [
+              {
+                "key": "Jewelry",
+                "label": "Jewelry",
+              },
+              {
+                "key": "Bag",
+                "label": "Bag",
+              },
+              {
+                "key": "Shoes",
+                "label": "Shoes",
+              },
+            ],
+          },
+        },
+        {
+          "__typename": "AttributeDefinitionDraft",
+          "attributeConstraint": "None",
+          "inputHint": "SingleLine",
+          "inputTip": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Engraving",
+            },
+          ],
+          "isRequired": false,
+          "isSearchable": false,
+          "label": [
+            {
+              "__typename": "LocalizedString",
+              "locale": "en-US",
+              "value": "Engraving",
+            },
+          ],
+          "name": "engraving",
+          "type": {
+            "__typename": "text",
+            "name": "text",
+          },
+        },
+      ]
+    `);
   });
 });
