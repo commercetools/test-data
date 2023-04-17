@@ -65,5 +65,5 @@ import {
 
 const productKeyRef = KeyReference.random()
   .typeId('product')
-  .build<TReference<'product'>>();
+  .build<TKeyReference<'product'>>();
 ```
