@@ -17,14 +17,12 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueAbsoluteDraft.random()
-        .type('absolute')
-        .money(
-          CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(3000)
-            .fractionDigits(2)
-        )
+      CartDiscountValueAbsoluteDraft.random().money(
+        CentPrecisionMoneyDraft.random()
+          .currencyCode('EUR')
+          .centAmount(3000)
+          .fractionDigits(2)
+      )
     )
     .cartPredicate(
       `totalPrice = "500.00 EUR" and customer.customerGroup.key = "${customerGroupDraft.key}"`

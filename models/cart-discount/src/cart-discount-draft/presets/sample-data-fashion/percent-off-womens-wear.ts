@@ -7,9 +7,7 @@ import { TCartDiscountDraftBuilder } from '../../../types';
 const percentOffWomensWear = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
-    .value(
-      CartDiscountValueRelativeDraft.random().type('relative').permyriad(1500)
-    )
+    .value(CartDiscountValueRelativeDraft.random().permyriad(1500))
     .cartPredicate('1 = 1')
     // TODO: create `target` model
     .target(undefined)

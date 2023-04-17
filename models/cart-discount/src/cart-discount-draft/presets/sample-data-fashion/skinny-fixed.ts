@@ -9,14 +9,12 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueFixedDraft.random()
-        .type('fixed')
-        .money(
-          CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(2500)
-            .fractionDigits(2)
-        )
+      CartDiscountValueFixedDraft.random().money(
+        CentPrecisionMoneyDraft.random()
+          .currencyCode('EUR')
+          .centAmount(2500)
+          .fractionDigits(2)
+      )
     )
     .cartPredicate('1 = 1')
     // TODO: create `target` model
