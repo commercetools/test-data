@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TCategoryDraft } from '../types';
 
@@ -11,7 +11,7 @@ const generator = Generator<TCategoryDraft>({
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
-    parent: null,
+    parent: fake(() => Reference.random()),
     orderHint: fake((f) =>
       f.datatype.float({ min: 0.01, max: 0.99 }).toString()
     ),

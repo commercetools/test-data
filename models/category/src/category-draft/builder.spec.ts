@@ -14,6 +14,9 @@ describe('builder', () => {
         key: expect.any(String),
         externalId: expect.any(String),
         orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          typeId: null,
+        }),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -36,6 +39,9 @@ describe('builder', () => {
         key: expect.any(String),
         externalId: expect.any(String),
         orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          typeId: null,
+        }),
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -58,6 +64,9 @@ describe('builder', () => {
         key: expect.any(String),
         externalId: expect.any(String),
         orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          __typename: 'Reference',
+        }),
         name: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',
