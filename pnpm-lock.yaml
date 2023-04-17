@@ -262,6 +262,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
+      '@commercetools-test-data/customer-group':
+        specifier: 4.11.1
+        version: link:../customer-group
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils

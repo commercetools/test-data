@@ -9,6 +9,7 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
     .value(
       CartDiscountValueGiftLineItem.random()
         .type('giftLineItem')
+        // TODO: integrate product preset key
         .product(Reference.random().typeId('product').key('summer_dress'))
     )
     .cartPredicate('lineItemExists(product.key = "summer_dress") = true')
