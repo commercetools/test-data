@@ -253,6 +253,9 @@ importers:
       '@commercetools-test-data/cart-discount-value-relative':
         specifier: 4.11.1
         version: link:../cart-discount-value-relative
+      '@commercetools-test-data/cent-precision-money':
+        specifier: 4.11.1
+        version: link:../cent-precision-money
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons
