@@ -5,4 +5,4 @@
 '@commercetools-test-data/commons': minor
 ---
 
-Create cart discount presets, empty preset for reference type, empty preset for giftLineItem
+Create cart discount presets, empty preset for giftLineItem
