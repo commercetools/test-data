@@ -4,12 +4,12 @@ export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
 
 export interface TReference<TypeId = string> {
   typeId: TypeId;
-  id?: string;
-  key?: string;
+  id: string;
+  key: string;
 }
 
 export type TExpandedReferenceObject<TypeId = string> = {
-  id?: TReference<TypeId>['id'];
+  id: TReference<TypeId>['id'];
   version?: number;
   [key: string]: unknown;
 };
