@@ -1,6 +1,5 @@
 import category from './category-reference';
-import empty from './empty';
 
-const presets = { category, empty };
+const presets = { category };
 
 export default presets;
