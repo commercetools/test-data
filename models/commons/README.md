@@ -54,3 +54,16 @@ const categoryRef = Reference.presets
   .category()
   .build<TReference<'category'>>();
 ```
+
+## `KeyReference`
+
+```ts
+import {
+  KeyReference,
+  type TKeyReference,
+} from '@commercetools-test-data/commons';
+
+const productKeyRef = KeyReference.random()
+  .typeId('product')
+  .build<TKeyReference<'product'>>();
+```

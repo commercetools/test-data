@@ -253,12 +253,18 @@ importers:
       '@commercetools-test-data/cart-discount-value-relative':
         specifier: 4.11.1
         version: link:../cart-discount-value-relative
+      '@commercetools-test-data/cent-precision-money':
+        specifier: 4.11.1
+        version: link:../cent-precision-money
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
+      '@commercetools-test-data/customer-group':
+        specifier: 4.11.1
+        version: link:../customer-group
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -532,6 +538,9 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
+      '@commercetools-test-data/cart-discount':
+        specifier: 4.11.1
+        version: link:../cart-discount
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons

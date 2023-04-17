@@ -1,4 +1,4 @@
-import { AddressDraft, Reference } from '@commercetools-test-data/commons';
+import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import * as CustomerGroup from '@commercetools-test-data/customer-group';
 import type { TCustomerGroupDraft } from '@commercetools-test-data/customer-group';
 import * as CustomerDraft from '../../';
@@ -27,7 +27,7 @@ const johnDoe = (): TCustomerDraftBuilder =>
         .country('DE'),
     ])
     .customerGroup(
-      Reference.random().key(customerGroup.key!).typeId('customer-group')
+      KeyReference.random().key(customerGroup.key!).typeId('customer-group')
     )
     .isEmailVerified(false);
 
