@@ -7,25 +7,18 @@ describe('with the preset `summerFlips`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "distributionChannel": {
-          "id": "7d8a157d-2316-4576-a563-34c21810d392",
-          "key": null,
-          "typeId": "channel",
-        },
+        "distributionChannel": undefined,
         "product": {
-          "id": "c03b5719-32ea-4ff3-af01-b5824ca6ea1f",
+          "id": undefined,
           "key": "summer_dress",
           "typeId": "product",
         },
-        "supplyChannel": {
-          "id": "c897a6a3-c0c1-4648-8096-8d12aa5bf5e0",
-          "key": null,
-          "typeId": "channel",
-        },
+        "supplyChannel": undefined,
         "type": "giftLineItem",
-        "variantId": 20772,
+        "variantId": 1,
       }
     `);
+
     expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
       `"lineItemExists(product.key = "summer_dress") = true"`
     );
@@ -61,29 +54,20 @@ describe('with the preset `summerFlips`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueGiftLineItem",
-        "distributionChannel": {
-          "__typename": "Reference",
-          "id": "3ba097e2-d60f-4c19-a253-4aa633607cc8",
-          "key": null,
-          "typeId": "channel",
-        },
+        "__typename": "CartDiscountValueGiftLineItemDraft",
+        "distributionChannel": undefined,
         "product": {
           "__typename": "Reference",
-          "id": "53f41f71-5cd3-4c6b-b11b-535407f2d618",
+          "id": undefined,
           "key": "summer_dress",
           "typeId": "product",
         },
-        "supplyChannel": {
-          "__typename": "Reference",
-          "id": "68021a35-d6d6-43d0-b86a-0128e7b10b27",
-          "key": null,
-          "typeId": "channel",
-        },
+        "supplyChannel": undefined,
         "type": "giftLineItem",
-        "variantId": 9985,
+        "variantId": 1,
       }
     `);
+
     expect(cartDiscountDraft.cartPredicate).toMatchInlineSnapshot(
       `"lineItemExists(product.key = "summer_dress") = true"`
     );
