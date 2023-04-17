@@ -7,7 +7,7 @@ describe('with the preset `shirtsBogo`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "permyriad": 1000,
+        "permyriad": 10000,
         "type": "relative",
       }
     `);
@@ -45,7 +45,7 @@ describe('with the preset `shirtsBogo`', () => {
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
         "__typename": "CartDiscountValueRelativeDraft",
-        "permyriad": 1000,
+        "permyriad": 10000,
         "type": "relative",
       }
     `);

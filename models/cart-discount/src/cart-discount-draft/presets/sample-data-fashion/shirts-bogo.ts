@@ -8,7 +8,7 @@ const shirtsBogo = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueRelativeDraft.random().type('relative').permyriad(1000)
+      CartDiscountValueRelativeDraft.random().type('relative').permyriad(10000)
     )
     .cartPredicate('1 = 1')
     // TODO: create `target` model
