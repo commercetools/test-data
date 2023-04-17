@@ -1,6 +1,6 @@
 import { AttributeEnumType, AttributeType } from '@commercetools/platform-sdk';
 import { Builder } from '@commercetools-test-data/core';
-import generator, { enumGenerator } from './generator';
+import { generator, enumGenerator } from './generator';
 import transformers from './transformers';
 import { TAttributeType, TCreateAttributeTypeBuilder } from './types';
 

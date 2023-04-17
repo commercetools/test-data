@@ -15,7 +15,7 @@ const typeWithNoAdditionalFieldsNames = [
 
 // https://docs.commercetools.com/api/projects/productTypes#attributetype
 
-const generator = Generator<TAttributeType>({
+export const generator = Generator<TAttributeType>({
   fields: {
     // Attribute types that will be generated are the ones with no additional fields
     // (with only the `name` field). If you want to generate attribute types with additional fields, use presets.
@@ -29,5 +29,3 @@ export const enumGenerator = Generator<AttributeEnumType>({
     values: null,
   },
 });
-
-export default generator;
