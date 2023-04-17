@@ -6,7 +6,6 @@ const generator = Generator<TReference>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
     typeId: null,
-    key: null,
   },
 });
 

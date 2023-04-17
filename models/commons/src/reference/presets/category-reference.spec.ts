@@ -6,6 +6,5 @@ it('should build category reference', () => {
   expect(built).toEqual({
     id: expect.any(String),
     typeId: 'category',
-    key: null,
   });
 });
