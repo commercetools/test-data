@@ -8,7 +8,7 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueFixed.random()
+      CartDiscountValueFixed.CartDiscountValueFixedDraft.random()
         .type('fixed')
         .money(
           CentPrecisionMoney.random()

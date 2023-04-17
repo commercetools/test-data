@@ -44,7 +44,7 @@ describe('with the preset `shirtsBogo`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelative",
+        "__typename": "CartDiscountValueRelativeDraft",
         "permyriad": 1000,
         "type": "relative",
       }

@@ -14,7 +14,11 @@ const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
 const employeeSale = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
-    .value(CartDiscountValueRelative.random().type('relative').permyriad(1500))
+    .value(
+      CartDiscountValueRelative.CartDiscountValueRelativeDraft.random()
+        .type('relative')
+        .permyriad(1500)
+    )
     // TODO: integrate customer group preset key
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
     // TODO: create `target` model

@@ -8,7 +8,7 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueAbsolute.random()
+      CartDiscountValueAbsolute.CartDiscountValueAbsoluteDraft.random()
         .type('absolute')
         .money(
           CentPrecisionMoney.random()

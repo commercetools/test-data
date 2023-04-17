@@ -44,7 +44,7 @@ describe('with the preset `freeShipping`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelative",
+        "__typename": "CartDiscountValueRelativeDraft",
         "permyriad": 10000,
         "type": "relative",
       }

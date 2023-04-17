@@ -51,7 +51,7 @@ describe('with the preset `luxeSpend`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueAbsolute",
+        "__typename": "CartDiscountValueAbsoluteDraft",
         "money": {
           "__typename": "Money",
           "centAmount": 3000,

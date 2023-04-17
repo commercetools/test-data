@@ -47,7 +47,7 @@ describe('with the preset `percentOffWomensWear`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelative",
+        "__typename": "CartDiscountValueRelativeDraft",
         "permyriad": 1500,
         "type": "relative",
       }

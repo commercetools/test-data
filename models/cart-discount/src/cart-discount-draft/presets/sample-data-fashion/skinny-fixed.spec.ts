@@ -49,7 +49,7 @@ describe('with the preset `skinnyFixed`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueFixed",
+        "__typename": "CartDiscountValueFixedDraft",
         "money": {
           "__typename": "Money",
           "centAmount": 2500,

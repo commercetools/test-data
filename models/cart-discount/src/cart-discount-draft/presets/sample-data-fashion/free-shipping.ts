@@ -6,7 +6,11 @@ import { TCartDiscountDraftBuilder } from '../../../types';
 const freeShipping = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
-    .value(CartDiscountValueRelative.random().type('relative').permyriad(10000))
+    .value(
+      CartDiscountValueRelative.CartDiscountValueRelativeDraft.random()
+        .type('relative')
+        .permyriad(10000)
+    )
     .cartPredicate('1 = 1')
     // TODO: create `target` model
     .target(undefined)

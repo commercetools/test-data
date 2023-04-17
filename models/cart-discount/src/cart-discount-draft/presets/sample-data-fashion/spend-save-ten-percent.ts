@@ -6,7 +6,11 @@ import { TCartDiscountDraftBuilder } from '../../../types';
 const spendSaveTenPercent = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
-    .value(CartDiscountValueRelative.random().type('relative').permyriad(1000))
+    .value(
+      CartDiscountValueRelative.CartDiscountValueRelativeDraft.random()
+        .type('relative')
+        .permyriad(1000)
+    )
     .cartPredicate('totalPrice = "100.00 EUR"')
     // TODO: create `target` model
     .target(undefined)

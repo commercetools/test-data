@@ -46,7 +46,7 @@ describe('with the preset `employeeSale`', () => {
 
     expect(cartDiscountDraft.value).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountValueRelative",
+        "__typename": "CartDiscountValueRelativeDraft",
         "permyriad": 1500,
         "type": "relative",
       }

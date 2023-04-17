@@ -7,7 +7,7 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueGiftLineItem.random()
+      CartDiscountValueGiftLineItem.CartDiscountValueGiftLineItemDraft.random()
         .type('giftLineItem')
         // TODO: integrate product preset key
         .product(Reference.random().typeId('product').key('summer_dress'))
