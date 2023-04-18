@@ -1,10 +1,10 @@
 import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import type { TCustomerGroupDraft } from '@commercetools-test-data/customer-group';
-import * as CustomerGroup from '@commercetools-test-data/customer-group';
+import { CustomerGroupDraft } from '@commercetools-test-data/customer-group';
 import * as CustomerDraft from '../../';
 import { TCustomerDraftBuilder } from '../../../types';
 
-const customerGroup = CustomerGroup.draftPresets.sampleDataFashion
+const customerGroup = CustomerGroupDraft.presets.sampleDataFashion
   .vip()
   .build<TCustomerGroupDraft>();
 
@@ -15,21 +15,8 @@ const jamieDoe = (): TCustomerDraftBuilder =>
     .email('jamie.doe@example.com')
     .firstName('Jamie')
     .lastName('Doe')
-    .addresses([
-      AddressDraft.presets
-        .empty()
-        .firstName('Jamie')
-        .lastName('Doe')
-        .streetName('Main Street')
-        .streetNumber('1')
-        .postalCode('56789')
-        .city('Mainville')
-        .state('New Jersey')
-        .country('US'),
-    ])
-    .customerGroup(
-      KeyReference.random().key(customerGroup.key!).typeId('customer-group')
-    )
+    .addresses([AddressDraft.presets.sampleDataFashion.jamieDoe()])
+    .customerGroup(KeyReference.presets.customerGroup().key(customerGroup.key!))
     .isEmailVerified(false);
 
 export default jamieDoe;

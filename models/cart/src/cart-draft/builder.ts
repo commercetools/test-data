@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
+import type { TCreateCartDraftBuilder, TCartDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateCartDraftBuilder, TCartDraft } from '../types';
 
 const Model: TCreateCartDraftBuilder = () =>
   Builder<TCartDraft>({
