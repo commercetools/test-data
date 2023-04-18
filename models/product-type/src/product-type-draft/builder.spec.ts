@@ -13,11 +13,6 @@ describe('builder', () => {
         key: expect.any(String),
         name: expect.any(String),
         description: expect.any(String),
-        attributeDefinitions: expect.arrayContaining([
-          expect.objectContaining({
-            attributeConstraint: expect.any(String),
-          }),
-        ]),
         attributes: expect.arrayContaining([
           expect.objectContaining({
             type: expect.objectContaining({ name: expect.any(String) }),

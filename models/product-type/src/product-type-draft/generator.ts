@@ -10,7 +10,6 @@ const generator = Generator<TProductTypeDraft>({
     key: fake((f) => f.lorem.slug()),
     description: fake((f) => f.random.words()),
     attributes: fake(() => [AttributeDefinitionDraft.random()]),
-    attributeDefinitions: fake(() => [AttributeDefinitionDraft.random()]),
   },
 });
 
