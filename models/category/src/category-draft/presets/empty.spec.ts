@@ -3,7 +3,6 @@ import empty from './empty';
 
 it(`should set all fields but name and slug to undefined`, () => {
   const emptyCategoryDraft = empty().build<TCategoryDraft>();
-  console.log(emptyCategoryDraft);
   expect(emptyCategoryDraft).toEqual({
     key: undefined,
     externalId: undefined,

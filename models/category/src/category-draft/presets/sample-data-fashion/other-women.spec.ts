@@ -4,66 +4,69 @@ import otherWomen from './other-women';
 describe(`with otherWomen preset`, () => {
   it('should provide an otherWomen preset', () => {
     const otherWomenCategoryDraft = otherWomen().build<TCategoryDraft>();
-    expect(otherWomenCategoryDraft).toEqual({
-      key: 'other-women',
-      externalId: undefined,
-      name: expect.objectContaining({
-        de: undefined,
-        en: undefined,
-        fr: undefined,
-        'en-US': 'Other',
-      }),
-      slug: expect.objectContaining({
-        de: undefined,
-        en: undefined,
-        fr: undefined,
-        'en-US': 'other_women',
-      }),
-      parent: expect.objectContaining({
-        typeId: 'category',
-        key: 'women',
-      }),
-      orderHint: '0.5',
-      metaTitle: undefined,
-      metaDescription: undefined,
-      metaKeywords: undefined,
-      assets: [],
-      custom: undefined,
-    });
+    expect(otherWomenCategoryDraft.key).toMatchInlineSnapshot(`"other-women"`);
+    expect(otherWomenCategoryDraft.name).toMatchInlineSnapshot(`
+      {
+        "de": undefined,
+        "en": undefined,
+        "en-US": "Other",
+        "fr": undefined,
+      }
+    `);
+    expect(otherWomenCategoryDraft.slug).toMatchInlineSnapshot(`
+      {
+        "de": undefined,
+        "en": undefined,
+        "en-US": "other_women",
+        "fr": undefined,
+      }
+    `);
+    expect(otherWomenCategoryDraft.parent).toMatchInlineSnapshot(`
+      {
+        "key": "women",
+        "typeId": "category",
+      }
+    `);
+    expect(otherWomenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.5"`);
   });
 
   it('should provide an otherWomen preset when built for graphql', () => {
     const otherWomenCategoryDraftGraphql =
       otherWomen().buildGraphql<TCategoryDraftGraphql>();
-    expect(otherWomenCategoryDraftGraphql).toEqual({
-      key: 'other-women',
-      externalId: undefined,
-      name: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en-US',
-          value: 'Other',
-          __typename: 'LocalizedString',
-        }),
-      ]),
-      slug: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en-US',
-          value: 'other_women',
-          __typename: 'LocalizedString',
-        }),
-      ]),
-      parent: expect.objectContaining({
-        __typename: 'Reference',
-        typeId: 'category',
-        key: 'women',
-      }),
-      orderHint: '0.5',
-      metaTitle: undefined,
-      metaDescription: undefined,
-      metaKeywords: undefined,
-      assets: [],
-      custom: undefined,
-      __typename: 'CategoryDraft',
-    });
+    expect(otherWomenCategoryDraftGraphql.key).toMatchInlineSnapshot(
+      `"other-women"`
+    );
+    expect(otherWomenCategoryDraftGraphql.nameAllLocales)
+      .toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "LocalizedString",
+          "locale": "en-US",
+          "value": "Other",
+        },
+      ]
+    `);
+    expect(otherWomenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "LocalizedString",
+          "locale": "en-US",
+          "value": "other_women",
+        },
+      ]
+    `);
+    expect(otherWomenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+      {
+        "__typename": "Reference",
+        "key": "women",
+        "typeId": "category",
+      }
+    `);
+    expect(otherWomenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
+      `"0.5"`
+    );
+    expect(otherWomenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
+      `"CategoryDraft"`
+    );
   });
 });

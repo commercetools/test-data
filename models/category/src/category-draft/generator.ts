@@ -11,7 +11,7 @@ const generator = Generator<TCategoryDraft>({
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
-    parent: fake(() => Reference.random()),
+    parent: fake(() => Reference.presets.category()),
     orderHint: fake((f) =>
       f.datatype.float({ min: 0.01, max: 0.99 }).toString()
     ),

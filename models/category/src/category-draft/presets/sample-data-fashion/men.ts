@@ -9,7 +9,6 @@ const men = (): TCategoryDraftBuilder =>
     .slug(LocalizedString.presets.empty()['en-US']('men'))
     .description(LocalizedString.presets.empty()['en-US']('Items for men'))
     .key('men')
-    .orderHint('0.75')
-    .assets([]);
+    .orderHint('0.75');
 
 export default men;

@@ -9,7 +9,6 @@ const kids = (): TCategoryDraftBuilder =>
     .slug(LocalizedString.presets.empty()['en-US']('kids'))
     .description(LocalizedString.presets.empty()['en-US']('Items for kids'))
     .key('kids')
-    .orderHint('0.25')
-    .assets([]);
+    .orderHint('0.25');
 
 export default kids;

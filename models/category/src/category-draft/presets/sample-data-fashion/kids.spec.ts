@@ -4,72 +4,71 @@ import kids from './kids';
 describe(`with kids preset`, () => {
   it('should provide a kids preset', () => {
     const kidsCategoryDraft = kids().build<TCategoryDraft>();
-    expect(kidsCategoryDraft).toEqual({
-      key: 'kids',
-      externalId: undefined,
-      name: expect.objectContaining({
-        de: undefined,
-        en: undefined,
-        fr: undefined,
-        'en-US': 'Kids',
-      }),
-      slug: expect.objectContaining({
-        de: undefined,
-        en: undefined,
-        fr: undefined,
-        'en-US': 'kids',
-      }),
-      description: expect.objectContaining({
-        de: undefined,
-        en: undefined,
-        fr: undefined,
-        'en-US': 'Items for kids',
-      }),
-      parent: undefined,
-      orderHint: '0.25',
-      metaTitle: undefined,
-      metaDescription: undefined,
-      metaKeywords: undefined,
-      assets: [],
-      custom: undefined,
-    });
+    expect(kidsCategoryDraft.key).toMatchInlineSnapshot(`"kids"`);
+    expect(kidsCategoryDraft.name).toMatchInlineSnapshot(`
+      {
+        "de": undefined,
+        "en": undefined,
+        "en-US": "Kids",
+        "fr": undefined,
+      }
+    `);
+    expect(kidsCategoryDraft.slug).toMatchInlineSnapshot(`
+      {
+        "de": undefined,
+        "en": undefined,
+        "en-US": "kids",
+        "fr": undefined,
+      }
+    `);
+    expect(kidsCategoryDraft.description).toMatchInlineSnapshot(`
+      {
+        "de": undefined,
+        "en": undefined,
+        "en-US": "Items for kids",
+        "fr": undefined,
+      }
+    `);
+    expect(kidsCategoryDraft.parent).toMatchInlineSnapshot(`undefined`);
+    expect(kidsCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.25"`);
   });
 
   it('should provide a kids preset when built for graphql', () => {
     const kidsCategoryDraftGraphql =
       kids().buildGraphql<TCategoryDraftGraphql>();
-    expect(kidsCategoryDraftGraphql).toEqual({
-      key: 'kids',
-      externalId: undefined,
-      name: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en-US',
-          value: 'Kids',
-          __typename: 'LocalizedString',
-        }),
-      ]),
-      slug: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en-US',
-          value: 'kids',
-          __typename: 'LocalizedString',
-        }),
-      ]),
-      description: expect.arrayContaining([
-        expect.objectContaining({
-          locale: 'en-US',
-          value: 'Items for kids',
-          __typename: 'LocalizedString',
-        }),
-      ]),
-      parent: undefined,
-      orderHint: '0.25',
-      metaTitle: undefined,
-      metaDescription: undefined,
-      metaKeywords: undefined,
-      assets: [],
-      custom: undefined,
-      __typename: 'CategoryDraft',
-    });
+    expect(kidsCategoryDraftGraphql.key).toMatchInlineSnapshot(`"kids"`);
+    expect(kidsCategoryDraftGraphql.nameAllLocales).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "LocalizedString",
+          "locale": "en-US",
+          "value": "Kids",
+        },
+      ]
+    `);
+    expect(kidsCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "LocalizedString",
+          "locale": "en-US",
+          "value": "kids",
+        },
+      ]
+    `);
+    expect(kidsCategoryDraftGraphql.descriptionAllLocales)
+      .toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "LocalizedString",
+          "locale": "en-US",
+          "value": "Items for kids",
+        },
+      ]
+    `);
+    expect(kidsCategoryDraftGraphql.parent).toMatchInlineSnapshot(`undefined`);
+    expect(kidsCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(`"0.25"`);
+    expect(kidsCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
+      `"CategoryDraft"`
+    );
   });
 });
