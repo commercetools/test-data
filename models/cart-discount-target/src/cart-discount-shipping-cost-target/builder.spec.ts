@@ -43,7 +43,7 @@ describe('builder', () => {
       CartDiscountShippingCostTarget.random(),
       expect.objectContaining({
         type: 'shipping',
-        __typename: 'CartDiscountTarget',
+        __typename: 'ShippingTarget',
       })
     )
   );
