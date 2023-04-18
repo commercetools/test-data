@@ -1,3 +1,7 @@
+import {
+  CartDiscountMultiBuyLineItemsTargetDraft,
+  selectionMode,
+} from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
@@ -9,8 +13,14 @@ const shirtsBogo = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(10000))
     .cartPredicate('1 = 1')
-    // TODO: create `target` model
-    .target(undefined)
+    .target(
+      CartDiscountMultiBuyLineItemsTargetDraft.random()
+        .predicate('productType.key = "shirts"')
+        .triggerQuantity(2)
+        .discountedQuantity(1)
+        .selectionMode(selectionMode.Cheapest)
+        .maxOccurrence(undefined)
+    )
     .name(
       LocalizedString.presets
         .empty()

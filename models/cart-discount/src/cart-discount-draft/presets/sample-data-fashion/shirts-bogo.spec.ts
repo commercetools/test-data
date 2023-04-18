@@ -26,7 +26,14 @@ describe('with the preset `shirtsBogo`', () => {
         "requiresDiscountCode": true,
         "sortOrder": "0.2",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "discountedQuantity": 1,
+          "maxOccurrence": undefined,
+          "predicate": "productType.key = "shirts"",
+          "selectionMode": "Cheapest",
+          "triggerQuantity": 2,
+          "type": "multiBuyLineItems",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -65,7 +72,18 @@ describe('with the preset `shirtsBogo`', () => {
         "requiresDiscountCode": true,
         "sortOrder": "0.2",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "multiBuyLineItems": {
+            "__typename": "MultiBuyLineItemsTargetInput",
+            "discountedQuantity": 1,
+            "maxOccurrence": undefined,
+            "predicate": "productType.key = "shirts"",
+            "selectionMode": "Cheapest",
+            "triggerQuantity": 2,
+            "type": "multiBuyLineItems",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {

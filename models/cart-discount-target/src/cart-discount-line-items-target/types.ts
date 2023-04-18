@@ -6,7 +6,7 @@ export type TCartDiscountLineItemsTargetDraft = CartDiscountLineItemsTarget;
 
 export type TCartDiscountLineItemsTargetGraphql =
   TCartDiscountLineItemsTarget & {
-    __typename: 'CartDiscountTarget';
+    __typename: 'LineItemsTarget';
   };
 
 export type TCartDiscountLineItemsTargetDraftGraphql = {
