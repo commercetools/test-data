@@ -1,8 +1,8 @@
 import type { TCategoryDraftBuilder } from '../../types';
-import Category from '../builder';
+import CategoryDraft from '../builder';
 
 const empty = (): TCategoryDraftBuilder =>
-  Category()
+  CategoryDraft()
     .key(undefined)
     .externalId(undefined)
     .description(undefined)
