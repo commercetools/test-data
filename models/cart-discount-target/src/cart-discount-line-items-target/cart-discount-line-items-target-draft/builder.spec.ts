@@ -44,9 +44,12 @@ describe('builder', () => {
       'graphql',
       CartDiscountLineItemsTargetDraft.random(),
       expect.objectContaining({
-        type: 'lineItems',
-        predicate: expect.any(String),
-        __typename: 'CartDiscountLineItemsTargetInput',
+        lineItems: {
+          type: 'lineItems',
+          predicate: expect.any(String),
+          __typename: 'LineItemsTargetInput',
+        },
+        __typename: 'CartDiscountTargetInput',
       })
     )
   );

@@ -5,14 +5,16 @@ export type TCartDiscountLineItemsTarget = CartDiscountLineItemsTarget;
 export type TCartDiscountLineItemsTargetDraft = CartDiscountLineItemsTarget;
 
 export type TCartDiscountLineItemsTargetGraphql =
-  TCartDiscountLineItemsTargetDraft & {
-    __typename: 'CartDiscountLineItemsTarget';
+  TCartDiscountLineItemsTarget & {
+    __typename: 'CartDiscountTarget';
   };
 
-export type TCartDiscountLineItemsTargetDraftGraphql =
-  TCartDiscountLineItemsTargetDraft & {
-    __typename: 'CartDiscountLineItemsTargetInput';
+export type TCartDiscountLineItemsTargetDraftGraphql = {
+  lineItems: TCartDiscountLineItemsTarget & {
+    __typename: 'LineItemsTargetInput';
   };
+  __typename: 'CartDiscountTargetInput';
+};
 
 export type TCartDiscountLineItemsTargetBuilder =
   TBuilder<TCartDiscountLineItemsTarget>;

@@ -46,7 +46,7 @@ describe('builder', () => {
       expect.objectContaining({
         type: 'lineItems',
         predicate: expect.any(String),
-        __typename: 'CartDiscountLineItemsTarget',
+        __typename: 'CartDiscountTarget',
       })
     )
   );
