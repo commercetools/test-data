@@ -10,62 +10,52 @@ https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscounttarget
 $ yarn add -D @commercetools-test-data/cart-discount-target
 ```
 
-## TODO: refactor README
-
 # Usage
 
-## `Address`
+## `CartDiscountLineItemsTarget`
 
 ```ts
 import {
-  Address,
-  AddressDraft,
-  type TAddress,
-  type TAddressDraft,
-} from '@commercetools-test-data/commons';
+  CartDiscountLineItemsTarget,
+  CartDiscountLineItemsTargetDraft,
+  type TCartDiscountLineItemsTarget,
+  type TCartDiscountLineItemsTargetDraft,
+} from '@commercetools-test-data/cart-discount-target';
 
-const address = Address.random().build<TAddress>();
-const addressDraft = AddressDraft.random().build<TAddressDraft>();
+const target =
+  CartDiscountLineItemsTarget.random().build<TCartDiscountLineItemsTarget>();
+const targetDraft =
+  CartDiscountLineItemsTargetDraft.random().build<TCartDiscountLineItemsTargetDraft>();
 ```
 
-## `LocalizedString`
+## `CartDiscountShippingCost`
 
 ```ts
 import {
-  LocalizedString,
-  type TLocalizedString,
-} from '@commercetools-test-data/commons';
+  CartDiscountShippingCost,
+  CartDiscountShippingCostDraft,
+  type TCartDiscountShippingCost,
+  type TCartDiscountShippingCostDraft,
+} from '@commercetools-test-data/cart-discount-target';
 
-const name = LocalizedString.random().build<TLocalizedString>();
-
-// Presets
-const emptyName = LocalizedString.presets.empty().build<TLocalizedString>();
+const target =
+  CartDiscountShippingCost.random().build<TCartDiscountShippingCost>();
+const targetDraft =
+  CartDiscountShippingCostDraft.random().build<TCartDiscountShippingCostDraft>();
 ```
 
-## `Reference`
-
-```ts
-import { Reference, type TReference } from '@commercetools-test-data/commons';
-
-const productRef = Reference.random()
-  .typeId('product')
-  .build<TReference<'product'>>();
-
-// Presets
-const categoryRef = Reference.presets
-  .category()
-  .build<TReference<'category'>>();
-```
-
-## `KeyReference`
+## `CartDiscountMultiBuyLineItems`
 
 ```ts
 import {
-  KeyReference,
-  type TKeyReference,
-} from '@commercetools-test-data/commons';
+  CartDiscountMultiBuyLineItems,
+  CartDiscountMultiBuyLineItemsDraft,
+  type TCartDiscountMultiBuyLineItems,
+  type TCartDiscountMultiBuyLineItemsDraft,
+} from '@commercetools-test-data/cart-discount-target';
 
-const productKeyRef = KeyReference.random()
-  .typeId('product')
-  .build<TKeyReference<'product'>>();
+const target =
+  CartDiscountMultiBuyLineItems.random().build<TCartDiscountMultiBuyLineItems>();
+const targetDraft =
+  CartDiscountMultiBuyLineItemsDraft.random().build<TCartDiscountMultiBuyLineItemsDraft>();
 ```
