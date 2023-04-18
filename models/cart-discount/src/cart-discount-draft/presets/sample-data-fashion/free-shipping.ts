@@ -1,3 +1,4 @@
+import { CartDiscountShippingCostTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
@@ -9,8 +10,7 @@ const freeShipping = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(10000))
     .cartPredicate('1 = 1')
-    // TODO: create `target` model
-    .target(undefined)
+    .target(CartDiscountShippingCostTargetDraft.random())
     .name(
       LocalizedString.presets
         .empty()

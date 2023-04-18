@@ -26,7 +26,9 @@ describe('with the preset `freeShipping`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.222",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "type": "shipping",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -65,7 +67,13 @@ describe('with the preset `freeShipping`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.222",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "shipping": {
+            "__typename": "ShippingTargetInput",
+            "type": "shipping",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
