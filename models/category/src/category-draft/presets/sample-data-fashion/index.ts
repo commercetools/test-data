@@ -13,19 +13,19 @@ import topsWomen from './tops-women';
 import women from './women';
 
 const presets = {
-  women,
-  men,
-  kids,
-  clothingKids,
   bottomsKids,
   bottomsMen,
   bottomsWomen,
+  clothingKids,
+  kids,
+  men,
   otherKids,
   otherMen,
   otherWomen,
   topsKids,
   topsMen,
   topsWomen,
+  women,
 };
 
 export default presets;

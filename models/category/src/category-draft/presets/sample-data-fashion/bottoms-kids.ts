@@ -2,16 +2,14 @@ import {
   LocalizedString,
   KeyReference,
 } from '@commercetools-test-data/commons';
-import * as CategoryDraft from '../..';
 import { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import empty from '../empty';
+import clothingKids from './clothing-kids';
 
-const clothingKidsDraft = CategoryDraft.presets.sampleDataFashion
-  .clothingKids()
-  .build<TCategoryDraft>();
+const clothingKidsDraft = clothingKids().build<TCategoryDraft>();
 
 const bottomsKids = (): TCategoryDraftBuilder =>
-  CategoryDraft.presets
-    .empty()
+  empty()
     .name(LocalizedString.presets.empty()['en-US']('Bottoms'))
     .slug(LocalizedString.presets.empty()['en-US']('bottoms_kids'))
     .description(LocalizedString.presets.empty()['en-US']('Bottoms'))
