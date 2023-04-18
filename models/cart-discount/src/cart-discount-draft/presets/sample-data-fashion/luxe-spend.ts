@@ -1,3 +1,4 @@
+import { CartDiscountLineItemsTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueAbsoluteDraft } from '@commercetools-test-data/cart-discount-value-absolute';
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
@@ -27,8 +28,7 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
     .cartPredicate(
       `totalPrice = "500.00 EUR" and customer.customerGroup.key = "${customerGroupDraft.key}"`
     )
-    // TODO: create `target` model
-    .target(undefined)
+    .target(CartDiscountLineItemsTargetDraft.random().predicate('1=1'))
     .name(
       LocalizedString.presets
         .empty()

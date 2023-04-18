@@ -1,3 +1,4 @@
+import { CartDiscountLineItemsTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueFixedDraft } from '@commercetools-test-data/cart-discount-value-fixed';
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
@@ -17,8 +18,11 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
       )
     )
     .cartPredicate('1 = 1')
-    // TODO: create `target` model
-    .target(undefined)
+    .target(
+      CartDiscountLineItemsTargetDraft.random().predicate(
+        `product.key = "skinny_jeans"`
+      )
+    )
     .name(
       LocalizedString.presets
         .empty()

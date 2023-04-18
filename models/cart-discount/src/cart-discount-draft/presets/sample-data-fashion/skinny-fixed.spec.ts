@@ -26,7 +26,10 @@ describe('with the preset `skinnyFixed`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.6",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "predicate": "product.key = "skinny_jeans"",
+          "type": "lineItems",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -70,7 +73,14 @@ describe('with the preset `skinnyFixed`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.6",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "lineItems": {
+            "__typename": "LineItemsTargetInput",
+            "predicate": "product.key = "skinny_jeans"",
+            "type": "lineItems",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {

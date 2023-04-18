@@ -1,3 +1,4 @@
+import { CartDiscountLineItemsTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
@@ -9,8 +10,11 @@ const percentOffWomensWear = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(1500))
     .cartPredicate('1 = 1')
-    // TODO: create `target` model
-    .target(undefined)
+    .target(
+      CartDiscountLineItemsTargetDraft.random().predicate(
+        `categories.key contains "bottoms-women" and price.discount.id is not defined`
+      )
+    )
     .name(
       LocalizedString.presets
         .empty()

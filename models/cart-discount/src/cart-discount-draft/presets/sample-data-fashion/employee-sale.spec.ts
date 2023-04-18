@@ -26,7 +26,10 @@ describe('with the preset `employeeSale`', () => {
         "requiresDiscountCode": true,
         "sortOrder": "0.8",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "predicate": "customer.customerGroup.key = "employee"",
+          "type": "lineItems",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -65,7 +68,14 @@ describe('with the preset `employeeSale`', () => {
         "requiresDiscountCode": true,
         "sortOrder": "0.8",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "lineItems": {
+            "__typename": "LineItemsTargetInput",
+            "predicate": "customer.customerGroup.key = "employee"",
+            "type": "lineItems",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {

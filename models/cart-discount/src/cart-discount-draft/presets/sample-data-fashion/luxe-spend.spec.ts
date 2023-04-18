@@ -26,7 +26,10 @@ describe('with the preset `luxeSpend`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.876899",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "predicate": "1=1",
+          "type": "lineItems",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -70,7 +73,14 @@ describe('with the preset `luxeSpend`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.876899",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "lineItems": {
+            "__typename": "LineItemsTargetInput",
+            "predicate": "1=1",
+            "type": "lineItems",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {

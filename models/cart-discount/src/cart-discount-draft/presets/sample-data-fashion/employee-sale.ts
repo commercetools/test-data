@@ -1,3 +1,4 @@
+import { CartDiscountLineItemsTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
@@ -17,8 +18,11 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(1500))
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
-    // TODO: create `target` model
-    .target(undefined)
+    .target(
+      CartDiscountLineItemsTargetDraft.random().predicate(
+        `customer.customerGroup.key = "${customerGroupDraft.key}"`
+      )
+    )
     .name(LocalizedString.presets.empty()['en-US']('Employee Sale'))
     .description(LocalizedString.presets.empty()['en-US']('employee_sale'))
     .stackingMode(stackingMode.Stacking)

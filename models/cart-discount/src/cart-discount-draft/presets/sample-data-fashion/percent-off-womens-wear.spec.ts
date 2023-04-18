@@ -27,7 +27,10 @@ describe('with the preset `percentOffWomensWear`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.3445",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "predicate": "categories.key contains "bottoms-women" and price.discount.id is not defined",
+          "type": "lineItems",
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
@@ -66,7 +69,14 @@ describe('with the preset `percentOffWomensWear`', () => {
         "requiresDiscountCode": false,
         "sortOrder": "0.3445",
         "stackingMode": "Stacking",
-        "target": undefined,
+        "target": {
+          "__typename": "CartDiscountTargetInput",
+          "lineItems": {
+            "__typename": "LineItemsTargetInput",
+            "predicate": "categories.key contains "bottoms-women" and price.discount.id is not defined",
+            "type": "lineItems",
+          },
+        },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
