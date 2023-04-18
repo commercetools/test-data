@@ -9,10 +9,6 @@ const transformers = {
     TCartDiscountShippingCostTargetDraft,
     TCartDiscountShippingCostTargetDraft
   >('default', {}),
-  rest: Transformer<
-    TCartDiscountShippingCostTargetDraft,
-    TCartDiscountShippingCostTargetDraft
-  >('rest', {}),
   graphql: Transformer<
     TCartDiscountShippingCostTargetDraft,
     TCartDiscountShippingCostTargetDraftGraphql

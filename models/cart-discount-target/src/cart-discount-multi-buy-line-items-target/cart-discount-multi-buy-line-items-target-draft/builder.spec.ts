@@ -29,24 +29,6 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<
       TCartDiscountMultiBuyLineItemsTargetDraft,
-      TCartDiscountMultiBuyLineItemsTargetDraft
-    >(
-      'rest',
-      CartDiscountMultiBuyLineItemsTargetDraft.random(),
-      expect.objectContaining({
-        type: 'multiBuyLineItems',
-        predicate: expect.any(String),
-        triggerQuantity: expect.any(Number),
-        discountedQuantity: expect.any(Number),
-        maxOccurrence: expect.any(Number),
-        selectionMode: expect.any(String),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<
-      TCartDiscountMultiBuyLineItemsTargetDraft,
       TCartDiscountMultiBuyLineItemsTargetDraftGraphql
     >(
       'graphql',

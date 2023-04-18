@@ -4,16 +4,11 @@ import type {
   TCartDiscountMultiBuyLineItemsTargetDraftGraphql,
 } from '../types';
 
-// TODO: drafts of these models don't have REST representations, delete them
 const transformers = {
   default: Transformer<
     TCartDiscountMultiBuyLineItemsTargetDraft,
     TCartDiscountMultiBuyLineItemsTargetDraft
   >('default', {}),
-  rest: Transformer<
-    TCartDiscountMultiBuyLineItemsTargetDraft,
-    TCartDiscountMultiBuyLineItemsTargetDraft
-  >('rest', {}),
   graphql: Transformer<
     TCartDiscountMultiBuyLineItemsTargetDraft,
     TCartDiscountMultiBuyLineItemsTargetDraftGraphql

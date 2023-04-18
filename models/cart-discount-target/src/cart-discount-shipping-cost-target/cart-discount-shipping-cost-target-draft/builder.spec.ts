@@ -24,19 +24,6 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<
       TCartDiscountShippingCostTargetDraft,
-      TCartDiscountShippingCostTargetDraft
-    >(
-      'rest',
-      CartDiscountShippingCostTargetDraft.random(),
-      expect.objectContaining({
-        type: 'shipping',
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<
-      TCartDiscountShippingCostTargetDraft,
       TCartDiscountShippingCostTargetDraftGraphql
     >(
       'graphql',
