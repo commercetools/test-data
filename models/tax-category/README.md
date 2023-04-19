@@ -16,7 +16,7 @@ $ yarn add -D @commercetools-test-data/tax-category
 
 ```ts
 import type { TTaxCategory } from '@commercetools-test-data/tax-category';
-import * as TaxCategory from '@commercetools-test-data/tax-category';
+import { TaxCategory } from '@commercetools-test-data/tax-category';
 
 const taxCategory = TaxCategory.random().build<TTaxCategory>();
 const taxCategoryDraft =
@@ -27,7 +27,7 @@ const taxCategoryDraft =
 
 ```ts
 import type { TTaxRate } from '@commercetools-test-data/tax-rate';
-import * as TaxRate from '@commercetools-test-data/tax-rate';
+import { TaxRate } from '@commercetools-test-data/tax-rate';
 
 const taxRate = TaxRate.random().build<TTaxRate>();
 const taxRateDraft = TaxRate.TaxRateDraft.random().build<TTaxRateDraft>();
