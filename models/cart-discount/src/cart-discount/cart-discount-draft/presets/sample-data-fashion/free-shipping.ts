@@ -1,7 +1,7 @@
-import { CartDiscountShippingCostTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { CartDiscountShippingCostTargetDraft } from '../../../..';
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 

@@ -1,8 +1,8 @@
-import { CartDiscountLineItemsTargetDraft } from '@commercetools-test-data/cart-discount-target';
 import { CartDiscountValueFixedDraft } from '@commercetools-test-data/cart-discount-value-fixed';
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { CartDiscountLineItemsTargetDraft } from '../../../..';
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
