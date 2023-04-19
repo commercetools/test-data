@@ -1,9 +1,9 @@
-import { TaxRateDraft } from '@commercetools-test-data/tax-rate';
+import * as TaxRate from '../../../tax-rate';
 import TaxCategoryDraft from '../builder';
 
 const withTaxRateCountryUsaAndIncludedInPrice = () =>
   TaxCategoryDraft().rates([
-    TaxRateDraft.presets.withCountryUsaAndIncludedInPrice(),
+    TaxRate.TaxRateDraft.presets.withCountryUsaAndIncludedInPrice(),
   ]);
 
 export default withTaxRateCountryUsaAndIncludedInPrice;
