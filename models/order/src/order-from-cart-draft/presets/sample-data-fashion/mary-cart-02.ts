@@ -7,6 +7,7 @@ const maryCart02 = (): TOrderFromCartDraftBuilder =>
   OrderFromCartDraft.presets
     .empty()
     .version(null!)
+    // TODO: use the key from the cart model presets when available
     .cart(KeyReference.random().key('mary-02-cart').typeId('cart'))
     .orderState(constants.orderState.Complete);
 
