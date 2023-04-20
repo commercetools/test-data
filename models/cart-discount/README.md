@@ -15,15 +15,16 @@ $ yarn add -D @commercetools-test-data/cart-discount
 ## `CartDiscount`
 
 ```ts
-import type {
-  TCartDiscount,
-  TCartDiscountDraft,
+import {
+  CartDiscount,
+  CartDiscountDraft,
+  type TCartDiscount,
+  type TCartDiscountDraft,
 } from '@commercetools-test-data/cart-discount';
-import * as CartDiscount from '@commercetools-test-data/cart-discount';
 
 const cartDiscount = CartDiscount.random().build<TCartDiscount>();
 const cartDiscountDraft =
-  CartDiscount.CartDiscountDraft.random().build<TCartDiscountDraft>();
+  CartDiscountDraft.random().build<TCartDiscountDraft>();
 ```
 
 ## `CartDiscountLineItemsTarget`
@@ -34,7 +35,7 @@ import {
   CartDiscountLineItemsTargetDraft,
   type TCartDiscountLineItemsTarget,
   type TCartDiscountLineItemsTargetDraft,
-} from '@commercetools-test-data/cart-discount-target';
+} from '@commercetools-test-data/cart-discount';
 
 const target =
   CartDiscountLineItemsTarget.random().build<TCartDiscountLineItemsTarget>();
@@ -50,7 +51,7 @@ import {
   CartDiscountShippingCostDraft,
   type TCartDiscountShippingCost,
   type TCartDiscountShippingCostDraft,
-} from '@commercetools-test-data/cart-discount-target';
+} from '@commercetools-test-data/cart-discount';
 
 const target =
   CartDiscountShippingCost.random().build<TCartDiscountShippingCost>();
@@ -66,7 +67,7 @@ import {
   CartDiscountMultiBuyLineItemsDraft,
   type TCartDiscountMultiBuyLineItems,
   type TCartDiscountMultiBuyLineItemsDraft,
-} from '@commercetools-test-data/cart-discount-target';
+} from '@commercetools-test-data/cart-discount';
 
 const target =
   CartDiscountMultiBuyLineItems.random().build<TCartDiscountMultiBuyLineItems>();
