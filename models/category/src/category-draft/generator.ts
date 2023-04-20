@@ -6,7 +6,6 @@ import { Generator, fake } from '@commercetools-test-data/core';
 import type { TCategoryDraft } from '../types';
 
 const KEY = 'key';
-const CATEGORY = 'category';
 
 // https://docs.commercetools.com/api/projects/categories#categorydraft
 
@@ -17,7 +16,7 @@ const generator = Generator<TCategoryDraft>({
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
-    parent: fake(() => KeyReference.random().key(KEY).typeId(CATEGORY)),
+    parent: fake(() => KeyReference.presets.category().key(KEY)),
     orderHint: fake((f) =>
       f.datatype.float({ min: 0.01, max: 0.99 }).toString()
     ),

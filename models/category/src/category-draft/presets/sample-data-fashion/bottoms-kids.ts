@@ -13,9 +13,7 @@ const bottomsKids = (): TCategoryDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-US']('Bottoms'))
     .slug(LocalizedString.presets.empty()['en-US']('bottoms_kids'))
     .description(LocalizedString.presets.empty()['en-US']('Bottoms'))
-    .parent(
-      KeyReference.random().key(clothingKidsDraft.key!).typeId('category')
-    )
+    .parent(KeyReference.presets.category().key(clothingKidsDraft.key!))
     .key('bottoms_kids')
     .orderHint('0.3');
 

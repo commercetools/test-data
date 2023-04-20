@@ -12,9 +12,7 @@ const otherKids = (): TCategoryDraftBuilder =>
   empty()
     .name(LocalizedString.presets.empty()['en-US']('Other'))
     .slug(LocalizedString.presets.empty()['en-US']('other_kids'))
-    .parent(
-      KeyReference.random().key(kidsCategoryDraft.key!).typeId('category')
-    )
+    .parent(KeyReference.presets.category().key(kidsCategoryDraft.key!))
     .key('other-kids')
     .orderHint('0.25');
 
