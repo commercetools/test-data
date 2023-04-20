@@ -1,3 +1,5 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCategory, TCategoryGraphql } from './types';

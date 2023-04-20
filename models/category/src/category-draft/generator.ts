@@ -1,6 +1,11 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import {
+  LocalizedString,
+  KeyReference,
+} from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TCategoryDraft } from '../types';
+
+const KEY = 'key';
 
 // https://docs.commercetools.com/api/projects/categories#categorydraft
 
@@ -11,7 +16,7 @@ const generator = Generator<TCategoryDraft>({
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
-    parent: null,
+    parent: fake(() => KeyReference.presets.category().key(KEY)),
     orderHint: fake((f) =>
       f.datatype.float({ min: 0.01, max: 0.99 }).toString()
     ),
