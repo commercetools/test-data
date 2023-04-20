@@ -1,5 +1,9 @@
 import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
 import * as CartDiscountDraft from '../..';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
@@ -8,6 +12,10 @@ import {
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 
+const productTypeDraft = ProductTypeDraft.presets.sampleDataFashion
+  .shirts()
+  .build<TProductTypeDraft>();
+
 const shirtsBogo = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
@@ -15,7 +23,7 @@ const shirtsBogo = (): TCartDiscountDraftBuilder =>
     .cartPredicate('1 = 1')
     .target(
       CartDiscountMultiBuyLineItemsTargetDraft.random()
-        .predicate('productType.key = "shirts"')
+        .predicate(`productType.key = "${productTypeDraft.key}"`)
         .triggerQuantity(2)
         .discountedQuantity(1)
         .selectionMode(selectionMode.Cheapest)

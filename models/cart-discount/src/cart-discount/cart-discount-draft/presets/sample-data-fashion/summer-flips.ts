@@ -13,7 +13,7 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
     .value(
       CartDiscountValueGiftLineItemDraft.presets
         .empty()
-        // TODO: integrate product preset key
+        // TODO: update with product preset key
         .product(KeyReference.random().typeId('product').key('summer_dress'))
         .variantId(1)
     )

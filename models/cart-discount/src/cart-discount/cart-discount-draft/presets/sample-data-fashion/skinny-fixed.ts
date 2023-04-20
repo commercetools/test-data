@@ -19,6 +19,7 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
     )
     .cartPredicate('1 = 1')
     .target(
+      // TODO: update with product preset key
       CartDiscountLineItemsTargetDraft.random().predicate(
         `product.key = "skinny_jeans"`
       )
