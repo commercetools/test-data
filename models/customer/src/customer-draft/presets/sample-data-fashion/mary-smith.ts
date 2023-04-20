@@ -9,17 +9,7 @@ const marySmith = (): TCustomerDraftBuilder =>
     .email('mary.smith@example.com')
     .firstName('Mary')
     .lastName('Smith')
-    .addresses([
-      AddressDraft.presets
-        .empty()
-        .firstName('Mary')
-        .lastName('Smith')
-        .streetName('Sample Street')
-        .streetNumber('1')
-        .postalCode('12345')
-        .city('Sample Town')
-        .country('DE'),
-    ])
+    .addresses([AddressDraft.presets.sampleDataFashion.marySmith()])
     .isEmailVerified(false);
 
 export default marySmith;

@@ -220,6 +220,12 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: 4.11.1
+        version: link:../customer
+      '@commercetools-test-data/discount-code':
+        specifier: 4.11.1
+        version: link:../discount-code
       '@commercetools-test-data/line-item':
         specifier: 4.11.1
         version: link:../line-item

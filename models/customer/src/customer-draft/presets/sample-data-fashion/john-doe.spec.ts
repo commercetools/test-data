@@ -11,14 +11,6 @@ describe('with the preset `johnDoe`', () => {
     expect(customer.lastName).toMatchInlineSnapshot(`"Doe"`);
 
     expect(customer.addresses![0].firstName).toMatchInlineSnapshot(`"John"`);
-    expect(customer.addresses![0].lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(customer.addresses![0].streetName).toMatchInlineSnapshot(
-      `"Center Road"`
-    );
-    expect(customer.addresses![0].streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(customer.addresses![0].postalCode).toMatchInlineSnapshot(`"34567"`);
-    expect(customer.addresses![0].city).toMatchInlineSnapshot(`"Center Town"`);
-    expect(customer.addresses![0].country).toMatchInlineSnapshot(`"DE"`);
 
     expect(customer.customerGroup!.key).toMatchInlineSnapshot('"employee"');
     expect(customer.isEmailVerified).toMatchInlineSnapshot(`false`);
@@ -33,14 +25,6 @@ describe('with the preset `johnDoe`', () => {
     expect(customer.lastName).toMatchInlineSnapshot(`"Doe"`);
 
     expect(customer.addresses![0].firstName).toMatchInlineSnapshot(`"John"`);
-    expect(customer.addresses![0].lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(customer.addresses![0].streetName).toMatchInlineSnapshot(
-      `"Center Road"`
-    );
-    expect(customer.addresses![0].streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(customer.addresses![0].postalCode).toMatchInlineSnapshot(`"34567"`);
-    expect(customer.addresses![0].city).toMatchInlineSnapshot(`"Center Town"`);
-    expect(customer.addresses![0].country).toMatchInlineSnapshot(`"DE"`);
 
     expect(customer.customerGroup!.key).toMatchInlineSnapshot('"employee"');
     expect(customer.isEmailVerified).toMatchInlineSnapshot(`false`);
