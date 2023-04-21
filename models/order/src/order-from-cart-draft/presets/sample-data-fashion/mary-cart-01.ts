@@ -9,10 +9,10 @@ const maryCartDraft01 = CartDraft.presets.sampleDataFashion
   .marySmith01()
   .build<TCartDraft>();
 
-const maryCart01 = (): TOrderFromCartDraftBuilder =>
+const maryCart01 = (versionNumber: number): TOrderFromCartDraftBuilder =>
   OrderFromCartDraft.presets
     .empty()
-    .version(null!)
+    .version(versionNumber)
     .cart(KeyReference.random().key(maryCartDraft01.key!).typeId('cart'))
     .orderState(constants.orderState.Cancelled);
 

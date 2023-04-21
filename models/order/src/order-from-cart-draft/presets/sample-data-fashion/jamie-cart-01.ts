@@ -9,10 +9,10 @@ const jamieCartDraft01 = CartDraft.presets.sampleDataFashion
   .jamieDoe01()
   .build<TCartDraft>();
 
-const jamieCart01 = (): TOrderFromCartDraftBuilder =>
+const jamieCart01 = (versionNumber: number): TOrderFromCartDraftBuilder =>
   OrderFromCartDraft.presets
     .empty()
-    .version(null!)
+    .version(versionNumber)
     .cart(KeyReference.random().key(jamieCartDraft01.key!).typeId('cart'))
     .orderState(constants.orderState.Open)
     .paymentState(constants.paymentState.Paid)

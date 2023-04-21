@@ -7,7 +7,7 @@ import maryCart01 from './mary-cart-01';
 describe(`with maryCart01 preset`, () => {
   it(`should create an order draft`, () => {
     const maryCart01OrderFromCartDraft =
-      maryCart01().build<TOrderFromCartDraft>();
+      maryCart01(0).build<TOrderFromCartDraft>();
     expect(maryCart01OrderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
@@ -21,14 +21,14 @@ describe(`with maryCart01 preset`, () => {
         "purchaseOrderNumber": undefined,
         "shipmentState": undefined,
         "state": undefined,
-        "version": null,
+        "version": 0,
       }
     `);
   });
 
   it(`should create an order draft when built for graphql`, () => {
     const maryCart01OrderFromCartDraftGraphql =
-      maryCart01().buildGraphql<TOrderFromCartDraftGraphql>();
+      maryCart01(2).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(maryCart01OrderFromCartDraftGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "OrderCartCommand",
@@ -44,7 +44,7 @@ describe(`with maryCart01 preset`, () => {
         "purchaseOrderNumber": undefined,
         "shipmentState": undefined,
         "state": undefined,
-        "version": null,
+        "version": 2,
       }
     `);
   });
