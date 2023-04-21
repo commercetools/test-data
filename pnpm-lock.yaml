@@ -757,93 +757,18 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/product-discount-value-absolute':
-        specifier: 4.11.1
-        version: link:../product-discount-value-absolute
-      '@commercetools-test-data/product-discount-value-external':
-        specifier: 4.11.1
-        version: link:../product-discount-value-external
-      '@commercetools-test-data/product-discount-value-relative':
-        specifier: 4.11.1
-        version: link:../product-discount-value-relative
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-absolute:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/cent-precision-money':
-        specifier: 4.11.1
-        version: link:../cent-precision-money
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
       '@commercetools-test-data/money':
         specifier: 4.11.1
         version: link:../money
-      '@commercetools-test-data/utils':
+      '@commercetools-test-data/product-discount-value-absolute':
         specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-external:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
+        version: 4.11.1
+      '@commercetools-test-data/product-discount-value-external':
         specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
+        version: 4.11.1
+      '@commercetools-test-data/product-discount-value-relative':
         specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-relative:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
+        version: 4.11.1
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -2746,6 +2671,20 @@ packages:
       - typescript
     dev: false
 
+  /@commercetools-test-data/cent-precision-money@4.11.1:
+    resolution: {integrity: sha512-ldwtHjnymQX48zftWL1/joPkSPG26eDi41DFadKFIZ7eN9vvd9K41EoQ9P1koAuc+vjhPNv2nFE7uenI1bI/MQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@commercetools-test-data/commons@4.11.1:
     resolution: {integrity: sha512-H722YN8XL2CMt6vurW2JmGI6JaS4dBEealziwkaRpfNx+tpm+DXJ3FGUvrbEikzHS8Fcx+7opeaT4in4NxLB7Q==}
     dependencies:
@@ -2768,6 +2707,64 @@ packages:
       '@faker-js/faker': 7.6.0
       '@types/lodash': 4.14.186
       lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/money@4.11.1:
+    resolution: {integrity: sha512-qGWMPSUzKIJzFA5wiysfhK2Wfpq2S3Wt0SUvge5DtvW785hrK4d8yka0UEwOeO/UbWkaWvt9gxbveq6L49fscQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/product-discount-value-absolute@4.11.1:
+    resolution: {integrity: sha512-JMSlnZFP8ovygnErd9hf+WVFF0MlFxL7NrjwkgryyJHmNfEpEj6Vt5pC0vJ6qMpChs41GLly8rm5jp8wxUS7Fg==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/cent-precision-money': 4.11.1
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/money': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/product-discount-value-external@4.11.1:
+    resolution: {integrity: sha512-mgKcQN5dbdNehWY7nUQs2/Ej5X15PpxjvKEjkl6/IEWumgSIDvHaCWJYKmVU6axanke6Z4p1acXCBsidMhjXzw==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/product-discount-value-relative@4.11.1:
+    resolution: {integrity: sha512-FzxkspnjUn+GpL8iGRYUFE6hJQMbOvU6+w9mIjuHA738xs0RCJLknN/R27tycaYIet7rtPMDpdSQkngdXrKYJQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@commercetools-test-data/tax-rate@4.11.1:

@@ -1,12 +1,16 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import { ProductDiscountValueRelativeDraft } from '@commercetools-test-data/product-discount-value-relative';
 import * as ProductDiscountDraft from '../..';
-import { TProductDiscountDraftBuilder } from '../../../types';
+import * as ProductDiscountValueRelative from '../../../../product-discount-value-relative';
+import type { TProductDiscountDraftBuilder } from '../../../types';
 
 const discountPants = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
     .empty()
-    .value(ProductDiscountValueRelativeDraft.random().permyriad(1000))
+    .value(
+      ProductDiscountValueRelative.ProductDiscountValueRelativeDraft.random().permyriad(
+        1000
+      )
+    )
     // TODO: integrate product type keys
     .predicate('productType.key = "pants"')
     .name(LocalizedString.presets.empty()['en-US']('10% Off All Pants'))

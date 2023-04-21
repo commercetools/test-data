@@ -1,6 +1,11 @@
-import * as ProductDiscountDraft from './product-discount-draft';
-export { ProductDiscountDraft };
+// Export types
+export * from './product-discount/types';
+export * from './product-discount-value-absolute/types';
+export * from './product-discount-value-external/types';
+export * from './product-discount-value-relative/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+// Export models
+export * as ProductDiscount from './product-discount';
+export * as ProductDiscountValueAbsolute from './product-discount-value-absolute/types';
+export * as ProductDiscountValueExternal from './product-discount-value-external/types';
+export * as ProductDiscountValueRelative from './product-discount-value-relative/types';
