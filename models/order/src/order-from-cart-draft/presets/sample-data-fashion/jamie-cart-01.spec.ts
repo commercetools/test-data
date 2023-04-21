@@ -7,7 +7,7 @@ import jamieCart01 from './jamie-cart-01';
 describe(`with jamieCart01 preset`, () => {
   it(`should create an order draft`, () => {
     const jamieCart01OrderFromCartDraft =
-      jamieCart01(2).build<TOrderFromCartDraft>();
+      jamieCart01(1).build<TOrderFromCartDraft>();
     expect(jamieCart01OrderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
@@ -21,14 +21,14 @@ describe(`with jamieCart01 preset`, () => {
         "purchaseOrderNumber": undefined,
         "shipmentState": "Shipped",
         "state": undefined,
-        "version": 2,
+        "version": 1,
       }
     `);
   });
 
   it(`should create an order draft when built for graphql`, () => {
     const jamieCart01OrderFromCartDraftGraphql =
-      jamieCart01(3).buildGraphql<TOrderFromCartDraftGraphql>();
+      jamieCart01(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(jamieCart01OrderFromCartDraftGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "OrderCartCommand",
@@ -44,7 +44,7 @@ describe(`with jamieCart01 preset`, () => {
         "purchaseOrderNumber": undefined,
         "shipmentState": "Shipped",
         "state": undefined,
-        "version": 3,
+        "version": 1,
       }
     `);
   });

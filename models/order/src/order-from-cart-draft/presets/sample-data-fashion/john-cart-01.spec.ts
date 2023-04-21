@@ -28,7 +28,7 @@ describe(`with johnCart01 preset`, () => {
 
   it(`should create an order draft when built for graphql`, () => {
     const johnCart01OrderFromCartDraftGraphql =
-      johnCart01(2).buildGraphql<TOrderFromCartDraftGraphql>();
+      johnCart01(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(johnCart01OrderFromCartDraftGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "OrderCartCommand",
@@ -44,7 +44,7 @@ describe(`with johnCart01 preset`, () => {
         "purchaseOrderNumber": undefined,
         "shipmentState": "Pending",
         "state": undefined,
-        "version": 2,
+        "version": 1,
       }
     `);
   });
