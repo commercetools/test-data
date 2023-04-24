@@ -1,5 +1,3 @@
-import enumType from './enum-type';
-
-const presets = { enumType };
+const presets = {};
 
 export default presets;
