@@ -33,8 +33,8 @@ const productDiscountDraft =
 import type {
   TProductDiscountValueAbsolute,
   TProductDiscountValueAbsoluteDraft,
-} from '@commercetools-test-data/product-discount-value-absolute';
-import { ProductDiscountValueAbsolute } from '@commercetools-test-data/product-discount-value-absolute';
+} from '@commercetools-test-data/product-discount';
+import { ProductDiscountValueAbsolute } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueAbsolute =
   ProductDiscountValueAbsolute.random().build<TProductDiscountValueAbsolute>();
@@ -49,8 +49,8 @@ const productDiscountValueAbsoluteDraft =
 import type {
   TProductDiscountValueExternal,
   TProductDiscountValueExternalDraft,
-} from '@commercetools-test-data/product-discount-value-external';
-import { ProductDiscountValueExternal } from '@commercetools-test-data/product-discount-value-external';
+} from '@commercetools-test-data/product-discount';
+import { ProductDiscountValueExternal } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueExternal =
   ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
@@ -65,8 +65,8 @@ const productDiscountValueExternalDraft =
 import type {
   TProductDiscountValueExternal,
   TProductDiscountValueExternalDraft,
-} from '@commercetools-test-data/product-discount-value-external';
-import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount-value-external';
+} from '@commercetools-test-data/product-discount';
+import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount';
 
 const productDiscountValueExternal =
   ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
@@ -81,8 +81,8 @@ const productDiscountValueExternalDraft =
 import type {
   TProductDiscountValueRelative,
   TProductDiscountValueRelativeDraft,
-} from '@commercetools-test-data/product-discount-value-relative';
-import { ProductDiscountValueRelative } from '@commercetools-test-data/product-discount-value-relative';
+} from '@commercetools-test-data/product-discount';
+import { ProductDiscountValueRelative } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueRelative =
   ProductDiscountValueRelative.random().build<TProductDiscountValueRelative>();
