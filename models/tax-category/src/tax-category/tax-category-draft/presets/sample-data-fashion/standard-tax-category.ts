@@ -1,4 +1,4 @@
-import * as TaxRate from '@commercetools-test-data/tax-rate';
+import * as TaxRate from '../../../../tax-rate';
 import TaxCategoryDraft from '../../builder';
 
 const standardTaxCategory = () =>
