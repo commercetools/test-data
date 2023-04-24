@@ -26,8 +26,8 @@ const taxCategoryDraft =
 ## TaxRate
 
 ```ts
-import type { TTaxRate } from '@commercetools-test-data/tax-rate';
-import { TaxRate } from '@commercetools-test-data/tax-rate';
+import type { TTaxRate } from '@commercetools-test-data/tax-category';
+import { TaxRate } from '@commercetools-test-data/tax-category';
 
 const taxRate = TaxRate.random().build<TTaxRate>();
 const taxRateDraft = TaxRate.TaxRateDraft.random().build<TTaxRateDraft>();
