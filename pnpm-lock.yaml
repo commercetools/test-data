@@ -712,69 +712,6 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/product-catalog-data':
-        specifier: 4.11.1
-        version: link:../product-catalog-data
-      '@commercetools-test-data/product-type':
-        specifier: 4.11.1
-        version: link:../product-type
-      '@commercetools-test-data/product-variant':
-        specifier: 4.11.1
-        version: link:../product-variant
-      '@commercetools-test-data/tax-category':
-        specifier: 4.11.1
-        version: link:../tax-category
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-catalog-data:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.21.0
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/product-data':
-        specifier: 4.11.1
-        version: link:../product-data
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-data:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
       '@commercetools-test-data/category':
         specifier: 4.11.1
         version: link:../category
@@ -784,6 +721,21 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
+      '@commercetools-test-data/product-catalog-data':
+        specifier: 4.11.1
+        version: 4.11.1
+      '@commercetools-test-data/product-data':
+        specifier: 4.11.1
+        version: 4.11.1
+      '@commercetools-test-data/product-type':
+        specifier: 4.11.1
+        version: link:../product-type
+      '@commercetools-test-data/product-variant':
+        specifier: 4.11.1
+        version: link:../product-variant
+      '@commercetools-test-data/tax-category':
+        specifier: 4.11.1
+        version: link:../tax-category
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -2803,6 +2755,22 @@ packages:
       - typescript
     dev: false
 
+  /@commercetools-test-data/category@4.11.1:
+    resolution: {integrity: sha512-zQ7S3bAs5jBHe7ycgRpT5seMYKfP9qGY6NQLukOpRxCLkORoL9C/vQbUWuVzcjrLQvGrM163TNPKgNOARI/cZQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+      '@types/lodash': 4.14.186
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@commercetools-test-data/commons@4.11.1:
     resolution: {integrity: sha512-H722YN8XL2CMt6vurW2JmGI6JaS4dBEealziwkaRpfNx+tpm+DXJ3FGUvrbEikzHS8Fcx+7opeaT4in4NxLB7Q==}
     dependencies:
@@ -2825,6 +2793,36 @@ packages:
       '@faker-js/faker': 7.6.0
       '@types/lodash': 4.14.186
       lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/product-catalog-data@4.11.1:
+    resolution: {integrity: sha512-HXKGWBIh/2zvnbIWhlk3aRdUcm/XPTNVVMm3ir+lZP1/c+ZV3uU+YvcEnuTTm16TZtVFN6yPMbrzSfAa0xZIZA==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/product-data': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/product-data@4.11.1:
+    resolution: {integrity: sha512-9sBAwwpDrdD9aH+h1uOugsPliUgB1Z3fd4f6hG4zFqYxjJ/wIXWtrUQRG06s13xgxYkMY5Ah+IfP6U6Tc5q7kw==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/category': 4.11.1
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@commercetools-test-data/tax-rate@4.11.1:
