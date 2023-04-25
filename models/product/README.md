@@ -1,8 +1,6 @@
 # @commercetools-test-data/product
 
-//TODO: clean up!
-
-This package provides the data models for the commercetools platform `Product` type
+This package provides the data models for the commercetools platform `Product` type representations.
 
 https://docs.commercetools.com/api/projects/products#product
 
