@@ -1,6 +1,6 @@
 # @commercetools-test-data/attribute-type
 
-This package provides the data models for the commercetools platform `AttributeTypes'
+This package provides the data models for the commercetools platform `AttributeTypes' representations
 
 https://docs.commercetools.com/api/projects/productTypes#attributetype
 

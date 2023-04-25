@@ -1,4 +1,7 @@
-import { TTaxCategoryDraft, TTaxCategoryDraftGraphql } from '../../../types';
+import type {
+  TTaxCategoryDraft,
+  TTaxCategoryDraftGraphql,
+} from '../../../types';
 import standardTaxCategory from './standard-tax-category';
 
 describe('with a tax rate preset `standard tax category`', () => {

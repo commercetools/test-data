@@ -1,4 +1,4 @@
-import { TaxRateDraft } from '@commercetools-test-data/tax-rate';
+import * as TaxRateDraft from '../../../tax-rate/tax-rate-draft';
 import TaxCategoryDraft from '../builder';
 
 const withTaxRateCountryUsaAndIncludedInPrice = () =>

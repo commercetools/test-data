@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/tax-category",
   "version": "4.11.1",
-  "description": "Data model for commercetools API TaxCategory",
+  "description": "Data models for commercetools Tax Category representations",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",

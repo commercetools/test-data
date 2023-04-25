@@ -1,4 +1,4 @@
-import { TTaxRateDraft } from '../../types';
+import type { TTaxRateDraft } from '../../types';
 import withCountryUsaAndIncludedInPrice from './with-country-usa-and-included-in-price';
 
 describe('with the preset `country usa and included in price`', () => {
