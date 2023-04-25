@@ -1,4 +1,4 @@
-import * as TaxRate from '../../../../tax-rate';
+import * as TaxRateDraft from '../../../../tax-rate';
 import TaxCategoryDraft from '../../builder';
 
 const standardTaxCategory = () =>
@@ -7,39 +7,39 @@ const standardTaxCategory = () =>
     .name('Standard Tax Category')
     .description('')
     .rates([
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('VAT')
         .amount(0.19)
         .includedInPrice(true)
         .country('DE')
         .subRates([]),
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('GST')
         .amount(0.1)
         .includedInPrice(true)
         .country('AU')
         .subRates([]),
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('VAT')
         .amount(0.21)
         .includedInPrice(true)
         .country('ES')
         .subRates([]),
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('MA State Tax')
         .amount(0.0625)
         .includedInPrice(false)
         .country('US')
         .state('Massachusetts')
         .subRates([]),
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('NJ Sales Tax')
         .amount(0.0663)
         .includedInPrice(false)
         .country('US')
         .state('New Jersey')
         .subRates([]),
-      TaxRate.TaxRateDraft.random()
+      TaxRateDraft.random()
         .name('CA Sales Tax')
         .amount(0.07)
         .includedInPrice(false)
