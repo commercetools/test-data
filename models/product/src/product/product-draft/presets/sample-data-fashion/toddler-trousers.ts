@@ -3,7 +3,7 @@ import {
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
-import * as ProductDraft from '../../../../product-catalog-data';
+import * as ProductDraft from '../../../product-draft';
 import { TProductDraftBuilder } from '../../../types';
 
 const ToddlerTrousers = (): TProductDraftBuilder =>
