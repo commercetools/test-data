@@ -1,7 +1,12 @@
-import * as ProductDraft from './product-draft';
-export { ProductDraft };
+// Export types
+export * from './product/types';
+export * from './product-catalog-data/types';
+export * from './product-data/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * as constants from './constants';
-export * from './types';
+// Export models
+export * as Product from './product';
+export * as ProductDraft from './product';
+export * as ProductCatalogData from './product-catalog-data';
+export * as ProductCatalogDataDraft from './product-catalog-data';
+export * as ProductData from './product-data';
+export * as ProductDataDraft from './product-data';

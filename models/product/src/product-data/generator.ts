@@ -1,5 +1,5 @@
 import * as Category from '@commercetools-test-data/category';
-import { LocalizedString, Reference } from '@commercetools-test-data/commons';
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TProductData } from './types';
 
