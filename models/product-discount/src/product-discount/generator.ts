@@ -3,10 +3,10 @@ import {
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
-import * as ProductDiscountValueAbsolute from '@commercetools-test-data/product-discount-value-absolute';
-import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount-value-external';
-import * as ProductDiscountValueRelative from '@commercetools-test-data/product-discount-value-relative';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import * as ProductDiscountValueAbsolute from '../product-discount-value-absolute';
+import * as ProductDiscountValueExternal from '../product-discount-value-external';
+import * as ProductDiscountValueRelative from '../product-discount-value-relative';
 import { TProductDiscount } from './types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscount

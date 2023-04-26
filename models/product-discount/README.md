@@ -1,6 +1,6 @@
 # @commercetools-test-data/product-discount
 
-This package provides the data models for the commercetools platform `ProductDiscount` type
+This package provides the data models for the commercetools platform `ProductDiscount` type representations
 
 https://docs.commercetools.com/api/projects/productDiscounts#productdiscount
 
@@ -24,7 +24,7 @@ import { ProductDiscount } from '@commercetools-test-data/product-discount';
 const productDiscount = ProductDiscount.random().build<TProductDiscount>();
 
 const productDiscountDraft =
-  ProductDiscount.ProductDiscountDraft.random().build<TProductDiscountDraft>();
+  ProductDiscountDraft.random().build<TProductDiscountDraft>();
 ```
 
 ## `ProductDiscountValueAbsolute`
@@ -40,7 +40,7 @@ const productDiscountValueAbsolute =
   ProductDiscountValueAbsolute.random().build<TProductDiscountValueAbsolute>();
 
 const productDiscountValueAbsoluteDraft =
-  ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random().build<TProductDiscountValueAbsoluteDraft>();
+  ProductDiscountValueAbsoluteDraft.random().build<TProductDiscountValueAbsoluteDraft>();
 ```
 
 ## `ProductDiscountValueExternal`
@@ -56,7 +56,7 @@ const productDiscountValueExternal =
   ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
 
 const productDiscountValueExternalDraft =
-  ProductDiscountValueExternal.ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
+  ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
 ```
 
 ## `ProductDiscountValueExternal`
@@ -66,13 +66,13 @@ import type {
   TProductDiscountValueExternal,
   TProductDiscountValueExternalDraft,
 } from '@commercetools-test-data/product-discount';
-import * as ProductDiscountValueExternal from '@commercetools-test-data/product-discount';
+import { ProductDiscountValueExternal } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueExternal =
   ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
 
 const productDiscountValueExternalDraft =
-  ProductDiscountValueExternal.ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
+  ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
 ```
 
 ## `ProductDiscountValueRelative`
@@ -88,5 +88,5 @@ const productDiscountValueRelative =
   ProductDiscountValueRelative.random().build<TProductDiscountValueRelative>();
 
 const productDiscountValueRelativeDraft =
-  ProductDiscountValueRelative.ProductDiscountValueRelativeDraft.random().build<TProductDiscountValueRelativeDraft>();
+  ProductDiscountValueRelativeDraft.random().build<TProductDiscountValueRelativeDraft>();
 ```
