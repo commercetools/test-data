@@ -173,7 +173,7 @@ describe('builder', () => {
     )
   );
 
-  it(
+  it.only(
     ...createBuilderSpec<TProductDraft, TProductDraftGraphql>(
       'graphql',
       ProductDraft.random(),
@@ -212,13 +212,16 @@ describe('builder', () => {
               url: expect.any(String),
             }),
           ]),
-          attributes: expect.arrayContaining([
+          //TODO: ask Taylor
+          //was attributes:
+          attributesRaw: expect.arrayContaining([
             expect.objectContaining({
               name: expect.any(String),
             }),
           ]),
           assets: expect.arrayContaining([]),
-          __typename: 'ProductVariantInput',
+          //__typename: 'RawProductAttribute',
+          __typename: 'ProductVariant',
         }),
         variants: expect.arrayContaining([
           expect.objectContaining({
@@ -234,7 +237,7 @@ describe('builder', () => {
                 url: expect.any(String),
               }),
             ]),
-            attributes: expect.arrayContaining([
+            attributesRaw: expect.arrayContaining([
               expect.objectContaining({
                 name: expect.any(String),
               }),

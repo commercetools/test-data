@@ -101,33 +101,6 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
 
-  models/attribute:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.21.0
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/attribute-definition':
-        specifier: 4.11.1
-        version: link:../attribute-definition
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
   models/attribute-definition:
     dependencies:
       '@babel/runtime':
@@ -545,30 +518,6 @@ importers:
         specifier: ^7.4.0
         version: 7.6.0
 
-  models/image:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
   models/line-item:
     dependencies:
       '@babel/runtime':
@@ -810,16 +759,16 @@ importers:
         version: 7.19.4
       '@commercetools-test-data/attribute':
         specifier: 4.11.1
-        version: link:../attribute
+        version: 4.11.1
+      '@commercetools-test-data/attribute-definition':
+        specifier: 4.11.1
+        version: link:../attribute-definition
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/image':
-        specifier: 4.11.1
-        version: link:../image
       '@commercetools-test-data/price':
         specifier: 4.11.1
         version: link:../price
@@ -2660,6 +2609,50 @@ packages:
       - prettier
       - supports-color
       - typescript
+    dev: false
+
+  /@commercetools-test-data/attribute-definition@4.11.1:
+    resolution: {integrity: sha512-gr0twHZM2PRk8t/wKAt66zv8rrsIvpduqx7lvdJ4kI/SOuCPzfgqSr9B84BUstM7CnJoXSAvSjOH1cEsQMdyBg==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/attribute-type': 4.11.1
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/attribute-type@4.11.1:
+    resolution: {integrity: sha512-NX6z8y6LeTwlhpBnJfQTDNDI23F8Eldy7AM6ABk6z82AGv98FrOR5QHhllqq0FzaowkXIEd+rrZW3gcnA87M4g==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/attribute@4.11.1:
+    resolution: {integrity: sha512-8d7cmx3sO9z6G5c3hTCVWDop1bgiJ7etJ1J0nALuBAuBl72oyXfJK9aHjBBJAcNtnRJi9xGk79XU7NFM2aGbkQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/attribute-definition': 4.11.1
+      '@commercetools-test-data/commons': 4.11.1
+      '@commercetools-test-data/core': 4.11.1
+      '@commercetools-test-data/utils': 4.11.1
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.6.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@commercetools-test-data/commons@4.11.1:

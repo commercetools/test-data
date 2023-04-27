@@ -3,7 +3,7 @@ import * as Channel from '@commercetools-test-data/channel';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import * as Price from '@commercetools-test-data/price';
-import * as ProductVariant from '@commercetools-test-data/product-variant';
+import { ProductVariant } from '@commercetools-test-data/product-variant';
 import * as TaxRate from '@commercetools-test-data/tax-rate';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode, lineItemMode, priceMode } from './constants';
