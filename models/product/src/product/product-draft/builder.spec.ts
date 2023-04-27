@@ -212,16 +212,13 @@ describe('builder', () => {
               url: expect.any(String),
             }),
           ]),
-          //TODO: ask Taylor
-          //was attributes:
-          attributesRaw: expect.arrayContaining([
+          attributes: expect.arrayContaining([
             expect.objectContaining({
               name: expect.any(String),
             }),
           ]),
           assets: expect.arrayContaining([]),
-          //__typename: 'RawProductAttribute',
-          __typename: 'ProductVariant',
+          __typename: 'ProductVariantInput',
         }),
         variants: expect.arrayContaining([
           expect.objectContaining({

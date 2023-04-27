@@ -547,9 +547,9 @@ importers:
       '@commercetools-test-data/product-variant':
         specifier: 4.11.1
         version: link:../product-variant
-      '@commercetools-test-data/tax-rate':
+      '@commercetools-test-data/tax-category':
         specifier: 4.11.1
-        version: 4.11.1
+        version: link:../tax-category
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -2677,20 +2677,6 @@ packages:
       '@faker-js/faker': 7.6.0
       '@types/lodash': 4.14.186
       lodash: 4.17.21
-    dev: false
-
-  /@commercetools-test-data/tax-rate@4.11.1:
-    resolution: {integrity: sha512-LnP13XEVdY1eNKIHg5KzGMNLPZ/UAQd6HaQgH9YzcGDt2fAUkO+K5O1Hg/zGI8X+7G6va8VKS57RBIPBUnV5Sg==}
-    dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
-      '@commercetools-test-data/commons': 4.11.1
-      '@commercetools-test-data/core': 4.11.1
-      '@commercetools-test-data/utils': 4.11.1
-      '@commercetools/platform-sdk': 4.5.0
-      '@faker-js/faker': 7.6.0
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /@commercetools-test-data/utils@4.11.1:

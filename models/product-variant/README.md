@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/products#productvariant
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/product-variant
+$ pnpm add -D @commercetools-test-data/product-variant
 ```
 
 # Usage

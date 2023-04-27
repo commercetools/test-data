@@ -4,9 +4,11 @@ export * from './image/types';
 export * from './product-variant/types';
 
 // Export models
-export * as Attribute from './product-variant';
-export * as AttributeDraft from './product-variant';
-export * as Image from './product-variant';
-export * as ImageDraft from './product-variant';
+export * as Attribute from './attribute';
+export * as AttributeDraft from './attribute/attribute-draft';
+
+export * as Image from './image';
+export * as ImageDraft from './image/image-draft';
+
 export * as ProductVariant from './product-variant';
-export * as ProductVariantDraft from './product-variant';
+export * as ProductVariantDraft from './product-variant/product-variant-draft';
