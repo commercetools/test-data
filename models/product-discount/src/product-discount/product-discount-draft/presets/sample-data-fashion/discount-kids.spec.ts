@@ -1,35 +1,35 @@
-import {
+import type {
   TProductDiscountDraft,
   TProductDiscountDraftGraphql,
 } from '../../../types';
-import discountPants from './discount-pants';
+import discountKids from './discount-kids';
 
-describe('with the preset `discountPants`', () => {
+describe('with the preset `discountKids`', () => {
   it('should return a product discount draft', () => {
-    const productDiscountDraft = discountPants().build<TProductDiscountDraft>();
+    const productDiscountDraft = discountKids().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
         "description": {
           "de": undefined,
           "en": undefined,
-          "en-US": "10% Off All Pants",
+          "en-US": "Enjoy 20% off all items in our Kids selection",
           "fr": undefined,
         },
         "isActive": true,
-        "key": "10pctOffAllPants",
+        "key": "Kids20pctOff",
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-US": "10% Off All Pants",
+          "en-US": "Back to School - 20% off all items in our Kids category",
           "fr": undefined,
         },
-        "predicate": "productType.key = "pants"",
-        "sortOrder": "0.4",
+        "predicate": "categories.key contains "kids"",
+        "sortOrder": "0.66678",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 1000,
+          "permyriad": 2000,
           "type": "relative",
         },
       }
@@ -38,7 +38,7 @@ describe('with the preset `discountPants`', () => {
 
   it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
-      discountPants().buildGraphql<TProductDiscountDraftGraphql>();
+      discountKids().buildGraphql<TProductDiscountDraftGraphql>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
@@ -47,31 +47,28 @@ describe('with the preset `discountPants`', () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "10% Off All Pants",
+            "value": "Enjoy 20% off all items in our Kids selection",
           },
         ],
         "isActive": true,
-        "key": "10pctOffAllPants",
+        "key": "Kids20pctOff",
         "name": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "10% Off All Pants",
+            "value": "Back to School - 20% off all items in our Kids category",
           },
         ],
-        "predicate": "productType.key = "pants"",
-        "sortOrder": "0.4",
+        "predicate": "categories.key contains "kids"",
+        "sortOrder": "0.66678",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
           "__typename": "ProductDiscountValueRelativeDraft",
-          "permyriad": 1000,
+          "permyriad": 2000,
           "type": "relative",
         },
       }
     `);
-    expect(productDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"ProductDiscountDraft"`
-    );
   });
 });

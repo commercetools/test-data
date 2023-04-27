@@ -1,36 +1,42 @@
-import {
+import type {
   TProductDiscountDraft,
   TProductDiscountDraftGraphql,
 } from '../../../types';
-import discountKids from './discount-kids';
+import discountDresses from './discount-dresses';
 
-describe('with the preset `discountKids`', () => {
+describe('with the preset `discountDresses`', () => {
   it('should return a product discount draft', () => {
-    const productDiscountDraft = discountKids().build<TProductDiscountDraft>();
+    const productDiscountDraft =
+      discountDresses().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
         "description": {
           "de": undefined,
           "en": undefined,
-          "en-US": "Enjoy 20% off all items in our Kids selection",
+          "en-US": "5 EUR Off All Dresses",
           "fr": undefined,
         },
         "isActive": true,
-        "key": "Kids20pctOff",
+        "key": "Dresses5EUROff",
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-US": "Back to School - 20% off all items in our Kids category",
+          "en-US": "5 EUR Off All Dresses",
           "fr": undefined,
         },
-        "predicate": "categories.key contains "kids"",
-        "sortOrder": "0.66678",
+        "predicate": "productType.key = "dresses"",
+        "sortOrder": "0.7",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 2000,
-          "type": "relative",
+          "money": {
+            "centAmount": 500,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "absolute",
         },
       }
     `);
@@ -38,7 +44,7 @@ describe('with the preset `discountKids`', () => {
 
   it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
-      discountKids().buildGraphql<TProductDiscountDraftGraphql>();
+      discountDresses().buildGraphql<TProductDiscountDraftGraphql>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
@@ -47,26 +53,32 @@ describe('with the preset `discountKids`', () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Enjoy 20% off all items in our Kids selection",
+            "value": "5 EUR Off All Dresses",
           },
         ],
         "isActive": true,
-        "key": "Kids20pctOff",
+        "key": "Dresses5EUROff",
         "name": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Back to School - 20% off all items in our Kids category",
+            "value": "5 EUR Off All Dresses",
           },
         ],
-        "predicate": "categories.key contains "kids"",
-        "sortOrder": "0.66678",
+        "predicate": "productType.key = "dresses"",
+        "sortOrder": "0.7",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "ProductDiscountValueRelativeDraft",
-          "permyriad": 2000,
-          "type": "relative",
+          "__typename": "ProductDiscountValueAbsoluteDraft",
+          "money": {
+            "__typename": "MoneyInput",
+            "centAmount": 500,
+            "currencyCode": "EUR",
+            "fractionDigits": 2,
+            "type": "centPrecision",
+          },
+          "type": "absolute",
         },
       }
     `);

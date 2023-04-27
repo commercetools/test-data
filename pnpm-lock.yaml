@@ -757,93 +757,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/product-discount-value-absolute':
-        specifier: 4.11.1
-        version: link:../product-discount-value-absolute
-      '@commercetools-test-data/product-discount-value-external':
-        specifier: 4.11.1
-        version: link:../product-discount-value-external
-      '@commercetools-test-data/product-discount-value-relative':
-        specifier: 4.11.1
-        version: link:../product-discount-value-relative
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-absolute:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/cent-precision-money':
-        specifier: 4.11.1
-        version: link:../cent-precision-money
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
       '@commercetools-test-data/money':
         specifier: 4.11.1
         version: link:../money
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-external:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/product-discount-value-relative:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils

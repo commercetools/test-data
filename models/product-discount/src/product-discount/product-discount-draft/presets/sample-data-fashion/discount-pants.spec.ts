@@ -1,42 +1,36 @@
-import {
+import type {
   TProductDiscountDraft,
   TProductDiscountDraftGraphql,
 } from '../../../types';
-import discountDresses from './discount-dresses';
+import discountPants from './discount-pants';
 
-describe('with the preset `discountDresses`', () => {
+describe('with the preset `discountPants`', () => {
   it('should return a product discount draft', () => {
-    const productDiscountDraft =
-      discountDresses().build<TProductDiscountDraft>();
+    const productDiscountDraft = discountPants().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
         "description": {
           "de": undefined,
           "en": undefined,
-          "en-US": "5 EUR Off All Dresses",
+          "en-US": "10% Off All Pants",
           "fr": undefined,
         },
         "isActive": true,
-        "key": "Dresses5EUROff",
+        "key": "10pctOffAllPants",
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-US": "5 EUR Off All Dresses",
+          "en-US": "10% Off All Pants",
           "fr": undefined,
         },
-        "predicate": "productType.key = "dresses"",
-        "sortOrder": "0.7",
+        "predicate": "productType.key = "pants"",
+        "sortOrder": "0.4",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
-          },
-          "type": "absolute",
+          "permyriad": 1000,
+          "type": "relative",
         },
       }
     `);
@@ -44,7 +38,7 @@ describe('with the preset `discountDresses`', () => {
 
   it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
-      discountDresses().buildGraphql<TProductDiscountDraftGraphql>();
+      discountPants().buildGraphql<TProductDiscountDraftGraphql>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
@@ -53,34 +47,31 @@ describe('with the preset `discountDresses`', () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "5 EUR Off All Dresses",
+            "value": "10% Off All Pants",
           },
         ],
         "isActive": true,
-        "key": "Dresses5EUROff",
+        "key": "10pctOffAllPants",
         "name": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "5 EUR Off All Dresses",
+            "value": "10% Off All Pants",
           },
         ],
-        "predicate": "productType.key = "dresses"",
-        "sortOrder": "0.7",
+        "predicate": "productType.key = "pants"",
+        "sortOrder": "0.4",
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "ProductDiscountValueAbsoluteDraft",
-          "money": {
-            "__typename": "MoneyInput",
-            "centAmount": 500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
-          },
-          "type": "absolute",
+          "__typename": "ProductDiscountValueRelativeDraft",
+          "permyriad": 1000,
+          "type": "relative",
         },
       }
     `);
+    expect(productDiscountDraft.__typename).toMatchInlineSnapshot(
+      `"ProductDiscountDraft"`
+    );
   });
 });
