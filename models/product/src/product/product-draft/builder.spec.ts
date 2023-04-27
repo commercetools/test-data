@@ -173,7 +173,7 @@ describe('builder', () => {
     )
   );
 
-  it.only(
+  it(
     ...createBuilderSpec<TProductDraft, TProductDraftGraphql>(
       'graphql',
       ProductDraft.random(),
@@ -234,7 +234,7 @@ describe('builder', () => {
                 url: expect.any(String),
               }),
             ]),
-            attributesRaw: expect.arrayContaining([
+            attributes: expect.arrayContaining([
               expect.objectContaining({
                 name: expect.any(String),
               }),
