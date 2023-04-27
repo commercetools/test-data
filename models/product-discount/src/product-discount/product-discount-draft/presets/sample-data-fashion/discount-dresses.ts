@@ -1,14 +1,14 @@
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as ProductDiscountDraft from '../..';
-import * as ProductDiscountValueAbsolute from '../../../../product-discount-value-absolute';
+import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 
 const discountDresses = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
     .empty()
     .value(
-      ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random().money(
+      ProductDiscountValueAbsoluteDraft.random().money(
         CentPrecisionMoneyDraft.random()
           .currencyCode('EUR')
           .centAmount(500)
