@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/productDiscounts#productdiscount
 # Install
 
 ```bash
-$ pnpm add -D @commercetools-test-data/product-discount
+$ yarn add -D @commercetools-test-data/product-discount
 ```
 
 # Usage

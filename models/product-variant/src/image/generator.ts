@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TImage } from './types';
+import type { TImage } from './types';
 
 // https://docs.commercetools.com/api/projects/products#image
 

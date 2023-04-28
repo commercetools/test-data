@@ -1,4 +1,4 @@
-import * as Image from '../../../image';
+import { Image } from '../../../index';
 import ProductVariantDraft from '../builder';
 
 function withOneImage() {

@@ -1,6 +1,6 @@
-import * as Attribute from '@commercetools-test-data/attribute';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as Price from '@commercetools-test-data/price';
+import * as Attribute from '../../attribute';
 import * as Image from '../../image';
 import type { TProductVariantDraft } from '../types';
 

@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAttributeDraft } from '../types';
+import type { TAttributeDraft } from '../types';
 
 /**
  * This model does not have a corresponding REST entity,

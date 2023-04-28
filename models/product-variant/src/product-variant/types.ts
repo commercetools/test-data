@@ -2,11 +2,8 @@ import {
   ProductVariant,
   ProductVariantDraft,
 } from '@commercetools/platform-sdk';
-import type {
-  TAttributeDraftGraphql,
-  TAttributeGraphql,
-} from '@commercetools-test-data/attribute';
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TAttributeDraftGraphql, TAttributeGraphql } from '../attribute';
 
 export type TProductVariant = ProductVariant;
 export type TProductVariantDraft = ProductVariantDraft;

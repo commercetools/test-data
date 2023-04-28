@@ -1,4 +1,4 @@
-import { TImage } from '../types';
+import type { TImage } from '../types';
 import commercetoolsApiPlatform from './commercetools-api-platform';
 
 describe('with the preset `commercetools api platform`', () => {
