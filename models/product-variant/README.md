@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/products#productvariant
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/product-variant
+$ pnpm add -D @commercetools-test-data/product-variant
 ```
 
 # Usage
@@ -19,7 +19,10 @@ import type {
   TProductVariant,
   TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
-import { ProductVariant, ProductVariantDraft } from '@commercetools-test-data/product-variant';
+import {
+  ProductVariant,
+  ProductVariantDraft,
+} from '@commercetools-test-data/product-variant';
 
 const productVariant = ProductVariant.random().build<TProductVariant>();
 const productVariantDraft =
@@ -42,7 +45,10 @@ import type {
   TAttribute,
   TAttributeDraft,
 } from '@commercetools-test-data/product-variant';
-import { Attribute, AttributeDraft } from '@commercetools-test-data/product-variant';
+import {
+  Attribute,
+  AttributeDraft,
+} from '@commercetools-test-data/product-variant';
 
 const attribute = Attribute.random().build<TAttribute>();
 const attributeDraftGraphql =
