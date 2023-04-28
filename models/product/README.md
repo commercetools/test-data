@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/products#product
 # Install
 
 ```bash
-$ pn add -D @commercetools-test-data/product
+$ pnpm add -D @commercetools-test-data/product
 ```
 
 # Usage
