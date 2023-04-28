@@ -19,7 +19,7 @@ import type {
   TProductVariant,
   TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
-import { ProductVariant } from '@commercetools-test-data/product-variant';
+import { ProductVariant, ProductVariantDraft } from '@commercetools-test-data/product-variant';
 
 const productVariant = ProductVariant.random().build<TProductVariant>();
 const productVariantDraft =
