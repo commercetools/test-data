@@ -7,22 +7,22 @@ https://docs.commercetools.com/api/projects/products#product
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/product
+$ pnpm add -D @commercetools-test-data/product
 ```
 
 # Usage
 
-## ProductType
+## Product
 
 ```ts
 import type { TProduct, TProductDraft } from '@commercetools-test-data/product';
-import { Product } from '@commercetools-test-data/product';
+import { Product, ProductDraft } from '@commercetools-test-data/product';
 
 const product = Product.random().build<TProduct>();
-const productDraft = Product.ProductDraft.random().build<TProductDraft>();
+const productDraft = ProductDraft.random().build<TProductDraft>();
 ```
 
-## ProductCatalog
+## ProductData
 
 ```ts
 import type { TProductData } from '@commercetools-test-data/product';

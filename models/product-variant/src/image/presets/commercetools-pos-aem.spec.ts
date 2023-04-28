@@ -1,4 +1,4 @@
-import { TImage } from '../types';
+import type { TImage } from '../types';
 import commercetoolsPosAem from './commercetools-pos-aem';
 
 describe('with the preset `commercetools pos aem`', () => {

@@ -1,5 +1,5 @@
-import { TAttributeGraphql } from '@commercetools-test-data/attribute';
 import { Transformer } from '@commercetools-test-data/core';
+import type { TAttributeGraphql } from '../attribute';
 import type { TProductVariant, TProductVariantGraphql } from './types';
 
 const transformers = {

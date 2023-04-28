@@ -1,6 +1,6 @@
 import * as AttributeDefinition from '@commercetools-test-data/attribute-definition';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAttribute } from './types';
+import type { TAttribute } from './types';
 
 // https://docs.commercetools.com/api/projects/products#attribute
 

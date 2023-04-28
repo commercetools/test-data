@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TImage, TImageGraphql } from './types';
+import type { TImage, TImageGraphql } from './types';
 import * as Image from '.';
 
 describe('builder', () => {

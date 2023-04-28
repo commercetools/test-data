@@ -1,4 +1,4 @@
-import * as Image from '@commercetools-test-data/image';
+import { Image } from '../../../index';
 import ProductVariantDraft from '../builder';
 
 function withTwoImages() {

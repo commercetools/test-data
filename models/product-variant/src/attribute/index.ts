@@ -1,5 +1,4 @@
-import * as ImageDraft from './image-draft';
-export { ImageDraft };
+export * as AttributeDraft from './attribute-draft';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';
