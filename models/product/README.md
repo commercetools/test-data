@@ -16,7 +16,7 @@ $ pn add -D @commercetools-test-data/product
 
 ```ts
 import type { TProduct, TProductDraft } from '@commercetools-test-data/product';
-import { Product } from '@commercetools-test-data/product';
+import { Product, ProductDraft } from '@commercetools-test-data/product';
 
 const product = Product.random().build<TProduct>();
 const productDraft = ProductDraft.random().build<TProductDraft>();
