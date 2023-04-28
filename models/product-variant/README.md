@@ -42,7 +42,7 @@ import type {
   TAttribute,
   TAttributeDraft,
 } from '@commercetools-test-data/product-variant';
-import { Attribute } from '@commercetools-test-data/product-variant';
+import { Attribute, AttributeDraft } from '@commercetools-test-data/product-variant';
 
 const attribute = Attribute.random().build<TAttribute>();
 const attributeDraftGraphql =
