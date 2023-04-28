@@ -1,9 +1,9 @@
-import { CartDiscountValueGiftLineItemDraft } from '@commercetools-test-data/cart-discount-value-gift-line-item';
 import {
   LocalizedString,
   KeyReference,
 } from '@commercetools-test-data/commons';
 import * as CartDiscountDraft from '../..';
+import { CartDiscountValueGiftLineItemDraft } from '../../../..';
 import { stackingMode } from '../../../constants';
 import { TCartDiscountDraftBuilder } from '../../../types';
 

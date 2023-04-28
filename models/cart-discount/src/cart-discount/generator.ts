@@ -1,13 +1,13 @@
-import * as CartDiscountValueAbsolute from '@commercetools-test-data/cart-discount-value-absolute';
-import * as CartDiscountValueFixed from '@commercetools-test-data/cart-discount-value-fixed';
-import * as CartDiscountValueGiftLineItem from '@commercetools-test-data/cart-discount-value-gift-line-item';
-import * as CartDiscountValueRelative from '@commercetools-test-data/cart-discount-value-relative';
 import {
   ClientLogging,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import * as CartDiscountValueAbsolute from '../cart-discount-value-absolute';
+import * as CartDiscountValueFixed from '../cart-discount-value-fixed';
+import * as CartDiscountValueGiftLineItem from '../cart-discount-value-gift-line-item';
+import * as CartDiscountValueRelative from '../cart-discount-value-relative';
 import { stackingMode } from './constants';
 import { TCartDiscount } from './types';
 

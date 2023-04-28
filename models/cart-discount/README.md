@@ -1,16 +1,28 @@
 # @commercetools-test-data/cart-discount
 
-This package provides the data model for the commercetools platform `CartDiscount` type
+This package provides the data models for the commercetools platform `CartDiscount` representations.
 
-https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscount
+https://docs.commercetools.com/api/projects/cartDiscounts#representations
 
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/cart-discount
+$ pnpm add -D @commercetools-test-data/cart-discount
 ```
 
 # Usage
+
+- [@commercetools-test-data/cart-discount](#commercetools-test-datacart-discount)
+- [Install](#install)
+- [Usage](#usage)
+  - [`CartDiscount`](#cartdiscount)
+  - [`CartDiscountLineItemsTarget`](#cartdiscountlineitemstarget)
+  - [`CartDiscountMultiBuyLineItems`](#cartdiscountmultibuylineitems)
+  - [`CartDiscountShippingCost`](#cartdiscountshippingcost)
+  - [`CartDiscountValueAbsolute`](#cartdiscountvalueabsolute)
+  - [`CartDiscountValueFixed`](#cartdiscountvaluefixed)
+  - [`CartDiscountValueGiftLineItem`](#cartdiscountvaluegiftlineitem)
+  - [`CartDiscountValueRelative`](#cartdiscountvaluerelative)
 
 ## `CartDiscount`
 
@@ -43,6 +55,22 @@ const targetDraft =
   CartDiscountLineItemsTargetDraft.random().build<TCartDiscountLineItemsTargetDraft>();
 ```
 
+## `CartDiscountMultiBuyLineItems`
+
+```ts
+import {
+  CartDiscountMultiBuyLineItems,
+  CartDiscountMultiBuyLineItemsDraft,
+  type TCartDiscountMultiBuyLineItems,
+  type TCartDiscountMultiBuyLineItemsDraft,
+} from '@commercetools-test-data/cart-discount';
+
+const target =
+  CartDiscountMultiBuyLineItems.random().build<TCartDiscountMultiBuyLineItems>();
+const targetDraft =
+  CartDiscountMultiBuyLineItemsDraft.random().build<TCartDiscountMultiBuyLineItemsDraft>();
+```
+
 ## `CartDiscountShippingCost`
 
 ```ts
@@ -59,18 +87,67 @@ const targetDraft =
   CartDiscountShippingCostDraft.random().build<TCartDiscountShippingCostDraft>();
 ```
 
-## `CartDiscountMultiBuyLineItems`
+## `CartDiscountValueAbsolute`
 
 ```ts
 import {
-  CartDiscountMultiBuyLineItems,
-  CartDiscountMultiBuyLineItemsDraft,
-  type TCartDiscountMultiBuyLineItems,
-  type TCartDiscountMultiBuyLineItemsDraft,
+  CartDiscountValueAbsolute,
+  CartDiscountValueAbsoluteDraft,
+  type TCartDiscountValueAbsolute,
+  type TCartDiscountValueAbsoluteDraft,
 } from '@commercetools-test-data/cart-discount';
 
-const target =
-  CartDiscountMultiBuyLineItems.random().build<TCartDiscountMultiBuyLineItems>();
-const targetDraft =
-  CartDiscountMultiBuyLineItemsDraft.random().build<TCartDiscountMultiBuyLineItemsDraft>();
+const cartDiscountValueAbsolute =
+  CartDiscountValueAbsolute.random().build<TCartDiscountValueAbsolute>();
+const cartDiscountValueAbsoluteDraft =
+  CartDiscountValueAbsoluteDraft.random().build<TCartDiscountValueAbsoluteDraft>();
+```
+
+## `CartDiscountValueFixed`
+
+```ts
+import {
+  CartDiscountValueFixed,
+  CartDiscountValueFixedDraft,
+  type TCartDiscountValueFixed,
+  type TCartDiscountValueFixedDraft,
+} from '@commercetools-test-data/cart-discount;
+
+const cartDiscountValueFixed =
+  CartDiscountValueFixed.random().build<TCartDiscountValueFixed>();
+const cartDiscountValueFixedDraft =
+  CartDiscountValueFixedDraft.random().build<TCartDiscountValueFixedDraft>();
+
+```
+
+## `CartDiscountValueGiftLineItem`
+
+```ts
+import {
+  CartDiscountValueGiftLineItem,
+  CartDiscountValueGiftLineItemDraft,
+  type TCartDiscountValueGiftLineItem,
+  type TCartDiscountValueGiftLineItemDraft,
+} from '@commercetools-test-data/cart-discount';
+
+const cartDiscountValueGiftLineItem =
+  CartDiscountValueGiftLineItem.random().build<TCartDiscountValueGiftLineItem>();
+const cartDiscountValueGiftLineItemDraft =
+  CartDiscountValueGiftLineItemDraft.random().build<TCartDiscountValueGiftLineItemDraft>();
+```
+
+## `CartDiscountValueRelative`
+
+```ts
+import {
+  CartDiscountValueRelative,
+  CartDiscountValueRelativeDraft,
+  type TCartDiscountValueRelative,
+  type TCartDiscountValueRelativeDraft,
+} from '@commercetools-test-data/cart-discount';
+
+const cartDiscountValueRelative =
+  CartDiscountValueRelative.random().build<TCartDiscountValueRelative>();
+const cartDiscountValueRelativeDraft =
+  CartDiscountValueRelativeDraft.random().build<TCartDiscountValueRelativeDraft>();
 ```

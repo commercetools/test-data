@@ -1,4 +1,3 @@
-import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -7,6 +6,7 @@ import {
 import * as CartDiscountDraft from '../..';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
+  CartDiscountValueRelativeDraft,
   selectionMode,
 } from '../../../..';
 import { stackingMode } from '../../../constants';
