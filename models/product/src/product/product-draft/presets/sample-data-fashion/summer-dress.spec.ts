@@ -81,7 +81,7 @@ describe(`with summerDress preset`, () => {
         },
         "priceMode": undefined,
         "productType": {
-          "key": "dress",
+          "key": "dresses",
           "typeId": "product-type",
         },
         "publish": false,
@@ -236,7 +236,7 @@ describe(`with summerDress preset`, () => {
         "priceMode": undefined,
         "productType": {
           "__typename": "Reference",
-          "key": "dress",
+          "key": "dresses",
           "typeId": "product-type",
         },
         "publish": false,
