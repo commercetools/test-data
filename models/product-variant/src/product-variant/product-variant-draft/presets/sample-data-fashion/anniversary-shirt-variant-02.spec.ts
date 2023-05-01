@@ -1,0 +1,52 @@
+import { TProductVariantDraft } from '../../../types';
+import anniversaryShirtVariant02 from './anniversary-shirt-variant-02';
+
+describe(`with anniversaryShirtVariant02 preset`, () => {
+  it(`should return a anniversaryShirtVariant02 preset`, () => {
+    const anniversaryShirtVariant02Preset =
+      anniversaryShirtVariant02().build<TProductVariantDraft>();
+    expect(anniversaryShirtVariant02Preset).toMatchInlineSnapshot(`
+      {
+        "assets": [],
+        "attributes": [
+          {
+            "name": "size",
+            "value": {
+              "key": "Medium",
+              "label": "Medium",
+            },
+          },
+        ],
+        "images": [],
+        "key": undefined,
+        "prices": [],
+        "sku": undefined,
+      }
+    `);
+  });
+
+  it(`should return a anniversaryShirtVariant02 preset when built for graphql`, () => {
+    const anniversaryShirtVariant02PresetGraphql =
+      anniversaryShirtVariant02().buildGraphql<TProductVariantDraft>();
+    expect(anniversaryShirtVariant02PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductVariantInput",
+        "assets": [],
+        "attributes": [
+          {
+            "__typename": "ProductAttributeInput",
+            "name": "size",
+            "value": {
+              "key": "Medium",
+              "label": "Medium",
+            },
+          },
+        ],
+        "images": [],
+        "key": undefined,
+        "prices": [],
+        "sku": undefined,
+      }
+    `);
+  });
+});

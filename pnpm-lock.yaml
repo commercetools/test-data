@@ -760,6 +760,9 @@ importers:
       '@commercetools-test-data/attribute-definition':
         specifier: 4.11.1
         version: link:../attribute-definition
+      '@commercetools-test-data/cent-precision-money':
+        specifier: 4.11.1
+        version: link:../cent-precision-money
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons

@@ -1,0 +1,145 @@
+import { TProductVariantDraft } from '../../../types';
+import sandalsVariant02 from './sandals-variant-02';
+
+describe(`with sandalsAU variant preset`, () => {
+  it(`should return a sandalsAU preset`, () => {
+    const sandalsVariant02Preset =
+      sandalsVariant02().build<TProductVariantDraft>();
+    expect(sandalsVariant02Preset).toMatchInlineSnapshot(`
+      {
+        "assets": [],
+        "attributes": [
+          {
+            "name": "type",
+            "value": {
+              "key": "Shoes",
+              "label": "Shoes",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 230,
+              "w": 219,
+            },
+            "label": undefined,
+            "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/sandals-nDN7Ajoe.jpeg",
+          },
+        ],
+        "key": "148097",
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1199,
+              "currencyCode": "AUD",
+              "fractionDigits": 2,
+              "type": "centPrecision",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1000,
+              "currencyCode": "USD",
+              "fractionDigits": 2,
+              "type": "centPrecision",
+            },
+          },
+        ],
+        "sku": "148097",
+      }
+    `);
+  });
+
+  it(`should return a sandalsAU preset when built for graphql`, () => {
+    const sandalsVariant02PresetGraphql =
+      sandalsVariant02().buildGraphql<TProductVariantDraft>();
+    expect(sandalsVariant02PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductVariantInput",
+        "assets": [],
+        "attributes": [
+          {
+            "__typename": "ProductAttributeInput",
+            "name": "type",
+            "value": {
+              "key": "Shoes",
+              "label": "Shoes",
+            },
+          },
+        ],
+        "images": [
+          {
+            "__typename": "Image",
+            "dimensions": {
+              "h": 230,
+              "w": 219,
+            },
+            "label": undefined,
+            "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/sandals-nDN7Ajoe.jpeg",
+          },
+        ],
+        "key": "148097",
+        "prices": [
+          {
+            "__typename": "ProductPriceDataInput",
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "__typename": "MoneyInput",
+              "centAmount": 1199,
+              "currencyCode": "AUD",
+              "fractionDigits": 2,
+              "type": "centPrecision",
+            },
+          },
+          {
+            "__typename": "ProductPriceDataInput",
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "__typename": "MoneyInput",
+              "centAmount": 1000,
+              "currencyCode": "USD",
+              "fractionDigits": 2,
+              "type": "centPrecision",
+            },
+          },
+        ],
+        "sku": "148097",
+      }
+    `);
+  });
+});
