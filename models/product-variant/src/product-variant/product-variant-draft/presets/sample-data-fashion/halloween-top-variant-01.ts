@@ -53,7 +53,6 @@ const halloweenTopVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Purple',
         label: 'Purple',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default halloweenTopVariant01;

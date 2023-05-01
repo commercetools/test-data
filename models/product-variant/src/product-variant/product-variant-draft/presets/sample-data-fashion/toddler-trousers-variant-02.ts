@@ -45,7 +45,6 @@ const toddlerTrousersVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Ankle',
         label: 'Ankle',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default toddlerTrousersVariant02;

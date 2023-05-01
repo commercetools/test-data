@@ -11,7 +11,7 @@ describe(`with halloweenTop preset`, () => {
         "description": undefined,
         "key": "Halloween Top",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "size",
@@ -123,7 +123,7 @@ describe(`with halloweenTop preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -223,7 +223,7 @@ describe(`with halloweenTop preset`, () => {
         "key": "Halloween Top",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -349,7 +349,7 @@ describe(`with halloweenTop preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

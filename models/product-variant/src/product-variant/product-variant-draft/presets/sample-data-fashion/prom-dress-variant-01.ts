@@ -41,7 +41,6 @@ const promDressVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Floral',
         label: 'Floral',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default promDressVariant01;

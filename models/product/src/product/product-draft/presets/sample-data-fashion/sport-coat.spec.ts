@@ -11,7 +11,7 @@ describe(`with sportCoat preset`, () => {
         "description": undefined,
         "key": "sport_coat",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "sleeve_length",
@@ -82,7 +82,7 @@ describe(`with sportCoat preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "sleeve_length",
@@ -140,7 +140,7 @@ describe(`with sportCoat preset`, () => {
         "key": "sport_coat",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -220,7 +220,7 @@ describe(`with sportCoat preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

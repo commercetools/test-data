@@ -11,7 +11,7 @@ describe(`with sampleSandals preset`, () => {
         "description": undefined,
         "key": "sandals",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "type",
@@ -133,7 +133,7 @@ describe(`with sampleSandals preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "type",
@@ -209,7 +209,7 @@ describe(`with sampleSandals preset`, () => {
         "key": "sandals",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -346,7 +346,7 @@ describe(`with sampleSandals preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

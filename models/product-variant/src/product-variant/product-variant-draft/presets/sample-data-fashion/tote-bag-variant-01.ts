@@ -33,7 +33,6 @@ const toteBagVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Bag',
         label: 'Bag',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default toteBagVariant01;

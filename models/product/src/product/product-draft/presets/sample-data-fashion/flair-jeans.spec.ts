@@ -11,7 +11,7 @@ describe(`with flairJeans preset`, () => {
         "description": undefined,
         "key": "flair_jeans",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "size",
@@ -42,9 +42,9 @@ describe(`with flairJeans preset`, () => {
               },
             },
           ],
-          "images": [],
+          "images": undefined,
           "key": undefined,
-          "prices": [],
+          "prices": undefined,
           "sku": undefined,
         },
         "metaDescription": undefined,
@@ -76,7 +76,7 @@ describe(`with flairJeans preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -107,9 +107,9 @@ describe(`with flairJeans preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
         ],
@@ -128,7 +128,7 @@ describe(`with flairJeans preset`, () => {
         "key": "flair_jeans",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -163,9 +163,9 @@ describe(`with flairJeans preset`, () => {
               },
             },
           ],
-          "images": [],
+          "images": undefined,
           "key": undefined,
-          "prices": [],
+          "prices": undefined,
           "sku": undefined,
         },
         "metaDescription": undefined,
@@ -202,7 +202,7 @@ describe(`with flairJeans preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -237,9 +237,9 @@ describe(`with flairJeans preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
         ],

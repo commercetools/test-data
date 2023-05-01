@@ -50,7 +50,6 @@ const necklaceVariant01 = (): TProductVariantDraftBuilder =>
         label: 'Jewelry',
       }),
       AttributeDraft.random().name('engraving').value('Happy Anniversary'),
-    ])
-    .assets([]);
+    ]);
 
 export default necklaceVariant01;

@@ -37,7 +37,6 @@ const maternityTopVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Green',
         label: 'Green',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default maternityTopVariant02;

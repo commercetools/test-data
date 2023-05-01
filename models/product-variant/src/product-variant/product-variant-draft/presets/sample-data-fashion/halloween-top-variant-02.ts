@@ -53,7 +53,6 @@ const halloweenTopVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Multi-Color',
         label: 'Multi-Color',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default halloweenTopVariant02;

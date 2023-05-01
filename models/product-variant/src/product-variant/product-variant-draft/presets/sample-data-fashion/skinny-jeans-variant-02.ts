@@ -37,7 +37,6 @@ const skinnyJeansVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Slim',
         label: 'Slim',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default skinnyJeansVariant02;

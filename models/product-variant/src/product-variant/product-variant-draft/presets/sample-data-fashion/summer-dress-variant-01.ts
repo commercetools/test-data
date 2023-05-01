@@ -41,7 +41,6 @@ const summerDressVariant01 = (): TProductVariantDraftBuilder =>
         key: 'White',
         label: 'White',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default summerDressVariant01;

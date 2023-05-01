@@ -11,7 +11,7 @@ describe(`with maternityTop preset`, () => {
         "description": undefined,
         "key": "maternity_top",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "size",
@@ -89,7 +89,7 @@ describe(`with maternityTop preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -139,7 +139,7 @@ describe(`with maternityTop preset`, () => {
             "sku": "118717",
           },
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -166,7 +166,7 @@ describe(`with maternityTop preset`, () => {
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-lOB-DcqK.png",
               },
             ],
-            "key": "118717",
+            "key": "118718",
             "prices": [
               {
                 "channel": undefined,
@@ -186,7 +186,7 @@ describe(`with maternityTop preset`, () => {
                 },
               },
             ],
-            "sku": "118717",
+            "sku": "118718",
           },
         ],
       }
@@ -205,7 +205,7 @@ describe(`with maternityTop preset`, () => {
         "key": "maternity_top",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -293,7 +293,7 @@ describe(`with maternityTop preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -349,7 +349,7 @@ describe(`with maternityTop preset`, () => {
           },
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -379,7 +379,7 @@ describe(`with maternityTop preset`, () => {
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-lOB-DcqK.png",
               },
             ],
-            "key": "118717",
+            "key": "118718",
             "prices": [
               {
                 "__typename": "ProductPriceDataInput",
@@ -401,7 +401,7 @@ describe(`with maternityTop preset`, () => {
                 },
               },
             ],
-            "sku": "118717",
+            "sku": "118718",
           },
         ],
       }

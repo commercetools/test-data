@@ -33,7 +33,6 @@ const sportCoatVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Normal',
         label: 'Normal',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default sportCoatVariant02;

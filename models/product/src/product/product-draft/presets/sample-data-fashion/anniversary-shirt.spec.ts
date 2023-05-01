@@ -11,7 +11,7 @@ describe(`with anniversaryShirt preset`, () => {
         "description": undefined,
         "key": "anniversary_shirt",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "size",
@@ -21,9 +21,9 @@ describe(`with anniversaryShirt preset`, () => {
               },
             },
           ],
-          "images": [],
+          "images": undefined,
           "key": undefined,
-          "prices": [],
+          "prices": undefined,
           "sku": undefined,
         },
         "metaDescription": undefined,
@@ -55,7 +55,7 @@ describe(`with anniversaryShirt preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -65,13 +65,13 @@ describe(`with anniversaryShirt preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -81,9 +81,9 @@ describe(`with anniversaryShirt preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
         ],
@@ -103,7 +103,7 @@ describe(`with anniversaryShirt preset`, () => {
         "key": "anniversary_shirt",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -114,9 +114,9 @@ describe(`with anniversaryShirt preset`, () => {
               },
             },
           ],
-          "images": [],
+          "images": undefined,
           "key": undefined,
-          "prices": [],
+          "prices": undefined,
           "sku": undefined,
         },
         "metaDescription": undefined,
@@ -153,7 +153,7 @@ describe(`with anniversaryShirt preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -164,14 +164,14 @@ describe(`with anniversaryShirt preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -182,9 +182,9 @@ describe(`with anniversaryShirt preset`, () => {
                 },
               },
             ],
-            "images": [],
+            "images": undefined,
             "key": undefined,
-            "prices": [],
+            "prices": undefined,
             "sku": undefined,
           },
         ],

@@ -11,7 +11,7 @@ describe(`with toddlerTrousers preset`, () => {
         "description": undefined,
         "key": "toddler_trousers",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "size",
@@ -103,7 +103,7 @@ describe(`with toddlerTrousers preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -167,7 +167,7 @@ describe(`with toddlerTrousers preset`, () => {
             "sku": "855485",
           },
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -247,7 +247,7 @@ describe(`with toddlerTrousers preset`, () => {
         "key": "toddler_trousers",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -351,7 +351,7 @@ describe(`with toddlerTrousers preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",
@@ -423,7 +423,7 @@ describe(`with toddlerTrousers preset`, () => {
           },
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

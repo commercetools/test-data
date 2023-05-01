@@ -42,7 +42,6 @@ const denimJacketVariant02 = (): TProductVariantDraftBuilder =>
         label: 'Extra Long',
       }),
       AttributeDraft.random().name('cotton').value(false),
-    ])
-    .assets([]);
+    ]);
 
 export default denimJacketVariant02;

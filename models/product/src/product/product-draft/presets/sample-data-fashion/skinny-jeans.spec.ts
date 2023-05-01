@@ -11,7 +11,7 @@ describe(`with skinnyJeans preset`, () => {
         "description": undefined,
         "key": "skinny_jeans",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "fit",
@@ -89,7 +89,7 @@ describe(`with skinnyJeans preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "size",
@@ -155,7 +155,7 @@ describe(`with skinnyJeans preset`, () => {
         "key": "skinny_jeans",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -243,7 +243,7 @@ describe(`with skinnyJeans preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

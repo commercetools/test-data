@@ -42,7 +42,6 @@ const denimJacketVariant01 = (): TProductVariantDraftBuilder =>
         label: 'Normal',
       }),
       AttributeDraft.random().name('cotton').value(false),
-    ])
-    .assets([]);
+    ]);
 
 export default denimJacketVariant01;

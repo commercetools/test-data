@@ -33,7 +33,6 @@ const necklaceVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Jewelry',
         label: 'Jewelry',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default necklaceVariant02;

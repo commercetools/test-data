@@ -11,7 +11,7 @@ describe(`with summerDress preset`, () => {
         "description": undefined,
         "key": "summer_dress",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "color",
@@ -99,7 +99,7 @@ describe(`with summerDress preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "color",
@@ -158,7 +158,7 @@ describe(`with summerDress preset`, () => {
         "key": "summer_dress",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -257,7 +257,7 @@ describe(`with summerDress preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

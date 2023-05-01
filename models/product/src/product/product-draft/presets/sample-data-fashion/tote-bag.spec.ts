@@ -11,7 +11,7 @@ describe(`with toteBag preset`, () => {
         "description": undefined,
         "key": "tote_bag",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "type",
@@ -82,7 +82,7 @@ describe(`with toteBag preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "type",
@@ -140,7 +140,7 @@ describe(`with toteBag preset`, () => {
         "key": "tote_bag",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -220,7 +220,7 @@ describe(`with toteBag preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

@@ -11,7 +11,7 @@ describe(`with necklace preset`, () => {
         "description": undefined,
         "key": "necklace",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "type",
@@ -120,7 +120,7 @@ describe(`with necklace preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "type",
@@ -178,7 +178,7 @@ describe(`with necklace preset`, () => {
         "key": "necklace",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -301,7 +301,7 @@ describe(`with necklace preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

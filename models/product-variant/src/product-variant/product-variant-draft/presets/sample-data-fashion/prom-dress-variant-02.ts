@@ -41,7 +41,6 @@ const promDressVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Pink',
         label: 'Pink',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default promDressVariant02;

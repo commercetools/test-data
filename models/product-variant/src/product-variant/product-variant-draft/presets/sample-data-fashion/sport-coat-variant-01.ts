@@ -33,7 +33,6 @@ const sportCoatVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Crop',
         label: 'Crop',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default sportCoatVariant01;

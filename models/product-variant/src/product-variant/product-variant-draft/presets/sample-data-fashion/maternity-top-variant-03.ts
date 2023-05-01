@@ -8,8 +8,8 @@ import { TProductVariantDraftBuilder } from '../../../types';
 const maternityTopVariant03 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
-    .sku('118717')
-    .key('118717')
+    .sku('118718')
+    .key('118718')
     .prices([
       PriceDraft.presets
         .empty()
@@ -37,7 +37,6 @@ const maternityTopVariant03 = (): TProductVariantDraftBuilder =>
         key: 'Green',
         label: 'Green',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default maternityTopVariant03;

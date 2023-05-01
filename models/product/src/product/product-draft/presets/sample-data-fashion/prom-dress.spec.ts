@@ -11,7 +11,7 @@ describe(`with promDress preset`, () => {
         "description": undefined,
         "key": "prom_dress",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "color",
@@ -99,7 +99,7 @@ describe(`with promDress preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "color",
@@ -174,7 +174,7 @@ describe(`with promDress preset`, () => {
         "key": "prom_dress",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -273,7 +273,7 @@ describe(`with promDress preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

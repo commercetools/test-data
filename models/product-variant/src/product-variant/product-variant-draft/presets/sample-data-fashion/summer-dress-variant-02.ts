@@ -33,7 +33,6 @@ const summerDressVariant02 = (): TProductVariantDraftBuilder =>
         key: 'Pink',
         label: 'Pink',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default summerDressVariant02;

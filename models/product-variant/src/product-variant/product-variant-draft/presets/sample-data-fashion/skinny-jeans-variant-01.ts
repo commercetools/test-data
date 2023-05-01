@@ -37,7 +37,6 @@ const skinnyJeansVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Medium',
         label: 'Medium',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default skinnyJeansVariant01;

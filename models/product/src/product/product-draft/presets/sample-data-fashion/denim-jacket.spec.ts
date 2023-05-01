@@ -11,7 +11,7 @@ describe(`with denimJacket preset`, () => {
         "description": undefined,
         "key": "denim_jacket",
         "masterVariant": {
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "name": "sleeve_length",
@@ -103,7 +103,7 @@ describe(`with denimJacket preset`, () => {
         },
         "variants": [
           {
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "name": "sleeve_length",
@@ -183,7 +183,7 @@ describe(`with denimJacket preset`, () => {
         "key": "denim_jacket",
         "masterVariant": {
           "__typename": "ProductVariantInput",
-          "assets": [],
+          "assets": undefined,
           "attributes": [
             {
               "__typename": "ProductAttributeInput",
@@ -287,7 +287,7 @@ describe(`with denimJacket preset`, () => {
         "variants": [
           {
             "__typename": "ProductVariantInput",
-            "assets": [],
+            "assets": undefined,
             "attributes": [
               {
                 "__typename": "ProductAttributeInput",

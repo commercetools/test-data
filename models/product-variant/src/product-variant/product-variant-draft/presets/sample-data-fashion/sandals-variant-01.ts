@@ -57,7 +57,6 @@ const sandalsVariant01 = (): TProductVariantDraftBuilder =>
         key: 'Shoes',
         label: 'Shoes',
       }),
-    ])
-    .assets([]);
+    ]);
 
 export default sandalsVariant01;
