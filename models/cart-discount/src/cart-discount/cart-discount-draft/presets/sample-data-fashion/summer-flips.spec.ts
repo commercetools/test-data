@@ -1,4 +1,7 @@
-import { TCartDiscountDraft, TCartDiscountDraftGraphql } from '../../../types';
+import type {
+  TCartDiscountDraft,
+  TCartDiscountDraftGraphql,
+} from '../../../types';
 import summerFlips from './summer-flips';
 
 describe('with the preset `summerFlips`', () => {

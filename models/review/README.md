@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/reviews#review
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/review
+$ pnpm add -D @commercetools-test-data/review
 ```
 
 # Usage

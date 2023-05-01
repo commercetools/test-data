@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/productTypes#product-types
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/product-type
+$ pnpm add -D @commercetools-test-data/product-type
 ```
 
 # Usage

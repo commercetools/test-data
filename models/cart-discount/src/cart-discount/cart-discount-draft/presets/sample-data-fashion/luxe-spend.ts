@@ -10,7 +10,7 @@ import {
   CartDiscountValueAbsoluteDraft,
 } from '../../../..';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
 
 const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
   .luxe()

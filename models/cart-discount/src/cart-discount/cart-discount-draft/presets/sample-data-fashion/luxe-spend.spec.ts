@@ -1,4 +1,7 @@
-import { TCartDiscountDraft, TCartDiscountDraftGraphql } from '../../../types';
+import type {
+  TCartDiscountDraft,
+  TCartDiscountDraftGraphql,
+} from '../../../types';
 import luxeSpend from './luxe-spend';
 
 describe('with the preset `luxeSpend`', () => {

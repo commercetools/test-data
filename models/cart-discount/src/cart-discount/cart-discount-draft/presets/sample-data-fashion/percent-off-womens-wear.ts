@@ -9,7 +9,7 @@ import {
   CartDiscountValueRelativeDraft,
 } from '../../../..';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
 
 const categoryDraft = CategoryDraft.presets.sampleDataFashion
   .bottomsWomen()

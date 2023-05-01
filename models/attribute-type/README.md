@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/productTypes#attributetype
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/attribute-type
+$ pnpm add -D @commercetools-test-data/attribute-type
 ```
 
 # Usage

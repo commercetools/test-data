@@ -5,7 +5,7 @@ import {
 import * as CartDiscountDraft from '../..';
 import { CartDiscountValueGiftLineItemDraft } from '../../../..';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
 
 const summerFlips = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets

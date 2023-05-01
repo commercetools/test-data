@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/categories
 ## Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/category
+$ pnpm add -D @commercetools-test-data/category
 ```
 
 ## Usage

@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/taxCategories#representations
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/tax-category
+$ pnpm add -D @commercetools-test-data/tax-category
 ```
 
 # Usage

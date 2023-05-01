@@ -1,6 +1,6 @@
 import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TCartDiscountValueFixed } from './types';
+import type { TCartDiscountValueFixed } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluefixed
 

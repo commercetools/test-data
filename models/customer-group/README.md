@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/customerGroups
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/customer-group
+$ pnpm add -D @commercetools-test-data/customer-group
 ```
 
 # Usage

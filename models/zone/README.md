@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/zones
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/zone
+$ pnpm add -D @commercetools-test-data/zone
 ```
 
 # Usage

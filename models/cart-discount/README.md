@@ -10,19 +10,14 @@ https://docs.commercetools.com/api/projects/cartDiscounts#representations
 $ pnpm add -D @commercetools-test-data/cart-discount
 ```
 
-# Usage
-
-- [@commercetools-test-data/cart-discount](#commercetools-test-datacart-discount)
-- [Install](#install)
-- [Usage](#usage)
-  - [`CartDiscount`](#cartdiscount)
-  - [`CartDiscountLineItemsTarget`](#cartdiscountlineitemstarget)
-  - [`CartDiscountMultiBuyLineItems`](#cartdiscountmultibuylineitems)
-  - [`CartDiscountShippingCost`](#cartdiscountshippingcost)
-  - [`CartDiscountValueAbsolute`](#cartdiscountvalueabsolute)
-  - [`CartDiscountValueFixed`](#cartdiscountvaluefixed)
-  - [`CartDiscountValueGiftLineItem`](#cartdiscountvaluegiftlineitem)
-  - [`CartDiscountValueRelative`](#cartdiscountvaluerelative)
+- [CartDiscount](#cartdiscount)<br>
+- [CartDiscountLineItemsTarget](#cartdiscountlineitemstarget)<br>
+- [CartDiscountMultiBuyLineItemsTarget](#cartdiscountmultibuylineitemstarget)<br>
+- [CartDiscountShippingCostTarget](#cartdiscountshippingcosttarget)<br>
+- [CartDiscountValueAbsolute](#cartdiscountvalueabsolute)<br>
+- [CartDiscountValueFixed](#cartdiscountvaluefixed)<br>
+- [CartDiscountValueGiftLineItem](#cartdiscountvaluegiftlineitem)<br>
+- [CartDiscountValueRelative](#cartdiscountvaluerelative)<br>
 
 ## `CartDiscount`
 
@@ -55,36 +50,36 @@ const targetDraft =
   CartDiscountLineItemsTargetDraft.random().build<TCartDiscountLineItemsTargetDraft>();
 ```
 
-## `CartDiscountMultiBuyLineItems`
+## `CartDiscountMultiBuyLineItemsTarget`
 
 ```ts
 import {
-  CartDiscountMultiBuyLineItems,
-  CartDiscountMultiBuyLineItemsDraft,
-  type TCartDiscountMultiBuyLineItems,
-  type TCartDiscountMultiBuyLineItemsDraft,
+  CartDiscountMultiBuyLineItemsTarget,
+  CartDiscountMultiBuyLineItemsTargetDraft,
+  type TCartDiscountMultiBuyLineItemsTarget,
+  type TCartDiscountMultiBuyLineItemsTargetDraft,
 } from '@commercetools-test-data/cart-discount';
 
 const target =
-  CartDiscountMultiBuyLineItems.random().build<TCartDiscountMultiBuyLineItems>();
+  CartDiscountMultiBuyLineItemsTarget.random().build<TCartDiscountMultiBuyLineItemsTarget>();
 const targetDraft =
-  CartDiscountMultiBuyLineItemsDraft.random().build<TCartDiscountMultiBuyLineItemsDraft>();
+  CartDiscountMultiBuyLineItemsTargetDraft.random().build<TCartDiscountMultiBuyLineItemsTargetDraft>();
 ```
 
-## `CartDiscountShippingCost`
+## `CartDiscountShippingCostTarget`
 
 ```ts
 import {
-  CartDiscountShippingCost,
-  CartDiscountShippingCostDraft,
-  type TCartDiscountShippingCost,
-  type TCartDiscountShippingCostDraft,
+  CartDiscountShippingCostTarget,
+  CartDiscountShippingCostTargetDraft,
+  type TCartDiscountShippingCostTarget,
+  type TCartDiscountShippingCostTargetDraft,
 } from '@commercetools-test-data/cart-discount';
 
 const target =
-  CartDiscountShippingCost.random().build<TCartDiscountShippingCost>();
+  CartDiscountShippingCostTarget.random().build<TCartDiscountShippingCostTarget>();
 const targetDraft =
-  CartDiscountShippingCostDraft.random().build<TCartDiscountShippingCostDraft>();
+  CartDiscountShippingCostTargetDraft.random().build<TCartDiscountShippingCostTargetDraft>();
 ```
 
 ## `CartDiscountValueAbsolute`
@@ -111,13 +106,11 @@ import {
   CartDiscountValueFixedDraft,
   type TCartDiscountValueFixed,
   type TCartDiscountValueFixedDraft,
-} from '@commercetools-test-data/cart-discount;
+} from '@commercetools-test-data/cart-discount';
 
 const cartDiscountValueFixed =
   CartDiscountValueFixed.random().build<TCartDiscountValueFixed>();
-const cartDiscountValueFixedDraft =
-  CartDiscountValueFixedDraft.random().build<TCartDiscountValueFixedDraft>();
-
+const cartDiscountValueFixedDraft = CartDiscountValueFixedDraft.random().buil;
 ```
 
 ## `CartDiscountValueGiftLineItem`

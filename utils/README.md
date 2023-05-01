@@ -5,7 +5,7 @@ This package provides the utils needed when you author your generators.
 ## Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/utils
+$ pnpm add -D @commercetools-test-data/utils
 ```
 
 ## `createRelatedDates`

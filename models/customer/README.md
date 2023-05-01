@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/customers
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/customer
+$ pnpm add -D @commercetools-test-data/customer
 ```
 
 # Usage

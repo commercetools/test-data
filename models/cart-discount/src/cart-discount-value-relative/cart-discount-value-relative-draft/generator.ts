@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TCartDiscountValueRelativeDraft } from '../types';
+import type { TCartDiscountValueRelativeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluerelativedraft
 

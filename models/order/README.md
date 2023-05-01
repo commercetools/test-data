@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/orders#order
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/order
+$ pnpm add -D @commercetools-test-data/order
 ```
 
 # Usage

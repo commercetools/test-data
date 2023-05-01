@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/types#price
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/price
+$ pnpm add -D @commercetools-test-data/price
 ```
 
 # Usage

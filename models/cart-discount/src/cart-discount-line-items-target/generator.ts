@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCartDiscountLineItemsTarget } from './types';
+import type { TCartDiscountLineItemsTarget } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountlineitemstarget
 

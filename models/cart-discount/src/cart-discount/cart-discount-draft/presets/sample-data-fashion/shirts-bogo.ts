@@ -10,7 +10,7 @@ import {
   selectionMode,
 } from '../../../..';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
 
 const productTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .shirts()

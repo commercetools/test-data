@@ -1,6 +1,6 @@
 import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TCartDiscountValueAbsolute } from './types';
+import type { TCartDiscountValueAbsolute } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvalueabsolute
 
