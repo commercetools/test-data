@@ -7,7 +7,7 @@ describe(`with skinnyJeansVariant01 preset`, () => {
       skinnyJeansVariant01().build<TProductVariantDraft>();
     expect(skinnyJeansVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "fit",
@@ -65,7 +65,7 @@ describe(`with skinnyJeansVariant01 preset`, () => {
     expect(skinnyJeansVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

@@ -7,7 +7,7 @@ describe(`with maternityTopVariant03 preset`, () => {
       maternityTopVariant03().build<TProductVariantDraft>();
     expect(maternityTopVariant03Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -34,7 +34,7 @@ describe(`with maternityTopVariant03 preset`, () => {
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-lOB-DcqK.png",
           },
         ],
-        "key": "118717",
+        "key": "118718",
         "prices": [
           {
             "channel": undefined,
@@ -54,7 +54,7 @@ describe(`with maternityTopVariant03 preset`, () => {
             },
           },
         ],
-        "sku": "118717",
+        "sku": "118718",
       }
     `);
   });
@@ -65,7 +65,7 @@ describe(`with maternityTopVariant03 preset`, () => {
     expect(maternityTopVariant03PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",
@@ -95,7 +95,7 @@ describe(`with maternityTopVariant03 preset`, () => {
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-lOB-DcqK.png",
           },
         ],
-        "key": "118717",
+        "key": "118718",
         "prices": [
           {
             "__typename": "ProductPriceDataInput",
@@ -117,7 +117,7 @@ describe(`with maternityTopVariant03 preset`, () => {
             },
           },
         ],
-        "sku": "118717",
+        "sku": "118718",
       }
     `);
   });

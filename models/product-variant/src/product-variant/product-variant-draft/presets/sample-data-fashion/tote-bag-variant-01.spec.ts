@@ -7,7 +7,7 @@ describe(`with toteBagVariant01 preset`, () => {
       toteBagVariant01().build<TProductVariantDraft>();
     expect(toteBagVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "type",
@@ -58,7 +58,7 @@ describe(`with toteBagVariant01 preset`, () => {
     expect(toteBagVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

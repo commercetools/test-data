@@ -7,7 +7,7 @@ describe(`with denimJacketVariant02 preset`, () => {
       denimJacketVariant02().build<TProductVariantDraft>();
     expect(denimJacketVariant02Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "sleeve_length",
@@ -79,7 +79,7 @@ describe(`with denimJacketVariant02 preset`, () => {
     expect(denimJacketVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

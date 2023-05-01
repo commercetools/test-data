@@ -7,7 +7,7 @@ describe(`with flairJeansVariant02 preset`, () => {
       flairJeansVariant02().build<TProductVariantDraft>();
     expect(flairJeansVariant02Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -38,9 +38,9 @@ describe(`with flairJeansVariant02 preset`, () => {
             },
           },
         ],
-        "images": [],
+        "images": undefined,
         "key": undefined,
-        "prices": [],
+        "prices": undefined,
         "sku": undefined,
       }
     `);
@@ -52,7 +52,7 @@ describe(`with flairJeansVariant02 preset`, () => {
     expect(flairJeansVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",
@@ -87,9 +87,9 @@ describe(`with flairJeansVariant02 preset`, () => {
             },
           },
         ],
-        "images": [],
+        "images": undefined,
         "key": undefined,
-        "prices": [],
+        "prices": undefined,
         "sku": undefined,
       }
     `);

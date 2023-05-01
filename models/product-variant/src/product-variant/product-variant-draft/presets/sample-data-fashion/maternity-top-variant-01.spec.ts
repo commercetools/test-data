@@ -7,7 +7,7 @@ describe(`with maternityTopVariant01 preset`, () => {
       maternityTopVariant01().build<TProductVariantDraft>();
     expect(maternityTopVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -65,7 +65,7 @@ describe(`with maternityTopVariant01 preset`, () => {
     expect(maternityTopVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

@@ -7,7 +7,7 @@ describe(`with toddlerTrousersVariant03 preset`, () => {
       toddlerTrousersVariant03().build<TProductVariantDraft>();
     expect(toddlerTrousersVariant03Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -79,7 +79,7 @@ describe(`with toddlerTrousersVariant03 preset`, () => {
     expect(toddlerTrousersVariant03PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

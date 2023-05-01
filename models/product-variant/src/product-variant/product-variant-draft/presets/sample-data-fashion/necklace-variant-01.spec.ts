@@ -7,7 +7,7 @@ describe(`with necklace variant preset`, () => {
       necklaceVariant01().build<TProductVariantDraft>();
     expect(necklaceVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "type",
@@ -96,7 +96,7 @@ describe(`with necklace variant preset`, () => {
     expect(necklaceVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

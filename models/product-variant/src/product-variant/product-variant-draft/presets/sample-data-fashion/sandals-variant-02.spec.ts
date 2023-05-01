@@ -7,7 +7,7 @@ describe(`with sandalsAU variant preset`, () => {
       sandalsVariant02().build<TProductVariantDraft>();
     expect(sandalsVariant02Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "type",
@@ -75,7 +75,7 @@ describe(`with sandalsAU variant preset`, () => {
     expect(sandalsVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

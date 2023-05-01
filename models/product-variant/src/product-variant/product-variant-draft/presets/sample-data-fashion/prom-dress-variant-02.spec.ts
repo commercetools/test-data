@@ -7,7 +7,7 @@ describe(`with promDressVariant02 preset`, () => {
       promDressVariant02().build<TProductVariantDraft>();
     expect(promDressVariant02Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "color",
@@ -75,7 +75,7 @@ describe(`with promDressVariant02 preset`, () => {
     expect(promDressVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

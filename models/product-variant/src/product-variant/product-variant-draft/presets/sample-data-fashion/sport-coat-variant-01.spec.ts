@@ -7,7 +7,7 @@ describe(`with sportCoatVariant01 preset`, () => {
       sportCoatVariant01().build<TProductVariantDraft>();
     expect(sportCoatVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "sleeve_length",
@@ -58,7 +58,7 @@ describe(`with sportCoatVariant01 preset`, () => {
     expect(sportCoatVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",

@@ -7,7 +7,7 @@ describe(`with anniversaryShirtVariant01 preset`, () => {
       anniversaryShirtVariant01().build<TProductVariantDraft>();
     expect(anniversaryShirtVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -17,9 +17,9 @@ describe(`with anniversaryShirtVariant01 preset`, () => {
             },
           },
         ],
-        "images": [],
+        "images": undefined,
         "key": undefined,
-        "prices": [],
+        "prices": undefined,
         "sku": undefined,
       }
     `);
@@ -31,7 +31,7 @@ describe(`with anniversaryShirtVariant01 preset`, () => {
     expect(anniversaryShirtVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",
@@ -42,9 +42,9 @@ describe(`with anniversaryShirtVariant01 preset`, () => {
             },
           },
         ],
-        "images": [],
+        "images": undefined,
         "key": undefined,
-        "prices": [],
+        "prices": undefined,
         "sku": undefined,
       }
     `);

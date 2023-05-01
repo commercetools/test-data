@@ -7,7 +7,7 @@ describe(`with halloweenTopVariant01 preset`, () => {
       halloweenTopVariant01().build<TProductVariantDraft>();
     expect(halloweenTopVariant01Preset).toMatchInlineSnapshot(`
       {
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "name": "size",
@@ -99,7 +99,7 @@ describe(`with halloweenTopVariant01 preset`, () => {
     expect(halloweenTopVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductVariantInput",
-        "assets": [],
+        "assets": undefined,
         "attributes": [
           {
             "__typename": "ProductAttributeInput",
