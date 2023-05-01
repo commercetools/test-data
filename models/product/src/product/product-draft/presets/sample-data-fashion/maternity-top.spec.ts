@@ -66,7 +66,7 @@ describe(`with maternityTop preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Maternity Top",
+          "en-US": "Sample Maternity Top",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -79,7 +79,7 @@ describe(`with maternityTop preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-maternity-top",
+          "en-US": "sample-maternity-top",
           "fr": undefined,
         },
         "state": undefined,
@@ -265,7 +265,7 @@ describe(`with maternityTop preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Maternity Top",
           },
         ],
@@ -280,7 +280,7 @@ describe(`with maternityTop preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-maternity-top",
           },
         ],

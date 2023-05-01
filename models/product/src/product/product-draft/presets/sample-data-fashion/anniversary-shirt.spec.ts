@@ -32,7 +32,7 @@ describe(`with anniversaryShirt preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Anniversary Shirt",
+          "en-US": "Sample Anniversary Shirt",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -45,7 +45,7 @@ describe(`with anniversaryShirt preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-anniversary-shirt",
+          "en-US": "sample-anniversary-shirt",
           "fr": undefined,
         },
         "state": undefined,
@@ -125,7 +125,7 @@ describe(`with anniversaryShirt preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Anniversary Shirt",
           },
         ],
@@ -140,7 +140,7 @@ describe(`with anniversaryShirt preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-anniversary-shirt",
           },
         ],

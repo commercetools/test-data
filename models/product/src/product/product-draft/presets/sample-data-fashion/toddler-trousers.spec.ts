@@ -80,7 +80,7 @@ describe(`with toddlerTrousers preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Toddler Trousers",
+          "en-US": "Sample Toddler Trousers",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -93,7 +93,7 @@ describe(`with toddlerTrousers preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-toddler-trousers",
+          "en-US": "sample-toddler-trousers",
           "fr": undefined,
         },
         "state": undefined,
@@ -323,7 +323,7 @@ describe(`with toddlerTrousers preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Toddler Trousers",
           },
         ],
@@ -338,7 +338,7 @@ describe(`with toddlerTrousers preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-toddler-trousers",
           },
         ],

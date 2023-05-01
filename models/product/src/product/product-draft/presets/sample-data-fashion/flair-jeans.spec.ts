@@ -53,7 +53,7 @@ describe(`with flairJeans preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Flair Jeans",
+          "en-US": "Sample Flair Jeans",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -66,7 +66,7 @@ describe(`with flairJeans preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-flair-jeans",
+          "en-US": "sample-flair-jeans",
           "fr": undefined,
         },
         "state": undefined,
@@ -174,7 +174,7 @@ describe(`with flairJeans preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Flair Jeans",
           },
         ],
@@ -189,7 +189,7 @@ describe(`with flairJeans preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-flair-jeans",
           },
         ],

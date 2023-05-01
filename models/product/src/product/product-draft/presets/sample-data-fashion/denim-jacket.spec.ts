@@ -80,7 +80,7 @@ describe(`with denimJacket preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Denim Jacket",
+          "en-US": "Sample Denim Jacket",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -93,7 +93,7 @@ describe(`with denimJacket preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-denim-jacket",
+          "en-US": "sample-denim-jacket",
           "fr": undefined,
         },
         "state": undefined,
@@ -259,7 +259,7 @@ describe(`with denimJacket preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Denim Jacket",
           },
         ],
@@ -274,7 +274,7 @@ describe(`with denimJacket preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-denim-jacket",
           },
         ],

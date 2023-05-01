@@ -100,7 +100,7 @@ describe(`with halloweenTop preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Halloween Top",
+          "en-US": "Sample Halloween Top",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -113,7 +113,7 @@ describe(`with halloweenTop preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-halloween-top",
+          "en-US": "sample-halloween-top",
           "fr": undefined,
         },
         "state": undefined,
@@ -321,7 +321,7 @@ describe(`with halloweenTop preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Halloween Top",
           },
         ],
@@ -336,7 +336,7 @@ describe(`with halloweenTop preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-halloween-top",
           },
         ],

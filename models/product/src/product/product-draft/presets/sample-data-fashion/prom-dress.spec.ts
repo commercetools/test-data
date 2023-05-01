@@ -76,7 +76,7 @@ describe(`with promDress preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Prom Dress",
+          "en-US": "Sample Prom Dress",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -89,7 +89,7 @@ describe(`with promDress preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-prom-dress",
+          "en-US": "sample-prom-dress",
           "fr": undefined,
         },
         "state": undefined,
@@ -245,7 +245,7 @@ describe(`with promDress preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Prom Dress",
           },
         ],
@@ -260,7 +260,7 @@ describe(`with promDress preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-prom-dress",
           },
         ],

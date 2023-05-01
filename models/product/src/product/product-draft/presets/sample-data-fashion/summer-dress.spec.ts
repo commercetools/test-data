@@ -76,7 +76,7 @@ describe(`with summerDress preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Summer Dress",
+          "en-US": "Sample Summer Dress",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -89,7 +89,7 @@ describe(`with summerDress preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-summer-dress",
+          "en-US": "sample-summer-dress",
           "fr": undefined,
         },
         "state": undefined,
@@ -229,7 +229,7 @@ describe(`with summerDress preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Summer Dress",
           },
         ],
@@ -244,7 +244,7 @@ describe(`with summerDress preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-summer-dress",
           },
         ],

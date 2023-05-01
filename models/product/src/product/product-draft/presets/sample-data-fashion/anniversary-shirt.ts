@@ -9,8 +9,8 @@ import { TProductDraftBuilder } from '../../../types';
 const anniversaryShirt = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-us']('Sample Anniversary Shirt'))
-    .slug(LocalizedString.presets.empty()['en-us']('sample-anniversary-shirt'))
+    .name(LocalizedString.presets.empty()['en-US']('Sample Anniversary Shirt'))
+    .slug(LocalizedString.presets.empty()['en-US']('sample-anniversary-shirt'))
     .productType(KeyReference.presets.productType().key('shirts'))
     .publish(false)
     .masterVariant(

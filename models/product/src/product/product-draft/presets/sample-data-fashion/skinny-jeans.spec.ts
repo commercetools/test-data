@@ -66,7 +66,7 @@ describe(`with skinnyJeans preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Skinny Jeans",
+          "en-US": "Sample Skinny Jeans",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -79,7 +79,7 @@ describe(`with skinnyJeans preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-skinny-jeans",
+          "en-US": "sample-skinny-jeans",
           "fr": undefined,
         },
         "state": undefined,
@@ -215,7 +215,7 @@ describe(`with skinnyJeans preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Skinny Jeans",
           },
         ],
@@ -230,7 +230,7 @@ describe(`with skinnyJeans preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-skinny-jeans",
           },
         ],

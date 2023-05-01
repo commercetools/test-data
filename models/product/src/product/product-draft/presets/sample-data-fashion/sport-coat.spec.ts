@@ -59,7 +59,7 @@ describe(`with sportCoat preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Sport Coat",
+          "en-US": "Sample Sport Coat",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -72,7 +72,7 @@ describe(`with sportCoat preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-sport-coat",
+          "en-US": "sample-sport-coat",
           "fr": undefined,
         },
         "state": undefined,
@@ -192,7 +192,7 @@ describe(`with sportCoat preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Sport Coat",
           },
         ],
@@ -207,7 +207,7 @@ describe(`with sportCoat preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-sport-coat",
           },
         ],

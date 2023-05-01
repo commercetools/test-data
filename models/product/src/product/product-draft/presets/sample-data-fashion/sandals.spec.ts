@@ -110,7 +110,7 @@ describe(`with sampleSandals preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Sandals",
+          "en-US": "Sample Sandals",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -123,7 +123,7 @@ describe(`with sampleSandals preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-sandals",
+          "en-US": "sample-sandals",
           "fr": undefined,
         },
         "state": undefined,
@@ -318,7 +318,7 @@ describe(`with sampleSandals preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Sandals",
           },
         ],
@@ -333,7 +333,7 @@ describe(`with sampleSandals preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-sandals",
           },
         ],

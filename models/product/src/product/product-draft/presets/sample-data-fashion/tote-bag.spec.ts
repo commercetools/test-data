@@ -59,7 +59,7 @@ describe(`with toteBag preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Tote Bag",
+          "en-US": "Sample Tote Bag",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -72,7 +72,7 @@ describe(`with toteBag preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-tote-bag",
+          "en-US": "sample-tote-bag",
           "fr": undefined,
         },
         "state": undefined,
@@ -192,7 +192,7 @@ describe(`with toteBag preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Tote Bag",
           },
         ],
@@ -207,7 +207,7 @@ describe(`with toteBag preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-tote-bag",
           },
         ],

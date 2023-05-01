@@ -97,7 +97,7 @@ describe(`with necklace preset`, () => {
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-us": "Sample Necklace",
+          "en-US": "Sample Necklace",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -110,7 +110,7 @@ describe(`with necklace preset`, () => {
         "slug": {
           "de": undefined,
           "en": undefined,
-          "en-us": "sample-necklace",
+          "en-US": "sample-necklace",
           "fr": undefined,
         },
         "state": undefined,
@@ -273,7 +273,7 @@ describe(`with necklace preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "Sample Necklace",
           },
         ],
@@ -288,7 +288,7 @@ describe(`with necklace preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
-            "locale": "en-us",
+            "locale": "en-US",
             "value": "sample-necklace",
           },
         ],

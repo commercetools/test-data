@@ -9,8 +9,8 @@ import { TProductDraftBuilder } from '../../../types';
 const ToddlerTrousers = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-us']('Sample Toddler Trousers'))
-    .slug(LocalizedString.presets.empty()['en-us']('sample-toddler-trousers'))
+    .name(LocalizedString.presets.empty()['en-US']('Sample Toddler Trousers'))
+    .slug(LocalizedString.presets.empty()['en-US']('sample-toddler-trousers'))
     .productType(KeyReference.presets.productType().key('pants'))
     .publish(true)
     .masterVariant(
