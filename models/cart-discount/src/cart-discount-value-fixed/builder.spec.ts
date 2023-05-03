@@ -5,7 +5,7 @@ import type {
   TCartDiscountValueFixed,
   TCartDiscountValueFixedGraphql,
 } from './types';
-import * as CartDiscountValueFixed from '.';
+import * as CartDiscountValueFixed from './index';
 
 describe('builder', () => {
   it(

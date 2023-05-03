@@ -1,11 +1,11 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as CartDiscountDraft from '../..';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
-} from '../../../..';
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const spendSaveTenPercent = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets

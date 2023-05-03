@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TProductData, TProductDataGraphql } from './types';
-import * as ProductData from '.';
+import * as ProductData from './index';
 
 describe('builder', () => {
   it(

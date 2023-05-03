@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TTaxRateDraft, TTaxRateDraftGraphql } from '../types';
-import * as TaxRateDraft from '.';
+import * as TaxRateDraft from './index';
 
 describe('builder', () => {
   it(

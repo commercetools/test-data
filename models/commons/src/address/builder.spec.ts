@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TAddress, TAddressGraphql } from './types';
-import * as Address from '.';
+import * as Address from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import type {
   TCartDiscountShippingCostTargetDraft,
   TCartDiscountShippingCostTargetDraftGraphql,
 } from '../types';
-import * as CartDiscountShippingCostTargetDraft from '.';
+import * as CartDiscountShippingCostTargetDraft from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import type {
   TProductVariantDraft,
   TProductVariantDraftGraphql,
 } from '../types';
-import * as ProductVariantDraft from '.';
+import * as ProductVariantDraft from './index';
 
 describe('builder', () => {
   it(

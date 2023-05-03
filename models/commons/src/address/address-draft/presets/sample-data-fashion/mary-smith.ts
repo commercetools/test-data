@@ -1,5 +1,5 @@
-import * as AddressDraft from '../..';
 import { TAddressDraftBuilder } from '../../../types';
+import * as AddressDraft from '../../index';
 
 const marySmith = (): TAddressDraftBuilder =>
   AddressDraft.presets

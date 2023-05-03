@@ -5,7 +5,7 @@ import {
   TProductDiscountValueExternal,
   TProductDiscountValueExternalGraphql,
 } from './types';
-import * as ProductDiscountValueExternal from '.';
+import * as ProductDiscountValueExternal from './index';
 
 describe('builder', () => {
   it(

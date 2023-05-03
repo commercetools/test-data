@@ -5,7 +5,7 @@ import type {
   TCartDiscountValueAbsoluteDraft,
   TCartDiscountValueAbsoluteDraftGraphql,
 } from '../types';
-import * as CartDiscountValueAbsoluteDraft from '.';
+import * as CartDiscountValueAbsoluteDraft from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import {
   TProductDiscountValueRelative,
   TProductDiscountValueRelativeGraphql,
 } from './types';
-import * as ProductDiscountValueRelative from '.';
+import * as ProductDiscountValueRelative from './index';
 
 describe('builder', () => {
   it(

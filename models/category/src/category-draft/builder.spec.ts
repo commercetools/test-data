@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCategoryDraft, TCategoryDraftGraphql } from '../types';
-import * as CategoryDraft from '.';
+import * as CategoryDraft from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import {
   TProductDiscountValueAbsoluteDraft,
   TProductDiscountValueAbsoluteDraftGraphql,
 } from '../types';
-import * as ProductDiscountValueAbsoluteDraft from '.';
+import * as ProductDiscountValueAbsoluteDraft from './index';
 
 describe('builder', () => {
   it(

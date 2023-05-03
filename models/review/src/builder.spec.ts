@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TReview, TReviewGraphql } from './types';
-import * as Review from '.';
+import * as Review from './index';
 
 describe('builder', () => {
   it(

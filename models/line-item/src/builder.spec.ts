@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TLineItem, TLineItemGraphql } from './types';
-import * as LineItem from '.';
+import * as LineItem from './index';
 
 describe('builder', () => {
   it(

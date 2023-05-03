@@ -1,8 +1,8 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import { AttributeType } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as ProductTypeDraft from '../..';
 import { TProductTypeDraftBuilder } from '../../../types';
+import * as ProductTypeDraft from '../../index';
 
 const jackets = (): TProductTypeDraftBuilder =>
   ProductTypeDraft.presets

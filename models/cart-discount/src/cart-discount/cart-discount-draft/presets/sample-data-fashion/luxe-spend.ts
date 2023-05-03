@@ -4,13 +4,13 @@ import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
-import * as CartDiscountDraft from '../..';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueAbsoluteDraft,
-} from '../../../..';
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
   .luxe()

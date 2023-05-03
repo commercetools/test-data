@@ -1,9 +1,9 @@
 import { CartDraft } from '@commercetools-test-data/cart';
 import type { TCartDraft } from '@commercetools-test-data/cart';
 import { KeyReference } from '@commercetools-test-data/commons';
-import * as OrderFromCartDraft from '../../';
-import { constants } from '../../..';
+import { constants } from '../../../index';
 import { TOrderFromCartDraftBuilder } from '../../../types';
+import * as OrderFromCartDraft from '../../index';
 
 const maryCartDraft01 = CartDraft.presets.sampleDataFashion
   .marySmith01()

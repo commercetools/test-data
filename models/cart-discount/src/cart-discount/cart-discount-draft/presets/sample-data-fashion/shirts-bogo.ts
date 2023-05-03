@@ -3,14 +3,14 @@ import {
   ProductTypeDraft,
   TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import * as CartDiscountDraft from '../..';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
   selectionMode,
-} from '../../../..';
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const productTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .shirts()

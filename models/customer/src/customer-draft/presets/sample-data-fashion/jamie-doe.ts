@@ -1,8 +1,8 @@
 import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import type { TCustomerGroupDraft } from '@commercetools-test-data/customer-group';
 import { CustomerGroupDraft } from '@commercetools-test-data/customer-group';
-import * as CustomerDraft from '../../';
 import { TCustomerDraftBuilder } from '../../../types';
+import * as CustomerDraft from '../../index';
 
 const customerGroup = CustomerGroupDraft.presets.sampleDataFashion
   .vip()

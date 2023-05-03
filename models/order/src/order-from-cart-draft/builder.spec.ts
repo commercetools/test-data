@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TOrderFromCartDraft, TOrderFromCartDraftGraphql } from '../types';
-import * as OrderFromCartDraft from '.';
+import * as OrderFromCartDraft from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import {
   TProductDiscountValueRelativeDraft,
   TProductDiscountValueRelativeDraftGraphql,
 } from '../types';
-import * as ProductDiscountValueRelativeDraft from '.';
+import * as ProductDiscountValueRelativeDraft from './index';
 
 describe('builder', () => {
   it(

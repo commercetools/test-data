@@ -5,7 +5,7 @@ import type {
   TCartDiscountMultiBuyLineItemsTargetDraft,
   TCartDiscountMultiBuyLineItemsTargetDraftGraphql,
 } from '../types';
-import * as CartDiscountMultiBuyLineItemsTargetDraft from '.';
+import * as CartDiscountMultiBuyLineItemsTargetDraft from './index';
 
 describe('builder', () => {
   it(

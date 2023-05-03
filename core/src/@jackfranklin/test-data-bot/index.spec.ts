@@ -1,4 +1,4 @@
-import { build, sequence, fake, oneOf, bool, perBuild } from './';
+import { build, sequence, fake, oneOf, bool, perBuild } from './index';
 
 describe('test-data-bot', () => {
   it('can build an object with no name', () => {

@@ -2,10 +2,10 @@ import {
   LocalizedString,
   KeyReference,
 } from '@commercetools-test-data/commons';
-import * as CartDiscountDraft from '../..';
-import { CartDiscountValueGiftLineItemDraft } from '../../../..';
+import { CartDiscountValueGiftLineItemDraft } from '../../../../index';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const summerFlips = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets

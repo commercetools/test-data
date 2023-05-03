@@ -1,8 +1,8 @@
 import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as ProductDiscountDraft from '../..';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
+import * as ProductDiscountDraft from '../../index';
 
 const discountDresses = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets

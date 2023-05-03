@@ -5,7 +5,7 @@ import {
   TCentPrecisionMoneyDraft,
   TCentPrecisionMoneyDraftGraphql,
 } from '../types';
-import * as CentPrecisionMoneyDraft from '.';
+import * as CentPrecisionMoneyDraft from './index';
 
 describe('builder', () => {
   it(

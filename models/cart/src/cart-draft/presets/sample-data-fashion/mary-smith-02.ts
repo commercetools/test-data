@@ -1,12 +1,15 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
-import { CustomerDraft } from '@commercetools-test-data/customer';
-import type { TCustomerDraft } from '@commercetools-test-data/customer';
+import {
+  CustomerDraft,
+  type TCustomerDraft,
+} from '@commercetools-test-data/customer';
+// import type { TCustomerDraft } from '@commercetools-test-data/customer';
 import { DiscountCodeDraft } from '@commercetools-test-data/discount-code';
 import type { TDiscountCodeDraft } from '@commercetools-test-data/discount-code';
 import { LineItemDraft } from '@commercetools-test-data/line-item';
-import * as CartDraft from '../..';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
+import * as CartDraft from '../../index';
 
 const marySmith = CustomerDraft.presets.sampleDataFashion
   .marySmith()

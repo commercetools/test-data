@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TReviewDraft, TReviewDraftGraphql } from '../types';
-import * as ReviewDraft from '.';
+import * as ReviewDraft from './index';
 
 describe('builder', () => {
   it(

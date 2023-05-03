@@ -5,7 +5,7 @@ import {
   TCartDiscountValueGiftLineItem,
   TCartDiscountValueGiftLineItemGraphql,
 } from './types';
-import * as CartDiscountValueGiftLineItem from '.';
+import * as CartDiscountValueGiftLineItem from './index';
 
 describe('builder', () => {
   it(

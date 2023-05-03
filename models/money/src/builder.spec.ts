@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TMoney, TMoneyGraphql } from './types';
-import * as Money from '.';
+import * as Money from './index';
 
 describe('builder', () => {
   it(

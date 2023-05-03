@@ -5,7 +5,7 @@ import {
   TProductDiscountValueAbsolute,
   TProductDiscountValueAbsoluteGraphql,
 } from './types';
-import * as ProductDiscountValueAbsolute from '.';
+import * as ProductDiscountValueAbsolute from './index';
 
 describe('builder', () => {
   it(

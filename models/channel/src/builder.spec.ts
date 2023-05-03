@@ -4,7 +4,7 @@ import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { roles } from './constants';
 import type { TChannel, TChannelGraphql } from './types';
-import * as Channel from '.';
+import * as Channel from './index';
 
 describe('builder', () => {
   it(
