@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TPrice, TPriceGraphql } from './types';
-import * as Price from '.';
+import * as Price from './index';
 
 describe('builder', () => {
   it(

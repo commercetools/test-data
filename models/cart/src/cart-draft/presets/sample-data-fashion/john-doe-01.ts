@@ -2,9 +2,9 @@ import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import { CustomerDraft } from '@commercetools-test-data/customer';
 import type { TCustomerDraft } from '@commercetools-test-data/customer';
 import { LineItemDraft } from '@commercetools-test-data/line-item';
-import * as CartDraft from '../..';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
+import * as CartDraft from '../../index';
 
 const johnDoe = CustomerDraft.presets.sampleDataFashion
   .johnDoe()

@@ -5,7 +5,7 @@ This package provides the core functions to define the data models.
 ## Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/core
+$ pnpm add -D @commercetools-test-data/core
 ```
 
 ## Creating a new data model

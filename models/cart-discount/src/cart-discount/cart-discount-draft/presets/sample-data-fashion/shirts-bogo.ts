@@ -1,16 +1,16 @@
-import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
   TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import * as CartDiscountDraft from '../..';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
+  CartDiscountValueRelativeDraft,
   selectionMode,
-} from '../../../..';
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const productTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .shirts()

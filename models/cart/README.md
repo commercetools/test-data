@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/projects/carts#cart
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/cart
+$ pnpm add -D @commercetools-test-data/cart
 ```
 
 # Usage

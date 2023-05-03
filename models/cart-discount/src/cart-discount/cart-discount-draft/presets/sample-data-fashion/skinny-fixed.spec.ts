@@ -1,4 +1,7 @@
-import { TCartDiscountDraft, TCartDiscountDraftGraphql } from '../../../types';
+import type {
+  TCartDiscountDraft,
+  TCartDiscountDraftGraphql,
+} from '../../../types';
 import skinnyFixed from './skinny-fixed';
 
 describe('with the preset `skinnyFixed`', () => {

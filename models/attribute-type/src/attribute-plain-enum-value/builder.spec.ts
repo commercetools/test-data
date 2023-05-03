@@ -5,7 +5,7 @@ import {
   TAttributePlainEnumValue,
   TAttributePlainEnumValueGraphql,
 } from './types';
-import * as AttributePlainEnumValue from '.';
+import * as AttributePlainEnumValue from './index';
 
 describe('builder', () => {
   it(

@@ -5,7 +5,7 @@ import {
   TAttributeDefinitionDraft,
   TAttributeDefinitionDraftGraphql,
 } from '../types';
-import * as AttributeDefinitionDraft from '.';
+import * as AttributeDefinitionDraft from './index';
 
 describe('builder', () => {
   it(

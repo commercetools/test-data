@@ -1,9 +1,11 @@
-import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as CartDiscountDraft from '../..';
-import { CartDiscountShippingCostTargetDraft } from '../../../..';
+import {
+  CartDiscountShippingCostTargetDraft,
+  CartDiscountValueRelativeDraft,
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const freeShipping = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets

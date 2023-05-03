@@ -6,8 +6,8 @@ import {
   KeyReference,
   LocalizedString,
 } from '@commercetools-test-data/commons';
-import * as DiscountCodeDraft from '../..';
 import { TDiscountCodeDraftBuilder } from '../../../types';
+import * as DiscountCodeDraft from '../../index';
 
 const cartDiscountDraft = CartDiscountDraft.presets.sampleDataFashion
   .employeeSale()

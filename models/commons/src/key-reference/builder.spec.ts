@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TKeyReference, TKeyReferenceGraphql } from './types';
-import * as KeyReference from '.';
+import * as KeyReference from './index';
 
 describe('builder', () => {
   it(

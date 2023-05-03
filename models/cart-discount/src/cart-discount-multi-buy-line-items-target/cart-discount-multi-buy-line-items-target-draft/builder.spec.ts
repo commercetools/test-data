@@ -1,11 +1,11 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
+import type {
   TCartDiscountMultiBuyLineItemsTargetDraft,
   TCartDiscountMultiBuyLineItemsTargetDraftGraphql,
 } from '../types';
-import * as CartDiscountMultiBuyLineItemsTargetDraft from '.';
+import * as CartDiscountMultiBuyLineItemsTargetDraft from './index';
 
 describe('builder', () => {
   it(

@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TAttributeDraft, TAttributeDraftGraphql } from '../types';
-import * as AttributeDraft from '.';
+import * as AttributeDraft from './index';
 
 describe('builder', () => {
   it(

@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/types#money
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/money
+$ pnpm add -D @commercetools-test-data/money
 ```
 
 # Usage

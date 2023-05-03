@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/types#centprecisionmoney
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/line-item
+$ pnpm add -D @commercetools-test-data/line-item
 ```
 
 # Usage

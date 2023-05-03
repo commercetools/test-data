@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TCentPrecisionMoney, TCentPrecisionMoneyGraphql } from './types';
-import * as CentPrecisionMoney from '.';
+import * as CentPrecisionMoney from './index';
 
 describe('builder', () => {
   it(

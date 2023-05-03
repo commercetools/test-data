@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { selectionMode } from '../constants';
-import { TCartDiscountMultiBuyLineItemsTargetDraft } from '../types';
+import type { TCartDiscountMultiBuyLineItemsTargetDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#multibuylineitemstarget
 

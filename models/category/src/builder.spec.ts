@@ -3,7 +3,7 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCategory, TCategoryGraphql } from './types';
-import * as Category from '.';
+import * as Category from './index';
 
 describe('builder', () => {
   it(

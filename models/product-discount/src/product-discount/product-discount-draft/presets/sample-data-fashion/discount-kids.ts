@@ -1,8 +1,7 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import * as ProductDiscountDraft from '../..';
 import { ProductDiscountValueRelativeDraft } from '../../../../index';
-
 import type { TProductDiscountDraftBuilder } from '../../../types';
+import * as ProductDiscountDraft from '../../index';
 
 const discountKids = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets

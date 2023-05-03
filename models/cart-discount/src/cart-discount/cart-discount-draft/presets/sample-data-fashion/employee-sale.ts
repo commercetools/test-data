@@ -1,13 +1,15 @@
-import { CartDiscountValueRelativeDraft } from '@commercetools-test-data/cart-discount-value-relative';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
-import * as CartDiscountDraft from '../..';
-import { CartDiscountLineItemsTargetDraft } from '../../../..';
+import {
+  CartDiscountLineItemsTargetDraft,
+  CartDiscountValueRelativeDraft,
+} from '../../../../index';
 import { stackingMode } from '../../../constants';
-import { TCartDiscountDraftBuilder } from '../../../types';
+import type { TCartDiscountDraftBuilder } from '../../../types';
+import * as CartDiscountDraft from '../../index';
 
 const customerGroupDraft = CustomerGroupDraft.presets.sampleDataFashion
   .employee()

@@ -7,7 +7,7 @@ https://docs.commercetools.com/api/types
 # Install
 
 ```bash
-$ yarn add -D @commercetools-test-data/commons
+$ pnpm add -D @commercetools-test-data/commons
 ```
 
 # Usage

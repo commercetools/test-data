@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { roles } from '../constants';
 import { TChannelDraft, TChannelDraftGraphql } from '../types';
-import * as ChannelDraft from './';
+import * as ChannelDraft from './index';
 
 describe('builder', () => {
   it(

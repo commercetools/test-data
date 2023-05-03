@@ -1,6 +1,6 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
-import * as CustomerDraft from '../../';
 import { TCustomerDraftBuilder } from '../../../types';
+import * as CustomerDraft from '../../index';
 
 const marySmith = (): TCustomerDraftBuilder =>
   CustomerDraft.presets

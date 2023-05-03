@@ -1,4 +1,7 @@
-import { TCartDiscountDraft, TCartDiscountDraftGraphql } from '../../../types';
+import type {
+  TCartDiscountDraft,
+  TCartDiscountDraftGraphql,
+} from '../../../types';
 import shirtsBogo from './shirts-bogo';
 
 describe('with the preset `shirtsBogo`', () => {
