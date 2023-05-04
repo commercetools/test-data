@@ -211,9 +211,6 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 4.11.1
         version: link:../customer-group
-      '@commercetools-test-data/money':
-        specifier: 4.11.1
-        version: link:../money
       '@commercetools-test-data/product-type':
         specifier: 4.11.1
         version: link:../product-type
@@ -313,9 +310,6 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/money':
-        specifier: 4.11.1
-        version: link:../money
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -430,39 +424,12 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/money':
-        specifier: 4.11.1
-        version: link:../money
       '@commercetools-test-data/product-variant':
         specifier: 4.11.1
         version: link:../product-variant
       '@commercetools-test-data/tax-rate':
         specifier: 4.11.1
         version: 4.11.1
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/money:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -565,9 +532,6 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/money':
-        specifier: 4.11.1
-        version: link:../money
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils

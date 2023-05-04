@@ -1,11 +1,10 @@
-import { Reference } from '@commercetools-test-data/commons';
+import { Money, Reference } from '@commercetools-test-data/commons';
 import {
   fake,
   Generator,
   oneOf,
   sequence,
 } from '@commercetools-test-data/core';
-import * as Money from '@commercetools-test-data/money';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode } from '../constants';
 import { TLineItemDraft } from '../types';

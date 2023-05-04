@@ -1,4 +1,4 @@
-import * as Money from '@commercetools-test-data/money';
+import * as Money from '../../../money';
 import PriceDraft from '../builder';
 
 const withValue = ({ currency = 'USD' } = {}) =>

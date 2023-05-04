@@ -53,6 +53,14 @@ const name = LocalizedString.random().build<TLocalizedString>();
 const emptyName = LocalizedString.presets.empty().build<TLocalizedString>();
 ```
 
+## `Money`
+
+```ts
+import { Money, type TMoney } from '@commercetools-test-data/money';
+
+const Money = Money.random().build<TMoney>();
+```
+
 ## `Price`
 
 ```ts
