@@ -1,8 +1,8 @@
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
 import {
-  Reference,
   Address,
+  CentPrecisionMoney,
   ClientLogging,
+  Reference,
 } from '@commercetools-test-data/commons';
 import {
   fake,

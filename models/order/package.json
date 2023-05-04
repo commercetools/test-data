@@ -23,7 +23,6 @@
     "@commercetools-test-data/core": "4.11.1",
     "@commercetools-test-data/utils": "4.11.1",
     "@commercetools-test-data/line-item": "4.11.1",
-    "@commercetools-test-data/cent-precision-money": "4.11.1",
     "@commercetools-test-data/customer-group": "4.11.1",
     "@commercetools-test-data/cart": "4.11.1",
     "@commercetools-test-data/cart-discount": "4.11.1",

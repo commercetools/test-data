@@ -26,6 +26,23 @@ const address = Address.random().build<TAddress>();
 const addressDraft = AddressDraft.random().build<TAddressDraft>();
 ```
 
+# CentPrecisionMoney
+
+```ts
+import {
+  CentPrecisionMoney,
+  CentPrecisionMoneyDraft,
+  type TCentPrecisionMoney,
+  type TCentPrecisionMoneyDraft,
+} from '@commercetools-test-data/cent-precision-money';
+import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
+
+const centPrecisionMoney =
+  CentPrecisionMoney.random().build<TCentPrecisionMoney>();
+const centPrecisionMoneyDraft =
+  CentPrecisionMoneyDraft.random().build<TCentPrecisionMoneyDraft>();
+```
+
 ## `KeyReference`
 
 ```ts

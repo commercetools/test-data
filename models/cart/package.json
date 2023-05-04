@@ -25,7 +25,6 @@
     "@commercetools-test-data/discount-code": "4.11.1",
     "@commercetools-test-data/utils": "4.11.1",
     "@commercetools-test-data/line-item": "4.11.1",
-    "@commercetools-test-data/cent-precision-money": "4.11.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }

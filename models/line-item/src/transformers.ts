@@ -1,8 +1,8 @@
 import {
   LocalizedString,
+  Reference,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
-import { Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TLineItem, TLineItemGraphql, TLineItemRest } from './types';
 

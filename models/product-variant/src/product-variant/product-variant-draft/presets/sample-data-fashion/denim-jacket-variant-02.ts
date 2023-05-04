@@ -1,6 +1,8 @@
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
-import { PriceDraft } from '@commercetools-test-data/commons';
-import { AttributeDraft } from '../../../../attribute/index';
+import {
+  CentPrecisionMoney,
+  PriceDraft,
+} from '@commercetools-test-data/commons';
+import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
 import { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
