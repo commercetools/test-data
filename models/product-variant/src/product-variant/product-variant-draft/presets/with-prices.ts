@@ -1,4 +1,4 @@
-import { PriceDraft } from '@commercetools-test-data/price';
+import { PriceDraft } from '@commercetools-test-data/commons';
 import ProductVariantDraft from '../builder';
 
 const withPrices = () =>

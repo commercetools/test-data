@@ -1,9 +1,9 @@
 import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
-import { PriceDraft } from '@commercetools-test-data/price';
-import * as ProductVariantDraft from '../..';
-import { AttributeDraft } from '../../../../attribute/';
+import { PriceDraft } from '@commercetools-test-data/commons';
+import { AttributeDraft } from '../../../../attribute/index';
 import * as Image from '../../../../image';
 import { TProductVariantDraftBuilder } from '../../../types';
+import * as ProductVariantDraft from '../../index';
 
 const summerDressVariant02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets

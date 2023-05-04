@@ -57,7 +57,7 @@ importers:
         version: 8.0.3
       jest:
         specifier: 29.5.0
-        version: 29.5.0(@types/node@18.15.11)
+        version: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
       jest-fail-on-console:
         specifier: 3.1.1
         version: 3.1.1
@@ -307,9 +307,18 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
+      '@commercetools-test-data/cent-precision-money':
+        specifier: 4.11.1
+        version: link:../cent-precision-money
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
+      '@commercetools-test-data/money':
+        specifier: 4.11.1
+        version: link:../money
+      '@commercetools-test-data/utils':
+        specifier: 4.11.1
+        version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^4.0.0
         version: 4.5.0
@@ -424,9 +433,6 @@ importers:
       '@commercetools-test-data/money':
         specifier: 4.11.1
         version: link:../money
-      '@commercetools-test-data/price':
-        specifier: 4.11.1
-        version: link:../price
       '@commercetools-test-data/product-variant':
         specifier: 4.11.1
         version: link:../product-variant
@@ -496,36 +502,6 @@ importers:
       '@commercetools-test-data/line-item':
         specifier: 4.11.1
         version: link:../line-item
-      '@commercetools-test-data/utils':
-        specifier: 4.11.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.0.0
-        version: 4.5.0
-      '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
-
-  models/price:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/cent-precision-money':
-        specifier: 4.11.1
-        version: link:../cent-precision-money
-      '@commercetools-test-data/commons':
-        specifier: 4.11.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 4.11.1
-        version: link:../../core
-      '@commercetools-test-data/money':
-        specifier: 4.11.1
-        version: link:../money
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -652,9 +628,6 @@ importers:
       '@commercetools-test-data/core':
         specifier: 4.11.1
         version: link:../../core
-      '@commercetools-test-data/price':
-        specifier: 4.11.1
-        version: link:../price
       '@commercetools-test-data/utils':
         specifier: 4.11.1
         version: link:../../utils
@@ -2911,7 +2884,7 @@ packages:
       slash: 3.0.0
     dev: false
 
-  /@jest/core@29.5.0:
+  /@jest/core@29.5.0(ts-node@10.9.1):
     resolution: {integrity: sha512-28UzQc7ulUrOQw1IsN/kv1QES3q2kkbl/wGslyhAclqZ/8cMdB5M68BffkIdSJgKBUt50d3hbwJ92XESlE7LiQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -2932,7 +2905,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.10
       jest-changed-files: 29.5.0
-      jest-config: 29.5.0(@types/node@18.15.11)
+      jest-config: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
       jest-haste-map: 29.5.0
       jest-message-util: 29.5.0
       jest-regex-util: 29.4.3
@@ -5063,7 +5036,7 @@ packages:
       '@typescript-eslint/eslint-plugin': 5.57.1(@typescript-eslint/parser@5.57.1)(eslint@8.37.0)(typescript@4.9.5)
       '@typescript-eslint/utils': 5.57.1(eslint@8.37.0)(typescript@4.9.5)
       eslint: 8.37.0
-      jest: 29.5.0(@types/node@18.15.11)
+      jest: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6260,7 +6233,7 @@ packages:
       - supports-color
     dev: false
 
-  /jest-cli@29.5.0(@types/node@18.15.11):
+  /jest-cli@29.5.0(@types/node@18.15.11)(ts-node@10.9.1):
     resolution: {integrity: sha512-L1KcP1l4HtfwdxXNFCL5bmUbLQiKrakMUriBEcc1Vfz6gx31ORKdreuWvmQVBit+1ss9NNR3yxjwfwzZNdQXJw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -6270,14 +6243,14 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 29.5.0
+      '@jest/core': 29.5.0(ts-node@10.9.1)
       '@jest/test-result': 29.5.0
       '@jest/types': 29.5.0
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.10
       import-local: 3.1.0
-      jest-config: 29.5.0(@types/node@18.15.11)
+      jest-config: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
       jest-util: 29.5.0
       jest-validate: 29.5.0
       prompts: 2.4.2
@@ -6288,7 +6261,7 @@ packages:
       - ts-node
     dev: false
 
-  /jest-config@29.5.0(@types/node@18.15.11):
+  /jest-config@29.5.0(@types/node@18.15.11)(ts-node@10.9.1):
     resolution: {integrity: sha512-kvDUKBnNJPNBmFFOhDbm59iu1Fii1Q6SxyhXfvylq3UTHbg6o7j/g8k2dZyXWLvfdKB1vAPxNZnMgtKJcmu3kA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -6323,6 +6296,7 @@ packages:
       pretty-format: 29.5.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
+      ts-node: 10.9.1(@types/node@18.15.11)(typescript@4.9.5)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -6493,7 +6467,7 @@ packages:
       create-jest-runner: 0.6.0
       dot-prop: 5.3.0
       eslint: 8.37.0
-      jest: 29.5.0(@types/node@18.15.11)
+      jest: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
     dev: false
 
   /jest-runner@29.5.0:
@@ -6637,7 +6611,7 @@ packages:
     dependencies:
       ansi-escapes: 6.0.0
       chalk: 5.2.0
-      jest: 29.5.0(@types/node@18.15.11)
+      jest: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
       jest-regex-util: 29.4.3
       jest-watcher: 29.4.3
       slash: 5.0.0
@@ -6700,7 +6674,7 @@ packages:
       supports-color: 8.1.1
     dev: false
 
-  /jest@29.5.0(@types/node@18.15.11):
+  /jest@29.5.0(@types/node@18.15.11)(ts-node@10.9.1):
     resolution: {integrity: sha512-juMg3he2uru1QoXX078zTa7pO85QyB9xajZc6bU+d9yEGwrKX6+vGmJQ3UdVZsvTEUARIdObzH68QItim6OSSQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -6710,10 +6684,10 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 29.5.0
+      '@jest/core': 29.5.0(ts-node@10.9.1)
       '@jest/types': 29.5.0
       import-local: 3.1.0
-      jest-cli: 29.5.0(@types/node@18.15.11)
+      jest-cli: 29.5.0(@types/node@18.15.11)(ts-node@10.9.1)
     transitivePeerDependencies:
       - '@types/node'
       - supports-color

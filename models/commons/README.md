@@ -26,6 +26,19 @@ const address = Address.random().build<TAddress>();
 const addressDraft = AddressDraft.random().build<TAddressDraft>();
 ```
 
+## `KeyReference`
+
+```ts
+import {
+  KeyReference,
+  type TKeyReference,
+} from '@commercetools-test-data/commons';
+
+const productKeyRef = KeyReference.random()
+  .typeId('product')
+  .build<TKeyReference<'product'>>();
+```
+
 ## `LocalizedString`
 
 ```ts
@@ -38,6 +51,20 @@ const name = LocalizedString.random().build<TLocalizedString>();
 
 // Presets
 const emptyName = LocalizedString.presets.empty().build<TLocalizedString>();
+```
+
+## `Price`
+
+```ts
+import {
+  Price,
+  PriceDraft,
+  type TPrice,
+  type TPriceDraft,
+} from '@commercetools-test-data/commons';
+
+const price = Price.random().build<TPrice>();
+const priceDraft = PriceDraft.random().build<TPriceDraft>();
 ```
 
 ## `Reference`
@@ -53,17 +80,4 @@ const productRef = Reference.random()
 const categoryRef = Reference.presets
   .category()
   .build<TReference<'category'>>();
-```
-
-## `KeyReference`
-
-```ts
-import {
-  KeyReference,
-  type TKeyReference,
-} from '@commercetools-test-data/commons';
-
-const productKeyRef = KeyReference.random()
-  .typeId('product')
-  .build<TKeyReference<'product'>>();
 ```

@@ -1,5 +1,4 @@
-import * as PriceDraft from './price-draft';
-export { PriceDraft };
+export * as PriceDraft from './price-draft';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

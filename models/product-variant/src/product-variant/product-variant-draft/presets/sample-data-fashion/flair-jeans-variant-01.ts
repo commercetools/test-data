@@ -1,6 +1,6 @@
-import * as ProductVariantDraft from '../..';
 import { AttributeDraft } from '../../../../attribute/';
 import { TProductVariantDraftBuilder } from '../../../types';
+import * as ProductVariantDraft from '../../index';
 
 const flairJeansVariant01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets.empty().attributes([
