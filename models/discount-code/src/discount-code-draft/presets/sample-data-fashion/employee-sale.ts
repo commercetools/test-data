@@ -1,6 +1,6 @@
 import {
   CartDiscountDraft,
-  TCartDiscountDraft,
+  type TCartDiscountDraft,
 } from '@commercetools-test-data/cart-discount';
 import {
   KeyReference,

@@ -1,4 +1,4 @@
-import { TProductDraft } from '../../../types';
+import type { TProductDraft } from '../../../types';
 import sampleSandals from './sandals';
 
 describe(`with sampleSandals preset`, () => {

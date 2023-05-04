@@ -12,6 +12,15 @@ $ pnpm add -D @commercetools-test-data/commons
 
 # Usage
 
+- [Address](#address)<br>
+- [CentPrecisionMoney](#centprecisionmoney)<br>
+- [ClientLogging](#clientlogging)<br>
+- [KeyReference](#keyreference)<br>
+- [LocalizedString](#localizedstring)<br>
+- [Money](#money)<br>
+- [Price](#price)<br>
+- [Reference](#reference)<br>
+
 ## `Address`
 
 ```ts
@@ -34,13 +43,22 @@ import {
   CentPrecisionMoneyDraft,
   type TCentPrecisionMoney,
   type TCentPrecisionMoneyDraft,
-} from '@commercetools-test-data/cent-precision-money';
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
+} from '@commercetools-test-data/commons';
 
 const centPrecisionMoney =
   CentPrecisionMoney.random().build<TCentPrecisionMoney>();
 const centPrecisionMoneyDraft =
   CentPrecisionMoneyDraft.random().build<TCentPrecisionMoneyDraft>();
+```
+
+# ClientLogging
+
+```ts
+import {
+  ClientLogging,
+  type TClientLogging,
+} from '@commercetools-test-data/commons';
+const clientLogging = ClientLogging.random().build<TClientLogging>();
 ```
 
 ## `KeyReference`

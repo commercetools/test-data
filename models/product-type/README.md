@@ -20,6 +20,5 @@ import type {
 import * as ProductType from '@commercetools-test-data/product-type';
 
 const productType = ProductType.random().build<TProductType>();
-const productTypeDraft =
-  ProductType.ProductTypeDraft.random().build<TProductTypeDraft>();
+const productTypeDraft = ProductTypeDraft.random().build<TProductTypeDraft>();
 ```

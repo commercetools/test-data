@@ -17,5 +17,5 @@ import type { TChannel, TChannelDraft } from '@commercetools-test-data/channel';
 import * as Channel from '@commercetools-test-data/channel';
 
 const channel = Channel.random().build<TChannel>();
-const channelDraft = Channel.ChannelDraft.random().build<TChannelDraft>();
+const channelDraft = ChannelDraft.random().build<TChannelDraft>();
 ```

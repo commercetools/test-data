@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import sandalsVariant02 from './sandals-variant-02';
 
 describe(`with sandalsAU variant preset`, () => {

@@ -1,4 +1,4 @@
-import { TProductDraft } from '../../../types';
+import type { TProductDraft } from '../../../types';
 import anniversaryShirt from './anniversary-shirt';
 
 describe(`with anniversaryShirt preset`, () => {

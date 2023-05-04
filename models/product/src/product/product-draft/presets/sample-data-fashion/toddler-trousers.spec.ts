@@ -1,4 +1,4 @@
-import { TProductDraft } from '../../../types';
+import type { TProductDraft } from '../../../types';
 import toddlerTrousers from './toddler-trousers';
 
 describe(`with toddlerTrousers preset`, () => {

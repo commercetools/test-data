@@ -1,5 +1,4 @@
-import * as ZoneDraft from './zone-draft';
-export { ZoneDraft };
+export * as ZoneDraft from './zone-draft';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

@@ -2,10 +2,9 @@ import {
   CentPrecisionMoney,
   PriceDraft,
 } from '@commercetools-test-data/commons';
-
 import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
-import { TProductVariantDraftBuilder } from '../../../types';
+import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
 const toteBagVariant01 = (): TProductVariantDraftBuilder =>

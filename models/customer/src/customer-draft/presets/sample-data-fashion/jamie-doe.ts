@@ -1,7 +1,9 @@
 import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
-import type { TCustomerGroupDraft } from '@commercetools-test-data/customer-group';
-import { CustomerGroupDraft } from '@commercetools-test-data/customer-group';
-import { TCustomerDraftBuilder } from '../../../types';
+import {
+  CustomerGroupDraft,
+  type TCustomerGroupDraft,
+} from '@commercetools-test-data/customer-group';
+import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
 const customerGroup = CustomerGroupDraft.presets.sampleDataFashion

@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import skinnyJeansVariant01 from './skinny-jeans-variant-01';
 
 describe(`with skinnyJeansVariant01 preset`, () => {

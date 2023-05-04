@@ -20,5 +20,5 @@ import type {
 import * as Customer from '@commercetools-test-data/customer';
 
 const customer = Customer.random().build<TCustomer>();
-const customerDraft = Customer.CustomerDraft.random().build<TCustomerDraft>();
+const customerDraft = CustomerDraft.random().build<TCustomerDraft>();
 ```

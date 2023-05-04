@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import necklaceVariant02 from './necklace-variant-02';
 
 describe(`with necklace variant preset`, () => {

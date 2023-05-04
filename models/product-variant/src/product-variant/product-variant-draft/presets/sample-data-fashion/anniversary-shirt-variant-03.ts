@@ -1,5 +1,5 @@
 import { AttributeDraft } from '../../../../attribute';
-import { TProductVariantDraftBuilder } from '../../../types';
+import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
 // rename master variants to variant01, etc...

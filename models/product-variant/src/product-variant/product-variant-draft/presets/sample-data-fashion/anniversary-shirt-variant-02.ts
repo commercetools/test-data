@@ -1,5 +1,5 @@
 import { AttributeDraft } from '../../../../attribute';
-import { TProductVariantDraftBuilder } from '../../../types';
+import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
 const anniversaryShirtVariant02 = (): TProductVariantDraftBuilder =>

@@ -1,6 +1,8 @@
 import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
-import { CustomerDraft } from '@commercetools-test-data/customer';
-import type { TCustomerDraft } from '@commercetools-test-data/customer';
+import {
+  CustomerDraft,
+  type TCustomerDraft,
+} from '@commercetools-test-data/customer';
 import { LineItemDraft } from '@commercetools-test-data/line-item';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';

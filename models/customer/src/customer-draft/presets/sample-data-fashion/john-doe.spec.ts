@@ -1,4 +1,4 @@
-import { TCustomerDraft, TCustomerDraftGraphql } from '../../../types';
+import type { TCustomerDraft, TCustomerDraftGraphql } from '../../../types';
 import johnDoe from './john-doe';
 
 describe('with the preset `johnDoe`', () => {

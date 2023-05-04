@@ -13,14 +13,11 @@ $ pnpm add -D @commercetools-test-data/attribute-definition
 # Usage
 
 ```ts
-import type {
-  TAttributeDefinition,
-  TAttributeDefinitionDraft,
-} from '@commercetools-test-data/attribute-definition';
-import * as AttributeDefinition from '@commercetools-test-data/attribute-definition';
+import type { TAttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
+import * as AttributeDefinitionDraft from '@commercetools-test-data/attribute-definition';
 
 const attributeDefinition =
   AttributeDefinition.random().build<TAttributeDefinition>();
 const attributeDefinitionDraft =
-  AttributeDefinition.AttributeDefinitionDraft.random().build<TAttributeDefinitionDraft>();
+  AttributeDefinitionDraft.random().build<TAttributeDefinitionDraft>();
 ```

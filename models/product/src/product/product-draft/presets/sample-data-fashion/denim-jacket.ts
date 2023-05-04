@@ -12,7 +12,7 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import * as ProductDraft from '../../../product-draft';
-import { TProductDraftBuilder } from '../../../types';
+import type { TProductDraftBuilder } from '../../../types';
 
 const jacketsProductTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .jackets()

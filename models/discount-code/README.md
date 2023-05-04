@@ -21,5 +21,5 @@ import * as DiscountCode from '@commercetools-test-data/discount-code';
 
 const discountCode = DiscountCode.random().build<TDiscountCode>();
 const discountCodeDraft =
-  DiscountCode.DiscountCodeDraft.random().build<TDiscountCodeDraft>();
+  DiscountCodeDraft.random().build<TDiscountCodeDraft>();
 ```

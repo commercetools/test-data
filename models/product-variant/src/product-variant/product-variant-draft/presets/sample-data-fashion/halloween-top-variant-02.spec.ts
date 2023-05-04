@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import halloweenTopVariant02 from './halloween-top-variant-02';
 
 describe(`with halloweenTopVariant02 preset`, () => {

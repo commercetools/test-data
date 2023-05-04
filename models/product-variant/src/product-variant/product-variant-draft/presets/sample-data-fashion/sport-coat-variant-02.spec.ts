@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import sportCoatVariant02 from './sport-coat-variant-02';
 
 describe(`with sportCoatVariant02 preset`, () => {

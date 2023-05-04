@@ -15,8 +15,12 @@ $ pnpm add -D @commercetools-test-data/product
 ## Product
 
 ```ts
-import type { TProduct, TProductDraft } from '@commercetools-test-data/product';
-import { Product, ProductDraft } from '@commercetools-test-data/product';
+import {
+  Product,
+  ProductDraft,
+  type TProduct,
+  type TProductDraft,
+} from '@commercetools-test-data/product';
 
 const product = Product.random().build<TProduct>();
 const productDraft = ProductDraft.random().build<TProductDraft>();
@@ -25,8 +29,10 @@ const productDraft = ProductDraft.random().build<TProductDraft>();
 ## ProductData
 
 ```ts
-import type { TProductData } from '@commercetools-test-data/product';
-import { ProductData } from '@commercetools-test-data/product';
+import {
+  ProductData,
+  type TProductData,
+} from '@commercetools-test-data/product';
 
 // For REST entities
 const productDataRest = ProductData.random().buildRest<TProductData>();
@@ -38,8 +44,10 @@ const productDataGraphql = ProductData.random().buildGraphql<TProductData>();
 ## ProductCatalogData
 
 ```ts
-import type { TProductCatalogData } from '@commercetools-test-data/product';
-import { ProductCatalogData } from '@commercetools-test-data/product';
+import {
+  ProductCatalogData,
+  type TProductCatalogData,
+} from '@commercetools-test-data/product';
 
 const productCatalogData =
   ProductCatalogData.random().build<TProductCatalogData>();

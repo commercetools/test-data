@@ -21,5 +21,5 @@ import * as Order from '@commercetools-test-data/order';
 
 const order = Order.random().build<TOrder>();
 const orderFromCartDraft =
-  Order.OrderFromCartDraft.random().build<TOrderFromCartDraft>();
+  OrderFromCartDraft.random().build<TOrderFromCartDraft>();
 ```

@@ -1,4 +1,4 @@
-import { TProductDraft } from '../../../types';
+import type { TProductDraft } from '../../../types';
 import necklace from './necklace';
 
 describe(`with necklace preset`, () => {

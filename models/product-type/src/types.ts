@@ -1,8 +1,4 @@
-import {
-  ProductType,
-  ProductTypeDraft,
-  AttributeDefinitionDraft,
-} from '@commercetools/platform-sdk';
+import { ProductType, ProductTypeDraft } from '@commercetools/platform-sdk';
 import {
   TAttributeDefinitionGraphql,
   TAttributeDefinitionDraftGraphql,

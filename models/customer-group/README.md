@@ -21,5 +21,5 @@ import * as CustomerGroup from '@commercetools-test-data/customer-group';
 
 const customerGroup = CustomerGroup.random().build<TCustomerGroup>();
 const customerGroupDraft =
-  CustomerGroup.CustomerGroupDraft.random().build<TCustomerGroupDraft>();
+  CustomerGroupDraft.random().build<TCustomerGroupDraft>();
 ```
