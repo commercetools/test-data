@@ -1,4 +1,5 @@
 export * as LineItemDraft from './line-item-draft';
+export * as LineItem from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

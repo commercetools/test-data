@@ -1,4 +1,5 @@
 export * as ChannelDraft from './channel-draft';
+export * as Channel from '.';
 
 export { default as random } from './builder';
 export * as constants from './constants';

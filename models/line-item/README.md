@@ -13,12 +13,18 @@ $ pnpm add -D @commercetools-test-data/line-item
 # Usage
 
 ```ts
-import type {
-  TLineItem,
-  TLineItemDraft,
+import {
+  LineItem,
+  LineItemDraft,
+  type TLineItem,
+  type TLineItemDraft,
 } from '@commercetools-test-data/line-item';
-import * as LineItem from '@commercetools-test-data/line-item';
 
 const lineItem = LineItem.random().build<TLineItem>();
 const lineItemDraft = LineItemDraft.random().build<TLineItemDraft>();
+
+// Presets
+const emptyLineItemDraft = LineItemDraft.presets
+  .empty()
+  .build<TLineItemDraft>();
 ```

@@ -13,8 +13,18 @@ $ pnpm add -D @commercetools-test-data/category
 ## Usage
 
 ```ts
-import type { TCategory } from '@commercetools-test-data/category';
-import * as Category from '@commercetools-test-data/category';
+import {
+  Category,
+  CategoryDraft,
+  type TCategory,
+  type TCategoryDraft,
+} from '@commercetools-test-data/category';
 
 const category = Category.random().build<TCategory>();
+const categoryDraft = CategoryDraft.random().build<TCategory>();
+
+// Presets
+const emptyCategoryDraft = CategoryDraft.presets
+  .empty()
+  .build<TCategoryDraft>();
 ```

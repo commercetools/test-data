@@ -13,12 +13,18 @@ $ pnpm add -D @commercetools-test-data/product-type
 # Usage
 
 ```ts
-import type {
-  TProductType,
-  TProductTypeDraft,
+import {
+  ProductType,
+  ProductTypeDraft,
+  type TProductType,
+  type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import * as ProductType from '@commercetools-test-data/product-type';
 
 const productType = ProductType.random().build<TProductType>();
 const productTypeDraft = ProductTypeDraft.random().build<TProductTypeDraft>();
+
+// Presets
+const emptyProductTypeDraft = ProductTypeDraft.presets
+  .empty()
+  .build<TProductTypeDraft>();
 ```

@@ -13,11 +13,12 @@ $ pnpm add -D @commercetools-test-data/order
 # Usage
 
 ```ts
-import type {
-  TOrder,
-  TOrderFromCartDraft,
+import {
+  Order,
+  OrderFromCartDraft,
+  type TOrder,
+  type TOrderFromCartDraft,
 } from '@commercetools-test-data/order';
-import * as Order from '@commercetools-test-data/order';
 
 const order = Order.random().build<TOrder>();
 const orderFromCartDraft =

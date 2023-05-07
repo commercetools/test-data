@@ -1,4 +1,5 @@
 export * as OrderFromCartDraft from './order-from-cart-draft';
+export * as Order from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

@@ -1,4 +1,5 @@
 export * as DiscountCodeDraft from './discount-code-draft';
+export * as DiscountCode from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';
