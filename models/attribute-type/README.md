@@ -31,7 +31,6 @@ import {
   type TAttributePlainEnumValue,
   type TAttributePlainEnumValueGraphql,
 } from '@commercetools-test-data/attribute-type';
-import { AttributePlainEnumValue } from '@commercetools-test-data/attribute-type';
 
 const attributePlainEnumValue =
   AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();

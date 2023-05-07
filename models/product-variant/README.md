@@ -15,13 +15,11 @@ $ pnpm add -D @commercetools-test-data/product-variant
 ## ProductVariant
 
 ```ts
-import type {
-  TProductVariant,
-  TProductVariantDraft,
-} from '@commercetools-test-data/product-variant';
 import {
   ProductVariant,
   ProductVariantDraft,
+  type TProductVariant,
+  type TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
 
 const productVariant = ProductVariant.random().build<TProductVariant>();
@@ -32,8 +30,7 @@ const productVariantDraft =
 ## Image
 
 ```ts
-import type { TImage } from '@commercetools-test-data/product-variant';
-import { Image } from '@commercetools-test-data/product-variant';
+import { Image, type TImage } from '@commercetools-test-data/product-variant';
 
 const image = Image.random().build<TImage>();
 ```
@@ -41,13 +38,11 @@ const image = Image.random().build<TImage>();
 ## Attribute
 
 ```ts
-import type {
-  TAttribute,
-  TAttributeDraft,
-} from '@commercetools-test-data/product-variant';
 import {
   Attribute,
   AttributeDraft,
+  type TAttribute,
+  type TAttributeDraft,
 } from '@commercetools-test-data/product-variant';
 
 const attribute = Attribute.random().build<TAttribute>();

@@ -613,6 +613,9 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
+      '@commercetools-test-data/attribute-type':
+        specifier: 4.11.1
+        version: link:../attribute-type
       '@commercetools-test-data/commons':
         specifier: 4.11.1
         version: link:../commons
