@@ -1,5 +1,50 @@
 # @commercetools-test-data/product-discount
 
+## 5.0.0
+
+### Major Changes
+
+- [#248](https://github.com/commercetools/test-data/pull/248) [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **Price**, **Money**, and **CentPrecisionMoney** have been colocated under package `@commercetools-test-data/commons`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+
+  - `import { CentPrecisionMoney } from '@commercetools-test-data/commons’` <br>
+  - `import { PriceDraft } from '@commercetools-test-data/commons'`<br><br>
+
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:<br>
+
+  - `@commercetools-test-data/price` <br>
+  - `@commercetools-test-data/money` <br>
+  - `@commercetools-test-data/cent-precision-money` <br>
+
+- [#240](https://github.com/commercetools/test-data/pull/240) [`c3dfaea`](https://github.com/commercetools/test-data/commit/c3dfaea05af98e4027cf53358b5584bd00350fbf) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **ProductDiscount**, **ProductDiscountValueAbsolute**, **ProductDiscountValueExternal** and **ProductDiscountValueRelative** have been colocated under package `@commercetools-test-data/product-discount`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+
+  - `import { ProductDiscountValueRelativeDraft } from '@commercetools-test-data/product-discount’` <br>
+  - `import { ProductDiscount } from '@commercetools-test-data/product-discount'`<br><br>
+
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:<br>
+
+  - `@commercetools-test-data/product-discount-value-absolute` <br>
+  - `@commercetools-test-data/product-discount-value-relative` <br>
+  - `@commercetools-test-data/product-discount-value-external`
+
+### Minor Changes
+
+- [#236](https://github.com/commercetools/test-data/pull/236) [`fe2ac45`](https://github.com/commercetools/test-data/commit/fe2ac4576a3394a56c7d67a4bc82691a5b3043a6) Thanks [@jaikamat](https://github.com/jaikamat)! - Create product discount presets
+
+### Patch Changes
+
+- Updated dependencies [[`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6), [`29bbb57`](https://github.com/commercetools/test-data/commit/29bbb57115d83ea06ed378fc3bea4e4ff6cfbfbb), [`7631166`](https://github.com/commercetools/test-data/commit/7631166007d4967f720f713f05d073f2da398075), [`b62d936`](https://github.com/commercetools/test-data/commit/b62d936dd26175986a66cbbfa0bd38f4008ddcad)]:
+  - @commercetools-test-data/commons@5.0.0
+  - @commercetools-test-data/utils@5.0.0
+  - @commercetools-test-data/core@5.0.0
+
 ## 4.11.1
 
 ### Patch Changes
