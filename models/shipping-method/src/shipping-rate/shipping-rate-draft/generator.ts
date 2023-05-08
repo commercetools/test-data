@@ -1,5 +1,5 @@
+import { Money } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import * as Money from '@commercetools-test-data/money';
 import { TShippingRateDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#money

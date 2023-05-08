@@ -16,6 +16,7 @@ export type TShippingMethodDraftGraphql = TShippingMethodDraft & {
 
 export type TShippingMethodBuilder = TBuilder<TShippingMethod>;
 export type TShippingMethodDraftBuilder = TBuilder<TShippingMethodDraft>;
+
 export type TCreateShippingMethodBuilder = () => TShippingMethodBuilder;
 export type TCreateShippingMethodDraftBuilder =
   () => TShippingMethodDraftBuilder;

@@ -3,13 +3,13 @@ import type { TShippingRate, TShippingRateGraphql } from './types';
 
 const transformers = {
   default: Transformer<TShippingRate, TShippingRate>('default', {
-    buildFields: [],
+    buildFields: ['price', 'freeAbove'],
   }),
   rest: Transformer<TShippingRate, TShippingRate>('rest', {
-    buildFields: [],
+    buildFields: ['price', 'freeAbove'],
   }),
   graphql: Transformer<TShippingRate, TShippingRateGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['price', 'freeAbove'],
     addFields: () => ({
       __typename: 'ShippingRate',
     }),

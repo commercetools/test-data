@@ -14,5 +14,6 @@ export type TZoneRateDraftGraphql = TZoneRateDraft & {
 
 export type TZoneRateBuilder = TBuilder<TZoneRate>;
 export type TZoneRateDraftBuilder = TBuilder<TZoneRateDraft>;
+
 export type TCreateZoneRateBuilder = () => TZoneRateBuilder;
 export type TCreateZoneRateDraftBuilder = () => TZoneRateDraftBuilder;

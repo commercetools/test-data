@@ -3,13 +3,13 @@ import type { TZoneRate, TZoneRateGraphql } from './types';
 
 const transformers = {
   default: Transformer<TZoneRate, TZoneRate>('default', {
-    buildFields: [],
+    buildFields: ['zone', 'shippingRates'],
   }),
   rest: Transformer<TZoneRate, TZoneRate>('rest', {
-    buildFields: [],
+    buildFields: ['zone', 'shippingRates'],
   }),
   graphql: Transformer<TZoneRate, TZoneRateGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['zone', 'shippingRates'],
     addFields: () => ({
       __typename: 'ZoneRate',
     }),

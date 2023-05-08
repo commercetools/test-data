@@ -22,6 +22,7 @@
     "@commercetools-test-data/commons": "4.11.1",
     "@commercetools-test-data/core": "4.11.1",
     "@commercetools-test-data/tax-category": "4.11.1",
+    "@commercetools-test-data/zone": "4.11.1",
     "@commercetools-test-data/utils": "4.11.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
