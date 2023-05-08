@@ -1,6 +1,5 @@
 ---
 '@commercetools-test-data/attribute-definition': major
-'@commercetools-test-data/cent-precision-money': major
 '@commercetools-test-data/attribute-type': major
 '@commercetools-test-data/customer-group': major
 '@commercetools-test-data/cart-discount': major
@@ -13,16 +12,14 @@
 '@commercetools-test-data/channel': major
 '@commercetools-test-data/commons': major
 '@commercetools-test-data/review': major
-'@commercetools-test-data/money': major
 '@commercetools-test-data/order': major
-'@commercetools-test-data/price': major
 '@commercetools-test-data/cart': major
 '@commercetools-test-data/zone': major
 '@commercetools-test-data/utils': major
 '@commercetools-test-data/core': major
 ---
 
-To better align with commercetools’ grouped representations and workflows, models for **CartDiscount**, **CartDiscountLineItemsTarget**,**CartDiscountMultiBuyLineItemsTarget**  
+To better align with commercetools’ grouped representations and workflows, models for **CartDiscount**, **CartDiscountLineItemsTarget**,**CartDiscountMultiBuyLineItemsTarget**
 **CartDiscountShippingCostTarget**
 **CartDiscountValueAbsolute**
 **CartDiscountValueFixed**
