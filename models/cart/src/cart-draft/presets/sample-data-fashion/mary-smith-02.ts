@@ -3,9 +3,10 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
-// import type { TCustomerDraft } from '@commercetools-test-data/customer';
-import { DiscountCodeDraft } from '@commercetools-test-data/discount-code';
-import type { TDiscountCodeDraft } from '@commercetools-test-data/discount-code';
+import {
+  DiscountCodeDraft,
+  type TDiscountCodeDraft,
+} from '@commercetools-test-data/discount-code';
 import { LineItemDraft } from '@commercetools-test-data/line-item';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';

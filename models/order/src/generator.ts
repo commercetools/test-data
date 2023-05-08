@@ -1,7 +1,10 @@
 import * as Cart from '@commercetools-test-data/cart';
 import { CartDiscount } from '@commercetools-test-data/cart-discount';
-import * as CentPrecisionMoney from '@commercetools-test-data/cent-precision-money';
-import { ClientLogging, Address } from '@commercetools-test-data/commons';
+import {
+  CentPrecisionMoney,
+  ClientLogging,
+  Address,
+} from '@commercetools-test-data/commons';
 import {
   Generator,
   fake,

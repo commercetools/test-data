@@ -1,4 +1,4 @@
-import { TProductDiscountDraftBuilder } from '../../types';
+import type { TProductDiscountDraftBuilder } from '../../types';
 import ProductDiscountDraft from '../builder';
 
 const empty = (): TProductDiscountDraftBuilder =>

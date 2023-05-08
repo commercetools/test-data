@@ -2,7 +2,7 @@ import {
   LocalizedString,
   KeyReference,
 } from '@commercetools-test-data/commons';
-import { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
 import clothingKids from './clothing-kids';
 

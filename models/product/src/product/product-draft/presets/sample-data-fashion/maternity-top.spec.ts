@@ -1,4 +1,4 @@
-import { TProductDraft } from '../../../types';
+import type { TProductDraft } from '../../../types';
 import maternityTop from './maternity-top';
 
 describe(`with maternityTop preset`, () => {

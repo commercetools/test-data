@@ -1,5 +1,5 @@
-import * as AttributeDefinitionDraft from './attribute-definition-draft';
-export { AttributeDefinitionDraft };
+export * as AttributeDefinitionDraft from './attribute-definition-draft';
+export * as AttributeDefinition from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

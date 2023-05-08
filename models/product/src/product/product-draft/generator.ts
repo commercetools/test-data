@@ -6,7 +6,7 @@ import {
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import { productPriceMode } from '../constants';
-import { TProductDraft } from '../types';
+import type { TProductDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/products#productdraft
 

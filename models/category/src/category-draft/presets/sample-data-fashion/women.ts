@@ -1,5 +1,5 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import { TCategoryDraftBuilder } from '../../../types';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const women = (): TCategoryDraftBuilder =>

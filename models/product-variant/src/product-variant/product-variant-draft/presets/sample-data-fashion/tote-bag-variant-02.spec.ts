@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import toteBagVariant02 from './tote-bag-variant-02';
 
 describe(`with toteBagVariant02 preset`, () => {

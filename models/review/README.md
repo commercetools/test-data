@@ -13,9 +13,13 @@ $ pnpm add -D @commercetools-test-data/review
 # Usage
 
 ```ts
-import type { TReview, TReviewDraft } from '@commercetools-test-data/review';
-import * as Review from '@commercetools-test-data/review';
+import {
+  Review,
+  ReviewDraft,
+  type TReview,
+  type TReviewDraft,
+} from '@commercetools-test-data/review';
 
 const review = Review.random().build<TReview>();
-const reviewDraft = Review.ReviewDraft.random().build<TReviewDraft>();
+const reviewDraft = ReviewDraft.random().build<TReviewDraft>();
 ```

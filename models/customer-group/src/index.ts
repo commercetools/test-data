@@ -1,5 +1,5 @@
-import * as CustomerGroupDraft from './customer-group-draft';
-export { CustomerGroupDraft };
+export * as CustomerGroupDraft from './customer-group-draft';
+export * as CustomerGroup from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

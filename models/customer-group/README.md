@@ -13,13 +13,14 @@ $ pnpm add -D @commercetools-test-data/customer-group
 # Usage
 
 ```ts
-import type {
-  TCustomerGroup,
-  TCustomerGroupDraft,
+import {
+  CustomerGroup,
+  CustomerGroupDraft,
+  type TCustomerGroup,
+  type TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
-import * as CustomerGroup from '@commercetools-test-data/customer-group';
 
 const customerGroup = CustomerGroup.random().build<TCustomerGroup>();
 const customerGroupDraft =
-  CustomerGroup.CustomerGroupDraft.random().build<TCustomerGroupDraft>();
+  CustomerGroupDraft.random().build<TCustomerGroupDraft>();
 ```

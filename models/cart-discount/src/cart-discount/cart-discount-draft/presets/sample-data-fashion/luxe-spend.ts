@@ -1,5 +1,7 @@
-import { CentPrecisionMoneyDraft } from '@commercetools-test-data/cent-precision-money';
-import { LocalizedString } from '@commercetools-test-data/commons';
+import {
+  CentPrecisionMoneyDraft,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,

@@ -20,6 +20,7 @@
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/core": "4.11.1",
+    "@commercetools-test-data/utils": "4.11.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0",
     "@types/lodash": "^4.14.182",

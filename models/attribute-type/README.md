@@ -15,8 +15,10 @@ $ pnpm add -D @commercetools-test-data/attribute-type
 ## `AttributeType`
 
 ```ts
-import type { TAttributeType } from '@commercetools-test-data/attribute-type';
-import { AttributeType } from '@commercetools-test-data/attribute-type';
+import {
+  AttributeType,
+  type TAttributeType,
+} from '@commercetools-test-data/attribute-type';
 
 const attributeType = AttributeType.random().build<TAttributeType>();
 ```
@@ -24,11 +26,11 @@ const attributeType = AttributeType.random().build<TAttributeType>();
 ## `AttributePlainEnumValue`
 
 ```ts
-import type {
-  TAttributePlainEnumValue,
-  TAttributePlainEnumValueGraphql,
+import {
+  AttributePlainEnumValue,
+  type TAttributePlainEnumValue,
+  type TAttributePlainEnumValueGraphql,
 } from '@commercetools-test-data/attribute-type';
-import { AttributePlainEnumValue } from '@commercetools-test-data/attribute-type';
 
 const attributePlainEnumValue =
   AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();

@@ -1,5 +1,5 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomer, TCustomerGraphql } from './types';
+import type { TCustomer, TCustomerGraphql } from './types';
 import * as Customer from './index';
 
 describe('builder', () => {

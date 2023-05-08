@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import flairJeansVariant01 from './flair-jeans-variant-01';
 
 describe(`with flairJeansVariant01 preset`, () => {

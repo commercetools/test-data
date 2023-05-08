@@ -2,13 +2,17 @@ import {
   KeyReference,
   LocalizedString,
 } from '@commercetools-test-data/commons';
-import { ProductTypeDraft } from '@commercetools-test-data/product-type';
-import type { TProductTypeDraft } from '@commercetools-test-data/product-type';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
 import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
-import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
-import type { TTaxCategoryDraft } from '@commercetools-test-data/tax-category';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
 import * as ProductDraft from '../../../product-draft';
-import { TProductDraftBuilder } from '../../../types';
+import type { TProductDraftBuilder } from '../../../types';
 
 const shirtProductTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .shirts()

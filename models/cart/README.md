@@ -13,9 +13,16 @@ $ pnpm add -D @commercetools-test-data/cart
 # Usage
 
 ```ts
-import type { TCart, TCartDraft } from '@commercetools-test-data/cart';
-import * as Cart from '@commercetools-test-data/cart';
+import {
+  Cart,
+  CartDraft,
+  type TCart,
+  type TCartDraft,
+} from '@commercetools-test-data/cart';
 
 const cart = Cart.random().build<TCart>();
-const cartDraft = Cart.CartDraft.random().build<TCartDraft>();
+const cartDraft = CartDraft.random().build<TCartDraft>();
+
+// Presets
+const emptyCartDraft = CartDraft.presets.empty().build<TCartDraft>();
 ```

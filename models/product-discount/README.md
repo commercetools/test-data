@@ -10,16 +10,22 @@ https://docs.commercetools.com/api/projects/productDiscounts#productdiscount
 $ pnpm add -D @commercetools-test-data/product-discount
 ```
 
+- [ProductDiscount](#productdiscount)<br>
+- [ProductDiscountValueAbsolute](#productdiscountvalueabsolute)<br>
+- [ProductDiscountValueExternal](#productdiscountvalueexternal)<br>
+- [ProductDiscountValueRelative](#productdiscountvaluerelative)<br>
+
 # Usage
 
 ## `ProductDiscount`
 
 ```ts
-import type {
-  TProductDiscount,
-  TProductDiscountDraft,
+import {
+  ProductDiscount,
+  ProductDiscountDraft,
+  type TProductDiscount,
+  type TProductDiscountDraft,
 } from '@commercetools-test-data/product-discount';
-import { ProductDiscount } from '@commercetools-test-data/product-discount';
 
 const productDiscount = ProductDiscount.random().build<TProductDiscount>();
 
@@ -30,11 +36,12 @@ const productDiscountDraft =
 ## `ProductDiscountValueAbsolute`
 
 ```ts
-import type {
-  TProductDiscountValueAbsolute,
-  TProductDiscountValueAbsoluteDraft,
+import {
+  ProductDiscountValueAbsolute,
+  ProductDiscountValueAbsoluteDraft
+  type TProductDiscountValueAbsolute,
+  type TProductDiscountValueAbsoluteDraft,
 } from '@commercetools-test-data/product-discount';
-import { ProductDiscountValueAbsolute } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueAbsolute =
   ProductDiscountValueAbsolute.random().build<TProductDiscountValueAbsolute>();
@@ -46,27 +53,12 @@ const productDiscountValueAbsoluteDraft =
 ## `ProductDiscountValueExternal`
 
 ```ts
-import type {
-  TProductDiscountValueExternal,
-  TProductDiscountValueExternalDraft,
+import {
+  ProductDiscountValueExternal,
+  ProductDiscountValueExternalDraft,
+  type TProductDiscountValueExternal,
+  type TProductDiscountValueExternalDraft,
 } from '@commercetools-test-data/product-discount';
-import { ProductDiscountValueExternal } from '@commercetools-test-data/product-discount';
-
-const productDiscountValueExternal =
-  ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
-
-const productDiscountValueExternalDraft =
-  ProductDiscountValueExternalDraft.random().build<TProductDiscountValueExternalDraft>();
-```
-
-## `ProductDiscountValueExternal`
-
-```ts
-import type {
-  TProductDiscountValueExternal,
-  TProductDiscountValueExternalDraft,
-} from '@commercetools-test-data/product-discount';
-import { ProductDiscountValueExternal } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueExternal =
   ProductDiscountValueExternal.random().build<TProductDiscountValueExternal>();
@@ -78,11 +70,12 @@ const productDiscountValueExternalDraft =
 ## `ProductDiscountValueRelative`
 
 ```ts
-import type {
-  TProductDiscountValueRelative,
-  TProductDiscountValueRelativeDraft,
+import {
+  ProductDiscountValueRelative,
+  ProductDiscountValueRelativeDraft,
+  type TProductDiscountValueRelative,
+  type TProductDiscountValueRelativeDraft,
 } from '@commercetools-test-data/product-discount';
-import { ProductDiscountValueRelative } from '@commercetools-test-data/product-discount';
 
 const productDiscountValueRelative =
   ProductDiscountValueRelative.random().build<TProductDiscountValueRelative>();

@@ -14,12 +14,18 @@ $ pnpm add -D @commercetools-test-data/discount-code
 
 ```ts
 import type {
-  TDiscountCode,
-  TDiscountCodeDraft,
+  DiscountCode,
+  DiscountCodeDraft,
+  type TDiscountCode,
+  type TDiscountCodeDraft,
 } from '@commercetools-test-data/discount-code';
-import * as DiscountCode from '@commercetools-test-data/discount-code';
 
 const discountCode = DiscountCode.random().build<TDiscountCode>();
 const discountCodeDraft =
-  DiscountCode.DiscountCodeDraft.random().build<TDiscountCodeDraft>();
+  DiscountCodeDraft.random().build<TDiscountCodeDraft>();
+
+// Presets
+const emptyDiscountCodeDraft = DiscountCodeDraft.presets
+  .empty()
+  .build<TDiscountCodeDraft>();
 ```

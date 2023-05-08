@@ -1,6 +1,7 @@
-import * as DiscountCodeDraft from './discount-code-draft';
-export { DiscountCodeDraft };
+export * as DiscountCodeDraft from './discount-code-draft';
+export * as DiscountCode from '.';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';
+export { default as draftPresets } from './discount-code-draft/presets';
 export * from './types';
