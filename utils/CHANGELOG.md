@@ -1,5 +1,31 @@
 # @commercetools-test-data/utils
 
+## 5.0.0
+
+### Major Changes
+
+- [#247](https://github.com/commercetools/test-data/pull/247) [`b62d936`](https://github.com/commercetools/test-data/commit/b62d936dd26175986a66cbbfa0bd38f4008ddcad) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **CartDiscount**, **CartDiscountLineItemsTarget**,**CartDiscountMultiBuyLineItemsTarget**
+  **CartDiscountShippingCostTarget**
+  **CartDiscountValueAbsolute**
+  **CartDiscountValueFixed**
+  **CartDiscountValueGiftLineItem** &
+  **CartDiscountValueRelative** have been colocated under package `@commercetools-test-data/cart-discount`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+  `import { CartDiscountValueGiftLineItem } from '@commercetools-test-data/cart-discount’`<br>
+  `import { CartDiscountDraft } from '@commercetools-test-data/cart-discount'`<br><br>
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:
+
+  - `@commercetools-test-data/cart-discount-line-items-target`
+  - `@commercetools-test-data/cart-discount-multi-buy-line-items-target`
+  - `@commercetools-test-data/cart-discount-shipping-cost-target`
+  - `@commercetools-test-data/cart-discount-value-absolute`
+  - `@commercetools-test-data/cart-discount-value-fixed`
+  - `@commercetools-test-data/cart-discount-value-gift-line-item`
+  - `@commercetools-test-data/cart-discount-value-relative`
+
 ## 4.11.1
 
 ## 4.11.0

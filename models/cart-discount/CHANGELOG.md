@@ -1,5 +1,62 @@
 # @commercetools-test-data/cart-discount
 
+## 5.0.0
+
+### Major Changes
+
+- [#248](https://github.com/commercetools/test-data/pull/248) [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **Price**, **Money**, and **CentPrecisionMoney** have been colocated under package `@commercetools-test-data/commons`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+
+  - `import { CentPrecisionMoney } from '@commercetools-test-data/commons’` <br>
+  - `import { PriceDraft } from '@commercetools-test-data/commons'`<br><br>
+
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:<br>
+
+  - `@commercetools-test-data/price` <br>
+  - `@commercetools-test-data/money` <br>
+  - `@commercetools-test-data/cent-precision-money` <br>
+
+- [#247](https://github.com/commercetools/test-data/pull/247) [`b62d936`](https://github.com/commercetools/test-data/commit/b62d936dd26175986a66cbbfa0bd38f4008ddcad) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **CartDiscount**, **CartDiscountLineItemsTarget**,**CartDiscountMultiBuyLineItemsTarget**
+  **CartDiscountShippingCostTarget**
+  **CartDiscountValueAbsolute**
+  **CartDiscountValueFixed**
+  **CartDiscountValueGiftLineItem** &
+  **CartDiscountValueRelative** have been colocated under package `@commercetools-test-data/cart-discount`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+  `import { CartDiscountValueGiftLineItem } from '@commercetools-test-data/cart-discount’`<br>
+  `import { CartDiscountDraft } from '@commercetools-test-data/cart-discount'`<br><br>
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:
+
+  - `@commercetools-test-data/cart-discount-line-items-target`
+  - `@commercetools-test-data/cart-discount-multi-buy-line-items-target`
+  - `@commercetools-test-data/cart-discount-shipping-cost-target`
+  - `@commercetools-test-data/cart-discount-value-absolute`
+  - `@commercetools-test-data/cart-discount-value-fixed`
+  - `@commercetools-test-data/cart-discount-value-gift-line-item`
+  - `@commercetools-test-data/cart-discount-value-relative`
+
+### Minor Changes
+
+- [#234](https://github.com/commercetools/test-data/pull/234) [`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1) Thanks [@jaikamat](https://github.com/jaikamat)! - Create cart discount presets, empty preset for giftLineItem
+
+- [#238](https://github.com/commercetools/test-data/pull/238) [`d2cb5e6`](https://github.com/commercetools/test-data/commit/d2cb5e6faadd51f7a63b43ca63ee01938fdb895d) Thanks [@jaikamat](https://github.com/jaikamat)! - Create CartDiscountTarget models and implement in presets
+
+### Patch Changes
+
+- Updated dependencies [[`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`90420e1`](https://github.com/commercetools/test-data/commit/90420e1b380fb29368226adbaada1b76551b6e61), [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6), [`29bbb57`](https://github.com/commercetools/test-data/commit/29bbb57115d83ea06ed378fc3bea4e4ff6cfbfbb), [`fda4538`](https://github.com/commercetools/test-data/commit/fda4538360c0952f7bfdd0dab5efcff827f7bd1d), [`7631166`](https://github.com/commercetools/test-data/commit/7631166007d4967f720f713f05d073f2da398075), [`23caa84`](https://github.com/commercetools/test-data/commit/23caa84726eb6b97a55dc6cdc23280e22382f105), [`b62d936`](https://github.com/commercetools/test-data/commit/b62d936dd26175986a66cbbfa0bd38f4008ddcad)]:
+  - @commercetools-test-data/commons@5.0.0
+  - @commercetools-test-data/category@5.0.0
+  - @commercetools-test-data/customer-group@5.0.0
+  - @commercetools-test-data/product-type@5.0.0
+  - @commercetools-test-data/utils@5.0.0
+  - @commercetools-test-data/core@5.0.0
+
 ## 4.11.1
 
 ### Patch Changes

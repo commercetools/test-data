@@ -1,5 +1,50 @@
 # @commercetools-test-data/product-variant
 
+## 5.0.0
+
+### Major Changes
+
+- [#248](https://github.com/commercetools/test-data/pull/248) [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **Price**, **Money**, and **CentPrecisionMoney** have been colocated under package `@commercetools-test-data/commons`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+
+  - `import { CentPrecisionMoney } from '@commercetools-test-data/commons’` <br>
+  - `import { PriceDraft } from '@commercetools-test-data/commons'`<br><br>
+
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:<br>
+
+  - `@commercetools-test-data/price` <br>
+  - `@commercetools-test-data/money` <br>
+  - `@commercetools-test-data/cent-precision-money` <br>
+
+- [#244](https://github.com/commercetools/test-data/pull/244) [`c0ed06d`](https://github.com/commercetools/test-data/commit/c0ed06debd5c71d30943e0fd0b7c81447a06b6f4) Thanks [@valoriecarli](https://github.com/valoriecarli)! - To better align with commercetools’ grouped representations and workflows, models for **ProductVariant**, **ProductCatalogData** and **Image** have been colocated under package `@commercetools-test-data/product-variant`.
+
+  Updating this package within your codebase will:<br>
+  **1.** Require the updating of import statements to reference named exports.<br>
+  Examples:<br>
+
+  - `import { ProductVariantDraft } from '@commercetools-test-data/product-variant’` <br>
+  - `import { Image } from '@commercetools-test-data/product-variant'`<br><br>
+
+  **2.** Require the use of the following packages to be discontinued and all references removed, as these packages are scheduled to be unpublished:<br>
+
+  - `@commercetools-test-data/attribute` <br>
+  - `@commercetools-test-data/image` <br>
+
+### Minor Changes
+
+- [#243](https://github.com/commercetools/test-data/pull/243) [`29bbb57`](https://github.com/commercetools/test-data/commit/29bbb57115d83ea06ed378fc3bea4e4ff6cfbfbb) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Adds product draft presets for fashion sample data.
+
+### Patch Changes
+
+- Updated dependencies [[`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`c23dee3`](https://github.com/commercetools/test-data/commit/c23dee39acf15b24bf33187944e850adf9404bc1), [`40505df`](https://github.com/commercetools/test-data/commit/40505df60a237c5bd7ab9387a989d144e33c67d6), [`29bbb57`](https://github.com/commercetools/test-data/commit/29bbb57115d83ea06ed378fc3bea4e4ff6cfbfbb), [`fda4538`](https://github.com/commercetools/test-data/commit/fda4538360c0952f7bfdd0dab5efcff827f7bd1d), [`7631166`](https://github.com/commercetools/test-data/commit/7631166007d4967f720f713f05d073f2da398075), [`23caa84`](https://github.com/commercetools/test-data/commit/23caa84726eb6b97a55dc6cdc23280e22382f105), [`b62d936`](https://github.com/commercetools/test-data/commit/b62d936dd26175986a66cbbfa0bd38f4008ddcad)]:
+  - @commercetools-test-data/commons@5.0.0
+  - @commercetools-test-data/attribute-definition@5.0.0
+  - @commercetools-test-data/utils@5.0.0
+  - @commercetools-test-data/core@5.0.0
+
 ## 4.11.1
 
 ### Patch Changes
