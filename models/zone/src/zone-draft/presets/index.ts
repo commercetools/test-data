@@ -1,5 +1,6 @@
+import empty from './empty';
 import sampleDataFashion from './sample-data-fashion';
 
-const presets = { sampleDataFashion };
+const presets = { empty, sampleDataFashion };
 
 export default presets;

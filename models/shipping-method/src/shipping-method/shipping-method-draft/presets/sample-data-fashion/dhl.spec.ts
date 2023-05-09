@@ -24,14 +24,35 @@ describe('with dhlShippingMethod preset', () => {
         "typeId": "tax-category",
       }
     `);
-    expect(dhlShippingMethodPreset.zoneRates).toMatchInlineSnapshot(`[]`);
+    expect(dhlShippingMethodPreset.zoneRates).toMatchInlineSnapshot(`
+      [
+        {
+          "shippingRates": [
+            {
+              "freeAbove": {
+                "centAmount": 15000,
+                "currencyCode": "EUR",
+              },
+              "price": {
+                "centAmount": 1299,
+                "currencyCode": "EUR",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "key": "europe",
+            "typeId": "zone",
+          },
+        },
+      ]
+    `);
     expect(dhlShippingMethodPreset.isDefault).toMatchInlineSnapshot(`true`);
   });
 
   it('should return a dhlShippingMethod preset when built for graphql', () => {
     const dhlShippingMethodPresetGraphql =
       dhlShippingMethod().buildGraphql<TShippingMethodDraftGraphql>();
-    console.log(dhlShippingMethodPresetGraphql);
     expect(dhlShippingMethodPresetGraphql.key).toMatchInlineSnapshot(`"dhl"`);
     expect(dhlShippingMethodPresetGraphql.name).toMatchInlineSnapshot(`"DHL"`);
     expect(dhlShippingMethodPresetGraphql.localizedDescription)
@@ -51,9 +72,34 @@ describe('with dhlShippingMethod preset', () => {
         "typeId": "tax-category",
       }
     `);
-    expect(dhlShippingMethodPresetGraphql.zoneRates).toMatchInlineSnapshot(
-      `[]`
-    );
+    expect(dhlShippingMethodPresetGraphql.zoneRates).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "ZoneRateDraft",
+          "shippingRates": [
+            {
+              "__typename": "ShippingRateDraft",
+              "freeAbove": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 15000,
+                "currencyCode": "EUR",
+              },
+              "price": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 1299,
+                "currencyCode": "EUR",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "__typename": "Reference",
+            "key": "europe",
+            "typeId": "zone",
+          },
+        },
+      ]
+    `);
     expect(dhlShippingMethodPresetGraphql.isDefault).toMatchInlineSnapshot(
       `true`
     );

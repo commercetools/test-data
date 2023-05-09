@@ -4,6 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
 import type { TTaxCategoryDraft } from '@commercetools-test-data/tax-category';
+import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
 import * as ShippingMethodDraft from '../../../shipping-method-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
 
@@ -20,7 +21,10 @@ const upsShippingMethod = (): TShippingMethodDraftBuilder =>
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .isDefault(false)
-    .zoneRates([]); // TODO: add zone rates
+    .zoneRates([
+      ZoneRateDraft.presets.sampleDataFashion.usa(),
+      ZoneRateDraft.presets.sampleDataFashion.australia(),
+    ])
+    .isDefault(false);
 
 export default upsShippingMethod;

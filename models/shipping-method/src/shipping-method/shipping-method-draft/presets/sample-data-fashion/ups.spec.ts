@@ -23,7 +23,48 @@ describe('with upsShippingMethod preset', () => {
         "typeId": "tax-category",
       }
     `);
-    expect(upsPreset.zoneRates).toMatchInlineSnapshot(`[]`);
+    expect(upsPreset.zoneRates).toMatchInlineSnapshot(`
+      [
+        {
+          "shippingRates": [
+            {
+              "freeAbove": {
+                "centAmount": 10000,
+                "currencyCode": "USD",
+              },
+              "price": {
+                "centAmount": 1299,
+                "currencyCode": "USD",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "key": "usa",
+            "typeId": "zone",
+          },
+        },
+        {
+          "shippingRates": [
+            {
+              "freeAbove": {
+                "centAmount": 20000,
+                "currencyCode": "AUD",
+              },
+              "price": {
+                "centAmount": 2000,
+                "currencyCode": "AUD",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "key": "australia",
+            "typeId": "zone",
+          },
+        },
+      ]
+    `);
     expect(upsPreset.isDefault).toMatchInlineSnapshot(`false`);
   });
 
@@ -47,7 +88,58 @@ describe('with upsShippingMethod preset', () => {
         "typeId": "tax-category",
       }
     `);
-    expect(upsPresetGraphql.zoneRates).toMatchInlineSnapshot(`[]`);
+    expect(upsPresetGraphql.zoneRates).toMatchInlineSnapshot(`
+      [
+        {
+          "__typename": "ZoneRateDraft",
+          "shippingRates": [
+            {
+              "__typename": "ShippingRateDraft",
+              "freeAbove": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 10000,
+                "currencyCode": "USD",
+              },
+              "price": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 1299,
+                "currencyCode": "USD",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "__typename": "Reference",
+            "key": "usa",
+            "typeId": "zone",
+          },
+        },
+        {
+          "__typename": "ZoneRateDraft",
+          "shippingRates": [
+            {
+              "__typename": "ShippingRateDraft",
+              "freeAbove": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 20000,
+                "currencyCode": "AUD",
+              },
+              "price": {
+                "__typename": "BaseMoneyInput",
+                "centAmount": 2000,
+                "currencyCode": "AUD",
+              },
+              "tiers": [],
+            },
+          ],
+          "zone": {
+            "__typename": "Reference",
+            "key": "australia",
+            "typeId": "zone",
+          },
+        },
+      ]
+    `);
     expect(upsPresetGraphql.isDefault).toMatchInlineSnapshot(`false`);
     expect(upsPresetGraphql.__typename).toMatchInlineSnapshot(
       `"ShippingMethodDraft"`
