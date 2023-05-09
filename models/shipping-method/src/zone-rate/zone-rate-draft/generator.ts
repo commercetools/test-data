@@ -1,12 +1,14 @@
-import { Generator } from '@commercetools-test-data/core';
+import { fake, Generator } from '@commercetools-test-data/core';
+import * as Zone from '@commercetools-test-data/zone';
+import * as ShippingRateDraft from '../../shipping-rate/shipping-rate-draft/index';
 import { TZoneRateDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#money
 
 const generator = Generator<TZoneRateDraft>({
   fields: {
-    zone: '{`TODO: add zone`}',
-    shippingRates: '{`TODO: add shipping rates`}',
+    zone: fake(() => Zone.random()),
+    shippingRates: fake(() => [ShippingRateDraft.random()]),
   },
 });
 
