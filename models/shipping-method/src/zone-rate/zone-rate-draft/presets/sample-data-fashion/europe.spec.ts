@@ -21,7 +21,7 @@ describe('with europe preset', () => {
             "centAmount": 1299,
             "currencyCode": "EUR",
           },
-          "tiers": [],
+          "tiers": undefined,
         },
       ]
     `);
@@ -50,7 +50,7 @@ describe('with europe preset', () => {
             "centAmount": 1299,
             "currencyCode": "EUR",
           },
-          "tiers": [],
+          "tiers": undefined,
         },
       ]
     `);

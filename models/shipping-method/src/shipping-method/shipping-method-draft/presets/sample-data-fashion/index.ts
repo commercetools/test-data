@@ -1,9 +1,9 @@
-import dhlShippingMethod from './dhl';
-import upsShippingMethod from './ups';
+import dhl from './dhl';
+import ups from './ups';
 
 const presets = {
-  dhlShippingMethod,
-  upsShippingMethod,
+  dhl,
+  ups,
 };
 
 export default presets;

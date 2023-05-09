@@ -19,7 +19,7 @@ describe('with usd1299 preset', () => {
                 "currencyCode": "USD",
               }
             `);
-    expect(usd1299Preset.tiers).toMatchInlineSnapshot(`[]`);
+    expect(usd1299Preset.tiers).toMatchInlineSnapshot(`undefined`);
   });
 
   it('should return a usd1299 preset when built for graphql', () => {
@@ -39,6 +39,6 @@ describe('with usd1299 preset', () => {
             "currencyCode": "USD",
           }
         `);
-    expect(usd1299PresetGraphql.tiers).toMatchInlineSnapshot(`[]`);
+    expect(usd1299PresetGraphql.tiers).toMatchInlineSnapshot(`undefined`);
   });
 });

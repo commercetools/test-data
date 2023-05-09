@@ -37,7 +37,7 @@ describe('with dhlShippingMethod preset', () => {
                 "centAmount": 1299,
                 "currencyCode": "EUR",
               },
-              "tiers": [],
+              "tiers": undefined,
             },
           ],
           "zone": {
@@ -89,7 +89,7 @@ describe('with dhlShippingMethod preset', () => {
                 "centAmount": 1299,
                 "currencyCode": "EUR",
               },
-              "tiers": [],
+              "tiers": undefined,
             },
           ],
           "zone": {

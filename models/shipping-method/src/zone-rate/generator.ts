@@ -1,5 +1,5 @@
+import { KeyReference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import * as Zone from '@commercetools-test-data/zone';
 import * as ShippingRate from '../shipping-rate';
 import { TZoneRate } from './types';
 
@@ -7,7 +7,7 @@ import { TZoneRate } from './types';
 
 const generator = Generator<TZoneRate>({
   fields: {
-    zone: fake(() => Zone.random()),
+    zone: fake(() => KeyReference.presets.zone()),
     shippingRates: fake(() => [ShippingRate.random()]),
   },
 });

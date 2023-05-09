@@ -21,7 +21,7 @@ describe('with usa preset', () => {
             "centAmount": 1299,
             "currencyCode": "USD",
           },
-          "tiers": [],
+          "tiers": undefined,
         },
       ]
     `);
@@ -50,7 +50,7 @@ describe('with usa preset', () => {
             "centAmount": 1299,
             "currencyCode": "USD",
           },
-          "tiers": [],
+          "tiers": undefined,
         },
       ]
     `);

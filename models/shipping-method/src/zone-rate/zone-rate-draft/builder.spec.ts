@@ -9,7 +9,12 @@ describe('builder', () => {
     ...createBuilderSpec<TZoneRateDraft, TZoneRateDraft>(
       'default',
       ZoneRateDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        zone: expect.objectContaining({
+          typeId: 'zone',
+        }),
+        shippingRates: expect.any(Array),
+      })
     )
   );
 
@@ -17,7 +22,12 @@ describe('builder', () => {
     ...createBuilderSpec<TZoneRateDraft, TZoneRateDraft>(
       'rest',
       ZoneRateDraft.random(),
-      expect.objectContaining({})
+      expect.objectContaining({
+        zone: expect.objectContaining({
+          typeId: 'zone',
+        }),
+        shippingRates: expect.any(Array),
+      })
     )
   );
 
@@ -27,6 +37,11 @@ describe('builder', () => {
       ZoneRateDraft.random(),
       expect.objectContaining({
         __typename: 'ZoneRateDraft',
+        zone: expect.objectContaining({
+          __typename: 'Reference',
+          typeId: 'zone',
+        }),
+        shippingRates: expect.any(Array),
       })
     )
   );

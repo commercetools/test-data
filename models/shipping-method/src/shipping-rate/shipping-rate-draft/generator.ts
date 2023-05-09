@@ -1,4 +1,4 @@
-import { Money } from '@commercetools-test-data/commons';
+import { CentPrecisionMoney } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TShippingRateDraft } from '../types';
 
@@ -6,8 +6,8 @@ import { TShippingRateDraft } from '../types';
 
 const generator = Generator<TShippingRateDraft>({
   fields: {
-    price: fake(() => Money.random()),
-    freeAbove: fake(() => Money.random()),
+    price: fake(() => CentPrecisionMoney.random()),
+    freeAbove: fake(() => CentPrecisionMoney.random()),
     tiers: [],
   },
 });

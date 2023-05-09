@@ -36,7 +36,7 @@ describe('with upsShippingMethod preset', () => {
                 "centAmount": 1299,
                 "currencyCode": "USD",
               },
-              "tiers": [],
+              "tiers": undefined,
             },
           ],
           "zone": {
@@ -105,7 +105,7 @@ describe('with upsShippingMethod preset', () => {
                 "centAmount": 1299,
                 "currencyCode": "USD",
               },
-              "tiers": [],
+              "tiers": undefined,
             },
           ],
           "zone": {

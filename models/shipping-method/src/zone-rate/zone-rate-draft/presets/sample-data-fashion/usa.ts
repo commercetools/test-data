@@ -10,7 +10,7 @@ const usaZone = ZoneDraft.presets.sampleDataFashion
 
 const usa = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
-    .zone(KeyReference.presets.zoneReference().key(usaZone.key!))
+    .zone(KeyReference.presets.zone().key(usaZone.key!))
     .shippingRates([ShippingRateDraft.presets.sampleDataFashion.usd1299()]);
 
 export default usa;

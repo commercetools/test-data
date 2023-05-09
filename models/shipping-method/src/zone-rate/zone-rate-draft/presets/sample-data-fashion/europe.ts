@@ -10,7 +10,7 @@ const europeZone = ZoneDraft.presets.sampleDataFashion
 
 const europe = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
-    .zone(KeyReference.presets.zoneReference().key(europeZone.key!))
+    .zone(KeyReference.presets.zone().key(europeZone.key!))
     .shippingRates([ShippingRateDraft.presets.sampleDataFashion.eur1299()]);
 
 export default europe;
