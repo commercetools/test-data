@@ -45,7 +45,7 @@ const transformers = {
       );
       const taxCategoryRef: TReferenceGraphql = Reference.random()
         .id(fields.taxCategory.id)
-        .typeId('channel')
+        .typeId('tax-category')
         .buildGraphql();
 
       return {
