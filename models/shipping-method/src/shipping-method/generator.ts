@@ -7,7 +7,7 @@ import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TShippingMethod } from './types';
 
-//https://docs.commercetools.com/api/projects/taxCategories#taxcategory
+// https://docs.commercetools.com/api/projects/shippingMethods#shippingmethod
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

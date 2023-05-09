@@ -2,7 +2,7 @@ import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TShippingMethodDraft } from '../types';
 
-// https://docs.commercetools.com/api/projects/taxCategories#taxcategorydraft
+// https://docs.commercetools.com/api/projects/shippingMethods#shippingmethoddraft
 
 const generator = Generator<TShippingMethodDraft>({
   fields: {
