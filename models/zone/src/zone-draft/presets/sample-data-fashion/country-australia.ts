@@ -1,8 +1,9 @@
 import { TZoneDraftBuilder } from '../../../types';
-import ZoneDraft from '../../builder';
+import * as ZoneDraft from '../../index';
 
 const countryAustralia = (): TZoneDraftBuilder =>
-  ZoneDraft()
+  ZoneDraft.presets
+    .empty()
     .name('Australia')
     .key('australia')
     .locations([{ country: 'AU' }]);

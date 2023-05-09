@@ -33,3 +33,13 @@ const shippingRate = ShippingRate.random().build<TShippingRate>();
 const shippingRateDraft =
   ShippingRateDraft.random().build<TShippingRateDraft>();
 ```
+
+## ZoneRate
+
+```ts
+import type { TZoneRate } from '@commercetools-test-data/shipping-method';
+import { ZoneRate } from '@commercetools-test-data/shipping-method';
+
+const zoneRate = ZoneRate.random().build<TZoneRate>();
+const zoneRateDraft = ZoneRateDraft.random().build<TZoneRateDraft>();
+```

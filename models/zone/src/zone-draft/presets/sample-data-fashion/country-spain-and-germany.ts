@@ -1,8 +1,9 @@
 import { TZoneDraftBuilder } from '../../../types';
-import ZoneDraft from '../../builder';
+import * as ZoneDraft from '../../index';
 
 const withCountrySpainAndGermany = (): TZoneDraftBuilder =>
-  ZoneDraft()
+  ZoneDraft.presets
+    .empty()
     .name('Europe')
     .key('europe')
     .locations([{ country: 'ES' }, { country: 'DE' }]);
