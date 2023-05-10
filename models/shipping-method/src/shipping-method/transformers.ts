@@ -4,7 +4,11 @@ import {
   type TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
-import type { TShippingMethod, TShippingMethodGraphql } from './types';
+import type {
+  TShippingMethod,
+  TShippingMethodRest,
+  TShippingMethodGraphql,
+} from './types';
 
 const transformers = {
   default: Transformer<TShippingMethod, TShippingMethod>('default', {
@@ -17,15 +21,18 @@ const transformers = {
       'lastModifiedBy',
     ],
   }),
-  rest: Transformer<TShippingMethod, TShippingMethod>('rest', {
+  rest: Transformer<TShippingMethod, TShippingMethodRest>('rest', {
     buildFields: [
       'localizedName',
       'localizedDescription',
-      'taxCategory',
       'zoneRates',
       'createdBy',
       'lastModifiedBy',
     ],
+    replaceFields: ({ fields }) => ({
+      ...fields,
+      taxCategory: Reference.random().typeId('tax-category').buildRest(),
+    }),
   }),
   graphql: Transformer<TShippingMethod, TShippingMethodGraphql>('graphql', {
     buildFields: [
@@ -43,15 +50,10 @@ const transformers = {
       const localizedDescriptionAllLocales = LocalizedString.toLocalizedField(
         fields.localizedDescription
       );
-      const taxCategoryRef: TReferenceGraphql = Reference.random()
-        .id(fields.taxCategory.id)
-        .typeId('tax-category')
-        .buildGraphql();
 
       return {
         localizedNameAllLocales,
         localizedDescriptionAllLocales,
-        taxCategoryRef,
         __typename: 'ShippingMethod',
       };
     },
