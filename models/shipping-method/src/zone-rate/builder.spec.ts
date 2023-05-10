@@ -11,7 +11,7 @@ describe('builder', () => {
       ZoneRate.random(),
       expect.objectContaining({
         zone: expect.objectContaining({
-          typeId: 'zone',
+          id: expect.any(String),
         }),
         shippingRates: expect.any(Array),
       })
@@ -38,10 +38,13 @@ describe('builder', () => {
       expect.objectContaining({
         __typename: 'ZoneRate',
         zone: expect.objectContaining({
+          __typename: 'Zone',
+        }),
+        shippingRates: expect.any(Array),
+        zoneRef: expect.objectContaining({
           typeId: 'zone',
           __typename: 'Reference',
         }),
-        shippingRates: expect.any(Array),
       })
     )
   );

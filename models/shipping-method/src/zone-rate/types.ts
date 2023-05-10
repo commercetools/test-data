@@ -1,13 +1,15 @@
-import { ZoneRate, ZoneRateDraft } from '@commercetools/platform-sdk';
+import { ZoneRate, ZoneRateDraft, Zone } from '@commercetools/platform-sdk';
+import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TZoneRate = ZoneRate;
-export type TZoneRateDraft = ZoneRateDraft;
-
-export type TZoneRateGraphql = TZoneRate & {
+export type TZoneRate = Omit<ZoneRate, 'zone'> & { zone: Zone };
+export type TZoneRateRest = ZoneRate;
+export type TZoneRateGraphql = ZoneRate & {
+  zoneRef: TReferenceGraphql;
   __typename: 'ZoneRate';
 };
 
+export type TZoneRateDraft = ZoneRateDraft;
 export type TZoneRateDraftGraphql = TZoneRateDraft & {
   __typename: 'ZoneRateDraft';
 };
