@@ -12,7 +12,7 @@ const transformers = {
     'graphql',
     {
       buildFields: ['price', 'freeAbove', 'tiers'],
-      addFields: () => ({ __typename: 'ShippingRateDraft' }),
+      addFields: () => ({ __typename: 'ShippingRateInput' }),
     }
   ),
 };
