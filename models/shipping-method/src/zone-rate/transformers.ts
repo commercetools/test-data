@@ -14,7 +14,7 @@ const transformers = {
     buildFields: ['shippingRates'],
     replaceFields: ({ fields }) => ({
       ...fields,
-      zone: KeyReference.presets.zone().buildRest(),
+      zone: KeyReference.random().typeId(fields.zone.id).buildRest(),
     }),
   }),
   graphql: Transformer<TZoneRate, TZoneRateGraphql>('graphql', {

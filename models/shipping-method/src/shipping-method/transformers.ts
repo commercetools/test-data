@@ -28,10 +28,11 @@ const transformers = {
       'zoneRates',
       'createdBy',
       'lastModifiedBy',
+      'taxCategory',
     ],
     replaceFields: ({ fields }) => ({
       ...fields,
-      taxCategory: Reference.random().typeId('tax-category').buildRest(),
+      taxCategory: Reference.random().typeId(fields.taxCategory.id).buildRest(),
     }),
   }),
   graphql: Transformer<TShippingMethod, TShippingMethodGraphql>('graphql', {
@@ -50,10 +51,15 @@ const transformers = {
       const localizedDescriptionAllLocales = LocalizedString.toLocalizedField(
         fields.localizedDescription
       );
+      const taxCategoryRef: TReferenceGraphql = Reference.random()
+        .id(fields.taxCategory.id)
+        .typeId('tax-category')
+        .buildGraphql();
 
       return {
         localizedNameAllLocales,
         localizedDescriptionAllLocales,
+        taxCategoryRef,
         __typename: 'ShippingMethod',
       };
     },

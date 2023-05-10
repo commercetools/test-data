@@ -1,9 +1,9 @@
 import {
   ClientLogging,
   LocalizedString,
-  Reference,
 } from '@commercetools-test-data/commons';
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
+import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TShippingMethod } from './types';
 
@@ -19,7 +19,7 @@ const generator = Generator<TShippingMethod>({
     name: fake((f) => f.lorem.words(2)),
     localizedName: fake((f) => LocalizedString.random()),
     localizedDescription: fake(() => LocalizedString.random()),
-    taxCategory: fake(() => Reference.random().typeId('tax-category')),
+    taxCategory: fake(() => TaxCategory.random()),
     zoneRates: fake(() => []),
     isDefault: fake((f) => f.datatype.boolean()),
     predicate: '1=1',
