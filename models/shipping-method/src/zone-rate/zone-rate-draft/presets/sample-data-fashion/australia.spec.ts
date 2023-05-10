@@ -40,7 +40,7 @@ describe('with australia preset', () => {
     expect(australiaPresetGraphql.shippingRates).toMatchInlineSnapshot(`
       [
         {
-          "__typename": "ShippingRateInput",
+          "__typename": "ShippingRateDraft",
           "freeAbove": {
             "__typename": "BaseMoneyInput",
             "centAmount": 20000,

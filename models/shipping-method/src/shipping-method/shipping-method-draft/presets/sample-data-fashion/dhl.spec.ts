@@ -78,7 +78,7 @@ describe('with dhlShippingMethod preset', () => {
           "__typename": "ZoneRateDraft",
           "shippingRates": [
             {
-              "__typename": "ShippingRateInput",
+              "__typename": "ShippingRateDraft",
               "freeAbove": {
                 "__typename": "BaseMoneyInput",
                 "centAmount": 15000,

@@ -94,7 +94,7 @@ describe('with upsShippingMethod preset', () => {
           "__typename": "ZoneRateDraft",
           "shippingRates": [
             {
-              "__typename": "ShippingRateInput",
+              "__typename": "ShippingRateDraft",
               "freeAbove": {
                 "__typename": "BaseMoneyInput",
                 "centAmount": 10000,
@@ -118,7 +118,7 @@ describe('with upsShippingMethod preset', () => {
           "__typename": "ZoneRateDraft",
           "shippingRates": [
             {
-              "__typename": "ShippingRateInput",
+              "__typename": "ShippingRateDraft",
               "freeAbove": {
                 "__typename": "BaseMoneyInput",
                 "centAmount": 20000,

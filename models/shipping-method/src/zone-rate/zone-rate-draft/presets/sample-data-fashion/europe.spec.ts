@@ -39,7 +39,7 @@ describe('with europe preset', () => {
     expect(europePresetGraphql.shippingRates).toMatchInlineSnapshot(`
       [
         {
-          "__typename": "ShippingRateInput",
+          "__typename": "ShippingRateDraft",
           "freeAbove": {
             "__typename": "BaseMoneyInput",
             "centAmount": 15000,
