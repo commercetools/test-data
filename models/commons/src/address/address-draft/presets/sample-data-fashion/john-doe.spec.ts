@@ -5,24 +5,71 @@ describe('with the preset `johnDoe`', () => {
   it('should return a address draft', () => {
     const address = johnDoe().build<TAddressDraft>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"John"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Center Road"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"34567"`);
-    expect(address.city).toMatchInlineSnapshot(`"Center Town"`);
-    expect(address.country).toMatchInlineSnapshot(`"DE"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Center Town",
+        "company": undefined,
+        "country": "DE",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "John",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Doe",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "34567",
+        "region": undefined,
+        "salutation": undefined,
+        "state": undefined,
+        "streetName": "Center Road",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 
   it('should return a address draft when built for GraphQL', () => {
     const address = johnDoe().buildGraphql<TAddressDraftGraphql>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"John"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Center Road"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"34567"`);
-    expect(address.city).toMatchInlineSnapshot(`"Center Town"`);
-    expect(address.country).toMatchInlineSnapshot(`"DE"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "__typename": "AddressDraft",
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Center Town",
+        "company": undefined,
+        "country": "DE",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "John",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Doe",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "34567",
+        "region": undefined,
+        "salutation": undefined,
+        "state": undefined,
+        "streetName": "Center Road",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 });

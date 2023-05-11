@@ -5,56 +5,59 @@ describe('store-usa channel', () => {
   it('should match REST snapshot', () => {
     const channel = storeUsa().build<TChannelDraft>();
 
-    expect(channel.key).toMatchInlineSnapshot(`"store_usa"`);
-    expect(channel.description).toMatchInlineSnapshot(`
+    expect(channel).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "USA Store",
-        "fr": undefined,
+        "address": undefined,
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "USA Store",
+          "fr": undefined,
+        },
+        "geoLocation": undefined,
+        "key": "store_usa",
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "USA Store",
+          "fr": undefined,
+        },
+        "roles": [
+          "ProductDistribution",
+        ],
       }
-    `);
-    expect(channel.name).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "USA Store",
-        "fr": undefined,
-      }
-    `);
-    expect(channel.roles).toMatchInlineSnapshot(`
-      [
-        "ProductDistribution",
-      ]
     `);
   });
 
   it('should match graphql snapshot', () => {
     const channel = storeUsa().buildGraphql<TChannelDraftGraphql>();
 
-    expect(channel.key).toMatchInlineSnapshot(`"store_usa"`);
-    expect(channel.description).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "USA Store",
-        },
-      ]
-    `);
-    expect(channel.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "USA Store",
-        },
-      ]
-    `);
-    expect(channel.roles).toMatchInlineSnapshot(`
-      [
-        "ProductDistribution",
-      ]
+    expect(channel).toMatchInlineSnapshot(`
+      {
+        "__typename": "ChannelDraft",
+        "address": undefined,
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "USA Store",
+          },
+        ],
+        "geoLocation": undefined,
+        "key": "store_usa",
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "USA Store",
+          },
+        ],
+        "roles": [
+          "ProductDistribution",
+        ],
+      }
     `);
   });
 });

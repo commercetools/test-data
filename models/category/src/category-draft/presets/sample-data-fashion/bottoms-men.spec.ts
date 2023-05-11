@@ -4,69 +4,82 @@ import bottomsMen from './bottoms-men';
 describe(`with bottomsMen preset`, () => {
   it('should provide a bottomsMen preset', () => {
     const bottomsMenCategoryDraft = bottomsMen().build<TCategoryDraft>();
-    expect(bottomsMenCategoryDraft.key).toMatchInlineSnapshot(`"bottoms-men"`);
-    expect(bottomsMenCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(bottomsMenCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Bottoms",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "bottoms-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Bottoms",
+          "fr": undefined,
+        },
+        "orderHint": "0.4",
+        "parent": {
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "bottoms_men",
+          "fr": undefined,
+        },
       }
     `);
-    expect(bottomsMenCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "bottoms_men",
-        "fr": undefined,
-      }
-    `);
-    expect(bottomsMenCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "men",
-        "typeId": "category",
-      }
-    `);
-    expect(bottomsMenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.4"`);
   });
 
   it('should provide a bottomsMen preset when built for graphql', () => {
     const bottomsMenCategoryDraftGraphql =
       bottomsMen().buildGraphql<TCategoryDraftGraphql>();
-    expect(bottomsMenCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"bottoms-men"`
-    );
-    expect(bottomsMenCategoryDraftGraphql.nameAllLocales)
-      .toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Bottoms",
-        },
-      ]
-    `);
-    expect(bottomsMenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "bottoms_men",
-        },
-      ]
-    `);
-    expect(bottomsMenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(bottomsMenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "men",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "bottoms-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "orderHint": "0.4",
+        "parent": {
+          "__typename": "Reference",
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "bottoms_men",
+          },
+        ],
       }
     `);
-    expect(bottomsMenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.4"`
-    );
-    expect(bottomsMenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });

@@ -92,9 +92,9 @@ describe(`with anniversaryShirt preset`, () => {
   });
 
   it('should return a sample anniversaryShirt product preset when built for graphql', () => {
-    const anniversaryShirtPresetGrahql =
+    const anniversaryShirtPresetGraphql =
       anniversaryShirt().buildGraphql<TProductDraft>();
-    expect(anniversaryShirtPresetGrahql).toMatchInlineSnapshot(`
+    expect(anniversaryShirtPresetGraphql).toMatchInlineSnapshot(`
       {
         "__typename": "ProductDraft",
         "categories": undefined,

@@ -5,33 +5,35 @@ describe('with the preset `country usa`', () => {
   it('should return a zone with name `USA`', () => {
     const zone = countryUsa().build<TZoneDraft>();
 
-    expect(zone).toEqual(
-      expect.objectContaining({
-        name: expect.stringContaining('USA'),
-        key: expect.stringContaining('usa'),
-        locations: expect.arrayContaining([
-          expect.objectContaining({
-            country: 'US',
-          }),
-        ]),
-      })
-    );
+    expect(zone).toMatchInlineSnapshot(`
+      {
+        "description": undefined,
+        "key": "usa",
+        "locations": [
+          {
+            "country": "US",
+          },
+        ],
+        "name": "USA",
+      }
+    `);
   });
 
   it('should return a zone with name `USA` when built for GraphQL', () => {
     const zone = countryUsa().buildGraphql<TZoneDraftGraphql>();
 
-    expect(zone).toEqual(
-      expect.objectContaining({
-        __typename: expect.stringContaining('ZoneDraft'),
-        name: expect.stringContaining('USA'),
-        key: expect.stringContaining('usa'),
-        locations: expect.arrayContaining([
-          expect.objectContaining({
-            country: 'US',
-          }),
-        ]),
-      })
-    );
+    expect(zone).toMatchInlineSnapshot(`
+      {
+        "__typename": "ZoneDraft",
+        "description": undefined,
+        "key": "usa",
+        "locations": [
+          {
+            "country": "US",
+          },
+        ],
+        "name": "USA",
+      }
+    `);
   });
 });

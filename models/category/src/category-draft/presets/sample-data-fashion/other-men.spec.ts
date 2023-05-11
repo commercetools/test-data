@@ -4,68 +4,82 @@ import otherMen from './other-men';
 describe(`with otherMen preset`, () => {
   it('should provide an otherMen preset', () => {
     const otherMenCategoryDraft = otherMen().build<TCategoryDraft>();
-    expect(otherMenCategoryDraft.key).toMatchInlineSnapshot(`"other-men"`);
-    expect(otherMenCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(otherMenCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Other",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "other-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Other",
+          "fr": undefined,
+        },
+        "orderHint": "0.3",
+        "parent": {
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "other_men",
+          "fr": undefined,
+        },
       }
     `);
-    expect(otherMenCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "other_men",
-        "fr": undefined,
-      }
-    `);
-    expect(otherMenCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "men",
-        "typeId": "category",
-      }
-    `);
-    expect(otherMenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.3"`);
   });
 
   it('should provide an otherMen preset when built for graphql', () => {
     const otherMenCategoryDraftGraphql =
       otherMen().buildGraphql<TCategoryDraftGraphql>();
-    expect(otherMenCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"other-men"`
-    );
-    expect(otherMenCategoryDraftGraphql.nameAllLocales).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Other",
-        },
-      ]
-    `);
-    expect(otherMenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "other_men",
-        },
-      ]
-    `);
-    expect(otherMenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(otherMenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "men",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "other-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Other",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Other",
+          },
+        ],
+        "orderHint": "0.3",
+        "parent": {
+          "__typename": "Reference",
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "other_men",
+          },
+        ],
       }
     `);
-    expect(otherMenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.3"`
-    );
-    expect(otherMenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });

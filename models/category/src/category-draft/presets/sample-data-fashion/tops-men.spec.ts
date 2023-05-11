@@ -4,66 +4,82 @@ import topsMen from './tops-men';
 describe(`with topsMen preset`, () => {
   it('should provide a topsMen preset', () => {
     const topsMenCategoryDraft = topsMen().build<TCategoryDraft>();
-    expect(topsMenCategoryDraft.key).toMatchInlineSnapshot(`"tops-men"`);
-    expect(topsMenCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(topsMenCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Tops",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "tops-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Tops",
+          "fr": undefined,
+        },
+        "orderHint": "0.6",
+        "parent": {
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "tops_men",
+          "fr": undefined,
+        },
       }
     `);
-    expect(topsMenCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "tops_men",
-        "fr": undefined,
-      }
-    `);
-    expect(topsMenCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "men",
-        "typeId": "category",
-      }
-    `);
-    expect(topsMenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.6"`);
   });
 
   it('should provide a topsMen preset when built for graphql', () => {
     const topsMenCategoryDraftGraphql =
       topsMen().buildGraphql<TCategoryDraftGraphql>();
-    expect(topsMenCategoryDraftGraphql.key).toMatchInlineSnapshot(`"tops-men"`);
-    expect(topsMenCategoryDraftGraphql.nameAllLocales).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Tops",
-        },
-      ]
-    `);
-    expect(topsMenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "tops_men",
-        },
-      ]
-    `);
-    expect(topsMenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(topsMenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "men",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "tops-men",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Tops",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Tops",
+          },
+        ],
+        "orderHint": "0.6",
+        "parent": {
+          "__typename": "Reference",
+          "key": "men",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "tops_men",
+          },
+        ],
       }
     `);
-    expect(topsMenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.6"`
-    );
-    expect(topsMenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });

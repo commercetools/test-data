@@ -4,68 +4,82 @@ import topsWomen from './tops-women';
 describe(`with topsWomen preset`, () => {
   it('should provide a topsWomen preset', () => {
     const topsWomenCategoryDraft = topsWomen().build<TCategoryDraft>();
-    expect(topsWomenCategoryDraft.key).toMatchInlineSnapshot(`"tops-women"`);
-    expect(topsWomenCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(topsWomenCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Tops",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "tops-women",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Tops",
+          "fr": undefined,
+        },
+        "orderHint": "0.3",
+        "parent": {
+          "key": "women",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "tops_women",
+          "fr": undefined,
+        },
       }
     `);
-    expect(topsWomenCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "tops_women",
-        "fr": undefined,
-      }
-    `);
-    expect(topsWomenCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "women",
-        "typeId": "category",
-      }
-    `);
-    expect(topsWomenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.3"`);
   });
 
   it('should provide a topsWomen preset when built for graphql', () => {
     const topsWomenCategoryDraftGraphql =
       topsWomen().buildGraphql<TCategoryDraftGraphql>();
-    expect(topsWomenCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"tops-women"`
-    );
-    expect(topsWomenCategoryDraftGraphql.nameAllLocales).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Tops",
-        },
-      ]
-    `);
-    expect(topsWomenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "tops_women",
-        },
-      ]
-    `);
-    expect(topsWomenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(topsWomenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "women",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "tops-women",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Tops",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Tops",
+          },
+        ],
+        "orderHint": "0.3",
+        "parent": {
+          "__typename": "Reference",
+          "key": "women",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "tops_women",
+          },
+        ],
       }
     `);
-    expect(topsWomenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.3"`
-    );
-    expect(topsWomenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });

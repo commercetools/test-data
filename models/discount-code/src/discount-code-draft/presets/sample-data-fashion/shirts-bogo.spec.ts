@@ -5,65 +5,70 @@ describe('with the preset `employeeSale`', () => {
   it('should return a discount code draft', () => {
     const discountCodeDraft = shirtsBogo().build<TDiscountCodeDraft>();
 
-    expect(discountCodeDraft.code).toMatchInlineSnapshot(`"BOGO"`);
-    expect(discountCodeDraft.name).toMatchInlineSnapshot(`
+    expect(discountCodeDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "BOGO",
-        "fr": undefined,
+        "cartDiscounts": [
+          {
+            "key": "ShirtsBOGO",
+            "typeId": "cart-discount",
+          },
+        ],
+        "cartPredicate": undefined,
+        "code": "BOGO",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "fr": undefined,
+        },
+        "groups": [],
+        "isActive": true,
+        "maxApplications": 1,
+        "maxApplicationsPerCustomer": 1,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "BOGO",
+          "fr": undefined,
+        },
+        "validFrom": undefined,
+        "validUntil": undefined,
       }
     `);
-    expect(discountCodeDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "fr": undefined,
-      }
-    `);
-    expect(discountCodeDraft.cartDiscounts[0].key).toMatchInlineSnapshot(
-      `"ShirtsBOGO"`
-    );
-    expect(discountCodeDraft.cartDiscounts[0].typeId).toMatchInlineSnapshot(
-      `"cart-discount"`
-    );
-    expect(discountCodeDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(discountCodeDraft.groups).toMatchInlineSnapshot(`[]`);
-    expect(discountCodeDraft.maxApplications).toMatchInlineSnapshot(`1`);
-    expect(discountCodeDraft.maxApplicationsPerCustomer).toMatchInlineSnapshot(
-      `1`
-    );
   });
 
   it('should return a discount code draft when built for GraphQL', () => {
     const discountCodeDraft =
       shirtsBogo().buildGraphql<TDiscountCodeDraftGraphql>();
 
-    expect(discountCodeDraft.code).toMatchInlineSnapshot(`"BOGO"`);
-    expect(discountCodeDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "BOGO",
-        },
-      ]
+    expect(discountCodeDraft).toMatchInlineSnapshot(`
+      {
+        "__typename": "DiscountCodeDraft",
+        "cartDiscounts": [
+          {
+            "__typename": "Reference",
+            "key": "ShirtsBOGO",
+            "typeId": "cart-discount",
+          },
+        ],
+        "cartPredicate": undefined,
+        "code": "BOGO",
+        "custom": undefined,
+        "description": [],
+        "groups": [],
+        "isActive": true,
+        "maxApplications": 1,
+        "maxApplicationsPerCustomer": 1,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "BOGO",
+          },
+        ],
+        "validFrom": undefined,
+        "validUntil": undefined,
+      }
     `);
-    expect(discountCodeDraft.description).toMatchInlineSnapshot(`[]`);
-    expect(discountCodeDraft.cartDiscounts[0].key).toMatchInlineSnapshot(
-      `"ShirtsBOGO"`
-    );
-    expect(discountCodeDraft.cartDiscounts[0].typeId).toMatchInlineSnapshot(
-      `"cart-discount"`
-    );
-    expect(discountCodeDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(discountCodeDraft.groups).toMatchInlineSnapshot(`[]`);
-    expect(discountCodeDraft.maxApplications).toMatchInlineSnapshot(`1`);
-    expect(discountCodeDraft.maxApplicationsPerCustomer).toMatchInlineSnapshot(
-      `1`
-    );
-    expect(discountCodeDraft.__typename).toMatchInlineSnapshot(
-      `"DiscountCodeDraft"`
-    );
   });
 });

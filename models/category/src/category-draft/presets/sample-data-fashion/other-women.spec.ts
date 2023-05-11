@@ -4,69 +4,82 @@ import otherWomen from './other-women';
 describe(`with otherWomen preset`, () => {
   it('should provide an otherWomen preset', () => {
     const otherWomenCategoryDraft = otherWomen().build<TCategoryDraft>();
-    expect(otherWomenCategoryDraft.key).toMatchInlineSnapshot(`"other-women"`);
-    expect(otherWomenCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(otherWomenCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Other",
-        "fr": undefined,
+        "assets": [],
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "other-women",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Other",
+          "fr": undefined,
+        },
+        "orderHint": "0.5",
+        "parent": {
+          "key": "women",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "other_women",
+          "fr": undefined,
+        },
       }
     `);
-    expect(otherWomenCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "other_women",
-        "fr": undefined,
-      }
-    `);
-    expect(otherWomenCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "women",
-        "typeId": "category",
-      }
-    `);
-    expect(otherWomenCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.5"`);
   });
 
   it('should provide an otherWomen preset when built for graphql', () => {
     const otherWomenCategoryDraftGraphql =
       otherWomen().buildGraphql<TCategoryDraftGraphql>();
-    expect(otherWomenCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"other-women"`
-    );
-    expect(otherWomenCategoryDraftGraphql.nameAllLocales)
-      .toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Other",
-        },
-      ]
-    `);
-    expect(otherWomenCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "other_women",
-        },
-      ]
-    `);
-    expect(otherWomenCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(otherWomenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "women",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": [],
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "other-women",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Other",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Other",
+          },
+        ],
+        "orderHint": "0.5",
+        "parent": {
+          "__typename": "Reference",
+          "key": "women",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "other_women",
+          },
+        ],
       }
     `);
-    expect(otherWomenCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.5"`
-    );
-    expect(otherWomenCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });

@@ -1,7 +1,6 @@
-import { TZoneDraftBuilder } from '../../../types';
 import * as ZoneDraft from '../../index';
 
-const countryUsa = (): TZoneDraftBuilder =>
+const countryUsa = () =>
   ZoneDraft.presets
     .empty()
     .name('USA')
