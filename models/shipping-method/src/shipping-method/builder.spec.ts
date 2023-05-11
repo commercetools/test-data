@@ -21,7 +21,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         taxCategory: expect.objectContaining({
-          typeId: 'tax-category',
+          id: expect.any(String),
         }),
         zoneRates: expect.any(Array),
         isDefault: expect.any(Boolean),
@@ -56,7 +56,6 @@ describe('builder', () => {
         }),
         taxCategory: expect.objectContaining({
           id: expect.any(String),
-          typeId: 'tax-category',
         }),
         zoneRates: expect.any(Array),
         isDefault: expect.any(Boolean),
@@ -98,7 +97,10 @@ describe('builder', () => {
         ]),
         taxCategory: expect.objectContaining({
           id: expect.any(String),
+        }),
+        taxCategoryRef: expect.objectContaining({
           typeId: 'tax-category',
+          __typename: 'Reference',
         }),
         zoneRates: expect.any(Array),
         isDefault: expect.any(Boolean),

@@ -11,7 +11,7 @@ const transformers = {
     buildFields: ['zone', 'shippingRates'],
   }),
   rest: Transformer<TZoneRate, TZoneRateRest>('rest', {
-    buildFields: ['shippingRates'],
+    buildFields: ['zone', 'shippingRates'],
     replaceFields: ({ fields }) => ({
       ...fields,
       zone: KeyReference.random().typeId(fields.zone.id).buildRest(),
