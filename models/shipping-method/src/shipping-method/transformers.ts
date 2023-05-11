@@ -32,7 +32,10 @@ const transformers = {
     ],
     replaceFields: ({ fields }) => ({
       ...fields,
-      taxCategory: Reference.random().typeId(fields.taxCategory.id).buildRest(),
+      taxCategory: Reference.random()
+        .id(fields.taxCategory.id)
+        .typeId('tax-category')
+        .build(),
     }),
   }),
   graphql: Transformer<TShippingMethod, TShippingMethodGraphql>('graphql', {

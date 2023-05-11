@@ -1,8 +1,4 @@
-import {
-  KeyReference,
-  Reference,
-  TReferenceGraphql,
-} from '@commercetools-test-data/commons';
+import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TZoneRate, TZoneRateGraphql, TZoneRateRest } from './types';
 
@@ -14,7 +10,7 @@ const transformers = {
     buildFields: ['zone', 'shippingRates'],
     replaceFields: ({ fields }) => ({
       ...fields,
-      zone: KeyReference.random().typeId(fields.zone.id).buildRest(),
+      zone: Reference.random().id(fields.zone.id).typeId('zone').buildRest(),
     }),
   }),
   graphql: Transformer<TZoneRate, TZoneRateGraphql>('graphql', {
