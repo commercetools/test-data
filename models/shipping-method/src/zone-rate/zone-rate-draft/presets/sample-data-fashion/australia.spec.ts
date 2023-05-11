@@ -4,56 +4,57 @@ import australia from './australia';
 describe('with australia preset', () => {
   it('should return a australia preset', () => {
     const australiaPreset = australia().build<TZoneRateDraft>();
-    expect(australiaPreset.zone).toMatchInlineSnapshot(`
+    expect(australiaPreset).toMatchInlineSnapshot(`
       {
-        "key": "australia",
-        "typeId": "zone",
-      }
-    `);
-    expect(australiaPreset.shippingRates).toMatchInlineSnapshot(`
-      [
-        {
-          "freeAbove": {
-            "centAmount": 20000,
-            "currencyCode": "AUD",
+        "shippingRates": [
+          {
+            "freeAbove": {
+              "centAmount": 20000,
+              "currencyCode": "AUD",
+            },
+            "price": {
+              "centAmount": 2000,
+              "currencyCode": "AUD",
+            },
+            "tiers": [],
           },
-          "price": {
-            "centAmount": 2000,
-            "currencyCode": "AUD",
-          },
-          "tiers": [],
+        ],
+        "zone": {
+          "key": "australia",
+          "typeId": "zone",
         },
-      ]
+      }
     `);
   });
 
   it('should return a australia preset when built for graphql', () => {
     const australiaPresetGraphql =
       australia().buildGraphql<TZoneRateDraftGraphql>();
-    expect(australiaPresetGraphql.zone).toMatchInlineSnapshot(`
+    expect(australiaPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "australia",
-        "typeId": "zone",
-      }
-    `);
-    expect(australiaPresetGraphql.shippingRates).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "ShippingRateDraft",
-          "freeAbove": {
-            "__typename": "BaseMoneyInput",
-            "centAmount": 20000,
-            "currencyCode": "AUD",
+        "__typename": "ZoneRateDraft",
+        "shippingRates": [
+          {
+            "__typename": "ShippingRateDraft",
+            "freeAbove": {
+              "__typename": "BaseMoneyInput",
+              "centAmount": 20000,
+              "currencyCode": "AUD",
+            },
+            "price": {
+              "__typename": "BaseMoneyInput",
+              "centAmount": 2000,
+              "currencyCode": "AUD",
+            },
+            "tiers": [],
           },
-          "price": {
-            "__typename": "BaseMoneyInput",
-            "centAmount": 2000,
-            "currencyCode": "AUD",
-          },
-          "tiers": [],
+        ],
+        "zone": {
+          "__typename": "Reference",
+          "key": "australia",
+          "typeId": "zone",
         },
-      ]
+      }
     `);
   });
 });
