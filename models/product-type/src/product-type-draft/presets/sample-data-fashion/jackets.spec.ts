@@ -81,6 +81,81 @@ describe(`with jackets preset`, () => {
     const jacketsProductTypeGraphql =
       jackets().buildGraphql<TProductTypeDraftGraphql>();
 
-    expect(jacketsProductTypeGraphql).toMatchInlineSnapshot();
+    expect(jacketsProductTypeGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductTypeDraft",
+        "attributeDefinitions": [
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "sleeve_length",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "sleeve_length",
+              },
+            ],
+            "name": "sleeve_length",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Crop",
+                  "label": "Crop",
+                },
+                {
+                  "key": "Normal",
+                  "label": "Normal",
+                },
+                {
+                  "key": "Extra Long",
+                  "label": "Extra Long",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "cotton",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "cotton",
+              },
+            ],
+            "name": "cotton",
+            "type": {
+              "__typename": "boolean",
+              "name": "boolean",
+            },
+          },
+        ],
+        "description": "Jackets",
+        "key": "jackets",
+        "name": "Jackets",
+      }
+    `);
   });
 });

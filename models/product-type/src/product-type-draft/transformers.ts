@@ -18,6 +18,7 @@ const transformers = {
         ) as Array<TAttributeDefinitionDraftGraphql>,
       };
     },
+    removeFields: ['attributes'],
   }),
 };
 

@@ -80,6 +80,81 @@ describe(`with accessories preset`, () => {
     const accessoriesProductType =
       accessories().buildGraphql<TProductTypeDraftGraphql>();
 
-    expect(accessoriesProductType).toMatchInlineSnapshot();
+    expect(accessoriesProductType).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductTypeDraft",
+        "attributeDefinitions": [
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Type",
+              },
+            ],
+            "isRequired": true,
+            "isSearchable": true,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Type",
+              },
+            ],
+            "name": "type",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Jewelry",
+                  "label": "Jewelry",
+                },
+                {
+                  "key": "Bag",
+                  "label": "Bag",
+                },
+                {
+                  "key": "Shoes",
+                  "label": "Shoes",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Engraving",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Engraving",
+              },
+            ],
+            "name": "engraving",
+            "type": {
+              "__typename": "text",
+              "name": "text",
+            },
+          },
+        ],
+        "description": "Accessories",
+        "key": "accessories",
+        "name": "Accessories",
+      }
+    `);
   });
 });

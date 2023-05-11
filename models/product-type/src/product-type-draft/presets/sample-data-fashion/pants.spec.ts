@@ -167,6 +167,175 @@ describe(`with pants preset`, () => {
     const pantsProductTypeGraphql =
       pants().buildGraphql<TProductTypeDraftGraphql>();
 
-    expect(pantsProductTypeGraphql).toMatchInlineSnapshot();
+    expect(pantsProductTypeGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductTypeDraft",
+        "attributeDefinitions": [
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Size",
+              },
+            ],
+            "isRequired": true,
+            "isSearchable": true,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Size",
+              },
+            ],
+            "name": "size",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Small",
+                  "label": "Small",
+                },
+                {
+                  "key": "Medium",
+                  "label": "Medium",
+                },
+                {
+                  "key": "Large",
+                  "label": "Large",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Fit",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": true,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Fit",
+              },
+            ],
+            "name": "fit",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Slim",
+                  "label": "Slim",
+                },
+                {
+                  "key": "Straight",
+                  "label": "Straight",
+                },
+                {
+                  "key": "Flair",
+                  "label": "Flair",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": true,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "name": "color",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Blue",
+                  "label": "Blue",
+                },
+                {
+                  "key": "Black",
+                  "label": "Black",
+                },
+                {
+                  "key": "White",
+                  "label": "White",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "None",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Length",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Length",
+              },
+            ],
+            "name": "length",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Ankle",
+                  "label": "Ankle",
+                },
+                {
+                  "key": "Crop",
+                  "label": "Crop",
+                },
+                {
+                  "key": "Extra Long",
+                  "label": "Extra Long",
+                },
+              ],
+            },
+          },
+        ],
+        "description": "Pants",
+        "key": "pants",
+        "name": "Pants",
+      }
+    `);
   });
 });

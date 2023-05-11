@@ -95,6 +95,95 @@ describe(`with dresses preset`, () => {
     const dressesProductTypeGraphql =
       dresses().buildGraphql<TProductTypeDraftGraphql>();
 
-    expect(dressesProductTypeGraphql).toMatchInlineSnapshot();
+    expect(dressesProductTypeGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductTypeDraft",
+        "attributeDefinitions": [
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "CombinationUnique",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Length",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Length",
+              },
+            ],
+            "name": "length",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Maxi",
+                  "label": "Maxi",
+                },
+                {
+                  "key": "Knee Length",
+                  "label": "Knee Length",
+                },
+                {
+                  "key": "Mini",
+                  "label": "Mini",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "CombinationUnique",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "name": "color",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "White",
+                  "label": "White",
+                },
+                {
+                  "key": "Pink",
+                  "label": "Pink",
+                },
+                {
+                  "key": "Floral",
+                  "label": "Floral",
+                },
+              ],
+            },
+          },
+        ],
+        "description": "Dresses",
+        "key": "dresses",
+        "name": "Dresses",
+      }
+    `);
   });
 });

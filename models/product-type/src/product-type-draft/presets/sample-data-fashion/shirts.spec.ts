@@ -99,6 +99,99 @@ describe(`with shirts preset`, () => {
     const shirtsProductTypeGraphql =
       shirts().buildGraphql<TProductTypeDraftGraphql>();
 
-    expect(shirtsProductTypeGraphql).toMatchInlineSnapshot();
+    expect(shirtsProductTypeGraphql).toMatchInlineSnapshot(`
+      {
+        "__typename": "ProductTypeDraft",
+        "attributeDefinitions": [
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "CombinationUnique",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Size",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Size",
+              },
+            ],
+            "name": "size",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Small",
+                  "label": "Small",
+                },
+                {
+                  "key": "Medium",
+                  "label": "Medium",
+                },
+                {
+                  "key": "Large",
+                  "label": "Large",
+                },
+              ],
+            },
+          },
+          {
+            "__typename": "AttributeDefinitionDraft",
+            "attributeConstraint": "CombinationUnique",
+            "inputHint": "SingleLine",
+            "inputTip": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "isRequired": false,
+            "isSearchable": false,
+            "label": [
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Color",
+              },
+            ],
+            "name": "color",
+            "type": {
+              "__typename": "enum",
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Red",
+                  "label": "Red",
+                },
+                {
+                  "key": "Green",
+                  "label": "Green",
+                },
+                {
+                  "key": "Purple",
+                  "label": "Purple",
+                },
+                {
+                  "key": "Multi-Color",
+                  "label": "Multi-Color",
+                },
+              ],
+            },
+          },
+        ],
+        "description": "Shirts",
+        "key": "shirts",
+        "name": "Shirts",
+      }
+    `);
   });
 });
