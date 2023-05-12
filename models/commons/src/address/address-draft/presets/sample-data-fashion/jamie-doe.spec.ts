@@ -5,26 +5,71 @@ describe('with the preset `jamieDoe`', () => {
   it('should return a address draft', () => {
     const address = jamieDoe().build<TAddressDraft>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"Jamie"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Main Street"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"56789"`);
-    expect(address.city).toMatchInlineSnapshot(`"Mainville"`);
-    expect(address.state).toMatchInlineSnapshot(`"New Jersey"`);
-    expect(address.country).toMatchInlineSnapshot(`"US"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Mainville",
+        "company": undefined,
+        "country": "US",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "Jamie",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Doe",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "56789",
+        "region": undefined,
+        "salutation": undefined,
+        "state": "New Jersey",
+        "streetName": "Main Street",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 
   it('should return a address draft when built for GraphQL', () => {
     const address = jamieDoe().buildGraphql<TAddressDraftGraphql>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"Jamie"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Doe"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Main Street"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"56789"`);
-    expect(address.city).toMatchInlineSnapshot(`"Mainville"`);
-    expect(address.state).toMatchInlineSnapshot(`"New Jersey"`);
-    expect(address.country).toMatchInlineSnapshot(`"US"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "__typename": "AddressDraft",
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Mainville",
+        "company": undefined,
+        "country": "US",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "Jamie",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Doe",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "56789",
+        "region": undefined,
+        "salutation": undefined,
+        "state": "New Jersey",
+        "streetName": "Main Street",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 });

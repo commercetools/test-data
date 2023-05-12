@@ -5,47 +5,231 @@ describe('with the preset cart `johnDoe02`', () => {
   it('should return a cart discount draft', () => {
     const cartDraft = johnDoe02().build<TCartDraft>();
 
-    expect(cartDraft.key).toMatchInlineSnapshot(`"john-02-cart"`);
-    expect(cartDraft.customerEmail).toMatchInlineSnapshot(
-      `"john.doe@example.com"`
-    );
-    expect(cartDraft.customerGroup).toMatchInlineSnapshot(`
+    expect(cartDraft).toMatchInlineSnapshot(`
       {
-        "key": "employee",
-        "typeId": "customer-group",
+        "anonymousId": undefined,
+        "billingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Center Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "John",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Doe",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "34567",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Center Road",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "businessUnit": undefined,
+        "country": "DE",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "john.doe@example.com",
+        "customerGroup": {
+          "key": "employee",
+          "typeId": "customer-group",
+        },
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": [
+          "emp15",
+        ],
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": undefined,
+        "itemShippingAddresses": undefined,
+        "key": "john-02-cart",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": undefined,
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "996024",
+            "supplyChannel": undefined,
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Merchant",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Center Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "John",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Doe",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "34567",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Center Road",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "shippingMethod": undefined,
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": undefined,
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
       }
     `);
-    expect(cartDraft.currency).toMatchInlineSnapshot(`"EUR"`);
-    expect(cartDraft.country).toMatchInlineSnapshot(`"DE"`);
-    expect(cartDraft.origin).toMatchInlineSnapshot(`"Merchant"`);
-    expect(cartDraft.shippingAddress!.firstName).toMatchInlineSnapshot(
-      `"John"`
-    );
-    expect(cartDraft.lineItems![0].sku).toMatchInlineSnapshot(`"996024"`);
-    expect(cartDraft.lineItems![0].quantity).toMatchInlineSnapshot(`1`);
   });
 
   it('should return a cart discount draft when build for GraphQL', () => {
     const cartDraft = johnDoe02().buildGraphql<TCartDraft>();
 
-    expect(cartDraft.key).toMatchInlineSnapshot(`"john-02-cart"`);
-    expect(cartDraft.customerEmail).toMatchInlineSnapshot(
-      `"john.doe@example.com"`
-    );
-    expect(cartDraft.customerGroup).toMatchInlineSnapshot(`
+    expect(cartDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "employee",
-        "typeId": "customer-group",
+        "__typename": "CartDraft",
+        "anonymousId": undefined,
+        "billingAddress": {
+          "__typename": "AddressDraft",
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Center Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "John",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Doe",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "34567",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Center Road",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "businessUnit": undefined,
+        "country": "DE",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "john.doe@example.com",
+        "customerGroup": {
+          "__typename": "Reference",
+          "key": "employee",
+          "typeId": "customer-group",
+        },
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": [
+          "emp15",
+        ],
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": undefined,
+        "itemShippingAddresses": undefined,
+        "key": "john-02-cart",
+        "lineItems": [
+          {
+            "__typename": "LineItemDraft",
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": undefined,
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "996024",
+            "supplyChannel": undefined,
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Merchant",
+        "shipping": undefined,
+        "shippingAddress": {
+          "__typename": "AddressDraft",
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Center Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "John",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Doe",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "34567",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Center Road",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "shippingMethod": undefined,
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": undefined,
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
       }
     `);
-    expect(cartDraft.currency).toMatchInlineSnapshot(`"EUR"`);
-    expect(cartDraft.country).toMatchInlineSnapshot(`"DE"`);
-    expect(cartDraft.origin).toMatchInlineSnapshot(`"Merchant"`);
-    expect(cartDraft.shippingAddress!.firstName).toMatchInlineSnapshot(
-      `"John"`
-    );
-    expect(cartDraft.lineItems![0].sku).toMatchInlineSnapshot(`"996024"`);
-    expect(cartDraft.lineItems![0].quantity).toMatchInlineSnapshot(`1`);
   });
 });

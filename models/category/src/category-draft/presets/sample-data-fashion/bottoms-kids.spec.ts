@@ -4,86 +4,99 @@ import bottomsKids from './bottoms-kids';
 describe(`with bottomsKids preset`, () => {
   it('should provide a bottomsKids preset', () => {
     const bottomsKidsCategoryDraft = bottomsKids().build<TCategoryDraft>();
-    expect(bottomsKidsCategoryDraft.key).toMatchInlineSnapshot(
-      `"bottoms_kids"`
-    );
-    expect(bottomsKidsCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(bottomsKidsCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Bottoms",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Bottoms",
+          "fr": undefined,
+        },
+        "externalId": undefined,
+        "key": "bottoms_kids",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Bottoms",
+          "fr": undefined,
+        },
+        "orderHint": "0.3",
+        "parent": {
+          "key": "clothing-kids",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "bottoms_kids",
+          "fr": undefined,
+        },
       }
     `);
-    expect(bottomsKidsCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "bottoms_kids",
-        "fr": undefined,
-      }
-    `);
-    expect(bottomsKidsCategoryDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Bottoms",
-        "fr": undefined,
-      }
-    `);
-    expect(bottomsKidsCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "clothing-kids",
-        "typeId": "category",
-      }
-    `);
-    expect(bottomsKidsCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.3"`);
   });
 
   it('should provide a bottomsKids preset when built for graphql', () => {
     const bottomsKidsCategoryDraftGraphql =
       bottomsKids().buildGraphql<TCategoryDraftGraphql>();
-    expect(bottomsKidsCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"bottoms_kids"`
-    );
-    expect(bottomsKidsCategoryDraftGraphql.nameAllLocales)
-      .toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Bottoms",
-        },
-      ]
-    `);
-    expect(bottomsKidsCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "bottoms_kids",
-        },
-      ]
-    `);
-    expect(bottomsKidsCategoryDraftGraphql.descriptionAllLocales)
-      .toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Bottoms",
-        },
-      ]
-    `);
-    expect(bottomsKidsCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(bottomsKidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "clothing-kids",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "descriptionAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "externalId": undefined,
+        "key": "bottoms_kids",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bottoms",
+          },
+        ],
+        "orderHint": "0.3",
+        "parent": {
+          "__typename": "Reference",
+          "key": "clothing-kids",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "bottoms_kids",
+          },
+        ],
       }
     `);
-    expect(bottomsKidsCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.3"`
-    );
   });
 });

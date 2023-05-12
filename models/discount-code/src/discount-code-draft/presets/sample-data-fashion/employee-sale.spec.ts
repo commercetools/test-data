@@ -5,57 +5,70 @@ describe('with the preset `employeeSale`', () => {
   it('should return a discount code draft', () => {
     const discountCodeDraft = employeeSale().build<TDiscountCodeDraft>();
 
-    expect(discountCodeDraft.code).toMatchInlineSnapshot(`"emp15"`);
-    expect(discountCodeDraft.name).toMatchInlineSnapshot(`
+    expect(discountCodeDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Employee Sale",
-        "fr": undefined,
+        "cartDiscounts": [
+          {
+            "key": "EmployeeSale",
+            "typeId": "cart-discount",
+          },
+        ],
+        "cartPredicate": undefined,
+        "code": "emp15",
+        "custom": undefined,
+        "description": {
+          "de": undefined,
+          "en": undefined,
+          "fr": undefined,
+        },
+        "groups": [],
+        "isActive": true,
+        "maxApplications": undefined,
+        "maxApplicationsPerCustomer": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Employee Sale",
+          "fr": undefined,
+        },
+        "validFrom": undefined,
+        "validUntil": undefined,
       }
     `);
-    expect(discountCodeDraft.description).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "fr": undefined,
-      }
-    `);
-    expect(discountCodeDraft.cartDiscounts[0].key).toMatchInlineSnapshot(
-      `"EmployeeSale"`
-    );
-    expect(discountCodeDraft.cartDiscounts[0].typeId).toMatchInlineSnapshot(
-      `"cart-discount"`
-    );
-    expect(discountCodeDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(discountCodeDraft.groups).toMatchInlineSnapshot(`[]`);
   });
 
   it('should return a discount code draft when built for GraphQL', () => {
     const discountCodeDraft =
       employeeSale().buildGraphql<TDiscountCodeDraftGraphql>();
 
-    expect(discountCodeDraft.code).toMatchInlineSnapshot(`"emp15"`);
-    expect(discountCodeDraft.name).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Employee Sale",
-        },
-      ]
+    expect(discountCodeDraft).toMatchInlineSnapshot(`
+      {
+        "__typename": "DiscountCodeDraft",
+        "cartDiscounts": [
+          {
+            "__typename": "Reference",
+            "key": "EmployeeSale",
+            "typeId": "cart-discount",
+          },
+        ],
+        "cartPredicate": undefined,
+        "code": "emp15",
+        "custom": undefined,
+        "description": [],
+        "groups": [],
+        "isActive": true,
+        "maxApplications": undefined,
+        "maxApplicationsPerCustomer": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Employee Sale",
+          },
+        ],
+        "validFrom": undefined,
+        "validUntil": undefined,
+      }
     `);
-    expect(discountCodeDraft.description).toMatchInlineSnapshot(`[]`);
-    expect(discountCodeDraft.cartDiscounts[0].key).toMatchInlineSnapshot(
-      `"EmployeeSale"`
-    );
-    expect(discountCodeDraft.cartDiscounts[0].typeId).toMatchInlineSnapshot(
-      `"cart-discount"`
-    );
-    expect(discountCodeDraft.isActive).toMatchInlineSnapshot(`true`);
-    expect(discountCodeDraft.groups).toMatchInlineSnapshot(`[]`);
-    expect(discountCodeDraft.__typename).toMatchInlineSnapshot(
-      `"DiscountCodeDraft"`
-    );
   });
 });

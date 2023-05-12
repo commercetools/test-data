@@ -5,24 +5,71 @@ describe('with the preset `marySmith`', () => {
   it('should return a address draft', () => {
     const address = marySmith().build<TAddressDraft>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"Mary"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Smith"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Sample Street"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"12345"`);
-    expect(address.city).toMatchInlineSnapshot(`"Sample Town"`);
-    expect(address.country).toMatchInlineSnapshot(`"DE"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Sample Town",
+        "company": undefined,
+        "country": "DE",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "Mary",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Smith",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "12345",
+        "region": undefined,
+        "salutation": undefined,
+        "state": undefined,
+        "streetName": "Sample Street",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 
   it('should return a address draft when built for GraphQL', () => {
     const address = marySmith().buildGraphql<TAddressDraftGraphql>();
 
-    expect(address.firstName).toMatchInlineSnapshot(`"Mary"`);
-    expect(address.lastName).toMatchInlineSnapshot(`"Smith"`);
-    expect(address.streetName).toMatchInlineSnapshot(`"Sample Street"`);
-    expect(address.streetNumber).toMatchInlineSnapshot(`"1"`);
-    expect(address.postalCode).toMatchInlineSnapshot(`"12345"`);
-    expect(address.city).toMatchInlineSnapshot(`"Sample Town"`);
-    expect(address.country).toMatchInlineSnapshot(`"DE"`);
+    expect(address).toMatchInlineSnapshot(`
+      {
+        "__typename": "AddressDraft",
+        "additionalAddressInfo": undefined,
+        "additionalStreetInfo": undefined,
+        "apartment": undefined,
+        "building": undefined,
+        "city": "Sample Town",
+        "company": undefined,
+        "country": "DE",
+        "custom": undefined,
+        "department": undefined,
+        "email": undefined,
+        "externalId": undefined,
+        "fax": undefined,
+        "firstName": "Mary",
+        "id": undefined,
+        "key": undefined,
+        "lastName": "Smith",
+        "mobile": undefined,
+        "pOBox": undefined,
+        "phone": undefined,
+        "postalCode": "12345",
+        "region": undefined,
+        "salutation": undefined,
+        "state": undefined,
+        "streetName": "Sample Street",
+        "streetNumber": "1",
+        "title": undefined,
+      }
+    `);
   });
 });

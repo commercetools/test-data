@@ -5,34 +5,224 @@ describe('with the preset cart `marySmith01`', () => {
   it('should return a cart discount draft', () => {
     const cartDraft = marySmith02().build<TCartDraft>();
 
-    expect(cartDraft.key).toMatchInlineSnapshot(`"mary-02-cart"`);
-    expect(cartDraft.customerEmail).toMatchInlineSnapshot(
-      `"mary.smith@example.com"`
-    );
-    expect(cartDraft.currency).toMatchInlineSnapshot(`"EUR"`);
-    expect(cartDraft.country).toMatchInlineSnapshot(`"DE"`);
-    expect(cartDraft.origin).toMatchInlineSnapshot(`"Merchant"`);
-    expect(cartDraft.shippingAddress!.firstName).toMatchInlineSnapshot(
-      `"Mary"`
-    );
-    expect(cartDraft.lineItems![0].sku).toMatchInlineSnapshot(`"118718"`);
-    expect(cartDraft.lineItems![0].quantity).toMatchInlineSnapshot(`2`);
+    expect(cartDraft).toMatchInlineSnapshot(`
+      {
+        "anonymousId": undefined,
+        "billingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Sample Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "Mary",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Smith",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "12345",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Sample Street",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "businessUnit": undefined,
+        "country": "DE",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "mary.smith@example.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": [
+          "BOGO",
+        ],
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": undefined,
+        "itemShippingAddresses": undefined,
+        "key": "mary-02-cart",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": undefined,
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 2,
+            "shippingDetails": undefined,
+            "sku": "118718",
+            "supplyChannel": undefined,
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Merchant",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Sample Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "Mary",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Smith",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "12345",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Sample Street",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "shippingMethod": undefined,
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": undefined,
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
   });
 
   it('should return a cart discount draft when build for GraphQL', () => {
     const cartDraft = marySmith02().buildGraphql<TCartDraft>();
 
-    expect(cartDraft.key).toMatchInlineSnapshot(`"mary-02-cart"`);
-    expect(cartDraft.customerEmail).toMatchInlineSnapshot(
-      `"mary.smith@example.com"`
-    );
-    expect(cartDraft.currency).toMatchInlineSnapshot(`"EUR"`);
-    expect(cartDraft.country).toMatchInlineSnapshot(`"DE"`);
-    expect(cartDraft.origin).toMatchInlineSnapshot(`"Merchant"`);
-    expect(cartDraft.shippingAddress!.firstName).toMatchInlineSnapshot(
-      `"Mary"`
-    );
-    expect(cartDraft.lineItems![0].sku).toMatchInlineSnapshot(`"118718"`);
-    expect(cartDraft.lineItems![0].quantity).toMatchInlineSnapshot(`2`);
+    expect(cartDraft).toMatchInlineSnapshot(`
+      {
+        "__typename": "CartDraft",
+        "anonymousId": undefined,
+        "billingAddress": {
+          "__typename": "AddressDraft",
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Sample Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "Mary",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Smith",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "12345",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Sample Street",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "businessUnit": undefined,
+        "country": "DE",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "mary.smith@example.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": [
+          "BOGO",
+        ],
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": undefined,
+        "itemShippingAddresses": undefined,
+        "key": "mary-02-cart",
+        "lineItems": [
+          {
+            "__typename": "LineItemDraft",
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": undefined,
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 2,
+            "shippingDetails": undefined,
+            "sku": "118718",
+            "supplyChannel": undefined,
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Merchant",
+        "shipping": undefined,
+        "shippingAddress": {
+          "__typename": "AddressDraft",
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": undefined,
+          "apartment": undefined,
+          "building": undefined,
+          "city": "Sample Town",
+          "company": undefined,
+          "country": "DE",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": "Mary",
+          "id": undefined,
+          "key": undefined,
+          "lastName": "Smith",
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "12345",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Sample Street",
+          "streetNumber": "1",
+          "title": undefined,
+        },
+        "shippingMethod": undefined,
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": undefined,
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
   });
 });

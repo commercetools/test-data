@@ -4,71 +4,82 @@ import clothingKids from './clothing-kids';
 describe(`with clothingKids preset`, () => {
   it('should provide a clothingKids preset', () => {
     const clothingKidsCategoryDraft = clothingKids().build<TCategoryDraft>();
-    expect(clothingKidsCategoryDraft.key).toMatchInlineSnapshot(
-      `"clothing-kids"`
-    );
-    expect(clothingKidsCategoryDraft.name).toMatchInlineSnapshot(`
+
+    expect(clothingKidsCategoryDraft).toMatchInlineSnapshot(`
       {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "Clothing",
-        "fr": undefined,
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "clothing-kids",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "Clothing",
+          "fr": undefined,
+        },
+        "orderHint": "0.8",
+        "parent": {
+          "key": "kids",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "en": undefined,
+          "en-US": "clothing_kids",
+          "fr": undefined,
+        },
       }
     `);
-    expect(clothingKidsCategoryDraft.slug).toMatchInlineSnapshot(`
-      {
-        "de": undefined,
-        "en": undefined,
-        "en-US": "clothing_kids",
-        "fr": undefined,
-      }
-    `);
-    expect(clothingKidsCategoryDraft.parent).toMatchInlineSnapshot(`
-      {
-        "key": "kids",
-        "typeId": "category",
-      }
-    `);
-    expect(clothingKidsCategoryDraft.orderHint).toMatchInlineSnapshot(`"0.8"`);
   });
 
   it('should provide a clothingKids preset when built for graphql', () => {
     const clothingKidsCategoryDraftGraphql =
       clothingKids().buildGraphql<TCategoryDraftGraphql>();
-    expect(clothingKidsCategoryDraftGraphql.key).toMatchInlineSnapshot(
-      `"clothing-kids"`
-    );
-    expect(clothingKidsCategoryDraftGraphql.nameAllLocales)
-      .toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "Clothing",
-        },
-      ]
-    `);
-    expect(clothingKidsCategoryDraftGraphql.slug).toMatchInlineSnapshot(`
-      [
-        {
-          "__typename": "LocalizedString",
-          "locale": "en-US",
-          "value": "clothing_kids",
-        },
-      ]
-    `);
-    expect(clothingKidsCategoryDraftGraphql.parent).toMatchInlineSnapshot(`
+
+    expect(clothingKidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "Reference",
-        "key": "kids",
-        "typeId": "category",
+        "__typename": "CategoryDraft",
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "descriptionAllLocales": null,
+        "externalId": undefined,
+        "key": "clothing-kids",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Clothing",
+          },
+        ],
+        "nameAllLocales": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Clothing",
+          },
+        ],
+        "orderHint": "0.8",
+        "parent": {
+          "__typename": "Reference",
+          "key": "kids",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "clothing_kids",
+          },
+        ],
       }
     `);
-    expect(clothingKidsCategoryDraftGraphql.orderHint).toMatchInlineSnapshot(
-      `"0.8"`
-    );
-    expect(clothingKidsCategoryDraftGraphql.__typename).toMatchInlineSnapshot(
-      `"CategoryDraft"`
-    );
   });
 });
