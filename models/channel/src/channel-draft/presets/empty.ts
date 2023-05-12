@@ -5,6 +5,7 @@ const empty = (): TChannelDraftBuilder =>
   ChannelDraft()
     .roles(undefined)
     .name(undefined)
+    .description(undefined)
     .address(undefined)
     .custom(undefined)
     .geoLocation(undefined);
