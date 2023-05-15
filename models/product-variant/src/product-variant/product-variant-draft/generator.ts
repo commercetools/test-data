@@ -9,7 +9,7 @@ import type { TProductVariantDraft } from '../types';
 const generator = Generator<TProductVariantDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    sku: fake((f) => f.random.word()),
+    sku: fake((f) => `${f.random.word()}-${f.random.alphaNumeric(3)}`),
     prices: fake(() => [Price.PriceDraft.random()]),
     attributes: fake(() => [Attribute.AttributeDraft.random()]),
     images: fake(() => [Image.ImageDraft.random()]),

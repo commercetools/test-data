@@ -10,7 +10,7 @@ const generator = Generator<TProductVariant>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
     key: fake((f) => f.lorem.slug(2)),
-    sku: fake((f) => f.random.word()),
+    sku: fake((f) => `${f.random.word()}-${f.random.alphaNumeric(3)}`),
     prices: fake(() => [Price.random()]),
     price: null,
     attributes: fake(() => [Attribute.random()]),

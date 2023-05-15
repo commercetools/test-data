@@ -22,7 +22,7 @@ const generator = Generator<TProduct>({
     state: null,
     reviewRatingStatistics: null,
     priceMode: oneOf(...Object.values(productPriceMode)),
-    skus: [],
+    skus: fake((f) => [`${f.random.word()}-${f.random.alphaNumeric(3)}`]),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
