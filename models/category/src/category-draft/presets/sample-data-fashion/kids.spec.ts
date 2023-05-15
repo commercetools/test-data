@@ -54,26 +54,12 @@ describe(`with kids preset`, () => {
             "value": "Items for kids",
           },
         ],
-        "descriptionAllLocales": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Items for kids",
-          },
-        ],
         "externalId": undefined,
         "key": "kids",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Kids",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

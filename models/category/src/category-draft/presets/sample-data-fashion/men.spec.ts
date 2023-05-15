@@ -53,26 +53,12 @@ describe(`with men preset`, () => {
             "value": "Items for men",
           },
         ],
-        "descriptionAllLocales": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Items for men",
-          },
-        ],
         "externalId": undefined,
         "key": "men",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Men",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

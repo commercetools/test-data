@@ -1,5 +1,8 @@
 import { Product, ProductDraft } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  TLocalizedStringGraphql,
+  TReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TProduct = Product & {
@@ -17,7 +20,12 @@ export type TProductGraphql = TProduct & {
 };
 
 export type TProductDraft = ProductDraft;
-export type TProductDraftGraphql = TProductDraft & {
+export type TProductDraftGraphql = Omit<
+  TProductDraft,
+  'name' | 'description'
+> & {
+  name: TLocalizedStringGraphql;
+  description?: TLocalizedStringGraphql | null;
   __typename: 'ProductDraft';
 };
 

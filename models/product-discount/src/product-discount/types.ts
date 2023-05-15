@@ -18,7 +18,12 @@ export type TProductDiscountGraphql = TProductDiscount & {
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
-export type TProductDiscountDraftGraphql = TProductDiscountDraft & {
+export type TProductDiscountDraftGraphql = Omit<
+  TProductDiscountDraft,
+  'name' | 'description'
+> & {
+  name: TLocalizedStringGraphql;
+  description?: TLocalizedStringGraphql | null;
   __typename: 'ProductDiscountDraft';
 };
 
