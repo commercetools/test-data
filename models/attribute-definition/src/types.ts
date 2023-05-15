@@ -10,7 +10,7 @@ export type TAttributeDefinition = AttributeDefinition;
 export type TAttributeDefinitionDraft = AttributeDefinitionDraft;
 
 export type TAttributeDefinitionGraphql = TAttributeDefinition & {
-  __typename: TAttributeDefinition['name'];
+  __typename: 'AttributeDefinition';
 };
 
 export type TAttributeDefinitionDraftGraphql = Omit<
@@ -18,7 +18,7 @@ export type TAttributeDefinitionDraftGraphql = Omit<
   'label'
 > & {
   label: TLocalizedStringGraphql;
-  __typename: TAttributeDefinitionDraft['name'];
+  __typename: 'AttributeDefinitionDraft';
 };
 
 export type TAttributeDefinitionBuilder = TBuilder<TAttributeDefinition>;
