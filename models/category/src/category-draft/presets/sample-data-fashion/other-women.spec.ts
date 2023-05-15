@@ -46,20 +46,12 @@ describe(`with otherWomen preset`, () => {
         "assets": [],
         "custom": undefined,
         "description": undefined,
-        "descriptionAllLocales": null,
         "externalId": undefined,
         "key": "other-women",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Other",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

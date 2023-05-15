@@ -46,20 +46,12 @@ describe(`with clothingKids preset`, () => {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
-        "descriptionAllLocales": null,
         "externalId": undefined,
         "key": "clothing-kids",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Clothing",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

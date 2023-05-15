@@ -57,26 +57,12 @@ describe(`with bottomsKids preset`, () => {
             "value": "Bottoms",
           },
         ],
-        "descriptionAllLocales": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bottoms",
-          },
-        ],
         "externalId": undefined,
         "key": "bottoms_kids",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bottoms",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

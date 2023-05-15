@@ -57,26 +57,12 @@ describe(`with topsKids preset`, () => {
             "value": "Tops",
           },
         ],
-        "descriptionAllLocales": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tops",
-          },
-        ],
         "externalId": undefined,
         "key": "tops-kids",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tops",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
