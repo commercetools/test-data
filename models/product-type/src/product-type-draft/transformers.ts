@@ -15,7 +15,7 @@ const transformers = {
         __typename: 'ProductTypeDraft',
         attributeDefinitions: fields.attributes!.map((attribute) =>
           buildField(attribute, 'graphql')
-        ) as Array<TAttributeDefinitionDraftGraphql>,
+        ) as unknown as Array<TAttributeDefinitionDraftGraphql>,
       };
     },
     removeFields: ['attributes'],
