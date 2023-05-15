@@ -1,5 +1,17 @@
 # @commercetools-test-data/cart
 
+## 5.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`8970865`](https://github.com/commercetools/test-data/commit/89708651f4c088517ce3f4d60a1650698a129a63)]:
+  - @commercetools-test-data/line-item@5.1.1
+  - @commercetools-test-data/core@5.1.1
+  - @commercetools-test-data/commons@5.1.1
+  - @commercetools-test-data/customer@5.1.1
+  - @commercetools-test-data/discount-code@5.1.1
+  - @commercetools-test-data/utils@5.1.1
+
 ## 5.1.0
 
 ### Minor Changes
