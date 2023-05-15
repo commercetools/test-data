@@ -10,7 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TZoneRateDraft, TZoneRateDraftGraphql>('graphql', {
     buildFields: ['zone', 'shippingRates'],
-    addFields: () => ({ __typename: 'ZoneRateDraft' }),
   }),
 };
 

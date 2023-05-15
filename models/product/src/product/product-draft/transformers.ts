@@ -41,7 +41,6 @@ const transformers = {
       'taxCategory',
       'state',
     ],
-    addFields: () => ({ __typename: 'ProductDraft' }),
   }),
 };
 

@@ -49,7 +49,6 @@ describe('with the preset `spendSaveTenPercent`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "totalPrice = "100.00 EUR"",
         "custom": undefined,
         "description": [
@@ -72,9 +71,7 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "sortOrder": "0.897987087",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "lineItems": {
-            "__typename": "LineItemsTargetInput",
             "predicate": "1=1",
             "type": "lineItems",
           },
@@ -82,7 +79,6 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueRelativeDraft",
           "permyriad": 1000,
           "type": "relative",
         },

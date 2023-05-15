@@ -115,10 +115,8 @@ describe('with the preset cart `marySmith01`', () => {
 
     expect(cartDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDraft",
         "anonymousId": undefined,
         "billingAddress": {
-          "__typename": "AddressDraft",
           "additionalAddressInfo": undefined,
           "additionalStreetInfo": undefined,
           "apartment": undefined,
@@ -163,7 +161,6 @@ describe('with the preset cart `marySmith01`', () => {
         "key": "mary-01-cart",
         "lineItems": [
           {
-            "__typename": "LineItemDraft",
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": undefined,
@@ -183,7 +180,6 @@ describe('with the preset cart `marySmith01`', () => {
         "origin": "Merchant",
         "shipping": undefined,
         "shippingAddress": {
-          "__typename": "AddressDraft",
           "additionalAddressInfo": undefined,
           "additionalStreetInfo": undefined,
           "apartment": undefined,

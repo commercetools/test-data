@@ -78,11 +78,9 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
       toddlerTrousersVariant02().buildGraphql<TProductVariantDraft>();
     expect(toddlerTrousersVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Medium",
@@ -90,7 +88,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "fit",
             "value": {
               "key": "Straight",
@@ -98,7 +95,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "White",
@@ -106,7 +102,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "length",
             "value": {
               "key": "Ankle",
@@ -128,7 +123,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
         "key": "855485",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -139,7 +133,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2599,
               "currencyCode": "USD",
               "fractionDigits": 2,

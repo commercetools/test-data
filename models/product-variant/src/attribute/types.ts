@@ -22,9 +22,7 @@ export type TAttributeGraphql = TAttribute & {
   __typename: 'RawProductAttribute';
 };
 
-export type TAttributeDraftGraphql = TAttributeDraft & {
-  __typename: 'ProductAttributeInput';
-};
+export type TAttributeDraftGraphql = TAttributeDraft;
 
 export type TAttributeBuilder = TBuilder<TAttribute>;
 export type TAttributeDraftBuilder = TBuilder<TAttributeDraft>;

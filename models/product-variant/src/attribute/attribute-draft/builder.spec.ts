@@ -34,7 +34,6 @@ describe('builder', () => {
       expect.objectContaining({
         name: expect.any(String),
         value: null,
-        __typename: 'ProductAttributeInput',
       })
     )
   );

@@ -95,11 +95,9 @@ describe(`with necklace variant preset`, () => {
       necklaceVariant01().buildGraphql<TProductVariantDraft>();
     expect(necklaceVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "type",
             "value": {
               "key": "Jewelry",
@@ -107,7 +105,6 @@ describe(`with necklace variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "engraving",
             "value": "Happy Anniversary",
           },
@@ -126,7 +123,6 @@ describe(`with necklace variant preset`, () => {
         "key": "752502",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -137,7 +133,6 @@ describe(`with necklace variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 5000,
               "currencyCode": "EUR",
               "fractionDigits": 2,
@@ -145,7 +140,6 @@ describe(`with necklace variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -156,7 +150,6 @@ describe(`with necklace variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 5000,
               "currencyCode": "USD",
               "fractionDigits": 2,
@@ -164,7 +157,6 @@ describe(`with necklace variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "ES",
             "custom": undefined,
@@ -175,7 +167,6 @@ describe(`with necklace variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 5000,
               "currencyCode": "EUR",
               "fractionDigits": 2,

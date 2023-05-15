@@ -7,9 +7,7 @@ export type TReviewDraft = ReviewDraft;
 export type TReviewGraphql = TReview & {
   __typename: 'Review';
 };
-export type TReviewDraftGraphql = TReviewDraft & {
-  __typename: 'ReviewDraft';
-};
+export type TReviewDraftGraphql = TReviewDraft;
 
 export type TReviewBuilder = TBuilder<TReview>;
 export type TReviewDraftBuilder = TBuilder<TReviewDraft>;

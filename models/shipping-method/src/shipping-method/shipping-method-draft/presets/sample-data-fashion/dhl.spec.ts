@@ -56,7 +56,6 @@ describe('with dhlShippingMethod preset', () => {
       dhlShippingMethod().buildGraphql<TShippingMethodDraftGraphql>();
     expect(dhlShippingMethodPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ShippingMethodDraft",
         "custom": undefined,
         "isDefault": true,
         "key": "dhl",
@@ -77,17 +76,13 @@ describe('with dhlShippingMethod preset', () => {
         },
         "zoneRates": [
           {
-            "__typename": "ZoneRateDraft",
             "shippingRates": [
               {
-                "__typename": "ShippingRateDraft",
                 "freeAbove": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 15000,
                   "currencyCode": "EUR",
                 },
                 "price": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 1299,
                   "currencyCode": "EUR",
                 },

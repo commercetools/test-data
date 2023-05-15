@@ -42,7 +42,6 @@ describe('with the preset `jamieDoe`', () => {
 
     expect(address).toMatchInlineSnapshot(`
       {
-        "__typename": "AddressDraft",
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,
         "apartment": undefined,

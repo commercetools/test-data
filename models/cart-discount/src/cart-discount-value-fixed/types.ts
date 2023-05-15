@@ -10,10 +10,7 @@ export type TCartDiscountValueFixedDraft = CartDiscountValueFixedDraft;
 export type TCartDiscountValueFixedGraphql = TCartDiscountValueFixed & {
   __typename: 'CartDiscountValueFixed';
 };
-export type TCartDiscountValueFixedDraftGraphql =
-  TCartDiscountValueFixedDraft & {
-    __typename: 'CartDiscountValueFixedDraft';
-  };
+export type TCartDiscountValueFixedDraftGraphql = TCartDiscountValueFixedDraft;
 
 export type TCartDiscountValueFixedBuilder = TBuilder<TCartDiscountValueFixed>;
 export type TCartDiscountValueFixedDraftBuilder =

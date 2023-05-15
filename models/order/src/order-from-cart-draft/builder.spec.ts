@@ -69,7 +69,6 @@ describe('builder', () => {
         }),
         shipmentState: expect.any(String),
         custom: null,
-        __typename: 'OrderCartCommand',
       })
     )
   );

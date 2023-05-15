@@ -7,9 +7,7 @@ export type TCartDraft = CartDraft;
 export type TCartGraphql = TCart & {
   __typename: 'Cart';
 };
-export type TCartDraftGraphql = TCartDraft & {
-  __typename: 'CartDraft';
-};
+export type TCartDraftGraphql = TCartDraft;
 
 export type TCartBuilder = TBuilder<TCart>;
 export type TCartDraftBuilder = TBuilder<TCartDraft>;

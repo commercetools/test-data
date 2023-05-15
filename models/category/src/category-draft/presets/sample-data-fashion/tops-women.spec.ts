@@ -42,7 +42,6 @@ describe(`with topsWomen preset`, () => {
 
     expect(topsWomenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": undefined,

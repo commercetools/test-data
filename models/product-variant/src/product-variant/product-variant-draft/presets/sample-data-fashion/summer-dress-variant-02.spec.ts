@@ -57,11 +57,9 @@ describe(`with summerDressVariant02 preset`, () => {
       summerDressVariant02().buildGraphql<TProductVariantDraft>();
     expect(summerDressVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "Pink",
@@ -83,7 +81,6 @@ describe(`with summerDressVariant02 preset`, () => {
         "key": "439502",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -94,7 +91,6 @@ describe(`with summerDressVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 7500,
               "currencyCode": "USD",
               "fractionDigits": 2,

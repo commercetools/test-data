@@ -10,9 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TChannelDraft, TChannelDraftGraphql>('graphql', {
     buildFields: ['name', 'description', 'address'],
-    addFields: () => ({
-      __typename: 'ChannelDraft',
-    }),
   }),
 };
 

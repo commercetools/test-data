@@ -31,10 +31,7 @@ describe('builder', () => {
       expect.objectContaining({
         shipping: {
           type: 'shipping',
-
-          __typename: 'ShippingTargetInput',
         },
-        __typename: 'CartDiscountTargetInput',
       })
     )
   );

@@ -10,9 +10,7 @@ export type TTaxCategoryDraft = TaxCategoryDraft;
 export type TTaxCategoryGraphql = TTaxCategory & {
   __typename: 'TaxCategory';
 };
-export type TTaxCategoryDraftGraphql = TTaxCategoryDraft & {
-  __typename: 'TaxCategoryDraft';
-};
+export type TTaxCategoryDraftGraphql = TTaxCategoryDraft;
 
 export type TTaxCategoryBuilder = TBuilder<TTaxCategory>;
 export type TTaxCategoryDraftBuilder = TBuilder<TTaxCategoryDraft>;

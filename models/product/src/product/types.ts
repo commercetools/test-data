@@ -26,7 +26,6 @@ export type TProductDraftGraphql = Omit<
 > & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
-  __typename: 'ProductDraft';
 };
 
 export type TProductBuilder = TBuilder<TProduct>;

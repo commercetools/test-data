@@ -54,7 +54,6 @@ describe('with the preset `luxeSpend`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "totalPrice = "500.00 EUR" and customer.customerGroup.key = "luxe"",
         "custom": undefined,
         "description": [
@@ -77,9 +76,7 @@ describe('with the preset `luxeSpend`', () => {
         "sortOrder": "0.876899",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "lineItems": {
-            "__typename": "LineItemsTargetInput",
             "predicate": "1=1",
             "type": "lineItems",
           },
@@ -87,9 +84,7 @@ describe('with the preset `luxeSpend`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueAbsoluteDraft",
           "money": {
-            "__typename": "MoneyInput",
             "centAmount": 3000,
             "currencyCode": "EUR",
             "fractionDigits": 2,

@@ -33,9 +33,6 @@ const transformers = {
         'zoneRates',
         'custom',
       ],
-      addFields: () => ({
-        __typename: 'ShippingMethodDraft',
-      }),
     }
   ),
 };

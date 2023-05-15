@@ -31,7 +31,6 @@ const transformers = {
       'billingAddress',
       'shippingMethod',
     ],
-    addFields: () => ({ __typename: 'CartDraft' }),
   }),
 };
 

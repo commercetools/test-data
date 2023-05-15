@@ -58,7 +58,6 @@ describe('builder', () => {
             centAmount: expect.any(Number),
           }),
         ]),
-        __typename: 'ProductDiscountValueAbsoluteDraft',
       })
     )
   );

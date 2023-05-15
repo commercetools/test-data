@@ -22,7 +22,6 @@ const transformers = {
     addFields: ({ fields }) => {
       return {
         label: LocalizedString.toLocalizedField(fields.label)!,
-        __typename: 'AttributeDefinitionDraft',
       };
     },
   }),

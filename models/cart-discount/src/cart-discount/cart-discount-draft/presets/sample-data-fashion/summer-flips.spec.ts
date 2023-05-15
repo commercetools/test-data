@@ -52,7 +52,6 @@ describe('with the preset `summerFlips`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "lineItemExists(product.key = "summer_dress") = true",
         "custom": undefined,
         "description": [
@@ -78,7 +77,6 @@ describe('with the preset `summerFlips`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueGiftLineItemDraft",
           "distributionChannel": undefined,
           "product": {
             "__typename": "Reference",

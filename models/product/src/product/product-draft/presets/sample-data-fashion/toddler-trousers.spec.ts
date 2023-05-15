@@ -240,17 +240,14 @@ describe(`with toddlerTrousers preset`, () => {
       toddlerTrousers().buildGraphql<TProductDraft>();
     expect(toddlerTrousersPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "toddler_trousers",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "size",
               "value": {
                 "key": "Small",
@@ -258,7 +255,6 @@ describe(`with toddlerTrousers preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "fit",
               "value": {
                 "key": "Straight",
@@ -266,7 +262,6 @@ describe(`with toddlerTrousers preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "color",
               "value": {
                 "key": "White",
@@ -274,7 +269,6 @@ describe(`with toddlerTrousers preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "length",
               "value": {
                 "key": "Ankle",
@@ -296,7 +290,6 @@ describe(`with toddlerTrousers preset`, () => {
           "key": "855484",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "US",
               "custom": undefined,
@@ -307,7 +300,6 @@ describe(`with toddlerTrousers preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 2599,
                 "currencyCode": "USD",
                 "fractionDigits": 2,
@@ -350,11 +342,9 @@ describe(`with toddlerTrousers preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Medium",
@@ -362,7 +352,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "fit",
                 "value": {
                   "key": "Straight",
@@ -370,7 +359,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "White",
@@ -378,7 +366,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "length",
                 "value": {
                   "key": "Ankle",
@@ -400,7 +387,6 @@ describe(`with toddlerTrousers preset`, () => {
             "key": "855485",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "US",
                 "custom": undefined,
@@ -411,7 +397,6 @@ describe(`with toddlerTrousers preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 2599,
                   "currencyCode": "USD",
                   "fractionDigits": 2,
@@ -422,11 +407,9 @@ describe(`with toddlerTrousers preset`, () => {
             "sku": "855485",
           },
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Large",
@@ -434,7 +417,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "fit",
                 "value": {
                   "key": "Straight",
@@ -442,7 +424,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "White",
@@ -450,7 +431,6 @@ describe(`with toddlerTrousers preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "length",
                 "value": {
                   "key": "Ankle",
@@ -472,7 +452,6 @@ describe(`with toddlerTrousers preset`, () => {
             "key": "855486",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "US",
                 "custom": undefined,
@@ -483,7 +462,6 @@ describe(`with toddlerTrousers preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 2599,
                   "currencyCode": "USD",
                   "fractionDigits": 2,

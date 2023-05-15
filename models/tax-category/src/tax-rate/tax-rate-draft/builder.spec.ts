@@ -40,7 +40,6 @@ describe('builder', () => {
       'graphql',
       TaxRateDraft.random(),
       expect.objectContaining({
-        __typename: 'TaxRateDraft',
         name: expect.any(String),
         amount: expect.any(Number),
         includedInPrice: expect.any(Boolean),

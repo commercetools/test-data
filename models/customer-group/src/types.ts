@@ -10,9 +10,7 @@ export type TCustomerGroupDraft = CustomerGroupDraft;
 export type TCustomerGroupGraphql = TCustomerGroup & {
   __typename: 'CustomerGroup';
 };
-export type TCustomerGroupDraftGraphql = TCustomerGroupDraft & {
-  __typename: 'CustomerGroupDraft';
-};
+export type TCustomerGroupDraftGraphql = TCustomerGroupDraft;
 
 export type TCustomerGroupBuilder = TBuilder<TCustomerGroup>;
 export type TCustomerGroupDraftBuilder = TBuilder<TCustomerGroupDraft>;

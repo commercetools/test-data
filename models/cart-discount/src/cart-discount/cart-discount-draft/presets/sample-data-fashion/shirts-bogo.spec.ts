@@ -53,7 +53,6 @@ describe('with the preset `shirtsBogo`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "1 = 1",
         "custom": undefined,
         "description": [
@@ -76,9 +75,7 @@ describe('with the preset `shirtsBogo`', () => {
         "sortOrder": "0.2",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "multiBuyLineItems": {
-            "__typename": "MultiBuyLineItemsTargetInput",
             "discountedQuantity": 1,
             "maxOccurrence": undefined,
             "predicate": "productType.key = "shirts"",
@@ -90,7 +87,6 @@ describe('with the preset `shirtsBogo`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueRelativeDraft",
           "permyriad": 10000,
           "type": "relative",
         },

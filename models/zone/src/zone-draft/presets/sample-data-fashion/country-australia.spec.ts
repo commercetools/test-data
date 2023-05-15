@@ -24,7 +24,6 @@ describe('with the preset `country australia`', () => {
 
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneDraft",
         "description": undefined,
         "key": "australia",
         "locations": [

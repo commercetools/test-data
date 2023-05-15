@@ -22,7 +22,6 @@ describe('with the preset `luxe`', () => {
 
     expect(customerGroup).toMatchInlineSnapshot(`
       {
-        "__typename": "CustomerGroupDraft",
         "custom": null,
         "groupName": "Luxe",
         "key": "luxe",

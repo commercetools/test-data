@@ -42,7 +42,6 @@ describe(`with otherMen preset`, () => {
 
     expect(otherMenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": undefined,

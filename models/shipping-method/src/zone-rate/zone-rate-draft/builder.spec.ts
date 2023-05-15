@@ -36,7 +36,6 @@ describe('builder', () => {
       'graphql',
       ZoneRateDraft.random(),
       expect.objectContaining({
-        __typename: 'ZoneRateDraft',
         zone: expect.objectContaining({
           __typename: 'Reference',
           typeId: 'zone',

@@ -22,7 +22,6 @@ describe('with the preset `employee`', () => {
 
     expect(customerGroup).toMatchInlineSnapshot(`
       {
-        "__typename": "CustomerGroupDraft",
         "custom": null,
         "groupName": "Employee",
         "key": "employee",

@@ -37,7 +37,6 @@ describe('hub channel', () => {
 
     expect(channel).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": [

@@ -12,7 +12,6 @@ export type TCreateCategoryDraftBuilder = () => TCategoryDraftBuilder;
 export type TCategoryDraftGraphql = Omit<TCategory, 'name' | 'description'> & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
-  __typename: 'CategoryDraft';
 };
 
 //Category

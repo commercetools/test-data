@@ -121,17 +121,14 @@ describe(`with flairJeans preset`, () => {
     const flairJeansPresetGraphql = flairJeans().buildGraphql<TProductDraft>();
     expect(flairJeansPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "flair_jeans",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "size",
               "value": {
                 "key": "Large",
@@ -139,7 +136,6 @@ describe(`with flairJeans preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "fit",
               "value": {
                 "key": "Flair",
@@ -147,7 +143,6 @@ describe(`with flairJeans preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "color",
               "value": {
                 "key": "Blue",
@@ -155,7 +150,6 @@ describe(`with flairJeans preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "length",
               "value": {
                 "key": "Crop",
@@ -201,11 +195,9 @@ describe(`with flairJeans preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Medium",
@@ -213,7 +205,6 @@ describe(`with flairJeans preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "fit",
                 "value": {
                   "key": "Flair",
@@ -221,7 +212,6 @@ describe(`with flairJeans preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "Black",
@@ -229,7 +219,6 @@ describe(`with flairJeans preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "length",
                 "value": {
                   "key": "Extra Long",

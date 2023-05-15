@@ -55,7 +55,6 @@ describe('builder', () => {
       'graphql',
       ChannelDraft.random(),
       expect.objectContaining({
-        __typename: 'ChannelDraft',
         key: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({

@@ -50,7 +50,6 @@ describe('with the preset `percentOffWomensWear`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "1 = 1",
         "custom": undefined,
         "description": [
@@ -73,9 +72,7 @@ describe('with the preset `percentOffWomensWear`', () => {
         "sortOrder": "0.3445",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "lineItems": {
-            "__typename": "LineItemsTargetInput",
             "predicate": "categories.key contains "bottoms-women" and price.discount.id is not defined",
             "type": "lineItems",
           },
@@ -83,7 +80,6 @@ describe('with the preset `percentOffWomensWear`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueRelativeDraft",
           "permyriad": 1500,
           "type": "relative",
         },

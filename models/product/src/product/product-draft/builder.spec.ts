@@ -218,7 +218,6 @@ describe('builder', () => {
             }),
           ]),
           assets: expect.arrayContaining([]),
-          __typename: 'ProductVariantInput',
         }),
         variants: expect.arrayContaining([
           expect.objectContaining({
@@ -254,7 +253,6 @@ describe('builder', () => {
         metaKeywords: null,
         publish: expect.any(Boolean),
         key: expect.any(String),
-        __typename: 'ProductDraft',
       })
     )
   );

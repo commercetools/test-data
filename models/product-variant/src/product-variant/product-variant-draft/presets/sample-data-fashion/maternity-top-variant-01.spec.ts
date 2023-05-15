@@ -64,11 +64,9 @@ describe(`with maternityTopVariant01 preset`, () => {
       maternityTopVariant01().buildGraphql<TProductVariantDraft>();
     expect(maternityTopVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Small",
@@ -76,7 +74,6 @@ describe(`with maternityTopVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "Green",
@@ -98,7 +95,6 @@ describe(`with maternityTopVariant01 preset`, () => {
         "key": "118716",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -109,7 +105,6 @@ describe(`with maternityTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2695,
               "currencyCode": "EUR",
               "fractionDigits": 2,

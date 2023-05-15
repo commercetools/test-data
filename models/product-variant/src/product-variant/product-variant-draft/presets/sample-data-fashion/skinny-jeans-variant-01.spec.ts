@@ -64,11 +64,9 @@ describe(`with skinnyJeansVariant01 preset`, () => {
       skinnyJeansVariant01().buildGraphql<TProductVariantDraft>();
     expect(skinnyJeansVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "fit",
             "value": {
               "key": "Slim",
@@ -76,7 +74,6 @@ describe(`with skinnyJeansVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Medium",
@@ -98,7 +95,6 @@ describe(`with skinnyJeansVariant01 preset`, () => {
         "key": "396594",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -109,7 +105,6 @@ describe(`with skinnyJeansVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 4999,
               "currencyCode": "EUR",
               "fractionDigits": 2,

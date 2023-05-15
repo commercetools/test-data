@@ -13,9 +13,7 @@ export type TProductDiscountValueAbsoluteGraphql =
     __typename: 'ProductDiscountValueAbsolute';
   };
 export type TProductDiscountValueAbsoluteDraftGraphql =
-  TProductDiscountValueAbsoluteDraft & {
-    __typename: 'ProductDiscountValueAbsoluteDraft';
-  };
+  TProductDiscountValueAbsoluteDraft & {};
 
 export type TProductDiscountValueAbsoluteBuilder =
   TBuilder<TProductDiscountValueAbsolute>;

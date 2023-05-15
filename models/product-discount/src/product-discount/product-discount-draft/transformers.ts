@@ -16,9 +16,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['value', 'name', 'description'],
-      addFields: () => ({
-        __typename: 'ProductDiscountDraft',
-      }),
     }
   ),
 };

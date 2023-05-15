@@ -51,7 +51,6 @@ describe('builder', () => {
       'graphql',
       ReviewDraft.random(),
       expect.objectContaining({
-        __typename: 'ReviewDraft',
         key: expect.any(String),
         uniquenessValue: null,
         locale: expect.any(String),

@@ -9,9 +9,7 @@ const transformers = {
         ...fields,
         dimensions: {
           ...fields.dimensions,
-          __typename: 'DimensionsInput',
         },
-        __typename: 'ImageInput',
       };
     },
   }),

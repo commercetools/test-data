@@ -198,17 +198,14 @@ describe(`with maternityTop preset`, () => {
       maternityTop().buildGraphql<TProductDraft>();
     expect(maternityTopPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "maternity_top",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "size",
               "value": {
                 "key": "Small",
@@ -216,7 +213,6 @@ describe(`with maternityTop preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "color",
               "value": {
                 "key": "Green",
@@ -238,7 +234,6 @@ describe(`with maternityTop preset`, () => {
           "key": "118716",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "DE",
               "custom": undefined,
@@ -249,7 +244,6 @@ describe(`with maternityTop preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 2695,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -292,11 +286,9 @@ describe(`with maternityTop preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Medium",
@@ -304,7 +296,6 @@ describe(`with maternityTop preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "Green",
@@ -326,7 +317,6 @@ describe(`with maternityTop preset`, () => {
             "key": "118717",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "DE",
                 "custom": undefined,
@@ -337,7 +327,6 @@ describe(`with maternityTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 2695,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,
@@ -348,11 +337,9 @@ describe(`with maternityTop preset`, () => {
             "sku": "118717",
           },
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Large",
@@ -360,7 +347,6 @@ describe(`with maternityTop preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "Green",
@@ -382,7 +368,6 @@ describe(`with maternityTop preset`, () => {
             "key": "118718",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "DE",
                 "custom": undefined,
@@ -393,7 +378,6 @@ describe(`with maternityTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 2695,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,

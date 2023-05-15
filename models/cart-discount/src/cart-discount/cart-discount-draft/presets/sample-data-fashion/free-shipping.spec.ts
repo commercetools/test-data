@@ -48,7 +48,6 @@ describe('with the preset `freeShipping`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "1 = 1",
         "custom": undefined,
         "description": [
@@ -71,16 +70,13 @@ describe('with the preset `freeShipping`', () => {
         "sortOrder": "0.222",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "shipping": {
-            "__typename": "ShippingTargetInput",
             "type": "shipping",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueRelativeDraft",
           "permyriad": 10000,
           "type": "relative",
         },

@@ -100,7 +100,6 @@ describe(`with dresses preset`, () => {
         "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
-            "__typename": "AttributeDefinitionDraft",
             "attributeConstraint": "CombinationUnique",
             "inputHint": "SingleLine",
             "inputTip": [
@@ -140,7 +139,6 @@ describe(`with dresses preset`, () => {
             },
           },
           {
-            "__typename": "AttributeDefinitionDraft",
             "attributeConstraint": "CombinationUnique",
             "inputHint": "SingleLine",
             "inputTip": [

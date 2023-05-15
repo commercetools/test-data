@@ -31,17 +31,13 @@ describe('with usa preset', () => {
     const usaPresetGraphql = usa().buildGraphql<TZoneRateDraftGraphql>();
     expect(usaPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneRateDraft",
         "shippingRates": [
           {
-            "__typename": "ShippingRateDraft",
             "freeAbove": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 10000,
               "currencyCode": "USD",
             },
             "price": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 1299,
               "currencyCode": "USD",
             },

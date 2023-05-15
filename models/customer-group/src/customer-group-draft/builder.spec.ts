@@ -34,7 +34,6 @@ describe('builder', () => {
       'graphql',
       CustomerGroupDraft.random(),
       expect.objectContaining({
-        __typename: 'CustomerGroupDraft',
         groupName: expect.any(String),
         key: expect.any(String),
         custom: null,

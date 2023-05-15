@@ -54,7 +54,6 @@ describe('with the preset `skinnyFixed`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "1 = 1",
         "custom": undefined,
         "description": [
@@ -77,9 +76,7 @@ describe('with the preset `skinnyFixed`', () => {
         "sortOrder": "0.6",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "lineItems": {
-            "__typename": "LineItemsTargetInput",
             "predicate": "product.key = "skinny_jeans"",
             "type": "lineItems",
           },
@@ -87,9 +84,7 @@ describe('with the preset `skinnyFixed`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueFixedDraft",
           "money": {
-            "__typename": "MoneyInput",
             "centAmount": 2500,
             "currencyCode": "EUR",
             "fractionDigits": 2,

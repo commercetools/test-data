@@ -18,7 +18,6 @@ export type TAttributeDefinitionDraftGraphql = Omit<
   'label'
 > & {
   label: TLocalizedStringGraphql;
-  __typename: 'AttributeDefinitionDraft';
 };
 
 export type TAttributeDefinitionBuilder = TBuilder<TAttributeDefinition>;

@@ -42,7 +42,6 @@ describe('with the preset `discountPants`', () => {
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDiscountDraft",
         "description": [
           {
             "__typename": "LocalizedString",
@@ -64,14 +63,10 @@ describe('with the preset `discountPants`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "ProductDiscountValueRelativeDraft",
           "permyriad": 1000,
           "type": "relative",
         },
       }
     `);
-    expect(productDiscountDraft.__typename).toMatchInlineSnapshot(
-      `"ProductDiscountDraft"`
-    );
   });
 });

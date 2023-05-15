@@ -22,7 +22,6 @@ describe('with the preset `vip`', () => {
 
     expect(customerGroup).toMatchInlineSnapshot(`
       {
-        "__typename": "CustomerGroupDraft",
         "custom": null,
         "groupName": "VIP",
         "key": "vip",

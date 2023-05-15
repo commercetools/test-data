@@ -18,7 +18,6 @@ export type TProductTypeGraphql = TProductType & {
 export type TProductTypeDraft = ProductTypeDraft;
 
 export type TProductTypeDraftGraphql = TProductTypeDraft & {
-  __typename: 'ProductTypeDraft';
   attributeDefinitions: Array<TAttributeDefinitionDraftGraphql>;
 };
 
