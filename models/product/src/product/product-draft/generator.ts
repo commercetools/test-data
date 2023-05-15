@@ -14,7 +14,7 @@ const generator = Generator<TProductDraft>({
   fields: {
     name: fake(() => LocalizedString.random()),
     productType: fake(() => Reference.random().typeId('product-type')),
-    slug: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
     key: fake((f) => f.lorem.slug()),
     description: fake(() => LocalizedString.random()),
     categories: fake(() => [KeyReference.presets.category()]),
