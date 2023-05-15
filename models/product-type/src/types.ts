@@ -17,7 +17,7 @@ export type TProductTypeGraphql = TProductType & {
 
 export type TProductTypeDraft = ProductTypeDraft;
 
-export type TProductTypeDraftGraphql = TProductTypeDraft & {
+export type TProductTypeDraftGraphql = Omit<TProductTypeDraft, 'attributes'> & {
   attributeDefinitions: Array<TAttributeDefinitionDraftGraphql>;
 };
 
