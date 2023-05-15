@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-variant
 
+## 5.1.1
+
+### Patch Changes
+
+- [#254](https://github.com/commercetools/test-data/pull/254) [`8970865`](https://github.com/commercetools/test-data/commit/89708651f4c088517ce3f4d60a1650698a129a63) Thanks [@ByronDWall](https://github.com/ByronDWall)! - refactor(sku and slug): update handling of sku to use a random word followed by 3 random alphanumeric characters to insure sku uniqueness in line-item, product-variant, product-variant-draft, product-data, and product generator.ts files. update slug to use localizedString slug preset in product-draft generator.ts file.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.1.1
+  - @commercetools-test-data/attribute-definition@5.1.1
+  - @commercetools-test-data/commons@5.1.1
+  - @commercetools-test-data/utils@5.1.1
+
 ## 5.1.0
 
 ### Patch Changes
