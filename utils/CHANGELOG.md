@@ -1,5 +1,7 @@
 # @commercetools-test-data/utils
 
+## 5.2.0
+
 ## 5.1.1
 
 ## 5.1.0

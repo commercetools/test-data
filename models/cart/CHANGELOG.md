@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart
 
+## 5.2.0
+
+### Minor Changes
+
+- [#256](https://github.com/commercetools/test-data/pull/256) [`09f06a7`](https://github.com/commercetools/test-data/commit/09f06a7abde60674c7702b4bfb9be2d62fb6ab8e) Thanks [@jaikamat](https://github.com/jaikamat)! - remove \_\_typename from drafts
+
+### Patch Changes
+
+- Updated dependencies [[`09f06a7`](https://github.com/commercetools/test-data/commit/09f06a7abde60674c7702b4bfb9be2d62fb6ab8e)]:
+  - @commercetools-test-data/discount-code@5.2.0
+  - @commercetools-test-data/line-item@5.2.0
+  - @commercetools-test-data/customer@5.2.0
+  - @commercetools-test-data/commons@5.2.0
+  - @commercetools-test-data/core@5.2.0
+  - @commercetools-test-data/utils@5.2.0
+
 ## 5.1.1
 
 ### Patch Changes
