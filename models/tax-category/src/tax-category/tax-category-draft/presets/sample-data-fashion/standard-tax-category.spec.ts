@@ -72,13 +72,11 @@ describe('with a tax rate preset `standard tax category`', () => {
       standardTaxCategory().buildGraphql<TTaxCategoryDraftGraphql>();
     expect(taxCategoryGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "TaxCategoryDraft",
         "description": "",
         "key": "standard-tax",
         "name": "Standard Tax Category",
         "rates": [
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.19,
             "country": "DE",
             "includedInPrice": true,
@@ -87,7 +85,6 @@ describe('with a tax rate preset `standard tax category`', () => {
             "subRates": [],
           },
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.1,
             "country": "AU",
             "includedInPrice": true,
@@ -96,7 +93,6 @@ describe('with a tax rate preset `standard tax category`', () => {
             "subRates": [],
           },
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.21,
             "country": "ES",
             "includedInPrice": true,
@@ -105,7 +101,6 @@ describe('with a tax rate preset `standard tax category`', () => {
             "subRates": [],
           },
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.0625,
             "country": "US",
             "includedInPrice": false,
@@ -114,7 +109,6 @@ describe('with a tax rate preset `standard tax category`', () => {
             "subRates": [],
           },
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.0663,
             "country": "US",
             "includedInPrice": false,
@@ -123,7 +117,6 @@ describe('with a tax rate preset `standard tax category`', () => {
             "subRates": [],
           },
           {
-            "__typename": "TaxRateDraft",
             "amount": 0.07,
             "country": "US",
             "includedInPrice": false,
