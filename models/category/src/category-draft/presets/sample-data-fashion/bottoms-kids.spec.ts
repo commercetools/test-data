@@ -47,17 +47,9 @@ describe(`with bottomsKids preset`, () => {
 
     expect(bottomsKidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bottoms",
-          },
-        ],
-        "descriptionAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
@@ -70,13 +62,6 @@ describe(`with bottomsKids preset`, () => {
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bottoms",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

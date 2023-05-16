@@ -15,9 +15,7 @@ export type TDiscountCodeGraphql = TDiscountCode & {
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
-export type TDiscountCodeDraftGraphql = TDiscountCodeDraft & {
-  __typename: 'DiscountCodeDraft';
-};
+export type TDiscountCodeDraftGraphql = TDiscountCodeDraft;
 
 export type TDiscountCodeBuilder = TBuilder<TDiscountCode>;
 export type TDiscountCodeDraftBuilder = TBuilder<TDiscountCodeDraft>;

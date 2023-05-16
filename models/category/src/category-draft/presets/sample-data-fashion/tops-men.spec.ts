@@ -42,24 +42,15 @@ describe(`with topsMen preset`, () => {
 
     expect(topsMenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
-        "descriptionAllLocales": null,
         "externalId": undefined,
         "key": "tops-men",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tops",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

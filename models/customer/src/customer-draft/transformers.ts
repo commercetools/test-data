@@ -10,9 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TCustomerDraft, TCustomerDraftGraphql>('graphql', {
     buildFields: ['addresses', 'customerGroup'],
-    addFields: () => ({
-      __typename: 'CustomerDraft',
-    }),
   }),
 };
 

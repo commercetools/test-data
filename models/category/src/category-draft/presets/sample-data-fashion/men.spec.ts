@@ -43,17 +43,9 @@ describe(`with men preset`, () => {
 
     expect(menCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Items for men",
-          },
-        ],
-        "descriptionAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
@@ -66,13 +58,6 @@ describe(`with men preset`, () => {
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Men",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

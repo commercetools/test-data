@@ -9,9 +9,7 @@ export type TImageGraphql = TImage & {
 };
 
 //Graphql draft representation
-export type TImageDraftGraphql = TImage & {
-  __typename: 'ImageInput';
-};
+export type TImageDraftGraphql = TImage;
 
 export type TImageBuilder = TBuilder<TImage>;
 export type TCreateImageBuilder = () => TImageBuilder;

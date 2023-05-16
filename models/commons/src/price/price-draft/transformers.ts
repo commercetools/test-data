@@ -31,9 +31,6 @@ const transformers = {
       'discounted',
       'custom',
     ],
-    addFields: () => ({
-      __typename: 'ProductPriceDataInput',
-    }),
   }),
 };
 

@@ -27,14 +27,11 @@ describe('with aud2000 preset', () => {
       aud2000().buildGraphql<TShippingRateDraftGraphql>();
     expect(aud2000PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ShippingRateDraft",
         "freeAbove": {
-          "__typename": "BaseMoneyInput",
           "centAmount": 20000,
           "currencyCode": "AUD",
         },
         "price": {
-          "__typename": "BaseMoneyInput",
           "centAmount": 2000,
           "currencyCode": "AUD",
         },

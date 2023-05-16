@@ -41,9 +41,7 @@ describe('builder', () => {
           discountedQuantity: expect.any(Number),
           maxOccurrence: expect.any(Number),
           selectionMode: expect.any(String),
-          __typename: 'MultiBuyLineItemsTargetInput',
         },
-        __typename: 'CartDiscountTargetInput',
       })
     )
   );

@@ -73,7 +73,6 @@ describe('builder', () => {
         tiers: null,
         discounted: null,
         custom: null,
-        __typename: 'ProductPriceDataInput',
       })
     )
   );

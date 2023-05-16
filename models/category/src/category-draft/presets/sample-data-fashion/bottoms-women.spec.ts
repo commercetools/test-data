@@ -42,24 +42,15 @@ describe(`with bottomsWomen preset`, () => {
 
     expect(bottomsWomenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
-        "descriptionAllLocales": null,
         "externalId": undefined,
         "key": "bottoms-women",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bottoms",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

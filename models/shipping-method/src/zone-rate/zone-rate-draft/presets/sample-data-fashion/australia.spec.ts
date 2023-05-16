@@ -32,17 +32,13 @@ describe('with australia preset', () => {
       australia().buildGraphql<TZoneRateDraftGraphql>();
     expect(australiaPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneRateDraft",
         "shippingRates": [
           {
-            "__typename": "ShippingRateDraft",
             "freeAbove": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 20000,
               "currencyCode": "AUD",
             },
             "price": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 2000,
               "currencyCode": "AUD",
             },

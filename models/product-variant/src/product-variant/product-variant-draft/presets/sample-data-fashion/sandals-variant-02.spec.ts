@@ -74,11 +74,9 @@ describe(`with sandalsAU variant preset`, () => {
       sandalsVariant02().buildGraphql<TProductVariantDraft>();
     expect(sandalsVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "type",
             "value": {
               "key": "Shoes",
@@ -100,7 +98,6 @@ describe(`with sandalsAU variant preset`, () => {
         "key": "148097",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "AU",
             "custom": undefined,
@@ -111,7 +108,6 @@ describe(`with sandalsAU variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 1199,
               "currencyCode": "AUD",
               "fractionDigits": 2,
@@ -119,7 +115,6 @@ describe(`with sandalsAU variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -130,7 +125,6 @@ describe(`with sandalsAU variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 1000,
               "currencyCode": "USD",
               "fractionDigits": 2,

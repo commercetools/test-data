@@ -171,17 +171,14 @@ describe(`with necklace preset`, () => {
     const necklacePresetGraphql = necklace().buildGraphql<TProductDraft>();
     expect(necklacePresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "necklace",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "type",
               "value": {
                 "key": "Jewelry",
@@ -189,7 +186,6 @@ describe(`with necklace preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "engraving",
               "value": "Happy Anniversary",
             },
@@ -208,7 +204,6 @@ describe(`with necklace preset`, () => {
           "key": "752502",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "DE",
               "custom": undefined,
@@ -219,7 +214,6 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 5000,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -227,7 +221,6 @@ describe(`with necklace preset`, () => {
               },
             },
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "US",
               "custom": undefined,
@@ -238,7 +231,6 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 5000,
                 "currencyCode": "USD",
                 "fractionDigits": 2,
@@ -246,7 +238,6 @@ describe(`with necklace preset`, () => {
               },
             },
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "ES",
               "custom": undefined,
@@ -257,7 +248,6 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 5000,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -300,11 +290,9 @@ describe(`with necklace preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "type",
                 "value": {
                   "key": "Jewelry",
@@ -326,7 +314,6 @@ describe(`with necklace preset`, () => {
             "key": "42610",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "AU",
                 "custom": undefined,
@@ -337,7 +324,6 @@ describe(`with necklace preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 1575,
                   "currencyCode": "AUD",
                   "fractionDigits": 2,

@@ -1,3 +1,4 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinitionDraft,
@@ -18,7 +19,11 @@ const transformers = {
     TAttributeDefinitionDraftGraphql
   >('graphql', {
     buildFields: ['label', 'inputTip', 'type'],
-    addFields: () => ({ __typename: 'AttributeDefinitionDraft' }),
+    addFields: ({ fields }) => {
+      return {
+        label: LocalizedString.toLocalizedField(fields.label)!,
+      };
+    },
   }),
 };
 

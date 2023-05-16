@@ -57,11 +57,9 @@ describe(`with sportCoatVariant01 preset`, () => {
       sportCoatVariant01().buildGraphql<TProductVariantDraft>();
     expect(sportCoatVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "sleeve_length",
             "value": {
               "key": "Crop",
@@ -83,7 +81,6 @@ describe(`with sportCoatVariant01 preset`, () => {
         "key": "692457",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "AU",
             "custom": undefined,
@@ -94,7 +91,6 @@ describe(`with sportCoatVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 20000,
               "currencyCode": "AUD",
               "fractionDigits": 2,

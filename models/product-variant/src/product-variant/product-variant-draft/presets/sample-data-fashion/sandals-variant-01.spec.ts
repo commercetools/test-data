@@ -108,11 +108,9 @@ describe(`with sandals variant preset`, () => {
       sandalsVariant01().buildGraphql<TProductVariantDraft>();
     expect(sandalsVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "type",
             "value": {
               "key": "Shoes",
@@ -134,7 +132,6 @@ describe(`with sandals variant preset`, () => {
         "key": "148096",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "AU",
             "custom": undefined,
@@ -145,7 +142,6 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2500,
               "currencyCode": "AUD",
               "fractionDigits": 2,
@@ -153,7 +149,6 @@ describe(`with sandals variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -164,7 +159,6 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 3000,
               "currencyCode": "EUR",
               "fractionDigits": 2,
@@ -172,7 +166,6 @@ describe(`with sandals variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -183,7 +176,6 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2799,
               "currencyCode": "USD",
               "fractionDigits": 2,
@@ -191,7 +183,6 @@ describe(`with sandals variant preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "ES",
             "custom": undefined,
@@ -202,7 +193,6 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 3000,
               "currencyCode": "EUR",
               "fractionDigits": 2,

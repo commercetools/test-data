@@ -44,17 +44,9 @@ describe(`with women preset`, () => {
 
     expect(womenCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Items for women",
-          },
-        ],
-        "descriptionAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
@@ -67,13 +59,6 @@ describe(`with women preset`, () => {
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Women",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

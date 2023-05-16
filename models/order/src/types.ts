@@ -46,9 +46,7 @@ export type TOrderGraphql = TOrder & {
 
 export type TOrderFromCartDraft = OrderFromCartDraft;
 
-export type TOrderFromCartDraftGraphql = TOrderFromCartDraft & {
-  __typename: 'OrderCartCommand';
-};
+export type TOrderFromCartDraftGraphql = TOrderFromCartDraft;
 
 export type TOrderBuilder = TBuilder<TOrder>;
 export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraft>;

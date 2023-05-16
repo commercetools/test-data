@@ -16,9 +16,7 @@ const transformers = {
     replaceFields: ({ fields }) => ({
       multiBuyLineItems: {
         ...fields,
-        __typename: 'MultiBuyLineItemsTargetInput',
       },
-      __typename: 'CartDiscountTargetInput',
     }),
   }),
 };

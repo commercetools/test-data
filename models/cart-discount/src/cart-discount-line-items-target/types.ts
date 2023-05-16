@@ -10,10 +10,7 @@ export type TCartDiscountLineItemsTargetGraphql =
   };
 
 export type TCartDiscountLineItemsTargetDraftGraphql = {
-  lineItems: TCartDiscountLineItemsTarget & {
-    __typename: 'LineItemsTargetInput';
-  };
-  __typename: 'CartDiscountTargetInput';
+  lineItems: TCartDiscountLineItemsTarget;
 };
 
 export type TCartDiscountLineItemsTargetBuilder =

@@ -48,7 +48,6 @@ describe('with the preset `discountDresses`', () => {
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDiscountDraft",
         "description": [
           {
             "__typename": "LocalizedString",
@@ -70,9 +69,7 @@ describe('with the preset `discountDresses`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "ProductDiscountValueAbsoluteDraft",
           "money": {
-            "__typename": "MoneyInput",
             "centAmount": 500,
             "currencyCode": "EUR",
             "fractionDigits": 2,

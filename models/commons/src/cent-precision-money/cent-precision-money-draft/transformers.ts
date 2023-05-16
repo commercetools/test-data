@@ -18,7 +18,6 @@ const transformers = {
     TCentPrecisionMoneyDraftGraphql
   >('graphql', {
     buildFields: [],
-    addFields: () => ({ __typename: 'MoneyInput' }),
   }),
 };
 

@@ -13,9 +13,7 @@ export type TCartDiscountValueGiftLineItemGraphql =
     __typename: 'CartDiscountValueGiftLineItem';
   };
 export type TCartDiscountValueGiftLineItemDraftGraphql =
-  TCartDiscountValueGiftLineItemDraft & {
-    __typename: 'CartDiscountValueGiftLineItemDraft';
-  };
+  TCartDiscountValueGiftLineItemDraft;
 
 export type TCartDiscountValueGiftLineItemBuilder =
   TBuilder<TCartDiscountValueGiftLineItem>;

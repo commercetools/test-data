@@ -81,14 +81,12 @@ describe('builder', () => {
         externalTaxRate: null,
         externalPrice: expect.objectContaining({
           centAmount: expect.any(Number),
-          __typename: 'BaseMoneyInput',
         }),
         externalTotalPrice: null,
         custom: null,
         inventoryMode: expect.any(String),
         shippingDetails: null,
         addedAt: expect.any(String),
-        __typename: 'LineItemDraft',
       })
     )
   );

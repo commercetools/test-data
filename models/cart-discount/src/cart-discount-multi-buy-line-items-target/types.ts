@@ -12,10 +12,7 @@ export type TCartDiscountMultiBuyLineItemsTargetGraphql =
   };
 
 export type TCartDiscountMultiBuyLineItemsTargetDraftGraphql = {
-  multiBuyLineItems: TCartDiscountMultiBuyLineItemsTarget & {
-    __typename: 'MultiBuyLineItemsTargetInput';
-  };
-  __typename: 'CartDiscountTargetInput';
+  multiBuyLineItems: TCartDiscountMultiBuyLineItemsTarget;
 };
 
 export type TCartDiscountMultiBuyLineItemsTargetBuilder =

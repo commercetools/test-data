@@ -28,7 +28,6 @@ describe('with the preset `country spain and germany`', () => {
 
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneDraft",
         "description": undefined,
         "key": "europe",
         "locations": [

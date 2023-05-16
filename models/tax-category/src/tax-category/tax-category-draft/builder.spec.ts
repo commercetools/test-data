@@ -36,7 +36,6 @@ describe('builder', () => {
       'graphql',
       TaxCategoryDraft.random(),
       expect.objectContaining({
-        __typename: 'TaxCategoryDraft',
         key: expect.any(String),
         name: expect.any(String),
         description: expect.any(String),

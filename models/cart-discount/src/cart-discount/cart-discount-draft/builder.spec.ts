@@ -87,7 +87,6 @@ describe('builder', () => {
         validUntil: expect.any(String),
         requiresDiscountCode: expect.any(Boolean),
         stackingMode: expect.any(String),
-        __typename: 'CartDiscountDraft',
       })
     )
   );

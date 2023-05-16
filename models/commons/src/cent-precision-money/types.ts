@@ -10,9 +10,7 @@ export type TCentPrecisionMoneyDraft = CentPrecisionMoneyDraft;
 export type TCentPrecisionMoneyGraphql = TCentPrecisionMoney & {
   __typename: 'Money';
 };
-export type TCentPrecisionMoneyDraftGraphql = TCentPrecisionMoneyDraft & {
-  __typename: 'MoneyInput';
-};
+export type TCentPrecisionMoneyDraftGraphql = TCentPrecisionMoneyDraft;
 
 export type TCentPrecisionMoneyBuilder = TBuilder<TCentPrecisionMoney>;
 export type TCentPrecisionMoneyDraftBuilder =

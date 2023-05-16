@@ -30,11 +30,9 @@ describe(`with anniversaryShirtVariant02 preset`, () => {
       anniversaryShirtVariant02().buildGraphql<TProductVariantDraft>();
     expect(anniversaryShirtVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Medium",

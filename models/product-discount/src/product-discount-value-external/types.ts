@@ -13,9 +13,7 @@ export type TProductDiscountValueExternalGraphql =
     __typename: 'ProductDiscountValueExternal';
   };
 export type TProductDiscountValueExternalDraftGraphql =
-  TProductDiscountValueExternalDraft & {
-    __typename: 'ProductDiscountValueExternalDraft';
-  };
+  TProductDiscountValueExternalDraft;
 
 export type TProductDiscountValueExternalBuilder =
   TBuilder<TProductDiscountValueExternal>;

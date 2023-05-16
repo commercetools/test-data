@@ -12,7 +12,6 @@ export type TChannelDraftGraphql = Omit<
   TChannelDraft,
   'name' | 'description'
 > & {
-  __typename: 'ChannelDraft';
   name?: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql;
 };

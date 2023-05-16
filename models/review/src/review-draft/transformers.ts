@@ -10,9 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TReviewDraft, TReviewDraftGraphql>('graphql', {
     buildFields: [],
-    addFields: () => ({
-      __typename: 'ReviewDraft',
-    }),
   }),
 };
 

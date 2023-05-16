@@ -44,17 +44,9 @@ describe(`with kids preset`, () => {
 
     expect(kidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Items for kids",
-          },
-        ],
-        "descriptionAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
@@ -67,13 +59,6 @@ describe(`with kids preset`, () => {
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Kids",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

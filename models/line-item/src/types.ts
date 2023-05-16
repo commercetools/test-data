@@ -29,8 +29,6 @@ export type TCreateLineItemBuilder = () => TLineItemBuilder;
 
 export type TLineItemDraft = LineItemDraft;
 
-export type TLineItemDraftGraphql = TLineItemDraft & {
-  __typename: 'LineItemDraft';
-};
+export type TLineItemDraftGraphql = TLineItemDraft;
 export type TLineItemDraftBuilder = TBuilder<TLineItemDraft>;
 export type TCreateLineItemDraftBuilder = () => TLineItemDraftBuilder;

@@ -47,17 +47,9 @@ describe(`with topsKids preset`, () => {
 
     expect(topsKidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tops",
-          },
-        ],
-        "descriptionAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
@@ -70,13 +62,6 @@ describe(`with topsKids preset`, () => {
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tops",
-          },
-        ],
-        "nameAllLocales": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",

@@ -133,17 +133,14 @@ describe(`with toteBag preset`, () => {
     const toteBagPresetGraphql = toteBag().buildGraphql<TProductDraft>();
     expect(toteBagPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "tote_bag",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "type",
               "value": {
                 "key": "Bag",
@@ -165,7 +162,6 @@ describe(`with toteBag preset`, () => {
           "key": "718289",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "US",
               "custom": undefined,
@@ -176,7 +172,6 @@ describe(`with toteBag preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 13999,
                 "currencyCode": "USD",
                 "fractionDigits": 2,
@@ -219,11 +214,9 @@ describe(`with toteBag preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "type",
                 "value": {
                   "key": "Bag",
@@ -245,7 +238,6 @@ describe(`with toteBag preset`, () => {
             "key": "124965",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "US",
                 "custom": undefined,
@@ -256,7 +248,6 @@ describe(`with toteBag preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 17500,
                   "currencyCode": "USD",
                   "fractionDigits": 2,

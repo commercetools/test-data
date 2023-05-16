@@ -11,14 +11,19 @@ export type TCategoryDraftBuilder = TBuilder<TCategoryDraft>;
 export type TCreateCategoryDraftBuilder = () => TCategoryDraftBuilder;
 export type TCategoryDraftGraphql = Omit<
   TCategory,
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
   | 'name'
-  // In GraphQL, we prefer to use `descriptionAllLocales` instead of `description`.
   | 'description'
+  | 'slug'
+  | 'metaTitle'
+  | 'metaDescription'
+  | 'metaKeywords'
 > & {
-  __typename: 'CategoryDraft';
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
+  name: TLocalizedStringGraphql;
+  description?: TLocalizedStringGraphql | null;
+  slug: TLocalizedStringGraphql;
+  metaTitle?: TLocalizedStringGraphql | null;
+  metaDescription?: TLocalizedStringGraphql | null;
+  metaKeywords?: TLocalizedStringGraphql | null;
 };
 
 //Category
