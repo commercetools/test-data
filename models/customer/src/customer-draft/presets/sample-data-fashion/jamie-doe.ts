@@ -3,6 +3,7 @@ import {
   CustomerGroupDraft,
   type TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
+import { authenticationMode } from '../../../constants';
 import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
@@ -19,6 +20,7 @@ const jamieDoe = (): TCustomerDraftBuilder =>
     .lastName('Doe')
     .addresses([AddressDraft.presets.sampleDataFashion.jamieDoe()])
     .customerGroup(KeyReference.presets.customerGroup().key(customerGroup.key!))
-    .isEmailVerified(false);
+    .isEmailVerified(false)
+    .authenticationMode(authenticationMode.ExternalAuth);
 
 export default jamieDoe;
