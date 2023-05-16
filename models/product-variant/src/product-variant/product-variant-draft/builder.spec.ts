@@ -72,7 +72,6 @@ describe('builder', () => {
         prices: expect.arrayContaining([
           expect.objectContaining({
             value: expect.any(Object),
-            __typename: 'ProductPriceDataInput',
           }),
         ]),
         images: expect.arrayContaining([
@@ -82,19 +81,15 @@ describe('builder', () => {
             dimensions: expect.objectContaining({
               w: expect.any(Number),
               h: expect.any(Number),
-              __typename: 'DimensionsInput',
             }),
-            __typename: 'ImageInput',
           }),
         ]),
         attributes: expect.arrayContaining([
           expect.objectContaining({
             name: expect.any(String),
-            __typename: 'ProductAttributeInput',
           }),
         ]),
         assets: expect.arrayContaining([]),
-        __typename: 'ProductVariantInput',
       })
     )
   );

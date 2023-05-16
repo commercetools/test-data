@@ -147,7 +147,6 @@ describe('builder', () => {
           expect.objectContaining({
             sku: expect.any(String),
             quantity: expect.any(Number),
-            __typename: 'LineItemDraft',
           }),
         ]),
         customLineItems: expect.arrayContaining([]),
@@ -176,7 +175,6 @@ describe('builder', () => {
         shipping: expect.arrayContaining([]),
         itemShippingAddresses: expect.arrayContaining([]),
         discountCodes: expect.arrayContaining([expect.any(String)]),
-        __typename: 'CartDraft',
       })
     )
   );

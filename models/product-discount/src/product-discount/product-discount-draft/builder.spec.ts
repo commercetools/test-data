@@ -79,7 +79,6 @@ describe('builder', () => {
         isActive: expect.any(Boolean),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
-        __typename: 'ProductDiscountDraft',
       })
     )
   );

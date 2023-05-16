@@ -36,7 +36,6 @@ describe('builder', () => {
       'graphql',
       ZoneDraft.random(),
       expect.objectContaining({
-        __typename: 'ZoneDraft',
         name: expect.any(String),
         key: expect.any(String),
         description: expect.any(String),

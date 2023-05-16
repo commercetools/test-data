@@ -16,9 +16,7 @@ const transformers = {
     replaceFields: ({ fields }) => ({
       shipping: {
         ...fields,
-        __typename: 'ShippingTargetInput',
       },
-      __typename: 'CartDiscountTargetInput',
     }),
   }),
 };

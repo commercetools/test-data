@@ -16,9 +16,7 @@ const transformers = {
     replaceFields: ({ fields }) => ({
       lineItems: {
         ...fields,
-        __typename: 'LineItemsTargetInput',
       },
-      __typename: 'CartDiscountTargetInput',
     }),
   }),
 };

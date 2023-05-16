@@ -27,14 +27,11 @@ describe('with usd1299 preset', () => {
       usd1299().buildGraphql<TShippingRateDraftGraphql>();
     expect(usd1299PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ShippingRateDraft",
         "freeAbove": {
-          "__typename": "BaseMoneyInput",
           "centAmount": 10000,
           "currencyCode": "USD",
         },
         "price": {
-          "__typename": "BaseMoneyInput",
           "centAmount": 1299,
           "currencyCode": "USD",
         },

@@ -46,7 +46,6 @@ describe('builder', () => {
       'graphql',
       ShippingRateDraft.random(),
       expect.objectContaining({
-        __typename: 'ShippingRateDraft',
         price: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),

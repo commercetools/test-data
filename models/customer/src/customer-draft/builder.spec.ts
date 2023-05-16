@@ -90,7 +90,6 @@ describe('builder', () => {
       'graphql',
       CustomerDraft.random(),
       expect.objectContaining({
-        __typename: 'CustomerDraft',
         customerNumber: expect.any(String),
         email: expect.any(String),
         key: expect.any(String),
@@ -114,7 +113,6 @@ describe('builder', () => {
             city: expect.any(String),
             firstName: expect.any(String),
             lastName: expect.any(String),
-            __typename: 'AddressDraft',
           }),
         ]),
         defaultBillingAddress: null,

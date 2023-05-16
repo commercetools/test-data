@@ -47,7 +47,6 @@ describe(`with topsKids preset`, () => {
 
     expect(topsKidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [

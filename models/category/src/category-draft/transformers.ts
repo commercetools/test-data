@@ -10,7 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TCategoryDraft, TCategoryDraftGraphql>('graphql', {
     buildFields: ['description', 'name', 'slug', 'parent'],
-    addFields: () => ({ __typename: 'CategoryDraft' }),
   }),
 };
 

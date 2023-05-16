@@ -12,7 +12,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['cart', 'state'],
-      addFields: () => ({ __typename: 'OrderCartCommand' }),
     }
   ),
 };

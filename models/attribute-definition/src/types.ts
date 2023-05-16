@@ -15,10 +15,10 @@ export type TAttributeDefinitionGraphql = TAttributeDefinition & {
 
 export type TAttributeDefinitionDraftGraphql = Omit<
   TAttributeDefinitionDraft,
-  'label'
+  'label' | 'inputTip'
 > & {
   label: TLocalizedStringGraphql;
-  __typename: 'AttributeDefinitionDraft';
+  inputTip?: TLocalizedStringGraphql | null;
 };
 
 export type TAttributeDefinitionBuilder = TBuilder<TAttributeDefinition>;

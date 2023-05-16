@@ -85,7 +85,6 @@ describe(`with accessories preset`, () => {
         "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
-            "__typename": "AttributeDefinitionDraft",
             "attributeConstraint": "None",
             "inputHint": "SingleLine",
             "inputTip": [
@@ -125,7 +124,6 @@ describe(`with accessories preset`, () => {
             },
           },
           {
-            "__typename": "AttributeDefinitionDraft",
             "attributeConstraint": "None",
             "inputHint": "SingleLine",
             "inputTip": [

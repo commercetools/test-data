@@ -176,17 +176,14 @@ describe(`with denimJacket preset`, () => {
       denimJacket().buildGraphql<TProductDraft>();
     expect(denimJacketPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "denim_jacket",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "sleeve_length",
               "value": {
                 "key": "Normal",
@@ -194,7 +191,6 @@ describe(`with denimJacket preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "cotton",
               "value": false,
             },
@@ -213,7 +209,6 @@ describe(`with denimJacket preset`, () => {
           "key": "996024",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "DE",
               "custom": undefined,
@@ -224,7 +219,6 @@ describe(`with denimJacket preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 10000,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -232,7 +226,6 @@ describe(`with denimJacket preset`, () => {
               },
             },
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "ES",
               "custom": undefined,
@@ -243,7 +236,6 @@ describe(`with denimJacket preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 10000,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -286,11 +278,9 @@ describe(`with denimJacket preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "sleeve_length",
                 "value": {
                   "key": "Extra Long",
@@ -298,7 +288,6 @@ describe(`with denimJacket preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "cotton",
                 "value": false,
               },
@@ -317,7 +306,6 @@ describe(`with denimJacket preset`, () => {
             "key": "996025",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "DE",
                 "custom": undefined,
@@ -328,7 +316,6 @@ describe(`with denimJacket preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 10000,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,
@@ -336,7 +323,6 @@ describe(`with denimJacket preset`, () => {
                 },
               },
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "ES",
                 "custom": undefined,
@@ -347,7 +333,6 @@ describe(`with denimJacket preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 10000,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,

@@ -76,8 +76,31 @@ describe('builder', () => {
       'graphql',
       AddressDraft.random(),
       expect.objectContaining({
-        __typename: 'AddressDraft',
-        // ...
+        id: null,
+        key: expect.any(String),
+        title: expect.any(String),
+        salutation: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+        streetName: expect.any(String),
+        streetNumber: expect.any(String),
+        additionalStreetInfo: expect.any(String),
+        postalCode: expect.any(String),
+        city: expect.any(String),
+        region: null,
+        state: expect.any(String),
+        country: expect.any(String),
+        company: expect.any(String),
+        department: expect.any(String),
+        building: null,
+        apartment: null,
+        pOBox: 'PO Box 1033',
+        phone: expect.any(String),
+        mobile: expect.any(String),
+        fax: expect.any(String),
+        email: expect.any(String),
+        additionalAddressInfo: null,
+        externalId: null,
       })
     )
   );

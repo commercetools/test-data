@@ -78,11 +78,9 @@ describe(`with denimJacketVariant01 preset`, () => {
       denimJacketVariant01().buildGraphql<TProductVariantDraft>();
     expect(denimJacketVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "sleeve_length",
             "value": {
               "key": "Normal",
@@ -90,7 +88,6 @@ describe(`with denimJacketVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "cotton",
             "value": false,
           },
@@ -109,7 +106,6 @@ describe(`with denimJacketVariant01 preset`, () => {
         "key": "996024",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -120,7 +116,6 @@ describe(`with denimJacketVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 10000,
               "currencyCode": "EUR",
               "fractionDigits": 2,
@@ -128,7 +123,6 @@ describe(`with denimJacketVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "ES",
             "custom": undefined,
@@ -139,7 +133,6 @@ describe(`with denimJacketVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 10000,
               "currencyCode": "EUR",
               "fractionDigits": 2,

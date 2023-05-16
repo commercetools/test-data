@@ -46,7 +46,6 @@ describe('builder', () => {
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
         fractionDigits: 2,
-        __typename: 'MoneyInput',
       })
     )
   );

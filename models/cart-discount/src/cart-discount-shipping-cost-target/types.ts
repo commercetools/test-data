@@ -11,10 +11,7 @@ export type TCartDiscountShippingCostTargetGraphql =
   };
 
 export type TCartDiscountShippingCostTargetDraftGraphql = {
-  shipping: TCartDiscountShippingCostTarget & {
-    __typename: 'ShippingTargetInput';
-  };
-  __typename: 'CartDiscountTargetInput';
+  shipping: TCartDiscountShippingCostTarget;
 };
 
 export type TCartDiscountShippingCostTargetBuilder =

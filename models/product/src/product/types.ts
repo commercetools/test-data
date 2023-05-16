@@ -22,11 +22,19 @@ export type TProductGraphql = TProduct & {
 export type TProductDraft = ProductDraft;
 export type TProductDraftGraphql = Omit<
   TProductDraft,
-  'name' | 'description'
+  | 'name'
+  | 'description'
+  | 'slug'
+  | 'metaTitle'
+  | 'metaDescription'
+  | 'metaKeywords'
 > & {
   name: TLocalizedStringGraphql;
+  slug: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
-  __typename: 'ProductDraft';
+  metaTitle?: TLocalizedStringGraphql | null;
+  metaDescription?: TLocalizedStringGraphql | null;
+  metaKeywords?: TLocalizedStringGraphql | null;
 };
 
 export type TProductBuilder = TBuilder<TProduct>;

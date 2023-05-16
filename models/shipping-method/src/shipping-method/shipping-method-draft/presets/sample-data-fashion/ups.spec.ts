@@ -73,7 +73,6 @@ describe('with upsShippingMethod preset', () => {
     const upsPresetGraphql = ups().buildGraphql<TShippingMethodDraftGraphql>();
     expect(upsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ShippingMethodDraft",
         "custom": undefined,
         "isDefault": false,
         "key": "ups",
@@ -94,17 +93,13 @@ describe('with upsShippingMethod preset', () => {
         },
         "zoneRates": [
           {
-            "__typename": "ZoneRateDraft",
             "shippingRates": [
               {
-                "__typename": "ShippingRateDraft",
                 "freeAbove": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 10000,
                   "currencyCode": "USD",
                 },
                 "price": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 1299,
                   "currencyCode": "USD",
                 },
@@ -118,17 +113,13 @@ describe('with upsShippingMethod preset', () => {
             },
           },
           {
-            "__typename": "ZoneRateDraft",
             "shippingRates": [
               {
-                "__typename": "ShippingRateDraft",
                 "freeAbove": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 20000,
                   "currencyCode": "AUD",
                 },
                 "price": {
-                  "__typename": "BaseMoneyInput",
                   "centAmount": 2000,
                   "currencyCode": "AUD",
                 },

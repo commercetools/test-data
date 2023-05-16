@@ -11,9 +11,7 @@ export type TCartDiscountValueRelativeGraphql = TCartDiscountValueRelative & {
   __typename: 'CartDiscountValueRelative';
 };
 export type TCartDiscountValueRelativeDraftGraphql =
-  TCartDiscountValueRelativeDraft & {
-    __typename: 'CartDiscountValueRelativeDraft';
-  };
+  TCartDiscountValueRelativeDraft;
 
 export type TCartDiscountValueRelativeBuilder =
   TBuilder<TCartDiscountValueRelative>;

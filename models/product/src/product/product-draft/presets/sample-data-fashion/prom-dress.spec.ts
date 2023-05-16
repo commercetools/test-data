@@ -167,17 +167,14 @@ describe(`with promDress preset`, () => {
     const promDressPresetGraphql = promDress().buildGraphql<TProductDraft>();
     expect(promDressPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "prom_dress",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "color",
               "value": {
                 "key": "Floral",
@@ -199,7 +196,6 @@ describe(`with promDress preset`, () => {
           "key": "711595",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "DE",
               "custom": undefined,
@@ -210,7 +206,6 @@ describe(`with promDress preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 24795,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -218,7 +213,6 @@ describe(`with promDress preset`, () => {
               },
             },
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "US",
               "custom": undefined,
@@ -229,7 +223,6 @@ describe(`with promDress preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 17500,
                 "currencyCode": "USD",
                 "fractionDigits": 2,
@@ -272,11 +265,9 @@ describe(`with promDress preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "color",
                 "value": {
                   "key": "Pink",
@@ -298,7 +289,6 @@ describe(`with promDress preset`, () => {
             "key": "214452",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "ES",
                 "custom": undefined,
@@ -309,7 +299,6 @@ describe(`with promDress preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 12500,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,
@@ -317,7 +306,6 @@ describe(`with promDress preset`, () => {
                 },
               },
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "AU",
                 "custom": undefined,
@@ -328,7 +316,6 @@ describe(`with promDress preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 15000,
                   "currencyCode": "AUD",
                   "fractionDigits": 2,

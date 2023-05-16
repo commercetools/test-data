@@ -10,9 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TTaxCategoryDraft, TTaxCategoryDraftGraphql>('graphql', {
     buildFields: ['rates'],
-    addFields: () => ({
-      __typename: 'TaxCategoryDraft',
-    }),
   }),
 };
 

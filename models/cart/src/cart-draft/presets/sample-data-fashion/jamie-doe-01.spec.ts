@@ -133,10 +133,8 @@ describe('with the preset cart `jamieDoe01`', () => {
 
     expect(cartDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDraft",
         "anonymousId": undefined,
         "billingAddress": {
-          "__typename": "AddressDraft",
           "additionalAddressInfo": undefined,
           "additionalStreetInfo": undefined,
           "apartment": undefined,
@@ -185,7 +183,6 @@ describe('with the preset cart `jamieDoe01`', () => {
         "key": "jamie-01-cart",
         "lineItems": [
           {
-            "__typename": "LineItemDraft",
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": undefined,
@@ -201,7 +198,6 @@ describe('with the preset cart `jamieDoe01`', () => {
             "variantId": undefined,
           },
           {
-            "__typename": "LineItemDraft",
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": undefined,
@@ -221,7 +217,6 @@ describe('with the preset cart `jamieDoe01`', () => {
         "origin": "Merchant",
         "shipping": undefined,
         "shippingAddress": {
-          "__typename": "AddressDraft",
           "additionalAddressInfo": undefined,
           "additionalStreetInfo": undefined,
           "apartment": undefined,

@@ -22,9 +22,6 @@ const transformers = {
     TProductDiscountValueExternalDraftGraphql
   >('graphql', {
     buildFields: [],
-    addFields: () => ({
-      __typename: 'ProductDiscountValueExternalDraft',
-    }),
   }),
 };
 

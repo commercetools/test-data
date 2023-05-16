@@ -22,9 +22,6 @@ const transformers = {
     TCartDiscountValueGiftLineItemDraftGraphql
   >('graphql', {
     buildFields: ['product', 'supplyChannel', 'distributionChannel'],
-    addFields: () => ({
-      __typename: 'CartDiscountValueGiftLineItemDraft',
-    }),
   }),
 };
 

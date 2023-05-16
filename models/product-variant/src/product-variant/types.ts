@@ -20,7 +20,6 @@ export type TProductVariantDraftGraphql = Omit<
   'attributes'
 > & {
   attributes: Array<TAttributeDraftGraphql>;
-  __typename: 'ProductVariantInput';
 };
 
 export type TProductVariantBuilder = TBuilder<TProductVariant>;

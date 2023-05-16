@@ -98,11 +98,9 @@ describe(`with halloweenTopVariant01 preset`, () => {
       halloweenTopVariant01().buildGraphql<TProductVariantDraft>();
     expect(halloweenTopVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Medium",
@@ -110,7 +108,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "Purple",
@@ -132,7 +129,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
         "key": "888035",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "DE",
             "custom": undefined,
@@ -143,7 +139,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2500,
               "currencyCode": "EUR",
               "fractionDigits": 2,
@@ -151,7 +146,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -162,7 +156,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2500,
               "currencyCode": "USD",
               "fractionDigits": 2,
@@ -170,7 +163,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "ES",
             "custom": undefined,
@@ -181,7 +173,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 2500,
               "currencyCode": "EUR",
               "fractionDigits": 2,

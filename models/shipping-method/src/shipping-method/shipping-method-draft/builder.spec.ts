@@ -62,7 +62,6 @@ describe('builder', () => {
       'graphql',
       ShippingMethodDraft.random(),
       expect.objectContaining({
-        __typename: 'ShippingMethodDraft',
         key: expect.any(String),
         name: expect.any(String),
         localizedName: expect.arrayContaining([

@@ -24,7 +24,6 @@ describe('with the preset `country usa`', () => {
 
     expect(zone).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneDraft",
         "description": undefined,
         "key": "usa",
         "locations": [

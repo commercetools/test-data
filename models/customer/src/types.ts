@@ -7,9 +7,7 @@ export type TCustomerDraft = CustomerDraft;
 export type TCustomerGraphql = TCustomer & {
   __typename: 'Customer';
 };
-export type TCustomerDraftGraphql = TCustomerDraft & {
-  __typename: 'CustomerDraft';
-};
+export type TCustomerDraftGraphql = TCustomerDraft;
 
 export type TCustomerBuilder = TBuilder<TCustomer>;
 export type TCustomerDraftBuilder = TBuilder<TCustomerDraft>;

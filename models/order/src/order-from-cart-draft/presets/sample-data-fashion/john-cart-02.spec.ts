@@ -31,7 +31,6 @@ describe(`with johnCart02 preset`, () => {
       johnCart02(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(johnCart02OrderFromCartDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "OrderCartCommand",
         "cart": {
           "__typename": "Reference",
           "key": "john-02-cart",

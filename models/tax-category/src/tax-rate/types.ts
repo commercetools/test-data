@@ -7,9 +7,7 @@ export type TTaxRateDraft = TaxRateDraft;
 export type TTaxRateGraphql = TTaxRate & {
   __typename: 'TaxRate';
 };
-export type TTaxRateDraftGraphql = TTaxRateDraft & {
-  __typename: 'TaxRateDraft';
-};
+export type TTaxRateDraftGraphql = TTaxRateDraft;
 
 export type TTaxRateBuilder = TBuilder<TTaxRate>;
 export type TTaxRateDraftBuilder = TBuilder<TTaxRateDraft>;

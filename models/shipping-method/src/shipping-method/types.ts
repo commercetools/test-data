@@ -19,9 +19,7 @@ export type TShippingMethodGraphql = TShippingMethod & {
 };
 
 export type TShippingMethodDraft = ShippingMethodDraft;
-export type TShippingMethodDraftGraphql = TShippingMethodDraft & {
-  __typename: 'ShippingMethodDraft';
-};
+export type TShippingMethodDraftGraphql = TShippingMethodDraft;
 
 export type TShippingMethodBuilder = TBuilder<TShippingMethod>;
 export type TShippingMethodDraftBuilder = TBuilder<TShippingMethodDraft>;

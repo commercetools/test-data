@@ -22,9 +22,6 @@ const transformers = {
     TCartDiscountValueRelativeDraftGraphql
   >('graphql', {
     buildFields: [],
-    addFields: () => ({
-      __typename: 'CartDiscountValueRelativeDraft',
-    }),
   }),
 };
 

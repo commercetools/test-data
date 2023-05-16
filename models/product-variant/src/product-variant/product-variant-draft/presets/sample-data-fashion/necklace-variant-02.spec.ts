@@ -57,11 +57,9 @@ describe(`with necklace variant preset`, () => {
       necklaceVariant02().buildGraphql<TProductVariantDraft>();
     expect(necklaceVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "type",
             "value": {
               "key": "Jewelry",
@@ -83,7 +81,6 @@ describe(`with necklace variant preset`, () => {
         "key": "42610",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "AU",
             "custom": undefined,
@@ -94,7 +91,6 @@ describe(`with necklace variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 1575,
               "currencyCode": "AUD",
               "fractionDigits": 2,

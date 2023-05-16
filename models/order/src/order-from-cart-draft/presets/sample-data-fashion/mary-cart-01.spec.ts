@@ -31,7 +31,6 @@ describe(`with maryCart01 preset`, () => {
       maryCart01(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(maryCart01OrderFromCartDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "OrderCartCommand",
         "cart": {
           "__typename": "Reference",
           "key": "mary-01-cart",

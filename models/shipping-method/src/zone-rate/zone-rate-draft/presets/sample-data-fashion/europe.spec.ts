@@ -31,17 +31,13 @@ describe('with europe preset', () => {
     const europePresetGraphql = europe().buildGraphql<TZoneRateDraftGraphql>();
     expect(europePresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ZoneRateDraft",
         "shippingRates": [
           {
-            "__typename": "ShippingRateDraft",
             "freeAbove": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 15000,
               "currencyCode": "EUR",
             },
             "price": {
-              "__typename": "BaseMoneyInput",
               "centAmount": 1299,
               "currencyCode": "EUR",
             },

@@ -33,9 +33,7 @@ describe('builder', () => {
         lineItems: {
           type: 'lineItems',
           predicate: expect.any(String),
-          __typename: 'LineItemsTargetInput',
         },
-        __typename: 'CartDiscountTargetInput',
       })
     )
   );

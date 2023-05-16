@@ -21,7 +21,6 @@ export type TCartDiscountDraftGraphql = Omit<
 > & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
-  __typename: 'CartDiscountDraft';
 };
 
 export type TCartDiscountBuilder = TBuilder<TCartDiscount>;

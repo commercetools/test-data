@@ -49,7 +49,6 @@ describe('with the preset `employeeSale`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "CartDiscountDraft",
         "cartPredicate": "customer.customerGroup.key = "employee"",
         "custom": undefined,
         "description": [
@@ -72,9 +71,7 @@ describe('with the preset `employeeSale`', () => {
         "sortOrder": "0.8",
         "stackingMode": "Stacking",
         "target": {
-          "__typename": "CartDiscountTargetInput",
           "lineItems": {
-            "__typename": "LineItemsTargetInput",
             "predicate": "customer.customerGroup.key = "employee"",
             "type": "lineItems",
           },
@@ -82,7 +79,6 @@ describe('with the preset `employeeSale`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "CartDiscountValueRelativeDraft",
           "permyriad": 1500,
           "type": "relative",
         },

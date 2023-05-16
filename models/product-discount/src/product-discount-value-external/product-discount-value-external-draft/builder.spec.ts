@@ -43,7 +43,6 @@ describe('builder', () => {
       ProductDiscountValueExternalDraft.random(),
       expect.objectContaining({
         type: 'external',
-        __typename: 'ProductDiscountValueExternalDraft',
       })
     )
   );

@@ -10,7 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TLineItemDraft, TLineItemDraftGraphql>('graphql', {
     buildFields: ['supplyChannel', 'distributionChannel', 'externalPrice'],
-    addFields: () => ({ __typename: 'LineItemDraft' }),
   }),
 };
 

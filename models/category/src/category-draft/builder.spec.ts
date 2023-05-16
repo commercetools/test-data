@@ -62,7 +62,6 @@ describe('builder', () => {
       'graphql',
       CategoryDraft.random(),
       expect.objectContaining({
-        __typename: 'CategoryDraft',
         key: expect.any(String),
         externalId: expect.any(String),
         orderHint: expect.any(String),

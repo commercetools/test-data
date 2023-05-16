@@ -15,9 +15,7 @@ describe('builder', () => {
         dimensions: expect.objectContaining({
           w: expect.any(Number),
           h: expect.any(Number),
-          __typename: 'DimensionsInput',
         }),
-        __typename: 'ImageInput',
       })
     )
   );

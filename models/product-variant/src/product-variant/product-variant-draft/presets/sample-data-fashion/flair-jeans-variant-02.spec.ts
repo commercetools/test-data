@@ -51,11 +51,9 @@ describe(`with flairJeansVariant02 preset`, () => {
       flairJeansVariant02().buildGraphql<TProductVariantDraft>();
     expect(flairJeansVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "size",
             "value": {
               "key": "Medium",
@@ -63,7 +61,6 @@ describe(`with flairJeansVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "fit",
             "value": {
               "key": "Flair",
@@ -71,7 +68,6 @@ describe(`with flairJeansVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "Black",
@@ -79,7 +75,6 @@ describe(`with flairJeansVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductAttributeInput",
             "name": "length",
             "value": {
               "key": "Extra Long",

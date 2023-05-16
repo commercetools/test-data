@@ -84,7 +84,6 @@ describe('builder', () => {
         validFrom: expect.any(String),
         validUntil: expect.any(String),
         custom: null,
-        __typename: 'DiscountCodeDraft',
       })
     )
   );

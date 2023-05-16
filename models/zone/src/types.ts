@@ -7,9 +7,7 @@ export type TZoneDraft = ZoneDraft;
 export type TZoneGraphql = TZone & {
   __typename: 'Zone';
 };
-export type TZoneDraftGraphql = TZoneDraft & {
-  __typename: 'ZoneDraft';
-};
+export type TZoneDraftGraphql = TZoneDraft;
 
 export type TZoneBuilder = TBuilder<TZone>;
 export type TZoneDraftBuilder = TBuilder<TZoneDraft>;

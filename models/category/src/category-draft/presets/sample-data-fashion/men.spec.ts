@@ -43,7 +43,6 @@ describe(`with men preset`, () => {
 
     expect(menCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [

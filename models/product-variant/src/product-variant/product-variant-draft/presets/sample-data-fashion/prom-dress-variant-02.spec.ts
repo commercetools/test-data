@@ -74,11 +74,9 @@ describe(`with promDressVariant02 preset`, () => {
       promDressVariant02().buildGraphql<TProductVariantDraft>();
     expect(promDressVariant02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "color",
             "value": {
               "key": "Pink",
@@ -100,7 +98,6 @@ describe(`with promDressVariant02 preset`, () => {
         "key": "214452",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "ES",
             "custom": undefined,
@@ -111,7 +108,6 @@ describe(`with promDressVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 12500,
               "currencyCode": "EUR",
               "fractionDigits": 2,
@@ -119,7 +115,6 @@ describe(`with promDressVariant02 preset`, () => {
             },
           },
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "AU",
             "custom": undefined,
@@ -130,7 +125,6 @@ describe(`with promDressVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 15000,
               "currencyCode": "AUD",
               "fractionDigits": 2,

@@ -148,17 +148,14 @@ describe(`with skinnyJeans preset`, () => {
       skinnyJeans().buildGraphql<TProductDraft>();
     expect(skinnyJeansPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDraft",
         "categories": undefined,
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "skinny_jeans",
         "masterVariant": {
-          "__typename": "ProductVariantInput",
           "assets": undefined,
           "attributes": [
             {
-              "__typename": "ProductAttributeInput",
               "name": "fit",
               "value": {
                 "key": "Slim",
@@ -166,7 +163,6 @@ describe(`with skinnyJeans preset`, () => {
               },
             },
             {
-              "__typename": "ProductAttributeInput",
               "name": "size",
               "value": {
                 "key": "Medium",
@@ -188,7 +184,6 @@ describe(`with skinnyJeans preset`, () => {
           "key": "396594",
           "prices": [
             {
-              "__typename": "ProductPriceDataInput",
               "channel": undefined,
               "country": "DE",
               "custom": undefined,
@@ -199,7 +194,6 @@ describe(`with skinnyJeans preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "__typename": "MoneyInput",
                 "centAmount": 4999,
                 "currencyCode": "EUR",
                 "fractionDigits": 2,
@@ -242,11 +236,9 @@ describe(`with skinnyJeans preset`, () => {
         },
         "variants": [
           {
-            "__typename": "ProductVariantInput",
             "assets": undefined,
             "attributes": [
               {
-                "__typename": "ProductAttributeInput",
                 "name": "size",
                 "value": {
                   "key": "Large",
@@ -254,7 +246,6 @@ describe(`with skinnyJeans preset`, () => {
                 },
               },
               {
-                "__typename": "ProductAttributeInput",
                 "name": "fit",
                 "value": {
                   "key": "Slim",
@@ -276,7 +267,6 @@ describe(`with skinnyJeans preset`, () => {
             "key": "349700",
             "prices": [
               {
-                "__typename": "ProductPriceDataInput",
                 "channel": undefined,
                 "country": "DE",
                 "custom": undefined,
@@ -287,7 +277,6 @@ describe(`with skinnyJeans preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "__typename": "MoneyInput",
                   "centAmount": 4999,
                   "currencyCode": "EUR",
                   "fractionDigits": 2,

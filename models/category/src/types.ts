@@ -9,10 +9,21 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TCategoryDraft = CategoryDraft;
 export type TCategoryDraftBuilder = TBuilder<TCategoryDraft>;
 export type TCreateCategoryDraftBuilder = () => TCategoryDraftBuilder;
-export type TCategoryDraftGraphql = Omit<TCategory, 'name' | 'description'> & {
+export type TCategoryDraftGraphql = Omit<
+  TCategory,
+  | 'name'
+  | 'description'
+  | 'slug'
+  | 'metaTitle'
+  | 'metaDescription'
+  | 'metaKeywords'
+> & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
-  __typename: 'CategoryDraft';
+  slug: TLocalizedStringGraphql;
+  metaTitle?: TLocalizedStringGraphql | null;
+  metaDescription?: TLocalizedStringGraphql | null;
+  metaKeywords?: TLocalizedStringGraphql | null;
 };
 
 //Category

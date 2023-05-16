@@ -57,11 +57,9 @@ describe(`with toteBagVariant01 preset`, () => {
       toteBagVariant01().buildGraphql<TProductVariantDraft>();
     expect(toteBagVariant01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductVariantInput",
         "assets": undefined,
         "attributes": [
           {
-            "__typename": "ProductAttributeInput",
             "name": "type",
             "value": {
               "key": "Bag",
@@ -83,7 +81,6 @@ describe(`with toteBagVariant01 preset`, () => {
         "key": "718289",
         "prices": [
           {
-            "__typename": "ProductPriceDataInput",
             "channel": undefined,
             "country": "US",
             "custom": undefined,
@@ -94,7 +91,6 @@ describe(`with toteBagVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "__typename": "MoneyInput",
               "centAmount": 13999,
               "currencyCode": "USD",
               "fractionDigits": 2,

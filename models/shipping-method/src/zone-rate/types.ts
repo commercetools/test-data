@@ -10,9 +10,7 @@ export type TZoneRateGraphql = ZoneRate & {
 };
 
 export type TZoneRateDraft = ZoneRateDraft;
-export type TZoneRateDraftGraphql = TZoneRateDraft & {
-  __typename: 'ZoneRateDraft';
-};
+export type TZoneRateDraftGraphql = TZoneRateDraft;
 
 export type TZoneRateBuilder = TBuilder<TZoneRate>;
 export type TZoneRateDraftBuilder = TBuilder<TZoneRateDraft>;

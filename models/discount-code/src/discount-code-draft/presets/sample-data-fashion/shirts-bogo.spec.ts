@@ -43,7 +43,6 @@ describe('with the preset `employeeSale`', () => {
 
     expect(discountCodeDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "DiscountCodeDraft",
         "cartDiscounts": [
           {
             "__typename": "Reference",

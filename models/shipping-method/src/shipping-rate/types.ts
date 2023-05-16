@@ -7,9 +7,7 @@ export type TShippingRateDraft = ShippingRateDraft;
 export type TShippingRateGraphql = TShippingRate & {
   __typename: 'ShippingRate';
 };
-export type TShippingRateDraftGraphql = TShippingRateDraft & {
-  __typename: 'ShippingRateDraft';
-};
+export type TShippingRateDraftGraphql = TShippingRateDraft;
 
 export type TShippingRateBuilder = TBuilder<TShippingRate>;
 export type TShippingRateDraftBuilder = TBuilder<TShippingRateDraft>;

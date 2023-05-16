@@ -44,7 +44,6 @@ describe(`with kids preset`, () => {
 
     expect(kidsCategoryDraftGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "CategoryDraft",
         "assets": undefined,
         "custom": undefined,
         "description": [

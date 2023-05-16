@@ -89,7 +89,6 @@ describe('builder', () => {
         ]),
         inputHint: expect.any(String),
         isSearchable: expect.any(Boolean),
-        __typename: 'AttributeDefinitionDraft',
       })
     )
   );

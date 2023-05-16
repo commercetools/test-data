@@ -42,7 +42,6 @@ describe('with the preset `discountKids`', () => {
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductDiscountDraft",
         "description": [
           {
             "__typename": "LocalizedString",
@@ -64,7 +63,6 @@ describe('with the preset `discountKids`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "__typename": "ProductDiscountValueRelativeDraft",
           "permyriad": 2000,
           "type": "relative",
         },
