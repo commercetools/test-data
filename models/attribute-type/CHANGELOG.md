@@ -1,5 +1,18 @@
 # @commercetools-test-data/attribute-type
 
+## 5.3.0
+
+### Minor Changes
+
+- [#261](https://github.com/commercetools/test-data/pull/261) [`0d102a5`](https://github.com/commercetools/test-data/commit/0d102a540f7c2fe462f54f0e67e8b2d869d3bdc4) Thanks [@jaikamat](https://github.com/jaikamat)! - fix field dependency in customer presets, create additional attribute-type models, update snapshot tests
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.0
+  - @commercetools-test-data/commons@5.3.0
+  - @commercetools-test-data/utils@5.3.0
+
 ## 5.2.0
 
 ### Patch Changes
