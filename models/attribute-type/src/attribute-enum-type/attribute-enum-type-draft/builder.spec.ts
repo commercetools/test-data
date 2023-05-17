@@ -25,7 +25,7 @@ describe('builder', () => {
       'graphql',
       AttributeEnumTypeDraft.random(),
       expect.objectContaining({
-        enum: [],
+        enum: { values: [] },
       })
     )
   );

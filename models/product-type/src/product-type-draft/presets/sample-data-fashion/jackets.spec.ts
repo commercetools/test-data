@@ -106,20 +106,22 @@ describe(`with jackets preset`, () => {
             ],
             "name": "sleeve_length",
             "type": {
-              "enum": [
-                {
-                  "key": "Crop",
-                  "label": "Crop",
-                },
-                {
-                  "key": "Normal",
-                  "label": "Normal",
-                },
-                {
-                  "key": "Extra Long",
-                  "label": "Extra Long",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Crop",
+                    "label": "Crop",
+                  },
+                  {
+                    "key": "Normal",
+                    "label": "Normal",
+                  },
+                  {
+                    "key": "Extra Long",
+                    "label": "Extra Long",
+                  },
+                ],
+              },
             },
           },
           {
