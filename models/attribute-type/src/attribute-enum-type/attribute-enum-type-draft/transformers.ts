@@ -16,7 +16,7 @@ const transformers = {
     {
       buildFields: [],
       replaceFields: ({ fields }) => ({
-        enum: fields.values,
+        enum: { values: fields.values },
       }),
     }
   ),

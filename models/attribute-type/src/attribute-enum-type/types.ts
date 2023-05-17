@@ -11,7 +11,7 @@ export type TAttributeEnumTypeGraphql = AttributeEnumType & {
   __typename: 'AttributeEnumDefinitionType';
 };
 export type TAttributeEnumTypeDraftGraphql = {
-  enum: Array<AttributePlainEnumValue>;
+  enum: { values: Array<AttributePlainEnumValue> };
 };
 
 export type TAttributeEnumTypeBuilder = TBuilder<TAttributeEnumType>;
