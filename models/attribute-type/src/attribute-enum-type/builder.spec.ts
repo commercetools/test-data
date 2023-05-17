@@ -2,13 +2,13 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TAttributeEnumType, TAttributeEnumTypeGraphql } from './types';
-import * as AttributeType from './index';
+import * as AttributeEnumType from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeEnumType, TAttributeEnumType>(
       'default',
-      AttributeType.random(),
+      AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
         values: [],
@@ -19,7 +19,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeEnumType, TAttributeEnumType>(
       'rest',
-      AttributeType.random(),
+      AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
         values: [],
@@ -30,7 +30,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeEnumType, TAttributeEnumTypeGraphql>(
       'graphql',
-      AttributeType.random(),
+      AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
         values: [],

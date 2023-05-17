@@ -12,17 +12,6 @@ $ pnpm add -D @commercetools-test-data/attribute-type
 
 # Usage
 
-## `AttributeType`
-
-```ts
-import {
-  AttributeType,
-  type TAttributeType,
-} from '@commercetools-test-data/attribute-type';
-
-const attributeType = AttributeType.random().build<TAttributeType>();
-```
-
 ## `AttributePlainEnumValue`
 
 ```ts

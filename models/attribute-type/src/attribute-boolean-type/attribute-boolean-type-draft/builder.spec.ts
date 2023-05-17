@@ -6,13 +6,13 @@ import {
   TAttributeBooleanTypeDraft,
   TAttributeBooleanTypeDraftGraphql,
 } from '../types';
-import * as AttributeType from './index';
+import * as AttributeBooleanTypeDraft from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeBooleanType, TAttributeBooleanTypeDraft>(
       'default',
-      AttributeType.random(),
+      AttributeBooleanTypeDraft.random(),
       expect.objectContaining({
         name: 'boolean',
       })
@@ -25,7 +25,7 @@ describe('builder', () => {
       TAttributeBooleanTypeDraftGraphql
     >(
       'graphql',
-      AttributeType.random(),
+      AttributeBooleanTypeDraft.random(),
       expect.objectContaining({
         boolean: {
           dummy: null,

@@ -6,13 +6,13 @@ import {
   TAttributeEnumTypeDraft,
   TAttributeEnumTypeDraftGraphql,
 } from '../types';
-import * as AttributeType from './index';
+import * as AttributeEnumTypeDraft from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeEnumType, TAttributeEnumTypeDraft>(
       'default',
-      AttributeType.random(),
+      AttributeEnumTypeDraft.random(),
       expect.objectContaining({
         name: 'enum',
         values: [],
@@ -23,7 +23,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeEnumType, TAttributeEnumTypeDraftGraphql>(
       'graphql',
-      AttributeType.random(),
+      AttributeEnumTypeDraft.random(),
       expect.objectContaining({
         enum: [],
       })

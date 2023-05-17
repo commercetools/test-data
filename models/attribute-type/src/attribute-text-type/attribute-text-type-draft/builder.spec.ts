@@ -6,13 +6,13 @@ import {
   TAttributeTextTypeDraft,
   TAttributeTextTypeDraftGraphql,
 } from '../types';
-import * as AttributeType from './index';
+import * as AttributeTextTypeDraft from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeTextType, TAttributeTextTypeDraft>(
       'default',
-      AttributeType.random(),
+      AttributeTextTypeDraft.random(),
       expect.objectContaining({
         name: 'text',
       })
@@ -22,7 +22,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeTextType, TAttributeTextTypeDraftGraphql>(
       'graphql',
-      AttributeType.random(),
+      AttributeTextTypeDraft.random(),
       expect.objectContaining({
         text: {
           dummy: null,

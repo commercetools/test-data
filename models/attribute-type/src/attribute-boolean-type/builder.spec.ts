@@ -2,13 +2,13 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TAttributeBooleanType, TAttributeBooleanTypeGraphql } from './types';
-import * as AttributeType from './index';
+import * as AttributeBooleanType from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeBooleanType, TAttributeBooleanType>(
       'default',
-      AttributeType.random(),
+      AttributeBooleanType.random(),
       expect.objectContaining({
         name: 'boolean',
       })
@@ -18,7 +18,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeBooleanType, TAttributeBooleanType>(
       'rest',
-      AttributeType.random(),
+      AttributeBooleanType.random(),
       expect.objectContaining({
         name: 'boolean',
       })
@@ -28,7 +28,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TAttributeBooleanType, TAttributeBooleanTypeGraphql>(
       'graphql',
-      AttributeType.random(),
+      AttributeBooleanType.random(),
       expect.objectContaining({
         name: 'boolean',
         __typename: 'BooleanAttributeDefinitionType',

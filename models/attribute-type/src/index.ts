@@ -1,12 +1,10 @@
 // Export types
-export * from './attribute-type/types';
 export * from './attribute-plain-enum-value/types';
 export * from './attribute-enum-type/types';
 export * from './attribute-text-type/types';
 export * from './attribute-boolean-type/types';
 
 // Export models
-export * as AttributeType from './attribute-type';
 export * as AttributePlainEnumValue from './attribute-plain-enum-value';
 
 export * as AttributeEnumType from './attribute-enum-type';
