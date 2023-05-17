@@ -47,3 +47,27 @@ import {
 const attributeEnumType =
   AttributeEnumType.random().build<TAttributeEnumType>();
 ```
+
+## `AttributeTextType`
+
+```ts
+import {
+  AttributeTextType,
+  type TAttributeTextType,
+} from '@commercetools-test-data/attribute-type';
+
+const attributeTextType =
+  AttributeTextType.random().build<TAttributeTextType>();
+```
+
+## `AttributeBooleanType`
+
+```ts
+import {
+  AttributeBooleanType,
+  type TAttributeBooleanType,
+} from '@commercetools-test-data/attribute-type';
+
+const attributeBooleanType =
+  AttributeBooleanType.random().build<TAttributeBooleanType>();
+```

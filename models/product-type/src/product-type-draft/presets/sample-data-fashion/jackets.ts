@@ -1,7 +1,7 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import {
+  AttributeBooleanTypeDraft,
   AttributeEnumTypeDraft,
-  AttributeType,
 } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TProductTypeDraftBuilder } from '../../../types';
@@ -45,8 +45,7 @@ const jackets = (): TProductTypeDraftBuilder =>
         .label(LocalizedString.presets.empty()['en-US']('cotton'))
         .inputTip(LocalizedString.presets.empty()['en-US']('cotton'))
         .isRequired(false)
-        // @ts-ignore
-        .type(AttributeType.random().name('boolean'))
+        .type(AttributeBooleanTypeDraft.random().name('boolean'))
         .attributeConstraint('None')
         .isSearchable(false)
         .inputHint('SingleLine'),

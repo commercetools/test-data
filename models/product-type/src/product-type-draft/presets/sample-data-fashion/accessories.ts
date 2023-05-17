@@ -1,7 +1,7 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import {
-  AttributeType,
   AttributeEnumTypeDraft,
+  AttributeTextTypeDraft,
 } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TProductTypeDraftBuilder } from '../../../types';
@@ -45,8 +45,7 @@ const accessories = (): TProductTypeDraftBuilder =>
         .label(LocalizedString.presets.empty()['en-US']('Engraving'))
         .inputTip(LocalizedString.presets.empty()['en-US']('Engraving'))
         .isRequired(false)
-        // @ts-ignore
-        .type(AttributeType.random().name('text'))
+        .type(AttributeTextTypeDraft.random().name('text'))
         .attributeConstraint('None')
         .isSearchable(false)
         .inputHint('SingleLine'),
