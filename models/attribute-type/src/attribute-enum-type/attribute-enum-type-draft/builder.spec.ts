@@ -15,7 +15,7 @@ describe('builder', () => {
       AttributeType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: null,
+        values: [],
       })
     )
   );
@@ -25,7 +25,7 @@ describe('builder', () => {
       'graphql',
       AttributeType.random(),
       expect.objectContaining({
-        enum: null,
+        enum: [],
       })
     )
   );

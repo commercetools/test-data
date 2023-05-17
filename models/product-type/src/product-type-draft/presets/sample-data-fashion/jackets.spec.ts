@@ -144,7 +144,7 @@ describe(`with jackets preset`, () => {
             "name": "cotton",
             "type": {
               "boolean": {
-                "dummy": "boolean",
+                "dummy": null,
               },
             },
           },

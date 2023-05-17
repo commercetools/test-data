@@ -28,7 +28,7 @@ describe('builder', () => {
       AttributeType.random(),
       expect.objectContaining({
         boolean: {
-          dummy: 'boolean',
+          dummy: null,
         },
       })
     )

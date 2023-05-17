@@ -16,9 +16,9 @@ const transformers = {
     TAttributeBooleanTypeDraftGraphql
   >('graphql', {
     buildFields: [],
-    replaceFields: ({ fields }) => ({
+    replaceFields: () => ({
       boolean: {
-        dummy: fields.name,
+        dummy: null,
       },
     }),
   }),

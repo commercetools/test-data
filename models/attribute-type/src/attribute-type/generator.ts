@@ -26,6 +26,6 @@ export const generator = Generator<TAttributeType>({
 export const enumGenerator = Generator<AttributeEnumType>({
   fields: {
     name: 'enum',
-    values: null,
+    values: [],
   },
 });

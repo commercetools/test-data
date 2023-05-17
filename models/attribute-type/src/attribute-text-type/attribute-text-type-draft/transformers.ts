@@ -15,9 +15,9 @@ const transformers = {
     'graphql',
     {
       buildFields: [],
-      replaceFields: ({ fields }) => ({
+      replaceFields: () => ({
         text: {
-          dummy: fields.name,
+          dummy: null,
         },
       }),
     }

@@ -9,7 +9,7 @@ export type TAttributeBooleanTypeGraphql = AttributeBooleanType & {
 };
 export type TAttributeBooleanTypeDraftGraphql = {
   boolean: {
-    dummy: string;
+    dummy: string | null;
   };
 };
 

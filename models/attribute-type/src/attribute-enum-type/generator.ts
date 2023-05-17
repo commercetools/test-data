@@ -6,6 +6,6 @@ import { TAttributeEnumType } from './types';
 export const generator = Generator<TAttributeEnumType>({
   fields: {
     name: 'enum',
-    values: null,
+    values: [],
   },
 });

@@ -11,7 +11,7 @@ describe('builder', () => {
       AttributeType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: null,
+        values: [],
       })
     )
   );
@@ -22,7 +22,7 @@ describe('builder', () => {
       AttributeType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: null,
+        values: [],
       })
     )
   );
@@ -33,7 +33,7 @@ describe('builder', () => {
       AttributeType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: null,
+        values: [],
         __typename: 'AttributeEnumDefinitionType',
       })
     )

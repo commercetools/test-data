@@ -9,7 +9,7 @@ export type TAttributeTextTypeGraphql = AttributeTextType & {
 };
 export type TAttributeTextTypeDraftGraphql = {
   text: {
-    dummy: string;
+    dummy: string | null;
   };
 };
 
