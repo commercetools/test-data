@@ -192,9 +192,7 @@ describe(`with pants preset`, () => {
             ],
             "name": "size",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Small",
                   "label": "Small",
@@ -231,9 +229,7 @@ describe(`with pants preset`, () => {
             ],
             "name": "fit",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Slim",
                   "label": "Slim",
@@ -270,9 +266,7 @@ describe(`with pants preset`, () => {
             ],
             "name": "color",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Blue",
                   "label": "Blue",
@@ -309,9 +303,7 @@ describe(`with pants preset`, () => {
             ],
             "name": "length",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Ankle",
                   "label": "Ankle",

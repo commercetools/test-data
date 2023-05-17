@@ -1,4 +1,5 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
+import { authenticationMode } from '../../../constants';
 import { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
@@ -10,6 +11,7 @@ const marySmith = (): TCustomerDraftBuilder =>
     .firstName('Mary')
     .lastName('Smith')
     .addresses([AddressDraft.presets.sampleDataFashion.marySmith()])
-    .isEmailVerified(false);
+    .isEmailVerified(false)
+    .authenticationMode(authenticationMode.ExternalAuth);
 
 export default marySmith;

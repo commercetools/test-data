@@ -1,4 +1,8 @@
-import { AttributeType } from '@commercetools-test-data/attribute-type';
+import {
+  AttributeBooleanTypeDraft,
+  AttributeEnumTypeDraft,
+  AttributeTextTypeDraft,
+} from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { attributeConstraints, inputHints } from '../constants';
@@ -8,7 +12,13 @@ import type { TAttributeDefinitionDraft } from '../types';
 
 const generator = Generator<TAttributeDefinitionDraft>({
   fields: {
-    type: fake(() => AttributeType.random()),
+    type: fake((f) =>
+      f.helpers.arrayElement([
+        AttributeBooleanTypeDraft.random(),
+        AttributeTextTypeDraft.random(),
+        AttributeEnumTypeDraft.random(),
+      ])
+    ),
     name: fake((f) => f.lorem.slug(3)),
     label: fake(() => LocalizedString.random()),
     inputTip: fake(() => LocalizedString.random()),

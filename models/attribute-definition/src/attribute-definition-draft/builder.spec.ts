@@ -66,10 +66,7 @@ describe('builder', () => {
       'graphql',
       AttributeDefinitionDraft.random(),
       expect.objectContaining({
-        type: expect.objectContaining({
-          name: expect.any(String),
-          __typename: expect.any(String),
-        }),
+        type: expect.any(Object),
         name: expect.any(String),
         label: expect.arrayContaining([
           expect.objectContaining({

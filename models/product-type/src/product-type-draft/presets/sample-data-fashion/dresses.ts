@@ -1,5 +1,5 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
-import { AttributeType } from '@commercetools-test-data/attribute-type';
+import { AttributeEnumTypeDraft } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -18,7 +18,7 @@ const dresses = (): TProductTypeDraftBuilder =>
         .inputTip(LocalizedString.presets.empty()['en-US']('Length'))
         .isRequired(false)
         .type(
-          AttributeType.presets.enumType().values([
+          AttributeEnumTypeDraft.random().values([
             {
               key: 'Maxi',
               label: 'Maxi',
@@ -43,7 +43,7 @@ const dresses = (): TProductTypeDraftBuilder =>
         .inputTip(LocalizedString.presets.empty()['en-US']('Color'))
         .isRequired(false)
         .type(
-          AttributeType.presets.enumType().values([
+          AttributeEnumTypeDraft.random().values([
             {
               key: 'White',
               label: 'White',
