@@ -120,9 +120,7 @@ describe(`with dresses preset`, () => {
             ],
             "name": "length",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Maxi",
                   "label": "Maxi",
@@ -159,9 +157,7 @@ describe(`with dresses preset`, () => {
             ],
             "name": "color",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "White",
                   "label": "White",

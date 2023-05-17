@@ -124,9 +124,7 @@ describe(`with shirts preset`, () => {
             ],
             "name": "size",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Small",
                   "label": "Small",
@@ -163,9 +161,7 @@ describe(`with shirts preset`, () => {
             ],
             "name": "color",
             "type": {
-              "__typename": "enum",
-              "name": "enum",
-              "values": [
+              "enum": [
                 {
                   "key": "Red",
                   "label": "Red",

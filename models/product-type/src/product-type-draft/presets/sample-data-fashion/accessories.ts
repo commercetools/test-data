@@ -1,5 +1,8 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
-import { AttributeType } from '@commercetools-test-data/attribute-type';
+import {
+  AttributeType,
+  AttributeEnumTypeDraft,
+} from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -18,7 +21,7 @@ const accessories = (): TProductTypeDraftBuilder =>
         .inputTip(LocalizedString.presets.empty()['en-US']('Type'))
         .isRequired(true)
         .type(
-          AttributeType.presets.enumType().values([
+          AttributeEnumTypeDraft.random().values([
             {
               key: 'Jewelry',
               label: 'Jewelry',
