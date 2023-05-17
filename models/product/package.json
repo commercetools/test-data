@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/product",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "description": "Data models for commercetools API Product",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,13 +19,13 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/category": "5.3.0",
-    "@commercetools-test-data/commons": "5.3.0",
-    "@commercetools-test-data/core": "5.3.0",
-    "@commercetools-test-data/product-type": "5.3.0",
-    "@commercetools-test-data/product-variant": "5.3.0",
-    "@commercetools-test-data/tax-category": "5.3.0",
-    "@commercetools-test-data/utils": "5.3.0",
+    "@commercetools-test-data/category": "5.3.1",
+    "@commercetools-test-data/commons": "5.3.1",
+    "@commercetools-test-data/core": "5.3.1",
+    "@commercetools-test-data/product-type": "5.3.1",
+    "@commercetools-test-data/product-variant": "5.3.1",
+    "@commercetools-test-data/tax-category": "5.3.1",
+    "@commercetools-test-data/utils": "5.3.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }
