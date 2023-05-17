@@ -35,3 +35,15 @@ import {
 const attributePlainEnumValue =
   AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();
 ```
+
+## `AttributeEnumType`
+
+```ts
+import {
+  AttributeEnumType,
+  type TAttributeEnumType,
+} from '@commercetools-test-data/attribute-type';
+
+const attributeEnumType =
+  AttributeEnumType.random().build<TAttributeEnumType>();
+```
