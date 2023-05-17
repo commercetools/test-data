@@ -5,7 +5,7 @@ import type {
 import accessories from './accessories';
 
 describe(`with accessories preset`, () => {
-  it(`should create an accesories product type draft`, () => {
+  it(`should create an accessories product type draft`, () => {
     const accessoriesProductType = accessories().build<TProductTypeDraft>();
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
@@ -76,7 +76,7 @@ describe(`with accessories preset`, () => {
     `);
   });
 
-  it(`should create an accesories product type draft when built for GraphQl`, () => {
+  it(`should create an accessories product type draft when built for GraphQl`, () => {
     const accessoriesProductType =
       accessories().buildGraphql<TProductTypeDraftGraphql>();
 
