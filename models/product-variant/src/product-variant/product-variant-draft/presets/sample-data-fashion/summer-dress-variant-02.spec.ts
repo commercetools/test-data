@@ -91,10 +91,12 @@ describe(`with summerDressVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 7500,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 7500,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

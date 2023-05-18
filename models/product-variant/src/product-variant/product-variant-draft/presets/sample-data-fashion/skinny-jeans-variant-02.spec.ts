@@ -105,10 +105,12 @@ describe(`with skinnyJeansVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 4999,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 4999,
+                "currencyCode": "EUR",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

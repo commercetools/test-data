@@ -206,10 +206,12 @@ describe(`with promDress preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 24795,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 24795,
+                  "currencyCode": "EUR",
+                  "fractionDigits": 2,
+                  "type": "centPrecision",
+                },
               },
             },
             {
@@ -223,10 +225,12 @@ describe(`with promDress preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 17500,
-                "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 17500,
+                  "currencyCode": "USD",
+                  "fractionDigits": 2,
+                  "type": "centPrecision",
+                },
               },
             },
           ],
@@ -299,10 +303,12 @@ describe(`with promDress preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 12500,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 12500,
+                    "currencyCode": "EUR",
+                    "fractionDigits": 2,
+                    "type": "centPrecision",
+                  },
                 },
               },
               {
@@ -316,10 +322,12 @@ describe(`with promDress preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 15000,
-                  "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 15000,
+                    "currencyCode": "AUD",
+                    "fractionDigits": 2,
+                    "type": "centPrecision",
+                  },
                 },
               },
             ],

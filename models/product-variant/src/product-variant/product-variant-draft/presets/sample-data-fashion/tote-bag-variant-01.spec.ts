@@ -91,10 +91,12 @@ describe(`with toteBagVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 13999,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 13999,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

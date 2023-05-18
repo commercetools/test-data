@@ -139,10 +139,12 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2500,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2500,
+                "currencyCode": "EUR",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
           {
@@ -156,10 +158,12 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2500,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2500,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
           {
@@ -173,10 +177,12 @@ describe(`with halloweenTopVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2500,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2500,
+                "currencyCode": "EUR",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

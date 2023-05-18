@@ -116,10 +116,12 @@ describe(`with denimJacketVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 10000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 10000,
+                "currencyCode": "EUR",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
           {
@@ -133,10 +135,12 @@ describe(`with denimJacketVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 10000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 10000,
+                "currencyCode": "EUR",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

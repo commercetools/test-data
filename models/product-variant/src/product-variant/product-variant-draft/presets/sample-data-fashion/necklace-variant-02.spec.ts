@@ -91,10 +91,12 @@ describe(`with necklace variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 1575,
-              "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 1575,
+                "currencyCode": "AUD",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

@@ -1,4 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
+import { TMoneyGraphql } from '../../money';
 import type { TPriceDraft, TPriceDraftGraphql } from '../types';
 
 const transformers = {
@@ -31,6 +32,12 @@ const transformers = {
       'discounted',
       'custom',
     ],
+    replaceFields: ({ fields }) => ({
+      ...fields,
+      value: {
+        centPrecision: fields.value as TMoneyGraphql,
+      },
+    }),
   }),
 };
 

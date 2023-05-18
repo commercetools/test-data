@@ -133,10 +133,12 @@ describe(`with toddlerTrousersVariant03 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2599,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2599,
+                "currencyCode": "USD",
+                "fractionDigits": 2,
+                "type": "centPrecision",
+              },
             },
           },
         ],

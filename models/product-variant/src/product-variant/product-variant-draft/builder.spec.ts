@@ -71,7 +71,9 @@ describe('builder', () => {
         sku: expect.any(String),
         prices: expect.arrayContaining([
           expect.objectContaining({
-            value: expect.any(Object),
+            value: {
+              centPrecision: expect.any(Object),
+            },
           }),
         ]),
         images: expect.arrayContaining([
