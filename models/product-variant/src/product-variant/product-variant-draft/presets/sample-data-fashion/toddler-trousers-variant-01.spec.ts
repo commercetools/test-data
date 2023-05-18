@@ -63,8 +63,6 @@ describe(`with toddlerTrousersVariant01 preset`, () => {
             "value": {
               "centAmount": 2599,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -135,8 +133,6 @@ describe(`with toddlerTrousersVariant01 preset`, () => {
               "centPrecision": {
                 "centAmount": 2599,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

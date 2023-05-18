@@ -46,8 +46,6 @@ describe(`with sportCoat preset`, () => {
               "value": {
                 "centAmount": 20000,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -117,8 +115,6 @@ describe(`with sportCoat preset`, () => {
                 "value": {
                   "centAmount": 20000,
                   "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -174,8 +170,6 @@ describe(`with sportCoat preset`, () => {
                 "centPrecision": {
                   "centAmount": 20000,
                   "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -251,8 +245,6 @@ describe(`with sportCoat preset`, () => {
                   "centPrecision": {
                     "centAmount": 20000,
                     "currencyCode": "AUD",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },

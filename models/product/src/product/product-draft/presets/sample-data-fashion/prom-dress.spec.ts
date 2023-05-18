@@ -46,8 +46,6 @@ describe(`with promDress preset`, () => {
               "value": {
                 "centAmount": 24795,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -63,8 +61,6 @@ describe(`with promDress preset`, () => {
               "value": {
                 "centAmount": 17500,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -134,8 +130,6 @@ describe(`with promDress preset`, () => {
                 "value": {
                   "centAmount": 12500,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
               {
@@ -151,8 +145,6 @@ describe(`with promDress preset`, () => {
                 "value": {
                   "centAmount": 15000,
                   "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -208,8 +200,6 @@ describe(`with promDress preset`, () => {
                 "centPrecision": {
                   "centAmount": 24795,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -227,8 +217,6 @@ describe(`with promDress preset`, () => {
                 "centPrecision": {
                   "centAmount": 17500,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -304,8 +292,6 @@ describe(`with promDress preset`, () => {
                   "centPrecision": {
                     "centAmount": 12500,
                     "currencyCode": "EUR",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },
@@ -323,8 +309,6 @@ describe(`with promDress preset`, () => {
                   "centPrecision": {
                     "centAmount": 15000,
                     "currencyCode": "AUD",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },

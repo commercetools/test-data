@@ -42,8 +42,6 @@ describe(`with summerDressVariant02 preset`, () => {
             "value": {
               "centAmount": 7500,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -93,8 +91,6 @@ describe(`with summerDressVariant02 preset`, () => {
               "centPrecision": {
                 "centAmount": 7500,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

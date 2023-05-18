@@ -42,8 +42,6 @@ describe(`with sandalsAU variant preset`, () => {
             "value": {
               "centAmount": 1199,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -59,8 +57,6 @@ describe(`with sandalsAU variant preset`, () => {
             "value": {
               "centAmount": 1000,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -110,8 +106,6 @@ describe(`with sandalsAU variant preset`, () => {
               "centPrecision": {
                 "centAmount": 1199,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -129,8 +123,6 @@ describe(`with sandalsAU variant preset`, () => {
               "centPrecision": {
                 "centAmount": 1000,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

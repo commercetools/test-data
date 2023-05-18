@@ -42,8 +42,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 2500,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -59,8 +57,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 3000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -76,8 +72,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 2799,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -93,8 +87,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 3000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -144,8 +136,6 @@ describe(`with sandals variant preset`, () => {
               "centPrecision": {
                 "centAmount": 2500,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -163,8 +153,6 @@ describe(`with sandals variant preset`, () => {
               "centPrecision": {
                 "centAmount": 3000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -182,8 +170,6 @@ describe(`with sandals variant preset`, () => {
               "centPrecision": {
                 "centAmount": 2799,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -201,8 +187,6 @@ describe(`with sandals variant preset`, () => {
               "centPrecision": {
                 "centAmount": 3000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

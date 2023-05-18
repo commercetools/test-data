@@ -49,8 +49,6 @@ describe(`with maternityTopVariant01 preset`, () => {
             "value": {
               "centAmount": 2695,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -107,8 +105,6 @@ describe(`with maternityTopVariant01 preset`, () => {
               "centPrecision": {
                 "centAmount": 2695,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

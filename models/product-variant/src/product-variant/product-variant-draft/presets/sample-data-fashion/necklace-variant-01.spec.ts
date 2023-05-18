@@ -46,8 +46,6 @@ describe(`with necklace variant preset`, () => {
             "value": {
               "centAmount": 5000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -63,8 +61,6 @@ describe(`with necklace variant preset`, () => {
             "value": {
               "centAmount": 5000,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -80,8 +76,6 @@ describe(`with necklace variant preset`, () => {
             "value": {
               "centAmount": 5000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -135,8 +129,6 @@ describe(`with necklace variant preset`, () => {
               "centPrecision": {
                 "centAmount": 5000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -154,8 +146,6 @@ describe(`with necklace variant preset`, () => {
               "centPrecision": {
                 "centAmount": 5000,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },
@@ -173,8 +163,6 @@ describe(`with necklace variant preset`, () => {
               "centPrecision": {
                 "centAmount": 5000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

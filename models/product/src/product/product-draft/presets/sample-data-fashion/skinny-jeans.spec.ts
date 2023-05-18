@@ -53,8 +53,6 @@ describe(`with skinnyJeans preset`, () => {
               "value": {
                 "centAmount": 4999,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -131,8 +129,6 @@ describe(`with skinnyJeans preset`, () => {
                 "value": {
                   "centAmount": 4999,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -196,8 +192,6 @@ describe(`with skinnyJeans preset`, () => {
                 "centPrecision": {
                   "centAmount": 4999,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -280,8 +274,6 @@ describe(`with skinnyJeans preset`, () => {
                   "centPrecision": {
                     "centAmount": 4999,
                     "currencyCode": "EUR",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },

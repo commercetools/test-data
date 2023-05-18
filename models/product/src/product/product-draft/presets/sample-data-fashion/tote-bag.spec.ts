@@ -46,8 +46,6 @@ describe(`with toteBag preset`, () => {
               "value": {
                 "centAmount": 13999,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -117,8 +115,6 @@ describe(`with toteBag preset`, () => {
                 "value": {
                   "centAmount": 17500,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -174,8 +170,6 @@ describe(`with toteBag preset`, () => {
                 "centPrecision": {
                   "centAmount": 13999,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -251,8 +245,6 @@ describe(`with toteBag preset`, () => {
                   "centPrecision": {
                     "centAmount": 17500,
                     "currencyCode": "USD",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },

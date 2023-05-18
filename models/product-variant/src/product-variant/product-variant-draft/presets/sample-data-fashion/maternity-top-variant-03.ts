@@ -1,7 +1,4 @@
-import {
-  CentPrecisionMoney,
-  PriceDraft,
-} from '@commercetools-test-data/commons';
+import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import * as ProductVariantDraft from '../..';
 import { AttributeDraft } from '../../../../attribute/';
 import * as Image from '../../../../image';
@@ -15,11 +12,7 @@ const maternityTopVariant03 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(
-          CentPrecisionMoney.CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(2695)
-        )
+        .value(Money.random().currencyCode('EUR').centAmount(2695))
         .country('DE'),
     ])
     .images([

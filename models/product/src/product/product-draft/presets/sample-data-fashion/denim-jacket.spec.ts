@@ -50,8 +50,6 @@ describe(`with denimJacket preset`, () => {
               "value": {
                 "centAmount": 10000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -67,8 +65,6 @@ describe(`with denimJacket preset`, () => {
               "value": {
                 "centAmount": 10000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -142,8 +138,6 @@ describe(`with denimJacket preset`, () => {
                 "value": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
               {
@@ -159,8 +153,6 @@ describe(`with denimJacket preset`, () => {
                 "value": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -221,8 +213,6 @@ describe(`with denimJacket preset`, () => {
                 "centPrecision": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -240,8 +230,6 @@ describe(`with denimJacket preset`, () => {
                 "centPrecision": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -321,8 +309,6 @@ describe(`with denimJacket preset`, () => {
                   "centPrecision": {
                     "centAmount": 10000,
                     "currencyCode": "EUR",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },
@@ -340,8 +326,6 @@ describe(`with denimJacket preset`, () => {
                   "centPrecision": {
                     "centAmount": 10000,
                     "currencyCode": "EUR",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },

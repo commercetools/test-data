@@ -42,8 +42,6 @@ describe(`with necklace variant preset`, () => {
             "value": {
               "centAmount": 1575,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -93,8 +91,6 @@ describe(`with necklace variant preset`, () => {
               "centPrecision": {
                 "centAmount": 1575,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

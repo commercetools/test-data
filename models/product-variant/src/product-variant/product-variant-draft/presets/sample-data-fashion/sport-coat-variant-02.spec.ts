@@ -42,8 +42,6 @@ describe(`with sportCoatVariant02 preset`, () => {
             "value": {
               "centAmount": 20000,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -93,8 +91,6 @@ describe(`with sportCoatVariant02 preset`, () => {
               "centPrecision": {
                 "centAmount": 20000,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           },

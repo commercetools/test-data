@@ -67,8 +67,6 @@ describe(`with toddlerTrousers preset`, () => {
               "value": {
                 "centAmount": 2599,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -159,8 +157,6 @@ describe(`with toddlerTrousers preset`, () => {
                 "value": {
                   "centAmount": 2599,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -223,8 +219,6 @@ describe(`with toddlerTrousers preset`, () => {
                 "value": {
                   "centAmount": 2599,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -302,8 +296,6 @@ describe(`with toddlerTrousers preset`, () => {
                 "centPrecision": {
                   "centAmount": 2599,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             },
@@ -400,8 +392,6 @@ describe(`with toddlerTrousers preset`, () => {
                   "centPrecision": {
                     "centAmount": 2599,
                     "currencyCode": "USD",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },
@@ -466,8 +456,6 @@ describe(`with toddlerTrousers preset`, () => {
                   "centPrecision": {
                     "centAmount": 2599,
                     "currencyCode": "USD",
-                    "fractionDigits": 2,
-                    "type": "centPrecision",
                   },
                 },
               },
