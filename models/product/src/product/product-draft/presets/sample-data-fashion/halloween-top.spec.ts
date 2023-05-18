@@ -240,10 +240,9 @@ describe(`with halloweenTop preset`, () => {
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 235,
-                "w": 215,
+                "height": 235,
+                "width": 215,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/purple-5xg50uIz.png",
@@ -363,10 +362,9 @@ describe(`with halloweenTop preset`, () => {
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 700,
-                  "w": 900,
+                  "height": 700,
+                  "width": 900,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/multi-TjZTRFuz.jpeg",

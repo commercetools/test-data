@@ -278,10 +278,9 @@ describe(`with toddlerTrousers preset`, () => {
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 792,
-                "w": 612,
+                "height": 792,
+                "width": 612,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/whitepants-Z7CSIEMu.gif",
@@ -377,10 +376,9 @@ describe(`with toddlerTrousers preset`, () => {
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 792,
-                  "w": 612,
+                  "height": 792,
+                  "width": 612,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/whitepants-SbjnediW.gif",
@@ -444,10 +442,9 @@ describe(`with toddlerTrousers preset`, () => {
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 792,
-                  "w": 612,
+                  "height": 792,
+                  "width": 612,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/whitepants-i2b2bEGD.gif",

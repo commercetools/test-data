@@ -8,7 +8,8 @@ const transformers = {
       return {
         ...fields,
         dimensions: {
-          ...fields.dimensions,
+          width: fields.dimensions.w,
+          height: fields.dimensions.h,
         },
       };
     },

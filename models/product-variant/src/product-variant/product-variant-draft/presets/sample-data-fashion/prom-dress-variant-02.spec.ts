@@ -86,10 +86,9 @@ describe(`with promDressVariant02 preset`, () => {
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 1920,
-              "w": 1779,
+              "height": 1920,
+              "width": 1779,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/dress2-_nh_EhPL.png",

@@ -31,7 +31,7 @@ const denimJacketVariant02 = (): TProductVariantDraftBuilder =>
         .country('ES'),
     ])
     .images([
-      Image.presets
+      Image.ImageDraft.presets
         .empty()
         .url(
           'https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/denim-pmNAetyM.jpeg'

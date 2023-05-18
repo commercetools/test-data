@@ -86,10 +86,9 @@ describe(`with summerDressVariant01 preset`, () => {
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 298,
-              "w": 276,
+              "height": 298,
+              "width": 276,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/dress-nsVCck7f.jpeg",
