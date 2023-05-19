@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-variant
 
+## 5.3.3
+
+### Patch Changes
+
+- [#268](https://github.com/commercetools/test-data/pull/268) [`e5c1c93`](https://github.com/commercetools/test-data/commit/e5c1c9348b9b892a567c882f854d64bd82553df9) Thanks [@jaikamat](https://github.com/jaikamat)! - correct stringification method in graphql transformer
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.3
+  - @commercetools-test-data/attribute-definition@5.3.3
+  - @commercetools-test-data/commons@5.3.3
+  - @commercetools-test-data/utils@5.3.3
+
 ## 5.3.2
 
 ### Patch Changes

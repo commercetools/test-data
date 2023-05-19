@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-type
 
+## 5.3.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.3
+  - @commercetools-test-data/attribute-definition@5.3.3
+  - @commercetools-test-data/attribute-type@5.3.3
+  - @commercetools-test-data/commons@5.3.3
+  - @commercetools-test-data/utils@5.3.3
+
 ## 5.3.2
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @commercetools-test-data/cart
 
+## 5.3.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/line-item@5.3.3
+  - @commercetools-test-data/core@5.3.3
+  - @commercetools-test-data/commons@5.3.3
+  - @commercetools-test-data/customer@5.3.3
+  - @commercetools-test-data/discount-code@5.3.3
+  - @commercetools-test-data/utils@5.3.3
+
 ## 5.3.2
 
 ### Patch Changes
