@@ -77,15 +77,16 @@ describe('with the preset `summerFlips`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "distributionChannel": undefined,
-          "product": {
-            "__typename": "Reference",
-            "key": "summer_dress",
-            "typeId": "product",
+          "giftLineItem": {
+            "distributionChannel": undefined,
+            "product": {
+              "__typename": "Reference",
+              "key": "summer_dress",
+              "typeId": "product",
+            },
+            "supplyChannel": undefined,
+            "variantId": 1,
           },
-          "supplyChannel": undefined,
-          "type": "giftLineItem",
-          "variantId": 1,
         },
       }
     `);

@@ -44,8 +44,9 @@ describe('builder', () => {
       'graphql',
       CartDiscountValueRelativeDraft.random(),
       expect.objectContaining({
-        type: 'relative',
-        permyriad: expect.any(Number),
+        relative: {
+          permyriad: expect.any(Number),
+        },
       })
     )
   );

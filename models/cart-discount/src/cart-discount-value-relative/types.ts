@@ -10,8 +10,9 @@ export type TCartDiscountValueRelativeDraft = CartDiscountValueRelativeDraft;
 export type TCartDiscountValueRelativeGraphql = TCartDiscountValueRelative & {
   __typename: 'CartDiscountValueRelative';
 };
-export type TCartDiscountValueRelativeDraftGraphql =
-  TCartDiscountValueRelativeDraft;
+export type TCartDiscountValueRelativeDraftGraphql = {
+  relative: Omit<TCartDiscountValueRelativeDraft, 'type'>;
+};
 
 export type TCartDiscountValueRelativeBuilder =
   TBuilder<TCartDiscountValueRelative>;

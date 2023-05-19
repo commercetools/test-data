@@ -103,9 +103,7 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        value: expect.objectContaining({
-          type: expect.any(String),
-        }),
+        value: expect.any(Object),
         cartPredicate: '1=1',
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),

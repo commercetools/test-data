@@ -75,8 +75,9 @@ describe('with the preset `freeShipping`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 10000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 10000,
+          },
         },
       }
     `);

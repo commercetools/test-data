@@ -52,12 +52,13 @@ describe('builder', () => {
       'graphql',
       CartDiscountValueAbsoluteDraft.random(),
       expect.objectContaining({
-        type: 'absolute',
-        money: expect.arrayContaining([
-          expect.objectContaining({
-            centAmount: expect.any(Number),
-          }),
-        ]),
+        absolute: {
+          money: expect.arrayContaining([
+            expect.objectContaining({
+              centAmount: expect.any(Number),
+            }),
+          ]),
+        },
       })
     )
   );

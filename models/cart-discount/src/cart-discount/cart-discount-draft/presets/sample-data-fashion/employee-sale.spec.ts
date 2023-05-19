@@ -30,7 +30,7 @@ describe('with the preset `employeeSale`', () => {
         "sortOrder": "0.8",
         "stackingMode": "Stacking",
         "target": {
-          "predicate": "customer.customerGroup.key = "employee"",
+          "predicate": "1=1",
           "type": "lineItems",
         },
         "validFrom": undefined,
@@ -72,14 +72,15 @@ describe('with the preset `employeeSale`', () => {
         "stackingMode": "Stacking",
         "target": {
           "lineItems": {
-            "predicate": "customer.customerGroup.key = "employee"",
+            "predicate": "1=1",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 1500,
-          "type": "relative",
+          "relative": {
+            "permyriad": 1500,
+          },
         },
       }
     `);

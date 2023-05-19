@@ -78,8 +78,9 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 1000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 1000,
+          },
         },
       }
     `);
