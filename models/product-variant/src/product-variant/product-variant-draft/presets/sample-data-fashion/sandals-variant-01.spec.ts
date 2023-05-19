@@ -42,8 +42,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 2500,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -59,8 +57,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 3000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -76,8 +72,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 2799,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -93,8 +87,6 @@ describe(`with sandals variant preset`, () => {
             "value": {
               "centAmount": 3000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -112,18 +104,14 @@ describe(`with sandals variant preset`, () => {
         "attributes": [
           {
             "name": "type",
-            "value": {
-              "key": "Shoes",
-              "label": "Shoes",
-            },
+            "value": "{\\"key\\":\\"Shoes\\",\\"label\\":\\"Shoes\\"}",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 222,
-              "w": 227,
+              "height": 222,
+              "width": 227,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/sandals-hd5LHY6T.png",
@@ -142,10 +130,10 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2500,
-              "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2500,
+                "currencyCode": "AUD",
+              },
             },
           },
           {
@@ -159,10 +147,10 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 3000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 3000,
+                "currencyCode": "EUR",
+              },
             },
           },
           {
@@ -176,10 +164,10 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2799,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2799,
+                "currencyCode": "USD",
+              },
             },
           },
           {
@@ -193,10 +181,10 @@ describe(`with sandals variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 3000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 3000,
+                "currencyCode": "EUR",
+              },
             },
           },
         ],

@@ -9,7 +9,12 @@ export type TImageGraphql = TImage & {
 };
 
 //Graphql draft representation
-export type TImageDraftGraphql = TImage;
+export type TImageDraftGraphql = Omit<TImage, 'dimensions'> & {
+  dimensions: {
+    width: number;
+    height: number;
+  };
+};
 
 export type TImageBuilder = TBuilder<TImage>;
 export type TCreateImageBuilder = () => TImageBuilder;

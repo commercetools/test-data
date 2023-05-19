@@ -46,8 +46,6 @@ describe(`with sportCoat preset`, () => {
               "value": {
                 "centAmount": 20000,
                 "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -117,8 +115,6 @@ describe(`with sportCoat preset`, () => {
                 "value": {
                   "centAmount": 20000,
                   "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -142,18 +138,14 @@ describe(`with sportCoat preset`, () => {
           "attributes": [
             {
               "name": "sleeve_length",
-              "value": {
-                "key": "Crop",
-                "label": "Crop",
-              },
+              "value": "{\\"key\\":\\"Crop\\",\\"label\\":\\"Crop\\"}",
             },
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 225,
-                "w": 225,
+                "height": 225,
+                "width": 225,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/coat-VmXqw3Xo.jpeg",
@@ -172,10 +164,10 @@ describe(`with sportCoat preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 20000,
-                "currencyCode": "AUD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 20000,
+                  "currencyCode": "AUD",
+                },
               },
             },
           ],
@@ -218,18 +210,14 @@ describe(`with sportCoat preset`, () => {
             "attributes": [
               {
                 "name": "sleeve_length",
-                "value": {
-                  "key": "Normal",
-                  "label": "Normal",
-                },
+                "value": "{\\"key\\":\\"Normal\\",\\"label\\":\\"Normal\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 150,
-                  "w": 150,
+                  "height": 150,
+                  "width": 150,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/coat-Keqv_ZSU.jpeg",
@@ -248,10 +236,10 @@ describe(`with sportCoat preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 20000,
-                  "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 20000,
+                    "currencyCode": "AUD",
+                  },
                 },
               },
             ],

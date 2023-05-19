@@ -46,8 +46,6 @@ describe(`with denimJacketVariant02 preset`, () => {
             "value": {
               "centAmount": 10000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -63,8 +61,6 @@ describe(`with denimJacketVariant02 preset`, () => {
             "value": {
               "centAmount": 10000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -82,22 +78,18 @@ describe(`with denimJacketVariant02 preset`, () => {
         "attributes": [
           {
             "name": "sleeve_length",
-            "value": {
-              "key": "Extra Long",
-              "label": "Extra Long",
-            },
+            "value": "{\\"key\\":\\"Extra Long\\",\\"label\\":\\"Extra Long\\"}",
           },
           {
             "name": "cotton",
-            "value": false,
+            "value": "false",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 225,
-              "w": 225,
+              "height": 225,
+              "width": 225,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/denim-pmNAetyM.jpeg",
@@ -116,10 +108,10 @@ describe(`with denimJacketVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 10000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 10000,
+                "currencyCode": "EUR",
+              },
             },
           },
           {
@@ -133,10 +125,10 @@ describe(`with denimJacketVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 10000,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 10000,
+                "currencyCode": "EUR",
+              },
             },
           },
         ],

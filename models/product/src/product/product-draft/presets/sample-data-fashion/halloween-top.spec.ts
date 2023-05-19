@@ -53,8 +53,6 @@ describe(`with halloweenTop preset`, () => {
               "value": {
                 "centAmount": 2500,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -70,8 +68,6 @@ describe(`with halloweenTop preset`, () => {
               "value": {
                 "centAmount": 2500,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -87,8 +83,6 @@ describe(`with halloweenTop preset`, () => {
               "value": {
                 "centAmount": 2500,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -165,8 +159,6 @@ describe(`with halloweenTop preset`, () => {
                 "value": {
                   "centAmount": 3000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
               {
@@ -182,8 +174,6 @@ describe(`with halloweenTop preset`, () => {
                 "value": {
                   "centAmount": 3000,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
               {
@@ -199,8 +189,6 @@ describe(`with halloweenTop preset`, () => {
                 "value": {
                   "centAmount": 3300,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -225,25 +213,18 @@ describe(`with halloweenTop preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": {
-                "key": "Medium",
-                "label": "Medium",
-              },
+              "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
             },
             {
               "name": "color",
-              "value": {
-                "key": "Purple",
-                "label": "Purple",
-              },
+              "value": "{\\"key\\":\\"Purple\\",\\"label\\":\\"Purple\\"}",
             },
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 235,
-                "w": 215,
+                "height": 235,
+                "width": 215,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/purple-5xg50uIz.png",
@@ -262,10 +243,10 @@ describe(`with halloweenTop preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 2500,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 2500,
+                  "currencyCode": "EUR",
+                },
               },
             },
             {
@@ -279,10 +260,10 @@ describe(`with halloweenTop preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 2500,
-                "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 2500,
+                  "currencyCode": "USD",
+                },
               },
             },
             {
@@ -296,10 +277,10 @@ describe(`with halloweenTop preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 2500,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 2500,
+                  "currencyCode": "EUR",
+                },
               },
             },
           ],
@@ -342,25 +323,18 @@ describe(`with halloweenTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Large",
-                  "label": "Large",
-                },
+                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
               },
               {
                 "name": "color",
-                "value": {
-                  "key": "Multi-Color",
-                  "label": "Multi-Color",
-                },
+                "value": "{\\"key\\":\\"Multi-Color\\",\\"label\\":\\"Multi-Color\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 700,
-                  "w": 900,
+                  "height": 700,
+                  "width": 900,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/multi-TjZTRFuz.jpeg",
@@ -379,10 +353,10 @@ describe(`with halloweenTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 3000,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 3000,
+                    "currencyCode": "EUR",
+                  },
                 },
               },
               {
@@ -396,10 +370,10 @@ describe(`with halloweenTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 3000,
-                  "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 3000,
+                    "currencyCode": "USD",
+                  },
                 },
               },
               {
@@ -413,10 +387,10 @@ describe(`with halloweenTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 3300,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 3300,
+                    "currencyCode": "EUR",
+                  },
                 },
               },
             ],

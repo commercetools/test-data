@@ -23,6 +23,10 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
+            dimensions: expect.objectContaining({
+              w: expect.any(Number),
+              h: expect.any(Number),
+            }),
           }),
         ]),
         attributes: expect.arrayContaining([
@@ -50,6 +54,10 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
+            dimensions: expect.objectContaining({
+              w: expect.any(Number),
+              h: expect.any(Number),
+            }),
           }),
         ]),
         attributes: expect.arrayContaining([
@@ -71,7 +79,9 @@ describe('builder', () => {
         sku: expect.any(String),
         prices: expect.arrayContaining([
           expect.objectContaining({
-            value: expect.any(Object),
+            value: {
+              centPrecision: expect.any(Object),
+            },
           }),
         ]),
         images: expect.arrayContaining([
@@ -79,8 +89,8 @@ describe('builder', () => {
             label: expect.any(String),
             url: expect.any(String),
             dimensions: expect.objectContaining({
-              w: expect.any(Number),
-              h: expect.any(Number),
+              width: expect.any(Number),
+              height: expect.any(Number),
             }),
           }),
         ]),

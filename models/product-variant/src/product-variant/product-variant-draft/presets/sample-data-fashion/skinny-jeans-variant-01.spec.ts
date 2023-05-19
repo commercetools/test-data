@@ -49,8 +49,6 @@ describe(`with skinnyJeansVariant01 preset`, () => {
             "value": {
               "centAmount": 4999,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -68,25 +66,18 @@ describe(`with skinnyJeansVariant01 preset`, () => {
         "attributes": [
           {
             "name": "fit",
-            "value": {
-              "key": "Slim",
-              "label": "Slim",
-            },
+            "value": "{\\"key\\":\\"Slim\\",\\"label\\":\\"Slim\\"}",
           },
           {
             "name": "size",
-            "value": {
-              "key": "Medium",
-              "label": "Medium",
-            },
+            "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 275,
-              "w": 183,
+              "height": 275,
+              "width": 183,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/skinny-QJz4Jcme.jpeg",
@@ -105,10 +96,10 @@ describe(`with skinnyJeansVariant01 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 4999,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 4999,
+                "currencyCode": "EUR",
+              },
             },
           },
         ],

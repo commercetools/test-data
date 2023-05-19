@@ -53,8 +53,6 @@ describe(`with maternityTop preset`, () => {
               "value": {
                 "centAmount": 2695,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -131,8 +129,6 @@ describe(`with maternityTop preset`, () => {
                 "value": {
                   "centAmount": 2695,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -181,8 +177,6 @@ describe(`with maternityTop preset`, () => {
                 "value": {
                   "centAmount": 2695,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -207,25 +201,18 @@ describe(`with maternityTop preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": {
-                "key": "Small",
-                "label": "Small",
-              },
+              "value": "{\\"key\\":\\"Small\\",\\"label\\":\\"Small\\"}",
             },
             {
               "name": "color",
-              "value": {
-                "key": "Green",
-                "label": "Green",
-              },
+              "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
             },
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 300,
-                "w": 262,
+                "height": 300,
+                "width": 262,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-__gg4rwo.png",
@@ -244,10 +231,10 @@ describe(`with maternityTop preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 2695,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 2695,
+                  "currencyCode": "EUR",
+                },
               },
             },
           ],
@@ -290,25 +277,18 @@ describe(`with maternityTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Medium",
-                  "label": "Medium",
-                },
+                "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
               },
               {
                 "name": "color",
-                "value": {
-                  "key": "Green",
-                  "label": "Green",
-                },
+                "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 300,
-                  "w": 262,
+                  "height": 300,
+                  "width": 262,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-7_8SGLVB.png",
@@ -327,10 +307,10 @@ describe(`with maternityTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 2695,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 2695,
+                    "currencyCode": "EUR",
+                  },
                 },
               },
             ],
@@ -341,25 +321,18 @@ describe(`with maternityTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Large",
-                  "label": "Large",
-                },
+                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
               },
               {
                 "name": "color",
-                "value": {
-                  "key": "Green",
-                  "label": "Green",
-                },
+                "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 300,
-                  "w": 262,
+                  "height": 300,
+                  "width": 262,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/greenshirt-lOB-DcqK.png",
@@ -378,10 +351,10 @@ describe(`with maternityTop preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 2695,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 2695,
+                    "currencyCode": "EUR",
+                  },
                 },
               },
             ],

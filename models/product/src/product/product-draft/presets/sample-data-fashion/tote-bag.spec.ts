@@ -46,8 +46,6 @@ describe(`with toteBag preset`, () => {
               "value": {
                 "centAmount": 13999,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -117,8 +115,6 @@ describe(`with toteBag preset`, () => {
                 "value": {
                   "centAmount": 17500,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -142,18 +138,14 @@ describe(`with toteBag preset`, () => {
           "attributes": [
             {
               "name": "type",
-              "value": {
-                "key": "Bag",
-                "label": "Bag",
-              },
+              "value": "{\\"key\\":\\"Bag\\",\\"label\\":\\"Bag\\"}",
             },
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 800,
-                "w": 766,
+                "height": 800,
+                "width": 766,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/tote-V4lrDZ9Q.png",
@@ -172,10 +164,10 @@ describe(`with toteBag preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 13999,
-                "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 13999,
+                  "currencyCode": "USD",
+                },
               },
             },
           ],
@@ -218,18 +210,14 @@ describe(`with toteBag preset`, () => {
             "attributes": [
               {
                 "name": "type",
-                "value": {
-                  "key": "Bag",
-                  "label": "Bag",
-                },
+                "value": "{\\"key\\":\\"Bag\\",\\"label\\":\\"Bag\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 800,
-                  "w": 675,
+                  "height": 800,
+                  "width": 675,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/bag-371ygCjz.png",
@@ -248,10 +236,10 @@ describe(`with toteBag preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 17500,
-                  "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 17500,
+                    "currencyCode": "USD",
+                  },
                 },
               },
             ],

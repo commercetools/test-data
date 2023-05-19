@@ -63,8 +63,6 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             "value": {
               "centAmount": 2599,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -82,39 +80,26 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Medium",
-              "label": "Medium",
-            },
+            "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
           },
           {
             "name": "fit",
-            "value": {
-              "key": "Straight",
-              "label": "Straight",
-            },
+            "value": "{\\"key\\":\\"Straight\\",\\"label\\":\\"Straight\\"}",
           },
           {
             "name": "color",
-            "value": {
-              "key": "White",
-              "label": "White",
-            },
+            "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
           },
           {
             "name": "length",
-            "value": {
-              "key": "Ankle",
-              "label": "Ankle",
-            },
+            "value": "{\\"key\\":\\"Ankle\\",\\"label\\":\\"Ankle\\"}",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 792,
-              "w": 612,
+              "height": 792,
+              "width": 612,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/whitepants-SbjnediW.gif",
@@ -133,10 +118,10 @@ describe(`with toddlerTrousersVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 2599,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 2599,
+                "currencyCode": "USD",
+              },
             },
           },
         ],

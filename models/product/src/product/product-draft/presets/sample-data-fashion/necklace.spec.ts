@@ -50,8 +50,6 @@ describe(`with necklace preset`, () => {
               "value": {
                 "centAmount": 5000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -67,8 +65,6 @@ describe(`with necklace preset`, () => {
               "value": {
                 "centAmount": 5000,
                 "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
             {
@@ -84,8 +80,6 @@ describe(`with necklace preset`, () => {
               "value": {
                 "centAmount": 5000,
                 "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
               },
             },
           ],
@@ -155,8 +149,6 @@ describe(`with necklace preset`, () => {
                 "value": {
                   "centAmount": 1575,
                   "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
               },
             ],
@@ -180,22 +172,18 @@ describe(`with necklace preset`, () => {
           "attributes": [
             {
               "name": "type",
-              "value": {
-                "key": "Jewelry",
-                "label": "Jewelry",
-              },
+              "value": "{\\"key\\":\\"Jewelry\\",\\"label\\":\\"Jewelry\\"}",
             },
             {
               "name": "engraving",
-              "value": "Happy Anniversary",
+              "value": "\\"Happy Anniversary\\"",
             },
           ],
           "images": [
             {
-              "__typename": "Image",
               "dimensions": {
-                "h": 122,
-                "w": 103,
+                "height": 122,
+                "width": 103,
               },
               "label": undefined,
               "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/necklace-TRlWhVSq.png",
@@ -214,10 +202,10 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 5000,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
               },
             },
             {
@@ -231,10 +219,10 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 5000,
-                "currencyCode": "USD",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 5000,
+                  "currencyCode": "USD",
+                },
               },
             },
             {
@@ -248,10 +236,10 @@ describe(`with necklace preset`, () => {
               "validFrom": undefined,
               "validUntil": undefined,
               "value": {
-                "centAmount": 5000,
-                "currencyCode": "EUR",
-                "fractionDigits": 2,
-                "type": "centPrecision",
+                "centPrecision": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
               },
             },
           ],
@@ -294,18 +282,14 @@ describe(`with necklace preset`, () => {
             "attributes": [
               {
                 "name": "type",
-                "value": {
-                  "key": "Jewelry",
-                  "label": "Jewelry",
-                },
+                "value": "{\\"key\\":\\"Jewelry\\",\\"label\\":\\"Jewelry\\"}",
               },
             ],
             "images": [
               {
-                "__typename": "Image",
                 "dimensions": {
-                  "h": 241,
-                  "w": 209,
+                  "height": 241,
+                  "width": 209,
                 },
                 "label": undefined,
                 "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/necklace-KmP7rQDP.png",
@@ -324,10 +308,10 @@ describe(`with necklace preset`, () => {
                 "validFrom": undefined,
                 "validUntil": undefined,
                 "value": {
-                  "centAmount": 1575,
-                  "currencyCode": "AUD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
+                  "centPrecision": {
+                    "centAmount": 1575,
+                    "currencyCode": "AUD",
+                  },
                 },
               },
             ],

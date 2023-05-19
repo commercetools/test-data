@@ -1,7 +1,4 @@
-import {
-  CentPrecisionMoney,
-  PriceDraft,
-} from '@commercetools-test-data/commons';
+import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -15,39 +12,23 @@ const sandalsVariant01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(
-          CentPrecisionMoney.CentPrecisionMoneyDraft.random()
-            .currencyCode('AUD')
-            .centAmount(2500)
-        )
+        .value(Money.random().currencyCode('AUD').centAmount(2500))
         .country('AU'),
       PriceDraft.presets
         .empty()
-        .value(
-          CentPrecisionMoney.CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(3000)
-        )
+        .value(Money.random().currencyCode('EUR').centAmount(3000))
         .country('DE'),
       PriceDraft.presets
         .empty()
-        .value(
-          CentPrecisionMoney.CentPrecisionMoneyDraft.random()
-            .currencyCode('USD')
-            .centAmount(2799)
-        )
+        .value(Money.random().currencyCode('USD').centAmount(2799))
         .country('US'),
       PriceDraft.presets
         .empty()
-        .value(
-          CentPrecisionMoney.CentPrecisionMoneyDraft.random()
-            .currencyCode('EUR')
-            .centAmount(3000)
-        )
+        .value(Money.random().currencyCode('EUR').centAmount(3000))
         .country('ES'),
     ])
     .images([
-      Image.presets
+      Image.ImageDraft.presets
         .empty()
         .url(
           'https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/sandals-hd5LHY6T.png'

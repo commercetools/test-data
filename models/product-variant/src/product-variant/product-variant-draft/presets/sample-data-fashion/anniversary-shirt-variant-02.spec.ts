@@ -34,10 +34,7 @@ describe(`with anniversaryShirtVariant02 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Medium",
-              "label": "Medium",
-            },
+            "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
           },
         ],
         "images": undefined,

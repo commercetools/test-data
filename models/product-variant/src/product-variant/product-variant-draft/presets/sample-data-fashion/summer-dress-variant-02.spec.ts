@@ -42,8 +42,6 @@ describe(`with summerDressVariant02 preset`, () => {
             "value": {
               "centAmount": 7500,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -61,18 +59,14 @@ describe(`with summerDressVariant02 preset`, () => {
         "attributes": [
           {
             "name": "color",
-            "value": {
-              "key": "Pink",
-              "label": "Pink",
-            },
+            "value": "{\\"key\\":\\"Pink\\",\\"label\\":\\"Pink\\"}",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 254,
-              "w": 199,
+              "height": 254,
+              "width": 199,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/pinkdress-kKvWVHgG.png",
@@ -91,10 +85,10 @@ describe(`with summerDressVariant02 preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 7500,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 7500,
+                "currencyCode": "USD",
+              },
             },
           },
         ],

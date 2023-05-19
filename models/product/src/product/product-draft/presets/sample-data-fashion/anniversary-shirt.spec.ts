@@ -105,10 +105,7 @@ describe(`with anniversaryShirt preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": {
-                "key": "Small",
-                "label": "Small",
-              },
+              "value": "{\\"key\\":\\"Small\\",\\"label\\":\\"Small\\"}",
             },
           ],
           "images": undefined,
@@ -153,10 +150,7 @@ describe(`with anniversaryShirt preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Medium",
-                  "label": "Medium",
-                },
+                "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
               },
             ],
             "images": undefined,
@@ -169,10 +163,7 @@ describe(`with anniversaryShirt preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Large",
-                  "label": "Large",
-                },
+                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
               },
             ],
             "images": undefined,

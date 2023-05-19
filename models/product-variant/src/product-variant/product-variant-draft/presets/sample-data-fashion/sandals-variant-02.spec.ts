@@ -42,8 +42,6 @@ describe(`with sandalsAU variant preset`, () => {
             "value": {
               "centAmount": 1199,
               "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
           {
@@ -59,8 +57,6 @@ describe(`with sandalsAU variant preset`, () => {
             "value": {
               "centAmount": 1000,
               "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
           },
         ],
@@ -78,18 +74,14 @@ describe(`with sandalsAU variant preset`, () => {
         "attributes": [
           {
             "name": "type",
-            "value": {
-              "key": "Shoes",
-              "label": "Shoes",
-            },
+            "value": "{\\"key\\":\\"Shoes\\",\\"label\\":\\"Shoes\\"}",
           },
         ],
         "images": [
           {
-            "__typename": "Image",
             "dimensions": {
-              "h": 230,
-              "w": 219,
+              "height": 230,
+              "width": 219,
             },
             "label": undefined,
             "url": "https://607c34ad0a5bf735fdf7-ec12c9005026a0c273dadf2c3ac4444b.ssl.cf3.rackcdn.com/sandals-nDN7Ajoe.jpeg",
@@ -108,10 +100,10 @@ describe(`with sandalsAU variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 1199,
-              "currencyCode": "AUD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 1199,
+                "currencyCode": "AUD",
+              },
             },
           },
           {
@@ -125,10 +117,10 @@ describe(`with sandalsAU variant preset`, () => {
             "validFrom": undefined,
             "validUntil": undefined,
             "value": {
-              "centAmount": 1000,
-              "currencyCode": "USD",
-              "fractionDigits": 2,
-              "type": "centPrecision",
+              "centPrecision": {
+                "centAmount": 1000,
+                "currencyCode": "USD",
+              },
             },
           },
         ],

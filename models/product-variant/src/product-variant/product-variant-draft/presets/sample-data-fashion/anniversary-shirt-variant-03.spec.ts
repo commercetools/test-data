@@ -34,10 +34,7 @@ describe(`with anniversaryShirtVariant03 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Large",
-              "label": "Large",
-            },
+            "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
           },
         ],
         "images": undefined,
