@@ -36,10 +36,12 @@ describe('with the preset `luxeSpend`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 3000,
-            "currencyCode": "EUR",
-          },
+          "money": [
+            {
+              "centAmount": 3000,
+              "currencyCode": "EUR",
+            },
+          ],
           "type": "absolute",
         },
       }
@@ -82,10 +84,12 @@ describe('with the preset `luxeSpend`', () => {
         "validUntil": undefined,
         "value": {
           "absolute": {
-            "money": {
-              "centAmount": 3000,
-              "currencyCode": "EUR",
-            },
+            "money": [
+              {
+                "centAmount": 3000,
+                "currencyCode": "EUR",
+              },
+            ],
           },
         },
       }

@@ -11,9 +11,9 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueFixedDraft.random().money(
-        Money.random().currencyCode('EUR').centAmount(2500)
-      )
+      CartDiscountValueFixedDraft.random().money([
+        Money.random().currencyCode('EUR').centAmount(2500),
+      ])
     )
     .cartPredicate('1 = 1')
     .target(

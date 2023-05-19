@@ -36,10 +36,12 @@ describe('with the preset `skinnyFixed`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 2500,
-            "currencyCode": "EUR",
-          },
+          "money": [
+            {
+              "centAmount": 2500,
+              "currencyCode": "EUR",
+            },
+          ],
           "type": "fixed",
         },
       }
@@ -82,10 +84,12 @@ describe('with the preset `skinnyFixed`', () => {
         "validUntil": undefined,
         "value": {
           "fixed": {
-            "money": {
-              "centAmount": 2500,
-              "currencyCode": "EUR",
-            },
+            "money": [
+              {
+                "centAmount": 2500,
+                "currencyCode": "EUR",
+              },
+            ],
           },
         },
       }
