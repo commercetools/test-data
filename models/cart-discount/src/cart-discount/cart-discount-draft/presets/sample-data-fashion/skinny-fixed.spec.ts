@@ -78,7 +78,6 @@ describe('with the preset `skinnyFixed`', () => {
         "target": {
           "lineItems": {
             "predicate": "product.key = "skinny_jeans"",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,

@@ -13,11 +13,15 @@ const transformers = {
     TCartDiscountLineItemsTargetDraft,
     TCartDiscountLineItemsTargetDraftGraphql
   >('graphql', {
-    replaceFields: ({ fields }) => ({
-      lineItems: {
-        ...fields,
-      },
-    }),
+    replaceFields: ({ fields }) => {
+      const { type, ...rest } = fields;
+
+      return {
+        [type]: {
+          ...rest,
+        },
+      };
+    },
   }),
 };
 

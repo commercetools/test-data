@@ -78,7 +78,6 @@ describe('with the preset `luxeSpend`', () => {
         "target": {
           "lineItems": {
             "predicate": "1=1",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,

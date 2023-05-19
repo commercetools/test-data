@@ -73,7 +73,6 @@ describe('with the preset `employeeSale`', () => {
         "target": {
           "lineItems": {
             "predicate": "customer.customerGroup.key = "employee"",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,

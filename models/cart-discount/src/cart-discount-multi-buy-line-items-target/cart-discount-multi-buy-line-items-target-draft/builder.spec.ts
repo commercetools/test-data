@@ -35,7 +35,6 @@ describe('builder', () => {
       CartDiscountMultiBuyLineItemsTargetDraft.random(),
       expect.objectContaining({
         multiBuyLineItems: {
-          type: 'multiBuyLineItems',
           predicate: expect.any(String),
           triggerQuantity: expect.any(Number),
           discountedQuantity: expect.any(Number),

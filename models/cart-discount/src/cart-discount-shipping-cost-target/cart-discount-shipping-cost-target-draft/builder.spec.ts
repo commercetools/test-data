@@ -29,9 +29,7 @@ describe('builder', () => {
       'graphql',
       CartDiscountShippingCostTargetDraft.random(),
       expect.objectContaining({
-        shipping: {
-          type: 'shipping',
-        },
+        shipping: {},
       })
     )
   );

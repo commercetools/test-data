@@ -11,7 +11,7 @@ export type TCartDiscountShippingCostTargetGraphql =
   };
 
 export type TCartDiscountShippingCostTargetDraftGraphql = {
-  shipping: TCartDiscountShippingCostTarget;
+  shipping: Omit<TCartDiscountShippingCostTarget, 'type'>;
 };
 
 export type TCartDiscountShippingCostTargetBuilder =

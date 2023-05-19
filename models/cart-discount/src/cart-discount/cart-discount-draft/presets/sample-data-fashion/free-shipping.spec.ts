@@ -70,9 +70,7 @@ describe('with the preset `freeShipping`', () => {
         "sortOrder": "0.222",
         "stackingMode": "Stacking",
         "target": {
-          "shipping": {
-            "type": "shipping",
-          },
+          "shipping": {},
         },
         "validFrom": undefined,
         "validUntil": undefined,
