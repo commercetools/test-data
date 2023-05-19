@@ -66,11 +66,11 @@ describe(`with maternityTopVariant03 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+            "value": "{"key":"Large","label":"Large"}",
           },
           {
             "name": "color",
-            "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
+            "value": "{"key":"Green","label":"Green"}",
           },
         ],
         "images": [

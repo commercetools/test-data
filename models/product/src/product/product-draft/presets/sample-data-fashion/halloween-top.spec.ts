@@ -213,11 +213,11 @@ describe(`with halloweenTop preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
+              "value": "{"key":"Medium","label":"Medium"}",
             },
             {
               "name": "color",
-              "value": "{\\"key\\":\\"Purple\\",\\"label\\":\\"Purple\\"}",
+              "value": "{"key":"Purple","label":"Purple"}",
             },
           ],
           "images": [
@@ -323,11 +323,11 @@ describe(`with halloweenTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+                "value": "{"key":"Large","label":"Large"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"Multi-Color\\",\\"label\\":\\"Multi-Color\\"}",
+                "value": "{"key":"Multi-Color","label":"Multi-Color"}",
               },
             ],
             "images": [

@@ -59,7 +59,7 @@ describe(`with toteBagVariant02 preset`, () => {
         "attributes": [
           {
             "name": "type",
-            "value": "{\\"key\\":\\"Bag\\",\\"label\\":\\"Bag\\"}",
+            "value": "{"key":"Bag","label":"Bag"}",
           },
         ],
         "images": [

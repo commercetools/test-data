@@ -78,7 +78,7 @@ describe(`with denimJacketVariant02 preset`, () => {
         "attributes": [
           {
             "name": "sleeve_length",
-            "value": "{\\"key\\":\\"Extra Long\\",\\"label\\":\\"Extra Long\\"}",
+            "value": "{"key":"Extra Long","label":"Extra Long"}",
           },
           {
             "name": "cotton",

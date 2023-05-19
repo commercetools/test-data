@@ -243,19 +243,19 @@ describe(`with toddlerTrousers preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": "{\\"key\\":\\"Small\\",\\"label\\":\\"Small\\"}",
+              "value": "{"key":"Small","label":"Small"}",
             },
             {
               "name": "fit",
-              "value": "{\\"key\\":\\"Straight\\",\\"label\\":\\"Straight\\"}",
+              "value": "{"key":"Straight","label":"Straight"}",
             },
             {
               "name": "color",
-              "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
+              "value": "{"key":"White","label":"White"}",
             },
             {
               "name": "length",
-              "value": "{\\"key\\":\\"Ankle\\",\\"label\\":\\"Ankle\\"}",
+              "value": "{"key":"Ankle","label":"Ankle"}",
             },
           ],
           "images": [
@@ -327,19 +327,19 @@ describe(`with toddlerTrousers preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
+                "value": "{"key":"Medium","label":"Medium"}",
               },
               {
                 "name": "fit",
-                "value": "{\\"key\\":\\"Straight\\",\\"label\\":\\"Straight\\"}",
+                "value": "{"key":"Straight","label":"Straight"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
+                "value": "{"key":"White","label":"White"}",
               },
               {
                 "name": "length",
-                "value": "{\\"key\\":\\"Ankle\\",\\"label\\":\\"Ankle\\"}",
+                "value": "{"key":"Ankle","label":"Ankle"}",
               },
             ],
             "images": [
@@ -379,19 +379,19 @@ describe(`with toddlerTrousers preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+                "value": "{"key":"Large","label":"Large"}",
               },
               {
                 "name": "fit",
-                "value": "{\\"key\\":\\"Straight\\",\\"label\\":\\"Straight\\"}",
+                "value": "{"key":"Straight","label":"Straight"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
+                "value": "{"key":"White","label":"White"}",
               },
               {
                 "name": "length",
-                "value": "{\\"key\\":\\"Ankle\\",\\"label\\":\\"Ankle\\"}",
+                "value": "{"key":"Ankle","label":"Ankle"}",
               },
             ],
             "images": [

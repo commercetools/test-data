@@ -168,7 +168,7 @@ describe(`with promDress preset`, () => {
           "attributes": [
             {
               "name": "color",
-              "value": "{\\"key\\":\\"Floral\\",\\"label\\":\\"Floral\\"}",
+              "value": "{"key":"Floral","label":"Floral"}",
             },
           ],
           "images": [
@@ -257,7 +257,7 @@ describe(`with promDress preset`, () => {
             "attributes": [
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"Pink\\",\\"label\\":\\"Pink\\"}",
+                "value": "{"key":"Pink","label":"Pink"}",
               },
             ],
             "images": [

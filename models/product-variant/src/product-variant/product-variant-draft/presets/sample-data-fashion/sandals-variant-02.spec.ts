@@ -74,7 +74,7 @@ describe(`with sandalsAU variant preset`, () => {
         "attributes": [
           {
             "name": "type",
-            "value": "{\\"key\\":\\"Shoes\\",\\"label\\":\\"Shoes\\"}",
+            "value": "{"key":"Shoes","label":"Shoes"}",
           },
         ],
         "images": [
