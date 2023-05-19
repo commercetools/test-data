@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/product-variant",
-  "version": "5.3.1",
+  "version": "5.3.2",
   "description": "Data model for commercetools API ProductVariant",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,10 +19,10 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/attribute-definition": "5.3.1",
-    "@commercetools-test-data/commons": "5.3.1",
-    "@commercetools-test-data/core": "5.3.1",
-    "@commercetools-test-data/utils": "5.3.1",
+    "@commercetools-test-data/attribute-definition": "5.3.2",
+    "@commercetools-test-data/commons": "5.3.2",
+    "@commercetools-test-data/core": "5.3.2",
+    "@commercetools-test-data/utils": "5.3.2",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }
