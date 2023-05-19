@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-variant
 
+## 5.3.2
+
+### Patch Changes
+
+- [#266](https://github.com/commercetools/test-data/pull/266) [`1d8a21c`](https://github.com/commercetools/test-data/commit/1d8a21c55728dcf1059e37a1964280f2eda22d09) Thanks [@jaikamat](https://github.com/jaikamat)! - fix graphql transformations
+
+- Updated dependencies [[`1d8a21c`](https://github.com/commercetools/test-data/commit/1d8a21c55728dcf1059e37a1964280f2eda22d09)]:
+  - @commercetools-test-data/commons@5.3.2
+  - @commercetools-test-data/attribute-definition@5.3.2
+  - @commercetools-test-data/core@5.3.2
+  - @commercetools-test-data/utils@5.3.2
+
 ## 5.3.1
 
 ### Patch Changes
