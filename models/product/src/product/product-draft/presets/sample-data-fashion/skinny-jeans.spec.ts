@@ -153,17 +153,11 @@ describe(`with skinnyJeans preset`, () => {
           "attributes": [
             {
               "name": "fit",
-              "value": {
-                "key": "Slim",
-                "label": "Slim",
-              },
+              "value": "{\\"key\\":\\"Slim\\",\\"label\\":\\"Slim\\"}",
             },
             {
               "name": "size",
-              "value": {
-                "key": "Medium",
-                "label": "Medium",
-              },
+              "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
             },
           ],
           "images": [
@@ -235,17 +229,11 @@ describe(`with skinnyJeans preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": {
-                  "key": "Large",
-                  "label": "Large",
-                },
+                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
               },
               {
                 "name": "fit",
-                "value": {
-                  "key": "Slim",
-                  "label": "Slim",
-                },
+                "value": "{\\"key\\":\\"Slim\\",\\"label\\":\\"Slim\\"}",
               },
             ],
             "images": [

@@ -55,31 +55,19 @@ describe(`with flairJeansVariant02 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Medium",
-              "label": "Medium",
-            },
+            "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
           },
           {
             "name": "fit",
-            "value": {
-              "key": "Flair",
-              "label": "Flair",
-            },
+            "value": "{\\"key\\":\\"Flair\\",\\"label\\":\\"Flair\\"}",
           },
           {
             "name": "color",
-            "value": {
-              "key": "Black",
-              "label": "Black",
-            },
+            "value": "{\\"key\\":\\"Black\\",\\"label\\":\\"Black\\"}",
           },
           {
             "name": "length",
-            "value": {
-              "key": "Extra Long",
-              "label": "Extra Long",
-            },
+            "value": "{\\"key\\":\\"Extra Long\\",\\"label\\":\\"Extra Long\\"}",
           },
         ],
         "images": undefined,

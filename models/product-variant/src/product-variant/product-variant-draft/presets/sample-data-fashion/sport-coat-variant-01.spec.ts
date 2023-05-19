@@ -59,10 +59,7 @@ describe(`with sportCoatVariant01 preset`, () => {
         "attributes": [
           {
             "name": "sleeve_length",
-            "value": {
-              "key": "Crop",
-              "label": "Crop",
-            },
+            "value": "{\\"key\\":\\"Crop\\",\\"label\\":\\"Crop\\"}",
           },
         ],
         "images": [

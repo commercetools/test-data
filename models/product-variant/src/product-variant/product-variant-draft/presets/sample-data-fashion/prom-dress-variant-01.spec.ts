@@ -74,10 +74,7 @@ describe(`with promDressVariant01 preset`, () => {
         "attributes": [
           {
             "name": "color",
-            "value": {
-              "key": "Floral",
-              "label": "Floral",
-            },
+            "value": "{\\"key\\":\\"Floral\\",\\"label\\":\\"Floral\\"}",
           },
         ],
         "images": [

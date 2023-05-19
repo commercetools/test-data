@@ -154,10 +154,7 @@ describe(`with summerDress preset`, () => {
           "attributes": [
             {
               "name": "color",
-              "value": {
-                "key": "White",
-                "label": "White",
-              },
+              "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
             },
           ],
           "images": [
@@ -246,10 +243,7 @@ describe(`with summerDress preset`, () => {
             "attributes": [
               {
                 "name": "color",
-                "value": {
-                  "key": "Pink",
-                  "label": "Pink",
-                },
+                "value": "{\\"key\\":\\"Pink\\",\\"label\\":\\"Pink\\"}",
               },
             ],
             "images": [

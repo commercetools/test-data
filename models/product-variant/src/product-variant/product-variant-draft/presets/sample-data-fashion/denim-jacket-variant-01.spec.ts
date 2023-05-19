@@ -78,14 +78,11 @@ describe(`with denimJacketVariant01 preset`, () => {
         "attributes": [
           {
             "name": "sleeve_length",
-            "value": {
-              "key": "Normal",
-              "label": "Normal",
-            },
+            "value": "{\\"key\\":\\"Normal\\",\\"label\\":\\"Normal\\"}",
           },
           {
             "name": "cotton",
-            "value": false,
+            "value": "false",
           },
         ],
         "images": [

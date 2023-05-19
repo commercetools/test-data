@@ -199,10 +199,7 @@ describe(`with sampleSandals preset`, () => {
           "attributes": [
             {
               "name": "type",
-              "value": {
-                "key": "Shoes",
-                "label": "Shoes",
-              },
+              "value": "{\\"key\\":\\"Shoes\\",\\"label\\":\\"Shoes\\"}",
             },
           ],
           "images": [
@@ -325,10 +322,7 @@ describe(`with sampleSandals preset`, () => {
             "attributes": [
               {
                 "name": "type",
-                "value": {
-                  "key": "Shoes",
-                  "label": "Shoes",
-                },
+                "value": "{\\"key\\":\\"Shoes\\",\\"label\\":\\"Shoes\\"}",
               },
             ],
             "images": [

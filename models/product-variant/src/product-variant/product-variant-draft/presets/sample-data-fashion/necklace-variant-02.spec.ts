@@ -59,10 +59,7 @@ describe(`with necklace variant preset`, () => {
         "attributes": [
           {
             "name": "type",
-            "value": {
-              "key": "Jewelry",
-              "label": "Jewelry",
-            },
+            "value": "{\\"key\\":\\"Jewelry\\",\\"label\\":\\"Jewelry\\"}",
           },
         ],
         "images": [

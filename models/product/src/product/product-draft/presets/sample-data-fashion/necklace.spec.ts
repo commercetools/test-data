@@ -172,14 +172,11 @@ describe(`with necklace preset`, () => {
           "attributes": [
             {
               "name": "type",
-              "value": {
-                "key": "Jewelry",
-                "label": "Jewelry",
-              },
+              "value": "{\\"key\\":\\"Jewelry\\",\\"label\\":\\"Jewelry\\"}",
             },
             {
               "name": "engraving",
-              "value": "Happy Anniversary",
+              "value": "\\"Happy Anniversary\\"",
             },
           ],
           "images": [
@@ -285,10 +282,7 @@ describe(`with necklace preset`, () => {
             "attributes": [
               {
                 "name": "type",
-                "value": {
-                  "key": "Jewelry",
-                  "label": "Jewelry",
-                },
+                "value": "{\\"key\\":\\"Jewelry\\",\\"label\\":\\"Jewelry\\"}",
               },
             ],
             "images": [

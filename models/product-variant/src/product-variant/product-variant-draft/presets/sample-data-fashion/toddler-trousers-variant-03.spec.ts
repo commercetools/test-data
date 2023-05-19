@@ -80,31 +80,19 @@ describe(`with toddlerTrousersVariant03 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Large",
-              "label": "Large",
-            },
+            "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
           },
           {
             "name": "fit",
-            "value": {
-              "key": "Straight",
-              "label": "Straight",
-            },
+            "value": "{\\"key\\":\\"Straight\\",\\"label\\":\\"Straight\\"}",
           },
           {
             "name": "color",
-            "value": {
-              "key": "White",
-              "label": "White",
-            },
+            "value": "{\\"key\\":\\"White\\",\\"label\\":\\"White\\"}",
           },
           {
             "name": "length",
-            "value": {
-              "key": "Ankle",
-              "label": "Ankle",
-            },
+            "value": "{\\"key\\":\\"Ankle\\",\\"label\\":\\"Ankle\\"}",
           },
         ],
         "images": [

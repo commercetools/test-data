@@ -96,17 +96,11 @@ describe(`with halloweenTopVariant01 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": {
-              "key": "Medium",
-              "label": "Medium",
-            },
+            "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
           },
           {
             "name": "color",
-            "value": {
-              "key": "Purple",
-              "label": "Purple",
-            },
+            "value": "{\\"key\\":\\"Purple\\",\\"label\\":\\"Purple\\"}",
           },
         ],
         "images": [
