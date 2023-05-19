@@ -12,8 +12,9 @@ export type TProductDiscountValueAbsoluteGraphql =
   TProductDiscountValueAbsolute & {
     __typename: 'ProductDiscountValueAbsolute';
   };
-export type TProductDiscountValueAbsoluteDraftGraphql =
-  TProductDiscountValueAbsoluteDraft & {};
+export type TProductDiscountValueAbsoluteDraftGraphql = {
+  absolute: Omit<TProductDiscountValueAbsoluteDraft, 'type'>;
+};
 
 export type TProductDiscountValueAbsoluteBuilder =
   TBuilder<TProductDiscountValueAbsolute>;

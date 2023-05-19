@@ -41,9 +41,7 @@ describe('builder', () => {
     >(
       'graphql',
       ProductDiscountValueExternalDraft.random(),
-      expect.objectContaining({
-        type: 'external',
-      })
+      expect.objectContaining({ external: {} })
     )
   );
 });

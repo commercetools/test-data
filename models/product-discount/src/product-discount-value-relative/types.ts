@@ -12,8 +12,9 @@ export type TProductDiscountValueRelativeGraphql =
   TProductDiscountValueRelative & {
     __typename: 'ProductDiscountValueRelative';
   };
-export type TProductDiscountValueRelativeDraftGraphql =
-  TProductDiscountValueRelativeDraft;
+export type TProductDiscountValueRelativeDraftGraphql = {
+  relative: Omit<TProductDiscountValueRelativeDraft, 'type'>;
+};
 
 export type TProductDiscountValueRelativeBuilder =
   TBuilder<TProductDiscountValueRelative>;
