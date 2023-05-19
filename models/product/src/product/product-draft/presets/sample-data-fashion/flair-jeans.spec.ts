@@ -130,19 +130,19 @@ describe(`with flairJeans preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+              "value": "{"key":"Large","label":"Large"}",
             },
             {
               "name": "fit",
-              "value": "{\\"key\\":\\"Flair\\",\\"label\\":\\"Flair\\"}",
+              "value": "{"key":"Flair","label":"Flair"}",
             },
             {
               "name": "color",
-              "value": "{\\"key\\":\\"Blue\\",\\"label\\":\\"Blue\\"}",
+              "value": "{"key":"Blue","label":"Blue"}",
             },
             {
               "name": "length",
-              "value": "{\\"key\\":\\"Crop\\",\\"label\\":\\"Crop\\"}",
+              "value": "{"key":"Crop","label":"Crop"}",
             },
           ],
           "images": undefined,
@@ -187,19 +187,19 @@ describe(`with flairJeans preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
+                "value": "{"key":"Medium","label":"Medium"}",
               },
               {
                 "name": "fit",
-                "value": "{\\"key\\":\\"Flair\\",\\"label\\":\\"Flair\\"}",
+                "value": "{"key":"Flair","label":"Flair"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"Black\\",\\"label\\":\\"Black\\"}",
+                "value": "{"key":"Black","label":"Black"}",
               },
               {
                 "name": "length",
-                "value": "{\\"key\\":\\"Extra Long\\",\\"label\\":\\"Extra Long\\"}",
+                "value": "{"key":"Extra Long","label":"Extra Long"}",
               },
             ],
             "images": undefined,

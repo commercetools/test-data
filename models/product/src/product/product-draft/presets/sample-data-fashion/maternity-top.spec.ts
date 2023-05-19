@@ -201,11 +201,11 @@ describe(`with maternityTop preset`, () => {
           "attributes": [
             {
               "name": "size",
-              "value": "{\\"key\\":\\"Small\\",\\"label\\":\\"Small\\"}",
+              "value": "{"key":"Small","label":"Small"}",
             },
             {
               "name": "color",
-              "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
+              "value": "{"key":"Green","label":"Green"}",
             },
           ],
           "images": [
@@ -277,11 +277,11 @@ describe(`with maternityTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Medium\\",\\"label\\":\\"Medium\\"}",
+                "value": "{"key":"Medium","label":"Medium"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
+                "value": "{"key":"Green","label":"Green"}",
               },
             ],
             "images": [
@@ -321,11 +321,11 @@ describe(`with maternityTop preset`, () => {
             "attributes": [
               {
                 "name": "size",
-                "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+                "value": "{"key":"Large","label":"Large"}",
               },
               {
                 "name": "color",
-                "value": "{\\"key\\":\\"Green\\",\\"label\\":\\"Green\\"}",
+                "value": "{"key":"Green","label":"Green"}",
               },
             ],
             "images": [

@@ -66,11 +66,11 @@ describe(`with skinnyJeansVariant02 preset`, () => {
         "attributes": [
           {
             "name": "size",
-            "value": "{\\"key\\":\\"Large\\",\\"label\\":\\"Large\\"}",
+            "value": "{"key":"Large","label":"Large"}",
           },
           {
             "name": "fit",
-            "value": "{\\"key\\":\\"Slim\\",\\"label\\":\\"Slim\\"}",
+            "value": "{"key":"Slim","label":"Slim"}",
           },
         ],
         "images": [

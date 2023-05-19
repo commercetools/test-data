@@ -59,7 +59,7 @@ describe(`with summerDressVariant02 preset`, () => {
         "attributes": [
           {
             "name": "color",
-            "value": "{\\"key\\":\\"Pink\\",\\"label\\":\\"Pink\\"}",
+            "value": "{"key":"Pink","label":"Pink"}",
           },
         ],
         "images": [

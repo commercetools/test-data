@@ -138,7 +138,7 @@ describe(`with sportCoat preset`, () => {
           "attributes": [
             {
               "name": "sleeve_length",
-              "value": "{\\"key\\":\\"Crop\\",\\"label\\":\\"Crop\\"}",
+              "value": "{"key":"Crop","label":"Crop"}",
             },
           ],
           "images": [
@@ -210,7 +210,7 @@ describe(`with sportCoat preset`, () => {
             "attributes": [
               {
                 "name": "sleeve_length",
-                "value": "{\\"key\\":\\"Normal\\",\\"label\\":\\"Normal\\"}",
+                "value": "{"key":"Normal","label":"Normal"}",
               },
             ],
             "images": [
