@@ -63,8 +63,9 @@ describe('with the preset `discountKids`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 2000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 2000,
+          },
         },
       }
     `);

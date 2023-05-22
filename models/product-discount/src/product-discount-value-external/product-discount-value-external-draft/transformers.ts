@@ -22,6 +22,15 @@ const transformers = {
     TProductDiscountValueExternalDraftGraphql
   >('graphql', {
     buildFields: [],
+    replaceFields: ({ fields }) => {
+      const { type, ...rest } = fields;
+
+      return {
+        [type]: {
+          ...rest,
+        },
+      };
+    },
   }),
 };
 

@@ -30,12 +30,12 @@ describe('with the preset `discountDresses`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
-          },
+          "money": [
+            {
+              "centAmount": 500,
+              "currencyCode": "EUR",
+            },
+          ],
           "type": "absolute",
         },
       }
@@ -69,13 +69,14 @@ describe('with the preset `discountDresses`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
+          "absolute": {
+            "money": [
+              {
+                "centAmount": 500,
+                "currencyCode": "EUR",
+              },
+            ],
           },
-          "type": "absolute",
         },
       }
     `);

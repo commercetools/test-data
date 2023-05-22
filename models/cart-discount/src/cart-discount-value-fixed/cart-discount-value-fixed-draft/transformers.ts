@@ -22,6 +22,15 @@ const transformers = {
     TCartDiscountValueFixedDraftGraphql
   >('graphql', {
     buildFields: ['money'],
+    replaceFields: ({ fields }) => {
+      const { type, ...rest } = fields;
+
+      return {
+        [type]: {
+          ...rest,
+        },
+      };
+    },
   }),
 };
 

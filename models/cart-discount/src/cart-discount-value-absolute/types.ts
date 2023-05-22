@@ -10,8 +10,10 @@ export type TCartDiscountValueAbsoluteDraft = CartDiscountValueAbsoluteDraft;
 export type TCartDiscountValueAbsoluteGraphql = TCartDiscountValueAbsolute & {
   __typename: 'CartDiscountValueAbsolute';
 };
-export type TCartDiscountValueAbsoluteDraftGraphql =
-  TCartDiscountValueAbsoluteDraft;
+
+export type TCartDiscountValueAbsoluteDraftGraphql = {
+  absolute: Omit<TCartDiscountValueAbsoluteDraft, 'type'>;
+};
 
 export type TCartDiscountValueAbsoluteBuilder =
   TBuilder<TCartDiscountValueAbsolute>;

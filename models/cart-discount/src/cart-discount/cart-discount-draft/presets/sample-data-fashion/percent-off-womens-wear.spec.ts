@@ -74,14 +74,14 @@ describe('with the preset `percentOffWomensWear`', () => {
         "target": {
           "lineItems": {
             "predicate": "categories.key contains "bottoms-women" and price.discount.id is not defined",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 1500,
-          "type": "relative",
+          "relative": {
+            "permyriad": 1500,
+          },
         },
       }
     `);

@@ -70,15 +70,14 @@ describe('with the preset `freeShipping`', () => {
         "sortOrder": "0.222",
         "stackingMode": "Stacking",
         "target": {
-          "shipping": {
-            "type": "shipping",
-          },
+          "shipping": {},
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 10000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 10000,
+          },
         },
       }
     `);

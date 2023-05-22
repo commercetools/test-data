@@ -1,4 +1,9 @@
-import { CartDiscount, CartDiscountDraft } from '@commercetools/platform-sdk';
+import {
+  CartDiscount,
+  CartDiscountDraft,
+  CartDiscountTarget,
+  CartDiscountValueDraft,
+} from '@commercetools/platform-sdk';
 import {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
@@ -17,10 +22,16 @@ export type TCartDiscountGraphql = TCartDiscount & {
 };
 export type TCartDiscountDraftGraphql = Omit<
   TCartDiscountDraft,
-  'name' | 'description'
+  'name' | 'description' | 'value' | 'target'
 > & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
+  value: {
+    [key: string]: Omit<CartDiscountValueDraft, 'type'>;
+  };
+  target: {
+    [key: string]: Omit<CartDiscountTarget, 'type'>;
+  };
 };
 
 export type TCartDiscountBuilder = TBuilder<TCartDiscount>;

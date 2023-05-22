@@ -31,7 +31,6 @@ describe('builder', () => {
       CartDiscountLineItemsTargetDraft.random(),
       expect.objectContaining({
         lineItems: {
-          type: 'lineItems',
           predicate: expect.any(String),
         },
       })

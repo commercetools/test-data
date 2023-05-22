@@ -71,9 +71,7 @@ describe('builder', () => {
             value: expect.any(String),
           }),
         ]),
-        value: expect.objectContaining({
-          type: expect.any(String),
-        }),
+        value: expect.any(Object),
         predicate: '1=1',
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),

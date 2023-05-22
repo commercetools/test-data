@@ -12,8 +12,9 @@ export type TProductDiscountValueExternalGraphql =
   TProductDiscountValueExternal & {
     __typename: 'ProductDiscountValueExternal';
   };
-export type TProductDiscountValueExternalDraftGraphql =
-  TProductDiscountValueExternalDraft;
+export type TProductDiscountValueExternalDraftGraphql = {
+  external: Omit<TProductDiscountValueExternalDraft, 'type'>;
+};
 
 export type TProductDiscountValueExternalBuilder =
   TBuilder<TProductDiscountValueExternal>;

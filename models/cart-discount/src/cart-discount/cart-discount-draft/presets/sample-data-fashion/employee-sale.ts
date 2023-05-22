@@ -20,11 +20,7 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(1500))
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
-    .target(
-      CartDiscountLineItemsTargetDraft.random().predicate(
-        `customer.customerGroup.key = "${customerGroupDraft.key}"`
-      )
-    )
+    .target(CartDiscountLineItemsTargetDraft.random().predicate(`1=1`))
     .name(LocalizedString.presets.empty()['en-US']('Employee Sale'))
     .description(LocalizedString.presets.empty()['en-US']('employee_sale'))
     .stackingMode(stackingMode.Stacking)

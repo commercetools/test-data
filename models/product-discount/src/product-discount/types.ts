@@ -1,6 +1,7 @@
 import {
   ProductDiscount,
   ProductDiscountDraft,
+  ProductDiscountValueDraft,
 } from '@commercetools/platform-sdk';
 import {
   TClientLoggingGraphql,
@@ -20,10 +21,13 @@ export type TProductDiscountGraphql = TProductDiscount & {
 };
 export type TProductDiscountDraftGraphql = Omit<
   TProductDiscountDraft,
-  'name' | 'description'
+  'name' | 'description' | 'value'
 > & {
   name: TLocalizedStringGraphql;
   description?: TLocalizedStringGraphql | null;
+  value: {
+    [key: string]: Omit<ProductDiscountValueDraft, 'type'>;
+  };
 };
 
 export type TProductDiscountBuilder = TBuilder<TProductDiscount>;

@@ -36,12 +36,12 @@ describe('with the preset `luxeSpend`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 3000,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
-          },
+          "money": [
+            {
+              "centAmount": 3000,
+              "currencyCode": "EUR",
+            },
+          ],
           "type": "absolute",
         },
       }
@@ -78,19 +78,19 @@ describe('with the preset `luxeSpend`', () => {
         "target": {
           "lineItems": {
             "predicate": "1=1",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 3000,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
+          "absolute": {
+            "money": [
+              {
+                "centAmount": 3000,
+                "currencyCode": "EUR",
+              },
+            ],
           },
-          "type": "absolute",
         },
       }
     `);

@@ -68,20 +68,21 @@ describe('builder', () => {
       'graphql',
       CartDiscountValueGiftLineItemDraft.random(),
       expect.objectContaining({
-        type: 'giftLineItem',
-        product: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'product',
-        }),
-        variantId: expect.any(Number),
-        supplyChannel: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
-        distributionChannel: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
+        giftLineItem: {
+          product: expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'product',
+          }),
+          variantId: expect.any(Number),
+          supplyChannel: expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'channel',
+          }),
+          distributionChannel: expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'channel',
+          }),
+        },
       })
     )
   );

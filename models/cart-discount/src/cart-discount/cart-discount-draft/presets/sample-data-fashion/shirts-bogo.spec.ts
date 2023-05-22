@@ -81,14 +81,14 @@ describe('with the preset `shirtsBogo`', () => {
             "predicate": "productType.key = "shirts"",
             "selectionMode": "Cheapest",
             "triggerQuantity": 2,
-            "type": "multiBuyLineItems",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 10000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 10000,
+          },
         },
       }
     `);

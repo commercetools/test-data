@@ -1,10 +1,8 @@
-import { MultiBuyCustomLineItemsTarget } from '@commercetools/platform-sdk';
+import { MultiBuyLineItemsTarget } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountMultiBuyLineItemsTarget =
-  MultiBuyCustomLineItemsTarget;
-export type TCartDiscountMultiBuyLineItemsTargetDraft =
-  MultiBuyCustomLineItemsTarget;
+export type TCartDiscountMultiBuyLineItemsTarget = MultiBuyLineItemsTarget;
+export type TCartDiscountMultiBuyLineItemsTargetDraft = MultiBuyLineItemsTarget;
 
 export type TCartDiscountMultiBuyLineItemsTargetGraphql =
   TCartDiscountMultiBuyLineItemsTarget & {
@@ -12,7 +10,7 @@ export type TCartDiscountMultiBuyLineItemsTargetGraphql =
   };
 
 export type TCartDiscountMultiBuyLineItemsTargetDraftGraphql = {
-  multiBuyLineItems: TCartDiscountMultiBuyLineItemsTarget;
+  multiBuyLineItems: Omit<TCartDiscountMultiBuyLineItemsTarget, 'type'>;
 };
 
 export type TCartDiscountMultiBuyLineItemsTargetBuilder =

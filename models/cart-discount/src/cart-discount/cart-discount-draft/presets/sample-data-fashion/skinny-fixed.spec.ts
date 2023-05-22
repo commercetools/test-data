@@ -36,12 +36,12 @@ describe('with the preset `skinnyFixed`', () => {
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 2500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
-          },
+          "money": [
+            {
+              "centAmount": 2500,
+              "currencyCode": "EUR",
+            },
+          ],
           "type": "fixed",
         },
       }
@@ -78,19 +78,19 @@ describe('with the preset `skinnyFixed`', () => {
         "target": {
           "lineItems": {
             "predicate": "product.key = "skinny_jeans"",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "money": {
-            "centAmount": 2500,
-            "currencyCode": "EUR",
-            "fractionDigits": 2,
-            "type": "centPrecision",
+          "fixed": {
+            "money": [
+              {
+                "centAmount": 2500,
+                "currencyCode": "EUR",
+              },
+            ],
           },
-          "type": "fixed",
         },
       }
     `);

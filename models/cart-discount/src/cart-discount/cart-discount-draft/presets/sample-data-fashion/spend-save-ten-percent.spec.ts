@@ -73,14 +73,14 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "target": {
           "lineItems": {
             "predicate": "1=1",
-            "type": "lineItems",
           },
         },
         "validFrom": undefined,
         "validUntil": undefined,
         "value": {
-          "permyriad": 1000,
-          "type": "relative",
+          "relative": {
+            "permyriad": 1000,
+          },
         },
       }
     `);

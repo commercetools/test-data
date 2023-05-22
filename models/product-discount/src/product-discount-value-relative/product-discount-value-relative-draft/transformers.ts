@@ -22,6 +22,15 @@ const transformers = {
     TProductDiscountValueRelativeDraftGraphql
   >('graphql', {
     buildFields: [],
+    replaceFields: ({ fields }) => {
+      const { type, ...rest } = fields;
+
+      return {
+        [type]: {
+          ...rest,
+        },
+      };
+    },
   }),
 };
 

@@ -1,7 +1,4 @@
-import {
-  CentPrecisionMoneyDraft,
-  LocalizedString,
-} from '@commercetools-test-data/commons';
+import { LocalizedString, Money } from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
@@ -22,12 +19,9 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(
-      CartDiscountValueAbsoluteDraft.random().money(
-        CentPrecisionMoneyDraft.random()
-          .currencyCode('EUR')
-          .centAmount(3000)
-          .fractionDigits(2)
-      )
+      CartDiscountValueAbsoluteDraft.random().money([
+        Money.random().currencyCode('EUR').centAmount(3000),
+      ])
     )
     .cartPredicate(
       `totalPrice = "500.00 EUR" and customer.customerGroup.key = "${customerGroupDraft.key}"`

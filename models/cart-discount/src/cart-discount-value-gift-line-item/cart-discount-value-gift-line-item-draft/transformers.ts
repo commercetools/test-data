@@ -22,6 +22,15 @@ const transformers = {
     TCartDiscountValueGiftLineItemDraftGraphql
   >('graphql', {
     buildFields: ['product', 'supplyChannel', 'distributionChannel'],
+    replaceFields: ({ fields }) => {
+      const { type, ...rest } = fields;
+
+      return {
+        [type]: {
+          ...rest,
+        },
+      };
+    },
   }),
 };
 
