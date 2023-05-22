@@ -17,7 +17,8 @@ const johnDoe = CustomerDraft.presets.sampleDataFashion
   .build<TCustomerDraft>();
 const address = AddressDraft.presets.sampleDataFashion.johnDoe();
 const employeeSale = DiscountCodeDraft.presets.sampleDataFashion
-  .employeeSale()
+  // cartDiscountId is not used, we can pass an empty string
+  .employeeSale('')
   .build<TDiscountCodeDraft>();
 
 const johnDoe01 = (): TCartDraftBuilder =>
