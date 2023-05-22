@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 5.3.4
+
+### Patch Changes
+
+- [#270](https://github.com/commercetools/test-data/pull/270) [`1248fad`](https://github.com/commercetools/test-data/commit/1248fad6d1b008dcd8abec4a386d74a34c349648) Thanks [@jaikamat](https://github.com/jaikamat)! - correct graphql transformations, minor data fixes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.4
+  - @commercetools-test-data/category@5.3.4
+  - @commercetools-test-data/commons@5.3.4
+  - @commercetools-test-data/customer-group@5.3.4
+  - @commercetools-test-data/product-type@5.3.4
+  - @commercetools-test-data/utils@5.3.4
+
 ## 5.3.3
 
 ### Patch Changes
