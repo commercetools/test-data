@@ -3,13 +3,15 @@ import shirtsBogo from './shirts-bogo';
 
 describe('with the preset `employeeSale`', () => {
   it('should return a discount code draft', () => {
-    const discountCodeDraft = shirtsBogo().build<TDiscountCodeDraft>();
+    const discountCodeDraft = shirtsBogo(
+      'my-cart-discount-id'
+    ).build<TDiscountCodeDraft>();
 
     expect(discountCodeDraft).toMatchInlineSnapshot(`
       {
         "cartDiscounts": [
           {
-            "key": "ShirtsBOGO",
+            "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },
         ],
@@ -38,15 +40,16 @@ describe('with the preset `employeeSale`', () => {
   });
 
   it('should return a discount code draft when built for GraphQL', () => {
-    const discountCodeDraft =
-      shirtsBogo().buildGraphql<TDiscountCodeDraftGraphql>();
+    const discountCodeDraft = shirtsBogo(
+      'my-cart-discount-id'
+    ).buildGraphql<TDiscountCodeDraftGraphql>();
 
     expect(discountCodeDraft).toMatchInlineSnapshot(`
       {
         "cartDiscounts": [
           {
             "__typename": "Reference",
-            "key": "ShirtsBOGO",
+            "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },
         ],
