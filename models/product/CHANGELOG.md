@@ -1,5 +1,18 @@
 # @commercetools-test-data/product
 
+## 5.3.5
+
+### Patch Changes
+
+- Updated dependencies [[`a321085`](https://github.com/commercetools/test-data/commit/a321085894185cd7206dde9b3a9a67dcf8722443)]:
+  - @commercetools-test-data/tax-category@5.3.5
+  - @commercetools-test-data/commons@5.3.5
+  - @commercetools-test-data/category@5.3.5
+  - @commercetools-test-data/product-type@5.3.5
+  - @commercetools-test-data/product-variant@5.3.5
+  - @commercetools-test-data/core@5.3.5
+  - @commercetools-test-data/utils@5.3.5
+
 ## 5.3.4
 
 ### Patch Changes
