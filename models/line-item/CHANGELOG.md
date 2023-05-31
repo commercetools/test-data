@@ -1,5 +1,17 @@
 # @commercetools-test-data/line-item
 
+## 5.3.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.6
+  - @commercetools-test-data/channel@5.3.6
+  - @commercetools-test-data/commons@5.3.6
+  - @commercetools-test-data/product-variant@5.3.6
+  - @commercetools-test-data/tax-category@5.3.6
+  - @commercetools-test-data/utils@5.3.6
+
 ## 5.3.5
 
 ### Patch Changes
