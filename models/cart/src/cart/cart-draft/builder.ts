@@ -1,5 +1,5 @@
 import { Builder } from '@commercetools-test-data/core';
-import type { TCreateCartDraftBuilder, TCartDraft } from '../../types';
+import type { TCreateCartDraftBuilder, TCartDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
