@@ -1,4 +1,4 @@
-import type { TCartDraft } from '../../types';
+import type { TCartDraft } from '../../../types';
 import empty from './empty';
 
 it('should set all specified fields to undefined', () => {

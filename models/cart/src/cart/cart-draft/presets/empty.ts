@@ -1,4 +1,4 @@
-import type { TCartDraftBuilder } from '../../types';
+import type { TCartDraftBuilder } from '../../../types';
 import CartDraft from '../builder';
 
 const empty = (): TCartDraftBuilder =>

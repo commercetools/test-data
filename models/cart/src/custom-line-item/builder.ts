@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
-import type { TCreateCartDraftBuilder, TCartDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
+import type { TCustomLineItem, TCreateCustomLineItemBuilder } from './types';
 
-const Model: TCreateCartDraftBuilder = () =>
-  Builder<TCartDraft>({
+const Model: TCreateCustomLineItemBuilder = () =>
+  Builder<TCustomLineItem>({
     generator,
     transformers,
   });

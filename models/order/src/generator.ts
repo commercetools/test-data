@@ -1,4 +1,4 @@
-import * as Cart from '@commercetools-test-data/cart';
+import { Cart } from '@commercetools-test-data/cart';
 import { CartDiscount } from '@commercetools-test-data/cart-discount';
 import {
   CentPrecisionMoney,
