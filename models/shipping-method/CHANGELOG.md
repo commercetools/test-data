@@ -1,5 +1,18 @@
 # @commercetools-test-data/shipping-method
 
+## 5.3.6
+
+### Patch Changes
+
+- [#276](https://github.com/commercetools/test-data/pull/276) [`2082bd5`](https://github.com/commercetools/test-data/commit/2082bd5fc9713f81a2e22c198fc8de8f67e898fc) Thanks [@valoriecarli](https://github.com/valoriecarli)! - TaxRate & ZoneRate specific presets for audit log
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.3.6
+  - @commercetools-test-data/commons@5.3.6
+  - @commercetools-test-data/tax-category@5.3.6
+  - @commercetools-test-data/zone@5.3.6
+  - @commercetools-test-data/utils@5.3.6
+
 ## 5.3.5
 
 ### Patch Changes
