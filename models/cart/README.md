@@ -1,8 +1,8 @@
 # @commercetools-test-data/cart
 
-This package provides the data model for the commercetools platform `Cart` type
+This package provides the data model for the commercetools platform `Cart` representations
 
-https://docs.commercetools.com/api/projects/carts#cart
+https://docs.commercetools.com/api/projects/carts#representations
 
 # Install
 
@@ -11,6 +11,8 @@ $ pnpm add -D @commercetools-test-data/cart
 ```
 
 # Usage
+
+## Cart
 
 ```ts
 import {
@@ -25,4 +27,19 @@ const cartDraft = CartDraft.random().build<TCartDraft>();
 
 // Presets
 const emptyCartDraft = CartDraft.presets.empty().build<TCartDraft>();
+```
+
+## CustomLineItem
+
+```ts
+import {
+  CustomLineItem,
+  CustomLineItemDraft,
+  type TCustomLineItem,
+  type TCustomLineItemDraft,
+} from '@commercetools-test-data/cart';
+
+const customLineItem = CustomLineItem.random().build<TCustomLineItem>();
+const customLineItemDraft =
+  CustomLineItemDraft.random().build<TCustomLineItemDraft>();
 ```
