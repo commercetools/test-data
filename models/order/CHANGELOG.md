@@ -1,5 +1,22 @@
 # @commercetools-test-data/order
 
+## 5.4.0
+
+### Minor Changes
+
+- [#278](https://github.com/commercetools/test-data/pull/278) [`de257ce`](https://github.com/commercetools/test-data/commit/de257ce30d70857a637f8b1018f559b3fbcc2ff5) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Add custom-line-item model to Cart package
+
+### Patch Changes
+
+- Updated dependencies [[`de257ce`](https://github.com/commercetools/test-data/commit/de257ce30d70857a637f8b1018f559b3fbcc2ff5)]:
+  - @commercetools-test-data/cart@5.4.0
+  - @commercetools-test-data/core@5.4.0
+  - @commercetools-test-data/cart-discount@5.4.0
+  - @commercetools-test-data/commons@5.4.0
+  - @commercetools-test-data/customer-group@5.4.0
+  - @commercetools-test-data/line-item@5.4.0
+  - @commercetools-test-data/utils@5.4.0
+
 ## 5.3.6
 
 ### Patch Changes

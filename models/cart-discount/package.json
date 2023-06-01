@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/cart-discount",
-  "version": "5.3.6",
+  "version": "5.4.0",
   "description": "Data models for commercetools API CartDiscount",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,12 +19,12 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/category": "5.3.6",
-    "@commercetools-test-data/commons": "5.3.6",
-    "@commercetools-test-data/core": "5.3.6",
-    "@commercetools-test-data/customer-group": "5.3.6",
-    "@commercetools-test-data/product-type": "5.3.6",
-    "@commercetools-test-data/utils": "5.3.6",
+    "@commercetools-test-data/category": "5.4.0",
+    "@commercetools-test-data/commons": "5.4.0",
+    "@commercetools-test-data/core": "5.4.0",
+    "@commercetools-test-data/customer-group": "5.4.0",
+    "@commercetools-test-data/product-type": "5.4.0",
+    "@commercetools-test-data/utils": "5.4.0",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"
   }
