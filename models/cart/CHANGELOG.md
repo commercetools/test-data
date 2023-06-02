@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart
 
+## 5.4.1
+
+### Patch Changes
+
+- [#282](https://github.com/commercetools/test-data/pull/282) [`57b1fa2`](https://github.com/commercetools/test-data/commit/57b1fa2c2c9f855eca534ef5646bc9f77c054ab9) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Added change-history presets to various models
+
+- Updated dependencies [[`57b1fa2`](https://github.com/commercetools/test-data/commit/57b1fa2c2c9f855eca534ef5646bc9f77c054ab9)]:
+  - @commercetools-test-data/customer@5.4.1
+  - @commercetools-test-data/commons@5.4.1
+  - @commercetools-test-data/line-item@5.4.1
+  - @commercetools-test-data/discount-code@5.4.1
+  - @commercetools-test-data/core@5.4.1
+  - @commercetools-test-data/utils@5.4.1
+
 ## 5.4.0
 
 ### Minor Changes

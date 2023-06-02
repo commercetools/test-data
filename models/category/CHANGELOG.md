@@ -1,5 +1,14 @@
 # @commercetools-test-data/category
 
+## 5.4.1
+
+### Patch Changes
+
+- Updated dependencies [[`57b1fa2`](https://github.com/commercetools/test-data/commit/57b1fa2c2c9f855eca534ef5646bc9f77c054ab9)]:
+  - @commercetools-test-data/commons@5.4.1
+  - @commercetools-test-data/core@5.4.1
+  - @commercetools-test-data/utils@5.4.1
+
 ## 5.4.0
 
 ### Patch Changes
