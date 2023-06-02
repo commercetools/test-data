@@ -29,7 +29,7 @@ const generator = Generator<TCustomer>({
     middleName: fake((f) => f.name.firstName()),
     title: fake((f) => f.name.jobTitle()),
     salutation: oneOf('Dr.', 'Ms.', 'Mr.'),
-    dateOfBirth: fake((f) => f.date.past(60)),
+    dateOfBirth: null,
     companyName: fake((f) => f.company.name()),
     vatId: fake((f) => f.random.alphaNumeric(12)),
     addresses: fake(() => Address.random()),

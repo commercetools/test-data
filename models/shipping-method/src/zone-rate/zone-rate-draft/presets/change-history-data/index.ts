@@ -1,7 +1,7 @@
-import usa from './usa';
+import usZone from './with-us-currency-shipping-rate';
 
 const presets = {
-  usa,
+  usZone,
 };
 
 export default presets;

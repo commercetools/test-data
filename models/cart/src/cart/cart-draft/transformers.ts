@@ -5,6 +5,7 @@ const transformers = {
   default: Transformer<TCartDraft, TCartDraft>('default', {
     buildFields: [
       'customerGroup',
+      'customLineItems',
       'businessUnit',
       'lineItems',
       'shippingAddress',
@@ -15,6 +16,7 @@ const transformers = {
   rest: Transformer<TCartDraft, TCartDraft>('rest', {
     buildFields: [
       'customerGroup',
+      'customLineItems',
       'businessUnit',
       'lineItems',
       'shippingAddress',

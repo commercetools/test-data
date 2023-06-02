@@ -1,5 +1,9 @@
-import withCountryUsaNoStateAndIncludedInPrice from './with-country-usa-no-state-and-included-in-price';
+import withCountryCodeUsNoState from './with-country-code-us-no-state';
+import withCountryCodeUsNoStateIncludedInPrice from './with-country-code-us-no-state-included-in-price';
 
-const presets = { withCountryUsaNoStateAndIncludedInPrice };
+const presets = {
+  withCountryCodeUsNoState,
+  withCountryCodeUsNoStateIncludedInPrice,
+};
 
 export default presets;

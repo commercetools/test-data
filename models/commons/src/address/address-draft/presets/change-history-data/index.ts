@@ -1,5 +1,6 @@
-import usAddress from './us-address';
+import withCountryUs from './with-country-us';
+import withCountryUsNoState from './with-country-us-no-state';
 
-const presets = { usAddress };
+const presets = { withCountryUs, withCountryUsNoState };
 
 export default presets;

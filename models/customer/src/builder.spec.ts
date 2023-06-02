@@ -1,3 +1,5 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCustomer, TCustomerGraphql } from './types';
 import * as Customer from './index';
@@ -28,7 +30,7 @@ describe('builder', () => {
         middleName: expect.any(String),
         title: expect.any(String),
         salutation: expect.any(String),
-        dateOfBirth: expect.any(Date),
+        dateOfBirth: null,
         companyName: expect.any(String),
         vatId: expect.any(String),
         addresses: null,
@@ -70,7 +72,7 @@ describe('builder', () => {
         middleName: expect.any(String),
         title: expect.any(String),
         salutation: expect.any(String),
-        dateOfBirth: expect.any(Date),
+        dateOfBirth: null,
         companyName: expect.any(String),
         vatId: expect.any(String),
         addresses: null,
@@ -115,7 +117,7 @@ describe('builder', () => {
         middleName: expect.any(String),
         title: expect.any(String),
         salutation: expect.any(String),
-        dateOfBirth: expect.any(Date),
+        dateOfBirth: null,
         companyName: expect.any(String),
         vatId: expect.any(String),
         addresses: null,

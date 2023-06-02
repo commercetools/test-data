@@ -1,7 +1,7 @@
-import usd from './usd';
+import usCurrency from './with-us-currency';
 
 const presets = {
-  usd,
+  usCurrency,
 };
 
 export default presets;
