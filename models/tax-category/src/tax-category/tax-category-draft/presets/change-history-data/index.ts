@@ -1,5 +1,9 @@
-import withTaxRateCountryUsaNoStateAndIncludedInPrice from './with-tax-rate-country-usa-no-state-and-included-in-price';
+import withTaxRateCountryUsNoState from './with-tax-rate-country-us-no-state';
+import withTaxRateCountryUsNoStateIncludedInPrice from './with-tax-rate-country-us-no-state-included-in-price';
 
-const presets = { withTaxRateCountryUsaNoStateAndIncludedInPrice };
+const presets = {
+  withTaxRateCountryUsNoStateIncludedInPrice,
+  withTaxRateCountryUsNoState,
+};
 
 export default presets;

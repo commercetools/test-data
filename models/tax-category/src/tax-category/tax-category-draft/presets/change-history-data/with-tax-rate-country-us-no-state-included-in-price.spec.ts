@@ -1,10 +1,10 @@
 import type { TTaxCategoryDraft } from '../../../types';
-import withCountryUsaAndIncludedInPrice from './with-tax-rate-country-usa-no-state-and-included-in-price';
+import withCountryUsNoStateIncludedInPrice from './with-tax-rate-country-us-no-state-included-in-price';
 
-describe('with a tax rate preset `with country code usa, no state & included in price`', () => {
-  it('should return a tax category with a tax rate containing `us`, no state & included in price set to true', () => {
+describe('Tax category with a tax rate with country code US, no state & included in price', () => {
+  it('should return a tax category containing a tax rate with country US, no state & included in price set to true', () => {
     const taxCategory =
-      withCountryUsaAndIncludedInPrice().build<TTaxCategoryDraft>();
+      withCountryUsNoStateIncludedInPrice().build<TTaxCategoryDraft>();
 
     expect(taxCategory).toEqual(
       expect.objectContaining({
@@ -14,7 +14,7 @@ describe('with a tax rate preset `with country code usa, no state & included in 
         rates: expect.arrayContaining([
           expect.objectContaining({
             country: 'US',
-            state: undefined,
+            state: null,
             includedInPrice: true,
           }),
         ]),

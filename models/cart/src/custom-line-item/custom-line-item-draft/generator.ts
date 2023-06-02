@@ -1,4 +1,4 @@
-import { Money } from '@commercetools-test-data/commons';
+import { LocalizedString, Money } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TCustomLineItemDraft } from '../types';
 
@@ -6,7 +6,7 @@ import { TCustomLineItemDraft } from '../types';
 
 const generator = Generator<TCustomLineItemDraft>({
   fields: {
-    name: fake((f) => f.lorem.words(3)),
+    name: fake(() => LocalizedString.random()),
     quantity: fake((f) => f.datatype.number(9)),
     money: fake(() => [Money.random()]),
     slug: fake((f) => f.lorem.slug(3)),

@@ -1,11 +1,11 @@
 import { TAddressDraft } from '../../../types';
-import usAddress from './us-address';
+import withCountryUs from './with-country-us';
 
 describe('with country code usa', () => {
   it('should return a country code set to `usa`', () => {
-    const address = usAddress().build<TAddressDraft>();
+    const countryUs = withCountryUs().build<TAddressDraft>();
 
-    expect(address).toEqual(
+    expect(countryUs).toEqual(
       expect.objectContaining({
         country: expect.stringContaining('US'),
       })

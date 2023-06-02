@@ -1,4 +1,4 @@
-import { Money } from '@commercetools-test-data/commons';
+import { LocalizedString, Money } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TCustomLineItem } from './types';
 
@@ -7,7 +7,7 @@ import { TCustomLineItem } from './types';
 const generator = Generator<TCustomLineItem>({
   fields: {
     id: fake((f) => f.datatype.uuid()),
-    name: fake((f) => f.lorem.words(3)),
+    name: fake(() => LocalizedString.random()),
     money: fake(() => [Money.random()]),
     taxedPrice: null,
     totalPrice: null,

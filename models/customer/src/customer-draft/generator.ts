@@ -20,7 +20,7 @@ const generator = Generator<TCustomerDraft>({
     anonymousCart: null,
     anonymousId: null,
     externalId: fake((f) => f.datatype.uuid()),
-    dateOfBirth: fake((f) => f.date.past(60)),
+    dateOfBirth: null,
     companyName: fake((f) => f.company.name()),
     vatId: fake((f) => f.random.alphaNumeric(12)),
     isEmailVerified: fake((f) => f.datatype.boolean()),

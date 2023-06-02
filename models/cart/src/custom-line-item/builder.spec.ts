@@ -11,7 +11,11 @@ describe('builder', () => {
       CustomLineItemDraft.random(),
       expect.objectContaining({
         id: expect.any(String),
-        name: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
         money: expect.arrayContaining([
           expect.objectContaining({
             centAmount: expect.any(Number),
@@ -39,7 +43,11 @@ describe('builder', () => {
       CustomLineItemDraft.random(),
       expect.objectContaining({
         id: expect.any(String),
-        name: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
         money: expect.arrayContaining([
           expect.objectContaining({
             centAmount: expect.any(Number),

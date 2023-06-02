@@ -1,19 +1,19 @@
 import { TCustomerDraft } from '../../../types';
-import usBasedCustomer from './us-based-customer';
+import usBasedCustomerNoState from './us-based-with-no-state';
 
-describe('us based customer', () => {
-  it('should return us based addresses', () => {
-    const customer = usBasedCustomer().build<TCustomerDraft>();
+describe('A US-based customer with no defined state', () => {
+  it('should return country with value of US and no state', () => {
+    const customer = usBasedCustomerNoState().build<TCustomerDraft>();
 
     expect(customer).toEqual(
       expect.objectContaining({
-        dateOfBirth: undefined,
         locale: expect.stringContaining('en-US'),
         defaultBillingAddress: 0,
         defaultShippingAddress: 0,
         addresses: expect.arrayContaining([
           expect.objectContaining({
             country: expect.stringContaining('US'),
+            state: null,
           }),
         ]),
       })

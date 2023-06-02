@@ -6,9 +6,9 @@ import * as ZoneRateDraft from '../../index';
 // zone with key'e2e-us-zone' will always be set in the project under test
 //{ "name": "e2e-us-zone", "key" : "e2e-us-zone", "locations": [{ "country": "US"} ]}
 
-const unitedStates = (): TZoneRateDraftBuilder =>
+const usZone = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReference.presets.zone().key('e2e-us-zone'))
-    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usd()]);
+    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usCurrency()]);
 
-export default unitedStates;
+export default usZone;

@@ -6,10 +6,10 @@ import type {
 
 const transformers = {
   default: Transformer<TCustomLineItemDraft, TCustomLineItemDraft>('default', {
-    buildFields: ['money'],
+    buildFields: ['money', 'name'],
   }),
   rest: Transformer<TCustomLineItemDraft, TCustomLineItemDraft>('rest', {
-    buildFields: ['money'],
+    buildFields: ['money', 'name'],
   }),
   //scaffolding only
   graphql: Transformer<TCustomLineItemDraft, TCustomLineItemDraftGraphql>(

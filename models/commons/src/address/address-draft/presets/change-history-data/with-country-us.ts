@@ -1,7 +1,7 @@
 import { TAddressDraftBuilder } from '../../../types';
 import * as AddressDraft from '../../index';
 
-const usAddress = (): TAddressDraftBuilder =>
+const withCountryUs = (): TAddressDraftBuilder =>
   AddressDraft.random().country('US');
 
-export default usAddress;
+export default withCountryUs;

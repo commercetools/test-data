@@ -1,7 +1,7 @@
-import usBasedCustomer from './us-based-customer';
+import usBasedNoState from './us-based-with-no-state';
 
 const presets = {
-  usBasedCustomer,
+  usBasedNoState,
 };
 
 export default presets;
