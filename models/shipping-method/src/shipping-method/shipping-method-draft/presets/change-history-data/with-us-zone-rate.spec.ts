@@ -31,21 +31,3 @@ describe('ShippingMethod with `US` Zone preset', () => {
     );
   });
 });
-
-// shippingRates: expect.arrayContaining([
-//   expect.objectContaining({
-//     tiers: [],
-//     price: expect.objectContaining({
-//       currencyCode: expect.stringContaining('US'),
-//       centAmount: expect.any(Number),
-//     }),
-//     freeAbove: expect.objectContaining({
-//       currencyCode: expect.stringContaining('US'),
-//       centAmount: expect.any(Number),
-//     }),
-//   }),
-// ]),
-//   })
-// );
-//   });
-// });
