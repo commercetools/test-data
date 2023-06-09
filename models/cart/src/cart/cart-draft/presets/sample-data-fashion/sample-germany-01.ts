@@ -17,7 +17,7 @@ const customer = CustomerDraft.presets.sampleDataFashion
   .build<TCustomerDraft>();
 const address = AddressDraft.presets.sampleDataFashion.sampleGermany();
 const necklaceProductVariant = ProductVariantDraft.presets.sampleDataFashion
-  .necklaceVariant02()
+  .necklaceVariant01()
   .build<TProductVariantDraft>();
 
 const sampleGermany01 = (): TCartDraftBuilder =>
