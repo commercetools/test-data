@@ -14,6 +14,10 @@ const sportCoatVariant01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('AUD').centAmount(20000))
         .country('AU'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(15000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

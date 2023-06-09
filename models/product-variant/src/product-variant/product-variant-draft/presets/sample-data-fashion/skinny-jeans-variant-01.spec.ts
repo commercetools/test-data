@@ -51,6 +51,21 @@ describe(`with skinnyJeansVariant01 preset`, () => {
               "currencyCode": "EUR",
             },
           },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 4500,
+              "currencyCode": "USD",
+            },
+          },
         ],
         "sku": "396594",
       }
@@ -99,6 +114,23 @@ describe(`with skinnyJeansVariant01 preset`, () => {
               "centPrecision": {
                 "centAmount": 4999,
                 "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 4500,
+                "currencyCode": "USD",
               },
             },
           },

@@ -24,6 +24,7 @@
     "@commercetools-test-data/customer": "5.4.1",
     "@commercetools-test-data/discount-code": "5.4.1",
     "@commercetools-test-data/line-item": "5.4.1",
+    "@commercetools-test-data/product-variant": "5.4.1",
     "@commercetools-test-data/utils": "5.4.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^7.4.0"

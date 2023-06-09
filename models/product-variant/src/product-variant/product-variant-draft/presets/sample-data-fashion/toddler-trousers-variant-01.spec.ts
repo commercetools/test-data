@@ -65,6 +65,21 @@ describe(`with toddlerTrousersVariant01 preset`, () => {
               "currencyCode": "USD",
             },
           },
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 2299,
+              "currencyCode": "EUR",
+            },
+          },
         ],
         "sku": "855485",
       }
@@ -121,6 +136,23 @@ describe(`with toddlerTrousersVariant01 preset`, () => {
               "centPrecision": {
                 "centAmount": 2599,
                 "currencyCode": "USD",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 2299,
+                "currencyCode": "EUR",
               },
             },
           },

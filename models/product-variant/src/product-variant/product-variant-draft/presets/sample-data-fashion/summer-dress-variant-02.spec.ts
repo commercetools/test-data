@@ -44,6 +44,21 @@ describe(`with summerDressVariant02 preset`, () => {
               "currencyCode": "USD",
             },
           },
+          {
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 7500,
+              "currencyCode": "AUD",
+            },
+          },
         ],
         "sku": "439502",
       }
@@ -88,6 +103,23 @@ describe(`with summerDressVariant02 preset`, () => {
               "centPrecision": {
                 "centAmount": 7500,
                 "currencyCode": "USD",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 7500,
+                "currencyCode": "AUD",
               },
             },
           },
