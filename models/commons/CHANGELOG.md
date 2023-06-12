@@ -1,5 +1,17 @@
 # @commercetools-test-data/commons
 
+## 5.5.0
+
+### Minor Changes
+
+- [#284](https://github.com/commercetools/test-data/pull/284) [`b49a3ed`](https://github.com/commercetools/test-data/commit/b49a3ed0c028f279ac039c23d986182323bce6de) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Update fashion sample data customer, cart, order, and product variant presets for consistency.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.5.0
+  - @commercetools-test-data/utils@5.5.0
+
 ## 5.4.1
 
 ### Patch Changes
