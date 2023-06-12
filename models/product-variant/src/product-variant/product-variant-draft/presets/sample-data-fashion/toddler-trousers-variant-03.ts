@@ -14,6 +14,10 @@ const toddlerTrousersVariant03 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('USD').centAmount(2599))
         .country('US'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('EUR').centAmount(2299))
+        .country('DE'),
     ])
     .images([
       Image.ImageDraft.presets

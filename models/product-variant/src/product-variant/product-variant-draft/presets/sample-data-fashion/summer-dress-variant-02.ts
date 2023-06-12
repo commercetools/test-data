@@ -14,6 +14,10 @@ const summerDressVariant02 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('USD').centAmount(7500))
         .country('US'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('AUD').centAmount(7500))
+        .country('AU'),
     ])
     .images([
       Image.ImageDraft.presets

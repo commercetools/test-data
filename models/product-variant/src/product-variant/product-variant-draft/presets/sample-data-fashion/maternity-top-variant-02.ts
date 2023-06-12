@@ -14,6 +14,10 @@ const maternityTopVariant02 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('EUR').centAmount(2695))
         .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('AUD').centAmount(2500))
+        .country('AU'),
     ])
     .images([
       Image.ImageDraft.presets

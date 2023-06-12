@@ -14,6 +14,10 @@ const toteBagVariant01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('USD').centAmount(13999))
         .country('US'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('EUR').centAmount(12099))
+        .country('DE'),
     ])
     .images([
       Image.ImageDraft.presets

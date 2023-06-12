@@ -18,6 +18,10 @@ const denimJacketVariant02 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('EUR').centAmount(10000))
         .country('ES'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(9000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

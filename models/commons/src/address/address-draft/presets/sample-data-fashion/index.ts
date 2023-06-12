@@ -1,7 +1,11 @@
-import jamieDoe from './jamie-doe';
-import johnDoe from './john-doe';
-import marySmith from './mary-smith';
+import sampleAustralia from './sample-australia';
+import sampleGermany from './sample-germany';
+import sampleUsa from './sample-usa';
 
-const presets = { jamieDoe, johnDoe, marySmith };
+const presets = {
+  sampleUsa,
+  sampleAustralia,
+  sampleGermany,
+};
 
 export default presets;

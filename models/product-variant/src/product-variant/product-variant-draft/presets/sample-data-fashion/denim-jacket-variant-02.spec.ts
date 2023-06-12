@@ -63,6 +63,21 @@ describe(`with denimJacketVariant02 preset`, () => {
               "currencyCode": "EUR",
             },
           },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 9000,
+              "currencyCode": "USD",
+            },
+          },
         ],
         "sku": "996025",
       }
@@ -128,6 +143,23 @@ describe(`with denimJacketVariant02 preset`, () => {
               "centPrecision": {
                 "centAmount": 10000,
                 "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 9000,
+                "currencyCode": "USD",
               },
             },
           },

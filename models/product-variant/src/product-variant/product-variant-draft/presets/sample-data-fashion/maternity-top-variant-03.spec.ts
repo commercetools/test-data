@@ -51,6 +51,21 @@ describe(`with maternityTopVariant03 preset`, () => {
               "currencyCode": "EUR",
             },
           },
+          {
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 2500,
+              "currencyCode": "AUD",
+            },
+          },
         ],
         "sku": "118718",
       }
@@ -99,6 +114,23 @@ describe(`with maternityTopVariant03 preset`, () => {
               "centPrecision": {
                 "centAmount": 2695,
                 "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "AU",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 2500,
+                "currencyCode": "AUD",
               },
             },
           },

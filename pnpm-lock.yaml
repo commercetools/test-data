@@ -179,6 +179,9 @@ importers:
       '@commercetools-test-data/line-item':
         specifier: 5.4.1
         version: link:../line-item
+      '@commercetools-test-data/product-variant':
+        specifier: 5.4.1
+        version: link:../product-variant
       '@commercetools-test-data/utils':
         specifier: 5.4.1
         version: link:../../utils

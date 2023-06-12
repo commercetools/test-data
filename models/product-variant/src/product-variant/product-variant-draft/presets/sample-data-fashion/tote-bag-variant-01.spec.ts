@@ -44,6 +44,21 @@ describe(`with toteBagVariant01 preset`, () => {
               "currencyCode": "USD",
             },
           },
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 12099,
+              "currencyCode": "EUR",
+            },
+          },
         ],
         "sku": "718289",
       }
@@ -88,6 +103,23 @@ describe(`with toteBagVariant01 preset`, () => {
               "centPrecision": {
                 "centAmount": 13999,
                 "currencyCode": "USD",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 12099,
+                "currencyCode": "EUR",
               },
             },
           },

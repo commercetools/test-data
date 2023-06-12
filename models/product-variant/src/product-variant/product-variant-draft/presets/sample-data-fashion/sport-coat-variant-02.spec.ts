@@ -44,6 +44,21 @@ describe(`with sportCoatVariant02 preset`, () => {
               "currencyCode": "AUD",
             },
           },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 15000,
+              "currencyCode": "USD",
+            },
+          },
         ],
         "sku": "692458",
       }
@@ -88,6 +103,23 @@ describe(`with sportCoatVariant02 preset`, () => {
               "centPrecision": {
                 "centAmount": 20000,
                 "currencyCode": "AUD",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 15000,
+                "currencyCode": "USD",
               },
             },
           },
