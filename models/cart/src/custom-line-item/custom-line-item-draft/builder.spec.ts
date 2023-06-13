@@ -16,12 +16,11 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         quantity: expect.any(Number),
-        money: expect.arrayContaining([
-          expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-        ]),
+        money: expect.objectContaining({
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
+        }),
+
         slug: expect.any(String),
         taxCategory: null,
         externalTaxRate: null,
@@ -43,12 +42,11 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         quantity: expect.any(Number),
-        money: expect.arrayContaining([
-          expect.objectContaining({
-            centAmount: expect.any(Number),
-            currencyCode: expect.any(String),
-          }),
-        ]),
+        money: expect.objectContaining({
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
+        }),
+
         slug: expect.any(String),
         taxCategory: null,
         externalTaxRate: null,

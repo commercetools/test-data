@@ -1,5 +1,5 @@
-import customLineItemWithUsCurrencyCode from './with-us-currency-code';
+import customLineItemWithUsdCurrencyCode from './with-usd-currency-code';
 
-const presets = { customLineItemWithUsCurrencyCode };
+const presets = { customLineItemWithUsdCurrencyCode };
 
 export default presets;

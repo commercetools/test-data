@@ -1,11 +1,11 @@
 import { TZoneRateDraft } from '../../../types';
-import usZone from './with-us-currency-shipping-rate';
+import usZone from './with-usd-shipping-rate';
 
-describe('Zone rate with `US` shippingRate preset', () => {
-  it('should return the currencyCode of `US`', () => {
-    const usZoneWithUSShippingRate = usZone().build<TZoneRateDraft>();
+describe('Zone rate with `USD` shippingRate & e2e key preset', () => {
+  it('should return the currencyCode: `USD` & key: `e2e-us-zone`', () => {
+    const usZoneWithUsdShippingRate = usZone().build<TZoneRateDraft>();
 
-    expect(usZoneWithUSShippingRate).toEqual(
+    expect(usZoneWithUsdShippingRate).toEqual(
       expect.objectContaining({
         zone: expect.objectContaining({
           typeId: 'zone',
@@ -15,11 +15,11 @@ describe('Zone rate with `US` shippingRate preset', () => {
           expect.objectContaining({
             tiers: [],
             price: expect.objectContaining({
-              currencyCode: expect.stringContaining('US'),
+              currencyCode: 'USD',
               centAmount: expect.any(Number),
             }),
             freeAbove: expect.objectContaining({
-              currencyCode: expect.stringContaining('US'),
+              currencyCode: 'USD',
               centAmount: expect.any(Number),
             }),
           }),

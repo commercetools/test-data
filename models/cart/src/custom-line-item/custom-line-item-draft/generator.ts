@@ -8,7 +8,7 @@ const generator = Generator<TCustomLineItemDraft>({
   fields: {
     name: fake(() => LocalizedString.random()),
     quantity: fake((f) => f.datatype.number(9)),
-    money: fake(() => [Money.random()]),
+    money: fake(() => Money.random()),
     slug: fake((f) => f.lorem.slug(3)),
     taxCategory: null,
     externalTaxRate: null,

@@ -7,7 +7,7 @@ const withCustomLineItem = (): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
     .customLineItems([
-      CustomLineItemDraft.presets.changeHistoryData.customLineItemWithUsCurrencyCode(),
+      CustomLineItemDraft.presets.changeHistoryData.customLineItemWithUsdCurrencyCode(),
     ])
     .currency('USD')
     .country('US')
