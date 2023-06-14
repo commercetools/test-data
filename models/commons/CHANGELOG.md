@@ -1,5 +1,15 @@
 # @commercetools-test-data/commons
 
+## 5.5.1
+
+### Patch Changes
+
+- [#286](https://github.com/commercetools/test-data/pull/286) [`07ea874`](https://github.com/commercetools/test-data/commit/07ea8748049f50ec6b74438fcf2ee00d58c9f86d) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Updates to presets consumed by audit-log for Order creation
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.5.1
+  - @commercetools-test-data/utils@5.5.1
+
 ## 5.5.0
 
 ### Minor Changes
