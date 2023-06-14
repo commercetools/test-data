@@ -9,6 +9,6 @@ import * as ZoneRateDraft from '../../index';
 const usZone = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReference.presets.zone().key('e2e-us-zone'))
-    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usCurrency()]);
+    .shippingRates([ShippingRateDraft.presets.changeHistoryData.usdCurrency()]);
 
 export default usZone;

@@ -1,5 +1,5 @@
-import withUsCurrencyCode from './with-us-currency-code';
+import withUsdCurrencyCode from './with-usd-currency-code';
 
-const presets = { withUsCurrencyCode };
+const presets = { withUsdCurrencyCode };
 
 export default presets;

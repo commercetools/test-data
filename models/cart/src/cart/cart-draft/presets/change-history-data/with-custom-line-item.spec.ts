@@ -10,15 +10,15 @@ describe('Cart with CustomLineItem preset', () => {
         customLineItems: expect.arrayContaining([
           expect.objectContaining({
             money: expect.objectContaining({
-              currencyCode: expect.stringContaining('US'),
+              currencyCode: 'USD',
             }),
           }),
         ]),
-        country: expect.stringContaining('US'),
-        locale: expect.stringContaining('en-US'),
-        currency: expect.stringContaining('USD'),
+        country: 'US',
+        locale: 'en-US',
+        currency: 'USD',
         shippingAddress: expect.objectContaining({
-          country: expect.stringContaining('US'),
+          country: 'US',
           state: null,
         }),
       })

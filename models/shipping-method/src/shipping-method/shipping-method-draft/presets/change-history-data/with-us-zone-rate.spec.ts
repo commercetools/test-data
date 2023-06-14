@@ -13,10 +13,10 @@ describe('ShippingMethod with `US` Zone preset', () => {
             shippingRates: expect.arrayContaining([
               expect.objectContaining({
                 freeAbove: expect.objectContaining({
-                  currencyCode: expect.stringContaining('US'),
+                  currencyCode: 'USD',
                 }),
                 price: expect.objectContaining({
-                  currencyCode: expect.stringContaining('US'),
+                  currencyCode: 'USD',
                 }),
               }),
             ]),

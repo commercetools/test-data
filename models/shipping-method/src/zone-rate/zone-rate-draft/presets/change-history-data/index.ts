@@ -1,4 +1,4 @@
-import usZone from './with-us-currency-shipping-rate';
+import usZone from './with-usd-shipping-rate';
 
 const presets = {
   usZone,

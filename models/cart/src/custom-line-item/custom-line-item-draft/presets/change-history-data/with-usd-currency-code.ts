@@ -2,9 +2,9 @@ import { Money } from '@commercetools-test-data/commons';
 import { TCustomLineItemDraftBuilder } from '../../../types';
 import * as CustomLineItemDraft from '../../index';
 
-const customLineItemWithUsCurrencyCode = (): TCustomLineItemDraftBuilder =>
+const customLineItemWithUsdCurrencyCode = (): TCustomLineItemDraftBuilder =>
   CustomLineItemDraft.random().money(
-    Money.presets.changeHistoryData.withUsCurrencyCode()
+    Money.presets.changeHistoryData.withUsdCurrencyCode()
   );
 
-export default customLineItemWithUsCurrencyCode;
+export default customLineItemWithUsdCurrencyCode;
