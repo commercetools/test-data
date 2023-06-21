@@ -12,16 +12,18 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const EuropeShippingMethod = (): TShippingMethodDraftBuilder =>
+const europeShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
     .key('shipping-europe')
     .name('Sample Shipping Method Europe')
-    .localizedDescription(LocalizedString.presets.empty()['en-US']('Sample Shipping Method Europe'))
+    .localizedDescription(
+      LocalizedString.presets.empty()['en-US']('Sample Shipping Method Europe')
+    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([ZoneRateDraft.presets.sampleDataFashion.europe()])
     .isDefault(true);
 
-export default EuropeShippingMethod;
+export default europeShippingMethod;
