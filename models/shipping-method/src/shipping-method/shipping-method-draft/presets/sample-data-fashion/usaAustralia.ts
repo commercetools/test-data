@@ -17,7 +17,11 @@ const usaAustraliaShippingMethod = (): TShippingMethodDraftBuilder =>
     .empty()
     .key('shipping-usa-australia')
     .name('Sample Shipping Method USA/Australia')
-    .localizedDescription(LocalizedString.presets.empty()['en-US']('Sample Shipping Method USA/Australia'))
+    .localizedDescription(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Sample Shipping Method USA/Australia')
+    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
