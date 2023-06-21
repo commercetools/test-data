@@ -1,9 +1,9 @@
-import dhl from './dhl';
-import ups from './ups';
+import europe from './europe';
+import usaAustralia from './usaAustralia';
 
 const presets = {
-  dhl,
-  ups,
+  europe,
+  usaAustralia,
 };
 
 export default presets;

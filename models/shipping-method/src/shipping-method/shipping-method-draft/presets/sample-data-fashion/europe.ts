@@ -5,26 +5,23 @@ import {
 import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
 import type { TTaxCategoryDraft } from '@commercetools-test-data/tax-category';
 import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
-import * as ShippingMethodDraft from '../../../shipping-method-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
+import * as ShippingMethodDraft from '../../index';
 
 const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const upsShippingMethod = (): TShippingMethodDraftBuilder =>
+const EuropeShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
-    .key('ups')
-    .name('UPS')
-    .localizedDescription(LocalizedString.presets.empty()['en-US']('UPS'))
+    .key('shipping-europe')
+    .name('Sample Shipping Method Europe')
+    .localizedDescription(LocalizedString.presets.empty()['en-US']('Sample Shipping Method Europe'))
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([
-      ZoneRateDraft.presets.sampleDataFashion.usa(),
-      ZoneRateDraft.presets.sampleDataFashion.australia(),
-    ])
-    .isDefault(false);
+    .zoneRates([ZoneRateDraft.presets.sampleDataFashion.europe()])
+    .isDefault(true);
 
-export default upsShippingMethod;
+export default EuropeShippingMethod;

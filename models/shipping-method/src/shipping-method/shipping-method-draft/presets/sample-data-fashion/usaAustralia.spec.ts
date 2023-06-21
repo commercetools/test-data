@@ -2,24 +2,24 @@ import type {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
 } from '../../../types';
-import ups from './ups';
+import usaAustralia from './usaAustralia';
 
-describe('with upsShippingMethod preset', () => {
-  it('should return a ups preset', () => {
-    const upsPreset = ups().build<TShippingMethodDraft>();
-    expect(upsPreset).toMatchInlineSnapshot(`
+describe('with usaAustraliaShippingMethod preset', () => {
+  it('should return a usaAustralia preset', () => {
+    const usaAustraliaPreset = usaAustralia().build<TShippingMethodDraft>();
+    expect(usaAustraliaPreset).toMatchInlineSnapshot(`
       {
         "custom": undefined,
         "isDefault": false,
-        "key": "ups",
+        "key": "shipping-usa-australia",
         "localizedDescription": {
           "de": undefined,
           "en": undefined,
-          "en-US": "UPS",
+          "en-US": "Sample Shipping Method USA/Australia",
           "fr": undefined,
         },
         "localizedName": undefined,
-        "name": "UPS",
+        "name": "Sample Shipping Method USA/Australia",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -69,22 +69,23 @@ describe('with upsShippingMethod preset', () => {
     `);
   });
 
-  it('should return a ups preset when built for graphql', () => {
-    const upsPresetGraphql = ups().buildGraphql<TShippingMethodDraftGraphql>();
-    expect(upsPresetGraphql).toMatchInlineSnapshot(`
+  it('should return a usaAustralia preset when built for graphql', () => {
+    const usaAustraliaPresetGraphql =
+      usaAustralia().buildGraphql<TShippingMethodDraftGraphql>();
+    expect(usaAustraliaPresetGraphql).toMatchInlineSnapshot(`
       {
         "custom": undefined,
         "isDefault": false,
-        "key": "ups",
+        "key": "shipping-usa-australia",
         "localizedDescription": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "UPS",
+            "value": "Sample Shipping Method USA/Australia",
           },
         ],
         "localizedName": undefined,
-        "name": "UPS",
+        "name": "Sample Shipping Method USA/Australia",
         "predicate": undefined,
         "taxCategory": {
           "__typename": "Reference",

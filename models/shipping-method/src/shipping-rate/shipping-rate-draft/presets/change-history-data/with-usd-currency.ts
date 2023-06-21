@@ -4,7 +4,7 @@ import * as ShippingRateDraft from '../../index';
 
 const usdCurrency = (): TShippingRateDraftBuilder =>
   ShippingRateDraft.random()
-    .price(Money.presets.changeHistoryData.withUsdCurrencyCode())
-    .freeAbove(Money.presets.changeHistoryData.withUsdCurrencyCode());
+    .price(Money.presets.changeHistoryData.withUsCurrencyCode())
+    .freeAbove(Money.presets.changeHistoryData.withUsCurrencyCode());
 
 export default usdCurrency;
