@@ -9,17 +9,16 @@ https://docs.commercetools.com/api/projects/productTypes#attributetype
 ```bash
 $ pnpm add -D @commercetools-test-data/attribute-type
 ```
+
 <br>
 
 # Usage
+
 - [AttributeBooleanType](#attributebooleantype)<br>
 - [AttributeEnumType](#attributeenumtype)<br>
 - [AttributeLocalizedEnumValue](#attributelocalizedenumvalue)<br>
 - [AttributePlainEnumValue](#attributeplainenumvalue)<br>
 - [AttributeTextType](#attributetexttype)<br><br>
-
-
-
 
 ## `AttributeBooleanType`
 
@@ -32,6 +31,7 @@ import {
 const attributeBooleanType =
   AttributeBooleanType.random().build<TAttributeBooleanType>();
 ```
+
 ## `AttributeEnumType`
 
 ```ts
@@ -57,7 +57,6 @@ const attributeLocalizedEnumValue =
   AttributePLocalizedEnumValue.random().build<TAttributeLocalizedEnumValue>();
 ```
 
-
 ## `AttributePlainEnumValue`
 
 ```ts
@@ -82,4 +81,3 @@ import {
 const attributeTextType =
   AttributeTextType.random().build<TAttributeTextType>();
 ```
-

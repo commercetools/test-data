@@ -1,7 +1,7 @@
 import { Transformer } from '@commercetools-test-data/core';
 import {
-  TAttributeLocalizedEnumValue,
-  TAttributeLocalizedEnumValueGraphql,
+  type TAttributeLocalizedEnumValue,
+  type TAttributeLocalizedEnumValueGraphql,
 } from './types';
 
 const transformers = {

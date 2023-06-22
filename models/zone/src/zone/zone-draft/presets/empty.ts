@@ -1,4 +1,4 @@
-import type { TZoneDraftBuilder } from '../../types';
+import type { TZoneDraftBuilder } from '../../../types';
 import ZoneDraft from '../builder';
 
 const empty = (): TZoneDraftBuilder =>

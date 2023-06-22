@@ -1,4 +1,4 @@
-import type { TZoneDraft } from '../../types';
+import type { TZoneDraft } from '../../../types';
 import empty from './empty';
 
 it('should set all specified fields to undefined', () => {

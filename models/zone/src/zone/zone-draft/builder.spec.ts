@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TZoneDraft, TZoneDraftGraphql } from '../types';
-import * as ZoneDraft from '../zone-draft';
+import { TZoneDraft, TZoneDraftGraphql } from '../../types';
+import * as ZoneDraft from '.';
 
 describe('builder', () => {
   it(

@@ -1,5 +1,5 @@
 import { KeyReference } from '@commercetools-test-data/commons';
-import { ZoneDraft, type TZoneDraft } from '@commercetools-test-data/zone';
+import { ZoneDraft, type TZoneDraft } from '@commercetools-test-data/zone/src';
 import { ShippingRateDraft } from '../../../../shipping-rate';
 import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';

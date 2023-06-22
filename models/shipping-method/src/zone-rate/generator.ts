@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { Zone } from '@commercetools-test-data/zone';
+import { Zone } from '@commercetools-test-data/zone/src';
 import * as ShippingRate from '../shipping-rate';
 import { TZoneRate } from './types';
 

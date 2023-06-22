@@ -1,7 +1,8 @@
-export * as ZoneDraft from './zone-draft';
-export * as Zone from '.';
+// Export types
+export * from './location/types';
+export * from './zone/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './zone-draft/presets';
-export * from './types';
+// Export models
+export * as Location from './location';
+export * as Zone from './zone';
+export * as ZoneDraft from './zone/zone-draft';
