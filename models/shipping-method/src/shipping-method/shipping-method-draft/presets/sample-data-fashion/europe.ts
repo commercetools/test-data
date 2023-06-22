@@ -5,23 +5,25 @@ import {
 import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
 import type { TTaxCategoryDraft } from '@commercetools-test-data/tax-category';
 import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
-import * as ShippingMethodDraft from '../../../shipping-method-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
+import * as ShippingMethodDraft from '../../index';
 
 const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const dhlShippingMethod = (): TShippingMethodDraftBuilder =>
+const europeShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
-    .key('dhl')
-    .name('DHL')
-    .localizedDescription(LocalizedString.presets.empty()['en-US']('DHL'))
+    .key('shipping-europe')
+    .name('Sample Shipping Method Europe')
+    .localizedDescription(
+      LocalizedString.presets.empty()['en-US']('Sample Shipping Method Europe')
+    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([ZoneRateDraft.presets.sampleDataFashion.europe()])
     .isDefault(true);
 
-export default dhlShippingMethod;
+export default europeShippingMethod;

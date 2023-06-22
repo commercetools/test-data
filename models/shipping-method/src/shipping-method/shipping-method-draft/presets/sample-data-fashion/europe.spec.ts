@@ -2,25 +2,25 @@ import type {
   TShippingMethodDraft,
   TShippingMethodDraftGraphql,
 } from '../../../types';
-import dhlShippingMethod from './dhl';
+import europeShippingMethod from './europe';
 
-describe('with dhlShippingMethod preset', () => {
-  it('should return a dhlShippingMethod preset', () => {
-    const dhlShippingMethodPreset =
-      dhlShippingMethod().build<TShippingMethodDraft>();
-    expect(dhlShippingMethodPreset).toMatchInlineSnapshot(`
+describe('with europeShippingMethod preset', () => {
+  it('should return a europeShippingMethod preset', () => {
+    const europeShippingMethodPreset =
+      europeShippingMethod().build<TShippingMethodDraft>();
+    expect(europeShippingMethodPreset).toMatchInlineSnapshot(`
       {
         "custom": undefined,
         "isDefault": true,
-        "key": "dhl",
+        "key": "shipping-europe",
         "localizedDescription": {
           "de": undefined,
           "en": undefined,
-          "en-US": "DHL",
+          "en-US": "Sample Shipping Method Europe",
           "fr": undefined,
         },
         "localizedName": undefined,
-        "name": "DHL",
+        "name": "Sample Shipping Method Europe",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -51,23 +51,23 @@ describe('with dhlShippingMethod preset', () => {
     `);
   });
 
-  it('should return a dhlShippingMethod preset when built for graphql', () => {
-    const dhlShippingMethodPresetGraphql =
-      dhlShippingMethod().buildGraphql<TShippingMethodDraftGraphql>();
-    expect(dhlShippingMethodPresetGraphql).toMatchInlineSnapshot(`
+  it('should return a europeShippingMethod preset when built for graphql', () => {
+    const europeShippingMethodPresetGraphql =
+      europeShippingMethod().buildGraphql<TShippingMethodDraftGraphql>();
+    expect(europeShippingMethodPresetGraphql).toMatchInlineSnapshot(`
       {
         "custom": undefined,
         "isDefault": true,
-        "key": "dhl",
+        "key": "shipping-europe",
         "localizedDescription": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "DHL",
+            "value": "Sample Shipping Method Europe",
           },
         ],
         "localizedName": undefined,
-        "name": "DHL",
+        "name": "Sample Shipping Method Europe",
         "predicate": undefined,
         "taxCategory": {
           "__typename": "Reference",
