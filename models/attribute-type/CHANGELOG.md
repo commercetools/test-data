@@ -1,5 +1,18 @@
 # @commercetools-test-data/attribute-type
 
+## 5.6.0
+
+### Minor Changes
+
+- [#289](https://github.com/commercetools/test-data/pull/289) [`81c2f61`](https://github.com/commercetools/test-data/commit/81c2f618d9ea37eaba40288a96d1be928175a16c) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Added new Location model with presets to Zone package, and added model AttributeLocalizedEnumValue to AttributeType package.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.6.0
+  - @commercetools-test-data/commons@5.6.0
+  - @commercetools-test-data/utils@5.6.0
+
 ## 5.5.1
 
 ### Patch Changes

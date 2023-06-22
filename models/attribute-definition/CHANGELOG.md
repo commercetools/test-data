@@ -1,5 +1,15 @@
 # @commercetools-test-data/attribute-definition
 
+## 5.6.0
+
+### Patch Changes
+
+- Updated dependencies [[`81c2f61`](https://github.com/commercetools/test-data/commit/81c2f618d9ea37eaba40288a96d1be928175a16c)]:
+  - @commercetools-test-data/attribute-type@5.6.0
+  - @commercetools-test-data/core@5.6.0
+  - @commercetools-test-data/commons@5.6.0
+  - @commercetools-test-data/utils@5.6.0
+
 ## 5.5.1
 
 ### Patch Changes

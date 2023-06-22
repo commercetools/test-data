@@ -1,5 +1,15 @@
 # @commercetools-test-data/customer
 
+## 5.6.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.6.0
+  - @commercetools-test-data/commons@5.6.0
+  - @commercetools-test-data/customer-group@5.6.0
+  - @commercetools-test-data/utils@5.6.0
+
 ## 5.5.1
 
 ### Patch Changes
