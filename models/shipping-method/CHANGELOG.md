@@ -1,5 +1,22 @@
 # @commercetools-test-data/shipping-method
 
+## 5.6.0
+
+### Minor Changes
+
+- [#288](https://github.com/commercetools/test-data/pull/288) [`068950a`](https://github.com/commercetools/test-data/commit/068950a734ce2fc63998a6ea3181219dcc2fef7c) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Update names of ShippingMethodDraft presets.
+
+- [#289](https://github.com/commercetools/test-data/pull/289) [`81c2f61`](https://github.com/commercetools/test-data/commit/81c2f618d9ea37eaba40288a96d1be928175a16c) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Added new Location model with presets to Zone package, and added model AttributeLocalizedEnumValue to AttributeType package.
+
+### Patch Changes
+
+- Updated dependencies [[`81c2f61`](https://github.com/commercetools/test-data/commit/81c2f618d9ea37eaba40288a96d1be928175a16c)]:
+  - @commercetools-test-data/zone@5.6.0
+  - @commercetools-test-data/core@5.6.0
+  - @commercetools-test-data/commons@5.6.0
+  - @commercetools-test-data/tax-category@5.6.0
+  - @commercetools-test-data/utils@5.6.0
+
 ## 5.5.1
 
 ### Patch Changes
