@@ -10,19 +10,26 @@ https://docs.commercetools.com/api/projects/productTypes#attributetype
 $ pnpm add -D @commercetools-test-data/attribute-type
 ```
 
+<br>
+
 # Usage
 
-## `AttributePlainEnumValue`
+- [AttributeBooleanType](#attributebooleantype)<br>
+- [AttributeEnumType](#attributeenumtype)<br>
+- [AttributeLocalizedEnumValue](#attributelocalizedenumvalue)<br>
+- [AttributePlainEnumValue](#attributeplainenumvalue)<br>
+- [AttributeTextType](#attributetexttype)<br><br>
+
+## `AttributeBooleanType`
 
 ```ts
 import {
-  AttributePlainEnumValue,
-  type TAttributePlainEnumValue,
-  type TAttributePlainEnumValueGraphql,
+  AttributeBooleanType,
+  type TAttributeBooleanType,
 } from '@commercetools-test-data/attribute-type';
 
-const attributePlainEnumValue =
-  AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();
+const attributeBooleanType =
+  AttributeBooleanType.random().build<TAttributeBooleanType>();
 ```
 
 ## `AttributeEnumType`
@@ -37,6 +44,32 @@ const attributeEnumType =
   AttributeEnumType.random().build<TAttributeEnumType>();
 ```
 
+## `AttributeLocalizedEnumValue`
+
+```ts
+import {
+  AttributeLocalizedEnumValue,
+  type TAttributeLocalizedEnumValue,
+  type TAttributeLocalizedEnumValueGraphql,
+} from '@commercetools-test-data/attribute-type';
+
+const attributeLocalizedEnumValue =
+  AttributePLocalizedEnumValue.random().build<TAttributeLocalizedEnumValue>();
+```
+
+## `AttributePlainEnumValue`
+
+```ts
+import {
+  AttributePlainEnumValue,
+  type TAttributePlainEnumValue,
+  type TAttributePlainEnumValueGraphql,
+} from '@commercetools-test-data/attribute-type';
+
+const attributePlainEnumValue =
+  AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();
+```
+
 ## `AttributeTextType`
 
 ```ts
@@ -47,16 +80,4 @@ import {
 
 const attributeTextType =
   AttributeTextType.random().build<TAttributeTextType>();
-```
-
-## `AttributeBooleanType`
-
-```ts
-import {
-  AttributeBooleanType,
-  type TAttributeBooleanType,
-} from '@commercetools-test-data/attribute-type';
-
-const attributeBooleanType =
-  AttributeBooleanType.random().build<TAttributeBooleanType>();
 ```

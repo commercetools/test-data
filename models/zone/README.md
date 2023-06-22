@@ -1,6 +1,6 @@
 # @commercetools-test-data/zone
 
-This package provides the data model for the commercetools platform `Zone` type
+This package provides data models for the commercetools platform `Zone` representations.
 
 https://docs.commercetools.com/api/projects/zones
 
@@ -11,6 +11,18 @@ $ pnpm add -D @commercetools-test-data/zone
 ```
 
 # Usage
+
+<br>
+
+## Location
+
+```ts
+import { Location, type TLocation } from '@commercetools-test-data/zone';
+
+const location = Location.random().build<TLocation>();
+```
+
+## Zone
 
 ```ts
 import {
