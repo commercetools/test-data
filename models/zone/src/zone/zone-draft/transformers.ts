@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TZoneDraft, TZoneDraftGraphql } from '../../types';
+import type { TZoneDraft, TZoneDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TZoneDraft, TZoneDraft>('default', {
