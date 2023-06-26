@@ -1,0 +1,29 @@
+import {
+  ClientLogging,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import { Generator, fake, sequence } from '@commercetools-test-data/core';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import { TProductSelection } from './types';
+
+const [getOlderDate, getNewerDate] = createRelatedDates();
+
+// https://docs.commercetools.com/api/projects/product-selections#productselection
+
+const generator = Generator<TProductSelection>({
+  fields: {
+    id: fake((f) => f.datatype.uuid()),
+    version: sequence(),
+    key: fake((f) => f.lorem.slug(2)),
+    name: fake(() => LocalizedString.random()),
+    productCount: fake((f) => f.datatype.number()),
+    type: 'Individual',
+    custom: null,
+    createdAt: fake(getOlderDate),
+    createdBy: fake(() => ClientLogging.random()),
+    lastModifiedAt: fake(getNewerDate),
+    lastModifiedBy: fake(() => ClientLogging.random()),
+  },
+});
+
+export default generator;
