@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart
 
+## 5.7.0
+
+### Patch Changes
+
+- [#295](https://github.com/commercetools/test-data/pull/295) [`fa7acd2`](https://github.com/commercetools/test-data/commit/fa7acd28ee59ef8d035597d025c4d9d82d4ac2bc) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add missing shipping method to Fashion Sample Data `cart-draft` presets.
+
+- Updated dependencies [[`21a3705`](https://github.com/commercetools/test-data/commit/21a37055edc4dc2f8ec8bd2b509713390cefd9e5), [`fa7acd2`](https://github.com/commercetools/test-data/commit/fa7acd28ee59ef8d035597d025c4d9d82d4ac2bc)]:
+  - @commercetools-test-data/commons@5.7.0
+  - @commercetools-test-data/customer@5.7.0
+  - @commercetools-test-data/discount-code@5.7.0
+  - @commercetools-test-data/line-item@5.7.0
+  - @commercetools-test-data/product-variant@5.7.0
+  - @commercetools-test-data/shipping-method@5.7.0
+  - @commercetools-test-data/core@5.7.0
+  - @commercetools-test-data/utils@5.7.0
+
 ## 5.6.0
 
 ### Patch Changes
