@@ -8,6 +8,10 @@ import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
+import {
+  ShippingMethodDraft,
+  type TShippingMethodDraft,
+} from '@commercetools-test-data/shipping-method';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';
@@ -23,6 +27,9 @@ const toddlerTrousersProductVariant =
   ProductVariantDraft.presets.sampleDataFashion
     .toddlerTrousersVariant02()
     .build<TProductVariantDraft>();
+const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
+  .usaAustralia()
+  .build<TShippingMethodDraft>();
 
 const sampleUsa01 = (): TCartDraftBuilder =>
   CartDraft.presets
@@ -43,6 +50,9 @@ const sampleUsa01 = (): TCartDraftBuilder =>
         .empty()
         .sku(toddlerTrousersProductVariant.sku)
         .quantity(1),
-    ]);
+    ])
+    .shippingMethod(
+      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+    );
 
 export default sampleUsa01;

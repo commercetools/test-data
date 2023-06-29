@@ -1,4 +1,4 @@
-import { AddressDraft } from '@commercetools-test-data/commons';
+import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -8,6 +8,10 @@ import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
+import {
+  ShippingMethodDraft,
+  type TShippingMethodDraft,
+} from '@commercetools-test-data/shipping-method';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';
@@ -19,6 +23,9 @@ const address = AddressDraft.presets.sampleDataFashion.sampleGermany();
 const necklaceProductVariant = ProductVariantDraft.presets.sampleDataFashion
   .necklaceVariant01()
   .build<TProductVariantDraft>();
+const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
+  .europe()
+  .build<TShippingMethodDraft>();
 
 const sampleGermany01 = (): TCartDraftBuilder =>
   CartDraft.presets
@@ -32,6 +39,9 @@ const sampleGermany01 = (): TCartDraftBuilder =>
     .billingAddress(address)
     .lineItems([
       LineItemDraft.presets.empty().sku(necklaceProductVariant.sku).quantity(1),
-    ]);
+    ])
+    .shippingMethod(
+      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+    );
 
 export default sampleGermany01;

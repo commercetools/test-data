@@ -1,4 +1,4 @@
-import { AddressDraft } from '@commercetools-test-data/commons';
+import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -12,6 +12,10 @@ import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
+import {
+  ShippingMethodDraft,
+  type TShippingMethodDraft,
+} from '@commercetools-test-data/shipping-method';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';
@@ -27,6 +31,9 @@ const shirtsBogo = DiscountCodeDraft.presets.sampleDataFashion
 const maternityTopProductVariant = ProductVariantDraft.presets.sampleDataFashion
   .maternityTopVariant03()
   .build<TProductVariantDraft>();
+const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
+  .europe()
+  .build<TShippingMethodDraft>();
 
 const sampleGermany02 = (): TCartDraftBuilder =>
   CartDraft.presets
@@ -44,6 +51,9 @@ const sampleGermany02 = (): TCartDraftBuilder =>
         .sku(maternityTopProductVariant.sku)
         .quantity(2),
     ])
+    .shippingMethod(
+      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+    )
     .discountCodes([shirtsBogo.code]);
 
 export default sampleGermany02;
