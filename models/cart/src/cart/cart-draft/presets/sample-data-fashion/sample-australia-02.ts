@@ -12,6 +12,10 @@ import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product-variant';
+import {
+  ShippingMethodDraft,
+  type TShippingMethodDraft,
+} from '@commercetools-test-data/shipping-method';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';
@@ -27,6 +31,9 @@ const employeeSale = DiscountCodeDraft.presets.sampleDataFashion
 const denimJacketProductVariant = ProductVariantDraft.presets.sampleDataFashion
   .denimJacketVariant01()
   .build<TProductVariantDraft>();
+const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
+  .usaAustralia()
+  .build<TShippingMethodDraft>();
 
 const sampleAustralia02 = (): TCartDraftBuilder =>
   CartDraft.presets
@@ -47,6 +54,9 @@ const sampleAustralia02 = (): TCartDraftBuilder =>
         .sku(denimJacketProductVariant.sku)
         .quantity(1),
     ])
+    .shippingMethod(
+      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+    )
     .discountCodes([employeeSale.code]);
 
 export default sampleAustralia02;
