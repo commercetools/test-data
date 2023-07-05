@@ -19,7 +19,7 @@ const generator = Generator<TReview>({
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),
-    authorName: fake((f) => f.name.fullName()),
+    authorName: fake((f) => f.person.fullName()),
     title: fake((f) => f.word.interjection()),
     text: fake((f) => f.hacker.phrase()),
     target: null,

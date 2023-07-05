@@ -22,9 +22,7 @@ const generator = Generator<TCategory>({
     description: null,
     ancestors: [],
     parent: null,
-    orderHint: fake((f) =>
-      f.datatype.float({ min: 0.01, max: 0.99 }).toString()
-    ),
+    orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
     externalId: fake((f) => f.string.uuid()),
     metaTitle: null,
     metaDescription: null,

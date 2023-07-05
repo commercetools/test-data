@@ -5,14 +5,14 @@ const generator = Generator<TAddress>({
   fields: {
     id: fake((f) => f.string.alphanumeric(8)),
     key: fake((f) => f.lorem.slug(2)),
-    title: fake((f) => f.name.jobTitle()),
+    title: fake((f) => f.person.jobTitle()),
     salutation: oneOf(
       'Dear',
       'To Whom it May Concern',
       'Members of the Committee'
     ),
-    firstName: fake((f) => f.name.firstName()),
-    lastName: fake((f) => f.name.lastName()),
+    firstName: fake((f) => f.person.firstName()),
+    lastName: fake((f) => f.person.lastName()),
     streetName: fake((f) => f.location.street()),
     streetNumber: fake((f) => String(f.number.int())),
     additionalStreetInfo: fake((f) => f.location.street()),

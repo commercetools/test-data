@@ -13,7 +13,7 @@ const generator = Generator<TProductType>({
     id: fake((f) => f.string.uuid()),
     version: fake((f) => f.number.int()),
     key: fake((f) => f.lorem.slug()),
-    name: fake((f) => f.name.fullName()),
+    name: fake((f) => f.person.fullName()),
     description: fake((f) => f.lorem.words()),
     attributes: fake(() => [AttributeDefinition.random()]),
     createdAt: fake(getOlderDate),
