@@ -5,7 +5,7 @@ import { TTaxRate } from './types';
 
 const generator = Generator<TTaxRate>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     name: fake((f) => f.lorem.words(2)),
     amount: fake((f) => Number(f.finance.amount(0, 1, 3))),
     includedInPrice: fake((f) => f.datatype.boolean()),

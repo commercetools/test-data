@@ -19,7 +19,7 @@ const generator = Generator<TCustomerDraft>({
     salutation: oneOf('Dr.', 'Ms.', 'Mr.'),
     anonymousCart: null,
     anonymousId: null,
-    externalId: fake((f) => f.datatype.uuid()),
+    externalId: fake((f) => f.string.uuid()),
     dateOfBirth: null,
     companyName: fake((f) => f.company.name()),
     vatId: fake((f) => f.random.alphaNumeric(12)),

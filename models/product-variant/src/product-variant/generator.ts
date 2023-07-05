@@ -8,7 +8,7 @@ import type { TProductVariant } from './types';
 
 const generator = Generator<TProductVariant>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     key: fake((f) => f.lorem.slug(2)),
     sku: fake((f) => `${f.random.word()}-${f.random.alphaNumeric(3)}`),
     prices: fake(() => [Price.random()]),

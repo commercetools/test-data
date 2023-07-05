@@ -6,7 +6,7 @@ import { TCustomLineItem } from './types';
 
 const generator = Generator<TCustomLineItem>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     name: fake(() => LocalizedString.random()),
     money: fake(() => [Money.random()]),
     taxedPrice: null,

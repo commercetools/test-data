@@ -13,7 +13,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 // https://docs.commercetools.com/api/projects/customers
 const generator = Generator<TCustomer>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     customerNumber: fake((f) => f.lorem.slug(2)),
     key: fake((f) => f.lorem.slug(2)),
     version: sequence(),
@@ -38,7 +38,7 @@ const generator = Generator<TCustomer>({
     defaultBillingAddressId: null,
     billingAddressIds: null,
     isEmailVerified: fake((f) => f.datatype.boolean()),
-    externalId: fake((f) => f.datatype.uuid()),
+    externalId: fake((f) => f.string.uuid()),
     customerGroup: null,
     custom: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),

@@ -32,7 +32,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TOrder>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
@@ -40,9 +40,9 @@ const generator = Generator<TOrder>({
     lastModifiedBy: fake(() => ClientLogging.random()),
     completedAt: null,
     orderNumber: fake((f) => String(f.datatype.number({ min: 100000 }))),
-    customerId: fake((f) => f.datatype.uuid()),
+    customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
-    anonymousId: fake((f) => f.datatype.uuid()),
+    anonymousId: fake((f) => f.string.uuid()),
     businessUnit: null,
     store: null,
     lineItems: fake(() => [LineItem.random()]),

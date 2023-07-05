@@ -14,7 +14,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TReview>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,

@@ -15,7 +15,7 @@ const [addedAt] = createRelatedDates();
 
 const generator = Generator<TLineItemDraft>({
   fields: {
-    productId: fake((f) => f.datatype.uuid()),
+    productId: fake((f) => f.string.uuid()),
     sku: fake((f) => `${f.random.word()}-${f.random.alphaNumeric(3)}`),
     quantity: fake((f) =>
       f.datatype.number({

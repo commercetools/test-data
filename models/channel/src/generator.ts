@@ -9,7 +9,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 // https://docs.commercetools.com/api/projects/channels#channel
 const generator = Generator<Channel>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     key: fake((f) => f.lorem.slug(2)),
     version: sequence(),
     createdAt: fake(getOlderDate),

@@ -12,7 +12,7 @@ const KEY = 'key';
 const generator = Generator<TCategoryDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    externalId: fake((f) => f.datatype.uuid()),
+    externalId: fake((f) => f.string.uuid()),
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
