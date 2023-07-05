@@ -5,7 +5,7 @@ import { TCentPrecisionMoneyDraft } from '../types';
 
 const generator = Generator<TCentPrecisionMoneyDraft>({
   fields: {
-    centAmount: fake((f) => f.number.int()({ min: 10 })),
+    centAmount: fake((f) => f.number.int({ min: 10 })),
     currencyCode: oneOf('EUR', 'USD'),
     type: 'centPrecision',
     // Default fraction digits for a currency for EUR and USD

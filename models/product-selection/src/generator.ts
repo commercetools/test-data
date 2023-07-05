@@ -16,7 +16,7 @@ const generator = Generator<TProductSelection>({
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
-    productCount: fake((f) => f.number.int()()),
+    productCount: fake((f) => f.number.int()),
     type: 'Individual',
     custom: null,
     createdAt: fake(getOlderDate),

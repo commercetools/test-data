@@ -14,7 +14,7 @@ const [getCreatedAt, getLastModifiedAt] = createRelatedDates();
 
 const generator = Generator<TDiscountCode>({
   fields: {
-    id: fake((f) => f.string.alphaNumeric(8)),
+    id: fake((f) => f.string.alphanumeric(8)),
     version: sequence(),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
@@ -23,14 +23,12 @@ const generator = Generator<TDiscountCode>({
     cartPredicate: '1=1',
     isActive: fake((f) => f.datatype.boolean()),
     references: [],
-    maxApplications: fake((f) => f.number.int()({ min: 1, max: 30 })),
-    maxApplicationsPerCustomer: fake((f) =>
-      f.number.int()({ min: 1, max: 30 })
-    ),
+    maxApplications: fake((f) => f.number.int({ min: 1, max: 30 })),
+    maxApplicationsPerCustomer: fake((f) => f.number.int({ min: 1, max: 30 })),
     groups: [],
     validFrom: fake(getValidFrom),
     validUntil: fake(getValidUntil),
-    applicationVersion: fake((f) => f.number.int()()),
+    applicationVersion: fake((f) => f.number.int()),
     custom: null,
     createdAt: fake(getCreatedAt),
     createdBy: fake(() => ClientLogging.random()),

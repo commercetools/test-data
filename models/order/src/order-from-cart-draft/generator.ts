@@ -14,8 +14,8 @@ const generator = Generator<TOrderFromCartDraft>({
   fields: {
     cart: fake(() => Reference.random().typeId('cart')),
     version: sequence(),
-    orderNumber: fake((f) => String(f.number.int()({ min: 100000 }))),
-    purchaseOrderNumber: fake((f) => String(f.number.int()({ min: 100000 }))),
+    orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
+    purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
     paymentState: oneOf(...Object.values(paymentState)),
     orderState: oneOf(...Object.values(orderState)),
     state: fake(() => Reference.random().typeId('state')),

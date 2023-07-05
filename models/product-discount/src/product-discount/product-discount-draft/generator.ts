@@ -26,7 +26,7 @@ const generator = Generator<TProductDiscountDraft>({
     predicate: '1=1',
     // Faker `min` and `max` bounds are inclusive, we need between 0 and 1
     sortOrder: fake((f) =>
-      String(f.number.int()({ min: 0.00001, max: 0.99999 }))
+      String(f.number.int({ min: 0.00001, max: 0.99999 }))
     ),
     isActive: fake((f) => f.datatype.boolean()),
     validFrom: fake(getValidFrom),

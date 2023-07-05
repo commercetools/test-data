@@ -5,7 +5,7 @@ import { TMoney } from './types';
 
 const generator = Generator<TMoney>({
   fields: {
-    centAmount: fake((f) => f.number.int()({ min: 10 })),
+    centAmount: fake((f) => f.number.int({ min: 10 })),
     currencyCode: oneOf('EUR', 'USD'),
   },
 });

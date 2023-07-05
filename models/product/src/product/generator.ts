@@ -14,7 +14,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 const generator = Generator<TProduct>({
   fields: {
     id: fake((f) => f.string.uuid()),
-    version: fake((f) => f.number.int()()),
+    version: fake((f) => f.number.int()),
     key: fake((f) => f.lorem.slug()),
     productType: fake(() => ProductType.random()),
     masterData: fake(() => ProductCatalogData.random()),
@@ -22,7 +22,7 @@ const generator = Generator<TProduct>({
     state: null,
     reviewRatingStatistics: null,
     priceMode: oneOf(...Object.values(productPriceMode)),
-    skus: fake((f) => [`${f.lorem.word()}-${f.string.alphaNumeric(3)}`]),
+    skus: fake((f) => [`${f.lorem.word()}-${f.string.alphanumeric(3)}`]),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

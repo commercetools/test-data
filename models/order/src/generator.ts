@@ -39,7 +39,7 @@ const generator = Generator<TOrder>({
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
     completedAt: null,
-    orderNumber: fake((f) => String(f.number.int()({ min: 100000 }))),
+    orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
     customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
     anonymousId: fake((f) => f.string.uuid()),
@@ -66,7 +66,7 @@ const generator = Generator<TOrder>({
     shippingInfo: null,
     syncInfo: null,
     returnInfo: [],
-    purchaseOrderNumber: fake((f) => String(f.number.int()({ min: 100000 }))),
+    purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
     discountCodes: [],
     // TODO: unsupported by SDK types
     // directDiscounts: [],

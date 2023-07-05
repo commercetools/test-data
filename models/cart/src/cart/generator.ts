@@ -45,7 +45,7 @@ const generator = Generator<TCart>({
     taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
     lineItems: fake(() => [LineItem.random()]),
     customLineItems: [],
-    totalLineItemQuantity: fake((f) => f.number.int()()),
+    totalLineItemQuantity: fake((f) => f.number.int()),
     shippingAddress: fake(() => Address.random()),
     billingAddress: fake(() => Address.random()),
     custom: null,

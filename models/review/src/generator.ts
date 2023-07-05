@@ -25,7 +25,7 @@ const generator = Generator<TReview>({
     target: null,
     includedInStatistics: fake((f) => f.datatype.boolean()),
     rating: fake((f) =>
-      f.number.int()({
+      f.number.int({
         min: -100,
         max: 100,
       })

@@ -14,7 +14,7 @@ const generator = Generator<TReviewDraft>({
     target: null,
     state: null,
     rating: fake((f) =>
-      f.number.int()({
+      f.number.int({
         min: -100,
         max: 100,
       })

@@ -7,7 +7,7 @@ import { TCustomLineItemDraft } from '../types';
 const generator = Generator<TCustomLineItemDraft>({
   fields: {
     name: fake(() => LocalizedString.random()),
-    quantity: fake((f) => f.number.int()(9)),
+    quantity: fake((f) => f.number.int(9)),
     money: fake(() => Money.random()),
     slug: fake((f) => f.lorem.slug(3)),
     taxCategory: null,

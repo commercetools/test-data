@@ -30,7 +30,7 @@ const generator = Generator<TLineItem>({
     taxedPricePortions: [],
     totalPrice: fake(() => CentPrecisionMoney.random()),
     quantity: fake((f) =>
-      f.number.int()({
+      f.number.int({
         min: 1,
       })
     ),
