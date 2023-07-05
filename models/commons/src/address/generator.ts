@@ -3,7 +3,7 @@ import type { TAddress } from './types';
 
 const generator = Generator<TAddress>({
   fields: {
-    id: fake((f) => f.random.alphaNumeric(8)),
+    id: fake((f) => f.string.alphaNumeric(8)),
     key: fake((f) => f.lorem.slug(2)),
     title: fake((f) => f.name.jobTitle()),
     salutation: oneOf(

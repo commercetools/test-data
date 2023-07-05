@@ -14,7 +14,7 @@ const [getCreatedAt, getLastModifiedAt] = createRelatedDates();
 
 const generator = Generator<TDiscountCode>({
   fields: {
-    id: fake((f) => f.random.alphaNumeric(8)),
+    id: fake((f) => f.string.alphaNumeric(8)),
     version: sequence(),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
