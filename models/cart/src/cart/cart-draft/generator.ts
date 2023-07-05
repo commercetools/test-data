@@ -43,7 +43,7 @@ const generator = Generator<TCartDraft>({
     customShipping: [],
     shipping: [],
     itemShippingAddresses: [],
-    discountCodes: fake((f) => [f.random.word()]),
+    discountCodes: fake((f) => [f.lorem.word()]),
   },
 });
 

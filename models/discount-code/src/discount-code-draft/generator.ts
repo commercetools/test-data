@@ -12,7 +12,7 @@ const generator = Generator<TDiscountCodeDraft>({
   fields: {
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
-    code: fake((f) => f.random.word()),
+    code: fake((f) => f.lorem.word()),
     cartDiscounts: [],
     cartPredicate: '1=1',
     isActive: fake((f) => f.datatype.boolean()),

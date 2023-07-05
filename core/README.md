@@ -88,7 +88,7 @@ import { Generator, fake } from '@commercetools-test-data/core';
 const generator = Generator<TBook>({
   name: 'Book',
   fields: {
-    title: fake((f) => f.random.words()),
+    title: fake((f) => f.lorem.words()),
   },
 });
 ```

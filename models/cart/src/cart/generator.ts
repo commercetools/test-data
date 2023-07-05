@@ -57,7 +57,7 @@ const generator = Generator<TCart>({
     shippingInfo: null,
     shipping: [],
     itemShippingAddresses: fake(() => [Address.random()]),
-    discountCodes: fake((f) => [f.random.word()]),
+    discountCodes: fake((f) => [f.lorem.word()]),
     directDiscounts: [],
     totalPrice: fake(() => CentPrecisionMoney.random()),
     taxedPrice: null,

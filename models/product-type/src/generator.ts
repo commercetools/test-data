@@ -14,7 +14,7 @@ const generator = Generator<TProductType>({
     version: fake((f) => f.datatype.number()),
     key: fake((f) => f.lorem.slug()),
     name: fake((f) => f.name.fullName()),
-    description: fake((f) => f.random.words()),
+    description: fake((f) => f.lorem.words()),
     attributes: fake(() => [AttributeDefinition.random()]),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

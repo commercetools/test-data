@@ -29,7 +29,7 @@ const generator = Generator<TProductData>({
     searchKeywords: null,
     // TODO: Include random SearchKeywords[] when available
     searchKeyword: [],
-    skus: fake((f) => [`${f.random.word()}-${f.string.alphaNumeric(3)}`]),
+    skus: fake((f) => [`${f.lorem.word()}-${f.string.alphaNumeric(3)}`]),
   },
 });
 
