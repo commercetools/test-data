@@ -14,8 +14,8 @@ const generator = Generator<TImageDraft>({
     url: fake((f) => f.image.abstract()),
     label: fake((f) => f.lorem.slug(2)),
     dimensions: {
-      w: fake((f) => f.datatype.number({ min: 150, max: 300 })),
-      h: fake((f) => f.datatype.number({ min: 150, max: 300 })),
+      w: fake((f) => f.number.int()({ min: 150, max: 300 })),
+      h: fake((f) => f.number.int()({ min: 150, max: 300 })),
     },
   },
 });

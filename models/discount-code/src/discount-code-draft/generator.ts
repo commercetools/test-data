@@ -16,9 +16,9 @@ const generator = Generator<TDiscountCodeDraft>({
     cartDiscounts: [],
     cartPredicate: '1=1',
     isActive: fake((f) => f.datatype.boolean()),
-    maxApplications: fake((f) => f.datatype.number({ min: 1, max: 30 })),
+    maxApplications: fake((f) => f.number.int()({ min: 1, max: 30 })),
     maxApplicationsPerCustomer: fake((f) =>
-      f.datatype.number({ min: 1, max: 30 })
+      f.number.int()({ min: 1, max: 30 })
     ),
     groups: [],
     validFrom: fake(getValidFrom),

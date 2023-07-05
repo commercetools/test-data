@@ -18,7 +18,7 @@ const generator = Generator<TLineItemDraft>({
     productId: fake((f) => f.string.uuid()),
     sku: fake((f) => `${f.lorem.word()}-${f.string.alphaNumeric(3)}`),
     quantity: fake((f) =>
-      f.datatype.number({
+      f.number.int()({
         min: 1,
       })
     ),

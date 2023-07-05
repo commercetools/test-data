@@ -12,7 +12,7 @@ const generator = Generator<TCustomLineItem>({
     taxedPrice: null,
     totalPrice: null,
     slug: fake((f) => f.lorem.slug(3)),
-    quantity: fake((f) => f.datatype.number(9)),
+    quantity: fake((f) => f.number.int()(9)),
     state: [],
     taxCategory: null,
     taxRate: null,

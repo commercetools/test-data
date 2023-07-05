@@ -14,7 +14,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 const generator = Generator<TProduct>({
   fields: {
     id: fake((f) => f.string.uuid()),
-    version: fake((f) => f.datatype.number()),
+    version: fake((f) => f.number.int()()),
     key: fake((f) => f.lorem.slug()),
     productType: fake(() => ProductType.random()),
     masterData: fake(() => ProductCatalogData.random()),

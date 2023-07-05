@@ -8,7 +8,7 @@ const generator = Generator<TCartDiscountValueGiftLineItemDraft>({
   fields: {
     type: 'giftLineItem',
     product: fake(() => Reference.random().typeId('product')),
-    variantId: fake((f) => f.datatype.number()),
+    variantId: fake((f) => f.number.int()()),
     supplyChannel: fake(() => Reference.random().typeId('channel')),
     distributionChannel: fake(() => Reference.random().typeId('channel')),
   },
