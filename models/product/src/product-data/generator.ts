@@ -10,7 +10,7 @@ const generator = Generator<TProductData>({
     name: fake(() => LocalizedString.random()),
     categories: fake(() => [Category.random()]),
     categoryOrderHints: fake((f) => ({
-      [f.datatype.uuid()]: String(Math.random()),
+      [f.string.uuid()]: String(Math.random()),
     })),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
