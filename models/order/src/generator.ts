@@ -58,7 +58,7 @@ const generator = Generator<TOrder>({
     taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
     taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
     customerGroup: fake(() => CustomerGroup.random()),
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     orderState: oneOf(...Object.values(orderState)),
     state: null,
     shipmentState: oneOf(...Object.values(shipmentState)),

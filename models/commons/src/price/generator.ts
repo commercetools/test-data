@@ -11,7 +11,7 @@ const generator = Generator<Price>({
     id: fake((f) => f.string.uuid()),
     key: null,
     value: fake(() => CentPrecisionMoney.random()),
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     customerGroup: null,
     channel: null,
     validFrom: fake(getOlderDate),

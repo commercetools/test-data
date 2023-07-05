@@ -38,7 +38,7 @@ const generator = Generator<TCart>({
     anonymousId: fake((f) => f.string.uuid()),
     businessUnit: fake(() => Reference.random().typeId('business-unit')),
     store: null,
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     inventoryMode: oneOf(...Object.values(inventoryMode)),
     taxMode: oneOf(...Object.values(taxMode)),
     taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
