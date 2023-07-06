@@ -53,7 +53,7 @@ import { Generator, fake } from '@commercetools-test-data/core';
 
 const generator = Generator<TAuthor>({
   fields: {
-    firstName: fake((f) => f.name.firstName()),
+    firstName: fake((f) => f.person.firstName()),
     locale: 'en',
   },
 });
@@ -72,7 +72,7 @@ import { Generator, fake } from '@commercetools-test-data/core';
 
 const generator = Generator<TAuthor>({
   fields: {
-    firstName: fake((f) => f.name.firstName()),
+    firstName: fake((f) => f.person.firstName()),
     locale: 'en',
     books: null,
   },
@@ -88,7 +88,7 @@ import { Generator, fake } from '@commercetools-test-data/core';
 const generator = Generator<TBook>({
   name: 'Book',
   fields: {
-    title: fake((f) => f.random.words()),
+    title: fake((f) => f.lorem.words()),
   },
 });
 ```

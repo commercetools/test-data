@@ -5,8 +5,8 @@ import { TLocation } from './types';
 
 const generator = Generator<TLocation>({
   fields: {
-    country: fake((f) => f.address.countryCode()),
-    state: fake((f) => f.address.state()),
+    country: fake((f) => f.location.countryCode()),
+    state: fake((f) => f.location.state()),
   },
 });
 

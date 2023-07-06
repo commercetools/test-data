@@ -12,14 +12,12 @@ const generator = Generator<TDiscountCodeDraft>({
   fields: {
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
-    code: fake((f) => f.random.word()),
+    code: fake((f) => f.lorem.word()),
     cartDiscounts: [],
     cartPredicate: '1=1',
     isActive: fake((f) => f.datatype.boolean()),
-    maxApplications: fake((f) => f.datatype.number({ min: 1, max: 30 })),
-    maxApplicationsPerCustomer: fake((f) =>
-      f.datatype.number({ min: 1, max: 30 })
-    ),
+    maxApplications: fake((f) => f.number.int({ min: 1, max: 30 })),
+    maxApplicationsPerCustomer: fake((f) => f.number.int({ min: 1, max: 30 })),
     groups: [],
     validFrom: fake(getValidFrom),
     validUntil: fake(getValidUntil),

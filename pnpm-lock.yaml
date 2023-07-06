@@ -96,8 +96,8 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
       '@types/lodash':
         specifier: ^4.14.182
         version: 4.14.186
@@ -129,8 +129,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/attribute-type:
     dependencies:
@@ -153,8 +153,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/cart:
     dependencies:
@@ -192,8 +192,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/cart-discount:
     dependencies:
@@ -225,8 +225,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/category:
     dependencies:
@@ -249,8 +249,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/channel:
     dependencies:
@@ -273,8 +273,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/commons:
     dependencies:
@@ -294,8 +294,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
       '@types/lodash':
         specifier: ^4.14.182
         version: 4.14.186
@@ -327,8 +327,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/customer-group:
     dependencies:
@@ -351,8 +351,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/discount-code:
     dependencies:
@@ -378,8 +378,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/line-item:
     dependencies:
@@ -411,8 +411,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/order:
     dependencies:
@@ -447,8 +447,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/product:
     dependencies:
@@ -483,8 +483,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/product-discount:
     dependencies:
@@ -507,8 +507,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/product-selection:
     dependencies:
@@ -531,8 +531,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/product-type:
     dependencies:
@@ -561,8 +561,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/product-variant:
     dependencies:
@@ -588,8 +588,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/review:
     dependencies:
@@ -612,8 +612,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/shipping-method:
     dependencies:
@@ -642,8 +642,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/tax-category:
     dependencies:
@@ -666,8 +666,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   models/zone:
     dependencies:
@@ -690,8 +690,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.0
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
   utils:
     dependencies:
@@ -702,8 +702,8 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@faker-js/faker':
-        specifier: ^7.4.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
 
 packages:
 
@@ -2700,6 +2700,11 @@ packages:
   /@faker-js/faker@7.6.0:
     resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    dev: false
+
+  /@faker-js/faker@8.0.0:
+    resolution: {integrity: sha512-XDR8sApuf78GHx8mLXl3KL/q7eB52A963UGejVbdbj3OZtfGlNwp0J78b7apVzqRi0GF8l9g3eSkkaL2UmU9Aw==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:

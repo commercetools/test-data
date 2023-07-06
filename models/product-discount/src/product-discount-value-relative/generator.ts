@@ -7,7 +7,7 @@ const generator = Generator<TProductDiscountValueRelative>({
   fields: {
     type: 'relative',
     permyriad: fake((f) =>
-      f.datatype.number({
+      f.number.int({
         min: 0,
         max: 10000,
       })

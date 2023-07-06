@@ -10,7 +10,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TCategory>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     createdAt: fake(getOlderDate),
@@ -22,10 +22,8 @@ const generator = Generator<TCategory>({
     description: null,
     ancestors: [],
     parent: null,
-    orderHint: fake((f) =>
-      f.datatype.float({ min: 0.01, max: 0.99 }).toString()
-    ),
-    externalId: fake((f) => f.datatype.uuid()),
+    orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
+    externalId: fake((f) => f.string.uuid()),
     metaTitle: null,
     metaDescription: null,
     metaKeywords: null,

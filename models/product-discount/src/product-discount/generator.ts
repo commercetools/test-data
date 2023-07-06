@@ -17,7 +17,7 @@ const [getCreatedAt, getLastModifiedAt] = createRelatedDates();
 
 const generator = Generator<TProductDiscount>({
   fields: {
-    id: fake((f) => f.random.alphaNumeric(8)),
+    id: fake((f) => f.string.alphanumeric(8)),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
@@ -32,7 +32,7 @@ const generator = Generator<TProductDiscount>({
     predicate: '1=1',
     // Faker `min` and `max` bounds are inclusive, we need between 0 and 1
     sortOrder: fake((f) =>
-      String(f.datatype.number({ min: 0.00001, max: 0.99999 }))
+      String(f.number.float({ min: 0.00001, max: 0.99999 }))
     ),
     isActive: fake((f) => f.datatype.boolean()),
     references: [],

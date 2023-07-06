@@ -3,23 +3,23 @@ import type { TAddress } from './types';
 
 const generator = Generator<TAddress>({
   fields: {
-    id: fake((f) => f.random.alphaNumeric(8)),
+    id: fake((f) => f.string.alphanumeric(8)),
     key: fake((f) => f.lorem.slug(2)),
-    title: fake((f) => f.name.jobTitle()),
+    title: fake((f) => f.person.jobTitle()),
     salutation: oneOf(
       'Dear',
       'To Whom it May Concern',
       'Members of the Committee'
     ),
-    firstName: fake((f) => f.name.firstName()),
-    lastName: fake((f) => f.name.lastName()),
-    streetName: fake((f) => f.address.street()),
-    streetNumber: fake((f) => String(f.datatype.number())),
-    additionalStreetInfo: fake((f) => f.address.street()),
-    postalCode: fake((f) => f.address.zipCode()),
-    city: fake((f) => f.address.city()),
+    firstName: fake((f) => f.person.firstName()),
+    lastName: fake((f) => f.person.lastName()),
+    streetName: fake((f) => f.location.street()),
+    streetNumber: fake((f) => String(f.number.int())),
+    additionalStreetInfo: fake((f) => f.location.street()),
+    postalCode: fake((f) => f.location.zipCode()),
+    city: fake((f) => f.location.city()),
     region: null,
-    state: fake((f) => f.address.state()),
+    state: fake((f) => f.location.state()),
     country: 'DE',
     company: fake((f) => f.company.name()),
     department: fake((f) => f.commerce.department()),

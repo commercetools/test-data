@@ -14,18 +14,18 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TReview>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     uniquenessValue: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),
-    authorName: fake((f) => f.name.fullName()),
+    authorName: fake((f) => f.person.fullName()),
     title: fake((f) => f.word.interjection()),
     text: fake((f) => f.hacker.phrase()),
     target: null,
     includedInStatistics: fake((f) => f.datatype.boolean()),
     rating: fake((f) =>
-      f.datatype.number({
+      f.number.int({
         min: -100,
         max: 100,
       })

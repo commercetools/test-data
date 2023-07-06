@@ -5,7 +5,7 @@ import type { TKeyReference } from './types';
 const generator = Generator<TKeyReference>({
   fields: {
     typeId: null,
-    key: fake((f) => f.random.alphaNumeric(8)),
+    key: fake((f) => f.string.alphanumeric(8)),
   },
 });
 

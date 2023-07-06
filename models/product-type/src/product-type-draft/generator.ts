@@ -6,9 +6,9 @@ import type { TProductTypeDraft } from '../types';
 
 const generator = Generator<TProductTypeDraft>({
   fields: {
-    name: fake((f) => f.random.words(2)),
+    name: fake((f) => f.lorem.words(2)),
     key: fake((f) => f.lorem.slug()),
-    description: fake((f) => f.random.words()),
+    description: fake((f) => f.lorem.words()),
     attributes: fake(() => [AttributeDefinitionDraft.random()]),
   },
 });

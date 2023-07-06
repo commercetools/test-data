@@ -10,7 +10,7 @@ const generator = Generator<TPriceDraft>({
   fields: {
     key: null,
     value: fake(() => Money.random()),
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     customerGroup: null,
     channel: null,
     validFrom: fake(getOlderDate),

@@ -18,8 +18,8 @@ const [addedAt, lastModifiedAt] = createRelatedDates();
 
 const generator = Generator<TLineItem>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
-    productId: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
+    productId: fake((f) => f.string.uuid()),
     productKey: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
     productSlug: fake(() => LocalizedString.presets.ofSlugs()),
@@ -30,7 +30,7 @@ const generator = Generator<TLineItem>({
     taxedPricePortions: [],
     totalPrice: fake(() => CentPrecisionMoney.random()),
     quantity: fake((f) =>
-      f.datatype.number({
+      f.number.int({
         min: 1,
       })
     ),

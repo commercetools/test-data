@@ -4,7 +4,7 @@ import type { TReference } from './types';
 // https://docs.commercetools.com/api/types#referencetype
 const generator = Generator<TReference>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     typeId: null,
   },
 });

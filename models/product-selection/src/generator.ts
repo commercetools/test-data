@@ -12,11 +12,11 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TProductSelection>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
-    productCount: fake((f) => f.datatype.number()),
+    productCount: fake((f) => f.number.int()),
     type: 'Individual',
     custom: null,
     createdAt: fake(getOlderDate),

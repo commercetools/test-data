@@ -268,7 +268,7 @@ describe('building', () => {
   describe('with generator', () => {
     const generator = Generator<TestOrganization>({
       fields: {
-        id: fake((f) => f.datatype.uuid()),
+        id: fake((f) => f.string.uuid()),
         version: sequence(),
         name: fake((f) => f.company.name()),
       },
@@ -600,7 +600,7 @@ describe('building', () => {
   describe('paginated list', () => {
     const generator = Generator<TestOrganization>({
       fields: {
-        id: fake((f) => f.datatype.uuid()),
+        id: fake((f) => f.string.uuid()),
         version: sequence(),
         name: fake((f) => f.company.name()),
       },

@@ -6,13 +6,13 @@ import { TCustomLineItem } from './types';
 
 const generator = Generator<TCustomLineItem>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     name: fake(() => LocalizedString.random()),
     money: fake(() => [Money.random()]),
     taxedPrice: null,
     totalPrice: null,
     slug: fake((f) => f.lorem.slug(3)),
-    quantity: fake((f) => f.datatype.number(9)),
+    quantity: fake((f) => f.number.int(9)),
     state: [],
     taxCategory: null,
     taxRate: null,

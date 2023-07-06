@@ -9,12 +9,12 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TZone>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake((f) => f.lorem.words(2)),
     description: fake((f) => f.lorem.sentence()),
-    locations: fake((f) => [{ country: f.address.countryCode() }]),
+    locations: fake((f) => [{ country: f.location.countryCode() }]),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

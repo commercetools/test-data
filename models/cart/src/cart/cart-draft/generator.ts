@@ -17,13 +17,13 @@ const generator = Generator<TCartDraft>({
   fields: {
     currency: oneOf('EUR', 'USD'),
     key: fake((f) => f.lorem.slug(2)),
-    customerId: fake((f) => f.datatype.uuid()),
+    customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
     customerGroup: fake(() => Reference.random().typeId('customer-group')),
-    anonymousId: fake((f) => f.datatype.uuid()),
+    anonymousId: fake((f) => f.string.uuid()),
     businessUnit: fake(() => Reference.random().typeId('business-unit')),
     store: null,
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     inventoryMode: oneOf(...Object.values(inventoryMode)),
     taxMode: oneOf(...Object.values(taxMode)),
     taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
@@ -43,7 +43,7 @@ const generator = Generator<TCartDraft>({
     customShipping: [],
     shipping: [],
     itemShippingAddresses: [],
-    discountCodes: fake((f) => [f.random.word()]),
+    discountCodes: fake((f) => [f.lorem.word()]),
   },
 });
 

@@ -32,17 +32,17 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const generator = Generator<TOrder>({
   fields: {
-    id: fake((f) => f.datatype.uuid()),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
     completedAt: null,
-    orderNumber: fake((f) => String(f.datatype.number({ min: 100000 }))),
-    customerId: fake((f) => f.datatype.uuid()),
+    orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
+    customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
-    anonymousId: fake((f) => f.datatype.uuid()),
+    anonymousId: fake((f) => f.string.uuid()),
     businessUnit: null,
     store: null,
     lineItems: fake(() => [LineItem.random()]),
@@ -58,7 +58,7 @@ const generator = Generator<TOrder>({
     taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
     taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
     customerGroup: fake(() => CustomerGroup.random()),
-    country: fake((f) => f.address.countryCode()),
+    country: fake((f) => f.location.countryCode()),
     orderState: oneOf(...Object.values(orderState)),
     state: null,
     shipmentState: oneOf(...Object.values(shipmentState)),
@@ -66,9 +66,7 @@ const generator = Generator<TOrder>({
     shippingInfo: null,
     syncInfo: null,
     returnInfo: [],
-    purchaseOrderNumber: fake((f) =>
-      String(f.datatype.number({ min: 100000 }))
-    ),
+    purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
     discountCodes: [],
     // TODO: unsupported by SDK types
     // directDiscounts: [],

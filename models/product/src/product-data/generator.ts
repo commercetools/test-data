@@ -10,7 +10,7 @@ const generator = Generator<TProductData>({
     name: fake(() => LocalizedString.random()),
     categories: fake(() => [Category.random()]),
     categoryOrderHints: fake((f) => ({
-      [f.datatype.uuid()]: String(Math.random()),
+      [f.string.uuid()]: String(Math.random()),
     })),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
@@ -29,7 +29,7 @@ const generator = Generator<TProductData>({
     searchKeywords: null,
     // TODO: Include random SearchKeywords[] when available
     searchKeyword: [],
-    skus: fake((f) => [`${f.random.word()}-${f.random.alphaNumeric(3)}`]),
+    skus: fake((f) => [`${f.lorem.word()}-${f.string.alphanumeric(3)}`]),
   },
 });
 

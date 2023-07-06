@@ -85,11 +85,11 @@ describe('test-data-bot', () => {
 
     const addressBuilder = build<Address>('Address', {
       fields: {
-        street1: fake((f) => f.address.streetAddress()),
+        street1: fake((f) => f.location.streetAddress()),
         street2: null,
-        city: fake((f) => f.address.city()),
-        state: fake((f) => f.address.state()),
-        zipCode: fake((f) => f.address.zipCode()),
+        city: fake((f) => f.location.city()),
+        state: fake((f) => f.location.state()),
+        zipCode: fake((f) => f.location.zipCode()),
       },
     });
 
@@ -112,7 +112,7 @@ describe('test-data-bot', () => {
 
     const userBuilder = build<User>('User', {
       fields: {
-        name: fake((f) => f.name.fullName()),
+        name: fake((f) => f.person.fullName()),
       },
     });
 
@@ -201,7 +201,7 @@ describe('test-data-bot', () => {
 
       const userBuilder = build<User>('User', {
         fields: {
-          name: fake((f) => f.name.fullName()),
+          name: fake((f) => f.person.fullName()),
           sports: {
             football: true,
             rugby: false,
@@ -255,7 +255,7 @@ describe('test-data-bot', () => {
           return user;
         },
         fields: {
-          name: fake((f) => f.name.fullName()),
+          name: fake((f) => f.person.fullName()),
         },
       });
 
@@ -279,7 +279,7 @@ describe('test-data-bot', () => {
           return user;
         },
         fields: {
-          name: fake((f) => f.name.fullName()),
+          name: fake((f) => f.person.fullName()),
         },
       });
 
@@ -305,7 +305,7 @@ describe('test-data-bot', () => {
 
       const userBuilder = build<User>('User', {
         fields: {
-          name: fake((f) => f.name.fullName()),
+          name: fake((f) => f.person.fullName()),
         },
       });
 
@@ -358,8 +358,8 @@ describe('test-data-bot', () => {
         fields: {
           friends: {
             names: [
-              fake((f) => f.name.fullName()),
-              fake((f) => f.name.fullName()),
+              fake((f) => f.person.fullName()),
+              fake((f) => f.person.fullName()),
             ],
           },
         },
@@ -389,7 +389,7 @@ describe('test-data-bot', () => {
 
       const friendBuilder = build<Friend>('Friend', {
         fields: {
-          name: fake((f) => f.name.fullName()),
+          name: fake((f) => f.person.fullName()),
           sports: {
             football: bool(),
             basketball: false,
@@ -445,7 +445,7 @@ describe('test-data-bot', () => {
       const userBuilder = build<User>('User', {
         fields: {
           details: {
-            name: fake((f) => f.name.fullName()),
+            name: fake((f) => f.person.fullName()),
           },
           admin: bool(),
         },
