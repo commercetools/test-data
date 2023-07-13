@@ -15,7 +15,7 @@ const sampleAustralia = (): TCustomerDraftBuilder =>
   CustomerDraft.presets
     .empty()
     .key('1234')
-    .email('samplecustomer.austrailia@example.com')
+    .email('samplecustomer.australia@example.com')
     .firstName('Sample Customer')
     .lastName('Australia')
     .addresses([AddressDraft.presets.sampleDataFashion.sampleAustralia()])

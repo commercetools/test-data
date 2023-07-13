@@ -42,7 +42,7 @@ describe('with the preset cart `sampleAustralia01`', () => {
         "custom": undefined,
         "customLineItems": undefined,
         "customShipping": undefined,
-        "customerEmail": "samplecustomer.austrailia@example.com",
+        "customerEmail": "samplecustomer.australia@example.com",
         "customerGroup": {
           "key": "employee",
           "typeId": "customer-group",
@@ -156,7 +156,7 @@ describe('with the preset cart `sampleAustralia01`', () => {
         "custom": undefined,
         "customLineItems": undefined,
         "customShipping": undefined,
-        "customerEmail": "samplecustomer.austrailia@example.com",
+        "customerEmail": "samplecustomer.australia@example.com",
         "customerGroup": {
           "__typename": "Reference",
           "key": "employee",
