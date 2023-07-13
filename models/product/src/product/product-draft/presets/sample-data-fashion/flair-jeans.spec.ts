@@ -6,7 +6,12 @@ describe(`with flairJeans preset`, () => {
     const flairJeansPreset = flairJeans().build<TProductDraft>();
     expect(flairJeansPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "bottoms-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "flair_jeans",
@@ -121,7 +126,13 @@ describe(`with flairJeans preset`, () => {
     const flairJeansPresetGraphql = flairJeans().buildGraphql<TProductDraft>();
     expect(flairJeansPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "bottoms-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "flair_jeans",

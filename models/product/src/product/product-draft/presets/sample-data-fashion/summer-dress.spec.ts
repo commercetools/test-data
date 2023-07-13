@@ -6,7 +6,12 @@ describe(`with summerDress preset`, () => {
     const summerDressPreset = summerDress().build<TProductDraft>();
     expect(summerDressPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "summer_dress",
@@ -175,7 +180,13 @@ describe(`with summerDress preset`, () => {
       summerDress().buildGraphql<TProductDraft>();
     expect(summerDressPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "summer_dress",

@@ -6,7 +6,12 @@ describe(`with necklace preset`, () => {
     const necklacePreset = necklace().build<TProductDraft>();
     expect(necklacePreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "necklace",
@@ -163,7 +168,13 @@ describe(`with necklace preset`, () => {
     const necklacePresetGraphql = necklace().buildGraphql<TProductDraft>();
     expect(necklacePresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "necklace",

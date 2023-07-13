@@ -6,7 +6,12 @@ describe(`with sampleSandals preset`, () => {
     const sampleSandalsPreset = sampleSandals().build<TProductDraft>();
     expect(sampleSandalsPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "other-kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "sandals",
@@ -190,7 +195,13 @@ describe(`with sampleSandals preset`, () => {
       sampleSandals().buildGraphql<TProductDraft>();
     expect(sampleSandalsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "other-kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "sandals",

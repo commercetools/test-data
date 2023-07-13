@@ -1,4 +1,8 @@
 import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
   KeyReference,
   LocalizedString,
 } from '@commercetools-test-data/commons';
@@ -22,6 +26,10 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
+const categoryDraft = CategoryDraft.presets.sampleDataFashion
+  .bottomsWomen()
+  .build<TCategoryDraft>();
+
 const skinnyJeans = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
@@ -40,6 +48,7 @@ const skinnyJeans = (): TProductDraftBuilder =>
     .key('skinny_jeans')
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
-    );
+    )
+    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
 
 export default skinnyJeans;

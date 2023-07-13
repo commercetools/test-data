@@ -6,7 +6,12 @@ describe(`with skinnyJeans preset`, () => {
     const skinnyJeansPreset = skinnyJeans().build<TProductDraft>();
     expect(skinnyJeansPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "bottoms-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "skinny_jeans",
@@ -174,7 +179,13 @@ describe(`with skinnyJeans preset`, () => {
       skinnyJeans().buildGraphql<TProductDraft>();
     expect(skinnyJeansPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "bottoms-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "skinny_jeans",
