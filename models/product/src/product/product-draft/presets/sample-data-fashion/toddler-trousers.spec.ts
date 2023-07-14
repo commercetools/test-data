@@ -6,7 +6,12 @@ describe(`with toddlerTrousers preset`, () => {
     const toddlerTrousersPreset = toddlerTrousers().build<TProductDraft>();
     expect(toddlerTrousersPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "bottoms_kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "toddler_trousers",
@@ -279,7 +284,13 @@ describe(`with toddlerTrousers preset`, () => {
       toddlerTrousers().buildGraphql<TProductDraft>();
     expect(toddlerTrousersPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "bottoms_kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "toddler_trousers",

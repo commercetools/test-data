@@ -6,7 +6,12 @@ describe(`with toteBag preset`, () => {
     const toteBagPreset = toteBag().build<TProductDraft>();
     expect(toteBagPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "tote_bag",
@@ -159,7 +164,13 @@ describe(`with toteBag preset`, () => {
     const toteBagPresetGraphql = toteBag().buildGraphql<TProductDraft>();
     expect(toteBagPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "tote_bag",

@@ -1,4 +1,8 @@
 import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
   KeyReference,
   LocalizedString,
 } from '@commercetools-test-data/commons';
@@ -22,6 +26,10 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
+const categoryDraft = CategoryDraft.presets.sampleDataFashion
+  .otherWomen()
+  .build<TCategoryDraft>();
+
 const toteBag = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
@@ -40,6 +48,7 @@ const toteBag = (): TProductDraftBuilder =>
     .key('tote_bag')
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
-    );
+    )
+    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
 
 export default toteBag;

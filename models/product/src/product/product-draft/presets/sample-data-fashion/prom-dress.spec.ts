@@ -6,7 +6,12 @@ describe(`with promDress preset`, () => {
     const promDressPreset = promDress().build<TProductDraft>();
     expect(promDressPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "prom_dress",
@@ -159,7 +164,13 @@ describe(`with promDress preset`, () => {
     const promDressPresetGraphql = promDress().buildGraphql<TProductDraft>();
     expect(promDressPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "other-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "prom_dress",

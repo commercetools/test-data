@@ -6,7 +6,12 @@ describe(`with sportCoat preset`, () => {
     const sportCoatPreset = sportCoat().build<TProductDraft>();
     expect(sportCoatPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "sport_coat",
@@ -159,7 +164,13 @@ describe(`with sportCoat preset`, () => {
     const sportCoatPresetGraphql = sportCoat().buildGraphql<TProductDraft>();
     expect(sportCoatPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "sport_coat",

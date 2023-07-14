@@ -1,4 +1,8 @@
 import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
   KeyReference,
   LocalizedString,
 } from '@commercetools-test-data/commons';
@@ -22,6 +26,10 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
+const categoryDraft = CategoryDraft.presets.sampleDataFashion
+  .topsWomen()
+  .build<TCategoryDraft>();
+
 const maternityTop = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
@@ -41,6 +49,7 @@ const maternityTop = (): TProductDraftBuilder =>
     .key('maternity_top')
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
-    );
+    )
+    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
 
 export default maternityTop;

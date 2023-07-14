@@ -6,7 +6,12 @@ describe(`with halloweenTop preset`, () => {
     const halloweenTopPreset = halloweenTop().build<TProductDraft>();
     expect(halloweenTopPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "Halloween Top",
@@ -204,7 +209,13 @@ describe(`with halloweenTop preset`, () => {
       halloweenTop().buildGraphql<TProductDraft>();
     expect(halloweenTopPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "Halloween Top",

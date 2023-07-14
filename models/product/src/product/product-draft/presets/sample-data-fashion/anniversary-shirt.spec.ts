@@ -6,7 +6,12 @@ describe(`with anniversaryShirt preset`, () => {
     const anniversaryShirtPreset = anniversaryShirt().build<TProductDraft>();
     expect(anniversaryShirtPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "tops-kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "anniversary_shirt",
@@ -96,7 +101,13 @@ describe(`with anniversaryShirt preset`, () => {
       anniversaryShirt().buildGraphql<TProductDraft>();
     expect(anniversaryShirtPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "tops-kids",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "anniversary_shirt",

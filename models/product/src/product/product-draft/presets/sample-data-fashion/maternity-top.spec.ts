@@ -6,7 +6,12 @@ describe(`with maternityTop preset`, () => {
     const maternityTopPreset = maternityTop().build<TProductDraft>();
     expect(maternityTopPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "tops-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "maternity_top",
@@ -237,7 +242,13 @@ describe(`with maternityTop preset`, () => {
       maternityTop().buildGraphql<TProductDraft>();
     expect(maternityTopPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "tops-women",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "maternity_top",

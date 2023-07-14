@@ -6,7 +6,12 @@ describe(`with denimJacket preset`, () => {
     const denimJacketPreset = denimJacket().build<TProductDraft>();
     expect(denimJacketPreset).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "denim_jacket",
@@ -213,7 +218,13 @@ describe(`with denimJacket preset`, () => {
       denimJacket().buildGraphql<TProductDraft>();
     expect(denimJacketPresetGraphql).toMatchInlineSnapshot(`
       {
-        "categories": undefined,
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "tops-men",
+            "typeId": "category",
+          },
+        ],
         "categoryOrderHints": undefined,
         "description": undefined,
         "key": "denim_jacket",
