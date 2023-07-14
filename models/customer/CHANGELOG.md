@@ -1,5 +1,21 @@
 # @commercetools-test-data/customer
 
+## 5.8.0
+
+### Minor Changes
+
+- [#280](https://github.com/commercetools/test-data/pull/280) [`2284af3`](https://github.com/commercetools/test-data/commit/2284af362e7168b26f949b6e853527b7414f2669) Thanks [@renovate](https://github.com/apps/renovate)! - Update to Faker v8. Additional documentation referenced [here](https://fakerjs.dev/guide/upgrading.html).
+
+- [#298](https://github.com/commercetools/test-data/pull/298) [`1f3a24b`](https://github.com/commercetools/test-data/commit/1f3a24b916acff284d36e4edc03875981817c09f) Thanks [@jaikamat](https://github.com/jaikamat)! - Fix incorrect spelling in customer email, add categories for product draft presets
+
+### Patch Changes
+
+- Updated dependencies [[`2284af3`](https://github.com/commercetools/test-data/commit/2284af362e7168b26f949b6e853527b7414f2669)]:
+  - @commercetools-test-data/customer-group@5.8.0
+  - @commercetools-test-data/commons@5.8.0
+  - @commercetools-test-data/utils@5.8.0
+  - @commercetools-test-data/core@5.8.0
+
 ## 5.7.0
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @commercetools-test-data/product-selection
 
+## 5.8.0
+
+### Minor Changes
+
+- [#280](https://github.com/commercetools/test-data/pull/280) [`2284af3`](https://github.com/commercetools/test-data/commit/2284af362e7168b26f949b6e853527b7414f2669) Thanks [@renovate](https://github.com/apps/renovate)! - Update to Faker v8. Additional documentation referenced [here](https://fakerjs.dev/guide/upgrading.html).
+
+### Patch Changes
+
+- Updated dependencies [[`2284af3`](https://github.com/commercetools/test-data/commit/2284af362e7168b26f949b6e853527b7414f2669)]:
+  - @commercetools-test-data/commons@5.8.0
+  - @commercetools-test-data/utils@5.8.0
+  - @commercetools-test-data/core@5.8.0
+
 ## 5.7.0
 
 ### Minor Changes
