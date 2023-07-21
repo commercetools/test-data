@@ -7,7 +7,10 @@ describe('Channel with geolocation', () => {
 
     expect(channelWithGeoLocation).toEqual(
       expect.objectContaining({
-        coordinates: [expect.any(Number), expect.any(String)],
+        geoLocation: {
+          type: 'Point',
+          coordinates: [45, 28],
+        },
       })
     );
   });
