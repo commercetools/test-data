@@ -6,14 +6,11 @@ describe('Channel with geolocation', () => {
     const channelWithGeoLocationOnly =
       withGeoLocationOnly().build<TChannelDraft>();
 
-    /// here you can add asserts to ensure all but coordinates & key are null
-    // note i have it erring on purpose so that you can see the object it's creating
-
     expect(channelWithGeoLocationOnly).toEqual(
       expect.objectContaining({
         geoLocation: {
           type: 'Point',
-          coordinates: [45, 28],
+          coordinates: [expect.any(Number), expect.any(Number)],
         },
       })
     );
