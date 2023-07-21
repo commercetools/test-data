@@ -1,5 +1,7 @@
-import ChannelDraft from '../builder';
+import { ChannelDraft } from '../../index';
 
 const withGeoLocation = () =>
-  ChannelDraft().geoLocation({ type: 'Point', coordinates: [45, 28] });
+  ChannelDraft.presets
+    .empty()
+    .geoLocation({ type: 'Point', coordinates: [47, 28] });
 export default withGeoLocation;
