@@ -12,7 +12,13 @@ const generator = Generator<TChannelDraft>({
     description: fake(() => LocalizedString.random()),
     address: fake(() => Address.random()),
     custom: null,
-    geoLocation: null,
+    geoLocation: {
+      type: 'Point',
+      coordinates: [
+        fake((f) => f.location.longitude()),
+        fake((f) => f.location.latitude()),
+      ],
+    },
   },
 });
 
