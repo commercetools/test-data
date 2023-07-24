@@ -3,7 +3,9 @@ import sampleGermany01 from './sample-germany-01';
 
 describe('with the preset cart `sampleGermany01`', () => {
   it('should return a cart discount draft', () => {
-    const cartDraft = sampleGermany01().build<TCartDraft>();
+    const cartDraft = sampleGermany01(
+      '9b3ea3f7-9858-4dc5-bf5c-9ac66e794513'
+    ).build<TCartDraft>();
 
     expect(cartDraft).toMatchInlineSnapshot(`
       {
@@ -44,7 +46,7 @@ describe('with the preset cart `sampleGermany01`', () => {
         "customShipping": undefined,
         "customerEmail": "samplecustomer.germany@example.com",
         "customerGroup": undefined,
-        "customerId": undefined,
+        "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
@@ -114,7 +116,9 @@ describe('with the preset cart `sampleGermany01`', () => {
   });
 
   it('should return a cart discount draft when build for GraphQL', () => {
-    const cartDraft = sampleGermany01().buildGraphql<TCartDraft>();
+    const cartDraft = sampleGermany01(
+      '9b3ea3f7-9858-4dc5-bf5c-9ac66e794513'
+    ).buildGraphql<TCartDraft>();
 
     expect(cartDraft).toMatchInlineSnapshot(`
       {
@@ -155,7 +159,7 @@ describe('with the preset cart `sampleGermany01`', () => {
         "customShipping": undefined,
         "customerEmail": "samplecustomer.germany@example.com",
         "customerGroup": undefined,
-        "customerId": undefined,
+        "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
