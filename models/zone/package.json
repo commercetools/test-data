@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/zone",
-  "version": "5.8.0",
+  "version": "5.8.1",
   "description": "Data model for commercetools API Zones",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "5.8.0",
-    "@commercetools-test-data/core": "5.8.0",
-    "@commercetools-test-data/utils": "5.8.0",
+    "@commercetools-test-data/commons": "5.8.1",
+    "@commercetools-test-data/core": "5.8.1",
+    "@commercetools-test-data/utils": "5.8.1",
     "@commercetools/platform-sdk": "^4.0.0",
     "@faker-js/faker": "^8.0.0"
   }

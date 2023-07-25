@@ -1,5 +1,7 @@
 # @commercetools-test-data/core
 
+## 5.8.1
+
 ## 5.8.0
 
 ### Minor Changes

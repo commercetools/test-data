@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart
 
+## 5.8.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/line-item@5.8.1
+  - @commercetools-test-data/core@5.8.1
+  - @commercetools-test-data/commons@5.8.1
+  - @commercetools-test-data/customer@5.8.1
+  - @commercetools-test-data/discount-code@5.8.1
+  - @commercetools-test-data/product-variant@5.8.1
+  - @commercetools-test-data/shipping-method@5.8.1
+  - @commercetools-test-data/utils@5.8.1
+
 ## 5.8.0
 
 ### Minor Changes
