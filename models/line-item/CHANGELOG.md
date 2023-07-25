@@ -1,5 +1,17 @@
 # @commercetools-test-data/line-item
 
+## 5.8.1
+
+### Patch Changes
+
+- Updated dependencies [[`8bcedc3`](https://github.com/commercetools/test-data/commit/8bcedc347841fec6739675aa253d443f382081cb)]:
+  - @commercetools-test-data/channel@5.8.1
+  - @commercetools-test-data/core@5.8.1
+  - @commercetools-test-data/commons@5.8.1
+  - @commercetools-test-data/product-variant@5.8.1
+  - @commercetools-test-data/tax-category@5.8.1
+  - @commercetools-test-data/utils@5.8.1
+
 ## 5.8.0
 
 ### Minor Changes

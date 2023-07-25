@@ -1,5 +1,18 @@
 # @commercetools-test-data/product
 
+## 5.8.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.8.1
+  - @commercetools-test-data/category@5.8.1
+  - @commercetools-test-data/commons@5.8.1
+  - @commercetools-test-data/product-type@5.8.1
+  - @commercetools-test-data/product-variant@5.8.1
+  - @commercetools-test-data/tax-category@5.8.1
+  - @commercetools-test-data/utils@5.8.1
+
 ## 5.8.0
 
 ### Minor Changes
