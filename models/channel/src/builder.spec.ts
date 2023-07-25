@@ -31,7 +31,9 @@ describe('builder', () => {
         }),
         reviewRatingStatistics: null,
         custom: null,
-        geoLocation: null,
+        geoLocation: expect.objectContaining({
+          coordinates: [expect.any(Number), expect.any(Number)],
+        }),
         roles: [roles.Primary],
       })
     )
@@ -66,7 +68,9 @@ describe('builder', () => {
         }),
         reviewRatingStatistics: null,
         custom: null,
-        geoLocation: null,
+        geoLocation: expect.objectContaining({
+          coordinates: [expect.any(Number), expect.any(Number)],
+        }),
         roles: [roles.Primary],
       })
     )

@@ -22,7 +22,13 @@ const generator = Generator<Channel>({
     address: fake(() => Address.random()),
     reviewRatingStatistics: null,
     custom: null,
-    geoLocation: null,
+    geoLocation: {
+      type: 'Point',
+      coordinates: [
+        fake((f) => f.location.longitude()),
+        fake((f) => f.location.latitude()),
+      ],
+    },
   },
 });
 

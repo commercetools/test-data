@@ -23,7 +23,9 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         custom: null,
-        geoLocation: null,
+        geoLocation: expect.objectContaining({
+          coordinates: [expect.any(Number), expect.any(Number)],
+        }),
         roles: [roles.Primary],
       })
     )
@@ -45,7 +47,9 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         custom: null,
-        geoLocation: null,
+        geoLocation: expect.objectContaining({
+          coordinates: [expect.any(Number), expect.any(Number)],
+        }),
         roles: [roles.Primary],
       })
     )
@@ -91,7 +95,9 @@ describe('builder', () => {
           }),
         ]),
         custom: null,
-        geoLocation: null,
+        geoLocation: expect.objectContaining({
+          coordinates: [expect.any(Number), expect.any(Number)],
+        }),
         roles: [roles.Primary],
       })
     )

@@ -26,5 +26,5 @@ const channelDraft = ChannelDraft.random().build<TChannelDraft>();
 // Presets
 const withInventorySupplyAndProductDistributionRoles = ChannelDraft.presets
   .withInventorySupplyAndProductDistributionRoles()
-  .build<TCategoryDraft>();
+  .build<TChannelDraft>();
 ```
