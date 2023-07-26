@@ -8,6 +8,7 @@ const generator = Generator<TProductSelectionDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
+    // mode
     custom: null,
   },
 });

@@ -35,5 +35,5 @@ describe('builder', () => {
       })
     )
   );
-  // No graphql tests at this time
+  // ProductSelectionDraft/ProductSelectionInput does not exist in a graphql format
 });

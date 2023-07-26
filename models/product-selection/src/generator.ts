@@ -17,6 +17,7 @@ const generator = Generator<TProductSelection>({
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
     productCount: fake((f) => f.number.int()),
+    //type is documented as mode with a fixed value of 'Individual'
     type: 'Individual',
     custom: null,
     createdAt: fake(getOlderDate),

@@ -9,7 +9,7 @@ export type TProductSelectionDraft = ProductSelectionDraft;
 export type TProductSelectionDraftBuilder = TBuilder<TProductSelectionDraft>;
 export type TCreateProductSelectionDraftBuilder =
   () => TProductSelectionDraftBuilder;
-export type TProductSelectionDraftGraphql = TProductSelectionDraft;
+// ProductSelectionDraft/ProductSelectionInput does not exist in a graphql format
 
 //ProductSelection
 export type TProductSelection = ProductSelection;
