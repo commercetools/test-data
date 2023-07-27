@@ -35,11 +35,12 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .usaAustralia()
   .build<TShippingMethodDraft>();
 
-const sampleAustralia02 = (): TCartDraftBuilder =>
+const sampleAustralia02 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
     .key('sample-australia-02-cart')
     .customerEmail(customer.email)
+    .customerId(customerId)
     .customerGroup(
       KeyReference.presets.customerGroup().key(customer.customerGroup!.key!)
     )

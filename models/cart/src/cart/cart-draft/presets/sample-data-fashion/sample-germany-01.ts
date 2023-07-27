@@ -27,11 +27,12 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .europe()
   .build<TShippingMethodDraft>();
 
-const sampleGermany01 = (): TCartDraftBuilder =>
+const sampleGermany01 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
     .key('sample-germany-01-cart')
     .customerEmail(customer.email)
+    .customerId(customerId)
     .currency('EUR')
     .country('DE')
     .origin(origin.Merchant)
