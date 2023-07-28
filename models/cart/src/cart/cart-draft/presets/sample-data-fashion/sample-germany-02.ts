@@ -38,7 +38,7 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
 const sampleGermany02 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
-    .key('mary-02-cart')
+    .key('sample-germany-02-cart')
     .customerEmail(customer.email)
     .customerId(customerId)
     .currency('EUR')

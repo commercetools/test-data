@@ -33,9 +33,6 @@ const sampleAustralia01 = (customerId?: string): TCartDraftBuilder =>
     .key('sample-australia-01-cart')
     .customerId(customerId)
     .customerEmail(customer.email)
-    .customerGroup(
-      KeyReference.presets.customerGroup().key(customer.customerGroup!.key!)
-    )
     .currency('AUD')
     .country('AU')
     .origin(origin.Merchant)
