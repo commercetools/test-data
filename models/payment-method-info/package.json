@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/payment-method-info",
-  "version": "4.4.0",
+  "version": "5.8.1",
   "description": "Data model for commercetools API PaymentMethodInfo",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
