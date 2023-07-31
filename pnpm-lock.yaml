@@ -474,6 +474,30 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/payment-status:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@commercetools-test-data/commons':
+        specifier: 5.8.1
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 5.8.1
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 5.8.1
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^4.0.0
+        version: 4.5.0
+      '@faker-js/faker':
+        specifier: ^7.4.0
+        version: 7.4.0
+
   models/product:
     dependencies:
       '@babel/runtime':
@@ -2747,6 +2771,11 @@ packages:
   /@eslint/js@8.41.0:
     resolution: {integrity: sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@faker-js/faker@7.4.0:
+    resolution: {integrity: sha512-xDd3Tvkt2jgkx1LkuwwxpNBy/Oe+LkZBTwkgEFTiWpVSZgQ5sc/LenbHKRHbFl0dq/KFeeq/szyyPtpJRKY0fg==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
   /@faker-js/faker@8.0.0:

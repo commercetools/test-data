@@ -1,0 +1,37 @@
+{
+  "name": "@commercetools-test-data/payment-status",
+  "version": "5.8.1",
+  "description": "Data model for commercetools API PaymentStatus",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/payment-status"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-payment-status.cjs.js",
+  "module": "dist/commercetools-test-data-payment-status.esm.js",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "5.8.1",
+    "@commercetools-test-data/core": "5.8.1",
+    "@commercetools-test-data/utils": "5.8.1",
+    "@commercetools/platform-sdk": "^4.0.0",
+    "@faker-js/faker": "^7.4.0"
+  }
+}
