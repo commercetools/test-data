@@ -450,6 +450,30 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/payment-method-info:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@commercetools-test-data/commons':
+        specifier: 4.4.0
+        version: 4.4.0
+      '@commercetools-test-data/core':
+        specifier: 4.4.0
+        version: 4.4.0
+      '@commercetools-test-data/utils':
+        specifier: 4.4.0
+        version: 4.4.0
+      '@commercetools/platform-sdk':
+        specifier: ^4.0.0
+        version: 4.5.0
+      '@faker-js/faker':
+        specifier: ^7.4.0
+        version: 7.4.0
+
   models/product:
     dependencies:
       '@babel/runtime':
@@ -2379,6 +2403,37 @@ packages:
       - supports-color
     dev: false
 
+  /@commercetools-test-data/commons@4.4.0:
+    resolution: {integrity: sha512-C5XWXs/4Ayjf96CCAQGkbnX5TfxTRFTP2BDvfm30007yfeQdRfgvgB+HWqpRDTmHOJFcuncQrsDIUkWsahNkqQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/core': 4.4.0
+      '@commercetools/platform-sdk': 4.5.0
+      '@faker-js/faker': 7.4.0
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
+  /@commercetools-test-data/core@4.4.0:
+    resolution: {integrity: sha512-TivhKE1KO53txHnHp6Hz/wpYVLg9AYUXgzoOX11eytimA3T4BN5sBCAa5cyatidlgUCxIaGlBxOQnETdiRQeXQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@faker-js/faker': 7.4.0
+      '@types/lodash': 4.14.186
+      lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/utils@4.4.0:
+    resolution: {integrity: sha512-o9jafDjtxtRh8VGbBwgfslvmX12CrR3KJaHOMv00KY9kwquoIBk4ppm6srLxe6XkM/HJDU911H4IShjE0KOH4Q==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@faker-js/faker': 7.4.0
+    dev: false
+
   /@commercetools/platform-sdk@4.5.0:
     resolution: {integrity: sha512-WbvK/FxbYp5FMK7oRdXrMBxX1vGmpZHws9MG/l2g2q7qwGBdqSUxc0hPODJBISNh1LGkzW95MJAcC1ihV0ys7g==}
     engines: {node: '>=14'}
@@ -2695,6 +2750,11 @@ packages:
   /@eslint/js@8.41.0:
     resolution: {integrity: sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@faker-js/faker@7.4.0:
+    resolution: {integrity: sha512-xDd3Tvkt2jgkx1LkuwwxpNBy/Oe+LkZBTwkgEFTiWpVSZgQ5sc/LenbHKRHbFl0dq/KFeeq/szyyPtpJRKY0fg==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
   /@faker-js/faker@8.0.0:
