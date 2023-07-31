@@ -1,3 +1,4 @@
+import { Reference } from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TProductSelectionSetting } from './types';
 
@@ -5,7 +6,9 @@ import type { TProductSelectionSetting } from './types';
 
 const generator = Generator<TProductSelectionSetting>({
   fields: {
-    productSelection: //TODO,
+    productSelection: fake(() =>
+      Reference.random().typeId('product-selection')
+    ),
     active: fake((f) => f.datatype.boolean()),
   },
 });

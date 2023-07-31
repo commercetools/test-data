@@ -2,7 +2,10 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TProductSelectionSetting } from './types';
+import type {
+  TProductSelectionSetting,
+  TProductSelectionSettingGraphql,
+} from './types';
 import * as ProductSelectionSetting from './index';
 
 describe('builder', () => {
@@ -11,8 +14,11 @@ describe('builder', () => {
       'default',
       ProductSelectionSetting.random(),
       expect.objectContaining({
-        productSelection: expect.any(String),
-        active: expect.any(Number),
+        productSelection: expect.objectContaining({
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
       })
     )
   );
@@ -22,8 +28,11 @@ describe('builder', () => {
       'rest',
       ProductSelectionSetting.random(),
       expect.objectContaining({
-        productSelection: expect.any(String),
-        active: expect.any(Number),
+        productSelection: expect.objectContaining({
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
       })
     )
   );
@@ -35,8 +44,12 @@ describe('builder', () => {
       'graphql',
       ProductSelectionSetting.random(),
       expect.objectContaining({
-        productSelection: expect.any(String),
-        active: expect.any(Number),
+        productSelection: expect.objectContaining({
+          __typename: 'Reference',
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
       })
     )
   );

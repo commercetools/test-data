@@ -14,8 +14,11 @@ describe('builder', () => {
       'default',
       ProductSelectionSettingDraft.random(),
       expect.objectContaining({
-        productSelection: expect.any(String),
-        active: expect.any(Number),
+        productSelection: expect.objectContaining({
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
       })
     )
   );
@@ -28,8 +31,11 @@ describe('builder', () => {
       'rest',
       ProductSelectionSettingDraft.random(),
       expect.objectContaining({
-        productSelection: expect.any(String),
-        active: expect.any(Number),
+        productSelection: expect.objectContaining({
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
       })
     )
   );

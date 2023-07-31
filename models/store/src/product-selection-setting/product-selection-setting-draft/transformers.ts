@@ -6,13 +6,13 @@ const transformers = {
     TProductSelectionSettingDraft,
     TProductSelectionSettingDraft
   >('default', {
-    buildFields: [],
+    buildFields: ['productSelection'],
   }),
   rest: Transformer<
     TProductSelectionSettingDraft,
     TProductSelectionSettingDraft
   >('rest', {
-    buildFields: [],
+    buildFields: ['productSelection'],
   }),
   // ProductSelectionSettingDraft/ProductSelectionSettingInput does not exist in a graphql format
 };

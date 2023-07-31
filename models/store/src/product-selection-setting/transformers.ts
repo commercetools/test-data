@@ -8,20 +8,20 @@ const transformers = {
   default: Transformer<TProductSelectionSetting, TProductSelectionSetting>(
     'default',
     {
-      buildFields: [],
+      buildFields: ['productSelection'],
     }
   ),
   rest: Transformer<TProductSelectionSetting, TProductSelectionSetting>(
     'rest',
     {
-      buildFields: [],
+      buildFields: ['productSelection'],
     }
   ),
   graphql: Transformer<
     TProductSelectionSetting,
     TProductSelectionSettingGraphql
   >('graphql', {
-    buildFields: [],
+    buildFields: ['productSelection'],
   }),
 };
 
