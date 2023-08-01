@@ -45,10 +45,7 @@ describe('with the preset cart `sampleAustralia02`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.australia@example.com",
-        "customerGroup": {
-          "key": "employee",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": [
@@ -161,10 +158,7 @@ describe('with the preset cart `sampleAustralia02`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.australia@example.com",
-        "customerGroup": {
-          "key": "employee",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": undefined,
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": [
@@ -279,11 +273,7 @@ describe('with the preset cart `sampleAustralia02`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.australia@example.com",
-        "customerGroup": {
-          "__typename": "Reference",
-          "key": "employee",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": [

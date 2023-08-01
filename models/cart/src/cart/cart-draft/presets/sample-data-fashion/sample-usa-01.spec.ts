@@ -45,17 +45,14 @@ describe('with the preset cart `sampleUsa01`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.usa@example.com",
-        "customerGroup": {
-          "key": "vip",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "sampleUsa-01-cart",
+        "key": "sample-usa-01-cart",
         "lineItems": [
           {
             "addedAt": undefined,
@@ -174,17 +171,14 @@ describe('with the preset cart `sampleUsa01`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.usa@example.com",
-        "customerGroup": {
-          "key": "vip",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": undefined,
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "sampleUsa-01-cart",
+        "key": "sample-usa-01-cart",
         "lineItems": [
           {
             "addedAt": undefined,
@@ -305,18 +299,14 @@ describe('with the preset cart `sampleUsa01`', () => {
         "customLineItems": undefined,
         "customShipping": undefined,
         "customerEmail": "samplecustomer.usa@example.com",
-        "customerGroup": {
-          "__typename": "Reference",
-          "key": "vip",
-          "typeId": "customer-group",
-        },
+        "customerGroup": undefined,
         "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "sampleUsa-01-cart",
+        "key": "sample-usa-01-cart",
         "lineItems": [
           {
             "addedAt": undefined,
