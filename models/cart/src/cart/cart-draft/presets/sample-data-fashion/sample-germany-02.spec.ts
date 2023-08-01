@@ -54,7 +54,7 @@ describe('with the preset cart `sampleGermany02`', () => {
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "mary-02-cart",
+        "key": "sample-germany-02-cart",
         "lineItems": [
           {
             "addedAt": undefined,
@@ -167,7 +167,7 @@ describe('with the preset cart `sampleGermany02`', () => {
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "mary-02-cart",
+        "key": "sample-germany-02-cart",
         "lineItems": [
           {
             "addedAt": undefined,
@@ -282,7 +282,7 @@ describe('with the preset cart `sampleGermany02`', () => {
         "externalTaxRateForShippingMethod": undefined,
         "inventoryMode": undefined,
         "itemShippingAddresses": undefined,
-        "key": "mary-02-cart",
+        "key": "sample-germany-02-cart",
         "lineItems": [
           {
             "addedAt": undefined,

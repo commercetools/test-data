@@ -11,7 +11,7 @@ describe('with the preset order from cart draft `sampleGermanyCart02`', () => {
     expect(orderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
-          "key": "mary-02-cart",
+          "key": "sample-germany-02-cart",
           "typeId": "cart",
         },
         "custom": undefined,
@@ -33,7 +33,7 @@ describe('with the preset order from cart draft `sampleGermanyCart02`', () => {
       {
         "cart": {
           "__typename": "Reference",
-          "key": "mary-02-cart",
+          "key": "sample-germany-02-cart",
           "typeId": "cart",
         },
         "custom": undefined,

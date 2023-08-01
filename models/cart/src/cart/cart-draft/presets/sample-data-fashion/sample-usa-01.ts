@@ -34,12 +34,9 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
 const sampleUsa01 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
-    .key('sampleUsa-01-cart')
+    .key('sample-usa-01-cart')
     .customerEmail(customer.email)
     .customerId(customerId)
-    .customerGroup(
-      KeyReference.presets.customerGroup().key(customer.customerGroup!.key!)
-    )
     .currency('USD')
     .country('US')
     .origin(origin.Merchant)
