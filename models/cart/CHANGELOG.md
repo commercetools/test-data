@@ -1,5 +1,23 @@
 # @commercetools-test-data/cart
 
+## 5.8.2
+
+### Patch Changes
+
+- [#302](https://github.com/commercetools/test-data/pull/302) [`18fd2d6`](https://github.com/commercetools/test-data/commit/18fd2d6fc097f5b377a7371bbbd30f124df3ab72) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add customer ID to sample fashion data `CartDraft` presets.
+
+- [#307](https://github.com/commercetools/test-data/pull/307) [`5782524`](https://github.com/commercetools/test-data/commit/5782524bd875b012d4755004f873d9415fe4f7ac) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Fix sample fashion data cart presets - remove customer groups and update keys.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.8.2
+  - @commercetools-test-data/commons@5.8.2
+  - @commercetools-test-data/customer@5.8.2
+  - @commercetools-test-data/discount-code@5.8.2
+  - @commercetools-test-data/line-item@5.8.2
+  - @commercetools-test-data/product-variant@5.8.2
+  - @commercetools-test-data/shipping-method@5.8.2
+  - @commercetools-test-data/utils@5.8.2
+
 ## 5.8.1
 
 ### Patch Changes
