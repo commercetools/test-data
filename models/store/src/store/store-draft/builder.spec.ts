@@ -11,14 +11,18 @@ describe('builder', () => {
       'default',
       StoreDraft.random(),
       expect.objectContaining({
-        // key: fake((f) => f.lorem.slug()),
-        // name: fake(() => LocalizedString.random()),
-        // languages: //TODO,
-        // countries: //TODO,
-        // distributionChannels: //TODO,
-        // supplyChannels: //TODO,
-        // productSelections://TODO,
-        // custom: null,
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        languages: expect.any(Array),
+        countries: expect.any(Array),
+        distributionChannels: null,
+        supplyChannels: null,
+        productSelections: null,
+        custom: null,
       })
     )
   );
@@ -28,7 +32,18 @@ describe('builder', () => {
       'rest',
       StoreDraft.random(),
       expect.objectContaining({
-        //TODO
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        languages: expect.any(Array),
+        countries: expect.any(Array),
+        distributionChannels: null,
+        supplyChannels: null,
+        productSelections: null,
+        custom: null,
       })
     )
   );

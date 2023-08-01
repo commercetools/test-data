@@ -3,13 +3,13 @@ import type { TStore, TStoreGraphql } from './types';
 
 const transformers = {
   default: Transformer<TStore, TStore>('default', {
-    buildFields: [],
+    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
   }),
   rest: Transformer<TStore, TStore>('rest', {
-    buildFields: [],
+    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
   }),
   graphql: Transformer<TStore, TStoreGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
   }),
 };
 

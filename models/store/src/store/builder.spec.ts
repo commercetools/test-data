@@ -11,20 +11,18 @@ describe('builder', () => {
       'default',
       Store.random(),
       expect.objectContaining({
-        // id: fake((f) => f.string.uuid()),
-        // version: sequence(),
-        // key: fake((f) => f.lorem.slug()),
-        // name: fake(() => LocalizedString.random()),
-        // languages: //TODO,
-        // countries: //TODO,
-        // distributionChannels: //TODO,
-        // supplyChannels: //TODO,
-        // productSelections://TODO,
-        // custom: null,
-        // createdAt: fake(getOlderDate),
-        // createdBy: fake(() => ClientLogging.random()),
-        // lastModifiedAt: fake(getNewerDate),
-        // lastModifiedBy: fake(() => ClientLogging.random()),
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        languages: expect.any(Array),
+        countries: expect.any(Array),
+        distributionChannels: expect.any(Array),
+        supplyChannels: expect.any(Array),
+        productSelections: [],
+        custom: null,
       })
     )
   );
@@ -34,17 +32,29 @@ describe('builder', () => {
       'rest',
       Store.random(),
       expect.objectContaining({
-        //TODO
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        languages: expect.any(Array),
+        countries: expect.any(Array),
+        distributionChannels: expect.any(Array),
+        supplyChannels: expect.any(Array),
+        productSelections: [],
+        custom: null,
       })
     )
   );
-  it(
-    ...createBuilderSpec<TStore, TStoreGraphql>(
-      'graphql',
-      Store.random(),
-      expect.objectContaining({
-        //TODO
-      })
-    )
-  );
+
+  //   it(
+  //     ...createBuilderSpec<TStore, TStoreGraphql>(
+  //       'graphql',
+  //       Store.random(),
+  //       expect.objectContaining({
+  //         //TODO
+  //       })
+  //     )
+  //   );
 });

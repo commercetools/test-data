@@ -1,10 +1,16 @@
 import {
   ClientLogging,
   LocalizedString,
+  Reference,
 } from '@commercetools-test-data/commons';
-import { Generator, fake, sequence,  } from '@commercetools-test-data/core';
-import type { TStore } from './types';
+import {
+  Generator,
+  fake,
+  oneOf,
+  sequence,
+} from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import type { TStore } from './types';
 
 // https://docs.commercetools.com/api/projects/stores#store
 
@@ -16,11 +22,11 @@ const generator = Generator<TStore>({
     version: sequence(),
     key: fake((f) => f.lorem.slug()),
     name: fake(() => LocalizedString.random()),
-    languages: //TODO,
-    countries: //TODO,
-    distributionChannels: //TODO,
-    supplyChannels: //TODO,
-    productSelections://TODO,
+    languages: [oneOf('en-US', 'de-DE', 'es-ES')],
+    countries: [fake((f) => f.location.countryCode())],
+    distributionChannels: [fake(() => Reference.random().typeId('channel'))],
+    supplyChannels: [fake(() => Reference.random().typeId('channel'))],
+    productSelections: [],
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
