@@ -450,6 +450,30 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/payment:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.19.4
+      '@commercetools-test-data/commons':
+        specifier: 5.8.1
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 5.8.1
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 5.8.1
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^4.0.0
+        version: 4.5.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.0.0
+
   models/product:
     dependencies:
       '@babel/runtime':
@@ -2035,7 +2059,7 @@ packages:
     resolution: {integrity: sha512-HzjQ8+dzdx7dmZy4DQ8KV8aHi/74AjEbBGTFutBmg/pd3dY5/q1sfuOGPTFGEytlQhWoeVXqcK5BwMgIkRkNDQ==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      core-js-pure: 3.25.5
+      core-js-pure: 3.29.0
       regenerator-runtime: 0.13.11
     dev: false
 
@@ -2051,7 +2075,7 @@ packages:
     resolution: {integrity: sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: 0.13.9
+      regenerator-runtime: 0.13.11
     dev: false
 
   /@babel/runtime@7.21.0:
@@ -4330,11 +4354,6 @@ packages:
     resolution: {integrity: sha512-ovcyhs2DEBUIE0MGEKHP4olCUW/XYte3Vroyxuh38rD1wAO4dHohsovUC4eAOuzFxE6b+RXvBU3UZ9o0YhUTkA==}
     dependencies:
       browserslist: 4.21.4
-    dev: false
-
-  /core-js-pure@3.25.5:
-    resolution: {integrity: sha512-oml3M22pHM+igfWHDfdLVq2ShWmjM2V4L+dQEBs0DWVIqEm9WHCwGAlZ6BmyBQGy5sFrJmcx+856D9lVKyGWYg==}
-    requiresBuild: true
     dev: false
 
   /core-js-pure@3.29.0:
@@ -7651,10 +7670,6 @@ packages:
 
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-    dev: false
-
-  /regenerator-runtime@0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
     dev: false
 
   /regenerator-transform@0.15.1:

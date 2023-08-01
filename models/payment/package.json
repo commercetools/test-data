@@ -1,0 +1,28 @@
+{
+  "name": "@commercetools-test-data/payment",
+  "version": "5.8.1",
+  "description": "Data models for commercetools Payment representations",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/payment"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-payment.cjs.js",
+  "module": "dist/commercetools-test-data-payment.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "5.8.1",
+    "@commercetools-test-data/core": "5.8.1",
+    "@commercetools-test-data/utils": "5.8.1",
+    "@commercetools/platform-sdk": "^4.0.0",
+    "@faker-js/faker": "^8.0.0"
+  }
+}
