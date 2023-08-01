@@ -8,14 +8,23 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/cart"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-cart.cjs.js",
   "module": "dist/commercetools-test-data-cart.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
@@ -27,7 +36,7 @@
     "@commercetools-test-data/product-variant": "5.8.2",
     "@commercetools-test-data/shipping-method": "5.8.2",
     "@commercetools-test-data/utils": "5.8.2",
-    "@commercetools/platform-sdk": "^4.0.0",
+    "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }
 }

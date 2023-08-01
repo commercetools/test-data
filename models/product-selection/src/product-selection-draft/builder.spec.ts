@@ -16,6 +16,7 @@ describe('builder', () => {
           en: expect.any(String),
           fr: expect.any(String),
         }),
+        mode: expect.any(String),
         custom: null,
       })
     )
@@ -31,9 +32,20 @@ describe('builder', () => {
           en: expect.any(String),
           fr: expect.any(String),
         }),
+        mode: expect.any(String),
         custom: null,
       })
     )
   );
-  // ProductSelectionDraft/ProductSelectionInput does not exist in a graphql format
+  it.only(
+    ...createBuilderSpec<TProductSelectionDraft, TProductSelectionDraft>(
+      'graphql',
+      ProductSelectionDraft.random(),
+      expect.objectContaining({
+        key: expect.any(String),
+        mode: expect.any(Number),
+        custom: null,
+      })
+    )
+  );
 });
