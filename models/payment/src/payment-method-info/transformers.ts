@@ -12,10 +12,9 @@ const transformers = {
   graphql: Transformer<TPaymentMethodInfo, TPaymentMethodInfoGraphql>(
     'graphql',
     {
-      replaceFields: ({ fields }) => ({
-        ...fields,
+      buildFields: ['name'],
+      addFields: ({ fields }) => ({
         nameAllLocales: LocalizedString.toLocalizedField(fields.name),
-        name: JSON.stringify(fields.name),
         __typename: 'PaymentMethodInfo',
       }),
     }

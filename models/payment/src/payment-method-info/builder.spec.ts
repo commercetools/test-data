@@ -41,7 +41,6 @@ describe('builder', () => {
         __typename: 'PaymentMethodInfo',
         paymentInterface: null,
         method: null,
-        name: expect.any(String),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             locale: expect.any(String),
