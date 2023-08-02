@@ -2,10 +2,18 @@ import { Transformer } from '@commercetools-test-data/core';
 import type {
   TPaymentMethodInfoInput,
   TPaymentMethodInfoInputGraphQL,
-} from './types';
+} from '../types';
 
 const transformers = {
-  // The PaymentMethodInfoInput only exists in the GraphQL API, so we don't need the default and rest transformers.
+  default: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInput>(
+    'default',
+    {
+      buildFields: ['name'],
+    }
+  ),
+  rest: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInput>('rest', {
+    buildFields: ['name'],
+  }),
   graphql: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInputGraphQL>(
     'graphql',
     {
