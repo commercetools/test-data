@@ -1,7 +1,7 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TPaymentMethodInfoDraft,
-  TPaymentMethodInfoInputGraphQL,
+  TPaymentMethodInfoDraftGraphQL,
 } from '../types';
 
 const transformers = {
@@ -14,7 +14,7 @@ const transformers = {
   rest: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>('rest', {
     buildFields: ['name'],
   }),
-  graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoInputGraphQL>(
+  graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraftGraphQL>(
     'graphql',
     {
       buildFields: ['name'],

@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
   TPaymentMethodInfoDraft,
-  TPaymentMethodInfoInputGraphQL,
+  TPaymentMethodInfoDraftGraphQL,
 } from '../types';
 import * as PaymentMethodInfoInput from './index';
 
@@ -39,7 +39,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<
       TPaymentMethodInfoDraft,
-      TPaymentMethodInfoInputGraphQL
+      TPaymentMethodInfoDraftGraphQL
     >(
       'graphql',
       PaymentMethodInfoInput.random(),
