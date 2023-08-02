@@ -9,17 +9,14 @@ const transformers = {
     buildFields: ['createdBy', 'lastModifiedBy', 'name'],
   }),
 
-  // }),
   graphql: Transformer<TProductSelection, TProductSelectionGraphql>('graphql', {
     buildFields: ['createdBy', 'lastModifiedBy'],
-    removeFields: ['name', 'type'],
+    removeFields: ['name'],
     addFields: ({ fields }) => ({
       nameAllLocales: buildField(fields.name, 'graphql', {
         fieldToBuild: 'name',
       }),
-      // add the 'mode' field with the value 'Individual' (to replace the 'type' field)
-      mode: 'Individual',
-      //todo: ProductRefs
+      productRefs: null,
       __typename: 'ProductSelection',
     }),
   }),

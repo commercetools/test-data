@@ -18,14 +18,8 @@ const transformers = {
   graphql: Transformer<TProductSelectionDraft, TProductSelectionDraftGraphql>(
     'graphql',
     {
-      removeFields: ['name', 'type'],
-      addFields: ({ fields }) => ({
-        nameAllLocales: buildField(fields.name, 'graphql', {
-          fieldToBuild: 'name',
-        }),
-        //todo: ProductRefs
-        __typename: 'ProductSelection',
-      }),
+      buildFields: ['name'],
+      addFields: () => ({ __typename: 'CreateProductSelectionDraft' }),
     }
   ),
 };

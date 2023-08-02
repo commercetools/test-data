@@ -33,6 +33,7 @@ const generator = Generator<TCartDiscount>({
       ])
     ),
     cartPredicate: '1=1',
+    stores: null,
     target: null,
     // Faker `min` and `max` bounds are inclusive, we need between 0 and 1
     sortOrder: fake((f) =>

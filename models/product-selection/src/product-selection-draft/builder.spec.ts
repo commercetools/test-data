@@ -1,7 +1,10 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TProductSelectionDraft } from '../types';
+import type {
+  TProductSelectionDraft,
+  TProductSelectionDraftGraphql,
+} from '../types';
 import * as ProductSelectionDraft from './index';
 
 describe('builder', () => {
@@ -37,14 +40,31 @@ describe('builder', () => {
       })
     )
   );
-  it.only(
-    ...createBuilderSpec<TProductSelectionDraft, TProductSelectionDraft>(
+  it(
+    ...createBuilderSpec<TProductSelectionDraft, TProductSelectionDraftGraphql>(
       'graphql',
       ProductSelectionDraft.random(),
       expect.objectContaining({
+        __typename: 'CreateProductSelectionDraft',
         key: expect.any(String),
-        mode: expect.any(Number),
-        custom: null,
+        mode: expect.any(String),
+        name: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: expect.any(String),
+          }),
+        ]),
       })
     )
   );

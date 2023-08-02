@@ -75,7 +75,7 @@ describe('builder', () => {
           }),
         ]),
         productCount: expect.any(Number),
-        //TODO: productRefs
+        productRefs: null,
         mode: 'Individual',
         custom: null,
         createdAt: expect.any(String),
