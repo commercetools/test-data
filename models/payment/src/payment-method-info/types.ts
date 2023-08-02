@@ -9,15 +9,15 @@ export type TPaymentMethodInfoGraphql = TPaymentMethodInfo & {
   __typename: 'PaymentMethodInfo';
 };
 
-export type TPaymentMethodInfoInput = PaymentMethodInfo;
+export type TPaymentMethodInfoDraft = PaymentMethodInfo;
 
-export type TPaymentMethodInfoInputGraphQL = TPaymentMethodInfoInput & {
+export type TPaymentMethodInfoInputGraphQL = TPaymentMethodInfoDraft & {
   __typename: 'PaymentMethodInfoInput';
 };
 
 export type TPaymentMethodInfoBuilder = TBuilder<TPaymentMethodInfo>;
 export type TCreatePaymentMethodInfoBuilder = () => TPaymentMethodInfoBuilder;
 
-export type TPaymentMethodInfoInputBuilder = TBuilder<TPaymentMethodInfoInput>;
-export type TCreatePaymentMethodInfoInputBuilder =
-  () => TPaymentMethodInfoInputBuilder;
+export type TPaymentMethodInfoDraftBuilder = TBuilder<TPaymentMethodInfoDraft>;
+export type TCreatePaymentMethodInfoDraftBuilder =
+  () => TPaymentMethodInfoDraftBuilder;

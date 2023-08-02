@@ -1,20 +1,20 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type {
-  TPaymentMethodInfoInput,
+  TPaymentMethodInfoDraft,
   TPaymentMethodInfoInputGraphQL,
 } from '../types';
 
 const transformers = {
-  default: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInput>(
+  default: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>(
     'default',
     {
       buildFields: ['name'],
     }
   ),
-  rest: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInput>('rest', {
+  rest: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>('rest', {
     buildFields: ['name'],
   }),
-  graphql: Transformer<TPaymentMethodInfoInput, TPaymentMethodInfoInputGraphQL>(
+  graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoInputGraphQL>(
     'graphql',
     {
       buildFields: ['name'],

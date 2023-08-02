@@ -1,13 +1,13 @@
 import { Builder } from '@commercetools-test-data/core';
 import type {
-  TPaymentMethodInfoInput,
-  TCreatePaymentMethodInfoInputBuilder,
+  TPaymentMethodInfoDraft,
+  TCreatePaymentMethodInfoDraftBuilder,
 } from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
-const Model: TCreatePaymentMethodInfoInputBuilder = () =>
-  Builder<TPaymentMethodInfoInput>({
+const Model: TCreatePaymentMethodInfoDraftBuilder = () =>
+  Builder<TPaymentMethodInfoDraft>({
     generator,
     transformers,
   });

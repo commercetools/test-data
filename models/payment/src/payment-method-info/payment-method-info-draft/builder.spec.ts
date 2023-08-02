@@ -2,14 +2,14 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
-  TPaymentMethodInfoInput,
+  TPaymentMethodInfoDraft,
   TPaymentMethodInfoInputGraphQL,
 } from '../types';
 import * as PaymentMethodInfoInput from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TPaymentMethodInfoInput, TPaymentMethodInfoInput>(
+    ...createBuilderSpec<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>(
       'default',
       PaymentMethodInfoInput.random(),
       expect.objectContaining({
@@ -23,7 +23,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TPaymentMethodInfoInput, TPaymentMethodInfoInput>(
+    ...createBuilderSpec<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>(
       'rest',
       PaymentMethodInfoInput.random(),
       expect.objectContaining({
@@ -38,7 +38,7 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TPaymentMethodInfoInput,
+      TPaymentMethodInfoDraft,
       TPaymentMethodInfoInputGraphQL
     >(
       'graphql',
