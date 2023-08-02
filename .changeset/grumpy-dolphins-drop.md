@@ -1,5 +1,5 @@
 ---
-'@commercetools-test-data/payment': patch
+'@commercetools-test-data/payment': minor
 ---
 
-Create Payment package & add PaymentMethodInfo model'
+Create Payment package & add PaymentMethodInfo model
