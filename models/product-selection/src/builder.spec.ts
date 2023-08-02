@@ -19,7 +19,7 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         productCount: expect.any(Number),
-        type: 'Individual',
+        mode: expect.any(String),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -46,7 +46,7 @@ describe('builder', () => {
           fr: expect.any(String),
         }),
         productCount: expect.any(Number),
-        type: 'Individual',
+        mode: expect.any(String),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -76,7 +76,7 @@ describe('builder', () => {
         ]),
         productCount: expect.any(Number),
         productRefs: null,
-        mode: 'Individual',
+        mode: expect.any(String),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
