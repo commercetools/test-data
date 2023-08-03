@@ -1,4 +1,4 @@
-import { Transformer } from '@commercetools-test-data/core';
+import { Transformer, buildField } from '@commercetools-test-data/core';
 import type { TProductSelection, TProductSelectionGraphql } from './types';
 
 const transformers = {
@@ -8,10 +8,15 @@ const transformers = {
   rest: Transformer<TProductSelection, TProductSelection>('rest', {
     buildFields: ['createdBy', 'lastModifiedBy', 'name'],
   }),
-  // graphql scaffolding only
+
   graphql: Transformer<TProductSelection, TProductSelectionGraphql>('graphql', {
-    buildFields: ['createdBy', 'lastModifiedBy', 'name'],
-    addFields: () => ({
+    buildFields: ['createdBy', 'lastModifiedBy'],
+    removeFields: ['name'],
+    addFields: ({ fields }) => ({
+      nameAllLocales: buildField(fields.name, 'graphql', {
+        fieldToBuild: 'name',
+      }),
+      productRefs: null,
       __typename: 'ProductSelection',
     }),
   }),

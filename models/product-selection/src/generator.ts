@@ -2,7 +2,12 @@ import {
   ClientLogging,
   LocalizedString,
 } from '@commercetools-test-data/commons';
-import { Generator, fake, sequence } from '@commercetools-test-data/core';
+import {
+  Generator,
+  fake,
+  oneOf,
+  sequence,
+} from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TProductSelection } from './types';
 
@@ -17,7 +22,7 @@ const generator = Generator<TProductSelection>({
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
     productCount: fake((f) => f.number.int()),
-    type: 'Individual',
+    mode: oneOf('Individual', 'IndividualExclusion'),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

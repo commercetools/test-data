@@ -14,11 +14,12 @@ const transformers = {
   rest: Transformer<TProductSelectionDraft, TProductSelectionDraft>('rest', {
     buildFields: ['name'],
   }),
-  // graphql scaffolding only
+
   graphql: Transformer<TProductSelectionDraft, TProductSelectionDraftGraphql>(
     'graphql',
     {
-      buildFields: [],
+      buildFields: ['name'],
+      addFields: () => ({ __typename: 'CreateProductSelectionDraft' }),
     }
   ),
 };

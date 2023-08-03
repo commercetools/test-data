@@ -16,6 +16,7 @@ const generator = Generator<TCustomLineItem>({
     state: [],
     taxCategory: null,
     taxRate: null,
+    perMethodTaxRate: [],
     discountedPricePerQuantity: [],
     shippingDetails: null,
     priceMode: oneOf('Standard', 'External'),
