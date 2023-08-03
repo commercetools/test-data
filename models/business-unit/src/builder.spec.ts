@@ -1,14 +1,14 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCompany } from './types';
-import * as Company from './index';
+import { TBusinessUnit } from './types';
+import * as BusinessUnit from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TCompany, TCompany>(
+    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
       'default',
-      Company.random(),
+      BusinessUnit.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -33,16 +33,16 @@ describe('builder', () => {
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         storeMode: 'Explicit',
-        unitType: 'Company',
+        unitType: 'BusinessUnit',
         associateMode: 'Explicit',
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TCompany, TCompany>(
+    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
       'rest',
-      Company.random(),
+      BusinessUnit.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -67,7 +67,7 @@ describe('builder', () => {
           customer: expect.objectContaining({ typeId: 'customer' }),
         }),
         storeMode: 'Explicit',
-        unitType: 'Company',
+        unitType: 'BusinessUnit',
         associateMode: 'Explicit',
       })
     )
