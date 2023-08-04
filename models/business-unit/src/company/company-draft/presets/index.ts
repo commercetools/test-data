@@ -1,3 +1,5 @@
-const presets = {};
+// import company from './company';
 
-export default presets;
+// const presets = { company };
+
+// export default presets;

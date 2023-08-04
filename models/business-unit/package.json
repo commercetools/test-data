@@ -21,13 +21,8 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "5.8.2",
     "@commercetools-test-data/core": "5.8.2",
-    "@commercetools-test-data/customer": "5.8.2",
-    "@commercetools-test-data/discount-code": "5.8.2",
-    "@commercetools-test-data/line-item": "5.8.2",
-    "@commercetools-test-data/product-variant": "5.8.2",
-    "@commercetools-test-data/shipping-method": "5.8.2",
     "@commercetools-test-data/utils": "5.8.2",
-    "@commercetools/platform-sdk": "^4.0.0",
+    "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }
 }

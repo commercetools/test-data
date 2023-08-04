@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCompany } from './types';
+import type { TCompany } from './types';
 import * as Company from './index';
 
 describe('builder', () => {
@@ -25,15 +25,9 @@ describe('builder', () => {
         associates: [],
         topLevelUnit: null,
         createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
         storeMode: 'Explicit',
-        unitType: 'Company',
+        unitType: 'BusinessUnit',
         associateMode: 'Explicit',
       })
     )
@@ -59,17 +53,12 @@ describe('builder', () => {
         associates: [],
         topLevelUnit: null,
         createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
         storeMode: 'Explicit',
-        unitType: 'Company',
+        unitType: 'BusinessUnit',
         associateMode: 'Explicit',
       })
     )
   );
+  //CompanyGraphql is not supported at this time
 });

@@ -7,20 +7,21 @@ import type { TBusinessUnitDraft } from '../types';
 
 const generator = Generator<TBusinessUnitDraft>({
   fields: {
-    // Business unit fields
     key: fake((f) => f.lorem.slug(2)),
     status: 'Active',
-    name: fake((f) => f.lorem.words(2)),
-    addresses: fake(() => [AddressDraft.random()]),
-    associates: [],
-    // TODO: where should topLevelUnit be??
-    // topLevelUnit: null,
-
-    // BusinessUnit fields
+    stores: [],
     storeMode: 'Explicit',
-    unitType: 'BusinessUnit',
-    // TODO: why does it not recognize associateMode in the SDK type?
-    // associateMode: 'Explicit'
+    unitType: 'Company',
+    name: fake((f) => f.lorem.words(2)),
+    contactEmail: fake((f) => f.internet.email()),
+    associateMode: 'Explicit',
+    associates: null,
+    addresses: fake(() => [AddressDraft.random()]),
+    shippingAddresses: [],
+    defaultShippingAddress: null,
+    billingAddresses: [],
+    defaultBillingAddress: null,
+    custom: null,
   },
 });
 

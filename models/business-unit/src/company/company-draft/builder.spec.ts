@@ -29,5 +29,5 @@ describe('builder', () => {
       })
     )
   );
-  // GraphQL transformer is not implemented yet
+  // CompanyDraftGraphql is not supported at this time.
 });
