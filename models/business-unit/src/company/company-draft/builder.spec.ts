@@ -12,8 +12,8 @@ describe('builder', () => {
       CompanyDraft.random(),
       expect.objectContaining({
         unitType: 'Company',
-        key: expect.any(String),
-        name: expect.any(String),
+        key: null,
+        name: null,
       })
     )
   );
@@ -24,8 +24,8 @@ describe('builder', () => {
       CompanyDraft.random(),
       expect.objectContaining({
         unitType: 'Company',
-        key: expect.any(String),
-        name: expect.any(String),
+        key: null,
+        name: null,
       })
     )
   );
