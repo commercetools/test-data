@@ -4,17 +4,18 @@ import type {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TBusinessUnit = BusinessUnit;
+//BusinessUnitDraft
 export type TBusinessUnitDraft = BusinessUnitDraft;
+export type TBusinessUnitDraftBuilder = TBuilder<TBusinessUnitDraft>;
+export type TCreateBusinessUnitDraftBuilder = () => TBusinessUnitDraftBuilder;
 export type TBusinessUnitDraftGraphql = TBusinessUnitDraft & {
   __typename: 'BusinessUnitDraft';
 };
 
-// export type TBusinessUnitGraphql = TBusinessUnit & {
-//   __typename: 'BusinessUnit';
-// };
-
+//BusinessUnit
+export type TBusinessUnit = BusinessUnit;
 export type TBusinessUnitBuilder = TBuilder<TBusinessUnit>;
-export type TBusinessUnitDraftBuilder = TBuilder<TBusinessUnitDraft>;
 export type TCreateBusinessUnitBuilder = () => TBusinessUnitBuilder;
-export type TCreateBusinessUnitDraftBuilder = () => TBusinessUnitDraftBuilder;
+export type TBusinessUnitGraphql = TBusinessUnit & {
+  __typename: 'BusinessUnit';
+};

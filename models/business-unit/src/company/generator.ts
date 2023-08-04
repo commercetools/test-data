@@ -1,4 +1,4 @@
-import { AddressDraft, ClientLogging } from '@commercetools-test-data/commons';
+import { AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils/src';
 import type { TCompany } from './types';

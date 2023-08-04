@@ -19,7 +19,7 @@
 //     .empty()
 //     .unitType('Company');
 
-// export default company;
+export {};
 
 //company.spec.ts file
 // import { TBusinessUnitDraft } from '../../../../business-unit/types';

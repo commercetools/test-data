@@ -3,10 +3,10 @@ import type { TBusinessUnitDraft, TBusinessUnitDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('default', {
-    buildFields: [],
+    buildFields: ['addresses'],
   }),
   rest: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('rest', {
-    buildFields: [],
+    buildFields: ['addresses'],
   }),
   graphql: Transformer<TBusinessUnitDraft, TBusinessUnitDraftGraphql>(
     'graphql',
