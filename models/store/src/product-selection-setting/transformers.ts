@@ -9,7 +9,8 @@ import type {
 //TODO: correct replaceFields for rest
 //TODO: what are we doing for default??
 //TODO: fix test for default
-// TODO: comment? For consistency, the shape of the default matches that of rest.
+//TODO: comment? For consistency, the shape of the default matches that of rest.
+//TODO: graphql spec...missing properties from productSelection grap
 
 // Default/Rest solely use productSelectionId, while graphql uses both the productSelectionReference and productSelection object.
 const transformers = {
