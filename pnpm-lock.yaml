@@ -659,6 +659,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 5.8.1
         version: 5.8.1
+      '@commercetools-test-data/product-selection':
+        specifier: 5.8.1
+        version: 5.8.1
       '@commercetools-test-data/utils':
         specifier: 5.8.1
         version: 5.8.1
@@ -2426,6 +2429,20 @@ packages:
       '@faker-js/faker': 8.0.0
       '@types/lodash': 4.14.186
       lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/product-selection@5.8.1:
+    resolution: {integrity: sha512-S13S2UPuIlZoH4poxJSy+ABaJ4qV2AdIMInWlBgZC3zJsVfl3XU10mtYPjPohjQPvVD300fe2uckhHkpYELhGQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.21.0
+      '@commercetools-test-data/commons': 5.8.1
+      '@commercetools-test-data/core': 5.8.1
+      '@commercetools-test-data/utils': 5.8.1
+      '@commercetools/platform-sdk': 4.11.0
+      '@faker-js/faker': 8.0.0
+    transitivePeerDependencies:
+      - encoding
     dev: false
 
   /@commercetools-test-data/utils@5.8.1:

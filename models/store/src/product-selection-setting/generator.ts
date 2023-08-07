@@ -1,5 +1,5 @@
 import { Generator, fake } from '@commercetools-test-data/core';
-import { ProductSelection } from '../../../product-selection/src';
+import { ProductSelection } from '@commercetools-test-data/product-selection';
 import type { TProductSelectionSetting } from './types';
 
 // https://docs.commercetools.com/api/projects/stores#productselectionsetting
