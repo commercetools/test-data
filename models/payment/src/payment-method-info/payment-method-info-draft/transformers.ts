@@ -11,9 +11,6 @@ const transformers = {
       buildFields: ['name'],
     }
   ),
-  rest: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>('rest', {
-    buildFields: ['name'],
-  }),
   graphql: Transformer<TPaymentMethodInfoDraft, TPaymentMethodInfoDraftGraphQL>(
     'graphql',
     {

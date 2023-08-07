@@ -23,20 +23,6 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TPaymentMethodInfoDraft, TPaymentMethodInfoDraft>(
-      'rest',
-      PaymentMethodInfoInput.random(),
-      expect.objectContaining({
-        paymentInterface: null,
-        method: null,
-        name: expect.objectContaining({
-          en: expect.any(String),
-        }),
-      })
-    )
-  );
-
-  it(
     ...createBuilderSpec<
       TPaymentMethodInfoDraft,
       TPaymentMethodInfoDraftGraphQL
