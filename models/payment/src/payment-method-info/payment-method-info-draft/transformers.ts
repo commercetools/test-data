@@ -16,9 +16,9 @@ const transformers = {
     {
       buildFields: ['name'],
       addFields: () => ({
-          __typename: 'PaymentMethodInfoInput',
-        })
-      },
+        __typename: 'PaymentMethodInfoInput',
+      }),
+    }
   ),
 };
 
