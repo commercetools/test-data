@@ -2,7 +2,10 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TProductSelectionSettingDraft } from '../types';
+import type {
+  TProductSelectionSettingDraft,
+  TProductSelectionSettingDraftGraphql,
+} from '../types';
 import * as ProductSelectionSettingDraft from './index';
 
 describe('builder', () => {
@@ -39,5 +42,21 @@ describe('builder', () => {
       })
     )
   );
-  // ProductSelectionSettingDraft/ProductSelectionSettingInput does not exist in a graphql format
+  it(
+    ...createBuilderSpec<
+      TProductSelectionSettingDraft,
+      TProductSelectionSettingDraftGraphql
+    >(
+      'graphql',
+      ProductSelectionSettingDraft.random(),
+      expect.objectContaining({
+        productSelection: expect.objectContaining({
+          typeId: 'product-selection',
+          id: expect.any(String),
+        }),
+        active: expect.any(Boolean),
+        __typename: 'ProductSelectionSettingDraft',
+      })
+    )
+  );
 });

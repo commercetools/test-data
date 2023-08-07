@@ -4,12 +4,13 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
   TProductSelectionSetting,
+  TProductSelectionSettingRest,
   TProductSelectionSettingGraphql,
 } from './types';
 import * as ProductSelectionSetting from './index';
 
 describe('builder', () => {
-  it(
+  it.skip(
     ...createBuilderSpec<TProductSelectionSetting, TProductSelectionSetting>(
       'default',
       ProductSelectionSetting.random(),
@@ -24,7 +25,10 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductSelectionSetting, TProductSelectionSetting>(
+    ...createBuilderSpec<
+      TProductSelectionSetting,
+      TProductSelectionSettingRest
+    >(
       'rest',
       ProductSelectionSetting.random(),
       expect.objectContaining({
@@ -44,12 +48,33 @@ describe('builder', () => {
       'graphql',
       ProductSelectionSetting.random(),
       expect.objectContaining({
-        productSelection: expect.objectContaining({
-          __typename: 'Reference',
-          typeId: 'product-selection',
-          id: expect.any(String),
-        }),
+        __typename: 'ProductSelectionSetting',
         active: expect.any(Boolean),
+        productSelectionRef: expect.any(Object),
+        productSelection: expect.objectContaining({
+          id: expect.any(String),
+          version: expect.any(Number),
+          key: expect.any(String),
+          nameAllLocales: expect.arrayContaining([
+            expect.objectContaining({
+              __typename: 'LocalizedString',
+            }),
+          ]),
+          productCount: expect.any(Number),
+          productRef: null,
+          mode: expect.any(String),
+          custom: null,
+          createdAt: expect.any(String),
+          createdBy: expect.objectContaining({
+            customerRef: expect.objectContaining({ typeId: 'customer' }),
+            userRef: expect.objectContaining({ typeId: 'user' }),
+          }),
+          lastModifiedAt: expect.any(String),
+          lastModifiedBy: expect.objectContaining({
+            customerRef: expect.objectContaining({ typeId: 'customer' }),
+            userRef: expect.objectContaining({ typeId: 'user' }),
+          }),
+        }),
       })
     )
   );

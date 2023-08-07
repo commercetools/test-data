@@ -4,20 +4,23 @@ import type {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TProductSelectionSetting = ProductSelectionSetting;
+//ProductSelectionSettingsDraft
 export type TProductSelectionSettingDraft = ProductSelectionSettingDraft;
-
-export type TProductSelectionSettingGraphql = TProductSelectionSetting & {
-  __typename: 'TaxRate';
-};
-// ProductSelectionSettingDraft/ProductSelectionSettingInput does not exist in a graphql format
-
-export type TProductSelectionSettingBuilder =
-  TBuilder<TProductSelectionSetting>;
 export type TProductSelectionSettingDraftBuilder =
   TBuilder<TProductSelectionSettingDraft>;
-
-export type TCreateProductSelectionSettingBuilder =
-  () => TProductSelectionSettingBuilder;
 export type TCreateProductSelectionSettingDraftBuilder =
   () => TProductSelectionSettingDraftBuilder;
+export type TProductSelectionSettingDraftGraphql = TProductSelectionSetting & {
+  __typename: 'ProductSelectionSettingDraft';
+};
+
+//ProductSelectionSettings
+export type TProductSelectionSettingRest = ProductSelectionSetting;
+export type TProductSelectionSetting = ProductSelectionSetting;
+export type TProductSelectionSettingBuilder =
+  TBuilder<TProductSelectionSetting>;
+export type TCreateProductSelectionSettingBuilder =
+  () => TProductSelectionSettingBuilder;
+export type TProductSelectionSettingGraphql = TProductSelectionSetting & {
+  __typename: 'ProductSelectionSetting';
+};

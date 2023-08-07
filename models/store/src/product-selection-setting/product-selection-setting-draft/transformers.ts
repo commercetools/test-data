@@ -1,5 +1,8 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TProductSelectionSettingDraft } from '../types';
+import type {
+  TProductSelectionSettingDraft,
+  TProductSelectionSettingDraftGraphql,
+} from '../types';
 
 const transformers = {
   default: Transformer<
@@ -14,7 +17,14 @@ const transformers = {
   >('rest', {
     buildFields: ['productSelection'],
   }),
-  // ProductSelectionSettingDraft/ProductSelectionSettingInput does not exist in a graphql format
+
+  graphql: Transformer<
+    TProductSelectionSettingDraft,
+    TProductSelectionSettingDraftGraphql
+  >('graphql', {
+    buildFields: ['productSelection'],
+    addFields: () => ({ __typename: 'ProductSelectionSettingDraft' }),
+  }),
 };
 
 export default transformers;
