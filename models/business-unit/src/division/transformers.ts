@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TBusinessUnit, TBusinessUnitGraphql } from './types';
+import type { TBusinessUnit, TBusinessUnitGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TBusinessUnit, TBusinessUnit>('default', {

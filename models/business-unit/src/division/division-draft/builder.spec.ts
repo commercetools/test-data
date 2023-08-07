@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TBusinessUnitDraft } from '../types';
+import type { TBusinessUnitDraft } from '../../types';
 import * as BusinessUnitDraft from './index';
 
 describe('builder', () => {
@@ -15,7 +15,7 @@ describe('builder', () => {
         status: expect.any(String),
         stores: null,
         storeMode: null,
-        unitType: expect.any(String),
+        unitType: 'Division',
         name: expect.any(String),
         contactEmail: expect.any(String),
         associateMode: expect.any(String),
@@ -39,7 +39,7 @@ describe('builder', () => {
         status: expect.any(String),
         stores: null,
         storeMode: null,
-        unitType: expect.any(String),
+        unitType: 'Division',
         name: expect.any(String),
         contactEmail: expect.any(String),
         associateMode: expect.any(String),

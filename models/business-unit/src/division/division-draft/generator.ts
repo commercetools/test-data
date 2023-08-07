@@ -1,6 +1,6 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import type { TBusinessUnitDraft } from '../types';
+import type { TBusinessUnitDraft } from '../../types';
 
 // https://docs.commercetools.com/api/projects/business-units#businessunitdraft
 
@@ -12,7 +12,7 @@ const generator = Generator<TBusinessUnitDraft>({
     status: oneOf('Active', 'Inactive'),
     stores: null,
     storeMode: null,
-    unitType: oneOf('Company', 'Division'),
+    unitType: 'Division',
     name: fake((f) => f.lorem.words(2)),
     contactEmail: fake((f) => f.internet.email()),
     associateMode: oneOf('Explicit', 'ExplicitAndFromParent'),

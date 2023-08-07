@@ -6,7 +6,7 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import type { TBusinessUnit } from './types';
+import type { TBusinessUnit } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -20,7 +20,7 @@ const generator = Generator<TBusinessUnit>({
     status: oneOf('Active', 'Inactive'),
     stores: null,
     storeMode: oneOf('Explicit', 'FromParent'),
-    unitType: oneOf('Company', 'Division'),
+    unitType: 'Division',
     name: fake((f) => f.lorem.words(2)),
     contactEmail: fake((f) => f.internet.email()),
     addresses: fake(() => [Address.random()]),

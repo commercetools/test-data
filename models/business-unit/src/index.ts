@@ -1,5 +1,5 @@
 // Export types
-export * from './company/types';
+export * from './types';
 
 // Export models
 export * as BusinessUnit from '.';

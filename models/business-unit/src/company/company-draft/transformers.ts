@@ -1,12 +1,20 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TCompanyDraft } from '../types';
+import type {
+  TBusinessUnitDraft,
+  TBusinessUnitDraftGraphql,
+} from '../../types';
 
 const transformers = {
-  default: Transformer<TCompanyDraft, TCompanyDraft>('default', {
-    buildFields: [],
+  default: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('default', {
+    buildFields: ['addresses'],
   }),
-  rest: Transformer<TCompanyDraft, TCompanyDraft>('rest', { buildFields: [] }),
-  // CompanyDraftGraphql is not supported at this time.
+  rest: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('rest', {
+    buildFields: ['addresses'],
+  }),
+  graphql: Transformer<TBusinessUnitDraft, TBusinessUnitDraftGraphql>(
+    'graphql',
+    { buildFields: [] }
+  ),
 };
 
 export default transformers;

@@ -1,32 +1,43 @@
-import { AddressDraft } from '@commercetools-test-data/commons';
-import { fake, Generator, sequence } from '@commercetools-test-data/core';
-import { createRelatedDates } from '@commercetools-test-data/utils/src';
-import type { TCompany } from './types';
-
-// https://docs.commercetools.com/api/projects/business-units#company
+import { Address, ClientLogging } from '@commercetools-test-data/commons';
+import {
+  fake,
+  Generator,
+  oneOf,
+  sequence,
+} from '@commercetools-test-data/core';
+import { createRelatedDates } from '@commercetools-test-data/utils';
+import type { TBusinessUnit } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const generator = Generator<TCompany>({
+// https://docs.commercetools.com/api/projects/business-units#businessunit
+
+const generator = Generator<TBusinessUnit>({
   fields: {
-    // BusinessUnit fields
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    status: 'Active',
+    status: oneOf('Active', 'Inactive'),
+    stores: null,
+    storeMode: oneOf('Explicit', 'FromParent'),
+    unitType: 'Company',
     name: fake((f) => f.lorem.words(2)),
-    addresses: fake(() => [AddressDraft.random()]),
+    contactEmail: fake((f) => f.internet.email()),
+    addresses: fake(() => [Address.random()]),
+    shippingAddressIds: null,
+    defaultShippingAddressId: null,
+    billingAddressIds: null,
+    defaultBillingAddressId: null,
+    associateMode: oneOf('Explicit', 'ExplicitFromParent'),
     associates: [],
+    inheritedAssociates: [],
+    parentUnit: null,
     topLevelUnit: null,
+    custom: null,
     createdAt: fake(getOlderDate),
+    createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
-
-    // Company fields
-    // TODO: do we need to add these to Business unit and just default them to a company or division values?
-    //  (Company would be easier as companies can't have parents)
-    storeMode: 'Explicit',
-    unitType: 'BusinessUnit',
-    associateMode: 'Explicit',
+    lastModifiedBy: fake(() => ClientLogging.random()),
   },
 });
 

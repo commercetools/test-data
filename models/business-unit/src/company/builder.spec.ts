@@ -1,64 +1,82 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
+
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TCompany } from './types';
-import * as Company from './index';
+import type { TBusinessUnit } from '../types';
+import * as BusinessUnit from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TCompany, TCompany>(
+    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
       'default',
-      Company.random(),
+      BusinessUnit.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        status: 'Active',
+        status: expect.any(String),
+        stores: null,
+        storeMode: expect.any(String),
+        unitType: 'Company',
         name: expect.any(String),
-        addresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-          }),
-        ]),
-        associates: [],
+        contactEmail: expect.any(String),
+        addresses: expect.any(Array),
+        shippingAddressIds: null,
+        defaultShippingAddressId: null,
+        billingAddressIds: null,
+        defaultBillingAddressId: null,
+        associateMode: expect.any(String),
+        associates: expect.any(Array),
+        inheritedAssociates: expect.any(Array),
+        parentUnit: null,
         topLevelUnit: null,
+        custom: null,
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         lastModifiedAt: expect.any(String),
-        storeMode: 'Explicit',
-        unitType: 'BusinessUnit',
-        associateMode: 'Explicit',
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TCompany, TCompany>(
+    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
       'rest',
-      Company.random(),
+      BusinessUnit.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        status: 'Active',
+        status: expect.any(String),
+        stores: null,
+        storeMode: expect.any(String),
+        unitType: 'Company',
         name: expect.any(String),
-        addresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-          }),
-        ]),
-        associates: [],
+        contactEmail: expect.any(String),
+        addresses: expect.any(Array),
+        shippingAddressIds: null,
+        defaultShippingAddressId: null,
+        billingAddressIds: null,
+        defaultBillingAddressId: null,
+        associateMode: expect.any(String),
+        associates: expect.any(Array),
+        inheritedAssociates: expect.any(Array),
+        parentUnit: null,
         topLevelUnit: null,
+        custom: null,
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
         lastModifiedAt: expect.any(String),
-        storeMode: 'Explicit',
-        unitType: 'BusinessUnit',
-        associateMode: 'Explicit',
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
       })
     )
   );
-  //CompanyGraphql is not supported at this time
 });

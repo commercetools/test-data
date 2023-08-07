@@ -1,16 +1,38 @@
-import { Generator } from '@commercetools-test-data/core';
-import type { TCompanyDraft } from '../types';
+import { AddressDraft } from '@commercetools-test-data/commons';
+import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import type { TBusinessUnitDraft } from '../../types';
 
-// https://docs.commercetools.com/api/projects/business-units#companydraft
+// https://docs.commercetools.com/api/projects/business-units#businessunitdraft
 
-const generator = Generator<TCompanyDraft>({
+//This
+
+const generator = Generator<TBusinessUnitDraft>({
   fields: {
-    // BusinessUnit properties that are required by the sdk due to the relationship between BusinessUnit and Company
-    key: null,
-    name: null,
-    // CompanyDraft
+    key: fake((f) => f.lorem.slug(2)),
+    status: oneOf('Active', 'Inactive'),
+    stores: null,
+    storeMode: null,
     unitType: 'Company',
+    name: fake((f) => f.lorem.words(2)),
+    contactEmail: fake((f) => f.internet.email()),
+    associateMode: oneOf('Explicit', 'ExplicitAndFromParent'),
+    associates: null,
+    addresses: fake(() => [AddressDraft.random()]),
+    shippingAddresses: null,
+    defaultShippingAddress: null,
+    billingAddresses: null,
+    defaultBillingAddress: null,
+    custom: null,
   },
 });
 
 export default generator;
+
+// Created on: 06/29/2023 9:48 AM
+// Name: Mountain Retreats
+// Key: pangolin-mountain-retreats
+// Contact email address; mountain.retreats@pangolin.com
+// Business unit type; Division
+// Top level unit: Pangolin Holdings Group
+// Parent unit; Coastal NC Rentals
+// Stores linked to this business unit
