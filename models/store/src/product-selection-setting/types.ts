@@ -1,4 +1,5 @@
 import type {
+  ProductSelection,
   ProductSelectionSetting,
   ProductSelectionSettingDraft,
 } from '@commercetools/platform-sdk';
@@ -16,11 +17,18 @@ export type TProductSelectionSettingDraftGraphql = TProductSelectionSetting & {
 
 //ProductSelectionSettings
 export type TProductSelectionSettingRest = ProductSelectionSetting;
-export type TProductSelectionSetting = ProductSelectionSetting;
 export type TProductSelectionSettingBuilder =
   TBuilder<TProductSelectionSetting>;
 export type TCreateProductSelectionSettingBuilder =
   () => TProductSelectionSettingBuilder;
 export type TProductSelectionSettingGraphql = TProductSelectionSetting & {
   __typename: 'ProductSelectionSetting';
+};
+
+//Default shape
+export type TProductSelectionSetting = Omit<
+  ProductSelectionSetting,
+  'productSelection'
+> & {
+  productSelection: ProductSelection;
 };

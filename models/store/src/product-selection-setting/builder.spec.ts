@@ -16,8 +16,21 @@ describe('builder', () => {
       ProductSelectionSetting.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
-          typeId: 'product-selection',
           id: expect.any(String),
+          version: expect.any(Number),
+          key: expect.any(String),
+          name: expect.any(Object),
+          productCount: expect.any(Number),
+          mode: expect.any(String),
+          custom: null,
+          createdAt: expect.any(String),
+          createdBy: expect.objectContaining({
+            customer: expect.objectContaining({ typeId: 'customer' }),
+          }),
+          lastModifiedAt: expect.any(String),
+          lastModifiedBy: expect.objectContaining({
+            customer: expect.objectContaining({ typeId: 'customer' }),
+          }),
         }),
         active: expect.any(Boolean),
       })
@@ -56,17 +69,14 @@ describe('builder', () => {
           id: expect.any(String),
           version: expect.any(Number),
           key: expect.any(String),
-          //TODO: should this be nameAllLocales like in the ProductSelection transformer?
-          name: expect.arrayContaining([
+          nameAllLocales: expect.arrayContaining([
             expect.objectContaining({
               __typename: 'LocalizedString',
             }),
           ]),
           productCount: expect.any(Number),
-          //TODO: should productRef be pulled in like in the ProductSelectionGraphQL transformer?
-          // productRef: null,
-          //TODO: where is mode???
-          // mode: expect.any(String),
+          productRefs: null,
+          mode: expect.any(String),
           custom: null,
           createdAt: expect.any(String),
           createdBy: expect.objectContaining({

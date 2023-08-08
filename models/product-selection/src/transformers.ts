@@ -16,7 +16,7 @@ const transformers = {
       nameAllLocales: buildField(fields.name, 'graphql', {
         fieldToBuild: 'name',
       }),
-      productRef: null,
+      productRefs: null,
       __typename: 'ProductSelection',
     }),
   }),

@@ -8,7 +8,7 @@ const transformers = {
   rest: Transformer<TStoreDraft, TStoreDraft>('rest', {
     buildFields: ['name'],
   }),
-  // StoreDraft/StoreInput does not exist in a graphql format
+  // StoreDraft not supported in GraphQL at this time.
 };
 
 export default transformers;

@@ -47,5 +47,5 @@ describe('builder', () => {
       })
     )
   );
-  // StoreDraft/StoreDraftInput does not exist in a graphql format
+  // StoreDraft not supported in GraphQL at this time.
 });
