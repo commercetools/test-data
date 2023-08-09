@@ -12,6 +12,22 @@ $ pnpm add -D @commercetools-test-data/store
 
 # Usage
 
+## ProductSelectionSetting
+
+```ts
+import {
+  ProductSelectionSetting,
+  ProductSelectionSettingDraft,
+  type TProductSelectionSetting,
+  type TProductSelectionSettingDraft,
+} from '@commercetools-test-data/store';
+
+const productSelectionSetting =
+  ProductSelectionSetting.random().build<TProductSelectionSetting>();
+const productSelectionSettingDraft =
+  ProductSelectionSettingDraft.random().build<TProductSelectionSettingDraft>();
+```
+
 ## Store
 
 ```ts
@@ -24,18 +40,4 @@ import {
 
 const store = Store.random().build<TStore>();
 const storeDraft = Store.random().build<TStoreDraft>();
-```
-
-## ProductSelectionSetting
-
-```ts
-import {
-  ProductSelectionSetting,
-  ProductSelectionSettingDraft,
-  type TProductSelectionSetting,
-  type TProductSelectionSettingDraft,
-} from '@commercetools-test-data/store';
-
-const productSelectionSetting = ProductSelectionSetting.random().build<TProductSelectionSetting>();
-const productSelectionSettingDraft = ProductSelectionSettingDraft.random().build<TProductSelectionSettingDraft>();
 ```

@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TStoreDraft } from '../types';
+import type { TStoreDraft, TStoreDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TStoreDraft, TStoreDraft>('default', {
@@ -8,7 +8,11 @@ const transformers = {
   rest: Transformer<TStoreDraft, TStoreDraft>('rest', {
     buildFields: ['name'],
   }),
-  // StoreDraft not supported in GraphQL at this time.
+  //Note that the storeDraft graphql transformer is provided as scaffolding only and may not be complete at this time.
+  graphql: Transformer<TStoreDraft, TStoreDraftGraphql>('rest', {
+    buildFields: ['name'],
+    addFields: () => ({ __typename: 'StoreDraft' }),
+  }),
 };
 
 export default transformers;

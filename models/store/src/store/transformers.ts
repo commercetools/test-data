@@ -1,23 +1,55 @@
+import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TStore, TStoreGraphql } from './types';
 
-//TODO: confirm no storeDraftQL
-//TODO: confirm if nameAllLocales necessary??
-//TODO: confirm if distributionChannels and distributionChannelRef are needed both? just one?
-//TODO: confirm if supplyChannels and supplyChannelRef are needed. both? just one?
-//TODO: review default again for ProductSelectionSetting. why transform it to use ProductSelection to only omit it?
-
 const transformers = {
   default: Transformer<TStore, TStore>('default', {
-    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
+    buildFields: [
+      'name',
+      'createdBy',
+      'distributionChannels',
+      'lastModifiedBy',
+      'supplyChannels',
+    ],
   }),
+
   rest: Transformer<TStore, TStore>('rest', {
-    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
+    buildFields: [
+      'name',
+      'createdBy',
+      'distributionChannels',
+      'lastModifiedBy',
+      'supplyChannels',
+    ],
+    replaceFields: ({ fields }) => ({
+      ...fields,
+      distributionChannels: [
+        Reference.random().id(fields.id).typeId('channel').buildRest(),
+      ],
+      supplyChannels: [
+        Reference.random().id(fields.id).typeId('channel').buildRest(),
+      ],
+    }),
   }),
+
   graphql: Transformer<TStore, TStoreGraphql>('graphql', {
-    buildFields: ['name', 'distributionChannels', 'supplyChannels'],
-    addFields: () => ({ __typename: 'Store' }),
-    //nameAllLocales??
+    buildFields: [
+      'name',
+      'createdBy',
+      'distributionChannels',
+      'lastModifiedBy',
+      'supplyChannels',
+    ],
+    addFields: ({ fields }) => ({
+      nameAllLocales: LocalizedString.toLocalizedField(fields.name),
+      distributionChannelsRef: fields.distributionChannels
+        ? [Reference.random().id(fields.id).typeId('channel').buildGraphql()]
+        : null,
+      supplyChannelsRef: fields.supplyChannels
+        ? [Reference.random().id(fields.id).typeId('channel').buildGraphql()]
+        : null,
+      __typename: 'Store',
+    }),
   }),
 };
 

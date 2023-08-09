@@ -1,7 +1,7 @@
+import { Channel } from '@commercetools-test-data/channel';
 import {
   ClientLogging,
   LocalizedString,
-  Reference,
 } from '@commercetools-test-data/commons';
 import {
   Generator,
@@ -16,6 +16,9 @@ import type { TStore } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
+// For distribution & supply channels, rest takes a channelReference, while graphql takes both a channelReference & the channel objects.
+// The distinction is handled in the transformers.
+
 const generator = Generator<TStore>({
   fields: {
     id: fake((f) => f.string.uuid()),
@@ -24,8 +27,8 @@ const generator = Generator<TStore>({
     name: fake(() => LocalizedString.random()),
     languages: [oneOf('en-US', 'de-DE', 'es-ES')],
     countries: [fake((f) => f.location.countryCode())],
-    distributionChannels: [fake(() => Reference.random().typeId('channel'))],
-    supplyChannels: [fake(() => Reference.random().typeId('channel'))],
+    distributionChannels: [fake(() => Channel.random())],
+    supplyChannels: [fake(() => Channel.random())],
     productSelections: [],
     custom: null,
     createdAt: fake(getOlderDate),

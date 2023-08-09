@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TStoreDraft } from '../types';
+import type { TStoreDraft, TStoreDraftGraphql } from '../types';
 import * as StoreDraft from './index';
 
 describe('builder', () => {
@@ -47,5 +47,14 @@ describe('builder', () => {
       })
     )
   );
-  // StoreDraft not supported in GraphQL at this time.
+  //Note that the storeDraft graphql is provided as scaffolding only and may not be complete at this time.
+  it(
+    ...createBuilderSpec<TStoreDraft, TStoreDraftGraphql>(
+      'graphql',
+      StoreDraft.random(),
+      expect.objectContaining({
+        __typename: 'StoreDraft',
+      })
+    )
+  );
 });
