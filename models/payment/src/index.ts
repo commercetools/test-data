@@ -2,4 +2,4 @@
 export * from './payment-method-info/types';
 
 // Export models
-export * as Payment from './payment-method-info';
+export * as PaymentMethodInfo from './payment-method-info';
