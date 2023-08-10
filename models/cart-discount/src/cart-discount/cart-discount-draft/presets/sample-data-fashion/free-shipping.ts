@@ -11,7 +11,7 @@ const freeShipping = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
     .empty()
     .value(CartDiscountValueRelativeDraft.random().permyriad(10000))
-    .cartPredicate('1 = 1')
+    .cartPredicate('totalPrice >= "100 EUR"')
     .target(CartDiscountShippingCostTargetDraft.random())
     .name(
       LocalizedString.presets

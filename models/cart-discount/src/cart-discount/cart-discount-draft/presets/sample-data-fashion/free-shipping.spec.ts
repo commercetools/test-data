@@ -10,7 +10,7 @@ describe('with the preset `freeShipping`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "cartPredicate": "1 = 1",
+        "cartPredicate": "totalPrice >= "100 EUR"",
         "custom": undefined,
         "description": {
           "de": undefined,
@@ -48,7 +48,7 @@ describe('with the preset `freeShipping`', () => {
 
     expect(cartDiscountDraft).toMatchInlineSnapshot(`
       {
-        "cartPredicate": "1 = 1",
+        "cartPredicate": "totalPrice >= "100 EUR"",
         "custom": undefined,
         "description": [
           {
