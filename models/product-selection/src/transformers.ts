@@ -1,4 +1,5 @@
-import { Transformer, buildField } from '@commercetools-test-data/core';
+import { LocalizedString } from '@commercetools-test-data/commons';
+import { Transformer } from '@commercetools-test-data/core';
 import type { TProductSelection, TProductSelectionGraphql } from './types';
 
 const transformers = {
@@ -13,9 +14,7 @@ const transformers = {
     buildFields: ['createdBy', 'lastModifiedBy'],
     removeFields: ['name'],
     addFields: ({ fields }) => ({
-      nameAllLocales: buildField(fields.name, 'graphql', {
-        fieldToBuild: 'name',
-      }),
+      nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       productRefs: null,
       __typename: 'ProductSelection',
     }),
