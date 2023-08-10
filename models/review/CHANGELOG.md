@@ -1,5 +1,18 @@
 # @commercetools-test-data/review
 
+## 5.9.0
+
+### Minor Changes
+
+- [#304](https://github.com/commercetools/test-data/pull/304) [`819d832`](https://github.com/commercetools/test-data/commit/819d832e01c7cb774cfde8c12d026b20ee4dc9da) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Update sdk dependency. Add graphql transformer to ProductSetting model.
+
+### Patch Changes
+
+- Updated dependencies [[`819d832`](https://github.com/commercetools/test-data/commit/819d832e01c7cb774cfde8c12d026b20ee4dc9da)]:
+  - @commercetools-test-data/commons@5.9.0
+  - @commercetools-test-data/core@5.9.0
+  - @commercetools-test-data/utils@5.9.0
+
 ## 5.8.2
 
 ### Patch Changes

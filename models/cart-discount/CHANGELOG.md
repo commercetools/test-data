@@ -1,5 +1,23 @@
 # @commercetools-test-data/cart-discount
 
+## 5.9.0
+
+### Minor Changes
+
+- [#304](https://github.com/commercetools/test-data/pull/304) [`819d832`](https://github.com/commercetools/test-data/commit/819d832e01c7cb774cfde8c12d026b20ee4dc9da) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Update sdk dependency. Add graphql transformer to ProductSetting model.
+
+### Patch Changes
+
+- [#316](https://github.com/commercetools/test-data/pull/316) [`b57a216`](https://github.com/commercetools/test-data/commit/b57a2163f0017a777a0119f44dae63db05022bf2) Thanks [@jaikamat](https://github.com/jaikamat)! - correct cart discount predicate on free-shipping preset
+
+- Updated dependencies [[`819d832`](https://github.com/commercetools/test-data/commit/819d832e01c7cb774cfde8c12d026b20ee4dc9da)]:
+  - @commercetools-test-data/customer-group@5.9.0
+  - @commercetools-test-data/product-type@5.9.0
+  - @commercetools-test-data/category@5.9.0
+  - @commercetools-test-data/commons@5.9.0
+  - @commercetools-test-data/core@5.9.0
+  - @commercetools-test-data/utils@5.9.0
+
 ## 5.8.2
 
 ### Patch Changes
