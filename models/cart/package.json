@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/cart",
-  "version": "5.8.2",
+  "version": "5.9.0",
   "description": "Data model for commercetools API Cart",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -8,34 +8,25 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/cart"
   },
-  "keywords": [
-    "javascript",
-    "typescript",
-    "test-data"
-  ],
+  "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-cart.cjs.js",
   "module": "dist/commercetools-test-data-cart.esm.js",
-  "files": [
-    "dist",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "5.8.2",
-    "@commercetools-test-data/core": "5.8.2",
-    "@commercetools-test-data/customer": "5.8.2",
-    "@commercetools-test-data/discount-code": "5.8.2",
-    "@commercetools-test-data/line-item": "5.8.2",
-    "@commercetools-test-data/product-variant": "5.8.2",
-    "@commercetools-test-data/shipping-method": "5.8.2",
-    "@commercetools-test-data/utils": "5.8.2",
+    "@commercetools-test-data/commons": "5.9.0",
+    "@commercetools-test-data/core": "5.9.0",
+    "@commercetools-test-data/customer": "5.9.0",
+    "@commercetools-test-data/discount-code": "5.9.0",
+    "@commercetools-test-data/line-item": "5.9.0",
+    "@commercetools-test-data/product-variant": "5.9.0",
+    "@commercetools-test-data/shipping-method": "5.9.0",
+    "@commercetools-test-data/utils": "5.9.0",
     "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }
