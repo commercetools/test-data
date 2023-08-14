@@ -25,3 +25,14 @@ import {
 const paymentInfoMethod =
   PaymentInfoMethod.random().build<TPaymentInfoMethod>();
 ```
+
+## PaymentStatus
+
+```ts
+import {
+  PaymentStatus,
+  type TPaymentStatus,
+} from '@commercetools-test-data/payment';
+
+const paymentStatus = PaymentStatus.random().build<TPaymentStatus>();
+```
