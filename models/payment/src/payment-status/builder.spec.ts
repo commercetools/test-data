@@ -24,7 +24,9 @@ describe('builder', () => {
       expect.objectContaining({
         interfaceCode: expect.any(String),
         interfaceText: expect.any(String),
-        state: null,
+        state: expect.objectContaining({
+          typeId: 'state',
+        }),
       })
     )
   );
