@@ -5,8 +5,8 @@ import { TPaymentStatus } from './types';
 
 const generator = Generator<TPaymentStatus>({
   fields: {
-    interfaceCode: null,
-    interfaceText: null,
+    interfaceCode: fake((f) => f.string.uuid()),
+    interfaceText: fake((f) => f.lorem.word()),
     state: null,
   },
 });

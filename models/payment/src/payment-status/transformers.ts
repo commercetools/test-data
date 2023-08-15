@@ -7,7 +7,11 @@ const transformers = {
     buildFields: ['state'],
   }),
   rest: Transformer<TPaymentStatus, TPaymentStatus>('rest', {
-    buildFields: ['state'],
+    buildFields: [],
+    addFields: ({ fields }) => ({
+      ...fields,
+      state: Reference.random().typeId('state').build(),
+    }),
   }),
   graphql: Transformer<TPaymentStatus, TPaymentStatusGraphql>('graphql', {
     buildFields: ['state'],

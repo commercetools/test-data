@@ -10,8 +10,8 @@ describe('builder', () => {
       'default',
       PaymentStatus.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
         state: null,
       })
     )
@@ -22,8 +22,8 @@ describe('builder', () => {
       'rest',
       PaymentStatus.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
         state: null,
       })
     )
@@ -34,8 +34,8 @@ describe('builder', () => {
       'graphql',
       PaymentStatus.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
         state: null,
         stateRef: expect.objectContaining({
           typeId: 'state',

@@ -10,9 +10,11 @@ describe('builder', () => {
       'default',
       PaymentStatusDraft.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
-        state: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
+        state: expect.objectContaining({
+          typeId: 'state',
+        }),
       })
     )
   );
@@ -22,9 +24,11 @@ describe('builder', () => {
       'rest',
       PaymentStatusDraft.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
-        state: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
+        state: expect.objectContaining({
+          typeId: 'state',
+        }),
       })
     )
   );
@@ -34,9 +38,11 @@ describe('builder', () => {
       'graphql',
       PaymentStatusDraft.random(),
       expect.objectContaining({
-        interfaceCode: null,
-        interfaceText: null,
-        state: null,
+        interfaceCode: expect.any(String),
+        interfaceText: expect.any(String),
+        state: expect.objectContaining({
+          typeId: 'state',
+        }),
         __typename: 'PaymentStatusDraft',
       })
     )
