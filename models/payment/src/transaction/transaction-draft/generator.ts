@@ -15,6 +15,7 @@ const generator = Generator<TTransactionDraft>({
     amount: fake((f) => Money.random()),
     interactionId: null,
     state: oneOf(...Object.values(TRANSACTION_STATE)),
+    custom: null,
   },
 });
 

@@ -3,13 +3,13 @@ import type { TTransaction, TTransactionGraphql } from './types';
 
 const transformers = {
   default: Transformer<TTransaction, TTransaction>('default', {
-    buildFields: ['amount'],
+    buildFields: ['amount', 'custom'],
   }),
   rest: Transformer<TTransaction, TTransaction>('rest', {
-    buildFields: ['amount'],
+    buildFields: ['amount', 'custom'],
   }),
   graphql: Transformer<TTransaction, TTransactionGraphql>('graphql', {
-    buildFields: ['amount'],
+    buildFields: ['amount', 'custom'],
     addFields: () => ({
       __typename: 'Transaction',
     }),

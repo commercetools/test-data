@@ -19,6 +19,7 @@ describe('builder', () => {
         }),
         interactionId: null,
         state: expect.any(String),
+        custom: null,
       })
     )
   );
@@ -37,6 +38,7 @@ describe('builder', () => {
         }),
         interactionId: null,
         state: expect.any(String),
+        custom: null,
       })
     )
   );
@@ -55,6 +57,7 @@ describe('builder', () => {
         }),
         interactionId: null,
         state: expect.any(String),
+        custom: null,
         __typename: 'Transaction',
       })
     )
