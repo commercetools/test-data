@@ -36,3 +36,17 @@ import {
 
 const paymentStatus = PaymentStatus.random().build<TPaymentStatus>();
 ```
+
+## Transaction
+
+```ts
+import type {
+  TTransaction,
+  TTransactionDraft,
+} from '@commercetools-test-data/transaction';
+import * as Transaction from '@commercetools-test-data/transaction';
+
+const transaction = Transaction.random().build<TTransaction>();
+const transactionDraft =
+  Transaction.TransactionDraft.random().build<TTransactionDraft>();
+```
