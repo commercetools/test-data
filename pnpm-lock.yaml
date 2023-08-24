@@ -464,6 +464,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 5.9.0
         version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: 5.9.0
+        version: link:../customer
       '@commercetools-test-data/utils':
         specifier: 5.9.0
         version: link:../../utils
