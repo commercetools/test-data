@@ -41,13 +41,15 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      // convert centPrecisionMoney to Money
+      // customer is a Reference in REST but changes to Customer in GraphQL
+      // customerRef is added
+      const customer: TCustomer = Customer.random().buildGraphql();
       const customerRef: TReference = Reference.random()
         .typeId('customer')
         .buildGraphql();
-      const customer: TCustomer = Customer.random().buildGraphql();
+      // amountPlanned converts centPrecisionMoney to Money
       const amountPlanned: TMoney = Money.random().buildGraphql();
-
+      // TODO: interfaceInteractionsRaw should be added, interfaceInteractions should be removed
       return {
         ...fields,
         customerRef,

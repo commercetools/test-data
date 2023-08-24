@@ -18,7 +18,7 @@ const generator = Generator<TPayment>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.string.uuid()),
-    customer: fake((f) => Reference.random().typeId('customer')),
+    customer: fake((f) => Reference.random().typeId('customer')), // TODO: should use the customerRef preset here
     anonymousId: fake((f) => f.string.uuid()),
     interfaceId: fake((f) => f.string.uuid()),
     amountPlanned: fake((f) => CentPrecisionMoney.random()),
