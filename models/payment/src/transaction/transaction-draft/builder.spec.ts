@@ -15,8 +15,6 @@ describe('builder', () => {
         amount: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
-          type: expect.any(String),
-          fractionDigits: expect.any(Number),
         }),
         interactionId: null,
         state: expect.any(String),
@@ -35,8 +33,6 @@ describe('builder', () => {
         amount: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
-          type: expect.any(String),
-          fractionDigits: expect.any(Number),
         }),
         interactionId: null,
         state: expect.any(String),
@@ -55,8 +51,6 @@ describe('builder', () => {
         amount: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
-          type: expect.any(String),
-          fractionDigits: expect.any(Number),
         }),
         interactionId: null,
         state: expect.any(String),
