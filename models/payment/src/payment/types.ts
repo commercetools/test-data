@@ -1,13 +1,25 @@
-import { Payment, PaymentDraft } from '@commercetools/platform-sdk';
+import { Customer, Payment, PaymentDraft } from '@commercetools/platform-sdk';
 import type { TReferenceGraphql } from '@commercetools-test-data/commons';
-import type { TBuilder } from '@commercetools-test-data/core';
+import type {
+  TBuilder,
+  TPaginatedQueryResult,
+} from '@commercetools-test-data/core';
 
-export type TPayment = Payment;
+// Default
+export type TPayment = Omit<Payment, 'customer'> & {
+  customer: Customer;
+};
 export type TPaymentDraft = PaymentDraft;
 
+// Rest
+export type TPaymentRest = Payment;
+export type TPaymentDraftRest = PaymentDraft;
+
+// Graphql
 export type TPaymentGraphql = TPayment & {
   __typename: 'Payment';
   customerRef: TReferenceGraphql;
+  interfaceInteractionsRaw: TPaginatedQueryResult<null>;
 };
 export type TPaymentDraftGraphql = TPaymentDraft & {
   __typename: 'PaymentDraft';

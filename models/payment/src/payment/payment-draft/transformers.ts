@@ -1,5 +1,9 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TPaymentDraft, TPaymentDraftGraphql } from '../types';
+import type {
+  TPaymentDraft,
+  TPaymentDraftGraphql,
+  TPaymentDraftRest,
+} from '../types';
 
 const transformers = {
   default: Transformer<TPaymentDraft, TPaymentDraft>('default', {
@@ -12,7 +16,7 @@ const transformers = {
       'custom',
     ],
   }),
-  rest: Transformer<TPaymentDraft, TPaymentDraft>('rest', {
+  rest: Transformer<TPaymentDraft, TPaymentDraftRest>('rest', {
     buildFields: [
       'customer',
       'amountPlanned',
