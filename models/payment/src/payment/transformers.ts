@@ -1,9 +1,12 @@
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  Reference,
+  TReference,
+  TReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import {
   Transformer,
   toGraphqlPaginatedQueryResult,
 } from '@commercetools-test-data/core';
-import { Customer, TCustomer } from '@commercetools-test-data/customer';
 import type { TPayment, TPaymentGraphql, TPaymentRest } from './types';
 
 const transformers = {
@@ -28,6 +31,16 @@ const transformers = {
       'interfaceInteractions',
       'custom',
     ],
+    replaceFields: ({ fields }) => {
+      const customer = Reference.presets.customerReference
+        .customerReference()
+        .id(fields.customer.id)
+        .build<TReference<'customer'>>();
+      return {
+        ...fields,
+        customer,
+      };
+    },
   }),
   graphql: Transformer<TPayment, TPaymentGraphql>('graphql', {
     buildFields: [
@@ -39,9 +52,9 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      const customer: TCustomer = Customer.random().buildGraphql();
       const customerRef: TReferenceGraphql = Reference.random()
         .typeId('customer')
+        .id(fields.customer.id)
         .buildGraphql();
       // TODO: This exists in the Graphql API, but not in the REST API
       // We're stubbing it out for now because it's non-nullable
@@ -51,7 +64,6 @@ const transformers = {
       return {
         ...fields,
         customerRef,
-        customer,
         interfaceInteractionsRaw,
         __typename: 'Payment',
       };
