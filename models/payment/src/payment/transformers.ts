@@ -52,8 +52,8 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.random()
-        .typeId('customer')
+      const customerRef: TReferenceGraphql = Reference.presets.customerReference
+        .customerReference()
         .id(fields.customer.id)
         .buildGraphql();
       // TODO: This exists in the Graphql API, but not in the REST API
