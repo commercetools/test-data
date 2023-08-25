@@ -14,6 +14,14 @@ $ pnpm add -D @commercetools-test-data/payment
 
 ## Payment
 
+```ts
+import type { TPayment, TPaymentDraft } from '@commercetools-test-data/payment';
+import * as Payment from '@commercetools-test-data/payment';
+
+const payment = Payment.random().build<TPayment>();
+const paymentDraft = Payment.PaymentDraft.random().build<TPaymentDraft>();
+```
+
 ## PaymentMethodInfo
 
 ```ts
