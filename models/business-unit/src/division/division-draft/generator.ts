@@ -22,7 +22,7 @@ const generator = Generator<TBusinessUnitDraft>({
     billingAddresses: [0],
     defaultBillingAddress: 0,
     custom: null,
-    parentUnit: KeyReference.presets.businessUnit(),
+    parentUnit: KeyReference.random().typeId('business-unit'),
   },
 });
 

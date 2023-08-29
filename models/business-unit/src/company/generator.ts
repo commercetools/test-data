@@ -36,7 +36,7 @@ const generator = Generator<TBusinessUnit>({
     associateMode: associateMode.Explicit,
     associates: [],
     inheritedAssociates: [],
-    topLevelUnit: KeyReference.presets.businessUnit(),
+    topLevelUnit: KeyReference.random().typeId('business-unit'),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
