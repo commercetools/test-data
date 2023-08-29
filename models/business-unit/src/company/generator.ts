@@ -1,4 +1,8 @@
-import { Address, ClientLogging } from '@commercetools-test-data/commons';
+import {
+  Address,
+  ClientLogging,
+  KeyReference,
+} from '@commercetools-test-data/commons';
 import {
   fake,
   Generator,
@@ -6,6 +10,7 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { status, storeMode, unitType, associateMode } from '../constants';
 import type { TBusinessUnit } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -17,22 +22,21 @@ const generator = Generator<TBusinessUnit>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    status: oneOf('Active', 'Inactive'),
-    stores: null,
-    storeMode: oneOf('Explicit', 'FromParent'),
-    unitType: 'Company',
+    status: oneOf(...Object.values(status)),
+    stores: [],
+    storeMode: storeMode.Explicit,
+    unitType: unitType.Company,
     name: fake((f) => f.lorem.words(2)),
     contactEmail: fake((f) => f.internet.email()),
     addresses: fake(() => [Address.random()]),
-    shippingAddressIds: null,
+    shippingAddressIds: [],
     defaultShippingAddressId: null,
-    billingAddressIds: null,
+    billingAddressIds: [],
     defaultBillingAddressId: null,
-    associateMode: oneOf('Explicit', 'ExplicitFromParent'),
+    associateMode: associateMode.Explicit,
     associates: [],
     inheritedAssociates: [],
-    parentUnit: null,
-    topLevelUnit: null,
+    topLevelUnit: KeyReference.presets.businessUnit(),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

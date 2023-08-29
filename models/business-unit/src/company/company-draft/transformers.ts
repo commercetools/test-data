@@ -11,6 +11,7 @@ const transformers = {
   rest: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('rest', {
     buildFields: ['addresses'],
   }),
+  //only scaffolding provided at this time
   graphql: Transformer<TBusinessUnitDraft, TBusinessUnitDraftGraphql>(
     'graphql',
     { buildFields: [] }

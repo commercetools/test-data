@@ -13,19 +13,20 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
-        stores: null,
-        storeMode: null,
+        stores: [],
+        storeMode: 'FromParent',
         unitType: 'Division',
         name: expect.any(String),
         contactEmail: expect.any(String),
-        associateMode: expect.any(String),
-        associates: null,
+        associateMode: 'ExplicitAndFromParent',
+        associates: [],
         addresses: expect.any(Array),
-        shippingAddresses: null,
-        defaultShippingAddress: null,
-        billingAddresses: null,
-        defaultBillingAddress: null,
+        shippingAddresses: expect.any(Array),
+        defaultShippingAddress: 0,
+        billingAddresses: expect.any(Array),
+        defaultBillingAddress: 0,
         custom: null,
+        // parentUnit: Needs to be addressed
       })
     )
   );
@@ -37,20 +38,22 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
-        stores: null,
-        storeMode: null,
+        stores: [],
+        storeMode: 'FromParent',
         unitType: 'Division',
         name: expect.any(String),
         contactEmail: expect.any(String),
-        associateMode: expect.any(String),
-        associates: null,
+        associateMode: 'ExplicitAndFromParent',
+        associates: [],
         addresses: expect.any(Array),
-        shippingAddresses: null,
-        defaultShippingAddress: null,
-        billingAddresses: null,
-        defaultBillingAddress: null,
+        shippingAddresses: expect.any(Array),
+        defaultShippingAddress: 0,
+        billingAddresses: expect.any(Array),
+        defaultBillingAddress: 0,
         custom: null,
+        // parentUnit: Needs to be addressed
       })
     )
   );
+  // test for the graphql shape not added at this time
 });

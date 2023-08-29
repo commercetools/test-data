@@ -13,18 +13,18 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
-        stores: null,
-        storeMode: null,
+        stores: [],
+        storeMode: 'Explicit',
         unitType: 'Company',
         name: expect.any(String),
         contactEmail: expect.any(String),
-        associateMode: expect.any(String),
-        associates: null,
+        associateMode: 'Explicit',
+        associates: [],
         addresses: expect.any(Array),
-        shippingAddresses: null,
-        defaultShippingAddress: null,
-        billingAddresses: null,
-        defaultBillingAddress: null,
+        shippingAddresses: expect.any(Array),
+        defaultShippingAddress: 0,
+        billingAddresses: expect.any(Array),
+        defaultBillingAddress: 0,
         custom: null,
       })
     )
@@ -37,20 +37,22 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
-        stores: null,
-        storeMode: null,
+        stores: [],
+        storeMode: 'Explicit',
         unitType: 'Company',
         name: expect.any(String),
         contactEmail: expect.any(String),
-        associateMode: expect.any(String),
-        associates: null,
+        associateMode: 'Explicit',
+        associates: [],
         addresses: expect.any(Array),
-        shippingAddresses: null,
-        defaultShippingAddress: null,
-        billingAddresses: null,
-        defaultBillingAddress: null,
+        shippingAddresses: expect.any(Array),
+        defaultShippingAddress: 0,
+        billingAddresses: expect.any(Array),
+        defaultBillingAddress: 0,
         custom: null,
       })
     )
   );
+
+  // test for the graphql shape not added at this time
 });

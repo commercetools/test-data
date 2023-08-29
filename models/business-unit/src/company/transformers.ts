@@ -8,6 +8,8 @@ const transformers = {
   rest: Transformer<TBusinessUnit, TBusinessUnit>('rest', {
     buildFields: ['addresses', 'createdBy', 'lastModifiedBy'],
   }),
+
+  //only scaffolding provided at this time
   graphql: Transformer<TBusinessUnit, TBusinessUnitGraphql>('graphql', {
     buildFields: [],
   }),
