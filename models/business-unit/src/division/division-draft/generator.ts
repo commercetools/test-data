@@ -3,7 +3,7 @@ import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { status, storeMode, unitType, associateMode } from '../../constants';
 import type { TBusinessUnitDraft } from '../../types';
 
-// https://docs.commercetools.com/api/projects/business-units#businessunitdraft
+// https://docs.commercetools.com/api/projects/business-units#divisiondraft
 
 const generator = Generator<TBusinessUnitDraft>({
   fields: {

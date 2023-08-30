@@ -15,7 +15,7 @@ import type { TBusinessUnit } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/projects/business-units#businessunit
+// https://docs.commercetools.com/api/projects/business-units#company
 
 const generator = Generator<TBusinessUnit>({
   fields: {

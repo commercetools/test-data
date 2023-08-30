@@ -12,9 +12,9 @@ $ pnpm add -D @commercetools-test-data/business-unit
 
 # Usage
 
-Please take note that in comparison to previously designed packages and documentation, this format demonstrates a subtle divergence. Company and Division are both classified as distinct types of Business Units, and therefore share a common representation within the model.
+Company and Division are classified as distinct types of Business Units, and therefore share a common representation within the package.
 <br/>
-This strategic separation aims to simplify both the test data itself and the underlying distinctions.
+The strategic separation of splitting them into separate models within this package aims to simplify both the test data itself, as well as their underlying distinctions.
 
 ## BusinessUnit - Company & Division
 
