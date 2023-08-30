@@ -1,5 +1,21 @@
 # @commercetools-test-data/payment
 
+## 5.10.0
+
+### Minor Changes
+
+- [#319](https://github.com/commercetools/test-data/pull/319) [`65d90df`](https://github.com/commercetools/test-data/commit/65d90df21604113e53533a7a43422d34516cc916) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add `Transaction` and `TransactionDraft` models.
+
+- [#322](https://github.com/commercetools/test-data/pull/322) [`c19456b`](https://github.com/commercetools/test-data/commit/c19456b5f0df5c48e7dc7b74f70ad0a18668c7a4) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Adds payment sample data presets, empty preset for payment-draft, empty presets for transaction-draft and payment-status-draft.
+
+### Patch Changes
+
+- Updated dependencies [[`c19456b`](https://github.com/commercetools/test-data/commit/c19456b5f0df5c48e7dc7b74f70ad0a18668c7a4), [`9040a90`](https://github.com/commercetools/test-data/commit/9040a9066d7cda96fba1389fd35cd493248fcd94)]:
+  - @commercetools-test-data/commons@5.10.0
+  - @commercetools-test-data/customer@5.10.0
+  - @commercetools-test-data/core@5.10.0
+  - @commercetools-test-data/utils@5.10.0
+
 ## 5.9.0
 
 ### Minor Changes
