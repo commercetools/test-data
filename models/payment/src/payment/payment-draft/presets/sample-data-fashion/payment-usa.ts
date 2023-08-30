@@ -8,9 +8,9 @@ import {
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
 import * as PaymentDraft from '../..';
-import * as PaymentMethodInfo from '../../../../payment-method-info';
+import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
-import { TransactionDraft } from '../../../../transaction';
+import { TransactionDraft, constants } from '../../../../transaction';
 import { TPaymentDraftBuilder } from '../../../types';
 
 const customerUSA = CustomerDraft.presets.sampleDataFashion
@@ -23,7 +23,8 @@ const paymentUSA = (): TPaymentDraftBuilder =>
     .customer(KeyReference.presets.customer().key(customerUSA.key!))
     .amountPlanned(Money.random().centAmount(32348).currencyCode('USD'))
     .paymentMethodInfo(
-      PaymentMethodInfo.random()
+      PaymentMethodInfoDraft.presets
+        .empty()
         .method('Credit Card')
         .name(LocalizedString.presets.empty()['en']('Credit Card'))
     )
@@ -32,16 +33,16 @@ const paymentUSA = (): TPaymentDraftBuilder =>
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(32348).currencyCode('USD'))
-        .state('Pending')
+        .state(constants.TRANSACTION_STATE.PENDING)
         .timestamp('2023-07-01T03:15:00.000Z')
-        .type('Authorization')
+        .type(constants.TRANSACTION_TYPE.AUTHORIZATION)
         .interactionId('123456789'),
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(32348).currencyCode('USD'))
-        .state('Success')
+        .state(constants.TRANSACTION_STATE.SUCCESS)
         .timestamp('2023-07-01T03:17:00.000Z')
-        .type('Charge')
+        .type(constants.TRANSACTION_TYPE.CHARGE)
         .interactionId('345678912'),
     ]);
 

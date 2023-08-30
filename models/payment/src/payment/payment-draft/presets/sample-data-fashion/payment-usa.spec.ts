@@ -20,7 +20,7 @@ it(`should set all fields to specified values`, () => {
         "en": "Credit Card",
         "fr": undefined,
       },
-      "paymentInterface": null,
+      "paymentInterface": undefined,
     }
   `);
   expect(paymentUSADraft.paymentStatus).toMatchInlineSnapshot(`

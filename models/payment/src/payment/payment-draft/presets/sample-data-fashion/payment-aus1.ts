@@ -8,13 +8,13 @@ import {
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
 import * as PaymentDraft from '../..';
-import * as PaymentMethodInfo from '../../../../payment-method-info';
+import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
-import { TransactionDraft } from '../../../../transaction';
+import { TransactionDraft, constants } from '../../../../transaction';
 import { TPaymentDraftBuilder } from '../../../types';
 
 const customerAUS = CustomerDraft.presets.sampleDataFashion
-  .sampleUsa()
+  .sampleAustralia()
   .build<TCustomerDraft>();
 
 const paymentAUS1 = (): TPaymentDraftBuilder =>
@@ -23,7 +23,8 @@ const paymentAUS1 = (): TPaymentDraftBuilder =>
     .customer(KeyReference.presets.customer().key(customerAUS.key!))
     .amountPlanned(Money.random().centAmount(4075).currencyCode('AUD'))
     .paymentMethodInfo(
-      PaymentMethodInfo.random()
+      PaymentMethodInfoDraft.presets
+        .empty()
         .method('Debit Card')
         .name(LocalizedString.presets.empty()['en']('Debit Card'))
     )
@@ -32,9 +33,9 @@ const paymentAUS1 = (): TPaymentDraftBuilder =>
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(4075).currencyCode('AUD'))
-        .state('Pending')
+        .state(constants.TRANSACTION_STATE.PENDING)
         .timestamp('2023-07-01T13:00:00.000Z')
-        .type('Authorization')
+        .type(constants.TRANSACTION_TYPE.AUTHORIZATION)
         .interactionId('147258369'),
     ]);
 

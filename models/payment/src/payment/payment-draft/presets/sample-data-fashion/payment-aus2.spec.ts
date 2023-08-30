@@ -8,7 +8,7 @@ it(`should set all fields to specified values`, () => {
   expect(paymentDraftAUS2.interfaceId).toMatchInlineSnapshot(`undefined`);
   expect(paymentDraftAUS2.customer).toMatchInlineSnapshot(`
     {
-      "key": "12345",
+      "key": "1234",
       "typeId": "customer",
     }
   `);
@@ -20,7 +20,7 @@ it(`should set all fields to specified values`, () => {
         "en": "Gift Card",
         "fr": undefined,
       },
-      "paymentInterface": null,
+      "paymentInterface": undefined,
     }
   `);
   expect(paymentDraftAUS2.paymentStatus).toMatchInlineSnapshot(`
