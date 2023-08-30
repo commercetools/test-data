@@ -1,3 +1,4 @@
+import businessUnit from './business-unit-reference';
 import category from './category-reference';
 import customerGroup from './customer-group-reference';
 import customer from './customer-reference';
@@ -7,6 +8,7 @@ import taxCategory from './tax-category-reference';
 import zone from './zone-reference';
 
 const presets = {
+  businessUnit,
   category,
   customer,
   customerGroup,
