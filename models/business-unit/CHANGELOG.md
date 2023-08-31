@@ -1,5 +1,16 @@
 # @commercetools-test-data/business-unit
 
+## 5.10.1
+
+### Patch Changes
+
+- [#323](https://github.com/commercetools/test-data/pull/323) [`10b7cd1`](https://github.com/commercetools/test-data/commit/10b7cd1b1d0f103f3956f829e08a2abff781c8d2) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Updated BusinessUnit package index
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.10.1
+  - @commercetools-test-data/commons@5.10.1
+  - @commercetools-test-data/utils@5.10.1
+
 ## 5.10.0
 
 ### Minor Changes
