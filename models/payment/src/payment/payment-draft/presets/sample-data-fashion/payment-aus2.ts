@@ -33,16 +33,16 @@ const paymentAUS2 = (): TPaymentDraftBuilder =>
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(4000).currencyCode('AUD'))
-        .state(constants.TRANSACTION_STATE.PENDING)
+        .state(constants.TransactionState.Pending)
         .timestamp('2023-07-01T13:00:00.000Z')
-        .type(constants.TRANSACTION_TYPE.AUTHORIZATION)
+        .type(constants.TransactionType.Authorization)
         .interactionId('741852963'),
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(4000).currencyCode('AUD'))
-        .state(constants.TRANSACTION_STATE.SUCCESS)
+        .state(constants.TransactionState.Success)
         .timestamp('2023-07-01T13:05:00.000Z')
-        .type(constants.TRANSACTION_TYPE.CHARGE)
+        .type(constants.TransactionType.Charge)
         .interactionId('321654987'),
     ]);
 

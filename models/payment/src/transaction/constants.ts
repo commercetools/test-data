@@ -1,14 +1,14 @@
-export const TRANSACTION_TYPE = {
-  AUTHORIZATION: 'Authorization',
-  CANCEL_AUTHORIZATION: 'CancelAuthorization',
-  CHARGE: 'Charge',
-  REFUND: 'Refund',
-  CHARGEBACK: 'Chargeback',
+export const TransactionType = {
+  Authorization: 'Authorization',
+  CancelAuthorization: 'CancelAuthorization',
+  Charge: 'Charge',
+  Refund: 'Refund',
+  Chargeback: 'Chargeback',
 };
 
-export const TRANSACTION_STATE = {
-  INITIAL: 'Initial',
-  PENDING: 'Pending',
-  SUCCESS: 'Success',
-  FAILURE: 'Failure',
+export const TransactionState = {
+  Initial: 'Initial',
+  Pending: 'Pending',
+  Success: 'Success',
+  Failure: 'Failure',
 };

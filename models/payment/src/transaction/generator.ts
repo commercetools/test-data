@@ -1,7 +1,7 @@
 import { CentPrecisionMoney } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TRANSACTION_STATE, TRANSACTION_TYPE } from './constants';
+import { TransactionType, TransactionState } from './constants';
 import { TTransaction } from './types';
 
 const [getOlderDate] = createRelatedDates();
@@ -12,10 +12,10 @@ const generator = Generator<TTransaction>({
   fields: {
     id: fake((f) => f.string.uuid()),
     timestamp: fake(getOlderDate),
-    type: oneOf(...Object.values(TRANSACTION_TYPE)),
+    type: oneOf(...Object.values(TransactionType)),
     amount: fake((f) => CentPrecisionMoney.random()),
     interactionId: null,
-    state: oneOf(...Object.values(TRANSACTION_STATE)),
+    state: oneOf(...Object.values(TransactionState)),
     custom: null,
   },
 });
