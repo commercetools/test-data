@@ -33,16 +33,16 @@ const paymentUSA = (): TPaymentDraftBuilder =>
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(32348).currencyCode('USD'))
-        .state(constants.TRANSACTION_STATE.PENDING)
+        .state(constants.TransactionState.Pending)
         .timestamp('2023-07-01T03:15:00.000Z')
-        .type(constants.TRANSACTION_TYPE.AUTHORIZATION)
+        .type(constants.TransactionType.Authorization)
         .interactionId('123456789'),
       TransactionDraft.presets
         .empty()
         .amount(Money.random().centAmount(32348).currencyCode('USD'))
-        .state(constants.TRANSACTION_STATE.SUCCESS)
+        .state(constants.TransactionState.Success)
         .timestamp('2023-07-01T03:17:00.000Z')
-        .type(constants.TRANSACTION_TYPE.CHARGE)
+        .type(constants.TransactionType.Charge)
         .interactionId('345678912'),
     ]);
 
