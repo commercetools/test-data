@@ -27,7 +27,7 @@
     "@commercetools-test-data/product-variant": "5.10.1",
     "@commercetools-test-data/shipping-method": "5.10.1",
     "@commercetools-test-data/utils": "5.10.1",
-    "@commercetools/platform-sdk": "^4.11.0",
+    "@commercetools/platform-sdk": "^5.0.0",
     "@faker-js/faker": "^8.0.0"
   }
 }

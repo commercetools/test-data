@@ -22,7 +22,7 @@
     "@commercetools-test-data/commons": "5.10.1",
     "@commercetools-test-data/core": "5.10.1",
     "@commercetools-test-data/utils": "5.10.1",
-    "@commercetools/platform-sdk": "^4.11.0",
+    "@commercetools/platform-sdk": "^5.0.0",
     "@faker-js/faker": "^8.0.0"
   }
 }
