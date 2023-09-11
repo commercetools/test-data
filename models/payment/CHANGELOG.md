@@ -1,5 +1,17 @@
 # @commercetools-test-data/payment
 
+## 5.11.0
+
+### Patch Changes
+
+- [#325](https://github.com/commercetools/test-data/pull/325) [`28e4c66`](https://github.com/commercetools/test-data/commit/28e4c665c65845b410bcd9bbf8477a5dbf75b61e) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Updates Transaction constants to camelcase.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.11.0
+  - @commercetools-test-data/commons@5.11.0
+  - @commercetools-test-data/customer@5.11.0
+  - @commercetools-test-data/utils@5.11.0
+
 ## 5.10.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/line-item",
-  "version": "5.10.1",
+  "version": "5.11.0",
   "description": "Data model for commercetools API LineItem",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,12 +19,12 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/channel": "5.10.1",
-    "@commercetools-test-data/commons": "5.10.1",
-    "@commercetools-test-data/core": "5.10.1",
-    "@commercetools-test-data/product-variant": "5.10.1",
-    "@commercetools-test-data/tax-category": "5.10.1",
-    "@commercetools-test-data/utils": "5.10.1",
+    "@commercetools-test-data/channel": "5.11.0",
+    "@commercetools-test-data/commons": "5.11.0",
+    "@commercetools-test-data/core": "5.11.0",
+    "@commercetools-test-data/product-variant": "5.11.0",
+    "@commercetools-test-data/tax-category": "5.11.0",
+    "@commercetools-test-data/utils": "5.11.0",
     "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }
