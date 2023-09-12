@@ -1,5 +1,20 @@
 # @commercetools-test-data/store
 
+## 5.11.0
+
+### Minor Changes
+
+- [#331](https://github.com/commercetools/test-data/pull/331) [`466c09d`](https://github.com/commercetools/test-data/commit/466c09df5e1c34e0665625fa395b2ca9fe7c0f78) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add fashion presets for `Store` model.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.11.0
+  - @commercetools-test-data/channel@5.11.0
+  - @commercetools-test-data/commons@5.11.0
+  - @commercetools-test-data/product-selection@5.11.0
+  - @commercetools-test-data/utils@5.11.0
+
 ## 5.10.1
 
 ### Patch Changes
