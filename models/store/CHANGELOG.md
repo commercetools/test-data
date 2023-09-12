@@ -1,5 +1,18 @@
 # @commercetools-test-data/store
 
+## 5.11.1
+
+### Patch Changes
+
+- [#332](https://github.com/commercetools/test-data/pull/332) [`c033c57`](https://github.com/commercetools/test-data/commit/c033c576b0bb2b33f41902031f312dc43e19bbda) Thanks [@jaikamat](https://github.com/jaikamat)! - fix store draft `name` field type
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.11.1
+  - @commercetools-test-data/channel@5.11.1
+  - @commercetools-test-data/commons@5.11.1
+  - @commercetools-test-data/product-selection@5.11.1
+  - @commercetools-test-data/utils@5.11.1
+
 ## 5.11.0
 
 ### Minor Changes
