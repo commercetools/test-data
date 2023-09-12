@@ -33,12 +33,13 @@ describe('with `store02` preset', () => {
         "distributionChannels": undefined,
         "key": "sample_store_one",
         "languages": undefined,
-        "name": {
-          "de": undefined,
-          "en": undefined,
-          "en-US": "Sample Store One",
-          "fr": undefined,
-        },
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Sample Store One",
+          },
+        ],
         "productSelections": undefined,
         "supplyChannels": undefined,
       }
