@@ -6,7 +6,8 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TStoreDraft = StoreDraft;
 export type TStoreDraftBuilder = TBuilder<TStoreDraft>;
 export type TCreateStoreDraftBuilder = () => TStoreDraftBuilder;
-export type TStoreDraftGraphql = TStore & {
+export type TStoreDraftGraphql = Omit<TStoreDraft, 'name'> & {
+  name: TLocalizedStringGraphql | null;
   __typename: 'StoreDraft';
 };
 //Store
