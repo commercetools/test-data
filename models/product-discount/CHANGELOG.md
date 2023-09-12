@@ -1,5 +1,14 @@
 # @commercetools-test-data/product-discount
 
+## 5.11.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.11.1
+  - @commercetools-test-data/commons@5.11.1
+  - @commercetools-test-data/utils@5.11.1
+
 ## 5.11.0
 
 ### Patch Changes
