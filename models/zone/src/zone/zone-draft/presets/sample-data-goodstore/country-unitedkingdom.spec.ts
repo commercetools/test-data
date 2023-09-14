@@ -3,7 +3,8 @@ import countryUnitedKingdom from './country-unitedkingdom';
 
 describe('with the preset `country united kingdom`', () => {
   it('should return a zone with name `United Kingdom`', () => {
-    const zone = countryUnitedKingdom().build<TZoneDraft>();
+    const zone = 
+      countryUnitedKingdom().build<TZoneDraft>();
 
     expect(zone).toMatchInlineSnapshot(`
       {
