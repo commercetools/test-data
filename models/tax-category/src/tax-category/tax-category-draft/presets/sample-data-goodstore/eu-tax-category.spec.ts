@@ -6,8 +6,7 @@ import type {
   
   describe('with a tax rate preset `eu tax category`', () => {
     it('should return a tax category with name `EU Tax Category` and 2 tax rates', () => {
-      const taxCategory = 
-        EUTaxCategory().build<TTaxCategoryDraft>();
+      const taxCategory = EUTaxCategory().build<TTaxCategoryDraft>();
   
       expect(taxCategory).toMatchInlineSnapshot(`
         {
@@ -37,8 +36,7 @@ import type {
     });
   
     it('should return a tax category with name `EU Tax Category` when built for graphql', () => {
-      const taxCategoryGraphql =
-        EUTaxCategory().buildGraphql<TTaxCategoryDraftGraphql>();
+      const taxCategoryGraphql = EUTaxCategory().buildGraphql<TTaxCategoryDraftGraphql>();
       expect(taxCategoryGraphql).toMatchInlineSnapshot(`
       {
         "description": "",
