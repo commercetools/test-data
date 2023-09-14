@@ -48,6 +48,6 @@ const sampleAustralia01 = (customerId?: string): TCartDraftBuilder =>
     .shippingMethod(
       KeyReference.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReference.random().typeId('store').key(store.key!));
+    .store(KeyReference.presets.store().key(store.key!));
 
 export default sampleAustralia01;
