@@ -1,5 +1,5 @@
 import countryGermany from './country-germany';
-import countryGreatBritain from './country-greatbritain';
+import countryGreatBritain from './country-unitedkingdom';
 
 const presets = {
   countryGermany,

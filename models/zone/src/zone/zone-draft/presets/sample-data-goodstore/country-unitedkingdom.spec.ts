@@ -1,14 +1,15 @@
 import { TZoneDraft, TZoneDraftGraphql } from '../../../types';
-import countryGreatBritain from './country-greatbritain';
+import countryUnitedKingdom from './country-unitedkingdom';
+import countryGreatBritain from './country-unitedkingdom';
 
-describe('with the preset `country great britain`', () => {
+describe('with the preset `country united kingdom`', () => {
   it('should return a zone with name `United Kingdom`', () => {
-    const zone = countryGreatBritain().build<TZoneDraft>();
+    const zone = countryUnitedKingdom().build<TZoneDraft>();
 
     expect(zone).toMatchInlineSnapshot(`
       {
         "description": undefined,
-        "key": "greatbritain",
+        "key": "unitedkingdom",
         "locations": [
           {
             "country": "GB",
@@ -20,12 +21,12 @@ describe('with the preset `country great britain`', () => {
   });
 
   it('should return a zone with name `United Kingdom` when built for GraphQL', () => {
-    const zoneGraphql = countryGreatBritain().buildGraphql<TZoneDraftGraphql>();
+    const zoneGraphql = countryUnitedKingdom().buildGraphql<TZoneDraftGraphql>();
 
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
         "description": undefined,
-        "key": "greatbritain",
+        "key": "unitedkingdom",
         "locations": [
           {
             "country": "GB",
