@@ -7,7 +7,7 @@ const presets = {
   changeHistoryData,
   empty,
   sampleDataFashion,
-  sampleDataGoodStore
+  sampleDataGoodStore,
 };
 
 export default presets;

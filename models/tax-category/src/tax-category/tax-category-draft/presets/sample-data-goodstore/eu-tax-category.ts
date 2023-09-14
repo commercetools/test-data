@@ -19,5 +19,5 @@ const EUTaxCategory = () =>
         .amount(0.1)
         .includedInPrice(false)
         .country('GB'),
-    ])
+    ]);
 export default EUTaxCategory;
