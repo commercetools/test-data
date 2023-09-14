@@ -209,6 +209,9 @@ importers:
       '@commercetools-test-data/shipping-method':
         specifier: 5.11.1
         version: link:../shipping-method
+      '@commercetools-test-data/store':
+        specifier: 5.11.1
+        version: link:../store
       '@commercetools-test-data/utils':
         specifier: 5.11.1
         version: link:../../utils

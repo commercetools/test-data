@@ -12,6 +12,7 @@ import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
+import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';
@@ -26,6 +27,9 @@ const necklaceProductVariant = ProductVariantDraft.presets.sampleDataFashion
 const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .europe()
   .build<TShippingMethodDraft>();
+const store = StoreDraft.presets.sampleDataFashion
+  .store01()
+  .build<TStoreDraft>();
 
 const sampleGermany01 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
@@ -43,6 +47,7 @@ const sampleGermany01 = (customerId?: string): TCartDraftBuilder =>
     ])
     .shippingMethod(
       KeyReference.presets.shippingMethod().key(shippingMethod.key!)
-    );
+    )
+    .store(KeyReference.random().typeId('store').key(store.key!));
 
 export default sampleGermany01;
