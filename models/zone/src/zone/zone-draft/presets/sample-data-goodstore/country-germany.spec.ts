@@ -8,7 +8,7 @@ describe('with the preset `country germany`', () => {
     expect(zone).toMatchInlineSnapshot(`
       {
         "description": undefined,
-        "key": "germany",
+        "key": "europe",
         "locations": [
           {
             "country": "DE",
@@ -25,7 +25,7 @@ describe('with the preset `country germany`', () => {
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
         "description": undefined,
-        "key": "germany",
+        "key": "europe",
         "locations": [
           {
             "country": "DE",
