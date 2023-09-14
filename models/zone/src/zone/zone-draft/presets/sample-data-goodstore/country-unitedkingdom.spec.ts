@@ -20,7 +20,8 @@ describe('with the preset `country united kingdom`', () => {
   });
 
   it('should return a zone with name `United Kingdom` when built for GraphQL', () => {
-    const zoneGraphql = countryUnitedKingdom().buildGraphql<TZoneDraftGraphql>();
+    const zoneGraphql = 
+      countryUnitedKingdom().buildGraphql<TZoneDraftGraphql>();
 
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
