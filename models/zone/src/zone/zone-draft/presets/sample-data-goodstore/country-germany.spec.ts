@@ -1,5 +1,5 @@
 import { TZoneDraft, TZoneDraftGraphql } from '../../../types';
-import countryGermany from './country-germany;
+import countryGermany from './country-germany';
 
 describe('with the preset `country germany`', () => {
   it('should return a zone with name `Europe`', () => {
