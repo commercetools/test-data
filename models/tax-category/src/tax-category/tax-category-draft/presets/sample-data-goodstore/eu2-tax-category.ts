@@ -6,7 +6,6 @@ const EU2TaxCategory = () =>
     .empty()
     .key('EU2')
     .name('EU2')
-    .description('')
     .rates([
       TaxRateDraft.presets
         .empty()

@@ -6,7 +6,6 @@ const EUTaxCategory = () =>
     .empty()
     .key('EU')
     .name('EU')
-    .description('')
     .rates([
       TaxRateDraft.presets
         .empty()
