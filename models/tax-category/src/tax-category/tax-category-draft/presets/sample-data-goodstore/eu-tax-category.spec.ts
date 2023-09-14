@@ -6,7 +6,8 @@ import type {
   
   describe('with a tax rate preset `eu tax category`', () => {
     it('should return a tax category with name `EU Tax Category` and 2 tax rates', () => {
-      const taxCategory = EUTaxCategory().build<TTaxCategoryDraft>();
+      const taxCategory = 
+        EUTaxCategory().build<TTaxCategoryDraft>();
   
       expect(taxCategory).toMatchInlineSnapshot(`
         {
