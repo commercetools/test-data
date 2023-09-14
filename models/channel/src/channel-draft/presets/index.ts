@@ -1,5 +1,6 @@
 import empty from './empty';
 import sampleDataFashion from './sample-data-fashion';
+import sampleDataGoodStore from './sample-data-goodstore';
 import withGeoLocationOnly from './with-geolocation-only';
 import withInventorySupplyAndProductDistributionRoles from './with-inventory-supply-and-product-distribution-roles';
 import withInventorySupplyAndProductDistributionRolesNoAddress from './with-inventory-supply-and-product-distribution-roles-no-address';
@@ -16,6 +17,7 @@ const presets = {
   withInventorySupplyAndProductDistributionRoles,
   withInventorySupplyAndProductDistributionRolesNoAddress,
   withGeoLocationOnly,
+  sampleDataGoodStore,
 };
 
 export default presets;
