@@ -3,8 +3,8 @@ import * as ZoneDraft from '../../index';
 const countryGreatBritain = () =>
   ZoneDraft.presets
     .empty()
-    .name('Great Britain')
-    .key('greatbritain')
+    .name('United Kingdom')
+    .key('united_kingdom')
     .locations([{ country: 'GB' }]);
 
 export default countryGreatBritain;
