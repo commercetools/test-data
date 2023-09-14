@@ -2,7 +2,7 @@ import type {
     TTaxCategoryDraft,
     TTaxCategoryDraftGraphql,
   } from '../../../types';
-  import standardTaxCategory from './eu2-tax-category';
+  import EU2TaxCategory from './eu2-tax-category';
   
   describe('with a tax rate preset `eu2 tax category`', () => {
     it('should return a tax category with name `EU2 Tax Category` and 2 tax rates', () => {
