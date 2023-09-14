@@ -11,6 +11,7 @@ const transformers = {
       'shippingAddress',
       'billingAddress',
       'shippingMethod',
+      'store',
     ],
   }),
   rest: Transformer<TCartDraft, TCartDraft>('rest', {
@@ -22,6 +23,7 @@ const transformers = {
       'shippingAddress',
       'billingAddress',
       'shippingMethod',
+      'store',
     ],
   }),
   graphql: Transformer<TCartDraft, TCartDraftGraphql>('graphql', {
@@ -32,6 +34,7 @@ const transformers = {
       'shippingAddress',
       'billingAddress',
       'shippingMethod',
+      'store',
     ],
   }),
 };
