@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/attribute-type",
-  "version": "5.11.1",
+  "version": "5.11.2",
   "description": "Data models for commercetools API Attribute Types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "5.11.1",
-    "@commercetools-test-data/core": "5.11.1",
-    "@commercetools-test-data/utils": "5.11.1",
+    "@commercetools-test-data/commons": "5.11.2",
+    "@commercetools-test-data/core": "5.11.2",
+    "@commercetools-test-data/utils": "5.11.2",
     "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }

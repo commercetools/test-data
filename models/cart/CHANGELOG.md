@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart
 
+## 5.11.2
+
+### Patch Changes
+
+- [#338](https://github.com/commercetools/test-data/pull/338) [`866cd6a`](https://github.com/commercetools/test-data/commit/866cd6a05965dd88e325f70b5caaf5b632e3365d) Thanks [@jaikamat](https://github.com/jaikamat)! - adds stores to fashion sample data cart draft presets, add store key reference preset
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@5.11.2
+  - @commercetools-test-data/commons@5.11.2
+  - @commercetools-test-data/customer@5.11.2
+  - @commercetools-test-data/discount-code@5.11.2
+  - @commercetools-test-data/line-item@5.11.2
+  - @commercetools-test-data/product-variant@5.11.2
+  - @commercetools-test-data/shipping-method@5.11.2
+  - @commercetools-test-data/store@5.11.2
+  - @commercetools-test-data/utils@5.11.2
+
 ## 5.11.1
 
 ### Patch Changes
