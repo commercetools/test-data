@@ -10,7 +10,6 @@ import type {
   
       expect(taxCategory).toMatchInlineSnapshot(`
         {
-          "description": "",
           "key": "EU",
           "name": "EU",
           "rates": [
@@ -19,16 +18,12 @@ import type {
               "country": "DE",
               "includedInPrice": false,
               "name": "EU tax",
-              "state": undefined,
-              "subRates": [],
             },
             {
               "amount": 0.1,
               "country": "GB",
               "includedInPrice": false,
               "name": "UK tax",
-              "state": undefined,
-              "subRates": [],
             },
           ],
         }
@@ -39,7 +34,6 @@ import type {
       const taxCategoryGraphql = EUTaxCategory().buildGraphql<TTaxCategoryDraftGraphql>();
       expect(taxCategoryGraphql).toMatchInlineSnapshot(`
       {
-        "description": "",
         "key": "EU",
         "name": "EU",
         "rates": [
@@ -48,16 +42,12 @@ import type {
             "country": "DE",
             "includedInPrice": false,
             "name": "EU tax",
-            "state": undefined,
-            "subRates": [],
           },
           {
             "amount": 0.1,
             "country": "GB",
             "includedInPrice": false,
             "name": "UK tax",
-            "state": undefined,
-            "subRates": [],
           },
         ],
       }

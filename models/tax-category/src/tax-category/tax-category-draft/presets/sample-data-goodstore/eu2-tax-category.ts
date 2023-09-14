@@ -13,14 +13,12 @@ const EU2TaxCategory = () =>
         .name('Germany')
         .amount(0.1)
         .includedInPrice(true)
-        .country('DE')
-        .subRates([]),
+        .country('DE'),
       TaxRateDraft.presets
         .empty()
         .name('United Kingdom')
         .amount(0.1)
         .includedInPrice(true)
-        .country('GB')
-        .subRates([]),
+        .country('GB'),
     ])
 export default EU2TaxCategory;
