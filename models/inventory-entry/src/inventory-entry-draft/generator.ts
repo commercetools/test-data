@@ -5,7 +5,7 @@ import { TInventoryEntryDraft } from '../types';
 
 const [getFutureDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/types#money
+// https://docs.commercetools.com/api/projects/inventory#inventoryentrydraft
 
 const generator = Generator<TInventoryEntryDraft>({
   fields: {
