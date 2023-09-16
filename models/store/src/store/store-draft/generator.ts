@@ -8,7 +8,7 @@ const generator = Generator<TStoreDraft>({
   fields: {
     key: fake((f) => f.lorem.slug()),
     name: fake(() => LocalizedString.random()),
-    languages: [oneOf('en-US', 'de-DE', 'es-ES')],
+    languages: [oneOf('en-US', 'de-DE', 'es-ES', 'en-GB')],
     countries: [fake((f) => f.location.countryCode())],
     distributionChannels: null,
     supplyChannels: null,
