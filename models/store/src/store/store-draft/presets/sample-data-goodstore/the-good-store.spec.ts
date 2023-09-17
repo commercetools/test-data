@@ -15,6 +15,7 @@ describe('with `the_good_store` preset', () => {
           "de": undefined,
           "en": undefined,
           "en-GB": "The Good Store",
+          "en-US": "The Good Store",
           "fr": undefined,
         },
         "productSelections": undefined,
@@ -34,6 +35,11 @@ describe('with `the_good_store` preset', () => {
         "key": "the-good-store",
         "languages": undefined,
         "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "The Good Store",
+          },
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
