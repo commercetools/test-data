@@ -9,10 +9,11 @@
     "directory": "exporter"
   },
   "scripts": {
-    "export": "ts-node src/exportCategories.ts && ts-node src/exportProductTypes.ts && ts-node src/exportVariants.ts && ts-node src/exportProducts.ts",
+    "export": "ts-node src/exportCategories.ts && ts-node src/exportProductTypes.ts && ts-node src/exportVariants.ts && ts-node src/exportProducts.ts && ts-node src/exportTaxes.ts",
     "exportCategories": "ts-node src/exportCategories.ts",
     "exportProductTypes": "ts-node src/exportProductTypes.ts",
     "exportProducts": "ts-node src/exportProducts.ts",
+    "exportTaxes": "ts-node src/exportTaxes.ts",
     "exportVariants": "ts-node src/exportVariants.ts"
   },
   "keywords": [

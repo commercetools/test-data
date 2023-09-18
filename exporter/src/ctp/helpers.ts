@@ -103,7 +103,7 @@ export const buildIndexFile = (entries: Array<IndexFile>) => {
       return `  ${entry.functionName},`;
     })
     .join('\n');
-  content += '};\n' + '\n' + 'export default presets;';
+  content += '\n};\n' + '\n' + 'export default presets;';
 
   return content;
 };
