@@ -1,6 +1,6 @@
 import { Reference, AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import * as LineItem from '@commercetools-test-data/line-item';
+import * as LineItem from '../../line-item';
 import {
   inventoryMode,
   origin,

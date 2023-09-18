@@ -24,7 +24,6 @@
     "@commercetools-test-data/commons": "5.11.2",
     "@commercetools-test-data/core": "5.11.2",
     "@commercetools-test-data/customer-group": "5.11.2",
-    "@commercetools-test-data/line-item": "5.11.2",
     "@commercetools-test-data/utils": "5.11.2",
     "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"

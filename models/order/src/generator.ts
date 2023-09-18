@@ -1,4 +1,4 @@
-import { Cart } from '@commercetools-test-data/cart';
+import { Cart, LineItem } from '@commercetools-test-data/cart';
 import { CartDiscount } from '@commercetools-test-data/cart-discount';
 import {
   CentPrecisionMoney,
@@ -12,7 +12,6 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import * as CustomerGroup from '@commercetools-test-data/customer-group';
-import * as LineItem from '@commercetools-test-data/line-item';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import {
   inventoryMode,

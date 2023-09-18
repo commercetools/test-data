@@ -3,7 +3,6 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
-import { LineItemDraft } from '@commercetools-test-data/line-item';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -13,6 +12,7 @@ import {
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
+import { LineItemDraft } from '../../../../line-item';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';

@@ -10,8 +10,8 @@ import {
   oneOf,
   sequence,
 } from '@commercetools-test-data/core';
-import * as LineItem from '@commercetools-test-data/line-item';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { LineItem } from '../index';
 import {
   cartState,
   inventoryMode,
