@@ -1,0 +1,36 @@
+{
+  "name": "@commercetools-test-data/exporter",
+  "version": "1.0.0",
+  "description": "This package provides an exporter using our typescript API",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "exporter"
+  },
+  "scripts": {
+    "export": "ts-node src/exportCategories.ts && ts-node src/exportProductTypes.ts && ts-node src/exportVariants.ts && ts-node src/exportProducts.ts",
+    "exportCategories": "ts-node src/exportCategories.ts",
+    "exportProductTypes": "ts-node src/exportProductTypes.ts",
+    "exportProducts": "ts-node src/exportProducts.ts",
+    "exportVariants": "ts-node src/exportVariants.ts"
+  },
+  "keywords": [
+    "typescript",
+    "test-data"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@commercetools/platform-sdk": "^4.11.0",
+    "@commercetools/sdk-client-v2": "^2.2.0",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.4",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.5"
+  }
+}
