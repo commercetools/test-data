@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import * as ProductVariantDraft from '../..';
-import { AttributeDraft } from '../../../../attribute/';
+import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 

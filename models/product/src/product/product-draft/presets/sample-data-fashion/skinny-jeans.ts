@@ -10,11 +10,11 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 

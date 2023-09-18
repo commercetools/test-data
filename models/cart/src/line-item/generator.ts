@@ -6,7 +6,7 @@ import {
   Price,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { ProductVariant } from '@commercetools-test-data/product-variant';
+import { ProductVariant } from '@commercetools-test-data/product';
 import { TaxRate } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode, lineItemMode, priceMode } from './constants';

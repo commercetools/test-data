@@ -10,7 +10,7 @@ import {
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '@commercetools-test-data/product-variant';
+} from '@commercetools-test-data/product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,

@@ -1,4 +1,4 @@
-import { AttributeDraft } from '../../../../attribute/';
+import { AttributeDraft } from '../../../../attribute';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 

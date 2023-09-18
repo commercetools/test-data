@@ -12,6 +12,29 @@ $ pnpm add -D @commercetools-test-data/product
 
 # Usage
 
+## Attribute
+
+```ts
+import {
+  Attribute,
+  AttributeDraft,
+  type TAttribute,
+  type TAttributeDraft,
+} from '@commercetools-test-data/product';
+
+const attribute = Attribute.random().build<TAttribute>();
+const attributeDraftGraphql =
+  AttributeDraft.random().buildGraphql<TAttributeDraft>();
+```
+
+## Image
+
+```ts
+import { Image, type TImage } from '@commercetools-test-data/product';
+
+const image = Image.random().build<TImage>();
+```
+
 ## Product
 
 ```ts
@@ -24,6 +47,18 @@ import {
 
 const product = Product.random().build<TProduct>();
 const productDraft = ProductDraft.random().build<TProductDraft>();
+```
+
+## ProductCatalogData
+
+```ts
+import {
+  ProductCatalogData,
+  type TProductCatalogData,
+} from '@commercetools-test-data/product';
+
+const productCatalogData =
+  ProductCatalogData.random().build<TProductCatalogData>();
 ```
 
 ## ProductData
@@ -41,14 +76,17 @@ const productDataRest = ProductData.random().buildRest<TProductData>();
 const productDataGraphql = ProductData.random().buildGraphql<TProductData>();
 ```
 
-## ProductCatalogData
+## ProductVariant
 
 ```ts
 import {
-  ProductCatalogData,
-  type TProductCatalogData,
+  ProductVariant,
+  ProductVariantDraft,
+  type TProductVariant,
+  type TProductVariantDraft,
 } from '@commercetools-test-data/product';
 
-const productCatalogData =
-  ProductCatalogData.random().build<TProductCatalogData>();
+const productVariant = ProductVariant.random().build<TProductVariant>();
+const productVariantDraft =
+  ProductVariantDraft.random().build<TProductVariantDraft>();
 ```
