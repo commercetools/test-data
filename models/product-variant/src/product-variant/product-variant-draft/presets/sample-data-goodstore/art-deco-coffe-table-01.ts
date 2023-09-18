@@ -33,11 +33,13 @@ const artDecoCoffeTable01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random().name('productspec').value({
-        'en-US': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
-        'en-GB': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
-        'de-DE': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
-      }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-US': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
+          'en-GB': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
+          'de-DE': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
+        }),
       AttributeDraft.random()
         .name('color')
         .value({ 'en-US': 'black', 'en-GB': 'black', 'de-DE': 'black' }),

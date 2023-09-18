@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
-  .standardTaxCategory()
+const euDraft = TaxCategoryDraft.presets.sampleDataGoodstore
+  .eu()
   .build<TTaxCategoryDraft>();
 
 const braidedRugProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodstore
@@ -58,9 +58,7 @@ const braidedRug = (): TProductDraftBuilder =>
       KeyReference.presets.productType().key(braidedRugProductTypeDraft.key!)
     )
     .publish(false)
-    .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
-    )
+    .taxCategory(KeyReference.presets.taxCategory().key(euDraft.key!))
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodstore.braidedRug01()
     )
