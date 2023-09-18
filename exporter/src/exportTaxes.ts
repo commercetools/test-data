@@ -13,7 +13,7 @@ import { getTaxes } from './ctp/tax';
 
 const taxes = async () => {
   const { results } = await getTaxes();
-  console.log('Found ' + results.length + ' categories');
+  console.log('Found ' + results.length + ' taxes');
 
   const header =
     "import * as TaxRateDraft from '../../../../tax-rate/tax-rate-draft';\n" +

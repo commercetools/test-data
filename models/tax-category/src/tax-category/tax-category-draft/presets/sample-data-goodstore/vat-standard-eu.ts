@@ -1,24 +1,27 @@
 import * as TaxRateDraft from '../../../../tax-rate/tax-rate-draft';
 import * as TaxCategoryDraft from '../../index';
-const eu2  = () =>
+
+const vatStandardEu = () =>
   TaxCategoryDraft.presets
     .empty()
-    .name('EU2')
+    .name('VAT Standard')
+    .key('vat-standard-eu')
+    .description('Standard VAT for EU')
     .rates([
       TaxRateDraft.presets
         .empty()
-        .name('Germany')
-        .amount(0.1)
-        .includedInPrice(true)
-        .country('DE')
-        .subRates([]),
-      TaxRateDraft.presets
-        .empty()
-        .name('United Kingdom')
-        .amount(0.1)
+        .name('Standard VAT for UK')
+        .amount(0.2)
         .includedInPrice(true)
         .country('GB')
         .subRates([]),
+      TaxRateDraft.presets
+        .empty()
+        .name('Standard VAT for Germany')
+        .amount(0.19)
+        .includedInPrice(true)
+        .country('DE')
+        .subRates([]),
     ]);
 
-export default eu2;
+export default vatStandardEu;
