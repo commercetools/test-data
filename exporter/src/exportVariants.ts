@@ -15,7 +15,6 @@ import {
   IndexFile,
   writeFile,
 } from './ctp/helpers';
-import { getProductTypeById } from './ctp/product-types';
 import { getProducts } from './ctp/products';
 
 const header =
@@ -146,14 +145,14 @@ const handleVariant = (
 };
 
 const products = async () => {
-  const products = await getProducts(getLimit());
+  const products = await getProducts(getLimit(), 0, ['productType']);
   console.log(
     'Found ' + products.results.length + ' products: Resolving Variants'
   );
   const variantMapping: Array<IndexFile> = [];
 
   for (const product of products.results) {
-    const productType = await getProductTypeById(product.productType.id);
+    const productType = product.productType.obj!;
     const identifier = product.key || product.masterData.staged.name['en-GB'];
     variantMapping.push(
       handleVariant(

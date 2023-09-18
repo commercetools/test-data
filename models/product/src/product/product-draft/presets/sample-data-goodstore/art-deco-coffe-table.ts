@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion
-  .standardTaxCategory()
+const euDraft = TaxCategoryDraft.presets.sampleDataGoodstore
+  .eu()
   .build<TTaxCategoryDraft>();
 
 const artDecoCoffeTableProductTypeDraft =
@@ -61,9 +61,7 @@ const artDecoCoffeTable = (): TProductDraftBuilder =>
         .key(artDecoCoffeTableProductTypeDraft.key!)
     )
     .publish(false)
-    .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
-    )
+    .taxCategory(KeyReference.presets.taxCategory().key(euDraft.key!))
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodstore.artDecoCoffeTable01()
     )

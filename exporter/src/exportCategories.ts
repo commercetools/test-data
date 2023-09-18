@@ -1,6 +1,5 @@
-import { AttributeType } from '@commercetools/platform-sdk';
 import { getCategories, getCategoryById } from './ctp/categories';
-import { getFolder, getLimit } from './ctp/config';
+import { getLimit } from './ctp/config';
 import {
   addEntry,
   buildFilename,
@@ -10,10 +9,9 @@ import {
   IndexFile,
   writeFile,
 } from './ctp/helpers';
-import { getProductTypes } from './ctp/product-types';
 
 const categories = async () => {
-  const { results } = await getCategories(getLimit());
+  const { results } = await getCategories(getLimit(), ['parent']);
   console.log('Found ' + results.length + ' categories');
 
   const header =
@@ -30,8 +28,8 @@ const categories = async () => {
   for (const category of results) {
     let content = header;
     let parentFunctionName;
-    if (category.parent) {
-      const parent = await getCategoryById(category.parent.id);
+    if (category.parent && category.parent.obj) {
+      const parent = category.parent.obj;
       const parentIdentifier = parent.key || parent.name['en-GB'];
       parentFunctionName = buildFunctionname(parentIdentifier);
 

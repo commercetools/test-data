@@ -5,11 +5,12 @@ import {
 import { apiRoot } from './client';
 
 export const getCategories = async (
-  limit: number
+  limit: number,
+  expand?: string | string[]
 ): Promise<CategoryPagedQueryResponse> => {
   const { body } = await apiRoot
     .categories()
-    .get({ queryArgs: { limit: limit } })
+    .get({ queryArgs: { limit: limit, expand: expand } })
     .execute();
   return body;
 };

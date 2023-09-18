@@ -7,11 +7,13 @@ import {
   formatLocalizedString,
   writeFile,
 } from './ctp/helpers';
-import { getProductTypeById } from './ctp/product-types';
 import { getProducts } from './ctp/products';
 
 const products = async () => {
-  const products = await getProducts(getLimit());
+  const products = await getProducts(getLimit(), 0, [
+    'taxCategory',
+    'productType',
+  ]);
   console.log('Found ' + products.results.length + ' products');
 
   const header =
@@ -33,18 +35,29 @@ const products = async () => {
     '  type TTaxCategoryDraft,\n' +
     "} from '@commercetools-test-data/tax-category';\n" +
     "import * as ProductDraft from '../../../product-draft';\n" +
-    "import type { TProductDraftBuilder } from '../../../types';" +
-    '\n\nconst standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataFashion\n' +
-    '  .standardTaxCategory()\n' +
-    '  .build<TTaxCategoryDraft>();\n\n';
+    "import type { TProductDraftBuilder } from '../../../types';";
 
   for (const product of products.results) {
     let content = header;
     const identifier = buildFunctionname(
       product.key || product.masterData.staged.name['en-GB']
     )!;
-    const productType = await getProductTypeById(product.productType.id);
+    const productType = product.productType.obj!;
     const productTypeConstName = identifier + 'ProductTypeDraft';
+
+    let taxcategoryName;
+
+    if (product.taxCategory && product.taxCategory) {
+      taxcategoryName = buildFunctionname(product.taxCategory?.obj?.name!);
+      content +=
+        '\n\nconst ' +
+        taxcategoryName +
+        'Draft = TaxCategoryDraft.presets.sampleDataGoodstore\n' +
+        '  .' +
+        taxcategoryName +
+        '()\n' +
+        '  .build<TTaxCategoryDraft>();\n\n';
+    }
 
     content +=
       'const ' +
@@ -105,10 +118,15 @@ const products = async () => {
       productTypeConstName +
       '.key!)\n' +
       '    )\n' +
-      '    .publish(false)\n' +
-      '    .taxCategory(\n' +
-      '      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)\n' +
-      '    )\n';
+      '    .publish(false)\n';
+    if (taxcategoryName) {
+      content +=
+        '    .taxCategory(\n' +
+        '      KeyReference.presets.taxCategory().key(' +
+        taxcategoryName +
+        'Draft.key!)\n' +
+        '    )\n';
+    }
     content +=
       '    .masterVariant(\n' +
       '      ProductVariantDraft.presets.' +
