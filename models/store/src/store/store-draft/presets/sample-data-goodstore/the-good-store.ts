@@ -6,5 +6,10 @@ const the_good_store = (): TStoreDraftBuilder =>
   StoreDraft.presets
     .empty()
     .key('the-good-store')
-    .name(LocalizedString.presets.empty()['en-US']('The Good Store')['en-GB']('The Good Store'));
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('The Good Store')
+        ['en-GB']('The Good Store')
+    );
 export default the_good_store;
