@@ -48,7 +48,9 @@ const products = async () => {
     let taxcategoryName;
 
     if (product.taxCategory && product.taxCategory) {
-      taxcategoryName = buildFunctionname(product.taxCategory?.obj?.name!);
+      taxcategoryName = buildFunctionname(
+        product.taxCategory?.obj?.key! || product.taxCategory?.obj?.name!
+      );
       content +=
         '\n\nconst ' +
         taxcategoryName +

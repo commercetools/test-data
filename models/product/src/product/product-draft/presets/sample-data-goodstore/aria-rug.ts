@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const euDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .eu()
+const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
+  .vatStandardEu()
   .build<TTaxCategoryDraft>();
 
 const ariaRugProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodstore
@@ -58,7 +58,9 @@ const ariaRug = (): TProductDraftBuilder =>
       KeyReference.presets.productType().key(ariaRugProductTypeDraft.key!)
     )
     .publish(false)
-    .taxCategory(KeyReference.presets.taxCategory().key(euDraft.key!))
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+    )
     .masterVariant(ProductVariantDraft.presets.sampleDataGoodstore.ariaRug01())
     .categories([
       KeyReference.presets.category().key(rugsDraft.key!),
