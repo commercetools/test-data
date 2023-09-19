@@ -12,6 +12,30 @@ $ pnpm add -D @commercetools-test-data/product-type
 
 # Usage
 
+## AttributeDefinition
+
+```ts
+import {
+  AttributeDefinition,
+  AttributeDefinitionDraft,
+  type TAttributeDefinition,
+  type TAttributeDefinitionDraft,
+} from '@commercetools-test-data/product-type';
+
+const attributeDefinition =
+  AttributeDefinition.random().build<TAttributeDefinition>();
+
+const attributeDefinitionDraft =
+  AttributeDefinitionDraft.random().build<TAttributeDefinitionDraft>();
+
+// Presets
+const emptyAttributeDefinitionPreset = AttributeDefinitionDraft.presets
+  .empty()
+  .build<TAttributeDefinitionDraft>();
+```
+
+## ProductType
+
 ```ts
 import {
   ProductType,

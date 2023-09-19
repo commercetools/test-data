@@ -105,33 +105,6 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
 
-  models/attribute-definition:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.19.4
-      '@commercetools-test-data/attribute-type':
-        specifier: 5.11.2
-        version: link:../attribute-type
-      '@commercetools-test-data/commons':
-        specifier: 5.11.2
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 5.11.2
-        version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 5.11.2
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^4.11.0
-        version: 4.11.0
-      '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.0.0
-
   models/attribute-type:
     dependencies:
       '@babel/runtime':
@@ -508,7 +481,7 @@ importers:
         version: 7.19.4
       '@commercetools-test-data/attribute-definition':
         specifier: 5.11.2
-        version: link:../attribute-definition
+        version: 5.11.2
       '@commercetools-test-data/category':
         specifier: 5.11.2
         version: link:../category
@@ -595,7 +568,7 @@ importers:
         version: 7.19.4
       '@commercetools-test-data/attribute-definition':
         specifier: 5.11.2
-        version: link:../attribute-definition
+        version: 5.11.2
       '@commercetools-test-data/attribute-type':
         specifier: 5.11.2
         version: link:../attribute-type

@@ -1,4 +1,4 @@
-import type { TAttributeDefinitionDraft } from '../../types';
+import type { TAttributeDefinitionDraft } from '../../src/types';
 import empty from './empty';
 
 it(`should set attributeConstraint, inputHint, and isSearchable to undefined`, () => {

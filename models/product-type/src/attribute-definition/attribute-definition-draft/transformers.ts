@@ -3,7 +3,7 @@ import { Transformer } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinitionDraft,
   TAttributeDefinitionDraftGraphql,
-} from '../types';
+} from '../src/types';
 
 const transformers = {
   default: Transformer<TAttributeDefinitionDraft, TAttributeDefinitionDraft>(
