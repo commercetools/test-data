@@ -14,6 +14,7 @@ describe('builder', () => {
       'default',
       InventoryEntryDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         sku: expect.any(String),
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
@@ -32,6 +33,7 @@ describe('builder', () => {
       'rest',
       InventoryEntryDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         sku: expect.any(String),
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
@@ -50,6 +52,7 @@ describe('builder', () => {
       'graphql',
       InventoryEntryDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         sku: expect.any(String),
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),

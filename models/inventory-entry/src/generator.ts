@@ -10,6 +10,7 @@ const [getOlderDate, getNewerDate, getFutureDate] = createRelatedDates();
 const generator = Generator<TInventoryEntry>({
   fields: {
     id: fake((f) => f.string.uuid()),
+    key: fake((f) => f.lorem.slug(2)),
     version: fake((f) => f.number.int()),
     createdAt: fake(getOlderDate),
     createdBy: null,

@@ -15,6 +15,7 @@ describe('builder', () => {
       InventoryEntry.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
         createdBy: null,
@@ -41,6 +42,7 @@ describe('builder', () => {
       InventoryEntry.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
         createdBy: null,
@@ -66,6 +68,7 @@ describe('builder', () => {
       InventoryEntry.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
         createdBy: null,

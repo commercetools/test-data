@@ -9,6 +9,7 @@ const [getFutureDate] = createRelatedDates();
 
 const generator = Generator<TInventoryEntryDraft>({
   fields: {
+    key: fake((f) => f.lorem.slug(2)),
     sku: fake((f) => f.lorem.words()),
     quantityOnStock: fake((f) => f.number.int({ min: 10, max: 30 })),
     restockableInDays: fake((f) => f.number.int({ min: 1, max: 20 })),
