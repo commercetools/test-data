@@ -1,7 +1,7 @@
-import * as AttributeDefinition from '@commercetools-test-data/attribute-definition';
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { AttributeDefinition } from '../attribute-definition';
 import type { TProductType } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
