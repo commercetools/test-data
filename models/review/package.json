@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/review",
-  "version": "5.11.2",
+  "version": "6.0.0",
   "description": "Data model for commercetools API Review",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "5.11.2",
-    "@commercetools-test-data/core": "5.11.2",
-    "@commercetools-test-data/utils": "5.11.2",
+    "@commercetools-test-data/commons": "6.0.0",
+    "@commercetools-test-data/core": "6.0.0",
+    "@commercetools-test-data/utils": "6.0.0",
     "@commercetools/platform-sdk": "^4.11.0",
     "@faker-js/faker": "^8.0.0"
   }
