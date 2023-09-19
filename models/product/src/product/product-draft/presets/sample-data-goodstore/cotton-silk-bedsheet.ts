@@ -56,7 +56,7 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
         .productType()
         .key(cottonSilkBedsheetProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

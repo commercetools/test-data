@@ -60,7 +60,7 @@ const doubleWalledEspressoGlass = (): TProductDraftBuilder =>
         .productType()
         .key(doubleWalledEspressoGlassProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

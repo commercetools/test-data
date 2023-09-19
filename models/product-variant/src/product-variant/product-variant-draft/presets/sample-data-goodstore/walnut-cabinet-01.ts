@@ -36,16 +36,14 @@ const walnutCabinet01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random()
         .name('productspec')
         .value({ 'en-GB': '- Assembly included in delivery' }),
-      AttributeDraft.random()
-        .name('product-description')
-        .value({
-          'en-GB':
-            'This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.',
-          'en-US':
-            'This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.',
-          'de-DE':
-            'Dieser Nussbaumschrank hat viele Schubladen, die in Reihen angeordnet sind, mit mehreren Schubladen pro Reihe. Die Schubladen sind groß und tief und bieten viel Stauraum. Die Schubladen können einfache Griffe haben.  Die Oberseite des Sideboards ist flach und glatt und kann zur Präsentation von Dekorationsgegenständen wie Vasen oder Kerzen verwendet werden.  Insgesamt ist ein großes Sideboard mit vielen Schubladen ein funktionales und praktisches Möbelstück, das jedem Raum Stil und Stauraum verleiht.',
-        }),
+      AttributeDraft.random().name('product-description').value({
+        'en-GB':
+          'This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.',
+        'en-US':
+          'This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.',
+        'de-DE':
+          'Dieser Nussbaumschrank hat viele Schubladen, die in Reihen angeordnet sind, mit mehreren Schubladen pro Reihe. Die Schubladen sind groß und tief und bieten viel Stauraum. Die Schubladen können einfache Griffe haben.  Die Oberseite des Sideboards ist flach und glatt und kann zur Präsentation von Dekorationsgegenständen wie Vasen oder Kerzen verwendet werden.  Insgesamt ist ein großes Sideboard mit vielen Schubladen ein funktionales und praktisches Möbelstück, das jedem Raum Stil und Stauraum verleiht.',
+      }),
       AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Walnut' }),
       AttributeDraft.random()
         .name('color-filter')

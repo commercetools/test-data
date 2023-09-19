@@ -60,7 +60,7 @@ const cocktailShaker = (): TProductDraftBuilder =>
         .productType()
         .key(cocktailShakerProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

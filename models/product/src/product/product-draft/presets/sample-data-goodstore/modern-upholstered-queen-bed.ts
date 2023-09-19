@@ -68,7 +68,7 @@ const modernUpholsteredQueenBed = (): TProductDraftBuilder =>
         .productType()
         .key(modernUpholsteredQueenBedProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

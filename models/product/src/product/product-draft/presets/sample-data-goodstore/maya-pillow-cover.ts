@@ -56,7 +56,7 @@ const mayaPillowCover = (): TProductDraftBuilder =>
         .productType()
         .key(mayaPillowCoverProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

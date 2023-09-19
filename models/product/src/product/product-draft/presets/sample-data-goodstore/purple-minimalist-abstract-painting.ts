@@ -60,7 +60,7 @@ const purpleMinimalistAbstractPainting = (): TProductDraftBuilder =>
         .productType()
         .key(purpleMinimalistAbstractPaintingProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

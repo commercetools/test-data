@@ -60,7 +60,7 @@ const orionDoubleBed = (): TProductDraftBuilder =>
         .productType()
         .key(orionDoubleBedProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

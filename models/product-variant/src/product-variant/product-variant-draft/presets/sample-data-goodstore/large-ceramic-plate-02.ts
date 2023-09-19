@@ -36,21 +36,17 @@ const largeCeramicPlate02 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random()
         .name('color')
         .value({ 'en-US': '#ebebeb', 'en-GB': '#ebebeb', 'de-DE': '#ebebeb' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({
-          'en-US': 'Light Gray',
-          'en-GB': 'Light Gray',
-          'de-DE': 'Light Gray',
-        }),
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-US': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
-          'en-GB':
-            '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe\n- Microwave safe',
-          'de-DE': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
-        }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-US': 'Light Gray',
+        'en-GB': 'Light Gray',
+        'de-DE': 'Light Gray',
+      }),
+      AttributeDraft.random().name('productspec').value({
+        'en-US': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
+        'en-GB':
+          '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe\n- Microwave safe',
+        'de-DE': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A large ceramic round plate that comes in light olive and light gray colors is a beautiful and versatile piece of dinnerware that is perfect for serving a variety of meals. The plate is typically handcrafted from high-quality ceramic material, and features a glossy finish that gives it a polished and elegant appearance.  The plate is large in size, typically measuring around 12-14 inches in diameter. This makes it ideal for serving large portions of food, such as a main course or a shared appetizer. The round shape of the plate provides ample space for arranging food, while the raised edge of the plate prevents sauces and juices from spilling over the sides.  The plate comes in two beautiful and neutral colors - light olive and light gray. These colors are perfect for complementing a wide range of dining room decor styles and color schemes, from modern and minimalist to rustic and earthy.  The plate features a simple and elegant design, with a smooth surface and a minimalist look. This makes it ideal for both casual and formal dining occasions, from everyday family meals to special occasions and dinner parties.  Overall, a large ceramic round plate in light olive and light gray colors is a beautiful and practical addition to any dining room. Its simple and elegant design, combined with its versatile size and color options, make it a perfect choice for serving a variety of meals and creating a stylish and inviting dining experience.',

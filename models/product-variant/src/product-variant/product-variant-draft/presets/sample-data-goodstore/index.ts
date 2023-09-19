@@ -143,7 +143,6 @@ import walnutCounterStool01 from './walnut-counter-stool-01';
 import willowTeapot01 from './willow-teapot-01';
 import wilmaChair01 from './wilma-chair-01';
 import wineBottleOpener01 from './wine-bottle-opener-01';
-
 const presets = {
   abigailLoungeChair01,
   amaliaRug01,

@@ -60,7 +60,7 @@ const comfortCoffeeMug = (): TProductDraftBuilder =>
         .productType()
         .key(comfortCoffeeMugProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

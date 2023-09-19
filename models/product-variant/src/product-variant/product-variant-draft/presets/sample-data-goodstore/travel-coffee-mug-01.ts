@@ -27,11 +27,9 @@ const travelCoffeeMug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4000, h: 4000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Insulated \n- Suitable for both cold and hot drinks',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Insulated \n- Suitable for both cold and hot drinks',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'The Travel Coffee Mug is designed for use on the go. The mug has a capacity of around 12 to 20 ounces, and is designed to keep beverages hot or cold for an extended period of time. This is achieved through the use of insulation, which helps to maintain the temperature of the drink inside the mug.  The Travel Coffee Mug has a variety of features, including a spill-proof lid that can be securely fastened to prevent leaks or spills and a handle or grip that makes it easy to hold, even while walking or driving.  This travel coffee mug is designed to fit into standard cup holders in cars.  Overall, this travel coffee mug is a practical and convenient type of drinking vessel that is ideal for anyone who enjoys a hot or cold beverage while on the go. Its durable construction and insulated design make it a popular choice for commuters, travelers, and outdoor enthusiasts alike.',

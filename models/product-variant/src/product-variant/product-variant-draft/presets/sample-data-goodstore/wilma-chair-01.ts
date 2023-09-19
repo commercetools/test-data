@@ -33,21 +33,17 @@ const wilmaChair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2400, h: 3200 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Cushion covers are removable and machine washable',
-        }),
-      AttributeDraft.random()
-        .name('product-description')
-        .value({
-          'en-GB':
-            'A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.',
-          'en-US':
-            'A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.',
-          'de-DE':
-            'Ein getufteter armloser Futon-Stuhl hat ein einfaches und modernes Design mit gepolstertem Sitz und Rückenlehne mit getufteten Details für zusätzlichen Komfort und Stil. Dem Stuhl fehlen Armlehnen, um mehr Flexibilität und Benutzerfreundlichkeit zu ermöglichen. Die Polsterung besteht aus strapazierfähigem Stoff, der leicht zu reinigen und zu pflegen ist. Insgesamt ist ein getufteter Futonstuhl ohne Armlehnen ein praktisches und stilvolles Möbelstück, das in einer Vielzahl von Umgebungen verwendet werden kann, z. B. in einem Wohnzimmer, Schlafzimmer oder Heimbüro.',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Cushion covers are removable and machine washable',
+      }),
+      AttributeDraft.random().name('product-description').value({
+        'en-GB':
+          'A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.',
+        'en-US':
+          'A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.',
+        'de-DE':
+          'Ein getufteter armloser Futon-Stuhl hat ein einfaches und modernes Design mit gepolstertem Sitz und Rückenlehne mit getufteten Details für zusätzlichen Komfort und Stil. Dem Stuhl fehlen Armlehnen, um mehr Flexibilität und Benutzerfreundlichkeit zu ermöglichen. Die Polsterung besteht aus strapazierfähigem Stoff, der leicht zu reinigen und zu pflegen ist. Insgesamt ist ein getufteter Futonstuhl ohne Armlehnen ein praktisches und stilvolles Möbelstück, das in einer Vielzahl von Umgebungen verwendet werden kann, z. B. in einem Wohnzimmer, Schlafzimmer oder Heimbüro.',
+      }),
       AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Cream' }),
       AttributeDraft.random()
         .name('finishlabel')

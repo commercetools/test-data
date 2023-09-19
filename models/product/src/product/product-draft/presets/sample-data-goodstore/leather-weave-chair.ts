@@ -60,7 +60,7 @@ const leatherWeaveChair = (): TProductDraftBuilder =>
         .productType()
         .key(leatherWeaveChairProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

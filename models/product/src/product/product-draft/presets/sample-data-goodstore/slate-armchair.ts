@@ -58,7 +58,7 @@ const slateArmchair = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(slateArmchairProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

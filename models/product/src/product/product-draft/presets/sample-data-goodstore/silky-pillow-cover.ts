@@ -56,7 +56,7 @@ const silkyPillowCover = (): TProductDraftBuilder =>
         .productType()
         .key(silkyPillowCoverProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -48,7 +48,7 @@ const rusticOvenCasserole = (): TProductDraftBuilder =>
         .productType()
         .key(rusticOvenCasseroleProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

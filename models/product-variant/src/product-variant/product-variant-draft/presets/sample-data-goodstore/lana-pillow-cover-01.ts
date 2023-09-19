@@ -27,12 +27,10 @@ const lanaPillowCover01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4350, h: 3143 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB':
-            '- Machine washable\n- Pillow not included\n- Has a zip enclosure',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB':
+          '- Machine washable\n- Pillow not included\n- Has a zip enclosure',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A microfiber pillow cover is a type of textile covering for a pillow that is made from synthetic fibers such as polyester or nylon. Microfiber is known for its softness, durability, and easy maintenance.  The pillow cover is designed to fit over a standard size pillow, usually around 18 inches square. It features a square shape and can come in a variety of colors and patterns to suit different decor styles and preferences.  The microfiber fabric has a smooth and silky feel that is gentle on the skin and provides a comfortable surface for sleeping. It is also breathable and moisture-wicking, which helps to regulate body temperature and prevent overheating during the night.  The pillow cover is often used for its practical and functional features, such as its easy care and resistance to wrinkles, stains, and fading. It can be easily washed and dried in a machine, making it a convenient and low-maintenance option for busy households.  Overall, a microfiber pillow cover is a versatile and practical accessory that can enhance the comfort and durability of a pillow. It can be used for everyday sleeping, as well as for decorative purposes in a variety of settings, such as bedrooms, guest rooms, and living rooms.',

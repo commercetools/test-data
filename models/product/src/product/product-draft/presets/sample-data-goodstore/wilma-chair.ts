@@ -57,7 +57,7 @@ const wilmaChair = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(wilmaChairProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

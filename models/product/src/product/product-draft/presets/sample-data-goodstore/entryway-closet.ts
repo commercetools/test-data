@@ -60,7 +60,7 @@ const entrywayCloset = (): TProductDraftBuilder =>
         .productType()
         .key(entrywayClosetProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )
