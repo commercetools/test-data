@@ -60,7 +60,7 @@ const serenityQueenBed = (): TProductDraftBuilder =>
         .productType()
         .key(serenityQueenBedProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -27,11 +27,9 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Assembly included at delivery\n- Mattress not included',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Assembly included at delivery\n- Mattress not included',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.',

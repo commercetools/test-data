@@ -69,7 +69,7 @@ const marquisTray = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(marquisTrayProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -27,13 +27,11 @@ const indoorJutePlanter02 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 5000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Plant not included',
-          'en-US': '- Plant not included',
-          'de-DE': '- Plant not included',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Plant not included',
+        'en-US': '- Plant not included',
+        'de-DE': '- Plant not included',
+      }),
       AttributeDraft.random().name('size').value({ 'en-GB': 'Small' }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

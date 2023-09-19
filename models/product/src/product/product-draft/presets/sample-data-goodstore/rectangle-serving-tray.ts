@@ -64,7 +64,7 @@ const rectangleServingTray = (): TProductDraftBuilder =>
         .productType()
         .key(rectangleServingTrayProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

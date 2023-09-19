@@ -60,7 +60,7 @@ const indoorJutePlanter = (): TProductDraftBuilder =>
         .productType()
         .key(indoorJutePlanterProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

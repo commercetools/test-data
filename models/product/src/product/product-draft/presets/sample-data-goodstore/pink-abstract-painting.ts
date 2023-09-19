@@ -60,7 +60,7 @@ const pinkAbstractPainting = (): TProductDraftBuilder =>
         .productType()
         .key(pinkAbstractPaintingProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

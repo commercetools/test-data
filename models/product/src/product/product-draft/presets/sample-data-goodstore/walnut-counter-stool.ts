@@ -68,7 +68,7 @@ const walnutCounterStool = (): TProductDraftBuilder =>
         .productType()
         .key(walnutCounterStoolProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -68,7 +68,7 @@ const modernThreeSeaterSofa = (): TProductDraftBuilder =>
         .productType()
         .key(modernThreeSeaterSofaProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

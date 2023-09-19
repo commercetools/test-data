@@ -60,7 +60,7 @@ const leatherCoaster = (): TProductDraftBuilder =>
         .productType()
         .key(leatherCoasterProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )
