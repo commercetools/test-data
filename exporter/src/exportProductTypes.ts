@@ -60,7 +60,6 @@ const productTypes = async () => {
   const header =
     "import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';\n" +
     'import {\n' +
-    '  AttributeReferenceTypeDraft,\n' +
     '  AttributeEnumTypeDraft,\n' +
     '  AttributeBooleanTypeDraft,\n' +
     '  AttributeTextTypeDraft,\n' +
