@@ -54,7 +54,7 @@ const beddingBundle = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(beddingBundleProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -58,7 +58,7 @@ const charcoalChair = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(charcoalChairProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

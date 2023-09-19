@@ -69,7 +69,7 @@ const ivoryPlate = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(ivoryPlateProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

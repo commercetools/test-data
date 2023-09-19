@@ -72,7 +72,7 @@ const modernBookcase = (): TProductDraftBuilder =>
         .productType()
         .key(modernBookcaseProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

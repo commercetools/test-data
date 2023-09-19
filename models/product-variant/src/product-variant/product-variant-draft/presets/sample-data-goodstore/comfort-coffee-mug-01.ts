@@ -27,11 +27,9 @@ const comfortCoffeeMug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2340, h: 2256 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Includes 1 mug\n- Dishwasher and microwave safe',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 mug\n- Dishwasher and microwave safe',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'The Comfort Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Comfort Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Comfort Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.',

@@ -57,7 +57,7 @@ const juteRug = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(juteRugProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

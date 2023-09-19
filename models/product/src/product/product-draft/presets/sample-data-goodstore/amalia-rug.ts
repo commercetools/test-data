@@ -57,7 +57,7 @@ const amaliaRug = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(amaliaRugProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

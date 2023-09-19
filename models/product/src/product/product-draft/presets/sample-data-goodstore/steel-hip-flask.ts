@@ -58,7 +58,7 @@ const steelHipFlask = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(steelHipFlaskProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -58,7 +58,7 @@ const vanillaCandle = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets.productType().key(vanillaCandleProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

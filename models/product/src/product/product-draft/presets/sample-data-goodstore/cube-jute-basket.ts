@@ -60,7 +60,7 @@ const cubeJuteBasket = (): TProductDraftBuilder =>
         .productType()
         .key(cubeJuteBasketProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

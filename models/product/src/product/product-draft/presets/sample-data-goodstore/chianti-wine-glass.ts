@@ -60,7 +60,7 @@ const chiantiWineGlass = (): TProductDraftBuilder =>
         .productType()
         .key(chiantiWineGlassProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

@@ -120,7 +120,7 @@ const products = async () => {
       productTypeConstName +
       '.key!)\n' +
       '    )\n' +
-      '    .publish(false)\n';
+      '    .publish(true)\n';
     if (taxcategoryName) {
       content +=
         '    .taxCategory(\n' +

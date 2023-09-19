@@ -27,11 +27,9 @@ const ecruDoubleBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2000, h: 2000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Comes with pillow-top headboard\n- Assembly included',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Comes with pillow-top headboard\n- Assembly included',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A double-sized bed with a sofa headboard is a unique and versatile piece of furniture that combines the comfort of a bed with the functionality of a sofa. The bed frame is rectangular and large enough to accommodate a standard double mattress. The headboard is in the form of a sofa, which is attached to the top of the bed frame. The sofa headboard provides a comfortable backrest for sitting up in bed to read, watch TV, or work on a laptop. The sofa headboard is upholstered in a soft and durable fabric, providing a comfortable seating surface. Overall, a queen bed with a sofa headboard is a practical and stylish piece of furniture that can add both comfort and functionality to any bedroom.',

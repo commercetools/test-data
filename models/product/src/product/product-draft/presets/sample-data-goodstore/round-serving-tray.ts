@@ -68,7 +68,7 @@ const roundServingTray = (): TProductDraftBuilder =>
         .productType()
         .key(roundServingTrayProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )

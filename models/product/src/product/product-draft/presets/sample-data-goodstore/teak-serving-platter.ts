@@ -64,7 +64,7 @@ const teakServingPlatter = (): TProductDraftBuilder =>
         .productType()
         .key(teakServingPlatterProductTypeDraft.key!)
     )
-    .publish(false)
+    .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )
