@@ -1,4 +1,4 @@
-import type { TAttributeDefinitionDraftBuilder } from '../../src/types';
+import type { TAttributeDefinitionDraftBuilder } from '../../types';
 import AttributeDefinition from '../builder';
 
 const empty = (): TAttributeDefinitionDraftBuilder =>
