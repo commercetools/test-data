@@ -7,15 +7,15 @@ import {
   DiscountCodeDraft,
   type TDiscountCodeDraft,
 } from '@commercetools-test-data/discount-code';
-import { LineItemDraft } from '@commercetools-test-data/line-item';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '@commercetools-test-data/product-variant';
+} from '@commercetools-test-data/product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
+import { LineItemDraft } from '../../../../line-item';
 import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 import * as CartDraft from '../../index';

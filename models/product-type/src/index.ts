@@ -1,8 +1,22 @@
-export * as ProductTypeDraft from './product-type-draft';
-export * as Product from '.';
+// Export types
+export * from './attribute-boolean-type/types';
+export * from './attribute-definition/types';
+export * from './attribute-enum-type/types';
+export * from './attribute-localized-enum-value/types';
+export * from './attribute-plain-enum-value/types';
+export * from './attribute-text-type/types';
+export * from './product-type/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './product-type-draft/presets';
-
-export * from './types';
+// Export models
+export * as AttributeBooleanType from './attribute-boolean-type';
+export * as AttributeBooleanTypeDraft from './attribute-boolean-type/attribute-boolean-type-draft';
+export * as AttributeDefinition from './attribute-definition';
+export * as AttributeDefinitionDraft from './attribute-definition/attribute-definition-draft';
+export * as AttributePlainEnumValue from './attribute-plain-enum-value';
+export * as AttributeEnumType from './attribute-enum-type';
+export * as AttributeEnumTypeDraft from './attribute-enum-type/attribute-enum-type-draft';
+export * as AttributeLocalizedEnumValue from './attribute-localized-enum-value';
+export * as AttributeTextType from './attribute-text-type';
+export * as AttributeTextTypeDraft from './attribute-text-type/attribute-text-type-draft';
+export * as ProductType from './product-type';
+export * as ProductTypeDraft from './product-type/product-type-draft';

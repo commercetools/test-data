@@ -43,3 +43,22 @@ const customLineItem = CustomLineItem.random().build<TCustomLineItem>();
 const customLineItemDraft =
   CustomLineItemDraft.random().build<TCustomLineItemDraft>();
 ```
+
+## LineItem
+
+```ts
+import {
+  LineItem,
+  LineItemDraft,
+  type TLineItem,
+  type TLineItemDraft,
+} from '@commercetools-test-data/cart';
+
+const lineItem = LineItem.random().build<TLineItem>();
+const lineItemDraft = LineItemDraft.random().build<TLineItemDraft>();
+
+// Presets
+const emptyLineItemDraft = LineItemDraft.presets
+  .empty()
+  .build<TLineItemDraft>();
+```
