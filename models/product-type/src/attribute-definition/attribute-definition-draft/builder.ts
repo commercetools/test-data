@@ -2,7 +2,7 @@ import { Builder } from '@commercetools-test-data/core';
 import type {
   TCreateAttributeDefinitionDraftBuilder,
   TAttributeDefinitionDraft,
-} from '../src/types';
+} from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
