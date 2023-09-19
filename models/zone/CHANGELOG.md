@@ -1,5 +1,18 @@
 # @commercetools-test-data/zone
 
+## 6.0.0
+
+### Minor Changes
+
+- [#341](https://github.com/commercetools/test-data/pull/341) [`7791341`](https://github.com/commercetools/test-data/commit/7791341db9c46242e3bec1e296e0e4e4b758082f) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added zones to Good Store data presets
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.0.0
+  - @commercetools-test-data/commons@6.0.0
+  - @commercetools-test-data/utils@6.0.0
+
 ## 5.11.2
 
 ### Patch Changes

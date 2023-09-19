@@ -1,5 +1,18 @@
 # @commercetools-test-data/tax-category
 
+## 6.0.0
+
+### Minor Changes
+
+- [#340](https://github.com/commercetools/test-data/pull/340) [`bfdf4db`](https://github.com/commercetools/test-data/commit/bfdf4db82e75a903c159552796a08b214edbedea) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added tax category presets to goodstore data
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.0.0
+  - @commercetools-test-data/commons@6.0.0
+  - @commercetools-test-data/utils@6.0.0
+
 ## 5.11.2
 
 ### Patch Changes
