@@ -12,7 +12,15 @@ $ pnpm add -D @commercetools-test-data/product-type
 
 # Usage
 
-## AttributeDefinition
+- [AttributeBooleanType](#attributebooleantype)<br>
+- [AttributeDefinition](#attributedefinition)<br>
+- [AttributeEnumType](#attributeenumtype)<br>
+- [AttributeLocalizedEnumValue](#attributelocalizedenumvalue)<br>
+- [AttributePlainEnumValue](#attributeplainenumvalue)<br>
+- [AttributeTextType](#attributetexttype)<br><br>
+- [ProductType](#producttype)<br>
+
+## `AttributeDefinition`
 
 ```ts
 import {
@@ -34,7 +42,69 @@ const emptyAttributeDefinitionPreset = AttributeDefinitionDraft.presets
   .build<TAttributeDefinitionDraft>();
 ```
 
-## ProductType
+## `AttributeBooleanType`
+
+```ts
+import {
+  AttributeBooleanType,
+  type TAttributeBooleanType,
+} from '@commercetools-test-data/product-type';
+
+const attributeBooleanType =
+  AttributeBooleanType.random().build<TAttributeBooleanType>();
+```
+
+## `AttributeEnumType`
+
+```ts
+import {
+  AttributeEnumType,
+  type TAttributeEnumType,
+} from '@commercetools-test-data/product-type';
+
+const attributeEnumType =
+  AttributeEnumType.random().build<TAttributeEnumType>();
+```
+
+## `AttributeLocalizedEnumValue`
+
+```ts
+import {
+  AttributeLocalizedEnumValue,
+  type TAttributeLocalizedEnumValue,
+  type TAttributeLocalizedEnumValueGraphql,
+} from '@commercetools-test-data/product-type';
+
+const attributeLocalizedEnumValue =
+  AttributePLocalizedEnumValue.random().build<TAttributeLocalizedEnumValue>();
+```
+
+## `AttributePlainEnumValue`
+
+```ts
+import {
+  AttributePlainEnumValue,
+  type TAttributePlainEnumValue,
+  type TAttributePlainEnumValueGraphql,
+} from '@commercetools-test-data/product-type';
+
+const attributePlainEnumValue =
+  AttributePlainEnumValue.random().build<TAttributePlainEnumValue>();
+```
+
+## `AttributeTextType`
+
+```ts
+import {
+  AttributeTextType,
+  type TAttributeTextType,
+} from '@commercetools-test-data/product-type';
+
+const attributeTextType =
+  AttributeTextType.random().build<TAttributeTextType>();
+```
+
+## `ProductType`
 
 ```ts
 import {

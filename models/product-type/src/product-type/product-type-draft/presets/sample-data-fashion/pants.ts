@@ -1,6 +1,8 @@
-import { AttributeEnumTypeDraft } from '@commercetools-test-data/attribute-type';
 import { LocalizedString } from '@commercetools-test-data/commons';
-import { AttributeDefinitionDraft } from '../../../../index';
+import {
+  AttributeDefinitionDraft,
+  AttributeEnumTypeDraft,
+} from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
 

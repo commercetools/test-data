@@ -1,10 +1,10 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
+import { fake, Generator } from '@commercetools-test-data/core';
 import {
   AttributeBooleanTypeDraft,
   AttributeEnumTypeDraft,
   AttributeTextTypeDraft,
-} from '@commercetools-test-data/attribute-type';
-import { LocalizedString } from '@commercetools-test-data/commons';
-import { fake, Generator } from '@commercetools-test-data/core';
+} from '../../index';
 import { attributeConstraints, inputHints } from '../constants';
 import type { TAttributeDefinitionDraft } from '../types';
 
