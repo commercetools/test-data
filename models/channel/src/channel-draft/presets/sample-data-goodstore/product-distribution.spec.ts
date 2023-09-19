@@ -15,7 +15,7 @@ describe('distribution channel', () => {
           "fr": undefined,
         },
         "geoLocation": undefined,
-        "key": "distribution_channel",
+        "key": "distribution-channel",
         "name": {
           "de": undefined,
           "en": undefined,
@@ -44,7 +44,7 @@ describe('distribution channel', () => {
           },
         ],
         "geoLocation": undefined,
-        "key": "distribution_channel",
+        "key": "distribution-channel",
         "name": [
           {
             "__typename": "LocalizedString",

@@ -5,7 +5,7 @@ import * as ChannelDraft from '../../index';
 const inventoryChannel = () =>
   ChannelDraft.presets
     .empty()
-    .key('inventory_channel')
+    .key('inventory-channel')
     .description(LocalizedString.presets.empty()['en-US']('Inventory Channel'))
     .name(LocalizedString.presets.empty()['en-US']('Inventory Channel'))
     .roles([roles.InventorySupply]);

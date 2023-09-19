@@ -5,7 +5,7 @@ import * as ChannelDraft from '../../index';
 const distributionChannel = () =>
   ChannelDraft.presets
     .empty()
-    .key('distribution_channel')
+    .key('distribution-channel')
     .description(
       LocalizedString.presets.empty()['en-US']('Distribution Channel')
     )

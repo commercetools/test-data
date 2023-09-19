@@ -16,7 +16,7 @@ describe('inventory channel', () => {
           "fr": undefined,
         },
         "geoLocation": undefined,
-        "key": "inventory_channel",
+        "key": "inventory-channel",
         "name": {
           "de": undefined,
           "en": undefined,
@@ -45,7 +45,7 @@ describe('inventory channel', () => {
           },
         ],
         "geoLocation": undefined,
-        "key": "inventory_channel",
+        "key": "inventory-channel",
         "name": [
           {
             "__typename": "LocalizedString",
