@@ -1,9 +1,9 @@
 import { TStoreDraft } from '../../../types';
-import the_good_store from './the-good-store';
+import theGoodStore from './the-good-store';
 
 describe('with `the_good_store` preset', () => {
   it('should return a store draft preset', () => {
-    const storeDraft = the_good_store().build<TStoreDraft>();
+    const storeDraft = theGoodStore().build<TStoreDraft>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -25,7 +25,7 @@ describe('with `the_good_store` preset', () => {
   });
 
   it('should return a store draft preset preset when built for graphql', () => {
-    const storeDraft = the_good_store().buildGraphql<TStoreDraft>();
+    const storeDraft = theGoodStore().buildGraphql<TStoreDraft>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "__typename": "StoreDraft",

@@ -1,5 +1,5 @@
-import the_good_store from './the-good-store';
+import theGoodStore from './the-good-store';
 
-const presets = { the_good_store };
+const presets = { theGoodStore };
 
 export default presets;
