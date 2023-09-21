@@ -1,11 +1,11 @@
-import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
+import { LocalizedString } from '@commercetools-test-data/commons';
 import {
+  AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
   AttributeBooleanTypeDraft,
   AttributeTextTypeDraft,
   AttributeLocalizedTextTypeDraft,
-} from '@commercetools-test-data/attribute-type';
-import { LocalizedString } from '@commercetools-test-data/commons';
+} from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
 

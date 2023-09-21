@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const euTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
-  .EUTaxCategory()
+const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
+  .vatStandardEu()
   .build<TTaxCategoryDraft>();
 
 const purpleMinimalistAbstractPaintingProductTypeDraft =
@@ -62,7 +62,7 @@ const purpleMinimalistAbstractPainting = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(euTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodstore.purpleMinimalistAbstractPainting01()
