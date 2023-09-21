@@ -58,14 +58,14 @@ const productTypes = async () => {
   console.log('Found ' + types.length + ' product types');
 
   const header =
-    "import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';\n" +
+    "import { LocalizedString } from '@commercetools-test-data/commons';\n" +
     'import {\n' +
+    '  AttributeDefinitionDraft,\n' +
     '  AttributeEnumTypeDraft,\n' +
     '  AttributeBooleanTypeDraft,\n' +
     '  AttributeTextTypeDraft,\n' +
     '  AttributeLocalizedTextTypeDraft,\n' +
-    "} from '@commercetools-test-data/attribute-type';\n" +
-    "import { LocalizedString } from '@commercetools-test-data/commons';\n" +
+    "} from '../../../../index';\n" +
     "import type { TProductTypeDraftBuilder } from '../../../types';\n" +
     "import * as ProductTypeDraft from '../../index';\n" +
     '\n';
@@ -146,7 +146,7 @@ const productTypes = async () => {
 
     await writeFile(
       content,
-      'models/product-type/src/product-type-draft/presets',
+      'models/product-type/src/product-type/product-type-draft/presets',
       type.key
     );
     productTypesMapping.push({
@@ -156,7 +156,7 @@ const productTypes = async () => {
   }
   await writeFile(
     buildIndexFile(productTypesMapping),
-    'models/product-type/src/product-type-draft/presets',
+    'models/product-type/src/product-type/product-type-draft/presets',
     'index'
   );
 };
