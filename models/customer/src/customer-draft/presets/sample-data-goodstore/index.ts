@@ -1,5 +1,6 @@
-import samSmith from './sebastian-smith';
+import jenniferJones from './jennifer-jones';
+import sebastianSmith from './sebastian-smith';
 
-const presets = { samSmith };
+const presets = { jenniferJones, sebastianSmith };
 
 export default presets;
