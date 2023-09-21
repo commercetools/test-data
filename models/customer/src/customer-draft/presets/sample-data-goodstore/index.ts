@@ -1,4 +1,4 @@
-import samSmith from './sam-smith';
+import samSmith from './sebastian-smith';
 
 const presets = { samSmith };
 

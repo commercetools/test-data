@@ -6,8 +6,8 @@ import {
   oneOf,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { authenticationMode } from './constants';
 import { TCustomer } from './types';
-
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/projects/customers
@@ -42,7 +42,7 @@ const generator = Generator<TCustomer>({
     customerGroup: null,
     custom: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),
-    authenticationMode: 'password',
+    authenticationMode: oneOf(...Object.values(authenticationMode)),
   },
 });
 

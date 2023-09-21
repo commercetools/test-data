@@ -26,6 +26,7 @@ const empty = (): TCustomerDraftBuilder =>
     .defaultShippingAddress(undefined)
     .shippingAddresses(undefined)
     .custom(undefined)
-    .locale(undefined);
+    .locale(undefined)
+    .authenticationMode(undefined);
 
 export default empty;
