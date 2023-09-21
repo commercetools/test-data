@@ -1,4 +1,5 @@
 import { AttributeType } from '@commercetools/platform-sdk';
+import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
 import { getFolder } from './ctp/config';
 import {
   addEntry,
@@ -7,11 +8,12 @@ import {
   buildIndexFile,
   formatLocalizedString,
   IndexFile,
+  notEmpty,
   writeFile,
 } from './ctp/helpers';
 import { getProductTypes } from './ctp/product-types';
 
-const addAttribute = (attributeType: AttributeType) => {
+const resolveMappedType = (attributeType: AttributeType) => {
   let type;
   let value;
   switch (attributeType.name) {
@@ -23,25 +25,26 @@ const addAttribute = (attributeType: AttributeType) => {
       type = 'AttributeTextTypeDraft';
       value = "name('text')";
       break;
-    case 'ltext':
-      type = 'AttributeLocalizedTextTypeDraft';
-      value = "name('ltext')";
-      break;
-    case 'lenum':
-      type = 'AttributeLocalizedEnumTypeDraft';
-      break;
-    case 'reference':
-      type = 'AttributeReferenceTypeDraft';
-      value = "name('reference')";
-      break;
-    case 'set':
-      type = 'AttributeLocalizedTextSetTypeDraft';
-      value = "name('reference')";
-      break;
+    // case 'ltext':
+    //   type = 'AttributeLocalizedTextTypeDraft';
+    //   value = "name('ltext')";
+    //   break;
+    // case 'lenum':
+    //   type = 'AttributeLocalizedEnumTypeDraft';
+    //   break;
     default:
-      console.log('Define mapper for attribute type ' + attributeType.name);
+      console.log(
+        'Define mapper for attribute type ' + attributeType.name,
+        attributeType
+      );
   }
-  type === undefined && console.log(attributeType);
+  return { type, value };
+};
+const addAttribute = (attributeType: AttributeType) => {
+  const { type, value } = resolveMappedType(attributeType);
+  if (type === undefined) {
+    return '';
+  }
   return (
     '        .type(\n' +
     '          ' +
@@ -51,6 +54,20 @@ const addAttribute = (attributeType: AttributeType) => {
     '\n' +
     '        )\n'
   );
+};
+
+const resolveAttributeImports = (attributes?: AttributeDefinition[]) => {
+  return [
+    'AttributeDefinitionDraft',
+    ...new Set(
+      attributes
+        ?.map((attribute) => {
+          const { type } = resolveMappedType(attribute.type);
+          return type;
+        })
+        .filter(notEmpty)
+    ),
+  ];
 };
 
 const productTypes = async () => {
@@ -73,7 +90,23 @@ const productTypes = async () => {
   const productTypesMapping: Array<IndexFile> = [];
 
   for (const type of types) {
-    let content = header;
+    const attributes = resolveAttributeImports(type.attributes);
+    let content =
+      "import { LocalizedString } from '@commercetools-test-data/commons';\n";
+    if (attributes && attributes.length > 0) {
+      content += 'import {\n';
+      content += attributes
+        .map(
+          (item) => `  ${item},
+`
+        )
+        .join('');
+      content += "} from '../../../../index';\n";
+    }
+    content +=
+      "import type { TProductTypeDraftBuilder } from '../../../types';\n" +
+      "import * as ProductTypeDraft from '../../index';\n" +
+      '\n';
     if (!type.key) {
       console.log('No key available for ' + type.name);
       continue;

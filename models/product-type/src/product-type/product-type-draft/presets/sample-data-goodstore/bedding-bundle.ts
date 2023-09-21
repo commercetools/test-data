@@ -1,11 +1,5 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import {
-  AttributeDefinitionDraft,
-  AttributeEnumTypeDraft,
-  AttributeBooleanTypeDraft,
-  AttributeTextTypeDraft,
-  AttributeLocalizedTextTypeDraft,
-} from '../../../../index';
+import { AttributeDefinitionDraft } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
 
@@ -25,7 +19,6 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB']('description of the bundle product')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('SingleLine'),
 
@@ -33,16 +26,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .empty()
         .name('product-spec')
         .label(LocalizedString.presets.empty()['en-GB']('Product Spec'))
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
-        .inputHint('SingleLine'),
-
-      AttributeDefinitionDraft.presets
-        .empty()
-        .name('blanket')
-        .label(LocalizedString.presets.empty()['en-GB']('Blanket'))
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
-        .attributeConstraint('None')
         .inputHint('SingleLine'),
 
       AttributeDefinitionDraft.presets
@@ -54,7 +38,6 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
             ['en-GB']('Products of this bundle')
             ['de-DE']('Produkte dieses Bundles')
         )
-        .type(AttributeLocalizedTextSetTypeDraft.random().name('reference'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
     ]);

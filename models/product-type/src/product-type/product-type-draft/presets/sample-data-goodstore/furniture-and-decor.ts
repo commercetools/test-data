@@ -1,10 +1,7 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
-  AttributeEnumTypeDraft,
   AttributeBooleanTypeDraft,
-  AttributeTextTypeDraft,
-  AttributeLocalizedTextTypeDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -34,7 +31,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
             )
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('MultiLine'),
 
@@ -44,7 +40,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets.empty()['en-GB']('Color')['de-DE']('Farbe')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
 
@@ -54,7 +49,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets.empty()['en-GB']('Finish')['de-DE'](' Fertig')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
 
@@ -67,7 +61,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB']('Color Label')
             ['de-DE']('Farbetikett')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -81,7 +74,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB']('Finish Label')
             ['de-DE'](' Fertiges Etikett')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -106,7 +98,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .inputTip(
           LocalizedString.presets.empty()['en-GB']('size set as a string value')
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -122,7 +113,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'Product description, made a custom attribute so product description is not used for search results.'
             )
         )
-        .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('SingleLine'),
 
@@ -137,7 +127,6 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'used to set the colors and labels displayed in the color filter on PLP'
             )
         )
-        .type(AttributeLocalizedEnumTypeDraft.random().undefined)
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),

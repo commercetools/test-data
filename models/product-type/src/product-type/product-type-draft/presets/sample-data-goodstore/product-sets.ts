@@ -1,11 +1,5 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import {
-  AttributeDefinitionDraft,
-  AttributeEnumTypeDraft,
-  AttributeBooleanTypeDraft,
-  AttributeTextTypeDraft,
-  AttributeLocalizedTextTypeDraft,
-} from '../../../../index';
+import { AttributeDefinitionDraft } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
 
@@ -20,7 +14,6 @@ const productSets = (): TProductTypeDraftBuilder =>
         .empty()
         .name('type')
         .label(LocalizedString.presets.empty()['en-GB']('Type')['de-DE']('Typ'))
-        .type(AttributeLocalizedTextSetTypeDraft.random().name('reference'))
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
