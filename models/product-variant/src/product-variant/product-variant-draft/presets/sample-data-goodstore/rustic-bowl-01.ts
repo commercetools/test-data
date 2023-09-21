@@ -27,9 +27,11 @@ const rusticBowl01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5105, h: 3280 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes 1 bowl' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 bowl',
+        'de-DE': '- Enthält 1 Schüssel',
+        'en-US': '- Includes 1 bowl',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This square wooden bowl is versatile and can be used for a variety of purposes, from serving salads and snacks to holding fruits and vegetables. It is ideal for casual or rustic dining settings and can add a touch of warmth and natural beauty to any table.  The square wooden bowl is a practical and stylish choice for serving and holding food. Its natural beauty and durability make it a popular choice for many different types of cuisine and dining occasions.',

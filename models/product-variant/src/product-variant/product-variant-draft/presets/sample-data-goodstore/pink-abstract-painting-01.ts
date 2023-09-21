@@ -27,9 +27,11 @@ const pinkAbstractPainting01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3873, h: 3873 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Acrylic on canvas\n- 2ft by 2ft' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Acrylic on canvas\n- 2ft by 2ft',
+        'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
+        'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A pink abstract painting is a vibrant and eye-catching work of art that can evoke a range of emotions and interpretations. The painting is created with acrylic paints on canvas.  The composition of the painting is abstract, with no recognizable objects or figures. The use of pink in the painting may be symbolic, representing love, femininity, or energy.  The painting can be hung on a wall as part of a gallery grouping or as a statement piece that dominates the room. The pink color scheme of the painting can create a powerful focal point, drawing the eye towards it and creating a sense of energy.  Overall, a pink abstract painting is a bold and expressive work of art that can add a sense of vitality and excitement to any space. Its vibrant color scheme and abstract composition can create a sense of mystery and intrigue, inviting viewers to interpret and connect with the painting in their own way.',

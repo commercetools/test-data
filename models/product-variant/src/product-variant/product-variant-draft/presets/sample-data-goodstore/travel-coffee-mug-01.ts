@@ -29,6 +29,9 @@ const travelCoffeeMug01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Insulated \n- Suitable for both cold and hot drinks',
+        'de-DE':
+          '- Isoliert\n- Sowohl für kalte als auch heiße Getränke geeignet',
+        'en-US': '- Insulated \n- Suitable for both cold and hot drinks',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -38,8 +41,12 @@ const travelCoffeeMug01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Der Travel Coffee Mug ist für unterwegs konzipiert. Der Becher hat ein Fassungsvermögen von etwa 12 bis 20 Unzen und ist so konzipiert, dass er Getränke über einen längeren Zeitraum heiß oder kalt hält. Dies wird durch die Verwendung einer Isolierung erreicht, die dazu beiträgt, die Temperatur des Getränks im Inneren des Bechers aufrechtzuerhalten.  Der Travel Coffee Mug hat eine Vielzahl von Funktionen, darunter einen auslaufsicheren Deckel, der sicher befestigt werden kann, um ein Auslaufen oder Verschütten zu verhindern, und einen Griff oder Griff, der das Halten erleichtert, auch beim Gehen oder Fahren.  Dieser Reisekaffeebecher ist so konzipiert, dass er in Standard-Getränkehalter in Autos passt.  Insgesamt ist dieser Reisekaffeebecher ein praktisches und praktisches Trinkgefäß, das sich ideal für alle eignet, die unterwegs ein heißes oder kaltes Getränk genießen. Seine robuste Konstruktion und sein isoliertes Design machen ihn zu einer beliebten Wahl für Pendler, Reisende und Outdoor-Enthusiasten.',
       }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#FFF' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'White' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
     ]);
 
 export default travelCoffeeMug01;

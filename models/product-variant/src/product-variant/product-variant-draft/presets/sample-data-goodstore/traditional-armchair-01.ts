@@ -39,9 +39,11 @@ const traditionalArmchair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Cotton upholstery' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Cotton upholstery',
+        'de-DE': '- Baumwollpolsterung',
+        'en-US': '- Cotton upholstery',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A traditional armchair with a geometric pattern has a classic design with a touch of modern flair. The chair has a wooden frame and legs. The chair has a high back, providing a comfortable place to sit and relax. The cushioning is plush, offering a soft feel to the seat and backrest. The geometric pattern adds a visual interest and texture to the overall look of the chair, providing a subtle yet eye-catching element to the decor of the room.  Overall, a traditional armchair with a geometric pattern could be a great addition to a living room, study, or bedroom, offering both comfort and style to the space.',
@@ -56,8 +58,14 @@ const traditionalArmchair01 = (): TProductVariantDraftBuilder =>
           key: '#F5F5DC',
           label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#D0C1B0' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Eggshell' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#D0C1B0', 'de-DE': '#D0C1B0', 'en-US': '#D0C1B0' }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Eggshell',
+        'de-DE': 'Eierschale',
+        'en-US': 'Eggshell',
+      }),
     ]);
 
 export default traditionalArmchair01;

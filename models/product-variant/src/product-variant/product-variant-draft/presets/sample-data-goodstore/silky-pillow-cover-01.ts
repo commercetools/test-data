@@ -27,9 +27,11 @@ const silkyPillowCover01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6016, h: 4011 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Pillow not included' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Pillow not included',
+        'de-DE': '- Kissen nicht im Lieferumfang enthalten',
+        'en-US': '- Pillow not included',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A silk pillowcase is a luxurious and soft pillow cover made from natural silk fibers. Silk is a natural protein fiber that is produced by certain insect larvae, including the silkworm. The fibers are known for their softness, smoothness, and natural shine, giving silk pillowcases a luxurious and elegant look and feel.  Silk pillowcases are known for their many benefits for the skin and hair. The smooth texture of silk helps reduce friction and irritation on the skin, reducing the risk of wrinkles and fine lines. It also helps prevent hair breakage and frizz, leaving hair looking smoother and more manageable.  Silk pillowcases require some special care, as they are delicate and can easily be damaged by harsh detergents or rough handling. They should be washed by hand or in a gentle cycle with mild detergent, and dried flat or hung to dry.  Overall, a silk pillowcase is a luxurious and elegant choice for any bedroom. Its many benefits for the skin and hair, as well as its soft and smooth texture, make it a popular choice among those looking for a comfortable and indulgent sleeping experience.',
@@ -44,8 +46,12 @@ const silkyPillowCover01 = (): TProductVariantDraftBuilder =>
           key: '#C0C0C0',
           label: { 'de-DE': 'Silber', 'en-GB': 'Silver', 'en-US': 'Silver' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#8B9299' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Steel' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#8B9299', 'de-DE': '#8B9299', 'en-US': '#8B9299' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Steel', 'de-DE': 'Stahl', 'en-US': 'Steel' }),
     ]);
 
 export default silkyPillowCover01;

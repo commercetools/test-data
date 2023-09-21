@@ -1,6 +1,5 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import {
-  AttributeReferenceTypeDraft,
   AttributeEnumTypeDraft,
   AttributeBooleanTypeDraft,
   AttributeTextTypeDraft,

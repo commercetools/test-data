@@ -41,11 +41,17 @@ const slateArmchair01 = (): TProductVariantDraftBuilder =>
         'en-US':
           'A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.',
       }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes ottoman',
+        'de-DE': '- Inklusive Ottomane',
+        'en-US': '- Includes ottoman',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes ottoman' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#989898' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Slate' }),
+        .name('color')
+        .value({ 'en-GB': '#989898', 'de-DE': '#989898', 'en-US': '#989898' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Slate', 'de-DE': 'Schiefer', 'en-US': 'Slate' }),
     ]);
 
 export default slateArmchair01;

@@ -45,9 +45,11 @@ const smallWoodenBowl01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 7696, h: 5133 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes 1 bowl' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 bowl',
+        'de-DE': '- Enthält 1 Schüssel',
+        'en-US': '- Includes 1 bowl',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This wooden bowl is designed to hold small servings of food or other small items. It is ideal for serving small portions of food, such as nuts, candies, dips, or sauces.  It can also be used as a decorative item, as its natural material and unique texture add warmth and character to any setting. It can be used as a standalone piece or as part of a larger set, and can be styled with other wooden pieces to create a cohesive look.  The bowl is easy to clean and maintain, and can be washed with soap and water or wiped clean with a damp cloth. It should be allowed to dry thoroughly before use to prevent warping or cracking.  Overall, a small round wooden bowl is a versatile and functional dish that adds a touch of natural warmth and character to any setting. Its simplicity and durability make it a staple in many kitchens and dining rooms.',

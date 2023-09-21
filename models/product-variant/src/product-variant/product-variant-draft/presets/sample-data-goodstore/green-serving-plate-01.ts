@@ -41,9 +41,11 @@ const greenServingPlate01 = (): TProductVariantDraftBuilder =>
         'en-US':
           'A stylish green serving plate is a dish designed to serve food with an added touch of elegance and sophistication.   The plate is colored in a stylish green shade, which can vary from a soft pastel green to a vibrant lime green. The color is complemented by a glossy or matte finish, adding depth and texture to the plate.  The shape of the plate can vary, with some curved edges for added visual interest. The plate has a decorative pattern and texture.  A stylish green serving plate is ideal for serving a variety of foods, including appetizers, entrees, and desserts. Overall, a stylish green serving plate is a beautiful and functional choice for serving food. Its unique design and color make it a statement piece on any table, while its durability and practicality ensure it can be used for everyday dining as well as special occasions.',
       }),
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes 1 plate' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 plate',
+        'de-DE': '- Enthält 1 Teller',
+        'en-US': '- Includes 1 plate',
+      }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

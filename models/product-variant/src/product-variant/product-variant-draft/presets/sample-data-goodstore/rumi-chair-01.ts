@@ -27,9 +27,11 @@ const rumiChair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2400, h: 3200 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Dry clean only' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Dry clean only',
+        'de-DE': '- Nur chemische Reinigung',
+        'en-US': '- Dry clean only',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A lilac velvet chair with a brass frame is an elegant and luxurious piece of furniture. The soft, plush velvet material of the chair provides a comfortable and cozy seating experience. The lilac color of the velvet fabric is soft and delicate, adding a touch of femininity to the overall look of the chair.  The brass frame of the chair is sturdy and durable, providing a solid foundation for the seating area. The brass color of the frame adds a touch of warmth and sophistication to the overall look of the chair. The combination of the lilac velvet and brass frame creates a striking contrast, making this chair a statement piece in any room.  The chair features a high backrest with a curved design, providing support for the back and shoulders. The chair is designed for both style and comfort, making it a great addition to any living room, bedroom, or office space.',
@@ -44,10 +46,18 @@ const rumiChair01 = (): TProductVariantDraftBuilder =>
           key: '#A020F0',
           label: { 'de-DE': 'Lila', 'en-GB': 'Purple', 'en-US': 'Purple' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#968289' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Mauve' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#DAB555' }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Gold' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#968289', 'de-DE': '#968289', 'en-US': '#968289' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Mauve', 'de-DE': 'Mauve', 'en-US': 'Mauve' }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#DAB555', 'de-DE': '#DAB555', 'en-US': '#DAB555' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Gold', 'de-DE': 'Gold', 'en-US': 'Gold' }),
     ]);
 
 export default rumiChair01;

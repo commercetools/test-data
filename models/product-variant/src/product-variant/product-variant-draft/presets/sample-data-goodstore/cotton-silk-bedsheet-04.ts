@@ -41,8 +41,12 @@ const cottonSilkBedsheet04 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Machine washable\n- 600 thread count\n- Includes 1 fitted sheet',
       }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Salmon' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#ffc0cb' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Salmon', 'de-DE': 'Lachs', 'en-US': 'Salmon' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#ffc0cb', 'de-DE': '#ffc0cb', 'en-US': '#ffc0cb' }),
       AttributeDraft.random().name('size').value({ 'en-GB': 'Twin' }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

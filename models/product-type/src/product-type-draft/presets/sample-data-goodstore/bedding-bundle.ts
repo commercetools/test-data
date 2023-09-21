@@ -1,6 +1,5 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import {
-  AttributeReferenceTypeDraft,
   AttributeEnumTypeDraft,
   AttributeBooleanTypeDraft,
   AttributeTextTypeDraft,
@@ -29,6 +28,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-spec')
@@ -36,6 +36,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('blanket')
@@ -43,6 +44,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-ref')

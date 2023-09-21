@@ -33,9 +33,11 @@ const ashenRug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4500, h: 3000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- 5ft x 7ft\n- Dry-clean only' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- 5ft x 7ft\n- Dry-clean only',
+        'de-DE': '- 5 Fuß x 7 Fuß\n- Nur chemische Reinigung',
+        'en-US': '- 5ft x 7ft\n- Dry-clean only',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A modern shag carpet is a type of rug or carpet with a long, plush pile that is known for its softness and comfort. Unlike traditional shag carpets, which were popular in the 1970s and had a somewhat shaggy and unkempt appearance, modern shag carpets are more refined and have a sleek, contemporary look.  In addition to their softness and comfort, modern shag carpets are also known for their ability to absorb sound and create a cozy, inviting atmosphere. They are often used in living rooms, bedrooms, and other spaces where comfort and style are important.  Overall, a modern shag carpet is a luxurious and stylish addition to any home. Its soft, plush texture and sleek, contemporary look make it a popular choice for those looking to add comfort and style to their living space.',
@@ -50,8 +52,12 @@ const ashenRug01 = (): TProductVariantDraftBuilder =>
           key: '#808080',
           label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#E3E4E4' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Ashen' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#E3E4E4', 'de-DE': '#E3E4E4', 'en-US': '#E3E4E4' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Ashen', 'de-DE': 'Aschfahl', 'en-US': 'Ashen' }),
     ]);
 
 export default ashenRug01;

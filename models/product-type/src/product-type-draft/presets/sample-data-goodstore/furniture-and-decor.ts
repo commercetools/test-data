@@ -1,6 +1,5 @@
 import { AttributeDefinitionDraft } from '@commercetools-test-data/attribute-definition';
 import {
-  AttributeReferenceTypeDraft,
   AttributeEnumTypeDraft,
   AttributeBooleanTypeDraft,
   AttributeTextTypeDraft,
@@ -38,6 +37,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('MultiLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
@@ -47,6 +47,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('finish')
@@ -56,6 +57,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('colorlabel')
@@ -69,6 +71,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('finishlabel')
@@ -82,6 +85,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('new-arrival')
@@ -94,6 +98,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .type(AttributeBooleanTypeDraft.random().name('boolean'))
         .attributeConstraint('None')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('size')
@@ -105,6 +110,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-description')
@@ -119,6 +125,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizedTextTypeDraft.random().name('ltext'))
         .attributeConstraint('SameForAll')
         .inputHint('SingleLine'),
+
       AttributeDefinitionDraft.presets
         .empty()
         .name('color-filter')

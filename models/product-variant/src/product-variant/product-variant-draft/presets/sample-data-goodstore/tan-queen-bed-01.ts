@@ -27,9 +27,11 @@ const tanQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Assembly included in delivery' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Assembly included in delivery',
+        'de-DE': '- Montage im Lieferumfang enthalten',
+        'en-US': '- Assembly included in delivery',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A queen bed with a padded leather headboard is a stylish and sophisticated piece of furniture. The headboard is tall and wide, featuring a padded design with luxurious leather upholstery that provides a comfortable place to lean against when sitting up in bed. The leather is soft and supple, adding a touch of elegance and refinement to the bed.  The bed frame is made of sturdy wood and is finished in a complementary color to the leather headboard. The bed also has a platform base, providing a solid foundation for the mattress while also eliminating the need for a box spring.  This type of bed is often favored in contemporary or transitional design styles and can be paired with a range of bedding and decor to create a luxurious and inviting sleeping space. Overall, a queen bed with a padded leather headboard is a statement piece that adds both comfort and style to any bedroom.',
@@ -44,12 +46,20 @@ const tanQueenBed01 = (): TProductVariantDraftBuilder =>
           key: '#D2B48C',
           label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
         }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Tan' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#503A01' }),
       AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Briarsmoke' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#5B523C' }),
+        .name('colorlabel')
+        .value({ 'en-GB': 'Tan', 'de-DE': 'Bräunen', 'en-US': 'Tan' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#503A01', 'de-DE': '#503A01', 'en-US': '#503A01' }),
+      AttributeDraft.random().name('finishlabel').value({
+        'en-GB': 'Briarsmoke',
+        'de-DE': 'Briarsmoke',
+        'en-US': 'Briarsmoke',
+      }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#5B523C', 'de-DE': '#5B523C', 'en-US': '#5B523C' }),
     ]);
 
 export default tanQueenBed01;

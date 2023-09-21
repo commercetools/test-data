@@ -68,7 +68,7 @@ const serializeAttributeValue = (
   return attributeValue;
 };
 
-const handleVariant = (
+const handleVariant = async (
   variant: ProductVariant,
   identifier: string,
   productType: ProductType
@@ -133,7 +133,7 @@ const handleVariant = (
   content += '    ])\n';
   content += '\nexport default ' + functionName + ';';
 
-  writeFile(
+  await writeFile(
     content,
     'models/product-variant/src/product-variant/product-variant-draft/presets',
     variantIdentifier
@@ -155,17 +155,19 @@ const products = async () => {
     const productType = product.productType.obj!;
     const identifier = product.key || product.masterData.staged.name['en-GB'];
     variantMapping.push(
-      handleVariant(
+      await handleVariant(
         product.masterData.current.masterVariant,
         identifier,
         productType
       )
     );
     for (const variant of product.masterData.current.variants) {
-      variantMapping.push(handleVariant(variant, identifier, productType));
+      variantMapping.push(
+        await handleVariant(variant, identifier, productType)
+      );
     }
   }
-  writeFile(
+  await writeFile(
     buildIndexFile(variantMapping),
     'models/product-variant/src/product-variant/product-variant-draft/presets',
     'index'

@@ -36,6 +36,10 @@ const cocktailShaker01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB':
           '- Includes built in strainer\n- Stainless steel\n- Dishwasher safe',
+        'de-DE':
+          '- Inklusive eingebautem Sieb\n- Edelstahl\n- Spülmaschinenfest',
+        'en-US':
+          '- Includes built in strainer\n- Stainless steel\n- Dishwasher safe',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

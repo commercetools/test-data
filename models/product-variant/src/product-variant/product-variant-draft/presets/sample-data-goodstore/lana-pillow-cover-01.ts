@@ -30,6 +30,10 @@ const lanaPillowCover01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB':
           '- Machine washable\n- Pillow not included\n- Has a zip enclosure',
+        'de-DE':
+          '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten\n- Verfügt über ein Reißverschlussgehäuse',
+        'en-US':
+          '- Machine washable\n- Pillow not included\n- Has a zip enclosure',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -45,10 +49,14 @@ const lanaPillowCover01 = (): TProductVariantDraftBuilder =>
           key: '#808080',
           label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#ABA9A7' }),
       AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Feather Gray' }),
+        .name('color')
+        .value({ 'en-GB': '#ABA9A7', 'de-DE': '#ABA9A7', 'en-US': '#ABA9A7' }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Feather Gray',
+        'de-DE': 'Federgrau',
+        'en-US': 'Feather Gray',
+      }),
     ]);
 
 export default lanaPillowCover01;

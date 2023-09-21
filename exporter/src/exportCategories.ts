@@ -91,7 +91,7 @@ const categories = async () => {
 
     content += '\n' + '\n' + 'export default ' + functionName + ';';
 
-    writeFile(
+    await writeFile(
       content,
       'models/category/src/category-draft/presets',
       identifier
@@ -101,7 +101,7 @@ const categories = async () => {
       fileName: buildFilename(identifier),
     });
   }
-  writeFile(
+  await writeFile(
     buildIndexFile(categoryMapping),
     'models/category/src/category-draft/presets',
     'index'

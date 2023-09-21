@@ -27,9 +27,11 @@ const iceBucket01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5072, h: 4992 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Stainless steel\n- Dishwasher safe' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Stainless steel\n- Dishwasher safe',
+        'de-DE': '- Edelstahl\n- Spülmaschinenfest',
+        'en-US': '- Stainless steel\n- Dishwasher safe',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.',

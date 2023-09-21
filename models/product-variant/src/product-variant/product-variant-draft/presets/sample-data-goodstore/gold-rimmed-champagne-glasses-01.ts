@@ -48,6 +48,10 @@ const goldRimmedChampagneGlasses01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB':
           '- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims',
+        'de-DE':
+          '- Set mit 5 Gläsern\n- Importierter Kristall\n- Goldpolitur an den Felgen',
+        'en-US':
+          '- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

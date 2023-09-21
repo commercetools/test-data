@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { LocalizedString } from '@commercetools/platform-sdk';
+import prettier from 'prettier';
 import { getFolder, getLocales } from './config';
 
 export function notEmpty<TValue>(
@@ -74,7 +75,7 @@ export const addEntry = (
   return output;
 };
 
-export const writeFile = (
+export const writeFile = async (
   content: string,
   subdir: string,
   filename: string
@@ -83,7 +84,13 @@ export const writeFile = (
   if (!existsSync(dir)) {
     mkdirSync(dir, { recursive: true });
   }
-  writeFileSync(dir + '/' + buildFilename(filename) + '.ts', content);
+
+  const fcontent = await prettier.format(content, {
+    trailingComma: 'es5',
+    singleQuote: true,
+    parser: 'typescript',
+  });
+  writeFileSync(dir + '/' + buildFilename(filename) + '.ts', fcontent);
 };
 
 export type IndexFile = { functionName: string; fileName: string };
