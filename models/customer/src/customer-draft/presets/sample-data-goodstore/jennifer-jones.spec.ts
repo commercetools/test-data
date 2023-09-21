@@ -131,7 +131,7 @@ describe('with the customer preset `jenniferJones`', () => {
   });
 
   it('should return a draft when built for GraphQL', () => {
-    const customer = jenniferJones().build<TCustomerDraft>();
+    const customer = jenniferJones().build<TCustomerDraftGraphql>();
 
     expect(customer).toMatchInlineSnapshot(`
       {

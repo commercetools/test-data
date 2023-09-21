@@ -1,5 +1,4 @@
 import { TAddressDraft, TAddressDraftGraphql } from '../../../types';
-// import samSmithAddresses from './sam-smith-addresses';
 import sebastianSmithAddress from './sebastian-smith-address';
 
 describe('with the presets for sebastianSmithAddress', () => {

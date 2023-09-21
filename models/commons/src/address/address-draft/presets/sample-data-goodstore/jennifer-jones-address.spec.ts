@@ -73,7 +73,7 @@ describe('with the presets for jenniferJonesAddress', () => {
   });
 
   it('should return a address draft when built for GraphQL', () => {
-    const address = jenniferJonesAddress().build<TAddressDraft>();
+    const address = jenniferJonesAddress().build<TAddressDraftGraphql>();
 
     expect(address).toMatchInlineSnapshot(`
       {
