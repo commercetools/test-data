@@ -1,6 +1,5 @@
 import * as TaxRateDraft from '../../../../tax-rate/tax-rate-draft';
 import * as TaxCategoryDraft from '../../index';
-
 const vatStandardEu = () =>
   TaxCategoryDraft.presets
     .empty()

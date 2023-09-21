@@ -27,9 +27,11 @@ const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3148, h: 2903 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Acrylic on canvas\n- 2ft by 2ft' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Acrylic on canvas\n- 2ft by 2ft',
+        'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
+        'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
+      }),
       AttributeDraft.random().name('product-description').value({
         'de-DE':
           'Ein violettes minimalistisches abstraktes Gemälde ist ein einfaches und elegantes Kunstwerk, das auf der Verwendung minimaler Elemente und einer begrenzten Farbpalette beruht, um eine auffällige visuelle Wirkung zu erzielen. Das Gemälde entsteht mit Acrylfarben auf Leinwand.  Das Farbschema des Gemäldes ist überwiegend lila, mit wenig oder gar keiner Verwendung anderer Farben. Die Verwendung von Lila im Gemälde kann symbolisch sein und Kreativität, Spiritualität oder Mysterium darstellen.  Das Gemälde kann als Teil einer Galeriegruppe an die Wand gehängt werden. Die minimalistische Natur des Gemäldes ermöglicht es, sich nahtlos in eine Vielzahl von Einrichtungsstilen und Farbschemata einzufügen.  Insgesamt ist ein purpurfarbenes minimalistisches abstraktes Gemälde ein raffiniertes und dezentes Kunstwerk, das jedem Raum ein Gefühl von Gelassenheit und Harmonie verleihen kann. Seine einfache Komposition und die begrenzte Farbpalette können eine beruhigende und meditative Atmosphäre schaffen, während die Verwendung von Lila dem Gemälde ein Gefühl von Geheimnis und Tiefe verleiht.',

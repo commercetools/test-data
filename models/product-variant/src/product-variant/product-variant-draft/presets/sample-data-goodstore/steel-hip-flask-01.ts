@@ -27,9 +27,11 @@ const steelHipFlask01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5006, h: 6580 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Stainless steel' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Stainless steel',
+        'de-DE': '- Edelstahl',
+        'en-US': '- Stainless steel',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.',

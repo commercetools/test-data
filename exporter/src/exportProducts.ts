@@ -172,7 +172,7 @@ const products = async () => {
 
     content += '\n' + 'export default ' + identifier + ';';
 
-    writeFile(
+    await writeFile(
       content,
       'models/product/src/product/product-draft/presets',
       product.key || product.masterData.staged.name['en-GB']

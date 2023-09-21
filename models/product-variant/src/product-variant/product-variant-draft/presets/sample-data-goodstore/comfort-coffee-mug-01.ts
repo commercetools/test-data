@@ -29,6 +29,8 @@ const comfortCoffeeMug01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Includes 1 mug\n- Dishwasher and microwave safe',
+        'de-DE': '- Enthält 1 Tasse\n- Spülmaschinen- und mikrowellengeeignet',
+        'en-US': '- Includes 1 mug\n- Dishwasher and microwave safe',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -44,8 +46,12 @@ const comfortCoffeeMug01 = (): TProductVariantDraftBuilder =>
           key: '#FFF',
           label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#FFF' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'White' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
     ]);
 
 export default comfortCoffeeMug01;

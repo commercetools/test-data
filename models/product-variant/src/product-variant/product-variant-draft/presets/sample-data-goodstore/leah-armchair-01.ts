@@ -27,9 +27,11 @@ const leahArmchair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2400, h: 3200 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Dry clean only' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Dry clean only',
+        'de-DE': '- Nur chemische Reinigung',
+        'en-US': '- Dry clean only',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A tufted armchair with brass legs is an elegant and luxurious piece of furniture. The chair typically features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the brass legs add a touch of glamour and sophistication. The legs give the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.',
@@ -44,10 +46,18 @@ const leahArmchair01 = (): TProductVariantDraftBuilder =>
           key: '#808080',
           label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#AAAAAA' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Gray' }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Brass' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#E9C55A' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#AAAAAA', 'de-DE': '#AAAAAA', 'en-US': '#AAAAAA' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Gray', 'de-DE': 'Grau', 'en-US': 'Gray' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Brass', 'de-DE': 'Messing', 'en-US': 'Brass' }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#E9C55A', 'de-DE': '#E9C55A', 'en-US': '#E9C55A' }),
     ]);
 
 export default leahArmchair01;

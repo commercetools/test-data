@@ -27,9 +27,11 @@ const chiantiWineGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2457, h: 3138 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 glasses',
+        'de-DE': '- Das Set enthält 6 Gläser',
+        'en-US': '- Set includes 6 glasses',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'The Chianti Wine Glass is specifically designed to enhance the experience of drinking red wine. It has a round or slightly tapered bowl that is larger than that of a white wine glass, allowing the wine to breathe and develop its full aroma and flavor.  The bowl of a red wine glass is wider at the base and tapers slightly towards the top, helping to concentrate the aromas of the wine and directing them towards the nose. The stem of the glass is typically long and slender, allowing the drinker to hold the glass without warming the wine with their body heat.  Overall, a red wine glass is a stylish and functional piece of glassware that is specifically designed to enhance the flavor and aroma of red wine. Its elegant design and attention to detail make it a popular choice for wine enthusiasts and casual drinkers alike.',

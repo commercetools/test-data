@@ -59,11 +59,17 @@ const ariaRug01 = (): TProductVariantDraftBuilder =>
           key: '#FFFFF0',
           label: { 'de-DE': 'Elfenbein', 'en-GB': 'Ivory', 'en-US': 'Ivory' },
         }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Dry clean only\n- 5ft x 7ft',
+        'de-DE': '- Nur chemische Reinigung\n- 5 Fuß x 7 Fuß',
+        'en-US': '- Dry clean only\n- 5ft x 7ft',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Dry clean only\n- 5ft x 7ft' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#DED6D1' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Ivory' }),
+        .name('color')
+        .value({ 'en-GB': '#DED6D1', 'de-DE': '#DED6D1', 'en-US': '#DED6D1' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Ivory', 'de-DE': 'Elfenbein', 'en-US': 'Ivory' }),
     ]);
 
 export default ariaRug01;

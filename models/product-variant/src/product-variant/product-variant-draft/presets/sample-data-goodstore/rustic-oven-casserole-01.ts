@@ -35,13 +35,19 @@ const rusticOvenCasserole01 = (): TProductVariantDraftBuilder =>
         'en-US':
           "A rustic ceramic oven casserole is a cooking dish made of ceramic that is designed to be used in the oven for baking or roasting casseroles, stews, or other dishes. It has a traditional and rustic look, often featuring earthy colors, textured surfaces, and uneven edges.  The ceramic material is thick and durable, allowing it to withstand high temperatures in the oven without cracking or chipping. It is also non-reactive, meaning it won't interact with acidic or spicy foods, ensuring that the flavors of the dish remain intact.  The rustic design of the ceramic oven casserole adds a touch of warmth and charm to the kitchen and dining area. It is perfect for serving hot and hearty meals, particularly during colder months.  To clean a rustic ceramic oven casserole, it is recommended to let it cool down after use before washing it with warm, soapy water. It should be dried thoroughly before storing to prevent any moisture from being trapped inside.  Overall, a rustic ceramic oven casserole is a practical and aesthetically pleasing cooking dish that adds a touch of warmth and character to any kitchen. Its sturdy construction and classic design make it a staple for home cooks and chefs alike.",
       }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Does not include lid',
+        'de-DE': '- Ohne Deckel',
+        'en-US': '- Does not include lid',
+      }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Terracotta',
+        'de-DE': 'Terrakotta',
+        'en-US': 'Terracotta',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Does not include lid' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Terracotta' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#E3793E' }),
+        .name('color')
+        .value({ 'en-GB': '#E3793E', 'de-DE': '#E3793E', 'en-US': '#E3793E' }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

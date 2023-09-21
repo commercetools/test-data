@@ -41,9 +41,11 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
         'en-US':
           'A double-walled glass espresso cup is a type of drinking vessel that is specifically designed for serving espresso. It is made of glass and features a double-walled construction, which means that there are two layers of glass that are separated by a small gap.  The double-walled design of the glass espresso cup provides several benefits. First, it helps to insulate the espresso, which keeps it hot for longer periods of time. Second, the double-walled construction keeps the outside of the cup cool to the touch, which makes it comfortable to hold even when the espresso inside is very hot.  The cup is typically small in size, with a capacity of around 2-3 ounces, which is the perfect size for a shot of espresso. The glass is also transparent, which allows you to see the rich, dark color of the espresso as it is poured and consumed.  The double-walled glass espresso cup is often paired with a matching saucer, which provides a stable base for the cup and also provides a place to set a small spoon or biscuit. Overall, the double-walled glass espresso cup is a stylish and functional way to enjoy the rich and complex flavors of a shot of espresso.',
       }),
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 4 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 4 glasses',
+        'de-DE': '- Das Set enthält 4 Gläser',
+        'en-US': '- Set includes 4 glasses',
+      }),
     ]);
 
 export default doubleWalledEspressoGlass01;

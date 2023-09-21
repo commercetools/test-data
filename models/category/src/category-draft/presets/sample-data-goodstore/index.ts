@@ -27,7 +27,6 @@ import tables from './tables';
 import theMinimalist from './the-minimalist';
 import theModernist from './the-modernist';
 import theTraditionalist from './the-traditionalist';
-
 const presets = {
   armchairs,
   bakeware,

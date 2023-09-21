@@ -30,6 +30,7 @@ const rectangleServingTray01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Hand wash only\n- Natural wood',
         'en-US': '- Hand wash only\n- Natural wood',
+        'de-DE': '- Handwäsche nur\n- Naturholz',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

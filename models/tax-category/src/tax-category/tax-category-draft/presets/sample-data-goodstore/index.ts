@@ -1,6 +1,6 @@
-import EUTaxCategory from './eu-tax-category';
-import EU2TaxCategory from './eu2-tax-category';
-
-const presets = { EUTaxCategory, EU2TaxCategory };
+import vatStandardEu from './vat-standard-eu';
+const presets = {
+  vatStandardEu,
+};
 
 export default presets;

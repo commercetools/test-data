@@ -27,13 +27,19 @@ const meadowRug03 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4500, h: 3000 }),
     ])
     .attributes([
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- 3ft x 5ft',
+        'de-DE': '- 3 Fuß x 5 Fuß',
+        'en-US': '- 3ft x 5ft',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- 3ft x 5ft' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#bed1e8' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Robbin Blue' }),
+        .name('color')
+        .value({ 'en-GB': '#bed1e8', 'de-DE': '#bed1e8', 'en-US': '#bed1e8' }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Robbin Blue',
+        'de-DE': 'Robbin Blue',
+        'en-US': 'Robbin Blue',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           "A plush area rug is a type of rug that is designed to be soft and comfortable underfoot. Plush rugs are characterized by their thick pile. The fibers are densely packed together, giving the rug a lush and luxurious feel.   Because of their softness and comfort, plush area rugs are often used in bedrooms, living rooms, and other areas where people spend a lot of time sitting or lounging on the floor. They are also a popular choice for nurseries and children's rooms, as they provide a safe and comfortable play area for kids.  Overall, a plush area rug is a cozy and inviting addition to any home. Its soft texture and luxurious feel make it a popular choice for those who want to create a warm and inviting atmosphere in their living space.",

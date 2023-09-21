@@ -27,9 +27,11 @@ const cubeJuteBasket01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4684, h: 3564 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Jute\n- Preassembled\n- 1ft x 1ft x 1ft' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Jute\n- Preassembled\n- 1ft x 1ft x 1ft',
+        'de-DE': '- Jute\n- Vormontiert\n- 1 Fuß x 1 Fuß x 1 Fuß',
+        'en-US': '- Jute\n- Preassembled\n- 1ft x 1ft x 1ft',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A cube jute basket for the living room is a practical and stylish storage solution that adds warmth and texture to the space. The basket is made from natural jute fibers, which are tightly woven together to create a sturdy and durable structure.  The cube shape of the basket is perfect for storing a variety of items, such as blankets, magazines, remote controls, or even small plants. The open top of the basket allows for easy access to its contents, while the sides provide a secure barrier to keep everything neatly contained.  The neutral color of the jute fibers complements a variety of decor styles, from bohemian to coastal to rustic. The basket can be placed on the floor or on a shelf, and its compact size makes it easy to move around as needed.',
@@ -44,8 +46,12 @@ const cubeJuteBasket01 = (): TProductVariantDraftBuilder =>
           key: '#D2B48C',
           label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#EEB348' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Jute' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#EEB348', 'de-DE': '#EEB348', 'en-US': '#EEB348' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Jute', 'de-DE': 'Jute', 'en-US': 'Jute' }),
     ]);
 
 export default cubeJuteBasket01;

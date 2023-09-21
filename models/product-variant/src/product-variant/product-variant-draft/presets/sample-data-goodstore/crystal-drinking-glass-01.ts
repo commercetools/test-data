@@ -27,9 +27,11 @@ const crystalDrinkingGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3000, h: 3000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 glasses',
+        'de-DE': '- Das Set enthält 6 Gläser',
+        'en-US': '- Set includes 6 glasses',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This Crystal Drinking Glass is made of high-quality, lead-free crystal glass that is thin and delicate, yet strong and durable. The crystal material of the highball glass enhances the appearance of the drink, making it appear more sparkling and colorful. It also enhances the aroma and flavor of the drink, allowing the drinker to fully appreciate the complexity of the ingredients.  The design of the glass is intended to accommodate the addition of ice, soda, or other mixers, while still leaving plenty of room for the drink itself. The wide mouth of the glass allows the drinker to smell the aroma of the drink, while the straight sides and smooth surface make it easy to sip and enjoy.  The crystal highball glass is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the crystal highball glass is a stylish and elegant piece of glassware that is perfect for serving tall, mixed drinks. Its delicate crystal material and intricate design make it a popular choice for special occasions and fine dining experiences.',

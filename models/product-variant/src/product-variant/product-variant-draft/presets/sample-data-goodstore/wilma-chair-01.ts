@@ -35,6 +35,8 @@ const wilmaChair01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Cushion covers are removable and machine washable',
+        'de-DE': '- Kissenbezüge sind abnehmbar und maschinenwaschbar',
+        'en-US': '- Cushion covers are removable and machine washable',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -44,12 +46,20 @@ const wilmaChair01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Ein getufteter armloser Futon-Stuhl hat ein einfaches und modernes Design mit gepolstertem Sitz und Rückenlehne mit getufteten Details für zusätzlichen Komfort und Stil. Dem Stuhl fehlen Armlehnen, um mehr Flexibilität und Benutzerfreundlichkeit zu ermöglichen. Die Polsterung besteht aus strapazierfähigem Stoff, der leicht zu reinigen und zu pflegen ist. Insgesamt ist ein getufteter Futonstuhl ohne Armlehnen ein praktisches und stilvolles Möbelstück, das in einer Vielzahl von Umgebungen verwendet werden kann, z. B. in einem Wohnzimmer, Schlafzimmer oder Heimbüro.',
       }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Cream' }),
       AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Black Iron' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#000' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#E4DCC1' }),
+        .name('colorlabel')
+        .value({ 'en-GB': 'Cream', 'de-DE': 'Creme', 'en-US': 'Cream' }),
+      AttributeDraft.random().name('finishlabel').value({
+        'en-GB': 'Black Iron',
+        'de-DE': 'Schwarzes Eisen',
+        'en-US': 'Black Iron',
+      }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#E4DCC1', 'de-DE': '#E4DCC1', 'en-US': '#E4DCC1' }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

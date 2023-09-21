@@ -27,9 +27,11 @@ const classicBeerMug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3606, h: 5409 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 mugs' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 mugs',
+        'de-DE': '- Das Set enthält 6 Tassen',
+        'en-US': '- Set includes 6 mugs',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           "This Classic Beer Mug has a thick and sturdy handle that makes it easy to hold and prevents the drinker's hand from warming the beer. The mug is made of glass. This design allows the beer to settle and develop its full flavor and aroma. The thick walls of the mug help to insulate the beer and keep it cold for longer.  The mug typically holds between 12 and 20 ounces of beer. The mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.",

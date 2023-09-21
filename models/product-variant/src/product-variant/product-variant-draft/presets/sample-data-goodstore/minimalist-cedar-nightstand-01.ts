@@ -47,14 +47,18 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Der minimalistische Nachttisch aus Zedernholz wurde entwickelt, um eine einfache und funktionale Oberfläche für die Platzierung von Gegenständen neben einem Bett zu bieten. Der Nachttisch verfügt über ein klares und schlankes Design mit minimalen dekorativen Elementen, die der minimalistischen Ästhetik entsprechen.  Der Nachttisch ist aus natürlichem Zedernholz gefertigt, das für seine Haltbarkeit, Fäulnisbeständigkeit und attraktive Maserung bekannt ist. Das Holz wird mit einer leichten Beize oder einer klaren Beschichtung versehen, um die natürliche Schönheit des Holzes hervorzuheben.  Insgesamt ist ein minimalistischer Nachttisch aus Zedernholz eine stilvolle und funktionale Ergänzung für jedes Schlafzimmer. Sein klares und einfaches Design ergänzt eine Vielzahl von Einrichtungsstilen, und die natürliche Schönheit des Zedernholzes verleiht dem Raum Wärme und Textur.',
       }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Cedar' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Cedar', 'de-DE': 'Zeder', 'en-US': 'Cedar' }),
       AttributeDraft.random()
         .name('color-filter')
         .value({
           key: '#808080',
           label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
         }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#8C9585' }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#8C9585', 'de-DE': '#8C9585', 'en-US': '#8C9585' }),
     ]);
 
 export default minimalistCedarNightstand01;

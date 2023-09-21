@@ -33,9 +33,11 @@ const vanillaCandle01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6214, h: 4143 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Comes in glass jar\n- 300 grams' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Comes in glass jar\n- 300 grams',
+        'de-DE': '- Wird im Glas geliefert\n- 300 Gramm',
+        'en-US': '- Comes in glass jar\n- 300 grams',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A vanilla candle is a popular and timeless choice for adding a warm and inviting atmosphere to any home. The candle is made from high-quality wax, which is infused with the rich and creamy fragrance of vanilla.  The candle is presented in a glass container, which helps to protect the flame and also adds a decorative touch to the candle.   When lit, the candle will release a soothing and comforting aroma, filling the room with the sweet and comforting scent of vanilla. The fragrance is often associated with warmth, coziness, and relaxation, making it perfect for use during a cozy night in or for creating a calming atmosphere in a bedroom or living room.  A vanilla candle is a classic and comforting choice for adding a touch of warmth and coziness to any home. Its sweet and soothing aroma can help to create a relaxed and welcoming atmosphere, making it a popular choice for use in bedrooms, living rooms, and bathrooms.',

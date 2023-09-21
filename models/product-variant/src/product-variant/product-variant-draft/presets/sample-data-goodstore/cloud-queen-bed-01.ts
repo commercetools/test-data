@@ -33,13 +33,19 @@ const cloudQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Light Blue',
+        'de-DE': 'Hellblau',
+        'en-US': 'Light Blue',
+      }),
       AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Light Blue' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#D4EEF2' }),
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Assembly is included' }),
+        .name('color')
+        .value({ 'en-GB': '#D4EEF2', 'de-DE': '#D4EEF2', 'en-US': '#D4EEF2' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Assembly is included',
+        'de-DE': '- Die Montage ist im Preis inbegriffen',
+        'en-US': '- Assembly is included',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A queen-sized bed with fabric upholstery and a pillow-like headboard is a comfortable and elegant piece of bedroom furniture. The bed frame is rectangular and large enough to accommodate a standard queen-sized mattress. The fabric upholstery covers the entire frame, creating a smooth and comfortable surface to lean against. The headboard is the centerpiece of the bed, with a soft and plush surface that resembles a pillow. It is rectangular in shape and attached to the top of the bed frame, providing a comfortable backrest for reading or watching TV in bed. The headboard may be upholstered in the same fabric as the bed frame or in a complementary color or pattern. Overall, this bed combines comfort and style, making it a perfect addition to any bedroom.',

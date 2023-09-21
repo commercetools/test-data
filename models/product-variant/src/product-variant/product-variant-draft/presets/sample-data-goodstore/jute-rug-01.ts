@@ -39,9 +39,11 @@ const juteRug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- 10ft x 12ft' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- 10ft x 12ft',
+        'de-DE': '- 10 Fuß x 12 Fuß',
+        'en-US': '- 10ft x 12ft',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A jute area rug is a type of rug made from natural fibers derived from the jute plant. Jute is a long, soft, and shiny vegetable fiber that is spun into strong threads and then woven into textiles. Jute rugs are known for their durability and natural appearance, making them a popular choice for those who want to bring a touch of the outdoors into their homes.  Because jute is a natural fiber, it is eco-friendly and sustainable. However, it can be prone to staining and water damage, so jute area rugs should be used in low-traffic areas or rooms that do not see a lot of moisture. They are often used in living rooms, bedrooms, and other spaces where a natural, earthy look is desired.  Overall, a jute area rug is a beautiful and eco-friendly addition to any home. Its natural fibers and earthy appearance make it a popular choice for those who want to create a warm and inviting atmosphere in their living space.',
@@ -56,8 +58,12 @@ const juteRug01 = (): TProductVariantDraftBuilder =>
           key: '#F5F5DC',
           label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
         }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Jute' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#EEDA99' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Jute', 'de-DE': 'Jute', 'en-US': 'Jute' }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#EEDA99', 'de-DE': '#EEDA99', 'en-US': '#EEDA99' }),
     ]);
 
 export default juteRug01;

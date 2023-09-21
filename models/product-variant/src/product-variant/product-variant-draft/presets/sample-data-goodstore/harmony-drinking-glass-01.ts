@@ -27,9 +27,11 @@ const harmonyDrinkingGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3000, h: 3000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 glasses',
+        'de-DE': '- Das Set enthält 6 Gläser',
+        'en-US': '- Set includes 6 glasses',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'The Harmony Drinking Glass is designed to hold water or other beverages. It has a capacity of around 8 to 12 ounces.  The design of the water glass is intended to make it easy and comfortable to hold and drink from. It has a straight, smooth-sided body with a thick, stable base that provides balance and stability. The rim of the glass is slightly curved or rounded, making it comfortable to drink from.  The Harmony Drinking Glass can be used for a variety of beverages, including water, juice, iced tea, and other non-alcoholic drinks.  The drinking glasses are generally easy to clean and maintain. They can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Harmony Drinking Glass is a simple and functional type of drinking glass that is ideal for everyday use. Its basic design and versatility make it a popular choice for both casual and formal settings.',

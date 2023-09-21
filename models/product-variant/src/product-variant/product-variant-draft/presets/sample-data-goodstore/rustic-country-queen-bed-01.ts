@@ -32,7 +32,7 @@ const rusticCountryQueenBed01 = (): TProductVariantDraftBuilder =>
         .value({ 'en-US': 'tan', 'en-GB': 'tan', 'de-DE': 'tan' }),
       AttributeDraft.random()
         .name('colorlabel')
-        .value({ 'en-US': 'Tan', 'en-GB': 'Tan', 'de-DE': 'Tan' }),
+        .value({ 'en-US': 'Tan', 'en-GB': 'Tan', 'de-DE': 'Bräunen' }),
       AttributeDraft.random().name('finishlabel').value({
         'en-US': 'Briarsmoke',
         'en-GB': 'Briarsmoke',

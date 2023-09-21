@@ -27,9 +27,11 @@ const marquisTray01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5056, h: 4784 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes 1 tray' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 tray',
+        'de-DE': '- Enthält 1 Tablett',
+        'en-US': '- Includes 1 tray',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.',

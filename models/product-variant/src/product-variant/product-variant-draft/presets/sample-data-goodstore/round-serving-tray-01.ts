@@ -33,9 +33,11 @@ const roundServingTray01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3283, h: 1719 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Hand wash only' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Hand wash only',
+        'de-DE': '- Handwäsche nur',
+        'en-US': '- Hand wash only',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This Round Serving Tray is a versatile and durable item that can be used in a variety of settings. The wooden material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Round wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a round wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.',

@@ -27,9 +27,11 @@ const stoutBeerGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3000, h: 3000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 glasses',
+        'de-DE': '- Das Set enthält 6 Gläser',
+        'en-US': '- Set includes 6 glasses',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A stout beer glass, also known as a "pint glass," is a type of drinking glass that is designed specifically for serving and enjoying stout beers. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the stout beer glass is intended to enhance the drinking experience by allowing the full range of flavors and aromas of the beer to be appreciated. The wide opening of the glass allows the drinker to fully appreciate the color and clarity of the beer, while the heavy base helps to keep the beer from spilling or tipping over.  Overall, a stout beer glass is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine stout beers. Its simple yet elegant design makes it a popular choice for beer lovers and casual drinkers alike.',

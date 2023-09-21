@@ -33,9 +33,11 @@ const ryeWhiskeyGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2632, h: 2268 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Set includes 6 glasses' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Set includes 6 glasses',
+        'de-DE': '- Das Set enthält 6 Gläser',
+        'en-US': '- Set includes 6 glasses',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           "The Rye Whiskey Glass is designed specifically for enjoying whiskey or other spirits. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the whiskey glass is intended to enhance the drinking experience by allowing the whiskey's aroma and flavor to be fully appreciated. The wide opening of the glass allows the drinker to fully appreciate the color, clarity, and texture of the whiskey, while the heavy base helps to keep the drink from spilling or tipping over.  Overall, the Rye Whiskey Glass  is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine whiskey. Its simple yet elegant design makes it a popular choice for whiskey connoisseurs and casual drinkers alike.",

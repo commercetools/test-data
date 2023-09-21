@@ -27,9 +27,11 @@ const wineBottleOpener01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5184, h: 3456 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Stainless steel' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Stainless steel',
+        'de-DE': '- Edelstahl',
+        'en-US': '- Stainless steel',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A wine bottle opener is a device used to remove the cork from a wine bottle. This opener features a pointed helix screw that is twisted into the cork, and a handle or lever that is used to pull the cork out of the bottle. Additional features include a bottle opener. This wine bottle opener is lever-style.',
