@@ -135,7 +135,7 @@ const handleVariant = async (
 
   await writeFile(
     content,
-    'models/product-variant/src/product-variant/product-variant-draft/presets',
+    'models/product/src/product-variant/product-variant-draft/presets',
     variantIdentifier
   );
   return {
@@ -169,7 +169,7 @@ const products = async () => {
   }
   await writeFile(
     buildIndexFile(variantMapping),
-    'models/product-variant/src/product-variant/product-variant-draft/presets',
+    'models/product/src/product-variant/product-variant-draft/presets',
     'index'
   );
 };
