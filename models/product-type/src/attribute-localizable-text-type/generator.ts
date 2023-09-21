@@ -1,9 +1,9 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeLocalizedString } from './types';
+import { TAttributeLocalizableTextType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributelocalizabletexttype
 
-const generator = Generator<TAttributeLocalizedString>({
+const generator = Generator<TAttributeLocalizableTextType>({
   fields: {
     name: 'ltext',
   },

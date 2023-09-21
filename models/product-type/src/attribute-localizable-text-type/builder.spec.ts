@@ -1,14 +1,17 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { type TAttributeLocalizedString } from './types';
-import * as AttributeLocalizedTextType from './index';
+import { type TAttributeLocalizableTextType } from './types';
+import * as AttributeLocalizableTextType from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TAttributeLocalizedString, TAttributeLocalizedString>(
+    ...createBuilderSpec<
+      TAttributeLocalizableTextType,
+      TAttributeLocalizableTextType
+    >(
       'default',
-      AttributeLocalizedTextType.random(),
+      AttributeLocalizableTextType.random(),
       expect.objectContaining({
         name: 'ltext',
       })
@@ -16,9 +19,12 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TAttributeLocalizedString, TAttributeLocalizedString>(
+    ...createBuilderSpec<
+      TAttributeLocalizableTextType,
+      TAttributeLocalizableTextType
+    >(
       'rest',
-      AttributeLocalizedTextType.random(),
+      AttributeLocalizableTextType.random(),
       expect.objectContaining({
         name: 'ltext',
       })
