@@ -34,7 +34,7 @@ export const buildFilename = (input: string) => {
   return input
     .toLowerCase()
     .replaceAll(' ', '-')
-    .replace(/[^0-9a-z-]/g, '');
+    .replace(/[^0-9a-z-.]/g, '');
 };
 
 const zeroPad = (num: number, places: number) =>
