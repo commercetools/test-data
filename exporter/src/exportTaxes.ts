@@ -55,7 +55,7 @@ const taxes = async () => {
 
     content += '\n\nexport default ' + functionName + ';';
 
-    writeFile(
+    await writeFile(
       content,
       'models/tax-category/src/tax-category/tax-category-draft/presets',
       identifier
@@ -65,7 +65,7 @@ const taxes = async () => {
       fileName: buildFilename(identifier),
     });
   }
-  writeFile(
+  await writeFile(
     buildIndexFile(categoryMapping),
     'models/tax-category/src/tax-category/tax-category-draft/presets',
     'index'

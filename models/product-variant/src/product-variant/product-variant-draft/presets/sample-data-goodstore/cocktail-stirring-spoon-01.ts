@@ -27,9 +27,11 @@ const cocktailStirringSpoon01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5757, h: 4555 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Stainless steel\n- Dishwasher safe' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Stainless steel\n- Dishwasher safe',
+        'de-DE': '- Edelstahl\n- Spülmaschinenfest',
+        'en-US': '- Stainless steel\n- Dishwasher safe',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.',

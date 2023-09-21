@@ -33,16 +33,26 @@ const nalaTwoSeaterSofa02 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6000, h: 3376 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({ 'en-GB': '#335EB7' }),
       AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Royal Blue' }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Ebony' }),
+        .name('color')
+        .value({ 'en-GB': '#335EB7', 'de-DE': '#335EB7', 'en-US': '#335EB7' }),
+      AttributeDraft.random().name('colorlabel').value({
+        'en-GB': 'Royal Blue',
+        'de-DE': 'Königsblau',
+        'en-US': 'Royal Blue',
+      }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Ebony', 'de-DE': 'Ebenholz', 'en-US': 'Ebony' }),
       AttributeDraft.random().name('new-arrival').value('true'),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#090909' }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Two-seater sofa\n- Cotton linen upholstery' }),
+        .name('finish')
+        .value({ 'en-GB': '#090909', 'de-DE': '#090909', 'en-US': '#090909' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Two-seater sofa\n- Cotton linen upholstery',
+        'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
+        'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           "This modern 2-seater sofa is a stylish and comfortable addition to any living space. The sofa features a sleek and minimalistic design, with clean lines and a contemporary aesthetic. It is upholstered in high-quality cotton fabric, which is soft to the touch and easy to clean. The two seat cushions are plush and supportive, offering a comfortable place to sit and relax. The backrest is well-padded, providing ample back support, while the armrests are gently curved for a comfortable and relaxed feel. The sofa's frame is made from sturdy wood, ensuring it will last for years to come. With a modern and minimalist style, this sofa can fit in seamlessly with any modern decor, while the comfortable and high-quality upholstery makes it a great place to relax and unwind.",

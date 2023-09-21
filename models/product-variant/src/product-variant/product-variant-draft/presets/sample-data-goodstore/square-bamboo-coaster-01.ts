@@ -29,6 +29,9 @@ const squareBambooCoaster01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Wipe clean with wet cloth\n- Set includes 4 coaster',
+        'de-DE':
+          '- Mit einem feuchten Tuch abwischen\n- Das Set enthält 4 Untersetzer',
+        'en-US': '- Wipe clean with wet cloth\n- Set includes 4 coaster',
       }),
       AttributeDraft.random().name('product-description').value({
         'de-DE':

@@ -27,11 +27,18 @@ const mayaPillowCover01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6240, h: 4160 }),
     ])
     .attributes([
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Machine washable\n- Does not include pillow',
+        'de-DE':
+          '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
+        'en-US': '- Machine washable\n- Does not include pillow',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Machine washable\n- Does not include pillow' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#756960' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Mauve' }),
+        .name('color')
+        .value({ 'en-GB': '#756960', 'de-DE': '#756960', 'en-US': '#756960' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Mauve', 'de-DE': 'Mauve', 'en-US': 'Mauve' }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           "A microfiber brown pillowcase is a soft and comfortable pillow cover made from synthetic fibers. The microfiber material is designed to be soft and silky to the touch, providing a comfortable and cozy sleeping experience.  The brown color of the pillowcase is typically warm and inviting, creating a cozy and relaxing atmosphere in a bedroom. It can also be a versatile color that matches well with a variety of other colors and decor styles.  Microfiber pillowcases are known for their durability and easy care. They are typically resistant to wrinkles and shrinkage, making them ideal for busy households. They are also hypoallergenic, making them a great option for people with allergies or sensitivities.  Overall, a microfiber brown pillowcase is a practical and comfortable choice for any bedroom. It is soft, durable, and easy to care for, providing a cozy and inviting sleeping environment for a restful night's sleep.",

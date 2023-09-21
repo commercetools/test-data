@@ -29,6 +29,9 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Assembly included at delivery\n- Mattress not included',
+        'de-DE':
+          '- Montage im Lieferumfang enthalten\n- Matratze nicht im Lieferumfang enthalten',
+        'en-US': '- Assembly included at delivery\n- Mattress not included',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -38,10 +41,20 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Ein Queensize-Bett mit getuftetem Kopfteil und Plattform sowie Stahlbeinen ist ein modernes und stilvolles Möbelstück. Das Kopfteil ist hoch und breit und hat ein getuftetes Design. Der für das Kopfteil verwendete Stoff ist weich und luxuriös und bietet einen bequemen Platz zum Anlehnen, wenn man sich im Bett aufrichtet.  Das Bett wird vom Boden auf einer Plattform angehoben, die von schlanken und robusten Stahlbeinen getragen wird. Die Plattform bietet eine solide und stabile Grundlage für die Matratze und verleiht dem Bett gleichzeitig ein sauberes und minimalistisches Aussehen.  Insgesamt ist dieses Queensize-Bett ein schönes und funktionales Stück, das sich perfekt für ein modernes Schlafzimmer mit minimalistischer oder industrieller Ästhetik eignet.',
       }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Sage' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#718C86' }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Steel' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#CCCCCC ' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Sage', 'de-DE': 'Salbei', 'en-US': 'Sage' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#718C86', 'de-DE': '#718C86', 'en-US': '#718C86' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Steel', 'de-DE': 'Stahl', 'en-US': 'Steel' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': '#CCCCCC ',
+        'de-DE': '#CCCCCC ',
+        'en-US': '#CCCCCC ',
+      }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

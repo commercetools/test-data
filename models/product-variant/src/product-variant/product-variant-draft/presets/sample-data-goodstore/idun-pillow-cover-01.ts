@@ -27,9 +27,12 @@ const idunPillowCover01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5994, h: 3996 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Machine washable\n- Pillow not included' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Machine washable\n- Pillow not included',
+        'de-DE':
+          '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
+        'en-US': '- Machine washable\n- Pillow not included',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'A brown velvet pillowcase is a type of textile covering for a decorative pillow that is typically used to add visual interest, texture, and a touch of luxury to a room. It is made from a soft and plush velvet fabric, which is known for its smooth surface, rich color, and lustrous sheen.  The pillowcase is designed to fit over a standard size decorative pillow, usually around 18 inches square. It features a square shape and a warm brown color that can complement a variety of decor styles and color schemes.  The velvet fabric has a silky and luxurious feel that adds a touch of sophistication and elegance to the pillow. The edges of the pillowcase are typically finished with a neat hem, which adds a polished look to the overall design.  The pillowcase is often used to create a cozy and inviting atmosphere in a room, whether it is placed on a bed, a sofa, or an accent chair. It can be used on its own or paired with other decorative pillows in different textures and colors to create a layered and harmonious look.  Overall, a brown velvet pillowcase is a beautiful and indulgent accent piece that can enhance the comfort and style of any room in the home.',
@@ -48,8 +51,12 @@ const idunPillowCover01 = (): TProductVariantDraftBuilder =>
             'en-US': 'Dark Brown',
           },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#9B614C' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Copper' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#9B614C', 'de-DE': '#9B614C', 'en-US': '#9B614C' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Copper', 'de-DE': 'Kupfer', 'en-US': 'Copper' }),
     ]);
 
 export default idunPillowCover01;

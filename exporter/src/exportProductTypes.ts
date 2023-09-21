@@ -72,11 +72,11 @@ const productTypes = async () => {
 
   const productTypesMapping: Array<IndexFile> = [];
 
-  types.forEach((type) => {
+  for (const type of types) {
     let content = header;
     if (!type.key) {
       console.log('No key available for ' + type.name);
-      return;
+      continue;
     }
     const functionName = buildFunctionname(type.key);
     content +=
@@ -144,7 +144,7 @@ const productTypes = async () => {
     content +=
       '\n' + '    ]);\n' + '\n' + 'export default ' + functionName + ';';
 
-    writeFile(
+    await writeFile(
       content,
       'models/product-type/src/product-type-draft/presets',
       type.key
@@ -153,8 +153,8 @@ const productTypes = async () => {
       functionName: functionName,
       fileName: buildFilename(type.key),
     });
-  });
-  writeFile(
+  }
+  await writeFile(
     buildIndexFile(productTypesMapping),
     'models/product-type/src/product-type-draft/presets',
     'index'

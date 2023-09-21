@@ -27,9 +27,11 @@ const ivoryPlate01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5088, h: 4576 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Includes 1 plate' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 plate',
+        'de-DE': '- Enthält 1 Teller',
+        'en-US': '- Includes 1 plate',
+      }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
           'This ivory plate is a high-end dish designed for both functional and aesthetic purposes. It is made of high-quality porcelain and has a smooth surface that is both elegant and durable.  The plate is circular in shape and has a flat surface with a slight curve at the edges. The ivory color is a creamy, off-white shade that is warm and inviting, adding a touch of sophistication to any dining setting.  The design of the plate is what sets it apart, as it has been crafted by a skilled designer with an eye for detail.   The plate is a standalone piece intended for special occasions or display. It is ideal for serving appetizers or desserts, and its size and shape make it easy to handle and pass around the table.  Overall, a round designer plate made of ivory is a luxurious and stylish choice for fine dining or special occasions. Its unique design and high-quality construction make it a statement piece that is sure to impress guests and elevate any dining experience.',
@@ -44,8 +46,12 @@ const ivoryPlate01 = (): TProductVariantDraftBuilder =>
           key: '#FFFFF0',
           label: { 'de-DE': 'Elfenbein', 'en-GB': 'Ivory', 'en-US': 'Ivory' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#F4F3F0' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Ivory' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#F4F3F0', 'de-DE': '#F4F3F0', 'en-US': '#F4F3F0' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Ivory', 'de-DE': 'Elfenbein', 'en-US': 'Ivory' }),
     ]);
 
 export default ivoryPlate01;

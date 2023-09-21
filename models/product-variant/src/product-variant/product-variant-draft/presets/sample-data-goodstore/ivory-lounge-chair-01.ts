@@ -41,6 +41,9 @@ const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Dry clean only\n- Assembly included in delivery',
+        'de-DE':
+          '- Nur chemische Reinigung\n- Montage im Lieferumfang enthalten',
+        'en-US': '- Dry clean only\n- Assembly included in delivery',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -50,8 +53,12 @@ const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Dieser Sessel ist ein kühnes und flippiges Möbelstück, das seine Inspiration aus den eklektischen Stilen der 1970er Jahre bezieht. Der Stuhl hat eine runde, kreisförmige Form mit einer niedrigen Rückenlehne und einer großzügig gepolsterten Sitzfläche, die für längere Zeit bequemen Sitz bietet.  Die Armlehnen des Stuhls sind breit und rund und schaffen einen bequemen und stützenden Platz, an dem Sie Ihre Arme beim Faulenzen ausruhen können.  Insgesamt ist ein von den 70er Jahren inspirierter runder Sessel ein verspieltes und lustiges Möbelstück, das jedem Raum einen Hauch von Retro-Flair verleihen kann. Seine runde Form und die großzügige Polsterung machen ihn zu einem komfortablen und einladenden Ort zum Faulenzen und Entspannen.',
       }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#FFF' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Ivory' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Ivory', 'de-DE': 'Elfenbein', 'en-US': 'Ivory' }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

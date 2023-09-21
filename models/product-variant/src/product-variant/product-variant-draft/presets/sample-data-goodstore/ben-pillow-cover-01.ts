@@ -30,6 +30,10 @@ const benPillowCover01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB':
           '- Machine-washable\n- Cover is removable\n- Does not include pillow',
+        'de-DE':
+          '- Waschmaschinenfest\n- Bezug ist abnehmbar\n- Kissen nicht im Lieferumfang enthalten',
+        'en-US':
+          '- Machine-washable\n- Cover is removable\n- Does not include pillow',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
@@ -45,8 +49,12 @@ const benPillowCover01 = (): TProductVariantDraftBuilder =>
           key: '#D2B48C',
           label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#A69465' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Tan' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#A69465', 'de-DE': '#A69465', 'en-US': '#A69465' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Tan', 'de-DE': 'Bräunen', 'en-US': 'Tan' }),
     ]);
 
 export default benPillowCover01;

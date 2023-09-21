@@ -41,11 +41,18 @@ const luxePillowCover01 = (): TProductVariantDraftBuilder =>
           key: '#000',
           label: { 'de-DE': 'Schwarz', 'en-GB': 'Black', 'en-US': 'Black' },
         }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#000' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Black' }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Machine washable\n- Pillow not included' }),
+        .name('color')
+        .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Black', 'de-DE': 'Schwarz', 'en-US': 'Black' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Machine washable\n- Pillow not included',
+        'de-DE':
+          '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
+        'en-US': '- Machine washable\n- Pillow not included',
+      }),
     ]);
 
 export default luxePillowCover01;

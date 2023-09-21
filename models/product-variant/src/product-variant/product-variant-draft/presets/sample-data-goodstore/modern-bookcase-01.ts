@@ -27,9 +27,11 @@ const modernBookcase01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2760, h: 4600 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Assembly included in delivery' }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Assembly included in delivery',
+        'de-DE': '- Montage im Lieferumfang enthalten',
+        'en-US': '- Assembly included in delivery',
+      }),
       AttributeDraft.random().name('product-description').value({
         'de-DE':
           'Dieses moderne Bücherregal hat ein schlichtes und elegantes Aussehen, das sich gut in modernes Dekor einfügt. Es hat klare Linien. Das Bücherregal ist aus Holz und hat eine Mahagoni-Oberfläche.  Die Regale sind offen und geräumig und bieten ausreichend Platz zum Aufbewahren und Präsentieren von Büchern, Dekorationsgegenständen und anderen Gegenständen.  Neben seinem funktionalen Zweck dient ein minimalistisches Bücherregal auch als dekoratives Möbelstück. Es ist so konzipiert, dass es sich nahtlos in seine Umgebung einfügt, ohne zu viel Aufmerksamkeit auf sich zu ziehen. Als solches ist es eine ausgezeichnete Wahl für diejenigen, die eine stilvolle und dennoch unauffällige Aufbewahrungslösung suchen.',
@@ -44,8 +46,12 @@ const modernBookcase01 = (): TProductVariantDraftBuilder =>
           key: '#D2B48C',
           label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
         }),
-      AttributeDraft.random().name('finishlabel').value({ 'en-GB': 'Walnut' }),
-      AttributeDraft.random().name('finish').value({ 'en-GB': '#9C5933' }),
+      AttributeDraft.random()
+        .name('finishlabel')
+        .value({ 'en-GB': 'Walnut', 'de-DE': 'Nussbaum', 'en-US': 'Walnut' }),
+      AttributeDraft.random()
+        .name('finish')
+        .value({ 'en-GB': '#9C5933', 'de-DE': '#9C5933', 'en-US': '#9C5933' }),
     ]);
 
 export default modernBookcase01;

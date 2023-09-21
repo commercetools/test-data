@@ -27,11 +27,18 @@ const patternedPillowCover02 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6047, h: 4031 }),
     ])
     .attributes([
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Machine washable\n- Pillow not included',
+        'de-DE':
+          '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
+        'en-US': '- Machine washable\n- Pillow not included',
+      }),
       AttributeDraft.random()
-        .name('productspec')
-        .value({ 'en-GB': '- Machine washable\n- Pillow not included' }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#0f0f0f' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'Black' }),
+        .name('color')
+        .value({ 'en-GB': '#0f0f0f', 'de-DE': '#0f0f0f', 'en-US': '#0f0f0f' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'Black', 'de-DE': 'Schwarz', 'en-US': 'Black' }),
       AttributeDraft.random().name('new-arrival').value('false'),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

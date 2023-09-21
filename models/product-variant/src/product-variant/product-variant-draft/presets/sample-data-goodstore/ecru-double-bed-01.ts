@@ -29,6 +29,8 @@ const ecruDoubleBed01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Comes with pillow-top headboard\n- Assembly included',
+        'de-DE': '- Mit gepolstertem Kopfteil\n- Montage inklusive',
+        'en-US': '- Comes with pillow-top headboard\n- Assembly included',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

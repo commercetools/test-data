@@ -30,6 +30,10 @@ const purpleLandscapePainting01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('productspec').value({
         'en-GB':
           '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
+        'de-DE':
+          '- Ölgemälde auf Leinwand\n- Rahmen nicht im Lieferumfang enthalten\n- Größe: 4 Fuß x 3 Fuß',
+        'en-US':
+          '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':

@@ -47,8 +47,12 @@ const cottonTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           'Das 2-Sitzer-Baumwollsofa ist eine gemütliche und bequeme Sitzgelegenheit für jedes Zuhause. Aus weichem, hochwertigem Baumwollstoff gefertigt, ist dieses Sofa sanft zur Haut und pflegeleicht. Die beiden Sitzkissen sind weich und stützend und bieten ein komfortables Sitzerlebnis. Die Rückenlehne des Sofas ist gut gepolstert und bietet reichlich Rückenunterstützung, während die Armlehnen für ein bequemes und entspanntes Gefühl sanft abgerundet sind. Der Holzrahmen des Sofas ist robust und langlebig, sodass er viele Jahre hält. Mit einer neutralen Farbe fügt sich dieses Sofa nahtlos in jeden Einrichtungsstil ein, während das schlichte und elegante Design jedem Raum einen Hauch von Raffinesse verleiht.',
       }),
-      AttributeDraft.random().name('color').value({ 'en-GB': '#FFF' }),
-      AttributeDraft.random().name('colorlabel').value({ 'en-GB': 'White' }),
+      AttributeDraft.random()
+        .name('color')
+        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

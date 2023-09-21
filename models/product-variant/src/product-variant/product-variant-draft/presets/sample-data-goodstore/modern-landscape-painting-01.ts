@@ -29,6 +29,9 @@ const modernLandscapePainting01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Oil on canvas\n- Frame not included\n- 3ft by 4ft',
+        'de-DE':
+          '- Öl auf Leinwand\n- Rahmen nicht im Lieferumfang enthalten\n- 3 Fuß mal 4 Fuß',
+        'en-US': '- Oil on canvas\n- Frame not included\n- 3ft by 4ft',
       }),
       AttributeDraft.random().name('product-description').value({
         'en-GB':
