@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const euTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .EUTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const emeraldVelvetChairProductTypeDraft =
@@ -62,7 +62,7 @@ const emeraldVelvetChair = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(euTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodstore.emeraldVelvetChair01()
