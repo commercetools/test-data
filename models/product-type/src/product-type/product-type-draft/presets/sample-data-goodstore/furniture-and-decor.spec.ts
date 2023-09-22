@@ -33,10 +33,6 @@ describe(`with furnitureAndDecor preset`, () => {
         "en-GB": "Color",
         "de-DE": "Farbe"
       },
-      "inputTip": {
-        "de-DE": "",
-        "en-US": ""
-      },
       "isRequired": false,
       "type": {
         "name": "ltext"
@@ -50,10 +46,6 @@ describe(`with furnitureAndDecor preset`, () => {
       "label": {
         "en-GB": "Finish",
         "de-DE": " Fertig"
-      },
-      "inputTip": {
-        "de-DE": "",
-        "en-US": ""
       },
       "isRequired": false,
       "type": {
@@ -69,10 +61,6 @@ describe(`with furnitureAndDecor preset`, () => {
         "en-GB": "Color Label",
         "de-DE": "Farbetikett"
       },
-      "inputTip": {
-        "de-DE": "",
-        "en-US": ""
-      },
       "isRequired": false,
       "type": {
         "name": "ltext"
@@ -87,10 +75,6 @@ describe(`with furnitureAndDecor preset`, () => {
         "en-GB": "Finish Label",
         "de-DE": " Fertiges Etikett"
       },
-      "inputTip": {
-        "de-DE": "",
-        "en-US": ""
-      },
       "isRequired": false,
       "type": {
         "name": "ltext"
@@ -104,11 +88,6 @@ describe(`with furnitureAndDecor preset`, () => {
       "label": {
         "en-GB": "New Arrival",
         "de-DE": "Neuankömmling"
-      },
-      "inputTip": {
-        "de-DE": "",
-        "en-GB": "",
-        "en-US": ""
       },
       "isRequired": false,
       "type": {

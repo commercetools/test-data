@@ -50,6 +50,9 @@ const getProductTypeSnapshot = (productType: ProductType) => {
             ...result,
             inputTip: filterLocalizedString(attribute.inputTip),
           };
+        } else {
+          const { inputTip, ...rest } = result;
+          result = rest;
         }
       }
       if (attribute.label) {

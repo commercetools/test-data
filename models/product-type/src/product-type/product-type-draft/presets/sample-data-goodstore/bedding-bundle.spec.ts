@@ -30,11 +30,6 @@ describe(`with beddingBundle preset`, () => {
       "label": {
         "en-GB": "Product Spec"
       },
-      "inputTip": {
-        "de-DE": "",
-        "en-GB": "",
-        "en-US": ""
-      },
       "isRequired": false,
       "type": {
         "name": "ltext"
@@ -48,11 +43,6 @@ describe(`with beddingBundle preset`, () => {
       "label": {
         "en-GB": "Products of this bundle",
         "de-DE": "Produkte dieses Bundles"
-      },
-      "inputTip": {
-        "de-DE": "",
-        "en-GB": "",
-        "en-US": ""
       },
       "isRequired": false,
       "type": {
