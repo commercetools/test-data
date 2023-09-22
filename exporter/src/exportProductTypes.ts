@@ -1,5 +1,8 @@
 import { AttributeType } from '@commercetools/platform-sdk';
-import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
+import {
+  AttributeDefinition,
+  AttributeLocalizedEnumValue,
+} from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
 import { getFolder } from './ctp/config';
 import {
   addEntry,
@@ -29,9 +32,10 @@ const resolveMappedType = (attributeType: AttributeType) => {
     //   type = 'AttributeLocalizedTextTypeDraft';
     //   value = "name('ltext')";
     //   break;
-    // case 'lenum':
-    //   type = 'AttributeLocalizedEnumTypeDraft';
-    //   break;
+    case 'lenum':
+      type = 'AttributeLocalizedEnumValue';
+      value = "name('lenum')";
+      break;
     default:
       console.log(
         'Define mapper for attribute type ' + attributeType.name,
