@@ -1,11 +1,8 @@
-import { getCategories, getCategoryById } from './ctp/categories';
-import { getLimit } from './ctp/config';
 import {
   addEntry,
   buildFilename,
   buildFunctionname,
   buildIndexFile,
-  formatLocalizedString,
   IndexFile,
   writeFile,
 } from './ctp/helpers';
@@ -41,13 +38,17 @@ const taxes = async () => {
       content += '    .rates([\n';
       content += taxCategory.rates
         .map((rate) => {
-          return `      TaxRateDraft.presets
+          let result = `      TaxRateDraft.presets
         .empty()
         .name('${rate.name}')
         .amount(${rate.amount})
         .includedInPrice(${rate.includedInPrice})
-        .country('${rate.country}')
-        .subRates([]),`;
+        .country('${rate.country}')`;
+          if (rate.key) {
+            result += `      .key('${rate.key}')`;
+          }
+          result += `      .subRates([]),`;
+          return result;
         })
         .join('\n');
       content += '\n    ]);';
