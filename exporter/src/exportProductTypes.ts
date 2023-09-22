@@ -147,13 +147,7 @@ const productTypes = async () => {
         '        ',
         false
       );
-      content = addEntry(
-        'isRequired',
-        content,
-        attribute.isRequired,
-        '        ',
-        false
-      );
+      content += '        .isRequired(' + attribute.isRequired + ')\n';
       content += addAttribute(attribute.type);
       content = addEntry(
         'attributeConstraint',
@@ -161,13 +155,7 @@ const productTypes = async () => {
         attribute.attributeConstraint.toString(),
         '        '
       );
-      content = addEntry(
-        'isSearchable',
-        content,
-        attribute.isSearchable,
-        '        ',
-        false
-      );
+      content += '        .isSearchable(' + attribute.isSearchable + ')\n';
       content = addEntry(
         'inputHint',
         content,
