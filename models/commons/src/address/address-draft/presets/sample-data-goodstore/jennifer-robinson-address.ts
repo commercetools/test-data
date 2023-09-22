@@ -10,6 +10,7 @@ const jenniferRobinsonAddress = (): TAddressDraftBuilder =>
     .streetNumber('15')
     .postalCode('10001')
     .city('New York City')
+    .state('NY')
     .country('US');
 
 export default jenniferRobinsonAddress;

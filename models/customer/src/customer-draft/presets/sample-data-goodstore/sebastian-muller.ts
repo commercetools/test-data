@@ -3,7 +3,7 @@ import { authenticationMode } from '../../../constants';
 import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
-const sebastianMullerAddress = (): TCustomerDraftBuilder =>
+const sebastianMuller = (): TCustomerDraftBuilder =>
   CustomerDraft.presets
     .empty()
     .key('sebastian-mueller')
@@ -16,4 +16,4 @@ const sebastianMullerAddress = (): TCustomerDraftBuilder =>
     ])
     .authenticationMode(authenticationMode.Password);
 
-export default sebastianMullerAddress;
+export default sebastianMuller;

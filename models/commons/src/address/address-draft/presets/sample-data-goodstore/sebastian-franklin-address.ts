@@ -10,6 +10,7 @@ const sebastianFranklinAddress = (): TAddressDraftBuilder =>
     .streetNumber('9')
     .postalCode('27517')
     .city('Durham')
+    .state('NC')
     .country('US');
 
 export default sebastianFranklinAddress;
