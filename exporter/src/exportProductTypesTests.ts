@@ -1,5 +1,11 @@
-import { ProductType } from '@commercetools/platform-sdk';
-import { buildFilename, buildFunctionname, writeFile } from './ctp/helpers';
+import { LocalizedString, ProductType } from '@commercetools/platform-sdk';
+import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
+import {
+  buildFilename,
+  buildFunctionname,
+  filterLocalizedString,
+  writeFile,
+} from './ctp/helpers';
 import { getProductTypes } from './ctp/product-types';
 
 function sortObj(obj: { [id: string]: unknown }) {
@@ -36,6 +42,24 @@ const getProductTypeSnapshot = (productType: ProductType) => {
       if ('displayGroup' in attribute) {
         const { displayGroup, ...rest } = attribute;
         result = rest;
+      }
+      if (attribute.inputTip) {
+        const filtered = filterLocalizedString(attribute.inputTip);
+        if (Object.keys(filtered).length > 0) {
+          result = {
+            ...result,
+            inputTip: filterLocalizedString(attribute.inputTip),
+          };
+        }
+      }
+      if (attribute.label) {
+        const filtered = filterLocalizedString(attribute.label);
+        if (Object.keys(filtered).length > 0) {
+          result = {
+            ...result,
+            label: filterLocalizedString(attribute.label),
+          };
+        }
       }
       return { ...result };
     });

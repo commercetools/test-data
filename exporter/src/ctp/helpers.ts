@@ -10,6 +10,20 @@ export function notEmpty<TValue>(
   return value !== null && value !== undefined;
 }
 
+export const filterLocalizedString = (
+  localizedString: LocalizedString
+): LocalizedString => {
+  const locales = getLocales();
+
+  const result: LocalizedString = {};
+  locales.forEach((locale) => {
+    if (localizedString[locale] && localizedString[locale] !== '') {
+      result[locale] = localizedString[locale];
+    }
+  });
+  return result;
+};
+
 export const formatLocalizedString = (name?: LocalizedString) => {
   const locales = getLocales();
   if (!name) {
