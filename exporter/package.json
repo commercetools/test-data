@@ -12,6 +12,7 @@
     "export": "ts-node src/exportCategories.ts && ts-node src/exportProductTypes.ts && ts-node src/exportVariants.ts && ts-node src/exportProducts.ts && ts-node src/exportTaxes.ts",
     "exportCategories": "ts-node src/exportCategories.ts",
     "exportProductTypes": "ts-node src/exportProductTypes.ts",
+    "exportProductTypeTests": "ts-node src/exportProductTypesTests.ts",
     "exportProducts": "ts-node src/exportProducts.ts",
     "exportProductTests": "ts-node src/exportProductTests.ts",
     "exportTaxes": "ts-node src/exportTaxes.ts",
