@@ -2,6 +2,7 @@ import { LocalizedString } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeBooleanTypeDraft,
+  AttributeLocalizedEnumValue,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -127,6 +128,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'used to set the colors and labels displayed in the color filter on PLP'
             )
         )
+        .type(AttributeLocalizedEnumValue.random().name('lenum'))
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
