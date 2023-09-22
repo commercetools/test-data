@@ -32,7 +32,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
             )
         )
+        .isRequired(false)
         .attributeConstraint('SameForAll')
+        .isSearchable(false)
         .inputHint('MultiLine'),
 
       AttributeDefinitionDraft.presets
@@ -41,7 +43,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets.empty()['en-GB']('Color')['de-DE']('Farbe')
         )
+        .isRequired(false)
         .attributeConstraint('None')
+        .isSearchable(false)
         .inputHint('SingleLine'),
 
       AttributeDefinitionDraft.presets
@@ -50,7 +54,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets.empty()['en-GB']('Finish')['de-DE'](' Fertig')
         )
+        .isRequired(false)
         .attributeConstraint('None')
+        .isSearchable(false)
         .inputHint('SingleLine'),
 
       AttributeDefinitionDraft.presets
@@ -62,6 +68,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB']('Color Label')
             ['de-DE']('Farbetikett')
         )
+        .isRequired(false)
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -75,6 +82,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB']('Finish Label')
             ['de-DE'](' Fertiges Etikett')
         )
+        .isRequired(false)
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -88,8 +96,10 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB']('New Arrival')
             ['de-DE']('Neuankömmling')
         )
+        .isRequired(false)
         .type(AttributeBooleanTypeDraft.random().name('boolean'))
         .attributeConstraint('None')
+        .isSearchable(false)
         .inputHint('SingleLine'),
 
       AttributeDefinitionDraft.presets
@@ -99,6 +109,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .inputTip(
           LocalizedString.presets.empty()['en-GB']('size set as a string value')
         )
+        .isRequired(false)
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
@@ -114,7 +125,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'Product description, made a custom attribute so product description is not used for search results.'
             )
         )
+        .isRequired(false)
         .attributeConstraint('SameForAll')
+        .isSearchable(false)
         .inputHint('SingleLine'),
 
       AttributeDefinitionDraft.presets
@@ -128,6 +141,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               'used to set the colors and labels displayed in the color filter on PLP'
             )
         )
+        .isRequired(false)
         .type(AttributeLocalizedEnumValue.random().name('lenum'))
         .attributeConstraint('None')
         .isSearchable(true)

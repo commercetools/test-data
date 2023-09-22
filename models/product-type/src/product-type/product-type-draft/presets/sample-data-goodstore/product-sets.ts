@@ -14,6 +14,7 @@ const productSets = (): TProductTypeDraftBuilder =>
         .empty()
         .name('type')
         .label(LocalizedString.presets.empty()['en-GB']('Type')['de-DE']('Typ'))
+        .isRequired(false)
         .attributeConstraint('None')
         .isSearchable(true)
         .inputHint('SingleLine'),
