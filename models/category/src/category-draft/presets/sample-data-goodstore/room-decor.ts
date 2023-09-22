@@ -24,7 +24,7 @@ const roomDecor = (): TCategoryDraftBuilder =>
         ['de-DE']('zimmerdekoration')
     )
     .key('room-decor')
-    .key('.8')
+    .orderHint('.8')
     .parent(KeyReference.presets.category().key(homeDecorDraft.key!));
 
 export default roomDecor;

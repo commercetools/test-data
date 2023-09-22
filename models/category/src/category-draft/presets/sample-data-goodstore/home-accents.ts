@@ -15,7 +15,7 @@ const homeAccents = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Home Accents')
-        ['de-DE']('Home Akzente')
+        ['de-DE']('Accessoires')
     )
     .slug(
       LocalizedString.presets
@@ -24,7 +24,7 @@ const homeAccents = (): TCategoryDraftBuilder =>
         ['de-DE']('home-akzente')
     )
     .key('home-accents')
-    .key('.5')
+    .orderHint('.5')
     .parent(KeyReference.presets.category().key(roomDecorDraft.key!));
 
 export default homeAccents;

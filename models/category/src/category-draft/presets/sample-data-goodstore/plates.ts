@@ -16,7 +16,7 @@ const plates = (): TCategoryDraftBuilder =>
     )
     .slug(LocalizedString.presets.empty()['en-GB']('plates')['de-DE']('plates'))
     .key('plates')
-    .key('.82')
+    .orderHint('.82')
     .parent(KeyReference.presets.category().key(dinnerwareDraft.key!));
 
 export default plates;

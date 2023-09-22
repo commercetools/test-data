@@ -24,7 +24,7 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
         ['de-DE']('cheese-trays')
     )
     .key('cheese-trays')
-    .key('.12')
+    .orderHint('.12')
     .parent(KeyReference.presets.category().key(servewareDraft.key!));
 
 export default cheeseTrays;

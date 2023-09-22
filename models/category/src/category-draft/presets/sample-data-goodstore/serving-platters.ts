@@ -24,7 +24,7 @@ const servingPlatters = (): TCategoryDraftBuilder =>
         ['de-DE']('serving-platters')
     )
     .key('serving-platters')
-    .key('.0004')
+    .orderHint('.0004')
     .parent(KeyReference.presets.category().key(servewareDraft.key!));
 
 export default servingPlatters;

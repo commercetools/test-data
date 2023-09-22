@@ -17,6 +17,6 @@ const furniture = (): TCategoryDraftBuilder =>
         ['de-DE']('furniture')
     )
     .key('furniture')
-    .key('0.2');
+    .orderHint('0.2');
 
 export default furniture;

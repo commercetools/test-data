@@ -4,18 +4,10 @@ import {
   buildFilename,
   buildFunctionname,
   filterLocalizedString,
+  sortObj,
   writeFile,
 } from './ctp/helpers';
 import { getProductTypes } from './ctp/product-types';
-
-function sortObj(obj: { [id: string]: unknown }) {
-  return Object.keys(obj)
-    .sort()
-    .reduce<{ [id: string]: unknown }>(function (result, key) {
-      result[key] = obj[key];
-      return result;
-    }, {});
-}
 
 const getProductTypeSnapshot = (productType: ProductType) => {
   //Filter attributes that the builder does not know about
@@ -48,7 +40,7 @@ const getProductTypeSnapshot = (productType: ProductType) => {
         if (Object.keys(filtered).length > 0) {
           result = {
             ...result,
-            inputTip: filterLocalizedString(attribute.inputTip),
+            inputTip: filtered,
           };
         } else {
           const { inputTip, ...rest } = result;
@@ -60,7 +52,7 @@ const getProductTypeSnapshot = (productType: ProductType) => {
         if (Object.keys(filtered).length > 0) {
           result = {
             ...result,
-            label: filterLocalizedString(attribute.label),
+            label: filtered,
           };
         }
       }

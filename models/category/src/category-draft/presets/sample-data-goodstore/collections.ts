@@ -15,7 +15,7 @@ const collections = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Collections')
-        ['de-DE']('Kollektionen')
+        ['de-DE']('Sonderkollektionen')
     )
     .slug(
       LocalizedString.presets
@@ -24,7 +24,7 @@ const collections = (): TCategoryDraftBuilder =>
         ['de-DE']('collections')
     )
     .key('collections')
-    .key('.7')
+    .orderHint('.7')
     .parent(KeyReference.presets.category().key(furnitureDraft.key!));
 
 export default collections;

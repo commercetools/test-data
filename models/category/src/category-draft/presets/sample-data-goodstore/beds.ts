@@ -14,7 +14,7 @@ const beds = (): TCategoryDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-GB']('Beds')['de-DE']('Betten'))
     .slug(LocalizedString.presets.empty()['en-GB']('beds')['de-DE']('beds'))
     .key('beds')
-    .key('.4')
+    .orderHint('.4')
     .parent(KeyReference.presets.category().key(bedroomFurnitureDraft.key!));
 
 export default beds;

@@ -12,10 +12,7 @@ const barGlasswareDraft = barGlassware().build<TCategoryDraft>();
 const glassware = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
-        .empty()
-        ['en-GB']('Glassware')
-        ['de-DE']('Glaswaren')
+      LocalizedString.presets.empty()['en-GB']('Glassware')['de-DE']('Gläser')
     )
     .slug(
       LocalizedString.presets
@@ -24,7 +21,7 @@ const glassware = (): TCategoryDraftBuilder =>
         ['de-DE']('glassware')
     )
     .key('glassware')
-    .key('.23')
+    .orderHint('.23')
     .parent(KeyReference.presets.category().key(barGlasswareDraft.key!));
 
 export default glassware;

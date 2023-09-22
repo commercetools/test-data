@@ -24,7 +24,7 @@ const serveware = (): TCategoryDraftBuilder =>
         ['de-DE']('serveware')
     )
     .key('serveware')
-    .key('.86')
+    .orderHint('.86')
     .parent(KeyReference.presets.category().key(kitchenDraft.key!));
 
 export default serveware;

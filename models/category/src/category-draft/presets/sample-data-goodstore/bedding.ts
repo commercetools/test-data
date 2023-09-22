@@ -18,7 +18,7 @@ const bedding = (): TCategoryDraftBuilder =>
       LocalizedString.presets.empty()['en-GB']('bedding')['de-DE']('bettwsche')
     )
     .key('bedding')
-    .key('.5')
+    .orderHint('.5')
     .parent(KeyReference.presets.category().key(homeDecorDraft.key!));
 
 export default bedding;

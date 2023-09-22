@@ -19,7 +19,7 @@ const tables = (): TCategoryDraftBuilder =>
         ['de-DE']('coffee-tables')
     )
     .key('tables')
-    .key('.25')
+    .orderHint('.25')
     .parent(KeyReference.presets.category().key(livingRoomFurnitureDraft.key!));
 
 export default tables;

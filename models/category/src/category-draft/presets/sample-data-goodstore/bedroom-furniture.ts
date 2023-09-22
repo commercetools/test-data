@@ -24,7 +24,7 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
         ['de-DE']('bedroom-furniture')
     )
     .key('bedroom-furniture')
-    .key('9')
+    .orderHint('9')
     .parent(KeyReference.presets.category().key(furnitureDraft.key!));
 
 export default bedroomFurniture;

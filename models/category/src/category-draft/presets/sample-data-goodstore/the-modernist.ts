@@ -24,7 +24,7 @@ const theModernist = (): TCategoryDraftBuilder =>
         ['de-DE']('the-modernist')
     )
     .key('the-modernist')
-    .key('.0035')
+    .orderHint('.0035')
     .parent(KeyReference.presets.category().key(collectionsDraft.key!));
 
 export default theModernist;

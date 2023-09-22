@@ -8,7 +8,10 @@ import empty from '../empty';
 const homeDecor = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets.empty()['en-GB']('Home Decor')['de-DE']('Deko')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Home Decor')
+        ['de-DE']('Dekoration')
     )
     .slug(
       LocalizedString.presets
@@ -17,6 +20,6 @@ const homeDecor = (): TCategoryDraftBuilder =>
         ['de-DE']('home-decor')
     )
     .key('home-decor')
-    .key('0.1');
+    .orderHint('0.1');
 
 export default homeDecor;

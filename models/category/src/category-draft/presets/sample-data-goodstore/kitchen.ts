@@ -12,6 +12,6 @@ const kitchen = (): TCategoryDraftBuilder =>
       LocalizedString.presets.empty()['en-GB']('kitchen')['de-DE']('kitchen')
     )
     .key('kitchen')
-    .key('0.3');
+    .orderHint('0.3');
 
 export default kitchen;

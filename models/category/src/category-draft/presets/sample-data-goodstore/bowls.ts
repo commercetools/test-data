@@ -14,7 +14,7 @@ const bowls = (): TCategoryDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-GB']('Bowls')['de-DE']('Schalen'))
     .slug(LocalizedString.presets.empty()['en-GB']('bowls')['de-DE']('bowls'))
     .key('bowls')
-    .key('.56')
+    .orderHint('.56')
     .parent(KeyReference.presets.category().key(dinnerwareDraft.key!));
 
 export default bowls;

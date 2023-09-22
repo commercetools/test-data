@@ -15,13 +15,13 @@ const bakeware = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Bakeware')
-        ['de-DE']('Backgeschirr')
+        ['de-DE']('Backutensilien')
     )
     .slug(
       LocalizedString.presets.empty()['en-GB']('bakeware')['de-DE']('bakeware')
     )
     .key('bakeware')
-    .key('.42')
+    .orderHint('.42')
     .parent(KeyReference.presets.category().key(dinnerwareDraft.key!));
 
 export default bakeware;

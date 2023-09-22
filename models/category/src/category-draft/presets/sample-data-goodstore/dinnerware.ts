@@ -24,7 +24,7 @@ const dinnerware = (): TCategoryDraftBuilder =>
         ['de-DE']('dinnerware')
     )
     .key('dinnerware')
-    .key('.75')
+    .orderHint('.75')
     .parent(KeyReference.presets.category().key(kitchenDraft.key!));
 
 export default dinnerware;

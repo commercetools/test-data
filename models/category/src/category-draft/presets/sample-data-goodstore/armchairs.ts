@@ -18,7 +18,7 @@ const armchairs = (): TCategoryDraftBuilder =>
       LocalizedString.presets.empty()['en-GB']('armchairs')['de-DE']('chairs')
     )
     .key('armchairs')
-    .key('.3')
+    .orderHint('.3')
     .parent(KeyReference.presets.category().key(livingRoomFurnitureDraft.key!));
 
 export default armchairs;

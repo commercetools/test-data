@@ -76,7 +76,7 @@ const categories = async () => {
       false
     );
     content = addEntry('key', content, category.key, '    ');
-    content = addEntry('key', content, category.orderHint, '    ');
+    content = addEntry('orderHint', content, category.orderHint, '    ');
     if (parentFunctionName) {
       content = addEntry(
         'parent',
