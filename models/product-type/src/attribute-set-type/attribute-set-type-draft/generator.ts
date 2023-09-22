@@ -6,7 +6,6 @@ import { TAttributeSetTypeDraft } from '../types';
 
 export const generator = Generator<TAttributeSetTypeDraft>({
   fields: {
-    name: 'set',
     elementType: fake(() => AttributeBooleanTypeDraft.random()),
   },
 });
