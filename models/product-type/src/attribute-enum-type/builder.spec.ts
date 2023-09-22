@@ -34,7 +34,7 @@ describe('builder', () => {
       expect.objectContaining({
         name: 'enum',
         values: [],
-        __typename: 'AttributeEnumDefinitionType',
+        __typename: 'EnumAttributionDefinitionType',
       })
     )
   );
