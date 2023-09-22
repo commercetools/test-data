@@ -41,6 +41,7 @@ describe('builder', () => {
         shippingAddresses: null,
         custom: null,
         locale: expect.any(String),
+        authenticationMode: expect.any(String),
       })
     )
   );
@@ -81,6 +82,7 @@ describe('builder', () => {
         shippingAddresses: null,
         custom: null,
         locale: expect.any(String),
+        authenticationMode: expect.any(String),
       })
     )
   );
@@ -121,6 +123,7 @@ describe('builder', () => {
         shippingAddresses: null,
         custom: null,
         locale: expect.any(String),
+        authenticationMode: expect.any(String),
       })
     )
   );

@@ -29,5 +29,6 @@ it('should set all fields except `email` to undefined', () => {
     shippingAddresses: undefined,
     custom: undefined,
     locale: undefined,
+    authenticationMode: undefined,
   });
 });

@@ -1,5 +1,6 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import { authenticationMode } from '../constants';
 import { TCustomerDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/customers#customerdraft
@@ -32,7 +33,7 @@ const generator = Generator<TCustomerDraft>({
     shippingAddresses: null,
     custom: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),
-    // authenticationMode - currently in beta.
+    authenticationMode: oneOf(...Object.values(authenticationMode)),
   },
 });
 
