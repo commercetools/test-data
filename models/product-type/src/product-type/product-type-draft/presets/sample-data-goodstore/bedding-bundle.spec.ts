@@ -12,14 +12,10 @@ describe(`with beddingBundle preset`, () => {
     {
       "name": "product-description",
       "label": {
-        "de-DE": "",
-        "en-GB": "product-description",
-        "en-US": ""
+        "en-GB": "product-description"
       },
       "inputTip": {
-        "de-DE": "",
-        "en-GB": "description of the bundle product",
-        "en-US": ""
+        "en-GB": "description of the bundle product"
       },
       "isRequired": false,
       "type": {
@@ -32,9 +28,7 @@ describe(`with beddingBundle preset`, () => {
     {
       "name": "product-spec",
       "label": {
-        "de-DE": "",
-        "en-GB": "Product Spec",
-        "en-US": ""
+        "en-GB": "Product Spec"
       },
       "inputTip": {
         "de-DE": "",
@@ -52,9 +46,8 @@ describe(`with beddingBundle preset`, () => {
     {
       "name": "product-ref",
       "label": {
-        "de-DE": "Produkte dieses Bundles",
         "en-GB": "Products of this bundle",
-        "en-US": ""
+        "de-DE": "Produkte dieses Bundles"
       },
       "inputTip": {
         "de-DE": "",

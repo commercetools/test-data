@@ -12,9 +12,8 @@ describe(`with productSets preset`, () => {
     {
       "name": "type",
       "label": {
-        "de-DE": "Typ",
-        "en-US": "Type",
-        "en-GB": "Type"
+        "en-GB": "Type",
+        "de-DE": "Typ"
       },
       "inputTip": {
         "de-DE": "",

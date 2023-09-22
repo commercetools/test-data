@@ -13,13 +13,10 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "productspec",
       "label": {
-        "de-DE": "Produktspezifikationen",
-        "en-US": "Product Specifications",
-        "en-GB": "Product Specifications"
+        "en-GB": "Product Specifications",
+        "de-DE": "Produktspezifikationen"
       },
       "inputTip": {
-        "de-DE": "",
-        "en-US": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.",
         "en-GB": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points."
       },
       "isRequired": false,
@@ -33,9 +30,8 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "color",
       "label": {
-        "de-DE": "Farbe",
-        "en-US": "Color",
-        "en-GB": "Color"
+        "en-GB": "Color",
+        "de-DE": "Farbe"
       },
       "inputTip": {
         "de-DE": "",
@@ -52,9 +48,8 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "finish",
       "label": {
-        "de-DE": " Fertig",
-        "en-US": "Finish",
-        "en-GB": "Finish"
+        "en-GB": "Finish",
+        "de-DE": " Fertig"
       },
       "inputTip": {
         "de-DE": "",
@@ -71,9 +66,8 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "colorlabel",
       "label": {
-        "de-DE": "Farbetikett",
-        "en-US": "Color Label",
-        "en-GB": "Color Label"
+        "en-GB": "Color Label",
+        "de-DE": "Farbetikett"
       },
       "inputTip": {
         "de-DE": "",
@@ -90,9 +84,8 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "finishlabel",
       "label": {
-        "de-DE": " Fertiges Etikett",
-        "en-US": "Finish Label",
-        "en-GB": "Finish Label"
+        "en-GB": "Finish Label",
+        "de-DE": " Fertiges Etikett"
       },
       "inputTip": {
         "de-DE": "",
@@ -109,9 +102,8 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "new-arrival",
       "label": {
-        "de-DE": "Neuankömmling",
         "en-GB": "New Arrival",
-        "en-US": "New Arrival"
+        "de-DE": "Neuankömmling"
       },
       "inputTip": {
         "de-DE": "",
@@ -129,14 +121,10 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "size",
       "label": {
-        "de-DE": "",
-        "en-GB": "Size",
-        "en-US": ""
+        "en-GB": "Size"
       },
       "inputTip": {
-        "de-DE": "",
-        "en-GB": "size set as a string value",
-        "en-US": ""
+        "en-GB": "size set as a string value"
       },
       "isRequired": false,
       "type": {
@@ -149,14 +137,10 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "product-description",
       "label": {
-        "de-DE": "",
-        "en-GB": "Product Description",
-        "en-US": ""
+        "en-GB": "Product Description"
       },
       "inputTip": {
-        "de-DE": "",
-        "en-GB": "Product description, made a custom attribute so product description is not used for search results.",
-        "en-US": ""
+        "en-GB": "Product description, made a custom attribute so product description is not used for search results."
       },
       "isRequired": false,
       "type": {
@@ -169,14 +153,10 @@ describe(`with furnitureAndDecor preset`, () => {
     {
       "name": "color-filter",
       "label": {
-        "de-DE": "",
-        "en-GB": "Color Filter",
-        "en-US": ""
+        "en-GB": "Color Filter"
       },
       "inputTip": {
-        "de-DE": "",
-        "en-GB": "used to set the colors and labels displayed in the color filter on PLP",
-        "en-US": ""
+        "en-GB": "used to set the colors and labels displayed in the color filter on PLP"
       },
       "isRequired": false,
       "type": {
