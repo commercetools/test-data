@@ -26,7 +26,12 @@ const jenniferJonesPayment = (): TPaymentDraftBuilder =>
       PaymentMethodInfoDraft.presets
         .empty()
         .method('Debit Card')
-        .name(LocalizedString.presets.empty()['en']('Debit Card'))
+        .name(
+          LocalizedString.presets
+            .empty()
+            ['en-US']('Debit Card')
+            ['en-GB']('Debit Card')
+        )
     )
     .paymentStatus(PaymentStatusDraft.presets.empty().interfaceText('Paid'))
     .transactions([

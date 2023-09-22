@@ -28,7 +28,12 @@ const sebastianMuellerPayment = (): TPaymentDraftBuilder =>
       PaymentMethodInfoDraft.presets
         .empty()
         .method('Credit Card')
-        .name(LocalizedString.presets.empty()['de']('Credit Card'))
+        .name(
+          LocalizedString.presets
+            .empty()
+            ['en-US']('Credit Card')
+            ['en-GB']('Credit Card')
+        )
     )
     .paymentStatus(PaymentStatusDraft.presets.empty().interfaceText('Paid'))
     .transactions([

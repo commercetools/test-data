@@ -24,7 +24,9 @@ describe(`with jenniferJonesPayment preset`, () => {
           "method": "Debit Card",
           "name": {
             "de": undefined,
-            "en": "Debit Card",
+            "en": undefined,
+            "en-GB": "Debit Card",
+            "en-US": "Debit Card",
             "fr": undefined,
           },
           "paymentInterface": undefined,
@@ -84,7 +86,9 @@ describe(`with jenniferJonesPayment preset`, () => {
           "method": "Debit Card",
           "name": {
             "de": undefined,
-            "en": "Debit Card",
+            "en": undefined,
+            "en-GB": "Debit Card",
+            "en-US": "Debit Card",
             "fr": undefined,
           },
           "paymentInterface": undefined,

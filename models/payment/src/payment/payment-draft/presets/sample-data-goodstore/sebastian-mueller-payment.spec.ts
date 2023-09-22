@@ -23,8 +23,10 @@ describe(`with sebastianMuellerPayment preset`, () => {
         "paymentMethodInfo": {
           "method": "Credit Card",
           "name": {
-            "de": "Credit Card",
+            "de": undefined,
             "en": undefined,
+            "en-GB": "Credit Card",
+            "en-US": "Credit Card",
             "fr": undefined,
           },
           "paymentInterface": undefined,
@@ -83,8 +85,10 @@ describe(`with sebastianMuellerPayment preset`, () => {
         "paymentMethodInfo": {
           "method": "Credit Card",
           "name": {
-            "de": "Credit Card",
+            "de": undefined,
             "en": undefined,
+            "en-GB": "Credit Card",
+            "en-US": "Credit Card",
             "fr": undefined,
           },
           "paymentInterface": undefined,
