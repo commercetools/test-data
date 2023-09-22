@@ -34,7 +34,8 @@ const resolveMappedType = (attributeType: AttributeType) => {
     //   break;
     case 'lenum':
       type = 'AttributeLocalizedEnumValue';
-      value = "name('lenum')";
+      value =
+        "name('lenum').values(" + JSON.stringify(attributeType.values) + ')';
       break;
     default:
       console.log(
