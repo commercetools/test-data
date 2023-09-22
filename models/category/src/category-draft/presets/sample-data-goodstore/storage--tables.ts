@@ -24,7 +24,7 @@ const storageTables = (): TCategoryDraftBuilder =>
         ['de-DE']('dressers')
     )
     .key('storage--tables')
-    .key('.1')
+    .orderHint('.1')
     .parent(KeyReference.presets.category().key(bedroomFurnitureDraft.key!));
 
 export default storageTables;

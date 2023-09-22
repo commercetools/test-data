@@ -4,6 +4,14 @@ import { LocalizedString } from '@commercetools/platform-sdk';
 import prettier from 'prettier';
 import { getFolder, getLocales } from './config';
 
+export const sortObj = (obj: { [id: string]: unknown }) => {
+  return Object.keys(obj)
+    .sort()
+    .reduce<{ [id: string]: unknown }>(function (result, key) {
+      result[key] = obj[key];
+      return result;
+    }, {});
+};
 export function notEmpty<TValue>(
   value: TValue | null | undefined
 ): value is TValue {
