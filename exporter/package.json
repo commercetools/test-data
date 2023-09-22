@@ -17,6 +17,7 @@
     "exportProducts": "ts-node src/exportProducts.ts",
     "exportProductTests": "ts-node src/exportProductTests.ts",
     "exportTaxes": "ts-node src/exportTaxes.ts",
+    "exportTaxTests": "ts-node src/exportTaxTests.ts",
     "exportVariants": "ts-node src/exportVariants.ts"
   },
   "keywords": [

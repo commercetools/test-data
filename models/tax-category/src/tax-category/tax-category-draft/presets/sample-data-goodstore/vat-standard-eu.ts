@@ -13,6 +13,7 @@ const vatStandardEu = () =>
         .amount(0.2)
         .includedInPrice(true)
         .country('GB')
+        .key('vat-standard-gb')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
@@ -20,6 +21,7 @@ const vatStandardEu = () =>
         .amount(0.19)
         .includedInPrice(true)
         .country('DE')
+        .key('vat-standard-de')
         .subRates([]),
     ]);
 
