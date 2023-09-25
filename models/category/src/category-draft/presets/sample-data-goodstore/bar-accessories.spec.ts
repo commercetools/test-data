@@ -24,7 +24,7 @@ describe(`with barAccessories preset`, () => {
         },
         "orderHint": ".36",
         "parent": {
-          "key": "bar-glassware",
+          "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": {
@@ -72,7 +72,7 @@ describe(`with barAccessories preset`, () => {
         "orderHint": ".36",
         "parent": {
           "__typename": "Reference",
-          "key": "bar-glassware",
+          "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": [

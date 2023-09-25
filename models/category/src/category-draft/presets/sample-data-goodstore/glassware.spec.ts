@@ -24,7 +24,7 @@ describe(`with glassware preset`, () => {
         },
         "orderHint": ".23",
         "parent": {
-          "key": "bar-glassware",
+          "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": {
@@ -72,7 +72,7 @@ describe(`with glassware preset`, () => {
         "orderHint": ".23",
         "parent": {
           "__typename": "Reference",
-          "key": "bar-glassware",
+          "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": [

@@ -8,7 +8,7 @@ import kitchen from './kitchen';
 
 const kitchenDraft = kitchen().build<TCategoryDraft>();
 
-const barGlassware = (): TCategoryDraftBuilder =>
+const barAndGlassware = (): TCategoryDraftBuilder =>
   empty()
     .name(
       LocalizedString.presets
@@ -24,8 +24,8 @@ const barGlassware = (): TCategoryDraftBuilder =>
         ['en-US']('bar-and-glassware')
         ['de-DE']('glaser-und-barzubehor')
     )
-    .key('bar-glassware')
+    .key('bar-and-glassware')
     .orderHint('.82')
     .parent(KeyReference.presets.category().key(kitchenDraft.key!));
 
-export default barGlassware;
+export default barAndGlassware;

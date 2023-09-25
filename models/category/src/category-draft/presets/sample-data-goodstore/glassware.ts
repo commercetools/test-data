@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-import barGlassware from './bar-glassware';
+import barGlassware from './bar-and-glassware';
 
 const barGlasswareDraft = barGlassware().build<TCategoryDraft>();
 

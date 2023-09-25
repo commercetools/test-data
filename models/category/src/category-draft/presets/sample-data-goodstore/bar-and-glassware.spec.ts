@@ -1,16 +1,16 @@
 import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
-import barGlassware from './bar-glassware';
+import barAndGlassware from './bar-and-glassware';
 
-describe(`with barGlassware preset`, () => {
-  it('should create a barGlassware category type draft', () => {
-    const barGlasswarePreset = barGlassware().build<TCategoryDraft>();
-    expect(barGlasswarePreset).toMatchInlineSnapshot(`
+describe(`with barAndGlassware preset`, () => {
+  it('should create a barAndGlassware category type draft', () => {
+    const barAndGlasswarePreset = barAndGlassware().build<TCategoryDraft>();
+    expect(barAndGlasswarePreset).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "bar-glassware",
+        "key": "bar-and-glassware",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
@@ -39,16 +39,16 @@ describe(`with barGlassware preset`, () => {
     `);
   });
 
-  it('should create a barGlassware category type draft when built for Graphql', () => {
-    const barGlasswarePresetGraphql =
-      barGlassware().buildGraphql<TCategoryDraftGraphql>();
-    expect(barGlasswarePresetGraphql).toMatchInlineSnapshot(`
+  it('should create a barAndGlassware category type draft when built for Graphql', () => {
+    const barAndGlasswarePresetGraphql =
+      barAndGlassware().buildGraphql<TCategoryDraftGraphql>();
+    expect(barAndGlasswarePresetGraphql).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "bar-glassware",
+        "key": "bar-and-glassware",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
