@@ -44,12 +44,14 @@ const benPillowCover = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Ben Pillow Cover')
         ['de-DE']('Ben Kissenbezug')
+        ['en-US']('Ben Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('ben-pillow-cover')
         ['de-DE']('ben-kissenbezug')
+        ['en-US']('ben-pillow-cover')
     )
     .productType(
       KeyReference.presets

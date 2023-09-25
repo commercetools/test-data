@@ -17,6 +17,10 @@ const rumiChair01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(12999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(15000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

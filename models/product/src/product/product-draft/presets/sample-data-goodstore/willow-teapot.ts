@@ -39,8 +39,8 @@ const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const willowTeapot = (): TProductDraftBuilder =>
@@ -52,12 +52,14 @@ const willowTeapot = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Willow Teapot')
         ['de-DE']('Willow Teekanne')
+        ['en-US']('Willow Teapot')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('willow-teapot')
         ['de-DE']('willow-teekanne')
+        ['en-US']('willow-teapot')
     )
     .productType(
       KeyReference.presets.productType().key(willowTeapotProductTypeDraft.key!)
@@ -73,7 +75,7 @@ const willowTeapot = (): TProductDraftBuilder =>
       KeyReference.presets.category().key(dinnerwareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
       KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
     ]);
 
 export default willowTeapot;

@@ -48,12 +48,14 @@ const sallyArmchair = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Sally Armchair')
         ['de-DE']('Sally Sessel')
+        ['en-US']('Sally Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('sally-armchair')
         ['de-DE']('sally-sessel')
+        ['en-US']('sally-armchair')
     )
     .productType(
       KeyReference.presets.productType().key(sallyArmchairProductTypeDraft.key!)

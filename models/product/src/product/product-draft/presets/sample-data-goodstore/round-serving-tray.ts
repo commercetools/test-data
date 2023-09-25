@@ -56,12 +56,14 @@ const roundServingTray = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Round Serving Tray')
         ['de-DE']('Rundes Serviertablett')
+        ['en-US']('Round Serving Tray')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('round-serving-tray')
         ['de-DE']('rundes-serviertablett')
+        ['en-US']('round-serving-tray')
     )
     .productType(
       KeyReference.presets

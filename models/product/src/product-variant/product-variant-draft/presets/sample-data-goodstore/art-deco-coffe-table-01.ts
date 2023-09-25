@@ -17,6 +17,10 @@ const artDecoCoffeTable01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(320000))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(320000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

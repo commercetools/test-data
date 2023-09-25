@@ -16,6 +16,7 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
         ['en-GB']('Bedroom Furniture')
         ['en-US']('Bedroom Furniture')
         ['de-DE']('Schlafzimmer')
+        ['en-US']('Bedroom Furniture')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
         ['en-GB']('bedroom-furniture')
         ['en-US']('bedroom-furniture')
         ['de-DE']('bedroom-furniture')
+        ['en-US']('bedroom-furniture')
     )
     .key('bedroom-furniture')
     .orderHint('.9')

@@ -27,8 +27,8 @@ const ryeWhiskeyGlassProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const glasswareDraft = CategoryDraft.presets.sampleDataGoodstore
@@ -48,12 +48,14 @@ const ryeWhiskeyGlass = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Rye Whiskey Glass')
         ['de-DE']('Roggen-Whisky-Glas')
+        ['en-US']('Rye Whiskey Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('rye-whiskey-glass')
         ['de-DE']('roggen-whisky-glas')
+        ['en-US']('rye-whiskey-glass')
     )
     .productType(
       KeyReference.presets
@@ -68,7 +70,7 @@ const ryeWhiskeyGlass = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodstore.ryeWhiskeyGlass01()
     )
     .categories([
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
       KeyReference.presets.category().key(glasswareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);

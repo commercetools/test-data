@@ -47,12 +47,14 @@ const ariaRug = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Aria Rug')
         ['de-DE']('Aria Teppich')
+        ['en-US']('Aria Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('aria-rug')
         ['de-DE']('aria-teppich')
+        ['en-US']('aria-rug')
     )
     .productType(
       KeyReference.presets.productType().key(ariaRugProductTypeDraft.key!)

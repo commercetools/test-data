@@ -16,6 +16,7 @@ const livingRoomFurniture = (): TCategoryDraftBuilder =>
         ['en-GB']('Living Room Furniture')
         ['en-US']('Living Room Furniture')
         ['de-DE']('Wohnzimmer')
+        ['en-US']('Living Room Furniture')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const livingRoomFurniture = (): TCategoryDraftBuilder =>
         ['en-GB']('living-room-furniture')
         ['en-US']('living-room-furniture')
         ['de-DE']('living-room-furniture')
+        ['en-US']('living-room-furniture')
     )
     .key('living-room-furniture')
     .orderHint('.9')

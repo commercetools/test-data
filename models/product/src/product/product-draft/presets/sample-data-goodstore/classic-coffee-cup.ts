@@ -27,8 +27,8 @@ const classicCoffeeCupProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const glasswareDraft = CategoryDraft.presets.sampleDataGoodstore
@@ -48,12 +48,14 @@ const classicCoffeeCup = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Classic Coffee Cup')
         ['de-DE']('Klassische Kaffeetasse')
+        ['en-US']('Classic Coffee Cup')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('classic-coffee-cup')
         ['de-DE']('klassische-kaffeetasse')
+        ['en-US']('classic-coffee-cup')
     )
     .productType(
       KeyReference.presets
@@ -68,7 +70,7 @@ const classicCoffeeCup = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodstore.classicCoffeeCup01()
     )
     .categories([
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
       KeyReference.presets.category().key(glasswareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);

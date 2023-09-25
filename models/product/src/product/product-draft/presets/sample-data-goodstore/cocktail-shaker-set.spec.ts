@@ -11,7 +11,7 @@ describe(`with cocktailShakerSet preset`, () => {
             "typeId": "category",
           },
           {
-            "key": "bar-glassware",
+            "key": "bar-and-glassware",
             "typeId": "category",
           },
           {

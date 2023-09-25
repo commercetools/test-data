@@ -16,6 +16,7 @@ const theMinimalist = (): TCategoryDraftBuilder =>
         ['en-GB']('The Minimalist')
         ['en-US']('The Minimalist')
         ['de-DE']('The Minimalist')
+        ['en-US']('The Minimalist')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const theMinimalist = (): TCategoryDraftBuilder =>
         ['en-GB']('the-minimalist')
         ['en-US']('the-minimalist')
         ['de-DE']('the-minimalist')
+        ['en-US']('the-minimalist')
     )
     .key('the-minimalist')
     .orderHint('.003')

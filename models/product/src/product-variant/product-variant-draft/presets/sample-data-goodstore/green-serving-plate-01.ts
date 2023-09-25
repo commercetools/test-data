@@ -17,6 +17,10 @@ const greenServingPlate01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(599))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(599))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

@@ -47,12 +47,14 @@ const juteRug = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Jute Rug')
         ['de-DE']('Jute-Teppich')
+        ['en-US']('Jute Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('jute-rug')
         ['de-DE']('jute-teppich')
+        ['en-US']('jute-rug')
     )
     .productType(
       KeyReference.presets.productType().key(juteRugProductTypeDraft.key!)

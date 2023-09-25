@@ -16,12 +16,14 @@ const storageTables = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('Storage & Tables')
         ['de-DE']('Kommoden')
+        ['en-US']('Dressers')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('storage-and-tables')
         ['de-DE']('dressers')
+        ['en-US']('storage-and-tables')
     )
     .key('storage--tables')
     .orderHint('.1')

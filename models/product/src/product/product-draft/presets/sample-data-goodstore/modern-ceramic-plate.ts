@@ -60,12 +60,14 @@ const modernCeramicPlate = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Modern Ceramic Plate')
         ['de-DE']('Moderne Keramikplatte')
+        ['en-US']('Modern Ceramic Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('modern-ceramic-plate')
         ['de-DE']('moderne-keramikplatte')
+        ['en-US']('modern-ceramic-plate')
     )
     .productType(
       KeyReference.presets

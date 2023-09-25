@@ -44,12 +44,14 @@ const cocoaPillowCover = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Cocoa Pillow Cover')
         ['de-DE']('Kakao-Kissenbezug')
+        ['en-US']('Cocoa Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('cocoa-pillow-cover')
         ['de-DE']('kakao-kissenbezug')
+        ['en-US']('cocoa-pillow-cover')
     )
     .productType(
       KeyReference.presets

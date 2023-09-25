@@ -17,6 +17,10 @@ const modernUpholsteredTwinBed01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(45000))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(45000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

@@ -56,12 +56,14 @@ const ellaSquarePlate = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Ella Square Plate')
         ['de-DE']('Ella Quadratische Platte')
+        ['en-US']('Ella Square Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('ella-square-plate')
         ['de-DE']('ella-quadratische-platte')
+        ['en-US']('ella-square-plate')
     )
     .productType(
       KeyReference.presets

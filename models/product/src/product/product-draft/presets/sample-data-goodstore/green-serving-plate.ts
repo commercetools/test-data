@@ -52,12 +52,14 @@ const greenServingPlate = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Green Serving Plate')
         ['de-DE']('Grüne Servierplatte')
+        ['en-US']('Green Serving Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('green-serving-plate')
         ['de-DE']('grne-servierplatte')
+        ['en-US']('green-serving-plate')
     )
     .productType(
       KeyReference.presets

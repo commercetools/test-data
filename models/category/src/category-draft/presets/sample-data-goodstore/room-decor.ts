@@ -16,6 +16,7 @@ const roomDecor = (): TCategoryDraftBuilder =>
         ['en-GB']('Room Decor')
         ['en-US']('Room Decor')
         ['de-DE']('Zimmerdekoration')
+        ['en-US']('Room Decor')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const roomDecor = (): TCategoryDraftBuilder =>
         ['en-GB']('room-decor')
         ['en-US']('room-decor')
         ['de-DE']('zimmerdekoration')
+        ['en-US']('room-decor')
     )
     .key('room-decor')
     .orderHint('.8')

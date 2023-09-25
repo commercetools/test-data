@@ -17,6 +17,10 @@ const sweetPeaCandle01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(699))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(699))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

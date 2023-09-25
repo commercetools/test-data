@@ -19,7 +19,7 @@ describe(`with willowTeapot preset`, () => {
             "typeId": "category",
           },
           {
-            "key": "bar-glassware",
+            "key": "bar-and-glassware",
             "typeId": "category",
           }
         ],

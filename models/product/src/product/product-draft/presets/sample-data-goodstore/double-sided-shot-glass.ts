@@ -31,8 +31,8 @@ const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
@@ -48,12 +48,14 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Double-sided Shot Glass')
         ['de-DE']('Doppelseitiges Schnapsglas')
+        ['en-US']('Double-sided Shot Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('double-sided-shot-glass')
         ['de-DE']('doppelseitiges-schnapsglas')
+        ['en-US']('double-sided-shot-glass')
     )
     .productType(
       KeyReference.presets
@@ -69,7 +71,7 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
     )
     .categories([
       KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);
 

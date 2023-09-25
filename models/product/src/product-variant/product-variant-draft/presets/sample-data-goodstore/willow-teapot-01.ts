@@ -17,6 +17,10 @@ const willowTeapot01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(899))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(899))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

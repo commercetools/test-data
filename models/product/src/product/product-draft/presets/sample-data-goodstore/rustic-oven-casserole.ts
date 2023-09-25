@@ -36,12 +36,14 @@ const rusticOvenCasserole = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Rustic Oven Casserole')
         ['de-DE']('Rustikaler Ofentopf')
+        ['en-US']('Rustic Oven Casserole')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('rustic-oven-casserole')
         ['de-DE']('rustikaler-ofentopf')
+        ['en-US']('rustic-oven-casserole')
     )
     .productType(
       KeyReference.presets

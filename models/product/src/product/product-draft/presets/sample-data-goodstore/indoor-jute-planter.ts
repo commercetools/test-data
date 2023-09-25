@@ -47,13 +47,15 @@ const indoorJutePlanter = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Indoor Jute Planter')
-        ['de-DE']('Indoor Jute Planter')
+        ['de-DE']('Indoor Blumentopf aus Jute')
+        ['en-US']('Indoor Jute Planter')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('indoor-jute-planter')
         ['de-DE']('indoor-jute-planter')
+        ['en-US']('indoor-jute-planter')
     )
     .productType(
       KeyReference.presets

@@ -44,12 +44,14 @@ const beddingBundle = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Dreamscape Comfort Collection')
         ['de-DE']('Dreamscape Comfort-Kollektion')
+        ['en-US']('Dreamscape Comfort Collection')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('test-bundle')
         ['de-DE']('dreamscape-comfort-kollektion')
+        ['en-US']('test-bundle')
     )
     .productType(
       KeyReference.presets.productType().key(beddingBundleProductTypeDraft.key!)

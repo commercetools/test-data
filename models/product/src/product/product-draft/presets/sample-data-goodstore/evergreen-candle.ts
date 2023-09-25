@@ -48,12 +48,14 @@ const evergreenCandle = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Evergreen Candle')
         ['de-DE']('Immergrüne Kerze')
+        ['en-US']('Evergreen Candle')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('evergreen-candle')
         ['de-DE']('immergrne-kerze')
+        ['en-US']('evergreen-candle')
     )
     .productType(
       KeyReference.presets

@@ -8,7 +8,8 @@ describe(`with storageTables preset`, () => {
   "key": "storage--tables",
   "name": {
     "en-GB": "Storage & Tables",
-    "de-DE": "Kommoden"
+    "de-DE": "Kommoden",
+    "en-US": "Dressers"
   },
   "orderHint": ".1",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with storageTables preset`, () => {
   },
   "slug": {
     "en-GB": "storage-and-tables",
-    "de-DE": "dressers"
+    "de-DE": "dressers",
+    "en-US": "storage-and-tables"
   }
 }`)
     );

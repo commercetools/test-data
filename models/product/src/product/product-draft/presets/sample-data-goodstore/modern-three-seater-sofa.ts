@@ -56,12 +56,14 @@ const modernThreeSeaterSofa = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Modern Three Seater Sofa')
         ['de-DE']('Modernes Dreisitzer-Sofa')
+        ['en-US']('Modern Three Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('modern-three-seater-sofa')
         ['de-DE']('modernes-dreisitzer-sofa')
+        ['en-US']('modern-three-seater-sofa')
     )
     .productType(
       KeyReference.presets

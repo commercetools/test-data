@@ -17,6 +17,10 @@ const ecruDoubleBed01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(89900))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(89900))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

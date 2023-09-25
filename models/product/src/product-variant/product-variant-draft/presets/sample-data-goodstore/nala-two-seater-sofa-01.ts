@@ -17,6 +17,10 @@ const nalaTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(129900))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(129900))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

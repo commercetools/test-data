@@ -56,12 +56,14 @@ const smallWoodenBowl = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Small Wooden Bowl')
         ['de-DE']('Kleine Holzschale')
+        ['en-US']('Small Wooden Bowl')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('small-wooden-bowl')
         ['de-DE']('kleine-holzschale')
+        ['en-US']('small-wooden-bowl')
     )
     .productType(
       KeyReference.presets

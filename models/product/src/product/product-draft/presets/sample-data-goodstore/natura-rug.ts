@@ -47,12 +47,14 @@ const naturaRug = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Natura Rug')
         ['de-DE']('Natura Teppich')
+        ['en-US']('Natura Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('natura-rug')
         ['de-DE']('natura-teppich')
+        ['en-US']('natura-rug')
     )
     .productType(
       KeyReference.presets.productType().key(naturaRugProductTypeDraft.key!)

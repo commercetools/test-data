@@ -7,7 +7,7 @@ describe(`with ryeWhiskeyGlass preset`, () => {
       {
         "categories": [
           {
-            "key": "bar-glassware",
+            "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
