@@ -15,10 +15,12 @@ $ pnpm add -D @commercetools-test-data/product-type
 - [AttributeBooleanType](#attributebooleantype)<br>
 - [AttributeDefinition](#attributedefinition)<br>
 - [AttributeEnumType](#attributeenumtype)<br>
+- [AttributeLocalizedEnumType](#attributelocalizedenumtype)<br>
 - [AttributeLocalizedEnumValue](#attributelocalizedenumvalue)<br>
 - [attributeLocalizableTextType](#attributelocalizabletexttype)<br>
 - [AttributePlainEnumValue](#attributeplainenumvalue)<br>
 - [AttributeSetType](#attributesettype)<br>
+- [AttributeReferenceType](#attributereferencetype)<br>
 - [AttributeTextType](#attributetexttype)<br><br>
 - [ProductType](#producttype)<br>
 
@@ -68,6 +70,19 @@ const attributeEnumType =
   AttributeEnumType.random().build<TAttributeEnumType>();
 ```
 
+## `AttributeLocalizedEnumType`
+
+```ts
+import {
+  AttributeLocalizedEnumType,
+  type TAttributeLocalizedEnumType,
+  type TAttributeLocalizedEnumValueGraphql,
+} from '@commercetools-test-data/product-type';
+
+const attributeLocalizedEnumType =
+  AttributePLocalizedEnumType.random().build<TAttributeLocalizedEnumValue>();
+```
+
 ## `AttributeLocalizedEnumValue`
 
 ```ts
@@ -115,6 +130,17 @@ import {
 } from '@commercetools-test-data/product-type';
 
 const attributeSetType = AttributeSetType.random().build<TAttributeSetType>();
+
+## `AttributeReferenceType`
+
+```ts
+import {
+  AttributeReferenceType,
+  type TAttributeReferenceType,
+} from '@commercetools-test-data/product-type';
+
+const attributeReferenceType =
+  AttributeReferenceType.random().build<TAttributeReferenceType>();
 ```
 
 ## `AttributeTextType`
