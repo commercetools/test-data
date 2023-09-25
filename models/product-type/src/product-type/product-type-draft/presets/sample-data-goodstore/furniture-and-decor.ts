@@ -30,12 +30,16 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Product Specifications')
+            ['en-US']('Product Specifications')
             ['de-DE']('Produktspezifikationen')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB'](
+              'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
+            )
+            ['en-US'](
               'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
             )
         )
@@ -49,7 +53,11 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('color')
         .type(AttributeLocalizableTextType.random())
         .label(
-          LocalizedString.presets.empty()['en-GB']('Color')['de-DE']('Farbe')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Color')
+            ['en-US']('Color')
+            ['de-DE']('Farbe')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -61,7 +69,11 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('finish')
         .type(AttributeLocalizableTextType.random())
         .label(
-          LocalizedString.presets.empty()['en-GB']('Finish')['de-DE'](' Fertig')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Finish')
+            ['en-US']('Finish')
+            ['de-DE']('Fertig')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -76,6 +88,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Color Label')
+            ['en-US']('Color Label')
             ['de-DE']('Farbetikett')
         )
         .isRequired(false)
@@ -91,7 +104,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Finish Label')
-            ['de-DE'](' Fertiges Etikett')
+            ['en-US']('Finish Label')
+            ['de-DE']('Fertiges Etikett')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -106,6 +120,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('New Arrival')
+            ['en-US']('New Arrival')
             ['de-DE']('Neuankömmling')
         )
         .isRequired(false)
@@ -118,9 +133,14 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .empty()
         .name('size')
         .type(AttributeLocalizableTextType.random())
-        .label(LocalizedString.presets.empty()['en-GB']('Size'))
+        .label(
+          LocalizedString.presets.empty()['en-GB']('Size')['en-US']('Size')
+        )
         .inputTip(
-          LocalizedString.presets.empty()['en-GB']('size set as a string value')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('size set as a string value')
+            ['en-US']('size set as a string value')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -131,11 +151,19 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .empty()
         .name('product-description')
         .type(AttributeLocalizableTextType.random())
-        .label(LocalizedString.presets.empty()['en-GB']('Product Description'))
+        .label(
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Product Description')
+            ['en-US']('Product Description')
+        )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB'](
+              'Product description, made a custom attribute so product description is not used for search results.'
+            )
+            ['en-US'](
               'Product description, made a custom attribute so product description is not used for search results.'
             )
         )
@@ -147,11 +175,19 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color-filter')
-        .label(LocalizedString.presets.empty()['en-GB']('Color Filter'))
+        .label(
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Color Filter')
+            ['en-US']('Color Filter')
+        )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB'](
+              'used to set the colors and labels displayed in the color filter on PLP'
+            )
+            ['en-US'](
               'used to set the colors and labels displayed in the color filter on PLP'
             )
         )

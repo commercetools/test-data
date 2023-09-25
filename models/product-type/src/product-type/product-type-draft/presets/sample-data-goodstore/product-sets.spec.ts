@@ -20,6 +20,7 @@ describe(`with productSets preset`, () => {
               "de-DE": "Typ",
               "en": undefined,
               "en-GB": "Type",
+              "en-US": "Type",
               "fr": undefined,
             },
             "name": "type",
@@ -54,6 +55,11 @@ describe(`with productSets preset`, () => {
               {
                 "__typename": "LocalizedString",
                 "locale": "en-GB",
+                "value": "Type",
+              },
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
                 "value": "Type",
               },
               {

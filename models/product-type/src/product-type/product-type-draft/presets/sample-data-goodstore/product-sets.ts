@@ -26,7 +26,13 @@ const productSets = (): TProductTypeDraftBuilder =>
             AttributeLocalizableTextType.random()
           )
         )
-        .label(LocalizedString.presets.empty()['en-GB']('Type')['de-DE']('Typ'))
+        .label(
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Type')
+            ['en-US']('Type')
+            ['de-DE']('Typ')
+        )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)

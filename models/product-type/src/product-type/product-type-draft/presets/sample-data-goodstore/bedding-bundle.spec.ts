@@ -16,6 +16,7 @@ describe(`with beddingBundle preset`, () => {
               "de": undefined,
               "en": undefined,
               "en-GB": "description of the bundle product",
+              "en-US": "description of the bundle product",
               "fr": undefined,
             },
             "isRequired": false,
@@ -24,6 +25,7 @@ describe(`with beddingBundle preset`, () => {
               "de": undefined,
               "en": undefined,
               "en-GB": "product-description",
+              "en-US": "product-description",
               "fr": undefined,
             },
             "name": "product-description",
@@ -41,6 +43,7 @@ describe(`with beddingBundle preset`, () => {
               "de": undefined,
               "en": undefined,
               "en-GB": "Product Spec",
+              "en-US": "Product Spec",
               "fr": undefined,
             },
             "name": "product-spec",
@@ -59,6 +62,7 @@ describe(`with beddingBundle preset`, () => {
               "de-DE": "Produkte dieses Bundles",
               "en": undefined,
               "en-GB": "Products of this bundle",
+              "en-US": "Products of this bundle",
               "fr": undefined,
             },
             "name": "product-ref",
@@ -90,6 +94,11 @@ describe(`with beddingBundle preset`, () => {
                 "locale": "en-GB",
                 "value": "description of the bundle product",
               },
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "description of the bundle product",
+              },
             ],
             "isRequired": false,
             "isSearchable": false,
@@ -97,6 +106,11 @@ describe(`with beddingBundle preset`, () => {
               {
                 "__typename": "LocalizedString",
                 "locale": "en-GB",
+                "value": "product-description",
+              },
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
                 "value": "product-description",
               },
             ],
@@ -118,6 +132,11 @@ describe(`with beddingBundle preset`, () => {
                 "locale": "en-GB",
                 "value": "Product Spec",
               },
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
+                "value": "Product Spec",
+              },
             ],
             "name": "product-spec",
             "type": {
@@ -135,6 +154,11 @@ describe(`with beddingBundle preset`, () => {
               {
                 "__typename": "LocalizedString",
                 "locale": "en-GB",
+                "value": "Products of this bundle",
+              },
+              {
+                "__typename": "LocalizedString",
+                "locale": "en-US",
                 "value": "Products of this bundle",
               },
               {
