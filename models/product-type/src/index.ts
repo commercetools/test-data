@@ -6,6 +6,7 @@ export * from './attribute-localized-enum-type/types';
 export * from './attribute-localized-enum-value/types';
 export * from './attribute-localizable-text-type/types';
 export * from './attribute-plain-enum-value/types';
+export * from './attribute-reference-type/types';
 export * from './attribute-text-type/types';
 export * from './product-type/types';
 
@@ -21,6 +22,8 @@ export * as AttributeLocalizedEnumType from './attribute-localized-enum-type';
 export * as AttributeLocalizedEnumTypeDraft from './attribute-localized-enum-type/attribute-localized-enum-type-draft';
 export * as AttributeLocalizedEnumValue from './attribute-localized-enum-value';
 export * as AttributeLocalizableTextType from './attribute-localizable-text-type';
+export * as AttributeReferenceType from './attribute-reference-type';
+export * as AttributeReferenceTypeDraft from './attribute-reference-type/attribute-reference-type-draft';
 export * as AttributeTextType from './attribute-text-type';
 export * as AttributeTextTypeDraft from './attribute-text-type/attribute-text-type-draft';
 export * as ProductType from './product-type';
