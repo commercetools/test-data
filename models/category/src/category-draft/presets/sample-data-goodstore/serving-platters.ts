@@ -16,6 +16,7 @@ const servingPlatters = (): TCategoryDraftBuilder =>
         ['en-GB']('Serving Platters')
         ['en-US']('Serving Platters')
         ['de-DE']('Servierplatten')
+        ['en-US']('Serving Platters')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const servingPlatters = (): TCategoryDraftBuilder =>
         ['en-GB']('serving-platters')
         ['en-US']('serving-platters')
         ['de-DE']('serving-platters')
+        ['en-US']('serving-platters')
     )
     .key('serving-platters')
     .orderHint('.0004')

@@ -16,6 +16,7 @@ const collections = (): TCategoryDraftBuilder =>
         ['en-GB']('Collections')
         ['en-US']('Collections')
         ['de-DE']('Sonderkollektionen')
+        ['en-US']('Collections')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const collections = (): TCategoryDraftBuilder =>
         ['en-GB']('furniture-collections')
         ['en-US']('furniture-collections')
         ['de-DE']('collections')
+        ['en-US']('furniture-collections')
     )
     .key('collections')
     .orderHint('.7')

@@ -56,12 +56,14 @@ const modernUpholsteredTwinBed = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Modern Upholstered Twin Bed')
         ['de-DE']('Modernes gepolstertes Einzelbett')
+        ['en-US']('Modern Upholstered Twin Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('modern-upholstered-twin-bed')
         ['de-DE']('modernes-gepolstertes-einzelbett')
+        ['en-US']('modern-upholstered-twin-bed')
     )
     .productType(
       KeyReference.presets

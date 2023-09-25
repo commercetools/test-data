@@ -48,12 +48,14 @@ const artDecoCoffeTable = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Art Deco Coffe Table')
         ['de-DE']('Art-Deco-Couchtisch')
+        ['en-US']('Art Deco Coffe Table')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('art-deco-coffe-table')
         ['de-DE']('art-deco-couchtisch')
+        ['en-US']('art-deco-coffe-table')
     )
     .productType(
       KeyReference.presets

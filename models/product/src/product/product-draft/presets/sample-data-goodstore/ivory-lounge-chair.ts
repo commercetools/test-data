@@ -52,12 +52,14 @@ const ivoryLoungeChair = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Ivory Lounge Chair')
         ['de-DE']('Elfenbein-Lounge-Stuhl')
+        ['en-US']('Ivory Lounge Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('ivory-lounge-chair')
         ['de-DE']('elfenbein-lounge-stuhl')
+        ['en-US']('ivory-lounge-chair')
     )
     .productType(
       KeyReference.presets

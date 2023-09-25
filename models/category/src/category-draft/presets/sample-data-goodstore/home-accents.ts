@@ -23,6 +23,7 @@ const homeAccents = (): TCategoryDraftBuilder =>
         ['en-GB']('home-accents')
         ['en-US']('home-accents')
         ['de-DE']('home-akzente')
+        ['en-US']('home-accents')
     )
     .key('home-accents')
     .orderHint('.5')

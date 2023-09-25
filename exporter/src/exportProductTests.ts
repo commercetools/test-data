@@ -172,8 +172,6 @@ const products = async () => {
     content += `  });\n`;
     content += `});\n`;
 
-    console.log(content);
-
     await writeFile(
       content,
       'models/product/src/product/product-draft/presets',

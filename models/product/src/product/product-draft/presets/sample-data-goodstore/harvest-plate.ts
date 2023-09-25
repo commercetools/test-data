@@ -56,12 +56,14 @@ const harvestPlate = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Harvest Plate')
         ['de-DE']('Ernteplatte')
+        ['en-US']('Harvest Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('harvest-plate')
         ['de-DE']('ernteplatte')
+        ['en-US']('harvest-plate')
     )
     .productType(
       KeyReference.presets.productType().key(harvestPlateProductTypeDraft.key!)

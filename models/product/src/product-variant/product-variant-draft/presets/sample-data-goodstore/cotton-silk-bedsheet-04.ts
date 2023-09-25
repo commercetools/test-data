@@ -17,6 +17,10 @@ const cottonSilkBedsheet04 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(1299))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(1299))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

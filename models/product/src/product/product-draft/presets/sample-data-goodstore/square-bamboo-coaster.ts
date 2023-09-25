@@ -35,8 +35,8 @@ const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const squareBambooCoaster = (): TProductDraftBuilder =>
@@ -48,12 +48,14 @@ const squareBambooCoaster = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Square Bamboo Coaster')
         ['de-DE']('Quadratischer Untersetzer aus Bambus')
+        ['en-US']('Square Bamboo Coaster')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('square-bamboo-coaster')
         ['de-DE']('quadratischer-untersetzer-aus-bambus')
+        ['en-US']('square-bamboo-coaster')
     )
     .productType(
       KeyReference.presets
@@ -70,7 +72,7 @@ const squareBambooCoaster = (): TProductDraftBuilder =>
     .categories([
       KeyReference.presets.category().key(kitchenDraft.key!),
       KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
     ]);
 
 export default squareBambooCoaster;

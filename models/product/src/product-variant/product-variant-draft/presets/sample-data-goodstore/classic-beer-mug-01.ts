@@ -17,6 +17,10 @@ const classicBeerMug01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(3599))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(3599))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

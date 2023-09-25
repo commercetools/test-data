@@ -16,6 +16,7 @@ const serveware = (): TCategoryDraftBuilder =>
         ['en-GB']('Collections') // matches MC
         ['en-US']('Kitchen Collections')
         ['de-DE']('Alles zum Servieren')
+        ['en-US']('Serveware')
     )
     .slug(
       LocalizedString.presets
@@ -23,6 +24,7 @@ const serveware = (): TCategoryDraftBuilder =>
         ['en-GB']('kitchen-collections')
         ['en-US']('kitchen-collections')
         ['de-DE']('serveware')
+        ['en-US']('kitchen-collections')
     )
     .key('serveware')
     .orderHint('.86')

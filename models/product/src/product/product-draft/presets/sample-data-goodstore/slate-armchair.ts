@@ -48,12 +48,14 @@ const slateArmchair = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Slate Armchair')
         ['de-DE']('Sessel aus Schiefer')
+        ['en-US']('Slate Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('slate-armchair')
         ['de-DE']('sessel-aus-schiefer')
+        ['en-US']('slate-armchair')
     )
     .productType(
       KeyReference.presets.productType().key(slateArmchairProductTypeDraft.key!)

@@ -17,6 +17,10 @@ const modernBlackCoaster01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(1999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(1999))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

@@ -17,6 +17,10 @@ const serenityQueenBed01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(99900))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(99900))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

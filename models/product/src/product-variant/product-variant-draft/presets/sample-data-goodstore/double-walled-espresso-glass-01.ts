@@ -17,6 +17,10 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(4299))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(4299))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

@@ -48,12 +48,14 @@ const pinkAbstractPainting = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Pink Abstract Painting')
         ['de-DE']('Rosa abstrakte Malerei')
+        ['en-US']('Pink Abstract Painting')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('pink-abstract-painting')
         ['de-DE']('rosa-abstrakte-malerei')
+        ['en-US']('pink-abstract-painting')
     )
     .productType(
       KeyReference.presets

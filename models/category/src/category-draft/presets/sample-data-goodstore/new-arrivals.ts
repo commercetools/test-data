@@ -10,6 +10,7 @@ const newArrivals = (): TCategoryDraftBuilder =>
         ['en-GB']('New Arrivals')
         ['en-US']('New Arrivals')
         ['de-DE']('Neuheiten')
+        ['en-US']('New Arrivals')
     )
     .slug(
       LocalizedString.presets
@@ -17,6 +18,7 @@ const newArrivals = (): TCategoryDraftBuilder =>
         ['en-GB']('new-arrivals')
         ['en-US']('new-arrivals')
         ['de-DE']('ganz-neu')
+        ['en-US']('new-arrivals')
     )
     .key('new-arrivals')
     .orderHint('0.4');

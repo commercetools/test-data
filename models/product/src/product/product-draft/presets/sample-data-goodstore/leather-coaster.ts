@@ -31,8 +31,8 @@ const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
@@ -48,12 +48,14 @@ const leatherCoaster = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Leather Coaster')
         ['de-DE']('Untersetzer aus Leder')
+        ['en-US']('Leather Coaster')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('leather-coaster')
         ['de-DE']('untersetzer-aus-leder')
+        ['en-US']('leather-coaster')
     )
     .productType(
       KeyReference.presets
@@ -69,7 +71,7 @@ const leatherCoaster = (): TProductDraftBuilder =>
     )
     .categories([
       KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);
 

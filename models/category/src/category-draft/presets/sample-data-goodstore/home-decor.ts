@@ -10,6 +10,7 @@ const homeDecor = (): TCategoryDraftBuilder =>
         ['en-GB']('Home Decor')
         ['en-US']('Home Decor')
         ['de-DE']('Dekoration')
+        ['en-US']('Home Decor')
     )
     .slug(
       LocalizedString.presets
@@ -17,6 +18,7 @@ const homeDecor = (): TCategoryDraftBuilder =>
         ['en-GB']('home-decor')
         ['en-US']('home-decor')
         ['de-DE']('home-decor')
+        ['en-US']('home-decor')
     )
     .key('home-decor')
     .orderHint('0.1');

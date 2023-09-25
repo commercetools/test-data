@@ -48,12 +48,14 @@ const ecruDoubleBed = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Ecru Double Bed')
         ['de-DE']('Ecru Doppelbett')
+        ['en-US']('Ecru Double Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('ecru-double-bed')
         ['de-DE']('ecru-doppelbett')
+        ['en-US']('ecru-double-bed')
     )
     .productType(
       KeyReference.presets.productType().key(ecruDoubleBedProductTypeDraft.key!)

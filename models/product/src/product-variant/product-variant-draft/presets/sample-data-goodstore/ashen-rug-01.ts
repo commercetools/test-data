@@ -17,6 +17,10 @@ const ashenRug01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(19999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(25000))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

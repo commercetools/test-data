@@ -48,12 +48,14 @@ const sweetPeaCandle = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Sweet Pea Candle')
         ['de-DE']('Süße Erbsenkerze')
+        ['en-US']('Sweet Pea Candle')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('sweat-pea-candle')
         ['de-DE']('kerze-der-sen-erbse')
+        ['en-US']('sweat-pea-candle')
     )
     .productType(
       KeyReference.presets

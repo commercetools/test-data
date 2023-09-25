@@ -48,12 +48,14 @@ const entrywayCloset = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Entryway Closet')
         ['de-DE']('Eingangsschrank')
+        ['en-US']('Entryway Closet')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('entryway-closet')
         ['de-DE']('eingangsschrank')
+        ['en-US']('entryway-closet')
     )
     .productType(
       KeyReference.presets

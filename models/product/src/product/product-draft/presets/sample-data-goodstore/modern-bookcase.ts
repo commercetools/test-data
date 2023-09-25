@@ -60,12 +60,14 @@ const modernBookcase = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Modern Bookcase')
         ['de-DE']('Modernes Bücherregal')
+        ['en-US']('Modern Bookcase')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('modern-bookcase')
         ['de-DE']('modernes-bcherregal')
+        ['en-US']('modern-bookcase')
     )
     .productType(
       KeyReference.presets

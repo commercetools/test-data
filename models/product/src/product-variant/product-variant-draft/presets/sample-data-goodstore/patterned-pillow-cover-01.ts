@@ -17,6 +17,10 @@ const patternedPillowCover01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(1499))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(1499))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

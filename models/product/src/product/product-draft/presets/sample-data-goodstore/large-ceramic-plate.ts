@@ -52,12 +52,14 @@ const largeCeramicPlate = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Large Ceramic Plate')
         ['de-DE']('Große Keramikplatte')
+        ['en-US']('Large Ceramic Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('large-ceramic-plate')
         ['de-DE']('groe-keramikplatte')
+        ['en-US']('large-ceramic-plate')
     )
     .productType(
       KeyReference.presets

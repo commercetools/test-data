@@ -48,12 +48,14 @@ const cobblestoneRug = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Cobblestone Rug')
         ['de-DE']('Kopfsteinpflaster')
+        ['en-US']('Cobblestone Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('cobblestone-rug')
         ['de-DE']('kopfsteinpflaster')
+        ['en-US']('cobblestone-rug')
     )
     .productType(
       KeyReference.presets

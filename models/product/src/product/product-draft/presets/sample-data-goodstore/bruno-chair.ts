@@ -47,12 +47,14 @@ const brunoChair = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Bruno Chair')
         ['de-DE']('Bruno Stuhl')
+        ['en-US']('Bruno Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('bruno-chair')
         ['de-DE']('bruno-stuhl')
+        ['en-US']('bruno-chair')
     )
     .productType(
       KeyReference.presets.productType().key(brunoChairProductTypeDraft.key!)

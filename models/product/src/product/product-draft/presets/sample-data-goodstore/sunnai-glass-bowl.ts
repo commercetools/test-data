@@ -51,13 +51,15 @@ const sunnaiGlassBowl = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Sunnai Glass Bowl')
-        ['de-DE']('Sunnai Glaskugel')
+        ['de-DE']('Sunnai Glasschale')
+        ['en-US']('Sunnai Glass Bowl')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('sunnai-glass-bowl')
         ['de-DE']('sunnai-glaskugel')
+        ['en-US']('sunnai-glass-bowl')
     )
     .productType(
       KeyReference.presets
