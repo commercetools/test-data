@@ -1,4 +1,5 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
+// @unstub
 // TODO: Import when available
 // import {
 //   ProductTypeDraft,
@@ -13,6 +14,7 @@ import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
 import * as CartDiscountDraft from '../../index';
 
+// @unstub
 // TODO: Need product type draft to be created
 // const productTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
 //   .furniture()
@@ -25,6 +27,7 @@ const furnitureBogo = (): TCartDiscountDraftBuilder =>
     .cartPredicate('1 = 1')
     .target(
       CartDiscountMultiBuyLineItemsTargetDraft.random()
+        // @unstub
         // TODO: insert when available
         // .predicate(`productType.key = "${productTypeDraft.key}"`)
         .predicate(`productType.key = "placeholder"`)
