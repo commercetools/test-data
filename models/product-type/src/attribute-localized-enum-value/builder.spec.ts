@@ -1,7 +1,10 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { type TAttributeLocalizedEnumValue } from './types';
+import {
+  type TAttributeLocalizedEnumValue,
+  TAttributeLocalizedEnumValueGraphql,
+} from './types';
 import * as AttributeLocalizedEnumValue from './index';
 
 describe('builder', () => {
@@ -41,5 +44,24 @@ describe('builder', () => {
     )
   );
 
-  //There are no graphql tests at this time
+  it(
+    ...createBuilderSpec<
+      TAttributeLocalizedEnumValue,
+      TAttributeLocalizedEnumValueGraphql
+    >(
+      'graphql',
+      AttributeLocalizedEnumValue.random(),
+      expect.objectContaining({
+        key: expect.any(String),
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        __typename: 'LocalizableEnumValueType',
+      })
+    )
+  );
 });

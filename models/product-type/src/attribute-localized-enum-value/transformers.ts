@@ -1,3 +1,4 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import {
   type TAttributeLocalizedEnumValue,
@@ -9,7 +10,6 @@ const transformers = {
     TAttributeLocalizedEnumValue,
     TAttributeLocalizedEnumValue
   >('default', { buildFields: ['label'] }),
-
   rest: Transformer<TAttributeLocalizedEnumValue, TAttributeLocalizedEnumValue>(
     'rest',
     { buildFields: ['label'] }
@@ -19,8 +19,10 @@ const transformers = {
     TAttributeLocalizedEnumValueGraphql
   >('graphql', {
     buildFields: [],
-    addFields: () => ({
-      __typename: 'AttributeLocalizedEnumValue',
+    removeFields: ['label'],
+    addFields: ({ fields }) => ({
+      labelAllLocales: LocalizedString.toLocalizedField(fields.label),
+      __typename: 'LocalizableEnumValueType',
     }),
   }),
 };

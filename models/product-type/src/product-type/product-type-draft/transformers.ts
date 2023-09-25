@@ -1,5 +1,5 @@
-import { TAttributeDefinitionDraftGraphql } from '@commercetools-test-data/attribute-definition';
 import { buildField, Transformer } from '@commercetools-test-data/core';
+import { TAttributeDefinitionDraftGraphql } from '../../attribute-definition';
 import type { TProductTypeDraft, TProductTypeDraftGraphql } from '../types';
 
 const transformers = {
