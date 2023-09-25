@@ -9,22 +9,24 @@ import kitchen from './kitchen';
 
 const kitchenDraft = kitchen().build<TCategoryDraft>();
 
-const barGlassware = (): TCategoryDraftBuilder =>
+const barAndGlassware = (): TCategoryDraftBuilder =>
   empty()
     .name(
       LocalizedString.presets
         .empty()
         ['en-GB']('Bar and Glassware')
         ['de-DE']('Gläser und Barzubehör')
+        ['en-US']('Bar and Glassware')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('bar-and-glassware')
         ['de-DE']('bar-and-glassware')
+        ['en-US']('bar-and-glassware')
     )
-    .key('bar-glassware')
+    .key('bar-and-glassware')
     .orderHint('.82')
     .parent(KeyReference.presets.category().key(kitchenDraft.key!));
 
-export default barGlassware;
+export default barAndGlassware;

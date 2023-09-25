@@ -8,7 +8,8 @@ describe(`with armchairs preset`, () => {
   "key": "armchairs",
   "name": {
     "en-GB": "Armchairs",
-    "de-DE": "Stühle"
+    "de-DE": "Stühle",
+    "en-US": "Chairs"
   },
   "orderHint": ".3",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with armchairs preset`, () => {
   },
   "slug": {
     "en-GB": "armchairs",
-    "de-DE": "chairs"
+    "de-DE": "chairs",
+    "en-US": "armchairs"
   }
 }`)
     );

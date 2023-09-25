@@ -12,7 +12,13 @@ const roomDecorDraft = roomDecor().build<TCategoryDraft>();
 const rugs = (): TCategoryDraftBuilder =>
   empty()
     .name(LocalizedString.presets.empty()['en-GB']('Rugs')['de-DE']('Teppiche'))
-    .slug(LocalizedString.presets.empty()['en-GB']('rugs')['de-DE']('teppiche'))
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('rugs')
+        ['de-DE']('teppiche')
+        ['en-US']('rugs')
+    )
     .key('rugs')
     .orderHint('.4')
     .parent(KeyReference.presets.category().key(roomDecorDraft.key!));

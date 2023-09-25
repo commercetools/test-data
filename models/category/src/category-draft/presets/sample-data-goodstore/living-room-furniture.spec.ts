@@ -9,7 +9,8 @@ describe(`with livingRoomFurniture preset`, () => {
   "key": "living-room-furniture",
   "name": {
     "en-GB": "Living Room Furniture",
-    "de-DE": "Wohnzimmer"
+    "de-DE": "Wohnzimmer",
+    "en-US": "Living Room Furniture"
   },
   "orderHint": ".9",
   "parent": {
@@ -18,7 +19,8 @@ describe(`with livingRoomFurniture preset`, () => {
   },
   "slug": {
     "en-GB": "living-room-furniture",
-    "de-DE": "living-room-furniture"
+    "de-DE": "living-room-furniture",
+    "en-US": "living-room-furniture"
   }
 }`)
     );

@@ -12,9 +12,19 @@ const dinnerwareDraft = dinnerware().build<TCategoryDraft>();
 const plates = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets.empty()['en-GB']('Plates')['de-DE']('Platten')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Plates')
+        ['de-DE']('Platten')
+        ['en-US']('Plates')
     )
-    .slug(LocalizedString.presets.empty()['en-GB']('plates')['de-DE']('plates'))
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('plates')
+        ['de-DE']('plates')
+        ['en-US']('plates')
+    )
     .key('plates')
     .orderHint('.82')
     .parent(KeyReference.presets.category().key(dinnerwareDraft.key!));

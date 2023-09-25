@@ -17,7 +17,8 @@ describe(`with rugs preset`, () => {
   },
   "slug": {
     "en-GB": "rugs",
-    "de-DE": "teppiche"
+    "de-DE": "teppiche",
+    "en-US": "rugs"
   }
 }`)
     );

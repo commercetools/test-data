@@ -31,8 +31,8 @@ const glasswareDraft = CategoryDraft.presets.sampleDataGoodstore
   .glassware()
   .build<TCategoryDraft>();
 
-const barGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
-  .barGlassware()
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
@@ -48,12 +48,14 @@ const classicChampagneGlasses = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Classic Champagne Glasses')
         ['de-DE']('Klassische Champagnergläser')
+        ['en-US']('Classic Champagne Glasses')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('classic-champagne-glasses')
         ['de-DE']('klassische-champagnerglser')
+        ['en-US']('classic-champagne-glasses')
     )
     .productType(
       KeyReference.presets
@@ -69,7 +71,7 @@ const classicChampagneGlasses = (): TProductDraftBuilder =>
     )
     .categories([
       KeyReference.presets.category().key(glasswareDraft.key!),
-      KeyReference.presets.category().key(barGlasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);
 

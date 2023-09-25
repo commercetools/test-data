@@ -7,7 +7,7 @@ describe(`with classicCoffeeCup preset`, () => {
       {
         "categories": [
           {
-            "key": "bar-glassware",
+            "key": "bar-and-glassware",
             "typeId": "category",
           },
           {

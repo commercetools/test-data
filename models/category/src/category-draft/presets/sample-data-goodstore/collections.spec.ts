@@ -8,7 +8,8 @@ describe(`with collections preset`, () => {
   "key": "collections",
   "name": {
     "en-GB": "Collections",
-    "de-DE": "Sonderkollektionen"
+    "de-DE": "Sonderkollektionen",
+    "en-US": "Collections"
   },
   "orderHint": ".7",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with collections preset`, () => {
   },
   "slug": {
     "en-GB": "furniture-collections",
-    "de-DE": "collections"
+    "de-DE": "collections",
+    "en-US": "furniture-collections"
   }
 }`)
     );

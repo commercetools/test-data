@@ -8,16 +8,18 @@ describe(`with glassware preset`, () => {
   "key": "glassware",
   "name": {
     "en-GB": "Glassware",
-    "de-DE": "Gläser"
+    "de-DE": "Gläser",
+    "en-US": "Glassware"
   },
   "orderHint": ".23",
   "parent": {
-    "key": "bar-glassware",
+    "key": "bar-and-glassware",
     "typeId": "category"
   },
   "slug": {
     "en-GB": "glassware",
-    "de-DE": "glassware"
+    "de-DE": "glassware",
+    "en-US": "glassware"
   }
 }`)
     );

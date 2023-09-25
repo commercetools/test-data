@@ -8,7 +8,8 @@ describe(`with roomDecor preset`, () => {
   "key": "room-decor",
   "name": {
     "en-GB": "Room Decor",
-    "de-DE": "Zimmerdekoration"
+    "de-DE": "Zimmerdekoration",
+    "en-US": "Room Decor"
   },
   "orderHint": ".8",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with roomDecor preset`, () => {
   },
   "slug": {
     "en-GB": "room-decor",
-    "de-DE": "zimmerdekoration"
+    "de-DE": "zimmerdekoration",
+    "en-US": "room-decor"
   }
 }`)
     );

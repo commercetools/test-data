@@ -11,8 +11,20 @@ const bedroomFurnitureDraft = bedroomFurniture().build<TCategoryDraft>();
 
 const beds = (): TCategoryDraftBuilder =>
   empty()
-    .name(LocalizedString.presets.empty()['en-GB']('Beds')['de-DE']('Betten'))
-    .slug(LocalizedString.presets.empty()['en-GB']('beds')['de-DE']('beds'))
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Beds')
+        ['de-DE']('Betten')
+        ['en-US']('Beds')
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('beds')
+        ['de-DE']('beds')
+        ['en-US']('beds')
+    )
     .key('beds')
     .orderHint('.4')
     .parent(KeyReference.presets.category().key(bedroomFurnitureDraft.key!));

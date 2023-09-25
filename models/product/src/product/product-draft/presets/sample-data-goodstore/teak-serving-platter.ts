@@ -52,12 +52,14 @@ const teakServingPlatter = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Teak Serving Platter')
         ['de-DE']('Servierplatte aus Teakholz')
+        ['en-US']('Teak Serving Platter')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('teak-serving-platter')
         ['de-DE']('servierplatte-aus-teakholz')
+        ['en-US']('teak-serving-platter')
     )
     .productType(
       KeyReference.presets

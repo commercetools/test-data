@@ -8,7 +8,8 @@ describe(`with bedding preset`, () => {
   "key": "bedding",
   "name": {
     "en-GB": "Bedding",
-    "de-DE": "Bettwäsche"
+    "de-DE": "Bettwäsche",
+    "en-US": "Bedding"
   },
   "orderHint": ".5",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with bedding preset`, () => {
   },
   "slug": {
     "en-GB": "bedding",
-    "de-DE": "bettwsche"
+    "de-DE": "bettwsche",
+    "en-US": "bedding"
   }
 }`)
     );

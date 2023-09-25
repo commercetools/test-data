@@ -8,7 +8,8 @@ describe(`with cheeseTrays preset`, () => {
   "key": "cheese-trays",
   "name": {
     "en-GB": "Cheese Trays",
-    "de-DE": "Käseplatten"
+    "de-DE": "Käseplatten",
+    "en-US": "Cheese Trays"
   },
   "orderHint": ".12",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with cheeseTrays preset`, () => {
   },
   "slug": {
     "en-GB": "cheese-trays",
-    "de-DE": "cheese-trays"
+    "de-DE": "cheese-trays",
+    "en-US": "cheese-trays"
   }
 }`)
     );

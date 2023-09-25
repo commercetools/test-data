@@ -8,7 +8,8 @@ describe(`with bowls preset`, () => {
   "key": "bowls",
   "name": {
     "en-GB": "Bowls",
-    "de-DE": "Schalen"
+    "de-DE": "Schalen",
+    "en-US": "Bowls"
   },
   "orderHint": ".56",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with bowls preset`, () => {
   },
   "slug": {
     "en-GB": "bowls",
-    "de-DE": "bowls"
+    "de-DE": "bowls",
+    "en-US": "bowls"
   }
 }`)
     );

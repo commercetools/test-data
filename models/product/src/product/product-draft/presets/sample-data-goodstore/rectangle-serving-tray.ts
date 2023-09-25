@@ -52,12 +52,14 @@ const rectangleServingTray = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Rectangle Serving Tray')
         ['de-DE']('Rechteckiges Serviertablett')
+        ['en-US']('Rectangle Serving Tray')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('rectangle-serving-tray')
         ['de-DE']('rechteckiges-serviertablett')
+        ['en-US']('rectangle-serving-tray')
     )
     .productType(
       KeyReference.presets

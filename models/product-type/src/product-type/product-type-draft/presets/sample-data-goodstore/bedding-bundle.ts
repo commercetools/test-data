@@ -1,5 +1,8 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import { AttributeDefinitionDraft } from '../../../../index';
+import {
+  AttributeDefinitionDraft,
+  AttributeSetTypeDraft,
+} from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
 
@@ -43,6 +46,12 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
             ['de-DE']('Produkte dieses Bundles')
         )
         .isRequired(false)
+        .type(
+          AttributeSetTypeDraft.random().elementType({
+            name: 'reference',
+            referenceTypeId: 'product',
+          })
+        )
         .attributeConstraint('None')
         .isSearchable(false)
         .inputHint('SingleLine'),

@@ -8,16 +8,18 @@ describe(`with bedroomFurniture preset`, () => {
   "key": "bedroom-furniture",
   "name": {
     "en-GB": "Bedroom Furniture",
-    "de-DE": "Schlafzimmer"
+    "de-DE": "Schlafzimmer",
+    "en-US": "Bedroom Furniture"
   },
-  "orderHint": "9",
+  "orderHint": ".9",
   "parent": {
     "key": "furniture",
     "typeId": "category"
   },
   "slug": {
     "en-GB": "bedroom-furniture",
-    "de-DE": "bedroom-furniture"
+    "de-DE": "bedroom-furniture",
+    "en-US": "bedroom-furniture"
   }
 }`)
     );

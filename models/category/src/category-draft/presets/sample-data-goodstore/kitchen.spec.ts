@@ -8,12 +8,14 @@ describe(`with kitchen preset`, () => {
   "key": "kitchen",
   "name": {
     "en-GB": "Kitchen",
-    "de-DE": "Küche"
+    "de-DE": "Küche",
+    "en-US": "Kitchen"
   },
   "orderHint": "0.3",
   "slug": {
     "en-GB": "kitchen",
-    "de-DE": "kitchen"
+    "de-DE": "kitchen",
+    "en-US": "kitchen"
   }
 }`)
     );

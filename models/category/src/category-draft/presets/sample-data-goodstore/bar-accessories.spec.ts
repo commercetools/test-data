@@ -8,16 +8,18 @@ describe(`with barAccessories preset`, () => {
   "key": "bar-accessories",
   "name": {
     "en-GB": "Bar Accessories",
-    "de-DE": "Barzubehör"
+    "de-DE": "Barzubehör",
+    "en-US": "Bar Accessories"
   },
   "orderHint": ".36",
   "parent": {
-    "key": "bar-glassware",
+    "key": "bar-and-glassware",
     "typeId": "category"
   },
   "slug": {
     "en-GB": "bar-accessories",
-    "de-DE": "bar-accessories"
+    "de-DE": "bar-accessories",
+    "en-US": "bar-accessories"
   }
 }`)
     );

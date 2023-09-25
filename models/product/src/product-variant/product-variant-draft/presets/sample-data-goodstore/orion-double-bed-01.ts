@@ -17,6 +17,10 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(159900))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(159900))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

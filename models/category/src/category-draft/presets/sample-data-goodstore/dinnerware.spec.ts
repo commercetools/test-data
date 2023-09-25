@@ -8,7 +8,8 @@ describe(`with dinnerware preset`, () => {
   "key": "dinnerware",
   "name": {
     "en-GB": "Serving & Tableware",
-    "de-DE": "Geschirr"
+    "de-DE": "Geschirr",
+    "en-US": "Dinnerware"
   },
   "orderHint": ".75",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with dinnerware preset`, () => {
   },
   "slug": {
     "en-GB": "serving-and-tableware",
-    "de-DE": "dinnerware"
+    "de-DE": "dinnerware",
+    "en-US": "serving-and-tableware"
   }
 }`)
     );

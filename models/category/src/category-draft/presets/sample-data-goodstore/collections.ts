@@ -16,12 +16,14 @@ const collections = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('Collections')
         ['de-DE']('Sonderkollektionen')
+        ['en-US']('Collections')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('furniture-collections')
         ['de-DE']('collections')
+        ['en-US']('furniture-collections')
     )
     .key('collections')
     .orderHint('.7')

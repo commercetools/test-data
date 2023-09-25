@@ -10,6 +10,7 @@
   },
   "scripts": {
     "export": "ts-node src/exportCategories.ts && ts-node src/exportProductTypes.ts && ts-node src/exportVariants.ts && ts-node src/exportProducts.ts && ts-node src/exportTaxes.ts",
+    "exportTests": "ts-node src/exportCategoryTests.ts && ts-node src/exportProductTypesTests.ts && ts-node src/exportProductTests.ts && ts-node src/exportTaxTests.ts",
     "exportCategories": "ts-node src/exportCategories.ts",
     "exportCategoryTests": "ts-node src/exportCategoryTests.ts",
     "exportProductTypes": "ts-node src/exportProductTypes.ts",

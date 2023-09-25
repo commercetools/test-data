@@ -8,7 +8,8 @@ describe(`with beds preset`, () => {
   "key": "beds",
   "name": {
     "en-GB": "Beds",
-    "de-DE": "Betten"
+    "de-DE": "Betten",
+    "en-US": "Beds"
   },
   "orderHint": ".4",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with beds preset`, () => {
   },
   "slug": {
     "en-GB": "beds",
-    "de-DE": "beds"
+    "de-DE": "beds",
+    "en-US": "beds"
   }
 }`)
     );

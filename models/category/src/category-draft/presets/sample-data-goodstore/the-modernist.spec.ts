@@ -8,7 +8,8 @@ describe(`with theModernist preset`, () => {
   "key": "the-modernist",
   "name": {
     "en-GB": "The Modernist",
-    "de-DE": "The Modernist"
+    "de-DE": "The Modernist",
+    "en-US": "The Modernist"
   },
   "orderHint": ".0035",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with theModernist preset`, () => {
   },
   "slug": {
     "en-GB": "the-modernist",
-    "de-DE": "the-modernist"
+    "de-DE": "the-modernist",
+    "en-US": "the-modernist"
   }
 }`)
     );

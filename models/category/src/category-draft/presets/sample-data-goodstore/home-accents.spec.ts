@@ -17,7 +17,8 @@ describe(`with homeAccents preset`, () => {
   },
   "slug": {
     "en-GB": "home-accents",
-    "de-DE": "home-akzente"
+    "de-DE": "home-akzente",
+    "en-US": "home-accents"
   }
 }`)
     );

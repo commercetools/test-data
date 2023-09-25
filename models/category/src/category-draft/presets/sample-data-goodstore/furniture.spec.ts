@@ -8,12 +8,14 @@ describe(`with furniture preset`, () => {
   "key": "furniture",
   "name": {
     "en-GB": "Furniture",
-    "de-DE": "Möbel"
+    "de-DE": "Möbel",
+    "en-US": "Furniture"
   },
   "orderHint": "0.2",
   "slug": {
     "en-GB": "furniture",
-    "de-DE": "furniture"
+    "de-DE": "furniture",
+    "en-US": "furniture"
   }
 }`)
     );

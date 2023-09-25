@@ -8,7 +8,8 @@ describe(`with plates preset`, () => {
   "key": "plates",
   "name": {
     "en-GB": "Plates",
-    "de-DE": "Platten"
+    "de-DE": "Platten",
+    "en-US": "Plates"
   },
   "orderHint": ".82",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with plates preset`, () => {
   },
   "slug": {
     "en-GB": "plates",
-    "de-DE": "plates"
+    "de-DE": "plates",
+    "en-US": "plates"
   }
 }`)
     );

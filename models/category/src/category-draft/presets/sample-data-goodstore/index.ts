@@ -1,7 +1,7 @@
 import armchairs from './armchairs';
 import bakeware from './bakeware';
 import barAccessories from './bar-accessories';
-import barGlassware from './bar-glassware';
+import barAndGlassware from './bar-and-glassware';
 import bedding from './bedding';
 import bedroomFurniture from './bedroom-furniture';
 import beds from './beds';
@@ -31,7 +31,7 @@ const presets = {
   armchairs,
   bakeware,
   barAccessories,
-  barGlassware,
+  barAndGlassware,
   bedding,
   bedroomFurniture,
   beds,

@@ -8,7 +8,8 @@ describe(`with serveware preset`, () => {
   "key": "serveware",
   "name": {
     "en-GB": "Collections",
-    "de-DE": "Alles zum Servieren"
+    "de-DE": "Alles zum Servieren",
+    "en-US": "Serveware"
   },
   "orderHint": ".86",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with serveware preset`, () => {
   },
   "slug": {
     "en-GB": "kitchen-collections",
-    "de-DE": "serveware"
+    "de-DE": "serveware",
+    "en-US": "kitchen-collections"
   }
 }`)
     );

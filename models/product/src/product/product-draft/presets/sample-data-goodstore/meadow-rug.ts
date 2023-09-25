@@ -47,12 +47,14 @@ const meadowRug = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Meadow Rug')
         ['de-DE']('Meadow Teppich')
+        ['en-US']('Meadow Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('meadow-rug')
         ['de-DE']('meadow-teppich')
+        ['en-US']('meadow-rug')
     )
     .productType(
       KeyReference.presets.productType().key(meadowRugProductTypeDraft.key!)

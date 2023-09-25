@@ -8,7 +8,8 @@ describe(`with bakeware preset`, () => {
   "key": "bakeware",
   "name": {
     "en-GB": "Bakeware",
-    "de-DE": "Backutensilien"
+    "de-DE": "Backutensilien",
+    "en-US": "Bakeware"
   },
   "orderHint": ".42",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with bakeware preset`, () => {
   },
   "slug": {
     "en-GB": "bakeware",
-    "de-DE": "bakeware"
+    "de-DE": "bakeware",
+    "en-US": "bakeware"
   }
 }`)
     );

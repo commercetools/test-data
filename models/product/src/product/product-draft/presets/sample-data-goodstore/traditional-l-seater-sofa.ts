@@ -55,13 +55,15 @@ const traditionalLSeaterSofa = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Traditional L Seater Sofa')
-        ['de-DE']('Traditionelles L-Sitzer-Sofa')
+        ['de-DE']('Traditionelles Ecksofa')
+        ['en-US']('Traditional L Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('traditional-l-seater-sofa')
         ['de-DE']('traditionelles-l-sitzer-sofa')
+        ['en-US']('traditional-l-seater-sofa')
     )
     .productType(
       KeyReference.presets

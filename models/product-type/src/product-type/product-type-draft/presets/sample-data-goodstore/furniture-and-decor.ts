@@ -24,11 +24,15 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB']('Product Specifications')
             ['de-DE']('Produktspezifikationen')
+            ['en-US']('Product Specifications')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB'](
+              'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
+            )
+            ['en-US'](
               'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
             )
         )
@@ -41,7 +45,11 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .empty()
         .name('color')
         .label(
-          LocalizedString.presets.empty()['en-GB']('Color')['de-DE']('Farbe')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Color')
+            ['de-DE']('Farbe')
+            ['en-US']('Color')
         )
         .isRequired(false)
         .attributeConstraint('None')
@@ -52,7 +60,11 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .empty()
         .name('finish')
         .label(
-          LocalizedString.presets.empty()['en-GB']('Finish')['de-DE'](' Fertig')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Finish')
+            ['de-DE'](' Fertig')
+            ['en-US']('Finish')
         )
         .isRequired(false)
         .attributeConstraint('None')
@@ -67,6 +79,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB']('Color Label')
             ['de-DE']('Farbetikett')
+            ['en-US']('Color Label')
         )
         .isRequired(false)
         .attributeConstraint('None')
@@ -81,6 +94,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB']('Finish Label')
             ['de-DE'](' Fertiges Etikett')
+            ['en-US']('Finish Label')
         )
         .isRequired(false)
         .attributeConstraint('None')
@@ -95,6 +109,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB']('New Arrival')
             ['de-DE']('Neuankömmling')
+            ['en-US']('New Arrival')
         )
         .isRequired(false)
         .type(AttributeBooleanTypeDraft.random().name('boolean'))

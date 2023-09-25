@@ -8,7 +8,8 @@ describe(`with servingPlatters preset`, () => {
   "key": "serving-platters",
   "name": {
     "en-GB": "Serving Platters",
-    "de-DE": "Servierplatten"
+    "de-DE": "Servierplatten",
+    "en-US": "Serving Platters"
   },
   "orderHint": ".0004",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with servingPlatters preset`, () => {
   },
   "slug": {
     "en-GB": "serving-platters",
-    "de-DE": "serving-platters"
+    "de-DE": "serving-platters",
+    "en-US": "serving-platters"
   }
 }`)
     );

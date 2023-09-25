@@ -16,9 +16,14 @@ const bakeware = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('Bakeware')
         ['de-DE']('Backutensilien')
+        ['en-US']('Bakeware')
     )
     .slug(
-      LocalizedString.presets.empty()['en-GB']('bakeware')['de-DE']('bakeware')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('bakeware')
+        ['de-DE']('bakeware')
+        ['en-US']('bakeware')
     )
     .key('bakeware')
     .orderHint('.42')

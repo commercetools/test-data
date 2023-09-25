@@ -59,12 +59,14 @@ const marquisTray = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Marquis Tray')
         ['de-DE']('Marquis Tablett')
+        ['en-US']('Marquis Tray')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('marquis-tray')
         ['de-DE']('marquis-tablett')
+        ['en-US']('marquis-tray')
     )
     .productType(
       KeyReference.presets.productType().key(marquisTrayProductTypeDraft.key!)

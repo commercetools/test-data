@@ -8,7 +8,8 @@ describe(`with theMinimalist preset`, () => {
   "key": "the-minimalist",
   "name": {
     "en-GB": "The Minimalist",
-    "de-DE": "The Minimalist"
+    "de-DE": "The Minimalist",
+    "en-US": "The Minimalist"
   },
   "orderHint": ".003",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with theMinimalist preset`, () => {
   },
   "slug": {
     "en-GB": "the-minimalist",
-    "de-DE": "the-minimalist"
+    "de-DE": "the-minimalist",
+    "en-US": "the-minimalist"
   }
 }`)
     );

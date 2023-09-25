@@ -48,12 +48,14 @@ const artDecoChair = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Art Deco Chair')
         ['de-DE']('Art-Deco-Stuhl')
+        ['en-US']('Art Deco Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('art-deco-chair')
         ['de-DE']('art-deco-stuhl')
+        ['en-US']('art-deco-chair')
     )
     .productType(
       KeyReference.presets.productType().key(artDecoChairProductTypeDraft.key!)

@@ -12,10 +12,18 @@ const livingRoomFurnitureDraft = livingRoomFurniture().build<TCategoryDraft>();
 const armchairs = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets.empty()['en-GB']('Armchairs')['de-DE']('Stühle')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Armchairs')
+        ['de-DE']('Stühle')
+        ['en-US']('Chairs')
     )
     .slug(
-      LocalizedString.presets.empty()['en-GB']('armchairs')['de-DE']('chairs')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('armchairs')
+        ['de-DE']('chairs')
+        ['en-US']('armchairs')
     )
     .key('armchairs')
     .orderHint('.3')

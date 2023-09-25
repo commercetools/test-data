@@ -48,12 +48,14 @@ const purpleLandscapePainting = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Purple Landscape Painting')
         ['de-DE']('Lila Landschaftsmalerei')
+        ['en-US']('Purple Landscape Painting')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('purple-landscape-painting')
         ['de-DE']('lila-landschaftsmalerei')
+        ['en-US']('purple-landscape-painting')
     )
     .productType(
       KeyReference.presets

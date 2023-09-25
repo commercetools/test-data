@@ -48,12 +48,14 @@ const redModernPainting = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Red Modern Painting')
         ['de-DE']('Rote moderne Malerei')
+        ['en-US']('Red Modern Painting')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('red-modern-painting')
         ['de-DE']('rote-moderne-malerei')
+        ['en-US']('red-modern-painting')
     )
     .productType(
       KeyReference.presets

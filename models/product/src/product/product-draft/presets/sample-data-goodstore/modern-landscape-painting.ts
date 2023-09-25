@@ -48,12 +48,14 @@ const modernLandscapePainting = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Modern Landscape Painting')
         ['de-DE']('Moderne Landschaftsmalerei')
+        ['en-US']('Modern Landscape Painting')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('modern-landscape-painting')
         ['de-DE']('moderne-landschaftsmalerei')
+        ['en-US']('modern-landscape-painting')
     )
     .productType(
       KeyReference.presets

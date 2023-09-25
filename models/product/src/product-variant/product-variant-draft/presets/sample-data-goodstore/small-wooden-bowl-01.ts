@@ -17,6 +17,10 @@ const smallWoodenBowl01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(399))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(399))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

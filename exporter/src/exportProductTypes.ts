@@ -1,9 +1,5 @@
 import { AttributeType } from '@commercetools/platform-sdk';
-import {
-  AttributeDefinition,
-  AttributeLocalizedEnumValue,
-} from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
-import { getFolder } from './ctp/config';
+import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
 import {
   addEntry,
   buildFilename,
@@ -36,6 +32,10 @@ const resolveMappedType = (attributeType: AttributeType) => {
       type = 'AttributeLocalizedEnumValue';
       value =
         "name('lenum').values(" + JSON.stringify(attributeType.values) + ')';
+      break;
+    case 'set':
+      type = 'AttributeSetTypeDraft';
+      value = 'elementType(' + JSON.stringify(attributeType.elementType) + ')';
       break;
     default:
       console.log(

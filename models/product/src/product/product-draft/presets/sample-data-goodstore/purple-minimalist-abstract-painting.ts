@@ -48,12 +48,14 @@ const purpleMinimalistAbstractPainting = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Purple Minimalist Abstract Painting')
         ['de-DE']('Lila minimalistische abstrakte Malerei')
+        ['en-US']('Purple Minimalist Abstract Painting')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('purple-minimalist-abstract-painting')
         ['de-DE']('lila-minimalistische-abstrakte-malerei')
+        ['en-US']('purple-minimalist-abstract-painting')
     )
     .productType(
       KeyReference.presets

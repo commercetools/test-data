@@ -8,7 +8,8 @@ describe(`with theTraditionalist preset`, () => {
   "key": "the-traditionalist",
   "name": {
     "en-GB": "The Traditionalist",
-    "de-DE": "The Traditionalist"
+    "de-DE": "The Traditionalist",
+    "en-US": "The Traditionalist"
   },
   "orderHint": "0.0033",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with theTraditionalist preset`, () => {
   },
   "slug": {
     "en-GB": "the-traditionalist",
-    "de-DE": "the-traditionalist"
+    "de-DE": "the-traditionalist",
+    "en-US": "the-traditionalist"
   }
 }`)
     );

@@ -17,6 +17,10 @@ const braidedRug01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(9999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(9999))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

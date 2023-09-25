@@ -48,12 +48,14 @@ const cubeJuteBasket = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Cube Jute Basket')
         ['de-DE']('Würfel Jutekorb')
+        ['en-US']('Cube Jute Basket')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('cube-jute-basket')
         ['de-DE']('wrfel-jutekorb')
+        ['en-US']('cube-jute-basket')
     )
     .productType(
       KeyReference.presets

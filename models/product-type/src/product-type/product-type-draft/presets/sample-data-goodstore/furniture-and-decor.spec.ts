@@ -14,10 +14,12 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "productspec",
       "label": {
         "en-GB": "Product Specifications",
-        "de-DE": "Produktspezifikationen"
+        "de-DE": "Produktspezifikationen",
+        "en-US": "Product Specifications"
       },
       "inputTip": {
-        "en-GB": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points."
+        "en-GB": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.",
+        "en-US": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points."
       },
       "isRequired": false,
       "type": {
@@ -31,7 +33,8 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "color",
       "label": {
         "en-GB": "Color",
-        "de-DE": "Farbe"
+        "de-DE": "Farbe",
+        "en-US": "Color"
       },
       "isRequired": false,
       "type": {
@@ -45,7 +48,8 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "finish",
       "label": {
         "en-GB": "Finish",
-        "de-DE": " Fertig"
+        "de-DE": " Fertig",
+        "en-US": "Finish"
       },
       "isRequired": false,
       "type": {
@@ -59,7 +63,8 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "colorlabel",
       "label": {
         "en-GB": "Color Label",
-        "de-DE": "Farbetikett"
+        "de-DE": "Farbetikett",
+        "en-US": "Color Label"
       },
       "isRequired": false,
       "type": {
@@ -73,7 +78,8 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "finishlabel",
       "label": {
         "en-GB": "Finish Label",
-        "de-DE": " Fertiges Etikett"
+        "de-DE": " Fertiges Etikett",
+        "en-US": "Finish Label"
       },
       "isRequired": false,
       "type": {
@@ -87,7 +93,8 @@ describe(`with furnitureAndDecor preset`, () => {
       "name": "new-arrival",
       "label": {
         "en-GB": "New Arrival",
-        "de-DE": "Neuankömmling"
+        "de-DE": "Neuankömmling",
+        "en-US": "New Arrival"
       },
       "isRequired": false,
       "type": {

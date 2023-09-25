@@ -8,7 +8,8 @@ describe(`with tables preset`, () => {
   "key": "tables",
   "name": {
     "en-GB": "Tables",
-    "de-DE": "Tische"
+    "de-DE": "Tische",
+    "en-US": "Tables"
   },
   "orderHint": ".25",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with tables preset`, () => {
   },
   "slug": {
     "en-GB": "living-room-tables",
-    "de-DE": "coffee-tables"
+    "de-DE": "coffee-tables",
+    "en-US": "living-room-tables"
   }
 }`)
     );

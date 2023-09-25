@@ -44,12 +44,14 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Cotton Silk Bedsheet')
         ['de-DE']('Bettwäsche aus Baumwollseide')
+        ['en-US']('Cotton Silk Bedsheet')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('cotton-silk-bedsheet')
         ['de-DE']('bettwsche-aus-baumwollseide')
+        ['en-US']('cotton-silk-bedsheet')
     )
     .productType(
       KeyReference.presets

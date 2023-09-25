@@ -17,6 +17,10 @@ const brunoChair01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(7999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(7999))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

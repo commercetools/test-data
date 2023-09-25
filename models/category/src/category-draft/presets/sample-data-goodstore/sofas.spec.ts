@@ -8,7 +8,8 @@ describe(`with sofas preset`, () => {
   "key": "sofas",
   "name": {
     "en-GB": "Sofas",
-    "de-DE": "Sofas"
+    "de-DE": "Sofas",
+    "en-US": "Sofas"
   },
   "orderHint": ".3",
   "parent": {
@@ -17,7 +18,8 @@ describe(`with sofas preset`, () => {
   },
   "slug": {
     "en-GB": "sofas",
-    "de-DE": "sofas"
+    "de-DE": "sofas",
+    "en-US": "sofas"
   }
 }`)
     );

@@ -44,12 +44,14 @@ const luxePillowCover = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Luxe Pillow Cover')
         ['de-DE']('Luxuriöser Kissenbezug')
+        ['en-US']('Luxe Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('luxe-pillow-cover')
         ['de-DE']('luxuriser-kissenbezug')
+        ['en-US']('luxe-pillow-cover')
     )
     .productType(
       KeyReference.presets

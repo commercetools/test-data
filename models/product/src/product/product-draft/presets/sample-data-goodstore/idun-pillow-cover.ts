@@ -44,12 +44,14 @@ const idunPillowCover = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Idun Pillow Cover')
         ['de-DE']('Idun Kissenbezug')
+        ['en-US']('Idun Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('idun-pillow-cover')
         ['de-DE']('idun-kissenbezug')
+        ['en-US']('idun-pillow-cover')
     )
     .productType(
       KeyReference.presets

@@ -8,12 +8,14 @@ describe(`with newArrivals preset`, () => {
   "key": "new-arrivals",
   "name": {
     "en-GB": "New Arrivals",
-    "de-DE": "Neuheiten"
+    "de-DE": "Neuheiten",
+    "en-US": "New Arrivals"
   },
   "orderHint": "0.4",
   "slug": {
     "en-GB": "new-arrivals",
-    "de-DE": "ganz-neu"
+    "de-DE": "ganz-neu",
+    "en-US": "new-arrivals"
   }
 }`)
     );

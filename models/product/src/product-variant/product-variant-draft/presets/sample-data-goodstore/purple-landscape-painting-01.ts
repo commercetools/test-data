@@ -17,6 +17,10 @@ const purpleLandscapePainting01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(Money.random().currencyCode('GBP').centAmount(8999))
         .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(8999))
+        .country('US'),
     ])
     .images([
       Image.ImageDraft.presets

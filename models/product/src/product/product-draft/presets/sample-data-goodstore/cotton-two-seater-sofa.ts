@@ -48,12 +48,14 @@ const cottonTwoSeaterSofa = (): TProductDraftBuilder =>
         .empty()
         ['en-GB']('Cotton Two-Seater Sofa')
         ['de-DE']('Zweisitzer-Sofa aus Baumwolle')
+        ['en-US']('Cotton Two-Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('cotton-two-seater-sofa')
         ['de-DE']('zweisitzer-sofa-aus-baumwolle')
+        ['en-US']('cotton-two-seater-sofa')
     )
     .productType(
       KeyReference.presets

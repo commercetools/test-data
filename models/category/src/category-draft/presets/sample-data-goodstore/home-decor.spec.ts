@@ -8,12 +8,14 @@ describe(`with homeDecor preset`, () => {
   "key": "home-decor",
   "name": {
     "en-GB": "Home Decor",
-    "de-DE": "Dekoration"
+    "de-DE": "Dekoration",
+    "en-US": "Home Decor"
   },
   "orderHint": "0.1",
   "slug": {
     "en-GB": "home-decor",
-    "de-DE": "home-decor"
+    "de-DE": "home-decor",
+    "en-US": "home-decor"
   }
 }`)
     );

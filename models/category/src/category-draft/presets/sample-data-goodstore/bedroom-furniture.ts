@@ -16,15 +16,17 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('Bedroom Furniture')
         ['de-DE']('Schlafzimmer')
+        ['en-US']('Bedroom Furniture')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('bedroom-furniture')
         ['de-DE']('bedroom-furniture')
+        ['en-US']('bedroom-furniture')
     )
     .key('bedroom-furniture')
-    .orderHint('9')
+    .orderHint('.9')
     .parent(KeyReference.presets.category().key(furnitureDraft.key!));
 
 export default bedroomFurniture;

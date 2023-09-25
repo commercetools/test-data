@@ -12,7 +12,7 @@ describe(`with cocktailStirringSpoon preset`, () => {
             "typeId": "category",
           },
           {
-            "key": "bar-glassware",
+            "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
