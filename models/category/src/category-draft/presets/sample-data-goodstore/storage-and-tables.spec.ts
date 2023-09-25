@@ -1,51 +1,53 @@
 import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
-import kitchen from './kitchen';
+import storageAndTables from './storage-and-tables';
 
-describe(`with kitchen preset`, () => {
-  it('should create a kitchen category type draft', () => {
-    const kitchenPreset = kitchen().build<TCategoryDraft>();
-    expect(kitchenPreset).toMatchInlineSnapshot(`
+describe(`with storageTables preset`, () => {
+  it('should create a storageTables category type draft', () => {
+    const storageTablesPreset = storageAndTables().build<TCategoryDraft>();
+    expect(storageTablesPreset).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "kitchen",
+        "key": "storage-and-tables",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Küche",
+          "de-DE": "Kommoden",
           "en": undefined,
-          "en-GB": "Kitchen",
-          "en-US": "Kitchen",
+          "en-GB": "Storage and Tables",
+          "en-US": "Storage and Tables",
           "fr": undefined,
         },
-        "orderHint": "0.3",
-        "parent": undefined,
+        "orderHint": ".1",
+        "parent": {
+          "key": "bedroom-furniture",
+          "typeId": "category",
+        },
         "slug": {
           "de": undefined,
-          "de-DE": "kuche",
+          "de-DE": "kommoden",
           "en": undefined,
-          "en-GB": "kitchen",
-          "en-US": "kitchen",
+          "en-GB": "storage-and-tables",
+          "en-US": "storage-and-tables",
           "fr": undefined,
         },
       }
     `);
   });
-
-  it('should create a kitchen category type draft when built for Graphql', () => {
-    const kitchenPresetGraphql =
-      kitchen().buildGraphql<TCategoryDraftGraphql>();
-    expect(kitchenPresetGraphql).toMatchInlineSnapshot(`
+  it('should create a storageTables category type draft when built for Graphql', () => {
+    const storageTablesPresetGraphql =
+      storageAndTables().buildGraphql<TCategoryDraftGraphql>();
+    expect(storageTablesPresetGraphql).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "kitchen",
+        "key": "storage-and-tables",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
@@ -53,36 +55,40 @@ describe(`with kitchen preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "Kitchen",
+            "value": "Storage and Tables",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Kitchen",
+            "value": "Storage and Tables",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Küche",
+            "value": "Kommoden",
           },
         ],
-        "orderHint": "0.3",
-        "parent": undefined,
+        "orderHint": ".1",
+        "parent": {
+          "__typename": "Reference",
+          "key": "bedroom-furniture",
+          "typeId": "category",
+        },
         "slug": [
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "kitchen",
+            "value": "storage-and-tables",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "kitchen",
+            "value": "storage-and-tables",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "kuche",
+            "value": "kommoden",
           },
         ],
       }

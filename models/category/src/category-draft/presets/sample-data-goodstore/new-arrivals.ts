@@ -1,8 +1,5 @@
-import {
-  LocalizedString,
-  KeyReference,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedString } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const newArrivals = (): TCategoryDraftBuilder =>
@@ -11,12 +8,14 @@ const newArrivals = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('New Arrivals')
+        ['en-US']('New Arrivals')
         ['de-DE']('Neuheiten')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('new-arrivals')
+        ['en-US']('new-arrivals')
         ['de-DE']('ganz-neu')
     )
     .key('new-arrivals')

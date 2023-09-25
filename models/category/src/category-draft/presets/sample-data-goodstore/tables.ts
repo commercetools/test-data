@@ -4,19 +4,25 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-
 import livingRoomFurniture from './living-room-furniture';
 
 const livingRoomFurnitureDraft = livingRoomFurniture().build<TCategoryDraft>();
 
 const tables = (): TCategoryDraftBuilder =>
   empty()
-    .name(LocalizedString.presets.empty()['en-GB']('Tables')['de-DE']('Tische'))
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Tables')
+        ['en-US']('Tables')
+        ['de-DE']('Tische')
+    )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('living-room-tables')
-        ['de-DE']('coffee-tables')
+        ['en-US']('living-room-tables')
+        ['de-DE']('tische')
     )
     .key('tables')
     .orderHint('.25')

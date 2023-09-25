@@ -4,7 +4,6 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-
 import homeDecor from './home-decor';
 
 const homeDecorDraft = homeDecor().build<TCategoryDraft>();
@@ -12,10 +11,18 @@ const homeDecorDraft = homeDecor().build<TCategoryDraft>();
 const bedding = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets.empty()['en-GB']('Bedding')['de-DE']('Bettwäsche')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Bedding')
+        ['en-US']('Bedding')
+        ['de-DE']('Bettwäsche')
     )
     .slug(
-      LocalizedString.presets.empty()['en-GB']('bedding')['de-DE']('bettwsche')
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('bedding')
+        ['en-US']('bedding')
+        ['de-DE']('bettwasche')
     )
     .key('bedding')
     .orderHint('.5')

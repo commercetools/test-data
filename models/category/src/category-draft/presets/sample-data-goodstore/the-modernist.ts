@@ -4,7 +4,6 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-
 import collections from './collections';
 
 const collectionsDraft = collections().build<TCategoryDraft>();
@@ -15,12 +14,14 @@ const theModernist = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('The Modernist')
+        ['en-US']('The Modernist')
         ['de-DE']('The Modernist')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('the-modernist')
+        ['en-US']('the-modernist')
         ['de-DE']('the-modernist')
     )
     .key('the-modernist')

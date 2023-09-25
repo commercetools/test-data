@@ -22,11 +22,12 @@ import rugs from './rugs';
 import serveware from './serveware';
 import servingPlatters from './serving-platters';
 import sofas from './sofas';
-import storageTables from './storage--tables';
+import storageTables from './storage-and-tables';
 import tables from './tables';
 import theMinimalist from './the-minimalist';
 import theModernist from './the-modernist';
 import theTraditionalist from './the-traditionalist';
+
 const presets = {
   armchairs,
   bakeware,

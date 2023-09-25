@@ -4,7 +4,6 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-
 import roomDecor from './room-decor';
 
 const roomDecorDraft = roomDecor().build<TCategoryDraft>();
@@ -15,12 +14,14 @@ const homeAccents = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Home Accents')
-        ['de-DE']('Accessoires')
+        ['en-US']('Home Accents')
+        ['de-DE']('Home Akzente')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('home-accents')
+        ['en-US']('home-accents')
         ['de-DE']('home-akzente')
     )
     .key('home-accents')

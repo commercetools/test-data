@@ -1,25 +1,97 @@
 import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import bakeware from './bakeware';
+
 describe(`with bakeware preset`, () => {
   it('should create a bakeware category type draft', () => {
     const bakewarePreset = bakeware().build<TCategoryDraft>();
-    expect(bakewarePreset).toMatchObject(
-      JSON.parse(`{
-  "key": "bakeware",
-  "name": {
-    "en-GB": "Bakeware",
-    "de-DE": "Backutensilien"
-  },
-  "orderHint": ".42",
-  "parent": {
-    "key": "dinnerware",
-    "typeId": "category"
-  },
-  "slug": {
-    "en-GB": "bakeware",
-    "de-DE": "bakeware"
-  }
-}`)
-    );
+    expect(bakewarePreset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "bakeware",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "de-DE": "Backutensilien",
+          "en": undefined,
+          "en-GB": "Bakeware",
+          "en-US": "Bakeware",
+          "fr": undefined,
+        },
+        "orderHint": ".42",
+        "parent": {
+          "key": "dinnerware",
+          "typeId": "category",
+        },
+        "slug": {
+          "de": undefined,
+          "de-DE": "backutensilien",
+          "en": undefined,
+          "en-GB": "bakeware",
+          "en-US": "bakeware",
+          "fr": undefined,
+        },
+      }
+    `);
+  });
+
+  it('should create a bakeware category type draft when built for Graphql', () => {
+    const bakewarePreset = bakeware().buildGraphql<TCategoryDraftGraphql>();
+    expect(bakewarePreset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "custom": undefined,
+        "description": undefined,
+        "externalId": undefined,
+        "key": "bakeware",
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "Bakeware",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bakeware",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Backutensilien",
+          },
+        ],
+        "orderHint": ".42",
+        "parent": {
+          "__typename": "Reference",
+          "key": "dinnerware",
+          "typeId": "category",
+        },
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "bakeware",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "bakeware",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "backutensilien",
+          },
+        ],
+      }
+    `);
   });
 });
