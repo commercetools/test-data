@@ -1,5 +1,9 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
+  attributeConstraints,
+  inputHints,
+} from '../../../../attribute-definition/constants';
+import {
   AttributeDefinitionDraft,
   AttributeBooleanTypeDraft,
   AttributeLocalizedEnumTypeDraft,
@@ -36,9 +40,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             )
         )
         .isRequired(false)
-        .attributeConstraint('SameForAll')
+        .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint('MultiLine'),
+        .inputHint(inputHints.MultiLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -48,9 +52,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets.empty()['en-GB']('Color')['de-DE']('Farbe')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -60,9 +64,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets.empty()['en-GB']('Finish')['de-DE'](' Fertig')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -75,9 +79,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['de-DE']('Farbetikett')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -90,9 +94,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['de-DE'](' Fertiges Etikett')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -105,10 +109,10 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['de-DE']('Neuankömmling')
         )
         .isRequired(false)
-        .type(AttributeBooleanTypeDraft.random().name('boolean'))
-        .attributeConstraint('None')
+        .type(AttributeBooleanTypeDraft.random())
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -119,9 +123,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets.empty()['en-GB']('size set as a string value')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -136,9 +140,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             )
         )
         .isRequired(false)
-        .attributeConstraint('SameForAll')
+        .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -291,9 +295,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
               ),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
     ]);
 
 export default furnitureAndDecor;

@@ -1,8 +1,12 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
-  AttributeDefinitionDraft,
+  attributeConstraints,
+  inputHints,
+} from '../../../../attribute-definition/constants';
+import {
   AttributeLocalizableTextType,
   AttributeSetTypeDraft,
+  AttributeDefinitionDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -24,9 +28,9 @@ const productSets = (): TProductTypeDraftBuilder =>
         )
         .label(LocalizedString.presets.empty()['en-GB']('Type')['de-DE']('Typ'))
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
     ]);
 
 export default productSets;

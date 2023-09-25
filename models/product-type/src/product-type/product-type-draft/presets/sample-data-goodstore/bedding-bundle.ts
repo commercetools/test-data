@@ -1,7 +1,13 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import {
+  attributeConstraints,
+  inputHints,
+} from '../../../../attribute-definition/constants';
+import { attributeReferenceTypeId } from '../../../../attribute-reference-type/constants';
+import {
   AttributeDefinitionDraft,
   AttributeLocalizableTextType,
+  AttributeReferenceTypeDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -24,9 +30,9 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
             ['en-GB']('description of the bundle product')
         )
         .isRequired(false)
-        .attributeConstraint('SameForAll')
+        .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
@@ -34,14 +40,18 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .type(AttributeLocalizableTextType.random())
         .label(LocalizedString.presets.empty()['en-GB']('Product Spec'))
         .isRequired(false)
-        .attributeConstraint('SameForAll')
+        .attributeConstraint(attributeConstraints.SameForAll)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-ref')
-        .type(AttributeLocalizableTextType.random())
+        .type(
+          AttributeReferenceTypeDraft.random().referenceTypeId(
+            attributeReferenceTypeId.Product
+          )
+        )
         .label(
           LocalizedString.presets
             .empty()
@@ -49,9 +59,9 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
             ['de-DE']('Produkte dieses Bundles')
         )
         .isRequired(false)
-        .attributeConstraint('None')
+        .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(inputHints.SingleLine),
     ]);
 
 export default beddingBundle;
