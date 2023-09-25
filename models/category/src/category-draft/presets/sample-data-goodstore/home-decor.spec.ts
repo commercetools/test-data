@@ -22,7 +22,7 @@ describe(`with homeDecor preset`, () => {
           "en-US": "Home Decor",
           "fr": undefined,
         },
-        "orderHint": "0.1",
+        "orderHint": "0.6",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -66,7 +66,7 @@ describe(`with homeDecor preset`, () => {
             "value": "Dekoration",
           },
         ],
-        "orderHint": "0.1",
+        "orderHint": "0.6",
         "parent": undefined,
         "slug": [
           {
