@@ -5,6 +5,7 @@ const empty = (): TAttributeDefinitionDraftBuilder =>
   AttributeDefinition()
     .attributeConstraint(undefined)
     .inputHint(undefined)
-    .isSearchable(undefined);
+    .isSearchable(undefined)
+    .inputTip(undefined);
 
 export default empty;
