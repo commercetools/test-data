@@ -13,7 +13,7 @@ const transformers = {
     {
       buildFields: [],
       addFields: ({ fields }) => ({
-        __typename: 'AttributeEnumDefinitionType',
+        __typename: 'EnumAttributionDefinitionType',
       }),
     }
   ),

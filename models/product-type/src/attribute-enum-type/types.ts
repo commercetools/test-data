@@ -8,7 +8,7 @@ export type TAttributeEnumType = AttributeEnumType;
 export type TAttributeEnumTypeDraft = AttributeEnumType;
 
 export type TAttributeEnumTypeGraphql = AttributeEnumType & {
-  __typename: 'AttributeEnumDefinitionType';
+  __typename: 'EnumAttributionDefinitionType';
 };
 export type TAttributeEnumTypeDraftGraphql = {
   enum: { values: Array<AttributePlainEnumValue> };

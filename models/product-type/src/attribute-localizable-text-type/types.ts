@@ -5,7 +5,7 @@ export type TAttributeLocalizableTextType = AttributeLocalizableTextType;
 
 export type TAttributeLocalizableTextTypeGraphql =
   TAttributeLocalizableTextType & {
-    __typename: 'AttributeLocalizableTextType';
+    __typename: 'LocalizableTextAttributeDefinitionType';
   };
 
 export type TAttributeLocalizableTextTypeBuilder =

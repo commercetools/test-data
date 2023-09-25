@@ -1,7 +1,10 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { type TAttributeLocalizableTextType } from './types';
+import {
+  type TAttributeLocalizableTextType,
+  TAttributeLocalizableTextTypeGraphql,
+} from './types';
 import * as AttributeLocalizableTextType from './index';
 
 describe('builder', () => {
@@ -30,5 +33,18 @@ describe('builder', () => {
       })
     )
   );
-  //There are no graphql tests at this time
+
+  it(
+    ...createBuilderSpec<
+      TAttributeLocalizableTextType,
+      TAttributeLocalizableTextTypeGraphql
+    >(
+      'graphql',
+      AttributeLocalizableTextType.random(),
+      expect.objectContaining({
+        name: 'ltext',
+        __typename: 'LocalizableTextAttributeDefinitionType',
+      })
+    )
+  );
 });
