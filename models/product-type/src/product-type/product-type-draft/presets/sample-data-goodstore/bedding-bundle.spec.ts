@@ -63,7 +63,7 @@ describe(`with beddingBundle preset`, () => {
             },
             "name": "product-ref",
             "type": {
-              "name": "ltext",
+              "referenceTypeId": "product",
             },
           },
         ],
@@ -145,8 +145,7 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-ref",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "referenceTypeId": "product",
             },
           },
         ],
