@@ -1,0 +1,39 @@
+{
+  "name": "@commercetools-test-data/change-history",
+  "version": "6.0.0",
+  "description": "Test Data package preset for commercetools application: Change History",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "presets/change-history"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-change-history.cjs.js",
+  "module": "dist/commercetools-test-data-change-history.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/business-unit": "6.0.0",
+    "@commercetools-test-data/cart": "6.0.0",
+    "@commercetools-test-data/category": "^6.0.0",
+    "@commercetools-test-data/channel": "^6.0.0",
+    "@commercetools-test-data/customer": "^6.0.0",
+    "@commercetools-test-data/customer-group": "^6.0.0",
+    "@commercetools-test-data/order": "^6.0.0",
+    "@commercetools-test-data/product": "^6.0.0",
+    "@commercetools-test-data/product-selection": "^6.0.0",
+    "@commercetools-test-data/product-type": "^6.0.0",
+    "@commercetools-test-data/review": "^6.0.0",
+    "@commercetools-test-data/shipping-method": "^6.0.0",
+    "@commercetools-test-data/store": "^6.0.0",
+    "@commercetools-test-data/tax-category": "^6.0.0",
+    "@commercetools-test-data/utils": "^6.0.0",
+    "@commercetools-test-data/zone": "^6.0.0"
+  }
+}

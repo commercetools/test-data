@@ -693,6 +693,63 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  presets/change-history:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.21.0
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.21.0
+      '@commercetools-test-data/business-unit':
+        specifier: 6.0.0
+        version: link:../../models/business-unit
+      '@commercetools-test-data/cart':
+        specifier: 6.0.0
+        version: link:../../models/cart
+      '@commercetools-test-data/category':
+        specifier: ^6.0.0
+        version: link:../../models/category
+      '@commercetools-test-data/channel':
+        specifier: ^6.0.0
+        version: link:../../models/channel
+      '@commercetools-test-data/customer':
+        specifier: ^6.0.0
+        version: link:../../models/customer
+      '@commercetools-test-data/customer-group':
+        specifier: ^6.0.0
+        version: link:../../models/customer-group
+      '@commercetools-test-data/order':
+        specifier: ^6.0.0
+        version: link:../../models/order
+      '@commercetools-test-data/product':
+        specifier: ^6.0.0
+        version: link:../../models/product
+      '@commercetools-test-data/product-selection':
+        specifier: ^6.0.0
+        version: link:../../models/product-selection
+      '@commercetools-test-data/product-type':
+        specifier: ^6.0.0
+        version: link:../../models/product-type
+      '@commercetools-test-data/review':
+        specifier: ^6.0.0
+        version: link:../../models/review
+      '@commercetools-test-data/shipping-method':
+        specifier: ^6.0.0
+        version: link:../../models/shipping-method
+      '@commercetools-test-data/store':
+        specifier: ^6.0.0
+        version: link:../../models/store
+      '@commercetools-test-data/tax-category':
+        specifier: ^6.0.0
+        version: link:../../models/tax-category
+      '@commercetools-test-data/utils':
+        specifier: ^6.0.0
+        version: link:../../utils
+      '@commercetools-test-data/zone':
+        specifier: ^6.0.0
+        version: link:../../models/zone
+
   utils:
     dependencies:
       '@babel/runtime':
