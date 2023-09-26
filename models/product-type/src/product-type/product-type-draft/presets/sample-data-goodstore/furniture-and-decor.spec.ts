@@ -199,6 +199,7 @@ describe(`with furnitureAndDecor preset`, () => {
             },
             "name": "color-filter",
             "type": {
+              "name": "lenum",
               "values": [
                 {
                   "key": "#FFF",
@@ -671,308 +672,310 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "color-filter",
             "type": {
-              "values": [
-                {
-                  "key": "#FFF",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Weiss",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "White",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "White",
-                    },
-                  ],
-                },
-                {
-                  "key": "#000",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Schwarz",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Black",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Black",
-                    },
-                  ],
-                },
-                {
-                  "key": "#808080",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Grau",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Gray",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Gray",
-                    },
-                  ],
-                },
-                {
-                  "key": "#0000FF",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Blau",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Blue",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Blue",
-                    },
-                  ],
-                },
-                {
-                  "key": "#00FF00",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Grün",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Green",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Green",
-                    },
-                  ],
-                },
-                {
-                  "key": "#A020F0",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Lila",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Purple",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Purple",
-                    },
-                  ],
-                },
-                {
-                  "key": "#C4A484",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Hellbraun",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Light Brown",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Light Brown",
-                    },
-                  ],
-                },
-                {
-                  "key": "#F5F5DC",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Beige",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Beige",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Beige",
-                    },
-                  ],
-                },
-                {
-                  "key": "#D2B48C",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Bräunen",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Tan",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Tan",
-                    },
-                  ],
-                },
-                {
-                  "key": "#FFFFF0",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Elfenbein",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Ivory",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Ivory",
-                    },
-                  ],
-                },
-                {
-                  "key": "#FFD700",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Gold",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Gold",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Gold",
-                    },
-                  ],
-                },
-                {
-                  "key": "#964B00",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Dunkelbraun",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Dark Brown",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Dark Brown",
-                    },
-                  ],
-                },
-                {
-                  "key": "#C0C0C0",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Silber",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Silver",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Silver",
-                    },
-                  ],
-                },
-                {
-                  "key": "#FFC0CB",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Rosa",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Pink",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Pink",
-                    },
-                  ],
-                },
-                {
-                  "key": "#FFA500",
-                  "label": [
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "de-DE",
-                      "value": "Orange",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-GB",
-                      "value": "Orange",
-                    },
-                    {
-                      "__typename": "LocalizedString",
-                      "locale": "en-US",
-                      "value": "Orange",
-                    },
-                  ],
-                },
-              ],
+              "lenum": {
+                "values": [
+                  {
+                    "key": "#FFF",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Weiss",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "White",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "White",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#000",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Schwarz",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Black",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Black",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#808080",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Grau",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Gray",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Gray",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#0000FF",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Blau",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Blue",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Blue",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#00FF00",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Grün",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Green",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Green",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#A020F0",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Lila",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Purple",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Purple",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#C4A484",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Hellbraun",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Light Brown",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Light Brown",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#F5F5DC",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Beige",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Beige",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Beige",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#D2B48C",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Bräunen",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Tan",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Tan",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#FFFFF0",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Elfenbein",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Ivory",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Ivory",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#FFD700",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Gold",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Gold",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Gold",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#964B00",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Dunkelbraun",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Dark Brown",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Dark Brown",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#C0C0C0",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Silber",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Silver",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Silver",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#FFC0CB",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Rosa",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Pink",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Pink",
+                      },
+                    ],
+                  },
+                  {
+                    "key": "#FFA500",
+                    "label": [
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "de-DE",
+                        "value": "Orange",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-GB",
+                        "value": "Orange",
+                      },
+                      {
+                        "__typename": "LocalizedString",
+                        "locale": "en-US",
+                        "value": "Orange",
+                      },
+                    ],
+                  },
+                ],
+              },
             },
           },
         ],
