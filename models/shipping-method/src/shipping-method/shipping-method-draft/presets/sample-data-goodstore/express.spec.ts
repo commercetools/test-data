@@ -22,7 +22,7 @@ describe('Shipping Method with express preset', () => {
         "name": "Express Delivery",
         "predicate": undefined,
         "taxCategory": {
-          "key": "EU",
+          "key": "standard-tax",
           "typeId": "tax-category",
         },
         "zoneRates": [
@@ -89,7 +89,7 @@ describe('Shipping Method with express preset', () => {
         "predicate": undefined,
         "taxCategory": {
           "__typename": "Reference",
-          "key": "EU",
+          "key": "standard-tax",
           "typeId": "tax-category",
         },
         "zoneRates": [
