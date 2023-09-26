@@ -8,6 +8,7 @@ import {
   AttributeDefinitionDraft,
   AttributeLocalizableTextType,
   AttributeReferenceTypeDraft,
+  AttributeSetTypeDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -59,8 +60,10 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .empty()
         .name('product-ref')
         .type(
-          AttributeReferenceTypeDraft.random().referenceTypeId(
-            attributeReferenceTypeId.Product
+          AttributeSetTypeDraft.random().elementType(
+            AttributeReferenceTypeDraft.random().referenceTypeId(
+              attributeReferenceTypeId.Product
+            )
           )
         )
         .label(
