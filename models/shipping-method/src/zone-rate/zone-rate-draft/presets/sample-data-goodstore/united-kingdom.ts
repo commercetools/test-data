@@ -8,7 +8,7 @@ const unitedKingdomZone = ZoneDraft.presets.sampleDataGoodStore
   .countryUnitedKingdom()
   .build<TZoneDraft>();
 
-const europe = (): TZoneRateDraftBuilder =>
+const unitedKingdom = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReference.presets.zone().key(unitedKingdomZone.key!))
     .shippingRates([
@@ -16,4 +16,4 @@ const europe = (): TZoneRateDraftBuilder =>
       ShippingRateDraft.presets.sampleDataGoodStore.eur10000(),
     ]);
 
-export default europe;
+export default unitedKingdom;
