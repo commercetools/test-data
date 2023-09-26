@@ -13,11 +13,7 @@ it(`should set attributeConstraint, inputHint, and isSearchable to undefined`, (
       en: expect.any(String),
       fr: expect.any(String),
     }),
-    inputTip: expect.objectContaining({
-      de: expect.any(String),
-      en: expect.any(String),
-      fr: expect.any(String),
-    }),
+    inputTip: undefined,
     isRequired: expect.any(Boolean),
     attributeConstraint: undefined,
     inputHint: undefined,
