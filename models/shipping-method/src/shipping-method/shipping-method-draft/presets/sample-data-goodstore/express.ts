@@ -9,7 +9,7 @@ import type { TShippingMethodDraftBuilder } from '../../../types';
 import * as ShippingMethodDraft from '../../index';
 
 const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
-  .EUTaxCategory()
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const expressShippingMethod = (): TShippingMethodDraftBuilder =>

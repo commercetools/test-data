@@ -12,21 +12,22 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const standardShippingMethod = (): TShippingMethodDraftBuilder =>
+const usaShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
-    .key('standard-delivery')
-    .name('Standard Delivery')
+    .key('us-delivery')
+    .name('US Delivery')
     .localizedDescription(
-      LocalizedString.presets.empty()['en-US']('4')['en-GB']('4')['de-DE']('4')
+      LocalizedString.presets
+        .empty()
+        ['en-US']('US Shipping')
+        ['en-GB']('US Shipping')
+        ['de-DE']('US Shipping')
     )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([
-      ZoneRateDraft.presets.sampleDataGoodStore.europe(),
-      ZoneRateDraft.presets.sampleDataGoodStore.unitedKingdom(),
-    ])
+    .zoneRates([ZoneRateDraft.presets.sampleDataGoodStore.usa()])
     .isDefault(true);
 
-export default standardShippingMethod;
+export default usaShippingMethod;
