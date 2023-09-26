@@ -22,7 +22,7 @@ const tables = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('living-room-tables')
         ['en-US']('living-room-tables')
-        ['de-DE']('tische')
+        ['de-DE']('coffee-tables')
     )
     .key('tables')
     .orderHint('.25')

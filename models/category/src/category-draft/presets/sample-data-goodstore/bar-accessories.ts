@@ -22,7 +22,7 @@ const barAccessories = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bar-accessories')
         ['en-US']('bar-accessories')
-        ['de-DE']('barzubehor')
+        ['de-DE']('bar-accessories')
     )
     .key('bar-accessories')
     .orderHint('.36')

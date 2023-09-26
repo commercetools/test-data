@@ -22,10 +22,10 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bedroom-furniture')
         ['en-US']('bedroom-furniture')
-        ['de-DE']('schlafzimmer')
+        ['de-DE']('bedroom-furniture')
     )
     .key('bedroom-furniture')
-    .orderHint('9')
+    .orderHint('.9')
     .parent(KeyReference.presets.category().key(furnitureDraft.key!));
 
 export default bedroomFurniture;

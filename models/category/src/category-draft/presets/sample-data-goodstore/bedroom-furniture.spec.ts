@@ -21,14 +21,14 @@ describe(`with bedroomFurniture preset`, () => {
           "en-US": "Bedroom Furniture",
           "fr": undefined,
         },
-        "orderHint": "9",
+        "orderHint": ".9",
         "parent": {
           "key": "furniture",
           "typeId": "category",
         },
         "slug": {
           "de": undefined,
-          "de-DE": "schlafzimmer",
+          "de-DE": "bedroom-furniture",
           "en": undefined,
           "en-GB": "bedroom-furniture",
           "en-US": "bedroom-furniture",
@@ -68,7 +68,7 @@ describe(`with bedroomFurniture preset`, () => {
             "value": "Schlafzimmer",
           },
         ],
-        "orderHint": "9",
+        "orderHint": ".9",
         "parent": {
           "__typename": "Reference",
           "key": "furniture",
@@ -88,7 +88,7 @@ describe(`with bedroomFurniture preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "schlafzimmer",
+            "value": "bedroom-furniture",
           },
         ],
       }

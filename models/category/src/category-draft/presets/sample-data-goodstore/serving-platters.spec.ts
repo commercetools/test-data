@@ -29,7 +29,7 @@ describe(`with servingPlatters preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "servierplatten",
+          "de-DE": "serving-platters",
           "en": undefined,
           "en-GB": "serving-platters",
           "en-US": "serving-platters",
@@ -89,7 +89,7 @@ describe(`with servingPlatters preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "servierplatten",
+            "value": "serving-platters",
           },
         ],
       }

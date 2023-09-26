@@ -29,10 +29,10 @@ describe(`with collections preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "sonderkollektionen",
+          "de-DE": "collections",
           "en": undefined,
-          "en-GB": "collections",
-          "en-US": "collections",
+          "en-GB": "furniture-collections",
+          "en-US": "furniture-collections",
           "fr": undefined,
         },
       }
@@ -79,17 +79,17 @@ describe(`with collections preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "collections",
+            "value": "furniture-collections",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "collections",
+            "value": "furniture-collections",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "sonderkollektionen",
+            "value": "collections",
           },
         ],
       }

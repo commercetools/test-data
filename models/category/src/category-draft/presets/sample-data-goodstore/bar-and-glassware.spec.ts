@@ -29,7 +29,7 @@ describe(`with barAndGlassware preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "glaser-und-barzubehor",
+          "de-DE": "bar-and-glassware",
           "en": undefined,
           "en-GB": "bar-and-glassware",
           "en-US": "bar-and-glassware",
@@ -89,7 +89,7 @@ describe(`with barAndGlassware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "glaser-und-barzubehor",
+            "value": "bar-and-glassware",
           },
         ],
       }

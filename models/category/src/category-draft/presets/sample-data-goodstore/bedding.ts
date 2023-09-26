@@ -22,7 +22,7 @@ const bedding = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bedding')
         ['en-US']('bedding')
-        ['de-DE']('bettwasche')
+        ['de-DE']('bettwsche') // typo exists in MC data
     )
     .key('bedding')
     .orderHint('.5')

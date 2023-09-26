@@ -29,7 +29,7 @@ describe(`with barAccessories preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "barzubehor",
+          "de-DE": "bar-accessories",
           "en": undefined,
           "en-GB": "bar-accessories",
           "en-US": "bar-accessories",
@@ -89,7 +89,7 @@ describe(`with barAccessories preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "barzubehor",
+            "value": "bar-accessories",
           },
         ],
       }

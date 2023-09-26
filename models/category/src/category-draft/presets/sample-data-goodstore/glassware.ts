@@ -22,7 +22,7 @@ const glassware = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('glassware')
         ['en-US']('glassware')
-        ['de-DE']('glaser')
+        ['de-DE']('glassware')
     )
     .key('glassware')
     .orderHint('.23')

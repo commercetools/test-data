@@ -26,7 +26,7 @@ describe(`with kitchen preset`, () => {
         "parent": undefined,
         "slug": {
           "de": undefined,
-          "de-DE": "kuche",
+          "de-DE": "kitchen",
           "en": undefined,
           "en-GB": "kitchen",
           "en-US": "kitchen",
@@ -82,7 +82,7 @@ describe(`with kitchen preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "kuche",
+            "value": "kitchen",
           },
         ],
       }

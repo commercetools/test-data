@@ -22,7 +22,7 @@ const plates = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('plates')
         ['en-US']('plates')
-        ['de-DE']('platten')
+        ['de-DE']('plates')
     )
     .key('plates')
     .orderHint('.82')

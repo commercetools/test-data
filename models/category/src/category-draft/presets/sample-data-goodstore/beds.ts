@@ -22,7 +22,7 @@ const beds = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('beds')
         ['en-US']('beds')
-        ['de-DE']('betten')
+        ['de-DE']('beds')
     )
     .key('beds')
     .orderHint('.4')

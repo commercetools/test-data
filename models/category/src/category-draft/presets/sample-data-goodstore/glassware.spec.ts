@@ -29,7 +29,7 @@ describe(`with glassware preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "glaser",
+          "de-DE": "glassware",
           "en": undefined,
           "en-GB": "glassware",
           "en-US": "glassware",
@@ -89,7 +89,7 @@ describe(`with glassware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "glaser",
+            "value": "glassware",
           },
         ],
       }

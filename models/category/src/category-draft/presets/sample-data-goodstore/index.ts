@@ -9,6 +9,7 @@ import bowls from './bowls';
 import cheeseTrays from './cheese-trays';
 import collections from './collections';
 import dinnerware from './dinnerware';
+import dressers from './dressers';
 import furniture from './furniture';
 import glassware from './glassware';
 import homeAccents from './home-accents';
@@ -22,7 +23,6 @@ import rugs from './rugs';
 import serveware from './serveware';
 import servingPlatters from './serving-platters';
 import sofas from './sofas';
-import storageTables from './storage-and-tables';
 import tables from './tables';
 import theMinimalist from './the-minimalist';
 import theModernist from './the-modernist';
@@ -40,6 +40,7 @@ const presets = {
   cheeseTrays,
   collections,
   dinnerware,
+  dressers,
   furniture,
   glassware,
   homeAccents,
@@ -53,7 +54,6 @@ const presets = {
   serveware,
   servingPlatters,
   sofas,
-  storageTables,
   tables,
   theMinimalist,
   theModernist,

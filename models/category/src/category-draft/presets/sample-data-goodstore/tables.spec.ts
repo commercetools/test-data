@@ -29,7 +29,7 @@ describe(`with tables preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "tische",
+          "de-DE": "coffee-tables",
           "en": undefined,
           "en-GB": "living-room-tables",
           "en-US": "living-room-tables",
@@ -88,7 +88,7 @@ describe(`with tables preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "tische",
+            "value": "coffee-tables",
           },
         ],
       }

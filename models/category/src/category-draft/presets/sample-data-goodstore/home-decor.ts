@@ -16,9 +16,9 @@ const homeDecor = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('home-decor')
         ['en-US']('home-decor')
-        ['de-DE']('dekoration')
+        ['de-DE']('home-decor')
     )
     .key('home-decor')
-    .orderHint('0.6');
+    .orderHint('0.1');
 
 export default homeDecor;

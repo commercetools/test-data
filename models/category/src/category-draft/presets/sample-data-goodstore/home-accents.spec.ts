@@ -16,7 +16,7 @@ describe(`with homeAccents preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Home Akzente",
+          "de-DE": "Accessoires",
           "en": undefined,
           "en-GB": "Home Accents",
           "en-US": "Home Accents",
@@ -66,7 +66,7 @@ describe(`with homeAccents preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Home Akzente",
+            "value": "Accessoires",
           },
         ],
         "orderHint": ".5",

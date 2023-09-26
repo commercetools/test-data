@@ -26,7 +26,7 @@ describe(`with furniture preset`, () => {
         "parent": undefined,
         "slug": {
           "de": undefined,
-          "de-DE": "mobel",
+          "de-DE": "furniture",
           "en": undefined,
           "en-GB": "furniture",
           "en-US": "furniture",
@@ -82,7 +82,7 @@ describe(`with furniture preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "mobel",
+            "value": "furniture",
           },
         ],
       }

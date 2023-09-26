@@ -29,7 +29,7 @@ describe(`with beds preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "betten",
+          "de-DE": "beds",
           "en": undefined,
           "en-GB": "beds",
           "en-US": "beds",
@@ -88,7 +88,7 @@ describe(`with beds preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "betten",
+            "value": "beds",
           },
         ],
       }

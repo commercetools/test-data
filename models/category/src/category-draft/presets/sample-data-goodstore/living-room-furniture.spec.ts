@@ -30,7 +30,7 @@ describe(`with livingRoomFurniture preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "wohnzimmer",
+          "de-DE": "living-room-furniture",
           "en": undefined,
           "en-GB": "living-room-furniture",
           "en-US": "living-room-furniture",
@@ -90,7 +90,7 @@ describe(`with livingRoomFurniture preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "wohnzimmer",
+            "value": "living-room-furniture",
           },
         ],
       }

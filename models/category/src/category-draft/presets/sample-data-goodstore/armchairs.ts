@@ -14,7 +14,7 @@ const armchairs = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Armchairs')
-        ['en-US']('Armchairs')
+        ['en-US']('Chairs')
         ['de-DE']('Stühle')
     )
     .slug(
@@ -22,7 +22,7 @@ const armchairs = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('armchairs')
         ['en-US']('armchairs')
-        ['de-DE']('stuhle')
+        ['de-DE']('chairs')
     )
     .key('armchairs')
     .orderHint('.3')

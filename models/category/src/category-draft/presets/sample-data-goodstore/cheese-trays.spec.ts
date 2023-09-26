@@ -29,7 +29,7 @@ describe(`with cheeseTrays preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "kaseplatten",
+          "de-DE": "cheese-trays",
           "en": undefined,
           "en-GB": "cheese-trays",
           "en-US": "cheese-trays",
@@ -89,7 +89,7 @@ describe(`with cheeseTrays preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "kaseplatten",
+            "value": "cheese-trays",
           },
         ],
       }

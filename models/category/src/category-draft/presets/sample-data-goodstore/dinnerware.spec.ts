@@ -19,7 +19,7 @@ describe(`with dinnerware preset`, () => {
           "de-DE": "Geschirr",
           "en": undefined,
           "en-GB": "Serving and Tableware",
-          "en-US": "Serving and Tableware",
+          "en-US": "Dinnerware",
           "fr": undefined,
         },
         "orderHint": ".75",
@@ -29,7 +29,7 @@ describe(`with dinnerware preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "geschirr",
+          "de-DE": "dinnerware",
           "en": undefined,
           "en-GB": "serving-and-tableware",
           "en-US": "serving-and-tableware",
@@ -61,7 +61,7 @@ describe(`with dinnerware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Serving and Tableware",
+            "value": "Dinnerware",
           },
           {
             "__typename": "LocalizedString",
@@ -89,7 +89,7 @@ describe(`with dinnerware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "geschirr",
+            "value": "dinnerware",
           },
         ],
       }

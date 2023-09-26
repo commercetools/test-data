@@ -22,7 +22,7 @@ const barAndGlassware = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bar-and-glassware')
         ['en-US']('bar-and-glassware')
-        ['de-DE']('glaser-und-barzubehor')
+        ['de-DE']('bar-and-glassware')
     )
     .key('bar-and-glassware')
     .orderHint('.82')

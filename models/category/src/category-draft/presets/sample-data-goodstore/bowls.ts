@@ -22,7 +22,7 @@ const bowls = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bowls')
         ['en-US']('bowls')
-        ['de-DE']('schalen')
+        ['de-DE']('bowls')
     )
     .key('bowls')
     .orderHint('.56')

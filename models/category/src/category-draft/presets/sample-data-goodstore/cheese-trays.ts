@@ -22,7 +22,7 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('cheese-trays')
         ['en-US']('cheese-trays')
-        ['de-DE']('kaseplatten')
+        ['de-DE']('cheese-trays')
     )
     .key('cheese-trays')
     .orderHint('.12')

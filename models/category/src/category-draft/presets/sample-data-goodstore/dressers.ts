@@ -8,13 +8,13 @@ import bedroomFurniture from './bedroom-furniture';
 
 const bedroomFurnitureDraft = bedroomFurniture().build<TCategoryDraft>();
 
-const storageAndTables = (): TCategoryDraftBuilder =>
+const dressers = (): TCategoryDraftBuilder =>
   empty()
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Storage and Tables')
-        ['en-US']('Storage and Tables')
+        ['en-GB']('Storage & Tables')
+        ['en-US']('Dressers')
         ['de-DE']('Kommoden')
     )
     .slug(
@@ -22,10 +22,10 @@ const storageAndTables = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('storage-and-tables')
         ['en-US']('storage-and-tables')
-        ['de-DE']('kommoden')
+        ['de-DE']('dressers')
     )
-    .key('storage-and-tables')
+    .key('storage--tables')
     .orderHint('.1')
     .parent(KeyReference.presets.category().key(bedroomFurnitureDraft.key!));
 
-export default storageAndTables;
+export default dressers;

@@ -1,16 +1,16 @@
 import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
-import storageAndTables from './storage-and-tables';
+import dressers from './dressers';
 
-describe(`with storageTables preset`, () => {
-  it('should create a storageTables category type draft', () => {
-    const storageTablesPreset = storageAndTables().build<TCategoryDraft>();
-    expect(storageTablesPreset).toMatchInlineSnapshot(`
+describe(`with dressers preset`, () => {
+  it('should create a dressers category type draft', () => {
+    const dressersPreset = dressers().build<TCategoryDraft>();
+    expect(dressersPreset).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "storage-and-tables",
+        "key": "storage--tables",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
@@ -18,8 +18,8 @@ describe(`with storageTables preset`, () => {
           "de": undefined,
           "de-DE": "Kommoden",
           "en": undefined,
-          "en-GB": "Storage and Tables",
-          "en-US": "Storage and Tables",
+          "en-GB": "Storage & Tables",
+          "en-US": "Dressers",
           "fr": undefined,
         },
         "orderHint": ".1",
@@ -29,7 +29,7 @@ describe(`with storageTables preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "kommoden",
+          "de-DE": "dressers",
           "en": undefined,
           "en-GB": "storage-and-tables",
           "en-US": "storage-and-tables",
@@ -38,16 +38,16 @@ describe(`with storageTables preset`, () => {
       }
     `);
   });
-  it('should create a storageTables category type draft when built for Graphql', () => {
-    const storageTablesPresetGraphql =
-      storageAndTables().buildGraphql<TCategoryDraftGraphql>();
-    expect(storageTablesPresetGraphql).toMatchInlineSnapshot(`
+  it('should create a dressers category type draft when built for Graphql', () => {
+    const dressersPresetGraphql =
+      dressers().buildGraphql<TCategoryDraftGraphql>();
+    expect(dressersPresetGraphql).toMatchInlineSnapshot(`
       {
         "assets": undefined,
         "custom": undefined,
         "description": undefined,
         "externalId": undefined,
-        "key": "storage-and-tables",
+        "key": "storage--tables",
         "metaDescription": undefined,
         "metaKeywords": undefined,
         "metaTitle": undefined,
@@ -55,12 +55,12 @@ describe(`with storageTables preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "Storage and Tables",
+            "value": "Storage & Tables",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Storage and Tables",
+            "value": "Dressers",
           },
           {
             "__typename": "LocalizedString",
@@ -88,7 +88,7 @@ describe(`with storageTables preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "kommoden",
+            "value": "dressers",
           },
         ],
       }

@@ -14,8 +14,8 @@ const homeAccents = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Home Accents')
-        ['en-US']('Home Accents')
-        ['de-DE']('Home Akzente')
+        ['en-US']('Home Accents') // en-US not present in MC, assuming translation will match en-GB
+        ['de-DE']('Accessoires') // typo exists in MC
     )
     .slug(
       LocalizedString.presets

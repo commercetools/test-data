@@ -29,7 +29,7 @@ describe(`with bedding preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "bettwasche",
+          "de-DE": "bettwsche",
           "en": undefined,
           "en-GB": "bedding",
           "en-US": "bedding",
@@ -89,7 +89,7 @@ describe(`with bedding preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "bettwasche",
+            "value": "bettwsche",
           },
         ],
       }

@@ -14,7 +14,7 @@ const rugs = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Rugs')
-        ['en-US']('Rugs')
+        ['en-US']('Rugs') // en-US not present in MC, assuming translation will match en-GB
         ['de-DE']('Teppiche')
     )
     .slug(

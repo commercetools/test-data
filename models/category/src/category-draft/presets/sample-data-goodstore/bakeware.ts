@@ -22,7 +22,7 @@ const bakeware = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('bakeware')
         ['en-US']('bakeware')
-        ['de-DE']('backutensilien')
+        ['de-DE']('bakeware')
     )
     .key('bakeware')
     .orderHint('.42')

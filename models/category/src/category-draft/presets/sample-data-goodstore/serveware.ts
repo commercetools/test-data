@@ -13,7 +13,7 @@ const serveware = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Kitchen Collections')
+        ['en-GB']('Collections') // matches MC
         ['en-US']('Kitchen Collections')
         ['de-DE']('Alles zum Servieren')
     )
@@ -22,7 +22,7 @@ const serveware = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('kitchen-collections')
         ['en-US']('kitchen-collections')
-        ['de-DE']('kitchen-collections')
+        ['de-DE']('serveware')
     )
     .key('serveware')
     .orderHint('.86')

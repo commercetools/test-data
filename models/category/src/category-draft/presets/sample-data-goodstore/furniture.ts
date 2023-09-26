@@ -16,7 +16,7 @@ const furniture = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('furniture')
         ['en-US']('furniture')
-        ['de-DE']('mobel')
+        ['de-DE']('furniture')
     )
     .key('furniture')
     .orderHint('0.2');

@@ -22,7 +22,7 @@ const livingRoomFurniture = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('living-room-furniture')
         ['en-US']('living-room-furniture')
-        ['de-DE']('wohnzimmer')
+        ['de-DE']('living-room-furniture')
     )
     .key('living-room-furniture')
     .orderHint('.9')

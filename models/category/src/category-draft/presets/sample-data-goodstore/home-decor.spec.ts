@@ -22,11 +22,11 @@ describe(`with homeDecor preset`, () => {
           "en-US": "Home Decor",
           "fr": undefined,
         },
-        "orderHint": "0.6",
+        "orderHint": "0.1",
         "parent": undefined,
         "slug": {
           "de": undefined,
-          "de-DE": "dekoration",
+          "de-DE": "home-decor",
           "en": undefined,
           "en-GB": "home-decor",
           "en-US": "home-decor",
@@ -66,7 +66,7 @@ describe(`with homeDecor preset`, () => {
             "value": "Dekoration",
           },
         ],
-        "orderHint": "0.6",
+        "orderHint": "0.1",
         "parent": undefined,
         "slug": [
           {
@@ -82,7 +82,7 @@ describe(`with homeDecor preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "dekoration",
+            "value": "home-decor",
           },
         ],
       }

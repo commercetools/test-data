@@ -29,7 +29,7 @@ describe(`with plates preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "platten",
+          "de-DE": "plates",
           "en": undefined,
           "en-GB": "plates",
           "en-US": "plates",
@@ -88,7 +88,7 @@ describe(`with plates preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "platten",
+            "value": "plates",
           },
         ],
       }

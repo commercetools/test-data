@@ -29,7 +29,7 @@ describe(`with bakeware preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "backutensilien",
+          "de-DE": "bakeware",
           "en": undefined,
           "en-GB": "bakeware",
           "en-US": "bakeware",
@@ -88,7 +88,7 @@ describe(`with bakeware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "backutensilien",
+            "value": "bakeware",
           },
         ],
       }

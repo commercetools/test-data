@@ -29,7 +29,7 @@ describe(`with bowls preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "schalen",
+          "de-DE": "bowls",
           "en": undefined,
           "en-GB": "bowls",
           "en-US": "bowls",
@@ -88,7 +88,7 @@ describe(`with bowls preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "schalen",
+            "value": "bowls",
           },
         ],
       }

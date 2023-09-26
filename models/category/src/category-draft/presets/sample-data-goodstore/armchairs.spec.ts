@@ -19,7 +19,7 @@ describe(`with armchairs preset`, () => {
           "de-DE": "Stühle",
           "en": undefined,
           "en-GB": "Armchairs",
-          "en-US": "Armchairs",
+          "en-US": "Chairs",
           "fr": undefined,
         },
         "orderHint": ".3",
@@ -29,7 +29,7 @@ describe(`with armchairs preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "stuhle",
+          "de-DE": "chairs",
           "en": undefined,
           "en-GB": "armchairs",
           "en-US": "armchairs",
@@ -61,7 +61,7 @@ describe(`with armchairs preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "Armchairs",
+            "value": "Chairs",
           },
           {
             "__typename": "LocalizedString",
@@ -89,7 +89,7 @@ describe(`with armchairs preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "stuhle",
+            "value": "chairs",
           },
         ],
       }

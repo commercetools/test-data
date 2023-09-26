@@ -18,7 +18,7 @@ describe(`with serveware preset`, () => {
           "de": undefined,
           "de-DE": "Alles zum Servieren",
           "en": undefined,
-          "en-GB": "Kitchen Collections",
+          "en-GB": "Collections",
           "en-US": "Kitchen Collections",
           "fr": undefined,
         },
@@ -29,7 +29,7 @@ describe(`with serveware preset`, () => {
         },
         "slug": {
           "de": undefined,
-          "de-DE": "kitchen-collections",
+          "de-DE": "serveware",
           "en": undefined,
           "en-GB": "kitchen-collections",
           "en-US": "kitchen-collections",
@@ -56,7 +56,7 @@ describe(`with serveware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "Kitchen Collections",
+            "value": "Collections",
           },
           {
             "__typename": "LocalizedString",
@@ -89,7 +89,7 @@ describe(`with serveware preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "kitchen-collections",
+            "value": "serveware",
           },
         ],
       }

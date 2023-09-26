@@ -22,7 +22,7 @@ const servingPlatters = (): TCategoryDraftBuilder =>
         .empty()
         ['en-GB']('serving-platters')
         ['en-US']('serving-platters')
-        ['de-DE']('servierplatten')
+        ['de-DE']('serving-platters')
     )
     .key('serving-platters')
     .orderHint('.0004')
