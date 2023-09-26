@@ -25,9 +25,11 @@ describe('builder', () => {
       'graphql',
       AttributeEnumTypeDraft.random(),
       expect.objectContaining({
-        elementType: {
-          boolean: {
-            dummy: null,
+        set: {
+          elementType: {
+            boolean: {
+              dummy: null,
+            },
           },
         },
       })
