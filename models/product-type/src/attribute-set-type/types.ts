@@ -10,7 +10,7 @@ export type TAttributeSetTypeGraphql = TAttributeSetType & {
 
 export type TAttributeSetTypeDraftGraphql = {
   set: {
-    elementType: AttributeType;
+    elementType: TAttributeSetTypeGraphql['elementType'];
   };
 };
 

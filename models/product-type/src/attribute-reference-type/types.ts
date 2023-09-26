@@ -2,12 +2,17 @@ import type { AttributeReferenceType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TAttributeReferenceType = AttributeReferenceType;
-export type TAttributeReferenceTypeDraft = Omit<AttributeReferenceType, 'name'>;
+export type TAttributeReferenceTypeDraft = AttributeReferenceType;
 
 export type TAttributeReferenceTypeGraphql = AttributeReferenceType & {
   __typename: 'ReferenceAttributeDefinitionType';
 };
-export type TAttributeReferenceTypeDraftGraphql = TAttributeReferenceTypeDraft;
+
+export type TAttributeReferenceTypeDraftGraphql = {
+  reference: {
+    referenceTypeId: TAttributeReferenceTypeGraphql['referenceTypeId'];
+  };
+};
 
 export type TAttributeReferenceTypeBuilder = TBuilder<TAttributeReferenceType>;
 export type TAttributeReferenceTypeDraftBuilder =

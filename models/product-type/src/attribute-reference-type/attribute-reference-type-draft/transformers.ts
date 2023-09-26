@@ -15,7 +15,13 @@ const transformers = {
     TAttributeReferenceTypeDraft,
     TAttributeReferenceTypeDraftGraphql
   >('graphql', {
-    buildFields: [],
+    replaceFields: ({ fields }) => {
+      return {
+        [fields.name]: {
+          referenceTypeId: fields.referenceTypeId,
+        },
+      };
+    },
   }),
 };
 
