@@ -1,0 +1,93 @@
+import type { TProductVariantDraft } from '../../../types';
+import cocktailStirringSpoonVariant01 from './cocktail-stirring-spoon-variant-01';
+describe(`with cocktailStirringSpoonVariant01 preset`, () => {
+  it('should return a sample cocktailStirringSpoonVariant01 product preset', () => {
+    const cocktailStirringSpoonVariant01Preset =
+      cocktailStirringSpoonVariant01().build<TProductVariantDraft>();
+    expect(cocktailStirringSpoonVariant01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Edelstahl
+      - Spülmaschinenfest",
+              "en-GB": "- Stainless steel
+      - Dishwasher safe",
+              "en-US": "- Stainless steel
+      - Dishwasher safe",
+            },
+          },
+          {
+            "name": "product-description",
+            "value": {
+              "de-DE": "Ein Cocktail-Rührlöffel ist ein langes und schlankes Utensil aus Edelstahl, das zum Rühren und Mixen von Cocktails verwendet wird. Es ist normalerweise etwa 8 Zoll lang mit einem kleinen, flachen, scheibenförmigen Ende zum Vermischen von Zutaten und einem gedrehten oder spiralförmigen Griff zum einfachen Greifen. Der gedrehte Griff dient nicht nur der Dekoration, sondern verhilft auch zu einem besseren Halt beim Mixen von Cocktails.",
+              "en-GB": "A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.",
+              "en-US": "A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 4555,
+              "w": 5757,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_138383562-Ewqpr7_V.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "Spoo-094",
+      }
+    `);
+  });
+});

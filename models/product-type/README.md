@@ -123,7 +123,7 @@ const attributePlainEnumValue =
 
 ## `AttributeSetType`
 
-```ts
+````ts
 import {
   AttributeSetType,
   type TAttributeSetType,
@@ -141,7 +141,7 @@ import {
 
 const attributeReferenceType =
   AttributeReferenceType.random().build<TAttributeReferenceType>();
-```
+````
 
 ## `AttributeTextType`
 

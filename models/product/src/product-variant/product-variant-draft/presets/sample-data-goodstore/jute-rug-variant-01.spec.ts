@@ -1,0 +1,133 @@
+import type { TProductVariantDraft } from '../../../types';
+import juteRugVariant01 from './jute-rug-variant-01';
+describe(`with juteRugVariant01 preset`, () => {
+  it('should return a sample juteRugVariant01 product preset', () => {
+    const juteRugVariant01Preset =
+      juteRugVariant01().build<TProductVariantDraft>();
+    expect(juteRugVariant01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- 10 Fuß x 12 Fuß",
+              "en-GB": "- 10ft x 12ft",
+              "en-US": "- 10ft x 12ft",
+            },
+          },
+          {
+            "name": "product-description",
+            "value": {
+              "de-DE": "Ein Juteteppich ist eine Art Teppich aus Naturfasern, die aus der Jutepflanze gewonnen werden. Jute ist eine lange, weiche und glänzende Pflanzenfaser, die zu starken Fäden gesponnen und dann zu Textilien gewebt wird. Juteteppiche sind bekannt für ihre Langlebigkeit und ihr natürliches Aussehen, was sie zu einer beliebten Wahl für diejenigen macht, die einen Hauch von Natur in ihr Zuhause bringen möchten.  Da Jute eine Naturfaser ist, ist sie umweltfreundlich und nachhaltig. Es kann jedoch anfällig für Flecken und Wasserschäden sein, daher sollten Juteteppiche in wenig frequentierten Bereichen oder Räumen verwendet werden, die nicht viel Feuchtigkeit ausgesetzt sind. Sie werden oft in Wohnzimmern, Schlafzimmern und anderen Räumen verwendet, in denen ein natürlicher, erdiger Look gewünscht wird.  Insgesamt ist ein Juteteppich eine schöne und umweltfreundliche Ergänzung für jedes Zuhause. Seine natürlichen Fasern und sein erdiges Aussehen machen es zu einer beliebten Wahl für diejenigen, die eine warme und einladende Atmosphäre in ihrem Wohnraum schaffen möchten.",
+              "en-GB": "A jute area rug is a type of rug made from natural fibers derived from the jute plant. Jute is a long, soft, and shiny vegetable fiber that is spun into strong threads and then woven into textiles. Jute rugs are known for their durability and natural appearance, making them a popular choice for those who want to bring a touch of the outdoors into their homes.  Because jute is a natural fiber, it is eco-friendly and sustainable. However, it can be prone to staining and water damage, so jute area rugs should be used in low-traffic areas or rooms that do not see a lot of moisture. They are often used in living rooms, bedrooms, and other spaces where a natural, earthy look is desired.  Overall, a jute area rug is a beautiful and eco-friendly addition to any home. Its natural fibers and earthy appearance make it a popular choice for those who want to create a warm and inviting atmosphere in their living space.",
+              "en-US": "A jute area rug is a type of rug made from natural fibers derived from the jute plant. Jute is a long, soft, and shiny vegetable fiber that is spun into strong threads and then woven into textiles. Jute rugs are known for their durability and natural appearance, making them a popular choice for those who want to bring a touch of the outdoors into their homes.  Because jute is a natural fiber, it is eco-friendly and sustainable. However, it can be prone to staining and water damage, so jute area rugs should be used in low-traffic areas or rooms that do not see a lot of moisture. They are often used in living rooms, bedrooms, and other spaces where a natural, earthy look is desired.  Overall, a jute area rug is a beautiful and eco-friendly addition to any home. Its natural fibers and earthy appearance make it a popular choice for those who want to create a warm and inviting atmosphere in their living space.",
+            },
+          },
+          {
+            "name": "color-filter",
+            "value": {
+              "key": "#F5F5DC",
+              "label": {
+                "de-DE": "Beige",
+                "en-GB": "Beige",
+                "en-US": "Beige",
+              },
+            },
+          },
+          {
+            "name": "finishlabel",
+            "value": {
+              "de-DE": "Jute",
+              "en-GB": "Jute",
+              "en-US": "Jute",
+            },
+          },
+          {
+            "name": "finish",
+            "value": {
+              "de-DE": "#EEDA99",
+              "en-GB": "#EEDA99",
+              "en-US": "#EEDA99",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 5223,
+              "w": 7600,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_449539663-lSkaNtxb.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 3840,
+              "w": 5760,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_447839385-wEisIxmE.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 3840,
+              "w": 5760,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_405760748-jH1fNEXu.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 39900,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 39900,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 39900,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "JAR-08",
+      }
+    `);
+  });
+});
