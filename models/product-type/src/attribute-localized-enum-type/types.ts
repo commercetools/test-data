@@ -6,10 +6,7 @@ import {
 } from '../attribute-localized-enum-value';
 
 export type TAttributeLocalizedEnumType = AttributeLocalizedEnumType;
-export type TAttributeLocalizedEnumTypeDraft = Omit<
-  AttributeLocalizedEnumType,
-  'name'
->;
+export type TAttributeLocalizedEnumTypeDraft = AttributeLocalizedEnumType;
 
 export type TAttributeLocalizedEnumTypeGraphql = Omit<
   TAttributeLocalizedEnumType,
@@ -21,8 +18,11 @@ export type TAttributeLocalizedEnumTypeGraphql = Omit<
   };
   __typename: 'LocalizableEnumAttributeDefinitionType';
 };
+
 export type TAttributeLocalizedEnumTypeDraftGraphql = {
-  values: Array<TAttributeLocalizedEnumValueDraftGraphql>;
+  lenum: {
+    values: Array<TAttributeLocalizedEnumValueDraftGraphql>;
+  };
 };
 
 export type TAttributeLocalizedEnumTypeBuilder =
