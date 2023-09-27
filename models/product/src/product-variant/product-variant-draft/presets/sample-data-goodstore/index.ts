@@ -15,6 +15,7 @@ import chiantiWineGlass01 from './chianti-wine-glass-01';
 import classicBeerMug01 from './classic-beer-mug-01';
 import classicChampagneGlasses01 from './classic-champagne-glasses-01';
 import classicCoffeeCup01 from './classic-coffee-cup-01';
+import classicServingTray01 from './classic-serving-tray-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -34,6 +35,7 @@ const presets = {
   classicBeerMug01,
   classicChampagneGlasses01,
   classicCoffeeCup01,
+  classicServingTray01,
 };
 
 export default presets;
