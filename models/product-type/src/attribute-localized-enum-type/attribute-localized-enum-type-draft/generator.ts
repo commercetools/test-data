@@ -6,6 +6,7 @@ import { TAttributeLocalizedEnumTypeDraft } from '../types';
 
 export const generator = Generator<TAttributeLocalizedEnumTypeDraft>({
   fields: {
+    name: 'lenum',
     values: fake(() => [AttributeLocalizedEnumValueDraft.random()]),
   },
 });

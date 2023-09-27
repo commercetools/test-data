@@ -1,4 +1,4 @@
-import { Transformer } from '@commercetools-test-data/core';
+import { Transformer, buildField } from '@commercetools-test-data/core';
 import {
   TAttributeSetTypeDraft,
   TAttributeSetTypeDraftGraphql,
@@ -14,7 +14,13 @@ const transformers = {
   graphql: Transformer<TAttributeSetTypeDraft, TAttributeSetTypeDraftGraphql>(
     'graphql',
     {
-      buildFields: ['elementType'],
+      replaceFields: ({ fields }) => {
+        return {
+          [fields.name]: {
+            elementType: buildField(fields.elementType, 'graphql'),
+          },
+        };
+      },
     }
   ),
 };

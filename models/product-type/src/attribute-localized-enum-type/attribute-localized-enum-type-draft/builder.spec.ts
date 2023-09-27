@@ -38,17 +38,19 @@ describe('builder', () => {
       'graphql',
       AttributeLocalizedEnumTypeDraft.random(),
       expect.objectContaining({
-        values: [
-          expect.objectContaining({
-            key: expect.any(String),
-            label: expect.arrayContaining([
-              expect.objectContaining({
-                locale: 'en',
-                value: expect.any(String),
-              }),
-            ]),
-          }),
-        ],
+        lenum: {
+          values: [
+            expect.objectContaining({
+              key: expect.any(String),
+              label: expect.arrayContaining([
+                expect.objectContaining({
+                  locale: 'en',
+                  value: expect.any(String),
+                }),
+              ]),
+            }),
+          ],
+        },
       })
     )
   );

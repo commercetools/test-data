@@ -29,7 +29,9 @@ describe('builder', () => {
       'graphql',
       AttributeReferenceTypeDraft.random(),
       expect.objectContaining({
-        referenceTypeId: expect.any(String),
+        reference: {
+          referenceTypeId: expect.any(String),
+        },
       })
     )
   );

@@ -6,6 +6,7 @@ import { TAttributeReferenceTypeDraft } from '../types';
 
 export const generator = Generator<TAttributeReferenceTypeDraft>({
   fields: {
+    name: 'reference',
     referenceTypeId: oneOf(...Object.values(attributeReferenceTypeId)),
   },
 });

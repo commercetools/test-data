@@ -1,4 +1,4 @@
-import { Transformer } from '@commercetools-test-data/core';
+import { Transformer, buildField } from '@commercetools-test-data/core';
 import {
   TAttributeLocalizedEnumTypeDraftGraphql,
   TAttributeLocalizedEnumTypeDraft,
@@ -15,7 +15,13 @@ const transformers = {
     TAttributeLocalizedEnumTypeDraft,
     TAttributeLocalizedEnumTypeDraftGraphql
   >('graphql', {
-    buildFields: ['values'],
+    replaceFields: ({ fields }) => {
+      return {
+        [fields.name]: {
+          values: fields.values.map((value) => buildField(value, 'graphql')),
+        },
+      };
+    },
   }),
 };
 
