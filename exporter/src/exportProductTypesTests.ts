@@ -1,9 +1,11 @@
-import { LocalizedString, ProductType } from '@commercetools/platform-sdk';
+import { AttributeType, ProductType } from '@commercetools/platform-sdk';
 import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
 import {
   buildFilename,
   buildFunctionname,
   filterLocalizedString,
+  localizedStringToGraphql,
+  prettierMeJson,
   sortObj,
   writeFile,
 } from './ctp/helpers';
@@ -62,6 +64,92 @@ const getProductTypeSnapshot = (productType: ProductType) => {
   return 'JSON.parse(`' + JSON.stringify(sortObj(rest), null, 2) + '`)';
 };
 
+const mapType = (attributeType: AttributeType) => {
+  switch (attributeType.name) {
+    case 'ltext':
+      return {
+        __typename: 'LocalizableTextAttributeDefinitionType',
+        name: 'ltext',
+      };
+    case 'boolean':
+      return {
+        boolean: {
+          dummy: null,
+        },
+      };
+    case 'lenum':
+      return {
+        lenum: {
+          values: attributeType.values.map((value) => {
+            return {
+              key: value.key,
+              label: localizedStringToGraphql(value.label),
+            };
+          }),
+        },
+      };
+    case 'set':
+      switch (attributeType.elementType.name) {
+        case 'reference': {
+          return {
+            set: {
+              elementType: {
+                reference: {
+                  referenceTypeId: attributeType.elementType.referenceTypeId,
+                },
+              },
+            },
+          };
+        }
+        case 'ltext':
+          return {
+            set: {
+              elementType: {
+                __typename: 'LocalizableTextAttributeDefinitionType',
+                name: 'ltext',
+              },
+            },
+          };
+        default:
+          console.log(
+            'missing mapper for set type ' + attributeType.elementType.name
+          );
+      }
+      break;
+    default:
+      console.log('missing mapper for ' + attributeType.name);
+  }
+  return {};
+};
+
+const mapAttributeToGraphQL = (attributeDefinition: AttributeDefinition) => {
+  return {
+    attributeConstraint: attributeDefinition.attributeConstraint,
+    inputHint: attributeDefinition.inputHint,
+    inputTip: localizedStringToGraphql(attributeDefinition.inputTip),
+    isRequired: attributeDefinition.isRequired,
+    isSearchable: attributeDefinition.isSearchable,
+    name: attributeDefinition.name,
+    label: localizedStringToGraphql(attributeDefinition.label)!,
+    type: mapType(attributeDefinition.type),
+  };
+};
+const getProductTypeSnapshotForGraphql = async (productType: ProductType) => {
+  //Filter attributes that the builder does not know about
+  const result = {
+    __typename: 'ProductTypeDraft',
+    name: productType.name,
+    description: productType.description,
+    key: productType.key,
+    attributeDefinitions: productType.attributes?.map(mapAttributeToGraphQL),
+  };
+  return (
+    'JSON.parse(`' +
+    (await prettierMeJson(JSON.stringify(sortObj(result)))) +
+    '`)'
+  );
+};
+
 const productTypes = async () => {
   const types = await getProductTypes();
   console.log('Found ' + types.length + ' product types');
@@ -92,7 +180,13 @@ import ${identifier} from './${fileName}';`;
     content += `    expect(${identifier}Preset).toMatchObject(\n`;
     content += getProductTypeSnapshot(type);
     content += `    );\n`;
-    content += `  });\n`;
+    content += `  });\n\n`;
+    content += `  it('should create a ${identifier} product type draft for graphql', () => {\n`;
+    content += `    const ${identifier}Preset = ${identifier}().buildGraphql<TProductTypeDraftGraphql>();\n`;
+    content += `    expect(${identifier}Preset).toMatchObject(\n`;
+    content += await getProductTypeSnapshotForGraphql(type);
+    content += `    );\n`;
+    content += `  });\n\n`;
     content += `});\n`;
     await writeFile(
       content,
