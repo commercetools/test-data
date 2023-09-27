@@ -7,6 +7,7 @@ import ashenRug from './ashen-rug';
 import beddingBundle from './bedding-bundle';
 import benPillowCover from './ben-pillow-cover';
 import braidedRug from './braided-rug';
+import brunoChair from './bruno-chair';
 
 const presets = {
   abigailLoungeChair,
@@ -18,6 +19,7 @@ const presets = {
   beddingBundle,
   benPillowCover,
   braidedRug,
+  brunoChair,
 };
 
 export default presets;
