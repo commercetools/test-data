@@ -28,12 +28,14 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('product-description')
+            ['de-DE']('Productbeschreibung')
             ['en-US']('product-description')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB']('description of the bundle product')
+            ['de-DE']('Beschreibung des Bundles')
             ['en-US']('description of the bundle product')
         )
         .isRequired(false)
@@ -49,6 +51,14 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Product Spec')
+            ['de-DE']('Product Spezifikation')
+            ['en-US']('Product Spec')
+        )
+        .inputTip(
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Product Spec')
+            ['de-DE']('Produktspezifikation')
             ['en-US']('Product Spec')
         )
         .isRequired(false)
@@ -70,8 +80,15 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Products of this bundle')
-            ['en-US']('Products of this bundle')
             ['de-DE']('Produkte dieses Bundles')
+            ['en-US']('Products of this bundle')
+        )
+        .inputTip(
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Products of this bundle')
+            ['de-DE']('Produkte dieses Bundles')
+            ['en-US']('Products of this bundle')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)

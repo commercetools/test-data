@@ -4,9 +4,9 @@ import {
   inputHints,
 } from '../../../../attribute-definition/constants';
 import {
+  AttributeDefinitionDraft,
   AttributeLocalizableTextType,
   AttributeSetTypeDraft,
-  AttributeDefinitionDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -30,8 +30,8 @@ const productSets = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Type')
-            ['en-US']('Type')
             ['de-DE']('Typ')
+            ['en-US']('Type')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)

@@ -93,7 +93,7 @@ export const addEntry = (
   escapeValue = true
 ) => {
   let newValue = escapeValue ? `'${value}'` : value;
-  value && (output += offset + '.' + key + '(' + newValue + ')\n');
+  value && (output += '.' + key + '(' + newValue + ')\n');
   return output;
 };
 
