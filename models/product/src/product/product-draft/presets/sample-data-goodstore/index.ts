@@ -6,6 +6,7 @@ import artDecoCoffeeTable from './art-deco-coffee-table';
 import ashenRug from './ashen-rug';
 import beddingBundle from './bedding-bundle';
 import benPillowCover from './ben-pillow-cover';
+import braidedRug from './braided-rug';
 
 const presets = {
   abigailLoungeChair,
@@ -16,6 +17,7 @@ const presets = {
   ashenRug,
   beddingBundle,
   benPillowCover,
+  braidedRug,
 };
 
 export default presets;
