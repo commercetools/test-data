@@ -9,6 +9,7 @@ import benPillowCover from './ben-pillow-cover';
 import braidedRug from './braided-rug';
 import brunoChair from './bruno-chair';
 import canelaThreeSeaterSofa from './canela-three-seater-sofa';
+import charcoalChair from './charcoal-chair';
 
 const presets = {
   abigailLoungeChair,
@@ -22,6 +23,7 @@ const presets = {
   braidedRug,
   brunoChair,
   canelaThreeSeaterSofa,
+  charcoalChair,
 };
 
 export default presets;
