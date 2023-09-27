@@ -4,6 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
+
 import serveware from './serveware';
 
 const servewareDraft = serveware().build<TCategoryDraft>();
@@ -14,7 +15,6 @@ const servingPlatters = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Serving Platters')
-        ['en-US']('Serving Platters')
         ['de-DE']('Servierplatten')
         ['en-US']('Serving Platters')
     )
@@ -22,7 +22,6 @@ const servingPlatters = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('serving-platters')
-        ['en-US']('serving-platters')
         ['de-DE']('serving-platters')
         ['en-US']('serving-platters')
     )

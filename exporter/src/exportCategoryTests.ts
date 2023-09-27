@@ -1,20 +1,14 @@
-import {
-  Category,
-  CategoryDraft,
-  LocalizedString,
-  ProductType,
-} from '@commercetools/platform-sdk';
-import { AttributeDefinition } from '@commercetools/platform-sdk/dist/declarations/src/generated/models/product-type';
+import { Category, CategoryDraft } from '@commercetools/platform-sdk';
 import { getCategories } from './ctp/categories';
 import { getLimit } from './ctp/config';
 import {
   buildFilename,
   buildFunctionname,
   filterLocalizedString,
+  localizedStringToGraphql,
   sortObj,
   writeFile,
 } from './ctp/helpers';
-import { getProductTypes } from './ctp/product-types';
 
 const getCategorySnapshot = (category: Category) => {
   //Filter attributes that the builder does not know about
@@ -71,6 +65,28 @@ const getCategorySnapshot = (category: Category) => {
   );
 };
 
+const getCategorySnapshotGraphQL = (category: Category) => {
+  let result = {
+    externalId: category.externalId,
+    key: category.key,
+    metaDescription: localizedStringToGraphql(category.metaDescription),
+    metaKeywords: localizedStringToGraphql(category.metaKeywords),
+    metaTitle: localizedStringToGraphql(category.metaTitle),
+    description: localizedStringToGraphql(category.description),
+    name: localizedStringToGraphql(category.name)!,
+    slug: localizedStringToGraphql(category.slug)!,
+    orderHint: category.orderHint,
+    parent: category.parent
+      ? {
+          __typename: 'Reference',
+          key: category.parent.obj?.key,
+          typeId: 'category',
+        }
+      : undefined,
+  };
+  return 'JSON.parse(`' + JSON.stringify(sortObj(result), null, 2) + '`)';
+};
+
 const categories = async () => {
   const { results } = await getCategories(getLimit(), ['parent']);
   console.log('Found ' + results.length + ' categories');
@@ -86,8 +102,7 @@ const categories = async () => {
     );
     const fileName = buildFilename(category.key || category.name['en-GB']);
 
-    content += `
-import ${identifier} from './${fileName}';`;
+    content += `import ${identifier} from './${fileName}';\n\n`;
 
     content += `describe(\`with ${identifier} preset\`, () => {\n`;
     // Rest
@@ -96,7 +111,15 @@ import ${identifier} from './${fileName}';`;
     content += `    expect(${identifier}Preset).toMatchObject(\n`;
     content += getCategorySnapshot(category);
     content += `    );\n`;
+    content += `  });\n\n`;
+
+    content += `  it('should create a ${identifier} category type draft when built for Graphql', () => {\n`;
+    content += `    const ${identifier}PresetGraphql = ${identifier}().buildGraphql<TCategoryDraftGraphql>();\n`;
+    content += `    expect(${identifier}PresetGraphql).toMatchObject(\n`;
+    content += getCategorySnapshotGraphQL(category);
+    content += `    );\n`;
     content += `  });\n`;
+
     content += `});\n`;
     await writeFile(
       content,

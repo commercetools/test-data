@@ -52,6 +52,27 @@ export const formatLocalizedString = (name?: LocalizedString) => {
   return 'LocalizedString.presets.empty()' + result;
 };
 
+export const localizedStringToGraphql = (
+  localizedString?: LocalizedString
+): Array<{ __typename: string; locale: string; value: string }> | undefined => {
+  if (!localizedString) {
+    return undefined;
+  }
+  const locales = getLocales();
+  return locales
+    .map((locale) => {
+      if (!localizedString[locale] || localizedString[locale] === '') {
+        return undefined;
+      }
+      return {
+        __typename: 'LocalizedString',
+        locale: locale,
+        value: localizedString[locale],
+      };
+    })
+    .filter(notEmpty);
+};
+
 export const buildFilename = (input: string) => {
   return input
     .toLowerCase()

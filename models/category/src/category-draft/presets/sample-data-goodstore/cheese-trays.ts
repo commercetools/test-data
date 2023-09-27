@@ -4,6 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
+
 import serveware from './serveware';
 
 const servewareDraft = serveware().build<TCategoryDraft>();
@@ -14,7 +15,6 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Cheese Trays')
-        ['en-US']('Cheese Trays')
         ['de-DE']('Käseplatten')
         ['en-US']('Cheese Trays')
     )
@@ -22,7 +22,6 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('cheese-trays')
-        ['en-US']('cheese-trays')
         ['de-DE']('cheese-trays')
         ['en-US']('cheese-trays')
     )

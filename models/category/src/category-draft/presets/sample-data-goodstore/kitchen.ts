@@ -1,5 +1,8 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder } from '../../../types';
+import {
+  LocalizedString,
+  KeyReference,
+} from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
 
 const kitchen = (): TCategoryDraftBuilder =>
@@ -8,15 +11,15 @@ const kitchen = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Kitchen')
-        ['en-US']('Kitchen')
         ['de-DE']('Küche')
+        ['en-US']('Kitchen')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('kitchen')
-        ['en-US']('kitchen')
         ['de-DE']('kitchen')
+        ['en-US']('kitchen')
     )
     .key('kitchen')
     .orderHint('0.3');

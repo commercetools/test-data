@@ -4,9 +4,10 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
-import barGlassware from './bar-and-glassware';
 
-const barGlasswareDraft = barGlassware().build<TCategoryDraft>();
+import barAndGlassware from './bar-and-glassware';
+
+const barAndGlasswareDraft = barAndGlassware().build<TCategoryDraft>();
 
 const barAccessories = (): TCategoryDraftBuilder =>
   empty()
@@ -14,18 +15,18 @@ const barAccessories = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Bar Accessories')
-        ['en-US']('Bar Accessories')
         ['de-DE']('Barzubehör')
+        ['en-US']('Bar Accessories')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('bar-accessories')
-        ['en-US']('bar-accessories')
         ['de-DE']('bar-accessories')
+        ['en-US']('bar-accessories')
     )
     .key('bar-accessories')
     .orderHint('.36')
-    .parent(KeyReference.presets.category().key(barGlasswareDraft.key!));
+    .parent(KeyReference.presets.category().key(barAndGlasswareDraft.key!));
 
 export default barAccessories;
