@@ -1,7 +1,7 @@
 import empty from './empty';
 import sampleDataFashion from './sample-data-fashion';
-import sampleDataGoodstore from './sample-data-goodstore';
+import sampleDataGoodStore from './sample-data-goodstore';
 
-const presets = { empty, sampleDataFashion, sampleDataGoodstore };
+const presets = { empty, sampleDataFashion, sampleDataGoodStore };
 
 export default presets;
