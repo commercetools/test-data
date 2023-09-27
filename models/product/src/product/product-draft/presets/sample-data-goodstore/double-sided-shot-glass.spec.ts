@@ -18,47 +18,125 @@ describe(`with doubleSidedShotGlass preset`, () => {
           {
             "key": "kitchen",
             "typeId": "category",
-          }
+          },
         ],
-      "categoryOrderHints": {},
-      "key": "double-sided-shot-glass",
-      "name": {
-            "de-DE": "Doppelseitiges Schnapsglas",
-            "en-GB": "Double-sided Shot Glass",
-            "en-US": "Double-sided Shot Glass"
-          },
-      "metaTitle": {
-            "de-DE": "",
-            "en-GB": "",
-            "en-US": ""
-          },
-      "searchKeywords": {},
-      "slug": {
-            "de-DE": "doppelseitiges-schnapsglas",
-            "en-GB": "double-sided-shot-glass",
-            "en-US": "double-sided-shot-glass"
-          },
-      "publish": true,
-      "priceMode": undefined,
-        {
-          "key": "vat-standard-eu",
-          "typeId": "tax-category",
+        "categoryOrderHints": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Dieses Stahlschnapsglas besteht aus Stahl und hat zwei Enden, eines zum Messen eines Standardschnapses und das andere zum Messen eines größeren Doppelschnapses. Die Enden sind wie kleine Tassen mit abgerundeten Kanten zum einfachen Ausgießen geformt. Die Stahlkonstruktion macht es langlebig und verschleißfest und bietet gleichzeitig ein elegantes und modernes Erscheinungsbild.",
+          "en": undefined,
+          "en-GB": "This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.",
+          "en-US": "This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.",
+          "fr": undefined,
         },
-        {
+        "key": "double-sided-shot-glass",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+            {
+              "name": "productspec",
+              "value": {
+                "de-DE": "- Edelstahl
+      - Spülmaschinenfest",
+                "en-GB": "- Stainless steel
+      - Dishwasher safe",
+                "en-US": "- Stainless steel
+      - Dishwasher safe",
+              },
+            },
+          ],
+          "images": [
+            {
+              "dimensions": {
+                "h": 5472,
+                "w": 3648,
+              },
+              "label": undefined,
+              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_95721248-5HSKgKgr.jpeg",
+            },
+          ],
+          "key": undefined,
+          "prices": [
+            {
+              "channel": undefined,
+              "country": "DE",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "EUR",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "GB",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "GBP",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "US",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "USD",
+              },
+            },
+          ],
+          "sku": "SHOT-095",
+        },
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "de-DE": "Doppelseitiges Schnapsglas",
+          "en": undefined,
+          "en-GB": "Double-sided Shot Glass",
+          "en-US": "Double-sided Shot Glass",
+          "fr": undefined,
+        },
+        "priceMode": undefined,
+        "productType": {
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
-        "masterVariant": {
-          "assets": undefined,
-          "sku": undefined,
-          "images": undefined,
-          "key": undefined,
-          "prices": undefined,
-          "attributes": [{"name":"productspec","value":{"en-GB":"- Stainless steel\n- Dishwasher safe","de-DE":"- Edelstahl\n- Spülmaschinenfest","en-US":"- Stainless steel\n- Dishwasher safe"}},{"name":"product-description","value":{"en-GB":"This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.","en-US":"This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.","de-DE":"Dieses Stahlschnapsglas besteht aus Stahl und hat zwei Enden, eines zum Messen eines Standardschnapses und das andere zum Messen eines größeren Doppelschnapses. Die Enden sind wie kleine Tassen mit abgerundeten Kanten zum einfachen Ausgießen geformt. Die Stahlkonstruktion macht es langlebig und verschleißfest und bietet gleichzeitig ein elegantes und modernes Erscheinungsbild."}}],
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": {
+          "de": undefined,
+          "de-DE": "doppelseitiges-schnapsglas",
+          "en": undefined,
+          "en-GB": "double-sided-shot-glass",
+          "en-US": "double-sided-shot-glass",
+          "fr": undefined,
         },
-        "variants": [
-
-       ]
+        "state": undefined,
+        "taxCategory": {
+          "key": "standard-tax",
+          "typeId": "tax-category",
+        },
+        "variants": undefined,
       }
     `);
   });

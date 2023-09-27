@@ -10,28 +10,28 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodStore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const cottonSilkBedsheetProductTypeDraft =
-  ProductTypeDraft.presets.sampleDataGoodstore
+  ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const beddingDraft = CategoryDraft.presets.sampleDataGoodstore
+const beddingDraft = CategoryDraft.presets.sampleDataGoodStore
   .bedding()
   .build<TCategoryDraft>();
 
-const homeDecorDraft = CategoryDraft.presets.sampleDataGoodstore
+const homeDecorDraft = CategoryDraft.presets.sampleDataGoodStore
   .homeDecor()
   .build<TCategoryDraft>();
 
@@ -45,6 +45,19 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
         ['en-GB']('Cotton Silk Bedsheet')
         ['de-DE']('Bettwäsche aus Baumwollseide')
         ['en-US']('Cotton Silk Bedsheet')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'Cotton silk bed sheets are made from a blend of cotton and silk fibers. Cotton is known for its durability, breathability, and ease of care. Silk, on the other hand, is renowned for its smoothness, lustrous sheen, and luxurious feel. By combining the two, we offer a product that balances durability, breathability, and luxury.  Cotton silk bed sheets often have a subtle sheen from the silk, making them look more luxurious.'
+        )
+        ['de-DE'](
+          'Bettwäsche aus Baumwollseide besteht aus einer Mischung aus Baumwoll- und Seidenfasern. Baumwolle ist für ihre Strapazierfähigkeit, Atmungsaktivität und Pflegeleichtigkeit bekannt. Seide hingegen ist bekannt für ihre Geschmeidigkeit, ihren strahlenden Glanz und ihr luxuriöses Gefühl. Durch die Kombination beider bieten wir ein Produkt an, das Haltbarkeit, Atmungsaktivität und Luxus in Einklang bringt.  Bettwäsche aus Baumwollseide hat oft einen dezenten Seidenglanz, der sie luxuriöser aussehen lässt.'
+        )
+        ['en-US'](
+          'Cotton silk bed sheets are made from a blend of cotton and silk fibers. Cotton is known for its durability, breathability, and ease of care. Silk, on the other hand, is renowned for its smoothness, lustrous sheen, and luxurious feel. By combining the two, we offer a product that balances durability, breathability, and luxury.  Cotton silk bed sheets often have a subtle sheen from the silk, making them look more luxurious.'
+        )
     )
     .slug(
       LocalizedString.presets
@@ -60,7 +73,7 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01()
@@ -69,11 +82,11 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet02(),
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet03(),
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet04(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet05(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet06(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet07(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet08(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet09(),
     ])
     .categories([
       KeyReference.presets.category().key(beddingDraft.key!),

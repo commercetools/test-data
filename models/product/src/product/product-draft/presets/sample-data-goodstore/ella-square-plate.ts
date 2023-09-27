@@ -10,40 +10,40 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const ellaSquarePlateProductTypeDraft =
-  ProductTypeDraft.presets.sampleDataGoodstore
+  ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const platesDraft = CategoryDraft.presets.sampleDataGoodstore
+const platesDraft = CategoryDraft.presets.sampleDataGoodStore
   .plates()
   .build<TCategoryDraft>();
 
-const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
-const servingPlattersDraft = CategoryDraft.presets.sampleDataGoodstore
+const servingPlattersDraft = CategoryDraft.presets.sampleDataGoodStore
   .servingPlatters()
   .build<TCategoryDraft>();
 
-const servewareDraft = CategoryDraft.presets.sampleDataGoodstore
+const servewareDraft = CategoryDraft.presets.sampleDataGoodStore
   .serveware()
   .build<TCategoryDraft>();
 
-const dinnerwareDraft = CategoryDraft.presets.sampleDataGoodstore
+const dinnerwareDraft = CategoryDraft.presets.sampleDataGoodStore
   .dinnerware()
   .build<TCategoryDraft>();
 
@@ -57,6 +57,19 @@ const ellaSquarePlate = (): TProductDraftBuilder =>
         ['en-GB']('Ella Square Plate')
         ['de-DE']('Ella Quadratische Platte')
         ['en-US']('Ella Square Plate')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'This Ella square ceramic plate is a flat, four-sided dish ideal for serving or displaying food. A flat square serving plate is ideal for serving a variety of foods, from appetizers and main courses to desserts and snacks. It can be used for both formal and casual occasions, and its simplicity and versatility make it a popular choice for many different types of cuisines.  Overall, a square ceramic plate is a functional and stylish choice for serving meals and can add a touch of elegance to any dining experience.'
+        )
+        ['de-DE'](
+          'Dieser quadratische Ella-Keramikteller ist eine flache, vierseitige Schale, die sich ideal zum Servieren oder Präsentieren von Speisen eignet. Eine flache quadratische Servierplatte ist ideal zum Servieren einer Vielzahl von Speisen, von Vorspeisen und Hauptgerichten bis hin zu Desserts und Snacks. Es kann sowohl für formelle als auch für ungezwungene Anlässe verwendet werden, und seine Einfachheit und Vielseitigkeit machen es zu einer beliebten Wahl für viele verschiedene Arten von Küchen.  Insgesamt ist ein quadratischer Keramikteller eine funktionale und stilvolle Wahl zum Servieren von Mahlzeiten und kann jedem Speiseerlebnis einen Hauch von Eleganz verleihen.'
+        )
+        ['en-US'](
+          'This Ella square ceramic plate is a flat, four-sided dish ideal for serving or displaying food. A flat square serving plate is ideal for serving a variety of foods, from appetizers and main courses to desserts and snacks. It can be used for both formal and casual occasions, and its simplicity and versatility make it a popular choice for many different types of cuisines.  Overall, a square ceramic plate is a functional and stylish choice for serving meals and can add a touch of elegance to any dining experience.'
+        )
     )
     .slug(
       LocalizedString.presets
@@ -72,10 +85,10 @@ const ellaSquarePlate = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.ellaSquarePlate01()
+      ProductVariantDraft.presets.sampleDataGoodStore.ellaSquarePlate01()
     )
     .categories([
       KeyReference.presets.category().key(platesDraft.key!),

@@ -21,8 +21,10 @@ import cloudQueenBed01 from './cloud-queen-bed-01';
 import cobblestoneRug01 from './cobblestone-rug-01';
 import cocktailShaker01 from './cocktail-shaker-01';
 import cocktailShakerSet01 from './cocktail-shaker-set-01';
+import cocktailStirringSpoon01 from './cocktail-stirring-spoon-01';
 import cocktailStrainer01 from './cocktail-strainer-01';
 import cocoaPillowCover01 from './cocoa-pillow-cover-01';
+import comfortCoffeeMug01 from './comfort-coffee-mug-01';
 import cottonSilkBedsheet01 from './cotton-silk-bedsheet-01';
 import cottonSilkBedsheet02 from './cotton-silk-bedsheet-02';
 import cottonSilkBedsheet03 from './cotton-silk-bedsheet-03';
@@ -69,8 +71,10 @@ const presets = {
   cobblestoneRug01,
   cocktailShaker01,
   cocktailShakerSet01,
+  cocktailStirringSpoon01,
   cocktailStrainer01,
   cocoaPillowCover01,
+  comfortCoffeeMug01,
   cottonSilkBedsheet01,
   cottonSilkBedsheet02,
   cottonSilkBedsheet03,

@@ -10,32 +10,32 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const cocktailStirringSpoonProductTypeDraft =
-  ProductTypeDraft.presets.sampleDataGoodstore
+  ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
+const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodStore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
   .barAndGlassware()
   .build<TCategoryDraft>();
 
-const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
@@ -49,6 +49,19 @@ const cocktailStirringSpoon = (): TProductDraftBuilder =>
         ['en-GB']('Cocktail Stirring Spoon')
         ['de-DE']('Cocktail-Rührlöffel')
         ['en-US']('Cocktail Stirring Spoon')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.'
+        )
+        ['de-DE'](
+          'Ein Cocktail-Rührlöffel ist ein langes und schlankes Utensil aus Edelstahl, das zum Rühren und Mixen von Cocktails verwendet wird. Es ist normalerweise etwa 8 Zoll lang mit einem kleinen, flachen, scheibenförmigen Ende zum Vermischen von Zutaten und einem gedrehten oder spiralförmigen Griff zum einfachen Greifen. Der gedrehte Griff dient nicht nur der Dekoration, sondern verhilft auch zu einem besseren Halt beim Mixen von Cocktails.'
+        )
+        ['en-US'](
+          'A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.'
+        )
     )
     .slug(
       LocalizedString.presets
@@ -64,10 +77,10 @@ const cocktailStirringSpoon = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.cocktailStirringSpoon01()
+      ProductVariantDraft.presets.sampleDataGoodStore.cocktailStirringSpoon01()
     )
     .categories([
       KeyReference.presets.category().key(barAccessoriesDraft.key!),

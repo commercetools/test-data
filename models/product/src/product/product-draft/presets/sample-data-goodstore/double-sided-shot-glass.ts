@@ -10,32 +10,32 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const doubleSidedShotGlassProductTypeDraft =
-  ProductTypeDraft.presets.sampleDataGoodstore
+  ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodstore
+const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodStore
   .barAccessories()
   .build<TCategoryDraft>();
 
-const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
   .barAndGlassware()
   .build<TCategoryDraft>();
 
-const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
@@ -49,6 +49,19 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
         ['en-GB']('Double-sided Shot Glass')
         ['de-DE']('Doppelseitiges Schnapsglas')
         ['en-US']('Double-sided Shot Glass')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.'
+        )
+        ['de-DE'](
+          'Dieses Stahlschnapsglas besteht aus Stahl und hat zwei Enden, eines zum Messen eines Standardschnapses und das andere zum Messen eines größeren Doppelschnapses. Die Enden sind wie kleine Tassen mit abgerundeten Kanten zum einfachen Ausgießen geformt. Die Stahlkonstruktion macht es langlebig und verschleißfest und bietet gleichzeitig ein elegantes und modernes Erscheinungsbild.'
+        )
+        ['en-US'](
+          'This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.'
+        )
     )
     .slug(
       LocalizedString.presets
@@ -64,10 +77,10 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.doubleSidedShotGlass01()
+      ProductVariantDraft.presets.sampleDataGoodStore.doubleSidedShotGlass01()
     )
     .categories([
       KeyReference.presets.category().key(barAccessoriesDraft.key!),

@@ -31,23 +31,11 @@ const doubleSidedShotGlass01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3648, h: 5472 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Stainless steel\n- Dishwasher safe',
-          'de-DE': '- Edelstahl\n- Spülmaschinenfest',
-          'en-US': '- Stainless steel\n- Dishwasher safe',
-        }),
-      AttributeDraft.random()
-        .name('product-description')
-        .value({
-          'en-GB':
-            'This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.',
-          'en-US':
-            'This steel shot glass is made of steel and has two ends, one for measuring a standard shot, and the other for measuring a larger double shot. The ends are shaped like small cups with rounded edges for easy pouring. The steel construction makes it durable and resistant to wear and tear, while also providing a sleek and modern appearance.',
-          'de-DE':
-            'Dieses Stahlschnapsglas besteht aus Stahl und hat zwei Enden, eines zum Messen eines Standardschnapses und das andere zum Messen eines größeren Doppelschnapses. Die Enden sind wie kleine Tassen mit abgerundeten Kanten zum einfachen Ausgießen geformt. Die Stahlkonstruktion macht es langlebig und verschleißfest und bietet gleichzeitig ein elegantes und modernes Erscheinungsbild.',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Stainless steel\n- Dishwasher safe',
+        'de-DE': '- Edelstahl\n- Spülmaschinenfest',
+        'en-US': '- Stainless steel\n- Dishwasher safe',
+      }),
     ]);
 
 export default doubleSidedShotGlass01;
