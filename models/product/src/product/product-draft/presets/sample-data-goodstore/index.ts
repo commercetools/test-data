@@ -16,6 +16,7 @@ import classicBeerMug from './classic-beer-mug';
 import classicChampagneGlasses from './classic-champagne-glasses';
 import classicCoffeeCup from './classic-coffee-cup';
 import classicServingTray from './classic-serving-tray';
+import clinkChampagneGlass from './clink-champagne-glass';
 
 const presets = {
   abigailLoungeChair,
@@ -36,6 +37,7 @@ const presets = {
   classicChampagneGlasses,
   classicCoffeeCup,
   classicServingTray,
+  clinkChampagneGlass,
 };
 
 export default presets;
