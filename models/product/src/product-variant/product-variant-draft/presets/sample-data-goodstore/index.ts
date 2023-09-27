@@ -4,6 +4,7 @@ import ariaRug01 from './aria-rug-01';
 import artDecoChair01 from './art-deco-chair-01';
 import artDecoCoffeeTable01 from './art-deco-coffee-table-01';
 import ashenRug01 from './ashen-rug-01';
+import beddingBundle01 from './bedding-bundle-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -12,6 +13,7 @@ const presets = {
   artDecoChair01,
   artDecoCoffeeTable01,
   ashenRug01,
+  beddingBundle01,
 };
 
 export default presets;
