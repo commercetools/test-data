@@ -1,11 +1,11 @@
 import countryGermany from './country-germany';
 import countryUnitedKingdom from './country-unitedkingdom';
-import countryUS from './country-us';
+import countryUsa from './country-usa';
 
 const presets = {
   countryGermany,
   countryUnitedKingdom,
-  countryUS,
+  countryUsa,
 };
 
 export default presets;
