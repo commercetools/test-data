@@ -18,6 +18,7 @@ import classicCoffeeCup01 from './classic-coffee-cup-01';
 import classicServingTray01 from './classic-serving-tray-01';
 import clinkChampagneGlass01 from './clink-champagne-glass-01';
 import cloudQueenBed01 from './cloud-queen-bed-01';
+import cobblestoneRug01 from './cobblestone-rug-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -40,6 +41,7 @@ const presets = {
   classicServingTray01,
   clinkChampagneGlass01,
   cloudQueenBed01,
+  cobblestoneRug01,
 };
 
 export default presets;
