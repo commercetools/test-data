@@ -18,8 +18,8 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodStore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const cobblestoneRugProductTypeDraft =
@@ -64,7 +64,7 @@ const cobblestoneRug = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.cobblestoneRug01()

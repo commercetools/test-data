@@ -18,7 +18,7 @@ import {
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
+const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodStore
   .vatStandardEu()
   .build<TTaxCategoryDraft>();
 
@@ -63,17 +63,17 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
       KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01()
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodstore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet03(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet04(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
     ])
     .categories([
       KeyReference.presets.category().key(beddingDraft.key!),

@@ -19,6 +19,31 @@ import classicServingTray01 from './classic-serving-tray-01';
 import clinkChampagneGlass01 from './clink-champagne-glass-01';
 import cloudQueenBed01 from './cloud-queen-bed-01';
 import cobblestoneRug01 from './cobblestone-rug-01';
+import cocktailShaker01 from './cocktail-shaker-01';
+import cocktailShakerSet01 from './cocktail-shaker-set-01';
+import cocktailStrainer01 from './cocktail-strainer-01';
+import cocoaPillowCover01 from './cocoa-pillow-cover-01';
+import cottonSilkBedsheet01 from './cotton-silk-bedsheet-01';
+import cottonSilkBedsheet02 from './cotton-silk-bedsheet-02';
+import cottonSilkBedsheet03 from './cotton-silk-bedsheet-03';
+import cottonSilkBedsheet04 from './cotton-silk-bedsheet-04';
+import cottonSilkBedsheet05 from './cotton-silk-bedsheet-05';
+import cottonSilkBedsheet06 from './cotton-silk-bedsheet-06';
+import cottonSilkBedsheet07 from './cotton-silk-bedsheet-07';
+import cottonSilkBedsheet08 from './cotton-silk-bedsheet-08';
+import cottonSilkBedsheet09 from './cotton-silk-bedsheet-09';
+import cottonTwoSeaterSofa01 from './cotton-two-seater-sofa-01';
+import crystalDrinkingGlass01 from './crystal-drinking-glass-01';
+import cubeJuteBasket01 from './cube-jute-basket-01';
+import doubleSidedShotGlass01 from './double-sided-shot-glass-01';
+import doubleWalledEspressoGlass01 from './double-walled-espresso-glass-01';
+import ecruDoubleBed01 from './ecru-double-bed-01';
+import edgarArmchair01 from './edgar-armchair-01';
+import ellaSquarePlate01 from './ella-square-plate-01';
+import emeraldVelvetChair01 from './emerald-velvet-chair-01';
+import entrywayCloset01 from './entryway-closet-01';
+import evergreenCandle01 from './evergreen-candle-01';
+import fawnArmchair01 from './fawn-armchair-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -42,6 +67,31 @@ const presets = {
   clinkChampagneGlass01,
   cloudQueenBed01,
   cobblestoneRug01,
+  cocktailShaker01,
+  cocktailShakerSet01,
+  cocktailStrainer01,
+  cocoaPillowCover01,
+  cottonSilkBedsheet01,
+  cottonSilkBedsheet02,
+  cottonSilkBedsheet03,
+  cottonSilkBedsheet04,
+  cottonSilkBedsheet05,
+  cottonSilkBedsheet06,
+  cottonSilkBedsheet07,
+  cottonSilkBedsheet08,
+  cottonSilkBedsheet09,
+  cottonTwoSeaterSofa01,
+  crystalDrinkingGlass01,
+  cubeJuteBasket01,
+  doubleSidedShotGlass01,
+  doubleWalledEspressoGlass01,
+  ecruDoubleBed01,
+  edgarArmchair01,
+  ellaSquarePlate01,
+  emeraldVelvetChair01,
+  entrywayCloset01,
+  evergreenCandle01,
+  fawnArmchair01,
 };
 
 export default presets;
