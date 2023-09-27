@@ -59,7 +59,7 @@ export const localizedStringToGraphql = (
     return undefined;
   }
   const locales = getLocales();
-  return locales
+  const result = locales
     .map((locale) => {
       if (!localizedString[locale] || localizedString[locale] === '') {
         return undefined;
@@ -71,6 +71,10 @@ export const localizedStringToGraphql = (
       };
     })
     .filter(notEmpty);
+  if (result.length === 0) {
+    return undefined;
+  }
+  return result;
 };
 
 export const buildFilename = (input: string) => {
@@ -116,6 +120,14 @@ export const addEntry = (
   let newValue = escapeValue ? `'${value}'` : value;
   value && (output += '.' + key + '(' + newValue + ')\n');
   return output;
+};
+
+export const prettierMeJson = async (content: string) => {
+  return await prettier.format(content, {
+    trailingComma: 'none',
+    quoteProps: 'preserve',
+    parser: 'json5',
+  });
 };
 
 export const writeFile = async (
