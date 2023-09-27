@@ -12,6 +12,7 @@ import canelaThreeSeaterSofa01 from './canela-three-seater-sofa-01';
 import charcoalChair01 from './charcoal-chair-01';
 import charlieArmchair01 from './charlie-armchair-01';
 import chiantiWineGlass01 from './chianti-wine-glass-01';
+import classicBeerMug01 from './classic-beer-mug-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -28,6 +29,7 @@ const presets = {
   charcoalChair01,
   charlieArmchair01,
   chiantiWineGlass01,
+  classicBeerMug01,
 };
 
 export default presets;
