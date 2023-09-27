@@ -10,14 +10,7 @@ describe('Shipping Method with standard preset', () => {
         "custom": undefined,
         "isDefault": true,
         "key": "standard-delivery",
-        "localizedDescription": {
-          "de": undefined,
-          "de-DE": "4",
-          "en": undefined,
-          "en-GB": "4",
-          "en-US": "4",
-          "fr": undefined,
-        },
+        "localizedDescription": undefined,
         "localizedName": undefined,
         "name": "Standard Delivery",
         "predicate": undefined,
@@ -29,12 +22,7 @@ describe('Shipping Method with standard preset', () => {
           {
             "shippingRates": [
               {
-                "freeAbove": {
-                  "centAmount": 0,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
-                },
+                "freeAbove": undefined,
                 "price": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
@@ -100,23 +88,7 @@ describe('Shipping Method with standard preset', () => {
         "custom": undefined,
         "isDefault": true,
         "key": "standard-delivery",
-        "localizedDescription": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "4",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "4",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "4",
-          },
-        ],
+        "localizedDescription": undefined,
         "localizedName": undefined,
         "name": "Standard Delivery",
         "predicate": undefined,
@@ -129,13 +101,7 @@ describe('Shipping Method with standard preset', () => {
           {
             "shippingRates": [
               {
-                "freeAbove": {
-                  "__typename": "Money",
-                  "centAmount": 0,
-                  "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
-                },
+                "freeAbove": undefined,
                 "price": {
                   "__typename": "Money",
                   "centAmount": 10000,

@@ -17,9 +17,6 @@ const standardShippingMethod = (): TShippingMethodDraftBuilder =>
     .empty()
     .key('standard-delivery')
     .name('Standard Delivery')
-    .localizedDescription(
-      LocalizedString.presets.empty()['en-US']('4')['en-GB']('4')['de-DE']('4')
-    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )

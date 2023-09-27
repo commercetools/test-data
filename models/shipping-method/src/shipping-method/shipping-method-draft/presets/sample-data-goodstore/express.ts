@@ -17,9 +17,6 @@ const expressShippingMethod = (): TShippingMethodDraftBuilder =>
     .empty()
     .key('express-delivery')
     .name('Express Delivery')
-    .localizedDescription(
-      LocalizedString.presets.empty()['en-US']('2')['en-GB']('2')['de-DE']('2')
-    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )

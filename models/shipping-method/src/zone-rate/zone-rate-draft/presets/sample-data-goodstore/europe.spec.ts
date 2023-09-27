@@ -8,12 +8,7 @@ describe('with europe preset', () => {
       {
         "shippingRates": [
           {
-            "freeAbove": {
-              "centAmount": 0,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
-            },
+            "freeAbove": undefined,
             "price": {
               "centAmount": 10000,
               "currencyCode": "EUR",
@@ -47,13 +42,7 @@ describe('with europe preset', () => {
       {
         "shippingRates": [
           {
-            "freeAbove": {
-              "__typename": "Money",
-              "centAmount": 0,
-              "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
-            },
+            "freeAbove": undefined,
             "price": {
               "__typename": "Money",
               "centAmount": 10000,

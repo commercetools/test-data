@@ -17,13 +17,6 @@ const usaShippingMethod = (): TShippingMethodDraftBuilder =>
     .empty()
     .key('us-delivery')
     .name('US Delivery')
-    .localizedDescription(
-      LocalizedString.presets
-        .empty()
-        ['en-US']('US Shipping')
-        ['en-GB']('US Shipping')
-        ['de-DE']('US Shipping')
-    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )

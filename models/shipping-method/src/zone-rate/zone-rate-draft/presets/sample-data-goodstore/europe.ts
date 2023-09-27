@@ -12,7 +12,7 @@ const europe = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReference.presets.zone().key(europeZone.key!))
     .shippingRates([
-      ShippingRateDraft.presets.sampleDataGoodStore.eur10000FreeAbove(),
+      ShippingRateDraft.presets.sampleDataGoodStore.eur10000(),
       ShippingRateDraft.presets.sampleDataGoodStore.gbp10000(),
     ]);
 
