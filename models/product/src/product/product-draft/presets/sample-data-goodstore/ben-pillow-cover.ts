@@ -10,7 +10,6 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,

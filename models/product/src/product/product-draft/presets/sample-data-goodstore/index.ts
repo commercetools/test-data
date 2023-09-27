@@ -13,6 +13,7 @@ import charcoalChair from './charcoal-chair';
 import charlieArmchair from './charlie-armchair';
 import chiantiWineGlass from './chianti-wine-glass';
 import classicBeerMug from './classic-beer-mug';
+import classicChampagneGlasses from './classic-champagne-glasses';
 
 const presets = {
   abigailLoungeChair,
@@ -30,6 +31,7 @@ const presets = {
   charlieArmchair,
   chiantiWineGlass,
   classicBeerMug,
+  classicChampagneGlasses,
 };
 
 export default presets;

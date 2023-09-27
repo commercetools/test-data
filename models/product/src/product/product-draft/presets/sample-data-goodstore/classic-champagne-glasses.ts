@@ -22,7 +22,7 @@ const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const chiantiWineGlassProductTypeDraft =
+const classicChampagneGlassesProductTypeDraft =
   ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
@@ -39,35 +39,35 @@ const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
-const chiantiWineGlass = (): TProductDraftBuilder =>
+const classicChampagneGlasses = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .key('chianti-wine-glass')
+    .key('classic-champagne-glasses')
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Chianti Wine Glass')
-        ['de-DE']('Chianti Weinglas')
-        ['en-US']('Chianti Wine Glass')
+        ['en-GB']('Classic Champagne Glasses')
+        ['de-DE']('Klassische Champagnergläser')
+        ['en-US']('Classic Champagne Glasses')
     )
     .slug(
       LocalizedString.presets
         .empty()
-        ['en-GB']('chianti-wine-glass')
-        ['de-DE']('chianti-weinglas')
-        ['en-US']('chianti-wine-glass')
+        ['en-GB']('classic-champagne-glasses')
+        ['de-DE']('klassische-champagnerglser')
+        ['en-US']('classic-champagne-glasses')
     )
     .productType(
       KeyReference.presets
         .productType()
-        .key(chiantiWineGlassProductTypeDraft.key!)
+        .key(classicChampagneGlassesProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodStore.chiantiWineGlass01()
+      ProductVariantDraft.presets.sampleDataGoodStore.classicChampagneGlasses01()
     )
     .categories([
       KeyReference.presets.category().key(glasswareDraft.key!),
@@ -75,4 +75,4 @@ const chiantiWineGlass = (): TProductDraftBuilder =>
       KeyReference.presets.category().key(kitchenDraft.key!),
     ]);
 
-export default chiantiWineGlass;
+export default classicChampagneGlasses;
