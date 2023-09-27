@@ -15,27 +15,67 @@ import { getProductTypes } from './ctp/product-types';
 const resolveMappedType = (attributeType: AttributeType) => {
   let type;
   let value;
+  let additionalImports: Array<string> = [];
   switch (attributeType.name) {
     case 'boolean':
       type = 'AttributeBooleanTypeDraft';
-      value = "name('boolean')";
       break;
     case 'text':
       type = 'AttributeTextTypeDraft';
       value = "name('text')";
       break;
-    // case 'ltext':
-    //   type = 'AttributeLocalizedTextTypeDraft';
-    //   value = "name('ltext')";
-    //   break;
+    case 'ltext':
+      type = 'AttributeLocalizableTextType';
+      break;
     case 'lenum':
-      type = 'AttributeLocalizedEnumValue';
+      type = 'AttributeLocalizedEnumTypeDraft';
+      additionalImports.push('AttributeLocalizedEnumValueDraft');
       value =
-        "name('lenum').values(" + JSON.stringify(attributeType.values) + ')';
+        'values([' +
+        attributeType.values.map((entry) => {
+          return (
+            "AttributeLocalizedEnumValueDraft.random().key('" +
+            entry.key +
+            "').label(" +
+            formatLocalizedString(entry.label) +
+            ')'
+          );
+        }) +
+        '])';
       break;
     case 'set':
       type = 'AttributeSetTypeDraft';
-      value = 'elementType(' + JSON.stringify(attributeType.elementType) + ')';
+      value = 'elementType(';
+      switch (attributeType.elementType.name) {
+        case 'reference':
+          additionalImports.push('AttributeReferenceTypeDraft');
+          value +=
+            'AttributeReferenceTypeDraft.random().referenceTypeId(attributeReferenceTypeId.';
+          switch (attributeType.elementType.referenceTypeId) {
+            case 'product':
+              value += 'Product';
+              break;
+            default:
+              console.log(
+                'Define mapper for attribute set reference type ' +
+                  attributeType.elementType.referenceTypeId
+              );
+          }
+          value += ')';
+          break;
+        case 'ltext':
+          additionalImports.push('AttributeLocalizableTextType');
+          value += 'AttributeLocalizableTextType.random()';
+          break;
+        default:
+          console.log(
+            'Define mapper for attribute set type ' +
+              attributeType.elementType.name,
+            attributeType
+          );
+      }
+      value += ')';
+
       break;
     default:
       console.log(
@@ -43,75 +83,70 @@ const resolveMappedType = (attributeType: AttributeType) => {
         attributeType
       );
   }
-  return { type, value };
+  return { type, value, additionalImports };
 };
 const addAttribute = (attributeType: AttributeType) => {
   const { type, value } = resolveMappedType(attributeType);
   if (type === undefined) {
     return '';
   }
-  return (
-    '        .type(\n' +
-    '          ' +
-    type +
-    '.random().' +
-    value +
-    '\n' +
-    '        )\n'
-  );
+  return `.type(${type}.random()${
+    value !== undefined && value.length > 0 ? '.' + value : ''
+  })`;
 };
 
 const resolveAttributeImports = (attributes?: AttributeDefinition[]) => {
-  return [
+  const result: Array<string> = [
     'AttributeDefinitionDraft',
     ...new Set(
       attributes
         ?.map((attribute) => {
-          const { type } = resolveMappedType(attribute.type);
+          const { type, additionalImports } = resolveMappedType(attribute.type);
+          if (additionalImports) {
+            return [type, ...additionalImports];
+          }
           return type;
         })
+        .flat()
         .filter(notEmpty)
     ),
   ];
+  // if (result.indexOf('AttributeLocalizedEnumTypeDraft') >= 0) {
+  //   result.push('AttributeLocalizedEnumValueDraft');
+  // }
+  return result.sort((a, b) => a.localeCompare(b));
 };
 
 const productTypes = async () => {
   const types = await getProductTypes();
   console.log('Found ' + types.length + ' product types');
 
-  const header =
-    "import { LocalizedString } from '@commercetools-test-data/commons';\n" +
-    'import {\n' +
-    '  AttributeDefinitionDraft,\n' +
-    '  AttributeEnumTypeDraft,\n' +
-    '  AttributeBooleanTypeDraft,\n' +
-    '  AttributeTextTypeDraft,\n' +
-    '  AttributeLocalizedTextTypeDraft,\n' +
-    "} from '../../../../index';\n" +
-    "import type { TProductTypeDraftBuilder } from '../../../types';\n" +
-    "import * as ProductTypeDraft from '../../index';\n" +
-    '\n';
-
   const productTypesMapping: Array<IndexFile> = [];
 
   for (const type of types) {
     const attributes = resolveAttributeImports(type.attributes);
     let content =
-      "import { LocalizedString } from '@commercetools-test-data/commons';\n";
+      "import { LocalizedString } from '@commercetools-test-data/commons';" +
+      'import { attributeConstraints,' +
+      '  inputHints,' +
+      "} from '../../../../attribute-definition/constants';";
+    if (attributes.indexOf('AttributeReferenceTypeDraft') >= 0) {
+      content +=
+        "import { attributeReferenceTypeId } from '../../../../attribute-reference-type/constants';";
+    }
     if (attributes && attributes.length > 0) {
-      content += 'import {\n';
+      content += 'import {';
       content += attributes
         .map(
           (item) => `  ${item},
 `
         )
         .join('');
-      content += "} from '../../../../index';\n";
+      content += "} from '../../../../index';";
     }
     content +=
-      "import type { TProductTypeDraftBuilder } from '../../../types';\n" +
-      "import * as ProductTypeDraft from '../../index';\n" +
-      '\n';
+      "import type { TProductTypeDraftBuilder } from '../../../types';" +
+      "import * as ProductTypeDraft from '../../index';\n\n";
     if (!type.key) {
       console.log('No key available for ' + type.name);
       continue;
@@ -120,20 +155,18 @@ const productTypes = async () => {
     content +=
       'const ' +
       functionName +
-      ' = (): TProductTypeDraftBuilder =>\n' +
-      '  ProductTypeDraft.presets\n' +
-      '    .empty()\n';
+      ' = (): TProductTypeDraftBuilder =>' +
+      '  ProductTypeDraft.presets' +
+      '    .empty()';
     content = addEntry('key', content, type.key, '    ');
     content = addEntry('name', content, type.name, '    ');
     content = addEntry('description', content, type.description, '    ');
     content += '    .attributes([';
 
     type.attributes?.forEach((attribute) => {
-      content +=
-        '\n' +
-        '      AttributeDefinitionDraft.presets\n' +
-        '        .empty()\n';
+      content += 'AttributeDefinitionDraft.presets.empty()';
       content = addEntry('name', content, attribute.name, '        ');
+      content += addAttribute(attribute.type);
       content = addEntry(
         'label',
         content,
@@ -148,27 +181,27 @@ const productTypes = async () => {
         '        ',
         false
       );
-      content += '        .isRequired(' + attribute.isRequired + ')\n';
-      content += addAttribute(attribute.type);
+      content += '        .isRequired(' + attribute.isRequired + ')';
       content = addEntry(
         'attributeConstraint',
         content,
-        attribute.attributeConstraint.toString(),
-        '        '
+        'attributeConstraints.' + attribute.attributeConstraint.toString(),
+        '',
+        false
       );
-      content += '        .isSearchable(' + attribute.isSearchable + ')\n';
+      content += '        .isSearchable(' + attribute.isSearchable + ')';
       content = addEntry(
         'inputHint',
         content,
-        attribute.inputHint.toString(),
-        '        '
+        'inputHints.' + attribute.inputHint,
+        '',
+        false
       );
 
-      content += ',\n' + '      ';
+      content += ',\n\n';
     });
 
-    content +=
-      '\n' + '    ]);\n' + '\n' + 'export default ' + functionName + ';';
+    content += '' + ']);\n\nexport default ' + functionName + ';';
 
     await writeFile(
       content,

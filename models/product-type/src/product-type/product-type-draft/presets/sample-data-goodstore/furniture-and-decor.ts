@@ -4,10 +4,10 @@ import {
   inputHints,
 } from '../../../../attribute-definition/constants';
 import {
-  AttributeDefinitionDraft,
   AttributeBooleanTypeDraft,
-  AttributeLocalizedEnumTypeDraft,
+  AttributeDefinitionDraft,
   AttributeLocalizableTextType,
+  AttributeLocalizedEnumTypeDraft,
   AttributeLocalizedEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
@@ -30,8 +30,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Product Specifications')
-            ['en-US']('Product Specifications')
             ['de-DE']('Produktspezifikationen')
+            ['en-US']('Product Specifications')
         )
         .inputTip(
           LocalizedString.presets
@@ -56,8 +56,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Color')
-            ['en-US']('Color')
             ['de-DE']('Farbe')
+            ['en-US']('Color')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -72,8 +72,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Finish')
+            ['de-DE'](' Fertig')
             ['en-US']('Finish')
-            ['de-DE']('Fertig')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -88,8 +88,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Color Label')
-            ['en-US']('Color Label')
             ['de-DE']('Farbetikett')
+            ['en-US']('Color Label')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -104,8 +104,8 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Finish Label')
+            ['de-DE'](' Fertiges Etikett')
             ['en-US']('Finish Label')
-            ['de-DE']('Fertiges Etikett')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
@@ -120,11 +120,10 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('New Arrival')
-            ['en-US']('New Arrival')
             ['de-DE']('Neuankömmling')
+            ['en-US']('New Arrival')
         )
         .isRequired(false)
-        .type(AttributeBooleanTypeDraft.random())
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(false)
         .inputHint(inputHints.SingleLine),
@@ -134,12 +133,17 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('size')
         .type(AttributeLocalizableTextType.random())
         .label(
-          LocalizedString.presets.empty()['en-GB']('Size')['en-US']('Size')
+          LocalizedString.presets
+            .empty()
+            ['en-GB']('Size')
+            ['de-DE']('Größe')
+            ['en-US']('Size')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
             ['en-GB']('size set as a string value')
+            ['de-DE']('Größe als String-Wert')
             ['en-US']('size set as a string value')
         )
         .isRequired(false)
@@ -155,6 +159,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
           LocalizedString.presets
             .empty()
             ['en-GB']('Product Description')
+            ['de-DE']('Productbeschreibung')
             ['en-US']('Product Description')
         )
         .inputTip(
@@ -162,6 +167,9 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             .empty()
             ['en-GB'](
               'Product description, made a custom attribute so product description is not used for search results.'
+            )
+            ['de-DE'](
+              'Produktbeschreibung, als custom attribute, so dass die Produktbeschreibung nicht für Suchergebnisse verwendet wird.'
             )
             ['en-US'](
               'Product description, made a custom attribute so product description is not used for search results.'
@@ -175,10 +183,150 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color-filter')
+        .type(
+          AttributeLocalizedEnumTypeDraft.random().values([
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#FFF')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('White')
+                  ['de-DE']('Weiss')
+                  ['en-US']('White')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#000')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Black')
+                  ['de-DE']('Schwarz')
+                  ['en-US']('Black')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#808080')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Gray')
+                  ['de-DE']('Grau')
+                  ['en-US']('Gray')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#0000FF')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Blue')
+                  ['de-DE']('Blau')
+                  ['en-US']('Blue')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#00FF00')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Green')
+                  ['de-DE']('Grün')
+                  ['en-US']('Green')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#A020F0')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Purple')
+                  ['de-DE']('Lila')
+                  ['en-US']('Purple')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#C4A484')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Light Brown')
+                  ['de-DE']('Hellbraun')
+                  ['en-US']('Light Brown')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#F5F5DC')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Beige')
+                  ['de-DE']('Beige')
+                  ['en-US']('Beige')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#D2B48C')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Tan')
+                  ['de-DE']('Bräunen')
+                  ['en-US']('Tan')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#FFFFF0')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Ivory')
+                  ['de-DE']('Elfenbein')
+                  ['en-US']('Ivory')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#FFD700')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Gold')
+                  ['de-DE']('Gold')
+                  ['en-US']('Gold')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#964B00')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Dark Brown')
+                  ['de-DE']('Dunkelbraun')
+                  ['en-US']('Dark Brown')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#C0C0C0')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Silver')
+                  ['de-DE']('Silber')
+                  ['en-US']('Silver')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#FFC0CB')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Pink')
+                  ['de-DE']('Rosa')
+                  ['en-US']('Pink')
+              ),
+            AttributeLocalizedEnumValueDraft.random()
+              .key('#FFA500')
+              .label(
+                LocalizedString.presets
+                  .empty()
+                  ['en-GB']('Orange')
+                  ['de-DE']('Orange')
+                  ['en-US']('Orange')
+              ),
+          ])
+        )
         .label(
           LocalizedString.presets
             .empty()
             ['en-GB']('Color Filter')
+            ['de-DE']('Farbfilter')
             ['en-US']('Color Filter')
         )
         .inputTip(
@@ -187,150 +335,14 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             ['en-GB'](
               'used to set the colors and labels displayed in the color filter on PLP'
             )
+            ['de-DE'](
+              'zum Einstellen der Farben und Beschriftungen, die im Farbfilter von PLP angezeigt werden'
+            )
             ['en-US'](
               'used to set the colors and labels displayed in the color filter on PLP'
             )
         )
         .isRequired(false)
-        .type(
-          AttributeLocalizedEnumTypeDraft.random().values([
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#FFF')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Weiss')
-                  ['en-GB']('White')
-                  ['en-US']('White')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#000')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Schwarz')
-                  ['en-GB']('Black')
-                  ['en-US']('Black')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#808080')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Grau')
-                  ['en-GB']('Gray')
-                  ['en-US']('Gray')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#0000FF')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Blau')
-                  ['en-GB']('Blue')
-                  ['en-US']('Blue')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#00FF00')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Grün')
-                  ['en-GB']('Green')
-                  ['en-US']('Green')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#A020F0')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Lila')
-                  ['en-GB']('Purple')
-                  ['en-US']('Purple')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#C4A484')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Hellbraun')
-                  ['en-GB']('Light Brown')
-                  ['en-US']('Light Brown')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#F5F5DC')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Beige')
-                  ['en-GB']('Beige')
-                  ['en-US']('Beige')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#D2B48C')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Bräunen')
-                  ['en-GB']('Tan')
-                  ['en-US']('Tan')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#FFFFF0')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Elfenbein')
-                  ['en-GB']('Ivory')
-                  ['en-US']('Ivory')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#FFD700')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Gold')
-                  ['en-GB']('Gold')
-                  ['en-US']('Gold')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#964B00')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Dunkelbraun')
-                  ['en-GB']('Dark Brown')
-                  ['en-US']('Dark Brown')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#C0C0C0')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Silber')
-                  ['en-GB']('Silver')
-                  ['en-US']('Silver')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#FFC0CB')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Rosa')
-                  ['en-GB']('Pink')
-                  ['en-US']('Pink')
-              ),
-            AttributeLocalizedEnumValueDraft.random()
-              .key('#FFA500')
-              .label(
-                LocalizedString.presets
-                  .empty()
-                  ['de-DE']('Orange')
-                  ['en-GB']('Orange')
-                  ['en-US']('Orange')
-              ),
-          ])
-        )
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
         .inputHint(inputHints.SingleLine),
