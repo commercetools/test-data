@@ -18,7 +18,7 @@ import { ProductDraft } from '../../../';
 import { ProductVariantDraft } from '../../../../product-variant';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,19 +27,19 @@ const abigailLoungeChairProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .livingRoomFurniture()
   .build<TCategoryDraft>();
 
-const furnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .furniture()
   .build<TCategoryDraft>();
 
-const armchairsDraft = CategoryDraft.presets.sampleDataGoodstore
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
   .armchairs()
   .build<TCategoryDraft>();
 
-const newArrivalsDraft = CategoryDraft.presets.sampleDataGoodstore
+const newArrivalsDraft = CategoryDraft.presets.sampleDataGoodStore
   .newArrivals()
   .build<TCategoryDraft>();
 
@@ -68,7 +68,7 @@ const abigailLoungeChair = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.abigailLoungeChair01()
