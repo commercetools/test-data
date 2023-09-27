@@ -1,9 +1,8 @@
+import { KeyReference } from '@commercetools-test-data/commons';
 import {
-  KeyReference,
-  LocalizedString,
-} from '@commercetools-test-data/commons';
-import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
-import type { TTaxCategoryDraft } from '@commercetools-test-data/tax-category';
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
 import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
 import * as ShippingMethodDraft from '../../index';
