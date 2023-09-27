@@ -12,7 +12,7 @@ const sebastianMuller = (): TCustomerDraftBuilder =>
     .firstName('Sebastian')
     .lastName('Müller')
     .addresses([
-      AddressDraft.presets.sampleDataGoodstore.sebastianMullerAddress(),
+      AddressDraft.presets.sampleDataGoodStore.sebastianMullerAddress(),
     ])
     .authenticationMode(authenticationMode.Password);
 
