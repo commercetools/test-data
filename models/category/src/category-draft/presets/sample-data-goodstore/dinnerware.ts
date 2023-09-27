@@ -4,6 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
+
 import kitchen from './kitchen';
 
 const kitchenDraft = kitchen().build<TCategoryDraft>();
@@ -13,8 +14,7 @@ const dinnerware = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Serving and Tableware')
-        ['en-US']('Dinnerware')
+        ['en-GB']('Serving & Tableware')
         ['de-DE']('Geschirr')
         ['en-US']('Dinnerware')
     )
@@ -22,7 +22,6 @@ const dinnerware = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('serving-and-tableware')
-        ['en-US']('serving-and-tableware')
         ['de-DE']('dinnerware')
         ['en-US']('serving-and-tableware')
     )

@@ -4,94 +4,74 @@ import tables from './tables';
 describe(`with tables preset`, () => {
   it('should create a tables category type draft', () => {
     const tablesPreset = tables().build<TCategoryDraft>();
-    expect(tablesPreset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "tables",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": {
-          "de": undefined,
-          "de-DE": "Tische",
-          "en": undefined,
-          "en-GB": "Tables",
-          "en-US": "Tables",
-          "fr": undefined,
-        },
-        "orderHint": ".25",
-        "parent": {
-          "key": "living-room-furniture",
-          "typeId": "category",
-        },
-        "slug": {
-          "de": undefined,
-          "de-DE": "coffee-tables",
-          "en": undefined,
-          "en-GB": "living-room-tables",
-          "en-US": "living-room-tables",
-          "fr": undefined,
-        },
-      }
-    `);
+    expect(tablesPreset).toMatchObject(
+      JSON.parse(`{
+  "key": "tables",
+  "name": {
+    "en-GB": "Tables",
+    "de-DE": "Tische",
+    "en-US": "Tables"
+  },
+  "orderHint": ".25",
+  "parent": {
+    "key": "living-room-furniture",
+    "typeId": "category"
+  },
+  "slug": {
+    "en-GB": "living-room-tables",
+    "de-DE": "coffee-tables",
+    "en-US": "living-room-tables"
+  }
+}`)
+    );
   });
 
   it('should create a tables category type draft when built for Graphql', () => {
     const tablesPresetGraphql = tables().buildGraphql<TCategoryDraftGraphql>();
-    expect(tablesPresetGraphql).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "tables",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "Tables",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Tables",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "Tische",
-          },
-        ],
-        "orderHint": ".25",
-        "parent": {
-          "__typename": "Reference",
-          "key": "living-room-furniture",
-          "typeId": "category",
-        },
-        "slug": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "living-room-tables",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "living-room-tables",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "coffee-tables",
-          },
-        ],
-      }
-    `);
+    expect(tablesPresetGraphql).toMatchObject(
+      JSON.parse(`{
+  "key": "tables",
+  "name": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "Tables"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "Tische"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Tables"
+    }
+  ],
+  "orderHint": ".25",
+  "parent": {
+    "__typename": "Reference",
+    "key": "living-room-furniture",
+    "typeId": "category"
+  },
+  "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "living-room-tables"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "coffee-tables"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "living-room-tables"
+    }
+  ]
+}`)
+    );
   });
 });

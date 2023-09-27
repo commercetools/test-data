@@ -4,95 +4,75 @@ import servingPlatters from './serving-platters';
 describe(`with servingPlatters preset`, () => {
   it('should create a servingPlatters category type draft', () => {
     const servingPlattersPreset = servingPlatters().build<TCategoryDraft>();
-    expect(servingPlattersPreset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "serving-platters",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": {
-          "de": undefined,
-          "de-DE": "Servierplatten",
-          "en": undefined,
-          "en-GB": "Serving Platters",
-          "en-US": "Serving Platters",
-          "fr": undefined,
-        },
-        "orderHint": ".0004",
-        "parent": {
-          "key": "serveware",
-          "typeId": "category",
-        },
-        "slug": {
-          "de": undefined,
-          "de-DE": "serving-platters",
-          "en": undefined,
-          "en-GB": "serving-platters",
-          "en-US": "serving-platters",
-          "fr": undefined,
-        },
-      }
-    `);
+    expect(servingPlattersPreset).toMatchObject(
+      JSON.parse(`{
+  "key": "serving-platters",
+  "name": {
+    "en-GB": "Serving Platters",
+    "de-DE": "Servierplatten",
+    "en-US": "Serving Platters"
+  },
+  "orderHint": ".0004",
+  "parent": {
+    "key": "serveware",
+    "typeId": "category"
+  },
+  "slug": {
+    "en-GB": "serving-platters",
+    "de-DE": "serving-platters",
+    "en-US": "serving-platters"
+  }
+}`)
+    );
   });
 
   it('should create a servingPlatters category type draft when built for Graphql', () => {
     const servingPlattersPresetGraphql =
       servingPlatters().buildGraphql<TCategoryDraftGraphql>();
-    expect(servingPlattersPresetGraphql).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "serving-platters",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "Serving Platters",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Serving Platters",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "Servierplatten",
-          },
-        ],
-        "orderHint": ".0004",
-        "parent": {
-          "__typename": "Reference",
-          "key": "serveware",
-          "typeId": "category",
-        },
-        "slug": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "serving-platters",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "serving-platters",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "serving-platters",
-          },
-        ],
-      }
-    `);
+    expect(servingPlattersPresetGraphql).toMatchObject(
+      JSON.parse(`{
+  "key": "serving-platters",
+  "name": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "Serving Platters"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "Servierplatten"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Serving Platters"
+    }
+  ],
+  "orderHint": ".0004",
+  "parent": {
+    "__typename": "Reference",
+    "key": "serveware",
+    "typeId": "category"
+  },
+  "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "serving-platters"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "serving-platters"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "serving-platters"
+    }
+  ]
+}`)
+    );
   });
 });

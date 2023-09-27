@@ -4,6 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
+
 import homeDecor from './home-decor';
 
 const homeDecorDraft = homeDecor().build<TCategoryDraft>();
@@ -14,15 +15,15 @@ const bedding = (): TCategoryDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Bedding')
-        ['en-US']('Bedding')
         ['de-DE']('Bettwäsche')
+        ['en-US']('Bedding')
     )
     .slug(
       LocalizedString.presets
         .empty()
         ['en-GB']('bedding')
+        ['de-DE']('bettwsche')
         ['en-US']('bedding')
-        ['de-DE']('bettwsche') // typo exists in MC data
     )
     .key('bedding')
     .orderHint('.5')

@@ -4,94 +4,75 @@ import bakeware from './bakeware';
 describe(`with bakeware preset`, () => {
   it('should create a bakeware category type draft', () => {
     const bakewarePreset = bakeware().build<TCategoryDraft>();
-    expect(bakewarePreset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "bakeware",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": {
-          "de": undefined,
-          "de-DE": "Backutensilien",
-          "en": undefined,
-          "en-GB": "Bakeware",
-          "en-US": "Bakeware",
-          "fr": undefined,
-        },
-        "orderHint": ".42",
-        "parent": {
-          "key": "dinnerware",
-          "typeId": "category",
-        },
-        "slug": {
-          "de": undefined,
-          "de-DE": "bakeware",
-          "en": undefined,
-          "en-GB": "bakeware",
-          "en-US": "bakeware",
-          "fr": undefined,
-        },
-      }
-    `);
+    expect(bakewarePreset).toMatchObject(
+      JSON.parse(`{
+  "key": "bakeware",
+  "name": {
+    "en-GB": "Bakeware",
+    "de-DE": "Backutensilien",
+    "en-US": "Bakeware"
+  },
+  "orderHint": ".42",
+  "parent": {
+    "key": "dinnerware",
+    "typeId": "category"
+  },
+  "slug": {
+    "en-GB": "bakeware",
+    "de-DE": "bakeware",
+    "en-US": "bakeware"
+  }
+}`)
+    );
   });
 
   it('should create a bakeware category type draft when built for Graphql', () => {
-    const bakewarePreset = bakeware().buildGraphql<TCategoryDraftGraphql>();
-    expect(bakewarePreset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "bakeware",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "Bakeware",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bakeware",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "Backutensilien",
-          },
-        ],
-        "orderHint": ".42",
-        "parent": {
-          "__typename": "Reference",
-          "key": "dinnerware",
-          "typeId": "category",
-        },
-        "slug": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "bakeware",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "bakeware",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "bakeware",
-          },
-        ],
-      }
-    `);
+    const bakewarePresetGraphql =
+      bakeware().buildGraphql<TCategoryDraftGraphql>();
+    expect(bakewarePresetGraphql).toMatchObject(
+      JSON.parse(`{
+  "key": "bakeware",
+  "name": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "Bakeware"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "Backutensilien"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bakeware"
+    }
+  ],
+  "orderHint": ".42",
+  "parent": {
+    "__typename": "Reference",
+    "key": "dinnerware",
+    "typeId": "category"
+  },
+  "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "bakeware"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "bakeware"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bakeware"
+    }
+  ]
+}`)
+    );
   });
 });

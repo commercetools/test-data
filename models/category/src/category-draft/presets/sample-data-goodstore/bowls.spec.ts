@@ -4,94 +4,74 @@ import bowls from './bowls';
 describe(`with bowls preset`, () => {
   it('should create a bowls category type draft', () => {
     const bowlsPreset = bowls().build<TCategoryDraft>();
-    expect(bowlsPreset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "bowls",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": {
-          "de": undefined,
-          "de-DE": "Schalen",
-          "en": undefined,
-          "en-GB": "Bowls",
-          "en-US": "Bowls",
-          "fr": undefined,
-        },
-        "orderHint": ".56",
-        "parent": {
-          "key": "dinnerware",
-          "typeId": "category",
-        },
-        "slug": {
-          "de": undefined,
-          "de-DE": "bowls",
-          "en": undefined,
-          "en-GB": "bowls",
-          "en-US": "bowls",
-          "fr": undefined,
-        },
-      }
-    `);
+    expect(bowlsPreset).toMatchObject(
+      JSON.parse(`{
+  "key": "bowls",
+  "name": {
+    "en-GB": "Bowls",
+    "de-DE": "Schalen",
+    "en-US": "Bowls"
+  },
+  "orderHint": ".56",
+  "parent": {
+    "key": "dinnerware",
+    "typeId": "category"
+  },
+  "slug": {
+    "en-GB": "bowls",
+    "de-DE": "bowls",
+    "en-US": "bowls"
+  }
+}`)
+    );
   });
 
   it('should create a bowls category type draft when built for Graphql', () => {
     const bowlsPresetGraphql = bowls().buildGraphql<TCategoryDraftGraphql>();
-    expect(bowlsPresetGraphql).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "custom": undefined,
-        "description": undefined,
-        "externalId": undefined,
-        "key": "bowls",
-        "metaDescription": undefined,
-        "metaKeywords": undefined,
-        "metaTitle": undefined,
-        "name": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "Bowls",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bowls",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "Schalen",
-          },
-        ],
-        "orderHint": ".56",
-        "parent": {
-          "__typename": "Reference",
-          "key": "dinnerware",
-          "typeId": "category",
-        },
-        "slug": [
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-GB",
-            "value": "bowls",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "bowls",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "de-DE",
-            "value": "bowls",
-          },
-        ],
-      }
-    `);
+    expect(bowlsPresetGraphql).toMatchObject(
+      JSON.parse(`{
+  "key": "bowls",
+  "name": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "Bowls"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "Schalen"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bowls"
+    }
+  ],
+  "orderHint": ".56",
+  "parent": {
+    "__typename": "Reference",
+    "key": "dinnerware",
+    "typeId": "category"
+  },
+  "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-GB",
+      "value": "bowls"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "de-DE",
+      "value": "bowls"
+    },
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bowls"
+    }
+  ]
+}`)
+    );
   });
 });
