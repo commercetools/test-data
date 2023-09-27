@@ -4,42 +4,42 @@ import * as TaxCategoryDraft from '../../index';
 const standardTaxCategory = () =>
   TaxCategoryDraft.presets
     .empty()
-    .key('standard-tax')
     .name('Standard Tax Category')
+    .key('standard-tax-category')
     .description('Standard Tax Category')
     .rates([
       TaxRateDraft.presets
         .empty()
-        .name('Standard VAT for Germany')
-        .key('vat-standard-de')
-        .amount(0.19)
+        .name('Standard VAT for UK')
+        .amount(0.2)
         .includedInPrice(true)
-        .country('DE')
+        .country('GB')
+        .key('vat-standard-uk')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
-        .name('Standard VAT for UK')
-        .key('vat-standard-uk')
-        .amount(0.2)
+        .name('Standard VAT for Germany')
+        .amount(0.19)
         .includedInPrice(true)
-        .country('UK')
+        .country('DE')
+        .key('vat-standard-de')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
         .name('State Tax: North Carolina')
-        .key('nc-state-tax')
         .amount(0.0475)
         .includedInPrice(false)
         .country('US')
+        .key('nc-state-tax')
         .state('North Carolina')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
         .name('State Tax: New York')
-        .key('ny-state-tax')
         .amount(0.04)
         .includedInPrice(false)
         .country('US')
+        .key('ny-state-tax')
         .state('New York')
         .subRates([]),
     ]);

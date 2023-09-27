@@ -14,8 +14,7 @@ const taxes = async () => {
 
   const header =
     "import * as TaxRateDraft from '../../../../tax-rate/tax-rate-draft';\n" +
-    "import * as TaxCategoryDraft from '../../index';" +
-    '\n';
+    "import * as TaxCategoryDraft from '../../index';\n\n";
 
   const categoryMapping: Array<IndexFile> = [];
 
@@ -30,23 +29,22 @@ const taxes = async () => {
       '  = () =>\n' +
       '  TaxCategoryDraft.presets\n' +
       '    .empty()\n';
-    content = addEntry('name', content, taxCategory.name, '    ');
-    content = addEntry('key', content, taxCategory.key, '    ');
-    content = addEntry('description', content, taxCategory.description, '    ');
+    content = addEntry('name', content, taxCategory.name);
+    content = addEntry('key', content, taxCategory.key);
+    content = addEntry('description', content, taxCategory.description);
 
     if (taxCategory.rates) {
       content += '    .rates([\n';
       content += taxCategory.rates
         .map((rate) => {
-          let result = `      TaxRateDraft.presets
+          let result = `TaxRateDraft.presets
         .empty()
         .name('${rate.name}')
         .amount(${rate.amount})
         .includedInPrice(${rate.includedInPrice})
         .country('${rate.country}')`;
-          if (rate.key) {
-            result += `      .key('${rate.key}')`;
-          }
+          result = addEntry('key', result, rate.key);
+          result = addEntry('state', result, rate.state);
           result += `      .subRates([]),`;
           return result;
         })

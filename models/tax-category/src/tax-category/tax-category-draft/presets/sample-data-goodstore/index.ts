@@ -1,5 +1,6 @@
 import standardTaxCategory from './standard-tax-category';
-
-const presets = { standardTaxCategory };
+const presets = {
+  standardTaxCategory,
+};
 
 export default presets;
