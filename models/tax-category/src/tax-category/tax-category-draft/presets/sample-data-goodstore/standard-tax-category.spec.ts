@@ -3,105 +3,101 @@ import type {
   TTaxCategoryDraftGraphql,
 } from '../../../types';
 import standardTaxCategory from './standard-tax-category';
-
-describe('with a tax rate preset `standard tax category`', () => {
-  it('should return a tax category with name `Standard Tax Category` and 6 tax rates', () => {
-    const taxCategory = standardTaxCategory().build<TTaxCategoryDraft>();
-
-    expect(taxCategory).toMatchInlineSnapshot(`
-      {
-        "description": "Standard Tax Category",
-        "key": "standard-tax",
-        "name": "Standard Tax Category",
-        "rates": [
-          {
-            "amount": 0.19,
-            "country": "DE",
-            "includedInPrice": true,
-            "key": "vat-standard-de",
-            "name": "Standard VAT for Germany",
-            "state": undefined,
-            "subRates": [],
-          },
-          {
-            "amount": 0.2,
-            "country": "UK",
-            "includedInPrice": true,
-            "key": "vat-standard-uk",
-            "name": "Standard VAT for UK",
-            "state": undefined,
-            "subRates": [],
-          },
-          {
-            "amount": 0.0475,
-            "country": "US",
-            "includedInPrice": false,
-            "key": "nc-state-tax",
-            "name": "State Tax: North Carolina",
-            "state": "North Carolina",
-            "subRates": [],
-          },
-          {
-            "amount": 0.04,
-            "country": "US",
-            "includedInPrice": false,
-            "key": "ny-state-tax",
-            "name": "State Tax: New York",
-            "state": "New York",
-            "subRates": [],
-          },
-        ],
-      }
-    `);
+describe(`with standardTaxCategory preset`, () => {
+  it('should create a standardTaxCategory taxcategory type draft', () => {
+    const standardTaxCategoryPreset =
+      standardTaxCategory().build<TTaxCategoryDraft>();
+    expect(standardTaxCategoryPreset).toMatchObject(
+      JSON.parse(`{
+  "description": "Standard Tax Category",
+  "key": "standard-tax-category",
+  "name": "Standard Tax Category",
+  "rates": [
+    {
+      "name": "Standard VAT for UK",
+      "amount": 0.2,
+      "includedInPrice": true,
+      "country": "GB",
+      "key": "vat-standard-uk",
+      "subRates": []
+    },
+    {
+      "name": "Standard VAT for Germany",
+      "amount": 0.19,
+      "includedInPrice": true,
+      "country": "DE",
+      "key": "vat-standard-de",
+      "subRates": []
+    },
+    {
+      "name": "State Tax: North Carolina",
+      "amount": 0.0475,
+      "includedInPrice": false,
+      "country": "US",
+      "state": "North Carolina",
+      "key": "nc-state-tax",
+      "subRates": []
+    },
+    {
+      "name": "State Tax: New York",
+      "amount": 0.04,
+      "includedInPrice": false,
+      "country": "US",
+      "state": "New York",
+      "key": "ny-state-tax",
+      "subRates": []
+    }
+  ]
+}`)
+    );
   });
 
-  it('should return a tax category with name `Standard Tax Category` when built for graphql', () => {
-    const taxCategoryGraphql =
+  it('should create a standardTaxCategory tax category type draft when built for Graphql', () => {
+    const standardTaxCategoryPresetGraphql =
       standardTaxCategory().buildGraphql<TTaxCategoryDraftGraphql>();
-    expect(taxCategoryGraphql).toMatchInlineSnapshot(`
-      {
-        "description": "Standard Tax Category",
-        "key": "standard-tax",
-        "name": "Standard Tax Category",
-        "rates": [
-          {
-            "amount": 0.19,
-            "country": "DE",
-            "includedInPrice": true,
-            "key": "vat-standard-de",
-            "name": "Standard VAT for Germany",
-            "state": undefined,
-            "subRates": [],
-          },
-          {
-            "amount": 0.2,
-            "country": "UK",
-            "includedInPrice": true,
-            "key": "vat-standard-uk",
-            "name": "Standard VAT for UK",
-            "state": undefined,
-            "subRates": [],
-          },
-          {
-            "amount": 0.0475,
-            "country": "US",
-            "includedInPrice": false,
-            "key": "nc-state-tax",
-            "name": "State Tax: North Carolina",
-            "state": "North Carolina",
-            "subRates": [],
-          },
-          {
-            "amount": 0.04,
-            "country": "US",
-            "includedInPrice": false,
-            "key": "ny-state-tax",
-            "name": "State Tax: New York",
-            "state": "New York",
-            "subRates": [],
-          },
-        ],
-      }
-    `);
+    expect(standardTaxCategoryPresetGraphql).toMatchObject(
+      JSON.parse(`{
+  "description": "Standard Tax Category",
+  "key": "standard-tax-category",
+  "name": "Standard Tax Category",
+  "rates": [
+    {
+      "name": "Standard VAT for UK",
+      "amount": 0.2,
+      "includedInPrice": true,
+      "country": "GB",
+      "key": "vat-standard-uk",
+      "subRates": []
+    },
+    {
+      "name": "Standard VAT for Germany",
+      "amount": 0.19,
+      "includedInPrice": true,
+      "country": "DE",
+      "key": "vat-standard-de",
+      "subRates": []
+    },
+    {
+      "name": "State Tax: North Carolina",
+      "amount": 0.0475,
+      "includedInPrice": false,
+      "country": "US",
+      "state": "North Carolina",
+      "key": "nc-state-tax",
+      "subRates": []
+    },
+    {
+      "name": "State Tax: New York",
+      "amount": 0.04,
+      "includedInPrice": false,
+      "country": "US",
+      "state": "New York",
+      "key": "ny-state-tax",
+      "subRates": []
+    }
+  ]
+}
+`)
+    );
   });
 });

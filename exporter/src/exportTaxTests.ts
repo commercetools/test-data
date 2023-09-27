@@ -11,6 +11,7 @@ import {
   buildIndexFile,
   filterLocalizedString,
   IndexFile,
+  prettierMeJson,
   sortObj,
   writeFile,
 } from './ctp/helpers';
@@ -55,6 +56,44 @@ const getCategorySnapshot = (category: TaxCategory) => {
     '`)'
   );
 };
+export type TSubRateDraft = {
+  amount: number;
+  name: string;
+};
+export type TTaxRateDraft = {
+  amount?: number;
+  country: string;
+  includedInPrice: boolean;
+  name: string;
+  state?: string;
+  subRates?: Array<TSubRateDraft>;
+};
+export type TTaxCategoryDraft = {
+  description?: string;
+  key?: string;
+  name: string;
+  rates?: Array<TTaxRateDraft>;
+};
+
+const getTaxCategorySnapshotGraphQL = async (taxCategory: TaxCategory) => {
+  const result: TTaxCategoryDraft = {
+    name: taxCategory.name,
+    description: taxCategory.description,
+    key: taxCategory.key,
+    rates: taxCategory.rates.map((value): TTaxRateDraft => {
+      const { id, ...rest } = value;
+      return {
+        ...rest,
+      };
+    }),
+  };
+  return (
+    'JSON.parse(`' +
+    (await prettierMeJson(JSON.stringify(sortObj(result)))) +
+    '`)'
+  );
+};
+
 const taxes = async () => {
   const { results } = await getTaxes();
   console.log('Found ' + results.length + ' taxes');
@@ -80,6 +119,13 @@ import ${identifier} from './${fileName}';`;
     content += `    const ${identifier}Preset = ${identifier}().build<TTaxCategoryDraft>();\n`;
     content += `    expect(${identifier}Preset).toMatchObject(\n`;
     content += getCategorySnapshot(category);
+    content += `    );\n`;
+    content += `  });\n\n`;
+
+    content += `  it('should create a ${identifier} tax category type draft when built for Graphql', () => {\n`;
+    content += `    const ${identifier}PresetGraphql = ${identifier}().buildGraphql<TTaxCategoryDraftGraphql>();\n`;
+    content += `    expect(${identifier}PresetGraphql).toMatchObject(\n`;
+    content += await getTaxCategorySnapshotGraphQL(category);
     content += `    );\n`;
     content += `  });\n`;
     content += `});\n`;
