@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,19 +27,19 @@ const ivoryLoungeChairProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const newArrivalsDraft = CategoryDraft.presets.sampleDataGoodstore
+const newArrivalsDraft = CategoryDraft.presets.sampleDataGoodStore
   .newArrivals()
   .build<TCategoryDraft>();
 
-const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .livingRoomFurniture()
   .build<TCategoryDraft>();
 
-const furnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .furniture()
   .build<TCategoryDraft>();
 
-const armchairsDraft = CategoryDraft.presets.sampleDataGoodstore
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
   .armchairs()
   .build<TCategoryDraft>();
 
@@ -68,7 +68,7 @@ const ivoryLoungeChair = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.ivoryLoungeChair01()

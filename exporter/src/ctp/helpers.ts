@@ -42,7 +42,7 @@ export const formatLocalizedString = (name?: LocalizedString) => {
       if (!name[locale] || name[locale] === '') {
         return undefined;
       }
-      return "['" + locale + "']('" + name[locale] + "')";
+      return `['${locale}'](${JSON.stringify(name[locale])})`;
     })
     .filter(notEmpty)
     .join('');

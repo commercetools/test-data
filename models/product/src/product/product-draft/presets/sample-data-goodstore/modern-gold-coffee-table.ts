@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,23 +27,23 @@ const modernGoldCoffeeTableProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const tablesDraft = CategoryDraft.presets.sampleDataGoodstore
+const tablesDraft = CategoryDraft.presets.sampleDataGoodStore
   .tables()
   .build<TCategoryDraft>();
 
-const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .livingRoomFurniture()
   .build<TCategoryDraft>();
 
-const furnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .furniture()
   .build<TCategoryDraft>();
 
-const collectionsDraft = CategoryDraft.presets.sampleDataGoodstore
+const collectionsDraft = CategoryDraft.presets.sampleDataGoodStore
   .collections()
   .build<TCategoryDraft>();
 
-const theModernistDraft = CategoryDraft.presets.sampleDataGoodstore
+const theModernistDraft = CategoryDraft.presets.sampleDataGoodStore
   .theModernist()
   .build<TCategoryDraft>();
 
@@ -72,7 +72,7 @@ const modernGoldCoffeeTable = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.modernGoldCoffeeTable01()

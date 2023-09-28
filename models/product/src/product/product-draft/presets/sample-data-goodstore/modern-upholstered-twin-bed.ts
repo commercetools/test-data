@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,23 +27,23 @@ const modernUpholsteredTwinBedProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const furnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .furniture()
   .build<TCategoryDraft>();
 
-const collectionsDraft = CategoryDraft.presets.sampleDataGoodstore
+const collectionsDraft = CategoryDraft.presets.sampleDataGoodStore
   .collections()
   .build<TCategoryDraft>();
 
-const bedsDraft = CategoryDraft.presets.sampleDataGoodstore
+const bedsDraft = CategoryDraft.presets.sampleDataGoodStore
   .beds()
   .build<TCategoryDraft>();
 
-const bedroomFurnitureDraft = CategoryDraft.presets.sampleDataGoodstore
+const bedroomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
   .bedroomFurniture()
   .build<TCategoryDraft>();
 
-const theModernistDraft = CategoryDraft.presets.sampleDataGoodstore
+const theModernistDraft = CategoryDraft.presets.sampleDataGoodStore
   .theModernist()
   .build<TCategoryDraft>();
 
@@ -72,7 +72,7 @@ const modernUpholsteredTwinBed = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed01()

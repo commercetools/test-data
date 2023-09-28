@@ -1,5 +1,5 @@
 import { getCategoryById } from './ctp/categories';
-import { getFolder, getLimit } from './ctp/config';
+import { getLimit } from './ctp/config';
 import {
   addEntry,
   buildFunctionname,
@@ -32,7 +32,7 @@ import {
 TaxCategoryDraft,
 type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';`;
 
@@ -53,7 +53,7 @@ import type { TProductDraftBuilder } from '../../../types';`;
       content +=
         '\n\nconst ' +
         taxcategoryName +
-        'Draft = TaxCategoryDraft.presets.sampleDataGoodStore\n' +
+        ' = TaxCategoryDraft.presets.sampleDataGoodStore\n' +
         '.' +
         taxcategoryName +
         '()\n' +
@@ -77,7 +77,7 @@ import type { TProductDraftBuilder } from '../../../types';`;
       content +=
         'const ' +
         categoryFunctionname +
-        'Draft = CategoryDraft.presets.sampleDataGoodstore\n' +
+        'Draft = CategoryDraft.presets.sampleDataGoodStore\n' +
         '.' +
         categoryFunctionname +
         '()\n' +
@@ -102,6 +102,13 @@ import type { TProductDraftBuilder } from '../../../types';`;
       false
     );
     content = addEntry(
+      'description',
+      content,
+      formatLocalizedString(product.masterData.staged.description),
+      '',
+      false
+    );
+    content = addEntry(
       'slug',
       content,
       formatLocalizedString(product.masterData.staged.slug),
@@ -120,7 +127,7 @@ import type { TProductDraftBuilder } from '../../../types';`;
         '  .taxCategory(\n' +
         '    KeyReference.presets.taxCategory().key(' +
         taxcategoryName +
-        'Draft.key!)\n' +
+        '.key!)\n' +
         '  )\n';
     }
     content +=

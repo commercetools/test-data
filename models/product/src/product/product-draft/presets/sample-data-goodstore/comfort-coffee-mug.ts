@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,15 +27,15 @@ const comfortCoffeeMugProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const glasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
   .glassware()
   .build<TCategoryDraft>();
 
-const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodstore
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
   .barAndGlassware()
   .build<TCategoryDraft>();
 
-const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
@@ -64,7 +64,7 @@ const comfortCoffeeMug = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.comfortCoffeeMug01()

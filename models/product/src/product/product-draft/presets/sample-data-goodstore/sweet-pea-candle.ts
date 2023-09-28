@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,15 +27,15 @@ const sweetPeaCandleProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const homeAccentsDraft = CategoryDraft.presets.sampleDataGoodstore
+const homeAccentsDraft = CategoryDraft.presets.sampleDataGoodStore
   .homeAccents()
   .build<TCategoryDraft>();
 
-const roomDecorDraft = CategoryDraft.presets.sampleDataGoodstore
+const roomDecorDraft = CategoryDraft.presets.sampleDataGoodStore
   .roomDecor()
   .build<TCategoryDraft>();
 
-const homeDecorDraft = CategoryDraft.presets.sampleDataGoodstore
+const homeDecorDraft = CategoryDraft.presets.sampleDataGoodStore
   .homeDecor()
   .build<TCategoryDraft>();
 
@@ -64,7 +64,7 @@ const sweetPeaCandle = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.sweetPeaCandle01()

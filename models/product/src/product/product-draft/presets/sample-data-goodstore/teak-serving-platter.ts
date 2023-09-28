@@ -14,11 +14,11 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
@@ -27,19 +27,19 @@ const teakServingPlatterProductTypeDraft =
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
 
-const cheeseTraysDraft = CategoryDraft.presets.sampleDataGoodstore
+const cheeseTraysDraft = CategoryDraft.presets.sampleDataGoodStore
   .cheeseTrays()
   .build<TCategoryDraft>();
 
-const servingPlattersDraft = CategoryDraft.presets.sampleDataGoodstore
+const servingPlattersDraft = CategoryDraft.presets.sampleDataGoodStore
   .servingPlatters()
   .build<TCategoryDraft>();
 
-const kitchenDraft = CategoryDraft.presets.sampleDataGoodstore
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
   .kitchen()
   .build<TCategoryDraft>();
 
-const servewareDraft = CategoryDraft.presets.sampleDataGoodstore
+const servewareDraft = CategoryDraft.presets.sampleDataGoodStore
   .serveware()
   .build<TCategoryDraft>();
 
@@ -68,7 +68,7 @@ const teakServingPlatter = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.teakServingPlatter01()
