@@ -324,6 +324,11 @@ describe(`with classicServingTray preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Classic Serving Tray",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Classic Serving Tray",
           },
@@ -331,11 +336,6 @@ describe(`with classicServingTray preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Klassisches Serviertablett",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Classic Serving Tray",
           },
         ],
         "priceMode": undefined,
@@ -349,6 +349,11 @@ describe(`with classicServingTray preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "classic-serving-tray",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "classic-serving-tray",
           },
@@ -356,11 +361,6 @@ describe(`with classicServingTray preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "klassisches-serviertablett",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "classic-serving-tray",
           },
         ],
         "state": undefined,

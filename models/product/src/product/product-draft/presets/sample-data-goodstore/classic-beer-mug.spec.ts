@@ -107,7 +107,7 @@ describe(`with classicBeerMug preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Klassischer Bierkrug",
+          "de-DE": "Klassischer Bierglas",
           "en": undefined,
           "en-GB": "Classic Beer Mug",
           "en-US": "Classic Beer Mug",
@@ -259,18 +259,18 @@ describe(`with classicBeerMug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Classic Beer Mug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Classic Beer Mug",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Klassischer Bierkrug",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Classic Beer Mug",
+            "value": "Klassischer Bierglas",
           },
         ],
         "priceMode": undefined,
@@ -284,6 +284,11 @@ describe(`with classicBeerMug preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "classic-beer-mug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "classic-beer-mug",
           },
@@ -291,11 +296,6 @@ describe(`with classicBeerMug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "klassischer-bierkrug",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "classic-beer-mug",
           },
         ],
         "state": undefined,

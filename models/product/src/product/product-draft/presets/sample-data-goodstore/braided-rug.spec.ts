@@ -317,6 +317,11 @@ describe(`with braidedRug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Braided Rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Braided Rug",
           },
@@ -324,11 +329,6 @@ describe(`with braidedRug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Geflochtener Teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Braided Rug",
           },
         ],
         "priceMode": undefined,
@@ -342,6 +342,11 @@ describe(`with braidedRug preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "braided-rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "braided-rug",
           },
@@ -349,11 +354,6 @@ describe(`with braidedRug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "geflochtener-teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "braided-rug",
           },
         ],
         "state": undefined,

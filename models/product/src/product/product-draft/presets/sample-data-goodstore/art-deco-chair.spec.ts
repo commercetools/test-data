@@ -134,7 +134,7 @@ describe(`with artDecoChair preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Art-Deco-Stuhl",
+          "de-DE": "Art-Deco-Sessel",
           "en": undefined,
           "en-GB": "Art Deco Chair",
           "en-US": "Art Deco Chair",
@@ -298,18 +298,18 @@ describe(`with artDecoChair preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Art Deco Chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Art Deco Chair",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Art-Deco-Stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Art Deco Chair",
+            "value": "Art-Deco-Sessel",
           },
         ],
         "priceMode": undefined,
@@ -323,6 +323,11 @@ describe(`with artDecoChair preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "art-deco-chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "art-deco-chair",
           },
@@ -330,11 +335,6 @@ describe(`with artDecoChair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "art-deco-stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "art-deco-chair",
           },
         ],
         "state": undefined,

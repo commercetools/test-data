@@ -158,7 +158,7 @@ describe(`with charcoalChair preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Holzkohle-Stuhl",
+          "de-DE": "Stuhl "Hokzkohle"",
           "en": undefined,
           "en-GB": "Charcoal Chair",
           "en-US": "Charcoal Chair",
@@ -338,18 +338,18 @@ describe(`with charcoalChair preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Charcoal Chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Charcoal Chair",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Holzkohle-Stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Charcoal Chair",
+            "value": "Stuhl "Hokzkohle"",
           },
         ],
         "priceMode": undefined,
@@ -363,6 +363,11 @@ describe(`with charcoalChair preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "charcoal-chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "charcoal-chair",
           },
@@ -370,11 +375,6 @@ describe(`with charcoalChair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "holzkohle-stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "charcoal-chair",
           },
         ],
         "state": undefined,

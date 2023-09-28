@@ -145,7 +145,7 @@ describe(`with ashenRug preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Ashen Teppich",
+          "de-DE": "Teppich "Ashen"",
           "en": undefined,
           "en-GB": "Ashen Rug",
           "en-US": "Ashen Rug",
@@ -316,18 +316,18 @@ describe(`with ashenRug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Ashen Rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Ashen Rug",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Ashen Teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Ashen Rug",
+            "value": "Teppich "Ashen"",
           },
         ],
         "priceMode": undefined,
@@ -341,6 +341,11 @@ describe(`with ashenRug preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "ashen-rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "ashen-rug",
           },
@@ -348,11 +353,6 @@ describe(`with ashenRug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "ashen-teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "ashen-rug",
           },
         ],
         "state": undefined,

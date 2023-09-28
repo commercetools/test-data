@@ -46,9 +46,9 @@ const charcoalChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Charcoal Chair')
-        ['de-DE']('Holzkohle-Stuhl')
         ['en-US']('Charcoal Chair')
+        ['en-GB']('Charcoal Chair')
+        ['de-DE']('Stuhl "Hokzkohle"')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const charcoalChair = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('charcoal-chair')
         ['en-GB']('charcoal-chair')
         ['de-DE']('holzkohle-stuhl')
-        ['en-US']('charcoal-chair')
     )
     .productType(
       KeyReference.presets.productType().key(charcoalChairProductTypeDraft.key!)

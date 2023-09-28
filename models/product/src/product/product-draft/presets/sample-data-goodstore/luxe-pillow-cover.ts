@@ -1,0 +1,73 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const luxePillowCoverProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const beddingDraft = CategoryDraft.presets.sampleDataGoodStore
+  .bedding()
+  .build<TCategoryDraft>();
+
+const homeDecorDraft = CategoryDraft.presets.sampleDataGoodStore
+  .homeDecor()
+  .build<TCategoryDraft>();
+
+const luxePillowCover = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('luxe-pillow-cover')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Luxe Pillow Cover')
+        ['en-GB']('Luxe Pillow Cover')
+        ['de-DE']('Luxe Kissenbezug')
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('luxe-pillow-cover')
+        ['en-GB']('luxe-pillow-cover')
+        ['de-DE']('luxuriser-kissenbezug')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(luxePillowCoverProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.luxePillowCover01()
+    )
+    .categories([
+      KeyReference.presets.category().key(beddingDraft.key!),
+      KeyReference.presets.category().key(homeDecorDraft.key!),
+    ]);
+
+export default luxePillowCover;

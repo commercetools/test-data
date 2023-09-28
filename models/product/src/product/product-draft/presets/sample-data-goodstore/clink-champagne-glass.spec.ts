@@ -108,7 +108,7 @@ describe(`with clinkChampagneGlass preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Sektglas anstoßen",
+          "de-DE": "Sektgläser zum Anstoßen",
           "en": undefined,
           "en-GB": "Clink Champagne Glass",
           "en-US": "Clink Champagne Glass",
@@ -260,18 +260,18 @@ describe(`with clinkChampagneGlass preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Clink Champagne Glass",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Clink Champagne Glass",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Sektglas anstoßen",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Clink Champagne Glass",
+            "value": "Sektgläser zum Anstoßen",
           },
         ],
         "priceMode": undefined,
@@ -285,6 +285,11 @@ describe(`with clinkChampagneGlass preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "clink-champagne-glass",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "clink-champagne-glass",
           },
@@ -292,11 +297,6 @@ describe(`with clinkChampagneGlass preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "sektglas-anstoen",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "clink-champagne-glass",
           },
         ],
         "state": undefined,

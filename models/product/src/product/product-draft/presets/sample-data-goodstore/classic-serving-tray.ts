@@ -50,9 +50,9 @@ const classicServingTray = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Classic Serving Tray')
         ['en-GB']('Classic Serving Tray')
         ['de-DE']('Klassisches Serviertablett')
-        ['en-US']('Classic Serving Tray')
     )
     .description(
       LocalizedString.presets
@@ -70,9 +70,9 @@ const classicServingTray = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('classic-serving-tray')
         ['en-GB']('classic-serving-tray')
         ['de-DE']('klassisches-serviertablett')
-        ['en-US']('classic-serving-tray')
     )
     .productType(
       KeyReference.presets

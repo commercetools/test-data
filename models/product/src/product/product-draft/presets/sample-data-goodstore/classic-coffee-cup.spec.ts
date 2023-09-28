@@ -317,6 +317,11 @@ describe(`with classicCoffeeCup preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Classic Coffee Cup",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Classic Coffee Cup",
           },
@@ -324,11 +329,6 @@ describe(`with classicCoffeeCup preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Klassische Kaffeetasse",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Classic Coffee Cup",
           },
         ],
         "priceMode": undefined,
@@ -342,6 +342,11 @@ describe(`with classicCoffeeCup preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "classic-coffee-cup",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "classic-coffee-cup",
           },
@@ -349,11 +354,6 @@ describe(`with classicCoffeeCup preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "klassische-kaffeetasse",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "classic-coffee-cup",
           },
         ],
         "state": undefined,

@@ -134,7 +134,7 @@ describe(`with amaliaRug preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Amalia Teppich",
+          "de-DE": "Teppich "Amalia"",
           "en": undefined,
           "en-GB": "Amalia Rug",
           "en-US": "Amalia Rug",
@@ -297,18 +297,18 @@ describe(`with amaliaRug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Amalia Rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Amalia Rug",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Amalia Teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Amalia Rug",
+            "value": "Teppich "Amalia"",
           },
         ],
         "priceMode": undefined,
@@ -322,6 +322,11 @@ describe(`with amaliaRug preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "amalia-rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "amalia-rug",
           },
@@ -329,11 +334,6 @@ describe(`with amaliaRug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "amalia-teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "amalia-rug",
           },
         ],
         "state": undefined,

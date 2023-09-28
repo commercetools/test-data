@@ -167,8 +167,8 @@ describe(`with artDecoCoffeeTable preset`, () => {
           "de": undefined,
           "de-DE": "Art-Deco-Couchtisch",
           "en": undefined,
-          "en-GB": "Art Deco Coffee Table",
-          "en-US": "Art Deco Coffee Table",
+          "en-GB": "Art Deco Coffe Table",
+          "en-US": "Art Deco Coffe Table",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -182,8 +182,8 @@ describe(`with artDecoCoffeeTable preset`, () => {
           "de": undefined,
           "de-DE": "art-deco-couchtisch",
           "en": undefined,
-          "en-GB": "art-deco-coffee-table",
-          "en-US": "art-deco-coffee-table",
+          "en-GB": "art-deco-coffe-table",
+          "en-US": "art-deco-coffe-table",
           "fr": undefined,
         },
         "state": undefined,
@@ -345,18 +345,18 @@ describe(`with artDecoCoffeeTable preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Art Deco Coffe Table",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "Art Deco Coffee Table",
+            "value": "Art Deco Coffe Table",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Art-Deco-Couchtisch",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Art Deco Coffee Table",
           },
         ],
         "priceMode": undefined,
@@ -370,18 +370,18 @@ describe(`with artDecoCoffeeTable preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "art-deco-coffe-table",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "art-deco-coffee-table",
+            "value": "art-deco-coffe-table",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "art-deco-couchtisch",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "art-deco-coffee-table",
           },
         ],
         "state": undefined,

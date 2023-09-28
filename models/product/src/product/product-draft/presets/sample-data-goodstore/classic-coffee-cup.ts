@@ -46,9 +46,9 @@ const classicCoffeeCup = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Classic Coffee Cup')
         ['en-GB']('Classic Coffee Cup')
         ['de-DE']('Klassische Kaffeetasse')
-        ['en-US']('Classic Coffee Cup')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const classicCoffeeCup = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('classic-coffee-cup')
         ['en-GB']('classic-coffee-cup')
         ['de-DE']('klassische-kaffeetasse')
-        ['en-US']('classic-coffee-cup')
     )
     .productType(
       KeyReference.presets

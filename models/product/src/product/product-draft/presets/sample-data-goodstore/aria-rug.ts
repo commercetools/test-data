@@ -45,9 +45,9 @@ const ariaRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Aria Rug')
-        ['de-DE']('Aria Teppich')
         ['en-US']('Aria Rug')
+        ['en-GB']('Aria Rug')
+        ['de-DE']('Teppich "Aria"')
     )
     .description(
       LocalizedString.presets
@@ -65,9 +65,9 @@ const ariaRug = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('aria-rug')
         ['en-GB']('aria-rug')
         ['de-DE']('aria-teppich')
-        ['en-US']('aria-rug')
     )
     .productType(
       KeyReference.presets.productType().key(ariaRugProductTypeDraft.key!)

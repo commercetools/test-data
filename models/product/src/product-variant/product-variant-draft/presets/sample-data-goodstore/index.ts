@@ -46,6 +46,31 @@ import emeraldVelvetChair01 from './emerald-velvet-chair-01';
 import entrywayCloset01 from './entryway-closet-01';
 import evergreenCandle01 from './evergreen-candle-01';
 import fawnArmchair01 from './fawn-armchair-01';
+import geometricPillowCase01 from './geometric-pillow-case-01';
+import geometricPillowCase02 from './geometric-pillow-case-02';
+import geometricPillowCase03 from './geometric-pillow-case-03';
+import glamArmchair01 from './glam-armchair-01';
+import goldRimmedChampagneGlasses01 from './gold-rimmed-champagne-glasses-01';
+import greenServingPlate01 from './green-serving-plate-01';
+import harmonyDrinkingGlass01 from './harmony-drinking-glass-01';
+import harvestPlate01 from './harvest-plate-01';
+import iceBucket01 from './ice-bucket-01';
+import idunPillowCover01 from './idun-pillow-cover-01';
+import indoorJutePlanter01 from './indoor-jute-planter-01';
+import indoorJutePlanter02 from './indoor-jute-planter-02';
+import ivoryLoungeChair01 from './ivory-lounge-chair-01';
+import ivoryPlate01 from './ivory-plate-01';
+import juteRug01 from './jute-rug-01';
+import lanaPillowCover01 from './lana-pillow-cover-01';
+import largeCeramicPlate01 from './large-ceramic-plate-01';
+import largeCeramicPlate02 from './large-ceramic-plate-02';
+import leahArmchair01 from './leah-armchair-01';
+import leatherCoaster01 from './leather-coaster-01';
+import leatherWeaveChair01 from './leather-weave-chair-01';
+import luxePillowCover01 from './luxe-pillow-cover-01';
+import marquisTray01 from './marquis-tray-01';
+import mayaPillowCover01 from './maya-pillow-cover-01';
+import mayaPillowCover02 from './maya-pillow-cover-02';
 
 const presets = {
   abigailLoungeChair01,
@@ -96,6 +121,31 @@ const presets = {
   entrywayCloset01,
   evergreenCandle01,
   fawnArmchair01,
+  geometricPillowCase01,
+  geometricPillowCase02,
+  geometricPillowCase03,
+  glamArmchair01,
+  goldRimmedChampagneGlasses01,
+  greenServingPlate01,
+  harmonyDrinkingGlass01,
+  harvestPlate01,
+  iceBucket01,
+  idunPillowCover01,
+  indoorJutePlanter01,
+  indoorJutePlanter02,
+  ivoryLoungeChair01,
+  ivoryPlate01,
+  juteRug01,
+  lanaPillowCover01,
+  largeCeramicPlate01,
+  largeCeramicPlate02,
+  leahArmchair01,
+  leatherCoaster01,
+  leatherWeaveChair01,
+  luxePillowCover01,
+  marquisTray01,
+  mayaPillowCover01,
+  mayaPillowCover02,
 };
 
 export default presets;

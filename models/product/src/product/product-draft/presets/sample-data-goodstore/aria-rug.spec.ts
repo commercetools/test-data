@@ -161,7 +161,7 @@ describe(`with ariaRug preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Aria Teppich",
+          "de-DE": "Teppich "Aria"",
           "en": undefined,
           "en-GB": "Aria Rug",
           "en-US": "Aria Rug",
@@ -348,18 +348,18 @@ describe(`with ariaRug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Aria Rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Aria Rug",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Aria Teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Aria Rug",
+            "value": "Teppich "Aria"",
           },
         ],
         "priceMode": undefined,
@@ -373,6 +373,11 @@ describe(`with ariaRug preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "aria-rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "aria-rug",
           },
@@ -380,11 +385,6 @@ describe(`with ariaRug preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "aria-teppich",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "aria-rug",
           },
         ],
         "state": undefined,

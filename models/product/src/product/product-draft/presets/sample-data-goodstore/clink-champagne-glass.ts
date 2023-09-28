@@ -46,9 +46,9 @@ const clinkChampagneGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Clink Champagne Glass')
-        ['de-DE']('Sektglas anstoßen')
         ['en-US']('Clink Champagne Glass')
+        ['en-GB']('Clink Champagne Glass')
+        ['de-DE']('Sektgläser zum Anstoßen')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const clinkChampagneGlass = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('clink-champagne-glass')
         ['en-GB']('clink-champagne-glass')
         ['de-DE']('sektglas-anstoen')
-        ['en-US']('clink-champagne-glass')
     )
     .productType(
       KeyReference.presets

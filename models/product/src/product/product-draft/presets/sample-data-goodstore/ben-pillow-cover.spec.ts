@@ -136,7 +136,7 @@ describe(`with benPillowCover preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Ben Kissenbezug",
+          "de-DE": "Kissenbezug "Ben"",
           "en": undefined,
           "en-GB": "Ben Pillow Cover",
           "en-US": "Ben Pillow Cover",
@@ -295,18 +295,18 @@ describe(`with benPillowCover preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Ben Pillow Cover",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Ben Pillow Cover",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Ben Kissenbezug",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Ben Pillow Cover",
+            "value": "Kissenbezug "Ben"",
           },
         ],
         "priceMode": undefined,
@@ -320,6 +320,11 @@ describe(`with benPillowCover preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "ben-pillow-cover",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "ben-pillow-cover",
           },
@@ -327,11 +332,6 @@ describe(`with benPillowCover preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "ben-kissenbezug",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "ben-pillow-cover",
           },
         ],
         "state": undefined,
