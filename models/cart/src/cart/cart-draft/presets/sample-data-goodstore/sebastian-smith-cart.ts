@@ -20,7 +20,7 @@ const customer = CustomerDraft.presets.sampleDataGoodStore
   .sebastianSmith()
   .build<TCustomerDraft>();
 const address =
-  AddressDraft.presets.sampleDataGoodstore.sebastianSmithAddress();
+  AddressDraft.presets.sampleDataGoodSstore.sebastianSmithAddress();
 const rusticCountryQueenBed01 = ProductVariantDraft.presets.sampleDataGoodStore
   .rusticCountryQueenBed01()
   .build<TProductVariantDraft>();

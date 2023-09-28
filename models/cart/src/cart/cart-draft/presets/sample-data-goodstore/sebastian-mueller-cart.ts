@@ -20,7 +20,7 @@ const customer = CustomerDraft.presets.sampleDataGoodStore
   .sebastianMuller()
   .build<TCustomerDraft>();
 const address =
-  AddressDraft.presets.sampleDataGoodstore.sebastianMullerAddress();
+  AddressDraft.presets.sampleDataGoodStore.sebastianMullerAddress();
 const traditionalLSeaterSofa01 = ProductVariantDraft.presets.sampleDataGoodStore
   .traditionalLSeaterSofa01()
   .build<TProductVariantDraft>();

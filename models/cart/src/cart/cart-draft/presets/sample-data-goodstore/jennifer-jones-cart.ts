@@ -19,7 +19,7 @@ import type { TCartDraftBuilder } from '../../../types';
 const customer = CustomerDraft.presets.sampleDataGoodStore
   .jenniferJones()
   .build<TCustomerDraft>();
-const address = AddressDraft.presets.sampleDataGoodstore.jenniferJonesAddress();
+const address = AddressDraft.presets.sampleDataGoodStore.jenniferJonesAddress();
 const rusticCountryQueenBed01 = ProductVariantDraft.presets.sampleDataGoodStore
   .rusticCountryQueenBed01()
   .build<TProductVariantDraft>();

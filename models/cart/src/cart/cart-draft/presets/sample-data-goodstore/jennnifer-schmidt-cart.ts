@@ -20,7 +20,7 @@ const customer = CustomerDraft.presets.sampleDataGoodStore
   .jenniferSchmidt()
   .build<TCustomerDraft>();
 const address =
-  AddressDraft.presets.sampleDataGoodstore.jenniferSchmidtAddress();
+  AddressDraft.presets.sampleDataGoodStore.jenniferSchmidtAddress();
 const goldRimmedChampagneGlasses01 =
   ProductVariantDraft.presets.sampleDataGoodStore
     .goldRimmedChampagneGlasses01()
