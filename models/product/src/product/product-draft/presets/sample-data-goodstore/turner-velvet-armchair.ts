@@ -46,16 +46,16 @@ const turnerVelvetArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Turner Velvet Armchair')
         ['en-GB']('Turner Velvet Armchair')
         ['de-DE']('Turner Samtsessel')
-        ['en-US']('Turner Velvet Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('turner-velvet-armchair')
         ['en-GB']('turner-velvet-armchair')
         ['de-DE']('turner-samtsessel')
-        ['en-US']('turner-velvet-armchair')
     )
     .productType(
       KeyReference.presets

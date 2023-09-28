@@ -45,16 +45,16 @@ const rumiChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Rumi Chair')
         ['en-GB']('Rumi Chair')
         ['de-DE']('Stuhl >Rumi<')
-        ['en-US']('Rumi Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rumi-chair')
         ['en-GB']('rumi-chair')
         ['de-DE']('rumi-stuhl')
-        ['en-US']('rumi-chair')
     )
     .productType(
       KeyReference.presets.productType().key(rumiChairProductTypeDraft.key!)

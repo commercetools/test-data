@@ -29,9 +29,9 @@ const productSets = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets
             .empty()
+            ['en-US']('Type')
             ['en-GB']('Type')
             ['de-DE']('Typ')
-            ['en-US']('Type')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)

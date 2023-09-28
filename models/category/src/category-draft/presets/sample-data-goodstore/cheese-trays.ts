@@ -14,16 +14,16 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Cheese Trays')
         ['en-GB']('Cheese Trays')
         ['de-DE']('Käseplatten')
-        ['en-US']('Cheese Trays')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('cheese-trays')
         ['en-GB']('cheese-trays')
         ['de-DE']('cheese-trays')
-        ['en-US']('cheese-trays')
     )
     .key('cheese-trays')
     .orderHint('.12')

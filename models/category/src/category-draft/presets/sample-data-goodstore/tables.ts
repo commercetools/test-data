@@ -14,16 +14,16 @@ const tables = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Tables')
         ['en-GB']('Tables')
         ['de-DE']('Tische')
-        ['en-US']('Tables')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('living-room-tables')
         ['en-GB']('living-room-tables')
         ['de-DE']('coffee-tables')
-        ['en-US']('living-room-tables')
     )
     .key('tables')
     .orderHint('.25')

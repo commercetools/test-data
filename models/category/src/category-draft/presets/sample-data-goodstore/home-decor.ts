@@ -10,16 +10,16 @@ const homeDecor = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Home Decor')
         ['en-GB']('Home Decor')
         ['de-DE']('Dekoration')
-        ['en-US']('Home Decor')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('home-decor')
         ['en-GB']('home-decor')
         ['de-DE']('home-decor')
-        ['en-US']('home-decor')
     )
     .key('home-decor')
     .orderHint('0.1');

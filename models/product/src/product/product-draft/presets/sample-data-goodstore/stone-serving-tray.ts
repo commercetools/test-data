@@ -58,16 +58,16 @@ const stoneServingTray = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Stone Serving Tray')
         ['en-GB']('Stone Serving Tray')
         ['de-DE']('Serviertablett aus Stein')
-        ['en-US']('Stone Serving Tray')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('stone-serving-tray')
         ['en-GB']('stone-serving-tray')
         ['de-DE']('serviertablett-aus-stein')
-        ['en-US']('stone-serving-tray')
     )
     .productType(
       KeyReference.presets

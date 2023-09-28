@@ -46,16 +46,16 @@ const walnutCabinet = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Walnut Cabinet')
         ['en-GB']('Walnut Cabinet')
         ['de-DE']('Nussbaum Schrank')
-        ['en-US']('Walnut Cabinet')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('walnut-cabinet')
         ['en-GB']('walnut-cabinet')
         ['de-DE']('nussbaum-schrank')
-        ['en-US']('walnut-cabinet')
     )
     .productType(
       KeyReference.presets.productType().key(walnutCabinetProductTypeDraft.key!)

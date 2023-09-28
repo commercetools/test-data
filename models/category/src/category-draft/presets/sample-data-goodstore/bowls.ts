@@ -14,16 +14,16 @@ const bowls = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Bowls')
         ['en-GB']('Bowls')
         ['de-DE']('Schalen')
-        ['en-US']('Bowls')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('bowls')
         ['en-GB']('bowls')
         ['de-DE']('bowls')
-        ['en-US']('bowls')
     )
     .key('bowls')
     .orderHint('.56')

@@ -45,16 +45,16 @@ const wilmaChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Wilma Chair')
         ['en-GB']('Wilma Chair')
         ['de-DE']('Wilma Stuhl')
-        ['en-US']('Wilma Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('wilma-chair')
         ['en-GB']('wilma-chair')
         ['de-DE']('wilma-stuhl')
-        ['en-US']('wilma-chair')
     )
     .productType(
       KeyReference.presets.productType().key(wilmaChairProductTypeDraft.key!)

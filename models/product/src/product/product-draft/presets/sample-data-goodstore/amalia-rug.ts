@@ -45,16 +45,16 @@ const amaliaRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Amalia Rug')
         ['en-GB']('Amalia Rug')
         ['de-DE']('Teppich "Amalia"')
-        ['en-US']('Amalia Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('amalia-rug')
         ['en-GB']('amalia-rug')
         ['de-DE']('amalia-teppich')
-        ['en-US']('amalia-rug')
     )
     .productType(
       KeyReference.presets.productType().key(amaliaRugProductTypeDraft.key!)

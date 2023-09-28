@@ -46,16 +46,16 @@ const steelHipFlask = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Steel Hip Flask')
         ['en-GB']('Steel Hip Flask')
         ['de-DE']('Flachmann aus Stahl')
-        ['en-US']('Steel Hip Flask')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('steel-hip-flask')
         ['en-GB']('steel-hip-flask')
         ['de-DE']('flachmann-aus-stahl')
-        ['en-US']('steel-hip-flask')
     )
     .productType(
       KeyReference.presets.productType().key(steelHipFlaskProductTypeDraft.key!)

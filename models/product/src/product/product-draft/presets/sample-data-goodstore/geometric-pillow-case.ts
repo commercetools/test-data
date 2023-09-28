@@ -46,16 +46,16 @@ const geometricPillowCase = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Geometric Pillow Case')
         ['en-GB']('Geometric Pillow Case')
         ['de-DE']('Geometrischer Kissenbezug')
-        ['en-US']('Geometric Pillow Case')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('geometric-pillow-case')
         ['en-GB']('geometric-pillow-case')
         ['de-DE']('geometrischer-kissenbezug')
-        ['en-US']('geometric-pillow-case')
     )
     .productType(
       KeyReference.presets

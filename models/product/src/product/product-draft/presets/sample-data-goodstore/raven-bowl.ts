@@ -49,16 +49,16 @@ const ravenBowl = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Raven Bowl')
         ['en-GB']('Raven Bowl')
         ['de-DE']('Suppenschüssel >Raven<')
-        ['en-US']('Raven Bowl')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('raven-bowl')
         ['en-GB']('raven-bowl')
         ['de-DE']('rabenschssel')
-        ['en-US']('raven-bowl')
     )
     .productType(
       KeyReference.presets.productType().key(ravenBowlProductTypeDraft.key!)

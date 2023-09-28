@@ -46,16 +46,16 @@ const vanillaCandle = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Vanilla Candle')
         ['en-GB']('Vanilla Candle')
         ['de-DE']('Kerze mit Vanilleduft')
-        ['en-US']('Vanilla Candle')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('vanilla-candle')
         ['en-GB']('vanilla-candle')
         ['de-DE']('vanille-kerze')
-        ['en-US']('vanilla-candle')
     )
     .productType(
       KeyReference.presets.productType().key(vanillaCandleProductTypeDraft.key!)

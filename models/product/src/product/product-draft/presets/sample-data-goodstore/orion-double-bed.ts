@@ -46,16 +46,16 @@ const orionDoubleBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Orion Double Bed')
         ['en-GB']('Orion Double Bed')
         ['de-DE']('Orion Doppelbett')
-        ['en-US']('Orion Double Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('orion-double-bed')
         ['en-GB']('orion-double-bed')
         ['de-DE']('orion-doppelbett')
-        ['en-US']('orion-double-bed')
     )
     .productType(
       KeyReference.presets

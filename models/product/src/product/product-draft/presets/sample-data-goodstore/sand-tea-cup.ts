@@ -45,16 +45,16 @@ const sandTeaCup = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Sand Tea Cup')
         ['en-GB']('Sand Tea Cup')
         ['de-DE']('Sand-Teetasse')
-        ['en-US']('Sand Tea Cup')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('sand-tea-cup')
         ['en-GB']('sand-tea-cup')
         ['de-DE']('sand-teetasse')
-        ['en-US']('sand-tea-cup')
     )
     .productType(
       KeyReference.presets.productType().key(sandTeaCupProductTypeDraft.key!)

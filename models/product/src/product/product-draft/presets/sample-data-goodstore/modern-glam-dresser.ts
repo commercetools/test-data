@@ -54,16 +54,16 @@ const modernGlamDresser = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Modern Glam Dresser')
         ['en-GB']('Modern Glam Dresser')
         ['de-DE']('Moderne glamouröse Kommode')
-        ['en-US']('Modern Glam Dresser')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('modern-glam-dresser')
         ['en-GB']('modern-glam-dresser')
         ['de-DE']('moderne-glamourse-kommode')
-        ['en-US']('modern-glam-dresser')
     )
     .productType(
       KeyReference.presets

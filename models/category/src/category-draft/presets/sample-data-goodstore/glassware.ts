@@ -14,16 +14,16 @@ const glassware = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Glassware')
         ['en-GB']('Glassware')
         ['de-DE']('Gläser')
-        ['en-US']('Glassware')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('glassware')
         ['en-GB']('glassware')
         ['de-DE']('glassware')
-        ['en-US']('glassware')
     )
     .key('glassware')
     .orderHint('.23')

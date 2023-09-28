@@ -46,16 +46,16 @@ const harmonyDrinkingGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Harmony Drinking Glass')
         ['en-GB']('Harmony Drinking Glass')
         ['de-DE']('Harmonie Trinkglas')
-        ['en-US']('Harmony Drinking Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('harmony-drinking-glass')
         ['en-GB']('harmony-drinking-glass')
         ['de-DE']('harmonie-trinkglas')
-        ['en-US']('harmony-drinking-glass')
     )
     .productType(
       KeyReference.presets

@@ -50,16 +50,16 @@ const ivoryLoungeChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Ivory Lounge Chair')
-        ['de-DE']('Elfenbein-Lounge-Stuhl')
         ['en-US']('Ivory Lounge Chair')
+        ['en-GB']('Ivory Lounge Chair')
+        ['de-DE']('Elfenbein Lounge Stuhl')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('ivory-lounge-chair')
         ['en-GB']('ivory-lounge-chair')
         ['de-DE']('elfenbein-lounge-stuhl')
-        ['en-US']('ivory-lounge-chair')
     )
     .productType(
       KeyReference.presets

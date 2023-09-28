@@ -42,16 +42,16 @@ const lanaPillowCover = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Lana Pillow Cover')
         ['en-GB']('Lana Pillow Cover')
         ['de-DE']('Lana Kissenbezug')
-        ['en-US']('Lana Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('lana-pillow-cover')
         ['en-GB']('lana-pillow-cover')
         ['de-DE']('lana-kissenbezug')
-        ['en-US']('lana-pillow-cover')
     )
     .productType(
       KeyReference.presets

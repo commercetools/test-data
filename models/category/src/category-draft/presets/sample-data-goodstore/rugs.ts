@@ -15,9 +15,9 @@ const rugs = (): TCategoryDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rugs')
         ['en-GB']('rugs')
         ['de-DE']('teppiche')
-        ['en-US']('rugs')
     )
     .key('rugs')
     .orderHint('.4')

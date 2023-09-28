@@ -14,16 +14,16 @@ const armchairs = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Chairs')
         ['en-GB']('Armchairs')
         ['de-DE']('Stühle')
-        ['en-US']('Chairs')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('armchairs')
         ['en-GB']('armchairs')
         ['de-DE']('chairs')
-        ['en-US']('armchairs')
     )
     .key('armchairs')
     .orderHint('.3')

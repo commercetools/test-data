@@ -42,16 +42,16 @@ const mayaPillowCover = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Maya Pillow Cover')
-        ['de-DE']('Maya-Kissenbezug')
         ['en-US']('Maya Pillow Cover')
+        ['en-GB']('Maya Pillow Cover')
+        ['de-DE']('Maya Kissenbezug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('maya-pillow-cover')
         ['en-GB']('maya-pillow-cover')
         ['de-DE']('maya-kissenbezug')
-        ['en-US']('maya-pillow-cover')
     )
     .productType(
       KeyReference.presets

@@ -46,16 +46,16 @@ const crystalDrinkingGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Crystal Drinking Glass')
         ['en-GB']('Crystal Drinking Glass')
         ['de-DE']('Kristall-Glas')
-        ['en-US']('Crystal Drinking Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('crystal-drinking-glass')
         ['en-GB']('crystal-drinking-glass')
         ['de-DE']('kristall-trinkglas')
-        ['en-US']('crystal-drinking-glass')
     )
     .productType(
       KeyReference.presets

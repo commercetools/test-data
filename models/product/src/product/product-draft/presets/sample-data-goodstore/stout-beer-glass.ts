@@ -46,16 +46,16 @@ const stoutBeerGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Stout Beer Glass')
         ['en-GB']('Stout Beer Glass')
         ['de-DE']('Starkes Bierglas')
-        ['en-US']('Stout Beer Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('stout-beer-glass')
         ['en-GB']('stout-beer-glass')
         ['de-DE']('starkes-bierglas')
-        ['en-US']('stout-beer-glass')
     )
     .productType(
       KeyReference.presets

@@ -46,16 +46,16 @@ const canelaThreeSeaterSofa = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Canela Three-Seater Sofa')
         ['en-GB']('Canela Three-Seater Sofa')
         ['de-DE']('Canela 3-Sitzer-Sofa')
-        ['en-US']('Canela Three-Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('canela-three-seater-sofa')
         ['en-GB']('canela-three-seater-sofa')
         ['de-DE']('canela-3-sitzer-sofa')
-        ['en-US']('canela-three-seater-sofa')
     )
     .productType(
       KeyReference.presets

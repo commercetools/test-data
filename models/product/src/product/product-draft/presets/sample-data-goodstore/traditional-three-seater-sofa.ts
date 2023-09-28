@@ -58,16 +58,16 @@ const traditionalThreeSeaterSofa = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Traditional Three Seater Sofa')
         ['en-GB']('Traditional Three Seater Sofa')
         ['de-DE']('Traditionelles Dreisitzer-Sofa')
-        ['en-US']('Traditional Three Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('traditional-three-seater-sofa')
         ['en-GB']('traditional-three-seater-sofa')
         ['de-DE']('traditionelles-dreisitzer-sofa')
-        ['en-US']('traditional-three-seater-sofa')
     )
     .productType(
       KeyReference.presets

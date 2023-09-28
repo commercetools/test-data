@@ -46,16 +46,16 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Double-sided Shot Glass')
         ['en-GB']('Double-sided Shot Glass')
         ['de-DE']('Doppelseitiges Schnapsglas')
-        ['en-US']('Double-sided Shot Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('double-sided-shot-glass')
         ['en-GB']('double-sided-shot-glass')
         ['de-DE']('doppelseitiges-schnapsglas')
-        ['en-US']('double-sided-shot-glass')
     )
     .productType(
       KeyReference.presets

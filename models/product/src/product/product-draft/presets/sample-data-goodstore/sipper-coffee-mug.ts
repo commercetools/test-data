@@ -46,16 +46,16 @@ const sipperCoffeeMug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Sipper Coffee Mug')
         ['en-GB']('Sipper Coffee Mug')
         ['de-DE']('Sipper-Kaffeetasse')
-        ['en-US']('Sipper Coffee Mug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('sipper-coffee-mug')
         ['en-GB']('sipper-coffee-mug')
         ['de-DE']('sipper-kaffeetasse')
-        ['en-US']('sipper-coffee-mug')
     )
     .productType(
       KeyReference.presets

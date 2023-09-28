@@ -46,16 +46,16 @@ const sparkleChampagneGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Sparkle Champagne Glass')
         ['en-GB']('Sparkle Champagne Glass')
         ['de-DE']('Funkelndes Champagnerglas')
-        ['en-US']('Sparkle Champagne Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('sparkle-champagne-glass')
         ['en-GB']('sparkle-champagne-glass')
         ['de-DE']('funkelndes-champagnerglas')
-        ['en-US']('sparkle-champagne-glass')
     )
     .productType(
       KeyReference.presets

@@ -46,16 +46,16 @@ const comfortCoffeeMug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Comfort Coffee Mug')
         ['en-GB']('Comfort Coffee Mug')
         ['de-DE']('Komfort-Kaffeetasse')
-        ['en-US']('Comfort Coffee Mug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('comfort-coffee-mug')
         ['en-GB']('comfort-coffee-mug')
         ['de-DE']('komfort-kaffeetasse')
-        ['en-US']('comfort-coffee-mug')
     )
     .productType(
       KeyReference.presets

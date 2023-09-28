@@ -33,16 +33,16 @@ const rusticBowl = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Rustic Bowl')
         ['en-GB']('Rustic Bowl')
         ['de-DE']('Rustikale Schale')
-        ['en-US']('Rustic Bowl')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rustic-bowl')
         ['en-GB']('rustic-bowl')
         ['de-DE']('rustikale-schale')
-        ['en-US']('rustic-bowl')
     )
     .productType(
       KeyReference.presets.productType().key(rusticBowlProductTypeDraft.key!)

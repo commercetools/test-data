@@ -45,16 +45,16 @@ const iceBucket = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Ice Bucket')
         ['en-GB']('Ice Bucket')
         ['de-DE']('Eis Eimer')
-        ['en-US']('Ice Bucket')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('ice-bucket')
         ['en-GB']('ice-bucket')
         ['de-DE']('eis-eimer')
-        ['en-US']('ice-bucket')
     )
     .productType(
       KeyReference.presets.productType().key(iceBucketProductTypeDraft.key!)

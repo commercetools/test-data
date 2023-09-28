@@ -45,16 +45,16 @@ const opalKingBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Opal King Bed')
-        ['de-DE']('Opal Kingsize-Bett')
         ['en-US']('Opal King Bed')
+        ['en-GB']('Opal King Bed')
+        ['de-DE']('Opal King Bett')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('opal-king-bed')
         ['en-GB']('opal-king-bed')
         ['de-DE']('opal-kingsize-bett')
-        ['en-US']('opal-king-bed')
     )
     .productType(
       KeyReference.presets.productType().key(opalKingBedProductTypeDraft.key!)

@@ -45,16 +45,16 @@ const tanQueenBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Tan Queen Bed')
         ['en-GB']('Tan Queen Bed')
         ['de-DE']('Hellbraunes Queen-Bett')
-        ['en-US']('Tan Queen Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('tan-queen-bed')
         ['en-GB']('tan-queen-bed')
         ['de-DE']('hellbraunes-queen-bett')
-        ['en-US']('tan-queen-bed')
     )
     .productType(
       KeyReference.presets.productType().key(tanQueenBedProductTypeDraft.key!)

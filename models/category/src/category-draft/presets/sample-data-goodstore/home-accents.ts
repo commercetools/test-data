@@ -20,9 +20,9 @@ const homeAccents = (): TCategoryDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('home-accents')
         ['en-GB']('home-accents')
         ['de-DE']('home-akzente')
-        ['en-US']('home-accents')
     )
     .key('home-accents')
     .orderHint('.5')

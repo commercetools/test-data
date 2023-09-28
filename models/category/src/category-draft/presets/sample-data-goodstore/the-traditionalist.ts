@@ -14,16 +14,16 @@ const theTraditionalist = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('The Traditionalist')
         ['en-GB']('The Traditionalist')
         ['de-DE']('The Traditionalist')
-        ['en-US']('The Traditionalist')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('the-traditionalist')
         ['en-GB']('the-traditionalist')
         ['de-DE']('the-traditionalist')
-        ['en-US']('the-traditionalist')
     )
     .key('the-traditionalist')
     .orderHint('0.0033')

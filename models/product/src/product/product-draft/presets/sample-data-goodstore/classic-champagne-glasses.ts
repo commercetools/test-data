@@ -46,16 +46,16 @@ const classicChampagneGlasses = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Classic Champagne Glasses')
         ['en-GB']('Classic Champagne Glasses')
         ['de-DE']('Klassische Champagnergläser')
-        ['en-US']('Classic Champagne Glasses')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('classic-champagne-glasses')
         ['en-GB']('classic-champagne-glasses')
         ['de-DE']('klassische-champagnerglser')
-        ['en-US']('classic-champagne-glasses')
     )
     .productType(
       KeyReference.presets

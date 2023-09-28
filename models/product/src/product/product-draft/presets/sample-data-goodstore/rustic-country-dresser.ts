@@ -46,16 +46,16 @@ const rusticCountryDresser = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Rustic Country Dresser')
         ['en-GB']('Rustic Country Dresser')
         ['de-DE']('Rustikale Landhauskommode')
-        ['en-US']('Rustic Country Dresser')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rustic-country-dresser')
         ['en-GB']('rustic-country-dresser')
         ['de-DE']('rustikale-landhauskommode')
-        ['en-US']('rustic-country-dresser')
     )
     .productType(
       KeyReference.presets

@@ -14,16 +14,16 @@ const barAccessories = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Bar Accessories')
         ['en-GB']('Bar Accessories')
         ['de-DE']('Barzubehör')
-        ['en-US']('Bar Accessories')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('bar-accessories')
         ['en-GB']('bar-accessories')
         ['de-DE']('bar-accessories')
-        ['en-US']('bar-accessories')
     )
     .key('bar-accessories')
     .orderHint('.36')

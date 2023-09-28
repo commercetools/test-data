@@ -27,16 +27,16 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets
             .empty()
+            ['en-US']('product-description')
             ['en-GB']('product-description')
             ['de-DE']('Productbeschreibung')
-            ['en-US']('product-description')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
+            ['en-US']('description of the bundle product')
             ['en-GB']('description of the bundle product')
             ['de-DE']('Beschreibung des Bundles')
-            ['en-US']('description of the bundle product')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
@@ -50,16 +50,16 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets
             .empty()
+            ['en-US']('Product Spec')
             ['en-GB']('Product Spec')
             ['de-DE']('Product Spezifikation')
-            ['en-US']('Product Spec')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
+            ['en-US']('Product Spec')
             ['en-GB']('Product Spec')
             ['de-DE']('Produktspezifikation')
-            ['en-US']('Product Spec')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.SameForAll)
@@ -79,16 +79,16 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .label(
           LocalizedString.presets
             .empty()
+            ['en-US']('Products of this bundle')
             ['en-GB']('Products of this bundle')
             ['de-DE']('Produkte dieses Bundles')
-            ['en-US']('Products of this bundle')
         )
         .inputTip(
           LocalizedString.presets
             .empty()
+            ['en-US']('Products of this bundle')
             ['en-GB']('Products of this bundle')
             ['de-DE']('Produkte dieses Bundles')
-            ['en-US']('Products of this bundle')
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)

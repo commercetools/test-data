@@ -14,16 +14,16 @@ const dinnerware = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Dinnerware')
         ['en-GB']('Serving & Tableware')
         ['de-DE']('Geschirr')
-        ['en-US']('Dinnerware')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('serving-and-tableware')
         ['en-GB']('serving-and-tableware')
         ['de-DE']('dinnerware')
-        ['en-US']('serving-and-tableware')
     )
     .key('dinnerware')
     .orderHint('.75')

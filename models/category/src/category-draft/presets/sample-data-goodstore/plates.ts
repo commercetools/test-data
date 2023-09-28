@@ -14,16 +14,16 @@ const plates = (): TCategoryDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Plates')
         ['en-GB']('Plates')
         ['de-DE']('Platten')
-        ['en-US']('Plates')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('plates')
         ['en-GB']('plates')
         ['de-DE']('plates')
-        ['en-US']('plates')
     )
     .key('plates')
     .orderHint('.82')

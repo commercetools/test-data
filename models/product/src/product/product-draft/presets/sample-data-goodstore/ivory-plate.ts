@@ -57,16 +57,16 @@ const ivoryPlate = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Ivory Plate')
         ['en-GB']('Ivory Plate')
         ['de-DE']('Elfenbeinteller')
-        ['en-US']('Ivory Plate')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('ivory-plate')
         ['en-GB']('ivory-plate')
         ['de-DE']('elfenbeinteller')
-        ['en-US']('ivory-plate')
     )
     .productType(
       KeyReference.presets.productType().key(ivoryPlateProductTypeDraft.key!)

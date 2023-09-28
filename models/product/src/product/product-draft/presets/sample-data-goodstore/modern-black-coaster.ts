@@ -46,16 +46,16 @@ const modernBlackCoaster = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Modern Black Coaster')
         ['en-GB']('Modern Black Coaster')
         ['de-DE']('Moderner schwarzer Untersetzer')
-        ['en-US']('Modern Black Coaster')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('modern-black-coaster')
         ['en-GB']('modern-black-coaster')
         ['de-DE']('moderner-schwarzer-untersetzer')
-        ['en-US']('modern-black-coaster')
     )
     .productType(
       KeyReference.presets

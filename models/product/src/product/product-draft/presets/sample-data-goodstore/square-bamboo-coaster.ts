@@ -46,16 +46,16 @@ const squareBambooCoaster = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Square Bamboo Coaster')
         ['en-GB']('Square Bamboo Coaster')
         ['de-DE']('Quadratischer Untersetzer aus Bambus')
-        ['en-US']('Square Bamboo Coaster')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('square-bamboo-coaster')
         ['en-GB']('square-bamboo-coaster')
         ['de-DE']('quadratischer-untersetzer-aus-bambus')
-        ['en-US']('square-bamboo-coaster')
     )
     .productType(
       KeyReference.presets

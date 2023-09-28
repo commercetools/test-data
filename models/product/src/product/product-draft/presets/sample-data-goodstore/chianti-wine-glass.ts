@@ -46,16 +46,16 @@ const chiantiWineGlass = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Chianti Wine Glass')
         ['en-GB']('Chianti Wine Glass')
         ['de-DE']('Chianti Weinglas')
-        ['en-US']('Chianti Wine Glass')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('chianti-wine-glass')
         ['en-GB']('chianti-wine-glass')
         ['de-DE']('chianti-weinglas')
-        ['en-US']('chianti-wine-glass')
     )
     .productType(
       KeyReference.presets

@@ -46,16 +46,16 @@ const leatherCoaster = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Leather Coaster')
-        ['de-DE']('Untersetzer aus Leder')
         ['en-US']('Leather Coaster')
+        ['en-GB']('Leather Coaster')
+        ['de-DE']('Leder Untersetzer')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('leather-coaster')
         ['en-GB']('leather-coaster')
         ['de-DE']('untersetzer-aus-leder')
-        ['en-US']('leather-coaster')
     )
     .productType(
       KeyReference.presets

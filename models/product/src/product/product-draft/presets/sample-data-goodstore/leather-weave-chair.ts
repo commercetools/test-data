@@ -46,16 +46,16 @@ const leatherWeaveChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Leather Weave Chair')
-        ['de-DE']('Stuhl aus Ledergeflecht')
         ['en-US']('Leather Weave Chair')
+        ['en-GB']('Leather Weave Chair')
+        ['de-DE']('Ledergeflecht Stuhl')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('leather-weave-chair')
         ['en-GB']('leather-weave-chair')
         ['de-DE']('stuhl-aus-ledergeflecht')
-        ['en-US']('leather-weave-chair')
     )
     .productType(
       KeyReference.presets

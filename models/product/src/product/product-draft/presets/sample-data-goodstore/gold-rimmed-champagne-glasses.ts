@@ -46,16 +46,16 @@ const goldRimmedChampagneGlasses = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Gold Rimmed Champagne Glasses')
         ['en-GB']('Gold Rimmed Champagne Glasses')
         ['de-DE']('Champagnergläser mit Goldrand')
-        ['en-US']('Gold Rimmed Champagne Glasses')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('gold-rimmed-champagne-glasses')
         ['en-GB']('gold-rimmed-champagne-glasses')
         ['de-DE']('champagnerglser-mit-goldrand')
-        ['en-US']('gold-rimmed-champagne-glasses')
     )
     .productType(
       KeyReference.presets

@@ -54,16 +54,16 @@ const modernUpholsteredQueenBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Modern Upholstered Queen Bed')
         ['en-GB']('Modern Upholstered Queen Bed')
         ['de-DE']('Modernes gepolstertes Queensize-Bett')
-        ['en-US']('Modern Upholstered Queen Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('modern-upholstered-queen-bed')
         ['en-GB']('modern-upholstered-queen-bed')
         ['de-DE']('modernes-gepolstertes-queensize-bett')
-        ['en-US']('modern-upholstered-queen-bed')
     )
     .productType(
       KeyReference.presets

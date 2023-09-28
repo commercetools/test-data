@@ -42,16 +42,16 @@ const silkyPillowCover = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Silky Pillow Cover')
         ['en-GB']('Silky Pillow Cover')
         ['de-DE']('Seidige Kissenhülle')
-        ['en-US']('Silky Pillow Cover')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('silky-pillow-cover')
         ['en-GB']('silky-pillow-cover')
         ['de-DE']('seidige-kissenhlle')
-        ['en-US']('silky-pillow-cover')
     )
     .productType(
       KeyReference.presets

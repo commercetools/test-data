@@ -46,16 +46,16 @@ const leahArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Leah Armchair')
         ['en-GB']('Leah Armchair')
         ['de-DE']('Leah Sessel')
-        ['en-US']('Leah Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('leah-armchair')
         ['en-GB']('leah-armchair')
         ['de-DE']('leah-sessel')
-        ['en-US']('leah-armchair')
     )
     .productType(
       KeyReference.presets.productType().key(leahArmchairProductTypeDraft.key!)

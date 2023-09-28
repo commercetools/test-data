@@ -46,16 +46,16 @@ const fawnArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Fawn Armchair')
         ['en-GB']('Fawn Armchair')
         ['de-DE']('Fawn Sessel')
-        ['en-US']('Fawn Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('fawn-armchair')
         ['en-GB']('fawn-armchair')
         ['de-DE']('fawn-sessel')
-        ['en-US']('fawn-armchair')
     )
     .productType(
       KeyReference.presets.productType().key(fawnArmchairProductTypeDraft.key!)

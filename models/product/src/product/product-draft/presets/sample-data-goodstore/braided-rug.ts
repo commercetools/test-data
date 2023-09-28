@@ -45,16 +45,16 @@ const braidedRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Braided Rug')
         ['en-GB']('Braided Rug')
         ['de-DE']('Geflochtener Teppich')
-        ['en-US']('Braided Rug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('braided-rug')
         ['en-GB']('braided-rug')
         ['de-DE']('geflochtener-teppich')
-        ['en-US']('braided-rug')
     )
     .productType(
       KeyReference.presets.productType().key(braidedRugProductTypeDraft.key!)

@@ -58,16 +58,16 @@ const nalaTwoSeaterSofa = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Nala Two-Seater Sofa')
         ['en-GB']('Nala Two-Seater Sofa')
         ['de-DE']('Nala Zweisitzer-Sofa')
-        ['en-US']('Nala Two-Seater Sofa')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('nala-two-seater-sofa')
         ['en-GB']('nala-two-seater-sofa')
         ['de-DE']('nala-zweisitzer-sofa')
-        ['en-US']('nala-two-seater-sofa')
     )
     .productType(
       KeyReference.presets

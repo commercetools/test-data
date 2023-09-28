@@ -46,16 +46,16 @@ const cocktailStrainer = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Cocktail Strainer')
         ['en-GB']('Cocktail Strainer')
         ['de-DE']('Cocktailsieb')
-        ['en-US']('Cocktail Strainer')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('cocktail-strainer')
         ['en-GB']('cocktail-strainer')
         ['de-DE']('cocktailsieb')
-        ['en-US']('cocktail-strainer')
     )
     .productType(
       KeyReference.presets

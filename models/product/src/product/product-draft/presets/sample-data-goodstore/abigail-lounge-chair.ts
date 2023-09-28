@@ -50,16 +50,16 @@ const abigailLoungeChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Abigail Lounge Chair')
         ['en-GB']('Abigail Lounge Chair')
         ['de-DE']('Abigail Lounge-Sessel')
-        ['en-US']('Abigail Lounge Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('abigail-lounge-chair')
         ['en-GB']('abigail-lounge-chair')
         ['de-DE']('abigail-lounge-stuhl')
-        ['en-US']('abigail-lounge-chair')
     )
     .productType(
       KeyReference.presets

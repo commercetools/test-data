@@ -62,16 +62,16 @@ const minimalistCedarNightstand = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Minimalist Cedar Nightstand')
-        ['de-DE']('Minimalistischer Nachttisch aus Zedernholz')
         ['en-US']('Minimalist Cedar Nightstand')
+        ['en-GB']('Minimalist Cedar Nightstand')
+        ['de-DE']('Minimalistischer Zedernholz Nachttisch')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('minimalist-cedar-nightstand')
         ['en-GB']('minimalist-cedar-nightstand')
         ['de-DE']('minimalistischer-nachttisch-aus-zedernholz')
-        ['en-US']('minimalist-cedar-nightstand')
     )
     .productType(
       KeyReference.presets

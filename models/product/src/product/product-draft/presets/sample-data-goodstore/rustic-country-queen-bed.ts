@@ -50,16 +50,16 @@ const rusticCountryQueenBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Rustic Country Queen Bed')
         ['en-GB']('Rustic Country Queen Bed')
         ['de-DE']('Rustikales Queensize-Bett im Landhausstil')
-        ['en-US']('Rustic Country Queen Bed')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rustic-country-queen-bed')
         ['en-GB']('rustic-country-queen-bed')
         ['de-DE']('rustikales-country-queen-bett')
-        ['en-US']('rustic-country-queen-bed')
     )
     .productType(
       KeyReference.presets

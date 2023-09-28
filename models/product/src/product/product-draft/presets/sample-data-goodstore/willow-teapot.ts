@@ -50,16 +50,16 @@ const willowTeapot = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Willow Teapot')
         ['en-GB']('Willow Teapot')
         ['de-DE']('Willow Teekanne')
-        ['en-US']('Willow Teapot')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('willow-teapot')
         ['en-GB']('willow-teapot')
         ['de-DE']('willow-teekanne')
-        ['en-US']('willow-teapot')
     )
     .productType(
       KeyReference.presets.productType().key(willowTeapotProductTypeDraft.key!)

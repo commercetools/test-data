@@ -46,16 +46,16 @@ const wineBottleOpener = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Wine Bottle Opener')
         ['en-GB']('Wine Bottle Opener')
         ['de-DE']('Wein Flaschenöffner')
-        ['en-US']('Wine Bottle Opener')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('wine-bottle-opener')
         ['en-GB']('wine-bottle-opener')
         ['de-DE']('wein-flaschenffner')
-        ['en-US']('wine-bottle-opener')
     )
     .productType(
       KeyReference.presets

@@ -54,16 +54,16 @@ const modernGoldCoffeeTable = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Modern Gold Coffee Table')
-        ['de-DE']('Moderner Couchtisch in Gold')
         ['en-US']('Modern Gold Coffee Table')
+        ['en-GB']('Modern Gold Coffee Table')
+        ['de-DE']('Moderner Gold Couchtisch')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('modern-gold-coffee-table')
         ['en-GB']('modern-gold-coffee-table')
         ['de-DE']('moderner-couchtisch-in-gold')
-        ['en-US']('modern-gold-coffee-table')
     )
     .productType(
       KeyReference.presets

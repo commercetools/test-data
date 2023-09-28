@@ -58,16 +58,16 @@ const minimalistModernSideTable = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Minimalist Modern Side Table')
-        ['de-DE']('Minimalistischer moderner Beistelltisch')
         ['en-US']('Minimalist Modern Side Table')
+        ['en-GB']('Minimalist Modern Side Table')
+        ['de-DE']('Minimalistischer Moderner Beistelltisch')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('minimalist-modern-side-table')
         ['en-GB']('minimalist-modern-side-table')
         ['de-DE']('minimalistischer-moderner-beistelltisch')
-        ['en-US']('minimalist-modern-side-table')
     )
     .productType(
       KeyReference.presets

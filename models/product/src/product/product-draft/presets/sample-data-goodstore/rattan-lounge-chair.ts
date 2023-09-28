@@ -46,16 +46,16 @@ const rattanLoungeChair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Rattan Lounge Chair')
         ['en-GB']('Rattan Lounge Chair')
         ['de-DE']('Loungesessel aus Rattan')
-        ['en-US']('Rattan Lounge Chair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('rattan-lounge-chair')
         ['en-GB']('rattan-lounge-chair')
         ['de-DE']('rattan-loungesessel')
-        ['en-US']('rattan-lounge-chair')
     )
     .productType(
       KeyReference.presets

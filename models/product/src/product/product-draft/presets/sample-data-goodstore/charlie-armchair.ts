@@ -46,16 +46,16 @@ const charlieArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Charlie Armchair')
         ['en-GB']('Charlie Armchair')
         ['de-DE']('Sessel "Charlie"')
-        ['en-US']('Charlie Armchair')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('charlie-armchair')
         ['en-GB']('charlie-armchair')
         ['de-DE']('charlie-sessel')
-        ['en-US']('charlie-armchair')
     )
     .productType(
       KeyReference.presets

@@ -42,16 +42,16 @@ const patternedPillowCover = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Patterned Pillow Cover')
-        ['de-DE']('Gemusterte Kissenhülle')
         ['en-US']('Patterned Pillow Cover')
+        ['en-GB']('Patterned Pillow Cover')
+        ['de-DE']('Gemusterter Kissenbezug')
     )
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('patterned-pillow-cover')
         ['en-GB']('patterned-pillow-cover')
         ['de-DE']('gemusterte-kissenhlle')
-        ['en-US']('patterned-pillow-cover')
     )
     .productType(
       KeyReference.presets
