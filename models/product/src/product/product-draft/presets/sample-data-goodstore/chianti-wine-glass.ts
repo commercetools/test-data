@@ -32,7 +32,7 @@ const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
   .build<TCategoryDraft>();
 
 const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
-  .barGlassware()
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
