@@ -1,7 +1,8 @@
 import type { TProductDraft } from '../../../types';
 import steelHipFlask from './steel-hip-flask';
+
 describe(`with steelHipFlask preset`, () => {
-  it('should return a sample steelHipFlask product preset', () => {
+  it(`should return a steelHipFlask preset`, () => {
     const steelHipFlaskPreset = steelHipFlask().build<TProductDraft>();
     expect(steelHipFlaskPreset).toMatchInlineSnapshot(`
       {
@@ -17,47 +18,105 @@ describe(`with steelHipFlask preset`, () => {
           {
             "key": "kitchen",
             "typeId": "category",
-          }
+          },
         ],
-      "categoryOrderHints": {},
-      "key": "steel-hip-flask",
-      "name": {
-            "de-DE": "Flachmann aus Stahl",
-            "en-GB": "Steel Hip Flask",
-            "en-US": "Steel Hip Flask"
+        "categoryOrderHints": undefined,
+        "key": "steel-hip-flask",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+  {
+    "name": "productspec",
+    "value": {
+      "en-GB": "- Stainless steel",
+      "de-DE": "- Edelstahl",
+      "en-US": "- Stainless steel"
+    }
+  },
+  {
+    "name": "product-description",
+    "value": {
+      "en-GB": "A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.",
+      "en-US": "A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.",
+      "de-DE": "Ein Flachmann aus Stahl ist ein kleiner, gebogener und flacher Behälter aus Edelstahl. Es ist so konzipiert, dass es eine kleine Menge alkoholischer Getränke aufnehmen und transportieren kann, normalerweise etwa 6 bis 10 Unzen. Die Flasche hat einen Scharnier- oder Schraubdeckel, der ein einfaches Öffnen und Schließen ermöglicht, sowie eine kleine Öffnung zum Ausgießen oder Trinken des Inhalts. Die Außenseite des Kolbens ist glatt. Flachmänner werden oft in einer Tasche oder Handtasche für den diskreten Konsum von Alkohol unterwegs getragen."
+    }
+  }
+]
+,
+          "images": [
+  {
+    "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_326959618-xikecS3x.jpeg",
+    "dimensions": {
+      "w": 5006,
+      "h": 6580
+    }
+  }
+]
+,
+          "sku": undefined,
+          "prices": [
+  {
+    "value": {
+      "type": "centPrecision",
+      "currencyCode": "EUR",
+      "centAmount": 599,
+      "fractionDigits": 2
+    },
+    "country": "DE"
+  },
+  {
+    "value": {
+      "type": "centPrecision",
+      "currencyCode": "GBP",
+      "centAmount": 599,
+      "fractionDigits": 2
+    },
+    "country": "GB"
+  },
+  {
+    "value": {
+      "type": "centPrecision",
+      "currencyCode": "USD",
+      "centAmount": 599,
+      "fractionDigits": 2
+    },
+    "country": "US"
+  }
+]
+,
+        },
+      "metaDescription": {
+            "de-DE": "",
+            "en-GB": "",
+            "en-US": ""
           },
       "metaTitle": {
             "de-DE": "",
             "en-GB": "",
             "en-US": ""
           },
-      "searchKeywords": {},
-      "slug": {
+      "name": {
+            "de-DE": "Flachmann aus Stahl",
+            "en-GB": "Steel Hip Flask",
+            "en-US": "Steel Hip Flask"
+          },
+        "priceMode": Embedded,
+        "productType": {
+          "key": "furniture-and-decor",
+          "typeId": "product-type",
+        },
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": {
             "de-DE": "flachmann-aus-stahl",
             "en-GB": "steel-hip-flask",
             "en-US": "steel-hip-flask"
           },
-      "publish": true,
-      "priceMode": undefined,
-        {
-          "key": "vat-standard-eu",
+        "taxCategory": {
+          "key": "standard-tax-category",
           "typeId": "tax-category",
         },
-        {
-          "key": "furniture-and-decor",
-          "typeId": "product-type",
-        },
-        "masterVariant": {
-          "assets": undefined,
-          "sku": undefined,
-          "images": undefined,
-          "key": undefined,
-          "prices": undefined,
-          "attributes": [{"name":"productspec","value":{"en-GB":"- Stainless steel","de-DE":"- Edelstahl","en-US":"- Stainless steel"}},{"name":"product-description","value":{"en-GB":"A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.","en-US":"A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.","de-DE":"Ein Flachmann aus Stahl ist ein kleiner, gebogener und flacher Behälter aus Edelstahl. Es ist so konzipiert, dass es eine kleine Menge alkoholischer Getränke aufnehmen und transportieren kann, normalerweise etwa 6 bis 10 Unzen. Die Flasche hat einen Scharnier- oder Schraubdeckel, der ein einfaches Öffnen und Schließen ermöglicht, sowie eine kleine Öffnung zum Ausgießen oder Trinken des Inhalts. Die Außenseite des Kolbens ist glatt. Flachmänner werden oft in einer Tasche oder Handtasche für den diskreten Konsum von Alkohol unterwegs getragen."}}],
-        },
-        "variants": [
-
-       ]
+        "variants": undefined,
       }
     `);
   });
