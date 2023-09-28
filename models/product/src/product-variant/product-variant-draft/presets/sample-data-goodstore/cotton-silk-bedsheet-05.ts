@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
-import * as Image from '../../../../image';
+import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
@@ -23,13 +23,13 @@ const cottonSilkBedsheet05 = (): TProductVariantDraftBuilder =>
         .country('US'),
     ])
     .images([
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_342052824-YYm1GR3y.jpeg'
         )
         .dimensions({ w: 5589, h: 3627 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_369728670-8eeyUKq9.jpeg'

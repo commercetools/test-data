@@ -28,7 +28,7 @@ const classicCoffeeCupProductTypeDraft =
     .build<TProductTypeDraft>();
 
 const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
-  .barGlassware()
+  .barAndGlassware()
   .build<TCategoryDraft>();
 
 const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
