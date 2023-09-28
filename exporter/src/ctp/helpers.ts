@@ -145,7 +145,10 @@ export const writeFile = async (
     singleQuote: true,
     parser: 'typescript',
   });
-  writeFileSync(dir + '/' + buildFilename(filename) + '.ts', fcontent);
+  writeFileSync(
+    dir + '/' + buildFilename(filename) + '.ts',
+    fcontent.replaceAll('\\n', '\n')
+  );
 };
 
 export type IndexFile = { functionName: string; fileName: string };
