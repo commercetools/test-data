@@ -36,14 +36,6 @@ const leatherCoaster01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Enthält 4 Untersetzer',
         'en-US': '- Includes 4 coasters',
       }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.',
-        'en-US':
-          'A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.',
-        'de-DE':
-          'Ein runder Lederuntersetzer ist so konzipiert, dass er unter einem Getränk platziert werden kann, um die darunter liegende Oberfläche vor Feuchtigkeit und Hitze zu schützen. Es misst etwa 4 Zoll im Durchmesser und besteht aus hochwertigem Ledermaterial. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, um ein Verrutschen auf glatten Oberflächen zu verhindern.',
-      }),
       AttributeDraft.random()
         .name('color')
         .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
