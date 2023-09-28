@@ -8,4 +8,12 @@ describe(`with classicChampagneGlasses preset`, () => {
       classicChampagneGlasses().build<TProductDraft>();
     expect(classicChampagneGlassesPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a classicChampagneGlasses preset when built for graphql`, () => {
+    const classicChampagneGlassesPresetGraphql =
+      classicChampagneGlasses().buildGraphql<TProductDraft>();
+    expect(classicChampagneGlassesPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

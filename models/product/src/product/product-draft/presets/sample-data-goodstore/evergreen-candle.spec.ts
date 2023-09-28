@@ -7,4 +7,10 @@ describe(`with evergreenCandle preset`, () => {
     const evergreenCandlePreset = evergreenCandle().build<TProductDraft>();
     expect(evergreenCandlePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a evergreenCandle preset when built for graphql`, () => {
+    const evergreenCandlePresetGraphql =
+      evergreenCandle().buildGraphql<TProductDraft>();
+    expect(evergreenCandlePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

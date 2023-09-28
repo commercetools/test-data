@@ -7,4 +7,10 @@ describe(`with fawnArmchair preset`, () => {
     const fawnArmchairPreset = fawnArmchair().build<TProductDraft>();
     expect(fawnArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a fawnArmchair preset when built for graphql`, () => {
+    const fawnArmchairPresetGraphql =
+      fawnArmchair().buildGraphql<TProductDraft>();
+    expect(fawnArmchairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,10 @@ describe(`with walnutCounterStool preset`, () => {
       walnutCounterStool().build<TProductDraft>();
     expect(walnutCounterStoolPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a walnutCounterStool preset when built for graphql`, () => {
+    const walnutCounterStoolPresetGraphql =
+      walnutCounterStool().buildGraphql<TProductDraft>();
+    expect(walnutCounterStoolPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

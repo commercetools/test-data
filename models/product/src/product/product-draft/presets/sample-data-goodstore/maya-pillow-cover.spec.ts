@@ -7,4 +7,10 @@ describe(`with mayaPillowCover preset`, () => {
     const mayaPillowCoverPreset = mayaPillowCover().build<TProductDraft>();
     expect(mayaPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a mayaPillowCover preset when built for graphql`, () => {
+    const mayaPillowCoverPresetGraphql =
+      mayaPillowCover().buildGraphql<TProductDraft>();
+    expect(mayaPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

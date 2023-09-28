@@ -7,4 +7,10 @@ describe(`with silkyPillowCover preset`, () => {
     const silkyPillowCoverPreset = silkyPillowCover().build<TProductDraft>();
     expect(silkyPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a silkyPillowCover preset when built for graphql`, () => {
+    const silkyPillowCoverPresetGraphql =
+      silkyPillowCover().buildGraphql<TProductDraft>();
+    expect(silkyPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

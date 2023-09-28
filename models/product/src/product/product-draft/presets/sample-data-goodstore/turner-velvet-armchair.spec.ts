@@ -8,4 +8,12 @@ describe(`with turnerVelvetArmchair preset`, () => {
       turnerVelvetArmchair().build<TProductDraft>();
     expect(turnerVelvetArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a turnerVelvetArmchair preset when built for graphql`, () => {
+    const turnerVelvetArmchairPresetGraphql =
+      turnerVelvetArmchair().buildGraphql<TProductDraft>();
+    expect(turnerVelvetArmchairPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

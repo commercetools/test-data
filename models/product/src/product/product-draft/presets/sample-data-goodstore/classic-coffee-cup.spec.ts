@@ -7,4 +7,10 @@ describe(`with classicCoffeeCup preset`, () => {
     const classicCoffeeCupPreset = classicCoffeeCup().build<TProductDraft>();
     expect(classicCoffeeCupPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a classicCoffeeCup preset when built for graphql`, () => {
+    const classicCoffeeCupPresetGraphql =
+      classicCoffeeCup().buildGraphql<TProductDraft>();
+    expect(classicCoffeeCupPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

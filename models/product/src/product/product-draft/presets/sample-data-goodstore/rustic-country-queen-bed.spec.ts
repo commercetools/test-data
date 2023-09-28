@@ -8,4 +8,12 @@ describe(`with rusticCountryQueenBed preset`, () => {
       rusticCountryQueenBed().build<TProductDraft>();
     expect(rusticCountryQueenBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rusticCountryQueenBed preset when built for graphql`, () => {
+    const rusticCountryQueenBedPresetGraphql =
+      rusticCountryQueenBed().buildGraphql<TProductDraft>();
+    expect(rusticCountryQueenBedPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

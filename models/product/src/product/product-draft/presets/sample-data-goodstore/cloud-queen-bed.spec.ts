@@ -7,4 +7,10 @@ describe(`with cloudQueenBed preset`, () => {
     const cloudQueenBedPreset = cloudQueenBed().build<TProductDraft>();
     expect(cloudQueenBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cloudQueenBed preset when built for graphql`, () => {
+    const cloudQueenBedPresetGraphql =
+      cloudQueenBed().buildGraphql<TProductDraft>();
+    expect(cloudQueenBedPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

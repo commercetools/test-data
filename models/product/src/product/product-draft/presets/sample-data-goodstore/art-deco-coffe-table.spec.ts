@@ -7,4 +7,10 @@ describe(`with artDecoCoffeTable preset`, () => {
     const artDecoCoffeTablePreset = artDecoCoffeTable().build<TProductDraft>();
     expect(artDecoCoffeTablePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a artDecoCoffeTable preset when built for graphql`, () => {
+    const artDecoCoffeTablePresetGraphql =
+      artDecoCoffeTable().buildGraphql<TProductDraft>();
+    expect(artDecoCoffeTablePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

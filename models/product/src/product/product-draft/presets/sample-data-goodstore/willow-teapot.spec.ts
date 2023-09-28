@@ -7,4 +7,10 @@ describe(`with willowTeapot preset`, () => {
     const willowTeapotPreset = willowTeapot().build<TProductDraft>();
     expect(willowTeapotPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a willowTeapot preset when built for graphql`, () => {
+    const willowTeapotPresetGraphql =
+      willowTeapot().buildGraphql<TProductDraft>();
+    expect(willowTeapotPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

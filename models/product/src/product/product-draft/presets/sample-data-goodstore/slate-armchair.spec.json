@@ -104,5 +104,130 @@
       "en-GB": "slate-armchair",
       "en-US": "slate-armchair"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "furniture",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "armchairs",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "living-room-furniture",
+        "typeId": "category"
+      }
+    ],
+    "key": "slate-armchair",
+    "masterVariant": {
+      "sku": "SARM-09",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 59900,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 59900,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 59900,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_209944147-LGzWeBna.jpeg",
+          "dimensions": {
+            "height": 4004,
+            "width": 5009
+          }
+        },
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_220496250-oK34fG4v.jpeg",
+          "dimensions": {
+            "height": 3498,
+            "width": 5544
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "product-description",
+          "value": "{\"de-DE\":\"Ein minimalistischer Stuhl mit Ottomane ist ein schlankes und schlichtes Design, das klare Linien und Funktionalität betont. Die Ottomane ist ein passendes Stück und bietet dem Benutzer einen Ort, an dem er seine Füße abstützen und sich entspannen kann. Die Polsterung ist minimal, mit neutralen Farben und einfachen Mustern. Das Design ist von der modernen Ästhetik der Mitte des Jahrhunderts inspiriert, mit Fokus auf Schlichtheit und Funktionalität. Das Ergebnis ist ein bequemer und stilvoller Stuhl, der sich nahtlos in eine Vielzahl von Einrichtungsstilen einfügt.\",\"en-GB\":\"A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.\",\"en-US\":\"A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.\"}"
+        },
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Includes ottoman\",\"de-DE\":\"- Inklusive Ottomane\",\"en-US\":\"- Includes ottoman\"}"
+        },
+        {
+          "name": "color",
+          "value": "{\"en-GB\":\"#989898\",\"de-DE\":\"#989898\",\"en-US\":\"#989898\"}"
+        },
+        {
+          "name": "colorlabel",
+          "value": "{\"en-GB\":\"Slate\",\"de-DE\":\"Schiefer\",\"en-US\":\"Slate\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Slate Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Sessel aus Schiefer"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Slate Armchair"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "slate-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "sessel-aus-schiefer"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "slate-armchair"
+      }
+    ]
   }
 }

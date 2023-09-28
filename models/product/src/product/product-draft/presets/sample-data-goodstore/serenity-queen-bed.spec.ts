@@ -7,4 +7,10 @@ describe(`with serenityQueenBed preset`, () => {
     const serenityQueenBedPreset = serenityQueenBed().build<TProductDraft>();
     expect(serenityQueenBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a serenityQueenBed preset when built for graphql`, () => {
+    const serenityQueenBedPresetGraphql =
+      serenityQueenBed().buildGraphql<TProductDraft>();
+    expect(serenityQueenBedPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

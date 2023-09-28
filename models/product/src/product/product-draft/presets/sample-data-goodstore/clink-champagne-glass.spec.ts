@@ -8,4 +8,12 @@ describe(`with clinkChampagneGlass preset`, () => {
       clinkChampagneGlass().build<TProductDraft>();
     expect(clinkChampagneGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a clinkChampagneGlass preset when built for graphql`, () => {
+    const clinkChampagneGlassPresetGraphql =
+      clinkChampagneGlass().buildGraphql<TProductDraft>();
+    expect(clinkChampagneGlassPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

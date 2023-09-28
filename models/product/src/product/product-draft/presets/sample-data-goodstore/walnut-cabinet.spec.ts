@@ -7,4 +7,10 @@ describe(`with walnutCabinet preset`, () => {
     const walnutCabinetPreset = walnutCabinet().build<TProductDraft>();
     expect(walnutCabinetPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a walnutCabinet preset when built for graphql`, () => {
+    const walnutCabinetPresetGraphql =
+      walnutCabinet().buildGraphql<TProductDraft>();
+    expect(walnutCabinetPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

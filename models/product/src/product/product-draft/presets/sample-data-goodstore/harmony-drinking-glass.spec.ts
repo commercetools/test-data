@@ -8,4 +8,12 @@ describe(`with harmonyDrinkingGlass preset`, () => {
       harmonyDrinkingGlass().build<TProductDraft>();
     expect(harmonyDrinkingGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a harmonyDrinkingGlass preset when built for graphql`, () => {
+    const harmonyDrinkingGlassPresetGraphql =
+      harmonyDrinkingGlass().buildGraphql<TProductDraft>();
+    expect(harmonyDrinkingGlassPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

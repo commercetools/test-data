@@ -8,4 +8,12 @@ describe(`with cottonTwoSeaterSofa preset`, () => {
       cottonTwoSeaterSofa().build<TProductDraft>();
     expect(cottonTwoSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cottonTwoSeaterSofa preset when built for graphql`, () => {
+    const cottonTwoSeaterSofaPresetGraphql =
+      cottonTwoSeaterSofa().buildGraphql<TProductDraft>();
+    expect(cottonTwoSeaterSofaPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

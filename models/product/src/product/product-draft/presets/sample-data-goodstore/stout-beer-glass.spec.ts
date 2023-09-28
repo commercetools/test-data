@@ -7,4 +7,10 @@ describe(`with stoutBeerGlass preset`, () => {
     const stoutBeerGlassPreset = stoutBeerGlass().build<TProductDraft>();
     expect(stoutBeerGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a stoutBeerGlass preset when built for graphql`, () => {
+    const stoutBeerGlassPresetGraphql =
+      stoutBeerGlass().buildGraphql<TProductDraft>();
+    expect(stoutBeerGlassPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -7,4 +7,10 @@ describe(`with stoneServingTray preset`, () => {
     const stoneServingTrayPreset = stoneServingTray().build<TProductDraft>();
     expect(stoneServingTrayPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a stoneServingTray preset when built for graphql`, () => {
+    const stoneServingTrayPresetGraphql =
+      stoneServingTray().buildGraphql<TProductDraft>();
+    expect(stoneServingTrayPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

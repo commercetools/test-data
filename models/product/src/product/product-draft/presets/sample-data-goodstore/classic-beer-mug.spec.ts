@@ -7,4 +7,10 @@ describe(`with classicBeerMug preset`, () => {
     const classicBeerMugPreset = classicBeerMug().build<TProductDraft>();
     expect(classicBeerMugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a classicBeerMug preset when built for graphql`, () => {
+    const classicBeerMugPresetGraphql =
+      classicBeerMug().buildGraphql<TProductDraft>();
+    expect(classicBeerMugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

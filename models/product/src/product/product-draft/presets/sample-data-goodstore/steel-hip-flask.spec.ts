@@ -7,4 +7,10 @@ describe(`with steelHipFlask preset`, () => {
     const steelHipFlaskPreset = steelHipFlask().build<TProductDraft>();
     expect(steelHipFlaskPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a steelHipFlask preset when built for graphql`, () => {
+    const steelHipFlaskPresetGraphql =
+      steelHipFlask().buildGraphql<TProductDraft>();
+    expect(steelHipFlaskPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,10 @@ describe(`with classicServingTray preset`, () => {
       classicServingTray().build<TProductDraft>();
     expect(classicServingTrayPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a classicServingTray preset when built for graphql`, () => {
+    const classicServingTrayPresetGraphql =
+      classicServingTray().buildGraphql<TProductDraft>();
+    expect(classicServingTrayPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

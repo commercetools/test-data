@@ -81,5 +81,115 @@
       "en-GB": "cocktail-stirring-spoon",
       "en-US": "cocktail-stirring-spoon"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "bar-accessories",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "bar-and-glassware",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "kitchen",
+        "typeId": "category"
+      }
+    ],
+    "key": "cocktail-stirring-spoon",
+    "masterVariant": {
+      "sku": "Spoo-094",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 199,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 199,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 199,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_138383562-Ewqpr7_V.jpeg",
+          "dimensions": {
+            "height": 4555,
+            "width": 5757
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Stainless steel\\n- Dishwasher safe\",\"de-DE\":\"- Edelstahl\\n- Spülmaschinenfest\",\"en-US\":\"- Stainless steel\\n- Dishwasher safe\"}"
+        },
+        {
+          "name": "product-description",
+          "value": "{\"en-GB\":\"A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.\",\"en-US\":\"A cocktail stirring spoon is a long and slender utensil, made of stainless steel, used for stirring and mixing cocktails. It is usually around 8 inches long with a small, flat disc-shaped end for muddling ingredients and a twisted or spiraled handle for easy gripping. The twisted handle is not just for decoration, but also helps to create a better grip when mixing cocktails.\",\"de-DE\":\"Ein Cocktail-Rührlöffel ist ein langes und schlankes Utensil aus Edelstahl, das zum Rühren und Mixen von Cocktails verwendet wird. Es ist normalerweise etwa 8 Zoll lang mit einem kleinen, flachen, scheibenförmigen Ende zum Vermischen von Zutaten und einem gedrehten oder spiralförmigen Griff zum einfachen Greifen. Der gedrehte Griff dient nicht nur der Dekoration, sondern verhilft auch zu einem besseren Halt beim Mixen von Cocktails.\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Cocktail Stirring Spoon"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Cocktail-Rührlöffel"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cocktail Stirring Spoon"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "cocktail-stirring-spoon"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "cocktail-rhrlffel"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cocktail-stirring-spoon"
+      }
+    ]
   }
 }

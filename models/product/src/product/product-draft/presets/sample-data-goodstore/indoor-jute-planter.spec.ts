@@ -7,4 +7,10 @@ describe(`with indoorJutePlanter preset`, () => {
     const indoorJutePlanterPreset = indoorJutePlanter().build<TProductDraft>();
     expect(indoorJutePlanterPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a indoorJutePlanter preset when built for graphql`, () => {
+    const indoorJutePlanterPresetGraphql =
+      indoorJutePlanter().buildGraphql<TProductDraft>();
+    expect(indoorJutePlanterPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

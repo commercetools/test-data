@@ -8,4 +8,12 @@ describe(`with modernLandscapePainting preset`, () => {
       modernLandscapePainting().build<TProductDraft>();
     expect(modernLandscapePaintingPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernLandscapePainting preset when built for graphql`, () => {
+    const modernLandscapePaintingPresetGraphql =
+      modernLandscapePainting().buildGraphql<TProductDraft>();
+    expect(modernLandscapePaintingPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

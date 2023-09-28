@@ -130,5 +130,151 @@
       "en-GB": "traditional-armchair",
       "en-US": "traditional-armchair"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "living-room-furniture",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "furniture",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "the-traditionalist",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "armchairs",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "collections",
+        "typeId": "category"
+      }
+    ],
+    "key": "traditional-armchair",
+    "masterVariant": {
+      "sku": "TARM-034",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 29900,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 29900,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 29900,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305688619-r47M4s9Q.jpeg",
+          "dimensions": {
+            "height": 2500,
+            "width": 2500
+          }
+        },
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305687866-ED2hLSUD.jpeg",
+          "dimensions": {
+            "height": 2500,
+            "width": 2500
+          }
+        },
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305688508-6hRWGih2.jpeg",
+          "dimensions": {
+            "height": 3840,
+            "width": 5760
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Cotton upholstery\",\"de-DE\":\"- Baumwollpolsterung\",\"en-US\":\"- Cotton upholstery\"}"
+        },
+        {
+          "name": "product-description",
+          "value": "{\"en-GB\":\"A traditional armchair with a geometric pattern has a classic design with a touch of modern flair. The chair has a wooden frame and legs. The chair has a high back, providing a comfortable place to sit and relax. The cushioning is plush, offering a soft feel to the seat and backrest. The geometric pattern adds a visual interest and texture to the overall look of the chair, providing a subtle yet eye-catching element to the decor of the room.  Overall, a traditional armchair with a geometric pattern could be a great addition to a living room, study, or bedroom, offering both comfort and style to the space.\",\"en-US\":\"A traditional armchair with a geometric pattern has a classic design with a touch of modern flair. The chair has a wooden frame and legs. The chair has a high back, providing a comfortable place to sit and relax. The cushioning is plush, offering a soft feel to the seat and backrest. The geometric pattern adds a visual interest and texture to the overall look of the chair, providing a subtle yet eye-catching element to the decor of the room.  Overall, a traditional armchair with a geometric pattern could be a great addition to a living room, study, or bedroom, offering both comfort and style to the space.\",\"de-DE\":\"Ein traditioneller Sessel mit geometrischem Muster hat ein klassisches Design mit einem Hauch von modernem Flair. Der Stuhl hat einen Rahmen und Beine aus Holz. Der Stuhl hat eine hohe Rückenlehne, die einen bequemen Platz zum Sitzen und Entspannen bietet. Die Polsterung ist weich und bietet ein weiches Gefühl für Sitz und Rückenlehne. Das geometrische Muster fügt dem Gesamtbild des Stuhls ein visuelles Interesse und eine Textur hinzu und verleiht dem Dekor des Raums ein subtiles, aber auffälliges Element.  Insgesamt könnte ein traditioneller Sessel mit geometrischem Muster eine großartige Ergänzung für ein Wohn-, Arbeits- oder Schlafzimmer sein und dem Raum sowohl Komfort als auch Stil verleihen.\"}"
+        },
+        {
+          "name": "color-filter",
+          "value": "{\"key\":\"#F5F5DC\",\"label\":{\"de-DE\":\"Beige\",\"en-GB\":\"Beige\",\"en-US\":\"Beige\"}}"
+        },
+        {
+          "name": "color",
+          "value": "{\"en-GB\":\"#D0C1B0\",\"de-DE\":\"#D0C1B0\",\"en-US\":\"#D0C1B0\"}"
+        },
+        {
+          "name": "colorlabel",
+          "value": "{\"en-GB\":\"Eggshell\",\"de-DE\":\"Eierschale\",\"en-US\":\"Eggshell\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Traditional Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Traditioneller Sessel"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Traditional Armchair"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "traditional-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "traditioneller-sessel"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "traditional-armchair"
+      }
+    ]
   }
 }

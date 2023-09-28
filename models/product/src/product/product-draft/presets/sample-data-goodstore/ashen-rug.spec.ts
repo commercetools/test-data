@@ -7,4 +7,9 @@ describe(`with ashenRug preset`, () => {
     const ashenRugPreset = ashenRug().build<TProductDraft>();
     expect(ashenRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ashenRug preset when built for graphql`, () => {
+    const ashenRugPresetGraphql = ashenRug().buildGraphql<TProductDraft>();
+    expect(ashenRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

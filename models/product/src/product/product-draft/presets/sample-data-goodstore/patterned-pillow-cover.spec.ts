@@ -8,4 +8,12 @@ describe(`with patternedPillowCover preset`, () => {
       patternedPillowCover().build<TProductDraft>();
     expect(patternedPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a patternedPillowCover preset when built for graphql`, () => {
+    const patternedPillowCoverPresetGraphql =
+      patternedPillowCover().buildGraphql<TProductDraft>();
+    expect(patternedPillowCoverPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

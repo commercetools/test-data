@@ -7,4 +7,10 @@ describe(`with harvestPlate preset`, () => {
     const harvestPlatePreset = harvestPlate().build<TProductDraft>();
     expect(harvestPlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a harvestPlate preset when built for graphql`, () => {
+    const harvestPlatePresetGraphql =
+      harvestPlate().buildGraphql<TProductDraft>();
+    expect(harvestPlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,12 @@ describe(`with pinkAbstractPainting preset`, () => {
       pinkAbstractPainting().build<TProductDraft>();
     expect(pinkAbstractPaintingPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a pinkAbstractPainting preset when built for graphql`, () => {
+    const pinkAbstractPaintingPresetGraphql =
+      pinkAbstractPainting().buildGraphql<TProductDraft>();
+    expect(pinkAbstractPaintingPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

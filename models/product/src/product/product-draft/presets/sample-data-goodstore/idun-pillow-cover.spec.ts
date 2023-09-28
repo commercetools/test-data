@@ -7,4 +7,10 @@ describe(`with idunPillowCover preset`, () => {
     const idunPillowCoverPreset = idunPillowCover().build<TProductDraft>();
     expect(idunPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a idunPillowCover preset when built for graphql`, () => {
+    const idunPillowCoverPresetGraphql =
+      idunPillowCover().buildGraphql<TProductDraft>();
+    expect(idunPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

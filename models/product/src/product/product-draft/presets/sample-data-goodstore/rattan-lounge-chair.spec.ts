@@ -7,4 +7,10 @@ describe(`with rattanLoungeChair preset`, () => {
     const rattanLoungeChairPreset = rattanLoungeChair().build<TProductDraft>();
     expect(rattanLoungeChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rattanLoungeChair preset when built for graphql`, () => {
+    const rattanLoungeChairPresetGraphql =
+      rattanLoungeChair().buildGraphql<TProductDraft>();
+    expect(rattanLoungeChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

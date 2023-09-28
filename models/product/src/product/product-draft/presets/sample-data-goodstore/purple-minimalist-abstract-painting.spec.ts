@@ -10,4 +10,12 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
       productDraft.rest
     );
   });
+
+  it(`should return a purpleMinimalistAbstractPainting preset when built for graphql`, () => {
+    const purpleMinimalistAbstractPaintingPresetGraphql =
+      purpleMinimalistAbstractPainting().buildGraphql<TProductDraft>();
+    expect(purpleMinimalistAbstractPaintingPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

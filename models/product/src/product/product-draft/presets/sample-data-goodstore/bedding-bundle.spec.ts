@@ -7,4 +7,10 @@ describe(`with beddingBundle preset`, () => {
     const beddingBundlePreset = beddingBundle().build<TProductDraft>();
     expect(beddingBundlePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a beddingBundle preset when built for graphql`, () => {
+    const beddingBundlePresetGraphql =
+      beddingBundle().buildGraphql<TProductDraft>();
+    expect(beddingBundlePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

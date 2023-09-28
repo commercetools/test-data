@@ -108,5 +108,127 @@
       "en-GB": "serenity-queen-bed",
       "en-US": "serenity-queen-bed"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "bedroom-furniture",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "furniture",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "beds",
+        "typeId": "category"
+      }
+    ],
+    "key": "serenity-queen-bed",
+    "masterVariant": {
+      "sku": "IQB-09",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 99900,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 99900,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 99900,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Serenity%20Quuen%20Bed-JxrePlGT.jpeg",
+          "dimensions": {
+            "height": 2000,
+            "width": 2000
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\",\"en-US\":\"- Assembly included in delivery\"}"
+        },
+        {
+          "name": "product-description",
+          "value": "{\"en-GB\":\"A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.\",\"en-US\":\"A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.\",\"de-DE\":\"Ein Queensize-Bett mit industriellem Kissenkopfteil hat einen einzigartigen und kantigen Look. Das Kopfteil ist mit einem robusten beigefarbenen Stoff bezogen. Das Kopfteil umfasst Lederriemen, die ihm mit freiliegenden Schrauben und Bolzen ein industrielles Aussehen verleihen. Der Rahmen ist ebenfalls mit dem gleichen Stoff wie das Kopfteil bezogen. Das Bett hat ein einfaches, minimalistisches Design mit einem Holzrahmen und geraden Linien, die die kühne Aussage des Kopfteils ergänzen. Insgesamt wäre diese Art von Bett perfekt für jemanden, der seinem Schlafzimmerdekor einen Hauch von Industriestil verleihen möchte.\"}"
+        },
+        {
+          "name": "colorlabel",
+          "value": "{\"en-GB\":\"Gray\",\"de-DE\":\"Grau\",\"en-US\":\"Gray\"}"
+        },
+        {
+          "name": "color-filter",
+          "value": "{\"key\":\"#808080\",\"label\":{\"de-DE\":\"Grau\",\"en-GB\":\"Gray\",\"en-US\":\"Gray\"}}"
+        },
+        {
+          "name": "color",
+          "value": "{\"en-GB\":\"#DFDFDD\",\"de-DE\":\"#DFDFDD\",\"en-US\":\"#DFDFDD\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Serenity Queen Bed"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Gelassenheit Queen-Bett"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Serenity Queen Bed"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "serenity-queen-bed"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "gelassenheit-queen-bett"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "serenity-queen-bed"
+      }
+    ]
   }
 }

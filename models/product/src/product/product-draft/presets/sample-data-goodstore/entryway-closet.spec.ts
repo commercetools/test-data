@@ -7,4 +7,10 @@ describe(`with entrywayCloset preset`, () => {
     const entrywayClosetPreset = entrywayCloset().build<TProductDraft>();
     expect(entrywayClosetPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a entrywayCloset preset when built for graphql`, () => {
+    const entrywayClosetPresetGraphql =
+      entrywayCloset().buildGraphql<TProductDraft>();
+    expect(entrywayClosetPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

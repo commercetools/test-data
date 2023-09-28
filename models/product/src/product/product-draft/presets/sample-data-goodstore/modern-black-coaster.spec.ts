@@ -8,4 +8,10 @@ describe(`with modernBlackCoaster preset`, () => {
       modernBlackCoaster().build<TProductDraft>();
     expect(modernBlackCoasterPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernBlackCoaster preset when built for graphql`, () => {
+    const modernBlackCoasterPresetGraphql =
+      modernBlackCoaster().buildGraphql<TProductDraft>();
+    expect(modernBlackCoasterPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

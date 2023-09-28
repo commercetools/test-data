@@ -7,4 +7,10 @@ describe(`with travelCoffeeMug preset`, () => {
     const travelCoffeeMugPreset = travelCoffeeMug().build<TProductDraft>();
     expect(travelCoffeeMugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a travelCoffeeMug preset when built for graphql`, () => {
+    const travelCoffeeMugPresetGraphql =
+      travelCoffeeMug().buildGraphql<TProductDraft>();
+    expect(travelCoffeeMugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

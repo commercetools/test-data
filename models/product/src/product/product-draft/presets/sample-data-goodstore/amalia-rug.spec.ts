@@ -7,4 +7,9 @@ describe(`with amaliaRug preset`, () => {
     const amaliaRugPreset = amaliaRug().build<TProductDraft>();
     expect(amaliaRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a amaliaRug preset when built for graphql`, () => {
+    const amaliaRugPresetGraphql = amaliaRug().buildGraphql<TProductDraft>();
+    expect(amaliaRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

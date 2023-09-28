@@ -8,4 +8,10 @@ describe(`with cottonSilkBedsheet preset`, () => {
       cottonSilkBedsheet().build<TProductDraft>();
     expect(cottonSilkBedsheetPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cottonSilkBedsheet preset when built for graphql`, () => {
+    const cottonSilkBedsheetPresetGraphql =
+      cottonSilkBedsheet().buildGraphql<TProductDraft>();
+    expect(cottonSilkBedsheetPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

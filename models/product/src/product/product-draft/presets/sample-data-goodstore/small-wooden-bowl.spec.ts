@@ -7,4 +7,10 @@ describe(`with smallWoodenBowl preset`, () => {
     const smallWoodenBowlPreset = smallWoodenBowl().build<TProductDraft>();
     expect(smallWoodenBowlPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a smallWoodenBowl preset when built for graphql`, () => {
+    const smallWoodenBowlPresetGraphql =
+      smallWoodenBowl().buildGraphql<TProductDraft>();
+    expect(smallWoodenBowlPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,12 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
       canelaThreeSeaterSofa().build<TProductDraft>();
     expect(canelaThreeSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a canelaThreeSeaterSofa preset when built for graphql`, () => {
+    const canelaThreeSeaterSofaPresetGraphql =
+      canelaThreeSeaterSofa().buildGraphql<TProductDraft>();
+    expect(canelaThreeSeaterSofaPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

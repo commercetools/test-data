@@ -8,4 +8,12 @@ describe(`with rusticOvenCasserole preset`, () => {
       rusticOvenCasserole().build<TProductDraft>();
     expect(rusticOvenCasserolePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rusticOvenCasserole preset when built for graphql`, () => {
+    const rusticOvenCasserolePresetGraphql =
+      rusticOvenCasserole().buildGraphql<TProductDraft>();
+    expect(rusticOvenCasserolePresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

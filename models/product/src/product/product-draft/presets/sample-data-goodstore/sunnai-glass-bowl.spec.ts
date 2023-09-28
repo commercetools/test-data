@@ -7,4 +7,10 @@ describe(`with sunnaiGlassBowl preset`, () => {
     const sunnaiGlassBowlPreset = sunnaiGlassBowl().build<TProductDraft>();
     expect(sunnaiGlassBowlPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a sunnaiGlassBowl preset when built for graphql`, () => {
+    const sunnaiGlassBowlPresetGraphql =
+      sunnaiGlassBowl().buildGraphql<TProductDraft>();
+    expect(sunnaiGlassBowlPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

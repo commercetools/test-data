@@ -7,4 +7,10 @@ describe(`with ryeWhiskeyGlass preset`, () => {
     const ryeWhiskeyGlassPreset = ryeWhiskeyGlass().build<TProductDraft>();
     expect(ryeWhiskeyGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ryeWhiskeyGlass preset when built for graphql`, () => {
+    const ryeWhiskeyGlassPresetGraphql =
+      ryeWhiskeyGlass().buildGraphql<TProductDraft>();
+    expect(ryeWhiskeyGlassPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

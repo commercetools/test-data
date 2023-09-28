@@ -7,4 +7,10 @@ describe(`with vanillaCandle preset`, () => {
     const vanillaCandlePreset = vanillaCandle().build<TProductDraft>();
     expect(vanillaCandlePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a vanillaCandle preset when built for graphql`, () => {
+    const vanillaCandlePresetGraphql =
+      vanillaCandle().buildGraphql<TProductDraft>();
+    expect(vanillaCandlePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

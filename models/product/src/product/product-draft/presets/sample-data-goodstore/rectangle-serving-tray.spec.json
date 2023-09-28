@@ -85,5 +85,120 @@
       "en-GB": "rectangle-serving-tray",
       "en-US": "rectangle-serving-tray"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "serving-platters",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "serveware",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "dinnerware",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "kitchen",
+        "typeId": "category"
+      }
+    ],
+    "key": "rectangle-serving-tray",
+    "masterVariant": {
+      "sku": "RST-02",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Square%20Serving%20Tray-fsN02b33.jpeg",
+          "dimensions": {
+            "height": 4024,
+            "width": 6048
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Hand wash only\\n- Natural wood\",\"en-US\":\"- Hand wash only\\n- Natural wood\",\"de-DE\":\"- Handwäsche nur\\n- Naturholz\"}"
+        },
+        {
+          "name": "product-description",
+          "value": "{\"en-GB\":\"This wooden serving tray is a versatile and functional item that can be used in a variety of settings. The wooden material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.\",\"en-US\":\"This wooden serving tray is a versatile and functional item that can be used in a variety of settings. The wooden material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.\",\"de-DE\":\"Das Serviertablett aus Holz ist ein vielseitiger und funktionaler Gegenstand, der in einer Vielzahl von Gelegenheiten zum Einsatz kommt. Das für das Tablett verwendete Holz mit seiner warmen und natürlichen Ästhetik sorgt für den rustikalen Charme. Holztabletts sind leicht zu reinigen und zu pflegen. Sie können mit einem feuchten Tuch und einem milden Reinigungsmittel abgewischt werden. Nach dem Gebrauch sollten sie gründlich getrocknet werden, damit keine Feuchtigkeit im Inneren eingeschlossen wird. Ein Serviertablett aus Holz ist ein praktisches und zugleich attraktives Designelement, das jedes Ambiente mit seiner natürlichen Eleganz komplementiert. Es ist langlebig und vielseitig einsetzbar zum Servieren und Präsentieren von Speisen und Getränken, oder aber als Designelement zum Hervorheben einzelner Gegenstände.\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Rectangle Serving Tray"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Rechteckiges Serviertablett"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rectangle Serving Tray"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "rectangle-serving-tray"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "rechteckiges-serviertablett"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rectangle-serving-tray"
+      }
+    ]
   }
 }

@@ -7,4 +7,10 @@ describe(`with cocoaPillowCover preset`, () => {
     const cocoaPillowCoverPreset = cocoaPillowCover().build<TProductDraft>();
     expect(cocoaPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cocoaPillowCover preset when built for graphql`, () => {
+    const cocoaPillowCoverPresetGraphql =
+      cocoaPillowCover().buildGraphql<TProductDraft>();
+    expect(cocoaPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -7,4 +7,10 @@ describe(`with leahArmchair preset`, () => {
     const leahArmchairPreset = leahArmchair().build<TProductDraft>();
     expect(leahArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a leahArmchair preset when built for graphql`, () => {
+    const leahArmchairPresetGraphql =
+      leahArmchair().buildGraphql<TProductDraft>();
+    expect(leahArmchairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

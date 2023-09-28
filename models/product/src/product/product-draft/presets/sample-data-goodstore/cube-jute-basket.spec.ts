@@ -7,4 +7,10 @@ describe(`with cubeJuteBasket preset`, () => {
     const cubeJuteBasketPreset = cubeJuteBasket().build<TProductDraft>();
     expect(cubeJuteBasketPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cubeJuteBasket preset when built for graphql`, () => {
+    const cubeJuteBasketPresetGraphql =
+      cubeJuteBasket().buildGraphql<TProductDraft>();
+    expect(cubeJuteBasketPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

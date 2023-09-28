@@ -8,4 +8,12 @@ describe(`with purpleLandscapePainting preset`, () => {
       purpleLandscapePainting().build<TProductDraft>();
     expect(purpleLandscapePaintingPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a purpleLandscapePainting preset when built for graphql`, () => {
+    const purpleLandscapePaintingPresetGraphql =
+      purpleLandscapePainting().buildGraphql<TProductDraft>();
+    expect(purpleLandscapePaintingPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -7,4 +7,9 @@ describe(`with meadowRug preset`, () => {
     const meadowRugPreset = meadowRug().build<TProductDraft>();
     expect(meadowRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a meadowRug preset when built for graphql`, () => {
+    const meadowRugPresetGraphql = meadowRug().buildGraphql<TProductDraft>();
+    expect(meadowRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

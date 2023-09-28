@@ -8,4 +8,12 @@ describe(`with cocktailStirringSpoon preset`, () => {
       cocktailStirringSpoon().build<TProductDraft>();
     expect(cocktailStirringSpoonPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cocktailStirringSpoon preset when built for graphql`, () => {
+    const cocktailStirringSpoonPresetGraphql =
+      cocktailStirringSpoon().buildGraphql<TProductDraft>();
+    expect(cocktailStirringSpoonPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

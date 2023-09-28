@@ -81,5 +81,115 @@
       "en-GB": "steel-hip-flask",
       "en-US": "steel-hip-flask"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "bar-accessories",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "bar-and-glassware",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "kitchen",
+        "typeId": "category"
+      }
+    ],
+    "key": "steel-hip-flask",
+    "masterVariant": {
+      "sku": "FLAS-094",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 599,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_326959618-xikecS3x.jpeg",
+          "dimensions": {
+            "height": 6580,
+            "width": 5006
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- Stainless steel\",\"de-DE\":\"- Edelstahl\",\"en-US\":\"- Stainless steel\"}"
+        },
+        {
+          "name": "product-description",
+          "value": "{\"en-GB\":\"A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.\",\"en-US\":\"A steel hip flask is a small, curved, and flat container made of stainless steel. It is designed to hold and transport a small amount of alcoholic beverage, usually around 6-10 ounces. The flask has a hinged or screw-top lid that allows for easy opening and closing, as well as a small opening for pouring or drinking the contents. The exterior of the flask is smooth. Hip flasks are often carried in a pocket or purse for discreet consumption of alcohol while on-the-go.\",\"de-DE\":\"Ein Flachmann aus Stahl ist ein kleiner, gebogener und flacher Behälter aus Edelstahl. Es ist so konzipiert, dass es eine kleine Menge alkoholischer Getränke aufnehmen und transportieren kann, normalerweise etwa 6 bis 10 Unzen. Die Flasche hat einen Scharnier- oder Schraubdeckel, der ein einfaches Öffnen und Schließen ermöglicht, sowie eine kleine Öffnung zum Ausgießen oder Trinken des Inhalts. Die Außenseite des Kolbens ist glatt. Flachmänner werden oft in einer Tasche oder Handtasche für den diskreten Konsum von Alkohol unterwegs getragen.\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Steel Hip Flask"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Flachmann aus Stahl"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Steel Hip Flask"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "steel-hip-flask"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "flachmann-aus-stahl"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "steel-hip-flask"
+      }
+    ]
   }
 }

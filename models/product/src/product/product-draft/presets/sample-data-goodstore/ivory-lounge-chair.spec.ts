@@ -7,4 +7,10 @@ describe(`with ivoryLoungeChair preset`, () => {
     const ivoryLoungeChairPreset = ivoryLoungeChair().build<TProductDraft>();
     expect(ivoryLoungeChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ivoryLoungeChair preset when built for graphql`, () => {
+    const ivoryLoungeChairPresetGraphql =
+      ivoryLoungeChair().buildGraphql<TProductDraft>();
+    expect(ivoryLoungeChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -7,4 +7,9 @@ describe(`with juteRug preset`, () => {
     const juteRugPreset = juteRug().build<TProductDraft>();
     expect(juteRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a juteRug preset when built for graphql`, () => {
+    const juteRugPresetGraphql = juteRug().buildGraphql<TProductDraft>();
+    expect(juteRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

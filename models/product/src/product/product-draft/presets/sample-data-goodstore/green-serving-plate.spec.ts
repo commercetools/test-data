@@ -7,4 +7,10 @@ describe(`with greenServingPlate preset`, () => {
     const greenServingPlatePreset = greenServingPlate().build<TProductDraft>();
     expect(greenServingPlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a greenServingPlate preset when built for graphql`, () => {
+    const greenServingPlatePresetGraphql =
+      greenServingPlate().buildGraphql<TProductDraft>();
+    expect(greenServingPlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

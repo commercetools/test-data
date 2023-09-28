@@ -7,4 +7,9 @@ describe(`with brunoChair preset`, () => {
     const brunoChairPreset = brunoChair().build<TProductDraft>();
     expect(brunoChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a brunoChair preset when built for graphql`, () => {
+    const brunoChairPresetGraphql = brunoChair().buildGraphql<TProductDraft>();
+    expect(brunoChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

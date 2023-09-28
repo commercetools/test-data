@@ -7,4 +7,9 @@ describe(`with naturaRug preset`, () => {
     const naturaRugPreset = naturaRug().build<TProductDraft>();
     expect(naturaRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a naturaRug preset when built for graphql`, () => {
+    const naturaRugPresetGraphql = naturaRug().buildGraphql<TProductDraft>();
+    expect(naturaRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

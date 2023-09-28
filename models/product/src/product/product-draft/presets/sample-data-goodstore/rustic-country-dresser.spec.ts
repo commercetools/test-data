@@ -8,4 +8,12 @@ describe(`with rusticCountryDresser preset`, () => {
       rusticCountryDresser().build<TProductDraft>();
     expect(rusticCountryDresserPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rusticCountryDresser preset when built for graphql`, () => {
+    const rusticCountryDresserPresetGraphql =
+      rusticCountryDresser().buildGraphql<TProductDraft>();
+    expect(rusticCountryDresserPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

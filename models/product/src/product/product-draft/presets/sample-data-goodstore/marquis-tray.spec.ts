@@ -7,4 +7,10 @@ describe(`with marquisTray preset`, () => {
     const marquisTrayPreset = marquisTray().build<TProductDraft>();
     expect(marquisTrayPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a marquisTray preset when built for graphql`, () => {
+    const marquisTrayPresetGraphql =
+      marquisTray().buildGraphql<TProductDraft>();
+    expect(marquisTrayPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

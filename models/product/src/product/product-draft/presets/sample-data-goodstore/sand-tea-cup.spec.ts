@@ -7,4 +7,9 @@ describe(`with sandTeaCup preset`, () => {
     const sandTeaCupPreset = sandTeaCup().build<TProductDraft>();
     expect(sandTeaCupPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a sandTeaCup preset when built for graphql`, () => {
+    const sandTeaCupPresetGraphql = sandTeaCup().buildGraphql<TProductDraft>();
+    expect(sandTeaCupPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

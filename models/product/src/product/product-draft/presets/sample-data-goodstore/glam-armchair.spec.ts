@@ -7,4 +7,10 @@ describe(`with glamArmchair preset`, () => {
     const glamArmchairPreset = glamArmchair().build<TProductDraft>();
     expect(glamArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a glamArmchair preset when built for graphql`, () => {
+    const glamArmchairPresetGraphql =
+      glamArmchair().buildGraphql<TProductDraft>();
+    expect(glamArmchairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

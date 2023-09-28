@@ -8,4 +8,12 @@ describe(`with traditionalArmchair preset`, () => {
       traditionalArmchair().build<TProductDraft>();
     expect(traditionalArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a traditionalArmchair preset when built for graphql`, () => {
+    const traditionalArmchairPresetGraphql =
+      traditionalArmchair().buildGraphql<TProductDraft>();
+    expect(traditionalArmchairPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -8,4 +8,12 @@ describe(`with minimalistCedarNightstand preset`, () => {
       minimalistCedarNightstand().build<TProductDraft>();
     expect(minimalistCedarNightstandPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a minimalistCedarNightstand preset when built for graphql`, () => {
+    const minimalistCedarNightstandPresetGraphql =
+      minimalistCedarNightstand().buildGraphql<TProductDraft>();
+    expect(minimalistCedarNightstandPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

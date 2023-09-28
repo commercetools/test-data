@@ -8,4 +8,12 @@ describe(`with rectangleServingTray preset`, () => {
       rectangleServingTray().build<TProductDraft>();
     expect(rectangleServingTrayPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rectangleServingTray preset when built for graphql`, () => {
+    const rectangleServingTrayPresetGraphql =
+      rectangleServingTray().buildGraphql<TProductDraft>();
+    expect(rectangleServingTrayPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

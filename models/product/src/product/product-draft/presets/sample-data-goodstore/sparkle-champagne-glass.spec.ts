@@ -8,4 +8,12 @@ describe(`with sparkleChampagneGlass preset`, () => {
       sparkleChampagneGlass().build<TProductDraft>();
     expect(sparkleChampagneGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a sparkleChampagneGlass preset when built for graphql`, () => {
+    const sparkleChampagneGlassPresetGraphql =
+      sparkleChampagneGlass().buildGraphql<TProductDraft>();
+    expect(sparkleChampagneGlassPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

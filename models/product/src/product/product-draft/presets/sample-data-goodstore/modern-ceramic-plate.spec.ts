@@ -8,4 +8,10 @@ describe(`with modernCeramicPlate preset`, () => {
       modernCeramicPlate().build<TProductDraft>();
     expect(modernCeramicPlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernCeramicPlate preset when built for graphql`, () => {
+    const modernCeramicPlatePresetGraphql =
+      modernCeramicPlate().buildGraphql<TProductDraft>();
+    expect(modernCeramicPlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

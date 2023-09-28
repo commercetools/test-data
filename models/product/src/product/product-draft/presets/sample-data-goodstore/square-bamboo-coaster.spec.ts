@@ -8,4 +8,12 @@ describe(`with squareBambooCoaster preset`, () => {
       squareBambooCoaster().build<TProductDraft>();
     expect(squareBambooCoasterPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a squareBambooCoaster preset when built for graphql`, () => {
+    const squareBambooCoasterPresetGraphql =
+      squareBambooCoaster().buildGraphql<TProductDraft>();
+    expect(squareBambooCoasterPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

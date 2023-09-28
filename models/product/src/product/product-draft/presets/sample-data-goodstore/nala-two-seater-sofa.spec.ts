@@ -7,4 +7,10 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
     const nalaTwoSeaterSofaPreset = nalaTwoSeaterSofa().build<TProductDraft>();
     expect(nalaTwoSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a nalaTwoSeaterSofa preset when built for graphql`, () => {
+    const nalaTwoSeaterSofaPresetGraphql =
+      nalaTwoSeaterSofa().buildGraphql<TProductDraft>();
+    expect(nalaTwoSeaterSofaPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

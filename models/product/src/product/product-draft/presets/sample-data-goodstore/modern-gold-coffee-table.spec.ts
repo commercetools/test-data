@@ -8,4 +8,12 @@ describe(`with modernGoldCoffeeTable preset`, () => {
       modernGoldCoffeeTable().build<TProductDraft>();
     expect(modernGoldCoffeeTablePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernGoldCoffeeTable preset when built for graphql`, () => {
+    const modernGoldCoffeeTablePresetGraphql =
+      modernGoldCoffeeTable().buildGraphql<TProductDraft>();
+    expect(modernGoldCoffeeTablePresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -7,4 +7,10 @@ describe(`with leatherWeaveChair preset`, () => {
     const leatherWeaveChairPreset = leatherWeaveChair().build<TProductDraft>();
     expect(leatherWeaveChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a leatherWeaveChair preset when built for graphql`, () => {
+    const leatherWeaveChairPresetGraphql =
+      leatherWeaveChair().buildGraphql<TProductDraft>();
+    expect(leatherWeaveChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

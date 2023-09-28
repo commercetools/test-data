@@ -8,4 +8,12 @@ describe(`with doubleSidedShotGlass preset`, () => {
       doubleSidedShotGlass().build<TProductDraft>();
     expect(doubleSidedShotGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a doubleSidedShotGlass preset when built for graphql`, () => {
+    const doubleSidedShotGlassPresetGraphql =
+      doubleSidedShotGlass().buildGraphql<TProductDraft>();
+    expect(doubleSidedShotGlassPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -7,4 +7,9 @@ describe(`with braidedRug preset`, () => {
     const braidedRugPreset = braidedRug().build<TProductDraft>();
     expect(braidedRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a braidedRug preset when built for graphql`, () => {
+    const braidedRugPresetGraphql = braidedRug().buildGraphql<TProductDraft>();
+    expect(braidedRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

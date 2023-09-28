@@ -8,4 +8,12 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
       traditionalThreeSeaterSofa().build<TProductDraft>();
     expect(traditionalThreeSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a traditionalThreeSeaterSofa preset when built for graphql`, () => {
+    const traditionalThreeSeaterSofaPresetGraphql =
+      traditionalThreeSeaterSofa().buildGraphql<TProductDraft>();
+    expect(traditionalThreeSeaterSofaPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -92,5 +92,119 @@
       "en-GB": "cobblestone-rug",
       "en-US": "cobblestone-rug"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "rugs",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "room-decor",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "home-decor",
+        "typeId": "category"
+      }
+    ],
+    "key": "cobblestone-rug",
+    "masterVariant": {
+      "sku": "CR-098",
+      "prices": [
+        {
+          "country": "DE",
+          "value": {
+            "centPrecision": {
+              "centAmount": 12999,
+              "currencyCode": "EUR"
+            }
+          }
+        },
+        {
+          "country": "GB",
+          "value": {
+            "centPrecision": {
+              "centAmount": 12999,
+              "currencyCode": "GBP"
+            }
+          }
+        },
+        {
+          "country": "US",
+          "value": {
+            "centPrecision": {
+              "centAmount": 12999,
+              "currencyCode": "USD"
+            }
+          }
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Cobblestone%20Rug-n-Cz7uBo.jpeg",
+          "dimensions": {
+            "height": 2820,
+            "width": 7006
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "product-description",
+          "value": "{\"de-DE\":\"Der Cobblestone-Teppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Es ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen, wo sie dem Raum ein mutiges und grafisches Element hinzufügen können.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.\",\"en-GB\":\"The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.\",\"en-US\":\"The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.\"}"
+        },
+        {
+          "name": "color-filter",
+          "value": "{\"key\":\"#808080\",\"label\":{\"de-DE\":\"Grau\",\"en-GB\":\"Gray\",\"en-US\":\"Gray\"}}"
+        },
+        {
+          "name": "productspec",
+          "value": "{\"en-GB\":\"- 5ft x 3ft\",\"de-DE\":\"- 5 Fuß x 3 Fuß\",\"en-US\":\"- 5ft x 3ft\"}"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Cobblestone Rug"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Strukturteppich \"Kopfsteinpflaster\""
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cobblestone Rug"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "cobblestone-rug"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "kopfsteinpflaster"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cobblestone-rug"
+      }
+    ]
   }
 }

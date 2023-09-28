@@ -8,4 +8,10 @@ describe(`with abigailLoungeChair preset`, () => {
       abigailLoungeChair().build<TProductDraft>();
     expect(abigailLoungeChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a abigailLoungeChair preset when built for graphql`, () => {
+    const abigailLoungeChairPresetGraphql =
+      abigailLoungeChair().buildGraphql<TProductDraft>();
+    expect(abigailLoungeChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

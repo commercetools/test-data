@@ -7,4 +7,9 @@ describe(`with wilmaChair preset`, () => {
     const wilmaChairPreset = wilmaChair().build<TProductDraft>();
     expect(wilmaChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a wilmaChair preset when built for graphql`, () => {
+    const wilmaChairPresetGraphql = wilmaChair().buildGraphql<TProductDraft>();
+    expect(wilmaChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

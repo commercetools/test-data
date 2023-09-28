@@ -45,5 +45,70 @@
       "de-DE": "dreamscape-comfort-kollektion",
       "en-GB": "test-bundle"
     }
+  },
+  "graphql": {
+    "categories": [
+      {
+        "__typename": "Reference",
+        "key": "bedding",
+        "typeId": "category"
+      },
+      {
+        "__typename": "Reference",
+        "key": "home-decor",
+        "typeId": "category"
+      }
+    ],
+    "key": "bedding-bundle",
+    "masterVariant": {
+      "sku": "DCC-03",
+      "key": "bed-bundle-1",
+      "prices": [],
+      "attributes": [
+        {
+          "name": "product-ref",
+          "value": "[{\"typeId\":\"product\",\"id\":\"98654f5c-de8e-463c-903d-3c2f0c8176bc\"},{\"typeId\":\"product\",\"id\":\"0e56cf64-fa51-44e2-969a-3b3d6cd5bab3\"}]"
+        }
+      ]
+    },
+    "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "Dreamscape Comfort Collection"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "Dreamscape Comfort-Kollektion"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Dreamscape Comfort Collection"
+      }
+    ],
+    "productType": {
+      "__typename": "Reference",
+      "key": "bedding-bundle",
+      "typeId": "product-type"
+    },
+    "slug": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-GB",
+        "value": "test-bundle"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "de-DE",
+        "value": "dreamscape-comfort-kollektion"
+      },
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "test-bundle"
+      }
+    ]
   }
 }

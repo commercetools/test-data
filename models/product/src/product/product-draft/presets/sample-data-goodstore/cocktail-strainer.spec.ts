@@ -7,4 +7,10 @@ describe(`with cocktailStrainer preset`, () => {
     const cocktailStrainerPreset = cocktailStrainer().build<TProductDraft>();
     expect(cocktailStrainerPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cocktailStrainer preset when built for graphql`, () => {
+    const cocktailStrainerPresetGraphql =
+      cocktailStrainer().buildGraphql<TProductDraft>();
+    expect(cocktailStrainerPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

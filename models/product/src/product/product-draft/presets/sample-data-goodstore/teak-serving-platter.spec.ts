@@ -8,4 +8,10 @@ describe(`with teakServingPlatter preset`, () => {
       teakServingPlatter().build<TProductDraft>();
     expect(teakServingPlatterPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a teakServingPlatter preset when built for graphql`, () => {
+    const teakServingPlatterPresetGraphql =
+      teakServingPlatter().buildGraphql<TProductDraft>();
+    expect(teakServingPlatterPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

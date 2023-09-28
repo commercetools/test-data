@@ -7,4 +7,9 @@ describe(`with rumiChair preset`, () => {
     const rumiChairPreset = rumiChair().build<TProductDraft>();
     expect(rumiChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a rumiChair preset when built for graphql`, () => {
+    const rumiChairPresetGraphql = rumiChair().buildGraphql<TProductDraft>();
+    expect(rumiChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

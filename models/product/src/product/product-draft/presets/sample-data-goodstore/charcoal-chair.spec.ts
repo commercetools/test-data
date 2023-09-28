@@ -7,4 +7,10 @@ describe(`with charcoalChair preset`, () => {
     const charcoalChairPreset = charcoalChair().build<TProductDraft>();
     expect(charcoalChairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a charcoalChair preset when built for graphql`, () => {
+    const charcoalChairPresetGraphql =
+      charcoalChair().buildGraphql<TProductDraft>();
+    expect(charcoalChairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

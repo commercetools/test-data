@@ -7,4 +7,10 @@ describe(`with modernBookcase preset`, () => {
     const modernBookcasePreset = modernBookcase().build<TProductDraft>();
     expect(modernBookcasePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernBookcase preset when built for graphql`, () => {
+    const modernBookcasePresetGraphql =
+      modernBookcase().buildGraphql<TProductDraft>();
+    expect(modernBookcasePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

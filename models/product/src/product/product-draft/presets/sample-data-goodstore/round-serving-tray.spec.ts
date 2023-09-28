@@ -7,4 +7,10 @@ describe(`with roundServingTray preset`, () => {
     const roundServingTrayPreset = roundServingTray().build<TProductDraft>();
     expect(roundServingTrayPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a roundServingTray preset when built for graphql`, () => {
+    const roundServingTrayPresetGraphql =
+      roundServingTray().buildGraphql<TProductDraft>();
+    expect(roundServingTrayPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

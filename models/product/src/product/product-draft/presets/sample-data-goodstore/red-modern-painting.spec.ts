@@ -7,4 +7,10 @@ describe(`with redModernPainting preset`, () => {
     const redModernPaintingPreset = redModernPainting().build<TProductDraft>();
     expect(redModernPaintingPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a redModernPainting preset when built for graphql`, () => {
+    const redModernPaintingPresetGraphql =
+      redModernPainting().buildGraphql<TProductDraft>();
+    expect(redModernPaintingPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

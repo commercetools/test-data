@@ -7,4 +7,10 @@ describe(`with sipperCoffeeMug preset`, () => {
     const sipperCoffeeMugPreset = sipperCoffeeMug().build<TProductDraft>();
     expect(sipperCoffeeMugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a sipperCoffeeMug preset when built for graphql`, () => {
+    const sipperCoffeeMugPresetGraphql =
+      sipperCoffeeMug().buildGraphql<TProductDraft>();
+    expect(sipperCoffeeMugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,12 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
       doubleWalledEspressoGlass().build<TProductDraft>();
     expect(doubleWalledEspressoGlassPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a doubleWalledEspressoGlass preset when built for graphql`, () => {
+    const doubleWalledEspressoGlassPresetGraphql =
+      doubleWalledEspressoGlass().buildGraphql<TProductDraft>();
+    expect(doubleWalledEspressoGlassPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -7,4 +7,10 @@ describe(`with largeCeramicPlate preset`, () => {
     const largeCeramicPlatePreset = largeCeramicPlate().build<TProductDraft>();
     expect(largeCeramicPlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a largeCeramicPlate preset when built for graphql`, () => {
+    const largeCeramicPlatePresetGraphql =
+      largeCeramicPlate().buildGraphql<TProductDraft>();
+    expect(largeCeramicPlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -8,4 +8,12 @@ describe(`with geometricPillowCase preset`, () => {
       geometricPillowCase().build<TProductDraft>();
     expect(geometricPillowCasePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a geometricPillowCase preset when built for graphql`, () => {
+    const geometricPillowCasePresetGraphql =
+      geometricPillowCase().buildGraphql<TProductDraft>();
+    expect(geometricPillowCasePresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

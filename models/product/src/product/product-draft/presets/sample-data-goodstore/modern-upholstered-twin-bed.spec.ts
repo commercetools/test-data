@@ -8,4 +8,12 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
       modernUpholsteredTwinBed().build<TProductDraft>();
     expect(modernUpholsteredTwinBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernUpholsteredTwinBed preset when built for graphql`, () => {
+    const modernUpholsteredTwinBedPresetGraphql =
+      modernUpholsteredTwinBed().buildGraphql<TProductDraft>();
+    expect(modernUpholsteredTwinBedPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

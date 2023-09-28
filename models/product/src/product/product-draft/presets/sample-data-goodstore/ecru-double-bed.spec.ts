@@ -7,4 +7,10 @@ describe(`with ecruDoubleBed preset`, () => {
     const ecruDoubleBedPreset = ecruDoubleBed().build<TProductDraft>();
     expect(ecruDoubleBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ecruDoubleBed preset when built for graphql`, () => {
+    const ecruDoubleBedPresetGraphql =
+      ecruDoubleBed().buildGraphql<TProductDraft>();
+    expect(ecruDoubleBedPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

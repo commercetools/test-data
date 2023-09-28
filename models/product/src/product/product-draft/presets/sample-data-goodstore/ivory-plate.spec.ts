@@ -7,4 +7,9 @@ describe(`with ivoryPlate preset`, () => {
     const ivoryPlatePreset = ivoryPlate().build<TProductDraft>();
     expect(ivoryPlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ivoryPlate preset when built for graphql`, () => {
+    const ivoryPlatePresetGraphql = ivoryPlate().buildGraphql<TProductDraft>();
+    expect(ivoryPlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

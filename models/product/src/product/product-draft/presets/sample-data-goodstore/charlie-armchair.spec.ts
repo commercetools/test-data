@@ -7,4 +7,10 @@ describe(`with charlieArmchair preset`, () => {
     const charlieArmchairPreset = charlieArmchair().build<TProductDraft>();
     expect(charlieArmchairPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a charlieArmchair preset when built for graphql`, () => {
+    const charlieArmchairPresetGraphql =
+      charlieArmchair().buildGraphql<TProductDraft>();
+    expect(charlieArmchairPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

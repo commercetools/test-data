@@ -7,4 +7,10 @@ describe(`with benPillowCover preset`, () => {
     const benPillowCoverPreset = benPillowCover().build<TProductDraft>();
     expect(benPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a benPillowCover preset when built for graphql`, () => {
+    const benPillowCoverPresetGraphql =
+      benPillowCover().buildGraphql<TProductDraft>();
+    expect(benPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

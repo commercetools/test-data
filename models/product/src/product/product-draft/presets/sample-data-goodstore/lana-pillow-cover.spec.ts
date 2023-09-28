@@ -7,4 +7,10 @@ describe(`with lanaPillowCover preset`, () => {
     const lanaPillowCoverPreset = lanaPillowCover().build<TProductDraft>();
     expect(lanaPillowCoverPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a lanaPillowCover preset when built for graphql`, () => {
+    const lanaPillowCoverPresetGraphql =
+      lanaPillowCover().buildGraphql<TProductDraft>();
+    expect(lanaPillowCoverPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

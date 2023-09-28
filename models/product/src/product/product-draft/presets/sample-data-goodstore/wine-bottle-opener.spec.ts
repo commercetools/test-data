@@ -7,4 +7,10 @@ describe(`with wineBottleOpener preset`, () => {
     const wineBottleOpenerPreset = wineBottleOpener().build<TProductDraft>();
     expect(wineBottleOpenerPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a wineBottleOpener preset when built for graphql`, () => {
+    const wineBottleOpenerPresetGraphql =
+      wineBottleOpener().buildGraphql<TProductDraft>();
+    expect(wineBottleOpenerPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

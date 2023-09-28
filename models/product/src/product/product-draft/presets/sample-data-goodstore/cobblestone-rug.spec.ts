@@ -7,4 +7,10 @@ describe(`with cobblestoneRug preset`, () => {
     const cobblestoneRugPreset = cobblestoneRug().build<TProductDraft>();
     expect(cobblestoneRugPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a cobblestoneRug preset when built for graphql`, () => {
+    const cobblestoneRugPresetGraphql =
+      cobblestoneRug().buildGraphql<TProductDraft>();
+    expect(cobblestoneRugPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

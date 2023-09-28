@@ -7,4 +7,10 @@ describe(`with opalKingBed preset`, () => {
     const opalKingBedPreset = opalKingBed().build<TProductDraft>();
     expect(opalKingBedPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a opalKingBed preset when built for graphql`, () => {
+    const opalKingBedPresetGraphql =
+      opalKingBed().buildGraphql<TProductDraft>();
+    expect(opalKingBedPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

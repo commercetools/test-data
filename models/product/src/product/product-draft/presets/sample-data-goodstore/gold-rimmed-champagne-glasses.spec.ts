@@ -8,4 +8,12 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
       goldRimmedChampagneGlasses().build<TProductDraft>();
     expect(goldRimmedChampagneGlassesPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a goldRimmedChampagneGlasses preset when built for graphql`, () => {
+    const goldRimmedChampagneGlassesPresetGraphql =
+      goldRimmedChampagneGlasses().buildGraphql<TProductDraft>();
+    expect(goldRimmedChampagneGlassesPresetGraphql).toMatchObject(
+      productDraft.graphql
+    );
+  });
 });

@@ -7,4 +7,10 @@ describe(`with ellaSquarePlate preset`, () => {
     const ellaSquarePlatePreset = ellaSquarePlate().build<TProductDraft>();
     expect(ellaSquarePlatePreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a ellaSquarePlate preset when built for graphql`, () => {
+    const ellaSquarePlatePresetGraphql =
+      ellaSquarePlate().buildGraphql<TProductDraft>();
+    expect(ellaSquarePlatePresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });

@@ -7,4 +7,10 @@ describe(`with modernGlamDresser preset`, () => {
     const modernGlamDresserPreset = modernGlamDresser().build<TProductDraft>();
     expect(modernGlamDresserPreset).toMatchObject(productDraft.rest);
   });
+
+  it(`should return a modernGlamDresser preset when built for graphql`, () => {
+    const modernGlamDresserPresetGraphql =
+      modernGlamDresser().buildGraphql<TProductDraft>();
+    expect(modernGlamDresserPresetGraphql).toMatchObject(productDraft.graphql);
+  });
 });
