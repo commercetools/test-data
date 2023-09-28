@@ -1,0 +1,91 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const canelaThreeSeaterSofaProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .furniture()
+  .build<TCategoryDraft>();
+
+const sofasDraft = CategoryDraft.presets.sampleDataGoodStore
+  .sofas()
+  .build<TCategoryDraft>();
+
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .livingRoomFurniture()
+  .build<TCategoryDraft>();
+
+const canelaThreeSeaterSofa = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('canela-three-seater-sofa')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Canela Three-Seater Sofa')
+        ['de-DE']('Canela 3-Sitzer-Sofa')
+        ['en-US']('Canela Three-Seater Sofa')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'A leather three-seater sofa is a piece of furniture designed to provide comfortable seating for three people. The sofa is made of high-quality leather, which is known for its durability, strength, and natural beauty. The leather material is treated with protective coatings to make it more resistant to wear and tear, stains, and spills.  The sofa features a sturdy frame made of wood, with a series of springs and cushions providing support and comfort for the seated individuals. The cushions are filled with down feathers.  The leather sofa has clean lines and minimal decorative elements for a more modern or contemporary look.  Overall, a leather three-seater sofa is a versatile and stylish piece of furniture that can provide comfortable seating and add a touch of elegance to any living space.'
+        )
+        ['en-US'](
+          'A leather three-seater sofa is a piece of furniture designed to provide comfortable seating for three people. The sofa is made of high-quality leather, which is known for its durability, strength, and natural beauty. The leather material is treated with protective coatings to make it more resistant to wear and tear, stains, and spills.  The sofa features a sturdy frame made of wood, with a series of springs and cushions providing support and comfort for the seated individuals. The cushions are filled with down feathers.  The leather sofa has clean lines and minimal decorative elements for a more modern or contemporary look.  Overall, a leather three-seater sofa is a versatile and stylish piece of furniture that can provide comfortable seating and add a touch of elegance to any living space.'
+        )
+        ['de-DE'](
+          'Ein Leder-Dreisitzer-Sofa ist ein Möbelstück, das entworfen wurde, um bequemen Platz für drei Personen zu bieten. Das Sofa ist aus hochwertigem Leder gefertigt, das für seine Langlebigkeit, Stärke und natürliche Schönheit bekannt ist. Das Ledermaterial wird mit Schutzbeschichtungen behandelt, um es widerstandsfähiger gegen Abnutzung, Flecken und Spritzer zu machen.  Das Sofa verfügt über einen stabilen Rahmen aus Holz mit einer Reihe von Federn und Kissen, die den sitzenden Personen Halt und Komfort bieten. Die Kissen sind mit Daunenfedern gefüllt.  Das Ledersofa hat klare Linien und minimale dekorative Elemente für einen moderneren oder zeitgemäßeren Look.  Insgesamt ist ein Leder-Dreisitzer-Sofa ein vielseitiges und stilvolles Möbelstück, das bequeme Sitzgelegenheiten bietet und jedem Wohnraum einen Hauch von Eleganz verleiht.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('canela-three-seater-sofa')
+        ['de-DE']('canela-3-sitzer-sofa')
+        ['en-US']('canela-three-seater-sofa')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(canelaThreeSeaterSofaProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.canelaThreeSeaterSofa01()
+    )
+    .categories([
+      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReference.presets.category().key(sofasDraft.key!),
+      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+    ]);
+
+export default canelaThreeSeaterSofa;

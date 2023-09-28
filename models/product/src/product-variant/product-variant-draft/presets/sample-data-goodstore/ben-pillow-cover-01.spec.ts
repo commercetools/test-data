@@ -1,0 +1,209 @@
+import type { TProductVariantDraft } from '../../../types';
+import benPillowCover01 from './ben-pillow-cover-01';
+
+describe(`with benPillowCover01 preset`, () => {
+  it(`should return a benPillowCover01 preset`, () => {
+    const benPillowCover01Preset =
+      benPillowCover01().build<TProductVariantDraft>();
+    expect(benPillowCover01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Waschmaschinenfest
+      - Bezug ist abnehmbar
+      - Kissen nicht im Lieferumfang enthalten",
+              "en-GB": "- Machine-washable
+      - Cover is removable
+      - Does not include pillow",
+              "en-US": "- Machine-washable
+      - Cover is removable
+      - Does not include pillow",
+            },
+          },
+          {
+            "name": "color-filter",
+            "value": {
+              "key": "#D2B48C",
+              "label": {
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
+              },
+            },
+          },
+          {
+            "name": "color",
+            "value": {
+              "de-DE": "#A69465",
+              "en-GB": "#A69465",
+              "en-US": "#A69465",
+            },
+          },
+          {
+            "name": "colorlabel",
+            "value": {
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 4160,
+              "w": 6240,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Ben%20Pillow%20Cover-EQp6ZHZK.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1299,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1299,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1299,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "LBPC-09",
+      }
+    `);
+  });
+
+  it(`should return a benPillowCover01 preset when built for graphql`, () => {
+    const benPillowCover01PresetGraphql =
+      benPillowCover01().buildGraphql<TProductVariantDraft>();
+    expect(benPillowCover01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Machine-washable\\n- Cover is removable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Bezug ist abnehmbar\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine-washable\\n- Cover is removable\\n- Does not include pillow"}",
+          },
+          {
+            "name": "color-filter",
+            "value": "{"key":"#D2B48C","label":{"de-DE":"Bräunen","en-GB":"Tan","en-US":"Tan"}}",
+          },
+          {
+            "name": "color",
+            "value": "{"en-GB":"#A69465","de-DE":"#A69465","en-US":"#A69465"}",
+          },
+          {
+            "name": "colorlabel",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 4160,
+              "width": 6240,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Ben%20Pillow%20Cover-EQp6ZHZK.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1299,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1299,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1299,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "LBPC-09",
+      }
+    `);
+  });
+});

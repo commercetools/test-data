@@ -1,0 +1,89 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const charcoalChairProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .furniture()
+  .build<TCategoryDraft>();
+
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .armchairs()
+  .build<TCategoryDraft>();
+
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .livingRoomFurniture()
+  .build<TCategoryDraft>();
+
+const charcoalChair = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('charcoal-chair')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('Charcoal Chair')
+        ['de-DE']('Holzkohle-Stuhl')
+        ['en-US']('Charcoal Chair')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'This chair with leather upholstery features a sturdy frame and legs. The seat and backrest are covered in high-quality leather, which may be smooth or textured depending on the design. The leather is stretched taut over a layer of padding to provide comfort and support for the person sitting in the chair.  The chair has a high backrest making it ideal for the dining room or a study room.  Overall, a chair with leather upholstery is typically sleek and modern in design, providing a comfortable and stylish seating option for any room.'
+        )
+        ['en-US'](
+          'This chair with leather upholstery features a sturdy frame and legs. The seat and backrest are covered in high-quality leather, which may be smooth or textured depending on the design. The leather is stretched taut over a layer of padding to provide comfort and support for the person sitting in the chair.  The chair has a high backrest making it ideal for the dining room or a study room.  Overall, a chair with leather upholstery is typically sleek and modern in design, providing a comfortable and stylish seating option for any room.'
+        )
+        ['de-DE'](
+          'Dieser Stuhl mit Lederbezug verfügt über einen stabilen Rahmen und Beine. Sitzfläche und Rückenlehne sind mit hochwertigem Leder bezogen, das je nach Ausführung glatt oder strukturiert sein kann. Das Leder wird straff über eine Polsterschicht gespannt, um der auf dem Stuhl sitzenden Person Komfort und Halt zu bieten.  Der Stuhl hat eine hohe Rückenlehne, was ihn ideal für das Esszimmer oder ein Arbeitszimmer macht.  Insgesamt ist ein Stuhl mit Lederpolsterung typischerweise elegant und modern im Design und bietet eine komfortable und stilvolle Sitzgelegenheit für jeden Raum.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-GB']('charcoal-chair')
+        ['de-DE']('holzkohle-stuhl')
+        ['en-US']('charcoal-chair')
+    )
+    .productType(
+      KeyReference.presets.productType().key(charcoalChairProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.charcoalChair01()
+    )
+    .categories([
+      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReference.presets.category().key(armchairsDraft.key!),
+      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+    ]);
+
+export default charcoalChair;
