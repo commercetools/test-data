@@ -10,19 +10,19 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const opalKingBedProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodstore
+const opalKingBedProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
   .furnitureAndDecor()
   .build<TProductTypeDraft>();
 
@@ -61,10 +61,10 @@ const opalKingBed = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.opalKingBed01()
+      ProductVariantDraft.presets.sampleDataGoodStore.opalKingBed01()
     )
     .categories([
       KeyReference.presets.category().key(bedroomFurnitureDraft.key!),

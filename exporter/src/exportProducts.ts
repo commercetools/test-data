@@ -16,26 +16,25 @@ const products = async () => {
   ]);
   console.log('Found ' + products.results.length + ' products');
 
-  const header =
-    'import {\n' +
-    '  CategoryDraft,\n' +
-    '  TCategoryDraft,\n' +
-    "} from '@commercetools-test-data/category';\n" +
-    'import {\n' +
-    '  KeyReference,\n' +
-    '  LocalizedString,\n' +
-    "} from '@commercetools-test-data/commons';\n" +
-    'import {\n' +
-    '  ProductTypeDraft,\n' +
-    '  type TProductTypeDraft,\n' +
-    "} from '@commercetools-test-data/product-type';\n" +
-    "import { ProductVariantDraft } from '@commercetools-test-data/product-variant';\n" +
-    'import {\n' +
-    '  TaxCategoryDraft,\n' +
-    '  type TTaxCategoryDraft,\n' +
-    "} from '@commercetools-test-data/tax-category';\n" +
-    "import * as ProductDraft from '../../../product-draft';\n" +
-    "import type { TProductDraftBuilder } from '../../../types';";
+  const header = `import {
+CategoryDraft,
+TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+KeyReference,
+LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+ProductTypeDraft,
+type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+TaxCategoryDraft,
+type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant/index';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';`;
 
   for (const product of products.results) {
     let content = header;
@@ -54,23 +53,18 @@ const products = async () => {
       content +=
         '\n\nconst ' +
         taxcategoryName +
-        'Draft = TaxCategoryDraft.presets.sampleDataGoodstore\n' +
-        '  .' +
+        'Draft = TaxCategoryDraft.presets.sampleDataGoodStore\n' +
+        '.' +
         taxcategoryName +
         '()\n' +
-        '  .build<TTaxCategoryDraft>();\n\n';
+        '.build<TTaxCategoryDraft>();\n\n';
     }
 
-    content +=
-      'const ' +
-      productTypeConstName +
-      ' = ProductTypeDraft.presets.' +
-      buildFunctionname(getFolder()) +
-      '\n' +
-      '  .' +
-      buildFunctionname(productType.key!) +
-      '()\n' +
-      '  .build<TProductTypeDraft>();\n\n';
+    content += `const ${productTypeConstName} = ProductTypeDraft.presets.sampleDataGoodStore
+.${buildFunctionname(productType.key!)}()
+.build<TProductTypeDraft>();
+
+`;
 
     const categoryReferences = [];
 
@@ -84,10 +78,10 @@ const products = async () => {
         'const ' +
         categoryFunctionname +
         'Draft = CategoryDraft.presets.sampleDataGoodstore\n' +
-        '  .' +
+        '.' +
         categoryFunctionname +
         '()\n' +
-        '  .build<TCategoryDraft>();\n\n';
+        '.build<TCategoryDraft>();\n\n';
 
       categoryReferences.push(categoryFunctionname + 'Draft');
     }
@@ -96,57 +90,55 @@ const products = async () => {
       'const ' +
       identifier +
       ' = (): TProductDraftBuilder =>\n' +
-      '  ProductDraft.presets\n' +
-      '    .empty()\n';
+      'ProductDraft.presets\n' +
+      '  .empty()\n';
 
-    content = addEntry('key', content, product.key, '    ');
+    content = addEntry('key', content, product.key, '  ');
     content = addEntry(
       'name',
       content,
       formatLocalizedString(product.masterData.staged.name),
-      '    ',
+      '  ',
       false
     );
     content = addEntry(
       'slug',
       content,
       formatLocalizedString(product.masterData.staged.slug),
-      '    ',
+      '  ',
       false
     );
     content +=
-      '    .productType(\n' +
-      '      KeyReference.presets.productType().key(' +
+      '  .productType(\n' +
+      '    KeyReference.presets.productType().key(' +
       productTypeConstName +
       '.key!)\n' +
-      '    )\n' +
-      '    .publish(true)\n';
+      '  )\n' +
+      '  .publish(true)\n';
     if (taxcategoryName) {
       content +=
-        '    .taxCategory(\n' +
-        '      KeyReference.presets.taxCategory().key(' +
+        '  .taxCategory(\n' +
+        '    KeyReference.presets.taxCategory().key(' +
         taxcategoryName +
         'Draft.key!)\n' +
-        '    )\n';
+        '  )\n';
     }
     content +=
-      '    .masterVariant(\n' +
-      '      ProductVariantDraft.presets.' +
-      buildFunctionname(getFolder()) +
+      '  .masterVariant(\n' +
+      '    ProductVariantDraft.presets.sampleDataGoodStore' +
       '.' +
       buildVariant(identifier, product.masterData.staged.masterVariant.id, '') +
       '()\n' +
-      '    )\n';
+      '  )\n';
     if (
       product.masterData.staged.variants &&
       product.masterData.staged.variants.length > 0
     ) {
-      content += '    .variants([\n';
+      content += '  .variants([\n';
       content += product.masterData.staged.variants
         .map((variant) => {
           return (
-            '      ProductVariantDraft.presets.' +
-            buildFunctionname(getFolder()) +
+            '    ProductVariantDraft.presets.sampleDataGoodStore' +
             '.' +
             buildVariant(
               identifier,
@@ -157,14 +149,14 @@ const products = async () => {
           );
         })
         .join('');
-      content += '    ])';
+      content += '  ])';
     }
 
     if (categoryReferences.length >= 0) {
-      content += '    .categories([\n';
+      content += '  .categories([\n';
       content += categoryReferences
         .map((item) => {
-          return '      KeyReference.presets.category().key(' + item + '.key!)';
+          return '    KeyReference.presets.category().key(' + item + '.key!)';
         })
         .join(',\n');
       content += '\n    ]);\n';

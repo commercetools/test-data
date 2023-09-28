@@ -10,19 +10,19 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const ariaRugProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodstore
+const ariaRugProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
   .furnitureAndDecor()
   .build<TProductTypeDraft>();
 
@@ -46,7 +46,7 @@ const ariaRug = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Aria Rug')
-        ['de-DE']('Aria Teppich')
+        ['de-DE']('Teppich "Aria"')
         ['en-US']('Aria Rug')
     )
     .slug(
@@ -61,9 +61,9 @@ const ariaRug = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .masterVariant(ProductVariantDraft.presets.sampleDataGoodstore.ariaRug01())
+    .masterVariant(ProductVariantDraft.presets.sampleDataGoodStore.ariaRug01())
     .categories([
       KeyReference.presets.category().key(rugsDraft.key!),
       KeyReference.presets.category().key(roomDecorDraft.key!),

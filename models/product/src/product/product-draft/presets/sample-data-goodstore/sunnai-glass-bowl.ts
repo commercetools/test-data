@@ -10,20 +10,20 @@ import {
   ProductTypeDraft,
   type TProductTypeDraft,
 } from '@commercetools-test-data/product-type';
-import { ProductVariantDraft } from '@commercetools-test-data/product-variant';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
 import type { TProductDraftBuilder } from '../../../types';
 
-const vatStandardEuDraft = TaxCategoryDraft.presets.sampleDataGoodstore
-  .vatStandardEu()
+const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
 const sunnaiGlassBowlProductTypeDraft =
-  ProductTypeDraft.presets.sampleDataGoodstore
+  ProductTypeDraft.presets.sampleDataGoodStore
     .productSets()
     .build<TProductTypeDraft>();
 
@@ -68,13 +68,13 @@ const sunnaiGlassBowl = (): TProductDraftBuilder =>
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(vatStandardEuDraft.key!)
+      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodstore.sunnaiGlassBowl01()
+      ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodstore.sunnaiGlassBowl01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl01(),
     ])
     .categories([
       KeyReference.presets.category().key(bowlsDraft.key!),
