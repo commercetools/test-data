@@ -9,6 +9,6 @@ const beddingBundle01 = (): TProductVariantDraftBuilder =>
     .key('bed-bundle-1')
     .prices([])
     .images([])
-    .attributes([AttributeDraft.random().name('product-ref').value(null)]);
+    .attributes([AttributeDraft.random().name('product-ref').value('')]);
 
 export default beddingBundle01;

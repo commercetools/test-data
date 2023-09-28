@@ -11,7 +11,7 @@ describe(`with beddingBundle01 preset`, () => {
         "attributes": [
           {
             "name": "product-ref",
-            "value": null,
+            "value": "",
           },
         ],
         "images": [],
@@ -31,7 +31,7 @@ describe(`with beddingBundle01 preset`, () => {
         "attributes": [
           {
             "name": "product-ref",
-            "value": "null",
+            "value": """",
           },
         ],
         "images": [],
