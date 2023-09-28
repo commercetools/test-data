@@ -147,11 +147,7 @@ import type { TProductDraftBuilder } from '../../../types';`;
           return (
             '    ProductVariantDraft.presets.sampleDataGoodStore' +
             '.' +
-            buildVariant(
-              identifier,
-              product.masterData.staged.masterVariant.id,
-              ''
-            ) +
+            buildVariant(identifier, variant.id, '') +
             '(),\n'
           );
         })

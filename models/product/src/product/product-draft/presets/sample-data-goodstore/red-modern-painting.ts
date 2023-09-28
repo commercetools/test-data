@@ -47,7 +47,7 @@ const redModernPainting = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Red Modern Painting')
-        ['de-DE']('Rote moderne Malerei')
+        ['de-DE']('Rotes modernes Gemälde')
         ['en-US']('Red Modern Painting')
     )
     .slug(

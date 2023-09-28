@@ -50,7 +50,7 @@ const ravenBowl = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Raven Bowl')
-        ['de-DE']('Rabenschüssel')
+        ['de-DE']('Suppenschüssel >Raven<')
         ['en-US']('Raven Bowl')
     )
     .slug(

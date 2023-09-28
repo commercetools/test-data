@@ -87,7 +87,7 @@ const sunnaiGlassBowl = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl02(),
     ])
     .categories([
       KeyReference.presets.category().key(bowlsDraft.key!),

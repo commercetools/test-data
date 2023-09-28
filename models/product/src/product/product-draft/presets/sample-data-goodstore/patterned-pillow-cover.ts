@@ -66,7 +66,7 @@ const patternedPillowCover = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.patternedPillowCover01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.patternedPillowCover01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.patternedPillowCover02(),
     ])
     .categories([
       KeyReference.presets.category().key(beddingDraft.key!),

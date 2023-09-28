@@ -82,12 +82,12 @@ const nalaTwoSeaterSofa = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa03(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa04(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa05(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa06(),
+      ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa07(),
     ])
     .categories([
       KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),

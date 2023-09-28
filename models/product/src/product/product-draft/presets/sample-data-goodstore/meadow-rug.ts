@@ -67,8 +67,8 @@ const meadowRug = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.meadowRug01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.meadowRug01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.meadowRug01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.meadowRug02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.meadowRug03(),
     ])
     .categories([
       KeyReference.presets.category().key(roomDecorDraft.key!),

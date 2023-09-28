@@ -66,14 +66,14 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet03(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet04(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet05(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet06(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet07(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet08(),
+      ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet09(),
     ])
     .categories([
       KeyReference.presets.category().key(beddingDraft.key!),

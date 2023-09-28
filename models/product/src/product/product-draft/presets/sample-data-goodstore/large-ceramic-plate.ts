@@ -74,7 +74,7 @@ const largeCeramicPlate = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.largeCeramicPlate01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.largeCeramicPlate01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.largeCeramicPlate02(),
     ])
     .categories([
       KeyReference.presets.category().key(kitchenDraft.key!),

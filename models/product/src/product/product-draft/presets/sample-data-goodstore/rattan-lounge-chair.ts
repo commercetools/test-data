@@ -47,7 +47,7 @@ const rattanLoungeChair = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Rattan Lounge Chair')
-        ['de-DE']('Rattan-Loungesessel')
+        ['de-DE']('Loungesessel aus Rattan')
         ['en-US']('Rattan Lounge Chair')
     )
     .slug(

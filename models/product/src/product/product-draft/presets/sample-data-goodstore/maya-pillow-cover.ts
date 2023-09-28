@@ -66,7 +66,7 @@ const mayaPillowCover = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.mayaPillowCover01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.mayaPillowCover01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.mayaPillowCover02(),
     ])
     .categories([
       KeyReference.presets.category().key(beddingDraft.key!),

@@ -46,7 +46,7 @@ const rumiChair = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Rumi Chair')
-        ['de-DE']('Rumi Stuhl')
+        ['de-DE']('Stuhl >Rumi<')
         ['en-US']('Rumi Chair')
     )
     .slug(

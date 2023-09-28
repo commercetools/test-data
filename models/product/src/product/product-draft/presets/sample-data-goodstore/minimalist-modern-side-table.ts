@@ -82,7 +82,7 @@ const minimalistModernSideTable = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.minimalistModernSideTable01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.minimalistModernSideTable01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.minimalistModernSideTable02(),
     ])
     .categories([
       KeyReference.presets.category().key(tablesDraft.key!),

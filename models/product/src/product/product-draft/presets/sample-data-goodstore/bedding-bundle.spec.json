@@ -1,0 +1,47 @@
+{
+  "categories": [
+    {
+      "key": "bedding",
+      "typeId": "category"
+    },
+    {
+      "key": "home-decor",
+      "typeId": "category"
+    }
+  ],
+  "masterVariant": {
+    "sku": "DCC-03",
+    "key": "bed-bundle-1",
+    "prices": [],
+    "images": [],
+    "attributes": [
+      {
+        "name": "product-ref",
+        "value": [
+          {
+            "typeId": "product",
+            "id": "98654f5c-de8e-463c-903d-3c2f0c8176bc"
+          },
+          {
+            "typeId": "product",
+            "id": "0e56cf64-fa51-44e2-969a-3b3d6cd5bab3"
+          }
+        ]
+      }
+    ]
+  },
+  "name": {
+    "en-US": "Dreamscape Comfort Collection",
+    "en-GB": "Dreamscape Comfort Collection",
+    "de-DE": "Dreamscape Comfort-Kollektion"
+  },
+  "productType": {
+    "key": "bedding-bundle",
+    "typeId": "product-type"
+  },
+  "slug": {
+    "en-US": "test-bundle",
+    "de-DE": "dreamscape-comfort-kollektion",
+    "en-GB": "test-bundle"
+  }
+}

@@ -70,8 +70,8 @@ const geometricPillowCase = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase03(),
     ])
     .categories([
       KeyReference.presets.category().key(homeDecorDraft.key!),

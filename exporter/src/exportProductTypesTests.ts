@@ -39,7 +39,7 @@ const getProductTypeSnapshot = (productType: ProductType) => {
       }
       if (attribute.inputTip) {
         const filtered = filterLocalizedString(attribute.inputTip);
-        if (Object.keys(filtered).length > 0) {
+        if (filtered) {
           result = {
             ...result,
             inputTip: filtered,
@@ -51,7 +51,7 @@ const getProductTypeSnapshot = (productType: ProductType) => {
       }
       if (attribute.label) {
         const filtered = filterLocalizedString(attribute.label);
-        if (Object.keys(filtered).length > 0) {
+        if (filtered) {
           result = {
             ...result,
             label: filtered,

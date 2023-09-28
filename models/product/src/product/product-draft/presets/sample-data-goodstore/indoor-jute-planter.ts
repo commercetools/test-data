@@ -47,7 +47,7 @@ const indoorJutePlanter = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Indoor Jute Planter')
-        ['de-DE']('Indoor Blumentopf aus Jute')
+        ['de-DE']('Indoor Jute Blumentopf ')
         ['en-US']('Indoor Jute Planter')
     )
     .slug(
@@ -70,7 +70,7 @@ const indoorJutePlanter = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.indoorJutePlanter01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.indoorJutePlanter01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.indoorJutePlanter02(),
     ])
     .categories([
       KeyReference.presets.category().key(roomDecorDraft.key!),

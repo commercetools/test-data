@@ -19,8 +19,11 @@ export function notEmpty<TValue>(
 }
 
 export const filterLocalizedString = (
-  localizedString: LocalizedString
-): LocalizedString => {
+  localizedString?: LocalizedString
+): LocalizedString | undefined => {
+  if (!localizedString) {
+    return undefined;
+  }
   const locales = getLocales();
 
   const result: LocalizedString = {};
@@ -29,6 +32,9 @@ export const filterLocalizedString = (
       result[locale] = localizedString[locale];
     }
   });
+  if (Object.keys(result).length === 0) {
+    return undefined;
+  }
   return result;
 };
 
@@ -133,22 +139,22 @@ export const prettierMeJson = async (content: string) => {
 export const writeFile = async (
   content: string,
   subdir: string,
-  filename: string
+  filename: string,
+  filetype = 'ts'
 ) => {
   const dir = resolve(__dirname, '../../..', subdir, getFolder());
   if (!existsSync(dir)) {
     mkdirSync(dir, { recursive: true });
   }
 
-  const fcontent = await prettier.format(content, {
-    trailingComma: 'es5',
-    singleQuote: true,
-    parser: 'typescript',
-  });
-  writeFileSync(
-    dir + '/' + buildFilename(filename) + '.ts',
-    fcontent.replaceAll('\\n', '\n')
-  );
+  if (filetype === 'ts') {
+    content = await prettier.format(content, {
+      trailingComma: 'es5',
+      singleQuote: true,
+      parser: 'typescript',
+    });
+  }
+  writeFileSync(dir + '/' + buildFilename(filename) + '.' + filetype, content);
 };
 
 export type IndexFile = { functionName: string; fileName: string };

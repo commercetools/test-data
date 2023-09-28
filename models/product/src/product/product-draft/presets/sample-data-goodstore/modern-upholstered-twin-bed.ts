@@ -78,9 +78,9 @@ const modernUpholsteredTwinBed = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed01()
     )
     .variants([
-      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed01(),
-      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed01(),
+      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed02(),
+      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed03(),
+      ProductVariantDraft.presets.sampleDataGoodStore.modernUpholsteredTwinBed04(),
     ])
     .categories([
       KeyReference.presets.category().key(furnitureDraft.key!),

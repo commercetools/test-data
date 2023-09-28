@@ -32,14 +32,14 @@ const getCategorySnapshot = (category: Category) => {
     result = changed;
   }
   const filteredName = filterLocalizedString(category.name);
-  if (Object.keys(filteredName).length > 0) {
+  if (filteredName) {
     result = {
       ...result,
       name: filteredName,
     };
   }
   const filteredSlug = filterLocalizedString(category.slug);
-  if (Object.keys(filteredSlug).length > 0) {
+  if (filteredSlug) {
     result = {
       ...result,
       slug: filteredSlug,
