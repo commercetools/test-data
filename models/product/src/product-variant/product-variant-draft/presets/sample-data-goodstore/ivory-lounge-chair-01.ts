@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
-import * as Image from '../../../../image';
+import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
@@ -23,19 +23,19 @@ const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
         .country('US'),
     ])
     .images([
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_425997376-rgouAPnE.jpeg'
         )
         .dimensions({ w: 5500, h: 4400 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_433015214-W7glmC_k.jpeg'
         )
         .dimensions({ w: 3375, h: 4500 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_417425585-8KQEao5y.jpeg'

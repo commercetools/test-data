@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
-import * as Image from '../../../../image';
+import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
@@ -23,19 +23,19 @@ const juteRug01 = (): TProductVariantDraftBuilder =>
         .country('US'),
     ])
     .images([
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_449539663-lSkaNtxb.jpeg'
         )
         .dimensions({ w: 7600, h: 5223 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_447839385-wEisIxmE.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_405760748-jH1fNEXu.jpeg'
