@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
-import * as Image from '../../../../image';
+import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
@@ -23,13 +23,13 @@ const classicCoffeeCup01 = (): TProductVariantDraftBuilder =>
         .country('US'),
     ])
     .images([
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Classic%20Coffee%20Cup-WKYAx6HB.jpeg'
         )
         .dimensions({ w: 6000, h: 4000 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_549486132-p88nilwV.jpeg'

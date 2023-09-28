@@ -1,6 +1,6 @@
 import { Money, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
-import * as Image from '../../../../image';
+import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
@@ -23,13 +23,13 @@ const ashenRug01 = (): TProductVariantDraftBuilder =>
         .country('US'),
     ])
     .images([
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458700-8eM42pqK.jpeg'
         )
         .dimensions({ w: 4500, h: 3000 }),
-      Image.ImageDraft.presets
+      ImageDraft.presets
         .empty()
         .url(
           'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458689-9cU_vBM2.jpeg'
