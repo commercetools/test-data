@@ -6,6 +6,6 @@ describe(`with emeraldVelvetChair preset`, () => {
   it(`should return a emeraldVelvetChair preset`, () => {
     const emeraldVelvetChairPreset =
       emeraldVelvetChair().build<TProductDraft>();
-    expect(emeraldVelvetChairPreset).toMatchObject(productDraft);
+    expect(emeraldVelvetChairPreset).toMatchObject(productDraft.rest);
   });
 });

@@ -6,6 +6,6 @@ describe(`with squareBambooCoaster preset`, () => {
   it(`should return a squareBambooCoaster preset`, () => {
     const squareBambooCoasterPreset =
       squareBambooCoaster().build<TProductDraft>();
-    expect(squareBambooCoasterPreset).toMatchObject(productDraft);
+    expect(squareBambooCoasterPreset).toMatchObject(productDraft.rest);
   });
 });

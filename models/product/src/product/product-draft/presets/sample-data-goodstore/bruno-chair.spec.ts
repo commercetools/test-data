@@ -5,6 +5,6 @@ import productDraft from './bruno-chair.spec.json';
 describe(`with brunoChair preset`, () => {
   it(`should return a brunoChair preset`, () => {
     const brunoChairPreset = brunoChair().build<TProductDraft>();
-    expect(brunoChairPreset).toMatchObject(productDraft);
+    expect(brunoChairPreset).toMatchObject(productDraft.rest);
   });
 });

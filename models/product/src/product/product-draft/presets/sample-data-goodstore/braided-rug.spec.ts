@@ -5,6 +5,6 @@ import productDraft from './braided-rug.spec.json';
 describe(`with braidedRug preset`, () => {
   it(`should return a braidedRug preset`, () => {
     const braidedRugPreset = braidedRug().build<TProductDraft>();
-    expect(braidedRugPreset).toMatchObject(productDraft);
+    expect(braidedRugPreset).toMatchObject(productDraft.rest);
   });
 });

@@ -6,6 +6,8 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
   it(`should return a purpleMinimalistAbstractPainting preset`, () => {
     const purpleMinimalistAbstractPaintingPreset =
       purpleMinimalistAbstractPainting().build<TProductDraft>();
-    expect(purpleMinimalistAbstractPaintingPreset).toMatchObject(productDraft);
+    expect(purpleMinimalistAbstractPaintingPreset).toMatchObject(
+      productDraft.rest
+    );
   });
 });

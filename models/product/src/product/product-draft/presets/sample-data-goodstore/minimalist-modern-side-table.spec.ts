@@ -6,6 +6,6 @@ describe(`with minimalistModernSideTable preset`, () => {
   it(`should return a minimalistModernSideTable preset`, () => {
     const minimalistModernSideTablePreset =
       minimalistModernSideTable().build<TProductDraft>();
-    expect(minimalistModernSideTablePreset).toMatchObject(productDraft);
+    expect(minimalistModernSideTablePreset).toMatchObject(productDraft.rest);
   });
 });

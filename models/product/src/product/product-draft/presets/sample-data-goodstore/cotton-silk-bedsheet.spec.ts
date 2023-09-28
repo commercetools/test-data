@@ -6,6 +6,6 @@ describe(`with cottonSilkBedsheet preset`, () => {
   it(`should return a cottonSilkBedsheet preset`, () => {
     const cottonSilkBedsheetPreset =
       cottonSilkBedsheet().build<TProductDraft>();
-    expect(cottonSilkBedsheetPreset).toMatchObject(productDraft);
+    expect(cottonSilkBedsheetPreset).toMatchObject(productDraft.rest);
   });
 });

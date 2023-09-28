@@ -5,6 +5,6 @@ import productDraft from './ecru-double-bed.spec.json';
 describe(`with ecruDoubleBed preset`, () => {
   it(`should return a ecruDoubleBed preset`, () => {
     const ecruDoubleBedPreset = ecruDoubleBed().build<TProductDraft>();
-    expect(ecruDoubleBedPreset).toMatchObject(productDraft);
+    expect(ecruDoubleBedPreset).toMatchObject(productDraft.rest);
   });
 });

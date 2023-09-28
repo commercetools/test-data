@@ -6,6 +6,6 @@ describe(`with cottonTwoSeaterSofa preset`, () => {
   it(`should return a cottonTwoSeaterSofa preset`, () => {
     const cottonTwoSeaterSofaPreset =
       cottonTwoSeaterSofa().build<TProductDraft>();
-    expect(cottonTwoSeaterSofaPreset).toMatchObject(productDraft);
+    expect(cottonTwoSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
 });

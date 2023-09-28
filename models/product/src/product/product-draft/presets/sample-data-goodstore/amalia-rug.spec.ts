@@ -5,6 +5,6 @@ import productDraft from './amalia-rug.spec.json';
 describe(`with amaliaRug preset`, () => {
   it(`should return a amaliaRug preset`, () => {
     const amaliaRugPreset = amaliaRug().build<TProductDraft>();
-    expect(amaliaRugPreset).toMatchObject(productDraft);
+    expect(amaliaRugPreset).toMatchObject(productDraft.rest);
   });
 });

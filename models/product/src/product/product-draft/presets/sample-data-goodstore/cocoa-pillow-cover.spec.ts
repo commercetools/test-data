@@ -5,6 +5,6 @@ import productDraft from './cocoa-pillow-cover.spec.json';
 describe(`with cocoaPillowCover preset`, () => {
   it(`should return a cocoaPillowCover preset`, () => {
     const cocoaPillowCoverPreset = cocoaPillowCover().build<TProductDraft>();
-    expect(cocoaPillowCoverPreset).toMatchObject(productDraft);
+    expect(cocoaPillowCoverPreset).toMatchObject(productDraft.rest);
   });
 });

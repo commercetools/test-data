@@ -5,6 +5,6 @@ import productDraft from './classic-coffee-cup.spec.json';
 describe(`with classicCoffeeCup preset`, () => {
   it(`should return a classicCoffeeCup preset`, () => {
     const classicCoffeeCupPreset = classicCoffeeCup().build<TProductDraft>();
-    expect(classicCoffeeCupPreset).toMatchObject(productDraft);
+    expect(classicCoffeeCupPreset).toMatchObject(productDraft.rest);
   });
 });

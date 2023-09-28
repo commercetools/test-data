@@ -6,6 +6,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
   it(`should return a minimalistCedarNightstand preset`, () => {
     const minimalistCedarNightstandPreset =
       minimalistCedarNightstand().build<TProductDraft>();
-    expect(minimalistCedarNightstandPreset).toMatchObject(productDraft);
+    expect(minimalistCedarNightstandPreset).toMatchObject(productDraft.rest);
   });
 });

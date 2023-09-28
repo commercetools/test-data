@@ -5,6 +5,6 @@ import productDraft from './entryway-closet.spec.json';
 describe(`with entrywayCloset preset`, () => {
   it(`should return a entrywayCloset preset`, () => {
     const entrywayClosetPreset = entrywayCloset().build<TProductDraft>();
-    expect(entrywayClosetPreset).toMatchObject(productDraft);
+    expect(entrywayClosetPreset).toMatchObject(productDraft.rest);
   });
 });

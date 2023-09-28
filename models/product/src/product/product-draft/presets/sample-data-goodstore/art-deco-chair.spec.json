@@ -1,110 +1,112 @@
 {
-  "categories": [
-    {
-      "key": "armchairs",
-      "typeId": "category"
-    },
-    {
-      "key": "furniture",
-      "typeId": "category"
-    },
-    {
-      "key": "living-room-furniture",
-      "typeId": "category"
-    }
-  ],
-  "masterVariant": {
-    "sku": "ADARM-04",
-    "prices": [
+  "rest": {
+    "categories": [
       {
-        "value": {
-          "centAmount": 39900,
-          "currencyCode": "EUR"
-        },
-        "country": "DE"
+        "key": "armchairs",
+        "typeId": "category"
       },
       {
-        "value": {
-          "centAmount": 39900,
-          "currencyCode": "GBP"
-        },
-        "country": "GB"
+        "key": "furniture",
+        "typeId": "category"
       },
       {
-        "value": {
-          "centAmount": 39900,
-          "currencyCode": "USD"
-        },
-        "country": "US"
+        "key": "living-room-furniture",
+        "typeId": "category"
       }
     ],
-    "images": [
-      {
-        "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_423223088-xpBtdxux.jpeg",
-        "dimensions": {
-          "w": 5500,
-          "h": 4400
+    "masterVariant": {
+      "sku": "ADARM-04",
+      "prices": [
+        {
+          "value": {
+            "centAmount": 39900,
+            "currencyCode": "EUR"
+          },
+          "country": "DE"
+        },
+        {
+          "value": {
+            "centAmount": 39900,
+            "currencyCode": "GBP"
+          },
+          "country": "GB"
+        },
+        {
+          "value": {
+            "centAmount": 39900,
+            "currencyCode": "USD"
+          },
+          "country": "US"
         }
-      }
-    ],
-    "attributes": [
-      {
-        "name": "productspec",
-        "value": {
-          "en-GB": "- Assembly on delivery",
-          "de-DE": "- Selbstmontage",
-          "en-US": "- Assembly on delivery"
-        }
-      },
-      {
-        "name": "product-description",
-        "value": {
-          "en-GB": "An art deco chair with metal legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with durable cotton upholstery providing a soft and luxurious feel. The metal legs have a smooth finish that accentuates the chair's modern style. The chair features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair is a striking piece of furniture that adds both style and comfort to any room.",
-          "en-US": "An art deco chair with metal legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with durable cotton upholstery providing a soft and luxurious feel. The metal legs have a smooth finish that accentuates the chair's modern style. The chair features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair is a striking piece of furniture that adds both style and comfort to any room.",
-          "de-DE": "n Art-Deco-Stuhl mit Metallbeinen hat ein schlankes, stromlinienförmiges Design, das Raffinesse und Eleganz ausstrahlt. Der Stuhl hat einen bequem gepolsterten Sitz und eine Rückenlehne mit strapazierfähiger Baumwollpolsterung, die ein weiches und luxuriöses Gefühl vermittelt. Die Metallbeine haben eine glatte Oberfläche, die den modernen Stil des Stuhls betont. Der Stuhl weist markante Art-Deco-Elemente wie eckige Formen, kräftige Linien und geometrische Muster auf. Insgesamt ist dieser Stuhl ein markantes Möbelstück, das jedem Raum Stil und Komfort verleiht."
-        }
-      },
-      {
-        "name": "colorlabel",
-        "value": {
-          "en-GB": "Gray",
-          "de-DE": "Grau",
-          "en-US": "Gray"
-        }
-      },
-      {
-        "name": "color-filter",
-        "value": {
-          "key": "#808080",
-          "label": {
-            "de-DE": "Grau",
-            "en-GB": "Gray",
-            "en-US": "Gray"
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_423223088-xpBtdxux.jpeg",
+          "dimensions": {
+            "w": 5500,
+            "h": 4400
           }
         }
-      },
-      {
-        "name": "color",
-        "value": {
-          "en-GB": "#DAD7D0",
-          "de-DE": "#DAD7D0",
-          "en-US": "#DAD7D0"
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": {
+            "en-GB": "- Assembly on delivery",
+            "de-DE": "- Selbstmontage",
+            "en-US": "- Assembly on delivery"
+          }
+        },
+        {
+          "name": "product-description",
+          "value": {
+            "en-GB": "An art deco chair with metal legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with durable cotton upholstery providing a soft and luxurious feel. The metal legs have a smooth finish that accentuates the chair's modern style. The chair features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair is a striking piece of furniture that adds both style and comfort to any room.",
+            "en-US": "An art deco chair with metal legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with durable cotton upholstery providing a soft and luxurious feel. The metal legs have a smooth finish that accentuates the chair's modern style. The chair features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair is a striking piece of furniture that adds both style and comfort to any room.",
+            "de-DE": "n Art-Deco-Stuhl mit Metallbeinen hat ein schlankes, stromlinienförmiges Design, das Raffinesse und Eleganz ausstrahlt. Der Stuhl hat einen bequem gepolsterten Sitz und eine Rückenlehne mit strapazierfähiger Baumwollpolsterung, die ein weiches und luxuriöses Gefühl vermittelt. Die Metallbeine haben eine glatte Oberfläche, die den modernen Stil des Stuhls betont. Der Stuhl weist markante Art-Deco-Elemente wie eckige Formen, kräftige Linien und geometrische Muster auf. Insgesamt ist dieser Stuhl ein markantes Möbelstück, das jedem Raum Stil und Komfort verleiht."
+          }
+        },
+        {
+          "name": "colorlabel",
+          "value": {
+            "en-GB": "Gray",
+            "de-DE": "Grau",
+            "en-US": "Gray"
+          }
+        },
+        {
+          "name": "color-filter",
+          "value": {
+            "key": "#808080",
+            "label": {
+              "de-DE": "Grau",
+              "en-GB": "Gray",
+              "en-US": "Gray"
+            }
+          }
+        },
+        {
+          "name": "color",
+          "value": {
+            "en-GB": "#DAD7D0",
+            "de-DE": "#DAD7D0",
+            "en-US": "#DAD7D0"
+          }
         }
-      }
-    ]
-  },
-  "name": {
-    "de-DE": "Art-Deco-Sessel",
-    "en-GB": "Art Deco Chair",
-    "en-US": "Art Deco Chair"
-  },
-  "productType": {
-    "key": "furniture-and-decor",
-    "typeId": "product-type"
-  },
-  "slug": {
-    "de-DE": "art-deco-stuhl",
-    "en-GB": "art-deco-chair",
-    "en-US": "art-deco-chair"
+      ]
+    },
+    "name": {
+      "de-DE": "Art-Deco-Sessel",
+      "en-GB": "Art Deco Chair",
+      "en-US": "Art Deco Chair"
+    },
+    "productType": {
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": {
+      "de-DE": "art-deco-stuhl",
+      "en-GB": "art-deco-chair",
+      "en-US": "art-deco-chair"
+    }
   }
 }

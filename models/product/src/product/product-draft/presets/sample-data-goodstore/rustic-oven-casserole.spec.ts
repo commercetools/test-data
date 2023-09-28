@@ -6,6 +6,6 @@ describe(`with rusticOvenCasserole preset`, () => {
   it(`should return a rusticOvenCasserole preset`, () => {
     const rusticOvenCasserolePreset =
       rusticOvenCasserole().build<TProductDraft>();
-    expect(rusticOvenCasserolePreset).toMatchObject(productDraft);
+    expect(rusticOvenCasserolePreset).toMatchObject(productDraft.rest);
   });
 });

@@ -5,6 +5,6 @@ import productDraft from './rumi-chair.spec.json';
 describe(`with rumiChair preset`, () => {
   it(`should return a rumiChair preset`, () => {
     const rumiChairPreset = rumiChair().build<TProductDraft>();
-    expect(rumiChairPreset).toMatchObject(productDraft);
+    expect(rumiChairPreset).toMatchObject(productDraft.rest);
   });
 });

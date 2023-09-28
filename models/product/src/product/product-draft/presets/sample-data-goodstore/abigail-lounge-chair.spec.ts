@@ -6,6 +6,6 @@ describe(`with abigailLoungeChair preset`, () => {
   it(`should return a abigailLoungeChair preset`, () => {
     const abigailLoungeChairPreset =
       abigailLoungeChair().build<TProductDraft>();
-    expect(abigailLoungeChairPreset).toMatchObject(productDraft);
+    expect(abigailLoungeChairPreset).toMatchObject(productDraft.rest);
   });
 });

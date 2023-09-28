@@ -5,6 +5,6 @@ import productDraft from './wine-bottle-opener.spec.json';
 describe(`with wineBottleOpener preset`, () => {
   it(`should return a wineBottleOpener preset`, () => {
     const wineBottleOpenerPreset = wineBottleOpener().build<TProductDraft>();
-    expect(wineBottleOpenerPreset).toMatchObject(productDraft);
+    expect(wineBottleOpenerPreset).toMatchObject(productDraft.rest);
   });
 });

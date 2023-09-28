@@ -6,6 +6,6 @@ describe(`with traditionalLSeaterSofa preset`, () => {
   it(`should return a traditionalLSeaterSofa preset`, () => {
     const traditionalLSeaterSofaPreset =
       traditionalLSeaterSofa().build<TProductDraft>();
-    expect(traditionalLSeaterSofaPreset).toMatchObject(productDraft);
+    expect(traditionalLSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
 });

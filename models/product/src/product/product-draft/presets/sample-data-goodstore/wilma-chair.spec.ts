@@ -5,6 +5,6 @@ import productDraft from './wilma-chair.spec.json';
 describe(`with wilmaChair preset`, () => {
   it(`should return a wilmaChair preset`, () => {
     const wilmaChairPreset = wilmaChair().build<TProductDraft>();
-    expect(wilmaChairPreset).toMatchObject(productDraft);
+    expect(wilmaChairPreset).toMatchObject(productDraft.rest);
   });
 });

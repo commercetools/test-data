@@ -6,6 +6,6 @@ describe(`with clinkChampagneGlass preset`, () => {
   it(`should return a clinkChampagneGlass preset`, () => {
     const clinkChampagneGlassPreset =
       clinkChampagneGlass().build<TProductDraft>();
-    expect(clinkChampagneGlassPreset).toMatchObject(productDraft);
+    expect(clinkChampagneGlassPreset).toMatchObject(productDraft.rest);
   });
 });

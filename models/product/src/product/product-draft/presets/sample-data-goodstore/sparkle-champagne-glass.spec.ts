@@ -6,6 +6,6 @@ describe(`with sparkleChampagneGlass preset`, () => {
   it(`should return a sparkleChampagneGlass preset`, () => {
     const sparkleChampagneGlassPreset =
       sparkleChampagneGlass().build<TProductDraft>();
-    expect(sparkleChampagneGlassPreset).toMatchObject(productDraft);
+    expect(sparkleChampagneGlassPreset).toMatchObject(productDraft.rest);
   });
 });

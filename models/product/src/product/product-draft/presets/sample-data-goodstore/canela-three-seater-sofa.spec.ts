@@ -6,6 +6,6 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
   it(`should return a canelaThreeSeaterSofa preset`, () => {
     const canelaThreeSeaterSofaPreset =
       canelaThreeSeaterSofa().build<TProductDraft>();
-    expect(canelaThreeSeaterSofaPreset).toMatchObject(productDraft);
+    expect(canelaThreeSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
 });

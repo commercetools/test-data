@@ -6,6 +6,6 @@ describe(`with purpleLandscapePainting preset`, () => {
   it(`should return a purpleLandscapePainting preset`, () => {
     const purpleLandscapePaintingPreset =
       purpleLandscapePainting().build<TProductDraft>();
-    expect(purpleLandscapePaintingPreset).toMatchObject(productDraft);
+    expect(purpleLandscapePaintingPreset).toMatchObject(productDraft.rest);
   });
 });

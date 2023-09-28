@@ -6,6 +6,6 @@ describe(`with turnerVelvetArmchair preset`, () => {
   it(`should return a turnerVelvetArmchair preset`, () => {
     const turnerVelvetArmchairPreset =
       turnerVelvetArmchair().build<TProductDraft>();
-    expect(turnerVelvetArmchairPreset).toMatchObject(productDraft);
+    expect(turnerVelvetArmchairPreset).toMatchObject(productDraft.rest);
   });
 });

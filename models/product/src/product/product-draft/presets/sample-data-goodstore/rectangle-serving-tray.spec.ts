@@ -6,6 +6,6 @@ describe(`with rectangleServingTray preset`, () => {
   it(`should return a rectangleServingTray preset`, () => {
     const rectangleServingTrayPreset =
       rectangleServingTray().build<TProductDraft>();
-    expect(rectangleServingTrayPreset).toMatchObject(productDraft);
+    expect(rectangleServingTrayPreset).toMatchObject(productDraft.rest);
   });
 });

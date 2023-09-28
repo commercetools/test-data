@@ -6,6 +6,6 @@ describe(`with geometricPillowCase preset`, () => {
   it(`should return a geometricPillowCase preset`, () => {
     const geometricPillowCasePreset =
       geometricPillowCase().build<TProductDraft>();
-    expect(geometricPillowCasePreset).toMatchObject(productDraft);
+    expect(geometricPillowCasePreset).toMatchObject(productDraft.rest);
   });
 });

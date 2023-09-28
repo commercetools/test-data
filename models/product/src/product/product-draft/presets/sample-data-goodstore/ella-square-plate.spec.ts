@@ -5,6 +5,6 @@ import productDraft from './ella-square-plate.spec.json';
 describe(`with ellaSquarePlate preset`, () => {
   it(`should return a ellaSquarePlate preset`, () => {
     const ellaSquarePlatePreset = ellaSquarePlate().build<TProductDraft>();
-    expect(ellaSquarePlatePreset).toMatchObject(productDraft);
+    expect(ellaSquarePlatePreset).toMatchObject(productDraft.rest);
   });
 });

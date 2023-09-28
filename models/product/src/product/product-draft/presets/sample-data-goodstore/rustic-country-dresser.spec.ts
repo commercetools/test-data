@@ -6,6 +6,6 @@ describe(`with rusticCountryDresser preset`, () => {
   it(`should return a rusticCountryDresser preset`, () => {
     const rusticCountryDresserPreset =
       rusticCountryDresser().build<TProductDraft>();
-    expect(rusticCountryDresserPreset).toMatchObject(productDraft);
+    expect(rusticCountryDresserPreset).toMatchObject(productDraft.rest);
   });
 });

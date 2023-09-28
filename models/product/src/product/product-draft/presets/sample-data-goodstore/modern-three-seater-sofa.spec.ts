@@ -6,6 +6,6 @@ describe(`with modernThreeSeaterSofa preset`, () => {
   it(`should return a modernThreeSeaterSofa preset`, () => {
     const modernThreeSeaterSofaPreset =
       modernThreeSeaterSofa().build<TProductDraft>();
-    expect(modernThreeSeaterSofaPreset).toMatchObject(productDraft);
+    expect(modernThreeSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
 });

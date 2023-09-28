@@ -1,83 +1,85 @@
 {
-  "categories": [
-    {
-      "key": "bar-accessories",
-      "typeId": "category"
+  "rest": {
+    "categories": [
+      {
+        "key": "bar-accessories",
+        "typeId": "category"
+      },
+      {
+        "key": "dinnerware",
+        "typeId": "category"
+      },
+      {
+        "key": "kitchen",
+        "typeId": "category"
+      }
+    ],
+    "masterVariant": {
+      "sku": "BUCK-023",
+      "prices": [
+        {
+          "value": {
+            "centAmount": 499,
+            "currencyCode": "EUR"
+          },
+          "country": "DE"
+        },
+        {
+          "value": {
+            "centAmount": 499,
+            "currencyCode": "GBP"
+          },
+          "country": "GB"
+        },
+        {
+          "value": {
+            "centAmount": 499,
+            "currencyCode": "USD"
+          },
+          "country": "US"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_429585249-GI0q3D7S.jpeg",
+          "dimensions": {
+            "w": 5072,
+            "h": 4992
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": {
+            "en-GB": "- Stainless steel\n- Dishwasher safe",
+            "de-DE": "- Edelstahl\n- Spülmaschinenfest",
+            "en-US": "- Stainless steel\n- Dishwasher safe"
+          }
+        },
+        {
+          "name": "product-description",
+          "value": {
+            "en-GB": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
+            "en-US": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
+            "de-DE": "Ein Eiskübel aus Metall ist ein Behälter zum Aufbewahren und Servieren von Eis. Er besteht aus Edelstahl und ist so konzipiert, dass er das Eis über einen längeren Zeitraum kalt hält. Das Äußere des Eiskübels ist poliert und hat eine verlängerte Lippe zum einfachen Tragen. Die Innenseite ist glatt und poliert, damit das Eis nicht an den Wänden des Eimers kleben bleibt."
+          }
+        }
+      ]
     },
-    {
-      "key": "dinnerware",
-      "typeId": "category"
+    "name": {
+      "de-DE": "Eis Eimer",
+      "en-GB": "Ice Bucket",
+      "en-US": "Ice Bucket"
     },
-    {
-      "key": "kitchen",
-      "typeId": "category"
+    "productType": {
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": {
+      "de-DE": "eis-eimer",
+      "en-GB": "ice-bucket",
+      "en-US": "ice-bucket"
     }
-  ],
-  "masterVariant": {
-    "sku": "BUCK-023",
-    "prices": [
-      {
-        "value": {
-          "centAmount": 499,
-          "currencyCode": "EUR"
-        },
-        "country": "DE"
-      },
-      {
-        "value": {
-          "centAmount": 499,
-          "currencyCode": "GBP"
-        },
-        "country": "GB"
-      },
-      {
-        "value": {
-          "centAmount": 499,
-          "currencyCode": "USD"
-        },
-        "country": "US"
-      }
-    ],
-    "images": [
-      {
-        "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_429585249-GI0q3D7S.jpeg",
-        "dimensions": {
-          "w": 5072,
-          "h": 4992
-        }
-      }
-    ],
-    "attributes": [
-      {
-        "name": "productspec",
-        "value": {
-          "en-GB": "- Stainless steel\n- Dishwasher safe",
-          "de-DE": "- Edelstahl\n- Spülmaschinenfest",
-          "en-US": "- Stainless steel\n- Dishwasher safe"
-        }
-      },
-      {
-        "name": "product-description",
-        "value": {
-          "en-GB": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
-          "en-US": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
-          "de-DE": "Ein Eiskübel aus Metall ist ein Behälter zum Aufbewahren und Servieren von Eis. Er besteht aus Edelstahl und ist so konzipiert, dass er das Eis über einen längeren Zeitraum kalt hält. Das Äußere des Eiskübels ist poliert und hat eine verlängerte Lippe zum einfachen Tragen. Die Innenseite ist glatt und poliert, damit das Eis nicht an den Wänden des Eimers kleben bleibt."
-        }
-      }
-    ]
-  },
-  "name": {
-    "de-DE": "Eis Eimer",
-    "en-GB": "Ice Bucket",
-    "en-US": "Ice Bucket"
-  },
-  "productType": {
-    "key": "furniture-and-decor",
-    "typeId": "product-type"
-  },
-  "slug": {
-    "de-DE": "eis-eimer",
-    "en-GB": "ice-bucket",
-    "en-US": "ice-bucket"
   }
 }

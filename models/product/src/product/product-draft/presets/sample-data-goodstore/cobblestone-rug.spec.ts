@@ -5,6 +5,6 @@ import productDraft from './cobblestone-rug.spec.json';
 describe(`with cobblestoneRug preset`, () => {
   it(`should return a cobblestoneRug preset`, () => {
     const cobblestoneRugPreset = cobblestoneRug().build<TProductDraft>();
-    expect(cobblestoneRugPreset).toMatchObject(productDraft);
+    expect(cobblestoneRugPreset).toMatchObject(productDraft.rest);
   });
 });

@@ -6,6 +6,6 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
   it(`should return a goldRimmedChampagneGlasses preset`, () => {
     const goldRimmedChampagneGlassesPreset =
       goldRimmedChampagneGlasses().build<TProductDraft>();
-    expect(goldRimmedChampagneGlassesPreset).toMatchObject(productDraft);
+    expect(goldRimmedChampagneGlassesPreset).toMatchObject(productDraft.rest);
   });
 });

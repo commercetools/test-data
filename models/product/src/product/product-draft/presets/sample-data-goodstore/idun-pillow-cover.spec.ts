@@ -5,6 +5,6 @@ import productDraft from './idun-pillow-cover.spec.json';
 describe(`with idunPillowCover preset`, () => {
   it(`should return a idunPillowCover preset`, () => {
     const idunPillowCoverPreset = idunPillowCover().build<TProductDraft>();
-    expect(idunPillowCoverPreset).toMatchObject(productDraft);
+    expect(idunPillowCoverPreset).toMatchObject(productDraft.rest);
   });
 });

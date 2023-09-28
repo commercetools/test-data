@@ -5,6 +5,6 @@ import productDraft from './art-deco-chair.spec.json';
 describe(`with artDecoChair preset`, () => {
   it(`should return a artDecoChair preset`, () => {
     const artDecoChairPreset = artDecoChair().build<TProductDraft>();
-    expect(artDecoChairPreset).toMatchObject(productDraft);
+    expect(artDecoChairPreset).toMatchObject(productDraft.rest);
   });
 });

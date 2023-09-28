@@ -6,6 +6,6 @@ describe(`with crystalDrinkingGlass preset`, () => {
   it(`should return a crystalDrinkingGlass preset`, () => {
     const crystalDrinkingGlassPreset =
       crystalDrinkingGlass().build<TProductDraft>();
-    expect(crystalDrinkingGlassPreset).toMatchObject(productDraft);
+    expect(crystalDrinkingGlassPreset).toMatchObject(productDraft.rest);
   });
 });

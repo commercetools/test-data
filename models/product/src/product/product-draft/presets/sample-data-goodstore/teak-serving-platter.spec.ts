@@ -6,6 +6,6 @@ describe(`with teakServingPlatter preset`, () => {
   it(`should return a teakServingPlatter preset`, () => {
     const teakServingPlatterPreset =
       teakServingPlatter().build<TProductDraft>();
-    expect(teakServingPlatterPreset).toMatchObject(productDraft);
+    expect(teakServingPlatterPreset).toMatchObject(productDraft.rest);
   });
 });

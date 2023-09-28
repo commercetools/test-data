@@ -6,6 +6,6 @@ describe(`with classicChampagneGlasses preset`, () => {
   it(`should return a classicChampagneGlasses preset`, () => {
     const classicChampagneGlassesPreset =
       classicChampagneGlasses().build<TProductDraft>();
-    expect(classicChampagneGlassesPreset).toMatchObject(productDraft);
+    expect(classicChampagneGlassesPreset).toMatchObject(productDraft.rest);
   });
 });

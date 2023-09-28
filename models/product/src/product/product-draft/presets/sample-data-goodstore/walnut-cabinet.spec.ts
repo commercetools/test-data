@@ -5,6 +5,6 @@ import productDraft from './walnut-cabinet.spec.json';
 describe(`with walnutCabinet preset`, () => {
   it(`should return a walnutCabinet preset`, () => {
     const walnutCabinetPreset = walnutCabinet().build<TProductDraft>();
-    expect(walnutCabinetPreset).toMatchObject(productDraft);
+    expect(walnutCabinetPreset).toMatchObject(productDraft.rest);
   });
 });

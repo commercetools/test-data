@@ -5,6 +5,6 @@ import productDraft from './raven-bowl.spec.json';
 describe(`with ravenBowl preset`, () => {
   it(`should return a ravenBowl preset`, () => {
     const ravenBowlPreset = ravenBowl().build<TProductDraft>();
-    expect(ravenBowlPreset).toMatchObject(productDraft);
+    expect(ravenBowlPreset).toMatchObject(productDraft.rest);
   });
 });

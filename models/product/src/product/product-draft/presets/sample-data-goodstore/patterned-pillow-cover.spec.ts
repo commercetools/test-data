@@ -6,6 +6,6 @@ describe(`with patternedPillowCover preset`, () => {
   it(`should return a patternedPillowCover preset`, () => {
     const patternedPillowCoverPreset =
       patternedPillowCover().build<TProductDraft>();
-    expect(patternedPillowCoverPreset).toMatchObject(productDraft);
+    expect(patternedPillowCoverPreset).toMatchObject(productDraft.rest);
   });
 });

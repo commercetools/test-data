@@ -6,6 +6,6 @@ describe(`with modernGoldCoffeeTable preset`, () => {
   it(`should return a modernGoldCoffeeTable preset`, () => {
     const modernGoldCoffeeTablePreset =
       modernGoldCoffeeTable().build<TProductDraft>();
-    expect(modernGoldCoffeeTablePreset).toMatchObject(productDraft);
+    expect(modernGoldCoffeeTablePreset).toMatchObject(productDraft.rest);
   });
 });

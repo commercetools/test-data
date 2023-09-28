@@ -6,6 +6,6 @@ describe(`with modernCeramicPlate preset`, () => {
   it(`should return a modernCeramicPlate preset`, () => {
     const modernCeramicPlatePreset =
       modernCeramicPlate().build<TProductDraft>();
-    expect(modernCeramicPlatePreset).toMatchObject(productDraft);
+    expect(modernCeramicPlatePreset).toMatchObject(productDraft.rest);
   });
 });

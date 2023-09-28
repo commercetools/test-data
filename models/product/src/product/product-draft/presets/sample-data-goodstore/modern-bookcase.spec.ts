@@ -5,6 +5,6 @@ import productDraft from './modern-bookcase.spec.json';
 describe(`with modernBookcase preset`, () => {
   it(`should return a modernBookcase preset`, () => {
     const modernBookcasePreset = modernBookcase().build<TProductDraft>();
-    expect(modernBookcasePreset).toMatchObject(productDraft);
+    expect(modernBookcasePreset).toMatchObject(productDraft.rest);
   });
 });

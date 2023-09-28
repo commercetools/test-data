@@ -6,6 +6,6 @@ describe(`with modernBlackCoaster preset`, () => {
   it(`should return a modernBlackCoaster preset`, () => {
     const modernBlackCoasterPreset =
       modernBlackCoaster().build<TProductDraft>();
-    expect(modernBlackCoasterPreset).toMatchObject(productDraft);
+    expect(modernBlackCoasterPreset).toMatchObject(productDraft.rest);
   });
 });

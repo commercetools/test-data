@@ -6,6 +6,6 @@ describe(`with walnutCounterStool preset`, () => {
   it(`should return a walnutCounterStool preset`, () => {
     const walnutCounterStoolPreset =
       walnutCounterStool().build<TProductDraft>();
-    expect(walnutCounterStoolPreset).toMatchObject(productDraft);
+    expect(walnutCounterStoolPreset).toMatchObject(productDraft.rest);
   });
 });

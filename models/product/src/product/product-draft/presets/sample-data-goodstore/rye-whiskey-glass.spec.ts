@@ -5,6 +5,6 @@ import productDraft from './rye-whiskey-glass.spec.json';
 describe(`with ryeWhiskeyGlass preset`, () => {
   it(`should return a ryeWhiskeyGlass preset`, () => {
     const ryeWhiskeyGlassPreset = ryeWhiskeyGlass().build<TProductDraft>();
-    expect(ryeWhiskeyGlassPreset).toMatchObject(productDraft);
+    expect(ryeWhiskeyGlassPreset).toMatchObject(productDraft.rest);
   });
 });

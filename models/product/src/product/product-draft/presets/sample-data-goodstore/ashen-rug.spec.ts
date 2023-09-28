@@ -5,6 +5,6 @@ import productDraft from './ashen-rug.spec.json';
 describe(`with ashenRug preset`, () => {
   it(`should return a ashenRug preset`, () => {
     const ashenRugPreset = ashenRug().build<TProductDraft>();
-    expect(ashenRugPreset).toMatchObject(productDraft);
+    expect(ashenRugPreset).toMatchObject(productDraft.rest);
   });
 });

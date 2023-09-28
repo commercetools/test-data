@@ -6,6 +6,6 @@ describe(`with pinkAbstractPainting preset`, () => {
   it(`should return a pinkAbstractPainting preset`, () => {
     const pinkAbstractPaintingPreset =
       pinkAbstractPainting().build<TProductDraft>();
-    expect(pinkAbstractPaintingPreset).toMatchObject(productDraft);
+    expect(pinkAbstractPaintingPreset).toMatchObject(productDraft.rest);
   });
 });

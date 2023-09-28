@@ -6,6 +6,6 @@ describe(`with classicServingTray preset`, () => {
   it(`should return a classicServingTray preset`, () => {
     const classicServingTrayPreset =
       classicServingTray().build<TProductDraft>();
-    expect(classicServingTrayPreset).toMatchObject(productDraft);
+    expect(classicServingTrayPreset).toMatchObject(productDraft.rest);
   });
 });

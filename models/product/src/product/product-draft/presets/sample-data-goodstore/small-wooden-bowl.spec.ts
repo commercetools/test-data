@@ -5,6 +5,6 @@ import productDraft from './small-wooden-bowl.spec.json';
 describe(`with smallWoodenBowl preset`, () => {
   it(`should return a smallWoodenBowl preset`, () => {
     const smallWoodenBowlPreset = smallWoodenBowl().build<TProductDraft>();
-    expect(smallWoodenBowlPreset).toMatchObject(productDraft);
+    expect(smallWoodenBowlPreset).toMatchObject(productDraft.rest);
   });
 });

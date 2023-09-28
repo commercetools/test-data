@@ -6,6 +6,6 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
   it(`should return a doubleWalledEspressoGlass preset`, () => {
     const doubleWalledEspressoGlassPreset =
       doubleWalledEspressoGlass().build<TProductDraft>();
-    expect(doubleWalledEspressoGlassPreset).toMatchObject(productDraft);
+    expect(doubleWalledEspressoGlassPreset).toMatchObject(productDraft.rest);
   });
 });

@@ -5,6 +5,6 @@ import productDraft from './cube-jute-basket.spec.json';
 describe(`with cubeJuteBasket preset`, () => {
   it(`should return a cubeJuteBasket preset`, () => {
     const cubeJuteBasketPreset = cubeJuteBasket().build<TProductDraft>();
-    expect(cubeJuteBasketPreset).toMatchObject(productDraft);
+    expect(cubeJuteBasketPreset).toMatchObject(productDraft.rest);
   });
 });

@@ -6,6 +6,6 @@ describe(`with modernLandscapePainting preset`, () => {
   it(`should return a modernLandscapePainting preset`, () => {
     const modernLandscapePaintingPreset =
       modernLandscapePainting().build<TProductDraft>();
-    expect(modernLandscapePaintingPreset).toMatchObject(productDraft);
+    expect(modernLandscapePaintingPreset).toMatchObject(productDraft.rest);
   });
 });

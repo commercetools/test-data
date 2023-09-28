@@ -6,6 +6,6 @@ describe(`with harmonyDrinkingGlass preset`, () => {
   it(`should return a harmonyDrinkingGlass preset`, () => {
     const harmonyDrinkingGlassPreset =
       harmonyDrinkingGlass().build<TProductDraft>();
-    expect(harmonyDrinkingGlassPreset).toMatchObject(productDraft);
+    expect(harmonyDrinkingGlassPreset).toMatchObject(productDraft.rest);
   });
 });

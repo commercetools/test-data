@@ -6,6 +6,6 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
   it(`should return a traditionalThreeSeaterSofa preset`, () => {
     const traditionalThreeSeaterSofaPreset =
       traditionalThreeSeaterSofa().build<TProductDraft>();
-    expect(traditionalThreeSeaterSofaPreset).toMatchObject(productDraft);
+    expect(traditionalThreeSeaterSofaPreset).toMatchObject(productDraft.rest);
   });
 });

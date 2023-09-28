@@ -5,6 +5,6 @@ import productDraft from './cocktail-shaker-set.spec.json';
 describe(`with cocktailShakerSet preset`, () => {
   it(`should return a cocktailShakerSet preset`, () => {
     const cocktailShakerSetPreset = cocktailShakerSet().build<TProductDraft>();
-    expect(cocktailShakerSetPreset).toMatchObject(productDraft);
+    expect(cocktailShakerSetPreset).toMatchObject(productDraft.rest);
   });
 });

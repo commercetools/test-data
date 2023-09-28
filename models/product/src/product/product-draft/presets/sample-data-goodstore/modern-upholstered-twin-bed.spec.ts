@@ -6,6 +6,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
   it(`should return a modernUpholsteredTwinBed preset`, () => {
     const modernUpholsteredTwinBedPreset =
       modernUpholsteredTwinBed().build<TProductDraft>();
-    expect(modernUpholsteredTwinBedPreset).toMatchObject(productDraft);
+    expect(modernUpholsteredTwinBedPreset).toMatchObject(productDraft.rest);
   });
 });

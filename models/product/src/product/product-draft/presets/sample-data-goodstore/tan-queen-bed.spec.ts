@@ -5,6 +5,6 @@ import productDraft from './tan-queen-bed.spec.json';
 describe(`with tanQueenBed preset`, () => {
   it(`should return a tanQueenBed preset`, () => {
     const tanQueenBedPreset = tanQueenBed().build<TProductDraft>();
-    expect(tanQueenBedPreset).toMatchObject(productDraft);
+    expect(tanQueenBedPreset).toMatchObject(productDraft.rest);
   });
 });

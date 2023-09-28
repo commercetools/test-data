@@ -1,117 +1,119 @@
 {
-  "categories": [
-    {
-      "key": "furniture",
-      "typeId": "category"
-    },
-    {
-      "key": "bedroom-furniture",
-      "typeId": "category"
-    },
-    {
-      "key": "storage--tables",
-      "typeId": "category"
-    }
-  ],
-  "masterVariant": {
-    "sku": "WCS-09",
-    "prices": [
+  "rest": {
+    "categories": [
       {
-        "value": {
-          "centAmount": 159900,
-          "currencyCode": "EUR"
-        },
-        "country": "DE"
+        "key": "furniture",
+        "typeId": "category"
       },
       {
-        "value": {
-          "centAmount": 159900,
-          "currencyCode": "GBP"
-        },
-        "country": "GB"
+        "key": "bedroom-furniture",
+        "typeId": "category"
       },
       {
-        "value": {
-          "centAmount": 159900,
-          "currencyCode": "USD"
-        },
-        "country": "US"
+        "key": "storage--tables",
+        "typeId": "category"
       }
     ],
-    "images": [
-      {
-        "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35902325-W9YJNJS_.jpeg",
-        "dimensions": {
-          "w": 4400,
-          "h": 2935
+    "masterVariant": {
+      "sku": "WCS-09",
+      "prices": [
+        {
+          "value": {
+            "centAmount": 159900,
+            "currencyCode": "EUR"
+          },
+          "country": "DE"
+        },
+        {
+          "value": {
+            "centAmount": 159900,
+            "currencyCode": "GBP"
+          },
+          "country": "GB"
+        },
+        {
+          "value": {
+            "centAmount": 159900,
+            "currencyCode": "USD"
+          },
+          "country": "US"
         }
-      },
-      {
-        "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35911040-3WO5GjjU.jpeg",
-        "dimensions": {
-          "w": 4400,
-          "h": 2935
-        }
-      }
-    ],
-    "attributes": [
-      {
-        "name": "productspec",
-        "value": {
-          "en-GB": "- Assembly included in delivery",
-          "de-DE": "- Montage im Lieferumfang enthalten",
-          "en-US": "- Assembly included in delivery"
-        }
-      },
-      {
-        "name": "product-description",
-        "value": {
-          "en-GB": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
-          "en-US": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
-          "de-DE": "Dieser Nussbaumschrank hat viele Schubladen, die in Reihen angeordnet sind, mit mehreren Schubladen pro Reihe. Die Schubladen sind groß und tief und bieten viel Stauraum. Die Schubladen können einfache Griffe haben.  Die Oberseite des Sideboards ist flach und glatt und kann zur Präsentation von Dekorationsgegenständen wie Vasen oder Kerzen verwendet werden.  Insgesamt ist ein großes Sideboard mit vielen Schubladen ein funktionales und praktisches Möbelstück, das jedem Raum Stil und Stauraum verleiht."
-        }
-      },
-      {
-        "name": "finishlabel",
-        "value": {
-          "en-GB": "Walnut",
-          "de-DE": "Nussbaum",
-          "en-US": "Walnut"
-        }
-      },
-      {
-        "name": "color-filter",
-        "value": {
-          "key": "#964B00",
-          "label": {
-            "de-DE": "Dunkelbraun",
-            "en-GB": "Dark Brown",
-            "en-US": "Dark Brown"
+      ],
+      "images": [
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35902325-W9YJNJS_.jpeg",
+          "dimensions": {
+            "w": 4400,
+            "h": 2935
+          }
+        },
+        {
+          "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35911040-3WO5GjjU.jpeg",
+          "dimensions": {
+            "w": 4400,
+            "h": 2935
           }
         }
-      },
-      {
-        "name": "finish",
-        "value": {
-          "en-GB": "#7A5905",
-          "de-DE": "#7A5905",
-          "en-US": "#7A5905"
+      ],
+      "attributes": [
+        {
+          "name": "productspec",
+          "value": {
+            "en-GB": "- Assembly included in delivery",
+            "de-DE": "- Montage im Lieferumfang enthalten",
+            "en-US": "- Assembly included in delivery"
+          }
+        },
+        {
+          "name": "product-description",
+          "value": {
+            "en-GB": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
+            "en-US": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
+            "de-DE": "Dieser Nussbaumschrank hat viele Schubladen, die in Reihen angeordnet sind, mit mehreren Schubladen pro Reihe. Die Schubladen sind groß und tief und bieten viel Stauraum. Die Schubladen können einfache Griffe haben.  Die Oberseite des Sideboards ist flach und glatt und kann zur Präsentation von Dekorationsgegenständen wie Vasen oder Kerzen verwendet werden.  Insgesamt ist ein großes Sideboard mit vielen Schubladen ein funktionales und praktisches Möbelstück, das jedem Raum Stil und Stauraum verleiht."
+          }
+        },
+        {
+          "name": "finishlabel",
+          "value": {
+            "en-GB": "Walnut",
+            "de-DE": "Nussbaum",
+            "en-US": "Walnut"
+          }
+        },
+        {
+          "name": "color-filter",
+          "value": {
+            "key": "#964B00",
+            "label": {
+              "de-DE": "Dunkelbraun",
+              "en-GB": "Dark Brown",
+              "en-US": "Dark Brown"
+            }
+          }
+        },
+        {
+          "name": "finish",
+          "value": {
+            "en-GB": "#7A5905",
+            "de-DE": "#7A5905",
+            "en-US": "#7A5905"
+          }
         }
-      }
-    ]
-  },
-  "name": {
-    "de-DE": "Nussbaum Schrank",
-    "en-GB": "Walnut Cabinet",
-    "en-US": "Walnut Cabinet"
-  },
-  "productType": {
-    "key": "furniture-and-decor",
-    "typeId": "product-type"
-  },
-  "slug": {
-    "de-DE": "nussbaum-schrank",
-    "en-GB": "walnut-cabinet",
-    "en-US": "walnut-cabinet"
+      ]
+    },
+    "name": {
+      "de-DE": "Nussbaum Schrank",
+      "en-GB": "Walnut Cabinet",
+      "en-US": "Walnut Cabinet"
+    },
+    "productType": {
+      "key": "furniture-and-decor",
+      "typeId": "product-type"
+    },
+    "slug": {
+      "de-DE": "nussbaum-schrank",
+      "en-GB": "walnut-cabinet",
+      "en-US": "walnut-cabinet"
+    }
   }
 }
