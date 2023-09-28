@@ -37,6 +37,7 @@ const mapVariant = (variant: ProductVariant) => {
           centAmount: priceResult.value.centAmount,
           currencyCode: priceResult.value.currencyCode,
         },
+        discounted: undefined,
       };
       return result;
     }),
@@ -48,7 +49,7 @@ const mapVariant = (variant: ProductVariant) => {
 
 const getProductSnapshot = async (product: Product) => {
   const variants = product.masterData.current.variants.map(mapVariant);
-  let result = {
+  let result: ProductDraft = {
     ...product.masterData.current,
     categories: product.masterData.current.categories.map((value) => {
       return { key: value.obj?.key!, typeId: 'category' };
@@ -65,12 +66,28 @@ const getProductSnapshot = async (product: Product) => {
     metaDescription: filterLocalizedString(
       product.masterData.current.metaDescription
     ),
-    searchKeywords:
-      product.masterData.current.searchKeywords &&
-      Object.keys(product.masterData.current.searchKeywords).length > 0
-        ? product.masterData.current.searchKeywords
-        : undefined,
+    searchKeywords: undefined,
   };
+
+  if (
+    product.masterData.current.searchKeywords &&
+    Object.keys(product.masterData.current.searchKeywords).length > 0
+  ) {
+    const keep = Object.values(
+      product.masterData.current.searchKeywords
+    ).reduce((all, one) => {
+      if (Array.isArray(one) && one.length > 0) {
+        return true;
+      }
+      return all;
+    }, false);
+    if (keep) {
+      result = {
+        ...result,
+        searchKeywords: product.masterData.current.searchKeywords,
+      };
+    }
+  }
 
   return JSON.stringify(
     sortObj(result as unknown as { [id: string]: unknown }),

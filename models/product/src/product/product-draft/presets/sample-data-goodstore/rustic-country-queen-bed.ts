@@ -51,7 +51,7 @@ const rusticCountryQueenBed = (): TProductDraftBuilder =>
       LocalizedString.presets
         .empty()
         ['en-GB']('Rustic Country Queen Bed')
-        ['de-DE']('Rustikales Country-Queen-Bett')
+        ['de-DE']('Rustikales Queensize-Bett im Landhausstil')
         ['en-US']('Rustic Country Queen Bed')
     )
     .slug(

@@ -33,57 +33,21 @@
           "centAmount": 239900,
           "currencyCode": "EUR"
         },
-        "country": "DE",
-        "discounted": {
-          "value": {
-            "type": "centPrecision",
-            "currencyCode": "EUR",
-            "centAmount": 215910,
-            "fractionDigits": 2
-          },
-          "discount": {
-            "typeId": "product-discount",
-            "id": "f3d06df1-a7cb-4ac2-a4cb-8c05bc2d84a8"
-          }
-        }
+        "country": "DE"
       },
       {
         "value": {
           "centAmount": 239900,
           "currencyCode": "GBP"
         },
-        "country": "GB",
-        "discounted": {
-          "value": {
-            "type": "centPrecision",
-            "currencyCode": "GBP",
-            "centAmount": 215910,
-            "fractionDigits": 2
-          },
-          "discount": {
-            "typeId": "product-discount",
-            "id": "f3d06df1-a7cb-4ac2-a4cb-8c05bc2d84a8"
-          }
-        }
+        "country": "GB"
       },
       {
         "value": {
           "centAmount": 239900,
           "currencyCode": "USD"
         },
-        "country": "US",
-        "discounted": {
-          "value": {
-            "type": "centPrecision",
-            "currencyCode": "USD",
-            "centAmount": 215910,
-            "fractionDigits": 2
-          },
-          "discount": {
-            "typeId": "product-discount",
-            "id": "f3d06df1-a7cb-4ac2-a4cb-8c05bc2d84a8"
-          }
-        }
+        "country": "US"
       }
     ],
     "images": [

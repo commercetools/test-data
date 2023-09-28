@@ -30,6 +30,10 @@ const sunnaiGlassBowl01 = (): TProductVariantDraftBuilder =>
         )
         .dimensions({ w: 5381, h: 3739 }),
     ])
-    .attributes([AttributeDraft.random().name('type').value(Round)]);
+    .attributes([
+      AttributeDraft.random()
+        .name('type')
+        .value([{ 'en-GB': 'Round' }]),
+    ]);
 
 export default sunnaiGlassBowl01;

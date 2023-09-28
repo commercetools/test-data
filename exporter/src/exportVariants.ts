@@ -4,6 +4,7 @@ import {
   LocalizedString,
   ProductType,
   ProductVariant,
+  Reference,
 } from '@commercetools/platform-sdk';
 import { getLimit } from './ctp/config';
 import {
@@ -43,16 +44,27 @@ const serializeAttributeValue = (
     case 'set':
       switch (attributeDefinition.type.elementType.name) {
         case 'ltext':
-          attributeValue = attribute.value
-            .map((item: LocalizedString) => item[locale])
-            .join(';');
+          console.log(attribute.value);
+          attributeValue = JSON.stringify(attribute.value);
 
+          break;
+        case 'reference':
+          attributeValue =
+            '[' +
+            attribute.value
+              .map((value: Reference) => {
+                return JSON.stringify(value);
+              })
+              .join(',') +
+            ']';
           break;
         default:
           console.log(attributeDefinition.type.elementType.name);
       }
       break;
     case 'boolean':
+      attributeValue = attribute.value;
+      break;
     case 'text':
       attributeValue = "'" + attribute.value + "'";
       break;

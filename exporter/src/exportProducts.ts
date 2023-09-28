@@ -109,6 +109,27 @@ import type { TProductDraftBuilder } from '../../../types';`;
       false
     );
     content = addEntry(
+      'metaTitle',
+      content,
+      formatLocalizedString(product.masterData.staged.metaTitle),
+      '',
+      false
+    );
+    content = addEntry(
+      'metaDescription',
+      content,
+      formatLocalizedString(product.masterData.staged.metaDescription),
+      '',
+      false
+    );
+    content = addEntry(
+      'metaKeywords',
+      content,
+      formatLocalizedString(product.masterData.staged.metaKeywords),
+      '',
+      false
+    );
+    content = addEntry(
       'slug',
       content,
       formatLocalizedString(product.masterData.staged.slug),
