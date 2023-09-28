@@ -15,7 +15,7 @@ describe('Shipping Method with USA preset', () => {
         "name": "US Delivery",
         "predicate": undefined,
         "taxCategory": {
-          "key": "standard-tax",
+          "key": "standard-tax-category",
           "typeId": "tax-category",
         },
         "zoneRates": [
@@ -61,7 +61,7 @@ describe('Shipping Method with USA preset', () => {
         "predicate": undefined,
         "taxCategory": {
           "__typename": "Reference",
-          "key": "standard-tax",
+          "key": "standard-tax-category",
           "typeId": "tax-category",
         },
         "zoneRates": [
