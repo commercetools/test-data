@@ -1,15 +1,498 @@
-import type { TProductDraft } from '../../../types';
+import type { TProductDraft, TProductDraftGraphql } from '../../../types';
 import sunnaiGlassBowl from './sunnai-glass-bowl';
 
 describe(`with sunnaiGlassBowl preset`, () => {
   it(`should return a sunnaiGlassBowl preset`, () => {
     const sunnaiGlassBowlPreset = sunnaiGlassBowl().build<TProductDraft>();
-    expect(sunnaiGlassBowlPreset).toMatchInlineSnapshot(``);
+    console.log(sunnaiGlassBowlPreset);
+
+    expect(sunnaiGlassBowlPreset).toMatchInlineSnapshot(`
+      {
+        "categories": [
+          {
+            "key": "bowls",
+            "typeId": "category",
+          },
+          {
+            "key": "dinnerware",
+            "typeId": "category",
+          },
+          {
+            "key": "kitchen",
+            "typeId": "category",
+          },
+          {
+            "key": "bakeware",
+            "typeId": "category",
+          },
+        ],
+        "categoryOrderHints": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Diese Glasschalen eignen sich ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.
+
+      Das Glas ist leicht zu reinigen und zu pflegen und kann mit Wasser und Seife gewaschen werden. Die Schale ist zudem spülmaschinenfest. Das Glasmaterial ist so verarbeitet, dass es keine Aromen oder Gerüche aus den Lebensmitteln aufnimmt.
+
+      Die Glasschale ist eine schöne und praktische Wahl zum Präsentieren und Servieren von Speisen. Ihre Transparenz und Schlichtheit machen sie zu einem vielseitigen und zeitlosen Begleiter, der für eine Vielzahl von Anlässen verwendet werden kann.
+      ",
+          "en": undefined,
+          "en-GB": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
+
+      The glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.
+
+      Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
+          "en-US": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
+
+      The glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.
+
+      Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
+          "fr": undefined,
+        },
+        "key": "sunnai-glass-bowl",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+            {
+              "name": "type",
+              "value": [
+                {
+                  "en-GB": "Round",
+                },
+              ],
+            },
+          ],
+          "images": [
+            {
+              "dimensions": {
+                "h": 3739,
+                "w": 5381,
+              },
+              "label": undefined,
+              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_354085817-BK7aLsjs.jpeg",
+            },
+          ],
+          "key": undefined,
+          "prices": [
+            {
+              "channel": undefined,
+              "country": "DE",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 799,
+                "currencyCode": "EUR",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "GB",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 799,
+                "currencyCode": "GBP",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "US",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 799,
+                "currencyCode": "USD",
+              },
+            },
+          ],
+          "sku": "SGB-01",
+        },
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "de-DE": "Glasschale >Sunnai<",
+          "en": undefined,
+          "en-GB": "Sunnai Glass Bowl",
+          "en-US": "Sunnai Glass Bowl",
+          "fr": undefined,
+        },
+        "priceMode": undefined,
+        "productType": {
+          "key": "product-sets",
+          "typeId": "product-type",
+        },
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": {
+          "de": undefined,
+          "de-DE": "sunnai-glaskugel",
+          "en": undefined,
+          "en-GB": "sunnai-glass-bowl",
+          "en-US": "sunnai-glass-bowl",
+          "fr": undefined,
+        },
+        "state": undefined,
+        "taxCategory": {
+          "key": "standard-tax",
+          "typeId": "tax-category",
+        },
+        "variants": [
+          {
+            "assets": undefined,
+            "attributes": [
+              {
+                "name": "type",
+                "value": [
+                  {
+                    "en-GB": "Deep",
+                  },
+                ],
+              },
+            ],
+            "images": [
+              {
+                "dimensions": {
+                  "h": 3288,
+                  "w": 4944,
+                },
+                "label": undefined,
+                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_365013136-OKVQnVf-.jpeg",
+              },
+            ],
+            "key": undefined,
+            "prices": [
+              {
+                "channel": undefined,
+                "country": "DE",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centAmount": 899,
+                  "currencyCode": "EUR",
+                },
+              },
+              {
+                "channel": undefined,
+                "country": "GB",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centAmount": 899,
+                  "currencyCode": "GBP",
+                },
+              },
+              {
+                "channel": undefined,
+                "country": "US",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centAmount": 899,
+                  "currencyCode": "USD",
+                },
+              },
+            ],
+            "sku": "SGB-02",
+          },
+        ],
+      }
+    `);
   });
 
   it(`should return a sunnaiGlassBowl preset when built for graphql`, () => {
     const sunnaiGlassBowlPresetGraphql =
-      sunnaiGlassBowl().buildGraphql<TProductDraft>();
-    expect(sunnaiGlassBowlPresetGraphql).toMatchInlineSnapshot(``);
+      sunnaiGlassBowl().buildGraphql<TProductDraftGraphql>();
+    console.log(sunnaiGlassBowlPresetGraphql);
+
+    expect(sunnaiGlassBowlPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "bowls",
+            "typeId": "category",
+          },
+          {
+            "__typename": "Reference",
+            "key": "dinnerware",
+            "typeId": "category",
+          },
+          {
+            "__typename": "Reference",
+            "key": "kitchen",
+            "typeId": "category",
+          },
+          {
+            "__typename": "Reference",
+            "key": "bakeware",
+            "typeId": "category",
+          },
+        ],
+        "categoryOrderHints": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
+
+      The glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.
+
+      Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
+
+      The glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.
+
+      Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Diese Glasschalen eignen sich ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.
+
+      Das Glas ist leicht zu reinigen und zu pflegen und kann mit Wasser und Seife gewaschen werden. Die Schale ist zudem spülmaschinenfest. Das Glasmaterial ist so verarbeitet, dass es keine Aromen oder Gerüche aus den Lebensmitteln aufnimmt.
+
+      Die Glasschale ist eine schöne und praktische Wahl zum Präsentieren und Servieren von Speisen. Ihre Transparenz und Schlichtheit machen sie zu einem vielseitigen und zeitlosen Begleiter, der für eine Vielzahl von Anlässen verwendet werden kann.
+      ",
+          },
+        ],
+        "key": "sunnai-glass-bowl",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+            {
+              "name": "type",
+              "value": "[{"en-GB":"Round"}]",
+            },
+          ],
+          "images": [
+            {
+              "dimensions": {
+                "height": 3739,
+                "width": 5381,
+              },
+              "label": undefined,
+              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_354085817-BK7aLsjs.jpeg",
+            },
+          ],
+          "key": undefined,
+          "prices": [
+            {
+              "channel": undefined,
+              "country": "DE",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 799,
+                  "currencyCode": "EUR",
+                },
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "GB",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 799,
+                  "currencyCode": "GBP",
+                },
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "US",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 799,
+                  "currencyCode": "USD",
+                },
+              },
+            },
+          ],
+          "sku": "SGB-01",
+        },
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Sunnai Glass Bowl",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "Sunnai Glass Bowl",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Glasschale >Sunnai<",
+          },
+        ],
+        "priceMode": undefined,
+        "productType": {
+          "__typename": "Reference",
+          "key": "product-sets",
+          "typeId": "product-type",
+        },
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "sunnai-glass-bowl",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "sunnai-glass-bowl",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "sunnai-glaskugel",
+          },
+        ],
+        "state": undefined,
+        "taxCategory": {
+          "__typename": "Reference",
+          "key": "standard-tax",
+          "typeId": "tax-category",
+        },
+        "variants": [
+          {
+            "assets": undefined,
+            "attributes": [
+              {
+                "name": "type",
+                "value": "[{"en-GB":"Deep"}]",
+              },
+            ],
+            "images": [
+              {
+                "dimensions": {
+                  "height": 3288,
+                  "width": 4944,
+                },
+                "label": undefined,
+                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_365013136-OKVQnVf-.jpeg",
+              },
+            ],
+            "key": undefined,
+            "prices": [
+              {
+                "channel": undefined,
+                "country": "DE",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centPrecision": {
+                    "centAmount": 899,
+                    "currencyCode": "EUR",
+                  },
+                },
+              },
+              {
+                "channel": undefined,
+                "country": "GB",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centPrecision": {
+                    "centAmount": 899,
+                    "currencyCode": "GBP",
+                  },
+                },
+              },
+              {
+                "channel": undefined,
+                "country": "US",
+                "custom": undefined,
+                "customerGroup": undefined,
+                "discounted": undefined,
+                "key": undefined,
+                "tiers": undefined,
+                "validFrom": undefined,
+                "validUntil": undefined,
+                "value": {
+                  "centPrecision": {
+                    "centAmount": 899,
+                    "currencyCode": "USD",
+                  },
+                },
+              },
+            ],
+            "sku": "SGB-02",
+          },
+        ],
+      }
+    `);
   });
 });

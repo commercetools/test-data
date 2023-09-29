@@ -1,0 +1,226 @@
+import type {
+  TProductVariantDraft,
+  TProductVariantDraftGraphql,
+} from '../../../types';
+import sweetPeaCandle01 from './sweet-pea-candle-01';
+
+describe(`with sweetPeaCandle01 preset`, () => {
+  it(`should return a sweetPeaCandle01 preset`, () => {
+    const sweetPeaCandle01Preset =
+      sweetPeaCandle01().build<TProductVariantDraft>();
+    expect(sweetPeaCandle01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Wird im Glas geliefert
+      - 180 Gramm",
+              "en-GB": "- Comes in glass jar
+      - 180 grams",
+              "en-US": "- Comes in glass jar
+      - 180 grams",
+            },
+          },
+          {
+            "name": "colorlabel",
+            "value": {
+              "de-DE": "Rosa",
+              "en-GB": "Pink",
+              "en-US": "Pink",
+            },
+          },
+          {
+            "name": "color",
+            "value": {
+              "de-DE": "#FFD6E5",
+              "en-GB": "#FFD6E5",
+              "en-US": "#FFD6E5",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 3693,
+              "w": 5540,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745843-IMV5MNuL.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 4480,
+              "w": 6720,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745652-REwpxgGe.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 4427,
+              "w": 6640,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474481-Pc-w_Zeb.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 699,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 699,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 699,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "SPC-01",
+      }
+    `);
+  });
+
+  it(`should return a sweetPeaCandle01 preset when built for graphql`, () => {
+    const sweetPeaCandle01PresetGraphql =
+      sweetPeaCandle01().buildGraphql<TProductVariantDraftGraphql>();
+    expect(sweetPeaCandle01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Comes in glass jar\\n- 180 grams","en-US":"- Comes in glass jar\\n- 180 grams","de-DE":"- Wird im Glas geliefert\\n- 180 Gramm"}",
+          },
+          {
+            "name": "colorlabel",
+            "value": "{"en-GB":"Pink","de-DE":"Rosa","en-US":"Pink"}",
+          },
+          {
+            "name": "color",
+            "value": "{"en-GB":"#FFD6E5","de-DE":"#FFD6E5","en-US":"#FFD6E5"}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 3693,
+              "width": 5540,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745843-IMV5MNuL.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 4480,
+              "width": 6720,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745652-REwpxgGe.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 4427,
+              "width": 6640,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474481-Pc-w_Zeb.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 699,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 699,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 699,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "SPC-01",
+      }
+    `);
+  });
+});
