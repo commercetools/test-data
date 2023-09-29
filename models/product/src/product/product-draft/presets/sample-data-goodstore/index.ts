@@ -18,6 +18,26 @@ import classicCoffeeCup from './classic-coffee-cup';
 import classicServingTray from './classic-serving-tray';
 import clinkChampagneGlass from './clink-champagne-glass';
 import cloudQueenBed from './cloud-queen-bed';
+import geometricPillowCase from './geometric-pillow-case';
+import glamArmchair from './glam-armchair';
+import goldRimmedChampagneGlasses from './gold-rimmed-champagne-glasses';
+import greenServingPlate from './green-serving-plate';
+import harmonyDrinkingGlass from './harmony-drinking-glass';
+import harvestPlate from './harvest-plate';
+import iceBucket from './ice-bucket';
+import idunPillowCover from './idun-pillow-cover';
+import indoorJutePlanter from './indoor-jute-planter';
+import ivoryLoungeChair from './ivory-lounge-chair';
+import ivoryPlate from './ivory-plate';
+import juteRug from './jute-rug';
+import lanaPillowCover from './lana-pillow-cover';
+import largeCeramicPlate from './large-ceramic-plate';
+import leahArmchair from './leah-armchair';
+import leatherCoaster from './leather-coaster';
+import leatherWeaveChair from './leather-weave-chair';
+import luxePillowCover from './luxe-pillow-cover';
+import marquisTray from './marquis-tray';
+import mayaPillowCover from './maya-pillow-cover';
 
 const presets = {
   abigailLoungeChair,
@@ -40,6 +60,26 @@ const presets = {
   classicServingTray,
   clinkChampagneGlass,
   cloudQueenBed,
+  geometricPillowCase,
+  glamArmchair,
+  goldRimmedChampagneGlasses,
+  greenServingPlate,
+  harmonyDrinkingGlass,
+  harvestPlate,
+  iceBucket,
+  idunPillowCover,
+  indoorJutePlanter,
+  ivoryLoungeChair,
+  ivoryPlate,
+  juteRug,
+  lanaPillowCover,
+  largeCeramicPlate,
+  leahArmchair,
+  leatherCoaster,
+  leatherWeaveChair,
+  luxePillowCover,
+  marquisTray,
+  mayaPillowCover,
 };
 
 export default presets;

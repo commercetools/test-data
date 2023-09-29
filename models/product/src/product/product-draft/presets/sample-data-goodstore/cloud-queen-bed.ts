@@ -46,9 +46,9 @@ const cloudQueenBed = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Cloud Queen Bed')
-        ['de-DE']('Cloud-Queen-Bett')
         ['en-US']('Cloud Queen Bed')
+        ['en-GB']('Cloud Queen Bed')
+        ['de-DE']('Queen-Bett "Cloud"')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const cloudQueenBed = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('cloud-queen-bed')
         ['en-GB']('cloud-queen-bed')
         ['de-DE']('cloud-queen-bett')
-        ['en-US']('cloud-queen-bed')
     )
     .productType(
       KeyReference.presets.productType().key(cloudQueenBedProductTypeDraft.key!)

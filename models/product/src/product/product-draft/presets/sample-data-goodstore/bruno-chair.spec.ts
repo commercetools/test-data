@@ -150,7 +150,7 @@ describe(`with brunoChair preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Bruno Stuhl",
+          "de-DE": "Sessel "Bruno"",
           "en": undefined,
           "en-GB": "Bruno Chair",
           "en-US": "Bruno Chair",
@@ -321,18 +321,18 @@ describe(`with brunoChair preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Bruno Chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bruno Chair",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Bruno Stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Bruno Chair",
+            "value": "Sessel "Bruno"",
           },
         ],
         "priceMode": undefined,
@@ -346,6 +346,11 @@ describe(`with brunoChair preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "bruno-chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bruno-chair",
           },
@@ -353,11 +358,6 @@ describe(`with brunoChair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bruno-stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "bruno-chair",
           },
         ],
         "state": undefined,

@@ -1,0 +1,91 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const goldRimmedChampagneGlassesProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
+  .kitchen()
+  .build<TCategoryDraft>();
+
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .barAndGlassware()
+  .build<TCategoryDraft>();
+
+const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .glassware()
+  .build<TCategoryDraft>();
+
+const goldRimmedChampagneGlasses = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('gold-rimmed-champagne-glasses')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Gold Rimmed Champagne Glasses')
+        ['en-GB']('Gold Rimmed Champagne Glasses')
+        ['de-DE']('Champagnergläser mit Goldrand')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          "A set of gold rimmed champagne crystal glasses is a luxurious and elegant way to serve champagne or sparkling wine. These glasses are made of high-quality crystal, which gives them a clear and sparkling appearance that beautifully reflects the bubbles in the champagne.  The glasses feature a delicate and slender stem, which allows the drinker to hold the glass without warming the contents inside. The gold rimmed detail adds an extra touch of luxury and sophistication to the design, giving the glasses a glamorous and opulent appearance.  Overall, a set of gold rimmed champagne crystal glasses is a stunning and luxurious addition to any home bar or entertaining collection. Their elegant and timeless design, combined with their high-quality materials and intricate detailing, make them a perfect choice for celebrating life's special moments in style."
+        )
+        ['en-US'](
+          "A set of gold rimmed champagne crystal glasses is a luxurious and elegant way to serve champagne or sparkling wine. These glasses are made of high-quality crystal, which gives them a clear and sparkling appearance that beautifully reflects the bubbles in the champagne.  The glasses feature a delicate and slender stem, which allows the drinker to hold the glass without warming the contents inside. The gold rimmed detail adds an extra touch of luxury and sophistication to the design, giving the glasses a glamorous and opulent appearance.  Overall, a set of gold rimmed champagne crystal glasses is a stunning and luxurious addition to any home bar or entertaining collection. Their elegant and timeless design, combined with their high-quality materials and intricate detailing, make them a perfect choice for celebrating life's special moments in style."
+        )
+        ['de-DE'](
+          'Mit einem Set aus Champagner-Kristallgläsern mit Goldrand lässt sich auf luxuriöse und elegante Art Champagner oder Sekt servieren. Diese Gläser sind aus hochwertigem Kristall gefertigt, was ihnen ein klares und funkelndes Aussehen verleiht, das die Blasen im Champagner wunderschön widerspiegelt.  Die Gläser verfügen über einen zarten und schlanken Stiel, der es dem Trinker ermöglicht, das Glas zu halten, ohne den Inhalt darin zu erwärmen. Die goldene Umrandung ist ein Detail, das dem Design einen zusätzlichen Hauch von Luxus und Raffinesse und den Gläsern damit ein glamouröses und opulentes Aussehen verleiht. Insgesamt ist das Set aus Champagner-Kristallgläsern mit Goldrand eine atemberaubende und luxuriöse Ergänzung für jede Hausbar oder Unterhaltungssammlung. Das elegante und zeitlose Design, kombiniert mit hochwertigen Materialien und aufwendigen Details, macht es zur perfekten Wahl, um die besonderen Momente des Lebens stilvoll zu feiern.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('gold-rimmed-champagne-glasses')
+        ['en-GB']('gold-rimmed-champagne-glasses')
+        ['de-DE']('champagnerglser-mit-goldrand')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(goldRimmedChampagneGlassesProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.goldRimmedChampagneGlasses01()
+    )
+    .categories([
+      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReference.presets.category().key(glasswareDraft.key!),
+    ]);
+
+export default goldRimmedChampagneGlasses;

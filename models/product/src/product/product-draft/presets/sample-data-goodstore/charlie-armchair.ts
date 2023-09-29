@@ -46,9 +46,9 @@ const charlieArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Charlie Armchair')
-        ['de-DE']('Charlie Sessel')
         ['en-US']('Charlie Armchair')
+        ['en-GB']('Charlie Armchair')
+        ['de-DE']('Sessel "Charlie"')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const charlieArmchair = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('charlie-armchair')
         ['en-GB']('charlie-armchair')
         ['de-DE']('charlie-sessel')
-        ['en-US']('charlie-armchair')
     )
     .productType(
       KeyReference.presets

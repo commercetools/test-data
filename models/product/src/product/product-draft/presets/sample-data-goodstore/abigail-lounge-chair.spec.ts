@@ -338,6 +338,11 @@ describe(`with abigailLoungeChair preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Abigail Lounge Chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Abigail Lounge Chair",
           },
@@ -345,11 +350,6 @@ describe(`with abigailLoungeChair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Abigail Lounge-Sessel",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Abigail Lounge Chair",
           },
         ],
         "priceMode": undefined,
@@ -363,6 +363,11 @@ describe(`with abigailLoungeChair preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "abigail-lounge-chair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "abigail-lounge-chair",
           },
@@ -370,11 +375,6 @@ describe(`with abigailLoungeChair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "abigail-lounge-stuhl",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "abigail-lounge-chair",
           },
         ],
         "state": undefined,

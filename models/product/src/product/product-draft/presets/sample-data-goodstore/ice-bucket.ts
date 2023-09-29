@@ -1,0 +1,88 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const iceBucketProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
+  .furnitureAndDecor()
+  .build<TProductTypeDraft>();
+
+const barAccessoriesDraft = CategoryDraft.presets.sampleDataGoodStore
+  .barAccessories()
+  .build<TCategoryDraft>();
+
+const dinnerwareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .dinnerware()
+  .build<TCategoryDraft>();
+
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
+  .kitchen()
+  .build<TCategoryDraft>();
+
+const iceBucket = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('ice-bucket')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Ice Bucket')
+        ['en-GB']('Ice Bucket')
+        ['de-DE']('Eis Eimer')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.'
+        )
+        ['en-US'](
+          'A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.'
+        )
+        ['de-DE'](
+          'Ein Eiskübel aus Metall ist ein Behälter zum Aufbewahren und Servieren von Eis. Er besteht aus Edelstahl und ist so konzipiert, dass er das Eis über einen längeren Zeitraum kalt hält. Das Äußere des Eiskübels ist poliert und hat eine verlängerte Lippe zum einfachen Tragen. Die Innenseite ist glatt und poliert, damit das Eis nicht an den Wänden des Eimers kleben bleibt.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('ice-bucket')
+        ['en-GB']('ice-bucket')
+        ['de-DE']('eis-eimer')
+    )
+    .productType(
+      KeyReference.presets.productType().key(iceBucketProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.iceBucket01()
+    )
+    .categories([
+      KeyReference.presets.category().key(barAccessoriesDraft.key!),
+      KeyReference.presets.category().key(dinnerwareDraft.key!),
+      KeyReference.presets.category().key(kitchenDraft.key!),
+    ]);
+
+export default iceBucket;

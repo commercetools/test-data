@@ -45,9 +45,9 @@ const ashenRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Ashen Rug')
-        ['de-DE']('Ashen Teppich')
         ['en-US']('Ashen Rug')
+        ['en-GB']('Ashen Rug')
+        ['de-DE']('Teppich "Ashen"')
     )
     .description(
       LocalizedString.presets
@@ -65,9 +65,9 @@ const ashenRug = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('ashen-rug')
         ['en-GB']('ashen-rug')
         ['de-DE']('ashen-teppich')
-        ['en-US']('ashen-rug')
     )
     .productType(
       KeyReference.presets.productType().key(ashenRugProductTypeDraft.key!)

@@ -342,6 +342,11 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Canela Three-Seater Sofa",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Canela Three-Seater Sofa",
           },
@@ -349,11 +354,6 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Canela 3-Sitzer-Sofa",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Canela Three-Seater Sofa",
           },
         ],
         "priceMode": undefined,
@@ -367,6 +367,11 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "canela-three-seater-sofa",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "canela-three-seater-sofa",
           },
@@ -374,11 +379,6 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "canela-3-sitzer-sofa",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "canela-three-seater-sofa",
           },
         ],
         "state": undefined,

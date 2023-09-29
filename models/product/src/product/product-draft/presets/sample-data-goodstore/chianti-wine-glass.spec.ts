@@ -259,6 +259,11 @@ describe(`with chiantiWineGlass preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Chianti Wine Glass",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Chianti Wine Glass",
           },
@@ -266,11 +271,6 @@ describe(`with chiantiWineGlass preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Chianti Weinglas",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Chianti Wine Glass",
           },
         ],
         "priceMode": undefined,
@@ -284,6 +284,11 @@ describe(`with chiantiWineGlass preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "chianti-wine-glass",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "chianti-wine-glass",
           },
@@ -291,11 +296,6 @@ describe(`with chiantiWineGlass preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "chianti-weinglas",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "chianti-wine-glass",
           },
         ],
         "state": undefined,

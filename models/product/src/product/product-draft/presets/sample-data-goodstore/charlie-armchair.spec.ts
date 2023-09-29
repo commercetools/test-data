@@ -150,7 +150,7 @@ describe(`with charlieArmchair preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Charlie Sessel",
+          "de-DE": "Sessel "Charlie"",
           "en": undefined,
           "en-GB": "Charlie Armchair",
           "en-US": "Charlie Armchair",
@@ -322,18 +322,18 @@ describe(`with charlieArmchair preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Charlie Armchair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Charlie Armchair",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Charlie Sessel",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Charlie Armchair",
+            "value": "Sessel "Charlie"",
           },
         ],
         "priceMode": undefined,
@@ -347,6 +347,11 @@ describe(`with charlieArmchair preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "charlie-armchair",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "charlie-armchair",
           },
@@ -354,11 +359,6 @@ describe(`with charlieArmchair preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "charlie-sessel",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "charlie-armchair",
           },
         ],
         "state": undefined,

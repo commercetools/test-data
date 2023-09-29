@@ -107,6 +107,11 @@ describe(`with beddingBundle preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Dreamscape Comfort Collection",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Dreamscape Comfort Collection",
           },
@@ -114,11 +119,6 @@ describe(`with beddingBundle preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dreamscape Comfort-Kollektion",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Dreamscape Comfort Collection",
           },
         ],
         "priceMode": undefined,
@@ -132,6 +132,11 @@ describe(`with beddingBundle preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "test-bundle",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "test-bundle",
           },
@@ -139,11 +144,6 @@ describe(`with beddingBundle preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "dreamscape-comfort-kollektion",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "test-bundle",
           },
         ],
         "state": undefined,

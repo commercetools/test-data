@@ -306,6 +306,11 @@ describe(`with classicChampagneGlasses preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Classic Champagne Glasses",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Classic Champagne Glasses",
           },
@@ -313,11 +318,6 @@ describe(`with classicChampagneGlasses preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Klassische Champagnergläser",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Classic Champagne Glasses",
           },
         ],
         "priceMode": undefined,
@@ -331,6 +331,11 @@ describe(`with classicChampagneGlasses preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "classic-champagne-glasses",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "classic-champagne-glasses",
           },
@@ -338,11 +343,6 @@ describe(`with classicChampagneGlasses preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "klassische-champagnerglser",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "classic-champagne-glasses",
           },
         ],
         "state": undefined,

@@ -46,9 +46,9 @@ const classicBeerMug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Classic Beer Mug')
-        ['de-DE']('Klassischer Bierkrug')
         ['en-US']('Classic Beer Mug')
+        ['en-GB']('Classic Beer Mug')
+        ['de-DE']('Klassischer Bierglas')
     )
     .description(
       LocalizedString.presets
@@ -66,9 +66,9 @@ const classicBeerMug = (): TProductDraftBuilder =>
     .slug(
       LocalizedString.presets
         .empty()
+        ['en-US']('classic-beer-mug')
         ['en-GB']('classic-beer-mug')
         ['de-DE']('klassischer-bierkrug')
-        ['en-US']('classic-beer-mug')
     )
     .productType(
       KeyReference.presets

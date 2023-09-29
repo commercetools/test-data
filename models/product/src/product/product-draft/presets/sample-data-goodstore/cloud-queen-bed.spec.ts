@@ -142,7 +142,7 @@ describe(`with cloudQueenBed preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Cloud-Queen-Bett",
+          "de-DE": "Queen-Bett "Cloud"",
           "en": undefined,
           "en-GB": "Cloud Queen Bed",
           "en-US": "Cloud Queen Bed",
@@ -314,18 +314,18 @@ describe(`with cloudQueenBed preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Cloud Queen Bed",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Cloud Queen Bed",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Cloud-Queen-Bett",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Cloud Queen Bed",
+            "value": "Queen-Bett "Cloud"",
           },
         ],
         "priceMode": undefined,
@@ -339,6 +339,11 @@ describe(`with cloudQueenBed preset`, () => {
         "slug": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "cloud-queen-bed",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "cloud-queen-bed",
           },
@@ -346,11 +351,6 @@ describe(`with cloudQueenBed preset`, () => {
             "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "cloud-queen-bett",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "cloud-queen-bed",
           },
         ],
         "state": undefined,

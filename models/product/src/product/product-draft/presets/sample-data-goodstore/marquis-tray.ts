@@ -1,0 +1,103 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const marquisTrayProductTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
+  .furnitureAndDecor()
+  .build<TProductTypeDraft>();
+
+const platesDraft = CategoryDraft.presets.sampleDataGoodStore
+  .plates()
+  .build<TCategoryDraft>();
+
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
+  .kitchen()
+  .build<TCategoryDraft>();
+
+const servingPlattersDraft = CategoryDraft.presets.sampleDataGoodStore
+  .servingPlatters()
+  .build<TCategoryDraft>();
+
+const servewareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .serveware()
+  .build<TCategoryDraft>();
+
+const dinnerwareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .dinnerware()
+  .build<TCategoryDraft>();
+
+const cheeseTraysDraft = CategoryDraft.presets.sampleDataGoodStore
+  .cheeseTrays()
+  .build<TCategoryDraft>();
+
+const marquisTray = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('marquis-tray')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Marquis Tray')
+        ['en-GB']('Marquis Tray')
+        ['de-DE']('Marquis Tablett')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.'
+        )
+        ['en-US'](
+          'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.'
+        )
+        ['de-DE'](
+          'Dieses Serviertablett aus Holz ist ideal zum Servieren einer Vielzahl von Speisen und Getränken, einschließlich Vorspeisen, Hauptgerichten, Cocktails und Kaffee. Es kann sowohl in ungezwungener als auch in formeller Umgebung verwendet werden und ist eine beliebte Wahl für Mahlzeiten im Freien, Picknicks und Grillabende.  Serviertabletts aus Holz sind langlebig und leicht zu reinigen, was sie zu einer praktischen Wahl für den täglichen Gebrauch macht. Sie können mit einem feuchten Tuch abgewischt oder mit Wasser und Seife gewaschen werden.  Insgesamt ist ein Serviertablett aus Holz eine funktionale und stilvolle Wahl zum Servieren von Speisen und Getränken. Sein natürliches Material und seine einzigartige Textur verleihen jedem Essbereich Wärme und Charakter, während seine Vielseitigkeit und Praktikabilität es zu einem Grundnahrungsmittel in vielen Küchen und Esszimmern machen.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('marquis-tray')
+        ['en-GB']('marquis-tray')
+        ['de-DE']('marquis-tablett')
+    )
+    .productType(
+      KeyReference.presets.productType().key(marquisTrayProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.marquisTray01()
+    )
+    .categories([
+      KeyReference.presets.category().key(platesDraft.key!),
+      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReference.presets.category().key(servingPlattersDraft.key!),
+      KeyReference.presets.category().key(servewareDraft.key!),
+      KeyReference.presets.category().key(dinnerwareDraft.key!),
+      KeyReference.presets.category().key(cheeseTraysDraft.key!),
+    ]);
+
+export default marquisTray;
