@@ -2,18 +2,18 @@ import {
   TOrderFromCartDraft,
   TOrderFromCartDraftGraphql,
 } from '../../../types';
-import sebastianSmithCart01 from './sebastian-smith-cart';
+import sebastianMuellerCart01 from './sebastian-mueller-cart-01';
 
-describe('with the preset order from cart draft `sebastianSmithCart01`', () => {
+describe('with the preset order from cart draft `sebastianMuellerCart01`', () => {
   it(`should create an order draft`, () => {
     const orderFromCartDraft =
-      sebastianSmithCart01(1).build<TOrderFromCartDraft>();
+      sebastianMuellerCart01(1).build<TOrderFromCartDraft>();
     expect(orderFromCartDraft).toMatchInlineSnapshot();
   });
 
   it(`should create an order draft when built for graphql`, () => {
     const orderFromCartDraft =
-      sebastianSmithCart01(1).buildGraphql<TOrderFromCartDraftGraphql>();
+      sebastianMuellerCart01(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(orderFromCartDraft).toMatchInlineSnapshot();
   });
 });

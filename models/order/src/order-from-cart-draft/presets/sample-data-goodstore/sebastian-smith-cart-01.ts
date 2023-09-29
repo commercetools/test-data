@@ -6,10 +6,10 @@ import { TOrderFromCartDraftBuilder } from '../../../types';
 import * as OrderFromCartDraft from '../../index';
 
 const cart = CartDraft.presets.sampleDataGoodStore
-  .sebastianFranklinCart()
+  .sebastianSmith01()
   .build<TCartDraft>();
 
-const sebastianFranklinCart01 = (
+const sebastianSmithCart01 = (
   versionNumber: number
 ): TOrderFromCartDraftBuilder =>
   OrderFromCartDraft.presets
@@ -20,4 +20,4 @@ const sebastianFranklinCart01 = (
     .paymentState(constants.paymentState.Pending)
     .shipmentState(constants.shipmentState.Pending);
 
-export default sebastianFranklinCart01;
+export default sebastianSmithCart01;

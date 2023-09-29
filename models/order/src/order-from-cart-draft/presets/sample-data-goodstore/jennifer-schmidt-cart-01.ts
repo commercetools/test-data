@@ -6,18 +6,18 @@ import { TOrderFromCartDraftBuilder } from '../../../types';
 import * as OrderFromCartDraft from '../../index';
 
 const cart = CartDraft.presets.sampleDataGoodStore
-  .jenniferJonesCart()
+  .jenniferSchmidt01()
   .build<TCartDraft>();
 
-const jenniferJonesCart01 = (
+const jenniferSchmidtCart01 = (
   versionNumber: number
 ): TOrderFromCartDraftBuilder =>
   OrderFromCartDraft.presets
     .empty()
     .version(versionNumber)
     .cart(KeyReference.random().key(cart.key!).typeId('cart'))
-    .orderState(constants.orderState.Confirmed)
-    .paymentState(constants.paymentState.Paid)
+    .orderState(constants.orderState.Open)
+    .paymentState(constants.paymentState.Pending)
     .shipmentState(constants.shipmentState.Pending);
 
-export default jenniferJonesCart01;
+export default jenniferSchmidtCart01;
