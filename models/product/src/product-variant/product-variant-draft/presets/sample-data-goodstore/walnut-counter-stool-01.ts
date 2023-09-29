@@ -31,19 +31,23 @@ const walnutCounterStool01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5906, h: 5906 }),
     ])
     .attributes([
-      AttributeDraft.random().name('productspec').value({
-        'en-GB': '- Includes 1 stool',
-        'en-US': '- Includes 1 stool',
-        'de-DE': '- Beinhaltet 1 Hocker',
-      }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.',
-        'de-DE':
-          'Der Walnusshocker ist aus Walnussholz gefertigt, das für seine Langlebigkeit und Stärke bekannt ist. Der Hocker ist ein einfaches Design mit einer flachen Oberfläche und vier geraden Beinen. Die Beine sind für zusätzliches visuelles Interesse leicht konisch zulaufend. Das Walnussholz kann in seinem natürlichen Zustand belassen oder mit einer Beize oder einem Lack veredelt werden, um die natürliche Schönheit der Holzmaserung hervorzuheben. Der Hocker hat eine quadratische Platte. Insgesamt ist ein Walnusshocker ein vielseitiges und funktionelles Möbelstück, das in einer Vielzahl von Umgebungen verwendet werden kann.',
-        'en-US':
-          'The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.',
-      }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-GB': '- Includes 1 stool',
+          'en-US': '- Includes 1 stool',
+          'de-DE': '- Beinhaltet 1 Hocker',
+        }),
+      AttributeDraft.random()
+        .name('product-description')
+        .value({
+          'en-GB':
+            'The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.',
+          'de-DE':
+            'Der Barhocker ist aus Nussbaumholz gefertigt, das für seine Langlebigkeit und Stärke bekannt ist. Der Hocker hat ein schlichtes Design mit einer flachen Oberfläche und vier geraden Beinen. Die Beine sind für zusätzliches visuelles Interesse leicht konisch zulaufend designt. Das Nussbaumholz kann in seinem natürlichen Zustand belassen oder mit einer Beize oder einem Lack veredelt werden, um die natürliche Schönheit der Holzmaserung hervorzuheben. Der Hocker hat eine quadratische Sitzfläche. Der Barocker aus Nussbaumholz ist ein vielseitiges und funktionelles Möbelstück, das in einer Vielzahl von Wohnräumen verwendet werden kann.',
+          'en-US':
+            'The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.',
+        }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

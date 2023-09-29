@@ -48,7 +48,7 @@ const serenityQueenBed = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Serenity Queen Bed')
         ['en-GB']('Serenity Queen Bed')
-        ['de-DE']('Gelassenheit Queen-Bett')
+        ['de-DE']('Queensize-Bett >Serenity<')
     )
     .slug(
       LocalizedString.presets

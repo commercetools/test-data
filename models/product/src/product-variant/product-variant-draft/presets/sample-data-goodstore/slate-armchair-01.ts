@@ -37,19 +37,23 @@ const slateArmchair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5544, h: 3498 }),
     ])
     .attributes([
-      AttributeDraft.random().name('product-description').value({
-        'de-DE':
-          'Ein minimalistischer Stuhl mit Ottomane ist ein schlankes und schlichtes Design, das klare Linien und Funktionalität betont. Die Ottomane ist ein passendes Stück und bietet dem Benutzer einen Ort, an dem er seine Füße abstützen und sich entspannen kann. Die Polsterung ist minimal, mit neutralen Farben und einfachen Mustern. Das Design ist von der modernen Ästhetik der Mitte des Jahrhunderts inspiriert, mit Fokus auf Schlichtheit und Funktionalität. Das Ergebnis ist ein bequemer und stilvoller Stuhl, der sich nahtlos in eine Vielzahl von Einrichtungsstilen einfügt.',
-        'en-GB':
-          'A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.',
-        'en-US':
-          'A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.',
-      }),
-      AttributeDraft.random().name('productspec').value({
-        'en-GB': '- Includes ottoman',
-        'en-US': '- Includes ottoman',
-        'de-DE': '- Inklusive Ottomane',
-      }),
+      AttributeDraft.random()
+        .name('product-description')
+        .value({
+          'de-DE':
+            'Das minimalistische Sitzmöbel mit Ottomane besticht durch sein schlankes und schlichtes Design, bei dem klare Linien und Funktionalität im Vordergrund stehen. Die Ottomane ist passend zu dem Lounge-Möbel designt und bietet erweiterten Sitzkomfort. Das Polstermöbel ist mit seinen neutralen Farben und schlichten Mustern minimalistisch gehalten. Das Design ist von der modernen Ästhetik inspiriert und legt seinen Fokus auf Schlichtheit und Funktionalität. Das Ergebnis ist ein bequemer und stilvoller Sessel, der sich problemlos in eine Vielzahl von Einrichtungsstilen einfügt.',
+          'en-GB':
+            'A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.',
+          'en-US':
+            'A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.',
+        }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-GB': '- Includes ottoman',
+          'en-US': '- Includes ottoman',
+          'de-DE': '- Inklusive Ottomane',
+        }),
       AttributeDraft.random()
         .name('color')
         .value({ 'en-GB': '#989898', 'de-DE': '#989898', 'en-US': '#989898' }),

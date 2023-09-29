@@ -31,24 +31,30 @@ const sallyArmchair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 4000 }),
     ])
     .attributes([
-      AttributeDraft.random().name('productspec').value({
-        'en-GB': '- Comes with matching throw pillow',
-        'en-US': '- Comes with matching throw pillow',
-        'de-DE': '- Wird mit passendem Dekokissen geliefert',
-      }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.',
-        'en-US':
-          'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.',
-        'de-DE':
-          'Ein getufteter Sessel mit Holzbeinen ist ein elegantes und bequemes Möbelstück. Der Stuhl verfügt über einen tiefen Sitz und eine hohe Rückenlehne, die beide gepolstert und mit weichem Plüschmaterial bezogen sind. Das getuftete Design sorgt für einen raffinierten und zeitlosen Look, während die Holzbeine einen Hauch von Weichheit und Wärme hinzufügen. Die Beine sind dünn und verjüngt, was dem Stuhl ein schlankes und modernes Aussehen verleiht. Die Armlehnen sind gebogen und weich und bieten sowohl Komfort als auch Unterstützung für die Arme. Insgesamt ist ein getufteter Sessel mit Messingbeinen eine stilvolle und bequeme Ergänzung für jeden Wohn- oder Loungebereich.',
-      }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Baby Pink',
-        'de-DE': 'Baby Pink',
-        'en-US': 'Baby Pink',
-      }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-GB': '- Comes with matching throw pillow',
+          'en-US': '- Comes with matching throw pillow',
+          'de-DE': '- Wird mit passendem Dekokissen geliefert',
+        }),
+      AttributeDraft.random()
+        .name('product-description')
+        .value({
+          'en-GB':
+            'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.',
+          'en-US':
+            'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.',
+          'de-DE':
+            'Dieser getuftete Sessel mit Holzbeinen ist ein elegantes und bequemes Sitzmöbel. Der Lounge-Sessel verfügt über eine tiefe gepolsterte Sitzfläche mit hoher Rückenlehne, die beide mit weichem Plüschmaterial bezogen sind. Das getuftete Design sorgt für einen raffinierten und dennoch zeitlosen Look, der von der Wärme der abgerundet wird. Die Beine des Lounge-Möbels sind schmal und verjüngt, was dem Stuhl ein leichtes und modernes Aussehen verleiht. Die Armlehnen sind gebogen und weich und bieten sowohl Komfort als auch Halt für die Arme. Ein getufteter Sessel mit Holzbeinen ist eine stilvolle und bequeme Ergänzung für jeden Wohn- oder Lounge-Bereich.',
+        }),
+      AttributeDraft.random()
+        .name('colorlabel')
+        .value({
+          'en-GB': 'Baby Pink',
+          'de-DE': 'Baby Pink',
+          'en-US': 'Baby Pink',
+        }),
       AttributeDraft.random()
         .name('color')
         .value({ 'en-GB': '#FFE0E0', 'de-DE': '#FFE0E0', 'en-US': '#FFE0E0' }),

@@ -47,7 +47,7 @@ const wilmaChair = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Wilma Chair')
         ['en-GB']('Wilma Chair')
-        ['de-DE']('Wilma Stuhl')
+        ['de-DE']('Sessel >Wilma<')
     )
     .slug(
       LocalizedString.presets

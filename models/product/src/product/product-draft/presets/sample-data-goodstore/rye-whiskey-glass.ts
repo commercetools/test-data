@@ -48,7 +48,7 @@ const ryeWhiskeyGlass = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Rye Whiskey Glass')
         ['en-GB']('Rye Whiskey Glass')
-        ['de-DE']('Roggen-Whisky-Glas')
+        ['de-DE']('Rye-Whiskyglas')
     )
     .slug(
       LocalizedString.presets

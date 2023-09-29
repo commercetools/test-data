@@ -47,7 +47,7 @@ const tanQueenBed = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Tan Queen Bed')
         ['en-GB']('Tan Queen Bed')
-        ['de-DE']('Hellbraunes Queen-Bett')
+        ['de-DE']('Hellbraunes Queensize-Bett')
     )
     .slug(
       LocalizedString.presets

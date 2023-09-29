@@ -31,19 +31,23 @@ const marquisTray01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5056, h: 4784 }),
     ])
     .attributes([
-      AttributeDraft.random().name('productspec').value({
-        'en-GB': '- Includes 1 tray',
-        'en-US': '- Includes 1 tray',
-        'de-DE': '- Enthält 1 Tablett',
-      }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.',
-        'en-US':
-          'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.',
-        'de-DE':
-          'Dieses hölzerne Serviertablett ist ideal zum Servieren einer Vielzahl von Speisen und Getränken, einschließlich Vorspeisen, Hauptgerichten, Cocktails und Kaffee. Es kann sowohl in zwangloser als auch in formeller Umgebung verwendet werden und ist eine beliebte Wahl für Mahlzeiten im Freien, Picknicks und Grillpartys.  Serviertabletts aus Holz sind langlebig und leicht zu reinigen, was sie zu einer praktischen Wahl für den täglichen Gebrauch macht. Sie können mit einem feuchten Tuch abgewischt oder mit Wasser und Seife abgewaschen werden. Insgesamt ist ein Serviertablett aus Holz eine funktionale und stilvolle Wahl für das Servieren von Speisen und Getränken. Sein natürliches Material und seine einzigartige Textur verleihen jedem Esszimmer Wärme und Charakter, während seine Vielseitigkeit und Zweckmäßigkeit es zu einem Grundnahrungsmittel in vielen Küchen und Esszimmern machen.',
-      }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-GB': '- Includes 1 tray',
+          'en-US': '- Includes 1 tray',
+          'de-DE': '- Enthält 1 Tablett',
+        }),
+      AttributeDraft.random()
+        .name('product-description')
+        .value({
+          'en-GB':
+            'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.',
+          'en-US':
+            'This wooden serving tray is ideal for serving a variety of foods and drinks, including appetizers, entrees, cocktails, and coffee. It can be used in both casual and formal settings, and are a popular choice for outdoor dining, picnics, and barbecues.  Wooden serving trays are durable and easy to clean, making them a practical choice for everyday use. They can be wiped clean with a damp cloth or washed with soap and water.  Overall, a wooden serving tray is a functional and stylish choice for serving food and drinks. Its natural material and unique texture add warmth and character to any dining setting, while its versatility and practicality make it a staple in many kitchens and dining rooms.',
+          'de-DE':
+            'Dieses hölzerne Serviertablett ist ideal zum Servieren einer Vielzahl von Speisen und Getränken, einschließlich Vorspeisen, Hauptgerichten, Cocktails und Kaffee. Es kann sowohl in zwangloser als auch in formeller Umgebung verwendet werden und ist eine beliebte Wahl für Mahlzeiten im Freien, Picknicks und Grillpartys.  Serviertabletts aus Holz sind langlebig und leicht zu reinigen, was sie zu einer praktischen Wahl für den täglichen Gebrauch macht. Sie können mit einem feuchten Tuch abgewischt oder mit Wasser und Seife abgewaschen werden. Insgesamt ist ein Serviertablett aus Holz eine funktionale und stilvolle Wahl für das Servieren von Speisen und Getränken. Sein natürliches Material und seine einzigartige Textur verleihen jedem Esszimmer Wärme und Charakter, während seine Vielseitigkeit und Zweckmäßigkeit es zu einem Grundnahrungsmittel in vielen Küchen und Esszimmern machen.',
+        }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

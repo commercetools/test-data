@@ -47,7 +47,7 @@ const sandTeaCup = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Sand Tea Cup')
         ['en-GB']('Sand Tea Cup')
-        ['de-DE']('Sand-Teetasse')
+        ['de-DE']('Sandfarbene Tasse')
     )
     .slug(
       LocalizedString.presets

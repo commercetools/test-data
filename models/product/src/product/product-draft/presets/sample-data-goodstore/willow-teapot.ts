@@ -52,7 +52,7 @@ const willowTeapot = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Willow Teapot')
         ['en-GB']('Willow Teapot')
-        ['de-DE']('Willow Teekanne')
+        ['de-DE']('Teekanne >Willow<')
     )
     .slug(
       LocalizedString.presets

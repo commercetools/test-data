@@ -48,7 +48,7 @@ const walnutCabinet = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Walnut Cabinet')
         ['en-GB']('Walnut Cabinet')
-        ['de-DE']('Nussbaum Schrank')
+        ['de-DE']('Sideboard aus Nussbaumholz')
     )
     .slug(
       LocalizedString.presets

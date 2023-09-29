@@ -56,7 +56,7 @@ const walnutCounterStool = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Walnut Counter Stool')
         ['en-GB']('Walnut Counter Stool')
-        ['de-DE']('Barhocker aus Walnussholz')
+        ['de-DE']('Barhocker aus Nussbaumholz')
     )
     .slug(
       LocalizedString.presets

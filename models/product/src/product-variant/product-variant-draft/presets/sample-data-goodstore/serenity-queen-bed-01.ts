@@ -31,19 +31,23 @@ const serenityQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2000, h: 2000 }),
     ])
     .attributes([
-      AttributeDraft.random().name('productspec').value({
-        'en-GB': '- Assembly included in delivery',
-        'en-US': '- Assembly included in delivery',
-        'de-DE': '- Montage im Lieferumfang enthalten',
-      }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.',
-        'en-US':
-          'A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.',
-        'de-DE':
-          'Ein Queensize-Bett mit industriellem Kissenkopfteil hat einen einzigartigen und kantigen Look. Das Kopfteil ist mit einem robusten beigefarbenen Stoff bezogen. Das Kopfteil umfasst Lederriemen, die ihm mit freiliegenden Schrauben und Bolzen ein industrielles Aussehen verleihen. Der Rahmen ist ebenfalls mit dem gleichen Stoff wie das Kopfteil bezogen. Das Bett hat ein einfaches, minimalistisches Design mit einem Holzrahmen und geraden Linien, die die kühne Aussage des Kopfteils ergänzen. Insgesamt wäre diese Art von Bett perfekt für jemanden, der seinem Schlafzimmerdekor einen Hauch von Industriestil verleihen möchte.',
-      }),
+      AttributeDraft.random()
+        .name('productspec')
+        .value({
+          'en-GB': '- Assembly included in delivery',
+          'en-US': '- Assembly included in delivery',
+          'de-DE': '- Montage im Lieferumfang enthalten',
+        }),
+      AttributeDraft.random()
+        .name('product-description')
+        .value({
+          'en-GB':
+            'A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.',
+          'en-US':
+            'A queen bed with an industrial pillow headboard has a unique and edgy look. The headboard is covered in a sturdy beige canvas. The headboard includes leather straps that give it an industrial look with exposed screws and bolts. The frame is also covered in the same canvas as the headboard. The bed has a simple, minimalist design with a wood frame and straight lines to complement the bold statement of the headboard. Overall, this type of bed would be perfect for someone who wants to add a touch of industrial style to their bedroom décor.',
+          'de-DE':
+            'Das Queensize-Bett mit gepolstertem Kopfteil im industriellen Look hat ein einzigartiges und kantigen Design. Das Kopfteil ist mit einem robusten beigefarbenen Stoff bezogen und ist mit Lederriemen versehen, die ihm zusammen mit den freiliegenden Schrauben ein industrielles Aussehen verleihen. Der Rahmen ist mit dem gleichen Stoff wie das Kopfteil bespannt. Das französische Bett hat ein schlichtes, minimalistisches Design unterstützt durch den Holzrahmen und den geraden Linien, die das Statement des Kopfteils abrunden. Das Bett eignet sich ideal für all diejenigen, die ihrem Schlafzimmerdekor einen Hauch von industriellem Charme verleihen möchten.',
+        }),
       AttributeDraft.random()
         .name('colorlabel')
         .value({ 'en-GB': 'Gray', 'de-DE': 'Grau', 'en-US': 'Gray' }),

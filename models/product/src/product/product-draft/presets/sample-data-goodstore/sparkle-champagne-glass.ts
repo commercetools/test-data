@@ -48,7 +48,7 @@ const sparkleChampagneGlass = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Sparkle Champagne Glass')
         ['en-GB']('Sparkle Champagne Glass')
-        ['de-DE']('Funkelndes Champagnerglas')
+        ['de-DE']('Champagnerglas')
     )
     .slug(
       LocalizedString.presets

@@ -36,7 +36,7 @@ const rusticOvenCasserole = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Rustic Oven Casserole')
         ['en-GB']('Rustic Oven Casserole')
-        ['de-DE']('Rustikaler Ofentopf')
+        ['de-DE']('Rustikale Auflaufform')
     )
     .slug(
       LocalizedString.presets

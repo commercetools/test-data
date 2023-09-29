@@ -48,7 +48,7 @@ const classicBeerMug = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Classic Beer Mug')
         ['en-GB']('Classic Beer Mug')
-        ['de-DE']('Klassischer Bierglas')
+        ['de-DE']('Klassisches Bierglas')
     )
     .slug(
       LocalizedString.presets

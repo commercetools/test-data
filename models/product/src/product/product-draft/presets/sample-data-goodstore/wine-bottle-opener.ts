@@ -48,7 +48,7 @@ const wineBottleOpener = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Wine Bottle Opener')
         ['en-GB']('Wine Bottle Opener')
-        ['de-DE']('Wein Flaschenöffner')
+        ['de-DE']('Korkenzieher')
     )
     .slug(
       LocalizedString.presets
