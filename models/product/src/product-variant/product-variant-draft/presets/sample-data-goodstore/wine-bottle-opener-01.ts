@@ -36,14 +36,6 @@ const wineBottleOpener01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Stainless steel',
         'de-DE': '- Edelstahl',
       }),
-      AttributeDraft.random().name('product-description').value({
-        'en-GB':
-          'A wine bottle opener is a device used to remove the cork from a wine bottle. This opener features a pointed helix screw that is twisted into the cork, and a handle or lever that is used to pull the cork out of the bottle. Additional features include a bottle opener. This wine bottle opener is lever-style.',
-        'en-US':
-          'A wine bottle opener is a device used to remove the cork from a wine bottle. This opener features a pointed helix screw that is twisted into the cork, and a handle or lever that is used to pull the cork out of the bottle. Additional features include a bottle opener. This wine bottle opener is lever-style.',
-        'de-DE':
-          'Mit diesem praktischen Korkenzieher wird das Öffnen von Weinflaschen zur leichten Übung. Der Korkenzieher hat eine spitze Spiralschraube, die in den Korken gedreht wird, und einen Griff oder Hebel, mit dem der Korken aus der Flasche gehoben wird. Ein weiteres Feature des Korkenziehers im Hebelstil ist ein Flaschenöffner.',
-      }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

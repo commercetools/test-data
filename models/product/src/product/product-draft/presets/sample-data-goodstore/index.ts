@@ -78,6 +78,44 @@ import patternedPillowCover from './patterned-pillow-cover';
 import pinkAbstractPainting from './pink-abstract-painting';
 import purpleLandscapePainting from './purple-landscape-painting';
 import purpleMinimalistAbstractPainting from './purple-minimalist-abstract-painting';
+import rattanLoungeChair from './rattan-lounge-chair';
+import ravenBowl from './raven-bowl';
+import rectangleServingTray from './rectangle-serving-tray';
+import redModernPainting from './red-modern-painting';
+import roundServingTray from './round-serving-tray';
+import rumiChair from './rumi-chair';
+import rusticBowl from './rustic-bowl';
+import rusticCountryDresser from './rustic-country-dresser';
+import rusticCountryQueenBed from './rustic-country-queen-bed';
+import rusticOvenCasserole from './rustic-oven-casserole';
+import ryeWhiskeyGlass from './rye-whiskey-glass';
+import sallyArmchair from './sally-armchair';
+import sandTeaCup from './sand-tea-cup';
+import serenityQueenBed from './serenity-queen-bed';
+import silkyPillowCover from './silky-pillow-cover';
+import sipperCoffeeMug from './sipper-coffee-mug';
+import slateArmchair from './slate-armchair';
+import smallWoodenBowl from './small-wooden-bowl';
+import sparkleChampagneGlass from './sparkle-champagne-glass';
+import squareBambooCoaster from './square-bamboo-coaster';
+import steelHipFlask from './steel-hip-flask';
+import stoneServingTray from './stone-serving-tray';
+import stoutBeerGlass from './stout-beer-glass';
+import sunnaiGlassBowl from './sunnai-glass-bowl';
+import sweetPeaCandle from './sweet-pea-candle';
+import tanQueenBed from './tan-queen-bed';
+import teakServingPlatter from './teak-serving-platter';
+import traditionalArmchair from './traditional-armchair';
+import traditionalLSeaterSofa from './traditional-l-seater-sofa';
+import traditionalThreeSeaterSofa from './traditional-three-seater-sofa';
+import travelCoffeeMug from './travel-coffee-mug';
+import turnerVelvetArmchair from './turner-velvet-armchair';
+import vanillaCandle from './vanilla-candle';
+import walnutCabinet from './walnut-cabinet';
+import walnutCounterStool from './walnut-counter-stool';
+import willowTeapot from './willow-teapot';
+import wilmaChair from './wilma-chair';
+import wineBottleOpener from './wine-bottle-opener';
 
 const presets = {
   abigailLoungeChair,
@@ -160,6 +198,44 @@ const presets = {
   purpleLandscapePainting,
   purpleMinimalistAbstractPainting,
   geometricPillowCase,
+  rattanLoungeChair,
+  ravenBowl,
+  rectangleServingTray,
+  redModernPainting,
+  roundServingTray,
+  rumiChair,
+  rusticBowl,
+  rusticCountryDresser,
+  rusticCountryQueenBed,
+  rusticOvenCasserole,
+  ryeWhiskeyGlass,
+  sallyArmchair,
+  sandTeaCup,
+  serenityQueenBed,
+  silkyPillowCover,
+  sipperCoffeeMug,
+  slateArmchair,
+  smallWoodenBowl,
+  sparkleChampagneGlass,
+  squareBambooCoaster,
+  steelHipFlask,
+  stoneServingTray,
+  stoutBeerGlass,
+  sunnaiGlassBowl,
+  sweetPeaCandle,
+  tanQueenBed,
+  teakServingPlatter,
+  traditionalArmchair,
+  traditionalLSeaterSofa,
+  traditionalThreeSeaterSofa,
+  travelCoffeeMug,
+  turnerVelvetArmchair,
+  vanillaCandle,
+  walnutCabinet,
+  walnutCounterStool,
+  willowTeapot,
+  wilmaChair,
+  wineBottleOpener,
 };
 
 export default presets;

@@ -124,6 +124,25 @@ import slateArmchair01 from './slate-armchair-01';
 import smallWoodenBowl01 from './small-wooden-bowl-01';
 import sparkleChampagneGlass01 from './sparkle-champagne-glass-01';
 import squareBambooCoaster01 from './square-bamboo-coaster-01';
+import steelHipFlask01 from './steel-hip-flask-01';
+import stoneServingTray01 from './stone-serving-tray-01';
+import stoutBeerGlass01 from './stout-beer-glass-01';
+import sunnaiGlassBowl01 from './sunnai-glass-bowl-01';
+import sunnaiGlassBowl02 from './sunnai-glass-bowl-02';
+import sweetPeaCandle01 from './sweet-pea-candle-01';
+import tanQueenBed01 from './tan-queen-bed-01';
+import teakServingPlatter01 from './teak-serving-platter-01';
+import traditionalArmchair01 from './traditional-armchair-01';
+import traditionalLSeaterSofa01 from './traditional-l-seater-sofa-01';
+import traditionalThreeSeaterSofa01 from './traditional-three-seater-sofa-01';
+import travelCoffeeMug01 from './travel-coffee-mug-01';
+import turnerVelvetArmchair01 from './turner-velvet-armchair-01';
+import vanillaCandle01 from './vanilla-candle-01';
+import walnutCabinet01 from './walnut-cabinet-01';
+import walnutCounterStool01 from './walnut-counter-stool-01';
+import willowTeapot01 from './willow-teapot-01';
+import wilmaChair01 from './wilma-chair-01';
+import wineBottleOpener01 from './wine-bottle-opener-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -252,6 +271,25 @@ const presets = {
   smallWoodenBowl01,
   sparkleChampagneGlass01,
   squareBambooCoaster01,
+  steelHipFlask01,
+  stoneServingTray01,
+  stoutBeerGlass01,
+  sunnaiGlassBowl01,
+  sunnaiGlassBowl02,
+  sweetPeaCandle01,
+  tanQueenBed01,
+  teakServingPlatter01,
+  traditionalArmchair01,
+  traditionalLSeaterSofa01,
+  traditionalThreeSeaterSofa01,
+  travelCoffeeMug01,
+  turnerVelvetArmchair01,
+  vanillaCandle01,
+  walnutCabinet01,
+  walnutCounterStool01,
+  willowTeapot01,
+  wilmaChair01,
+  wineBottleOpener01,
 };
 
 export default presets;
