@@ -1,0 +1,78 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const turnerVelvetArmchairProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .furniture()
+  .build<TCategoryDraft>();
+
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .armchairs()
+  .build<TCategoryDraft>();
+
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .livingRoomFurniture()
+  .build<TCategoryDraft>();
+
+const turnerVelvetArmchair = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('turner-velvet-armchair')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Turner Velvet Armchair')
+        ['en-GB']('Turner Velvet Armchair')
+        ['de-DE']('Samtsessel >Turner<')
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('turner-velvet-armchair')
+        ['en-GB']('turner-velvet-armchair')
+        ['de-DE']('turner-samtsessel')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(turnerVelvetArmchairProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.turnerVelvetArmchair01()
+    )
+    .categories([
+      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReference.presets.category().key(armchairsDraft.key!),
+      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+    ]);
+
+export default turnerVelvetArmchair;
