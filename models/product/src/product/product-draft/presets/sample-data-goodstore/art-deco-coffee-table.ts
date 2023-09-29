@@ -22,7 +22,7 @@ const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
   .standardTaxCategory()
   .build<TTaxCategoryDraft>();
 
-const artDecoCoffeTableProductTypeDraft =
+const artDecoCoffeeTableProductTypeDraft =
   ProductTypeDraft.presets.sampleDataGoodStore
     .furnitureAndDecor()
     .build<TProductTypeDraft>();
@@ -39,10 +39,10 @@ const tablesDraft = CategoryDraft.presets.sampleDataGoodStore
   .tables()
   .build<TCategoryDraft>();
 
-const artDecoCoffeTable = (): TProductDraftBuilder =>
+const artDecoCoffeeTable = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .key('art-deco-coffe-table')
+    .key('art-deco-coffee-table')
     .name(
       LocalizedString.presets
         .empty()
@@ -60,14 +60,14 @@ const artDecoCoffeTable = (): TProductDraftBuilder =>
     .productType(
       KeyReference.presets
         .productType()
-        .key(artDecoCoffeTableProductTypeDraft.key!)
+        .key(artDecoCoffeeTableProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
-      ProductVariantDraft.presets.sampleDataGoodStore.artDecoCoffeTable01()
+      ProductVariantDraft.presets.sampleDataGoodStore.artDecoCoffeeTable01()
     )
     .categories([
       KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
@@ -75,4 +75,4 @@ const artDecoCoffeTable = (): TProductDraftBuilder =>
       KeyReference.presets.category().key(tablesDraft.key!),
     ]);
 
-export default artDecoCoffeTable;
+export default artDecoCoffeeTable;

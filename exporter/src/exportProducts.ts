@@ -1,4 +1,3 @@
-import { getCategoryById } from './ctp/categories';
 import { getLimit } from './ctp/config';
 import {
   addEntry,

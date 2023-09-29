@@ -1,7 +1,6 @@
 import {
   Attribute,
   AttributeDefinition,
-  LocalizedString,
   ProductType,
   ProductVariant,
   Reference,
@@ -30,8 +29,6 @@ const serializeAttributeValue = (
   attribute: Attribute,
   attributeDefinition?: AttributeDefinition
 ) => {
-  const locale = 'en-GB';
-
   let attributeValue = '';
 
   switch (attributeDefinition?.type.name) {

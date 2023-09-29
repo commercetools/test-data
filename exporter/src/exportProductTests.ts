@@ -1,26 +1,15 @@
 import {
-  Category,
-  CategoryReference,
-  LocalizedString,
-  Money,
   PriceDraft,
   Product,
   ProductDraft,
-  ProductTypeReference,
   ProductVariant,
   ProductVariantDraft,
-  TaxCategoryReference,
 } from '@commercetools/platform-sdk';
-import { getCategoryById } from './ctp/categories';
-import { getFolder, getLimit } from './ctp/config';
+import { getLimit } from './ctp/config';
 import {
-  addEntry,
   buildFunctionname,
-  buildVariant,
   filterLocalizedString,
-  formatLocalizedString,
   localizedStringToGraphql,
-  prettierMeJson,
   sortObj,
   writeFile,
 } from './ctp/helpers';

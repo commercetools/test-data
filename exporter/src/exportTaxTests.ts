@@ -1,16 +1,7 @@
+import { TaxCategory, TaxCategoryDraft } from '@commercetools/platform-sdk';
 import {
-  Category,
-  CategoryDraft,
-  TaxCategory,
-  TaxCategoryDraft,
-} from '@commercetools/platform-sdk';
-import {
-  addEntry,
   buildFilename,
   buildFunctionname,
-  buildIndexFile,
-  filterLocalizedString,
-  IndexFile,
   prettierMeJson,
   sortObj,
   writeFile,
