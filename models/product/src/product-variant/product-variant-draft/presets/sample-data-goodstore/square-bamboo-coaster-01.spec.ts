@@ -90,7 +90,7 @@ describe(`with squareBambooCoaster01 preset`, () => {
             },
           },
         ],
-        "sku": "Bamb-084",
+        "sku": "BAMB-084",
       }
     `);
   });
@@ -175,7 +175,7 @@ describe(`with squareBambooCoaster01 preset`, () => {
             },
           },
         ],
-        "sku": "Bamb-084",
+        "sku": "BAMB-084",
       }
     `);
   });
