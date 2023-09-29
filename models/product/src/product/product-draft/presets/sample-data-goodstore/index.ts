@@ -18,6 +18,46 @@ import classicCoffeeCup from './classic-coffee-cup';
 import classicServingTray from './classic-serving-tray';
 import clinkChampagneGlass from './clink-champagne-glass';
 import cloudQueenBed from './cloud-queen-bed';
+import cobblestoneRug from './cobblestone-rug';
+import cocktailShaker from './cocktail-shaker';
+import cocktailShakerSet from './cocktail-shaker-set';
+import cocktailStirringSpoon from './cocktail-stirring-spoon';
+import cocktailStrainer from './cocktail-strainer';
+import cocoaPillowCover from './cocoa-pillow-cover';
+import comfortCoffeeMug from './comfort-coffee-mug';
+import cottonSilkBedsheet from './cotton-silk-bedsheet';
+import cottonTwoSeaterSofa from './cotton-two-seater-sofa';
+import crystalDrinkingGlass from './crystal-drinking-glass';
+import cubeJuteBasket from './cube-jute-basket';
+import doubleSidedShotGlass from './double-sided-shot-glass';
+import doubleWalledEspressoGlass from './double-walled-espresso-glass';
+import ecruDoubleBed from './ecru-double-bed';
+import edgarArmchair from './edgar-armchair';
+import ellaSquarePlate from './ella-square-plate';
+import emeraldVelvetChair from './emerald-velvet-chair';
+import entrywayCloset from './entryway-closet';
+import evergreenCandle from './evergreen-candle';
+import fawnArmchair from './fawn-armchair';
+import meadowRug from './meadow-rug';
+import minimalistCedarNightstand from './minimalist-cedar-nightstand';
+import minimalistModernSideTable from './minimalist-modern-side-table';
+import modernBlackCoaster from './modern-black-coaster';
+import modernBookcase from './modern-bookcase';
+import modernCeramicPlate from './modern-ceramic-plate';
+import modernGlamDresser from './modern-glam-dresser';
+import modernGoldCoffeeTable from './modern-gold-coffee-table';
+import modernLandscapePainting from './modern-landscape-painting';
+import modernThreeSeaterSofa from './modern-three-seater-sofa';
+import modernUpholsteredQueenBed from './modern-upholstered-queen-bed';
+import modernUpholsteredTwinBed from './modern-upholstered-twin-bed';
+import nalaTwoSeaterSofa from './nala-two-seater-sofa';
+import naturaRug from './natura-rug';
+import opalKingBed from './opal-king-bed';
+import orionDoubleBed from './orion-double-bed';
+import patternedPillowCover from './patterned-pillow-cover';
+import pinkAbstractPainting from './pink-abstract-painting';
+import purpleLandscapePainting from './purple-landscape-painting';
+import purpleMinimalistAbstractPainting from './purple-minimalist-abstract-painting';
 import geometricPillowCase from './geometric-pillow-case';
 import glamArmchair from './glam-armchair';
 import goldRimmedChampagneGlasses from './gold-rimmed-champagne-glasses';
@@ -80,6 +120,46 @@ const presets = {
   classicServingTray,
   clinkChampagneGlass,
   cloudQueenBed,
+  cobblestoneRug,
+  cocktailShaker,
+  cocktailShakerSet,
+  cocktailStirringSpoon,
+  cocktailStrainer,
+  cocoaPillowCover,
+  comfortCoffeeMug,
+  cottonSilkBedsheet,
+  cottonTwoSeaterSofa,
+  crystalDrinkingGlass,
+  cubeJuteBasket,
+  doubleSidedShotGlass,
+  doubleWalledEspressoGlass,
+  ecruDoubleBed,
+  edgarArmchair,
+  ellaSquarePlate,
+  emeraldVelvetChair,
+  entrywayCloset,
+  evergreenCandle,
+  fawnArmchair,
+  meadowRug,
+  minimalistCedarNightstand,
+  minimalistModernSideTable,
+  modernBlackCoaster,
+  modernBookcase,
+  modernCeramicPlate,
+  modernGlamDresser,
+  modernGoldCoffeeTable,
+  modernLandscapePainting,
+  modernThreeSeaterSofa,
+  modernUpholsteredQueenBed,
+  modernUpholsteredTwinBed,
+  nalaTwoSeaterSofa,
+  naturaRug,
+  opalKingBed,
+  orionDoubleBed,
+  patternedPillowCover,
+  pinkAbstractPainting,
+  purpleLandscapePainting,
+  purpleMinimalistAbstractPainting,
   geometricPillowCase,
   glamArmchair,
   goldRimmedChampagneGlasses,

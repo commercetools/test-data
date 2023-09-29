@@ -71,6 +71,39 @@ import luxePillowCover01 from './luxe-pillow-cover-01';
 import marquisTray01 from './marquis-tray-01';
 import mayaPillowCover01 from './maya-pillow-cover-01';
 import mayaPillowCover02 from './maya-pillow-cover-02';
+import meadowRug01 from './meadow-rug-01';
+import meadowRug02 from './meadow-rug-02';
+import meadowRug03 from './meadow-rug-03';
+import minimalistCedarNightstand01 from './minimalist-cedar-nightstand-01';
+import minimalistModernSideTable01 from './minimalist-modern-side-table-01';
+import minimalistModernSideTable02 from './minimalist-modern-side-table-02';
+import modernBlackCoaster01 from './modern-black-coaster-01';
+import modernBookcase01 from './modern-bookcase-01';
+import modernCeramicPlate01 from './modern-ceramic-plate-01';
+import modernGlamDresser01 from './modern-glam-dresser-01';
+import modernGoldCoffeeTable01 from './modern-gold-coffee-table-01';
+import modernLandscapePainting01 from './modern-landscape-painting-01';
+import modernThreeSeaterSofa01 from './modern-three-seater-sofa-01';
+import modernUpholsteredQueenBed01 from './modern-upholstered-queen-bed-01';
+import modernUpholsteredTwinBed01 from './modern-upholstered-twin-bed-01';
+import modernUpholsteredTwinBed02 from './modern-upholstered-twin-bed-02';
+import modernUpholsteredTwinBed03 from './modern-upholstered-twin-bed-03';
+import modernUpholsteredTwinBed04 from './modern-upholstered-twin-bed-04';
+import nalaTwoSeaterSofa01 from './nala-two-seater-sofa-01';
+import nalaTwoSeaterSofa02 from './nala-two-seater-sofa-02';
+import nalaTwoSeaterSofa03 from './nala-two-seater-sofa-03';
+import nalaTwoSeaterSofa04 from './nala-two-seater-sofa-04';
+import nalaTwoSeaterSofa05 from './nala-two-seater-sofa-05';
+import nalaTwoSeaterSofa06 from './nala-two-seater-sofa-06';
+import nalaTwoSeaterSofa07 from './nala-two-seater-sofa-07';
+import naturaRug01 from './natura-rug-01';
+import opalKingBed01 from './opal-king-bed-01';
+import orionDoubleBed01 from './orion-double-bed-01';
+import patternedPillowCover01 from './patterned-pillow-cover-01';
+import patternedPillowCover02 from './patterned-pillow-cover-02';
+import pinkAbstractPainting01 from './pink-abstract-painting-01';
+import purpleLandscapePainting01 from './purple-landscape-painting-01';
+import purpleMinimalistAbstractPainting01 from './purple-minimalist-abstract-painting-01';
 import rattanLoungeChair01 from './rattan-lounge-chair-01';
 import ravenBowl01 from './raven-bowl-01';
 import rectangleServingTray01 from './rectangle-serving-tray-01';
@@ -166,6 +199,39 @@ const presets = {
   marquisTray01,
   mayaPillowCover01,
   mayaPillowCover02,
+  meadowRug01,
+  meadowRug02,
+  meadowRug03,
+  minimalistCedarNightstand01,
+  minimalistModernSideTable01,
+  minimalistModernSideTable02,
+  modernBlackCoaster01,
+  modernBookcase01,
+  modernCeramicPlate01,
+  modernGlamDresser01,
+  modernGoldCoffeeTable01,
+  modernLandscapePainting01,
+  modernThreeSeaterSofa01,
+  modernUpholsteredQueenBed01,
+  modernUpholsteredTwinBed01,
+  modernUpholsteredTwinBed02,
+  modernUpholsteredTwinBed03,
+  modernUpholsteredTwinBed04,
+  nalaTwoSeaterSofa01,
+  nalaTwoSeaterSofa02,
+  nalaTwoSeaterSofa03,
+  nalaTwoSeaterSofa04,
+  nalaTwoSeaterSofa05,
+  nalaTwoSeaterSofa06,
+  nalaTwoSeaterSofa07,
+  naturaRug01,
+  opalKingBed01,
+  orionDoubleBed01,
+  patternedPillowCover01,
+  patternedPillowCover02,
+  pinkAbstractPainting01,
+  purpleLandscapePainting01,
+  purpleMinimalistAbstractPainting01,
   rattanLoungeChair01,
   ravenBowl01,
   rectangleServingTray01,
