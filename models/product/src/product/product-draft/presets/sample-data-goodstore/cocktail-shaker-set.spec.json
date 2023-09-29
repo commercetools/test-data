@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Stainless steel\n- Hand wash only",
-            "de-DE": "- Edelstahl\n- Handwäsche nur",
-            "en-US": "- Stainless steel\n- Hand wash only"
+            "en-US": "- Stainless steel\n- Hand wash only",
+            "de-DE": "- Edelstahl\n- Handwäsche nur"
           }
         },
         {
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -171,7 +165,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Stainless steel\\n- Hand wash only\",\"de-DE\":\"- Edelstahl\\n- Handwäsche nur\",\"en-US\":\"- Stainless steel\\n- Hand wash only\"}"
+          "value": "{\"en-GB\":\"- Stainless steel\\n- Hand wash only\",\"en-US\":\"- Stainless steel\\n- Hand wash only\",\"de-DE\":\"- Edelstahl\\n- Handwäsche nur\"}"
         },
         {
           "name": "product-description",
@@ -194,17 +188,17 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cocktail Shaker Set"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Cocktail Shaker Set"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Cocktail Shaker Set"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
         "value": "Cocktail Shaker Set"
       }
     ],
@@ -216,17 +210,17 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cocktail-shaker-set"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cocktail-shaker-set"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "cocktail-shaker-set"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
         "value": "cocktail-shaker-set"
       }
     ]

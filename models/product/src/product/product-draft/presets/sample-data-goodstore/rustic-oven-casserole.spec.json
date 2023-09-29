@@ -48,8 +48,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Does not include lid",
-            "de-DE": "- Ohne Deckel",
-            "en-US": "- Does not include lid"
+            "en-US": "- Does not include lid",
+            "de-DE": "- Ohne Deckel"
           }
         },
         {
@@ -146,7 +146,7 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Does not include lid\",\"de-DE\":\"- Ohne Deckel\",\"en-US\":\"- Does not include lid\"}"
+          "value": "{\"en-GB\":\"- Does not include lid\",\"en-US\":\"- Does not include lid\",\"de-DE\":\"- Ohne Deckel\"}"
         },
         {
           "name": "colorlabel",
@@ -165,6 +165,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rustic Oven Casserole"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Rustic Oven Casserole"
       },
@@ -172,11 +177,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rustikaler Ofentopf"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rustic Oven Casserole"
       }
     ],
     "productType": {
@@ -187,6 +187,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rustic-oven-casserole"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rustic-oven-casserole"
       },
@@ -194,11 +199,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rustikaler-ofentopf"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rustic-oven-casserole"
       }
     ]
   }

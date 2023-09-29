@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "beds",
         "typeId": "category"
       },
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       }
     ],
@@ -76,8 +73,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Assembly is included",
-            "de-DE": "- Die Montage ist im Preis inbegriffen",
-            "en-US": "- Assembly is included"
+            "en-US": "- Assembly is included",
+            "de-DE": "- Die Montage ist im Preis inbegriffen"
           }
         },
         {
@@ -120,17 +117,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "beds",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       }
     ],
@@ -193,7 +187,7 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Assembly is included\",\"de-DE\":\"- Die Montage ist im Preis inbegriffen\",\"en-US\":\"- Assembly is included\"}"
+          "value": "{\"en-GB\":\"- Assembly is included\",\"en-US\":\"- Assembly is included\",\"de-DE\":\"- Die Montage ist im Preis inbegriffen\"}"
         },
         {
           "name": "product-description",
@@ -208,6 +202,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cloud Queen Bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Cloud Queen Bed"
       },
@@ -215,11 +214,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Queen-Bett \"Cloud\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Cloud Queen Bed"
       }
     ],
     "productType": {
@@ -230,6 +224,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cloud-queen-bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cloud-queen-bed"
       },
@@ -237,11 +236,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "cloud-queen-bett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "cloud-queen-bed"
       }
     ]
   }

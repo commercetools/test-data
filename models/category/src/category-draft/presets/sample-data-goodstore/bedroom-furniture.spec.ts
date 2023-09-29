@@ -8,9 +8,9 @@ describe(`with bedroomFurniture preset`, () => {
       JSON.parse(`{
   "key": "bedroom-furniture",
   "name": {
+    "en-US": "Bedroom Furniture",
     "en-GB": "Bedroom Furniture",
-    "de-DE": "Schlafzimmer",
-    "en-US": "Bedroom Furniture"
+    "de-DE": "Schlafzimmer"
   },
   "orderHint": ".9",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with bedroomFurniture preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "bedroom-furniture",
     "en-GB": "bedroom-furniture",
-    "de-DE": "bedroom-furniture",
-    "en-US": "bedroom-furniture"
+    "de-DE": "bedroom-furniture"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with bedroomFurniture preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bedroom Furniture"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Bedroom Furniture"
     },
@@ -42,11 +47,6 @@ describe(`with bedroomFurniture preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Schlafzimmer"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Bedroom Furniture"
     }
   ],
   "orderHint": ".9",
@@ -58,17 +58,17 @@ describe(`with bedroomFurniture preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bedroom-furniture"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "bedroom-furniture"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "bedroom-furniture"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "bedroom-furniture"
     }
   ]

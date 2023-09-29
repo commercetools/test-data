@@ -2,23 +2,18 @@
   "rest": {
     "categories": [
       {
-        "key": "bowls",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
-        "key": "serveware",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       }
     ],
@@ -82,8 +77,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 bowl",
-            "de-DE": "- Enthält 1 Schüssel",
-            "en-US": "- Includes 1 bowl"
+            "en-US": "- Includes 1 bowl",
+            "de-DE": "- Enthält 1 Schüssel"
           }
         },
         {
@@ -126,27 +121,22 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bowls",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serveware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       }
     ],
@@ -215,7 +205,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\",\"en-US\":\"- Includes 1 bowl\"}"
+          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"en-US\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\"}"
         },
         {
           "name": "product-description",
@@ -230,6 +220,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Small Wooden Bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Small Wooden Bowl"
       },
@@ -237,11 +232,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Kleine Holzschale"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Small Wooden Bowl"
       }
     ],
     "productType": {
@@ -252,6 +242,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "small-wooden-bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "small-wooden-bowl"
       },
@@ -259,11 +254,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "kleine-holzschale"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "small-wooden-bowl"
       }
     ]
   }

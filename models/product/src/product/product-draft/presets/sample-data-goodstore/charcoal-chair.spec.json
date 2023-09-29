@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 chair",
-            "de-DE": "- Lieferumfang: 1 Stuhl",
-            "en-US": "- Includes 1 chair"
+            "en-US": "- Includes 1 chair",
+            "de-DE": "- Lieferumfang: 1 Stuhl"
           }
         },
         {
@@ -111,8 +108,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#E2C897",
-            "de-DE": "#E2C897",
-            "en-US": "#E2C897"
+            "en-US": "#E2C897",
+            "de-DE": "#E2C897"
           }
         }
       ]
@@ -136,17 +133,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -201,7 +195,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 chair\",\"de-DE\":\"- Lieferumfang: 1 Stuhl\",\"en-US\":\"- Includes 1 chair\"}"
+          "value": "{\"en-GB\":\"- Includes 1 chair\",\"en-US\":\"- Includes 1 chair\",\"de-DE\":\"- Lieferumfang: 1 Stuhl\"}"
         },
         {
           "name": "product-description",
@@ -225,11 +219,16 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#E2C897\",\"de-DE\":\"#E2C897\",\"en-US\":\"#E2C897\"}"
+          "value": "{\"en-GB\":\"#E2C897\",\"en-US\":\"#E2C897\",\"de-DE\":\"#E2C897\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Charcoal Chair"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -239,11 +238,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Stuhl \"Hokzkohle\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Charcoal Chair"
       }
     ],
     "productType": {
@@ -254,6 +248,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "charcoal-chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "charcoal-chair"
       },
@@ -261,11 +260,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "holzkohle-stuhl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "charcoal-chair"
       }
     ]
   }

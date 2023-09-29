@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -67,8 +64,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Comes in glass jar\n- 180 grams",
-            "de-DE": "- Wird im Glas geliefert\n- 180 Gramm",
-            "en-US": "- Comes in glass jar\n- 180 grams"
+            "en-US": "- Comes in glass jar\n- 180 grams",
+            "de-DE": "- Wird im Glas geliefert\n- 180 Gramm"
           }
         },
         {
@@ -116,17 +113,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -188,7 +182,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Comes in glass jar\\n- 180 grams\",\"de-DE\":\"- Wird im Glas geliefert\\n- 180 Gramm\",\"en-US\":\"- Comes in glass jar\\n- 180 grams\"}"
+          "value": "{\"en-GB\":\"- Comes in glass jar\\n- 180 grams\",\"en-US\":\"- Comes in glass jar\\n- 180 grams\",\"de-DE\":\"- Wird im Glas geliefert\\n- 180 Gramm\"}"
         },
         {
           "name": "product-description",
@@ -207,6 +201,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Sweet Pea Candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Sweet Pea Candle"
       },
@@ -214,11 +213,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Süße Erbsenkerze"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Sweet Pea Candle"
       }
     ],
     "productType": {
@@ -229,6 +223,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "sweat-pea-candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "sweat-pea-candle"
       },
@@ -236,11 +235,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "kerze-der-sen-erbse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "sweat-pea-candle"
       }
     ]
   }

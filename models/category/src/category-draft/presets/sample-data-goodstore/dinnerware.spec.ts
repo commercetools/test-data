@@ -8,9 +8,9 @@ describe(`with dinnerware preset`, () => {
       JSON.parse(`{
   "key": "dinnerware",
   "name": {
+    "en-US": "Dinnerware",
     "en-GB": "Serving & Tableware",
-    "de-DE": "Geschirr",
-    "en-US": "Dinnerware"
+    "de-DE": "Geschirr"
   },
   "orderHint": ".75",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with dinnerware preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "serving-and-tableware",
     "en-GB": "serving-and-tableware",
-    "de-DE": "dinnerware",
-    "en-US": "serving-and-tableware"
+    "de-DE": "dinnerware"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with dinnerware preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Dinnerware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Serving & Tableware"
     },
@@ -42,11 +47,6 @@ describe(`with dinnerware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Geschirr"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Dinnerware"
     }
   ],
   "orderHint": ".75",
@@ -58,6 +58,11 @@ describe(`with dinnerware preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "serving-and-tableware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "serving-and-tableware"
     },
@@ -65,11 +70,6 @@ describe(`with dinnerware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "dinnerware"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "serving-and-tableware"
     }
   ]
 }`)

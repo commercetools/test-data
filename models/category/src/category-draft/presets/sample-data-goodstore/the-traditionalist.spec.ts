@@ -8,9 +8,9 @@ describe(`with theTraditionalist preset`, () => {
       JSON.parse(`{
   "key": "the-traditionalist",
   "name": {
+    "en-US": "The Traditionalist",
     "en-GB": "The Traditionalist",
-    "de-DE": "The Traditionalist",
-    "en-US": "The Traditionalist"
+    "de-DE": "The Traditionalist"
   },
   "orderHint": "0.0033",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with theTraditionalist preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "the-traditionalist",
     "en-GB": "the-traditionalist",
-    "de-DE": "the-traditionalist",
-    "en-US": "the-traditionalist"
+    "de-DE": "the-traditionalist"
   }
 }`)
     );
@@ -35,17 +35,17 @@ describe(`with theTraditionalist preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "The Traditionalist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "The Traditionalist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "The Traditionalist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "The Traditionalist"
     }
   ],
@@ -58,17 +58,17 @@ describe(`with theTraditionalist preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "the-traditionalist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "the-traditionalist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "the-traditionalist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "the-traditionalist"
     }
   ]

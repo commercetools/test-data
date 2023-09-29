@@ -2,27 +2,21 @@
   "rest": {
     "categories": [
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
-        "key": "sofas",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -155,32 +149,26 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "sofas",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -273,6 +261,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Traditional Three Seater Sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Traditional Three Seater Sofa"
       },
@@ -280,11 +273,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Traditionelles Dreisitzer-Sofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Traditional Three Seater Sofa"
       }
     ],
     "productType": {
@@ -295,6 +283,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "traditional-three-seater-sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "traditional-three-seater-sofa"
       },
@@ -302,11 +295,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "traditionelles-dreisitzer-sofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "traditional-three-seater-sofa"
       }
     ]
   }

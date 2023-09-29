@@ -48,7 +48,7 @@ const doubleWalledEspressoGlass = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Double-walled Espresso Glass')
         ['en-GB']('Double-walled Espresso Glass')
-        ['de-DE']('Doppelwandiges Espressoglas')
+        ['de-DE']('Doppelwandiges Espressotasse aus Glas')
     )
     .slug(
       LocalizedString.presets

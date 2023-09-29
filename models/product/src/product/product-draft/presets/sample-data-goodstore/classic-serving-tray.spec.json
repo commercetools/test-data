@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
-        "key": "serveware",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -64,8 +60,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Made of food-grade plastic",
-            "de-DE": "- Material: lebensmittelechter Kunststoff",
-            "en-US": "- Made of food-grade plastic"
+            "en-US": "- Made of food-grade plastic",
+            "de-DE": "- Material: lebensmittelechter Kunststoff"
           }
         },
         {
@@ -124,22 +120,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serveware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -194,7 +186,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Made of food-grade plastic\",\"de-DE\":\"- Material: lebensmittelechter Kunststoff\",\"en-US\":\"- Made of food-grade plastic\"}"
+          "value": "{\"en-GB\":\"- Made of food-grade plastic\",\"en-US\":\"- Made of food-grade plastic\",\"de-DE\":\"- Material: lebensmittelechter Kunststoff\"}"
         },
         {
           "name": "product-description",
@@ -217,6 +209,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Classic Serving Tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Classic Serving Tray"
       },
@@ -224,11 +221,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Klassisches Serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Classic Serving Tray"
       }
     ],
     "productType": {
@@ -239,6 +231,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "classic-serving-tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "classic-serving-tray"
       },
@@ -246,11 +243,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "klassisches-serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "classic-serving-tray"
       }
     ]
   }

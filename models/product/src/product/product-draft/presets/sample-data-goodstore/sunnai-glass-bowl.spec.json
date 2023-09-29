@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "bowls",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "bakeware",
         "typeId": "category"
       }
     ],
@@ -69,9 +65,9 @@
       ]
     },
     "metaDescription": {
+      "en-US": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.\n\nThe glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.\n\nOverall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
       "en-GB": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.\n\nThe glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.\n\nOverall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
-      "de-DE": "Diese Glasschalen sind ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.\n\nDas Glas ist leicht zu reinigen und zu pflegen und kann mit Wasser und Seife gereingt werden. Die Schale ist zudem spülmaschinenfest. Das Glasmaterial ist so verarbeitet, dass es keine Aromen oder Gerüche aus den Lebensmitteln aufnimmt.\n\nInsgesamt ist eine Glasschale eine schöne und praktische Wahl zum Präsentieren und Servieren von Speisen. Seine Transparenz und Einfachheit machen es zu einem vielseitigen und zeitlosen Stück, das für eine Vielzahl von Anlässen verwendet werden kann.",
-      "en-US": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.\n\nThe glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.\n\nOverall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings."
+      "de-DE": "Diese Glasschalen sind ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.\n\nDas Glas ist leicht zu reinigen und zu pflegen und kann mit Wasser und Seife gereingt werden. Die Schale ist zudem spülmaschinenfest. Das Glasmaterial ist so verarbeitet, dass es keine Aromen oder Gerüche aus den Lebensmitteln aufnimmt.\n\nInsgesamt ist eine Glasschale eine schöne und praktische Wahl zum Präsentieren und Servieren von Speisen. Seine Transparenz und Einfachheit machen es zu einem vielseitigen und zeitlosen Stück, das für eine Vielzahl von Anlässen verwendet werden kann."
     },
     "name": {
       "de-DE": "Sunnai Glasschale",
@@ -139,26 +135,27 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bowls",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bakeware",
         "typeId": "category"
       }
     ],
     "description": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.\n\nThe glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.\n\nOverall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings."
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -168,11 +165,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Diese Glasschalen sind ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.\n\nDas Glas ist leicht zu reinigen und zu pflegen und kann mit Wasser und Seife gereingt werden. Die Schale ist zudem spülmaschinenfest. Das Glasmaterial ist so verarbeitet, dass es keine Aromen oder Gerüche aus den Lebensmitteln aufnimmt.\n\nInsgesamt ist eine Glasschale eine schöne und praktische Wahl zum Präsentieren und Servieren von Speisen. Seine Transparenz und Einfachheit machen es zu einem vielseitigen und zeitlosen Stück, das für eine Vielzahl von Anlässen verwendet werden kann."
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.\n\nThe glass material is easy to clean and maintain, and can be washed with soap and water or in a dishwasher. It is also non-reactive, meaning it will not absorb any flavors or odors from the food.\n\nOverall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings."
       }
     ],
     "key": "sunnai-glass-bowl",
@@ -226,6 +218,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Sunnai Glass Bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Sunnai Glass Bowl"
       },
@@ -233,11 +230,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sunnai Glasschale"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Sunnai Glass Bowl"
       }
     ],
     "productType": {
@@ -248,6 +240,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "sunnai-glass-bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "sunnai-glass-bowl"
       },
@@ -255,11 +252,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "sunnai-glaskugel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "sunnai-glass-bowl"
       }
     ],
     "variants": [

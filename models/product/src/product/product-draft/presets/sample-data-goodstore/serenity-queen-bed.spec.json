@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "beds",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Assembly included in delivery",
-            "de-DE": "- Montage im Lieferumfang enthalten",
-            "en-US": "- Assembly included in delivery"
+            "en-US": "- Assembly included in delivery",
+            "de-DE": "- Montage im Lieferumfang enthalten"
           }
         },
         {
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "beds",
         "typeId": "category"
       }
     ],
@@ -171,7 +165,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\",\"en-US\":\"- Assembly included in delivery\"}"
+          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"en-US\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\"}"
         },
         {
           "name": "product-description",
@@ -194,6 +188,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Serenity Queen Bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Serenity Queen Bed"
       },
@@ -201,11 +200,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Gelassenheit Queen-Bett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Serenity Queen Bed"
       }
     ],
     "productType": {
@@ -216,6 +210,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "serenity-queen-bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "serenity-queen-bed"
       },
@@ -223,11 +222,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "gelassenheit-queen-bett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "serenity-queen-bed"
       }
     ]
   }

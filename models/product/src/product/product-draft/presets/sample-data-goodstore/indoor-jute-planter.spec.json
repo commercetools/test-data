@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -175,17 +172,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -252,6 +246,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Indoor Jute Planter"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Indoor Jute Planter"
       },
@@ -259,11 +258,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Indoor Jute Blumentopf "
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Indoor Jute Planter"
       }
     ],
     "productType": {
@@ -274,17 +268,17 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "indoor-jute-planter"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "indoor-jute-planter"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "indoor-jute-planter"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
         "value": "indoor-jute-planter"
       }
     ],

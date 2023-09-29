@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
-        "key": "serveware",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -90,22 +86,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serveware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -164,6 +156,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rectangle Serving Tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Rectangle Serving Tray"
       },
@@ -171,11 +168,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rechteckiges Serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rectangle Serving Tray"
       }
     ],
     "productType": {
@@ -186,6 +178,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rectangle-serving-tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rectangle-serving-tray"
       },
@@ -193,11 +190,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rechteckiges-serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rectangle-serving-tray"
       }
     ]
   }

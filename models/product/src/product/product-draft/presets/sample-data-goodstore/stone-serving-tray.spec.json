@@ -2,27 +2,21 @@
   "rest": {
     "categories": [
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "serveware",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "cheese-trays",
         "typeId": "category"
       },
       {
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
-        "key": "bakeware",
         "typeId": "category"
       }
     ],
@@ -65,8 +59,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Fragile",
-            "de-DE": "- Zerbrechlich",
-            "en-US": "- Fragile"
+            "en-US": "- Fragile",
+            "de-DE": "- Zerbrechlich"
           }
         },
         {
@@ -89,8 +83,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#6B6B6B",
-            "de-DE": "#6B6B6B",
-            "en-US": "#6B6B6B"
+            "en-US": "#6B6B6B",
+            "de-DE": "#6B6B6B"
           }
         }
       ]
@@ -114,32 +108,26 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serveware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "cheese-trays",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bakeware",
         "typeId": "category"
       }
     ],
@@ -187,7 +175,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Fragile\",\"de-DE\":\"- Zerbrechlich\",\"en-US\":\"- Fragile\"}"
+          "value": "{\"en-GB\":\"- Fragile\",\"en-US\":\"- Fragile\",\"de-DE\":\"- Zerbrechlich\"}"
         },
         {
           "name": "product-description",
@@ -199,11 +187,16 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#6B6B6B\",\"de-DE\":\"#6B6B6B\",\"en-US\":\"#6B6B6B\"}"
+          "value": "{\"en-GB\":\"#6B6B6B\",\"en-US\":\"#6B6B6B\",\"de-DE\":\"#6B6B6B\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Stone Serving Tray"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -213,11 +206,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Serviertablett aus Stein"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Stone Serving Tray"
       }
     ],
     "productType": {
@@ -228,6 +216,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "stone-serving-tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "stone-serving-tray"
       },
@@ -235,11 +228,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "serviertablett-aus-stein"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "stone-serving-tray"
       }
     ]
   }

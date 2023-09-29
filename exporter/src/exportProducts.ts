@@ -13,6 +13,7 @@ const products = async () => {
   const products = await getProducts(getLimit(), 0, [
     'taxCategory',
     'productType',
+    'masterData.staged.categories[*]',
   ]);
   console.log('Found ' + products.results.length + ' products');
 
@@ -69,9 +70,8 @@ import type { TProductDraftBuilder } from '../../../types';`;
     const categoryReferences = [];
 
     for (const category of product.masterData.staged.categories) {
-      const loadedCategory = await getCategoryById(category.id);
       const categoryIdentifier =
-        loadedCategory.key || loadedCategory.name['en-GB'];
+        category.obj?.key || category.obj?.name['en-GB']!;
       const categoryFunctionname = buildFunctionname(categoryIdentifier);
 
       content +=

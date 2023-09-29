@@ -8,9 +8,9 @@ describe(`with tables preset`, () => {
       JSON.parse(`{
   "key": "tables",
   "name": {
+    "en-US": "Tables",
     "en-GB": "Tables",
-    "de-DE": "Tische",
-    "en-US": "Tables"
+    "de-DE": "Tische"
   },
   "orderHint": ".25",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with tables preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "living-room-tables",
     "en-GB": "living-room-tables",
-    "de-DE": "coffee-tables",
-    "en-US": "living-room-tables"
+    "de-DE": "coffee-tables"
   }
 }`)
     );
@@ -34,6 +34,11 @@ describe(`with tables preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Tables"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Tables"
     },
@@ -41,11 +46,6 @@ describe(`with tables preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Tische"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Tables"
     }
   ],
   "orderHint": ".25",
@@ -57,6 +57,11 @@ describe(`with tables preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "living-room-tables"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "living-room-tables"
     },
@@ -64,11 +69,6 @@ describe(`with tables preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "coffee-tables"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "living-room-tables"
     }
   ]
 }`)

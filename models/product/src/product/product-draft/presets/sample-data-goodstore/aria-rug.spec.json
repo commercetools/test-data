@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "rugs",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -93,8 +90,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Dry clean only\n- 5ft x 7ft",
-            "de-DE": "- Nur chemische Reinigung\n- 5 Fuß x 7 Fuß",
-            "en-US": "- Dry clean only\n- 5ft x 7ft"
+            "en-US": "- Dry clean only\n- 5ft x 7ft",
+            "de-DE": "- Nur chemische Reinigung\n- 5 Fuß x 7 Fuß"
           }
         },
         {
@@ -134,17 +131,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "rugs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -221,7 +215,7 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Dry clean only\\n- 5ft x 7ft\",\"de-DE\":\"- Nur chemische Reinigung\\n- 5 Fuß x 7 Fuß\",\"en-US\":\"- Dry clean only\\n- 5ft x 7ft\"}"
+          "value": "{\"en-GB\":\"- Dry clean only\\n- 5ft x 7ft\",\"en-US\":\"- Dry clean only\\n- 5ft x 7ft\",\"de-DE\":\"- Nur chemische Reinigung\\n- 5 Fuß x 7 Fuß\"}"
         },
         {
           "name": "color",
@@ -236,6 +230,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Aria Rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Aria Rug"
       },
@@ -243,11 +242,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Teppich \"Aria\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Aria Rug"
       }
     ],
     "productType": {
@@ -258,6 +252,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "aria-rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "aria-rug"
       },
@@ -265,11 +264,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "aria-teppich"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "aria-rug"
       }
     ]
   }

@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Stainless steel\n- Dishwasher safe",
-            "de-DE": "- Edelstahl\n- Spülmaschinenfest",
-            "en-US": "- Stainless steel\n- Dishwasher safe"
+            "en-US": "- Stainless steel\n- Dishwasher safe",
+            "de-DE": "- Edelstahl\n- Spülmaschinenfest"
           }
         },
         {
@@ -86,17 +83,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -144,7 +138,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Stainless steel\\n- Dishwasher safe\",\"de-DE\":\"- Edelstahl\\n- Spülmaschinenfest\",\"en-US\":\"- Stainless steel\\n- Dishwasher safe\"}"
+          "value": "{\"en-GB\":\"- Stainless steel\\n- Dishwasher safe\",\"en-US\":\"- Stainless steel\\n- Dishwasher safe\",\"de-DE\":\"- Edelstahl\\n- Spülmaschinenfest\"}"
         },
         {
           "name": "product-description",
@@ -155,6 +149,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Ice Bucket"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Ice Bucket"
       },
@@ -162,11 +161,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Eis Eimer"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Ice Bucket"
       }
     ],
     "productType": {
@@ -177,6 +171,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "ice-bucket"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "ice-bucket"
       },
@@ -184,11 +183,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "eis-eimer"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "ice-bucket"
       }
     ]
   }

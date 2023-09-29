@@ -8,9 +8,9 @@ describe(`with serveware preset`, () => {
       JSON.parse(`{
   "key": "serveware",
   "name": {
+    "en-US": "Serveware",
     "en-GB": "Collections",
-    "de-DE": "Alles zum Servieren",
-    "en-US": "Serveware"
+    "de-DE": "Alles zum Servieren"
   },
   "orderHint": ".86",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with serveware preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "kitchen-collections",
     "en-GB": "kitchen-collections",
-    "de-DE": "serveware",
-    "en-US": "kitchen-collections"
+    "de-DE": "serveware"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with serveware preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Serveware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Collections"
     },
@@ -42,11 +47,6 @@ describe(`with serveware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Alles zum Servieren"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Serveware"
     }
   ],
   "orderHint": ".86",
@@ -58,6 +58,11 @@ describe(`with serveware preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "kitchen-collections"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "kitchen-collections"
     },
@@ -65,11 +70,6 @@ describe(`with serveware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "serveware"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "kitchen-collections"
     }
   ]
 }`)

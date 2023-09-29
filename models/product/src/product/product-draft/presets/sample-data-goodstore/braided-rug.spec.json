@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "rugs",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -119,17 +116,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "rugs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -210,6 +204,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Braided Rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Braided Rug"
       },
@@ -217,11 +216,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Geflochtener Teppich"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Braided Rug"
       }
     ],
     "productType": {
@@ -232,6 +226,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "braided-rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "braided-rug"
       },
@@ -239,11 +238,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "geflochtener-teppich"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "braided-rug"
       }
     ]
   }

@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 4 coasters",
-            "de-DE": "- Enthält 4 Untersetzer",
-            "en-US": "- Includes 4 coasters"
+            "en-US": "- Includes 4 coasters",
+            "de-DE": "- Enthält 4 Untersetzer"
           }
         },
         {
@@ -62,7 +59,7 @@
           "value": {
             "en-GB": "A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.",
             "en-US": "A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.",
-            "de-DE": "Ein runder Lederuntersetzer ist so konzipiert, dass er unter einem Getränk platziert werden kann, um die darunter liegende Oberfläche vor Feuchtigkeit und Hitze zu schützen. Es misst etwa 4 Zoll im Durchmesser und besteht aus hochwertigem Ledermaterial. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, um ein Verrutschen auf glatten Oberflächen zu verhindern."
+            "de-DE": "Ein runder Lederuntersetzer ist dafür gedacht, unter ein Getränk gelegt zu werden, um die Oberfläche darunter vor Feuchtigkeit und Hitze zu schützen. Er hat einen Durchmesser von ca. 4 Zoll und ist aus hochwertigem Ledermaterial gefertigt. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, damit er auf glatten Oberflächen nicht verrutscht."
           }
         },
         {
@@ -95,7 +92,7 @@
       ]
     },
     "name": {
-      "de-DE": "Untersetzer aus Leder",
+      "de-DE": "Leder Untersetzer",
       "en-GB": "Leather Coaster",
       "en-US": "Leather Coaster"
     },
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -171,11 +165,11 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 4 coasters\",\"de-DE\":\"- Enthält 4 Untersetzer\",\"en-US\":\"- Includes 4 coasters\"}"
+          "value": "{\"en-GB\":\"- Includes 4 coasters\",\"en-US\":\"- Includes 4 coasters\",\"de-DE\":\"- Enthält 4 Untersetzer\"}"
         },
         {
           "name": "product-description",
-          "value": "{\"en-GB\":\"A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.\",\"en-US\":\"A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.\",\"de-DE\":\"Ein runder Lederuntersetzer ist so konzipiert, dass er unter einem Getränk platziert werden kann, um die darunter liegende Oberfläche vor Feuchtigkeit und Hitze zu schützen. Es misst etwa 4 Zoll im Durchmesser und besteht aus hochwertigem Ledermaterial. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, um ein Verrutschen auf glatten Oberflächen zu verhindern.\"}"
+          "value": "{\"en-GB\":\"A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.\",\"en-US\":\"A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.\",\"de-DE\":\"Ein runder Lederuntersetzer ist dafür gedacht, unter ein Getränk gelegt zu werden, um die Oberfläche darunter vor Feuchtigkeit und Hitze zu schützen. Er hat einen Durchmesser von ca. 4 Zoll und ist aus hochwertigem Ledermaterial gefertigt. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, damit er auf glatten Oberflächen nicht verrutscht.\"}"
         },
         {
           "name": "color",
@@ -194,18 +188,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Leather Coaster"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Leather Coaster"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Untersetzer aus Leder"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Leather Coaster"
+        "value": "Leder Untersetzer"
       }
     ],
     "productType": {
@@ -216,6 +210,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "leather-coaster"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "leather-coaster"
       },
@@ -223,11 +222,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "untersetzer-aus-leder"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "leather-coaster"
       }
     ]
   }

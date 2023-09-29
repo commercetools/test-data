@@ -8,9 +8,9 @@ describe(`with cheeseTrays preset`, () => {
       JSON.parse(`{
   "key": "cheese-trays",
   "name": {
+    "en-US": "Cheese Trays",
     "en-GB": "Cheese Trays",
-    "de-DE": "Käseplatten",
-    "en-US": "Cheese Trays"
+    "de-DE": "Käseplatten"
   },
   "orderHint": ".12",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with cheeseTrays preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "cheese-trays",
     "en-GB": "cheese-trays",
-    "de-DE": "cheese-trays",
-    "en-US": "cheese-trays"
+    "de-DE": "cheese-trays"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with cheeseTrays preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Cheese Trays"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Cheese Trays"
     },
@@ -42,11 +47,6 @@ describe(`with cheeseTrays preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Käseplatten"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Cheese Trays"
     }
   ],
   "orderHint": ".12",
@@ -58,17 +58,17 @@ describe(`with cheeseTrays preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "cheese-trays"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "cheese-trays"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "cheese-trays"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "cheese-trays"
     }
   ]

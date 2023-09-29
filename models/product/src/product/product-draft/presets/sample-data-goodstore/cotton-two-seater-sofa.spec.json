@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "sofas",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -119,17 +116,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "sofas",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -210,6 +204,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cotton Two-Seater Sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Cotton Two-Seater Sofa"
       },
@@ -217,11 +216,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Zweisitzer-Sofa aus Baumwolle"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Cotton Two-Seater Sofa"
       }
     ],
     "productType": {
@@ -232,6 +226,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cotton-two-seater-sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cotton-two-seater-sofa"
       },
@@ -239,11 +238,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "zweisitzer-sofa-aus-baumwolle"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "cotton-two-seater-sofa"
       }
     ]
   }

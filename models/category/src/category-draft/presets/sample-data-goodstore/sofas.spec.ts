@@ -8,9 +8,9 @@ describe(`with sofas preset`, () => {
       JSON.parse(`{
   "key": "sofas",
   "name": {
+    "en-US": "Sofas",
     "en-GB": "Sofas",
-    "de-DE": "Sofas",
-    "en-US": "Sofas"
+    "de-DE": "Sofas"
   },
   "orderHint": ".3",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with sofas preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "sofas",
     "en-GB": "sofas",
-    "de-DE": "sofas",
-    "en-US": "sofas"
+    "de-DE": "sofas"
   }
 }`)
     );
@@ -34,17 +34,17 @@ describe(`with sofas preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Sofas"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Sofas"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "Sofas"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "Sofas"
     }
   ],
@@ -57,17 +57,17 @@ describe(`with sofas preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "sofas"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "sofas"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "sofas"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "sofas"
     }
   ]

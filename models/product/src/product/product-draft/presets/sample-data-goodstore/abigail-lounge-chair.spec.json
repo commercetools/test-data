@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "new-arrivals",
         "typeId": "category"
       }
     ],
@@ -133,22 +129,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "new-arrivals",
         "typeId": "category"
       }
     ],
@@ -227,6 +219,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Abigail Lounge Chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Abigail Lounge Chair"
       },
@@ -234,11 +231,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Abigail Lounge-Sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Abigail Lounge Chair"
       }
     ],
     "productType": {
@@ -249,6 +241,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "abigail-lounge-chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "abigail-lounge-chair"
       },
@@ -256,11 +253,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "abigail-lounge-stuhl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "abigail-lounge-chair"
       }
     ]
   }

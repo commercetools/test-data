@@ -52,7 +52,7 @@ const edgarArmchair = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Edgar Armchair')
         ['en-GB']('Edgar Armchair')
-        ['de-DE']('Edgar Sessel')
+        ['de-DE']('Sessel "Edgar"')
     )
     .slug(
       LocalizedString.presets

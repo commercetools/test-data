@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Stainless steel",
-            "de-DE": "- Edelstahl",
-            "en-US": "- Stainless steel"
+            "en-US": "- Stainless steel",
+            "de-DE": "- Edelstahl"
           }
         },
         {
@@ -97,17 +94,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -155,7 +149,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Stainless steel\",\"de-DE\":\"- Edelstahl\",\"en-US\":\"- Stainless steel\"}"
+          "value": "{\"en-GB\":\"- Stainless steel\",\"en-US\":\"- Stainless steel\",\"de-DE\":\"- Edelstahl\"}"
         },
         {
           "name": "product-description",
@@ -170,6 +164,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Wine Bottle Opener"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Wine Bottle Opener"
       },
@@ -177,11 +176,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Wein Flaschenöffner"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Wine Bottle Opener"
       }
     ],
     "productType": {
@@ -192,6 +186,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "wine-bottle-opener"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "wine-bottle-opener"
       },
@@ -199,11 +198,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "wein-flaschenffner"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "wine-bottle-opener"
       }
     ]
   }

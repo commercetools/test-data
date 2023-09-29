@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "plates",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "serving-platters",
         "typeId": "category"
       }
     ],
@@ -72,8 +68,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 plate",
-            "de-DE": "- Enthält 1 Teller",
-            "en-US": "- Includes 1 plate"
+            "en-US": "- Includes 1 plate",
+            "de-DE": "- Enthält 1 Teller"
           }
         },
         {
@@ -108,22 +104,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "plates",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       }
     ],
@@ -182,7 +174,7 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 plate\",\"de-DE\":\"- Enthält 1 Teller\",\"en-US\":\"- Includes 1 plate\"}"
+          "value": "{\"en-GB\":\"- Includes 1 plate\",\"en-US\":\"- Includes 1 plate\",\"de-DE\":\"- Enthält 1 Teller\"}"
         },
         {
           "name": "color-filter",
@@ -193,6 +185,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Green Serving Plate"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Green Serving Plate"
       },
@@ -200,11 +197,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Grüne Servierplatte"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Green Serving Plate"
       }
     ],
     "productType": {
@@ -215,6 +207,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "green-serving-plate"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "green-serving-plate"
       },
@@ -222,11 +219,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "grne-servierplatte"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "green-serving-plate"
       }
     ]
   }

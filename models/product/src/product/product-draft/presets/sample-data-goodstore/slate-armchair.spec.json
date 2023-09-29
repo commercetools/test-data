@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -68,8 +65,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes ottoman",
-            "de-DE": "- Inklusive Ottomane",
-            "en-US": "- Includes ottoman"
+            "en-US": "- Includes ottoman",
+            "de-DE": "- Inklusive Ottomane"
           }
         },
         {
@@ -109,17 +106,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -178,7 +172,7 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes ottoman\",\"de-DE\":\"- Inklusive Ottomane\",\"en-US\":\"- Includes ottoman\"}"
+          "value": "{\"en-GB\":\"- Includes ottoman\",\"en-US\":\"- Includes ottoman\",\"de-DE\":\"- Inklusive Ottomane\"}"
         },
         {
           "name": "color",
@@ -193,6 +187,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Slate Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Slate Armchair"
       },
@@ -200,11 +199,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sessel aus Schiefer"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Slate Armchair"
       }
     ],
     "productType": {
@@ -215,6 +209,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "slate-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "slate-armchair"
       },
@@ -222,11 +221,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "sessel-aus-schiefer"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "slate-armchair"
       }
     ]
   }

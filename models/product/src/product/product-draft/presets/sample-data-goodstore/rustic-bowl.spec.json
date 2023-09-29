@@ -40,8 +40,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 bowl",
-            "de-DE": "- Enthält 1 Schüssel",
-            "en-US": "- Includes 1 bowl"
+            "en-US": "- Includes 1 bowl",
+            "de-DE": "- Enthält 1 Schüssel"
           }
         },
         {
@@ -115,7 +115,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\",\"en-US\":\"- Includes 1 bowl\"}"
+          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"en-US\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\"}"
         },
         {
           "name": "product-description",
@@ -126,6 +126,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rustic Bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Rustic Bowl"
       },
@@ -133,11 +138,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rustikale Schale"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rustic Bowl"
       }
     ],
     "productType": {
@@ -148,6 +148,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rustic-bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rustic-bowl"
       },
@@ -155,11 +160,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rustikale-schale"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rustic-bowl"
       }
     ]
   }

@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "rugs",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- 5ft x 7ft\n- Dry-clean only",
-            "de-DE": "- 5 Fuß x 7 Fuß\n- Nur chemische Reinigung",
-            "en-US": "- 5ft x 7ft\n- Dry-clean only"
+            "en-US": "- 5ft x 7ft\n- Dry-clean only",
+            "de-DE": "- 5 Fuß x 7 Fuß\n- Nur chemische Reinigung"
           }
         },
         {
@@ -120,17 +117,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "rugs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -185,7 +179,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- 5ft x 7ft\\n- Dry-clean only\",\"de-DE\":\"- 5 Fuß x 7 Fuß\\n- Nur chemische Reinigung\",\"en-US\":\"- 5ft x 7ft\\n- Dry-clean only\"}"
+          "value": "{\"en-GB\":\"- 5ft x 7ft\\n- Dry-clean only\",\"en-US\":\"- 5ft x 7ft\\n- Dry-clean only\",\"de-DE\":\"- 5 Fuß x 7 Fuß\\n- Nur chemische Reinigung\"}"
         },
         {
           "name": "product-description",
@@ -208,6 +202,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Ashen Rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Ashen Rug"
       },
@@ -215,11 +214,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Teppich \"Ashen\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Ashen Rug"
       }
     ],
     "productType": {
@@ -230,6 +224,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "ashen-rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "ashen-rug"
       },
@@ -237,11 +236,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "ashen-teppich"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "ashen-rug"
       }
     ]
   }

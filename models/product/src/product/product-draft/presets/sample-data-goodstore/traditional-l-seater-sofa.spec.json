@@ -2,23 +2,18 @@
   "rest": {
     "categories": [
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
-        "key": "sofas",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -151,27 +146,22 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "sofas",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -264,6 +254,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Traditional L Seater Sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Traditional L Seater Sofa"
       },
@@ -271,11 +266,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Traditionelles Ecksofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Traditional L Seater Sofa"
       }
     ],
     "productType": {
@@ -286,6 +276,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "traditional-l-seater-sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "traditional-l-seater-sofa"
       },
@@ -293,11 +288,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "traditionelles-l-sitzer-sofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "traditional-l-seater-sofa"
       }
     ]
   }

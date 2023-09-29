@@ -8,9 +8,9 @@ describe(`with theMinimalist preset`, () => {
       JSON.parse(`{
   "key": "the-minimalist",
   "name": {
+    "en-US": "The Minimalist",
     "en-GB": "The Minimalist",
-    "de-DE": "The Minimalist",
-    "en-US": "The Minimalist"
+    "de-DE": "The Minimalist"
   },
   "orderHint": ".003",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with theMinimalist preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "the-minimalist",
     "en-GB": "the-minimalist",
-    "de-DE": "the-minimalist",
-    "en-US": "the-minimalist"
+    "de-DE": "the-minimalist"
   }
 }`)
     );
@@ -35,17 +35,17 @@ describe(`with theMinimalist preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "The Minimalist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "The Minimalist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "The Minimalist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "The Minimalist"
     }
   ],
@@ -58,17 +58,17 @@ describe(`with theMinimalist preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "the-minimalist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "the-minimalist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "the-minimalist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "the-minimalist"
     }
   ]

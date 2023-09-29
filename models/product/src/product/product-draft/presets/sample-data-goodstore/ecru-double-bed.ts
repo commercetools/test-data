@@ -48,7 +48,7 @@ const ecruDoubleBed = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Ecru Double Bed')
         ['en-GB']('Ecru Double Bed')
-        ['de-DE']('Ecru Doppelbett')
+        ['de-DE']('Doppelbett "Ecru"')
     )
     .slug(
       LocalizedString.presets

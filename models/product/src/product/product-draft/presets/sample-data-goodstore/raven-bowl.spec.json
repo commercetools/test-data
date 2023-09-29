@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "bowls",
         "typeId": "category"
       },
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "new-arrivals",
         "typeId": "category"
       }
     ],
@@ -57,8 +53,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 bowl",
-            "de-DE": "- Enthält 1 Schüssel",
-            "en-US": "- Includes 1 bowl"
+            "en-US": "- Includes 1 bowl",
+            "de-DE": "- Enthält 1 Schüssel"
           }
         },
         {
@@ -117,22 +113,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bowls",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "new-arrivals",
         "typeId": "category"
       }
     ],
@@ -180,7 +172,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\",\"en-US\":\"- Includes 1 bowl\"}"
+          "value": "{\"en-GB\":\"- Includes 1 bowl\",\"en-US\":\"- Includes 1 bowl\",\"de-DE\":\"- Enthält 1 Schüssel\"}"
         },
         {
           "name": "product-description",
@@ -203,6 +195,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Raven Bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Raven Bowl"
       },
@@ -210,11 +207,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Suppenschüssel >Raven<"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Raven Bowl"
       }
     ],
     "productType": {
@@ -225,6 +217,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "raven-bowl"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "raven-bowl"
       },
@@ -232,11 +229,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rabenschssel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "raven-bowl"
       }
     ]
   }

@@ -8,9 +8,9 @@ describe(`with storageTables preset`, () => {
       JSON.parse(`{
   "key": "storage--tables",
   "name": {
+    "en-US": "Dressers",
     "en-GB": "Storage & Tables",
-    "de-DE": "Kommoden",
-    "en-US": "Dressers"
+    "de-DE": "Kommoden"
   },
   "orderHint": ".1",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with storageTables preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "storage-and-tables",
     "en-GB": "storage-and-tables",
-    "de-DE": "dressers",
-    "en-US": "storage-and-tables"
+    "de-DE": "dressers"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with storageTables preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Dressers"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Storage & Tables"
     },
@@ -42,11 +47,6 @@ describe(`with storageTables preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Kommoden"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Dressers"
     }
   ],
   "orderHint": ".1",
@@ -58,6 +58,11 @@ describe(`with storageTables preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "storage-and-tables"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "storage-and-tables"
     },
@@ -65,11 +70,6 @@ describe(`with storageTables preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "dressers"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "storage-and-tables"
     }
   ]
 }`)

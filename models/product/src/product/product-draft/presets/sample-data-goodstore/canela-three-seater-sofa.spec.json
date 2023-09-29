@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "sofas",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Leather upholstery \n- 3 seater",
-            "de-DE": "- Lederbezug\n- 3-Sitzer",
-            "en-US": "- Leather upholstery \n- 3 seater"
+            "en-US": "- Leather upholstery \n- 3 seater",
+            "de-DE": "- Lederbezug\n- 3-Sitzer"
           }
         },
         {
@@ -111,8 +108,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#E4B849",
-            "de-DE": "#E4B849",
-            "en-US": "#E4B849"
+            "en-US": "#E4B849",
+            "de-DE": "#E4B849"
           }
         }
       ]
@@ -136,17 +133,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "sofas",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -201,7 +195,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Leather upholstery \\n- 3 seater\",\"de-DE\":\"- Lederbezug\\n- 3-Sitzer\",\"en-US\":\"- Leather upholstery \\n- 3 seater\"}"
+          "value": "{\"en-GB\":\"- Leather upholstery \\n- 3 seater\",\"en-US\":\"- Leather upholstery \\n- 3 seater\",\"de-DE\":\"- Lederbezug\\n- 3-Sitzer\"}"
         },
         {
           "name": "product-description",
@@ -225,11 +219,16 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#E4B849\",\"de-DE\":\"#E4B849\",\"en-US\":\"#E4B849\"}"
+          "value": "{\"en-GB\":\"#E4B849\",\"en-US\":\"#E4B849\",\"de-DE\":\"#E4B849\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Canela Three-Seater Sofa"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -239,11 +238,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Canela 3-Sitzer-Sofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Canela Three-Seater Sofa"
       }
     ],
     "productType": {
@@ -254,6 +248,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "canela-three-seater-sofa"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "canela-three-seater-sofa"
       },
@@ -261,11 +260,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "canela-3-sitzer-sofa"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "canela-three-seater-sofa"
       }
     ]
   }

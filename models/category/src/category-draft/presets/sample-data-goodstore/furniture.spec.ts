@@ -8,15 +8,15 @@ describe(`with furniture preset`, () => {
       JSON.parse(`{
   "key": "furniture",
   "name": {
+    "en-US": "Furniture",
     "en-GB": "Furniture",
-    "de-DE": "Möbel",
-    "en-US": "Furniture"
+    "de-DE": "Möbel"
   },
   "orderHint": "0.2",
   "slug": {
+    "en-US": "furniture",
     "en-GB": "furniture",
-    "de-DE": "furniture",
-    "en-US": "furniture"
+    "de-DE": "furniture"
   }
 }`)
     );
@@ -31,6 +31,11 @@ describe(`with furniture preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Furniture"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Furniture"
     },
@@ -38,15 +43,15 @@ describe(`with furniture preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Möbel"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Furniture"
     }
   ],
   "orderHint": "0.2",
   "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "furniture"
+    },
     {
       "__typename": "LocalizedString",
       "locale": "en-GB",
@@ -55,11 +60,6 @@ describe(`with furniture preset`, () => {
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "furniture"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "furniture"
     }
   ]

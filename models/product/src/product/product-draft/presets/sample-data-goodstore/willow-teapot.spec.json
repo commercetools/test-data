@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       }
     ],
@@ -57,8 +53,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Hand wash only",
-            "de-DE": "- Handwäsche nur",
-            "en-US": "- Hand wash only"
+            "en-US": "- Hand wash only",
+            "de-DE": "- Handwäsche nur"
           }
         },
         {
@@ -90,22 +86,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "dinnerware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       }
     ],
@@ -153,7 +145,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Hand wash only\",\"de-DE\":\"- Handwäsche nur\",\"en-US\":\"- Hand wash only\"}"
+          "value": "{\"en-GB\":\"- Hand wash only\",\"en-US\":\"- Hand wash only\",\"de-DE\":\"- Handwäsche nur\"}"
         },
         {
           "name": "product-description",
@@ -164,6 +156,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Willow Teapot"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Willow Teapot"
       },
@@ -171,11 +168,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Willow Teekanne"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Willow Teapot"
       }
     ],
     "productType": {
@@ -186,6 +178,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "willow-teapot"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "willow-teapot"
       },
@@ -193,11 +190,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "willow-teekanne"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "willow-teapot"
       }
     ]
   }

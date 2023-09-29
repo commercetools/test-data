@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 chair",
-            "de-DE": "- Beinhaltet 1 Stuhl",
-            "en-US": "- Includes 1 chair"
+            "en-US": "- Includes 1 chair",
+            "de-DE": "- Beinhaltet 1 Stuhl"
           }
         },
         {
@@ -93,8 +90,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#FFC28D",
-            "de-DE": "#FFC28D",
-            "en-US": "#FFC28D"
+            "en-US": "#FFC28D",
+            "de-DE": "#FFC28D"
           }
         },
         {
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 chair\",\"de-DE\":\"- Beinhaltet 1 Stuhl\",\"en-US\":\"- Includes 1 chair\"}"
+          "value": "{\"en-GB\":\"- Includes 1 chair\",\"en-US\":\"- Includes 1 chair\",\"de-DE\":\"- Beinhaltet 1 Stuhl\"}"
         },
         {
           "name": "product-description",
@@ -207,7 +201,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#FFC28D\",\"de-DE\":\"#FFC28D\",\"en-US\":\"#FFC28D\"}"
+          "value": "{\"en-GB\":\"#FFC28D\",\"en-US\":\"#FFC28D\",\"de-DE\":\"#FFC28D\"}"
         },
         {
           "name": "color-filter",
@@ -218,6 +212,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Bruno Chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Bruno Chair"
       },
@@ -225,11 +224,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sessel \"Bruno\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Bruno Chair"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "bruno-chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "bruno-chair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "bruno-stuhl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "bruno-chair"
       }
     ]
   }

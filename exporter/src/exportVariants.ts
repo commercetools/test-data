@@ -44,9 +44,7 @@ const serializeAttributeValue = (
     case 'set':
       switch (attributeDefinition.type.elementType.name) {
         case 'ltext':
-          console.log(attribute.value);
           attributeValue = JSON.stringify(attribute.value);
-
           break;
         case 'reference':
           attributeValue =
@@ -168,12 +166,12 @@ const products = async () => {
     const identifier = product.key || product.masterData.staged.name['en-GB'];
     variantMapping.push(
       await handleVariant(
-        product.masterData.current.masterVariant,
+        product.masterData.staged.masterVariant,
         identifier,
         productType
       )
     );
-    for (const variant of product.masterData.current.variants) {
+    for (const variant of product.masterData.staged.variants) {
       variantMapping.push(
         await handleVariant(variant, identifier, productType)
       );

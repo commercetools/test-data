@@ -2,11 +2,9 @@
   "rest": {
     "categories": [
       {
-        "key": "bedding",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -34,7 +32,7 @@
     "name": {
       "en-US": "Dreamscape Comfort Collection",
       "en-GB": "Dreamscape Comfort Collection",
-      "de-DE": "Dreamscape Comfort-Kollektion"
+      "de-DE": "Komfort-Kollektion \"Dreamscape\""
     },
     "productType": {
       "key": "bedding-bundle",
@@ -50,12 +48,10 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bedding",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -74,18 +70,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Dreamscape Comfort Collection"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Dreamscape Comfort Collection"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Dreamscape Comfort-Kollektion"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Dreamscape Comfort Collection"
+        "value": "Komfort-Kollektion \"Dreamscape\""
       }
     ],
     "productType": {
@@ -96,6 +92,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "test-bundle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "test-bundle"
       },
@@ -103,11 +104,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "dreamscape-comfort-kollektion"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "test-bundle"
       }
     ]
   }

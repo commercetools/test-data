@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Insulated \n- Suitable for both cold and hot drinks",
-            "de-DE": "- Isoliert\n- Sowohl für kalte als auch heiße Getränke geeignet",
-            "en-US": "- Insulated \n- Suitable for both cold and hot drinks"
+            "en-US": "- Insulated \n- Suitable for both cold and hot drinks",
+            "de-DE": "- Isoliert\n- Sowohl für kalte als auch heiße Getränke geeignet"
           }
         },
         {
@@ -102,17 +99,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -160,7 +154,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Insulated \\n- Suitable for both cold and hot drinks\",\"de-DE\":\"- Isoliert\\n- Sowohl für kalte als auch heiße Getränke geeignet\",\"en-US\":\"- Insulated \\n- Suitable for both cold and hot drinks\"}"
+          "value": "{\"en-GB\":\"- Insulated \\n- Suitable for both cold and hot drinks\",\"en-US\":\"- Insulated \\n- Suitable for both cold and hot drinks\",\"de-DE\":\"- Isoliert\\n- Sowohl für kalte als auch heiße Getränke geeignet\"}"
         },
         {
           "name": "product-description",
@@ -179,6 +173,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Travel Coffee Mug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Travel Coffee Mug"
       },
@@ -186,11 +185,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Reise-Kaffeetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Travel Coffee Mug"
       }
     ],
     "productType": {
@@ -201,6 +195,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "travel-coffee-mug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "travel-coffee-mug"
       },
@@ -208,11 +207,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "reise-kaffeetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "travel-coffee-mug"
       }
     ]
   }

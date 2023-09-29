@@ -17,9 +17,9 @@ describe(`with rugs preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "rugs",
     "en-GB": "rugs",
-    "de-DE": "teppiche",
-    "en-US": "rugs"
+    "de-DE": "teppiche"
   }
 }`)
     );
@@ -51,6 +51,11 @@ describe(`with rugs preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "rugs"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "rugs"
     },
@@ -58,11 +63,6 @@ describe(`with rugs preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "teppiche"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "rugs"
     }
   ]
 }`)

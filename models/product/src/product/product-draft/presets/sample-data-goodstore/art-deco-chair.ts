@@ -48,7 +48,7 @@ const artDecoChair = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Art Deco Chair')
         ['en-GB']('Art Deco Chair')
-        ['de-DE']('Art-Deco-Sessel')
+        ['de-DE']('Sessel im Art-Deco-Stil')
     )
     .slug(
       LocalizedString.presets

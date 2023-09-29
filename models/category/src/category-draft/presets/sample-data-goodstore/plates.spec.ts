@@ -8,9 +8,9 @@ describe(`with plates preset`, () => {
       JSON.parse(`{
   "key": "plates",
   "name": {
+    "en-US": "Plates",
     "en-GB": "Plates",
-    "de-DE": "Platten",
-    "en-US": "Plates"
+    "de-DE": "Platten"
   },
   "orderHint": ".82",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with plates preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "plates",
     "en-GB": "plates",
-    "de-DE": "plates",
-    "en-US": "plates"
+    "de-DE": "plates"
   }
 }`)
     );
@@ -34,6 +34,11 @@ describe(`with plates preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Plates"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Plates"
     },
@@ -41,11 +46,6 @@ describe(`with plates preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Platten"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Plates"
     }
   ],
   "orderHint": ".82",
@@ -57,17 +57,17 @@ describe(`with plates preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "plates"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "plates"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "plates"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "plates"
     }
   ]

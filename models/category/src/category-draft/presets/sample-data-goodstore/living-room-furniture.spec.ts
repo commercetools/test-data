@@ -9,9 +9,9 @@ describe(`with livingRoomFurniture preset`, () => {
       JSON.parse(`{
   "key": "living-room-furniture",
   "name": {
+    "en-US": "Living Room Furniture",
     "en-GB": "Living Room Furniture",
-    "de-DE": "Wohnzimmer",
-    "en-US": "Living Room Furniture"
+    "de-DE": "Wohnzimmer"
   },
   "orderHint": ".9",
   "parent": {
@@ -19,9 +19,9 @@ describe(`with livingRoomFurniture preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "living-room-furniture",
     "en-GB": "living-room-furniture",
-    "de-DE": "living-room-furniture",
-    "en-US": "living-room-furniture"
+    "de-DE": "living-room-furniture"
   }
 }`)
     );
@@ -36,6 +36,11 @@ describe(`with livingRoomFurniture preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Living Room Furniture"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Living Room Furniture"
     },
@@ -43,11 +48,6 @@ describe(`with livingRoomFurniture preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Wohnzimmer"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Living Room Furniture"
     }
   ],
   "orderHint": ".9",
@@ -59,17 +59,17 @@ describe(`with livingRoomFurniture preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "living-room-furniture"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "living-room-furniture"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "living-room-furniture"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "living-room-furniture"
     }
   ]

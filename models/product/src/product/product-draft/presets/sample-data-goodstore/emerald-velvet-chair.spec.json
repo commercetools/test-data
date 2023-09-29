@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Dry clean only",
-            "de-DE": "- Nur chemische Reinigung",
-            "en-US": "- Dry clean only"
+            "en-US": "- Dry clean only",
+            "de-DE": "- Nur chemische Reinigung"
           }
         },
         {
@@ -93,8 +90,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#F8EE18",
-            "de-DE": "#F8EE18",
-            "en-US": "#F8EE18"
+            "en-US": "#F8EE18",
+            "de-DE": "#F8EE18"
           }
         },
         {
@@ -111,7 +108,7 @@
       ]
     },
     "name": {
-      "de-DE": "Smaragdgrüner Samtstuhl",
+      "de-DE": "Smaragdgrüner Samt-Stuhl",
       "en-GB": "Emerald Velvet Chair",
       "en-US": "Emerald Velvet Chair"
     },
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Dry clean only\",\"de-DE\":\"- Nur chemische Reinigung\",\"en-US\":\"- Dry clean only\"}"
+          "value": "{\"en-GB\":\"- Dry clean only\",\"en-US\":\"- Dry clean only\",\"de-DE\":\"- Nur chemische Reinigung\"}"
         },
         {
           "name": "product-description",
@@ -207,7 +201,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#F8EE18\",\"de-DE\":\"#F8EE18\",\"en-US\":\"#F8EE18\"}"
+          "value": "{\"en-GB\":\"#F8EE18\",\"en-US\":\"#F8EE18\",\"de-DE\":\"#F8EE18\"}"
         },
         {
           "name": "color-filter",
@@ -218,18 +212,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Emerald Velvet Chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Emerald Velvet Chair"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Smaragdgrüner Samtstuhl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Emerald Velvet Chair"
+        "value": "Smaragdgrüner Samt-Stuhl"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "emerald-velvet-chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "emerald-velvet-chair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "smaragdgrner-samtstuhl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "emerald-velvet-chair"
       }
     ]
   }

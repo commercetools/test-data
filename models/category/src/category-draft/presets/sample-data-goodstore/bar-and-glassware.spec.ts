@@ -8,9 +8,9 @@ describe(`with barAndGlassware preset`, () => {
       JSON.parse(`{
   "key": "bar-and-glassware",
   "name": {
+    "en-US": "Bar and Glassware",
     "en-GB": "Bar and Glassware",
-    "de-DE": "Gläser und Barzubehör",
-    "en-US": "Bar and Glassware"
+    "de-DE": "Gläser und Barzubehör"
   },
   "orderHint": ".82",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with barAndGlassware preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "bar-and-glassware",
     "en-GB": "bar-and-glassware",
-    "de-DE": "bar-and-glassware",
-    "en-US": "bar-and-glassware"
+    "de-DE": "bar-and-glassware"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with barAndGlassware preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bar and Glassware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Bar and Glassware"
     },
@@ -42,11 +47,6 @@ describe(`with barAndGlassware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Gläser und Barzubehör"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Bar and Glassware"
     }
   ],
   "orderHint": ".82",
@@ -58,17 +58,17 @@ describe(`with barAndGlassware preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bar-and-glassware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "bar-and-glassware"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "bar-and-glassware"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "bar-and-glassware"
     }
   ]

@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "storage--tables",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       }
     ],
@@ -134,17 +131,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "storage--tables",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       }
     ],
@@ -236,6 +230,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rustic Country Dresser"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Rustic Country Dresser"
       },
@@ -243,11 +242,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rustikale Landhauskommode"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rustic Country Dresser"
       }
     ],
     "productType": {
@@ -258,6 +252,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rustic-country-dresser"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rustic-country-dresser"
       },
@@ -265,11 +264,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rustikale-landhauskommode"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rustic-country-dresser"
       }
     ]
   }

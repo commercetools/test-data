@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "rugs",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -72,8 +69,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- 5ft x 3ft",
-            "de-DE": "- 5 Fuß x 3 Fuß",
-            "en-US": "- 5ft x 3ft"
+            "en-US": "- 5ft x 3ft",
+            "de-DE": "- 5 Fuß x 3 Fuß"
           }
         }
       ]
@@ -97,17 +94,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "rugs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -163,11 +157,16 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- 5ft x 3ft\",\"de-DE\":\"- 5 Fuß x 3 Fuß\",\"en-US\":\"- 5ft x 3ft\"}"
+          "value": "{\"en-GB\":\"- 5ft x 3ft\",\"en-US\":\"- 5ft x 3ft\",\"de-DE\":\"- 5 Fuß x 3 Fuß\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cobblestone Rug"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -177,11 +176,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Strukturteppich \"Kopfsteinpflaster\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Cobblestone Rug"
       }
     ],
     "productType": {
@@ -192,6 +186,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cobblestone-rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cobblestone-rug"
       },
@@ -199,11 +198,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "kopfsteinpflaster"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "cobblestone-rug"
       }
     ]
   }

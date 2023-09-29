@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Dry clean only",
-            "de-DE": "- Nur chemische Reinigung",
-            "en-US": "- Dry clean only"
+            "en-US": "- Dry clean only",
+            "de-DE": "- Nur chemische Reinigung"
           }
         },
         {
@@ -93,8 +90,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#ECD0B2",
-            "de-DE": "#ECD0B2",
-            "en-US": "#ECD0B2"
+            "en-US": "#ECD0B2",
+            "de-DE": "#ECD0B2"
           }
         },
         {
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Dry clean only\",\"de-DE\":\"- Nur chemische Reinigung\",\"en-US\":\"- Dry clean only\"}"
+          "value": "{\"en-GB\":\"- Dry clean only\",\"en-US\":\"- Dry clean only\",\"de-DE\":\"- Nur chemische Reinigung\"}"
         },
         {
           "name": "product-description",
@@ -207,7 +201,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#ECD0B2\",\"de-DE\":\"#ECD0B2\",\"en-US\":\"#ECD0B2\"}"
+          "value": "{\"en-GB\":\"#ECD0B2\",\"en-US\":\"#ECD0B2\",\"de-DE\":\"#ECD0B2\"}"
         },
         {
           "name": "color-filter",
@@ -218,6 +212,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Charlie Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Charlie Armchair"
       },
@@ -225,11 +224,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sessel \"Charlie\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Charlie Armchair"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "charlie-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "charlie-armchair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "charlie-sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "charlie-armchair"
       }
     ]
   }

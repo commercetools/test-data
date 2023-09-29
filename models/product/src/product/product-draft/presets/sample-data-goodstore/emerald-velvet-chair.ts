@@ -48,7 +48,7 @@ const emeraldVelvetChair = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Emerald Velvet Chair')
         ['en-GB']('Emerald Velvet Chair')
-        ['de-DE']('Smaragdgrüner Samtstuhl')
+        ['de-DE']('Smaragdgrüner Samt-Stuhl')
     )
     .slug(
       LocalizedString.presets

@@ -17,9 +17,9 @@ describe(`with homeAccents preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "home-accents",
     "en-GB": "home-accents",
-    "de-DE": "home-akzente",
-    "en-US": "home-accents"
+    "de-DE": "home-akzente"
   }
 }`)
     );
@@ -52,6 +52,11 @@ describe(`with homeAccents preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "home-accents"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "home-accents"
     },
@@ -59,11 +64,6 @@ describe(`with homeAccents preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "home-akzente"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "home-accents"
     }
   ]
 }`)

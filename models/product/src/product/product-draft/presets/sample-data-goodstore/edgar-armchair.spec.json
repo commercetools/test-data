@@ -2,19 +2,15 @@
   "rest": {
     "categories": [
       {
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -57,8 +53,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Assembly on delivery",
-            "de-DE": "- Montage bei Lieferung",
-            "en-US": "- Assembly on delivery"
+            "en-US": "- Assembly on delivery",
+            "de-DE": "- Montage bei Lieferung"
           }
         },
         {
@@ -97,8 +93,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#000",
-            "de-DE": "#000",
-            "en-US": "#000"
+            "en-US": "#000",
+            "de-DE": "#000"
           }
         },
         {
@@ -115,7 +111,7 @@
       ]
     },
     "name": {
-      "de-DE": "Edgar Sessel",
+      "de-DE": "Sessel \"Edgar\"",
       "en-GB": "Edgar Armchair",
       "en-US": "Edgar Armchair"
     },
@@ -133,22 +129,18 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -196,7 +188,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Assembly on delivery\",\"de-DE\":\"- Montage bei Lieferung\",\"en-US\":\"- Assembly on delivery\"}"
+          "value": "{\"en-GB\":\"- Assembly on delivery\",\"en-US\":\"- Assembly on delivery\",\"de-DE\":\"- Montage bei Lieferung\"}"
         },
         {
           "name": "product-description",
@@ -216,7 +208,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#000\",\"de-DE\":\"#000\",\"en-US\":\"#000\"}"
+          "value": "{\"en-GB\":\"#000\",\"en-US\":\"#000\",\"de-DE\":\"#000\"}"
         },
         {
           "name": "color-filter",
@@ -227,18 +219,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Edgar Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Edgar Armchair"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Edgar Sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Edgar Armchair"
+        "value": "Sessel \"Edgar\""
       }
     ],
     "productType": {
@@ -249,6 +241,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "edgar-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "edgar-armchair"
       },
@@ -256,11 +253,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "edgar-sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "edgar-armchair"
       }
     ]
   }

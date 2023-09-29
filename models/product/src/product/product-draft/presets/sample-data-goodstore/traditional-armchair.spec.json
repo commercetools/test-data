@@ -2,23 +2,18 @@
   "rest": {
     "categories": [
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -75,8 +70,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Cotton upholstery",
-            "de-DE": "- Baumwollpolsterung",
-            "en-US": "- Cotton upholstery"
+            "en-US": "- Cotton upholstery",
+            "de-DE": "- Baumwollpolsterung"
           }
         },
         {
@@ -135,27 +130,22 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "the-traditionalist",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "collections",
         "typeId": "category"
       }
     ],
@@ -217,7 +207,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Cotton upholstery\",\"de-DE\":\"- Baumwollpolsterung\",\"en-US\":\"- Cotton upholstery\"}"
+          "value": "{\"en-GB\":\"- Cotton upholstery\",\"en-US\":\"- Cotton upholstery\",\"de-DE\":\"- Baumwollpolsterung\"}"
         },
         {
           "name": "product-description",
@@ -240,6 +230,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Traditional Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Traditional Armchair"
       },
@@ -247,11 +242,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Traditioneller Sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Traditional Armchair"
       }
     ],
     "productType": {
@@ -262,6 +252,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "traditional-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "traditional-armchair"
       },
@@ -269,11 +264,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "traditioneller-sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "traditional-armchair"
       }
     ]
   }

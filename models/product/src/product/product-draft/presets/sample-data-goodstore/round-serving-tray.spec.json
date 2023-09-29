@@ -2,23 +2,18 @@
   "rest": {
     "categories": [
       {
-        "key": "plates",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
-        "key": "serveware",
         "typeId": "category"
       },
       {
-        "key": "cheese-trays",
         "typeId": "category"
       }
     ],
@@ -68,8 +63,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Hand wash only",
-            "de-DE": "- Handwäsche nur",
-            "en-US": "- Hand wash only"
+            "en-US": "- Hand wash only",
+            "de-DE": "- Handwäsche nur"
           }
         },
         {
@@ -112,27 +107,22 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "plates",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serving-platters",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "serveware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "cheese-trays",
         "typeId": "category"
       }
     ],
@@ -187,7 +177,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Hand wash only\",\"de-DE\":\"- Handwäsche nur\",\"en-US\":\"- Hand wash only\"}"
+          "value": "{\"en-GB\":\"- Hand wash only\",\"en-US\":\"- Hand wash only\",\"de-DE\":\"- Handwäsche nur\"}"
         },
         {
           "name": "product-description",
@@ -202,6 +192,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Round Serving Tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Round Serving Tray"
       },
@@ -209,11 +204,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rundes Serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Round Serving Tray"
       }
     ],
     "productType": {
@@ -224,6 +214,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "round-serving-tray"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "round-serving-tray"
       },
@@ -231,11 +226,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rundes-serviertablett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "round-serving-tray"
       }
     ]
   }

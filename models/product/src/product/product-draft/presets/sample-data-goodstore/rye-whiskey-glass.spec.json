@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Set includes 6 glasses",
-            "de-DE": "- Das Set enthält 6 Gläser",
-            "en-US": "- Set includes 6 glasses"
+            "en-US": "- Set includes 6 glasses",
+            "de-DE": "- Das Set enthält 6 Gläser"
           }
         },
         {
@@ -93,17 +90,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -158,7 +152,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Set includes 6 glasses\",\"de-DE\":\"- Das Set enthält 6 Gläser\",\"en-US\":\"- Set includes 6 glasses\"}"
+          "value": "{\"en-GB\":\"- Set includes 6 glasses\",\"en-US\":\"- Set includes 6 glasses\",\"de-DE\":\"- Das Set enthält 6 Gläser\"}"
         },
         {
           "name": "product-description",
@@ -169,6 +163,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rye Whiskey Glass"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Rye Whiskey Glass"
       },
@@ -176,11 +175,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Roggen-Whisky-Glas"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rye Whiskey Glass"
       }
     ],
     "productType": {
@@ -191,6 +185,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rye-whiskey-glass"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rye-whiskey-glass"
       },
@@ -198,11 +197,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "roggen-whisky-glas"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rye-whiskey-glass"
       }
     ]
   }

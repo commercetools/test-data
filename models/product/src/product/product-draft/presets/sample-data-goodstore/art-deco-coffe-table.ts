@@ -46,9 +46,9 @@ const artDecoCoffeTable = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-US']('Art Deco Coffe Table')
-        ['en-GB']('Art Deco Coffe Table')
-        ['de-DE']('Art-Deco-Couchtisch')
+        ['en-US']('Art Deco Coffee Table')
+        ['en-GB']('Art Deco Coffee Table')
+        ['de-DE']('Couchtisch im Art-Deco-Stil')
     )
     .slug(
       LocalizedString.presets

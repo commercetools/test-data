@@ -2,11 +2,9 @@
   "rest": {
     "categories": [
       {
-        "key": "bedding",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -830,12 +828,10 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bedding",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -914,6 +910,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cotton Silk Bedsheet"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Cotton Silk Bedsheet"
       },
@@ -921,11 +922,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Bettwäsche aus Baumwollseide"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Cotton Silk Bedsheet"
       }
     ],
     "productType": {
@@ -936,6 +932,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cotton-silk-bedsheet"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cotton-silk-bedsheet"
       },
@@ -943,11 +944,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "bettwsche-aus-baumwollseide"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "cotton-silk-bedsheet"
       }
     ],
     "variants": [

@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -101,7 +98,7 @@
       ]
     },
     "name": {
-      "de-DE": "Immergrüne Kerze",
+      "de-DE": "Kerze \"Evergreen\"",
       "en-GB": "Evergreen Candle",
       "en-US": "Evergreen Candle"
     },
@@ -119,17 +116,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -210,18 +204,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Evergreen Candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Evergreen Candle"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Immergrüne Kerze"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Evergreen Candle"
+        "value": "Kerze \"Evergreen\""
       }
     ],
     "productType": {
@@ -232,6 +226,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "evergreen-candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "evergreen-candle"
       },
@@ -239,11 +238,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "immergrne-kerze"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "evergreen-candle"
       }
     ]
   }

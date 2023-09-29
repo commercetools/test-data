@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Stainless steel",
-            "de-DE": "- Edelstahl",
-            "en-US": "- Stainless steel"
+            "en-US": "- Stainless steel",
+            "de-DE": "- Edelstahl"
           }
         },
         {
@@ -86,17 +83,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-accessories",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -144,7 +138,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Stainless steel\",\"de-DE\":\"- Edelstahl\",\"en-US\":\"- Stainless steel\"}"
+          "value": "{\"en-GB\":\"- Stainless steel\",\"en-US\":\"- Stainless steel\",\"de-DE\":\"- Edelstahl\"}"
         },
         {
           "name": "product-description",
@@ -155,6 +149,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Steel Hip Flask"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Steel Hip Flask"
       },
@@ -162,11 +161,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Flachmann aus Stahl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Steel Hip Flask"
       }
     ],
     "productType": {
@@ -177,6 +171,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "steel-hip-flask"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "steel-hip-flask"
       },
@@ -184,11 +183,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "flachmann-aus-stahl"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "steel-hip-flask"
       }
     ]
   }

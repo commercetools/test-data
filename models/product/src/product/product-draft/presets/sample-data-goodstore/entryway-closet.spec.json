@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "storage--tables",
         "typeId": "category"
       }
     ],
@@ -67,8 +64,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Assembly included in delivery",
-            "de-DE": "- Montage im Lieferumfang enthalten",
-            "en-US": "- Assembly included in delivery"
+            "en-US": "- Assembly included in delivery",
+            "de-DE": "- Montage im Lieferumfang enthalten"
           }
         },
         {
@@ -91,8 +88,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#EFDBB4",
-            "de-DE": "#EFDBB4",
-            "en-US": "#EFDBB4"
+            "en-US": "#EFDBB4",
+            "de-DE": "#EFDBB4"
           }
         },
         {
@@ -109,7 +106,7 @@
       ]
     },
     "name": {
-      "de-DE": "Eingangsschrank",
+      "de-DE": "Einbauschrank",
       "en-GB": "Entryway Closet",
       "en-US": "Entryway Closet"
     },
@@ -127,17 +124,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "storage--tables",
         "typeId": "category"
       }
     ],
@@ -199,7 +193,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\",\"en-US\":\"- Assembly included in delivery\"}"
+          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"en-US\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\"}"
         },
         {
           "name": "product-description",
@@ -211,7 +205,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#EFDBB4\",\"de-DE\":\"#EFDBB4\",\"en-US\":\"#EFDBB4\"}"
+          "value": "{\"en-GB\":\"#EFDBB4\",\"en-US\":\"#EFDBB4\",\"de-DE\":\"#EFDBB4\"}"
         },
         {
           "name": "color-filter",
@@ -222,18 +216,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Entryway Closet"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Entryway Closet"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Eingangsschrank"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Entryway Closet"
+        "value": "Einbauschrank"
       }
     ],
     "productType": {
@@ -244,6 +238,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "entryway-closet"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "entryway-closet"
       },
@@ -251,11 +250,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "eingangsschrank"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "entryway-closet"
       }
     ]
   }

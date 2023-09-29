@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 2 cushions for seat and backrest",
-            "de-DE": "- Inklusive 2 Kissen für Sitz und Rückenlehne",
-            "en-US": "- Includes 2 cushions for seat and backrest"
+            "en-US": "- Includes 2 cushions for seat and backrest",
+            "de-DE": "- Inklusive 2 Kissen für Sitz und Rückenlehne"
           }
         },
         {
@@ -104,8 +101,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#E0AC58",
-            "de-DE": "#E0AC58",
-            "en-US": "#E0AC58"
+            "en-US": "#E0AC58",
+            "de-DE": "#E0AC58"
           }
         }
       ]
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 2 cushions for seat and backrest\",\"de-DE\":\"- Inklusive 2 Kissen für Sitz und Rückenlehne\",\"en-US\":\"- Includes 2 cushions for seat and backrest\"}"
+          "value": "{\"en-GB\":\"- Includes 2 cushions for seat and backrest\",\"en-US\":\"- Includes 2 cushions for seat and backrest\",\"de-DE\":\"- Inklusive 2 Kissen für Sitz und Rückenlehne\"}"
         },
         {
           "name": "product-description",
@@ -211,11 +205,16 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#E0AC58\",\"de-DE\":\"#E0AC58\",\"en-US\":\"#E0AC58\"}"
+          "value": "{\"en-GB\":\"#E0AC58\",\"en-US\":\"#E0AC58\",\"de-DE\":\"#E0AC58\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Rattan Lounge Chair"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -225,11 +224,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Loungesessel aus Rattan"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Rattan Lounge Chair"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "rattan-lounge-chair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "rattan-lounge-chair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rattan-loungesessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "rattan-lounge-chair"
       }
     ]
   }

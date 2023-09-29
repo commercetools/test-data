@@ -8,9 +8,9 @@ describe(`with collections preset`, () => {
       JSON.parse(`{
   "key": "collections",
   "name": {
+    "en-US": "Collections",
     "en-GB": "Collections",
-    "de-DE": "Sonderkollektionen",
-    "en-US": "Collections"
+    "de-DE": "Sonderkollektionen"
   },
   "orderHint": ".7",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with collections preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "furniture-collections",
     "en-GB": "furniture-collections",
-    "de-DE": "collections",
-    "en-US": "furniture-collections"
+    "de-DE": "collections"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with collections preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Collections"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Collections"
     },
@@ -42,11 +47,6 @@ describe(`with collections preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Sonderkollektionen"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Collections"
     }
   ],
   "orderHint": ".7",
@@ -58,6 +58,11 @@ describe(`with collections preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "furniture-collections"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "furniture-collections"
     },
@@ -65,11 +70,6 @@ describe(`with collections preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "collections"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "furniture-collections"
     }
   ]
 }`)

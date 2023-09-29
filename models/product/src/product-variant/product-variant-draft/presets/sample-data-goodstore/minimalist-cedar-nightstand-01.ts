@@ -43,16 +43,14 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 4011, h: 6016 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('product-description')
-        .value({
-          'en-GB':
-            'The minimalist cedar nightstand is designed to provide a simple and functional surface for placing items next to a bed. The nightstand features a clean and sleek design with minimal decorative elements, in keeping with the minimalist aesthetic.  The nightstand is made from natural cedar wood, which is known for its durability, resistance to decay, and attractive grain patterns. The wood is finished with a light stain or clear coating to bring out the natural beauty of the wood.  Overall, a minimalist cedar nightstand is a stylish and functional addition to any bedroom. Its clean and simple design complements a variety of decor styles, and the natural beauty of the cedar wood adds warmth and texture to the space.',
-          'en-US':
-            'The minimalist cedar nightstand is designed to provide a simple and functional surface for placing items next to a bed. The nightstand features a clean and sleek design with minimal decorative elements, in keeping with the minimalist aesthetic.  The nightstand is made from natural cedar wood, which is known for its durability, resistance to decay, and attractive grain patterns. The wood is finished with a light stain or clear coating to bring out the natural beauty of the wood.  Overall, a minimalist cedar nightstand is a stylish and functional addition to any bedroom. Its clean and simple design complements a variety of decor styles, and the natural beauty of the cedar wood adds warmth and texture to the space.',
-          'de-DE':
-            'Der minimalistische Nachttisch aus Zedernholz wurde entwickelt, um eine einfache und funktionale Oberfläche für die Platzierung von Gegenständen neben einem Bett zu bieten. Der Nachttisch verfügt über ein klares und schlankes Design mit minimalen dekorativen Elementen, die der minimalistischen Ästhetik entsprechen.  Der Nachttisch ist aus natürlichem Zedernholz gefertigt, das für seine Haltbarkeit, Fäulnisbeständigkeit und attraktive Maserung bekannt ist. Das Holz wird mit einer leichten Beize oder einer klaren Beschichtung versehen, um die natürliche Schönheit des Holzes hervorzuheben.  Insgesamt ist ein minimalistischer Nachttisch aus Zedernholz eine stilvolle und funktionale Ergänzung für jedes Schlafzimmer. Sein klares und einfaches Design ergänzt eine Vielzahl von Einrichtungsstilen, und die natürliche Schönheit des Zedernholzes verleiht dem Raum Wärme und Textur.',
-        }),
+      AttributeDraft.random().name('product-description').value({
+        'en-GB':
+          'The minimalist cedar nightstand is designed to provide a simple and functional surface for placing items next to a bed. The nightstand features a clean and sleek design with minimal decorative elements, in keeping with the minimalist aesthetic.  The nightstand is made from natural cedar wood, which is known for its durability, resistance to decay, and attractive grain patterns. The wood is finished with a light stain or clear coating to bring out the natural beauty of the wood.  Overall, a minimalist cedar nightstand is a stylish and functional addition to any bedroom. Its clean and simple design complements a variety of decor styles, and the natural beauty of the cedar wood adds warmth and texture to the space.',
+        'en-US':
+          'The minimalist cedar nightstand is designed to provide a simple and functional surface for placing items next to a bed. The nightstand features a clean and sleek design with minimal decorative elements, in keeping with the minimalist aesthetic.  The nightstand is made from natural cedar wood, which is known for its durability, resistance to decay, and attractive grain patterns. The wood is finished with a light stain or clear coating to bring out the natural beauty of the wood.  Overall, a minimalist cedar nightstand is a stylish and functional addition to any bedroom. Its clean and simple design complements a variety of decor styles, and the natural beauty of the cedar wood adds warmth and texture to the space.',
+        'de-DE':
+          'Der minimalistische Nachttisch aus Zedernholz bietet eine einfache und funktionelle Ablagefläche für Gegenstände neben dem Bett. Der Nachttisch zeichnet sich durch ein klares und schlichtes Design mit minimalen dekorativen Elementen aus, ganz im Sinne der minimalistischen Ästhetik. Der Nachttisch ist aus natürlichem Zedernholz gefertigt, das für seine Langlebigkeit, Fäulnisbeständigkeit und attraktive Maserung bekannt ist. Das Holz ist mit einer hellen Beize oder einem Klarlack behandelt, um die natürliche Schönheit des Holzes hervorzuheben. Insgesamt ist ein minimalistischer Nachttisch aus Zedernholz eine stilvolle und funktionelle Ergänzung für jedes Schlafzimmer. Sein klares und einfaches Design passt zu einer Vielzahl von Einrichtungsstilen, und die natürliche Schönheit des Zedernholzes verleiht dem Raum Wärme und Textur.',
+      }),
       AttributeDraft.random()
         .name('finishlabel')
         .value({ 'en-GB': 'Cedar', 'de-DE': 'Zeder', 'en-US': 'Cedar' }),
@@ -64,7 +62,7 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
         }),
       AttributeDraft.random()
         .name('finish')
-        .value({ 'en-GB': '#8C9585', 'de-DE': '#8C9585', 'en-US': '#8C9585' }),
+        .value({ 'en-GB': '#8C9585', 'en-US': '#8C9585', 'de-DE': '#8C9585' }),
     ]);
 
 export default minimalistCedarNightstand01;

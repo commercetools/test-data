@@ -8,9 +8,9 @@ describe(`with roomDecor preset`, () => {
       JSON.parse(`{
   "key": "room-decor",
   "name": {
+    "en-US": "Room Decor",
     "en-GB": "Room Decor",
-    "de-DE": "Zimmerdekoration",
-    "en-US": "Room Decor"
+    "de-DE": "Zimmerdekoration"
   },
   "orderHint": ".8",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with roomDecor preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "room-decor",
     "en-GB": "room-decor",
-    "de-DE": "zimmerdekoration",
-    "en-US": "room-decor"
+    "de-DE": "zimmerdekoration"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with roomDecor preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Room Decor"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Room Decor"
     },
@@ -42,11 +47,6 @@ describe(`with roomDecor preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Zimmerdekoration"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Room Decor"
     }
   ],
   "orderHint": ".8",
@@ -58,6 +58,11 @@ describe(`with roomDecor preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "room-decor"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "room-decor"
     },
@@ -65,11 +70,6 @@ describe(`with roomDecor preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "zimmerdekoration"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "room-decor"
     }
   ]
 }`)

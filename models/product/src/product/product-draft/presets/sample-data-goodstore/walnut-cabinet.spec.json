@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "storage--tables",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Assembly included in delivery",
-            "de-DE": "- Montage im Lieferumfang enthalten",
-            "en-US": "- Assembly included in delivery"
+            "en-US": "- Assembly included in delivery",
+            "de-DE": "- Montage im Lieferumfang enthalten"
           }
         },
         {
@@ -95,8 +92,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#7A5905",
-            "de-DE": "#7A5905",
-            "en-US": "#7A5905"
+            "en-US": "#7A5905",
+            "de-DE": "#7A5905"
           }
         }
       ]
@@ -120,17 +117,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "storage--tables",
         "typeId": "category"
       }
     ],
@@ -185,7 +179,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\",\"en-US\":\"- Assembly included in delivery\"}"
+          "value": "{\"en-GB\":\"- Assembly included in delivery\",\"en-US\":\"- Assembly included in delivery\",\"de-DE\":\"- Montage im Lieferumfang enthalten\"}"
         },
         {
           "name": "product-description",
@@ -201,11 +195,16 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#7A5905\",\"de-DE\":\"#7A5905\",\"en-US\":\"#7A5905\"}"
+          "value": "{\"en-GB\":\"#7A5905\",\"en-US\":\"#7A5905\",\"de-DE\":\"#7A5905\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Walnut Cabinet"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -215,11 +214,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Nussbaum Schrank"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Walnut Cabinet"
       }
     ],
     "productType": {
@@ -230,6 +224,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "walnut-cabinet"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "walnut-cabinet"
       },
@@ -237,11 +236,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "nussbaum-schrank"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "walnut-cabinet"
       }
     ]
   }

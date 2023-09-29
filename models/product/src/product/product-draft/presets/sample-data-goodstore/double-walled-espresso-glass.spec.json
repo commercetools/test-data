@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -68,14 +65,14 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Set includes 4 glasses",
-            "de-DE": "- Set enthält 4 Gläser",
-            "en-US": "- Set includes 4 glasses"
+            "en-US": "- Set includes 4 glasses",
+            "de-DE": "- Set enthält 4 Gläser"
           }
         }
       ]
     },
     "name": {
-      "de-DE": "Doppelwandiges Espressoglas",
+      "de-DE": "Doppelwandiges Espressotasse aus Glas",
       "en-GB": "Double-walled Espresso Glass",
       "en-US": "Double-walled Espresso Glass"
     },
@@ -93,17 +90,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -162,11 +156,16 @@
         },
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Set includes 4 glasses\",\"de-DE\":\"- Set enthält 4 Gläser\",\"en-US\":\"- Set includes 4 glasses\"}"
+          "value": "{\"en-GB\":\"- Set includes 4 glasses\",\"en-US\":\"- Set includes 4 glasses\",\"de-DE\":\"- Set enthält 4 Gläser\"}"
         }
       ]
     },
     "name": [
+      {
+        "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Double-walled Espresso Glass"
+      },
       {
         "__typename": "LocalizedString",
         "locale": "en-GB",
@@ -175,12 +174,7 @@
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Doppelwandiges Espressoglas"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Double-walled Espresso Glass"
+        "value": "Doppelwandiges Espressotasse aus Glas"
       }
     ],
     "productType": {
@@ -191,6 +185,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "double-walled-espresso-glass"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "double-walled-espresso-glass"
       },
@@ -198,11 +197,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "doppelwandiges-espressoglas"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "double-walled-espresso-glass"
       }
     ]
   }

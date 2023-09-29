@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Comes in glass jar\n- 300 grams",
-            "de-DE": "- Wird im Glas geliefert\n- 300 Gramm",
-            "en-US": "- Comes in glass jar\n- 300 grams"
+            "en-US": "- Comes in glass jar\n- 300 grams",
+            "de-DE": "- Wird im Glas geliefert\n- 300 Gramm"
           }
         },
         {
@@ -93,17 +90,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -158,7 +152,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Comes in glass jar\\n- 300 grams\",\"de-DE\":\"- Wird im Glas geliefert\\n- 300 Gramm\",\"en-US\":\"- Comes in glass jar\\n- 300 grams\"}"
+          "value": "{\"en-GB\":\"- Comes in glass jar\\n- 300 grams\",\"en-US\":\"- Comes in glass jar\\n- 300 grams\",\"de-DE\":\"- Wird im Glas geliefert\\n- 300 Gramm\"}"
         },
         {
           "name": "product-description",
@@ -169,6 +163,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Vanilla Candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Vanilla Candle"
       },
@@ -176,11 +175,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Kerze mit Vanilleduft"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Vanilla Candle"
       }
     ],
     "productType": {
@@ -191,6 +185,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "vanilla-candle"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "vanilla-candle"
       },
@@ -198,11 +197,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "vanille-kerze"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "vanilla-candle"
       }
     ]
   }

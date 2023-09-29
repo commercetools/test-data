@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Dry clean only\n- Pillow included",
-            "de-DE": "- Nur chemische Reinigung\n- Kissen inklusive",
-            "en-US": "- Dry clean only\n- Pillow included"
+            "en-US": "- Dry clean only\n- Pillow included",
+            "de-DE": "- Nur chemische Reinigung\n- Kissen inklusive"
           }
         },
         {
@@ -96,8 +93,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#FFDF7F",
-            "de-DE": "#FFDF7F",
-            "en-US": "#FFDF7F"
+            "en-US": "#FFDF7F",
+            "de-DE": "#FFDF7F"
           }
         },
         {
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Dry clean only\\n- Pillow included\",\"de-DE\":\"- Nur chemische Reinigung\\n- Kissen inklusive\",\"en-US\":\"- Dry clean only\\n- Pillow included\"}"
+          "value": "{\"en-GB\":\"- Dry clean only\\n- Pillow included\",\"en-US\":\"- Dry clean only\\n- Pillow included\",\"de-DE\":\"- Nur chemische Reinigung\\n- Kissen inklusive\"}"
         },
         {
           "name": "product-description",
@@ -207,7 +201,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#FFDF7F\",\"de-DE\":\"#FFDF7F\",\"en-US\":\"#FFDF7F\"}"
+          "value": "{\"en-GB\":\"#FFDF7F\",\"en-US\":\"#FFDF7F\",\"de-DE\":\"#FFDF7F\"}"
         },
         {
           "name": "finishlabel",
@@ -218,6 +212,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Glam Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Glam Armchair"
       },
@@ -225,11 +224,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Glam Sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Glam Armchair"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "glam-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "glam-armchair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "glam-sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "glam-armchair"
       }
     ]
   }

@@ -31,24 +31,20 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('productspec')
-        .value({
-          'en-GB': '- Assembly included at delivery\n- Mattress not included',
-          'de-DE':
-            '- Montage im Lieferumfang enthalten\n- Matratze nicht im Lieferumfang enthalten',
-          'en-US': '- Assembly included at delivery\n- Mattress not included',
-        }),
-      AttributeDraft.random()
-        .name('product-description')
-        .value({
-          'en-GB':
-            'A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.',
-          'en-US':
-            'A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.',
-          'de-DE':
-            'Ein Queensize-Bett mit getuftetem Kopfteil und Plattform sowie Stahlbeinen ist ein modernes und stilvolles Möbelstück. Das Kopfteil ist hoch und breit und hat ein getuftetes Design. Der für das Kopfteil verwendete Stoff ist weich und luxuriös und bietet einen bequemen Platz zum Anlehnen, wenn man sich im Bett aufrichtet.  Das Bett wird vom Boden auf einer Plattform angehoben, die von schlanken und robusten Stahlbeinen getragen wird. Die Plattform bietet eine solide und stabile Grundlage für die Matratze und verleiht dem Bett gleichzeitig ein sauberes und minimalistisches Aussehen.  Insgesamt ist dieses Queensize-Bett ein schönes und funktionales Stück, das sich perfekt für ein modernes Schlafzimmer mit minimalistischer oder industrieller Ästhetik eignet.',
-        }),
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Assembly included at delivery\n- Mattress not included',
+        'en-US': '- Assembly included at delivery\n- Mattress not included',
+        'de-DE':
+          '- Montage im Lieferumfang enthalten\n- Matratze nicht im Lieferumfang enthalten',
+      }),
+      AttributeDraft.random().name('product-description').value({
+        'en-GB':
+          'A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.',
+        'en-US':
+          'A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.',
+        'de-DE':
+          'Ein Queensize-Bett mit getuftetem Kopfteil und Podest und Stahlfüßen ist ein modernes und stilvolles Möbelstück. Das Kopfteil ist hoch und breit und verfügt über ein getuftetes Design. Der für das Kopfteil verwendete Stoff ist weich und luxuriös und bietet einen bequemen Platz zum Anlehnen, wenn man sich im Bett aufrichtet. Das Bett steht auf einem Podest, das von schlanken und stabilen Stahlbeinen getragen wird. Das Podest bietet eine solide und stabile Grundlage für die Matratze und verleiht dem Bett gleichzeitig einen klaren und minimalistischen Look. Insgesamt ist dieses Bett ein schönes und funktionales Möbelstück, das sich perfekt für ein modernes Schlafzimmer mit minimalistischer oder industrieller Ästhetik eignet.',
+      }),
       AttributeDraft.random()
         .name('colorlabel')
         .value({ 'en-GB': 'Sage', 'de-DE': 'Salbei', 'en-US': 'Sage' }),
@@ -58,13 +54,11 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random()
         .name('finishlabel')
         .value({ 'en-GB': 'Steel', 'de-DE': 'Stahl', 'en-US': 'Steel' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({
-          'en-GB': '#CCCCCC ',
-          'de-DE': '#CCCCCC ',
-          'en-US': '#CCCCCC ',
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': '#CCCCCC ',
+        'en-US': '#CCCCCC ',
+        'de-DE': '#CCCCCC ',
+      }),
       AttributeDraft.random()
         .name('color-filter')
         .value({

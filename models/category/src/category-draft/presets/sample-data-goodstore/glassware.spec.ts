@@ -8,9 +8,9 @@ describe(`with glassware preset`, () => {
       JSON.parse(`{
   "key": "glassware",
   "name": {
+    "en-US": "Glassware",
     "en-GB": "Glassware",
-    "de-DE": "Gläser",
-    "en-US": "Glassware"
+    "de-DE": "Gläser"
   },
   "orderHint": ".23",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with glassware preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "glassware",
     "en-GB": "glassware",
-    "de-DE": "glassware",
-    "en-US": "glassware"
+    "de-DE": "glassware"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with glassware preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Glassware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Glassware"
     },
@@ -42,11 +47,6 @@ describe(`with glassware preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Gläser"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Glassware"
     }
   ],
   "orderHint": ".23",
@@ -58,17 +58,17 @@ describe(`with glassware preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "glassware"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "glassware"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "glassware"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "glassware"
     }
   ]

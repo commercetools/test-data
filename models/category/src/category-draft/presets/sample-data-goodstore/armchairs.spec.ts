@@ -8,9 +8,9 @@ describe(`with armchairs preset`, () => {
       JSON.parse(`{
   "key": "armchairs",
   "name": {
+    "en-US": "Chairs",
     "en-GB": "Armchairs",
-    "de-DE": "Stühle",
-    "en-US": "Chairs"
+    "de-DE": "Stühle"
   },
   "orderHint": ".3",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with armchairs preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "armchairs",
     "en-GB": "armchairs",
-    "de-DE": "chairs",
-    "en-US": "armchairs"
+    "de-DE": "chairs"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with armchairs preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Chairs"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Armchairs"
     },
@@ -42,11 +47,6 @@ describe(`with armchairs preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Stühle"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Chairs"
     }
   ],
   "orderHint": ".3",
@@ -58,6 +58,11 @@ describe(`with armchairs preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "armchairs"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "armchairs"
     },
@@ -65,11 +70,6 @@ describe(`with armchairs preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "chairs"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "armchairs"
     }
   ]
 }`)

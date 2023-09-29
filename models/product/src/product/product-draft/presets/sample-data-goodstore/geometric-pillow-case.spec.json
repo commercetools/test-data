@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-decor",
         "typeId": "category"
       },
       {
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
-        "key": "bedding",
         "typeId": "category"
       }
     ],
@@ -296,17 +293,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "new-arrivals",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bedding",
         "typeId": "category"
       }
     ],
@@ -384,6 +378,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Geometric Pillow Case"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Geometric Pillow Case"
       },
@@ -391,11 +390,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Geometrischer Kissenbezug"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Geometric Pillow Case"
       }
     ],
     "productType": {
@@ -406,6 +400,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "geometric-pillow-case"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "geometric-pillow-case"
       },
@@ -413,11 +412,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "geometrischer-kissenbezug"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "geometric-pillow-case"
       }
     ],
     "variants": [

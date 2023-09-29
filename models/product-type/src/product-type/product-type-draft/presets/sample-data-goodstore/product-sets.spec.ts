@@ -12,9 +12,9 @@ describe(`with productSets preset`, () => {
     {
       "name": "type",
       "label": {
+        "en-US": "Type",
         "en-GB": "Type",
-        "de-DE": "Typ",
-        "en-US": "Type"
+        "de-DE": "Typ"
       },
       "isRequired": false,
       "type": {
@@ -49,9 +49,9 @@ describe(`with productSets preset`, () => {
       "isSearchable": true,
       "name": "type",
       "label": [
+        { "__typename": "LocalizedString", "locale": "en-US", "value": "Type" },
         { "__typename": "LocalizedString", "locale": "en-GB", "value": "Type" },
-        { "__typename": "LocalizedString", "locale": "de-DE", "value": "Typ" },
-        { "__typename": "LocalizedString", "locale": "en-US", "value": "Type" }
+        { "__typename": "LocalizedString", "locale": "de-DE", "value": "Typ" }
       ],
       "type": {
         "set": {

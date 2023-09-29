@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Acrylic on canvas\n- 2ft by 2ft",
-            "de-DE": "- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß",
-            "en-US": "- Acrylic on canvas\n- 2ft by 2ft"
+            "en-US": "- Acrylic on canvas\n- 2ft by 2ft",
+            "de-DE": "- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß"
           }
         },
         {
@@ -86,17 +83,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -144,7 +138,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Acrylic on canvas\\n- 2ft by 2ft\",\"de-DE\":\"- Acryl auf Leinwand\\n- 2 Fuß mal 2 Fuß\",\"en-US\":\"- Acrylic on canvas\\n- 2ft by 2ft\"}"
+          "value": "{\"en-GB\":\"- Acrylic on canvas\\n- 2ft by 2ft\",\"en-US\":\"- Acrylic on canvas\\n- 2ft by 2ft\",\"de-DE\":\"- Acryl auf Leinwand\\n- 2 Fuß mal 2 Fuß\"}"
         },
         {
           "name": "product-description",
@@ -155,6 +149,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Red Modern Painting"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Red Modern Painting"
       },
@@ -162,11 +161,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Rotes modernes Gemälde"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Red Modern Painting"
       }
     ],
     "productType": {
@@ -177,6 +171,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "red-modern-painting"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "red-modern-painting"
       },
@@ -184,11 +183,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "rote-moderne-malerei"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "red-modern-painting"
       }
     ]
   }

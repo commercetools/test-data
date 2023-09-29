@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "kitchen",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "glassware",
         "typeId": "category"
       }
     ],
@@ -74,8 +71,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims",
-            "de-DE": "- Set mit 5 Gläsern\n- Importierter Kristall\n- Goldpolitur an den Felgen",
-            "en-US": "- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims"
+            "en-US": "- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims",
+            "de-DE": "- Set mit 5 Gläsern\n- Importierter Kristall\n- Goldpolitur an den Felgen"
           }
         },
         {
@@ -107,17 +104,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       }
     ],
@@ -186,7 +180,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims\",\"de-DE\":\"- Set mit 5 Gläsern\\n- Importierter Kristall\\n- Goldpolitur an den Felgen\",\"en-US\":\"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims\"}"
+          "value": "{\"en-GB\":\"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims\",\"en-US\":\"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims\",\"de-DE\":\"- Set mit 5 Gläsern\\n- Importierter Kristall\\n- Goldpolitur an den Felgen\"}"
         },
         {
           "name": "product-description",
@@ -197,6 +191,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Gold Rimmed Champagne Glasses"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Gold Rimmed Champagne Glasses"
       },
@@ -204,11 +203,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Champagnergläser mit Goldrand"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Gold Rimmed Champagne Glasses"
       }
     ],
     "productType": {
@@ -219,6 +213,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "gold-rimmed-champagne-glasses"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "gold-rimmed-champagne-glasses"
       },
@@ -226,11 +225,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "champagnerglser-mit-goldrand"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "gold-rimmed-champagne-glasses"
       }
     ]
   }

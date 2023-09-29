@@ -8,9 +8,9 @@ describe(`with servingPlatters preset`, () => {
       JSON.parse(`{
   "key": "serving-platters",
   "name": {
+    "en-US": "Serving Platters",
     "en-GB": "Serving Platters",
-    "de-DE": "Servierplatten",
-    "en-US": "Serving Platters"
+    "de-DE": "Servierplatten"
   },
   "orderHint": ".0004",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with servingPlatters preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "serving-platters",
     "en-GB": "serving-platters",
-    "de-DE": "serving-platters",
-    "en-US": "serving-platters"
+    "de-DE": "serving-platters"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with servingPlatters preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Serving Platters"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Serving Platters"
     },
@@ -42,11 +47,6 @@ describe(`with servingPlatters preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Servierplatten"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Serving Platters"
     }
   ],
   "orderHint": ".0004",
@@ -58,17 +58,17 @@ describe(`with servingPlatters preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "serving-platters"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "serving-platters"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "serving-platters"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "serving-platters"
     }
   ]

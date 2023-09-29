@@ -49,43 +49,44 @@ const mapVariant = (variant: ProductVariant) => {
 };
 
 const getProductSnapshotRest = async (product: Product) => {
-  const variants = product.masterData.current.variants.map(mapVariant);
+  const variants = product.masterData.staged.variants.map(mapVariant);
   let result: ProductDraft = {
-    ...product.masterData.current,
-    categories: product.masterData.current.categories.map((value) => {
+    ...product.masterData.staged,
+    categories: product.masterData.staged.categories.map((value) => {
       return { key: value.obj?.key!, typeId: 'category' };
     }),
     categoryOrderHints:
-      product.masterData.current.categoryOrderHints &&
-      Object.keys(product.masterData.current.categoryOrderHints).length > 0
-        ? product.masterData.current.categoryOrderHints
+      product.masterData.staged.categoryOrderHints &&
+      Object.keys(product.masterData.staged.categoryOrderHints).length > 0
+        ? product.masterData.staged.categoryOrderHints
         : undefined,
     productType: { key: product.productType.obj?.key, typeId: 'product-type' },
-    masterVariant: mapVariant(product.masterData.current.masterVariant),
+    masterVariant: mapVariant(product.masterData.staged.masterVariant),
     variants: variants && variants.length > 0 ? variants : undefined,
-    metaTitle: filterLocalizedString(product.masterData.current.metaTitle),
+    metaTitle: filterLocalizedString(product.masterData.staged.metaTitle),
     metaDescription: filterLocalizedString(
-      product.masterData.current.metaDescription
+      product.masterData.staged.metaDescription
     ),
     searchKeywords: undefined,
   };
 
   if (
-    product.masterData.current.searchKeywords &&
-    Object.keys(product.masterData.current.searchKeywords).length > 0
+    product.masterData.staged.searchKeywords &&
+    Object.keys(product.masterData.staged.searchKeywords).length > 0
   ) {
-    const keep = Object.values(
-      product.masterData.current.searchKeywords
-    ).reduce((all, one) => {
-      if (Array.isArray(one) && one.length > 0) {
-        return true;
-      }
-      return all;
-    }, false);
+    const keep = Object.values(product.masterData.staged.searchKeywords).reduce(
+      (all, one) => {
+        if (Array.isArray(one) && one.length > 0) {
+          return true;
+        }
+        return all;
+      },
+      false
+    );
     if (keep) {
       result = {
         ...result,
-        searchKeywords: product.masterData.current.searchKeywords,
+        searchKeywords: product.masterData.staged.searchKeywords,
       };
     }
   }
@@ -295,7 +296,7 @@ const mapVariantGraphql = (variant: ProductVariant) => {
   return result;
 };
 const getProductSnapshotGraphQL = async (product: Product) => {
-  const productData = product.masterData.current;
+  const productData = product.masterData.staged;
   const result: TProductDraft = {
     categories: productData.categories.map((value) => {
       return {

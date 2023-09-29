@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes 1 mug",
-            "de-DE": "- Enthält 1 Tasse",
-            "en-US": "- Includes 1 mug"
+            "en-US": "- Includes 1 mug",
+            "de-DE": "- Enthält 1 Tasse"
           }
         },
         {
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -171,7 +165,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes 1 mug\",\"de-DE\":\"- Enthält 1 Tasse\",\"en-US\":\"- Includes 1 mug\"}"
+          "value": "{\"en-GB\":\"- Includes 1 mug\",\"en-US\":\"- Includes 1 mug\",\"de-DE\":\"- Enthält 1 Tasse\"}"
         },
         {
           "name": "product-description",
@@ -194,6 +188,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Sand Tea Cup"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Sand Tea Cup"
       },
@@ -201,11 +200,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sand-Teetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Sand Tea Cup"
       }
     ],
     "productType": {
@@ -216,6 +210,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "sand-tea-cup"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "sand-tea-cup"
       },
@@ -223,11 +222,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "sand-teetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "sand-tea-cup"
       }
     ]
   }

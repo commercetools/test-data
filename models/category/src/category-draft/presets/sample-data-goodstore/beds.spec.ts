@@ -8,9 +8,9 @@ describe(`with beds preset`, () => {
       JSON.parse(`{
   "key": "beds",
   "name": {
+    "en-US": "Beds",
     "en-GB": "Beds",
-    "de-DE": "Betten",
-    "en-US": "Beds"
+    "de-DE": "Betten"
   },
   "orderHint": ".4",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with beds preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "beds",
     "en-GB": "beds",
-    "de-DE": "beds",
-    "en-US": "beds"
+    "de-DE": "beds"
   }
 }`)
     );
@@ -34,6 +34,11 @@ describe(`with beds preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Beds"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Beds"
     },
@@ -41,11 +46,6 @@ describe(`with beds preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Betten"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Beds"
     }
   ],
   "orderHint": ".4",
@@ -57,17 +57,17 @@ describe(`with beds preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "beds"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "beds"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "beds"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "beds"
     }
   ]

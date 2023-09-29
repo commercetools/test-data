@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "rugs",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- 6ft x 6ft",
-            "de-DE": "- 180cm x 180cm",
-            "en-US": "- 6ft x 6ft"
+            "en-US": "- 6ft x 6ft",
+            "de-DE": "- 180cm x 180cm"
           }
         },
         {
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "rugs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -171,7 +165,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- 6ft x 6ft\",\"de-DE\":\"- 180cm x 180cm\",\"en-US\":\"- 6ft x 6ft\"}"
+          "value": "{\"en-GB\":\"- 6ft x 6ft\",\"en-US\":\"- 6ft x 6ft\",\"de-DE\":\"- 180cm x 180cm\"}"
         },
         {
           "name": "product-description",
@@ -194,6 +188,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Amalia Rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Amalia Rug"
       },
@@ -201,11 +200,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Teppich \"Amalia\""
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Amalia Rug"
       }
     ],
     "productType": {
@@ -216,6 +210,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "amalia-rug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "amalia-rug"
       },
@@ -223,11 +222,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "amalia-teppich"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "amalia-rug"
       }
     ]
   }

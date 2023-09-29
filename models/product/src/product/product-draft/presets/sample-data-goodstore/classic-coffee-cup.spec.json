@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -60,8 +57,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Includes a matching saucer\n- Set includes 4 cups and saucers",
-            "de-DE": "- Passende Untertasse im Lieferumfang enthalten\n- Set enthält 4 Tassen und Untertassen",
-            "en-US": "- Includes a matching saucer\n- Set includes 4 cups and saucers"
+            "en-US": "- Includes a matching saucer\n- Set includes 4 cups and saucers",
+            "de-DE": "- Passende Untertasse im Lieferumfang enthalten\n- Set enthält 4 Tassen und Untertassen"
           }
         },
         {
@@ -120,17 +117,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -185,7 +179,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Includes a matching saucer\\n- Set includes 4 cups and saucers\",\"de-DE\":\"- Passende Untertasse im Lieferumfang enthalten\\n- Set enthält 4 Tassen und Untertassen\",\"en-US\":\"- Includes a matching saucer\\n- Set includes 4 cups and saucers\"}"
+          "value": "{\"en-GB\":\"- Includes a matching saucer\\n- Set includes 4 cups and saucers\",\"en-US\":\"- Includes a matching saucer\\n- Set includes 4 cups and saucers\",\"de-DE\":\"- Passende Untertasse im Lieferumfang enthalten\\n- Set enthält 4 Tassen und Untertassen\"}"
         },
         {
           "name": "product-description",
@@ -208,6 +202,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Classic Coffee Cup"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Classic Coffee Cup"
       },
@@ -215,11 +214,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Klassische Kaffeetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Classic Coffee Cup"
       }
     ],
     "productType": {
@@ -230,6 +224,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "classic-coffee-cup"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "classic-coffee-cup"
       },
@@ -237,11 +236,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "klassische-kaffeetasse"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "classic-coffee-cup"
       }
     ]
   }

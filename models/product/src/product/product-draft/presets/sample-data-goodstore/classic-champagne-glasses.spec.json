@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -104,17 +101,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -191,6 +185,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Classic Champagne Glasses"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Classic Champagne Glasses"
       },
@@ -198,11 +197,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Klassische Champagnergläser"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Classic Champagne Glasses"
       }
     ],
     "productType": {
@@ -213,6 +207,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "classic-champagne-glasses"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "classic-champagne-glasses"
       },
@@ -220,11 +219,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "klassische-champagnerglser"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "classic-champagne-glasses"
       }
     ]
   }

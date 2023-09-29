@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "home-accents",
         "typeId": "category"
       },
       {
-        "key": "room-decor",
         "typeId": "category"
       },
       {
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Jute\n- Preassembled\n- 1ft x 1ft x 1ft",
-            "de-DE": "- Jute\n- Vormontiert\n- 1 Fuß x 1 Fuß x 1 Fuß",
-            "en-US": "- Jute\n- Preassembled\n- 1ft x 1ft x 1ft"
+            "en-US": "- Jute\n- Preassembled\n- 1ft x 1ft x 1ft",
+            "de-DE": "- Jute\n- Vormontiert\n- 1 Fuß x 1 Fuß x 1 Fuß"
           }
         },
         {
@@ -113,17 +110,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "home-accents",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "room-decor",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "home-decor",
         "typeId": "category"
       }
     ],
@@ -171,7 +165,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft\",\"de-DE\":\"- Jute\\n- Vormontiert\\n- 1 Fuß x 1 Fuß x 1 Fuß\",\"en-US\":\"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft\"}"
+          "value": "{\"en-GB\":\"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft\",\"en-US\":\"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft\",\"de-DE\":\"- Jute\\n- Vormontiert\\n- 1 Fuß x 1 Fuß x 1 Fuß\"}"
         },
         {
           "name": "product-description",
@@ -194,6 +188,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Cube Jute Basket"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Cube Jute Basket"
       },
@@ -201,11 +200,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Würfelkorb aus Jute"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Cube Jute Basket"
       }
     ],
     "productType": {
@@ -216,6 +210,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "cube-jute-basket"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "cube-jute-basket"
       },
@@ -223,11 +222,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "wrfel-jutekorb"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "cube-jute-basket"
       }
     ]
   }

@@ -8,9 +8,9 @@ describe(`with bowls preset`, () => {
       JSON.parse(`{
   "key": "bowls",
   "name": {
+    "en-US": "Bowls",
     "en-GB": "Bowls",
-    "de-DE": "Schalen",
-    "en-US": "Bowls"
+    "de-DE": "Schalen"
   },
   "orderHint": ".56",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with bowls preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "bowls",
     "en-GB": "bowls",
-    "de-DE": "bowls",
-    "en-US": "bowls"
+    "de-DE": "bowls"
   }
 }`)
     );
@@ -34,6 +34,11 @@ describe(`with bowls preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bowls"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Bowls"
     },
@@ -41,11 +46,6 @@ describe(`with bowls preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Schalen"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Bowls"
     }
   ],
   "orderHint": ".56",
@@ -57,17 +57,17 @@ describe(`with bowls preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bowls"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "bowls"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "bowls"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "bowls"
     }
   ]

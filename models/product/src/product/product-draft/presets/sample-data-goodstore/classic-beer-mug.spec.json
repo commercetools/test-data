@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "glassware",
         "typeId": "category"
       },
       {
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Set includes 6 mugs",
-            "de-DE": "- Set enthält 6 Gläser",
-            "en-US": "- Set includes 6 mugs"
+            "en-US": "- Set includes 6 mugs",
+            "de-DE": "- Set enthält 6 Gläser"
           }
         },
         {
@@ -86,17 +83,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "bar-and-glassware",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "kitchen",
         "typeId": "category"
       }
     ],
@@ -144,7 +138,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Set includes 6 mugs\",\"de-DE\":\"- Set enthält 6 Gläser\",\"en-US\":\"- Set includes 6 mugs\"}"
+          "value": "{\"en-GB\":\"- Set includes 6 mugs\",\"en-US\":\"- Set includes 6 mugs\",\"de-DE\":\"- Set enthält 6 Gläser\"}"
         },
         {
           "name": "product-description",
@@ -155,6 +149,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Classic Beer Mug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Classic Beer Mug"
       },
@@ -162,11 +161,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Klassischer Bierglas"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Classic Beer Mug"
       }
     ],
     "productType": {
@@ -177,6 +171,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "classic-beer-mug"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "classic-beer-mug"
       },
@@ -184,11 +183,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "klassischer-bierkrug"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "classic-beer-mug"
       }
     ]
   }

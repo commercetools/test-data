@@ -8,9 +8,9 @@ describe(`with theModernist preset`, () => {
       JSON.parse(`{
   "key": "the-modernist",
   "name": {
+    "en-US": "The Modernist",
     "en-GB": "The Modernist",
-    "de-DE": "The Modernist",
-    "en-US": "The Modernist"
+    "de-DE": "The Modernist"
   },
   "orderHint": ".0035",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with theModernist preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "the-modernist",
     "en-GB": "the-modernist",
-    "de-DE": "the-modernist",
-    "en-US": "the-modernist"
+    "de-DE": "the-modernist"
   }
 }`)
     );
@@ -35,17 +35,17 @@ describe(`with theModernist preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "The Modernist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "The Modernist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "The Modernist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "The Modernist"
     }
   ],
@@ -58,17 +58,17 @@ describe(`with theModernist preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "the-modernist"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "the-modernist"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "the-modernist"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "the-modernist"
     }
   ]

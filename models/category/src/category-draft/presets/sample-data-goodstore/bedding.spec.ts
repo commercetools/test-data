@@ -8,9 +8,9 @@ describe(`with bedding preset`, () => {
       JSON.parse(`{
   "key": "bedding",
   "name": {
+    "en-US": "Bedding",
     "en-GB": "Bedding",
-    "de-DE": "Bettwäsche",
-    "en-US": "Bedding"
+    "de-DE": "Bettwäsche"
   },
   "orderHint": ".5",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with bedding preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "bedding",
     "en-GB": "bedding",
-    "de-DE": "bettwsche",
-    "en-US": "bedding"
+    "de-DE": "bettwsche"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with bedding preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bedding"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Bedding"
     },
@@ -42,11 +47,6 @@ describe(`with bedding preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Bettwäsche"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Bedding"
     }
   ],
   "orderHint": ".5",
@@ -58,6 +58,11 @@ describe(`with bedding preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bedding"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "bedding"
     },
@@ -65,11 +70,6 @@ describe(`with bedding preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "bettwsche"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "bedding"
     }
   ]
 }`)

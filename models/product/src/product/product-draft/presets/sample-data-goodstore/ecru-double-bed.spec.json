@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "beds",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Comes with pillow-top headboard\n- Assembly included",
-            "de-DE": "- Mit gepolstertem Kopfteil\n- Montage inklusive",
-            "en-US": "- Comes with pillow-top headboard\n- Assembly included"
+            "en-US": "- Comes with pillow-top headboard\n- Assembly included",
+            "de-DE": "- Mit gepolstertem Kopfteil\n- Montage inklusive"
           }
         },
         {
@@ -79,7 +76,7 @@
       ]
     },
     "name": {
-      "de-DE": "Ecru Doppelbett",
+      "de-DE": "Doppelbett \"Ecru\"",
       "en-GB": "Ecru Double Bed",
       "en-US": "Ecru Double Bed"
     },
@@ -97,17 +94,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "bedroom-furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "beds",
         "typeId": "category"
       }
     ],
@@ -155,7 +149,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Comes with pillow-top headboard\\n- Assembly included\",\"de-DE\":\"- Mit gepolstertem Kopfteil\\n- Montage inklusive\",\"en-US\":\"- Comes with pillow-top headboard\\n- Assembly included\"}"
+          "value": "{\"en-GB\":\"- Comes with pillow-top headboard\\n- Assembly included\",\"en-US\":\"- Comes with pillow-top headboard\\n- Assembly included\",\"de-DE\":\"- Mit gepolstertem Kopfteil\\n- Montage inklusive\"}"
         },
         {
           "name": "product-description",
@@ -170,18 +164,18 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Ecru Double Bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Ecru Double Bed"
       },
       {
         "__typename": "LocalizedString",
         "locale": "de-DE",
-        "value": "Ecru Doppelbett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Ecru Double Bed"
+        "value": "Doppelbett \"Ecru\""
       }
     ],
     "productType": {
@@ -192,6 +186,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "ecru-double-bed"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "ecru-double-bed"
       },
@@ -199,11 +198,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "ecru-doppelbett"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "ecru-double-bed"
       }
     ]
   }

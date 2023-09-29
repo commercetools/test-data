@@ -8,15 +8,15 @@ describe(`with newArrivals preset`, () => {
       JSON.parse(`{
   "key": "new-arrivals",
   "name": {
+    "en-US": "New Arrivals",
     "en-GB": "New Arrivals",
-    "de-DE": "Neuheiten",
-    "en-US": "New Arrivals"
+    "de-DE": "Neuheiten"
   },
   "orderHint": "0.4",
   "slug": {
+    "en-US": "new-arrivals",
     "en-GB": "new-arrivals",
-    "de-DE": "ganz-neu",
-    "en-US": "new-arrivals"
+    "de-DE": "ganz-neu"
   }
 }`)
     );
@@ -31,6 +31,11 @@ describe(`with newArrivals preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "New Arrivals"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "New Arrivals"
     },
@@ -38,15 +43,15 @@ describe(`with newArrivals preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Neuheiten"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "New Arrivals"
     }
   ],
   "orderHint": "0.4",
   "slug": [
+    {
+      "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "new-arrivals"
+    },
     {
       "__typename": "LocalizedString",
       "locale": "en-GB",
@@ -56,11 +61,6 @@ describe(`with newArrivals preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "ganz-neu"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "new-arrivals"
     }
   ]
 }`)

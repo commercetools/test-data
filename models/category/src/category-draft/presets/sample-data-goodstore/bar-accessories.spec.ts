@@ -8,9 +8,9 @@ describe(`with barAccessories preset`, () => {
       JSON.parse(`{
   "key": "bar-accessories",
   "name": {
+    "en-US": "Bar Accessories",
     "en-GB": "Bar Accessories",
-    "de-DE": "Barzubehör",
-    "en-US": "Bar Accessories"
+    "de-DE": "Barzubehör"
   },
   "orderHint": ".36",
   "parent": {
@@ -18,9 +18,9 @@ describe(`with barAccessories preset`, () => {
     "typeId": "category"
   },
   "slug": {
+    "en-US": "bar-accessories",
     "en-GB": "bar-accessories",
-    "de-DE": "bar-accessories",
-    "en-US": "bar-accessories"
+    "de-DE": "bar-accessories"
   }
 }`)
     );
@@ -35,6 +35,11 @@ describe(`with barAccessories preset`, () => {
   "name": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "Bar Accessories"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "Bar Accessories"
     },
@@ -42,11 +47,6 @@ describe(`with barAccessories preset`, () => {
       "__typename": "LocalizedString",
       "locale": "de-DE",
       "value": "Barzubehör"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
-      "value": "Bar Accessories"
     }
   ],
   "orderHint": ".36",
@@ -58,17 +58,17 @@ describe(`with barAccessories preset`, () => {
   "slug": [
     {
       "__typename": "LocalizedString",
+      "locale": "en-US",
+      "value": "bar-accessories"
+    },
+    {
+      "__typename": "LocalizedString",
       "locale": "en-GB",
       "value": "bar-accessories"
     },
     {
       "__typename": "LocalizedString",
       "locale": "de-DE",
-      "value": "bar-accessories"
-    },
-    {
-      "__typename": "LocalizedString",
-      "locale": "en-US",
       "value": "bar-accessories"
     }
   ]

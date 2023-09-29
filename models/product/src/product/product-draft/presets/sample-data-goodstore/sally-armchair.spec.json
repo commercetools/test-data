@@ -2,15 +2,12 @@
   "rest": {
     "categories": [
       {
-        "key": "armchairs",
         "typeId": "category"
       },
       {
-        "key": "furniture",
         "typeId": "category"
       },
       {
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -53,8 +50,8 @@
           "name": "productspec",
           "value": {
             "en-GB": "- Comes with matching throw pillow",
-            "de-DE": "- Wird mit passendem Dekokissen geliefert",
-            "en-US": "- Comes with matching throw pillow"
+            "en-US": "- Comes with matching throw pillow",
+            "de-DE": "- Wird mit passendem Dekokissen geliefert"
           }
         },
         {
@@ -93,8 +90,8 @@
           "name": "finish",
           "value": {
             "en-GB": "#FAE7C6",
-            "de-DE": "#FAE7C6",
-            "en-US": "#FAE7C6"
+            "en-US": "#FAE7C6",
+            "de-DE": "#FAE7C6"
           }
         },
         {
@@ -129,17 +126,14 @@
     "categories": [
       {
         "__typename": "Reference",
-        "key": "armchairs",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "furniture",
         "typeId": "category"
       },
       {
         "__typename": "Reference",
-        "key": "living-room-furniture",
         "typeId": "category"
       }
     ],
@@ -187,7 +181,7 @@
       "attributes": [
         {
           "name": "productspec",
-          "value": "{\"en-GB\":\"- Comes with matching throw pillow\",\"de-DE\":\"- Wird mit passendem Dekokissen geliefert\",\"en-US\":\"- Comes with matching throw pillow\"}"
+          "value": "{\"en-GB\":\"- Comes with matching throw pillow\",\"en-US\":\"- Comes with matching throw pillow\",\"de-DE\":\"- Wird mit passendem Dekokissen geliefert\"}"
         },
         {
           "name": "product-description",
@@ -207,7 +201,7 @@
         },
         {
           "name": "finish",
-          "value": "{\"en-GB\":\"#FAE7C6\",\"de-DE\":\"#FAE7C6\",\"en-US\":\"#FAE7C6\"}"
+          "value": "{\"en-GB\":\"#FAE7C6\",\"en-US\":\"#FAE7C6\",\"de-DE\":\"#FAE7C6\"}"
         },
         {
           "name": "color-filter",
@@ -218,6 +212,11 @@
     "name": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "Sally Armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "Sally Armchair"
       },
@@ -225,11 +224,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "Sally Sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "Sally Armchair"
       }
     ],
     "productType": {
@@ -240,6 +234,11 @@
     "slug": [
       {
         "__typename": "LocalizedString",
+        "locale": "en-US",
+        "value": "sally-armchair"
+      },
+      {
+        "__typename": "LocalizedString",
         "locale": "en-GB",
         "value": "sally-armchair"
       },
@@ -247,11 +246,6 @@
         "__typename": "LocalizedString",
         "locale": "de-DE",
         "value": "sally-sessel"
-      },
-      {
-        "__typename": "LocalizedString",
-        "locale": "en-US",
-        "value": "sally-armchair"
       }
     ]
   }
