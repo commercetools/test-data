@@ -8,12 +8,210 @@ describe(`with patternedPillowCover01 preset`, () => {
   it(`should return a patternedPillowCover01 preset`, () => {
     const patternedPillowCover01Preset =
       patternedPillowCover01().build<TProductVariantDraft>();
-    expect(patternedPillowCover01Preset).toMatchInlineSnapshot(``);
+    expect(patternedPillowCover01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Waschmaschinenfest
+      - Kissen nicht im Lieferumfang enthalten",
+              "en-GB": "- Machine washable
+      - Pillow not included",
+              "en-US": "- Machine washable
+      - Pillow not included",
+            },
+          },
+          {
+            "name": "color",
+            "value": {
+              "de-DE": "#9c9087",
+              "en-GB": "#9c9087",
+              "en-US": "#9c9087",
+            },
+          },
+          {
+            "name": "colorlabel",
+            "value": {
+              "de-DE": "Mauve",
+              "en-GB": "Mauve",
+              "en-US": "Mauve",
+            },
+          },
+          {
+            "name": "new-arrival",
+            "value": false,
+          },
+          {
+            "name": "color-filter",
+            "value": {
+              "key": "#A020F0",
+              "label": {
+                "de-DE": "Lila",
+                "en-GB": "Purple",
+                "en-US": "Purple",
+              },
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 4160,
+              "w": 6240,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Mahogany%20Pillow%20Cove-Jn9Kw_NO.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1499,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1499,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 1499,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "ADPC-09",
+      }
+    `);
   });
 
   it(`should return a patternedPillowCover01 preset when built for graphql`, () => {
     const patternedPillowCover01PresetGraphql =
       patternedPillowCover01().buildGraphql<TProductVariantDraftGraphql>();
-    expect(patternedPillowCover01PresetGraphql).toMatchInlineSnapshot(``);
+    expect(patternedPillowCover01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
+          },
+          {
+            "name": "color",
+            "value": "{"en-GB":"#9c9087","de-DE":"#9c9087","en-US":"#9c9087"}",
+          },
+          {
+            "name": "colorlabel",
+            "value": "{"en-GB":"Mauve","de-DE":"Mauve","en-US":"Mauve"}",
+          },
+          {
+            "name": "new-arrival",
+            "value": "false",
+          },
+          {
+            "name": "color-filter",
+            "value": "{"key":"#A020F0","label":{"de-DE":"Lila","en-GB":"Purple","en-US":"Purple"}}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 4160,
+              "width": 6240,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Mahogany%20Pillow%20Cove-Jn9Kw_NO.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1499,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1499,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 1499,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "ADPC-09",
+      }
+    `);
   });
 });

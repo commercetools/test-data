@@ -8,12 +8,166 @@ describe(`with modernLandscapePainting01 preset`, () => {
   it(`should return a modernLandscapePainting01 preset`, () => {
     const modernLandscapePainting01Preset =
       modernLandscapePainting01().build<TProductVariantDraft>();
-    expect(modernLandscapePainting01Preset).toMatchInlineSnapshot(``);
+    expect(modernLandscapePainting01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Öl auf Leinwand
+      - Rahmen nicht im Lieferumfang enthalten
+      - 3 Fuß mal 4 Fuß",
+              "en-GB": "- Oil on canvas
+      - Frame not included
+      - 3ft by 4ft",
+              "en-US": "- Oil on canvas
+      - Frame not included
+      - 3ft by 4ft",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 5355,
+              "w": 5313,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_211960511-0vrLfA3X.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 5299,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 5299,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 5299,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "MLP-01",
+      }
+    `);
   });
 
   it(`should return a modernLandscapePainting01 preset when built for graphql`, () => {
     const modernLandscapePainting01PresetGraphql =
       modernLandscapePainting01().buildGraphql<TProductVariantDraftGraphql>();
-    expect(modernLandscapePainting01PresetGraphql).toMatchInlineSnapshot(``);
+    expect(modernLandscapePainting01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Oil on canvas\\n- Frame not included\\n- 3ft by 4ft","de-DE":"- Öl auf Leinwand\\n- Rahmen nicht im Lieferumfang enthalten\\n- 3 Fuß mal 4 Fuß","en-US":"- Oil on canvas\\n- Frame not included\\n- 3ft by 4ft"}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 5355,
+              "width": 5313,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_211960511-0vrLfA3X.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 5299,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 5299,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 5299,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "MLP-01",
+      }
+    `);
   });
 });
