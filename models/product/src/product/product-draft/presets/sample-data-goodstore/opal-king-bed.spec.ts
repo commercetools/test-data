@@ -23,7 +23,7 @@ describe(`with opalKingBed preset`, () => {
         "categoryOrderHints": undefined,
         "description": {
           "de": undefined,
-          "de-DE": "Ein modernes Kingsize-Bett mit getuftetem Kopfteil ist ein stilvolles und elegantes Möbelstück, das jedem Schlafzimmer einen Hauch von Luxus und Raffinesse verleihen kann. Die Matratzenplattform ist groß genug, um eine Kingsize-Matratze aufzunehmen, und das gesamte Bett ist mit klaren, schlanken Linien gestaltet, die ihm ein modernes Aussehen verleihen.  Das getuftete Kopfteil ist das Herzstück des Bettes und oft der auffälligste Blickfang. Es besteht aus weichem, strapazierfähigem Stoff, der in einem quadratischen Muster getuftet ist. Das getuftete Design verleiht dem Kopfteil ein weiches, gepolstertes Aussehen und macht es bequem, im Bett zu sitzen, um zu lesen oder fernzusehen.  Das Gesamtdesign des Bettes ist modern und betont die Schönheit des getufteten Kopfteils.  Insgesamt ist ein modernes Kingsize-Bett mit getuftetem Kopfteil ein Statement-Stück, das jedem Schlafzimmer sowohl Stil als auch Komfort verleihen kann.",
+          "de-DE": "Ein modernes Kingsize-Bett mit getuftetem Kopfteil ist ein stilvolles und elegantes Möbelstück, das einen Hauch von Luxus und Raffinesse in jedes Schlafzimmer bringen kann. Die Matratzenplattform ist groß genug, um eine Kingsize-Matratze aufzunehmen, und das gesamte Bett ist mit klaren, schlanken Linien gestaltet, die ihm einen modernen Look verleihen. Das getuftete Kopfteil ist das Herzstück des Bettes und oft der Blickfang schlechthin. Es ist aus weichem, strapazierfähigem Stoff gefertigt, der in einem quadratischen Muster getuftet ist. Das getuftete Design verleiht dem Kopfteil ein plüschiges, gepolstertes Aussehen und macht es bequem, wenn man im Bett sitzt, um zu lesen oder fernzusehen. Das Gesamtdesign des Bettes ist modern und unterstreicht die Schönheit des getufteten Kopfteils. Insgesamt ist ein modernes Doppelbett mit getuftetem Kopfteil ein Highlight, das jedes Schlafzimmer mit Stil und Komfort bereichert.",
           "en": undefined,
           "en-GB": "A modern king bed with a tufted headboard is a stylish and elegant piece of furniture that can bring a touch of luxury and sophistication to any bedroom. The mattress platform is large enough to accommodate a king-size mattress, and the entire bed is designed with clean, sleek lines that give it a modern look.  The tufted headboard is the centerpiece of the bed and is often the most eye-catching feature. It is made of soft, durable fabric that is tufted in a square pattern. The tufted design gives the headboard a plush, cushioned appearance, making it comfortable for sitting up in bed to read or watch TV.  The overall design of the bed is modern, emphasizing the beauty of the tufted headboard.   Overall, a modern king bed with a tufted headboard is a statement piece that can add both style and comfort to any bedroom.",
           "en-US": "A modern king bed with a tufted headboard is a stylish and elegant piece of furniture that can bring a touch of luxury and sophistication to any bedroom. The mattress platform is large enough to accommodate a king-size mattress, and the entire bed is designed with clean, sleek lines that give it a modern look.  The tufted headboard is the centerpiece of the bed and is often the most eye-catching feature. It is made of soft, durable fabric that is tufted in a square pattern. The tufted design gives the headboard a plush, cushioned appearance, making it comfortable for sitting up in bed to read or watch TV.  The overall design of the bed is modern, emphasizing the beauty of the tufted headboard.   Overall, a modern king bed with a tufted headboard is a statement piece that can add both style and comfort to any bedroom.",
@@ -134,7 +134,7 @@ describe(`with opalKingBed preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Opal Kingsize-Bett",
+          "de-DE": "Opal King Bett",
           "en": undefined,
           "en-GB": "Opal King Bed",
           "en-US": "Opal King Bed",
@@ -197,7 +197,7 @@ describe(`with opalKingBed preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Ein modernes Kingsize-Bett mit getuftetem Kopfteil ist ein stilvolles und elegantes Möbelstück, das jedem Schlafzimmer einen Hauch von Luxus und Raffinesse verleihen kann. Die Matratzenplattform ist groß genug, um eine Kingsize-Matratze aufzunehmen, und das gesamte Bett ist mit klaren, schlanken Linien gestaltet, die ihm ein modernes Aussehen verleihen.  Das getuftete Kopfteil ist das Herzstück des Bettes und oft der auffälligste Blickfang. Es besteht aus weichem, strapazierfähigem Stoff, der in einem quadratischen Muster getuftet ist. Das getuftete Design verleiht dem Kopfteil ein weiches, gepolstertes Aussehen und macht es bequem, im Bett zu sitzen, um zu lesen oder fernzusehen.  Das Gesamtdesign des Bettes ist modern und betont die Schönheit des getufteten Kopfteils.  Insgesamt ist ein modernes Kingsize-Bett mit getuftetem Kopfteil ein Statement-Stück, das jedem Schlafzimmer sowohl Stil als auch Komfort verleihen kann.",
+            "value": "Ein modernes Kingsize-Bett mit getuftetem Kopfteil ist ein stilvolles und elegantes Möbelstück, das einen Hauch von Luxus und Raffinesse in jedes Schlafzimmer bringen kann. Die Matratzenplattform ist groß genug, um eine Kingsize-Matratze aufzunehmen, und das gesamte Bett ist mit klaren, schlanken Linien gestaltet, die ihm einen modernen Look verleihen. Das getuftete Kopfteil ist das Herzstück des Bettes und oft der Blickfang schlechthin. Es ist aus weichem, strapazierfähigem Stoff gefertigt, der in einem quadratischen Muster getuftet ist. Das getuftete Design verleiht dem Kopfteil ein plüschiges, gepolstertes Aussehen und macht es bequem, wenn man im Bett sitzt, um zu lesen oder fernzusehen. Das Gesamtdesign des Bettes ist modern und unterstreicht die Schönheit des getufteten Kopfteils. Insgesamt ist ein modernes Doppelbett mit getuftetem Kopfteil ein Highlight, das jedes Schlafzimmer mit Stil und Komfort bereichert.",
           },
           {
             "__typename": "LocalizedString",
@@ -304,7 +304,7 @@ describe(`with opalKingBed preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Opal Kingsize-Bett",
+            "value": "Opal King Bett",
           },
           {
             "__typename": "LocalizedString",
