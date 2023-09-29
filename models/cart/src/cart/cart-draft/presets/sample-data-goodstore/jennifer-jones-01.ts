@@ -36,10 +36,10 @@ const store = StoreDraft.presets.sampleDataGoodStore
   .theGoodStore()
   .build<TStoreDraft>();
 
-const jenniferJonesCart = (customerId?: string): TCartDraftBuilder =>
+const jenniferJones01 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
-    .key('jennifer-jones-cart')
+    .key('jennifer-jones-01')
     .customerEmail(customer.email)
     .customerId(customerId)
     .currency('GBP')
@@ -60,4 +60,4 @@ const jenniferJonesCart = (customerId?: string): TCartDraftBuilder =>
     )
     .store(KeyReference.presets.store().key(store.key!));
 
-export default jenniferJonesCart;
+export default jenniferJones01;

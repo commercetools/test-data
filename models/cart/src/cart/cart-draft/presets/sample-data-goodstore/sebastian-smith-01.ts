@@ -17,44 +17,54 @@ import { origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 
 const customer = CustomerDraft.presets.sampleDataGoodStore
-  .jenniferSchmidt()
+  .sebastianSmith()
   .build<TCustomerDraft>();
 const address =
-  AddressDraft.presets.sampleDataGoodStore.jenniferSchmidtAddress();
-const goldRimmedChampagneGlasses01 =
+  AddressDraft.presets.sampleDataGoodStore.sebastianSmithAddress();
+const rusticCountryQueenBed01 = ProductVariantDraft.presets.sampleDataGoodStore
+  .rusticCountryQueenBed01()
+  .build<TProductVariantDraft>();
+const modernLandscapePainting01 =
   ProductVariantDraft.presets.sampleDataGoodStore
-    .goldRimmedChampagneGlasses01()
+    .modernLandscapePainting01()
     .build<TProductVariantDraft>();
-const minimalistModernSideTable01 =
-  ProductVariantDraft.presets.sampleDataGoodStore
-    .minimalistModernSideTable01()
-    .build<TProductVariantDraft>();
+const geometricPillowCase01 = ProductVariantDraft.presets.sampleDataGoodStore
+  .geometricPillowCase01()
+  .build<TProductVariantDraft>();
+const modernThreeSeaterSofa01 = ProductVariantDraft.presets.sampleDataGoodStore
+  .modernThreeSeaterSofa01()
+  .build<TProductVariantDraft>();
 const shippingMethod = ShippingMethodDraft.presets.sampleDataGoodStore
-  .standardShippingMethod()
+  .expressShippingMethod()
   .build<TShippingMethodDraft>();
 const store = StoreDraft.presets.sampleDataGoodStore
   .theGoodStore()
   .build<TStoreDraft>();
 
-const jenniferSchmidtCart = (customerId?: string): TCartDraftBuilder =>
+const sebastianSmith01 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
-    .key('jennifer-schmidt-cart')
+    .key('sebastian-smith-01')
     .customerEmail(customer.email)
     .customerId(customerId)
-    .currency('EUR')
-    .country('DE')
+    .currency('GBP')
+    .country('UK')
     .origin(origin.Merchant)
     .shippingAddress(address)
     .billingAddress(address)
     .lineItems([
       LineItemDraft.presets
         .empty()
-        .sku(goldRimmedChampagneGlasses01.sku)
+        .sku(rusticCountryQueenBed01.sku)
         .quantity(1),
       LineItemDraft.presets
         .empty()
-        .sku(minimalistModernSideTable01.sku)
+        .sku(modernLandscapePainting01.sku)
+        .quantity(1),
+      LineItemDraft.presets.empty().sku(geometricPillowCase01.sku).quantity(1),
+      LineItemDraft.presets
+        .empty()
+        .sku(modernThreeSeaterSofa01.sku)
         .quantity(1),
     ])
     .shippingMethod(
@@ -62,4 +72,4 @@ const jenniferSchmidtCart = (customerId?: string): TCartDraftBuilder =>
     )
     .store(KeyReference.presets.store().key(store.key!));
 
-export default jenniferSchmidtCart;
+export default sebastianSmith01;
