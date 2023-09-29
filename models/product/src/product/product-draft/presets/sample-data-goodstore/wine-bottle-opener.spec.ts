@@ -13,3 +13,4 @@ describe(`with wineBottleOpener preset`, () => {
     expect(wineBottleOpenerPresetGraphql).toMatchInlineSnapshot(``);
   });
 });
+// TODO: add product variant tests and update the Image import
