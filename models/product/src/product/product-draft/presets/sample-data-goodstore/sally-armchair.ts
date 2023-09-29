@@ -1,0 +1,89 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const sallyArmchairProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .armchairs()
+  .build<TCategoryDraft>();
+
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .furniture()
+  .build<TCategoryDraft>();
+
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .livingRoomFurniture()
+  .build<TCategoryDraft>();
+
+const sallyArmchair = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('sally-armchair')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Sally Armchair')
+        ['en-GB']('Sally Armchair')
+        ['de-DE']('Sessel >Sally<')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.'
+        )
+        ['en-US'](
+          'A tufted armchair with wooden legs is an elegant and comfortable piece of furniture. The chair features a deep seat and a high backrest, which are both padded and upholstered with soft and plush material. The tufted design creates a sophisticated and timeless look, while the wooden legs adding a touch of softness and warmth. The legs are thin and tapered, giving the chair a sleek and modern appearance. The armrests are curved and plush, providing both comfort and support for the arms. Overall, a tufted armchair with brass legs is a stylish and comfortable addition to any living space or lounge area.'
+        )
+        ['de-DE'](
+          'Dieser getuftete Sessel mit Holzbeinen ist ein elegantes und bequemes Sitzmöbel. Der Lounge-Sessel verfügt über eine tiefe gepolsterte Sitzfläche mit hoher Rückenlehne, die beide mit weichem Plüschmaterial bezogen sind. Das getuftete Design sorgt für einen raffinierten und dennoch zeitlosen Look, der von der Wärme der abgerundet wird. Die Beine des Lounge-Möbels sind schmal und verjüngt, was dem Stuhl ein leichtes und modernes Aussehen verleiht. Die Armlehnen sind gebogen und weich und bieten sowohl Komfort als auch Halt für die Arme. Ein getufteter Sessel mit Holzbeinen ist eine stilvolle und bequeme Ergänzung für jeden Wohn- oder Lounge-Bereich.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('sally-armchair')
+        ['en-GB']('sally-armchair')
+        ['de-DE']('sally-sessel')
+    )
+    .productType(
+      KeyReference.presets.productType().key(sallyArmchairProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.sallyArmchair01()
+    )
+    .categories([
+      KeyReference.presets.category().key(armchairsDraft.key!),
+      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+    ]);
+
+export default sallyArmchair;

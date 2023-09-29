@@ -1,0 +1,203 @@
+import type { TProductVariantDraft } from '../../../types';
+import rusticOvenCasserole01 from './rustic-oven-casserole-01';
+
+describe(`with rusticOvenCasserole01 preset`, () => {
+  it(`should return a rusticOvenCasserole01 preset`, () => {
+    const rusticOvenCasserole01Preset =
+      rusticOvenCasserole01().build<TProductVariantDraft>();
+    expect(rusticOvenCasserole01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Ohne Deckel",
+              "en-GB": "- Does not include lid",
+              "en-US": "- Does not include lid",
+            },
+          },
+          {
+            "name": "colorlabel",
+            "value": {
+              "de-DE": "Terrakotta",
+              "en-GB": "Terracotta",
+              "en-US": "Terracotta",
+            },
+          },
+          {
+            "name": "color",
+            "value": {
+              "de-DE": "#E3793E",
+              "en-GB": "#E3793E",
+              "en-US": "#E3793E",
+            },
+          },
+          {
+            "name": "color-filter",
+            "value": {
+              "key": "#FFA500",
+              "label": {
+                "de-DE": "Orange",
+                "en-GB": "Orange",
+                "en-US": "Orange",
+              },
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 3710,
+              "w": 4746,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Rustic%20Oven%20Casserol-VzPB_cq7.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 2599,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 2599,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 2599,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "RCC-09",
+      }
+    `);
+  });
+
+  it(`should return a rusticOvenCasserole01 preset when built for graphql`, () => {
+    const rusticOvenCasserole01PresetGraphql =
+      rusticOvenCasserole01().buildGraphql<TProductVariantDraft>();
+    expect(rusticOvenCasserole01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Does not include lid","en-US":"- Does not include lid","de-DE":"- Ohne Deckel"}",
+          },
+          {
+            "name": "colorlabel",
+            "value": "{"en-GB":"Terracotta","de-DE":"Terrakotta","en-US":"Terracotta"}",
+          },
+          {
+            "name": "color",
+            "value": "{"en-GB":"#E3793E","de-DE":"#E3793E","en-US":"#E3793E"}",
+          },
+          {
+            "name": "color-filter",
+            "value": "{"key":"#FFA500","label":{"de-DE":"Orange","en-GB":"Orange","en-US":"Orange"}}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 3710,
+              "width": 4746,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Rustic%20Oven%20Casserol-VzPB_cq7.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 2599,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 2599,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 2599,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "RCC-09",
+      }
+    `);
+  });
+});

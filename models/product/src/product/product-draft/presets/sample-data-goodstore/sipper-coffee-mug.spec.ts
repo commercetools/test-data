@@ -1,0 +1,350 @@
+import type { TProductDraft } from '../../../types';
+import sipperCoffeeMug from './sipper-coffee-mug';
+
+describe(`with sipperCoffeeMug preset`, () => {
+  it(`should return a sipperCoffeeMug preset`, () => {
+    const sipperCoffeeMugPreset = sipperCoffeeMug().build<TProductDraft>();
+    expect(sipperCoffeeMugPreset).toMatchInlineSnapshot(`
+      {
+        "categories": [
+          {
+            "key": "glassware",
+            "typeId": "category",
+          },
+          {
+            "key": "bar-and-glassware",
+            "typeId": "category",
+          },
+          {
+            "key": "kitchen",
+            "typeId": "category",
+          },
+        ],
+        "categoryOrderHints": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Die Sipper-Tasse besteht aus Keramik und besticht durch ihr schlichtes Design mit seitlichem Henkel, der ein bequemes Halten und Trinken ermöglicht.  Das grundlegende Design ist minimalistisch und funktional. Der Körper des Bechers ist glatt abgerundet und hat eine breite Trinköffnung, die das Eingießen und Trinken von Heißgetränken erleichtert.  Der Sipper-Kaffeebecher ist leicht zu reinigen und zu pflegen. Er kann von Hand oder in der Spülmaschine gewaschen werden und sollte gründlich getrocknet werden, um Wasserflecken oder Rückstände zu vermeiden.  Die Sipper-Kaffeetasse ein praktisches und funktionelles Trinkgefäß, das sich ideal für den Tee- oder Kaffeegenuss zu Hause oder auf der Arbeit eignet. Ihr schlichtes Design und die benutzerfreundliche Handhabung machen sie zu einer beliebten Wahl für Kaffeeliebhaber aller Art.",
+          "en": undefined,
+          "en-GB": "The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.",
+          "en-US": "The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.",
+          "fr": undefined,
+        },
+        "key": "sipper-coffee-mug",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+            {
+              "name": "productspec",
+              "value": {
+                "de-DE": "- Enthält 1 Tasse",
+                "en-GB": "- Includes 1 mug",
+                "en-US": "- Includes 1 mug",
+              },
+            },
+            {
+              "name": "color",
+              "value": {
+                "de-DE": "#FFF",
+                "en-GB": "#FFF",
+                "en-US": "#FFF",
+              },
+            },
+            {
+              "name": "colorlabel",
+              "value": {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            },
+            {
+              "name": "color-filter",
+              "value": {
+                "key": "#FFF",
+                "label": {
+                  "de-DE": "Weiss",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              },
+            },
+          ],
+          "images": [
+            {
+              "dimensions": {
+                "h": 3000,
+                "w": 4500,
+              },
+              "label": undefined,
+              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Sipper%20Coffee%20Mug-nig73QDs.jpeg",
+            },
+          ],
+          "key": undefined,
+          "prices": [
+            {
+              "channel": undefined,
+              "country": "DE",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "EUR",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "GB",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "GBP",
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "US",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centAmount": 299,
+                "currencyCode": "USD",
+              },
+            },
+          ],
+          "sku": "SCM-02",
+        },
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": {
+          "de": undefined,
+          "de-DE": "Sipper-Kaffeetasse",
+          "en": undefined,
+          "en-GB": "Sipper Coffee Mug",
+          "en-US": "Sipper Coffee Mug",
+          "fr": undefined,
+        },
+        "priceMode": undefined,
+        "productType": {
+          "key": "furniture-and-decor",
+          "typeId": "product-type",
+        },
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": {
+          "de": undefined,
+          "de-DE": "sipper-kaffeetasse",
+          "en": undefined,
+          "en-GB": "sipper-coffee-mug",
+          "en-US": "sipper-coffee-mug",
+          "fr": undefined,
+        },
+        "state": undefined,
+        "taxCategory": {
+          "key": "standard-tax",
+          "typeId": "tax-category",
+        },
+        "variants": undefined,
+      }
+    `);
+  });
+
+  it(`should return a sipperCoffeeMug preset when built for graphql`, () => {
+    const sipperCoffeeMugPresetGraphql =
+      sipperCoffeeMug().buildGraphql<TProductDraft>();
+    expect(sipperCoffeeMugPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "categories": [
+          {
+            "__typename": "Reference",
+            "key": "glassware",
+            "typeId": "category",
+          },
+          {
+            "__typename": "Reference",
+            "key": "bar-and-glassware",
+            "typeId": "category",
+          },
+          {
+            "__typename": "Reference",
+            "key": "kitchen",
+            "typeId": "category",
+          },
+        ],
+        "categoryOrderHints": undefined,
+        "description": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Die Sipper-Tasse besteht aus Keramik und besticht durch ihr schlichtes Design mit seitlichem Henkel, der ein bequemes Halten und Trinken ermöglicht.  Das grundlegende Design ist minimalistisch und funktional. Der Körper des Bechers ist glatt abgerundet und hat eine breite Trinköffnung, die das Eingießen und Trinken von Heißgetränken erleichtert.  Der Sipper-Kaffeebecher ist leicht zu reinigen und zu pflegen. Er kann von Hand oder in der Spülmaschine gewaschen werden und sollte gründlich getrocknet werden, um Wasserflecken oder Rückstände zu vermeiden.  Die Sipper-Kaffeetasse ein praktisches und funktionelles Trinkgefäß, das sich ideal für den Tee- oder Kaffeegenuss zu Hause oder auf der Arbeit eignet. Ihr schlichtes Design und die benutzerfreundliche Handhabung machen sie zu einer beliebten Wahl für Kaffeeliebhaber aller Art.",
+          },
+        ],
+        "key": "sipper-coffee-mug",
+        "masterVariant": {
+          "assets": undefined,
+          "attributes": [
+            {
+              "name": "productspec",
+              "value": "{"en-GB":"- Includes 1 mug","en-US":"- Includes 1 mug","de-DE":"- Enthält 1 Tasse"}",
+            },
+            {
+              "name": "color",
+              "value": "{"en-GB":"#FFF","de-DE":"#FFF","en-US":"#FFF"}",
+            },
+            {
+              "name": "colorlabel",
+              "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+            },
+            {
+              "name": "color-filter",
+              "value": "{"key":"#FFF","label":{"de-DE":"Weiss","en-GB":"White","en-US":"White"}}",
+            },
+          ],
+          "images": [
+            {
+              "dimensions": {
+                "height": 3000,
+                "width": 4500,
+              },
+              "label": undefined,
+              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Sipper%20Coffee%20Mug-nig73QDs.jpeg",
+            },
+          ],
+          "key": undefined,
+          "prices": [
+            {
+              "channel": undefined,
+              "country": "DE",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 299,
+                  "currencyCode": "EUR",
+                },
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "GB",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 299,
+                  "currencyCode": "GBP",
+                },
+              },
+            },
+            {
+              "channel": undefined,
+              "country": "US",
+              "custom": undefined,
+              "customerGroup": undefined,
+              "discounted": undefined,
+              "key": undefined,
+              "tiers": undefined,
+              "validFrom": undefined,
+              "validUntil": undefined,
+              "value": {
+                "centPrecision": {
+                  "centAmount": 299,
+                  "currencyCode": "USD",
+                },
+              },
+            },
+          ],
+          "sku": "SCM-02",
+        },
+        "metaDescription": undefined,
+        "metaKeywords": undefined,
+        "metaTitle": undefined,
+        "name": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Sipper Coffee Mug",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "Sipper Coffee Mug",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Sipper-Kaffeetasse",
+          },
+        ],
+        "priceMode": undefined,
+        "productType": {
+          "__typename": "Reference",
+          "key": "furniture-and-decor",
+          "typeId": "product-type",
+        },
+        "publish": true,
+        "searchKeywords": undefined,
+        "slug": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "sipper-coffee-mug",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "sipper-coffee-mug",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "sipper-kaffeetasse",
+          },
+        ],
+        "state": undefined,
+        "taxCategory": {
+          "__typename": "Reference",
+          "key": "standard-tax",
+          "typeId": "tax-category",
+        },
+        "variants": undefined,
+      }
+    `);
+  });
+});
