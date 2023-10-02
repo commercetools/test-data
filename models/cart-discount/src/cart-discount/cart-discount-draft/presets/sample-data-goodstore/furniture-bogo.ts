@@ -1,10 +1,8 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-// @unstub
-// TODO: Import when available
-// import {
-//   ProductTypeDraft,
-//   TProductTypeDraft,
-// } from '@commercetools-test-data/product-type';
+import {
+  ProductTypeDraft,
+  TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
@@ -14,11 +12,9 @@ import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
 import * as CartDiscountDraft from '../../index';
 
-// @unstub
-// TODO: Need product type draft to be created
-// const productTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
-//   .furniture()
-//   .build<TProductTypeDraft>();
+const productTypeDraft = ProductTypeDraft.presets.sampleDataGoodStore
+  .furnitureAndDecor()
+  .build<TProductTypeDraft>();
 
 const furnitureBogo = (): TCartDiscountDraftBuilder =>
   CartDiscountDraft.presets
@@ -27,10 +23,7 @@ const furnitureBogo = (): TCartDiscountDraftBuilder =>
     .cartPredicate('1 = 1')
     .target(
       CartDiscountMultiBuyLineItemsTargetDraft.random()
-        // @unstub
-        // TODO: insert when available
-        // .predicate(`productType.key = "${productTypeDraft.key}"`)
-        .predicate(`productType.key = "placeholder"`)
+        .predicate(`productType.key = "${productTypeDraft.key}"`)
         .triggerQuantity(2)
         .discountedQuantity(1)
         .selectionMode(selectionMode.Cheapest)

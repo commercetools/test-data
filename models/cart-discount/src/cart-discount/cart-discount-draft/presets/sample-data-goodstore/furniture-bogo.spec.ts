@@ -34,7 +34,7 @@ describe('with the preset `furnitureBogo`', () => {
         "target": {
           "discountedQuantity": 1,
           "maxOccurrence": undefined,
-          "predicate": "productType.key = "placeholder"",
+          "predicate": "productType.key = "furniture-and-decor"",
           "selectionMode": "Cheapest",
           "triggerQuantity": 2,
           "type": "multiBuyLineItems",
@@ -90,7 +90,7 @@ describe('with the preset `furnitureBogo`', () => {
           "multiBuyLineItems": {
             "discountedQuantity": 1,
             "maxOccurrence": undefined,
-            "predicate": "productType.key = "placeholder"",
+            "predicate": "productType.key = "furniture-and-decor"",
             "selectionMode": "Cheapest",
             "triggerQuantity": 2,
           },
