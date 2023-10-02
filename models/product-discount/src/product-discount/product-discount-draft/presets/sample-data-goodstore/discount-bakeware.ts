@@ -1,7 +1,15 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
 import { LocalizedString, Money } from '@commercetools-test-data/commons';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
+
+const categoryTypeDraft = CategoryDraft.presets.sampleDataGoodStore
+  .bakeware()
+  .build<TCategoryDraft>();
 
 const discountBakeware = (): TProductDiscountDraftBuilder =>
   ProductDiscountDraft.presets
@@ -11,8 +19,7 @@ const discountBakeware = (): TProductDiscountDraftBuilder =>
         Money.random().currencyCode('EUR').centAmount(500),
       ])
     )
-    // TODO: integrate product type keys
-    .predicate('categories.key contains "bakeware"')
+    .predicate(`categories.key contains "${categoryTypeDraft.key}"`)
     .name(
       LocalizedString.presets
         .empty()
