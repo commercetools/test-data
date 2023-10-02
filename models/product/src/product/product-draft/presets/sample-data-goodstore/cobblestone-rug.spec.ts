@@ -22,7 +22,7 @@ describe(`with cobblestoneRug preset`, () => {
         "categoryOrderHints": undefined,
         "description": {
           "de": undefined,
-          "de-DE": "Der Cobblestone-Teppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Es ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen, wo sie dem Raum ein mutiges und grafisches Element hinzufügen können.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.",
+          "de-DE": "Dieser Strukturteppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Er ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen. Hier kann er ein mutiger und grafischer Hingucker sein.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.",
           "en": undefined,
           "en-GB": "The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.",
           "en-US": "The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.",
@@ -117,10 +117,10 @@ describe(`with cobblestoneRug preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Kopfsteinpflaster",
+          "de-DE": "kopfsteinpflaster",
           "en": undefined,
-          "en-GB": "Cobblestone Rug",
-          "en-US": "Cobblestone Rug",
+          "en-GB": "cobblestone-rug",
+          "en-US": "cobblestone-rug",
           "fr": undefined,
         },
         "priceMode": undefined,
@@ -175,7 +175,7 @@ describe(`with cobblestoneRug preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Der Cobblestone-Teppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Es ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen, wo sie dem Raum ein mutiges und grafisches Element hinzufügen können.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.",
+            "value": "Dieser Strukturteppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Er ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen. Hier kann er ein mutiger und grafischer Hingucker sein.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.",
           },
           {
             "__typename": "LocalizedString",
@@ -273,18 +273,18 @@ describe(`with cobblestoneRug preset`, () => {
         "name": [
           {
             "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "cobblestone-rug",
+          },
+          {
+            "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "Cobblestone Rug",
+            "value": "cobblestone-rug",
           },
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Kopfsteinpflaster",
-          },
-          {
-            "__typename": "LocalizedString",
-            "locale": "en-US",
-            "value": "Cobblestone Rug",
+            "value": "kopfsteinpflaster",
           },
         ],
         "priceMode": undefined,

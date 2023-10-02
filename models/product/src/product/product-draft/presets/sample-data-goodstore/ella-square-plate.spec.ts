@@ -30,7 +30,7 @@ describe(`with ellaSquarePlate preset`, () => {
         "categoryOrderHints": undefined,
         "description": {
           "de": undefined,
-          "de-DE": "Dieser quadratische Ella-Keramikteller ist eine flache, vierseitige Schale, die sich ideal zum Servieren oder Präsentieren von Speisen eignet. Eine flache quadratische Servierplatte ist ideal zum Servieren einer Vielzahl von Speisen, von Vorspeisen und Hauptgerichten bis hin zu Desserts und Snacks. Es kann sowohl für formelle als auch für ungezwungene Anlässe verwendet werden, und seine Einfachheit und Vielseitigkeit machen es zu einer beliebten Wahl für viele verschiedene Arten von Küchen.  Insgesamt ist ein quadratischer Keramikteller eine funktionale und stilvolle Wahl zum Servieren von Mahlzeiten und kann jedem Speiseerlebnis einen Hauch von Eleganz verleihen.",
+          "de-DE": "Dieser quadratische Teller "Ella" ist ideal zum Servieren oder Präsentieren von Speisen, von Vorspeisen und Hauptgerichten bis hin zu Desserts und Snacks. Er kann sowohl für formelle als auch für ungezwungene Anlässe verwendet werden, und seine Einfachheit und Vielseitigkeit machen ihn zu einer beliebten Wahl für viele verschiedene Arten von Küchen.  Insgesamt ist ein quadratischer Keramikteller eine funktionale und stilvolle Wahl zum Servieren von Mahlzeiten und kann jedem Speiseerlebnis einen Hauch von Eleganz verleihen.",
           "en": undefined,
           "en-GB": "This Ella square ceramic plate is a flat, four-sided dish ideal for serving or displaying food. A flat square serving plate is ideal for serving a variety of foods, from appetizers and main courses to desserts and snacks. It can be used for both formal and casual occasions, and its simplicity and versatility make it a popular choice for many different types of cuisines.  Overall, a square ceramic plate is a functional and stylish choice for serving meals and can add a touch of elegance to any dining experience.",
           "en-US": "This Ella square ceramic plate is a flat, four-sided dish ideal for serving or displaying food. A flat square serving plate is ideal for serving a variety of foods, from appetizers and main courses to desserts and snacks. It can be used for both formal and casual occasions, and its simplicity and versatility make it a popular choice for many different types of cuisines.  Overall, a square ceramic plate is a functional and stylish choice for serving meals and can add a touch of elegance to any dining experience.",
@@ -149,7 +149,7 @@ describe(`with ellaSquarePlate preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Ella Quadratische Platte",
+          "de-DE": "Quadratischer Teller "Ella"",
           "en": undefined,
           "en-GB": "Ella Square Plate",
           "en-US": "Ella Square Plate",
