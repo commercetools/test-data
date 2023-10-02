@@ -7,7 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const classicChampagneGlasses01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
-    .sku('ccg-01')
+    .sku('CCG-01')
     .prices([
       PriceDraft.presets
         .empty()
