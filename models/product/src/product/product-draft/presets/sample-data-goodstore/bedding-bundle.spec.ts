@@ -37,7 +37,7 @@ describe(`with beddingBundle preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Dreamscape Comfort-Kollektion",
+          "de-DE": "Komfort-Kollektion "Dreamscape"",
           "en": undefined,
           "en-GB": "Dreamscape Comfort Collection",
           "en-US": "Dreamscape Comfort Collection",
@@ -118,7 +118,7 @@ describe(`with beddingBundle preset`, () => {
           {
             "__typename": "LocalizedString",
             "locale": "de-DE",
-            "value": "Dreamscape Comfort-Kollektion",
+            "value": "Komfort-Kollektion "Dreamscape"",
           },
         ],
         "priceMode": undefined,

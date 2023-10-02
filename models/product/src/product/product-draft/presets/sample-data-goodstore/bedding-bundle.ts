@@ -44,7 +44,7 @@ const beddingBundle = (): TProductDraftBuilder =>
         .empty()
         ['en-US']('Dreamscape Comfort Collection')
         ['en-GB']('Dreamscape Comfort Collection')
-        ['de-DE']('Dreamscape Comfort-Kollektion')
+        ['de-DE']('Komfort-Kollektion "Dreamscape"')
     )
     .slug(
       LocalizedString.presets

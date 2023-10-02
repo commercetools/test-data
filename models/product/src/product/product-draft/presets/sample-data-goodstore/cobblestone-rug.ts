@@ -46,15 +46,15 @@ const cobblestoneRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Cobblestone Rug')
-        ['de-DE']('Kopfsteinpflaster')
-        ['en-US']('Cobblestone Rug')
+        ['en-US']('cobblestone-rug')
+        ['en-GB']('cobblestone-rug')
+        ['de-DE']('kopfsteinpflaster')
     )
     .description(
       LocalizedString.presets
         .empty()
         ['de-DE'](
-          'Der Cobblestone-Teppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Es ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen, wo sie dem Raum ein mutiges und grafisches Element hinzufügen können.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.'
+          'Dieser Strukturteppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Er ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen. Hier kann er ein mutiger und grafischer Hingucker sein.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.'
         )
         ['en-GB'](
           'The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.'

@@ -153,7 +153,7 @@ describe(`with edgarArmchair preset`, () => {
         "metaTitle": undefined,
         "name": {
           "de": undefined,
-          "de-DE": "Edgar Sessel",
+          "de-DE": "Sessel "Edgar"",
           "en": undefined,
           "en-GB": "Edgar Armchair",
           "en-US": "Edgar Armchair",
