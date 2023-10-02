@@ -79,7 +79,6 @@ import pinkAbstractPainting from './pink-abstract-painting';
 import purpleLandscapePainting from './purple-landscape-painting';
 import purpleMinimalistAbstractPainting from './purple-minimalist-abstract-painting';
 
-
 const presets = {
   abigailLoungeChair,
   amaliaRug,
