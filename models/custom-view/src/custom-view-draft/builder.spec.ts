@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { CustomViewDraft } from '../types';
 import * as CustomViewDraftModel from './index';
 
-describe('builder', () => {
+describe('CustomViewDraft model builder', () => {
   it(
     ...createBuilderSpec<CustomViewDraft, CustomViewDraft>(
       'default',

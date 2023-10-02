@@ -4,7 +4,7 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCustomView } from './types';
 import * as CustomViewModel from './index';
 
-describe('builder', () => {
+describe('CustomView model builder', () => {
   it(
     ...createBuilderSpec<TCustomView, TCustomView>(
       'default',
