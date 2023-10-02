@@ -1,0 +1,195 @@
+import type { TProductVariantDraft } from '../../../types';
+import roundServingTray01 from './round-serving-tray-01';
+
+describe(`with roundServingTray01 preset`, () => {
+  it(`should return a roundServingTray01 preset`, () => {
+    const roundServingTray01Preset =
+      roundServingTray01().build<TProductVariantDraft>();
+    expect(roundServingTray01Preset).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Handwäsche nur",
+              "en-GB": "- Hand wash only",
+              "en-US": "- Hand wash only",
+            },
+          },
+          {
+            "name": "color-filter",
+            "value": {
+              "key": "#964B00",
+              "label": {
+                "de-DE": "Dunkelbraun",
+                "en-GB": "Dark Brown",
+                "en-US": "Dark Brown",
+              },
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 3537,
+              "w": 3537,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_574785851-6ffVkxQx.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 1719,
+              "w": 3283,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_573210049-93d41DN5.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 499,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 499,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 499,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "RST-01",
+      }
+    `);
+  });
+
+  it(`should return a roundServingTray01 preset when built for graphql`, () => {
+    const roundServingTray01PresetGraphql =
+      roundServingTray01().buildGraphql<TProductVariantDraft>();
+    expect(roundServingTray01PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Hand wash only","en-US":"- Hand wash only","de-DE":"- Handwäsche nur"}",
+          },
+          {
+            "name": "color-filter",
+            "value": "{"key":"#964B00","label":{"de-DE":"Dunkelbraun","en-GB":"Dark Brown","en-US":"Dark Brown"}}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 3537,
+              "width": 3537,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_574785851-6ffVkxQx.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 1719,
+              "width": 3283,
+            },
+            "label": undefined,
+            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_573210049-93d41DN5.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 499,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 499,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": undefined,
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 499,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "RST-01",
+      }
+    `);
+  });
+});

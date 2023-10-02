@@ -71,6 +71,26 @@ import luxePillowCover01 from './luxe-pillow-cover-01';
 import marquisTray01 from './marquis-tray-01';
 import mayaPillowCover01 from './maya-pillow-cover-01';
 import mayaPillowCover02 from './maya-pillow-cover-02';
+import rattanLoungeChair01 from './rattan-lounge-chair-01';
+import ravenBowl01 from './raven-bowl-01';
+import rectangleServingTray01 from './rectangle-serving-tray-01';
+import redModernPainting01 from './red-modern-painting-01';
+import roundServingTray01 from './round-serving-tray-01';
+import rumiChair01 from './rumi-chair-01';
+import rusticBowl01 from './rustic-bowl-01';
+import rusticCountryDresser01 from './rustic-country-dresser-01';
+import rusticCountryQueenBed01 from './rustic-country-queen-bed-01';
+import rusticOvenCasserole01 from './rustic-oven-casserole-01';
+import ryeWhiskeyGlass01 from './rye-whiskey-glass-01';
+import sallyArmchair01 from './sally-armchair-01';
+import sandTeaCup01 from './sand-tea-cup-01';
+import serenityQueenBed01 from './serenity-queen-bed-01';
+import silkyPillowCover01 from './silky-pillow-cover-01';
+import sipperCoffeeMug01 from './sipper-coffee-mug-01';
+import slateArmchair01 from './slate-armchair-01';
+import smallWoodenBowl01 from './small-wooden-bowl-01';
+import sparkleChampagneGlass01 from './sparkle-champagne-glass-01';
+import squareBambooCoaster01 from './square-bamboo-coaster-01';
 
 const presets = {
   abigailLoungeChair01,
@@ -146,6 +166,26 @@ const presets = {
   marquisTray01,
   mayaPillowCover01,
   mayaPillowCover02,
+  rattanLoungeChair01,
+  ravenBowl01,
+  rectangleServingTray01,
+  redModernPainting01,
+  roundServingTray01,
+  rumiChair01,
+  rusticBowl01,
+  rusticCountryDresser01,
+  rusticCountryQueenBed01,
+  rusticOvenCasserole01,
+  ryeWhiskeyGlass01,
+  sallyArmchair01,
+  sandTeaCup01,
+  serenityQueenBed01,
+  silkyPillowCover01,
+  sipperCoffeeMug01,
+  slateArmchair01,
+  smallWoodenBowl01,
+  sparkleChampagneGlass01,
+  squareBambooCoaster01,
 };
 
 export default presets;

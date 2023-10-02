@@ -38,6 +38,26 @@ import leatherWeaveChair from './leather-weave-chair';
 import luxePillowCover from './luxe-pillow-cover';
 import marquisTray from './marquis-tray';
 import mayaPillowCover from './maya-pillow-cover';
+import rattanLoungeChair from './rattan-lounge-chair';
+import ravenBowl from './raven-bowl';
+import rectangleServingTray from './rectangle-serving-tray';
+import redModernPainting from './red-modern-painting';
+import roundServingTray from './round-serving-tray';
+import rumiChair from './rumi-chair';
+import rusticBowl from './rustic-bowl';
+import rusticCountryDresser from './rustic-country-dresser';
+import rusticCountryQueenBed from './rustic-country-queen-bed';
+import rusticOvenCasserole from './rustic-oven-casserole';
+import ryeWhiskeyGlass from './rye-whiskey-glass';
+import sallyArmchair from './sally-armchair';
+import sandTeaCup from './sand-tea-cup';
+import serenityQueenBed from './serenity-queen-bed';
+import silkyPillowCover from './silky-pillow-cover';
+import sipperCoffeeMug from './sipper-coffee-mug';
+import slateArmchair from './slate-armchair';
+import smallWoodenBowl from './small-wooden-bowl';
+import sparkleChampagneGlass from './sparkle-champagne-glass';
+import squareBambooCoaster from './square-bamboo-coaster';
 
 const presets = {
   abigailLoungeChair,
@@ -80,6 +100,26 @@ const presets = {
   luxePillowCover,
   marquisTray,
   mayaPillowCover,
+  rattanLoungeChair,
+  ravenBowl,
+  rectangleServingTray,
+  redModernPainting,
+  roundServingTray,
+  rumiChair,
+  rusticBowl,
+  rusticCountryDresser,
+  rusticCountryQueenBed,
+  rusticOvenCasserole,
+  ryeWhiskeyGlass,
+  sallyArmchair,
+  sandTeaCup,
+  serenityQueenBed,
+  silkyPillowCover,
+  sipperCoffeeMug,
+  slateArmchair,
+  smallWoodenBowl,
+  sparkleChampagneGlass,
+  squareBambooCoaster,
 };
 
 export default presets;

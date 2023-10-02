@@ -1,0 +1,91 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const sipperCoffeeMugProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .glassware()
+  .build<TCategoryDraft>();
+
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .barAndGlassware()
+  .build<TCategoryDraft>();
+
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
+  .kitchen()
+  .build<TCategoryDraft>();
+
+const sipperCoffeeMug = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('sipper-coffee-mug')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Sipper Coffee Mug')
+        ['en-GB']('Sipper Coffee Mug')
+        ['de-DE']('Sipper-Kaffeetasse')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-GB'](
+          'The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.'
+        )
+        ['en-US'](
+          'The Sipper Coffee Mug is made from ceramic. The design of the mug is intended to make it easy to hold and drink from, with a handle on one side for comfortable grip.  The mug is plain, but its basic design is generally simple and functional. The body of the mug is often smooth-sided, with a wide opening that makes it easy to pour and drink coffee.  The Sipper Coffee Mug is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, the Sipper Coffee Mug is a practical and functional type of drinking vessel that is ideal for enjoying a cup of coffee at home or at work. Its basic design and ease of use make it a popular choice for coffee lovers of all types.'
+        )
+        ['de-DE'](
+          'Die Sipper-Tasse besteht aus Keramik und besticht durch ihr schlichtes Design mit seitlichem Henkel, der ein bequemes Halten und Trinken ermöglicht.  Das grundlegende Design ist minimalistisch und funktional. Der Körper des Bechers ist glatt abgerundet und hat eine breite Trinköffnung, die das Eingießen und Trinken von Heißgetränken erleichtert.  Der Sipper-Kaffeebecher ist leicht zu reinigen und zu pflegen. Er kann von Hand oder in der Spülmaschine gewaschen werden und sollte gründlich getrocknet werden, um Wasserflecken oder Rückstände zu vermeiden.  Die Sipper-Kaffeetasse ein praktisches und funktionelles Trinkgefäß, das sich ideal für den Tee- oder Kaffeegenuss zu Hause oder auf der Arbeit eignet. Ihr schlichtes Design und die benutzerfreundliche Handhabung machen sie zu einer beliebten Wahl für Kaffeeliebhaber aller Art.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('sipper-coffee-mug')
+        ['en-GB']('sipper-coffee-mug')
+        ['de-DE']('sipper-kaffeetasse')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(sipperCoffeeMugProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.sipperCoffeeMug01()
+    )
+    .categories([
+      KeyReference.presets.category().key(glasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReference.presets.category().key(kitchenDraft.key!),
+    ]);
+
+export default sipperCoffeeMug;
