@@ -494,12 +494,18 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
+      '@commercetools-test-data/category':
+        specifier: 6.0.0
+        version: link:../category
       '@commercetools-test-data/commons':
         specifier: 6.0.0
         version: link:../commons
       '@commercetools-test-data/core':
         specifier: 6.0.0
         version: link:../../core
+      '@commercetools-test-data/product-type':
+        specifier: 6.0.0
+        version: link:../product-type
       '@commercetools-test-data/utils':
         specifier: 6.0.0
         version: link:../../utils
