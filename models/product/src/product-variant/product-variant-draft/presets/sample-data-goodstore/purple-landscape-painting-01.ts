@@ -1,0 +1,44 @@
+import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { AttributeDraft } from '../../../../attribute';
+import { ImageDraft } from '../../../../image';
+import type { TProductVariantDraftBuilder } from '../../../types';
+import * as ProductVariantDraft from '../../index';
+
+const purpleLandscapePainting01 = (): TProductVariantDraftBuilder =>
+  ProductVariantDraft.presets
+    .empty()
+    .sku('BLP-01')
+    .prices([
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('EUR').centAmount(8999))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('GBP').centAmount(8999))
+        .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(Money.random().currencyCode('USD').centAmount(8999))
+        .country('US'),
+    ])
+    .images([
+      ImageDraft.presets
+        .empty()
+        .url(
+          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_460846480-mbPRv_s2.jpeg'
+        )
+        .dimensions({ w: 3755, h: 3902 }),
+    ])
+    .attributes([
+      AttributeDraft.random().name('productspec').value({
+        'en-GB':
+          '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
+        'de-DE':
+          '- Ölgemälde auf Leinwand\n- Rahmen nicht im Lieferumfang enthalten\n- Größe: 4 Fuß x 3 Fuß',
+        'en-US':
+          '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
+      }),
+    ]);
+
+export default purpleLandscapePainting01;
