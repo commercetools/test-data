@@ -1,0 +1,91 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const stoutBeerGlassProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const glasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .glassware()
+  .build<TCategoryDraft>();
+
+const barAndGlasswareDraft = CategoryDraft.presets.sampleDataGoodStore
+  .barAndGlassware()
+  .build<TCategoryDraft>();
+
+const kitchenDraft = CategoryDraft.presets.sampleDataGoodStore
+  .kitchen()
+  .build<TCategoryDraft>();
+
+const stoutBeerGlass = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('stout-beer-glass')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Stout Beer Glass')
+        ['en-GB']('Stout Beer Glass')
+        ['de-DE']('Stout-Bierglas')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-US'](
+          'A stout beer glass, also known as a "pint glass," is a type of drinking glass that is designed specifically for serving and enjoying stout beers. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the stout beer glass is intended to enhance the drinking experience by allowing the full range of flavors and aromas of the beer to be appreciated. The wide opening of the glass allows the drinker to fully appreciate the color and clarity of the beer, while the heavy base helps to keep the beer from spilling or tipping over.  Overall, a stout beer glass is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine stout beers. Its simple yet elegant design makes it a popular choice for beer lovers and casual drinkers alike.'
+        )
+        ['de-DE'](
+          'Ein Stout-Bierglas, auch als "Pintglas" bekannt, ist ein Trinkglas, das speziell zum Servieren und Genießen von Starkbieren entwickelt wurde. Es hat eine kurze, breite Form mit einem dicken, schweren Boden, der für Stabilität und Gleichgewicht sorgt.  Das Design des Stout-Bierglases unterstützt das Trinkerlebnis, indem es die volle Geschmacks- und Aromenvielfalt des Bieres zur Geltung bringt. Die breite Öffnung des Glases lässt die Farbe und Klarheit des Bieres erkennen, während der schwere Boden dazu beiträgt, dass das Bier nicht verschüttet oder umkippt.  Ein Pintglas ist ein klassisches und zeitloses Trinkglas, das sich ideal eignet, um den reichen Geschmack und das Aroma feiner Stout-Biere zu genießen. Sein einfaches aber elegantes Design macht es zu einer beliebten Wahl für Bierliebhaber und Gelegenheitsgeniesser gleichermaßen.'
+        )
+        ['en-GB'](
+          'A stout beer glass, also known as a "pint glass," is a type of drinking glass that is designed specifically for serving and enjoying stout beers. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the stout beer glass is intended to enhance the drinking experience by allowing the full range of flavors and aromas of the beer to be appreciated. The wide opening of the glass allows the drinker to fully appreciate the color and clarity of the beer, while the heavy base helps to keep the beer from spilling or tipping over.  Overall, a stout beer glass is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine stout beers. Its simple yet elegant design makes it a popular choice for beer lovers and casual drinkers alike.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('stout-beer-glass')
+        ['en-GB']('stout-beer-glass')
+        ['de-DE']('starkes-bierglas')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(stoutBeerGlassProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.stoutBeerGlass01()
+    )
+    .categories([
+      KeyReference.presets.category().key(glasswareDraft.key!),
+      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReference.presets.category().key(kitchenDraft.key!),
+    ]);
+
+export default stoutBeerGlass;

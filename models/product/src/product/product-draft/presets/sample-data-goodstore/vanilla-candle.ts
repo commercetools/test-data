@@ -1,0 +1,89 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const vanillaCandleProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const homeAccentsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .homeAccents()
+  .build<TCategoryDraft>();
+
+const roomDecorDraft = CategoryDraft.presets.sampleDataGoodStore
+  .roomDecor()
+  .build<TCategoryDraft>();
+
+const homeDecorDraft = CategoryDraft.presets.sampleDataGoodStore
+  .homeDecor()
+  .build<TCategoryDraft>();
+
+const vanillaCandle = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('vanilla-candle')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Vanilla Candle')
+        ['en-GB']('Vanilla Candle')
+        ['de-DE']('Kerze mit Vanilleduft')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-US'](
+          'A vanilla candle is a popular and timeless choice for adding a warm and inviting atmosphere to any home. The candle is made from high-quality wax, which is infused with the rich and creamy fragrance of vanilla.  The candle is presented in a glass container, which helps to protect the flame and also adds a decorative touch to the candle.   When lit, the candle will release a soothing and comforting aroma, filling the room with the sweet and comforting scent of vanilla. The fragrance is often associated with warmth, coziness, and relaxation, making it perfect for use during a cozy night in or for creating a calming atmosphere in a bedroom or living room.  A vanilla candle is a classic and comforting choice for adding a touch of warmth and coziness to any home. Its sweet and soothing aroma can help to create a relaxed and welcoming atmosphere, making it a popular choice for use in bedrooms, living rooms, and bathrooms.'
+        )
+        ['de-DE'](
+          'Eine Kerze mit Vanilleduft ist eine beliebte und zeitlose Wahl, um jedem Zuhause eine warme und einladende Atmosphäre zu verleihen. Die Kerze besteht aus hochwertigem Wachs, das mit dem reichhaltigem und cremigen Vanilleduft versehen ist.  Die Kerze wird in einem Glasbehälter präsentiert, der zum Schutz der Flamme beiträgt und der Kerze auch eine dekorative Note verleiht. Angezündet verströmt sie ein beruhigendes Aroma und erfüllt den Raum mit dem süßen Duft von Vanille. Der Duft wird oft mit Wärme, Gemütlichkeit und Entspannung in Verbindung gebracht und eignet sich daher perfekt für die Einstimmung auf einen gemütlichen Abend oder um eine beruhigende Atmosphäre in einem Schlaf- oder Wohnbereich zu schaffen.  Diese Kerze ist eine klassische und beruhigende Wahl, um jedem Zuhause etwas mehr Wärme und Gemütlichkeit zu verleihen. Ihr süßes und beruhigendes Aroma trägt dazu bei, eine entspannte und einladende Atmosphäre zu schaffen, was sie zu einer beliebten Wahl für den Einsatz im Schlaf- oder Wohnbereich und in Badezimmern macht.'
+        )
+        ['en-GB'](
+          'A vanilla candle is a popular and timeless choice for adding a warm and inviting atmosphere to any home. The candle is made from high-quality wax, which is infused with the rich and creamy fragrance of vanilla.  The candle is presented in a glass container, which helps to protect the flame and also adds a decorative touch to the candle.   When lit, the candle will release a soothing and comforting aroma, filling the room with the sweet and comforting scent of vanilla. The fragrance is often associated with warmth, coziness, and relaxation, making it perfect for use during a cozy night in or for creating a calming atmosphere in a bedroom or living room.  A vanilla candle is a classic and comforting choice for adding a touch of warmth and coziness to any home. Its sweet and soothing aroma can help to create a relaxed and welcoming atmosphere, making it a popular choice for use in bedrooms, living rooms, and bathrooms.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('vanilla-candle')
+        ['en-GB']('vanilla-candle')
+        ['de-DE']('vanille-kerze')
+    )
+    .productType(
+      KeyReference.presets.productType().key(vanillaCandleProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.vanillaCandle01()
+    )
+    .categories([
+      KeyReference.presets.category().key(homeAccentsDraft.key!),
+      KeyReference.presets.category().key(roomDecorDraft.key!),
+      KeyReference.presets.category().key(homeDecorDraft.key!),
+    ]);
+
+export default vanillaCandle;

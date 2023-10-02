@@ -1,0 +1,101 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
+import * as ProductDraft from '../../../product-draft';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxCategory = TaxCategoryDraft.presets.sampleDataGoodStore
+  .standardTaxCategory()
+  .build<TTaxCategoryDraft>();
+
+const traditionalArmchairProductTypeDraft =
+  ProductTypeDraft.presets.sampleDataGoodStore
+    .furnitureAndDecor()
+    .build<TProductTypeDraft>();
+
+const livingRoomFurnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .livingRoomFurniture()
+  .build<TCategoryDraft>();
+
+const furnitureDraft = CategoryDraft.presets.sampleDataGoodStore
+  .furniture()
+  .build<TCategoryDraft>();
+
+const theTraditionalistDraft = CategoryDraft.presets.sampleDataGoodStore
+  .theTraditionalist()
+  .build<TCategoryDraft>();
+
+const armchairsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .armchairs()
+  .build<TCategoryDraft>();
+
+const collectionsDraft = CategoryDraft.presets.sampleDataGoodStore
+  .collections()
+  .build<TCategoryDraft>();
+
+const traditionalArmchair = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('traditional-armchair')
+    .name(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('Traditional Armchair')
+        ['en-GB']('Traditional Armchair')
+        ['de-DE']('Traditioneller Sessel')
+    )
+    .description(
+      LocalizedString.presets
+        .empty()
+        ['en-US'](
+          'A traditional armchair with a geometric pattern has a classic design with a touch of modern flair. The chair has a wooden frame and legs. The chair has a high back, providing a comfortable place to sit and relax. The cushioning is plush, offering a soft feel to the seat and backrest. The geometric pattern adds a visual interest and texture to the overall look of the chair, providing a subtle yet eye-catching element to the decor of the room.  Overall, a traditional armchair with a geometric pattern could be a great addition to a living room, study, or bedroom, offering both comfort and style to the space.'
+        )
+        ['de-DE'](
+          'Der traditionelle Sessel mit geometrischem Muster überzeugt mit einem klassischen Design und einem Hauch von modernem Flair. Rahmen und Beine des Stuhls sind aus Holz gefertigt. Er hat eine hohe Rückenlehne, die einen bequemen Platz zum Sitzen und Entspannen bietet. Die Polsterung ist weich und bietet so Komfort im Sitz- und Rückenbereich. Das geometrische Muster verleiht dem Gesamtbild des Stuhls einen visuellen Twist. Zusammen mit seiner Textur, verleiht er dem Dekor des Raums ein subtiles und dennoch auffälliges Element.  Dieser traditionelle Sessel mit geometrischem Muster ist eine großartige Ergänzung für den Wohn-, Arbeits- oder Schlafbereich und bereichert den Raum sowohl um Komfort als auch um Stil.'
+        )
+        ['en-GB'](
+          'A traditional armchair with a geometric pattern has a classic design with a touch of modern flair. The chair has a wooden frame and legs. The chair has a high back, providing a comfortable place to sit and relax. The cushioning is plush, offering a soft feel to the seat and backrest. The geometric pattern adds a visual interest and texture to the overall look of the chair, providing a subtle yet eye-catching element to the decor of the room.  Overall, a traditional armchair with a geometric pattern could be a great addition to a living room, study, or bedroom, offering both comfort and style to the space.'
+        )
+    )
+    .slug(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('traditional-armchair')
+        ['en-GB']('traditional-armchair')
+        ['de-DE']('traditioneller-sessel')
+    )
+    .productType(
+      KeyReference.presets
+        .productType()
+        .key(traditionalArmchairProductTypeDraft.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+    )
+    .masterVariant(
+      ProductVariantDraft.presets.sampleDataGoodStore.traditionalArmchair01()
+    )
+    .categories([
+      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReference.presets.category().key(theTraditionalistDraft.key!),
+      KeyReference.presets.category().key(armchairsDraft.key!),
+      KeyReference.presets.category().key(collectionsDraft.key!),
+    ]);
+
+export default traditionalArmchair;
