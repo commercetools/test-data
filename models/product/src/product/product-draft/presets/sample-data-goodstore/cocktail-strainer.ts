@@ -46,9 +46,9 @@ const cocktailStrainer = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
+        ['en-US']('Cocktail Strainer')
         ['en-GB']('Cocktail Strainer')
         ['de-DE']('Cocktailsieb')
-        ['en-US']('Cocktail Strainer')
     )
     .description(
       LocalizedString.presets
@@ -56,11 +56,11 @@ const cocktailStrainer = (): TProductDraftBuilder =>
         ['en-GB'](
           'A strainer for cocktail shakers is a bar tool used to strain ice and other solid ingredients from mixed drinks, while pouring the liquid portion of the cocktail into a serving glass. It is made of metal, with a flat, perforated disc that fits over the mouth of the shaker. The strainer is held in place by placing a finger over the small, handle-like protrusion on one side of the disc, while pouring the liquid out through the larger opening on the other side. The perforated disc helps to filter out any small bits of ice or fruit that might be left in the mixture, resulting in a smooth and refined cocktail. The strainer also has a spring around the edge of the disc that helps to hold it securely in place over the shaker, preventing any spills or drips.'
         )
-        ['de-DE'](
-          'Ein Sieb für Cocktailshaker ist ein Barwerkzeug, das verwendet wird, um Eis und andere feste Zutaten aus Mixgetränken abzuseihen, während der flüssige Teil des Cocktails in ein Servierglas gegossen wird. Er besteht aus Metall und hat eine flache, perforierte Scheibe, die über die Öffnung des Shakers passt. Das Sieb wird an Ort und Stelle gehalten, indem man einen Finger über den kleinen, griffartigen Vorsprung auf einer Seite der Scheibe legt, während man die Flüssigkeit durch die größere Öffnung auf der anderen Seite ausgießt. Die perforierte Scheibe hilft dabei, kleine Eis- oder Fruchtstücke herauszufiltern, die in der Mischung zurückbleiben könnten, was zu einem glatten und raffinierten Cocktail führt. Das Sieb hat auch eine Feder um den Rand der Scheibe, die hilft, es sicher über dem Shaker zu halten und so ein Verschütten oder Tropfen zu verhindern.'
-        )
         ['en-US'](
           'A strainer for cocktail shakers is a bar tool used to strain ice and other solid ingredients from mixed drinks, while pouring the liquid portion of the cocktail into a serving glass. It is made of metal, with a flat, perforated disc that fits over the mouth of the shaker. The strainer is held in place by placing a finger over the small, handle-like protrusion on one side of the disc, while pouring the liquid out through the larger opening on the other side. The perforated disc helps to filter out any small bits of ice or fruit that might be left in the mixture, resulting in a smooth and refined cocktail. The strainer also has a spring around the edge of the disc that helps to hold it securely in place over the shaker, preventing any spills or drips.'
+        )
+        ['de-DE'](
+          'Dieses Sieb für Cocktailshaker ist ein Barwerkzeug, das verwendet wird, um Eis und andere feste Zutaten aus Mixgetränken zu trennen, während der flüssige Teil des Cocktails in ein Servierglas gegossen wird. Das Sieb besteht aus Metall und passt über die Öffnung eines klassischen Cocktail-Shakers. Das Sieb wird an Ort und Stelle gehalten, indem man einen Finger über den kleinen, griffartigen Vorsprung auf einer Seite des Siebes legt, während man die Flüssigkeit durch die größere Öffnung auf der anderen Seite ausgießt. Das Sieb hilft dabei, kleine Eis- oder Fruchtstücke herauszufiltern, die in der Mischung zurückbleiben könnten, was zu einem smoothen und raffinierten Cocktail führt. Das Sieb hat auch eine Feder um den Rand, die hilft, es sicher über dem Shaker zu halten und so ein Verschütten oder Tropfen zu verhindern.'
         )
     )
     .slug(

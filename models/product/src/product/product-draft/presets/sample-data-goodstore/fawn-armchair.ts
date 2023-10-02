@@ -46,9 +46,9 @@ const fawnArmchair = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-GB']('Fawn Armchair')
-        ['de-DE']('Fawn Sessel')
         ['en-US']('Fawn Armchair')
+        ['en-GB']('Fawn Armchair')
+        ['de-DE']('Sessel "Fawn"')
     )
     .description(
       LocalizedString.presets
@@ -56,11 +56,11 @@ const fawnArmchair = (): TProductDraftBuilder =>
         ['en-GB'](
           "An art deco leather chair with ebony legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with the leather upholstery providing a soft and luxurious feel. The ebony legs are long and tapered, with a smooth finish that accentuates the chair's modern style. The chair also features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair would be a striking piece of furniture that adds both style and comfort to any room."
         )
-        ['de-DE'](
-          'Ein Art-Deco-Lederstuhl mit Ebenholzbeinen hat ein schlankes, stromlinienförmiges Design, das Raffinesse und Eleganz ausstrahlt. Der Stuhl hat einen bequem gepolsterten Sitz und eine Rückenlehne, wobei die Lederpolsterung ein weiches und luxuriöses Gefühl vermittelt. Die Beine aus Ebenholz sind lang und konisch zulaufend, mit einer glatten Oberfläche, die den modernen Stil des Stuhls betont. Der Stuhl weist auch markante Art-Deco-Elemente wie eckige Formen, kräftige Linien und geometrische Muster auf. Insgesamt wäre dieser Stuhl ein markantes Möbelstück, das jedem Raum sowohl Stil als auch Komfort verleiht.'
-        )
         ['en-US'](
           "An art deco leather chair with ebony legs has a sleek, streamlined design that exudes sophistication and elegance. The chair has a comfortable padded seat and backrest, with the leather upholstery providing a soft and luxurious feel. The ebony legs are long and tapered, with a smooth finish that accentuates the chair's modern style. The chair also features distinctive art deco elements such as angular shapes, bold lines, and geometric patterns. Overall, this chair would be a striking piece of furniture that adds both style and comfort to any room."
+        )
+        ['de-DE'](
+          'Dieser Lederstuhl mit Ebenholzbeinen im Art-Deco-Stil hat ein schlankes, stromlinienförmiges Design, das Raffinesse und Eleganz ausstrahlt. Der Stuhl hat einen bequem gepolsterten Sitz und eine Rückenlehne. Die Lederpolsterung vermittelt ein weiches und luxuriöses Gefühl. Die Beine aus Ebenholz sind lang und konisch zulaufend, mit einer glatten Oberfläche, die den modernen Stil des Stuhls betont. Der Stuhl weist auch markante Art-Deco-Elemente wie eckige Formen, kräftige Linien und geometrische Muster auf. Dieser Stuhl ist ein markantes Möbelstück, das jedem Raum sowohl Stil als auch Komfort verleiht.'
         )
     )
     .slug(
