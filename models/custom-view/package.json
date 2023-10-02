@@ -1,0 +1,28 @@
+{
+  "name": "@commercetools-test-data/custom-view",
+  "version": "6.0.0",
+  "description": "Data model for internal commercetools API Custom View",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/custom-view"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-custom-view.cjs.js",
+  "module": "dist/commercetools-test-data-custom-view.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "6.0.0",
+    "@commercetools-test-data/core": "6.0.0",
+    "@commercetools-test-data/utils": "6.0.0",
+    "@commercetools/platform-sdk": "^4.11.0",
+    "@faker-js/faker": "^8.0.0"
+  }
+}
