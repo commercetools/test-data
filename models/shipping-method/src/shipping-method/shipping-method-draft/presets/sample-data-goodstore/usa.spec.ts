@@ -25,14 +25,10 @@ describe('Shipping Method with USA preset', () => {
                 "freeAbove": {
                   "centAmount": 100000,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "price": {
                   "centAmount": 5000,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": undefined,
               },
@@ -69,18 +65,12 @@ describe('Shipping Method with USA preset', () => {
             "shippingRates": [
               {
                 "freeAbove": {
-                  "__typename": "Money",
                   "centAmount": 100000,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "price": {
-                  "__typename": "Money",
                   "centAmount": 5000,
                   "currencyCode": "USD",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": undefined,
               },

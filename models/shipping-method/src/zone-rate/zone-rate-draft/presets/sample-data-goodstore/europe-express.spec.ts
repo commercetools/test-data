@@ -12,8 +12,6 @@ describe('with europeExpress preset', () => {
             "price": {
               "centAmount": 50000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
             "tiers": [],
           },
@@ -22,8 +20,6 @@ describe('with europeExpress preset', () => {
             "price": {
               "centAmount": 50000,
               "currencyCode": "GBP",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
             "tiers": [],
           },
@@ -45,22 +41,16 @@ describe('with europeExpress preset', () => {
           {
             "freeAbove": undefined,
             "price": {
-              "__typename": "Money",
               "centAmount": 50000,
               "currencyCode": "EUR",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
             "tiers": [],
           },
           {
             "freeAbove": undefined,
             "price": {
-              "__typename": "Money",
               "centAmount": 50000,
               "currencyCode": "GBP",
-              "fractionDigits": 2,
-              "type": "centPrecision",
             },
             "tiers": [],
           },

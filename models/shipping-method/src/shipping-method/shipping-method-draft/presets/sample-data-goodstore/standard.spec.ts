@@ -26,8 +26,6 @@ describe('Shipping Method with standard preset', () => {
                 "price": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
@@ -36,8 +34,6 @@ describe('Shipping Method with standard preset', () => {
                 "price": {
                   "centAmount": 10000,
                   "currencyCode": "GBP",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
@@ -54,8 +50,6 @@ describe('Shipping Method with standard preset', () => {
                 "price": {
                   "centAmount": 10000,
                   "currencyCode": "GBP",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
@@ -64,8 +58,6 @@ describe('Shipping Method with standard preset', () => {
                 "price": {
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
@@ -103,22 +95,16 @@ describe('Shipping Method with standard preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "__typename": "Money",
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": undefined,
                 "price": {
-                  "__typename": "Money",
                   "centAmount": 10000,
                   "currencyCode": "GBP",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
@@ -134,22 +120,16 @@ describe('Shipping Method with standard preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "__typename": "Money",
                   "centAmount": 10000,
                   "currencyCode": "GBP",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": undefined,
                 "price": {
-                  "__typename": "Money",
                   "centAmount": 10000,
                   "currencyCode": "EUR",
-                  "fractionDigits": 2,
-                  "type": "centPrecision",
                 },
                 "tiers": [],
               },
