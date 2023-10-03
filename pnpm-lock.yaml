@@ -3663,7 +3663,7 @@ packages:
       semver: 7.5.0
       terser: 5.17.2
       v8-compile-cache: 2.3.0
-      zod: 3.21.4
+      zod: 3.22.3
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -9773,6 +9773,6 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+  /zod@3.22.3:
+    resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
     dev: false
