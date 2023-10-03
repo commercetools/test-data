@@ -24,7 +24,7 @@ export * as AttributeLocalizedEnumTypeDraft from './attribute-localized-enum-typ
 export * as AttributeLocalizedEnumValue from './attribute-localized-enum-value';
 export * as AttributeLocalizedEnumValueDraft from './attribute-localized-enum-value/attribute-localized-enum-value-draft';
 export * as AttributeLocalizableTextType from './attribute-localizable-text-type';
-export * as AttributeLocalizableTextDraft from './attribute-localizable-text-type/attribute-localized-text-type-draft';
+export * as AttributeLocalizableTextTypeDraft from './attribute-localizable-text-type/attribute-localized-text-type-draft';
 export * as AttributeSetType from './attribute-set-type';
 export * as AttributeSetTypeDraft from './attribute-set-type/attribute-set-type-draft';
 export * as AttributeReferenceType from './attribute-reference-type';

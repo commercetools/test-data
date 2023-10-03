@@ -6,7 +6,7 @@ import {
 import { attributeReferenceTypeId } from '../../../../attribute-reference-type/constants';
 import {
   AttributeDefinitionDraft,
-  AttributeLocalizableTextType,
+  AttributeLocalizableTextTypeDraft,
   AttributeReferenceTypeDraft,
   AttributeSetTypeDraft,
 } from '../../../../index';
@@ -23,7 +23,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-description')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -44,7 +44,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-spec')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()

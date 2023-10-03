@@ -4,7 +4,7 @@ import {
   inputHints,
 } from '../../../../attribute-definition/constants';
 import {
-  AttributeLocalizableTextType,
+  AttributeLocalizableTextTypeDraft,
   AttributeSetTypeDraft,
   AttributeDefinitionDraft,
 } from '../../../../index';
@@ -23,7 +23,7 @@ const productSets = (): TProductTypeDraftBuilder =>
         .name('type')
         .type(
           AttributeSetTypeDraft.random().elementType(
-            AttributeLocalizableTextType.random()
+            AttributeLocalizableTextTypeDraft.random()
           )
         )
         .label(

@@ -120,8 +120,9 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-description",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -144,8 +145,9 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-spec",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
