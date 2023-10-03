@@ -1,5 +1,19 @@
 # @commercetools-test-data/commons
 
+## 6.1.0
+
+### Minor Changes
+
+- [#370](https://github.com/commercetools/test-data/pull/370) [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Updated the exported presets folder name to sampleDataGoodStore.
+
+### Patch Changes
+
+- [#351](https://github.com/commercetools/test-data/pull/351) [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Add customer and address presets for theGoodStore
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

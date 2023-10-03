@@ -1,5 +1,20 @@
 # @commercetools-test-data/tax-category
 
+## 6.1.0
+
+### Minor Changes
+
+- [#364](https://github.com/commercetools/test-data/pull/364) [`4b81a5e2`](https://github.com/commercetools/test-data/commit/4b81a5e2bf524f1dc1e517a792293464168d7c3b) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Updating tax category presets for the goodstore sample data
+
+- [#362](https://github.com/commercetools/test-data/pull/362) [`8977473f`](https://github.com/commercetools/test-data/commit/8977473fd913ad83641f0ff9f0fa64e92ce75191) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Updated goodstore tax presets to include the USA
+
+### Patch Changes
+
+- Updated dependencies [[`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Minor Changes

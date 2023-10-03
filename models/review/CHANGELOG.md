@@ -1,5 +1,14 @@
 # @commercetools-test-data/review
 
+## 6.1.0
+
+### Patch Changes
+
+- Updated dependencies [[`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

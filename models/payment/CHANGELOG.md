@@ -1,5 +1,19 @@
 # @commercetools-test-data/payment
 
+## 6.1.0
+
+### Minor Changes
+
+- [#353](https://github.com/commercetools/test-data/pull/353) [`e88e36f0`](https://github.com/commercetools/test-data/commit/e88e36f0127a81c43dabf37b7ba591996adb6c1e) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add Sample Data GoodStore payment draft presets.
+
+### Patch Changes
+
+- Updated dependencies [[`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/customer@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

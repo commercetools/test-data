@@ -1,5 +1,33 @@
 # @commercetools-test-data/product
 
+## 6.1.0
+
+### Minor Changes
+
+- [#377](https://github.com/commercetools/test-data/pull/377) [`552e0c07`](https://github.com/commercetools/test-data/commit/552e0c07c605b6be59e1fffcbdbaec76aaf283ff) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Include sample-data-goodstore product presets (61-80).
+
+- [#372](https://github.com/commercetools/test-data/pull/372) [`debc02bf`](https://github.com/commercetools/test-data/commit/debc02bf916b5729ba8c4e5db5ce63f88da4c008) Thanks [@jaikamat](https://github.com/jaikamat)! - include sample-data-goodstore product presets (1-20)
+
+- [#376](https://github.com/commercetools/test-data/pull/376) [`7de13750`](https://github.com/commercetools/test-data/commit/7de13750418e0dc851e902ce639f2e8d183403f0) Thanks [@jaikamat](https://github.com/jaikamat)! - include sample-data-goodstore product presets (41-60)
+
+- [#379](https://github.com/commercetools/test-data/pull/379) [`9a1f96eb`](https://github.com/commercetools/test-data/commit/9a1f96eb565573b0c3992224c6ed5514e6777b2b) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Include sample-data-goodstore product presets (101-118).
+
+- [#373](https://github.com/commercetools/test-data/pull/373) [`f1ab3911`](https://github.com/commercetools/test-data/commit/f1ab3911664e220b997fc8fa9b1a294ed461ed1f) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Include sample-data-goodstore product presets (21-40)
+
+- [#378](https://github.com/commercetools/test-data/pull/378) [`44aa6059`](https://github.com/commercetools/test-data/commit/44aa60596eb0e09f87a7e1df546b8503838c2578) Thanks [@jaikamat](https://github.com/jaikamat)! - include sample-data-goodstore product presets (81-100)
+
+### Patch Changes
+
+- [#385](https://github.com/commercetools/test-data/pull/385) [`9abfc5ca`](https://github.com/commercetools/test-data/commit/9abfc5ca63c9e7b2bf2d4a525ba385beb3d4f5ed) Thanks [@jaikamat](https://github.com/jaikamat)! - update i18n translations for goodstore product presets
+
+- Updated dependencies [[`4b81a5e2`](https://github.com/commercetools/test-data/commit/4b81a5e2bf524f1dc1e517a792293464168d7c3b), [`0e9afd36`](https://github.com/commercetools/test-data/commit/0e9afd36e7e6981248d278fc0bbd453231b9ded4), [`935cc4c5`](https://github.com/commercetools/test-data/commit/935cc4c5975984157c44a058d48e74417a2f4d33), [`d6b1a8f7`](https://github.com/commercetools/test-data/commit/d6b1a8f7a5f97b4c91e8fcda2e851e453595019e), [`8977473f`](https://github.com/commercetools/test-data/commit/8977473fd913ad83641f0ff9f0fa64e92ce75191), [`efc1594a`](https://github.com/commercetools/test-data/commit/efc1594a524302de3ac8f213d19ccb911d1a3065), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`f6328503`](https://github.com/commercetools/test-data/commit/f632850380fadd47425b8e6062dfcfa53490b3fa), [`f1ab3911`](https://github.com/commercetools/test-data/commit/f1ab3911664e220b997fc8fa9b1a294ed461ed1f), [`ccfec1d2`](https://github.com/commercetools/test-data/commit/ccfec1d213950e64c5c44180634c19e1bf77768b), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f), [`5b024176`](https://github.com/commercetools/test-data/commit/5b0241768a97c7ea94a87df6e5a58f9ea64aaf0c)]:
+  - @commercetools-test-data/tax-category@6.1.0
+  - @commercetools-test-data/product-type@6.1.0
+  - @commercetools-test-data/category@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Major Changes

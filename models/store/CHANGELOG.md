@@ -1,5 +1,20 @@
 # @commercetools-test-data/store
 
+## 6.1.0
+
+### Minor Changes
+
+- [#345](https://github.com/commercetools/test-data/pull/345) [`26e07e8f`](https://github.com/commercetools/test-data/commit/26e07e8f7eca4c7b55c32a5c4c2221d255aa8ea5) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added store presets to Good Store data
+
+### Patch Changes
+
+- Updated dependencies [[`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`90767a10`](https://github.com/commercetools/test-data/commit/90767a10461509632f0d9228407f54605cffdcd9), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/channel@6.1.0
+  - @commercetools-test-data/product-selection@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes
