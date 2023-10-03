@@ -3,12 +3,12 @@ import type { TInventoryEntryDraftBuilder } from '../../../types';
 import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const productPreset = ProductVariantDraft.presets.sampleDataGoodStore.modernGoldCoffeeTable01().build<TProductVariantDraft>();
+const modernGoldCoffeeTable01Preset = ProductVariantDraft.presets.sampleDataGoodStore.modernGoldCoffeeTable01().build<TProductVariantDraft>();
 
 const skuGMCT01 = (): TInventoryEntryDraftBuilder => 
     InventoryEntryDraft.presets
         .empty()
-        .sku(productPreset.sku!)
+        .sku(modernGoldCoffeeTable01Preset.sku!)
         .quantityOnStock(98);
 
 export default skuGMCT01;

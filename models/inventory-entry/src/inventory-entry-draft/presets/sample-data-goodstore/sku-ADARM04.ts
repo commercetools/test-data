@@ -1,15 +1,18 @@
-
 import type { TInventoryEntryDraftBuilder } from '../../../types';
-import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const productPreset = ProductVariantDraft.presets.sampleDataGoodStore.artDecoChair01().build<TProductVariantDraft>();
+const artDecoChair01Preset = ProductVariantDraft.presets.sampleDataGoodStore
+  .artDecoChair01()
+  .build<TProductVariantDraft>();
 
-const skuADARM04 = (): TInventoryEntryDraftBuilder => 
-    InventoryEntryDraft.presets
-        .empty()
-        .sku(productPreset.sku!)
-        .quantityOnStock(100);
+const skuADARM04 = (): TInventoryEntryDraftBuilder =>
+  InventoryEntryDraft.presets
+    .empty()
+    .sku(artDecoChair01Preset.sku!)
+    .quantityOnStock(100);
 
 export default skuADARM04;
-

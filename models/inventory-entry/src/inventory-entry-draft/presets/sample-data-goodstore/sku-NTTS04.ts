@@ -3,12 +3,12 @@ import type { TInventoryEntryDraftBuilder } from '../../../types';
 import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const productPreset = ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa04().build<TProductVariantDraft>();
+const nalaTwoSeaterSofa04Preset = ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa04().build<TProductVariantDraft>();
 
 const skuNTTS04 = (): TInventoryEntryDraftBuilder => 
     InventoryEntryDraft.presets
         .empty()
-        .sku(productPreset.sku!)
+        .sku(nalaTwoSeaterSofa04Preset.sku!)
         .quantityOnStock(100);
 
 export default skuNTTS04;

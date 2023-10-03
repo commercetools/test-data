@@ -3,12 +3,12 @@ import type { TInventoryEntryDraftBuilder } from '../../../types';
 import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const productPreset = ProductVariantDraft.presets.sampleDataGoodStore.luxePillowCover01().build<TProductVariantDraft>();
+const luxePillowCover01Preset = ProductVariantDraft.presets.sampleDataGoodStore.luxePillowCover01().build<TProductVariantDraft>();
 
 const skuLPC011 = (): TInventoryEntryDraftBuilder => 
     InventoryEntryDraft.presets
         .empty()
-        .sku(productPreset.sku!)
+        .sku(luxePillowCover01Preset.sku!)
         .quantityOnStock(100);
 
 export default skuLPC011;

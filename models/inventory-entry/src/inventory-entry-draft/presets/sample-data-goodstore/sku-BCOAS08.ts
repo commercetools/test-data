@@ -3,12 +3,12 @@ import type { TInventoryEntryDraftBuilder } from '../../../types';
 import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const productPreset = ProductVariantDraft.presets.sampleDataGoodStore.modernBlackCoaster01().build<TProductVariantDraft>();
+const modernBlackCoaster01Preset = ProductVariantDraft.presets.sampleDataGoodStore.modernBlackCoaster01().build<TProductVariantDraft>();
 
 const skuBCOAS08 = (): TInventoryEntryDraftBuilder => 
     InventoryEntryDraft.presets
         .empty()
-        .sku(productPreset.sku!)
+        .sku(modernBlackCoaster01Preset.sku!)
         .quantityOnStock(100);
 
 export default skuBCOAS08;
