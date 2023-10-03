@@ -12,14 +12,10 @@ describe('with usd5000 preset', () => {
         "freeAbove": {
           "centAmount": 100000,
           "currencyCode": "USD",
-          "fractionDigits": 2,
-          "type": "centPrecision",
         },
         "price": {
           "centAmount": 5000,
           "currencyCode": "USD",
-          "fractionDigits": 2,
-          "type": "centPrecision",
         },
         "tiers": undefined,
       }
@@ -32,18 +28,12 @@ describe('with usd5000 preset', () => {
     expect(usd5000PresetGraphql).toMatchInlineSnapshot(`
       {
         "freeAbove": {
-          "__typename": "Money",
           "centAmount": 100000,
           "currencyCode": "USD",
-          "fractionDigits": 2,
-          "type": "centPrecision",
         },
         "price": {
-          "__typename": "Money",
           "centAmount": 5000,
           "currencyCode": "USD",
-          "fractionDigits": 2,
-          "type": "centPrecision",
         },
         "tiers": undefined,
       }
