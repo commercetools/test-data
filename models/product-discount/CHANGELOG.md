@@ -1,5 +1,22 @@
 # @commercetools-test-data/product-discount
 
+## 6.1.0
+
+### Minor Changes
+
+- [#352](https://github.com/commercetools/test-data/pull/352) [`9b7e26e8`](https://github.com/commercetools/test-data/commit/9b7e26e8ecaea31b3387b6a8e19a632fcbfa5539) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added product discount presets to the good store data
+
+### Patch Changes
+
+- [#386](https://github.com/commercetools/test-data/pull/386) [`aef6443d`](https://github.com/commercetools/test-data/commit/aef6443dace0cc2cbba323f832b0f3a50916e5a5) Thanks [@jaikamat](https://github.com/jaikamat)! - refactors to goodstore presets
+
+- Updated dependencies [[`0e9afd36`](https://github.com/commercetools/test-data/commit/0e9afd36e7e6981248d278fc0bbd453231b9ded4), [`935cc4c5`](https://github.com/commercetools/test-data/commit/935cc4c5975984157c44a058d48e74417a2f4d33), [`d6b1a8f7`](https://github.com/commercetools/test-data/commit/d6b1a8f7a5f97b4c91e8fcda2e851e453595019e), [`efc1594a`](https://github.com/commercetools/test-data/commit/efc1594a524302de3ac8f213d19ccb911d1a3065), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`f6328503`](https://github.com/commercetools/test-data/commit/f632850380fadd47425b8e6062dfcfa53490b3fa), [`f1ab3911`](https://github.com/commercetools/test-data/commit/f1ab3911664e220b997fc8fa9b1a294ed461ed1f), [`ccfec1d2`](https://github.com/commercetools/test-data/commit/ccfec1d213950e64c5c44180634c19e1bf77768b), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f), [`5b024176`](https://github.com/commercetools/test-data/commit/5b0241768a97c7ea94a87df6e5a58f9ea64aaf0c)]:
+  - @commercetools-test-data/product-type@6.1.0
+  - @commercetools-test-data/category@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

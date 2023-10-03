@@ -1,5 +1,20 @@
 # @commercetools-test-data/shipping-method
 
+## 6.1.0
+
+### Minor Changes
+
+- [#368](https://github.com/commercetools/test-data/pull/368) [`e67d38ea`](https://github.com/commercetools/test-data/commit/e67d38ea2928568a79d999098cd282d8785a0367) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Adds Shipping Method Draft presets for GoodStore sample data.
+
+### Patch Changes
+
+- Updated dependencies [[`4b81a5e2`](https://github.com/commercetools/test-data/commit/4b81a5e2bf524f1dc1e517a792293464168d7c3b), [`8977473f`](https://github.com/commercetools/test-data/commit/8977473fd913ad83641f0ff9f0fa64e92ce75191), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f), [`5145ea20`](https://github.com/commercetools/test-data/commit/5145ea2055770390c4365651b19cebc598e70fa0)]:
+  - @commercetools-test-data/tax-category@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/zone@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

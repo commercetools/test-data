@@ -1,5 +1,22 @@
 # @commercetools-test-data/category
 
+## 6.1.0
+
+### Minor Changes
+
+- [#370](https://github.com/commercetools/test-data/pull/370) [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Updated the exported presets folder name to sampleDataGoodStore.
+
+- [#357](https://github.com/commercetools/test-data/pull/357) [`f6328503`](https://github.com/commercetools/test-data/commit/f632850380fadd47425b8e6062dfcfa53490b3fa) Thanks [@phofmann](https://github.com/phofmann)! - Add category draft presets for GoodStore sample data.
+
+- [#373](https://github.com/commercetools/test-data/pull/373) [`f1ab3911`](https://github.com/commercetools/test-data/commit/f1ab3911664e220b997fc8fa9b1a294ed461ed1f) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Include sample-data-goodstore product presets (21-40)
+
+### Patch Changes
+
+- Updated dependencies [[`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes

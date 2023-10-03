@@ -1,5 +1,25 @@
 # @commercetools-test-data/cart
 
+## 6.1.0
+
+### Minor Changes
+
+- [#374](https://github.com/commercetools/test-data/pull/374) [`e19fa315`](https://github.com/commercetools/test-data/commit/e19fa3153a28f92632fc71cd5c7caf40ff0a5d94) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added GoodStore cart presets
+
+### Patch Changes
+
+- Updated dependencies [[`4b81a5e2`](https://github.com/commercetools/test-data/commit/4b81a5e2bf524f1dc1e517a792293464168d7c3b), [`552e0c07`](https://github.com/commercetools/test-data/commit/552e0c07c605b6be59e1fffcbdbaec76aaf283ff), [`debc02bf`](https://github.com/commercetools/test-data/commit/debc02bf916b5729ba8c4e5db5ce63f88da4c008), [`7de13750`](https://github.com/commercetools/test-data/commit/7de13750418e0dc851e902ce639f2e8d183403f0), [`8977473f`](https://github.com/commercetools/test-data/commit/8977473fd913ad83641f0ff9f0fa64e92ce75191), [`e67d38ea`](https://github.com/commercetools/test-data/commit/e67d38ea2928568a79d999098cd282d8785a0367), [`9abfc5ca`](https://github.com/commercetools/test-data/commit/9abfc5ca63c9e7b2bf2d4a525ba385beb3d4f5ed), [`9a1f96eb`](https://github.com/commercetools/test-data/commit/9a1f96eb565573b0c3992224c6ed5514e6777b2b), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`f1ab3911`](https://github.com/commercetools/test-data/commit/f1ab3911664e220b997fc8fa9b1a294ed461ed1f), [`26e07e8f`](https://github.com/commercetools/test-data/commit/26e07e8f7eca4c7b55c32a5c4c2221d255aa8ea5), [`7910866c`](https://github.com/commercetools/test-data/commit/7910866c357276c554871d5e3300683c621df4a7), [`90767a10`](https://github.com/commercetools/test-data/commit/90767a10461509632f0d9228407f54605cffdcd9), [`44aa6059`](https://github.com/commercetools/test-data/commit/44aa60596eb0e09f87a7e1df546b8503838c2578), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/tax-category@6.1.0
+  - @commercetools-test-data/product@6.1.0
+  - @commercetools-test-data/shipping-method@6.1.0
+  - @commercetools-test-data/customer@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/store@6.1.0
+  - @commercetools-test-data/discount-code@6.1.0
+  - @commercetools-test-data/channel@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Major Changes

@@ -1,5 +1,21 @@
 # @commercetools-test-data/order
 
+## 6.1.0
+
+### Minor Changes
+
+- [#375](https://github.com/commercetools/test-data/pull/375) [`4b7be8af`](https://github.com/commercetools/test-data/commit/4b7be8afeda0f9c95f28cad3973f352e60c7efd2) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added order presets for goodstore data
+
+### Patch Changes
+
+- Updated dependencies [[`aef6443d`](https://github.com/commercetools/test-data/commit/aef6443dace0cc2cbba323f832b0f3a50916e5a5), [`e19fa315`](https://github.com/commercetools/test-data/commit/e19fa3153a28f92632fc71cd5c7caf40ff0a5d94), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`7910866c`](https://github.com/commercetools/test-data/commit/7910866c357276c554871d5e3300683c621df4a7), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/cart-discount@6.1.0
+  - @commercetools-test-data/cart@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/customer-group@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Major Changes

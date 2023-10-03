@@ -1,5 +1,19 @@
 # @commercetools-test-data/discount-code
 
+## 6.1.0
+
+### Minor Changes
+
+- [#359](https://github.com/commercetools/test-data/pull/359) [`7910866c`](https://github.com/commercetools/test-data/commit/7910866c357276c554871d5e3300683c621df4a7) Thanks [@jaikamat](https://github.com/jaikamat)! - Added presets for cart discounts and discount codes for the good store data
+
+### Patch Changes
+
+- Updated dependencies [[`aef6443d`](https://github.com/commercetools/test-data/commit/aef6443dace0cc2cbba323f832b0f3a50916e5a5), [`3cccf1d1`](https://github.com/commercetools/test-data/commit/3cccf1d19057b05cb65c9696465b6dcd5ddafa97), [`7910866c`](https://github.com/commercetools/test-data/commit/7910866c357276c554871d5e3300683c621df4a7), [`b00d01a5`](https://github.com/commercetools/test-data/commit/b00d01a5aa67265e726e2d739f067ead042d436f)]:
+  - @commercetools-test-data/cart-discount@6.1.0
+  - @commercetools-test-data/commons@6.1.0
+  - @commercetools-test-data/core@6.1.0
+  - @commercetools-test-data/utils@6.1.0
+
 ## 6.0.0
 
 ### Patch Changes
