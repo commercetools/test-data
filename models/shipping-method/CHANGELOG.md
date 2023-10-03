@@ -1,5 +1,18 @@
 # @commercetools-test-data/shipping-method
 
+## 6.1.1
+
+### Patch Changes
+
+- [#388](https://github.com/commercetools/test-data/pull/388) [`3060945d`](https://github.com/commercetools/test-data/commit/3060945d3c6c828e568acc10e4f8f0fb2af85ab6) Thanks [@jaikamat](https://github.com/jaikamat)! - Use Money over CentPrecisionMoney in Good Store shipping rate drafts
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.1.1
+  - @commercetools-test-data/commons@6.1.1
+  - @commercetools-test-data/tax-category@6.1.1
+  - @commercetools-test-data/zone@6.1.1
+  - @commercetools-test-data/utils@6.1.1
+
 ## 6.1.0
 
 ### Minor Changes
