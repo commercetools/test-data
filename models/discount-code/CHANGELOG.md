@@ -1,5 +1,15 @@
 # @commercetools-test-data/discount-code
 
+## 6.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart-discount@6.2.0
+  - @commercetools-test-data/core@6.2.0
+  - @commercetools-test-data/commons@6.2.0
+  - @commercetools-test-data/utils@6.2.0
+
 ## 6.1.1
 
 ### Patch Changes
