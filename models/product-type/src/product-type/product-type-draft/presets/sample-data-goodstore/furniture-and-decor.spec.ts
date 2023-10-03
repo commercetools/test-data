@@ -421,8 +421,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "productspec",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -450,8 +451,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "color",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -479,8 +481,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "finish",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -508,8 +511,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "colorlabel",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -537,8 +541,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "finishlabel",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -602,8 +607,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "size",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -637,8 +643,9 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "product-description",
             "type": {
-              "__typename": "LocalizableTextAttributeDefinitionType",
-              "name": "ltext",
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {

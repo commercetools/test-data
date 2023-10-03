@@ -7,7 +7,7 @@ import {
   AttributeDefinitionDraft,
   AttributeBooleanTypeDraft,
   AttributeLocalizedEnumTypeDraft,
-  AttributeLocalizableTextType,
+  AttributeLocalizableTextTypeDraft,
   AttributeLocalizedEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
@@ -25,7 +25,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('productspec')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -51,7 +51,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -67,7 +67,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('finish')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -83,7 +83,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('colorlabel')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -99,7 +99,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('finishlabel')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()
@@ -132,7 +132,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('size')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets.empty()['en-GB']('Size')['en-US']('Size')
         )
@@ -150,7 +150,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('product-description')
-        .type(AttributeLocalizableTextType.random())
+        .type(AttributeLocalizableTextTypeDraft.random())
         .label(
           LocalizedString.presets
             .empty()

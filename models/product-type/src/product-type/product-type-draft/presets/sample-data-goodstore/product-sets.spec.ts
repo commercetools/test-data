@@ -73,8 +73,9 @@ describe(`with productSets preset`, () => {
             "type": {
               "set": {
                 "elementType": {
-                  "__typename": "LocalizableTextAttributeDefinitionType",
-                  "name": "ltext",
+                  "ltext": {
+                    "dummy": null,
+                  },
                 },
               },
             },
