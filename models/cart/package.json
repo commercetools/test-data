@@ -29,7 +29,7 @@
     "@commercetools-test-data/tax-category": "6.2.0",
     "@commercetools-test-data/utils": "6.2.0",
     "@commercetools-test-data/store": "6.2.0",
-    "@commercetools/platform-sdk": "^4.11.0",
+    "@commercetools/platform-sdk": "^6.0.0",
     "@faker-js/faker": "^8.0.0"
   }
 }
