@@ -102,7 +102,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             },
           },
         ],
-        "sku": "ccg-01",
+        "sku": "CCG-01",
       }
     `);
   });
@@ -203,7 +203,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             },
           },
         ],
-        "sku": "ccg-01",
+        "sku": "CCG-01",
       }
     `);
   });

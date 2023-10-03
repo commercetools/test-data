@@ -377,6 +377,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 6.1.1
         version: link:../../core
+      '@commercetools-test-data/product':
+        specifier: 6.1.1
+        version: link:../product
       '@commercetools-test-data/utils':
         specifier: 6.1.1
         version: link:../../utils
@@ -2784,8 +2787,8 @@ packages:
   /@commercetools-test-data/attribute-type@5.11.2:
     resolution: {integrity: sha512-JecOqJ3jdc/1+mnNcYKRzQBzNlJSwzuuxOKWKWyAZzXW2sH3z4K+rECaQY3Y+HMFqIMgVboa9ebd6YIgDlFFNA==}
     dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
       '@commercetools-test-data/commons': 5.11.2
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
@@ -2798,8 +2801,8 @@ packages:
   /@commercetools-test-data/commons@5.11.2:
     resolution: {integrity: sha512-AxcUby9NOEmil3kJKrNVa7Lz94UHOeW+nFgsmn5I3CLKrt/Q5VI0et+6Ls1UJh57buxbTQRK15O/Gd/hRMYwSA==}
     dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
@@ -2813,8 +2816,8 @@ packages:
   /@commercetools-test-data/core@5.11.2:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
     dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
       '@faker-js/faker': 8.0.0
       '@types/lodash': 4.14.186
       lodash: 4.17.21
@@ -2838,8 +2841,8 @@ packages:
   /@commercetools-test-data/utils@5.11.2:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
     dependencies:
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': 7.21.0
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
       '@faker-js/faker': 8.0.0
     dev: false
 
@@ -3548,7 +3551,7 @@ packages:
   /@manypkg/find-root@1.1.0:
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@types/node': 12.20.55
       find-up: 4.1.0
       fs-extra: 8.1.0
@@ -3789,7 +3792,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': 7.18.6
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@types/aria-query': 4.2.2
       aria-query: 5.1.3
       chalk: 4.1.2
@@ -5648,7 +5651,7 @@ packages:
     peerDependencies:
       eslint: ^6.8.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@testing-library/dom': 8.19.0
       eslint: 8.50.0
       requireindex: 1.2.0
@@ -5682,7 +5685,7 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       aria-query: 5.1.3
       array-includes: 3.1.6
       array.prototype.flatmap: 1.3.1

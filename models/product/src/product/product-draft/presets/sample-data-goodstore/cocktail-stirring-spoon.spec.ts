@@ -103,7 +103,7 @@ describe(`with cocktailStirringSpoon preset`, () => {
               },
             },
           ],
-          "sku": "Spoo-094",
+          "sku": "SPOO-094",
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

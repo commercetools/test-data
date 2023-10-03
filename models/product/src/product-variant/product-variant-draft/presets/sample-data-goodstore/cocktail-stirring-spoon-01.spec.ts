@@ -82,7 +82,7 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
             },
           },
         ],
-        "sku": "Spoo-094",
+        "sku": "SPOO-094",
       }
     `);
   });
@@ -163,7 +163,7 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
             },
           },
         ],
-        "sku": "Spoo-094",
+        "sku": "SPOO-094",
       }
     `);
   });
