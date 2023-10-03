@@ -1,5 +1,20 @@
 # @commercetools-test-data/inventory-entry
 
+## 6.2.0
+
+### Minor Changes
+
+- [#387](https://github.com/commercetools/test-data/pull/387) [`dd016d7a`](https://github.com/commercetools/test-data/commit/dd016d7a3255ee40d2fe7947fdc6b5aed2cd7ec5) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add InventoryEntry presets for GoodStore sample data.
+
+### Patch Changes
+
+- Updated dependencies [[`dd016d7a`](https://github.com/commercetools/test-data/commit/dd016d7a3255ee40d2fe7947fdc6b5aed2cd7ec5)]:
+  - @commercetools-test-data/product@6.2.0
+  - @commercetools-test-data/core@6.2.0
+  - @commercetools-test-data/channel@6.2.0
+  - @commercetools-test-data/commons@6.2.0
+  - @commercetools-test-data/utils@6.2.0
+
 ## 6.1.1
 
 ### Patch Changes

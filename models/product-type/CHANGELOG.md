@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-type
 
+## 6.2.0
+
+### Patch Changes
+
+- [#390](https://github.com/commercetools/test-data/pull/390) [`37c5f187`](https://github.com/commercetools/test-data/commit/37c5f1870179903815d0deb4ac33eb4b7a5990c8) Thanks [@jaikamat](https://github.com/jaikamat)! - create AttributeLocalizableTextTypeDraft model and integrate in goodstore presets
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.2.0
+  - @commercetools-test-data/commons@6.2.0
+  - @commercetools-test-data/utils@6.2.0
+
 ## 6.1.1
 
 ### Patch Changes
