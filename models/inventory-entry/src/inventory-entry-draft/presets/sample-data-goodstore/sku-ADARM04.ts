@@ -1,8 +1,8 @@
-import type { TInventoryEntryDraftBuilder } from '../../../types';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product';
+import type { TInventoryEntryDraftBuilder } from '../../../types';
 import * as InventoryEntryDraft from '../../index';
 
 const artDecoChair01Preset = ProductVariantDraft.presets.sampleDataGoodStore

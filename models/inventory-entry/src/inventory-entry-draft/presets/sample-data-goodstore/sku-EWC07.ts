@@ -1,15 +1,18 @@
-
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
 import type { TInventoryEntryDraftBuilder } from '../../../types';
-import { ProductVariantDraft, type TProductVariantDraft } from '@commercetools-test-data/product';
 import * as InventoryEntryDraft from '../../index';
 
-const entrywayCloset01Preset = ProductVariantDraft.presets.sampleDataGoodStore.entrywayCloset01().build<TProductVariantDraft>();
+const entrywayCloset01Preset = ProductVariantDraft.presets.sampleDataGoodStore
+  .entrywayCloset01()
+  .build<TProductVariantDraft>();
 
-const skuEWC07 = (): TInventoryEntryDraftBuilder => 
-    InventoryEntryDraft.presets
-        .empty()
-        .sku(entrywayCloset01Preset.sku!)
-        .quantityOnStock(100);
+const skuEWC07 = (): TInventoryEntryDraftBuilder =>
+  InventoryEntryDraft.presets
+    .empty()
+    .sku(entrywayCloset01Preset.sku!)
+    .quantityOnStock(100);
 
 export default skuEWC07;
-
