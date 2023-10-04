@@ -22,7 +22,7 @@ const standardTaxCategory = () =>
         .key('vat-standard-uk')
         .amount(0.2)
         .includedInPrice(true)
-        .country('UK')
+        .country('GB')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
