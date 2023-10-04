@@ -48,7 +48,7 @@ const classicChampagneGlasses01 = (): TProductVariantDraftBuilder =>
         'en-GB': '- Set of 5 glasses\n- Premium glass\n- Fragile',
         'de-DE': '- Set aus 5 Gläsern\n- Hochwertiges Glas\n- Zerbrechlich',
       }),
-      AttributeDraft.random().name('new-arrival').value('true'),
+      AttributeDraft.random().name('new-arrival').value(true),
     ]);
 
 export default classicChampagneGlasses01;

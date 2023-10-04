@@ -44,7 +44,7 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
           },
           {
             "name": "new-arrival",
-            "value": "false",
+            "value": false,
           },
           {
             "name": "size",
@@ -148,7 +148,7 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
           },
           {
             "name": "new-arrival",
-            "value": ""false"",
+            "value": "false",
           },
           {
             "name": "size",

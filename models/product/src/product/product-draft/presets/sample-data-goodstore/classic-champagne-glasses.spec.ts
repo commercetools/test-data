@@ -50,7 +50,7 @@ describe(`with classicChampagneGlasses preset`, () => {
             },
             {
               "name": "new-arrival",
-              "value": "true",
+              "value": true,
             },
           ],
           "images": [
@@ -215,7 +215,7 @@ describe(`with classicChampagneGlasses preset`, () => {
             },
             {
               "name": "new-arrival",
-              "value": ""true"",
+              "value": "true",
             },
           ],
           "images": [
