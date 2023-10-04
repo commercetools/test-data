@@ -1,10 +1,10 @@
 import * as ZoneDraft from '../../index';
 
-const countryGermanyAndUk = () =>
+const europeAndUk = () =>
   ZoneDraft.presets
     .empty()
-    .name('Europe')
+    .name('EU and UK')
     .key('europe')
     .locations([{ country: 'DE' }, { country: 'GB' }]);
 
-export default countryGermanyAndUk;
+export default europeAndUk;

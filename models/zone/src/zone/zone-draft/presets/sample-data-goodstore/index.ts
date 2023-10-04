@@ -1,8 +1,8 @@
-import countryGermanyAndUk from './country-germany-and-uk';
+import europeAndUk from './country-europe-and-uk';
 import countryUsa from './country-usa';
 
 const presets = {
-  countryGermanyAndUk,
+  europeAndUk,
   countryUsa,
 };
 

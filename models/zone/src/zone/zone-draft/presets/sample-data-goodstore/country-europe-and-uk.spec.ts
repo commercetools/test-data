@@ -1,9 +1,9 @@
 import { TZoneDraft, TZoneDraftGraphql } from '../../../types';
-import countryGermanyAndUk from './country-germany-and-uk';
+import europeAndUk from './country-europe-and-uk';
 
 describe('with the preset `country germany`', () => {
   it('should return a zone with name `Europe`', () => {
-    const zone = countryGermanyAndUk().build<TZoneDraft>();
+    const zone = europeAndUk().build<TZoneDraft>();
 
     expect(zone).toMatchInlineSnapshot(`
       {
@@ -17,13 +17,13 @@ describe('with the preset `country germany`', () => {
             "country": "GB",
           },
         ],
-        "name": "Europe",
+        "name": "EU and UK",
       }
     `);
   });
 
   it('should return a zone with name `Europe` when built for GraphQL', () => {
-    const zoneGraphql = countryGermanyAndUk().buildGraphql<TZoneDraftGraphql>();
+    const zoneGraphql = europeAndUk().buildGraphql<TZoneDraftGraphql>();
 
     expect(zoneGraphql).toMatchInlineSnapshot(`
       {
@@ -37,7 +37,7 @@ describe('with the preset `country germany`', () => {
             "country": "GB",
           },
         ],
-        "name": "Europe",
+        "name": "EU and UK",
       }
     `);
   });
