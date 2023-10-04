@@ -61,7 +61,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
             },
             {
               "name": "new-arrival",
-              "value": "false",
+              "value": false,
             },
             {
               "name": "size",

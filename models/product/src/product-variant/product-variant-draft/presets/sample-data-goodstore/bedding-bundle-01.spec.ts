@@ -11,7 +11,16 @@ describe(`with beddingBundle01 preset`, () => {
         "attributes": [
           {
             "name": "product-ref",
-            "value": "",
+            "value": [
+              {
+                "key": "ben-pillow-cover",
+                "typeId": "product",
+              },
+              {
+                "key": "modern-three-seater-sofa",
+                "typeId": "product",
+              },
+            ],
           },
         ],
         "images": [],
@@ -31,7 +40,7 @@ describe(`with beddingBundle01 preset`, () => {
         "attributes": [
           {
             "name": "product-ref",
-            "value": """",
+            "value": "[{"typeId":"product","key":"ben-pillow-cover"},{"typeId":"product","key":"modern-three-seater-sofa"}]",
           },
         ],
         "images": [],
