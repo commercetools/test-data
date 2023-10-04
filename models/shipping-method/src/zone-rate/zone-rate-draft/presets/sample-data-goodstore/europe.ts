@@ -5,7 +5,7 @@ import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';
 
 const europeZone = ZoneDraft.presets.sampleDataGoodStore
-  .countryGermany()
+  .countryGermanyAndUk()
   .build<TZoneDraft>();
 
 const europe = (): TZoneRateDraftBuilder =>

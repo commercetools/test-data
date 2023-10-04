@@ -3,4 +3,4 @@
 '@commercetools-test-data/cart': patch
 ---
 
-prefer countrycode GB over UK, minor fixes to existing presets
+prefer countrycode GB over UK, minor fixes to existing presets, integrate UK into existing zones

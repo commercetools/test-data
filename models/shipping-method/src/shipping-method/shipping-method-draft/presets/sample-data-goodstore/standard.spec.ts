@@ -43,30 +43,6 @@ describe('Shipping Method with standard preset', () => {
               "typeId": "zone",
             },
           },
-          {
-            "shippingRates": [
-              {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
-                  "currencyCode": "GBP",
-                },
-                "tiers": [],
-              },
-              {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
-                  "currencyCode": "EUR",
-                },
-                "tiers": [],
-              },
-            ],
-            "zone": {
-              "key": "unitedkingdom",
-              "typeId": "zone",
-            },
-          },
         ],
       }
     `);
@@ -112,31 +88,6 @@ describe('Shipping Method with standard preset', () => {
             "zone": {
               "__typename": "Reference",
               "key": "europe",
-              "typeId": "zone",
-            },
-          },
-          {
-            "shippingRates": [
-              {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
-                  "currencyCode": "GBP",
-                },
-                "tiers": [],
-              },
-              {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
-                  "currencyCode": "EUR",
-                },
-                "tiers": [],
-              },
-            ],
-            "zone": {
-              "__typename": "Reference",
-              "key": "unitedkingdom",
               "typeId": "zone",
             },
           },
