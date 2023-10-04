@@ -10,6 +10,7 @@ const generator = Generator<TCustomLineItem>({
     name: fake(() => LocalizedString.random()),
     money: fake(() => [Money.random()]),
     taxedPrice: null,
+    taxedPricePortions: [],
     totalPrice: null,
     slug: fake((f) => f.lorem.slug(3)),
     quantity: fake((f) => f.number.int(9)),
