@@ -4,7 +4,6 @@ import sunnaiGlassBowl from './sunnai-glass-bowl';
 describe(`with sunnaiGlassBowl preset`, () => {
   it(`should return a sunnaiGlassBowl preset`, () => {
     const sunnaiGlassBowlPreset = sunnaiGlassBowl().build<TProductDraft>();
-    console.log(sunnaiGlassBowlPreset);
 
     expect(sunnaiGlassBowlPreset).toMatchInlineSnapshot(`
       {
@@ -233,7 +232,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
   it(`should return a sunnaiGlassBowl preset when built for graphql`, () => {
     const sunnaiGlassBowlPresetGraphql =
       sunnaiGlassBowl().buildGraphql<TProductDraftGraphql>();
-    console.log(sunnaiGlassBowlPresetGraphql);
 
     expect(sunnaiGlassBowlPresetGraphql).toMatchInlineSnapshot(`
       {

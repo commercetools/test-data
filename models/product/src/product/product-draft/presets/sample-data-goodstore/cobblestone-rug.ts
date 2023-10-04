@@ -46,9 +46,9 @@ const cobblestoneRug = (): TProductDraftBuilder =>
     .name(
       LocalizedString.presets
         .empty()
-        ['en-US']('cobblestone-rug')
-        ['en-GB']('cobblestone-rug')
-        ['de-DE']('kopfsteinpflaster')
+        ['en-US']('Cobblestone Rug')
+        ['en-GB']('Cobblestone Rug')
+        ['de-DE']('Strukturteppich "Kopfsteinpflaster"')
     )
     .description(
       LocalizedString.presets

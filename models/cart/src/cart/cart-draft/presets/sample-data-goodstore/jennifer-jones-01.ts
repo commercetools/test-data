@@ -43,7 +43,7 @@ const jenniferJones01 = (customerId?: string): TCartDraftBuilder =>
     .customerEmail(customer.email)
     .customerId(customerId)
     .currency('GBP')
-    .country('UK')
+    .country('GB')
     .origin(origin.Merchant)
     .shippingAddress(address)
     .billingAddress(address)

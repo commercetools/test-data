@@ -25,7 +25,7 @@ describe('with a tax rate preset `standard tax category`', () => {
           },
           {
             "amount": 0.2,
-            "country": "UK",
+            "country": "GB",
             "includedInPrice": true,
             "key": "vat-standard-uk",
             "name": "Standard VAT for UK",
@@ -75,7 +75,7 @@ describe('with a tax rate preset `standard tax category`', () => {
           },
           {
             "amount": 0.2,
-            "country": "UK",
+            "country": "GB",
             "includedInPrice": true,
             "key": "vat-standard-uk",
             "name": "Standard VAT for UK",

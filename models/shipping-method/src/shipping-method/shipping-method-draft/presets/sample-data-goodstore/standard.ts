@@ -19,10 +19,7 @@ const standardShippingMethod = (): TShippingMethodDraftBuilder =>
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([
-      ZoneRateDraft.presets.sampleDataGoodStore.europe(),
-      ZoneRateDraft.presets.sampleDataGoodStore.unitedKingdom(),
-    ])
+    .zoneRates([ZoneRateDraft.presets.sampleDataGoodStore.europe()])
     .isDefault(true);
 
 export default standardShippingMethod;
