@@ -1,5 +1,23 @@
 # @commercetools-test-data/product
 
+## 6.3.0
+
+### Minor Changes
+
+- [#382](https://github.com/commercetools/test-data/pull/382) [`d4faaa2a`](https://github.com/commercetools/test-data/commit/d4faaa2a5c8559ad4b29fc324c6d6f2c7debe1eb) Thanks [@renovate](https://github.com/apps/renovate)! - Updated packages to use dependency `@commercetools/platform-sdk": "^6.0.0`
+
+- [#395](https://github.com/commercetools/test-data/pull/395) [`6c2aa18f`](https://github.com/commercetools/test-data/commit/6c2aa18f86947855e2d23b43cdacec6c431a6ace) Thanks [@jaikamat](https://github.com/jaikamat)! - update goodstore presets with correct datatypes
+
+### Patch Changes
+
+- Updated dependencies [[`d4faaa2a`](https://github.com/commercetools/test-data/commit/d4faaa2a5c8559ad4b29fc324c6d6f2c7debe1eb)]:
+  - @commercetools-test-data/product-type@6.3.0
+  - @commercetools-test-data/tax-category@6.3.0
+  - @commercetools-test-data/category@6.3.0
+  - @commercetools-test-data/commons@6.3.0
+  - @commercetools-test-data/core@6.3.0
+  - @commercetools-test-data/utils@6.3.0
+
 ## 6.2.0
 
 ### Minor Changes
