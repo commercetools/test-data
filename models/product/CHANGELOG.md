@@ -1,5 +1,21 @@
 # @commercetools-test-data/product
 
+## 6.3.1
+
+### Patch Changes
+
+- [#398](https://github.com/commercetools/test-data/pull/398) [`c6430348`](https://github.com/commercetools/test-data/commit/c6430348fb28320aef1dbfd38a902050565059ce) Thanks [@jaikamat](https://github.com/jaikamat)! - Goodstore preset fixes
+
+- [#400](https://github.com/commercetools/test-data/pull/400) [`2ed11609`](https://github.com/commercetools/test-data/commit/2ed1160924c51a6316a14788763e323088926afe) Thanks [@jaikamat](https://github.com/jaikamat)! - remove preset from goodstore dataset
+
+- Updated dependencies [[`442463ef`](https://github.com/commercetools/test-data/commit/442463ef5d17dcc9ba291536b417af3012a92e85), [`c6430348`](https://github.com/commercetools/test-data/commit/c6430348fb28320aef1dbfd38a902050565059ce)]:
+  - @commercetools-test-data/tax-category@6.3.1
+  - @commercetools-test-data/core@6.3.1
+  - @commercetools-test-data/category@6.3.1
+  - @commercetools-test-data/commons@6.3.1
+  - @commercetools-test-data/product-type@6.3.1
+  - @commercetools-test-data/utils@6.3.1
+
 ## 6.3.0
 
 ### Minor Changes

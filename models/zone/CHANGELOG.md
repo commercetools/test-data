@@ -1,5 +1,16 @@
 # @commercetools-test-data/zone
 
+## 6.3.1
+
+### Patch Changes
+
+- [#398](https://github.com/commercetools/test-data/pull/398) [`c6430348`](https://github.com/commercetools/test-data/commit/c6430348fb28320aef1dbfd38a902050565059ce) Thanks [@jaikamat](https://github.com/jaikamat)! - Goodstore preset fixes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.1
+  - @commercetools-test-data/commons@6.3.1
+  - @commercetools-test-data/utils@6.3.1
+
 ## 6.3.0
 
 ### Minor Changes
