@@ -7,11 +7,7 @@
     }
   ],
   "commit": false,
-  "fixed": [
-    [
-      "@commercetools-test-data/*"
-    ]
-  ],
+  "fixed": [["@commercetools-test-data/*"]],
   "access": "restricted",
   "baseBranch": "main"
 }

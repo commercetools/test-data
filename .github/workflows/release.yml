@@ -17,7 +17,14 @@ jobs:
         with:
           app_id: ${{ secrets.CT_CHANGESETS_APP_ID }}
           private_key: ${{ secrets.CT_CHANGESETS_APP_PEM }}
-          
+
+      - name: Storing release version for changeset
+        id: release_version
+        run: echo "VALUE=$(./scripts/print_release_version.sh)" >> $GITHUB_OUTPUT
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_github_token.outputs.token }}
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -55,11 +62,16 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        uses: changesets/action@v1
+        # We use dotansimha as it supports the aggregate release mode.
+        # uses: changesets/action@v1.3.0
+        uses: dotansimha/changesets-action@v1.5.2
         with:
           publish: pnpm changeset publish
           version: pnpm changeset:version-and-format
           commit: 'ci(changesets): version packages'
+          createGithubReleases: aggregate
+          githubReleaseName: v${{ steps.release_version.outputs.value }}
+          githubTagName: v${{ steps.release_version.outputs.value }}
         env:
           GITHUB_TOKEN: ${{ steps.generate_github_token.outputs.token }}
 
