@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/cart",
-  "version": "6.3.1",
+  "version": "6.3.2",
   "description": "Data model for commercetools API Cart",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,16 +19,16 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/channel": "6.3.1",
-    "@commercetools-test-data/commons": "6.3.1",
-    "@commercetools-test-data/core": "6.3.1",
-    "@commercetools-test-data/customer": "6.3.1",
-    "@commercetools-test-data/discount-code": "6.3.1",
-    "@commercetools-test-data/product": "6.3.1",
-    "@commercetools-test-data/shipping-method": "6.3.1",
-    "@commercetools-test-data/tax-category": "6.3.1",
-    "@commercetools-test-data/utils": "6.3.1",
-    "@commercetools-test-data/store": "6.3.1",
+    "@commercetools-test-data/channel": "6.3.2",
+    "@commercetools-test-data/commons": "6.3.2",
+    "@commercetools-test-data/core": "6.3.2",
+    "@commercetools-test-data/customer": "6.3.2",
+    "@commercetools-test-data/discount-code": "6.3.2",
+    "@commercetools-test-data/product": "6.3.2",
+    "@commercetools-test-data/shipping-method": "6.3.2",
+    "@commercetools-test-data/tax-category": "6.3.2",
+    "@commercetools-test-data/utils": "6.3.2",
+    "@commercetools-test-data/store": "6.3.2",
     "@commercetools/platform-sdk": "^6.0.0",
     "@faker-js/faker": "^8.0.0"
   }

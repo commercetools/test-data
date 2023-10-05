@@ -1,5 +1,23 @@
 # @commercetools-test-data/cart
 
+## 6.3.2
+
+### Patch Changes
+
+- [#401](https://github.com/commercetools/test-data/pull/401) [`e5ecb9dc`](https://github.com/commercetools/test-data/commit/e5ecb9dc0e2a45c192251f3bd9b18226ee54551f) Thanks [@jaikamat](https://github.com/jaikamat)! - moodify state names in goodstore data to be consistent
+
+- Updated dependencies [[`e5ecb9dc`](https://github.com/commercetools/test-data/commit/e5ecb9dc0e2a45c192251f3bd9b18226ee54551f)]:
+  - @commercetools-test-data/customer@6.3.2
+  - @commercetools-test-data/commons@6.3.2
+  - @commercetools-test-data/channel@6.3.2
+  - @commercetools-test-data/discount-code@6.3.2
+  - @commercetools-test-data/product@6.3.2
+  - @commercetools-test-data/shipping-method@6.3.2
+  - @commercetools-test-data/store@6.3.2
+  - @commercetools-test-data/tax-category@6.3.2
+  - @commercetools-test-data/core@6.3.2
+  - @commercetools-test-data/utils@6.3.2
+
 ## 6.3.1
 
 ### Patch Changes
