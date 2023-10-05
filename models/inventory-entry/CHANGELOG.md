@@ -1,5 +1,16 @@
 # @commercetools-test-data/inventory-entry
 
+## 6.3.1
+
+### Patch Changes
+
+- Updated dependencies [[`c6430348`](https://github.com/commercetools/test-data/commit/c6430348fb28320aef1dbfd38a902050565059ce), [`2ed11609`](https://github.com/commercetools/test-data/commit/2ed1160924c51a6316a14788763e323088926afe)]:
+  - @commercetools-test-data/product@6.3.1
+  - @commercetools-test-data/core@6.3.1
+  - @commercetools-test-data/channel@6.3.1
+  - @commercetools-test-data/commons@6.3.1
+  - @commercetools-test-data/utils@6.3.1
+
 ## 6.3.0
 
 ### Minor Changes

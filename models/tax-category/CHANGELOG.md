@@ -1,5 +1,18 @@
 # @commercetools-test-data/tax-category
 
+## 6.3.1
+
+### Patch Changes
+
+- [#396](https://github.com/commercetools/test-data/pull/396) [`442463ef`](https://github.com/commercetools/test-data/commit/442463ef5d17dcc9ba291536b417af3012a92e85) Thanks [@jaikamat](https://github.com/jaikamat)! - prefer countrycode GB over UK, minor fixes to existing presets, integrate UK into existing zones
+
+- [#398](https://github.com/commercetools/test-data/pull/398) [`c6430348`](https://github.com/commercetools/test-data/commit/c6430348fb28320aef1dbfd38a902050565059ce) Thanks [@jaikamat](https://github.com/jaikamat)! - Goodstore preset fixes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.1
+  - @commercetools-test-data/commons@6.3.1
+  - @commercetools-test-data/utils@6.3.1
+
 ## 6.3.0
 
 ### Minor Changes
