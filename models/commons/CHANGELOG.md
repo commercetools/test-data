@@ -1,5 +1,15 @@
 # @commercetools-test-data/commons
 
+## 6.3.2
+
+### Patch Changes
+
+- [#401](https://github.com/commercetools/test-data/pull/401) [`e5ecb9dc`](https://github.com/commercetools/test-data/commit/e5ecb9dc0e2a45c192251f3bd9b18226ee54551f) Thanks [@jaikamat](https://github.com/jaikamat)! - moodify state names in goodstore data to be consistent
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.2
+  - @commercetools-test-data/utils@6.3.2
+
 ## 6.3.1
 
 ### Patch Changes
