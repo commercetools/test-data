@@ -3,7 +3,7 @@ import paymentUSA from './payment-usa';
 
 it(`should set all fields to specified values`, () => {
   const paymentUSADraft = paymentUSA().build<TPaymentDraft>();
-  expect(paymentUSADraft.key).toMatchInlineSnapshot(`undefined`);
+  expect(paymentUSADraft.key).toMatchInlineSnapshot(`"sample-usa-01-cart"`);
   expect(paymentUSADraft.anonymousId).toMatchInlineSnapshot(`undefined`);
   expect(paymentUSADraft.interfaceId).toMatchInlineSnapshot(`undefined`);
   expect(paymentUSADraft.customer).toMatchInlineSnapshot(`
