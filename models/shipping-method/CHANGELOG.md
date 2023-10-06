@@ -1,5 +1,18 @@
 # @commercetools-test-data/shipping-method
 
+## 6.3.3
+
+### Patch Changes
+
+- [#403](https://github.com/commercetools/test-data/pull/403) [`b8badcac`](https://github.com/commercetools/test-data/commit/b8badcac99f8ee9c8e8dd0491e30b39526d21c81) Thanks [@jaikamat](https://github.com/jaikamat)! - make goodstore standard shipping default
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.3
+  - @commercetools-test-data/commons@6.3.3
+  - @commercetools-test-data/tax-category@6.3.3
+  - @commercetools-test-data/zone@6.3.3
+  - @commercetools-test-data/utils@6.3.3
+
 ## 6.3.2
 
 ### Patch Changes
