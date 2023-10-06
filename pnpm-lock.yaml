@@ -440,6 +440,9 @@ importers:
       '@commercetools-test-data/customer':
         specifier: 6.3.3
         version: link:../customer
+      '@commercetools-test-data/order':
+        specifier: 6.3.2
+        version: link:../order
       '@commercetools-test-data/utils':
         specifier: 6.3.3
         version: link:../../utils

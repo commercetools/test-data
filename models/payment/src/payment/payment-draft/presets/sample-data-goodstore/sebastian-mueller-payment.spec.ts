@@ -19,7 +19,7 @@ describe(`with sebastianMuellerPayment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": undefined,
+        "key": "sebastian-mueller-01",
         "paymentMethodInfo": {
           "method": "Credit Card",
           "name": {
@@ -81,7 +81,7 @@ describe(`with sebastianMuellerPayment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": undefined,
+        "key": "sebastian-mueller-01",
         "paymentMethodInfo": {
           "method": "Credit Card",
           "name": {

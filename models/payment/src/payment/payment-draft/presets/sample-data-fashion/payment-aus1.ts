@@ -7,6 +7,10 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
+import {
+  OrderFromCartDraft,
+  TOrderFromCartDraft,
+} from '@commercetools-test-data/order';
 import * as PaymentDraft from '../..';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
@@ -17,9 +21,14 @@ const customerAUS = CustomerDraft.presets.sampleDataFashion
   .sampleAustralia()
   .build<TCustomerDraft>();
 
+const orderAUS2 = OrderFromCartDraft.presets.sampleDataFashion
+  .sampleAustraliaCart02(1)
+  .build<TOrderFromCartDraft>();
+
 const paymentAUS1 = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
+    .key(orderAUS2.cart!.key!)
     .customer(KeyReference.presets.customer().key(customerAUS.key!))
     .amountPlanned(Money.random().centAmount(4075).currencyCode('AUD'))
     .paymentMethodInfo(

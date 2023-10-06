@@ -3,7 +3,9 @@ import paymentAUS1 from './payment-aus1';
 
 it(`should set all fields to specified values`, () => {
   const paymentDraftAUS2 = paymentAUS1().build<TPaymentDraft>();
-  expect(paymentDraftAUS2.key).toMatchInlineSnapshot(`undefined`);
+  expect(paymentDraftAUS2.key).toMatchInlineSnapshot(
+    `"sample-australia-02-cart"`
+  );
   expect(paymentDraftAUS2.anonymousId).toMatchInlineSnapshot(`undefined`);
   expect(paymentDraftAUS2.interfaceId).toMatchInlineSnapshot(`undefined`);
   expect(paymentDraftAUS2.customer).toMatchInlineSnapshot(`

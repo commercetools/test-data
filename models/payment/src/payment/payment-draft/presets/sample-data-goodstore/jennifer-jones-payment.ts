@@ -7,6 +7,10 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
+import {
+  OrderFromCartDraft,
+  TOrderFromCartDraft,
+} from '@commercetools-test-data/order';
 import * as PaymentDraft from '../..';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
@@ -17,9 +21,14 @@ const customerJenniferJones = CustomerDraft.presets.sampleDataGoodStore
   .jenniferJones()
   .build<TCustomerDraft>();
 
+const orderJenniferJones = OrderFromCartDraft.presets.sampleDataGoodStore
+  .jenniferJonesCart01(1)
+  .build<TOrderFromCartDraft>();
+
 const jenniferJonesPayment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
+    .key(orderJenniferJones.cart!.key!)
     .customer(KeyReference.presets.customer().key(customerJenniferJones.key!))
     .amountPlanned(Money.random().centAmount(485759).currencyCode('GBP'))
     .paymentMethodInfo(

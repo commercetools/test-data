@@ -19,7 +19,7 @@ describe(`with jenniferJonesPayment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": undefined,
+        "key": "jennifer-jones-01",
         "paymentMethodInfo": {
           "method": "Debit Card",
           "name": {
@@ -81,7 +81,7 @@ describe(`with jenniferJonesPayment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": undefined,
+        "key": "jennifer-jones-01",
         "paymentMethodInfo": {
           "method": "Debit Card",
           "name": {
