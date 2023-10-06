@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart
 
+## 6.3.3
+
+### Patch Changes
+
+- Updated dependencies [[`b8badcac`](https://github.com/commercetools/test-data/commit/b8badcac99f8ee9c8e8dd0491e30b39526d21c81)]:
+  - @commercetools-test-data/shipping-method@6.3.3
+  - @commercetools-test-data/core@6.3.3
+  - @commercetools-test-data/channel@6.3.3
+  - @commercetools-test-data/commons@6.3.3
+  - @commercetools-test-data/customer@6.3.3
+  - @commercetools-test-data/discount-code@6.3.3
+  - @commercetools-test-data/product@6.3.3
+  - @commercetools-test-data/store@6.3.3
+  - @commercetools-test-data/tax-category@6.3.3
+  - @commercetools-test-data/utils@6.3.3
+
 ## 6.3.2
 
 ### Patch Changes
