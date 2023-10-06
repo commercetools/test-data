@@ -8,7 +8,7 @@ describe('Shipping Method with USA preset', () => {
     expect(usaShippingMethodPreset).toMatchInlineSnapshot(`
       {
         "custom": undefined,
-        "isDefault": true,
+        "isDefault": false,
         "key": "us-delivery",
         "localizedDescription": undefined,
         "localizedName": undefined,
@@ -49,7 +49,7 @@ describe('Shipping Method with USA preset', () => {
     expect(usaShippingMethodPresetGraphql).toMatchInlineSnapshot(`
       {
         "custom": undefined,
-        "isDefault": true,
+        "isDefault": false,
         "key": "us-delivery",
         "localizedDescription": undefined,
         "localizedName": undefined,

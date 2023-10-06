@@ -20,6 +20,6 @@ const usaShippingMethod = (): TShippingMethodDraftBuilder =>
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([ZoneRateDraft.presets.sampleDataGoodStore.usa()])
-    .isDefault(true);
+    .isDefault(false);
 
 export default usaShippingMethod;
