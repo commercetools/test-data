@@ -1,5 +1,18 @@
 # @commercetools-test-data/payment
 
+## 6.3.4
+
+### Patch Changes
+
+- [#406](https://github.com/commercetools/test-data/pull/406) [`ef8a6824`](https://github.com/commercetools/test-data/commit/ef8a68240cedbb903e698704afac1d176338c0c1) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add Keys to Payment presets for Fashion/GoodStore sample data.
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@6.3.4
+  - @commercetools-test-data/core@6.3.4
+  - @commercetools-test-data/commons@6.3.4
+  - @commercetools-test-data/customer@6.3.4
+  - @commercetools-test-data/utils@6.3.4
+
 ## 6.3.3
 
 ### Patch Changes

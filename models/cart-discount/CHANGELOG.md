@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 6.3.4
+
+### Patch Changes
+
+- [#405](https://github.com/commercetools/test-data/pull/405) [`9558238c`](https://github.com/commercetools/test-data/commit/9558238cf27b6f61a37db3a565ffefa4c364f4e8) Thanks [@jaikamat](https://github.com/jaikamat)! - deactivate goodstore cart discount and discount codes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.4
+  - @commercetools-test-data/category@6.3.4
+  - @commercetools-test-data/commons@6.3.4
+  - @commercetools-test-data/customer-group@6.3.4
+  - @commercetools-test-data/product-type@6.3.4
+  - @commercetools-test-data/utils@6.3.4
+
 ## 6.3.3
 
 ### Patch Changes
