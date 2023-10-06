@@ -1,5 +1,7 @@
 # @commercetools-test-data/core
 
+## 6.3.4
+
 ## 6.3.3
 
 ## 6.3.2
