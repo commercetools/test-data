@@ -32,7 +32,7 @@ const discountFurnitureAndDecor = (): TProductDiscountDraftBuilder =>
         ['en-US']('10 USD Off All Furniture & Decor')
         ['en-GB']('10 USD Off All Furniture & Decor')
     )
-    .isActive(true)
+    .isActive(false)
     .sortOrder('0.2')
     .key('FurnitureDecor10USDOff');
 

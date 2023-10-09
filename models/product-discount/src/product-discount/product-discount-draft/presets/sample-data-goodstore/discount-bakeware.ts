@@ -32,7 +32,7 @@ const discountBakeware = (): TProductDiscountDraftBuilder =>
         ['en-US']('5 EUR Off All Bakeware Items')
         ['en-GB']('5 EUR Off All Bakeware Items')
     )
-    .isActive(true)
+    .isActive(false)
     .sortOrder('0.5')
     .key('Bakeware5EUROff');
 
