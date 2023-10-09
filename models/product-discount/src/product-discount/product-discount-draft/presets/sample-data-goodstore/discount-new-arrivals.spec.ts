@@ -18,7 +18,7 @@ describe('with the preset `discountNewArrivals`', () => {
           "en-US": "15% Off All New Arrivals",
           "fr": undefined,
         },
-        "isActive": true,
+        "isActive": false,
         "key": "NewArrivals15pctOff",
         "name": {
           "de": undefined,
@@ -57,7 +57,7 @@ describe('with the preset `discountNewArrivals`', () => {
             "value": "15% Off All New Arrivals",
           },
         ],
-        "isActive": true,
+        "isActive": false,
         "key": "NewArrivals15pctOff",
         "name": [
           {
