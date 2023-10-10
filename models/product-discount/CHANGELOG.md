@@ -1,5 +1,18 @@
 # @commercetools-test-data/product-discount
 
+## 6.3.6
+
+### Patch Changes
+
+- [#410](https://github.com/commercetools/test-data/pull/410) [`55ac3658`](https://github.com/commercetools/test-data/commit/55ac365834d1329c84591aebe519f85b0e7270d0) Thanks [@jaikamat](https://github.com/jaikamat)! - reactivate goodstore discount presets
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.6
+  - @commercetools-test-data/category@6.3.6
+  - @commercetools-test-data/commons@6.3.6
+  - @commercetools-test-data/product-type@6.3.6
+  - @commercetools-test-data/utils@6.3.6
+
 ## 6.3.5
 
 ### Patch Changes
