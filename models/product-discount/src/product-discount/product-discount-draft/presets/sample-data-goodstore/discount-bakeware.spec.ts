@@ -18,7 +18,7 @@ describe('with the preset `discountBakeware`', () => {
           "en-US": "5 EUR Off All Bakeware Items",
           "fr": undefined,
         },
-        "isActive": true,
+        "isActive": false,
         "key": "Bakeware5EUROff",
         "name": {
           "de": undefined,
@@ -62,7 +62,7 @@ describe('with the preset `discountBakeware`', () => {
             "value": "5 EUR Off All Bakeware Items",
           },
         ],
-        "isActive": true,
+        "isActive": false,
         "key": "Bakeware5EUROff",
         "name": [
           {
