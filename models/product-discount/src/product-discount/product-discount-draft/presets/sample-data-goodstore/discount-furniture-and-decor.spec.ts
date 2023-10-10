@@ -18,7 +18,7 @@ describe('with the preset `discountFurnitureAndDecor`', () => {
           "en-US": "10 USD Off All Furniture & Decor",
           "fr": undefined,
         },
-        "isActive": false,
+        "isActive": true,
         "key": "FurnitureDecor10USDOff",
         "name": {
           "de": undefined,
@@ -62,7 +62,7 @@ describe('with the preset `discountFurnitureAndDecor`', () => {
             "value": "10 USD Off All Furniture & Decor",
           },
         ],
-        "isActive": false,
+        "isActive": true,
         "key": "FurnitureDecor10USDOff",
         "name": [
           {

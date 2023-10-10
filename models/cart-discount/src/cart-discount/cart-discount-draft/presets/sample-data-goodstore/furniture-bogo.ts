@@ -46,7 +46,7 @@ const furnitureBogo = (): TCartDiscountDraftBuilder =>
         )
     )
     .stackingMode(stackingMode.Stacking)
-    .isActive(false)
+    .isActive(true)
     .requiresDiscountCode(true)
     .sortOrder('0.15')
     .key('FurnitureBOGO');

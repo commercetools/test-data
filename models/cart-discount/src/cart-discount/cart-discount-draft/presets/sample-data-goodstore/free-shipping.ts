@@ -26,7 +26,7 @@ const freeShipping = (): TCartDiscountDraftBuilder =>
         ['en-GB']('Free shipping when your order is at least 100 GBP')
     )
     .stackingMode(stackingMode.Stacking)
-    .isActive(false)
+    .isActive(true)
     .requiresDiscountCode(false)
     .sortOrder('0.22')
     .key('FreeShip100');
