@@ -1,5 +1,14 @@
 # @commercetools-test-data/product-type
 
+## 6.3.7
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.3.7
+  - @commercetools-test-data/commons@6.3.7
+  - @commercetools-test-data/utils@6.3.7
+
 ## 6.3.6
 
 ### Patch Changes

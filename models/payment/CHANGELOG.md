@@ -1,5 +1,18 @@
 # @commercetools-test-data/payment
 
+## 6.3.7
+
+### Patch Changes
+
+- [#412](https://github.com/commercetools/test-data/pull/412) [`a54a5d33`](https://github.com/commercetools/test-data/commit/a54a5d33af47cfb1b3bab30472e2fe3d9036325d) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Remove unnecessary export.
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@6.3.7
+  - @commercetools-test-data/core@6.3.7
+  - @commercetools-test-data/commons@6.3.7
+  - @commercetools-test-data/customer@6.3.7
+  - @commercetools-test-data/utils@6.3.7
+
 ## 6.3.6
 
 ### Patch Changes
