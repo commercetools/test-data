@@ -19,7 +19,7 @@ describe('with the preset `furnitureBogo`', () => {
           "en-US": "Two for one on all furniture items (discount on the cheapest item)",
           "fr": undefined,
         },
-        "isActive": false,
+        "isActive": true,
         "key": "FurnitureBOGO",
         "name": {
           "de": undefined,
@@ -69,7 +69,7 @@ describe('with the preset `furnitureBogo`', () => {
             "value": "Two for one on all furniture items (discount on the cheapest item)",
           },
         ],
-        "isActive": false,
+        "isActive": true,
         "key": "FurnitureBOGO",
         "name": [
           {

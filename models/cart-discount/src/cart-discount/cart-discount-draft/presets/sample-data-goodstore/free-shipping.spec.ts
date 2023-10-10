@@ -19,7 +19,7 @@ describe('with the preset `freeShipping`', () => {
           "en-US": "Free shipping when your order is at least 100 GBP",
           "fr": undefined,
         },
-        "isActive": false,
+        "isActive": true,
         "key": "FreeShip100",
         "name": {
           "de": undefined,
@@ -64,7 +64,7 @@ describe('with the preset `freeShipping`', () => {
             "value": "Free shipping when your order is at least 100 GBP",
           },
         ],
-        "isActive": false,
+        "isActive": true,
         "key": "FreeShip100",
         "name": [
           {

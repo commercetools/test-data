@@ -20,7 +20,7 @@ const discountNewArrivals = (): TProductDiscountDraftBuilder =>
         ['en-US']('15% Off All New Arrivals')
         ['en-GB']('15% Off All New Arrivals')
     )
-    .isActive(false)
+    .isActive(true)
     .sortOrder('0.67')
     .key('NewArrivals15pctOff');
 

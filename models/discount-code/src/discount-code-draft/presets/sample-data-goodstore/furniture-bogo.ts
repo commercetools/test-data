@@ -11,7 +11,7 @@ const furnitureBogo = (cartDiscountId: string): TDiscountCodeDraftBuilder =>
     .cartDiscounts([
       Reference.random().id(cartDiscountId).typeId('cart-discount'),
     ])
-    .isActive(false)
+    .isActive(true)
     .maxApplications(1)
     .maxApplicationsPerCustomer(1)
     .groups([]);
