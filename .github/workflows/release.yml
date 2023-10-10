@@ -18,13 +18,6 @@ jobs:
           app_id: ${{ secrets.CT_CHANGESETS_APP_ID }}
           private_key: ${{ secrets.CT_CHANGESETS_APP_PEM }}
 
-      - name: Storing release version for changeset
-        id: release_version
-        run: echo "VALUE=$(./scripts/print_release_version.sh)" >> $GITHUB_OUTPUT
-        shell: bash
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_github_token.outputs.token }}
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -32,6 +25,13 @@ jobs:
           # https://help.github.com/en/actions/reference/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token
           # https://github.community/t/action-does-not-trigger-another-on-push-tag-action/17148/8
           token: ${{ steps.generate_github_token.outputs.token }}
+
+      - name: Storing release version for changeset
+        id: release_version
+        run: echo "VALUE=$(./scripts/print_release_version.sh)" >> $GITHUB_OUTPUT
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_github_token.outputs.token }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
