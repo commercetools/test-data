@@ -2,32 +2,32 @@ import type {
   TProductDiscountDraft,
   TProductDiscountDraftGraphql,
 } from '../../../types';
-import discountNewArrivals from './discount-new-arrivals';
+import discountArmchairs from './discount-armchairs';
 
-describe('with the preset `discountNewArrivals`', () => {
+describe('with the preset `discountArmchairs`', () => {
   it('should return a product discount draft', () => {
     const productDiscountDraft =
-      discountNewArrivals().build<TProductDiscountDraft>();
+      discountArmchairs().build<TProductDiscountDraft>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
         "description": {
           "de": undefined,
           "en": undefined,
-          "en-GB": "15% Off All New Arrivals",
-          "en-US": "15% Off All New Arrivals",
+          "en-GB": "15% Off All Armchairs",
+          "en-US": "15% Off All Armchairs",
           "fr": undefined,
         },
-        "isActive": false,
+        "isActive": true,
         "key": "NewArrivals15pctOff",
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-GB": "15% Off All New Arrivals",
-          "en-US": "15% Off All New Arrivals",
+          "en-GB": "15% Off All Armchairs",
+          "en-US": "15% Off All Armchairs",
           "fr": undefined,
         },
-        "predicate": "categories.key contains "new-arrivals"",
+        "predicate": "categories.key contains "armchairs"",
         "sortOrder": "0.67",
         "validFrom": undefined,
         "validUntil": undefined,
@@ -41,7 +41,7 @@ describe('with the preset `discountNewArrivals`', () => {
 
   it('should return a product discount draft when built for GraphQL', () => {
     const productDiscountDraft =
-      discountNewArrivals().buildGraphql<TProductDiscountDraftGraphql>();
+      discountArmchairs().buildGraphql<TProductDiscountDraftGraphql>();
 
     expect(productDiscountDraft).toMatchInlineSnapshot(`
       {
@@ -49,29 +49,29 @@ describe('with the preset `discountNewArrivals`', () => {
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "15% Off All New Arrivals",
+            "value": "15% Off All Armchairs",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "15% Off All New Arrivals",
+            "value": "15% Off All Armchairs",
           },
         ],
-        "isActive": false,
+        "isActive": true,
         "key": "NewArrivals15pctOff",
         "name": [
           {
             "__typename": "LocalizedString",
             "locale": "en-US",
-            "value": "15% Off All New Arrivals",
+            "value": "15% Off All Armchairs",
           },
           {
             "__typename": "LocalizedString",
             "locale": "en-GB",
-            "value": "15% Off All New Arrivals",
+            "value": "15% Off All Armchairs",
           },
         ],
-        "predicate": "categories.key contains "new-arrivals"",
+        "predicate": "categories.key contains "armchairs"",
         "sortOrder": "0.67",
         "validFrom": undefined,
         "validUntil": undefined,

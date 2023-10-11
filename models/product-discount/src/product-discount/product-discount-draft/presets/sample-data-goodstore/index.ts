@@ -1,11 +1,9 @@
+import discountArmchairs from './discount-armchairs';
 import discountBakeware from './discount-bakeware';
-import discountFurnitureAndDecor from './discount-furniture-and-decor';
-import discountNewArrivals from './discount-new-arrivals';
 
 const presets = {
   discountBakeware,
-  discountFurnitureAndDecor,
-  discountNewArrivals,
+  discountArmchairs,
 };
 
 export default presets;
