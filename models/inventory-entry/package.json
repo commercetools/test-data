@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/inventory-entry",
-  "version": "6.3.7",
+  "version": "6.3.8",
   "description": "Data model for commercetools API InventoryEntry",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/channel": "6.3.7",
-    "@commercetools-test-data/commons": "6.3.7",
-    "@commercetools-test-data/core": "6.3.7",
-    "@commercetools-test-data/product": "6.3.7",
-    "@commercetools-test-data/utils": "6.3.7",
+    "@commercetools-test-data/channel": "6.3.8",
+    "@commercetools-test-data/commons": "6.3.8",
+    "@commercetools-test-data/core": "6.3.8",
+    "@commercetools-test-data/product": "6.3.8",
+    "@commercetools-test-data/utils": "6.3.8",
     "@commercetools/platform-sdk": "^6.0.0",
     "@faker-js/faker": "^8.0.0"
   }
