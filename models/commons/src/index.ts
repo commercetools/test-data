@@ -7,6 +7,7 @@ export * from './localized-string/types';
 export * from './money/types';
 export * from './price/types';
 export * from './reference/types';
+export * from './localized-field/types';
 
 // Export models
 export * as Address from './address';
@@ -20,3 +21,4 @@ export * as Money from './money';
 export * as Price from './price';
 export * as PriceDraft from './price/price-draft';
 export * as Reference from './reference';
+export * as LocalizedField from './localized-field';

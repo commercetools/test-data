@@ -58,11 +58,16 @@ export type CustomView = {
   url: string;
 };
 
+export type CustomViewGraphql = CustomView & {
+  __typename: 'CustomView';
+};
+
 export type CustomViewDraft = {
   defaultLabel: string;
   description?: string;
   labelAllLocales: LocalizedField[];
   locators: string[];
+  ownerId: string;
   permissions: CustomViewPermission[];
   type: CustomViewType;
   typeSettings?: CustomViewTypeSettings;

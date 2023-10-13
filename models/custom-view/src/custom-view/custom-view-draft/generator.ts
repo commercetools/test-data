@@ -16,6 +16,7 @@ const generator = Generator<CustomViewDraft>({
         max: defaultLocators.length,
       })
     ),
+    ownerId: fake((f) => f.string.uuid()),
     permissions: [
       {
         name: 'viewCustomView',
