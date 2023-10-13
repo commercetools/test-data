@@ -11,14 +11,20 @@ describe('CustomViewDraft model builder', () => {
       CustomViewDraftModel.random(),
       expect.objectContaining({
         defaultLabel: expect.any(String),
-        // labelAllLocales: expect.arrayContaining([
-        //   expect.objectContaining({
-        //     locale: expect.any(String),
-        //     value: expect.any(String),
-        //   })
-        // ]),
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+          }),
+        ]),
         locators: expect.arrayContaining([expect.any(String)]),
         ownerId: expect.any(String),
+        permissions: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.any(String),
+            oAuthScopes: expect.arrayContaining([expect.any(String)]),
+          }),
+        ]),
         status: expect.stringMatching(/DRAFT|PUBLIC/),
         type: expect.stringContaining('CustomPanel'),
         typeSettings: expect.objectContaining({
@@ -28,27 +34,4 @@ describe('CustomViewDraft model builder', () => {
       })
     )
   );
-  // it(
-  //   ...createBuilderSpec<CustomViewDraft, CustomViewDraft>(
-  //     'graphql',
-  //     CustomViewDraftModel.random(),
-  //     expect.objectContaining({
-  //       defaultLabel: expect.any(String),
-  //       labelAllLocales: expect.arrayContaining(
-  //         expect.objectContaining({
-  //           locale: expect.any(String),
-  //           value: expect.any(String),
-  //         })
-  //       ),
-  //       locators: expect.arrayContaining(expect.any(String)),
-  //       ownerId: expect.any(String),
-  //       status: expect.stringMatching(/DRAFT|PUBLIC/),
-  //       type: expect.stringContaining('CustomPanel'),
-  //       typeSettings: expect.objectContaining({
-  //         size: expect.stringMatching(/SMALL|LARGE/),
-  //       }),
-  //       url: expect.any(String),
-  //     })
-  //   )
-  // );
 });
