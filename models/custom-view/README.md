@@ -14,10 +14,11 @@ $ pnpm add -D @commercetools-test-data/custom-view
 import {
   CustomView,
   CustomViewDraft,
-  type TCustomView,
-  type TCustomViewDraft,
+  type TCustomViewGraphql,
+  type TCustomViewDraftGraphql,
 } from '@commercetools-test-data/custom-view';
 
-const customView = CustomView.random().build<TCustomView>();
-const customViewDraft = CustomViewDraft.random().build<TCustomViewDraft>();
+const customView = CustomView.random().buildGraphql<TCustomViewGraphql>();
+const customViewDraft =
+  CustomViewDraft.random().buildGraphql<TCustomViewDraftGraphql>();
 ```

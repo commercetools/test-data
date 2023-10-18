@@ -1,6 +1,11 @@
 // Export types
 export * from './custom-view/types';
+export * from './custom-view-permission/types';
+export * from './custom-view-type-settings/types';
 
 // Export models
 export * as CustomView from './custom-view';
 export * as CustomViewDraft from './custom-view/custom-view-draft';
+
+export * as CustomViewPermission from './custom-view-permission';
+export * as CustomViewTypeSettings from './custom-view-type-settings';
