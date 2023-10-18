@@ -1,14 +1,21 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { CustomViewTypeSettings } from './types';
+import type {
+  TCustomViewTypeSettings,
+  TCustomViewTypeSettingsGraphql,
+} from './types';
 
 const transformers = {
-  default: Transformer<CustomViewTypeSettings, CustomViewTypeSettings>(
+  default: Transformer<TCustomViewTypeSettings, TCustomViewTypeSettings>(
     'default',
     {}
   ),
-  graphql: Transformer<CustomViewTypeSettings, CustomViewTypeSettings>(
+  graphql: Transformer<TCustomViewTypeSettings, TCustomViewTypeSettingsGraphql>(
     'graphql',
-    {}
+    {
+      addFields: () => ({
+        __typename: 'CustomViewTypeSettings',
+      }),
+    }
   ),
 };
 

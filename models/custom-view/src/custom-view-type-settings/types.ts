@@ -2,20 +2,18 @@ import { TBuilder } from '@commercetools-test-data/core';
 
 export type CustomViewSize = 'SMALL' | 'LARGE';
 
-export type CustomViewTypeSettings = {
+export type TCustomViewTypeSettings = {
   size?: CustomViewSize;
 };
+export type TCustomViewTypeSettingsGraphql = TCustomViewTypeSettings & {
+  __typename: 'CustomViewTypeSettings';
+};
 
-export type CustomViewTypeSettingsDraft = CustomViewTypeSettings;
-
-export type TCustomViewTypeSettings = CustomViewTypeSettings;
-export type TCustomViewTypeSettingsDraft = CustomViewTypeSettings;
-
-export type TCustomViewTypeSettingsBuilder = TBuilder<CustomViewTypeSettings>;
+export type TCustomViewTypeSettingsBuilder = TBuilder<TCustomViewTypeSettings>;
 export type TCreateCustomViewTypeSettingsBuilder =
   () => TCustomViewTypeSettingsBuilder;
 
 export type TCustomViewTypeSettingsDraftBuilder =
-  TBuilder<CustomViewTypeSettings>;
+  TBuilder<TCustomViewTypeSettings>;
 export type TCreateCustomViewTypeSettingsDraftBuilder =
   () => TCustomViewTypeSettingsDraftBuilder;

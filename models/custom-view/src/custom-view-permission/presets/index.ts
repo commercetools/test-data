@@ -1,6 +1,4 @@
-import managePermission from './manage-permission';
-import viewPermission from './view-permission';
+import ManageOnlyPermissions from './manage-only-permissions';
+import ViewOnlyPermissions from './view-only-permissions';
 
-const presets = { viewPermission, managePermission };
-
-export default presets;
+export { ViewOnlyPermissions, ManageOnlyPermissions };

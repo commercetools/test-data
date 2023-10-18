@@ -1,7 +1,10 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TCustomViewPermission } from './types';
+import type {
+  TCustomViewPermission,
+  TCustomViewPermissionGraphql,
+} from './types';
 import * as CustomViewPermissionModel from './index';
 
 describe('CustomView model builder', () => {
@@ -10,17 +13,6 @@ describe('CustomView model builder', () => {
       'default',
       CustomViewPermissionModel.random(),
       expect.objectContaining({
-        name: '',
-        oAuthScopes: expect.arrayContaining([]),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TCustomViewPermission, TCustomViewPermission>(
-      'default',
-      CustomViewPermissionModel.presets.viewPermission(),
-      expect.objectContaining({
         name: 'view',
         oAuthScopes: expect.arrayContaining([expect.stringMatching(/^view_/)]),
       })
@@ -28,10 +20,23 @@ describe('CustomView model builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TCustomViewPermission, TCustomViewPermission>(
-      'default',
-      CustomViewPermissionModel.presets.managePermission(),
+    ...createBuilderSpec<TCustomViewPermission, TCustomViewPermissionGraphql>(
+      'graphql',
+      CustomViewPermissionModel.presets.ViewOnlyPermissions(),
       expect.objectContaining({
+        __typename: 'CustomViewPermission',
+        name: 'view',
+        oAuthScopes: expect.arrayContaining([expect.stringMatching(/^view_/)]),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TCustomViewPermission, TCustomViewPermissionGraphql>(
+      'graphql',
+      CustomViewPermissionModel.presets.ManageOnlyPermissions(),
+      expect.objectContaining({
+        __typename: 'CustomViewPermission',
         name: 'manage',
         oAuthScopes: expect.arrayContaining([
           expect.stringMatching(/^manage_/),

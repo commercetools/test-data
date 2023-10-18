@@ -1,14 +1,15 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { CustomView, CustomViewGraphql } from './types';
+import type { TCustomView, TCustomViewGraphql } from './types';
 
 const transformers = {
-  default: Transformer<CustomView, CustomView>('default', {}),
-  graphql: Transformer<CustomView, CustomViewGraphql>('graphql', {
-    addFields: () => {
-      return {
-        __typename: 'CustomView',
-      };
-    },
+  default: Transformer<TCustomView, TCustomView>('default', {
+    buildFields: ['labelAllLocales', 'permissions', 'typeSettings'],
+  }),
+  graphql: Transformer<TCustomView, TCustomViewGraphql>('graphql', {
+    buildFields: ['labelAllLocales', 'permissions', 'typeSettings'],
+    addFields: () => ({
+      __typename: 'CustomView',
+    }),
   }),
 };
 

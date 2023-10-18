@@ -1,14 +1,21 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { CustomViewPermission } from './types';
+import type {
+  TCustomViewPermission,
+  TCustomViewPermissionGraphql,
+} from './types';
 
 const transformers = {
-  default: Transformer<CustomViewPermission, CustomViewPermission>(
+  default: Transformer<TCustomViewPermission, TCustomViewPermission>(
     'default',
     {}
   ),
-  graphql: Transformer<CustomViewPermission, CustomViewPermission>(
+  graphql: Transformer<TCustomViewPermission, TCustomViewPermissionGraphql>(
     'graphql',
-    {}
+    {
+      addFields: () => ({
+        __typename: 'CustomViewPermission',
+      }),
+    }
   ),
 };
 

@@ -1,36 +1,29 @@
 import { LocalizedField } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { CustomViewPermission } from '../../custom-view-permission';
-import { CustomViewTypeSettings } from '../../custom-view-type-settings';
-import { CustomViewDraft } from '../types';
+import * as CustomViewPermission from '../../custom-view-permission';
+import * as CustomViewTypeSettings from '../../custom-view-type-settings';
+import { TCustomViewDraft } from '../types';
 import { defaultLocators } from '../utils';
 
-const generator = Generator<CustomViewDraft>({
+const generator = Generator<TCustomViewDraft>({
   fields: {
-    defaultLabel: 'Selling Trend',
-    labelAllLocales: [
-      LocalizedField.random().build(),
-      LocalizedField.random().build(),
-    ],
+    url: fake((f) => f.internet.url()),
+    defaultLabel: fake((f) => f.commerce.department()),
+    labelAllLocales: fake(() => [LocalizedField.random()]),
+    description: null,
     locators: fake((f) =>
       f.helpers.arrayElements(defaultLocators, {
-        min: 0,
+        min: 1,
         max: defaultLocators.length,
       })
     ),
-    ownerId: fake((f) => f.string.uuid()),
-    permissions: [
-      CustomViewPermission.presets.viewPermission().build(),
-      CustomViewPermission.presets.viewPermission().build(),
-    ],
-    status: fake((f) => f.helpers.arrayElement(['DRAFT', 'PUBLIC'])),
-    type: 'CustomPanel',
-    typeSettings: fake((f) =>
-      CustomViewTypeSettings.presets
-        .customViewPanelSettings(f.helpers.arrayElement(['SMALL', 'LARGE']))
-        .build()
-    ),
-    url: fake((f) => f.internet.url()),
+    permissions: fake(() => [
+      CustomViewPermission.presets.ViewOnlyPermissions(),
+      CustomViewPermission.presets.ManageOnlyPermissions(),
+    ]),
+    status: 'DRAFT',
+    type: fake((f) => f.helpers.arrayElement(['CustomPanel'])),
+    typeSettings: fake((f) => CustomViewTypeSettings.random()),
   },
 });
 

@@ -1,34 +1,61 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { CustomViewDraft } from '../types';
-import * as CustomViewDraftModel from './index';
+import type { TCustomViewDraft } from '../types';
+import * as CustomViewDraft from './index';
 
-describe('CustomViewDraft model builder', () => {
+describe('builder', () => {
   it(
-    ...createBuilderSpec<CustomViewDraft, CustomViewDraft>(
+    ...createBuilderSpec<TCustomViewDraft, TCustomViewDraft>(
       'default',
-      CustomViewDraftModel.random(),
+      CustomViewDraft.random(),
       expect.objectContaining({
         defaultLabel: expect.any(String),
         labelAllLocales: expect.arrayContaining([
           expect.objectContaining({
-            locale: expect.any(String),
+            locale: expect.stringMatching(/^(de|en|es)$/),
             value: expect.any(String),
           }),
         ]),
         locators: expect.arrayContaining([expect.any(String)]),
-        ownerId: expect.any(String),
         permissions: expect.arrayContaining([
           expect.objectContaining({
-            name: expect.any(String),
+            name: expect.stringMatching(/^(view|manage)$/),
             oAuthScopes: expect.arrayContaining([expect.any(String)]),
           }),
         ]),
-        status: expect.stringMatching(/DRAFT|PUBLIC/),
-        type: expect.stringContaining('CustomPanel'),
+        status: 'DRAFT',
+        type: 'CustomPanel',
         typeSettings: expect.objectContaining({
-          size: expect.stringMatching(/SMALL|LARGE/),
+          size: expect.stringMatching(/^(SMALL|LARGE)$/),
+        }),
+        url: expect.any(String),
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TCustomViewDraft, TCustomViewDraft>(
+      'graphql',
+      CustomViewDraft.random(),
+      expect.objectContaining({
+        defaultLabel: expect.any(String),
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.stringMatching(/^(de|en|es)$/),
+            value: expect.any(String),
+          }),
+        ]),
+        locators: expect.arrayContaining([expect.any(String)]),
+        permissions: expect.arrayContaining([
+          expect.objectContaining({
+            name: expect.stringMatching(/^(view|manage)$/),
+            oAuthScopes: expect.arrayContaining([expect.any(String)]),
+          }),
+        ]),
+        status: 'DRAFT',
+        type: 'CustomPanel',
+        typeSettings: expect.objectContaining({
+          size: expect.stringMatching(/^(SMALL|LARGE)$/),
         }),
         url: expect.any(String),
       })

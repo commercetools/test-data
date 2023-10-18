@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
-import type { TCreateCustomViewDraftBuilder, CustomViewDraft } from '../types';
+import type { TCreateCustomViewDraftBuilder, TCustomViewDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
 const ChannelDraft: TCreateCustomViewDraftBuilder = () =>
-  Builder<CustomViewDraft>({
+  Builder<TCustomViewDraft>({
     generator,
     transformers,
   });

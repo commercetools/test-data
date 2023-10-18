@@ -1,23 +1,32 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TCustomViewTypeSettings } from './types';
-import * as CustomViewTypeSettingsModel from './index';
+import type {
+  TCustomViewTypeSettings,
+  TCustomViewTypeSettingsGraphql,
+} from './types';
+import * as CustomViewTypeSettings from './index';
 
-describe('CustomView model builder', () => {
+describe('builder', () => {
   it(
     ...createBuilderSpec<TCustomViewTypeSettings, TCustomViewTypeSettings>(
       'default',
-      CustomViewTypeSettingsModel.random(),
-      expect.objectContaining({})
+      CustomViewTypeSettings.random(),
+      expect.objectContaining({
+        size: expect.stringMatching(/SMALL|LARGE/),
+      })
     )
   );
 
   it(
-    ...createBuilderSpec<TCustomViewTypeSettings, TCustomViewTypeSettings>(
-      'default',
-      CustomViewTypeSettingsModel.presets.customViewPanelSettings('SMALL'),
+    ...createBuilderSpec<
+      TCustomViewTypeSettings,
+      TCustomViewTypeSettingsGraphql
+    >(
+      'graphql',
+      CustomViewTypeSettings.random().size('SMALL'),
       expect.objectContaining({
+        __typename: 'CustomViewTypeSettings',
         size: 'SMALL',
       })
     )

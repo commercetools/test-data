@@ -1,5 +1,3 @@
-import customViewPanelSettings from './custom-view-panel';
-
-const presets = { customViewPanelSettings };
+const presets = {};
 
 export default presets;

@@ -1,5 +1,7 @@
 import { TBuilder } from '@commercetools-test-data/core';
 
+// TODO: generate graphql types and use those
+
 type LocalizedField = {
   id?: string;
   locale: string;
@@ -10,7 +12,7 @@ type CustomViewType = 'CustomPanel';
 
 type CustomViewSize = 'SMALL' | 'LARGE';
 
-type CustomViewStatus = 'DRAFT' | 'PUBLIC';
+type CustomViewStatus = 'DRAFT' | 'PRIVATE_USAGE';
 
 type CustomViewTypeSettings = {
   size?: CustomViewSize;
@@ -40,46 +42,36 @@ export type CustomViewInstallation = {
   updatedAt: string;
 };
 
-export type CustomView = {
-  createdAt: string;
-  defaultLabel: string;
-  description?: string;
+export type TCustomView = {
   id: string;
-  installedBy: CustomViewInstallation[];
-  labelAllLocales: LocalizedField[];
-  locators: string[];
   // owner: OrganizationExtension;
   ownerId: string;
-  permissions: Array<CustomViewPermission>;
+  url: string;
+  defaultLabel: string;
+  description?: string;
+  labelAllLocales: LocalizedField[];
+  locators: string[];
+  permissions: CustomViewPermission[];
   status: CustomViewStatus;
   type: CustomViewType;
   typeSettings?: CustomViewTypeSettings;
+  createdAt: string;
   updatedAt: string;
-  url: string;
 };
-
-export type CustomViewGraphql = CustomView & {
+export type TCustomViewGraphql = TCustomView & {
   __typename: 'CustomView';
 };
 
-export type CustomViewDraft = {
-  defaultLabel: string;
-  description?: string;
-  labelAllLocales: LocalizedField[];
-  locators: string[];
-  ownerId: string;
-  permissions: CustomViewPermission[];
-  type: CustomViewType;
-  typeSettings?: CustomViewTypeSettings;
-  status: CustomViewStatus;
-  url: string;
+export type TCustomViewDraft = Omit<
+  TCustomView,
+  'id' | 'createdAt' | 'updatedAt' | 'ownerId'
+>;
+export type TCustomViewDraftGraphql = TCustomViewDraft & {
+  __typename: 'CustomViewDraftDataInput';
 };
 
-export type TCustomView = CustomView;
-export type TCustomViewDraft = CustomViewDraft;
-
-export type TCustomViewBuilder = TBuilder<CustomView>;
+export type TCustomViewBuilder = TBuilder<TCustomView>;
 export type TCreateCustomViewBuilder = () => TCustomViewBuilder;
 
-export type TCustomViewDraftBuilder = TBuilder<CustomViewDraft>;
+export type TCustomViewDraftBuilder = TBuilder<TCustomViewDraft>;
 export type TCreateCustomViewDraftBuilder = () => TCustomViewDraftBuilder;

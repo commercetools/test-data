@@ -1,19 +1,17 @@
-import { TBuilder } from '@commercetools-test-data/core';
+import type { TBuilder } from '@commercetools-test-data/core';
 
-export type CustomViewPermission = {
+export type TCustomViewPermission = {
   name: string;
   oAuthScopes: string[];
 };
+export type TCustomViewPermissionGraphql = TCustomViewPermission & {
+  __typename: 'CustomViewPermission';
+};
 
-export type CustomViewPermissionDraft = CustomViewPermission;
-
-export type TCustomViewPermission = CustomViewPermission;
-export type TCustomViewPermissionDraft = CustomViewPermission;
-
-export type TCustomViewPermissionBuilder = TBuilder<CustomViewPermission>;
+export type TCustomViewPermissionBuilder = TBuilder<TCustomViewPermission>;
 export type TCreateCustomViewPermissionBuilder =
   () => TCustomViewPermissionBuilder;
 
-export type TCustomViewPermissionDraftBuilder = TBuilder<CustomViewPermission>;
+export type TCustomViewPermissionDraftBuilder = TBuilder<TCustomViewPermission>;
 export type TCreateCustomViewPermissionDraftBuilder =
   () => TCustomViewPermissionDraftBuilder;
