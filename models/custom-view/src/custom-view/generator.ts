@@ -3,8 +3,8 @@ import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as CustomViewPermission from '../custom-view-permission';
 import * as CustomViewTypeSettingsForCustomPanel from '../custom-view-type-settings-for-custom-panel';
+import { defaultLocators } from './constants';
 import { TCustomView } from './types';
-import { defaultLocators } from './utils';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -19,7 +19,7 @@ const generator = Generator<TCustomView>({
     locators: fake((f) =>
       f.helpers.arrayElements(defaultLocators, {
         min: 1,
-        max: defaultLocators.length,
+        max: 4,
       })
     ),
     permissions: fake(() => [
