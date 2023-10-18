@@ -2,26 +2,29 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
-  TCustomViewTypeSettings,
-  TCustomViewTypeSettingsGraphql,
+  TCustomViewTypeSettingsForCustomPanel,
+  TCustomViewTypeSettingsForCustomPanelGraphql,
 } from './types';
 import * as CustomViewTypeSettings from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TCustomViewTypeSettings, TCustomViewTypeSettings>(
+    ...createBuilderSpec<
+      TCustomViewTypeSettingsForCustomPanel,
+      TCustomViewTypeSettingsForCustomPanel
+    >(
       'default',
       CustomViewTypeSettings.random(),
       expect.objectContaining({
-        size: expect.stringMatching(/SMALL|LARGE/),
+        size: expect.stringMatching(/^(SMALL|LARGE)$/),
       })
     )
   );
 
   it(
     ...createBuilderSpec<
-      TCustomViewTypeSettings,
-      TCustomViewTypeSettingsGraphql
+      TCustomViewTypeSettingsForCustomPanel,
+      TCustomViewTypeSettingsForCustomPanelGraphql
     >(
       'graphql',
       CustomViewTypeSettings.random().size('SMALL'),

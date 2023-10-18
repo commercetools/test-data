@@ -1,7 +1,7 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import type { TCustomViewTypeSettings } from './types';
+import type { TCustomViewTypeSettingsForCustomPanel } from './types';
 
-const generator = Generator<TCustomViewTypeSettings>({
+const generator = Generator<TCustomViewTypeSettingsForCustomPanel>({
   fields: {
     // Assumes that the type is `CustomPanel`.
     size: fake((f) => f.helpers.arrayElement(['SMALL', 'LARGE'])),
