@@ -2,8 +2,8 @@ import { LocalizedField } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as CustomViewPermission from '../../custom-view-permission';
 import * as CustomViewTypeSettings from '../../custom-view-type-settings-for-custom-panel';
+import { defaultLocators } from '../constants';
 import { TCustomViewDraft } from '../types';
-import { defaultLocators } from '../utils';
 
 const generator = Generator<TCustomViewDraft>({
   fields: {
