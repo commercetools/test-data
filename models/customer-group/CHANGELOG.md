@@ -1,5 +1,14 @@
 # @commercetools-test-data/customer-group
 
+## 6.4.0
+
+### Patch Changes
+
+- Updated dependencies [[`677867c8`](https://github.com/commercetools/test-data/commit/677867c829ba60bd4c819ad544cc841f7b6d3ece)]:
+  - @commercetools-test-data/commons@6.4.0
+  - @commercetools-test-data/core@6.4.0
+  - @commercetools-test-data/utils@6.4.0
+
 ## 6.3.8
 
 ### Patch Changes
