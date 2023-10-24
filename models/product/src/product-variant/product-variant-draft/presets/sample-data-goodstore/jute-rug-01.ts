@@ -26,19 +26,19 @@ const juteRug01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_449539663-lSkaNtxb.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.1.jpeg'
         )
         .dimensions({ w: 7600, h: 5223 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_447839385-wEisIxmE.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.2.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_405760748-jH1fNEXu.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.3.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
     ])

@@ -26,19 +26,19 @@ const traditionalArmchair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305688619-r47M4s9Q.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.1.jpeg'
         )
         .dimensions({ w: 2500, h: 2500 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305687866-ED2hLSUD.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.2.jpeg'
         )
         .dimensions({ w: 2500, h: 2500 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305688508-6hRWGih2.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.3.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
     ])

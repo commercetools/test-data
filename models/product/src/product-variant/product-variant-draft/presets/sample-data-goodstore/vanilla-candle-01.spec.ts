@@ -31,7 +31,7 @@ describe(`with vanillaCandle01 preset`, () => {
               "w": 5819,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745883-yypEo7X3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -39,7 +39,7 @@ describe(`with vanillaCandle01 preset`, () => {
               "w": 6214,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474610-dhOQAd9h.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -114,7 +114,7 @@ describe(`with vanillaCandle01 preset`, () => {
               "width": 5819,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745883-yypEo7X3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -122,7 +122,7 @@ describe(`with vanillaCandle01 preset`, () => {
               "width": 6214,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474610-dhOQAd9h.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.2.jpeg",
           },
         ],
         "key": undefined,

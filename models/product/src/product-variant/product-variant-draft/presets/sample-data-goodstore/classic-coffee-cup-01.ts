@@ -26,13 +26,13 @@ const classicCoffeeCup01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Classic%20Coffee%20Cup-WKYAx6HB.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.1.jpeg'
         )
         .dimensions({ w: 6000, h: 4000 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_549486132-p88nilwV.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.2.jpeg'
         )
         .dimensions({ w: 4153, h: 3840 }),
     ])

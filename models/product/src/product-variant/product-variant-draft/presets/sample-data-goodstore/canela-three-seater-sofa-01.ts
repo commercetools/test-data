@@ -26,13 +26,13 @@ const canelaThreeSeaterSofa01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Canela%203-Seater%20Sofa-y5sV4Zny.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.1.jpeg'
         )
         .dimensions({ w: 5029, h: 3353 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/sofa%20(1)-Y1K6YUDE.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.2.jpeg'
         )
         .dimensions({ w: 1170, h: 780 }),
     ])

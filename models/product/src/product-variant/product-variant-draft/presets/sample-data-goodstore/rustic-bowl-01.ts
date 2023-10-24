@@ -26,7 +26,7 @@ const rusticBowl01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Rustic%20Bowl-eVQClQh7.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Bowl-1.1.jpeg'
         )
         .dimensions({ w: 5105, h: 3280 }),
     ])

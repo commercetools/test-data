@@ -26,13 +26,13 @@ const ellaSquarePlate01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_96107425-uNhRfSVg.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ella_Square_Plate-1.1.jpeg'
         )
         .dimensions({ w: 5692, h: 3412 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_297660480-6pQH9vjF.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ella_Square_Plate-1.2.jpeg'
         )
         .dimensions({ w: 7360, h: 4912 }),
     ])

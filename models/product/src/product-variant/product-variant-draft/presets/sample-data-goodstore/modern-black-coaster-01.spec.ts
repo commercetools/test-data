@@ -55,7 +55,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
               "w": 2912,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_45118888-JuHg_hZC.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Black_Coaster-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -63,7 +63,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
               "w": 2912,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_49535431-zEkdS7Vb.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Black_Coaster-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -150,7 +150,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
               "width": 2912,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_45118888-JuHg_hZC.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Black_Coaster-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -158,7 +158,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
               "width": 2912,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_49535431-zEkdS7Vb.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Black_Coaster-1.2.jpeg",
           },
         ],
         "key": undefined,

@@ -54,7 +54,7 @@ describe(`with ashenRug01 preset`, () => {
               "w": 4500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458700-8eM42pqK.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ashen_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -62,7 +62,7 @@ describe(`with ashenRug01 preset`, () => {
               "w": 4500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458689-9cU_vBM2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ashen_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -149,7 +149,7 @@ describe(`with ashenRug01 preset`, () => {
               "width": 4500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458700-8eM42pqK.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ashen_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -157,7 +157,7 @@ describe(`with ashenRug01 preset`, () => {
               "width": 4500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_269458689-9cU_vBM2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ashen_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,

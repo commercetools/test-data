@@ -26,7 +26,7 @@ const patternedPillowCover02 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Patterned%20Pillow%20Cov-8qpixl4F.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Patterned_Pillow_Cover-2.1.jpeg'
         )
         .dimensions({ w: 6047, h: 4031 }),
     ])

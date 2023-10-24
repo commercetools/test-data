@@ -26,13 +26,13 @@ const ryeWhiskeyGlass01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_88971003-g055TppL.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rye_Whiskey_Glass-1.1.jpeg'
         )
         .dimensions({ w: 2848, h: 2990 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_99151746-BtymsMi_.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rye_Whiskey_Glass-1.2.jpeg'
         )
         .dimensions({ w: 2632, h: 2268 }),
     ])

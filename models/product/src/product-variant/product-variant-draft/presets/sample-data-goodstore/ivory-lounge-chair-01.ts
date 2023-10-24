@@ -26,19 +26,19 @@ const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_425997376-rgouAPnE.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ivory_Lounge_Chair-1.1.jpeg'
         )
         .dimensions({ w: 5500, h: 4400 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_433015214-W7glmC_k.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ivory_Lounge_Chair-1.2.jpeg'
         )
         .dimensions({ w: 3375, h: 4500 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_417425585-8KQEao5y.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ivory_Lounge_Chair-1.3.jpeg'
         )
         .dimensions({ w: 3750, h: 5000 }),
     ])

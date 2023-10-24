@@ -47,7 +47,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "w": 5035,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_225174101-6XExeL2D.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -55,7 +55,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "w": 1000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_202436963-ZB2HxGeB.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -63,7 +63,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "w": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377510554-dyXzuIQC.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -146,7 +146,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "width": 5035,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_225174101-6XExeL2D.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -154,7 +154,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "width": 1000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_202436963-ZB2HxGeB.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -162,7 +162,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
               "width": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377510554-dyXzuIQC.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.3.jpeg",
           },
         ],
         "key": undefined,

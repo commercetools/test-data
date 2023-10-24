@@ -26,7 +26,7 @@ const abigailLoungeChair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_378975371-myB5QCrw.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Abigail_Lounge_Chair-1.1.jpeg'
         )
         .dimensions({ w: 5000, h: 4000 }),
     ])

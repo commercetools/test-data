@@ -26,13 +26,13 @@ const classicServingTray01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_576051573-RimbK5GO.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.1.jpeg'
         )
         .dimensions({ w: 4000, h: 3000 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_569763663-QLatH53Y.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.2.jpeg'
         )
         .dimensions({ w: 6240, h: 4160 }),
     ])

@@ -26,13 +26,13 @@ const vanillaCandle01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745883-yypEo7X3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.1.jpeg'
         )
         .dimensions({ w: 5819, h: 3879 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474610-dhOQAd9h.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Vanilla_Candle-1.2.jpeg'
         )
         .dimensions({ w: 6214, h: 4143 }),
     ])

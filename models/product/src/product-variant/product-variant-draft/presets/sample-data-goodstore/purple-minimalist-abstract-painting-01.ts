@@ -26,7 +26,7 @@ const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_528254692-mZUzyQP9.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Purple_Minimalist_Abstract_Painting-1.1.jpeg'
         )
         .dimensions({ w: 3148, h: 2903 }),
     ])

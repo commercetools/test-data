@@ -26,7 +26,7 @@ const edgarArmchair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_438943116-tYXWisJi.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Edgar_Armchair-1.1.jpeg'
         )
         .dimensions({ w: 5000, h: 4000 }),
     ])

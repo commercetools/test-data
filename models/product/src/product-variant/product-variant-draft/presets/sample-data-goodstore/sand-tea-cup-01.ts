@@ -26,7 +26,7 @@ const sandTeaCup01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Sand%20Tea%20Cup-yM4SUI5o.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sand_Tea_Cup-1.1.jpeg'
         )
         .dimensions({ w: 6046, h: 4020 }),
     ])

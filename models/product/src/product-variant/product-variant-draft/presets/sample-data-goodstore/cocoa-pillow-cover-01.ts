@@ -26,7 +26,7 @@ const cocoaPillowCover01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Cocoa%20Pillow%20Cover-W9ZgnFgU.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cocoa_Pillow_Cover-1.1.jpeg'
         )
         .dimensions({ w: 6240, h: 4160 }),
     ])

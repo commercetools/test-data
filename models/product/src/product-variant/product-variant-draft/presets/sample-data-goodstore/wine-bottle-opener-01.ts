@@ -26,7 +26,7 @@ const wineBottleOpener01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_244081706-6sBqDCbm.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Wine_Bottle_Opener-1.1.jpeg'
         )
         .dimensions({ w: 5184, h: 3456 }),
     ])

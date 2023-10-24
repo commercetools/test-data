@@ -26,7 +26,7 @@ const brunoChair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Bruno%20Chair-I8CgximE.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Bruno_Chair-1.1.jpeg'
         )
         .dimensions({ w: 6473, h: 4315 }),
     ])

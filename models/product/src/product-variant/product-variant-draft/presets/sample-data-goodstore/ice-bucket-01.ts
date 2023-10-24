@@ -26,7 +26,7 @@ const iceBucket01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_429585249-GI0q3D7S.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Ice_Bucket-1.1.jpeg'
         )
         .dimensions({ w: 5072, h: 4992 }),
     ])
