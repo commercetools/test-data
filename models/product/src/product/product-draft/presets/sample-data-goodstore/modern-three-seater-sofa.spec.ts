@@ -107,7 +107,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369085-YrPs6-AN.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -115,7 +115,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302368965-v3zLuGxk.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -123,7 +123,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369766-4ePJc6Jk.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -131,7 +131,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "w": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369724-aEvV9s8N.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
             },
           ],
           "key": undefined,
@@ -306,7 +306,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369085-YrPs6-AN.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -314,7 +314,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302368965-v3zLuGxk.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -322,7 +322,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369766-4ePJc6Jk.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -330,7 +330,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
                 "width": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_302369724-aEvV9s8N.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
             },
           ],
           "key": undefined,

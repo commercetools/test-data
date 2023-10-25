@@ -78,7 +78,7 @@ describe(`with comfortCoffeeMug preset`, () => {
                 "w": 2340,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Comfort%20Coffee%20Mug-G7JxJ2T_.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Comfort_Coffee_Mug-1.1.jpeg",
             },
           ],
           "key": undefined,

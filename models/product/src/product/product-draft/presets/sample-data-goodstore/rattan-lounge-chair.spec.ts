@@ -92,7 +92,15 @@ describe(`with rattanLoungeChair preset`, () => {
                 "w": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_433585415-Va2aMUo1.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.1.jpeg",
+            },
+            {
+              "dimensions": {
+                "h": 4000,
+                "w": 5000,
+              },
+              "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -257,7 +265,15 @@ describe(`with rattanLoungeChair preset`, () => {
                 "width": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_433585415-Va2aMUo1.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.1.jpeg",
+            },
+            {
+              "dimensions": {
+                "height": 4000,
+                "width": 5000,
+              },
+              "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.2.jpeg",
             },
           ],
           "key": undefined,

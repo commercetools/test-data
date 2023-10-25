@@ -67,7 +67,7 @@ describe(`with evergreenCandle preset`, () => {
                 "w": 3840,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_537837949-oKQ-Kd3Q.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -75,7 +75,7 @@ describe(`with evergreenCandle preset`, () => {
                 "w": 3840,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_537917105-H0lwB1x2.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -83,7 +83,7 @@ describe(`with evergreenCandle preset`, () => {
                 "w": 4480,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_485090921-6JFeqs-M.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.3.jpeg",
             },
           ],
           "key": undefined,

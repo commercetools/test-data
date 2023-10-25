@@ -96,7 +96,7 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
                 "w": 5029,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Canela%203-Seater%20Sofa-y5sV4Zny.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -104,7 +104,7 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
                 "w": 1170,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/sofa%20(1)-Y1K6YUDE.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -269,7 +269,7 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
                 "width": 5029,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Canela%203-Seater%20Sofa-y5sV4Zny.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -277,7 +277,7 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
                 "width": 1170,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/sofa%20(1)-Y1K6YUDE.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Canela_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,

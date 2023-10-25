@@ -79,7 +79,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419866-oorvaUqv.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -87,7 +87,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419522-HuyvQGhQ.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -95,7 +95,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419242-noY5_ut3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -103,7 +103,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419416-9KGitTwO.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
             },
           ],
           "key": undefined,
@@ -259,7 +259,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419866-oorvaUqv.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -267,7 +267,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419522-HuyvQGhQ.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -275,7 +275,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419242-noY5_ut3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -283,7 +283,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419416-9KGitTwO.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
             },
           ],
           "key": undefined,

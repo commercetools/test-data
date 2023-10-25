@@ -90,7 +90,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305650073-NL2GuIBX.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -98,7 +98,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305650236-phU3WdJ7.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -106,7 +106,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "w": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305652757--mQZtlpW.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -273,7 +273,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305650073-NL2GuIBX.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -281,7 +281,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305650236-phU3WdJ7.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -289,7 +289,7 @@ describe(`with modernGlamDresser preset`, () => {
                 "width": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305652757--mQZtlpW.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Glam_Dresser-1.3.jpeg",
             },
           ],
           "key": undefined,

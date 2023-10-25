@@ -83,7 +83,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305725113--ZsI7lcq.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -91,7 +91,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305725519-jQaojt01.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -99,7 +99,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305724833-zQxn71Iv.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -107,7 +107,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "w": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305726730-LruJzato.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.4.jpeg",
             },
           ],
           "key": undefined,
@@ -264,7 +264,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305725113--ZsI7lcq.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -272,7 +272,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305725519-jQaojt01.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -280,7 +280,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305724833-zQxn71Iv.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -288,7 +288,7 @@ describe(`with rusticCountryDresser preset`, () => {
                 "width": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305726730-LruJzato.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.4.jpeg",
             },
           ],
           "key": undefined,

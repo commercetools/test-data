@@ -92,7 +92,7 @@ describe(`with emeraldVelvetChair preset`, () => {
                 "w": 6000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_298830220-MjoqNbBu.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Emerald_Velvet_Chair-1.1.jpeg",
             },
           ],
           "key": undefined,

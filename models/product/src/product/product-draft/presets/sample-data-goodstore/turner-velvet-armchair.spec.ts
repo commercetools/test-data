@@ -77,7 +77,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305709767-0-udvSbN.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Turner_Velvet_Armchair-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -85,7 +85,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305709866-REVRy5ph.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Turner_Velvet_Armchair-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -242,7 +242,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305709767-0-udvSbN.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Turner_Velvet_Armchair-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -250,7 +250,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305709866-REVRy5ph.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Turner_Velvet_Armchair-1.2.jpeg",
             },
           ],
           "key": undefined,

@@ -116,7 +116,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817901-_VzWvTVC.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -124,7 +124,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817943-3J3g-cMr.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -132,7 +132,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817870-vzJpmAw7.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -140,7 +140,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305818013-8aFJP8rs.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.4.jpeg",
             },
           ],
           "key": undefined,
@@ -315,7 +315,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817901-_VzWvTVC.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -323,7 +323,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817943-3J3g-cMr.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -331,7 +331,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305817870-vzJpmAw7.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -339,7 +339,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305818013-8aFJP8rs.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Gold_Coffee_Table-1.4.jpeg",
             },
           ],
           "key": undefined,

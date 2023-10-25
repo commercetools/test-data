@@ -110,7 +110,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "w": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257275-3Vpu3-XJ.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -118,7 +118,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "w": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257300-vojQNRph.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -126,7 +126,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "w": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257281-ctQkSsVF.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -282,7 +282,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257208-_HwUPgst.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -290,7 +290,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257222-UCKXA1dW.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.2.jpeg",
               },
               {
                 "dimensions": {
@@ -298,7 +298,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257201-JLg7ngSW.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.3.jpeg",
               },
             ],
             "key": undefined,
@@ -422,7 +422,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178461-bmOvu0su.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
               },
               {
                 "dimensions": {
@@ -430,7 +430,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178544-9vyswQY1.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.2.jpeg",
               },
               {
                 "dimensions": {
@@ -438,7 +438,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178443-saXZIXa5.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.3.jpeg",
               },
             ],
             "key": undefined,
@@ -562,7 +562,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695978-0_umu8m8.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.1.jpeg",
               },
               {
                 "dimensions": {
@@ -570,7 +570,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695983-n4MNAzUn.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.2.jpeg",
               },
               {
                 "dimensions": {
@@ -578,7 +578,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695968-APIXecTC.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.3.jpeg",
               },
             ],
             "key": undefined,
@@ -722,7 +722,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "width": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257275-3Vpu3-XJ.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -730,7 +730,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "width": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257300-vojQNRph.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -738,7 +738,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "width": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257281-ctQkSsVF.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -884,7 +884,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257208-_HwUPgst.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -892,7 +892,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257222-UCKXA1dW.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.2.jpeg",
               },
               {
                 "dimensions": {
@@ -900,7 +900,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_328257201-JLg7ngSW.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.3.jpeg",
               },
             ],
             "key": undefined,
@@ -994,7 +994,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178461-bmOvu0su.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
               },
               {
                 "dimensions": {
@@ -1002,7 +1002,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178544-9vyswQY1.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.2.jpeg",
               },
               {
                 "dimensions": {
@@ -1010,7 +1010,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 4000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_207178443-saXZIXa5.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.3.jpeg",
               },
             ],
             "key": undefined,
@@ -1104,7 +1104,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695978-0_umu8m8.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.1.jpeg",
               },
               {
                 "dimensions": {
@@ -1112,7 +1112,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695983-n4MNAzUn.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.2.jpeg",
               },
               {
                 "dimensions": {
@@ -1120,7 +1120,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_158695968-APIXecTC.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-4.3.jpeg",
               },
             ],
             "key": undefined,
