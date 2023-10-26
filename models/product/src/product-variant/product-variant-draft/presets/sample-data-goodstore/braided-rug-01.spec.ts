@@ -43,7 +43,7 @@ describe(`with braidedRug preset`, () => {
               "w": 4924,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_537776956-1e2PLfaO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -51,7 +51,7 @@ describe(`with braidedRug preset`, () => {
               "w": 5060,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_360665229-HQRPJYSH.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -59,7 +59,7 @@ describe(`with braidedRug preset`, () => {
               "w": 5527,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_530306642-YZizGX81.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -142,7 +142,7 @@ describe(`with braidedRug preset`, () => {
               "width": 4924,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_537776956-1e2PLfaO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -150,7 +150,7 @@ describe(`with braidedRug preset`, () => {
               "width": 5060,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_360665229-HQRPJYSH.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -158,7 +158,7 @@ describe(`with braidedRug preset`, () => {
               "width": 5527,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_530306642-YZizGX81.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,

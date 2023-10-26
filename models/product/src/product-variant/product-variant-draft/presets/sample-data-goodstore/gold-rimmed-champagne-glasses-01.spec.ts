@@ -31,7 +31,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "w": 2192,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_324635452-3Zz1APY0.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -39,7 +39,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "w": 5143,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_344282685-gcyWcmSc.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -47,7 +47,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "w": 6869,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_345693811-G_NTG3Ju.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -55,7 +55,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "w": 8080,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_347188911-EjT8SgdN.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -130,7 +130,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "width": 2192,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_324635452-3Zz1APY0.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -138,7 +138,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "width": 5143,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_344282685-gcyWcmSc.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -146,7 +146,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "width": 6869,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_345693811-G_NTG3Ju.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -154,7 +154,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
               "width": 8080,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_347188911-EjT8SgdN.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.3.jpeg",
           },
         ],
         "key": undefined,

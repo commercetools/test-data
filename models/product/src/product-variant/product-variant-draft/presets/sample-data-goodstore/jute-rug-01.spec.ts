@@ -51,7 +51,7 @@ describe(`with juteRug01 preset`, () => {
               "w": 7600,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_449539663-lSkaNtxb.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -59,7 +59,7 @@ describe(`with juteRug01 preset`, () => {
               "w": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_447839385-wEisIxmE.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -67,7 +67,7 @@ describe(`with juteRug01 preset`, () => {
               "w": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_405760748-jH1fNEXu.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -154,7 +154,7 @@ describe(`with juteRug01 preset`, () => {
               "width": 7600,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_449539663-lSkaNtxb.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -162,7 +162,7 @@ describe(`with juteRug01 preset`, () => {
               "width": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_447839385-wEisIxmE.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -170,7 +170,7 @@ describe(`with juteRug01 preset`, () => {
               "width": 5760,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_405760748-jH1fNEXu.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Jute_Rug-1.3.jpeg",
           },
         ],
         "key": undefined,

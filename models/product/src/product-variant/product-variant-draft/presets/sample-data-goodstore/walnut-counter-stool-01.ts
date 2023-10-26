@@ -26,7 +26,7 @@ const walnutCounterStool01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Walnut%20Counter%20Stool-z5z1HoAa.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Walnut_Counter_Stool-1.1.jpeg'
         )
         .dimensions({ w: 5906, h: 5906 }),
     ])

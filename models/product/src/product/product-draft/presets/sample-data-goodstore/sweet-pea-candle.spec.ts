@@ -68,7 +68,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "w": 5540,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745843-IMV5MNuL.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -76,7 +76,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "w": 6720,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745652-REwpxgGe.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -84,7 +84,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "w": 6640,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474481-Pc-w_Zeb.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -237,7 +237,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "width": 5540,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745843-IMV5MNuL.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -245,7 +245,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "width": 6720,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745652-REwpxgGe.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.2.jpeg",
             },
             {
               "dimensions": {
@@ -253,7 +253,7 @@ describe(`with sweetPeaCandle preset`, () => {
                 "width": 6640,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474481-Pc-w_Zeb.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.3.jpeg",
             },
           ],
           "key": undefined,

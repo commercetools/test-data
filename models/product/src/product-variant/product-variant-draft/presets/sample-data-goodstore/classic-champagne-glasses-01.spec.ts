@@ -35,7 +35,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "w": 5468,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_342788836-I5IBdTcG.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -43,7 +43,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "w": 2571,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_322879771-EwOoSpMl.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -51,7 +51,15 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "w": 3643,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_343603921-pub5DItO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.2.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 2733,
+              "w": 1659,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -130,7 +138,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "width": 5468,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_342788836-I5IBdTcG.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -138,7 +146,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "width": 2571,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_322879771-EwOoSpMl.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -146,7 +154,15 @@ describe(`with classicChampagneGlasses01 preset`, () => {
               "width": 3643,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_343603921-pub5DItO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.2.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 2733,
+              "width": 1659,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.3.jpeg",
           },
         ],
         "key": undefined,

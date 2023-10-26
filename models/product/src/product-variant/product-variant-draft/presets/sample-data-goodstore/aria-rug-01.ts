@@ -26,25 +26,25 @@ const ariaRug01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419866-oorvaUqv.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.1.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419522-HuyvQGhQ.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.2.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419242-noY5_ut3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_355419416-9KGitTwO.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
     ])

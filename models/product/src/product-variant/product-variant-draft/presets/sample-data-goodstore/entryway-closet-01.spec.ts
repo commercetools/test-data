@@ -55,7 +55,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "w": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072189-VkrMZMom.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -63,7 +63,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "w": 4700,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072356-yRaYUH0J.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -71,7 +71,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "w": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072850-w10HxuUM.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -158,7 +158,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "width": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072189-VkrMZMom.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -166,7 +166,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "width": 4700,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072356-yRaYUH0J.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -174,7 +174,7 @@ describe(`with entrywayCloset01 preset`, () => {
               "width": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_377072850-w10HxuUM.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Entryway_Closet-1.3.jpeg",
           },
         ],
         "key": undefined,

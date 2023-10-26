@@ -26,7 +26,7 @@ const marquisTray01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Marquis%20Tray-AGdsW5Ot.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Marquis_Tray-1.1.jpeg'
         )
         .dimensions({ w: 5056, h: 4784 }),
     ])

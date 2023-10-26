@@ -52,7 +52,7 @@ describe(`with classicServingTray01 preset`, () => {
               "w": 4000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_576051573-RimbK5GO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -60,7 +60,7 @@ describe(`with classicServingTray01 preset`, () => {
               "w": 6240,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_569763663-QLatH53Y.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -147,7 +147,7 @@ describe(`with classicServingTray01 preset`, () => {
               "width": 4000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_576051573-RimbK5GO.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -155,7 +155,7 @@ describe(`with classicServingTray01 preset`, () => {
               "width": 6240,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_569763663-QLatH53Y.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Serving_Tray-1.2.jpeg",
           },
         ],
         "key": undefined,

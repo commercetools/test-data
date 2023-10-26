@@ -26,13 +26,13 @@ const cocktailStrainer01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_93371908-9q9vrNXx.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cocktail_Strainer-1.1.jpeg'
         )
         .dimensions({ w: 5472, h: 3648 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_97174497-F5iWBxGv.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cocktail_Strainer-1.2.jpeg'
         )
         .dimensions({ w: 3648, h: 5472 }),
     ])

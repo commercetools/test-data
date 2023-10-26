@@ -26,19 +26,19 @@ const sweetPeaCandle01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745843-IMV5MNuL.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.1.jpeg'
         )
         .dimensions({ w: 5540, h: 3693 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308745652-REwpxgGe.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.2.jpeg'
         )
         .dimensions({ w: 6720, h: 4480 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_310474481-Pc-w_Zeb.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Sweet_Pea_Candle-1.3.jpeg'
         )
         .dimensions({ w: 6640, h: 4427 }),
     ])

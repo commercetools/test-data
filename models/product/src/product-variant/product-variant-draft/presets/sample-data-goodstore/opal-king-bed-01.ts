@@ -26,7 +26,7 @@ const opalKingBed01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Opal%20King%20Bed%20(1)-ijN8T8rE.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Opal_King_Bed-1.1.jpeg'
         )
         .dimensions({ w: 2000, h: 2000 }),
     ])

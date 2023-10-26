@@ -26,13 +26,13 @@ const geometricPillowCase01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_393014656-_k6QZQka.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.1.jpeg'
         )
         .dimensions({ w: 5000, h: 5000 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-yDh7ZXzp.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.2.jpeg'
         )
         .dimensions({ w: 5000, h: 5000 }),
     ])

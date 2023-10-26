@@ -79,7 +79,7 @@ describe(`with classicCoffeeCup preset`, () => {
                 "w": 6000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Classic%20Coffee%20Cup-WKYAx6HB.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -87,7 +87,7 @@ describe(`with classicCoffeeCup preset`, () => {
                 "w": 4153,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_549486132-p88nilwV.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -244,7 +244,7 @@ describe(`with classicCoffeeCup preset`, () => {
                 "width": 6000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Classic%20Coffee%20Cup-WKYAx6HB.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -252,7 +252,7 @@ describe(`with classicCoffeeCup preset`, () => {
                 "width": 4153,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_549486132-p88nilwV.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Coffee_Cup-1.2.jpeg",
             },
           ],
           "key": undefined,

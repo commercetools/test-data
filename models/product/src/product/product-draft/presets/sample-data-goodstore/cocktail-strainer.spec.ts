@@ -51,7 +51,7 @@ describe(`with cocktailStrainer preset`, () => {
                 "w": 5472,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_93371908-9q9vrNXx.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cocktail_Strainer-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -59,7 +59,7 @@ describe(`with cocktailStrainer preset`, () => {
                 "w": 3648,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_97174497-F5iWBxGv.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cocktail_Strainer-1.2.jpeg",
             },
           ],
           "key": undefined,

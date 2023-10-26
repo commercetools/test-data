@@ -76,7 +76,7 @@ describe(`with cloudQueenBed preset`, () => {
                 "w": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_523480805-mqjgJyAt.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cloud_Queen_Bed-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -84,7 +84,7 @@ describe(`with cloudQueenBed preset`, () => {
                 "w": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Cloud%20Queen%20Bed-Hz3YEb5q.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cloud_Queen_Bed-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -241,7 +241,7 @@ describe(`with cloudQueenBed preset`, () => {
                 "width": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_523480805-mqjgJyAt.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cloud_Queen_Bed-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -249,7 +249,7 @@ describe(`with cloudQueenBed preset`, () => {
                 "width": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Cloud%20Queen%20Bed-Hz3YEb5q.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cloud_Queen_Bed-1.2.jpeg",
             },
           ],
           "key": undefined,

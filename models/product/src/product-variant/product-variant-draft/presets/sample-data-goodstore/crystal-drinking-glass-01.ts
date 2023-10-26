@@ -26,7 +26,7 @@ const crystalDrinkingGlass01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/Crystal%20Drinking%20Gla-8ynxF_aM.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Crystal_Drinking_Glass-1.1.jpeg'
         )
         .dimensions({ w: 3000, h: 3000 }),
     ])

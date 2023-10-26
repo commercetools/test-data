@@ -76,7 +76,7 @@ describe(`with walnutCabinet preset`, () => {
                 "w": 4400,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35902325-W9YJNJS_.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Walnut_Cabinet-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -84,7 +84,7 @@ describe(`with walnutCabinet preset`, () => {
                 "w": 4400,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35911040-3WO5GjjU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Walnut_Cabinet-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -241,7 +241,7 @@ describe(`with walnutCabinet preset`, () => {
                 "width": 4400,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35902325-W9YJNJS_.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Walnut_Cabinet-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -249,7 +249,7 @@ describe(`with walnutCabinet preset`, () => {
                 "width": 4400,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_35911040-3WO5GjjU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Walnut_Cabinet-1.2.jpeg",
             },
           ],
           "key": undefined,

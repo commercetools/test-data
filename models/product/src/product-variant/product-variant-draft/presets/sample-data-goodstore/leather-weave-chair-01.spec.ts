@@ -64,7 +64,15 @@ describe(`with leatherWeaveChair01 preset`, () => {
               "w": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_426344321-mhfsESbj.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.1.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 4500,
+              "w": 3375,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -159,7 +167,15 @@ describe(`with leatherWeaveChair01 preset`, () => {
               "width": 5500,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_426344321-mhfsESbj.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.1.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 4500,
+              "width": 3375,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.2.jpeg",
           },
         ],
         "key": undefined,

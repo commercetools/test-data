@@ -26,7 +26,7 @@ const artDecoChair01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_423223088-xpBtdxux.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Art_Deco_Chair-1.1.jpeg'
         )
         .dimensions({ w: 5500, h: 4400 }),
     ])

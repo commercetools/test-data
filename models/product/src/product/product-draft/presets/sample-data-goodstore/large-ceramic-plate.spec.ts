@@ -87,7 +87,7 @@ describe(`with largeCeramicPlate preset`, () => {
                 "w": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934007-L_4CrBFU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -95,7 +95,7 @@ describe(`with largeCeramicPlate preset`, () => {
                 "w": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301935413-qxOvi5pU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -233,7 +233,7 @@ describe(`with largeCeramicPlate preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934165-oaXhJdOH.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -241,7 +241,7 @@ describe(`with largeCeramicPlate preset`, () => {
                   "w": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934702-XDrDFQRS.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-2.2.jpeg",
               },
             ],
             "key": undefined,
@@ -372,7 +372,7 @@ describe(`with largeCeramicPlate preset`, () => {
                 "width": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934007-L_4CrBFU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -380,7 +380,7 @@ describe(`with largeCeramicPlate preset`, () => {
                 "width": 3000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301935413-qxOvi5pU.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -518,7 +518,7 @@ describe(`with largeCeramicPlate preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934165-oaXhJdOH.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -526,7 +526,7 @@ describe(`with largeCeramicPlate preset`, () => {
                   "width": 3000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_301934702-XDrDFQRS.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Large_Ceramic_Plate-2.2.jpeg",
               },
             ],
             "key": undefined,

@@ -26,25 +26,25 @@ const smallWoodenBowl01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_37284922-oEA19cBG.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.1.jpeg'
         )
         .dimensions({ w: 3241, h: 2500 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_169211146-2dp5nmXG.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.3.jpeg'
         )
         .dimensions({ w: 5184, h: 3456 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_178553758-I0ZPe9BG.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.4.jpeg'
         )
         .dimensions({ w: 6144, h: 4096 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_128176135-DWYrV7te.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.2.jpeg'
         )
         .dimensions({ w: 7696, h: 5133 }),
     ])

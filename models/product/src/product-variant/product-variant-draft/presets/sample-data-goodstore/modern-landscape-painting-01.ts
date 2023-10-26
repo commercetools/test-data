@@ -26,7 +26,7 @@ const modernLandscapePainting01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_211960511-0vrLfA3X.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Landscape_Painting-1.1.jpeg'
         )
         .dimensions({ w: 5313, h: 5355 }),
     ])

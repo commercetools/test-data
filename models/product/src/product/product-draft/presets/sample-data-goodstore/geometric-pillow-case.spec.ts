@@ -90,7 +90,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "w": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_393014656-_k6QZQka.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -98,7 +98,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "w": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-yDh7ZXzp.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -242,7 +242,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "w": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905591-cqjZDCoa.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -250,7 +250,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "w": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-jCMMBAQN.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-2.2.jpeg",
               },
             ],
             "key": undefined,
@@ -362,7 +362,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "w": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905063-7BiCdYkA.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-3.1.jpeg",
               },
               {
                 "dimensions": {
@@ -370,7 +370,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "w": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-f5lSi4ra.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-3.2.jpeg",
               },
             ],
             "key": undefined,
@@ -496,7 +496,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "width": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_393014656-_k6QZQka.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -504,7 +504,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "width": 5000,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-yDh7ZXzp.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -642,7 +642,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "width": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905591-cqjZDCoa.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-2.1.jpeg",
               },
               {
                 "dimensions": {
@@ -650,7 +650,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "width": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-jCMMBAQN.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-2.2.jpeg",
               },
             ],
             "key": undefined,
@@ -736,7 +736,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "width": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905063-7BiCdYkA.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-3.1.jpeg",
               },
               {
                 "dimensions": {
@@ -744,7 +744,7 @@ describe(`with geometricPillowCase preset`, () => {
                   "width": 5000,
                 },
                 "label": undefined,
-                "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_428905072-f5lSi4ra.jpeg",
+                "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Geometric_Pillow_Case-3.2.jpeg",
               },
             ],
             "key": undefined,

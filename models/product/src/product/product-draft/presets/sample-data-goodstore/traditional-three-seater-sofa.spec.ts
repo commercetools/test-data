@@ -111,7 +111,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305670594-0wqoZ-dr.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -119,7 +119,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305670456-WsI7wbFD.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -127,7 +127,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305671593-4T4P-rfg.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -307,7 +307,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305670594-0wqoZ-dr.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -315,7 +315,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305670456-WsI7wbFD.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -323,7 +323,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 5760,
               },
               "label": undefined,
-              "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_305671593-4T4P-rfg.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,

@@ -26,13 +26,13 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_571236838-yanGZ5gf.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Double_Walled_Espresso_Glass-1.1.jpeg'
         )
         .dimensions({ w: 3371, h: 3098 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/photo-1585975761152--ZGxY2KXD.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Double_Walled_Espresso_Glass-1.2.jpeg'
         )
         .dimensions({ w: 987, h: 1481 }),
     ])

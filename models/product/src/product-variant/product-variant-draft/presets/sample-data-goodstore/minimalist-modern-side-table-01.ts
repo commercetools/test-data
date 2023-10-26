@@ -26,15 +26,9 @@ const minimalistModernSideTable01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308570068-ftaFzBEg.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Modern_Side_Table-1.1.jpeg'
         )
         .dimensions({ w: 6000, h: 6232 }),
-      ImageDraft.presets
-        .empty()
-        .url(
-          'https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_314247429-Qt_DKygA.jpeg'
-        )
-        .dimensions({ w: 3758, h: 3758 }),
     ])
     .attributes([
       AttributeDraft.random()

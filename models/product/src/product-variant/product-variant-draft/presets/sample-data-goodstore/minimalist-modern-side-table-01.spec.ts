@@ -77,15 +77,7 @@ describe(`with minimalistModernSideTable01 preset`, () => {
               "w": 6000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308570068-ftaFzBEg.jpeg",
-          },
-          {
-            "dimensions": {
-              "h": 3758,
-              "w": 3758,
-            },
-            "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_314247429-Qt_DKygA.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Modern_Side_Table-1.1.jpeg",
           },
         ],
         "key": undefined,
@@ -180,15 +172,7 @@ describe(`with minimalistModernSideTable01 preset`, () => {
               "width": 6000,
             },
             "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_308570068-ftaFzBEg.jpeg",
-          },
-          {
-            "dimensions": {
-              "height": 3758,
-              "width": 3758,
-            },
-            "label": undefined,
-            "url": "https://2eca75039cf911b9bbe5-79bfd3e36f011d786971804e873c4354.ssl.cf3.rackcdn.com/AdobeStock_314247429-Qt_DKygA.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Modern_Side_Table-1.1.jpeg",
           },
         ],
         "key": undefined,
