@@ -1,5 +1,19 @@
 # @commercetools-test-data/product
 
+## 6.4.1
+
+### Patch Changes
+
+- [#419](https://github.com/commercetools/test-data/pull/419) [`5271c549`](https://github.com/commercetools/test-data/commit/5271c5499cc861a9cb66b8ad2cb026ebd391183c) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Updated links to product images for goodstore sample data
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.4.1
+  - @commercetools-test-data/category@6.4.1
+  - @commercetools-test-data/commons@6.4.1
+  - @commercetools-test-data/product-type@6.4.1
+  - @commercetools-test-data/tax-category@6.4.1
+  - @commercetools-test-data/utils@6.4.1
+
 ## 6.4.0
 
 ### Patch Changes
