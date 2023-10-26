@@ -78,7 +78,7 @@ describe(`with nalaTwoSeaterSofa01 preset`, () => {
               "w": 6000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -86,7 +86,7 @@ describe(`with nalaTwoSeaterSofa01 preset`, () => {
               "w": 6000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg",
           },
         ],
         "key": undefined,
@@ -185,7 +185,7 @@ describe(`with nalaTwoSeaterSofa01 preset`, () => {
               "width": 6000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -193,7 +193,7 @@ describe(`with nalaTwoSeaterSofa01 preset`, () => {
               "width": 6000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg",
           },
         ],
         "key": undefined,

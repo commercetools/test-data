@@ -26,13 +26,13 @@ const nalaTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg'
         )
         .dimensions({ w: 6000, h: 3376 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.2.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Nala_Two_Seater_Sofa-1.1.jpeg'
         )
         .dimensions({ w: 6000, h: 3376 }),
     ])

@@ -26,27 +26,27 @@ const classicChampagneGlasses01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.1.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.4.jpeg'
         )
         .dimensions({ w: 5468, h: 4101 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.2.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.1.jpeg'
         )
         .dimensions({ w: 2571, h: 4149 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.2.jpeg'
         )
         .dimensions({ w: 3643, h: 5464 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.4.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Classic_Champagne_Glasses-1.3.jpeg'
         )
-        .dimensions({ w: 3643, h: 5464 }),
+        .dimensions({ w: 1659, h: 2733 }),
     ])
     .attributes([
       AttributeDraft.random().name('productspec').value({

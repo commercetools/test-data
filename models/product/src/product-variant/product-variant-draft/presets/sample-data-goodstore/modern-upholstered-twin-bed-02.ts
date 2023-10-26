@@ -26,12 +26,6 @@ const modernUpholsteredTwinBed02 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.1.jpeg'
-        )
-        .dimensions({ w: 3000, h: 3000 }),
-      ImageDraft.presets
-        .empty()
-        .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.2.jpeg'
         )
         .dimensions({ w: 3000, h: 3000 }),
@@ -39,6 +33,12 @@ const modernUpholsteredTwinBed02 = (): TProductVariantDraftBuilder =>
         .empty()
         .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.3.jpeg'
+        )
+        .dimensions({ w: 3000, h: 3000 }),
+      ImageDraft.presets
+        .empty()
+        .url(
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-2.1.jpeg'
         )
         .dimensions({ w: 3000, h: 3000 }),
     ])

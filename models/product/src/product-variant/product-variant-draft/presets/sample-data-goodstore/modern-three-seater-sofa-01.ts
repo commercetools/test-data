@@ -26,25 +26,25 @@ const modernThreeSeaterSofa01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg'
-        )
-        .dimensions({ w: 2500, h: 2500 }),
-      ImageDraft.presets
-        .empty()
-        .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.2.jpeg'
         )
         .dimensions({ w: 2500, h: 2500 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg'
         )
         .dimensions({ w: 2500, h: 2500 }),
       ImageDraft.presets
         .empty()
         .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg'
+        )
+        .dimensions({ w: 2500, h: 2500 }),
+      ImageDraft.presets
+        .empty()
+        .url(
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
     ])

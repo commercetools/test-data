@@ -38,13 +38,13 @@ const goldRimmedChampagneGlasses01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.4.jpeg'
         )
         .dimensions({ w: 6869, h: 3435 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.4.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Gold_Rimmed_Champagne_Glasses-1.3.jpeg'
         )
         .dimensions({ w: 8080, h: 5077 }),
     ])

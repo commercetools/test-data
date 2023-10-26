@@ -111,7 +111,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -119,7 +119,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -127,7 +127,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "w": 5760,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,
@@ -307,7 +307,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
             },
             {
               "dimensions": {
@@ -315,7 +315,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -323,7 +323,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
                 "width": 5760,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Three_Seater_Sofa-1.2.jpeg",
             },
           ],
           "key": undefined,

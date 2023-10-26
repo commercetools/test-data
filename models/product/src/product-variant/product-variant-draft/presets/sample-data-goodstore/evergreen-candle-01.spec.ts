@@ -55,7 +55,7 @@ describe(`with evergreenCandle01 preset`, () => {
               "w": 3840,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -63,7 +63,7 @@ describe(`with evergreenCandle01 preset`, () => {
               "w": 4480,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -154,7 +154,7 @@ describe(`with evergreenCandle01 preset`, () => {
               "width": 3840,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -162,7 +162,7 @@ describe(`with evergreenCandle01 preset`, () => {
               "width": 4480,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Evergreen_Candle-1.2.jpeg",
           },
         ],
         "key": undefined,

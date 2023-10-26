@@ -63,7 +63,7 @@ describe(`with traditionalArmchair01 preset`, () => {
               "w": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -71,7 +71,7 @@ describe(`with traditionalArmchair01 preset`, () => {
               "w": 5760,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -166,7 +166,7 @@ describe(`with traditionalArmchair01 preset`, () => {
               "width": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -174,7 +174,7 @@ describe(`with traditionalArmchair01 preset`, () => {
               "width": 5760,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_Armchair-1.2.jpeg",
           },
         ],
         "key": undefined,

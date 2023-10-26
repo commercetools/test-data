@@ -85,6 +85,14 @@ describe(`with minimalistCedarNightstand preset`, () => {
                 "w": 4011,
               },
               "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg",
+            },
+            {
+              "dimensions": {
+                "h": 6016,
+                "w": 4011,
+              },
+              "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.1.jpeg",
             },
             {
@@ -94,14 +102,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
               },
               "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.2.jpeg",
-            },
-            {
-              "dimensions": {
-                "h": 6016,
-                "w": 4011,
-              },
-              "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -274,6 +274,14 @@ describe(`with minimalistCedarNightstand preset`, () => {
                 "width": 4011,
               },
               "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg",
+            },
+            {
+              "dimensions": {
+                "height": 6016,
+                "width": 4011,
+              },
+              "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.1.jpeg",
             },
             {
@@ -283,14 +291,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
               },
               "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.2.jpeg",
-            },
-            {
-              "dimensions": {
-                "height": 6016,
-                "width": 4011,
-              },
-              "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg",
             },
           ],
           "key": undefined,

@@ -80,14 +80,6 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
               "w": 4000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
-          },
-          {
-            "dimensions": {
-              "h": 4000,
-              "w": 4000,
-            },
-            "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.2.jpeg",
           },
           {
@@ -97,6 +89,14 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.3.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 4000,
+              "w": 4000,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
           },
         ],
         "key": undefined,
@@ -191,14 +191,6 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
               "width": 4000,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
-          },
-          {
-            "dimensions": {
-              "height": 4000,
-              "width": 4000,
-            },
-            "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.2.jpeg",
           },
           {
@@ -208,6 +200,14 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.3.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 4000,
+              "width": 4000,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Upholstered_Twin_Bed-3.1.jpeg",
           },
         ],
         "key": undefined,

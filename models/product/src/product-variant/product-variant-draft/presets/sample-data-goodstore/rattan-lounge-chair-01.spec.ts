@@ -72,8 +72,8 @@ describe(`with rattanLoungeChair01 preset`, () => {
           },
           {
             "dimensions": {
-              "h": 4000,
-              "w": 5000,
+              "h": 4500,
+              "w": 3375,
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.2.jpeg",
@@ -175,8 +175,8 @@ describe(`with rattanLoungeChair01 preset`, () => {
           },
           {
             "dimensions": {
-              "height": 4000,
-              "width": 5000,
+              "height": 4500,
+              "width": 3375,
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.2.jpeg",

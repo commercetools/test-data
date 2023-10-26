@@ -68,8 +68,8 @@ describe(`with leatherWeaveChair01 preset`, () => {
           },
           {
             "dimensions": {
-              "h": 4400,
-              "w": 5500,
+              "h": 4500,
+              "w": 3375,
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.2.jpeg",
@@ -171,8 +171,8 @@ describe(`with leatherWeaveChair01 preset`, () => {
           },
           {
             "dimensions": {
-              "height": 4400,
-              "width": 5500,
+              "height": 4500,
+              "width": 3375,
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.2.jpeg",

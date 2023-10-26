@@ -77,7 +77,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
               "w": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -85,7 +85,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
               "w": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.1.jpeg",
           },
           {
             "dimensions": {
@@ -188,7 +188,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
               "width": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -196,7 +196,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
               "width": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Traditional_L_Seater_Sofa-1.1.jpeg",
           },
           {
             "dimensions": {

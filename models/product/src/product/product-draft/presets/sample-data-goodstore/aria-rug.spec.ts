@@ -95,7 +95,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
             },
             {
               "dimensions": {
@@ -103,7 +103,7 @@ describe(`with ariaRug preset`, () => {
                 "w": 5200,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
             },
           ],
           "key": undefined,
@@ -275,7 +275,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
             },
             {
               "dimensions": {
@@ -283,7 +283,7 @@ describe(`with ariaRug preset`, () => {
                 "width": 5200,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg",
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg",
             },
           ],
           "key": undefined,

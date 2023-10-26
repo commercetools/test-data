@@ -32,13 +32,13 @@ const cottonTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.2.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.3.jpeg'
         )
         .dimensions({ w: 1000, h: 637 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Cotton_Two_Seater_Sofa-1.2.jpeg'
         )
         .dimensions({ w: 5760, h: 3840 }),
     ])

@@ -34,7 +34,7 @@ const leatherWeaveChair01 = (): TProductVariantDraftBuilder =>
         .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Leather_Weave_Chair-1.2.jpeg'
         )
-        .dimensions({ w: 5500, h: 4400 }),
+        .dimensions({ w: 3375, h: 4500 }),
     ])
     .attributes([
       AttributeDraft.random()

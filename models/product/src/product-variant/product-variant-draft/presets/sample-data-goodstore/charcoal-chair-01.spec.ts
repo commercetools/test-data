@@ -68,7 +68,7 @@ describe(`with charcoalChair01 preset`, () => {
               "w": 3300,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -76,7 +76,7 @@ describe(`with charcoalChair01 preset`, () => {
               "w": 5906,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.1.jpeg",
           },
         ],
         "key": undefined,
@@ -171,7 +171,7 @@ describe(`with charcoalChair01 preset`, () => {
               "width": 3300,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.1.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.2.jpeg",
           },
           {
             "dimensions": {
@@ -179,7 +179,7 @@ describe(`with charcoalChair01 preset`, () => {
               "width": 5906,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Charcoal_Chair-1.1.jpeg",
           },
         ],
         "key": undefined,

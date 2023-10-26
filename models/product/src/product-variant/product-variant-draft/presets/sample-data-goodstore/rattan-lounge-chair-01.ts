@@ -34,7 +34,7 @@ const rattanLoungeChair01 = (): TProductVariantDraftBuilder =>
         .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rattan_Lounge_Chair-1.2.jpeg'
         )
-        .dimensions({ w: 5000, h: 4000 }),
+        .dimensions({ w: 3375, h: 4500 }),
     ])
     .attributes([
       AttributeDraft.random().name('productspec').value({

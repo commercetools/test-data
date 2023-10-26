@@ -83,14 +83,6 @@ describe(`with rusticCountryDresser preset`, () => {
                 "w": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
-            },
-            {
-              "dimensions": {
-                "h": 2500,
-                "w": 2500,
-              },
-              "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.2.jpeg",
             },
             {
@@ -100,6 +92,14 @@ describe(`with rusticCountryDresser preset`, () => {
               },
               "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.3.jpeg",
+            },
+            {
+              "dimensions": {
+                "h": 2500,
+                "w": 2500,
+              },
+              "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {
@@ -264,14 +264,6 @@ describe(`with rusticCountryDresser preset`, () => {
                 "width": 2500,
               },
               "label": undefined,
-              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
-            },
-            {
-              "dimensions": {
-                "height": 2500,
-                "width": 2500,
-              },
-              "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.2.jpeg",
             },
             {
@@ -281,6 +273,14 @@ describe(`with rusticCountryDresser preset`, () => {
               },
               "label": undefined,
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.3.jpeg",
+            },
+            {
+              "dimensions": {
+                "height": 2500,
+                "width": 2500,
+              },
+              "label": undefined,
+              "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Rustic_Country_Dresser-1.1.jpeg",
             },
             {
               "dimensions": {

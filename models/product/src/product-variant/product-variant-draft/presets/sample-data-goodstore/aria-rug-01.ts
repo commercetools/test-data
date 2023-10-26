@@ -38,13 +38,13 @@ const ariaRug01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
       ImageDraft.presets
         .empty()
         .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.4.jpeg'
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Aria_Rug-1.3.jpeg'
         )
         .dimensions({ w: 5200, h: 3900 }),
     ])

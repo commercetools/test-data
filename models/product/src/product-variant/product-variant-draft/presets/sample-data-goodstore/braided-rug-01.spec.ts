@@ -51,7 +51,7 @@ describe(`with braidedRug preset`, () => {
               "w": 5060,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -59,7 +59,7 @@ describe(`with braidedRug preset`, () => {
               "w": 5527,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -150,7 +150,7 @@ describe(`with braidedRug preset`, () => {
               "width": 5060,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -158,7 +158,7 @@ describe(`with braidedRug preset`, () => {
               "width": 5527,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Braided_Rug-1.2.jpeg",
           },
         ],
         "key": undefined,

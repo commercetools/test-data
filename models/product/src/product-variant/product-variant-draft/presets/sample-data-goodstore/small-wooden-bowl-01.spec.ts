@@ -44,7 +44,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "w": 5184,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -52,7 +52,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "w": 6144,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -60,7 +60,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "w": 7696,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.4.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.2.jpeg",
           },
         ],
         "key": undefined,
@@ -147,7 +147,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "width": 5184,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.2.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.3.jpeg",
           },
           {
             "dimensions": {
@@ -155,7 +155,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "width": 6144,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -163,7 +163,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
               "width": 7696,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.4.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Small_Wooden_Bowl-1.2.jpeg",
           },
         ],
         "key": undefined,

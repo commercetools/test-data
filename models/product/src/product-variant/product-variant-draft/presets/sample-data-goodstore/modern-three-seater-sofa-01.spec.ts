@@ -77,14 +77,6 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "w": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
-          },
-          {
-            "dimensions": {
-              "h": 2500,
-              "w": 2500,
-            },
-            "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.2.jpeg",
           },
           {
@@ -93,7 +85,15 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "w": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
+          },
+          {
+            "dimensions": {
+              "h": 2500,
+              "w": 2500,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -101,7 +101,7 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "w": 5760,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
           },
         ],
         "key": undefined,
@@ -196,14 +196,6 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "width": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
-          },
-          {
-            "dimensions": {
-              "height": 2500,
-              "width": 2500,
-            },
-            "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.2.jpeg",
           },
           {
@@ -212,7 +204,15 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "width": 2500,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.1.jpeg",
+          },
+          {
+            "dimensions": {
+              "height": 2500,
+              "width": 2500,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
           },
           {
             "dimensions": {
@@ -220,7 +220,7 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "width": 5760,
             },
             "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.4.jpeg",
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Three_Seater_Sofa-1.3.jpeg",
           },
         ],
         "key": undefined,

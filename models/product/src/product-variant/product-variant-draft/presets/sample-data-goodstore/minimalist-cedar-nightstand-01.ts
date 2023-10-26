@@ -26,6 +26,12 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
       ImageDraft.presets
         .empty()
         .url(
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg'
+        )
+        .dimensions({ w: 4011, h: 6016 }),
+      ImageDraft.presets
+        .empty()
+        .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.1.jpeg'
         )
         .dimensions({ w: 4011, h: 6016 }),
@@ -33,12 +39,6 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
         .empty()
         .url(
           'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.2.jpeg'
-        )
-        .dimensions({ w: 4011, h: 6016 }),
-      ImageDraft.presets
-        .empty()
-        .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Minimalist_Cedar_Nightstand-1.3.jpeg'
         )
         .dimensions({ w: 4011, h: 6016 }),
     ])
