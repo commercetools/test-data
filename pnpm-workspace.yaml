@@ -1,4 +1,5 @@
 packages:
 - "core"
+- "graphql-types"
 - "models/*"
 - "utils"

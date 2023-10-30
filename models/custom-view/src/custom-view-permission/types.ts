@@ -1,12 +1,11 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TMcSettingsCustomViewPermission as McSettingsCustomViewPermission } from '@commercetools-test-data/graphql-types';
 
-export type TCustomViewPermission = {
-  name: string;
-  oAuthScopes: string[];
-};
-export type TCustomViewPermissionGraphql = TCustomViewPermission & {
-  __typename: 'CustomViewPermission';
-};
+export type TCustomViewPermission = Omit<
+  McSettingsCustomViewPermission,
+  '__typename'
+>;
+export type TCustomViewPermissionGraphql = McSettingsCustomViewPermission;
 
 export type TCustomViewPermissionBuilder = TBuilder<TCustomViewPermission>;
 export type TCreateCustomViewPermissionBuilder =
