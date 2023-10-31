@@ -3,6 +3,10 @@ export * from './custom-view/types';
 export * from './custom-view-permission/types';
 export * from './custom-view-type-settings-for-custom-panel/types';
 
+// Export constants
+export * from './custom-view/constants';
+export * from './custom-view-permission/constants';
+
 // Export models
 export * as CustomView from './custom-view';
 export * as CustomViewDraft from './custom-view/custom-view-draft';
