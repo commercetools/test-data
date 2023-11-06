@@ -1,12 +1,19 @@
-import { Generator } from '@commercetools-test-data/core';
-import sampleSize from 'lodash/sampleSize';
+import { Generator, fake } from '@commercetools-test-data/core';
+import { createRelatedDates } from '@commercetools-test-data/utils';
 import { supportedViewOAuthScopes } from './constants';
 import type { TCustomViewPermission } from './types';
 
+const [getOlderDate, getNewerDate] = createRelatedDates();
+
 const generator = Generator<TCustomViewPermission>({
   fields: {
+    id: fake((f) => f.string.uuid()),
+    createdAt: fake(getOlderDate),
+    updatedAt: fake(getNewerDate),
     name: 'view',
-    oAuthScopes: sampleSize(supportedViewOAuthScopes, 2),
+    oAuthScopes: fake((f) =>
+      f.helpers.arrayElements(supportedViewOAuthScopes, 2)
+    ),
   },
 });
 

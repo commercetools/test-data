@@ -4,7 +4,7 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": ["core", "models/*", "utils"]
+    "packages": ["core", "graphql-types", "models/*", "utils"]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -18,7 +18,8 @@
     "format:md": "prettier --write --parser markdown '**/*.md'",
     "test": "jest --config jest.test.config.js",
     "typecheck": "tsc --noEmit",
-    "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json' && pnpm install --lockfile-only"
+    "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json' && pnpm install --lockfile-only",
+    "generate-types:settings": "graphql-codegen -r dotenv/config --config codegen.settings.yml"
   },
   "dependencies": {
     "@babel/core": "^7.21.0",
@@ -28,12 +29,20 @@
     "@commercetools-frontend/eslint-config-mc-app": "22.11.0",
     "@commitlint/cli": "18.2.0",
     "@commitlint/config-conventional": "18.1.0",
+    "@graphql-codegen/add": "5.0.0",
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/introspection": "4.0.0",
+    "@graphql-codegen/typescript": "4.0.1",
+    "@graphql-codegen/typescript-graphql-files-modules": "3.0.0",
+    "@graphql-codegen/typescript-operations": "4.0.1",
+    "@graphql-codegen/typescript-resolvers": "4.0.1",
     "@manypkg/cli": "0.21.0",
     "@preconstruct/cli": "2.8.1",
     "@types/jest": "^29.4.0",
     "@types/node": "20.8.10",
     "babel-jest": "29.7.0",
     "cross-env": "7.0.3",
+    "dotenv": "16.3.1",
     "eslint": "8.52.0",
     "eslint-formatter-pretty": "5.0.0",
     "find-up": "^6.3.0",
