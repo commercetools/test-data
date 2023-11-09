@@ -64,7 +64,7 @@ export type TCustomViewGraphql = TCustomView & {
 
 export type TCustomViewDraft = Omit<
   TCustomView,
-  'id' | 'createdAt' | 'updatedAt' | 'ownerId'
+  'id' | 'createdAt' | 'updatedAt' | 'ownerId' | 'status'
 >;
 export type TCustomViewDraftGraphql = TCustomViewDraft & {
   __typename: 'CustomViewDraftDataInput';

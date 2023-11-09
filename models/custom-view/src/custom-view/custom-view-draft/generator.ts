@@ -21,7 +21,6 @@ const generator = Generator<TCustomViewDraft>({
       CustomViewPermission.presets.ViewOnlyPermissions(),
       CustomViewPermission.presets.ManageOnlyPermissions(),
     ]),
-    status: 'DRAFT',
     type: fake((f) => f.helpers.arrayElement(['CustomPanel'])),
     typeSettings: fake((f) => CustomViewTypeSettings.random()),
   },

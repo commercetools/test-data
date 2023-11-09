@@ -24,7 +24,6 @@ describe('builder', () => {
             oAuthScopes: expect.arrayContaining([expect.any(String)]),
           }),
         ]),
-        status: 'DRAFT',
         type: 'CustomPanel',
         typeSettings: expect.objectContaining({
           size: expect.stringMatching(/^(SMALL|LARGE)$/),
@@ -52,7 +51,6 @@ describe('builder', () => {
             oAuthScopes: expect.arrayContaining([expect.any(String)]),
           }),
         ]),
-        status: 'DRAFT',
         type: 'CustomPanel',
         typeSettings: expect.objectContaining({
           size: expect.stringMatching(/^(SMALL|LARGE)$/),
