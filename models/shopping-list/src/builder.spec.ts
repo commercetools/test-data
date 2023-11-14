@@ -73,18 +73,8 @@ describe('builder', () => {
         description: expect.objectContaining({
           en: expect.any(String),
         }),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        textLineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
+        lineItems: [],
+        textLineItems: [],
         deleteDaysAfterLastModification: null,
         anonymousId: expect.any(String),
         store: null,
@@ -109,46 +99,70 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        name: expect.objectContaining({
-          de: expect.any(String),
-          en: expect.any(String),
-          fr: expect.any(String),
-        }),
+        name: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: 'customer',
         }),
-        slug: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        lineItems: expect.arrayContaining([
+        slug: expect.arrayContaining([
           expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
+            locale: 'en',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            locale: 'de',
+            value: expect.any(String),
+          }),
+          expect.objectContaining({
+            locale: 'fr',
+            value: expect.any(String),
           }),
         ]),
-        textLineItems: expect.arrayContaining([
+        description: expect.arrayContaining([
           expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+          expect.objectContaining({
+            locale: 'de',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+          expect.objectContaining({
+            locale: 'fr',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
           }),
         ]),
+        lineItems: [],
+        textLineItems: [],
         deleteDaysAfterLastModification: null,
         anonymousId: expect.any(String),
         store: null,
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
         }),
         lastModifiedAt: expect.any(String),
         lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
         }),
       })
     )

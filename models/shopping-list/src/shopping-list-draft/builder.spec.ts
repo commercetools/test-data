@@ -72,7 +72,7 @@ describe('builder', () => {
     )
   );
 
-  it.only(
+  it(
     ...createBuilderSpec<TShoppingListDraft, TShoppingListDraftGraphql>(
       'graphql',
       ShoppingListDraft.random(),
@@ -110,14 +110,14 @@ describe('builder', () => {
           id: expect.any(String),
           typeId: 'customer',
         }),
-        descrption: expect.arrayContaining([
+        description: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
             __typename: 'LocalizedString',
           }),
           expect.objectContaining({
-            locale: 'en',
+            locale: 'de',
             value: expect.any(String),
             __typename: 'LocalizedString',
           }),
