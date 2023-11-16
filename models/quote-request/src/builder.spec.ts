@@ -2,7 +2,11 @@
 /* eslint-disable jest/no-disabled-tests */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TQuoteRequest, TQuoteRequestGraphql } from './types';
+import type {
+  TQuoteRequest,
+  TQuoteRequestRest,
+  TQuoteRequestGraphql,
+} from './types';
 import * as QuoteRequest from './index';
 
 describe('builder', () => {
@@ -87,7 +91,7 @@ describe('builder', () => {
     )
   );
   it(
-    ...createBuilderSpec<TQuoteRequest, TQuoteRequest>(
+    ...createBuilderSpec<TQuoteRequest, TQuoteRequestRest>(
       'rest',
       QuoteRequest.random(),
       expect.objectContaining({
@@ -232,7 +236,7 @@ describe('builder', () => {
           }),
         ]),
         directDiscounts: expect.arrayContaining([]),
-        state: undefined,
+        state: null,
         stateRef: undefined,
         cart: expect.objectContaining({
           cartState: expect.any(String),

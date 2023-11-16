@@ -1,11 +1,20 @@
 import {
+  StoreKeyReference,
+  BusinessUnitKeyReference,
+} from '@commercetools/platform-sdk';
+import {
   Reference,
+  KeyReference,
   TReference,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
-import type { TQuoteRequest, TQuoteRequestGraphql } from './types';
+import type {
+  TQuoteRequest,
+  TQuoteRequestRest,
+  TQuoteRequestGraphql,
+} from './types';
 
 const transformers = {
   default: Transformer<TQuoteRequest, TQuoteRequest>('default', {
@@ -26,7 +35,7 @@ const transformers = {
       'lastModifiedBy',
     ],
   }),
-  rest: Transformer<TQuoteRequest, TQuoteRequest>('rest', {
+  rest: Transformer<TQuoteRequest, TQuoteRequestRest>('rest', {
     buildFields: [
       'customer',
       'customerGroup',
@@ -54,10 +63,9 @@ const transformers = {
         .id(fields.customerGroup?.id)
         .build<TReference<'customer-group'>>();
 
-      const store = Reference.presets.storeReference
-        .storeReference()
-        .id(fields.store?.key)
-        .build<TReference<'store'>>();
+      const store = KeyReference.random()
+        .typeId('store')
+        .key(fields.store?.key) as unknown as StoreKeyReference;
 
       const state = Reference.presets.stateReference
         .stateReference()
@@ -69,10 +77,9 @@ const transformers = {
         .id(fields.cart?.id)
         .build<TReference<'cart'>>();
 
-      const businessUnit = Reference.presets.businessUnitReference
-        .businessUnitReference()
-        .id(fields.businessUnit?.key)
-        .build<TReference<'business-unit'>>();
+      const businessUnit = KeyReference.random()
+        .typeId('business-unit')
+        .key(fields.businessUnit?.key) as unknown as BusinessUnitKeyReference;
 
       return {
         ...fields,
@@ -118,7 +125,6 @@ const transformers = {
 
       const storeRef: TReferenceGraphql = Reference.presets.storeReference
         .storeReference()
-        .key(fields.store?.key)
         .id(fields.store?.id)
         .typeId('store')
         .buildGraphql();
@@ -138,20 +144,15 @@ const transformers = {
       const businessUnitRef: TReferenceGraphql =
         Reference.presets.businessUnitReference
           .businessUnitReference()
-          .key(fields.businessUnit?.key)
           .id(fields.businessUnit?.id)
           .typeId('business-unit')
           .buildGraphql();
 
       return {
         customerRef,
-
         customerGroupRef,
-
         storeRef,
-        state: undefined,
         stateRef: fields.state ? stateRef : undefined,
-
         cartRef,
         businessUnitRef,
         __typename: 'QuoteRequest',

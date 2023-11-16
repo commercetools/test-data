@@ -11,6 +11,7 @@ import type {
 import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
+// Default
 export type TQuoteRequest = Omit<
   QuoteRequest,
   'customer' | 'customerGroup' | 'store' | 'state' | 'cart' | 'businessUnit'
@@ -22,6 +23,9 @@ export type TQuoteRequest = Omit<
   cart: Cart;
   businessUnit: BusinessUnit;
 };
+
+// Rest
+export type TQuoteRequestRest = QuoteRequest;
 export type TQuoteRequestDraft = QuoteRequestDraft;
 
 export type TQuoteRequestGraphql = TQuoteRequest & {
