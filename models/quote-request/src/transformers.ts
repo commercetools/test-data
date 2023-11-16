@@ -65,7 +65,8 @@ const transformers = {
 
       const store = KeyReference.random()
         .typeId('store')
-        .key(fields.store?.key) as unknown as StoreKeyReference;
+        .key(fields.store?.key)
+        .buildRest() as unknown as StoreKeyReference;
 
       const state = Reference.presets.stateReference
         .stateReference()
@@ -79,7 +80,8 @@ const transformers = {
 
       const businessUnit = KeyReference.random()
         .typeId('business-unit')
-        .key(fields.businessUnit?.key) as unknown as BusinessUnitKeyReference;
+        .key(fields.businessUnit?.key)
+        .buildRest() as unknown as BusinessUnitKeyReference;
 
       return {
         ...fields,
