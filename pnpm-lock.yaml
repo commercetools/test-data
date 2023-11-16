@@ -700,9 +700,6 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.23.1
-      '@commercetools-test-data/cart':
-        specifier: 6.4.1
-        version: link:../cart
       '@commercetools-test-data/commons':
         specifier: 6.4.1
         version: link:../commons
