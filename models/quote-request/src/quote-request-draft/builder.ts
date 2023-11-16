@@ -1,10 +1,13 @@
 import { Builder } from '@commercetools-test-data/core';
+import type {
+  TQuoteRequestDraft,
+  TCreateQuoteRequestDraftBuilder,
+} from '../types';
 import generator from './generator';
 import transformers from './transformers';
-import type { TQuoteRequest, TCreateQuoteRequestBuilder } from './types';
 
-const Model: TCreateQuoteRequestBuilder = () =>
-  Builder<TQuoteRequest>({
+const Model: TCreateQuoteRequestDraftBuilder = () =>
+  Builder<TQuoteRequestDraft>({
     generator,
     transformers,
   });

@@ -619,9 +619,6 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
-      '@commercetools-test-data/attribute-definition':
-        specifier: 5.11.2
-        version: 5.11.2
       '@commercetools-test-data/commons':
         specifier: 6.4.2
         version: link:../commons
@@ -638,7 +635,7 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
-  models/quote:
+  models/quote-request:
     dependencies:
       '@babel/runtime':
         specifier: ^7.17.9
@@ -646,15 +643,27 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.23.1
-      '@commercetools-test-data/attribute-definition':
-        specifier: 5.11.2
-        version: 5.11.2
+      '@commercetools-test-data/business-unit':
+        specifier: workspace:^
+        version: link:../business-unit
+      '@commercetools-test-data/cart':
+        specifier: workspace:6.4.2
+        version: link:../cart
       '@commercetools-test-data/commons':
         specifier: 6.4.2
         version: link:../commons
       '@commercetools-test-data/core':
         specifier: 6.4.2
         version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: workspace:6.4.2
+        version: link:../customer
+      '@commercetools-test-data/customer-group':
+        specifier: workspace:6.4.2
+        version: link:../customer-group
+      '@commercetools-test-data/store':
+        specifier: workspace:6.4.2
+        version: link:../store
       '@commercetools-test-data/utils':
         specifier: 6.4.2
         version: link:../../utils
@@ -2605,7 +2614,7 @@ packages:
     resolution: {integrity: sha512-dnWrJTmRR8bCHikJHl9b9HW3gXACCehz4OasrXpMp7sx97ECuBGGNjJhjPhdZNCvMy9mn4BWdplI323IbqsRig==}
     hasBin: true
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@changesets/apply-release-plan': 6.1.4
       '@changesets/assemble-release-plan': 5.2.4
       '@changesets/changelog-git': 0.1.14
@@ -4371,7 +4380,7 @@ packages:
       '@babel/code-frame': 7.18.6
       '@babel/core': 7.21.0
       '@babel/helper-module-imports': 7.21.4
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@preconstruct/hook': 0.4.0
       '@rollup/plugin-alias': 3.1.9(rollup@2.79.1)
       '@rollup/plugin-commonjs': 15.1.0(rollup@2.79.1)
