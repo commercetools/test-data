@@ -8,7 +8,7 @@ const transformers = {
   rest: Transformer<TShoppingListDraft, TShoppingListDraft>('rest', {
     buildFields: ['name', 'slug', 'description', 'customer'],
   }),
-  //only scaffolding provided at this time
+    // Note that the ShoppingListDraft graphql is provided as scaffolding only and may not be complete at this time.
   graphql: Transformer<TShoppingListDraft, TShoppingListDraftGraphql>(
     'graphql',
     {
