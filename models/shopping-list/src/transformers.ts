@@ -22,6 +22,7 @@ const transformers = {
       'lastModifiedBy',
     ],
   }),
+  // Note that the ShoppingList graphql is provided as scaffolding only and may not be complete at this time.
   graphql: Transformer<TShoppingList, TShoppingListGraphql>('graphql', {
     buildFields: [
       'name',
