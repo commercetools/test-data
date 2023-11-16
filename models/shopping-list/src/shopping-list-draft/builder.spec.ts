@@ -71,7 +71,7 @@ describe('builder', () => {
       })
     )
   );
-
+  // Note that the ShoppingListDraft graphql is provided as scaffolding only and may not be complete at this time.
   it(
     ...createBuilderSpec<TShoppingListDraft, TShoppingListDraftGraphql>(
       'graphql',
