@@ -1,8 +1,8 @@
-# @commercetools-test-data/review
+# @commercetools-test-data/shopping-list
 
-This package provides the data model for the commercetools platform `Shopping List` type
+This package provides data models for the commercetools platform `Shopping List` representations.
 
-https://docs.commercetools.com/api/projects/shopping-list#shopping-list
+https://docs.commercetools.com/api/projects/shoppingLists#representations
 
 # Install
 
