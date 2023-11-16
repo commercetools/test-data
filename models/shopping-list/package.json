@@ -28,7 +28,6 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/cart": "6.4.1",
     "@commercetools-test-data/commons": "6.4.1",
     "@commercetools-test-data/core": "6.4.1",
     "@commercetools-test-data/utils": "6.4.1",
