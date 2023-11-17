@@ -3,6 +3,7 @@ import { ViewOnlyPermissions, ManageOnlyPermissions } from '.';
 describe('view only permissions', () => {
   it('should build important properties', () => {
     const built = ViewOnlyPermissions().buildGraphql();
+
     expect(built).toEqual(
       expect.objectContaining({
         name: 'view',
