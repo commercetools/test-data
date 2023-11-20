@@ -3,15 +3,15 @@ import { CUSTOM_VIEW_HOST_ENTRY_POINT_URI_PATH } from '@commercetools-frontend/c
 import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import CustomViewPermission from '../builder';
-import { supportedManageOAuthScopes } from '../constants';
+import { supportedManageOAuthScopes } from '../../custom-view-permission/constants';
+import CustomViewPermissionDraft from '../builder';
 
 const preset = (additionalPermission = '') => {
   const resourceAccesses = entryPointUriPathToResourceAccesses(
     CUSTOM_VIEW_HOST_ENTRY_POINT_URI_PATH,
     [additionalPermission]
   );
-  return CustomViewPermission()
+  return CustomViewPermissionDraft()
     .name(
       !additionalPermission
         ? resourceAccesses.manage
