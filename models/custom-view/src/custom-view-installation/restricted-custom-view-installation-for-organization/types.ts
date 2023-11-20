@@ -1,6 +1,6 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TCustomView } from '@commercetools-test-data/custom-view';
-import type { TCustomViewInstallationPermission } from '../custom-view-installation-permission/types';
+import type { TCustomView } from '../../custom-view';
+import type { TCustomViewInstallationPermission } from '../../custom-view-installation-permission/types';
 
 // TODO: generate graphql types and use those
 type ProjectExtension = {

@@ -1,6 +1,6 @@
 import { Generator } from '@commercetools-test-data/core';
-import { supportedViewOAuthScopes } from '@commercetools-test-data/custom-view';
 import sampleSize from 'lodash/sampleSize';
+import { supportedViewOAuthScopes } from '../custom-view-permission/constants';
 import type { TCustomViewInstallationPermission } from './types';
 
 const generator = Generator<TCustomViewInstallationPermission>({

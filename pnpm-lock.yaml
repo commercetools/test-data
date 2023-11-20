@@ -371,45 +371,6 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
 
-  models/custom-view-installation:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.23.1
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.23.1
-      '@commercetools-frontend/application-config':
-        specifier: ^22.10.0
-        version: 22.10.0
-      '@commercetools-frontend/constants':
-        specifier: ^22.10.0
-        version: 22.10.0
-      '@commercetools-test-data/commons':
-        specifier: 6.4.1
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 6.4.1
-        version: link:../../core
-      '@commercetools-test-data/custom-view':
-        specifier: 6.4.1
-        version: link:../custom-view
-      '@commercetools-test-data/utils':
-        specifier: 6.4.1
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: ^6.0.0
-        version: 6.0.0
-      '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.0.0
-      '@types/lodash':
-        specifier: ^4.14.182
-        version: 4.14.200
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-
   models/customer:
     dependencies:
       '@babel/runtime':

@@ -5,6 +5,10 @@ import type {
 } from './types';
 
 const transformers = {
+  default: Transformer<
+    TCustomViewInstallationPermission,
+    TCustomViewInstallationPermission
+  >('default', {}),
   graphql: Transformer<
     TCustomViewInstallationPermission,
     TCustomViewInstallationPermissionGraphql

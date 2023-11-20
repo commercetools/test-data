@@ -1,7 +1,7 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { CustomView } from '@commercetools-test-data/custom-view';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as CustomViewInstallationPermission from '../custom-view-installation-permission';
+import * as CustomView from '../../custom-view';
+import * as CustomViewInstallationPermission from '../../custom-view-installation-permission';
 import type { TRestrictedCustomViewInstallationForOrganization } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
