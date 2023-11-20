@@ -738,13 +738,13 @@ importers:
         version: 7.23.1
       '@commercetools-test-data/commons':
         specifier: 6.4.1
-        version: link:../commons
+        version: 6.4.1
       '@commercetools-test-data/core':
         specifier: 6.4.1
-        version: link:../../core
+        version: 6.4.1
       '@commercetools-test-data/utils':
         specifier: 6.4.1
-        version: link:../../utils
+        version: 6.4.1
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
         version: 6.0.0
@@ -2946,8 +2946,33 @@ packages:
       - encoding
     dev: false
 
+  /@commercetools-test-data/commons@6.4.1:
+    resolution: {integrity: sha512-77+dDMcLKOUPyrFOoM9SrpptdV6D+fiqKUT4k0gZZ5lwFlOYcvZnbu6P7p1WyT7C0JxuEdq3d5PWy5wSfgIdRg==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@commercetools-test-data/core': 6.4.1
+      '@commercetools-test-data/utils': 6.4.1
+      '@commercetools/platform-sdk': 6.0.0
+      '@faker-js/faker': 8.0.0
+      '@types/lodash': 4.14.200
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@commercetools-test-data/core@5.11.2:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@faker-js/faker': 8.0.0
+      '@types/lodash': 4.14.200
+      lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/core@6.4.1:
+    resolution: {integrity: sha512-rQO3SYMOiVSzFxFQP/BZCG/d/VnnaDikCzqT3RCZJ7VSAGVykiiJgUUbVxDzdsNYWNl/RQGeSxs2MDRwPTK4kg==}
     dependencies:
       '@babel/runtime': 7.23.1
       '@babel/runtime-corejs3': 7.23.1
@@ -2973,6 +2998,14 @@ packages:
 
   /@commercetools-test-data/utils@5.11.2:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@faker-js/faker': 8.0.0
+    dev: false
+
+  /@commercetools-test-data/utils@6.4.1:
+    resolution: {integrity: sha512-fkYsW3YQgA2ciqsuAObgK0yuB4H6SL5hlMqMBT6MmYpxfV+MYAaBi7JQLqXGQ/leXqd4fpAxHdZ6JRfyeolz5g==}
     dependencies:
       '@babel/runtime': 7.23.1
       '@babel/runtime-corejs3': 7.23.1
