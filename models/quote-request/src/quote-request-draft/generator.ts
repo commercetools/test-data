@@ -1,4 +1,4 @@
-import { Reference, type TReference } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TQuoteRequestDraft } from '../types';
 

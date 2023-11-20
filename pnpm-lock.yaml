@@ -644,10 +644,10 @@ importers:
         specifier: ^7.17.9
         version: 7.23.1
       '@commercetools-test-data/business-unit':
-        specifier: workspace:^
+        specifier: 6.4.2
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: workspace:6.4.2
+        specifier: 6.4.2
         version: link:../cart
       '@commercetools-test-data/commons':
         specifier: 6.4.2
@@ -656,13 +656,13 @@ importers:
         specifier: 6.4.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: workspace:6.4.2
+        specifier: 6.4.2
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: workspace:6.4.2
+        specifier: 6.4.2
         version: link:../customer-group
       '@commercetools-test-data/store':
-        specifier: workspace:6.4.2
+        specifier: 6.4.2
         version: link:../store
       '@commercetools-test-data/utils':
         specifier: 6.4.2
