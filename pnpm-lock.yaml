@@ -619,15 +619,51 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
-      '@commercetools-test-data/attribute-definition':
-        specifier: 5.11.2
-        version: 5.11.2
       '@commercetools-test-data/commons':
         specifier: 6.4.2
         version: link:../commons
       '@commercetools-test-data/core':
         specifier: 6.4.2
         version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 6.4.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^6.0.0
+        version: 6.0.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.0.0
+
+  models/quote-request:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.1
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.1
+      '@commercetools-test-data/business-unit':
+        specifier: 6.4.2
+        version: link:../business-unit
+      '@commercetools-test-data/cart':
+        specifier: 6.4.2
+        version: link:../cart
+      '@commercetools-test-data/commons':
+        specifier: 6.4.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 6.4.2
+        version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: 6.4.2
+        version: link:../customer
+      '@commercetools-test-data/customer-group':
+        specifier: 6.4.2
+        version: link:../customer-group
+      '@commercetools-test-data/store':
+        specifier: 6.4.2
+        version: link:../store
       '@commercetools-test-data/utils':
         specifier: 6.4.2
         version: link:../../utils
@@ -702,13 +738,13 @@ importers:
         version: 7.23.1
       '@commercetools-test-data/commons':
         specifier: 6.4.1
-        version: link:../commons
+        version: 6.4.1
       '@commercetools-test-data/core':
         specifier: 6.4.1
-        version: link:../../core
+        version: 6.4.1
       '@commercetools-test-data/utils':
         specifier: 6.4.1
-        version: link:../../utils
+        version: 6.4.1
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
         version: 6.0.0
@@ -2578,7 +2614,7 @@ packages:
     resolution: {integrity: sha512-dnWrJTmRR8bCHikJHl9b9HW3gXACCehz4OasrXpMp7sx97ECuBGGNjJhjPhdZNCvMy9mn4BWdplI323IbqsRig==}
     hasBin: true
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@changesets/apply-release-plan': 6.1.4
       '@changesets/assemble-release-plan': 5.2.4
       '@changesets/changelog-git': 0.1.14
@@ -2910,8 +2946,33 @@ packages:
       - encoding
     dev: false
 
+  /@commercetools-test-data/commons@6.4.1:
+    resolution: {integrity: sha512-77+dDMcLKOUPyrFOoM9SrpptdV6D+fiqKUT4k0gZZ5lwFlOYcvZnbu6P7p1WyT7C0JxuEdq3d5PWy5wSfgIdRg==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@commercetools-test-data/core': 6.4.1
+      '@commercetools-test-data/utils': 6.4.1
+      '@commercetools/platform-sdk': 6.0.0
+      '@faker-js/faker': 8.0.0
+      '@types/lodash': 4.14.200
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@commercetools-test-data/core@5.11.2:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@faker-js/faker': 8.0.0
+      '@types/lodash': 4.14.200
+      lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/core@6.4.1:
+    resolution: {integrity: sha512-rQO3SYMOiVSzFxFQP/BZCG/d/VnnaDikCzqT3RCZJ7VSAGVykiiJgUUbVxDzdsNYWNl/RQGeSxs2MDRwPTK4kg==}
     dependencies:
       '@babel/runtime': 7.23.1
       '@babel/runtime-corejs3': 7.23.1
@@ -2937,6 +2998,14 @@ packages:
 
   /@commercetools-test-data/utils@5.11.2:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
+    dependencies:
+      '@babel/runtime': 7.23.1
+      '@babel/runtime-corejs3': 7.23.1
+      '@faker-js/faker': 8.0.0
+    dev: false
+
+  /@commercetools-test-data/utils@6.4.1:
+    resolution: {integrity: sha512-fkYsW3YQgA2ciqsuAObgK0yuB4H6SL5hlMqMBT6MmYpxfV+MYAaBi7JQLqXGQ/leXqd4fpAxHdZ6JRfyeolz5g==}
     dependencies:
       '@babel/runtime': 7.23.1
       '@babel/runtime-corejs3': 7.23.1
@@ -4344,7 +4413,7 @@ packages:
       '@babel/code-frame': 7.18.6
       '@babel/core': 7.21.0
       '@babel/helper-module-imports': 7.21.4
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.23.1
       '@preconstruct/hook': 0.4.0
       '@rollup/plugin-alias': 3.1.9(rollup@2.79.1)
       '@rollup/plugin-commonjs': 15.1.0(rollup@2.79.1)
