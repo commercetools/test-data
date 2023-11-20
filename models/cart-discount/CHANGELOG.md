@@ -1,5 +1,17 @@
 # @commercetools-test-data/cart-discount
 
+## 6.5.0
+
+### Patch Changes
+
+- Updated dependencies [[`e0dbb0f8`](https://github.com/commercetools/test-data/commit/e0dbb0f857e958184bac5eafea49c0a9126470c8)]:
+  - @commercetools-test-data/product-type@6.5.0
+  - @commercetools-test-data/core@6.5.0
+  - @commercetools-test-data/category@6.5.0
+  - @commercetools-test-data/commons@6.5.0
+  - @commercetools-test-data/customer-group@6.5.0
+  - @commercetools-test-data/utils@6.5.0
+
 ## 6.4.2
 
 ### Patch Changes

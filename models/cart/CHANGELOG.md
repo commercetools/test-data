@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart
 
+## 6.5.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@6.5.0
+  - @commercetools-test-data/discount-code@6.5.0
+  - @commercetools-test-data/core@6.5.0
+  - @commercetools-test-data/channel@6.5.0
+  - @commercetools-test-data/commons@6.5.0
+  - @commercetools-test-data/customer@6.5.0
+  - @commercetools-test-data/shipping-method@6.5.0
+  - @commercetools-test-data/store@6.5.0
+  - @commercetools-test-data/tax-category@6.5.0
+  - @commercetools-test-data/utils@6.5.0
+
 ## 6.4.2
 
 ### Patch Changes

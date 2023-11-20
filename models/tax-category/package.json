@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/tax-category",
-  "version": "6.4.2",
+  "version": "6.5.0",
   "description": "Data models for commercetools Tax Category representations",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "6.4.2",
-    "@commercetools-test-data/core": "6.4.2",
-    "@commercetools-test-data/utils": "6.4.2",
+    "@commercetools-test-data/commons": "6.5.0",
+    "@commercetools-test-data/core": "6.5.0",
+    "@commercetools-test-data/utils": "6.5.0",
     "@commercetools/platform-sdk": "^6.0.0",
     "@faker-js/faker": "^8.0.0"
   }

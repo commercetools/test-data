@@ -1,5 +1,19 @@
 # @commercetools-test-data/custom-view
 
+## 6.5.0
+
+### Minor Changes
+
+- [#431](https://github.com/commercetools/test-data/pull/431) [`94ad2796`](https://github.com/commercetools/test-data/commit/94ad27965528a6c5f7008e1c32b159aeec3bc5ea) Thanks [@Rhotimee](https://github.com/Rhotimee)! - Introduce model for CustomViewPermissionDraft
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.5.0
+  - @commercetools-test-data/graphql-types@6.5.0
+  - @commercetools-test-data/commons@6.5.0
+  - @commercetools-test-data/utils@6.5.0
+
 ## 6.4.2
 
 ### Patch Changes
