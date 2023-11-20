@@ -18,6 +18,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           email: expect.any(String),
@@ -98,6 +99,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           id: expect.any(String),
@@ -174,6 +176,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           email: expect.any(String),
