@@ -7,7 +7,7 @@ import type {
 } from './types';
 import * as CustomViewPermissionDraftModel from './index';
 
-describe('CustomView model builder', () => {
+describe('CustomViewPermission model builder', () => {
   it(
     ...createBuilderSpec<
       TCustomViewPermissionDraft,
