@@ -1,9 +1,10 @@
 import { Company } from '@commercetools-test-data/business-unit';
-import { Cart, LineItem } from '@commercetools-test-data/cart';
+import { LineItem } from '@commercetools-test-data/cart';
 import {
   CentPrecisionMoney,
   ClientLogging,
   Address,
+  Reference,
 } from '@commercetools-test-data/commons';
 import {
   sequence,
@@ -56,7 +57,7 @@ const generator = Generator<TQuoteRequest>({
     directDiscounts: [],
     state: null,
     purchaseOrderNumber: null,
-    cart: fake(() => Cart.random()),
+    cart: fake(() => Reference.random().typeId('cart')),
     businessUnit: fake(() => Company.random()),
     custom: null,
     createdAt: fake(getOlderDate),

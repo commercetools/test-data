@@ -18,6 +18,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           email: expect.any(String),
@@ -70,9 +71,8 @@ describe('builder', () => {
         directDiscounts: expect.arrayContaining([]),
         state: null,
         cart: expect.objectContaining({
-          cartState: expect.any(String),
+          typeId: 'cart',
         }),
-
         businessUnit: expect.objectContaining({
           id: expect.any(String),
           key: expect.any(String),
@@ -98,6 +98,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           id: expect.any(String),
@@ -174,6 +175,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
+        quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
           email: expect.any(String),
@@ -238,9 +240,6 @@ describe('builder', () => {
         directDiscounts: expect.arrayContaining([]),
         state: null,
         stateRef: undefined,
-        cart: expect.objectContaining({
-          cartState: expect.any(String),
-        }),
         cartRef: expect.objectContaining({
           typeId: 'cart',
           __typename: 'Reference',
