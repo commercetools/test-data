@@ -698,6 +698,33 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/quote:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.1
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.1
+      '@commercetools-test-data/attribute-definition':
+        specifier: 5.11.2
+        version: 5.11.2
+      '@commercetools-test-data/commons':
+        specifier: 6.4.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 6.4.2
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 6.4.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^6.0.0
+        version: 6.0.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.0.0
+
   models/review:
     dependencies:
       '@babel/runtime':
