@@ -1,3 +1,4 @@
+import associateRole from './associate-role-reference';
 import businessUnit from './business-unit-reference';
 import category from './category-reference';
 import customerGroup from './customer-group-reference';
@@ -9,6 +10,7 @@ import taxCategory from './tax-category-reference';
 import zone from './zone-reference';
 
 const presets = {
+  associateRole,
   businessUnit,
   category,
   customer,
