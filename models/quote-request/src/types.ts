@@ -1,6 +1,6 @@
 import type {
   BusinessUnit,
-  Cart,
+  CartReference,
   Customer,
   CustomerGroup,
   State,

@@ -133,7 +133,7 @@ const transformers = {
 
       const cartRef: TReferenceGraphql = Reference.presets.cartReference
         .cartReference()
-        .id(fields.cart?.id)
+        .id(fields.cart?.id || '')
         .typeId('cart')
         .buildGraphql();
 
@@ -150,7 +150,7 @@ const transformers = {
         storeRef: fields.store ? storeRef : undefined,
         stateRef: fields.state ? stateRef : undefined,
         cartRef: fields.cart ? cartRef : undefined,
-        businessUnitRef: fields.businessUnit ? businessUnitRef : undefined,
+        businessUnitRef,
         __typename: 'QuoteRequest',
       };
     },
