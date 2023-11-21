@@ -131,11 +131,13 @@ const transformers = {
         .typeId('state')
         .buildGraphql();
 
-      const cartRef: TReferenceGraphql = Reference.presets.cartReference
-        .cartReference()
-        .id(fields.cart?.id || '')
-        .typeId('cart')
-        .buildGraphql();
+      const cartRef: TReferenceGraphql | null = fields.cart
+        ? Reference.presets.cartReference
+            .cartReference()
+            .id(fields.cart.id)
+            .typeId('cart')
+            .buildGraphql()
+        : null;
 
       const businessUnitRef: TReferenceGraphql =
         Reference.presets.businessUnitReference
