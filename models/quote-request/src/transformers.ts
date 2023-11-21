@@ -73,11 +73,6 @@ const transformers = {
         .id(fields.state?.id)
         .build<TReference<'state'>>();
 
-      const cart = Reference.presets.cartReference
-        .cartReference()
-        .id(fields.cart?.id)
-        .build<TReference<'cart'>>();
-
       const businessUnit = KeyReference.random()
         .typeId('business-unit')
         .key(fields.businessUnit?.key)
@@ -89,7 +84,6 @@ const transformers = {
         customerGroup: fields.customerGroup ? customerGroup : undefined,
         store: fields.store ? store : undefined,
         state: fields.state ? state : undefined,
-        cart: fields.cart ? cart : undefined,
         businessUnit: fields.businessUnit ? businessUnit : undefined,
       };
     },
@@ -152,14 +146,15 @@ const transformers = {
 
       return {
         customerRef,
-        customerGroupRef,
-        storeRef,
+        customerGroupRef: fields.customerGroup ? customerGroupRef : undefined,
+        storeRef: fields.store ? storeRef : undefined,
         stateRef: fields.state ? stateRef : undefined,
-        cartRef,
-        businessUnitRef,
+        cartRef: fields.cart ? cartRef : undefined,
+        businessUnitRef: fields.businessUnit ? businessUnitRef : undefined,
         __typename: 'QuoteRequest',
       };
     },
+    removeFields: ['cart'],
   }),
 };
 

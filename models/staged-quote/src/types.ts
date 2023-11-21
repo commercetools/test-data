@@ -29,8 +29,8 @@ export type TStagedQuoteDraft = StagedQuoteDraft;
 export type TStagedQuoteGraphql = TStagedQuote & {
   businessUnitRef: TReferenceGraphql | null;
   customerRef: TReferenceGraphql | null;
-  quotationCartRef: TReferenceGraphql | null;
-  quoteRequestRef: TReferenceGraphql | null;
+  quotationCartRef: TReferenceGraphql;
+  quoteRequestRef: TReferenceGraphql;
   stateRef: TReferenceGraphql | null;
   __typename: 'StagedQuote';
 };

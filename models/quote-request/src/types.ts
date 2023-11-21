@@ -14,13 +14,12 @@ import type { TBuilder } from '@commercetools-test-data/core';
 // Default
 export type TQuoteRequest = Omit<
   QuoteRequest,
-  'customer' | 'customerGroup' | 'store' | 'state' | 'cart' | 'businessUnit'
+  'customer' | 'customerGroup' | 'store' | 'state' | 'businessUnit'
 > & {
   customer: Customer;
   customerGroup: CustomerGroup;
   store: Store;
   state: State;
-  cart: Cart;
   businessUnit: BusinessUnit;
 };
 
