@@ -1,0 +1,11 @@
+import AssociateRole from '../builder';
+import { QUOTE_REQUEST_PERMISSIONS } from '../constants';
+
+const withAllQuoteRequestPermissions = () =>
+  AssociateRole().permissions([
+    QUOTE_REQUEST_PERMISSIONS.CREATE_MY_QUOTE_REQUESTS_FROM_MY_CARTS,
+    QUOTE_REQUEST_PERMISSIONS.UPDATE_MY_QUOTE_REQUESTS,
+    QUOTE_REQUEST_PERMISSIONS.VIEW_MY_QUOTE_REQUESTS,
+  ]);
+
+export default withAllQuoteRequestPermissions;

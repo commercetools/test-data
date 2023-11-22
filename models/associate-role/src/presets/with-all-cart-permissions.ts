@@ -1,0 +1,16 @@
+import AssociateRole from '../builder';
+import { CART_PERMISSIONS } from '../constants';
+
+const withAllCartPermissions = () =>
+  AssociateRole().permissions([
+    CART_PERMISSIONS.CREATE_MY_CARTS,
+    CART_PERMISSIONS.CREATE_OTHERS_CARTS,
+    CART_PERMISSIONS.DELETE_MY_CARTS,
+    CART_PERMISSIONS.DELETE_OTHERS_CARTS,
+    CART_PERMISSIONS.UPDATE_MY_CARTS,
+    CART_PERMISSIONS.UPDATE_OTHERS_CARTS,
+    CART_PERMISSIONS.VIEW_MY_CARTS,
+    CART_PERMISSIONS.VIEW_OTHERS_CARTS,
+  ]);
+
+export default withAllCartPermissions;
