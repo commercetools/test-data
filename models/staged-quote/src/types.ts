@@ -7,7 +7,10 @@ import type {
   State,
   QuoteRequest,
 } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  TReferenceGraphql,
+  TKeyReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Default
@@ -27,7 +30,7 @@ export type TStagedQuoteRest = StagedQuote;
 export type TStagedQuoteDraft = StagedQuoteDraft;
 
 export type TStagedQuoteGraphql = TStagedQuote & {
-  businessUnitRef: TReferenceGraphql | null;
+  businessUnitRef: TKeyReferenceGraphql | null;
   customerRef: TReferenceGraphql | null;
   quotationCartRef: TReferenceGraphql;
   quoteRequestRef: TReferenceGraphql;

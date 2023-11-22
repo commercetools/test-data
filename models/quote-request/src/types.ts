@@ -1,6 +1,5 @@
 import type {
   BusinessUnit,
-  CartReference,
   Customer,
   CustomerGroup,
   State,
@@ -8,7 +7,10 @@ import type {
   QuoteRequest,
   QuoteRequestDraft,
 } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  TReferenceGraphql,
+  TKeyReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Default
@@ -30,10 +32,10 @@ export type TQuoteRequestDraft = QuoteRequestDraft;
 export type TQuoteRequestGraphql = TQuoteRequest & {
   customerRef: TReferenceGraphql | null;
   customerGroupRef: TReferenceGraphql | null;
-  storeRef: TReferenceGraphql | null;
+  storeRef: TKeyReferenceGraphql | null;
   stateRef: TReferenceGraphql | null;
   cartRef: TReferenceGraphql | null;
-  businessUnitRef: TReferenceGraphql | null;
+  businessUnitRef: TKeyReferenceGraphql | null;
   __typename: 'QuoteRequest';
 };
 export type TQuoteRequestDraftGraphql = TQuoteRequestDraft;
