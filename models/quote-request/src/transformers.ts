@@ -1,12 +1,13 @@
 import {
-  StoreKeyReference,
   BusinessUnitKeyReference,
+  StoreKeyReference,
 } from '@commercetools/platform-sdk';
 import {
   Reference,
   KeyReference,
   TReference,
   TReferenceGraphql,
+  TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
@@ -66,7 +67,7 @@ const transformers = {
       const store = KeyReference.random()
         .typeId('store')
         .key(fields.store?.key)
-        .buildRest() as unknown as StoreKeyReference;
+        .buildRest<StoreKeyReference>();
 
       const state = Reference.presets.stateReference
         .stateReference()
@@ -76,7 +77,7 @@ const transformers = {
       const businessUnit = KeyReference.random()
         .typeId('business-unit')
         .key(fields.businessUnit?.key)
-        .buildRest() as unknown as BusinessUnitKeyReference;
+        .buildRest<BusinessUnitKeyReference>();
 
       return {
         ...fields,
@@ -119,10 +120,9 @@ const transformers = {
           .typeId('customer-group')
           .buildGraphql();
 
-      const storeRef: TReferenceGraphql = Reference.presets.storeReference
-        .storeReference()
-        .id(fields.store?.id)
-        .typeId('store')
+      const storeRef: TKeyReferenceGraphql = KeyReference.presets
+        .store()
+        .key(fields.store?.key)
         .buildGraphql();
 
       const stateRef: TReferenceGraphql = Reference.presets.stateReference
@@ -139,12 +139,10 @@ const transformers = {
             .buildGraphql()
         : null;
 
-      const businessUnitRef: TReferenceGraphql =
-        Reference.presets.businessUnitReference
-          .businessUnitReference()
-          .id(fields.businessUnit?.id)
-          .typeId('business-unit')
-          .buildGraphql();
+      const businessUnitRef: TKeyReferenceGraphql = KeyReference.presets
+        .businessUnit()
+        .key(fields.businessUnit?.key)
+        .buildGraphql();
 
       return {
         customerRef,
@@ -152,7 +150,7 @@ const transformers = {
         storeRef: fields.store ? storeRef : undefined,
         stateRef: fields.state ? stateRef : undefined,
         cartRef: fields.cart ? cartRef : undefined,
-        businessUnitRef,
+        businessUnitRef: fields.businessUnit ? businessUnitRef : undefined,
         __typename: 'QuoteRequest',
       };
     },

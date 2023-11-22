@@ -4,6 +4,7 @@ import {
   KeyReference,
   TReference,
   TReferenceGraphql,
+  TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
@@ -58,10 +59,10 @@ const transformers = {
         .id(fields.state?.id)
         .build<TReference<'state'>>();
 
-      const businessUnit = KeyReference.random()
-        .typeId('business-unit')
+      const businessUnit = KeyReference.presets
+        .businessUnit()
         .key(fields.businessUnit?.key)
-        .buildRest() as unknown as BusinessUnitKeyReference;
+        .buildRest<BusinessUnitKeyReference>();
 
       return {
         ...fields,
@@ -111,12 +112,10 @@ const transformers = {
         .typeId('state')
         .buildGraphql();
 
-      const businessUnitRef: TReferenceGraphql =
-        Reference.presets.businessUnitReference
-          .businessUnitReference()
-          .id(fields.businessUnit?.id)
-          .typeId('business-unit')
-          .buildGraphql();
+      const businessUnitRef: TKeyReferenceGraphql = KeyReference.presets
+        .businessUnit()
+        .key(fields.businessUnit?.key)
+        .buildGraphql();
 
       return {
         customerRef,
