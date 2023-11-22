@@ -9,15 +9,15 @@ const generator = Generator<TAssociateRole>({
   fields: {
     id: fake((f) => f.string.uuid()),
     version: sequence(),
+    key: fake((f) => f.string.alphanumeric(10)),
+    buyerAssignable: fake((f) => f.datatype.boolean()),
+    name: fake((f) => f.string.alphanumeric(15)),
+    permissions: [],
+    custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
-    key: fake((f) => f.string.alphanumeric(10)),
-    name: fake((f) => f.string.alphanumeric(15)),
-    buyerAssignable: fake((f) => f.datatype.boolean()),
-    permissions: [],
-    custom: null,
   },
 });
 
