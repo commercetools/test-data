@@ -140,14 +140,14 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.4.2
-        version: 6.4.2
+        specifier: 6.6.0
+        version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.4.2
-        version: 6.4.2
+        specifier: 6.6.0
+        version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.4.2
-        version: 6.4.2
+        specifier: 6.6.0
+        version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
         version: 6.0.0
@@ -164,13 +164,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -188,34 +188,34 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/channel':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer
       '@commercetools-test-data/discount-code':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../discount-code
       '@commercetools-test-data/product':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product
       '@commercetools-test-data/shipping-method':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../shipping-method
       '@commercetools-test-data/store':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../store
       '@commercetools-test-data/tax-category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -233,22 +233,22 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/product-type':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -266,13 +266,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -290,13 +290,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -314,10 +314,10 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -347,16 +347,16 @@ importers:
         specifier: ^22.10.0
         version: 22.10.0
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -380,16 +380,16 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -407,13 +407,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -431,16 +431,16 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/cart-discount':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -458,19 +458,19 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/channel':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/product':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -488,22 +488,22 @@ importers:
         specifier: ^7.17.9
         version: 7.21.0
       '@commercetools-test-data/cart':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart
       '@commercetools-test-data/cart-discount':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -521,19 +521,19 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer
       '@commercetools-test-data/order':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../order
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -554,25 +554,25 @@ importers:
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product-type
       '@commercetools-test-data/product-variant':
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/tax-category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -590,19 +590,19 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -620,13 +620,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -644,13 +644,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -668,34 +668,34 @@ importers:
         specifier: ^7.17.9
         version: 7.23.4
       '@commercetools-test-data/business-unit':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: ^6.5.0
+        specifier: ^6.6.0
         version: link:../staged-quote
       '@commercetools-test-data/store':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -713,28 +713,28 @@ importers:
         specifier: ^7.17.9
         version: 7.23.1
       '@commercetools-test-data/business-unit':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/store':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -752,13 +752,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -776,19 +776,19 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/tax-category':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools-test-data/zone':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../zone
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -806,13 +806,13 @@ importers:
         specifier: ^7.17.9
         version: 7.23.1
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -830,31 +830,31 @@ importers:
         specifier: ^7.17.9
         version: 7.23.1
       '@commercetools-test-data/business-unit':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../quote-request
       '@commercetools-test-data/store':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -872,19 +872,19 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/channel':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/product-selection':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../product-selection
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -902,13 +902,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -926,13 +926,13 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/commons':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 6.5.0
+        specifier: 6.6.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^6.0.0
@@ -3074,33 +3074,8 @@ packages:
       - encoding
     dev: false
 
-  /@commercetools-test-data/commons@6.4.2:
-    resolution: {integrity: sha512-j8YRChlU17Tjmt6dtk+4UuVQeAq/VMBu+HmvBHITjzRMvQcwm6q293KF575tkL6Y26qoxnbGKgDM2BDz+UruPA==}
-    dependencies:
-      '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
-      '@commercetools-test-data/core': 6.4.2
-      '@commercetools-test-data/utils': 6.4.2
-      '@commercetools/platform-sdk': 6.0.0
-      '@faker-js/faker': 8.0.0
-      '@types/lodash': 4.14.202
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /@commercetools-test-data/core@5.11.2:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
-    dependencies:
-      '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
-      '@faker-js/faker': 8.0.0
-      '@types/lodash': 4.14.202
-      lodash: 4.17.21
-    dev: false
-
-  /@commercetools-test-data/core@6.4.2:
-    resolution: {integrity: sha512-cb0G9zQJGLaS16/3LiFigEHVIefsgADaZoc53zDbq/J+FHXy1CpCbh+qJS3z/WL22owT60hkuJPYb81A7+mRAA==}
     dependencies:
       '@babel/runtime': 7.23.4
       '@babel/runtime-corejs3': 7.23.1
@@ -3126,14 +3101,6 @@ packages:
 
   /@commercetools-test-data/utils@5.11.2:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
-    dependencies:
-      '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
-      '@faker-js/faker': 8.0.0
-    dev: false
-
-  /@commercetools-test-data/utils@6.4.2:
-    resolution: {integrity: sha512-3FrW30V5iS8IX5ZfGKEQT/kIeA6+DW/H2vTaiVGh/YdaZZ7sbitym4KVeiGQKQ8tbrNJK8WI5qZAF3YUHhUj+Q==}
     dependencies:
       '@babel/runtime': 7.23.4
       '@babel/runtime-corejs3': 7.23.1
