@@ -12,6 +12,9 @@ const transformers = {
   //only scaffolding provided at this time
   graphql: Transformer<TBusinessUnit, TBusinessUnitGraphql>('graphql', {
     buildFields: [],
+    addFields: () => ({
+      __typename: 'BusinessUnit',
+    }),
   }),
 };
 
