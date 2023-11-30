@@ -1,8 +1,8 @@
 import { Builder } from '@commercetools-test-data/core';
-import { TCustomObjectDraft, TCustomObjectDraftBuilder } from '../types';
+import { TCustomObjectDraft, TCreateCustomObjectDraftBuilder } from '../types';
 import generator from './generator';
 
-const CustomObjectDraft: TCustomObjectDraftBuilder = () =>
+const CustomObjectDraft: TCreateCustomObjectDraftBuilder = () =>
   Builder<TCustomObjectDraft>({
     generator,
   });
