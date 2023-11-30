@@ -1,0 +1,21 @@
+import type {
+  CustomObject,
+  CustomObjectDraft,
+} from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
+
+//CustomObjectDraft
+export type TCustomObjectDraft = CustomObjectDraft;
+export type TCustomObjectDraftBuilder = TBuilder<TCustomObjectDraft>;
+export type TCreateCustomObjectDraftBuilder = () => TCustomObjectDraftBuilder;
+export type TCustomObjectDraftGraphql = TCustomObjectDraft & {
+  __typename: 'CustomObjectDraft';
+};
+
+//CustomObject
+export type TCustomObject = CustomObject;
+export type TCustomObjectBuilder = TBuilder<TCustomObject>;
+export type TCreateAssociateRoleBuilder = () => TCustomObjectBuilder;
+export type TCustomObjectGraphql = TCustomObject & {
+  __typename: 'CustomObject';
+};

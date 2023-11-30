@@ -110,6 +110,10 @@ importers:
       typescript:
         specifier: 4.9.5
         version: 4.9.5
+    devDependencies:
+      '@commercetools-test-data/core':
+        specifier: workspace:6.6.0
+        version: link:core
 
   core:
     dependencies:
@@ -331,6 +335,30 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+
+  models/custom-object:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@commercetools-test-data/commons':
+        specifier: 6.6.0
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 6.6.0
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 6.6.0
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^6.0.0
+        version: 6.0.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.3.1
 
   models/custom-view:
     dependencies:
@@ -3032,13 +3060,13 @@ packages:
     deprecated: Use the @commercetools-test-data/product-type package instead
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
+      '@babel/runtime-corejs3': 7.23.4
       '@commercetools-test-data/attribute-type': 5.11.2
       '@commercetools-test-data/commons': 5.11.2
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
-      '@faker-js/faker': 8.0.0
+      '@faker-js/faker': 8.3.1
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -3048,12 +3076,12 @@ packages:
     deprecated: Use the @commercetools-test-data/product-type package instead
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
+      '@babel/runtime-corejs3': 7.23.4
       '@commercetools-test-data/commons': 5.11.2
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
-      '@faker-js/faker': 8.0.0
+      '@faker-js/faker': 8.3.1
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -3062,11 +3090,11 @@ packages:
     resolution: {integrity: sha512-AxcUby9NOEmil3kJKrNVa7Lz94UHOeW+nFgsmn5I3CLKrt/Q5VI0et+6Ls1UJh57buxbTQRK15O/Gd/hRMYwSA==}
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
+      '@babel/runtime-corejs3': 7.23.4
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
-      '@faker-js/faker': 8.0.0
+      '@faker-js/faker': 8.3.1
       '@types/lodash': 4.14.202
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -3077,8 +3105,8 @@ packages:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
-      '@faker-js/faker': 8.0.0
+      '@babel/runtime-corejs3': 7.23.4
+      '@faker-js/faker': 8.3.1
       '@types/lodash': 4.14.202
       lodash: 4.17.21
     dev: false
@@ -3087,13 +3115,13 @@ packages:
     resolution: {integrity: sha512-7VT0Iez2bi8fhpqJOzVx/WfmLV+mAXlc5SOxZoTeP1JyUyY07GiujI0ctKAh8Q3/0qzVyJ08RFV1BLtYxLWeKA==}
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
+      '@babel/runtime-corejs3': 7.23.4
       '@commercetools-test-data/attribute-definition': 5.11.2
       '@commercetools-test-data/commons': 5.11.2
       '@commercetools-test-data/core': 5.11.2
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
-      '@faker-js/faker': 8.0.0
+      '@faker-js/faker': 8.3.1
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -3102,8 +3130,8 @@ packages:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
     dependencies:
       '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.1
-      '@faker-js/faker': 8.0.0
+      '@babel/runtime-corejs3': 7.23.4
+      '@faker-js/faker': 8.3.1
     dev: false
 
   /@commercetools/platform-sdk@4.11.0:
