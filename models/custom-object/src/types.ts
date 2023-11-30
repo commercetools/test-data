@@ -15,7 +15,7 @@ export type TCustomObjectDraftGraphql = TCustomObjectDraft & {
 //CustomObject
 export type TCustomObject = CustomObject;
 export type TCustomObjectBuilder = TBuilder<TCustomObject>;
-export type TCreateAssociateRoleBuilder = () => TCustomObjectBuilder;
+export type TCreateCustomObjectBuilder = () => TCustomObjectBuilder;
 export type TCustomObjectGraphql = TCustomObject & {
   __typename: 'CustomObject';
 };
