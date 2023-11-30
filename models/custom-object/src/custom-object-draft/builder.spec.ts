@@ -2,13 +2,13 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCustomObjectDraft } from '../types';
-import * as AssociateRoleDraft from './index';
+import * as CustomObjectDraft from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TCustomObjectDraft, TCustomObjectDraft>(
       'default',
-      AssociateRoleDraft.random(),
+      CustomObjectDraft.random(),
       expect.objectContaining({
         version: expect.any(Number),
         key: expect.any(String),
@@ -21,7 +21,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TCustomObjectDraft, TCustomObjectDraft>(
       'rest',
-      AssociateRoleDraft.random(),
+      CustomObjectDraft.random(),
       expect.objectContaining({
         version: expect.any(Number),
         key: expect.any(String),
@@ -34,7 +34,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TCustomObjectDraft, TCustomObjectDraft>(
       'graphql',
-      AssociateRoleDraft.random(),
+      CustomObjectDraft.random(),
       expect.objectContaining({
         version: expect.any(Number),
         key: expect.any(String),
