@@ -1,26 +1,13 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TCustomView } from '../../custom-view';
-import type { TCustomViewInstallationPermission } from '../../custom-view-installation-permission/types';
-
-// TODO: generate graphql types and use those
-type ProjectExtension = {
-  projectKey: string;
-};
-
-export type TRestrictedCustomViewInstallationForOrganization = {
-  acceptedPermissions: TCustomViewInstallationPermission[];
-  createdAt: string;
-  customView: TCustomView;
-  id: string;
-  installInAllProjects: boolean;
-  projects: ProjectExtension[];
-  updatedAt: string;
-};
+import type { TMcSettingsRestrictedCustomViewInstallationForOrganization } from '../../../../../graphql-types';
 
 export type TRestrictedCustomViewInstallationForOrganizationGraphql =
-  TRestrictedCustomViewInstallationForOrganization & {
-    __typename: 'RestrictedCustomViewInstallationForOrganization';
-  };
+  TMcSettingsRestrictedCustomViewInstallationForOrganization;
+
+export type TRestrictedCustomViewInstallationForOrganization = Omit<
+  TMcSettingsRestrictedCustomViewInstallationForOrganization,
+  '__typename'
+>;
 
 export type TRestrictedCustomViewInstallationForOrganizationBuilder =
   TBuilder<TRestrictedCustomViewInstallationForOrganization>;

@@ -17,5 +17,8 @@ export * as CustomViewPermission from './custom-view-permission';
 export * as CustomViewPermissionDraft from './custom-view-permission-draft';
 
 export * as CustomViewTypeSettingsForCustomPanel from './custom-view-type-settings-for-custom-panel';
-export { RestrictedCustomViewInstallationForOrganization } from './custom-view-installation';
+export {
+  RestrictedCustomViewInstallationForOrganization,
+  CustomViewInstallation,
+} from './custom-view-installation';
 export * as CustomViewInstallationPermission from './custom-view-installation-permission';
