@@ -8,6 +8,7 @@ const transformers = {
   rest: Transformer<TCustomObject, TCustomObject>('rest', {
     buildFields: ['createdBy', 'lastModifiedBy'],
   }),
+  //only scaffolding provided at this time
   graphql: Transformer<TCustomObject, TCustomObjectGraphql>('graphql', {
     buildFields: ['createdBy', 'lastModifiedBy'],
     addFields: () => ({
