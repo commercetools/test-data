@@ -4,7 +4,6 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TCustomObject } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
-const valueKey = fake((f) => f.string.alpha(5)) as unknown as string;
 
 const generator = Generator<TCustomObject>({
   fields: {
@@ -13,8 +12,8 @@ const generator = Generator<TCustomObject>({
     key: fake((f) => f.string.alphanumeric(10)),
     container: fake((f) => f.string.alphanumeric(10)),
     value: {
-      [valueKey]: {
-        [valueKey]: fake((f) => f.string.alpha(7)),
+      valueKey: {
+        nestedValueKey: fake((f) => f.string.alpha(10)),
       },
     },
     createdAt: fake(getOlderDate),
