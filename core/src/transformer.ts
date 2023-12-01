@@ -80,6 +80,15 @@ function Transformer<Model, TransformedModel>(
       });
     }
 
+    if (transformOptions?.isGraphqlDraft) {
+      fieldsToBuild?.forEach((builtField) => {
+        const builtFieldHasTypename = transformedFields[builtField]?['__typename'] as unknown as String;
+        if(builtFieldHasTypename){
+          delete transformedFields[builtField]['__typename'];
+        }
+      });
+    }
+
     return transformedFields as unknown as TransformedModel;
   }
 

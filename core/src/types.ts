@@ -50,6 +50,11 @@ export type TTransformerOptions<Model, TransformedModel> = {
   removeFields?: (keyof Model)[];
   replaceFields?: (args: { fields: Model }) => TransformedModel;
   buildFields?: (keyof Model)[];
+  /** When transforming fields for GraphQL draft models,
+   * this flag removes all "__typename" fields from transformed models
+   * so that the draft can be used with the API
+   */
+  isGraphqlDraft: Boolean;
 };
 
 export interface TTransformer<Model> {
