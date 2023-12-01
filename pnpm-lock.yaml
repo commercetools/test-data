@@ -560,8 +560,8 @@ importers:
         specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.6.0
-        version: link:../../core
+        specifier: link:../../../../core
+        version: link:../../../../core
       '@commercetools-test-data/product-type':
         specifier: 6.6.0
         version: link:../product-type
@@ -809,8 +809,8 @@ importers:
         specifier: 6.6.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.6.0
-        version: link:../../core
+        specifier: link:../../../../core
+        version: link:../../../../core
       '@commercetools-test-data/utils':
         specifier: 6.6.0
         version: link:../../utils

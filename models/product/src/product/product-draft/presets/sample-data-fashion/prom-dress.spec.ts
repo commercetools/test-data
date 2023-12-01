@@ -166,7 +166,6 @@ describe(`with promDress preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -236,14 +235,12 @@ describe(`with promDress preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Prom Dress",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "dresses",
           "typeId": "product-type",
         },
@@ -251,14 +248,12 @@ describe(`with promDress preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-prom-dress",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

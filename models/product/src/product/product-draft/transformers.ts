@@ -41,6 +41,7 @@ const transformers = {
       'taxCategory',
       'state',
     ],
+    isGraphqlDraft: true,
   }),
 };
 

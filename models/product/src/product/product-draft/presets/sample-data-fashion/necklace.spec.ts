@@ -170,7 +170,6 @@ describe(`with necklace preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -261,14 +260,12 @@ describe(`with necklace preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Necklace",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "accessories",
           "typeId": "product-type",
         },
@@ -276,14 +273,12 @@ describe(`with necklace preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-necklace",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

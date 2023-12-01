@@ -181,27 +181,22 @@ describe(`with walnutCounterStool preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
@@ -209,17 +204,14 @@ describe(`with walnutCounterStool preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Der Barhocker ist aus Nussbaumholz gefertigt, das für seine Langlebigkeit und Stärke bekannt ist. Der Hocker hat ein schlichtes Design mit einer flachen Oberfläche und vier geraden Beinen. Die Beine sind für zusätzliches visuelles Interesse leicht konisch zulaufend designt. Das Nussbaumholz kann in seinem natürlichen Zustand belassen oder mit einer Beize oder einem Lack veredelt werden, um die natürliche Schönheit der Holzmaserung hervorzuheben. Der Hocker hat eine quadratische Sitzfläche. Der Barocker aus Nussbaumholz ist ein vielseitiges und funktionelles Möbelstück, das in einer Vielzahl von Wohnräumen verwendet werden kann.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.",
           },
@@ -316,24 +308,20 @@ describe(`with walnutCounterStool preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Walnut Counter Stool",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Walnut Counter Stool",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Barhocker aus Nussbaumholz",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -341,24 +329,20 @@ describe(`with walnutCounterStool preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "walnut-counter-stool",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "walnut-counter-stool",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "barhocker-aus-walnussholz",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -103,7 +103,6 @@ describe(`with anniversaryShirt preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-kids",
             "typeId": "category",
           },
@@ -129,14 +128,12 @@ describe(`with anniversaryShirt preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Anniversary Shirt",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -144,14 +141,12 @@ describe(`with anniversaryShirt preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-anniversary-shirt",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

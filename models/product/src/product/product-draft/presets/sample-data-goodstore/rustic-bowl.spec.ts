@@ -133,17 +133,14 @@ describe(`with rusticBowl preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This square wooden bowl is versatile and can be used for a variety of purposes, from serving salads and snacks to holding fruits and vegetables. It is ideal for casual or rustic dining settings and can add a touch of warmth and natural beauty to any table.  The square wooden bowl is a practical and stylish choice for serving and holding food. Its natural beauty and durability make it a popular choice for many different types of cuisine and dining occasions.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This square wooden bowl is versatile and can be used for a variety of purposes, from serving salads and snacks to holding fruits and vegetables. It is ideal for casual or rustic dining settings and can add a touch of warmth and natural beauty to any table.  The square wooden bowl is a practical and stylish choice for serving and holding food. Its natural beauty and durability make it a popular choice for many different types of cuisine and dining occasions.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Diese quadratische Holzschale bietet vielfältige Einsatzmöglichkeiten - vom Servieren von Salaten und Snacks bis hin zum Aufbewahren von Obst und Gemüse. Sie fügt sich ideal in jede ungezwungene oder rustikale Speiseumgebungen ein und verleiht jedem Tisch einen Hauch von Wärme und natürlicher Schönheit. Die quadratische Holzschale ist eine praktische und stilvolle Wahl zum Servieren und Aufbewahren von Speisen. Ihre natürliche Schönheit und Langlebigkeit bietet verschiedene Einsatzmöglichkeiten in der Küche und als Servierobjekt bei unterschiedlichen Anlässen.",
           },
@@ -228,24 +225,20 @@ describe(`with rusticBowl preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Rustic Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Rustic Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Rustikale Schale",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -253,24 +246,20 @@ describe(`with rusticBowl preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "rustic-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "rustic-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "rustikale-schale",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -181,7 +181,6 @@ describe(`with skinnyJeans preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bottoms-women",
             "typeId": "category",
           },
@@ -255,14 +254,12 @@ describe(`with skinnyJeans preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Skinny Jeans",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "pants",
           "typeId": "product-type",
         },
@@ -270,14 +267,12 @@ describe(`with skinnyJeans preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-skinny-jeans",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

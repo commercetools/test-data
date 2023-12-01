@@ -156,17 +156,14 @@ describe(`with wineBottleOpener preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -174,17 +171,14 @@ describe(`with wineBottleOpener preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A wine bottle opener is a device used to remove the cork from a wine bottle. This opener features a pointed helix screw that is twisted into the cork, and a handle or lever that is used to pull the cork out of the bottle. Additional features include a bottle opener. This wine bottle opener is lever-style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Mit diesem praktischen Korkenzieher wird das Öffnen von Weinflaschen zur leichten Übung. Der Korkenzieher hat eine spitze Spiralschraube, die in den Korken gedreht wird, und einen Griff oder Hebel, mit dem der Korken aus der Flasche gehoben wird. Ein weiteres Feature des Korkenziehers im Hebelstil ist ein Flaschenöffner.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A wine bottle opener is a device used to remove the cork from a wine bottle. This opener features a pointed helix screw that is twisted into the cork, and a handle or lever that is used to pull the cork out of the bottle. Additional features include a bottle opener. This wine bottle opener is lever-style.",
           },
@@ -273,24 +267,20 @@ describe(`with wineBottleOpener preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Wine Bottle Opener",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Wine Bottle Opener",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Korkenzieher",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -298,24 +288,20 @@ describe(`with wineBottleOpener preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "wine-bottle-opener",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "wine-bottle-opener",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "wein-flaschenffner",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

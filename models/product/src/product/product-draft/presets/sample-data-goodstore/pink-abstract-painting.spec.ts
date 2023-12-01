@@ -149,17 +149,14 @@ describe(`with pinkAbstractPainting preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "home-accents",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -167,17 +164,14 @@ describe(`with pinkAbstractPainting preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A pink abstract painting is a vibrant and eye-catching work of art that can evoke a range of emotions and interpretations. The painting is created with acrylic paints on canvas.  The composition of the painting is abstract, with no recognizable objects or figures. The use of pink in the painting may be symbolic, representing love, femininity, or energy.  The painting can be hung on a wall as part of a gallery grouping or as a statement piece that dominates the room. The pink color scheme of the painting can create a powerful focal point, drawing the eye towards it and creating a sense of energy.  Overall, a pink abstract painting is a bold and expressive work of art that can add a sense of vitality and excitement to any space. Its vibrant color scheme and abstract composition can create a sense of mystery and intrigue, inviting viewers to interpret and connect with the painting in their own way.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein rosafarbenes abstraktes Gemälde ist ein lebhaftes und auffälliges Kunstwerk, das eine Reihe von Emotionen und Interpretationen hervorrufen kann. Das Gemälde wurde mit Acrylfarben auf Leinwand gemalt. Die Komposition des Gemäldes ist abstrakt und enthält keine erkennbaren Objekte oder Figuren. Die Verwendung von Rosa auf dem Gemälde kann symbolisch sein und Liebe, Weiblichkeit oder Energie darstellen. Das Gemälde kann als Teil einer Galeriegruppe oder als raumbeherrschendes Einzelstück an die Wand gehängt werden. Das Rosa des Gemäldes kann einen starken Fokuspunkt bilden, der das Auge auf das Bild lenkt und ein Gefühl von Energie erzeugt. Insgesamt ist ein rosafarbenes abstraktes Gemälde ein kühnes und ausdrucksstarkes Kunstwerk, das jedem Raum ein Gefühl von Vitalität und Aufregung verleihen kann. Die lebendige Farbgebung und die abstrakte Komposition können ein geheimnisvolles Gefühl und Faszination erzeugen und den Betrachter dazu einladen, das Gemälde auf seine eigene Weise zu interpretieren und sich mit ihm zu verbinden.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A pink abstract painting is a vibrant and eye-catching work of art that can evoke a range of emotions and interpretations. The painting is created with acrylic paints on canvas.  The composition of the painting is abstract, with no recognizable objects or figures. The use of pink in the painting may be symbolic, representing love, femininity, or energy.  The painting can be hung on a wall as part of a gallery grouping or as a statement piece that dominates the room. The pink color scheme of the painting can create a powerful focal point, drawing the eye towards it and creating a sense of energy.  Overall, a pink abstract painting is a bold and expressive work of art that can add a sense of vitality and excitement to any space. Its vibrant color scheme and abstract composition can create a sense of mystery and intrigue, inviting viewers to interpret and connect with the painting in their own way.",
           },
@@ -262,24 +256,20 @@ describe(`with pinkAbstractPainting preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Pink Abstract Painting",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Abstrakte Rosa Malerei",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Pink Abstract Painting",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -287,24 +277,20 @@ describe(`with pinkAbstractPainting preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "pink-abstract-painting",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "rosa-abstrakte-malerei",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "pink-abstract-painting",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

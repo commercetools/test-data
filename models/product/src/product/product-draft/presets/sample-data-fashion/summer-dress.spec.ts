@@ -182,7 +182,6 @@ describe(`with summerDress preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -269,14 +268,12 @@ describe(`with summerDress preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Summer Dress",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "dresses",
           "typeId": "product-type",
         },
@@ -284,14 +281,12 @@ describe(`with summerDress preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-summer-dress",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

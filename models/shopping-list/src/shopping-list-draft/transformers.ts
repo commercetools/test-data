@@ -12,6 +12,7 @@ const transformers = {
     'graphql',
     {
       buildFields: ['name', 'slug', 'description', 'customer'],
+      isGraphqlDraft: true,
     }
   ),
 };

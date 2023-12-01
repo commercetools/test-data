@@ -283,12 +283,10 @@ describe(`with patternedPillowCover preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedding",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -296,17 +294,14 @@ describe(`with patternedPillowCover preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "An art deco velvet pillow cover with geometric design is a luxurious and stylish accessory for any room in the home. It is made from soft, plush velvet fabric that feels soft and smooth to the touch. The velvet has a rich, lustrous sheen that adds an elegant and sophisticated touch to the pillow cover.  The pillow cover features a geometric design that is inspired by the art deco style of the early 20th century. The design includes bold and angular shapes.  The pillow cover is often used as a decorative accent for a bed, sofa, or accent chair, and can add a touch of glamour and sophistication to any room in the home. It can be paired with other art deco-inspired accessories, such as lamps, vases, and wall art, to create a cohesive and stylish look.  The velvet fabric is durable and easy to clean, and can be spot cleaned with a damp cloth or sponge. It should be air-dried and fluffed periodically to maintain its shape and texture.  Overall, an art deco velvet pillow cover with geometric design is a luxurious and stylish accessory that can enhance the beauty and comfort of any room in the home.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein Art-Deco-Samtkissenbezug mit geometrischem Muster ist ein luxuriöses und stilvolles Accessoire für jeden Raum in Ihrem Zuhause. Er ist aus weichem, plüschigem Samtstoff gefertigt, der sich weich und glatt anfühlt. Der Samt hat einen reichen, schimmernden Glanz, der dem Kissenbezug eine elegante und anspruchsvolle Note verleiht. Der Kissenbezug weist ein geometrisches Design auf, das vom Art-déco-Stil des frühen 20. Jahrhunderts inspiriert ist. Jahrhunderts inspiriert ist. Das Design umfasst kühne und eckige Formen. Der Kissenbezug wird oft als dekorativer Akzent für ein Bett, ein Sofa oder einen Sessel verwendet und kann jedem Raum im Haus einen Hauch von Glamour und Raffinesse verleihen. Er lässt sich mit anderen vom Art déco inspirierten Accessoires wie Lampen, Vasen und Wandbildern kombinieren, um ein stimmiges und stilvolles Gesamtbild zu schaffen. Der Samtstoff ist strapazierfähig und pflegeleicht und kann mit einem feuchten Tuch oder Schwamm abgewischt werden. Er sollte regelmäßig an der Luft getrocknet und aufgefächert werden, damit er seine Form und Struktur behält.  Insgesamt ist ein Art-Déco-Samtkissenbezug mit geometrischem Muster ein luxuriöses und stilvolles Accessoire, das die Schönheit und den Komfort eines jeden Raums im Haus verbessern kann.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "An art deco velvet pillow cover with geometric design is a luxurious and stylish accessory for any room in the home. It is made from soft, plush velvet fabric that feels soft and smooth to the touch. The velvet has a rich, lustrous sheen that adds an elegant and sophisticated touch to the pillow cover.  The pillow cover features a geometric design that is inspired by the art deco style of the early 20th century. The design includes bold and angular shapes.  The pillow cover is often used as a decorative accent for a bed, sofa, or accent chair, and can add a touch of glamour and sophistication to any room in the home. It can be paired with other art deco-inspired accessories, such as lamps, vases, and wall art, to create a cohesive and stylish look.  The velvet fabric is durable and easy to clean, and can be spot cleaned with a damp cloth or sponge. It should be air-dried and fluffed periodically to maintain its shape and texture.  Overall, an art deco velvet pillow cover with geometric design is a luxurious and stylish accessory that can enhance the beauty and comfort of any room in the home.",
           },
@@ -407,24 +402,20 @@ describe(`with patternedPillowCover preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Patterned Pillow Cover",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Gemusterter Kissenbezug",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Patterned Pillow Cover",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -432,24 +423,20 @@ describe(`with patternedPillowCover preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "patterned-pillow-cover",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "gemusterte-kissenhlle",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "patterned-pillow-cover",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

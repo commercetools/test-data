@@ -54,7 +54,7 @@ export type TTransformerOptions<Model, TransformedModel> = {
    * this flag removes all "__typename" fields from transformed models
    * so that the draft can be used with the API
    */
-  isGraphqlDraft: Boolean;
+  isGraphqlDraft?: Boolean;
 };
 
 export interface TTransformer<Model> {

@@ -28,6 +28,33 @@ const upperFirst = (value: string): string =>
 const lowerFirst = (value: string): string =>
   value.charAt(0).toLowerCase() + value.slice(1);
 
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
+function deleteKeyFromObject(inputObject: any, keyToDelete: string) {
+  for (let [currentObjectKey, currentObjectValue] of Object.entries(
+    inputObject
+  )) {
+    if (currentObjectKey === keyToDelete) {
+      delete inputObject[keyToDelete];
+    } else if (Array.isArray(currentObjectValue)) {
+      deleteKeyFromObjectInArray(currentObjectValue, keyToDelete);
+    } else if (isObject(currentObjectValue)) {
+      deleteKeyFromObject(currentObjectValue, keyToDelete);
+    }
+  }
+}
+
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
+function deleteKeyFromObjectInArray(inputArray: any[], keyToDelete: string) {
+  for (let currentIndex = 0; currentIndex < inputArray.length; currentIndex++) {
+    let currentElement = inputArray[currentIndex];
+    if (Array.isArray(currentElement)) {
+      deleteKeyFromObjectInArray(currentElement, keyToDelete);
+    } else if (isObject(currentElement)) {
+      deleteKeyFromObject(currentElement, keyToDelete);
+    }
+  }
+}
+
 const omitOne = <T, K extends keyof T>(entity: T, prop: K): Omit<T, K> => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { [prop]: deleted, ...newState } = entity;
@@ -175,6 +202,7 @@ export {
   isBuilderFunction,
   upperFirst,
   lowerFirst,
+  deleteKeyFromObject,
   omitMany,
   pickMany,
   convertBuiltNameToTransformName,

@@ -286,7 +286,6 @@ describe(`with toddlerTrousers preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bottoms_kids",
             "typeId": "category",
           },
@@ -368,14 +367,12 @@ describe(`with toddlerTrousers preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Toddler Trousers",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "pants",
           "typeId": "product-type",
         },
@@ -383,14 +380,12 @@ describe(`with toddlerTrousers preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-toddler-trousers",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
