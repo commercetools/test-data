@@ -110,10 +110,6 @@ importers:
       typescript:
         specifier: 4.9.5
         version: 4.9.5
-    devDependencies:
-      '@commercetools-test-data/core':
-        specifier: workspace:6.6.0
-        version: link:core
 
   core:
     dependencies:
