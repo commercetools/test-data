@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsRestrictedCustomViewInstallationForOrganization } from '../../../../../graphql-types';
+import type { TMcSettingsRestrictedCustomViewInstallationForOrganization } from '@commercetools-test-data/graphql-types';
 
 export type TRestrictedCustomViewInstallationForOrganizationGraphql =
   TMcSettingsRestrictedCustomViewInstallationForOrganization;
