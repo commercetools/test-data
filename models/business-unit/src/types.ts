@@ -1,6 +1,8 @@
 import type {
   BusinessUnit,
   BusinessUnitDraft,
+  BusinessUnitKeyReference,
+  KeyReference,
   Store,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -18,9 +20,16 @@ export type TBusinessUnitDraftGraphql = TBusinessUnitDraft & {
 export type TBusinessUnit = BusinessUnit;
 export type TBusinessUnitBuilder = TBuilder<TBusinessUnit>;
 export type TCreateBusinessUnitBuilder = () => TBusinessUnitBuilder;
-//BusinessUnitGraphql is only scaffolding at this time
-export type TBusinessUnitGraphql = TBusinessUnit & {
+export type TBusinessUnitGraphql = Omit<
+  TBusinessUnit,
+  'topLevelUnit' | 'parentUnit'
+> & {
   ancestors: Array<TBusinessUnitGraphql>;
   inheritedStores: Array<Store> | null;
   __typename: 'BusinessUnit';
+  storesRef: KeyReference;
+  parentUnitRef: BusinessUnitKeyReference | null;
+  parentUnit?: BusinessUnitKeyReference | undefined;
+  topLevelUnitRef: BusinessUnitKeyReference;
+  topLevelUnit: BusinessUnitKeyReference | TBusinessUnit;
 };
