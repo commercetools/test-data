@@ -82,8 +82,9 @@ function Transformer<Model, TransformedModel>(
 
     if (transformOptions?.isGraphqlDraft) {
       fieldsToBuild?.forEach((builtField) => {
-        const builtFieldHasTypename = transformedFields[builtField]?['__typename'] as unknown as String;
-        if(builtFieldHasTypename){
+        // @ts-ignore: TS does not know about the `Model` being an object.
+        if (transformedFields[builtField]?.['__typename']) {
+          // @ts-ignore: TS does not know about the `Model` being an object.
           delete transformedFields[builtField]['__typename'];
         }
       });
