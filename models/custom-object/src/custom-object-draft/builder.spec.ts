@@ -31,6 +31,7 @@ describe('builder', () => {
     )
   );
 
+  //only scaffolding provided at this time
   it(
     ...createBuilderSpec<TCustomObjectDraft, TCustomObjectDraft>(
       'graphql',
