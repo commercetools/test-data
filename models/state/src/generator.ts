@@ -22,7 +22,7 @@ const generator = Generator<TState>({
     initial: fake((f) => f.datatype.boolean()),
     builtIn: fake((f) => f.datatype.boolean()),
     roles: [roles.Return],
-    transitions: [],
+    transitions: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

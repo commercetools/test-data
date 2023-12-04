@@ -27,7 +27,7 @@ describe('builder', () => {
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
         roles: [roles.Return],
-        transitions: [],
+        transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -59,7 +59,7 @@ describe('builder', () => {
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
         roles: [roles.Return],
-        transitions: [],
+        transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -104,7 +104,7 @@ describe('builder', () => {
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
         roles: [roles.Return],
-        transitions: [],
+        transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
