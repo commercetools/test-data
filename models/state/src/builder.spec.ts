@@ -15,7 +15,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: 'orderState',
+        type: 'LineItemState',
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -47,7 +47,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: 'orderState',
+        type: 'LineItemState',
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -80,7 +80,7 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: 'orderState',
+        type: 'LineItemState',
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',

@@ -16,7 +16,7 @@ const generator = Generator<TState>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    type: 'orderState',
+    type: 'LineItemState',
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     initial: fake((f) => f.datatype.boolean()),
