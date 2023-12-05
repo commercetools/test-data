@@ -13,7 +13,7 @@ describe('builder', () => {
       StateDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: 'LineItemState',
+        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -35,7 +35,7 @@ describe('builder', () => {
       StateDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: 'LineItemState',
+        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -57,7 +57,7 @@ describe('builder', () => {
       StateDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: 'LineItemState',
+        type: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',

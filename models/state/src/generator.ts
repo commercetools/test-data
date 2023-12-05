@@ -2,9 +2,14 @@ import {
   ClientLogging,
   LocalizedString,
 } from '@commercetools-test-data/commons';
-import { sequence, fake, Generator } from '@commercetools-test-data/core';
+import {
+  sequence,
+  fake,
+  Generator,
+  oneOf,
+} from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { roles } from './constants';
+import { roles, type } from './constants';
 import { TState } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -16,7 +21,7 @@ const generator = Generator<TState>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    type: 'LineItemState',
+    type: oneOf(...Object.values(type)),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     initial: fake((f) => f.datatype.boolean()),
