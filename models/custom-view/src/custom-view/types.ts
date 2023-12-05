@@ -23,25 +23,6 @@ type CustomViewPermission = {
   oAuthScopes: string[];
 };
 
-export type CustomViewInstallationPermission = {
-  createdAt: string;
-  id: string;
-  name: string;
-  oAuthScopes: string[];
-  updatedAt: string;
-};
-
-export type CustomViewInstallation = {
-  acceptedPermissions: CustomViewInstallationPermission[];
-  createdAt: string;
-  id: string;
-  installInAllProjects: boolean;
-  // owner: OrganizationExtension;
-  ownerId: string;
-  // projects: ProjectExtension[];
-  updatedAt: string;
-};
-
 export type TCustomView = {
   id: string;
   // owner: OrganizationExtension;
