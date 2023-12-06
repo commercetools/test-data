@@ -12,7 +12,7 @@ const generator = Generator<TStateDraft>({
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     initial: fake((f) => f.datatype.boolean()),
-    roles: [roles.Return],
+    roles: [oneOf(...Object.values(roles))],
     transitions: null,
   },
 });

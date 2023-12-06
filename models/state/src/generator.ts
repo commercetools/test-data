@@ -26,7 +26,7 @@ const generator = Generator<TState>({
     description: fake(() => LocalizedString.random()),
     initial: fake((f) => f.datatype.boolean()),
     builtIn: fake((f) => f.datatype.boolean()),
-    roles: [roles.Return],
+    roles: [oneOf(...Object.values(roles))],
     transitions: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

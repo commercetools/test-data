@@ -23,7 +23,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         initial: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
       })
     )
@@ -45,7 +45,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         initial: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
       })
     )
@@ -90,7 +90,7 @@ describe('builder', () => {
           }),
         ]),
         initial: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
       })
     )

@@ -1,5 +1,7 @@
 import State from '../../builder';
 
-const withTypeLineItemState = () => State().type('LineItemState');
+//`LineItemState` requires a role of `Return`
+const withTypeLineItemState = () =>
+  State().type('LineItemState').roles(['Return']);
 
 export default withTypeLineItemState;

@@ -26,7 +26,7 @@ describe('builder', () => {
         }),
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -58,7 +58,7 @@ describe('builder', () => {
         }),
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -103,7 +103,7 @@ describe('builder', () => {
         ]),
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
-        roles: [roles.Return],
+        roles: expect.any(Array),
         transitions: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
