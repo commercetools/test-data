@@ -1,5 +1,34 @@
 # @commercetools-test-data/custom-view
 
+## 6.8.0
+
+### Minor Changes
+
+- [#422](https://github.com/commercetools/test-data/pull/422) [`555c8da`](https://github.com/commercetools/test-data/commit/555c8da7d28d81c7ec385cde27fe768cdf4728fb) Thanks [@kark](https://github.com/kark)! - Allow to generate test data for Custom Views Installations.
+
+  ```ts
+  import {
+    CustomViewInstallation,
+    RestrictedCustomViewInstallationForOrganization,
+    type TCustomViewInstallationGraphql,
+    type TRestrictedCustomViewInstallationForOrganizationGraphql,
+  } from '@commercetools-test-data/custom-view';
+
+  const customViewInstallation =
+    CustomViewInstallation.random().buildGraphql<TCustomViewInstallationGraphql>();
+
+  const restrictedCustomViewInstallationForOrganization =
+    RestrictedCustomViewInstallationForOrganization.random().buildGraphql<TRestrictedCustomViewInstallationForOrganizationGraphql>();
+  ```
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.8.0
+  - @commercetools-test-data/graphql-types@6.8.0
+  - @commercetools-test-data/commons@6.8.0
+  - @commercetools-test-data/utils@6.8.0
+
 ## 6.6.0
 
 ### Patch Changes

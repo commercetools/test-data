@@ -1,5 +1,18 @@
 # @commercetools-test-data/business-unit
 
+## 6.8.0
+
+### Minor Changes
+
+- [#437](https://github.com/commercetools/test-data/pull/437) [`b1abc67`](https://github.com/commercetools/test-data/commit/b1abc67a77a5f3567ce88577e6340cbea9db6565) Thanks [@ChristianMoll](https://github.com/ChristianMoll)! - Added typename fields to graphql transformers
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.8.0
+  - @commercetools-test-data/commons@6.8.0
+  - @commercetools-test-data/utils@6.8.0
+
 ## 6.6.0
 
 ### Patch Changes
