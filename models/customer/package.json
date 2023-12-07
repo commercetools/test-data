@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/customer",
-  "version": "6.6.0",
+  "version": "6.8.0",
   "description": "Data model for commercetools API Customer",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,10 +19,10 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "6.6.0",
-    "@commercetools-test-data/core": "6.6.0",
-    "@commercetools-test-data/customer-group": "6.6.0",
-    "@commercetools-test-data/utils": "6.6.0",
+    "@commercetools-test-data/commons": "6.8.0",
+    "@commercetools-test-data/core": "6.8.0",
+    "@commercetools-test-data/customer-group": "6.8.0",
+    "@commercetools-test-data/utils": "6.8.0",
     "@commercetools/platform-sdk": "^6.0.0",
     "@faker-js/faker": "^8.0.0"
   }
