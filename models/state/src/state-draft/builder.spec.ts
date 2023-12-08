@@ -4,7 +4,6 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TStateDraft, TStateDraftGraphql } from '../types';
 import * as StateDraft from './index';
-import { roles } from '../constants';
 
 describe('builder', () => {
   it(
