@@ -4,7 +4,6 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TState, TStateGraphql } from './types';
 import * as State from './index';
-import { roles } from './constants';
 
 describe('builder', () => {
   it(

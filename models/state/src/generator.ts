@@ -14,7 +14,7 @@ import { TState } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/projects/States#States
+// https://docs.commercetools.com/api/projects/states#state
 
 const generator = Generator<TState>({
   fields: {
