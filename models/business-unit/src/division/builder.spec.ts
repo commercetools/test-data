@@ -2,12 +2,12 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TBusinessUnit, TBusinessUnitGraphql } from '../types';
+import type { TDivision, TDivisionGraphql } from '../types';
 import * as BusinessUnit from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
+    ...createBuilderSpec<TDivision, TDivision>(
       'default',
       BusinessUnit.random(),
       expect.objectContaining({
@@ -44,7 +44,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
+    ...createBuilderSpec<TDivision, TDivision>(
       'rest',
       BusinessUnit.random(),
       expect.objectContaining({
@@ -81,7 +81,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnitGraphql>(
+    ...createBuilderSpec<TDivision, TDivisionGraphql>(
       'graphql',
       BusinessUnit.random(),
       expect.objectContaining({

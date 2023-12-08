@@ -1,22 +1,19 @@
 import { KeyReference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
-import type { TBusinessUnit, TBusinessUnitGraphql } from '../types';
+import type { TCompany, TCompanyGraphql } from '../types';
 
 const transformers = {
-  default: Transformer<TBusinessUnit, TBusinessUnit>('default', {
+  default: Transformer<TCompany, TCompany>('default', {
     buildFields: ['addresses', 'createdBy', 'lastModifiedBy', 'topLevelUnit'],
   }),
-  rest: Transformer<TBusinessUnit, TBusinessUnit>('rest', {
+  rest: Transformer<TCompany, TCompany>('rest', {
     buildFields: ['addresses', 'createdBy', 'lastModifiedBy', 'topLevelUnit'],
   }),
-  graphql: Transformer<
-    TBusinessUnit | TBusinessUnitGraphql,
-    TBusinessUnitGraphql
-  >('graphql', {
+  graphql: Transformer<TCompany | TCompanyGraphql, TCompanyGraphql>('graphql', {
     buildFields: ['addresses', 'createdBy', 'lastModifiedBy'],
     replaceFields: ({ fields }) => {
       return {
-        ...(fields as TBusinessUnit),
+        ...(fields as TCompany),
         storesRef: KeyReference.random().typeId('store').buildGraphql(),
         parentUnitRef: null,
         topLevelUnitRef: KeyReference.random()
@@ -27,7 +24,7 @@ const transformers = {
           fields.topLevelUnit && 'id' in fields.topLevelUnit
             ? fields.topLevelUnit
             : {
-                ...(fields as TBusinessUnit),
+                ...(fields as TCompany),
                 __typename: 'BusinessUnit',
               },
         ancestors:

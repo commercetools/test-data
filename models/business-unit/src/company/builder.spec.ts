@@ -2,12 +2,12 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TBusinessUnit, TBusinessUnitGraphql } from '../types';
+import type { TCompany, TCompanyGraphql } from '../types';
 import * as BusinessUnit from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
+    ...createBuilderSpec<TCompany, TCompany>(
       'default',
       BusinessUnit.random(),
       expect.objectContaining({
@@ -43,7 +43,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnit>(
+    ...createBuilderSpec<TCompany, TCompany>(
       'rest',
       BusinessUnit.random(),
       expect.objectContaining({
@@ -79,7 +79,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TBusinessUnit, TBusinessUnitGraphql>(
+    ...createBuilderSpec<TCompany, TCompanyGraphql>(
       'graphql',
       BusinessUnit.random(),
       expect.objectContaining({
