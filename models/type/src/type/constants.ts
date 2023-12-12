@@ -1,3 +1,8 @@
+const inputHints = {
+  SingleLine: 'SingleLine',
+  MultiLine: 'MultiLine',
+} as const;
+
 const resourceTypeIds = {
   address: 'address',
   asset: 'asset',
@@ -32,4 +37,4 @@ const resourceTypeIds = {
   transaction: 'transaction',
 } as const;
 
-export { resourceTypeIds };
+export { inputHints, resourceTypeIds };

@@ -3,7 +3,7 @@
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TType, TTypeGraphql } from './types';
-import * as Type from './index';
+import * as Type from '../index';
 
 describe('builder', () => {
   it(
@@ -23,7 +23,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -52,7 +52,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -94,7 +94,7 @@ describe('builder', () => {
           }),
         ]),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),

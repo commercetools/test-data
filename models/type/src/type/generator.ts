@@ -9,7 +9,7 @@ import {
   oneOf,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { resourceTypeIds } from './constants';
+import { inputHints, resourceTypeIds } from './constants';
 import { TType } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -24,7 +24,29 @@ const generator = Generator<TType>({
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     resourceTypeIds: [oneOf(...Object.values(resourceTypeIds))],
-    fieldDefinitions: [],
+    fieldDefinitions: [
+      {
+        type: fake((f) =>
+          f.helpers.arrayElement([
+            {
+              name: 'Boolean',
+            },
+            {
+              name: 'String',
+            },
+            {
+              name: 'Enum',
+            },
+          ])
+        ),
+        name: fake((f) => f.lorem.slug(3)),
+        label: fake(() => LocalizedString.random()),
+        required: fake((f) => f.datatype.boolean()),
+        inputHint: fake((f) =>
+          f.helpers.arrayElement(Object.values(inputHints))
+        ),
+      },
+    ],
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
