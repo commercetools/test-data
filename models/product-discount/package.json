@@ -24,7 +24,7 @@
     "@commercetools-test-data/utils": "6.8.0",
     "@commercetools-test-data/category": "6.8.0",
     "@commercetools-test-data/product-type": "6.8.0",
-    "@commercetools/platform-sdk": "^6.0.0",
+    "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"
   }
 }
