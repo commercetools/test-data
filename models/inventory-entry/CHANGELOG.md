@@ -1,5 +1,18 @@
 # @commercetools-test-data/inventory-entry
 
+## 6.8.1
+
+### Patch Changes
+
+- [#446](https://github.com/commercetools/test-data/pull/446) [`417bed5`](https://github.com/commercetools/test-data/commit/417bed55ae5ca2e2e73bf8c3cdfb6e7793098d44) Thanks [@Sarah4VT](https://github.com/Sarah4VT)! - Change data generation for inventory-entry and discount-code to prevent potential data overlap which causes flaky e2e results
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.8.1
+  - @commercetools-test-data/channel@6.8.1
+  - @commercetools-test-data/commons@6.8.1
+  - @commercetools-test-data/product@6.8.1
+  - @commercetools-test-data/utils@6.8.1
+
 ## 6.8.0
 
 ### Patch Changes
