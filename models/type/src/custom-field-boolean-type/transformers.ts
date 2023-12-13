@@ -19,7 +19,7 @@ const transformers = {
     {
       buildFields: [],
       addFields: () => ({
-        __typename: 'BooleanAttributeDefinitionType',
+        __typename: 'BooleanCustomFieldType',
       }),
     }
   ),

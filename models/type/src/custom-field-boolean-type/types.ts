@@ -5,7 +5,7 @@ export type TCustomFieldBooleanType = CustomFieldBooleanType;
 export type TCustomFieldBooleanTypeDraft = CustomFieldBooleanType;
 
 export type TCustomFieldBooleanTypeGraphql = CustomFieldBooleanType & {
-  __typename: 'BooleanAttributeDefinitionType';
+  __typename: 'BooleanCustomFieldType';
 };
 export type TCustomFieldBooleanTypeDraftGraphql = {
   boolean: {
