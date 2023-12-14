@@ -1,21 +1,17 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type {
-  TBusinessUnitDraft,
-  TBusinessUnitDraftGraphql,
-} from '../../types';
+import type { TDivisionDraft, TDivisionDraftGraphql } from '../../types';
 
 const transformers = {
-  default: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('default', {
+  default: Transformer<TDivisionDraft, TDivisionDraft>('default', {
     buildFields: ['addresses'],
   }),
-  rest: Transformer<TBusinessUnitDraft, TBusinessUnitDraft>('rest', {
+  rest: Transformer<TDivisionDraft, TDivisionDraft>('rest', {
     buildFields: ['addresses'],
   }),
   //only scaffolding provided at this time
-  graphql: Transformer<TBusinessUnitDraft, TBusinessUnitDraftGraphql>(
-    'graphql',
-    { buildFields: [] }
-  ),
+  graphql: Transformer<TDivisionDraft, TDivisionDraftGraphql>('graphql', {
+    buildFields: [],
+  }),
 };
 
 export default transformers;

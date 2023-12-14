@@ -1,19 +1,26 @@
 import type {
-  BusinessUnitDraft,
   BusinessUnitKeyReference,
   KeyReference,
   Store,
   Company,
   Division,
+  CompanyDraft,
+  DivisionDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 //BusinessUnitDraft
-export type TBusinessUnitDraft = BusinessUnitDraft;
-export type TBusinessUnitDraftBuilder = TBuilder<TBusinessUnitDraft>;
-export type TCreateBusinessUnitDraftBuilder = () => TBusinessUnitDraftBuilder;
+export type TCompanyDraft = CompanyDraft;
+export type TDivisionDraft = DivisionDraft;
+export type TCompanyDraftBuilder = TBuilder<TCompanyDraft>;
+export type TDivisionDraftBuilder = TBuilder<TDivisionDraft>;
+export type TCreateCompanyDraftBuilder = () => TCompanyDraftBuilder;
+export type TCreateDivisionDraftBuilder = () => TDivisionDraftBuilder;
 //BusinessUnitDraftGraphql is only scaffolding at this time
-export type TBusinessUnitDraftGraphql = TBusinessUnitDraft & {
+export type TCompanyDraftGraphql = TCompanyDraft & {
+  __typename: 'BusinessUnitDraft';
+};
+export type TDivisionDraftGraphql = TDivisionDraft & {
   __typename: 'BusinessUnitDraft';
 };
 

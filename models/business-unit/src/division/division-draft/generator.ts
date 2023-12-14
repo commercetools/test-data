@@ -1,11 +1,11 @@
 import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { status, storeMode, unitType, associateMode } from '../../constants';
-import type { TBusinessUnitDraft } from '../../types';
+import type { TDivisionDraft } from '../../types';
 
 // https://docs.commercetools.com/api/projects/business-units#divisiondraft
 
-const generator = Generator<TBusinessUnitDraft>({
+const generator = Generator<TDivisionDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     status: oneOf(...Object.values(status)),

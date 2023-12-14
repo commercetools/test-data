@@ -1,13 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
-import type {
-  TCreateBusinessUnitDraftBuilder,
-  TBusinessUnitDraft,
-} from '../../types';
+import type { TCreateDivisionDraftBuilder, TDivisionDraft } from '../../types';
 import generator from './generator';
 import transformers from './transformers';
 
-const Model: TCreateBusinessUnitDraftBuilder = () =>
-  Builder<TBusinessUnitDraft>({
+const Model: TCreateDivisionDraftBuilder = () =>
+  Builder<TDivisionDraft>({
     generator,
     transformers,
   });
