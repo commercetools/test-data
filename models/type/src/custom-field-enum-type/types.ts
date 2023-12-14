@@ -1,6 +1,6 @@
 import type {
   CustomFieldEnumType,
-  AttributePlainEnumValue,
+  CustomFieldEnumValue,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
@@ -11,7 +11,7 @@ export type TCustomFieldEnumTypeGraphql = CustomFieldEnumType & {
   __typename: 'EnumCustomFieldType';
 };
 export type TCustomFieldEnumTypeDraftGraphql = {
-  enum: { values: Array<AttributePlainEnumValue> };
+  enum: { values: Array<CustomFieldEnumValue> };
 };
 
 export type TCustomFieldEnumTypeBuilder = TBuilder<TCustomFieldEnumType>;
