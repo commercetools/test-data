@@ -1,37 +1,37 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomFieldStringType, TCustomFieldStringTypeGraphql } from './types';
+import { TCustomFieldMoneyType, TCustomFieldMoneyTypeGraphql } from './types';
 import * as AttributeEnumType from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TCustomFieldStringType, TCustomFieldStringType>(
+    ...createBuilderSpec<TCustomFieldMoneyType, TCustomFieldMoneyType>(
       'default',
       AttributeEnumType.random(),
       expect.objectContaining({
-        name: 'String',
+        name: 'Money',
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TCustomFieldStringType, TCustomFieldStringType>(
+    ...createBuilderSpec<TCustomFieldMoneyType, TCustomFieldMoneyType>(
       'rest',
       AttributeEnumType.random(),
       expect.objectContaining({
-        name: 'String',
+        name: 'Money',
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TCustomFieldStringType, TCustomFieldStringTypeGraphql>(
+    ...createBuilderSpec<TCustomFieldMoneyType, TCustomFieldMoneyTypeGraphql>(
       'graphql',
       AttributeEnumType.random(),
       expect.objectContaining({
-        name: 'String',
-        __typename: 'StringCustomFieldType',
+        name: 'Money',
+        __typename: 'MoneyCustomFieldType',
       })
     )
   );
