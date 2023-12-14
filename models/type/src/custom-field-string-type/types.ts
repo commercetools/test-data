@@ -5,7 +5,7 @@ export type TCustomFieldStringType = CustomFieldStringType;
 export type TCustomFieldStringTypeDraft = CustomFieldStringType;
 
 export type TCustomFieldStringTypeGraphql = CustomFieldStringType & {
-  __typename: 'TextCustomFieldType';
+  __typename: 'StringCustomFieldType';
 };
 export type TCustomFieldStringTypeDraftGraphql = {
   string: {
