@@ -1,5 +1,19 @@
 # @commercetools-test-data/customer
 
+## 6.9.0
+
+### Minor Changes
+
+- [#448](https://github.com/commercetools/test-data/pull/448) [`e9d1bad`](https://github.com/commercetools/test-data/commit/e9d1bad2ef9dd7be2e2a8c026baa92bae5e3c1cf) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Updated verification status of customers for the B2C sample data set
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.9.0
+  - @commercetools-test-data/commons@6.9.0
+  - @commercetools-test-data/customer-group@6.9.0
+  - @commercetools-test-data/utils@6.9.0
+
 ## 6.8.1
 
 ### Patch Changes

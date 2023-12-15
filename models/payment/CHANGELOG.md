@@ -1,5 +1,16 @@
 # @commercetools-test-data/payment
 
+## 6.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`e9d1bad`](https://github.com/commercetools/test-data/commit/e9d1bad2ef9dd7be2e2a8c026baa92bae5e3c1cf)]:
+  - @commercetools-test-data/customer@6.9.0
+  - @commercetools-test-data/order@6.9.0
+  - @commercetools-test-data/core@6.9.0
+  - @commercetools-test-data/commons@6.9.0
+  - @commercetools-test-data/utils@6.9.0
+
 ## 6.8.1
 
 ### Patch Changes
