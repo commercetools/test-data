@@ -1,5 +1,14 @@
 # @commercetools-test-data/state
 
+## 6.9.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.9.0
+  - @commercetools-test-data/commons@6.9.0
+  - @commercetools-test-data/utils@6.9.0
+
 ## 6.8.1
 
 ### Patch Changes
