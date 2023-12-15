@@ -14,6 +14,7 @@ const sebastianFranklin = (): TCustomerDraftBuilder =>
     .addresses([
       AddressDraft.presets.sampleDataGoodStore.sebastianFranklinAddress(),
     ])
-    .authenticationMode(authenticationMode.Password);
+    .authenticationMode(authenticationMode.Password)
+    .isEmailVerified(true);
 
 export default sebastianFranklin;
