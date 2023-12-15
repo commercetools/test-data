@@ -11,13 +11,13 @@ import {
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { status, storeMode, unitType, associateMode } from '../constants';
-import type { TBusinessUnit } from '../types';
+import type { TCompany } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/projects/business-units#company
 
-const generator = Generator<TBusinessUnit>({
+const generator = Generator<TCompany>({
   fields: {
     id: fake((f) => f.string.uuid()),
     version: sequence(),
@@ -36,6 +36,7 @@ const generator = Generator<TBusinessUnit>({
     associateMode: associateMode.Explicit,
     associates: [],
     inheritedAssociates: [],
+    parentUnit: null,
     topLevelUnit: KeyReference.random().typeId('business-unit'),
     custom: null,
     createdAt: fake(getOlderDate),

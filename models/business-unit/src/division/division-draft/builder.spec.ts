@@ -2,14 +2,14 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TBusinessUnitDraft } from '../../types';
-import * as BusinessUnitDraft from './index';
+import type { TDivisionDraft } from '../../types';
+import * as DivisionDraft from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TBusinessUnitDraft, TBusinessUnitDraft>(
+    ...createBuilderSpec<TDivisionDraft, TDivisionDraft>(
       'default',
-      BusinessUnitDraft.random(),
+      DivisionDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
@@ -32,9 +32,9 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TBusinessUnitDraft, TBusinessUnitDraft>(
+    ...createBuilderSpec<TDivisionDraft, TDivisionDraft>(
       'rest',
-      BusinessUnitDraft.random(),
+      DivisionDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
         status: expect.any(String),
