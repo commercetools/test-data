@@ -1,5 +1,6 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
+import * as FieldDefinition from '../../field-definition';
 import { resourceTypeIds } from '../constants';
 import { TTypeDraft } from '../types';
 
@@ -11,7 +12,7 @@ const generator = Generator<TTypeDraft>({
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     resourceTypeIds: [oneOf(...Object.values(resourceTypeIds))],
-    fieldDefinitions: [],
+    fieldDefinitions: fake(() => FieldDefinition.random()),
   },
 });
 
