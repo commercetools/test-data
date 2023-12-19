@@ -16,6 +16,7 @@ describe('A US-based customer with no defined state', () => {
             state: null,
           }),
         ]),
+        authenticationMode: 'Password',
       })
     );
   });
