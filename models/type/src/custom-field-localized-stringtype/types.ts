@@ -1,27 +1,27 @@
-import { CustomFieldLocalizedStringtype } from '@commercetools/platform-sdk';
+import { CustomFieldLocalizedStringType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCustomFieldLocalizedStringtype = CustomFieldLocalizedStringtype;
-export type TCustomFieldLocalizedStringtypeDraft =
-  CustomFieldLocalizedStringtype;
+export type TCustomFieldLocalizedStringType = CustomFieldLocalizedStringType;
+export type TCustomFieldLocalizedStringTypeDraft =
+  CustomFieldLocalizedStringType;
 
-export type TCustomFieldLocalizedStringtypeGraphql =
-  TCustomFieldLocalizedStringtype & {
+export type TCustomFieldLocalizedStringTypeGraphql =
+  TCustomFieldLocalizedStringType & {
     __typename: 'LocalizableStringtypeCustomFieldType';
   };
 
-export type TCustomFieldLocalizedStringtypeDraftGraphql = {
+export type TCustomFieldLocalizedStringTypeDraftGraphql = {
   lstringtype: {
     dummy: string | null;
   };
 };
 
-export type TCustomFieldLocalizedStringtypeBuilder =
-  TBuilder<TCustomFieldLocalizedStringtype>;
-export type TCustomFieldLocalizedStringtypeDraftBuilder =
-  TBuilder<TCustomFieldLocalizedStringtypeDraft>;
+export type TCustomFieldLocalizedStringTypeBuilder =
+  TBuilder<TCustomFieldLocalizedStringType>;
+export type TCustomFieldLocalizedStringTypeDraftBuilder =
+  TBuilder<TCustomFieldLocalizedStringTypeDraft>;
 
-export type TCreateCustomFieldLocalizedStringtypeBuilder =
-  () => TCustomFieldLocalizedStringtypeBuilder;
-export type TCreateCustomFieldLocalizedStringtypeDraftBuilder =
-  () => TCustomFieldLocalizedStringtypeDraftBuilder;
+export type TCreateCustomFieldLocalizedStringTypeBuilder =
+  () => TCustomFieldLocalizedStringTypeBuilder;
+export type TCreateCustomFieldLocalizedStringTypeDraftBuilder =
+  () => TCustomFieldLocalizedStringTypeDraftBuilder;

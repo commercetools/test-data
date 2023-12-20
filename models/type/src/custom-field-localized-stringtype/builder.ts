@@ -2,12 +2,12 @@ import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
 import {
-  TCustomFieldLocalizedStringtype,
-  TCreateCustomFieldLocalizedStringtypeBuilder,
+  TCustomFieldLocalizedStringType,
+  TCreateCustomFieldLocalizedStringTypeBuilder,
 } from './types';
 
-const Model: TCreateCustomFieldLocalizedStringtypeBuilder = () =>
-  Builder<TCustomFieldLocalizedStringtype>({
+const Model: TCreateCustomFieldLocalizedStringTypeBuilder = () =>
+  Builder<TCustomFieldLocalizedStringType>({
     generator,
     transformers,
   });

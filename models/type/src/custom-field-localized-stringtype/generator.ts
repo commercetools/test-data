@@ -1,9 +1,9 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldLocalizedStringtype } from './types';
+import { TCustomFieldLocalizedStringType } from './types';
 
-// https://docs.commercetools.com/api/projects/types#customfieldlocalizedstringtype
+// https://docs.commercetools.com/api/projects/types#CustomFieldLocalizedStringType
 
-const generator = Generator<TCustomFieldLocalizedStringtype>({
+const generator = Generator<TCustomFieldLocalizedStringType>({
   fields: {
     name: 'LocalizedString',
   },

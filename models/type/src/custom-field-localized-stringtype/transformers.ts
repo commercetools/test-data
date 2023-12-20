@@ -1,22 +1,22 @@
 import { Transformer } from '@commercetools-test-data/core';
 import {
-  type TCustomFieldLocalizedStringtype,
-  type TCustomFieldLocalizedStringtypeGraphql,
+  type TCustomFieldLocalizedStringType,
+  type TCustomFieldLocalizedStringTypeGraphql,
 } from './types';
 
 const transformers = {
   default: Transformer<
-    TCustomFieldLocalizedStringtype,
-    TCustomFieldLocalizedStringtype
+    TCustomFieldLocalizedStringType,
+    TCustomFieldLocalizedStringType
   >('default', { buildFields: [] }),
 
   rest: Transformer<
-    TCustomFieldLocalizedStringtype,
-    TCustomFieldLocalizedStringtype
+    TCustomFieldLocalizedStringType,
+    TCustomFieldLocalizedStringType
   >('rest', { buildFields: [] }),
   graphql: Transformer<
-    TCustomFieldLocalizedStringtype,
-    TCustomFieldLocalizedStringtypeGraphql
+    TCustomFieldLocalizedStringType,
+    TCustomFieldLocalizedStringTypeGraphql
   >('graphql', {
     buildFields: [],
     addFields: () => ({
