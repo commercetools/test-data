@@ -3223,6 +3223,18 @@ packages:
       - encoding
     dev: false
 
+  /@commercetools/platform-sdk@6.0.0:
+    resolution: {integrity: sha512-ADpyUUiDJ6ltTc1l5H4I/Rn0MyqSAD2ZP5QHiq++SAtM2CNEjfqgePty07sUhG8IxdN145i7/XNHopMxwap8Ow==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@commercetools/sdk-client-v2': 2.3.0
+      '@commercetools/sdk-middleware-auth': 7.0.1
+      '@commercetools/sdk-middleware-http': 7.0.4
+      '@commercetools/sdk-middleware-logger': 3.0.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
+
   /@commercetools/platform-sdk@7.0.0:
     resolution: {integrity: sha512-qesB4cZL3M2ajhySY21a0C9y2gxm/bBOq9x5ZivSpzOOPMLIaACogqOfogbXnC4eAFkIQOEZd3/h50BB9mmYpw==}
     engines: {node: '>=14'}
