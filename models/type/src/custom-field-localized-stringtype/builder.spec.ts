@@ -2,19 +2,19 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
-  type TCustomFieldLocalizedStringtype,
-  TCustomFieldLocalizedStringtypeGraphql,
+  type TCustomFieldLocalizedStringType,
+  TCustomFieldLocalizedStringTypeGraphql,
 } from './types';
-import * as CustomFieldLocalizedStringtype from './index';
+import * as CustomFieldLocalizedStringType from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<
-      TCustomFieldLocalizedStringtype,
-      TCustomFieldLocalizedStringtype
+      TCustomFieldLocalizedStringType,
+      TCustomFieldLocalizedStringType
     >(
       'default',
-      CustomFieldLocalizedStringtype.random(),
+      CustomFieldLocalizedStringType.random(),
       expect.objectContaining({
         name: 'LocalizedString',
       })
@@ -23,11 +23,11 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TCustomFieldLocalizedStringtype,
-      TCustomFieldLocalizedStringtype
+      TCustomFieldLocalizedStringType,
+      TCustomFieldLocalizedStringType
     >(
       'rest',
-      CustomFieldLocalizedStringtype.random(),
+      CustomFieldLocalizedStringType.random(),
       expect.objectContaining({
         name: 'LocalizedString',
       })
@@ -36,11 +36,11 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TCustomFieldLocalizedStringtype,
-      TCustomFieldLocalizedStringtypeGraphql
+      TCustomFieldLocalizedStringType,
+      TCustomFieldLocalizedStringTypeGraphql
     >(
       'graphql',
-      CustomFieldLocalizedStringtype.random(),
+      CustomFieldLocalizedStringType.random(),
       expect.objectContaining({
         name: 'LocalizedString',
         __typename: 'LocalizableStringtypeCustomFieldType',
