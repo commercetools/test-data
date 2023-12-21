@@ -1,9 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomFieldTimeType, TCustomFieldTimeType } from './types';
+import { TCustomFieldTimeType, TCustomFieldTimeTypeGraphql } from './types';
 import * as AttributeEnumType from './index';
-import { TCustomFieldTimeTypeGraphql } from '../../dist/commercetools-test-data-type.cjs';
 
 describe('builder', () => {
   it(
