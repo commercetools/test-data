@@ -1,4 +1,5 @@
 import { CustomFieldLocalizedEnumValue } from '@commercetools/platform-sdk';
+import { TLocalizedStringGraphql } from '@commercetools-test-data/commons/src';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCustomFieldLocalizedEnumValue = CustomFieldLocalizedEnumValue;
@@ -9,7 +10,7 @@ export type TCustomFieldLocalizedEnumValueGraphql = Omit<
   // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
   'label'
 > & {
-  labelAllLocales;
+  labelAllLocales: TLocalizedStringGraphql | null;
   __typename: 'LocalizableEnumValueType';
 };
 export type TCustomFieldLocalizedEnumValueDraftGraphql =
