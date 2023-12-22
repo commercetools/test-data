@@ -21,7 +21,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
       })
     )
   );
@@ -41,7 +41,7 @@ describe('builder', () => {
           en: expect.any(String),
         }),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
       })
     )
   );
@@ -84,7 +84,7 @@ describe('builder', () => {
           }),
         ]),
         resourceTypeIds: expect.any(Array),
-        fieldDefinitions: [],
+        fieldDefinitions: expect.any(Array),
       })
     )
   );

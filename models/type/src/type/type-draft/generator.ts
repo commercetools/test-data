@@ -12,7 +12,7 @@ const generator = Generator<TTypeDraft>({
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     resourceTypeIds: [oneOf(...Object.values(resourceTypeIds))],
-    fieldDefinitions: fake(() => FieldDefinition.random()),
+    fieldDefinitions: [fake(() => FieldDefinition.random())],
   },
 });
 
