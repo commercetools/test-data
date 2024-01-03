@@ -7,5 +7,6 @@ const usBasedNoState = (): TCustomerDraftBuilder =>
     .addresses([AddressDraft.presets.changeHistoryData.withCountryUsNoState()])
     .defaultBillingAddress(0)
     .defaultShippingAddress(0)
-    .locale('en-US');
+    .locale('en-US')
+    .authenticationMode('Password');
 export default usBasedNoState;
