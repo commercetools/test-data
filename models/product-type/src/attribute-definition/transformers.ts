@@ -1,4 +1,4 @@
-import { Transformer } from '@commercetools-test-data/core';
+import { Transformer, buildField } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinition,
   TAttributeDefinitionGraphql,
@@ -14,8 +14,25 @@ const transformers = {
   graphql: Transformer<TAttributeDefinition, TAttributeDefinitionGraphql>(
     'graphql',
     {
-      buildFields: ['label', 'inputTip', 'type'],
-      addFields: () => ({ __typename: 'AttributeDefinition' }),
+      replaceFields: ({ fields }: { fields: TAttributeDefinition }) => ({
+        ...fields,
+        __typename: 'AttributeDefinition',
+        inputTipAllLocales: buildField(fields.inputTip, 'graphql', {
+          fieldToBuild: 'inputTip',
+        }),
+        labelAllLocales: buildField(fields.label, 'graphql', {
+          fieldToBuild: 'label',
+        }),
+        type: buildField(fields.type, 'graphql', {
+          fieldToBuild: 'type',
+        }),
+        label: buildField(fields.label, 'default', {
+          fieldToBuild: 'label',
+        }).en,
+        inputTip: buildField(fields.inputTip, 'default', {
+          fieldToBuild: 'inputTip',
+        }).en,
+      }),
     }
   ),
 };
