@@ -14,8 +14,8 @@ import { TPaymentMethodInfoDraft } from '../types';
 
 const generator = Generator<TPaymentMethodInfoDraft>({
   fields: {
-    paymentInterface: null,
-    method: null,
+    paymentInterface: fake((f) => f.lorem.slug(2)),
+    method: fake((f) => f.lorem.slug(1)),
     name: fake((f) => LocalizedString.random()),
   },
 });
