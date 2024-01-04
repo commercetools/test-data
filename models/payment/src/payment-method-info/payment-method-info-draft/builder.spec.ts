@@ -13,8 +13,8 @@ describe('builder', () => {
       'default',
       PaymentMethodInfoInput.random(),
       expect.objectContaining({
-        paymentInterface: null,
-        method: null,
+        paymentInterface: expect.any(String),
+        method: expect.any(String),
         name: expect.objectContaining({
           en: expect.any(String),
         }),
@@ -31,8 +31,8 @@ describe('builder', () => {
       PaymentMethodInfoInput.random(),
       expect.objectContaining({
         __typename: 'PaymentMethodInfoInput',
-        paymentInterface: null,
-        method: null,
+        paymentInterface: expect.any(String),
+        method: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: expect.any(String),
