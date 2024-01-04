@@ -15,7 +15,6 @@ describe(`with nested preset`, () => {
         },
         typeId: 'product-type',
       },
-      typeref: null,
     });
   });
 

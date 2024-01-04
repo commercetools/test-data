@@ -11,7 +11,7 @@ describe('builder', () => {
       AttributePlainEnumValue.random(),
       expect.objectContaining({
         name: 'nested',
-        typeref: null,
+        typeRef: null,
       })
     )
   );
@@ -22,7 +22,7 @@ describe('builder', () => {
       AttributePlainEnumValue.random(),
       expect.objectContaining({
         name: 'nested',
-        typeref: null,
+        typeRef: null,
       })
     )
   );
@@ -34,7 +34,7 @@ describe('builder', () => {
       expect.objectContaining({
         __typename: 'NestedAttributeDefinitionType',
         name: 'nested',
-        typeref: null,
+        typeRef: null,
       })
     )
   );

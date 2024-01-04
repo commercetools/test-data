@@ -6,7 +6,7 @@ import { TAttributeNestedType } from './types';
 const generator = Generator<TAttributeNestedType>({
   fields: {
     name: 'nested',
-    typeref: null,
+    typeRef: null,
   },
 });
 

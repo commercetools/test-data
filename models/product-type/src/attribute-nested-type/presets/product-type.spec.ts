@@ -13,7 +13,6 @@ describe(`with productType preset`, () => {
         id: '123',
         typeId: 'product-type',
       },
-      typeref: null,
     });
   });
 
