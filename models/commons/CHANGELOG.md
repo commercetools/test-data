@@ -1,5 +1,19 @@
 # @commercetools-test-data/commons
 
+## 6.10.0
+
+### Minor Changes
+
+- [#459](https://github.com/commercetools/test-data/pull/459) [`203eff0`](https://github.com/commercetools/test-data/commit/203eff051df03eff3b4f125e281890d0c2db9fd7) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Add CH specific presets to Payment package.
+  Add additional values to PaymentMethodInfo model.
+  Add min and max to Money.centAmount.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.10.0
+  - @commercetools-test-data/utils@6.10.0
+
 ## 6.9.0
 
 ### Patch Changes

@@ -1,5 +1,21 @@
 # @commercetools-test-data/quote
 
+## 6.10.0
+
+### Patch Changes
+
+- Updated dependencies [[`203eff0`](https://github.com/commercetools/test-data/commit/203eff051df03eff3b4f125e281890d0c2db9fd7), [`291a0ea`](https://github.com/commercetools/test-data/commit/291a0ea234dd56947f119c741ca5ac0815533cb4), [`3240130`](https://github.com/commercetools/test-data/commit/3240130bea9a13c419c66128eb64117b8b19cfc0)]:
+  - @commercetools-test-data/commons@6.10.0
+  - @commercetools-test-data/business-unit@6.10.0
+  - @commercetools-test-data/customer@6.10.0
+  - @commercetools-test-data/cart@6.10.0
+  - @commercetools-test-data/customer-group@6.10.0
+  - @commercetools-test-data/quote-request@6.10.0
+  - @commercetools-test-data/staged-quote@6.10.0
+  - @commercetools-test-data/store@6.10.0
+  - @commercetools-test-data/core@6.10.0
+  - @commercetools-test-data/utils@6.10.0
+
 ## 6.9.0
 
 ### Patch Changes
