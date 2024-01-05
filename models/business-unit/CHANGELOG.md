@@ -1,5 +1,18 @@
 # @commercetools-test-data/business-unit
 
+## 6.10.0
+
+### Minor Changes
+
+- [#439](https://github.com/commercetools/test-data/pull/439) [`291a0ea`](https://github.com/commercetools/test-data/commit/291a0ea234dd56947f119c741ca5ac0815533cb4) Thanks [@ChristianMoll](https://github.com/ChristianMoll)! - Replaced graphql scaffolding with real implementation for Company and Division
+
+### Patch Changes
+
+- Updated dependencies [[`203eff0`](https://github.com/commercetools/test-data/commit/203eff051df03eff3b4f125e281890d0c2db9fd7)]:
+  - @commercetools-test-data/commons@6.10.0
+  - @commercetools-test-data/core@6.10.0
+  - @commercetools-test-data/utils@6.10.0
+
 ## 6.9.0
 
 ### Patch Changes

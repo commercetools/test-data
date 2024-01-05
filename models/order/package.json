@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/order",
-  "version": "6.9.0",
+  "version": "6.10.0",
   "description": "Data model for commercetools API Order",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,12 +19,12 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/cart": "6.9.0",
-    "@commercetools-test-data/cart-discount": "6.9.0",
-    "@commercetools-test-data/commons": "6.9.0",
-    "@commercetools-test-data/core": "6.9.0",
-    "@commercetools-test-data/customer-group": "6.9.0",
-    "@commercetools-test-data/utils": "6.9.0",
+    "@commercetools-test-data/cart": "6.10.0",
+    "@commercetools-test-data/cart-discount": "6.10.0",
+    "@commercetools-test-data/commons": "6.10.0",
+    "@commercetools-test-data/core": "6.10.0",
+    "@commercetools-test-data/customer-group": "6.10.0",
+    "@commercetools-test-data/utils": "6.10.0",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"
   }
