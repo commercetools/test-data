@@ -22,13 +22,13 @@ describe('builder', () => {
           currencyCode: expect.any(String),
         }),
         paymentMethodInfo: expect.objectContaining({
-          method: null,
+          method: expect.any(String),
+          paymentInterface: expect.any(String),
           name: expect.objectContaining({
             en: expect.any(String),
             de: expect.any(String),
             fr: expect.any(String),
           }),
-          paymentInterface: null,
         }),
         paymentStatus: expect.objectContaining({
           interfaceCode: expect.any(String),
@@ -74,13 +74,13 @@ describe('builder', () => {
           currencyCode: expect.any(String),
         }),
         paymentMethodInfo: expect.objectContaining({
-          method: null,
+          method: expect.any(String),
+          paymentInterface: expect.any(String),
           name: expect.objectContaining({
             en: expect.any(String),
             de: expect.any(String),
             fr: expect.any(String),
           }),
-          paymentInterface: null,
         }),
         paymentStatus: expect.objectContaining({
           interfaceCode: expect.any(String),
@@ -131,7 +131,8 @@ describe('builder', () => {
         }),
         paymentMethodInfo: expect.objectContaining({
           __typename: 'PaymentMethodInfo',
-          method: null,
+          method: expect.any(String),
+          paymentInterface: expect.any(String),
           name: expect.arrayContaining([
             expect.objectContaining({
               __typename: 'LocalizedString',
@@ -146,7 +147,6 @@ describe('builder', () => {
               value: expect.any(String),
             }),
           ]),
-          paymentInterface: null,
         }),
         paymentStatus: expect.objectContaining({
           __typename: 'PaymentStatus',
