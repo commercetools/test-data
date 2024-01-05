@@ -9,25 +9,23 @@ import {
   oneOf,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { roles, type } from './constants';
-import { TState } from './types';
+import * as FieldDefinition from '../field-definition';
+import { resourceTypeIds } from './constants';
+import { TType } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/projects/states#state
+// https://docs.commercetools.com/api/projects/types#type
 
-const generator = Generator<TState>({
+const generator = Generator<TType>({
   fields: {
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    type: oneOf(...Object.values(type)),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
-    initial: fake((f) => f.datatype.boolean()),
-    builtIn: fake((f) => f.datatype.boolean()),
-    roles: [oneOf(...Object.values(roles))],
-    transitions: null,
+    resourceTypeIds: [oneOf(...Object.values(resourceTypeIds))],
+    fieldDefinitions: [fake(() => FieldDefinition.random())],
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),

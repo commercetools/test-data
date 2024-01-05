@@ -2,17 +2,16 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TStateDraft, TStateDraftGraphql } from '../types';
-import * as StateDraft from './index';
+import type { TTypeDraft, TTypeDraftGraphql } from '../types';
+import * as TypeDraft from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TStateDraft, TStateDraft>(
+    ...createBuilderSpec<TTypeDraft, TTypeDraft>(
       'default',
-      StateDraft.random(),
+      TypeDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -21,20 +20,18 @@ describe('builder', () => {
         description: expect.objectContaining({
           en: expect.any(String),
         }),
-        initial: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TStateDraft, TStateDraft>(
+    ...createBuilderSpec<TTypeDraft, TTypeDraft>(
       'rest',
-      StateDraft.random(),
+      TypeDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -43,20 +40,18 @@ describe('builder', () => {
         description: expect.objectContaining({
           en: expect.any(String),
         }),
-        initial: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
       })
     )
   );
-  // Note that the StateDraft graphql is provided as scaffolding only and may not be complete at this time.
+  // Note that the TypeDraft graphql is provided as scaffolding only and may not be complete at this time.
   it(
-    ...createBuilderSpec<TStateDraft, TStateDraftGraphql>(
+    ...createBuilderSpec<TTypeDraft, TTypeDraftGraphql>(
       'graphql',
-      StateDraft.random(),
+      TypeDraft.random(),
       expect.objectContaining({
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
@@ -88,9 +83,8 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        initial: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
       })
     )
   );

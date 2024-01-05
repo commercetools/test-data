@@ -2,19 +2,18 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TState, TStateGraphql } from './types';
-import * as State from './index';
+import type { TType, TTypeGraphql } from './types';
+import * as Type from '../index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TState, TState>(
+    ...createBuilderSpec<TType, TType>(
       'default',
-      State.random(),
+      Type.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -23,10 +22,8 @@ describe('builder', () => {
         description: expect.objectContaining({
           en: expect.any(String),
         }),
-        initial: expect.any(Boolean),
-        builtIn: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -39,14 +36,13 @@ describe('builder', () => {
     )
   );
   it(
-    ...createBuilderSpec<TState, TState>(
+    ...createBuilderSpec<TType, TType>(
       'rest',
-      State.random(),
+      Type.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
           en: expect.any(String),
@@ -55,10 +51,8 @@ describe('builder', () => {
         description: expect.objectContaining({
           en: expect.any(String),
         }),
-        initial: expect.any(Boolean),
-        builtIn: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customer: expect.objectContaining({ typeId: 'customer' }),
@@ -70,16 +64,15 @@ describe('builder', () => {
       })
     )
   );
-  // Note that the State graphql is provided as scaffolding only and may not be complete at this time.
+  // Note that the Type graphql is provided as scaffolding only and may not be complete at this time.
   it(
-    ...createBuilderSpec<TState, TStateGraphql>(
+    ...createBuilderSpec<TType, TTypeGraphql>(
       'graphql',
-      State.random(),
+      Type.random(),
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
         key: expect.any(String),
-        type: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
@@ -100,10 +93,8 @@ describe('builder', () => {
             value: expect.any(String),
           }),
         ]),
-        initial: expect.any(Boolean),
-        builtIn: expect.any(Boolean),
-        roles: expect.any(Array),
-        transitions: null,
+        resourceTypeIds: expect.any(Array),
+        fieldDefinitions: expect.any(Array),
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),
