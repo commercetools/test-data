@@ -35,30 +35,30 @@ const author2 = Author.random().firstName('Rebecca').buildGraphql<TAuthor>();
 
 ## Presets Folder
 
-This isn't a hard rule, but for organization & ownership purposes, pangolin & fct typically house their presets under said folders (eg change-history-data, sample-data-foo). If someone would like to modify these presets, then the corresponding team review is mandatory
+For organization & ownership purposes, Pangolin & FCT house their presets under their respective folders (e.g. change-history-data, sample-data-fashion, sample-data-goodstore). These should not be altered by an external team; however, if modifications occur for any reason, a corresponding team review is mandatory.
 
 ## FAQ
 
 #### whose review is mandatory for creating PR?
 
-For PR related to presets, individual team's approval should be just fine. If larger changes are made to the models themselves, it doesn't hurt to have a rep from other team review as well (just ping the channel `#test-data-migration` for a volunteer)
-
+For pull requests concerning your team's specific presets, only your team's approval is required. If modifications are made to the models, inviting representatives from other teams for review is mandatory.
 #### Can I simply copy/paste existing test model from other repository (eg: mc-frontend) to test-data?
 
-We won’t tell you how to work your magic, but we would advise against a simple copy paste from other repository models, as it will create a bigger mess to clean up. Certain sections can perhaps be copied over as such (generator fields, portions of specs, etc), but the structure and composition vary considerably from what you currently have.
-
+Avoid directly copying and pasting from other repository models, as it may complicate cleanup efforts. While specific sections like generator fields and portions of specs may be copied over as is, be mindful that the overall structure and composition may differ significantly from your current setup.
 #### Is there a easy way to know which models are already available?
 
-No, there is no overarching inventory page at this time the outlines each package with its corresponding models.
+No, there is no overarching inventory page at this time that outlines each package with its corresponding models.
 Each package contains the draft & final models that are grouped/organized by their representations as outlined in the docs.
 Take cartDiscounts#representations for example. If you’d like to review what has been created to date for underlying representations, you can just drill to the main [index](https://github.com/commercetools/test-data/blob/main/models/cart-discount/src/index.ts) of that package.
 
 #### How do I test a new model (e.g, with my MC component spec) when I create?
 
-Unfortunately, that part does become a bit more tedious.
+Unfortunately, that part does become a bit more complex.
 Copy and pasting it into the node_modules folder is one option.
 Another trick that we typically do is to add the new models locally in a separate file, make the call to it, then address any tweaks necessary.
 
 #### What is the procedure after merging the PR?
 
-For merged PRs, we have no set schedule for releasing VPs. It really depends on the traffic at the time. If you need something immediately, you are more than welcome to ping the group to see if there are any objections to a release. Once the VP is released, you can grab it immediately for your repository(eg: mc-frontend), or you can just wait for the dep updates to go through (e.g [update all test-data packages to v6.10.0](https://github.com/commercetools/merchant-center-frontend/pull/16069))
+For merged pull requests, there is no set schedule for releasing version packages (VP). To date it has simply depended on the traffic and urgency at that point in time. 
+If you need a version released quickly, you are more than welcome to ping the #test-data-migration channel to see if there are any objections to doing so. 
+Once the VP is released, it is immediately accessible. You have the option to either wait for dependency updates to process (e.g [update all test-data packages to v6.10.0](https://github.com/commercetools/merchant-center-frontend/pull/16069)), or updating them manually.
