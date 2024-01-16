@@ -1,4 +1,7 @@
-import { KeyReference } from '@commercetools-test-data/commons';
+import {
+  KeyReference,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
@@ -16,6 +19,13 @@ const usaShippingMethod = (): TShippingMethodDraftBuilder =>
     .empty()
     .key('us-delivery')
     .name('US Delivery')
+    .localizedName(
+      LocalizedString.presets
+        .empty()
+        ['en-US']('US Delivery')
+        ['de-DE']('US Delivery')
+        ['en-GB']('US Delivery')
+    )
     .taxCategory(
       KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
