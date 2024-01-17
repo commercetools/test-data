@@ -1,5 +1,20 @@
 # @commercetools-test-data/shipping-method
 
+## 6.11.0
+
+### Minor Changes
+
+- [#463](https://github.com/commercetools/test-data/pull/463) [`917cd3e`](https://github.com/commercetools/test-data/commit/917cd3eb888dc07bed8f2b9a552cb9d83ab42c0f) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Add localizedName for goodstore ShippingMethodDraft presets.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@6.11.0
+  - @commercetools-test-data/commons@6.11.0
+  - @commercetools-test-data/tax-category@6.11.0
+  - @commercetools-test-data/zone@6.11.0
+  - @commercetools-test-data/utils@6.11.0
+
 ## 6.10.0
 
 ### Patch Changes
