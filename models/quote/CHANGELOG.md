@@ -1,5 +1,21 @@
 # @commercetools-test-data/quote
 
+## 6.11.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart@6.11.0
+  - @commercetools-test-data/quote-request@6.11.0
+  - @commercetools-test-data/staged-quote@6.11.0
+  - @commercetools-test-data/core@6.11.0
+  - @commercetools-test-data/business-unit@6.11.0
+  - @commercetools-test-data/commons@6.11.0
+  - @commercetools-test-data/customer@6.11.0
+  - @commercetools-test-data/customer-group@6.11.0
+  - @commercetools-test-data/store@6.11.0
+  - @commercetools-test-data/utils@6.11.0
+
 ## 6.10.0
 
 ### Patch Changes
