@@ -11,7 +11,14 @@ describe('Shipping Method with standard preset', () => {
         "isDefault": true,
         "key": "standard-delivery",
         "localizedDescription": undefined,
-        "localizedName": undefined,
+        "localizedName": {
+          "de": undefined,
+          "de-DE": "Standard Delivery",
+          "en": undefined,
+          "en-GB": "Standard Delivery",
+          "en-US": "Standard Delivery",
+          "fr": undefined,
+        },
         "name": "Standard Delivery",
         "predicate": undefined,
         "taxCategory": {
@@ -57,7 +64,23 @@ describe('Shipping Method with standard preset', () => {
         "isDefault": true,
         "key": "standard-delivery",
         "localizedDescription": undefined,
-        "localizedName": undefined,
+        "localizedName": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Standard Delivery",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Standard Delivery",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "Standard Delivery",
+          },
+        ],
         "name": "Standard Delivery",
         "predicate": undefined,
         "taxCategory": {

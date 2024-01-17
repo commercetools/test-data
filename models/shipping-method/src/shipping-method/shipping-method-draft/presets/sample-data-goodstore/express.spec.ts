@@ -11,7 +11,14 @@ describe('Shipping Method with express preset', () => {
         "isDefault": false,
         "key": "express-delivery",
         "localizedDescription": undefined,
-        "localizedName": undefined,
+        "localizedName": {
+          "de": undefined,
+          "de-DE": "Express Delivery",
+          "en": undefined,
+          "en-GB": "Express Delivery",
+          "en-US": "Express Delivery",
+          "fr": undefined,
+        },
         "name": "Express Delivery",
         "predicate": undefined,
         "taxCategory": {
@@ -57,7 +64,23 @@ describe('Shipping Method with express preset', () => {
         "isDefault": false,
         "key": "express-delivery",
         "localizedDescription": undefined,
-        "localizedName": undefined,
+        "localizedName": [
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-US",
+            "value": "Express Delivery",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "de-DE",
+            "value": "Express Delivery",
+          },
+          {
+            "__typename": "LocalizedString",
+            "locale": "en-GB",
+            "value": "Express Delivery",
+          },
+        ],
         "name": "Express Delivery",
         "predicate": undefined,
         "taxCategory": {
