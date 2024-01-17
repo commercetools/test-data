@@ -1,0 +1,20 @@
+import { Transformer } from '@commercetools-test-data/core';
+import type { TAppliedActionRight, TAppliedActionRightGraphql } from './types';
+
+const transformers = {
+  default: Transformer<TAppliedActionRight, TAppliedActionRight>('default', {}),
+  rest: Transformer<TAppliedActionRight, TAppliedActionRightGraphql>(
+    'rest',
+    {}
+  ),
+  graphql: Transformer<TAppliedActionRight, TAppliedActionRightGraphql>(
+    'graphql',
+    {
+      addFields: () => ({
+        __typename: 'AppliedActionRight',
+      }),
+    }
+  ),
+};
+
+export default transformers;

@@ -13,7 +13,6 @@ function createBuilderSpec<Model, TransformedModel, Expected = {}>(
         case 'default': {
           const defaultModel = builder.build<TransformedModel>();
           expect(defaultModel).toEqual(expected);
-
           break;
         }
         case 'rest': {

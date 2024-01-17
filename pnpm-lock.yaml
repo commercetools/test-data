@@ -686,6 +686,24 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/project:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@commercetools-test-data/core':
+        specifier: 6.10.0
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 6.10.0
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.0.0
+
   models/quote:
     dependencies:
       '@babel/runtime':
