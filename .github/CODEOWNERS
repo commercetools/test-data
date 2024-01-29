@@ -1,0 +1,52 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# Rules of code ownership
+# -----------------------
+# 1. Ideally all files in this repository have an owner - it is accepted that this is unlikely to happen
+# 2. We avoid broad ownership rules as much as possible and prefer more granular assignments
+# 3. Applications can be co-owned. If they are co-owned we should:
+#     2.1 Have one ownership rule for the entire application first, pointing to all teams owning the application (1)
+#     2.2 Have granular rules as good as possible to different parts of the application code, which take precedence over the broader rules (order of rules definition is important) (2)
+# 4. This file is grouped by applications and/or folders not by teams
+#     4.1 The order of rules within this file should match the default directory ordering
+
+# GitHub
+/.github/CODEOWNERS @commercetools/merchant-center-tech-leadership
+
+# Tooling
+/core/ @commercetools/merchant-center-tech-leadership
+/codegen* @commercetools/shield-team-fe
+
+# Models
+/models @commercetools/merchant-center-tech-leadership @commercetools/first-contact-team-fe
+
+/models/associate-role @commercetools/customers-team-fe
+/models/business-unit @commercetools/customers-team-fe
+/models/cart @commercetools/checkout-team-fe
+/models/cart-discount @commercetools/priceless-team-fe
+/models/category @commercetools/pacman-team-fe
+/models/channel @commercetools/context-team-fe
+/models/custom-view @commercetools/shield-team-fe
+/models/customer @commercetools/customers-team-fe
+/models/customer-group @commercetools/customers-team-fe
+/models/discount-code @commercetools/priceless-team-fe
+/models/inventory-entry @commercetools/pacman-team-fe
+/models/order @commercetools/checkout-team-fe
+/models/payment @commercetools/checkout-team-fe
+/models/product @commercetools/pacman-team-fe
+/models/product-discount @commercetools/priceless-team-fe
+/models/product-selection @commercetools/context-team-fe
+/models/product-type @commercetools/pacman-team-fe
+/models/project @commercetools/shield-team-fe
+/models/quote @commercetools/customers-team-fe
+/models/quote-request @commercetools/customers-team-fe
+/models/shipping-method @commercetools/checkout-team-fe
+/models/shopping-list @commercetools/checkout-team-fe
+/models/staged-quote @commercetools/customers-team-fe
+/models/store @commercetools/context-team-fe
+/models/tax-category @commercetools/checkout-team-fe
+/models/zone @commercetools/checkout-team-fe
+
+/models/*/change-history-* @commercetools/pangolin-team-fe
+/models/*/sample-data-* @commercetools/first-contact-team-fe
