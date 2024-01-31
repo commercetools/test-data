@@ -113,6 +113,7 @@ export type TMcSettingsBusinessUnitsListMyViewTableInput = {
 
 export enum TMcSettingsCategoryRecommendationSearchProperty {
   Attribute = 'Attribute',
+  /** @deprecated The machine learning APIs are not available anymore. */
   MachineLearning = 'MachineLearning',
   ProductType = 'ProductType',
 }
@@ -396,6 +397,21 @@ export type TMcSettingsCustomViewPermissionDataInput = {
   oAuthScopes: Array<Scalars['String']['input']>;
 };
 
+export type TMcSettingsCustomViewQueryInput = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  offset?: InputMaybe<Scalars['Int']['input']>;
+  sort?: InputMaybe<Scalars['String']['input']>;
+  where?: InputMaybe<TMcSettingsCustomViewQueryWhereInput>;
+};
+
+export type TMcSettingsCustomViewQueryWhereInput = {
+  defaultLabel?: InputMaybe<Scalars['String']['input']>;
+  id?: InputMaybe<Scalars['ID']['input']>;
+  locators?: InputMaybe<Array<Scalars['String']['input']>>;
+  organizationId?: InputMaybe<Scalars['String']['input']>;
+  type?: InputMaybe<TMcSettingsCustomViewType>;
+};
+
 export enum TMcSettingsCustomViewSize {
   Large = 'LARGE',
   Small = 'SMALL',
@@ -417,6 +433,15 @@ export type TMcSettingsCustomViewTypeSettings = {
 
 export type TMcSettingsCustomViewTypeSettingsInput = {
   size?: InputMaybe<TMcSettingsCustomViewSize>;
+};
+
+export type TMcSettingsCustomViewsPagedQueryResult = {
+  __typename?: 'CustomViewsPagedQueryResult';
+  count: Scalars['Int']['output'];
+  limit: Scalars['Int']['output'];
+  offset: Scalars['Int']['output'];
+  results: Array<TMcSettingsCustomView>;
+  total: Scalars['Int']['output'];
 };
 
 export type TMcSettingsCustomersListView = {
@@ -1231,6 +1256,32 @@ export type TMcSettingsMyCustomApplicationQueryWhereInput = {
   status?: InputMaybe<TMcSettingsCustomApplicationStatus>;
 };
 
+export type TMcSettingsMyCustomView = {
+  __typename?: 'MyCustomView';
+  createdAt: Scalars['DateTime']['output'];
+  defaultLabel: Scalars['String']['output'];
+  description?: Maybe<Scalars['String']['output']>;
+  id: Scalars['ID']['output'];
+  labelAllLocales: Array<TMcSettingsLocalizedField>;
+  locators: Array<Scalars['String']['output']>;
+  organizationId: Scalars['String']['output'];
+  organizationName: Scalars['String']['output'];
+  permissions: Array<TMcSettingsCustomViewPermission>;
+  status: TMcSettingsCustomViewStatus;
+  type: TMcSettingsCustomViewType;
+  typeSettings?: Maybe<TMcSettingsCustomViewTypeSettings>;
+  updatedAt: Scalars['DateTime']['output'];
+  url: Scalars['String']['output'];
+};
+
+export type TMcSettingsMyCustomViewsQueryInput = {
+  where?: InputMaybe<TMcSettingsMyCustomViewsQueryWhereInput>;
+};
+
+export type TMcSettingsMyCustomViewsQueryWhereInput = {
+  status?: InputMaybe<TMcSettingsCustomViewStatus>;
+};
+
 export type TMcSettingsNavbarMenu = {
   __typename?: 'NavbarMenu';
   createdAt: Scalars['DateTime']['output'];
@@ -1406,9 +1457,18 @@ export type TMcSettingsOrganizationExtensionForCustomApplication = {
   organizationName?: Maybe<Scalars['String']['output']>;
 };
 
+export type TMcSettingsOrganizationExtensionForCustomView = {
+  __typename?: 'OrganizationExtensionForCustomView';
+  customView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  id: Scalars['ID']['output'];
+  organizationId: Scalars['String']['output'];
+  organizationName?: Maybe<Scalars['String']['output']>;
+};
+
 export type TMcSettingsPimSearchListView = {
   __typename?: 'PimSearchListView';
   createdAt: Scalars['DateTime']['output'];
+  expandedRows: Array<Scalars['String']['output']>;
   filters?: Maybe<Array<TMcSettingsFilterValues>>;
   id: Scalars['ID']['output'];
   isActive?: Maybe<Scalars['Boolean']['output']>;
@@ -1422,6 +1482,7 @@ export type TMcSettingsPimSearchListView = {
 };
 
 export type TMcSettingsPimSearchListViewInput = {
+  expandedRows?: InputMaybe<Array<Scalars['String']['input']>>;
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
   search?: InputMaybe<Scalars['String']['input']>;
@@ -1554,6 +1615,8 @@ export type TMcSettingsQuery = {
   allAppliedCustomViewPermissions: Array<TMcSettingsCustomViewInstallationPermission>;
   /** @deprecated Experimental feature - For internal usage only */
   allCustomApplications: TMcSettingsCustomApplicationsPagedQueryResult;
+  /** @deprecated Experimental feature - For internal usage only */
+  allCustomViews: TMcSettingsCustomViewsPagedQueryResult;
   allCustomViewsInstallationsByLocator: Array<TMcSettingsRestrictedCustomViewInstallationForProject>;
   allCustomViewsLocatorGroups: Array<TMcSettingsCustomViewLocatorGroup>;
   allFeatures: Array<TMcSettingsFeature>;
@@ -1582,12 +1645,14 @@ export type TMcSettingsQuery = {
   /** @deprecated Experimental feature - For internal usage only */
   globalOrganizationExtension?: Maybe<TMcSettingsOrganizationExtension>;
   myCustomApplications: Array<TMcSettingsMyCustomApplication>;
+  myCustomViews: Array<TMcSettingsMyCustomView>;
   orderDetailView?: Maybe<TMcSettingsOrderDetailView>;
   orderDetailViews: Array<Maybe<TMcSettingsOrderDetailView>>;
   ordersListView?: Maybe<TMcSettingsOrdersListView>;
   ordersListViews: Array<Maybe<TMcSettingsOrdersListView>>;
   organizationExtension?: Maybe<TMcSettingsOrganizationExtension>;
   organizationExtensionForCustomApplication?: Maybe<TMcSettingsOrganizationExtensionForCustomApplication>;
+  organizationExtensionForCustomView?: Maybe<TMcSettingsOrganizationExtensionForCustomView>;
   pimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
   pimSearchListViews: Array<Maybe<TMcSettingsPimSearchListView>>;
   productDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -1624,6 +1689,10 @@ export type TMcSettingsQuery_AllAppliedCustomViewPermissionsArgs = {
 
 export type TMcSettingsQuery_AllCustomApplicationsArgs = {
   params?: InputMaybe<TMcSettingsCustomApplicationQueryInput>;
+};
+
+export type TMcSettingsQuery_AllCustomViewsArgs = {
+  params?: InputMaybe<TMcSettingsCustomViewQueryInput>;
 };
 
 export type TMcSettingsQuery_AllCustomViewsInstallationsByLocatorArgs = {
@@ -1683,6 +1752,10 @@ export type TMcSettingsQuery_MyCustomApplicationsArgs = {
   params?: InputMaybe<TMcSettingsMyCustomApplicationQueryInput>;
 };
 
+export type TMcSettingsQuery_MyCustomViewsArgs = {
+  params?: InputMaybe<TMcSettingsMyCustomViewsQueryInput>;
+};
+
 export type TMcSettingsQuery_OrderDetailViewArgs = {
   id: Scalars['ID']['input'];
 };
@@ -1697,6 +1770,10 @@ export type TMcSettingsQuery_OrganizationExtensionArgs = {
 
 export type TMcSettingsQuery_OrganizationExtensionForCustomApplicationArgs = {
   entryPointUriPath: Scalars['String']['input'];
+};
+
+export type TMcSettingsQuery_OrganizationExtensionForCustomViewArgs = {
+  customViewId: Scalars['String']['input'];
 };
 
 export type TMcSettingsQuery_PimSearchListViewArgs = {
