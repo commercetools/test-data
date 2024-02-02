@@ -19,7 +19,7 @@
 /codegen* @commercetools/shield-team-fe
 
 # Models
-/models @commercetools/merchant-center-tech-leadership @commercetools/pangolin-team-fe
+/models @commercetools/merchant-center-tech-leadership
 
 /models/associate-role @commercetools/customers-team-fe
 /models/business-unit @commercetools/customers-team-fe
