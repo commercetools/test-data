@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/standalone-price",
-  "version": "4.4.0",
+  "version": "6.11.0",
   "description": "Data model for commercetools API StandalonePrice",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
