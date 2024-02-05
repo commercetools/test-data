@@ -506,6 +506,49 @@ describe('building', () => {
               ],
             });
           });
+          it('should omit __typename field when building nested builders and isGraphqlDraft is true', () => {
+            const teamTransformers = {
+              graphql: Transformer<TestTeam, TestTeam>('graphql', {
+                buildFields: ['users'],
+                isGraphqlDraft: true,
+              }),
+            };
+            const userTransformers = {
+              graphql: Transformer<
+                TestExpandedUserReference,
+                TestExpandedUserReferenceGraphql
+              >('graphql', {
+                addFields: () => ({
+                  __typename: 'User',
+                }),
+                isGraphqlDraft: true,
+              }),
+            };
+            const userBuilder1 = Builder<TestExpandedUserReference>({
+              transformers: userTransformers,
+            }).name('My name');
+            const userBuilder2 = Builder<TestExpandedUserReference>({
+              transformers: userTransformers,
+            }).name('My other name');
+            const built = Builder<TestTeam>({
+              transformers: teamTransformers,
+            })
+              .id('my-id')
+              .users<TestExpandedUserReference>([userBuilder1, userBuilder2])
+              .buildGraphql<TestTeam>();
+
+            expect(built).toEqual({
+              id: 'my-id',
+              users: [
+                {
+                  name: 'My name',
+                },
+                {
+                  name: 'My other name',
+                },
+              ],
+            });
+          });
         });
       });
     });

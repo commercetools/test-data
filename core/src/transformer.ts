@@ -1,4 +1,4 @@
-import { buildField, buildFields } from './helpers';
+import { buildField, buildFields, deleteKeyFromObject } from './helpers';
 import type {
   TTransformer,
   TTransformerOptions,
@@ -36,6 +36,11 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
+
+      if (transformOptions?.isGraphqlDraft) {
+        /**recursively delete '__typename' field from all built fields in graphql draft */
+        deleteKeyFromObject(transformedFields, '__typename');
+      }
     }
 
     // The default transformer only allows building nested fields to not
