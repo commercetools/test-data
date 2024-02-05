@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TStandalonePrice, TStandalonePriceGraphql } from './types';
-import * as StandalonePrice from '.';
+import { StandalonePrice } from '.';
 
 describe('builder', () => {
   it(
