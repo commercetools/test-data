@@ -25,7 +25,6 @@ export type TStandalonePriceDraft = StandalonePriceDraft;
 export type TStandalonePriceGraphql = TStandalonePrice & {
   customerGroupRef: TReferenceGraphql | null;
   channelRef: TReferenceGraphql | null;
-  expiresAt: TStandalonePrice['expiresAt'];
   __typename: 'StandalonePrice';
 };
 export type TStandalonePriceDraftGraphql = StandalonePriceDraft & {
