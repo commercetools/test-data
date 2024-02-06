@@ -3,7 +3,7 @@ import type { TProjectSuspension, TProjectSuspensionGraphql } from './types';
 
 const transformers = {
   default: Transformer<TProjectSuspension, TProjectSuspension>('default', {}),
-  rest: Transformer<TProjectSuspension, TProjectSuspensionGraphql>('rest', {}),
+  rest: Transformer<TProjectSuspension, TProjectSuspension>('rest', {}),
   graphql: Transformer<TProjectSuspension, TProjectSuspensionGraphql>(
     'graphql',
     {

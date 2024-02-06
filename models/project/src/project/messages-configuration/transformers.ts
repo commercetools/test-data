@@ -9,10 +9,7 @@ const transformers = {
     'default',
     {}
   ),
-  rest: Transformer<TMessagesConfiguration, TMessagesConfigurationGraphql>(
-    'rest',
-    {}
-  ),
+  rest: Transformer<TMessagesConfiguration, TMessagesConfiguration>('rest', {}),
   graphql: Transformer<TMessagesConfiguration, TMessagesConfigurationGraphql>(
     'graphql',
     {

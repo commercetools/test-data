@@ -3,10 +3,7 @@ import type { TAppliedActionRight, TAppliedActionRightGraphql } from './types';
 
 const transformers = {
   default: Transformer<TAppliedActionRight, TAppliedActionRight>('default', {}),
-  rest: Transformer<TAppliedActionRight, TAppliedActionRightGraphql>(
-    'rest',
-    {}
-  ),
+  rest: Transformer<TAppliedActionRight, TAppliedActionRight>('rest', {}),
   graphql: Transformer<TAppliedActionRight, TAppliedActionRightGraphql>(
     'graphql',
     {

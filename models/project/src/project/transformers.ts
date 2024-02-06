@@ -13,7 +13,7 @@ const transformers = {
       'shoppingLists',
     ],
   }),
-  rest: Transformer<TProject, TProjectGraphql>('rest', {
+  rest: Transformer<TProject, TProject>('rest', {
     buildFields: [
       'businessUnits',
       'searchIndexing',

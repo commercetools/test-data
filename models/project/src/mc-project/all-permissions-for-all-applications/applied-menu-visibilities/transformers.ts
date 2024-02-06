@@ -9,7 +9,7 @@ const transformers = {
     'default',
     {}
   ),
-  rest: Transformer<TAppliedMenuVisibilities, TAppliedMenuVisibilitiesGraphql>(
+  rest: Transformer<TAppliedMenuVisibilities, TAppliedMenuVisibilities>(
     'rest',
     {}
   ),

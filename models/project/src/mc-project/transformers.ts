@@ -13,7 +13,7 @@ const transformers = {
       'allPermissionsForAllApplications',
     ],
   }),
-  rest: Transformer<TMcProject, TMcProjectGraphql>('rest', {
+  rest: Transformer<TMcProject, TMcProject>('rest', {
     buildFields: [
       'owner',
       'expiry',

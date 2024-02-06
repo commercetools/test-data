@@ -3,7 +3,7 @@ import type { TAppliedDataFence, TAppliedDataFenceGraphql } from './types';
 
 const transformers = {
   default: Transformer<TAppliedDataFence, TAppliedDataFence>('default', {}),
-  rest: Transformer<TAppliedDataFence, TAppliedDataFenceGraphql>('rest', {}),
+  rest: Transformer<TAppliedDataFence, TAppliedDataFence>('rest', {}),
   graphql: Transformer<TAppliedDataFence, TAppliedDataFenceGraphql>('graphql', {
     addFields: () => ({
       __typename: 'AppliedDataFence',

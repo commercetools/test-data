@@ -18,7 +18,7 @@ const transformers = {
   }),
   rest: Transformer<
     TAllPermissionsForAllApplications,
-    TAllPermissionsForAllApplicationsGraphql
+    TAllPermissionsForAllApplications
   >('rest', {
     buildFields: [
       'allAppliedActionRights',

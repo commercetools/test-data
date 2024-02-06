@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProjectDraft } from '../types';
+import type { TProjectDraft } from '../types';
 
 const generator = Generator<TProjectDraft>({
   fields: {
