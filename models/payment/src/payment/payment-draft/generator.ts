@@ -1,8 +1,8 @@
 import { Money, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import * as PaymentMethodInfoDraft from '../../payment-method-info';
-import * as PaymentStatusDraft from '../../payment-status';
-import * as TransactionDraft from '../../transaction';
+import * as PaymentMethodInfoDraft from '../../payment-method-info/payment-method-info-draft';
+import * as PaymentStatusDraft from '../../payment-status/payment-status-draft';
+import * as TransactionDraft from '../../transaction/transaction-draft';
 import { TPaymentDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentdraft

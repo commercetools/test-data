@@ -33,21 +33,21 @@ describe('builder', () => {
         paymentStatus: expect.objectContaining({
           interfaceCode: expect.any(String),
           interfaceText: expect.any(String),
-          state: null,
+          state: expect.objectContaining({
+            id: expect.any(String),
+            typeId: expect.any(String),
+          }),
         }),
         transactions: expect.arrayContaining([
           expect.objectContaining({
             amount: expect.objectContaining({
               centAmount: expect.any(Number),
               currencyCode: expect.any(String),
-              fractionDigits: expect.any(Number),
-              type: expect.any(String),
             }),
             timestamp: expect.any(String),
             type: expect.any(String),
             interactionId: null,
             state: expect.any(String),
-            id: expect.any(String),
             custom: null,
           }),
         ]),
@@ -95,14 +95,11 @@ describe('builder', () => {
             amount: expect.objectContaining({
               centAmount: expect.any(Number),
               currencyCode: expect.any(String),
-              fractionDigits: expect.any(Number),
-              type: expect.any(String),
             }),
             timestamp: expect.any(String),
             type: expect.any(String),
             interactionId: null,
             state: expect.any(String),
-            id: expect.any(String),
             custom: null,
           }),
         ]),
@@ -130,7 +127,7 @@ describe('builder', () => {
           currencyCode: expect.any(String),
         }),
         paymentMethodInfo: expect.objectContaining({
-          __typename: 'PaymentMethodInfo',
+          __typename: 'PaymentMethodInfoInput',
           method: expect.any(String),
           paymentInterface: expect.any(String),
           name: expect.arrayContaining([
@@ -140,40 +137,27 @@ describe('builder', () => {
               value: expect.any(String),
             }),
           ]),
-          nameAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: 'LocalizedString',
-              locale: expect.any(String),
-              value: expect.any(String),
-            }),
-          ]),
         }),
         paymentStatus: expect.objectContaining({
-          __typename: 'PaymentStatus',
+          __typename: 'PaymentStatusDraft',
           interfaceCode: expect.any(String),
           interfaceText: expect.any(String),
-          state: null,
-          stateRef: expect.objectContaining({
-            __typename: 'Reference',
+          state: expect.objectContaining({
             id: expect.any(String),
             typeId: expect.any(String),
           }),
         }),
         transactions: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'Transaction',
+            __typename: 'TransactionDraft',
             amount: expect.objectContaining({
-              __typename: 'Money',
               centAmount: expect.any(Number),
               currencyCode: expect.any(String),
-              fractionDigits: expect.any(Number),
-              type: expect.any(String),
             }),
             timestamp: expect.any(String),
             type: expect.any(String),
             interactionId: null,
             state: expect.any(String),
-            id: expect.any(String),
             custom: null,
           }),
         ]),

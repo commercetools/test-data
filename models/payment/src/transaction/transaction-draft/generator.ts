@@ -12,7 +12,7 @@ const generator = Generator<TTransactionDraft>({
   fields: {
     timestamp: fake(getOlderDate),
     type: oneOf(...Object.values(TransactionType)),
-    amount: fake((f) => Money.random()),
+    amount: fake(() => Money.random()),
     interactionId: null,
     state: oneOf(...Object.values(TransactionState)),
     custom: null,
