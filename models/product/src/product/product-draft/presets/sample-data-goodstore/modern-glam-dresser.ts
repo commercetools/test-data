@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -79,23 +79,23 @@ const modernGlamDresser = (): TProductDraftBuilder =>
         ['en-US']('modern-glam-dresser')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(modernGlamDresserProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.modernGlamDresser01()
     )
     .categories([
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
-      KeyReference.presets.category().key(theModernistDraft.key!),
-      KeyReference.presets.category().key(storageTablesDraft.key!),
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theModernistDraft.key!),
+      KeyReferenceDraft.presets.category().key(storageTablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
     ]);
 
 export default modernGlamDresser;

@@ -183,17 +183,14 @@ describe(`with classicCoffeeCup preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -333,7 +330,6 @@ describe(`with classicCoffeeCup preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -358,7 +354,6 @@ describe(`with classicCoffeeCup preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

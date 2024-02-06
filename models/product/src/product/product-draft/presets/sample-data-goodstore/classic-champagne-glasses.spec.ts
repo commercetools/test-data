@@ -180,17 +180,14 @@ describe(`with classicChampagneGlasses preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -338,7 +335,6 @@ describe(`with classicChampagneGlasses preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -363,7 +359,6 @@ describe(`with classicChampagneGlasses preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

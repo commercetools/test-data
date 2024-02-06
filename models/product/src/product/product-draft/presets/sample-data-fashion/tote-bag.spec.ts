@@ -166,7 +166,6 @@ describe(`with toteBag preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -243,7 +242,6 @@ describe(`with toteBag preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "accessories",
           "typeId": "product-type",
         },
@@ -258,7 +256,6 @@ describe(`with toteBag preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

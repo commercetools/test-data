@@ -103,7 +103,6 @@ describe(`with anniversaryShirt preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-kids",
             "typeId": "category",
           },
@@ -136,7 +135,6 @@ describe(`with anniversaryShirt preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -151,7 +149,6 @@ describe(`with anniversaryShirt preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

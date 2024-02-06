@@ -245,7 +245,6 @@ describe(`with rusticBowl preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -270,7 +269,6 @@ describe(`with rusticBowl preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

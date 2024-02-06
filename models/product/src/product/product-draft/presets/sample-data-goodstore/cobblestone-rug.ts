@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const cobblestoneRug = (): TProductDraftBuilder =>
         ['en-US']('cobblestone-rug')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(cobblestoneRugProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.cobblestoneRug01()
     )
     .categories([
-      KeyReference.presets.category().key(rugsDraft.key!),
-      KeyReference.presets.category().key(roomDecorDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(rugsDraft.key!),
+      KeyReferenceDraft.presets.category().key(roomDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default cobblestoneRug;

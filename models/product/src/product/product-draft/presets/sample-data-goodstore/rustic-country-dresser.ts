@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const rusticCountryDresser = (): TProductDraftBuilder =>
         ['de-DE']('rustikale-landhauskommode')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(rusticCountryDresserProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.rusticCountryDresser01()
     )
     .categories([
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
-      KeyReference.presets.category().key(storageTablesDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(storageTablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
     ]);
 
 export default rusticCountryDresser;

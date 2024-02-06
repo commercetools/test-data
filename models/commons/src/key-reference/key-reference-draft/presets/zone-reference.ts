@@ -1,7 +1,7 @@
 import type { TKeyReferenceDraftBuilder } from '../../types';
-import KeyReference from '../builder';
+import KeyReferenceDraft from '../builder';
 
 const zoneReference = (): TKeyReferenceDraftBuilder =>
-  KeyReference().typeId('zone');
+  KeyReferenceDraft().typeId('zone');
 
 export default zoneReference;

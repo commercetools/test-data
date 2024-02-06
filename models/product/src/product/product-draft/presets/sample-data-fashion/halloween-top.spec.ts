@@ -211,7 +211,6 @@ describe(`with halloweenTop preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-men",
             "typeId": "category",
           },
@@ -309,7 +308,6 @@ describe(`with halloweenTop preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -324,7 +322,6 @@ describe(`with halloweenTop preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

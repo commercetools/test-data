@@ -237,22 +237,18 @@ describe(`with sunnaiGlassBowl preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bowls",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bakeware",
             "typeId": "category",
           },
@@ -385,7 +381,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "product-sets",
           "typeId": "product-type",
         },
@@ -410,7 +405,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

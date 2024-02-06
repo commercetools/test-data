@@ -71,7 +71,6 @@ describe(`with bedding preset`, () => {
         ],
         "orderHint": ".5",
         "parent": {
-          "__typename": "Reference",
           "key": "home-decor",
           "typeId": "category",
         },

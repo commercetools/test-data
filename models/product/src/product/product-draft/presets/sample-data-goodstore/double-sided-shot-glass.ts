@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const doubleSidedShotGlass = (): TProductDraftBuilder =>
         ['en-US']('double-sided-shot-glass')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(doubleSidedShotGlassProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.doubleSidedShotGlass01()
     )
     .categories([
-      KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAccessoriesDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default doubleSidedShotGlass;

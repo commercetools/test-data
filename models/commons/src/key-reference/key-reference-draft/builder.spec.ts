@@ -1,14 +1,14 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TKeyReference, TKeyReferenceGraphql } from '.././types';
-import * as KeyReference from './index';
+import type { TKeyReferenceDraft, TKeyReferenceDraftGraphql } from '.././types';
+import * as KeyReferenceDraft from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TKeyReference, TKeyReference>(
+    ...createBuilderSpec<TKeyReferenceDraft, TKeyReferenceDraft>(
       'default',
-      KeyReference.random(),
+      KeyReferenceDraft.random(),
       {
         typeId: null,
         key: expect.any(String),
@@ -16,9 +16,9 @@ describe('builder', () => {
     )
   );
   it(
-    ...createBuilderSpec<TKeyReference, TKeyReference>(
+    ...createBuilderSpec<TKeyReferenceDraft, TKeyReferenceDraft>(
       'rest',
-      KeyReference.random().typeId('product'),
+      KeyReferenceDraft.random().typeId('product'),
       {
         typeId: 'product',
         key: expect.any(String),
@@ -26,11 +26,10 @@ describe('builder', () => {
     )
   );
   it(
-    ...createBuilderSpec<TKeyReference, TKeyReferenceGraphql>(
+    ...createBuilderSpec<TKeyReferenceDraft, TKeyReferenceDraftGraphql>(
       'graphql',
-      KeyReference.random().typeId('product'),
+      KeyReferenceDraft.random().typeId('product'),
       {
-        // __typename: 'Reference',
         typeId: 'product',
         key: expect.any(String),
       }

@@ -146,17 +146,14 @@ describe(`with sparkleChampagneGlass preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -276,7 +273,6 @@ describe(`with sparkleChampagneGlass preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -301,7 +297,6 @@ describe(`with sparkleChampagneGlass preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

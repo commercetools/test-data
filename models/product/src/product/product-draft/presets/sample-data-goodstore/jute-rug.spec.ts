@@ -187,17 +187,14 @@ describe(`with juteRug preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "rugs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -345,7 +342,6 @@ describe(`with juteRug preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -370,7 +366,6 @@ describe(`with juteRug preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

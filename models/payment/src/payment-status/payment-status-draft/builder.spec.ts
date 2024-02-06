@@ -43,7 +43,6 @@ describe('builder', () => {
         state: expect.objectContaining({
           typeId: 'state',
         }),
-        __typename: 'PaymentStatusDraft',
       })
     )
   );

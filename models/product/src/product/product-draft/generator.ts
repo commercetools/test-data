@@ -1,7 +1,7 @@
 import {
   LocalizedString,
   Reference,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { ProductVariantDraft } from '../../index';
@@ -17,7 +17,7 @@ const generator = Generator<TProductDraft>({
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     key: fake((f) => f.lorem.slug()),
     description: fake(() => LocalizedString.random()),
-    categories: fake(() => [KeyReference.presets.category()]),
+    categories: fake(() => [KeyReferenceDraft.presets.category()]),
     categoryOrderHints: null,
     metaTitle: null,
     metaDescription: null,

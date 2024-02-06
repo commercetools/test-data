@@ -71,7 +71,6 @@ describe(`with theMinimalist preset`, () => {
         ],
         "orderHint": ".003",
         "parent": {
-          "__typename": "Reference",
           "key": "collections",
           "typeId": "category",
         },

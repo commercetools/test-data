@@ -643,27 +643,22 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "beds",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
@@ -819,7 +814,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -844,7 +838,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

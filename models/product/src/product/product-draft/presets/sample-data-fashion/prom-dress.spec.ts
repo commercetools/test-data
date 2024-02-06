@@ -166,7 +166,6 @@ describe(`with promDress preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -243,7 +242,6 @@ describe(`with promDress preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "dresses",
           "typeId": "product-type",
         },
@@ -258,7 +256,6 @@ describe(`with promDress preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

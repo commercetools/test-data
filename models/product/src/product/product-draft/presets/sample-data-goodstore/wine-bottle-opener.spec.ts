@@ -156,17 +156,14 @@ describe(`with wineBottleOpener preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -290,7 +287,6 @@ describe(`with wineBottleOpener preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -315,7 +311,6 @@ describe(`with wineBottleOpener preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

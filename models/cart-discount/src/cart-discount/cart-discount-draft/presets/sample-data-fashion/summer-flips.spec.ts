@@ -80,7 +80,6 @@ describe('with the preset `summerFlips`', () => {
           "giftLineItem": {
             "distributionChannel": undefined,
             "product": {
-              "__typename": "Reference",
               "key": "summer_dress",
               "typeId": "product",
             },

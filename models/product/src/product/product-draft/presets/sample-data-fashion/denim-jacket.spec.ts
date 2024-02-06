@@ -220,7 +220,6 @@ describe(`with denimJacket preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-men",
             "typeId": "category",
           },
@@ -335,7 +334,6 @@ describe(`with denimJacket preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "jackets",
           "typeId": "product-type",
         },
@@ -350,7 +348,6 @@ describe(`with denimJacket preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

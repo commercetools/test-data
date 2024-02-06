@@ -1,7 +1,7 @@
 import type { TKeyReferenceDraftBuilder } from '../../types';
-import KeyReference from '../builder';
+import KeyReferenceDraft from '../builder';
 
 const associateRole = (): TKeyReferenceDraftBuilder =>
-  KeyReference().typeId('associate-role');
+  KeyReferenceDraft().typeId('associate-role');
 
 export default associateRole;

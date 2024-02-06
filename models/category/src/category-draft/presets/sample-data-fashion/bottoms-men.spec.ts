@@ -59,7 +59,6 @@ describe(`with bottomsMen preset`, () => {
         ],
         "orderHint": "0.4",
         "parent": {
-          "__typename": "Reference",
           "key": "men",
           "typeId": "category",
         },

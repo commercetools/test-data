@@ -170,7 +170,6 @@ describe(`with necklace preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-women",
             "typeId": "category",
           },
@@ -268,7 +267,6 @@ describe(`with necklace preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "accessories",
           "typeId": "product-type",
         },
@@ -283,7 +281,6 @@ describe(`with necklace preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

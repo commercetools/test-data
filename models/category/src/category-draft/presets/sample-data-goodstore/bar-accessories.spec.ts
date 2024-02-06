@@ -71,7 +71,6 @@ describe(`with barAccessories preset`, () => {
         ],
         "orderHint": ".36",
         "parent": {
-          "__typename": "Reference",
           "key": "bar-and-glassware",
           "typeId": "category",
         },

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -79,23 +79,23 @@ const ellaSquarePlate = (): TProductDraftBuilder =>
         ['en-US']('ella-square-plate')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(ellaSquarePlateProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.ellaSquarePlate01()
     )
     .categories([
-      KeyReference.presets.category().key(platesDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(servingPlattersDraft.key!),
-      KeyReference.presets.category().key(servewareDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(platesDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(servingPlattersDraft.key!),
+      KeyReferenceDraft.presets.category().key(servewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
     ]);
 
 export default ellaSquarePlate;

@@ -153,22 +153,18 @@ describe(`with teakServingPlatter preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "cheese-trays",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serving-platters",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serveware",
             "typeId": "category",
           },
@@ -288,7 +284,6 @@ describe(`with teakServingPlatter preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -313,7 +308,6 @@ describe(`with teakServingPlatter preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

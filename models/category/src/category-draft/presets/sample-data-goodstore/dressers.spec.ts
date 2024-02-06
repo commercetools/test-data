@@ -70,7 +70,6 @@ describe(`with dressers preset`, () => {
         ],
         "orderHint": ".1",
         "parent": {
-          "__typename": "Reference",
           "key": "bedroom-furniture",
           "typeId": "category",
         },

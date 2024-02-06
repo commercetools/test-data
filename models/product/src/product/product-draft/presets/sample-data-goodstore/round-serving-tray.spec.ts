@@ -172,27 +172,22 @@ describe(`with roundServingTray preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "plates",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serving-platters",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serveware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "cheese-trays",
             "typeId": "category",
           },
@@ -324,7 +319,6 @@ describe(`with roundServingTray preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -349,7 +343,6 @@ describe(`with roundServingTray preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

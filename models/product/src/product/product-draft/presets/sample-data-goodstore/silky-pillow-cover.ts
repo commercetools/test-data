@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -67,20 +67,20 @@ const silkyPillowCover = (): TProductDraftBuilder =>
         ['de-DE']('seidige-kissenhlle')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(silkyPillowCoverProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.silkyPillowCover01()
     )
     .categories([
-      KeyReference.presets.category().key(beddingDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(beddingDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default silkyPillowCover;

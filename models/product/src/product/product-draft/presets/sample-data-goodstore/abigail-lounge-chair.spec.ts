@@ -199,22 +199,18 @@ describe(`with abigailLoungeChair preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "armchairs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
@@ -354,7 +350,6 @@ describe(`with abigailLoungeChair preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -379,7 +374,6 @@ describe(`with abigailLoungeChair preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

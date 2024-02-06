@@ -48,7 +48,6 @@ describe('with the preset `employeeSale`', () => {
       {
         "cartDiscounts": [
           {
-            "__typename": "Reference",
             "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },

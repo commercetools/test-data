@@ -145,17 +145,14 @@ describe(`with classicBeerMug preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -275,7 +272,6 @@ describe(`with classicBeerMug preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -300,7 +296,6 @@ describe(`with classicBeerMug preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

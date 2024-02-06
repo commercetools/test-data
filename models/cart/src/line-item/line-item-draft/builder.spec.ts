@@ -72,11 +72,9 @@ describe('builder', () => {
         variantId: expect.any(Number),
         supplyChannel: expect.objectContaining({
           typeId: 'channel',
-          __typename: 'Reference',
         }),
         distributionChannel: expect.objectContaining({
           typeId: 'channel',
-          __typename: 'Reference',
         }),
         externalTaxRate: null,
         externalPrice: expect.objectContaining({

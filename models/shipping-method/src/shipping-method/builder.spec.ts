@@ -100,7 +100,7 @@ describe('builder', () => {
         }),
         taxCategoryRef: expect.objectContaining({
           typeId: 'tax-category',
-          __typename: 'Reference',
+          // __typename: 'Reference',
         }),
         zoneRates: expect.any(Array),
         isDefault: expect.any(Boolean),

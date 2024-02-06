@@ -1,4 +1,7 @@
-import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   type TCustomerGroupDraft,
@@ -19,7 +22,9 @@ const sampleAustralia = (): TCustomerDraftBuilder =>
     .firstName('Sample Customer')
     .lastName('Australia')
     .addresses([AddressDraft.presets.sampleDataFashion.sampleAustralia()])
-    .customerGroup(KeyReference.presets.customerGroup().key(customerGroup.key!))
+    .customerGroup(
+      KeyReferenceDraft.presets.customerGroup().key(customerGroup.key!)
+    )
     .isEmailVerified(false)
     .authenticationMode(authenticationMode.ExternalAuth);
 

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -70,19 +70,21 @@ const wilmaChair = (): TProductDraftBuilder =>
         ['de-DE']('wilma-stuhl')
     )
     .productType(
-      KeyReference.presets.productType().key(wilmaChairProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(wilmaChairProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.wilmaChair01()
     )
     .categories([
-      KeyReference.presets.category().key(armchairsDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(armchairsDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
     ]);
 
 export default wilmaChair;

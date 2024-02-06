@@ -1,7 +1,7 @@
 import type { TKeyReferenceDraftBuilder } from '../../types';
-import KeyReference from '../builder';
+import KeyReferenceDraft from '../builder';
 
 const channel = (): TKeyReferenceDraftBuilder =>
-  KeyReference().typeId('channel');
+  KeyReferenceDraft().typeId('channel');
 
 export default channel;

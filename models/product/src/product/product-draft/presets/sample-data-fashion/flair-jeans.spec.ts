@@ -128,7 +128,6 @@ describe(`with flairJeans preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bottoms-women",
             "typeId": "category",
           },
@@ -173,7 +172,6 @@ describe(`with flairJeans preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "pants",
           "typeId": "product-type",
         },
@@ -188,7 +186,6 @@ describe(`with flairJeans preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

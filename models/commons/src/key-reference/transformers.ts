@@ -6,7 +6,7 @@ const transformers = {
   rest: Transformer<TKeyReference, TKeyReference>('rest', {}),
   graphql: Transformer<TKeyReference, TKeyReferenceGraphql>('graphql', {
     addFields: () => ({
-      __typename: 'Reference',
+      // __typename: 'Reference',
     }),
   }),
 };

@@ -1,5 +1,5 @@
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -27,7 +27,7 @@ const expressShippingMethod = (): TShippingMethodDraftBuilder =>
         ['en-GB']('Express Delivery')
     )
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([ZoneRateDraft.presets.sampleDataGoodStore.europeExpress()])
     .isDefault(false);

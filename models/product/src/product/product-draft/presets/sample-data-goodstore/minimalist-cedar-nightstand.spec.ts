@@ -197,37 +197,30 @@ describe(`with minimalistCedarNightstand preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-minimalist",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
@@ -371,7 +364,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -396,7 +388,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

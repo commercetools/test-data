@@ -70,7 +70,6 @@ describe(`with sofas preset`, () => {
         ],
         "orderHint": ".3",
         "parent": {
-          "__typename": "Reference",
           "key": "living-room-furniture",
           "typeId": "category",
         },

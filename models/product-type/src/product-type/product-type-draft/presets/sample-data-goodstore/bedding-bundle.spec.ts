@@ -87,7 +87,6 @@ describe(`with beddingBundle preset`, () => {
       beddingBundle().buildGraphql<TProductTypeDraftGraphql>();
     expect(beddingBundlePreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "SameForAll",

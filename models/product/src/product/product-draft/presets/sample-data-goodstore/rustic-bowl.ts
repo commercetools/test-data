@@ -1,5 +1,5 @@
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -54,11 +54,13 @@ const rusticBowl = (): TProductDraftBuilder =>
         ['de-DE']('rustikale-schale')
     )
     .productType(
-      KeyReference.presets.productType().key(rusticBowlProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(rusticBowlProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.rusticBowl01()

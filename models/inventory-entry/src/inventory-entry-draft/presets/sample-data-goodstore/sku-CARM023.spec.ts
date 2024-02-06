@@ -25,7 +25,6 @@ describe('With skuCARM023 preset', () => {
       skuCARM023().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuCARM023PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "InventoryEntryDraft",
         "custom": null,
         "expectedDelivery": undefined,
         "key": undefined,

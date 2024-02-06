@@ -82,7 +82,6 @@ describe(`with accessories preset`, () => {
 
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",

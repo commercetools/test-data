@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -67,13 +67,13 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
         ['en-US']('cotton-silk-bedsheet')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(cottonSilkBedsheetProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet01()
@@ -89,8 +89,8 @@ const cottonSilkBedsheet = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.cottonSilkBedsheet09(),
     ])
     .categories([
-      KeyReference.presets.category().key(beddingDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(beddingDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default cottonSilkBedsheet;

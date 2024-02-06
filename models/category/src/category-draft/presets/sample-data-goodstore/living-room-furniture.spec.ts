@@ -72,7 +72,6 @@ describe(`with livingRoomFurniture preset`, () => {
         ],
         "orderHint": ".9",
         "parent": {
-          "__typename": "Reference",
           "key": "furniture",
           "typeId": "category",
         },

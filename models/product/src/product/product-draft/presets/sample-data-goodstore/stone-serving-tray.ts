@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -83,24 +83,24 @@ const stoneServingTray = (): TProductDraftBuilder =>
         ['de-DE']('serviertablett-aus-stein')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(stoneServingTrayProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.stoneServingTray01()
     )
     .categories([
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(servewareDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(cheeseTraysDraft.key!),
-      KeyReference.presets.category().key(servingPlattersDraft.key!),
-      KeyReference.presets.category().key(bakewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(servewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(cheeseTraysDraft.key!),
+      KeyReferenceDraft.presets.category().key(servingPlattersDraft.key!),
+      KeyReferenceDraft.presets.category().key(bakewareDraft.key!),
     ]);
 
 export default stoneServingTray;

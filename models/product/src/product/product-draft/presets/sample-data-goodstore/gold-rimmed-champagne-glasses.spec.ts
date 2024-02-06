@@ -176,17 +176,14 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
@@ -330,7 +327,6 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -355,7 +351,6 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

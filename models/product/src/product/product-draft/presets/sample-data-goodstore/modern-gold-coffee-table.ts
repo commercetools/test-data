@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -79,23 +79,23 @@ const modernGoldCoffeeTable = (): TProductDraftBuilder =>
         ['en-US']('modern-gold-coffee-table')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(modernGoldCoffeeTableProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.modernGoldCoffeeTable01()
     )
     .categories([
-      KeyReference.presets.category().key(tablesDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
-      KeyReference.presets.category().key(theModernistDraft.key!),
+      KeyReferenceDraft.presets.category().key(tablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theModernistDraft.key!),
     ]);
 
 export default modernGoldCoffeeTable;

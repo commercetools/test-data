@@ -25,7 +25,6 @@ describe('With skuWTP09 preset', () => {
       skuWTP09().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuWTP09PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "InventoryEntryDraft",
         "custom": null,
         "expectedDelivery": undefined,
         "key": undefined,

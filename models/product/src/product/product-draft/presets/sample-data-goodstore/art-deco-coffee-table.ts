@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const artDecoCoffeeTable = (): TProductDraftBuilder =>
         ['de-DE']('art-deco-couchtisch')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(artDecoCoffeeTableProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.artDecoCoffeeTable01()
     )
     .categories([
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(tablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(tablesDraft.key!),
     ]);
 
 export default artDecoCoffeeTable;

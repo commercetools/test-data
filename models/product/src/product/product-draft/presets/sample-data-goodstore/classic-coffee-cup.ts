@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const classicCoffeeCup = (): TProductDraftBuilder =>
         ['de-DE']('klassische-kaffeetasse')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(classicCoffeeCupProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.classicCoffeeCup01()
     )
     .categories([
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(glasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(glasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default classicCoffeeCup;

@@ -1,4 +1,4 @@
-import { KeyReference } from '@commercetools-test-data/commons';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as ShippingRateDraft from '../../shipping-rate/shipping-rate-draft';
 import { TZoneRateDraft } from '../types';
@@ -7,7 +7,7 @@ import { TZoneRateDraft } from '../types';
 
 const generator = Generator<TZoneRateDraft>({
   fields: {
-    zone: fake(() => KeyReference.presets.zone()),
+    zone: fake(() => KeyReferenceDraft.presets.zone()),
     shippingRates: fake(() => [ShippingRateDraft.random()]),
   },
 });

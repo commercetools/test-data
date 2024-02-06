@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -26,6 +26,6 @@ const bowls = (): TCategoryDraftBuilder =>
     )
     .key('bowls')
     .orderHint('.56')
-    .parent(KeyReference.presets.category().key(dinnerwareDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!));
 
 export default bowls;

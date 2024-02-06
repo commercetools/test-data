@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const cocktailShakerSet = (): TProductDraftBuilder =>
         ['en-US']('cocktail-shaker-set')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(cocktailShakerSetProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.cocktailShakerSet01()
     )
     .categories([
-      KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAccessoriesDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default cocktailShakerSet;

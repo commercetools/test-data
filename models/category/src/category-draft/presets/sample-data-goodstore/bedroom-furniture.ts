@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -26,6 +26,6 @@ const bedroomFurniture = (): TCategoryDraftBuilder =>
     )
     .key('bedroom-furniture')
     .orderHint('.9')
-    .parent(KeyReference.presets.category().key(furnitureDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(furnitureDraft.key!));
 
 export default bedroomFurniture;

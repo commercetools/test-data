@@ -71,7 +71,6 @@ describe(`with theModernist preset`, () => {
         ],
         "orderHint": ".0035",
         "parent": {
-          "__typename": "Reference",
           "key": "collections",
           "typeId": "category",
         },

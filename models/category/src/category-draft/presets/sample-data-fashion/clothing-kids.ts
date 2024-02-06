@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -12,7 +12,7 @@ const clothingKids = (): TCategoryDraftBuilder =>
   empty()
     .name(LocalizedString.presets.empty()['en-US']('Clothing'))
     .slug(LocalizedString.presets.empty()['en-US']('clothing_kids'))
-    .parent(KeyReference.presets.category().key(kidsCategoryDraft.key!))
+    .parent(KeyReferenceDraft.presets.category().key(kidsCategoryDraft.key!))
     .key('clothing-kids')
     .orderHint('0.8');
 

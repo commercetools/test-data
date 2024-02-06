@@ -45,7 +45,6 @@ describe('with usa preset', () => {
           },
         ],
         "zone": {
-          "__typename": "Reference",
           "key": "usa",
           "typeId": "zone",
         },

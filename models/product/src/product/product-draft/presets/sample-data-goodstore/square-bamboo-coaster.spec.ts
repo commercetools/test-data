@@ -160,17 +160,14 @@ describe(`with squareBambooCoaster preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
@@ -294,7 +291,6 @@ describe(`with squareBambooCoaster preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -319,7 +315,6 @@ describe(`with squareBambooCoaster preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

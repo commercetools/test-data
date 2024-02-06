@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -70,19 +70,21 @@ const sandTeaCup = (): TProductDraftBuilder =>
         ['de-DE']('sand-teetasse')
     )
     .productType(
-      KeyReference.presets.productType().key(sandTeaCupProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(sandTeaCupProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.sandTeaCup01()
     )
     .categories([
-      KeyReference.presets.category().key(glasswareDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(glasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default sandTeaCup;

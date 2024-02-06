@@ -1,4 +1,7 @@
-import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -56,8 +59,8 @@ const jenniferJones01 = (customerId?: string): TCartDraftBuilder =>
       LineItemDraft.presets.empty().sku(geometricPillowCase01.sku).quantity(1),
     ])
     .shippingMethod(
-      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+      KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReference.presets.store().key(store.key!));
+    .store(KeyReferenceDraft.presets.store().key(store.key!));
 
 export default jenniferJones01;

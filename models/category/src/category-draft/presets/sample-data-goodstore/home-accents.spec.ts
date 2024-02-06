@@ -71,7 +71,6 @@ describe(`with homeAccents preset`, () => {
         ],
         "orderHint": ".5",
         "parent": {
-          "__typename": "Reference",
           "key": "room-decor",
           "typeId": "category",
         },

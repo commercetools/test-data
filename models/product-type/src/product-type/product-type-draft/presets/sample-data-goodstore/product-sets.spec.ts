@@ -44,7 +44,6 @@ describe(`with productSets preset`, () => {
       productSets().buildGraphql<TProductTypeDraftGraphql>();
     expect(productSetsPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",

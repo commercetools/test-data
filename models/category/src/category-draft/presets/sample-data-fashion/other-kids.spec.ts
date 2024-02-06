@@ -59,7 +59,6 @@ describe(`with otherKids preset`, () => {
         ],
         "orderHint": "0.25",
         "parent": {
-          "__typename": "Reference",
           "key": "kids",
           "typeId": "category",
         },

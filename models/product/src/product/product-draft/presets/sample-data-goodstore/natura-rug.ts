@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -70,19 +70,21 @@ const naturaRug = (): TProductDraftBuilder =>
         ['en-US']('natura-rug')
     )
     .productType(
-      KeyReference.presets.productType().key(naturaRugProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(naturaRugProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.naturaRug01()
     )
     .categories([
-      KeyReference.presets.category().key(rugsDraft.key!),
-      KeyReference.presets.category().key(roomDecorDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(rugsDraft.key!),
+      KeyReferenceDraft.presets.category().key(roomDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default naturaRug;

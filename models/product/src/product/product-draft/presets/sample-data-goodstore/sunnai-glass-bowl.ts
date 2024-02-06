@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -75,13 +75,13 @@ const sunnaiGlassBowl = (): TProductDraftBuilder =>
         ['de-DE']('sunnai-glaskugel')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(sunnaiGlassBowlProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl01()
@@ -90,10 +90,10 @@ const sunnaiGlassBowl = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.sunnaiGlassBowl02(),
     ])
     .categories([
-      KeyReference.presets.category().key(bowlsDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(bakewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(bowlsDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(bakewareDraft.key!),
     ]);
 
 export default sunnaiGlassBowl;

@@ -244,7 +244,6 @@ describe(`with maternityTop preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-women",
             "typeId": "category",
           },
@@ -325,7 +324,6 @@ describe(`with maternityTop preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -340,7 +338,6 @@ describe(`with maternityTop preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

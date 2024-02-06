@@ -25,7 +25,6 @@ describe('With skuMWT01 preset', () => {
       skuMWT01().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuMWT01PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "InventoryEntryDraft",
         "custom": null,
         "expectedDelivery": undefined,
         "key": undefined,

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -36,7 +36,7 @@ const anniversaryShirt = (): TProductDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-US']('Sample Anniversary Shirt'))
     .slug(LocalizedString.presets.empty()['en-US']('sample-anniversary-shirt'))
     .productType(
-      KeyReference.presets.productType().key(shirtProductTypeDraft.key!)
+      KeyReferenceDraft.presets.productType().key(shirtProductTypeDraft.key!)
     )
     .publish(false)
     .masterVariant(
@@ -48,8 +48,8 @@ const anniversaryShirt = (): TProductDraftBuilder =>
     ])
     .key('anniversary_shirt')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default anniversaryShirt;

@@ -25,7 +25,6 @@ describe('With skuNTSS02 preset', () => {
       skuNTSS02().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuNTSS02PresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "InventoryEntryDraft",
         "custom": null,
         "expectedDelivery": undefined,
         "key": undefined,

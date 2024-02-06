@@ -70,7 +70,6 @@ describe(`with bakeware preset`, () => {
         ],
         "orderHint": ".42",
         "parent": {
-          "__typename": "Reference",
           "key": "dinnerware",
           "typeId": "category",
         },

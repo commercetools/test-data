@@ -203,17 +203,14 @@ describe(`with artDecoCoffeeTable preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "tables",
             "typeId": "category",
           },
@@ -361,7 +358,6 @@ describe(`with artDecoCoffeeTable preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -386,7 +382,6 @@ describe(`with artDecoCoffeeTable preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

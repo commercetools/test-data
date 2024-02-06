@@ -332,14 +332,12 @@ describe('with the preset cart `sampleAustralia01`', () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "__typename": "Reference",
           "key": "shipping-usa-australia",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "__typename": "Reference",
           "key": "sample_store_three",
           "typeId": "store",
         },

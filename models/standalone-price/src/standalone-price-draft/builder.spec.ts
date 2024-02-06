@@ -121,7 +121,6 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
-        __typename: 'CreateStandalonePrice',
       })
     )
   );

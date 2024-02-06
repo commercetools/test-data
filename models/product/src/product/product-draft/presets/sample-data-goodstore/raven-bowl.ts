@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -74,20 +74,22 @@ const ravenBowl = (): TProductDraftBuilder =>
         ['de-DE']('rabenschssel')
     )
     .productType(
-      KeyReference.presets.productType().key(ravenBowlProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(ravenBowlProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.ravenBowl01()
     )
     .categories([
-      KeyReference.presets.category().key(bowlsDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(newArrivalsDraft.key!),
+      KeyReferenceDraft.presets.category().key(bowlsDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(newArrivalsDraft.key!),
     ]);
 
 export default ravenBowl;

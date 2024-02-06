@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -83,13 +83,13 @@ const minimalistModernSideTable = (): TProductDraftBuilder =>
         ['en-US']('minimalist-modern-side-table')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(minimalistModernSideTableProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.minimalistModernSideTable01()
@@ -98,12 +98,12 @@ const minimalistModernSideTable = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.minimalistModernSideTable02(),
     ])
     .categories([
-      KeyReference.presets.category().key(tablesDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(newArrivalsDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
-      KeyReference.presets.category().key(theMinimalistDraft.key!),
+      KeyReferenceDraft.presets.category().key(tablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(newArrivalsDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theMinimalistDraft.key!),
     ]);
 
 export default minimalistModernSideTable;

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,19 +71,21 @@ const fawnArmchair = (): TProductDraftBuilder =>
         ['en-US']('fawn-armchair')
     )
     .productType(
-      KeyReference.presets.productType().key(fawnArmchairProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(fawnArmchairProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.fawnArmchair01()
     )
     .categories([
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(armchairsDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(armchairsDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
     ]);
 
 export default fawnArmchair;

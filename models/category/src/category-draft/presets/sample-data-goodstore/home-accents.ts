@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -26,6 +26,6 @@ const homeAccents = (): TCategoryDraftBuilder =>
     )
     .key('home-accents')
     .orderHint('.5')
-    .parent(KeyReference.presets.category().key(roomDecorDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(roomDecorDraft.key!));
 
 export default homeAccents;

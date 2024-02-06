@@ -166,7 +166,6 @@ describe(`with sportCoat preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-men",
             "typeId": "category",
           },
@@ -243,7 +242,6 @@ describe(`with sportCoat preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "jackets",
           "typeId": "product-type",
         },
@@ -258,7 +256,6 @@ describe(`with sportCoat preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

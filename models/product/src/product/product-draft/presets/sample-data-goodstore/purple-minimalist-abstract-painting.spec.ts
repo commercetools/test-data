@@ -161,17 +161,14 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "home-accents",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -295,7 +292,6 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -320,7 +316,6 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

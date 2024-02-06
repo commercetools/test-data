@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -67,13 +67,13 @@ const mayaPillowCover = (): TProductDraftBuilder =>
         ['de-DE']('maya-kissenbezug')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(mayaPillowCoverProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.mayaPillowCover01()
@@ -82,8 +82,8 @@ const mayaPillowCover = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.mayaPillowCover02(),
     ])
     .categories([
-      KeyReference.presets.category().key(beddingDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(beddingDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default mayaPillowCover;

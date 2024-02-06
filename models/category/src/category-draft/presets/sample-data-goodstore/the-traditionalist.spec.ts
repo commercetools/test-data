@@ -71,7 +71,6 @@ describe(`with theTraditionalist preset`, () => {
         ],
         "orderHint": "0.0033",
         "parent": {
-          "__typename": "Reference",
           "key": "collections",
           "typeId": "category",
         },

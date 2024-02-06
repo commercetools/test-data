@@ -48,7 +48,7 @@ describe('builder', () => {
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
+            // __typename: 'LocalizedString',
           }),
         ]),
         __typename: 'LocalizableEnumValueType',

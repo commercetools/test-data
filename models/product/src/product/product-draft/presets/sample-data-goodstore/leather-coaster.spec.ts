@@ -172,17 +172,14 @@ describe(`with leatherCoaster preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -314,7 +311,6 @@ describe(`with leatherCoaster preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -339,7 +335,6 @@ describe(`with leatherCoaster preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

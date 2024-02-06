@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -87,25 +87,25 @@ const minimalistCedarNightstand = (): TProductDraftBuilder =>
         ['en-US']('minimalist-cedar-nightstand')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(minimalistCedarNightstandProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.minimalistCedarNightstand01()
     )
     .categories([
-      KeyReference.presets.category().key(tablesDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
-      KeyReference.presets.category().key(theMinimalistDraft.key!),
-      KeyReference.presets.category().key(storageTablesDraft.key!),
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(tablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theMinimalistDraft.key!),
+      KeyReferenceDraft.presets.category().key(storageTablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
     ]);
 
 export default minimalistCedarNightstand;

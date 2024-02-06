@@ -172,17 +172,14 @@ describe(`with serenityQueenBed preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "beds",
             "typeId": "category",
           },
@@ -314,7 +311,6 @@ describe(`with serenityQueenBed preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -339,7 +335,6 @@ describe(`with serenityQueenBed preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -49,7 +49,6 @@ describe('with the preset `furnitureBogo`', () => {
       {
         "cartDiscounts": [
           {
-            "__typename": "Reference",
             "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },

@@ -152,17 +152,14 @@ describe(`with modernLandscapePainting preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "home-accents",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -282,7 +279,6 @@ describe(`with modernLandscapePainting preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -307,7 +303,6 @@ describe(`with modernLandscapePainting preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

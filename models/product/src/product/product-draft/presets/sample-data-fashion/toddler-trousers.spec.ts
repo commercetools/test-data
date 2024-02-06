@@ -286,7 +286,6 @@ describe(`with toddlerTrousers preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bottoms_kids",
             "typeId": "category",
           },
@@ -375,7 +374,6 @@ describe(`with toddlerTrousers preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "pants",
           "typeId": "product-type",
         },
@@ -390,7 +388,6 @@ describe(`with toddlerTrousers preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

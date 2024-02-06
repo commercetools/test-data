@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -79,23 +79,23 @@ const traditionalArmchair = (): TProductDraftBuilder =>
         ['de-DE']('traditioneller-sessel')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(traditionalArmchairProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.traditionalArmchair01()
     )
     .categories([
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(theTraditionalistDraft.key!),
-      KeyReference.presets.category().key(armchairsDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(theTraditionalistDraft.key!),
+      KeyReferenceDraft.presets.category().key(armchairsDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
     ]);
 
 export default traditionalArmchair;

@@ -173,32 +173,26 @@ describe(`with stoneServingTray preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serveware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "cheese-trays",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serving-platters",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bakeware",
             "typeId": "category",
           },
@@ -326,7 +320,6 @@ describe(`with stoneServingTray preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -351,7 +344,6 @@ describe(`with stoneServingTray preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

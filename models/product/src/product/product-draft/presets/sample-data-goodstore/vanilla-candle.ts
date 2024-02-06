@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,19 +71,21 @@ const vanillaCandle = (): TProductDraftBuilder =>
         ['de-DE']('vanille-kerze')
     )
     .productType(
-      KeyReference.presets.productType().key(vanillaCandleProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(vanillaCandleProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.vanillaCandle01()
     )
     .categories([
-      KeyReference.presets.category().key(homeAccentsDraft.key!),
-      KeyReference.presets.category().key(roomDecorDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeAccentsDraft.key!),
+      KeyReferenceDraft.presets.category().key(roomDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default vanillaCandle;

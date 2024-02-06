@@ -187,17 +187,14 @@ describe(`with brunoChair preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "armchairs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
@@ -337,7 +334,6 @@ describe(`with brunoChair preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -362,7 +358,6 @@ describe(`with brunoChair preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -223,32 +223,26 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "sofas",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-traditionalist",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
@@ -404,7 +398,6 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -429,7 +422,6 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

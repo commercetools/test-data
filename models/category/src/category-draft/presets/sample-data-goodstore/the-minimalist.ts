@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -26,6 +26,6 @@ const theMinimalist = (): TCategoryDraftBuilder =>
     )
     .key('the-minimalist')
     .orderHint('.003')
-    .parent(KeyReference.presets.category().key(collectionsDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(collectionsDraft.key!));
 
 export default theMinimalist;

@@ -71,7 +71,6 @@ describe(`with cheeseTrays preset`, () => {
         ],
         "orderHint": ".12",
         "parent": {
-          "__typename": "Reference",
           "key": "serveware",
           "typeId": "category",
         },

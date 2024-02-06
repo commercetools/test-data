@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -36,7 +36,9 @@ const toteBag = (): TProductDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-US']('Sample Tote Bag'))
     .slug(LocalizedString.presets.empty()['en-US']('sample-tote-bag'))
     .productType(
-      KeyReference.presets.productType().key(accessoriesProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(accessoriesProductTypeDraft.key!)
     )
     .publish(true)
     .masterVariant(
@@ -47,8 +49,8 @@ const toteBag = (): TProductDraftBuilder =>
     ])
     .key('tote_bag')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default toteBag;

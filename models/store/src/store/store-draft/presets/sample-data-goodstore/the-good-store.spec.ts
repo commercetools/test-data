@@ -28,7 +28,6 @@ describe('with `the_good_store` preset', () => {
     const storeDraft = theGoodStore().buildGraphql<TStoreDraft>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "StoreDraft",
         "countries": undefined,
         "custom": undefined,
         "distributionChannels": undefined,

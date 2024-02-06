@@ -30,7 +30,6 @@ describe('CustomViewPermission model builder', () => {
       'graphql',
       CustomViewPermissionDraftModel.presets.ViewOnlyPermissions(),
       expect.objectContaining({
-        __typename: 'CustomViewPermission',
         name: 'view',
         oAuthScopes: expect.arrayContaining([expect.stringMatching(/^view_/)]),
       })
@@ -45,7 +44,6 @@ describe('CustomViewPermission model builder', () => {
       'graphql',
       CustomViewPermissionDraftModel.presets.ManageOnlyPermissions(),
       expect.objectContaining({
-        __typename: 'CustomViewPermission',
         name: 'manage',
         oAuthScopes: expect.arrayContaining([
           expect.stringMatching(/^manage_/),

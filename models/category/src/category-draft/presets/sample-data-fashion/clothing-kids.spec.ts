@@ -59,7 +59,6 @@ describe(`with clothingKids preset`, () => {
         ],
         "orderHint": "0.8",
         "parent": {
-          "__typename": "Reference",
           "key": "kids",
           "typeId": "category",
         },

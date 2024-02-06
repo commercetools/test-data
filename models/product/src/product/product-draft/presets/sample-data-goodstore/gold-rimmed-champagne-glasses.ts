@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const goldRimmedChampagneGlasses = (): TProductDraftBuilder =>
         ['de-DE']('champagnerglser-mit-goldrand')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(goldRimmedChampagneGlassesProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.goldRimmedChampagneGlasses01()
     )
     .categories([
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(glasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(glasswareDraft.key!),
     ]);
 
 export default goldRimmedChampagneGlasses;

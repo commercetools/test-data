@@ -184,32 +184,26 @@ describe(`with modernBookcase preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
@@ -341,7 +335,6 @@ describe(`with modernBookcase preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -366,7 +359,6 @@ describe(`with modernBookcase preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -274,12 +274,10 @@ describe(`with mayaPillowCover preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedding",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -411,7 +409,6 @@ describe(`with mayaPillowCover preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -436,7 +433,6 @@ describe(`with mayaPillowCover preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -75,13 +75,13 @@ const largeCeramicPlate = (): TProductDraftBuilder =>
         ['de-DE']('groe-keramikplatte')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(largeCeramicPlateProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.largeCeramicPlate01()
@@ -90,10 +90,10 @@ const largeCeramicPlate = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.largeCeramicPlate02(),
     ])
     .categories([
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(platesDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(newArrivalsDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(platesDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(newArrivalsDraft.key!),
     ]);
 
 export default largeCeramicPlate;

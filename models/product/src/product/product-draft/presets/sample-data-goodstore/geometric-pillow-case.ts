@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,13 +71,13 @@ const geometricPillowCase = (): TProductDraftBuilder =>
         ['de-DE']('geometrischer-kissenbezug')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(geometricPillowCaseProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase01()
@@ -87,9 +87,9 @@ const geometricPillowCase = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.geometricPillowCase03(),
     ])
     .categories([
-      KeyReference.presets.category().key(homeDecorDraft.key!),
-      KeyReference.presets.category().key(newArrivalsDraft.key!),
-      KeyReference.presets.category().key(beddingDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(newArrivalsDraft.key!),
+      KeyReferenceDraft.presets.category().key(beddingDraft.key!),
     ]);
 
 export default geometricPillowCase;

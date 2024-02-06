@@ -84,7 +84,6 @@ describe('Shipping Method with standard preset', () => {
         "name": "Standard Delivery",
         "predicate": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
@@ -109,7 +108,6 @@ describe('Shipping Method with standard preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "europe",
               "typeId": "zone",
             },

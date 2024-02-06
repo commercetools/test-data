@@ -1,4 +1,4 @@
-import { KeyReference } from '@commercetools-test-data/commons';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import { ZoneDraft, type TZoneDraft } from '@commercetools-test-data/zone';
 import { ShippingRateDraft } from '../../../../shipping-rate';
 import type { TZoneRateDraftBuilder } from '../../../types';
@@ -10,7 +10,7 @@ const usaZone = ZoneDraft.presets.sampleDataGoodStore
 
 const usa = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
-    .zone(KeyReference.presets.zone().key(usaZone.key!))
+    .zone(KeyReferenceDraft.presets.zone().key(usaZone.key!))
     .shippingRates([ShippingRateDraft.presets.sampleDataGoodStore.usd5000()]);
 
 export default usa;

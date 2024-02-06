@@ -1,7 +1,7 @@
 import type { TKeyReferenceDraftBuilder } from '../../types';
-import KeyReference from '../builder';
+import KeyReferenceDraft from '../builder';
 
 const taxCategory = (): TKeyReferenceDraftBuilder =>
-  KeyReference().typeId('tax-category');
+  KeyReferenceDraft().typeId('tax-category');
 
 export default taxCategory;

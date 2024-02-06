@@ -227,27 +227,22 @@ describe(`with modernThreeSeaterSofa preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "sofas",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
@@ -411,7 +406,6 @@ describe(`with modernThreeSeaterSofa preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -436,7 +430,6 @@ describe(`with modernThreeSeaterSofa preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

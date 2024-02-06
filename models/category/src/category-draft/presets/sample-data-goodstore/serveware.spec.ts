@@ -71,7 +71,6 @@ describe(`with serveware preset`, () => {
         ],
         "orderHint": ".86",
         "parent": {
-          "__typename": "Reference",
           "key": "kitchen",
           "typeId": "category",
         },

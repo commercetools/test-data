@@ -88,7 +88,6 @@ describe('with usaAustraliaShippingMethod preset', () => {
         "name": "Sample Shipping Method USA/Australia",
         "predicate": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
@@ -108,7 +107,6 @@ describe('with usaAustraliaShippingMethod preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "usa",
               "typeId": "zone",
             },
@@ -128,7 +126,6 @@ describe('with usaAustraliaShippingMethod preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "australia",
               "typeId": "zone",
             },

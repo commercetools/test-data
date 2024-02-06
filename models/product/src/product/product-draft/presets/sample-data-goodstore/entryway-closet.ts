@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,21 +71,21 @@ const entrywayCloset = (): TProductDraftBuilder =>
         ['en-US']('entryway-closet')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(entrywayClosetProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.entrywayCloset01()
     )
     .categories([
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
-      KeyReference.presets.category().key(storageTablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(storageTablesDraft.key!),
     ]);
 
 export default entrywayCloset;

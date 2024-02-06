@@ -169,7 +169,6 @@ describe(`with pants preset`, () => {
 
     expect(pantsProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",

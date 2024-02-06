@@ -383,7 +383,6 @@ describe(`with furnitureAndDecor preset`, () => {
 
     expect(furnitureAndDecorPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "SameForAll",

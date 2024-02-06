@@ -1,4 +1,7 @@
-import { Reference, LocalizedString } from '@commercetools-test-data/commons';
+import {
+  ReferenceDraft,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
 import { TDiscountCodeDraftBuilder } from '../../../types';
 import * as DiscountCodeDraft from '../../index';
 
@@ -9,7 +12,7 @@ const employeeSale = (cartDiscountId: string): TDiscountCodeDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-US']('Employee Sale'))
     .description(LocalizedString.presets.empty())
     .cartDiscounts([
-      Reference.random().id(cartDiscountId).typeId('cart-discount'),
+      ReferenceDraft.random().id(cartDiscountId).typeId('cart-discount'),
     ])
     .isActive(true)
     .groups([]);

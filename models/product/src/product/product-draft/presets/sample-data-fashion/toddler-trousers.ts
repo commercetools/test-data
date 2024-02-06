@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -36,7 +36,7 @@ const ToddlerTrousers = (): TProductDraftBuilder =>
     .name(LocalizedString.presets.empty()['en-US']('Sample Toddler Trousers'))
     .slug(LocalizedString.presets.empty()['en-US']('sample-toddler-trousers'))
     .productType(
-      KeyReference.presets.productType().key(pantsProductTypeDraft.key!)
+      KeyReferenceDraft.presets.productType().key(pantsProductTypeDraft.key!)
     )
     .publish(true)
     .masterVariant(
@@ -48,8 +48,8 @@ const ToddlerTrousers = (): TProductDraftBuilder =>
     ])
     .key('toddler_trousers')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default ToddlerTrousers;

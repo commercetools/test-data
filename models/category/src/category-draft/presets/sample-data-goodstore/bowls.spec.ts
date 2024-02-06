@@ -70,7 +70,6 @@ describe(`with bowls preset`, () => {
         ],
         "orderHint": ".56",
         "parent": {
-          "__typename": "Reference",
           "key": "dinnerware",
           "typeId": "category",
         },

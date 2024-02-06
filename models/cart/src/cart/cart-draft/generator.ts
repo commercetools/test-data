@@ -1,4 +1,4 @@
-import { Reference, AddressDraft } from '@commercetools-test-data/commons';
+import { ReferenceDraft, AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import * as LineItem from '../../line-item';
 import {
@@ -19,9 +19,9 @@ const generator = Generator<TCartDraft>({
     key: fake((f) => f.lorem.slug(2)),
     customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
-    customerGroup: fake(() => Reference.random().typeId('customer-group')),
+    customerGroup: fake(() => ReferenceDraft.random().typeId('customer-group')),
     anonymousId: fake((f) => f.string.uuid()),
-    businessUnit: fake(() => Reference.random().typeId('business-unit')),
+    businessUnit: fake(() => ReferenceDraft.random().typeId('business-unit')),
     store: null,
     country: fake((f) => f.location.countryCode()),
     inventoryMode: oneOf(...Object.values(inventoryMode)),
@@ -32,7 +32,9 @@ const generator = Generator<TCartDraft>({
     customLineItems: [],
     shippingAddress: fake(() => AddressDraft.random()),
     billingAddress: fake(() => AddressDraft.random()),
-    shippingMethod: fake(() => Reference.random().typeId('shipping-method')),
+    shippingMethod: fake(() =>
+      ReferenceDraft.random().typeId('shipping-method')
+    ),
     externalTaxRateForShippingMethod: null,
     custom: null,
     locale: oneOf('en-US', 'de-DE', 'es-ES'),

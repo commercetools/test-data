@@ -149,22 +149,18 @@ describe(`with willowTeapot preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
@@ -284,7 +280,6 @@ describe(`with willowTeapot preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -309,7 +304,6 @@ describe(`with willowTeapot preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -71,7 +71,6 @@ describe(`with servingPlatters preset`, () => {
         ],
         "orderHint": ".0004",
         "parent": {
-          "__typename": "Reference",
           "key": "serveware",
           "typeId": "category",
         },

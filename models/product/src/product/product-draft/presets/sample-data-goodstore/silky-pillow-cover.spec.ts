@@ -168,12 +168,10 @@ describe(`with silkyPillowCover preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedding",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -305,7 +303,6 @@ describe(`with silkyPillowCover preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -330,7 +327,6 @@ describe(`with silkyPillowCover preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

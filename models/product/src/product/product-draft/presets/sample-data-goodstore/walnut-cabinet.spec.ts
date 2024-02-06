@@ -180,17 +180,14 @@ describe(`with walnutCabinet preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
@@ -330,7 +327,6 @@ describe(`with walnutCabinet preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -355,7 +351,6 @@ describe(`with walnutCabinet preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

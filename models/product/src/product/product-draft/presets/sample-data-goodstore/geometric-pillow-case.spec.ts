@@ -435,17 +435,14 @@ describe(`with geometricPillowCase preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedding",
             "typeId": "category",
           },
@@ -585,7 +582,6 @@ describe(`with geometricPillowCase preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -610,7 +606,6 @@ describe(`with geometricPillowCase preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

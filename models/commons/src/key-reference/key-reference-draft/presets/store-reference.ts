@@ -1,7 +1,7 @@
 import type { TKeyReferenceDraftBuilder } from '../../types';
-import KeyReference from '../builder';
+import KeyReferenceDraft from '../builder';
 
 const storeReference = (): TKeyReferenceDraftBuilder =>
-  KeyReference().typeId('store');
+  KeyReferenceDraft().typeId('store');
 
 export default storeReference;

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,19 +71,21 @@ const ecruDoubleBed = (): TProductDraftBuilder =>
         ['en-US']('ecru-double-bed')
     )
     .productType(
-      KeyReference.presets.productType().key(ecruDoubleBedProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(ecruDoubleBedProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.ecruDoubleBed01()
     )
     .categories([
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(bedsDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedsDraft.key!),
     ]);
 
 export default ecruDoubleBed;

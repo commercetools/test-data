@@ -70,7 +70,6 @@ describe(`with rugs preset`, () => {
         ],
         "orderHint": ".4",
         "parent": {
-          "__typename": "Reference",
           "key": "room-decor",
           "typeId": "category",
         },

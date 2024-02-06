@@ -71,7 +71,6 @@ describe(`with roomDecor preset`, () => {
         ],
         "orderHint": ".8",
         "parent": {
-          "__typename": "Reference",
           "key": "home-decor",
           "typeId": "category",
         },

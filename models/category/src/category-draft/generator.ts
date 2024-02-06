@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TCategoryDraft } from '../types';
@@ -16,7 +16,7 @@ const generator = Generator<TCategoryDraft>({
     name: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
     description: null,
-    parent: fake(() => KeyReference.presets.category().key(KEY)),
+    parent: fake(() => KeyReferenceDraft.presets.category().key(KEY)),
     orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
     metaTitle: null,
     metaDescription: null,

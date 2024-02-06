@@ -202,27 +202,22 @@ describe(`with modernGlamDresser preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
@@ -370,7 +365,6 @@ describe(`with modernGlamDresser preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -395,7 +389,6 @@ describe(`with modernGlamDresser preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

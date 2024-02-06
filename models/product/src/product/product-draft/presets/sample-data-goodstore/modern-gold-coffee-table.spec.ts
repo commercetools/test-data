@@ -236,27 +236,22 @@ describe(`with modernGoldCoffeeTable preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
@@ -420,7 +415,6 @@ describe(`with modernGoldCoffeeTable preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -445,7 +439,6 @@ describe(`with modernGoldCoffeeTable preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -70,7 +70,6 @@ describe(`with plates preset`, () => {
         ],
         "orderHint": ".82",
         "parent": {
-          "__typename": "Reference",
           "key": "dinnerware",
           "typeId": "category",
         },

@@ -197,7 +197,6 @@ describe(`with sampleSandals preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-kids",
             "typeId": "category",
           },
@@ -308,7 +307,6 @@ describe(`with sampleSandals preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "accessories",
           "typeId": "product-type",
         },
@@ -323,7 +321,6 @@ describe(`with sampleSandals preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

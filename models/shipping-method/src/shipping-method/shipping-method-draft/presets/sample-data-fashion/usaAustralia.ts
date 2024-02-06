@@ -1,5 +1,5 @@
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import { TaxCategoryDraft } from '@commercetools-test-data/tax-category';
@@ -23,7 +23,7 @@ const usaAustraliaShippingMethod = (): TShippingMethodDraftBuilder =>
         ['en-US']('Sample Shipping Method USA/Australia')
     )
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([
       ZoneRateDraft.presets.sampleDataFashion.usa(),

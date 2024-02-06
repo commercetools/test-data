@@ -45,7 +45,6 @@ describe('builder', () => {
       'graphql',
       ProductSelectionDraft.random(),
       expect.objectContaining({
-        __typename: 'CreateProductSelectionDraft',
         key: expect.any(String),
         mode: expect.any(String),
         name: expect.arrayContaining([

@@ -66,7 +66,7 @@ describe('builder', () => {
         externalId: expect.any(String),
         orderHint: expect.any(String),
         parent: expect.objectContaining({
-          __typename: 'Reference',
+          typeId: 'category',
         }),
         name: expect.arrayContaining([
           expect.objectContaining({

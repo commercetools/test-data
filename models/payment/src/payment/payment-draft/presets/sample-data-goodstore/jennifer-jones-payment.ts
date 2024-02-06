@@ -1,6 +1,6 @@
 import {
   LocalizedString,
-  KeyReference,
+  KeyReferenceDraft,
   Money,
 } from '@commercetools-test-data/commons';
 import {
@@ -29,7 +29,9 @@ const jenniferJonesPayment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
     .key(orderJenniferJones.cart!.key!)
-    .customer(KeyReference.presets.customer().key(customerJenniferJones.key!))
+    .customer(
+      KeyReferenceDraft.presets.customer().key(customerJenniferJones.key!)
+    )
     .amountPlanned(Money.random().centAmount(485759).currencyCode('GBP'))
     .paymentMethodInfo(
       PaymentMethodInfoDraft.presets

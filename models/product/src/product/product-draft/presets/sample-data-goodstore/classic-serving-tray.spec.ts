@@ -185,22 +185,18 @@ describe(`with classicServingTray preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "serving-platters",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serveware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -340,7 +336,6 @@ describe(`with classicServingTray preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -365,7 +360,6 @@ describe(`with classicServingTray preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

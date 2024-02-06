@@ -79,7 +79,6 @@ describe('Shipping Method with USA preset', () => {
         "name": "US Delivery",
         "predicate": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
@@ -99,7 +98,6 @@ describe('Shipping Method with USA preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "usa",
               "typeId": "zone",
             },

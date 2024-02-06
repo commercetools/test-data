@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -71,19 +71,21 @@ const walnutCabinet = (): TProductDraftBuilder =>
         ['de-DE']('nussbaum-schrank')
     )
     .productType(
-      KeyReference.presets.productType().key(walnutCabinetProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(walnutCabinetProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.walnutCabinet01()
     )
     .categories([
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(bedroomFurnitureDraft.key!),
-      KeyReference.presets.category().key(storageTablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(storageTablesDraft.key!),
     ]);
 
 export default walnutCabinet;

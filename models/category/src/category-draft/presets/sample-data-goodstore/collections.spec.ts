@@ -71,7 +71,6 @@ describe(`with collections preset`, () => {
         ],
         "orderHint": ".7",
         "parent": {
-          "__typename": "Reference",
           "key": "furniture",
           "typeId": "category",
         },

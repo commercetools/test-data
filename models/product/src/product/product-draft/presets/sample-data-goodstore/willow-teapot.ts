@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -75,20 +75,22 @@ const willowTeapot = (): TProductDraftBuilder =>
         ['de-DE']('willow-teekanne')
     )
     .productType(
-      KeyReference.presets.productType().key(willowTeapotProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(willowTeapotProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.willowTeapot01()
     )
     .categories([
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAccessoriesDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
     ]);
 
 export default willowTeapot;

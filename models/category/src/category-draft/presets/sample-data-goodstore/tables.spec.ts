@@ -70,7 +70,6 @@ describe(`with tables preset`, () => {
         ],
         "orderHint": ".25",
         "parent": {
-          "__typename": "Reference",
           "key": "living-room-furniture",
           "typeId": "category",
         },

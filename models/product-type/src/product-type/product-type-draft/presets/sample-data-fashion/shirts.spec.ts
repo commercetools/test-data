@@ -101,7 +101,6 @@ describe(`with shirts preset`, () => {
 
     expect(shirtsProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "CombinationUnique",

@@ -3,7 +3,7 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
+  KeyReferenceDraft,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import {
@@ -70,11 +70,13 @@ const meadowRug = (): TProductDraftBuilder =>
         ['en-US']('meadow-rug')
     )
     .productType(
-      KeyReference.presets.productType().key(meadowRugProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(meadowRugProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.meadowRug01()
@@ -84,9 +86,9 @@ const meadowRug = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.meadowRug03(),
     ])
     .categories([
-      KeyReference.presets.category().key(roomDecorDraft.key!),
-      KeyReference.presets.category().key(rugsDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(roomDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(rugsDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default meadowRug;

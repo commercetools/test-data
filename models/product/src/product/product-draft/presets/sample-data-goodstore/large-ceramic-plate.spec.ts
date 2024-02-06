@@ -306,22 +306,18 @@ describe(`with largeCeramicPlate preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "plates",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
@@ -461,7 +457,6 @@ describe(`with largeCeramicPlate preset`, () => {
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -486,7 +481,6 @@ describe(`with largeCeramicPlate preset`, () => {
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
