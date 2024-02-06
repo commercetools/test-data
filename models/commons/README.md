@@ -20,6 +20,7 @@ $ pnpm add -D @commercetools-test-data/commons
 - [Money](#money)<br>
 - [Price](#price)<br>
 - [Reference](#reference)<br>
+- [PriceTier](#pricetier)<br>
 
 ## `Address`
 
@@ -123,4 +124,15 @@ const productRef = Reference.random()
 const categoryRef = Reference.presets
   .category()
   .build<TReference<'category'>>();
+```
+
+## `PriceTier`
+
+```ts
+import { PriceTier, type TPriceTier } from '@commercetools-test-data/commons';
+
+const productRef = PriceTier.random().build<TPriceTier>();
+
+// Presets
+const categoryRef = PriceTier.presets.build<TPriceTier>();
 ```

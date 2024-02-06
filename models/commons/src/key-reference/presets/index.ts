@@ -1,6 +1,7 @@
 import associateRole from './associate-role-reference';
 import businessUnit from './business-unit-reference';
 import category from './category-reference';
+import channel from './channel-reference';
 import customerGroup from './customer-group-reference';
 import customer from './customer-reference';
 import productType from './product-type-reference';
@@ -13,6 +14,7 @@ const presets = {
   associateRole,
   businessUnit,
   category,
+  channel,
   customer,
   customerGroup,
   productType,

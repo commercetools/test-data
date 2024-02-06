@@ -1,0 +1,30 @@
+{
+  "name": "@commercetools-test-data/standalone-price",
+  "version": "6.11.0",
+  "description": "Data model for commercetools API StandalonePrice",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/standalone-price"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-standalone-price.cjs.js",
+  "module": "dist/commercetools-test-data-standalone-price.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "6.11.0",
+    "@commercetools-test-data/core": "6.11.0",
+    "@commercetools-test-data/utils": "6.11.0",
+    "@commercetools-test-data/customer-group": "6.11.0",
+    "@commercetools-test-data/channel": "6.11.0",
+    "@commercetools/platform-sdk": "^7.0.0",
+    "@faker-js/faker": "^7.4.0"
+  }
+}

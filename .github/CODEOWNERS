@@ -44,6 +44,7 @@
 /models/shipping-method @commercetools/checkout-team-fe
 /models/shopping-list @commercetools/checkout-team-fe
 /models/staged-quote @commercetools/customers-team-fe
+/models/standalone-price @commercetools/priceless-team-fe
 /models/store @commercetools/context-team-fe
 /models/tax-category @commercetools/checkout-team-fe
 /models/zone @commercetools/checkout-team-fe

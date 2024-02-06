@@ -887,6 +887,36 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
 
+  models/standalone-price:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@commercetools-test-data/channel':
+        specifier: 6.11.0
+        version: link:../channel
+      '@commercetools-test-data/commons':
+        specifier: 6.11.0
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 6.11.0
+        version: link:../../core
+      '@commercetools-test-data/customer-group':
+        specifier: 6.11.0
+        version: link:../customer-group
+      '@commercetools-test-data/utils':
+        specifier: 6.11.0
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.0.0
+      '@faker-js/faker':
+        specifier: ^7.4.0
+        version: 7.6.0
+
   models/state:
     dependencies:
       '@babel/runtime':
@@ -3486,6 +3516,11 @@ packages:
   /@eslint/js@8.56.0:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@faker-js/faker@7.6.0:
+    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: false
 
   /@faker-js/faker@8.0.0:
