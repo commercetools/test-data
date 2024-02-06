@@ -14,7 +14,7 @@ const generator = Generator<TOrderFromQuoteDraft>({
   fields: {
     version: sequence(),
     quote: fake(() => Reference.random().typeId('quote')),
-    quoteStateToAccepted: fake(() => false),
+    quoteStateToAccepted: fake((f) => f.datatype.boolean()),
     orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
     paymentState: oneOf(...Object.values(paymentState)),
     shipmentState: oneOf(...Object.values(shipmentState)),
