@@ -7,9 +7,7 @@ export type TPriceTierDraft = PriceTierDraft;
 export type TPriceTierGraphql = TPriceTier & {
   __typename: 'ProductPriceTier';
 };
-export type TPriceTierDraftGraphql = TPriceTierDraft & {
-  __typename: 'ProductPriceTierInput';
-};
+export type TPriceTierDraftGraphql = TPriceTierDraft;
 
 export type TPriceTierBuilder = TBuilder<TPriceTier>;
 export type TPriceTierDraftBuilder = TBuilder<TPriceTierDraft>;

@@ -11,9 +11,7 @@ export type TProductSelectionSettingDraftBuilder =
   TBuilder<TProductSelectionSettingDraft>;
 export type TCreateProductSelectionSettingDraftBuilder =
   () => TProductSelectionSettingDraftBuilder;
-export type TProductSelectionSettingDraftGraphql = TProductSelectionSetting & {
-  __typename: 'ProductSelectionSettingDraft';
-};
+export type TProductSelectionSettingDraftGraphql = TProductSelectionSetting;
 
 //ProductSelectionSettings
 export type TProductSelectionSettingRest = ProductSelectionSetting;

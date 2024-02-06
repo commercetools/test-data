@@ -12,7 +12,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['state'],
-      addFields: () => ({ __typename: 'PaymentStatusDraft' }),
     }
   ),
 };

@@ -7,9 +7,6 @@ const transformers = {
   }),
   graphql: Transformer<TCustomViewDraft, TCustomViewDraftGraphql>('graphql', {
     buildFields: ['labelAllLocales', 'permissions', 'typeSettings'],
-    addFields: () => ({
-      __typename: 'CustomViewDraftDataInput',
-    }),
   }),
 };
 

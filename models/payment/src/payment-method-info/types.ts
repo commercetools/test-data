@@ -11,9 +11,7 @@ export type TPaymentMethodInfoGraphql = TPaymentMethodInfo & {
 
 export type TPaymentMethodInfoDraft = PaymentMethodInfo;
 
-export type TPaymentMethodInfoDraftGraphQL = TPaymentMethodInfoDraft & {
-  __typename: 'PaymentMethodInfoInput';
-};
+export type TPaymentMethodInfoDraftGraphQL = TPaymentMethodInfoDraft;
 
 export type TPaymentMethodInfoBuilder = TBuilder<TPaymentMethodInfo>;
 export type TCreatePaymentMethodInfoBuilder = () => TPaymentMethodInfoBuilder;

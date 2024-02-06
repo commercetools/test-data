@@ -10,7 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TTransactionDraft, TTransactionDraftGraphql>('graphql', {
     buildFields: ['amount', 'custom'],
-    addFields: () => ({ __typename: 'TransactionDraft' }),
   }),
 };
 

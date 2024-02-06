@@ -12,11 +12,7 @@ const transformers = {
   graphql: Transformer<
     TCustomViewPermissionDraft,
     TCustomViewPermissionDraftGraphql
-  >('graphql', {
-    addFields: () => ({
-      __typename: 'CustomViewPermission',
-    }),
-  }),
+  >('graphql', {}),
 };
 
 export default transformers;

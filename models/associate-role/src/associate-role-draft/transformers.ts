@@ -11,9 +11,7 @@ const transformers = {
   //only scaffolding provided at this time
   graphql: Transformer<TAssociateRoleDraft, TAssociateRoleDraftGraphql>(
     'graphql',
-    {
-      buildFields: [],
-    }
+    { buildFields: [] }
   ),
 };
 

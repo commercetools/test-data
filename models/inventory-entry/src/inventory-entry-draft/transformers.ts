@@ -16,7 +16,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['supplyChannel'],
-      addFields: () => ({ __typename: 'InventoryEntryDraft' }),
     }
   ),
 };

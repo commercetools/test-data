@@ -17,12 +17,8 @@ export type TDivisionDraftBuilder = TBuilder<TDivisionDraft>;
 export type TCreateCompanyDraftBuilder = () => TCompanyDraftBuilder;
 export type TCreateDivisionDraftBuilder = () => TDivisionDraftBuilder;
 //BusinessUnitDraftGraphql is only scaffolding at this time
-export type TCompanyDraftGraphql = TCompanyDraft & {
-  __typename: 'BusinessUnitDraft';
-};
-export type TDivisionDraftGraphql = TDivisionDraft & {
-  __typename: 'BusinessUnitDraft';
-};
+export type TCompanyDraftGraphql = TCompanyDraft;
+export type TDivisionDraftGraphql = TDivisionDraft;
 
 //BusinessUnit
 export type TCompany = Company;

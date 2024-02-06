@@ -12,7 +12,6 @@ const transformers = {
   graphql: Transformer<TProductTypeDraft, TProductTypeDraftGraphql>('graphql', {
     addFields: ({ fields }) => {
       return {
-        __typename: 'ProductTypeDraft',
         attributeDefinitions: fields.attributes!.map((attribute) =>
           buildField(attribute, 'graphql')
         ) as unknown as Array<TAttributeDefinitionDraftGraphql>,

@@ -27,9 +27,7 @@ export type TStandalonePriceGraphql = TStandalonePrice & {
   channelRef: TReferenceGraphql | null;
   __typename: 'StandalonePrice';
 };
-export type TStandalonePriceDraftGraphql = StandalonePriceDraft & {
-  __typename: 'CreateStandalonePrice';
-};
+export type TStandalonePriceDraftGraphql = StandalonePriceDraft;
 
 export type TStandalonePriceBuilder = TBuilder<TStandalonePrice>;
 export type TStandalonePriceDraftBuilder = TBuilder<StandalonePriceDraft>;

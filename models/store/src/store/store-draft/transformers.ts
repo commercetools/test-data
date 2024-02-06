@@ -14,7 +14,6 @@ const transformers = {
     replaceFields: ({ fields }) => ({
       ...fields,
       name: LocalizedString.toLocalizedField(fields.name),
-      __typename: 'StoreDraft',
     }),
   }),
 };

@@ -8,9 +8,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TCustomObjectDraft = CustomObjectDraft;
 export type TCustomObjectDraftBuilder = TBuilder<TCustomObjectDraft>;
 export type TCreateCustomObjectDraftBuilder = () => TCustomObjectDraftBuilder;
-export type TCustomObjectDraftGraphql = TCustomObjectDraft & {
-  __typename: 'CustomObjectDraft';
-};
+export type TCustomObjectDraftGraphql = TCustomObjectDraft;
 
 //CustomObject
 export type TCustomObject = CustomObject;

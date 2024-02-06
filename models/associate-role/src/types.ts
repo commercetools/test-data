@@ -8,9 +8,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TAssociateRoleDraft = AssociateRoleDraft;
 export type TAssociateRoleDraftBuilder = TBuilder<TAssociateRoleDraft>;
 export type TCreateAssociateRoleDraftBuilder = () => TAssociateRoleDraftBuilder;
-export type TAssociateRoleDraftGraphql = TAssociateRoleDraft & {
-  __typename: 'AssociateRoleDraft';
-};
+export type TAssociateRoleDraftGraphql = TAssociateRoleDraft;
 
 //AssociateRole
 export type TAssociateRole = AssociateRole;

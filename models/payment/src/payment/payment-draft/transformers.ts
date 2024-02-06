@@ -35,7 +35,6 @@ const transformers = {
       'transactions',
       'custom',
     ],
-    addFields: () => ({ __typename: 'PaymentDraft' }),
   }),
 };
 

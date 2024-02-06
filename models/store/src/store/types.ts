@@ -8,7 +8,6 @@ export type TStoreDraftBuilder = TBuilder<TStoreDraft>;
 export type TCreateStoreDraftBuilder = () => TStoreDraftBuilder;
 export type TStoreDraftGraphql = Omit<TStoreDraft, 'name'> & {
   name: TLocalizedStringGraphql | null;
-  __typename: 'StoreDraft';
 };
 //Store
 export type TStore = Store;

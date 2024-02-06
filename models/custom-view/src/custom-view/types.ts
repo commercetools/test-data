@@ -47,9 +47,7 @@ export type TCustomViewDraft = Omit<
   TCustomView,
   'id' | 'createdAt' | 'updatedAt' | 'ownerId' | 'status'
 >;
-export type TCustomViewDraftGraphql = TCustomViewDraft & {
-  __typename: 'CustomViewDraftDataInput';
-};
+export type TCustomViewDraftGraphql = TCustomViewDraft;
 
 export type TCustomViewBuilder = TBuilder<TCustomView>;
 export type TCreateCustomViewBuilder = () => TCustomViewBuilder;
