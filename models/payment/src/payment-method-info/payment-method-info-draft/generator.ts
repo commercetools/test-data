@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TPaymentMethodInfoDraft } from '../types';
 
@@ -16,7 +16,7 @@ const generator = Generator<TPaymentMethodInfoDraft>({
   fields: {
     paymentInterface: fake((f) => f.lorem.slug(2)),
     method: fake((f) => f.lorem.slug(1)),
-    name: fake((f) => LocalizedString.random()),
+    name: fake((f) => LocalizedStringDraft.random()),
   },
 });
 

@@ -54,17 +54,14 @@ describe(`with serveware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Kitchen Collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Alles zum Servieren",
           },
@@ -76,17 +73,14 @@ describe(`with serveware preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "kitchen-collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "kitchen-collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "serveware",
           },

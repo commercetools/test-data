@@ -235,7 +235,6 @@ describe(`with sportCoat preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Sport Coat",
           },
@@ -249,7 +248,6 @@ describe(`with sportCoat preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-sport-coat",
           },

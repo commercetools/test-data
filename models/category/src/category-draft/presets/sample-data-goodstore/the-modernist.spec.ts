@@ -54,17 +54,14 @@ describe(`with theModernist preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Modernist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Modernist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "The Modernist",
           },
@@ -76,17 +73,14 @@ describe(`with theModernist preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "the-modernist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "the-modernist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "the-modernist",
           },

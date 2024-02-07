@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/category';
 import {
   KeyReferenceDraft,
-  LocalizedString,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -47,14 +47,14 @@ const ravenBowl = (): TProductDraftBuilder =>
     .empty()
     .key('raven-bowl')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Raven Bowl')
         ['en-GB']('Raven Bowl')
         ['de-DE']('Suppenschüssel >Raven<')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           'This bowl is a dish designed to serve soup and other liquid-based foods. It is a square-shaped bowl with four straight sides and a flat bottom, creating a modern and contemporary look for dining.  Overall, a square soup bowl is a functional and stylish choice for serving soup and other liquid-based foods. Its unique shape and contemporary design make it a popular choice for those who appreciate modern aesthetics and practicality.'
@@ -67,7 +67,7 @@ const ravenBowl = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('raven-bowl')
         ['en-GB']('raven-bowl')

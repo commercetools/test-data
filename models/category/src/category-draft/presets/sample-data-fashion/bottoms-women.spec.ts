@@ -52,7 +52,6 @@ describe(`with bottomsWomen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bottoms",
           },
@@ -64,7 +63,6 @@ describe(`with bottomsWomen preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bottoms_women",
           },

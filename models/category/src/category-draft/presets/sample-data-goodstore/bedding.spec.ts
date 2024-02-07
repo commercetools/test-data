@@ -54,17 +54,14 @@ describe(`with bedding preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bedding",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bedding",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Bettwäsche",
           },
@@ -76,17 +73,14 @@ describe(`with bedding preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bedding",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bedding",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bettwsche",
           },

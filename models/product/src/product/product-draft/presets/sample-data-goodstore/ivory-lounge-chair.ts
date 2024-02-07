@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/category';
 import {
   KeyReferenceDraft,
-  LocalizedString,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -48,14 +48,14 @@ const ivoryLoungeChair = (): TProductDraftBuilder =>
     .empty()
     .key('ivory-lounge-chair')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Ivory Lounge Chair')
         ['en-GB']('Ivory Lounge Chair')
         ['de-DE']('Elfenbein Lounge Stuhl')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           "This arm chair is a bold and funky piece of furniture that takes its inspiration from the eclectic styles of the 1970s. The chair features a round, circular shape, with a low backrest and generously padded seat that provide comfortable seating for extended periods of time.  The arms of the chair are wide and round, creating a comfortable and supportive space for you to rest your arms while lounging.   Overall, a 70's inspired round arm chair is a playful and fun piece of furniture that can add a touch of retro flair to any room. Its round shape and generous padding, make it a comfortable and inviting spot for lounging and relaxation."
@@ -68,7 +68,7 @@ const ivoryLoungeChair = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('ivory-lounge-chair')
         ['en-GB']('ivory-lounge-chair')

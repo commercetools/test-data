@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
@@ -11,14 +11,14 @@ const kitchenDraft = kitchen().build<TCategoryDraft>();
 const serveware = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Collections') // matches MC
         ['en-US']('Kitchen Collections')
         ['de-DE']('Alles zum Servieren')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('kitchen-collections')
         ['en-US']('kitchen-collections')

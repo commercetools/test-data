@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/category';
 import {
   KeyReferenceDraft,
-  LocalizedString,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -52,14 +52,14 @@ const walnutCounterStool = (): TProductDraftBuilder =>
     .empty()
     .key('walnut-counter-stool')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Walnut Counter Stool')
         ['en-GB']('Walnut Counter Stool')
         ['de-DE']('Barhocker aus Nussbaumholz')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US'](
           'The walnut stool is made from walnut wood, which is known for its durability and strength. The stool is a simple design, with a flat top surface and four straight legs. The legs are slightly tapered for added visual interest. The walnut wood may be left in its natural state or finished with a stain or varnish to bring out the natural beauty of the wood grain. The stool has a square top. Overall, a walnut stool is a versatile and functional piece of furniture that can be used in a variety of settings.'
@@ -72,7 +72,7 @@ const walnutCounterStool = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('walnut-counter-stool')
         ['en-GB']('walnut-counter-stool')

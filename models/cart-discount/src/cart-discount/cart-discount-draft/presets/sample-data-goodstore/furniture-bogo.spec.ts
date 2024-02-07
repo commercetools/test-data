@@ -59,12 +59,10 @@ describe('with the preset `furnitureBogo`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Two for one on all furniture items (discount on the cheapest item)",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Two for one on all furniture items (discount on the cheapest item)",
           },
@@ -73,12 +71,10 @@ describe('with the preset `furnitureBogo`', () => {
         "key": "FurnitureBOGO",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Buy One Item of Furniture and Receive the Second for Free",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Buy One Item of Furniture and Receive the Second for Free",
           },

@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
@@ -11,14 +11,14 @@ const furnitureDraft = furniture().build<TCategoryDraft>();
 const bedroomFurniture = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Bedroom Furniture')
         ['en-US']('Bedroom Furniture')
         ['de-DE']('Schlafzimmer')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('bedroom-furniture')
         ['en-US']('bedroom-furniture')

@@ -203,17 +203,14 @@ describe(`with harvestPlate preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This seashell-shaped serving plate is ideal for serving seafood, such as shrimp, oysters, or sushi rolls, but can also be used for other types of cuisine. It is a popular choice for beach-themed parties, coastal restaurants, or for those who enjoy decorating their home with nautical accents.  Overall, a seashell shaped serving plate is a unique and stylish choice for serving food. Its natural appearance and beach-inspired design make it a fun and whimsical addition to any dining occasion.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This seashell-shaped serving plate is ideal for serving seafood, such as shrimp, oysters, or sushi rolls, but can also be used for other types of cuisine. It is a popular choice for beach-themed parties, coastal restaurants, or for those who enjoy decorating their home with nautical accents.  Overall, a seashell shaped serving plate is a unique and stylish choice for serving food. Its natural appearance and beach-inspired design make it a fun and whimsical addition to any dining occasion.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Diese muschelförmige Servierplatte ist ideal zum Servieren von Meeresfrüchten wie Garnelen, Austern oder Sushi-Rollen, kann aber auch für andere Gerichte verwendet werden. Es ist eine beliebte Wahl für Strandpartys, Küstenrestaurants oder für diejenigen, die ihr Zuhause gerne mit nautischen Akzenten dekorieren. Insgesamt ist ein muschelförmiger Servierteller eine einzigartige und stilvolle Wahl zum Servieren von Speisen. Sein natürliches Aussehen und das vom Strand inspirierte Design machen es zu einer lustigen und skurrilen Ergänzung für jeden Essensanlass.",
           },
@@ -310,17 +307,14 @@ describe(`with harvestPlate preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Harvest Plate",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Harvest Plate",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ernteplatte",
           },
@@ -334,17 +328,14 @@ describe(`with harvestPlate preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "harvest-plate",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "harvest-plate",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "ernteplatte",
           },

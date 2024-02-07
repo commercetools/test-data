@@ -254,7 +254,6 @@ describe(`with skinnyJeans preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Skinny Jeans",
           },
@@ -268,7 +267,6 @@ describe(`with skinnyJeans preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-skinny-jeans",
           },

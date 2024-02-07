@@ -51,17 +51,14 @@ describe(`with kitchen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Kitchen",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Kitchen",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Küche",
           },
@@ -70,17 +67,14 @@ describe(`with kitchen preset`, () => {
         "parent": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "kitchen",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "kitchen",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "kitchen",
           },

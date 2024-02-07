@@ -1,4 +1,7 @@
-import { LocalizedString, Address } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  Address,
+} from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { roles } from '../constants';
 import { TChannelDraft } from '../types';
@@ -8,8 +11,8 @@ const generator = Generator<TChannelDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     roles: [roles.Primary],
-    name: fake(() => LocalizedString.random()),
-    description: fake(() => LocalizedString.random()),
+    name: fake(() => LocalizedStringDraft.random()),
+    description: fake(() => LocalizedStringDraft.random()),
     address: fake(() => Address.random()),
     custom: null,
     geoLocation: {

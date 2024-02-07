@@ -300,7 +300,6 @@ describe(`with sampleSandals preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Sandals",
           },
@@ -314,7 +313,6 @@ describe(`with sampleSandals preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-sandals",
           },

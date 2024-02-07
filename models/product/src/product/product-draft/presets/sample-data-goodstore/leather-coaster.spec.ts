@@ -187,17 +187,14 @@ describe(`with leatherCoaster preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A round leather coaster is designed to be placed underneath a drink to protect the surface beneath from moisture and heat. It measures around 4 inches in diameter and is made of high-quality leather material. The edges of the coaster is finished with brass. The underside of the coaster features a non-slip material to prevent it from sliding on smooth surfaces.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein runder Lederuntersetzer ist so konzipiert, dass er unter einem Getränk platziert werden kann, um die darunter liegende Oberfläche vor Feuchtigkeit und Hitze zu schützen. Es misst etwa 4 Zoll im Durchmesser und besteht aus hochwertigem Ledermaterial. Die Kanten des Untersetzers sind mit Messing veredelt. Die Unterseite des Untersetzers ist mit einem rutschfesten Material versehen, um ein Verrutschen auf glatten Oberflächen zu verhindern.",
           },
@@ -294,17 +291,14 @@ describe(`with leatherCoaster preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Leather Coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Leather Coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Leder Untersetzer",
           },
@@ -318,17 +312,14 @@ describe(`with leatherCoaster preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "leather-coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "leather-coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "untersetzer-aus-leder",
           },

@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { Generator, fake, oneOf } from '@commercetools-test-data/core';
 import type { TStoreDraft } from '../types';
 
@@ -7,7 +7,7 @@ import type { TStoreDraft } from '../types';
 const generator = Generator<TStoreDraft>({
   fields: {
     key: fake((f) => f.lorem.slug()),
-    name: fake(() => LocalizedString.random()),
+    name: fake(() => LocalizedStringDraft.random()),
     languages: [oneOf('en-US', 'de-DE', 'es-ES', 'en-GB')],
     countries: [fake((f) => f.location.countryCode())],
     distributionChannels: null,

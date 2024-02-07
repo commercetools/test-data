@@ -195,17 +195,14 @@ describe(`with walnutCabinet preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieser Nussbaumschrank besticht durch seine Vielzahl an Schubladen, die in Reihen angeordnet sind, mit mehreren Schubladen pro Reihe. Die Schubladen sind groß und tief und bieten viel Stauraum. Die Schubladen sind mit einfachen Griffen zu haben.  Die Oberseite des Sideboards ist flach und glatt und kann zur Präsentation von Dekorationsartikeln wie Vasen oder Kerzen verwendet werden.  Das geräumige Sideboard mit vielen Schubladen ist ein funktionales und praktisches Möbelstück, das jedem Raum Stil und Stauraum verleiht.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This Walnut Cabinet has many drawers, which are arranged in rows, with several drawers per row. The drawers are large and deep, allowing for ample storage space. The drawers may have simple handles.  The top of the sideboard is flat and smooth, and can be used to display decorative items such as vases or candles.   Overall, a large sideboard with many drawers is a functional and practical piece of furniture that can add style and storage to any room.",
           },
@@ -310,17 +307,14 @@ describe(`with walnutCabinet preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Walnut Cabinet",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Walnut Cabinet",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sideboard aus Nussbaumholz",
           },
@@ -334,17 +328,14 @@ describe(`with walnutCabinet preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "walnut-cabinet",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "walnut-cabinet",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "nussbaum-schrank",
           },

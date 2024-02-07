@@ -54,17 +54,14 @@ describe(`with barAndGlassware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bar and Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bar and Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Gläser und Barzubehör",
           },
@@ -76,17 +73,14 @@ describe(`with barAndGlassware preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bar-and-glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bar-and-glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bar-and-glassware",
           },

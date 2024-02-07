@@ -41,7 +41,6 @@ describe('hub channel', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Hub",
           },
@@ -50,7 +49,6 @@ describe('hub channel', () => {
         "key": "hub",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Hub",
           },

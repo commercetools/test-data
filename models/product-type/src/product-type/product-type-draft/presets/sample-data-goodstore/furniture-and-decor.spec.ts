@@ -389,12 +389,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "inputHint": "MultiLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.",
               },
@@ -403,17 +401,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Product Specifications",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Product Specifications",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Produktspezifikationen",
               },
@@ -433,17 +428,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Color",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Farbe",
               },
@@ -463,17 +455,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Finish",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Finish",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Fertig",
               },
@@ -493,17 +482,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Color Label",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color Label",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Farbetikett",
               },
@@ -523,17 +509,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Finish Label",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Finish Label",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Fertiges Etikett",
               },
@@ -553,17 +536,14 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "New Arrival",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "New Arrival",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Neuankömmling",
               },
@@ -580,12 +560,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "size set as a string value",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "size set as a string value",
               },
@@ -594,12 +572,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Size",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Size",
               },
@@ -616,12 +592,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Product description, made a custom attribute so product description is not used for search results.",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Product description, made a custom attribute so product description is not used for search results.",
               },
@@ -630,12 +604,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Product Description",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Product Description",
               },
@@ -652,12 +624,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "used to set the colors and labels displayed in the color filter on PLP",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "used to set the colors and labels displayed in the color filter on PLP",
               },
@@ -666,12 +636,10 @@ describe(`with furnitureAndDecor preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Color Filter",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color Filter",
               },
@@ -684,17 +652,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#FFF",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Weiss",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "White",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "White",
                       },
@@ -704,17 +669,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#000",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Schwarz",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Black",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Black",
                       },
@@ -724,17 +686,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#808080",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Grau",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Gray",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Gray",
                       },
@@ -744,17 +703,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#0000FF",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Blau",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Blue",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Blue",
                       },
@@ -764,17 +720,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#00FF00",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Grün",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Green",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Green",
                       },
@@ -784,17 +737,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#A020F0",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Lila",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Purple",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Purple",
                       },
@@ -804,17 +754,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#C4A484",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Hellbraun",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Light Brown",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Light Brown",
                       },
@@ -824,17 +771,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#F5F5DC",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Beige",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Beige",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Beige",
                       },
@@ -844,17 +788,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#D2B48C",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Bräunen",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Tan",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Tan",
                       },
@@ -864,17 +805,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#FFFFF0",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Elfenbein",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Ivory",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Ivory",
                       },
@@ -884,17 +822,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#FFD700",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Gold",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Gold",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Gold",
                       },
@@ -904,17 +839,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#964B00",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Dunkelbraun",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Dark Brown",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Dark Brown",
                       },
@@ -924,17 +856,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#C0C0C0",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Silber",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Silver",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Silver",
                       },
@@ -944,17 +873,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#FFC0CB",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Rosa",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Pink",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Pink",
                       },
@@ -964,17 +890,14 @@ describe(`with furnitureAndDecor preset`, () => {
                     "key": "#FFA500",
                     "label": [
                       {
-                        "__typename": "LocalizedString",
                         "locale": "de-DE",
                         "value": "Orange",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-GB",
                         "value": "Orange",
                       },
                       {
-                        "__typename": "LocalizedString",
                         "locale": "en-US",
                         "value": "Orange",
                       },

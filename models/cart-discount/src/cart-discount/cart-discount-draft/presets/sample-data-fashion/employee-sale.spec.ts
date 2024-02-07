@@ -53,7 +53,6 @@ describe('with the preset `employeeSale`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "employee_sale",
           },
@@ -62,7 +61,6 @@ describe('with the preset `employeeSale`', () => {
         "key": "EmployeeSale",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Employee Sale",
           },

@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as ProductDiscountValueAbsolute from '../../product-discount-value-absolute';
@@ -14,8 +14,8 @@ const [getValidFrom, _, getValidUntil] = createRelatedDates();
 const generator = Generator<TProductDiscountDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    name: fake(() => LocalizedString.random()),
-    description: fake(() => LocalizedString.random()),
+    name: fake(() => LocalizedStringDraft.random()),
+    description: fake(() => LocalizedStringDraft.random()),
     value: fake((f) =>
       f.helpers.arrayElement([
         ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random(),

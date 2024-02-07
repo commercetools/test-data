@@ -206,17 +206,14 @@ describe(`with orionDoubleBed preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein Queensize-Bett mit getuftetem Kopfteil und Podest und Stahlfüßen ist ein modernes und stilvolles Möbelstück. Das Kopfteil ist hoch und breit und verfügt über ein getuftetes Design. Der für das Kopfteil verwendete Stoff ist weich und luxuriös und bietet einen bequemen Platz zum Anlehnen, wenn man sich im Bett aufrichtet. Das Bett steht auf einem Podest, das von schlanken und stabilen Stahlbeinen getragen wird. Das Podest bietet eine solide und stabile Grundlage für die Matratze und verleiht dem Bett gleichzeitig einen klaren und minimalistischen Look. Insgesamt ist dieses Bett ein schönes und funktionales Möbelstück, das sich perfekt für ein modernes Schlafzimmer mit minimalistischer oder industrieller Ästhetik eignet.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A queen bed with a tufted headboard and platform and steel legs is a modern and stylish piece of furniture. The headboard is tall and wide, featuring a tufted design. The fabric used for the headboard is soft and luxurious, providing a comfortable place to lean against when sitting up in bed.  The bed is raised off the ground on a platform, which is supported by sleek and sturdy steel legs. The platform provides a solid and stable foundation for the mattress, while also giving the bed a clean and minimalist look.   Overall, this queen bed is a beautiful and functional piece that would be perfect for a modern bedroom with a minimalist or industrial aesthetic.",
           },
@@ -321,17 +318,14 @@ describe(`with orionDoubleBed preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Orion Double Bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Orion Doppelbett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Orion Double Bed",
           },
@@ -345,17 +339,14 @@ describe(`with orionDoubleBed preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "orion-double-bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "orion-doppelbett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "orion-double-bed",
           },

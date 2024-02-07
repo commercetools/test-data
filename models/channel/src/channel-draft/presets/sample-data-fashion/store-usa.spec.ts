@@ -39,7 +39,6 @@ describe('store-usa channel', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "USA Store",
           },
@@ -48,7 +47,6 @@ describe('store-usa channel', () => {
         "key": "store_usa",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "USA Store",
           },

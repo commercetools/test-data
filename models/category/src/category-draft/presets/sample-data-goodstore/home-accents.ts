@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
@@ -11,14 +11,14 @@ const roomDecorDraft = roomDecor().build<TCategoryDraft>();
 const homeAccents = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Home Accents')
         ['en-US']('Home Accents') // en-US not present in MC, assuming translation will match en-GB
         ['de-DE']('Accessoires') // typo exists in MC
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('home-accents')
         ['en-US']('home-accents')

@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   KeyReferenceDraft,
   Money,
 } from '@commercetools-test-data/commons';
@@ -35,7 +35,7 @@ const paymentAUS1 = (): TPaymentDraftBuilder =>
       PaymentMethodInfoDraft.presets
         .empty()
         .method('Debit Card')
-        .name(LocalizedString.presets.empty()['en']('Debit Card'))
+        .name(LocalizedStringDraft.presets.empty()['en']('Debit Card'))
     )
     .paymentStatus(PaymentStatusDraft.presets.empty().interfaceText('Pending'))
     .transactions([

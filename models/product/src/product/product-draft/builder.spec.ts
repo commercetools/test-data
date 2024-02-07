@@ -180,17 +180,20 @@ describe('builder', () => {
       expect.objectContaining({
         name: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
+            locale: expect.any(String),
+            value: expect.any(String),
           }),
         ]),
         slug: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
+            locale: expect.any(String),
+            value: expect.any(String),
           }),
         ]),
         description: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
+            locale: expect.any(String),
+            value: expect.any(String),
           }),
         ]),
         categories: expect.arrayContaining([

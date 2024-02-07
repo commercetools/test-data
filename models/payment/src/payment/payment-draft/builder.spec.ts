@@ -130,7 +130,6 @@ describe('builder', () => {
           paymentInterface: expect.any(String),
           name: expect.arrayContaining([
             expect.objectContaining({
-              __typename: 'LocalizedString',
               locale: expect.any(String),
               value: expect.any(String),
             }),

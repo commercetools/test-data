@@ -66,17 +66,14 @@ describe('Shipping Method with express preset', () => {
         "localizedDescription": undefined,
         "localizedName": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Express Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Express Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Express Delivery",
           },

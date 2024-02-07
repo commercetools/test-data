@@ -52,7 +52,6 @@ describe(`with otherWomen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Other",
           },
@@ -64,7 +63,6 @@ describe(`with otherWomen preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "other_women",
           },

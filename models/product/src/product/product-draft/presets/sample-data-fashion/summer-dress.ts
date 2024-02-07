@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/category';
 import {
   KeyReferenceDraft,
-  LocalizedString,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -33,8 +33,8 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
 const summerDress = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-US']('Sample Summer Dress'))
-    .slug(LocalizedString.presets.empty()['en-US']('sample-summer-dress'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Summer Dress'))
+    .slug(LocalizedStringDraft.presets.empty()['en-US']('sample-summer-dress'))
     .productType(
       KeyReferenceDraft.presets.productType().key(dressesProductTypeDraft.key!)
     )

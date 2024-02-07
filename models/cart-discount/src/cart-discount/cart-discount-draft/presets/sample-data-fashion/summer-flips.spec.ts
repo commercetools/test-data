@@ -56,7 +56,6 @@ describe('with the preset `summerFlips`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Purchase the Summer Dress and get a free pair of flip flops",
           },
@@ -65,7 +64,6 @@ describe('with the preset `summerFlips`', () => {
         "key": "GWPSummerFlips",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Summer special - get a free pair of flip flops with the Summer Dress",
           },

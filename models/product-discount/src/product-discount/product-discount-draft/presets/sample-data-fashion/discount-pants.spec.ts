@@ -44,7 +44,6 @@ describe('with the preset `discountPants`', () => {
       {
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "10% Off All Pants",
           },
@@ -53,7 +52,6 @@ describe('with the preset `discountPants`', () => {
         "key": "10pctOffAllPants",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "10% Off All Pants",
           },

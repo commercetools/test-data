@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker';
 import type { TLocalizedStringBuilder } from '../../types';
-import LocalizedString from '../builder';
+import LocalizedStringDraft from '../builder';
 
 const ofSlugs = (): TLocalizedStringBuilder =>
-  LocalizedString()
+  LocalizedStringDraft()
     .en(faker.lorem.slug())
     .de(faker.lorem.slug())
     .fr(faker.lorem.slug());

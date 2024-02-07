@@ -6,6 +6,7 @@ import {
 } from '@commercetools/platform-sdk';
 import {
   TClientLoggingGraphql,
+  TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -24,8 +25,8 @@ export type TCartDiscountDraftGraphql = Omit<
   TCartDiscountDraft,
   'name' | 'description' | 'value' | 'target'
 > & {
-  name: TLocalizedStringGraphql;
-  description?: TLocalizedStringGraphql | null;
+  name: TLocalizedStringDraftGraphql;
+  description?: TLocalizedStringDraftGraphql | null;
   value: {
     [key: string]: Omit<CartDiscountValueDraft, 'type'>;
   };

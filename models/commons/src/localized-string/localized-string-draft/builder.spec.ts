@@ -5,13 +5,13 @@ import type {
   TLocalizedStringDraft,
   TLocalizedStringDraftGraphql,
 } from '../types';
-import * as LocalizedString from './index';
+import * as LocalizedStringDraft from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TLocalizedStringDraft, TLocalizedStringDraft>(
       'default',
-      LocalizedString.random(),
+      LocalizedStringDraft.random(),
       expect.objectContaining({
         de: expect.any(String),
         en: expect.any(String),
@@ -22,7 +22,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TLocalizedStringDraft, TLocalizedStringDraft>(
       'rest',
-      LocalizedString.random(),
+      LocalizedStringDraft.random(),
       expect.objectContaining({
         de: expect.any(String),
         en: expect.any(String),
@@ -33,29 +33,26 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TLocalizedStringDraft, TLocalizedStringDraftGraphql>(
       'graphql',
-      LocalizedString.random(),
+      LocalizedStringDraft.random(),
       expect.arrayContaining([
-        expect.not.objectContaining({
-          __typename: 'LocalizedString',
-          // locale: 'de',
-          // value: expect.any(String),
+        expect.objectContaining({
+          locale: 'de',
+          value: expect.any(String),
         }),
         expect.not.objectContaining({
-          __typename: 'LocalizedString',
-          // locale: 'en',
-          // value: expect.any(String),
+          locale: 'en',
+          value: expect.any(String),
         }),
         expect.not.objectContaining({
-          __typename: 'LocalizedString',
-          // locale: 'fr',
-          // value: expect.any(String),
+          locale: 'fr',
+          value: expect.any(String),
         }),
       ])
     )
   );
 
   it('should drop undefined locales', () => {
-    const built = LocalizedString.random()
+    const built = LocalizedStringDraft.random()
       .en(undefined)
       .buildGraphql<TLocalizedStringDraftGraphql>();
 
@@ -70,7 +67,7 @@ describe('builder', () => {
 
   it('should remove all language keys', () => {
     const built =
-      LocalizedString.random().buildGraphql<TLocalizedStringDraftGraphql>();
+      LocalizedStringDraft.random().buildGraphql<TLocalizedStringDraftGraphql>();
     // @ts-expect-error
     expect(built.de).not.toBeDefined();
     // @ts-expect-error

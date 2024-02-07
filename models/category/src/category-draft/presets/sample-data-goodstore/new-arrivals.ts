@@ -1,18 +1,18 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const newArrivals = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('New Arrivals')
         ['en-US']('New Arrivals')
         ['de-DE']('Neuheiten')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('new-arrivals')
         ['en-US']('new-arrivals')

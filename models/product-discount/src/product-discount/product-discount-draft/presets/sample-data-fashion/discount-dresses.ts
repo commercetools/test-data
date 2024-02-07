@@ -1,4 +1,4 @@
-import { LocalizedString, Money } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft, Money } from '@commercetools-test-data/commons';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
@@ -13,9 +13,11 @@ const discountDresses = (): TProductDiscountDraftBuilder =>
     )
     // TODO: integrate product type keys
     .predicate('productType.key = "dresses"')
-    .name(LocalizedString.presets.empty()['en-US']('5 EUR Off All Dresses'))
+    .name(
+      LocalizedStringDraft.presets.empty()['en-US']('5 EUR Off All Dresses')
+    )
     .description(
-      LocalizedString.presets.empty()['en-US']('5 EUR Off All Dresses')
+      LocalizedStringDraft.presets.empty()['en-US']('5 EUR Off All Dresses')
     )
     .isActive(true)
     .sortOrder('0.7')

@@ -51,7 +51,6 @@ describe(`with bottomsKids preset`, () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bottoms",
           },
@@ -63,7 +62,6 @@ describe(`with bottomsKids preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bottoms",
           },
@@ -75,7 +73,6 @@ describe(`with bottomsKids preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bottoms_kids",
           },

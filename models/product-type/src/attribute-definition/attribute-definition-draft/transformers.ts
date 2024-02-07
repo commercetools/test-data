@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinitionDraft,
@@ -21,7 +21,7 @@ const transformers = {
     buildFields: ['label', 'inputTip', 'type'],
     addFields: ({ fields }) => {
       return {
-        label: LocalizedString.toLocalizedField(fields.label)!,
+        label: LocalizedStringDraft.toLocalizedField(fields.label)!,
       };
     },
   }),

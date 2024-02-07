@@ -39,7 +39,6 @@ describe('store-other channel', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Store Other",
           },
@@ -48,7 +47,6 @@ describe('store-other channel', () => {
         "key": "store_other",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Store Other",
           },

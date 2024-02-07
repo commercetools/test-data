@@ -1,4 +1,4 @@
-import { LocalizedString, Money } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft, Money } from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
@@ -28,12 +28,12 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
     )
     .target(CartDiscountLineItemsTargetDraft.random().predicate('1=1'))
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Luxe customers! Spend 500EUR and Save 30EUR')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Luxe customers - Get 30 EUR back when you spend 500EUR')
     )

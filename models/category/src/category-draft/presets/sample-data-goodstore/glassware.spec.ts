@@ -54,17 +54,14 @@ describe(`with glassware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Gläser",
           },
@@ -76,17 +73,14 @@ describe(`with glassware preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "glassware",
           },

@@ -235,7 +235,6 @@ describe(`with toteBag preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Tote Bag",
           },
@@ -249,7 +248,6 @@ describe(`with toteBag preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-tote-bag",
           },

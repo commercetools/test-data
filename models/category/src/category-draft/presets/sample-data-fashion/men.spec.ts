@@ -47,7 +47,6 @@ describe(`with men preset`, () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Items for men",
           },
@@ -59,7 +58,6 @@ describe(`with men preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Men",
           },
@@ -68,7 +66,6 @@ describe(`with men preset`, () => {
         "parent": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "men",
           },

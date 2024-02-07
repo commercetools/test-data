@@ -51,17 +51,14 @@ describe(`with furniture preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Möbel",
           },
@@ -70,17 +67,14 @@ describe(`with furniture preset`, () => {
         "parent": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "furniture",
           },

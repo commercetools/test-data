@@ -225,17 +225,14 @@ describe(`with modernGlamDresser preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A modern glam dresser is a stylish and elegant piece of furniture that combines modern design with glamorous accents. It features clean lines, sleek surfaces, and metallic finishes, creating a chic and sophisticated look that adds a touch of luxury to any bedroom.  The dresser is made of high-quality materials. The drawers are spacious and easy to open and close, providing ample storage space for clothing, accessories, and other items.  The dresser also features glamorous metal accents handles, adding a touch of elegance and sophistication to the piece. The overall design of the dresser is sleek and minimalist, with an emphasis on clean lines and simple shapes.  A modern glam dresser can be a beautiful addition to any bedroom, adding a touch of luxury and sophistication to the space. Its clean lines, metallic finishes, and glamorous accents create a modern and elegant look that can complement a variety of decor styles.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Eine moderne glamouröse Kommode ist ein stilvolles und elegantes Möbelstück, das modernes Design mit glamourösen Akzenten verbindet. Sie zeichnet sich durch klare Linien, glatte Oberflächen und Metallic-Finish aus, wodurch ein schickes und anspruchsvolles Aussehen entsteht, das jedem Schlafzimmer einen Hauch von Luxus verleiht. Die Kommode ist aus hochwertigen Materialien gefertigt. Die Schubladen sind geräumig und lassen sich leicht öffnen und schließen und bieten reichlich Stauraum für Kleidung, Accessoires und andere Gegenstände. Die Kommode verfügt außerdem über glamouröse Metallgriffe, die dem Möbelstück einen Hauch von Eleganz und Raffinesse verleihen. Das Gesamtdesign der Kommode ist schlank und minimalistisch, mit einem Schwerpunkt auf klaren Linien und einfachen Formen. Eine moderne, glamouröse Kommode ist eine schöne Ergänzung für jedes Schlafzimmer und verleiht dem Raum einen Hauch von Luxus und Raffinesse. Die klaren Linien, die metallischen Oberflächen und die glamourösen Akzente sorgen für einen modernen und eleganten Look, der eine Vielzahl von Einrichtungsstilen ergänzen kann.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A modern glam dresser is a stylish and elegant piece of furniture that combines modern design with glamorous accents. It features clean lines, sleek surfaces, and metallic finishes, creating a chic and sophisticated look that adds a touch of luxury to any bedroom.  The dresser is made of high-quality materials. The drawers are spacious and easy to open and close, providing ample storage space for clothing, accessories, and other items.  The dresser also features glamorous metal accents handles, adding a touch of elegance and sophistication to the piece. The overall design of the dresser is sleek and minimalist, with an emphasis on clean lines and simple shapes.  A modern glam dresser can be a beautiful addition to any bedroom, adding a touch of luxury and sophistication to the space. Its clean lines, metallic finishes, and glamorous accents create a modern and elegant look that can complement a variety of decor styles.",
           },
@@ -348,17 +345,14 @@ describe(`with modernGlamDresser preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Modern Glam Dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Moderne glamouröse Kommode",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Modern Glam Dresser",
           },
@@ -372,17 +366,14 @@ describe(`with modernGlamDresser preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "modern-glam-dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "moderne-glamourse-kommode",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "modern-glam-dresser",
           },

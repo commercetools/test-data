@@ -103,7 +103,6 @@ describe(`with dresses preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },
@@ -112,7 +111,6 @@ describe(`with dresses preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },
@@ -142,7 +140,6 @@ describe(`with dresses preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
@@ -151,7 +148,6 @@ describe(`with dresses preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },

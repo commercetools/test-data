@@ -211,17 +211,14 @@ describe(`with wilmaChair preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Der getuftete armlehnenlose Futon-Stuhl hat ein einfaches und modernes Design mit gepolstertem Sitz und Rückenlehne. Das Design des Sessels verzichtet auf Armlehnen, um mehr Flexibilität beim Sitzerlebnis zu schaffen. Die Polsterung besteht aus strapazierfähigem Stoff, der leicht zu reinigen und zu pflegen ist. Der getuftete Futonstuhl ohne Armlehnen ist ein praktisches und stilvolles Möbelstück, das in einer Vielzahl von Umgebungen verwendet werden kann, z. B. im Wohn-, Schlaf- oder Arbeitsbereich.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A tufted armless futon chair has a simple and modern design, featuring a cushioned seat and backrest with tufted details for added comfort and style. The chair lacks arms to allow for more flexibility and ease of use. The upholstery is made of durable fabric that is easy to clean and maintain. Overall, a tufted armless futon chair is a practical and stylish furniture piece that can be used in a variety of settings, such as a living room, bedroom, or home office.",
           },
@@ -334,17 +331,14 @@ describe(`with wilmaChair preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Wilma Chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Wilma Chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sessel >Wilma<",
           },
@@ -358,17 +352,14 @@ describe(`with wilmaChair preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "wilma-chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "wilma-chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "wilma-stuhl",
           },

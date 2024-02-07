@@ -53,17 +53,14 @@ describe(`with plates preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Plates",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Plates",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Platten",
           },
@@ -75,17 +72,14 @@ describe(`with plates preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "plates",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "plates",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "plates",
           },

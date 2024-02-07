@@ -53,17 +53,14 @@ describe(`with bakeware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Backutensilien",
           },
@@ -75,17 +72,14 @@ describe(`with bakeware preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bakeware",
           },

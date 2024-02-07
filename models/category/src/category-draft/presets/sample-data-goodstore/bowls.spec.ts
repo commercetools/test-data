@@ -53,17 +53,14 @@ describe(`with bowls preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Schalen",
           },
@@ -75,17 +72,14 @@ describe(`with bowls preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bowls",
           },

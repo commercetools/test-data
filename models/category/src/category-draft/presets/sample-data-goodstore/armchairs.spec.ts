@@ -54,17 +54,14 @@ describe(`with armchairs preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Chairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Stühle",
           },
@@ -76,17 +73,14 @@ describe(`with armchairs preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "chairs",
           },

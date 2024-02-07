@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { TProductSelectionDraft } from '../types';
 
@@ -7,7 +7,7 @@ import { TProductSelectionDraft } from '../types';
 const generator = Generator<TProductSelectionDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    name: fake(() => LocalizedString.random()),
+    name: fake(() => LocalizedStringDraft.random()),
     mode: oneOf('Individual', 'IndividualExclusion'),
     custom: null,
   },

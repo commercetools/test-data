@@ -49,17 +49,14 @@ describe('builder', () => {
         mode: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'en',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'fr',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'de',
             value: expect.any(String),
           }),

@@ -50,7 +50,6 @@ describe('with the preset `discountDresses`', () => {
       {
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "5 EUR Off All Dresses",
           },
@@ -59,7 +58,6 @@ describe('with the preset `discountDresses`', () => {
         "key": "Dresses5EUROff",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "5 EUR Off All Dresses",
           },

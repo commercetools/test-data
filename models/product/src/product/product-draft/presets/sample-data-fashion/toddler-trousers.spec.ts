@@ -367,7 +367,6 @@ describe(`with toddlerTrousers preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Toddler Trousers",
           },
@@ -381,7 +380,6 @@ describe(`with toddlerTrousers preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-toddler-trousers",
           },

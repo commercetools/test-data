@@ -1,6 +1,6 @@
 import {
   KeyReferenceDraft,
-  LocalizedString,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   TaxCategoryDraft,
@@ -20,7 +20,7 @@ const standardShippingMethod = (): TShippingMethodDraftBuilder =>
     .key('standard-delivery')
     .name('Standard Delivery')
     .localizedName(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Standard Delivery')
         ['de-DE']('Standard Delivery')

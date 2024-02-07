@@ -256,7 +256,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
 
@@ -265,7 +264,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
       Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "These glass bowls are ideal for serving a variety of foods, including salads, fruits, desserts, and snacks. They are a popular choice for formal dinner parties and special occasions, as well as for everyday use.
 
@@ -274,7 +272,6 @@ describe(`with sunnaiGlassBowl preset`, () => {
       Overall, a glass bowl used for serving food is a beautiful and practical choice for presenting and serving food. Its transparency and simplicity make it a versatile and timeless piece that can be used for a variety of occasions and settings.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Diese Glasschalen eignen sich ideal zum Servieren einer Vielzahl von Speisen, darunter Salate, Obst, Desserts und Snacks. Sie sind eine beliebte Wahl für formelle Dinnerpartys und besondere Anlässe sowie für den täglichen Gebrauch.
 
@@ -364,17 +361,14 @@ describe(`with sunnaiGlassBowl preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sunnai Glass Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Sunnai Glass Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Glasschale >Sunnai<",
           },
@@ -388,17 +382,14 @@ describe(`with sunnaiGlassBowl preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sunnai-glass-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "sunnai-glass-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "sunnai-glaskugel",
           },

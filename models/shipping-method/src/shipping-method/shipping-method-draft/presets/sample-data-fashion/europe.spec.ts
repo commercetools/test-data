@@ -61,7 +61,6 @@ describe('with europeShippingMethod preset', () => {
         "key": "shipping-europe",
         "localizedDescription": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Shipping Method Europe",
           },

@@ -62,7 +62,6 @@ describe('with the preset `employeeSale`', () => {
         "maxApplicationsPerCustomer": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Employee Sale",
           },

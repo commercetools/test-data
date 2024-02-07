@@ -327,7 +327,6 @@ describe(`with denimJacket preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Denim Jacket",
           },
@@ -341,7 +340,6 @@ describe(`with denimJacket preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-denim-jacket",
           },

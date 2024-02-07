@@ -53,17 +53,14 @@ describe(`with bedroomFurniture preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bedroom Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bedroom Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Schlafzimmer",
           },
@@ -75,17 +72,14 @@ describe(`with bedroomFurniture preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bedroom-furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bedroom-furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bedroom-furniture",
           },

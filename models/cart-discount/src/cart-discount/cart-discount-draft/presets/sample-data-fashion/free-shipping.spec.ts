@@ -52,7 +52,6 @@ describe('with the preset `freeShipping`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Free shipping when your order is at least 100 EUR",
           },
@@ -61,7 +60,6 @@ describe('with the preset `freeShipping`', () => {
         "key": "FreeShip100",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Free Shipping when you spend 100EUR",
           },

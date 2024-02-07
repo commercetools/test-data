@@ -58,7 +58,6 @@ describe('with the preset `luxeSpend`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Luxe customers - Get 30 EUR back when you spend 500EUR",
           },
@@ -67,7 +66,6 @@ describe('with the preset `luxeSpend`', () => {
         "key": "LuxeSpend500Save30",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Luxe customers! Spend 500EUR and Save 30EUR",
           },

@@ -54,17 +54,14 @@ describe(`with homeAccents preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Home Accents",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Home Accents",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Accessoires",
           },
@@ -76,17 +73,14 @@ describe(`with homeAccents preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "home-accents",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "home-accents",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "home-akzente",
           },

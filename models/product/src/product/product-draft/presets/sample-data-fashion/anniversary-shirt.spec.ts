@@ -128,7 +128,6 @@ describe(`with anniversaryShirt preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Anniversary Shirt",
           },
@@ -142,7 +141,6 @@ describe(`with anniversaryShirt preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-anniversary-shirt",
           },

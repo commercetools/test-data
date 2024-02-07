@@ -211,17 +211,14 @@ describe(`with modernBookcase preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This Modern bookcase is designed with a simple and sleek look that blends well with modern decor. It has clean lines. The bookcase is made of wood and has a mahogany finish.  The shelves are open and spacious, providing ample space to store and display books, decorative objects, and other items.  In addition to its functional purpose, a minimalist bookcase also serves as a decorative piece of furniture. It is designed to blend seamlessly with its surroundings, without drawing too much attention to itself. As such, it is an excellent choice for those who want a stylish yet unobtrusive storage solution.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieses moderne Bücherregal hat ein einfaches und elegantes Design, das sich gut in die moderne Einrichtung einfügt. Es hat klare Linien. Das Bücherregal ist aus Holz gefertigt und mahagonifarben lackiert. Die offenen und geräumigen Regalböden bieten reichlich Platz zum Aufbewahren und Ausstellen von Büchern, Dekorationsobjekten und anderen Gegenständen. Ein minimalistisches Bücherregal erfüllt nicht nur einen funktionalen Zweck, sondern dient auch als dekoratives Möbelstück. Es ist so konzipiert, dass es sich nahtlos in seine Umgebung einfügt, ohne zu viel Aufmerksamkeit auf sich zu ziehen. Daher ist es eine ausgezeichnete Wahl für alle, die eine stilvolle, aber unauffällige Aufbewahrungslösung suchen.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This Modern bookcase is designed with a simple and sleek look that blends well with modern decor. It has clean lines. The bookcase is made of wood and has a mahogany finish.  The shelves are open and spacious, providing ample space to store and display books, decorative objects, and other items.  In addition to its functional purpose, a minimalist bookcase also serves as a decorative piece of furniture. It is designed to blend seamlessly with its surroundings, without drawing too much attention to itself. As such, it is an excellent choice for those who want a stylish yet unobtrusive storage solution.",
           },
@@ -318,17 +315,14 @@ describe(`with modernBookcase preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Modern Bookcase",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Modernes Bücherregal",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Modern Bookcase",
           },
@@ -342,17 +336,14 @@ describe(`with modernBookcase preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "modern-bookcase",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "modernes-bcherregal",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "modern-bookcase",
           },

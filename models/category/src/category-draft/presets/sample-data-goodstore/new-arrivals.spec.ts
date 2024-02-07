@@ -51,17 +51,14 @@ describe(`with newArrivals preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "New Arrivals",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "New Arrivals",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Neuheiten",
           },
@@ -70,17 +67,14 @@ describe(`with newArrivals preset`, () => {
         "parent": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "new-arrivals",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "new-arrivals",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "ganz-neu",
           },

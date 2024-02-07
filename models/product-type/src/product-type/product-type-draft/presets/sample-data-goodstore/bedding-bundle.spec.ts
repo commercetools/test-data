@@ -93,12 +93,10 @@ describe(`with beddingBundle preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "description of the bundle product",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "description of the bundle product",
               },
@@ -107,12 +105,10 @@ describe(`with beddingBundle preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "product-description",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "product-description",
               },
@@ -132,12 +128,10 @@ describe(`with beddingBundle preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Product Spec",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Product Spec",
               },
@@ -157,17 +151,14 @@ describe(`with beddingBundle preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Products of this bundle",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Products of this bundle",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Produkte dieses Bundles",
               },

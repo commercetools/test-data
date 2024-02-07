@@ -196,17 +196,14 @@ describe(`with modernBlackCoaster preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A round black coaster is a small, flat disc-shaped object, which is placed under a drinking glass or cup to protect the surface of a table or other furniture from water rings or spills. The coaster is circular in shape and has a solid black color, giving it a sleek and minimalist appearance. Its surface is smooth to provide a non-slip grip for the glass or cup. The edges include a stitching ornamentation, adding to the coaster's aesthetic appeal. Overall, a round black coaster is a functional and stylish accessory that is perfect for any home or office setting.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein runder schwarzer Untersetzer ist ein kleines, flaches, scheibenförmiges Objekt, das unter ein Trinkglas oder eine Tasse gestellt wird, um die Oberfläche eines Tisches oder anderer Möbel vor Wasserringen oder Verschüttungen zu schützen. Der Untersetzer hat eine runde Form und ist einfarbig schwarz, was ihm ein schlichtes und minimalistisches Aussehen verleiht. Seine Oberfläche ist glatt, damit das Glas oder die Tasse rutschfest steht. Die Ränder sind mit einer Nahtverzierung versehen, die die Ästhetik des Untersetzers unterstreicht. Insgesamt ist ein runder schwarzer Untersetzer ein funktionelles und stilvolles Accessoire, das sich perfekt für jedes Zuhause oder Büro eignet.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A round black coaster is a small, flat disc-shaped object, which is placed under a drinking glass or cup to protect the surface of a table or other furniture from water rings or spills. The coaster is circular in shape and has a solid black color, giving it a sleek and minimalist appearance. Its surface is smooth to provide a non-slip grip for the glass or cup. The edges include a stitching ornamentation, adding to the coaster's aesthetic appeal. Overall, a round black coaster is a functional and stylish accessory that is perfect for any home or office setting.",
           },
@@ -311,17 +308,14 @@ describe(`with modernBlackCoaster preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Modern Black Coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Moderner schwarzer Untersetzer",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Modern Black Coaster",
           },
@@ -335,17 +329,14 @@ describe(`with modernBlackCoaster preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "modern-black-coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "moderner-schwarzer-untersetzer",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "modern-black-coaster",
           },

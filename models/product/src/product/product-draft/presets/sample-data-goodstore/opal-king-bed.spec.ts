@@ -187,17 +187,14 @@ describe(`with opalKingBed preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A modern king bed with a tufted headboard is a stylish and elegant piece of furniture that can bring a touch of luxury and sophistication to any bedroom. The mattress platform is large enough to accommodate a king-size mattress, and the entire bed is designed with clean, sleek lines that give it a modern look.  The tufted headboard is the centerpiece of the bed and is often the most eye-catching feature. It is made of soft, durable fabric that is tufted in a square pattern. The tufted design gives the headboard a plush, cushioned appearance, making it comfortable for sitting up in bed to read or watch TV.  The overall design of the bed is modern, emphasizing the beauty of the tufted headboard.   Overall, a modern king bed with a tufted headboard is a statement piece that can add both style and comfort to any bedroom.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein modernes Kingsize-Bett mit getuftetem Kopfteil ist ein stilvolles und elegantes Möbelstück, das einen Hauch von Luxus und Raffinesse in jedes Schlafzimmer bringen kann. Die Matratzenplattform ist groß genug, um eine Kingsize-Matratze aufzunehmen, und das gesamte Bett ist mit klaren, schlanken Linien gestaltet, die ihm einen modernen Look verleihen. Das getuftete Kopfteil ist das Herzstück des Bettes und oft der Blickfang schlechthin. Es ist aus weichem, strapazierfähigem Stoff gefertigt, der in einem quadratischen Muster getuftet ist. Das getuftete Design verleiht dem Kopfteil ein plüschiges, gepolstertes Aussehen und macht es bequem, wenn man im Bett sitzt, um zu lesen oder fernzusehen. Das Gesamtdesign des Bettes ist modern und unterstreicht die Schönheit des getufteten Kopfteils. Insgesamt ist ein modernes Doppelbett mit getuftetem Kopfteil ein Highlight, das jedes Schlafzimmer mit Stil und Komfort bereichert.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A modern king bed with a tufted headboard is a stylish and elegant piece of furniture that can bring a touch of luxury and sophistication to any bedroom. The mattress platform is large enough to accommodate a king-size mattress, and the entire bed is designed with clean, sleek lines that give it a modern look.  The tufted headboard is the centerpiece of the bed and is often the most eye-catching feature. It is made of soft, durable fabric that is tufted in a square pattern. The tufted design gives the headboard a plush, cushioned appearance, making it comfortable for sitting up in bed to read or watch TV.  The overall design of the bed is modern, emphasizing the beauty of the tufted headboard.   Overall, a modern king bed with a tufted headboard is a statement piece that can add both style and comfort to any bedroom.",
           },
@@ -294,17 +291,14 @@ describe(`with opalKingBed preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Opal King Bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Opal King Bett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Opal King Bed",
           },
@@ -318,17 +312,14 @@ describe(`with opalKingBed preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "opal-king-bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "opal-kingsize-bett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "opal-king-bed",
           },

@@ -52,12 +52,10 @@ describe('with the preset `discountBakeware`', () => {
       {
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "5 EUR Off All Bakeware Items",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "5 EUR Off All Bakeware Items",
           },
@@ -66,12 +64,10 @@ describe('with the preset `discountBakeware`', () => {
         "key": "Bakeware5EUROff",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "5 EUR Off All Bakeware Items",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "5 EUR Off All Bakeware Items",
           },

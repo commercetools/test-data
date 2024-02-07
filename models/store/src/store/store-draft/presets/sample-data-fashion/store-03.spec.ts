@@ -34,7 +34,6 @@ describe('with `store03` preset', () => {
         "languages": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Store Three",
           },

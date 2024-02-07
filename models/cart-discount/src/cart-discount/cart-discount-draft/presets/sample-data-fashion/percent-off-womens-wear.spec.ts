@@ -54,7 +54,6 @@ describe('with the preset `percentOffWomensWear`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Take 15% off any full priced item from our Women's category",
           },
@@ -63,7 +62,6 @@ describe('with the preset `percentOffWomensWear`', () => {
         "key": "15pctOffWomensRegPrice",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "15% off all regular priced Women's wear",
           },

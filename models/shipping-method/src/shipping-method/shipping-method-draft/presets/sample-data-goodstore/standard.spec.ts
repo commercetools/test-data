@@ -66,17 +66,14 @@ describe('Shipping Method with standard preset', () => {
         "localizedDescription": undefined,
         "localizedName": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Standard Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Standard Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Standard Delivery",
           },

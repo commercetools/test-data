@@ -301,7 +301,6 @@ describe(`with halloweenTop preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Halloween Top",
           },
@@ -315,7 +314,6 @@ describe(`with halloweenTop preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-halloween-top",
           },

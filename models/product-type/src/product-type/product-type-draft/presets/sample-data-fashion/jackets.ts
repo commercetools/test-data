@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeBooleanTypeDraft,
   AttributeDefinitionDraft,
@@ -17,8 +17,10 @@ const jackets = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('sleeve_length')
-        .label(LocalizedString.presets.empty()['en-US']('sleeve_length'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('sleeve_length'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('sleeve_length'))
+        .inputTip(
+          LocalizedStringDraft.presets.empty()['en-US']('sleeve_length')
+        )
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -42,8 +44,8 @@ const jackets = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('cotton')
-        .label(LocalizedString.presets.empty()['en-US']('cotton'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('cotton'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('cotton'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('cotton'))
         .isRequired(false)
         .type(AttributeBooleanTypeDraft.random().name('boolean'))
         .attributeConstraint('None')

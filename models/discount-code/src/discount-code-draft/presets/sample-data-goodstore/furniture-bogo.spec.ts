@@ -63,12 +63,10 @@ describe('with the preset `furnitureBogo`', () => {
         "maxApplicationsPerCustomer": 1,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "BOGO",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "BOGO",
           },

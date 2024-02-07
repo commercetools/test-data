@@ -54,17 +54,14 @@ describe(`with servingPlatters preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Serving Platters",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Serving Platters",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Servierplatten",
           },
@@ -76,17 +73,14 @@ describe(`with servingPlatters preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "serving-platters",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "serving-platters",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "serving-platters",
           },

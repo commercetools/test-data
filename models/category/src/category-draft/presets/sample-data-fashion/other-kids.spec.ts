@@ -52,7 +52,6 @@ describe(`with otherKids preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Other",
           },
@@ -64,7 +63,6 @@ describe(`with otherKids preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "other_kids",
           },

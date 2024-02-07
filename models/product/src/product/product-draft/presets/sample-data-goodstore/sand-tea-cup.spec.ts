@@ -186,17 +186,14 @@ describe(`with sandTeaCup preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Sand Tea Cup is a type of drinking vessel that is designed to hold and serve tea and/or coffee. It has a cylindrical or slightly tapered shape, with a capacity of around 8 to 16 ounces, and is a light brownish color.  The mug is made of ceramic. The body of the mug is smooth-sided, with a wide opening that makes it easy to pour and drink coffee or tea.  The handle of the mug is designed to be easy to grip, with a comfortable shape and a size that fits most hands. The bottom of the mug is typically flat, with a stable base that helps to prevent tipping and spilling.  The Sand Tea Cup is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, this mug is a practical and functional type of drinking vessel that is ideal for enjoying a hot drink at home or at work. Its neutral color and simple design make it a popular choice for coffee lovers who prefer a classic and understated look.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Sand Tea Cup is a type of drinking vessel that is designed to hold and serve tea and/or coffee. It has a cylindrical or slightly tapered shape, with a capacity of around 8 to 16 ounces, and is a light brownish color.  The mug is made of ceramic. The body of the mug is smooth-sided, with a wide opening that makes it easy to pour and drink coffee or tea.  The handle of the mug is designed to be easy to grip, with a comfortable shape and a size that fits most hands. The bottom of the mug is typically flat, with a stable base that helps to prevent tipping and spilling.  The Sand Tea Cup is easy to clean and maintain. It can be washed by hand or in a dishwasher, and should be dried thoroughly to prevent water spots or residue from forming.  Overall, this mug is a practical and functional type of drinking vessel that is ideal for enjoying a hot drink at home or at work. Its neutral color and simple design make it a popular choice for coffee lovers who prefer a classic and understated look.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Die sandfarbene Tasse ist mit ihrer zylindrischen oder leicht konischen Form und einem Fassungsvermögen von etwa 8 bis 16 Unzen das ideale Trinkgefäß für jeden Tee- oder Kaffeeliebhaber.  Der Keramikbecher hat glatte Seiten und eine breite Öffnung, die das Eingießen und den Genuss von Kaffee oder Tee erleichtern.  Der Henkel der Tasse ist so konzipiert, dass er für jede Handgröße angenehm zu greifen ist und bequem in der Hand liegt. Der Boden des Henkeltasse ist flach und stabil, um ein Umkippen und Verschütten zu verhindern.  Die hellbraune Teetasse ist leicht zu reinigen und zu pflegen. Sie kann von Hand oder in der Spülmaschine gewaschen werden und sollte gründlich getrocknet werden, um Wasserflecken oder Rückstände zu vermeiden.  Die Tasse ist ein praktisches und funktionelles Trinkgefäß, das sich ideal für den Genuss von Heißgetränken Zuhause oder auf der Arbeit eignet. Die neutrale Farbe und das schlichte Design machen sie zu einer beliebten Wahl für alle Tee- und Kaffeeliebhaber, die einen klassischen und minimalistischen Look bevorzugen.",
           },
@@ -293,17 +290,14 @@ describe(`with sandTeaCup preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sand Tea Cup",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Sand Tea Cup",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sandfarbene Tasse",
           },
@@ -317,17 +311,14 @@ describe(`with sandTeaCup preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sand-tea-cup",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "sand-tea-cup",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "sand-teetasse",
           },

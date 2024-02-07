@@ -260,7 +260,6 @@ describe(`with necklace preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Necklace",
           },
@@ -274,7 +273,6 @@ describe(`with necklace preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-necklace",
           },

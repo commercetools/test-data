@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
@@ -17,8 +17,8 @@ const accessories = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('type')
-        .label(LocalizedString.presets.empty()['en-US']('Type'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Type'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Type'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Type'))
         .isRequired(true)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -42,8 +42,8 @@ const accessories = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('engraving')
-        .label(LocalizedString.presets.empty()['en-US']('Engraving'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Engraving'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
         .isRequired(false)
         .type(AttributeTextTypeDraft.random().name('text'))
         .attributeConstraint('None')

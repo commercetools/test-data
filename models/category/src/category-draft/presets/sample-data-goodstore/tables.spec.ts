@@ -53,17 +53,14 @@ describe(`with tables preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Tische",
           },
@@ -75,17 +72,14 @@ describe(`with tables preset`, () => {
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "living-room-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "living-room-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "coffee-tables",
           },

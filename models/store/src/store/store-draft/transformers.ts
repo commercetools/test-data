@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TStoreDraft, TStoreDraftGraphql } from '../types';
 
@@ -13,7 +13,7 @@ const transformers = {
   graphql: Transformer<TStoreDraft, TStoreDraftGraphql>('rest', {
     replaceFields: ({ fields }) => ({
       ...fields,
-      name: LocalizedString.toLocalizedField(fields.name),
+      name: LocalizedStringDraft.toLocalizedField(fields.name),
     }),
   }),
 };

@@ -235,7 +235,6 @@ describe(`with promDress preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Prom Dress",
           },
@@ -249,7 +248,6 @@ describe(`with promDress preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-prom-dress",
           },

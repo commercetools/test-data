@@ -79,7 +79,6 @@ describe('with usaAustraliaShippingMethod preset', () => {
         "key": "shipping-usa-australia",
         "localizedDescription": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Shipping Method USA/Australia",
           },

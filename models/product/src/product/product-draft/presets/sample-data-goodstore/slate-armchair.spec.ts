@@ -184,17 +184,14 @@ describe(`with slateArmchair preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Das minimalistische Sitzmöbel mit Ottomane besticht durch sein schlankes und schlichtes Design, bei dem klare Linien und Funktionalität im Vordergrund stehen. Die Ottomane ist passend zu dem Lounge-Möbel designt und bietet erweiterten Sitzkomfort. Das Polstermöbel ist mit seinen neutralen Farben und schlichten Mustern minimalistisch gehalten. Das Design ist von der modernen Ästhetik inspiriert und legt seinen Fokus auf Schlichtheit und Funktionalität. Das Ergebnis ist ein bequemer und stilvoller Sessel, der sich problemlos in eine Vielzahl von Einrichtungsstilen einfügt.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A minimalist chair with ottoman is a sleek and simple design that emphasizes clean lines and functionality. The ottoman is a matching piece, providing a place for the user to prop up their feet and relax. The upholstery is minimal, with neutral colors and simple patterns. The design is inspired by mid-century modern aesthetics, with a focus on simplicity and functionality. The result is a comfortable and stylish chair that fits seamlessly into a variety of interior design styles.",
           },
@@ -295,17 +292,14 @@ describe(`with slateArmchair preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Slate Armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Slate Armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sessel aus Schiefer",
           },
@@ -319,17 +313,14 @@ describe(`with slateArmchair preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "slate-armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "slate-armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "sessel-aus-schiefer",
           },

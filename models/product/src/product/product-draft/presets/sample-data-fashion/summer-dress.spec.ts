@@ -268,7 +268,6 @@ describe(`with summerDress preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Summer Dress",
           },
@@ -282,7 +281,6 @@ describe(`with summerDress preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-summer-dress",
           },

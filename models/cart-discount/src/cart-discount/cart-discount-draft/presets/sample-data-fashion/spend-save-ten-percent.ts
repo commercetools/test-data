@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
@@ -14,10 +14,14 @@ const spendSaveTenPercent = (): TCartDiscountDraftBuilder =>
     .cartPredicate('totalPrice = "100.00 EUR"')
     .target(CartDiscountLineItemsTargetDraft.random().predicate('1=1'))
     .name(
-      LocalizedString.presets.empty()['en-US']('Save 10% when you spend 100EUR')
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('Save 10% when you spend 100EUR')
     )
     .description(
-      LocalizedString.presets.empty()['en-US']('Save 10% when you spend 100EUR')
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('Save 10% when you spend 100EUR')
     )
     .stackingMode(stackingMode.Stacking)
     .isActive(true)

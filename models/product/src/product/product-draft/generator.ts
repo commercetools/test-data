@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   Reference,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
@@ -12,11 +12,11 @@ import type { TProductDraft } from '../types';
 
 const generator = Generator<TProductDraft>({
   fields: {
-    name: fake(() => LocalizedString.random()),
+    name: fake(() => LocalizedStringDraft.random()),
     productType: fake(() => Reference.random().typeId('product-type')),
-    slug: fake(() => LocalizedString.presets.ofSlugs()),
+    slug: fake(() => LocalizedStringDraft.presets.ofSlugs()),
     key: fake((f) => f.lorem.slug()),
-    description: fake(() => LocalizedString.random()),
+    description: fake(() => LocalizedStringDraft.random()),
     categories: fake(() => [KeyReferenceDraft.presets.category()]),
     categoryOrderHints: null,
     metaTitle: null,

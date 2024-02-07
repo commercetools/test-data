@@ -61,17 +61,14 @@ describe('Shipping Method with USA preset', () => {
         "localizedDescription": undefined,
         "localizedName": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "US Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "US Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "US Delivery",
           },

@@ -317,7 +317,6 @@ describe(`with maternityTop preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Maternity Top",
           },
@@ -331,7 +330,6 @@ describe(`with maternityTop preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-maternity-top",
           },

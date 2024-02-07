@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
@@ -21,8 +21,8 @@ const employeeSale = (): TCartDiscountDraftBuilder =>
     .value(CartDiscountValueRelativeDraft.random().permyriad(1500))
     .cartPredicate(`customer.customerGroup.key = "${customerGroupDraft.key}"`)
     .target(CartDiscountLineItemsTargetDraft.random().predicate(`1=1`))
-    .name(LocalizedString.presets.empty()['en-US']('Employee Sale'))
-    .description(LocalizedString.presets.empty()['en-US']('employee_sale'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Employee Sale'))
+    .description(LocalizedStringDraft.presets.empty()['en-US']('employee_sale'))
     .stackingMode(stackingMode.Stacking)
     .isActive(true)
     .requiresDiscountCode(true)

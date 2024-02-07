@@ -1,5 +1,5 @@
 import {
-  LocalizedString,
+  LocalizedStringDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import { CartDiscountValueGiftLineItemDraft } from '../../../../index';
@@ -21,14 +21,14 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
     )
     .cartPredicate('lineItemExists(product.key = "summer_dress") = true')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US'](
           'Summer special - get a free pair of flip flops with the Summer Dress'
         )
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Purchase the Summer Dress and get a free pair of flip flops')
     )
