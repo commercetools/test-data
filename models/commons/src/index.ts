@@ -20,6 +20,7 @@ export * as KeyReference from './key-reference';
 export * as KeyReferenceDraft from './key-reference/key-reference-draft';
 export * as LocalizedField from './localized-field';
 export * as LocalizedString from './localized-string';
+export * as LocalizedStringDraft from './localized-string/localized-string-draft';
 export * as Money from './money';
 export * as Price from './price';
 export * as PriceDraft from './price/price-draft';

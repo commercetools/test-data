@@ -11,3 +11,14 @@ export type TLocalizedStringGraphql = {
 
 export type TLocalizedStringBuilder = TBuilder<TLocalizedString>;
 export type TCreateLocalizedStringBuilder = () => TLocalizedStringBuilder;
+
+export type TLocalizedStringDraft = TLocalizedString;
+
+export type TLocalizedStringDraftGraphql = {
+  locale: string;
+  value: string | undefined;
+}[];
+
+export type TLocalizedStringDraftBuilder = TBuilder<TLocalizedStringDraft>;
+export type TCreateLocalizedStringDraftBuilder =
+  () => TLocalizedStringDraftBuilder;
