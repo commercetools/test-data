@@ -70,7 +70,7 @@ describe('builder', () => {
           version: expect.any(Number),
           key: expect.any(String),
           nameAllLocales: expect.arrayContaining([
-            expect.not.objectContaining({
+            expect.objectContaining({
               __typename: 'LocalizedString',
             }),
           ]),

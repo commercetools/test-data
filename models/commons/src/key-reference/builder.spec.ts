@@ -30,7 +30,7 @@ describe('builder', () => {
       'graphql',
       KeyReference.random().typeId('product'),
       {
-        // __typename: 'Reference',
+        __typename: 'Reference',
         typeId: 'product',
         key: expect.any(String),
       }

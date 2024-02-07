@@ -53,7 +53,7 @@ describe('builder', () => {
         name: expect.any(String),
         label: expect.arrayContaining([
           expect.objectContaining({
-            // __typename: 'LocalizedString',
+            __typename: 'LocalizedString',
             locale: expect.any(String),
             value: expect.any(String),
           }),
