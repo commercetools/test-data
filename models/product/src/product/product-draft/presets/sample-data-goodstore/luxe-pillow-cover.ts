@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -40,14 +40,14 @@ const luxePillowCover = (): TProductDraftBuilder =>
     .empty()
     .key('luxe-pillow-cover')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Luxe Pillow Cover')
         ['en-GB']('Luxe Pillow Cover')
         ['de-DE']('Luxe Kissenbezug')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['de-DE'](
           'Dieser luxuriöse Kissenbezug ist aus schwarzem Lammfell gefertigt. Shearling ist bekannt für seine Weichheit, Wärme und isolierenden Eigenschaften.  Der Kissenbezug ist so konzipiert, dass er über ein Kissen in Standardgröße passt, normalerweise etwa 18 Zoll im Quadrat. Es hat eine quadratische Form und eine tiefschwarze Farbe, die eine Vielzahl von Einrichtungsstilen und Farbschemata ergänzen kann.  Der Shearling-Stoff hat eine plüschige und flauschige Textur, die sich unglaublich weich anfühlt. Es bietet eine gemütliche und warme Oberfläche zum Schlafen oder Faulenzen, was es zu einer beliebten Wahl für die kälteren Monate macht.  Der Kissenbezug wird oft wegen seiner dekorativen und luxuriösen Eigenschaften sowie wegen seiner praktischen und funktionalen Vorteile verwendet. Es kann einem Bett, Sofa oder Akzentstuhl einen Hauch von Textur und visuellem Interesse verleihen und gleichzeitig eine bequeme und stützende Oberfläche für Kopf und Nacken bieten.  Das Shearling-Gewebe ist von Natur aus wasser- und schmutzabweisend und lässt sich leicht mit einem feuchten Tuch oder Schwamm reinigen. Es sollte regelmäßig an der Luft getrocknet und aufgelockert werden, um seine Form und Textur zu erhalten.  Insgesamt ist ein schwarzer Lammfell-Kissenbezug ein stilvolles und bequemes Accessoire, das den Komfort und Stil jedes Raums im Haus verbessern kann und gleichzeitig einen praktischen und funktionellen Nutzen bietet.'
@@ -60,27 +60,27 @@ const luxePillowCover = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('luxe-pillow-cover')
         ['en-GB']('luxe-pillow-cover')
         ['de-DE']('luxuriser-kissenbezug')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(luxePillowCoverProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.luxePillowCover01()
     )
     .categories([
-      KeyReference.presets.category().key(beddingDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(beddingDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default luxePillowCover;

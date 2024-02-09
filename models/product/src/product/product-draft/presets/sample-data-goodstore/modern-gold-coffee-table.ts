@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -52,14 +52,14 @@ const modernGoldCoffeeTable = (): TProductDraftBuilder =>
     .empty()
     .key('modern-gold-coffee-table')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Modern Gold Coffee Table')
         ['de-DE']('Moderner Gold Couchtisch')
         ['en-US']('Modern Gold Coffee Table')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           'A modern gold coffee table with 2 tiers of quartz table tops is a stunning and stylish piece of furniture that can elevate the look of any living room or sitting area. The table is characterized by a sleek and streamlined design, with clean lines and minimalistic details.  The coffee table features a sturdy metal frame that is finished in a luxurious gold color, providing a touch of sophistication and glamour. The frame is designed to support two tiers of table tops, both made of high-quality quartz material. The quartz table tops are cut in a rectangular shape, with a smooth and glossy surface that adds a touch of elegance to the table.  The two tiers of table tops provide ample storage and display space, allowing you to showcase decorative items such as books, candles, or vases, while still providing plenty of room for drinks and snacks. The two-tier design also adds visual interest and dimension to the table, creating a unique and eye-catching look.  The modern gold coffee table is a versatile piece of furniture that can complement a range of interior design styles, from contemporary and minimalist to more traditional and eclectic. It can be paired with a variety of seating options, from sofas and chairs to benches and stools, to create a cohesive and stylish living space.  Overall, a modern gold coffee table is a chic and elegant piece of furniture that can add a touch of luxury and sophistication to any living room or sitting area. Its sleek design, high-quality materials, and practical features make it a functional and stylish choice for any home.'
@@ -72,30 +72,30 @@ const modernGoldCoffeeTable = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('modern-gold-coffee-table')
         ['de-DE']('moderner-couchtisch-in-gold')
         ['en-US']('modern-gold-coffee-table')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(modernGoldCoffeeTableProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.modernGoldCoffeeTable01()
     )
     .categories([
-      KeyReference.presets.category().key(tablesDraft.key!),
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
-      KeyReference.presets.category().key(theModernistDraft.key!),
+      KeyReferenceDraft.presets.category().key(tablesDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theModernistDraft.key!),
     ]);
 
 export default modernGoldCoffeeTable;

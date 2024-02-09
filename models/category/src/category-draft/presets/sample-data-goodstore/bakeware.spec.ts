@@ -53,40 +53,33 @@ describe(`with bakeware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Backutensilien",
           },
         ],
         "orderHint": ".42",
         "parent": {
-          "__typename": "Reference",
           "key": "dinnerware",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bakeware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bakeware",
           },

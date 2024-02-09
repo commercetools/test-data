@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -43,14 +43,14 @@ const juteRug = (): TProductDraftBuilder =>
     .empty()
     .key('jute-rug')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Jute Rug')
         ['en-GB']('Jute Rug')
         ['de-DE']('Jute Teppich')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           'A jute area rug is a type of rug made from natural fibers derived from the jute plant. Jute is a long, soft, and shiny vegetable fiber that is spun into strong threads and then woven into textiles. Jute rugs are known for their durability and natural appearance, making them a popular choice for those who want to bring a touch of the outdoors into their homes.  Because jute is a natural fiber, it is eco-friendly and sustainable. However, it can be prone to staining and water damage, so jute area rugs should be used in low-traffic areas or rooms that do not see a lot of moisture. They are often used in living rooms, bedrooms, and other spaces where a natural, earthy look is desired.  Overall, a jute area rug is a beautiful and eco-friendly addition to any home. Its natural fibers and earthy appearance make it a popular choice for those who want to create a warm and inviting atmosphere in their living space.'
@@ -63,24 +63,24 @@ const juteRug = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('jute-rug')
         ['en-GB']('jute-rug')
         ['de-DE']('jute-teppich')
     )
     .productType(
-      KeyReference.presets.productType().key(juteRugProductTypeDraft.key!)
+      KeyReferenceDraft.presets.productType().key(juteRugProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(ProductVariantDraft.presets.sampleDataGoodStore.juteRug01())
     .categories([
-      KeyReference.presets.category().key(rugsDraft.key!),
-      KeyReference.presets.category().key(roomDecorDraft.key!),
-      KeyReference.presets.category().key(homeDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(rugsDraft.key!),
+      KeyReferenceDraft.presets.category().key(roomDecorDraft.key!),
+      KeyReferenceDraft.presets.category().key(homeDecorDraft.key!),
     ]);
 
 export default juteRug;

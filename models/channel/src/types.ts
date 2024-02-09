@@ -1,6 +1,7 @@
 import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
+  TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -12,8 +13,8 @@ export type TChannelDraftGraphql = Omit<
   TChannelDraft,
   'name' | 'description'
 > & {
-  name?: TLocalizedStringGraphql;
-  description?: TLocalizedStringGraphql;
+  name?: TLocalizedStringDraftGraphql;
+  description?: TLocalizedStringDraftGraphql;
 };
 
 export type TChannelGraphql = Omit<

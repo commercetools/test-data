@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -44,14 +44,14 @@ const travelCoffeeMug = (): TProductDraftBuilder =>
     .empty()
     .key('travel-coffee-mug')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Travel Coffee Mug')
         ['en-GB']('Travel Coffee Mug')
         ['de-DE']('Reise-Kaffeetasse')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US'](
           'The Travel Coffee Mug is designed for use on the go. The mug has a capacity of around 12 to 20 ounces, and is designed to keep beverages hot or cold for an extended period of time. This is achieved through the use of insulation, which helps to maintain the temperature of the drink inside the mug.  The Travel Coffee Mug has a variety of features, including a spill-proof lid that can be securely fastened to prevent leaks or spills and a handle or grip that makes it easy to hold, even while walking or driving.  This travel coffee mug is designed to fit into standard cup holders in cars.  Overall, this travel coffee mug is a practical and convenient type of drinking vessel that is ideal for anyone who enjoys a hot or cold beverage while on the go. Its durable construction and insulated design make it a popular choice for commuters, travelers, and outdoor enthusiasts alike.'
@@ -64,28 +64,28 @@ const travelCoffeeMug = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('travel-coffee-mug')
         ['en-GB']('travel-coffee-mug')
         ['de-DE']('reise-kaffeetasse')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(travelCoffeeMugProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.travelCoffeeMug01()
     )
     .categories([
-      KeyReference.presets.category().key(glasswareDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(glasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default travelCoffeeMug;

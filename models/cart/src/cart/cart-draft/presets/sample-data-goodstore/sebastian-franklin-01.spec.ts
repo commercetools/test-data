@@ -328,14 +328,12 @@ describe('with the preset cart `sebastianFranklin01`', () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "__typename": "Reference",
           "key": "us-delivery",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "__typename": "Reference",
           "key": "the-good-store",
           "typeId": "store",
         },

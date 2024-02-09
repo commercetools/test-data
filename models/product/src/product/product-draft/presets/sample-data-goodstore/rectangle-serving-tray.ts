@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -48,14 +48,14 @@ const rectangleServingTray = (): TProductDraftBuilder =>
     .empty()
     .key('rectangle-serving-tray')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Rectangle Serving Tray')
         ['en-GB']('Rectangle Serving Tray')
         ['de-DE']('Rechteckiges Serviertablett')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           'This wooden serving tray is a versatile and functional item that can be used in a variety of settings. The wooden material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.'
@@ -68,29 +68,29 @@ const rectangleServingTray = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('rectangle-serving-tray')
         ['en-GB']('rectangle-serving-tray')
         ['de-DE']('rechteckiges-serviertablett')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(rectangleServingTrayProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.rectangleServingTray01()
     )
     .categories([
-      KeyReference.presets.category().key(servingPlattersDraft.key!),
-      KeyReference.presets.category().key(servewareDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(servingPlattersDraft.key!),
+      KeyReferenceDraft.presets.category().key(servewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default rectangleServingTray;

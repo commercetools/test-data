@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { ProductDiscountValueRelativeDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
@@ -10,12 +10,12 @@ const discountKids = (): TProductDiscountDraftBuilder =>
     // TODO: integrate product type keys
     .predicate('categories.key contains "kids"')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Back to School - 20% off all items in our Kids category')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Enjoy 20% off all items in our Kids selection')
     )

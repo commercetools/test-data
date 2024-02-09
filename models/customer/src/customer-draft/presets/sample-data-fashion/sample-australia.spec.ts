@@ -111,7 +111,6 @@ describe('with the preset `sampleAustralia`', () => {
         "companyName": undefined,
         "custom": undefined,
         "customerGroup": {
-          "__typename": "Reference",
           "key": "employee",
           "typeId": "customer-group",
         },

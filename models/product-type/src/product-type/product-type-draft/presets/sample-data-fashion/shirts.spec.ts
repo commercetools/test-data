@@ -101,14 +101,12 @@ describe(`with shirts preset`, () => {
 
     expect(shirtsProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "CombinationUnique",
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Size",
               },
@@ -117,7 +115,6 @@ describe(`with shirts preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Size",
               },
@@ -147,7 +144,6 @@ describe(`with shirts preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
@@ -156,7 +152,6 @@ describe(`with shirts preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },

@@ -52,20 +52,17 @@ describe(`with otherWomen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Other",
           },
         ],
         "orderHint": "0.5",
         "parent": {
-          "__typename": "Reference",
           "key": "women",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "other_women",
           },

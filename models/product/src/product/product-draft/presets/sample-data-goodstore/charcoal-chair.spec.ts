@@ -196,17 +196,14 @@ describe(`with charcoalChair preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "armchairs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
@@ -214,17 +211,14 @@ describe(`with charcoalChair preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This chair with leather upholstery features a sturdy frame and legs. The seat and backrest are covered in high-quality leather, which may be smooth or textured depending on the design. The leather is stretched taut over a layer of padding to provide comfort and support for the person sitting in the chair.  The chair has a high backrest making it ideal for the dining room or a study room.  Overall, a chair with leather upholstery is typically sleek and modern in design, providing a comfortable and stylish seating option for any room.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This chair with leather upholstery features a sturdy frame and legs. The seat and backrest are covered in high-quality leather, which may be smooth or textured depending on the design. The leather is stretched taut over a layer of padding to provide comfort and support for the person sitting in the chair.  The chair has a high backrest making it ideal for the dining room or a study room.  Overall, a chair with leather upholstery is typically sleek and modern in design, providing a comfortable and stylish seating option for any room.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieser Stuhl mit Lederbezug verfügt über einen stabilen Rahmen und Beine. Sitzfläche und Rückenlehne sind mit hochwertigem Leder bezogen, das je nach Ausführung glatt oder strukturiert sein kann. Das Leder wird straff über eine Polsterschicht gespannt, um der auf dem Stuhl sitzenden Person Komfort und Halt zu bieten.  Der Stuhl hat eine hohe Rückenlehne, was ihn ideal für das Esszimmer oder ein Arbeitszimmer macht.  Ein Stuhl mit Lederpolsterung ist elegant und modern im Design und bietet eine komfortable und stilvolle Sitzgelegenheit für jeden Raum.",
           },
@@ -337,24 +331,20 @@ describe(`with charcoalChair preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Charcoal Chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Charcoal Chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Stuhl "Hokzkohle"",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -362,24 +352,20 @@ describe(`with charcoalChair preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "charcoal-chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "charcoal-chair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "holzkohle-stuhl",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

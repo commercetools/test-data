@@ -54,40 +54,33 @@ describe(`with theMinimalist preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Minimalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Minimalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "The Minimalist",
           },
         ],
         "orderHint": ".003",
         "parent": {
-          "__typename": "Reference",
           "key": "collections",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "the-minimalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "the-minimalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "the-minimalist",
           },

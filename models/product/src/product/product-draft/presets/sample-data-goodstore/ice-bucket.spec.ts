@@ -147,17 +147,14 @@ describe(`with iceBucket preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -165,17 +162,14 @@ describe(`with iceBucket preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A metal ice bucket is a container used for holding and serving ice. It is made of stainless steel and designed to keep the ice cold for an extended period of time.   The exterior of the ice bucket is polished and has an extended lip for easy carrying. The interior is smooth and polished to prevent the ice from sticking to the walls of the bucket.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein Eiskübel aus Metall ist ein Behälter zum Aufbewahren und Servieren von Eis. Er besteht aus Edelstahl und ist so konzipiert, dass er das Eis über einen längeren Zeitraum kalt hält. Das Äußere des Eiskübels ist poliert und hat eine verlängerte Lippe zum einfachen Tragen. Die Innenseite ist glatt und poliert, damit das Eis nicht an den Wänden des Eimers kleben bleibt.",
           },
@@ -260,24 +254,20 @@ describe(`with iceBucket preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Ice Bucket",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Ice Bucket",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Eis Eimer",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -285,24 +275,20 @@ describe(`with iceBucket preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "ice-bucket",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "ice-bucket",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "eis-eimer",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

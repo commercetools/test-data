@@ -1,6 +1,6 @@
 import {
-  LocalizedString,
-  KeyReference,
+  LocalizedStringDraft,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -11,14 +11,14 @@ const furnitureDraft = furniture().build<TCategoryDraft>();
 const collections = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Collections')
         ['en-US']('Collections')
         ['de-DE']('Sonderkollektionen')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('furniture-collections')
         ['en-US']('furniture-collections')
@@ -26,6 +26,6 @@ const collections = (): TCategoryDraftBuilder =>
     )
     .key('collections')
     .orderHint('.7')
-    .parent(KeyReference.presets.category().key(furnitureDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(furnitureDraft.key!));
 
 export default collections;

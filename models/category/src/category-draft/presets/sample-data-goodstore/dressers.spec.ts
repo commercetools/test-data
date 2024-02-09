@@ -53,40 +53,33 @@ describe(`with dressers preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Storage & Tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Dressers",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Kommoden",
           },
         ],
         "orderHint": ".1",
         "parent": {
-          "__typename": "Reference",
           "key": "bedroom-furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "storage-and-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "storage-and-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "dressers",
           },

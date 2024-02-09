@@ -128,7 +128,6 @@ describe(`with flairJeans preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bottoms-women",
             "typeId": "category",
           },
@@ -166,14 +165,12 @@ describe(`with flairJeans preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Flair Jeans",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "pants",
           "typeId": "product-type",
         },
@@ -181,14 +178,12 @@ describe(`with flairJeans preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-flair-jeans",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

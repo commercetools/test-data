@@ -54,40 +54,33 @@ describe(`with glassware preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Gläser",
           },
         ],
         "orderHint": ".23",
         "parent": {
-          "__typename": "Reference",
           "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "glassware",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "glassware",
           },

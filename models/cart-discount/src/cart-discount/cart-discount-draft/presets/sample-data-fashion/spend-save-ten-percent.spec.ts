@@ -53,7 +53,6 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Save 10% when you spend 100EUR",
           },
@@ -62,7 +61,6 @@ describe('with the preset `spendSaveTenPercent`', () => {
         "key": "Spend100EURSave10pct",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Save 10% when you spend 100EUR",
           },

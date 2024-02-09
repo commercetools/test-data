@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -44,14 +44,14 @@ const squareBambooCoaster = (): TProductDraftBuilder =>
     .empty()
     .key('square-bamboo-coaster')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Square Bamboo Coaster')
         ['en-GB']('Square Bamboo Coaster')
         ['de-DE']('Quadratischer Untersetzer aus Bambus')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['de-DE'](
           'Der quadratische Untersetzer aus Bambus besteht aus einer kleinen Matte mit großer Wirkung, da sie Oberflächen vor Wasserflecken oder Beschädigungen durch Trinkgläser oder Tassen schützt. Er besteht aus natürlichem Bambusmaterial und hat eine glatte Oberfläche. Der Untersetzer hat eine quadratische Form mit leicht abgerundeten Kanten und misst etwa 3,5 Zoll x 3,5 Zoll. Seine leichte und strapazierfähige Beschaffenheit macht ihn zu einer beliebten Wahl für legere und formelle Anlässe gleichermaßen.'
@@ -64,28 +64,28 @@ const squareBambooCoaster = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('square-bamboo-coaster')
         ['en-GB']('square-bamboo-coaster')
         ['de-DE']('quadratischer-untersetzer-aus-bambus')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(squareBambooCoasterProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.squareBambooCoaster01()
     )
     .categories([
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(barAccessoriesDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAccessoriesDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
     ]);
 
 export default squareBambooCoaster;

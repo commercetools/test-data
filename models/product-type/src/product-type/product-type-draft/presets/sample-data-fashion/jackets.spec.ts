@@ -83,14 +83,12 @@ describe(`with jackets preset`, () => {
 
     expect(jacketsProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "sleeve_length",
               },
@@ -99,7 +97,6 @@ describe(`with jackets preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "sleeve_length",
               },
@@ -129,7 +126,6 @@ describe(`with jackets preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "cotton",
               },
@@ -138,7 +134,6 @@ describe(`with jackets preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "cotton",
               },

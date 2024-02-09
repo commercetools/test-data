@@ -64,14 +64,12 @@ describe('builder', () => {
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
         ]),
         description: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
         ]),
         code: expect.any(String),

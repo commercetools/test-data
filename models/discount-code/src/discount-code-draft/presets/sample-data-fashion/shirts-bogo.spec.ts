@@ -48,7 +48,6 @@ describe('with the preset `employeeSale`', () => {
       {
         "cartDiscounts": [
           {
-            "__typename": "Reference",
             "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },
@@ -63,7 +62,6 @@ describe('with the preset `employeeSale`', () => {
         "maxApplicationsPerCustomer": 1,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "BOGO",
           },

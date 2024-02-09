@@ -54,40 +54,33 @@ describe(`with collections preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sonderkollektionen",
           },
         ],
         "orderHint": ".7",
         "parent": {
-          "__typename": "Reference",
           "key": "furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "furniture-collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "furniture-collections",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "collections",
           },

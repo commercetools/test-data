@@ -53,40 +53,33 @@ describe(`with tables preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Tische",
           },
         ],
         "orderHint": ".25",
         "parent": {
-          "__typename": "Reference",
           "key": "living-room-furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "living-room-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "living-room-tables",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "coffee-tables",
           },

@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import * as ProductVariantDraft from '../..';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
@@ -12,11 +12,11 @@ const maternityTopVariant03 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(2695))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(2695))
         .country('DE'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('AUD').centAmount(2500))
+        .value(MoneyDraft.random().currencyCode('AUD').centAmount(2500))
         .country('AU'),
     ])
     .images([

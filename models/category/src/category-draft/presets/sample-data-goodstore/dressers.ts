@@ -1,6 +1,6 @@
 import {
-  LocalizedString,
-  KeyReference,
+  LocalizedStringDraft,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -11,14 +11,14 @@ const bedroomFurnitureDraft = bedroomFurniture().build<TCategoryDraft>();
 const dressers = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Storage & Tables')
         ['en-US']('Dressers')
         ['de-DE']('Kommoden')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('storage-and-tables')
         ['en-US']('storage-and-tables')
@@ -26,6 +26,8 @@ const dressers = (): TCategoryDraftBuilder =>
     )
     .key('storage--tables')
     .orderHint('.1')
-    .parent(KeyReference.presets.category().key(bedroomFurnitureDraft.key!));
+    .parent(
+      KeyReferenceDraft.presets.category().key(bedroomFurnitureDraft.key!)
+    );
 
 export default dressers;

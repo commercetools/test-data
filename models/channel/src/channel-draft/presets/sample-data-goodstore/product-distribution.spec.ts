@@ -38,7 +38,6 @@ describe('distribution channel', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Distribution Channel",
           },
@@ -47,7 +46,6 @@ describe('distribution channel', () => {
         "key": "distribution-channel",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Distribution Channel",
           },

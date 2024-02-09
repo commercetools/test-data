@@ -61,7 +61,6 @@ describe('with europeShippingMethod preset', () => {
         "key": "shipping-europe",
         "localizedDescription": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Shipping Method Europe",
           },
@@ -70,7 +69,6 @@ describe('with europeShippingMethod preset', () => {
         "name": "Sample Shipping Method Europe",
         "predicate": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
@@ -90,7 +88,6 @@ describe('with europeShippingMethod preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "europe",
               "typeId": "zone",
             },

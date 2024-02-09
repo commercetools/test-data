@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -33,10 +33,10 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
 const maternityTop = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-US']('Sample Maternity Top'))
-    .slug(LocalizedString.presets.empty()['en-US']('sample-maternity-top'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Maternity Top'))
+    .slug(LocalizedStringDraft.presets.empty()['en-US']('sample-maternity-top'))
     .productType(
-      KeyReference.presets.productType().key(shirtProductTypeDraft.key!)
+      KeyReferenceDraft.presets.productType().key(shirtProductTypeDraft.key!)
     )
     .publish(true)
     .masterVariant(
@@ -48,8 +48,8 @@ const maternityTop = (): TProductDraftBuilder =>
     ])
     .key('maternity_top')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default maternityTop;

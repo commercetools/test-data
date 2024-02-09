@@ -28,7 +28,6 @@ describe('with `the_good_store` preset', () => {
     const storeDraft = theGoodStore().buildGraphql<TStoreDraft>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "StoreDraft",
         "countries": undefined,
         "custom": undefined,
         "distributionChannels": undefined,
@@ -36,12 +35,10 @@ describe('with `the_good_store` preset', () => {
         "languages": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Good Store",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Good Store",
           },

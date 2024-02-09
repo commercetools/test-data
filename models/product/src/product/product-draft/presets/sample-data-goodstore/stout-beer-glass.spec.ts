@@ -145,17 +145,14 @@ describe(`with stoutBeerGlass preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -163,17 +160,14 @@ describe(`with stoutBeerGlass preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A stout beer glass, also known as a "pint glass," is a type of drinking glass that is designed specifically for serving and enjoying stout beers. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the stout beer glass is intended to enhance the drinking experience by allowing the full range of flavors and aromas of the beer to be appreciated. The wide opening of the glass allows the drinker to fully appreciate the color and clarity of the beer, while the heavy base helps to keep the beer from spilling or tipping over.  Overall, a stout beer glass is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine stout beers. Its simple yet elegant design makes it a popular choice for beer lovers and casual drinkers alike.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein Stout-Bierglas, auch als "Pintglas" bekannt, ist ein Trinkglas, das speziell zum Servieren und Genießen von Starkbieren entwickelt wurde. Es hat eine kurze, breite Form mit einem dicken, schweren Boden, der für Stabilität und Gleichgewicht sorgt.  Das Design des Stout-Bierglases unterstützt das Trinkerlebnis, indem es die volle Geschmacks- und Aromenvielfalt des Bieres zur Geltung bringt. Die breite Öffnung des Glases lässt die Farbe und Klarheit des Bieres erkennen, während der schwere Boden dazu beiträgt, dass das Bier nicht verschüttet oder umkippt.  Ein Pintglas ist ein klassisches und zeitloses Trinkglas, das sich ideal eignet, um den reichen Geschmack und das Aroma feiner Stout-Biere zu genießen. Sein einfaches aber elegantes Design macht es zu einer beliebten Wahl für Bierliebhaber und Gelegenheitsgeniesser gleichermaßen.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A stout beer glass, also known as a "pint glass," is a type of drinking glass that is designed specifically for serving and enjoying stout beers. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the stout beer glass is intended to enhance the drinking experience by allowing the full range of flavors and aromas of the beer to be appreciated. The wide opening of the glass allows the drinker to fully appreciate the color and clarity of the beer, while the heavy base helps to keep the beer from spilling or tipping over.  Overall, a stout beer glass is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine stout beers. Its simple yet elegant design makes it a popular choice for beer lovers and casual drinkers alike.",
           },
@@ -258,24 +252,20 @@ describe(`with stoutBeerGlass preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Stout Beer Glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Stout Beer Glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Stout-Bierglas",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -283,24 +273,20 @@ describe(`with stoutBeerGlass preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "stout-beer-glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "stout-beer-glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "starkes-bierglas",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

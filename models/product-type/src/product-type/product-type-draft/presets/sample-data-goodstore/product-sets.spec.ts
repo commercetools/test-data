@@ -44,7 +44,6 @@ describe(`with productSets preset`, () => {
       productSets().buildGraphql<TProductTypeDraftGraphql>();
     expect(productSetsPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",
@@ -54,17 +53,14 @@ describe(`with productSets preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-GB",
                 "value": "Type",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Type",
               },
               {
-                "__typename": "LocalizedString",
                 "locale": "de-DE",
                 "value": "Typ",
               },

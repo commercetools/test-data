@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   attributeConstraints,
   inputHints,
@@ -25,13 +25,13 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .name('product-description')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('product-description')
             ['en-US']('product-description')
         )
         .inputTip(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('description of the bundle product')
             ['en-US']('description of the bundle product')
@@ -46,7 +46,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
         .name('product-spec')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Product Spec')
             ['en-US']('Product Spec')
@@ -67,7 +67,7 @@ const beddingBundle = (): TProductTypeDraftBuilder =>
           )
         )
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Products of this bundle')
             ['en-US']('Products of this bundle')

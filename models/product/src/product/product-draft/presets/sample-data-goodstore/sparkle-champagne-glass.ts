@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -44,14 +44,14 @@ const sparkleChampagneGlass = (): TProductDraftBuilder =>
     .empty()
     .key('sparkle-champagne-glass')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Sparkle Champagne Glass')
         ['en-GB']('Sparkle Champagne Glass')
         ['de-DE']('Champagnerglas')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['de-DE'](
           'Ein konisches Champagnerglas, auch als Champagnerflöte bekannt, ist eine Art Stielglas, das speziell entwickelt wurde, um das Trinkerlebnis beim Genießen von Champagner oder Sekt zu steigern. Das Glas hat einen hohen, schmalen Kelch, der sich nach oben hin verjüngt, sodass das Aufsteigen die Bläschen an die Oberfläche des Getränks gut beobachtet werden kann.  Der hohe, schlanke Stiel des Glases schafft genug Raum zwischen Hand und Getränk und verhindert so, dass der Champagner durch Körperwärme die Temperatur ändert. Der Fuß des Glases ist typischerweise breit und flach und sorgt für Stabilität und Balance.  Das Design des konisch zulaufenden Sektglases soll das Aroma und den Geschmack des Getränks verstärken. Der schmale Kelch konzentriert die Bläschen und das Aroma des Champagners und lenkt ihn zur Nase hin. Dies steigert das Aroma und den Geschmack des Champagners.  Das konische Sektglas wird typischerweise zum Servieren von Sekt oder anderen Schaumweinen verwendet, kann aber auch für andere kohlensäurehaltige Getränke oder Cocktails verwendet werden. Es ist leicht zu reinigen und zu pflegen und kann von Hand oder in der Spülmaschine gewaschen werden.  Das konische Champagnerglas ein stilvolles und elegantes Stielglas, das speziell entwickelt wurde, um dem Genuss von Champagner oder Sekt zu steigern. Sein einzigartiges Design und die Liebe zum Detail machen es zu einer beliebten Wahl für besondere Anlässe und Feiern.'
@@ -64,28 +64,28 @@ const sparkleChampagneGlass = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('sparkle-champagne-glass')
         ['en-GB']('sparkle-champagne-glass')
         ['de-DE']('funkelndes-champagnerglas')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(sparkleChampagneGlassProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.sparkleChampagneGlass01()
     )
     .categories([
-      KeyReference.presets.category().key(glasswareDraft.key!),
-      KeyReference.presets.category().key(barAndGlasswareDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(glasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(barAndGlasswareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
     ]);
 
 export default sparkleChampagneGlass;

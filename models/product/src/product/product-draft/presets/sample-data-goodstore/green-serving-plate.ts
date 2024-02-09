@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -48,14 +48,14 @@ const greenServingPlate = (): TProductDraftBuilder =>
     .empty()
     .key('green-serving-plate')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Green Serving Plate')
         ['en-GB']('Green Serving Plate')
         ['de-DE']('Grüne Servierplatte')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['de-DE'](
           'Eine stilvolle grüne Servierplatte ist ein Teller, der entworfen wurde, um Speisen mit einem zusätzlichen Hauch von Eleganz und Raffinesse zu servieren. Die Platte ist in einem stilvollen Grünton gefärbt, der von einem sanften Pastellgrün bis zu einem lebhaften Limettengrün variieren kann. Die Farbe wird durch eine glänzende oder matte Oberfläche ergänzt, die der Servierplatte Tiefe und Textur verleiht. Die Form der Platte kann variieren. Einige gebogenen Kanten machen sie visuell zusätzlich interessant. Der Teller hat ein dekoratives Muster und eine Textur.  Eine stilvolle grüne Servierplatte ist ideal zum Servieren einer Vielzahl von Speisen, einschließlich Vorspeisen, Hauptgerichten und Desserts. Insgesamt ist der Teller eine schöne und funktionale Wahl zum Servieren von Speisen. Sein einzigartiges Design und seine Farbe machen ihn zu einem Blickfang auf jedem Tisch, während seine Stabilität und Praktikabilität dafür sorgen, dass er sowohl für das tägliche Essen als auch für besondere Anlässe verwendet werden kann.'
@@ -68,29 +68,29 @@ const greenServingPlate = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('green-serving-plate')
         ['en-GB']('green-serving-plate')
         ['de-DE']('grne-servierplatte')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(greenServingPlateProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.greenServingPlate01()
     )
     .categories([
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(platesDraft.key!),
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(servingPlattersDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(platesDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(servingPlattersDraft.key!),
     ]);
 
 export default greenServingPlate;

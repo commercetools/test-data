@@ -1,6 +1,7 @@
-import * as Money from '../../../money';
+import { MoneyDraft } from '../../../money';
 import PriceDraft from '../builder';
 
-const minimal = () => PriceDraft().value(Money.presets.withCurrency('USD'));
+const minimal = () =>
+  PriceDraft().value(MoneyDraft.presets.withCurrency('USD'));
 
 export default minimal;

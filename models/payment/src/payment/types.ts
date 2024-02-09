@@ -21,9 +21,7 @@ export type TPaymentGraphql = TPayment & {
   customerRef: TReferenceGraphql;
   interfaceInteractionsRaw: TPaginatedQueryResult<null>;
 };
-export type TPaymentDraftGraphql = TPaymentDraft & {
-  __typename: 'PaymentDraft';
-};
+export type TPaymentDraftGraphql = TPaymentDraft;
 
 export type TPaymentBuilder = TBuilder<TPayment>;
 export type TPaymentDraftBuilder = TBuilder<TPaymentDraft>;

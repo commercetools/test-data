@@ -49,7 +49,6 @@ describe('with the preset `furnitureBogo`', () => {
       {
         "cartDiscounts": [
           {
-            "__typename": "Reference",
             "id": "my-cart-discount-id",
             "typeId": "cart-discount",
           },
@@ -64,12 +63,10 @@ describe('with the preset `furnitureBogo`', () => {
         "maxApplicationsPerCustomer": 1,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "BOGO",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "BOGO",
           },

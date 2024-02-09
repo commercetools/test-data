@@ -197,7 +197,6 @@ describe(`with sampleSandals preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "other-kids",
             "typeId": "category",
           },
@@ -301,14 +300,12 @@ describe(`with sampleSandals preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Sandals",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "accessories",
           "typeId": "product-type",
         },
@@ -316,14 +313,12 @@ describe(`with sampleSandals preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-sandals",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

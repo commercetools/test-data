@@ -52,20 +52,17 @@ describe(`with clothingKids preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Clothing",
           },
         ],
         "orderHint": "0.8",
         "parent": {
-          "__typename": "Reference",
           "key": "kids",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "clothing_kids",
           },

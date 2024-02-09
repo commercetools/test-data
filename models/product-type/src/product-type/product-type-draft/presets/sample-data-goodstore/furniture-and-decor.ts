@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   attributeConstraints,
   inputHints,
@@ -27,14 +27,14 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('productspec')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Product Specifications')
             ['en-US']('Product Specifications')
             ['de-DE']('Produktspezifikationen')
         )
         .inputTip(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB'](
               'Details on the specifications of the product, including size, wood type, fabric type, to be detailed in bullet points.'
@@ -53,7 +53,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('color')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Color')
             ['en-US']('Color')
@@ -69,7 +69,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('finish')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Finish')
             ['en-US']('Finish')
@@ -85,7 +85,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('colorlabel')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Color Label')
             ['en-US']('Color Label')
@@ -101,7 +101,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('finishlabel')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Finish Label')
             ['en-US']('Finish Label')
@@ -117,7 +117,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('new-arrival')
         .type(AttributeBooleanTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('New Arrival')
             ['en-US']('New Arrival')
@@ -134,10 +134,10 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('size')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets.empty()['en-GB']('Size')['en-US']('Size')
+          LocalizedStringDraft.presets.empty()['en-GB']('Size')['en-US']('Size')
         )
         .inputTip(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('size set as a string value')
             ['en-US']('size set as a string value')
@@ -152,13 +152,13 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .name('product-description')
         .type(AttributeLocalizableTextTypeDraft.random())
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Product Description')
             ['en-US']('Product Description')
         )
         .inputTip(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB'](
               'Product description, made a custom attribute so product description is not used for search results.'
@@ -176,13 +176,13 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         .empty()
         .name('color-filter')
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Color Filter')
             ['en-US']('Color Filter')
         )
         .inputTip(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB'](
               'used to set the colors and labels displayed in the color filter on PLP'
@@ -197,7 +197,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#FFF')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Weiss')
                   ['en-GB']('White')
@@ -206,7 +206,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#000')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Schwarz')
                   ['en-GB']('Black')
@@ -215,7 +215,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#808080')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Grau')
                   ['en-GB']('Gray')
@@ -224,7 +224,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#0000FF')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Blau')
                   ['en-GB']('Blue')
@@ -233,7 +233,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#00FF00')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Grün')
                   ['en-GB']('Green')
@@ -242,7 +242,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#A020F0')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Lila')
                   ['en-GB']('Purple')
@@ -251,7 +251,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#C4A484')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Hellbraun')
                   ['en-GB']('Light Brown')
@@ -260,7 +260,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#F5F5DC')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Beige')
                   ['en-GB']('Beige')
@@ -269,7 +269,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#D2B48C')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Bräunen')
                   ['en-GB']('Tan')
@@ -278,7 +278,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#FFFFF0')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Elfenbein')
                   ['en-GB']('Ivory')
@@ -287,7 +287,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#FFD700')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Gold')
                   ['en-GB']('Gold')
@@ -296,7 +296,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#964B00')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Dunkelbraun')
                   ['en-GB']('Dark Brown')
@@ -305,7 +305,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#C0C0C0')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Silber')
                   ['en-GB']('Silver')
@@ -314,7 +314,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#FFC0CB')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Rosa')
                   ['en-GB']('Pink')
@@ -323,7 +323,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
             AttributeLocalizedEnumValueDraft.random()
               .key('#FFA500')
               .label(
-                LocalizedString.presets
+                LocalizedStringDraft.presets
                   .empty()
                   ['de-DE']('Orange')
                   ['en-GB']('Orange')

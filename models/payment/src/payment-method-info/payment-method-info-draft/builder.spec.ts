@@ -30,7 +30,6 @@ describe('builder', () => {
       'graphql',
       PaymentMethodInfoInput.random(),
       expect.objectContaining({
-        __typename: 'PaymentMethodInfoInput',
         paymentInterface: expect.any(String),
         method: expect.any(String),
         name: expect.arrayContaining([

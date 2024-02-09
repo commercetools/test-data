@@ -39,7 +39,6 @@ describe('inventory channel', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Inventory Channel",
           },
@@ -48,7 +47,6 @@ describe('inventory channel', () => {
         "key": "inventory-channel",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Inventory Channel",
           },

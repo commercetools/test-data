@@ -97,14 +97,12 @@ describe(`with dresses preset`, () => {
 
     expect(dressesProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "CombinationUnique",
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },
@@ -113,7 +111,6 @@ describe(`with dresses preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },
@@ -143,7 +140,6 @@ describe(`with dresses preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
@@ -152,7 +148,6 @@ describe(`with dresses preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },

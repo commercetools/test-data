@@ -55,7 +55,6 @@ describe('builder', () => {
           id: expect.any(String),
         }),
         active: expect.any(Boolean),
-        __typename: 'ProductSelectionSettingDraft',
       })
     )
   );

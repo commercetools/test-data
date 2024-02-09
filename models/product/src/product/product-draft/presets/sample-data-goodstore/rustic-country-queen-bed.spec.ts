@@ -199,22 +199,18 @@ describe(`with rusticCountryQueenBed preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "beds",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
@@ -222,17 +218,14 @@ describe(`with rusticCountryQueenBed preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A rustic queen bed with a suede headboard is a beautiful and comfortable piece of furniture that can add warmth and texture to any bedroom. The bed features a sturdy wooden frame and a vintage look that is both rustic and inviting.  The headboard of the bed is upholstered in soft suede fabric, providing a comfortable and stylish backrest for reading or relaxing in bed. The suede material also adds a tactile and luxurious feel to the bed, creating a cozy and inviting atmosphere in the bedroom.  The bed comes with a sturdy wooden slat system that provides excellent support for the mattress and ensures a comfortable and restful night's sleep.  The rustic queen bed with a suede headboard is designed to be both functional and stylish. The bed comes with a matching dresser to create a cohesive and stylish bedroom decor.  Overall, a rustic queen bed with a suede headboard is a beautiful and comfortable piece of furniture that can add warmth and texture to any bedroom. Its sturdy construction, comfortable design, and charming rustic style make it a functional and beautiful addition to any home with a rustic or country decor style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A rustic queen bed with a suede headboard is a beautiful and comfortable piece of furniture that can add warmth and texture to any bedroom. The bed features a sturdy wooden frame and a vintage look that is both rustic and inviting.  The headboard of the bed is upholstered in soft suede fabric, providing a comfortable and stylish backrest for reading or relaxing in bed. The suede material also adds a tactile and luxurious feel to the bed, creating a cozy and inviting atmosphere in the bedroom.  The bed comes with a sturdy wooden slat system that provides excellent support for the mattress and ensures a comfortable and restful night's sleep.  The rustic queen bed with a suede headboard is designed to be both functional and stylish. The bed comes with a matching dresser to create a cohesive and stylish bedroom decor.  Overall, a rustic queen bed with a suede headboard is a beautiful and comfortable piece of furniture that can add warmth and texture to any bedroom. Its sturdy construction, comfortable design, and charming rustic style make it a functional and beautiful addition to any home with a rustic or country decor style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Das rustikale Queensize-Bett mit dem Kopfteil aus Wildleder ist ein schönes und komfortables Möbelstück, das jedem Schlafzimmer Wärme und Struktur verleiht. Das Bett hat einen stabilen Holzrahmen im Vintage-Look, der zum Relaxen einlädt.  Das Kopfteil des Bettes ist mit weichem Wildleder bezogen und bietet eine bequeme und stilvolle Rückenlehne zum Lesen oder Entspannen im Bett. Das Wildledermaterial verleiht dem Bett luxuriöses Gefühl zum Anfassen und schafft eine gemütliche und einladende Atmosphäre im Schlafzimmer.  Der stabile Holzlattenrost des Betts bietet eine solide Grundlage für die Matratze und somit für einen komfortablen und erholsamen Schlaf.  Das rustikale Queensize-Bett mit Kopfteil aus Wildleder ist sowohl funktional als auch stilvoll designt. Zu dem Bett gibt es eine passende Kommode, mit der ein zusammenhängendes und stilvolles Schlafzimmerdekor geschaffen werden kann.  Ein rustikales Queensize-Bett mit einem Kopfteil aus Wildleder ist ein schönes und komfortables Möbelstück, das Wärme und Textur in jedes Schlafzimmer bringt. Seine robuste Konstruktion, sein komfortables Design und der charmant-rustikale Charakter machen es zu einer funktionalen und schönen Ergänzung für jedes Zuhause im angesagten Landhausstil.",
           },
@@ -337,24 +330,20 @@ describe(`with rusticCountryQueenBed preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Rustic Country Queen Bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Rustic Country Queen Bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Rustikales Queensize-Bett im Landhausstil",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -362,24 +351,20 @@ describe(`with rusticCountryQueenBed preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "rustic-country-queen-bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "rustic-country-queen-bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "rustikales-country-queen-bett",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

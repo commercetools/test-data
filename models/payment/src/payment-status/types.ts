@@ -11,9 +11,7 @@ export type TPaymentStatusGraphql = TPaymentStatus & {
   __typename: 'PaymentStatus';
 };
 
-export type TPaymentStatusDraftGraphql = TPaymentStatusDraft & {
-  __typename: 'PaymentStatusDraft';
-};
+export type TPaymentStatusDraftGraphql = TPaymentStatusDraft;
 
 export type TPaymentStatusBuilder = TBuilder<TPaymentStatus>;
 export type TPaymentStatusDraftBuilder = TBuilder<TPaymentStatusDraft>;

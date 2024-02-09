@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -56,14 +56,14 @@ const nalaTwoSeaterSofa = (): TProductDraftBuilder =>
     .empty()
     .key('nala-two-seater-sofa')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Nala Two-Seater Sofa')
         ['de-DE']('Nala Zweisitzer-Sofa')
         ['en-US']('Nala Two-Seater Sofa')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB'](
           "This modern 2-seater sofa is a stylish and comfortable addition to any living space. The sofa features a sleek and minimalistic design, with clean lines and a contemporary aesthetic. It is upholstered in high-quality cotton fabric, which is soft to the touch and easy to clean. The two seat cushions are plush and supportive, offering a comfortable place to sit and relax. The backrest is well-padded, providing ample back support, while the armrests are gently curved for a comfortable and relaxed feel. The sofa's frame is made from sturdy wood, ensuring it will last for years to come. With a modern and minimalist style, this sofa can fit in seamlessly with any modern decor, while the comfortable and high-quality upholstery makes it a great place to relax and unwind."
@@ -76,20 +76,20 @@ const nalaTwoSeaterSofa = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('nala-two-seater-sofa')
         ['de-DE']('nala-zweisitzer-sofa')
         ['en-US']('nala-two-seater-sofa')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(nalaTwoSeaterSofaProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa01()
@@ -103,12 +103,12 @@ const nalaTwoSeaterSofa = (): TProductDraftBuilder =>
       ProductVariantDraft.presets.sampleDataGoodStore.nalaTwoSeaterSofa07(),
     ])
     .categories([
-      KeyReference.presets.category().key(livingRoomFurnitureDraft.key!),
-      KeyReference.presets.category().key(sofasDraft.key!),
-      KeyReference.presets.category().key(furnitureDraft.key!),
-      KeyReference.presets.category().key(newArrivalsDraft.key!),
-      KeyReference.presets.category().key(theTraditionalistDraft.key!),
-      KeyReference.presets.category().key(collectionsDraft.key!),
+      KeyReferenceDraft.presets.category().key(livingRoomFurnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(sofasDraft.key!),
+      KeyReferenceDraft.presets.category().key(furnitureDraft.key!),
+      KeyReferenceDraft.presets.category().key(newArrivalsDraft.key!),
+      KeyReferenceDraft.presets.category().key(theTraditionalistDraft.key!),
+      KeyReferenceDraft.presets.category().key(collectionsDraft.key!),
     ]);
 
 export default nalaTwoSeaterSofa;

@@ -1,5 +1,5 @@
 import { FieldDefinition } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import { TLocalizedStringDraftGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TFieldDefinition = FieldDefinition;
@@ -14,8 +14,8 @@ export type TFieldDefinitionDraftGraphql = Omit<
   TFieldDefinitionDraft,
   'label' | 'inputHint'
 > & {
-  label: TLocalizedStringGraphql;
-  inputHint?: TLocalizedStringGraphql | null;
+  label: TLocalizedStringDraftGraphql;
+  inputHint?: TLocalizedStringDraftGraphql | null;
 };
 
 export type TFieldDefinitionBuilder = TBuilder<TFieldDefinition>;

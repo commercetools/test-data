@@ -153,17 +153,14 @@ describe(`with ryeWhiskeyGlass preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
@@ -171,17 +168,14 @@ describe(`with ryeWhiskeyGlass preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Rye Whiskey Glass is designed specifically for enjoying whiskey or other spirits. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the whiskey glass is intended to enhance the drinking experience by allowing the whiskey's aroma and flavor to be fully appreciated. The wide opening of the glass allows the drinker to fully appreciate the color, clarity, and texture of the whiskey, while the heavy base helps to keep the drink from spilling or tipping over.  Overall, the Rye Whiskey Glass  is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine whiskey. Its simple yet elegant design makes it a popular choice for whiskey connoisseurs and casual drinkers alike.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Rye Whiskey Glass is designed specifically for enjoying whiskey or other spirits. It has a short, wide shape with a thick, heavy base that provides stability and balance.  The design of the whiskey glass is intended to enhance the drinking experience by allowing the whiskey's aroma and flavor to be fully appreciated. The wide opening of the glass allows the drinker to fully appreciate the color, clarity, and texture of the whiskey, while the heavy base helps to keep the drink from spilling or tipping over.  Overall, the Rye Whiskey Glass  is a classic and timeless type of drinking glass that is ideal for savoring the rich flavor and aroma of fine whiskey. Its simple yet elegant design makes it a popular choice for whiskey connoisseurs and casual drinkers alike.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Das Rye-Whiskyglas wurde speziell für den Genuss von Whisky und anderen Spirituosen entwickelt. Es hat eine breite Form mit einer dickglasigen, schweren Basis, die für Stabilität und Gleichgewicht sorgt.  Das Design des Whiskyglases ist auf ein verbessertes Trinkerlebnis abgestimmt, bei dem die Aromen der Geschmack des Whiskys im Mittelpunkt stehen. Die breite Öffnung des Glases ermöglicht es dem Genießer, die Farbe, Klarheit und Textur des Whiskys voll und ganz wahrzunehmen, während der schwere Boden für Stabilität beim Abstellen sorgt.  Insgesamt ist das Rye-Whiskyglas ein klassisches und zeitloses Trinkglas, das sich ideal eignet, um den reichen Geschmack und das Aroma von feinem Whisky zu genießen. Sein schlichtes, aber elegantes Design macht es zu einer beliebten Wahl für Whiskykenner und Gelegenheitsgenießer gleichermaßen.",
           },
@@ -274,24 +268,20 @@ describe(`with ryeWhiskeyGlass preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Rye Whiskey Glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Rye Whiskey Glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Rye-Whiskyglas",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -299,24 +289,20 @@ describe(`with ryeWhiskeyGlass preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "rye-whiskey-glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "rye-whiskey-glass",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "roggen-whisky-glas",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

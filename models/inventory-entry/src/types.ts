@@ -21,9 +21,7 @@ export type TInventoryEntryGraphql = TInventoryEntry & {
   __typename: 'InventoryEntry';
   supplyChannelRef: TReferenceGraphql;
 };
-export type TInventoryEntryDraftGraphql = TInventoryEntryDraft & {
-  __typename: 'InventoryEntryDraft';
-};
+export type TInventoryEntryDraftGraphql = TInventoryEntryDraft;
 
 export type TInventoryEntryBuilder = TBuilder<TInventoryEntry>;
 export type TInventoryEntryDraftBuilder = TBuilder<TInventoryEntryDraft>;

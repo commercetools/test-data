@@ -56,7 +56,6 @@ describe('builder', () => {
       expect.objectContaining({
         cart: expect.objectContaining({
           typeId: 'cart',
-          __typename: 'Reference',
         }),
         version: expect.any(Number),
         orderNumber: expect.any(String),
@@ -65,7 +64,6 @@ describe('builder', () => {
         orderState: expect.any(String),
         state: expect.objectContaining({
           typeId: 'state',
-          __typename: 'Reference',
         }),
         shipmentState: expect.any(String),
         custom: null,

@@ -27,7 +27,6 @@ describe('with `store01` preset', () => {
     const storeDraft = store01().buildGraphql<TStoreDraft>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
-        "__typename": "StoreDraft",
         "countries": undefined,
         "custom": undefined,
         "distributionChannels": undefined,
@@ -35,7 +34,6 @@ describe('with `store01` preset', () => {
         "languages": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Store One",
           },

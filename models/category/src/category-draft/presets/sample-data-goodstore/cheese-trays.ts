@@ -1,6 +1,6 @@
 import {
-  LocalizedString,
-  KeyReference,
+  LocalizedStringDraft,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -11,14 +11,14 @@ const servewareDraft = serveware().build<TCategoryDraft>();
 const cheeseTrays = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Cheese Trays')
         ['en-US']('Cheese Trays')
         ['de-DE']('Käseplatten')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('cheese-trays')
         ['en-US']('cheese-trays')
@@ -26,6 +26,6 @@ const cheeseTrays = (): TCategoryDraftBuilder =>
     )
     .key('cheese-trays')
     .orderHint('.12')
-    .parent(KeyReference.presets.category().key(servewareDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(servewareDraft.key!));
 
 export default cheeseTrays;

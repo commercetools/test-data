@@ -1,4 +1,7 @@
-import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { status, storeMode, unitType, associateMode } from '../../constants';
 import type { TDivisionDraft } from '../../types';
@@ -22,7 +25,7 @@ const generator = Generator<TDivisionDraft>({
     billingAddresses: [0],
     defaultBillingAddress: 0,
     custom: null,
-    parentUnit: KeyReference.random().typeId('business-unit'),
+    parentUnit: KeyReferenceDraft.random().typeId('business-unit'),
   },
 });
 

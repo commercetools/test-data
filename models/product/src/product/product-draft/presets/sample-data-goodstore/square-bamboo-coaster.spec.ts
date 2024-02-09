@@ -160,17 +160,14 @@ describe(`with squareBambooCoaster preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-accessories",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
@@ -178,17 +175,14 @@ describe(`with squareBambooCoaster preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Der quadratische Untersetzer aus Bambus besteht aus einer kleinen Matte mit großer Wirkung, da sie Oberflächen vor Wasserflecken oder Beschädigungen durch Trinkgläser oder Tassen schützt. Er besteht aus natürlichem Bambusmaterial und hat eine glatte Oberfläche. Der Untersetzer hat eine quadratische Form mit leicht abgerundeten Kanten und misst etwa 3,5 Zoll x 3,5 Zoll. Seine leichte und strapazierfähige Beschaffenheit macht ihn zu einer beliebten Wahl für legere und formelle Anlässe gleichermaßen.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A square bamboo coaster is a small mat used to protect surfaces from water stains or damage caused by drinking glasses or mugs. It is made of natural bamboo material and has a smooth surface. The coaster is square in shape with slightly rounded edges, and measures approximately 3.5 inches by 3.5 inches. Its lightweight and durable nature make it a popular choice for casual and formal occasions alike.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A square bamboo coaster is a small mat used to protect surfaces from water stains or damage caused by drinking glasses or mugs. It is made of natural bamboo material and has a smooth surface. The coaster is square in shape with slightly rounded edges, and measures approximately 3.5 inches by 3.5 inches. Its lightweight and durable nature make it a popular choice for casual and formal occasions alike.",
           },
@@ -277,24 +271,20 @@ describe(`with squareBambooCoaster preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Square Bamboo Coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Square Bamboo Coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Quadratischer Untersetzer aus Bambus",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -302,24 +292,20 @@ describe(`with squareBambooCoaster preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "square-bamboo-coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "square-bamboo-coaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "quadratischer-untersetzer-aus-bambus",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

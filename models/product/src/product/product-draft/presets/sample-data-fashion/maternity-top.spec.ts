@@ -244,7 +244,6 @@ describe(`with maternityTop preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-women",
             "typeId": "category",
           },
@@ -318,14 +317,12 @@ describe(`with maternityTop preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Maternity Top",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -333,14 +330,12 @@ describe(`with maternityTop preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-maternity-top",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

@@ -82,14 +82,12 @@ describe(`with accessories preset`, () => {
 
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Type",
               },
@@ -98,7 +96,6 @@ describe(`with accessories preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Type",
               },
@@ -128,7 +125,6 @@ describe(`with accessories preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Engraving",
               },
@@ -137,7 +133,6 @@ describe(`with accessories preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Engraving",
               },

@@ -53,7 +53,7 @@ describe('builder', () => {
       'graphql',
       StoreDraft.random(),
       expect.objectContaining({
-        __typename: 'StoreDraft',
+        key: expect.any(String),
       })
     )
   );

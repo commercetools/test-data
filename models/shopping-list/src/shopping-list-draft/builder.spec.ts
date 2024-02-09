@@ -114,17 +114,14 @@ describe('builder', () => {
           expect.objectContaining({
             locale: 'en',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
           expect.objectContaining({
             locale: 'de',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
           expect.objectContaining({
             locale: 'fr',
             value: expect.any(String),
-            __typename: 'LocalizedString',
           }),
         ]),
         anonymousId: expect.any(String),

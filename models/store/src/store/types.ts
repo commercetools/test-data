@@ -1,5 +1,8 @@
 import type { Store, StoreDraft } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import {
+  TLocalizedStringDraftGraphql,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 //StoreDraft
@@ -7,8 +10,7 @@ export type TStoreDraft = StoreDraft;
 export type TStoreDraftBuilder = TBuilder<TStoreDraft>;
 export type TCreateStoreDraftBuilder = () => TStoreDraftBuilder;
 export type TStoreDraftGraphql = Omit<TStoreDraft, 'name'> & {
-  name: TLocalizedStringGraphql | null;
-  __typename: 'StoreDraft';
+  name: TLocalizedStringDraftGraphql | null;
 };
 //Store
 export type TStore = Store;

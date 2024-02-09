@@ -16,7 +16,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['value', 'customerGroup', 'channel', 'tiers'],
-      addFields: () => ({ __typename: 'CreateStandalonePrice' }),
     }
   ),
 };

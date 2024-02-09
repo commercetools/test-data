@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
@@ -16,8 +16,8 @@ const pants = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('size')
-        .label(LocalizedString.presets.empty()['en-US']('Size'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Size'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
         .isRequired(true)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -41,8 +41,8 @@ const pants = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('fit')
-        .label(LocalizedString.presets.empty()['en-US']('Fit'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Fit'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -66,8 +66,8 @@ const pants = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
-        .label(LocalizedString.presets.empty()['en-US']('Color'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Color'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -91,8 +91,8 @@ const pants = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('length')
-        .label(LocalizedString.presets.empty()['en-US']('Length'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Length'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Length'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Length'))
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([

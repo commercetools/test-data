@@ -67,12 +67,17 @@ const clientLogging = ClientLogging.random().build<TClientLogging>();
 ```ts
 import {
   KeyReference,
+  KeyReferenceDraft,
   type TKeyReference,
+  type TKeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 
 const productKeyRef = KeyReference.random()
   .typeId('product')
   .build<TKeyReference<'product'>>();
+const productKeyRefDraft = KeyReferenceDraft.random()
+  .typeId('product')
+  .build<TKeyReferenceDraft<'product'>>();
 ```
 
 ## `LocalizedString`
@@ -80,21 +85,33 @@ const productKeyRef = KeyReference.random()
 ```ts
 import {
   LocalizedString,
+  LocalizedStringDraft,
   type TLocalizedString,
+  type TLocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 
 const name = LocalizedString.random().build<TLocalizedString>();
+const nameDraft = LocalizedStringDraft.random().build<TLocalizedString>();
 
 // Presets
 const emptyName = LocalizedString.presets.empty().build<TLocalizedString>();
+const emptyNameDraft = LocalizedStringDraft.presets
+  .empty()
+  .build<TLocalizedStringDraft>();
 ```
 
 ## `Money`
 
 ```ts
-import { Money, type TMoney } from '@commercetools-test-data/money';
+import {
+  Money,
+  MoneyDraft,
+  type TMoney,
+  type TMoneyDraft,
+} from '@commercetools-test-data/money';
 
 const Money = Money.random().build<TMoney>();
+const MoneyDraft = MoneyDraft.random().build<TMoneyDraft>();
 ```
 
 ## `Price`
@@ -114,16 +131,27 @@ const priceDraft = PriceDraft.random().build<TPriceDraft>();
 ## `Reference`
 
 ```ts
-import { Reference, type TReference } from '@commercetools-test-data/commons';
+import {
+  Reference,
+  ReferenceDraft,
+  type TReference,
+  type TReferenceDraft,
+} from '@commercetools-test-data/commons';
 
 const productRef = Reference.random()
   .typeId('product')
   .build<TReference<'product'>>();
+const productRefDraft = ReferenceDraft.random()
+  .typeId('product')
+  .build<TReferenceDraft<'product'>>();
 
 // Presets
 const categoryRef = Reference.presets
   .category()
   .build<TReference<'category'>>();
+const categoryRefDraft = ReferenceDraft.presets
+  .category()
+  .build<TReferenceDraft<'category'>>();
 ```
 
 ## `PriceTier`

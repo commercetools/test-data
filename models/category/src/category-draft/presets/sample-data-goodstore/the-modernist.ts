@@ -1,6 +1,6 @@
 import {
-  LocalizedString,
-  KeyReference,
+  LocalizedStringDraft,
+  KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
@@ -11,14 +11,14 @@ const collectionsDraft = collections().build<TCategoryDraft>();
 const theModernist = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('The Modernist')
         ['en-US']('The Modernist')
         ['de-DE']('The Modernist')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('the-modernist')
         ['en-US']('the-modernist')
@@ -26,6 +26,6 @@ const theModernist = (): TCategoryDraftBuilder =>
     )
     .key('the-modernist')
     .orderHint('.0035')
-    .parent(KeyReference.presets.category().key(collectionsDraft.key!));
+    .parent(KeyReferenceDraft.presets.category().key(collectionsDraft.key!));
 
 export default theModernist;

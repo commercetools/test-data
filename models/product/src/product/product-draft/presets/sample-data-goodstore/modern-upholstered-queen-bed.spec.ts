@@ -203,27 +203,22 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "collections",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "beds",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "the-modernist",
             "typeId": "category",
           },
@@ -231,17 +226,14 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A queen bed upholstered with velvet fabric and brass nails and tufting is a luxurious and elegant piece of furniture that can add a touch of glamour and sophistication to any bedroom. The bed features a wooden frame that is covered with soft and plush velvet upholstery.  The headboard of the bed is the focal point of the design, featuring a tufted or quilted pattern that creates a plush and inviting surface to lean against. The tufting is accentuated with brass nailhead trim, which adds a touch of metallic shine and texture to the design.  The footboard and side rails of the bed are also upholstered in the same velvet fabric and trimmed with brass nailheads, creating a cohesive and stylish look. The legs of the bed are wood.  The queen size of the bed provides ample space for a comfortable night's sleep, while the luxurious velvet upholstery and brass accents add an element of glamour and sophistication to the room. The bed can be paired with a range of bedding and accessories, such as plush pillows and soft blankets, to create a cozy and inviting atmosphere.  Overall, a queen bed upholstered with velvet fabric and brass nails and tufting is a stunning and stylish piece of furniture that can transform any bedroom into a luxurious and elegant space. Its plush upholstery, intricate tufting, and metallic accents make it a standout piece that is sure to impress and delight.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein mit Samtstoff gepolstertes Bett mit Messingnägeln und Tufting ist ein luxuriöses und elegantes Möbelstück, das jedem Schlafzimmer einen Hauch von Glamour und Raffinesse verleihen kann. Das Bett besteht aus einem Holzrahmen, der mit einem weichen und plüschigen Samtbezug überzogen ist. Das Kopfteil des Bettes ist der Mittelpunkt des Designs und weist ein getuftetes oder gestepptes Muster auf, das eine weiche und einladende Oberfläche zum Anlehnen bietet. Die Tuftings sind mit Messingnägeln akzentuiert, die dem Design einen Hauch von metallischem Glanz und Textur verleihen. Das Fußteil und die Seitengitter des Bettes sind ebenfalls mit demselben Samtstoff bezogen und mit Messingnagelköpfen verziert, wodurch ein einheitliches und stilvolles Erscheinungsbild entsteht. Die Beine des Bettes sind aus Holz. Die Größe des Bettes bietet reichlich Platz für eine komfortable Nachtruhe, während die luxuriöse Samtpolsterung und die Messingakzente dem Raum einen Hauch von Glamour und Raffinesse verleihen. Das Bett kann mit einer Reihe von Bettwaren und Accessoires, wie z. B. Plüschkissen und weichen Decken, kombiniert werden, um eine gemütliche und einladende Atmosphäre zu schaffen. Insgesamt ist ein mit Samtstoff gepolstertes Bett mit Messingnägeln und Tufting ein atemberaubendes und stilvolles Möbelstück, das jedes Schlafzimmer in einen luxuriösen und eleganten Raum verwandeln kann. Die plüschige Polsterung, die raffinierten Tuftings und die metallischen Akzente machen es zu einem herausragenden Möbelstück, das Sie sicher beeindrucken und begeistern wird.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A queen bed upholstered with velvet fabric and brass nails and tufting is a luxurious and elegant piece of furniture that can add a touch of glamour and sophistication to any bedroom. The bed features a wooden frame that is covered with soft and plush velvet upholstery.  The headboard of the bed is the focal point of the design, featuring a tufted or quilted pattern that creates a plush and inviting surface to lean against. The tufting is accentuated with brass nailhead trim, which adds a touch of metallic shine and texture to the design.  The footboard and side rails of the bed are also upholstered in the same velvet fabric and trimmed with brass nailheads, creating a cohesive and stylish look. The legs of the bed are wood.  The queen size of the bed provides ample space for a comfortable night's sleep, while the luxurious velvet upholstery and brass accents add an element of glamour and sophistication to the room. The bed can be paired with a range of bedding and accessories, such as plush pillows and soft blankets, to create a cozy and inviting atmosphere.  Overall, a queen bed upholstered with velvet fabric and brass nails and tufting is a stunning and stylish piece of furniture that can transform any bedroom into a luxurious and elegant space. Its plush upholstery, intricate tufting, and metallic accents make it a standout piece that is sure to impress and delight.",
           },
@@ -346,24 +338,20 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Modern Upholstered Queen Bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Modernes gepolstertes Queensize-Bett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Modern Upholstered Queen Bed",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -371,24 +359,20 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "modern-upholstered-queen-bed",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "modernes-gepolstertes-queensize-bett",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "modern-upholstered-queen-bed",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

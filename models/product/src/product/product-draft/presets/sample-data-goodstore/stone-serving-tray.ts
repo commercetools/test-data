@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -56,14 +56,14 @@ const stoneServingTray = (): TProductDraftBuilder =>
     .empty()
     .key('stone-serving-tray')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Stone Serving Tray')
         ['en-GB']('Stone Serving Tray')
         ['de-DE']('Serviertablett aus Stein')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US'](
           "The Stone Serving Tray is made of natural stone that is designed to serve and display food. The tray is made of sturdy slate.  The weight and texture of the stone material provide stability and a sense of luxury to the tray, making it ideal for serving a variety of items, including cheese, fruits or bread. The tray's natural stone material also makes it an excellent choice for use in outdoor settings, such as a picnic or barbecue.  A stone serving tray is easy to clean and maintain. It can be washed with soap and water, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a stone serving tray is a functional and aesthetically pleasing item that adds a touch of natural elegance to any setting. Its durability, stability and unique design make it a popular choice for serving and displaying food and beverages."
@@ -76,31 +76,31 @@ const stoneServingTray = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('stone-serving-tray')
         ['en-GB']('stone-serving-tray')
         ['de-DE']('serviertablett-aus-stein')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(stoneServingTrayProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.stoneServingTray01()
     )
     .categories([
-      KeyReference.presets.category().key(kitchenDraft.key!),
-      KeyReference.presets.category().key(servewareDraft.key!),
-      KeyReference.presets.category().key(dinnerwareDraft.key!),
-      KeyReference.presets.category().key(cheeseTraysDraft.key!),
-      KeyReference.presets.category().key(servingPlattersDraft.key!),
-      KeyReference.presets.category().key(bakewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(kitchenDraft.key!),
+      KeyReferenceDraft.presets.category().key(servewareDraft.key!),
+      KeyReferenceDraft.presets.category().key(dinnerwareDraft.key!),
+      KeyReferenceDraft.presets.category().key(cheeseTraysDraft.key!),
+      KeyReferenceDraft.presets.category().key(servingPlattersDraft.key!),
+      KeyReferenceDraft.presets.category().key(bakewareDraft.key!),
     ]);
 
 export default stoneServingTray;

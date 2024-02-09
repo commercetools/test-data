@@ -1,6 +1,6 @@
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -28,14 +28,14 @@ const rusticOvenCasserole = (): TProductDraftBuilder =>
     .empty()
     .key('rustic-oven-casserole')
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Rustic Oven Casserole')
         ['en-GB']('Rustic Oven Casserole')
         ['de-DE']('Rustikale Auflaufform')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['de-DE'](
           'Die rustikale Keramik-Kasserolle eignet sich ideal zum Backen oder Braten von Aufläufen, Eintöpfen oder anderen Ofengerichten. Im traditionellen Stil gehalten, hat die Ofenform ein rustikales Aussehen, ist in erdigen Farben und mit strukturierter Oberfläche und unebenen Rändern gestaltet.  Die Dicke des Materials macht sie langlebig und temperaturfest, sodass Risse und Absplitterungen ausgeschlossen werden können. Das Material ist zudem so beständig, dass es nicht auf saure oder scharfe Speisen reagiert. Die Aromen der Gerichte bleiben somit jederzeit unverändert.  Das Design der Keramikform sorgt für rustikalen Charme in der Küche und im Essbereich. Besonders in der kalten Jahreszeit eignet sich die Ofenform außerdem ideal zum Servieren warmer und herzhafter Speisen.  Für die Reinigung der rustikalen Servierform empfiehlt es sich, sie nach vollständigem Abkühlen mit warmem Seifenwasser zu waschen. Sie sollte vor der Lagerung gründlich getrocknet werden, um zu verhindern, dass Feuchtigkeit im Inneren eingeschlossen wird.  Eine rustikale Auflaufform aus Keramik ist ein praktisches und ästhetisch ansprechendes Kochgeschirr, das jeder Küche einen Hauch von Wärme und Charakter verleiht. Die robuste Machart und das klassische Design machen sie zum Must-have der Küchenausstattung für Hobbyköche und Köche gleichermaßen.'
@@ -48,20 +48,20 @@ const rusticOvenCasserole = (): TProductDraftBuilder =>
         )
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('rustic-oven-casserole')
         ['en-GB']('rustic-oven-casserole')
         ['de-DE']('rustikaler-ofentopf')
     )
     .productType(
-      KeyReference.presets
+      KeyReferenceDraft.presets
         .productType()
         .key(rusticOvenCasseroleProductTypeDraft.key!)
     )
     .publish(true)
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategory.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategory.key!)
     )
     .masterVariant(
       ProductVariantDraft.presets.sampleDataGoodStore.rusticOvenCasserole01()

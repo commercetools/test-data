@@ -26,3 +26,18 @@ export type TReferenceGraphql<TypeId = string> =
   TExpandedReferenceObject<TypeId> & {
     __typename: 'Reference';
   };
+
+// Draft representation
+export interface TReferenceDraft<TypeId = string> {
+  typeId: TypeId;
+  id: string;
+}
+
+export type TReferenceDraftGraphql<TypeId = string> =
+  TExpandedReferenceObject<TypeId>;
+
+export type TReferenceDraftBuilder<TypeId = string> = TBuilder<
+  TReferenceDraft<TypeId>
+>;
+export type TCreateReferenceDraftBuilder<TypeId = string> =
+  () => TReferenceDraftBuilder<TypeId>;

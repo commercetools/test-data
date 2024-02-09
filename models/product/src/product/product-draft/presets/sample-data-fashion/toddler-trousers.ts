@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -33,10 +33,14 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
 const ToddlerTrousers = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-US']('Sample Toddler Trousers'))
-    .slug(LocalizedString.presets.empty()['en-US']('sample-toddler-trousers'))
+    .name(
+      LocalizedStringDraft.presets.empty()['en-US']('Sample Toddler Trousers')
+    )
+    .slug(
+      LocalizedStringDraft.presets.empty()['en-US']('sample-toddler-trousers')
+    )
     .productType(
-      KeyReference.presets.productType().key(pantsProductTypeDraft.key!)
+      KeyReferenceDraft.presets.productType().key(pantsProductTypeDraft.key!)
     )
     .publish(true)
     .masterVariant(
@@ -48,8 +52,8 @@ const ToddlerTrousers = (): TProductDraftBuilder =>
     ])
     .key('toddler_trousers')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default ToddlerTrousers;

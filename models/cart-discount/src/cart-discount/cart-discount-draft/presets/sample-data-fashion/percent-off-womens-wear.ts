@@ -2,7 +2,7 @@ import {
   CategoryDraft,
   TCategoryDraft,
 } from '@commercetools-test-data/category';
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
@@ -26,12 +26,12 @@ const percentOffWomensWear = (): TCartDiscountDraftBuilder =>
       )
     )
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']("15% off all regular priced Women's wear")
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']("Take 15% off any full priced item from our Women's category")
     )

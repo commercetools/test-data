@@ -1,7 +1,7 @@
 import {
-  LocalizedString,
-  KeyReference,
-  Money,
+  LocalizedStringDraft,
+  KeyReferenceDraft,
+  MoneyDraft,
 } from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
@@ -29,26 +29,26 @@ const paymentUSA = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
     .key(orderUS.cart!.key!)
-    .customer(KeyReference.presets.customer().key(customerUSA.key!))
-    .amountPlanned(Money.random().centAmount(32348).currencyCode('USD'))
+    .customer(KeyReferenceDraft.presets.customer().key(customerUSA.key!))
+    .amountPlanned(MoneyDraft.random().centAmount(32348).currencyCode('USD'))
     .paymentMethodInfo(
       PaymentMethodInfoDraft.presets
         .empty()
         .method('Credit Card')
-        .name(LocalizedString.presets.empty()['en']('Credit Card'))
+        .name(LocalizedStringDraft.presets.empty()['en']('Credit Card'))
     )
     .paymentStatus(PaymentStatusDraft.presets.empty().interfaceText('Paid'))
     .transactions([
       TransactionDraft.presets
         .empty()
-        .amount(Money.random().centAmount(32348).currencyCode('USD'))
+        .amount(MoneyDraft.random().centAmount(32348).currencyCode('USD'))
         .state(constants.TransactionState.Pending)
         .timestamp('2023-07-01T03:15:00.000Z')
         .type(constants.TransactionType.Authorization)
         .interactionId('123456789'),
       TransactionDraft.presets
         .empty()
-        .amount(Money.random().centAmount(32348).currencyCode('USD'))
+        .amount(MoneyDraft.random().centAmount(32348).currencyCode('USD'))
         .state(constants.TransactionState.Success)
         .timestamp('2023-07-01T03:17:00.000Z')
         .type(constants.TransactionType.Charge)

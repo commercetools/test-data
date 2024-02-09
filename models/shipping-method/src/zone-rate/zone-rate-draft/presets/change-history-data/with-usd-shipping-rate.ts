@@ -1,4 +1,4 @@
-import { KeyReference } from '@commercetools-test-data/commons';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import { ShippingRateDraft } from '../../../../shipping-rate';
 import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';
@@ -8,7 +8,7 @@ import * as ZoneRateDraft from '../../index';
 
 const usZone = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
-    .zone(KeyReference.presets.zone().key('e2e-us-zone'))
+    .zone(KeyReferenceDraft.presets.zone().key('e2e-us-zone'))
     .shippingRates([ShippingRateDraft.presets.changeHistoryData.usdCurrency()]);
 
 export default usZone;

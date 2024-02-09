@@ -111,7 +111,6 @@ describe('with the preset `sampleUsa`', () => {
         "companyName": undefined,
         "custom": undefined,
         "customerGroup": {
-          "__typename": "Reference",
           "key": "vip",
           "typeId": "customer-group",
         },

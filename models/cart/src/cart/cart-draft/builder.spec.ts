@@ -130,12 +130,10 @@ describe('builder', () => {
         customerEmail: expect.any(String),
         customerGroup: expect.objectContaining({
           typeId: 'customer-group',
-          __typename: 'Reference',
         }),
         anonymousId: expect.any(String),
         businessUnit: expect.objectContaining({
           typeId: 'business-unit',
-          __typename: 'Reference',
         }),
         store: null,
         country: expect.any(String),
@@ -162,7 +160,6 @@ describe('builder', () => {
         }),
         shippingMethod: expect.objectContaining({
           typeId: 'shipping-method',
-          __typename: 'Reference',
         }),
         externalTaxRateForShippingMethod: null,
         custom: null,

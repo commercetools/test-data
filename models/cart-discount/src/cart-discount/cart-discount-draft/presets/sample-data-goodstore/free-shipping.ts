@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   CartDiscountShippingCostTargetDraft,
   CartDiscountValueRelativeDraft,
@@ -14,13 +14,13 @@ const freeShipping = (): TCartDiscountDraftBuilder =>
     .cartPredicate('totalPrice >= "100 GBP"')
     .target(CartDiscountShippingCostTargetDraft.random())
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Free Shipping when you spend 100 GBP')
         ['en-GB']('Free Shipping when you spend 100 GBP')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Free shipping when your order is at least 100 GBP')
         ['en-GB']('Free shipping when your order is at least 100 GBP')

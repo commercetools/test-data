@@ -53,40 +53,33 @@ describe(`with rugs preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Rugs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Rugs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Teppiche",
           },
         ],
         "orderHint": ".4",
         "parent": {
-          "__typename": "Reference",
           "key": "room-decor",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "rugs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "rugs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "teppiche",
           },

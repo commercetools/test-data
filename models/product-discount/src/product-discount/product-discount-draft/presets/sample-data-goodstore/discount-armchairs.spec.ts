@@ -47,12 +47,10 @@ describe('with the preset `discountArmchairs`', () => {
       {
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "15% Off All Armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "15% Off All Armchairs",
           },
@@ -61,12 +59,10 @@ describe('with the preset `discountArmchairs`', () => {
         "key": "NewArrivals15pctOff",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "15% Off All Armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "15% Off All Armchairs",
           },

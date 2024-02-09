@@ -17,6 +17,4 @@ export type TCreateCustomLineItemDraftBuilder =
 export type TCustomLineItemGraphql = TCustomLineItem & {
   __typename: 'CustomLineItem';
 };
-export type TCustomLineItemDraftGraphql = TCustomLineItemDraft & {
-  __typename: 'CustomLineItemDraft';
-};
+export type TCustomLineItemDraftGraphql = TCustomLineItemDraft;

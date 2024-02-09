@@ -1,4 +1,7 @@
-import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -53,7 +56,7 @@ const sampleAustralia02 = (customerId?: string): TCartDraftBuilder =>
         .quantity(1),
     ])
     .shippingMethod(
-      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+      KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .discountCodes([employeeSale.code]);
 

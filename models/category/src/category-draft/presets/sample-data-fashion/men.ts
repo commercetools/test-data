@@ -1,12 +1,12 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const men = (): TCategoryDraftBuilder =>
   empty()
-    .name(LocalizedString.presets.empty()['en-US']('Men'))
-    .slug(LocalizedString.presets.empty()['en-US']('men'))
-    .description(LocalizedString.presets.empty()['en-US']('Items for men'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Men'))
+    .slug(LocalizedStringDraft.presets.empty()['en-US']('men'))
+    .description(LocalizedStringDraft.presets.empty()['en-US']('Items for men'))
     .key('men')
     .orderHint('0.75');
 

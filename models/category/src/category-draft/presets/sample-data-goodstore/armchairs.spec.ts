@@ -54,40 +54,33 @@ describe(`with armchairs preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Chairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Stühle",
           },
         ],
         "orderHint": ".3",
         "parent": {
-          "__typename": "Reference",
           "key": "living-room-furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "armchairs",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "chairs",
           },

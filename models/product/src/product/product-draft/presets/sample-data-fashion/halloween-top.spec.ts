@@ -211,7 +211,6 @@ describe(`with halloweenTop preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "tops-men",
             "typeId": "category",
           },
@@ -302,14 +301,12 @@ describe(`with halloweenTop preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sample Halloween Top",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "shirts",
           "typeId": "product-type",
         },
@@ -317,14 +314,12 @@ describe(`with halloweenTop preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sample-halloween-top",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

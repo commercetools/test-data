@@ -203,17 +203,14 @@ describe(`with rusticCountryDresser preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bedroom-furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "storage--tables",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
@@ -221,17 +218,14 @@ describe(`with rusticCountryDresser preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A rustic country dresser with ample storage is a charming and practical piece of furniture that can add warmth and character to any bedroom or living space. The dresser features a sturdy wooden frame and a vintage look that is both rustic and inviting.  The dresser is equipped with a range of drawers in various sizes, providing ample storage space for clothing, linens, and other items. The drawers are constructed with dovetail joints and gliding hardware, ensuring that they are durable and easy to use. The drawer fronts are adorned with rustic metal pulls, adding to the charm and character of the piece.  The top of the dresser provides additional storage space, allowing you to display decorative items, such as vases, candles, or picture frames.   Overall, a rustic country dresser with ample storage is a practical and stylish piece of furniture that can add warmth and character to any bedroom or living space. Its sturdy construction, ample storage space, and charming design make it a functional and beautiful addition to any home with a rustic or country decor style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A rustic country dresser with ample storage is a charming and practical piece of furniture that can add warmth and character to any bedroom or living space. The dresser features a sturdy wooden frame and a vintage look that is both rustic and inviting.  The dresser is equipped with a range of drawers in various sizes, providing ample storage space for clothing, linens, and other items. The drawers are constructed with dovetail joints and gliding hardware, ensuring that they are durable and easy to use. The drawer fronts are adorned with rustic metal pulls, adding to the charm and character of the piece.  The top of the dresser provides additional storage space, allowing you to display decorative items, such as vases, candles, or picture frames.   Overall, a rustic country dresser with ample storage is a practical and stylish piece of furniture that can add warmth and character to any bedroom or living space. Its sturdy construction, ample storage space, and charming design make it a functional and beautiful addition to any home with a rustic or country decor style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Die rustikale Landhauskommode mit viel Stauraum ist ein charmantes und praktisches Möbelstück, das jedem Schlafzimmer oder Wohnzimmer Wärme und Charakter verleiht. Die stabile Kommode mit Holzrahmen ist im Vintage-Look gehalten und wirkt sowohl rustikal als auch einladend.  Die Kommode ist mit einer Reihe von Schubladen in verschiedenen Größen ausgestattet, die ausreichend Stauraum für Kleidung, Bettwäsche und andere Gegenstände bieten. Die Schubladen sind mit Schwalbenschwanzverbindungen und Gleitbeschlägen konstruiert, um sicherzustellen, dass sie langlebig und einfach zu bedienen sind. Die Schubladenfronten sind mit rustikalen Metallgriffen geschmückt, die den Charme und Charakter des Möbelstücks noch verstärken. Die Platte der Kommode bietet zusätzlichen Stauraum für dekorative Gegenstände wie Vasen, Kerzen oder Bilderrahmen.  Eine rustikale Landhauskommode schafft auf praktische und stilvolle Weise Stauraum für und verleiht jedem Schlaf- oder Wohnraum gleichzeitig Wärme und Charme. Die robuste Konstruktion und das schlichte Design machen sie zu einer funktionalen und schönen Ergänzung für jedes Zuhause mit rustikalem oder ländlichem Einrichtungsstil.",
           },
@@ -352,24 +346,20 @@ describe(`with rusticCountryDresser preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Rustic Country Dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Rustic Country Dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Rustikale Landhauskommode",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -377,24 +367,20 @@ describe(`with rusticCountryDresser preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "rustic-country-dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "rustic-country-dresser",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "rustikale-landhauskommode",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

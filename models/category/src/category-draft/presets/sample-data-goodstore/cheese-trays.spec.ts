@@ -54,40 +54,33 @@ describe(`with cheeseTrays preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Cheese Trays",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Cheese Trays",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Käseplatten",
           },
         ],
         "orderHint": ".12",
         "parent": {
-          "__typename": "Reference",
           "key": "serveware",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "cheese-trays",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "cheese-trays",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "cheese-trays",
           },

@@ -188,17 +188,14 @@ describe(`with charlieArmchair preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "armchairs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "furniture",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "living-room-furniture",
             "typeId": "category",
           },
@@ -206,17 +203,14 @@ describe(`with charlieArmchair preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A corduroy chair with wooden legs has a cozy and rustic feel. The chair has a sturdy wooden frame and four straight, tapered legs that support the seat and backrest. The corduroy upholstery is soft and plush fabric with a distinctive ribbed texture that adds visual interest and depth to the chair. The color of the corduroy is a warm and earthy tone. The wooden legs are finished in a natural wood stain. The chair has a simple and understated design that complements a variety of interior decor styles.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A corduroy chair with wooden legs has a cozy and rustic feel. The chair has a sturdy wooden frame and four straight, tapered legs that support the seat and backrest. The corduroy upholstery is soft and plush fabric with a distinctive ribbed texture that adds visual interest and depth to the chair. The color of the corduroy is a warm and earthy tone. The wooden legs are finished in a natural wood stain. The chair has a simple and understated design that complements a variety of interior decor styles.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieser Sessel mit Kordbezug und Holzbeinen hat eine gemütliche und rustikale Ausstrahlung. Der Stuhl hat einen stabilen Holzrahmen und vier gerade, sich verjüngende Beine, die den Sitz und die Rückenlehne tragen. Die Kordpolsterung ist ein weicher und plüschiger Stoff mit einer unverwechselbaren gerippten Textur, die dem Stuhl visuelle Rafinesse und Tiefe verleiht. Der Kordstoff ist in einem warmem und erdigen Ton gehalten. Die Holzbeine sind natürlich gebeizt. Der Stuhl hat ein einfaches und dezentes Design, das zu einer Vielzahl von Einrichtungsstilen passt.",
           },
@@ -321,24 +315,20 @@ describe(`with charlieArmchair preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Charlie Armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Charlie Armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sessel "Charlie"",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -346,24 +336,20 @@ describe(`with charlieArmchair preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "charlie-armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "charlie-armchair",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "charlie-sessel",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

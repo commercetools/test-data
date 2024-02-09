@@ -54,40 +54,33 @@ describe(`with roomDecor preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Room Decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Room Decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Zimmerdekoration",
           },
         ],
         "orderHint": ".8",
         "parent": {
-          "__typename": "Reference",
           "key": "home-decor",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "room-decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "room-decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "zimmerdekoration",
           },

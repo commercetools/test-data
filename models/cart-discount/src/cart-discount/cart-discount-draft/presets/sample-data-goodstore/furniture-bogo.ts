@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
   TProductTypeDraft,
@@ -30,13 +30,13 @@ const furnitureBogo = (): TCartDiscountDraftBuilder =>
         .maxOccurrence(undefined)
     )
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('Buy One Item of Furniture and Receive the Second for Free')
         ['en-GB']('Buy One Item of Furniture and Receive the Second for Free')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US'](
           'Two for one on all furniture items (discount on the cheapest item)'

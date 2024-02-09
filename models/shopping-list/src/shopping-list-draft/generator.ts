@@ -1,4 +1,7 @@
-import { LocalizedString, Reference } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  Reference,
+} from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TShoppingListDraft } from '../types';
 
@@ -7,10 +10,10 @@ import { TShoppingListDraft } from '../types';
 const generator = Generator<TShoppingListDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    name: fake(() => LocalizedString.random()),
-    slug: fake(() => LocalizedString.presets.ofSlugs()),
+    name: fake(() => LocalizedStringDraft.random()),
+    slug: fake(() => LocalizedStringDraft.presets.ofSlugs()),
     customer: fake(() => Reference.random().typeId('customer')),
-    description: fake(() => LocalizedString.random()),
+    description: fake(() => LocalizedStringDraft.random()),
     anonymousId: fake((f) => f.string.uuid()),
     deleteDaysAfterLastModification: null,
     lineItems: [],

@@ -155,17 +155,14 @@ describe(`with cobblestoneRug preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "rugs",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -173,17 +170,14 @@ describe(`with cobblestoneRug preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieser Strukturteppich kann in einer Vielzahl von Räumen verwendet werden, von Wohnzimmern über Schlafzimmer bis hin zu Heimbüros. Er ist besonders beliebt in modernen und zeitgenössischen Einrichtungsstilen. Hier kann er ein mutiger und grafischer Hingucker sein.  Insgesamt ist ein Teppich mit geometrischen Akzenten eine stilvolle und vielseitige Designwahl, die jedem Raum im Haus visuelles Interesse und Textur verleihen kann.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Cobblestone Rug can be used in a variety of spaces, from living rooms to bedrooms to home offices. It is especially popular in modern and contemporary decor styles, where they can add a bold and graphic element to the space.  Overall, a geometric accent rug is a stylish and versatile design choice that can add visual interest and texture to any room in the home.",
           },
@@ -272,24 +266,20 @@ describe(`with cobblestoneRug preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Cobblestone Rug",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Cobblestone Rug",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Strukturteppich "Kopfsteinpflaster"",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -297,24 +287,20 @@ describe(`with cobblestoneRug preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "cobblestone-rug",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "kopfsteinpflaster",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "cobblestone-rug",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

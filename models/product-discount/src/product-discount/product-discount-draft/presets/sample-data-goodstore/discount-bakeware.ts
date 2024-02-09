@@ -2,7 +2,10 @@ import {
   CategoryDraft,
   TCategoryDraft,
 } from '@commercetools-test-data/category';
-import { LocalizedString, Money } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  MoneyDraft,
+} from '@commercetools-test-data/commons';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
@@ -16,18 +19,18 @@ const discountBakeware = (): TProductDiscountDraftBuilder =>
     .empty()
     .value(
       ProductDiscountValueAbsoluteDraft.random().money([
-        Money.random().currencyCode('EUR').centAmount(500),
+        MoneyDraft.random().currencyCode('EUR').centAmount(500),
       ])
     )
     .predicate(`categories.key contains "${categoryTypeDraft.key}"`)
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('5 EUR Off All Bakeware Items')
         ['en-GB']('5 EUR Off All Bakeware Items')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('5 EUR Off All Bakeware Items')
         ['en-GB']('5 EUR Off All Bakeware Items')

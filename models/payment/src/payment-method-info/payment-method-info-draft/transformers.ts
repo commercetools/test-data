@@ -21,9 +21,6 @@ const transformers = {
     'graphql',
     {
       buildFields: ['name'],
-      addFields: () => ({
-        __typename: 'PaymentMethodInfoInput',
-      }),
     }
   ),
 };

@@ -52,20 +52,17 @@ describe(`with otherKids preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Other",
           },
         ],
         "orderHint": "0.25",
         "parent": {
-          "__typename": "Reference",
           "key": "kids",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "other_kids",
           },

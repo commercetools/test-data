@@ -1,4 +1,7 @@
-import { LocalizedString, Reference } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  Reference,
+} from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
 import type { TShippingMethodDraft } from '../types';
 
@@ -8,8 +11,8 @@ const generator = Generator<TShippingMethodDraft>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
     name: fake((f) => f.lorem.words(2)),
-    localizedName: fake((f) => LocalizedString.random()),
-    localizedDescription: fake(() => LocalizedString.random()),
+    localizedName: fake((f) => LocalizedStringDraft.random()),
+    localizedDescription: fake(() => LocalizedStringDraft.random()),
     taxCategory: fake(() => Reference.random().typeId('tax-category')),
     zoneRates: [],
     isDefault: fake((f) => f.datatype.boolean()),

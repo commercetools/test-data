@@ -1,7 +1,7 @@
-import * as Money from '../../../money';
+import { MoneyDraft } from '../../../money';
 import PriceDraft from '../builder';
 
 const withValue = ({ currency = 'USD' } = {}) =>
-  PriceDraft().value(Money.presets.withCurrency(currency));
+  PriceDraft().value(MoneyDraft.presets.withCurrency(currency));
 
 export default withValue;

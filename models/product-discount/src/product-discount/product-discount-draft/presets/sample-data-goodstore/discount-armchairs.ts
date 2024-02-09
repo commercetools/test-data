@@ -2,7 +2,7 @@ import {
   CategoryDraft,
   TCategoryDraft,
 } from '@commercetools-test-data/category';
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { ProductDiscountValueRelativeDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
@@ -17,13 +17,13 @@ const discountNewArrivals = (): TProductDiscountDraftBuilder =>
     .value(ProductDiscountValueRelativeDraft.random().permyriad(1500))
     .predicate(`categories.key contains "${categoryTypeDraft.key}"`)
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('15% Off All Armchairs')
         ['en-GB']('15% Off All Armchairs')
     )
     .description(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-US']('15% Off All Armchairs')
         ['en-GB']('15% Off All Armchairs')

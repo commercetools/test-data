@@ -2,7 +2,7 @@ import {
   AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import { TLocalizedStringDraftGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TAttributeDefinition = AttributeDefinition;
@@ -17,8 +17,8 @@ export type TAttributeDefinitionDraftGraphql = Omit<
   TAttributeDefinitionDraft,
   'label' | 'inputTip'
 > & {
-  label: TLocalizedStringGraphql;
-  inputTip?: TLocalizedStringGraphql | null;
+  label: TLocalizedStringDraftGraphql;
+  inputTip?: TLocalizedStringDraftGraphql | null;
 };
 
 export type TAttributeDefinitionBuilder = TBuilder<TAttributeDefinition>;

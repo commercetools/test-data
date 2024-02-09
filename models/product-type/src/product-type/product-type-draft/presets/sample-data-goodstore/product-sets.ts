@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   attributeConstraints,
   inputHints,
@@ -27,7 +27,7 @@ const productSets = (): TProductTypeDraftBuilder =>
           )
         )
         .label(
-          LocalizedString.presets
+          LocalizedStringDraft.presets
             .empty()
             ['en-GB']('Type')
             ['en-US']('Type')

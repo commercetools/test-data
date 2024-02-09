@@ -54,40 +54,33 @@ describe(`with theTraditionalist preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "The Traditionalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "The Traditionalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "The Traditionalist",
           },
         ],
         "orderHint": "0.0033",
         "parent": {
-          "__typename": "Reference",
           "key": "collections",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "the-traditionalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "the-traditionalist",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "the-traditionalist",
           },

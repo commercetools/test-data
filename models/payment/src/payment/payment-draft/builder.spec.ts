@@ -118,7 +118,6 @@ describe('builder', () => {
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: expect.any(String),
-          __typename: 'Reference',
         }),
         anonymousId: expect.any(String),
         interfaceId: expect.any(String),
@@ -127,19 +126,16 @@ describe('builder', () => {
           currencyCode: expect.any(String),
         }),
         paymentMethodInfo: expect.objectContaining({
-          __typename: 'PaymentMethodInfoInput',
           method: expect.any(String),
           paymentInterface: expect.any(String),
           name: expect.arrayContaining([
             expect.objectContaining({
-              __typename: 'LocalizedString',
               locale: expect.any(String),
               value: expect.any(String),
             }),
           ]),
         }),
         paymentStatus: expect.objectContaining({
-          __typename: 'PaymentStatusDraft',
           interfaceCode: expect.any(String),
           interfaceText: expect.any(String),
           state: expect.objectContaining({
@@ -149,7 +145,6 @@ describe('builder', () => {
         }),
         transactions: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'TransactionDraft',
             amount: expect.objectContaining({
               centAmount: expect.any(Number),
               currencyCode: expect.any(String),
@@ -163,7 +158,6 @@ describe('builder', () => {
         ]),
         interfaceInteractions: expect.arrayContaining([]),
         custom: null,
-        __typename: 'PaymentDraft',
       })
     )
   );

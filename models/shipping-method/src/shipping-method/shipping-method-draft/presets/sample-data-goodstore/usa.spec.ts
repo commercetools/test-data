@@ -61,17 +61,14 @@ describe('Shipping Method with USA preset', () => {
         "localizedDescription": undefined,
         "localizedName": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "US Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "US Delivery",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "US Delivery",
           },
@@ -79,7 +76,6 @@ describe('Shipping Method with USA preset', () => {
         "name": "US Delivery",
         "predicate": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },
@@ -99,7 +95,6 @@ describe('Shipping Method with USA preset', () => {
               },
             ],
             "zone": {
-              "__typename": "Reference",
               "key": "usa",
               "typeId": "zone",
             },

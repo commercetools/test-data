@@ -1,6 +1,7 @@
 import type { Category, CategoryDraft } from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
+  TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -18,12 +19,12 @@ export type TCategoryDraftGraphql = Omit<
   | 'metaDescription'
   | 'metaKeywords'
 > & {
-  name: TLocalizedStringGraphql;
-  description?: TLocalizedStringGraphql | null;
-  slug: TLocalizedStringGraphql;
-  metaTitle?: TLocalizedStringGraphql | null;
-  metaDescription?: TLocalizedStringGraphql | null;
-  metaKeywords?: TLocalizedStringGraphql | null;
+  name: TLocalizedStringDraftGraphql;
+  description?: TLocalizedStringDraftGraphql | null;
+  slug: TLocalizedStringDraftGraphql;
+  metaTitle?: TLocalizedStringDraftGraphql | null;
+  metaDescription?: TLocalizedStringDraftGraphql | null;
+  metaKeywords?: TLocalizedStringDraftGraphql | null;
 };
 
 //Category

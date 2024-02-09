@@ -55,7 +55,6 @@ describe('builder', () => {
         interactionId: null,
         state: expect.any(String),
         custom: null,
-        __typename: 'TransactionDraft',
       })
     )
   );

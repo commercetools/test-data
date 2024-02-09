@@ -53,40 +53,33 @@ describe(`with beds preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Beds",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Beds",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Betten",
           },
         ],
         "orderHint": ".4",
         "parent": {
-          "__typename": "Reference",
           "key": "bedroom-furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "beds",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "beds",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "beds",
           },

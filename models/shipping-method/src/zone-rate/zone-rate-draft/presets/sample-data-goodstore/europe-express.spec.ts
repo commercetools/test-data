@@ -56,7 +56,6 @@ describe('with europeExpress preset', () => {
           },
         ],
         "zone": {
-          "__typename": "Reference",
           "key": "europe",
           "typeId": "zone",
         },

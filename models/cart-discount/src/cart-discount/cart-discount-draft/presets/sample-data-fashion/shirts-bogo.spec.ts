@@ -57,7 +57,6 @@ describe('with the preset `shirtsBogo`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Two for one on all Shirts (discount on the cheapest item)",
           },
@@ -66,7 +65,6 @@ describe('with the preset `shirtsBogo`', () => {
         "key": "ShirtsBOGO",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Buy One Shirt and Get Second Free",
           },

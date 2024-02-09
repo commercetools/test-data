@@ -66,38 +66,32 @@ describe('builder', () => {
         externalId: expect.any(String),
         orderHint: expect.any(String),
         parent: expect.objectContaining({
-          __typename: 'Reference',
+          typeId: 'category',
         }),
         name: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'de',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'en',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'fr',
             value: expect.any(String),
           }),
         ]),
         slug: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'de',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'en',
             value: expect.any(String),
           }),
           expect.objectContaining({
-            __typename: 'LocalizedString',
             locale: 'fr',
             value: expect.any(String),
           }),

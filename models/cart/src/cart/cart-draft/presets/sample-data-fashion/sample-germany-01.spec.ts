@@ -332,14 +332,12 @@ describe('with the preset cart `sampleGermany01`', () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "__typename": "Reference",
           "key": "shipping-europe",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "__typename": "Reference",
           "key": "sample_store_one",
           "typeId": "store",
         },

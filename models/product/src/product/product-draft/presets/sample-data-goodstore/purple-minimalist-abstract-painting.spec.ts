@@ -161,17 +161,14 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "home-accents",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "room-decor",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "home-decor",
             "typeId": "category",
           },
@@ -179,17 +176,14 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A purple minimalist abstract painting is a simple and elegant work of art that relies on the use of minimal elements and a limited color palette to create a striking visual impact. The painting is created with acrylic paints on canvas.  The color scheme of the painting is predominantly purple, with little or no use of other colors. The use of purple in the painting may be symbolic, representing creativity, spirituality, or mystery.  The painting can be hung on a wall as part of a gallery grouping. The minimalist nature of the painting allows it to blend seamlessly with a variety of interior design styles and color schemes.  Overall, a purple minimalist abstract painting is a sophisticated and understated work of art that can add a sense of serenity and harmony to any space. Its simple composition and limited color palette can create a calming and meditative atmosphere, while the use of purple adds a sense of mystery and depth to the painting.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Ein lilafarbenes minimalistisches abstraktes Gemälde ist ein einfaches und elegantes Kunstwerk, das durch die Verwendung minimaler Elemente und einer begrenzten Farbpalette eine beeindruckende visuelle Wirkung erzielt. Das Gemälde wurde mit Acrylfarben auf Leinwand gemalt. Das Farbschema des Gemäldes ist überwiegend violett, mit wenig bis gar keiner Verwendung anderer Farben. Die Verwendung von Violett in dem Gemälde kann symbolisch sein und Kreativität, Spiritualität oder Geheimnisse darstellen. Das Gemälde kann als Teil einer Galeriegruppe an die Wand gehängt werden. Der minimalistische Charakter des Gemäldes erlaubt es, es nahtlos mit einer Vielzahl von Einrichtungsstilen und Farbschemata zu kombinieren. Insgesamt ist ein lilafarbenes, minimalistisches, abstraktes Gemälde ein raffiniertes und unaufdringliches Kunstwerk, das jedem Raum ein Gefühl von Gelassenheit und Harmonie verleihen kann. Die einfache Komposition und die begrenzte Farbpalette können eine beruhigende und meditative Atmosphäre schaffen, während die Verwendung von Lila dem Gemälde ein Gefühl von Geheimnis und Tiefe verleiht.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A purple minimalist abstract painting is a simple and elegant work of art that relies on the use of minimal elements and a limited color palette to create a striking visual impact. The painting is created with acrylic paints on canvas.  The color scheme of the painting is predominantly purple, with little or no use of other colors. The use of purple in the painting may be symbolic, representing creativity, spirituality, or mystery.  The painting can be hung on a wall as part of a gallery grouping. The minimalist nature of the painting allows it to blend seamlessly with a variety of interior design styles and color schemes.  Overall, a purple minimalist abstract painting is a sophisticated and understated work of art that can add a sense of serenity and harmony to any space. Its simple composition and limited color palette can create a calming and meditative atmosphere, while the use of purple adds a sense of mystery and depth to the painting.",
           },
@@ -278,24 +272,20 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Purple Minimalist Abstract Painting",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Lila Minimalistische Abstrakte Malerei",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Purple Minimalist Abstract Painting",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -303,24 +293,20 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "purple-minimalist-abstract-painting",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "lila-minimalistische-abstrakte-malerei",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "purple-minimalist-abstract-painting",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

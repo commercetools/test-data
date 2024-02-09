@@ -60,10 +60,8 @@ describe('builder', () => {
         supplyChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
-          __typename: 'Reference',
         }),
         custom: null,
-        __typename: 'InventoryEntryDraft',
       })
     )
   );

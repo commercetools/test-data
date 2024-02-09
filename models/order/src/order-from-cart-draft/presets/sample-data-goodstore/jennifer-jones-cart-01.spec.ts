@@ -32,7 +32,6 @@ describe('with the preset order from cart draft `jenniferJonesCart01`', () => {
     expect(orderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
-          "__typename": "Reference",
           "key": "jennifer-jones-01",
           "typeId": "cart",
         },

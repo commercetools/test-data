@@ -10,7 +10,6 @@ const transformers = {
   }),
   graphql: Transformer<TPriceTierDraft, TPriceTierDraftGraphql>('graphql', {
     buildFields: ['value'],
-    addFields: () => ({ __typename: 'ProductPriceTierInput' }),
   }),
 };
 

@@ -52,20 +52,17 @@ describe(`with bottomsWomen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bottoms",
           },
         ],
         "orderHint": "0.4",
         "parent": {
-          "__typename": "Reference",
           "key": "women",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bottoms_women",
           },

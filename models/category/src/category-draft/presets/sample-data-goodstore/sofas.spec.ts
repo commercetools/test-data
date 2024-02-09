@@ -53,40 +53,33 @@ describe(`with sofas preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Sofas",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Sofas",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Sofas",
           },
         ],
         "orderHint": ".3",
         "parent": {
-          "__typename": "Reference",
           "key": "living-room-furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "sofas",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "sofas",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "sofas",
           },

@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import {
   AttributeBooleanTypeDraft,
@@ -20,8 +20,8 @@ const generator = Generator<TAttributeDefinitionDraft>({
       ])
     ),
     name: fake((f) => f.lorem.slug(3)),
-    label: fake(() => LocalizedString.random()),
-    inputTip: fake(() => LocalizedString.random()),
+    label: fake(() => LocalizedStringDraft.random()),
+    inputTip: fake(() => LocalizedStringDraft.random()),
     isRequired: fake((f) => f.datatype.boolean()),
     attributeConstraint: fake((f) =>
       f.helpers.arrayElement(Object.values(attributeConstraints))

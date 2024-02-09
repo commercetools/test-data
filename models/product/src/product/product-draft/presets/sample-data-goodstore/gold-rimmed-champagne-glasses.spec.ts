@@ -176,17 +176,14 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "bar-and-glassware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "glassware",
             "typeId": "category",
           },
@@ -194,17 +191,14 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "A set of gold rimmed champagne crystal glasses is a luxurious and elegant way to serve champagne or sparkling wine. These glasses are made of high-quality crystal, which gives them a clear and sparkling appearance that beautifully reflects the bubbles in the champagne.  The glasses feature a delicate and slender stem, which allows the drinker to hold the glass without warming the contents inside. The gold rimmed detail adds an extra touch of luxury and sophistication to the design, giving the glasses a glamorous and opulent appearance.  Overall, a set of gold rimmed champagne crystal glasses is a stunning and luxurious addition to any home bar or entertaining collection. Their elegant and timeless design, combined with their high-quality materials and intricate detailing, make them a perfect choice for celebrating life's special moments in style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "A set of gold rimmed champagne crystal glasses is a luxurious and elegant way to serve champagne or sparkling wine. These glasses are made of high-quality crystal, which gives them a clear and sparkling appearance that beautifully reflects the bubbles in the champagne.  The glasses feature a delicate and slender stem, which allows the drinker to hold the glass without warming the contents inside. The gold rimmed detail adds an extra touch of luxury and sophistication to the design, giving the glasses a glamorous and opulent appearance.  Overall, a set of gold rimmed champagne crystal glasses is a stunning and luxurious addition to any home bar or entertaining collection. Their elegant and timeless design, combined with their high-quality materials and intricate detailing, make them a perfect choice for celebrating life's special moments in style.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Mit einem Set aus Champagner-Kristallgläsern mit Goldrand lässt sich auf luxuriöse und elegante Art Champagner oder Sekt servieren. Diese Gläser sind aus hochwertigem Kristall gefertigt, was ihnen ein klares und funkelndes Aussehen verleiht, das die Blasen im Champagner wunderschön widerspiegelt.  Die Gläser verfügen über einen zarten und schlanken Stiel, der es dem Trinker ermöglicht, das Glas zu halten, ohne den Inhalt darin zu erwärmen. Die goldene Umrandung ist ein Detail, das dem Design einen zusätzlichen Hauch von Luxus und Raffinesse und den Gläsern damit ein glamouröses und opulentes Aussehen verleiht. Insgesamt ist das Set aus Champagner-Kristallgläsern mit Goldrand eine atemberaubende und luxuriöse Ergänzung für jede Hausbar oder Unterhaltungssammlung. Das elegante und zeitlose Design, kombiniert mit hochwertigen Materialien und aufwendigen Details, macht es zur perfekten Wahl, um die besonderen Momente des Lebens stilvoll zu feiern.",
           },
@@ -313,24 +307,20 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Gold Rimmed Champagne Glasses",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Gold Rimmed Champagne Glasses",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Champagnergläser mit Goldrand",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -338,24 +328,20 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "gold-rimmed-champagne-glasses",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "gold-rimmed-champagne-glasses",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "champagnerglser-mit-goldrand",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

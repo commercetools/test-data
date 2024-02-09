@@ -51,17 +51,14 @@ describe(`with homeDecor preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Home Decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Home Decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dekoration",
           },
@@ -70,17 +67,14 @@ describe(`with homeDecor preset`, () => {
         "parent": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "home-decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "home-decor",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "home-decor",
           },

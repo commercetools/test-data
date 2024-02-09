@@ -153,22 +153,18 @@ describe(`with teakServingPlatter preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "cheese-trays",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serving-platters",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "serveware",
             "typeId": "category",
           },
@@ -176,17 +172,14 @@ describe(`with teakServingPlatter preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This wooden serving tray is a versatile and functional item that can be used in a variety of settings. The teak material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Dieses Serviertablett aus Holz ist ein vielseitiger und funktionaler Artikel, der in einer Vielzahl von Umgebungen verwendet werden kann. Das für das Tablett verwendete Teakholz sorgt für eine warme und natürliche Ästhetik und verleiht jeder Umgebung einen Hauch von rustikalem Charme.  Serviertabletts aus Holz sind leicht zu reinigen und zu pflegen. Sie können mit einem feuchten Tuch und einem milden Reinigungsmittel abgewischt werden und sollten nach Gebrauch gründlich getrocknet werden, um zu verhindern, dass Feuchtigkeit im Inneren eingeschlossen wird.  Ein Serviertablett aus Holz ist ein praktisches und attraktives Element, das jedem Ambiente einen Hauch von natürlicher Eleganz verleiht. Seine Langlebigkeit und Designvielfalt machen es zu einer beliebten Wahl zum Servieren und Präsentieren von Speisen, Getränken und Gegenständen.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This wooden serving tray is a versatile and functional item that can be used in a variety of settings. The teak material used in the tray provides a warm and natural aesthetic, adding a touch of rustic charm to any setting.  Wooden serving trays are easy to clean and maintain. They can be wiped down with a damp cloth and mild detergent, and should be dried thoroughly after use to prevent any moisture from being trapped inside.  Overall, a wooden serving tray is a practical and attractive item that adds a touch of natural elegance to any setting. Its durability, versatility, and range of designs make it a popular choice for serving and displaying food, drinks, and other items.",
           },
@@ -271,24 +264,20 @@ describe(`with teakServingPlatter preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Teak Serving Platter",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Teak Serving Platter",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Servierplatte aus Teakholz",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -296,24 +285,20 @@ describe(`with teakServingPlatter preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "teak-serving-platter",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "teak-serving-platter",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "servierplatte-aus-teakholz",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

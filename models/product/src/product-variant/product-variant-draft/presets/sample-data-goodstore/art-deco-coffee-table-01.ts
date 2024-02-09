@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -11,15 +11,15 @@ const artDecoCoffeeTable01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(320000))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(320000))
         .country('DE'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('GBP').centAmount(320000))
+        .value(MoneyDraft.random().currencyCode('GBP').centAmount(320000))
         .country('GB'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('USD').centAmount(320000))
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(320000))
         .country('US'),
     ])
     .images([

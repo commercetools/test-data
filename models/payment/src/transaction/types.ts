@@ -7,9 +7,7 @@ export type TTransactionDraft = TransactionDraft;
 export type TTransactionGraphql = TTransaction & {
   __typename: 'Transaction';
 };
-export type TTransactionDraftGraphql = TTransactionDraft & {
-  __typename: 'TransactionDraft';
-};
+export type TTransactionDraftGraphql = TTransactionDraft;
 
 export type TTransactionBuilder = TBuilder<TTransaction>;
 export type TTransactionDraftBuilder = TBuilder<TTransactionDraft>;

@@ -1,18 +1,18 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const homeDecor = (): TCategoryDraftBuilder =>
   empty()
     .name(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('Home Decor')
         ['en-US']('Home Decor')
         ['de-DE']('Dekoration')
     )
     .slug(
-      LocalizedString.presets
+      LocalizedStringDraft.presets
         .empty()
         ['en-GB']('home-decor')
         ['en-US']('home-decor')

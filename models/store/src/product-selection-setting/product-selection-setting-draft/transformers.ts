@@ -23,7 +23,6 @@ const transformers = {
     TProductSelectionSettingDraftGraphql
   >('graphql', {
     buildFields: ['productSelection'],
-    addFields: () => ({ __typename: 'ProductSelectionSettingDraft' }),
   }),
 };
 

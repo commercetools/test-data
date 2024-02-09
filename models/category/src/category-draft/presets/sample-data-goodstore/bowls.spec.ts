@@ -53,40 +53,33 @@ describe(`with bowls preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Schalen",
           },
         ],
         "orderHint": ".56",
         "parent": {
-          "__typename": "Reference",
           "key": "dinnerware",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bowls",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bowls",
           },

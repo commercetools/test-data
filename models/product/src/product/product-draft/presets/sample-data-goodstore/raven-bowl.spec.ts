@@ -175,22 +175,18 @@ describe(`with ravenBowl preset`, () => {
       {
         "categories": [
           {
-            "__typename": "Reference",
             "key": "bowls",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "dinnerware",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "kitchen",
             "typeId": "category",
           },
           {
-            "__typename": "Reference",
             "key": "new-arrivals",
             "typeId": "category",
           },
@@ -198,17 +194,14 @@ describe(`with ravenBowl preset`, () => {
         "categoryOrderHints": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "This bowl is a dish designed to serve soup and other liquid-based foods. It is a square-shaped bowl with four straight sides and a flat bottom, creating a modern and contemporary look for dining.  Overall, a square soup bowl is a functional and stylish choice for serving soup and other liquid-based foods. Its unique shape and contemporary design make it a popular choice for those who appreciate modern aesthetics and practicality.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "This bowl is a dish designed to serve soup and other liquid-based foods. It is a square-shaped bowl with four straight sides and a flat bottom, creating a modern and contemporary look for dining.  Overall, a square soup bowl is a functional and stylish choice for serving soup and other liquid-based foods. Its unique shape and contemporary design make it a popular choice for those who appreciate modern aesthetics and practicality.",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Die Schüssel >Raven< wurde zum Servieren von Suppen und anderer Flüssigspeisen designt. Die quadratische Form aus vier geraden Seiten und einem flachen Boden verleiht dem Suppentellerl einen modernen und zeitgemäßen Look.  Durch die einzigartige Form und das zeitgemäße Design ist >Raven< eine beliebte Wahl für all diejenigen, die Ästhetik und Praktikabilität auf ihrem Esstisch schätzen.",
           },
@@ -305,24 +298,20 @@ describe(`with ravenBowl preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Raven Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Raven Bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Suppenschüssel >Raven<",
           },
         ],
         "priceMode": undefined,
         "productType": {
-          "__typename": "Reference",
           "key": "furniture-and-decor",
           "typeId": "product-type",
         },
@@ -330,24 +319,20 @@ describe(`with ravenBowl preset`, () => {
         "searchKeywords": undefined,
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "raven-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "raven-bowl",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "rabenschssel",
           },
         ],
         "state": undefined,
         "taxCategory": {
-          "__typename": "Reference",
           "key": "standard-tax",
           "typeId": "tax-category",
         },

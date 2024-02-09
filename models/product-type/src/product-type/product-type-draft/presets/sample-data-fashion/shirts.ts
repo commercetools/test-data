@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
@@ -16,8 +16,8 @@ const shirts = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('size')
-        .label(LocalizedString.presets.empty()['en-US']('Size'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Size'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
@@ -41,8 +41,8 @@ const shirts = (): TProductTypeDraftBuilder =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
-        .label(LocalizedString.presets.empty()['en-US']('Color'))
-        .inputTip(LocalizedString.presets.empty()['en-US']('Color'))
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([

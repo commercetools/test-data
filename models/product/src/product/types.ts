@@ -1,6 +1,6 @@
 import { Product, ProductDraft } from '@commercetools/platform-sdk';
 import {
-  TLocalizedStringGraphql,
+  TLocalizedStringDraftGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -29,12 +29,12 @@ export type TProductDraftGraphql = Omit<
   | 'metaDescription'
   | 'metaKeywords'
 > & {
-  name: TLocalizedStringGraphql;
-  slug: TLocalizedStringGraphql;
-  description?: TLocalizedStringGraphql | null;
-  metaTitle?: TLocalizedStringGraphql | null;
-  metaDescription?: TLocalizedStringGraphql | null;
-  metaKeywords?: TLocalizedStringGraphql | null;
+  name: TLocalizedStringDraftGraphql;
+  slug: TLocalizedStringDraftGraphql;
+  description?: TLocalizedStringDraftGraphql | null;
+  metaTitle?: TLocalizedStringDraftGraphql | null;
+  metaDescription?: TLocalizedStringDraftGraphql | null;
+  metaKeywords?: TLocalizedStringDraftGraphql | null;
 };
 
 export type TProductBuilder = TBuilder<TProduct>;

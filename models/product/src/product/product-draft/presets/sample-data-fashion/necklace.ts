@@ -3,8 +3,8 @@ import {
   TCategoryDraft,
 } from '@commercetools-test-data/category';
 import {
-  KeyReference,
-  LocalizedString,
+  KeyReferenceDraft,
+  LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
 import {
   ProductTypeDraft,
@@ -33,10 +33,12 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
 const necklace = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
-    .name(LocalizedString.presets.empty()['en-US']('Sample Necklace'))
-    .slug(LocalizedString.presets.empty()['en-US']('sample-necklace'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Necklace'))
+    .slug(LocalizedStringDraft.presets.empty()['en-US']('sample-necklace'))
     .productType(
-      KeyReference.presets.productType().key(accessoriesProductTypeDraft.key!)
+      KeyReferenceDraft.presets
+        .productType()
+        .key(accessoriesProductTypeDraft.key!)
     )
     .publish(true)
     .masterVariant(
@@ -47,8 +49,8 @@ const necklace = (): TProductDraftBuilder =>
     ])
     .key('necklace')
     .taxCategory(
-      KeyReference.presets.taxCategory().key(standardTaxCategoryDraft.key!)
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .categories([KeyReference.presets.category().key(categoryDraft.key!)]);
+    .categories([KeyReferenceDraft.presets.category().key(categoryDraft.key!)]);
 
 export default necklace;

@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -12,11 +12,11 @@ const toddlerTrousersVariant03 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('USD').centAmount(2599))
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(2599))
         .country('US'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(2299))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(2299))
         .country('DE'),
     ])
     .images([

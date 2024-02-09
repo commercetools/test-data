@@ -169,14 +169,12 @@ describe(`with pants preset`, () => {
 
     expect(pantsProductTypeGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "ProductTypeDraft",
         "attributeDefinitions": [
           {
             "attributeConstraint": "None",
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Size",
               },
@@ -185,7 +183,6 @@ describe(`with pants preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Size",
               },
@@ -215,7 +212,6 @@ describe(`with pants preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Fit",
               },
@@ -224,7 +220,6 @@ describe(`with pants preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Fit",
               },
@@ -254,7 +249,6 @@ describe(`with pants preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
@@ -263,7 +257,6 @@ describe(`with pants preset`, () => {
             "isSearchable": true,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Color",
               },
@@ -293,7 +286,6 @@ describe(`with pants preset`, () => {
             "inputHint": "SingleLine",
             "inputTip": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },
@@ -302,7 +294,6 @@ describe(`with pants preset`, () => {
             "isSearchable": false,
             "label": [
               {
-                "__typename": "LocalizedString",
                 "locale": "en-US",
                 "value": "Length",
               },

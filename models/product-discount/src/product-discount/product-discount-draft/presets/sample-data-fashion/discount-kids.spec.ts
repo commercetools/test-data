@@ -44,7 +44,6 @@ describe('with the preset `discountKids`', () => {
       {
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Enjoy 20% off all items in our Kids selection",
           },
@@ -53,7 +52,6 @@ describe('with the preset `discountKids`', () => {
         "key": "Kids20pctOff",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Back to School - 20% off all items in our Kids category",
           },

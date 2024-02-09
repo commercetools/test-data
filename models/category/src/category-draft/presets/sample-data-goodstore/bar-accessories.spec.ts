@@ -54,40 +54,33 @@ describe(`with barAccessories preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Bar Accessories",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Bar Accessories",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Barzubehör",
           },
         ],
         "orderHint": ".36",
         "parent": {
-          "__typename": "Reference",
           "key": "bar-and-glassware",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "bar-accessories",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "bar-accessories",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "bar-accessories",
           },

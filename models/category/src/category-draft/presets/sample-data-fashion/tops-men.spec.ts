@@ -52,20 +52,17 @@ describe(`with topsMen preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Tops",
           },
         ],
         "orderHint": "0.6",
         "parent": {
-          "__typename": "Reference",
           "key": "men",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "tops_men",
           },

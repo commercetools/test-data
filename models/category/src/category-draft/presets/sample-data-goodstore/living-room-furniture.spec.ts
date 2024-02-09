@@ -55,40 +55,33 @@ describe(`with livingRoomFurniture preset`, () => {
         "metaTitle": undefined,
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "Living Room Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Living Room Furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "Wohnzimmer",
           },
         ],
         "orderHint": ".9",
         "parent": {
-          "__typename": "Reference",
           "key": "furniture",
           "typeId": "category",
         },
         "slug": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-GB",
             "value": "living-room-furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "living-room-furniture",
           },
           {
-            "__typename": "LocalizedString",
             "locale": "de-DE",
             "value": "living-room-furniture",
           },

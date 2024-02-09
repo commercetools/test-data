@@ -49,7 +49,6 @@ describe('builder', () => {
           centAmount: expect.any(Number),
           fractionDigits: expect.any(Number),
         }),
-        __typename: 'ProductPriceTierInput',
       })
     )
   );

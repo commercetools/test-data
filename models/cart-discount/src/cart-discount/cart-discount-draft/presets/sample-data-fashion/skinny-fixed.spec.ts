@@ -58,7 +58,6 @@ describe('with the preset `skinnyFixed`', () => {
         "custom": undefined,
         "description": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Save on Skinny Jeans at 25EUR per pair",
           },
@@ -67,7 +66,6 @@ describe('with the preset `skinnyFixed`', () => {
         "key": "SkinnyFixed25",
         "name": [
           {
-            "__typename": "LocalizedString",
             "locale": "en-US",
             "value": "Save on Skinny Jeans - 25 EUR per pair",
           },

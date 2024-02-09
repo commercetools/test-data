@@ -1,4 +1,7 @@
-import { AddressDraft, KeyReference } from '@commercetools-test-data/commons';
+import {
+  AddressDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -68,8 +71,8 @@ const sebastianSmith01 = (customerId?: string): TCartDraftBuilder =>
         .quantity(1),
     ])
     .shippingMethod(
-      KeyReference.presets.shippingMethod().key(shippingMethod.key!)
+      KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReference.presets.store().key(store.key!));
+    .store(KeyReferenceDraft.presets.store().key(store.key!));
 
 export default sebastianSmith01;

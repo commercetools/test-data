@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { roles } from '../../../constants';
 import * as ChannelDraft from '../../index';
 
@@ -7,9 +7,9 @@ const distributionChannel = () =>
     .empty()
     .key('distribution-channel')
     .description(
-      LocalizedString.presets.empty()['en-US']('Distribution Channel')
+      LocalizedStringDraft.presets.empty()['en-US']('Distribution Channel')
     )
-    .name(LocalizedString.presets.empty()['en-US']('Distribution Channel'))
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Distribution Channel'))
     .roles([roles.ProductDistribution]);
 
 export default distributionChannel;
