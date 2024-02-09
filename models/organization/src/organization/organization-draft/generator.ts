@@ -5,7 +5,6 @@ const generator = Generator<TOrganizationDraft>({
   fields: {
     name: fake((f) => f.company.name()),
     owner: null, // TODO: Reference to User
-    defaultClusters: null, // TODO: update
   },
 });
 

@@ -12,7 +12,6 @@ describe('builder', () => {
       expect.objectContaining({
         name: 'foo',
         owner: null,
-        defaultClusters: null,
       })
     )
   );
@@ -24,7 +23,6 @@ describe('builder', () => {
       expect.objectContaining({
         name: expect.any(String),
         owner: null,
-        defaultClusters: null,
       })
     )
   );
@@ -37,7 +35,6 @@ describe('builder', () => {
         __typename: 'OrganizationDraft',
         name: expect.any(String),
         owner: null,
-        defaultClusters: null,
       })
     )
   );

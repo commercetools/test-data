@@ -6,7 +6,6 @@ export type TOrganization = {
   version: number;
   name: string;
   teams: TTeam[];
-  defaultClusters: null;
   createdAt: string;
   lastModifiedAt: string;
 };
@@ -18,7 +17,6 @@ export type TOrganizationGraphql = TOrganization & {
 export type TOrganizationDraft = {
   name: string;
   owner: null; //Update type
-  defaultClusters: null;
 };
 
 export type TOrganizationDraftGraphql = TOrganizationDraft & {

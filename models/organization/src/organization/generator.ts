@@ -13,7 +13,6 @@ const generator = Generator<TOrganization>({
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
     teams: fake(() => [Team.random()]),
-    defaultClusters: null,
   },
 });
 
