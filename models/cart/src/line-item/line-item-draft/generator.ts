@@ -1,4 +1,4 @@
-import { Money, ReferenceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, ReferenceDraft } from '@commercetools-test-data/commons';
 import {
   fake,
   Generator,
@@ -26,7 +26,7 @@ const generator = Generator<TLineItemDraft>({
     supplyChannel: fake(() => ReferenceDraft.random().typeId('channel')),
     distributionChannel: fake(() => ReferenceDraft.random().typeId('channel')),
     externalTaxRate: null,
-    externalPrice: fake(() => Money.random()),
+    externalPrice: fake(() => MoneyDraft.random()),
     externalTotalPrice: null,
     custom: null,
     inventoryMode: oneOf(...Object.values(inventoryMode)),

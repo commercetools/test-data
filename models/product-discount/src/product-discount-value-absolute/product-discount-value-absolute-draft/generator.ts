@@ -1,4 +1,4 @@
-import { Money } from '@commercetools-test-data/commons';
+import { MoneyDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TProductDiscountValueAbsoluteDraft } from '../types';
 
@@ -7,7 +7,7 @@ import { TProductDiscountValueAbsoluteDraft } from '../types';
 const generator = Generator<TProductDiscountValueAbsoluteDraft>({
   fields: {
     type: 'absolute',
-    money: fake(() => [Money.random()]),
+    money: fake(() => [MoneyDraft.random()]),
   },
 });
 

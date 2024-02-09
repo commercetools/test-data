@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -12,15 +12,15 @@ const halloweenTopVariant02 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(3000))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(3000))
         .country('DE'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('USD').centAmount(3000))
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(3000))
         .country('US'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(3300))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(3300))
         .country('ES'),
     ])
     .images([

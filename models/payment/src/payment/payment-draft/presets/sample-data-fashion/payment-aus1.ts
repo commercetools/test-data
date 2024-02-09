@@ -1,7 +1,7 @@
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
-  Money,
+  MoneyDraft,
 } from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
@@ -30,7 +30,7 @@ const paymentAUS1 = (): TPaymentDraftBuilder =>
     .empty()
     .key(orderAUS2.cart!.key!)
     .customer(KeyReferenceDraft.presets.customer().key(customerAUS.key!))
-    .amountPlanned(Money.random().centAmount(4075).currencyCode('AUD'))
+    .amountPlanned(MoneyDraft.random().centAmount(4075).currencyCode('AUD'))
     .paymentMethodInfo(
       PaymentMethodInfoDraft.presets
         .empty()
@@ -41,7 +41,7 @@ const paymentAUS1 = (): TPaymentDraftBuilder =>
     .transactions([
       TransactionDraft.presets
         .empty()
-        .amount(Money.random().centAmount(4075).currencyCode('AUD'))
+        .amount(MoneyDraft.random().centAmount(4075).currencyCode('AUD'))
         .state(constants.TransactionState.Pending)
         .timestamp('2023-07-01T13:00:00.000Z')
         .type(constants.TransactionType.Authorization)

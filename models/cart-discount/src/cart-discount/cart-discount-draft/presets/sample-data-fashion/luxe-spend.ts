@@ -1,4 +1,7 @@
-import { LocalizedStringDraft, Money } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  MoneyDraft,
+} from '@commercetools-test-data/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
@@ -20,7 +23,7 @@ const luxeSpend = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(
       CartDiscountValueAbsoluteDraft.random().money([
-        Money.random().currencyCode('EUR').centAmount(3000),
+        MoneyDraft.random().currencyCode('EUR').centAmount(3000),
       ])
     )
     .cartPredicate(

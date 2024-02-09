@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -12,11 +12,11 @@ const sandalsVariant02 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('AUD').centAmount(1199))
+        .value(MoneyDraft.random().currencyCode('AUD').centAmount(1199))
         .country('AU'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('USD').centAmount(1000))
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(1000))
         .country('US'),
     ])
     .images([

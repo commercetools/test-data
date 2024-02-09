@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { Money } from '../../index';
+import { MoneyDraft } from '../../index';
 import { TPriceDraft } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -9,7 +9,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 const generator = Generator<TPriceDraft>({
   fields: {
     key: null,
-    value: fake(() => Money.random()),
+    value: fake(() => MoneyDraft.random()),
     country: fake((f) => f.location.countryCode()),
     customerGroup: null,
     channel: null,

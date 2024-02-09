@@ -1,4 +1,7 @@
-import { Money, LocalizedStringDraft } from '@commercetools-test-data/commons';
+import {
+  MoneyDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueFixedDraft,
@@ -12,7 +15,7 @@ const skinnyFixed = (): TCartDiscountDraftBuilder =>
     .empty()
     .value(
       CartDiscountValueFixedDraft.random().money([
-        Money.random().currencyCode('EUR').centAmount(2500),
+        MoneyDraft.random().currencyCode('EUR').centAmount(2500),
       ])
     )
     .cartPredicate('1 = 1')

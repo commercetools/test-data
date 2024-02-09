@@ -1,4 +1,4 @@
-import { Money, PriceDraft } from '@commercetools-test-data/commons';
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
@@ -12,19 +12,19 @@ const denimJacketVariant01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(10000))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(10000))
         .country('DE'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('EUR').centAmount(10000))
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(10000))
         .country('ES'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('USD').centAmount(9000))
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(9000))
         .country('US'),
       PriceDraft.presets
         .empty()
-        .value(Money.random().currencyCode('AUD').centAmount(9500))
+        .value(MoneyDraft.random().currencyCode('AUD').centAmount(9500))
         .country('AU'),
     ])
     .images([

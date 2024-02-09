@@ -1,7 +1,7 @@
 import { TShippingRateDraft } from '../../../types';
 import usdCurrency from './with-usd-currency';
 
-describe('Shipping rate with the Money `USD` currencyCode preset', () => {
+describe('Shipping rate with the MoneyDraft `USD` currencyCode preset', () => {
   it('should return the currencyCode of `USD`', () => {
     const shippingRateWithUsdCurrencyMoneyPreset =
       usdCurrency().build<TShippingRateDraft>();

@@ -103,9 +103,15 @@ const emptyNameDraft = LocalizedStringDraft.presets
 ## `Money`
 
 ```ts
-import { Money, type TMoney } from '@commercetools-test-data/money';
+import {
+  Money,
+  MoneyDraft,
+  type TMoney,
+  type TMoneyDraft,
+} from '@commercetools-test-data/money';
 
 const Money = Money.random().build<TMoney>();
+const MoneyDraft = MoneyDraft.random().build<TMoneyDraft>();
 ```
 
 ## `Price`

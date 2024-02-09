@@ -1,4 +1,4 @@
-import { Money, Reference } from '@commercetools-test-data/commons';
+import { MoneyDraft, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as PaymentMethodInfoDraft from '../../payment-method-info/payment-method-info-draft';
 import * as PaymentStatusDraft from '../../payment-status/payment-status-draft';
@@ -13,7 +13,7 @@ const generator = Generator<TPaymentDraft>({
     customer: fake(() => Reference.random().typeId('customer')), // TODO: use customerReference preset
     anonymousId: fake((f) => f.string.uuid()),
     interfaceId: fake((f) => f.string.uuid()),
-    amountPlanned: fake((f) => Money.random()),
+    amountPlanned: fake((f) => MoneyDraft.random()),
     paymentMethodInfo: fake((f) => PaymentMethodInfoDraft.random()),
     paymentStatus: fake((f) => PaymentStatusDraft.random()),
     transactions: [fake((f) => TransactionDraft.random())],

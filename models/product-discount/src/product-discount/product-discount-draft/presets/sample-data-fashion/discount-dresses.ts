@@ -1,4 +1,7 @@
-import { LocalizedStringDraft, Money } from '@commercetools-test-data/commons';
+import {
+  LocalizedStringDraft,
+  MoneyDraft,
+} from '@commercetools-test-data/commons';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';
@@ -8,7 +11,7 @@ const discountDresses = (): TProductDiscountDraftBuilder =>
     .empty()
     .value(
       ProductDiscountValueAbsoluteDraft.random().money([
-        Money.random().currencyCode('EUR').centAmount(500),
+        MoneyDraft.random().currencyCode('EUR').centAmount(500),
       ])
     )
     // TODO: integrate product type keys

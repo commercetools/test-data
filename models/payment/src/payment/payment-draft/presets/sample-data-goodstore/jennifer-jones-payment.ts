@@ -1,7 +1,7 @@
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
-  Money,
+  MoneyDraft,
 } from '@commercetools-test-data/commons';
 import {
   CustomerDraft,
@@ -32,7 +32,7 @@ const jenniferJonesPayment = (): TPaymentDraftBuilder =>
     .customer(
       KeyReferenceDraft.presets.customer().key(customerJenniferJones.key!)
     )
-    .amountPlanned(Money.random().centAmount(485759).currencyCode('GBP'))
+    .amountPlanned(MoneyDraft.random().centAmount(485759).currencyCode('GBP'))
     .paymentMethodInfo(
       PaymentMethodInfoDraft.presets
         .empty()
@@ -48,13 +48,13 @@ const jenniferJonesPayment = (): TPaymentDraftBuilder =>
     .transactions([
       TransactionDraft.presets
         .empty()
-        .amount(Money.random().centAmount(485759).currencyCode('GBP'))
+        .amount(MoneyDraft.random().centAmount(485759).currencyCode('GBP'))
         .state(constants.TransactionState.Pending)
         .type(constants.TransactionType.Authorization)
         .interactionId('741852963'),
       TransactionDraft.presets
         .empty()
-        .amount(Money.random().centAmount(485759).currencyCode('GBP'))
+        .amount(MoneyDraft.random().centAmount(485759).currencyCode('GBP'))
         .state(constants.TransactionState.Success)
         .type(constants.TransactionType.Charge)
         .interactionId('321654987'),
