@@ -14,7 +14,6 @@ describe('builder', () => {
         teams: [
           {
             id: expect.any(String),
-            members: [],
             name: expect.any(String),
           },
         ],
@@ -34,7 +33,7 @@ describe('builder', () => {
         teams: [
           {
             id: expect.any(String),
-            members: [],
+            members: ['member1', 'member2'],
             name: expect.any(String),
           },
         ],

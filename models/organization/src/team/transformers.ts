@@ -1,13 +1,18 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TTeam, TTeamGraphql } from './types';
+import type { TTeam, TTeamRest, TTeamGraphql } from './types';
 
 const transformers = {
   default: Transformer<TTeam, TTeam>('default', {}),
-  rest: Transformer<TTeam, TTeam>('rest', {}),
+  rest: Transformer<TTeam, TTeamRest>('rest', {
+    addFields: () => ({
+      members: ['member1', 'member2'],
+    }),
+  }),
   graphql: Transformer<TTeam, TTeamGraphql>('graphql', {
     buildFields: [],
     addFields: () => ({
       __typename: 'Team',
+      members: [],
     }),
   }),
 };
