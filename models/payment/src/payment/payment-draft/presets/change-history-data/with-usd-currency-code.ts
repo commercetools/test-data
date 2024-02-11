@@ -8,7 +8,7 @@ const withUsdCurrencyCode = (): TPaymentDraftBuilder =>
     .anonymousId(undefined)
     .amountPlanned(MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode())
     .transactions([
-      TransactionDraft.presets.changeHistoryData.withUsdCurrencyCode(),
+      TransactionDraft.presets.changeHistoryData.withTransactionUsdCurrencyCodeMaxCent(),
     ]);
 
 export default withUsdCurrencyCode;
