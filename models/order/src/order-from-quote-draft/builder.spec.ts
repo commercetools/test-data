@@ -58,7 +58,6 @@ describe('builder', () => {
         version: expect.any(Number),
         quote: expect.objectContaining({
           typeId: 'quote',
-          __typename: 'Reference',
         }),
         quoteStateToAccepted: expect.any(Boolean),
         orderNumber: expect.any(String),
@@ -67,7 +66,6 @@ describe('builder', () => {
         orderState: expect.any(String),
         state: expect.objectContaining({
           typeId: 'state',
-          __typename: 'Reference',
         }),
       })
     )
