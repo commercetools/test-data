@@ -7,7 +7,9 @@ import { TAssociateRoleAssignmentDraft } from '../types';
 
 const generator = Generator<TAssociateRoleAssignmentDraft>({
   fields: {
-    associateRole: fake(() => ReferenceDraft.random().typeId('associate-role')),
+    associateRole: fake(() =>
+      ReferenceDraft.presets.associateRoleReference.associateRoleReference()
+    ),
     inheritance: oneOf(...Object.values(associateRoleInheritanceMode)),
   },
 });
