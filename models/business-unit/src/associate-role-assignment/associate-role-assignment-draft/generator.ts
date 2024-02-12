@@ -1,4 +1,4 @@
-import { Reference } from '@commercetools-test-data/commons';
+import { ReferenceDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { associateRoleInheritanceMode } from '../constants';
 import { TAssociateRoleAssignmentDraft } from '../types';
@@ -7,7 +7,7 @@ import { TAssociateRoleAssignmentDraft } from '../types';
 
 const generator = Generator<TAssociateRoleAssignmentDraft>({
   fields: {
-    associateRole: fake(() => Reference.random().typeId('associate-role')), // should use ReferenceDraft
+    associateRole: fake(() => ReferenceDraft.random().typeId('associate-role')),
     inheritance: oneOf(...Object.values(associateRoleInheritanceMode)),
   },
 });

@@ -1,4 +1,4 @@
-import { Reference } from '@commercetools-test-data/commons';
+import { ReferenceDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { AssociateRoleAssignmentDraft } from '../../associate-role-assignment/';
 import { TAssociateDraft } from '../types';
@@ -10,7 +10,7 @@ const generator = Generator<TAssociateDraft>({
     associateRoleAssignments: [
       fake(() => AssociateRoleAssignmentDraft.random()),
     ],
-    customer: fake(() => Reference.random().typeId('customer')), // should use ReferenceDraft
+    customer: fake(() => ReferenceDraft.random().typeId('customer')),
   },
 });
 

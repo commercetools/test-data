@@ -19,7 +19,7 @@ export type TAssociateRoleAssignmentDefault = Omit<
 export type TAssociateRoleAssignmentRest = AssociateRoleAssignment;
 export type TAssociateRoleAssignmentGraphql =
   TAssociateRoleAssignmentDefault & {
-    associateRoleRef: AssociateRoleKeyReference; // should this also allow null
+    associateRoleRef: AssociateRoleKeyReference | null;
     __typename: 'AssociateRoleAssignment';
   };
 
