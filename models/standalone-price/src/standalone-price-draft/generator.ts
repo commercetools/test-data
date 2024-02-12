@@ -1,7 +1,7 @@
 import {
   PriceTierDraft,
   KeyReferenceDraft,
-  CentPrecisionMoneyDraft,
+  MoneyDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
@@ -15,7 +15,7 @@ const generator = Generator<TStandalonePriceDraft>({
   fields: {
     key: fake((f) => f.string.alphanumeric(10)),
     sku: fake((f) => `${f.lorem.word()}-${f.string.alphanumeric(3)}`),
-    value: fake(() => CentPrecisionMoneyDraft.random()),
+    value: fake(() => MoneyDraft.random()),
     country: fake((f) => f.location.countryCode()),
     customerGroup: fake(() => KeyReferenceDraft.presets.customerGroup()),
     channel: fake(() => KeyReferenceDraft.presets.channel()),

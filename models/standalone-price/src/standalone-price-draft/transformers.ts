@@ -1,3 +1,4 @@
+import { TMoneyDraftGraphql } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TStandalonePriceDraft,
@@ -16,6 +17,12 @@ const transformers = {
     'graphql',
     {
       buildFields: ['value', 'customerGroup', 'channel', 'tiers'],
+      replaceFields: ({ fields }) => ({
+        ...fields,
+        value: {
+          centPrecision: fields.value as TMoneyDraftGraphql,
+        },
+      }),
     }
   ),
 };

@@ -4,7 +4,10 @@ import {
   CustomerGroup,
   Channel,
 } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  TMoneyGraphql,
+  TReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Base representation
@@ -27,7 +30,15 @@ export type TStandalonePriceGraphql = TStandalonePrice & {
   channelRef: TReferenceGraphql | null;
   __typename: 'StandalonePrice';
 };
-export type TStandalonePriceDraftGraphql = StandalonePriceDraft;
+
+export type TStandalonePriceDraftGraphql = Omit<
+  TStandalonePriceDraft,
+  'value'
+> & {
+  value: {
+    centPrecision: TMoneyGraphql;
+  };
+};
 
 export type TStandalonePriceBuilder = TBuilder<TStandalonePrice>;
 export type TStandalonePriceDraftBuilder = TBuilder<StandalonePriceDraft>;

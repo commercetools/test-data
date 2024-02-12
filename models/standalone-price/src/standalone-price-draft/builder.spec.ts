@@ -13,10 +13,8 @@ describe('builder', () => {
         key: expect.any(String),
         sku: expect.any(String),
         value: expect.objectContaining({
-          type: 'centPrecision',
           currencyCode: expect.any(String),
           centAmount: expect.any(Number),
-          fractionDigits: expect.any(Number),
         }),
         country: expect.any(String),
         customerGroup: expect.objectContaining({
@@ -53,10 +51,8 @@ describe('builder', () => {
         key: expect.any(String),
         sku: expect.any(String),
         value: expect.objectContaining({
-          type: 'centPrecision',
           currencyCode: expect.any(String),
           centAmount: expect.any(Number),
-          fractionDigits: expect.any(Number),
         }),
         country: expect.any(String),
         customerGroup: expect.objectContaining({
@@ -93,10 +89,10 @@ describe('builder', () => {
         key: expect.any(String),
         sku: expect.any(String),
         value: expect.objectContaining({
-          type: 'centPrecision',
-          currencyCode: expect.any(String),
-          centAmount: expect.any(Number),
-          fractionDigits: expect.any(Number),
+          centPrecision: expect.objectContaining({
+            currencyCode: expect.any(String),
+            centAmount: expect.any(Number),
+          }),
         }),
         country: expect.any(String),
         customerGroup: expect.objectContaining({
