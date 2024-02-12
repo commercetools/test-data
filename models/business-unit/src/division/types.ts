@@ -12,9 +12,7 @@ import type { TCompanyGraphql } from '../company/types';
 export type TDivisionDraft = DivisionDraft;
 
 //BusinessUnitDraftGraphql is only scaffolding at this time
-export type TDivisionDraftGraphql = TDivisionDraft & {
-  __typename: 'BusinessUnitDraft';
-};
+export type TDivisionDraftGraphql = TDivisionDraft;
 
 //BusinessUnit
 export type TDivision = Division;

@@ -13,7 +13,7 @@ export type TAssociateDefault = Omit<Associate, 'customer'> & {
   customer: Customer;
 };
 export type TAssociateRest = Associate;
-export type TAssociateGraphql = Omit<TAssociateDefault, 'customer'> & {
+export type TAssociateGraphql = TAssociateDefault & {
   customerRef: TReferenceGraphql | null;
   __typename: 'Associate';
 };

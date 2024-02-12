@@ -41,8 +41,6 @@ describe('builder', () => {
     )
   );
 
-  // *The concept of beginning with the widest, most inclusive interpretation of the entity,
-  // and then utilizing the transformers in order to meet rest or graphql reqs needs an ADR*
   it(
     ...createBuilderSpec<
       TAssociateRoleAssignmentDefault,

@@ -10,9 +10,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TCompanyDraft = CompanyDraft;
 
 //BusinessUnitDraftGraphql is only scaffolding at this time
-export type TCompanyDraftGraphql = TCompanyDraft & {
-  __typename: 'BusinessUnitDraft';
-};
+export type TCompanyDraftGraphql = TCompanyDraft;
 
 //BusinessUnit
 export type TCompany = Company;

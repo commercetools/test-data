@@ -7,8 +7,10 @@ import { TAssociateDefault } from './types';
 
 const generator = Generator<TAssociateDefault>({
   fields: {
-    associateRoleAssignments: [fake(() => AssociateRoleAssignment.random())],
-    customer: fake(() => Reference.random().typeId('customer')), // should use ReferenceDraft
+    associateRoleAssignments: fake(() => [AssociateRoleAssignment.random()]),
+    customer: fake(() =>
+      Reference.presets.customerReference.customerReference()
+    ),
   },
 });
 

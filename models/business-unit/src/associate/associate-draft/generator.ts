@@ -7,10 +7,12 @@ import { TAssociateDraft } from '../types';
 
 const generator = Generator<TAssociateDraft>({
   fields: {
-    associateRoleAssignments: [
-      fake(() => AssociateRoleAssignmentDraft.random()),
-    ],
-    customer: fake(() => ReferenceDraft.random().typeId('customer')),
+    associateRoleAssignments: fake(() => [
+      AssociateRoleAssignmentDraft.random(),
+    ]),
+    customer: fake(() =>
+      ReferenceDraft.presets.customerReference.customerReference()
+    ),
   },
 });
 
