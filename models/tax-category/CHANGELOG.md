@@ -1,5 +1,14 @@
 # @commercetools-test-data/tax-category
 
+## 7.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`f027639`](https://github.com/commercetools/test-data/commit/f027639045374709b64259584986ea4ae9e1be5b), [`d7b7eb6`](https://github.com/commercetools/test-data/commit/d7b7eb6e2bf3daff60ea60d07d48252252999923), [`71eb4f5`](https://github.com/commercetools/test-data/commit/71eb4f5c020f86cee129ed477ad6386f15049fdf)]:
+  - @commercetools-test-data/commons@7.0.0
+  - @commercetools-test-data/core@7.0.0
+  - @commercetools-test-data/utils@7.0.0
+
 ## 6.11.0
 
 ### Patch Changes

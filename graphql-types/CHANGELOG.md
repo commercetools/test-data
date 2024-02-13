@@ -1,5 +1,11 @@
 # @commercetools-test-data/graphql-types
 
+## 7.0.0
+
+### Minor Changes
+
+- [#472](https://github.com/commercetools/test-data/pull/472) [`f027639`](https://github.com/commercetools/test-data/commit/f027639045374709b64259584986ea4ae9e1be5b) Thanks [@jaikamat](https://github.com/jaikamat)! - Create standalone prices model and associated draft, support channel key reference preset
+
 ## 6.11.0
 
 ## 6.10.0
