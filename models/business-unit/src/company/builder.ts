@@ -1,5 +1,5 @@
 import { Builder } from '@commercetools-test-data/core';
-import type { TCreateCompanyBuilder, TCompany } from '../types';
+import type { TCreateCompanyBuilder, TCompany } from './types';
 import generator from './generator';
 import transformers from './transformers';
 

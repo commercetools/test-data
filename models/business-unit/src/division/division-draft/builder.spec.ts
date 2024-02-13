@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TDivisionDraft } from '../../types';
+import type { TDivisionDraft } from '../types';
 import * as DivisionDraft from './index';
 
 describe('builder', () => {

@@ -1,6 +1,6 @@
 import { KeyReference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
-import type { TCompany, TCompanyGraphql } from '../types';
+import type { TCompany, TCompanyGraphql } from './types';
 
 const transformers = {
   default: Transformer<TCompany, TCompany>('default', {

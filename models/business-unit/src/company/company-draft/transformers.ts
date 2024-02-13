@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TCompanyDraft, TCompanyDraftGraphql } from '../../types';
+import type { TCompanyDraft, TCompanyDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TCompanyDraft, TCompanyDraft>('default', {
