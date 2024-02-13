@@ -16,11 +16,15 @@ $ pnpm add -D @commercetools-test-data/order
 import {
   Order,
   OrderFromCartDraft,
+  OrderFromQuoteDraft,
   type TOrder,
   type TOrderFromCartDraft,
+  type TOrderFromQuoteDraft,
 } from '@commercetools-test-data/order';
 
 const order = Order.random().build<TOrder>();
 const orderFromCartDraft =
   OrderFromCartDraft.random().build<TOrderFromCartDraft>();
+const orderFromQuoteDraft =
+  OrderFromQuoteDraft.random().build<TOrderFromQuoteDraft>();
 ```

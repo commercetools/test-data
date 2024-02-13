@@ -5,6 +5,7 @@ import {
   CustomerGroup,
   Order,
   OrderFromCartDraft,
+  OrderFromQuoteDraft,
   Quote,
   State,
   Store,
@@ -45,10 +46,16 @@ export type TOrderGraphql = TOrder & {
 };
 
 export type TOrderFromCartDraft = OrderFromCartDraft;
+export type TOrderFromQuoteDraft = OrderFromQuoteDraft;
 
 export type TOrderFromCartDraftGraphql = TOrderFromCartDraft;
+export type TOrderFromQuoteDraftGraphql = TOrderFromQuoteDraft;
 
 export type TOrderBuilder = TBuilder<TOrder>;
 export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraft>;
+export type TOrderFromQuoteDraftBuilder = TBuilder<TOrderFromQuoteDraft>;
+
 export type TCreateOrderBuilder = () => TOrderBuilder;
 export type TCreateOrderFromCartDraftBuilder = () => TOrderFromCartDraftBuilder;
+export type TCreateOrderFromQuoteDraftBuilder =
+  () => TOrderFromQuoteDraftBuilder;
