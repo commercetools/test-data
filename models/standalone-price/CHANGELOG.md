@@ -1,4 +1,4 @@
-# @commercetools-test-data/type
+# @commercetools-test-data/standalone-price
 
 ## 7.0.0
 
@@ -11,31 +11,17 @@
   - Ensure tests that assert on the presence of \_\_typename in draft GraphQL models are updated to no longer expect this field.
   - Update any code that relies on the presence of \_\_typename in draft GraphQL models to align with the new approach.
 
+### Minor Changes
+
+- [#472](https://github.com/commercetools/test-data/pull/472) [`f027639`](https://github.com/commercetools/test-data/commit/f027639045374709b64259584986ea4ae9e1be5b) Thanks [@jaikamat](https://github.com/jaikamat)! - Create standalone prices model and associated draft, support channel key reference preset
+
 ### Patch Changes
+
+- [#479](https://github.com/commercetools/test-data/pull/479) [`e76ae3a`](https://github.com/commercetools/test-data/commit/e76ae3a1d164ba61124361c3768e030d869ec2de) Thanks [@jaikamat](https://github.com/jaikamat)! - Fix StandalonePriceDraft GraphQL shape
 
 - Updated dependencies [[`f027639`](https://github.com/commercetools/test-data/commit/f027639045374709b64259584986ea4ae9e1be5b), [`d7b7eb6`](https://github.com/commercetools/test-data/commit/d7b7eb6e2bf3daff60ea60d07d48252252999923), [`71eb4f5`](https://github.com/commercetools/test-data/commit/71eb4f5c020f86cee129ed477ad6386f15049fdf)]:
   - @commercetools-test-data/commons@7.0.0
+  - @commercetools-test-data/channel@7.0.0
+  - @commercetools-test-data/customer-group@7.0.0
   - @commercetools-test-data/core@7.0.0
   - @commercetools-test-data/utils@7.0.0
-
-## 6.11.0
-
-### Patch Changes
-
-- Updated dependencies []:
-  - @commercetools-test-data/core@6.11.0
-  - @commercetools-test-data/commons@6.11.0
-  - @commercetools-test-data/utils@6.11.0
-
-## 6.10.0
-
-### Minor Changes
-
-- [#453](https://github.com/commercetools/test-data/pull/453) [`60490aa`](https://github.com/commercetools/test-data/commit/60490aac6c36759b7482086d972e578d7da63c46) Thanks [@jmcreasman](https://github.com/jmcreasman)! - Package introduced for draft and final Type models plus supporting models.
-
-### Patch Changes
-
-- Updated dependencies [[`203eff0`](https://github.com/commercetools/test-data/commit/203eff051df03eff3b4f125e281890d0c2db9fd7)]:
-  - @commercetools-test-data/commons@6.10.0
-  - @commercetools-test-data/core@6.10.0
-  - @commercetools-test-data/utils@6.10.0

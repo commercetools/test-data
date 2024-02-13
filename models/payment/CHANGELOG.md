@@ -1,5 +1,29 @@
 # @commercetools-test-data/payment
 
+## 7.0.0
+
+### Major Changes
+
+- [#478](https://github.com/commercetools/test-data/pull/478) [`71eb4f5`](https://github.com/commercetools/test-data/commit/71eb4f5c020f86cee129ed477ad6386f15049fdf) Thanks [@jaikamat](https://github.com/jaikamat)! - This breaking release excludes \_\_typename from built GraphQL draft models.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Ensure tests that assert on the presence of \_\_typename in draft GraphQL models are updated to no longer expect this field.
+  - Update any code that relies on the presence of \_\_typename in draft GraphQL models to align with the new approach.
+
+### Patch Changes
+
+- [#480](https://github.com/commercetools/test-data/pull/480) [`d7b7eb6`](https://github.com/commercetools/test-data/commit/d7b7eb6e2bf3daff60ea60d07d48252252999923) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Added various CH presets for max cent amount.
+
+- [#477](https://github.com/commercetools/test-data/pull/477) [`963eac6`](https://github.com/commercetools/test-data/commit/963eac6863b479ac1b5f7a7e3c8ad4632af72bea) Thanks [@jaikamat](https://github.com/jaikamat)! - Correct PaymentDraft model generation
+
+- Updated dependencies [[`f027639`](https://github.com/commercetools/test-data/commit/f027639045374709b64259584986ea4ae9e1be5b), [`d7b7eb6`](https://github.com/commercetools/test-data/commit/d7b7eb6e2bf3daff60ea60d07d48252252999923), [`71eb4f5`](https://github.com/commercetools/test-data/commit/71eb4f5c020f86cee129ed477ad6386f15049fdf), [`c191608`](https://github.com/commercetools/test-data/commit/c191608cd604ad85070fd8b25aaa6127e923f5b5)]:
+  - @commercetools-test-data/commons@7.0.0
+  - @commercetools-test-data/customer@7.0.0
+  - @commercetools-test-data/order@7.0.0
+  - @commercetools-test-data/core@7.0.0
+  - @commercetools-test-data/utils@7.0.0
+
 ## 6.11.0
 
 ### Patch Changes
