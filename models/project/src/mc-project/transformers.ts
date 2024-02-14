@@ -1,39 +1,25 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type { TMcProject, TMcProjectGraphql } from './types';
 
+const buildFields: (keyof TMcProject)[] = [
+  'owner',
+  'expiry',
+  'suspension',
+  'allAppliedActionRights',
+  'allAppliedDataFences',
+  'allAppliedPermissions',
+  'allPermissionsForAllApplications',
+];
+
 const transformers = {
   default: Transformer<TMcProject, TMcProject>('default', {
-    buildFields: [
-      'owner',
-      'expiry',
-      'suspension',
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allPermissionsForAllApplications',
-    ],
+    buildFields,
   }),
   rest: Transformer<TMcProject, TMcProject>('rest', {
-    buildFields: [
-      'owner',
-      'expiry',
-      'suspension',
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allPermissionsForAllApplications',
-    ],
+    buildFields,
   }),
   graphql: Transformer<TMcProject, TMcProjectGraphql>('graphql', {
-    buildFields: [
-      'owner',
-      'expiry',
-      'suspension',
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allPermissionsForAllApplications',
-    ],
+    buildFields,
     addFields: () => ({
       __typename: 'Project',
     }),
