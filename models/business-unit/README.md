@@ -24,3 +24,12 @@ import { CompanyDraft, DivisionDraft, type TBusinessUnitDraft } from from '@comm
 const companyDraft = CompanyDraft.random().build<TBusinessUnitDraft>();
 const divisionDraft = DivisionDraft.random().build<TBusinessUnitDraft>();
 ```
+
+## Associate and AssociateRoleAssignment
+
+```ts
+import { Associate, AssociateRoleAssignment, type TAssociateDefault, type TAssociateRoleAssignmentDefault } from from '@commercetools-test-data/business-unit';
+
+const associate = Associate.random().build<TAssociateDefault>();
+const associateRoleAssignment = AssociateRoleAssignment.random().build<TAssociateRoleAssignmentDefault>();
+```

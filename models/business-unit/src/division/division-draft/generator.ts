@@ -3,8 +3,8 @@ import {
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { status, storeMode, unitType, associateMode } from '../../constants';
-import type { TDivisionDraft } from '../../types';
+import { status, storeMode, unitType, associateMode } from '../constants';
+import type { TDivisionDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/business-units#divisiondraft
 

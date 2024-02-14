@@ -19,6 +19,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/associate-role": "7.0.0",
     "@commercetools-test-data/commons": "7.0.0",
     "@commercetools-test-data/core": "7.0.0",
     "@commercetools-test-data/utils": "7.0.0",

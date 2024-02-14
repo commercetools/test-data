@@ -163,6 +163,9 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.19.4
+      '@commercetools-test-data/associate-role':
+        specifier: 7.0.0
+        version: link:../associate-role
       '@commercetools-test-data/commons':
         specifier: 7.0.0
         version: link:../commons

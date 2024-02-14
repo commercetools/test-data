@@ -10,8 +10,8 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { status, storeMode, unitType, associateMode } from '../constants';
-import type { TDivision } from '../types';
+import { status, storeMode, unitType, associateMode } from './constants';
+import type { TDivision } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

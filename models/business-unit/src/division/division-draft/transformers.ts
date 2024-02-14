@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TDivisionDraft, TDivisionDraftGraphql } from '../../types';
+import type { TDivisionDraft, TDivisionDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TDivisionDraft, TDivisionDraft>('default', {

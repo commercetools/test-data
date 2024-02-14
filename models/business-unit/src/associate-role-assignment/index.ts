@@ -1,5 +1,5 @@
 export * from './types';
-export * as CompanyDraft from './company-draft';
+export * as AssociateRoleAssignmentDraft from './associate-role-assignment-draft';
 
 export { default as random } from './builder';
 export { default as presets } from './presets';

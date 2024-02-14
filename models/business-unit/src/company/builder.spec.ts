@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TCompany, TCompanyGraphql } from '../types';
+import type { TCompany, TCompanyGraphql } from './types';
 import * as BusinessUnit from './index';
 
 describe('builder', () => {

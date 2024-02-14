@@ -2,7 +2,7 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TDivision, TDivisionGraphql } from '../types';
+import type { TDivision, TDivisionGraphql } from './types';
 import * as BusinessUnit from './index';
 
 describe('builder', () => {

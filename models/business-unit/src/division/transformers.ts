@@ -1,7 +1,7 @@
 import { KeyReference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import * as Company from '../company';
-import type { TDivision, TDivisionGraphql } from '../types';
+import type { TDivision, TDivisionGraphql } from './types';
 
 const transformers = {
   default: Transformer<TDivision, TDivisionGraphql>('default', {
