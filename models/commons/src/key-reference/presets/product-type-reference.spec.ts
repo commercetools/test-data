@@ -1,7 +1,7 @@
 import type { TKeyReference } from '../types';
 import productTypeReference from './product-type-reference';
 
-it('should build category reference', () => {
+it('should build product type reference', () => {
   const built = productTypeReference().build<TKeyReference>();
   expect(built).toEqual({
     key: expect.any(String),
