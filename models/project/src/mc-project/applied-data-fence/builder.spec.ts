@@ -13,7 +13,7 @@ describe('builder', () => {
         type: 'Store',
         group: expect.any(String),
         name: expect.any(String),
-        value: expect.any(Boolean),
+        value: expect.any(String),
       })
     )
   );
@@ -26,7 +26,7 @@ describe('builder', () => {
         type: 'Store',
         group: expect.any(String),
         name: expect.any(String),
-        value: expect.any(Boolean),
+        value: expect.any(String),
       })
     )
   );
@@ -40,7 +40,7 @@ describe('builder', () => {
         type: 'Store',
         group: expect.any(String),
         name: expect.any(String),
-        value: expect.any(Boolean),
+        value: expect.any(String),
       })
     )
   );

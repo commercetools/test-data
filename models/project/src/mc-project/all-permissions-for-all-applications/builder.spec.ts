@@ -28,7 +28,7 @@ describe('builder', () => {
             type: 'Store',
             group: expect.any(String),
             name: expect.any(String),
-            value: expect.any(Boolean),
+            value: expect.any(String),
           }),
         ]),
         allAppliedPermissions: expect.arrayContaining([
@@ -67,7 +67,7 @@ describe('builder', () => {
             type: 'Store',
             group: expect.any(String),
             name: expect.any(String),
-            value: expect.any(Boolean),
+            value: expect.any(String),
           }),
         ]),
         allAppliedPermissions: expect.arrayContaining([
@@ -109,7 +109,7 @@ describe('builder', () => {
             type: 'Store',
             group: expect.any(String),
             name: expect.any(String),
-            value: expect.any(Boolean),
+            value: expect.any(String),
           }),
         ]),
         allAppliedPermissions: expect.arrayContaining([

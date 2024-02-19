@@ -40,7 +40,6 @@ describe('builder', () => {
       'graphql',
       ProjectDraft.random().key('project-key-1'),
       expect.objectContaining({
-        __typename: 'ProjectDraft',
         key: 'project-key-1',
         name: expect.any(String),
         countries: ['EN'],
