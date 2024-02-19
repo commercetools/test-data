@@ -4,39 +4,31 @@ import type {
   TAllPermissionsForAllApplicationsGraphql,
 } from './types';
 
+const buildFields: (keyof TAllPermissionsForAllApplications)[] = [
+  'allAppliedActionRights',
+  'allAppliedDataFences',
+  'allAppliedPermissions',
+  'allAppliedMenuVisibilities',
+];
+
 const transformers = {
   default: Transformer<
     TAllPermissionsForAllApplications,
     TAllPermissionsForAllApplications
   >('default', {
-    buildFields: [
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allAppliedMenuVisibilities',
-    ],
+    buildFields,
   }),
   rest: Transformer<
     TAllPermissionsForAllApplications,
     TAllPermissionsForAllApplications
   >('rest', {
-    buildFields: [
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allAppliedMenuVisibilities',
-    ],
+    buildFields,
   }),
   graphql: Transformer<
     TAllPermissionsForAllApplications,
     TAllPermissionsForAllApplicationsGraphql
   >('graphql', {
-    buildFields: [
-      'allAppliedActionRights',
-      'allAppliedDataFences',
-      'allAppliedPermissions',
-      'allAppliedMenuVisibilities',
-    ],
+    buildFields,
     addFields: () => ({
       __typename: 'AllPermissionsForAllApplications',
     }),
