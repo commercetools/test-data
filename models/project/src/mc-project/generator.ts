@@ -1,9 +1,4 @@
-import {
-  fake,
-  Generator,
-  oneOf,
-  sequence,
-} from '@commercetools-test-data/core';
+import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as AllPermissionsForAllApplications from './all-permissions-for-all-applications';
 import * as AppliedActionRight from './applied-action-right';

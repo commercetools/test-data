@@ -1,10 +1,16 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { TAppliedMenuVisibilities } from './types';
 
+const fakeMenuVisibilityNames = [
+  'hideProducts',
+  'hideOrders',
+  'hidePrices',
+  'hideDiscounts',
+];
+
 const generator = Generator<TAppliedMenuVisibilities>({
   fields: {
-    // TODO: use more realistic values for action rights
-    name: fake((f) => f.animal.type()),
+    name: fake((f) => f.helpers.arrayElement(fakeMenuVisibilityNames)),
     value: fake(() => true),
   },
 });

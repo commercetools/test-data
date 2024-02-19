@@ -10,10 +10,11 @@ const fakeActionRightNames = [
   'canSendQuote',
 ];
 
+const fakeActionRightGroups = ['products', 'orders', 'prices', 'discounts'];
+
 const generator = Generator<TAppliedActionRight>({
   fields: {
-    // TODO: use more realistic values for action rights
-    group: fake((f) => f.animal.type()),
+    group: fake((f) => f.helpers.arrayElement(fakeActionRightGroups)),
     name: fake((f) => f.helpers.arrayElement(fakeActionRightNames)),
     value: fake(() => true),
   },

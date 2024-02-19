@@ -15,7 +15,6 @@ const fakePermissions = [
 
 const generator = Generator<TAppliedPermission>({
   fields: {
-    // TODO: use more realistic values for action rights
     name: fake((f) => f.helpers.arrayElement(fakePermissions)),
     value: fake(() => true),
   },
