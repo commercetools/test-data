@@ -2,24 +2,21 @@ import { fake, Generator } from '@commercetools-test-data/core';
 import type { TAppliedDataFence } from './types';
 
 const fakeDataFenceNames = [
-  'canViewProducts',
-  'canManageProductTypes',
-  'canViewStates',
-  'canManageStates',
-  'canViewOrders',
-  'canManageOrders',
-  'canAddOrders',
-  'canAddDiscountCodes',
-  'canManageProjectSettings',
+  'viewCustomers',
+  'viewOrders',
+  'manageCustomers',
+  'manageOrders',
 ];
+
+const fakeDataFenceGroups = ['products', 'orders', 'prices', 'discounts'];
+const fakeDataFenceStores = ['europe', 'usa'];
 
 const generator = Generator<TAppliedDataFence>({
   fields: {
     type: fake(() => 'Store'),
-    // TODO: use more realistic values for action rights
-    group: fake((f) => f.animal.type()),
+    group: fake((f) => f.helpers.arrayElement(fakeDataFenceGroups)),
     name: fake((f) => f.helpers.arrayElement(fakeDataFenceNames)),
-    value: fake(() => true),
+    value: fake((f) => f.helpers.arrayElement(fakeDataFenceStores)),
   },
 });
 
