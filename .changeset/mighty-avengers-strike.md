@@ -1,24 +1,27 @@
 ---
-'@commercetools-test-data/project': minor
+'@commercetools-test-data/user': minor
 ---
 
-This package provides the data model for the commercetools platform `User` type and the enhanced representation used by the Merchant Center API.
+The package provides 2 type of models for Users: one targeting to User of the CoCo API and one targeting the User of the Merchant Center API (prefixed by `Mc`).
 
 ```ts
 import {
-  // Coco
+  // CoCo
   User,
   UserDraft,
   type TUser,
   type TUserDraft,
-  type TUserDraftGraphql,
 
   // MC
   McUser,
   McUserDraft,
   type TMcUser,
   type TMcUserDraft,
-  type TMcUserDraftGraphql,
 } from '@commercetools-test-data/user';
 
+const user = User.random().buildRest<TUser>();
+const userDraft = UserDraft.random().buildRest<TUserDraft>();
+
+const mcUser = McUser.random().buildGraphql<TMcUser>();
+const mcUserDraft = McUserDraft.random().buildGraphql<TMcUserDraft>();
 ```
