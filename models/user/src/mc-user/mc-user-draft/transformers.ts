@@ -4,11 +4,7 @@ import type { TMcUserDraft, TMcUserDraftGraphql } from '../types';
 const transformers = {
   default: Transformer<TMcUserDraft, TMcUserDraft>('default', {}),
   rest: Transformer<TMcUserDraft, TMcUserDraft>('rest', {}),
-  graphql: Transformer<TMcUserDraft, TMcUserDraftGraphql>('graphql', {
-    addFields: () => ({
-      __typename: 'UserDraft',
-    }),
-  }),
+  graphql: Transformer<TMcUserDraft, TMcUserDraftGraphql>('graphql', {}),
 };
 
 export default transformers;

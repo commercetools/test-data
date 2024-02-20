@@ -58,9 +58,7 @@ export type TMcUserDraft = {
   lastName: string;
 };
 
-export type TMcUserDraftGraphql = TMcUserDraft & {
-  __typename: 'UserDraft';
-};
+export type TMcUserDraftGraphql = TMcUserDraft;
 
 export type TMcUserBuilder = TBuilder<TMcUser>;
 export type TMcUserDraftBuilder = TBuilder<TMcUserDraft>;

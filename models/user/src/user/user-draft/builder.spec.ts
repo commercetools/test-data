@@ -42,7 +42,6 @@ describe('builder', () => {
       'graphql',
       UserDraft.random(),
       expect.objectContaining({
-        __typename: 'UserDraft',
         email: expect.any(String),
         password: expect.any(String),
         firstName: expect.any(String),

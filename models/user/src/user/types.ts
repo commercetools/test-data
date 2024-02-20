@@ -40,9 +40,7 @@ export type TUserDraft = {
   businessRole: BusinessRole;
 };
 
-export type TUserDraftGraphql = TUserDraft & {
-  __typename: 'UserDraft';
-};
+export type TUserDraftGraphql = TUserDraft;
 
 export type TUserBuilder = TBuilder<TUser>;
 export type TUserDraftBuilder = TBuilder<TUserDraft>;
