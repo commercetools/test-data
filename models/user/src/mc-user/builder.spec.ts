@@ -4,6 +4,25 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TMcUser, TMcUserGraphql } from './types';
 import * as McUser from './index';
 
+const projects = {
+  count: 1,
+  offset: 0,
+  total: 1,
+  results: [
+    expect.objectContaining({
+      id: expect.any(String),
+      key: expect.any(String),
+      version: expect.any(Number),
+      name: expect.any(String),
+      countries: expect.any(Array),
+      currencies: expect.any(Array),
+      languages: expect.any(Array),
+      createdAt: expect.any(String),
+      lastModifiedAt: expect.any(String),
+    }),
+  ],
+};
+
 describe('builder', () => {
   it(
     ...createBuilderSpec<TMcUser, TMcUser>(
@@ -27,7 +46,7 @@ describe('builder', () => {
         launchdarklyTrackingCloudEnvironment: expect.any(String),
         gravatarHash: expect.any(String),
         defaultProjectKey: expect.any(String),
-        projects: null,
+        projects,
         idTokenUserInfo: expect.objectContaining({
           iss: expect.any(String),
           sub: expect.any(String),
@@ -65,7 +84,7 @@ describe('builder', () => {
         launchdarklyTrackingCloudEnvironment: expect.any(String),
         gravatarHash: expect.any(String),
         defaultProjectKey: expect.any(String),
-        projects: null,
+        projects,
         idTokenUserInfo: expect.objectContaining({
           iss: expect.any(String),
           sub: expect.any(String),
@@ -104,7 +123,7 @@ describe('builder', () => {
         launchdarklyTrackingCloudEnvironment: expect.any(String),
         gravatarHash: expect.any(String),
         defaultProjectKey: expect.any(String),
-        projects: null,
+        projects,
         idTokenUserInfo: expect.objectContaining({
           iss: expect.any(String),
           sub: expect.any(String),

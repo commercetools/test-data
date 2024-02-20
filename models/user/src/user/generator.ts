@@ -4,6 +4,17 @@ import type { TUser } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
+const fakeBusinessRoles = [
+  'ExecutiveManagement',
+  'CustomerService',
+  'Marketing',
+  'SalesAndECommerceManager',
+  'ProductProjectManagerOrOwner',
+  'Architect',
+  'Engineer',
+  'Other',
+];
+
 const generator = Generator<TUser>({
   fields: {
     id: fake((f) => f.string.uuid()),
@@ -15,7 +26,7 @@ const generator = Generator<TUser>({
     password: fake((f) => f.internet.password()),
     language: fake(() => ['en']),
     numberFormat: fake(() => ['en']),
-    businessRole: fake(() => 'Other'),
+    businessRole: fake((f) => f.helpers.arrayElement(fakeBusinessRoles)),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
     lastLoginAt: fake(getNewerDate),

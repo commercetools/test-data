@@ -1,4 +1,5 @@
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
+import { McProject } from '@commercetools-test-data/project';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as IdTokenUserInfo from './id-token-user-info';
 import type { TMcUser } from './types';
@@ -25,7 +26,12 @@ const generator = Generator<TMcUser>({
     launchdarklyTrackingCloudEnvironment: fake((f) => f.lorem.word()),
     gravatarHash: fake((f) => f.lorem.word()),
     defaultProjectKey: fake((f) => f.lorem.word()),
-    projects: null, // TODO: Update this when project PR is merged
+    projects: fake(() => ({
+      count: 1,
+      offset: 0,
+      total: 1,
+      results: [McProject.random().build()],
+    })),
     businessRole: fake(() => 'Other'),
     idTokenUserInfo: fake(() => IdTokenUserInfo.random()),
     verificationStatus: fake(() => 'Verified'),

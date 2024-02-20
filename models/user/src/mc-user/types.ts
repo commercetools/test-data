@@ -1,10 +1,11 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TMcProject } from '@commercetools-test-data/project';
 
 type ProjectQueryResult = {
   count: number;
   offset: number;
   total: number;
-  results: unknown[]; // TODO: Update this when project PR is merged
+  results: TMcProject[];
 };
 
 export type TIdTokenUserInfo = {
