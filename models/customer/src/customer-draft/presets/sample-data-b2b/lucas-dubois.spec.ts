@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import lucasDubois from './lucas-dubois';
+
+describe(`with lucasDubois preset`, () => {
+  it(`should return a lucasDubois preset`, () => {
+    const lucasDuboisPreset = lucasDubois().build<TCustomerDraft>();
+    expect(lucasDuboisPreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Paris",
+            "company": undefined,
+            "country": "FR",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Lucas",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Dubois",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "75001",
+            "region": "Île-de-France",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Rue de Rivoli",
+            "streetNumber": "117",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "lucas-dubois@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Lucas",
+        "isEmailVerified": undefined,
+        "key": "lucas-dubois",
+        "lastName": "Dubois",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a lucasDubois preset when built for graphql`, () => {
+    const lucasDuboisPresetGraphql =
+      lucasDubois().buildGraphql<TCustomerDraft>();
+    expect(lucasDuboisPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Paris",
+            "company": undefined,
+            "country": "FR",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Lucas",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Dubois",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "75001",
+            "region": "Île-de-France",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Rue de Rivoli",
+            "streetNumber": "117",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "lucas-dubois@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Lucas",
+        "isEmailVerified": undefined,
+        "key": "lucas-dubois",
+        "lastName": "Dubois",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

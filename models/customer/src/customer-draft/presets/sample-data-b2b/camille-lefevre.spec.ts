@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import camilleLefevre from './camille-lefevre';
+
+describe(`with camilleLefevre preset`, () => {
+  it(`should return a camilleLefevre preset`, () => {
+    const camilleLefevrePreset = camilleLefevre().build<TCustomerDraft>();
+    expect(camilleLefevrePreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Nice",
+            "company": undefined,
+            "country": "FR",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Camille",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Lefèvre",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "06000",
+            "region": "Provence-Alpes-Côte d&#39;Azur",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Avenue Jean Médecin",
+            "streetNumber": "22",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "camille-lefevre@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Camille",
+        "isEmailVerified": undefined,
+        "key": "camille-lefevre",
+        "lastName": "Lefèvre",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a camilleLefevre preset when built for graphql`, () => {
+    const camilleLefevrePresetGraphql =
+      camilleLefevre().buildGraphql<TCustomerDraft>();
+    expect(camilleLefevrePresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Nice",
+            "company": undefined,
+            "country": "FR",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Camille",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Lefèvre",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "06000",
+            "region": "Provence-Alpes-Côte d&#39;Azur",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Avenue Jean Médecin",
+            "streetNumber": "22",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "camille-lefevre@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Camille",
+        "isEmailVerified": undefined,
+        "key": "camille-lefevre",
+        "lastName": "Lefèvre",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

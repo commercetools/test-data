@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import williamTaylor from './william-taylor';
+
+describe(`with williamTaylor preset`, () => {
+  it(`should return a williamTaylor preset`, () => {
+    const williamTaylorPreset = williamTaylor().build<TCustomerDraft>();
+    expect(williamTaylorPreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Liverpool",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "William",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Taylor",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "L1 5AS",
+            "region": "Merseyside",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Duke Street",
+            "streetNumber": "32",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "william-taylor@ltsl.com",
+        "externalId": undefined,
+        "firstName": "William",
+        "isEmailVerified": undefined,
+        "key": "william-taylor",
+        "lastName": "Taylor",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a williamTaylor preset when built for graphql`, () => {
+    const williamTaylorPresetGraphql =
+      williamTaylor().buildGraphql<TCustomerDraft>();
+    expect(williamTaylorPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Liverpool",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "William",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Taylor",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "L1 5AS",
+            "region": "Merseyside",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Duke Street",
+            "streetNumber": "32",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "william-taylor@ltsl.com",
+        "externalId": undefined,
+        "firstName": "William",
+        "isEmailVerified": undefined,
+        "key": "william-taylor",
+        "lastName": "Taylor",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

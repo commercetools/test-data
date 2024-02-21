@@ -172,6 +172,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 7.0.0
         version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: 7.0.0
+        version: link:../customer
       '@commercetools-test-data/utils':
         specifier: 7.0.0
         version: link:../../utils
