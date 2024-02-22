@@ -1,30 +1,21 @@
 {
-  "name": "@commercetools-test-data/state",
+  "name": "@commercetools-test-data/user",
   "version": "6.11.0",
-  "description": "Data model for commercetools API State",
+  "description": "Data model for commercetools API User",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/state"
+    "directory": "models/user"
   },
-  "keywords": [
-    "javascript",
-    "typescript",
-    "test-data"
-  ],
+  "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-state.cjs.js",
-  "module": "dist/commercetools-test-data-state.esm.js",
-  "files": [
-    "dist",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
+  "main": "dist/commercetools-test-data-user.cjs.js",
+  "module": "dist/commercetools-test-data-user.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
@@ -33,8 +24,6 @@
     "@commercetools-test-data/project": "workspace:^",
     "@commercetools-test-data/utils": "6.11.0",
     "@commercetools/platform-sdk": "^7.0.0",
-    "@faker-js/faker": "^8.0.0",
-    "add": "^2.0.6",
-    "pnpm": "^8.15.3"
+    "@faker-js/faker": "^8.0.0"
   }
 }
