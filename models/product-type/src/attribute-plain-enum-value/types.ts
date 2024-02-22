@@ -7,10 +7,7 @@ export type TAttributePlainEnumValueDraft = AttributePlainEnumValue;
 export type TAttributePlainEnumValueGraphql = TAttributePlainEnumValue & {
   __typename: 'AttributePlainEnumValue';
 };
-export type TAttributePlainEnumValueDraftGraphql = {
-  key: string;
-  label: string;
-};
+export type TAttributePlainEnumValueDraftGraphql = AttributePlainEnumValue;
 
 export type TAttributePlainEnumValueBuilder =
   TBuilder<TAttributePlainEnumValue>;
