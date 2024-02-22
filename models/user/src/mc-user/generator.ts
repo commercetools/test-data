@@ -1,6 +1,7 @@
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { McProject } from '@commercetools-test-data/project';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { fakeBusinessRoles } from '../constants';
 import * as IdTokenUserInfo from './id-token-user-info';
 import type { TMcUser } from './types';
 
@@ -32,7 +33,7 @@ const generator = Generator<TMcUser>({
       total: 1,
       results: [McProject.random().build()],
     })),
-    businessRole: fake(() => 'Other'),
+    businessRole: fake((f) => f.helpers.arrayElement(fakeBusinessRoles)),
     idTokenUserInfo: fake(() => IdTokenUserInfo.random()),
     verificationStatus: fake(() => 'Verified'),
   },

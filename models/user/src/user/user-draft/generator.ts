@@ -1,4 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
+import { fakeBusinessRoles } from '../../constants';
 import type { TUserDraft } from '../types';
 
 const generator = Generator<TUserDraft>({
@@ -9,7 +10,7 @@ const generator = Generator<TUserDraft>({
     lastName: fake((f) => f.person.lastName()),
     language: fake(() => ['en']),
     numberFormat: fake(() => ['en']),
-    businessRole: fake(() => 'Other'),
+    businessRole: fake((f) => f.helpers.arrayElement(fakeBusinessRoles)),
   },
 });
 

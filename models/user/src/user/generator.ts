@@ -1,19 +1,9 @@
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { fakeBusinessRoles } from '../constants';
 import type { TUser } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
-
-const fakeBusinessRoles = [
-  'ExecutiveManagement',
-  'CustomerService',
-  'Marketing',
-  'SalesAndECommerceManager',
-  'ProductProjectManagerOrOwner',
-  'Architect',
-  'Engineer',
-  'Other',
-];
 
 const generator = Generator<TUser>({
   fields: {

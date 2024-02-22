@@ -56,6 +56,7 @@ export type TMcUserDraft = {
   email: string;
   firstName: string;
   lastName: string;
+  businessRole?: string;
 };
 
 export type TMcUserDraftGraphql = TMcUserDraft;
