@@ -17,7 +17,8 @@ $ pnpm add -D @commercetools-test-data/product-type
 - [AttributeEnumType](#attributeenumtype)<br>
 - [AttributeLocalizedEnumType](#attributelocalizedenumtype)<br>
 - [AttributeLocalizedEnumValue](#attributelocalizedenumvalue)<br>
-- [attributeLocalizableTextType](#attributelocalizabletexttype)<br>
+- [AttributeLocalizableTextType](#attributelocalizabletexttype)<br>
+- [AttributeNumberType](#attributenumbertype)<br>
 - [AttributePlainEnumValue](#attributeplainenumvalue)<br>
 - [AttributeSetType](#attributesettype)<br>
 - [AttributeReferenceType](#attributereferencetype)<br>
@@ -108,6 +109,18 @@ const attributeLocalizableTextType =
   AttributeLocalizableTextType.random().build<TattributeLocalizableTextType>();
 ```
 
+## `AttributeNumberType`
+
+```ts
+import {
+  AttributeNumberType,
+  type TAttributeNumberType,
+} from '@commercetools-test-data/product-type';
+
+const attributeNumberType =
+  AttributeNumberType.random().build<TAttributeNumberType>();
+```
+
 ## `AttributePlainEnumValue`
 
 ```ts
@@ -130,6 +143,7 @@ import {
 } from '@commercetools-test-data/product-type';
 
 const attributeSetType = AttributeSetType.random().build<TAttributeSetType>();
+```
 
 ## `AttributeReferenceType`
 
