@@ -19,7 +19,7 @@ import {
   UserDraft,
   type TUser,
   type TUserDraft,
-  type TUserDraftGraphql,
+  type TUserDraft,
 
   // MC
   McUser,
@@ -30,7 +30,7 @@ import {
 
 const user = User.random().buildRest<TUser>();
 const userDraft = UserDraft.random().buildRest<TUserDraft>();
-const userGraphQLDraft = UserDraft.random().buildGraphql<TUserDraftGraphql>();
+const userGraphQLDraft = UserDraft.random().buildGraphql<TUserDraft>();
 
 const mcUser = McUser.random().buildRest<TMcUser>();
 const mcUserDraft = McUserDraft.random().buildRest<TMcUserDraft>();

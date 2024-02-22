@@ -1,10 +1,10 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TUserDraft, TUserDraftGraphql } from '../types';
+import type { TUserDraft } from '../types';
 
 const transformers = {
   default: Transformer<TUserDraft, TUserDraft>('default', {}),
   rest: Transformer<TUserDraft, TUserDraft>('rest', {}),
-  graphql: Transformer<TUserDraft, TUserDraftGraphql>('graphql', {}),
+  graphql: Transformer<TUserDraft, TUserDraft>('graphql', {}),
 };
 
 export default transformers;

@@ -1,0 +1,21 @@
+schema:
+  - '${MC_API_URL}/graphql':
+      headers:
+        Cookie: mcAccessToken=${MC_ACCESS_TOKEN}
+        X-Graphql-Target: administration
+extensions:
+  codegen:
+    generates:
+      schemas/core.json:
+        plugins:
+          - introspection
+      graphql-types/src/generated/core.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+        config:
+          typesPrefix: TCore
+          addUnderscoreToArgsType: true
+    hooks:
+      afterAllFileWrite:
+        - prettier --write
