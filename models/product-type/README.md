@@ -136,13 +136,14 @@ const attributePlainEnumValue =
 
 ## `AttributeSetType`
 
-````ts
+```ts
 import {
   AttributeSetType,
   type TAttributeSetType,
 } from '@commercetools-test-data/product-type';
 
 const attributeSetType = AttributeSetType.random().build<TAttributeSetType>();
+```
 
 ## `AttributeReferenceType`
 
@@ -154,7 +155,7 @@ import {
 
 const attributeReferenceType =
   AttributeReferenceType.random().build<TAttributeReferenceType>();
-````
+```
 
 ## `AttributeTextType`
 
