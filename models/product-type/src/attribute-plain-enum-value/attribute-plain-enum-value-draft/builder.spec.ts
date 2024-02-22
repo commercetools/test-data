@@ -2,7 +2,6 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
-  TAttributePlainEnumValue,
   TAttributePlainEnumValueDraft,
   TAttributePlainEnumValueDraftGraphql,
 } from '../types';
@@ -11,7 +10,7 @@ import * as AttributePlainEnumValueDraft from './index';
 describe('builder', () => {
   it(
     ...createBuilderSpec<
-      TAttributePlainEnumValue,
+      TAttributePlainEnumValueDraft,
       TAttributePlainEnumValueDraft
     >(
       'default',
@@ -25,7 +24,7 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TAttributePlainEnumValue,
+      TAttributePlainEnumValueDraft,
       TAttributePlainEnumValueDraftGraphql
     >(
       'graphql',
