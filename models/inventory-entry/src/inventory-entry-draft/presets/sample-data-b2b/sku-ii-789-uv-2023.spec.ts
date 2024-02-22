@@ -1,0 +1,35 @@
+import type { TInventoryEntryDraft } from '../../../types';
+import skuIi789Uv2023 from './sku-ii-789-uv-2023';
+
+describe(`with skuIi789Uv2023 preset`, () => {
+  it(`should return a skuIi789Uv2023 preset`, () => {
+    const skuIi789Uv2023Preset = skuIi789Uv2023().build<TInventoryEntryDraft>();
+    expect(skuIi789Uv2023Preset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": undefined,
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "ii789-uv-2023",
+        "supplyChannel": undefined,
+      }
+    `);
+  });
+
+  it(`should return a skuIi789Uv2023 preset when built for graphql`, () => {
+    const skuIi789Uv2023PresetGraphql =
+      skuIi789Uv2023().buildGraphql<TInventoryEntryDraft>();
+    expect(skuIi789Uv2023PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": undefined,
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "ii789-uv-2023",
+        "supplyChannel": undefined,
+      }
+    `);
+  });
+});
