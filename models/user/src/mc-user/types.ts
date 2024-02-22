@@ -2,7 +2,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 import type {
   TMcUser as TMcUserGraphql,
   TMcIdTokenUserInfo as TMcIdTokenUserInfoGraphql,
-} from '../../../../graphql-types/src/generated/mc';
+} from '@commercetools-test-data/graphql-types/src/generated/mc';
 export type { TMcUserGraphql, TMcIdTokenUserInfoGraphql };
 
 export type TMcUser = Omit<TMcUserGraphql, '__typename'>;

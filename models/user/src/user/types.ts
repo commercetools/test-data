@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCoreUser } from '../../../../graphql-types/src/generated/core';
+import { TCoreUser } from '@commercetools-test-data/graphql-types/src/generated/core';
 
 type BusinessRole =
   | 'ExecutiveManagement'

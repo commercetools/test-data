@@ -1063,6 +1063,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 6.11.0
         version: 6.11.0
+      '@commercetools-test-data/graphql-types':
+        specifier: 7.0.0
+        version: link:../../graphql-types
       '@commercetools-test-data/project':
         specifier: workspace:^
         version: link:../project
