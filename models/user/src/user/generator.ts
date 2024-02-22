@@ -13,13 +13,13 @@ const generator = Generator<TUser>({
     lowercaseEmail: fake((f) => f.internet.email()),
     firstName: fake((f) => f.person.firstName()),
     lastName: fake((f) => f.person.lastName()),
-    password: fake((f) => f.internet.password()),
     language: fake(() => ['en']),
     numberFormat: fake(() => ['en']),
     businessRole: fake((f) => f.helpers.arrayElement(fakeBusinessRoles)),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
     lastLoginAt: fake(getNewerDate),
+    locked: fake(() => false),
   },
 });
 

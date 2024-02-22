@@ -16,13 +16,13 @@ describe('builder', () => {
         lowercaseEmail: expect.any(String),
         firstName: expect.any(String),
         lastName: expect.any(String),
-        password: expect.any(String),
         language: ['en'],
         numberFormat: ['en'],
         businessRole: expect.any(String),
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         lastLoginAt: expect.any(String),
+        locked: false,
       })
     )
   );
@@ -38,13 +38,13 @@ describe('builder', () => {
         lowercaseEmail: expect.any(String),
         firstName: expect.any(String),
         lastName: expect.any(String),
-        password: expect.any(String),
         language: ['en'],
         numberFormat: ['en'],
         businessRole: expect.any(String),
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         lastLoginAt: expect.any(String),
+        locked: false,
       })
     )
   );
@@ -61,13 +61,13 @@ describe('builder', () => {
         lowercaseEmail: expect.any(String),
         firstName: expect.any(String),
         lastName: expect.any(String),
-        password: expect.any(String),
         language: ['en'],
         numberFormat: ['en'],
         businessRole: expect.any(String),
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         lastLoginAt: expect.any(String),
+        locked: false,
       })
     )
   );
