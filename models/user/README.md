@@ -26,7 +26,6 @@ import {
   McUserDraft,
   type TMcUser,
   type TMcUserDraft,
-  type TMcUserDraftGraphql,
 } from '@commercetools-test-data/user';
 
 const user = User.random().buildRest<TUser>();
@@ -35,6 +34,5 @@ const userGraphQLDraft = UserDraft.random().buildGraphql<TUserDraftGraphql>();
 
 const mcUser = McUser.random().buildRest<TMcUser>();
 const mcUserDraft = McUserDraft.random().buildRest<TMcUserDraft>();
-const mcUserGraphQLDraft =
-  McUserDraft.random().buildGraphql<TMcUserDraftGraphql>();
+const mcUserGraphQLDraft = McUserDraft.random().buildGraphql<TMcUserDraft>();
 ```

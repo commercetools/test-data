@@ -19,7 +19,9 @@
     "test": "jest --config jest.test.config.js",
     "typecheck": "tsc --noEmit",
     "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json' && pnpm install --lockfile-only",
-    "generate-types:settings": "graphql-codegen -r dotenv/config --config codegen.settings.yml"
+    "generate-types:settings": "graphql-codegen -r dotenv/config --config codegen.settings.yml",
+    "generate-types:mc": "graphql-codegen -r dotenv/config --config codegen.mc.yml",
+    "generate-types": "pnpm generate-types:settings && generate-types:mc"
   },
   "dependencies": {
     "@babel/core": "^7.21.0",

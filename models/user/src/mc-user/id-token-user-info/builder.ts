@@ -1,13 +1,13 @@
 import { Builder } from '@commercetools-test-data/core';
 import type {
   TMcCreateIdTokenUserInfoBuilder,
-  TIdTokenUserInfo,
+  TMcIdTokenUserInfo,
 } from '../types';
 import generator from './generator';
 import transformers from './transformers';
 
 const Model: TMcCreateIdTokenUserInfoBuilder = () =>
-  Builder<TIdTokenUserInfo>({
+  Builder<TMcIdTokenUserInfo>({
     generator,
     transformers,
   });

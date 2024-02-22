@@ -1,12 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TIdTokenUserInfo, TIdTokenUserInfoGraphql } from '../types';
+import type { TMcIdTokenUserInfo, TMcIdTokenUserInfoGraphql } from '../types';
 import * as IdTokenUserInfo from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TIdTokenUserInfo, TIdTokenUserInfo>(
+    ...createBuilderSpec<TMcIdTokenUserInfo, TMcIdTokenUserInfo>(
       'default',
       IdTokenUserInfo.random(),
       expect.objectContaining({
@@ -23,7 +23,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TIdTokenUserInfo, TIdTokenUserInfo>(
+    ...createBuilderSpec<TMcIdTokenUserInfo, TMcIdTokenUserInfo>(
       'rest',
       IdTokenUserInfo.random(),
       expect.objectContaining({
@@ -40,7 +40,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TIdTokenUserInfo, TIdTokenUserInfoGraphql>(
+    ...createBuilderSpec<TMcIdTokenUserInfo, TMcIdTokenUserInfoGraphql>(
       'graphql',
       IdTokenUserInfo.random(),
       expect.objectContaining({

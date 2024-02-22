@@ -1,0 +1,20 @@
+schema:
+  - '${MC_API_URL}/graphql':
+      headers:
+        X-Graphql-Target: mc
+extensions:
+  codegen:
+    generates:
+      schemas/mc.json:
+        plugins:
+          - introspection
+      graphql-types/src/generated/mc.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+        config:
+          typesPrefix: TMc
+          addUnderscoreToArgsType: true
+    hooks:
+      afterAllFileWrite:
+        - prettier --write

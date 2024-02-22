@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TMcUserDraft, TMcUserDraftGraphql } from '../types';
+import type { TMcUserDraft } from '../types';
 import * as McUserDraft from './index';
 
 describe('builder', () => {
@@ -30,7 +30,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TMcUserDraft, TMcUserDraftGraphql>(
+    ...createBuilderSpec<TMcUserDraft, TMcUserDraft>(
       'graphql',
       McUserDraft.random(),
       expect.objectContaining({

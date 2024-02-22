@@ -1,14 +1,17 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type { TIdTokenUserInfo, TIdTokenUserInfoGraphql } from '../types';
+import type { TMcIdTokenUserInfo, TMcIdTokenUserInfoGraphql } from '../types';
 
 const transformers = {
-  default: Transformer<TIdTokenUserInfo, TIdTokenUserInfo>('default', {}),
-  rest: Transformer<TIdTokenUserInfo, TIdTokenUserInfo>('rest', {}),
-  graphql: Transformer<TIdTokenUserInfo, TIdTokenUserInfoGraphql>('graphql', {
-    addFields: () => ({
-      __typename: 'IdTokenUserInfo',
-    }),
-  }),
+  default: Transformer<TMcIdTokenUserInfo, TMcIdTokenUserInfo>('default', {}),
+  rest: Transformer<TMcIdTokenUserInfo, TMcIdTokenUserInfo>('rest', {}),
+  graphql: Transformer<TMcIdTokenUserInfo, TMcIdTokenUserInfoGraphql>(
+    'graphql',
+    {
+      addFields: () => ({
+        __typename: 'IdTokenUserInfo',
+      }),
+    }
+  ),
 };
 
 export default transformers;
