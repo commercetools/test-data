@@ -1,0 +1,61 @@
+import type { TStandalonePriceDraft } from '../../../types';
+import d234Wx20195 from './d-234-wx-2019-5';
+
+describe(`with d234Wx20195 preset`, () => {
+  it(`should return a d234Wx20195 preset`, () => {
+    const d234Wx20195Preset = d234Wx20195().build<TStandalonePriceDraft>();
+    expect(d234Wx20195Preset).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "channel": {
+          "key": "de-fr-uk",
+          "typeId": "channel",
+        },
+        "country": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "discounted": undefined,
+        "key": "d234-wx-2019-5",
+        "sku": "d234-wx-2019",
+        "staged": undefined,
+        "tiers": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "centAmount": 810000,
+          "currencyCode": "EUR",
+        },
+      }
+    `);
+  });
+
+  it(`should return a d234Wx20195 preset when built for graphql`, () => {
+    const d234Wx20195PresetGraphql =
+      d234Wx20195().buildGraphql<TStandalonePriceDraft>();
+    expect(d234Wx20195PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "channel": {
+          "key": "de-fr-uk",
+          "typeId": "channel",
+        },
+        "country": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "discounted": undefined,
+        "key": "d234-wx-2019-5",
+        "sku": "d234-wx-2019",
+        "staged": undefined,
+        "tiers": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "centPrecision": {
+            "centAmount": 810000,
+            "currencyCode": "EUR",
+          },
+        },
+      }
+    `);
+  });
+});

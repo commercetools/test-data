@@ -1,0 +1,61 @@
+import type { TStandalonePriceDraft } from '../../../types';
+import u123Qr20191 from './u-123-qr-2019-1';
+
+describe(`with u123Qr20191 preset`, () => {
+  it(`should return a u123Qr20191 preset`, () => {
+    const u123Qr20191Preset = u123Qr20191().build<TStandalonePriceDraft>();
+    expect(u123Qr20191Preset).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "channel": {
+          "key": "default-channel",
+          "typeId": "channel",
+        },
+        "country": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "discounted": undefined,
+        "key": "u123-qr-2019-1",
+        "sku": "u123-qr-2019",
+        "staged": undefined,
+        "tiers": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "centAmount": 2178001,
+          "currencyCode": "GBP",
+        },
+      }
+    `);
+  });
+
+  it(`should return a u123Qr20191 preset when built for graphql`, () => {
+    const u123Qr20191PresetGraphql =
+      u123Qr20191().buildGraphql<TStandalonePriceDraft>();
+    expect(u123Qr20191PresetGraphql).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "channel": {
+          "key": "default-channel",
+          "typeId": "channel",
+        },
+        "country": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "discounted": undefined,
+        "key": "u123-qr-2019-1",
+        "sku": "u123-qr-2019",
+        "staged": undefined,
+        "tiers": undefined,
+        "validFrom": undefined,
+        "validUntil": undefined,
+        "value": {
+          "centPrecision": {
+            "centAmount": 2178001,
+            "currencyCode": "GBP",
+          },
+        },
+      }
+    `);
+  });
+});

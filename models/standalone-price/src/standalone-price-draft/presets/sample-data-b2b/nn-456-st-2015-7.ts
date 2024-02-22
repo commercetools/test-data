@@ -1,0 +1,18 @@
+import {
+  KeyReferenceDraft,
+  MoneyDraft,
+} from '@commercetools-test-data/commons';
+import { TStandalonePriceDraftBuilder } from '../../../types';
+import * as StandalonePriceDraft from '../../index';
+
+const nn456St20157 = (): TStandalonePriceDraftBuilder =>
+  StandalonePriceDraft.presets
+    .empty()
+    .key('nn456-st-2015-7')
+    .sku('nn456-st-2015')
+    .value(MoneyDraft.random().currencyCode('USD').centAmount(2640000))
+    .country('US')
+    .channel(KeyReferenceDraft.presets.channel().key('us-medium-customers'))
+    .active(true);
+
+export default nn456St20157;
