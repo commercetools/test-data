@@ -18,6 +18,7 @@ export * as AttributeBooleanTypeDraft from './attribute-boolean-type/attribute-b
 export * as AttributeDefinition from './attribute-definition';
 export * as AttributeDefinitionDraft from './attribute-definition/attribute-definition-draft';
 export * as AttributePlainEnumValue from './attribute-plain-enum-value';
+export * as AttributePlainEnumValueDraft from './attribute-plain-enum-value/attribute-plain-enum-value-draft';
 export * as AttributeEnumType from './attribute-enum-type';
 export * as AttributeEnumTypeDraft from './attribute-enum-type/attribute-enum-type-draft';
 export * as AttributeLocalizedEnumType from './attribute-localized-enum-type';
