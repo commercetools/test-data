@@ -7,13 +7,13 @@ const [_, getNewerDate] = createRelatedDates();
 const generator = Generator<TMcIdTokenUserInfo>({
   fields: {
     iss: fake((f) => f.internet.url()),
-    sub: fake((f) => f.internet.email()),
+    sub: fake((f) => f.string.uuid()),
     aud: fake((f) => f.internet.url()),
     exp: fake(getNewerDate),
     iat: fake(getNewerDate),
     email: fake((f) => f.internet.email()),
     name: fake((f) => f.person.firstName()),
-    additionalClaims: fake((f) => f.lorem.words()),
+    additionalClaims: null,
   },
 });
 

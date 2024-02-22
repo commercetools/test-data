@@ -17,7 +17,7 @@ describe('builder', () => {
         iat: expect.any(String),
         email: expect.any(String),
         name: expect.any(String),
-        additionalClaims: expect.any(String),
+        additionalClaims: null,
       })
     )
   );
@@ -34,7 +34,7 @@ describe('builder', () => {
         iat: expect.any(String),
         email: expect.any(String),
         name: expect.any(String),
-        additionalClaims: expect.any(String),
+        additionalClaims: null,
       })
     )
   );
@@ -52,7 +52,7 @@ describe('builder', () => {
         iat: expect.any(String),
         email: expect.any(String),
         name: expect.any(String),
-        additionalClaims: expect.any(String),
+        additionalClaims: null,
       })
     )
   );

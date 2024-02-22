@@ -27,12 +27,7 @@ const generator = Generator<TMcUser>({
     launchdarklyTrackingCloudEnvironment: fake((f) => f.lorem.word()),
     gravatarHash: fake((f) => f.lorem.word()),
     defaultProjectKey: fake((f) => f.lorem.word()),
-    projects: fake(() => ({
-      count: 1,
-      offset: 0,
-      total: 1,
-      results: [McProject.random().build()],
-    })),
+    projects: fake(() => [McProject.random()]),
     businessRole: fake((f) => f.helpers.arrayElement(fakeBusinessRoles)),
     idTokenUserInfo: fake(() => IdTokenUserInfo.random()),
     verificationStatus: fake(() => 'Verified'),

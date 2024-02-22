@@ -1,15 +1,17 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type { TMcUser, TMcUserGraphql } from './types';
 
+const buildFields: (keyof TMcUser)[] = ['idTokenUserInfo', 'projects'];
+
 const transformers = {
   default: Transformer<TMcUser, TMcUser>('default', {
-    buildFields: ['idTokenUserInfo'],
+    buildFields,
   }),
   rest: Transformer<TMcUser, TMcUser>('rest', {
-    buildFields: ['idTokenUserInfo'],
+    buildFields,
   }),
   graphql: Transformer<TMcUser, TMcUserGraphql>('graphql', {
-    buildFields: ['idTokenUserInfo'],
+    buildFields,
     addFields: () => ({
       __typename: 'User',
     }),
