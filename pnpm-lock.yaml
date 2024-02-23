@@ -532,6 +532,9 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 7.0.0
         version: link:../customer-group
+      '@commercetools-test-data/quote':
+        specifier: 7.0.0
+        version: link:../quote
       '@commercetools-test-data/utils':
         specifier: 7.0.0
         version: link:../../utils
