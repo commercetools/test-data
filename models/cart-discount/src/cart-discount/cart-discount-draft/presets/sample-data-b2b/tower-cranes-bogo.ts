@@ -22,7 +22,8 @@ const towerCranesBogo = (): TCartDiscountDraftBuilder =>
     .key('tower-cranes-bogo')
     .value(CartDiscountValueRelativeDraft.random().permyriad(10000))
     .target(
-      CartDiscountMultiBuyLineItemsTargetDraft.random()
+      CartDiscountMultiBuyLineItemsTargetDraft.presets
+        .empty()
         .predicate(`categories.key contains "${category.key}`)
         .triggerQuantity(2)
         .discountedQuantity(1)
