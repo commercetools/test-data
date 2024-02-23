@@ -1,7 +1,7 @@
-import withTransactionUsdCurrencyCodeMaxCent from './with-usd-currency-code-max-cent';
+import withUsdCurrencyCodeCentMax from './with-usd-currency-code-max-cent';
 
 const presets = {
-  withTransactionUsdCurrencyCodeMaxCent,
+  withUsdCurrencyCodeCentMax,
 };
 
 export default presets;
