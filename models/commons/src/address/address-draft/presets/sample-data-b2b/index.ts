@@ -2,14 +2,14 @@ import ameliaJonesAddress from './amelia-jones-address';
 import avaBrownAddress from './ava-brown-address';
 import camilleLefevreAddress from './camille-lefevre-address';
 import carlosGarciaAddress from './carlos-garcia-address';
-import eagleHeavyLiftTechnologiesIncUsNy1 from './eagle-heavy-lift-technologies-inc-us-ny-1';
+import eagleHeavyLiftTechnologiesIncUsNy1Address from './eagle-heavy-lift-technologies-inc-us-ny-1-address';
 import emmaJohnsonAddress from './emma-johnson-address';
 import jamesSmithAddress from './james-smith-address';
-import libertyCraneSolutionsLlcUsNc1 from './liberty-crane-solutions-llc-us-nc-1';
-import lifttechSolutionsLtd from './lifttech-solutions-ltd';
-import lifttechSolutionsLtdDe from './lifttech-solutions-ltd-de';
-import lifttechSolutionsLtdEs from './lifttech-solutions-ltd-es';
-import lifttechSolutionsLtdFr from './lifttech-solutions-ltd-fr';
+import libertyCraneSolutionsLlcUsNc1Address from './liberty-crane-solutions-llc-us-nc-1-address';
+import lifttechSolutionsLtdAddress from './lifttech-solutions-ltd-address';
+import lifttechSolutionsLtdDeAddress from './lifttech-solutions-ltd-de-address';
+import lifttechSolutionsLtdEsAddress from './lifttech-solutions-ltd-es-address';
+import lifttechSolutionsLtdFrAddress from './lifttech-solutions-ltd-fr-address';
 import lucasDuboisAddress from './lucas-dubois-address';
 import lukasSchmidtAddress from './lukas-schmidt-address';
 import michaelWilliamsAddress from './michael-williams-address';
@@ -36,12 +36,12 @@ const presets = {
   camilleLefevreAddress,
   carlosGarciaAddress,
   sofiaLopezAddress,
-  eagleHeavyLiftTechnologiesIncUsNy1,
-  libertyCraneSolutionsLlcUsNc1,
-  lifttechSolutionsLtd,
-  lifttechSolutionsLtdDe,
-  lifttechSolutionsLtdFr,
-  lifttechSolutionsLtdEs,
+  eagleHeavyLiftTechnologiesIncUsNy1Address,
+  libertyCraneSolutionsLlcUsNc1Address,
+  lifttechSolutionsLtdAddress,
+  lifttechSolutionsLtdDeAddress,
+  lifttechSolutionsLtdFrAddress,
+  lifttechSolutionsLtdEsAddress,
 };
 
 export default presets;

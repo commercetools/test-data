@@ -23,6 +23,7 @@
     "@commercetools-test-data/commons": "7.0.0",
     "@commercetools-test-data/customer": "7.0.0",
     "@commercetools-test-data/core": "7.0.0",
+    "@commercetools-test-data/store": "7.0.0",
     "@commercetools-test-data/utils": "7.0.0",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"

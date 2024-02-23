@@ -3,14 +3,13 @@ import type { TDivisionDraft, TDivisionDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TDivisionDraft, TDivisionDraft>('default', {
-    buildFields: ['addresses'],
+    buildFields: ['addresses', 'associates', 'parentUnit', 'stores'],
   }),
   rest: Transformer<TDivisionDraft, TDivisionDraft>('rest', {
-    buildFields: ['addresses'],
+    buildFields: ['addresses', 'associates', 'parentUnit', 'stores'],
   }),
-  //only scaffolding provided at this time
   graphql: Transformer<TDivisionDraft, TDivisionDraftGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['addresses', 'associates', 'parentUnit', 'stores'],
   }),
 };
 

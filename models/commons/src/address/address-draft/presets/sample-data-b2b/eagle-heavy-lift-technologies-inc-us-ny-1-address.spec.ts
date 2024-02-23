@@ -1,11 +1,12 @@
 import type { TAddressDraft } from '../../../types';
-import eagleHeavyLiftTechnologiesIncUsNy1 from './eagle-heavy-lift-technologies-inc-us-ny-1';
+import eagleHeavyLiftTechnologiesIncUsNy1Address from './eagle-heavy-lift-technologies-inc-us-ny-1-address';
 
-describe(`with eagleHeavyLiftTechnologiesIncUsNy1 preset`, () => {
-  it(`should return a eagleHeavyLiftTechnologiesIncUsNy1 preset`, () => {
-    const eagleHeavyLiftTechnologiesIncUsNy1Preset =
-      eagleHeavyLiftTechnologiesIncUsNy1().build<TAddressDraft>();
-    expect(eagleHeavyLiftTechnologiesIncUsNy1Preset).toMatchInlineSnapshot(`
+describe(`with eagleHeavyLiftTechnologiesIncUsNy1Address preset`, () => {
+  it(`should return a eagleHeavyLiftTechnologiesIncUsNy1Address preset`, () => {
+    const eagleHeavyLiftTechnologiesIncUsNy1AddressPreset =
+      eagleHeavyLiftTechnologiesIncUsNy1Address().build<TAddressDraft>();
+    expect(eagleHeavyLiftTechnologiesIncUsNy1AddressPreset)
+      .toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,
@@ -37,10 +38,10 @@ describe(`with eagleHeavyLiftTechnologiesIncUsNy1 preset`, () => {
     `);
   });
 
-  it(`should return a eagleHeavyLiftTechnologiesIncUsNy1 preset when built for graphql`, () => {
-    const eagleHeavyLiftTechnologiesIncUsNy1PresetGraphql =
-      eagleHeavyLiftTechnologiesIncUsNy1().buildGraphql<TAddressDraft>();
-    expect(eagleHeavyLiftTechnologiesIncUsNy1PresetGraphql)
+  it(`should return a eagleHeavyLiftTechnologiesIncUsNy1Address preset when built for graphql`, () => {
+    const eagleHeavyLiftTechnologiesIncUsNy1AddressPresetGraphql =
+      eagleHeavyLiftTechnologiesIncUsNy1Address().buildGraphql<TAddressDraft>();
+    expect(eagleHeavyLiftTechnologiesIncUsNy1AddressPresetGraphql)
       .toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,

@@ -1,11 +1,11 @@
 import type { TAddressDraft } from '../../../types';
-import lifttechSolutionsLtdEs from './lifttech-solutions-ltd-es';
+import lifttechSolutionsLtdEsAddress from './lifttech-solutions-ltd-es-address';
 
-describe(`with lifttechSolutionsLtdEs preset`, () => {
-  it(`should return a lifttechSolutionsLtdEs preset`, () => {
-    const lifttechSolutionsLtdEsPreset =
-      lifttechSolutionsLtdEs().build<TAddressDraft>();
-    expect(lifttechSolutionsLtdEsPreset).toMatchInlineSnapshot(`
+describe(`with lifttechSolutionsLtdEsAddress preset`, () => {
+  it(`should return a lifttechSolutionsLtdEsAddress preset`, () => {
+    const lifttechSolutionsLtdEsAddressPreset =
+      lifttechSolutionsLtdEsAddress().build<TAddressDraft>();
+    expect(lifttechSolutionsLtdEsAddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,
@@ -37,10 +37,10 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
     `);
   });
 
-  it(`should return a lifttechSolutionsLtdEs preset when built for graphql`, () => {
-    const lifttechSolutionsLtdEsPresetGraphql =
-      lifttechSolutionsLtdEs().buildGraphql<TAddressDraft>();
-    expect(lifttechSolutionsLtdEsPresetGraphql).toMatchInlineSnapshot(`
+  it(`should return a lifttechSolutionsLtdEsAddress preset when built for graphql`, () => {
+    const lifttechSolutionsLtdEsAddressPresetGraphql =
+      lifttechSolutionsLtdEsAddress().buildGraphql<TAddressDraft>();
+    expect(lifttechSolutionsLtdEsAddressPresetGraphql).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,

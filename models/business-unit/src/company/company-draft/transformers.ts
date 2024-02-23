@@ -3,14 +3,13 @@ import type { TCompanyDraft, TCompanyDraftGraphql } from '../types';
 
 const transformers = {
   default: Transformer<TCompanyDraft, TCompanyDraft>('default', {
-    buildFields: ['addresses'],
+    buildFields: ['addresses', 'associates', 'stores'],
   }),
   rest: Transformer<TCompanyDraft, TCompanyDraft>('rest', {
-    buildFields: ['addresses'],
+    buildFields: ['addresses', 'associates', 'stores'],
   }),
-  //only scaffolding provided at this time
   graphql: Transformer<TCompanyDraft, TCompanyDraftGraphql>('graphql', {
-    buildFields: [],
+    buildFields: ['addresses', 'associates', 'stores'],
   }),
 };
 
