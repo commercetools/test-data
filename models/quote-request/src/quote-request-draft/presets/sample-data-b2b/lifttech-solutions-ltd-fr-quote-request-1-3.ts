@@ -1,0 +1,24 @@
+import { CartDraft, type TCartDraft } from '@commercetools-test-data/cart';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
+import {
+  QuoteRequestDraft,
+  type TQuoteRequestDraftBuilder,
+} from '../../../index';
+
+const lifttechSolutionsLtdFrCart1Cart = CartDraft.presets.sampleDataB2B
+  .lifttechSolutionsLtdFrCart1()
+  .build<TCartDraft>();
+
+const lifttechSolutionsLtdFrQuoteRequest13 = (
+  cartVersion: number
+): TQuoteRequestDraftBuilder =>
+  QuoteRequestDraft.presets
+    .empty()
+    .key('lifttech-solutions-ltd-fr-quote-request-1-3')
+    .cart(
+      KeyReferenceDraft.presets.cart().key(lifttechSolutionsLtdFrCart1Cart.key!)
+    )
+    .cartVersion(cartVersion)
+    .comment('Please provide a quote for the following items.');
+
+export default lifttechSolutionsLtdFrQuoteRequest13;
