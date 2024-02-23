@@ -22,6 +22,9 @@ it(`should set all fields to specified values`, () => {
           }),
         }),
       ]),
+      paymentStatus: expect.objectContaining({
+        state: undefined,
+      }),
     })
   );
 });
