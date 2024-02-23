@@ -45,7 +45,7 @@ describe(`with towerCranesBogo preset`, () => {
         "stackingMode": "Stacking",
         "target": {
           "discountedQuantity": 1,
-          "maxOccurrence": 83,
+          "maxOccurrence": undefined,
           "predicate": "categories.key contains "tower-cranes",
           "selectionMode": "Cheapest",
           "triggerQuantity": 2,
@@ -160,7 +160,7 @@ describe(`with towerCranesBogo preset`, () => {
         "target": {
           "multiBuyLineItems": {
             "discountedQuantity": 1,
-            "maxOccurrence": 38,
+            "maxOccurrence": undefined,
             "predicate": "categories.key contains "tower-cranes",
             "selectionMode": "Cheapest",
             "triggerQuantity": 2,
