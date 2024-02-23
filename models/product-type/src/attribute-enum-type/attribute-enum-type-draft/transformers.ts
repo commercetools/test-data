@@ -8,13 +8,13 @@ const transformers = {
   default: Transformer<TAttributeEnumTypeDraft, TAttributeEnumTypeDraft>(
     'default',
     {
-      buildFields: [],
+      buildFields: ['values'],
     }
   ),
   graphql: Transformer<TAttributeEnumTypeDraft, TAttributeEnumTypeDraftGraphql>(
     'graphql',
     {
-      buildFields: [],
+      buildFields: ['values'],
       replaceFields: ({ fields }) => ({
         enum: { values: fields.values },
       }),
