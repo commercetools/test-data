@@ -9,7 +9,7 @@ export type TMcUser = Omit<TMcUserGraphql, '__typename'>;
 export type TMcIdTokenUserInfo = Omit<TMcIdTokenUserInfoGraphql, '__typename'>;
 
 export type TMcUserDraft = {
-  email: string;
+  password: string;
   firstName: string;
   lastName: string;
   businessRole?: string;

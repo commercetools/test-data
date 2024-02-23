@@ -8,11 +8,12 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TMcUserDraft, TMcUserDraft>(
       'default',
-      McUserDraft.random().email('hello@ct.com'),
+      McUserDraft.random(),
       expect.objectContaining({
-        email: 'hello@ct.com',
         firstName: expect.any(String),
         lastName: expect.any(String),
+        password: expect.any(String),
+        businessRole: expect.any(String),
       })
     )
   );
@@ -22,9 +23,10 @@ describe('builder', () => {
       'rest',
       McUserDraft.random(),
       expect.objectContaining({
-        email: expect.any(String),
+        password: expect.any(String),
         firstName: expect.any(String),
         lastName: expect.any(String),
+        businessRole: expect.any(String),
       })
     )
   );
@@ -34,9 +36,10 @@ describe('builder', () => {
       'graphql',
       McUserDraft.random(),
       expect.objectContaining({
-        email: expect.any(String),
+        password: expect.any(String),
         firstName: expect.any(String),
         lastName: expect.any(String),
+        businessRole: expect.any(String),
       })
     )
   );
