@@ -1,4 +1,5 @@
-import { Generator } from '@commercetools-test-data/core';
+import { fake, Generator } from '@commercetools-test-data/core';
+import * as AttributePlainEnumValueDraft from '../../attribute-plain-enum-value/attribute-plain-enum-value-draft';
 import { TAttributeEnumTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributeenumtype
@@ -6,6 +7,6 @@ import { TAttributeEnumTypeDraft } from '../types';
 export const generator = Generator<TAttributeEnumTypeDraft>({
   fields: {
     name: 'enum',
-    values: [],
+    values: fake((f) => [AttributePlainEnumValueDraft.random()]),
   },
 });

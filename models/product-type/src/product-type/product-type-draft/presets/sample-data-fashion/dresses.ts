@@ -2,6 +2,7 @@ import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
+  AttributePlainEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -21,18 +22,11 @@ const dresses = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Maxi',
-              label: 'Maxi',
-            },
-            {
-              key: 'Knee Length',
-              label: 'Knee Length',
-            },
-            {
-              key: 'Mini',
-              label: 'Mini',
-            },
+            AttributePlainEnumValueDraft.random().key('Maxi').label('Maxi'),
+            AttributePlainEnumValueDraft.random()
+              .key('Knee Length')
+              .label('Knee Length'),
+            AttributePlainEnumValueDraft.random().key('Mini').label('Mini'),
           ])
         )
         .attributeConstraint('CombinationUnique')
@@ -46,18 +40,9 @@ const dresses = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'White',
-              label: 'White',
-            },
-            {
-              key: 'Pink',
-              label: 'Pink',
-            },
-            {
-              key: 'Floral',
-              label: 'Floral',
-            },
+            AttributePlainEnumValueDraft.random().key('White').label('White'),
+            AttributePlainEnumValueDraft.random().key('Pink').label('Pink'),
+            AttributePlainEnumValueDraft.random().key('Floral').label('Floral'),
           ])
         )
         .attributeConstraint('CombinationUnique')

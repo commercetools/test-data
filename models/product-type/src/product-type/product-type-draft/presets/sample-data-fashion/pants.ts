@@ -2,6 +2,7 @@ import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
+  AttributePlainEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -21,18 +22,9 @@ const pants = (): TProductTypeDraftBuilder =>
         .isRequired(true)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Small',
-              label: 'Small',
-            },
-            {
-              key: 'Medium',
-              label: 'Medium',
-            },
-            {
-              key: 'Large',
-              label: 'Large',
-            },
+            AttributePlainEnumValueDraft.random().key('Small').label('Small'),
+            AttributePlainEnumValueDraft.random().key('Medium').label('Medium'),
+            AttributePlainEnumValueDraft.random().key('Large').label('Large'),
           ])
         )
         .attributeConstraint('None')
@@ -46,18 +38,11 @@ const pants = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Slim',
-              label: 'Slim',
-            },
-            {
-              key: 'Straight',
-              label: 'Straight',
-            },
-            {
-              key: 'Flair',
-              label: 'Flair',
-            },
+            AttributePlainEnumValueDraft.random().key('Slim').label('Slim'),
+            AttributePlainEnumValueDraft.random()
+              .key('Straight')
+              .label('Straight'),
+            AttributePlainEnumValueDraft.random().key('Flair').label('Flair'),
           ])
         )
         .attributeConstraint('None')
@@ -71,18 +56,9 @@ const pants = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Blue',
-              label: 'Blue',
-            },
-            {
-              key: 'Black',
-              label: 'Black',
-            },
-            {
-              key: 'White',
-              label: 'White',
-            },
+            AttributePlainEnumValueDraft.random().key('Blue').label('Blue'),
+            AttributePlainEnumValueDraft.random().key('Black').label('Black'),
+            AttributePlainEnumValueDraft.random().key('White').label('White'),
           ])
         )
         .attributeConstraint('None')
@@ -96,18 +72,11 @@ const pants = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Ankle',
-              label: 'Ankle',
-            },
-            {
-              key: 'Crop',
-              label: 'Crop',
-            },
-            {
-              key: 'Extra Long',
-              label: 'Extra Long',
-            },
+            AttributePlainEnumValueDraft.random().key('Ankle').label('Ankle'),
+            AttributePlainEnumValueDraft.random().key('Crop').label('Crop'),
+            AttributePlainEnumValueDraft.random()
+              .key('Extra Long')
+              .label('Extra Long'),
           ])
         )
         .attributeConstraint('None')

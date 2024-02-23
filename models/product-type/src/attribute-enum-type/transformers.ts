@@ -3,15 +3,15 @@ import { TAttributeEnumTypeGraphql, TAttributeEnumType } from './types';
 
 const transformers = {
   default: Transformer<TAttributeEnumType, TAttributeEnumType>('default', {
-    buildFields: [],
+    buildFields: ['values'],
   }),
   rest: Transformer<TAttributeEnumType, TAttributeEnumType>('rest', {
-    buildFields: [],
+    buildFields: ['values'],
   }),
   graphql: Transformer<TAttributeEnumType, TAttributeEnumTypeGraphql>(
     'graphql',
     {
-      buildFields: [],
+      buildFields: ['values'],
       addFields: ({ fields }) => ({
         __typename: 'EnumAttributionDefinitionType',
       }),

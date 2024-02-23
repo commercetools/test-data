@@ -2,6 +2,7 @@ import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
+  AttributePlainEnumValueDraft,
   AttributeTextTypeDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
@@ -22,18 +23,11 @@ const accessories = (): TProductTypeDraftBuilder =>
         .isRequired(true)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Jewelry',
-              label: 'Jewelry',
-            },
-            {
-              key: 'Bag',
-              label: 'Bag',
-            },
-            {
-              key: 'Shoes',
-              label: 'Shoes',
-            },
+            AttributePlainEnumValueDraft.random()
+              .key('Jewelry')
+              .label('Jewelry'),
+            AttributePlainEnumValueDraft.random().key('Bag').label('Bag'),
+            AttributePlainEnumValueDraft.random().key('Shoes').label('Shoes'),
           ])
         )
         .attributeConstraint('None')

@@ -2,6 +2,7 @@ import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
+  AttributePlainEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -21,18 +22,9 @@ const shirts = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Small',
-              label: 'Small',
-            },
-            {
-              key: 'Medium',
-              label: 'Medium',
-            },
-            {
-              key: 'Large',
-              label: 'Large',
-            },
+            AttributePlainEnumValueDraft.random().key('Small').label('Small'),
+            AttributePlainEnumValueDraft.random().key('Medium').label('Medium'),
+            AttributePlainEnumValueDraft.random().key('Large').label('Large'),
           ])
         )
         .attributeConstraint('CombinationUnique')
@@ -46,22 +38,12 @@ const shirts = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Red',
-              label: 'Red',
-            },
-            {
-              key: 'Green',
-              label: 'Green',
-            },
-            {
-              key: 'Purple',
-              label: 'Purple',
-            },
-            {
-              key: 'Multi-Color',
-              label: 'Multi-Color',
-            },
+            AttributePlainEnumValueDraft.random().key('Red').label('Red'),
+            AttributePlainEnumValueDraft.random().key('Green').label('Green'),
+            AttributePlainEnumValueDraft.random().key('Purple').label('Purple'),
+            AttributePlainEnumValueDraft.random()
+              .key('Multi-Color')
+              .label('Multi-Color'),
           ])
         )
         .attributeConstraint('CombinationUnique')
