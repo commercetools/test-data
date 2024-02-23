@@ -4,24 +4,19 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TMcUser, TMcUserGraphql } from './types';
 import * as McUser from './index';
 
-const projects = {
-  count: 1,
-  offset: 0,
-  total: 1,
-  results: [
-    expect.objectContaining({
-      id: expect.any(String),
-      key: expect.any(String),
-      version: expect.any(Number),
-      name: expect.any(String),
-      countries: expect.any(Array),
-      currencies: expect.any(Array),
-      languages: expect.any(Array),
-      createdAt: expect.any(String),
-      lastModifiedAt: expect.any(String),
-    }),
-  ],
-};
+const projects = [
+  expect.objectContaining({
+    id: expect.any(String),
+    key: expect.any(String),
+    version: expect.any(Number),
+    name: expect.any(String),
+    countries: expect.any(Array),
+    currencies: expect.any(Array),
+    languages: expect.any(Array),
+    createdAt: expect.any(String),
+    lastModifiedAt: expect.any(String),
+  }),
+];
 
 describe('builder', () => {
   it(
@@ -55,7 +50,7 @@ describe('builder', () => {
           iat: expect.any(String),
           email: expect.any(String),
           name: expect.any(String),
-          additionalClaims: expect.any(String),
+          additionalClaims: null,
         }),
         verificationStatus: 'Verified',
       })
@@ -93,7 +88,7 @@ describe('builder', () => {
           iat: expect.any(String),
           email: expect.any(String),
           name: expect.any(String),
-          additionalClaims: expect.any(String),
+          additionalClaims: null,
         }),
         verificationStatus: 'Verified',
       })
@@ -132,7 +127,7 @@ describe('builder', () => {
           iat: expect.any(String),
           email: expect.any(String),
           name: expect.any(String),
-          additionalClaims: expect.any(String),
+          additionalClaims: null,
         }),
         verificationStatus: 'Verified',
       })
