@@ -4,7 +4,7 @@ import lifttechSolutionsLtdEsStagedQuote1 from './lifttech-solutions-ltd-es-stag
 describe(`with lifttechSolutionsLtdEsStagedQuote1 preset`, () => {
   it(`should return a lifttechSolutionsLtdEsStagedQuote1 preset`, () => {
     const lifttechSolutionsLtdEsStagedQuote1Preset =
-      lifttechSolutionsLtdEsStagedQuote1().build<TStagedQuoteDraft>();
+      lifttechSolutionsLtdEsStagedQuote1(1).build<TStagedQuoteDraft>();
     expect(lifttechSolutionsLtdEsStagedQuote1Preset).toMatchInlineSnapshot(`
       {
         "custom": undefined,
@@ -14,7 +14,7 @@ describe(`with lifttechSolutionsLtdEsStagedQuote1 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": true,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);
@@ -22,7 +22,7 @@ describe(`with lifttechSolutionsLtdEsStagedQuote1 preset`, () => {
 
   it(`should return a lifttechSolutionsLtdEsStagedQuote1 preset when built for graphql`, () => {
     const lifttechSolutionsLtdEsStagedQuote1PresetGraphql =
-      lifttechSolutionsLtdEsStagedQuote1().buildGraphql<TStagedQuoteDraft>();
+      lifttechSolutionsLtdEsStagedQuote1(1).buildGraphql<TStagedQuoteDraft>();
     expect(lifttechSolutionsLtdEsStagedQuote1PresetGraphql)
       .toMatchInlineSnapshot(`
       {
@@ -33,7 +33,7 @@ describe(`with lifttechSolutionsLtdEsStagedQuote1 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": true,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);

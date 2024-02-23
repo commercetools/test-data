@@ -4,7 +4,7 @@ import eagleHeavyLiftTechnologiesIncUsStagedQuote1 from './eagle-heavy-lift-tech
 describe(`with eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset`, () => {
   it(`should return a eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset`, () => {
     const eagleHeavyLiftTechnologiesIncUsStagedQuote1Preset =
-      eagleHeavyLiftTechnologiesIncUsStagedQuote1().build<TStagedQuoteDraft>();
+      eagleHeavyLiftTechnologiesIncUsStagedQuote1(1).build<TStagedQuoteDraft>();
     expect(eagleHeavyLiftTechnologiesIncUsStagedQuote1Preset)
       .toMatchInlineSnapshot(`
       {
@@ -15,7 +15,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": true,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);
@@ -23,7 +23,9 @@ describe(`with eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset`, () => {
 
   it(`should return a eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset when built for graphql`, () => {
     const eagleHeavyLiftTechnologiesIncUsStagedQuote1PresetGraphql =
-      eagleHeavyLiftTechnologiesIncUsStagedQuote1().buildGraphql<TStagedQuoteDraft>();
+      eagleHeavyLiftTechnologiesIncUsStagedQuote1(
+        1
+      ).buildGraphql<TStagedQuoteDraft>();
     expect(eagleHeavyLiftTechnologiesIncUsStagedQuote1PresetGraphql)
       .toMatchInlineSnapshot(`
       {
@@ -34,7 +36,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsStagedQuote1 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": true,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);

@@ -4,7 +4,7 @@ import libertyCraneSolutionsLlcUsStagedQuote12 from './liberty-crane-solutions-l
 describe(`with libertyCraneSolutionsLlcUsStagedQuote12 preset`, () => {
   it(`should return a libertyCraneSolutionsLlcUsStagedQuote12 preset`, () => {
     const libertyCraneSolutionsLlcUsStagedQuote12Preset =
-      libertyCraneSolutionsLlcUsStagedQuote12().build<TStagedQuoteDraft>();
+      libertyCraneSolutionsLlcUsStagedQuote12(1).build<TStagedQuoteDraft>();
     expect(libertyCraneSolutionsLlcUsStagedQuote12Preset)
       .toMatchInlineSnapshot(`
       {
@@ -15,7 +15,7 @@ describe(`with libertyCraneSolutionsLlcUsStagedQuote12 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": false,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);
@@ -23,7 +23,9 @@ describe(`with libertyCraneSolutionsLlcUsStagedQuote12 preset`, () => {
 
   it(`should return a libertyCraneSolutionsLlcUsStagedQuote12 preset when built for graphql`, () => {
     const libertyCraneSolutionsLlcUsStagedQuote12PresetGraphql =
-      libertyCraneSolutionsLlcUsStagedQuote12().buildGraphql<TStagedQuoteDraft>();
+      libertyCraneSolutionsLlcUsStagedQuote12(
+        1
+      ).buildGraphql<TStagedQuoteDraft>();
     expect(libertyCraneSolutionsLlcUsStagedQuote12PresetGraphql)
       .toMatchInlineSnapshot(`
       {
@@ -34,7 +36,7 @@ describe(`with libertyCraneSolutionsLlcUsStagedQuote12 preset`, () => {
           "typeId": "quote-request",
         },
         "quoteRequestStateToAccepted": false,
-        "quoteRequestVersion": undefined,
+        "quoteRequestVersion": 1,
         "state": undefined,
       }
     `);
