@@ -3,6 +3,7 @@ import QuoteRequestDraft from '../builder';
 
 const empty = (): TQuoteRequestDraftBuilder =>
   QuoteRequestDraft()
+    .key(undefined)
     .comment(undefined)
     .state(undefined)
     .purchaseOrderNumber(undefined)

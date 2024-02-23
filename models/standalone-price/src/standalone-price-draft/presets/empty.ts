@@ -3,6 +3,7 @@ import StandalonePriceDraft from '../builder';
 
 const empty = (): TStandalonePriceDraftBuilder =>
   StandalonePriceDraft()
+    .key(undefined)
     .country(undefined)
     .customerGroup(undefined)
     .channel(undefined)
@@ -11,7 +12,6 @@ const empty = (): TStandalonePriceDraftBuilder =>
     .tiers(undefined)
     .discounted(undefined)
     .staged(undefined)
-    .active(undefined)
-    .custom(undefined);
+    .active(undefined);
 
 export default empty;
