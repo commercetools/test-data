@@ -47,6 +47,7 @@ const standardTax = () =>
         .includedInPrice(false)
         .country('US')
         .key('nc-state-tax')
+        .state('North Carolina')
         .subRates([]),
       TaxRateDraft.presets
         .empty()
@@ -55,6 +56,7 @@ const standardTax = () =>
         .includedInPrice(false)
         .country('US')
         .key('ny-state-tax')
+        .state('New York')
         .subRates([]),
     ]);
 
