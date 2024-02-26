@@ -1,5 +1,19 @@
 # @commercetools-test-data/product
 
+## 7.1.1
+
+### Patch Changes
+
+- [#489](https://github.com/commercetools/test-data/pull/489) [`87b6d4b`](https://github.com/commercetools/test-data/commit/87b6d4bb7444368bbf402ab8dca30ed2b33862ac) Thanks [@jaikamat](https://github.com/jaikamat)! - Exports ProductDraft presets
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.1.1
+  - @commercetools-test-data/category@7.1.1
+  - @commercetools-test-data/commons@7.1.1
+  - @commercetools-test-data/product-type@7.1.1
+  - @commercetools-test-data/tax-category@7.1.1
+  - @commercetools-test-data/utils@7.1.1
+
 ## 7.1.0
 
 ### Minor Changes
