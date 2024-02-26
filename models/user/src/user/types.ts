@@ -1,15 +1,8 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCoreUser } from '@commercetools-test-data/graphql-types/src/generated/core';
-
-type BusinessRole =
-  | 'ExecutiveManagement'
-  | 'CustomerService'
-  | 'Marketing'
-  | 'SalesAndECommerceManager'
-  | 'ProductProjectManagerOrOwner'
-  | 'Architect'
-  | 'Engineer'
-  | 'Other';
+import type {
+  TCoreBusinessRole,
+  TCoreUser,
+} from '@commercetools-test-data/graphql-types/src/generated/core';
 
 export type TUser = Omit<TCoreUser, '__typename'>;
 
@@ -22,7 +15,7 @@ export type TUserDraft = {
   lastName: string;
   language: string;
   numberFormat?: string;
-  businessRole: BusinessRole;
+  businessRole?: TCoreBusinessRole;
 };
 
 export type TUserBuilder = TBuilder<TUser>;
