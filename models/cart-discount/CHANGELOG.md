@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart-discount
 
+## 7.1.0
+
+### Minor Changes
+
+- [#487](https://github.com/commercetools/test-data/pull/487) [`387e367`](https://github.com/commercetools/test-data/commit/387e367b189bc9f33fe1288392ee6beae7caf96f) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add B2B sample data presets
+
+### Patch Changes
+
+- Updated dependencies [[`f22dfa3`](https://github.com/commercetools/test-data/commit/f22dfa3e7c3aa99f2c518db6bf63d72715eb6aaa), [`968444f`](https://github.com/commercetools/test-data/commit/968444f6868f5a7d8a0ab4359bd3177ca30f4097), [`387e367`](https://github.com/commercetools/test-data/commit/387e367b189bc9f33fe1288392ee6beae7caf96f), [`6da8af0`](https://github.com/commercetools/test-data/commit/6da8af0291c9769f9d2654408e16ddb8cf728217), [`9e7e964`](https://github.com/commercetools/test-data/commit/9e7e964b10c155bc1bbda3a1d291cb14ceac7e16)]:
+  - @commercetools-test-data/product-type@7.1.0
+  - @commercetools-test-data/category@7.1.0
+  - @commercetools-test-data/commons@7.1.0
+  - @commercetools-test-data/customer-group@7.1.0
+  - @commercetools-test-data/core@7.1.0
+  - @commercetools-test-data/utils@7.1.0
+
 ## 7.0.0
 
 ### Major Changes
