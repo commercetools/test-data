@@ -1,5 +1,15 @@
 # @commercetools-test-data/custom-view
 
+## 7.2.0
+
+### Patch Changes
+
+- Updated dependencies [[`1c41c10`](https://github.com/commercetools/test-data/commit/1c41c10a8973eaa6014010f31be713aaec7d018f)]:
+  - @commercetools-test-data/graphql-types@7.2.0
+  - @commercetools-test-data/core@7.2.0
+  - @commercetools-test-data/commons@7.2.0
+  - @commercetools-test-data/utils@7.2.0
+
 ## 7.1.1
 
 ### Patch Changes

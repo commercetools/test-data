@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 7.2.0
+
+### Patch Changes
+
+- [#492](https://github.com/commercetools/test-data/pull/492) [`689978c`](https://github.com/commercetools/test-data/commit/689978cfcc806680592d35bfe7de9f75ec846d1b) Thanks [@jaikamat](https://github.com/jaikamat)! - Fixes B2B cart discount predicate preset
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.0
+  - @commercetools-test-data/category@7.2.0
+  - @commercetools-test-data/commons@7.2.0
+  - @commercetools-test-data/customer-group@7.2.0
+  - @commercetools-test-data/product-type@7.2.0
+  - @commercetools-test-data/utils@7.2.0
+
 ## 7.1.1
 
 ### Patch Changes

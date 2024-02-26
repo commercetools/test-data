@@ -1,5 +1,11 @@
 # @commercetools-test-data/graphql-types
 
+## 7.2.0
+
+### Minor Changes
+
+- [#466](https://github.com/commercetools/test-data/pull/466) [`1c41c10`](https://github.com/commercetools/test-data/commit/1c41c10a8973eaa6014010f31be713aaec7d018f) Thanks [@Rhotimee](https://github.com/Rhotimee)! - Include Core and MC generated types to the package.
+
 ## 7.1.1
 
 ## 7.1.0
