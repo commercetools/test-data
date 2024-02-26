@@ -5,7 +5,6 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
   it(`should return a heavyEarthmovingAndConstructionEquipment preset`, () => {
     const heavyEarthmovingAndConstructionEquipmentPreset =
       heavyEarthmovingAndConstructionEquipment().build<TProductTypeDraft>();
-    console.debug(heavyEarthmovingAndConstructionEquipmentPreset);
     expect(heavyEarthmovingAndConstructionEquipmentPreset)
       .toMatchInlineSnapshot(`
       {
