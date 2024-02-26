@@ -11,7 +11,12 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: [],
+        values: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+          }),
+        ]),
       })
     )
   );
@@ -22,7 +27,12 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: [],
+        values: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+          }),
+        ]),
       })
     )
   );
@@ -33,7 +43,12 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: [],
+        values: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+          }),
+        ]),
         __typename: 'EnumAttributionDefinitionType',
       })
     )

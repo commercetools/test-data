@@ -3,6 +3,7 @@ import {
   AttributeBooleanTypeDraft,
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,
+  AttributePlainEnumValueDraft,
 } from '../../../../index';
 import type { TProductTypeDraftBuilder } from '../../../types';
 import * as ProductTypeDraft from '../../index';
@@ -24,18 +25,11 @@ const jackets = (): TProductTypeDraftBuilder =>
         .isRequired(false)
         .type(
           AttributeEnumTypeDraft.random().values([
-            {
-              key: 'Crop',
-              label: 'Crop',
-            },
-            {
-              key: 'Normal',
-              label: 'Normal',
-            },
-            {
-              key: 'Extra Long',
-              label: 'Extra Long',
-            },
+            AttributePlainEnumValueDraft.random().key('Crop').label('Crop'),
+            AttributePlainEnumValueDraft.random().key('Normal').label('Normal'),
+            AttributePlainEnumValueDraft.random()
+              .key('Extra Long')
+              .label('Extra Long'),
           ])
         )
         .attributeConstraint('None')

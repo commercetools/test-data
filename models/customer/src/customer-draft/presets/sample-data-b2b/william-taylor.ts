@@ -1,0 +1,17 @@
+import { AddressDraft } from '@commercetools-test-data/commons';
+import { authenticationMode } from '../../../constants';
+import type { TCustomerDraftBuilder } from '../../../types';
+import * as CustomerDraft from '../../index';
+
+const williamTaylor = (): TCustomerDraftBuilder =>
+  CustomerDraft.presets
+    .empty()
+    .key('william-taylor')
+    .email('william-taylor@ltsl.com')
+    .password('123')
+    .firstName('William')
+    .lastName('Taylor')
+    .addresses([AddressDraft.presets.sampleDataB2B.williamTaylorAddress()])
+    .authenticationMode(authenticationMode.Password);
+
+export default williamTaylor;

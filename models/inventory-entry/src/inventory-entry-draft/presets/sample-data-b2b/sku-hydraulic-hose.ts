@@ -1,0 +1,18 @@
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
+import type { TInventoryEntryDraftBuilder } from '../../../types';
+import * as InventoryEntryDraft from '../../index';
+
+const hydraulicHose01 = ProductVariantDraft.presets.sampleDataB2B
+  .hydraulicHose01()
+  .build<TProductVariantDraft>();
+
+const skuHYDRAULICHOSE = (): TInventoryEntryDraftBuilder =>
+  InventoryEntryDraft.presets
+    .empty()
+    .sku(hydraulicHose01.sku!)
+    .quantityOnStock(1000);
+
+export default skuHYDRAULICHOSE;

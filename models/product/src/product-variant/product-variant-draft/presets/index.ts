@@ -1,4 +1,5 @@
 import empty from './empty';
+import sampleDataB2B from './sample-data-b2b';
 import sampleDataFashion from './sample-data-fashion';
 import sampleDataGoodStore from './sample-data-goodstore';
 import withOneImage from './with-one-image';
@@ -10,6 +11,7 @@ const presets = {
   withOneImage,
   withTwoImages,
   empty,
+  sampleDataB2B,
   sampleDataFashion,
   sampleDataGoodStore,
 };

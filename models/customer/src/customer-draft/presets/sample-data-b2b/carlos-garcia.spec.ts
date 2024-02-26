@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import carlosGarcia from './carlos-garcia';
+
+describe(`with carlosGarcia preset`, () => {
+  it(`should return a carlosGarcia preset`, () => {
+    const carlosGarciaPreset = carlosGarcia().build<TCustomerDraft>();
+    expect(carlosGarciaPreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Madrid",
+            "company": undefined,
+            "country": "ES",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Carlos",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "García",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "28013",
+            "region": "Comunidad de Madrid",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Gran Vía",
+            "streetNumber": "28",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "carlos-garcia@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Carlos",
+        "isEmailVerified": undefined,
+        "key": "carlos-garcia",
+        "lastName": "García",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a carlosGarcia preset when built for graphql`, () => {
+    const carlosGarciaPresetGraphql =
+      carlosGarcia().buildGraphql<TCustomerDraft>();
+    expect(carlosGarciaPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Madrid",
+            "company": undefined,
+            "country": "ES",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Carlos",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "García",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "28013",
+            "region": "Comunidad de Madrid",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Gran Vía",
+            "streetNumber": "28",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "carlos-garcia@ltsl.com",
+        "externalId": undefined,
+        "firstName": "Carlos",
+        "isEmailVerified": undefined,
+        "key": "carlos-garcia",
+        "lastName": "García",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

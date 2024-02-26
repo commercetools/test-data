@@ -1,0 +1,84 @@
+import {
+  CategoryDraft,
+  TCategoryDraft,
+} from '@commercetools-test-data/category';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
+import {
+  ProductTypeDraft,
+  type TProductTypeDraft,
+} from '@commercetools-test-data/product-type';
+import {
+  TaxCategoryDraft,
+  type TTaxCategoryDraft,
+} from '@commercetools-test-data/tax-category';
+import { ProductVariantDraft } from '../../../../product-variant';
+import { ProductDraft } from '../../../index';
+import type { TProductDraftBuilder } from '../../../types';
+
+const standardTaxTaxCategory = TaxCategoryDraft.presets.sampleDataB2B
+  .standardTax()
+  .build<TTaxCategoryDraft>();
+
+const genericProductProductType = ProductTypeDraft.presets.sampleDataB2B
+  .genericProduct()
+  .build<TProductTypeDraft>();
+
+const sparePartsCategory = CategoryDraft.presets.sampleDataB2B
+  .spareParts()
+  .build<TCategoryDraft>();
+
+const brakePadSet = (): TProductDraftBuilder =>
+  ProductDraft.presets
+    .empty()
+    .key('brake-pad-set')
+    .name(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bremsbelagsatz')
+        ['it-IT']('Set di pastiglie freno')
+        ['nl-NL']('Remblokkenset')
+        ['fr-FR']('Jeu de plaquettes de frein')
+        ['es-ES']('Juego de pastillas de freno')
+        ['pt-PT']('Conjunto de pastilhas de freio')
+        ['en-US']('Brake Pad Set')
+    )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Stellt die Reibung bereit, um das Fahrzeug anzuhalten.')
+        ['it-IT']('Fornisce l&#39;attrito per fermare il veicolo.')
+        ['nl-NL']('Zorgt voor de wrijving om het voertuig te stoppen.')
+        ['fr-FR']('Fournit la friction nécessaire pour arrêter le véhicule.')
+        ['es-ES']('Proporciona la fricción para detener el vehículo.')
+        ['pt-PT']('Fornece a fricção para parar o veículo.')
+        ['en-US']('Provides the friction to stop the vehicle.')
+    )
+    .slug(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('brake-pad-set')
+        ['it-IT']('brake-pad-set')
+        ['nl-NL']('brake-pad-set')
+        ['fr-FR']('brake-pad-set')
+        ['es-ES']('brake-pad-set')
+        ['pt-PT']('brake-pad-set')
+        ['en-US']('brake-pad-set')
+    )
+    .productType(
+      KeyReferenceDraft.presets
+        .productType()
+        .key(genericProductProductType.key!)
+    )
+    .publish(true)
+    .taxCategory(
+      KeyReferenceDraft.presets.taxCategory().key(standardTaxTaxCategory.key!)
+    )
+    .masterVariant(ProductVariantDraft.presets.sampleDataB2B.brakePadSet01())
+    .categories([
+      KeyReferenceDraft.presets.category().key(sparePartsCategory.key!),
+    ]);
+
+export default brakePadSet;

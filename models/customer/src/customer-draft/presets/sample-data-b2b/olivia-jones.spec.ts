@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import oliviaJones from './olivia-jones';
+
+describe(`with oliviaJones preset`, () => {
+  it(`should return a oliviaJones preset`, () => {
+    const oliviaJonesPreset = oliviaJones().build<TCustomerDraft>();
+    expect(oliviaJonesPreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Manchester",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Olivia",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Jones",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "M1 1PT",
+            "region": "Greater Manchester",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Market Street",
+            "streetNumber": "18",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "olivia-jones@lcs.com",
+        "externalId": undefined,
+        "firstName": "Olivia",
+        "isEmailVerified": undefined,
+        "key": "olivia-jones",
+        "lastName": "Jones",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a oliviaJones preset when built for graphql`, () => {
+    const oliviaJonesPresetGraphql =
+      oliviaJones().buildGraphql<TCustomerDraft>();
+    expect(oliviaJonesPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Manchester",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Olivia",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Jones",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "M1 1PT",
+            "region": "Greater Manchester",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Market Street",
+            "streetNumber": "18",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "olivia-jones@lcs.com",
+        "externalId": undefined,
+        "firstName": "Olivia",
+        "isEmailVerified": undefined,
+        "key": "olivia-jones",
+        "lastName": "Jones",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

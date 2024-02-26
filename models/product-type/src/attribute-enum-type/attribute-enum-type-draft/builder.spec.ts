@@ -15,7 +15,28 @@ describe('builder', () => {
       AttributeEnumTypeDraft.random(),
       expect.objectContaining({
         name: 'enum',
-        values: [],
+        values: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+          }),
+        ]),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TAttributeEnumType, TAttributeEnumTypeDraft>(
+      'rest',
+      AttributeEnumTypeDraft.random(),
+      expect.objectContaining({
+        name: 'enum',
+        values: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+          }),
+        ]),
       })
     )
   );
@@ -25,7 +46,14 @@ describe('builder', () => {
       'graphql',
       AttributeEnumTypeDraft.random(),
       expect.objectContaining({
-        enum: { values: [] },
+        enum: {
+          values: expect.arrayContaining([
+            expect.objectContaining({
+              key: expect.any(String),
+              label: expect.any(String),
+            }),
+          ]),
+        },
       })
     )
   );

@@ -1,0 +1,131 @@
+import type { TCustomerDraft } from '../../../types';
+import williamDavis from './william-davis';
+
+describe(`with williamDavis preset`, () => {
+  it(`should return a williamDavis preset`, () => {
+    const williamDavisPreset = williamDavis().build<TCustomerDraft>();
+    expect(williamDavisPreset).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "London",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "William",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Davis",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "W6 9JT",
+            "region": "Greater London",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "King Street",
+            "streetNumber": "85",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "william-davis@lcs.com",
+        "externalId": undefined,
+        "firstName": "William",
+        "isEmailVerified": undefined,
+        "key": "william-davis",
+        "lastName": "Davis",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+
+  it(`should return a williamDavis preset when built for graphql`, () => {
+    const williamDavisPresetGraphql =
+      williamDavis().buildGraphql<TCustomerDraft>();
+    expect(williamDavisPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "addresses": [
+          {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "London",
+            "company": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "William",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Davis",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "W6 9JT",
+            "region": "Greater London",
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "King Street",
+            "streetNumber": "85",
+            "title": undefined,
+          },
+        ],
+        "anonymousCart": undefined,
+        "anonymousId": undefined,
+        "authenticationMode": "Password",
+        "billingAddresses": undefined,
+        "companyName": undefined,
+        "custom": undefined,
+        "customerGroup": undefined,
+        "customerNumber": undefined,
+        "dateOfBirth": undefined,
+        "defaultBillingAddress": undefined,
+        "defaultShippingAddress": undefined,
+        "email": "william-davis@lcs.com",
+        "externalId": undefined,
+        "firstName": "William",
+        "isEmailVerified": undefined,
+        "key": "william-davis",
+        "lastName": "Davis",
+        "locale": undefined,
+        "middleName": undefined,
+        "password": "123",
+        "salutation": undefined,
+        "shippingAddresses": undefined,
+        "stores": undefined,
+        "title": undefined,
+        "vatId": undefined,
+      }
+    `);
+  });
+});

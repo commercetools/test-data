@@ -1,4 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
+import { TAttributeEnumType } from '../../attribute-enum-type';
 import {
   TAttributeNumberTypeDraftGraphql,
   TAttributeNumberTypeDraft,
@@ -7,6 +8,12 @@ import {
 const transformers = {
   default: Transformer<TAttributeNumberTypeDraft, TAttributeNumberTypeDraft>(
     'default',
+    {
+      buildFields: [],
+    }
+  ),
+  rest: Transformer<TAttributeNumberTypeDraft, TAttributeNumberTypeDraft>(
+    'rest',
     {
       buildFields: [],
     }

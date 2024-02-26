@@ -1,4 +1,5 @@
 import empty from './empty';
+import sampleDataB2B from './sample-data-b2b';
 import sampleDataFashion from './sample-data-fashion';
 import sampleDataGoodStore from './sample-data-goodstore';
 import withGeoLocationOnly from './with-geolocation-only';
@@ -10,6 +11,7 @@ import withProductDistributionRole from './with-product-distribution-role';
 
 const presets = {
   empty,
+  sampleDataB2B,
   sampleDataFashion,
   withProductDistributionRole,
   withInventorySupplyRole,
