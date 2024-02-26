@@ -1,5 +1,16 @@
 # @commercetools-test-data/tax-category
 
+## 7.2.1
+
+### Patch Changes
+
+- [#493](https://github.com/commercetools/test-data/pull/493) [`f5051d5`](https://github.com/commercetools/test-data/commit/f5051d52fa6afd9cea1ef7cf9581c3fc65b6de31) Thanks [@jaikamat](https://github.com/jaikamat)! - Adds State to B2B TaxCategory preset
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.1
+  - @commercetools-test-data/commons@7.2.1
+  - @commercetools-test-data/utils@7.2.1
+
 ## 7.2.0
 
 ### Patch Changes
