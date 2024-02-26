@@ -46,7 +46,7 @@ describe(`with towerCranesBogo preset`, () => {
         "target": {
           "discountedQuantity": 1,
           "maxOccurrence": undefined,
-          "predicate": "categories.key contains "tower-cranes",
+          "predicate": "categories.key contains "tower-cranes"",
           "selectionMode": "Cheapest",
           "triggerQuantity": 2,
           "type": "multiBuyLineItems",
@@ -161,7 +161,7 @@ describe(`with towerCranesBogo preset`, () => {
           "multiBuyLineItems": {
             "discountedQuantity": 1,
             "maxOccurrence": undefined,
-            "predicate": "categories.key contains "tower-cranes",
+            "predicate": "categories.key contains "tower-cranes"",
             "selectionMode": "Cheapest",
             "triggerQuantity": 2,
           },

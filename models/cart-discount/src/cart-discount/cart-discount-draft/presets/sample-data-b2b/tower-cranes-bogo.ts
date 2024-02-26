@@ -24,7 +24,7 @@ const towerCranesBogo = (): TCartDiscountDraftBuilder =>
     .target(
       CartDiscountMultiBuyLineItemsTargetDraft.presets
         .empty()
-        .predicate(`categories.key contains "${category.key}`)
+        .predicate(`categories.key contains "${category.key}"`)
         .triggerQuantity(2)
         .discountedQuantity(1)
         .selectionMode(selectionMode.Cheapest)
