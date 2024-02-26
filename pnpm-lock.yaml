@@ -1065,7 +1065,7 @@ importers:
         version: 6.11.0
       '@commercetools-test-data/graphql-types':
         specifier: 7.0.0
-        version: link:../../graphql-types
+        version: 7.0.0
       '@commercetools-test-data/project':
         specifier: workspace:^
         version: link:../project
@@ -3261,6 +3261,10 @@ packages:
       '@faker-js/faker': 8.3.1
       '@types/lodash': 4.14.202
       lodash: 4.17.21
+    dev: false
+
+  /@commercetools-test-data/graphql-types@7.0.0:
+    resolution: {integrity: sha512-z9hBSdDdU5mn+pFu3G5O6iNlIMsk05v+PWaft/OCzdECeNUZz/NmTpEFQi7QoXBwHeblyDj40rIg2XoOvydmBg==}
     dev: false
 
   /@commercetools-test-data/product-variant@5.11.2:
