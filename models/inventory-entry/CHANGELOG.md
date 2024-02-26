@@ -1,5 +1,16 @@
 # @commercetools-test-data/inventory-entry
 
+## 7.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.0
+  - @commercetools-test-data/channel@7.2.0
+  - @commercetools-test-data/commons@7.2.0
+  - @commercetools-test-data/product@7.2.0
+  - @commercetools-test-data/utils@7.2.0
+
 ## 7.1.1
 
 ### Patch Changes
