@@ -1,5 +1,18 @@
 # @commercetools-test-data/zone
 
+## 7.1.0
+
+### Minor Changes
+
+- [#487](https://github.com/commercetools/test-data/pull/487) [`387e367`](https://github.com/commercetools/test-data/commit/387e367b189bc9f33fe1288392ee6beae7caf96f) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add B2B sample data presets
+
+### Patch Changes
+
+- Updated dependencies [[`387e367`](https://github.com/commercetools/test-data/commit/387e367b189bc9f33fe1288392ee6beae7caf96f), [`6da8af0`](https://github.com/commercetools/test-data/commit/6da8af0291c9769f9d2654408e16ddb8cf728217), [`9e7e964`](https://github.com/commercetools/test-data/commit/9e7e964b10c155bc1bbda3a1d291cb14ceac7e16)]:
+  - @commercetools-test-data/commons@7.1.0
+  - @commercetools-test-data/core@7.1.0
+  - @commercetools-test-data/utils@7.1.0
+
 ## 7.0.0
 
 ### Patch Changes
