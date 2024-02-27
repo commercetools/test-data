@@ -22,7 +22,8 @@ import type { TCartDraftBuilder } from '../../../types';
 const customer = CustomerDraft.presets.sampleDataB2B
   .sophieMueller()
   .build<TCustomerDraft>();
-const address = AddressDraft.presets.sampleDataB2B.sophieMuellerAddress();
+const address =
+  AddressDraft.presets.sampleDataB2B.lifttechSolutionsLtdDeAddress();
 
 const hhh234Wx01 = ProductVariantDraft.presets.sampleDataB2B
   .hhh234Wx01()
@@ -50,7 +51,6 @@ const lifttechSolutionsLtdDeCart1 = (customerId?: string): TCartDraftBuilder =>
     .country('DE')
     .origin(origin.Customer)
     .shippingAddress(address)
-    .billingAddress(address)
     .lineItems([
       LineItemDraft.presets.empty().sku(hhh234Wx01.sku).quantity(1),
       LineItemDraft.presets.empty().sku(hhh234Wx02.sku).quantity(1),
