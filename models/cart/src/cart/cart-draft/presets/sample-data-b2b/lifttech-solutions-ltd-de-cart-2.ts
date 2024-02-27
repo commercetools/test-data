@@ -51,7 +51,6 @@ const lifttechSolutionsLtdDeCart2 = (customerId?: string): TCartDraftBuilder =>
     .country('DE')
     .origin(origin.Customer)
     .shippingAddress(address)
-    .billingAddress(address)
     .lineItems([
       LineItemDraft.presets.empty().sku(bbb234Wx01.sku).quantity(1),
       LineItemDraft.presets.empty().sku(bbb234Wx02.sku).quantity(1),

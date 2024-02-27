@@ -55,7 +55,6 @@ const eagleHeavyLiftTechnologiesIncUsCart1 = (
     .country('US')
     .origin(origin.Customer)
     .shippingAddress(address)
-    .billingAddress(address)
     .lineItems([
       LineItemDraft.presets.empty().sku(eee123Qr01.sku).quantity(1),
       LineItemDraft.presets.empty().sku(eee123Qr02.sku).quantity(1),

@@ -55,7 +55,6 @@ const libertyCraneSolutionsLlcUsCart2 = (
     .country('US')
     .origin(origin.Customer)
     .shippingAddress(address)
-    .billingAddress(address)
     .lineItems([
       LineItemDraft.presets.empty().sku(zz456St01.sku).quantity(1),
       LineItemDraft.presets.empty().sku(zz456St02.sku).quantity(1),
