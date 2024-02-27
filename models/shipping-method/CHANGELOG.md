@@ -1,5 +1,16 @@
 # @commercetools-test-data/shipping-method
 
+## 7.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`f5051d5`](https://github.com/commercetools/test-data/commit/f5051d52fa6afd9cea1ef7cf9581c3fc65b6de31)]:
+  - @commercetools-test-data/tax-category@7.2.1
+  - @commercetools-test-data/core@7.2.1
+  - @commercetools-test-data/commons@7.2.1
+  - @commercetools-test-data/zone@7.2.1
+  - @commercetools-test-data/utils@7.2.1
+
 ## 7.2.0
 
 ### Patch Changes
