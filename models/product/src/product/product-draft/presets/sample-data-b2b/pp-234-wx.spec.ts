@@ -86,7 +86,7 @@ describe(`with pp234Wx preset`, () => {
           "nl-NL": "PP234 WX Spoorweg Wiellader Graafmachine",
           "pt-PT": "PP234 WX Escavadeira com Rodas para Ferrovias",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with pp234Wx preset`, () => {
             "value": "PP234 WX Railroad Railroad Wheeled Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with c789Uv preset`, () => {
           "nl-NL": "C789 UV Bouwlader",
           "pt-PT": "C789 UV Carregadeira de Construção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with c789Uv preset`, () => {
             "value": "C789 UV Construction Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

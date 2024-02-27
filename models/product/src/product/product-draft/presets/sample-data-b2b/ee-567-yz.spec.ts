@@ -86,7 +86,7 @@ describe(`with ee567Yz preset`, () => {
           "nl-NL": "EE567 YZ Fijnnivelleermachine",
           "pt-PT": "EE567 YZ Niveladora Fina",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with ee567Yz preset`, () => {
             "value": "EE567 YZ Fine Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

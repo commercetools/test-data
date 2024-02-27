@@ -58,7 +58,7 @@ describe(`with pneumaticTire preset`, () => {
           "nl-NL": "Luchtband",
           "pt-PT": "Pneu pneumático",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with pneumaticTire preset`, () => {
             "value": "Pneumatic Tire",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

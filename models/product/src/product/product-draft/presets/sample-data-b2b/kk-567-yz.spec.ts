@@ -86,7 +86,7 @@ describe(`with kk567Yz preset`, () => {
           "nl-NL": "KK567 YZ Stortplaatsverdichter",
           "pt-PT": "KK567 YZ Compactador de Aterro",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with kk567Yz preset`, () => {
             "value": "KK567 YZ Landfill Compactor",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

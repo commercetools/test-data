@@ -86,7 +86,7 @@ describe(`with k567Yz preset`, () => {
           "nl-NL": "K567 YZ Moeras Bulldozer",
           "pt-PT": "K567 YZ Trator de Esteiras para Pântano",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with k567Yz preset`, () => {
             "value": "K567 YZ Swamp Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

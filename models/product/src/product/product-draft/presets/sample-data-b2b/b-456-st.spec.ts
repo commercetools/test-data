@@ -86,7 +86,7 @@ describe(`with b456St preset`, () => {
           "nl-NL": "B456 ST Bouwlader",
           "pt-PT": "B456 ST Carregadeira de Construção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with b456St preset`, () => {
             "value": "B456 ST Construction Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

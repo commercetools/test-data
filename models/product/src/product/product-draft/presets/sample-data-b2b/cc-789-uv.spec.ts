@@ -86,7 +86,7 @@ describe(`with cc789Uv preset`, () => {
           "nl-NL": "CC789 UV Luchthavennivelleermachine",
           "pt-PT": "CC789 UV Niveladora de Aeroporto",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with cc789Uv preset`, () => {
             "value": "CC789 UV Airport Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

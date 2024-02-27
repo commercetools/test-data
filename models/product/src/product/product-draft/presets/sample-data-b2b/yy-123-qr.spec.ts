@@ -100,7 +100,7 @@ describe(`with yy123Qr preset`, () => {
           "nl-NL": "YY123 QR Boorgatboor",
           "pt-PT": "YY123 QR Perfuratriz para Furos de Explosão",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with yy123Qr preset`, () => {
             "value": "YY123 QR Blasthole Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

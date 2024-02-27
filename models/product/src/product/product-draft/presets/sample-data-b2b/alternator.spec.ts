@@ -58,7 +58,7 @@ describe(`with alternator preset`, () => {
           "nl-NL": "Dynamo",
           "pt-PT": "Alternador",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -179,7 +179,7 @@ describe(`with alternator preset`, () => {
             "value": "Alternator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

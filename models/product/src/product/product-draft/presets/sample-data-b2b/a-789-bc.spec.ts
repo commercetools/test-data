@@ -86,7 +86,7 @@ describe(`with a789Bc preset`, () => {
           "nl-NL": "A789 BC Diepe Mijnbouw Graafmachine",
           "pt-PT": "A789 BC Escavadeira para Mineração Profunda",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with a789Bc preset`, () => {
             "value": "A789 BC Deep Mining Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

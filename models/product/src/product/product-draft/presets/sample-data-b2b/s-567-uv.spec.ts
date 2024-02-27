@@ -86,7 +86,7 @@ describe(`with s567Uv preset`, () => {
           "nl-NL": "S567 UV Amfibische Graafmachine",
           "pt-PT": "S567 UV Escavadeira Anfíbia",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with s567Uv preset`, () => {
             "value": "S567 UV Amphibious Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

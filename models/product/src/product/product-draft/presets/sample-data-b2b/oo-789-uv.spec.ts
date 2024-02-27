@@ -86,7 +86,7 @@ describe(`with oo789Uv preset`, () => {
           "nl-NL": "OO789 UV Wiellader voor Mijnbouw",
           "pt-PT": "OO789 UV Escavadeira com Rodas para Mineração",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with oo789Uv preset`, () => {
             "value": "OO789 UV Wheeled Excavator for Mining",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

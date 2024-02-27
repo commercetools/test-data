@@ -86,7 +86,7 @@ describe(`with hh456St preset`, () => {
           "nl-NL": "HH456 ST Pneumatische Wals",
           "pt-PT": "HH456 ST Rolo Pneumático",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -326,7 +326,7 @@ describe(`with hh456St preset`, () => {
             "value": "HH456 ST Pneumatic Roller",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

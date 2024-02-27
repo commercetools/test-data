@@ -58,7 +58,7 @@ describe(`with hydraulicHose preset`, () => {
           "nl-NL": "Hydraulische slang",
           "pt-PT": "Mangueira hidráulica",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with hydraulicHose preset`, () => {
             "value": "Hydraulic Hose",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with jj234Wx preset`, () => {
           "nl-NL": "JJ234 WX Stortplaatsverdichter",
           "pt-PT": "JJ234 WX Compactador de Aterro",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with jj234Wx preset`, () => {
             "value": "JJ234 WX Landfill Compactor",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

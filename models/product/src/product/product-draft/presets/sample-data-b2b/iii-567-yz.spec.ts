@@ -100,7 +100,7 @@ describe(`with iii567Yz preset`, () => {
           "nl-NL": "III567 YZ Heihamer",
           "pt-PT": "III567 YZ Martelo de Cravação",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with iii567Yz preset`, () => {
             "value": "III567 YZ Piling Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

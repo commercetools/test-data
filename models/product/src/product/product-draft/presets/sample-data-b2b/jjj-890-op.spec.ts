@@ -100,7 +100,7 @@ describe(`with jjj890Op preset`, () => {
           "nl-NL": "JJJ890 OP Heihamer",
           "pt-PT": "JJJ890 OP Martelo de Cravação",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with jjj890Op preset`, () => {
             "value": "JJJ890 OP Piling Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

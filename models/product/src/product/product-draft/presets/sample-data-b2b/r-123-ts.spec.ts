@@ -86,7 +86,7 @@ describe(`with r123Ts preset`, () => {
           "nl-NL": "R123 TS Oppervlakte Mijnbouw Graafmachine",
           "pt-PT": "R123 TS Escavadeira para Mineração de Superfície",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with r123Ts preset`, () => {
             "value": "R123 TS Surface Mining Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

@@ -58,7 +58,7 @@ describe(`with brakePadSet preset`, () => {
           "nl-NL": "Remblokkenset",
           "pt-PT": "Conjunto de pastilhas de freio",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with brakePadSet preset`, () => {
             "value": "Brake Pad Set",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with d234Wx preset`, () => {
           "nl-NL": "D234 WX Boomlader",
           "pt-PT": "D234 WX Carregadeira de Toras",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with d234Wx preset`, () => {
             "value": "D234 WX Log Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

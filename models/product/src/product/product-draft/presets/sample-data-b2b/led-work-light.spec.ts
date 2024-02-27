@@ -58,7 +58,7 @@ describe(`with ledWorkLight preset`, () => {
           "nl-NL": "LED-werklamp",
           "pt-PT": "Luz de trabalho LED",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with ledWorkLight preset`, () => {
             "value": "LED Work Light",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

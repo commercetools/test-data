@@ -86,7 +86,7 @@ describe(`with v456St preset`, () => {
           "nl-NL": "V456 ST Starre Dumptruck",
           "pt-PT": "V456 ST Caminhão Basculante Rígido",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with v456St preset`, () => {
             "value": "V456 ST Rigid Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

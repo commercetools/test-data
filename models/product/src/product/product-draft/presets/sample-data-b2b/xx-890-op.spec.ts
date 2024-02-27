@@ -100,7 +100,7 @@ describe(`with xx890Op preset`, () => {
           "nl-NL": "XX890 OP Rupskraan voor Stabiliteit",
           "pt-PT": "XX890 OP Grua de Esteiras para Estabilidade",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with xx890Op preset`, () => {
             "value": "XX890 OP Crawler Crane for Stability",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with f890Op preset`, () => {
           "nl-NL": "F890 OP Boomlader",
           "pt-PT": "F890 OP Carregadeira de Toras",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with f890Op preset`, () => {
             "value": "F890 OP Log Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

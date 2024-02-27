@@ -100,7 +100,7 @@ describe(`with aaa789Uv preset`, () => {
           "nl-NL": "AAA789 UV Exploratieboor",
           "pt-PT": "AAA789 UV Perfuratriz de Exploração",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with aaa789Uv preset`, () => {
             "value": "AAA789 UV Exploration Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

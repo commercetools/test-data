@@ -58,7 +58,7 @@ describe(`with fuelFilter preset`, () => {
           "nl-NL": "Brandstoffilter",
           "pt-PT": "Filtro de combustível",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -179,7 +179,7 @@ describe(`with fuelFilter preset`, () => {
             "value": "Fuel Filter",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

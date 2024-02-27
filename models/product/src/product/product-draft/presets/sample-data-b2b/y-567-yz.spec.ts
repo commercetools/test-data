@@ -86,7 +86,7 @@ describe(`with y567Yz preset`, () => {
           "nl-NL": "Y567 YZ Off-Highway Dumptruck",
           "pt-PT": "Y567 YZ Caminhão Basculante Fora-de-Estrada",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with y567Yz preset`, () => {
             "value": "Y567 YZ Off-Highway Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

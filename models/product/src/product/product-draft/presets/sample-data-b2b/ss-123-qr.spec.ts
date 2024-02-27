@@ -100,7 +100,7 @@ describe(`with ss123Qr preset`, () => {
           "nl-NL": "SS123 QR Torenkraan voor Hoogbouw",
           "pt-PT": "SS123 QR Grua de Torre para Construção em Altura",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with ss123Qr preset`, () => {
             "value": "SS123 QR Tower Crane for High-rise Construction",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

@@ -58,7 +58,7 @@ describe(`with pinAndBushingKit preset`, () => {
           "nl-NL": "Pen- en bussenset",
           "pt-PT": "Kit de pinos e buchas",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with pinAndBushingKit preset`, () => {
             "value": "Pin and Bushing Kit",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

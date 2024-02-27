@@ -58,7 +58,7 @@ describe(`with oilFilter preset`, () => {
           "nl-NL": "Oliefilter",
           "pt-PT": "Filtro de óleo",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -179,7 +179,7 @@ describe(`with oilFilter preset`, () => {
             "value": "Oil Filter",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

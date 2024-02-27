@@ -86,7 +86,7 @@ describe(`with x234Wx preset`, () => {
           "nl-NL": "X234 WX Off-Highway Dumptruck",
           "pt-PT": "X234 WX Caminhão Basculante Fora-de-Estrada",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with x234Wx preset`, () => {
             "value": "X234 WX Off-Highway Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

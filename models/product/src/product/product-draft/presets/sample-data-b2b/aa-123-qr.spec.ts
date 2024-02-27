@@ -86,7 +86,7 @@ describe(`with aa123Qr preset`, () => {
           "nl-NL": "AA123 QR Wegnivelleermachine",
           "pt-PT": "AA123 QR Niveladora de Estradas",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with aa123Qr preset`, () => {
             "value": "AA123 QR Road Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

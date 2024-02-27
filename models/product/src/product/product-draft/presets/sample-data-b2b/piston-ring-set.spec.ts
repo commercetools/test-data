@@ -58,7 +58,7 @@ describe(`with pistonRingSet preset`, () => {
           "nl-NL": "Zuigerverenset",
           "pt-PT": "Conjunto de anéis de pistão",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with pistonRingSet preset`, () => {
             "value": "Piston Ring Set",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

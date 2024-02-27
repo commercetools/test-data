@@ -100,7 +100,7 @@ describe(`with fff456St preset`, () => {
           "nl-NL": "FFF456 ST Steengroevehamer",
           "pt-PT": "FFF456 ST Martelo de Pedreira",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with fff456St preset`, () => {
             "value": "FFF456 ST Quarrying Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

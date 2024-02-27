@@ -86,7 +86,7 @@ describe(`with p234Qw preset`, () => {
           "nl-NL": "P234 QW Amfibische Graafmachine",
           "pt-PT": "P234 QW Escavadeira Anfíbia",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with p234Qw preset`, () => {
             "value": "P234 QW Amphibious Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

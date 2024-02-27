@@ -86,7 +86,7 @@ describe(`with g123Qr preset`, () => {
           "nl-NL": "G123 QR Aardeverzet Bulldozer",
           "pt-PT": "G123 QR Trator de Esteiras para Movimentação de Terra",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with g123Qr preset`, () => {
             "value": "G123 QR Earthmoving Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

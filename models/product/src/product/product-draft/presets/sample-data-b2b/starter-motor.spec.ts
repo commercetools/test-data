@@ -58,7 +58,7 @@ describe(`with starterMotor preset`, () => {
           "nl-NL": "Startmotor",
           "pt-PT": "Motor de arranque",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -180,7 +180,7 @@ describe(`with starterMotor preset`, () => {
             "value": "Starter Motor",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

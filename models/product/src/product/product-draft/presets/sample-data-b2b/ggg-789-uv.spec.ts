@@ -100,7 +100,7 @@ describe(`with ggg789Uv preset`, () => {
           "nl-NL": "GGG789 UV Steengroevehamer",
           "pt-PT": "GGG789 UV Martelo de Pedreira",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with ggg789Uv preset`, () => {
             "value": "GGG789 UV Quarrying Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

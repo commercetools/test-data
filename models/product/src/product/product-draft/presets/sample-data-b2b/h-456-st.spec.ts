@@ -86,7 +86,7 @@ describe(`with h456St preset`, () => {
           "nl-NL": "H456 ST Afvalverwerkings Bulldozer",
           "pt-PT": "H456 ST Trator de Esteiras para Manejo de Resíduos",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with h456St preset`, () => {
             "value": "H456 ST Waste Handling Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

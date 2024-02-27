@@ -100,7 +100,7 @@ describe(`with hhh234Wx preset`, () => {
           "nl-NL": "HHH234 WX Heihamer",
           "pt-PT": "HHH234 WX Martelo de Cravação",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with hhh234Wx preset`, () => {
             "value": "HHH234 WX Piling Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

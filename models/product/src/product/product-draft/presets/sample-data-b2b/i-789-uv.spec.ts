@@ -86,7 +86,7 @@ describe(`with i789Uv preset`, () => {
           "nl-NL": "I789 UV Afvalverwerkings Bulldozer",
           "pt-PT": "I789 UV Trator de Esteiras para Manejo de Resíduos",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with i789Uv preset`, () => {
             "value": "I789 UV Waste Handling Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
