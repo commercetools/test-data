@@ -1,5 +1,16 @@
 # @commercetools-test-data/review
 
+## 7.2.2
+
+### Patch Changes
+
+- [#495](https://github.com/commercetools/test-data/pull/495) [`cad2456`](https://github.com/commercetools/test-data/commit/cad24566e3ab34e06bd145b9920bcbb70c4cf2a3) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Add CH preset for ReviewDraft
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.2
+  - @commercetools-test-data/commons@7.2.2
+  - @commercetools-test-data/utils@7.2.2
+
 ## 7.2.1
 
 ### Patch Changes

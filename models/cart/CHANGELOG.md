@@ -1,5 +1,23 @@
 # @commercetools-test-data/cart
 
+## 7.2.2
+
+### Patch Changes
+
+- [#496](https://github.com/commercetools/test-data/pull/496) [`ee0ff71`](https://github.com/commercetools/test-data/commit/ee0ff7111b0521d2e8d789e53130142c188a6462) Thanks [@ByronDWall](https://github.com/ByronDWall)! - use company address as shipping address insteead of customer address in b2b cart draft presets
+
+- Updated dependencies [[`6ec9fac`](https://github.com/commercetools/test-data/commit/6ec9fac121ef2a44dac5aa0bbac6959f4bdd784a)]:
+  - @commercetools-test-data/product@7.2.2
+  - @commercetools-test-data/core@7.2.2
+  - @commercetools-test-data/channel@7.2.2
+  - @commercetools-test-data/commons@7.2.2
+  - @commercetools-test-data/customer@7.2.2
+  - @commercetools-test-data/discount-code@7.2.2
+  - @commercetools-test-data/shipping-method@7.2.2
+  - @commercetools-test-data/store@7.2.2
+  - @commercetools-test-data/tax-category@7.2.2
+  - @commercetools-test-data/utils@7.2.2
+
 ## 7.2.1
 
 ### Patch Changes
