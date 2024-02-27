@@ -1,5 +1,19 @@
 # @commercetools-test-data/product
 
+## 7.2.2
+
+### Patch Changes
+
+- [#497](https://github.com/commercetools/test-data/pull/497) [`6ec9fac`](https://github.com/commercetools/test-data/commit/6ec9fac121ef2a44dac5aa0bbac6959f4bdd784a) Thanks [@jaikamat](https://github.com/jaikamat)! - Adds StandalonePrice price mode configuration for B2B Product presets
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.2
+  - @commercetools-test-data/category@7.2.2
+  - @commercetools-test-data/commons@7.2.2
+  - @commercetools-test-data/product-type@7.2.2
+  - @commercetools-test-data/tax-category@7.2.2
+  - @commercetools-test-data/utils@7.2.2
+
 ## 7.2.1
 
 ### Patch Changes
