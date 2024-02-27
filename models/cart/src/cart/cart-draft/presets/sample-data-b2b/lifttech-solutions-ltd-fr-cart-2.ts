@@ -22,7 +22,8 @@ import type { TCartDraftBuilder } from '../../../types';
 const customer = CustomerDraft.presets.sampleDataB2B
   .camilleLefevre()
   .build<TCustomerDraft>();
-const address = AddressDraft.presets.sampleDataB2B.camilleLefevreAddress();
+const address =
+  AddressDraft.presets.sampleDataB2B.lifttechSolutionsLtdFrAddress();
 
 const ccc567Yz01 = ProductVariantDraft.presets.sampleDataB2B
   .ccc567Yz01()
