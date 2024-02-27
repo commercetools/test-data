@@ -100,7 +100,7 @@ describe(`with ddd890Op preset`, () => {
           "nl-NL": "DDD890 OP Productieboor",
           "pt-PT": "DDD890 OP Perfuratriz de Produção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with ddd890Op preset`, () => {
             "value": "DDD890 OP Production Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

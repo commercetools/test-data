@@ -15,6 +15,7 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
+import { productPriceMode } from '../../../constants';
 import { ProductDraft } from '../../../index';
 import type { TProductDraftBuilder } from '../../../types';
 
@@ -35,6 +36,7 @@ const wheeledExcavatorsForConstructionCategory =
 const mm123Qr = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
+    .priceMode(productPriceMode.Standalone)
     .key('mm123-qr')
     .name(
       LocalizedStringDraft.presets

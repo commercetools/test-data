@@ -100,7 +100,7 @@ describe(`with eee123Qr preset`, () => {
           "nl-NL": "EEE123 QR Sloophamer",
           "pt-PT": "EEE123 QR Martelo Demolidor",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with eee123Qr preset`, () => {
             "value": "EEE123 QR Demolition Hammer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

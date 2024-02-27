@@ -86,7 +86,7 @@ describe(`with x456Yz preset`, () => {
           "nl-NL": "X456 YZ Diepe Mijnbouw Graafmachine",
           "pt-PT": "X456 YZ Escavadeira para Mineração Profunda",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with x456Yz preset`, () => {
             "value": "X456 YZ Deep Mining Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

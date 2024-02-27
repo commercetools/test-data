@@ -86,7 +86,7 @@ describe(`with bb456St preset`, () => {
           "nl-NL": "BB456 ST Luchthavennivelleermachine",
           "pt-PT": "BB456 ST Niveladora de Aeroporto",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with bb456St preset`, () => {
             "value": "BB456 ST Airport Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

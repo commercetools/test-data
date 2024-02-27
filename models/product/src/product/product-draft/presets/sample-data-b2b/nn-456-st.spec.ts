@@ -86,7 +86,7 @@ describe(`with nn456St preset`, () => {
           "nl-NL": "NN456 ST Wiellader voor Mijnbouw",
           "pt-PT": "NN456 ST Escavadeira com Rodas para Mineração",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with nn456St preset`, () => {
             "value": "NN456 ST Wheeled Excavator for Mining",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

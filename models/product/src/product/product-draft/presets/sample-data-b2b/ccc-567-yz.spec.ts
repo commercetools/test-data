@@ -100,7 +100,7 @@ describe(`with ccc567Yz preset`, () => {
           "nl-NL": "CCC567 YZ Productieboor",
           "pt-PT": "CCC567 YZ Perfuratriz de Produção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with ccc567Yz preset`, () => {
             "value": "CCC567 YZ Production Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with qq567Yz preset`, () => {
           "nl-NL": "QQ567 YZ Spoorweg Wiellader Graafmachine",
           "pt-PT": "QQ567 YZ Escavadeira Rodoviária para Ferrovias",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with qq567Yz preset`, () => {
             "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

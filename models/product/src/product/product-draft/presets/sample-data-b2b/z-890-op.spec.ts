@@ -86,7 +86,7 @@ describe(`with z890Op preset`, () => {
           "nl-NL": "Z890 OP Off-Highway Dumptruck",
           "pt-PT": "Z890 OP Caminhão Basculante Fora-de-Estrada",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with z890Op preset`, () => {
             "value": "Z890 OP Off-Highway Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

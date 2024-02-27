@@ -86,7 +86,7 @@ describe(`with ff890Op preset`, () => {
           "nl-NL": "FF890 OP Fijnnivelleermachine",
           "pt-PT": "FF890 OP Niveladora Fina",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with ff890Op preset`, () => {
             "value": "FF890 OP Fine Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

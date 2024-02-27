@@ -100,7 +100,7 @@ describe(`with tt456St preset`, () => {
           "nl-NL": "TT456 ST Mobiele Kraan voor Veelzijdigheid",
           "pt-PT": "TT456 ST Grua Móvel para Versatilidade",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with tt456St preset`, () => {
             "value": "TT456 ST Mobile Crane for Versatility",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

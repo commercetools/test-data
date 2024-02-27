@@ -15,6 +15,7 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
+import { productPriceMode } from '../../../constants';
 import { ProductDraft } from '../../../index';
 import type { TProductDraftBuilder } from '../../../types';
 
@@ -34,6 +35,7 @@ const pilingHammersCategory = CategoryDraft.presets.sampleDataB2B
 const iii567Yz = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
+    .priceMode(productPriceMode.Standalone)
     .key('iii567-yz')
     .name(
       LocalizedStringDraft.presets

@@ -58,7 +58,7 @@ describe(`with airFilter preset`, () => {
           "nl-NL": "Luchtfilter",
           "pt-PT": "Filtro de ar",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -179,7 +179,7 @@ describe(`with airFilter preset`, () => {
             "value": "Air Filter",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",

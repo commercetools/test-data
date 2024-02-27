@@ -86,7 +86,7 @@ describe(`with j234Wx preset`, () => {
           "nl-NL": "J234 WX Moeras Bulldozer",
           "pt-PT": "J234 WX Trator de Esteiras para Pântano",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with j234Wx preset`, () => {
             "value": "J234 WX Swamp Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

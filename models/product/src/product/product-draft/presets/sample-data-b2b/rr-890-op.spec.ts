@@ -86,7 +86,7 @@ describe(`with rr890Op preset`, () => {
           "nl-NL": "RR890 OP Spoorweg Wiellader Graafmachine",
           "pt-PT": "RR890 OP Escavadeira Rodoviária para Ferrovias",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with rr890Op preset`, () => {
             "value": "RR890 OP Railroad Railroad Wheeled Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

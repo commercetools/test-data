@@ -86,7 +86,7 @@ describe(`with dd234Wx preset`, () => {
           "nl-NL": "DD234 WX Fijnnivelleermachine",
           "pt-PT": "DD234 WX Niveladora Fina",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with dd234Wx preset`, () => {
             "value": "DD234 WX Fine Grader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

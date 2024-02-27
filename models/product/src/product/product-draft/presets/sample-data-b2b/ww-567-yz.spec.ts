@@ -100,7 +100,7 @@ describe(`with ww567Yz preset`, () => {
           "nl-NL": "WW567 YZ Rupskraan voor Stabiliteit",
           "pt-PT": "WW567 YZ Grua de Esteiras para Estabilidade",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with ww567Yz preset`, () => {
             "value": "WW567 YZ Crawler Crane for Stability",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

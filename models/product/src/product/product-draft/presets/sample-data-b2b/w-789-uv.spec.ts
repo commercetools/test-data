@@ -86,7 +86,7 @@ describe(`with w789Uv preset`, () => {
           "nl-NL": "W789 UV Starre Dumptruck",
           "pt-PT": "W789 UV Caminhão Basculante Rígido",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with w789Uv preset`, () => {
             "value": "W789 UV Rigid Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

@@ -100,7 +100,7 @@ describe(`with bbb234Wx preset`, () => {
           "nl-NL": "BBB234 WX Productieboor",
           "pt-PT": "BBB234 WX Perfuratriz de Produção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with bbb234Wx preset`, () => {
             "value": "BBB234 WX Production Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

@@ -15,6 +15,7 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
+import { productPriceMode } from '../../../constants';
 import { ProductDraft } from '../../../index';
 import type { TProductDraftBuilder } from '../../../types';
 
@@ -33,6 +34,7 @@ const sparePartsCategory = CategoryDraft.presets.sampleDataB2B
 const oilFilter = (): TProductDraftBuilder =>
   ProductDraft.presets
     .empty()
+    .priceMode(productPriceMode.Standalone)
     .key('oil-filter')
     .name(
       LocalizedStringDraft.presets

@@ -100,7 +100,7 @@ describe(`with zz456St preset`, () => {
           "nl-NL": "ZZ456 ST Exploratieboor",
           "pt-PT": "ZZ456 ST Perfuratriz de Exploração",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with zz456St preset`, () => {
             "value": "ZZ456 ST Exploration Drill",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

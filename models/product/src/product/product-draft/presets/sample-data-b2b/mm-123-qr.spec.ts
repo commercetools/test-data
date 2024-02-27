@@ -86,7 +86,7 @@ describe(`with mm123Qr preset`, () => {
           "nl-NL": "MM123 QR Wiellader voor Bouw",
           "pt-PT": "MM123 QR Escavadeira com Rodas para Construção",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with mm123Qr preset`, () => {
             "value": "MM123 QR Wheeled Excavator for Construction",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

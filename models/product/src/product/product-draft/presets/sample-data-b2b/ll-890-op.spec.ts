@@ -86,7 +86,7 @@ describe(`with ll890Op preset`, () => {
           "nl-NL": "LL890 OP Stortplaatsverdichter",
           "pt-PT": "LL890 OP Compactador de Aterro",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with ll890Op preset`, () => {
             "value": "LL890 OP Landfill Compactor",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

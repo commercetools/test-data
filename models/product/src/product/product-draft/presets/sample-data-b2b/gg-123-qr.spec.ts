@@ -86,7 +86,7 @@ describe(`with gg123Qr preset`, () => {
           "nl-NL": "GG123 QR Trilbodemverdichter",
           "pt-PT": "GG123 QR Compactador de Solo Vibratório",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with gg123Qr preset`, () => {
             "value": "GG123 QR Vibratory Soil Compactor",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

@@ -86,7 +86,7 @@ describe(`with n123Qr preset`, () => {
           "nl-NL": "N123 QR Steengroeve Lader",
           "pt-PT": "N123 QR Carregadeira de Pedreira",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with n123Qr preset`, () => {
             "value": "N123 QR Quarry Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

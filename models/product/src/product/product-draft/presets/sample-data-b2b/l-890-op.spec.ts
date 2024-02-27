@@ -86,7 +86,7 @@ describe(`with l890Op preset`, () => {
           "nl-NL": "L890 OP Moeras Bulldozer",
           "pt-PT": "L890 OP Trator de Esteiras para Pântano",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with l890Op preset`, () => {
             "value": "L890 OP Swamp Bulldozer",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

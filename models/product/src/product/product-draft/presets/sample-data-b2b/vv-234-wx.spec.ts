@@ -100,7 +100,7 @@ describe(`with vv234Wx preset`, () => {
           "nl-NL": "VV234 WX Rupskraan voor Stabiliteit",
           "pt-PT": "VV234 WX Grua de Esteiras para Estabilidade",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with vv234Wx preset`, () => {
             "value": "VV234 WX Crawler Crane for Stability",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

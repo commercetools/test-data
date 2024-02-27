@@ -86,7 +86,7 @@ describe(`with m890Op preset`, () => {
           "nl-NL": "M890 OP Amfibische Graafmachine",
           "pt-PT": "M890 OP Escavadeira Anfíbia",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with m890Op preset`, () => {
             "value": "M890 OP Amphibious Excavator",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

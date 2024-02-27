@@ -86,7 +86,7 @@ describe(`with e567Yz preset`, () => {
           "nl-NL": "E567 YZ Boomlader",
           "pt-PT": "E567 YZ Carregadeira de Toras",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with e567Yz preset`, () => {
             "value": "E567 YZ Log Loader",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

@@ -100,7 +100,7 @@ describe(`with uu789Uv preset`, () => {
           "nl-NL": "UU789 UV Mobiele Kraan voor Veelzijdigheid",
           "pt-PT": "UU789 UV Grua Móvel para Versatilidade",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",
@@ -377,7 +377,7 @@ describe(`with uu789Uv preset`, () => {
             "value": "UU789 UV Mobile Crane for Versatility",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-lifting-and-specialized-equipment",
           "typeId": "product-type",

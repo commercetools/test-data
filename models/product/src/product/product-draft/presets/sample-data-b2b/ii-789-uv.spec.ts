@@ -86,7 +86,7 @@ describe(`with ii789Uv preset`, () => {
           "nl-NL": "II789 UV Pneumatische Wals",
           "pt-PT": "II789 UV Rolo Pneumático",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with ii789Uv preset`, () => {
             "value": "II789 UV Pneumatic Roller",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

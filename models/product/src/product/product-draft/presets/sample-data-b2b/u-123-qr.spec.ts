@@ -86,7 +86,7 @@ describe(`with u123Qr preset`, () => {
           "nl-NL": "U123 QR Knikdumptruck",
           "pt-PT": "U123 QR Caminhão Articulado Basculante",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",
@@ -335,7 +335,7 @@ describe(`with u123Qr preset`, () => {
             "value": "U123 QR Articulated Dump Truck",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "heavy-earthmoving-and-construction-equipment",
           "typeId": "product-type",

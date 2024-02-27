@@ -59,7 +59,7 @@ describe(`with taperedRollerBearing preset`, () => {
           "nl-NL": "Kegellager",
           "pt-PT": "Rolamento de rolos cônicos",
         },
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
@@ -181,7 +181,7 @@ describe(`with taperedRollerBearing preset`, () => {
             "value": "Tapered Roller Bearing",
           },
         ],
-        "priceMode": undefined,
+        "priceMode": "Standalone",
         "productType": {
           "key": "generic-product",
           "typeId": "product-type",
