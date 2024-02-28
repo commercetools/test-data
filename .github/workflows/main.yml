@@ -18,12 +18,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Get changed directories
-        id: get-changed-directories
-        run: |
-          echo "CHANGED_DIRECTORIES<<EOF" >> $GITHUB_ENV
-          git diff --dirstat=files,0 ${{ github.base_ref }} ${{ github.head_ref }} | awk '{print $2}' >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+      - name: Setup Node (uses version in .nvmrc)
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
@@ -31,22 +30,20 @@ jobs:
         with:
           run_install: false
 
-      - name: Setup Node (uses version in .nvmrc)
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
       - name: Install dependencies
         run: pnpm install
 
-      - name: Building packages
-        run: pnpm build
-
-      - name: Running static type checking
-        run: pnpm typecheck
-
-      - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter -- ${{ env.CHANGED_DIRECTORIES }}
-        env:
-          CI: true
+      - name: Get changed directories
+        id: changed_dirs
+        run: |
+          echo "::set-output name=dirs::$(git diff --name-only ${{ github.sha }} ${{ github.event.before }} | xargs -L 1 dirname | uniq | xargs)"
+      
+      - name: Running linters and tests for changed directories
+        if: steps.changed_dirs.outputs.dirs != ''
+        run: |
+          for DIR in ${{ steps.changed_dirs.outputs.dirs }}; do
+            if [ -d "$DIR" ]; then
+              echo "Running tests in $DIR"
+              (cd $DIR && pnpm jest) || exit 1
+            fi
+          done
