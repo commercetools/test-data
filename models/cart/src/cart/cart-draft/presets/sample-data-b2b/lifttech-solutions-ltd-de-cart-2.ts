@@ -3,6 +3,10 @@ import {
   type TDivisionDraft,
 } from '@commercetools-test-data/business-unit';
 import {
+  ChannelDraft,
+  type TChannelDraft,
+} from '@commercetools-test-data/channel';
+import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
@@ -49,6 +53,13 @@ const businessUnit = DivisionDraft.presets.sampleDataB2B
   .lifttechSolutionsLtdDe()
   .build<TDivisionDraft>();
 
+const distributionChannel = ChannelDraft.presets.sampleDataB2B
+  .deFrUk()
+  .build<TChannelDraft>();
+const supplyChannel = ChannelDraft.presets.sampleDataB2B
+  .euWarehouse()
+  .build<TChannelDraft>();
+
 const lifttechSolutionsLtdDeCart2 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
@@ -60,9 +71,36 @@ const lifttechSolutionsLtdDeCart2 = (customerId?: string): TCartDraftBuilder =>
     .origin(origin.Customer)
     .shippingAddress(address)
     .lineItems([
-      LineItemDraft.presets.empty().sku(bbb234Wx01.sku).quantity(1),
-      LineItemDraft.presets.empty().sku(bbb234Wx02.sku).quantity(1),
-      LineItemDraft.presets.empty().sku(bbb234Wx03.sku).quantity(1),
+      LineItemDraft.presets
+        .empty()
+        .sku(bbb234Wx01.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+        ),
+      LineItemDraft.presets
+        .empty()
+        .sku(bbb234Wx02.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+        ),
+      LineItemDraft.presets
+        .empty()
+        .sku(bbb234Wx03.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+        ),
     ])
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
