@@ -1,5 +1,17 @@
 # @commercetools-test-data/business-unit
 
+## 7.2.5
+
+### Patch Changes
+
+- Updated dependencies [[`97acd0e`](https://github.com/commercetools/test-data/commit/97acd0e0e90c0cbc45fbbc7514ccbb71d19055e4)]:
+  - @commercetools-test-data/associate-role@7.2.5
+  - @commercetools-test-data/core@7.2.5
+  - @commercetools-test-data/commons@7.2.5
+  - @commercetools-test-data/customer@7.2.5
+  - @commercetools-test-data/store@7.2.5
+  - @commercetools-test-data/utils@7.2.5
+
 ## 7.2.4
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @commercetools-test-data/custom-object
 
+## 7.2.5
+
+### Patch Changes
+
+- [#505](https://github.com/commercetools/test-data/pull/505) [`97acd0e`](https://github.com/commercetools/test-data/commit/97acd0e0e90c0cbc45fbbc7514ccbb71d19055e4) Thanks [@jaikamat](https://github.com/jaikamat)! - Fixes mislocated transformer imports
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.5
+  - @commercetools-test-data/commons@7.2.5
+  - @commercetools-test-data/utils@7.2.5
+
 ## 7.2.4
 
 ### Patch Changes
