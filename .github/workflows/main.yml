@@ -1,9 +1,5 @@
 name: Main workflow
 
-# The event triggers are configured as following:
-# - on branch main, trigger the workflow on every push
-# - on any pull request, trigger the workflow
-# This is to avoid running the workflow twice on pull requests.
 on:
   push:
     branches:
@@ -17,6 +13,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: |
+          git checkout -b main origin/main
+          git checkout -
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
@@ -40,6 +42,6 @@ jobs:
         run: pnpm typecheck
 
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter
+        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter --changedSince=main
         env:
           CI: true
