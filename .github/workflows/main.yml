@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          git checkout -b main
+          git checkout ${{ github.event.pull_request.head.sha }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
@@ -35,15 +39,7 @@ jobs:
       - name: Running static type checking
         run: pnpm typecheck
 
-      - name: Get changed directories
-        id: changed_dirs
-        run: |
-          git diff --name-only ${{ github.sha }} ${{ github.event.before }} | xargs -L 1 dirname | uniq > changed_dirs.txt
-          echo "CHANGED_DIRS<<EOF" >> $GITHUB_ENV
-          cat changed_dirs.txt >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
-      
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter ${{ env.CHANGED_DIRS }}
+        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter --changedSince=main
         env:
           CI: true
