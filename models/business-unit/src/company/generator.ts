@@ -37,7 +37,7 @@ const generator = Generator<TCompany>({
     associates: [],
     inheritedAssociates: [],
     parentUnit: null,
-    topLevelUnit: KeyReference.random().typeId('business-unit'),
+    topLevelUnit: fake(() => KeyReference.random().typeId('business-unit')),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

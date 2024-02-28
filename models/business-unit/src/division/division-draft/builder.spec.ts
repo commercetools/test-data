@@ -26,7 +26,9 @@ describe('builder', () => {
         billingAddresses: expect.any(Array),
         defaultBillingAddress: 0,
         custom: null,
-        // parentUnit: Needs to be addressed
+        parentUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
       })
     )
   );
@@ -51,7 +53,9 @@ describe('builder', () => {
         billingAddresses: expect.any(Array),
         defaultBillingAddress: 0,
         custom: null,
-        // parentUnit: Needs to be addressed
+        parentUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
       })
     )
   );
