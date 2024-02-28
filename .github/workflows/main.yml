@@ -42,6 +42,6 @@ jobs:
         run: pnpm typecheck
 
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter --changedSince=main
+        run: pnpm jest --projects jest.{eslint,test}.config.js --changedSince=main
         env:
           CI: true
