@@ -23,7 +23,6 @@ const lifttechSolutionsLtdEs = (): TDivisionDraftBuilder =>
     .key('lifttech-solutions-ltd-es')
     .name('LiftTech Soluciones S.L.')
     .unitType(unitType.Division)
-    .status(status.Active)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.ExplicitAndFromParent)
     .stores([KeyReferenceDraft.presets.store().key(spainStore.key!)])

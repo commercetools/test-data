@@ -93,7 +93,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "key": "lifttech-solutions-ltd",
         "name": "LiftTech Solutions Ltd",
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -197,7 +197,6 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "key": "lifttech-solutions-ltd",
         "name": "LiftTech Solutions Ltd",
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {

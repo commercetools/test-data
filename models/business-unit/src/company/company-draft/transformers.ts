@@ -10,6 +10,7 @@ const transformers = {
   }),
   graphql: Transformer<TCompanyDraft, TCompanyDraftGraphql>('graphql', {
     buildFields: ['addresses', 'associates', 'stores'],
+    removeFields: ['status'],
   }),
 };
 

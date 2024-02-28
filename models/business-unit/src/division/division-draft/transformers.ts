@@ -10,6 +10,7 @@ const transformers = {
   }),
   graphql: Transformer<TDivisionDraft, TDivisionDraftGraphql>('graphql', {
     buildFields: ['addresses', 'associates', 'parentUnit', 'stores'],
+    removeFields: ['status'],
   }),
 };
 

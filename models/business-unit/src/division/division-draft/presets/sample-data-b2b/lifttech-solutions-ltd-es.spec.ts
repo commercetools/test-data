@@ -84,7 +84,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
           },
         ],
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -179,7 +179,6 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
           },
         ],
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {

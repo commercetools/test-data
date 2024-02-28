@@ -20,7 +20,6 @@ const lifttechSolutionsLtd = (): TCompanyDraftBuilder =>
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)
-    .status(status.Active)
     .stores([KeyReferenceDraft.presets.store().key(deFrUkStore.key!)])
     .associates([
       AssociateDraft.presets.sampleDataB2B.oliverSmith(),

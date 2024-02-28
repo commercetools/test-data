@@ -18,7 +18,6 @@ const lifttechSolutionsLtdFr = (): TDivisionDraftBuilder =>
     .key('lifttech-solutions-ltd-fr')
     .name('LiftTech Solutions SARL')
     .unitType(unitType.Division)
-    .status(status.Active)
     .storeMode(storeMode.FromParent)
     .associateMode(associateMode.ExplicitAndFromParent)
     .associates([

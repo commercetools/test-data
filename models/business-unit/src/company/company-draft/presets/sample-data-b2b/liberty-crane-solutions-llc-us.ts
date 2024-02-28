@@ -20,7 +20,6 @@ const libertyCraneSolutionsLlcUs = (): TCompanyDraftBuilder =>
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)
-    .status(status.Active)
     .stores([
       KeyReferenceDraft.presets.store().key(usMediumCustomersStore.key!),
     ])
