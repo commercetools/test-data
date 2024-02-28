@@ -18,29 +18,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.4.0
+        with:
+          run_install: false
+
       - name: Setup Node (uses version in .nvmrc)
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
       - name: Install dependencies
         run: pnpm install
 
-      - name: Get changed directories
-        id: changed_dirs
+      - name: Building packages
+        run: pnpm build
+
+      - name: Running static type checking
+        run: pnpm typecheck
+
+      - name: Get changed files
+        id: files
         run: |
-          echo "::set-output name=dirs::$(git diff --name-only ${{ github.sha }} ${{ github.event.before }} | xargs -L 1 dirname | uniq | xargs)"
-      
-      - name: Running linters and tests for changed directories
-        if: steps.changed_dirs.outputs.dirs != ''
+          echo "::set-output name=list::$(git diff --name-only ${{ github.sha }} ${{ github.event.before }} | xargs)"
+        
+      - name: Running linters and tests for changed files
+        if: steps.files.outputs.list != ''
         run: |
-          for DIR in ${{ steps.changed_dirs.outputs.dirs }}; do
-            if [ -d "$DIR" ]; then
-              echo "Running tests in $DIR"
-              (cd $DIR && pnpm jest) || exit 1
-            fi
-          done
+          FILES=(${{ steps.files.outputs.list }})
+          pnpm jest --findRelatedTests ${FILES[@]}
+        env:
+          CI: true
