@@ -197,7 +197,7 @@ importers:
         specifier: ^7.17.9
         version: 7.19.4
       '@commercetools-test-data/business-unit':
-        specifier: workspace:7.2.3
+        specifier: 7.2.3
         version: link:../business-unit
       '@commercetools-test-data/channel':
         specifier: 7.2.3
