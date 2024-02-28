@@ -13,12 +13,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Fetch main branch
-        run: |
-          git fetch --no-tags --depth=1 origin main
-          git checkout -b main
-          git checkout ${{ github.event.pull_request.head.sha }}
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
