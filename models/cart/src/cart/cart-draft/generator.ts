@@ -37,7 +37,7 @@ const generator = Generator<TCartDraft>({
     ),
     externalTaxRateForShippingMethod: null,
     custom: null,
-    locale: oneOf('en-US', 'es-ES'),
+    locale: oneOf('en-US', 'de-DE', 'es-ES'),
     deleteDaysAfterLastModification: null,
     shippingRateInput: null,
     origin: oneOf(...Object.values(origin)),
