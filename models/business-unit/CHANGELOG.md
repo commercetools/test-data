@@ -1,5 +1,19 @@
 # @commercetools-test-data/business-unit
 
+## 7.2.3
+
+### Patch Changes
+
+- [#499](https://github.com/commercetools/test-data/pull/499) [`ccc923d`](https://github.com/commercetools/test-data/commit/ccc923df48c2143524497ad4700e705dba39c19e) Thanks [@valoriecarli](https://github.com/valoriecarli)! - Corrected KeyRefDraft references in BU generators & added to specs'
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.3
+  - @commercetools-test-data/associate-role@7.2.3
+  - @commercetools-test-data/commons@7.2.3
+  - @commercetools-test-data/customer@7.2.3
+  - @commercetools-test-data/store@7.2.3
+  - @commercetools-test-data/utils@7.2.3
+
 ## 7.2.2
 
 ### Patch Changes
