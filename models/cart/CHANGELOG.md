@@ -1,5 +1,24 @@
 # @commercetools-test-data/cart
 
+## 7.2.6
+
+### Patch Changes
+
+- [#509](https://github.com/commercetools/test-data/pull/509) [`0ff9651`](https://github.com/commercetools/test-data/commit/0ff9651601ca072ebceee17c68efe18a2accd92a) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Add distribution and supply channels to B2B cart line items
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.6
+  - @commercetools-test-data/business-unit@7.2.6
+  - @commercetools-test-data/channel@7.2.6
+  - @commercetools-test-data/commons@7.2.6
+  - @commercetools-test-data/customer@7.2.6
+  - @commercetools-test-data/discount-code@7.2.6
+  - @commercetools-test-data/product@7.2.6
+  - @commercetools-test-data/shipping-method@7.2.6
+  - @commercetools-test-data/store@7.2.6
+  - @commercetools-test-data/tax-category@7.2.6
+  - @commercetools-test-data/utils@7.2.6
+
 ## 7.2.5
 
 ### Patch Changes
