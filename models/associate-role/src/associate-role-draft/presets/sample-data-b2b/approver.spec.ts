@@ -27,7 +27,6 @@ describe(`with approver preset`, () => {
       approver().buildGraphql<TAssociateRoleDraft>();
     expect(approverPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "AssociateRole",
         "buyerAssignable": true,
         "custom": undefined,
         "key": "approver",

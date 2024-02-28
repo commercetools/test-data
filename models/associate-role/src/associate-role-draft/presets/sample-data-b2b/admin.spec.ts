@@ -36,7 +36,6 @@ describe(`with admin preset`, () => {
     const adminPresetGraphql = admin().buildGraphql<TAssociateRoleDraft>();
     expect(adminPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "AssociateRole",
         "buyerAssignable": true,
         "custom": undefined,
         "key": "admin",

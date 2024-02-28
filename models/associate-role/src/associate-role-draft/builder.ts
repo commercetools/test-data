@@ -4,7 +4,7 @@ import {
   TCreateAssociateRoleDraftBuilder,
 } from '../types';
 import generator from './generator';
-import transformers from '../transformers';
+import transformers from './transformers';
 
 const AssociateRoleDraft: TCreateAssociateRoleDraftBuilder = () =>
   Builder<TAssociateRoleDraft>({
