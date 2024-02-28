@@ -1,5 +1,14 @@
 # @commercetools-test-data/shopping-list
 
+## 7.2.4
+
+### Patch Changes
+
+- Updated dependencies [[`7a5d138`](https://github.com/commercetools/test-data/commit/7a5d1384b7f141919cb36e8ba06e9bc0f2037bd3)]:
+  - @commercetools-test-data/commons@7.2.4
+  - @commercetools-test-data/core@7.2.4
+  - @commercetools-test-data/utils@7.2.4
+
 ## 7.2.3
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @commercetools-test-data/commons
 
+## 7.2.4
+
+### Patch Changes
+
+- [#501](https://github.com/commercetools/test-data/pull/501) [`7a5d138`](https://github.com/commercetools/test-data/commit/7a5d1384b7f141919cb36e8ba06e9bc0f2037bd3) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Remove invalid states from address presets for european b2b companies
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.4
+  - @commercetools-test-data/utils@7.2.4
+
 ## 7.2.3
 
 ### Patch Changes

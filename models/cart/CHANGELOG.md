@@ -1,5 +1,26 @@
 # @commercetools-test-data/cart
 
+## 7.2.4
+
+### Patch Changes
+
+- [#501](https://github.com/commercetools/test-data/pull/501) [`7a5d138`](https://github.com/commercetools/test-data/commit/7a5d1384b7f141919cb36e8ba06e9bc0f2037bd3) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Remove invalid states from address presets for european b2b companies
+
+- [#503](https://github.com/commercetools/test-data/pull/503) [`09edcba`](https://github.com/commercetools/test-data/commit/09edcba6e7cee079a95ef259133c309dc1330ea4) Thanks [@ByronDWall](https://github.com/ByronDWall)! - add correct business unit to b2b cart presets
+
+- Updated dependencies [[`7a5d138`](https://github.com/commercetools/test-data/commit/7a5d1384b7f141919cb36e8ba06e9bc0f2037bd3)]:
+  - @commercetools-test-data/commons@7.2.4
+  - @commercetools-test-data/business-unit@7.2.4
+  - @commercetools-test-data/channel@7.2.4
+  - @commercetools-test-data/customer@7.2.4
+  - @commercetools-test-data/discount-code@7.2.4
+  - @commercetools-test-data/product@7.2.4
+  - @commercetools-test-data/shipping-method@7.2.4
+  - @commercetools-test-data/store@7.2.4
+  - @commercetools-test-data/tax-category@7.2.4
+  - @commercetools-test-data/core@7.2.4
+  - @commercetools-test-data/utils@7.2.4
+
 ## 7.2.3
 
 ### Patch Changes
