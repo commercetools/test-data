@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   build_lint_and_test:
@@ -36,6 +35,6 @@ jobs:
         run: pnpm typecheck
 
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js
+        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter
         env:
           CI: true
