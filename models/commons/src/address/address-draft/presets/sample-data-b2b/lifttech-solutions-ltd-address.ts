@@ -11,7 +11,6 @@ const lifttechSolutionsLtdAddress = (): TAddressDraftBuilder =>
     .city('London')
     .country('GB')
     .region('England')
-    .state('London')
     .company('LiftTech Solutions Ltd')
     .building('C')
     .apartment('987');
