@@ -27,11 +27,11 @@ const lifttechSolutionsLtdFr = (): TDivisionDraftBuilder =>
     .addresses([
       AddressDraft.presets.sampleDataB2B.lifttechSolutionsLtdFrAddress(),
     ])
-    .parentUnit([
+    .parentUnit(
       KeyReferenceDraft.presets
         .businessUnit()
-        .key(lifttechSolutionsLtdCompany.key!),
-    ])
+        .key(lifttechSolutionsLtdCompany.key!)
+    )
     .defaultShippingAddress(0)
     .defaultBillingAddress(0);
 

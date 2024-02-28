@@ -77,12 +77,10 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
-        "parentUnit": [
-          {
-            "key": "lifttech-solutions-ltd",
-            "typeId": "business-unit",
-          },
-        ],
+        "parentUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "shippingAddresses": undefined,
         "status": undefined,
         "storeMode": "Explicit",
@@ -172,12 +170,10 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
-        "parentUnit": [
-          {
-            "key": "lifttech-solutions-ltd",
-            "typeId": "business-unit",
-          },
-        ],
+        "parentUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "shippingAddresses": undefined,
         "storeMode": "Explicit",
         "stores": [
