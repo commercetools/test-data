@@ -36,7 +36,6 @@ describe(`with buyer preset`, () => {
     const buyerPresetGraphql = buyer().buildGraphql<TAssociateRoleDraft>();
     expect(buyerPresetGraphql).toMatchInlineSnapshot(`
       {
-        "__typename": "AssociateRole",
         "buyerAssignable": true,
         "custom": undefined,
         "key": "buyer",
