@@ -1,9 +1,6 @@
-name: Main workflow
+name: Pull request workflow
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
 
 jobs:
@@ -13,6 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: |
+          git checkout -b main origin/main
+          git checkout -
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
@@ -36,6 +39,6 @@ jobs:
         run: pnpm typecheck
 
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js
+        run: pnpm jest --projects jest.{eslint,test}.config.js --changedSince=main
         env:
           CI: true
