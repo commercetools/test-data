@@ -1,4 +1,8 @@
 import {
+  CompanyDraft,
+  type TCompanyDraft,
+} from '@commercetools-test-data/business-unit';
+import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
@@ -10,6 +14,7 @@ import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product';
+
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
@@ -43,6 +48,10 @@ const store = StoreDraft.presets.sampleDataB2B
   .usLargeCustomers()
   .build<TStoreDraft>();
 
+const businessUnit = CompanyDraft.presets.sampleDataB2B
+  .eagleHeavyLiftTechnologiesIncUs()
+  .build<TCompanyDraft>();
+
 const eagleHeavyLiftTechnologiesIncUsCart1 = (
   customerId?: string
 ): TCartDraftBuilder =>
@@ -63,6 +72,9 @@ const eagleHeavyLiftTechnologiesIncUsCart1 = (
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReferenceDraft.presets.store().key(store.key!));
+    .store(KeyReferenceDraft.presets.store().key(store.key!))
+    .businessUnit(
+      KeyReferenceDraft.presets.businessUnit().key(businessUnit.key!)
+    );
 
 export default eagleHeavyLiftTechnologiesIncUsCart1;

@@ -9,7 +9,10 @@ describe(`with lifttechSolutionsLtdCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "country": "GB",
         "currency": "GBP",
         "custom": undefined,
@@ -126,7 +129,10 @@ describe(`with lifttechSolutionsLtdCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "country": "GB",
         "currency": "GBP",
         "custom": undefined,

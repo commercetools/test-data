@@ -9,7 +9,10 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd-fr",
+          "typeId": "business-unit",
+        },
         "country": "FR",
         "currency": "EUR",
         "custom": undefined,
@@ -126,7 +129,10 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd-fr",
+          "typeId": "business-unit",
+        },
         "country": "FR",
         "currency": "EUR",
         "custom": undefined,

@@ -9,7 +9,10 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "eagle-heavy-lift-technologies-inc-us",
+          "typeId": "business-unit",
+        },
         "country": "US",
         "currency": "USD",
         "custom": undefined,
@@ -127,7 +130,10 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "eagle-heavy-lift-technologies-inc-us",
+          "typeId": "business-unit",
+        },
         "country": "US",
         "currency": "USD",
         "custom": undefined,
