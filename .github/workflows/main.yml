@@ -25,10 +25,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.4.0
-        id: pnpm-install
-        with:
-          run_install: false
+        run: npm install -g pnpm
 
       - name: Install dependencies
         run: pnpm install
