@@ -18,6 +18,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Get changed directories
+        id: get-changed-directories
+        run: |
+          echo "CHANGED_DIRECTORIES<<EOF" >> $GITHUB_ENV
+          git diff --dirstat=files,0 ${{ github.base_ref }} ${{ github.head_ref }} | awk '{print $2}' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
         id: pnpm-install
@@ -40,6 +47,6 @@ jobs:
         run: pnpm typecheck
 
       - name: Running linters and tests
-        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter
+        run: pnpm jest --projects jest.{eslint,test}.config.js --reporters jest-silent-reporter -- ${{ env.CHANGED_DIRECTORIES }}
         env:
           CI: true
