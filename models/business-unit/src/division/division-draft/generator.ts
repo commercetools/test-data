@@ -25,7 +25,7 @@ const generator = Generator<TDivisionDraft>({
     billingAddresses: [0],
     defaultBillingAddress: 0,
     custom: null,
-    parentUnit: KeyReferenceDraft.random().typeId('business-unit'),
+    parentUnit: fake(() => KeyReferenceDraft.random().typeId('business-unit')),
   },
 });
 

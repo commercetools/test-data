@@ -28,8 +28,12 @@ describe('builder', () => {
         associateMode: expect.any(String),
         associates: expect.any(Array),
         inheritedAssociates: expect.any(Array),
-        // parentUnit: Needs to be addressed,
-        // topLevelUnit: Needs to be addressed,
+        parentUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
+        topLevelUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -65,8 +69,12 @@ describe('builder', () => {
         associateMode: expect.any(String),
         associates: expect.any(Array),
         inheritedAssociates: expect.any(Array),
-        // parentUnit: Needs to be addressed,
-        // topLevelUnit: Needs to be addressed,
+        parentUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
+        topLevelUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({

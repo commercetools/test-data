@@ -28,7 +28,9 @@ describe('builder', () => {
         associateMode: 'Explicit',
         associates: [],
         inheritedAssociates: [],
-        // topLevelUnit:
+        topLevelUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
@@ -64,7 +66,9 @@ describe('builder', () => {
         associateMode: 'Explicit',
         associates: [],
         inheritedAssociates: [],
-        // topLevelUnit:
+        topLevelUnit: expect.objectContaining({
+          typeId: 'business-unit',
+        }),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
