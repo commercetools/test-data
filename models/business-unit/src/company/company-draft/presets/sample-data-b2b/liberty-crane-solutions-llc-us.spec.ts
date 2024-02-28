@@ -93,7 +93,7 @@ describe(`with libertyCraneSolutionsLlcUs preset`, () => {
         "key": "liberty-crane-solutions-llc-us",
         "name": "Liberty Crane Solutions LLC",
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -197,7 +197,6 @@ describe(`with libertyCraneSolutionsLlcUs preset`, () => {
         "key": "liberty-crane-solutions-llc-us",
         "name": "Liberty Crane Solutions LLC",
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {

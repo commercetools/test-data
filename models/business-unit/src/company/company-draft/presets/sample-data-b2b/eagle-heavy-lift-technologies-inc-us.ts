@@ -20,7 +20,6 @@ const eagleHeavyLiftTechnologiesIncUs = (): TCompanyDraftBuilder =>
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)
-    .status(status.Active)
     .stores([KeyReferenceDraft.presets.store().key(usLargeCustomersStore.key!)])
     .associates([
       AssociateDraft.presets.sampleDataB2B.jamesSmith(),

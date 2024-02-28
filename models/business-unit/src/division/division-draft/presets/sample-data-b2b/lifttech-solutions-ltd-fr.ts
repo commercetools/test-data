@@ -18,7 +18,6 @@ const lifttechSolutionsLtdFr = (): TDivisionDraftBuilder =>
     .key('lifttech-solutions-ltd-fr')
     .name('LiftTech Solutions SARL')
     .unitType(unitType.Division)
-    .status(status.Active)
     .storeMode(storeMode.FromParent)
     .associateMode(associateMode.ExplicitAndFromParent)
     .associates([
@@ -28,11 +27,11 @@ const lifttechSolutionsLtdFr = (): TDivisionDraftBuilder =>
     .addresses([
       AddressDraft.presets.sampleDataB2B.lifttechSolutionsLtdFrAddress(),
     ])
-    .parentUnit([
+    .parentUnit(
       KeyReferenceDraft.presets
         .businessUnit()
-        .key(lifttechSolutionsLtdCompany.key!),
-    ])
+        .key(lifttechSolutionsLtdCompany.key!)
+    )
     .defaultShippingAddress(0)
     .defaultBillingAddress(0);
 

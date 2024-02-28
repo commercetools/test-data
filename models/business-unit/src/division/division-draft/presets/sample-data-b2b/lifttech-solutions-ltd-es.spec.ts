@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
             "postalCode": "28013",
             "region": "Community of Madrid",
             "salutation": undefined,
-            "state": "Community of Madrid",
+            "state": undefined,
             "streetName": "Calle Mayor",
             "streetNumber": "101",
             "title": undefined,
@@ -77,14 +77,12 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
-        "parentUnit": [
-          {
-            "key": "lifttech-solutions-ltd",
-            "typeId": "business-unit",
-          },
-        ],
+        "parentUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -126,7 +124,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
             "postalCode": "28013",
             "region": "Community of Madrid",
             "salutation": undefined,
-            "state": "Community of Madrid",
+            "state": undefined,
             "streetName": "Calle Mayor",
             "streetNumber": "101",
             "title": undefined,
@@ -172,14 +170,11 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
-        "parentUnit": [
-          {
-            "key": "lifttech-solutions-ltd",
-            "typeId": "business-unit",
-          },
-        ],
+        "parentUnit": {
+          "key": "lifttech-solutions-ltd",
+          "typeId": "business-unit",
+        },
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {

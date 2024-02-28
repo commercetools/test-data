@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
             "postalCode": "SW1A 1AA",
             "region": "England",
             "salutation": undefined,
-            "state": "London",
+            "state": undefined,
             "streetName": "Baker Street",
             "streetNumber": "221B",
             "title": undefined,
@@ -93,7 +93,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "key": "lifttech-solutions-ltd",
         "name": "LiftTech Solutions Ltd",
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -135,7 +135,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
             "postalCode": "SW1A 1AA",
             "region": "England",
             "salutation": undefined,
-            "state": "London",
+            "state": undefined,
             "streetName": "Baker Street",
             "streetNumber": "221B",
             "title": undefined,
@@ -197,7 +197,6 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "key": "lifttech-solutions-ltd",
         "name": "LiftTech Solutions Ltd",
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {

@@ -93,7 +93,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUs preset`, () => {
         "key": "eagle-heavy-lift-technologies-inc-us",
         "name": "Eagle Heavy Lift Technologies Inc.",
         "shippingAddresses": undefined,
-        "status": "Active",
+        "status": undefined,
         "storeMode": "Explicit",
         "stores": [
           {
@@ -197,7 +197,6 @@ describe(`with eagleHeavyLiftTechnologiesIncUs preset`, () => {
         "key": "eagle-heavy-lift-technologies-inc-us",
         "name": "Eagle Heavy Lift Technologies Inc.",
         "shippingAddresses": undefined,
-        "status": "Active",
         "storeMode": "Explicit",
         "stores": [
           {
