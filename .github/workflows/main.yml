@@ -15,7 +15,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
+
+      - run: |
+          git checkout -b main origin/main
+          git checkout -
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
