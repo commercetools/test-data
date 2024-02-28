@@ -9,7 +9,10 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "liberty-crane-solutions-llc-us",
+          "typeId": "business-unit",
+        },
         "country": "US",
         "currency": "USD",
         "custom": undefined,
@@ -126,7 +129,10 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
       {
         "anonymousId": undefined,
         "billingAddress": undefined,
-        "businessUnit": undefined,
+        "businessUnit": {
+          "key": "liberty-crane-solutions-llc-us",
+          "typeId": "business-unit",
+        },
         "country": "US",
         "currency": "USD",
         "custom": undefined,

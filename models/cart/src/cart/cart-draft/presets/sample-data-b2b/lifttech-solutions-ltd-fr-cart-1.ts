@@ -1,4 +1,8 @@
 import {
+  DivisionDraft,
+  type TDivisionDraft,
+} from '@commercetools-test-data/business-unit';
+import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
@@ -41,6 +45,10 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
 
 const store = StoreDraft.presets.sampleDataB2B.deFrUk().build<TStoreDraft>();
 
+const businessUnit = DivisionDraft.presets.sampleDataB2B
+  .lifttechSolutionsLtdFr()
+  .build<TDivisionDraft>();
+
 const lifttechSolutionsLtdFrCart1 = (customerId?: string): TCartDraftBuilder =>
   CartDraft.presets
     .empty()
@@ -59,6 +67,9 @@ const lifttechSolutionsLtdFrCart1 = (customerId?: string): TCartDraftBuilder =>
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReferenceDraft.presets.store().key(store.key!));
+    .store(KeyReferenceDraft.presets.store().key(store.key!))
+    .businessUnit(
+      KeyReferenceDraft.presets.businessUnit().key(businessUnit.key!)
+    );
 
 export default lifttechSolutionsLtdFrCart1;
