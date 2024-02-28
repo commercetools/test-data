@@ -16,6 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - run: |
+          git checkout -b main origin/main
+          git checkout -
+
       - name: Install pnpm
         uses: pnpm/action-setup@v2.4.0
         id: pnpm-install
