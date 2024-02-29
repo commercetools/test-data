@@ -22,7 +22,7 @@ const lifttechSolutionsLtdDeQuote12 = (
         .key(lifttechSolutionsLtdDeStagedQuote1StagedQuote.key!)
     )
     .stagedQuoteVersion(stagedQuoteVersion)
-    .stagedQuoteStateToSent(true);
+    .stagedQuoteStateToSent(false);
 };
 
 export default lifttechSolutionsLtdDeQuote12;

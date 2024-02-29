@@ -22,7 +22,7 @@ const libertyCraneSolutionsLlcUsQuote12 = (
         .key(libertyCraneSolutionsLlcUsStagedQuote1StagedQuote.key!)
     )
     .stagedQuoteVersion(stagedQuoteVersion)
-    .stagedQuoteStateToSent(true);
+    .stagedQuoteStateToSent(false);
 };
 
 export default libertyCraneSolutionsLlcUsQuote12;

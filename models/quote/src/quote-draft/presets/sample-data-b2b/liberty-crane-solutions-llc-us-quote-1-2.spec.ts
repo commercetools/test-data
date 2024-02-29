@@ -13,7 +13,7 @@ describe(`with libertyCraneSolutionsLlcUsQuote12 preset`, () => {
           "key": "liberty-crane-solutions-llc-us-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }
@@ -32,7 +32,7 @@ describe(`with libertyCraneSolutionsLlcUsQuote12 preset`, () => {
           "key": "liberty-crane-solutions-llc-us-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }
