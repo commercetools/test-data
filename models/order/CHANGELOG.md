@@ -1,5 +1,18 @@
 # @commercetools-test-data/order
 
+## 7.2.7
+
+### Patch Changes
+
+- Updated dependencies [[`df56292`](https://github.com/commercetools/test-data/commit/df56292c7867ea099de77794700ddfcae82503e5)]:
+  - @commercetools-test-data/quote@7.2.7
+  - @commercetools-test-data/core@7.2.7
+  - @commercetools-test-data/cart@7.2.7
+  - @commercetools-test-data/cart-discount@7.2.7
+  - @commercetools-test-data/commons@7.2.7
+  - @commercetools-test-data/customer-group@7.2.7
+  - @commercetools-test-data/utils@7.2.7
+
 ## 7.2.6
 
 ### Patch Changes

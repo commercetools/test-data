@@ -1,5 +1,23 @@
 # @commercetools-test-data/quote
 
+## 7.2.7
+
+### Patch Changes
+
+- [#511](https://github.com/commercetools/test-data/pull/511) [`df56292`](https://github.com/commercetools/test-data/commit/df56292c7867ea099de77794700ddfcae82503e5) Thanks [@jaikamat](https://github.com/jaikamat)! - Fixes B2B quote preset state
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.7
+  - @commercetools-test-data/business-unit@7.2.7
+  - @commercetools-test-data/cart@7.2.7
+  - @commercetools-test-data/commons@7.2.7
+  - @commercetools-test-data/customer@7.2.7
+  - @commercetools-test-data/customer-group@7.2.7
+  - @commercetools-test-data/quote-request@7.2.7
+  - @commercetools-test-data/staged-quote@7.2.7
+  - @commercetools-test-data/store@7.2.7
+  - @commercetools-test-data/utils@7.2.7
+
 ## 7.2.6
 
 ### Patch Changes
