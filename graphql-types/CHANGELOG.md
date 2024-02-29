@@ -1,5 +1,7 @@
 # @commercetools-test-data/graphql-types
 
+## 7.2.7
+
 ## 7.2.6
 
 ## 7.2.5
