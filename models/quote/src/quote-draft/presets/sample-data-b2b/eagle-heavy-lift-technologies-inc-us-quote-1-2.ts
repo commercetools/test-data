@@ -22,7 +22,7 @@ const eagleHeavyLiftTechnologiesIncUsQuote12 = (
         .key(eagleHeavyLiftTechnologiesIncUsStagedQuote1StagedQuote.key!)
     )
     .stagedQuoteVersion(stagedQuoteVersion)
-    .stagedQuoteStateToSent(true);
+    .stagedQuoteStateToSent(false);
 };
 
 export default eagleHeavyLiftTechnologiesIncUsQuote12;

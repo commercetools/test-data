@@ -13,7 +13,7 @@ describe(`with lifttechSolutionsLtdEsQuote12 preset`, () => {
           "key": "lifttech-solutions-ltd-es-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }
@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtdEsQuote12 preset`, () => {
           "key": "lifttech-solutions-ltd-es-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }

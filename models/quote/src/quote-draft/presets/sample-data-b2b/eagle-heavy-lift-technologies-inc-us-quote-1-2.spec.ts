@@ -13,7 +13,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsQuote12 preset`, () => {
           "key": "eagle-heavy-lift-technologies-inc-us-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }
@@ -32,7 +32,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsQuote12 preset`, () => {
           "key": "eagle-heavy-lift-technologies-inc-us-staged-quote-1",
           "typeId": "staged-quote",
         },
-        "stagedQuoteStateToSent": true,
+        "stagedQuoteStateToSent": false,
         "stagedQuoteVersion": 1,
         "state": undefined,
       }
