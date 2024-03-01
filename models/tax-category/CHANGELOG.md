@@ -1,5 +1,16 @@
 # @commercetools-test-data/tax-category
 
+## 7.2.8
+
+### Patch Changes
+
+- [#515](https://github.com/commercetools/test-data/pull/515) [`a907d5a`](https://github.com/commercetools/test-data/commit/a907d5ae2e85460396d673c992161e1590205492) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Use updated faker syntax for faker.finance.amount method
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.8
+  - @commercetools-test-data/commons@7.2.8
+  - @commercetools-test-data/utils@7.2.8
+
 ## 7.2.7
 
 ### Patch Changes

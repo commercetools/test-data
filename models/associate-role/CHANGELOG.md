@@ -1,5 +1,14 @@
 # @commercetools-test-data/associate-role
 
+## 7.2.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.8
+  - @commercetools-test-data/commons@7.2.8
+  - @commercetools-test-data/utils@7.2.8
+
 ## 7.2.7
 
 ### Patch Changes
