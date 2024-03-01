@@ -18,6 +18,7 @@ const eagleHeavyLiftTechnologiesIncUsCartCart2 = (
     .cart(KeyReferenceDraft.random().key(cart.key!).typeId('cart'))
     .orderState(constants.orderState.Open)
     .paymentState(constants.paymentState.Pending)
-    .shipmentState(constants.shipmentState.Pending);
+    .shipmentState(constants.shipmentState.Pending)
+    .orderNumber(cart.key!);
 
 export default eagleHeavyLiftTechnologiesIncUsCartCart2;

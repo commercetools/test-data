@@ -19,7 +19,7 @@ describe(`with lifttechSolutionsLtdFrPayment2Payment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "lifttech-solutions-ltd-fr-payment-2",
+        "key": "lifttech-solutions-ltd-fr-cart-2",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": {
@@ -57,7 +57,7 @@ describe(`with lifttechSolutionsLtdFrPayment2Payment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "lifttech-solutions-ltd-fr-payment-2",
+        "key": "lifttech-solutions-ltd-fr-cart-2",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": [],

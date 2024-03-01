@@ -16,7 +16,7 @@ const lifttechSolutionsLtdFrQuote1 = (
     .version(versionNumber)
     .quote(KeyReferenceDraft.presets.quote().key(quote.key!))
     .quoteStateToAccepted(true)
-    .orderNumber('lifttech-solutions-ltd-fr-from-quote-1')
+    .orderNumber(quote.key!)
     .orderState(constants.orderState.Complete)
     .paymentState(constants.paymentState.Paid)
     .shipmentState(constants.shipmentState.Delivered);
