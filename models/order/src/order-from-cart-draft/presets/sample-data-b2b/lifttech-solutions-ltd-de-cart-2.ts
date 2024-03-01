@@ -18,6 +18,7 @@ const lifttechSolutionsLtdDeCartCart2 = (
     .cart(KeyReferenceDraft.random().key(cart.key!).typeId('cart'))
     .orderState(constants.orderState.Confirmed)
     .paymentState(constants.paymentState.BalanceDue)
-    .shipmentState(constants.shipmentState.Backorder);
+    .shipmentState(constants.shipmentState.Backorder)
+    .orderNumber(cart.key!);
 
 export default lifttechSolutionsLtdDeCartCart2;

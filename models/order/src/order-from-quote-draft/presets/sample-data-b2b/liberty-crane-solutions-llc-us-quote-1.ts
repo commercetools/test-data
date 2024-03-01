@@ -16,7 +16,7 @@ const libertyCraneSolutionsLlcUsQuote1 = (
     .version(versionNumber)
     .quote(KeyReferenceDraft.presets.quote().key(quote.key!))
     .quoteStateToAccepted(true)
-    .orderNumber('liberty-crane-solutions-llc-us-from-quote-1')
+    .orderNumber(quote.key!)
     .orderState(constants.orderState.Confirmed)
     .paymentState(constants.paymentState.Paid)
     .shipmentState(constants.shipmentState.Ready);

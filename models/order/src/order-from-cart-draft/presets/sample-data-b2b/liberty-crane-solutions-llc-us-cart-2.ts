@@ -18,6 +18,7 @@ const libertyCraneSolutionsLlcUsCartCart2 = (
     .cart(KeyReferenceDraft.random().key(cart.key!).typeId('cart'))
     .orderState(constants.orderState.Confirmed)
     .paymentState(constants.paymentState.Paid)
-    .shipmentState(constants.shipmentState.Ready);
+    .shipmentState(constants.shipmentState.Ready)
+    .orderNumber(cart.key!);
 
 export default libertyCraneSolutionsLlcUsCartCart2;

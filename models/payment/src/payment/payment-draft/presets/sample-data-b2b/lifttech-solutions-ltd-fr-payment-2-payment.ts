@@ -7,6 +7,12 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
+import {
+  OrderFromCartDraft,
+  OrderFromQuoteDraft,
+  TOrderFromCartDraft,
+  TOrderFromQuoteDraft,
+} from '@commercetools-test-data/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';
@@ -16,10 +22,14 @@ const camilleLefevre = CustomerDraft.presets.sampleDataB2B
   .camilleLefevre()
   .build<TCustomerDraft>();
 
+const order = OrderFromCartDraft.presets.sampleDataB2B
+  .lifttechSolutionsLtdFrCart2(1)
+  .build<TOrderFromCartDraft>();
+
 const lifttechSolutionsLtdFrPayment2Payment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
-    .key('lifttech-solutions-ltd-fr-payment-2')
+    .key(order.orderNumber)
     .customer(KeyReferenceDraft.presets.customer().key(camilleLefevre.key!))
     .amountPlanned(MoneyDraft.random().currencyCode('EUR').centAmount(24300000))
     .paymentMethodInfo(

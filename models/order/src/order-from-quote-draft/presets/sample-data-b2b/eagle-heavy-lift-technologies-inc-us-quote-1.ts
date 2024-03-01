@@ -16,7 +16,7 @@ const eagleHeavyLiftTechnologiesIncUsQuote1 = (
     .version(versionNumber)
     .quote(KeyReferenceDraft.presets.quote().key(quote.key!))
     .quoteStateToAccepted(true)
-    .orderNumber('eagle-heavy-lift-technologies-inc-us-from-quote-1')
+    .orderNumber(quote.key!)
     .orderState(constants.orderState.Open)
     .paymentState(constants.paymentState.Pending)
     .shipmentState(constants.shipmentState.Pending);
