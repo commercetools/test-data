@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/quote",
-  "version": "7.2.8",
+  "version": "7.2.9",
   "description": "Data model for commercetools API Quote",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,16 +19,16 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/business-unit": "7.2.8",
-    "@commercetools-test-data/cart": "7.2.8",
-    "@commercetools-test-data/commons": "7.2.8",
-    "@commercetools-test-data/core": "7.2.8",
-    "@commercetools-test-data/customer": "7.2.8",
-    "@commercetools-test-data/customer-group": "7.2.8",
-    "@commercetools-test-data/quote-request": "7.2.8",
-    "@commercetools-test-data/staged-quote": "^7.2.8",
-    "@commercetools-test-data/store": "7.2.8",
-    "@commercetools-test-data/utils": "7.2.8",
+    "@commercetools-test-data/business-unit": "7.2.9",
+    "@commercetools-test-data/cart": "7.2.9",
+    "@commercetools-test-data/commons": "7.2.9",
+    "@commercetools-test-data/core": "7.2.9",
+    "@commercetools-test-data/customer": "7.2.9",
+    "@commercetools-test-data/customer-group": "7.2.9",
+    "@commercetools-test-data/quote-request": "7.2.9",
+    "@commercetools-test-data/staged-quote": "^7.2.9",
+    "@commercetools-test-data/store": "7.2.9",
+    "@commercetools-test-data/utils": "7.2.9",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.3.1"
   }

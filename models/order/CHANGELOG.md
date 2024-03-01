@@ -1,5 +1,20 @@
 # @commercetools-test-data/order
 
+## 7.2.9
+
+### Patch Changes
+
+- [#517](https://github.com/commercetools/test-data/pull/517) [`48a745a`](https://github.com/commercetools/test-data/commit/48a745a0033aa2c51352b35908158d5830be9e10) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Export order from cart from order model package
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.9
+  - @commercetools-test-data/cart@7.2.9
+  - @commercetools-test-data/cart-discount@7.2.9
+  - @commercetools-test-data/commons@7.2.9
+  - @commercetools-test-data/customer-group@7.2.9
+  - @commercetools-test-data/quote@7.2.9
+  - @commercetools-test-data/utils@7.2.9
+
 ## 7.2.8
 
 ### Patch Changes
