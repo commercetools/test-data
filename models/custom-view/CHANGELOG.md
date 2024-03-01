@@ -1,5 +1,15 @@
 # @commercetools-test-data/custom-view
 
+## 7.2.9
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.9
+  - @commercetools-test-data/graphql-types@7.2.9
+  - @commercetools-test-data/commons@7.2.9
+  - @commercetools-test-data/utils@7.2.9
+
 ## 7.2.8
 
 ### Patch Changes
