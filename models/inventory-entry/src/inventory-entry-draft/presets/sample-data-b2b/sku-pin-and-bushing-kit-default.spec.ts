@@ -7,17 +7,16 @@ describe(`with skuPinAndBushingKitDefault preset and default-warehouse channel`,
       skuPinAndBushingKitDefault().build<TInventoryEntryDraft>();
     expect(skuPinAndBushingKitDefaultPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "pin-and-bushing-kit-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "pin-and-bushing-kit",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuPinAndBushingKitDefault preset and default-warehouse channel`,
       skuPinAndBushingKitDefault().buildGraphql<TInventoryEntryDraft>();
     expect(skuPinAndBushingKitDefaultPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "pin-and-bushing-kit-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "pin-and-bushing-kit",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

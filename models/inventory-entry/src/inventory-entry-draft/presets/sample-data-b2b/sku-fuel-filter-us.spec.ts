@@ -7,17 +7,16 @@ describe(`with skuFuelFilterUs preset and us-warehouse channel`, () => {
       skuFuelFilterUs().build<TInventoryEntryDraft>();
     expect(skuFuelFilterUsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "fuel-filter-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "fuel-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuFuelFilterUs preset and us-warehouse channel`, () => {
       skuFuelFilterUs().buildGraphql<TInventoryEntryDraft>();
     expect(skuFuelFilterUsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "fuel-filter-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "fuel-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

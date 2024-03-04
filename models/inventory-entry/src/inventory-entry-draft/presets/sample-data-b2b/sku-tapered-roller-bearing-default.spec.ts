@@ -7,17 +7,16 @@ describe(`with skuTaperedRollerBearingDefault preset and default-warehouse chann
       skuTaperedRollerBearingDefault().build<TInventoryEntryDraft>();
     expect(skuTaperedRollerBearingDefaultPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "tapered-roller-bearing-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "tapered-roller-bearing",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuTaperedRollerBearingDefault preset and default-warehouse chann
       skuTaperedRollerBearingDefault().buildGraphql<TInventoryEntryDraft>();
     expect(skuTaperedRollerBearingDefaultPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "tapered-roller-bearing-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "tapered-roller-bearing",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

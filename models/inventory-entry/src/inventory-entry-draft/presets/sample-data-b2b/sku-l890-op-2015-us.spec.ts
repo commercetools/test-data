@@ -7,17 +7,16 @@ describe(`with skuL890Op2015Us preset and us-warehouse channel`, () => {
       skuL890Op2015Us().build<TInventoryEntryDraft>();
     expect(skuL890Op2015UsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "l890-op-2015-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "l890-op-2015",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuL890Op2015Us preset and us-warehouse channel`, () => {
       skuL890Op2015Us().buildGraphql<TInventoryEntryDraft>();
     expect(skuL890Op2015UsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "l890-op-2015-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "l890-op-2015",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

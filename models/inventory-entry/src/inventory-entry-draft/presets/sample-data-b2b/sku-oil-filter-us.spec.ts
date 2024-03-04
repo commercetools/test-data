@@ -6,17 +6,16 @@ describe(`with skuOilFilterUs preset and us-warehouse channel`, () => {
     const skuOilFilterUsPreset = skuOilFilterUs().build<TInventoryEntryDraft>();
     expect(skuOilFilterUsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "oil-filter-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "oil-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -26,17 +25,16 @@ describe(`with skuOilFilterUs preset and us-warehouse channel`, () => {
       skuOilFilterUs().buildGraphql<TInventoryEntryDraft>();
     expect(skuOilFilterUsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "oil-filter-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "oil-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

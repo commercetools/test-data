@@ -7,17 +7,16 @@ describe(`with skuVv234WxRedEu preset and eu-warehouse channel`, () => {
       skuVv234WxRedEu().build<TInventoryEntryDraft>();
     expect(skuVv234WxRedEuPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "vv234-wx-red-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "vv234-wx-red",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuVv234WxRedEu preset and eu-warehouse channel`, () => {
       skuVv234WxRedEu().buildGraphql<TInventoryEntryDraft>();
     expect(skuVv234WxRedEuPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "vv234-wx-red-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "vv234-wx-red",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

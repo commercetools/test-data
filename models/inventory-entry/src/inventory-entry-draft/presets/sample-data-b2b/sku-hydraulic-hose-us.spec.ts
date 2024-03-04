@@ -7,17 +7,16 @@ describe(`with skuHydraulicHoseUs preset and us-warehouse channel`, () => {
       skuHydraulicHoseUs().build<TInventoryEntryDraft>();
     expect(skuHydraulicHoseUsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "hydraulic-hose-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "hydraulic-hose",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuHydraulicHoseUs preset and us-warehouse channel`, () => {
       skuHydraulicHoseUs().buildGraphql<TInventoryEntryDraft>();
     expect(skuHydraulicHoseUsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "hydraulic-hose-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "hydraulic-hose",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

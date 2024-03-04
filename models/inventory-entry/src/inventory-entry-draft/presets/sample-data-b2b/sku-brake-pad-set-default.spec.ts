@@ -7,17 +7,16 @@ describe(`with skuBrakePadSetDefault preset and default-warehouse channel`, () =
       skuBrakePadSetDefault().build<TInventoryEntryDraft>();
     expect(skuBrakePadSetDefaultPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "brake-pad-set-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "brake-pad-set",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuBrakePadSetDefault preset and default-warehouse channel`, () =
       skuBrakePadSetDefault().buildGraphql<TInventoryEntryDraft>();
     expect(skuBrakePadSetDefaultPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "brake-pad-set-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "brake-pad-set",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

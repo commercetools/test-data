@@ -7,17 +7,16 @@ describe(`with skuStarterMotorUs preset and us-warehouse channel`, () => {
       skuStarterMotorUs().build<TInventoryEntryDraft>();
     expect(skuStarterMotorUsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "starter-motor-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "starter-motor",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuStarterMotorUs preset and us-warehouse channel`, () => {
       skuStarterMotorUs().buildGraphql<TInventoryEntryDraft>();
     expect(skuStarterMotorUsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "starter-motor-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "starter-motor",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

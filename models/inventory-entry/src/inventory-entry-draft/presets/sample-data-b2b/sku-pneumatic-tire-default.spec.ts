@@ -7,17 +7,16 @@ describe(`with skuPneumaticTireDefault preset and default-warehouse channel`, ()
       skuPneumaticTireDefault().build<TInventoryEntryDraft>();
     expect(skuPneumaticTireDefaultPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "pneumatic-tire-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "pneumatic-tire",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuPneumaticTireDefault preset and default-warehouse channel`, ()
       skuPneumaticTireDefault().buildGraphql<TInventoryEntryDraft>();
     expect(skuPneumaticTireDefaultPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "default-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "pneumatic-tire-default-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "pneumatic-tire",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

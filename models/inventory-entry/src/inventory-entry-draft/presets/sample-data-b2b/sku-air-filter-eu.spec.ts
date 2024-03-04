@@ -6,17 +6,16 @@ describe(`with skuAirFilterEu preset and eu-warehouse channel`, () => {
     const skuAirFilterEuPreset = skuAirFilterEu().build<TInventoryEntryDraft>();
     expect(skuAirFilterEuPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "air-filter-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "air-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -26,17 +25,16 @@ describe(`with skuAirFilterEu preset and eu-warehouse channel`, () => {
       skuAirFilterEu().buildGraphql<TInventoryEntryDraft>();
     expect(skuAirFilterEuPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "air-filter-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "air-filter",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

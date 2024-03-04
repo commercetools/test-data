@@ -7,17 +7,16 @@ describe(`with skuLedWorkLightUs preset and us-warehouse channel`, () => {
       skuLedWorkLightUs().build<TInventoryEntryDraft>();
     expect(skuLedWorkLightUsPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "led-work-light-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "led-work-light",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuLedWorkLightUs preset and us-warehouse channel`, () => {
       skuLedWorkLightUs().buildGraphql<TInventoryEntryDraft>();
     expect(skuLedWorkLightUsPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "us-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "led-work-light-us-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "led-work-light",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });

@@ -7,17 +7,16 @@ describe(`with skuPistonRingSetEu preset and eu-warehouse channel`, () => {
       skuPistonRingSetEu().build<TInventoryEntryDraft>();
     expect(skuPistonRingSetEuPreset).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "piston-ring-set-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "piston-ring-set",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -27,17 +26,16 @@ describe(`with skuPistonRingSetEu preset and eu-warehouse channel`, () => {
       skuPistonRingSetEu().buildGraphql<TInventoryEntryDraft>();
     expect(skuPistonRingSetEuPresetGraphql).toMatchInlineSnapshot(`
       {
-        "channel": {
-          "key": "eu-warehouse",
-          "typeId": "channel",
-        },
         "custom": null,
         "expectedDelivery": undefined,
         "key": "piston-ring-set-eu-warehouse",
         "quantityOnStock": 1000,
         "restockableInDays": undefined,
         "sku": "piston-ring-set",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
       }
     `);
   });
