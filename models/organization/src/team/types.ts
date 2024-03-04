@@ -1,34 +1,9 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TCoreTeam } from '@commercetools-test-data/graphql-types/src/generated/core';
 
-export type TTeam = {
-  id: string;
-  name: string;
-};
+export type TTeam = Omit<TCoreTeam, '__typename'>;
 
-export type TTeamRest = TTeam & {
-  members: string[];
-};
-
-type TUser = {
-  email: string;
-};
-
-export type TTeamGraphql = TTeam & {
-  __typename: 'Team';
-  members: TUser[]; // should be array of users. TODO: update when user model is ready
-};
-
-export type TTeamDraft = {
-  name: string;
-  members: string[];
-};
-
-export type TTeamDraftGraphql = TTeamDraft & {
-  __typename: 'TeamDraft';
-  members: TUser[]; // should be array of users. TODO: update when user model is ready
-};
+export type TTeamGraphql = TCoreTeam;
 
 export type TTeamBuilder = TBuilder<TTeam>;
-export type TTeamDraftBuilder = TBuilder<TTeamDraft>;
 export type TCreateTeamBuilder = () => TTeamBuilder;
-export type TCreateTeamDraftBuilder = () => TTeamDraftBuilder;

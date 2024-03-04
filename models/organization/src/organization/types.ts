@@ -1,29 +1,18 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TTeam } from '../team';
+import type {
+  TCoreOrganization,
+  TCoreCreateOrganizationCommand,
+} from '@commercetools-test-data/graphql-types/src/generated/core';
 
-export type TOrganization = {
-  id: string;
-  version: number;
-  name: string;
-  teams: TTeam[];
-  createdAt: string;
-  lastModifiedAt: string;
-};
+export type TOrganization = Omit<TCoreOrganization, '__typename'>;
 
-export type TOrganizationGraphql = TOrganization & {
-  __typename: 'Organization';
-};
+export type TOrganizationGraphql = TCoreOrganization;
 
-export type TOrganizationDraft = {
-  name: string;
-  owner: null; //Update type
-};
-
-export type TOrganizationDraftGraphql = TOrganizationDraft & {
-  __typename: 'OrganizationDraft';
-};
+export type TCreateOrganizationCommand = TCoreCreateOrganizationCommand;
 
 export type TOrganizationBuilder = TBuilder<TOrganization>;
-export type TOrganizationDraftBuilder = TBuilder<TOrganizationDraft>;
+export type TCreateOrganizationCommandBuilder =
+  TBuilder<TCreateOrganizationCommand>;
 export type TCreateOrganizationBuilder = () => TOrganizationBuilder;
-export type TCreateOrganizationDraftBuilder = () => TOrganizationDraftBuilder;
+export type TCreateCreateOrganizationCommandBuilder =
+  () => TCreateOrganizationCommandBuilder;

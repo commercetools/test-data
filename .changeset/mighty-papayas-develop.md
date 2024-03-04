@@ -6,19 +6,20 @@ This package provides the data model for `Organization` and `Team`.
 
 ```ts
 import {
-  Organization
-  OrganizationDraft,
+  Organization,
+  McOrganization,
   type TOrganization,
-  type TOrganizationDraft,
+  type TMcOrganization,
+
   Team,
-  TeamDraft,
+  TeamRest,
   type TTeam,
-  type TTeamDraft,
+  type TTeamRest
 } from '@commercetools-test-data/organization';
 
-const organization = Organization.random().buildRest<TOrganization>();
-const organizationDraft = OrganizationDraft.random().buildRest<TOrganizationDraft>();
+const organization = Organization.random().buildGraphql<TOrganization>();
+const mcOrganization = McOrganization.random().buildGraphql<TMcOrganization>();
 
-const team = Team.random().buildRest<TTeam>();
-const teamDraft = TeamDraft.random().buildRest<TTeamDraft>();
+const team = Team.random().buildGraphql<TTeam>();
+const teamRest = TeamRest.random().buildRest<TTeamRest>()
 ```

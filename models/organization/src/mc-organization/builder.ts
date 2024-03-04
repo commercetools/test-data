@@ -1,13 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
-import type {
-  TCreateOrganizationDraftBuilder,
-  TOrganizationDraft,
-} from '../types';
 import generator from './generator';
 import transformers from './transformers';
+import type { TCreateMcOrganizationBuilder, TMcOrganization } from './types';
 
-const Model: TCreateOrganizationDraftBuilder = () =>
-  Builder<TOrganizationDraft>({
+const Model: TCreateMcOrganizationBuilder = () =>
+  Builder<TMcOrganization>({
     generator,
     transformers,
   });

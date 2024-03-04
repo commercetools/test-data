@@ -559,12 +559,21 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.23.4
+      '@commercetools-test-data/commons':
+        specifier: 7.2.10
+        version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 6.10.0
-        version: 6.10.0
+        specifier: 7.2.10
+        version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 7.2.10
+        version: link:../../graphql-types
+      '@commercetools-test-data/user':
+        specifier: 7.2.10
+        version: link:../user
       '@commercetools-test-data/utils':
-        specifier: 6.10.0
-        version: 6.10.0
+        specifier: 7.2.10
+        version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
         version: 7.0.0
@@ -3259,16 +3268,6 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@commercetools-test-data/core@6.10.0:
-    resolution: {integrity: sha512-UXU4wgJH0wSTb14dfaD2zpx2Nwsf9CFKkTRpmOmDYjY9GpNEhBmNlNstl+8N+DhONfLXelHWx71H1SmslPwY7w==}
-    dependencies:
-      '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.4
-      '@faker-js/faker': 8.3.1
-      '@types/lodash': 4.14.202
-      lodash: 4.17.21
-    dev: false
-
   /@commercetools-test-data/product-variant@5.11.2:
     resolution: {integrity: sha512-7VT0Iez2bi8fhpqJOzVx/WfmLV+mAXlc5SOxZoTeP1JyUyY07GiujI0ctKAh8Q3/0qzVyJ08RFV1BLtYxLWeKA==}
     dependencies:
@@ -3286,14 +3285,6 @@ packages:
 
   /@commercetools-test-data/utils@5.11.2:
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
-    dependencies:
-      '@babel/runtime': 7.23.4
-      '@babel/runtime-corejs3': 7.23.4
-      '@faker-js/faker': 8.3.1
-    dev: false
-
-  /@commercetools-test-data/utils@6.10.0:
-    resolution: {integrity: sha512-6nooF9Jdpbahk/qkSf3wfKCA0ebajkM9SvTFCm/Vc0xC2AtatvO0lp1x3f+Tn0LUJNJErppCjamHv95ljK44aw==}
     dependencies:
       '@babel/runtime': 7.23.4
       '@babel/runtime-corejs3': 7.23.4
