@@ -1,0 +1,28 @@
+import {
+  ChannelDraft,
+  type TChannelDraft,
+} from '@commercetools-test-data/channel';
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
+import type { TInventoryEntryDraftBuilder } from '../../../types';
+import * as InventoryEntryDraft from '../../index';
+
+const defaultWarehouse = ChannelDraft.presets.sampleDataB2B
+  .defaultWarehouse()
+  .build<TChannelDraft>();
+
+const ww567Yz02 = ProductVariantDraft.presets.sampleDataB2B
+  .ww567Yz02()
+  .build<TProductVariantDraft>();
+
+const skuWw567YzBlueDefault = (): TInventoryEntryDraftBuilder =>
+  InventoryEntryDraft.presets
+    .empty()
+    .key(`${ww567Yz02.sku}-${defaultWarehouse.key}`)
+    .sku(ww567Yz02.sku!)
+    .quantityOnStock(1000)
+    .channel({ typeId: 'channel', key: defaultWarehouse.key });
+
+export default skuWw567YzBlueDefault;
