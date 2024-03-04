@@ -2,6 +2,7 @@ import {
   ChannelDraft,
   type TChannelDraft,
 } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -23,6 +24,8 @@ const skuK567Yz2015Default = (): TInventoryEntryDraftBuilder =>
     .key(`${k567Yz01.sku}-${defaultWarehouse.key}`)
     .sku(k567Yz01.sku!)
     .quantityOnStock(1000)
-    .channel({ typeId: 'channel', key: defaultWarehouse.key });
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(defaultWarehouse.key)
+    );
 
 export default skuK567Yz2015Default;
