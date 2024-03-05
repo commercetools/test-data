@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/store",
-  "version": "7.2.10",
+  "version": "7.2.11",
   "description": "Data models for commercetools Store representations",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/channel": "7.2.10",
-    "@commercetools-test-data/commons": "7.2.10",
-    "@commercetools-test-data/core": "7.2.10",
-    "@commercetools-test-data/product-selection": "7.2.10",
-    "@commercetools-test-data/utils": "7.2.10",
+    "@commercetools-test-data/channel": "7.2.11",
+    "@commercetools-test-data/commons": "7.2.11",
+    "@commercetools-test-data/core": "7.2.11",
+    "@commercetools-test-data/product-selection": "7.2.11",
+    "@commercetools-test-data/utils": "7.2.11",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"
   }

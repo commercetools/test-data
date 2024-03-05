@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-selection
 
+## 7.2.11
+
+### Patch Changes
+
+- [#522](https://github.com/commercetools/test-data/pull/522) [`a2d2ff6`](https://github.com/commercetools/test-data/commit/a2d2ff66b2352b3cef4b1261920f5e1a5119e2d1) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Update TProductSelectionDraftGraphql type to use TLocalizedStringGraphql as type for name field
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.11
+  - @commercetools-test-data/commons@7.2.11
+  - @commercetools-test-data/utils@7.2.11
+
 ## 7.2.10
 
 ### Patch Changes
