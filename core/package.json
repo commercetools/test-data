@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/core",
-  "version": "7.2.10",
+  "version": "7.2.11",
   "description": "This package provides the core functions to define the data models",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
