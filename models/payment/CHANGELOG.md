@@ -1,5 +1,51 @@
 # @commercetools-test-data/payment
 
+## 7.2.11
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@7.2.11
+  - @commercetools-test-data/core@7.2.11
+  - @commercetools-test-data/commons@7.2.11
+  - @commercetools-test-data/customer@7.2.11
+  - @commercetools-test-data/utils@7.2.11
+
+## 7.2.10
+
+### Patch Changes
+
+- [#519](https://github.com/commercetools/test-data/pull/519) [`41e7f8e`](https://github.com/commercetools/test-data/commit/41e7f8e723b0fe02d58fd7f246d55f69f3e44113) Thanks [@jaikamat](https://github.com/jaikamat)! - Reconciles B2B payment presets with carts and quotes
+
+- Updated dependencies [[`41e7f8e`](https://github.com/commercetools/test-data/commit/41e7f8e723b0fe02d58fd7f246d55f69f3e44113)]:
+  - @commercetools-test-data/order@7.2.10
+  - @commercetools-test-data/core@7.2.10
+  - @commercetools-test-data/commons@7.2.10
+  - @commercetools-test-data/customer@7.2.10
+  - @commercetools-test-data/utils@7.2.10
+
+## 7.2.9
+
+### Patch Changes
+
+- Updated dependencies [[`48a745a`](https://github.com/commercetools/test-data/commit/48a745a0033aa2c51352b35908158d5830be9e10)]:
+  - @commercetools-test-data/order@7.2.9
+  - @commercetools-test-data/core@7.2.9
+  - @commercetools-test-data/commons@7.2.9
+  - @commercetools-test-data/customer@7.2.9
+  - @commercetools-test-data/utils@7.2.9
+
+## 7.2.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@7.2.8
+  - @commercetools-test-data/core@7.2.8
+  - @commercetools-test-data/commons@7.2.8
+  - @commercetools-test-data/customer@7.2.8
+  - @commercetools-test-data/utils@7.2.8
+
 ## 7.2.7
 
 ### Patch Changes

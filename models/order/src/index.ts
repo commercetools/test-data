@@ -1,4 +1,5 @@
 export * as OrderFromCartDraft from './order-from-cart-draft';
+export * as OrderFromQuoteDraft from './order-from-quote-draft';
 export * as Order from '.';
 
 export { default as random } from './builder';

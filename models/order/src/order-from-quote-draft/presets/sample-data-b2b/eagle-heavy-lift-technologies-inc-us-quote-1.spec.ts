@@ -7,7 +7,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsQuote1 preset`, () => {
       eagleHeavyLiftTechnologiesIncUsQuote1(1).build<TOrderFromQuoteDraft>();
     expect(eagleHeavyLiftTechnologiesIncUsQuote1Preset).toMatchInlineSnapshot(`
       {
-        "orderNumber": "eagle-heavy-lift-technologies-inc-us-from-quote-1",
+        "orderNumber": "eagle-heavy-lift-technologies-inc-us-quote-1",
         "orderState": "Open",
         "paymentState": "Pending",
         "quote": {
@@ -30,7 +30,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsQuote1 preset`, () => {
     expect(eagleHeavyLiftTechnologiesIncUsQuote1PresetGraphql)
       .toMatchInlineSnapshot(`
       {
-        "orderNumber": "eagle-heavy-lift-technologies-inc-us-from-quote-1",
+        "orderNumber": "eagle-heavy-lift-technologies-inc-us-quote-1",
         "orderState": "Open",
         "paymentState": "Pending",
         "quote": {

@@ -1,5 +1,49 @@
 # @commercetools-test-data/store
 
+## 7.2.11
+
+### Patch Changes
+
+- Updated dependencies [[`a2d2ff6`](https://github.com/commercetools/test-data/commit/a2d2ff66b2352b3cef4b1261920f5e1a5119e2d1)]:
+  - @commercetools-test-data/product-selection@7.2.11
+  - @commercetools-test-data/core@7.2.11
+  - @commercetools-test-data/channel@7.2.11
+  - @commercetools-test-data/commons@7.2.11
+  - @commercetools-test-data/utils@7.2.11
+
+## 7.2.10
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.10
+  - @commercetools-test-data/channel@7.2.10
+  - @commercetools-test-data/commons@7.2.10
+  - @commercetools-test-data/product-selection@7.2.10
+  - @commercetools-test-data/utils@7.2.10
+
+## 7.2.9
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.9
+  - @commercetools-test-data/channel@7.2.9
+  - @commercetools-test-data/commons@7.2.9
+  - @commercetools-test-data/product-selection@7.2.9
+  - @commercetools-test-data/utils@7.2.9
+
+## 7.2.8
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.8
+  - @commercetools-test-data/channel@7.2.8
+  - @commercetools-test-data/commons@7.2.8
+  - @commercetools-test-data/product-selection@7.2.8
+  - @commercetools-test-data/utils@7.2.8
+
 ## 7.2.7
 
 ### Patch Changes

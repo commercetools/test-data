@@ -1,5 +1,73 @@
 # @commercetools-test-data/cart
 
+## 7.2.11
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/store@7.2.11
+  - @commercetools-test-data/business-unit@7.2.11
+  - @commercetools-test-data/core@7.2.11
+  - @commercetools-test-data/channel@7.2.11
+  - @commercetools-test-data/commons@7.2.11
+  - @commercetools-test-data/customer@7.2.11
+  - @commercetools-test-data/discount-code@7.2.11
+  - @commercetools-test-data/product@7.2.11
+  - @commercetools-test-data/shipping-method@7.2.11
+  - @commercetools-test-data/tax-category@7.2.11
+  - @commercetools-test-data/utils@7.2.11
+
+## 7.2.10
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.10
+  - @commercetools-test-data/business-unit@7.2.10
+  - @commercetools-test-data/channel@7.2.10
+  - @commercetools-test-data/commons@7.2.10
+  - @commercetools-test-data/customer@7.2.10
+  - @commercetools-test-data/discount-code@7.2.10
+  - @commercetools-test-data/product@7.2.10
+  - @commercetools-test-data/shipping-method@7.2.10
+  - @commercetools-test-data/store@7.2.10
+  - @commercetools-test-data/tax-category@7.2.10
+  - @commercetools-test-data/utils@7.2.10
+
+## 7.2.9
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.9
+  - @commercetools-test-data/business-unit@7.2.9
+  - @commercetools-test-data/channel@7.2.9
+  - @commercetools-test-data/commons@7.2.9
+  - @commercetools-test-data/customer@7.2.9
+  - @commercetools-test-data/discount-code@7.2.9
+  - @commercetools-test-data/product@7.2.9
+  - @commercetools-test-data/shipping-method@7.2.9
+  - @commercetools-test-data/store@7.2.9
+  - @commercetools-test-data/tax-category@7.2.9
+  - @commercetools-test-data/utils@7.2.9
+
+## 7.2.8
+
+### Patch Changes
+
+- Updated dependencies [[`a907d5a`](https://github.com/commercetools/test-data/commit/a907d5ae2e85460396d673c992161e1590205492)]:
+  - @commercetools-test-data/tax-category@7.2.8
+  - @commercetools-test-data/product@7.2.8
+  - @commercetools-test-data/shipping-method@7.2.8
+  - @commercetools-test-data/core@7.2.8
+  - @commercetools-test-data/business-unit@7.2.8
+  - @commercetools-test-data/channel@7.2.8
+  - @commercetools-test-data/commons@7.2.8
+  - @commercetools-test-data/customer@7.2.8
+  - @commercetools-test-data/discount-code@7.2.8
+  - @commercetools-test-data/store@7.2.8
+  - @commercetools-test-data/utils@7.2.8
+
 ## 7.2.7
 
 ### Patch Changes
