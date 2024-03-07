@@ -1,5 +1,16 @@
 # @commercetools-test-data/store
 
+## 7.2.12
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.12
+  - @commercetools-test-data/channel@7.2.12
+  - @commercetools-test-data/commons@7.2.12
+  - @commercetools-test-data/product-selection@7.2.12
+  - @commercetools-test-data/utils@7.2.12
+
 ## 7.2.11
 
 ### Patch Changes
