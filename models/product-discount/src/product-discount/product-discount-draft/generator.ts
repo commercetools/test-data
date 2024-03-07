@@ -1,9 +1,9 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as ProductDiscountValueAbsolute from '../../product-discount-value-absolute';
-import * as ProductDiscountValueExternal from '../../product-discount-value-external';
-import * as ProductDiscountValueRelative from '../../product-discount-value-relative';
+import * as ProductDiscountValueAbsoluteDraft from '../../product-discount-value-absolute';
+import * as ProductDiscountValueExternalDraft from '../../product-discount-value-external';
+import * as ProductDiscountValueRelativeDraft from '../../product-discount-value-relative';
 import { TProductDiscountDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountdraft
@@ -18,9 +18,9 @@ const generator = Generator<TProductDiscountDraft>({
     description: fake(() => LocalizedStringDraft.random()),
     value: fake((f) =>
       f.helpers.arrayElement([
-        ProductDiscountValueAbsolute.ProductDiscountValueAbsoluteDraft.random(),
-        ProductDiscountValueRelative.ProductDiscountValueRelativeDraft.random(),
-        ProductDiscountValueExternal.ProductDiscountValueExternalDraft.random(),
+        ProductDiscountValueAbsoluteDraft.random(),
+        ProductDiscountValueRelativeDraft.random(),
+        ProductDiscountValueExternalDraft.random(),
       ])
     ),
     predicate: '1=1',
