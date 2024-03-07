@@ -1,5 +1,18 @@
 # @commercetools-test-data/inventory-entry
 
+## 7.2.12
+
+### Patch Changes
+
+- [#521](https://github.com/commercetools/test-data/pull/521) [`427b78e`](https://github.com/commercetools/test-data/commit/427b78e9382ad4adae12a777b9c0bd5eb8f42087) Thanks [@NickDevG](https://github.com/NickDevG)! - Adds channel-specific Inventory entries, removes unused Inventory entries.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.12
+  - @commercetools-test-data/channel@7.2.12
+  - @commercetools-test-data/commons@7.2.12
+  - @commercetools-test-data/product@7.2.12
+  - @commercetools-test-data/utils@7.2.12
+
 ## 7.2.11
 
 ### Patch Changes

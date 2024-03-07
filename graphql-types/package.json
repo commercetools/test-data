@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/graphql-types",
-  "version": "7.2.11",
+  "version": "7.2.12",
   "description": "Generated GraphQL types based on the GraphQL API schemas",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
