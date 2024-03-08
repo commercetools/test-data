@@ -8,9 +8,9 @@ This package provides the data model for `Organization` and `Team`.
 import {
   Organization,
   McOrganization,
+  Team,
   type TOrganization,
   type TMcOrganization,
-  Team,
   type TTeam,
 } from '@commercetools-test-data/organization';
 

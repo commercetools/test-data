@@ -14,9 +14,9 @@ $ pnpm add -D @commercetools-test-data/organization
 import {
   Organization,
   McOrganization,
+  Team,
   type TOrganization,
   type TMcOrganization,
-  Team,
   type TTeam,
 } from '@commercetools-test-data/organization';
 
