@@ -16,7 +16,7 @@ const withPredicate = (): TProductDiscountDraftBuilder => {
 
   return ProductDiscountDraft.random()
     .predicate('sku = "this-should-never-match-an-e2e"')
-    .value(randomValue);
+    .value(randomValue as unknown as never);
 };
 
 export default withPredicate;
