@@ -44,7 +44,7 @@ describe('builder', () => {
         teams: expect.arrayContaining([
           expect.objectContaining({
             id: expect.any(String),
-            name: expect.any(String),
+            name: 'Administrators',
             members: membersAssertion(),
             membersRef: membersRefAssertion(),
           }),

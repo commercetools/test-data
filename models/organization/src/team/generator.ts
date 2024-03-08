@@ -1,14 +1,12 @@
 import { Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { User } from '@commercetools-test-data/user';
-import type { TTeam } from './types';
+import type { TTeam, TTeamRest } from './types';
 
-const generator = Generator<TTeam>({
+const generator = Generator<TTeam | TTeamRest>({
   fields: {
     id: fake((f) => f.string.uuid()),
     name: fake((f) => f.commerce.department()),
-    members: fake(() => [User.random()]),
-    membersRef: fake(() => [Reference.random().typeId('user')]),
+    members: fake(() => [Reference.random().typeId('user')]),
   },
 });
 

@@ -1,62 +1,77 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TTeam, TTeamGraphql } from './types';
+import type { TTeam, TTeamGraphql, TTeamRest } from './types';
 import * as Team from './index';
-
-const membersAssertion = (args?: { isGraphql: boolean }) =>
-  expect.arrayContaining([
-    expect.objectContaining({
-      id: expect.any(String),
-      version: expect.any(Number),
-      email: expect.any(String),
-      lowercaseEmail: expect.any(String),
-      firstName: expect.any(String),
-      lastName: expect.any(String),
-      language: ['en'],
-      numberFormat: ['en'],
-      businessRole: expect.any(String),
-      createdAt: expect.any(String),
-      lastModifiedAt: expect.any(String),
-      lastLoginAt: expect.any(String),
-      locked: false,
-      ...(args?.isGraphql ? { __typename: 'User' } : {}),
-    }),
-  ]);
-
-const membersRefAssertion = (args?: { isGraphql: boolean }) =>
-  expect.arrayContaining([
-    expect.objectContaining({
-      id: expect.any(String),
-      typeId: 'user',
-      ...(args?.isGraphql ? { __typename: 'Reference' } : {}),
-    }),
-  ]);
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TTeam, TTeam>(
+    ...createBuilderSpec<TTeam | TTeamRest, TTeamRest>(
       'default',
       Team.random().name('foo'),
       expect.objectContaining({
         id: expect.any(String),
         name: 'foo',
-        members: membersAssertion(),
-        membersRef: membersRefAssertion(),
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+          }),
+        ]),
       })
     )
   );
 
   it(
-    ...createBuilderSpec<TTeam, TTeamGraphql>(
+    ...createBuilderSpec<TTeam | TTeamRest, TTeamRest>(
+      'rest',
+      Team.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        name: expect.any(String),
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+          }),
+        ]),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TTeam | TTeamRest, TTeamGraphql>(
       'graphql',
       Team.random(),
       expect.objectContaining({
         __typename: 'Team',
         id: expect.any(String),
         name: expect.any(String),
-        members: membersAssertion({ isGraphql: true }),
-        membersRef: membersRefAssertion({ isGraphql: true }),
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            version: expect.any(Number),
+            email: expect.any(String),
+            lowercaseEmail: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+            language: ['en'],
+            numberFormat: ['en'],
+            businessRole: expect.any(String),
+            createdAt: expect.any(String),
+            lastModifiedAt: expect.any(String),
+            lastLoginAt: expect.any(String),
+            locked: false,
+            __typename: 'User',
+          }),
+        ]),
+        membersRef: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+            __typename: 'Reference',
+          }),
+        ]),
       })
     )
   );

@@ -12,7 +12,7 @@ const generator = Generator<TOrganization>({
     version: sequence(),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
-    teams: fake(() => [Team.random()]),
+    teams: fake(() => [Team.random().name('Administrators')]),
   },
 });
 
