@@ -1,5 +1,14 @@
 # @commercetools-test-data/zone
 
+## 7.2.13
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.13
+  - @commercetools-test-data/commons@7.2.13
+  - @commercetools-test-data/utils@7.2.13
+
 ## 7.2.12
 
 ### Patch Changes

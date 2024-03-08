@@ -1,5 +1,16 @@
 # @commercetools-test-data/user
 
+## 7.2.13
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.2.13
+  - @commercetools-test-data/graphql-types@7.2.13
+  - @commercetools-test-data/commons@7.2.13
+  - @commercetools-test-data/project@7.2.13
+  - @commercetools-test-data/utils@7.2.13
+
 ## 7.2.12
 
 ### Patch Changes
