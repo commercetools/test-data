@@ -42,7 +42,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-red",
+            "sku": "n123-qr-2015",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-blue",
+            "sku": "n123-qr-2019",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-green",
+            "sku": "n123-qr-2023",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -180,7 +180,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-red",
+            "sku": "n123-qr-2015",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -201,7 +201,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-blue",
+            "sku": "n123-qr-2019",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -222,7 +222,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "zz456-st-green",
+            "sku": "n123-qr-2023",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",

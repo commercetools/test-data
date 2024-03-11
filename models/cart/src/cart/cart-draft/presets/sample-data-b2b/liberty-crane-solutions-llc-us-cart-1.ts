@@ -33,14 +33,14 @@ const customer = CustomerDraft.presets.sampleDataB2B
 const address =
   AddressDraft.presets.sampleDataB2B.libertyCraneSolutionsLlcUsNc1Address();
 
-const fff456St01 = ProductVariantDraft.presets.sampleDataB2B
-  .fff456St01()
+const a789Bc01 = ProductVariantDraft.presets.sampleDataB2B
+  .a789Bc01()
   .build<TProductVariantDraft>();
-const fff456St02 = ProductVariantDraft.presets.sampleDataB2B
-  .fff456St02()
+const a789Bc02 = ProductVariantDraft.presets.sampleDataB2B
+  .a789Bc02()
   .build<TProductVariantDraft>();
-const fff456St03 = ProductVariantDraft.presets.sampleDataB2B
-  .fff456St03()
+const a789Bc03 = ProductVariantDraft.presets.sampleDataB2B
+  .a789Bc03()
   .build<TProductVariantDraft>();
 
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
@@ -77,7 +77,7 @@ const libertyCraneSolutionsLlcUsCart1 = (
     .lineItems([
       LineItemDraft.presets
         .empty()
-        .sku(fff456St01.sku)
+        .sku(a789Bc01.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -87,7 +87,7 @@ const libertyCraneSolutionsLlcUsCart1 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(fff456St02.sku)
+        .sku(a789Bc02.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -97,7 +97,7 @@ const libertyCraneSolutionsLlcUsCart1 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(fff456St03.sku)
+        .sku(a789Bc03.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)

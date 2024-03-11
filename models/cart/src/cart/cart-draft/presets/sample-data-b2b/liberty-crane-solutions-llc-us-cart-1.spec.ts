@@ -42,7 +42,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-red",
+            "sku": "a789-bc-2015",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-blue",
+            "sku": "a789-bc-2019",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-green",
+            "sku": "a789-bc-2023",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -180,7 +180,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-red",
+            "sku": "a789-bc-2015",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -201,7 +201,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-blue",
+            "sku": "a789-bc-2019",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -222,7 +222,7 @@ describe(`with libertyCraneSolutionsLlcUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "fff456-st-green",
+            "sku": "a789-bc-2023",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",

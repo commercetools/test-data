@@ -33,14 +33,14 @@ const customer = CustomerDraft.presets.sampleDataB2B
 const address =
   AddressDraft.presets.sampleDataB2B.eagleHeavyLiftTechnologiesIncUsNy1Address();
 
-const yy123Qr01 = ProductVariantDraft.presets.sampleDataB2B
-  .yy123Qr01()
+const x456Yz01 = ProductVariantDraft.presets.sampleDataB2B
+  .x456Yz01()
   .build<TProductVariantDraft>();
-const yy123Qr02 = ProductVariantDraft.presets.sampleDataB2B
-  .yy123Qr02()
+const x456Yz02 = ProductVariantDraft.presets.sampleDataB2B
+  .x456Yz02()
   .build<TProductVariantDraft>();
-const yy123Qr03 = ProductVariantDraft.presets.sampleDataB2B
-  .yy123Qr03()
+const x456Yz03 = ProductVariantDraft.presets.sampleDataB2B
+  .x456Yz03()
   .build<TProductVariantDraft>();
 
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
@@ -77,7 +77,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
     .lineItems([
       LineItemDraft.presets
         .empty()
-        .sku(yy123Qr01.sku)
+        .sku(x456Yz01.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -87,7 +87,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(yy123Qr02.sku)
+        .sku(x456Yz02.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -97,7 +97,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(yy123Qr03.sku)
+        .sku(x456Yz03.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
