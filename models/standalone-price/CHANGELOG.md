@@ -1,5 +1,20 @@
 # @commercetools-test-data/standalone-price
 
+## 7.3.0
+
+### Minor Changes
+
+- [#528](https://github.com/commercetools/test-data/pull/528) [`92e57eb`](https://github.com/commercetools/test-data/commit/92e57eb577ab813685e89225c67c11040a3ea19c) Thanks [@NickDevG](https://github.com/NickDevG)! - Reduce B2B sample data
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.3.0
+  - @commercetools-test-data/channel@7.3.0
+  - @commercetools-test-data/commons@7.3.0
+  - @commercetools-test-data/customer-group@7.3.0
+  - @commercetools-test-data/utils@7.3.0
+
 ## 7.2.13
 
 ### Patch Changes

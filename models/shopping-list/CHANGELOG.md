@@ -1,5 +1,14 @@
 # @commercetools-test-data/shopping-list
 
+## 7.3.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.3.0
+  - @commercetools-test-data/commons@7.3.0
+  - @commercetools-test-data/utils@7.3.0
+
 ## 7.2.13
 
 ### Patch Changes
