@@ -1,10 +1,10 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateTeamBuilder, TTeam, TTeamRest } from './types';
+import type { TCreateTeamBuilder, TTeam } from './types';
 
 const Model: TCreateTeamBuilder = () =>
-  Builder<TTeam | TTeamRest>({
+  Builder<TTeam>({
     generator,
     transformers,
   });
