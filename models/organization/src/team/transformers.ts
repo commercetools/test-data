@@ -1,13 +1,13 @@
 import { Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import { User } from '@commercetools-test-data/user';
-import type { TTeam, TTeamGraphql, TTeamRest } from './types';
+import type { TTeam, TTeamGraphql } from './types';
 
 const transformers = {
-  default: Transformer<TTeamRest, TTeamRest>('default', {
+  default: Transformer<TTeam, TTeam>('default', {
     buildFields: ['members'],
   }),
-  rest: Transformer<TTeamRest, TTeamRest>('rest', {
+  rest: Transformer<TTeam, TTeam>('rest', {
     buildFields: ['members'],
   }),
   graphql: Transformer<TTeam, TTeamGraphql>('graphql', {
