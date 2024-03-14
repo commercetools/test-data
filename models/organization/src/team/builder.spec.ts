@@ -1,12 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TTeam, TTeamGraphql, TTeamRest } from './types';
+import type { TTeam, TTeamGraphql } from './types';
 import * as Team from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TTeam | TTeamRest, TTeamRest>(
+    ...createBuilderSpec<TTeam, TTeam>(
       'default',
       Team.random().name('foo'),
       expect.objectContaining({
@@ -23,7 +23,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TTeam | TTeamRest, TTeamRest>(
+    ...createBuilderSpec<TTeam, TTeam>(
       'rest',
       Team.random(),
       expect.objectContaining({
@@ -40,7 +40,7 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TTeam | TTeamRest, TTeamGraphql>(
+    ...createBuilderSpec<TTeam, TTeamGraphql>(
       'graphql',
       Team.random(),
       expect.objectContaining({
