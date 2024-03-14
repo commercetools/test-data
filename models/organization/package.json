@@ -1,0 +1,29 @@
+{
+  "name": "@commercetools-test-data/organization",
+  "version": "7.2.10",
+  "description": "Data model for commercetools API Organization",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/organization"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-organization.cjs.js",
+  "module": "dist/commercetools-test-data-organization.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "7.2.10",
+    "@commercetools-test-data/core": "7.2.10",
+    "@commercetools-test-data/graphql-types": "7.2.10",
+    "@commercetools-test-data/user": "7.2.10",
+    "@commercetools-test-data/utils": "7.2.10",
+    "@commercetools/platform-sdk": "^7.0.0"
+  }
+}
