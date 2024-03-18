@@ -1,10 +1,10 @@
-import type { TDivisionDraft } from '../../../types';
+import type { TCompanyDraft } from '../../../types';
 import lifttechSolutionsLtdDe from './lifttech-solutions-ltd-de';
 
 describe(`with lifttechSolutionsLtdDe preset`, () => {
   it(`should return a lifttechSolutionsLtdDe preset`, () => {
     const lifttechSolutionsLtdDePreset =
-      lifttechSolutionsLtdDe().build<TDivisionDraft>();
+      lifttechSolutionsLtdDe().build<TCompanyDraft>();
     expect(lifttechSolutionsLtdDePreset).toMatchInlineSnapshot(`
       {
         "addresses": [
@@ -37,8 +37,23 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
             "title": undefined,
           },
         ],
-        "associateMode": "ExplicitAndFromParent",
+        "associateMode": "Explicit",
         "associates": [
+          {
+            "associateRoleAssignments": [
+              {
+                "associateRole": {
+                  "key": "admin",
+                  "typeId": "associate-role",
+                },
+                "inheritance": "Enabled",
+              },
+            ],
+            "customer": {
+              "key": "oliver-smith",
+              "typeId": "customer",
+            },
+          },
           {
             "associateRoleAssignments": [
               {
@@ -50,7 +65,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
               },
             ],
             "customer": {
-              "key": "lukas-schmidt",
+              "key": "amelia-jones",
               "typeId": "customer",
             },
           },
@@ -65,7 +80,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
               },
             ],
             "customer": {
-              "key": "sophie-mueller",
+              "key": "william-taylor",
               "typeId": "customer",
             },
           },
@@ -77,22 +92,18 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-de",
         "name": "LiftTech Lösungen GmbH",
-        "parentUnit": {
-          "key": "lifttech-solutions-ltd",
-          "typeId": "business-unit",
-        },
         "shippingAddresses": undefined,
         "status": undefined,
-        "storeMode": "FromParent",
+        "storeMode": "Explicit",
         "stores": undefined,
-        "unitType": "Division",
+        "unitType": "Company",
       }
     `);
   });
 
   it(`should return a lifttechSolutionsLtdDe preset when built for graphql`, () => {
     const lifttechSolutionsLtdDePresetGraphql =
-      lifttechSolutionsLtdDe().buildGraphql<TDivisionDraft>();
+      lifttechSolutionsLtdDe().buildGraphql<TCompanyDraft>();
     expect(lifttechSolutionsLtdDePresetGraphql).toMatchInlineSnapshot(`
       {
         "addresses": [
@@ -125,8 +136,23 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
             "title": undefined,
           },
         ],
-        "associateMode": "ExplicitAndFromParent",
+        "associateMode": "Explicit",
         "associates": [
+          {
+            "associateRoleAssignments": [
+              {
+                "associateRole": {
+                  "key": "admin",
+                  "typeId": "associate-role",
+                },
+                "inheritance": "Enabled",
+              },
+            ],
+            "customer": {
+              "key": "oliver-smith",
+              "typeId": "customer",
+            },
+          },
           {
             "associateRoleAssignments": [
               {
@@ -138,7 +164,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
               },
             ],
             "customer": {
-              "key": "lukas-schmidt",
+              "key": "amelia-jones",
               "typeId": "customer",
             },
           },
@@ -153,7 +179,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
               },
             ],
             "customer": {
-              "key": "sophie-mueller",
+              "key": "william-taylor",
               "typeId": "customer",
             },
           },
@@ -165,14 +191,10 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
         "defaultShippingAddress": 0,
         "key": "lifttech-solutions-ltd-de",
         "name": "LiftTech Lösungen GmbH",
-        "parentUnit": {
-          "key": "lifttech-solutions-ltd",
-          "typeId": "business-unit",
-        },
         "shippingAddresses": undefined,
-        "storeMode": "FromParent",
+        "storeMode": "Explicit",
         "stores": undefined,
-        "unitType": "Division",
+        "unitType": "Company",
       }
     `);
   });

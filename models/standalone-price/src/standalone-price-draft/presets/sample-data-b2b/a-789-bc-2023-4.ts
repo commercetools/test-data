@@ -1,17 +1,29 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
 import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
 import { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
+
+const channel = ChannelDraft.presets.sampleDataB2B
+  .deFrUk()
+  .build<TChannelDraft>();
+const variant = ProductVariantDraft.presets.sampleDataB2B
+  .a789Bc03()
+  .build<TProductVariantDraft>();
 
 const a789Bc20234 = (): TStandalonePriceDraftBuilder =>
   StandalonePriceDraft.presets
     .empty()
     .key('a789-bc-2023-4')
-    .sku('a789-bc-2023')
+    .sku(variant.sku!)
     .value(MoneyDraft.random().currencyCode('GBP').centAmount(1250000))
-    .channel(KeyReferenceDraft.presets.channel().key('de-fr-uk'))
+    .channel(KeyReferenceDraft.presets.channel().key(channel.key!))
     .active(true);
 
 export default a789Bc20234;
