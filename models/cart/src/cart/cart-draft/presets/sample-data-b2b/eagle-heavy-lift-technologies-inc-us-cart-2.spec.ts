@@ -32,7 +32,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -53,7 +53,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -74,7 +74,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -130,7 +130,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "key": "us-large-customers",
+          "key": "default-store",
           "typeId": "store",
         },
         "taxCalculationMode": undefined,
@@ -171,7 +171,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -192,7 +192,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -213,7 +213,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "us-large-customers",
+              "key": "default-channel",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -269,7 +269,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "key": "us-large-customers",
+          "key": "default-store",
           "typeId": "store",
         },
         "taxCalculationMode": undefined,
