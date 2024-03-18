@@ -24,6 +24,7 @@
     "@commercetools-test-data/utils": "7.3.0",
     "@commercetools-test-data/customer-group": "7.3.0",
     "@commercetools-test-data/channel": "7.3.0",
+    "@commercetools-test-data/product": "7.3.0",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^7.4.0"
   }
