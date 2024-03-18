@@ -5,24 +5,24 @@ import {
 } from '@commercetools-test-data/staged-quote';
 import { QuoteDraft, type TQuoteDraftBuilder } from '../../../index';
 
-const lifttechSolutionsLtdStagedQuote1StagedQuote =
+const lifttechSolutionsLtdDeStagedQuote1StagedQuote =
   StagedQuoteDraft.presets.sampleDataB2B
-    .lifttechSolutionsLtdStagedQuote1(1)
+    .lifttechSolutionsLtdDeStagedQuote1(1)
     .build<TStagedQuoteDraft>();
 
-const lifttechSolutionsLtdQuote1 = (
+const lifttechSolutionsLtdDeQuote12 = (
   stagedQuoteVersion: number
 ): TQuoteDraftBuilder => {
   return QuoteDraft.presets
     .empty()
-    .key('lifttech-solutions-ltd-quote-1')
+    .key('lifttech-solutions-ltd-de-quote-1-2')
     .stagedQuote(
       KeyReferenceDraft.presets
         .stagedQuote()
-        .key(lifttechSolutionsLtdStagedQuote1StagedQuote.key!)
+        .key(lifttechSolutionsLtdDeStagedQuote1StagedQuote.key!)
     )
     .stagedQuoteVersion(stagedQuoteVersion)
-    .stagedQuoteStateToSent(true);
+    .stagedQuoteStateToSent(false);
 };
 
-export default lifttechSolutionsLtdQuote1;
+export default lifttechSolutionsLtdDeQuote12;

@@ -1,6 +1,6 @@
 import {
-  DivisionDraft,
-  type TDivisionDraft,
+  CompanyDraft,
+  type TCompanyDraft,
 } from '@commercetools-test-data/business-unit';
 import {
   ChannelDraft,
@@ -49,9 +49,9 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
 
 const store = StoreDraft.presets.sampleDataB2B.deFrUk().build<TStoreDraft>();
 
-const businessUnit = DivisionDraft.presets.sampleDataB2B
+const businessUnit = CompanyDraft.presets.sampleDataB2B
   .lifttechSolutionsLtdDe()
-  .build<TDivisionDraft>();
+  .build<TCompanyDraft>();
 
 const distributionChannel = ChannelDraft.presets.sampleDataB2B
   .deFrUk()
