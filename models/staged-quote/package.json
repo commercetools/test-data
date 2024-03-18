@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/staged-quote",
-  "version": "7.3.0",
+  "version": "7.4.0",
   "description": "Data model for commercetools API StagedQuote",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,15 +19,15 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/business-unit": "7.3.0",
-    "@commercetools-test-data/cart": "7.3.0",
-    "@commercetools-test-data/commons": "7.3.0",
-    "@commercetools-test-data/core": "7.3.0",
-    "@commercetools-test-data/customer": "7.3.0",
-    "@commercetools-test-data/customer-group": "7.3.0",
-    "@commercetools-test-data/quote-request": "7.3.0",
-    "@commercetools-test-data/store": "7.3.0",
-    "@commercetools-test-data/utils": "7.3.0",
+    "@commercetools-test-data/business-unit": "7.4.0",
+    "@commercetools-test-data/cart": "7.4.0",
+    "@commercetools-test-data/commons": "7.4.0",
+    "@commercetools-test-data/core": "7.4.0",
+    "@commercetools-test-data/customer": "7.4.0",
+    "@commercetools-test-data/customer-group": "7.4.0",
+    "@commercetools-test-data/quote-request": "7.4.0",
+    "@commercetools-test-data/store": "7.4.0",
+    "@commercetools-test-data/utils": "7.4.0",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"
   }

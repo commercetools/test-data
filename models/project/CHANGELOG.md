@@ -1,5 +1,13 @@
 # @commercetools-test-data/project
 
+## 7.4.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.4.0
+  - @commercetools-test-data/utils@7.4.0
+
 ## 7.3.0
 
 ### Patch Changes
