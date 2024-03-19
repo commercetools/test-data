@@ -8,12 +8,16 @@ import lifttechSolutionsLtdEsStagedQuote1 from './lifttech-solutions-ltd-es-stag
 import lifttechSolutionsLtdEsStagedQuote12 from './lifttech-solutions-ltd-es-staged-quote-1-2';
 import lifttechSolutionsLtdFrStagedQuote1 from './lifttech-solutions-ltd-fr-staged-quote-1';
 import lifttechSolutionsLtdFrStagedQuote12 from './lifttech-solutions-ltd-fr-staged-quote-1-2';
+import lifttechSolutionsLtdStagedQuote1 from './lifttech-solutions-ltd-staged-quote-1';
+import lifttechSolutionsLtdStagedQuote12 from './lifttech-solutions-ltd-staged-quote-1-2';
 
 const presets = {
   eagleHeavyLiftTechnologiesIncUsStagedQuote1,
   eagleHeavyLiftTechnologiesIncUsStagedQuote12,
   libertyCraneSolutionsLlcUsStagedQuote1,
   libertyCraneSolutionsLlcUsStagedQuote12,
+  lifttechSolutionsLtdStagedQuote1,
+  lifttechSolutionsLtdStagedQuote12,
   lifttechSolutionsLtdDeStagedQuote1,
   lifttechSolutionsLtdDeStagedQuote12,
   lifttechSolutionsLtdFrStagedQuote1,

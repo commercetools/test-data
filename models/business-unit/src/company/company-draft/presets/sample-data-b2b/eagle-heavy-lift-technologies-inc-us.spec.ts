@@ -97,7 +97,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUs preset`, () => {
         "storeMode": "Explicit",
         "stores": [
           {
-            "key": "default-store",
+            "key": "us-large-customers",
             "typeId": "store",
           },
         ],
@@ -200,7 +200,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUs preset`, () => {
         "storeMode": "Explicit",
         "stores": [
           {
-            "key": "default-store",
+            "key": "us-large-customers",
             "typeId": "store",
           },
         ],

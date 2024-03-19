@@ -78,7 +78,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
         "parentUnit": {
-          "key": "lifttech-solutions-ltd-de",
+          "key": "lifttech-solutions-ltd",
           "typeId": "business-unit",
         },
         "shippingAddresses": undefined,
@@ -171,7 +171,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "key": "lifttech-solutions-ltd-es",
         "name": "LiftTech Soluciones S.L.",
         "parentUnit": {
-          "key": "lifttech-solutions-ltd-de",
+          "key": "lifttech-solutions-ltd",
           "typeId": "business-unit",
         },
         "shippingAddresses": undefined,

@@ -48,7 +48,7 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
   .build<TShippingMethodDraft>();
 
 const store = StoreDraft.presets.sampleDataB2B
-  .defaultStore()
+  .usLargeCustomers()
   .build<TStoreDraft>();
 
 const businessUnit = CompanyDraft.presets.sampleDataB2B
@@ -56,7 +56,7 @@ const businessUnit = CompanyDraft.presets.sampleDataB2B
   .build<TCompanyDraft>();
 
 const distributionChannel = ChannelDraft.presets.sampleDataB2B
-  .defaultChannel()
+  .usLargeCustomers()
   .build<TChannelDraft>();
 const supplyChannel = ChannelDraft.presets.sampleDataB2B
   .usWarehouse()

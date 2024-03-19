@@ -1,29 +1,17 @@
-import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
 import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
-import {
-  ProductVariantDraft,
-  type TProductVariantDraft,
-} from '@commercetools-test-data/product';
 import { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
-
-const channel = ChannelDraft.presets.sampleDataB2B
-  .defaultChannel()
-  .build<TChannelDraft>();
-const variant = ProductVariantDraft.presets.sampleDataB2B
-  .ww567Yz03()
-  .build<TProductVariantDraft>();
 
 const ww567YzGreen3 = (): TStandalonePriceDraftBuilder =>
   StandalonePriceDraft.presets
     .empty()
     .key('ww567-yz-green-3')
-    .sku(variant.sku!)
+    .sku('ww567-yz-green')
     .value(MoneyDraft.random().currencyCode('USD').centAmount(6930000))
-    .channel(KeyReferenceDraft.presets.channel().key(channel.key!))
+    .channel(KeyReferenceDraft.presets.channel().key('default-channel'))
     .active(true);
 
 export default ww567YzGreen3;
