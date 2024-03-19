@@ -42,7 +42,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2015",
+            "sku": "yy123-qr-red",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2019",
+            "sku": "yy123-qr-blue",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2023",
+            "sku": "yy123-qr-green",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -181,7 +181,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2015",
+            "sku": "yy123-qr-red",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -202,7 +202,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2019",
+            "sku": "yy123-qr-blue",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -223,7 +223,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "x456-yz-2023",
+            "sku": "yy123-qr-green",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",

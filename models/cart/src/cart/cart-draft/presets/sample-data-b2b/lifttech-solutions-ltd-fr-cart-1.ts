@@ -33,14 +33,14 @@ const customer = CustomerDraft.presets.sampleDataB2B
 const address =
   AddressDraft.presets.sampleDataB2B.lifttechSolutionsLtdFrAddress();
 
-const f890Op01 = ProductVariantDraft.presets.sampleDataB2B
-  .f890Op01()
+const iii567Yz01 = ProductVariantDraft.presets.sampleDataB2B
+  .iii567Yz01()
   .build<TProductVariantDraft>();
-const f890Op02 = ProductVariantDraft.presets.sampleDataB2B
-  .f890Op02()
+const iii567Yz02 = ProductVariantDraft.presets.sampleDataB2B
+  .iii567Yz02()
   .build<TProductVariantDraft>();
-const f890Op03 = ProductVariantDraft.presets.sampleDataB2B
-  .f890Op03()
+const iii567Yz03 = ProductVariantDraft.presets.sampleDataB2B
+  .iii567Yz03()
   .build<TProductVariantDraft>();
 
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
@@ -73,7 +73,7 @@ const lifttechSolutionsLtdFrCart1 = (customerId?: string): TCartDraftBuilder =>
     .lineItems([
       LineItemDraft.presets
         .empty()
-        .sku(f890Op01.sku)
+        .sku(iii567Yz01.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -83,7 +83,7 @@ const lifttechSolutionsLtdFrCart1 = (customerId?: string): TCartDraftBuilder =>
         ),
       LineItemDraft.presets
         .empty()
-        .sku(f890Op02.sku)
+        .sku(iii567Yz02.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -93,7 +93,7 @@ const lifttechSolutionsLtdFrCart1 = (customerId?: string): TCartDraftBuilder =>
         ),
       LineItemDraft.presets
         .empty()
-        .sku(f890Op03.sku)
+        .sku(iii567Yz03.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)

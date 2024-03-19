@@ -42,7 +42,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2015",
+            "sku": "aaa789-uv-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2019",
+            "sku": "aaa789-uv-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2023",
+            "sku": "aaa789-uv-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -180,7 +180,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2015",
+            "sku": "aaa789-uv-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -201,7 +201,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2019",
+            "sku": "aaa789-uv-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -222,7 +222,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "c789-uv-2023",
+            "sku": "aaa789-uv-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",

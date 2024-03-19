@@ -42,7 +42,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2015",
+            "sku": "hhh234-wx-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2019",
+            "sku": "hhh234-wx-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2023",
+            "sku": "hhh234-wx-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -180,7 +180,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2015",
+            "sku": "hhh234-wx-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -201,7 +201,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2019",
+            "sku": "hhh234-wx-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -222,7 +222,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "d234-wx-2023",
+            "sku": "hhh234-wx-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",

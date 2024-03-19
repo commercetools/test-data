@@ -1,10 +1,16 @@
+import airportGraders from './airport-graders';
+import amphibiousExcavators from './amphibious-excavators';
 import articulatedDumpTrucks from './articulated-dump-trucks';
+import blastholeDrills from './blasthole-drills';
 import constructionLoaders from './construction-loaders';
 import crawlerCranes from './crawler-cranes';
 import deepMiningExcavators from './deep-mining-excavators';
+import demolitionHammers from './demolition-hammers';
 import dumpTrucks from './dump-trucks';
 import earthmovingBulldozers from './earthmoving-bulldozers';
 import excavators from './excavators';
+import explorationDrills from './exploration-drills';
+import fineGraders from './fine-graders';
 import heavyDutyConstructionCranes from './heavy-duty-construction-cranes';
 import heavyDutySoilCompactorsRollers from './heavy-duty-soil-compactors-rollers';
 import highCapacityFrontEndLoaders from './high-capacity-front-end-loaders';
@@ -18,10 +24,14 @@ import largeWheelExcavators from './large-wheel-excavators';
 import logLoaders from './log-loaders';
 import mobileCranes from './mobile-cranes';
 import offHighwayDumpTrucks from './off-highway-dump-trucks';
+import pilingHammers from './piling-hammers';
 import pneumaticRollers from './pneumatic-rollers';
+import productionDrills from './production-drills';
 import quarryLoaders from './quarry-loaders';
+import quarryingHammers from './quarrying-hammers';
 import railroadWheeledExcavators from './railroad-wheeled-excavators';
 import rigidDumpTrucks from './rigid-dump-trucks';
+import roadGraders from './road-graders';
 import spareParts from './spare-parts';
 import surfaceMiningExcavators from './surface-mining-excavators';
 import swampBulldozers from './swamp-bulldozers';
@@ -44,6 +54,7 @@ const presets = {
   largeScaleMiningExcavators,
   surfaceMiningExcavators,
   deepMiningExcavators,
+  amphibiousExcavators,
   largeWheelExcavators,
   wheeledExcavatorsForConstruction,
   wheeledExcavatorsForMining,
@@ -57,12 +68,21 @@ const presets = {
   articulatedDumpTrucks,
   rigidDumpTrucks,
   offHighwayDumpTrucks,
+  roadGraders,
+  airportGraders,
+  fineGraders,
   vibratorySoilCompactors,
   pneumaticRollers,
   landfillCompactors,
   towerCranes,
   mobileCranes,
   crawlerCranes,
+  blastholeDrills,
+  explorationDrills,
+  productionDrills,
+  demolitionHammers,
+  quarryingHammers,
+  pilingHammers,
   spareParts,
 };
 

@@ -42,7 +42,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2015",
+            "sku": "ccc567-yz-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -63,7 +63,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2019",
+            "sku": "ccc567-yz-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -84,7 +84,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2023",
+            "sku": "ccc567-yz-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -180,7 +180,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2015",
+            "sku": "ccc567-yz-red",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -201,7 +201,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2019",
+            "sku": "ccc567-yz-blue",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
@@ -222,7 +222,7 @@ describe(`with lifttechSolutionsLtdFrCart2 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "u123-qr-2023",
+            "sku": "ccc567-yz-green",
             "supplyChannel": {
               "key": "eu-warehouse",
               "typeId": "channel",
