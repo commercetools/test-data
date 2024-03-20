@@ -1,5 +1,15 @@
 # @commercetools-test-data/customer
 
+## 7.5.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.5.0
+  - @commercetools-test-data/commons@7.5.0
+  - @commercetools-test-data/customer-group@7.5.0
+  - @commercetools-test-data/utils@7.5.0
+
 ## 7.4.0
 
 ### Patch Changes

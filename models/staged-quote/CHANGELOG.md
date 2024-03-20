@@ -1,5 +1,24 @@
 # @commercetools-test-data/staged-quote
 
+## 7.5.0
+
+### Minor Changes
+
+- [#532](https://github.com/commercetools/test-data/pull/532) [`8c7e851`](https://github.com/commercetools/test-data/commit/8c7e851eec46668a84d7d748125dda67072e42fc) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Revert B2B dataset back to original size
+
+### Patch Changes
+
+- Updated dependencies [[`8c7e851`](https://github.com/commercetools/test-data/commit/8c7e851eec46668a84d7d748125dda67072e42fc)]:
+  - @commercetools-test-data/business-unit@7.5.0
+  - @commercetools-test-data/quote-request@7.5.0
+  - @commercetools-test-data/store@7.5.0
+  - @commercetools-test-data/cart@7.5.0
+  - @commercetools-test-data/core@7.5.0
+  - @commercetools-test-data/commons@7.5.0
+  - @commercetools-test-data/customer@7.5.0
+  - @commercetools-test-data/customer-group@7.5.0
+  - @commercetools-test-data/utils@7.5.0
+
 ## 7.4.0
 
 ### Minor Changes
