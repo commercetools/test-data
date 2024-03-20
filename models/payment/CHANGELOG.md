@@ -1,5 +1,16 @@
 # @commercetools-test-data/payment
 
+## 7.5.0
+
+### Patch Changes
+
+- Updated dependencies [[`8c7e851`](https://github.com/commercetools/test-data/commit/8c7e851eec46668a84d7d748125dda67072e42fc)]:
+  - @commercetools-test-data/order@7.5.0
+  - @commercetools-test-data/core@7.5.0
+  - @commercetools-test-data/commons@7.5.0
+  - @commercetools-test-data/customer@7.5.0
+  - @commercetools-test-data/utils@7.5.0
+
 ## 7.4.0
 
 ### Patch Changes
