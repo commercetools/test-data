@@ -33,14 +33,14 @@ const customer = CustomerDraft.presets.sampleDataB2B
 const address =
   AddressDraft.presets.sampleDataB2B.eagleHeavyLiftTechnologiesIncUsNy1Address();
 
-const x456Yz01 = ProductVariantDraft.presets.sampleDataB2B
-  .x456Yz01()
+const yy123Qr01 = ProductVariantDraft.presets.sampleDataB2B
+  .yy123Qr01()
   .build<TProductVariantDraft>();
-const x456Yz02 = ProductVariantDraft.presets.sampleDataB2B
-  .x456Yz02()
+const yy123Qr02 = ProductVariantDraft.presets.sampleDataB2B
+  .yy123Qr02()
   .build<TProductVariantDraft>();
-const x456Yz03 = ProductVariantDraft.presets.sampleDataB2B
-  .x456Yz03()
+const yy123Qr03 = ProductVariantDraft.presets.sampleDataB2B
+  .yy123Qr03()
   .build<TProductVariantDraft>();
 
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
@@ -48,7 +48,7 @@ const shippingMethod = ShippingMethodDraft.presets.sampleDataB2B
   .build<TShippingMethodDraft>();
 
 const store = StoreDraft.presets.sampleDataB2B
-  .defaultStore()
+  .usLargeCustomers()
   .build<TStoreDraft>();
 
 const businessUnit = CompanyDraft.presets.sampleDataB2B
@@ -56,7 +56,7 @@ const businessUnit = CompanyDraft.presets.sampleDataB2B
   .build<TCompanyDraft>();
 
 const distributionChannel = ChannelDraft.presets.sampleDataB2B
-  .defaultChannel()
+  .usLargeCustomers()
   .build<TChannelDraft>();
 const supplyChannel = ChannelDraft.presets.sampleDataB2B
   .usWarehouse()
@@ -77,7 +77,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
     .lineItems([
       LineItemDraft.presets
         .empty()
-        .sku(x456Yz01.sku)
+        .sku(yy123Qr01.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -87,7 +87,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(x456Yz02.sku)
+        .sku(yy123Qr02.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -97,7 +97,7 @@ const eagleHeavyLiftTechnologiesIncUsCart2 = (
         ),
       LineItemDraft.presets
         .empty()
-        .sku(x456Yz03.sku)
+        .sku(yy123Qr03.sku)
         .quantity(1)
         .distributionChannel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)

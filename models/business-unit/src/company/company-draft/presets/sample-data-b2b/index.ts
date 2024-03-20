@@ -1,11 +1,11 @@
 import eagleHeavyLiftTechnologiesIncUs from './eagle-heavy-lift-technologies-inc-us';
 import libertyCraneSolutionsLlcUs from './liberty-crane-solutions-llc-us';
-import lifttechSolutionsLtdDe from './lifttech-solutions-ltd-de';
+import lifttechSolutionsLtd from './lifttech-solutions-ltd';
 
 const presets = {
   eagleHeavyLiftTechnologiesIncUs,
   libertyCraneSolutionsLlcUs,
-  lifttechSolutionsLtdDe,
+  lifttechSolutionsLtd,
 };
 
 export default presets;

@@ -10,7 +10,7 @@ import type { TDivisionDraftBuilder } from '../../../types';
 import * as DivisionDraft from '../../index';
 
 const lifttechSolutionsLtdCompany = CompanyDraft.presets.sampleDataB2B
-  .lifttechSolutionsLtdDe()
+  .lifttechSolutionsLtd()
   .build<TCompanyDraft>();
 
 const spainStore = StoreDraft.presets.sampleDataB2B

@@ -32,7 +32,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -42,7 +42,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2015",
+            "sku": "eee123-qr-red",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -53,7 +53,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -63,7 +63,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2019",
+            "sku": "eee123-qr-blue",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -74,7 +74,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -84,7 +84,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2023",
+            "sku": "eee123-qr-green",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -130,7 +130,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "key": "default-store",
+          "key": "us-large-customers",
           "typeId": "store",
         },
         "taxCalculationMode": undefined,
@@ -171,7 +171,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -181,7 +181,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2015",
+            "sku": "eee123-qr-red",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -192,7 +192,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -202,7 +202,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2019",
+            "sku": "eee123-qr-blue",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -213,7 +213,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "addedAt": undefined,
             "custom": undefined,
             "distributionChannel": {
-              "key": "default-channel",
+              "key": "us-large-customers",
               "typeId": "channel",
             },
             "externalPrice": undefined,
@@ -223,7 +223,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
             "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
-            "sku": "r123-ts-2023",
+            "sku": "eee123-qr-green",
             "supplyChannel": {
               "key": "us-warehouse",
               "typeId": "channel",
@@ -269,7 +269,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
         "shippingMode": undefined,
         "shippingRateInput": undefined,
         "store": {
-          "key": "default-store",
+          "key": "us-large-customers",
           "typeId": "store",
         },
         "taxCalculationMode": undefined,

@@ -1,30 +1,18 @@
-import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
 import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
-import {
-  ProductVariantDraft,
-  type TProductVariantDraft,
-} from '@commercetools-test-data/product';
 import { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
-
-const channel = ChannelDraft.presets.sampleDataB2B
-  .spain()
-  .build<TChannelDraft>();
-const variant = ProductVariantDraft.presets.sampleDataB2B
-  .ss123Qr03()
-  .build<TProductVariantDraft>();
 
 const ss123QrGreen6 = (): TStandalonePriceDraftBuilder =>
   StandalonePriceDraft.presets
     .empty()
     .key('ss123-qr-green-6')
-    .sku(variant.sku!)
+    .sku('ss123-qr-green')
     .value(MoneyDraft.random().currencyCode('EUR').centAmount(2800000))
     .country('ES')
-    .channel(KeyReferenceDraft.presets.channel().key(channel.key!))
+    .channel(KeyReferenceDraft.presets.channel().key('spain'))
     .active(true);
 
 export default ss123QrGreen6;

@@ -1,30 +1,18 @@
-import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
 import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
-import {
-  ProductVariantDraft,
-  type TProductVariantDraft,
-} from '@commercetools-test-data/product';
 import { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
-
-const channel = ChannelDraft.presets.sampleDataB2B
-  .spain()
-  .build<TChannelDraft>();
-const variant = ProductVariantDraft.presets.sampleDataB2B
-  .j234Wx01()
-  .build<TProductVariantDraft>();
 
 const j234Wx20156 = (): TStandalonePriceDraftBuilder =>
   StandalonePriceDraft.presets
     .empty()
     .key('j234-wx-2015-6')
-    .sku(variant.sku!)
+    .sku('j234-wx-2015')
     .value(MoneyDraft.random().currencyCode('EUR').centAmount(880000))
     .country('ES')
-    .channel(KeyReferenceDraft.presets.channel().key(channel.key!))
+    .channel(KeyReferenceDraft.presets.channel().key('spain'))
     .active(true);
 
 export default j234Wx20156;

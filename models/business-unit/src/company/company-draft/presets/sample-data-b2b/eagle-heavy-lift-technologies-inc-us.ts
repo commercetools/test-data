@@ -8,8 +8,8 @@ import { status, storeMode, unitType, associateMode } from '../../../constants';
 import { type TCompanyDraftBuilder } from '../../../types';
 import * as CompanyDraft from '../../index';
 
-const defaultStore = StoreDraft.presets.sampleDataB2B
-  .defaultStore()
+const usLargeCustomersStore = StoreDraft.presets.sampleDataB2B
+  .usLargeCustomers()
   .build<TStoreDraft>();
 
 const eagleHeavyLiftTechnologiesIncUs = (): TCompanyDraftBuilder =>
@@ -20,7 +20,7 @@ const eagleHeavyLiftTechnologiesIncUs = (): TCompanyDraftBuilder =>
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)
-    .stores([KeyReferenceDraft.presets.store().key(defaultStore.key!)])
+    .stores([KeyReferenceDraft.presets.store().key(usLargeCustomersStore.key!)])
     .associates([
       AssociateDraft.presets.sampleDataB2B.jamesSmith(),
       AssociateDraft.presets.sampleDataB2B.emmaJohnson(),
