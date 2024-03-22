@@ -10,6 +10,7 @@ export * from './attribute-plain-enum-value/types';
 export * from './attribute-set-type/types';
 export * from './attribute-reference-type/types';
 export * from './attribute-text-type/types';
+export * from './attribute-nested-type/types';
 export * from './product-type/types';
 
 // Export models
@@ -35,5 +36,6 @@ export * as AttributeReferenceType from './attribute-reference-type';
 export * as AttributeReferenceTypeDraft from './attribute-reference-type/attribute-reference-type-draft';
 export * as AttributeTextType from './attribute-text-type';
 export * as AttributeTextTypeDraft from './attribute-text-type/attribute-text-type-draft';
+export * as AttributeNestedType from './attribute-nested-type';
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';
