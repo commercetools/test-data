@@ -17,6 +17,7 @@ const eagleHeavyLiftTechnologiesIncUs = (): TCompanyDraftBuilder =>
     .empty()
     .key('eagle-heavy-lift-technologies-inc-us')
     .name('Eagle Heavy Lift Technologies Inc.')
+    .contactEmail('info@hlt.com')
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)

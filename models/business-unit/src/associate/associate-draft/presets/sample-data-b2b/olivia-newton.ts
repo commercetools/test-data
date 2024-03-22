@@ -12,18 +12,18 @@ import { associateRoleInheritanceMode } from '../../../../associate-role-assignm
 import { type TAssociateDraftBuilder } from '../../../types';
 import * as AssociateDraft from '../../index';
 
-const oliviaJonesCustomer = CustomerDraft.presets.sampleDataB2B
-  .oliviaJones()
+const oliviaNewtonCustomer = CustomerDraft.presets.sampleDataB2B
+  .oliviaNewton()
   .build<TCustomerDraft>();
 
 const adminAssociateRole = AssociateRoleDraft.presets.sampleDataB2B
   .admin()
   .build<TAssociateRoleDraft>();
 
-const oliviaJones = (): TAssociateDraftBuilder =>
+const oliviaNewton = (): TAssociateDraftBuilder =>
   AssociateDraft.random()
     .customer(
-      KeyReferenceDraft.presets.customer().key(oliviaJonesCustomer.key!)
+      KeyReferenceDraft.presets.customer().key(oliviaNewtonCustomer.key!)
     )
     .associateRoleAssignments([
       AssociateRoleAssignmentDraft.presets
@@ -34,4 +34,4 @@ const oliviaJones = (): TAssociateDraftBuilder =>
         .inheritance(associateRoleInheritanceMode.Disabled),
     ]);
 
-export default oliviaJones;
+export default oliviaNewton;

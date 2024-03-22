@@ -17,6 +17,7 @@ const lifttechSolutionsLtd = (): TCompanyDraftBuilder =>
     .empty()
     .key('lifttech-solutions-ltd')
     .name('LiftTech Solutions Ltd')
+    .contactEmail('info@ltsl.com')
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)

@@ -22,6 +22,7 @@ const lifttechSolutionsLtdEs = (): TDivisionDraftBuilder =>
     .empty()
     .key('lifttech-solutions-ltd-es')
     .name('LiftTech Soluciones S.L.')
+    .contactEmail('info.es@ltsl.com')
     .unitType(unitType.Division)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.ExplicitAndFromParent)

@@ -1,11 +1,11 @@
 import type { TAddressDraft } from '../../../types';
-import oliviaJonesAddress from './olivia-jones-address';
+import oliviaNewtonAddress from './olivia-newton-address';
 
-describe(`with oliviaJonesAddress preset`, () => {
-  it(`should return a oliviaJonesAddress preset`, () => {
-    const oliviaJonesAddressPreset =
-      oliviaJonesAddress().build<TAddressDraft>();
-    expect(oliviaJonesAddressPreset).toMatchInlineSnapshot(`
+describe(`with oliviaNewtonAddress preset`, () => {
+  it(`should return a oliviaNewtonAddress preset`, () => {
+    const oliviaNewtonAddressPreset =
+      oliviaNewtonAddress().build<TAddressDraft>();
+    expect(oliviaNewtonAddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,
@@ -22,7 +22,7 @@ describe(`with oliviaJonesAddress preset`, () => {
         "firstName": "Olivia",
         "id": undefined,
         "key": undefined,
-        "lastName": "Jones",
+        "lastName": "Newton",
         "mobile": undefined,
         "pOBox": undefined,
         "phone": undefined,
@@ -37,10 +37,10 @@ describe(`with oliviaJonesAddress preset`, () => {
     `);
   });
 
-  it(`should return a oliviaJonesAddress preset when built for graphql`, () => {
-    const oliviaJonesAddressPresetGraphql =
-      oliviaJonesAddress().buildGraphql<TAddressDraft>();
-    expect(oliviaJonesAddressPresetGraphql).toMatchInlineSnapshot(`
+  it(`should return a oliviaNewtonAddress preset when built for graphql`, () => {
+    const oliviaNewtonAddressPresetGraphql =
+      oliviaNewtonAddress().buildGraphql<TAddressDraft>();
+    expect(oliviaNewtonAddressPresetGraphql).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
         "additionalStreetInfo": undefined,
@@ -57,7 +57,7 @@ describe(`with oliviaJonesAddress preset`, () => {
         "firstName": "Olivia",
         "id": undefined,
         "key": undefined,
-        "lastName": "Jones",
+        "lastName": "Newton",
         "mobile": undefined,
         "pOBox": undefined,
         "phone": undefined,

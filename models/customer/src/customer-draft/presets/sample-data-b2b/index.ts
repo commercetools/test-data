@@ -8,7 +8,7 @@ import lucasDubois from './lucas-dubois';
 import lukasSchmidt from './lukas-schmidt';
 import michaelWilliams from './michael-williams';
 import oliverSmith from './oliver-smith';
-import oliviaJones from './olivia-jones';
+import oliviaNewton from './olivia-newton';
 import sofiaLopez from './sofia-lopez';
 import sophieMueller from './sophie-mueller';
 import williamDavis from './william-davis';
@@ -18,7 +18,7 @@ const presets = {
   jamesSmith,
   emmaJohnson,
   michaelWilliams,
-  oliviaJones,
+  oliviaNewton,
   williamDavis,
   avaBrown,
   oliverSmith,
