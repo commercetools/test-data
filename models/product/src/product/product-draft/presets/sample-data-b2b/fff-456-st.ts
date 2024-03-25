@@ -58,13 +58,13 @@ const fff456St = (): TProductDraftBuilder =>
           'Schwerlast-Steinbruchhammer für effiziente Gesteinsgewinnung in Steinbruch- und Bergbauoperationen.'
         )
         ['it-IT'](
-          'Martello pesante per cave per l&#39;estrazione efficiente di roccia in operazioni di cava e minerarie.'
+          "Martello pesante per cave per l'estrazione efficiente di roccia in operazioni di cava e minerarie."
         )
         ['nl-NL'](
           'Zware steengroevehamer voor efficiënte rotsontginning in steengroeve- en mijnbouwoperaties.'
         )
         ['fr-FR'](
-          'Marteau de carrière robuste pour l&#39;extraction efficace de roches dans les opérations de carrière et d&#39;exploitation minière.'
+          "Marteau de carrière robuste pour l'extraction efficace de roches dans les opérations de carrière et d'exploitation minière."
         )
         ['en-AU'](
           'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'

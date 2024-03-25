@@ -64,7 +64,7 @@ const n123Qr = (): TProductDraftBuilder =>
           'Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.'
         )
         ['fr-FR'](
-          'Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l&#39;exploitation minière et la construction.'
+          "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction."
         )
         ['en-AU'](
           'Robust quarry loader designed for efficient material handling in mining and construction.'

@@ -23,7 +23,7 @@ describe(`with u123Qr preset`, () => {
           "en-US": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
           "es-ES": "Camión volquete articulado resistente para el transporte eficiente de cargas pesadas en construcción y minería.",
           "fr": undefined,
-          "fr-FR": "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l&#39;exploitation minière.",
+          "fr-FR": "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l'exploitation minière.",
           "it-IT": "Camion ribaltabile articolato durevole per il trasporto efficiente di carichi pesanti in costruzioni e miniere.",
           "nl-NL": "Duurzame knikdumptruck voor efficiënt transport van zware ladingen in bouw en mijnbouw.",
           "pt-PT": "Caminhão articulado basculante durável para transporte eficiente de cargas pesadas em construção e mineração.",
@@ -217,7 +217,7 @@ describe(`with u123Qr preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l&#39;exploitation minière.",
+            "value": "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l'exploitation minière.",
           },
           {
             "locale": "en-AU",

@@ -24,7 +24,7 @@ describe(`with explorationDrills preset`, () => {
           "en-US": "Exploration Drills",
           "es-ES": "Perforadoras de exploración",
           "fr": undefined,
-          "fr-FR": "Forages d&#39;exploration",
+          "fr-FR": "Forages d'exploration",
           "it-IT": "Trapani di Esplorazione",
           "nl-NL": "Exploratieboormachines",
           "pt-PT": "Brocas de Exploração",
@@ -81,7 +81,7 @@ describe(`with explorationDrills preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Forages d&#39;exploration",
+            "value": "Forages d'exploration",
           },
           {
             "locale": "en-AU",

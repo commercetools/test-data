@@ -24,7 +24,7 @@ describe(`with airportGraders preset`, () => {
           "en-US": "Airport Graders",
           "es-ES": "Motoniveladoras para aeropuertos",
           "fr": undefined,
-          "fr-FR": "Niveleuses d&#39;aéroport",
+          "fr-FR": "Niveleuses d'aéroport",
           "it-IT": "Livellatrici per Aeroporti",
           "nl-NL": "Luchthavengraders",
           "pt-PT": "Motoniveladoras de Aeroporto",
@@ -81,7 +81,7 @@ describe(`with airportGraders preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Niveleuses d&#39;aéroport",
+            "value": "Niveleuses d'aéroport",
           },
           {
             "locale": "en-AU",

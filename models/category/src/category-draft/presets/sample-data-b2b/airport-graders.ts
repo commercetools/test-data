@@ -17,7 +17,7 @@ const airportGraders = (): TCategoryDraftBuilder =>
         ['de-DE']('Flughafengrader')
         ['it-IT']('Livellatrici per Aeroporti')
         ['nl-NL']('Luchthavengraders')
-        ['fr-FR']('Niveleuses d&#39;aéroport')
+        ['fr-FR']("Niveleuses d'aéroport")
         ['en-AU']('Airport Graders')
         ['es-ES']('Motoniveladoras para aeropuertos')
         ['en-GB']('Airport Graders')

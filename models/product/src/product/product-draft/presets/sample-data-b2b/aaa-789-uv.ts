@@ -43,7 +43,7 @@ const aaa789Uv = (): TProductDraftBuilder =>
         ['de-DE']('AAA789 UV Erkundungsbohrer')
         ['it-IT']('AAA789 UV Trapano per Esplorazione')
         ['nl-NL']('AAA789 UV Exploratieboor')
-        ['fr-FR']('AAA789 UV Forage d&#39;exploration')
+        ['fr-FR']("AAA789 UV Forage d'exploration")
         ['en-AU']('AAA789 UV Exploration Drill')
         ['es-ES']('AAA789 UV Perforadora de exploración')
         ['en-GB']('AAA789 UV Exploration Drill')
@@ -64,7 +64,7 @@ const aaa789Uv = (): TProductDraftBuilder =>
           'Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.'
         )
         ['fr-FR'](
-          'Forage d&#39;exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.'
+          "Forage d'exploration avancé avec des capacités de forage de précision pour des investigations géotechniques."
         )
         ['en-AU'](
           'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'

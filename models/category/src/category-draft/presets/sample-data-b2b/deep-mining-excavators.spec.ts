@@ -25,7 +25,7 @@ describe(`with deepMiningExcavators preset`, () => {
           "en-US": "Deep Mining Excavators",
           "es-ES": "Excavadoras de minería profunda",
           "fr": undefined,
-          "fr-FR": "Excavatrices pour l&#39;exploitation minière en profondeur",
+          "fr-FR": "Excavatrices pour l'exploitation minière en profondeur",
           "it-IT": "Escavatori per Miniere Profonde",
           "nl-NL": "Diepe Mijnbouwgraafmachines",
           "pt-PT": "Escavadeiras para Mineração Profunda",
@@ -82,7 +82,7 @@ describe(`with deepMiningExcavators preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices pour l&#39;exploitation minière en profondeur",
+            "value": "Excavatrices pour l'exploitation minière en profondeur",
           },
           {
             "locale": "en-AU",

@@ -16,7 +16,7 @@ const largeScaleMiningExcavators = (): TCategoryDraftBuilder =>
         ['de-DE']('Bergbaubagger')
         ['it-IT']('Escavatori Minerari')
         ['nl-NL']('Mijnbouwgraafmachines')
-        ['fr-FR']('Excavatrices pour l&#39;exploitation minière')
+        ['fr-FR']("Excavatrices pour l'exploitation minière")
         ['en-AU']('Mining Excavators')
         ['es-ES']('Excavadoras de minería')
         ['en-GB']('Mining Excavators')

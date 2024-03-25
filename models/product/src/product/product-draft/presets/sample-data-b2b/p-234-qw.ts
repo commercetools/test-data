@@ -64,7 +64,7 @@ const p234Qw = (): TProductDraftBuilder =>
           'Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.'
         )
         ['fr-FR'](
-          'Excavateur amphibie polyvalent conçu pour des projets d&#39;excavation à la fois sur terre et dans l&#39;eau.'
+          "Excavateur amphibie polyvalent conçu pour des projets d'excavation à la fois sur terre et dans l'eau."
         )
         ['en-AU'](
           'Versatile amphibious excavator designed for both land and water-based excavation projects.'

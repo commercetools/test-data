@@ -17,7 +17,7 @@ const deepMiningExcavators = (): TCategoryDraftBuilder =>
         ['de-DE']('Bagger für den Tiefbau')
         ['it-IT']('Escavatori per Miniere Profonde')
         ['nl-NL']('Diepe Mijnbouwgraafmachines')
-        ['fr-FR']('Excavatrices pour l&#39;exploitation minière en profondeur')
+        ['fr-FR']("Excavatrices pour l'exploitation minière en profondeur")
         ['en-AU']('Deep Mining Excavators')
         ['es-ES']('Excavadoras de minería profunda')
         ['en-GB']('Deep Mining Excavators')

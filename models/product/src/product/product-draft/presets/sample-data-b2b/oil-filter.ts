@@ -40,7 +40,7 @@ const oilFilter = (): TProductDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Ölfilter')
-        ['it-IT']('Filtro dell&#39;olio')
+        ['it-IT']("Filtro dell'olio")
         ['nl-NL']('Oliefilter')
         ['fr-FR']('Filtre à huile')
         ['es-ES']('Filtro de aceite')
@@ -51,9 +51,9 @@ const oilFilter = (): TProductDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Entfernt Verunreinigungen aus dem Motoröl.')
-        ['it-IT']('Rimuove le impurità dall&#39;olio motore.')
+        ['it-IT']("Rimuove le impurità dall'olio motore.")
         ['nl-NL']('Verwijdert verontreinigingen uit de motorolie.')
-        ['fr-FR']('Élimine les contaminants de l&#39;huile moteur.')
+        ['fr-FR']("Élimine les contaminants de l'huile moteur.")
         ['es-ES']('Elimina los contaminantes del aceite del motor.')
         ['pt-PT']('Remove contaminantes do óleo do motor.')
         ['en-US']('Removes contaminants from engine oil.')

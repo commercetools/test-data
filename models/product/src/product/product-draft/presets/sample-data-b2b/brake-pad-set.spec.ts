@@ -21,7 +21,7 @@ describe(`with brakePadSet preset`, () => {
           "es-ES": "Proporciona la fricción para detener el vehículo.",
           "fr": undefined,
           "fr-FR": "Fournit la friction nécessaire pour arrêter le véhicule.",
-          "it-IT": "Fornisce l&#39;attrito per fermare il veicolo.",
+          "it-IT": "Fornisce l'attrito per fermare il veicolo.",
           "nl-NL": "Zorgt voor de wrijving om het voertuig te stoppen.",
           "pt-PT": "Fornece a fricção para parar o veículo.",
         },
@@ -106,7 +106,7 @@ describe(`with brakePadSet preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Fornisce l&#39;attrito per fermare il veicolo.",
+            "value": "Fornisce l'attrito per fermare il veicolo.",
           },
           {
             "locale": "nl-NL",

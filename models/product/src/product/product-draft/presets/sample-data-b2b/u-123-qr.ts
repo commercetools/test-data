@@ -64,7 +64,7 @@ const u123Qr = (): TProductDraftBuilder =>
           'Duurzame knikdumptruck voor efficiënt transport van zware ladingen in bouw en mijnbouw.'
         )
         ['fr-FR'](
-          'Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l&#39;exploitation minière.'
+          "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l'exploitation minière."
         )
         ['en-AU'](
           'Durable articulated dump truck for efficient transport of heavy loads in construction and mining.'

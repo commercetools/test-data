@@ -23,8 +23,8 @@ describe(`with iii567Yz preset`, () => {
           "en-US": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
           "es-ES": "Martillo de pilotaje robusto con control avanzado de la fuerza de impacto para pilotes de cimentación eficientes y controlados.",
           "fr": undefined,
-          "fr-FR": "Marteau de battage robuste avec un contrôle avancé de la force d&#39;impact pour un fonçage de fondation efficace et maîtrisé.",
-          "it-IT": "Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.",
+          "fr-FR": "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé.",
+          "it-IT": "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato.",
           "nl-NL": "Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.",
           "pt-PT": "Martelo de cravação robusto com controle avançado de força de impacto para cravação eficiente e controlada de fundações.",
         },
@@ -251,7 +251,7 @@ describe(`with iii567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.",
+            "value": "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato.",
           },
           {
             "locale": "nl-NL",
@@ -259,7 +259,7 @@ describe(`with iii567Yz preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de battage robuste avec un contrôle avancé de la force d&#39;impact pour un fonçage de fondation efficace et maîtrisé.",
+            "value": "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé.",
           },
           {
             "locale": "en-AU",

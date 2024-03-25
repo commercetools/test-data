@@ -24,7 +24,7 @@ describe(`with x456Yz preset`, () => {
           "es-ES": "Excavadora minera profunda altamente eficiente diseñada para extraer recursos desde la profundidad.",
           "fr": undefined,
           "fr-FR": "Excavateur minier profond hautement efficace conçu pour extraire des ressources en profondeur.",
-          "it-IT": "Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.",
+          "it-IT": "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità.",
           "nl-NL": "Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.",
           "pt-PT": "Escavadeira para mineração profunda altamente eficiente projetada para extrair recursos das profundezas.",
         },
@@ -209,7 +209,7 @@ describe(`with x456Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.",
+            "value": "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità.",
           },
           {
             "locale": "nl-NL",

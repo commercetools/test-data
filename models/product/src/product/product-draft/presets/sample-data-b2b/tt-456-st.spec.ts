@@ -23,7 +23,7 @@ describe(`with tt456St preset`, () => {
           "en-US": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
           "es-ES": "Grúa móvil versátil con características avanzadas para una amplia gama de aplicaciones de elevación.",
           "fr": undefined,
-          "fr-FR": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.",
+          "fr-FR": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage.",
           "it-IT": "Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.",
           "nl-NL": "Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.",
           "pt-PT": "Grua móvel versátil com características avançadas para uma ampla gama de aplicações de elevação.",
@@ -259,7 +259,7 @@ describe(`with tt456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.",
+            "value": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage.",
           },
           {
             "locale": "en-AU",

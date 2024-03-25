@@ -23,8 +23,8 @@ describe(`with g123Qr preset`, () => {
           "en-US": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
           "es-ES": "Topadora de movimiento de tierras potente para la manipulación eficiente del terreno y la excavación.",
           "fr": undefined,
-          "fr-FR": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.",
-          "it-IT": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.",
+          "fr-FR": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation.",
+          "it-IT": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione.",
           "nl-NL": "Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.",
           "pt-PT": "Trator de esteiras poderoso para movimentação eficiente de terra e escavação.",
         },
@@ -209,7 +209,7 @@ describe(`with g123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.",
+            "value": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione.",
           },
           {
             "locale": "nl-NL",
@@ -217,7 +217,7 @@ describe(`with g123Qr preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.",
+            "value": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation.",
           },
           {
             "locale": "en-AU",

@@ -79,7 +79,7 @@ describe(`with nn456St preset`, () => {
           "en-US": "NN456 ST Wheeled Excavator for Mining",
           "es-ES": "NN456 ST Excavadora de ruedas para minería",
           "fr": undefined,
-          "fr-FR": "NN456 ST Excavatrice sur roues pour l&#39;exploitation minière",
+          "fr-FR": "NN456 ST Excavatrice sur roues pour l'exploitation minière",
           "it-IT": "NN456 ST Escavatore su Ruote per Miniere",
           "nl-NL": "NN456 ST Wiellader voor Mijnbouw",
           "pt-PT": "NN456 ST Escavadeira com Rodas para Mineração",
@@ -297,7 +297,7 @@ describe(`with nn456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "NN456 ST Excavatrice sur roues pour l&#39;exploitation minière",
+            "value": "NN456 ST Excavatrice sur roues pour l'exploitation minière",
           },
           {
             "locale": "en-AU",

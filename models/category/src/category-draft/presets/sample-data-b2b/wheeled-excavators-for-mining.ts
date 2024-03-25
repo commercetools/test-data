@@ -17,7 +17,7 @@ const wheeledExcavatorsForMining = (): TCategoryDraftBuilder =>
         ['de-DE']('Radbagger für den Bergbau')
         ['it-IT']('Escavatori su Ruote per Miniere')
         ['nl-NL']('Graafmachines op Wielen voor Mijnbouw')
-        ['fr-FR']('Excavatrices à roues pour l&#39;exploitation minière')
+        ['fr-FR']("Excavatrices à roues pour l'exploitation minière")
         ['en-AU']('Wheeled Excavators for Mining')
         ['es-ES']('Excavadoras de ruedas para minería')
         ['en-GB']('Wheeled Excavators for Mining')

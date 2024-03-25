@@ -58,7 +58,7 @@ const x456Yz = (): TProductDraftBuilder =>
           'Hoch effizienter Tiefbergbaubagger, konzipiert für die Gewinnung von Ressourcen aus der Tiefe.'
         )
         ['it-IT'](
-          'Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.'
+          "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità."
         )
         ['nl-NL'](
           'Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.'

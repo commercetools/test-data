@@ -64,7 +64,7 @@ const v456St = (): TProductDraftBuilder =>
           'V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.'
         )
         ['fr-FR'](
-          'Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l&#39;exploitation minière et la construction.'
+          "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l'exploitation minière et la construction."
         )
         ['en-AU'](
           'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'

@@ -64,7 +64,7 @@ const jjj890Op = (): TProductDraftBuilder =>
           'Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.'
         )
         ['fr-FR'](
-          'Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.'
+          "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure."
         )
         ['en-AU'](
           'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'

@@ -23,7 +23,7 @@ describe(`with v456St preset`, () => {
           "en-US": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
           "es-ES": "Camión volquete rígido resistente para el transporte confiable de grandes volúmenes de material en minería y construcción.",
           "fr": undefined,
-          "fr-FR": "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l&#39;exploitation minière et la construction.",
+          "fr-FR": "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l'exploitation minière et la construction.",
           "it-IT": "Camion ribaltabile rigido V456 ST per impieghi pesanti per il trasporto affidabile di grandi volumi di materiale in miniere e costruzioni.",
           "nl-NL": "V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.",
           "pt-PT": "Caminhão basculante rígido V456 ST para serviço pesado para transporte confiável de grandes volumes de material em mineração e construção.",
@@ -217,7 +217,7 @@ describe(`with v456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l&#39;exploitation minière et la construction.",
+            "value": "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l'exploitation minière et la construction.",
           },
           {
             "locale": "en-AU",

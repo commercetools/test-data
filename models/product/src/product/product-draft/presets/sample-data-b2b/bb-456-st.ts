@@ -64,7 +64,7 @@ const bb456St = (): TProductDraftBuilder =>
           'Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.'
         )
         ['fr-FR'](
-          'Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.'
+          "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport."
         )
         ['en-AU'](
           'High-performance airport grader for efficient grading and maintenance of airport runways.'

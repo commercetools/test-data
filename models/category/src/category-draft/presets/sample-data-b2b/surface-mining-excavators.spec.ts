@@ -25,7 +25,7 @@ describe(`with surfaceMiningExcavators preset`, () => {
           "en-US": "Surface Mining Excavators",
           "es-ES": "Excavadoras de minería superficial",
           "fr": undefined,
-          "fr-FR": "Excavatrices pour l&#39;exploitation minière de surface",
+          "fr-FR": "Excavatrices pour l'exploitation minière de surface",
           "it-IT": "Escavatori per Miniere di Superficie",
           "nl-NL": "Graafmachines voor Oppervlaktemijnbouw",
           "pt-PT": "Escavadeiras para Mineração de Superfície",
@@ -82,7 +82,7 @@ describe(`with surfaceMiningExcavators preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices pour l&#39;exploitation minière de surface",
+            "value": "Excavatrices pour l'exploitation minière de surface",
           },
           {
             "locale": "en-AU",

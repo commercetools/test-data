@@ -64,7 +64,7 @@ const ggg789Uv = (): TProductDraftBuilder =>
           'Veelzijdige steengroevehamer met precisiecontrole voor diverse rotsontginningstaken in mijnbouw en bouw.'
         )
         ['fr-FR'](
-          'Marteau de carrière polyvalent avec commande précise pour diverses tâches d&#39;extraction de roches dans l&#39;exploitation minière et la construction.'
+          "Marteau de carrière polyvalent avec commande précise pour diverses tâches d'extraction de roches dans l'exploitation minière et la construction."
         )
         ['en-AU'](
           'Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.'

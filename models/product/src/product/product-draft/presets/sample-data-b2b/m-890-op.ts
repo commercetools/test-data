@@ -64,7 +64,7 @@ const m890Op = (): TProductDraftBuilder =>
           'Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.'
         )
         ['fr-FR'](
-          'Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l&#39;eau.'
+          "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l'eau."
         )
         ['en-AU'](
           'Amphibious excavator with specialized features for versatile land and water projects.'

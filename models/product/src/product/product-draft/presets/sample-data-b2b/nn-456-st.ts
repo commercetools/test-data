@@ -43,9 +43,7 @@ const nn456St = (): TProductDraftBuilder =>
         ['de-DE']('NN456 ST Radbagger für Bergbau')
         ['it-IT']('NN456 ST Escavatore su Ruote per Miniere')
         ['nl-NL']('NN456 ST Wiellader voor Mijnbouw')
-        ['fr-FR'](
-          'NN456 ST Excavatrice sur roues pour l&#39;exploitation minière'
-        )
+        ['fr-FR']("NN456 ST Excavatrice sur roues pour l'exploitation minière")
         ['en-AU']('NN456 ST Wheeled Excavator for Mining')
         ['es-ES']('NN456 ST Excavadora de ruedas para minería')
         ['en-GB']('NN456 ST Wheeled Excavator for Mining')

@@ -20,8 +20,8 @@ describe(`with oilFilter preset`, () => {
           "en-US": "Removes contaminants from engine oil.",
           "es-ES": "Elimina los contaminantes del aceite del motor.",
           "fr": undefined,
-          "fr-FR": "Élimine les contaminants de l&#39;huile moteur.",
-          "it-IT": "Rimuove le impurità dall&#39;olio motore.",
+          "fr-FR": "Élimine les contaminants de l'huile moteur.",
+          "it-IT": "Rimuove le impurità dall'olio motore.",
           "nl-NL": "Verwijdert verontreinigingen uit de motorolie.",
           "pt-PT": "Remove contaminantes do óleo do motor.",
         },
@@ -54,7 +54,7 @@ describe(`with oilFilter preset`, () => {
           "es-ES": "Filtro de aceite",
           "fr": undefined,
           "fr-FR": "Filtre à huile",
-          "it-IT": "Filtro dell&#39;olio",
+          "it-IT": "Filtro dell'olio",
           "nl-NL": "Oliefilter",
           "pt-PT": "Filtro de óleo",
         },
@@ -105,7 +105,7 @@ describe(`with oilFilter preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Rimuove le impurità dall&#39;olio motore.",
+            "value": "Rimuove le impurità dall'olio motore.",
           },
           {
             "locale": "nl-NL",
@@ -113,7 +113,7 @@ describe(`with oilFilter preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Élimine les contaminants de l&#39;huile moteur.",
+            "value": "Élimine les contaminants de l'huile moteur.",
           },
           {
             "locale": "es-ES",
@@ -156,7 +156,7 @@ describe(`with oilFilter preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Filtro dell&#39;olio",
+            "value": "Filtro dell'olio",
           },
           {
             "locale": "nl-NL",

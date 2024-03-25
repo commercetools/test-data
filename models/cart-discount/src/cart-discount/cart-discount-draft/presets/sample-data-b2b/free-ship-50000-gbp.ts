@@ -20,7 +20,7 @@ const freeShip50000Gbp = (): TCartDiscountDraftBuilder =>
         ['de-DE']('Kostenloser Versand ab einem Einkauf von 50000 GBP')
         ['it-IT']('Spedizione gratuita per acquisti di almeno 50000 GBP')
         ['nl-NL']('Gratis verzending bij besteding van 50000 GBP')
-        ['fr-FR']('Livraison gratuite à partir de 50000 GBP d&#39;achat')
+        ['fr-FR']("Livraison gratuite à partir de 50000 GBP d'achat")
         ['en-AU']('Free Shipping when you spend 50000 GBP')
         ['es-ES']('Envío gratuito al gastar 50000 GBP')
         ['en-GB']('Free Shipping when you spend 50000 GBP')
@@ -38,9 +38,7 @@ const freeShip50000Gbp = (): TCartDiscountDraftBuilder =>
         ['nl-NL'](
           'Gratis verzending bij een bestelling van ten minste 50000 GBP'
         )
-        ['fr-FR'](
-          'Livraison gratuite pour toute commande d&#39;au moins 50000 GBP'
-        )
+        ['fr-FR']("Livraison gratuite pour toute commande d'au moins 50000 GBP")
         ['en-AU']('Free shipping when your order is at least 50000 GBP')
         ['es-ES']('Envío gratuito en pedidos de al menos 50000 GBP')
         ['en-GB']('Free shipping when your order is at least 50000 GBP')

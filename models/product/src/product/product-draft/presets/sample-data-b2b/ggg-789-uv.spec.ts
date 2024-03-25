@@ -23,7 +23,7 @@ describe(`with ggg789Uv preset`, () => {
           "en-US": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
           "es-ES": "Martillo de cantera versátil con control preciso para diversas tareas de extracción de rocas en minería y construcción.",
           "fr": undefined,
-          "fr-FR": "Marteau de carrière polyvalent avec commande précise pour diverses tâches d&#39;extraction de roches dans l&#39;exploitation minière et la construction.",
+          "fr-FR": "Marteau de carrière polyvalent avec commande précise pour diverses tâches d'extraction de roches dans l'exploitation minière et la construction.",
           "it-IT": "Martello per cave versatile con controllo di precisione per vari compiti di estrazione di roccia in miniere e costruzioni.",
           "nl-NL": "Veelzijdige steengroevehamer met precisiecontrole voor diverse rotsontginningstaken in mijnbouw en bouw.",
           "pt-PT": "Martelo de pedreira versátil com controle de precisão para várias tarefas de extração de rochas em mineração e construção.",
@@ -259,7 +259,7 @@ describe(`with ggg789Uv preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de carrière polyvalent avec commande précise pour diverses tâches d&#39;extraction de roches dans l&#39;exploitation minière et la construction.",
+            "value": "Marteau de carrière polyvalent avec commande précise pour diverses tâches d'extraction de roches dans l'exploitation minière et la construction.",
           },
           {
             "locale": "en-AU",

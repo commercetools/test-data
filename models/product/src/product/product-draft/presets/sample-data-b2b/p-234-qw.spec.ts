@@ -23,7 +23,7 @@ describe(`with p234Qw preset`, () => {
           "en-US": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
           "es-ES": "Excavadora anfibia versátil diseñada para proyectos de excavación en tierra y agua.",
           "fr": undefined,
-          "fr-FR": "Excavateur amphibie polyvalent conçu pour des projets d&#39;excavation à la fois sur terre et dans l&#39;eau.",
+          "fr-FR": "Excavateur amphibie polyvalent conçu pour des projets d'excavation à la fois sur terre et dans l'eau.",
           "it-IT": "Escavatore anfibio versatile progettato sia per progetti di scavo terrestri che acquatici.",
           "nl-NL": "Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.",
           "pt-PT": "Escavadeira anfíbia versátil projetada para projetos de escavação em terra e água.",
@@ -217,7 +217,7 @@ describe(`with p234Qw preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavateur amphibie polyvalent conçu pour des projets d&#39;excavation à la fois sur terre et dans l&#39;eau.",
+            "value": "Excavateur amphibie polyvalent conçu pour des projets d'excavation à la fois sur terre et dans l'eau.",
           },
           {
             "locale": "en-AU",

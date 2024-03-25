@@ -58,13 +58,13 @@ const iii567Yz = (): TProductDraftBuilder =>
           'Robuster Rammpfahlhammer mit fortschrittlicher Schlagkraftregelung für effizientes und kontrolliertes Rammen von Fundamenten.'
         )
         ['it-IT'](
-          'Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.'
+          "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato."
         )
         ['nl-NL'](
           'Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.'
         )
         ['fr-FR'](
-          'Marteau de battage robuste avec un contrôle avancé de la force d&#39;impact pour un fonçage de fondation efficace et maîtrisé.'
+          "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé."
         )
         ['en-AU'](
           'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'

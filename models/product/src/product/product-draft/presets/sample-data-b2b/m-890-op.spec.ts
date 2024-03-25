@@ -23,7 +23,7 @@ describe(`with m890Op preset`, () => {
           "en-US": "Amphibious excavator with specialized features for versatile land and water projects.",
           "es-ES": "Excavadora anfibia con características especializadas para proyectos versátiles en tierra y agua.",
           "fr": undefined,
-          "fr-FR": "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l&#39;eau.",
+          "fr-FR": "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l'eau.",
           "it-IT": "Escavatore anfibio con caratteristiche specializzate per progetti versatili su terra e in acqua.",
           "nl-NL": "Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.",
           "pt-PT": "Escavadeira anfíbia com características especializadas para projetos versáteis em terra e água.",
@@ -217,7 +217,7 @@ describe(`with m890Op preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l&#39;eau.",
+            "value": "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l'eau.",
           },
           {
             "locale": "en-AU",

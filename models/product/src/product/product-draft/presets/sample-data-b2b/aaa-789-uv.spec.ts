@@ -23,7 +23,7 @@ describe(`with aaa789Uv preset`, () => {
           "en-US": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
           "es-ES": "Perforadora de exploración avanzada con capacidades de perforación de precisión para investigaciones geotécnicas.",
           "fr": undefined,
-          "fr-FR": "Forage d&#39;exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.",
+          "fr-FR": "Forage d'exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.",
           "it-IT": "Trapano avanzato per esplorazione con capacità di trapanazione di precisione per indagini geotecniche.",
           "nl-NL": "Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.",
           "pt-PT": "Perfuratriz de exploração avançada com capacidades de perfuração de precisão para investigações geotécnicas.",
@@ -93,7 +93,7 @@ describe(`with aaa789Uv preset`, () => {
           "en-US": "AAA789 UV Exploration Drill",
           "es-ES": "AAA789 UV Perforadora de exploración",
           "fr": undefined,
-          "fr-FR": "AAA789 UV Forage d&#39;exploration",
+          "fr-FR": "AAA789 UV Forage d'exploration",
           "it-IT": "AAA789 UV Trapano per Esplorazione",
           "nl-NL": "AAA789 UV Exploratieboor",
           "pt-PT": "AAA789 UV Perfuratriz de Exploração",
@@ -259,7 +259,7 @@ describe(`with aaa789Uv preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Forage d&#39;exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.",
+            "value": "Forage d'exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.",
           },
           {
             "locale": "en-AU",
@@ -339,7 +339,7 @@ describe(`with aaa789Uv preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "AAA789 UV Forage d&#39;exploration",
+            "value": "AAA789 UV Forage d'exploration",
           },
           {
             "locale": "en-AU",

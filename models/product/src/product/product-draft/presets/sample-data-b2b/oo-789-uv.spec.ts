@@ -79,7 +79,7 @@ describe(`with oo789Uv preset`, () => {
           "en-US": "OO789 UV Wheeled Excavator for Mining",
           "es-ES": "OO789 UV Excavadora de ruedas para minería",
           "fr": undefined,
-          "fr-FR": "OO789 UV Excavatrice sur roues pour l&#39;exploitation minière",
+          "fr-FR": "OO789 UV Excavatrice sur roues pour l'exploitation minière",
           "it-IT": "OO789 UV Escavatore su Ruote per Miniere",
           "nl-NL": "OO789 UV Wiellader voor Mijnbouw",
           "pt-PT": "OO789 UV Escavadeira com Rodas para Mineração",
@@ -297,7 +297,7 @@ describe(`with oo789Uv preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "OO789 UV Excavatrice sur roues pour l&#39;exploitation minière",
+            "value": "OO789 UV Excavatrice sur roues pour l'exploitation minière",
           },
           {
             "locale": "en-AU",

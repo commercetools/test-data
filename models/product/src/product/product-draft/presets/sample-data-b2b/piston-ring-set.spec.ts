@@ -20,8 +20,8 @@ describe(`with pistonRingSet preset`, () => {
           "en-US": "Seals the combustion chamber and regulates oil.",
           "es-ES": "Sella la cámara de combustión y regula el aceite.",
           "fr": undefined,
-          "fr-FR": "Scelle la chambre de combustion et régule l&#39;huile.",
-          "it-IT": "Sigilla la camera di combustione e regola l&#39;olio.",
+          "fr-FR": "Scelle la chambre de combustion et régule l'huile.",
+          "it-IT": "Sigilla la camera di combustione e regola l'olio.",
           "nl-NL": "Dicht de verbrandingskamer af en reguleert de olie.",
           "pt-PT": "Veda a câmara de combustão e regula o óleo.",
         },
@@ -106,7 +106,7 @@ describe(`with pistonRingSet preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Sigilla la camera di combustione e regola l&#39;olio.",
+            "value": "Sigilla la camera di combustione e regola l'olio.",
           },
           {
             "locale": "nl-NL",
@@ -114,7 +114,7 @@ describe(`with pistonRingSet preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Scelle la chambre de combustion et régule l&#39;huile.",
+            "value": "Scelle la chambre de combustion et régule l'huile.",
           },
           {
             "locale": "es-ES",

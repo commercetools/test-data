@@ -17,7 +17,7 @@ const explorationDrills = (): TCategoryDraftBuilder =>
         ['de-DE']('Erkundungsbohrer')
         ['it-IT']('Trapani di Esplorazione')
         ['nl-NL']('Exploratieboormachines')
-        ['fr-FR']('Forages d&#39;exploration')
+        ['fr-FR']("Forages d'exploration")
         ['en-AU']('Exploration Drills')
         ['es-ES']('Perforadoras de exploración')
         ['en-GB']('Exploration Drills')

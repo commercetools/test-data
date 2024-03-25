@@ -58,13 +58,13 @@ const g123Qr = (): TProductDraftBuilder =>
           'Leistungsstarker Erdbewegungsbagger für effiziente Geländemanipulation und Aushub.'
         )
         ['it-IT'](
-          'Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.'
+          "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione."
         )
         ['nl-NL'](
           'Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.'
         )
         ['fr-FR'](
-          'Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.'
+          "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation."
         )
         ['en-AU'](
           'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'

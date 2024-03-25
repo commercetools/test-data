@@ -43,9 +43,7 @@ const oo789Uv = (): TProductDraftBuilder =>
         ['de-DE']('OO789 UV Radbagger für Bergbau')
         ['it-IT']('OO789 UV Escavatore su Ruote per Miniere')
         ['nl-NL']('OO789 UV Wiellader voor Mijnbouw')
-        ['fr-FR'](
-          'OO789 UV Excavatrice sur roues pour l&#39;exploitation minière'
-        )
+        ['fr-FR']("OO789 UV Excavatrice sur roues pour l'exploitation minière")
         ['en-AU']('OO789 UV Wheeled Excavator for Mining')
         ['es-ES']('OO789 UV Excavadora de ruedas para minería')
         ['en-GB']('OO789 UV Wheeled Excavator for Mining')

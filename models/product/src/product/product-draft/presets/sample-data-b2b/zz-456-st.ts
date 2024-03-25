@@ -43,7 +43,7 @@ const zz456St = (): TProductDraftBuilder =>
         ['de-DE']('ZZ456 ST Erkundungsbohrer')
         ['it-IT']('ZZ456 ST Trapano per Esplorazione')
         ['nl-NL']('ZZ456 ST Exploratieboor')
-        ['fr-FR']('ZZ456 ST Forage d&#39;exploration')
+        ['fr-FR']("ZZ456 ST Forage d'exploration")
         ['en-AU']('ZZ456 ST Exploration Drill')
         ['es-ES']('ZZ456 ST Perforadora de exploración')
         ['en-GB']('ZZ456 ST Exploration Drill')
@@ -64,7 +64,7 @@ const zz456St = (): TProductDraftBuilder =>
           'Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.'
         )
         ['fr-FR'](
-          'Forage d&#39;exploration polyvalent adapté à diverses tâches de forage dans des projets d&#39;exploration et géotechniques.'
+          "Forage d'exploration polyvalent adapté à diverses tâches de forage dans des projets d'exploration et géotechniques."
         )
         ['en-AU'](
           'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'

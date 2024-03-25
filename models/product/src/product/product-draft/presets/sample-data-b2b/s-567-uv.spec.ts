@@ -23,7 +23,7 @@ describe(`with s567Uv preset`, () => {
           "en-US": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "es-ES": "Excavadora anfibia de alta capacidad para aplicaciones eficientes de excavación en tierra y agua.",
           "fr": undefined,
-          "fr-FR": "Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.",
+          "fr-FR": "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau.",
           "it-IT": "Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.",
           "nl-NL": "Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.",
           "pt-PT": "Escavadeira anfíbia de alta capacidade para aplicações eficientes de escavação em terra e água.",
@@ -217,7 +217,7 @@ describe(`with s567Uv preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.",
+            "value": "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau.",
           },
           {
             "locale": "en-AU",

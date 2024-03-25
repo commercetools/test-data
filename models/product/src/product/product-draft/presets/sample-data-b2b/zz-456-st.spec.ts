@@ -23,7 +23,7 @@ describe(`with zz456St preset`, () => {
           "en-US": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
           "es-ES": "Perforadora de exploración versátil adecuada para diversas tareas de perforación en proyectos de exploración y geotécnica.",
           "fr": undefined,
-          "fr-FR": "Forage d&#39;exploration polyvalent adapté à diverses tâches de forage dans des projets d&#39;exploration et géotechniques.",
+          "fr-FR": "Forage d'exploration polyvalent adapté à diverses tâches de forage dans des projets d'exploration et géotechniques.",
           "it-IT": "Trapano per esplorazione versatile adatto per vari compiti di trapanazione in progetti di esplorazione e geotecnici.",
           "nl-NL": "Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.",
           "pt-PT": "Perfuratriz de exploração versátil adequada para várias tarefas de perfuração em projetos de exploração e geotécnicos.",
@@ -93,7 +93,7 @@ describe(`with zz456St preset`, () => {
           "en-US": "ZZ456 ST Exploration Drill",
           "es-ES": "ZZ456 ST Perforadora de exploración",
           "fr": undefined,
-          "fr-FR": "ZZ456 ST Forage d&#39;exploration",
+          "fr-FR": "ZZ456 ST Forage d'exploration",
           "it-IT": "ZZ456 ST Trapano per Esplorazione",
           "nl-NL": "ZZ456 ST Exploratieboor",
           "pt-PT": "ZZ456 ST Perfuratriz de Exploração",
@@ -259,7 +259,7 @@ describe(`with zz456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Forage d&#39;exploration polyvalent adapté à diverses tâches de forage dans des projets d&#39;exploration et géotechniques.",
+            "value": "Forage d'exploration polyvalent adapté à diverses tâches de forage dans des projets d'exploration et géotechniques.",
           },
           {
             "locale": "en-AU",
@@ -339,7 +339,7 @@ describe(`with zz456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "ZZ456 ST Forage d&#39;exploration",
+            "value": "ZZ456 ST Forage d'exploration",
           },
           {
             "locale": "en-AU",

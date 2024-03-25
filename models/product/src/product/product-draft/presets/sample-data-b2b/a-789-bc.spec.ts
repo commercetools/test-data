@@ -23,8 +23,8 @@ describe(`with a789Bc preset`, () => {
           "en-US": "Advanced deep mining excavator with precision control for extracting resources from depth.",
           "es-ES": "Excavadora minera profunda avanzada con control de precisión para extraer recursos desde la profundidad.",
           "fr": undefined,
-          "fr-FR": "Excavateur minier profond avancé avec contrôle de précision pour l&#39;extraction de ressources en profondeur.",
-          "it-IT": "Escavatore avanzato per miniere profonde con controllo di precisione per l&#39;estrazione di risorse in profondità.",
+          "fr-FR": "Excavateur minier profond avancé avec contrôle de précision pour l'extraction de ressources en profondeur.",
+          "it-IT": "Escavatore avanzato per miniere profonde con controllo di precisione per l'estrazione di risorse in profondità.",
           "nl-NL": "Geavanceerde diepe mijnbouw graafmachine met precisiecontrole voor het extraheren van grondstoffen uit de diepte.",
           "pt-PT": "Escavadeira avançada para mineração profunda com controle de precisão para extração de recursos das profundezas.",
         },
@@ -209,7 +209,7 @@ describe(`with a789Bc preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Escavatore avanzato per miniere profonde con controllo di precisione per l&#39;estrazione di risorse in profondità.",
+            "value": "Escavatore avanzato per miniere profonde con controllo di precisione per l'estrazione di risorse in profondità.",
           },
           {
             "locale": "nl-NL",
@@ -217,7 +217,7 @@ describe(`with a789Bc preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavateur minier profond avancé avec contrôle de précision pour l&#39;extraction de ressources en profondeur.",
+            "value": "Excavateur minier profond avancé avec contrôle de précision pour l'extraction de ressources en profondeur.",
           },
           {
             "locale": "en-AU",

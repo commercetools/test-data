@@ -64,7 +64,7 @@ const jj234Wx = (): TProductDraftBuilder =>
           'Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.'
         )
         ['fr-FR'](
-          'Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d&#39;enfouissement.'
+          "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement."
         )
         ['en-AU'](
           'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'

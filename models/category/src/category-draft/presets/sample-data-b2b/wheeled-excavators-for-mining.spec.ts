@@ -25,7 +25,7 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
           "en-US": "Wheeled Excavators for Mining",
           "es-ES": "Excavadoras de ruedas para minería",
           "fr": undefined,
-          "fr-FR": "Excavatrices à roues pour l&#39;exploitation minière",
+          "fr-FR": "Excavatrices à roues pour l'exploitation minière",
           "it-IT": "Escavatori su Ruote per Miniere",
           "nl-NL": "Graafmachines op Wielen voor Mijnbouw",
           "pt-PT": "Escavadeiras com Rodas para Mineração",
@@ -82,7 +82,7 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices à roues pour l&#39;exploitation minière",
+            "value": "Excavatrices à roues pour l'exploitation minière",
           },
           {
             "locale": "en-AU",

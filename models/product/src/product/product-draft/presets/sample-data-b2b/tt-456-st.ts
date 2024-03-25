@@ -64,7 +64,7 @@ const tt456St = (): TProductDraftBuilder =>
           'Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.'
         )
         ['fr-FR'](
-          'Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.'
+          "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage."
         )
         ['en-AU'](
           'Versatile mobile crane with advanced features for a wide range of lifting applications.'

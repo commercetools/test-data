@@ -23,7 +23,7 @@ describe(`with jjj890Op preset`, () => {
           "en-US": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
           "es-ES": "Martillo de pilotaje versátil adecuado para diversas tareas de pilotes de cimentación en proyectos de construcción e infraestructura.",
           "fr": undefined,
-          "fr-FR": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.",
+          "fr-FR": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure.",
           "it-IT": "Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.",
           "nl-NL": "Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.",
           "pt-PT": "Martelo de cravação versátil adequado para várias tarefas de cravação de fundações em projetos de construção e infraestrutura.",
@@ -259,7 +259,7 @@ describe(`with jjj890Op preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.",
+            "value": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure.",
           },
           {
             "locale": "en-AU",

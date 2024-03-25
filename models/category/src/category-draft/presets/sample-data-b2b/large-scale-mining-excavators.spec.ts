@@ -25,7 +25,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           "en-US": "Mining Excavators",
           "es-ES": "Excavadoras de minería",
           "fr": undefined,
-          "fr-FR": "Excavatrices pour l&#39;exploitation minière",
+          "fr-FR": "Excavatrices pour l'exploitation minière",
           "it-IT": "Escavatori Minerari",
           "nl-NL": "Mijnbouwgraafmachines",
           "pt-PT": "Escavadeiras de Mineração",
@@ -82,7 +82,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices pour l&#39;exploitation minière",
+            "value": "Excavatrices pour l'exploitation minière",
           },
           {
             "locale": "en-AU",

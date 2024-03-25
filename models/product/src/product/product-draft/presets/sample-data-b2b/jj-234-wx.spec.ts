@@ -23,7 +23,7 @@ describe(`with jj234Wx preset`, () => {
           "en-US": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
           "es-ES": "Compactador de vertedero de alta capacidad para la compactación eficiente de residuos en vertederos.",
           "fr": undefined,
-          "fr-FR": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d&#39;enfouissement.",
+          "fr-FR": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement.",
           "it-IT": "Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.",
           "nl-NL": "Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.",
           "pt-PT": "Compactador de aterro de alta capacidade para compactação eficiente de resíduos em aterros sanitários.",
@@ -217,7 +217,7 @@ describe(`with jj234Wx preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d&#39;enfouissement.",
+            "value": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement.",
           },
           {
             "locale": "en-AU",

@@ -23,7 +23,7 @@ describe(`with bb456St preset`, () => {
           "en-US": "High-performance airport grader for efficient grading and maintenance of airport runways.",
           "es-ES": "Niveladora de aeropuerto de alto rendimiento para el nivelado eficiente y el mantenimiento de las pistas de aterrizaje del aeropuerto.",
           "fr": undefined,
-          "fr-FR": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.",
+          "fr-FR": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport.",
           "it-IT": "Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.",
           "nl-NL": "Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.",
           "pt-PT": "Niveladora de alto desempenho para aeroportos para classificação eficiente e manutenção de pistas de aeroporto.",
@@ -217,7 +217,7 @@ describe(`with bb456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.",
+            "value": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport.",
           },
           {
             "locale": "en-AU",

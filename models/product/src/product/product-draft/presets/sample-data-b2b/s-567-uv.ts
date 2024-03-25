@@ -64,7 +64,7 @@ const s567Uv = (): TProductDraftBuilder =>
           'Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.'
         )
         ['fr-FR'](
-          'Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.'
+          "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau."
         )
         ['en-AU'](
           'High-capacity amphibious excavator for efficient land and water excavation applications.'

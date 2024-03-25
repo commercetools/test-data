@@ -23,8 +23,8 @@ describe(`with fff456St preset`, () => {
           "en-US": "Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.",
           "es-ES": "Martillo de cantera resistente para una extracción eficiente de rocas en operaciones de canteras y minería.",
           "fr": undefined,
-          "fr-FR": "Marteau de carrière robuste pour l&#39;extraction efficace de roches dans les opérations de carrière et d&#39;exploitation minière.",
-          "it-IT": "Martello pesante per cave per l&#39;estrazione efficiente di roccia in operazioni di cava e minerarie.",
+          "fr-FR": "Marteau de carrière robuste pour l'extraction efficace de roches dans les opérations de carrière et d'exploitation minière.",
+          "it-IT": "Martello pesante per cave per l'estrazione efficiente di roccia in operazioni di cava e minerarie.",
           "nl-NL": "Zware steengroevehamer voor efficiënte rotsontginning in steengroeve- en mijnbouwoperaties.",
           "pt-PT": "Martelo de pedreira de serviço pesado para extração eficiente de rochas em operações de pedreiras e mineração.",
         },
@@ -251,7 +251,7 @@ describe(`with fff456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Martello pesante per cave per l&#39;estrazione efficiente di roccia in operazioni di cava e minerarie.",
+            "value": "Martello pesante per cave per l'estrazione efficiente di roccia in operazioni di cava e minerarie.",
           },
           {
             "locale": "nl-NL",
@@ -259,7 +259,7 @@ describe(`with fff456St preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de carrière robuste pour l&#39;extraction efficace de roches dans les opérations de carrière et d&#39;exploitation minière.",
+            "value": "Marteau de carrière robuste pour l'extraction efficace de roches dans les opérations de carrière et d'exploitation minière.",
           },
           {
             "locale": "en-AU",

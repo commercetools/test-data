@@ -53,13 +53,13 @@ const towerCranesBogo = (): TCartDiscountDraftBuilder =>
           'Zwei zum Preis von einem bei allen Turmkränen (Rabatt auf den günstigsten Artikel)'
         )
         ['it-IT'](
-          'Due al prezzo di uno su tutte le gru a torre (sconto sull&#39;articolo più economico)'
+          "Due al prezzo di uno su tutte le gru a torre (sconto sull'articolo più economico)"
         )
         ['nl-NL'](
           'Twee voor de prijs van één op alle torenkranen (korting op het goedkoopste artikel)'
         )
         ['fr-FR'](
-          'Deux pour le prix d&#39;un sur toutes les grues à tour (réduction sur l&#39;article le moins cher)'
+          "Deux pour le prix d'un sur toutes les grues à tour (réduction sur l'article le moins cher)"
         )
         ['en-AU'](
           'Two for one on all tower cranes (discount on the cheapest item)'

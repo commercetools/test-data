@@ -23,7 +23,7 @@ describe(`with n123Qr preset`, () => {
           "en-US": "Robust quarry loader designed for efficient material handling in mining and construction.",
           "es-ES": "Cargador de cantera resistente diseñado para la manipulación eficiente de materiales en minería y construcción.",
           "fr": undefined,
-          "fr-FR": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l&#39;exploitation minière et la construction.",
+          "fr-FR": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction.",
           "it-IT": "Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.",
           "nl-NL": "Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.",
           "pt-PT": "Carregadeira robusta para pedreiras projetada para manuseio eficiente de materiais em mineração e construção.",
@@ -217,7 +217,7 @@ describe(`with n123Qr preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l&#39;exploitation minière et la construction.",
+            "value": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction.",
           },
           {
             "locale": "en-AU",
