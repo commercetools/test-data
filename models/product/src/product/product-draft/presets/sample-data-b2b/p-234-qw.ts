@@ -42,7 +42,6 @@ const p234Qw = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('P234 QW Amphibienbagger')
         ['it-IT']('P234 QW Escavatore Anfibio')
-        ['en-UK']('P234 QW Amphibious Excavator')
         ['nl-NL']('P234 QW Amfibische Graafmachine')
         ['fr-FR']('P234 QW Excavateur amphibie')
         ['en-AU']('P234 QW Amphibious Excavator')
@@ -60,9 +59,6 @@ const p234Qw = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore anfibio versatile progettato sia per progetti di scavo terrestri che acquatici.'
-        )
-        ['en-UK'](
-          'Versatile amphibious excavator designed for both land and water-based excavation projects.'
         )
         ['nl-NL'](
           'Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.'
@@ -94,7 +90,6 @@ const p234Qw = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('p234-qw')
         ['it-IT']('p234-qw')
-        ['en-UK']('p234-qw')
         ['nl-NL']('p234-qw')
         ['fr-FR']('p234-qw')
         ['en-AU']('p234-qw')

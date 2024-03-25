@@ -42,7 +42,6 @@ const ww567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('WW567 YZ Raupenkran für Stabilität')
         ['it-IT']('WW567 YZ Gru Cingolata per Stabilità')
-        ['en-UK']('WW567 YZ Crawler Crane for Stability')
         ['nl-NL']('WW567 YZ Rupskraan voor Stabiliteit')
         ['fr-FR']('WW567 YZ Grue sur chenilles pour stabilité')
         ['en-AU']('WW567 YZ Crawler Crane for Stability')
@@ -60,9 +59,6 @@ const ww567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Gru cingolata robusta con caratteristiche avanzate di stabilità per operazioni di sollevamento pesanti.'
-        )
-        ['en-UK'](
-          'Robust crawler crane with advanced stability features for heavy-duty lifting operations.'
         )
         ['nl-NL'](
           'Robuuste rupskraan met geavanceerde stabiliteitsfuncties voor zware hijswerkzaamheden.'
@@ -94,7 +90,6 @@ const ww567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ww567-yz')
         ['it-IT']('ww567-yz')
-        ['en-UK']('ww567-yz')
         ['nl-NL']('ww567-yz')
         ['fr-FR']('ww567-yz')
         ['en-AU']('ww567-yz')

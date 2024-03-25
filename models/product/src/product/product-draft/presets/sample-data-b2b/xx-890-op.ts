@@ -42,7 +42,6 @@ const xx890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('XX890 OP Raupenkran für Stabilität')
         ['it-IT']('XX890 OP Gru Cingolata per Stabilità')
-        ['en-UK']('XX890 OP Crawler Crane for Stability')
         ['nl-NL']('XX890 OP Rupskraan voor Stabiliteit')
         ['fr-FR']('XX890 OP Grue sur chenilles pour stabilité')
         ['en-AU']('XX890 OP Crawler Crane for Stability')
@@ -60,9 +59,6 @@ const xx890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Gru cingolata ad alta capacità con caratteristiche eccezionali di stabilità per compiti di sollevamento pesanti e precisi.'
-        )
-        ['en-UK'](
-          'High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.'
         )
         ['nl-NL'](
           'Hoogcapaciteits rupskraan met uitzonderlijke stabiliteitsfuncties voor nauwkeurige zware hijstaken.'
@@ -94,7 +90,6 @@ const xx890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('xx890-op')
         ['it-IT']('xx890-op')
-        ['en-UK']('xx890-op')
         ['nl-NL']('xx890-op')
         ['fr-FR']('xx890-op')
         ['en-AU']('xx890-op')

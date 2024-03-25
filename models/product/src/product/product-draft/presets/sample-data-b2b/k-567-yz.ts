@@ -42,7 +42,6 @@ const k567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('K567 YZ Sumpfbagger')
         ['it-IT']('K567 YZ Bulldozer per Paludi')
-        ['en-UK']('K567 YZ Swamp Bulldozer')
         ['nl-NL']('K567 YZ Moeras Bulldozer')
         ['fr-FR']('K567 YZ Bulldozer des marais')
         ['en-AU']('K567 YZ Swamp Bulldozer')
@@ -60,9 +59,6 @@ const k567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Bulldozer per paludi versatile con caratteristiche avanzate per operazioni diverse in ambienti umidi.'
-        )
-        ['en-UK'](
-          'Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.'
         )
         ['nl-NL'](
           'Veelzijdige moeras bulldozer met geavanceerde functies voor diverse operaties in wetland omgevingen.'
@@ -94,7 +90,6 @@ const k567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('k567-yz')
         ['it-IT']('k567-yz')
-        ['en-UK']('k567-yz')
         ['nl-NL']('k567-yz')
         ['fr-FR']('k567-yz')
         ['en-AU']('k567-yz')

@@ -12,7 +12,6 @@ const usLargeCustomers = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Große Kunden im Vereinigten Staaten')
         ['it-IT']('Grandi Clienti USA')
-        ['en-UK']('US Large Customers')
         ['nl-NL']('VS Grote Klanten')
         ['fr-FR']('Clients Importants aux États-Unis')
         ['en-AU']('US Large Customers')

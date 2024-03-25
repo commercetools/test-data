@@ -20,7 +20,6 @@ describe(`with l890Op preset`, () => {
           "en-AU": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
           "en-GB": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
           "en-NZ": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
-          "en-UK": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
           "en-US": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
           "es-ES": "Topadora de pantano de alta capacidad con características especializadas para proyectos desafiantes en áreas húmedas.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with l890Op preset`, () => {
           "en-AU": "L890 OP Swamp Bulldozer",
           "en-GB": "L890 OP Swamp Bulldozer",
           "en-NZ": "L890 OP Swamp Bulldozer",
-          "en-UK": "L890 OP Swamp Bulldozer",
           "en-US": "L890 OP Swamp Bulldozer",
           "es-ES": "L890 OP Topadora de pantano",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with l890Op preset`, () => {
           "en-AU": "l890-op",
           "en-GB": "l890-op",
           "en-NZ": "l890-op",
-          "en-UK": "l890-op",
           "en-US": "l890-op",
           "es-ES": "l890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with l890Op preset`, () => {
             "value": "Bulldozer per paludi ad alta capacità L890 OP con caratteristiche specializzate per progetti impegnativi in terreni umidi.",
           },
           {
-            "locale": "en-UK",
-            "value": "L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "L890 OP Hoogcapaciteits moeras bulldozer met gespecialiseerde functies voor uitdagende wetland projecten.",
           },
@@ -299,10 +292,6 @@ describe(`with l890Op preset`, () => {
             "value": "L890 OP Bulldozer per Paludi",
           },
           {
-            "locale": "en-UK",
-            "value": "L890 OP Swamp Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "L890 OP Moeras Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with l890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "l890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "l890-op",
           },
           {

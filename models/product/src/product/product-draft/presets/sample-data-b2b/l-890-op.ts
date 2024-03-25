@@ -42,7 +42,6 @@ const l890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('L890 OP Sumpfbagger')
         ['it-IT']('L890 OP Bulldozer per Paludi')
-        ['en-UK']('L890 OP Swamp Bulldozer')
         ['nl-NL']('L890 OP Moeras Bulldozer')
         ['fr-FR']('L890 OP Bulldozer des marais')
         ['en-AU']('L890 OP Swamp Bulldozer')
@@ -60,9 +59,6 @@ const l890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Bulldozer per paludi ad alta capacità L890 OP con caratteristiche specializzate per progetti impegnativi in terreni umidi.'
-        )
-        ['en-UK'](
-          'L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.'
         )
         ['nl-NL'](
           'L890 OP Hoogcapaciteits moeras bulldozer met gespecialiseerde functies voor uitdagende wetland projecten.'
@@ -94,7 +90,6 @@ const l890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('l890-op')
         ['it-IT']('l890-op')
-        ['en-UK']('l890-op')
         ['nl-NL']('l890-op')
         ['fr-FR']('l890-op')
         ['en-AU']('l890-op')

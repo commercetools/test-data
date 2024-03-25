@@ -18,7 +18,6 @@ describe(`with defaultStore preset`, () => {
           "en-AU": "Default",
           "en-GB": "Default",
           "en-NZ": "Default",
-          "en-UK": "Default",
           "en-US": "Default",
           "es-ES": "Predeterminado",
           "fr": undefined,
@@ -51,10 +50,6 @@ describe(`with defaultStore preset`, () => {
           {
             "locale": "it-IT",
             "value": "Predefinito",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Default",
           },
           {
             "locale": "nl-NL",

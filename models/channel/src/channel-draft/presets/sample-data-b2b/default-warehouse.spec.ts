@@ -18,7 +18,6 @@ describe(`with defaultWarehouse preset`, () => {
           "en-AU": "Default warehouse",
           "en-GB": "Default warehouse",
           "en-NZ": "Default warehouse",
-          "en-UK": "Default warehouse",
           "en-US": "Default warehouse",
           "es-ES": "Almacén predeterminado",
           "fr": undefined,
@@ -52,10 +51,6 @@ describe(`with defaultWarehouse preset`, () => {
           {
             "locale": "it-IT",
             "value": "Magazzino predefinito",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Default warehouse",
           },
           {
             "locale": "nl-NL",

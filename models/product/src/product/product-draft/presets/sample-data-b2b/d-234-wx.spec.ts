@@ -20,7 +20,6 @@ describe(`with d234Wx preset`, () => {
           "en-AU": "Specialized log loader designed for efficient handling of logs in forestry operations.",
           "en-GB": "Specialized log loader designed for efficient handling of logs in forestry operations.",
           "en-NZ": "Specialized log loader designed for efficient handling of logs in forestry operations.",
-          "en-UK": "Specialized log loader designed for efficient handling of logs in forestry operations.",
           "en-US": "Specialized log loader designed for efficient handling of logs in forestry operations.",
           "es-ES": "Cargador de troncos especializado diseñado para la manipulación eficiente de troncos en operaciones forestales.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with d234Wx preset`, () => {
           "en-AU": "D234 WX Log Loader",
           "en-GB": "D234 WX Log Loader",
           "en-NZ": "D234 WX Log Loader",
-          "en-UK": "D234 WX Log Loader",
           "en-US": "D234 WX Log Loader",
           "es-ES": "D234 WX Cargador de troncos",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with d234Wx preset`, () => {
           "en-AU": "d234-wx",
           "en-GB": "d234-wx",
           "en-NZ": "d234-wx",
-          "en-UK": "d234-wx",
           "en-US": "d234-wx",
           "es-ES": "d234-wx",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with d234Wx preset`, () => {
             "value": "Caricatore di tronchi specializzato progettato per la manipolazione efficiente di tronchi in operazioni forestali.",
           },
           {
-            "locale": "en-UK",
-            "value": "Specialized log loader designed for efficient handling of logs in forestry operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Gespecialiseerde boomlader ontworpen voor efficiënte hantering van boomstammen in bosbouwoperaties.",
           },
@@ -299,10 +292,6 @@ describe(`with d234Wx preset`, () => {
             "value": "D234 WX Caricatore di Tronchi",
           },
           {
-            "locale": "en-UK",
-            "value": "D234 WX Log Loader",
-          },
-          {
             "locale": "nl-NL",
             "value": "D234 WX Boomlader",
           },
@@ -349,10 +338,6 @@ describe(`with d234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "d234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "d234-wx",
           },
           {

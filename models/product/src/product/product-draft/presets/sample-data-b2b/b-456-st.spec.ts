@@ -20,7 +20,6 @@ describe(`with b456St preset`, () => {
           "en-AU": "Versatile construction loader for various construction and loading applications.",
           "en-GB": "Versatile construction loader for various construction and loading applications.",
           "en-NZ": "Versatile construction loader for various construction and loading applications.",
-          "en-UK": "Versatile construction loader for various construction and loading applications.",
           "en-US": "Versatile construction loader for various construction and loading applications.",
           "es-ES": "Cargador de construcción versátil para diversas aplicaciones de construcción y carga.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with b456St preset`, () => {
           "en-AU": "B456 ST Construction Loader",
           "en-GB": "B456 ST Construction Loader",
           "en-NZ": "B456 ST Construction Loader",
-          "en-UK": "B456 ST Construction Loader",
           "en-US": "B456 ST Construction Loader",
           "es-ES": "B456 ST Cargador de construcción",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with b456St preset`, () => {
           "en-AU": "b456-st",
           "en-GB": "b456-st",
           "en-NZ": "b456-st",
-          "en-UK": "b456-st",
           "en-US": "b456-st",
           "es-ES": "b456-st",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with b456St preset`, () => {
             "value": "Caricatore per costruzioni versatile per varie applicazioni di costruzione e carico.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile construction loader for various construction and loading applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige bouwlader voor diverse bouw- en laadtoepassingen.",
           },
@@ -299,10 +292,6 @@ describe(`with b456St preset`, () => {
             "value": "B456 ST Caricatore per Costruzioni",
           },
           {
-            "locale": "en-UK",
-            "value": "B456 ST Construction Loader",
-          },
-          {
             "locale": "nl-NL",
             "value": "B456 ST Bouwlader",
           },
@@ -349,10 +338,6 @@ describe(`with b456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "b456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "b456-st",
           },
           {

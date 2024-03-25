@@ -20,7 +20,6 @@ describe(`with u123Qr preset`, () => {
           "en-AU": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
           "en-GB": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
           "en-NZ": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
-          "en-UK": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
           "en-US": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
           "es-ES": "Camión volquete articulado resistente para el transporte eficiente de cargas pesadas en construcción y minería.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with u123Qr preset`, () => {
           "en-AU": "U123 QR Articulated Dump Truck",
           "en-GB": "U123 QR Articulated Dump Truck",
           "en-NZ": "U123 QR Articulated Dump Truck",
-          "en-UK": "U123 QR Articulated Dump Truck",
           "en-US": "U123 QR Articulated Dump Truck",
           "es-ES": "U123 QR Camión volquete articulado",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with u123Qr preset`, () => {
           "en-AU": "u123-qr",
           "en-GB": "u123-qr",
           "en-NZ": "u123-qr",
-          "en-UK": "u123-qr",
           "en-US": "u123-qr",
           "es-ES": "u123-qr",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with u123Qr preset`, () => {
             "value": "Camion ribaltabile articolato durevole per il trasporto efficiente di carichi pesanti in costruzioni e miniere.",
           },
           {
-            "locale": "en-UK",
-            "value": "Durable articulated dump truck for efficient transport of heavy loads in construction and mining.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Duurzame knikdumptruck voor efficiënt transport van zware ladingen in bouw en mijnbouw.",
           },
@@ -299,10 +292,6 @@ describe(`with u123Qr preset`, () => {
             "value": "U123 QR Camion Ribaltabile Articolato",
           },
           {
-            "locale": "en-UK",
-            "value": "U123 QR Articulated Dump Truck",
-          },
-          {
             "locale": "nl-NL",
             "value": "U123 QR Knikdumptruck",
           },
@@ -349,10 +338,6 @@ describe(`with u123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "u123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "u123-qr",
           },
           {

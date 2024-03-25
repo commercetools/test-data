@@ -42,7 +42,6 @@ const b456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('B456 ST Bau-Lader')
         ['it-IT']('B456 ST Caricatore per Costruzioni')
-        ['en-UK']('B456 ST Construction Loader')
         ['nl-NL']('B456 ST Bouwlader')
         ['fr-FR']('B456 ST Chargeur de construction')
         ['en-AU']('B456 ST Construction Loader')
@@ -60,9 +59,6 @@ const b456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore per costruzioni versatile per varie applicazioni di costruzione e carico.'
-        )
-        ['en-UK'](
-          'Versatile construction loader for various construction and loading applications.'
         )
         ['nl-NL'](
           'Veelzijdige bouwlader voor diverse bouw- en laadtoepassingen.'
@@ -94,7 +90,6 @@ const b456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('b456-st')
         ['it-IT']('b456-st')
-        ['en-UK']('b456-st')
         ['nl-NL']('b456-st')
         ['fr-FR']('b456-st')
         ['en-AU']('b456-st')

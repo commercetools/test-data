@@ -20,7 +20,6 @@ describe(`with nn456St preset`, () => {
           "en-AU": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
           "en-GB": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
           "en-NZ": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
-          "en-UK": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
           "en-US": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
           "es-ES": "Excavadora de ruedas de alta capacidad con características especializadas para operaciones mineras eficientes.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with nn456St preset`, () => {
           "en-AU": "NN456 ST Wheeled Excavator for Mining",
           "en-GB": "NN456 ST Wheeled Excavator for Mining",
           "en-NZ": "NN456 ST Wheeled Excavator for Mining",
-          "en-UK": "NN456 ST Wheeled Excavator for Mining",
           "en-US": "NN456 ST Wheeled Excavator for Mining",
           "es-ES": "NN456 ST Excavadora de ruedas para minería",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with nn456St preset`, () => {
           "en-AU": "nn456-st",
           "en-GB": "nn456-st",
           "en-NZ": "nn456-st",
-          "en-UK": "nn456-st",
           "en-US": "nn456-st",
           "es-ES": "nn456-st",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with nn456St preset`, () => {
             "value": "Escavatore su ruote ad alta capacità con caratteristiche specializzate per operazioni di estrazione efficienti.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity wheeled excavator with specialized features for efficient mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits wiellader met gespecialiseerde functies voor efficiënte mijnbouwoperaties.",
           },
@@ -299,10 +292,6 @@ describe(`with nn456St preset`, () => {
             "value": "NN456 ST Escavatore su Ruote per Miniere",
           },
           {
-            "locale": "en-UK",
-            "value": "NN456 ST Wheeled Excavator for Mining",
-          },
-          {
             "locale": "nl-NL",
             "value": "NN456 ST Wiellader voor Mijnbouw",
           },
@@ -349,10 +338,6 @@ describe(`with nn456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "nn456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "nn456-st",
           },
           {

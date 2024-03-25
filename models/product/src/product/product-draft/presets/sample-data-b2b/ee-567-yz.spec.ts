@@ -20,7 +20,6 @@ describe(`with ee567Yz preset`, () => {
           "en-AU": "High-capacity fine grader with advanced features for efficient surface finishing.",
           "en-GB": "High-capacity fine grader with advanced features for efficient surface finishing.",
           "en-NZ": "High-capacity fine grader with advanced features for efficient surface finishing.",
-          "en-UK": "High-capacity fine grader with advanced features for efficient surface finishing.",
           "en-US": "High-capacity fine grader with advanced features for efficient surface finishing.",
           "es-ES": "Niveladora fina de alta capacidad con características avanzadas para un acabado de superficie eficiente.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with ee567Yz preset`, () => {
           "en-AU": "EE567 YZ Fine Grader",
           "en-GB": "EE567 YZ Fine Grader",
           "en-NZ": "EE567 YZ Fine Grader",
-          "en-UK": "EE567 YZ Fine Grader",
           "en-US": "EE567 YZ Fine Grader",
           "es-ES": "EE567 YZ Niveladora fina",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with ee567Yz preset`, () => {
           "en-AU": "ee567-yz",
           "en-GB": "ee567-yz",
           "en-NZ": "ee567-yz",
-          "en-UK": "ee567-yz",
           "en-US": "ee567-yz",
           "es-ES": "ee567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with ee567Yz preset`, () => {
             "value": "Livellatrice fine ad alta capacità con caratteristiche avanzate per una finitura efficiente delle superfici.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity fine grader with advanced features for efficient surface finishing.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits fijnnivelleermachine met geavanceerde functies voor efficiënte oppervlakteafwerking.",
           },
@@ -299,10 +292,6 @@ describe(`with ee567Yz preset`, () => {
             "value": "EE567 YZ Livellatrice Fine",
           },
           {
-            "locale": "en-UK",
-            "value": "EE567 YZ Fine Grader",
-          },
-          {
             "locale": "nl-NL",
             "value": "EE567 YZ Fijnnivelleermachine",
           },
@@ -349,10 +338,6 @@ describe(`with ee567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ee567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "ee567-yz",
           },
           {

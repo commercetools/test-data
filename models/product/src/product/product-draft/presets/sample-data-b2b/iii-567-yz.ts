@@ -42,7 +42,6 @@ const iii567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('III567 YZ Rammpfahlhammer')
         ['it-IT']('III567 YZ Martello per Pali')
-        ['en-UK']('III567 YZ Piling Hammer')
         ['nl-NL']('III567 YZ Heihamer')
         ['fr-FR']('III567 YZ Marteau de battage')
         ['en-AU']('III567 YZ Piling Hammer')
@@ -60,9 +59,6 @@ const iii567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.'
-        )
-        ['en-UK'](
-          'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'
         )
         ['nl-NL'](
           'Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.'
@@ -94,7 +90,6 @@ const iii567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('iii567-yz')
         ['it-IT']('iii567-yz')
-        ['en-UK']('iii567-yz')
         ['nl-NL']('iii567-yz')
         ['fr-FR']('iii567-yz')
         ['en-AU']('iii567-yz')

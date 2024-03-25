@@ -18,7 +18,6 @@ describe(`with euWarehouse preset`, () => {
           "en-AU": "Europe warehouse",
           "en-GB": "Europe warehouse",
           "en-NZ": "Europe warehouse",
-          "en-UK": "Europe warehouse",
           "en-US": "Europe warehouse",
           "es-ES": "Almacén Europa",
           "fr": undefined,
@@ -52,10 +51,6 @@ describe(`with euWarehouse preset`, () => {
           {
             "locale": "it-IT",
             "value": "Magazzino Europa",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Europe warehouse",
           },
           {
             "locale": "nl-NL",

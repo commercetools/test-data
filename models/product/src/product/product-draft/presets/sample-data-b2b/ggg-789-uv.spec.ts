@@ -20,7 +20,6 @@ describe(`with ggg789Uv preset`, () => {
           "en-AU": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
           "en-GB": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
           "en-NZ": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
-          "en-UK": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
           "en-US": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
           "es-ES": "Martillo de cantera versátil con control preciso para diversas tareas de extracción de rocas en minería y construcción.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with ggg789Uv preset`, () => {
           "en-AU": "GGG789 UV Quarrying Hammer",
           "en-GB": "GGG789 UV Quarrying Hammer",
           "en-NZ": "GGG789 UV Quarrying Hammer",
-          "en-UK": "GGG789 UV Quarrying Hammer",
           "en-US": "GGG789 UV Quarrying Hammer",
           "es-ES": "GGG789 UV Martillo de cantera",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with ggg789Uv preset`, () => {
           "en-AU": "ggg789-uv",
           "en-GB": "ggg789-uv",
           "en-NZ": "ggg789-uv",
-          "en-UK": "ggg789-uv",
           "en-US": "ggg789-uv",
           "es-ES": "ggg789-uv",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with ggg789Uv preset`, () => {
             "value": "Martello per cave versatile con controllo di precisione per vari compiti di estrazione di roccia in miniere e costruzioni.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige steengroevehamer met precisiecontrole voor diverse rotsontginningstaken in mijnbouw en bouw.",
           },
@@ -341,10 +334,6 @@ describe(`with ggg789Uv preset`, () => {
             "value": "GGG789 UV Martello per Cave",
           },
           {
-            "locale": "en-UK",
-            "value": "GGG789 UV Quarrying Hammer",
-          },
-          {
             "locale": "nl-NL",
             "value": "GGG789 UV Steengroevehamer",
           },
@@ -391,10 +380,6 @@ describe(`with ggg789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ggg789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "ggg789-uv",
           },
           {

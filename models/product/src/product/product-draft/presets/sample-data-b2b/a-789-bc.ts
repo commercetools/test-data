@@ -42,7 +42,6 @@ const a789Bc = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('A789 BC Tiefbergbaubagger')
         ['it-IT']('A789 BC Escavatore per Miniere Profonde')
-        ['en-UK']('A789 BC Deep Mining Excavator')
         ['nl-NL']('A789 BC Diepe Mijnbouw Graafmachine')
         ['fr-FR']('A789 BC Excavateur minier profond')
         ['en-AU']('A789 BC Deep Mining Excavator')
@@ -60,9 +59,6 @@ const a789Bc = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore avanzato per miniere profonde con controllo di precisione per l&#39;estrazione di risorse in profondità.'
-        )
-        ['en-UK'](
-          'Advanced deep mining excavator with precision control for extracting resources from depth.'
         )
         ['nl-NL'](
           'Geavanceerde diepe mijnbouw graafmachine met precisiecontrole voor het extraheren van grondstoffen uit de diepte.'
@@ -94,7 +90,6 @@ const a789Bc = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('a789-bc')
         ['it-IT']('a789-bc')
-        ['en-UK']('a789-bc')
         ['nl-NL']('a789-bc')
         ['fr-FR']('a789-bc')
         ['en-AU']('a789-bc')

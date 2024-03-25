@@ -20,7 +20,6 @@ describe(`with a789Bc preset`, () => {
           "en-AU": "Advanced deep mining excavator with precision control for extracting resources from depth.",
           "en-GB": "Advanced deep mining excavator with precision control for extracting resources from depth.",
           "en-NZ": "Advanced deep mining excavator with precision control for extracting resources from depth.",
-          "en-UK": "Advanced deep mining excavator with precision control for extracting resources from depth.",
           "en-US": "Advanced deep mining excavator with precision control for extracting resources from depth.",
           "es-ES": "Excavadora minera profunda avanzada con control de precisión para extraer recursos desde la profundidad.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with a789Bc preset`, () => {
           "en-AU": "A789 BC Deep Mining Excavator",
           "en-GB": "A789 BC Deep Mining Excavator",
           "en-NZ": "A789 BC Deep Mining Excavator",
-          "en-UK": "A789 BC Deep Mining Excavator",
           "en-US": "A789 BC Deep Mining Excavator",
           "es-ES": "A789 BC Excavadora minera profunda",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with a789Bc preset`, () => {
           "en-AU": "a789-bc",
           "en-GB": "a789-bc",
           "en-NZ": "a789-bc",
-          "en-UK": "a789-bc",
           "en-US": "a789-bc",
           "es-ES": "a789-bc",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with a789Bc preset`, () => {
             "value": "Escavatore avanzato per miniere profonde con controllo di precisione per l&#39;estrazione di risorse in profondità.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced deep mining excavator with precision control for extracting resources from depth.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde diepe mijnbouw graafmachine met precisiecontrole voor het extraheren van grondstoffen uit de diepte.",
           },
@@ -299,10 +292,6 @@ describe(`with a789Bc preset`, () => {
             "value": "A789 BC Escavatore per Miniere Profonde",
           },
           {
-            "locale": "en-UK",
-            "value": "A789 BC Deep Mining Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "A789 BC Diepe Mijnbouw Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with a789Bc preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "a789-bc",
-          },
-          {
-            "locale": "en-UK",
             "value": "a789-bc",
           },
           {

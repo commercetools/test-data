@@ -11,7 +11,6 @@ const usLargeCustomers = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('US-Großkunden')
         ['it-IT']('Grandi Clienti degli Stati Uniti')
-        ['en-UK']('US Large Customers')
         ['nl-NL']('Grote Klanten in de VS')
         ['fr-FR']('Grands Clients des États-Unis')
         ['en-AU']('US Large Customers')

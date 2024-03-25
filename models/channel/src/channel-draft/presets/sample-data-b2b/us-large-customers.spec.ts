@@ -18,7 +18,6 @@ describe(`with usLargeCustomers preset`, () => {
           "en-AU": "US Large Customers",
           "en-GB": "US Large Customers",
           "en-NZ": "US Large Customers",
-          "en-UK": "US Large Customers",
           "en-US": "US Large Customers",
           "es-ES": "Clientes Grandes de Estados Unidos",
           "fr": undefined,
@@ -52,10 +51,6 @@ describe(`with usLargeCustomers preset`, () => {
           {
             "locale": "it-IT",
             "value": "Grandi Clienti USA",
-          },
-          {
-            "locale": "en-UK",
-            "value": "US Large Customers",
           },
           {
             "locale": "nl-NL",

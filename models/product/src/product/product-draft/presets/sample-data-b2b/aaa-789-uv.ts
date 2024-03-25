@@ -42,7 +42,6 @@ const aaa789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('AAA789 UV Erkundungsbohrer')
         ['it-IT']('AAA789 UV Trapano per Esplorazione')
-        ['en-UK']('AAA789 UV Exploration Drill')
         ['nl-NL']('AAA789 UV Exploratieboor')
         ['fr-FR']('AAA789 UV Forage d&#39;exploration')
         ['en-AU']('AAA789 UV Exploration Drill')
@@ -60,9 +59,6 @@ const aaa789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Trapano avanzato per esplorazione con capacità di trapanazione di precisione per indagini geotecniche.'
-        )
-        ['en-UK'](
-          'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'
         )
         ['nl-NL'](
           'Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.'
@@ -94,7 +90,6 @@ const aaa789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('aaa789-uv')
         ['it-IT']('aaa789-uv')
-        ['en-UK']('aaa789-uv')
         ['nl-NL']('aaa789-uv')
         ['fr-FR']('aaa789-uv')
         ['en-AU']('aaa789-uv')

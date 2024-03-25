@@ -20,7 +20,6 @@ describe(`with p234Qw preset`, () => {
           "en-AU": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
           "en-GB": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
           "en-NZ": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
-          "en-UK": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
           "en-US": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
           "es-ES": "Excavadora anfibia versátil diseñada para proyectos de excavación en tierra y agua.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with p234Qw preset`, () => {
           "en-AU": "P234 QW Amphibious Excavator",
           "en-GB": "P234 QW Amphibious Excavator",
           "en-NZ": "P234 QW Amphibious Excavator",
-          "en-UK": "P234 QW Amphibious Excavator",
           "en-US": "P234 QW Amphibious Excavator",
           "es-ES": "P234 QW Excavadora anfibia",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with p234Qw preset`, () => {
           "en-AU": "p234-qw",
           "en-GB": "p234-qw",
           "en-NZ": "p234-qw",
-          "en-UK": "p234-qw",
           "en-US": "p234-qw",
           "es-ES": "p234-qw",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with p234Qw preset`, () => {
             "value": "Escavatore anfibio versatile progettato sia per progetti di scavo terrestri che acquatici.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile amphibious excavator designed for both land and water-based excavation projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.",
           },
@@ -299,10 +292,6 @@ describe(`with p234Qw preset`, () => {
             "value": "P234 QW Escavatore Anfibio",
           },
           {
-            "locale": "en-UK",
-            "value": "P234 QW Amphibious Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "P234 QW Amfibische Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with p234Qw preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "p234-qw",
-          },
-          {
-            "locale": "en-UK",
             "value": "p234-qw",
           },
           {

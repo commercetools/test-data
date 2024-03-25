@@ -20,7 +20,6 @@ describe(`with qq567Yz preset`, () => {
           "en-AU": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
           "en-GB": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
           "en-NZ": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
-          "en-UK": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
           "en-US": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
           "es-ES": "Excavadora de ruedas para ferrocarril de alta capacidad con características avanzadas para una construcción ferroviaria eficiente.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with qq567Yz preset`, () => {
           "en-AU": "QQ567 YZ Railroad Railroad Wheeled Excavator",
           "en-GB": "QQ567 YZ Railroad Railroad Wheeled Excavator",
           "en-NZ": "QQ567 YZ Railroad Railroad Wheeled Excavator",
-          "en-UK": "QQ567 YZ Railroad Railroad Wheeled Excavator",
           "en-US": "QQ567 YZ Railroad Railroad Wheeled Excavator",
           "es-ES": "QQ567 YZ Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with qq567Yz preset`, () => {
           "en-AU": "qq567-yz",
           "en-GB": "qq567-yz",
           "en-NZ": "qq567-yz",
-          "en-UK": "qq567-yz",
           "en-US": "qq567-yz",
           "es-ES": "qq567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with qq567Yz preset`, () => {
             "value": "Escavatore su ruote per ferrovie ad alta capacità con caratteristiche avanzate per la costruzione efficiente di ferrovie.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity railroad wheeled excavator with advanced features for efficient railway construction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits spoorweg wiellader graafmachine met geavanceerde functies voor efficiënte spoorwegbouw.",
           },
@@ -299,10 +292,6 @@ describe(`with qq567Yz preset`, () => {
             "value": "QQ567 YZ Escavatore su Ruote per Ferrovie",
           },
           {
-            "locale": "en-UK",
-            "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "QQ567 YZ Spoorweg Wiellader Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with qq567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "qq567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "qq567-yz",
           },
           {

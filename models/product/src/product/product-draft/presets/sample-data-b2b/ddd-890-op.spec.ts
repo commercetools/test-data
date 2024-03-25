@@ -20,7 +20,6 @@ describe(`with ddd890Op preset`, () => {
           "en-AU": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
           "en-GB": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
           "en-NZ": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
-          "en-UK": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
           "en-US": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
           "es-ES": "Perforadora de producción versátil adecuada para una variedad de tareas de perforación en proyectos mineros a gran escala.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with ddd890Op preset`, () => {
           "en-AU": "DDD890 OP Production Drill",
           "en-GB": "DDD890 OP Production Drill",
           "en-NZ": "DDD890 OP Production Drill",
-          "en-UK": "DDD890 OP Production Drill",
           "en-US": "DDD890 OP Production Drill",
           "es-ES": "DDD890 OP Perforadora de producción",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with ddd890Op preset`, () => {
           "en-AU": "ddd890-op",
           "en-GB": "ddd890-op",
           "en-NZ": "ddd890-op",
-          "en-UK": "ddd890-op",
           "en-US": "ddd890-op",
           "es-ES": "ddd890-op",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with ddd890Op preset`, () => {
             "value": "Trapano versatile per produzione adatto per una varietà di compiti di trapanazione in progetti minerari su larga scala.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige productieboor geschikt voor een verscheidenheid aan boortaken in grootschalige mijnbouwprojecten.",
           },
@@ -341,10 +334,6 @@ describe(`with ddd890Op preset`, () => {
             "value": "DDD890 OP Trapano per Produzione",
           },
           {
-            "locale": "en-UK",
-            "value": "DDD890 OP Production Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "DDD890 OP Productieboor",
           },
@@ -391,10 +380,6 @@ describe(`with ddd890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ddd890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "ddd890-op",
           },
           {

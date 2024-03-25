@@ -20,7 +20,6 @@ describe(`with zz456St preset`, () => {
           "en-AU": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
           "en-GB": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
           "en-NZ": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
-          "en-UK": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
           "en-US": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
           "es-ES": "Perforadora de exploración versátil adecuada para diversas tareas de perforación en proyectos de exploración y geotécnica.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with zz456St preset`, () => {
           "en-AU": "ZZ456 ST Exploration Drill",
           "en-GB": "ZZ456 ST Exploration Drill",
           "en-NZ": "ZZ456 ST Exploration Drill",
-          "en-UK": "ZZ456 ST Exploration Drill",
           "en-US": "ZZ456 ST Exploration Drill",
           "es-ES": "ZZ456 ST Perforadora de exploración",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with zz456St preset`, () => {
           "en-AU": "zz456-st",
           "en-GB": "zz456-st",
           "en-NZ": "zz456-st",
-          "en-UK": "zz456-st",
           "en-US": "zz456-st",
           "es-ES": "zz456-st",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with zz456St preset`, () => {
             "value": "Trapano per esplorazione versatile adatto per vari compiti di trapanazione in progetti di esplorazione e geotecnici.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.",
           },
@@ -341,10 +334,6 @@ describe(`with zz456St preset`, () => {
             "value": "ZZ456 ST Trapano per Esplorazione",
           },
           {
-            "locale": "en-UK",
-            "value": "ZZ456 ST Exploration Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "ZZ456 ST Exploratieboor",
           },
@@ -391,10 +380,6 @@ describe(`with zz456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "zz456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "zz456-st",
           },
           {

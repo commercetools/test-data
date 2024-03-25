@@ -20,7 +20,6 @@ describe(`with oo789Uv preset`, () => {
           "en-AU": "Advanced wheeled excavator with specialized features for precision in mining operations.",
           "en-GB": "Advanced wheeled excavator with specialized features for precision in mining operations.",
           "en-NZ": "Advanced wheeled excavator with specialized features for precision in mining operations.",
-          "en-UK": "Advanced wheeled excavator with specialized features for precision in mining operations.",
           "en-US": "Advanced wheeled excavator with specialized features for precision in mining operations.",
           "es-ES": "Excavadora de ruedas avanzada con características especializadas para la precisión en operaciones mineras.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with oo789Uv preset`, () => {
           "en-AU": "OO789 UV Wheeled Excavator for Mining",
           "en-GB": "OO789 UV Wheeled Excavator for Mining",
           "en-NZ": "OO789 UV Wheeled Excavator for Mining",
-          "en-UK": "OO789 UV Wheeled Excavator for Mining",
           "en-US": "OO789 UV Wheeled Excavator for Mining",
           "es-ES": "OO789 UV Excavadora de ruedas para minería",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with oo789Uv preset`, () => {
           "en-AU": "oo789-uv",
           "en-GB": "oo789-uv",
           "en-NZ": "oo789-uv",
-          "en-UK": "oo789-uv",
           "en-US": "oo789-uv",
           "es-ES": "oo789-uv",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with oo789Uv preset`, () => {
             "value": "Escavatore avanzato su ruote con caratteristiche specializzate per precisione nelle operazioni minerarie.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced wheeled excavator with specialized features for precision in mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde wiellader met gespecialiseerde functies voor precisie in mijnbouwoperaties.",
           },
@@ -299,10 +292,6 @@ describe(`with oo789Uv preset`, () => {
             "value": "OO789 UV Escavatore su Ruote per Miniere",
           },
           {
-            "locale": "en-UK",
-            "value": "OO789 UV Wheeled Excavator for Mining",
-          },
-          {
             "locale": "nl-NL",
             "value": "OO789 UV Wiellader voor Mijnbouw",
           },
@@ -349,10 +338,6 @@ describe(`with oo789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "oo789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "oo789-uv",
           },
           {

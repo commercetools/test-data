@@ -42,7 +42,6 @@ const i789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('I789 UV Abfallverarbeitungsbagger')
         ['it-IT']('I789 UV Bulldozer per la Gestione dei Rifiuti')
-        ['en-UK']('I789 UV Waste Handling Bulldozer')
         ['nl-NL']('I789 UV Afvalverwerkings Bulldozer')
         ['fr-FR']('I789 UV Bulldozer de manutention des déchets')
         ['en-AU']('I789 UV Waste Handling Bulldozer')
@@ -60,9 +59,6 @@ const i789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Bulldozer avanzato per la gestione dei rifiuti con caratteristiche potenziate per compiti di gestione dei rifiuti complessi.'
-        )
-        ['en-UK'](
-          'Advanced waste handling bulldozer with enhanced features for complex waste management tasks.'
         )
         ['nl-NL'](
           'Geavanceerde afvalverwerkings bulldozer met verbeterde functies voor complexe afvalbeheertaken.'
@@ -94,7 +90,6 @@ const i789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('i789-uv')
         ['it-IT']('i789-uv')
-        ['en-UK']('i789-uv')
         ['nl-NL']('i789-uv')
         ['fr-FR']('i789-uv')
         ['en-AU']('i789-uv')

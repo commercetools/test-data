@@ -20,7 +20,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-GB": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-NZ": "Advanced landfill compactor with specialized features for effective waste compaction.",
-          "en-UK": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-US": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "es-ES": "Compactador de vertedero avanzado con características especializadas para una compactación efectiva de residuos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "KK567 YZ Landfill Compactor",
           "en-GB": "KK567 YZ Landfill Compactor",
           "en-NZ": "KK567 YZ Landfill Compactor",
-          "en-UK": "KK567 YZ Landfill Compactor",
           "en-US": "KK567 YZ Landfill Compactor",
           "es-ES": "KK567 YZ Compactador de vertedero",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "kk567-yz",
           "en-GB": "kk567-yz",
           "en-NZ": "kk567-yz",
-          "en-UK": "kk567-yz",
           "en-US": "kk567-yz",
           "es-ES": "kk567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with kk567Yz preset`, () => {
             "value": "Compattatore avanzato per discariche con caratteristiche specializzate per una compattazione efficace dei rifiuti.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced landfill compactor with specialized features for effective waste compaction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde stortplaatsverdichter met gespecialiseerde functies voor effectieve afvalverdichting.",
           },
@@ -299,10 +292,6 @@ describe(`with kk567Yz preset`, () => {
             "value": "KK567 YZ Compattatore per Discariche",
           },
           {
-            "locale": "en-UK",
-            "value": "KK567 YZ Landfill Compactor",
-          },
-          {
             "locale": "nl-NL",
             "value": "KK567 YZ Stortplaatsverdichter",
           },
@@ -349,10 +338,6 @@ describe(`with kk567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "kk567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "kk567-yz",
           },
           {

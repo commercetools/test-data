@@ -42,7 +42,6 @@ const cc789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('CC789 UV Flughafenplanierer')
         ['it-IT']('CC789 UV Livellatrice per Aeroporti')
-        ['en-UK']('CC789 UV Airport Grader')
         ['nl-NL']('CC789 UV Luchthavennivelleermachine')
         ['fr-FR']('CC789 UV Niveleuse aéroportuaire')
         ['en-AU']('CC789 UV Airport Grader')
@@ -60,9 +59,6 @@ const cc789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Livellatrice avanzata per aeroporti con caratteristiche specializzate per la classificazione precisa delle piste.'
-        )
-        ['en-UK'](
-          'Advanced airport grader with specialized features for precise runway grading.'
         )
         ['nl-NL'](
           'Geavanceerde luchthavennivelleermachine met gespecialiseerde functies voor precieze baanegalisatie.'
@@ -94,7 +90,6 @@ const cc789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('cc789-uv')
         ['it-IT']('cc789-uv')
-        ['en-UK']('cc789-uv')
         ['nl-NL']('cc789-uv')
         ['fr-FR']('cc789-uv')
         ['en-AU']('cc789-uv')

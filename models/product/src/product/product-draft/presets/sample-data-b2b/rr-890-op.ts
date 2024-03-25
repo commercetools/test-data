@@ -42,7 +42,6 @@ const rr890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('RR890 OP Railroad Schienenradbagger')
         ['it-IT']('RR890 OP Escavatore su Ruote per Ferrovie')
-        ['en-UK']('RR890 OP Railroad Railroad Wheeled Excavator')
         ['nl-NL']('RR890 OP Spoorweg Wiellader Graafmachine')
         ['fr-FR']('RR890 OP Railroad Excavatrice sur roues pour chemin de fer')
         ['en-AU']('RR890 OP Railroad Railroad Wheeled Excavator')
@@ -60,9 +59,6 @@ const rr890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore su ruote per ferrovie versatile con caratteristiche specializzate per vari compiti nella costruzione di ferrovie.'
-        )
-        ['en-UK'](
-          'Versatile railroad wheeled excavator with specialized features for various railway construction tasks.'
         )
         ['nl-NL'](
           'Veelzijdige spoorweg wiellader graafmachine met gespecialiseerde functies voor diverse spoorwegbouwtaken.'
@@ -94,7 +90,6 @@ const rr890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('rr890-op')
         ['it-IT']('rr890-op')
-        ['en-UK']('rr890-op')
         ['nl-NL']('rr890-op')
         ['fr-FR']('rr890-op')
         ['en-AU']('rr890-op')

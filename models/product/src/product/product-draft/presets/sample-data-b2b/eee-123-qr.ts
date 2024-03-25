@@ -42,7 +42,6 @@ const eee123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('EEE123 QR Abbruchhammer')
         ['it-IT']('EEE123 QR Martello Demolitore')
-        ['en-UK']('EEE123 QR Demolition Hammer')
         ['nl-NL']('EEE123 QR Sloophamer')
         ['fr-FR']('EEE123 QR Marteau de démolition')
         ['en-AU']('EEE123 QR Demolition Hammer')
@@ -60,9 +59,6 @@ const eee123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Potente martello demolitore progettato per compiti efficienti di demolizione e frantumazione in progetti edili.'
-        )
-        ['en-UK'](
-          'Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.'
         )
         ['nl-NL'](
           'Krachtige sloophamer ontworpen voor efficiënt breken en slopen in bouwprojecten.'
@@ -94,7 +90,6 @@ const eee123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('eee123-qr')
         ['it-IT']('eee123-qr')
-        ['en-UK']('eee123-qr')
         ['nl-NL']('eee123-qr')
         ['fr-FR']('eee123-qr')
         ['en-AU']('eee123-qr')

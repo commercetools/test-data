@@ -11,7 +11,6 @@ const spain = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('Spanien')
         ['it-IT']('Spagna')
-        ['en-UK']('Spain')
         ['nl-NL']('Spanje')
         ['fr-FR']('Espagnole')
         ['en-AU']('Spain')

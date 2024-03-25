@@ -20,7 +20,6 @@ describe(`with hh456St preset`, () => {
           "en-AU": "Versatile pneumatic roller for effective compaction of various surfaces.",
           "en-GB": "Versatile pneumatic roller for effective compaction of various surfaces.",
           "en-NZ": "Versatile pneumatic roller for effective compaction of various surfaces.",
-          "en-UK": "Versatile pneumatic roller for effective compaction of various surfaces.",
           "en-US": "Versatile pneumatic roller for effective compaction of various surfaces.",
           "es-ES": "Rodillo neumático versátil para la compactación efectiva de diversas superficies.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with hh456St preset`, () => {
           "en-AU": "HH456 ST Pneumatic Roller",
           "en-GB": "HH456 ST Pneumatic Roller",
           "en-NZ": "HH456 ST Pneumatic Roller",
-          "en-UK": "HH456 ST Pneumatic Roller",
           "en-US": "HH456 ST Pneumatic Roller",
           "es-ES": "HH456 ST Rodillo neumático",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with hh456St preset`, () => {
           "en-AU": "hh456-st",
           "en-GB": "hh456-st",
           "en-NZ": "hh456-st",
-          "en-UK": "hh456-st",
           "en-US": "hh456-st",
           "es-ES": "hh456-st",
           "fr": undefined,
@@ -206,10 +203,6 @@ describe(`with hh456St preset`, () => {
             "value": "Rullo pneumatico versatile per la compattazione efficace di varie superfici.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile pneumatic roller for effective compaction of various surfaces.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige pneumatische wals voor effectieve verdichting van diverse oppervlakken.",
           },
@@ -290,10 +283,6 @@ describe(`with hh456St preset`, () => {
             "value": "HH456 ST Rullo Pneumatico",
           },
           {
-            "locale": "en-UK",
-            "value": "HH456 ST Pneumatic Roller",
-          },
-          {
             "locale": "nl-NL",
             "value": "HH456 ST Pneumatische Wals",
           },
@@ -340,10 +329,6 @@ describe(`with hh456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "hh456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "hh456-st",
           },
           {

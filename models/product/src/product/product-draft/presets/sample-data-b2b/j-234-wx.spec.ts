@@ -20,7 +20,6 @@ describe(`with j234Wx preset`, () => {
           "en-AU": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
           "en-GB": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
           "en-NZ": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
-          "en-UK": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
           "en-US": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
           "es-ES": "Topadora de pantano especializada para operaciones eficientes en áreas pantanosas y húmedas.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with j234Wx preset`, () => {
           "en-AU": "J234 WX Swamp Bulldozer",
           "en-GB": "J234 WX Swamp Bulldozer",
           "en-NZ": "J234 WX Swamp Bulldozer",
-          "en-UK": "J234 WX Swamp Bulldozer",
           "en-US": "J234 WX Swamp Bulldozer",
           "es-ES": "J234 WX Topadora de pantano",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with j234Wx preset`, () => {
           "en-AU": "j234-wx",
           "en-GB": "j234-wx",
           "en-NZ": "j234-wx",
-          "en-UK": "j234-wx",
           "en-US": "j234-wx",
           "es-ES": "j234-wx",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with j234Wx preset`, () => {
             "value": "Bulldozer specializzato per paludi per operazioni efficienti in aree paludose e terreni umidi.",
           },
           {
-            "locale": "en-UK",
-            "value": "Specialized swamp bulldozer for efficient operations in marshy and wetland areas.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Gespecialiseerde moeras bulldozer voor efficiënte operaties in moerassige en wetland gebieden.",
           },
@@ -299,10 +292,6 @@ describe(`with j234Wx preset`, () => {
             "value": "J234 WX Bulldozer per Paludi",
           },
           {
-            "locale": "en-UK",
-            "value": "J234 WX Swamp Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "J234 WX Moeras Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with j234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "j234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "j234-wx",
           },
           {

@@ -20,7 +20,6 @@ describe(`with y567Yz preset`, () => {
           "en-AU": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
           "en-GB": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
           "en-NZ": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
-          "en-UK": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
           "en-US": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
           "es-ES": "Camión volquete fuera de carretera resistente con características mejoradas para el transporte confiable de materiales.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with y567Yz preset`, () => {
           "en-AU": "Y567 YZ Off-Highway Dump Truck",
           "en-GB": "Y567 YZ Off-Highway Dump Truck",
           "en-NZ": "Y567 YZ Off-Highway Dump Truck",
-          "en-UK": "Y567 YZ Off-Highway Dump Truck",
           "en-US": "Y567 YZ Off-Highway Dump Truck",
           "es-ES": "Y567 YZ Camión volquete fuera de carretera",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with y567Yz preset`, () => {
           "en-AU": "y567-yz",
           "en-GB": "y567-yz",
           "en-NZ": "y567-yz",
-          "en-UK": "y567-yz",
           "en-US": "y567-yz",
           "es-ES": "y567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with y567Yz preset`, () => {
             "value": "Camion ribaltabile fuoristrada per impieghi pesanti con caratteristiche potenziate per un trasporto affidabile dei materiali.",
           },
           {
-            "locale": "en-UK",
-            "value": "Heavy-duty off-highway dump truck with enhanced features for reliable material transport.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Zware off-highway dumptruck met verbeterde functies voor betrouwbaar materiaaltransport.",
           },
@@ -299,10 +292,6 @@ describe(`with y567Yz preset`, () => {
             "value": "Y567 YZ Camion Ribaltabile Fuoristrada",
           },
           {
-            "locale": "en-UK",
-            "value": "Y567 YZ Off-Highway Dump Truck",
-          },
-          {
             "locale": "nl-NL",
             "value": "Y567 YZ Off-Highway Dumptruck",
           },
@@ -349,10 +338,6 @@ describe(`with y567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "y567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "y567-yz",
           },
           {

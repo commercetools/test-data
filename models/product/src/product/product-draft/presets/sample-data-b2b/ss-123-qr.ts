@@ -42,7 +42,6 @@ const ss123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('SS123 QR Turmkran für Hochhausbau')
         ['it-IT']('SS123 QR Gru a Torre per Costruzioni Alte')
-        ['en-UK']('SS123 QR Tower Crane for High-rise Construction')
         ['nl-NL']('SS123 QR Torenkraan voor Hoogbouw')
         ['fr-FR'](
           'SS123 QR Grue de chantier pour la construction de gratte-ciel'
@@ -62,9 +61,6 @@ const ss123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Gru a torre ad alte prestazioni progettata per sollevamenti efficienti in progetti di costruzione di grattacieli.'
-        )
-        ['en-UK'](
-          'High-performance tower crane designed for efficient lifting in high-rise construction projects.'
         )
         ['nl-NL'](
           'Hoogpresterende torenkraan ontworpen voor efficiënt hijsen bij hoogbouwprojecten.'
@@ -96,7 +92,6 @@ const ss123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ss123-qr')
         ['it-IT']('ss123-qr')
-        ['en-UK']('ss123-qr')
         ['nl-NL']('ss123-qr')
         ['fr-FR']('ss123-qr')
         ['en-AU']('ss123-qr')

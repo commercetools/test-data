@@ -42,7 +42,6 @@ const ee567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('EE567 YZ Feinplanierer')
         ['it-IT']('EE567 YZ Livellatrice Fine')
-        ['en-UK']('EE567 YZ Fine Grader')
         ['nl-NL']('EE567 YZ Fijnnivelleermachine')
         ['fr-FR']('EE567 YZ Niveleuse fine')
         ['en-AU']('EE567 YZ Fine Grader')
@@ -60,9 +59,6 @@ const ee567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Livellatrice fine ad alta capacità con caratteristiche avanzate per una finitura efficiente delle superfici.'
-        )
-        ['en-UK'](
-          'High-capacity fine grader with advanced features for efficient surface finishing.'
         )
         ['nl-NL'](
           'Hoogcapaciteits fijnnivelleermachine met geavanceerde functies voor efficiënte oppervlakteafwerking.'
@@ -94,7 +90,6 @@ const ee567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ee567-yz')
         ['it-IT']('ee567-yz')
-        ['en-UK']('ee567-yz')
         ['nl-NL']('ee567-yz')
         ['fr-FR']('ee567-yz')
         ['en-AU']('ee567-yz')

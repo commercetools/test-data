@@ -20,7 +20,6 @@ describe(`with r123Ts preset`, () => {
           "en-AU": "Powerful surface mining excavator designed for large-scale mining operations.",
           "en-GB": "Powerful surface mining excavator designed for large-scale mining operations.",
           "en-NZ": "Powerful surface mining excavator designed for large-scale mining operations.",
-          "en-UK": "Powerful surface mining excavator designed for large-scale mining operations.",
           "en-US": "Powerful surface mining excavator designed for large-scale mining operations.",
           "es-ES": "Excavadora minera de superficie potente diseñada para operaciones mineras a gran escala.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with r123Ts preset`, () => {
           "en-AU": "R123 TS Surface Mining Excavator",
           "en-GB": "R123 TS Surface Mining Excavator",
           "en-NZ": "R123 TS Surface Mining Excavator",
-          "en-UK": "R123 TS Surface Mining Excavator",
           "en-US": "R123 TS Surface Mining Excavator",
           "es-ES": "R123 TS Excavadora minera de superficie",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with r123Ts preset`, () => {
           "en-AU": "r123-ts",
           "en-GB": "r123-ts",
           "en-NZ": "r123-ts",
-          "en-UK": "r123-ts",
           "en-US": "r123-ts",
           "es-ES": "r123-ts",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with r123Ts preset`, () => {
             "value": "Potente escavatore per miniere di superficie progettato per operazioni di estrazione su larga scala.",
           },
           {
-            "locale": "en-UK",
-            "value": "Powerful surface mining excavator designed for large-scale mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Krachtige oppervlakte mijnbouw graafmachine ontworpen voor grootschalige mijnbouwoperaties.",
           },
@@ -299,10 +292,6 @@ describe(`with r123Ts preset`, () => {
             "value": "R123 TS Escavatore per Miniere di Superficie",
           },
           {
-            "locale": "en-UK",
-            "value": "R123 TS Surface Mining Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "R123 TS Oppervlakte Mijnbouw Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with r123Ts preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "r123-ts",
-          },
-          {
-            "locale": "en-UK",
             "value": "r123-ts",
           },
           {

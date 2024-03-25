@@ -20,7 +20,6 @@ describe(`with ll890Op preset`, () => {
           "en-AU": "Versatile landfill compactor for various waste compaction applications.",
           "en-GB": "Versatile landfill compactor for various waste compaction applications.",
           "en-NZ": "Versatile landfill compactor for various waste compaction applications.",
-          "en-UK": "Versatile landfill compactor for various waste compaction applications.",
           "en-US": "Versatile landfill compactor for various waste compaction applications.",
           "es-ES": "Compactador de vertedero versátil para diversas aplicaciones de compactación de residuos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with ll890Op preset`, () => {
           "en-AU": "LL890 OP Landfill Compactor",
           "en-GB": "LL890 OP Landfill Compactor",
           "en-NZ": "LL890 OP Landfill Compactor",
-          "en-UK": "LL890 OP Landfill Compactor",
           "en-US": "LL890 OP Landfill Compactor",
           "es-ES": "LL890 OP Compactador de vertedero",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with ll890Op preset`, () => {
           "en-AU": "ll890-op",
           "en-GB": "ll890-op",
           "en-NZ": "ll890-op",
-          "en-UK": "ll890-op",
           "en-US": "ll890-op",
           "es-ES": "ll890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with ll890Op preset`, () => {
             "value": "Compattatore per discariche versatile per varie applicazioni di compattazione dei rifiuti.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile landfill compactor for various waste compaction applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige stortplaatsverdichter voor diverse afvalverdichtingstoepassingen.",
           },
@@ -299,10 +292,6 @@ describe(`with ll890Op preset`, () => {
             "value": "LL890 OP Compattatore per Discariche",
           },
           {
-            "locale": "en-UK",
-            "value": "LL890 OP Landfill Compactor",
-          },
-          {
             "locale": "nl-NL",
             "value": "LL890 OP Stortplaatsverdichter",
           },
@@ -349,10 +338,6 @@ describe(`with ll890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ll890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "ll890-op",
           },
           {

@@ -12,7 +12,6 @@ const usMediumCustomers = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Mittelgroße Kunden im Vereinigten Staaten')
         ['it-IT']('Clienti Medi USA')
-        ['en-UK']('US Medium Customers')
         ['nl-NL']('VS Middelgrote Klanten')
         ['fr-FR']('Clients Moyens aux États-Unis')
         ['en-AU']('US Medium Customers')

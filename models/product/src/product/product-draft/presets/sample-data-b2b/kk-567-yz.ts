@@ -42,7 +42,6 @@ const kk567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('KK567 YZ Deponie-Verdichter')
         ['it-IT']('KK567 YZ Compattatore per Discariche')
-        ['en-UK']('KK567 YZ Landfill Compactor')
         ['nl-NL']('KK567 YZ Stortplaatsverdichter')
         ['fr-FR']('KK567 YZ Compacteur de décharge')
         ['en-AU']('KK567 YZ Landfill Compactor')
@@ -60,9 +59,6 @@ const kk567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Compattatore avanzato per discariche con caratteristiche specializzate per una compattazione efficace dei rifiuti.'
-        )
-        ['en-UK'](
-          'Advanced landfill compactor with specialized features for effective waste compaction.'
         )
         ['nl-NL'](
           'Geavanceerde stortplaatsverdichter met gespecialiseerde functies voor effectieve afvalverdichting.'
@@ -94,7 +90,6 @@ const kk567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('kk567-yz')
         ['it-IT']('kk567-yz')
-        ['en-UK']('kk567-yz')
         ['nl-NL']('kk567-yz')
         ['fr-FR']('kk567-yz')
         ['en-AU']('kk567-yz')

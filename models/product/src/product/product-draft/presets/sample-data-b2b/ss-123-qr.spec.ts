@@ -20,7 +20,6 @@ describe(`with ss123Qr preset`, () => {
           "en-AU": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
           "en-GB": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
           "en-NZ": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
-          "en-UK": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
           "en-US": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
           "es-ES": "Grúa torre de alto rendimiento diseñada para elevación eficiente en proyectos de construcción de rascacielos.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with ss123Qr preset`, () => {
           "en-AU": "SS123 QR Tower Crane for High-rise Construction",
           "en-GB": "SS123 QR Tower Crane for High-rise Construction",
           "en-NZ": "SS123 QR Tower Crane for High-rise Construction",
-          "en-UK": "SS123 QR Tower Crane for High-rise Construction",
           "en-US": "SS123 QR Tower Crane for High-rise Construction",
           "es-ES": "SS123 QR Grúa torre para construcción de rascacielos",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with ss123Qr preset`, () => {
           "en-AU": "ss123-qr",
           "en-GB": "ss123-qr",
           "en-NZ": "ss123-qr",
-          "en-UK": "ss123-qr",
           "en-US": "ss123-qr",
           "es-ES": "ss123-qr",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with ss123Qr preset`, () => {
             "value": "Gru a torre ad alte prestazioni progettata per sollevamenti efficienti in progetti di costruzione di grattacieli.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-performance tower crane designed for efficient lifting in high-rise construction projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogpresterende torenkraan ontworpen voor efficiënt hijsen bij hoogbouwprojecten.",
           },
@@ -341,10 +334,6 @@ describe(`with ss123Qr preset`, () => {
             "value": "SS123 QR Gru a Torre per Costruzioni Alte",
           },
           {
-            "locale": "en-UK",
-            "value": "SS123 QR Tower Crane for High-rise Construction",
-          },
-          {
             "locale": "nl-NL",
             "value": "SS123 QR Torenkraan voor Hoogbouw",
           },
@@ -391,10 +380,6 @@ describe(`with ss123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ss123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "ss123-qr",
           },
           {

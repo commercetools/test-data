@@ -42,7 +42,6 @@ const pp234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('PP234 WX Railroad Schienenradbagger')
         ['it-IT']('PP234 WX Escavatore su Ruote per Ferrovie')
-        ['en-UK']('PP234 WX Railroad Railroad Wheeled Excavator')
         ['nl-NL']('PP234 WX Spoorweg Wiellader Graafmachine')
         ['fr-FR']('PP234 WX Railroad Excavatrice sur roues pour chemin de fer')
         ['en-AU']('PP234 WX Railroad Railroad Wheeled Excavator')
@@ -60,9 +59,6 @@ const pp234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore su ruote specializzato per ferrovie per operazioni efficienti sui binari ferroviari.'
-        )
-        ['en-UK'](
-          'Specialized railroad wheeled excavator for efficient operations on railway tracks.'
         )
         ['nl-NL'](
           'Gespecialiseerde spoorweg wiellader graafmachine voor efficiënte operaties op spoorwegen.'
@@ -94,7 +90,6 @@ const pp234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('pp234-wx')
         ['it-IT']('pp234-wx')
-        ['en-UK']('pp234-wx')
         ['nl-NL']('pp234-wx')
         ['fr-FR']('pp234-wx')
         ['en-AU']('pp234-wx')

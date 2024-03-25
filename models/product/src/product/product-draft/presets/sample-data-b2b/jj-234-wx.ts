@@ -42,7 +42,6 @@ const jj234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('JJ234 WX Deponie-Verdichter')
         ['it-IT']('JJ234 WX Compattatore per Discariche')
-        ['en-UK']('JJ234 WX Landfill Compactor')
         ['nl-NL']('JJ234 WX Stortplaatsverdichter')
         ['fr-FR']('JJ234 WX Compacteur de décharge')
         ['en-AU']('JJ234 WX Landfill Compactor')
@@ -60,9 +59,6 @@ const jj234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.'
-        )
-        ['en-UK'](
-          'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'
         )
         ['nl-NL'](
           'Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.'
@@ -94,7 +90,6 @@ const jj234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('jj234-wx')
         ['it-IT']('jj234-wx')
-        ['en-UK']('jj234-wx')
         ['nl-NL']('jj234-wx')
         ['fr-FR']('jj234-wx')
         ['en-AU']('jj234-wx')

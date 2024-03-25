@@ -18,7 +18,6 @@ describe(`with spain preset`, () => {
           "en-AU": "Spain",
           "en-GB": "Spain",
           "en-NZ": "Spain",
-          "en-UK": "Spain",
           "en-US": "Spain",
           "es-ES": "España",
           "fr": undefined,
@@ -51,10 +50,6 @@ describe(`with spain preset`, () => {
           {
             "locale": "it-IT",
             "value": "Spagna",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Spain",
           },
           {
             "locale": "nl-NL",

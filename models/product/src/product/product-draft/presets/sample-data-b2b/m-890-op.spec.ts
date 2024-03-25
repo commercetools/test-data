@@ -20,7 +20,6 @@ describe(`with m890Op preset`, () => {
           "en-AU": "Amphibious excavator with specialized features for versatile land and water projects.",
           "en-GB": "Amphibious excavator with specialized features for versatile land and water projects.",
           "en-NZ": "Amphibious excavator with specialized features for versatile land and water projects.",
-          "en-UK": "Amphibious excavator with specialized features for versatile land and water projects.",
           "en-US": "Amphibious excavator with specialized features for versatile land and water projects.",
           "es-ES": "Excavadora anfibia con características especializadas para proyectos versátiles en tierra y agua.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with m890Op preset`, () => {
           "en-AU": "M890 OP Amphibious Excavator",
           "en-GB": "M890 OP Amphibious Excavator",
           "en-NZ": "M890 OP Amphibious Excavator",
-          "en-UK": "M890 OP Amphibious Excavator",
           "en-US": "M890 OP Amphibious Excavator",
           "es-ES": "M890 OP Excavadora anfibia",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with m890Op preset`, () => {
           "en-AU": "m890-op",
           "en-GB": "m890-op",
           "en-NZ": "m890-op",
-          "en-UK": "m890-op",
           "en-US": "m890-op",
           "es-ES": "m890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with m890Op preset`, () => {
             "value": "Escavatore anfibio con caratteristiche specializzate per progetti versatili su terra e in acqua.",
           },
           {
-            "locale": "en-UK",
-            "value": "Amphibious excavator with specialized features for versatile land and water projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.",
           },
@@ -299,10 +292,6 @@ describe(`with m890Op preset`, () => {
             "value": "M890 OP Escavatore Anfibio",
           },
           {
-            "locale": "en-UK",
-            "value": "M890 OP Amphibious Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "M890 OP Amfibische Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with m890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "m890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "m890-op",
           },
           {

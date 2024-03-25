@@ -42,7 +42,6 @@ const yy123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('YY123 QR Blasthole-Bohrer')
         ['it-IT']('YY123 QR Trapano per Fori di Miniera')
-        ['en-UK']('YY123 QR Blasthole Drill')
         ['nl-NL']('YY123 QR Boorgatboor')
         ['fr-FR']('YY123 QR Forage de trou de mine')
         ['en-AU']('YY123 QR Blasthole Drill')
@@ -60,9 +59,6 @@ const yy123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Potente trapano per fori di miniera progettato per trapanazioni efficienti in operazioni minerarie.'
-        )
-        ['en-UK'](
-          'Powerful blasthole drill designed for efficient drilling in mining operations.'
         )
         ['nl-NL'](
           'Krachtige boorgatboor ontworpen voor efficiënt boren in mijnbouwoperaties.'
@@ -94,7 +90,6 @@ const yy123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('yy123-qr')
         ['it-IT']('yy123-qr')
-        ['en-UK']('yy123-qr')
         ['nl-NL']('yy123-qr')
         ['fr-FR']('yy123-qr')
         ['en-AU']('yy123-qr')

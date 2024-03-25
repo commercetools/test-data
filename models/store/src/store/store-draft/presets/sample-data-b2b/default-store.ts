@@ -11,7 +11,6 @@ const defaultStore = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('Standard')
         ['it-IT']('Predefinito')
-        ['en-UK']('Default')
         ['nl-NL']('Standaard')
         ['fr-FR']('Défaut')
         ['en-AU']('Default')

@@ -42,7 +42,6 @@ const nn456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('NN456 ST Radbagger für Bergbau')
         ['it-IT']('NN456 ST Escavatore su Ruote per Miniere')
-        ['en-UK']('NN456 ST Wheeled Excavator for Mining')
         ['nl-NL']('NN456 ST Wiellader voor Mijnbouw')
         ['fr-FR'](
           'NN456 ST Excavatrice sur roues pour l&#39;exploitation minière'
@@ -62,9 +61,6 @@ const nn456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore su ruote ad alta capacità con caratteristiche specializzate per operazioni di estrazione efficienti.'
-        )
-        ['en-UK'](
-          'High-capacity wheeled excavator with specialized features for efficient mining operations.'
         )
         ['nl-NL'](
           'Hoogcapaciteits wiellader met gespecialiseerde functies voor efficiënte mijnbouwoperaties.'
@@ -96,7 +92,6 @@ const nn456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('nn456-st')
         ['it-IT']('nn456-st')
-        ['en-UK']('nn456-st')
         ['nl-NL']('nn456-st')
         ['fr-FR']('nn456-st')
         ['en-AU']('nn456-st')

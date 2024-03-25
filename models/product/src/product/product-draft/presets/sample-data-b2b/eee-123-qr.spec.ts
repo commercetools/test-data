@@ -20,7 +20,6 @@ describe(`with eee123Qr preset`, () => {
           "en-AU": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
           "en-GB": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
           "en-NZ": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
-          "en-UK": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
           "en-US": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
           "es-ES": "Martillo de demolición potente diseñado para tareas eficientes de rotura y demolición en proyectos de construcción.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with eee123Qr preset`, () => {
           "en-AU": "EEE123 QR Demolition Hammer",
           "en-GB": "EEE123 QR Demolition Hammer",
           "en-NZ": "EEE123 QR Demolition Hammer",
-          "en-UK": "EEE123 QR Demolition Hammer",
           "en-US": "EEE123 QR Demolition Hammer",
           "es-ES": "EEE123 QR Martillo de demolición",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with eee123Qr preset`, () => {
           "en-AU": "eee123-qr",
           "en-GB": "eee123-qr",
           "en-NZ": "eee123-qr",
-          "en-UK": "eee123-qr",
           "en-US": "eee123-qr",
           "es-ES": "eee123-qr",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with eee123Qr preset`, () => {
             "value": "Potente martello demolitore progettato per compiti efficienti di demolizione e frantumazione in progetti edili.",
           },
           {
-            "locale": "en-UK",
-            "value": "Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Krachtige sloophamer ontworpen voor efficiënt breken en slopen in bouwprojecten.",
           },
@@ -341,10 +334,6 @@ describe(`with eee123Qr preset`, () => {
             "value": "EEE123 QR Martello Demolitore",
           },
           {
-            "locale": "en-UK",
-            "value": "EEE123 QR Demolition Hammer",
-          },
-          {
             "locale": "nl-NL",
             "value": "EEE123 QR Sloophamer",
           },
@@ -391,10 +380,6 @@ describe(`with eee123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "eee123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "eee123-qr",
           },
           {

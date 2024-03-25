@@ -42,7 +42,6 @@ const y567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('Y567 YZ Geländekipplaster')
         ['it-IT']('Y567 YZ Camion Ribaltabile Fuoristrada')
-        ['en-UK']('Y567 YZ Off-Highway Dump Truck')
         ['nl-NL']('Y567 YZ Off-Highway Dumptruck')
         ['fr-FR']('Y567 YZ Camion benne tout-terrain')
         ['en-AU']('Y567 YZ Off-Highway Dump Truck')
@@ -60,9 +59,6 @@ const y567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Camion ribaltabile fuoristrada per impieghi pesanti con caratteristiche potenziate per un trasporto affidabile dei materiali.'
-        )
-        ['en-UK'](
-          'Heavy-duty off-highway dump truck with enhanced features for reliable material transport.'
         )
         ['nl-NL'](
           'Zware off-highway dumptruck met verbeterde functies voor betrouwbaar materiaaltransport.'
@@ -94,7 +90,6 @@ const y567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('y567-yz')
         ['it-IT']('y567-yz')
-        ['en-UK']('y567-yz')
         ['nl-NL']('y567-yz')
         ['fr-FR']('y567-yz')
         ['en-AU']('y567-yz')

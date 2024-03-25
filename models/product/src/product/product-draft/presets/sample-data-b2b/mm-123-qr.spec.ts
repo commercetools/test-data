@@ -20,7 +20,6 @@ describe(`with mm123Qr preset`, () => {
           "en-AU": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
           "en-GB": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
           "en-NZ": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
-          "en-UK": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
           "en-US": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
           "es-ES": "Excavadora de ruedas versátil con características avanzadas para excavaciones eficientes en el sitio de construcción.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with mm123Qr preset`, () => {
           "en-AU": "MM123 QR Wheeled Excavator for Construction",
           "en-GB": "MM123 QR Wheeled Excavator for Construction",
           "en-NZ": "MM123 QR Wheeled Excavator for Construction",
-          "en-UK": "MM123 QR Wheeled Excavator for Construction",
           "en-US": "MM123 QR Wheeled Excavator for Construction",
           "es-ES": "MM123 QR Excavadora de ruedas para construcción",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with mm123Qr preset`, () => {
           "en-AU": "mm123-qr",
           "en-GB": "mm123-qr",
           "en-NZ": "mm123-qr",
-          "en-UK": "mm123-qr",
           "en-US": "mm123-qr",
           "es-ES": "mm123-qr",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with mm123Qr preset`, () => {
             "value": "Escavatore su ruote versatile con caratteristiche avanzate per scavi efficienti nei cantieri edili.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile wheeled excavator with advanced features for efficient construction site excavation.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige wiellader met geavanceerde functies voor efficiënte graafwerkzaamheden op bouwplaatsen.",
           },
@@ -299,10 +292,6 @@ describe(`with mm123Qr preset`, () => {
             "value": "MM123 QR Escavatore su Ruote per Costruzioni",
           },
           {
-            "locale": "en-UK",
-            "value": "MM123 QR Wheeled Excavator for Construction",
-          },
-          {
             "locale": "nl-NL",
             "value": "MM123 QR Wiellader voor Bouw",
           },
@@ -349,10 +338,6 @@ describe(`with mm123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "mm123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "mm123-qr",
           },
           {

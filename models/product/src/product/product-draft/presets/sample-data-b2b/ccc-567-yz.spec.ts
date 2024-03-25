@@ -20,7 +20,6 @@ describe(`with ccc567Yz preset`, () => {
           "en-AU": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
           "en-GB": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
           "en-NZ": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
-          "en-UK": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
           "en-US": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
           "es-ES": "Perforadora de producción robusta con capacidades avanzadas de perforación para operaciones mineras continuas y de servicio pesado.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with ccc567Yz preset`, () => {
           "en-AU": "CCC567 YZ Production Drill",
           "en-GB": "CCC567 YZ Production Drill",
           "en-NZ": "CCC567 YZ Production Drill",
-          "en-UK": "CCC567 YZ Production Drill",
           "en-US": "CCC567 YZ Production Drill",
           "es-ES": "CCC567 YZ Perforadora de producción",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with ccc567Yz preset`, () => {
           "en-AU": "ccc567-yz",
           "en-GB": "ccc567-yz",
           "en-NZ": "ccc567-yz",
-          "en-UK": "ccc567-yz",
           "en-US": "ccc567-yz",
           "es-ES": "ccc567-yz",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with ccc567Yz preset`, () => {
             "value": "Trapano robusto per produzione con capacità avanzate di trapanazione per operazioni minerarie continue e pesanti.",
           },
           {
-            "locale": "en-UK",
-            "value": "Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Robuuste productieboor met geavanceerde boorcapaciteiten voor continue zware mijnbouwoperaties.",
           },
@@ -341,10 +334,6 @@ describe(`with ccc567Yz preset`, () => {
             "value": "CCC567 YZ Trapano per Produzione",
           },
           {
-            "locale": "en-UK",
-            "value": "CCC567 YZ Production Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "CCC567 YZ Productieboor",
           },
@@ -391,10 +380,6 @@ describe(`with ccc567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ccc567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "ccc567-yz",
           },
           {

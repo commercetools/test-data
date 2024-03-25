@@ -20,7 +20,6 @@ describe(`with gg123Qr preset`, () => {
           "en-AU": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
           "en-GB": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
           "en-NZ": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
-          "en-UK": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
           "en-US": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
           "es-ES": "Compactador de suelo vibratorio potente para la compactación eficiente de diversos tipos de suelos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with gg123Qr preset`, () => {
           "en-AU": "GG123 QR Vibratory Soil Compactor",
           "en-GB": "GG123 QR Vibratory Soil Compactor",
           "en-NZ": "GG123 QR Vibratory Soil Compactor",
-          "en-UK": "GG123 QR Vibratory Soil Compactor",
           "en-US": "GG123 QR Vibratory Soil Compactor",
           "es-ES": "GG123 QR Compactador de suelo vibratorio",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with gg123Qr preset`, () => {
           "en-AU": "gg123-qr",
           "en-GB": "gg123-qr",
           "en-NZ": "gg123-qr",
-          "en-UK": "gg123-qr",
           "en-US": "gg123-qr",
           "es-ES": "gg123-qr",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with gg123Qr preset`, () => {
             "value": "Potente compattatore vibrante per terreni per la compattazione efficiente di vari tipi di suolo.",
           },
           {
-            "locale": "en-UK",
-            "value": "Powerful vibratory soil compactor for efficient compaction of various soil types.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Krachtige trilbodemverdichter voor efficiënte verdichting van diverse grondsoorten.",
           },
@@ -299,10 +292,6 @@ describe(`with gg123Qr preset`, () => {
             "value": "GG123 QR Compattatore Vibrante per Terreni",
           },
           {
-            "locale": "en-UK",
-            "value": "GG123 QR Vibratory Soil Compactor",
-          },
-          {
             "locale": "nl-NL",
             "value": "GG123 QR Trilbodemverdichter",
           },
@@ -349,10 +338,6 @@ describe(`with gg123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "gg123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "gg123-qr",
           },
           {

@@ -42,7 +42,6 @@ const m890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('M890 OP Amphibienbagger')
         ['it-IT']('M890 OP Escavatore Anfibio')
-        ['en-UK']('M890 OP Amphibious Excavator')
         ['nl-NL']('M890 OP Amfibische Graafmachine')
         ['fr-FR']('M890 OP Excavateur amphibie')
         ['en-AU']('M890 OP Amphibious Excavator')
@@ -60,9 +59,6 @@ const m890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore anfibio con caratteristiche specializzate per progetti versatili su terra e in acqua.'
-        )
-        ['en-UK'](
-          'Amphibious excavator with specialized features for versatile land and water projects.'
         )
         ['nl-NL'](
           'Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.'
@@ -94,7 +90,6 @@ const m890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('m890-op')
         ['it-IT']('m890-op')
-        ['en-UK']('m890-op')
         ['nl-NL']('m890-op')
         ['fr-FR']('m890-op')
         ['en-AU']('m890-op')

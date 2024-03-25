@@ -42,7 +42,6 @@ const ff890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('FF890 OP Feinplanierer')
         ['it-IT']('FF890 OP Livellatrice Fine')
-        ['en-UK']('FF890 OP Fine Grader')
         ['nl-NL']('FF890 OP Fijnnivelleermachine')
         ['fr-FR']('FF890 OP Niveleuse fine')
         ['en-AU']('FF890 OP Fine Grader')
@@ -60,9 +59,6 @@ const ff890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Livellatrice fine versatile con caratteristiche specializzate per la graduazione precisa delle superfici.'
-        )
-        ['en-UK'](
-          'Versatile fine grader with specialized features for precise surface grading.'
         )
         ['nl-NL'](
           'Veelzijdige fijnnivelleermachine met gespecialiseerde functies voor precieze oppervlakte egalisatie.'
@@ -94,7 +90,6 @@ const ff890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ff890-op')
         ['it-IT']('ff890-op')
-        ['en-UK']('ff890-op')
         ['nl-NL']('ff890-op')
         ['fr-FR']('ff890-op')
         ['en-AU']('ff890-op')

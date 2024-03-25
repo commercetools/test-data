@@ -42,7 +42,6 @@ const f890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('F890 OP Holzlader')
         ['it-IT']('F890 OP Caricatore di Tronchi')
-        ['en-UK']('F890 OP Log Loader')
         ['nl-NL']('F890 OP Boomlader')
         ['fr-FR']('F890 OP Chargeur de bûches')
         ['en-AU']('F890 OP Log Loader')
@@ -60,9 +59,6 @@ const f890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore di tronchi versatile con caratteristiche specializzate per la manipolazione efficiente di tronchi in applicazioni forestali.'
-        )
-        ['en-UK'](
-          'Versatile log loader with specialized features for efficient log handling in forestry applications.'
         )
         ['nl-NL'](
           'Veelzijdige boomlader met gespecialiseerde functies voor efficiënte boomstamhantering in bosbouwtoepassingen.'
@@ -94,7 +90,6 @@ const f890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('f890-op')
         ['it-IT']('f890-op')
-        ['en-UK']('f890-op')
         ['nl-NL']('f890-op')
         ['fr-FR']('f890-op')
         ['en-AU']('f890-op')

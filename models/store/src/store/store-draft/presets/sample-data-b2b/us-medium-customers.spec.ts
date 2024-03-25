@@ -18,7 +18,6 @@ describe(`with usMediumCustomers preset`, () => {
           "en-AU": "US Medium Customers",
           "en-GB": "US Medium Customers",
           "en-NZ": "US Medium Customers",
-          "en-UK": "US Medium Customers",
           "en-US": "US Medium Customers",
           "es-ES": "Clientes Medianos de EE. UU.",
           "fr": undefined,
@@ -51,10 +50,6 @@ describe(`with usMediumCustomers preset`, () => {
           {
             "locale": "it-IT",
             "value": "Clienti Medi degli Stati Uniti",
-          },
-          {
-            "locale": "en-UK",
-            "value": "US Medium Customers",
           },
           {
             "locale": "nl-NL",

@@ -42,7 +42,6 @@ const ii789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('II789 UV Pneumatische Walze')
         ['it-IT']('II789 UV Rullo Pneumatico')
-        ['en-UK']('II789 UV Pneumatic Roller')
         ['nl-NL']('II789 UV Pneumatische Wals')
         ['fr-FR']('II789 UV Rouleau pneumatique')
         ['en-AU']('II789 UV Pneumatic Roller')
@@ -60,9 +59,6 @@ const ii789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Rullo pneumatico ad alta capacità con caratteristiche avanzate per una compattazione efficiente.'
-        )
-        ['en-UK'](
-          'High-capacity pneumatic roller with advanced features for efficient compaction.'
         )
         ['nl-NL'](
           'Hoogcapaciteits pneumatische wals met geavanceerde functies voor efficiënte verdichting.'
@@ -94,7 +90,6 @@ const ii789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ii789-uv')
         ['it-IT']('ii789-uv')
-        ['en-UK']('ii789-uv')
         ['nl-NL']('ii789-uv')
         ['fr-FR']('ii789-uv')
         ['en-AU']('ii789-uv')

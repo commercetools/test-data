@@ -18,7 +18,6 @@ describe(`with usWarehouse preset`, () => {
           "en-AU": "North America warehouse",
           "en-GB": "North America warehouse",
           "en-NZ": "North America warehouse",
-          "en-UK": "North America warehouse",
           "en-US": "North America warehouse",
           "es-ES": "Almacén Norteamérica",
           "fr": undefined,
@@ -52,10 +51,6 @@ describe(`with usWarehouse preset`, () => {
           {
             "locale": "it-IT",
             "value": "Magazzino Nord America",
-          },
-          {
-            "locale": "en-UK",
-            "value": "North America warehouse",
           },
           {
             "locale": "nl-NL",

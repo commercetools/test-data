@@ -42,7 +42,6 @@ const ddd890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('DDD890 OP Produktionsbohrer')
         ['it-IT']('DDD890 OP Trapano per Produzione')
-        ['en-UK']('DDD890 OP Production Drill')
         ['nl-NL']('DDD890 OP Productieboor')
         ['fr-FR']('DDD890 OP Forage de production')
         ['en-AU']('DDD890 OP Production Drill')
@@ -60,9 +59,6 @@ const ddd890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Trapano versatile per produzione adatto per una varietà di compiti di trapanazione in progetti minerari su larga scala.'
-        )
-        ['en-UK'](
-          'Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.'
         )
         ['nl-NL'](
           'Veelzijdige productieboor geschikt voor een verscheidenheid aan boortaken in grootschalige mijnbouwprojecten.'
@@ -94,7 +90,6 @@ const ddd890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ddd890-op')
         ['it-IT']('ddd890-op')
-        ['en-UK']('ddd890-op')
         ['nl-NL']('ddd890-op')
         ['fr-FR']('ddd890-op')
         ['en-AU']('ddd890-op')

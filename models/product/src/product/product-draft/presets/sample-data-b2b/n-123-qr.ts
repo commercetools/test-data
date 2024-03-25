@@ -42,7 +42,6 @@ const n123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('N123 QR Steinbruchlader')
         ['it-IT']('N123 QR Caricatore per Cave')
-        ['en-UK']('N123 QR Quarry Loader')
         ['nl-NL']('N123 QR Steengroeve Lader')
         ['fr-FR']('N123 QR Chargeur de carrière')
         ['en-AU']('N123 QR Quarry Loader')
@@ -60,9 +59,6 @@ const n123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.'
-        )
-        ['en-UK'](
-          'Robust quarry loader designed for efficient material handling in mining and construction.'
         )
         ['nl-NL'](
           'Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.'
@@ -94,7 +90,6 @@ const n123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('n123-qr')
         ['it-IT']('n123-qr')
-        ['en-UK']('n123-qr')
         ['nl-NL']('n123-qr')
         ['fr-FR']('n123-qr')
         ['en-AU']('n123-qr')

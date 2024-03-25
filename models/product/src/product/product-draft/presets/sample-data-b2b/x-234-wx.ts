@@ -42,7 +42,6 @@ const x234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('X234 WX Geländekipplaster')
         ['it-IT']('X234 WX Camion Ribaltabile Fuoristrada')
-        ['en-UK']('X234 WX Off-Highway Dump Truck')
         ['nl-NL']('X234 WX Off-Highway Dumptruck')
         ['fr-FR']('X234 WX Camion benne tout-terrain')
         ['en-AU']('X234 WX Off-Highway Dump Truck')
@@ -60,9 +59,6 @@ const x234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Camion ribaltabile fuoristrada versatile per il trasporto efficiente di materiali in terreni difficili.'
-        )
-        ['en-UK'](
-          'Versatile off-highway dump truck for efficient material transport in challenging terrains.'
         )
         ['nl-NL'](
           'Veelzijdige off-highway dumptruck voor efficiënt materiaaltransport in uitdagende terreinen.'
@@ -94,7 +90,6 @@ const x234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('x234-wx')
         ['it-IT']('x234-wx')
-        ['en-UK']('x234-wx')
         ['nl-NL']('x234-wx')
         ['fr-FR']('x234-wx')
         ['en-AU']('x234-wx')

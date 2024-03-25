@@ -20,7 +20,6 @@ describe(`with rr890Op preset`, () => {
           "en-AU": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
           "en-GB": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
           "en-NZ": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
-          "en-UK": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
           "en-US": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
           "es-ES": "Excavadora de ruedas versátil con características especializadas para diversas tareas de construcción ferroviaria.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with rr890Op preset`, () => {
           "en-AU": "RR890 OP Railroad Railroad Wheeled Excavator",
           "en-GB": "RR890 OP Railroad Railroad Wheeled Excavator",
           "en-NZ": "RR890 OP Railroad Railroad Wheeled Excavator",
-          "en-UK": "RR890 OP Railroad Railroad Wheeled Excavator",
           "en-US": "RR890 OP Railroad Railroad Wheeled Excavator",
           "es-ES": "RR890 OP Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with rr890Op preset`, () => {
           "en-AU": "rr890-op",
           "en-GB": "rr890-op",
           "en-NZ": "rr890-op",
-          "en-UK": "rr890-op",
           "en-US": "rr890-op",
           "es-ES": "rr890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with rr890Op preset`, () => {
             "value": "Escavatore su ruote per ferrovie versatile con caratteristiche specializzate per vari compiti nella costruzione di ferrovie.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile railroad wheeled excavator with specialized features for various railway construction tasks.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige spoorweg wiellader graafmachine met gespecialiseerde functies voor diverse spoorwegbouwtaken.",
           },
@@ -299,10 +292,6 @@ describe(`with rr890Op preset`, () => {
             "value": "RR890 OP Escavatore su Ruote per Ferrovie",
           },
           {
-            "locale": "en-UK",
-            "value": "RR890 OP Railroad Railroad Wheeled Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "RR890 OP Spoorweg Wiellader Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with rr890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "rr890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "rr890-op",
           },
           {

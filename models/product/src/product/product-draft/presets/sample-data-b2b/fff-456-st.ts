@@ -42,7 +42,6 @@ const fff456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('FFF456 ST Steinbruchhammer')
         ['it-IT']('FFF456 ST Martello per Cave')
-        ['en-UK']('FFF456 ST Quarrying Hammer')
         ['nl-NL']('FFF456 ST Steengroevehamer')
         ['fr-FR']('FFF456 ST Marteau de carrière')
         ['en-AU']('FFF456 ST Quarrying Hammer')
@@ -60,9 +59,6 @@ const fff456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Martello pesante per cave per l&#39;estrazione efficiente di roccia in operazioni di cava e minerarie.'
-        )
-        ['en-UK'](
-          'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'
         )
         ['nl-NL'](
           'Zware steengroevehamer voor efficiënte rotsontginning in steengroeve- en mijnbouwoperaties.'
@@ -94,7 +90,6 @@ const fff456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('fff456-st')
         ['it-IT']('fff456-st')
-        ['en-UK']('fff456-st')
         ['nl-NL']('fff456-st')
         ['fr-FR']('fff456-st')
         ['en-AU']('fff456-st')

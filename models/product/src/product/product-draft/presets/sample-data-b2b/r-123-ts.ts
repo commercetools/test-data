@@ -42,7 +42,6 @@ const r123Ts = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('R123 TS Oberflächenbergbaubagger')
         ['it-IT']('R123 TS Escavatore per Miniere di Superficie')
-        ['en-UK']('R123 TS Surface Mining Excavator')
         ['nl-NL']('R123 TS Oppervlakte Mijnbouw Graafmachine')
         ['fr-FR']('R123 TS Excavateur minier de surface')
         ['en-AU']('R123 TS Surface Mining Excavator')
@@ -60,9 +59,6 @@ const r123Ts = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Potente escavatore per miniere di superficie progettato per operazioni di estrazione su larga scala.'
-        )
-        ['en-UK'](
-          'Powerful surface mining excavator designed for large-scale mining operations.'
         )
         ['nl-NL'](
           'Krachtige oppervlakte mijnbouw graafmachine ontworpen voor grootschalige mijnbouwoperaties.'
@@ -94,7 +90,6 @@ const r123Ts = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('r123-ts')
         ['it-IT']('r123-ts')
-        ['en-UK']('r123-ts')
         ['nl-NL']('r123-ts')
         ['fr-FR']('r123-ts')
         ['en-AU']('r123-ts')

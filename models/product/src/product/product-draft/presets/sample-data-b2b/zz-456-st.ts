@@ -42,7 +42,6 @@ const zz456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ZZ456 ST Erkundungsbohrer')
         ['it-IT']('ZZ456 ST Trapano per Esplorazione')
-        ['en-UK']('ZZ456 ST Exploration Drill')
         ['nl-NL']('ZZ456 ST Exploratieboor')
         ['fr-FR']('ZZ456 ST Forage d&#39;exploration')
         ['en-AU']('ZZ456 ST Exploration Drill')
@@ -60,9 +59,6 @@ const zz456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Trapano per esplorazione versatile adatto per vari compiti di trapanazione in progetti di esplorazione e geotecnici.'
-        )
-        ['en-UK'](
-          'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'
         )
         ['nl-NL'](
           'Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.'
@@ -94,7 +90,6 @@ const zz456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('zz456-st')
         ['it-IT']('zz456-st')
-        ['en-UK']('zz456-st')
         ['nl-NL']('zz456-st')
         ['fr-FR']('zz456-st')
         ['en-AU']('zz456-st')

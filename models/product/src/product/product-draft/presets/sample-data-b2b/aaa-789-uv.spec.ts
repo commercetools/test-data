@@ -20,7 +20,6 @@ describe(`with aaa789Uv preset`, () => {
           "en-AU": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
           "en-GB": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
           "en-NZ": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
-          "en-UK": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
           "en-US": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
           "es-ES": "Perforadora de exploración avanzada con capacidades de perforación de precisión para investigaciones geotécnicas.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with aaa789Uv preset`, () => {
           "en-AU": "AAA789 UV Exploration Drill",
           "en-GB": "AAA789 UV Exploration Drill",
           "en-NZ": "AAA789 UV Exploration Drill",
-          "en-UK": "AAA789 UV Exploration Drill",
           "en-US": "AAA789 UV Exploration Drill",
           "es-ES": "AAA789 UV Perforadora de exploración",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with aaa789Uv preset`, () => {
           "en-AU": "aaa789-uv",
           "en-GB": "aaa789-uv",
           "en-NZ": "aaa789-uv",
-          "en-UK": "aaa789-uv",
           "en-US": "aaa789-uv",
           "es-ES": "aaa789-uv",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with aaa789Uv preset`, () => {
             "value": "Trapano avanzato per esplorazione con capacità di trapanazione di precisione per indagini geotecniche.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced exploration drill with precision drilling capabilities for geotechnical investigations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.",
           },
@@ -341,10 +334,6 @@ describe(`with aaa789Uv preset`, () => {
             "value": "AAA789 UV Trapano per Esplorazione",
           },
           {
-            "locale": "en-UK",
-            "value": "AAA789 UV Exploration Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "AAA789 UV Exploratieboor",
           },
@@ -391,10 +380,6 @@ describe(`with aaa789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "aaa789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "aaa789-uv",
           },
           {

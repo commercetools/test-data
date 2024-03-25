@@ -42,7 +42,6 @@ const j234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('J234 WX Sumpfbagger')
         ['it-IT']('J234 WX Bulldozer per Paludi')
-        ['en-UK']('J234 WX Swamp Bulldozer')
         ['nl-NL']('J234 WX Moeras Bulldozer')
         ['fr-FR']('J234 WX Bulldozer des marais')
         ['en-AU']('J234 WX Swamp Bulldozer')
@@ -60,9 +59,6 @@ const j234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Bulldozer specializzato per paludi per operazioni efficienti in aree paludose e terreni umidi.'
-        )
-        ['en-UK'](
-          'Specialized swamp bulldozer for efficient operations in marshy and wetland areas.'
         )
         ['nl-NL'](
           'Gespecialiseerde moeras bulldozer voor efficiënte operaties in moerassige en wetland gebieden.'
@@ -94,7 +90,6 @@ const j234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('j234-wx')
         ['it-IT']('j234-wx')
-        ['en-UK']('j234-wx')
         ['nl-NL']('j234-wx')
         ['fr-FR']('j234-wx')
         ['en-AU']('j234-wx')

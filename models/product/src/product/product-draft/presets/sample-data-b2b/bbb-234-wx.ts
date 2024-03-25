@@ -42,7 +42,6 @@ const bbb234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('BBB234 WX Produktionsbohrer')
         ['it-IT']('BBB234 WX Trapano per Produzione')
-        ['en-UK']('BBB234 WX Production Drill')
         ['nl-NL']('BBB234 WX Productieboor')
         ['fr-FR']('BBB234 WX Forage de production')
         ['en-AU']('BBB234 WX Production Drill')
@@ -60,9 +59,6 @@ const bbb234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Trapano ad alte prestazioni per produzione progettato per trapanazioni efficienti in operazioni minerarie su larga scala.'
-        )
-        ['en-UK'](
-          'High-performance production drill designed for efficient drilling in large-scale mining operations.'
         )
         ['nl-NL'](
           'Hoogpresterende productieboor ontworpen voor efficiënt boren in grootschalige mijnbouwoperaties.'
@@ -94,7 +90,6 @@ const bbb234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('bbb234-wx')
         ['it-IT']('bbb234-wx')
-        ['en-UK']('bbb234-wx')
         ['nl-NL']('bbb234-wx')
         ['fr-FR']('bbb234-wx')
         ['en-AU']('bbb234-wx')

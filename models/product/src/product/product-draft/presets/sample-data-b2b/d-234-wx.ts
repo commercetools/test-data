@@ -42,7 +42,6 @@ const d234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('D234 WX Holzlader')
         ['it-IT']('D234 WX Caricatore di Tronchi')
-        ['en-UK']('D234 WX Log Loader')
         ['nl-NL']('D234 WX Boomlader')
         ['fr-FR']('D234 WX Chargeur de bûches')
         ['en-AU']('D234 WX Log Loader')
@@ -60,9 +59,6 @@ const d234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore di tronchi specializzato progettato per la manipolazione efficiente di tronchi in operazioni forestali.'
-        )
-        ['en-UK'](
-          'Specialized log loader designed for efficient handling of logs in forestry operations.'
         )
         ['nl-NL'](
           'Gespecialiseerde boomlader ontworpen voor efficiënte hantering van boomstammen in bosbouwoperaties.'
@@ -94,7 +90,6 @@ const d234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('d234-wx')
         ['it-IT']('d234-wx')
-        ['en-UK']('d234-wx')
         ['nl-NL']('d234-wx')
         ['fr-FR']('d234-wx')
         ['en-AU']('d234-wx')

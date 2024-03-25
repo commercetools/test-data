@@ -20,7 +20,6 @@ describe(`with hhh234Wx preset`, () => {
           "en-AU": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
           "en-GB": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
           "en-NZ": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
-          "en-UK": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
           "en-US": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
           "es-ES": "Martillo de pilotaje de gran capacidad diseñado para pilotes de cimentación eficientes y precisos en proyectos de construcción.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with hhh234Wx preset`, () => {
           "en-AU": "HHH234 WX Piling Hammer",
           "en-GB": "HHH234 WX Piling Hammer",
           "en-NZ": "HHH234 WX Piling Hammer",
-          "en-UK": "HHH234 WX Piling Hammer",
           "en-US": "HHH234 WX Piling Hammer",
           "es-ES": "HHH234 WX Martillo de pilotaje",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with hhh234Wx preset`, () => {
           "en-AU": "hhh234-wx",
           "en-GB": "hhh234-wx",
           "en-NZ": "hhh234-wx",
-          "en-UK": "hhh234-wx",
           "en-US": "hhh234-wx",
           "es-ES": "hhh234-wx",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with hhh234Wx preset`, () => {
             "value": "Martello per pali ad alta capacità progettato per piantare pali in modo efficiente e preciso in progetti edili.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits heihamer ontworpen voor efficiënt en nauwkeurig heien van funderingen in bouwprojecten.",
           },
@@ -341,10 +334,6 @@ describe(`with hhh234Wx preset`, () => {
             "value": "HHH234 WX Martello per Pali",
           },
           {
-            "locale": "en-UK",
-            "value": "HHH234 WX Piling Hammer",
-          },
-          {
             "locale": "nl-NL",
             "value": "HHH234 WX Heihamer",
           },
@@ -391,10 +380,6 @@ describe(`with hhh234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "hhh234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "hhh234-wx",
           },
           {

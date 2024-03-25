@@ -20,7 +20,6 @@ describe(`with yy123Qr preset`, () => {
           "en-AU": "Powerful blasthole drill designed for efficient drilling in mining operations.",
           "en-GB": "Powerful blasthole drill designed for efficient drilling in mining operations.",
           "en-NZ": "Powerful blasthole drill designed for efficient drilling in mining operations.",
-          "en-UK": "Powerful blasthole drill designed for efficient drilling in mining operations.",
           "en-US": "Powerful blasthole drill designed for efficient drilling in mining operations.",
           "es-ES": "Perforadora de agujeros de voladura potente diseñada para perforar de manera eficiente en operaciones mineras.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with yy123Qr preset`, () => {
           "en-AU": "YY123 QR Blasthole Drill",
           "en-GB": "YY123 QR Blasthole Drill",
           "en-NZ": "YY123 QR Blasthole Drill",
-          "en-UK": "YY123 QR Blasthole Drill",
           "en-US": "YY123 QR Blasthole Drill",
           "es-ES": "YY123 QR Perforadora de agujeros de voladura",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with yy123Qr preset`, () => {
           "en-AU": "yy123-qr",
           "en-GB": "yy123-qr",
           "en-NZ": "yy123-qr",
-          "en-UK": "yy123-qr",
           "en-US": "yy123-qr",
           "es-ES": "yy123-qr",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with yy123Qr preset`, () => {
             "value": "Potente trapano per fori di miniera progettato per trapanazioni efficienti in operazioni minerarie.",
           },
           {
-            "locale": "en-UK",
-            "value": "Powerful blasthole drill designed for efficient drilling in mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Krachtige boorgatboor ontworpen voor efficiënt boren in mijnbouwoperaties.",
           },
@@ -341,10 +334,6 @@ describe(`with yy123Qr preset`, () => {
             "value": "YY123 QR Trapano per Fori di Miniera",
           },
           {
-            "locale": "en-UK",
-            "value": "YY123 QR Blasthole Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "YY123 QR Boorgatboor",
           },
@@ -391,10 +380,6 @@ describe(`with yy123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "yy123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "yy123-qr",
           },
           {

@@ -12,7 +12,6 @@ const deFrUk = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Deutschland, Frankreich und Vereinigtes Königreich')
         ['it-IT']('Germania, Francia e Regno Unito')
-        ['en-UK']('Germany, France and United Kingdom')
         ['nl-NL']('Duitsland, Frankrijk en Verenigd Koninkrijk')
         ['fr-FR']('Allemagne, France et Royaume-Uni')
         ['en-AU']('Germany, France and United Kingdom')

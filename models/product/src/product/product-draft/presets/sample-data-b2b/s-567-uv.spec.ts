@@ -20,7 +20,6 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-GB": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-NZ": "High-capacity amphibious excavator for efficient land and water excavation applications.",
-          "en-UK": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-US": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "es-ES": "Excavadora anfibia de alta capacidad para aplicaciones eficientes de excavación en tierra y agua.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "S567 UV Amphibious Excavator",
           "en-GB": "S567 UV Amphibious Excavator",
           "en-NZ": "S567 UV Amphibious Excavator",
-          "en-UK": "S567 UV Amphibious Excavator",
           "en-US": "S567 UV Amphibious Excavator",
           "es-ES": "S567 UV Excavadora anfibia",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "s567-uv",
           "en-GB": "s567-uv",
           "en-NZ": "s567-uv",
-          "en-UK": "s567-uv",
           "en-US": "s567-uv",
           "es-ES": "s567-uv",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with s567Uv preset`, () => {
             "value": "Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity amphibious excavator for efficient land and water excavation applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.",
           },
@@ -299,10 +292,6 @@ describe(`with s567Uv preset`, () => {
             "value": "S567 UV Escavatore Anfibio",
           },
           {
-            "locale": "en-UK",
-            "value": "S567 UV Amphibious Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "S567 UV Amfibische Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with s567Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "s567-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "s567-uv",
           },
           {

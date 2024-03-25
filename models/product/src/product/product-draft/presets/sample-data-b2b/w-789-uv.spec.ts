@@ -20,7 +20,6 @@ describe(`with w789Uv preset`, () => {
           "en-AU": "High-capacity rigid dump truck with advanced features for efficient material transport.",
           "en-GB": "High-capacity rigid dump truck with advanced features for efficient material transport.",
           "en-NZ": "High-capacity rigid dump truck with advanced features for efficient material transport.",
-          "en-UK": "High-capacity rigid dump truck with advanced features for efficient material transport.",
           "en-US": "High-capacity rigid dump truck with advanced features for efficient material transport.",
           "es-ES": "Camión volquete rígido de alta capacidad con características avanzadas para el transporte eficiente de materiales.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with w789Uv preset`, () => {
           "en-AU": "W789 UV Rigid Dump Truck",
           "en-GB": "W789 UV Rigid Dump Truck",
           "en-NZ": "W789 UV Rigid Dump Truck",
-          "en-UK": "W789 UV Rigid Dump Truck",
           "en-US": "W789 UV Rigid Dump Truck",
           "es-ES": "W789 UV Camión volquete rígido",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with w789Uv preset`, () => {
           "en-AU": "w789-uv",
           "en-GB": "w789-uv",
           "en-NZ": "w789-uv",
-          "en-UK": "w789-uv",
           "en-US": "w789-uv",
           "es-ES": "w789-uv",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with w789Uv preset`, () => {
             "value": "Camion ribaltabile rigido ad alta capacità con caratteristiche avanzate per il trasporto efficiente di materiali.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity rigid dump truck with advanced features for efficient material transport.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits starre dumptruck met geavanceerde functies voor efficiënt materiaaltransport.",
           },
@@ -299,10 +292,6 @@ describe(`with w789Uv preset`, () => {
             "value": "W789 UV Camion Ribaltabile Rigido",
           },
           {
-            "locale": "en-UK",
-            "value": "W789 UV Rigid Dump Truck",
-          },
-          {
             "locale": "nl-NL",
             "value": "W789 UV Starre Dumptruck",
           },
@@ -349,10 +338,6 @@ describe(`with w789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "w789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "w789-uv",
           },
           {

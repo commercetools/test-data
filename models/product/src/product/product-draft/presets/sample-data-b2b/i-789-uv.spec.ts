@@ -20,7 +20,6 @@ describe(`with i789Uv preset`, () => {
           "en-AU": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
           "en-GB": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
           "en-NZ": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
-          "en-UK": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
           "en-US": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
           "es-ES": "Topadora de manipulación de residuos avanzada con características mejoradas para tareas complejas de gestión de residuos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with i789Uv preset`, () => {
           "en-AU": "I789 UV Waste Handling Bulldozer",
           "en-GB": "I789 UV Waste Handling Bulldozer",
           "en-NZ": "I789 UV Waste Handling Bulldozer",
-          "en-UK": "I789 UV Waste Handling Bulldozer",
           "en-US": "I789 UV Waste Handling Bulldozer",
           "es-ES": "I789 UV Topadora de manipulación de residuos",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with i789Uv preset`, () => {
           "en-AU": "i789-uv",
           "en-GB": "i789-uv",
           "en-NZ": "i789-uv",
-          "en-UK": "i789-uv",
           "en-US": "i789-uv",
           "es-ES": "i789-uv",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with i789Uv preset`, () => {
             "value": "Bulldozer avanzato per la gestione dei rifiuti con caratteristiche potenziate per compiti di gestione dei rifiuti complessi.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced waste handling bulldozer with enhanced features for complex waste management tasks.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde afvalverwerkings bulldozer met verbeterde functies voor complexe afvalbeheertaken.",
           },
@@ -299,10 +292,6 @@ describe(`with i789Uv preset`, () => {
             "value": "I789 UV Bulldozer per la Gestione dei Rifiuti",
           },
           {
-            "locale": "en-UK",
-            "value": "I789 UV Waste Handling Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "I789 UV Afvalverwerkings Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with i789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "i789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "i789-uv",
           },
           {

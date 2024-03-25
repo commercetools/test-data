@@ -20,7 +20,6 @@ describe(`with ff890Op preset`, () => {
           "en-AU": "Versatile fine grader with specialized features for precise surface grading.",
           "en-GB": "Versatile fine grader with specialized features for precise surface grading.",
           "en-NZ": "Versatile fine grader with specialized features for precise surface grading.",
-          "en-UK": "Versatile fine grader with specialized features for precise surface grading.",
           "en-US": "Versatile fine grader with specialized features for precise surface grading.",
           "es-ES": "Niveladora fina versátil con características especializadas para la nivelación precisa de superficies.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with ff890Op preset`, () => {
           "en-AU": "FF890 OP Fine Grader",
           "en-GB": "FF890 OP Fine Grader",
           "en-NZ": "FF890 OP Fine Grader",
-          "en-UK": "FF890 OP Fine Grader",
           "en-US": "FF890 OP Fine Grader",
           "es-ES": "FF890 OP Niveladora fina",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with ff890Op preset`, () => {
           "en-AU": "ff890-op",
           "en-GB": "ff890-op",
           "en-NZ": "ff890-op",
-          "en-UK": "ff890-op",
           "en-US": "ff890-op",
           "es-ES": "ff890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with ff890Op preset`, () => {
             "value": "Livellatrice fine versatile con caratteristiche specializzate per la graduazione precisa delle superfici.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile fine grader with specialized features for precise surface grading.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige fijnnivelleermachine met gespecialiseerde functies voor precieze oppervlakte egalisatie.",
           },
@@ -299,10 +292,6 @@ describe(`with ff890Op preset`, () => {
             "value": "FF890 OP Livellatrice Fine",
           },
           {
-            "locale": "en-UK",
-            "value": "FF890 OP Fine Grader",
-          },
-          {
             "locale": "nl-NL",
             "value": "FF890 OP Fijnnivelleermachine",
           },
@@ -349,10 +338,6 @@ describe(`with ff890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ff890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "ff890-op",
           },
           {

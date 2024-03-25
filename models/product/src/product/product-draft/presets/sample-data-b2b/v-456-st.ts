@@ -42,7 +42,6 @@ const v456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('V456 ST Starren Kipplaster')
         ['it-IT']('V456 ST Camion Ribaltabile Rigido')
-        ['en-UK']('V456 ST Rigid Dump Truck')
         ['nl-NL']('V456 ST Starre Dumptruck')
         ['fr-FR']('V456 ST Camion benne rigide')
         ['en-AU']('V456 ST Rigid Dump Truck')
@@ -60,9 +59,6 @@ const v456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Camion ribaltabile rigido V456 ST per impieghi pesanti per il trasporto affidabile di grandi volumi di materiale in miniere e costruzioni.'
-        )
-        ['en-UK'](
-          'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'
         )
         ['nl-NL'](
           'V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.'
@@ -94,7 +90,6 @@ const v456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('v456-st')
         ['it-IT']('v456-st')
-        ['en-UK']('v456-st')
         ['nl-NL']('v456-st')
         ['fr-FR']('v456-st')
         ['en-AU']('v456-st')

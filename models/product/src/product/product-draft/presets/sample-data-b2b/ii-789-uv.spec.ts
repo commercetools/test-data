@@ -20,7 +20,6 @@ describe(`with ii789Uv preset`, () => {
           "en-AU": "High-capacity pneumatic roller with advanced features for efficient compaction.",
           "en-GB": "High-capacity pneumatic roller with advanced features for efficient compaction.",
           "en-NZ": "High-capacity pneumatic roller with advanced features for efficient compaction.",
-          "en-UK": "High-capacity pneumatic roller with advanced features for efficient compaction.",
           "en-US": "High-capacity pneumatic roller with advanced features for efficient compaction.",
           "es-ES": "Rodillo neumático de alta capacidad con características avanzadas para una compactación eficiente.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with ii789Uv preset`, () => {
           "en-AU": "II789 UV Pneumatic Roller",
           "en-GB": "II789 UV Pneumatic Roller",
           "en-NZ": "II789 UV Pneumatic Roller",
-          "en-UK": "II789 UV Pneumatic Roller",
           "en-US": "II789 UV Pneumatic Roller",
           "es-ES": "II789 UV Rodillo neumático",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with ii789Uv preset`, () => {
           "en-AU": "ii789-uv",
           "en-GB": "ii789-uv",
           "en-NZ": "ii789-uv",
-          "en-UK": "ii789-uv",
           "en-US": "ii789-uv",
           "es-ES": "ii789-uv",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with ii789Uv preset`, () => {
             "value": "Rullo pneumatico ad alta capacità con caratteristiche avanzate per una compattazione efficiente.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity pneumatic roller with advanced features for efficient compaction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits pneumatische wals met geavanceerde functies voor efficiënte verdichting.",
           },
@@ -299,10 +292,6 @@ describe(`with ii789Uv preset`, () => {
             "value": "II789 UV Rullo Pneumatico",
           },
           {
-            "locale": "en-UK",
-            "value": "II789 UV Pneumatic Roller",
-          },
-          {
             "locale": "nl-NL",
             "value": "II789 UV Pneumatische Wals",
           },
@@ -349,10 +338,6 @@ describe(`with ii789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ii789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "ii789-uv",
           },
           {

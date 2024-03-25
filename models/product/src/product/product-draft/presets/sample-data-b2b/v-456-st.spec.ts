@@ -20,7 +20,6 @@ describe(`with v456St preset`, () => {
           "en-AU": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
           "en-GB": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
           "en-NZ": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
-          "en-UK": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
           "en-US": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
           "es-ES": "Camión volquete rígido resistente para el transporte confiable de grandes volúmenes de material en minería y construcción.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with v456St preset`, () => {
           "en-AU": "V456 ST Rigid Dump Truck",
           "en-GB": "V456 ST Rigid Dump Truck",
           "en-NZ": "V456 ST Rigid Dump Truck",
-          "en-UK": "V456 ST Rigid Dump Truck",
           "en-US": "V456 ST Rigid Dump Truck",
           "es-ES": "V456 ST Camión volquete rígido",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with v456St preset`, () => {
           "en-AU": "v456-st",
           "en-GB": "v456-st",
           "en-NZ": "v456-st",
-          "en-UK": "v456-st",
           "en-US": "v456-st",
           "es-ES": "v456-st",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with v456St preset`, () => {
             "value": "Camion ribaltabile rigido V456 ST per impieghi pesanti per il trasporto affidabile di grandi volumi di materiale in miniere e costruzioni.",
           },
           {
-            "locale": "en-UK",
-            "value": "V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.",
           },
@@ -299,10 +292,6 @@ describe(`with v456St preset`, () => {
             "value": "V456 ST Camion Ribaltabile Rigido",
           },
           {
-            "locale": "en-UK",
-            "value": "V456 ST Rigid Dump Truck",
-          },
-          {
             "locale": "nl-NL",
             "value": "V456 ST Starre Dumptruck",
           },
@@ -349,10 +338,6 @@ describe(`with v456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "v456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "v456-st",
           },
           {
