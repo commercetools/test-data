@@ -47,8 +47,8 @@ describe(`with p234Qw preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "marine",
+                "label": "Marine",
               },
             },
           ],
@@ -130,8 +130,8 @@ describe(`with p234Qw preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "marine",
+                  "label": "Marine",
                 },
               },
             ],
@@ -167,8 +167,8 @@ describe(`with p234Qw preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "marine",
+                  "label": "Marine",
                 },
               },
             ],
@@ -262,7 +262,7 @@ describe(`with p234Qw preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"marine","label":"Marine"}",
             },
           ],
           "images": [
@@ -396,7 +396,7 @@ describe(`with p234Qw preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [
@@ -430,7 +430,7 @@ describe(`with p234Qw preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [

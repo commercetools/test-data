@@ -396,7 +396,7 @@ describe(`with m890Op preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [
