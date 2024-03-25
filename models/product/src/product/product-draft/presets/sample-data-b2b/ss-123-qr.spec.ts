@@ -61,8 +61,8 @@ describe(`with ss123Qr preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "fixed",
+                "label": "Fixed",
               },
             },
           ],
@@ -158,8 +158,8 @@ describe(`with ss123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -209,8 +209,8 @@ describe(`with ss123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -304,7 +304,7 @@ describe(`with ss123Qr preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"fixed","label":"Fixed"}",
             },
           ],
           "images": [
@@ -438,7 +438,7 @@ describe(`with ss123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [
@@ -472,7 +472,7 @@ describe(`with ss123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [

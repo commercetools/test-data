@@ -37,8 +37,8 @@ describe(`with hhh234Wx03 preset`, () => {
           {
             "name": "mobility",
             "value": {
-              "key": "tracked",
-              "label": "Tracked",
+              "key": "fixed",
+              "label": "Fixed",
             },
           },
         ],
@@ -80,7 +80,7 @@ describe(`with hhh234Wx03 preset`, () => {
           },
           {
             "name": "mobility",
-            "value": "{"key":"tracked","label":"Tracked"}",
+            "value": "{"key":"fixed","label":"Fixed"}",
           },
         ],
         "images": [
