@@ -23,8 +23,8 @@ describe(`with u123Qr01 preset`, () => {
           {
             "name": "mobility",
             "value": {
-              "key": "tracked",
-              "label": "Tracked",
+              "key": "wheeled",
+              "label": "Wheeled",
             },
           },
         ],
@@ -66,7 +66,7 @@ describe(`with u123Qr01 preset`, () => {
           },
           {
             "name": "mobility",
-            "value": "{"key":"tracked","label":"Tracked"}",
+            "value": "{"key":"wheeled","label":"Wheeled"}",
           },
         ],
         "images": [

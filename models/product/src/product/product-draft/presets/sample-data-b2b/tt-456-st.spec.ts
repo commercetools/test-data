@@ -61,8 +61,8 @@ describe(`with tt456St preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -158,8 +158,8 @@ describe(`with tt456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -209,8 +209,8 @@ describe(`with tt456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -304,7 +304,7 @@ describe(`with tt456St preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -438,7 +438,7 @@ describe(`with tt456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -472,7 +472,7 @@ describe(`with tt456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

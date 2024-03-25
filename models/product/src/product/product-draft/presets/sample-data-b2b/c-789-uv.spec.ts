@@ -47,8 +47,8 @@ describe(`with c789Uv preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -130,8 +130,8 @@ describe(`with c789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -167,8 +167,8 @@ describe(`with c789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -262,7 +262,7 @@ describe(`with c789Uv preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -396,7 +396,7 @@ describe(`with c789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -430,7 +430,7 @@ describe(`with c789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
