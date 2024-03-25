@@ -17,7 +17,7 @@ describe(`with usLargeCustomers preset`, () => {
           "en": undefined,
           "en-AU": "US Large Customers",
           "en-GB": "US Large Customers",
-          "en-NZ": "US Large Customers",          
+          "en-NZ": "US Large Customers",
           "en-US": "US Large Customers",
           "es-ES": "Grandes Clientes de EE. UU.",
           "fr": undefined,

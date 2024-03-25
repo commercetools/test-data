@@ -5,7 +5,7 @@ import {
 import { type TStoreDraft, StoreDraft } from '@commercetools-test-data/store';
 import { AssociateDraft } from '../../../../associate';
 import { CompanyDraft, type TCompanyDraft } from '../../../../company';
-import { status, storeMode, unitType, associateMode } from '../../../constants';
+import { storeMode, unitType, associateMode } from '../../../constants';
 import type { TDivisionDraftBuilder } from '../../../types';
 import * as DivisionDraft from '../../index';
 
