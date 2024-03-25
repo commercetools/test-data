@@ -6,7 +6,6 @@ describe(`with northAmerica preset`, () => {
     const northAmericaPreset = northAmerica().build<TZoneDraft>();
     expect(northAmericaPreset).toMatchInlineSnapshot(`
       {
-        "description": undefined,
         "key": "north-america",
         "locations": [
           {
@@ -14,6 +13,7 @@ describe(`with northAmerica preset`, () => {
           },
         ],
         "name": "North America",
+        "description": "Shipping zone for North America",
       }
     `);
   });
@@ -21,15 +21,15 @@ describe(`with northAmerica preset`, () => {
   it(`should return a northAmerica preset when built for graphql`, () => {
     const northAmericaPresetGraphql = northAmerica().buildGraphql<TZoneDraft>();
     expect(northAmericaPresetGraphql).toMatchInlineSnapshot(`
-      {
-        "description": undefined,
+      {        
         "key": "north-america",
         "locations": [
           {
             "country": "US",
           },
         ],
-        "name": "North America",
+        "name": "North America",      
+        "description": "Shipping zone for North America",  
       }
     `);
   });

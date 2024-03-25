@@ -10,6 +10,7 @@ const countryEurope = () =>
       { country: 'ES' },
       { country: 'FR' },
       { country: 'GB' },
-    ]);
+    ])
+    .description('Shipping zone for Europe');
 
 export default countryEurope;
