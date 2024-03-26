@@ -8,7 +8,10 @@ describe(`with northAmerica preset`, () => {
       {
         "shippingRates": [
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "USD",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "USD",
@@ -31,7 +34,10 @@ describe(`with northAmerica preset`, () => {
       {
         "shippingRates": [
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "USD",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "USD",

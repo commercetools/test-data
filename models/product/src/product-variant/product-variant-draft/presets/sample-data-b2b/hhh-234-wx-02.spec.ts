@@ -80,7 +80,7 @@ describe(`with hhh234Wx02 preset`, () => {
           },
           {
             "name": "mobility",
-            "value": "{"key":"tracked","label":"Tracked"}",
+            "value": "{"key":"fixed","label":"Fixed"}",
           },
         ],
         "images": [
