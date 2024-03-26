@@ -1,5 +1,18 @@
 # @commercetools-test-data/store
 
+## 7.7.1
+
+### Patch Changes
+
+- [#538](https://github.com/commercetools/test-data/pull/538) [`c002983`](https://github.com/commercetools/test-data/commit/c00298387466368ab4fb52ea2c2e0e4e283e8aa7) Thanks [@ByronDWall](https://github.com/ByronDWall)! - update productSelectionSettingDraft in storeDraft transformer, build productSelections correctly in b2b presets
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.7.1
+  - @commercetools-test-data/channel@7.7.1
+  - @commercetools-test-data/commons@7.7.1
+  - @commercetools-test-data/product-selection@7.7.1
+  - @commercetools-test-data/utils@7.7.1
+
 ## 7.7.0
 
 ### Minor Changes
