@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const heavyDutyConstructionCranes = (): TCategoryDraftBuilder =>
@@ -21,6 +18,22 @@ const heavyDutyConstructionCranes = (): TCategoryDraftBuilder =>
         ['pt-PT']('Guindastes de Construção')
         ['en-US']('Construction Cranes')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kräne, die für anspruchsvolle Bauaufgaben konzipiert sind')
+        ['it-IT']('Gru progettate per compiti di costruzione pesanti')
+        ['nl-NL']('Kranen ontworpen voor zware bouwtaken')
+        ['fr-FR']('Grues conçues pour des tâches de construction lourdes')
+        ['en-AU']('Cranes designed for heavy-duty construction tasks')
+        ['es-ES'](
+          'Gruas diseñadas para tareas de construcción de servicio pesado'
+        )
+        ['en-GB']('Cranes designed for heavy-duty construction tasks')
+        ['en-NZ']('Cranes designed for heavy-duty construction tasks')
+        ['pt-PT']('Guindastes projetados para tarefas pesadas de construção')
+        ['en-US']('Cranes designed for heavy-duty construction tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +49,6 @@ const heavyDutyConstructionCranes = (): TCategoryDraftBuilder =>
         ['en-US']('heavy_duty_construction_cranes')
     )
     .key('heavy-duty-construction-cranes')
-    .orderHint('0.000017083829387371397575028');
+    .orderHint('0.000017113644845512100710765');
 
 export default heavyDutyConstructionCranes;

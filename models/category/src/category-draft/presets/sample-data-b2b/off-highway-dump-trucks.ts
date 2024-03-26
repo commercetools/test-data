@@ -24,6 +24,20 @@ const offHighwayDumpTrucks = (): TCategoryDraftBuilder =>
         ['pt-PT']('Caminhões Basculantes Fora de Estrada')
         ['en-US']('Off-Highway Dump Trucks')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kipper, die für den Offroad-Einsatz konzipiert sind')
+        ['it-IT']('Camion ribaltabili progettati per uso fuoristrada')
+        ['nl-NL']('Kipwagens ontworpen voor gebruik buiten de weg')
+        ['fr-FR']('Camions-bennes conçus pour une utilisation tout-terrain')
+        ['en-AU']('Dump trucks designed for off-highway use')
+        ['es-ES']('Camiones volquete diseñados para uso fuera de carretera')
+        ['en-GB']('Dump trucks designed for off-highway use')
+        ['en-NZ']('Dump trucks designed for off-highway use')
+        ['pt-PT']('Caminhões basculantes projetados para uso fora de estrada')
+        ['en-US']('Dump trucks designed for off-highway use')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const offHighwayDumpTrucks = (): TCategoryDraftBuilder =>
         ['en-US']('off_highway_dump_trucks')
     )
     .key('off-highway-dump-trucks')
-    .orderHint('0.000017083829456541934993986')
+    .orderHint('0.0000171136448473756887464')
     .parent(KeyReferenceDraft.presets.category().key(dumpTrucksCategory.key!));
 
 export default offHighwayDumpTrucks;

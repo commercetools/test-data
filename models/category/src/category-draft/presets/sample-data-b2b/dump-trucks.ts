@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const dumpTrucks = (): TCategoryDraftBuilder =>
@@ -21,6 +18,20 @@ const dumpTrucks = (): TCategoryDraftBuilder =>
         ['pt-PT']('Caminhões Basculantes')
         ['en-US']('Dump Trucks')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kipper, die bei Bergbauoperationen verwendet werden')
+        ['it-IT']('Camion ribaltabili utilizzati in operazioni minerarie')
+        ['nl-NL']('Kipwagens gebruikt in mijnbouwoperaties')
+        ['fr-FR']('Camions-bennes utilisés dans les opérations minières')
+        ['en-AU']('Dump trucks used in mining operations')
+        ['es-ES']('Camiones volquete utilizados en operaciones mineras')
+        ['en-GB']('Dump trucks used in mining operations')
+        ['en-NZ']('Dump trucks used in mining operations')
+        ['pt-PT']('Caminhões basculantes usados em operações de mineração')
+        ['en-US']('Dump trucks used in mining operations')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +47,6 @@ const dumpTrucks = (): TCategoryDraftBuilder =>
         ['en-US']('mining_dump_trucks')
     )
     .key('dump-trucks')
-    .orderHint('0.000017083829376992031863512');
+    .orderHint('0.00001711364484524846530528');
 
 export default dumpTrucks;

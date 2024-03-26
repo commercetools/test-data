@@ -25,6 +25,20 @@ const roadGraders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Motoniveladoras de Estrada')
         ['en-US']('Road Graders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Motorgrader für den Straßenbau')
+        ['it-IT']('Livellatrici motorizzate per la costruzione stradale')
+        ['nl-NL']('Motorgraders voor wegconstructie')
+        ['fr-FR']('Niveleuses pour la construction routière')
+        ['en-AU']('Motor graders for road construction')
+        ['es-ES']('Motoniveladoras para construcción de carreteras')
+        ['en-GB']('Motor graders for road construction')
+        ['en-NZ']('Motor graders for road construction')
+        ['pt-PT']('Motoniveladoras para construção de estradas')
+        ['en-US']('Motor graders for road construction')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const roadGraders = (): TCategoryDraftBuilder =>
         ['en-US']('road_graders')
     )
     .key('road-graders')
-    .orderHint('0.000017083829461181415854930')
+    .orderHint('0.000017113644847361524464697')
     .parent(
       KeyReferenceDraft.presets
         .category()

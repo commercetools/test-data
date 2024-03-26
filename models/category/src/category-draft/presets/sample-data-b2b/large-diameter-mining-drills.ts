@@ -21,6 +21,20 @@ const largeDiameterMiningDrills = (): TCategoryDraftBuilder =>
         ['pt-PT']('Brocas de Mineração')
         ['en-US']('Mining Drills')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bohrer mit großem Durchmesser für Bergbauoperationen')
+        ['it-IT']('Trapani con grande diametro per operazioni minerarie')
+        ['nl-NL']('Boormachines met grote diameter voor mijnbouwoperaties')
+        ['fr-FR']('Forages de grand diamètre pour les opérations minières')
+        ['en-AU']('Drills with large diameter for mining operations')
+        ['es-ES']('Perforadoras con gran diámetro para operaciones mineras')
+        ['en-GB']('Drills with large diameter for mining operations')
+        ['en-NZ']('Drills with large diameter for mining operations')
+        ['pt-PT']('Brocas com grande diâmetro para operações de mineração')
+        ['en-US']('Drills with large diameter for mining operations')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +50,6 @@ const largeDiameterMiningDrills = (): TCategoryDraftBuilder =>
         ['en-US']('large_diameter_mining_drills')
     )
     .key('large-diameter-mining-drills')
-    .orderHint('0.000017083829390071648330240');
+    .orderHint('0.000017113644845261017998287');
 
 export default largeDiameterMiningDrills;

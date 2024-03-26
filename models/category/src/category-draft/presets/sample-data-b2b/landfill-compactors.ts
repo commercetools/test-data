@@ -25,6 +25,20 @@ const landfillCompactors = (): TCategoryDraftBuilder =>
         ['pt-PT']('Compactadores de Aterro')
         ['en-US']('Landfill Compactors')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Verdichter, die für die Deponienutzung konzipiert sind')
+        ['it-IT']("Compattatori progettati per l'uso in discariche")
+        ['nl-NL']('Verdichters ontworpen voor gebruik in stortplaatsen')
+        ['fr-FR']('Compacteurs conçus pour une utilisation en décharge')
+        ['en-AU']('Compactors designed for landfill use')
+        ['es-ES']('Compactadores diseñados para uso en vertederos')
+        ['en-GB']('Compactors designed for landfill use')
+        ['en-NZ']('Compactors designed for landfill use')
+        ['pt-PT']('Compactadores projetados para uso em aterros')
+        ['en-US']('Compactors designed for landfill us')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const landfillCompactors = (): TCategoryDraftBuilder =>
         ['en-US']('landfill_compactors')
     )
     .key('landfill-compactors')
-    .orderHint('0.000017083829481041966423080')
+    .orderHint('0.0000171136448476519561524')
     .parent(
       KeyReferenceDraft.presets
         .category()

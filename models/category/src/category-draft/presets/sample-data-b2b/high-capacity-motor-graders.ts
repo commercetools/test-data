@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const highCapacityMotorGraders = (): TCategoryDraftBuilder =>
@@ -21,6 +18,20 @@ const highCapacityMotorGraders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Motoniveladoras')
         ['en-US']('Graders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Motorgrader mit hoher Grading-Kapazität')
+        ['it-IT']('Livellatrici motorizzate ad alta capacità di livellamento')
+        ['nl-NL']('Motorgraders met hoge graderingscapaciteit')
+        ['fr-FR']('Niveleuses avec une capacité de nivellement élevée')
+        ['en-AU']('Motor graders with high grading capacity')
+        ['es-ES']('Motoniveladoras con alta capacidad de nivelación')
+        ['en-GB']('Motor graders with high grading capacity')
+        ['en-NZ']('Motor graders with high grading capacity')
+        ['pt-PT']('Motoniveladoras com alta capacidade de nivelamento')
+        ['en-US']('Motor graders with high grading capacity')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +47,6 @@ const highCapacityMotorGraders = (): TCategoryDraftBuilder =>
         ['en-US']('high_capacity_motor_graders')
     )
     .key('high-capacity-motor-graders')
-    .orderHint('0.0000170838293796780439361');
+    .orderHint('0.000017113644845161588258996');
 
 export default highCapacityMotorGraders;

@@ -25,6 +25,24 @@ const pneumaticRollers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Rolos Pneumáticos')
         ['en-US']('Pneumatic Rollers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE'](
+          'Walzen, die pneumatische Kraft für die Verdichtung verwenden'
+        )
+        ['it-IT'](
+          'Rulli che utilizzano la forza pneumatica per la compattazione'
+        )
+        ['nl-NL']('Walsen die pneumatische kracht gebruiken voor verdichting')
+        ['fr-FR']('Rouleaux utilisant la force pneumatique pour le compactage')
+        ['en-AU']('Rollers using pneumatic force for compaction')
+        ['es-ES']('Rodillos que utilizan fuerza neumática para compactar')
+        ['en-GB']('Rollers using pneumatic force for compaction')
+        ['en-NZ']('Rollers using pneumatic force for compaction')
+        ['pt-PT']('Rolos que utilizam força pneumática para compactação')
+        ['en-US']('Rollers using pneumatic force for compaction')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +58,7 @@ const pneumaticRollers = (): TCategoryDraftBuilder =>
         ['en-US']('pneumatic_rollers')
     )
     .key('pneumatic-rollers')
-    .orderHint('0.00001708382947601996147782')
+    .orderHint('0.00001711364484772490385449')
     .parent(
       KeyReferenceDraft.presets
         .category()

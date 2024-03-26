@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const largeBulldozers = (): TCategoryDraftBuilder =>
@@ -21,6 +18,26 @@ const largeBulldozers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Bulldozers')
         ['en-US']('Bulldozers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bulldozer im Großraumbagger- und Baubereich')
+        ['it-IT']('Bulldozer per movimento terra e costruzioni su larga scala')
+        ['nl-NL']('Bulldozers in grootschalige grondverzet- en bouwprojecten')
+        ['fr-FR'](
+          'Bulldozers pour les travaux de terrassement et de construction à grande échelle'
+        )
+        ['en-AU']('Bulldozers in large-scale earthmoving and construction')
+        ['es-ES'](
+          'Bulldozers en movimiento de tierras y construcción a gran escala'
+        )
+        ['en-GB']('Bulldozers in large-scale earthmoving and construction')
+        ['en-NZ']('Bulldozers in large-scale earthmoving and construction')
+        ['pt-PT'](
+          'Bulldozers em movimentação de terra e construção de grande escala'
+        )
+        ['en-US']('Bulldozers in large-scale earthmoving and construction')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +53,6 @@ const largeBulldozers = (): TCategoryDraftBuilder =>
         ['en-US']('large_bulldozers')
     )
     .key('large-bulldozers')
-    .orderHint('0.000017083829373511975137352');
+    .orderHint('0.000017113644845311689458124');
 
 export default largeBulldozers;

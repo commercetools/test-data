@@ -25,6 +25,24 @@ const blastholeDrills = (): TCategoryDraftBuilder =>
         ['pt-PT']('Brocas para Furos de Explosão')
         ['en-US']('Blasthole Drills')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bohrer, die für Sprenglochoperationen konzipiert sind')
+        ['it-IT'](
+          'Trapani progettati per operazioni di perforazione di fori di scoppio'
+        )
+        ['nl-NL']('Boormachines ontworpen voor explosiegaten')
+        ['fr-FR']('Forages conçus pour les opérations de trous de mine')
+        ['en-AU']('Drills designed for blasthole operations')
+        ['es-ES'](
+          'Perforadoras diseñadas para operaciones de agujeros de voladura'
+        )
+        ['en-GB']('Drills designed for blasthole operations')
+        ['en-NZ']('Drills designed for blasthole operations')
+        ['pt-PT']('Brocas projetadas para operações de furos de explosão')
+        ['en-US']('Drills designed for blasthole operations')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +58,7 @@ const blastholeDrills = (): TCategoryDraftBuilder =>
         ['en-US']('blasthole_drills')
     )
     .key('blasthole-drills')
-    .orderHint('0.000017083829494361565571101')
+    .orderHint('0.000017113644847441329183825')
     .parent(
       KeyReferenceDraft.presets
         .category()

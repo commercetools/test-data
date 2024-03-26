@@ -25,6 +25,20 @@ const towerCranes = (): TCategoryDraftBuilder =>
         ['pt-PT']('Guindastes de Torre')
         ['en-US']('Tower Cranes')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kräne, die für den Hochhausbau geeignet sind')
+        ['it-IT']('Gru adatte per la costruzione di edifici alti')
+        ['nl-NL']('Kranen geschikt voor hoogbouw')
+        ['fr-FR']('Grues adaptées à la construction en hauteur')
+        ['en-AU']('Cranes suitable for high-rise construction')
+        ['es-ES']('Gruas adecuadas para la construcción de rascacielos')
+        ['en-GB']('Cranes suitable for high-rise construction')
+        ['en-NZ']('Cranes suitable for high-rise construction')
+        ['pt-PT']('Guindastes adequados para construção de edifícios altos')
+        ['en-US']('Cranes suitable for high-rise construction')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const towerCranes = (): TCategoryDraftBuilder =>
         ['en-US']('tower_cranes')
     )
     .key('tower-cranes')
-    .orderHint('0.00001708382948409947515103')
+    .orderHint('0.000017113644847601298494328')
     .parent(
       KeyReferenceDraft.presets
         .category()

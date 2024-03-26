@@ -24,6 +24,20 @@ const earthmovingBulldozers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Bulldozers para Movimentação de Terra')
         ['en-US']('Earthmoving Bulldozers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bulldozer für allgemeine Erdbewegungsarbeiten')
+        ['it-IT']('Bulldozer per movimento terra generale')
+        ['nl-NL']('Bulldozers voor algemeen grondverzet')
+        ['fr-FR']('Bulldozers pour le terrassement général')
+        ['en-AU']('Bulldozers for general earthmoving')
+        ['es-ES']('Bulldozers para movimiento de tierras en general')
+        ['en-GB']('Bulldozers for general earthmoving')
+        ['en-NZ']('Bulldozers for general earthmoving')
+        ['pt-PT']('Bulldozers para movimentação geral de terra')
+        ['en-US']('Bulldozers for general earthmoving')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const earthmovingBulldozers = (): TCategoryDraftBuilder =>
         ['en-US']('earthmoving_bulldozers')
     )
     .key('earthmoving-bulldozers')
-    .orderHint('0.00001708382944022671730669')
+    .orderHint('0.000017113644847561100385515')
     .parent(
       KeyReferenceDraft.presets.category().key(largeBulldozersCategory.key!)
     );

@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const highCapacityFrontEndLoaders = (): TCategoryDraftBuilder =>
@@ -21,6 +18,22 @@ const highCapacityFrontEndLoaders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Carregadeiras')
         ['en-US']('Loaders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Lader mit hoher Kapazität für den Fronteinsatz')
+        ['it-IT']('Caricatori ad alta capacità per uso frontale')
+        ['nl-NL']('Laders met hoge capaciteit voor front-end gebruik')
+        ['fr-FR'](
+          'Chargeuses avec une capacité élevée pour une utilisation frontale'
+        )
+        ['en-AU']('Loaders with high capacity for front-end use')
+        ['es-ES']('Cargadores con alta capacidad para uso frontal')
+        ['en-GB']('Loaders with high capacity for front-end use')
+        ['en-NZ']('Loaders with high capacity for front-end use')
+        ['pt-PT']('Carregadeiras com alta capacidade para uso frontal')
+        ['en-US']('Loaders with high capacity for front-end use')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +49,6 @@ const highCapacityFrontEndLoaders = (): TCategoryDraftBuilder =>
         ['en-US']('high_capacity_front_end_loaders')
     )
     .key('high-capacity-front-end-loaders')
-    .orderHint('0.000017083829370961875597117');
+    .orderHint('0.000017113644844981877777123');
 
 export default highCapacityFrontEndLoaders;

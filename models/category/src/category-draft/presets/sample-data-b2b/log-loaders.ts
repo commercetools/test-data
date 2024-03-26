@@ -25,6 +25,20 @@ const logLoaders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Carregadeiras de Toras')
         ['en-US']('Log Loaders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Lader, spezialisiert auf das Handling von Holzstapeln')
+        ['it-IT']('Caricatori specializzati per la manipolazione di tronchi')
+        ['nl-NL']('Laders gespecialiseerd in houtverwerking')
+        ['fr-FR']('Chargeuses spécialisées dans la manipulation de grumes')
+        ['en-AU']('Loaders specialized for log handling')
+        ['es-ES']('Cargadores especializados para el manejo de troncos')
+        ['en-GB']('Loaders specialized for log handling')
+        ['en-NZ']('Loaders specialized for log handling')
+        ['pt-PT']('Carregadeiras especializadas para manuseio de toras')
+        ['en-US']('Loaders specialized for log handling')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const logLoaders = (): TCategoryDraftBuilder =>
         ['en-US']('log_loaders')
     )
     .key('log-loaders')
-    .orderHint('0.000017083829434891467155616')
+    .orderHint('0.00001711364484753190019805')
     .parent(
       KeyReferenceDraft.presets
         .category()

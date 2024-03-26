@@ -25,6 +25,20 @@ const explorationDrills = (): TCategoryDraftBuilder =>
         ['pt-PT']('Brocas de Exploração')
         ['en-US']('Exploration Drills')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bohrer, die für Erkundungszwecke verwendet werden')
+        ['it-IT']('Trapani utilizzati per scopi di esplorazione')
+        ['nl-NL']('Boormachines gebruikt voor exploratiedoeleinden')
+        ['fr-FR']("Forages utilisés à des fins d'exploration")
+        ['en-AU']('Drills used for exploration purposes')
+        ['es-ES']('Perforadoras utilizadas con fines de exploración')
+        ['en-GB']('Drills used for exploration purposes')
+        ['en-NZ']('Drills used for exploration purposes')
+        ['pt-PT']('Brocas usadas para fins de exploração')
+        ['en-US']('Drills used for exploration purposes')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const explorationDrills = (): TCategoryDraftBuilder =>
         ['en-US']('exploration_drills')
     )
     .key('exploration-drills')
-    .orderHint('0.000017083829497591898860695')
+    .orderHint('0.000017113644847351089727496')
     .parent(
       KeyReferenceDraft.presets
         .category()

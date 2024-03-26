@@ -25,6 +25,20 @@ const demolitionHammers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Martelos Demolidores')
         ['en-US']('Demolition Hammers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Hämmer, die für Abbrucharbeiten verwendet werden')
+        ['it-IT']('Martelli utilizzati per compiti di demolizione')
+        ['nl-NL']('Hamers gebruikt voor sloopwerkzaamheden')
+        ['fr-FR']('Marteaux utilisés pour des tâches de démolition')
+        ['en-AU']('Hammers used for demolition tasks')
+        ['es-ES']('Martillos utilizados para tareas de demolición')
+        ['en-GB']('Hammers used for demolition tasks')
+        ['en-NZ']('Hammers used for demolition tasks')
+        ['pt-PT']('Martelos usados para tarefas de demolição')
+        ['en-US']('Hammers used for demolition tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const demolitionHammers = (): TCategoryDraftBuilder =>
         ['en-US']('demolition_hammers')
     )
     .key('demolition-hammers')
-    .orderHint('0.00001708382950462763451332')
+    .orderHint('0.00001711364484762327979076')
     .parent(
       KeyReferenceDraft.presets
         .category()

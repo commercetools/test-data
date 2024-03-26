@@ -25,6 +25,20 @@ const quarryLoaders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Carregadeiras de Pedreira')
         ['en-US']('Quarry Loaders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Lader, die in Steinbruchoperationen verwendet werden')
+        ['it-IT']('Caricatori utilizzati in operazioni di cava')
+        ['nl-NL']('Laders gebruikt in steengroeve operaties')
+        ['fr-FR']('Chargeuses utilisées dans les opérations de carrière')
+        ['en-AU']('Loaders used in quarry operations')
+        ['es-ES']('Cargadores utilizados en operaciones de cantera')
+        ['en-GB']('Loaders used in quarry operations')
+        ['en-NZ']('Loaders used in quarry operations')
+        ['pt-PT']('Carregadeiras usadas em operações de pedreira')
+        ['en-US']('Loaders used in quarry operations')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const quarryLoaders = (): TCategoryDraftBuilder =>
         ['en-US']('quarry_loaders')
     )
     .key('quarry-loaders')
-    .orderHint('0.00001708382942908348001125')
+    .orderHint('0.000017113644847331158997483')
     .parent(
       KeyReferenceDraft.presets
         .category()

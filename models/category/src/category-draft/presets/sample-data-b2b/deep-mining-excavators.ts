@@ -25,6 +25,22 @@ const deepMiningExcavators = (): TCategoryDraftBuilder =>
         ['pt-PT']('Escavadeiras para Mineração Profunda')
         ['en-US']('Deep Mining Excavators')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bagger, die im Tiefbau eingesetzt werden')
+        ['it-IT']('Escavatori utilizzati in miniere profonde')
+        ['nl-NL']('Graafmachines gebruikt in diepe mijnbouw')
+        ['fr-FR'](
+          "Excavatrices utilisées dans l'exploitation minière en profondeur"
+        )
+        ['en-AU']('Excavators used in deep mining')
+        ['es-ES']('Excavadoras utilizadas en minería profunda')
+        ['en-GB']('Excavators used in deep mining')
+        ['en-NZ']('Excavators used in deep mining')
+        ['pt-PT']('Escavadeiras usadas na mineração profunda')
+        ['en-US']('Excavators used in deep mining')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +56,7 @@ const deepMiningExcavators = (): TCategoryDraftBuilder =>
         ['en-US']('deep_mining_excavators')
     )
     .key('deep-mining-excavators')
-    .orderHint('0.0000170838294044621333943')
+    .orderHint('0.00001711364484935345256313')
     .parent(
       KeyReferenceDraft.presets
         .category()

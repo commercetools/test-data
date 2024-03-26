@@ -24,6 +24,20 @@ const rigidDumpTrucks = (): TCategoryDraftBuilder =>
         ['pt-PT']('Caminhões Basculantes Rígidos')
         ['en-US']('Rigid Dump Trucks')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kipper mit starrem Rahmen')
+        ['it-IT']('Camion ribaltabili con telaio rigido')
+        ['nl-NL']('Kipwagens met een star frame')
+        ['fr-FR']('Camions-bennes avec une structure rigide')
+        ['en-AU']('Dump trucks with a rigid frame')
+        ['es-ES']('Camiones volquete con estructura rígida')
+        ['en-GB']('Dump trucks with a rigid frame')
+        ['en-NZ']('Dump trucks with a rigid frame')
+        ['pt-PT']('Caminhões basculantes com estrutura rígida')
+        ['en-US']('Dump trucks with a rigid frame')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const rigidDumpTrucks = (): TCategoryDraftBuilder =>
         ['en-US']('rigid_dump_trucks')
     )
     .key('rigid-dump-trucks')
-    .orderHint('0.000017083829451711521889254')
+    .orderHint('0.000017113644847521911712808')
     .parent(KeyReferenceDraft.presets.category().key(dumpTrucksCategory.key!));
 
 export default rigidDumpTrucks;

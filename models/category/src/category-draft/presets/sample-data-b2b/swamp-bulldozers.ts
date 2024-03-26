@@ -24,6 +24,20 @@ const swampBulldozers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Bulldozers para Pântano')
         ['en-US']('Swamp Bulldozers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bulldozer, die für sumpfiges Gelände geeignet sind')
+        ['it-IT']('Bulldozer adatti per terreni paludosi')
+        ['nl-NL']('Bulldozers geschikt voor moerassig terrein')
+        ['fr-FR']('Bulldozers adaptés aux terrains marécageux')
+        ['en-AU']('Bulldozers suitable for swampy terrain')
+        ['es-ES']('Bulldozers adecuados para terrenos pantanosos')
+        ['en-GB']('Bulldozers suitable for swampy terrain')
+        ['en-NZ']('Bulldozers suitable for swampy terrain')
+        ['pt-PT']('Bulldozers adequados para terrenos pantanosos')
+        ['en-US']('Bulldozers suitable for swampy terrain')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const swampBulldozers = (): TCategoryDraftBuilder =>
         ['en-US']('swamp_bulldozers')
     )
     .key('swamp-bulldozers')
-    .orderHint('0.00001708382944572560011266')
+    .orderHint('0.00001711364484756242783265')
     .parent(
       KeyReferenceDraft.presets.category().key(largeBulldozersCategory.key!)
     );
