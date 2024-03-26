@@ -31,7 +31,15 @@ describe(`with usLargeCustomers preset`, () => {
           "nl-NL": "Grote Klanten in de VS",
           "pt-PT": "Grandes Clientes dos EUA",
         },
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "us-warehouse",
@@ -99,7 +107,15 @@ describe(`with usLargeCustomers preset`, () => {
             "value": "US Large Customers",
           },
         ],
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "us-warehouse",

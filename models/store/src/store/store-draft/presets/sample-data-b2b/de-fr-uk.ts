@@ -6,6 +6,10 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import {
+  ProductSelectionSettingDraft,
+  type TProductSelectionSettingDraft,
+} from '../../../../product-selection-setting/index';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
 
@@ -15,6 +19,11 @@ const deFrUkChannel = ChannelDraft.presets.sampleDataB2B
 const euWarehouseChannel = ChannelDraft.presets.sampleDataB2B
   .euWarehouse()
   .build<TChannelDraft>();
+
+const defaultProductSelectionSetting =
+  ProductSelectionSettingDraft.presets.sampleDataB2B
+    .defaultProductSelection()
+    .build<TProductSelectionSettingDraft>();
 
 const deFrUk = (): TStoreDraftBuilder =>
   StoreDraft.presets
@@ -39,6 +48,7 @@ const deFrUk = (): TStoreDraftBuilder =>
     ])
     .supplyChannels([
       KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
-    ]);
+    ])
+    .productSelections([defaultProductSelectionSetting]);
 
 export default deFrUk;
