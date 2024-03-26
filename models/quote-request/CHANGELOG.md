@@ -1,5 +1,19 @@
 # @commercetools-test-data/quote-request
 
+## 7.6.0
+
+### Patch Changes
+
+- Updated dependencies [[`daf9988`](https://github.com/commercetools/test-data/commit/daf9988b8dfa0a29a5005e08a5f21b2af5d117cf)]:
+  - @commercetools-test-data/business-unit@7.6.0
+  - @commercetools-test-data/customer@7.6.0
+  - @commercetools-test-data/commons@7.6.0
+  - @commercetools-test-data/cart@7.6.0
+  - @commercetools-test-data/customer-group@7.6.0
+  - @commercetools-test-data/store@7.6.0
+  - @commercetools-test-data/core@7.6.0
+  - @commercetools-test-data/utils@7.6.0
+
 ## 7.5.0
 
 ### Minor Changes

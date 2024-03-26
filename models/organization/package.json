@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/organization",
-  "version": "7.5.0",
+  "version": "7.6.0",
   "description": "Data model for commercetools API Organization",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "7.5.0",
-    "@commercetools-test-data/core": "7.5.0",
-    "@commercetools-test-data/graphql-types": "7.5.0",
-    "@commercetools-test-data/user": "7.5.0",
-    "@commercetools-test-data/utils": "7.5.0",
+    "@commercetools-test-data/commons": "7.6.0",
+    "@commercetools-test-data/core": "7.6.0",
+    "@commercetools-test-data/graphql-types": "7.6.0",
+    "@commercetools-test-data/user": "7.6.0",
+    "@commercetools-test-data/utils": "7.6.0",
     "@commercetools/platform-sdk": "^7.0.0"
   }
 }
