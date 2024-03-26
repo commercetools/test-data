@@ -1,5 +1,19 @@
 # @commercetools-test-data/quote-request
 
+## 7.7.1
+
+### Patch Changes
+
+- Updated dependencies [[`c002983`](https://github.com/commercetools/test-data/commit/c00298387466368ab4fb52ea2c2e0e4e283e8aa7)]:
+  - @commercetools-test-data/store@7.7.1
+  - @commercetools-test-data/business-unit@7.7.1
+  - @commercetools-test-data/cart@7.7.1
+  - @commercetools-test-data/core@7.7.1
+  - @commercetools-test-data/commons@7.7.1
+  - @commercetools-test-data/customer@7.7.1
+  - @commercetools-test-data/customer-group@7.7.1
+  - @commercetools-test-data/utils@7.7.1
+
 ## 7.7.0
 
 ### Patch Changes
