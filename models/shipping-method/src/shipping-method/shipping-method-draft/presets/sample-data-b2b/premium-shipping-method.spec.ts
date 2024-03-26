@@ -10,7 +10,19 @@ describe(`with premiumShippingMethod preset`, () => {
         "custom": undefined,
         "isDefault": false,
         "key": "premium-shipping-method",
-        "localizedDescription": undefined,
+        "localizedDescription": {
+          "de": undefined,
+          "de-DE": "Premium -Versandmethode",
+          "en": undefined,
+          "en-GB": "Premium shipping method",
+          "en-US": "Premium shipping method",
+          "es-ES": "Método de envío premium",
+          "fr": undefined,
+          "fr-FR": "Méthode d'expédition premium",
+          "it-IT": "Metodo di spedizione premium",
+          "nl-NL": "Premium verzendmethode",
+          "pt-PT": "Método de envio premium",
+        },
         "localizedName": undefined,
         "name": "Premium shipping method",
         "predicate": undefined,
@@ -22,7 +34,10 @@ describe(`with premiumShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "EUR",
@@ -30,7 +45,10 @@ describe(`with premiumShippingMethod preset`, () => {
                 "tiers": [],
               },
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "GBP",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "GBP",
@@ -56,7 +74,40 @@ describe(`with premiumShippingMethod preset`, () => {
         "custom": undefined,
         "isDefault": false,
         "key": "premium-shipping-method",
-        "localizedDescription": undefined,
+        "localizedDescription": [
+          {
+            "locale": "de-DE",
+            "value": "Premium -Versandmethode",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Premium shipping method",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Metodo di spedizione premium",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Premium verzendmethode",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Méthode d'expédition premium",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Método de envío premium",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Método de envio premium",
+          },
+          {
+            "locale": "en-US",
+            "value": "Premium shipping method",
+          },
+        ],
         "localizedName": undefined,
         "name": "Premium shipping method",
         "predicate": undefined,
@@ -68,7 +119,10 @@ describe(`with premiumShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "EUR",
@@ -76,7 +130,10 @@ describe(`with premiumShippingMethod preset`, () => {
                 "tiers": [],
               },
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "GBP",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "GBP",
