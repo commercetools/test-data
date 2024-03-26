@@ -21,7 +21,7 @@ const p234Qw02 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('iso45001').value(true),
       AttributeDraft.random().name('mobility').value({
         key: 'marine',
-        label: 'Marine ',
+        label: 'Marine',
       }),
     ]);
 

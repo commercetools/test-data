@@ -8,7 +8,12 @@ describe(`with usLargeCustomers preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "us-large-customers",
+            "typeId": "channel",
+          },
+        ],
         "key": "us-large-customers",
         "languages": undefined,
         "name": {
@@ -27,7 +32,12 @@ describe(`with usLargeCustomers preset`, () => {
           "pt-PT": "Grandes Clientes dos EUA",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "us-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -39,7 +49,12 @@ describe(`with usLargeCustomers preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "us-large-customers",
+            "typeId": "channel",
+          },
+        ],
         "key": "us-large-customers",
         "languages": undefined,
         "name": [
@@ -85,7 +100,12 @@ describe(`with usLargeCustomers preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "us-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });

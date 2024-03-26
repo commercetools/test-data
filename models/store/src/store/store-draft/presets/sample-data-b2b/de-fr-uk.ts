@@ -1,6 +1,20 @@
-import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import {
+  ChannelDraft,
+  type TChannelDraft,
+} from '@commercetools-test-data/channel';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
+
+const deFrUkChannel = ChannelDraft.presets.sampleDataB2B
+  .deFrUk()
+  .build<TChannelDraft>();
+const euWarehouseChannel = ChannelDraft.presets.sampleDataB2B
+  .euWarehouse()
+  .build<TChannelDraft>();
 
 const deFrUk = (): TStoreDraftBuilder =>
   StoreDraft.presets
@@ -19,6 +33,12 @@ const deFrUk = (): TStoreDraftBuilder =>
         ['en-NZ']('Germany, France and United Kingdom')
         ['pt-PT']('Alemanha, França e Reino Unido')
         ['en-US']('Germany, France and United Kingdom')
-    );
+    )
+    .distributionChannels([
+      KeyReferenceDraft.presets.channel().key(deFrUkChannel.key),
+    ])
+    .supplyChannels([
+      KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
+    ]);
 
 export default deFrUk;

@@ -8,7 +8,12 @@ describe(`with defaultStore preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "default-channel",
+            "typeId": "channel",
+          },
+        ],
         "key": "default-store",
         "languages": undefined,
         "name": {
@@ -27,7 +32,12 @@ describe(`with defaultStore preset`, () => {
           "pt-PT": "Padrão",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "default-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -39,7 +49,12 @@ describe(`with defaultStore preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "default-channel",
+            "typeId": "channel",
+          },
+        ],
         "key": "default-store",
         "languages": undefined,
         "name": [
@@ -85,7 +100,12 @@ describe(`with defaultStore preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "default-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });

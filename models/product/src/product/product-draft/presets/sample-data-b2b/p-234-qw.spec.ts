@@ -131,7 +131,7 @@ describe(`with p234Qw preset`, () => {
                 "name": "mobility",
                 "value": {
                   "key": "marine",
-                  "label": "Marine ",
+                  "label": "Marine",
                 },
               },
             ],
@@ -396,7 +396,7 @@ describe(`with p234Qw preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"marine","label":"Marine "}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [

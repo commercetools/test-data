@@ -8,7 +8,12 @@ describe(`with deFrUk preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "de-fr-uk",
+            "typeId": "channel",
+          },
+        ],
         "key": "de-fr-uk",
         "languages": undefined,
         "name": {
@@ -27,7 +32,12 @@ describe(`with deFrUk preset`, () => {
           "pt-PT": "Alemanha, França e Reino Unido",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -38,7 +48,12 @@ describe(`with deFrUk preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "de-fr-uk",
+            "typeId": "channel",
+          },
+        ],
         "key": "de-fr-uk",
         "languages": undefined,
         "name": [
@@ -84,7 +99,12 @@ describe(`with deFrUk preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
