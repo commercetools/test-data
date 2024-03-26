@@ -2,17 +2,9 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
-import {
-  ProductSelectionSettingDraft,
-  type TProductSelectionSettingDraft,
-} from '../../../../product-selection-setting/index';
+import { ProductSelectionSettingDraft } from '../../../../product-selection-setting/index';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
-
-const usMediumCustomersCatalogProductSelection =
-  ProductSelectionSettingDraft.presets.sampleDataB2B
-    .usMediumCustomersCatalogProductSelection()
-    .build<TProductSelectionSettingDraft>();
 
 const usMediumCustomers = (): TStoreDraftBuilder =>
   StoreDraft.presets
@@ -36,6 +28,8 @@ const usMediumCustomers = (): TStoreDraftBuilder =>
       KeyReferenceDraft.presets.channel().key('us-medium-customers'),
     ])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([usMediumCustomersCatalogProductSelection]);
+    .productSelections([
+      ProductSelectionSettingDraft.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+    ]);
 
 export default usMediumCustomers;
