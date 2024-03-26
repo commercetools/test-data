@@ -8,7 +8,21 @@ describe(`with crawlerCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kräne mit Raupenketten für Stabilität",
+          "en": undefined,
+          "en-AU": "Cranes with crawler tracks for stability",
+          "en-GB": "Cranes with crawler tracks for stability",
+          "en-NZ": "Cranes with crawler tracks for stability",
+          "en-US": "Cranes with crawler tracks for stability",
+          "es-ES": "Gruas con orugas para estabilidad",
+          "fr": undefined,
+          "fr-FR": "Grues avec des chenilles pour la stabilité",
+          "it-IT": "Gru con cingoli per stabilità",
+          "nl-NL": "Kranen met rupssporen voor stabiliteit",
+          "pt-PT": "Guindastes com esteiras para estabilidade",
+        },
         "externalId": undefined,
         "key": "crawler-cranes",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with crawlerCranes preset`, () => {
           "nl-NL": "Rupskranen",
           "pt-PT": "Guindastes de Esteira",
         },
-        "orderHint": "0.000017083829491681975334762",
+        "orderHint": "0.000017113644847751996610372",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with crawlerCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kräne mit Raupenketten für Stabilität",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Gru con cingoli per stabilità",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kranen met rupssporen voor stabiliteit",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Grues avec des chenilles pour la stabilité",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Cranes with crawler tracks for stability",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Gruas con orugas para estabilidad",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Cranes with crawler tracks for stability",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Cranes with crawler tracks for stability",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Guindastes com esteiras para estabilidade",
+          },
+          {
+            "locale": "en-US",
+            "value": "Cranes with crawler tracks for stability",
+          },
+        ],
         "externalId": undefined,
         "key": "crawler-cranes",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with crawlerCranes preset`, () => {
             "value": "Crawler Cranes",
           },
         ],
-        "orderHint": "0.000017083829491681975334762",
+        "orderHint": "0.000017113644847751996610372",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",

@@ -15,7 +15,21 @@ describe(`with bogo preset`, () => {
         "cartPredicate": undefined,
         "code": "BOGO",
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": ""Kaufen Sie einen und erhalten Sie den zweiten kostenlos",
+          "en": undefined,
+          "en-AU": ""Buy One and Receive the Second for Free",
+          "en-GB": ""Buy One and Receive the Second for Free",
+          "en-NZ": ""Buy One and Receive the Second for Free",
+          "en-US": ""Buy One and Receive the Second for Free",
+          "es-ES": ""Compra uno y recibe el segundo gratis",
+          "fr": undefined,
+          "fr-FR": ""Achetez-en un et recevez le deuxième gratuitement",
+          "it-IT": ""Compra uno e ricevi il secondo gratis",
+          "nl-NL": ""Koop er één en krijg de tweede gratis",
+          "pt-PT": ""Compre um e receba o segundo de graça",
+        },
         "groups": undefined,
         "isActive": true,
         "maxApplications": 1,
@@ -54,7 +68,48 @@ describe(`with bogo preset`, () => {
         "cartPredicate": undefined,
         "code": "BOGO",
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": ""Kaufen Sie einen und erhalten Sie den zweiten kostenlos",
+          },
+          {
+            "locale": "it-IT",
+            "value": ""Compra uno e ricevi il secondo gratis",
+          },
+          {
+            "locale": "nl-NL",
+            "value": ""Koop er één en krijg de tweede gratis",
+          },
+          {
+            "locale": "fr-FR",
+            "value": ""Achetez-en un et recevez le deuxième gratuitement",
+          },
+          {
+            "locale": "en-AU",
+            "value": ""Buy One and Receive the Second for Free",
+          },
+          {
+            "locale": "es-ES",
+            "value": ""Compra uno y recibe el segundo gratis",
+          },
+          {
+            "locale": "en-GB",
+            "value": ""Buy One and Receive the Second for Free",
+          },
+          {
+            "locale": "en-NZ",
+            "value": ""Buy One and Receive the Second for Free",
+          },
+          {
+            "locale": "pt-PT",
+            "value": ""Compre um e receba o segundo de graça",
+          },
+          {
+            "locale": "en-US",
+            "value": ""Buy One and Receive the Second for Free",
+          },
+        ],
         "groups": undefined,
         "isActive": true,
         "maxApplications": 1,

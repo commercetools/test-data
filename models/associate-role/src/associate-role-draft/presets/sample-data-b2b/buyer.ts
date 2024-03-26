@@ -8,22 +8,22 @@ const buyer = (): TAssociateRoleDraftBuilder =>
     .name('Buyer')
     .buyerAssignable(true)
     .permissions([
-      'UpdateMyCarts',
-      'RenegotiateMyQuotes',
-      'CreateMyOrdersFromMyCarts',
-      'UpdateMyOrders',
-      'ViewMyQuotes',
-      'CreateMyOrdersFromMyQuotes',
-      'UpdateOthersCarts',
       'CreateMyCarts',
-      'ViewMyOrders',
-      'CreateMyQuoteRequestsFromMyCarts',
-      'AcceptMyQuotes',
-      'ViewMyCarts',
-      'ViewMyQuoteRequests',
-      'UpdateMyQuoteRequests',
-      'DeclineMyQuotes',
       'DeleteMyCarts',
+      'UpdateMyCarts',
+      'ViewMyCarts',
+      'CreateMyOrdersFromMyCarts',
+      'CreateMyOrdersFromMyQuotes',
+      'UpdateMyOrders',
+      'ViewMyOrders',
+      'AcceptMyQuotes',
+      'DeclineMyQuotes',
+      'ReassignMyQuotes',
+      'RenegotiateMyQuotes',
+      'ViewMyQuotes',
+      'CreateMyQuoteRequestsFromMyCarts',
+      'UpdateMyQuoteRequests',
+      'ViewMyQuoteRequests',
     ]);
 
 export default buyer;

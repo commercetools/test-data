@@ -14,7 +14,7 @@ import lucasDuboisAddress from './lucas-dubois-address';
 import lukasSchmidtAddress from './lukas-schmidt-address';
 import michaelWilliamsAddress from './michael-williams-address';
 import oliverSmithAddress from './oliver-smith-address';
-import oliviaJonesAddress from './olivia-jones-address';
+import oliviaNewtonAddress from './olivia-newton-address';
 import sofiaLopezAddress from './sofia-lopez-address';
 import sophieMuellerAddress from './sophie-mueller-address';
 import williamDavisAddress from './william-davis-address';
@@ -24,7 +24,7 @@ const presets = {
   jamesSmithAddress,
   emmaJohnsonAddress,
   michaelWilliamsAddress,
-  oliviaJonesAddress,
+  oliviaNewtonAddress,
   williamDavisAddress,
   avaBrownAddress,
   oliverSmithAddress,

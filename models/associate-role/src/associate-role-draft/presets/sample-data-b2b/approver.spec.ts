@@ -12,11 +12,11 @@ describe(`with approver preset`, () => {
         "name": "Approver",
         "permissions": [
           "UpdateApprovalFlows",
-          "ViewOthersCarts",
           "CreateApprovalRules",
-          "ViewOthersOrders",
-          "UpdateOthersCarts",
           "UpdateApprovalRules",
+          "UpdateOthersCarts",
+          "ViewOthersCarts",
+          "ViewOthersOrders",
         ],
       }
     `);
@@ -33,11 +33,11 @@ describe(`with approver preset`, () => {
         "name": "Approver",
         "permissions": [
           "UpdateApprovalFlows",
-          "ViewOthersCarts",
           "CreateApprovalRules",
-          "ViewOthersOrders",
-          "UpdateOthersCarts",
           "UpdateApprovalRules",
+          "UpdateOthersCarts",
+          "ViewOthersCarts",
+          "ViewOthersOrders",
         ],
       }
     `);

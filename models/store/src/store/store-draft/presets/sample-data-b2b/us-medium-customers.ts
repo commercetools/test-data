@@ -1,4 +1,7 @@
-import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
 
@@ -11,7 +14,6 @@ const usMediumCustomers = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('US-Mittelgroße Kunden')
         ['it-IT']('Clienti Medi degli Stati Uniti')
-        ['en-UK']('US Medium Customers')
         ['nl-NL']('Middelgrote Klanten in de VS')
         ['fr-FR']('Clients Moyens des États-Unis')
         ['en-AU']('US Medium Customers')
@@ -20,6 +22,10 @@ const usMediumCustomers = (): TStoreDraftBuilder =>
         ['en-NZ']('US Medium Customers')
         ['pt-PT']('Clientes Médios dos EUA')
         ['en-US']('US Medium Customers')
-    );
+    )
+    .distributionChannels([
+      KeyReferenceDraft.presets.channel().key('us-medium-customers'),
+    ])
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')]);
 
 export default usMediumCustomers;

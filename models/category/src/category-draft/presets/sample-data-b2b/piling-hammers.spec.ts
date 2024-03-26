@@ -8,7 +8,21 @@ describe(`with pilingHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Hämmer für Pfahl- und Fundamentarbeiten",
+          "en": undefined,
+          "en-AU": "Hammers for piling and foundation work",
+          "en-GB": "Hammers for piling and foundation work",
+          "en-NZ": "Hammers for piling and foundation work",
+          "en-US": "Hammers for piling and foundation work",
+          "es-ES": "Martillos para trabajos de pilotaje y cimentación",
+          "fr": undefined,
+          "fr-FR": "Marteaux pour le battage et les travaux de fondation",
+          "it-IT": "Martelli per lavori di pali e fondazioni",
+          "nl-NL": "Hamers voor heien en funderingswerk",
+          "pt-PT": "Martelos para cravação e trabalho de fundação",
+        },
         "externalId": undefined,
         "key": "piling-hammers",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with pilingHammers preset`, () => {
           "nl-NL": "Heihamers",
           "pt-PT": "Martelos para Cravação",
         },
-        "orderHint": "0.000017083829511001708720503",
+        "orderHint": "0.00001711364484771461285432",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with pilingHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Hämmer für Pfahl- und Fundamentarbeiten",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Martelli per lavori di pali e fondazioni",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Hamers voor heien en funderingswerk",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Marteaux pour le battage et les travaux de fondation",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Hammers for piling and foundation work",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Martillos para trabajos de pilotaje y cimentación",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Hammers for piling and foundation work",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Hammers for piling and foundation work",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Martelos para cravação e trabalho de fundação",
+          },
+          {
+            "locale": "en-US",
+            "value": "Hammers for piling and foundation work",
+          },
+        ],
         "externalId": undefined,
         "key": "piling-hammers",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with pilingHammers preset`, () => {
             "value": "Piling Hammers",
           },
         ],
-        "orderHint": "0.000017083829511001708720503",
+        "orderHint": "0.00001711364484771461285432",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",

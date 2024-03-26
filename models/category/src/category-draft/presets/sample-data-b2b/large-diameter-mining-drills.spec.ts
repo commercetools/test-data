@@ -9,7 +9,21 @@ describe(`with largeDiameterMiningDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bohrer mit großem Durchmesser für Bergbauoperationen",
+          "en": undefined,
+          "en-AU": "Drills with large diameter for mining operations",
+          "en-GB": "Drills with large diameter for mining operations",
+          "en-NZ": "Drills with large diameter for mining operations",
+          "en-US": "Drills with large diameter for mining operations",
+          "es-ES": "Perforadoras con gran diámetro para operaciones mineras",
+          "fr": undefined,
+          "fr-FR": "Forages de grand diamètre pour les opérations minières",
+          "it-IT": "Trapani con grande diametro per operazioni minerarie",
+          "nl-NL": "Boormachines met grote diameter voor mijnbouwoperaties",
+          "pt-PT": "Brocas com grande diâmetro para operações de mineração",
+        },
         "externalId": undefined,
         "key": "large-diameter-mining-drills",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with largeDiameterMiningDrills preset`, () => {
           "nl-NL": "Mijnbouwboormachines",
           "pt-PT": "Brocas de Mineração",
         },
-        "orderHint": "0.000017083829390071648330240",
+        "orderHint": "0.000017113644845261017998287",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -58,7 +72,48 @@ describe(`with largeDiameterMiningDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bohrer mit großem Durchmesser für Bergbauoperationen",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Trapani con grande diametro per operazioni minerarie",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Boormachines met grote diameter voor mijnbouwoperaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Forages de grand diamètre pour les opérations minières",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Drills with large diameter for mining operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Perforadoras con gran diámetro para operaciones mineras",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Drills with large diameter for mining operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Drills with large diameter for mining operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Brocas com grande diâmetro para operações de mineração",
+          },
+          {
+            "locale": "en-US",
+            "value": "Drills with large diameter for mining operations",
+          },
+        ],
         "externalId": undefined,
         "key": "large-diameter-mining-drills",
         "metaDescription": undefined,
@@ -106,7 +161,7 @@ describe(`with largeDiameterMiningDrills preset`, () => {
             "value": "Mining Drills",
           },
         ],
-        "orderHint": "0.000017083829390071648330240",
+        "orderHint": "0.000017113644845261017998287",
         "parent": undefined,
         "slug": [
           {

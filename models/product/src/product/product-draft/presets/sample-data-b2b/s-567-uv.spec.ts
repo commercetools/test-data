@@ -20,11 +20,10 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-GB": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-NZ": "High-capacity amphibious excavator for efficient land and water excavation applications.",
-          "en-UK": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "en-US": "High-capacity amphibious excavator for efficient land and water excavation applications.",
           "es-ES": "Excavadora anfibia de alta capacidad para aplicaciones eficientes de excavación en tierra y agua.",
           "fr": undefined,
-          "fr-FR": "Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.",
+          "fr-FR": "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau.",
           "it-IT": "Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.",
           "nl-NL": "Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.",
           "pt-PT": "Escavadeira anfíbia de alta capacidade para aplicações eficientes de escavação em terra e água.",
@@ -48,8 +47,8 @@ describe(`with s567Uv preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "marine",
+                "label": "Marine",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "S567 UV Amphibious Excavator",
           "en-GB": "S567 UV Amphibious Excavator",
           "en-NZ": "S567 UV Amphibious Excavator",
-          "en-UK": "S567 UV Amphibious Excavator",
           "en-US": "S567 UV Amphibious Excavator",
           "es-ES": "S567 UV Excavadora anfibia",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with s567Uv preset`, () => {
           "en-AU": "s567-uv",
           "en-GB": "s567-uv",
           "en-NZ": "s567-uv",
-          "en-UK": "s567-uv",
           "en-US": "s567-uv",
           "es-ES": "s567-uv",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with s567Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "marine",
+                  "label": "Marine",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with s567Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "marine",
+                  "label": "Marine",
                 },
               },
             ],
@@ -215,16 +212,12 @@ describe(`with s567Uv preset`, () => {
             "value": "Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity amphibious excavator for efficient land and water excavation applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.",
           },
           {
             "locale": "fr-FR",
-            "value": "Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.",
+            "value": "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau.",
           },
           {
             "locale": "en-AU",
@@ -269,7 +262,7 @@ describe(`with s567Uv preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"marine","label":"Marine"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with s567Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "S567 UV Escavatore Anfibio",
-          },
-          {
-            "locale": "en-UK",
-            "value": "S567 UV Amphibious Excavator",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with s567Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "s567-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "s567-uv",
           },
           {
@@ -411,7 +396,7 @@ describe(`with s567Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with s567Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"marine","label":"Marine"}",
               },
             ],
             "images": [

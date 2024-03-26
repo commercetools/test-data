@@ -20,7 +20,6 @@ describe(`with x234Wx preset`, () => {
           "en-AU": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
           "en-GB": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
           "en-NZ": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
-          "en-UK": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
           "en-US": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
           "es-ES": "Camión volquete fuera de carretera versátil para el transporte eficiente de materiales en terrenos desafiantes.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with x234Wx preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with x234Wx preset`, () => {
           "en-AU": "X234 WX Off-Highway Dump Truck",
           "en-GB": "X234 WX Off-Highway Dump Truck",
           "en-NZ": "X234 WX Off-Highway Dump Truck",
-          "en-UK": "X234 WX Off-Highway Dump Truck",
           "en-US": "X234 WX Off-Highway Dump Truck",
           "es-ES": "X234 WX Camión volquete fuera de carretera",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with x234Wx preset`, () => {
           "en-AU": "x234-wx",
           "en-GB": "x234-wx",
           "en-NZ": "x234-wx",
-          "en-UK": "x234-wx",
           "en-US": "x234-wx",
           "es-ES": "x234-wx",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with x234Wx preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with x234Wx preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with x234Wx preset`, () => {
           {
             "locale": "it-IT",
             "value": "Camion ribaltabile fuoristrada versatile per il trasporto efficiente di materiali in terreni difficili.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Versatile off-highway dump truck for efficient material transport in challenging terrains.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with x234Wx preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with x234Wx preset`, () => {
           {
             "locale": "it-IT",
             "value": "X234 WX Camion Ribaltabile Fuoristrada",
-          },
-          {
-            "locale": "en-UK",
-            "value": "X234 WX Off-Highway Dump Truck",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with x234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "x234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "x234-wx",
           },
           {
@@ -411,7 +396,7 @@ describe(`with x234Wx preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with x234Wx preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

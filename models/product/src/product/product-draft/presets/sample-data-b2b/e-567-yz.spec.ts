@@ -20,7 +20,6 @@ describe(`with e567Yz preset`, () => {
           "en-AU": "Advanced log loader with precision control for efficient log handling in forestry applications.",
           "en-GB": "Advanced log loader with precision control for efficient log handling in forestry applications.",
           "en-NZ": "Advanced log loader with precision control for efficient log handling in forestry applications.",
-          "en-UK": "Advanced log loader with precision control for efficient log handling in forestry applications.",
           "en-US": "Advanced log loader with precision control for efficient log handling in forestry applications.",
           "es-ES": "Cargador de troncos avanzado con control de precisión para una manipulación eficiente de troncos en aplicaciones forestales.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with e567Yz preset`, () => {
           "en-AU": "E567 YZ Log Loader",
           "en-GB": "E567 YZ Log Loader",
           "en-NZ": "E567 YZ Log Loader",
-          "en-UK": "E567 YZ Log Loader",
           "en-US": "E567 YZ Log Loader",
           "es-ES": "E567 YZ Cargador de troncos",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with e567Yz preset`, () => {
           "en-AU": "e567-yz",
           "en-GB": "e567-yz",
           "en-NZ": "e567-yz",
-          "en-UK": "e567-yz",
           "en-US": "e567-yz",
           "es-ES": "e567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with e567Yz preset`, () => {
             "value": "Caricatore di tronchi avanzato con controllo di precisione per la manipolazione efficiente di tronchi in applicazioni forestali.",
           },
           {
-            "locale": "en-UK",
-            "value": "Advanced log loader with precision control for efficient log handling in forestry applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Geavanceerde boomlader met precisiecontrole voor efficiënte boomstamhantering in bosbouwtoepassingen.",
           },
@@ -299,10 +292,6 @@ describe(`with e567Yz preset`, () => {
             "value": "E567 YZ Caricatore di Tronchi",
           },
           {
-            "locale": "en-UK",
-            "value": "E567 YZ Log Loader",
-          },
-          {
             "locale": "nl-NL",
             "value": "E567 YZ Boomlader",
           },
@@ -349,10 +338,6 @@ describe(`with e567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "e567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "e567-yz",
           },
           {

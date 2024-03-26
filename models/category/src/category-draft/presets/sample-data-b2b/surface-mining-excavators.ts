@@ -17,13 +17,29 @@ const surfaceMiningExcavators = (): TCategoryDraftBuilder =>
         ['de-DE']('Bagger für den Oberflächenbergbau')
         ['it-IT']('Escavatori per Miniere di Superficie')
         ['nl-NL']('Graafmachines voor Oppervlaktemijnbouw')
-        ['fr-FR']('Excavatrices pour l&#39;exploitation minière de surface')
+        ['fr-FR']("Excavatrices pour l'exploitation minière de surface")
         ['en-AU']('Surface Mining Excavators')
         ['es-ES']('Excavadoras de minería superficial')
         ['en-GB']('Surface Mining Excavators')
         ['en-NZ']('Surface Mining Excavators')
         ['pt-PT']('Escavadeiras para Mineração de Superfície')
         ['en-US']('Surface Mining Excavators')
+    )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bagger, die im Oberflächenbergbau eingesetzt werden')
+        ['it-IT']('Escavatori utilizzati in miniere di superficie')
+        ['nl-NL']('Graafmachines gebruikt in oppervlaktemijnbouw')
+        ['fr-FR'](
+          "Excavatrices utilisées dans l'exploitation minière de surface"
+        )
+        ['en-AU']('Excavators used in surface mining')
+        ['es-ES']('Excavadoras utilizadas en minería superficial')
+        ['en-GB']('Excavators used in surface mining')
+        ['en-NZ']('Excavators used in surface mining')
+        ['pt-PT']('Escavadeiras usadas na mineração de superfície')
+        ['en-US']('Excavators used in surface mining')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -40,7 +56,7 @@ const surfaceMiningExcavators = (): TCategoryDraftBuilder =>
         ['en-US']('surface_mining_excavators')
     )
     .key('surface-mining-excavators')
-    .orderHint('0.000017083829401241506966080')
+    .orderHint('0.0000171136448493168434701')
     .parent(
       KeyReferenceDraft.presets
         .category()

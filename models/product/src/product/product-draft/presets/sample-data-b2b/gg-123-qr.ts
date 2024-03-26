@@ -42,7 +42,6 @@ const gg123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('GG123 QR Vibrationswalze')
         ['it-IT']('GG123 QR Compattatore Vibrante per Terreni')
-        ['en-UK']('GG123 QR Vibratory Soil Compactor')
         ['nl-NL']('GG123 QR Trilbodemverdichter')
         ['fr-FR']('GG123 QR Compacteur de sol vibrant')
         ['en-AU']('GG123 QR Vibratory Soil Compactor')
@@ -60,9 +59,6 @@ const gg123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Potente compattatore vibrante per terreni per la compattazione efficiente di vari tipi di suolo.'
-        )
-        ['en-UK'](
-          'Powerful vibratory soil compactor for efficient compaction of various soil types.'
         )
         ['nl-NL'](
           'Krachtige trilbodemverdichter voor efficiënte verdichting van diverse grondsoorten.'
@@ -94,7 +90,6 @@ const gg123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('gg123-qr')
         ['it-IT']('gg123-qr')
-        ['en-UK']('gg123-qr')
         ['nl-NL']('gg123-qr')
         ['fr-FR']('gg123-qr')
         ['en-AU']('gg123-qr')

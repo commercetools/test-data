@@ -9,7 +9,21 @@ describe(`with highCapacityMotorGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Motorgrader mit hoher Grading-Kapazität",
+          "en": undefined,
+          "en-AU": "Motor graders with high grading capacity",
+          "en-GB": "Motor graders with high grading capacity",
+          "en-NZ": "Motor graders with high grading capacity",
+          "en-US": "Motor graders with high grading capacity",
+          "es-ES": "Motoniveladoras con alta capacidad de nivelación",
+          "fr": undefined,
+          "fr-FR": "Niveleuses avec une capacité de nivellement élevée",
+          "it-IT": "Livellatrici motorizzate ad alta capacità di livellamento",
+          "nl-NL": "Motorgraders met hoge graderingscapaciteit",
+          "pt-PT": "Motoniveladoras com alta capacidade de nivelamento",
+        },
         "externalId": undefined,
         "key": "high-capacity-motor-graders",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with highCapacityMotorGraders preset`, () => {
           "nl-NL": "Graders",
           "pt-PT": "Motoniveladoras",
         },
-        "orderHint": "0.0000170838293796780439361",
+        "orderHint": "0.000017113644845161588258996",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -58,7 +72,48 @@ describe(`with highCapacityMotorGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Motorgrader mit hoher Grading-Kapazität",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Livellatrici motorizzate ad alta capacità di livellamento",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Motorgraders met hoge graderingscapaciteit",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Niveleuses avec une capacité de nivellement élevée",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Motor graders with high grading capacity",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Motoniveladoras con alta capacidad de nivelación",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Motor graders with high grading capacity",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Motor graders with high grading capacity",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Motoniveladoras com alta capacidade de nivelamento",
+          },
+          {
+            "locale": "en-US",
+            "value": "Motor graders with high grading capacity",
+          },
+        ],
         "externalId": undefined,
         "key": "high-capacity-motor-graders",
         "metaDescription": undefined,
@@ -106,7 +161,7 @@ describe(`with highCapacityMotorGraders preset`, () => {
             "value": "Graders",
           },
         ],
-        "orderHint": "0.0000170838293796780439361",
+        "orderHint": "0.000017113644845161588258996",
         "parent": undefined,
         "slug": [
           {

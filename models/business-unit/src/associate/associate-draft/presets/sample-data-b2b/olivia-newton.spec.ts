@@ -1,10 +1,10 @@
 import type { TAssociateDraft } from '../../../types';
-import oliviaJones from './olivia-jones';
+import oliviaNewton from './olivia-newton';
 
-describe(`with oliviaJones preset`, () => {
-  it(`should return a oliviaJones preset`, () => {
-    const oliviaJonesPreset = oliviaJones().build<TAssociateDraft>();
-    expect(oliviaJonesPreset).toMatchInlineSnapshot(`
+describe(`with oliviaNewton preset`, () => {
+  it(`should return a oliviaNewton preset`, () => {
+    const oliviaNewtonPreset = oliviaNewton().build<TAssociateDraft>();
+    expect(oliviaNewtonPreset).toMatchInlineSnapshot(`
       {
         "associateRoleAssignments": [
           {
@@ -16,17 +16,17 @@ describe(`with oliviaJones preset`, () => {
           },
         ],
         "customer": {
-          "key": "olivia-jones",
+          "key": "olivia-newton",
           "typeId": "customer",
         },
       }
     `);
   });
 
-  it(`should return a oliviaJones preset when built for graphql`, () => {
-    const oliviaJonesPresetGraphql =
-      oliviaJones().buildGraphql<TAssociateDraft>();
-    expect(oliviaJonesPresetGraphql).toMatchInlineSnapshot(`
+  it(`should return a oliviaNewton preset when built for graphql`, () => {
+    const oliviaNewtonPresetGraphql =
+      oliviaNewton().buildGraphql<TAssociateDraft>();
+    expect(oliviaNewtonPresetGraphql).toMatchInlineSnapshot(`
       {
         "associateRoleAssignments": [
           {
@@ -38,7 +38,7 @@ describe(`with oliviaJones preset`, () => {
           },
         ],
         "customer": {
-          "key": "olivia-jones",
+          "key": "olivia-newton",
           "typeId": "customer",
         },
       }

@@ -9,6 +9,7 @@ const michaelWilliams = (): TCustomerDraftBuilder =>
     .key('michael-williams')
     .email('michael-williams@ehlt.com')
     .password('123')
+    .isEmailVerified(true)
     .firstName('Michael')
     .lastName('Williams')
     .addresses([AddressDraft.presets.sampleDataB2B.michaelWilliamsAddress()])

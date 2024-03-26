@@ -18,7 +18,6 @@ describe(`with deFrUk preset`, () => {
           "en-AU": "Germany, France and United Kingdom",
           "en-GB": "Germany, France and United Kingdom",
           "en-NZ": "Germany, France and United Kingdom",
-          "en-UK": "Germany, France and United Kingdom",
           "en-US": "Germany, France and United Kingdom",
           "es-ES": "Alemania, Francia y Reino Unido",
           "fr": undefined,
@@ -51,10 +50,6 @@ describe(`with deFrUk preset`, () => {
           {
             "locale": "it-IT",
             "value": "Germania, Francia e Regno Unito",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Germany, France and United Kingdom",
           },
           {
             "locale": "nl-NL",

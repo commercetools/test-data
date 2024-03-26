@@ -5,6 +5,7 @@ const countryNorthAmerica = () =>
     .empty()
     .name('North America')
     .key('north-america')
-    .locations([{ country: 'US' }]);
+    .locations([{ country: 'US' }])
+    .description('Shipping zone for North America');
 
 export default countryNorthAmerica;

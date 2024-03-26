@@ -42,7 +42,6 @@ const g123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('G123 QR Erdbewegungsbagger')
         ['it-IT']('G123 QR Bulldozer per Movimento Terra')
-        ['en-UK']('G123 QR Earthmoving Bulldozer')
         ['nl-NL']('G123 QR Aardeverzet Bulldozer')
         ['fr-FR']('G123 QR Bulldozer de terrassement')
         ['en-AU']('G123 QR Earthmoving Bulldozer')
@@ -59,16 +58,13 @@ const g123Qr = (): TProductDraftBuilder =>
           'Leistungsstarker Erdbewegungsbagger für effiziente Geländemanipulation und Aushub.'
         )
         ['it-IT'](
-          'Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.'
-        )
-        ['en-UK'](
-          'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
+          "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione."
         )
         ['nl-NL'](
           'Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.'
         )
         ['fr-FR'](
-          'Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.'
+          "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation."
         )
         ['en-AU'](
           'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
@@ -94,7 +90,6 @@ const g123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('g123-qr')
         ['it-IT']('g123-qr')
-        ['en-UK']('g123-qr')
         ['nl-NL']('g123-qr')
         ['fr-FR']('g123-qr')
         ['en-AU']('g123-qr')

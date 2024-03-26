@@ -8,7 +8,21 @@ describe(`with roadGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Motorgrader für den Straßenbau",
+          "en": undefined,
+          "en-AU": "Motor graders for road construction",
+          "en-GB": "Motor graders for road construction",
+          "en-NZ": "Motor graders for road construction",
+          "en-US": "Motor graders for road construction",
+          "es-ES": "Motoniveladoras para construcción de carreteras",
+          "fr": undefined,
+          "fr-FR": "Niveleuses pour la construction routière",
+          "it-IT": "Livellatrici motorizzate per la costruzione stradale",
+          "nl-NL": "Motorgraders voor wegconstructie",
+          "pt-PT": "Motoniveladoras para construção de estradas",
+        },
         "externalId": undefined,
         "key": "road-graders",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with roadGraders preset`, () => {
           "nl-NL": "Weggraders",
           "pt-PT": "Motoniveladoras de Estrada",
         },
-        "orderHint": "0.000017083829461181415854930",
+        "orderHint": "0.000017113644847361524464697",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with roadGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Motorgrader für den Straßenbau",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Livellatrici motorizzate per la costruzione stradale",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Motorgraders voor wegconstructie",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Niveleuses pour la construction routière",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Motor graders for road construction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Motoniveladoras para construcción de carreteras",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Motor graders for road construction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Motor graders for road construction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Motoniveladoras para construção de estradas",
+          },
+          {
+            "locale": "en-US",
+            "value": "Motor graders for road construction",
+          },
+        ],
         "externalId": undefined,
         "key": "road-graders",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with roadGraders preset`, () => {
             "value": "Road Graders",
           },
         ],
-        "orderHint": "0.000017083829461181415854930",
+        "orderHint": "0.000017113644847361524464697",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",

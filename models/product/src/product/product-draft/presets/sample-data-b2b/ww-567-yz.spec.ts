@@ -20,7 +20,6 @@ describe(`with ww567Yz preset`, () => {
           "en-AU": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
           "en-GB": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
           "en-NZ": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
-          "en-UK": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
           "en-US": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
           "es-ES": "Grúa sobre orugas robusta con características avanzadas de estabilidad para operaciones de elevación de servicio pesado.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with ww567Yz preset`, () => {
           "en-AU": "WW567 YZ Crawler Crane for Stability",
           "en-GB": "WW567 YZ Crawler Crane for Stability",
           "en-NZ": "WW567 YZ Crawler Crane for Stability",
-          "en-UK": "WW567 YZ Crawler Crane for Stability",
           "en-US": "WW567 YZ Crawler Crane for Stability",
           "es-ES": "WW567 YZ Grúa sobre orugas para estabilidad",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with ww567Yz preset`, () => {
           "en-AU": "ww567-yz",
           "en-GB": "ww567-yz",
           "en-NZ": "ww567-yz",
-          "en-UK": "ww567-yz",
           "en-US": "ww567-yz",
           "es-ES": "ww567-yz",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with ww567Yz preset`, () => {
             "value": "Gru cingolata robusta con caratteristiche avanzate di stabilità per operazioni di sollevamento pesanti.",
           },
           {
-            "locale": "en-UK",
-            "value": "Robust crawler crane with advanced stability features for heavy-duty lifting operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Robuuste rupskraan met geavanceerde stabiliteitsfuncties voor zware hijswerkzaamheden.",
           },
@@ -341,10 +334,6 @@ describe(`with ww567Yz preset`, () => {
             "value": "WW567 YZ Gru Cingolata per Stabilità",
           },
           {
-            "locale": "en-UK",
-            "value": "WW567 YZ Crawler Crane for Stability",
-          },
-          {
             "locale": "nl-NL",
             "value": "WW567 YZ Rupskraan voor Stabiliteit",
           },
@@ -391,10 +380,6 @@ describe(`with ww567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "ww567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "ww567-yz",
           },
           {

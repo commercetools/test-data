@@ -11,6 +11,6 @@ const camilleLefèvreAddress = (): TAddressDraftBuilder =>
     .postalCode('06000')
     .city('Nice')
     .country('FR')
-    .region('Provence-Alpes-Côte d&#39;Azur');
+    .region("Provence-Alpes-Côte d'Azur");
 
 export default camilleLefèvreAddress;

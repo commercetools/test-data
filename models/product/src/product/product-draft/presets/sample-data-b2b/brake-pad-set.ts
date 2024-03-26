@@ -51,7 +51,7 @@ const brakePadSet = (): TProductDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Stellt die Reibung bereit, um das Fahrzeug anzuhalten.')
-        ['it-IT']('Fornisce l&#39;attrito per fermare il veicolo.')
+        ['it-IT']("Fornisce l'attrito per fermare il veicolo.")
         ['nl-NL']('Zorgt voor de wrijving om het voertuig te stoppen.')
         ['fr-FR']('Fournit la friction nécessaire pour arrêter le véhicule.')
         ['es-ES']('Proporciona la fricción para detener el vehículo.')

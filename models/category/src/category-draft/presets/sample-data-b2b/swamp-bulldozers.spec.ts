@@ -8,7 +8,21 @@ describe(`with swampBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bulldozer, die für sumpfiges Gelände geeignet sind",
+          "en": undefined,
+          "en-AU": "Bulldozers suitable for swampy terrain",
+          "en-GB": "Bulldozers suitable for swampy terrain",
+          "en-NZ": "Bulldozers suitable for swampy terrain",
+          "en-US": "Bulldozers suitable for swampy terrain",
+          "es-ES": "Bulldozers adecuados para terrenos pantanosos",
+          "fr": undefined,
+          "fr-FR": "Bulldozers adaptés aux terrains marécageux",
+          "it-IT": "Bulldozer adatti per terreni paludosi",
+          "nl-NL": "Bulldozers geschikt voor moerassig terrein",
+          "pt-PT": "Bulldozers adequados para terrenos pantanosos",
+        },
         "externalId": undefined,
         "key": "swamp-bulldozers",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with swampBulldozers preset`, () => {
           "nl-NL": "Moeras Bulldozers",
           "pt-PT": "Bulldozers para Pântano",
         },
-        "orderHint": "0.00001708382944572560011266",
+        "orderHint": "0.00001711364484756242783265",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with swampBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bulldozer, die für sumpfiges Gelände geeignet sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Bulldozer adatti per terreni paludosi",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Bulldozers geschikt voor moerassig terrein",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Bulldozers adaptés aux terrains marécageux",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Bulldozers suitable for swampy terrain",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Bulldozers adecuados para terrenos pantanosos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Bulldozers suitable for swampy terrain",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Bulldozers suitable for swampy terrain",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Bulldozers adequados para terrenos pantanosos",
+          },
+          {
+            "locale": "en-US",
+            "value": "Bulldozers suitable for swampy terrain",
+          },
+        ],
         "externalId": undefined,
         "key": "swamp-bulldozers",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with swampBulldozers preset`, () => {
             "value": "Swamp Bulldozers",
           },
         ],
-        "orderHint": "0.00001708382944572560011266",
+        "orderHint": "0.00001711364484756242783265",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",

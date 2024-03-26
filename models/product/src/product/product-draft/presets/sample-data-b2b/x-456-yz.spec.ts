@@ -20,12 +20,11 @@ describe(`with x456Yz preset`, () => {
           "en-AU": "Highly efficient deep mining excavator designed for extracting resources from depth.",
           "en-GB": "Highly efficient deep mining excavator designed for extracting resources from depth.",
           "en-NZ": "Highly efficient deep mining excavator designed for extracting resources from depth.",
-          "en-UK": "Highly efficient deep mining excavator designed for extracting resources from depth.",
           "en-US": "Highly efficient deep mining excavator designed for extracting resources from depth.",
           "es-ES": "Excavadora minera profunda altamente eficiente diseñada para extraer recursos desde la profundidad.",
           "fr": undefined,
           "fr-FR": "Excavateur minier profond hautement efficace conçu pour extraire des ressources en profondeur.",
-          "it-IT": "Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.",
+          "it-IT": "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità.",
           "nl-NL": "Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.",
           "pt-PT": "Escavadeira para mineração profunda altamente eficiente projetada para extrair recursos das profundezas.",
         },
@@ -77,7 +76,6 @@ describe(`with x456Yz preset`, () => {
           "en-AU": "X456 YZ Deep Mining Excavator",
           "en-GB": "X456 YZ Deep Mining Excavator",
           "en-NZ": "X456 YZ Deep Mining Excavator",
-          "en-UK": "X456 YZ Deep Mining Excavator",
           "en-US": "X456 YZ Deep Mining Excavator",
           "es-ES": "X456 YZ Excavadora minera profunda",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with x456Yz preset`, () => {
           "en-AU": "x456-yz",
           "en-GB": "x456-yz",
           "en-NZ": "x456-yz",
-          "en-UK": "x456-yz",
           "en-US": "x456-yz",
           "es-ES": "x456-yz",
           "fr": undefined,
@@ -212,11 +209,7 @@ describe(`with x456Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Highly efficient deep mining excavator designed for extracting resources from depth.",
+            "value": "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità.",
           },
           {
             "locale": "nl-NL",
@@ -299,10 +292,6 @@ describe(`with x456Yz preset`, () => {
             "value": "X456 YZ Escavatore per Miniere Profonde",
           },
           {
-            "locale": "en-UK",
-            "value": "X456 YZ Deep Mining Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "X456 YZ Diepe Mijnbouw Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with x456Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "x456-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "x456-yz",
           },
           {

@@ -43,7 +43,6 @@ const mm123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('MM123 QR Radbagger für Bau')
         ['it-IT']('MM123 QR Escavatore su Ruote per Costruzioni')
-        ['en-UK']('MM123 QR Wheeled Excavator for Construction')
         ['nl-NL']('MM123 QR Wiellader voor Bouw')
         ['fr-FR']('MM123 QR Excavatrice sur roues pour la construction')
         ['en-AU']('MM123 QR Wheeled Excavator for Construction')
@@ -61,9 +60,6 @@ const mm123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore su ruote versatile con caratteristiche avanzate per scavi efficienti nei cantieri edili.'
-        )
-        ['en-UK'](
-          'Versatile wheeled excavator with advanced features for efficient construction site excavation.'
         )
         ['nl-NL'](
           'Veelzijdige wiellader met geavanceerde functies voor efficiënte graafwerkzaamheden op bouwplaatsen.'
@@ -95,7 +91,6 @@ const mm123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('mm123-qr')
         ['it-IT']('mm123-qr')
-        ['en-UK']('mm123-qr')
         ['nl-NL']('mm123-qr')
         ['fr-FR']('mm123-qr')
         ['en-AU']('mm123-qr')

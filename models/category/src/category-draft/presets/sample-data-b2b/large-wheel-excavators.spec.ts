@@ -9,7 +9,21 @@ describe(`with largeWheelExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Radbagger für anspruchsvolle Anwendungen",
+          "en": undefined,
+          "en-AU": "Wheel excavators for heavy-duty applications",
+          "en-GB": "Wheel excavators for heavy-duty applications",
+          "en-NZ": "Wheel excavators for heavy-duty applications",
+          "en-US": "Wheel excavators for heavy-duty applications",
+          "es-ES": "Excavadoras de ruedas para aplicaciones de servicio pesado",
+          "fr": undefined,
+          "fr-FR": "Excavatrices à roues pour des applications intensives",
+          "it-IT": "Escavatori su ruote per applicazioni pesanti",
+          "nl-NL": "Wielladers voor zware toepassingen",
+          "pt-PT": "Escavadeiras com rodas para aplicações pesadas",
+        },
         "externalId": undefined,
         "key": "large-wheel-excavators",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with largeWheelExcavators preset`, () => {
           "nl-NL": "Graafmachines op Wielen",
           "pt-PT": "Escavadeiras com Rodas",
         },
-        "orderHint": "0.00001708382941289446240444",
+        "orderHint": "0.000017113644847261484295299",
         "parent": {
           "key": "excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with largeWheelExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Radbagger für anspruchsvolle Anwendungen",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori su ruote per applicazioni pesanti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Wielladers voor zware toepassingen",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices à roues pour des applications intensives",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Wheel excavators for heavy-duty applications",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras de ruedas para aplicaciones de servicio pesado",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Wheel excavators for heavy-duty applications",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Wheel excavators for heavy-duty applications",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras com rodas para aplicações pesadas",
+          },
+          {
+            "locale": "en-US",
+            "value": "Wheel excavators for heavy-duty applications",
+          },
+        ],
         "externalId": undefined,
         "key": "large-wheel-excavators",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with largeWheelExcavators preset`, () => {
             "value": "Wheeled Excavators",
           },
         ],
-        "orderHint": "0.00001708382941289446240444",
+        "orderHint": "0.000017113644847261484295299",
         "parent": {
           "key": "excavators",
           "typeId": "category",

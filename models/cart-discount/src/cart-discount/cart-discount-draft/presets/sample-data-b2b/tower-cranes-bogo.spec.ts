@@ -18,8 +18,8 @@ describe(`with towerCranesBogo preset`, () => {
           "en-US": "Two for one on all tower cranes (discount on the cheapest item)",
           "es-ES": "Dos por uno en todas las grúas torre (descuento en el artículo más barato)",
           "fr": undefined,
-          "fr-FR": "Deux pour le prix d&#39;un sur toutes les grues à tour (réduction sur l&#39;article le moins cher)",
-          "it-IT": "Due al prezzo di uno su tutte le gru a torre (sconto sull&#39;articolo più economico)",
+          "fr-FR": "Deux pour le prix d'un sur toutes les grues à tour (réduction sur l'article le moins cher)",
+          "it-IT": "Due al prezzo di uno su tutte le gru a torre (sconto sull'articolo più economico)",
           "nl-NL": "Twee voor de prijs van één op alle torenkranen (korting op het goedkoopste artikel)",
           "pt-PT": "Dois pelo preço de um em todas as gruas torre (desconto no item mais barato)",
         },
@@ -75,7 +75,7 @@ describe(`with towerCranesBogo preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Due al prezzo di uno su tutte le gru a torre (sconto sull&#39;articolo più economico)",
+            "value": "Due al prezzo di uno su tutte le gru a torre (sconto sull'articolo più economico)",
           },
           {
             "locale": "nl-NL",
@@ -83,7 +83,7 @@ describe(`with towerCranesBogo preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Deux pour le prix d&#39;un sur toutes les grues à tour (réduction sur l&#39;article le moins cher)",
+            "value": "Deux pour le prix d'un sur toutes les grues à tour (réduction sur l'article le moins cher)",
           },
           {
             "locale": "en-AU",

@@ -25,6 +25,20 @@ const pilingHammers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Martelos para Cravação')
         ['en-US']('Piling Hammers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Hämmer für Pfahl- und Fundamentarbeiten')
+        ['it-IT']('Martelli per lavori di pali e fondazioni')
+        ['nl-NL']('Hamers voor heien en funderingswerk')
+        ['fr-FR']('Marteaux pour le battage et les travaux de fondation')
+        ['en-AU']('Hammers for piling and foundation work')
+        ['es-ES']('Martillos para trabajos de pilotaje y cimentación')
+        ['en-GB']('Hammers for piling and foundation work')
+        ['en-NZ']('Hammers for piling and foundation work')
+        ['pt-PT']('Martelos para cravação e trabalho de fundação')
+        ['en-US']('Hammers for piling and foundation work')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const pilingHammers = (): TCategoryDraftBuilder =>
         ['en-US']('piling_hammers')
     )
     .key('piling-hammers')
-    .orderHint('0.000017083829511001708720503')
+    .orderHint('0.00001711364484771461285432')
     .parent(
       KeyReferenceDraft.presets
         .category()

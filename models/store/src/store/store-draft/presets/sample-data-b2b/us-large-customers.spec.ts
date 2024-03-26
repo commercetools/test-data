@@ -8,7 +8,12 @@ describe(`with usLargeCustomers preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "us-large-customers",
+            "typeId": "channel",
+          },
+        ],
         "key": "us-large-customers",
         "languages": undefined,
         "name": {
@@ -18,7 +23,6 @@ describe(`with usLargeCustomers preset`, () => {
           "en-AU": "US Large Customers",
           "en-GB": "US Large Customers",
           "en-NZ": "US Large Customers",
-          "en-UK": "US Large Customers",
           "en-US": "US Large Customers",
           "es-ES": "Grandes Clientes de EE. UU.",
           "fr": undefined,
@@ -28,7 +32,12 @@ describe(`with usLargeCustomers preset`, () => {
           "pt-PT": "Grandes Clientes dos EUA",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "us-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -40,7 +49,12 @@ describe(`with usLargeCustomers preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "us-large-customers",
+            "typeId": "channel",
+          },
+        ],
         "key": "us-large-customers",
         "languages": undefined,
         "name": [
@@ -51,10 +65,6 @@ describe(`with usLargeCustomers preset`, () => {
           {
             "locale": "it-IT",
             "value": "Grandi Clienti degli Stati Uniti",
-          },
-          {
-            "locale": "en-UK",
-            "value": "US Large Customers",
           },
           {
             "locale": "nl-NL",
@@ -90,7 +100,12 @@ describe(`with usLargeCustomers preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "us-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });

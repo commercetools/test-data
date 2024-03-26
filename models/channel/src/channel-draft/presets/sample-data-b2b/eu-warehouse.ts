@@ -12,7 +12,6 @@ const euWarehouse = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Europalager')
         ['it-IT']('Magazzino Europa')
-        ['en-UK']('Europe warehouse')
         ['nl-NL']('Europa magazijn')
         ['fr-FR']('Entrepôt Europe')
         ['en-AU']('Europe warehouse')

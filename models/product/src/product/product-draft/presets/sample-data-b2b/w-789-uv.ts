@@ -42,7 +42,6 @@ const w789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('W789 UV Starren Kipplaster')
         ['it-IT']('W789 UV Camion Ribaltabile Rigido')
-        ['en-UK']('W789 UV Rigid Dump Truck')
         ['nl-NL']('W789 UV Starre Dumptruck')
         ['fr-FR']('W789 UV Camion benne rigide')
         ['en-AU']('W789 UV Rigid Dump Truck')
@@ -60,9 +59,6 @@ const w789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Camion ribaltabile rigido ad alta capacità con caratteristiche avanzate per il trasporto efficiente di materiali.'
-        )
-        ['en-UK'](
-          'High-capacity rigid dump truck with advanced features for efficient material transport.'
         )
         ['nl-NL'](
           'Hoogcapaciteits starre dumptruck met geavanceerde functies voor efficiënt materiaaltransport.'
@@ -94,7 +90,6 @@ const w789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('w789-uv')
         ['it-IT']('w789-uv')
-        ['en-UK']('w789-uv')
         ['nl-NL']('w789-uv')
         ['fr-FR']('w789-uv')
         ['en-AU']('w789-uv')

@@ -1,10 +1,10 @@
 import type { TCustomerDraft } from '../../../types';
-import oliviaJones from './olivia-jones';
+import oliviaNewton from './olivia-newton';
 
-describe(`with oliviaJones preset`, () => {
-  it(`should return a oliviaJones preset`, () => {
-    const oliviaJonesPreset = oliviaJones().build<TCustomerDraft>();
-    expect(oliviaJonesPreset).toMatchInlineSnapshot(`
+describe(`with oliviaNewton preset`, () => {
+  it(`should return a oliviaNewton preset`, () => {
+    const oliviaNewtonPreset = oliviaNewton().build<TCustomerDraft>();
+    expect(oliviaNewtonPreset).toMatchInlineSnapshot(`
       {
         "addresses": [
           {
@@ -23,7 +23,7 @@ describe(`with oliviaJones preset`, () => {
             "firstName": "Olivia",
             "id": undefined,
             "key": undefined,
-            "lastName": "Jones",
+            "lastName": "Newton",
             "mobile": undefined,
             "pOBox": undefined,
             "phone": undefined,
@@ -47,12 +47,12 @@ describe(`with oliviaJones preset`, () => {
         "dateOfBirth": undefined,
         "defaultBillingAddress": undefined,
         "defaultShippingAddress": undefined,
-        "email": "olivia-jones@lcs.com",
+        "email": "olivia-newton@lcs.com",
         "externalId": undefined,
         "firstName": "Olivia",
-        "isEmailVerified": undefined,
-        "key": "olivia-jones",
-        "lastName": "Jones",
+        "isEmailVerified": true,
+        "key": "olivia-newton",
+        "lastName": "Newton",
         "locale": undefined,
         "middleName": undefined,
         "password": "123",
@@ -65,10 +65,10 @@ describe(`with oliviaJones preset`, () => {
     `);
   });
 
-  it(`should return a oliviaJones preset when built for graphql`, () => {
-    const oliviaJonesPresetGraphql =
-      oliviaJones().buildGraphql<TCustomerDraft>();
-    expect(oliviaJonesPresetGraphql).toMatchInlineSnapshot(`
+  it(`should return a oliviaNewton preset when built for graphql`, () => {
+    const oliviaNewtonPresetGraphql =
+      oliviaNewton().buildGraphql<TCustomerDraft>();
+    expect(oliviaNewtonPresetGraphql).toMatchInlineSnapshot(`
       {
         "addresses": [
           {
@@ -87,7 +87,7 @@ describe(`with oliviaJones preset`, () => {
             "firstName": "Olivia",
             "id": undefined,
             "key": undefined,
-            "lastName": "Jones",
+            "lastName": "Newton",
             "mobile": undefined,
             "pOBox": undefined,
             "phone": undefined,
@@ -111,12 +111,12 @@ describe(`with oliviaJones preset`, () => {
         "dateOfBirth": undefined,
         "defaultBillingAddress": undefined,
         "defaultShippingAddress": undefined,
-        "email": "olivia-jones@lcs.com",
+        "email": "olivia-newton@lcs.com",
         "externalId": undefined,
         "firstName": "Olivia",
-        "isEmailVerified": undefined,
-        "key": "olivia-jones",
-        "lastName": "Jones",
+        "isEmailVerified": true,
+        "key": "olivia-newton",
+        "lastName": "Newton",
         "locale": undefined,
         "middleName": undefined,
         "password": "123",

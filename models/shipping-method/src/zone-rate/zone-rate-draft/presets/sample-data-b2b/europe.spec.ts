@@ -8,7 +8,10 @@ describe(`with europe preset`, () => {
       {
         "shippingRates": [
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "EUR",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "EUR",
@@ -16,7 +19,10 @@ describe(`with europe preset`, () => {
             "tiers": [],
           },
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "GBP",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "GBP",
@@ -38,7 +44,10 @@ describe(`with europe preset`, () => {
       {
         "shippingRates": [
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "EUR",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "EUR",
@@ -46,7 +55,10 @@ describe(`with europe preset`, () => {
             "tiers": [],
           },
           {
-            "freeAbove": undefined,
+            "freeAbove": {
+              "centAmount": 5000,
+              "currencyCode": "GBP",
+            },
             "price": {
               "centAmount": 500,
               "currencyCode": "GBP",

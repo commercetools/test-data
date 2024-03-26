@@ -20,12 +20,11 @@ describe(`with iii567Yz preset`, () => {
           "en-AU": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
           "en-GB": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
           "en-NZ": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
-          "en-UK": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
           "en-US": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
           "es-ES": "Martillo de pilotaje robusto con control avanzado de la fuerza de impacto para pilotes de cimentación eficientes y controlados.",
           "fr": undefined,
-          "fr-FR": "Marteau de battage robuste avec un contrôle avancé de la force d&#39;impact pour un fonçage de fondation efficace et maîtrisé.",
-          "it-IT": "Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.",
+          "fr-FR": "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé.",
+          "it-IT": "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato.",
           "nl-NL": "Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.",
           "pt-PT": "Martelo de cravação robusto com controle avançado de força de impacto para cravação eficiente e controlada de fundações.",
         },
@@ -62,8 +61,8 @@ describe(`with iii567Yz preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "fixed",
+                "label": "Fixed",
               },
             },
           ],
@@ -91,7 +90,6 @@ describe(`with iii567Yz preset`, () => {
           "en-AU": "III567 YZ Piling Hammer",
           "en-GB": "III567 YZ Piling Hammer",
           "en-NZ": "III567 YZ Piling Hammer",
-          "en-UK": "III567 YZ Piling Hammer",
           "en-US": "III567 YZ Piling Hammer",
           "es-ES": "III567 YZ Martillo de pilotaje",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with iii567Yz preset`, () => {
           "en-AU": "iii567-yz",
           "en-GB": "iii567-yz",
           "en-NZ": "iii567-yz",
-          "en-UK": "iii567-yz",
           "en-US": "iii567-yz",
           "es-ES": "iii567-yz",
           "fr": undefined,
@@ -161,8 +158,8 @@ describe(`with iii567Yz preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -212,8 +209,8 @@ describe(`with iii567Yz preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -254,11 +251,7 @@ describe(`with iii567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Martello robusto per pali con controllo avanzato della forza d&#39;impatto per piantare pali in modo efficiente e controllato.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.",
+            "value": "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato.",
           },
           {
             "locale": "nl-NL",
@@ -266,7 +259,7 @@ describe(`with iii567Yz preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de battage robuste avec un contrôle avancé de la force d&#39;impact pour un fonçage de fondation efficace et maîtrisé.",
+            "value": "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé.",
           },
           {
             "locale": "en-AU",
@@ -311,7 +304,7 @@ describe(`with iii567Yz preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"fixed","label":"Fixed"}",
             },
           ],
           "images": [
@@ -339,10 +332,6 @@ describe(`with iii567Yz preset`, () => {
           {
             "locale": "it-IT",
             "value": "III567 YZ Martello per Pali",
-          },
-          {
-            "locale": "en-UK",
-            "value": "III567 YZ Piling Hammer",
           },
           {
             "locale": "nl-NL",
@@ -391,10 +380,6 @@ describe(`with iii567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "iii567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "iii567-yz",
           },
           {
@@ -453,7 +438,7 @@ describe(`with iii567Yz preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [
@@ -487,7 +472,7 @@ describe(`with iii567Yz preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [

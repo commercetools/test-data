@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { type TStoreDraft, StoreDraft } from '@commercetools-test-data/store';
 import { AssociateDraft } from '../../../../associate';
-import { status, storeMode, unitType, associateMode } from '../../../constants';
+import { storeMode, unitType, associateMode } from '../../../constants';
 import { type TCompanyDraftBuilder } from '../../../types';
 import * as CompanyDraft from '../../index';
 
@@ -17,6 +17,7 @@ const lifttechSolutionsLtd = (): TCompanyDraftBuilder =>
     .empty()
     .key('lifttech-solutions-ltd')
     .name('LiftTech Solutions Ltd')
+    .contactEmail('info@ltsl.com')
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)

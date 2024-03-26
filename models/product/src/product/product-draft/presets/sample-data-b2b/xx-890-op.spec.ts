@@ -20,7 +20,6 @@ describe(`with xx890Op preset`, () => {
           "en-AU": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
           "en-GB": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
           "en-NZ": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
-          "en-UK": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
           "en-US": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
           "es-ES": "Grúa sobre orugas de gran capacidad con características excepcionales de estabilidad para tareas precisas de elevación pesada.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with xx890Op preset`, () => {
           "en-AU": "XX890 OP Crawler Crane for Stability",
           "en-GB": "XX890 OP Crawler Crane for Stability",
           "en-NZ": "XX890 OP Crawler Crane for Stability",
-          "en-UK": "XX890 OP Crawler Crane for Stability",
           "en-US": "XX890 OP Crawler Crane for Stability",
           "es-ES": "XX890 OP Grúa sobre orugas para estabilidad",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with xx890Op preset`, () => {
           "en-AU": "xx890-op",
           "en-GB": "xx890-op",
           "en-NZ": "xx890-op",
-          "en-UK": "xx890-op",
           "en-US": "xx890-op",
           "es-ES": "xx890-op",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with xx890Op preset`, () => {
             "value": "Gru cingolata ad alta capacità con caratteristiche eccezionali di stabilità per compiti di sollevamento pesanti e precisi.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits rupskraan met uitzonderlijke stabiliteitsfuncties voor nauwkeurige zware hijstaken.",
           },
@@ -341,10 +334,6 @@ describe(`with xx890Op preset`, () => {
             "value": "XX890 OP Gru Cingolata per Stabilità",
           },
           {
-            "locale": "en-UK",
-            "value": "XX890 OP Crawler Crane for Stability",
-          },
-          {
             "locale": "nl-NL",
             "value": "XX890 OP Rupskraan voor Stabiliteit",
           },
@@ -391,10 +380,6 @@ describe(`with xx890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "xx890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "xx890-op",
           },
           {

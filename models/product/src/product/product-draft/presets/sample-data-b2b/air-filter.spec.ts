@@ -20,8 +20,8 @@ describe(`with airFilter preset`, () => {
           "en-US": "Filters air entering the engine to prevent engine wear.",
           "es-ES": "Filtra el aire que entra en el motor para prevenir el desgaste del motor.",
           "fr": undefined,
-          "fr-FR": "Filtre l&#39;air entrant dans le moteur pour prévenir l&#39;usure du moteur.",
-          "it-IT": "Filtra l&#39;aria che entra nel motore per prevenire l&#39;usura del motore.",
+          "fr-FR": "Filtre l'air entrant dans le moteur pour prévenir l'usure du moteur.",
+          "it-IT": "Filtra l'aria che entra nel motore per prevenire l'usura del motore.",
           "nl-NL": "Filtert de lucht die de motor binnenkomt om motorslijtage te voorkomen.",
           "pt-PT": "Filtra o ar que entra no motor para prevenir o desgaste do motor.",
         },
@@ -105,7 +105,7 @@ describe(`with airFilter preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Filtra l&#39;aria che entra nel motore per prevenire l&#39;usura del motore.",
+            "value": "Filtra l'aria che entra nel motore per prevenire l'usura del motore.",
           },
           {
             "locale": "nl-NL",
@@ -113,7 +113,7 @@ describe(`with airFilter preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Filtre l&#39;air entrant dans le moteur pour prévenir l&#39;usure du moteur.",
+            "value": "Filtre l'air entrant dans le moteur pour prévenir l'usure du moteur.",
           },
           {
             "locale": "es-ES",

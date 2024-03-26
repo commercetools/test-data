@@ -25,6 +25,20 @@ const constructionLoaders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Carregadeiras de Construção')
         ['en-US']('Construction Loaders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Lader, die für Bauaufgaben konzipiert sind')
+        ['it-IT']('Caricatori progettati per compiti di costruzione')
+        ['nl-NL']('Laders ontworpen voor bouwtaken')
+        ['fr-FR']('Chargeuses conçues pour les tâches de construction')
+        ['en-AU']('Loaders designed for construction tasks')
+        ['es-ES']('Cargadores diseñados para tareas de construcción')
+        ['en-GB']('Loaders designed for construction tasks')
+        ['en-NZ']('Loaders designed for construction tasks')
+        ['pt-PT']('Carregadeiras projetadas para tarefas de construção')
+        ['en-US']('Loaders designed for construction tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const constructionLoaders = (): TCategoryDraftBuilder =>
         ['en-US']('construction_loaders')
     )
     .key('construction-loaders')
-    .orderHint('0.000017083829432041760914541')
+    .orderHint('0.0000171136448475727245821')
     .parent(
       KeyReferenceDraft.presets
         .category()

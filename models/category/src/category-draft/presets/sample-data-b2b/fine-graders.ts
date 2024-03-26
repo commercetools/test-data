@@ -25,6 +25,20 @@ const fineGraders = (): TCategoryDraftBuilder =>
         ['pt-PT']('Motoniveladoras Finas')
         ['en-US']('Fine Graders')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Motorgrader für feine Gradaufgaben')
+        ['it-IT']('Livellatrici motorizzate per compiti di livellamento fine')
+        ['nl-NL']('Motorgraders voor fijn graderingswerk')
+        ['fr-FR']('Niveleuses pour des tâches de nivellement fines')
+        ['en-AU']('Motor graders for fine grading tasks')
+        ['es-ES']('Motoniveladoras para tareas de nivelación fina')
+        ['en-GB']('Motor graders for fine grading tasks')
+        ['en-NZ']('Motor graders for fine grading tasks')
+        ['pt-PT']('Motoniveladoras para tarefas de nivelamento fino')
+        ['en-US']('Motor graders for fine grading tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const fineGraders = (): TCategoryDraftBuilder =>
         ['en-US']('fine_graders')
     )
     .key('fine-graders')
-    .orderHint('0.00001708382946805785223058')
+    .orderHint('0.000017113644847541613522016')
     .parent(
       KeyReferenceDraft.presets
         .category()

@@ -42,7 +42,6 @@ const c789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('C789 UV Bau-Lader')
         ['it-IT']('C789 UV Caricatore per Costruzioni')
-        ['en-UK']('C789 UV Construction Loader')
         ['nl-NL']('C789 UV Bouwlader')
         ['fr-FR']('C789 UV Chargeur de construction')
         ['en-AU']('C789 UV Construction Loader')
@@ -60,9 +59,6 @@ const c789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore per costruzioni ad alta capacità con caratteristiche avanzate per compiti gravosi di costruzione.'
-        )
-        ['en-UK'](
-          'High-capacity construction loader with advanced features for heavy-duty construction tasks.'
         )
         ['nl-NL'](
           'Hoogcapaciteits bouwlader met geavanceerde functies voor zware bouwtaken.'
@@ -94,7 +90,6 @@ const c789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('c789-uv')
         ['it-IT']('c789-uv')
-        ['en-UK']('c789-uv')
         ['nl-NL']('c789-uv')
         ['fr-FR']('c789-uv')
         ['en-AU']('c789-uv')

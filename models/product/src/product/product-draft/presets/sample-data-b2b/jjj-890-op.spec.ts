@@ -20,11 +20,10 @@ describe(`with jjj890Op preset`, () => {
           "en-AU": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
           "en-GB": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
           "en-NZ": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
-          "en-UK": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
           "en-US": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
           "es-ES": "Martillo de pilotaje versátil adecuado para diversas tareas de pilotes de cimentación en proyectos de construcción e infraestructura.",
           "fr": undefined,
-          "fr-FR": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.",
+          "fr-FR": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure.",
           "it-IT": "Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.",
           "nl-NL": "Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.",
           "pt-PT": "Martelo de cravação versátil adequado para várias tarefas de cravação de fundações em projetos de construção e infraestrutura.",
@@ -62,8 +61,8 @@ describe(`with jjj890Op preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "fixed",
+                "label": "Fixed",
               },
             },
           ],
@@ -91,7 +90,6 @@ describe(`with jjj890Op preset`, () => {
           "en-AU": "JJJ890 OP Piling Hammer",
           "en-GB": "JJJ890 OP Piling Hammer",
           "en-NZ": "JJJ890 OP Piling Hammer",
-          "en-UK": "JJJ890 OP Piling Hammer",
           "en-US": "JJJ890 OP Piling Hammer",
           "es-ES": "JJJ890 OP Martillo de pilotaje",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with jjj890Op preset`, () => {
           "en-AU": "jjj890-op",
           "en-GB": "jjj890-op",
           "en-NZ": "jjj890-op",
-          "en-UK": "jjj890-op",
           "en-US": "jjj890-op",
           "es-ES": "jjj890-op",
           "fr": undefined,
@@ -161,8 +158,8 @@ describe(`with jjj890Op preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -212,8 +209,8 @@ describe(`with jjj890Op preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "fixed",
+                  "label": "Fixed",
                 },
               },
             ],
@@ -257,16 +254,12 @@ describe(`with jjj890Op preset`, () => {
             "value": "Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.",
           },
           {
             "locale": "fr-FR",
-            "value": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.",
+            "value": "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure.",
           },
           {
             "locale": "en-AU",
@@ -311,7 +304,7 @@ describe(`with jjj890Op preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"fixed","label":"Fixed"}",
             },
           ],
           "images": [
@@ -339,10 +332,6 @@ describe(`with jjj890Op preset`, () => {
           {
             "locale": "it-IT",
             "value": "JJJ890 OP Martello per Pali",
-          },
-          {
-            "locale": "en-UK",
-            "value": "JJJ890 OP Piling Hammer",
           },
           {
             "locale": "nl-NL",
@@ -391,10 +380,6 @@ describe(`with jjj890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "jjj890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "jjj890-op",
           },
           {
@@ -453,7 +438,7 @@ describe(`with jjj890Op preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [
@@ -487,7 +472,7 @@ describe(`with jjj890Op preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"fixed","label":"Fixed"}",
               },
             ],
             "images": [

@@ -9,7 +9,21 @@ describe(`with offHighwayDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kipper, die für den Offroad-Einsatz konzipiert sind",
+          "en": undefined,
+          "en-AU": "Dump trucks designed for off-highway use",
+          "en-GB": "Dump trucks designed for off-highway use",
+          "en-NZ": "Dump trucks designed for off-highway use",
+          "en-US": "Dump trucks designed for off-highway use",
+          "es-ES": "Camiones volquete diseñados para uso fuera de carretera",
+          "fr": undefined,
+          "fr-FR": "Camions-bennes conçus pour une utilisation tout-terrain",
+          "it-IT": "Camion ribaltabili progettati per uso fuoristrada",
+          "nl-NL": "Kipwagens ontworpen voor gebruik buiten de weg",
+          "pt-PT": "Caminhões basculantes projetados para uso fora de estrada",
+        },
         "externalId": undefined,
         "key": "off-highway-dump-trucks",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with offHighwayDumpTrucks preset`, () => {
           "nl-NL": "Off-road Kipwagens",
           "pt-PT": "Caminhões Basculantes Fora de Estrada",
         },
-        "orderHint": "0.000017083829456541934993986",
+        "orderHint": "0.0000171136448473756887464",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with offHighwayDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kipper, die für den Offroad-Einsatz konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Camion ribaltabili progettati per uso fuoristrada",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kipwagens ontworpen voor gebruik buiten de weg",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Camions-bennes conçus pour une utilisation tout-terrain",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Dump trucks designed for off-highway use",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Camiones volquete diseñados para uso fuera de carretera",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Dump trucks designed for off-highway use",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Dump trucks designed for off-highway use",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Caminhões basculantes projetados para uso fora de estrada",
+          },
+          {
+            "locale": "en-US",
+            "value": "Dump trucks designed for off-highway use",
+          },
+        ],
         "externalId": undefined,
         "key": "off-highway-dump-trucks",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with offHighwayDumpTrucks preset`, () => {
             "value": "Off-Highway Dump Trucks",
           },
         ],
-        "orderHint": "0.000017083829456541934993986",
+        "orderHint": "0.0000171136448473756887464",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",

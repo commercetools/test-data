@@ -21,6 +21,20 @@ const largeHydraulicHammers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Martelos Hidráulicos')
         ['en-US']('Hydraulic Hammers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Hydraulikhämmer mit großer Kapazität')
+        ['it-IT']('Martelli idraulici ad alta capacità')
+        ['nl-NL']('Hydraulische hamers met grote capaciteit')
+        ['fr-FR']('Marteaux hydrauliques avec une grande capacité')
+        ['en-AU']('Hydraulic hammers with large capacity')
+        ['es-ES']('Martillos hidráulicos con gran capacidad')
+        ['en-GB']('Hydraulic hammers with large capacity')
+        ['en-NZ']('Hydraulic hammers with large capacity')
+        ['pt-PT']('Martelos hidráulicos com grande capacidade')
+        ['en-US']('Hydraulic hammers with large capacity')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +50,6 @@ const largeHydraulicHammers = (): TCategoryDraftBuilder =>
         ['en-US']('large_hydraulic_hammers')
     )
     .key('large-hydraulic-hammers')
-    .orderHint('0.000017083829393162045787358');
+    .orderHint('0.000017113644845361837216539');
 
 export default largeHydraulicHammers;

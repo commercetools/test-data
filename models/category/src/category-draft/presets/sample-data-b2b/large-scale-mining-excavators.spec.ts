@@ -9,7 +9,21 @@ describe(`with largeScaleMiningExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bagger, die bei Bergbauoperationen im großen Maßstab eingesetzt werden",
+          "en": undefined,
+          "en-AU": "Excavators used in large-scale mining operations",
+          "en-GB": "Excavators used in large-scale mining operations",
+          "en-NZ": "Excavators used in large-scale mining operations",
+          "en-US": "Excavators used in large-scale mining operation",
+          "es-ES": "Excavadoras utilizadas en operaciones mineras a gran escala",
+          "fr": undefined,
+          "fr-FR": "Excavatrices utilisées dans les opérations minières à grande échelle",
+          "it-IT": "Escavatori utilizzati in operazioni minerarie su larga scala",
+          "nl-NL": "Graafmachines gebruikt in grootschalige mijnbouwoperaties",
+          "pt-PT": "Escavadeiras usadas em operações de mineração de grande escala",
+        },
         "externalId": undefined,
         "key": "large-scale-mining-excavators",
         "metaDescription": undefined,
@@ -25,12 +39,12 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           "en-US": "Mining Excavators",
           "es-ES": "Excavadoras de minería",
           "fr": undefined,
-          "fr-FR": "Excavatrices pour l&#39;exploitation minière",
+          "fr-FR": "Excavatrices pour l'exploitation minière",
           "it-IT": "Escavatori Minerari",
           "nl-NL": "Mijnbouwgraafmachines",
           "pt-PT": "Escavadeiras de Mineração",
         },
-        "orderHint": "0.000017083829398271003971003",
+        "orderHint": "0.000017113644847321548509128",
         "parent": {
           "key": "excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with largeScaleMiningExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bagger, die bei Bergbauoperationen im großen Maßstab eingesetzt werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori utilizzati in operazioni minerarie su larga scala",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Graafmachines gebruikt in grootschalige mijnbouwoperaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices utilisées dans les opérations minières à grande échelle",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Excavators used in large-scale mining operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras utilizadas en operaciones mineras a gran escala",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Excavators used in large-scale mining operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Excavators used in large-scale mining operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras usadas em operações de mineração de grande escala",
+          },
+          {
+            "locale": "en-US",
+            "value": "Excavators used in large-scale mining operation",
+          },
+        ],
         "externalId": undefined,
         "key": "large-scale-mining-excavators",
         "metaDescription": undefined,
@@ -82,7 +137,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices pour l&#39;exploitation minière",
+            "value": "Excavatrices pour l'exploitation minière",
           },
           {
             "locale": "en-AU",
@@ -109,7 +164,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
             "value": "Mining Excavators",
           },
         ],
-        "orderHint": "0.000017083829398271003971003",
+        "orderHint": "0.000017113644847321548509128",
         "parent": {
           "key": "excavators",
           "typeId": "category",

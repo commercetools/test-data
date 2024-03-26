@@ -6,7 +6,10 @@ describe(`with gbp500 preset`, () => {
     const gbp500Preset = gbp500().build<TShippingRateDraft>();
     expect(gbp500Preset).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 5000,
+          "currencyCode": "GBP",
+        },
         "price": {
           "centAmount": 500,
           "currencyCode": "GBP",
@@ -20,7 +23,10 @@ describe(`with gbp500 preset`, () => {
     const gbp500PresetGraphql = gbp500().buildGraphql<TShippingRateDraft>();
     expect(gbp500PresetGraphql).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 5000,
+          "currencyCode": "GBP",
+        },
         "price": {
           "centAmount": 500,
           "currencyCode": "GBP",

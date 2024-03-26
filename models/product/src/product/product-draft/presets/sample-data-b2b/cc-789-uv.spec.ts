@@ -20,7 +20,6 @@ describe(`with cc789Uv preset`, () => {
           "en-AU": "Advanced airport grader with specialized features for precise runway grading.",
           "en-GB": "Advanced airport grader with specialized features for precise runway grading.",
           "en-NZ": "Advanced airport grader with specialized features for precise runway grading.",
-          "en-UK": "Advanced airport grader with specialized features for precise runway grading.",
           "en-US": "Advanced airport grader with specialized features for precise runway grading.",
           "es-ES": "Niveladora de aeropuerto avanzada con características especializadas para el nivelado preciso de pistas.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with cc789Uv preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with cc789Uv preset`, () => {
           "en-AU": "CC789 UV Airport Grader",
           "en-GB": "CC789 UV Airport Grader",
           "en-NZ": "CC789 UV Airport Grader",
-          "en-UK": "CC789 UV Airport Grader",
           "en-US": "CC789 UV Airport Grader",
           "es-ES": "CC789 UV Niveladora de aeropuerto",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with cc789Uv preset`, () => {
           "en-AU": "cc789-uv",
           "en-GB": "cc789-uv",
           "en-NZ": "cc789-uv",
-          "en-UK": "cc789-uv",
           "en-US": "cc789-uv",
           "es-ES": "cc789-uv",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with cc789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with cc789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with cc789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "Livellatrice avanzata per aeroporti con caratteristiche specializzate per la classificazione precisa delle piste.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Advanced airport grader with specialized features for precise runway grading.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with cc789Uv preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with cc789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "CC789 UV Livellatrice per Aeroporti",
-          },
-          {
-            "locale": "en-UK",
-            "value": "CC789 UV Airport Grader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with cc789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "cc789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "cc789-uv",
           },
           {
@@ -411,7 +396,7 @@ describe(`with cc789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with cc789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

@@ -42,11 +42,8 @@ const oo789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('OO789 UV Radbagger für Bergbau')
         ['it-IT']('OO789 UV Escavatore su Ruote per Miniere')
-        ['en-UK']('OO789 UV Wheeled Excavator for Mining')
         ['nl-NL']('OO789 UV Wiellader voor Mijnbouw')
-        ['fr-FR'](
-          'OO789 UV Excavatrice sur roues pour l&#39;exploitation minière'
-        )
+        ['fr-FR']("OO789 UV Excavatrice sur roues pour l'exploitation minière")
         ['en-AU']('OO789 UV Wheeled Excavator for Mining')
         ['es-ES']('OO789 UV Excavadora de ruedas para minería')
         ['en-GB']('OO789 UV Wheeled Excavator for Mining')
@@ -62,9 +59,6 @@ const oo789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore avanzato su ruote con caratteristiche specializzate per precisione nelle operazioni minerarie.'
-        )
-        ['en-UK'](
-          'Advanced wheeled excavator with specialized features for precision in mining operations.'
         )
         ['nl-NL'](
           'Geavanceerde wiellader met gespecialiseerde functies voor precisie in mijnbouwoperaties.'
@@ -96,7 +90,6 @@ const oo789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('oo789-uv')
         ['it-IT']('oo789-uv')
-        ['en-UK']('oo789-uv')
         ['nl-NL']('oo789-uv')
         ['fr-FR']('oo789-uv')
         ['en-AU']('oo789-uv')

@@ -1,8 +1,5 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '@commercetools-test-data/commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
+import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const heavyDutySoilCompactorsRollers = (): TCategoryDraftBuilder =>
@@ -21,6 +18,26 @@ const heavyDutySoilCompactorsRollers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Compactadores de Solo')
         ['en-US']('Soil Compactors')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Verdichter und Walzen für schwere Bodenaufgaben')
+        ['it-IT']('Compattatori e rulli per compiti pesanti su suolo')
+        ['nl-NL']('Verdichters en walsen voor zware bodemtaken')
+        ['fr-FR'](
+          'Compacteurs et rouleaux pour des tâches de sol haute résistance'
+        )
+        ['en-AU']('Compactors and rollers for heavy-duty soil tasks')
+        ['es-ES'](
+          'Compactadores y rodillos para tareas de suelo de servicio pesado'
+        )
+        ['en-GB']('Compactors and rollers for heavy-duty soil tasks')
+        ['en-NZ']('Compactors and rollers for heavy-duty soil tasks')
+        ['pt-PT'](
+          'Compactadores e rolos para tarefas pesadas de compactação de solo'
+        )
+        ['en-US']('Compactors and rollers for heavy-duty soil tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -36,6 +53,6 @@ const heavyDutySoilCompactorsRollers = (): TCategoryDraftBuilder =>
         ['en-US']('heavy_duty_soil_compactors_rollers')
     )
     .key('heavy-duty-soil-compactors-rollers')
-    .orderHint('0.000017083829382892122055945');
+    .orderHint('0.000017113644845271262904199');
 
 export default heavyDutySoilCompactorsRollers;

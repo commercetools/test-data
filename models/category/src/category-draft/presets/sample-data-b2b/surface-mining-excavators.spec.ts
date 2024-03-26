@@ -9,7 +9,21 @@ describe(`with surfaceMiningExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bagger, die im Oberflächenbergbau eingesetzt werden",
+          "en": undefined,
+          "en-AU": "Excavators used in surface mining",
+          "en-GB": "Excavators used in surface mining",
+          "en-NZ": "Excavators used in surface mining",
+          "en-US": "Excavators used in surface mining",
+          "es-ES": "Excavadoras utilizadas en minería superficial",
+          "fr": undefined,
+          "fr-FR": "Excavatrices utilisées dans l'exploitation minière de surface",
+          "it-IT": "Escavatori utilizzati in miniere di superficie",
+          "nl-NL": "Graafmachines gebruikt in oppervlaktemijnbouw",
+          "pt-PT": "Escavadeiras usadas na mineração de superfície",
+        },
         "externalId": undefined,
         "key": "surface-mining-excavators",
         "metaDescription": undefined,
@@ -25,12 +39,12 @@ describe(`with surfaceMiningExcavators preset`, () => {
           "en-US": "Surface Mining Excavators",
           "es-ES": "Excavadoras de minería superficial",
           "fr": undefined,
-          "fr-FR": "Excavatrices pour l&#39;exploitation minière de surface",
+          "fr-FR": "Excavatrices pour l'exploitation minière de surface",
           "it-IT": "Escavatori per Miniere di Superficie",
           "nl-NL": "Graafmachines voor Oppervlaktemijnbouw",
           "pt-PT": "Escavadeiras para Mineração de Superfície",
         },
-        "orderHint": "0.000017083829401241506966080",
+        "orderHint": "0.0000171136448493168434701",
         "parent": {
           "key": "large-scale-mining-excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with surfaceMiningExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bagger, die im Oberflächenbergbau eingesetzt werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori utilizzati in miniere di superficie",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Graafmachines gebruikt in oppervlaktemijnbouw",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices utilisées dans l'exploitation minière de surface",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Excavators used in surface mining",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras utilizadas en minería superficial",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Excavators used in surface mining",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Excavators used in surface mining",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras usadas na mineração de superfície",
+          },
+          {
+            "locale": "en-US",
+            "value": "Excavators used in surface mining",
+          },
+        ],
         "externalId": undefined,
         "key": "surface-mining-excavators",
         "metaDescription": undefined,
@@ -82,7 +137,7 @@ describe(`with surfaceMiningExcavators preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices pour l&#39;exploitation minière de surface",
+            "value": "Excavatrices pour l'exploitation minière de surface",
           },
           {
             "locale": "en-AU",
@@ -109,7 +164,7 @@ describe(`with surfaceMiningExcavators preset`, () => {
             "value": "Surface Mining Excavators",
           },
         ],
-        "orderHint": "0.000017083829401241506966080",
+        "orderHint": "0.0000171136448493168434701",
         "parent": {
           "key": "large-scale-mining-excavators",
           "typeId": "category",

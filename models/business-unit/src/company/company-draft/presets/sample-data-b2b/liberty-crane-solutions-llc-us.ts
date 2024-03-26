@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { type TStoreDraft, StoreDraft } from '@commercetools-test-data/store';
 import { AssociateDraft } from '../../../../associate';
-import { status, storeMode, unitType, associateMode } from '../../../constants';
+import { storeMode, unitType, associateMode } from '../../../constants';
 import { type TCompanyDraftBuilder } from '../../../types';
 import * as CompanyDraft from '../../index';
 
@@ -17,6 +17,7 @@ const libertyCraneSolutionsLlcUs = (): TCompanyDraftBuilder =>
     .empty()
     .key('liberty-crane-solutions-llc-us')
     .name('Liberty Crane Solutions LLC')
+    .contactEmail('info@lcs.com')
     .unitType(unitType.Company)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.Explicit)
@@ -24,7 +25,7 @@ const libertyCraneSolutionsLlcUs = (): TCompanyDraftBuilder =>
       KeyReferenceDraft.presets.store().key(usMediumCustomersStore.key!),
     ])
     .associates([
-      AssociateDraft.presets.sampleDataB2B.oliviaJones(),
+      AssociateDraft.presets.sampleDataB2B.oliviaNewton(),
       AssociateDraft.presets.sampleDataB2B.williamDavis(),
       AssociateDraft.presets.sampleDataB2B.avaBrown(),
     ])

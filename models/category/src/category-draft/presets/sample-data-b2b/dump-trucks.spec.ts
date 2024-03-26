@@ -8,7 +8,21 @@ describe(`with dumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kipper, die bei Bergbauoperationen verwendet werden",
+          "en": undefined,
+          "en-AU": "Dump trucks used in mining operations",
+          "en-GB": "Dump trucks used in mining operations",
+          "en-NZ": "Dump trucks used in mining operations",
+          "en-US": "Dump trucks used in mining operations",
+          "es-ES": "Camiones volquete utilizados en operaciones mineras",
+          "fr": undefined,
+          "fr-FR": "Camions-bennes utilisés dans les opérations minières",
+          "it-IT": "Camion ribaltabili utilizzati in operazioni minerarie",
+          "nl-NL": "Kipwagens gebruikt in mijnbouwoperaties",
+          "pt-PT": "Caminhões basculantes usados em operações de mineração",
+        },
         "externalId": undefined,
         "key": "dump-trucks",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with dumpTrucks preset`, () => {
           "nl-NL": "Kipwagens",
           "pt-PT": "Caminhões Basculantes",
         },
-        "orderHint": "0.000017083829376992031863512",
+        "orderHint": "0.00001711364484524846530528",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -56,7 +70,48 @@ describe(`with dumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kipper, die bei Bergbauoperationen verwendet werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Camion ribaltabili utilizzati in operazioni minerarie",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kipwagens gebruikt in mijnbouwoperaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Camions-bennes utilisés dans les opérations minières",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Dump trucks used in mining operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Camiones volquete utilizados en operaciones mineras",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Dump trucks used in mining operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Dump trucks used in mining operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Caminhões basculantes usados em operações de mineração",
+          },
+          {
+            "locale": "en-US",
+            "value": "Dump trucks used in mining operations",
+          },
+        ],
         "externalId": undefined,
         "key": "dump-trucks",
         "metaDescription": undefined,
@@ -104,7 +159,7 @@ describe(`with dumpTrucks preset`, () => {
             "value": "Dump Trucks",
           },
         ],
-        "orderHint": "0.000017083829376992031863512",
+        "orderHint": "0.00001711364484524846530528",
         "parent": undefined,
         "slug": [
           {

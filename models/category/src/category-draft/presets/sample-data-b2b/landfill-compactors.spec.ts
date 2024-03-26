@@ -9,7 +9,21 @@ describe(`with landfillCompactors preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Verdichter, die für die Deponienutzung konzipiert sind",
+          "en": undefined,
+          "en-AU": "Compactors designed for landfill use",
+          "en-GB": "Compactors designed for landfill use",
+          "en-NZ": "Compactors designed for landfill use",
+          "en-US": "Compactors designed for landfill us",
+          "es-ES": "Compactadores diseñados para uso en vertederos",
+          "fr": undefined,
+          "fr-FR": "Compacteurs conçus pour une utilisation en décharge",
+          "it-IT": "Compattatori progettati per l'uso in discariche",
+          "nl-NL": "Verdichters ontworpen voor gebruik in stortplaatsen",
+          "pt-PT": "Compactadores projetados para uso em aterros",
+        },
         "externalId": undefined,
         "key": "landfill-compactors",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with landfillCompactors preset`, () => {
           "nl-NL": "Stortplaatsverdichters",
           "pt-PT": "Compactadores de Aterro",
         },
-        "orderHint": "0.000017083829481041966423080",
+        "orderHint": "0.0000171136448476519561524",
         "parent": {
           "key": "heavy-duty-soil-compactors-rollers",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with landfillCompactors preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Verdichter, die für die Deponienutzung konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Compattatori progettati per l'uso in discariche",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Verdichters ontworpen voor gebruik in stortplaatsen",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Compacteurs conçus pour une utilisation en décharge",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Compactors designed for landfill use",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Compactadores diseñados para uso en vertederos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Compactors designed for landfill use",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Compactors designed for landfill use",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Compactadores projetados para uso em aterros",
+          },
+          {
+            "locale": "en-US",
+            "value": "Compactors designed for landfill us",
+          },
+        ],
         "externalId": undefined,
         "key": "landfill-compactors",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with landfillCompactors preset`, () => {
             "value": "Landfill Compactors",
           },
         ],
-        "orderHint": "0.000017083829481041966423080",
+        "orderHint": "0.0000171136448476519561524",
         "parent": {
           "key": "heavy-duty-soil-compactors-rollers",
           "typeId": "category",

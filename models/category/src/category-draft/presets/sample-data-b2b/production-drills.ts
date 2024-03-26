@@ -25,6 +25,20 @@ const productionDrills = (): TCategoryDraftBuilder =>
         ['pt-PT']('Brocas de Produção')
         ['en-US']('Production Drills')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bohrer für groß angelegte Produktionsaktivitäten')
+        ['it-IT']('Trapani per attività di produzione su larga scala')
+        ['nl-NL']('Boormachines voor grootschalige productieactiviteiten')
+        ['fr-FR']('Forages pour des activités de production à grande échelle')
+        ['en-AU']('Drills for large-scale production activities')
+        ['es-ES']('Perforadoras para actividades de producción a gran escala')
+        ['en-GB']('Drills for large-scale production activities')
+        ['en-NZ']('Drills for large-scale production activities')
+        ['pt-PT']('Brocas para atividades de produção em grande escala')
+        ['en-US']('Drills for large-scale production activities')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const productionDrills = (): TCategoryDraftBuilder =>
         ['en-US']('production_drills')
     )
     .key('production-drills')
-    .orderHint('0.00001708382950186609251987')
+    .orderHint('0.00001711364484755764795695')
     .parent(
       KeyReferenceDraft.presets
         .category()

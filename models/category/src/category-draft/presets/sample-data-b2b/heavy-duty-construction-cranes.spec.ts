@@ -9,7 +9,21 @@ describe(`with heavyDutyConstructionCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kräne, die für anspruchsvolle Bauaufgaben konzipiert sind",
+          "en": undefined,
+          "en-AU": "Cranes designed for heavy-duty construction tasks",
+          "en-GB": "Cranes designed for heavy-duty construction tasks",
+          "en-NZ": "Cranes designed for heavy-duty construction tasks",
+          "en-US": "Cranes designed for heavy-duty construction tasks",
+          "es-ES": "Gruas diseñadas para tareas de construcción de servicio pesado",
+          "fr": undefined,
+          "fr-FR": "Grues conçues pour des tâches de construction lourdes",
+          "it-IT": "Gru progettate per compiti di costruzione pesanti",
+          "nl-NL": "Kranen ontworpen voor zware bouwtaken",
+          "pt-PT": "Guindastes projetados para tarefas pesadas de construção",
+        },
         "externalId": undefined,
         "key": "heavy-duty-construction-cranes",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with heavyDutyConstructionCranes preset`, () => {
           "nl-NL": "Bouwkranen",
           "pt-PT": "Guindastes de Construção",
         },
-        "orderHint": "0.000017083829387371397575028",
+        "orderHint": "0.000017113644845512100710765",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -58,7 +72,48 @@ describe(`with heavyDutyConstructionCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kräne, die für anspruchsvolle Bauaufgaben konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Gru progettate per compiti di costruzione pesanti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kranen ontworpen voor zware bouwtaken",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Grues conçues pour des tâches de construction lourdes",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Cranes designed for heavy-duty construction tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Gruas diseñadas para tareas de construcción de servicio pesado",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Cranes designed for heavy-duty construction tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Cranes designed for heavy-duty construction tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Guindastes projetados para tarefas pesadas de construção",
+          },
+          {
+            "locale": "en-US",
+            "value": "Cranes designed for heavy-duty construction tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "heavy-duty-construction-cranes",
         "metaDescription": undefined,
@@ -106,7 +161,7 @@ describe(`with heavyDutyConstructionCranes preset`, () => {
             "value": "Construction Cranes",
           },
         ],
-        "orderHint": "0.000017083829387371397575028",
+        "orderHint": "0.000017113644845512100710765",
         "parent": undefined,
         "slug": [
           {

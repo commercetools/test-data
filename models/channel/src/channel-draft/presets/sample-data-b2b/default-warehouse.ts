@@ -12,7 +12,6 @@ const defaultWarehouse = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Standardlager')
         ['it-IT']('Magazzino predefinito')
-        ['en-UK']('Default warehouse')
         ['nl-NL']('Standaard magazijn')
         ['fr-FR']('Entrepôt par défaut')
         ['en-AU']('Default warehouse')

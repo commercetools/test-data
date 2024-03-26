@@ -54,13 +54,13 @@ const airFilter = (): TProductDraftBuilder =>
           'Filtert die in den Motor eindringende Luft, um Motorverschleiß zu verhindern.'
         )
         ['it-IT'](
-          'Filtra l&#39;aria che entra nel motore per prevenire l&#39;usura del motore.'
+          "Filtra l'aria che entra nel motore per prevenire l'usura del motore."
         )
         ['nl-NL'](
           'Filtert de lucht die de motor binnenkomt om motorslijtage te voorkomen.'
         )
         ['fr-FR'](
-          'Filtre l&#39;air entrant dans le moteur pour prévenir l&#39;usure du moteur.'
+          "Filtre l'air entrant dans le moteur pour prévenir l'usure du moteur."
         )
         ['es-ES'](
           'Filtra el aire que entra en el motor para prevenir el desgaste del motor.'

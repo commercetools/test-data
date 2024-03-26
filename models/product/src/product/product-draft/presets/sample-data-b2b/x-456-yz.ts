@@ -42,7 +42,6 @@ const x456Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('X456 YZ Tiefbergbaubagger')
         ['it-IT']('X456 YZ Escavatore per Miniere Profonde')
-        ['en-UK']('X456 YZ Deep Mining Excavator')
         ['nl-NL']('X456 YZ Diepe Mijnbouw Graafmachine')
         ['fr-FR']('X456 YZ Excavateur minier profond')
         ['en-AU']('X456 YZ Deep Mining Excavator')
@@ -59,10 +58,7 @@ const x456Yz = (): TProductDraftBuilder =>
           'Hoch effizienter Tiefbergbaubagger, konzipiert für die Gewinnung von Ressourcen aus der Tiefe.'
         )
         ['it-IT'](
-          'Escavatore per miniere profonde ad alta efficienza progettato per l&#39;estrazione di risorse in profondità.'
-        )
-        ['en-UK'](
-          'Highly efficient deep mining excavator designed for extracting resources from depth.'
+          "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità."
         )
         ['nl-NL'](
           'Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.'
@@ -94,7 +90,6 @@ const x456Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('x456-yz')
         ['it-IT']('x456-yz')
-        ['en-UK']('x456-yz')
         ['nl-NL']('x456-yz')
         ['fr-FR']('x456-yz')
         ['en-AU']('x456-yz')

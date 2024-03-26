@@ -20,7 +20,6 @@ describe(`with c789Uv preset`, () => {
           "en-AU": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
           "en-GB": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
           "en-NZ": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
-          "en-UK": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
           "en-US": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
           "es-ES": "Cargador de construcción de alta capacidad con características avanzadas para tareas de construcción pesada.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with c789Uv preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with c789Uv preset`, () => {
           "en-AU": "C789 UV Construction Loader",
           "en-GB": "C789 UV Construction Loader",
           "en-NZ": "C789 UV Construction Loader",
-          "en-UK": "C789 UV Construction Loader",
           "en-US": "C789 UV Construction Loader",
           "es-ES": "C789 UV Cargador de construcción",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with c789Uv preset`, () => {
           "en-AU": "c789-uv",
           "en-GB": "c789-uv",
           "en-NZ": "c789-uv",
-          "en-UK": "c789-uv",
           "en-US": "c789-uv",
           "es-ES": "c789-uv",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with c789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with c789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with c789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "Caricatore per costruzioni ad alta capacità con caratteristiche avanzate per compiti gravosi di costruzione.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "High-capacity construction loader with advanced features for heavy-duty construction tasks.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with c789Uv preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with c789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "C789 UV Caricatore per Costruzioni",
-          },
-          {
-            "locale": "en-UK",
-            "value": "C789 UV Construction Loader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with c789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "c789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "c789-uv",
           },
           {
@@ -411,7 +396,7 @@ describe(`with c789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with c789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

@@ -24,6 +24,20 @@ const wasteHandlingBulldozers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Bulldozers para Manejo de Resíduos')
         ['en-US']('Waste Handling Bulldozers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bulldozer, die für die Abfallbewältigung konzipiert sind')
+        ['it-IT']('Bulldozer progettati per la gestione dei rifiuti')
+        ['nl-NL']('Bulldozers ontworpen voor afvalverwerking')
+        ['fr-FR']('Bulldozers conçus pour la manutention des déchets')
+        ['en-AU']('Bulldozers designed for waste handling')
+        ['es-ES']('Bulldozers diseñados para el manejo de residuos')
+        ['en-GB']('Bulldozers designed for waste handling')
+        ['en-NZ']('Bulldozers designed for waste handling')
+        ['pt-PT']('Bulldozers projetados para manejo de resíduos')
+        ['en-US']('Bulldozers designed for waste handling')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const wasteHandlingBulldozers = (): TCategoryDraftBuilder =>
         ['en-US']('waste_handling_bulldozers')
     )
     .key('waste-handling-bulldozers')
-    .orderHint('0.00001708382944323117492021')
+    .orderHint('0.000017113644847491257581521')
     .parent(
       KeyReferenceDraft.presets.category().key(largeBulldozersCategory.key!)
     );

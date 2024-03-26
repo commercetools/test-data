@@ -42,7 +42,6 @@ const ccc567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('CCC567 YZ Produktionsbohrer')
         ['it-IT']('CCC567 YZ Trapano per Produzione')
-        ['en-UK']('CCC567 YZ Production Drill')
         ['nl-NL']('CCC567 YZ Productieboor')
         ['fr-FR']('CCC567 YZ Forage de production')
         ['en-AU']('CCC567 YZ Production Drill')
@@ -60,9 +59,6 @@ const ccc567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Trapano robusto per produzione con capacità avanzate di trapanazione per operazioni minerarie continue e pesanti.'
-        )
-        ['en-UK'](
-          'Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.'
         )
         ['nl-NL'](
           'Robuuste productieboor met geavanceerde boorcapaciteiten voor continue zware mijnbouwoperaties.'
@@ -94,7 +90,6 @@ const ccc567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ccc567-yz')
         ['it-IT']('ccc567-yz')
-        ['en-UK']('ccc567-yz')
         ['nl-NL']('ccc567-yz')
         ['fr-FR']('ccc567-yz')
         ['en-AU']('ccc567-yz')

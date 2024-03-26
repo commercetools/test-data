@@ -24,7 +24,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "liberty-crane-solutions-llc-us-cart-2",
         "lineItems": [
@@ -162,7 +162,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "liberty-crane-solutions-llc-us-cart-2",
         "lineItems": [

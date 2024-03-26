@@ -42,7 +42,6 @@ const dd234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('DD234 WX Feinplanierer')
         ['it-IT']('DD234 WX Livellatrice Fine')
-        ['en-UK']('DD234 WX Fine Grader')
         ['nl-NL']('DD234 WX Fijnnivelleermachine')
         ['fr-FR']('DD234 WX Niveleuse fine')
         ['en-AU']('DD234 WX Fine Grader')
@@ -60,9 +59,6 @@ const dd234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Livellatrice fine di precisione per finiture meticolose e graduazione di superfici.'
-        )
-        ['en-UK'](
-          'Precision fine grader for meticulous finishing and grading of surfaces.'
         )
         ['nl-NL'](
           'Precisie fijnnivelleermachine voor nauwkeurige afwerking en egalisatie van oppervlakken.'
@@ -94,7 +90,6 @@ const dd234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('dd234-wx')
         ['it-IT']('dd234-wx')
-        ['en-UK']('dd234-wx')
         ['nl-NL']('dd234-wx')
         ['fr-FR']('dd234-wx')
         ['en-AU']('dd234-wx')

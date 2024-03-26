@@ -8,7 +8,12 @@ describe(`with deFrUk preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "de-fr-uk",
+            "typeId": "channel",
+          },
+        ],
         "key": "de-fr-uk",
         "languages": undefined,
         "name": {
@@ -18,7 +23,6 @@ describe(`with deFrUk preset`, () => {
           "en-AU": "Germany, France and United Kingdom",
           "en-GB": "Germany, France and United Kingdom",
           "en-NZ": "Germany, France and United Kingdom",
-          "en-UK": "Germany, France and United Kingdom",
           "en-US": "Germany, France and United Kingdom",
           "es-ES": "Alemania, Francia y Reino Unido",
           "fr": undefined,
@@ -28,7 +32,12 @@ describe(`with deFrUk preset`, () => {
           "pt-PT": "Alemanha, França e Reino Unido",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -39,7 +48,12 @@ describe(`with deFrUk preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "de-fr-uk",
+            "typeId": "channel",
+          },
+        ],
         "key": "de-fr-uk",
         "languages": undefined,
         "name": [
@@ -50,10 +64,6 @@ describe(`with deFrUk preset`, () => {
           {
             "locale": "it-IT",
             "value": "Germania, Francia e Regno Unito",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Germany, France and United Kingdom",
           },
           {
             "locale": "nl-NL",
@@ -89,7 +99,12 @@ describe(`with deFrUk preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });

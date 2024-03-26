@@ -20,7 +20,6 @@ describe(`with f890Op preset`, () => {
           "en-AU": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
           "en-GB": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
           "en-NZ": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
-          "en-UK": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
           "en-US": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
           "es-ES": "Cargador de troncos versátil con características especializadas para la manipulación eficiente de troncos en aplicaciones forestales.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with f890Op preset`, () => {
           "en-AU": "F890 OP Log Loader",
           "en-GB": "F890 OP Log Loader",
           "en-NZ": "F890 OP Log Loader",
-          "en-UK": "F890 OP Log Loader",
           "en-US": "F890 OP Log Loader",
           "es-ES": "F890 OP Cargador de troncos",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with f890Op preset`, () => {
           "en-AU": "f890-op",
           "en-GB": "f890-op",
           "en-NZ": "f890-op",
-          "en-UK": "f890-op",
           "en-US": "f890-op",
           "es-ES": "f890-op",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with f890Op preset`, () => {
             "value": "Caricatore di tronchi versatile con caratteristiche specializzate per la manipolazione efficiente di tronchi in applicazioni forestali.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile log loader with specialized features for efficient log handling in forestry applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige boomlader met gespecialiseerde functies voor efficiënte boomstamhantering in bosbouwtoepassingen.",
           },
@@ -299,10 +292,6 @@ describe(`with f890Op preset`, () => {
             "value": "F890 OP Caricatore di Tronchi",
           },
           {
-            "locale": "en-UK",
-            "value": "F890 OP Log Loader",
-          },
-          {
             "locale": "nl-NL",
             "value": "F890 OP Boomlader",
           },
@@ -349,10 +338,6 @@ describe(`with f890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "f890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "f890-op",
           },
           {

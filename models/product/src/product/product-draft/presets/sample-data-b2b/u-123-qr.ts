@@ -42,7 +42,6 @@ const u123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('U123 QR Gelenkdumper')
         ['it-IT']('U123 QR Camion Ribaltabile Articolato')
-        ['en-UK']('U123 QR Articulated Dump Truck')
         ['nl-NL']('U123 QR Knikdumptruck')
         ['fr-FR']('U123 QR Camion benne articulé')
         ['en-AU']('U123 QR Articulated Dump Truck')
@@ -61,14 +60,11 @@ const u123Qr = (): TProductDraftBuilder =>
         ['it-IT'](
           'Camion ribaltabile articolato durevole per il trasporto efficiente di carichi pesanti in costruzioni e miniere.'
         )
-        ['en-UK'](
-          'Durable articulated dump truck for efficient transport of heavy loads in construction and mining.'
-        )
         ['nl-NL'](
           'Duurzame knikdumptruck voor efficiënt transport van zware ladingen in bouw en mijnbouw.'
         )
         ['fr-FR'](
-          'Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l&#39;exploitation minière.'
+          "Camion benne articulé durable pour le transport efficace de charges lourdes dans la construction et l'exploitation minière."
         )
         ['en-AU'](
           'Durable articulated dump truck for efficient transport of heavy loads in construction and mining.'
@@ -94,7 +90,6 @@ const u123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('u123-qr')
         ['it-IT']('u123-qr')
-        ['en-UK']('u123-qr')
         ['nl-NL']('u123-qr')
         ['fr-FR']('u123-qr')
         ['en-AU']('u123-qr')

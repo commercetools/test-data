@@ -42,7 +42,6 @@ const vv234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('VV234 WX Raupenkran für Stabilität')
         ['it-IT']('VV234 WX Gru Cingolata per Stabilità')
-        ['en-UK']('VV234 WX Crawler Crane for Stability')
         ['nl-NL']('VV234 WX Rupskraan voor Stabiliteit')
         ['fr-FR']('VV234 WX Grue sur chenilles pour stabilité')
         ['en-AU']('VV234 WX Crawler Crane for Stability')
@@ -60,9 +59,6 @@ const vv234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Gru cingolata stabile progettata per compiti di sollevamento pesanti in terreni difficili.'
-        )
-        ['en-UK'](
-          'Stable crawler crane designed for heavy lifting tasks in challenging terrain.'
         )
         ['nl-NL'](
           'Stabiele rupskraan ontworpen voor zware hijstaken in uitdagend terrein.'
@@ -94,7 +90,6 @@ const vv234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('vv234-wx')
         ['it-IT']('vv234-wx')
-        ['en-UK']('vv234-wx')
         ['nl-NL']('vv234-wx')
         ['fr-FR']('vv234-wx')
         ['en-AU']('vv234-wx')

@@ -25,6 +25,20 @@ const wheeledExcavatorsForConstruction = (): TCategoryDraftBuilder =>
         ['pt-PT']('Escavadeiras com Rodas para Construção')
         ['en-US']('Wheeled Excavators for Construction')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Radbagger, die für Bauaufgaben geeignet sind')
+        ['it-IT']('Escavatori su ruote adatti per compiti di costruzione')
+        ['nl-NL']('Wielladers geschikt voor bouwtaken')
+        ['fr-FR']('Excavatrices à roues adaptées aux tâches de construction')
+        ['en-AU']('Wheel excavators suitable for construction tasks')
+        ['es-ES']('Excavadoras de ruedas adecuadas para tareas de construcción')
+        ['en-GB']('Wheel excavators suitable for construction tasks')
+        ['en-NZ']('Wheel excavators suitable for construction tasks')
+        ['pt-PT']('Escavadeiras com rodas adequadas para tarefas de construção')
+        ['en-US']('Wheel excavators suitable for construction tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const wheeledExcavatorsForConstruction = (): TCategoryDraftBuilder =>
         ['en-US']('wheeled_excavators_for_construction')
     )
     .key('wheeled-excavators-for-construction')
-    .orderHint('0.000017083829418582110848053')
+    .orderHint('0.00001711364484938846724481')
     .parent(
       KeyReferenceDraft.presets
         .category()

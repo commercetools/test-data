@@ -25,6 +25,30 @@ const vibratorySoilCompactors = (): TCategoryDraftBuilder =>
         ['pt-PT']('Compactadores de Solo Vibratórios')
         ['en-US']('Vibratory Soil Compactors')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE'](
+          'Verdichter, die Vibration für die Bodenverdichtung verwenden'
+        )
+        ['it-IT'](
+          'Compattatori che utilizzano la vibrazione per la compattazione del suolo'
+        )
+        ['nl-NL']('Verdichters die trillingen gebruiken voor bodemverdichting')
+        ['fr-FR'](
+          'Compacteurs utilisant la vibration pour le compactage du sol'
+        )
+        ['en-AU']('Compactors using vibration for soil compaction')
+        ['es-ES'](
+          'Compactadores que utilizan vibración para compactar el suelo'
+        )
+        ['en-GB']('Compactors using vibration for soil compaction')
+        ['en-NZ']('Compactors using vibration for soil compaction')
+        ['pt-PT'](
+          'Compactadores que utilizam vibração para compactação de solo'
+        )
+        ['en-US']('Compactors using vibration for soil compaction')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +64,7 @@ const vibratorySoilCompactors = (): TCategoryDraftBuilder =>
         ['en-US']('vibratory_soil_compactors')
     )
     .key('vibratory-soil-compactors')
-    .orderHint('0.000017083829471811901243371')
+    .orderHint('0.00001711364484765204216013')
     .parent(
       KeyReferenceDraft.presets
         .category()

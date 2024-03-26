@@ -20,8 +20,8 @@ const d234Wx02 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random().name('model').value(2019),
       AttributeDraft.random().name('iso45001').value(true),
       AttributeDraft.random().name('mobility').value({
-        key: 'tracked',
-        label: 'Tracked',
+        key: 'wheeled',
+        label: 'Wheeled',
       }),
     ]);
 

@@ -42,7 +42,6 @@ const tt456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('TT456 ST Mobilkran für Vielseitigkeit')
         ['it-IT']('TT456 ST Gru Mobile per Versatilità')
-        ['en-UK']('TT456 ST Mobile Crane for Versatility')
         ['nl-NL']('TT456 ST Mobiele Kraan voor Veelzijdigheid')
         ['fr-FR']('TT456 ST Grue mobile pour polyvalence')
         ['en-AU']('TT456 ST Mobile Crane for Versatility')
@@ -61,14 +60,11 @@ const tt456St = (): TProductDraftBuilder =>
         ['it-IT'](
           'Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.'
         )
-        ['en-UK'](
-          'Versatile mobile crane with advanced features for a wide range of lifting applications.'
-        )
         ['nl-NL'](
           'Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.'
         )
         ['fr-FR'](
-          'Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.'
+          "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage."
         )
         ['en-AU'](
           'Versatile mobile crane with advanced features for a wide range of lifting applications.'
@@ -94,7 +90,6 @@ const tt456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('tt456-st')
         ['it-IT']('tt456-st')
-        ['en-UK']('tt456-st')
         ['nl-NL']('tt456-st')
         ['fr-FR']('tt456-st')
         ['en-AU']('tt456-st')

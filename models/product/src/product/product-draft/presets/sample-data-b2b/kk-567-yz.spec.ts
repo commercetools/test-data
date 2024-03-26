@@ -20,7 +20,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-GB": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-NZ": "Advanced landfill compactor with specialized features for effective waste compaction.",
-          "en-UK": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "en-US": "Advanced landfill compactor with specialized features for effective waste compaction.",
           "es-ES": "Compactador de vertedero avanzado con características especializadas para una compactación efectiva de residuos.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with kk567Yz preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "KK567 YZ Landfill Compactor",
           "en-GB": "KK567 YZ Landfill Compactor",
           "en-NZ": "KK567 YZ Landfill Compactor",
-          "en-UK": "KK567 YZ Landfill Compactor",
           "en-US": "KK567 YZ Landfill Compactor",
           "es-ES": "KK567 YZ Compactador de vertedero",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with kk567Yz preset`, () => {
           "en-AU": "kk567-yz",
           "en-GB": "kk567-yz",
           "en-NZ": "kk567-yz",
-          "en-UK": "kk567-yz",
           "en-US": "kk567-yz",
           "es-ES": "kk567-yz",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with kk567Yz preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with kk567Yz preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with kk567Yz preset`, () => {
           {
             "locale": "it-IT",
             "value": "Compattatore avanzato per discariche con caratteristiche specializzate per una compattazione efficace dei rifiuti.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Advanced landfill compactor with specialized features for effective waste compaction.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with kk567Yz preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with kk567Yz preset`, () => {
           {
             "locale": "it-IT",
             "value": "KK567 YZ Compattatore per Discariche",
-          },
-          {
-            "locale": "en-UK",
-            "value": "KK567 YZ Landfill Compactor",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with kk567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "kk567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "kk567-yz",
           },
           {
@@ -411,7 +396,7 @@ describe(`with kk567Yz preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with kk567Yz preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

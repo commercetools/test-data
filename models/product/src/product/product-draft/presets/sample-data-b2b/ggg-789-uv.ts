@@ -42,7 +42,6 @@ const ggg789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('GGG789 UV Steinbruchhammer')
         ['it-IT']('GGG789 UV Martello per Cave')
-        ['en-UK']('GGG789 UV Quarrying Hammer')
         ['nl-NL']('GGG789 UV Steengroevehamer')
         ['fr-FR']('GGG789 UV Marteau de carrière')
         ['en-AU']('GGG789 UV Quarrying Hammer')
@@ -61,14 +60,11 @@ const ggg789Uv = (): TProductDraftBuilder =>
         ['it-IT'](
           'Martello per cave versatile con controllo di precisione per vari compiti di estrazione di roccia in miniere e costruzioni.'
         )
-        ['en-UK'](
-          'Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.'
-        )
         ['nl-NL'](
           'Veelzijdige steengroevehamer met precisiecontrole voor diverse rotsontginningstaken in mijnbouw en bouw.'
         )
         ['fr-FR'](
-          'Marteau de carrière polyvalent avec commande précise pour diverses tâches d&#39;extraction de roches dans l&#39;exploitation minière et la construction.'
+          "Marteau de carrière polyvalent avec commande précise pour diverses tâches d'extraction de roches dans l'exploitation minière et la construction."
         )
         ['en-AU'](
           'Versatile quarrying hammer with precision control for various rock extraction tasks in mining and construction.'
@@ -94,7 +90,6 @@ const ggg789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ggg789-uv')
         ['it-IT']('ggg789-uv')
-        ['en-UK']('ggg789-uv')
         ['nl-NL']('ggg789-uv')
         ['fr-FR']('ggg789-uv')
         ['en-AU']('ggg789-uv')

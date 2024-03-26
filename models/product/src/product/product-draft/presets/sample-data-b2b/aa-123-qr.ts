@@ -42,7 +42,6 @@ const aa123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('AA123 QR Straßenplanierer')
         ['it-IT']('AA123 QR Livellatrice Stradale')
-        ['en-UK']('AA123 QR Road Grader')
         ['nl-NL']('AA123 QR Wegnivelleermachine')
         ['fr-FR']('AA123 QR Niveleuse routière')
         ['en-AU']('AA123 QR Road Grader')
@@ -60,9 +59,6 @@ const aa123Qr = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Livellatrice stradale versatile per livellamento e graduazione precisi delle superfici stradali.'
-        )
-        ['en-UK'](
-          'Versatile road grader for precise leveling and grading of road surfaces.'
         )
         ['nl-NL'](
           'Veelzijdige wegnivelleermachine voor precieze nivellering en egalisering van wegoppervlakken.'
@@ -94,7 +90,6 @@ const aa123Qr = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('aa123-qr')
         ['it-IT']('aa123-qr')
-        ['en-UK']('aa123-qr')
         ['nl-NL']('aa123-qr')
         ['fr-FR']('aa123-qr')
         ['en-AU']('aa123-qr')

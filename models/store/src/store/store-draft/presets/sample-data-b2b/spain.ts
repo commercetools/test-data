@@ -1,4 +1,7 @@
-import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
 
@@ -11,7 +14,6 @@ const spain = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('Spanien')
         ['it-IT']('Spagna')
-        ['en-UK']('Spain')
         ['nl-NL']('Spanje')
         ['fr-FR']('Espagnole')
         ['en-AU']('Spain')
@@ -20,6 +22,8 @@ const spain = (): TStoreDraftBuilder =>
         ['en-NZ']('Spain')
         ['pt-PT']('Espanha')
         ['en-US']('Spain')
-    );
+    )
+    .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')]);
 
 export default spain;

@@ -20,7 +20,6 @@ describe(`with k567Yz preset`, () => {
           "en-AU": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
           "en-GB": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
           "en-NZ": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
-          "en-UK": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
           "en-US": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
           "es-ES": "Topadora de pantano versátil con características avanzadas para operaciones diversas en entornos húmedos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with k567Yz preset`, () => {
           "en-AU": "K567 YZ Swamp Bulldozer",
           "en-GB": "K567 YZ Swamp Bulldozer",
           "en-NZ": "K567 YZ Swamp Bulldozer",
-          "en-UK": "K567 YZ Swamp Bulldozer",
           "en-US": "K567 YZ Swamp Bulldozer",
           "es-ES": "K567 YZ Topadora de pantano",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with k567Yz preset`, () => {
           "en-AU": "k567-yz",
           "en-GB": "k567-yz",
           "en-NZ": "k567-yz",
-          "en-UK": "k567-yz",
           "en-US": "k567-yz",
           "es-ES": "k567-yz",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with k567Yz preset`, () => {
             "value": "Bulldozer per paludi versatile con caratteristiche avanzate per operazioni diverse in ambienti umidi.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige moeras bulldozer met geavanceerde functies voor diverse operaties in wetland omgevingen.",
           },
@@ -299,10 +292,6 @@ describe(`with k567Yz preset`, () => {
             "value": "K567 YZ Bulldozer per Paludi",
           },
           {
-            "locale": "en-UK",
-            "value": "K567 YZ Swamp Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "K567 YZ Moeras Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with k567Yz preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "k567-yz",
-          },
-          {
-            "locale": "en-UK",
             "value": "k567-yz",
           },
           {

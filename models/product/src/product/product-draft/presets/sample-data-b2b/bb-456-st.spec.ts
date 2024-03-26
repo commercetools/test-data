@@ -20,11 +20,10 @@ describe(`with bb456St preset`, () => {
           "en-AU": "High-performance airport grader for efficient grading and maintenance of airport runways.",
           "en-GB": "High-performance airport grader for efficient grading and maintenance of airport runways.",
           "en-NZ": "High-performance airport grader for efficient grading and maintenance of airport runways.",
-          "en-UK": "High-performance airport grader for efficient grading and maintenance of airport runways.",
           "en-US": "High-performance airport grader for efficient grading and maintenance of airport runways.",
           "es-ES": "Niveladora de aeropuerto de alto rendimiento para el nivelado eficiente y el mantenimiento de las pistas de aterrizaje del aeropuerto.",
           "fr": undefined,
-          "fr-FR": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.",
+          "fr-FR": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport.",
           "it-IT": "Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.",
           "nl-NL": "Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.",
           "pt-PT": "Niveladora de alto desempenho para aeroportos para classificação eficiente e manutenção de pistas de aeroporto.",
@@ -48,8 +47,8 @@ describe(`with bb456St preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with bb456St preset`, () => {
           "en-AU": "BB456 ST Airport Grader",
           "en-GB": "BB456 ST Airport Grader",
           "en-NZ": "BB456 ST Airport Grader",
-          "en-UK": "BB456 ST Airport Grader",
           "en-US": "BB456 ST Airport Grader",
           "es-ES": "BB456 ST Niveladora de aeropuerto",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with bb456St preset`, () => {
           "en-AU": "bb456-st",
           "en-GB": "bb456-st",
           "en-NZ": "bb456-st",
-          "en-UK": "bb456-st",
           "en-US": "bb456-st",
           "es-ES": "bb456-st",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with bb456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with bb456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -215,16 +212,12 @@ describe(`with bb456St preset`, () => {
             "value": "Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-performance airport grader for efficient grading and maintenance of airport runways.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.",
           },
           {
             "locale": "fr-FR",
-            "value": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.",
+            "value": "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport.",
           },
           {
             "locale": "en-AU",
@@ -269,7 +262,7 @@ describe(`with bb456St preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with bb456St preset`, () => {
           {
             "locale": "it-IT",
             "value": "BB456 ST Livellatrice per Aeroporti",
-          },
-          {
-            "locale": "en-UK",
-            "value": "BB456 ST Airport Grader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with bb456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "bb456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "bb456-st",
           },
           {
@@ -411,7 +396,7 @@ describe(`with bb456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with bb456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

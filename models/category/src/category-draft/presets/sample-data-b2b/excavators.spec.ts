@@ -8,7 +8,21 @@ describe(`with excavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bagger für den Einsatz in groß angelegten Betrieb",
+          "en": undefined,
+          "en-AU": "Excavators used in large-scale operations",
+          "en-GB": "Excavators used in large-scale operations",
+          "en-NZ": "Excavators used in large-scale operations",
+          "en-US": "Excavators used in large-scale operations",
+          "es-ES": "Excavadoras utilizadas en operaciones a gran escala",
+          "fr": undefined,
+          "fr-FR": "Excavatrices utilisées dans les opérations à grande échelle",
+          "it-IT": "Escavatori utilizzati in operazioni su larga scala",
+          "nl-NL": "Graafmachines gebruikt in grootschalige operaties",
+          "pt-PT": "Escavadeiras usadas em operações de grande escala",
+        },
         "externalId": undefined,
         "key": "excavators",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with excavators preset`, () => {
           "nl-NL": "Graafmachines",
           "pt-PT": "Escavadeiras",
         },
-        "orderHint": "0.000017083829365781074397182",
+        "orderHint": "0.0000171136448452649936338",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -56,7 +70,48 @@ describe(`with excavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bagger für den Einsatz in groß angelegten Betrieb",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori utilizzati in operazioni su larga scala",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Graafmachines gebruikt in grootschalige operaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices utilisées dans les opérations à grande échelle",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Excavators used in large-scale operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras utilizadas en operaciones a gran escala",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Excavators used in large-scale operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Excavators used in large-scale operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras usadas em operações de grande escala",
+          },
+          {
+            "locale": "en-US",
+            "value": "Excavators used in large-scale operations",
+          },
+        ],
         "externalId": undefined,
         "key": "excavators",
         "metaDescription": undefined,
@@ -104,7 +159,7 @@ describe(`with excavators preset`, () => {
             "value": "Excavators",
           },
         ],
-        "orderHint": "0.000017083829365781074397182",
+        "orderHint": "0.0000171136448452649936338",
         "parent": undefined,
         "slug": [
           {

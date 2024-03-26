@@ -20,7 +20,6 @@ describe(`with z890Op preset`, () => {
           "en-AU": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
           "en-GB": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
           "en-NZ": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
-          "en-UK": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
           "en-US": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
           "es-ES": "Camión volquete fuera de carretera de alta capacidad con características especializadas para el transporte exigente de materiales.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with z890Op preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with z890Op preset`, () => {
           "en-AU": "Z890 OP Off-Highway Dump Truck",
           "en-GB": "Z890 OP Off-Highway Dump Truck",
           "en-NZ": "Z890 OP Off-Highway Dump Truck",
-          "en-UK": "Z890 OP Off-Highway Dump Truck",
           "en-US": "Z890 OP Off-Highway Dump Truck",
           "es-ES": "Z890 OP Camión volquete fuera de carretera",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with z890Op preset`, () => {
           "en-AU": "z890-op",
           "en-GB": "z890-op",
           "en-NZ": "z890-op",
-          "en-UK": "z890-op",
           "en-US": "z890-op",
           "es-ES": "z890-op",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with z890Op preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with z890Op preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with z890Op preset`, () => {
           {
             "locale": "it-IT",
             "value": "Camion ribaltabile fuoristrada ad alta capacità con caratteristiche specializzate per il trasporto esigente di materiali.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "High-capacity off-highway dump truck with specialized features for demanding material transport.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with z890Op preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with z890Op preset`, () => {
           {
             "locale": "it-IT",
             "value": "Z890 OP Camion Ribaltabile Fuoristrada",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Z890 OP Off-Highway Dump Truck",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with z890Op preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "z890-op",
-          },
-          {
-            "locale": "en-UK",
             "value": "z890-op",
           },
           {
@@ -411,7 +396,7 @@ describe(`with z890Op preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with z890Op preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

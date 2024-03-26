@@ -9,7 +9,21 @@ describe(`with articulatedDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kipper mit gelenkigen Verbindungen",
+          "en": undefined,
+          "en-AU": "Dump trucks with articulated joints",
+          "en-GB": "Dump trucks with articulated joints",
+          "en-NZ": "Dump trucks with articulated joints",
+          "en-US": "Dump trucks with articulated joints",
+          "es-ES": "Camiones volquete con articulaciones",
+          "fr": undefined,
+          "fr-FR": "Camions-bennes avec des articulations articulées",
+          "it-IT": "Camion ribaltabili con giunti articolati",
+          "nl-NL": "Kipwagens met scharnierende verbindingen",
+          "pt-PT": "Caminhões basculantes com juntas articuladas",
+        },
         "externalId": undefined,
         "key": "articulated-dump-trucks",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with articulatedDumpTrucks preset`, () => {
           "nl-NL": "Knikgestuurde Kipwagens",
           "pt-PT": "Caminhões Basculantes Articulados",
         },
-        "orderHint": "0.00001708382944959802047407",
+        "orderHint": "0.000017113644847751602265225",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with articulatedDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kipper mit gelenkigen Verbindungen",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Camion ribaltabili con giunti articolati",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kipwagens met scharnierende verbindingen",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Camions-bennes avec des articulations articulées",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Dump trucks with articulated joints",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Camiones volquete con articulaciones",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Dump trucks with articulated joints",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Dump trucks with articulated joints",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Caminhões basculantes com juntas articuladas",
+          },
+          {
+            "locale": "en-US",
+            "value": "Dump trucks with articulated joints",
+          },
+        ],
         "externalId": undefined,
         "key": "articulated-dump-trucks",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with articulatedDumpTrucks preset`, () => {
             "value": "Articulated Dump Trucks",
           },
         ],
-        "orderHint": "0.00001708382944959802047407",
+        "orderHint": "0.000017113644847751602265225",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",

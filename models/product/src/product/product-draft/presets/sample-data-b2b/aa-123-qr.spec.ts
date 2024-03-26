@@ -20,7 +20,6 @@ describe(`with aa123Qr preset`, () => {
           "en-AU": "Versatile road grader for precise leveling and grading of road surfaces.",
           "en-GB": "Versatile road grader for precise leveling and grading of road surfaces.",
           "en-NZ": "Versatile road grader for precise leveling and grading of road surfaces.",
-          "en-UK": "Versatile road grader for precise leveling and grading of road surfaces.",
           "en-US": "Versatile road grader for precise leveling and grading of road surfaces.",
           "es-ES": "Niveladora de carreteras versátil para el nivelado preciso y la nivelación de superficies de carreteras.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with aa123Qr preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with aa123Qr preset`, () => {
           "en-AU": "AA123 QR Road Grader",
           "en-GB": "AA123 QR Road Grader",
           "en-NZ": "AA123 QR Road Grader",
-          "en-UK": "AA123 QR Road Grader",
           "en-US": "AA123 QR Road Grader",
           "es-ES": "AA123 QR Niveladora de carreteras",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with aa123Qr preset`, () => {
           "en-AU": "aa123-qr",
           "en-GB": "aa123-qr",
           "en-NZ": "aa123-qr",
-          "en-UK": "aa123-qr",
           "en-US": "aa123-qr",
           "es-ES": "aa123-qr",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with aa123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with aa123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with aa123Qr preset`, () => {
           {
             "locale": "it-IT",
             "value": "Livellatrice stradale versatile per livellamento e graduazione precisi delle superfici stradali.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Versatile road grader for precise leveling and grading of road surfaces.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with aa123Qr preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with aa123Qr preset`, () => {
           {
             "locale": "it-IT",
             "value": "AA123 QR Livellatrice Stradale",
-          },
-          {
-            "locale": "en-UK",
-            "value": "AA123 QR Road Grader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with aa123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "aa123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "aa123-qr",
           },
           {
@@ -411,7 +396,7 @@ describe(`with aa123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with aa123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

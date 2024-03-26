@@ -9,7 +9,21 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Radbagger, die für den Bergbau konzipiert sind",
+          "en": undefined,
+          "en-AU": "Wheel excavators designed for mining use",
+          "en-GB": "Wheel excavators designed for mining use",
+          "en-NZ": "Wheel excavators designed for mining use",
+          "en-US": "Wheel excavators designed for mining use",
+          "es-ES": "Excavadoras de ruedas diseñadas para uso en minería",
+          "fr": undefined,
+          "fr-FR": "Excavatrices à roues conçues pour une utilisation minière",
+          "it-IT": "Escavatori su ruote progettati per uso minerario",
+          "nl-NL": "Wielladers ontworpen voor mijnbouwgebruik",
+          "pt-PT": "Escavadeiras com rodas projetadas para uso na mineração",
+        },
         "externalId": undefined,
         "key": "wheeled-excavators-for-mining",
         "metaDescription": undefined,
@@ -25,12 +39,12 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
           "en-US": "Wheeled Excavators for Mining",
           "es-ES": "Excavadoras de ruedas para minería",
           "fr": undefined,
-          "fr-FR": "Excavatrices à roues pour l&#39;exploitation minière",
+          "fr-FR": "Excavatrices à roues pour l'exploitation minière",
           "it-IT": "Escavatori su Ruote per Miniere",
           "nl-NL": "Graafmachines op Wielen voor Mijnbouw",
           "pt-PT": "Escavadeiras com Rodas para Mineração",
         },
-        "orderHint": "0.00001708382942192468814460",
+        "orderHint": "0.00001711364484959828673262",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Radbagger, die für den Bergbau konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori su ruote progettati per uso minerario",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Wielladers ontworpen voor mijnbouwgebruik",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices à roues conçues pour une utilisation minière",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Wheel excavators designed for mining use",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras de ruedas diseñadas para uso en minería",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Wheel excavators designed for mining use",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Wheel excavators designed for mining use",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras com rodas projetadas para uso na mineração",
+          },
+          {
+            "locale": "en-US",
+            "value": "Wheel excavators designed for mining use",
+          },
+        ],
         "externalId": undefined,
         "key": "wheeled-excavators-for-mining",
         "metaDescription": undefined,
@@ -82,7 +137,7 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Excavatrices à roues pour l&#39;exploitation minière",
+            "value": "Excavatrices à roues pour l'exploitation minière",
           },
           {
             "locale": "en-AU",
@@ -109,7 +164,7 @@ describe(`with wheeledExcavatorsForMining preset`, () => {
             "value": "Wheeled Excavators for Mining",
           },
         ],
-        "orderHint": "0.00001708382942192468814460",
+        "orderHint": "0.00001711364484959828673262",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",

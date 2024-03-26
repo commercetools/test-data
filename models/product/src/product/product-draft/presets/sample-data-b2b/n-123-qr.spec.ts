@@ -20,11 +20,10 @@ describe(`with n123Qr preset`, () => {
           "en-AU": "Robust quarry loader designed for efficient material handling in mining and construction.",
           "en-GB": "Robust quarry loader designed for efficient material handling in mining and construction.",
           "en-NZ": "Robust quarry loader designed for efficient material handling in mining and construction.",
-          "en-UK": "Robust quarry loader designed for efficient material handling in mining and construction.",
           "en-US": "Robust quarry loader designed for efficient material handling in mining and construction.",
           "es-ES": "Cargador de cantera resistente diseñado para la manipulación eficiente de materiales en minería y construcción.",
           "fr": undefined,
-          "fr-FR": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l&#39;exploitation minière et la construction.",
+          "fr-FR": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction.",
           "it-IT": "Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.",
           "nl-NL": "Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.",
           "pt-PT": "Carregadeira robusta para pedreiras projetada para manuseio eficiente de materiais em mineração e construção.",
@@ -48,8 +47,8 @@ describe(`with n123Qr preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with n123Qr preset`, () => {
           "en-AU": "N123 QR Quarry Loader",
           "en-GB": "N123 QR Quarry Loader",
           "en-NZ": "N123 QR Quarry Loader",
-          "en-UK": "N123 QR Quarry Loader",
           "en-US": "N123 QR Quarry Loader",
           "es-ES": "N123 QR Cargador de cantera",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with n123Qr preset`, () => {
           "en-AU": "n123-qr",
           "en-GB": "n123-qr",
           "en-NZ": "n123-qr",
-          "en-UK": "n123-qr",
           "en-US": "n123-qr",
           "es-ES": "n123-qr",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with n123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with n123Qr preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -215,16 +212,12 @@ describe(`with n123Qr preset`, () => {
             "value": "Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.",
           },
           {
-            "locale": "en-UK",
-            "value": "Robust quarry loader designed for efficient material handling in mining and construction.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.",
           },
           {
             "locale": "fr-FR",
-            "value": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l&#39;exploitation minière et la construction.",
+            "value": "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction.",
           },
           {
             "locale": "en-AU",
@@ -269,7 +262,7 @@ describe(`with n123Qr preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with n123Qr preset`, () => {
           {
             "locale": "it-IT",
             "value": "N123 QR Caricatore per Cave",
-          },
-          {
-            "locale": "en-UK",
-            "value": "N123 QR Quarry Loader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with n123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "n123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "n123-qr",
           },
           {
@@ -411,7 +396,7 @@ describe(`with n123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with n123Qr preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

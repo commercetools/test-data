@@ -42,7 +42,6 @@ const z890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('Z890 OP Geländekipplaster')
         ['it-IT']('Z890 OP Camion Ribaltabile Fuoristrada')
-        ['en-UK']('Z890 OP Off-Highway Dump Truck')
         ['nl-NL']('Z890 OP Off-Highway Dumptruck')
         ['fr-FR']('Z890 OP Camion benne tout-terrain')
         ['en-AU']('Z890 OP Off-Highway Dump Truck')
@@ -60,9 +59,6 @@ const z890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Camion ribaltabile fuoristrada ad alta capacità con caratteristiche specializzate per il trasporto esigente di materiali.'
-        )
-        ['en-UK'](
-          'High-capacity off-highway dump truck with specialized features for demanding material transport.'
         )
         ['nl-NL'](
           'Hoogcapaciteits off-highway dumptruck met gespecialiseerde functies voor veeleisend materiaaltransport.'
@@ -94,7 +90,6 @@ const z890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('z890-op')
         ['it-IT']('z890-op')
-        ['en-UK']('z890-op')
         ['nl-NL']('z890-op')
         ['fr-FR']('z890-op')
         ['en-AU']('z890-op')

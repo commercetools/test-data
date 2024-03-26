@@ -8,7 +8,12 @@ describe(`with spain preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "spain",
+            "typeId": "channel",
+          },
+        ],
         "key": "spain",
         "languages": undefined,
         "name": {
@@ -18,7 +23,6 @@ describe(`with spain preset`, () => {
           "en-AU": "Spain",
           "en-GB": "Spain",
           "en-NZ": "Spain",
-          "en-UK": "Spain",
           "en-US": "Spain",
           "es-ES": "España",
           "fr": undefined,
@@ -28,7 +32,12 @@ describe(`with spain preset`, () => {
           "pt-PT": "Espanha",
         },
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });
@@ -39,7 +48,12 @@ describe(`with spain preset`, () => {
       {
         "countries": undefined,
         "custom": undefined,
-        "distributionChannels": undefined,
+        "distributionChannels": [
+          {
+            "key": "spain",
+            "typeId": "channel",
+          },
+        ],
         "key": "spain",
         "languages": undefined,
         "name": [
@@ -50,10 +64,6 @@ describe(`with spain preset`, () => {
           {
             "locale": "it-IT",
             "value": "Spagna",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Spain",
           },
           {
             "locale": "nl-NL",
@@ -89,7 +99,12 @@ describe(`with spain preset`, () => {
           },
         ],
         "productSelections": undefined,
-        "supplyChannels": undefined,
+        "supplyChannels": [
+          {
+            "key": "eu-warehouse",
+            "typeId": "channel",
+          },
+        ],
       }
     `);
   });

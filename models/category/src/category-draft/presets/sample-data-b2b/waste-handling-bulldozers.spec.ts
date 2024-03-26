@@ -9,7 +9,21 @@ describe(`with wasteHandlingBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bulldozer, die für die Abfallbewältigung konzipiert sind",
+          "en": undefined,
+          "en-AU": "Bulldozers designed for waste handling",
+          "en-GB": "Bulldozers designed for waste handling",
+          "en-NZ": "Bulldozers designed for waste handling",
+          "en-US": "Bulldozers designed for waste handling",
+          "es-ES": "Bulldozers diseñados para el manejo de residuos",
+          "fr": undefined,
+          "fr-FR": "Bulldozers conçus pour la manutention des déchets",
+          "it-IT": "Bulldozer progettati per la gestione dei rifiuti",
+          "nl-NL": "Bulldozers ontworpen voor afvalverwerking",
+          "pt-PT": "Bulldozers projetados para manejo de resíduos",
+        },
         "externalId": undefined,
         "key": "waste-handling-bulldozers",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with wasteHandlingBulldozers preset`, () => {
           "nl-NL": "Bulldozers voor Afvalverwerking",
           "pt-PT": "Bulldozers para Manejo de Resíduos",
         },
-        "orderHint": "0.00001708382944323117492021",
+        "orderHint": "0.000017113644847491257581521",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with wasteHandlingBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bulldozer, die für die Abfallbewältigung konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Bulldozer progettati per la gestione dei rifiuti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Bulldozers ontworpen voor afvalverwerking",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Bulldozers conçus pour la manutention des déchets",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Bulldozers designed for waste handling",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Bulldozers diseñados para el manejo de residuos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Bulldozers designed for waste handling",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Bulldozers designed for waste handling",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Bulldozers projetados para manejo de resíduos",
+          },
+          {
+            "locale": "en-US",
+            "value": "Bulldozers designed for waste handling",
+          },
+        ],
         "externalId": undefined,
         "key": "waste-handling-bulldozers",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with wasteHandlingBulldozers preset`, () => {
             "value": "Waste Handling Bulldozers",
           },
         ],
-        "orderHint": "0.00001708382944323117492021",
+        "orderHint": "0.000017113644847491257581521",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",

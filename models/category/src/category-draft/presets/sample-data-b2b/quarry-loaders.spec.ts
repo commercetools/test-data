@@ -8,7 +8,21 @@ describe(`with quarryLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Lader, die in Steinbruchoperationen verwendet werden",
+          "en": undefined,
+          "en-AU": "Loaders used in quarry operations",
+          "en-GB": "Loaders used in quarry operations",
+          "en-NZ": "Loaders used in quarry operations",
+          "en-US": "Loaders used in quarry operations",
+          "es-ES": "Cargadores utilizados en operaciones de cantera",
+          "fr": undefined,
+          "fr-FR": "Chargeuses utilisées dans les opérations de carrière",
+          "it-IT": "Caricatori utilizzati in operazioni di cava",
+          "nl-NL": "Laders gebruikt in steengroeve operaties",
+          "pt-PT": "Carregadeiras usadas em operações de pedreira",
+        },
         "externalId": undefined,
         "key": "quarry-loaders",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with quarryLoaders preset`, () => {
           "nl-NL": "Laders voor Steengroeven",
           "pt-PT": "Carregadeiras de Pedreira",
         },
-        "orderHint": "0.00001708382942908348001125",
+        "orderHint": "0.000017113644847331158997483",
         "parent": {
           "key": "high-capacity-front-end-loaders",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with quarryLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Lader, die in Steinbruchoperationen verwendet werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Caricatori utilizzati in operazioni di cava",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Laders gebruikt in steengroeve operaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Chargeuses utilisées dans les opérations de carrière",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Loaders used in quarry operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Cargadores utilizados en operaciones de cantera",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Loaders used in quarry operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Loaders used in quarry operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Carregadeiras usadas em operações de pedreira",
+          },
+          {
+            "locale": "en-US",
+            "value": "Loaders used in quarry operations",
+          },
+        ],
         "externalId": undefined,
         "key": "quarry-loaders",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with quarryLoaders preset`, () => {
             "value": "Quarry Loaders",
           },
         ],
-        "orderHint": "0.00001708382942908348001125",
+        "orderHint": "0.000017113644847331158997483",
         "parent": {
           "key": "high-capacity-front-end-loaders",
           "typeId": "category",

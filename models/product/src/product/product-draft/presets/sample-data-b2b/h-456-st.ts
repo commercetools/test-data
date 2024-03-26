@@ -42,7 +42,6 @@ const h456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('H456 ST Abfallverarbeitungsbagger')
         ['it-IT']('H456 ST Bulldozer per la Gestione dei Rifiuti')
-        ['en-UK']('H456 ST Waste Handling Bulldozer')
         ['nl-NL']('H456 ST Afvalverwerkings Bulldozer')
         ['fr-FR']('H456 ST Bulldozer de manutention des déchets')
         ['en-AU']('H456 ST Waste Handling Bulldozer')
@@ -60,9 +59,6 @@ const h456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Bulldozer specializzato per la gestione efficiente dei materiali di scarto in progetti di gestione dei rifiuti.'
-        )
-        ['en-UK'](
-          'Specialized bulldozer for efficient handling of waste materials in waste management projects.'
         )
         ['nl-NL'](
           'Gespecialiseerde bulldozer voor efficiënte afvalverwerking in afvalbeheerprojecten.'
@@ -94,7 +90,6 @@ const h456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('h456-st')
         ['it-IT']('h456-st')
-        ['en-UK']('h456-st')
         ['nl-NL']('h456-st')
         ['fr-FR']('h456-st')
         ['en-AU']('h456-st')

@@ -20,12 +20,11 @@ describe(`with g123Qr preset`, () => {
           "en-AU": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
           "en-GB": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
           "en-NZ": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
-          "en-UK": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
           "en-US": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
           "es-ES": "Topadora de movimiento de tierras potente para la manipulación eficiente del terreno y la excavación.",
           "fr": undefined,
-          "fr-FR": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.",
-          "it-IT": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.",
+          "fr-FR": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation.",
+          "it-IT": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione.",
           "nl-NL": "Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.",
           "pt-PT": "Trator de esteiras poderoso para movimentação eficiente de terra e escavação.",
         },
@@ -77,7 +76,6 @@ describe(`with g123Qr preset`, () => {
           "en-AU": "G123 QR Earthmoving Bulldozer",
           "en-GB": "G123 QR Earthmoving Bulldozer",
           "en-NZ": "G123 QR Earthmoving Bulldozer",
-          "en-UK": "G123 QR Earthmoving Bulldozer",
           "en-US": "G123 QR Earthmoving Bulldozer",
           "es-ES": "G123 QR Topadora de movimiento de tierras",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with g123Qr preset`, () => {
           "en-AU": "g123-qr",
           "en-GB": "g123-qr",
           "en-NZ": "g123-qr",
-          "en-UK": "g123-qr",
           "en-US": "g123-qr",
           "es-ES": "g123-qr",
           "fr": undefined,
@@ -212,11 +209,7 @@ describe(`with g123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l&#39;escavazione.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.",
+            "value": "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione.",
           },
           {
             "locale": "nl-NL",
@@ -224,7 +217,7 @@ describe(`with g123Qr preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l&#39;excavation.",
+            "value": "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation.",
           },
           {
             "locale": "en-AU",
@@ -299,10 +292,6 @@ describe(`with g123Qr preset`, () => {
             "value": "G123 QR Bulldozer per Movimento Terra",
           },
           {
-            "locale": "en-UK",
-            "value": "G123 QR Earthmoving Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "G123 QR Aardeverzet Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with g123Qr preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "g123-qr",
-          },
-          {
-            "locale": "en-UK",
             "value": "g123-qr",
           },
           {

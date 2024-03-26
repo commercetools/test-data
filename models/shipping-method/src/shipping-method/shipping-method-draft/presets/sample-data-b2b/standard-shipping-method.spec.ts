@@ -10,7 +10,19 @@ describe(`with standardShippingMethod preset`, () => {
         "custom": undefined,
         "isDefault": true,
         "key": "standard-shipping-method",
-        "localizedDescription": undefined,
+        "localizedDescription": {
+          "de": undefined,
+          "de-DE": "Standardversandmethode",
+          "en": undefined,
+          "en-GB": "Standard shipping method",
+          "en-US": "Standard shipping method",
+          "es-ES": "Método de envío estándar",
+          "fr": undefined,
+          "fr-FR": "Méthode d'expédition standard",
+          "it-IT": "Metodo di spedizione standard",
+          "nl-NL": "Standaard verzendmethode",
+          "pt-PT": "Método de envio padrão",
+        },
         "localizedName": undefined,
         "name": "Standard shipping method",
         "predicate": undefined,
@@ -22,7 +34,10 @@ describe(`with standardShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "EUR",
@@ -30,7 +45,10 @@ describe(`with standardShippingMethod preset`, () => {
                 "tiers": [],
               },
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "GBP",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "GBP",
@@ -46,7 +64,10 @@ describe(`with standardShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "USD",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "USD",
@@ -72,7 +93,40 @@ describe(`with standardShippingMethod preset`, () => {
         "custom": undefined,
         "isDefault": true,
         "key": "standard-shipping-method",
-        "localizedDescription": undefined,
+        "localizedDescription": [
+          {
+            "locale": "de-DE",
+            "value": "Standardversandmethode",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Standard shipping method",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Metodo di spedizione standard",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Standaard verzendmethode",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Méthode d'expédition standard",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Método de envío estándar",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Método de envio padrão",
+          },
+          {
+            "locale": "en-US",
+            "value": "Standard shipping method",
+          },
+        ],
         "localizedName": undefined,
         "name": "Standard shipping method",
         "predicate": undefined,
@@ -84,7 +138,10 @@ describe(`with standardShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "EUR",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "EUR",
@@ -92,7 +149,10 @@ describe(`with standardShippingMethod preset`, () => {
                 "tiers": [],
               },
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "GBP",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "GBP",
@@ -108,7 +168,10 @@ describe(`with standardShippingMethod preset`, () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
+                "freeAbove": {
+                  "centAmount": 5000,
+                  "currencyCode": "USD",
+                },
                 "price": {
                   "centAmount": 500,
                   "currencyCode": "USD",

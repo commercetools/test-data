@@ -8,7 +8,21 @@ describe(`with towerCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kräne, die für den Hochhausbau geeignet sind",
+          "en": undefined,
+          "en-AU": "Cranes suitable for high-rise construction",
+          "en-GB": "Cranes suitable for high-rise construction",
+          "en-NZ": "Cranes suitable for high-rise construction",
+          "en-US": "Cranes suitable for high-rise construction",
+          "es-ES": "Gruas adecuadas para la construcción de rascacielos",
+          "fr": undefined,
+          "fr-FR": "Grues adaptées à la construction en hauteur",
+          "it-IT": "Gru adatte per la costruzione di edifici alti",
+          "nl-NL": "Kranen geschikt voor hoogbouw",
+          "pt-PT": "Guindastes adequados para construção de edifícios altos",
+        },
         "externalId": undefined,
         "key": "tower-cranes",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with towerCranes preset`, () => {
           "nl-NL": "Torenkranen",
           "pt-PT": "Guindastes de Torre",
         },
-        "orderHint": "0.00001708382948409947515103",
+        "orderHint": "0.000017113644847601298494328",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with towerCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kräne, die für den Hochhausbau geeignet sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Gru adatte per la costruzione di edifici alti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kranen geschikt voor hoogbouw",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Grues adaptées à la construction en hauteur",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Cranes suitable for high-rise construction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Gruas adecuadas para la construcción de rascacielos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Cranes suitable for high-rise construction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Cranes suitable for high-rise construction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Guindastes adequados para construção de edifícios altos",
+          },
+          {
+            "locale": "en-US",
+            "value": "Cranes suitable for high-rise construction",
+          },
+        ],
         "externalId": undefined,
         "key": "tower-cranes",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with towerCranes preset`, () => {
             "value": "Tower Cranes",
           },
         ],
-        "orderHint": "0.00001708382948409947515103",
+        "orderHint": "0.000017113644847601298494328",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",

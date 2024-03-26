@@ -20,7 +20,6 @@ describe(`with pp234Wx preset`, () => {
           "en-AU": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
           "en-GB": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
           "en-NZ": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
-          "en-UK": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
           "en-US": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
           "es-ES": "Excavadora de ruedas especializada para operaciones eficientes en vías férreas.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with pp234Wx preset`, () => {
           "en-AU": "PP234 WX Railroad Railroad Wheeled Excavator",
           "en-GB": "PP234 WX Railroad Railroad Wheeled Excavator",
           "en-NZ": "PP234 WX Railroad Railroad Wheeled Excavator",
-          "en-UK": "PP234 WX Railroad Railroad Wheeled Excavator",
           "en-US": "PP234 WX Railroad Railroad Wheeled Excavator",
           "es-ES": "PP234 WX Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with pp234Wx preset`, () => {
           "en-AU": "pp234-wx",
           "en-GB": "pp234-wx",
           "en-NZ": "pp234-wx",
-          "en-UK": "pp234-wx",
           "en-US": "pp234-wx",
           "es-ES": "pp234-wx",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with pp234Wx preset`, () => {
             "value": "Escavatore su ruote specializzato per ferrovie per operazioni efficienti sui binari ferroviari.",
           },
           {
-            "locale": "en-UK",
-            "value": "Specialized railroad wheeled excavator for efficient operations on railway tracks.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Gespecialiseerde spoorweg wiellader graafmachine voor efficiënte operaties op spoorwegen.",
           },
@@ -299,10 +292,6 @@ describe(`with pp234Wx preset`, () => {
             "value": "PP234 WX Escavatore su Ruote per Ferrovie",
           },
           {
-            "locale": "en-UK",
-            "value": "PP234 WX Railroad Railroad Wheeled Excavator",
-          },
-          {
             "locale": "nl-NL",
             "value": "PP234 WX Spoorweg Wiellader Graafmachine",
           },
@@ -349,10 +338,6 @@ describe(`with pp234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "pp234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "pp234-wx",
           },
           {

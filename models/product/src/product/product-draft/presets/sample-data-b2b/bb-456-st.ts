@@ -42,7 +42,6 @@ const bb456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('BB456 ST Flughafenplanierer')
         ['it-IT']('BB456 ST Livellatrice per Aeroporti')
-        ['en-UK']('BB456 ST Airport Grader')
         ['nl-NL']('BB456 ST Luchthavennivelleermachine')
         ['fr-FR']('BB456 ST Niveleuse aéroportuaire')
         ['en-AU']('BB456 ST Airport Grader')
@@ -61,14 +60,11 @@ const bb456St = (): TProductDraftBuilder =>
         ['it-IT'](
           'Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.'
         )
-        ['en-UK'](
-          'High-performance airport grader for efficient grading and maintenance of airport runways.'
-        )
         ['nl-NL'](
           'Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.'
         )
         ['fr-FR'](
-          'Niveleuse aéroportuaire haute performance pour le nivellement efficace et l&#39;entretien des pistes d&#39;aéroport.'
+          "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport."
         )
         ['en-AU'](
           'High-performance airport grader for efficient grading and maintenance of airport runways.'
@@ -94,7 +90,6 @@ const bb456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('bb456-st')
         ['it-IT']('bb456-st')
-        ['en-UK']('bb456-st')
         ['nl-NL']('bb456-st')
         ['fr-FR']('bb456-st')
         ['en-AU']('bb456-st')

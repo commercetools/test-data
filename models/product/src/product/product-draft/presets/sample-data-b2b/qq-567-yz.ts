@@ -42,7 +42,6 @@ const qq567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('QQ567 YZ Railroad Schienenradbagger')
         ['it-IT']('QQ567 YZ Escavatore su Ruote per Ferrovie')
-        ['en-UK']('QQ567 YZ Railroad Railroad Wheeled Excavator')
         ['nl-NL']('QQ567 YZ Spoorweg Wiellader Graafmachine')
         ['fr-FR']('QQ567 YZ Railroad Excavatrice sur roues pour chemin de fer')
         ['en-AU']('QQ567 YZ Railroad Railroad Wheeled Excavator')
@@ -60,9 +59,6 @@ const qq567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Escavatore su ruote per ferrovie ad alta capacità con caratteristiche avanzate per la costruzione efficiente di ferrovie.'
-        )
-        ['en-UK'](
-          'High-capacity railroad wheeled excavator with advanced features for efficient railway construction.'
         )
         ['nl-NL'](
           'Hoogcapaciteits spoorweg wiellader graafmachine met geavanceerde functies voor efficiënte spoorwegbouw.'
@@ -94,7 +90,6 @@ const qq567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('qq567-yz')
         ['it-IT']('qq567-yz')
-        ['en-UK']('qq567-yz')
         ['nl-NL']('qq567-yz')
         ['fr-FR']('qq567-yz')
         ['en-AU']('qq567-yz')

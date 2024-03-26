@@ -51,9 +51,9 @@ const pistonRingSet = (): TProductDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Dichtet den Verbrennungsraum ab und reguliert das Öl.')
-        ['it-IT']('Sigilla la camera di combustione e regola l&#39;olio.')
+        ['it-IT']("Sigilla la camera di combustione e regola l'olio.")
         ['nl-NL']('Dicht de verbrandingskamer af en reguleert de olie.')
-        ['fr-FR']('Scelle la chambre de combustion et régule l&#39;huile.')
+        ['fr-FR']("Scelle la chambre de combustion et régule l'huile.")
         ['es-ES']('Sella la cámara de combustión y regula el aceite.')
         ['pt-PT']('Veda a câmara de combustão e regula o óleo.')
         ['en-US']('Seals the combustion chamber and regulates oil.')

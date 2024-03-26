@@ -42,7 +42,6 @@ const s567Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('S567 UV Amphibienbagger')
         ['it-IT']('S567 UV Escavatore Anfibio')
-        ['en-UK']('S567 UV Amphibious Excavator')
         ['nl-NL']('S567 UV Amfibische Graafmachine')
         ['fr-FR']('S567 UV Excavateur amphibie')
         ['en-AU']('S567 UV Amphibious Excavator')
@@ -61,14 +60,11 @@ const s567Uv = (): TProductDraftBuilder =>
         ['it-IT'](
           'Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.'
         )
-        ['en-UK'](
-          'High-capacity amphibious excavator for efficient land and water excavation applications.'
-        )
         ['nl-NL'](
           'Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.'
         )
         ['fr-FR'](
-          'Excavateur amphibie haute capacité pour des applications d&#39;excavation efficaces sur terre et dans l&#39;eau.'
+          "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau."
         )
         ['en-AU'](
           'High-capacity amphibious excavator for efficient land and water excavation applications.'
@@ -94,7 +90,6 @@ const s567Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('s567-uv')
         ['it-IT']('s567-uv')
-        ['en-UK']('s567-uv')
         ['nl-NL']('s567-uv')
         ['fr-FR']('s567-uv')
         ['en-AU']('s567-uv')

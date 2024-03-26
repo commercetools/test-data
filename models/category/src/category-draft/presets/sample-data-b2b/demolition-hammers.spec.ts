@@ -8,7 +8,21 @@ describe(`with demolitionHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Hämmer, die für Abbrucharbeiten verwendet werden",
+          "en": undefined,
+          "en-AU": "Hammers used for demolition tasks",
+          "en-GB": "Hammers used for demolition tasks",
+          "en-NZ": "Hammers used for demolition tasks",
+          "en-US": "Hammers used for demolition tasks",
+          "es-ES": "Martillos utilizados para tareas de demolición",
+          "fr": undefined,
+          "fr-FR": "Marteaux utilisés pour des tâches de démolition",
+          "it-IT": "Martelli utilizzati per compiti di demolizione",
+          "nl-NL": "Hamers gebruikt voor sloopwerkzaamheden",
+          "pt-PT": "Martelos usados para tarefas de demolição",
+        },
         "externalId": undefined,
         "key": "demolition-hammers",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with demolitionHammers preset`, () => {
           "nl-NL": "Sloophamers",
           "pt-PT": "Martelos Demolidores",
         },
-        "orderHint": "0.00001708382950462763451332",
+        "orderHint": "0.00001711364484762327979076",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with demolitionHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Hämmer, die für Abbrucharbeiten verwendet werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Martelli utilizzati per compiti di demolizione",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Hamers gebruikt voor sloopwerkzaamheden",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Marteaux utilisés pour des tâches de démolition",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Hammers used for demolition tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Martillos utilizados para tareas de demolición",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Hammers used for demolition tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Hammers used for demolition tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Martelos usados para tarefas de demolição",
+          },
+          {
+            "locale": "en-US",
+            "value": "Hammers used for demolition tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "demolition-hammers",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with demolitionHammers preset`, () => {
             "value": "Demolition Hammers",
           },
         ],
-        "orderHint": "0.00001708382950462763451332",
+        "orderHint": "0.00001711364484762327979076",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",

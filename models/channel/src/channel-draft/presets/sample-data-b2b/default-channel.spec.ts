@@ -18,7 +18,6 @@ describe(`with defaultChannel preset`, () => {
           "en-AU": "Default",
           "en-GB": "Default",
           "en-NZ": "Default",
-          "en-UK": "Default",
           "en-US": "Default",
           "es-ES": "Predeterminado",
           "fr": undefined,
@@ -52,10 +51,6 @@ describe(`with defaultChannel preset`, () => {
           {
             "locale": "it-IT",
             "value": "Predefinito",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Default",
           },
           {
             "locale": "nl-NL",

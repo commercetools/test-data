@@ -9,11 +9,11 @@ const approver = (): TAssociateRoleDraftBuilder =>
     .buyerAssignable(true)
     .permissions([
       'UpdateApprovalFlows',
-      'ViewOthersCarts',
       'CreateApprovalRules',
-      'ViewOthersOrders',
-      'UpdateOthersCarts',
       'UpdateApprovalRules',
+      'UpdateOthersCarts',
+      'ViewOthersCarts',
+      'ViewOthersOrders',
     ]);
 
 export default approver;

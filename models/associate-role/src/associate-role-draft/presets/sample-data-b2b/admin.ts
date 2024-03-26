@@ -8,22 +8,22 @@ const admin = (): TAssociateRoleDraftBuilder =>
     .name('Admin')
     .buyerAssignable(true)
     .permissions([
-      'UpdateAssociates',
       'UpdateApprovalFlows',
-      'ViewOthersCarts',
-      'DeclineOthersQuotes',
       'CreateApprovalRules',
-      'UpdateBusinessUnitDetails',
-      'ViewOthersOrders',
+      'UpdateApprovalRules',
       'AddChildUnits',
-      'UpdateOthersOrders',
-      'UpdateOthersCarts',
-      'AcceptOthersQuotes',
-      'ViewOthersQuotes',
+      'UpdateAssociates',
+      'UpdateBusinessUnitDetails',
       'UpdateParentUnit',
+      'UpdateOthersCarts',
+      'ViewOthersCarts',
+      'UpdateOthersOrders',
+      'ViewOthersOrders',
+      'AcceptOthersQuotes',
+      'DeclineOthersQuotes',
+      'ViewOthersQuotes',
       'UpdateOthersQuoteRequests',
       'ViewOthersQuoteRequests',
-      'UpdateApprovalRules',
     ]);
 
 export default admin;

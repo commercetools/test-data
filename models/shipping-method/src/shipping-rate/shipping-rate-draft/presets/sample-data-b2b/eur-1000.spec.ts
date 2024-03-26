@@ -6,7 +6,10 @@ describe(`with eur1000 preset`, () => {
     const eur1000Preset = eur1000().build<TShippingRateDraft>();
     expect(eur1000Preset).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 10000,
+          "currencyCode": "EUR",
+        },
         "price": {
           "centAmount": 1000,
           "currencyCode": "EUR",
@@ -20,7 +23,10 @@ describe(`with eur1000 preset`, () => {
     const eur1000PresetGraphql = eur1000().buildGraphql<TShippingRateDraft>();
     expect(eur1000PresetGraphql).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 10000,
+          "currencyCode": "EUR",
+        },
         "price": {
           "centAmount": 1000,
           "currencyCode": "EUR",

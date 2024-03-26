@@ -20,11 +20,10 @@ describe(`with jj234Wx preset`, () => {
           "en-AU": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
           "en-GB": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
           "en-NZ": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
-          "en-UK": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
           "en-US": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
           "es-ES": "Compactador de vertedero de alta capacidad para la compactación eficiente de residuos en vertederos.",
           "fr": undefined,
-          "fr-FR": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d&#39;enfouissement.",
+          "fr-FR": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement.",
           "it-IT": "Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.",
           "nl-NL": "Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.",
           "pt-PT": "Compactador de aterro de alta capacidade para compactação eficiente de resíduos em aterros sanitários.",
@@ -77,7 +76,6 @@ describe(`with jj234Wx preset`, () => {
           "en-AU": "JJ234 WX Landfill Compactor",
           "en-GB": "JJ234 WX Landfill Compactor",
           "en-NZ": "JJ234 WX Landfill Compactor",
-          "en-UK": "JJ234 WX Landfill Compactor",
           "en-US": "JJ234 WX Landfill Compactor",
           "es-ES": "JJ234 WX Compactador de vertedero",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with jj234Wx preset`, () => {
           "en-AU": "jj234-wx",
           "en-GB": "jj234-wx",
           "en-NZ": "jj234-wx",
-          "en-UK": "jj234-wx",
           "en-US": "jj234-wx",
           "es-ES": "jj234-wx",
           "fr": undefined,
@@ -215,16 +212,12 @@ describe(`with jj234Wx preset`, () => {
             "value": "Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-capacity landfill compactor for efficient compaction of waste in landfill sites.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.",
           },
           {
             "locale": "fr-FR",
-            "value": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d&#39;enfouissement.",
+            "value": "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement.",
           },
           {
             "locale": "en-AU",
@@ -299,10 +292,6 @@ describe(`with jj234Wx preset`, () => {
             "value": "JJ234 WX Compattatore per Discariche",
           },
           {
-            "locale": "en-UK",
-            "value": "JJ234 WX Landfill Compactor",
-          },
-          {
             "locale": "nl-NL",
             "value": "JJ234 WX Stortplaatsverdichter",
           },
@@ -349,10 +338,6 @@ describe(`with jj234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "jj234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "jj234-wx",
           },
           {

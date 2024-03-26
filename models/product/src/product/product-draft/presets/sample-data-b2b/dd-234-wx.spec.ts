@@ -20,7 +20,6 @@ describe(`with dd234Wx preset`, () => {
           "en-AU": "Precision fine grader for meticulous finishing and grading of surfaces.",
           "en-GB": "Precision fine grader for meticulous finishing and grading of surfaces.",
           "en-NZ": "Precision fine grader for meticulous finishing and grading of surfaces.",
-          "en-UK": "Precision fine grader for meticulous finishing and grading of surfaces.",
           "en-US": "Precision fine grader for meticulous finishing and grading of surfaces.",
           "es-ES": "Niveladora fina de precisión para un acabado meticuloso y la nivelación de superficies.",
           "fr": undefined,
@@ -48,8 +47,8 @@ describe(`with dd234Wx preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -77,7 +76,6 @@ describe(`with dd234Wx preset`, () => {
           "en-AU": "DD234 WX Fine Grader",
           "en-GB": "DD234 WX Fine Grader",
           "en-NZ": "DD234 WX Fine Grader",
-          "en-UK": "DD234 WX Fine Grader",
           "en-US": "DD234 WX Fine Grader",
           "es-ES": "DD234 WX Niveladora fina",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with dd234Wx preset`, () => {
           "en-AU": "dd234-wx",
           "en-GB": "dd234-wx",
           "en-NZ": "dd234-wx",
-          "en-UK": "dd234-wx",
           "en-US": "dd234-wx",
           "es-ES": "dd234-wx",
           "fr": undefined,
@@ -133,8 +130,8 @@ describe(`with dd234Wx preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -170,8 +167,8 @@ describe(`with dd234Wx preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -213,10 +210,6 @@ describe(`with dd234Wx preset`, () => {
           {
             "locale": "it-IT",
             "value": "Livellatrice fine di precisione per finiture meticolose e graduazione di superfici.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Precision fine grader for meticulous finishing and grading of surfaces.",
           },
           {
             "locale": "nl-NL",
@@ -269,7 +262,7 @@ describe(`with dd234Wx preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -297,10 +290,6 @@ describe(`with dd234Wx preset`, () => {
           {
             "locale": "it-IT",
             "value": "DD234 WX Livellatrice Fine",
-          },
-          {
-            "locale": "en-UK",
-            "value": "DD234 WX Fine Grader",
           },
           {
             "locale": "nl-NL",
@@ -349,10 +338,6 @@ describe(`with dd234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "dd234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "dd234-wx",
           },
           {
@@ -411,7 +396,7 @@ describe(`with dd234Wx preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -445,7 +430,7 @@ describe(`with dd234Wx preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

@@ -8,7 +8,21 @@ describe(`with fineGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Motorgrader für feine Gradaufgaben",
+          "en": undefined,
+          "en-AU": "Motor graders for fine grading tasks",
+          "en-GB": "Motor graders for fine grading tasks",
+          "en-NZ": "Motor graders for fine grading tasks",
+          "en-US": "Motor graders for fine grading tasks",
+          "es-ES": "Motoniveladoras para tareas de nivelación fina",
+          "fr": undefined,
+          "fr-FR": "Niveleuses pour des tâches de nivellement fines",
+          "it-IT": "Livellatrici motorizzate per compiti di livellamento fine",
+          "nl-NL": "Motorgraders voor fijn graderingswerk",
+          "pt-PT": "Motoniveladoras para tarefas de nivelamento fino",
+        },
         "externalId": undefined,
         "key": "fine-graders",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with fineGraders preset`, () => {
           "nl-NL": "Fijne Graders",
           "pt-PT": "Motoniveladoras Finas",
         },
-        "orderHint": "0.00001708382946805785223058",
+        "orderHint": "0.000017113644847541613522016",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with fineGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Motorgrader für feine Gradaufgaben",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Livellatrici motorizzate per compiti di livellamento fine",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Motorgraders voor fijn graderingswerk",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Niveleuses pour des tâches de nivellement fines",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Motor graders for fine grading tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Motoniveladoras para tareas de nivelación fina",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Motor graders for fine grading tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Motor graders for fine grading tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Motoniveladoras para tarefas de nivelamento fino",
+          },
+          {
+            "locale": "en-US",
+            "value": "Motor graders for fine grading tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "fine-graders",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with fineGraders preset`, () => {
             "value": "Fine Graders",
           },
         ],
-        "orderHint": "0.00001708382946805785223058",
+        "orderHint": "0.000017113644847541613522016",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",

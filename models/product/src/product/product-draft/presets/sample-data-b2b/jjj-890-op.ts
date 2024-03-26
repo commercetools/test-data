@@ -42,7 +42,6 @@ const jjj890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('JJJ890 OP Rammpfahlhammer')
         ['it-IT']('JJJ890 OP Martello per Pali')
-        ['en-UK']('JJJ890 OP Piling Hammer')
         ['nl-NL']('JJJ890 OP Heihamer')
         ['fr-FR']('JJJ890 OP Marteau de battage')
         ['en-AU']('JJJ890 OP Piling Hammer')
@@ -61,14 +60,11 @@ const jjj890Op = (): TProductDraftBuilder =>
         ['it-IT'](
           'Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.'
         )
-        ['en-UK'](
-          'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
-        )
         ['nl-NL'](
           'Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.'
         )
         ['fr-FR'](
-          'Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d&#39;infrastructure.'
+          "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure."
         )
         ['en-AU'](
           'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
@@ -94,7 +90,6 @@ const jjj890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('jjj890-op')
         ['it-IT']('jjj890-op')
-        ['en-UK']('jjj890-op')
         ['nl-NL']('jjj890-op')
         ['fr-FR']('jjj890-op')
         ['en-AU']('jjj890-op')

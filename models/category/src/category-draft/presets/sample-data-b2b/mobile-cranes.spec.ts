@@ -8,7 +8,21 @@ describe(`with mobileCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Vielseitige Kräne mit Mobilität für verschiedene Aufgaben",
+          "en": undefined,
+          "en-AU": "Versatile cranes with mobility for various tasks",
+          "en-GB": "Versatile cranes with mobility for various tasks",
+          "en-NZ": "Versatile cranes with mobility for various tasks",
+          "en-US": "Versatile cranes with mobility for various tasks",
+          "es-ES": "Gruas versátiles con movilidad para diversas tareas",
+          "fr": undefined,
+          "fr-FR": "Grues polyvalentes avec mobilité pour diverses tâches",
+          "it-IT": "Gru versatili con mobilità per vari compiti",
+          "nl-NL": "Veelzijdige kranen met mobiliteit voor diverse taken",
+          "pt-PT": "Guindastes versáteis com mobilidade para várias tarefas",
+        },
         "externalId": undefined,
         "key": "mobile-cranes",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with mobileCranes preset`, () => {
           "nl-NL": "Mobiele Kranen",
           "pt-PT": "Guindastes Móveis",
         },
-        "orderHint": "0.000017083829487202030641779",
+        "orderHint": "0.000017113644847721851389614",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with mobileCranes preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Vielseitige Kräne mit Mobilität für verschiedene Aufgaben",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Gru versatili con mobilità per vari compiti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Veelzijdige kranen met mobiliteit voor diverse taken",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Grues polyvalentes avec mobilité pour diverses tâches",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Versatile cranes with mobility for various tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Gruas versátiles con movilidad para diversas tareas",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Versatile cranes with mobility for various tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Versatile cranes with mobility for various tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Guindastes versáteis com mobilidade para várias tarefas",
+          },
+          {
+            "locale": "en-US",
+            "value": "Versatile cranes with mobility for various tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "mobile-cranes",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with mobileCranes preset`, () => {
             "value": "Mobile Cranes",
           },
         ],
-        "orderHint": "0.000017083829487202030641779",
+        "orderHint": "0.000017113644847721851389614",
         "parent": {
           "key": "heavy-duty-construction-cranes",
           "typeId": "category",

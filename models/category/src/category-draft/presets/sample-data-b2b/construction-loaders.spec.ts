@@ -9,7 +9,21 @@ describe(`with constructionLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Lader, die für Bauaufgaben konzipiert sind",
+          "en": undefined,
+          "en-AU": "Loaders designed for construction tasks",
+          "en-GB": "Loaders designed for construction tasks",
+          "en-NZ": "Loaders designed for construction tasks",
+          "en-US": "Loaders designed for construction tasks",
+          "es-ES": "Cargadores diseñados para tareas de construcción",
+          "fr": undefined,
+          "fr-FR": "Chargeuses conçues pour les tâches de construction",
+          "it-IT": "Caricatori progettati per compiti di costruzione",
+          "nl-NL": "Laders ontworpen voor bouwtaken",
+          "pt-PT": "Carregadeiras projetadas para tarefas de construção",
+        },
         "externalId": undefined,
         "key": "construction-loaders",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with constructionLoaders preset`, () => {
           "nl-NL": "Bouwladers",
           "pt-PT": "Carregadeiras de Construção",
         },
-        "orderHint": "0.000017083829432041760914541",
+        "orderHint": "0.0000171136448475727245821",
         "parent": {
           "key": "high-capacity-front-end-loaders",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with constructionLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Lader, die für Bauaufgaben konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Caricatori progettati per compiti di costruzione",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Laders ontworpen voor bouwtaken",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Chargeuses conçues pour les tâches de construction",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Loaders designed for construction tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Cargadores diseñados para tareas de construcción",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Loaders designed for construction tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Loaders designed for construction tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Carregadeiras projetadas para tarefas de construção",
+          },
+          {
+            "locale": "en-US",
+            "value": "Loaders designed for construction tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "construction-loaders",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with constructionLoaders preset`, () => {
             "value": "Construction Loaders",
           },
         ],
-        "orderHint": "0.000017083829432041760914541",
+        "orderHint": "0.0000171136448475727245821",
         "parent": {
           "key": "high-capacity-front-end-loaders",
           "typeId": "category",

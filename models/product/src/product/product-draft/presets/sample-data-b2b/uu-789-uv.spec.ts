@@ -20,7 +20,6 @@ describe(`with uu789Uv preset`, () => {
           "en-AU": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
           "en-GB": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
           "en-NZ": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
-          "en-UK": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
           "en-US": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
           "es-ES": "Grúa móvil compacta adecuada para una variedad de tareas de elevación con facilidad de movilidad.",
           "fr": undefined,
@@ -62,8 +61,8 @@ describe(`with uu789Uv preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -91,7 +90,6 @@ describe(`with uu789Uv preset`, () => {
           "en-AU": "UU789 UV Mobile Crane for Versatility",
           "en-GB": "UU789 UV Mobile Crane for Versatility",
           "en-NZ": "UU789 UV Mobile Crane for Versatility",
-          "en-UK": "UU789 UV Mobile Crane for Versatility",
           "en-US": "UU789 UV Mobile Crane for Versatility",
           "es-ES": "UU789 UV Grúa móvil para versatilidad",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with uu789Uv preset`, () => {
           "en-AU": "uu789-uv",
           "en-GB": "uu789-uv",
           "en-NZ": "uu789-uv",
-          "en-UK": "uu789-uv",
           "en-US": "uu789-uv",
           "es-ES": "uu789-uv",
           "fr": undefined,
@@ -161,8 +158,8 @@ describe(`with uu789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -212,8 +209,8 @@ describe(`with uu789Uv preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -255,10 +252,6 @@ describe(`with uu789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "Gru mobile compatta adatta per una varietà di compiti di sollevamento con facilità di mobilità.",
-          },
-          {
-            "locale": "en-UK",
-            "value": "Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.",
           },
           {
             "locale": "nl-NL",
@@ -311,7 +304,7 @@ describe(`with uu789Uv preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -339,10 +332,6 @@ describe(`with uu789Uv preset`, () => {
           {
             "locale": "it-IT",
             "value": "UU789 UV Gru Mobile per Versatilità",
-          },
-          {
-            "locale": "en-UK",
-            "value": "UU789 UV Mobile Crane for Versatility",
           },
           {
             "locale": "nl-NL",
@@ -391,10 +380,6 @@ describe(`with uu789Uv preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "uu789-uv",
-          },
-          {
-            "locale": "en-UK",
             "value": "uu789-uv",
           },
           {
@@ -453,7 +438,7 @@ describe(`with uu789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -487,7 +472,7 @@ describe(`with uu789Uv preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

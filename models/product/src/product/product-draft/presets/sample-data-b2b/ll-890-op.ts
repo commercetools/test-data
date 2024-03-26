@@ -42,7 +42,6 @@ const ll890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('LL890 OP Deponie-Verdichter')
         ['it-IT']('LL890 OP Compattatore per Discariche')
-        ['en-UK']('LL890 OP Landfill Compactor')
         ['nl-NL']('LL890 OP Stortplaatsverdichter')
         ['fr-FR']('LL890 OP Compacteur de décharge')
         ['en-AU']('LL890 OP Landfill Compactor')
@@ -60,9 +59,6 @@ const ll890Op = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Compattatore per discariche versatile per varie applicazioni di compattazione dei rifiuti.'
-        )
-        ['en-UK'](
-          'Versatile landfill compactor for various waste compaction applications.'
         )
         ['nl-NL'](
           'Veelzijdige stortplaatsverdichter voor diverse afvalverdichtingstoepassingen.'
@@ -94,7 +90,6 @@ const ll890Op = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('ll890-op')
         ['it-IT']('ll890-op')
-        ['en-UK']('ll890-op')
         ['nl-NL']('ll890-op')
         ['fr-FR']('ll890-op')
         ['en-AU']('ll890-op')

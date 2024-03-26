@@ -42,7 +42,6 @@ const hh456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('HH456 ST Pneumatische Walze')
         ['it-IT']('HH456 ST Rullo Pneumatico')
-        ['en-UK']('HH456 ST Pneumatic Roller')
         ['nl-NL']('HH456 ST Pneumatische Wals')
         ['fr-FR']('HH456 ST Rouleau pneumatique')
         ['en-AU']('HH456 ST Pneumatic Roller')
@@ -60,9 +59,6 @@ const hh456St = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Rullo pneumatico versatile per la compattazione efficace di varie superfici.'
-        )
-        ['en-UK'](
-          'Versatile pneumatic roller for effective compaction of various surfaces.'
         )
         ['nl-NL'](
           'Veelzijdige pneumatische wals voor effectieve verdichting van diverse oppervlakken.'
@@ -94,7 +90,6 @@ const hh456St = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('hh456-st')
         ['it-IT']('hh456-st')
-        ['en-UK']('hh456-st')
         ['nl-NL']('hh456-st')
         ['fr-FR']('hh456-st')
         ['en-AU']('hh456-st')

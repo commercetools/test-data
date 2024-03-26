@@ -42,7 +42,6 @@ const e567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('E567 YZ Holzlader')
         ['it-IT']('E567 YZ Caricatore di Tronchi')
-        ['en-UK']('E567 YZ Log Loader')
         ['nl-NL']('E567 YZ Boomlader')
         ['fr-FR']('E567 YZ Chargeur de bûches')
         ['en-AU']('E567 YZ Log Loader')
@@ -60,9 +59,6 @@ const e567Yz = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Caricatore di tronchi avanzato con controllo di precisione per la manipolazione efficiente di tronchi in applicazioni forestali.'
-        )
-        ['en-UK'](
-          'Advanced log loader with precision control for efficient log handling in forestry applications.'
         )
         ['nl-NL'](
           'Geavanceerde boomlader met precisiecontrole voor efficiënte boomstamhantering in bosbouwtoepassingen.'
@@ -94,7 +90,6 @@ const e567Yz = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('e567-yz')
         ['it-IT']('e567-yz')
-        ['en-UK']('e567-yz')
         ['nl-NL']('e567-yz')
         ['fr-FR']('e567-yz')
         ['en-AU']('e567-yz')

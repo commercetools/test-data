@@ -8,7 +8,21 @@ describe(`with largeBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bulldozer im Großraumbagger- und Baubereich",
+          "en": undefined,
+          "en-AU": "Bulldozers in large-scale earthmoving and construction",
+          "en-GB": "Bulldozers in large-scale earthmoving and construction",
+          "en-NZ": "Bulldozers in large-scale earthmoving and construction",
+          "en-US": "Bulldozers in large-scale earthmoving and construction",
+          "es-ES": "Bulldozers en movimiento de tierras y construcción a gran escala",
+          "fr": undefined,
+          "fr-FR": "Bulldozers pour les travaux de terrassement et de construction à grande échelle",
+          "it-IT": "Bulldozer per movimento terra e costruzioni su larga scala",
+          "nl-NL": "Bulldozers in grootschalige grondverzet- en bouwprojecten",
+          "pt-PT": "Bulldozers em movimentação de terra e construção de grande escala",
+        },
         "externalId": undefined,
         "key": "large-bulldozers",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with largeBulldozers preset`, () => {
           "nl-NL": "Bulldozers",
           "pt-PT": "Bulldozers",
         },
-        "orderHint": "0.000017083829373511975137352",
+        "orderHint": "0.000017113644845311689458124",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -57,7 +71,48 @@ describe(`with largeBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bulldozer im Großraumbagger- und Baubereich",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Bulldozer per movimento terra e costruzioni su larga scala",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Bulldozers in grootschalige grondverzet- en bouwprojecten",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Bulldozers pour les travaux de terrassement et de construction à grande échelle",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Bulldozers in large-scale earthmoving and construction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Bulldozers en movimiento de tierras y construcción a gran escala",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Bulldozers in large-scale earthmoving and construction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Bulldozers in large-scale earthmoving and construction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Bulldozers em movimentação de terra e construção de grande escala",
+          },
+          {
+            "locale": "en-US",
+            "value": "Bulldozers in large-scale earthmoving and construction",
+          },
+        ],
         "externalId": undefined,
         "key": "large-bulldozers",
         "metaDescription": undefined,
@@ -105,7 +160,7 @@ describe(`with largeBulldozers preset`, () => {
             "value": "Bulldozers",
           },
         ],
-        "orderHint": "0.000017083829373511975137352",
+        "orderHint": "0.000017113644845311689458124",
         "parent": undefined,
         "slug": [
           {

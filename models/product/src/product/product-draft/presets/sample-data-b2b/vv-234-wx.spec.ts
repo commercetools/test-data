@@ -20,7 +20,6 @@ describe(`with vv234Wx preset`, () => {
           "en-AU": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
           "en-GB": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
           "en-NZ": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
-          "en-UK": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
           "en-US": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
           "es-ES": "Grúa sobre orugas estable diseñada para tareas de elevación pesadas en terrenos desafiantes.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with vv234Wx preset`, () => {
           "en-AU": "VV234 WX Crawler Crane for Stability",
           "en-GB": "VV234 WX Crawler Crane for Stability",
           "en-NZ": "VV234 WX Crawler Crane for Stability",
-          "en-UK": "VV234 WX Crawler Crane for Stability",
           "en-US": "VV234 WX Crawler Crane for Stability",
           "es-ES": "VV234 WX Grúa sobre orugas para estabilidad",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with vv234Wx preset`, () => {
           "en-AU": "vv234-wx",
           "en-GB": "vv234-wx",
           "en-NZ": "vv234-wx",
-          "en-UK": "vv234-wx",
           "en-US": "vv234-wx",
           "es-ES": "vv234-wx",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with vv234Wx preset`, () => {
             "value": "Gru cingolata stabile progettata per compiti di sollevamento pesanti in terreni difficili.",
           },
           {
-            "locale": "en-UK",
-            "value": "Stable crawler crane designed for heavy lifting tasks in challenging terrain.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Stabiele rupskraan ontworpen voor zware hijstaken in uitdagend terrein.",
           },
@@ -341,10 +334,6 @@ describe(`with vv234Wx preset`, () => {
             "value": "VV234 WX Gru Cingolata per Stabilità",
           },
           {
-            "locale": "en-UK",
-            "value": "VV234 WX Crawler Crane for Stability",
-          },
-          {
             "locale": "nl-NL",
             "value": "VV234 WX Rupskraan voor Stabiliteit",
           },
@@ -391,10 +380,6 @@ describe(`with vv234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "vv234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "vv234-wx",
           },
           {

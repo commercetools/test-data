@@ -20,7 +20,6 @@ describe(`with h456St preset`, () => {
           "en-AU": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
           "en-GB": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
           "en-NZ": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
-          "en-UK": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
           "en-US": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
           "es-ES": "Topadora especializada para la manipulación eficiente de materiales de desecho en proyectos de gestión de residuos.",
           "fr": undefined,
@@ -77,7 +76,6 @@ describe(`with h456St preset`, () => {
           "en-AU": "H456 ST Waste Handling Bulldozer",
           "en-GB": "H456 ST Waste Handling Bulldozer",
           "en-NZ": "H456 ST Waste Handling Bulldozer",
-          "en-UK": "H456 ST Waste Handling Bulldozer",
           "en-US": "H456 ST Waste Handling Bulldozer",
           "es-ES": "H456 ST Topadora de manipulación de residuos",
           "fr": undefined,
@@ -100,7 +98,6 @@ describe(`with h456St preset`, () => {
           "en-AU": "h456-st",
           "en-GB": "h456-st",
           "en-NZ": "h456-st",
-          "en-UK": "h456-st",
           "en-US": "h456-st",
           "es-ES": "h456-st",
           "fr": undefined,
@@ -215,10 +212,6 @@ describe(`with h456St preset`, () => {
             "value": "Bulldozer specializzato per la gestione efficiente dei materiali di scarto in progetti di gestione dei rifiuti.",
           },
           {
-            "locale": "en-UK",
-            "value": "Specialized bulldozer for efficient handling of waste materials in waste management projects.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Gespecialiseerde bulldozer voor efficiënte afvalverwerking in afvalbeheerprojecten.",
           },
@@ -299,10 +292,6 @@ describe(`with h456St preset`, () => {
             "value": "H456 ST Bulldozer per la Gestione dei Rifiuti",
           },
           {
-            "locale": "en-UK",
-            "value": "H456 ST Waste Handling Bulldozer",
-          },
-          {
             "locale": "nl-NL",
             "value": "H456 ST Afvalverwerkings Bulldozer",
           },
@@ -349,10 +338,6 @@ describe(`with h456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "h456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "h456-st",
           },
           {

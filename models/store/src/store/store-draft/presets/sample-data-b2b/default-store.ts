@@ -1,4 +1,7 @@
-import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '@commercetools-test-data/commons';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
 
@@ -11,7 +14,6 @@ const defaultStore = (): TStoreDraftBuilder =>
         .empty()
         ['de-DE']('Standard')
         ['it-IT']('Predefinito')
-        ['en-UK']('Default')
         ['nl-NL']('Standaard')
         ['fr-FR']('Défaut')
         ['en-AU']('Default')
@@ -20,6 +22,12 @@ const defaultStore = (): TStoreDraftBuilder =>
         ['en-NZ']('Default')
         ['pt-PT']('Padrão')
         ['en-US']('Default')
-    );
+    )
+    .distributionChannels([
+      KeyReferenceDraft.presets.channel().key('default-channel'),
+    ])
+    .supplyChannels([
+      KeyReferenceDraft.presets.channel().key('default-warehouse'),
+    ]);
 
 export default defaultStore;

@@ -9,7 +9,21 @@ describe(`with wheeledExcavatorsForConstruction preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Radbagger, die für Bauaufgaben geeignet sind",
+          "en": undefined,
+          "en-AU": "Wheel excavators suitable for construction tasks",
+          "en-GB": "Wheel excavators suitable for construction tasks",
+          "en-NZ": "Wheel excavators suitable for construction tasks",
+          "en-US": "Wheel excavators suitable for construction tasks",
+          "es-ES": "Excavadoras de ruedas adecuadas para tareas de construcción",
+          "fr": undefined,
+          "fr-FR": "Excavatrices à roues adaptées aux tâches de construction",
+          "it-IT": "Escavatori su ruote adatti per compiti di costruzione",
+          "nl-NL": "Wielladers geschikt voor bouwtaken",
+          "pt-PT": "Escavadeiras com rodas adequadas para tarefas de construção",
+        },
         "externalId": undefined,
         "key": "wheeled-excavators-for-construction",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with wheeledExcavatorsForConstruction preset`, () => {
           "nl-NL": "Graafmachines op Wielen voor Bouw",
           "pt-PT": "Escavadeiras com Rodas para Construção",
         },
-        "orderHint": "0.000017083829418582110848053",
+        "orderHint": "0.00001711364484938846724481",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",
@@ -62,7 +76,48 @@ describe(`with wheeledExcavatorsForConstruction preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Radbagger, die für Bauaufgaben geeignet sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori su ruote adatti per compiti di costruzione",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Wielladers geschikt voor bouwtaken",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices à roues adaptées aux tâches de construction",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Wheel excavators suitable for construction tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras de ruedas adecuadas para tareas de construcción",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Wheel excavators suitable for construction tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Wheel excavators suitable for construction tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras com rodas adequadas para tarefas de construção",
+          },
+          {
+            "locale": "en-US",
+            "value": "Wheel excavators suitable for construction tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "wheeled-excavators-for-construction",
         "metaDescription": undefined,
@@ -110,7 +165,7 @@ describe(`with wheeledExcavatorsForConstruction preset`, () => {
             "value": "Wheeled Excavators for Construction",
           },
         ],
-        "orderHint": "0.000017083829418582110848053",
+        "orderHint": "0.00001711364484938846724481",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",

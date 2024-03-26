@@ -42,7 +42,6 @@ const hhh234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('HHH234 WX Rammpfahlhammer')
         ['it-IT']('HHH234 WX Martello per Pali')
-        ['en-UK']('HHH234 WX Piling Hammer')
         ['nl-NL']('HHH234 WX Heihamer')
         ['fr-FR']('HHH234 WX Marteau de battage')
         ['en-AU']('HHH234 WX Piling Hammer')
@@ -60,9 +59,6 @@ const hhh234Wx = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Martello per pali ad alta capacità progettato per piantare pali in modo efficiente e preciso in progetti edili.'
-        )
-        ['en-UK'](
-          'High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.'
         )
         ['nl-NL'](
           'Hoogcapaciteits heihamer ontworpen voor efficiënt en nauwkeurig heien van funderingen in bouwprojecten.'
@@ -94,7 +90,6 @@ const hhh234Wx = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('hhh234-wx')
         ['it-IT']('hhh234-wx')
-        ['en-UK']('hhh234-wx')
         ['nl-NL']('hhh234-wx')
         ['fr-FR']('hhh234-wx')
         ['en-AU']('hhh234-wx')

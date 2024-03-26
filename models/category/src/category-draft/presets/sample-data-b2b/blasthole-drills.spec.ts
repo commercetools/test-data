@@ -8,7 +8,21 @@ describe(`with blastholeDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bohrer, die für Sprenglochoperationen konzipiert sind",
+          "en": undefined,
+          "en-AU": "Drills designed for blasthole operations",
+          "en-GB": "Drills designed for blasthole operations",
+          "en-NZ": "Drills designed for blasthole operations",
+          "en-US": "Drills designed for blasthole operations",
+          "es-ES": "Perforadoras diseñadas para operaciones de agujeros de voladura",
+          "fr": undefined,
+          "fr-FR": "Forages conçus pour les opérations de trous de mine",
+          "it-IT": "Trapani progettati per operazioni di perforazione di fori di scoppio",
+          "nl-NL": "Boormachines ontworpen voor explosiegaten",
+          "pt-PT": "Brocas projetadas para operações de furos de explosão",
+        },
         "externalId": undefined,
         "key": "blasthole-drills",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with blastholeDrills preset`, () => {
           "nl-NL": "Boorinstallaties voor Explosiegaten",
           "pt-PT": "Brocas para Furos de Explosão",
         },
-        "orderHint": "0.000017083829494361565571101",
+        "orderHint": "0.000017113644847441329183825",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with blastholeDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bohrer, die für Sprenglochoperationen konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Trapani progettati per operazioni di perforazione di fori di scoppio",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Boormachines ontworpen voor explosiegaten",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Forages conçus pour les opérations de trous de mine",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Drills designed for blasthole operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Perforadoras diseñadas para operaciones de agujeros de voladura",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Drills designed for blasthole operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Drills designed for blasthole operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Brocas projetadas para operações de furos de explosão",
+          },
+          {
+            "locale": "en-US",
+            "value": "Drills designed for blasthole operations",
+          },
+        ],
         "externalId": undefined,
         "key": "blasthole-drills",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with blastholeDrills preset`, () => {
             "value": "Blasthole Drills",
           },
         ],
-        "orderHint": "0.000017083829494361565571101",
+        "orderHint": "0.000017113644847441329183825",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",

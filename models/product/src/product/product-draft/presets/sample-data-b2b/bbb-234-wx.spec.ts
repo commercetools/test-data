@@ -20,7 +20,6 @@ describe(`with bbb234Wx preset`, () => {
           "en-AU": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
           "en-GB": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
           "en-NZ": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
-          "en-UK": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
           "en-US": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
           "es-ES": "Perforadora de producción de alto rendimiento diseñada para perforar de manera eficiente en operaciones mineras a gran escala.",
           "fr": undefined,
@@ -91,7 +90,6 @@ describe(`with bbb234Wx preset`, () => {
           "en-AU": "BBB234 WX Production Drill",
           "en-GB": "BBB234 WX Production Drill",
           "en-NZ": "BBB234 WX Production Drill",
-          "en-UK": "BBB234 WX Production Drill",
           "en-US": "BBB234 WX Production Drill",
           "es-ES": "BBB234 WX Perforadora de producción",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with bbb234Wx preset`, () => {
           "en-AU": "bbb234-wx",
           "en-GB": "bbb234-wx",
           "en-NZ": "bbb234-wx",
-          "en-UK": "bbb234-wx",
           "en-US": "bbb234-wx",
           "es-ES": "bbb234-wx",
           "fr": undefined,
@@ -257,10 +254,6 @@ describe(`with bbb234Wx preset`, () => {
             "value": "Trapano ad alte prestazioni per produzione progettato per trapanazioni efficienti in operazioni minerarie su larga scala.",
           },
           {
-            "locale": "en-UK",
-            "value": "High-performance production drill designed for efficient drilling in large-scale mining operations.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Hoogpresterende productieboor ontworpen voor efficiënt boren in grootschalige mijnbouwoperaties.",
           },
@@ -341,10 +334,6 @@ describe(`with bbb234Wx preset`, () => {
             "value": "BBB234 WX Trapano per Produzione",
           },
           {
-            "locale": "en-UK",
-            "value": "BBB234 WX Production Drill",
-          },
-          {
             "locale": "nl-NL",
             "value": "BBB234 WX Productieboor",
           },
@@ -391,10 +380,6 @@ describe(`with bbb234Wx preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "bbb234-wx",
-          },
-          {
-            "locale": "en-UK",
             "value": "bbb234-wx",
           },
           {

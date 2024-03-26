@@ -25,6 +25,20 @@ const mobileCranes = (): TCategoryDraftBuilder =>
         ['pt-PT']('Guindastes Móveis')
         ['en-US']('Mobile Cranes')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Vielseitige Kräne mit Mobilität für verschiedene Aufgaben')
+        ['it-IT']('Gru versatili con mobilità per vari compiti')
+        ['nl-NL']('Veelzijdige kranen met mobiliteit voor diverse taken')
+        ['fr-FR']('Grues polyvalentes avec mobilité pour diverses tâches')
+        ['en-AU']('Versatile cranes with mobility for various tasks')
+        ['es-ES']('Gruas versátiles con movilidad para diversas tareas')
+        ['en-GB']('Versatile cranes with mobility for various tasks')
+        ['en-NZ']('Versatile cranes with mobility for various tasks')
+        ['pt-PT']('Guindastes versáteis com mobilidade para várias tarefas')
+        ['en-US']('Versatile cranes with mobility for various tasks')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const mobileCranes = (): TCategoryDraftBuilder =>
         ['en-US']('mobile_cranes')
     )
     .key('mobile-cranes')
-    .orderHint('0.000017083829487202030641779')
+    .orderHint('0.000017113644847721851389614')
     .parent(
       KeyReferenceDraft.presets
         .category()

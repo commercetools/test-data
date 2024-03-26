@@ -25,6 +25,20 @@ const crawlerCranes = (): TCategoryDraftBuilder =>
         ['pt-PT']('Guindastes de Esteira')
         ['en-US']('Crawler Cranes')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kräne mit Raupenketten für Stabilität')
+        ['it-IT']('Gru con cingoli per stabilità')
+        ['nl-NL']('Kranen met rupssporen voor stabiliteit')
+        ['fr-FR']('Grues avec des chenilles pour la stabilité')
+        ['en-AU']('Cranes with crawler tracks for stability')
+        ['es-ES']('Gruas con orugas para estabilidad')
+        ['en-GB']('Cranes with crawler tracks for stability')
+        ['en-NZ']('Cranes with crawler tracks for stability')
+        ['pt-PT']('Guindastes com esteiras para estabilidade')
+        ['en-US']('Cranes with crawler tracks for stability')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const crawlerCranes = (): TCategoryDraftBuilder =>
         ['en-US']('crawler_cranes')
     )
     .key('crawler-cranes')
-    .orderHint('0.000017083829491681975334762')
+    .orderHint('0.000017113644847751996610372')
     .parent(
       KeyReferenceDraft.presets
         .category()

@@ -25,6 +25,20 @@ const amphibiousExcavators = (): TCategoryDraftBuilder =>
         ['pt-PT']('Escavadeiras Anfíbias')
         ['en-US']('Amphibious Excavators')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Bagger, die für den amphibischen Einsatz konzipiert sind')
+        ['it-IT']('Escavatori progettati per uso anfibio')
+        ['nl-NL']('Graafmachines ontworpen voor amfibisch gebruik')
+        ['fr-FR']('Excavatrices conçues pour une utilisation amphibie')
+        ['en-AU']('Excavators designed for amphibious use')
+        ['es-ES']('Excavadoras diseñadas para uso anfibio')
+        ['en-GB']('Excavators designed for amphibious use')
+        ['en-NZ']('Excavators designed for amphibious use')
+        ['pt-PT']('Escavadeiras projetadas para uso anfíbio')
+        ['en-US']('Excavators designed for amphibious use')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const amphibiousExcavators = (): TCategoryDraftBuilder =>
         ['en-US']('amphibious_excavators')
     )
     .key('amphibious-excavators')
-    .orderHint('0.00001708382940863337373225')
+    .orderHint('0.000017113644849391366749683')
     .parent(
       KeyReferenceDraft.presets
         .category()

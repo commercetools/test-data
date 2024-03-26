@@ -24,6 +24,20 @@ const articulatedDumpTrucks = (): TCategoryDraftBuilder =>
         ['pt-PT']('Caminhões Basculantes Articulados')
         ['en-US']('Articulated Dump Trucks')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Kipper mit gelenkigen Verbindungen')
+        ['it-IT']('Camion ribaltabili con giunti articolati')
+        ['nl-NL']('Kipwagens met scharnierende verbindingen')
+        ['fr-FR']('Camions-bennes avec des articulations articulées')
+        ['en-AU']('Dump trucks with articulated joints')
+        ['es-ES']('Camiones volquete con articulaciones')
+        ['en-GB']('Dump trucks with articulated joints')
+        ['en-NZ']('Dump trucks with articulated joints')
+        ['pt-PT']('Caminhões basculantes com juntas articuladas')
+        ['en-US']('Dump trucks with articulated joints')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const articulatedDumpTrucks = (): TCategoryDraftBuilder =>
         ['en-US']('articulated_dump_trucks')
     )
     .key('articulated-dump-trucks')
-    .orderHint('0.00001708382944959802047407')
+    .orderHint('0.000017113644847751602265225')
     .parent(KeyReferenceDraft.presets.category().key(dumpTrucksCategory.key!));
 
 export default articulatedDumpTrucks;

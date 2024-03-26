@@ -9,7 +9,21 @@ describe(`with amphibiousExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bagger, die für den amphibischen Einsatz konzipiert sind",
+          "en": undefined,
+          "en-AU": "Excavators designed for amphibious use",
+          "en-GB": "Excavators designed for amphibious use",
+          "en-NZ": "Excavators designed for amphibious use",
+          "en-US": "Excavators designed for amphibious use",
+          "es-ES": "Excavadoras diseñadas para uso anfibio",
+          "fr": undefined,
+          "fr-FR": "Excavatrices conçues pour une utilisation amphibie",
+          "it-IT": "Escavatori progettati per uso anfibio",
+          "nl-NL": "Graafmachines ontworpen voor amfibisch gebruik",
+          "pt-PT": "Escavadeiras projetadas para uso anfíbio",
+        },
         "externalId": undefined,
         "key": "amphibious-excavators",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with amphibiousExcavators preset`, () => {
           "nl-NL": "Amfibische Graafmachines",
           "pt-PT": "Escavadeiras Anfíbias",
         },
-        "orderHint": "0.00001708382940863337373225",
+        "orderHint": "0.000017113644849391366749683",
         "parent": {
           "key": "large-scale-mining-excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with amphibiousExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bagger, die für den amphibischen Einsatz konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori progettati per uso anfibio",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Graafmachines ontworpen voor amfibisch gebruik",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices conçues pour une utilisation amphibie",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Excavators designed for amphibious use",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras diseñadas para uso anfibio",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Excavators designed for amphibious use",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Excavators designed for amphibious use",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras projetadas para uso anfíbio",
+          },
+          {
+            "locale": "en-US",
+            "value": "Excavators designed for amphibious use",
+          },
+        ],
         "externalId": undefined,
         "key": "amphibious-excavators",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with amphibiousExcavators preset`, () => {
             "value": "Amphibious Excavators",
           },
         ],
-        "orderHint": "0.00001708382940863337373225",
+        "orderHint": "0.000017113644849391366749683",
         "parent": {
           "key": "large-scale-mining-excavators",
           "typeId": "category",

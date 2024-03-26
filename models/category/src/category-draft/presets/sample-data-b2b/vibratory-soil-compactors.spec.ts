@@ -9,7 +9,21 @@ describe(`with vibratorySoilCompactors preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Verdichter, die Vibration für die Bodenverdichtung verwenden",
+          "en": undefined,
+          "en-AU": "Compactors using vibration for soil compaction",
+          "en-GB": "Compactors using vibration for soil compaction",
+          "en-NZ": "Compactors using vibration for soil compaction",
+          "en-US": "Compactors using vibration for soil compaction",
+          "es-ES": "Compactadores que utilizan vibración para compactar el suelo",
+          "fr": undefined,
+          "fr-FR": "Compacteurs utilisant la vibration pour le compactage du sol",
+          "it-IT": "Compattatori che utilizzano la vibrazione per la compattazione del suolo",
+          "nl-NL": "Verdichters die trillingen gebruiken voor bodemverdichting",
+          "pt-PT": "Compactadores que utilizam vibração para compactação de solo",
+        },
         "externalId": undefined,
         "key": "vibratory-soil-compactors",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with vibratorySoilCompactors preset`, () => {
           "nl-NL": "Trilbodemverdichters",
           "pt-PT": "Compactadores de Solo Vibratórios",
         },
-        "orderHint": "0.000017083829471811901243371",
+        "orderHint": "0.00001711364484765204216013",
         "parent": {
           "key": "heavy-duty-soil-compactors-rollers",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with vibratorySoilCompactors preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Verdichter, die Vibration für die Bodenverdichtung verwenden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Compattatori che utilizzano la vibrazione per la compattazione del suolo",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Verdichters die trillingen gebruiken voor bodemverdichting",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Compacteurs utilisant la vibration pour le compactage du sol",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Compactors using vibration for soil compaction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Compactadores que utilizan vibración para compactar el suelo",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Compactors using vibration for soil compaction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Compactors using vibration for soil compaction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Compactadores que utilizam vibração para compactação de solo",
+          },
+          {
+            "locale": "en-US",
+            "value": "Compactors using vibration for soil compaction",
+          },
+        ],
         "externalId": undefined,
         "key": "vibratory-soil-compactors",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with vibratorySoilCompactors preset`, () => {
             "value": "Vibratory Soil Compactors",
           },
         ],
-        "orderHint": "0.000017083829471811901243371",
+        "orderHint": "0.00001711364484765204216013",
         "parent": {
           "key": "heavy-duty-soil-compactors-rollers",
           "typeId": "category",

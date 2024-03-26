@@ -5,7 +5,7 @@ import {
 import { type TStoreDraft, StoreDraft } from '@commercetools-test-data/store';
 import { AssociateDraft } from '../../../../associate';
 import { CompanyDraft, type TCompanyDraft } from '../../../../company';
-import { status, storeMode, unitType, associateMode } from '../../../constants';
+import { storeMode, unitType, associateMode } from '../../../constants';
 import type { TDivisionDraftBuilder } from '../../../types';
 import * as DivisionDraft from '../../index';
 
@@ -22,6 +22,7 @@ const lifttechSolutionsLtdEs = (): TDivisionDraftBuilder =>
     .empty()
     .key('lifttech-solutions-ltd-es')
     .name('LiftTech Soluciones S.L.')
+    .contactEmail('info.es@ltsl.com')
     .unitType(unitType.Division)
     .storeMode(storeMode.Explicit)
     .associateMode(associateMode.ExplicitAndFromParent)

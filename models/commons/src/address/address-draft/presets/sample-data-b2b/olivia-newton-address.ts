@@ -5,7 +5,7 @@ const oliviaJonesAddress = (): TAddressDraftBuilder =>
   AddressDraft.presets
     .empty()
     .firstName('Olivia')
-    .lastName('Jones')
+    .lastName('Newton')
     .streetName('Market Street')
     .streetNumber('18')
     .postalCode('M1 1PT')

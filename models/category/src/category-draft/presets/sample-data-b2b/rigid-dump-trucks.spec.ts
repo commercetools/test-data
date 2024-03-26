@@ -8,7 +8,21 @@ describe(`with rigidDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Kipper mit starrem Rahmen",
+          "en": undefined,
+          "en-AU": "Dump trucks with a rigid frame",
+          "en-GB": "Dump trucks with a rigid frame",
+          "en-NZ": "Dump trucks with a rigid frame",
+          "en-US": "Dump trucks with a rigid frame",
+          "es-ES": "Camiones volquete con estructura rígida",
+          "fr": undefined,
+          "fr-FR": "Camions-bennes avec une structure rigide",
+          "it-IT": "Camion ribaltabili con telaio rigido",
+          "nl-NL": "Kipwagens met een star frame",
+          "pt-PT": "Caminhões basculantes com estrutura rígida",
+        },
         "externalId": undefined,
         "key": "rigid-dump-trucks",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with rigidDumpTrucks preset`, () => {
           "nl-NL": "Starre Kipwagens",
           "pt-PT": "Caminhões Basculantes Rígidos",
         },
-        "orderHint": "0.000017083829451711521889254",
+        "orderHint": "0.000017113644847521911712808",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with rigidDumpTrucks preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Kipper mit starrem Rahmen",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Camion ribaltabili con telaio rigido",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Kipwagens met een star frame",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Camions-bennes avec une structure rigide",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Dump trucks with a rigid frame",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Camiones volquete con estructura rígida",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Dump trucks with a rigid frame",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Dump trucks with a rigid frame",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Caminhões basculantes com estrutura rígida",
+          },
+          {
+            "locale": "en-US",
+            "value": "Dump trucks with a rigid frame",
+          },
+        ],
         "externalId": undefined,
         "key": "rigid-dump-trucks",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with rigidDumpTrucks preset`, () => {
             "value": "Rigid Dump Trucks",
           },
         ],
-        "orderHint": "0.000017083829451711521889254",
+        "orderHint": "0.000017113644847521911712808",
         "parent": {
           "key": "dump-trucks",
           "typeId": "category",

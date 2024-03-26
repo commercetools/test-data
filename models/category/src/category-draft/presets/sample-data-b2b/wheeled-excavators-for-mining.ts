@@ -17,13 +17,27 @@ const wheeledExcavatorsForMining = (): TCategoryDraftBuilder =>
         ['de-DE']('Radbagger für den Bergbau')
         ['it-IT']('Escavatori su Ruote per Miniere')
         ['nl-NL']('Graafmachines op Wielen voor Mijnbouw')
-        ['fr-FR']('Excavatrices à roues pour l&#39;exploitation minière')
+        ['fr-FR']("Excavatrices à roues pour l'exploitation minière")
         ['en-AU']('Wheeled Excavators for Mining')
         ['es-ES']('Excavadoras de ruedas para minería')
         ['en-GB']('Wheeled Excavators for Mining')
         ['en-NZ']('Wheeled Excavators for Mining')
         ['pt-PT']('Escavadeiras com Rodas para Mineração')
         ['en-US']('Wheeled Excavators for Mining')
+    )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Radbagger, die für den Bergbau konzipiert sind')
+        ['it-IT']('Escavatori su ruote progettati per uso minerario')
+        ['nl-NL']('Wielladers ontworpen voor mijnbouwgebruik')
+        ['fr-FR']('Excavatrices à roues conçues pour une utilisation minière')
+        ['en-AU']('Wheel excavators designed for mining use')
+        ['es-ES']('Excavadoras de ruedas diseñadas para uso en minería')
+        ['en-GB']('Wheel excavators designed for mining use')
+        ['en-NZ']('Wheel excavators designed for mining use')
+        ['pt-PT']('Escavadeiras com rodas projetadas para uso na mineração')
+        ['en-US']('Wheel excavators designed for mining use')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -40,7 +54,7 @@ const wheeledExcavatorsForMining = (): TCategoryDraftBuilder =>
         ['en-US']('wheeled_excavators_for_mining')
     )
     .key('wheeled-excavators-for-mining')
-    .orderHint('0.00001708382942192468814460')
+    .orderHint('0.00001711364484959828673262')
     .parent(
       KeyReferenceDraft.presets
         .category()

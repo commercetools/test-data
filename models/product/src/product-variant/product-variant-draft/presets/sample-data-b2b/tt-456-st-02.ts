@@ -36,8 +36,8 @@ const tt456St02 = (): TProductVariantDraftBuilder =>
         }),
       AttributeDraft.random().name('iso45001').value(true),
       AttributeDraft.random().name('mobility').value({
-        key: 'tracked',
-        label: 'Tracked',
+        key: 'wheeled',
+        label: 'Wheeled',
       }),
     ]);
 

@@ -9,7 +9,21 @@ describe(`with railroadWheeledExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Radbagger, die für den Bau von Eisenbahnen geeignet sind",
+          "en": undefined,
+          "en-AU": "Wheel excavators suitable for railroad construction",
+          "en-GB": "Wheel excavators suitable for railroad construction",
+          "en-NZ": "Wheel excavators suitable for railroad construction",
+          "en-US": "Wheel excavators suitable for railroad construction",
+          "es-ES": "Excavadoras de ruedas adecuadas para la construcción de ferrocarriles",
+          "fr": undefined,
+          "fr-FR": "Excavatrices à roues adaptées à la construction de voies ferrées",
+          "it-IT": "Escavatori su ruote adatti per la costruzione ferroviaria",
+          "nl-NL": "Wielladers geschikt voor spoorwegbouw",
+          "pt-PT": "Escavadeiras com rodas adequadas para construção ferroviária",
+        },
         "externalId": undefined,
         "key": "railroad-wheeled-excavators",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with railroadWheeledExcavators preset`, () => {
           "nl-NL": "Spoorweg Graafmachines op Wielen",
           "pt-PT": "Escavadeiras com Rodas para Ferrovias",
         },
-        "orderHint": "0.00001708382942468756331689",
+        "orderHint": "0.000017113644849581664545650",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with railroadWheeledExcavators preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Radbagger, die für den Bau von Eisenbahnen geeignet sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Escavatori su ruote adatti per la costruzione ferroviaria",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Wielladers geschikt voor spoorwegbouw",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Excavatrices à roues adaptées à la construction de voies ferrées",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Wheel excavators suitable for railroad construction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Excavadoras de ruedas adecuadas para la construcción de ferrocarriles",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Wheel excavators suitable for railroad construction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Wheel excavators suitable for railroad construction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Escavadeiras com rodas adequadas para construção ferroviária",
+          },
+          {
+            "locale": "en-US",
+            "value": "Wheel excavators suitable for railroad construction",
+          },
+        ],
         "externalId": undefined,
         "key": "railroad-wheeled-excavators",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with railroadWheeledExcavators preset`, () => {
             "value": "Railroad Wheeled Excavators",
           },
         ],
-        "orderHint": "0.00001708382942468756331689",
+        "orderHint": "0.000017113644849581664545650",
         "parent": {
           "key": "large-wheel-excavators",
           "typeId": "category",

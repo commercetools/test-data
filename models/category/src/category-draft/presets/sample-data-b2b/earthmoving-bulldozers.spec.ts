@@ -9,7 +9,21 @@ describe(`with earthmovingBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bulldozer für allgemeine Erdbewegungsarbeiten",
+          "en": undefined,
+          "en-AU": "Bulldozers for general earthmoving",
+          "en-GB": "Bulldozers for general earthmoving",
+          "en-NZ": "Bulldozers for general earthmoving",
+          "en-US": "Bulldozers for general earthmoving",
+          "es-ES": "Bulldozers para movimiento de tierras en general",
+          "fr": undefined,
+          "fr-FR": "Bulldozers pour le terrassement général",
+          "it-IT": "Bulldozer per movimento terra generale",
+          "nl-NL": "Bulldozers voor algemeen grondverzet",
+          "pt-PT": "Bulldozers para movimentação geral de terra",
+        },
         "externalId": undefined,
         "key": "earthmoving-bulldozers",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with earthmovingBulldozers preset`, () => {
           "nl-NL": "Grondverzet Bulldozers",
           "pt-PT": "Bulldozers para Movimentação de Terra",
         },
-        "orderHint": "0.00001708382944022671730669",
+        "orderHint": "0.000017113644847561100385515",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",
@@ -61,7 +75,48 @@ describe(`with earthmovingBulldozers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bulldozer für allgemeine Erdbewegungsarbeiten",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Bulldozer per movimento terra generale",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Bulldozers voor algemeen grondverzet",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Bulldozers pour le terrassement général",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Bulldozers for general earthmoving",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Bulldozers para movimiento de tierras en general",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Bulldozers for general earthmoving",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Bulldozers for general earthmoving",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Bulldozers para movimentação geral de terra",
+          },
+          {
+            "locale": "en-US",
+            "value": "Bulldozers for general earthmoving",
+          },
+        ],
         "externalId": undefined,
         "key": "earthmoving-bulldozers",
         "metaDescription": undefined,
@@ -109,7 +164,7 @@ describe(`with earthmovingBulldozers preset`, () => {
             "value": "Earthmoving Bulldozers",
           },
         ],
-        "orderHint": "0.00001708382944022671730669",
+        "orderHint": "0.000017113644847561100385515",
         "parent": {
           "key": "large-bulldozers",
           "typeId": "category",

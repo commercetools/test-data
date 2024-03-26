@@ -17,13 +17,31 @@ const airportGraders = (): TCategoryDraftBuilder =>
         ['de-DE']('Flughafengrader')
         ['it-IT']('Livellatrici per Aeroporti')
         ['nl-NL']('Luchthavengraders')
-        ['fr-FR']('Niveleuses d&#39;aéroport')
+        ['fr-FR']("Niveleuses d'aéroport")
         ['en-AU']('Airport Graders')
         ['es-ES']('Motoniveladoras para aeropuertos')
         ['en-GB']('Airport Graders')
         ['en-NZ']('Airport Graders')
         ['pt-PT']('Motoniveladoras de Aeroporto')
         ['en-US']('Airport Graders')
+    )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Motorgrader, die für den Flughafenbau geeignet sind')
+        ['it-IT'](
+          'Livellatrici motorizzate adatte per la costruzione di aeroporti'
+        )
+        ['nl-NL']('Motorgraders geschikt voor luchthavenbouw')
+        ['fr-FR']('Niveleuses adaptées à la construction aéroportuaire')
+        ['en-AU']('Motor graders suitable for airport construction')
+        ['es-ES'](
+          'Motoniveladoras adecuadas para la construcción de aeropuertos'
+        )
+        ['en-GB']('Motor graders suitable for airport construction')
+        ['en-NZ']('Motor graders suitable for airport construction')
+        ['pt-PT']('Motoniveladoras adequadas para construção de aeroportos')
+        ['en-US']('Motor graders suitable for airport construction')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -40,7 +58,7 @@ const airportGraders = (): TCategoryDraftBuilder =>
         ['en-US']('airport_graders')
     )
     .key('airport-graders')
-    .orderHint('0.00001708382946502410689089')
+    .orderHint('0.000017113644847401957960348')
     .parent(
       KeyReferenceDraft.presets
         .category()

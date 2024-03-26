@@ -9,7 +9,21 @@ describe(`with highCapacityFrontEndLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Lader mit hoher Kapazität für den Fronteinsatz",
+          "en": undefined,
+          "en-AU": "Loaders with high capacity for front-end use",
+          "en-GB": "Loaders with high capacity for front-end use",
+          "en-NZ": "Loaders with high capacity for front-end use",
+          "en-US": "Loaders with high capacity for front-end use",
+          "es-ES": "Cargadores con alta capacidad para uso frontal",
+          "fr": undefined,
+          "fr-FR": "Chargeuses avec une capacité élevée pour une utilisation frontale",
+          "it-IT": "Caricatori ad alta capacità per uso frontale",
+          "nl-NL": "Laders met hoge capaciteit voor front-end gebruik",
+          "pt-PT": "Carregadeiras com alta capacidade para uso frontal",
+        },
         "externalId": undefined,
         "key": "high-capacity-front-end-loaders",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with highCapacityFrontEndLoaders preset`, () => {
           "nl-NL": "Laders",
           "pt-PT": "Carregadeiras",
         },
-        "orderHint": "0.000017083829370961875597117",
+        "orderHint": "0.000017113644844981877777123",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -58,7 +72,48 @@ describe(`with highCapacityFrontEndLoaders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Lader mit hoher Kapazität für den Fronteinsatz",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Caricatori ad alta capacità per uso frontale",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Laders met hoge capaciteit voor front-end gebruik",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Chargeuses avec une capacité élevée pour une utilisation frontale",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Loaders with high capacity for front-end use",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Cargadores con alta capacidad para uso frontal",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Loaders with high capacity for front-end use",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Loaders with high capacity for front-end use",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Carregadeiras com alta capacidade para uso frontal",
+          },
+          {
+            "locale": "en-US",
+            "value": "Loaders with high capacity for front-end use",
+          },
+        ],
         "externalId": undefined,
         "key": "high-capacity-front-end-loaders",
         "metaDescription": undefined,
@@ -106,7 +161,7 @@ describe(`with highCapacityFrontEndLoaders preset`, () => {
             "value": "Loaders",
           },
         ],
-        "orderHint": "0.000017083829370961875597117",
+        "orderHint": "0.000017113644844981877777123",
         "parent": undefined,
         "slug": [
           {

@@ -8,7 +8,21 @@ describe(`with quarryingHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Hämmer, die für Steinbrucharbeiten konzipiert sind",
+          "en": undefined,
+          "en-AU": "Hammers designed for quarrying operations",
+          "en-GB": "Hammers designed for quarrying operations",
+          "en-NZ": "Hammers designed for quarrying operations",
+          "en-US": "Hammers designed for quarrying operations",
+          "es-ES": "Martillos diseñados para operaciones de cantera",
+          "fr": undefined,
+          "fr-FR": "Marteaux conçus pour les opérations de carrière",
+          "it-IT": "Martelli progettati per operazioni di estrazione in cava",
+          "nl-NL": "Hamers ontworpen voor steengroeve-operaties",
+          "pt-PT": "Martelos projetados para operações de pedreira",
+        },
         "externalId": undefined,
         "key": "quarrying-hammers",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with quarryingHammers preset`, () => {
           "nl-NL": "Steengroevehamers",
           "pt-PT": "Martelos de Pedreira",
         },
-        "orderHint": "0.000017083829508032028254121",
+        "orderHint": "0.000017113644847601529627591",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with quarryingHammers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Hämmer, die für Steinbrucharbeiten konzipiert sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Martelli progettati per operazioni di estrazione in cava",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Hamers ontworpen voor steengroeve-operaties",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Marteaux conçus pour les opérations de carrière",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Hammers designed for quarrying operations",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Martillos diseñados para operaciones de cantera",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Hammers designed for quarrying operations",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Hammers designed for quarrying operations",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Martelos projetados para operações de pedreira",
+          },
+          {
+            "locale": "en-US",
+            "value": "Hammers designed for quarrying operations",
+          },
+        ],
         "externalId": undefined,
         "key": "quarrying-hammers",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with quarryingHammers preset`, () => {
             "value": "Quarrying Hammers",
           },
         ],
-        "orderHint": "0.000017083829508032028254121",
+        "orderHint": "0.000017113644847601529627591",
         "parent": {
           "key": "large-hydraulic-hammers",
           "typeId": "category",

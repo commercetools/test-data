@@ -20,11 +20,10 @@ describe(`with tt456St preset`, () => {
           "en-AU": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
           "en-GB": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
           "en-NZ": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
-          "en-UK": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
           "en-US": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
           "es-ES": "Grúa móvil versátil con características avanzadas para una amplia gama de aplicaciones de elevación.",
           "fr": undefined,
-          "fr-FR": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.",
+          "fr-FR": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage.",
           "it-IT": "Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.",
           "nl-NL": "Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.",
           "pt-PT": "Grua móvel versátil com características avançadas para uma ampla gama de aplicações de elevação.",
@@ -62,8 +61,8 @@ describe(`with tt456St preset`, () => {
             {
               "name": "mobility",
               "value": {
-                "key": "tracked",
-                "label": "Tracked",
+                "key": "wheeled",
+                "label": "Wheeled",
               },
             },
           ],
@@ -91,7 +90,6 @@ describe(`with tt456St preset`, () => {
           "en-AU": "TT456 ST Mobile Crane for Versatility",
           "en-GB": "TT456 ST Mobile Crane for Versatility",
           "en-NZ": "TT456 ST Mobile Crane for Versatility",
-          "en-UK": "TT456 ST Mobile Crane for Versatility",
           "en-US": "TT456 ST Mobile Crane for Versatility",
           "es-ES": "TT456 ST Grúa móvil para versatilidad",
           "fr": undefined,
@@ -114,7 +112,6 @@ describe(`with tt456St preset`, () => {
           "en-AU": "tt456-st",
           "en-GB": "tt456-st",
           "en-NZ": "tt456-st",
-          "en-UK": "tt456-st",
           "en-US": "tt456-st",
           "es-ES": "tt456-st",
           "fr": undefined,
@@ -161,8 +158,8 @@ describe(`with tt456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -212,8 +209,8 @@ describe(`with tt456St preset`, () => {
               {
                 "name": "mobility",
                 "value": {
-                  "key": "tracked",
-                  "label": "Tracked",
+                  "key": "wheeled",
+                  "label": "Wheeled",
                 },
               },
             ],
@@ -257,16 +254,12 @@ describe(`with tt456St preset`, () => {
             "value": "Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.",
           },
           {
-            "locale": "en-UK",
-            "value": "Versatile mobile crane with advanced features for a wide range of lifting applications.",
-          },
-          {
             "locale": "nl-NL",
             "value": "Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.",
           },
           {
             "locale": "fr-FR",
-            "value": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d&#39;applications de levage.",
+            "value": "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage.",
           },
           {
             "locale": "en-AU",
@@ -311,7 +304,7 @@ describe(`with tt456St preset`, () => {
             },
             {
               "name": "mobility",
-              "value": "{"key":"tracked","label":"Tracked"}",
+              "value": "{"key":"wheeled","label":"Wheeled"}",
             },
           ],
           "images": [
@@ -339,10 +332,6 @@ describe(`with tt456St preset`, () => {
           {
             "locale": "it-IT",
             "value": "TT456 ST Gru Mobile per Versatilità",
-          },
-          {
-            "locale": "en-UK",
-            "value": "TT456 ST Mobile Crane for Versatility",
           },
           {
             "locale": "nl-NL",
@@ -391,10 +380,6 @@ describe(`with tt456St preset`, () => {
           },
           {
             "locale": "it-IT",
-            "value": "tt456-st",
-          },
-          {
-            "locale": "en-UK",
             "value": "tt456-st",
           },
           {
@@ -453,7 +438,7 @@ describe(`with tt456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [
@@ -487,7 +472,7 @@ describe(`with tt456St preset`, () => {
               },
               {
                 "name": "mobility",
-                "value": "{"key":"tracked","label":"Tracked"}",
+                "value": "{"key":"wheeled","label":"Wheeled"}",
               },
             ],
             "images": [

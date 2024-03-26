@@ -11,7 +11,6 @@ const usMediumCustomersCatalog = (): TProductSelectionDraftBuilder =>
         .empty()
         ['de-DE']('US Mittel Kundenkatalog')
         ['it-IT']('Catalogo Clienti Medio USA')
-        ['en-UK']('US Medium Customers Catalog')
         ['nl-NL']('Catalogus voor Middelgrote Klanten in de VS')
         ['fr-FR']('Catalogue Clients Moyens des États-Unis')
         ['en-AU']('US Medium Customers Catalog')

@@ -17,7 +17,6 @@ describe(`with usMediumCustomersCatalog preset`, () => {
           "en-AU": "US Medium Customers Catalog",
           "en-GB": "US Medium Customers Catalog",
           "en-NZ": "US Medium Customers Catalog",
-          "en-UK": "US Medium Customers Catalog",
           "en-US": "US Medium Customers Catalog",
           "es-ES": "Catálogo de Clientes Medianos de EE. UU.",
           "fr": undefined,
@@ -46,10 +45,6 @@ describe(`with usMediumCustomersCatalog preset`, () => {
           {
             "locale": "it-IT",
             "value": "Catalogo Clienti Medio USA",
-          },
-          {
-            "locale": "en-UK",
-            "value": "US Medium Customers Catalog",
           },
           {
             "locale": "nl-NL",

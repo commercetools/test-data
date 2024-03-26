@@ -42,7 +42,6 @@ const uu789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('UU789 UV Mobilkran für Vielseitigkeit')
         ['it-IT']('UU789 UV Gru Mobile per Versatilità')
-        ['en-UK']('UU789 UV Mobile Crane for Versatility')
         ['nl-NL']('UU789 UV Mobiele Kraan voor Veelzijdigheid')
         ['fr-FR']('UU789 UV Grue mobile pour polyvalence')
         ['en-AU']('UU789 UV Mobile Crane for Versatility')
@@ -60,9 +59,6 @@ const uu789Uv = (): TProductDraftBuilder =>
         )
         ['it-IT'](
           'Gru mobile compatta adatta per una varietà di compiti di sollevamento con facilità di mobilità.'
-        )
-        ['en-UK'](
-          'Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.'
         )
         ['nl-NL'](
           'Compacte mobiele kraan geschikt voor diverse hijstaken met gemak van mobiliteit.'
@@ -94,7 +90,6 @@ const uu789Uv = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('uu789-uv')
         ['it-IT']('uu789-uv')
-        ['en-UK']('uu789-uv')
         ['nl-NL']('uu789-uv')
         ['fr-FR']('uu789-uv')
         ['en-AU']('uu789-uv')

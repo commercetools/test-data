@@ -9,7 +9,21 @@ describe(`with heavyDutySoilCompactorsRollers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Verdichter und Walzen für schwere Bodenaufgaben",
+          "en": undefined,
+          "en-AU": "Compactors and rollers for heavy-duty soil tasks",
+          "en-GB": "Compactors and rollers for heavy-duty soil tasks",
+          "en-NZ": "Compactors and rollers for heavy-duty soil tasks",
+          "en-US": "Compactors and rollers for heavy-duty soil tasks",
+          "es-ES": "Compactadores y rodillos para tareas de suelo de servicio pesado",
+          "fr": undefined,
+          "fr-FR": "Compacteurs et rouleaux pour des tâches de sol haute résistance",
+          "it-IT": "Compattatori e rulli per compiti pesanti su suolo",
+          "nl-NL": "Verdichters en walsen voor zware bodemtaken",
+          "pt-PT": "Compactadores e rolos para tarefas pesadas de compactação de solo",
+        },
         "externalId": undefined,
         "key": "heavy-duty-soil-compactors-rollers",
         "metaDescription": undefined,
@@ -30,7 +44,7 @@ describe(`with heavyDutySoilCompactorsRollers preset`, () => {
           "nl-NL": "Bodemverdichters",
           "pt-PT": "Compactadores de Solo",
         },
-        "orderHint": "0.000017083829382892122055945",
+        "orderHint": "0.000017113644845271262904199",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -58,7 +72,48 @@ describe(`with heavyDutySoilCompactorsRollers preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Verdichter und Walzen für schwere Bodenaufgaben",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Compattatori e rulli per compiti pesanti su suolo",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Verdichters en walsen voor zware bodemtaken",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Compacteurs et rouleaux pour des tâches de sol haute résistance",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Compactors and rollers for heavy-duty soil tasks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Compactadores y rodillos para tareas de suelo de servicio pesado",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Compactors and rollers for heavy-duty soil tasks",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Compactors and rollers for heavy-duty soil tasks",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Compactadores e rolos para tarefas pesadas de compactação de solo",
+          },
+          {
+            "locale": "en-US",
+            "value": "Compactors and rollers for heavy-duty soil tasks",
+          },
+        ],
         "externalId": undefined,
         "key": "heavy-duty-soil-compactors-rollers",
         "metaDescription": undefined,
@@ -106,7 +161,7 @@ describe(`with heavyDutySoilCompactorsRollers preset`, () => {
             "value": "Soil Compactors",
           },
         ],
-        "orderHint": "0.000017083829382892122055945",
+        "orderHint": "0.000017113644845271262904199",
         "parent": undefined,
         "slug": [
           {

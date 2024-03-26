@@ -8,7 +8,21 @@ describe(`with airportGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Motorgrader, die für den Flughafenbau geeignet sind",
+          "en": undefined,
+          "en-AU": "Motor graders suitable for airport construction",
+          "en-GB": "Motor graders suitable for airport construction",
+          "en-NZ": "Motor graders suitable for airport construction",
+          "en-US": "Motor graders suitable for airport construction",
+          "es-ES": "Motoniveladoras adecuadas para la construcción de aeropuertos",
+          "fr": undefined,
+          "fr-FR": "Niveleuses adaptées à la construction aéroportuaire",
+          "it-IT": "Livellatrici motorizzate adatte per la costruzione di aeroporti",
+          "nl-NL": "Motorgraders geschikt voor luchthavenbouw",
+          "pt-PT": "Motoniveladoras adequadas para construção de aeroportos",
+        },
         "externalId": undefined,
         "key": "airport-graders",
         "metaDescription": undefined,
@@ -24,12 +38,12 @@ describe(`with airportGraders preset`, () => {
           "en-US": "Airport Graders",
           "es-ES": "Motoniveladoras para aeropuertos",
           "fr": undefined,
-          "fr-FR": "Niveleuses d&#39;aéroport",
+          "fr-FR": "Niveleuses d'aéroport",
           "it-IT": "Livellatrici per Aeroporti",
           "nl-NL": "Luchthavengraders",
           "pt-PT": "Motoniveladoras de Aeroporto",
         },
-        "orderHint": "0.00001708382946502410689089",
+        "orderHint": "0.000017113644847401957960348",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with airportGraders preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Motorgrader, die für den Flughafenbau geeignet sind",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Livellatrici motorizzate adatte per la costruzione di aeroporti",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Motorgraders geschikt voor luchthavenbouw",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Niveleuses adaptées à la construction aéroportuaire",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Motor graders suitable for airport construction",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Motoniveladoras adecuadas para la construcción de aeropuertos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Motor graders suitable for airport construction",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Motor graders suitable for airport construction",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Motoniveladoras adequadas para construção de aeroportos",
+          },
+          {
+            "locale": "en-US",
+            "value": "Motor graders suitable for airport construction",
+          },
+        ],
         "externalId": undefined,
         "key": "airport-graders",
         "metaDescription": undefined,
@@ -81,7 +136,7 @@ describe(`with airportGraders preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Niveleuses d&#39;aéroport",
+            "value": "Niveleuses d'aéroport",
           },
           {
             "locale": "en-AU",
@@ -108,7 +163,7 @@ describe(`with airportGraders preset`, () => {
             "value": "Airport Graders",
           },
         ],
-        "orderHint": "0.00001708382946502410689089",
+        "orderHint": "0.000017113644847401957960348",
         "parent": {
           "key": "high-capacity-motor-graders",
           "typeId": "category",

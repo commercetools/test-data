@@ -8,7 +8,21 @@ describe(`with explorationDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bohrer, die für Erkundungszwecke verwendet werden",
+          "en": undefined,
+          "en-AU": "Drills used for exploration purposes",
+          "en-GB": "Drills used for exploration purposes",
+          "en-NZ": "Drills used for exploration purposes",
+          "en-US": "Drills used for exploration purposes",
+          "es-ES": "Perforadoras utilizadas con fines de exploración",
+          "fr": undefined,
+          "fr-FR": "Forages utilisés à des fins d'exploration",
+          "it-IT": "Trapani utilizzati per scopi di esplorazione",
+          "nl-NL": "Boormachines gebruikt voor exploratiedoeleinden",
+          "pt-PT": "Brocas usadas para fins de exploração",
+        },
         "externalId": undefined,
         "key": "exploration-drills",
         "metaDescription": undefined,
@@ -24,12 +38,12 @@ describe(`with explorationDrills preset`, () => {
           "en-US": "Exploration Drills",
           "es-ES": "Perforadoras de exploración",
           "fr": undefined,
-          "fr-FR": "Forages d&#39;exploration",
+          "fr-FR": "Forages d'exploration",
           "it-IT": "Trapani di Esplorazione",
           "nl-NL": "Exploratieboormachines",
           "pt-PT": "Brocas de Exploração",
         },
-        "orderHint": "0.000017083829497591898860695",
+        "orderHint": "0.000017113644847351089727496",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with explorationDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bohrer, die für Erkundungszwecke verwendet werden",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Trapani utilizzati per scopi di esplorazione",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Boormachines gebruikt voor exploratiedoeleinden",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Forages utilisés à des fins d'exploration",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Drills used for exploration purposes",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Perforadoras utilizadas con fines de exploración",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Drills used for exploration purposes",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Drills used for exploration purposes",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Brocas usadas para fins de exploração",
+          },
+          {
+            "locale": "en-US",
+            "value": "Drills used for exploration purposes",
+          },
+        ],
         "externalId": undefined,
         "key": "exploration-drills",
         "metaDescription": undefined,
@@ -81,7 +136,7 @@ describe(`with explorationDrills preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Forages d&#39;exploration",
+            "value": "Forages d'exploration",
           },
           {
             "locale": "en-AU",
@@ -108,7 +163,7 @@ describe(`with explorationDrills preset`, () => {
             "value": "Exploration Drills",
           },
         ],
-        "orderHint": "0.000017083829497591898860695",
+        "orderHint": "0.000017113644847351089727496",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",

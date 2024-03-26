@@ -8,7 +8,21 @@ describe(`with productionDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Bohrer für groß angelegte Produktionsaktivitäten",
+          "en": undefined,
+          "en-AU": "Drills for large-scale production activities",
+          "en-GB": "Drills for large-scale production activities",
+          "en-NZ": "Drills for large-scale production activities",
+          "en-US": "Drills for large-scale production activities",
+          "es-ES": "Perforadoras para actividades de producción a gran escala",
+          "fr": undefined,
+          "fr-FR": "Forages pour des activités de production à grande échelle",
+          "it-IT": "Trapani per attività di produzione su larga scala",
+          "nl-NL": "Boormachines voor grootschalige productieactiviteiten",
+          "pt-PT": "Brocas para atividades de produção em grande escala",
+        },
         "externalId": undefined,
         "key": "production-drills",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with productionDrills preset`, () => {
           "nl-NL": "Productieboormachines",
           "pt-PT": "Brocas de Produção",
         },
-        "orderHint": "0.00001708382950186609251987",
+        "orderHint": "0.00001711364484755764795695",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",
@@ -60,7 +74,48 @@ describe(`with productionDrills preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Bohrer für groß angelegte Produktionsaktivitäten",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Trapani per attività di produzione su larga scala",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Boormachines voor grootschalige productieactiviteiten",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Forages pour des activités de production à grande échelle",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Drills for large-scale production activities",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Perforadoras para actividades de producción a gran escala",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Drills for large-scale production activities",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Drills for large-scale production activities",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Brocas para atividades de produção em grande escala",
+          },
+          {
+            "locale": "en-US",
+            "value": "Drills for large-scale production activities",
+          },
+        ],
         "externalId": undefined,
         "key": "production-drills",
         "metaDescription": undefined,
@@ -108,7 +163,7 @@ describe(`with productionDrills preset`, () => {
             "value": "Production Drills",
           },
         ],
-        "orderHint": "0.00001708382950186609251987",
+        "orderHint": "0.00001711364484755764795695",
         "parent": {
           "key": "large-diameter-mining-drills",
           "typeId": "category",

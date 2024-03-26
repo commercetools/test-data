@@ -8,7 +8,21 @@ describe(`with spareParts preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": {
+          "de": undefined,
+          "de-DE": "Austauschbares Teil, das für die Reparatur oder den Austausch defekter Einheiten in Maschinen, Fahrzeugen oder elektronischen Geräten verwendet wird",
+          "en": undefined,
+          "en-AU": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          "en-GB": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          "en-NZ": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          "en-US": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          "es-ES": "Pieza intercambiable utilizada para la reparación o sustitución de unidades defectuosas en maquinaria, vehículos o dispositivos electrónicos",
+          "fr": undefined,
+          "fr-FR": "Pièce interchangeable utilisée pour la réparation ou le remplacement d'unités défaillantes dans des machines, véhicules ou dispositifs électroniques",
+          "it-IT": "Parte intercambiabile utilizzata per la riparazione o la sostituzione di unità guaste in macchinari, veicoli o dispositivi elettronici",
+          "nl-NL": "Uitwisselbaar onderdeel gebruikt voor de reparatie of vervanging van defecte eenheden in machines, voertuigen of elektronische apparaten",
+          "pt-PT": "Peça intercambiável usada para a reparação ou substituição de unidades avariadas em maquinaria, veículos ou dispositivos eletrónicos",
+        },
         "externalId": undefined,
         "key": "spare-parts",
         "metaDescription": undefined,
@@ -29,7 +43,7 @@ describe(`with spareParts preset`, () => {
           "nl-NL": "Reserveonderdelen",
           "pt-PT": "Peças Sobressalentes",
         },
-        "orderHint": "0.00001708382951385193293756",
+        "orderHint": "0.000017113644845271199915511",
         "parent": undefined,
         "slug": {
           "de": undefined,
@@ -56,7 +70,48 @@ describe(`with spareParts preset`, () => {
       {
         "assets": undefined,
         "custom": undefined,
-        "description": undefined,
+        "description": [
+          {
+            "locale": "de-DE",
+            "value": "Austauschbares Teil, das für die Reparatur oder den Austausch defekter Einheiten in Maschinen, Fahrzeugen oder elektronischen Geräten verwendet wird",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Parte intercambiabile utilizzata per la riparazione o la sostituzione di unità guaste in macchinari, veicoli o dispositivi elettronici",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Uitwisselbaar onderdeel gebruikt voor de reparatie of vervanging van defecte eenheden in machines, voertuigen of elektronische apparaten",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Pièce interchangeable utilisée pour la réparation ou le remplacement d'unités défaillantes dans des machines, véhicules ou dispositifs électroniques",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Pieza intercambiable utilizada para la reparación o sustitución de unidades defectuosas en maquinaria, vehículos o dispositivos electrónicos",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Peça intercambiável usada para a reparação ou substituição de unidades avariadas em maquinaria, veículos ou dispositivos eletrónicos",
+          },
+          {
+            "locale": "en-US",
+            "value": "Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices",
+          },
+        ],
         "externalId": undefined,
         "key": "spare-parts",
         "metaDescription": undefined,
@@ -104,7 +159,7 @@ describe(`with spareParts preset`, () => {
             "value": "Spare Parts",
           },
         ],
-        "orderHint": "0.00001708382951385193293756",
+        "orderHint": "0.000017113644845271199915511",
         "parent": undefined,
         "slug": [
           {

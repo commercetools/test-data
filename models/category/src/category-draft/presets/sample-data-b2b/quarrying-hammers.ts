@@ -25,6 +25,20 @@ const quarryingHammers = (): TCategoryDraftBuilder =>
         ['pt-PT']('Martelos de Pedreira')
         ['en-US']('Quarrying Hammers')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Hämmer, die für Steinbrucharbeiten konzipiert sind')
+        ['it-IT']('Martelli progettati per operazioni di estrazione in cava')
+        ['nl-NL']('Hamers ontworpen voor steengroeve-operaties')
+        ['fr-FR']('Marteaux conçus pour les opérations de carrière')
+        ['en-AU']('Hammers designed for quarrying operations')
+        ['es-ES']('Martillos diseñados para operaciones de cantera')
+        ['en-GB']('Hammers designed for quarrying operations')
+        ['en-NZ']('Hammers designed for quarrying operations')
+        ['pt-PT']('Martelos projetados para operações de pedreira')
+        ['en-US']('Hammers designed for quarrying operations')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -40,7 +54,7 @@ const quarryingHammers = (): TCategoryDraftBuilder =>
         ['en-US']('quarrying_hammers')
     )
     .key('quarrying-hammers')
-    .orderHint('0.000017083829508032028254121')
+    .orderHint('0.000017113644847601529627591')
     .parent(
       KeyReferenceDraft.presets
         .category()

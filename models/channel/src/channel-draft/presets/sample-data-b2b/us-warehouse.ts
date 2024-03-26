@@ -12,7 +12,6 @@ const usWarehouse = (): TChannelDraftBuilder =>
         .empty()
         ['de-DE']('Nordamerika-Lager')
         ['it-IT']('Magazzino Nord America')
-        ['en-UK']('North America warehouse')
         ['nl-NL']('Noord-Amerika magazijn')
         ['fr-FR']('Entrepôt Amérique du Nord')
         ['en-AU']('North America warehouse')

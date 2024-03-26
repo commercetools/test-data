@@ -19,7 +19,7 @@ describe(`with freeShip50000Gbp preset`, () => {
           "en-US": "Free shipping when your order is at least 50000 GBP",
           "es-ES": "Envío gratuito en pedidos de al menos 50000 GBP",
           "fr": undefined,
-          "fr-FR": "Livraison gratuite pour toute commande d&#39;au moins 50000 GBP",
+          "fr-FR": "Livraison gratuite pour toute commande d'au moins 50000 GBP",
           "it-IT": "Spedizione gratuita per ordini di almeno 50000 GBP",
           "nl-NL": "Gratis verzending bij een bestelling van ten minste 50000 GBP",
           "pt-PT": "Envio grátis em encomendas de pelo menos 50000 GBP",
@@ -36,7 +36,7 @@ describe(`with freeShip50000Gbp preset`, () => {
           "en-US": "Free Shipping when you spend 50000 GBP",
           "es-ES": "Envío gratuito al gastar 50000 GBP",
           "fr": undefined,
-          "fr-FR": "Livraison gratuite à partir de 50000 GBP d&#39;achat",
+          "fr-FR": "Livraison gratuite à partir de 50000 GBP d'achat",
           "it-IT": "Spedizione gratuita per acquisti di almeno 50000 GBP",
           "nl-NL": "Gratis verzending bij besteding van 50000 GBP",
           "pt-PT": "Envio grátis ao gastar 50000 GBP",
@@ -79,7 +79,7 @@ describe(`with freeShip50000Gbp preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Livraison gratuite pour toute commande d&#39;au moins 50000 GBP",
+            "value": "Livraison gratuite pour toute commande d'au moins 50000 GBP",
           },
           {
             "locale": "en-AU",
@@ -123,7 +123,7 @@ describe(`with freeShip50000Gbp preset`, () => {
           },
           {
             "locale": "fr-FR",
-            "value": "Livraison gratuite à partir de 50000 GBP d&#39;achat",
+            "value": "Livraison gratuite à partir de 50000 GBP d'achat",
           },
           {
             "locale": "en-AU",

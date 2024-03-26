@@ -24,6 +24,20 @@ const largeWheelExcavators = (): TCategoryDraftBuilder =>
         ['pt-PT']('Escavadeiras com Rodas')
         ['en-US']('Wheeled Excavators')
     )
+    .description(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Radbagger für anspruchsvolle Anwendungen')
+        ['it-IT']('Escavatori su ruote per applicazioni pesanti')
+        ['nl-NL']('Wielladers voor zware toepassingen')
+        ['fr-FR']('Excavatrices à roues pour des applications intensives')
+        ['en-AU']('Wheel excavators for heavy-duty applications')
+        ['es-ES']('Excavadoras de ruedas para aplicaciones de servicio pesado')
+        ['en-GB']('Wheel excavators for heavy-duty applications')
+        ['en-NZ']('Wheel excavators for heavy-duty applications')
+        ['pt-PT']('Escavadeiras com rodas para aplicações pesadas')
+        ['en-US']('Wheel excavators for heavy-duty applications')
+    )
     .slug(
       LocalizedStringDraft.presets
         .empty()
@@ -39,7 +53,7 @@ const largeWheelExcavators = (): TCategoryDraftBuilder =>
         ['en-US']('wheeled_excavators')
     )
     .key('large-wheel-excavators')
-    .orderHint('0.00001708382941289446240444')
+    .orderHint('0.000017113644847261484295299')
     .parent(KeyReferenceDraft.presets.category().key(excavatorsCategory.key!));
 
 export default largeWheelExcavators;
