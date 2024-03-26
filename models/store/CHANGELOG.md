@@ -1,5 +1,20 @@
 # @commercetools-test-data/store
 
+## 7.7.0
+
+### Minor Changes
+
+- [#536](https://github.com/commercetools/test-data/pull/536) [`53e2e9d`](https://github.com/commercetools/test-data/commit/53e2e9d24416905f25178ef11a5be9900b4fa2e9) Thanks [@ByronDWall](https://github.com/ByronDWall)! - generate productSelectionSettingsDraft presets for both b2b product-selections, reference appropriate PSSD's in b2b storeDraft presets, create productSelection keyReference preset
+
+### Patch Changes
+
+- Updated dependencies [[`53e2e9d`](https://github.com/commercetools/test-data/commit/53e2e9d24416905f25178ef11a5be9900b4fa2e9)]:
+  - @commercetools-test-data/commons@7.7.0
+  - @commercetools-test-data/channel@7.7.0
+  - @commercetools-test-data/product-selection@7.7.0
+  - @commercetools-test-data/core@7.7.0
+  - @commercetools-test-data/utils@7.7.0
+
 ## 7.6.0
 
 ### Patch Changes
