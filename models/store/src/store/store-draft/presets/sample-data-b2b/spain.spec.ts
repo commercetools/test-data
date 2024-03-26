@@ -31,7 +31,15 @@ describe(`with spain preset`, () => {
           "nl-NL": "Spanje",
           "pt-PT": "Espanha",
         },
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "eu-warehouse",
@@ -98,7 +106,15 @@ describe(`with spain preset`, () => {
             "value": "Spain",
           },
         ],
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "eu-warehouse",

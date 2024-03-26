@@ -31,7 +31,15 @@ describe(`with deFrUk preset`, () => {
           "nl-NL": "Duitsland, Frankrijk en Verenigd Koninkrijk",
           "pt-PT": "Alemanha, França e Reino Unido",
         },
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "eu-warehouse",
@@ -98,7 +106,15 @@ describe(`with deFrUk preset`, () => {
             "value": "Germany, France and United Kingdom",
           },
         ],
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "eu-warehouse",

@@ -31,7 +31,15 @@ describe(`with usMediumCustomers preset`, () => {
           "nl-NL": "Middelgrote Klanten in de VS",
           "pt-PT": "Clientes Médios dos EUA",
         },
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "us-medium-customers-catalog",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "us-warehouse",
@@ -99,7 +107,15 @@ describe(`with usMediumCustomers preset`, () => {
             "value": "US Medium Customers",
           },
         ],
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "us-medium-customers-catalog",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "us-warehouse",

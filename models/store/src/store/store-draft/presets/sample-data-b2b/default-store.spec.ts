@@ -31,7 +31,15 @@ describe(`with defaultStore preset`, () => {
           "nl-NL": "Standaard",
           "pt-PT": "Padrão",
         },
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "default-warehouse",
@@ -99,7 +107,15 @@ describe(`with defaultStore preset`, () => {
             "value": "Default",
           },
         ],
-        "productSelections": undefined,
+        "productSelections": [
+          {
+            "active": true,
+            "productSelection": {
+              "key": "default-product-selection",
+              "typeId": "product-selection",
+            },
+          },
+        ],
         "supplyChannels": [
           {
             "key": "default-warehouse",

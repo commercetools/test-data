@@ -5,6 +5,7 @@ import category from './category-reference';
 import channel from './channel-reference';
 import customerGroup from './customer-group-reference';
 import customer from './customer-reference';
+import productSelection from './product-selection-reference';
 import productType from './product-type-reference';
 import quote from './quote-reference';
 import quoteRequest from './quote-request-reference';
@@ -22,6 +23,7 @@ const presets = {
   channel,
   customer,
   customerGroup,
+  productSelection,
   productType,
   quote,
   quoteRequest,
