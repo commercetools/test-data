@@ -24,7 +24,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "lifttech-solutions-ltd-de-cart-1",
         "lineItems": [
@@ -162,7 +162,7 @@ describe(`with lifttechSolutionsLtdDeCart1 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "lifttech-solutions-ltd-de-cart-1",
         "lineItems": [

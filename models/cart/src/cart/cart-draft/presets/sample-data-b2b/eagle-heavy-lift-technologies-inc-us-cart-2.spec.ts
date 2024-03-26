@@ -24,7 +24,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "eagle-heavy-lift-technologies-inc-us-cart-2",
         "lineItems": [
@@ -163,7 +163,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart2 preset`, () => {
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
+        "inventoryMode": "TrackOnly",
         "itemShippingAddresses": undefined,
         "key": "eagle-heavy-lift-technologies-inc-us-cart-2",
         "lineItems": [

@@ -24,7 +24,7 @@ import {
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
 import { CartDraft, LineItemDraft } from '../../../../index';
-import { origin } from '../../../constants';
+import { inventoryMode, origin } from '../../../constants';
 import type { TCartDraftBuilder } from '../../../types';
 
 const customer = CustomerDraft.presets.sampleDataB2B
@@ -69,6 +69,7 @@ const lifttechSolutionsLtdEsCart2 = (customerId?: string): TCartDraftBuilder =>
     .currency('EUR')
     .country('ES')
     .origin(origin.Customer)
+    .inventoryMode(inventoryMode.TrackOnly)
     .shippingAddress(address)
     .lineItems([
       LineItemDraft.presets
