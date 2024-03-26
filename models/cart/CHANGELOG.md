@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart
 
+## 7.7.0
+
+### Patch Changes
+
+- Updated dependencies [[`53e2e9d`](https://github.com/commercetools/test-data/commit/53e2e9d24416905f25178ef11a5be9900b4fa2e9)]:
+  - @commercetools-test-data/commons@7.7.0
+  - @commercetools-test-data/store@7.7.0
+  - @commercetools-test-data/business-unit@7.7.0
+  - @commercetools-test-data/channel@7.7.0
+  - @commercetools-test-data/customer@7.7.0
+  - @commercetools-test-data/discount-code@7.7.0
+  - @commercetools-test-data/product@7.7.0
+  - @commercetools-test-data/shipping-method@7.7.0
+  - @commercetools-test-data/tax-category@7.7.0
+  - @commercetools-test-data/core@7.7.0
+  - @commercetools-test-data/utils@7.7.0
+
 ## 7.6.0
 
 ### Patch Changes

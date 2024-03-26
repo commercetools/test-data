@@ -1,5 +1,16 @@
 # @commercetools-test-data/organization
 
+## 7.7.0
+
+### Patch Changes
+
+- Updated dependencies [[`53e2e9d`](https://github.com/commercetools/test-data/commit/53e2e9d24416905f25178ef11a5be9900b4fa2e9)]:
+  - @commercetools-test-data/commons@7.7.0
+  - @commercetools-test-data/user@7.7.0
+  - @commercetools-test-data/core@7.7.0
+  - @commercetools-test-data/graphql-types@7.7.0
+  - @commercetools-test-data/utils@7.7.0
+
 ## 7.6.0
 
 ### Patch Changes
