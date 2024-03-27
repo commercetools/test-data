@@ -46,9 +46,9 @@ const ledWorkLight = (): TProductDraftBuilder =>
         ['es-ES']('Luz de trabajo LED')
         ['pt-PT']('Luz de trabalho LED')
         ['en-US']('LED Work Light')
-        ['en-US']('LED GBrk Light')
-        ['en-US']('LED AUrk Light')
-        ['en-US']('LED NZrk Light')
+        ['en-GB']('LED Work Light')
+        ['en-AU']('LED Work Light')
+        ['en-NZ']('LED Work Light')
     )
     .description(
       LocalizedStringDraft.presets

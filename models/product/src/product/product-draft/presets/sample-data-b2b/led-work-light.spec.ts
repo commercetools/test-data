@@ -53,7 +53,10 @@ describe(`with ledWorkLight preset`, () => {
           "de": undefined,
           "de-DE": "LED-Arbeitsleuchte",
           "en": undefined,
-          "en-US": "LED NZrk Light",
+          "en-AU": "LED Work Light",
+          "en-GB": "LED Work Light",
+          "en-NZ": "LED Work Light",
+          "en-US": "LED Work Light",
           "es-ES": "Luz de trabajo LED",
           "fr": undefined,
           "fr-FR": "Lumière de travail LED",
@@ -195,7 +198,19 @@ describe(`with ledWorkLight preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "LED NZrk Light",
+            "value": "LED Work Light",
+          },
+          {
+            "locale": "en-GB",
+            "value": "LED Work Light",
+          },
+          {
+            "locale": "en-AU",
+            "value": "LED Work Light",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "LED Work Light",
           },
         ],
         "priceMode": "Standalone",

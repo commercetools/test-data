@@ -53,7 +53,10 @@ describe(`with fuelFilter preset`, () => {
           "de": undefined,
           "de-DE": "Kraftstofffilter",
           "en": undefined,
-          "en-US": "Fuel NZlter",
+          "en-AU": "Fuel Filter",
+          "en-GB": "Fuel Filter",
+          "en-NZ": "Fuel Filter",
+          "en-US": "Fuel Filter",
           "es-ES": "Filtro de combustible",
           "fr": undefined,
           "fr-FR": "Filtre à carburant",
@@ -194,7 +197,19 @@ describe(`with fuelFilter preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "Fuel NZlter",
+            "value": "Fuel Filter",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Fuel Filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Fuel Filter",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Fuel Filter",
           },
         ],
         "priceMode": "Standalone",

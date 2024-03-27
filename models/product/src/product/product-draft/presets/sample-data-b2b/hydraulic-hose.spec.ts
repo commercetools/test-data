@@ -53,7 +53,10 @@ describe(`with hydraulicHose preset`, () => {
           "de": undefined,
           "de-DE": "Hydraulikschlauch",
           "en": undefined,
-          "en-US": "Hydraulic NZse",
+          "en-AU": "Hydraulic Hose",
+          "en-GB": "Hydraulic Hose",
+          "en-NZ": "Hydraulic Hose",
+          "en-US": "Hydraulic Hose",
           "es-ES": "Manguera hidráulica",
           "fr": undefined,
           "fr-FR": "Tuyau hydraulique",
@@ -195,7 +198,19 @@ describe(`with hydraulicHose preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "Hydraulic NZse",
+            "value": "Hydraulic Hose",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Hydraulic Hose",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Hydraulic Hose",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Hydraulic Hose",
           },
         ],
         "priceMode": "Standalone",

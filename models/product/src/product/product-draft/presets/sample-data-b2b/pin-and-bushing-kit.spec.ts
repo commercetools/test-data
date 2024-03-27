@@ -53,7 +53,10 @@ describe(`with pinAndBushingKit preset`, () => {
           "de": undefined,
           "de-DE": "Stift- und Buchsensatz",
           "en": undefined,
-          "en-US": "Pin NZd Bushing Kit",
+          "en-AU": "Pin and Bushing Kit",
+          "en-GB": "Pin and Bushing Kit",
+          "en-NZ": "Pin and Bushing Kit",
+          "en-US": "Pin and Bushing Kit",
           "es-ES": "Kit de pasadores y casquillos",
           "fr": undefined,
           "fr-FR": "Kit de goupilles et de bagues",
@@ -195,7 +198,19 @@ describe(`with pinAndBushingKit preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "Pin NZd Bushing Kit",
+            "value": "Pin and Bushing Kit",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Pin and Bushing Kit",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Pin and Bushing Kit",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Pin and Bushing Kit",
           },
         ],
         "priceMode": "Standalone",

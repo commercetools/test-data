@@ -46,9 +46,9 @@ const hydraulicHose = (): TProductDraftBuilder =>
         ['es-ES']('Manguera hidráulica')
         ['pt-PT']('Mangueira hidráulica')
         ['en-US']('Hydraulic Hose')
-        ['en-US']('Hydraulic GBse')
-        ['en-US']('Hydraulic AUse')
-        ['en-US']('Hydraulic NZse')
+        ['en-GB']('Hydraulic Hose')
+        ['en-AU']('Hydraulic Hose')
+        ['en-NZ']('Hydraulic Hose')
     )
     .description(
       LocalizedStringDraft.presets

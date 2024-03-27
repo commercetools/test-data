@@ -46,9 +46,9 @@ const fuelFilter = (): TProductDraftBuilder =>
         ['es-ES']('Filtro de combustible')
         ['pt-PT']('Filtro de combustível')
         ['en-US']('Fuel Filter')
-        ['en-US']('Fuel GBlter')
-        ['en-US']('Fuel AUlter')
-        ['en-US']('Fuel NZlter')
+        ['en-GB']('Fuel Filter')
+        ['en-AU']('Fuel Filter')
+        ['en-NZ']('Fuel Filter')
     )
     .description(
       LocalizedStringDraft.presets

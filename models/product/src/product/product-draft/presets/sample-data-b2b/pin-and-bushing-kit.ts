@@ -46,9 +46,9 @@ const pinAndBushingKit = (): TProductDraftBuilder =>
         ['es-ES']('Kit de pasadores y casquillos')
         ['pt-PT']('Kit de pinos e buchas')
         ['en-US']('Pin and Bushing Kit')
-        ['en-US']('Pin GBd Bushing Kit')
-        ['en-US']('Pin AUd Bushing Kit')
-        ['en-US']('Pin NZd Bushing Kit')
+        ['en-GB']('Pin and Bushing Kit')
+        ['en-AU']('Pin and Bushing Kit')
+        ['en-NZ']('Pin and Bushing Kit')
     )
     .description(
       LocalizedStringDraft.presets
