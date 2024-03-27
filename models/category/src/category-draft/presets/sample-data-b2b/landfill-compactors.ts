@@ -37,7 +37,7 @@ const landfillCompactors = (): TCategoryDraftBuilder =>
         ['en-GB']('Compactors designed for landfill use')
         ['en-NZ']('Compactors designed for landfill use')
         ['pt-PT']('Compactadores projetados para uso em aterros')
-        ['en-US']('Compactors designed for landfill us')
+        ['en-US']('Compactors designed for landfill use')
     )
     .slug(
       LocalizedStringDraft.presets
