@@ -1,5 +1,7 @@
 # @commercetools-test-data/utils
 
+## 7.8.0
+
 ## 7.7.1
 
 ## 7.7.0
