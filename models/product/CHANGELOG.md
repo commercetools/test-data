@@ -1,5 +1,21 @@
 # @commercetools-test-data/product
 
+## 7.8.0
+
+### Minor Changes
+
+- [#540](https://github.com/commercetools/test-data/pull/540) [`b7ae1b4`](https://github.com/commercetools/test-data/commit/b7ae1b49c9c9b5b6459f64fdc2e85277761584a5) Thanks [@NickDevG](https://github.com/NickDevG)! - Adding missing locales for spare parts
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.8.0
+  - @commercetools-test-data/category@7.8.0
+  - @commercetools-test-data/commons@7.8.0
+  - @commercetools-test-data/product-type@7.8.0
+  - @commercetools-test-data/tax-category@7.8.0
+  - @commercetools-test-data/utils@7.8.0
+
 ## 7.7.1
 
 ### Patch Changes

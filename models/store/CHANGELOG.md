@@ -1,5 +1,16 @@
 # @commercetools-test-data/store
 
+## 7.8.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.8.0
+  - @commercetools-test-data/channel@7.8.0
+  - @commercetools-test-data/commons@7.8.0
+  - @commercetools-test-data/product-selection@7.8.0
+  - @commercetools-test-data/utils@7.8.0
+
 ## 7.7.1
 
 ### Patch Changes
