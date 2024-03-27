@@ -46,6 +46,9 @@ const taperedRollerBearing = (): TProductDraftBuilder =>
         ['es-ES']('Rodamiento de rodillos cónicos')
         ['pt-PT']('Rolamento de rolos cônicos')
         ['en-US']('Tapered Roller Bearing')
+        ['en-GB']('Tapered Roller Bearing')
+        ['en-AU']('Tapered Roller Bearing')
+        ['en-NZ']('Tapered Roller Bearing')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const taperedRollerBearing = (): TProductDraftBuilder =>
         ['es-ES']('Se utiliza en bujes de rueda y otros componentes.')
         ['pt-PT']('Usado em cubos de roda e outros componentes.')
         ['en-US']('Used in wheel hubs and other components.')
+        ['en-GB']('Used in wheel hubs and other components.')
+        ['en-AU']('Used in wheel hubs and other components.')
+        ['en-NZ']('Used in wheel hubs and other components.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const taperedRollerBearing = (): TProductDraftBuilder =>
         ['es-ES']('tapered-roller-bearing')
         ['pt-PT']('tapered-roller-bearing')
         ['en-US']('tapered-roller-bearing')
+        ['en-GB']('tapered-roller-bearing')
+        ['en-AU']('tapered-roller-bearing')
+        ['en-NZ']('tapered-roller-bearing')
     )
     .productType(
       KeyReferenceDraft.presets

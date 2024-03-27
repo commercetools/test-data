@@ -17,6 +17,9 @@ describe(`with pinAndBushingKit preset`, () => {
           "de": undefined,
           "de-DE": "Für Gelenke in Armen und Schaufeln von Baggern und Ladern.",
           "en": undefined,
+          "en-AU": "For joints in arms and buckets of excavators and loaders.",
+          "en-GB": "For joints in arms and buckets of excavators and loaders.",
+          "en-NZ": "For joints in arms and buckets of excavators and loaders.",
           "en-US": "For joints in arms and buckets of excavators and loaders.",
           "es-ES": "Para articulaciones en brazos y cucharones de excavadoras y cargadoras.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with pinAndBushingKit preset`, () => {
           "de": undefined,
           "de-DE": "Stift- und Buchsensatz",
           "en": undefined,
+          "en-AU": "Pin and Bushing Kit",
+          "en-GB": "Pin and Bushing Kit",
+          "en-NZ": "Pin and Bushing Kit",
           "en-US": "Pin and Bushing Kit",
           "es-ES": "Kit de pasadores y casquillos",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with pinAndBushingKit preset`, () => {
           "de": undefined,
           "de-DE": "pin-and-bushing-kit",
           "en": undefined,
+          "en-AU": "pin-and-bushing-kit",
+          "en-GB": "pin-and-bushing-kit",
+          "en-NZ": "pin-and-bushing-kit",
           "en-US": "pin-and-bushing-kit",
           "es-ES": "pin-and-bushing-kit",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with pinAndBushingKit preset`, () => {
             "locale": "en-US",
             "value": "For joints in arms and buckets of excavators and loaders.",
           },
+          {
+            "locale": "en-GB",
+            "value": "For joints in arms and buckets of excavators and loaders.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "For joints in arms and buckets of excavators and loaders.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "For joints in arms and buckets of excavators and loaders.",
+          },
         ],
         "key": "pin-and-bushing-kit",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with pinAndBushingKit preset`, () => {
             "locale": "en-US",
             "value": "Pin and Bushing Kit",
           },
+          {
+            "locale": "en-GB",
+            "value": "Pin and Bushing Kit",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Pin and Bushing Kit",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Pin and Bushing Kit",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with pinAndBushingKit preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "pin-and-bushing-kit",
+          },
+          {
+            "locale": "en-GB",
+            "value": "pin-and-bushing-kit",
+          },
+          {
+            "locale": "en-AU",
+            "value": "pin-and-bushing-kit",
+          },
+          {
+            "locale": "en-NZ",
             "value": "pin-and-bushing-kit",
           },
         ],

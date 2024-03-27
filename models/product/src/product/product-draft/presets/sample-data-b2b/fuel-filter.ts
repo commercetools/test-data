@@ -46,6 +46,9 @@ const fuelFilter = (): TProductDraftBuilder =>
         ['es-ES']('Filtro de combustible')
         ['pt-PT']('Filtro de combustível')
         ['en-US']('Fuel Filter')
+        ['en-GB']('Fuel Filter')
+        ['en-AU']('Fuel Filter')
+        ['en-NZ']('Fuel Filter')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const fuelFilter = (): TProductDraftBuilder =>
         ['es-ES']('Elimina residuos y contaminantes del combustible.')
         ['pt-PT']('Remove detritos e contaminantes do combustível.')
         ['en-US']('Removes debris and contaminants from fuel.')
+        ['en-GB']('Removes debris and contaminants from fuel.')
+        ['en-AU']('Removes debris and contaminants from fuel.')
+        ['en-NZ']('Removes debris and contaminants from fuel.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const fuelFilter = (): TProductDraftBuilder =>
         ['es-ES']('fuel-filter')
         ['pt-PT']('fuel-filter')
         ['en-US']('fuel-filter')
+        ['en-GB']('fuel-filter')
+        ['en-AU']('fuel-filter')
+        ['en-NZ']('fuel-filter')
     )
     .productType(
       KeyReferenceDraft.presets

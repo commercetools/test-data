@@ -16,7 +16,7 @@ describe(`with landfillCompactors preset`, () => {
           "en-AU": "Compactors designed for landfill use",
           "en-GB": "Compactors designed for landfill use",
           "en-NZ": "Compactors designed for landfill use",
-          "en-US": "Compactors designed for landfill us",
+          "en-US": "Compactors designed for landfill use",
           "es-ES": "Compactadores diseñados para uso en vertederos",
           "fr": undefined,
           "fr-FR": "Compacteurs conçus pour une utilisation en décharge",
@@ -114,7 +114,7 @@ describe(`with landfillCompactors preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "Compactors designed for landfill us",
+            "value": "Compactors designed for landfill use",
           },
         ],
         "externalId": undefined,

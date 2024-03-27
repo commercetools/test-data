@@ -16,7 +16,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           "en-AU": "Excavators used in large-scale mining operations",
           "en-GB": "Excavators used in large-scale mining operations",
           "en-NZ": "Excavators used in large-scale mining operations",
-          "en-US": "Excavators used in large-scale mining operation",
+          "en-US": "Excavators used in large-scale mining operations",
           "es-ES": "Excavadoras utilizadas en operaciones mineras a gran escala",
           "fr": undefined,
           "fr-FR": "Excavatrices utilisées dans les opérations minières à grande échelle",
@@ -114,7 +114,7 @@ describe(`with largeScaleMiningExcavators preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "Excavators used in large-scale mining operation",
+            "value": "Excavators used in large-scale mining operations",
           },
         ],
         "externalId": undefined,

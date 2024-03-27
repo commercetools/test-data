@@ -46,6 +46,9 @@ const starterMotor = (): TProductDraftBuilder =>
         ['es-ES']('Motor de arranque')
         ['pt-PT']('Motor de arranque')
         ['en-US']('Starter Motor')
+        ['en-GB']('Starter Motor')
+        ['en-AU']('Starter Motor')
+        ['en-NZ']('Starter Motor')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const starterMotor = (): TProductDraftBuilder =>
         ['es-ES']('Motor eléctrico que arranca el motor.')
         ['pt-PT']('Motor elétrico que arranca o motor.')
         ['en-US']('Electric motor that starts the engine.')
+        ['en-GB']('Electric motor that starts the engine.')
+        ['en-AU']('Electric motor that starts the engine.')
+        ['en-NZ']('Electric motor that starts the engine.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const starterMotor = (): TProductDraftBuilder =>
         ['es-ES']('starter-motor')
         ['pt-PT']('starter-motor')
         ['en-US']('starter-motor')
+        ['en-GB']('starter-motor')
+        ['en-AU']('starter-motor')
+        ['en-NZ']('starter-motor')
     )
     .productType(
       KeyReferenceDraft.presets

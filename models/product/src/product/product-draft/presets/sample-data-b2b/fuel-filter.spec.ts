@@ -17,6 +17,9 @@ describe(`with fuelFilter preset`, () => {
           "de": undefined,
           "de-DE": "Entfernt Schmutz und Verunreinigungen aus dem Kraftstoff.",
           "en": undefined,
+          "en-AU": "Removes debris and contaminants from fuel.",
+          "en-GB": "Removes debris and contaminants from fuel.",
+          "en-NZ": "Removes debris and contaminants from fuel.",
           "en-US": "Removes debris and contaminants from fuel.",
           "es-ES": "Elimina residuos y contaminantes del combustible.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with fuelFilter preset`, () => {
           "de": undefined,
           "de-DE": "Kraftstofffilter",
           "en": undefined,
+          "en-AU": "Fuel Filter",
+          "en-GB": "Fuel Filter",
+          "en-NZ": "Fuel Filter",
           "en-US": "Fuel Filter",
           "es-ES": "Filtro de combustible",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with fuelFilter preset`, () => {
           "de": undefined,
           "de-DE": "fuel-filter",
           "en": undefined,
+          "en-AU": "fuel-filter",
+          "en-GB": "fuel-filter",
+          "en-NZ": "fuel-filter",
           "en-US": "fuel-filter",
           "es-ES": "fuel-filter",
           "fr": undefined,
@@ -127,6 +136,18 @@ describe(`with fuelFilter preset`, () => {
             "locale": "en-US",
             "value": "Removes debris and contaminants from fuel.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Removes debris and contaminants from fuel.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Removes debris and contaminants from fuel.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Removes debris and contaminants from fuel.",
+          },
         ],
         "key": "fuel-filter",
         "masterVariant": {
@@ -178,6 +199,18 @@ describe(`with fuelFilter preset`, () => {
             "locale": "en-US",
             "value": "Fuel Filter",
           },
+          {
+            "locale": "en-GB",
+            "value": "Fuel Filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Fuel Filter",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Fuel Filter",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -213,6 +246,18 @@ describe(`with fuelFilter preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "fuel-filter",
+          },
+          {
+            "locale": "en-GB",
+            "value": "fuel-filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "fuel-filter",
+          },
+          {
+            "locale": "en-NZ",
             "value": "fuel-filter",
           },
         ],

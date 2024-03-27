@@ -44,7 +44,7 @@ const largeScaleMiningExcavators = (): TCategoryDraftBuilder =>
         ['pt-PT'](
           'Escavadeiras usadas em operações de mineração de grande escala'
         )
-        ['en-US']('Excavators used in large-scale mining operation')
+        ['en-US']('Excavators used in large-scale mining operations')
     )
     .slug(
       LocalizedStringDraft.presets

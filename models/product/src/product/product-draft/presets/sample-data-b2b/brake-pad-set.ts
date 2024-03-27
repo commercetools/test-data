@@ -46,6 +46,9 @@ const brakePadSet = (): TProductDraftBuilder =>
         ['es-ES']('Juego de pastillas de freno')
         ['pt-PT']('Conjunto de pastilhas de freio')
         ['en-US']('Brake Pad Set')
+        ['en-GB']('Brake Pad Set')
+        ['en-AU']('Brake Pad Set')
+        ['en-NZ']('Brake Pad Set')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const brakePadSet = (): TProductDraftBuilder =>
         ['es-ES']('Proporciona la fricción para detener el vehículo.')
         ['pt-PT']('Fornece a fricção para parar o veículo.')
         ['en-US']('Provides the friction to stop the vehicle.')
+        ['en-GB']('Provides the friction to stop the vehicle.')
+        ['en-AU']('Provides the friction to stop the vehicle.')
+        ['en-NZ']('Provides the friction to stop the vehicle.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const brakePadSet = (): TProductDraftBuilder =>
         ['es-ES']('brake-pad-set')
         ['pt-PT']('brake-pad-set')
         ['en-US']('brake-pad-set')
+        ['en-GB']('brake-pad-set')
+        ['en-AU']('brake-pad-set')
+        ['en-NZ']('brake-pad-set')
     )
     .productType(
       KeyReferenceDraft.presets

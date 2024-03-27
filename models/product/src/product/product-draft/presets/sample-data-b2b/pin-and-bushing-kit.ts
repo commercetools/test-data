@@ -46,6 +46,9 @@ const pinAndBushingKit = (): TProductDraftBuilder =>
         ['es-ES']('Kit de pasadores y casquillos')
         ['pt-PT']('Kit de pinos e buchas')
         ['en-US']('Pin and Bushing Kit')
+        ['en-GB']('Pin and Bushing Kit')
+        ['en-AU']('Pin and Bushing Kit')
+        ['en-NZ']('Pin and Bushing Kit')
     )
     .description(
       LocalizedStringDraft.presets
@@ -65,6 +68,9 @@ const pinAndBushingKit = (): TProductDraftBuilder =>
           'Para articulações em braços e baldes de escavadeiras e carregadeiras.'
         )
         ['en-US']('For joints in arms and buckets of excavators and loaders.')
+        ['en-GB']('For joints in arms and buckets of excavators and loaders.')
+        ['en-AU']('For joints in arms and buckets of excavators and loaders.')
+        ['en-NZ']('For joints in arms and buckets of excavators and loaders.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -76,6 +82,9 @@ const pinAndBushingKit = (): TProductDraftBuilder =>
         ['es-ES']('pin-and-bushing-kit')
         ['pt-PT']('pin-and-bushing-kit')
         ['en-US']('pin-and-bushing-kit')
+        ['en-GB']('pin-and-bushing-kit')
+        ['en-AU']('pin-and-bushing-kit')
+        ['en-NZ']('pin-and-bushing-kit')
     )
     .productType(
       KeyReferenceDraft.presets

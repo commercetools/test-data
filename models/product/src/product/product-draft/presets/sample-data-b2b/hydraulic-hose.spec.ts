@@ -17,6 +17,9 @@ describe(`with hydraulicHose preset`, () => {
           "de": undefined,
           "de-DE": "Flexibler Schlauch zum Übertragen von Hydraulikflüssigkeit zwischen Komponenten.",
           "en": undefined,
+          "en-AU": "Flexible hose to convey hydraulic fluid between components.",
+          "en-GB": "Flexible hose to convey hydraulic fluid between components.",
+          "en-NZ": "Flexible hose to convey hydraulic fluid between components.",
           "en-US": "Flexible hose to convey hydraulic fluid between components.",
           "es-ES": "Manguera flexible para transportar fluido hidráulico entre componentes.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with hydraulicHose preset`, () => {
           "de": undefined,
           "de-DE": "Hydraulikschlauch",
           "en": undefined,
+          "en-AU": "Hydraulic Hose",
+          "en-GB": "Hydraulic Hose",
+          "en-NZ": "Hydraulic Hose",
           "en-US": "Hydraulic Hose",
           "es-ES": "Manguera hidráulica",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with hydraulicHose preset`, () => {
           "de": undefined,
           "de-DE": "hydraulic-hose",
           "en": undefined,
+          "en-AU": "hydraulic-hose",
+          "en-GB": "hydraulic-hose",
+          "en-NZ": "hydraulic-hose",
           "en-US": "hydraulic-hose",
           "es-ES": "hydraulic-hose",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with hydraulicHose preset`, () => {
             "locale": "en-US",
             "value": "Flexible hose to convey hydraulic fluid between components.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Flexible hose to convey hydraulic fluid between components.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Flexible hose to convey hydraulic fluid between components.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Flexible hose to convey hydraulic fluid between components.",
+          },
         ],
         "key": "hydraulic-hose",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with hydraulicHose preset`, () => {
             "locale": "en-US",
             "value": "Hydraulic Hose",
           },
+          {
+            "locale": "en-GB",
+            "value": "Hydraulic Hose",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Hydraulic Hose",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Hydraulic Hose",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with hydraulicHose preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "hydraulic-hose",
+          },
+          {
+            "locale": "en-GB",
+            "value": "hydraulic-hose",
+          },
+          {
+            "locale": "en-AU",
+            "value": "hydraulic-hose",
+          },
+          {
+            "locale": "en-NZ",
             "value": "hydraulic-hose",
           },
         ],

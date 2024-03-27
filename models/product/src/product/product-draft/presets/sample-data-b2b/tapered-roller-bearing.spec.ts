@@ -18,6 +18,9 @@ describe(`with taperedRollerBearing preset`, () => {
           "de": undefined,
           "de-DE": "Wird in Radnaben und anderen Komponenten verwendet.",
           "en": undefined,
+          "en-AU": "Used in wheel hubs and other components.",
+          "en-GB": "Used in wheel hubs and other components.",
+          "en-NZ": "Used in wheel hubs and other components.",
           "en-US": "Used in wheel hubs and other components.",
           "es-ES": "Se utiliza en bujes de rueda y otros componentes.",
           "fr": undefined,
@@ -51,6 +54,9 @@ describe(`with taperedRollerBearing preset`, () => {
           "de": undefined,
           "de-DE": "Kegelrollenlager",
           "en": undefined,
+          "en-AU": "Tapered Roller Bearing",
+          "en-GB": "Tapered Roller Bearing",
+          "en-NZ": "Tapered Roller Bearing",
           "en-US": "Tapered Roller Bearing",
           "es-ES": "Rodamiento de rodillos cónicos",
           "fr": undefined,
@@ -70,6 +76,9 @@ describe(`with taperedRollerBearing preset`, () => {
           "de": undefined,
           "de-DE": "tapered-roller-bearing",
           "en": undefined,
+          "en-AU": "tapered-roller-bearing",
+          "en-GB": "tapered-roller-bearing",
+          "en-NZ": "tapered-roller-bearing",
           "en-US": "tapered-roller-bearing",
           "es-ES": "tapered-roller-bearing",
           "fr": undefined,
@@ -129,6 +138,18 @@ describe(`with taperedRollerBearing preset`, () => {
             "locale": "en-US",
             "value": "Used in wheel hubs and other components.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Used in wheel hubs and other components.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Used in wheel hubs and other components.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Used in wheel hubs and other components.",
+          },
         ],
         "key": "tapered-roller-bearing",
         "masterVariant": {
@@ -180,6 +201,18 @@ describe(`with taperedRollerBearing preset`, () => {
             "locale": "en-US",
             "value": "Tapered Roller Bearing",
           },
+          {
+            "locale": "en-GB",
+            "value": "Tapered Roller Bearing",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Tapered Roller Bearing",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Tapered Roller Bearing",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -215,6 +248,18 @@ describe(`with taperedRollerBearing preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "tapered-roller-bearing",
+          },
+          {
+            "locale": "en-GB",
+            "value": "tapered-roller-bearing",
+          },
+          {
+            "locale": "en-AU",
+            "value": "tapered-roller-bearing",
+          },
+          {
+            "locale": "en-NZ",
             "value": "tapered-roller-bearing",
           },
         ],

@@ -17,6 +17,9 @@ describe(`with brakePadSet preset`, () => {
           "de": undefined,
           "de-DE": "Stellt die Reibung bereit, um das Fahrzeug anzuhalten.",
           "en": undefined,
+          "en-AU": "Provides the friction to stop the vehicle.",
+          "en-GB": "Provides the friction to stop the vehicle.",
+          "en-NZ": "Provides the friction to stop the vehicle.",
           "en-US": "Provides the friction to stop the vehicle.",
           "es-ES": "Proporciona la fricción para detener el vehículo.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with brakePadSet preset`, () => {
           "de": undefined,
           "de-DE": "Bremsbelagsatz",
           "en": undefined,
+          "en-AU": "Brake Pad Set",
+          "en-GB": "Brake Pad Set",
+          "en-NZ": "Brake Pad Set",
           "en-US": "Brake Pad Set",
           "es-ES": "Juego de pastillas de freno",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with brakePadSet preset`, () => {
           "de": undefined,
           "de-DE": "brake-pad-set",
           "en": undefined,
+          "en-AU": "brake-pad-set",
+          "en-GB": "brake-pad-set",
+          "en-NZ": "brake-pad-set",
           "en-US": "brake-pad-set",
           "es-ES": "brake-pad-set",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with brakePadSet preset`, () => {
             "locale": "en-US",
             "value": "Provides the friction to stop the vehicle.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Provides the friction to stop the vehicle.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Provides the friction to stop the vehicle.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Provides the friction to stop the vehicle.",
+          },
         ],
         "key": "brake-pad-set",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with brakePadSet preset`, () => {
             "locale": "en-US",
             "value": "Brake Pad Set",
           },
+          {
+            "locale": "en-GB",
+            "value": "Brake Pad Set",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Brake Pad Set",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Brake Pad Set",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with brakePadSet preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "brake-pad-set",
+          },
+          {
+            "locale": "en-GB",
+            "value": "brake-pad-set",
+          },
+          {
+            "locale": "en-AU",
+            "value": "brake-pad-set",
+          },
+          {
+            "locale": "en-NZ",
             "value": "brake-pad-set",
           },
         ],

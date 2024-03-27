@@ -17,6 +17,9 @@ describe(`with alternator preset`, () => {
           "de": undefined,
           "de-DE": "Lädt die Batterie und versorgt das elektrische System mit Strom.",
           "en": undefined,
+          "en-AU": "Charges the battery and powers the electrical system.",
+          "en-GB": "Charges the battery and powers the electrical system.",
+          "en-NZ": "Charges the battery and powers the electrical system.",
           "en-US": "Charges the battery and powers the electrical system.",
           "es-ES": "Carga la batería y alimenta el sistema eléctrico.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with alternator preset`, () => {
           "de": undefined,
           "de-DE": "Lichtmaschine",
           "en": undefined,
+          "en-AU": "Alternator",
+          "en-GB": "Alternator",
+          "en-NZ": "Alternator",
           "en-US": "Alternator",
           "es-ES": "Alternador",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with alternator preset`, () => {
           "de": undefined,
           "de-DE": "alternator",
           "en": undefined,
+          "en-AU": "alternator",
+          "en-GB": "alternator",
+          "en-NZ": "alternator",
           "en-US": "alternator",
           "es-ES": "alternator",
           "fr": undefined,
@@ -127,6 +136,18 @@ describe(`with alternator preset`, () => {
             "locale": "en-US",
             "value": "Charges the battery and powers the electrical system.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Charges the battery and powers the electrical system.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Charges the battery and powers the electrical system.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Charges the battery and powers the electrical system.",
+          },
         ],
         "key": "alternator",
         "masterVariant": {
@@ -178,6 +199,18 @@ describe(`with alternator preset`, () => {
             "locale": "en-US",
             "value": "Alternator",
           },
+          {
+            "locale": "en-GB",
+            "value": "Alternator",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Alternator",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Alternator",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -213,6 +246,18 @@ describe(`with alternator preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "alternator",
+          },
+          {
+            "locale": "en-GB",
+            "value": "alternator",
+          },
+          {
+            "locale": "en-AU",
+            "value": "alternator",
+          },
+          {
+            "locale": "en-NZ",
             "value": "alternator",
           },
         ],

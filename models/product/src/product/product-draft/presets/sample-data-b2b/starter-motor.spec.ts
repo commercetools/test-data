@@ -17,6 +17,9 @@ describe(`with starterMotor preset`, () => {
           "de": undefined,
           "de-DE": "Elektromotor, der den Motor startet.",
           "en": undefined,
+          "en-AU": "Electric motor that starts the engine.",
+          "en-GB": "Electric motor that starts the engine.",
+          "en-NZ": "Electric motor that starts the engine.",
           "en-US": "Electric motor that starts the engine.",
           "es-ES": "Motor eléctrico que arranca el motor.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with starterMotor preset`, () => {
           "de": undefined,
           "de-DE": "Anlasser",
           "en": undefined,
+          "en-AU": "Starter Motor",
+          "en-GB": "Starter Motor",
+          "en-NZ": "Starter Motor",
           "en-US": "Starter Motor",
           "es-ES": "Motor de arranque",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with starterMotor preset`, () => {
           "de": undefined,
           "de-DE": "starter-motor",
           "en": undefined,
+          "en-AU": "starter-motor",
+          "en-GB": "starter-motor",
+          "en-NZ": "starter-motor",
           "en-US": "starter-motor",
           "es-ES": "starter-motor",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with starterMotor preset`, () => {
             "locale": "en-US",
             "value": "Electric motor that starts the engine.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Electric motor that starts the engine.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Electric motor that starts the engine.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Electric motor that starts the engine.",
+          },
         ],
         "key": "starter-motor",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with starterMotor preset`, () => {
             "locale": "en-US",
             "value": "Starter Motor",
           },
+          {
+            "locale": "en-GB",
+            "value": "Starter Motor",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Starter Motor",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Starter Motor",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with starterMotor preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "starter-motor",
+          },
+          {
+            "locale": "en-GB",
+            "value": "starter-motor",
+          },
+          {
+            "locale": "en-AU",
+            "value": "starter-motor",
+          },
+          {
+            "locale": "en-NZ",
             "value": "starter-motor",
           },
         ],
