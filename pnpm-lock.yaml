@@ -344,6 +344,45 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
 
+  models/custom-application:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.23.4
+      '@commercetools-frontend/application-config':
+        specifier: ^22.10.0
+        version: 22.10.0
+      '@commercetools-frontend/constants':
+        specifier: ^22.10.0
+        version: 22.10.0
+      '@commercetools-test-data/commons':
+        specifier: 7.4.0
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 7.4.0
+        version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 7.4.0
+        version: link:../../graphql-types
+      '@commercetools-test-data/utils':
+        specifier: 7.4.0
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.0.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.3.1
+      '@types/lodash':
+        specifier: ^4.14.182
+        version: 4.14.202
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+
   models/custom-object:
     dependencies:
       '@babel/runtime':
@@ -3092,7 +3131,7 @@ packages:
       '@commercetools-frontend/babel-preset-mc-app': 22.10.0
       '@commercetools-frontend/constants': 22.10.0
       '@types/dompurify': 2.4.0
-      '@types/lodash': 4.14.200
+      '@types/lodash': 4.14.202
       '@types/react': 17.0.68
       ajv: 8.12.0
       core-js: 3.32.2
@@ -5014,10 +5053,6 @@ packages:
     resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
     dev: false
 
-  /@types/lodash@4.14.200:
-    resolution: {integrity: sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==}
-    dev: false
-
   /@types/lodash@4.14.202:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
     dev: false
@@ -5317,6 +5352,7 @@ packages:
 
   /abab@2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
+    deprecated: Use your platform's native atob() and btoa() methods instead
     dev: false
 
   /acorn-globals@7.0.1:
@@ -6693,6 +6729,7 @@ packages:
   /domexception@4.0.0:
     resolution: {integrity: sha512-A2is4PLG+eeSfoTMA95/s4pvAoSo2mKtiM5jlHkAVewmiO8ISFTFKZjH7UAM1Atli/OT/7JHOrJRJiMKUZKYBw==}
     engines: {node: '>=12'}
+    deprecated: Use your platform's native DOMException instead
     dependencies:
       webidl-conversions: 7.0.0
     dev: false
