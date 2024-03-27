@@ -26,16 +26,16 @@ const bogo = (cartDiscountId: string): TDiscountCodeDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE']('"Kaufen Sie einen und erhalten Sie den zweiten kostenlos')
-        ['it-IT']('"Compra uno e ricevi il secondo gratis')
-        ['nl-NL']('"Koop er één en krijg de tweede gratis')
-        ['fr-FR']('"Achetez-en un et recevez le deuxième gratuitement')
-        ['en-AU']('"Buy One and Receive the Second for Free')
-        ['es-ES']('"Compra uno y recibe el segundo gratis')
-        ['en-GB']('"Buy One and Receive the Second for Free')
-        ['en-NZ']('"Buy One and Receive the Second for Free')
-        ['pt-PT']('"Compre um e receba o segundo de graça')
-        ['en-US']('"Buy One and Receive the Second for Free')
+        ['de-DE']('Kaufen Sie einen und erhalten Sie den zweiten kostenlos')
+        ['it-IT']('Compra uno e ricevi il secondo gratis')
+        ['nl-NL']('Koop er één en krijg de tweede gratis')
+        ['fr-FR']('Achetez-en un et recevez le deuxième gratuitement')
+        ['en-AU']('Buy One and Receive the Second for Free')
+        ['es-ES']('Compra uno y recibe el segundo gratis')
+        ['en-GB']('Buy One and Receive the Second for Free')
+        ['en-NZ']('Buy One and Receive the Second for Free')
+        ['pt-PT']('Compre um e receba o segundo de graça')
+        ['en-US']('Buy One and Receive the Second for Free')
     )
     .cartDiscounts([
       ReferenceDraft.random().id(cartDiscountId).typeId('cart-discount'),
