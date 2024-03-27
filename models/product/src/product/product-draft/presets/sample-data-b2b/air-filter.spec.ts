@@ -17,6 +17,9 @@ describe(`with airFilter preset`, () => {
           "de": undefined,
           "de-DE": "Filtert die in den Motor eindringende Luft, um Motorverschleiß zu verhindern.",
           "en": undefined,
+          "en-AU": "Filters air entering the engine to prevent engine wear.",
+          "en-GB": "Filters air entering the engine to prevent engine wear.",
+          "en-NZ": "Filters air entering the engine to prevent engine wear.",
           "en-US": "Filters air entering the engine to prevent engine wear.",
           "es-ES": "Filtra el aire que entra en el motor para prevenir el desgaste del motor.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with airFilter preset`, () => {
           "de": undefined,
           "de-DE": "Luftfilter",
           "en": undefined,
+          "en-AU": "Air Filter",
+          "en-GB": "Air Filter",
+          "en-NZ": "Air Filter",
           "en-US": "Air Filter",
           "es-ES": "Filtro de aire",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with airFilter preset`, () => {
           "de": undefined,
           "de-DE": "air-filter",
           "en": undefined,
+          "en-AU": "air-filter",
+          "en-GB": "air-filter",
+          "en-NZ": "air-filter",
           "en-US": "air-filter",
           "es-ES": "air-filter",
           "fr": undefined,
@@ -127,6 +136,18 @@ describe(`with airFilter preset`, () => {
             "locale": "en-US",
             "value": "Filters air entering the engine to prevent engine wear.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Filters air entering the engine to prevent engine wear.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Filters air entering the engine to prevent engine wear.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Filters air entering the engine to prevent engine wear.",
+          },
         ],
         "key": "air-filter",
         "masterVariant": {
@@ -178,6 +199,18 @@ describe(`with airFilter preset`, () => {
             "locale": "en-US",
             "value": "Air Filter",
           },
+          {
+            "locale": "en-GB",
+            "value": "Air Filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Air Filter",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Air Filter",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -213,6 +246,18 @@ describe(`with airFilter preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "air-filter",
+          },
+          {
+            "locale": "en-GB",
+            "value": "air-filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "air-filter",
+          },
+          {
+            "locale": "en-NZ",
             "value": "air-filter",
           },
         ],

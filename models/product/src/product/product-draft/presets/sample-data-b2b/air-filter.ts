@@ -46,6 +46,9 @@ const airFilter = (): TProductDraftBuilder =>
         ['es-ES']('Filtro de aire')
         ['pt-PT']('Filtro de ar')
         ['en-US']('Air Filter')
+        ['en-GB']('Air Filter')
+        ['en-AU']('Air Filter')
+        ['en-NZ']('Air Filter')
     )
     .description(
       LocalizedStringDraft.presets
@@ -69,6 +72,9 @@ const airFilter = (): TProductDraftBuilder =>
           'Filtra o ar que entra no motor para prevenir o desgaste do motor.'
         )
         ['en-US']('Filters air entering the engine to prevent engine wear.')
+        ['en-GB']('Filters air entering the engine to prevent engine wear.')
+        ['en-AU']('Filters air entering the engine to prevent engine wear.')
+        ['en-NZ']('Filters air entering the engine to prevent engine wear.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -80,6 +86,9 @@ const airFilter = (): TProductDraftBuilder =>
         ['es-ES']('air-filter')
         ['pt-PT']('air-filter')
         ['en-US']('air-filter')
+        ['en-GB']('air-filter')
+        ['en-AU']('air-filter')
+        ['en-NZ']('air-filter')
     )
     .productType(
       KeyReferenceDraft.presets

@@ -46,6 +46,9 @@ const pneumaticTire = (): TProductDraftBuilder =>
         ['es-ES']('Neumático neumático')
         ['pt-PT']('Pneu pneumático')
         ['en-US']('Pneumatic Tire')
+        ['en-GB']('Pneumatic Tire')
+        ['en-AU']('Pneumatic Tire')
+        ['en-NZ']('Pneumatic Tire')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const pneumaticTire = (): TProductDraftBuilder =>
         ['es-ES']('Neumático de goma para cargadores y camiones.')
         ['pt-PT']('Pneu de borracha para carregadeiras e caminhões.')
         ['en-US']('Rubber tire for loaders and trucks.')
+        ['en-GB']('Rubber tire for loaders and trucks.')
+        ['en-AU']('Rubber tire for loaders and trucks.')
+        ['en-NZ']('Rubber tire for loaders and trucks.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const pneumaticTire = (): TProductDraftBuilder =>
         ['es-ES']('pneumatic-tire')
         ['pt-PT']('pneumatic-tire')
         ['en-US']('pneumatic-tire')
+        ['en-GB']('pneumatic-tire')
+        ['en-AU']('pneumatic-tire')
+        ['en-NZ']('pneumatic-tire')
     )
     .productType(
       KeyReferenceDraft.presets

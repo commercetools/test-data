@@ -46,6 +46,9 @@ const ledWorkLight = (): TProductDraftBuilder =>
         ['es-ES']('Luz de trabajo LED')
         ['pt-PT']('Luz de trabalho LED')
         ['en-US']('LED Work Light')
+        ['en-US']('LED GBrk Light')
+        ['en-US']('LED AUrk Light')
+        ['en-US']('LED NZrk Light')
     )
     .description(
       LocalizedStringDraft.presets
@@ -69,6 +72,9 @@ const ledWorkLight = (): TProductDraftBuilder =>
           'Fornece iluminação para trabalho noturno ou em condições de pouca luz.'
         )
         ['en-US']('Provides illumination for night-time or low-light work.')
+        ['en-GB']('Provides illumination for night-time or low-light work.')
+        ['en-AU']('Provides illumination for night-time or low-light work.')
+        ['en-NZ']('Provides illumination for night-time or low-light work.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -80,6 +86,9 @@ const ledWorkLight = (): TProductDraftBuilder =>
         ['es-ES']('led-work-light')
         ['pt-PT']('led-work-light')
         ['en-US']('led-work-light')
+        ['en-GB']('led-work-light')
+        ['en-AU']('led-work-light')
+        ['en-NZ']('led-work-light')
     )
     .productType(
       KeyReferenceDraft.presets

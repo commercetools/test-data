@@ -46,6 +46,9 @@ const pistonRingSet = (): TProductDraftBuilder =>
         ['es-ES']('Juego de anillos de pistón')
         ['pt-PT']('Conjunto de anéis de pistão')
         ['en-US']('Piston Ring Set')
+        ['en-GB']('Piston Ring Set')
+        ['en-AU']('Piston Ring Set')
+        ['en-NZ']('Piston Ring Set')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const pistonRingSet = (): TProductDraftBuilder =>
         ['es-ES']('Sella la cámara de combustión y regula el aceite.')
         ['pt-PT']('Veda a câmara de combustão e regula o óleo.')
         ['en-US']('Seals the combustion chamber and regulates oil.')
+        ['en-GB']('Seals the combustion chamber and regulates oil.')
+        ['en-AU']('Seals the combustion chamber and regulates oil.')
+        ['en-NZ']('Seals the combustion chamber and regulates oil.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const pistonRingSet = (): TProductDraftBuilder =>
         ['es-ES']('piston-ring-set')
         ['pt-PT']('piston-ring-set')
         ['en-US']('piston-ring-set')
+        ['en-GB']('piston-ring-set')
+        ['en-AU']('piston-ring-set')
+        ['en-NZ']('piston-ring-set')
     )
     .productType(
       KeyReferenceDraft.presets

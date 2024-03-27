@@ -17,6 +17,9 @@ describe(`with pneumaticTire preset`, () => {
           "de": undefined,
           "de-DE": "Gummireifen für Lader und Lkw.",
           "en": undefined,
+          "en-AU": "Rubber tire for loaders and trucks.",
+          "en-GB": "Rubber tire for loaders and trucks.",
+          "en-NZ": "Rubber tire for loaders and trucks.",
           "en-US": "Rubber tire for loaders and trucks.",
           "es-ES": "Neumático de goma para cargadores y camiones.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with pneumaticTire preset`, () => {
           "de": undefined,
           "de-DE": "Luftreifen",
           "en": undefined,
+          "en-AU": "Pneumatic Tire",
+          "en-GB": "Pneumatic Tire",
+          "en-NZ": "Pneumatic Tire",
           "en-US": "Pneumatic Tire",
           "es-ES": "Neumático neumático",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with pneumaticTire preset`, () => {
           "de": undefined,
           "de-DE": "pneumatic-tire",
           "en": undefined,
+          "en-AU": "pneumatic-tire",
+          "en-GB": "pneumatic-tire",
+          "en-NZ": "pneumatic-tire",
           "en-US": "pneumatic-tire",
           "es-ES": "pneumatic-tire",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with pneumaticTire preset`, () => {
             "locale": "en-US",
             "value": "Rubber tire for loaders and trucks.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Rubber tire for loaders and trucks.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Rubber tire for loaders and trucks.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Rubber tire for loaders and trucks.",
+          },
         ],
         "key": "pneumatic-tire",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with pneumaticTire preset`, () => {
             "locale": "en-US",
             "value": "Pneumatic Tire",
           },
+          {
+            "locale": "en-GB",
+            "value": "Pneumatic Tire",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Pneumatic Tire",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Pneumatic Tire",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with pneumaticTire preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "pneumatic-tire",
+          },
+          {
+            "locale": "en-GB",
+            "value": "pneumatic-tire",
+          },
+          {
+            "locale": "en-AU",
+            "value": "pneumatic-tire",
+          },
+          {
+            "locale": "en-NZ",
             "value": "pneumatic-tire",
           },
         ],

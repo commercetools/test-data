@@ -17,6 +17,9 @@ describe(`with pistonRingSet preset`, () => {
           "de": undefined,
           "de-DE": "Dichtet den Verbrennungsraum ab und reguliert das Öl.",
           "en": undefined,
+          "en-AU": "Seals the combustion chamber and regulates oil.",
+          "en-GB": "Seals the combustion chamber and regulates oil.",
+          "en-NZ": "Seals the combustion chamber and regulates oil.",
           "en-US": "Seals the combustion chamber and regulates oil.",
           "es-ES": "Sella la cámara de combustión y regula el aceite.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with pistonRingSet preset`, () => {
           "de": undefined,
           "de-DE": "Kolbenringsatz",
           "en": undefined,
+          "en-AU": "Piston Ring Set",
+          "en-GB": "Piston Ring Set",
+          "en-NZ": "Piston Ring Set",
           "en-US": "Piston Ring Set",
           "es-ES": "Juego de anillos de pistón",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with pistonRingSet preset`, () => {
           "de": undefined,
           "de-DE": "piston-ring-set",
           "en": undefined,
+          "en-AU": "piston-ring-set",
+          "en-GB": "piston-ring-set",
+          "en-NZ": "piston-ring-set",
           "en-US": "piston-ring-set",
           "es-ES": "piston-ring-set",
           "fr": undefined,
@@ -128,6 +137,18 @@ describe(`with pistonRingSet preset`, () => {
             "locale": "en-US",
             "value": "Seals the combustion chamber and regulates oil.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Seals the combustion chamber and regulates oil.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Seals the combustion chamber and regulates oil.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Seals the combustion chamber and regulates oil.",
+          },
         ],
         "key": "piston-ring-set",
         "masterVariant": {
@@ -179,6 +200,18 @@ describe(`with pistonRingSet preset`, () => {
             "locale": "en-US",
             "value": "Piston Ring Set",
           },
+          {
+            "locale": "en-GB",
+            "value": "Piston Ring Set",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Piston Ring Set",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Piston Ring Set",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -214,6 +247,18 @@ describe(`with pistonRingSet preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "piston-ring-set",
+          },
+          {
+            "locale": "en-GB",
+            "value": "piston-ring-set",
+          },
+          {
+            "locale": "en-AU",
+            "value": "piston-ring-set",
+          },
+          {
+            "locale": "en-NZ",
             "value": "piston-ring-set",
           },
         ],

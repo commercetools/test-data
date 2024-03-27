@@ -17,6 +17,9 @@ describe(`with oilFilter preset`, () => {
           "de": undefined,
           "de-DE": "Entfernt Verunreinigungen aus dem Motoröl.",
           "en": undefined,
+          "en-AU": "Removes contaminants from engine oil.",
+          "en-GB": "Removes contaminants from engine oil.",
+          "en-NZ": "Removes contaminants from engine oil.",
           "en-US": "Removes contaminants from engine oil.",
           "es-ES": "Elimina los contaminantes del aceite del motor.",
           "fr": undefined,
@@ -50,6 +53,9 @@ describe(`with oilFilter preset`, () => {
           "de": undefined,
           "de-DE": "Ölfilter",
           "en": undefined,
+          "en-AU": "Oil Filter",
+          "en-GB": "Oil Filter",
+          "en-NZ": "Oil Filter",
           "en-US": "Oil Filter",
           "es-ES": "Filtro de aceite",
           "fr": undefined,
@@ -69,6 +75,9 @@ describe(`with oilFilter preset`, () => {
           "de": undefined,
           "de-DE": "oil-filter",
           "en": undefined,
+          "en-AU": "oil-filter",
+          "en-GB": "oil-filter",
+          "en-NZ": "oil-filter",
           "en-US": "oil-filter",
           "es-ES": "oil-filter",
           "fr": undefined,
@@ -127,6 +136,18 @@ describe(`with oilFilter preset`, () => {
             "locale": "en-US",
             "value": "Removes contaminants from engine oil.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Removes contaminants from engine oil.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Removes contaminants from engine oil.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Removes contaminants from engine oil.",
+          },
         ],
         "key": "oil-filter",
         "masterVariant": {
@@ -178,6 +199,18 @@ describe(`with oilFilter preset`, () => {
             "locale": "en-US",
             "value": "Oil Filter",
           },
+          {
+            "locale": "en-GB",
+            "value": "Oil Filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Oil Filter",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Oil Filter",
+          },
         ],
         "priceMode": "Standalone",
         "productType": {
@@ -213,6 +246,18 @@ describe(`with oilFilter preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "oil-filter",
+          },
+          {
+            "locale": "en-GB",
+            "value": "oil-filter",
+          },
+          {
+            "locale": "en-AU",
+            "value": "oil-filter",
+          },
+          {
+            "locale": "en-NZ",
             "value": "oil-filter",
           },
         ],

@@ -17,6 +17,9 @@ describe(`with ledWorkLight preset`, () => {
           "de": undefined,
           "de-DE": "Bietet Beleuchtung für Arbeiten bei Nacht oder bei schwachem Licht.",
           "en": undefined,
+          "en-AU": "Provides illumination for night-time or low-light work.",
+          "en-GB": "Provides illumination for night-time or low-light work.",
+          "en-NZ": "Provides illumination for night-time or low-light work.",
           "en-US": "Provides illumination for night-time or low-light work.",
           "es-ES": "Proporciona iluminación para trabajar de noche o en condiciones de poca luz.",
           "fr": undefined,
@@ -50,7 +53,7 @@ describe(`with ledWorkLight preset`, () => {
           "de": undefined,
           "de-DE": "LED-Arbeitsleuchte",
           "en": undefined,
-          "en-US": "LED Work Light",
+          "en-US": "LED NZrk Light",
           "es-ES": "Luz de trabajo LED",
           "fr": undefined,
           "fr-FR": "Lumière de travail LED",
@@ -69,6 +72,9 @@ describe(`with ledWorkLight preset`, () => {
           "de": undefined,
           "de-DE": "led-work-light",
           "en": undefined,
+          "en-AU": "led-work-light",
+          "en-GB": "led-work-light",
+          "en-NZ": "led-work-light",
           "en-US": "led-work-light",
           "es-ES": "led-work-light",
           "fr": undefined,
@@ -128,6 +134,18 @@ describe(`with ledWorkLight preset`, () => {
             "locale": "en-US",
             "value": "Provides illumination for night-time or low-light work.",
           },
+          {
+            "locale": "en-GB",
+            "value": "Provides illumination for night-time or low-light work.",
+          },
+          {
+            "locale": "en-AU",
+            "value": "Provides illumination for night-time or low-light work.",
+          },
+          {
+            "locale": "en-NZ",
+            "value": "Provides illumination for night-time or low-light work.",
+          },
         ],
         "key": "led-work-light",
         "masterVariant": {
@@ -177,7 +195,7 @@ describe(`with ledWorkLight preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "LED Work Light",
+            "value": "LED NZrk Light",
           },
         ],
         "priceMode": "Standalone",
@@ -214,6 +232,18 @@ describe(`with ledWorkLight preset`, () => {
           },
           {
             "locale": "en-US",
+            "value": "led-work-light",
+          },
+          {
+            "locale": "en-GB",
+            "value": "led-work-light",
+          },
+          {
+            "locale": "en-AU",
+            "value": "led-work-light",
+          },
+          {
+            "locale": "en-NZ",
             "value": "led-work-light",
           },
         ],

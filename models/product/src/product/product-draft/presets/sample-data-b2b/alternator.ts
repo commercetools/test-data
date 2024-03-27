@@ -46,6 +46,9 @@ const alternator = (): TProductDraftBuilder =>
         ['es-ES']('Alternador')
         ['pt-PT']('Alternador')
         ['en-US']('Alternator')
+        ['en-GB']('Alternator')
+        ['en-AU']('Alternator')
+        ['en-NZ']('Alternator')
     )
     .description(
       LocalizedStringDraft.presets
@@ -61,6 +64,9 @@ const alternator = (): TProductDraftBuilder =>
         ['es-ES']('Carga la batería y alimenta el sistema eléctrico.')
         ['pt-PT']('Carrega a bateria e alimenta o sistema elétrico.')
         ['en-US']('Charges the battery and powers the electrical system.')
+        ['en-GB']('Charges the battery and powers the electrical system.')
+        ['en-AU']('Charges the battery and powers the electrical system.')
+        ['en-NZ']('Charges the battery and powers the electrical system.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -72,6 +78,9 @@ const alternator = (): TProductDraftBuilder =>
         ['es-ES']('alternator')
         ['pt-PT']('alternator')
         ['en-US']('alternator')
+        ['en-GB']('alternator')
+        ['en-AU']('alternator')
+        ['en-NZ']('alternator')
     )
     .productType(
       KeyReferenceDraft.presets

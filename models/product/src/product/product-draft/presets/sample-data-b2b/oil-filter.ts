@@ -46,6 +46,9 @@ const oilFilter = (): TProductDraftBuilder =>
         ['es-ES']('Filtro de aceite')
         ['pt-PT']('Filtro de óleo')
         ['en-US']('Oil Filter')
+        ['en-GB']('Oil Filter')
+        ['en-AU']('Oil Filter')
+        ['en-NZ']('Oil Filter')
     )
     .description(
       LocalizedStringDraft.presets
@@ -57,6 +60,9 @@ const oilFilter = (): TProductDraftBuilder =>
         ['es-ES']('Elimina los contaminantes del aceite del motor.')
         ['pt-PT']('Remove contaminantes do óleo do motor.')
         ['en-US']('Removes contaminants from engine oil.')
+        ['en-GB']('Removes contaminants from engine oil.')
+        ['en-AU']('Removes contaminants from engine oil.')
+        ['en-NZ']('Removes contaminants from engine oil.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -68,6 +74,9 @@ const oilFilter = (): TProductDraftBuilder =>
         ['es-ES']('oil-filter')
         ['pt-PT']('oil-filter')
         ['en-US']('oil-filter')
+        ['en-GB']('oil-filter')
+        ['en-AU']('oil-filter')
+        ['en-NZ']('oil-filter')
     )
     .productType(
       KeyReferenceDraft.presets

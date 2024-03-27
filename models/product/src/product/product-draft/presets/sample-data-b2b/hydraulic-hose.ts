@@ -46,6 +46,9 @@ const hydraulicHose = (): TProductDraftBuilder =>
         ['es-ES']('Manguera hidráulica')
         ['pt-PT']('Mangueira hidráulica')
         ['en-US']('Hydraulic Hose')
+        ['en-US']('Hydraulic GBse')
+        ['en-US']('Hydraulic AUse')
+        ['en-US']('Hydraulic NZse')
     )
     .description(
       LocalizedStringDraft.presets
@@ -69,6 +72,9 @@ const hydraulicHose = (): TProductDraftBuilder =>
           'Mangueira flexível para conduzir fluido hidráulico entre componentes.'
         )
         ['en-US']('Flexible hose to convey hydraulic fluid between components.')
+        ['en-GB']('Flexible hose to convey hydraulic fluid between components.')
+        ['en-AU']('Flexible hose to convey hydraulic fluid between components.')
+        ['en-NZ']('Flexible hose to convey hydraulic fluid between components.')
     )
     .slug(
       LocalizedStringDraft.presets
@@ -80,6 +86,9 @@ const hydraulicHose = (): TProductDraftBuilder =>
         ['es-ES']('hydraulic-hose')
         ['pt-PT']('hydraulic-hose')
         ['en-US']('hydraulic-hose')
+        ['en-GB']('hydraulic-hose')
+        ['en-AU']('hydraulic-hose')
+        ['en-NZ']('hydraulic-hose')
     )
     .productType(
       KeyReferenceDraft.presets
