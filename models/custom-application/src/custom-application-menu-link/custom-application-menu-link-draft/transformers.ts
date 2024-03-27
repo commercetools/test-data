@@ -1,0 +1,15 @@
+import { Transformer } from '@commercetools-test-data/core';
+
+const transformers = {
+  default: Transformer('default', {
+    buildFields: ['labelAllLocales'],
+  }),
+  graphql: Transformer('graphql', {
+    buildFields: ['labelAllLocales'],
+    addFields: () => ({
+      __typename: 'CustomApplicationMenuLinkDraft',
+    }),
+  }),
+};
+
+export default transformers;
