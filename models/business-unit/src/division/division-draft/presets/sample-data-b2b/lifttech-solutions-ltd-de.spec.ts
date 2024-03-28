@@ -10,7 +10,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Etage 3",
             "apartment": "654",
             "building": "D",
             "city": "Berlin",
@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
             "postalCode": "12345",
             "region": "Brandenburg",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Berlin",
             "streetName": "Hauptstraße",
             "streetNumber": "456",
             "title": undefined,
@@ -98,7 +98,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Etage 3",
             "apartment": "654",
             "building": "D",
             "city": "Berlin",
@@ -119,7 +119,7 @@ describe(`with lifttechSolutionsLtdDe preset`, () => {
             "postalCode": "12345",
             "region": "Brandenburg",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Berlin",
             "streetName": "Hauptstraße",
             "streetNumber": "456",
             "title": undefined,

@@ -10,7 +10,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Sherlock Holmes House",
             "apartment": "987",
             "building": "C",
             "city": "London",
@@ -114,7 +114,7 @@ describe(`with lifttechSolutionsLtd preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Sherlock Holmes House",
             "apartment": "987",
             "building": "C",
             "city": "London",
