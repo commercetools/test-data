@@ -44,12 +44,12 @@ const pp234Wx = (): TProductDraftBuilder =>
         ['it-IT']('PP234 WX Escavatore su Ruote per Ferrovie')
         ['nl-NL']('PP234 WX Spoorweg Wiellader Graafmachine')
         ['fr-FR']('PP234 WX Railroad Excavatrice sur roues pour chemin de fer')
-        ['en-AU']('PP234 WX Railroad Railroad Wheeled Excavator')
+        ['en-AU']('PP234 WX Railroad Wheeled Excavator')
         ['es-ES']('PP234 WX Railroad Excavadora de ruedas para ferrocarril')
-        ['en-GB']('PP234 WX Railroad Railroad Wheeled Excavator')
-        ['en-NZ']('PP234 WX Railroad Railroad Wheeled Excavator')
+        ['en-GB']('PP234 WX Railroad Wheeled Excavator')
+        ['en-NZ']('PP234 WX Railroad Wheeled Excavator')
         ['pt-PT']('PP234 WX Escavadeira com Rodas para Ferrovias')
-        ['en-US']('PP234 WX Railroad Railroad Wheeled Excavator')
+        ['en-US']('PP234 WX Railroad Wheeled Excavator')
     )
     .description(
       LocalizedStringDraft.presets

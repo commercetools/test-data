@@ -8,7 +8,7 @@ describe(`with lifttechSolutionsLtdDeAddress preset`, () => {
     expect(lifttechSolutionsLtdDeAddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Etage 3",
         "apartment": "654",
         "building": "D",
         "city": "Berlin",
@@ -29,7 +29,7 @@ describe(`with lifttechSolutionsLtdDeAddress preset`, () => {
         "postalCode": "12345",
         "region": "Brandenburg",
         "salutation": undefined,
-        "state": undefined,
+        "state": "Berlin",
         "streetName": "Hauptstraße",
         "streetNumber": "456",
         "title": undefined,
@@ -43,7 +43,7 @@ describe(`with lifttechSolutionsLtdDeAddress preset`, () => {
     expect(lifttechSolutionsLtdDeAddressPresetGraphql).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Etage 3",
         "apartment": "654",
         "building": "D",
         "city": "Berlin",
@@ -64,7 +64,7 @@ describe(`with lifttechSolutionsLtdDeAddress preset`, () => {
         "postalCode": "12345",
         "region": "Brandenburg",
         "salutation": undefined,
-        "state": undefined,
+        "state": "Berlin",
         "streetName": "Hauptstraße",
         "streetNumber": "456",
         "title": undefined,

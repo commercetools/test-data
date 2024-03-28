@@ -44,12 +44,12 @@ const rr890Op = (): TProductDraftBuilder =>
         ['it-IT']('RR890 OP Escavatore su Ruote per Ferrovie')
         ['nl-NL']('RR890 OP Spoorweg Wiellader Graafmachine')
         ['fr-FR']('RR890 OP Railroad Excavatrice sur roues pour chemin de fer')
-        ['en-AU']('RR890 OP Railroad Railroad Wheeled Excavator')
+        ['en-AU']('RR890 OP Railroad Wheeled Excavator')
         ['es-ES']('RR890 OP Railroad Excavadora de ruedas para ferrocarril')
-        ['en-GB']('RR890 OP Railroad Railroad Wheeled Excavator')
-        ['en-NZ']('RR890 OP Railroad Railroad Wheeled Excavator')
+        ['en-GB']('RR890 OP Railroad Wheeled Excavator')
+        ['en-NZ']('RR890 OP Railroad Wheeled Excavator')
         ['pt-PT']('RR890 OP Escavadeira Rodoviária para Ferrovias')
-        ['en-US']('RR890 OP Railroad Railroad Wheeled Excavator')
+        ['en-US']('RR890 OP Railroad Wheeled Excavator')
     )
     .description(
       LocalizedStringDraft.presets

@@ -19,6 +19,6 @@ const eagleHeavyLiftTechnologiesIncUsCartCart2 = (
     .orderState(constants.orderState.Open)
     .paymentState(constants.paymentState.Pending)
     .shipmentState(constants.shipmentState.Pending)
-    .orderNumber(cart.key!);
+    .orderNumber('eagle-heavy-lift-technologies-inc-us-from-cart-2');
 
 export default eagleHeavyLiftTechnologiesIncUsCartCart2;

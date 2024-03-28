@@ -8,7 +8,7 @@ describe(`with libertyCraneSolutionsLlcUsNc1Address preset`, () => {
     expect(libertyCraneSolutionsLlcUsNc1AddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Building B",
         "apartment": "456",
         "building": "C",
         "city": "Raleigh",
@@ -44,7 +44,7 @@ describe(`with libertyCraneSolutionsLlcUsNc1Address preset`, () => {
       .toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Building B",
         "apartment": "456",
         "building": "C",
         "city": "Raleigh",

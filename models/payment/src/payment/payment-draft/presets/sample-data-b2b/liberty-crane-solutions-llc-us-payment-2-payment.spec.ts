@@ -20,7 +20,7 @@ describe(`with libertyCraneSolutionsLlcUsPayment2Payment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "liberty-crane-solutions-llc-us-cart-2",
+        "key": "liberty-crane-solutions-llc-us-payment-2",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": {
@@ -58,7 +58,7 @@ describe(`with libertyCraneSolutionsLlcUsPayment2Payment preset`, () => {
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "liberty-crane-solutions-llc-us-cart-2",
+        "key": "liberty-crane-solutions-llc-us-payment-2",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": [],

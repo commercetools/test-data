@@ -1,5 +1,5 @@
 import type { TZoneRateDraft } from '../../../types';
-import europe from './europe';
+import europe from './europe-premium';
 
 describe(`with europe preset`, () => {
   it(`should return a europe preset`, () => {
@@ -9,22 +9,22 @@ describe(`with europe preset`, () => {
         "shippingRates": [
           {
             "freeAbove": {
-              "centAmount": 5000,
+              "centAmount": 10000,
               "currencyCode": "EUR",
             },
             "price": {
-              "centAmount": 500,
+              "centAmount": 1000,
               "currencyCode": "EUR",
             },
             "tiers": [],
           },
           {
             "freeAbove": {
-              "centAmount": 5000,
+              "centAmount": 10000,
               "currencyCode": "GBP",
             },
             "price": {
-              "centAmount": 500,
+              "centAmount": 1000,
               "currencyCode": "GBP",
             },
             "tiers": [],
@@ -45,22 +45,22 @@ describe(`with europe preset`, () => {
         "shippingRates": [
           {
             "freeAbove": {
-              "centAmount": 5000,
+              "centAmount": 10000,
               "currencyCode": "EUR",
             },
             "price": {
-              "centAmount": 500,
+              "centAmount": 1000,
               "currencyCode": "EUR",
             },
             "tiers": [],
           },
           {
             "freeAbove": {
-              "centAmount": 5000,
+              "centAmount": 10000,
               "currencyCode": "GBP",
             },
             "price": {
-              "centAmount": 500,
+              "centAmount": 1000,
               "currencyCode": "GBP",
             },
             "tiers": [],

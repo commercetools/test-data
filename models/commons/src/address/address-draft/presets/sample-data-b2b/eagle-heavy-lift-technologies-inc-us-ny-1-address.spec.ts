@@ -9,7 +9,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsNy1Address preset`, () => {
       .toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Unit 456",
         "apartment": "789",
         "building": "A",
         "city": "New York",
@@ -45,7 +45,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsNy1Address preset`, () => {
       .toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Unit 456",
         "apartment": "789",
         "building": "A",
         "city": "New York",

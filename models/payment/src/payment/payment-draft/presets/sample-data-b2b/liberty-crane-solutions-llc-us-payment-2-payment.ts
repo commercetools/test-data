@@ -7,10 +7,6 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
-import {
-  OrderFromCartDraft,
-  TOrderFromCartDraft,
-} from '@commercetools-test-data/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';
@@ -20,14 +16,10 @@ const avaBrown = CustomerDraft.presets.sampleDataB2B
   .avaBrown()
   .build<TCustomerDraft>();
 
-const order = OrderFromCartDraft.presets.sampleDataB2B
-  .libertyCraneSolutionsLlcUsCart2(1)
-  .build<TOrderFromCartDraft>();
-
 const libertyCraneSolutionsLlcUsPayment2Payment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
-    .key(order.orderNumber)
+    .key('liberty-crane-solutions-llc-us-payment-2')
     .customer(KeyReferenceDraft.presets.customer().key(avaBrown.key!))
     .amountPlanned(MoneyDraft.random().currencyCode('USD').centAmount(13198500))
     .paymentMethodInfo(

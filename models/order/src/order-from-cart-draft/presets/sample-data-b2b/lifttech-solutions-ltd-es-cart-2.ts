@@ -19,6 +19,6 @@ const lifttechSolutionsLtdEsCartCart2 = (
     .orderState(constants.orderState.Cancelled)
     .paymentState(constants.paymentState.Failed)
     .shipmentState(constants.shipmentState.Pending)
-    .orderNumber(cart.key!);
+    .orderNumber('lifttech-solutions-ltd-es-from-cart-2');
 
 export default lifttechSolutionsLtdEsCartCart2;

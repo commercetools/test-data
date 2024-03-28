@@ -73,10 +73,10 @@ describe(`with pp234Wx preset`, () => {
           "de": undefined,
           "de-DE": "PP234 WX Railroad Schienenradbagger",
           "en": undefined,
-          "en-AU": "PP234 WX Railroad Railroad Wheeled Excavator",
-          "en-GB": "PP234 WX Railroad Railroad Wheeled Excavator",
-          "en-NZ": "PP234 WX Railroad Railroad Wheeled Excavator",
-          "en-US": "PP234 WX Railroad Railroad Wheeled Excavator",
+          "en-AU": "PP234 WX Railroad Wheeled Excavator",
+          "en-GB": "PP234 WX Railroad Wheeled Excavator",
+          "en-NZ": "PP234 WX Railroad Wheeled Excavator",
+          "en-US": "PP234 WX Railroad Wheeled Excavator",
           "es-ES": "PP234 WX Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
           "fr-FR": "PP234 WX Railroad Excavatrice sur roues pour chemin de fer",
@@ -301,7 +301,7 @@ describe(`with pp234Wx preset`, () => {
           },
           {
             "locale": "en-AU",
-            "value": "PP234 WX Railroad Railroad Wheeled Excavator",
+            "value": "PP234 WX Railroad Wheeled Excavator",
           },
           {
             "locale": "es-ES",
@@ -309,11 +309,11 @@ describe(`with pp234Wx preset`, () => {
           },
           {
             "locale": "en-GB",
-            "value": "PP234 WX Railroad Railroad Wheeled Excavator",
+            "value": "PP234 WX Railroad Wheeled Excavator",
           },
           {
             "locale": "en-NZ",
-            "value": "PP234 WX Railroad Railroad Wheeled Excavator",
+            "value": "PP234 WX Railroad Wheeled Excavator",
           },
           {
             "locale": "pt-PT",
@@ -321,7 +321,7 @@ describe(`with pp234Wx preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "PP234 WX Railroad Railroad Wheeled Excavator",
+            "value": "PP234 WX Railroad Wheeled Excavator",
           },
         ],
         "priceMode": "Standalone",

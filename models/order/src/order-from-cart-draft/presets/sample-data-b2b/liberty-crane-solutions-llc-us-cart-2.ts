@@ -19,6 +19,6 @@ const libertyCraneSolutionsLlcUsCartCart2 = (
     .orderState(constants.orderState.Confirmed)
     .paymentState(constants.paymentState.Paid)
     .shipmentState(constants.shipmentState.Ready)
-    .orderNumber(cart.key!);
+    .orderNumber('liberty-crane-solutions-llc-us-from-cart-2');
 
 export default libertyCraneSolutionsLlcUsCartCart2;
