@@ -34,7 +34,7 @@ const premiumShippingMethod = (): TShippingMethodDraftBuilder =>
     .taxCategory(
       KeyReferenceDraft.presets.taxCategory().key(standardTaxTaxCategory.key!)
     )
-    .zoneRates([ZoneRateDraft.presets.sampleDataB2B.europe()])
+    .zoneRates([ZoneRateDraft.presets.sampleDataB2B.europePremium()])
     .isDefault(false);
 
 export default premiumShippingMethod;

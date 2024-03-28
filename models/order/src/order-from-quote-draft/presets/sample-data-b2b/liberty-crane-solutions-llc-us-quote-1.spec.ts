@@ -7,7 +7,7 @@ describe(`with libertyCraneSolutionsLlcUsQuote1 preset`, () => {
       libertyCraneSolutionsLlcUsQuote1(1).build<TOrderFromQuoteDraft>();
     expect(libertyCraneSolutionsLlcUsQuote1Preset).toMatchInlineSnapshot(`
       {
-        "orderNumber": "liberty-crane-solutions-llc-us-quote-1",
+        "orderNumber": "liberty-crane-solutions-llc-us-from-quote-1",
         "orderState": "Confirmed",
         "paymentState": "Paid",
         "quote": {
@@ -28,7 +28,7 @@ describe(`with libertyCraneSolutionsLlcUsQuote1 preset`, () => {
     expect(libertyCraneSolutionsLlcUsQuote1PresetGraphql)
       .toMatchInlineSnapshot(`
       {
-        "orderNumber": "liberty-crane-solutions-llc-us-quote-1",
+        "orderNumber": "liberty-crane-solutions-llc-us-from-quote-1",
         "orderState": "Confirmed",
         "paymentState": "Paid",
         "quote": {

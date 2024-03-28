@@ -7,6 +7,7 @@ const libertyCraneSolutionsLlcUsNc1Address = (): TAddressDraftBuilder =>
     .key('liberty-crane-solutions-llc-us-nc-1')
     .streetName('Main Street')
     .streetNumber('789')
+    .additionalStreetInfo('Building B')
     .postalCode('27601')
     .city('Raleigh')
     .country('US')

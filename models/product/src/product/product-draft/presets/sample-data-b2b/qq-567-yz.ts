@@ -44,12 +44,12 @@ const qq567Yz = (): TProductDraftBuilder =>
         ['it-IT']('QQ567 YZ Escavatore su Ruote per Ferrovie')
         ['nl-NL']('QQ567 YZ Spoorweg Wiellader Graafmachine')
         ['fr-FR']('QQ567 YZ Railroad Excavatrice sur roues pour chemin de fer')
-        ['en-AU']('QQ567 YZ Railroad Railroad Wheeled Excavator')
+        ['en-AU']('QQ567 YZ Railroad Wheeled Excavator')
         ['es-ES']('QQ567 YZ Railroad Excavadora de ruedas para ferrocarril')
-        ['en-GB']('QQ567 YZ Railroad Railroad Wheeled Excavator')
-        ['en-NZ']('QQ567 YZ Railroad Railroad Wheeled Excavator')
+        ['en-GB']('QQ567 YZ Railroad Wheeled Excavator')
+        ['en-NZ']('QQ567 YZ Railroad Wheeled Excavator')
         ['pt-PT']('QQ567 YZ Escavadeira Rodoviária para Ferrovias')
-        ['en-US']('QQ567 YZ Railroad Railroad Wheeled Excavator')
+        ['en-US']('QQ567 YZ Railroad Wheeled Excavator')
     )
     .description(
       LocalizedStringDraft.presets

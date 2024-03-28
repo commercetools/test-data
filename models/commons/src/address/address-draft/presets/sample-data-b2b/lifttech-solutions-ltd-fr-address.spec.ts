@@ -8,7 +8,7 @@ describe(`with lifttechSolutionsLtdFrAddress preset`, () => {
     expect(lifttechSolutionsLtdFrAddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Étage 4",
         "apartment": "321",
         "building": "E",
         "city": "Paris",
@@ -29,7 +29,7 @@ describe(`with lifttechSolutionsLtdFrAddress preset`, () => {
         "postalCode": "75002",
         "region": "Île-de-France",
         "salutation": undefined,
-        "state": undefined,
+        "state": "Île-de-France",
         "streetName": "Rue de la Paix",
         "streetNumber": "789",
         "title": undefined,
@@ -43,7 +43,7 @@ describe(`with lifttechSolutionsLtdFrAddress preset`, () => {
     expect(lifttechSolutionsLtdFrAddressPresetGraphql).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Étage 4",
         "apartment": "321",
         "building": "E",
         "city": "Paris",
@@ -64,7 +64,7 @@ describe(`with lifttechSolutionsLtdFrAddress preset`, () => {
         "postalCode": "75002",
         "region": "Île-de-France",
         "salutation": undefined,
-        "state": undefined,
+        "state": "Île-de-France",
         "streetName": "Rue de la Paix",
         "streetNumber": "789",
         "title": undefined,

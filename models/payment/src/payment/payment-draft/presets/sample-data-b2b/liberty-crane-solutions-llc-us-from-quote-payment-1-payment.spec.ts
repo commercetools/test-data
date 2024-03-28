@@ -20,7 +20,7 @@ describe(`with libertyCraneSolutionsLlcUsFromQuotePayment1Payment preset`, () =>
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "liberty-crane-solutions-llc-us-quote-1",
+        "key": "liberty-crane-solutions-llc-us-from-quote-payment-1",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": {
@@ -58,7 +58,7 @@ describe(`with libertyCraneSolutionsLlcUsFromQuotePayment1Payment preset`, () =>
         },
         "interfaceId": undefined,
         "interfaceInteractions": undefined,
-        "key": "liberty-crane-solutions-llc-us-quote-1",
+        "key": "liberty-crane-solutions-llc-us-from-quote-payment-1",
         "paymentMethodInfo": {
           "method": "bank transfer",
           "name": [],

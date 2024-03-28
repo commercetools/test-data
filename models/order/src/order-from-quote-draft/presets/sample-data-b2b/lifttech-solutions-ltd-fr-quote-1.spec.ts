@@ -7,7 +7,7 @@ describe(`with lifttechSolutionsLtdFrQuote1 preset`, () => {
       lifttechSolutionsLtdFrQuote1(1).build<TOrderFromQuoteDraft>();
     expect(lifttechSolutionsLtdFrQuote1Preset).toMatchInlineSnapshot(`
       {
-        "orderNumber": "lifttech-solutions-ltd-fr-quote-1",
+        "orderNumber": "lifttech-solutions-ltd-fr-from-quote-1",
         "orderState": "Complete",
         "paymentState": "Paid",
         "quote": {
@@ -27,7 +27,7 @@ describe(`with lifttechSolutionsLtdFrQuote1 preset`, () => {
       lifttechSolutionsLtdFrQuote1(1).buildGraphql<TOrderFromQuoteDraft>();
     expect(lifttechSolutionsLtdFrQuote1PresetGraphql).toMatchInlineSnapshot(`
       {
-        "orderNumber": "lifttech-solutions-ltd-fr-quote-1",
+        "orderNumber": "lifttech-solutions-ltd-fr-from-quote-1",
         "orderState": "Complete",
         "paymentState": "Paid",
         "quote": {

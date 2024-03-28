@@ -73,10 +73,10 @@ describe(`with qq567Yz preset`, () => {
           "de": undefined,
           "de-DE": "QQ567 YZ Railroad Schienenradbagger",
           "en": undefined,
-          "en-AU": "QQ567 YZ Railroad Railroad Wheeled Excavator",
-          "en-GB": "QQ567 YZ Railroad Railroad Wheeled Excavator",
-          "en-NZ": "QQ567 YZ Railroad Railroad Wheeled Excavator",
-          "en-US": "QQ567 YZ Railroad Railroad Wheeled Excavator",
+          "en-AU": "QQ567 YZ Railroad Wheeled Excavator",
+          "en-GB": "QQ567 YZ Railroad Wheeled Excavator",
+          "en-NZ": "QQ567 YZ Railroad Wheeled Excavator",
+          "en-US": "QQ567 YZ Railroad Wheeled Excavator",
           "es-ES": "QQ567 YZ Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
           "fr-FR": "QQ567 YZ Railroad Excavatrice sur roues pour chemin de fer",
@@ -301,7 +301,7 @@ describe(`with qq567Yz preset`, () => {
           },
           {
             "locale": "en-AU",
-            "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
+            "value": "QQ567 YZ Railroad Wheeled Excavator",
           },
           {
             "locale": "es-ES",
@@ -309,11 +309,11 @@ describe(`with qq567Yz preset`, () => {
           },
           {
             "locale": "en-GB",
-            "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
+            "value": "QQ567 YZ Railroad Wheeled Excavator",
           },
           {
             "locale": "en-NZ",
-            "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
+            "value": "QQ567 YZ Railroad Wheeled Excavator",
           },
           {
             "locale": "pt-PT",
@@ -321,7 +321,7 @@ describe(`with qq567Yz preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "QQ567 YZ Railroad Railroad Wheeled Excavator",
+            "value": "QQ567 YZ Railroad Wheeled Excavator",
           },
         ],
         "priceMode": "Standalone",

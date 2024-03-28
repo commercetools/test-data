@@ -7,6 +7,7 @@ const eagleHeavyLiftTechnologiesIncUsNy1Address = (): TAddressDraftBuilder =>
     .key('eagle-heavy-lift-technologies-inc-us-ny-1')
     .streetName('Broadway')
     .streetNumber('123')
+    .additionalStreetInfo('Unit 456')
     .postalCode('10001')
     .city('New York')
     .country('US')

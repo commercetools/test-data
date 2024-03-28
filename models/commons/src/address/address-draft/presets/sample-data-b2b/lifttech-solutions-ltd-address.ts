@@ -7,6 +7,7 @@ const lifttechSolutionsLtdAddress = (): TAddressDraftBuilder =>
     .key('lifttech-solutions-ltd')
     .streetName('Baker Street')
     .streetNumber('221B')
+    .additionalStreetInfo('Sherlock Holmes House')
     .postalCode('SW1A 1AA')
     .city('London')
     .country('GB')

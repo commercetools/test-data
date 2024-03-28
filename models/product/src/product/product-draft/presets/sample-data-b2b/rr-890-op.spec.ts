@@ -73,10 +73,10 @@ describe(`with rr890Op preset`, () => {
           "de": undefined,
           "de-DE": "RR890 OP Railroad Schienenradbagger",
           "en": undefined,
-          "en-AU": "RR890 OP Railroad Railroad Wheeled Excavator",
-          "en-GB": "RR890 OP Railroad Railroad Wheeled Excavator",
-          "en-NZ": "RR890 OP Railroad Railroad Wheeled Excavator",
-          "en-US": "RR890 OP Railroad Railroad Wheeled Excavator",
+          "en-AU": "RR890 OP Railroad Wheeled Excavator",
+          "en-GB": "RR890 OP Railroad Wheeled Excavator",
+          "en-NZ": "RR890 OP Railroad Wheeled Excavator",
+          "en-US": "RR890 OP Railroad Wheeled Excavator",
           "es-ES": "RR890 OP Railroad Excavadora de ruedas para ferrocarril",
           "fr": undefined,
           "fr-FR": "RR890 OP Railroad Excavatrice sur roues pour chemin de fer",
@@ -301,7 +301,7 @@ describe(`with rr890Op preset`, () => {
           },
           {
             "locale": "en-AU",
-            "value": "RR890 OP Railroad Railroad Wheeled Excavator",
+            "value": "RR890 OP Railroad Wheeled Excavator",
           },
           {
             "locale": "es-ES",
@@ -309,11 +309,11 @@ describe(`with rr890Op preset`, () => {
           },
           {
             "locale": "en-GB",
-            "value": "RR890 OP Railroad Railroad Wheeled Excavator",
+            "value": "RR890 OP Railroad Wheeled Excavator",
           },
           {
             "locale": "en-NZ",
-            "value": "RR890 OP Railroad Railroad Wheeled Excavator",
+            "value": "RR890 OP Railroad Wheeled Excavator",
           },
           {
             "locale": "pt-PT",
@@ -321,7 +321,7 @@ describe(`with rr890Op preset`, () => {
           },
           {
             "locale": "en-US",
-            "value": "RR890 OP Railroad Railroad Wheeled Excavator",
+            "value": "RR890 OP Railroad Wheeled Excavator",
           },
         ],
         "priceMode": "Standalone",

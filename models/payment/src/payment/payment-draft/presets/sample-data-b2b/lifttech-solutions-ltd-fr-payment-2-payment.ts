@@ -29,7 +29,7 @@ const order = OrderFromCartDraft.presets.sampleDataB2B
 const lifttechSolutionsLtdFrPayment2Payment = (): TPaymentDraftBuilder =>
   PaymentDraft.presets
     .empty()
-    .key(order.orderNumber)
+    .key('lifttech-solutions-ltd-fr-payment-2')
     .customer(KeyReferenceDraft.presets.customer().key(camilleLefevre.key!))
     .amountPlanned(MoneyDraft.random().currencyCode('EUR').centAmount(24300000))
     .paymentMethodInfo(

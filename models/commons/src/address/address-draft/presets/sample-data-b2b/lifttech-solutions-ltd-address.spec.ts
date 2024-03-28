@@ -8,7 +8,7 @@ describe(`with lifttechSolutionsLtdAddress preset`, () => {
     expect(lifttechSolutionsLtdAddressPreset).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Sherlock Holmes House",
         "apartment": "987",
         "building": "C",
         "city": "London",
@@ -43,7 +43,7 @@ describe(`with lifttechSolutionsLtdAddress preset`, () => {
     expect(lifttechSolutionsLtdAddressPresetGraphql).toMatchInlineSnapshot(`
       {
         "additionalAddressInfo": undefined,
-        "additionalStreetInfo": undefined,
+        "additionalStreetInfo": "Sherlock Holmes House",
         "apartment": "987",
         "building": "C",
         "city": "London",
