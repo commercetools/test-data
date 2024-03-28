@@ -10,7 +10,7 @@ describe(`with libertyCraneSolutionsLlcUs preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Building B",
             "apartment": "456",
             "building": "C",
             "city": "Raleigh",
@@ -114,7 +114,7 @@ describe(`with libertyCraneSolutionsLlcUs preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Building B",
             "apartment": "456",
             "building": "C",
             "city": "Raleigh",

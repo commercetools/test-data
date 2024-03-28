@@ -97,7 +97,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Building B",
           "apartment": "456",
           "building": "C",
           "city": "Raleigh",
@@ -235,7 +235,7 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Building B",
           "apartment": "456",
           "building": "C",
           "city": "Raleigh",

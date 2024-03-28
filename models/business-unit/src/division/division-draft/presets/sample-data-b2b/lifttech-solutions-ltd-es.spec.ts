@@ -10,7 +10,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Piso 2",
             "apartment": "567",
             "building": "F",
             "city": "Madrid",
@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
             "postalCode": "28013",
             "region": "Community of Madrid",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Community of Madrid",
             "streetName": "Calle Mayor",
             "streetNumber": "101",
             "title": undefined,
@@ -103,7 +103,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Piso 2",
             "apartment": "567",
             "building": "F",
             "city": "Madrid",
@@ -124,7 +124,7 @@ describe(`with lifttechSolutionsLtdEs preset`, () => {
             "postalCode": "28013",
             "region": "Community of Madrid",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Community of Madrid",
             "streetName": "Calle Mayor",
             "streetNumber": "101",
             "title": undefined,

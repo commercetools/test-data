@@ -97,7 +97,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Sherlock Holmes House",
           "apartment": "987",
           "building": "C",
           "city": "London",
@@ -235,7 +235,7 @@ describe(`with lifttechSolutionsLtdCart2 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Sherlock Holmes House",
           "apartment": "987",
           "building": "C",
           "city": "London",

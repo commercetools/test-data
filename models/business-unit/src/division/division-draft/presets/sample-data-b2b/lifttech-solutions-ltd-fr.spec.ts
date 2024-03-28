@@ -10,7 +10,7 @@ describe(`with lifttechSolutionsLtdFr preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Étage 4",
             "apartment": "321",
             "building": "E",
             "city": "Paris",
@@ -31,7 +31,7 @@ describe(`with lifttechSolutionsLtdFr preset`, () => {
             "postalCode": "75002",
             "region": "Île-de-France",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Île-de-France",
             "streetName": "Rue de la Paix",
             "streetNumber": "789",
             "title": undefined,
@@ -98,7 +98,7 @@ describe(`with lifttechSolutionsLtdFr preset`, () => {
         "addresses": [
           {
             "additionalAddressInfo": undefined,
-            "additionalStreetInfo": undefined,
+            "additionalStreetInfo": "Étage 4",
             "apartment": "321",
             "building": "E",
             "city": "Paris",
@@ -119,7 +119,7 @@ describe(`with lifttechSolutionsLtdFr preset`, () => {
             "postalCode": "75002",
             "region": "Île-de-France",
             "salutation": undefined,
-            "state": undefined,
+            "state": "Île-de-France",
             "streetName": "Rue de la Paix",
             "streetNumber": "789",
             "title": undefined,

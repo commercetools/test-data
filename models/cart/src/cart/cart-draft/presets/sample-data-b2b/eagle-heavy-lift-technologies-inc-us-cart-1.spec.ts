@@ -97,7 +97,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Unit 456",
           "apartment": "789",
           "building": "A",
           "city": "New York",
@@ -236,7 +236,7 @@ describe(`with eagleHeavyLiftTechnologiesIncUsCart1 preset`, () => {
         "shipping": undefined,
         "shippingAddress": {
           "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
+          "additionalStreetInfo": "Unit 456",
           "apartment": "789",
           "building": "A",
           "city": "New York",
