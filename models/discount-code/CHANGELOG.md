@@ -1,5 +1,15 @@
 # @commercetools-test-data/discount-code
 
+## 7.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`5d71e0b`](https://github.com/commercetools/test-data/commit/5d71e0be9e04e3fabe2de81fc71fe1be9d1bbc5d)]:
+  - @commercetools-test-data/commons@7.9.0
+  - @commercetools-test-data/cart-discount@7.9.0
+  - @commercetools-test-data/core@7.9.0
+  - @commercetools-test-data/utils@7.9.0
+
 ## 7.8.0
 
 ### Patch Changes
