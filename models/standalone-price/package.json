@@ -26,6 +26,6 @@
     "@commercetools-test-data/channel": "7.9.0",
     "@commercetools-test-data/product": "7.9.0",
     "@commercetools/platform-sdk": "^7.0.0",
-    "@faker-js/faker": "^7.4.0"
+    "@faker-js/faker": "^8.0.0"
   }
 }
