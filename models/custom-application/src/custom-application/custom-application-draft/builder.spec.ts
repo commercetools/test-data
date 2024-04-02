@@ -29,7 +29,19 @@ describe('builder', () => {
             }),
           ]),
         }),
-        submenuLinks: [],
+        submenuLinks: expect.arrayContaining([
+          expect.objectContaining({
+            labelAllLocales: [
+              expect.objectContaining({
+                locale: expect.any(String),
+                value: expect.any(String),
+              }),
+            ],
+            defaultLabel: expect.any(String),
+            permissions: [],
+            uriPath: expect.any(String),
+          }),
+        ]),
       })
     )
   );
@@ -57,7 +69,19 @@ describe('builder', () => {
             }),
           ]),
         }),
-        submenuLinks: [],
+        submenuLinks: expect.arrayContaining([
+          expect.objectContaining({
+            labelAllLocales: [
+              expect.objectContaining({
+                locale: expect.any(String),
+                value: expect.any(String),
+              }),
+            ],
+            defaultLabel: expect.any(String),
+            permissions: [],
+            uriPath: expect.any(String),
+          }),
+        ]),
       })
     )
   );
