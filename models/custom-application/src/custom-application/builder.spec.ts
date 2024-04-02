@@ -22,9 +22,39 @@ describe('builder', () => {
         ]),
         status: expect.stringMatching(/^(DRAFT|PRIVATE_USAGE)$/),
         url: expect.any(String),
-        mainMenuLink: null,
-        submenuLinks: [],
-        deployments: [],
+        mainMenuLink: expect.objectContaining({
+          id: expect.any(String),
+          defaultLabel: expect.any(String),
+          labelAllLocales: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+        }),
+        submenuLinks: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            labelAllLocales: [
+              expect.objectContaining({
+                locale: expect.any(String),
+                value: expect.any(String),
+              }),
+            ],
+            defaultLabel: expect.any(String),
+            permissions: [],
+            uriPath: expect.any(String),
+          }),
+        ]),
+        deployments: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            createdAt: expect.any(String),
+            updatedAt: expect.any(String),
+            url: expect.any(String),
+            alias: expect.any(String),
+          }),
+        ]),
       })
     )
   );
@@ -46,9 +76,39 @@ describe('builder', () => {
         ]),
         status: expect.stringMatching(/^(DRAFT|PRIVATE_USAGE)$/),
         url: expect.any(String),
-        mainMenuLink: null,
-        submenuLinks: [],
-        deployments: [],
+        mainMenuLink: expect.objectContaining({
+          id: expect.any(String),
+          defaultLabel: expect.any(String),
+          labelAllLocales: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+        }),
+        submenuLinks: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            labelAllLocales: [
+              expect.objectContaining({
+                locale: expect.any(String),
+                value: expect.any(String),
+              }),
+            ],
+            defaultLabel: expect.any(String),
+            permissions: [],
+            uriPath: expect.any(String),
+          }),
+        ]),
+        deployments: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            createdAt: expect.any(String),
+            updatedAt: expect.any(String),
+            url: expect.any(String),
+            alias: expect.any(String),
+          }),
+        ]),
       })
     )
   );
