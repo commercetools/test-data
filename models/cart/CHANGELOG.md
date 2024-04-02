@@ -1,5 +1,24 @@
 # @commercetools-test-data/cart
 
+## 7.9.1
+
+### Patch Changes
+
+- [#548](https://github.com/commercetools/test-data/pull/548) [`b9cdca7`](https://github.com/commercetools/test-data/commit/b9cdca7651dc32104eaaf1cded548d13ad6b82fe) Thanks [@ByronDWall](https://github.com/ByronDWall)! - Add 'State: London' to lifttech-solutions-ltd-address b2b preset
+
+- Updated dependencies [[`b9cdca7`](https://github.com/commercetools/test-data/commit/b9cdca7651dc32104eaaf1cded548d13ad6b82fe)]:
+  - @commercetools-test-data/business-unit@7.9.1
+  - @commercetools-test-data/commons@7.9.1
+  - @commercetools-test-data/channel@7.9.1
+  - @commercetools-test-data/customer@7.9.1
+  - @commercetools-test-data/discount-code@7.9.1
+  - @commercetools-test-data/product@7.9.1
+  - @commercetools-test-data/shipping-method@7.9.1
+  - @commercetools-test-data/store@7.9.1
+  - @commercetools-test-data/tax-category@7.9.1
+  - @commercetools-test-data/core@7.9.1
+  - @commercetools-test-data/utils@7.9.1
+
 ## 7.9.0
 
 ### Patch Changes
