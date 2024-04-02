@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import * as CustomViewPermissionDraft from '../../custom-application-permission-draft';
+import * as CustomApplicationPermissionDraft from '../../custom-application-permission-draft';
 import { TCustomApplicationDraft } from '../types';
 
 const generator = Generator<TCustomApplicationDraft>({
@@ -7,8 +7,8 @@ const generator = Generator<TCustomApplicationDraft>({
     url: fake((f) => f.internet.url()),
     description: fake((f) => f.lorem.sentence()),
     permissions: fake(() => [
-      CustomViewPermissionDraft.presets.ViewOnlyPermissions(),
-      CustomViewPermissionDraft.presets.ManageOnlyPermissions(),
+      CustomApplicationPermissionDraft.presets.ViewOnlyPermissions(),
+      CustomApplicationPermissionDraft.presets.ManageOnlyPermissions(),
     ]),
     icon: '<svg><path fill="#000000" /></svg>',
     name: fake((f) => f.commerce.department()),
