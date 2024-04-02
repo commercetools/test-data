@@ -9,9 +9,14 @@ export type TCustomApplicationSubmenuLink = Omit<
   '__typename'
 >;
 
-export type TCustomApplicationSubmenuLinkDraft = Pick<
-  TCustomApplicationSubmenuLink,
+export type TCustomApplicationSubmenuLinkDraftGraphql = Pick<
+  TMcSettingsCustomApplicationSubmenuLink,
   'defaultLabel' | 'labelAllLocales' | 'permissions' | 'uriPath'
+>;
+
+export type TCustomApplicationSubmenuLinkDraft = Omit<
+  TCustomApplicationSubmenuLinkDraftGraphql,
+  '__typename'
 >;
 
 export type TCustomApplicationSubmenuLinkBuilder =

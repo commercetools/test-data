@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { CustomApplicationMenuLinkDraft } from '../../custom-application-menu-link';
-import * as CustomApplicationPermissionDraft from '../../custom-application-permission/custom-application-permission-draft';
+import { CustomApplicationPermissionDraft } from '../../custom-application-permission';
 import { TCustomApplicationDraft } from '../types';
 
 const generator = Generator<TCustomApplicationDraft>({
