@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as CustomApplicationPermission from '../custom-application-permission';
+import * as CustomApplicationPermission from '../custom-application-permission/custom-application-permission';
 import type { TCustomApplication } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

@@ -1,5 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import * as CustomApplicationPermissionDraft from '../../custom-application-permission-draft';
+import { CustomApplicationMenuLinkDraft } from '../../custom-application-menu-link';
+import * as CustomApplicationPermissionDraft from '../../custom-application-permission/custom-application-permission-draft';
 import { TCustomApplicationDraft } from '../types';
 
 const generator = Generator<TCustomApplicationDraft>({
@@ -13,7 +14,7 @@ const generator = Generator<TCustomApplicationDraft>({
     icon: '<svg><path fill="#000000" /></svg>',
     name: fake((f) => f.commerce.department()),
     entryPointUriPath: fake((f) => f.lorem.word()),
-    mainMenuLink: null,
+    mainMenuLink: fake(() => CustomApplicationMenuLinkDraft.random()),
     submenuLinks: [],
   },
 });

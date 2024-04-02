@@ -20,7 +20,15 @@ describe('builder', () => {
           }),
         ]),
         url: expect.any(String),
-        mainMenuLink: null,
+        mainMenuLink: expect.objectContaining({
+          defaultLabel: expect.any(String),
+          labelAllLocales: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+        }),
         submenuLinks: [],
       })
     )
@@ -40,7 +48,15 @@ describe('builder', () => {
           }),
         ]),
         url: expect.any(String),
-        mainMenuLink: null,
+        mainMenuLink: expect.objectContaining({
+          defaultLabel: expect.any(String),
+          labelAllLocales: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+        }),
         submenuLinks: [],
       })
     )
