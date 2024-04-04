@@ -1,7 +1,7 @@
 import type { TBuilder } from '@commercetools-test-data/core';
 import type {
   TMcSettingsCustomApplicationMenuLink,
-  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput,
+  TMcSettingsCustomApplicationMenuLinkDraftDataInput,
 } from '@commercetools-test-data/graphql-types';
 
 export type TCustomApplicationMenuLinkGraphql =
@@ -13,7 +13,7 @@ export type TCustomApplicationMenuLink = Omit<
 >;
 
 export type TCustomApplicationMenuLinkDraft =
-  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput;
+  TMcSettingsCustomApplicationMenuLinkDraftDataInput;
 
 export type TCustomApplicationMenuLinkBuilder =
   TBuilder<TCustomApplicationMenuLink>;
