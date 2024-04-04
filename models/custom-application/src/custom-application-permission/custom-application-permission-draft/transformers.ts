@@ -1,8 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type {
-  TCustomApplicationPermissionDraft,
-  TCustomApplicationPermissionDraftGraphql,
-} from './types';
+import type { TCustomApplicationPermissionDraft } from './types';
 
 const transformers = {
   default: Transformer<
@@ -11,7 +8,7 @@ const transformers = {
   >('default', {}),
   graphql: Transformer<
     TCustomApplicationPermissionDraft,
-    TCustomApplicationPermissionDraftGraphql
+    TCustomApplicationPermissionDraft
   >('graphql', {}),
 };
 

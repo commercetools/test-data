@@ -12,8 +12,3 @@ export type TCustomApplicationPermissionBuilder =
   TBuilder<TCustomApplicationPermission>;
 export type TCreateCustomApplicationPermissionBuilder =
   () => TCustomApplicationPermissionBuilder;
-
-export type TCustomApplicationPermissionDraftBuilder =
-  TBuilder<TCustomApplicationPermission>;
-export type TCreateCustomApplicationPermissionDraftBuilder =
-  () => TCustomApplicationPermissionDraftBuilder;

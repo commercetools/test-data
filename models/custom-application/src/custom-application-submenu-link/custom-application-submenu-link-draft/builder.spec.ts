@@ -1,10 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type {
-  TCustomApplicationSubmenuLinkDraft,
-  TCustomApplicationSubmenuLinkDraftGraphql,
-} from '../types';
+import type { TCustomApplicationSubmenuLinkDraft } from '../types';
 import * as CustomApplicationSubmenuLinkDraft from './index';
 
 describe('builder', () => {
@@ -31,7 +28,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<
       TCustomApplicationSubmenuLinkDraft,
-      TCustomApplicationSubmenuLinkDraftGraphql
+      TCustomApplicationSubmenuLinkDraft
     >(
       'graphql',
       CustomApplicationSubmenuLinkDraft.random(),

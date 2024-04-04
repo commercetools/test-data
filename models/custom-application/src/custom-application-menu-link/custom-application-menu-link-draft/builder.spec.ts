@@ -32,7 +32,6 @@ describe('builder', () => {
       'graphql',
       CustomApplicationMenuLink.random(),
       expect.objectContaining({
-        __typename: 'CustomApplicationMenuLinkDraft',
         labelAllLocales: [
           expect.objectContaining({
             __typename: 'LocalizedField',

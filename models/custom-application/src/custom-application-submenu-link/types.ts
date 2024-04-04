@@ -1,5 +1,8 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsCustomApplicationSubmenuLink } from '@commercetools-test-data/graphql-types';
+import type {
+  TMcSettingsCustomApplicationSubmenuLink,
+  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput,
+} from '@commercetools-test-data/graphql-types';
 
 export type TCustomApplicationSubmenuLinkGraphql =
   TMcSettingsCustomApplicationSubmenuLink;
@@ -9,15 +12,8 @@ export type TCustomApplicationSubmenuLink = Omit<
   '__typename'
 >;
 
-export type TCustomApplicationSubmenuLinkDraftGraphql = Pick<
-  TMcSettingsCustomApplicationSubmenuLink,
-  'defaultLabel' | 'labelAllLocales' | 'permissions' | 'uriPath'
->;
-
-export type TCustomApplicationSubmenuLinkDraft = Omit<
-  TCustomApplicationSubmenuLinkDraftGraphql,
-  '__typename'
->;
+export type TCustomApplicationSubmenuLinkDraft =
+  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput;
 
 export type TCustomApplicationSubmenuLinkBuilder =
   TBuilder<TCustomApplicationSubmenuLink>;

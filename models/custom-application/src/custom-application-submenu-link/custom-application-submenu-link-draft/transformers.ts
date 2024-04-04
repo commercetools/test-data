@@ -1,8 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import type {
-  TCustomApplicationSubmenuLinkDraft,
-  TCustomApplicationSubmenuLinkDraftGraphql,
-} from '../types';
+import type { TCustomApplicationSubmenuLinkDraft } from '../types';
 
 const transformers = {
   default: Transformer<
@@ -13,7 +10,7 @@ const transformers = {
   }),
   graphql: Transformer<
     TCustomApplicationSubmenuLinkDraft,
-    TCustomApplicationSubmenuLinkDraftGraphql
+    TCustomApplicationSubmenuLinkDraft
   >('graphql', {
     buildFields: ['labelAllLocales'],
   }),

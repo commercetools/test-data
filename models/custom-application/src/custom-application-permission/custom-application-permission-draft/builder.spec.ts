@@ -1,10 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type {
-  TCustomApplicationPermissionDraft,
-  TCustomApplicationPermissionDraftGraphql,
-} from './types';
+import type { TCustomApplicationPermissionDraft } from './types';
 import * as CustomApplicationPermissionDraftModel from './index';
 
 describe('CustomApplicationPermission model builder', () => {
@@ -25,7 +22,7 @@ describe('CustomApplicationPermission model builder', () => {
   it(
     ...createBuilderSpec<
       TCustomApplicationPermissionDraft,
-      TCustomApplicationPermissionDraftGraphql
+      TCustomApplicationPermissionDraft
     >(
       'graphql',
       CustomApplicationPermissionDraftModel.presets.ViewOnlyPermissions(
@@ -41,7 +38,7 @@ describe('CustomApplicationPermission model builder', () => {
   it(
     ...createBuilderSpec<
       TCustomApplicationPermissionDraft,
-      TCustomApplicationPermissionDraftGraphql
+      TCustomApplicationPermissionDraft
     >(
       'graphql',
       CustomApplicationPermissionDraftModel.presets.ManageOnlyPermissions(

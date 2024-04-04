@@ -1,5 +1,8 @@
 import { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsRestrictedCustomApplicationForOrganization } from '@commercetools-test-data/graphql-types';
+import type {
+  TMcSettingsCustomApplicationDraftDataInput,
+  TMcSettingsRestrictedCustomApplicationForOrganization,
+} from '@commercetools-test-data/graphql-types';
 
 export type TCustomApplication = Omit<
   TMcSettingsRestrictedCustomApplicationForOrganization,
@@ -9,10 +12,8 @@ export type TCustomApplication = Omit<
 export type TCustomApplicationGraphql =
   TMcSettingsRestrictedCustomApplicationForOrganization;
 
-export type TCustomApplicationDraft = Omit<
-  TCustomApplication,
-  'id' | 'createdAt' | 'updatedAt' | 'ownerId' | 'status' | 'deployments'
->;
+export type TCustomApplicationDraft =
+  TMcSettingsCustomApplicationDraftDataInput;
 export type TCustomApplicationDraftGraphql = TCustomApplicationDraft;
 
 export type TCustomApplicationBuilder = TBuilder<TCustomApplication>;
