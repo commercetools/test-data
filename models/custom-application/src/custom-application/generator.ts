@@ -3,7 +3,7 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as CustomApplicationDeploymentPreview from '../custom-application-deployment-preview';
 import * as CustomApplicationMenuLink from '../custom-application-menu-link';
 import * as CustomApplicationPermission from '../custom-application-permission/custom-application-permission';
-import * as CustomApplicationSubmenuLink from '../custom-application-sub-menu-link';
+import * as CustomApplicationSubmenuLink from '../custom-application-submenu-link';
 
 import type { TCustomApplication } from './types';
 

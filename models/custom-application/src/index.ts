@@ -4,7 +4,7 @@ import * as CustomApplicationInstallation from './custom-application-installatio
 import * as CustomApplicationInstallationPermission from './custom-application-installation-permission';
 import * as CustomApplicationMenuLink from './custom-application-menu-link';
 import * as CustomApplicationPermission from './custom-application-permission';
-import * as CustomApplicationSubmenuLink from './custom-application-sub-menu-link';
+import * as CustomApplicationSubmenuLink from './custom-application-submenu-link';
 
 export {
   CustomApplication,
