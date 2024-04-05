@@ -8,20 +8,29 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/payment"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-payment.cjs.js",
   "module": "dist/commercetools-test-data-payment.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "7.9.1",
-    "@commercetools-test-data/customer": "7.9.1",
     "@commercetools-test-data/core": "7.9.1",
+    "@commercetools-test-data/customer": "7.9.1",
     "@commercetools-test-data/order": "7.9.1",
     "@commercetools-test-data/utils": "7.9.1",
     "@commercetools/platform-sdk": "^7.0.0",
