@@ -123,8 +123,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       '@types/lodash':
-        specifier: ^4.14.182
-        version: 4.14.186
+        specifier: ^4.17.0
+        version: 4.17.0
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -338,8 +338,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       '@types/lodash':
-        specifier: ^4.14.182
-        version: 4.14.186
+        specifier: ^4.17.0
+        version: 4.17.0
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -401,8 +401,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       '@types/lodash':
-        specifier: ^4.14.182
-        version: 4.14.186
+        specifier: ^4.17.0
+        version: 4.17.0
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
@@ -785,7 +785,7 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       '@faker-js/faker':
-        specifier: ^8.3.1
+        specifier: ^8.0.0
         version: 8.3.1
 
   models/quote-request:
@@ -3092,7 +3092,7 @@ packages:
       '@commercetools-frontend/babel-preset-mc-app': 22.10.0
       '@commercetools-frontend/constants': 22.10.0
       '@types/dompurify': 2.4.0
-      '@types/lodash': 4.14.200
+      '@types/lodash': 4.17.0
       '@types/react': 17.0.68
       ajv: 8.12.0
       core-js: 3.32.2
@@ -3233,7 +3233,6 @@ packages:
 
   /@commercetools-test-data/attribute-type@5.11.2:
     resolution: {integrity: sha512-JecOqJ3jdc/1+mnNcYKRzQBzNlJSwzuuxOKWKWyAZzXW2sH3z4K+rECaQY3Y+HMFqIMgVboa9ebd6YIgDlFFNA==}
-    deprecated: Use the @commercetools-test-data/product-type package instead
     dependencies:
       '@babel/runtime': 7.23.4
       '@babel/runtime-corejs3': 7.23.4
@@ -3255,7 +3254,7 @@ packages:
       '@commercetools-test-data/utils': 5.11.2
       '@commercetools/platform-sdk': 4.11.0
       '@faker-js/faker': 8.3.1
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.0
       lodash: 4.17.21
     transitivePeerDependencies:
       - encoding
@@ -3267,7 +3266,7 @@ packages:
       '@babel/runtime': 7.23.4
       '@babel/runtime-corejs3': 7.23.4
       '@faker-js/faker': 8.3.1
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.0
       lodash: 4.17.21
     dev: false
 
@@ -5078,16 +5077,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: false
 
-  /@types/lodash@4.14.186:
-    resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
-    dev: false
-
-  /@types/lodash@4.14.200:
-    resolution: {integrity: sha512-YI/M/4HRImtNf3pJgbF+W6FrXovqj+T+/HpENLTooK9PnkacBsDpeP3IpHab40CClUfhNmdM2WTNP2sa2dni5Q==}
-    dev: false
-
-  /@types/lodash@4.14.202:
-    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+  /@types/lodash@4.17.0:
+    resolution: {integrity: sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==}
     dev: false
 
   /@types/minimist@1.2.2:

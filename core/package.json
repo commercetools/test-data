@@ -23,7 +23,7 @@
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
     "@faker-js/faker": "^8.0.0",
-    "@types/lodash": "^4.14.182",
+    "@types/lodash": "^4.17.0",
     "lodash": "^4.17.21"
   }
 }
