@@ -16,7 +16,7 @@ describe('CustomApplication model builder', () => {
       'default',
       CustomApplicationPermissionModel.random(),
       expect.objectContaining({
-        name: 'viewAvengers',
+        name: expect.stringMatching(/^view/),
         oAuthScopes: expect.arrayContaining([expect.stringMatching(/^view_/)]),
       })
     )

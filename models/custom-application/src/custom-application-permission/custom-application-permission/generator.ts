@@ -1,5 +1,6 @@
 import { Generator, fake } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import upperFirst from 'lodash/upperFirst';
 import { supportedViewOAuthScopes } from './constants';
 import type { TCustomApplicationPermission } from './types';
 
@@ -10,7 +11,7 @@ const generator = Generator<TCustomApplicationPermission>({
     id: fake((f) => f.string.uuid()),
     createdAt: fake(getOlderDate),
     updatedAt: fake(getNewerDate),
-    name: 'viewAvengers',
+    name: fake((f) => `view${upperFirst(f.lorem.word())}`),
     oAuthScopes: fake((f) =>
       f.helpers.arrayElements(supportedViewOAuthScopes, 2)
     ),

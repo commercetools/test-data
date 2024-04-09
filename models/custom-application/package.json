@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/custom-application",
   "version": "7.4.0",
-  "description": "Data model for internal Merchan Center API Custom Application",
+  "description": "Data model for internal Merchant Center API Custom Application",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",

@@ -9,13 +9,13 @@ const transformers = {
     TCustomApplicationInstallation,
     TCustomApplicationInstallation
   >('default', {
-    buildFields: ['acceptedPermissions', 'projects'],
+    buildFields: ['acceptedPermissions'],
   }),
   graphql: Transformer<
     TCustomApplicationInstallation,
     TCustomApplicationInstallationGraphql
   >('graphql', {
-    buildFields: ['acceptedPermissions', 'projects'],
+    buildFields: ['acceptedPermissions'],
     addFields: () => ({
       __typename: 'CustomApplicationInstallation',
     }),
