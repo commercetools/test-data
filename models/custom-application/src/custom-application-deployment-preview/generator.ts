@@ -1,17 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { createRelatedDates } from '@commercetools-test-data/utils';
+import { createRelatedDates, slugify } from '@commercetools-test-data/utils';
 import { TCustomApplicationDeploymentPreview } from './types';
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w-]+/g, '') // Remove all non-word chars
-    .replace(/--+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, ''); // Trim - from end of text
-}
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
