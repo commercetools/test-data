@@ -14,7 +14,6 @@ describe('builder', () => {
       HighPrecisionMoneyDraft.random(),
       expect.objectContaining({
         type: 'highPrecision',
-        centAmount: expect.any(Number),
         currencyCode: expect.any(String),
         fractionDigits: expect.any(Number),
         preciseAmount: expect.any(Number),
@@ -28,7 +27,6 @@ describe('builder', () => {
       HighPrecisionMoneyDraft.random(),
       expect.objectContaining({
         type: 'highPrecision',
-        centAmount: expect.any(Number),
         currencyCode: expect.any(String),
         fractionDigits: expect.any(Number),
         preciseAmount: expect.any(Number),
@@ -45,7 +43,6 @@ describe('builder', () => {
       HighPrecisionMoneyDraft.random(),
       expect.objectContaining({
         type: 'highPrecision',
-        centAmount: expect.any(Number),
         currencyCode: expect.any(String),
         fractionDigits: expect.any(Number),
         preciseAmount: expect.any(Number),
