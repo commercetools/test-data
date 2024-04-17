@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { CustomApplication } from '../..';
+import { CustomApplication } from '..';
 import * as CustomApplicationInstallationPermission from '../custom-application-installation-permission';
 import type { TCustomApplicationInstallation } from './types';
 
