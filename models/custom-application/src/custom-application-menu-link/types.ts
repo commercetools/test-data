@@ -4,8 +4,10 @@ import type {
   TMcSettingsCustomApplicationMenuLinkDraftDataInput,
 } from '@commercetools-test-data/graphql-types';
 
-export type TCustomApplicationMenuLinkGraphql =
-  TMcSettingsCustomApplicationMenuLink;
+export type TCustomApplicationMenuLinkGraphql = Omit<
+  TMcSettingsCustomApplicationMenuLink,
+  'submenuLinks'
+>;
 
 export type TCustomApplicationMenuLink = Omit<
   TCustomApplicationMenuLinkGraphql,

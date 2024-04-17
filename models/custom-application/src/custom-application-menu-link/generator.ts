@@ -14,7 +14,6 @@ const generator = Generator<TCustomApplicationMenuLink>({
     defaultLabel: fake((f) => f.lorem.word()),
     permissions: [],
     icon: '<svg><path fill="#000000" /></svg>',
-    submenuLinks: [], // this field is deprecated
   },
 });
 
