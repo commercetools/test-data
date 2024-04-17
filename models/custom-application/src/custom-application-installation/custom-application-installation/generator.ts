@@ -1,5 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { CustomApplication } from '../..';
 import * as CustomApplicationInstallationPermission from '../../custom-application-installation-permission';
 import type { TCustomApplicationInstallation } from './types';
 
@@ -16,8 +17,7 @@ const generator = Generator<TCustomApplicationInstallation>({
     ]),
     projects: fake(() => []), //TODO: add ProjectExtension
     installInAllProjects: fake((f) => f.datatype.boolean()),
-    owner: fake(() => ({})),
-    ownerId: fake((f) => f.string.uuid()),
+    application: fake(() => CustomApplication.random()),
   },
 });
 

@@ -27,8 +27,11 @@ describe('builder', () => {
         ]),
         installInAllProjects: expect.any(Boolean),
         projects: expect.any(Array),
-        ownerId: expect.any(String),
-        owner: expect.any(Object),
+        application: expect.objectContaining({
+          name: expect.any(String),
+          description: expect.any(String),
+          url: expect.any(String),
+        }),
       })
     )
   );
@@ -40,7 +43,7 @@ describe('builder', () => {
       'graphql',
       CustomApplicationInstallationModel.random(),
       expect.objectContaining({
-        __typename: 'CustomApplicationInstallation',
+        __typename: 'RestrictedCustomApplicationInstallationForOrganization',
         id: expect.any(String),
         createdAt: expect.any(String),
         updatedAt: expect.any(String),
@@ -52,8 +55,11 @@ describe('builder', () => {
         ]),
         installInAllProjects: expect.any(Boolean),
         projects: expect.any(Array),
-        ownerId: expect.any(String),
-        owner: expect.any(Object),
+        application: expect.objectContaining({
+          name: expect.any(String),
+          description: expect.any(String),
+          url: expect.any(String),
+        }),
       })
     )
   );

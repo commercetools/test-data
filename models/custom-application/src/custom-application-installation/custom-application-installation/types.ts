@@ -1,8 +1,8 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsCustomApplicationInstallation } from '@commercetools-test-data/graphql-types';
+import type { TMcSettingsRestrictedCustomApplicationInstallationForOrganization } from '@commercetools-test-data/graphql-types';
 
 export type TCustomApplicationInstallationGraphql =
-  TMcSettingsCustomApplicationInstallation;
+  TMcSettingsRestrictedCustomApplicationInstallationForOrganization;
 
 export type TCustomApplicationInstallation = Omit<
   TCustomApplicationInstallationGraphql,
