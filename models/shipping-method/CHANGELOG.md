@@ -1,5 +1,18 @@
 # @commercetools-test-data/shipping-method
 
+## 7.10.0
+
+### Patch Changes
+
+- [#550](https://github.com/commercetools/test-data/pull/550) [`2960544`](https://github.com/commercetools/test-data/commit/296054423abef3ae8b9cf0636d20d187be0b7c3d) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - Update tests to prefer inline snapshots over object matching.
+
+- Updated dependencies [[`0e79552`](https://github.com/commercetools/test-data/commit/0e79552f289ff3a5110abdb61d87d18d50499a31)]:
+  - @commercetools-test-data/commons@7.10.0
+  - @commercetools-test-data/tax-category@7.10.0
+  - @commercetools-test-data/zone@7.10.0
+  - @commercetools-test-data/core@7.10.0
+  - @commercetools-test-data/utils@7.10.0
+
 ## 7.9.1
 
 ### Patch Changes

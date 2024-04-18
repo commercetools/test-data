@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/utils",
-  "version": "7.9.1",
+  "version": "7.10.0",
   "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -8,23 +8,14 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "utils"
   },
-  "keywords": [
-    "javascript",
-    "typescript",
-    "test-data"
-  ],
+  "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-utils.cjs.js",
   "module": "dist/commercetools-test-data-utils.esm.js",
-  "files": [
-    "dist",
-    "package.json",
-    "LICENSE",
-    "README.md"
-  ],
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
