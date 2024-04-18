@@ -1,5 +1,17 @@
 # @commercetools-test-data/commons
 
+## 7.10.0
+
+### Minor Changes
+
+- [#552](https://github.com/commercetools/test-data/pull/552) [`0e79552`](https://github.com/commercetools/test-data/commit/0e79552f289ff3a5110abdb61d87d18d50499a31) Thanks [@ragafus](https://github.com/ragafus)! - Add `HighPrecisionMoney` and `HighPrecisionMoneyDraft` models
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@7.10.0
+  - @commercetools-test-data/utils@7.10.0
+
 ## 7.9.1
 
 ### Patch Changes
