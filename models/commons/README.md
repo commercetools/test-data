@@ -15,6 +15,7 @@ $ pnpm add -D @commercetools-test-data/commons
 - [Address](#address)<br>
 - [CentPrecisionMoney](#centprecisionmoney)<br>
 - [ClientLogging](#clientlogging)<br>
+- [HighPrecisionMoney](#highprecisionmoney)<br>
 - [KeyReference](#keyreference)<br>
 - [LocalizedString](#localizedstring)<br>
 - [Money](#money)<br>
@@ -60,6 +61,22 @@ import {
   type TClientLogging,
 } from '@commercetools-test-data/commons';
 const clientLogging = ClientLogging.random().build<TClientLogging>();
+```
+
+# HighPrecisionMoney
+
+```ts
+import {
+  HighPrecisionMoney,
+  HighPrecisionMoneyDraft,
+  type THighPrecisionMoney,
+  type THighPrecisionMoneyDraft,
+} from '@commercetools-test-data/commons';
+
+const highPrecisionMoney =
+  HighPrecisionMoney.random().build<THighPrecisionMoney>();
+const highPrecisionMoneyDraft =
+  HighPrecisionMoneyDraft.random().build<THighPrecisionMoneyDraft>();
 ```
 
 ## `KeyReference`

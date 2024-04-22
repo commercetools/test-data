@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { THighPrecisionMoney, THighPrecisionMoneyGraphql } from './types';
-import * as HighPrecisionMoney from './index';
+import type { THighPrecisionMoney, THighPrecisionMoneyGraphql } from '../';
+import { HighPrecisionMoney } from '../';
 
 describe('builder', () => {
   it(
