@@ -29,7 +29,7 @@ const generator = Generator<TCustomApplication>({
       fake(() => CustomApplicationSubmenuLink.random()),
       fake(() => CustomApplicationSubmenuLink.random()),
     ],
-    deployments: [fake(() => CustomApplicationDeploymentPreview.random())],
+    deployments: [],
   },
 });
 

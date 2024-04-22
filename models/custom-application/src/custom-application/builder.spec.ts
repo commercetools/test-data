@@ -46,15 +46,7 @@ describe('builder', () => {
             uriPath: expect.any(String),
           }),
         ]),
-        deployments: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            createdAt: expect.any(String),
-            updatedAt: expect.any(String),
-            url: expect.any(String),
-            alias: expect.any(String),
-          }),
-        ]),
+        deployments: expect.arrayContaining([]),
       })
     )
   );
@@ -100,15 +92,7 @@ describe('builder', () => {
             uriPath: expect.any(String),
           }),
         ]),
-        deployments: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            createdAt: expect.any(String),
-            updatedAt: expect.any(String),
-            url: expect.any(String),
-            alias: expect.any(String),
-          }),
-        ]),
+        deployments: expect.arrayContaining([]),
       })
     )
   );
