@@ -2,6 +2,7 @@
 export * from './address/types';
 export * from './cent-precision-money/types';
 export * from './client-logging/types';
+export * from './high-precision-money/types';
 export * from './key-reference/types';
 export * from './localized-field/types';
 export * from './localized-string/types';
@@ -16,6 +17,8 @@ export * as AddressDraft from './address/address-draft';
 export * as CentPrecisionMoney from './cent-precision-money';
 export * as CentPrecisionMoneyDraft from './cent-precision-money/cent-precision-money-draft';
 export * as ClientLogging from './client-logging';
+export * as HighPrecisionMoney from './high-precision-money';
+export * as HighPrecisionMoneyDraft from './high-precision-money/high-precision-money-draft';
 export * as KeyReference from './key-reference';
 export * as KeyReferenceDraft from './key-reference/key-reference-draft';
 export * as LocalizedField from './localized-field';
