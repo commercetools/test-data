@@ -1,5 +1,13 @@
 # @commercetools-test-data/project
 
+## 7.11.0
+
+### Patch Changes
+
+- Updated dependencies [[`22b1cce`](https://github.com/commercetools/test-data/commit/22b1cce82bf29d98bc117bd866b5a258b89f5cca)]:
+  - @commercetools-test-data/utils@7.11.0
+  - @commercetools-test-data/core@7.11.0
+
 ## 7.10.0
 
 ### Patch Changes
