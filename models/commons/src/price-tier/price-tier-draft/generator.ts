@@ -6,7 +6,8 @@ import { TPriceTierDraft } from '../types';
 
 const generator = Generator<TPriceTierDraft>({
   fields: {
-    minimumQuantity: fake((f) => f.number.int({ max: 2147483647, min: 2 })),
+    // min and max values our API can handle
+    minimumQuantity: fake((f) => f.number.int({ min: 2, max: 2147483647 })),
     value: fake(() => CentPrecisionMoneyDraft.random()),
   },
 });
