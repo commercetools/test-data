@@ -1,5 +1,6 @@
 import { TStandalonePriceDraft } from '../../types';
 import sharedTiersCurrency from './sharedTiersCurrency';
+
 describe(`with sharedTiersCurrency preset`, () => {
   it(`should return a sharedTiersCurrency preset in the selected currency code`, () => {
     ['EUR', 'USD'].forEach((currencyCode) => {
