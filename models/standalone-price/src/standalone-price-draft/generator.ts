@@ -1,5 +1,4 @@
 import {
-  PriceTierDraft,
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
@@ -21,11 +20,7 @@ const generator = Generator<TStandalonePriceDraft>({
     channel: fake(() => KeyReferenceDraft.presets.channel()),
     validFrom: fake(getValidFrom),
     validUntil: fake(getValidUntil),
-    tiers: fake((f) => {
-      return f.helpers.multiple(PriceTierDraft.random, {
-        count: { min: 1, max: 3 },
-      });
-    }),
+    tiers: null,
     discounted: null,
     staged: null,
     active: fake((f) => f.datatype.boolean()),

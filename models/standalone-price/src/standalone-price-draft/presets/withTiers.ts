@@ -2,9 +2,7 @@ import { MoneyDraft, PriceTierDraft } from '@commercetools-test-data/commons';
 import type { TStandalonePriceDraftBuilder } from '../../types';
 import StandalonePriceDraft from '../builder';
 
-const sharedTiersCurrency = (
-  currencyCode: string
-): TStandalonePriceDraftBuilder => {
+const withTiers = (currencyCode: string): TStandalonePriceDraftBuilder => {
   return StandalonePriceDraft()
     .value(MoneyDraft.random().currencyCode(currencyCode))
     .tiers([
@@ -20,4 +18,4 @@ const sharedTiersCurrency = (
     ]);
 };
 
-export default sharedTiersCurrency;
+export default withTiers;

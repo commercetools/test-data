@@ -1,7 +1,7 @@
 import empty from './empty';
 import sampleDataB2B from './sample-data-b2b';
-import sharedTiersCurrency from './sharedTiersCurrency';
+import withTiers from './withTiers';
 
-const presets = { empty, sampleDataB2B, sharedTiersCurrency };
+const presets = { empty, sampleDataB2B, withTiers };
 
 export default presets;

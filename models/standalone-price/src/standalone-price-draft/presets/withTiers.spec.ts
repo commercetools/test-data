@@ -1,11 +1,11 @@
 import { TStandalonePriceDraft } from '../../types';
-import sharedTiersCurrency from './sharedTiersCurrency';
+import withTiers from './withTiers';
 
-describe(`with sharedTiersCurrency preset`, () => {
-  it(`should return a sharedTiersCurrency preset in the selected currency code`, () => {
+describe(`with withTiers preset`, () => {
+  it(`should return a withTiers preset in the selected currency code`, () => {
     ['EUR', 'USD'].forEach((currencyCode) => {
       const standalonePriceDraft =
-        sharedTiersCurrency(currencyCode).build<TStandalonePriceDraft>();
+        withTiers(currencyCode).build<TStandalonePriceDraft>();
 
       expect(standalonePriceDraft).toEqual(
         expect.objectContaining({
@@ -43,10 +43,10 @@ describe(`with sharedTiersCurrency preset`, () => {
     });
   });
 
-  it(`should return a sharedTiersCurrency preset in the selected currency code when built for GraphQl`, () => {
+  it(`should return a withTiers preset in the selected currency code when built for GraphQl`, () => {
     ['EUR', 'USD'].forEach((currencyCode) => {
       const standalonePriceDraft =
-        sharedTiersCurrency(currencyCode).buildGraphql<TStandalonePriceDraft>();
+        withTiers(currencyCode).buildGraphql<TStandalonePriceDraft>();
 
       expect(standalonePriceDraft).toEqual(
         expect.objectContaining({
