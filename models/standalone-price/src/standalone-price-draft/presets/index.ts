@@ -1,7 +1,7 @@
 import empty from './empty';
+import full from './full';
 import sampleDataB2B from './sample-data-b2b';
-import withTiers from './withTiers';
 
-const presets = { empty, sampleDataB2B, withTiers };
+const presets = { empty, sampleDataB2B, full };
 
 export default presets;

@@ -1,6 +1,7 @@
 import {
   KeyReferenceDraft,
   MoneyDraft,
+  PriceTierDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
