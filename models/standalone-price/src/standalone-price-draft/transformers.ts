@@ -1,7 +1,4 @@
-import {
-  TMoneyDraft,
-  TMoneyDraftGraphql,
-} from '@commercetools-test-data/commons';
+import { TMoneyDraftGraphql } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TStandalonePriceDraft,
@@ -26,7 +23,7 @@ const transformers = {
         newFields.tiers = fields.tiers!.map((tier) => ({
           ...tier,
           value: {
-            ...(tier.value as TMoneyDraft),
+            ...tier.value,
             currencyCode: fields.value.currencyCode,
           },
         }));
@@ -59,7 +56,7 @@ const transformers = {
           newFields.tiers = fields.tiers!.map((tier) => ({
             ...tier,
             value: {
-              ...(tier.value as TMoneyDraftGraphql),
+              ...tier.value,
               currencyCode: fields.value.currencyCode,
             },
           }));
