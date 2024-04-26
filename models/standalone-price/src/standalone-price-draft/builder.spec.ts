@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TStandalonePriceDraft, TStandalonePriceDraftGraphql } from '../types';
 import { StandalonePriceDraft } from '..';
+import { TStandalonePriceDraft, TStandalonePriceDraftGraphql } from '../types';
 
 describe('builder', () => {
   it(
@@ -25,17 +25,7 @@ describe('builder', () => {
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
-        tiers: expect.arrayContaining([
-          expect.objectContaining({
-            minimumQuantity: expect.any(Number),
-            value: expect.objectContaining({
-              type: 'centPrecision',
-              currencyCode: expect.any(String),
-              centAmount: expect.any(Number),
-              fractionDigits: expect.any(Number),
-            }),
-          }),
-        ]),
+        tiers: null,
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
@@ -63,17 +53,7 @@ describe('builder', () => {
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
-        tiers: expect.arrayContaining([
-          expect.objectContaining({
-            minimumQuantity: expect.any(Number),
-            value: expect.objectContaining({
-              type: 'centPrecision',
-              currencyCode: expect.any(String),
-              centAmount: expect.any(Number),
-              fractionDigits: expect.any(Number),
-            }),
-          }),
-        ]),
+        tiers: null,
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
@@ -103,17 +83,7 @@ describe('builder', () => {
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
-        tiers: expect.arrayContaining([
-          expect.objectContaining({
-            minimumQuantity: expect.any(Number),
-            value: expect.objectContaining({
-              type: 'centPrecision',
-              currencyCode: expect.any(String),
-              centAmount: expect.any(Number),
-              fractionDigits: expect.any(Number),
-            }),
-          }),
-        ]),
+        tiers: null,
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
