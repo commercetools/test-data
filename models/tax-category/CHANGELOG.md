@@ -1,5 +1,18 @@
 # @commercetools-test-data/tax-category
 
+## 8.0.0
+
+### Minor Changes
+
+- [#558](https://github.com/commercetools/test-data/pull/558) [`112081f`](https://github.com/commercetools/test-data/commit/112081f35e07f67b428aed6129276d17c24a0e61) Thanks [@NickDevG](https://github.com/NickDevG)! - Adding fallback tax rate for US
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.0.0
+  - @commercetools-test-data/commons@8.0.0
+  - @commercetools-test-data/utils@8.0.0
+
 ## 7.11.0
 
 ### Patch Changes

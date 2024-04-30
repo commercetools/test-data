@@ -1,5 +1,17 @@
 # @commercetools-test-data/cart-discount
 
+## 8.0.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.0.0
+  - @commercetools-test-data/category@8.0.0
+  - @commercetools-test-data/commons@8.0.0
+  - @commercetools-test-data/customer-group@8.0.0
+  - @commercetools-test-data/product-type@8.0.0
+  - @commercetools-test-data/utils@8.0.0
+
 ## 7.11.0
 
 ### Patch Changes

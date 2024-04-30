@@ -1,5 +1,7 @@
 # @commercetools-test-data/core
 
+## 8.0.0
+
 ## 7.11.0
 
 ## 7.10.0
