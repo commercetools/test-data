@@ -26,6 +26,14 @@ const standardTaxCategory = () =>
         .subRates([]),
       TaxRateDraft.presets
         .empty()
+        .name('Standard VAT for US')
+        .key('vat-standard-us')
+        .amount(0.2)
+        .includedInPrice(true)
+        .country('US')
+        .subRates([]),
+      TaxRateDraft.presets
+        .empty()
         .name('State Tax: North Carolina')
         .key('nc-state-tax')
         .amount(0.0475)
