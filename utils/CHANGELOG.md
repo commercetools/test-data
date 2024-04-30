@@ -1,5 +1,7 @@
 # @commercetools-test-data/utils
 
+## 8.0.0
+
 ## 7.11.0
 
 ### Minor Changes

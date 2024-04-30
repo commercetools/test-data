@@ -1,5 +1,25 @@
 # @commercetools-test-data/standalone-price
 
+## 8.0.0
+
+### Major Changes
+
+- [#556](https://github.com/commercetools/test-data/pull/556) [`4b5612f`](https://github.com/commercetools/test-data/commit/4b5612f74d03e71afc8a6f16a6994bdf00aa1db8) Thanks [@nima-ct](https://github.com/nima-ct)! - - Changes has been made on the standalone price draft only
+  - Updated the default generator price tiers property to null to reflect our API constraints
+  - Created a new standalone price draft preset ensuring a unified currency
+  - Adjusted the minimum and maximum quantity for the standalone price draft price tiers
+  - Adjusted test assertions
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@8.0.0
+  - @commercetools-test-data/core@8.0.0
+  - @commercetools-test-data/channel@8.0.0
+  - @commercetools-test-data/commons@8.0.0
+  - @commercetools-test-data/customer-group@8.0.0
+  - @commercetools-test-data/utils@8.0.0
+
 ## 7.11.0
 
 ### Patch Changes
