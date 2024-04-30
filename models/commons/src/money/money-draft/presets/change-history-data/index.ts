@@ -1,6 +1,5 @@
 import withUsdCurrencyCode from './with-usd-currency-code';
-import withUsdCurrencyCodeCentMax from './with-usd-currency-code-max-cent';
 
-const presets = { withUsdCurrencyCodeCentMax, withUsdCurrencyCode };
+const presets = { withUsdCurrencyCode };
 
 export default presets;

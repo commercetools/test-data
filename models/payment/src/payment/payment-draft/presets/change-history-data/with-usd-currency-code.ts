@@ -7,12 +7,10 @@ import type { TPaymentDraftBuilder } from '../../../types';
 const withUsdCurrencyCode = (): TPaymentDraftBuilder =>
   PaymentDraft.random()
     .anonymousId(undefined)
-    .amountPlanned(
-      MoneyDraft.presets.changeHistoryData.withUsdCurrencyCodeCentMax()
-    )
+    .amountPlanned(MoneyDraft.presets.changeHistoryData.withUsdCurrencyCode())
     .paymentStatus(PaymentStatusDraft.random().state(undefined))
     .transactions([
-      TransactionDraft.presets.changeHistoryData.withUsdCurrencyCodeCentMax(),
+      TransactionDraft.presets.changeHistoryData.withUsdCurrencyCode(),
     ]);
 
 export default withUsdCurrencyCode;
