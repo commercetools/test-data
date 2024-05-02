@@ -24,6 +24,13 @@ describe('builder', () => {
             id: expect.any(String),
           }),
         ]),
+        categoryRecommendationSettings: expect.objectContaining({
+          id: expect.any(String),
+          createdAt: expect.any(String),
+          updatedAt: expect.any(String),
+          searchProperty: expect.any(String),
+          attributeName: expect.any(String),
+        }),
       })
     )
   );
@@ -48,6 +55,14 @@ describe('builder', () => {
             id: expect.any(String),
           }),
         ]),
+        categoryRecommendationSettings: expect.objectContaining({
+          __typename: 'CategoryRecommendationSettings',
+          id: expect.any(String),
+          createdAt: expect.any(String),
+          updatedAt: expect.any(String),
+          searchProperty: expect.any(String),
+          attributeName: expect.any(String),
+        }),
       })
     )
   );

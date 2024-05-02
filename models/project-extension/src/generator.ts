@@ -3,6 +3,8 @@ import { CustomApplicationInstallation } from '@commercetools-test-data/custom-a
 import { CustomViewInstallation } from '@commercetools-test-data/custom-view';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 
+import * as CategoryRecommendationSettings from './category-recommendation-settings';
+
 import type { TProjectExtension } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -19,7 +21,9 @@ const generator = Generator<TProjectExtension>({
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),
     isRichTextEditorEnabled: fake((f) => f.datatype.boolean()),
     orderStatesVisibility: [],
-    categoryRecommendationSettings: {},
+    categoryRecommendationSettings: fake(() =>
+      CategoryRecommendationSettings.random()
+    ),
     sampleDataImport: {},
   },
 });

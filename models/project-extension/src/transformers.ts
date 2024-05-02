@@ -4,6 +4,7 @@ import type { TProjectExtension, TProjectExtensionGraphql } from './types';
 const buildFields: (keyof TProjectExtension)[] = [
   'installedApplications',
   'installedCustomViews',
+  'categoryRecommendationSettings',
 ];
 
 const transformers = {
