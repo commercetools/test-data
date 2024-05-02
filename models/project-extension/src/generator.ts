@@ -4,6 +4,7 @@ import { CustomViewInstallation } from '@commercetools-test-data/custom-view';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 
 import * as CategoryRecommendationSettings from './category-recommendation-settings';
+import * as ImageRegex from './image-regex';
 
 import type { TProjectExtension } from './types';
 
@@ -15,7 +16,7 @@ const generator = Generator<TProjectExtension>({
     updatedAt: fake(getNewerDate),
     id: fake((f) => f.string.uuid()),
     projectKey: fake((f) => f.lorem.slug()),
-    imageRegex: {},
+    imageRegex: fake(() => ImageRegex.random()),
     applications: [], // Note: This is deprecated
     installedApplications: fake(() => [CustomApplicationInstallation.random()]),
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),

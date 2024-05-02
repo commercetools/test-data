@@ -31,6 +31,21 @@ describe('builder', () => {
           searchProperty: expect.any(String),
           attributeName: expect.any(String),
         }),
+        imageRegex: expect.objectContaining({
+          id: expect.any(String),
+          createdAt: expect.any(String),
+          updatedAt: expect.any(String),
+          small: expect.objectContaining({
+            flag: expect.any(String),
+            replace: expect.any(String),
+            search: expect.any(String),
+          }),
+          thumb: expect.objectContaining({
+            flag: expect.any(String),
+            replace: expect.any(String),
+            search: expect.any(String),
+          }),
+        }),
       })
     )
   );
@@ -62,6 +77,22 @@ describe('builder', () => {
           updatedAt: expect.any(String),
           searchProperty: expect.any(String),
           attributeName: expect.any(String),
+        }),
+        imageRegex: expect.objectContaining({
+          __typename: 'ImageRegex',
+          id: expect.any(String),
+          createdAt: expect.any(String),
+          updatedAt: expect.any(String),
+          small: expect.objectContaining({
+            flag: expect.any(String),
+            replace: expect.any(String),
+            search: expect.any(String),
+          }),
+          thumb: expect.objectContaining({
+            flag: expect.any(String),
+            replace: expect.any(String),
+            search: expect.any(String),
+          }),
         }),
       })
     )
