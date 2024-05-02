@@ -50,6 +50,7 @@ describe('builder', () => {
           completed: expect.any(Boolean),
           dataset: expect.any(String),
         }),
+        orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
       })
     )
   );
@@ -103,6 +104,7 @@ describe('builder', () => {
           completed: expect.any(Boolean),
           dataset: expect.any(String),
         }),
+        orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
       })
     )
   );

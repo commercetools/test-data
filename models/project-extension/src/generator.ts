@@ -22,7 +22,13 @@ const generator = Generator<TProjectExtension>({
     installedApplications: fake(() => [CustomApplicationInstallation.random()]),
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),
     isRichTextEditorEnabled: fake((f) => f.datatype.boolean()),
-    orderStatesVisibility: [],
+    orderStatesVisibility: fake((f) =>
+      f.helpers.arrayElements([
+        'HideOrderState',
+        'HidePaymentState',
+        'HideShipmentState',
+      ])
+    ),
     categoryRecommendationSettings: fake(() =>
       CategoryRecommendationSettings.random()
     ),
