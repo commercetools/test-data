@@ -7,3 +7,20 @@ This package provides the data model for the commercetools internal API `Project
 ```bash
 $ pnpm add -D @commercetools-test-data/project-extension
 ```
+
+# Usage
+
+The package provides models for ProjectExtension.
+
+```ts
+import {
+  ProjectExtension,
+  type TProjectExtension,
+  TProjectExtensionGraphql,
+} from '@commercetools-test-data/project';
+
+const projectExtension =
+  ProjectExtension.random().buildRest<TProjectExtension>();
+const projectExtensionGraphQL =
+  ProjectExtension.random().buildGraphql<TProjectExtensionGraphql>();
+```
