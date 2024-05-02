@@ -46,6 +46,10 @@ describe('builder', () => {
             search: expect.any(String),
           }),
         }),
+        sampleDataImport: expect.objectContaining({
+          completed: expect.any(Boolean),
+          dataset: expect.any(String),
+        }),
       })
     )
   );
@@ -93,6 +97,11 @@ describe('builder', () => {
             replace: expect.any(String),
             search: expect.any(String),
           }),
+        }),
+        sampleDataImport: expect.objectContaining({
+          __typename: 'SampleDataImportMetadata',
+          completed: expect.any(Boolean),
+          dataset: expect.any(String),
         }),
       })
     )

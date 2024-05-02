@@ -6,6 +6,7 @@ const buildFields: (keyof TProjectExtension)[] = [
   'installedCustomViews',
   'categoryRecommendationSettings',
   'imageRegex',
+  'sampleDataImport',
 ];
 
 const transformers = {

@@ -5,6 +5,7 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 
 import * as CategoryRecommendationSettings from './category-recommendation-settings';
 import * as ImageRegex from './image-regex';
+import * as SampleDataImport from './sample-data-import';
 
 import type { TProjectExtension } from './types';
 
@@ -25,7 +26,7 @@ const generator = Generator<TProjectExtension>({
     categoryRecommendationSettings: fake(() =>
       CategoryRecommendationSettings.random()
     ),
-    sampleDataImport: {},
+    sampleDataImport: fake(() => SampleDataImport.random()),
   },
 });
 
