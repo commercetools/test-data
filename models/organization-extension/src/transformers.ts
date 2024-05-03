@@ -4,7 +4,14 @@ import type {
   TOrganizationExtensionGraphql,
 } from './types';
 
-const buildFields: (keyof TOrganizationExtension)[] = [];
+const buildFields: (keyof TOrganizationExtension)[] = [
+  'applicationsMaintainerContactInformation',
+  'oidcSsoConfig',
+  'installedApplications',
+  'installedCustomViews',
+  'registeredApplications',
+  'registeredCustomViews',
+];
 
 const transformers = {
   default: Transformer<TOrganizationExtension, TOrganizationExtension>(

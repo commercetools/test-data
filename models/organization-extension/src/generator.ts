@@ -9,7 +9,8 @@ import {
 } from '@commercetools-test-data/custom-view';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as ContactInformation from './contact-information';
-import { TOrganizationExtension } from './types';
+import * as OidcSSOConfig from './oidc-sso-config';
+import type { TOrganizationExtension } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -32,7 +33,7 @@ const generator = Generator<TOrganizationExtension>({
     applicationsMaintainerContactInformation: fake(() =>
       ContactInformation.random()
     ),
-    oidcSsoConfig: null,
+    oidcSsoConfig: fake(() => OidcSSOConfig.random()),
   },
 });
 
