@@ -8,7 +8,7 @@ import {
   CustomView,
 } from '@commercetools-test-data/custom-view';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import * as ContactInformation from './applications-maintainer-contact-information';
+import * as ContactInformation from './contact-information';
 import { TOrganizationExtension } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
