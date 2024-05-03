@@ -815,20 +815,20 @@ importers:
         specifier: 7.17.9
         version: 7.17.9
       '@commercetools-test-data/core':
-        specifier: 7.11.0
-        version: 7.11.0
+        specifier: 8.0.0
+        version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 7.11.0
-        version: 7.11.0
+        specifier: 8.0.0
+        version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 7.11.0
-        version: 7.11.0
+        specifier: 8.0.0
+        version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 7.11.0
-        version: 7.11.0
+        specifier: 8.0.0
+        version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 7.11.0
-        version: 7.11.0
+        specifier: 8.0.0
+        version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: 7.0.0
         version: 7.0.0
