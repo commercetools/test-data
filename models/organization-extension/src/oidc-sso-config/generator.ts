@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TOidcSsoConfig } from './types';
+import type { TOidcSsoConfig } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

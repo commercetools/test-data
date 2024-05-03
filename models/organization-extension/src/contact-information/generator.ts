@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TContactInformation } from './types';
+import type { TContactInformation } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
