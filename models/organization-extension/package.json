@@ -17,15 +17,13 @@
   "module": "dist/commercetools-test-data-organization-extension.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
-    "@babel/runtime": "^7.17.9",
-    "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-frontend/application-config": "^22.10.0",
-    "@commercetools-frontend/constants": "^22.10.0",
-    "@commercetools-test-data/commons": "8.0.0",
+    "@babel/runtime": "7.17.9",
+    "@babel/runtime-corejs3": "7.17.9",
     "@commercetools-test-data/core": "8.0.0",
-    "@commercetools-test-data/graphql-types": "8.0.0",
     "@commercetools-test-data/utils": "8.0.0",
-    "@commercetools/platform-sdk": "^7.0.0",
-    "@faker-js/faker": "^8.0.0"
+    "@commercetools/platform-sdk": "7.0.0",
+    "@commercetools-test-data/graphql-types": "8.0.0",
+    "@commercetools-test-data/custom-application": "8.0.0",
+    "@commercetools-test-data/custom-view": "8.0.0"
   }
 }
