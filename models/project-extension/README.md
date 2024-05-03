@@ -17,7 +17,7 @@ import {
   ProjectExtension,
   type TProjectExtension,
   TProjectExtensionGraphql,
-} from '@commercetools-test-data/project';
+} from '@commercetools-test-data/project-extension';
 
 const projectExtension =
   ProjectExtension.random().buildRest<TProjectExtension>();
