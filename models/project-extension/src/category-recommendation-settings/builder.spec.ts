@@ -5,7 +5,7 @@ import type {
   TCategoryRecommendationSettings,
   TCategoryRecommendationSettingsGraphql,
 } from './types';
-import * as ProjectExtension from './index';
+import * as CategoryRecommendationSettings from './index';
 
 describe('builder', () => {
   it(
@@ -14,7 +14,7 @@ describe('builder', () => {
       TCategoryRecommendationSettings
     >(
       'default',
-      ProjectExtension.random(),
+      CategoryRecommendationSettings.random(),
       expect.objectContaining({
         id: expect.any(String),
         createdAt: expect.any(String),
@@ -31,7 +31,7 @@ describe('builder', () => {
       TCategoryRecommendationSettingsGraphql
     >(
       'graphql',
-      ProjectExtension.random(),
+      CategoryRecommendationSettings.random(),
       expect.objectContaining({
         __typename: 'CategoryRecommendationSettings',
         id: expect.any(String),

@@ -2,13 +2,13 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TImageRegex, TImageRegexGraphql } from './types';
-import * as ProjectExtension from './index';
+import * as ImageRegex from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TImageRegex, TImageRegex>(
       'default',
-      ProjectExtension.random(),
+      ImageRegex.random(),
       expect.objectContaining({
         id: expect.any(String),
         createdAt: expect.any(String),
@@ -30,7 +30,7 @@ describe('builder', () => {
   it(
     ...createBuilderSpec<TImageRegex, TImageRegexGraphql>(
       'graphql',
-      ProjectExtension.random(),
+      ImageRegex.random(),
       expect.objectContaining({
         __typename: 'ImageRegex',
         id: expect.any(String),

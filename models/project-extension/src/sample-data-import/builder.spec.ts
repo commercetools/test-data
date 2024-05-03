@@ -5,13 +5,13 @@ import type {
   TSampleDataImportMetadata,
   TSampleDataImportMetadataGraphql,
 } from './types';
-import * as ProjectExtension from './index';
+import * as SampleDataImportMetadata from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TSampleDataImportMetadata, TSampleDataImportMetadata>(
       'default',
-      ProjectExtension.random(),
+      SampleDataImportMetadata.random(),
       expect.objectContaining({
         completed: expect.any(Boolean),
         dataset: expect.any(String),
@@ -25,7 +25,7 @@ describe('builder', () => {
       TSampleDataImportMetadataGraphql
     >(
       'graphql',
-      ProjectExtension.random(),
+      SampleDataImportMetadata.random(),
       expect.objectContaining({
         __typename: 'SampleDataImportMetadata',
         completed: expect.any(Boolean),
