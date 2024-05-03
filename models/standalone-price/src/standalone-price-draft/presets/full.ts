@@ -17,8 +17,8 @@ import StandalonePriceDraft from '../builder';
  * @returns {TStandalonePriceDraftBuilder} A standalone price draft builder.
  *
  * @example
- * const standalonePriceDraft = StandalonePriceDraft.presets.full().build();
- * const standalonePriceDraft = StandalonePriceDraft.presets.full({currency: 'EUR'}).build();
+ * const standalonePriceDraft = StandalonePriceDraft.presets.full().buildGraphql();
+ * const standalonePriceDraft = StandalonePriceDraft.presets.full({currency: 'EUR'}).buildGraphql();
  */
 const full = (options?: {
   currency?: string;
