@@ -1,8 +1,6 @@
 import {
   StandalonePrice,
   StandalonePriceDraft,
-  StagedPriceDraft,
-  StagedStandalonePrice,
   CustomerGroup,
   Channel,
 } from '@commercetools/platform-sdk';
