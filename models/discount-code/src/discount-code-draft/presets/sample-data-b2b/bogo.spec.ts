@@ -32,8 +32,8 @@ describe(`with bogo preset`, () => {
         },
         "groups": undefined,
         "isActive": true,
-        "maxApplications": 1,
-        "maxApplicationsPerCustomer": 1,
+        "maxApplications": undefined,
+        "maxApplicationsPerCustomer": 5,
         "name": {
           "de": undefined,
           "de-DE": "BOGO",
@@ -112,8 +112,8 @@ describe(`with bogo preset`, () => {
         ],
         "groups": undefined,
         "isActive": true,
-        "maxApplications": 1,
-        "maxApplicationsPerCustomer": 1,
+        "maxApplications": undefined,
+        "maxApplicationsPerCustomer": 5,
         "name": [
           {
             "locale": "de-DE",
