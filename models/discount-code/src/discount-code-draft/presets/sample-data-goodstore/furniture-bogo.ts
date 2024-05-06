@@ -17,8 +17,7 @@ const furnitureBogo = (cartDiscountId: string): TDiscountCodeDraftBuilder =>
       ReferenceDraft.random().id(cartDiscountId).typeId('cart-discount'),
     ])
     .isActive(true)
-    .maxApplications(1)
-    .maxApplicationsPerCustomer(1)
+    .maxApplicationsPerCustomer(5)
     .groups([]);
 
 export default furnitureBogo;
