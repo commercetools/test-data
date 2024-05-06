@@ -4,12 +4,11 @@ import {
 } from '@commercetools/platform-sdk';
 import { TBuilder } from '@commercetools-test-data/core';
 
-// Staged price
 export type TStagedPrice = StagedStandalonePrice;
 export type TStagedPriceDraft = StagedPriceDraft;
 
 export type TStagedPriceGraphql = TStagedPrice & {
-  __typename: 'ProductStagedPrice';
+  __typename: 'StagedStandalonePrice';
 };
 export type TStagedPriceDraftGraphql = TStagedPriceDraft;
 
