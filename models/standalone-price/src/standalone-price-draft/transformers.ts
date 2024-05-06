@@ -70,6 +70,7 @@ const transformers = {
             },
           };
         }
+
         return newFields;
       },
     }

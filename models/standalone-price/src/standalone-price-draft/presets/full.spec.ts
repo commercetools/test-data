@@ -39,6 +39,7 @@ describe(`with full preset`, () => {
         discounted: null,
         staged: expect.objectContaining({
           value: expect.objectContaining({
+            centAmount: expect.any(Number),
             currencyCode: mainCurrencyCode,
           }),
         }),
@@ -85,6 +86,7 @@ describe(`with full preset`, () => {
       discounted: null,
       staged: expect.objectContaining({
         value: expect.objectContaining({
+          centAmount: expect.any(Number),
           currencyCode: mainCurrencyCode,
         }),
       }),

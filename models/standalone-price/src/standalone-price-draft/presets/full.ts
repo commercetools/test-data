@@ -1,4 +1,5 @@
 import { MoneyDraft, PriceTierDraft } from '@commercetools-test-data/commons';
+import * as StagedPriceDraft from '../../staged-price-draft';
 import type { TStandalonePriceDraftBuilder } from '../../types';
 import StandalonePriceDraft from '../builder';
 
@@ -36,7 +37,7 @@ const full = (options?: {
       PriceTierDraft.random(),
       PriceTierDraft.random(),
     ])
-    .staged(MoneyDraft.random());
+    .staged(StagedPriceDraft.random());
 };
 
 export default full;
