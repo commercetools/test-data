@@ -20,7 +20,7 @@ import {
 } from '@commercetools-test-data/custom-view';
 
 const organizationExtension =
-  OrganizatiionExtension.random().build<TOrganizationExtension>();
+  OrganizationExtension.random().build<TOrganizationExtension>();
 const organizationExtensionGraphQL =
-  OrganizatiionExtension.random().buildGraphql<TOrganizationExtensionGraphql>();
+  OrganizationExtension.random().buildGraphql<TOrganizationExtensionGraphql>();
 ```

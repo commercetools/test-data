@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/organization-extension",
   "version": "8.0.0",
-  "description": "Data model for internal Merchant Center API Organizatiion Extension",
+  "description": "Data model for internal Merchant Center API Organization Extension",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
