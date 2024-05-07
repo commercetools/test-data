@@ -8,7 +8,7 @@ export type TCartDiscountValueRelative = CartDiscountValueRelative;
 export type TCartDiscountValueRelativeDraft = CartDiscountValueRelativeDraft;
 
 export type TCartDiscountValueRelativeGraphql = TCartDiscountValueRelative & {
-  __typename: 'CartDiscountValueRelative';
+  __typename: 'RelativeDiscountValue';
 };
 export type TCartDiscountValueRelativeDraftGraphql = {
   relative: Omit<TCartDiscountValueRelativeDraft, 'type'>;
