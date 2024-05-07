@@ -10,9 +10,7 @@ const lifttechSolutionsLtdEsAddress = (): TAddressDraftBuilder =>
     .additionalStreetInfo('Piso 2')
     .postalCode('28013')
     .city('Madrid')
-    .state('Community of Madrid')
     .country('ES')
-    .region('Community of Madrid')
     .company('LiftTech Solutions Ltd ES')
     .building('F')
     .apartment('567');
