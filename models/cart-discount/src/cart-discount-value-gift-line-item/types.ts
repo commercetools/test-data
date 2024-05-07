@@ -10,7 +10,7 @@ export type TCartDiscountValueGiftLineItemDraft =
 
 export type TCartDiscountValueGiftLineItemGraphql =
   TCartDiscountValueGiftLineItem & {
-    __typename: 'CartDiscountValueGiftLineItem';
+    __typename: 'GiftLineItemValue';
   };
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
   giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'>;

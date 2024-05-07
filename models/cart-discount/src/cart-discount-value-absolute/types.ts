@@ -8,7 +8,7 @@ export type TCartDiscountValueAbsolute = CartDiscountValueAbsolute;
 export type TCartDiscountValueAbsoluteDraft = CartDiscountValueAbsoluteDraft;
 
 export type TCartDiscountValueAbsoluteGraphql = TCartDiscountValueAbsolute & {
-  __typename: 'CartDiscountValueAbsolute';
+  __typename: 'AbsoluteDiscountValue';
 };
 
 export type TCartDiscountValueAbsoluteDraftGraphql = {

@@ -23,7 +23,7 @@ const transformers = {
   >('graphql', {
     buildFields: ['money'],
     addFields: () => ({
-      __typename: 'CartDiscountValueAbsolute',
+      __typename: 'AbsoluteDiscountValue',
     }),
   }),
 };

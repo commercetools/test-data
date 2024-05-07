@@ -82,7 +82,7 @@ describe('builder', () => {
           id: expect.any(String),
           typeId: 'channel',
         }),
-        __typename: 'CartDiscountValueGiftLineItem',
+        __typename: 'GiftLineItemValue',
       })
     )
   );

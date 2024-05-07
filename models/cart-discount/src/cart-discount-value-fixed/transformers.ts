@@ -19,7 +19,7 @@ const transformers = {
     {
       buildFields: ['money'],
       addFields: () => ({
-        __typename: 'CartDiscountValueFixed',
+        __typename: 'FixedPriceDiscountValue',
       }),
     }
   ),
