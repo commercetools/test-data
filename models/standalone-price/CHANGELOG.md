@@ -1,5 +1,23 @@
 # @commercetools-test-data/standalone-price
 
+## 8.1.0
+
+### Minor Changes
+
+- [#565](https://github.com/commercetools/test-data/pull/565) [`b1ba0cd`](https://github.com/commercetools/test-data/commit/b1ba0cde973bafc12c262a47bcc35da7936656d6) Thanks [@nima-ct](https://github.com/nima-ct)! - - Added optional 'options' parameter to the 'full' function to allow setting a unified currency
+  - Added a StagedPriceDraft model within the standalone price model
+  - no breaking backward compatibility
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.1.0
+  - @commercetools-test-data/channel@8.1.0
+  - @commercetools-test-data/commons@8.1.0
+  - @commercetools-test-data/customer-group@8.1.0
+  - @commercetools-test-data/product@8.1.0
+  - @commercetools-test-data/utils@8.1.0
+
 ## 8.0.0
 
 ### Major Changes
