@@ -58,7 +58,7 @@ describe('builder', () => {
             type: 'centPrecision',
           }),
         ]),
-        __typename: 'CartDiscountValueAbsolute',
+        __typename: 'AbsoluteDiscountValue',
       })
     )
   );

@@ -23,7 +23,7 @@ const transformers = {
   >('graphql', {
     buildFields: ['product', 'supplyChannel', 'distributionChannel'],
     addFields: () => ({
-      __typename: 'CartDiscountValueGiftLineItem',
+      __typename: 'GiftLineItemValue',
     }),
   }),
 };

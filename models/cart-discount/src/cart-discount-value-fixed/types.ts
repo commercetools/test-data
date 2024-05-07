@@ -8,7 +8,7 @@ export type TCartDiscountValueFixed = CartDiscountValueFixed;
 export type TCartDiscountValueFixedDraft = CartDiscountValueFixedDraft;
 
 export type TCartDiscountValueFixedGraphql = TCartDiscountValueFixed & {
-  __typename: 'CartDiscountValueFixed';
+  __typename: 'FixedPriceDiscountValue';
 };
 export type TCartDiscountValueFixedDraftGraphql = {
   fixed: Omit<TCartDiscountValueFixedDraft, 'type'>;

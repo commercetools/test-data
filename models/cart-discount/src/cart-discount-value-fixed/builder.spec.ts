@@ -52,7 +52,7 @@ describe('builder', () => {
             type: 'centPrecision',
           }),
         ]),
-        __typename: 'CartDiscountValueFixed',
+        __typename: 'FixedPriceDiscountValue',
       })
     )
   );
