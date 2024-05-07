@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-discount
 
+## 8.1.1
+
+### Patch Changes
+
+- Updated dependencies [[`9916819`](https://github.com/commercetools/test-data/commit/991681926e766ae4da115621b10e581c518e8230)]:
+  - @commercetools-test-data/commons@8.1.1
+  - @commercetools-test-data/category@8.1.1
+  - @commercetools-test-data/product-type@8.1.1
+  - @commercetools-test-data/core@8.1.1
+  - @commercetools-test-data/utils@8.1.1
+
 ## 8.1.0
 
 ### Patch Changes

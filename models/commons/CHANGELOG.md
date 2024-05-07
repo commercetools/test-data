@@ -1,5 +1,15 @@
 # @commercetools-test-data/commons
 
+## 8.1.1
+
+### Patch Changes
+
+- [#573](https://github.com/commercetools/test-data/pull/573) [`9916819`](https://github.com/commercetools/test-data/commit/991681926e766ae4da115621b10e581c518e8230) Thanks [@ByronDWall](https://github.com/ByronDWall)! - fix(addresses): remove states and regions from EU-specific B2B sample data addresses to allow for cart creation in sample data import on AWS
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.1.1
+  - @commercetools-test-data/utils@8.1.1
+
 ## 8.1.0
 
 ### Patch Changes
