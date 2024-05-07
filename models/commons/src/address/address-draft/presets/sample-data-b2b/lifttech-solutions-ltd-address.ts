@@ -10,9 +10,7 @@ const lifttechSolutionsLtdAddress = (): TAddressDraftBuilder =>
     .additionalStreetInfo('Sherlock Holmes House')
     .postalCode('SW1A 1AA')
     .city('London')
-    .state('London')
     .country('GB')
-    .region('England')
     .company('LiftTech Solutions Ltd')
     .building('C')
     .apartment('987');

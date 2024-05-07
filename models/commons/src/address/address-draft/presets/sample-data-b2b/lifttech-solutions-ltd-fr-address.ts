@@ -10,9 +10,7 @@ const lifttechSolutionsLtdFrAddress = (): TAddressDraftBuilder =>
     .additionalStreetInfo('Étage 4')
     .postalCode('75002')
     .city('Paris')
-    .state('Île-de-France')
     .country('FR')
-    .region('Île-de-France')
     .company('LiftTech Solutions Ltd FR')
     .building('E')
     .apartment('321');
