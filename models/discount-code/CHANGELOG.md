@@ -1,5 +1,17 @@
 # @commercetools-test-data/discount-code
 
+## 8.1.0
+
+### Patch Changes
+
+- [#566](https://github.com/commercetools/test-data/pull/566) [`a44d820`](https://github.com/commercetools/test-data/commit/a44d820623921f81421824f10976d1496d3c2c92) Thanks [@jocelyn-dunkley](https://github.com/jocelyn-dunkley)! - Remove app limit and increase customer limit to 5 for BOGO discounts
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.1.0
+  - @commercetools-test-data/cart-discount@8.1.0
+  - @commercetools-test-data/commons@8.1.0
+  - @commercetools-test-data/utils@8.1.0
+
 ## 8.0.0
 
 ### Patch Changes
