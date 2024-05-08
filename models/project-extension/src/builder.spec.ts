@@ -12,6 +12,8 @@ describe('builder', () => {
       expect.objectContaining({
         id: expect.any(String),
         createdAt: expect.any(String),
+        updatedAt: expect.any(String),
+        applications: expect.any(Array),
         projectKey: expect.any(String),
         isRichTextEditorEnabled: expect.any(Boolean),
         installedApplications: expect.arrayContaining([
@@ -63,6 +65,8 @@ describe('builder', () => {
         __typename: 'ProjectExtension',
         id: expect.any(String),
         createdAt: expect.any(String),
+        updatedAt: expect.any(String),
+        applications: expect.any(Array),
         projectKey: expect.any(String),
         isRichTextEditorEnabled: expect.any(Boolean),
         installedApplications: expect.arrayContaining([

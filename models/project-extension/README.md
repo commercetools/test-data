@@ -16,7 +16,7 @@ The package provides models for ProjectExtension.
 import {
   ProjectExtension,
   type TProjectExtension,
-  TProjectExtensionGraphql,
+  type TProjectExtensionGraphql,
 } from '@commercetools-test-data/project-extension';
 
 const projectExtension =
