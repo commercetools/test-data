@@ -809,29 +809,26 @@ importers:
   models/project-extension:
     dependencies:
       '@babel/runtime':
-        specifier: 7.17.9
-        version: 7.17.9
+        specifier: ^7.17.9
+        version: 7.24.5
       '@babel/runtime-corejs3':
-        specifier: 7.17.9
-        version: 7.17.9
+        specifier: ^7.17.9
+        version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.0.0
+        specifier: 8.1.1
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 8.0.0
+        specifier: 8.1.1
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 8.0.0
+        specifier: 8.1.1
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 8.0.0
+        specifier: 8.1.1
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.0.0
+        specifier: 8.1.1
         version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: 7.0.0
-        version: 7.0.0
 
   models/quote:
     dependencies:
@@ -7661,6 +7658,11 @@ packages:
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
       responselike: 3.0.0
+    dev: false
+
+  /graceful-fs@4.1.5:
+    resolution: {integrity: sha512-8Cpxlk0y+CK0BcGAr4ijS2fHc16VUqdHu/zSAFmyx9ui6yjwWtIlOiSSPAlcEIdp0tc4ZH/fNkDQPzRkecS8dw==}
+    engines: {node: '>=0.4.0'}
     dev: false
 
   /graceful-fs@4.2.10:
