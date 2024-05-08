@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart-discount
 
+## 8.2.0
+
+### Minor Changes
+
+- [#576](https://github.com/commercetools/test-data/pull/576) [`21cd41d`](https://github.com/commercetools/test-data/commit/21cd41d4bb912e8ff26a9d6276794af58513807a) Thanks [@ARRIOLALEO](https://github.com/ARRIOLALEO)! - mach typenames with typenames on mc
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.2.0
+  - @commercetools-test-data/category@8.2.0
+  - @commercetools-test-data/commons@8.2.0
+  - @commercetools-test-data/customer-group@8.2.0
+  - @commercetools-test-data/product-type@8.2.0
+  - @commercetools-test-data/utils@8.2.0
+
 ## 8.1.1
 
 ### Patch Changes
