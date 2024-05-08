@@ -1,10 +1,10 @@
 import { TTransactionDraft } from '../../../types';
-import withUsdCurrencyCodeCentMax from './with-usd-currency-code-max-cent';
+import withUsdCurrencyCode from './with-usd-currency-code';
 
 describe('Transaction with with the amount money of `USD` currencyCode and max cent amount preset', () => {
   it('should return the currencyCode of `USD` with a max cent amount', () => {
     const transactionWithUsdMoneyPreset =
-      withUsdCurrencyCodeCentMax().build<TTransactionDraft>();
+      withUsdCurrencyCode().build<TTransactionDraft>();
 
     expect(transactionWithUsdMoneyPreset).toEqual(
       expect.objectContaining({
