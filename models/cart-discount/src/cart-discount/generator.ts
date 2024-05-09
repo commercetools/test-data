@@ -26,10 +26,10 @@ const generator = Generator<TCartDiscount>({
     description: fake(() => LocalizedString.random()),
     value: fake((f) =>
       f.helpers.arrayElement([
-        CartDiscountValueAbsolute.CartDiscountValueAbsoluteDraft.random(),
-        CartDiscountValueFixed.CartDiscountValueFixedDraft.random(),
-        CartDiscountValueGiftLineItem.CartDiscountValueGiftLineItemDraft.random(),
-        CartDiscountValueRelative.CartDiscountValueRelativeDraft.random(),
+        CartDiscountValueAbsolute.random(),
+        CartDiscountValueFixed.random(),
+        CartDiscountValueGiftLineItem.random(),
+        CartDiscountValueRelative.random(),
       ])
     ),
     cartPredicate: '1=1',
