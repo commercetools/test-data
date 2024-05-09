@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 8.2.1
+
+### Patch Changes
+
+- [#577](https://github.com/commercetools/test-data/pull/577) [`db80fa0`](https://github.com/commercetools/test-data/commit/db80fa017767e6474afed13b2490e48a59930ec7) Thanks [@ARRIOLALEO](https://github.com/ARRIOLALEO)! - return a full price on value instead a draft price to mach the values expected
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.2.1
+  - @commercetools-test-data/category@8.2.1
+  - @commercetools-test-data/commons@8.2.1
+  - @commercetools-test-data/customer-group@8.2.1
+  - @commercetools-test-data/product-type@8.2.1
+  - @commercetools-test-data/utils@8.2.1
+
 ## 8.2.0
 
 ### Minor Changes

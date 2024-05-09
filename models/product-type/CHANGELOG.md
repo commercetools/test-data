@@ -1,5 +1,14 @@
 # @commercetools-test-data/product-type
 
+## 8.2.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.2.1
+  - @commercetools-test-data/commons@8.2.1
+  - @commercetools-test-data/utils@8.2.1
+
 ## 8.2.0
 
 ### Patch Changes

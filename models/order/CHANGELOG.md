@@ -1,5 +1,18 @@
 # @commercetools-test-data/order
 
+## 8.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`db80fa0`](https://github.com/commercetools/test-data/commit/db80fa017767e6474afed13b2490e48a59930ec7)]:
+  - @commercetools-test-data/cart-discount@8.2.1
+  - @commercetools-test-data/cart@8.2.1
+  - @commercetools-test-data/quote@8.2.1
+  - @commercetools-test-data/core@8.2.1
+  - @commercetools-test-data/commons@8.2.1
+  - @commercetools-test-data/customer-group@8.2.1
+  - @commercetools-test-data/utils@8.2.1
+
 ## 8.2.0
 
 ### Patch Changes
