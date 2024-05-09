@@ -1,5 +1,16 @@
 # @commercetools-test-data/payment
 
+## 8.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@8.2.0
+  - @commercetools-test-data/core@8.2.0
+  - @commercetools-test-data/commons@8.2.0
+  - @commercetools-test-data/customer@8.2.0
+  - @commercetools-test-data/utils@8.2.0
+
 ## 8.1.1
 
 ### Patch Changes
