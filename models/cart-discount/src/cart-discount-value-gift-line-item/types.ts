@@ -1,10 +1,17 @@
 import {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
+  ChannelReference,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
+export type TCartDiscountValueGiftLineItem = Omit<
+  CartDiscountValueGiftLineItem,
+  'supplyChannel' | 'distributionChannel'
+> & {
+  distributionChannelRef: ChannelReference;
+  supplyChannelRef: ChannelReference;
+};
 export type TCartDiscountValueGiftLineItemDraft =
   CartDiscountValueGiftLineItemDraft;
 
