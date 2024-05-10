@@ -28,6 +28,7 @@ const transformers = {
       'description',
       'createdBy',
       'lastModifiedBy',
+      'stores',
     ],
     addFields: ({ fields }) => ({
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),

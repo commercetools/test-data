@@ -10,7 +10,13 @@ const transformers = {
     buildFields: ['name', 'description', 'createdBy', 'lastModifiedBy'],
   }),
   graphql: Transformer<TDiscountCode, TDiscountCodeGraphql>('graphql', {
-    buildFields: ['name', 'description', 'createdBy', 'lastModifiedBy'],
+    buildFields: [
+      'name',
+      'description',
+      'createdBy',
+      'lastModifiedBy',
+      'cartDiscounts',
+    ],
     addFields: ({ fields }) => ({
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       descriptionAllLocales: LocalizedString.toLocalizedField(
