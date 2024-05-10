@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 8.2.2
+
+### Patch Changes
+
+- [#580](https://github.com/commercetools/test-data/pull/580) [`d30653c`](https://github.com/commercetools/test-data/commit/d30653c9c67633d7cbc94d00ec6fa2acdb0e1481) Thanks [@ARRIOLALEO](https://github.com/ARRIOLALEO)! - add builders for stores in cartDiscount and cartDiscounts on discountCode models
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.2.2
+  - @commercetools-test-data/category@8.2.2
+  - @commercetools-test-data/commons@8.2.2
+  - @commercetools-test-data/customer-group@8.2.2
+  - @commercetools-test-data/product-type@8.2.2
+  - @commercetools-test-data/utils@8.2.2
+
 ## 8.2.1
 
 ### Patch Changes
