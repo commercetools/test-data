@@ -4,10 +4,22 @@ import type { TDiscountCode, TDiscountCodeGraphql } from './types';
 
 const transformers = {
   default: Transformer<TDiscountCode, TDiscountCode>('default', {
-    buildFields: ['name', 'description', 'createdBy', 'lastModifiedBy'],
+    buildFields: [
+      'name',
+      'description',
+      'createdBy',
+      'lastModifiedBy',
+      'cartDiscounts',
+    ],
   }),
   rest: Transformer<TDiscountCode, TDiscountCode>('rest', {
-    buildFields: ['name', 'description', 'createdBy', 'lastModifiedBy'],
+    buildFields: [
+      'name',
+      'description',
+      'createdBy',
+      'lastModifiedBy',
+      'cartDiscounts',
+    ],
   }),
   graphql: Transformer<TDiscountCode, TDiscountCodeGraphql>('graphql', {
     buildFields: [
