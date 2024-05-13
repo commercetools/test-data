@@ -9,12 +9,14 @@ export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
 export type TCartDiscountValueGiftLineItemDraft =
   CartDiscountValueGiftLineItemDraft;
 
-export type TCartDiscountValueGiftLineItemGraphql =
-  TCartDiscountValueGiftLineItem & {
-    distributionChannelRef: TReference | null;
-    supplyChannelRef: TReference | null;
-    __typename: 'GiftLineItemValue';
-  };
+export type TCartDiscountValueGiftLineItemGraphql = Omit<
+  CartDiscountValueGiftLineItem,
+  'supplyChannel' | 'distributionChannel'
+> & {
+  distributionChannelRef: TReference | null;
+  supplyChannelRef: TReference | null;
+  __typename: 'GiftLineItemValue';
+};
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
   giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'>;
 };
