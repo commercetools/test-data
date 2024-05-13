@@ -59,7 +59,6 @@ describe('builder', () => {
       })
     )
   );
-
   it(
     ...createBuilderSpec<
       TCartDiscountValueGiftLineItem,

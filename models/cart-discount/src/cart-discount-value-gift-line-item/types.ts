@@ -1,8 +1,8 @@
 import {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
-  ChannelReference,
 } from '@commercetools/platform-sdk';
+import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
@@ -15,8 +15,8 @@ export type TCartDiscountValueGiftLineItemGraphql =
   };
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
   giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'> & {
-    distributionChannelRef: ChannelReference;
-    supplyChannelRef: ChannelReference;
+    distributionChannelRef: TReferenceGraphql | null;
+    supplyChannelRef: TReferenceGraphql | null;
   };
 };
 
