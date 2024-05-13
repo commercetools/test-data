@@ -2,7 +2,7 @@ import {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
 } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import { TReference } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
@@ -11,13 +11,12 @@ export type TCartDiscountValueGiftLineItemDraft =
 
 export type TCartDiscountValueGiftLineItemGraphql =
   TCartDiscountValueGiftLineItem & {
+    distributionChannelRef: TReference | null;
+    supplyChannelRef: TReference | null;
     __typename: 'GiftLineItemValue';
   };
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
-  giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'> & {
-    distributionChannelRef: TReferenceGraphql | null;
-    supplyChannelRef: TReferenceGraphql | null;
-  };
+  giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'>;
 };
 
 export type TCartDiscountValueGiftLineItemBuilder =

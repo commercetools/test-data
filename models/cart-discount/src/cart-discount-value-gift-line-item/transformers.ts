@@ -1,4 +1,4 @@
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import { Reference, TReference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCartDiscountValueGiftLineItem,
@@ -27,12 +27,12 @@ const transformers = {
       const supplyChannelRef = fields.supplyChannel
         ? Reference.random()
             .typeId('channel')
-            .buildGraphql<TReferenceGraphql<'channel'>>()
+            .buildGraphql<TReference<'channel'>>()
         : null;
       const distributionChannelRef = fields.distributionChannel
         ? Reference.random()
             .typeId('channel')
-            .buildGraphql<TReferenceGraphql<'channel'>>()
+            .buildGraphql<TReference<'channel'>>()
         : null;
       return {
         supplyChannelRef,
