@@ -21,7 +21,7 @@ const transformers = {
     TCartDiscountValueGiftLineItem,
     TCartDiscountValueGiftLineItemGraphql
   >('graphql', {
-    buildFields: ['product'],
+    buildFields: ['product', 'supplyChannel', 'distributionChannel'],
     addFields: ({ fields }) => ({
       ...fields,
       distributionChannelRef: fields.distributionChannel,
