@@ -29,11 +29,13 @@ const transformers = {
             .typeId('channel')
             .buildGraphql<TReference<'channel'>>()
         : null;
+
       const distributionChannelRef = fields.distributionChannel
         ? Reference.random()
             .typeId('channel')
             .buildGraphql<TReference<'channel'>>()
         : null;
+
       return {
         supplyChannelRef,
         distributionChannelRef,
