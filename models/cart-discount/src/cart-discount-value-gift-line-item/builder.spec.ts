@@ -22,11 +22,11 @@ describe('builder', () => {
           typeId: 'product',
         }),
         variantId: expect.any(Number),
-        supplyChannelRef: expect.objectContaining({
+        supplyChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),
-        distributionChannelRef: expect.objectContaining({
+        distributionChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),
@@ -48,11 +48,11 @@ describe('builder', () => {
           typeId: 'product',
         }),
         variantId: expect.any(Number),
-        supplyChannelRef: expect.objectContaining({
+        supplyChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),
-        distributionChannelRef: expect.objectContaining({
+        distributionChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),
@@ -74,7 +74,15 @@ describe('builder', () => {
           typeId: 'product',
         }),
         variantId: expect.any(Number),
+        supplyChannel: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'channel',
+        }),
         supplyChannelRef: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'channel',
+        }),
+        distributionChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),

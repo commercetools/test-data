@@ -5,13 +5,7 @@ import {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountValueGiftLineItem = Omit<
-  CartDiscountValueGiftLineItem,
-  'supplyChannel' | 'distributionChannel'
-> & {
-  distributionChannelRef: ChannelReference;
-  supplyChannelRef: ChannelReference;
-};
+export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
 export type TCartDiscountValueGiftLineItemDraft =
   CartDiscountValueGiftLineItemDraft;
 
@@ -20,7 +14,10 @@ export type TCartDiscountValueGiftLineItemGraphql =
     __typename: 'GiftLineItemValue';
   };
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
-  giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'>;
+  giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'> & {
+    distributionChannelRef: ChannelReference;
+    supplyChannelRef: ChannelReference;
+  };
 };
 
 export type TCartDiscountValueGiftLineItemBuilder =
