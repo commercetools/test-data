@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/custom-view",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "description": "Data model for internal Merchan Center API Custom View",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -21,10 +21,10 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-frontend/application-config": "^22.10.0",
     "@commercetools-frontend/constants": "^22.10.0",
-    "@commercetools-test-data/commons": "8.2.1",
-    "@commercetools-test-data/core": "8.2.1",
-    "@commercetools-test-data/graphql-types": "8.2.1",
-    "@commercetools-test-data/utils": "8.2.1",
+    "@commercetools-test-data/commons": "8.2.2",
+    "@commercetools-test-data/core": "8.2.2",
+    "@commercetools-test-data/graphql-types": "8.2.2",
+    "@commercetools-test-data/utils": "8.2.2",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0",
     "@types/lodash": "^4.17.0",

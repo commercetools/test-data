@@ -1,5 +1,20 @@
 # @commercetools-test-data/staged-quote
 
+## 8.2.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart@8.2.2
+  - @commercetools-test-data/quote-request@8.2.2
+  - @commercetools-test-data/core@8.2.2
+  - @commercetools-test-data/business-unit@8.2.2
+  - @commercetools-test-data/commons@8.2.2
+  - @commercetools-test-data/customer@8.2.2
+  - @commercetools-test-data/customer-group@8.2.2
+  - @commercetools-test-data/store@8.2.2
+  - @commercetools-test-data/utils@8.2.2
+
 ## 8.2.1
 
 ### Patch Changes

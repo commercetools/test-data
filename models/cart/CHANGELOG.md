@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart
 
+## 8.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`d30653c`](https://github.com/commercetools/test-data/commit/d30653c9c67633d7cbc94d00ec6fa2acdb0e1481)]:
+  - @commercetools-test-data/discount-code@8.2.2
+  - @commercetools-test-data/core@8.2.2
+  - @commercetools-test-data/business-unit@8.2.2
+  - @commercetools-test-data/channel@8.2.2
+  - @commercetools-test-data/commons@8.2.2
+  - @commercetools-test-data/customer@8.2.2
+  - @commercetools-test-data/product@8.2.2
+  - @commercetools-test-data/shipping-method@8.2.2
+  - @commercetools-test-data/store@8.2.2
+  - @commercetools-test-data/tax-category@8.2.2
+  - @commercetools-test-data/utils@8.2.2
+
 ## 8.2.1
 
 ### Patch Changes
