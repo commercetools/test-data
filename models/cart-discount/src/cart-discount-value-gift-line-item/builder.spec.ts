@@ -74,15 +74,7 @@ describe('builder', () => {
           typeId: 'product',
         }),
         variantId: expect.any(Number),
-        supplyChannel: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
         supplyChannelRef: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
-        distributionChannel: expect.objectContaining({
           id: expect.any(String),
           typeId: 'channel',
         }),
