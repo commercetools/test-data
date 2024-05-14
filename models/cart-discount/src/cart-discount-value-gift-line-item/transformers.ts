@@ -1,3 +1,4 @@
+import { Reference, TReference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCartDiscountValueGiftLineItem,
@@ -21,10 +22,29 @@ const transformers = {
     TCartDiscountValueGiftLineItem,
     TCartDiscountValueGiftLineItemGraphql
   >('graphql', {
-    buildFields: ['product', 'supplyChannel', 'distributionChannel'],
-    addFields: () => ({
-      __typename: 'GiftLineItemValue',
-    }),
+    buildFields: ['product'],
+    addFields: ({ fields }) => {
+      const supplyChannelRef = fields.supplyChannel
+        ? Reference.random()
+            .id(fields.supplyChannel.id)
+            .typeId('channel')
+            .buildGraphql<TReference<'channel'>>()
+        : null;
+
+      const distributionChannelRef = fields.distributionChannel
+        ? Reference.random()
+            .id(fields.distributionChannel.id)
+            .typeId('channel')
+            .buildGraphql<TReference<'channel'>>()
+        : null;
+
+      return {
+        supplyChannelRef,
+        distributionChannelRef,
+        __typename: 'GiftLineItemValue',
+      };
+    },
+    removeFields: ['distributionChannel', 'supplyChannel'],
   }),
 };
 

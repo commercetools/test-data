@@ -2,16 +2,21 @@ import {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
 } from '@commercetools/platform-sdk';
+import { TReference } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;
 export type TCartDiscountValueGiftLineItemDraft =
   CartDiscountValueGiftLineItemDraft;
 
-export type TCartDiscountValueGiftLineItemGraphql =
-  TCartDiscountValueGiftLineItem & {
-    __typename: 'GiftLineItemValue';
-  };
+export type TCartDiscountValueGiftLineItemGraphql = Omit<
+  CartDiscountValueGiftLineItem,
+  'supplyChannel' | 'distributionChannel'
+> & {
+  distributionChannelRef: TReference | null;
+  supplyChannelRef: TReference | null;
+  __typename: 'GiftLineItemValue';
+};
 export type TCartDiscountValueGiftLineItemDraftGraphql = {
   giftLineItem: Omit<TCartDiscountValueGiftLineItemDraft, 'type'>;
 };
