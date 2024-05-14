@@ -14,7 +14,9 @@ const generator = Generator<TOidcSsoConfig>({
     clientSecret: fake((f) => f.internet.password()),
     isActive: fake((f) => f.datatype.boolean()),
     logoutUrl: fake((f) => f.internet.url()),
-    sessionTokenExpTimeSeconds: fake((f) => f.number.int()),
+    sessionTokenExpTimeSeconds: fake((f) =>
+      f.number.int({ min: 3600, max: 2505600 })
+    ),
     teamIdForNewUsers: fake((f) => f.string.uuid()),
   },
 });
