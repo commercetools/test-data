@@ -11,7 +11,7 @@ export type TCartDiscountValueGiftLineItemDraft =
 
 export type TCartDiscountValueGiftLineItemGraphql = Omit<
   CartDiscountValueGiftLineItem,
-  'supplyChannel' | 'distributionChannel'
+  'supplyChannel' | 'distributionChannel' | 'product'
 > & {
   productRef: TReference;
   distributionChannelRef: TReference | null;

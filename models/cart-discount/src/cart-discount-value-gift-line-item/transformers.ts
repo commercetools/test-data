@@ -22,7 +22,6 @@ const transformers = {
     TCartDiscountValueGiftLineItem,
     TCartDiscountValueGiftLineItemGraphql
   >('graphql', {
-    buildFields: ['product'],
     addFields: ({ fields }) => {
       const productRef = Reference.random()
         .id(fields.product.id)
