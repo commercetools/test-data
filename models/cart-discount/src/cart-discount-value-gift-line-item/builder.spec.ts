@@ -69,7 +69,7 @@ describe('builder', () => {
       CartDiscountValueGiftLineItem.random(),
       expect.objectContaining({
         type: 'giftLineItem',
-        product: expect.objectContaining({
+        productRef: expect.objectContaining({
           id: expect.any(String),
           typeId: 'product',
         }),
