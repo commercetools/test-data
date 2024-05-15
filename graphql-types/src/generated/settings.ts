@@ -11,7 +11,7 @@ export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
 };
 export type MakeEmpty<
   T extends { [key: string]: unknown },
-  K extends keyof T
+  K extends keyof T,
 > = { [_ in K]?: never };
 export type Incremental<T> =
   | T
@@ -78,6 +78,12 @@ export type TMcSettingsAverageOrderValueConfiguration = {
 
 export type TMcSettingsAverageOrderValueConfigurationInput = {
   showPreviousTimeframe: Scalars['Boolean']['input'];
+};
+
+export type TMcSettingsBatchProcessResult = {
+  __typename?: 'BatchProcessResult';
+  failed: Array<TMcSettingsTdlqMessageResult>;
+  successful: Array<TMcSettingsTdlqMessageResult>;
 };
 
 export enum TMcSettingsBestSellingLimit {
@@ -444,6 +450,10 @@ export type TMcSettingsCustomViewsPagedQueryResult = {
   total: Scalars['Int']['output'];
 };
 
+export type TMcSettingsCustomerEmailValidationSettingsInput = {
+  isCustomerEmailValidationDisabled: Scalars['Boolean']['input'];
+};
+
 export type TMcSettingsCustomersListView = {
   __typename?: 'CustomersListView';
   createdAt: Scalars['DateTime']['output'];
@@ -693,6 +703,19 @@ export type TMcSettingsLocalizedFieldDataInput = {
   value: Scalars['String']['input'];
 };
 
+export type TMcSettingsMessage = {
+  __typename?: 'Message';
+  ackId: Scalars['String']['output'];
+  data: Scalars['String']['output'];
+  id: Scalars['ID']['output'];
+};
+
+export type TMcSettingsMessageInput = {
+  ackId: Scalars['String']['input'];
+  data: Scalars['String']['input'];
+  id: Scalars['ID']['input'];
+};
+
 export enum TMcSettingsMetricCardType {
   AverageOrderValue = 'AVERAGE_ORDER_VALUE',
   OrderStatus = 'ORDER_STATUS',
@@ -776,11 +799,16 @@ export type TMcSettingsMutation = {
   deleteProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
   installCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   installCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
+  /** @deprecated Experimental feature - For internal usage only */
+  moveMessagesFromDeadLetterQueueToMainQueue?: Maybe<TMcSettingsBatchProcessResult>;
   random: Scalars['String']['output'];
+  /** @deprecated Experimental feature - For internal usage only */
+  removeMessagesFromDeadLetterQueue?: Maybe<TMcSettingsBatchProcessResult>;
   sendLinkToVerifyCustomApplicationsMaintainerContactEmail?: Maybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationRequest>;
   setCustomApplicationsMaintainerContactInformation?: Maybe<TMcSettingsOrganizationExtension>;
   setOrganizationExtensionOidcSsoConfig?: Maybe<TMcSettingsOrganizationExtension>;
   setProjectExtensionCategoryRecommendation?: Maybe<TMcSettingsProjectExtension>;
+  setProjectExtensionCustomerEmailValidationSettings?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionImageRegex?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionImportSampleDataset?: Maybe<TMcSettingsProjectExtension>;
   setProjectExtensionOrderStatesVisibility?: Maybe<TMcSettingsProjectExtension>;
@@ -1072,8 +1100,17 @@ export type TMcSettingsMutation_InstallCustomViewArgs = {
   projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type TMcSettingsMutation_MoveMessagesFromDeadLetterQueueToMainQueueArgs =
+  {
+    messages: Array<TMcSettingsMessageInput>;
+  };
+
 export type TMcSettingsMutation_RandomArgs = {
   byteLength: Scalars['Int']['input'];
+};
+
+export type TMcSettingsMutation_RemoveMessagesFromDeadLetterQueueArgs = {
+  messages: Array<TMcSettingsMessageInput>;
 };
 
 export type TMcSettingsMutation_SendLinkToVerifyCustomApplicationsMaintainerContactEmailArgs =
@@ -1095,6 +1132,11 @@ export type TMcSettingsMutation_SetOrganizationExtensionOidcSsoConfigArgs = {
 export type TMcSettingsMutation_SetProjectExtensionCategoryRecommendationArgs =
   {
     data?: InputMaybe<TMcSettingsCategoryRecommendationSettingsDataInput>;
+  };
+
+export type TMcSettingsMutation_SetProjectExtensionCustomerEmailValidationSettingsArgs =
+  {
+    data?: InputMaybe<TMcSettingsCustomerEmailValidationSettingsInput>;
   };
 
 export type TMcSettingsMutation_SetProjectExtensionImageRegexArgs = {
@@ -1308,6 +1350,15 @@ export type TMcSettingsNavbarSubmenu = {
   uriPath: Scalars['String']['output'];
 };
 
+export type TMcSettingsNestedTable = {
+  __typename?: 'NestedTable';
+  visibleColumns?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+};
+
+export type TMcSettingsNestedTableInput = {
+  visibleColumns?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
 export enum TMcSettingsOAuthScope {
   ManageBusinessUnits = 'ManageBusinessUnits',
   ManageCartDiscounts = 'ManageCartDiscounts',
@@ -1491,6 +1542,7 @@ export type TMcSettingsPimSearchListViewInput = {
 };
 
 export type TMcSettingsPimSearchListViewTableInput = {
+  nestedTable?: InputMaybe<TMcSettingsNestedTableInput>;
   visibleColumns: Array<Scalars['String']['input']>;
 };
 
@@ -1537,6 +1589,7 @@ export type TMcSettingsProjectExtension = {
   imageRegex?: Maybe<TMcSettingsImageRegex>;
   installedApplications: Array<TMcSettingsRestrictedCustomApplicationInstallationForProject>;
   installedCustomViews: Array<TMcSettingsRestrictedCustomViewInstallationForProject>;
+  isCustomerEmailValidationDisabled: Scalars['Boolean']['output'];
   isRichTextEditorEnabled: Scalars['Boolean']['output'];
   orderStatesVisibility: Array<TMcSettingsOrderStatesVisibility>;
   projectKey: Scalars['String']['output'];
@@ -1666,6 +1719,8 @@ export type TMcSettingsQuery = {
   projectSettingsStoresViews: Array<
     Maybe<TMcSettingsProjectSettingsStoresView>
   >;
+  /** @deprecated Experimental feature - For internal usage only */
+  readMessagesFromDeadLetterQueue: Array<TMcSettingsMessage>;
   release?: Maybe<Scalars['String']['output']>;
   ruleBuilderQuickSelectionValues?: Maybe<
     Array<Maybe<TMcSettingsRuleBuilderQuickSelectionValues>>
@@ -2016,6 +2071,7 @@ export type TMcSettingsSampleDataImportMetadata = {
 };
 
 export enum TMcSettingsSampleDatasets {
+  B2B = 'B2B',
   Fashion = 'FASHION',
   Goodstore = 'GOODSTORE',
 }
@@ -2037,8 +2093,17 @@ export enum TMcSettingsSortOrder {
   Desc = 'Desc',
 }
 
+export type TMcSettingsTdlqMessageResult = {
+  __typename?: 'TDLQMessageResult';
+  ackId: Scalars['String']['output'];
+  data: Scalars['String']['output'];
+  error?: Maybe<Scalars['String']['output']>;
+  id: Scalars['ID']['output'];
+};
+
 export type TMcSettingsTable = {
   __typename?: 'Table';
+  nestedTable?: Maybe<TMcSettingsNestedTable>;
   visibleColumns: Array<Scalars['String']['output']>;
 };
 

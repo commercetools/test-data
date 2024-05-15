@@ -33,6 +33,7 @@ const generator = Generator<TProjectExtension>({
       CategoryRecommendationSettings.random()
     ),
     sampleDataImport: fake(() => SampleDataImport.random()),
+    isCustomerEmailValidationDisabled: fake((f) => f.datatype.boolean()),
   },
 });
 

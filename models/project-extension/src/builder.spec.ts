@@ -53,6 +53,7 @@ describe('builder', () => {
           dataset: expect.any(String),
         }),
         orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
+        isCustomerEmailValidationDisabled: expect.any(Boolean),
       })
     )
   );
@@ -109,6 +110,7 @@ describe('builder', () => {
           dataset: expect.any(String),
         }),
         orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
+        isCustomerEmailValidationDisabled: expect.any(Boolean),
       })
     )
   );
