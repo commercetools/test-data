@@ -10,7 +10,9 @@ const generator = Generator<TCategoryRecommendationSettings>({
     createdAt: fake(getOlderDate),
     id: fake((f) => f.string.uuid()),
     updatedAt: fake(getNewerDate),
-    searchProperty: fake((f) => f.lorem.slug()),
+    searchProperty: fake((f) =>
+      f.helpers.arrayElement(['Attribute', 'ProductType'])
+    ),
     attributeName: fake((f) => f.lorem.word()),
   },
 });

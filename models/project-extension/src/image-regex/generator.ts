@@ -6,9 +6,13 @@ import type { TImageRegex } from './types';
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const getImageRegexOption = () => ({
-  flag: fake((f) => f.lorem.slug()),
-  replace: fake((f) => f.lorem.word()),
-  search: fake((f) => f.lorem.word()),
+  flag: fake((f) => f.helpers.arrayElement(['i', 'g', 'm', 'u', 'y'])),
+  replace: fake((f) =>
+    f.helpers.arrayElement(['.[^.]+$', '\\.jpg$', '\\.png$'])
+  ),
+  search: fake((f) =>
+    f.helpers.arrayElement(['-small.jpg', '-thumbnail.png', '-medium.jpg'])
+  ),
 });
 
 const generator = Generator<TImageRegex>({
