@@ -24,6 +24,10 @@ const transformers = {
   >('graphql', {
     buildFields: ['product'],
     addFields: ({ fields }) => {
+      const productRef = Reference.random()
+        .id(fields.product.id)
+        .typeId('channel')
+        .buildGraphql<TReference<'channel'>>();
       const supplyChannelRef = fields.supplyChannel
         ? Reference.random()
             .id(fields.supplyChannel.id)
@@ -39,12 +43,13 @@ const transformers = {
         : null;
 
       return {
+        productRef,
         supplyChannelRef,
         distributionChannelRef,
         __typename: 'GiftLineItemValue',
       };
     },
-    removeFields: ['distributionChannel', 'supplyChannel'],
+    removeFields: ['distributionChannel', 'supplyChannel', 'product'],
   }),
 };
 
