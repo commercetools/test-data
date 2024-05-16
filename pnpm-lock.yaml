@@ -268,6 +268,10 @@ importers:
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.0.0
+    devDependencies:
+      '@commercetools-test-data/store':
+        specifier: workspace:8.2.2
+        version: link:../store
 
   models/category:
     dependencies:
