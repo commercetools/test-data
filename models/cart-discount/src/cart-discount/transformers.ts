@@ -23,6 +23,7 @@ const transformers = {
       'stores',
     ],
   }),
+
   graphql: Transformer<TCartDiscount, TCartDiscountGraphql>('graphql', {
     buildFields: [
       'value',
