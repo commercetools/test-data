@@ -259,6 +259,9 @@ importers:
       '@commercetools-test-data/product-type':
         specifier: 8.2.2
         version: link:../product-type
+      '@commercetools-test-data/store':
+        specifier: 8.2.2
+        version: link:../store
       '@commercetools-test-data/utils':
         specifier: 8.2.2
         version: link:../../utils

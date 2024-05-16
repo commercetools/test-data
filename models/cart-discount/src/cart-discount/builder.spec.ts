@@ -1,6 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { Store } from '@commercetools-test-data/store';
 import type { TCartDiscount, TCartDiscountGraphql } from './types';
 import * as CartDiscount from './index';
 
@@ -24,7 +25,7 @@ describe('builder', () => {
         }),
         target: null,
         cartPredicate: '1=1',
-        stores: null,
+        stores: [],
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),
         validFrom: expect.any(String),
@@ -63,7 +64,7 @@ describe('builder', () => {
           type: expect.any(String),
         }),
         cartPredicate: '1=1',
-        stores: null,
+        stores: [],
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),
         validFrom: expect.any(String),
@@ -107,7 +108,57 @@ describe('builder', () => {
         ]),
         value: expect.any(Object),
         cartPredicate: '1=1',
-        stores: null,
+        stores: [],
+        sortOrder: expect.any(String),
+        isActive: expect.any(Boolean),
+        validFrom: expect.any(String),
+        validUntil: expect.any(String),
+        requiresDiscountCode: expect.any(Boolean),
+        references: expect.arrayContaining([]),
+        stackingMode: expect.any(String),
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+          __typename: 'Initiator',
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+          userRef: expect.objectContaining({ typeId: 'user' }),
+          __typename: 'Initiator',
+        }),
+        __typename: 'CartDiscount',
+      })
+    )
+  );
+});
+describe('with Store builder', () => {
+  it(
+    ...createBuilderSpec<TCartDiscount, TCartDiscountGraphql>(
+      'graphql',
+      CartDiscount.random().stores([Store.random()]),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        value: expect.any(Object),
+        cartPredicate: '1=1',
+        stores: expect.any(Array),
         sortOrder: expect.any(String),
         isActive: expect.any(Boolean),
         validFrom: expect.any(String),
