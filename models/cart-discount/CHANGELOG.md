@@ -1,21 +1,5 @@
 # @commercetools-test-data/cart-discount
 
-## 8.2.3
-
-### Patch Changes
-
-- [#585](https://github.com/commercetools/test-data/pull/585) [`94327e8`](https://github.com/commercetools/test-data/commit/94327e8969fab3b92007f0f09651cfaa6a984e9a) Thanks [@ARRIOLALEO](https://github.com/ARRIOLALEO)! - add missing productRef into the grapQl response
-
-- [#582](https://github.com/commercetools/test-data/pull/582) [`b1cb62c`](https://github.com/commercetools/test-data/commit/b1cb62c6a33e923b433c1e6bc8dc4069a498f771) Thanks [@ARRIOLALEO](https://github.com/ARRIOLALEO)! - add disctributionChannelRef and supplyChanelRef to discunt value gift line item test data in the fraphQl response
-
-- Updated dependencies []:
-  - @commercetools-test-data/core@8.2.3
-  - @commercetools-test-data/category@8.2.3
-  - @commercetools-test-data/commons@8.2.3
-  - @commercetools-test-data/customer-group@8.2.3
-  - @commercetools-test-data/product-type@8.2.3
-  - @commercetools-test-data/utils@8.2.3
-
 ## 8.2.2
 
 ### Patch Changes
