@@ -1,0 +1,28 @@
+{
+  "name": "@commercetools-test-data/organization-extension",
+  "version": "8.1.0",
+  "description": "Data model for internal Merchant Center API Organization Extension",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/organization-extension"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-organization-extension.cjs.js",
+  "module": "dist/commercetools-test-data-organization-extension.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/core": "8.1.0",
+    "@commercetools-test-data/utils": "8.1.0",
+    "@commercetools-test-data/graphql-types": "8.1.0",
+    "@commercetools-test-data/custom-application": "8.1.0",
+    "@commercetools-test-data/custom-view": "8.1.0"
+  }
+}
