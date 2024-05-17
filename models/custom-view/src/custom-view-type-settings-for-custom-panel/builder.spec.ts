@@ -1,6 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { TMcSettingsCustomViewSize } from '@commercetools-test-data/graphql-types';
 import type {
   TCustomViewTypeSettingsForCustomPanel,
   TCustomViewTypeSettingsForCustomPanelGraphql,
@@ -27,7 +28,7 @@ describe('builder', () => {
       TCustomViewTypeSettingsForCustomPanelGraphql
     >(
       'graphql',
-      CustomViewTypeSettings.random().size('SMALL'),
+      CustomViewTypeSettings.random().size(TMcSettingsCustomViewSize.Small),
       expect.objectContaining({
         __typename: 'CustomViewTypeSettings',
         size: 'SMALL',
