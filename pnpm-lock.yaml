@@ -815,20 +815,20 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.1.1
-        version: 8.1.1
+        specifier: 8.2.2
+        version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 8.1.1
-        version: 8.1.1
+        specifier: 8.2.2
+        version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 8.1.1
-        version: 8.1.1
+        specifier: 8.2.2
+        version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 8.1.1
-        version: 8.1.1
+        specifier: 8.2.2
+        version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.1.1
-        version: 8.1.1
+        specifier: 8.2.2
+        version: link:../../utils
 
   models/quote:
     dependencies:
@@ -3120,21 +3120,6 @@ packages:
       - encoding
     dev: false
 
-  /@commercetools-test-data/commons@8.1.1:
-    resolution: {integrity: sha512-II7iG6wN7Ke7NFVFv3DK8DvJPwK6kK/BeWjpzwfiUlp0SXFOMFdDPfP4Yhih2Sf1jy8jq8R55p+mDI3hPqfj9Q==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-test-data/core': 8.1.1
-      '@commercetools-test-data/utils': 8.1.1
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   /@commercetools-test-data/core@5.11.2:
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
     dependencies:
@@ -3155,16 +3140,6 @@ packages:
       lodash: 4.17.21
     dev: false
 
-  /@commercetools-test-data/core@8.1.1:
-    resolution: {integrity: sha512-IkoGBJ5x7pKzT819MTk162zNDZXnjCTpGp/Tm1nn79sAiC3fjWuDZx41UtfRqXwmMewjLpUFLJKpItL4KJPRMw==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    dev: false
-
   /@commercetools-test-data/custom-application@8.1.0:
     resolution: {integrity: sha512-T5guOxYzarQfsYtSvaf8wWw9NwE8LGsXgUd69XwNHBbrp6enY7vr3aXbQo6OoZE97dD6yOFrbDTobk1dYs+ZGw==}
     dependencies:
@@ -3176,29 +3151,6 @@ packages:
       '@commercetools-test-data/core': 8.1.0
       '@commercetools-test-data/graphql-types': 8.1.0
       '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: false
-
-  /@commercetools-test-data/custom-application@8.1.1:
-    resolution: {integrity: sha512-RCt6W+1+2OnlGOqpB7CrV/1UaccInutHiku4+Mf4A+H7HbLdcweV3+MOI7oODmQnIuAUtGALCfoqN8hka97jjg==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-frontend/application-config': 22.25.1
-      '@commercetools-frontend/constants': 22.25.1
-      '@commercetools-test-data/commons': 8.1.1
-      '@commercetools-test-data/core': 8.1.1
-      '@commercetools-test-data/graphql-types': 8.1.1
-      '@commercetools-test-data/utils': 8.1.1
       '@commercetools/platform-sdk': 7.8.0
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.1
@@ -3234,35 +3186,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@commercetools-test-data/custom-view@8.1.1:
-    resolution: {integrity: sha512-vtbGzS8eIVJwtsKAT8cBPp1LvOc9KhcmjxlbMexa8ySKAduja0LY4f7P/OdB2VKjMx7Uj3/tVegjMvERGaVOsQ==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-frontend/application-config': 22.25.1
-      '@commercetools-frontend/constants': 22.25.1
-      '@commercetools-test-data/commons': 8.1.1
-      '@commercetools-test-data/core': 8.1.1
-      '@commercetools-test-data/graphql-types': 8.1.1
-      '@commercetools-test-data/utils': 8.1.1
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: false
-
   /@commercetools-test-data/graphql-types@8.1.0:
     resolution: {integrity: sha512-0efjiOIc2Gqq+A8UNZfQOOZhnHqxAsYHnqV4TmsnUcYM3v7O5+b7aWeBRAVoAmhodbvHnhLFH5/n8LQa/wBqjw==}
-    dev: false
-
-  /@commercetools-test-data/graphql-types@8.1.1:
-    resolution: {integrity: sha512-1p6NGW9opdu2crdOSPVXjlywHPySLbw6njQsNb5fFwU0q0oFVDPGaBJGHFMV9SVfyIoIJqljRswLPIXp5AM5Nw==}
     dev: false
 
   /@commercetools-test-data/product-variant@5.11.2:
@@ -3291,14 +3216,6 @@ packages:
 
   /@commercetools-test-data/utils@8.1.0:
     resolution: {integrity: sha512-PdOc5qJrlG3wPbJSZm6wqXX7EXSL47so3pEheud5v8sJJ7kQcSvc0vw6ESyT5efWRVKMfvcz0r8jwcLhffrRFA==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@faker-js/faker': 8.4.1
-    dev: false
-
-  /@commercetools-test-data/utils@8.1.1:
-    resolution: {integrity: sha512-silZYmg7KhrHZ/+N+wU2D7/Tt1diL79M8Llfs7UeLNMIvUBRooz7KGmSrqjVWAajFAs1I3R0SSKQN41smV/uUw==}
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
