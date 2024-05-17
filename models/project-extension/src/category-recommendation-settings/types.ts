@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsCategoryRecommendationSettings } from '@commercetools-test-data/graphql-types/src/generated/settings';
+import type { TMcSettingsCategoryRecommendationSettings } from '@commercetools-test-data/graphql-types';
 
 export type TCategoryRecommendationSettings = Omit<
   TMcSettingsCategoryRecommendationSettings,

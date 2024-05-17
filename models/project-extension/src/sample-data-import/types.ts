@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsSampleDataImportMetadata } from '@commercetools-test-data/graphql-types/src/generated/settings';
+import type { TMcSettingsSampleDataImportMetadata } from '@commercetools-test-data/graphql-types';
 
 export type TSampleDataImportMetadata = Omit<
   TMcSettingsSampleDataImportMetadata,

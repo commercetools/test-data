@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsImageRegexDataInput } from '@commercetools-test-data/graphql-types/src/generated/settings';
+import type { TMcSettingsImageRegexDataInput } from '@commercetools-test-data/graphql-types';
 
 export type TImageRegexDraft = Omit<
   TMcSettingsImageRegexDataInput,

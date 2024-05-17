@@ -7,6 +7,7 @@
     "packages": ["core", "graphql-types", "models/*", "utils"]
   },
   "scripts": {
+    "tsc": "tsc --noEmit",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "./scripts/postinstall.sh",
     "build": "preconstruct build",
