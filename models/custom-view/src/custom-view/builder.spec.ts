@@ -34,6 +34,23 @@ describe('builder', () => {
           size: expect.stringMatching(/^(SMALL|LARGE)$/),
         }),
         url: expect.any(String),
+        installedBy: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            createdAt: expect.any(String),
+            updatedAt: expect.any(String),
+            acceptedPermissions: expect.arrayContaining([
+              expect.objectContaining({
+                name: expect.stringMatching(/^(view|manage)$/),
+                oAuthScopes: expect.arrayContaining([expect.any(String)]),
+              }),
+            ]),
+            installInAllProjects: expect.any(Boolean),
+            projects: expect.any(Array),
+            ownerId: expect.any(String),
+            owner: expect.any(Object),
+          }),
+        ]),
       })
     )
   );
@@ -67,6 +84,24 @@ describe('builder', () => {
           size: expect.stringMatching(/^(SMALL|LARGE)$/),
         }),
         url: expect.any(String),
+        installedBy: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'CustomViewInstallation',
+            id: expect.any(String),
+            createdAt: expect.any(String),
+            updatedAt: expect.any(String),
+            acceptedPermissions: expect.arrayContaining([
+              expect.objectContaining({
+                name: expect.stringMatching(/^(view|manage)$/),
+                oAuthScopes: expect.arrayContaining([expect.any(String)]),
+              }),
+            ]),
+            installInAllProjects: expect.any(Boolean),
+            projects: expect.any(Array),
+            ownerId: expect.any(String),
+            owner: expect.any(Object),
+          }),
+        ]),
       })
     )
   );

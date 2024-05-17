@@ -1,10 +1,11 @@
 import { LocalizedField } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { CustomViewInstallation } from '../custom-view-installation';
 import * as CustomViewPermission from '../custom-view-permission';
 import * as CustomViewTypeSettingsForCustomPanel from '../custom-view-type-settings-for-custom-panel';
 import { defaultLocators } from './constants';
-import { TCustomView } from './types';
+import type { TCustomView } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -28,7 +29,8 @@ const generator = Generator<TCustomView>({
     ]),
     status: fake((f) => f.helpers.arrayElement(['DRAFT', 'PRIVATE_USAGE'])),
     type: fake((f) => f.helpers.arrayElement(['CustomPanel'])),
-    typeSettings: fake((f) => CustomViewTypeSettingsForCustomPanel.random()),
+    typeSettings: fake(() => CustomViewTypeSettingsForCustomPanel.random()),
+    installedBy: fake(() => [CustomViewInstallation.random()]),
     createdAt: fake(getOlderDate),
     updatedAt: fake(getNewerDate),
   },

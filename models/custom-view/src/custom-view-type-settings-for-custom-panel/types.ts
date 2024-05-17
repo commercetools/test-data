@@ -1,14 +1,13 @@
 import { TBuilder } from '@commercetools-test-data/core';
+import type { TMcSettingsCustomViewTypeSettings } from '@commercetools-test-data/graphql-types';
 
-export type CustomViewSize = 'SMALL' | 'LARGE';
-
-export type TCustomViewTypeSettingsForCustomPanel = {
-  size: CustomViewSize;
-};
 export type TCustomViewTypeSettingsForCustomPanelGraphql =
-  TCustomViewTypeSettingsForCustomPanel & {
-    __typename: 'CustomViewTypeSettings';
-  };
+  TMcSettingsCustomViewTypeSettings;
+
+export type TCustomViewTypeSettingsForCustomPanel = Omit<
+  TCustomViewTypeSettingsForCustomPanelGraphql,
+  '__typename'
+>;
 
 export type TCustomViewTypeSettingsForCustomPanelBuilder =
   TBuilder<TCustomViewTypeSettingsForCustomPanel>;
