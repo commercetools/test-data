@@ -55,7 +55,10 @@ describe(`with steelHipFlask preset`, () => {
           "key": undefined,
           "prices": [
             {
-              "channel": undefined,
+              "channel": {
+                "key": "distribution-channel",
+                "typeId": "channel",
+              },
               "country": "DE",
               "custom": undefined,
               "customerGroup": undefined,
@@ -194,7 +197,10 @@ describe(`with steelHipFlask preset`, () => {
           "key": undefined,
           "prices": [
             {
-              "channel": undefined,
+              "channel": {
+                "key": "distribution-channel",
+                "typeId": "channel",
+              },
               "country": "DE",
               "custom": undefined,
               "customerGroup": undefined,
