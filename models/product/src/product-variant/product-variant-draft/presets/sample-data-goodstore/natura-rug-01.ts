@@ -1,8 +1,17 @@
-import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import {
+  MoneyDraft,
+  PriceDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
+
+const ProductDistributionChannel = ChannelDraft.presets.sampleDataGoodStore
+  .distributionChannel()
+  .build<TChannelDraft>();
 
 const naturaRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
@@ -16,6 +25,11 @@ const naturaRug01 = (): TProductVariantDraftBuilder =>
       PriceDraft.presets
         .empty()
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(39900))
+        .channel(
+          KeyReferenceDraft.presets
+            .channel()
+            .key(ProductDistributionChannel.key!)
+        )
         .country('GB'),
       PriceDraft.presets
         .empty()

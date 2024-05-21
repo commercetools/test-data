@@ -21,6 +21,7 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/attribute-definition": "5.11.2",
     "@commercetools-test-data/category": "8.2.2",
+    "@commercetools-test-data/channel": "8.2.2",
     "@commercetools-test-data/commons": "8.2.2",
     "@commercetools-test-data/core": "8.2.2",
     "@commercetools-test-data/product-type": "8.2.2",

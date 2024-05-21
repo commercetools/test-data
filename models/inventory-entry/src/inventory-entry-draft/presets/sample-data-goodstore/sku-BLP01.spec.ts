@@ -15,7 +15,10 @@ describe('With skuBLP01 preset', () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuBLP01 preset', () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

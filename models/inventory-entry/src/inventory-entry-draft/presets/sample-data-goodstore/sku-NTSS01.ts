@@ -1,3 +1,5 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -10,10 +12,17 @@ const nalaTwoSeaterSofa01Preset =
     .nalaTwoSeaterSofa01()
     .build<TProductVariantDraft>();
 
+const InventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+  .inventoryChannel()
+  .build<TChannelDraft>();
+
 const skuNTSS01 = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft.presets
     .empty()
     .sku(nalaTwoSeaterSofa01Preset.sku!)
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(InventoryChannel.key!)
+    )
     .quantityOnStock(97);
 
 export default skuNTSS01;

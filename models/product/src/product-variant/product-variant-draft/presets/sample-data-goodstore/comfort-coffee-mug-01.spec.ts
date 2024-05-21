@@ -94,7 +94,10 @@ describe(`with comfortCoffeeMug01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,
@@ -185,7 +188,10 @@ describe(`with comfortCoffeeMug01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,

@@ -15,7 +15,10 @@ describe('With skuCR098 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuCR098 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

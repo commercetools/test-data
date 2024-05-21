@@ -15,7 +15,10 @@ describe('With skuTTSS01 preset', () => {
         "quantityOnStock": 76,
         "restockableInDays": undefined,
         "sku": "TTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuTTSS01 preset', () => {
         "quantityOnStock": 76,
         "restockableInDays": undefined,
         "sku": "TTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

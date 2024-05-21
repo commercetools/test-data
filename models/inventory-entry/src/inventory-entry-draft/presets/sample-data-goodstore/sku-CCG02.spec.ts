@@ -15,7 +15,10 @@ describe('With skuCCG02 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CCG-02",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuCCG02 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CCG-02",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
