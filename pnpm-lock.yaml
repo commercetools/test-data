@@ -7586,21 +7586,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  /@commercetools-test-data/commons@8.1.0:
-    resolution: {integrity: sha512-AiianQwyfu244N353WCyhm64C7fwc57J+e3kwWJBiqkmgqegsLc48Ck0661t1mLc0rxx7DOO4WPBInVOcNIGNQ==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-test-data/core': 8.1.0
-      '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-    dev: false
-
   '@commercetools-test-data/commons@8.1.0':
     dependencies:
       '@babel/runtime': 7.24.5
@@ -7614,41 +7599,23 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  /@commercetools-test-data/core@8.1.0:
-    resolution: {integrity: sha512-Y72QE+uxa1rAMT4kvnS6IsdhpLrslkJB+JpYrDYylqj1nzRUBe6bwDdHL7lq15s+TD78kO419Hpn66m6YruV7Q==}
+  '@commercetools-test-data/core@5.11.2':
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.1
       lodash: 4.17.21
-    dev: false
 
-  /@commercetools-test-data/custom-application@8.1.0:
-    resolution: {integrity: sha512-T5guOxYzarQfsYtSvaf8wWw9NwE8LGsXgUd69XwNHBbrp6enY7vr3aXbQo6OoZE97dD6yOFrbDTobk1dYs+ZGw==}
+  '@commercetools-test-data/core@8.1.0':
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-frontend/application-config': 22.25.1
-      '@commercetools-frontend/constants': 22.25.1
-      '@commercetools-test-data/commons': 8.1.0
-      '@commercetools-test-data/core': 8.1.0
-      '@commercetools-test-data/graphql-types': 8.1.0
-      '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.1
       lodash: 4.17.21
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: false
 
-  /@commercetools-test-data/custom-view@8.1.0:
-    resolution: {integrity: sha512-jyppp5xvgZQkzX2qS+Y4UK2/k+QC9eriGs6spNz2TFzsimHcxTlIlm6F3C8vKYVwvknWaEHaCK/ZFn+MtonvAw==}
+  '@commercetools-test-data/custom-application@8.1.0':
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
@@ -7668,15 +7635,31 @@ snapshots:
       - encoding
       - supports-color
       - utf-8-validate
-    dev: false
 
-  /@commercetools-test-data/graphql-types@8.1.0:
-    resolution: {integrity: sha512-0efjiOIc2Gqq+A8UNZfQOOZhnHqxAsYHnqV4TmsnUcYM3v7O5+b7aWeBRAVoAmhodbvHnhLFH5/n8LQa/wBqjw==}
-    dev: false
+  '@commercetools-test-data/custom-view@8.1.0':
+    dependencies:
+      '@babel/runtime': 7.24.5
+      '@babel/runtime-corejs3': 7.24.5
+      '@commercetools-frontend/application-config': 22.25.1
+      '@commercetools-frontend/constants': 22.25.1
+      '@commercetools-test-data/commons': 8.1.0
+      '@commercetools-test-data/core': 8.1.0
+      '@commercetools-test-data/graphql-types': 8.1.0
+      '@commercetools-test-data/utils': 8.1.0
+      '@commercetools/platform-sdk': 7.8.0
+      '@faker-js/faker': 8.4.1
+      '@types/lodash': 4.17.1
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - bufferutil
+      - canvas
+      - encoding
+      - supports-color
+      - utf-8-validate
 
-  /@commercetools-test-data/product-variant@5.11.2:
-    resolution: {integrity: sha512-7VT0Iez2bi8fhpqJOzVx/WfmLV+mAXlc5SOxZoTeP1JyUyY07GiujI0ctKAh8Q3/0qzVyJ08RFV1BLtYxLWeKA==}
-    deprecated: Use the @commercetools-test-data/product package instead
+  '@commercetools-test-data/graphql-types@8.1.0': {}
+
+  '@commercetools-test-data/product-variant@5.11.2':
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
@@ -7701,17 +7684,7 @@ snapshots:
       '@babel/runtime-corejs3': 7.24.5
       '@faker-js/faker': 8.4.1
 
-  /@commercetools-test-data/utils@8.1.0:
-    resolution: {integrity: sha512-PdOc5qJrlG3wPbJSZm6wqXX7EXSL47so3pEheud5v8sJJ7kQcSvc0vw6ESyT5efWRVKMfvcz0r8jwcLhffrRFA==}
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@faker-js/faker': 8.4.1
-    dev: false
-
-  /@commercetools/platform-sdk@4.11.0:
-    resolution: {integrity: sha512-ftcq6mCxzpIG9wmGpTED6KQCApk4nyURh81J3PRP3d48oCLOrkZSyzDDfvflGoVZQeIcox+YdtyqZoryFrRtmQ==}
-    engines: {node: '>=14'}
+  '@commercetools/platform-sdk@4.11.0':
     dependencies:
       '@commercetools/sdk-client-v2': 2.5.0
       '@commercetools/sdk-middleware-auth': 7.0.1
