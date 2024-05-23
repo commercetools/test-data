@@ -11,7 +11,7 @@ const rusticBowl01Preset = ProductVariantDraft.presets.sampleDataGoodStore
   .rusticBowl01()
   .build<TProductVariantDraft>();
 
-const InventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
   .inventoryChannel()
   .build<TChannelDraft>();
 
@@ -20,7 +20,7 @@ const skuRB01 = (): TInventoryEntryDraftBuilder =>
     .empty()
     .sku(rusticBowl01Preset.sku!)
     .supplyChannel(
-      KeyReferenceDraft.presets.channel().key(InventoryChannel.key!)
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
     )
     .quantityOnStock(100);
 

@@ -9,7 +9,7 @@ import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
-const ProductDistributionChannel = ChannelDraft.presets.sampleDataGoodStore
+const distributionChannel = ChannelDraft.presets.sampleDataGoodStore
   .distributionChannel()
   .build<TChannelDraft>();
 
@@ -26,9 +26,7 @@ const naturaRug01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(39900))
         .channel(
-          KeyReferenceDraft.presets
-            .channel()
-            .key(ProductDistributionChannel.key!)
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )
         .country('GB'),
       PriceDraft.presets

@@ -12,7 +12,7 @@ const purpleMinimalistAbstractPainting01Preset =
     .purpleMinimalistAbstractPainting01()
     .build<TProductVariantDraft>();
 
-const InventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
   .inventoryChannel()
   .build<TChannelDraft>();
 
@@ -21,7 +21,7 @@ const skuPMAP01 = (): TInventoryEntryDraftBuilder =>
     .empty()
     .sku(purpleMinimalistAbstractPainting01Preset.sku!)
     .supplyChannel(
-      KeyReferenceDraft.presets.channel().key(InventoryChannel.key!)
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
     )
     .quantityOnStock(91);
 

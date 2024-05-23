@@ -11,7 +11,7 @@ const ashenRug01Preset = ProductVariantDraft.presets.sampleDataGoodStore
   .ashenRug01()
   .build<TProductVariantDraft>();
 
-const InventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
   .inventoryChannel()
   .build<TChannelDraft>();
 
@@ -20,7 +20,7 @@ const skuARG56 = (): TInventoryEntryDraftBuilder =>
     .empty()
     .sku(ashenRug01Preset.sku!)
     .supplyChannel(
-      KeyReferenceDraft.presets.channel().key(InventoryChannel.key!)
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
     )
     .quantityOnStock(100);
 

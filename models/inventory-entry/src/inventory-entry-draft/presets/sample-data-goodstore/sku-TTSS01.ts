@@ -12,7 +12,7 @@ const traditionalThreeSeaterSofa01Preset =
     .traditionalThreeSeaterSofa01()
     .build<TProductVariantDraft>();
 
-const InventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
   .inventoryChannel()
   .build<TChannelDraft>();
 
@@ -21,7 +21,7 @@ const skuTTSS01 = (): TInventoryEntryDraftBuilder =>
     .empty()
     .sku(traditionalThreeSeaterSofa01Preset.sku!)
     .supplyChannel(
-      KeyReferenceDraft.presets.channel().key(InventoryChannel.key!)
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
     )
     .quantityOnStock(76);
 

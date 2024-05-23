@@ -9,7 +9,7 @@ import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
-const ProductDistributionChannel = ChannelDraft.presets.sampleDataGoodStore
+const distributionChannel = ChannelDraft.presets.sampleDataGoodStore
   .distributionChannel()
   .build<TChannelDraft>();
 
@@ -22,9 +22,7 @@ const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
         .empty()
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(2999))
         .channel(
-          KeyReferenceDraft.presets
-            .channel()
-            .key(ProductDistributionChannel.key!)
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )
         .country('DE'),
       PriceDraft.presets
