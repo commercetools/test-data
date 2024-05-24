@@ -15,7 +15,10 @@ describe('With skuNTSS01 preset', () => {
         "quantityOnStock": 97,
         "restockableInDays": undefined,
         "sku": "NTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuNTSS01 preset', () => {
         "quantityOnStock": 97,
         "restockableInDays": undefined,
         "sku": "NTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

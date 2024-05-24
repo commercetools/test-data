@@ -1,3 +1,5 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -9,10 +11,17 @@ const rusticBowl01Preset = ProductVariantDraft.presets.sampleDataGoodStore
   .rusticBowl01()
   .build<TProductVariantDraft>();
 
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+  .inventoryChannel()
+  .build<TChannelDraft>();
+
 const skuRB01 = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft.presets
     .empty()
     .sku(rusticBowl01Preset.sku!)
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
+    )
     .quantityOnStock(100);
 
 export default skuRB01;

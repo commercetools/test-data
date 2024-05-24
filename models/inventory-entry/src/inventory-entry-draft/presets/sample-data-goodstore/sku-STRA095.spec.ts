@@ -15,7 +15,10 @@ describe('With skuSTRA095 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuSTRA095 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

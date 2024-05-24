@@ -110,7 +110,10 @@ describe(`with abigailLoungeChair01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,
@@ -209,7 +212,10 @@ describe(`with abigailLoungeChair01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,

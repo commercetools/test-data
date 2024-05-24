@@ -1,3 +1,5 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -10,10 +12,17 @@ const purpleMinimalistAbstractPainting01Preset =
     .purpleMinimalistAbstractPainting01()
     .build<TProductVariantDraft>();
 
+const inventoryChannel = ChannelDraft.presets.sampleDataGoodStore
+  .inventoryChannel()
+  .build<TChannelDraft>();
+
 const skuPMAP01 = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft.presets
     .empty()
     .sku(purpleMinimalistAbstractPainting01Preset.sku!)
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
+    )
     .quantityOnStock(91);
 
 export default skuPMAP01;

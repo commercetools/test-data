@@ -99,7 +99,10 @@ describe(`with ellaSquarePlate01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,
@@ -198,7 +201,10 @@ describe(`with ellaSquarePlate01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "US",
             "custom": undefined,
             "customerGroup": undefined,

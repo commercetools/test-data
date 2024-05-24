@@ -127,7 +127,10 @@ describe(`with ellaSquarePlate preset`, () => {
               },
             },
             {
-              "channel": undefined,
+              "channel": {
+                "key": "distribution-channel",
+                "typeId": "channel",
+              },
               "country": "US",
               "custom": undefined,
               "customerGroup": undefined,

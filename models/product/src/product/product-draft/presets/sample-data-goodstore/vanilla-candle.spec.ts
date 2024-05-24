@@ -66,7 +66,10 @@ describe(`with vanillaCandle preset`, () => {
           "key": undefined,
           "prices": [
             {
-              "channel": undefined,
+              "channel": {
+                "key": "distribution-channel",
+                "typeId": "channel",
+              },
               "country": "DE",
               "custom": undefined,
               "customerGroup": undefined,
@@ -213,7 +216,10 @@ describe(`with vanillaCandle preset`, () => {
           "key": undefined,
           "prices": [
             {
-              "channel": undefined,
+              "channel": {
+                "key": "distribution-channel",
+                "typeId": "channel",
+              },
               "country": "DE",
               "custom": undefined,
               "customerGroup": undefined,

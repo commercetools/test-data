@@ -15,7 +15,10 @@ describe('With skuRB01 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "RB-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -31,7 +34,10 @@ describe('With skuRB01 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "RB-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

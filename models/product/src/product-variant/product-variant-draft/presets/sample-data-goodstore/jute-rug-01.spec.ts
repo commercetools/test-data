@@ -88,7 +88,10 @@ describe(`with juteRug01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "GB",
             "custom": undefined,
             "customerGroup": undefined,
@@ -193,7 +196,10 @@ describe(`with juteRug01 preset`, () => {
             },
           },
           {
-            "channel": undefined,
+            "channel": {
+              "key": "distribution-channel",
+              "typeId": "channel",
+            },
             "country": "GB",
             "custom": undefined,
             "customerGroup": undefined,

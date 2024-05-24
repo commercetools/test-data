@@ -1,8 +1,17 @@
-import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import {
+  MoneyDraft,
+  PriceDraft,
+  KeyReferenceDraft,
+} from '@commercetools-test-data/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraftBuilder } from '../../../types';
 import * as ProductVariantDraft from '../../index';
+
+const distributionChannel = ChannelDraft.presets.sampleDataGoodStore
+  .distributionChannel()
+  .build<TChannelDraft>();
 
 const harmonyDrinkingGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
@@ -16,6 +25,9 @@ const harmonyDrinkingGlass01 = (): TProductVariantDraftBuilder =>
       PriceDraft.presets
         .empty()
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(2499))
+        .channel(
+          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+        )
         .country('GB'),
       PriceDraft.presets
         .empty()
