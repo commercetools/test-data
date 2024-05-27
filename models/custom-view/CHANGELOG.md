@@ -1,5 +1,17 @@
 # @commercetools-test-data/custom-view
 
+## 8.3.0
+
+### Patch Changes
+
+- [#591](https://github.com/commercetools/test-data/pull/591) [`ac42d1b`](https://github.com/commercetools/test-data/commit/ac42d1b617758ec8c2bc662c6e69e4099b81d54e) Thanks [@Rhotimee](https://github.com/Rhotimee)! - - Use generated types for custom view
+  - Include custom view installation in custom view
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.3.0
+  - @commercetools-test-data/graphql-types@8.3.0
+  - @commercetools-test-data/commons@8.3.0
+  - @commercetools-test-data/utils@8.3.0
+
 ## 8.2.2
 
 ### Patch Changes
