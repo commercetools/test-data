@@ -2,5 +2,5 @@
 '@commercetools-test-data/custom-view': patch
 ---
 
-- Use generate types for custom view
-- Include custom application installation in custom view
+- Use generated types for custom view
+- Include custom view installation in custom view
