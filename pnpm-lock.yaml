@@ -140,13 +140,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -164,22 +164,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/associate-role':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../associate-role
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/store':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -197,37 +197,37 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/business-unit':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../business-unit
       '@commercetools-test-data/channel':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/discount-code':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../discount-code
       '@commercetools-test-data/product':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product
       '@commercetools-test-data/shipping-method':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../shipping-method
       '@commercetools-test-data/store':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../store
       '@commercetools-test-data/tax-category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -245,22 +245,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/product-type':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -278,13 +278,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -302,13 +302,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -326,10 +326,10 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -359,16 +359,16 @@ importers:
         specifier: ^22.10.0
         version: 22.25.1
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -392,13 +392,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -422,16 +422,16 @@ importers:
         specifier: ^22.10.0
         version: 22.25.1
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -455,16 +455,16 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -482,13 +482,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -506,16 +506,16 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/cart-discount':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -533,19 +533,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/channel':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/product':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -563,25 +563,25 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/cart':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart
       '@commercetools-test-data/cart-discount':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/quote':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../quote
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -599,19 +599,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../graphql-types
       '@commercetools-test-data/user':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../user
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -626,20 +626,20 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 8.3.0
+        version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 8.3.0
+        version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 8.3.0
+        version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 8.3.0
+        version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.1.0
-        version: 8.1.0
+        specifier: 8.3.0
+        version: link:../../utils
 
   models/payment:
     dependencies:
@@ -650,19 +650,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/order':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../order
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -683,28 +683,28 @@ importers:
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../category
       '@commercetools-test-data/channel':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product-type
       '@commercetools-test-data/product-variant':
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/tax-category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -722,19 +722,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -752,13 +752,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -776,13 +776,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -800,10 +800,10 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -818,19 +818,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
 
   models/quote:
@@ -842,34 +842,34 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/business-unit':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: ^8.2.2
+        specifier: ^8.3.0
         version: link:../staged-quote
       '@commercetools-test-data/store':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -887,28 +887,28 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/business-unit':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/store':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -926,13 +926,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -950,19 +950,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/tax-category':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools-test-data/zone':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../zone
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -980,13 +980,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1004,31 +1004,31 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/business-unit':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../quote-request
       '@commercetools-test-data/store':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1046,22 +1046,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/channel':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../customer-group
       '@commercetools-test-data/product':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1079,13 +1079,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1103,19 +1103,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/channel':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/product-selection':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../product-selection
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1133,13 +1133,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1157,13 +1157,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1181,19 +1181,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../graphql-types
       '@commercetools-test-data/project':
         specifier: workspace:^
         version: link:../project
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1211,13 +1211,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.5
       '@commercetools-test-data/commons':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 8.2.2
+        specifier: 8.3.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -2055,23 +2055,8 @@ packages:
   '@commercetools-test-data/commons@5.11.2':
     resolution: {integrity: sha512-AxcUby9NOEmil3kJKrNVa7Lz94UHOeW+nFgsmn5I3CLKrt/Q5VI0et+6Ls1UJh57buxbTQRK15O/Gd/hRMYwSA==}
 
-  '@commercetools-test-data/commons@8.1.0':
-    resolution: {integrity: sha512-AiianQwyfu244N353WCyhm64C7fwc57J+e3kwWJBiqkmgqegsLc48Ck0661t1mLc0rxx7DOO4WPBInVOcNIGNQ==}
-
   '@commercetools-test-data/core@5.11.2':
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
-
-  '@commercetools-test-data/core@8.1.0':
-    resolution: {integrity: sha512-Y72QE+uxa1rAMT4kvnS6IsdhpLrslkJB+JpYrDYylqj1nzRUBe6bwDdHL7lq15s+TD78kO419Hpn66m6YruV7Q==}
-
-  '@commercetools-test-data/custom-application@8.1.0':
-    resolution: {integrity: sha512-T5guOxYzarQfsYtSvaf8wWw9NwE8LGsXgUd69XwNHBbrp6enY7vr3aXbQo6OoZE97dD6yOFrbDTobk1dYs+ZGw==}
-
-  '@commercetools-test-data/custom-view@8.1.0':
-    resolution: {integrity: sha512-jyppp5xvgZQkzX2qS+Y4UK2/k+QC9eriGs6spNz2TFzsimHcxTlIlm6F3C8vKYVwvknWaEHaCK/ZFn+MtonvAw==}
-
-  '@commercetools-test-data/graphql-types@8.1.0':
-    resolution: {integrity: sha512-0efjiOIc2Gqq+A8UNZfQOOZhnHqxAsYHnqV4TmsnUcYM3v7O5+b7aWeBRAVoAmhodbvHnhLFH5/n8LQa/wBqjw==}
 
   '@commercetools-test-data/product-variant@5.11.2':
     resolution: {integrity: sha512-7VT0Iez2bi8fhpqJOzVx/WfmLV+mAXlc5SOxZoTeP1JyUyY07GiujI0ctKAh8Q3/0qzVyJ08RFV1BLtYxLWeKA==}
@@ -2079,9 +2064,6 @@ packages:
 
   '@commercetools-test-data/utils@5.11.2':
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
-
-  '@commercetools-test-data/utils@8.1.0':
-    resolution: {integrity: sha512-PdOc5qJrlG3wPbJSZm6wqXX7EXSL47so3pEheud5v8sJJ7kQcSvc0vw6ESyT5efWRVKMfvcz0r8jwcLhffrRFA==}
 
   '@commercetools/platform-sdk@4.11.0':
     resolution: {integrity: sha512-ftcq6mCxzpIG9wmGpTED6KQCApk4nyURh81J3PRP3d48oCLOrkZSyzDDfvflGoVZQeIcox+YdtyqZoryFrRtmQ==}
@@ -4142,6 +4124,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -4347,6 +4330,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -5651,6 +5635,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@2.79.1:
@@ -7586,19 +7571,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@commercetools-test-data/commons@8.1.0':
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-test-data/core': 8.1.0
-      '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
-
   '@commercetools-test-data/core@5.11.2':
     dependencies:
       '@babel/runtime': 7.24.5
@@ -7606,58 +7578,6 @@ snapshots:
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.1
       lodash: 4.17.21
-
-  '@commercetools-test-data/core@8.1.0':
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-
-  '@commercetools-test-data/custom-application@8.1.0':
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-frontend/application-config': 22.25.1
-      '@commercetools-frontend/constants': 22.25.1
-      '@commercetools-test-data/commons': 8.1.0
-      '@commercetools-test-data/core': 8.1.0
-      '@commercetools-test-data/graphql-types': 8.1.0
-      '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-
-  '@commercetools-test-data/custom-view@8.1.0':
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@commercetools-frontend/application-config': 22.25.1
-      '@commercetools-frontend/constants': 22.25.1
-      '@commercetools-test-data/commons': 8.1.0
-      '@commercetools-test-data/core': 8.1.0
-      '@commercetools-test-data/graphql-types': 8.1.0
-      '@commercetools-test-data/utils': 8.1.0
-      '@commercetools/platform-sdk': 7.8.0
-      '@faker-js/faker': 8.4.1
-      '@types/lodash': 4.17.1
-      lodash: 4.17.21
-    transitivePeerDependencies:
-      - bufferutil
-      - canvas
-      - encoding
-      - supports-color
-      - utf-8-validate
-
-  '@commercetools-test-data/graphql-types@8.1.0': {}
 
   '@commercetools-test-data/product-variant@5.11.2':
     dependencies:
@@ -7673,12 +7593,6 @@ snapshots:
       - encoding
 
   '@commercetools-test-data/utils@5.11.2':
-    dependencies:
-      '@babel/runtime': 7.24.5
-      '@babel/runtime-corejs3': 7.24.5
-      '@faker-js/faker': 8.4.1
-
-  '@commercetools-test-data/utils@8.1.0':
     dependencies:
       '@babel/runtime': 7.24.5
       '@babel/runtime-corejs3': 7.24.5
