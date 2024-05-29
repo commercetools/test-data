@@ -10,6 +10,7 @@ const [getValidFrom, _, getValidUntil] = createRelatedDates();
 
 const generator = Generator<TDiscountCodeDraft>({
   fields: {
+    key: fake((f) => f.string.alphanumeric({ length: { min: 2, max: 256 } })),
     name: fake(() => LocalizedStringDraft.random()),
     description: fake(() => LocalizedStringDraft.random()),
     code: fake((f) => f.string.alphanumeric({ length: 20 })),
