@@ -2,7 +2,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TLocalizedString = {
   [locale: string]: string | undefined;
-};
+} & Partial<Record<'de' | 'en' | 'fr', string>>;
 export type TLocalizedStringGraphql = {
   __typename: 'LocalizedString';
   locale: string;
