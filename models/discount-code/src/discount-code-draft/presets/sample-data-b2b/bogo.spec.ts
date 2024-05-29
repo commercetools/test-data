@@ -32,6 +32,7 @@ describe(`with bogo preset`, () => {
         },
         "groups": undefined,
         "isActive": true,
+        "key": undefined,
         "maxApplications": undefined,
         "maxApplicationsPerCustomer": 5,
         "name": {
@@ -112,6 +113,7 @@ describe(`with bogo preset`, () => {
         ],
         "groups": undefined,
         "isActive": true,
+        "key": undefined,
         "maxApplications": undefined,
         "maxApplicationsPerCustomer": 5,
         "name": [
