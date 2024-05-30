@@ -25,6 +25,7 @@ describe('with the preset `furnitureBogo`', () => {
         },
         "groups": [],
         "isActive": true,
+        "key": undefined,
         "maxApplications": undefined,
         "maxApplicationsPerCustomer": 5,
         "name": {
@@ -59,6 +60,7 @@ describe('with the preset `furnitureBogo`', () => {
         "description": [],
         "groups": [],
         "isActive": true,
+        "key": undefined,
         "maxApplications": undefined,
         "maxApplicationsPerCustomer": 5,
         "name": [

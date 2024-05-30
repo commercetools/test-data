@@ -10,6 +10,7 @@ describe('builder', () => {
       'default',
       DiscountCodeDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         name: expect.objectContaining({
           en: expect.any(String),
         }),
@@ -35,6 +36,7 @@ describe('builder', () => {
       'rest',
       DiscountCodeDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         name: expect.objectContaining({
           en: expect.any(String),
         }),
@@ -60,6 +62,7 @@ describe('builder', () => {
       'graphql',
       DiscountCodeDraft.random(),
       expect.objectContaining({
+        key: expect.any(String),
         name: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',

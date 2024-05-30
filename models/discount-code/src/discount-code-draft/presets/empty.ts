@@ -3,6 +3,7 @@ import DiscountCode from '../builder';
 
 const empty = (): TDiscountCodeDraftBuilder =>
   DiscountCode()
+    .key(undefined)
     .cartPredicate(undefined)
     .custom(undefined)
     .description(undefined)

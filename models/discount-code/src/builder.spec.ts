@@ -11,6 +11,7 @@ describe('builder', () => {
       DiscountCode.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         name: expect.objectContaining({
           en: expect.any(String),
@@ -48,6 +49,7 @@ describe('builder', () => {
       DiscountCode.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         name: expect.objectContaining({
           en: expect.any(String),
@@ -85,6 +87,7 @@ describe('builder', () => {
       DiscountCode.random(),
       expect.objectContaining({
         id: expect.any(String),
+        key: expect.any(String),
         version: expect.any(Number),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({

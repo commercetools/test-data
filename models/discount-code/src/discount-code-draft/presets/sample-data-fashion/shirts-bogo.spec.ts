@@ -25,6 +25,7 @@ describe('with the preset `employeeSale`', () => {
         },
         "groups": [],
         "isActive": true,
+        "key": undefined,
         "maxApplications": 1,
         "maxApplicationsPerCustomer": 1,
         "name": {
@@ -58,6 +59,7 @@ describe('with the preset `employeeSale`', () => {
         "description": [],
         "groups": [],
         "isActive": true,
+        "key": undefined,
         "maxApplications": 1,
         "maxApplicationsPerCustomer": 1,
         "name": [
