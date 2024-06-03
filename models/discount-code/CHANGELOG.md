@@ -1,5 +1,19 @@
 # @commercetools-test-data/discount-code
 
+## 8.4.0
+
+### Minor Changes
+
+- [#595](https://github.com/commercetools/test-data/pull/595) [`df9e93c`](https://github.com/commercetools/test-data/commit/df9e93ccee087e6b896e30767fca4d27694c7e27) Thanks [@ragafus](https://github.com/ragafus)! - Build the `key` property of `DiscountCode` and `DiscountCodeDraft`
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.4.0
+  - @commercetools-test-data/cart-discount@8.4.0
+  - @commercetools-test-data/commons@8.4.0
+  - @commercetools-test-data/utils@8.4.0
+
 ## 8.3.0
 
 ### Patch Changes
