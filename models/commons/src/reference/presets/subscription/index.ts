@@ -1,5 +1,1 @@
-import subscriptionReference from './subscription-reference';
-
-const presets = { subscriptionReference };
-
-export default presets;
+export { default } from './subscription-reference';

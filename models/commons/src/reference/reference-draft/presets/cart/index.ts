@@ -1,5 +1,1 @@
-import cartReference from './cart-reference';
-
-const presets = { cartReference };
-
-export default presets;
+export { default } from './cart-reference';

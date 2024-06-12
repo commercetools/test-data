@@ -1,5 +1,1 @@
-import shoppingListReference from './shopping-list-reference';
-
-const presets = { shoppingListReference };
-
-export default presets;
+export { default } from './shopping-list-reference';

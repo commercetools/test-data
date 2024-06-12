@@ -56,22 +56,22 @@ const transformers = {
       'lastModifiedBy',
     ],
     replaceFields: ({ fields }) => {
-      const quoteRequest = Reference.presets.quoteRequestReference
+      const quoteRequest = Reference.presets
         .quoteRequestReference()
         .id(fields.quoteRequest.id)
         .build<TReference<'quote-request'>>();
 
-      const stagedQuote = Reference.presets.stagedQuoteReference
+      const stagedQuote = Reference.presets
         .stagedQuoteReference()
         .id(fields.stagedQuote.id)
         .build<TReference<'staged-quote'>>();
 
-      const customer = Reference.presets.customerReference
+      const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .build<TReference<'customer'>>();
 
-      const customerGroup = Reference.presets.customerGroupReference
+      const customerGroup = Reference.presets
         .customerGroupReference()
         .id(fields.customerGroup?.id)
         .build<TReference<'customer-group'>>();
@@ -81,7 +81,7 @@ const transformers = {
         .key(fields.store?.key)
         .buildRest<StoreKeyReference>();
 
-      const state = Reference.presets.stateReference
+      const state = Reference.presets
         .stateReference()
         .id(fields.state?.id)
         .build<TReference<'state'>>();
@@ -124,37 +124,34 @@ const transformers = {
       'lastModifiedBy',
     ],
     addFields: ({ fields }) => {
-      const quoteRequestRef: TReferenceGraphql =
-        Reference.presets.quoteRequestReference
-          .quoteRequestReference()
-          .id(fields.quoteRequest.id)
-          .buildGraphql();
+      const quoteRequestRef: TReferenceGraphql = Reference.presets
+        .quoteRequestReference()
+        .id(fields.quoteRequest.id)
+        .buildGraphql();
 
-      const stagedQuoteRef: TReferenceGraphql =
-        Reference.presets.stagedQuoteReference
-          .stagedQuoteReference()
-          .id(fields.stagedQuote.id)
-          .buildGraphql();
+      const stagedQuoteRef: TReferenceGraphql = Reference.presets
+        .stagedQuoteReference()
+        .id(fields.stagedQuote.id)
+        .buildGraphql();
 
-      const customerRef: TReferenceGraphql = Reference.presets.customerReference
+      const customerRef: TReferenceGraphql = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .typeId('customer')
         .buildGraphql();
 
-      const customerGroupRef: TReferenceGraphql =
-        Reference.presets.customerGroupReference
-          .customerGroupReference()
-          .id(fields.customerGroup?.id)
-          .typeId('customer-group')
-          .buildGraphql();
+      const customerGroupRef: TReferenceGraphql = Reference.presets
+        .customerGroupReference()
+        .id(fields.customerGroup?.id)
+        .typeId('customer-group')
+        .buildGraphql();
 
       const storeRef: TKeyReferenceGraphql = KeyReference.presets
         .store()
         .key(fields.store?.key)
         .buildGraphql();
 
-      const stateRef: TReferenceGraphql = Reference.presets.stateReference
+      const stateRef: TReferenceGraphql = Reference.presets
         .stateReference()
         .id(fields.state?.id)
         .typeId('state')

@@ -32,7 +32,7 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      const customer = Reference.presets.customerReference
+      const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .build<TReference<'customer'>>();
@@ -52,7 +52,7 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.presets.customerReference
+      const customerRef: TReferenceGraphql = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .buildGraphql();

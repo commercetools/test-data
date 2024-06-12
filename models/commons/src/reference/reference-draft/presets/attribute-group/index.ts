@@ -1,5 +1,5 @@
-import attributeGroupReference from './attribute-group-reference';
+// import attributeGroupReference from './attribute-group-reference';
 
-const presets = { attributeGroupReference };
+// const presets = { attributeGroupReference };
 
-export default presets;
+export { default } from './attribute-group-reference';

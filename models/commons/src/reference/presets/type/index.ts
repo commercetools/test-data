@@ -1,5 +1,1 @@
-import typeReference from './type-reference';
-
-const presets = { typeReference };
-
-export default presets;
+export { default } from './type-reference';

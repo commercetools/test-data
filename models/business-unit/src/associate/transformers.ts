@@ -17,11 +17,10 @@ const transformers = {
   rest: Transformer<TAssociateDefault, TAssociateRest>('rest', {
     buildFields: ['associateRoleAssignments', 'customer'],
     replaceFields: ({ fields }) => {
-      const customer: TReference<'customer'> =
-        Reference.presets.customerReference
-          .customerReference()
-          .id(fields.customer.id)
-          .build();
+      const customer: TReference<'customer'> = Reference.presets
+        .customerReference()
+        .id(fields.customer.id)
+        .build();
       return {
         ...fields,
         customer,
@@ -31,7 +30,7 @@ const transformers = {
   graphql: Transformer<TAssociateDefault, TAssociateGraphql>('graphql', {
     buildFields: ['associateRoleAssignments', 'customer'],
     replaceFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.presets.customerReference
+      const customerRef: TReferenceGraphql = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .buildGraphql();
