@@ -1,5 +1,6 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
+import { faker } from '@faker-js/faker';
 import type { TDiscountCode, TDiscountCodeGraphql } from './types';
 
 const transformers = {
@@ -30,7 +31,7 @@ const transformers = {
       'cartDiscounts',
     ],
     addFields: ({ fields }) => ({
-      applicationCount: fields.applicationVersion,
+      applicationCount: faker.number.int(),
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       descriptionAllLocales: LocalizedString.toLocalizedField(
         fields.description
