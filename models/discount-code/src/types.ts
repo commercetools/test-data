@@ -12,6 +12,7 @@ export type TDiscountCodeGraphql = TDiscountCode & {
   __typename: 'DiscountCode';
   createdBy: TClientLoggingGraphql;
   lastModifiedBy: TClientLoggingGraphql;
+  applicationCount: number;
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
 };

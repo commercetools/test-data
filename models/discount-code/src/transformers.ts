@@ -30,6 +30,7 @@ const transformers = {
       'cartDiscounts',
     ],
     addFields: ({ fields }) => ({
+      applicationCount: fields.applicationVersion,
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       descriptionAllLocales: LocalizedString.toLocalizedField(
         fields.description

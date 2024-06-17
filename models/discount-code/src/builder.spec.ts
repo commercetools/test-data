@@ -114,6 +114,7 @@ describe('builder', () => {
         validFrom: expect.any(String),
         validUntil: expect.any(String),
         applicationVersion: expect.any(Number),
+        applicationCount: expect.any(Number),
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
