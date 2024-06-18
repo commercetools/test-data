@@ -1,5 +1,20 @@
 # @commercetools-test-data/product
 
+## 8.5.0
+
+### Patch Changes
+
+- [#599](https://github.com/commercetools/test-data/pull/599) [`46bf7f4`](https://github.com/commercetools/test-data/commit/46bf7f43f79adf3d311eb081af95dbce4e1f1f3b) Thanks [@obulaworld](https://github.com/obulaworld)! - chore: add preset for boring generic milk
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@8.5.0
+  - @commercetools-test-data/category@8.5.0
+  - @commercetools-test-data/channel@8.5.0
+  - @commercetools-test-data/commons@8.5.0
+  - @commercetools-test-data/product-type@8.5.0
+  - @commercetools-test-data/tax-category@8.5.0
+  - @commercetools-test-data/utils@8.5.0
+
 ## 8.4.0
 
 ### Patch Changes
