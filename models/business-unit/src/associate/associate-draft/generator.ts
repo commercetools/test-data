@@ -10,9 +10,7 @@ const generator = Generator<TAssociateDraft>({
     associateRoleAssignments: fake(() => [
       AssociateRoleAssignmentDraft.random(),
     ]),
-    customer: fake(() =>
-      ReferenceDraft.presets.customerReference.customerReference()
-    ),
+    customer: fake(() => ReferenceDraft.presets.customerReference()),
   },
 });
 

@@ -1,5 +1,1 @@
-import productTypeReference from './product-type-reference';
-
-const presets = { productTypeReference };
-
-export default presets;
+export { default } from './product-type-reference';

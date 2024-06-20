@@ -1,5 +1,1 @@
-import productSelectionReference from './product-selection-reference';
-
-const presets = { productSelectionReference };
-
-export default presets;
+export { default } from './product-selection-reference';

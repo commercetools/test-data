@@ -1,5 +1,1 @@
-import shippingMethodReference from './shipping-method-reference';
-
-const presets = { shippingMethodReference };
-
-export default presets;
+export { default } from './shipping-method-reference';

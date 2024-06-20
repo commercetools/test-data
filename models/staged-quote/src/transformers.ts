@@ -39,22 +39,22 @@ const transformers = {
       'lastModifiedBy',
     ],
     replaceFields: ({ fields }) => {
-      const customer = Reference.presets.customerReference
+      const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .build<TReference<'customer'>>();
 
-      const quoteRequest = Reference.presets.quoteRequestReference
+      const quoteRequest = Reference.presets
         .quoteRequestReference()
         .id(fields.quoteRequest.id)
         .build<TReference<'quote-request'>>();
 
-      const quotationCart = Reference.presets.cartReference
+      const quotationCart = Reference.presets
         .cartReference()
         .id(fields.quotationCart.id)
         .build<TReference<'cart'>>();
 
-      const state = Reference.presets.stateReference
+      const state = Reference.presets
         .stateReference()
         .id(fields.state?.id)
         .build<TReference<'state'>>();
@@ -86,27 +86,25 @@ const transformers = {
       'lastModifiedBy',
     ],
     addFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.presets.customerReference
+      const customerRef: TReferenceGraphql = Reference.presets
         .customerReference()
         .id(fields.customer.id)
         .typeId('customer')
         .buildGraphql();
 
-      const quoteRequestRef: TReferenceGraphql =
-        Reference.presets.quoteRequestReference
-          .quoteRequestReference()
-          .id(fields.quoteRequest.id)
-          .typeId('quote-request')
-          .buildGraphql();
+      const quoteRequestRef: TReferenceGraphql = Reference.presets
+        .quoteRequestReference()
+        .id(fields.quoteRequest.id)
+        .typeId('quote-request')
+        .buildGraphql();
 
-      const quotationCartRef: TReferenceGraphql =
-        Reference.presets.cartReference
-          .cartReference()
-          .id(fields.quotationCart.id)
-          .typeId('cart')
-          .buildGraphql();
+      const quotationCartRef: TReferenceGraphql = Reference.presets
+        .cartReference()
+        .id(fields.quotationCart.id)
+        .typeId('cart')
+        .buildGraphql();
 
-      const stateRef: TReferenceGraphql = Reference.presets.stateReference
+      const stateRef: TReferenceGraphql = Reference.presets
         .stateReference()
         .id(fields.state?.id)
         .typeId('state')
