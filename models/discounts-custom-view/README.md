@@ -1,6 +1,6 @@
 # @commercetools-test-data/discounts-custom-view
 
-This package provides the data model for the commercetools platform `DiscountsCustomView` type
+This package provides the data model for the commercetools platform `DiscountsCustomView` and `DiscountsCustomViewInput` type
 
 # Install
 
