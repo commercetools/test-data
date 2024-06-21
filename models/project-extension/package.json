@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/project-extension",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "Data model for commercetools API ProjectExtension",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,10 +19,10 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/core": "9.0.0",
-    "@commercetools-test-data/utils": "9.0.0",
-    "@commercetools-test-data/graphql-types": "9.0.0",
-    "@commercetools-test-data/custom-application": "9.0.0",
-    "@commercetools-test-data/custom-view": "9.0.0"
+    "@commercetools-test-data/core": "9.0.1",
+    "@commercetools-test-data/utils": "9.0.1",
+    "@commercetools-test-data/graphql-types": "9.0.1",
+    "@commercetools-test-data/custom-application": "9.0.1",
+    "@commercetools-test-data/custom-view": "9.0.1"
   }
 }
