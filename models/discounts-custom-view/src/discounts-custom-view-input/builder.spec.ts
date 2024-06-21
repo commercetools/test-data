@@ -18,9 +18,11 @@ describe('builder', () => {
         }),
         table: null,
         search: expect.any(String),
-        filters: expect.objectContaining({
-          id: expect.any(String),
-        }),
+        filters: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+          }),
+        ]),
         sort: null,
       })
     )
@@ -36,9 +38,11 @@ describe('builder', () => {
         }),
         table: null,
         search: expect.any(String),
-        filters: expect.objectContaining({
-          id: expect.any(String),
-        }),
+        filters: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+          }),
+        ]),
         sort: null,
       })
     )
@@ -61,10 +65,12 @@ describe('builder', () => {
         ]),
         table: null,
         search: expect.any(String),
-        filters: expect.objectContaining({
-          id: expect.any(String),
-          __typename: 'FilterValues',
-        }),
+        filters: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            __typename: 'FilterValues',
+          }),
+        ]),
         sort: null,
       })
     )
