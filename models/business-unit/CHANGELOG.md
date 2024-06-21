@@ -1,5 +1,26 @@
 # @commercetools-test-data/business-unit
 
+## 9.0.0
+
+### Major Changes
+
+- [#601](https://github.com/commercetools/test-data/pull/601) [`42e42c3`](https://github.com/commercetools/test-data/commit/42e42c3c020d98a73ef45883094a27f3ed116b12) Thanks [@tylermorrisford](https://github.com/tylermorrisford)! - This breaking change updates the export method for Reference and ReferenceDraft presets to simplify the call syntax. Models that use these presets in their generators or transformers are also updated.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Replace any instance of `Reference.presets.<preset-name>.<preset-name>()` with `Reference.presets.<preset-name>()`
+  - Replace any instance of `ReferenceDraft.presets.<preset-name>.<preset-name>()` with `ReferenceDraft.presets.<preset-name>()`
+
+### Patch Changes
+
+- Updated dependencies [[`42e42c3`](https://github.com/commercetools/test-data/commit/42e42c3c020d98a73ef45883094a27f3ed116b12)]:
+  - @commercetools-test-data/commons@9.0.0
+  - @commercetools-test-data/associate-role@9.0.0
+  - @commercetools-test-data/customer@9.0.0
+  - @commercetools-test-data/store@9.0.0
+  - @commercetools-test-data/core@9.0.0
+  - @commercetools-test-data/utils@9.0.0
+
 ## 8.5.0
 
 ### Patch Changes

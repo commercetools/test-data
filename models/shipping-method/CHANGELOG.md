@@ -1,5 +1,16 @@
 # @commercetools-test-data/shipping-method
 
+## 9.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`42e42c3`](https://github.com/commercetools/test-data/commit/42e42c3c020d98a73ef45883094a27f3ed116b12)]:
+  - @commercetools-test-data/commons@9.0.0
+  - @commercetools-test-data/tax-category@9.0.0
+  - @commercetools-test-data/zone@9.0.0
+  - @commercetools-test-data/core@9.0.0
+  - @commercetools-test-data/utils@9.0.0
+
 ## 8.5.0
 
 ### Patch Changes
