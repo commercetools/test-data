@@ -18,7 +18,7 @@ const generator = Generator<TDiscountsCustomView>({
     table: null,
     search: fake((f) => f.lorem.word()),
     type: oneOf('ProductDiscount', 'CartDiscount', 'DiscountCode'),
-    filters: fake(() => FilterValues.random()),
+    filters: fake(() => [FilterValues.random()]),
     sort: null,
   },
 });

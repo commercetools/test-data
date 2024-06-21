@@ -31,6 +31,7 @@
 /models/customer @commercetools/customers-team-fe
 /models/customer-group @commercetools/customers-team-fe
 /models/discount-code @commercetools/priceless-team-fe
+/models/discounts-custom-view @commercetools/priceless-team-fe
 /models/filter-values @commercetools/priceless-team-fe
 /models/inventory-entry @commercetools/pacman-team-fe
 /models/order @commercetools/checkout-team-fe

@@ -8,7 +8,7 @@ const generator = Generator<TDiscountsCustomViewInput>({
     name: fake(() => LocalizedString.random()),
     table: null,
     search: fake((f) => f.lorem.word()),
-    filters: fake(() => FilterValues.random()),
+    filters: fake(() => [FilterValues.random()]),
     sort: null,
   },
 });
