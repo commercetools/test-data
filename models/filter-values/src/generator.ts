@@ -2,8 +2,6 @@ import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TFilterValues } from './types';
 
-// https://github.com/commercetools/merchant-center-services/blob/main/packages/settings/lib/schemas/shared.graphql
-
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();
 
 const generator = Generator<TFilterValues>({

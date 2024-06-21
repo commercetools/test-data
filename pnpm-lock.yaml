@@ -524,6 +524,33 @@ importers:
         specifier: ^8.0.0
         version: 8.4.1
 
+  models/discounts-custom-view:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/commons':
+        specifier: 8.5.0
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 8.5.0
+        version: link:../../core
+      '@commercetools-test-data/filter-values':
+        specifier: 8.5.0
+        version: link:../filter-values
+      '@commercetools-test-data/graphql-types':
+        specifier: 8.5.0
+        version: link:../../graphql-types
+      '@commercetools-test-data/utils':
+        specifier: 8.5.0
+        version: link:../../utils
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
   models/filter-values:
     dependencies:
       '@babel/runtime':
