@@ -1,4 +1,7 @@
-import type { TLocalizedString } from '@commercetools-test-data/commons';
+import type {
+  TLocalizedString,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import type {
   TMcSettingsDiscountsCustomView,
@@ -18,14 +21,13 @@ export type TDiscountsCustomViewInput = Omit<
   name: TLocalizedString;
 };
 
-export type TDiscountsCustomViewGraphql = Omit<
-  TMcSettingsDiscountsCustomView,
-  '__typename'
-> & {
+export type TDiscountsCustomViewGraphql = TDiscountsCustomView & {
   __typename: 'DiscountsCustomView';
+  nameAllLocales: TLocalizedStringGraphql | null;
 };
-export type TDiscountsCustomViewInputGraphql =
-  TMcSettingsDiscountsCustomViewInput;
+export type TDiscountsCustomViewInputGraphql = TDiscountsCustomViewInput & {
+  nameAllLocales: TLocalizedStringGraphql | null;
+};
 
 export type TDiscountsCustomViewBuilder = TBuilder<TDiscountsCustomView>;
 export type TDiscountsCustomViewInputBuilder =
