@@ -4,8 +4,6 @@ import { FilterValues } from '@commercetools-test-data/filter-values';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TDiscountsCustomView } from './types';
 
-// https://github.com/commercetools/merchant-center-services/blob/main/packages/settings/lib/schemas/discounts-my-view.graphql
-
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();
 
 const generator = Generator<TDiscountsCustomView>({

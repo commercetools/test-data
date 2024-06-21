@@ -2,8 +2,6 @@
 
 This package provides the data model for the commercetools platform `FilterValues` type
 
-https://github.com/commercetools/merchant-center-services/blob/main/packages/settings/lib/schemas/shared.graphql
-
 # Install
 
 ```bash

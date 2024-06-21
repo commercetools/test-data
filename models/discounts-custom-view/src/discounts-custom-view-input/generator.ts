@@ -3,8 +3,6 @@ import { fake, Generator } from '@commercetools-test-data/core';
 import { FilterValues } from '@commercetools-test-data/filter-values';
 import { TDiscountsCustomViewInput } from '../types';
 
-// https://github.com/commercetools/merchant-center-services/blob/main/packages/settings/lib/schemas/discounts-my-view.graphql
-
 const generator = Generator<TDiscountsCustomViewInput>({
   fields: {
     name: fake(() => LocalizedString.random()),
