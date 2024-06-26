@@ -1,5 +1,18 @@
 # @commercetools-test-data/discounts-custom-view
 
+## 9.0.1
+
+### Patch Changes
+
+- [#606](https://github.com/commercetools/test-data/pull/606) [`445c888`](https://github.com/commercetools/test-data/commit/445c888b9e9ec087cf50f0d8b2265b7b2fd3946b) Thanks [@ragafus](https://github.com/ragafus)! - Fix `DiscountsCustomView.filters` and `DiscountsCustomViewInput.filter` generated data
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.1
+  - @commercetools-test-data/graphql-types@9.0.1
+  - @commercetools-test-data/commons@9.0.1
+  - @commercetools-test-data/filter-values@9.0.1
+  - @commercetools-test-data/utils@9.0.1
+
 ## 9.0.0
 
 ### Minor Changes
