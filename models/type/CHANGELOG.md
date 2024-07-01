@@ -1,5 +1,16 @@
 # @commercetools-test-data/type
 
+## 9.0.2
+
+### Patch Changes
+
+- [#609](https://github.com/commercetools/test-data/pull/609) [`98fa1de`](https://github.com/commercetools/test-data/commit/98fa1de0142f7e231def3944b545e673cb97d5e8) Thanks [@ragafus](https://github.com/ragafus)! - Build `labelAllLocales` property for GraphQL `FieldDefinition` model
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.2
+  - @commercetools-test-data/commons@9.0.2
+  - @commercetools-test-data/utils@9.0.2
+
 ## 9.0.1
 
 ### Patch Changes
