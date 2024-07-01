@@ -1,5 +1,17 @@
 # @commercetools-test-data/standalone-price
 
+## 9.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.2
+  - @commercetools-test-data/channel@9.0.2
+  - @commercetools-test-data/commons@9.0.2
+  - @commercetools-test-data/customer-group@9.0.2
+  - @commercetools-test-data/product@9.0.2
+  - @commercetools-test-data/utils@9.0.2
+
 ## 9.0.1
 
 ### Patch Changes

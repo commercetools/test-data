@@ -1,5 +1,15 @@
 # @commercetools-test-data/custom-application
 
+## 9.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.2
+  - @commercetools-test-data/graphql-types@9.0.2
+  - @commercetools-test-data/commons@9.0.2
+  - @commercetools-test-data/utils@9.0.2
+
 ## 9.0.1
 
 ### Patch Changes
