@@ -58,6 +58,13 @@ describe('builder', () => {
             value: expect.any(String),
           }),
         ]),
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: expect.any(String),
+            value: expect.any(String),
+          }),
+        ]),
         required: expect.any(Boolean),
         inputHint: expect.any(String),
         __typename: 'FieldDefinition',
