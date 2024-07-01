@@ -1,3 +1,4 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TFieldDefinition, TFieldDefinitionGraphql } from './types';
 
@@ -10,7 +11,10 @@ const transformers = {
   }),
   graphql: Transformer<TFieldDefinition, TFieldDefinitionGraphql>('graphql', {
     buildFields: ['label', 'type'],
-    addFields: () => ({ __typename: 'FieldDefinition' }),
+    addFields: ({ fields }) => ({
+      labelAllLocales: LocalizedString.toLocalizedField(fields.label),
+      __typename: 'FieldDefinition',
+    }),
   }),
 };
 
