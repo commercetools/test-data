@@ -4,7 +4,12 @@ import type { TBuilder } from '@commercetools-test-data/core';
 // Base model
 export type TMoney = Money;
 
-export type TMoneyGraphql = TMoney;
+// TODO: add HighPrecisionMoney support
+export type TMoneyGraphql = TMoney & {
+  fractionDigits: number;
+  type: 'centPrecision';
+  __typename: 'Money';
+};
 
 export type TMoneyBuilder = TBuilder<TMoney>;
 export type TCreateMoneyBuilder = () => TMoneyBuilder;

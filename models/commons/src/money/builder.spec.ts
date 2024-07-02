@@ -34,6 +34,9 @@ describe('builder', () => {
       expect.objectContaining({
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
+        type: 'centPrecision',
+        fractionDigits: 2,
+        __typename: 'Money',
       })
     )
   );
