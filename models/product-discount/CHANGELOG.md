@@ -1,5 +1,18 @@
 # @commercetools-test-data/product-discount
 
+## 9.0.3
+
+### Patch Changes
+
+- [#612](https://github.com/commercetools/test-data/pull/612) [`e49e8b9`](https://github.com/commercetools/test-data/commit/e49e8b96a24268ce5559119d1e12ae3536466a35) Thanks [@ragafus](https://github.com/ragafus)! - Fixes `ProductDiscountValueAbsolute`, `ProductDiscountValueExternal`, and `ProductDiscountValueRelative` `__typename` fields
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.3
+  - @commercetools-test-data/category@9.0.3
+  - @commercetools-test-data/commons@9.0.3
+  - @commercetools-test-data/product-type@9.0.3
+  - @commercetools-test-data/utils@9.0.3
+
 ## 9.0.2
 
 ### Patch Changes
