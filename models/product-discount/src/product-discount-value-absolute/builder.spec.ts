@@ -52,7 +52,7 @@ describe('builder', () => {
         money: expect.objectContaining({
           type: 'centPrecision',
         }),
-        __typename: 'ProductDiscountValueAbsolute',
+        __typename: 'AbsoluteDiscountValue',
       })
     )
   );
