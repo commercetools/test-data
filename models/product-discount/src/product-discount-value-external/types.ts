@@ -10,7 +10,7 @@ export type TProductDiscountValueExternalDraft =
 
 export type TProductDiscountValueExternalGraphql =
   TProductDiscountValueExternal & {
-    __typename: 'ProductDiscountValueExternal';
+    __typename: 'ExternalDiscountValue';
   };
 export type TProductDiscountValueExternalDraftGraphql = {
   external: Omit<TProductDiscountValueExternalDraft, 'type'>;

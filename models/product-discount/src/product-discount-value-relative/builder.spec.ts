@@ -46,7 +46,7 @@ describe('builder', () => {
       expect.objectContaining({
         type: 'relative',
         permyriad: expect.any(Number),
-        __typename: 'ProductDiscountValueRelative',
+        __typename: 'RelativeDiscountValue',
       })
     )
   );
