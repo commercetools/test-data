@@ -83,6 +83,13 @@ describe('builder', () => {
         ]),
         inputHint: expect.any(String),
         isSearchable: expect.any(Boolean),
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
         __typename: 'AttributeDefinition',
       })
     )
