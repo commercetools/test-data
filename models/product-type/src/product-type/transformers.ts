@@ -1,4 +1,4 @@
-import { Transformer, buildField } from '@commercetools-test-data/core';
+import { Transformer, buildGraphqlList } from '@commercetools-test-data/core';
 import { TAttributeDefinitionGraphql } from '../attribute-definition';
 import type { TProductType, TProductTypeGraphql } from './types';
 
@@ -13,11 +13,13 @@ const transformers = {
     buildFields: ['createdBy', 'lastModifiedBy'],
     addFields: ({ fields }) => ({
       __typename: 'ProductTypeDefinition',
-      attributeDefinitions: {
-        results: fields.attributes!.map((attribute) =>
-          buildField(attribute, 'graphql')
-        ) as Array<TAttributeDefinitionGraphql>,
+      attributeDefinitions: buildGraphqlList(fields.attributes, {
+        total: fields.attributes.length,
         __typename: 'AttributeDefinitionResult',
+      }) as {
+        total: number;
+        results: Array<TAttributeDefinitionGraphql>;
+        __typename: 'AttributeDefinitionResult';
       },
     }),
   }),
