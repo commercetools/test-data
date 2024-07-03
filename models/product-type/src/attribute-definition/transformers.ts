@@ -1,3 +1,4 @@
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TAttributeDefinition,
@@ -15,7 +16,10 @@ const transformers = {
     'graphql',
     {
       buildFields: ['label', 'inputTip', 'type'],
-      addFields: () => ({ __typename: 'AttributeDefinition' }),
+      addFields: ({ fields }) => ({
+        labelAllLocales: LocalizedString.toLocalizedField(fields.label),
+        __typename: 'AttributeDefinition',
+      }),
     }
   ),
 };
