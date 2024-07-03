@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart
 
+## 9.0.5
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@9.0.5
+  - @commercetools-test-data/discount-code@9.0.5
+  - @commercetools-test-data/core@9.0.5
+  - @commercetools-test-data/business-unit@9.0.5
+  - @commercetools-test-data/channel@9.0.5
+  - @commercetools-test-data/commons@9.0.5
+  - @commercetools-test-data/customer@9.0.5
+  - @commercetools-test-data/shipping-method@9.0.5
+  - @commercetools-test-data/store@9.0.5
+  - @commercetools-test-data/tax-category@9.0.5
+  - @commercetools-test-data/utils@9.0.5
+
 ## 9.0.4
 
 ### Patch Changes
