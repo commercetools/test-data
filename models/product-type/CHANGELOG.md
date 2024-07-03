@@ -1,5 +1,16 @@
 # @commercetools-test-data/product-type
 
+## 9.0.5
+
+### Patch Changes
+
+- [#616](https://github.com/commercetools/test-data/pull/616) [`ac7f030`](https://github.com/commercetools/test-data/commit/ac7f03069ebac86c150c603b76276aa1e1e5aaf1) Thanks [@ragafus](https://github.com/ragafus)! - Add missing `labelAllLocales` field in `AttributeDefinition` GraphQL model
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.5
+  - @commercetools-test-data/commons@9.0.5
+  - @commercetools-test-data/utils@9.0.5
+
 ## 9.0.4
 
 ### Patch Changes
