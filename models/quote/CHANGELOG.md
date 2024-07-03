@@ -1,5 +1,21 @@
 # @commercetools-test-data/quote
 
+## 9.0.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.4
+  - @commercetools-test-data/business-unit@9.0.4
+  - @commercetools-test-data/cart@9.0.4
+  - @commercetools-test-data/commons@9.0.4
+  - @commercetools-test-data/customer@9.0.4
+  - @commercetools-test-data/customer-group@9.0.4
+  - @commercetools-test-data/quote-request@9.0.4
+  - @commercetools-test-data/staged-quote@9.0.4
+  - @commercetools-test-data/store@9.0.4
+  - @commercetools-test-data/utils@9.0.4
+
 ## 9.0.3
 
 ### Patch Changes

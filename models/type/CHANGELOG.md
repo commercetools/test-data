@@ -1,5 +1,16 @@
 # @commercetools-test-data/type
 
+## 9.0.4
+
+### Patch Changes
+
+- [#614](https://github.com/commercetools/test-data/pull/614) [`fd02d51`](https://github.com/commercetools/test-data/commit/fd02d51b6bb6e406ef6b348ffaf95d5907c230d8) Thanks [@ragafus](https://github.com/ragafus)! - Add missing `labelAllLocales` property to `TFieldDefinitionGraphql` type
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.4
+  - @commercetools-test-data/commons@9.0.4
+  - @commercetools-test-data/utils@9.0.4
+
 ## 9.0.3
 
 ### Patch Changes
