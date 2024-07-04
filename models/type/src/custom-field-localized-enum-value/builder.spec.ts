@@ -60,7 +60,7 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        __typename: 'LocalizableEnumValueType',
+        __typename: 'LocalizedEnumValue',
       })
     )
   );

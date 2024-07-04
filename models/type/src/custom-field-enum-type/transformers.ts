@@ -12,8 +12,8 @@ const transformers = {
     'graphql',
     {
       buildFields: [],
-      addFields: ({ fields }) => ({
-        __typename: 'EnumCustomFieldType',
+      addFields: () => ({
+        __typename: 'EnumType',
       }),
     }
   ),

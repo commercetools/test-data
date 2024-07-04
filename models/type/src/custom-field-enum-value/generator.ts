@@ -1,4 +1,3 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { type TCustomFieldEnumValue } from './types';
 
@@ -7,7 +6,7 @@ import { type TCustomFieldEnumValue } from './types';
 const generator = Generator<TCustomFieldEnumValue>({
   fields: {
     key: fake((f) => f.lorem.slug(2)),
-    label: fake(() => LocalizedString.random()),
+    label: fake((f) => f.word.words({ count: { min: 3, max: 5 } })),
   },
 });
 
