@@ -7,7 +7,7 @@ import type { TProductDiscountValueAbsolute } from './types';
 const generator = Generator<TProductDiscountValueAbsolute>({
   fields: {
     type: 'absolute',
-    money: fake(() => CentPrecisionMoney.random()),
+    money: [fake(() => CentPrecisionMoney.random())],
   },
 });
 
