@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/channel",
-  "version": "9.0.5",
+  "version": "9.0.6",
   "description": "Data model for commercetools API Channel",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "9.0.5",
-    "@commercetools-test-data/core": "9.0.5",
-    "@commercetools-test-data/utils": "9.0.5",
+    "@commercetools-test-data/commons": "9.0.6",
+    "@commercetools-test-data/core": "9.0.6",
+    "@commercetools-test-data/utils": "9.0.6",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"
   }

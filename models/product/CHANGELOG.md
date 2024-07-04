@@ -1,5 +1,18 @@
 # @commercetools-test-data/product
 
+## 9.0.6
+
+### Patch Changes
+
+- Updated dependencies [[`9334f96`](https://github.com/commercetools/test-data/commit/9334f96e455a62b1d0665cf1ca7585ca0501ad23)]:
+  - @commercetools-test-data/product-type@9.0.6
+  - @commercetools-test-data/core@9.0.6
+  - @commercetools-test-data/category@9.0.6
+  - @commercetools-test-data/channel@9.0.6
+  - @commercetools-test-data/commons@9.0.6
+  - @commercetools-test-data/tax-category@9.0.6
+  - @commercetools-test-data/utils@9.0.6
+
 ## 9.0.5
 
 ### Patch Changes
