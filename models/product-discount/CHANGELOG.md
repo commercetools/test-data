@@ -1,5 +1,18 @@
 # @commercetools-test-data/product-discount
 
+## 9.0.7
+
+### Patch Changes
+
+- [#621](https://github.com/commercetools/test-data/pull/621) [`885af8c`](https://github.com/commercetools/test-data/commit/885af8cb9e3eab88b8ae5d946d6ca80ee713f509) Thanks [@mario-priceless](https://github.com/mario-priceless)! - fix product type discount value generator money needs to return an array of money
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.7
+  - @commercetools-test-data/category@9.0.7
+  - @commercetools-test-data/commons@9.0.7
+  - @commercetools-test-data/product-type@9.0.7
+  - @commercetools-test-data/utils@9.0.7
+
 ## 9.0.6
 
 ### Patch Changes
