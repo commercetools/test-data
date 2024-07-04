@@ -1,5 +1,16 @@
 # @commercetools-test-data/inventory-entry
 
+## 9.0.6
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@9.0.6
+  - @commercetools-test-data/core@9.0.6
+  - @commercetools-test-data/channel@9.0.6
+  - @commercetools-test-data/commons@9.0.6
+  - @commercetools-test-data/utils@9.0.6
+
 ## 9.0.5
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @commercetools-test-data/type
 
+## 9.0.6
+
+### Patch Changes
+
+- [#619](https://github.com/commercetools/test-data/pull/619) [`984b369`](https://github.com/commercetools/test-data/commit/984b369998b0269409af0cba24ffe051231cf1af) Thanks [@ragafus](https://github.com/ragafus)! - Fixes wrong `__typenames` props (CustomFieldEnumType, CustomFieldEnumValue, CustomFieldLocalizedEnumValue)
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@9.0.6
+  - @commercetools-test-data/commons@9.0.6
+  - @commercetools-test-data/utils@9.0.6
+
 ## 9.0.5
 
 ### Patch Changes
