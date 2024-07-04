@@ -11,7 +11,7 @@ export type TCustomFieldLocalizedEnumValueGraphql = Omit<
   'label'
 > & {
   labelAllLocales: TLocalizedStringGraphql | null;
-  __typename: 'LocalizableEnumValueType';
+  __typename: 'LocalizedEnumValue';
 };
 export type TCustomFieldLocalizedEnumValueDraftGraphql =
   TCustomFieldLocalizedEnumValueDraft;

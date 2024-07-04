@@ -22,7 +22,7 @@ const transformers = {
     removeFields: ['label'],
     addFields: ({ fields }) => ({
       labelAllLocales: LocalizedString.toLocalizedField(fields.label),
-      __typename: 'LocalizableEnumValueType',
+      __typename: 'LocalizedEnumValue',
     }),
   }),
 };

@@ -8,7 +8,7 @@ export type TCustomFieldEnumType = CustomFieldEnumType;
 export type TCustomFieldEnumTypeDraft = CustomFieldEnumType;
 
 export type TCustomFieldEnumTypeGraphql = CustomFieldEnumType & {
-  __typename: 'EnumCustomFieldType';
+  __typename: 'EnumType';
 };
 export type TCustomFieldEnumTypeDraftGraphql = {
   enum: { values: Array<CustomFieldEnumValue> };

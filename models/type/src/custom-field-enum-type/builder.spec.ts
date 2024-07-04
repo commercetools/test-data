@@ -34,7 +34,7 @@ describe('builder', () => {
       expect.objectContaining({
         name: 'Enum',
         values: [],
-        __typename: 'EnumCustomFieldType',
+        __typename: 'EnumType',
       })
     )
   );

@@ -14,11 +14,7 @@ describe('builder', () => {
       CustomFieldEnumValue.random(),
       expect.objectContaining({
         key: expect.any(String),
-        label: expect.objectContaining({
-          de: expect.any(String),
-          en: expect.any(String),
-          fr: expect.any(String),
-        }),
+        label: expect.any(String),
       })
     )
   );
@@ -29,11 +25,7 @@ describe('builder', () => {
       CustomFieldEnumValue.random(),
       expect.objectContaining({
         key: expect.any(String),
-        label: expect.objectContaining({
-          de: expect.any(String),
-          en: expect.any(String),
-          fr: expect.any(String),
-        }),
+        label: expect.any(String),
       })
     )
   );
@@ -44,14 +36,8 @@ describe('builder', () => {
       CustomFieldEnumValue.random(),
       expect.objectContaining({
         key: expect.any(String),
-        labelAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: expect.any(String),
-            __typename: 'LocalizedString',
-          }),
-        ]),
-        __typename: 'LocalizableEnumValueType',
+        label: expect.any(String),
+        __typename: 'EnumValue',
       })
     )
   );
