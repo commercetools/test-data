@@ -5,7 +5,7 @@ export type TAttributePlainEnumValue = AttributePlainEnumValue;
 export type TAttributePlainEnumValueDraft = AttributePlainEnumValue;
 
 export type TAttributePlainEnumValueGraphql = TAttributePlainEnumValue & {
-  __typename: 'AttributePlainEnumValue';
+  __typename: 'PlainEnumValue';
 };
 export type TAttributePlainEnumValueDraftGraphql = AttributePlainEnumValue;
 

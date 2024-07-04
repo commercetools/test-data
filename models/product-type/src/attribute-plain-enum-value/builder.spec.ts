@@ -38,7 +38,7 @@ describe('builder', () => {
       'graphql',
       AttributePlainEnumValue.random(),
       expect.objectContaining({
-        __typename: 'AttributePlainEnumValue',
+        __typename: 'PlainEnumValue',
         key: expect.any(String),
         label: expect.any(String),
       })

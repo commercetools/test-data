@@ -23,7 +23,7 @@ const transformers = {
   >('graphql', {
     buildFields: [],
     addFields: () => ({
-      __typename: 'AttributePlainEnumValue',
+      __typename: 'PlainEnumValue',
     }),
   }),
 };
