@@ -54,36 +54,36 @@ const bb456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Hochleistungs-Flughafenplanierer für effizientes Nivellieren und Instandhalten von Flugzeuglandebahnen.'
-        )
-        ['it-IT'](
-          'Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.'
-        )
-        ['nl-NL'](
-          'Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.'
-        )
-        ['fr-FR'](
-          "Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport."
-        )
-        ['en-AU'](
-          'High-performance airport grader for efficient grading and maintenance of airport runways.'
-        )
-        ['es-ES'](
-          'Niveladora de aeropuerto de alto rendimiento para el nivelado eficiente y el mantenimiento de las pistas de aterrizaje del aeropuerto.'
-        )
-        ['en-GB'](
-          'High-performance airport grader for efficient grading and maintenance of airport runways.'
-        )
-        ['en-NZ'](
-          'High-performance airport grader for efficient grading and maintenance of airport runways.'
-        )
-        ['pt-PT'](
-          'Niveladora de alto desempenho para aeroportos para classificação eficiente e manutenção de pistas de aeroporto.'
-        )
-        ['en-US'](
-          'High-performance airport grader for efficient grading and maintenance of airport runways.'
-        )
+        [
+          'de-DE'
+        ]('Hochleistungs-Flughafenplanierer für effizientes Nivellieren und Instandhalten von Flugzeuglandebahnen.')
+        [
+          'it-IT'
+        ]('Livellatrice ad alte prestazioni per aeroporti per una classificazione efficiente e la manutenzione delle piste aeroportuali.')
+        [
+          'nl-NL'
+        ]('Hoogpresterende luchthavennivelleermachine voor efficiënte egalisatie en onderhoud van luchthavenstartbanen.')
+        [
+          'fr-FR'
+        ]("Niveleuse aéroportuaire haute performance pour le nivellement efficace et l'entretien des pistes d'aéroport.")
+        [
+          'en-AU'
+        ]('High-performance airport grader for efficient grading and maintenance of airport runways.')
+        [
+          'es-ES'
+        ]('Niveladora de aeropuerto de alto rendimiento para el nivelado eficiente y el mantenimiento de las pistas de aterrizaje del aeropuerto.')
+        [
+          'en-GB'
+        ]('High-performance airport grader for efficient grading and maintenance of airport runways.')
+        [
+          'en-NZ'
+        ]('High-performance airport grader for efficient grading and maintenance of airport runways.')
+        [
+          'pt-PT'
+        ]('Niveladora de alto desempenho para aeroportos para classificação eficiente e manutenção de pistas de aeroporto.')
+        [
+          'en-US'
+        ]('High-performance airport grader for efficient grading and maintenance of airport runways.')
     )
     .slug(
       LocalizedStringDraft.presets

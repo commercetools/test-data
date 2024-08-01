@@ -31,18 +31,16 @@ const modernUpholsteredQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6000, h: 6000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'white', 'en-GB': 'white', 'de-DE': 'white' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'White', 'en-GB': 'White', 'de-DE': 'White' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': 'black', 'en-GB': 'black', 'de-DE': 'black' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Ebony', 'en-GB': 'Ebony', 'de-DE': 'Ebony' }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'White:#FFFFFF',
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Black:#000000',
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Cotton Upholstery \n- Standard Queen size\n- Assembly on site',
@@ -51,12 +49,6 @@ const modernUpholsteredQueenBed01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Cotton Upholstery \n- Standard Queen size\n- Assembly on site',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFF',
-          label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
-        }),
     ]);
 
 export default modernUpholsteredQueenBed01;

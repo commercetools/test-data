@@ -42,26 +42,16 @@ const charcoalChair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Charcoal',
-        'de-DE': 'Holzkohle',
-        'en-US': 'Charcoal',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Dark Slate Grey:#2F4F4F',
+        'de-DE': 'Dunkles Schiefer grau:#2F4F4F',
+        'en-US': 'Dark Slate Gray:#2F4F4F',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#000',
-          label: { 'de-DE': 'Schwarz', 'en-GB': 'Black', 'en-US': 'Black' },
-        }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Oak', 'de-DE': 'Eiche', 'en-US': 'Oak' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#E2C897', 'de-DE': '#E2C897', 'en-US': '#E2C897' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default charcoalChair01;

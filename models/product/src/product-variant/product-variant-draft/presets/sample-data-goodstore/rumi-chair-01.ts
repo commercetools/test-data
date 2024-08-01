@@ -42,18 +42,16 @@ const rumiChair01 = (): TProductVariantDraftBuilder =>
           key: '#A020F0',
           label: { 'de-DE': 'Lila', 'en-GB': 'Purple', 'en-US': 'Purple' },
         }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#968289', 'de-DE': '#968289', 'en-US': '#968289' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Mauve', 'de-DE': 'Mauve', 'en-US': 'Mauve' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#DAB555', 'en-US': '#DAB555', 'de-DE': '#DAB555' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Gold', 'de-DE': 'Gold', 'en-US': 'Gold' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Lavender Blush:#fff0f5',
+        'de-DE': 'Lavendel:#fff0f5',
+        'en-US': 'Lavender Blush:#fff0f5',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Gold:#FFD700',
+        'en-US': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
+      }),
     ]);
 
 export default rumiChair01;

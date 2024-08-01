@@ -36,18 +36,11 @@ const modernBookcase01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Montage im Lieferumfang enthalten',
         'en-US': '- Assembly included in delivery',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Walnut', 'de-DE': 'Nussbaum', 'en-US': 'Walnut' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#9C5933', 'de-DE': '#9C5933', 'en-US': '#9C5933' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+        'en-US': 'Saddle Brown:#8b4513',
+      }),
     ]);
 
 export default modernBookcase01;

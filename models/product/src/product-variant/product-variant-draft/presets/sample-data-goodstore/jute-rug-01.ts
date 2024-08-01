@@ -60,18 +60,11 @@ const juteRug01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- 10 Fuß x 12 Fuß',
         'en-US': '- 10ft x 12ft',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Jute', 'de-DE': 'Jute', 'en-US': 'Jute' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#EEDA99', 'de-DE': '#EEDA99', 'en-US': '#EEDA99' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default juteRug01;

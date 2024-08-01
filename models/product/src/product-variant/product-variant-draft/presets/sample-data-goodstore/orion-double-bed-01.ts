@@ -37,26 +37,16 @@ const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
           '- Montage im Lieferumfang enthalten\n- Matratze nicht im Lieferumfang enthalten',
         'en-US': '- Assembly included at delivery\n- Mattress not included',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Sage', 'de-DE': 'Salbei', 'en-US': 'Sage' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#718C86', 'de-DE': '#718C86', 'en-US': '#718C86' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Steel', 'de-DE': 'Stahl', 'en-US': 'Steel' }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': '#CCCCCC ',
-        'de-DE': '#CCCCCC ',
-        'en-US': '#CCCCCC ',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Sage:#BCB88A',
+        'de-DE': 'Salbei:#BCB88A',
+        'en-US': 'Sage:#BCB88A',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+        'en-US': 'Silver:#C0C0C0',
+      }),
     ]);
 
 export default orionDoubleBed01;

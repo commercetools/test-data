@@ -36,20 +36,11 @@ const rusticOvenCasserole01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Does not include lid',
         'de-DE': '- Ohne Deckel',
       }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Terracotta',
-        'de-DE': 'Terrakotta',
-        'en-US': 'Terracotta',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Peru:#CD853F',
+        'de-DE': 'Peru:#CD853F',
+        'en-US': 'Peru:#CD853F',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#E3793E', 'de-DE': '#E3793E', 'en-US': '#E3793E' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFA500',
-          label: { 'de-DE': 'Orange', 'en-GB': 'Orange', 'en-US': 'Orange' },
-        }),
     ]);
 
 export default rusticOvenCasserole01;

@@ -44,22 +44,14 @@ const abigailLoungeChair01 = (): TProductVariantDraftBuilder =>
     ])
     .attributes([
       AttributeDraft.random().name('color').value({
-        'en-US': 'lightpink',
-        'en-GB': 'lightpink',
-        'de-DE': 'lightpink',
+        'en-US': 'Light Pink:#FFB6C1',
+        'en-GB': 'Light Pink:#FFB6C1',
+        'de-DE': 'Hell rosa:#FFB6C1',
       }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-US': 'Soft Pink',
-        'en-GB': 'Soft Pink',
-        'de-DE': 'Soft Pink',
-      }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Brass', 'en-GB': 'Brass', 'de-DE': 'Brass' }),
       AttributeDraft.random().name('finish').value({
-        'en-US': 'goldenrod',
-        'en-GB': 'goldenrod',
-        'de-DE': 'goldenrod',
+        'en-US': 'Gold:#FFD700',
+        'en-GB': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
       }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
@@ -69,12 +61,6 @@ const abigailLoungeChair01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Wird mit passendem Kissen geliefert\n- Samtpolsterung\n- Wird zusammengebaut geliefert',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFC0CB',
-          label: { 'de-DE': 'Rosa', 'en-GB': 'Pink', 'en-US': 'Pink' },
-        }),
     ]);
 
 export default abigailLoungeChair01;

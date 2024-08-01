@@ -54,12 +54,11 @@ const smallWoodenBowl01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Includes 1 bowl',
         'de-DE': '- Enthält 1 Schüssel',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+        'en-US': 'Saddle Brown:#8b4513',
+      }),
     ]);
 
 export default smallWoodenBowl01;

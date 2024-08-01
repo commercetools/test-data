@@ -48,13 +48,11 @@ const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
         'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
       }),
-
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#A020F0',
-          label: { 'de-DE': 'Lila', 'en-GB': 'Purple', 'en-US': 'Purple' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Purple:#800080',
+        'de-DE': 'Violett:#800080',
+        'en-US': 'Purple:#800080',
+      }),
     ]);
 
 export default purpleMinimalistAbstractPainting01;

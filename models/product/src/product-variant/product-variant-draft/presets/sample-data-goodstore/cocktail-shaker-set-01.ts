@@ -36,18 +36,11 @@ const cocktailShakerSet01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Edelstahl\n- Handwäsche nur',
         'en-US': '- Stainless steel\n- Hand wash only',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Gold', 'de-DE': 'Gold', 'en-US': 'Gold' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFD700',
-          label: { 'de-DE': 'Gold', 'en-GB': 'Gold', 'en-US': 'Gold' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#EED149', 'de-DE': '#EED149', 'en-US': '#EED149' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
+        'en-US': 'Gold:#FFD700',
+      }),
     ]);
 
 export default cocktailShakerSet01;

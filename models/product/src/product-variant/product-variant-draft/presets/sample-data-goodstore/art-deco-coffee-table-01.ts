@@ -42,24 +42,16 @@ const artDecoCoffeeTable01 = (): TProductVariantDraftBuilder =>
         'en-GB': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
         'de-DE': '- Granite top\n- 5ft by 3ft by 2ft\n- Preassembled',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'black', 'en-GB': 'black', 'de-DE': 'black' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Black', 'en-GB': 'Black', 'de-DE': 'Black' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': 'gold', 'en-GB': 'gold', 'de-DE': 'gold' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Brass', 'en-GB': 'Brass', 'de-DE': 'Brass' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#000',
-          label: { 'de-DE': 'Schwarz', 'en-GB': 'Black', 'en-US': 'Black' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Black:#000000',
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Gold:#FFD700',
+        'en-GB': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
+      }),
     ]);
 
 export default artDecoCoffeeTable01;

@@ -48,18 +48,11 @@ const cubeJuteBasket01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Jute\n- Vormontiert\n- 1 Fuß x 1 Fuß x 1 Fuß',
         'en-US': '- Jute\n- Preassembled\n- 1ft x 1ft x 1ft',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#EEB348', 'de-DE': '#EEB348', 'en-US': '#EEB348' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Jute', 'de-DE': 'Jute', 'en-US': 'Jute' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default cubeJuteBasket01;

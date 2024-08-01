@@ -42,12 +42,11 @@ const greenServingPlate01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Enthält 1 Teller',
         'en-US': '- Includes 1 plate',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#00FF00',
-          label: { 'de-DE': 'Grün', 'en-GB': 'Green', 'en-US': 'Green' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Green:#008000',
+        'de-DE': 'Grün:#008000',
+        'en-US': 'Green:#008000',
+      }),
     ]);
 
 export default greenServingPlate01;

@@ -49,18 +49,16 @@ const modernGoldCoffeeTable01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 2500, h: 2500 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'white', 'en-GB': 'white', 'de-DE': 'white' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'White', 'en-GB': 'White', 'de-DE': 'White' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': 'gold', 'en-GB': 'gold', 'de-DE': 'gold' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Gold', 'en-GB': 'Gold', 'de-DE': 'Gold' }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'White:#FFFFFF',
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Gold:#FFD700',
+        'en-GB': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
+      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Length: 5 feet\n- Width: 3 feet\n- Height: 2 feet\n- Tables made of plastic laminate on manufactured wood\n- Gold finish on legs\n- Preassembled',
@@ -69,12 +67,6 @@ const modernGoldCoffeeTable01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Length: 5 feet\n- Width: 3 feet\n- Height: 2 feet\n- Tables made of plastic laminate on manufactured wood\n- Gold finish on legs\n- Preassembled',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFF',
-          label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
-        }),
     ]);
 
 export default modernGoldCoffeeTable01;

@@ -48,6 +48,11 @@ const steelHipFlask01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Stainless steel',
         'de-DE': '- Edelstahl',
       }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+        'en-US': 'Silver:#C0C0C0',
+      }),
     ]);
 
 export default steelHipFlask01;

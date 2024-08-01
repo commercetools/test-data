@@ -43,18 +43,11 @@ const braidedRug01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5527, h: 3685 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFEEB2', 'de-DE': '#FFEEB2', 'en-US': '#FFEEB2' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Jute', 'de-DE': 'Jute', 'en-US': 'Jute' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default braidedRug01;

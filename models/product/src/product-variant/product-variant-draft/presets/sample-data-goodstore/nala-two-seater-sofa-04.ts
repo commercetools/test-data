@@ -31,32 +31,22 @@ const nalaTwoSeaterSofa04 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6000, h: 3376 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#077D94', 'de-DE': '#077D94', 'en-US': '#077D94' }),
-      AttributeDraft.random().name('new-arrival').value(true),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Ebony', 'de-DE': 'Ebenholz', 'en-US': 'Ebony' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Peacock Blue',
-        'de-DE': 'Pfauenblau',
-        'en-US': 'Peacock Blue',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Deep Sky Blue:#00BFFF',
+        'de-DE': 'Tiefes Himmel blau:#00BFFF',
+        'en-US': 'Deep Sky Blue:#00BFFF',
       }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#090909', 'de-DE': '#090909', 'en-US': '#090909' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
+      }),
+      AttributeDraft.random().name('new-arrival').value(true),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Two-seater sofa\n- Cotton linen upholstery',
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#0000FF',
-          label: { 'de-DE': 'Blau', 'en-GB': 'Blue', 'en-US': 'Blue' },
-        }),
     ]);
 
 export default nalaTwoSeaterSofa04;

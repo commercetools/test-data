@@ -36,6 +36,16 @@ const stoutBeerGlass01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Set includes 6 glasses',
         'de-DE': '- Das Set enthält 6 Gläser',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Transparent:transparent',
+        'de-DE': 'Transparent:transparent',
+        'en-US': 'Transparent:transparent',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Glass:transparent',
+        'de-DE': 'Glas:transparent',
+        'en-US': 'Glass:transparent',
+      }),
     ]);
 
 export default stoutBeerGlass01;

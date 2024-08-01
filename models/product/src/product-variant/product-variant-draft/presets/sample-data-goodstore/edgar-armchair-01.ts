@@ -36,26 +36,16 @@ const edgarArmchair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Montage bei Lieferung',
         'en-US': '- Assembly on delivery',
       }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Light Sage',
-        'de-DE': 'Leichter Salbei',
-        'en-US': 'Light Sage',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Light Olive:#BAB86C',
+        'de-DE': 'Helles Oliv:#BAB86C',
+        'en-US': 'Light Olive:#BAB86C',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#B6C9B6', 'de-DE': '#B6C9B6', 'en-US': '#B6C9B6' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Iron', 'de-DE': 'Eisen', 'en-US': 'Iron' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#00FF00',
-          label: { 'de-DE': 'Grün', 'en-GB': 'Green', 'en-US': 'Green' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
+      }),
     ]);
 
 export default edgarArmchair01;

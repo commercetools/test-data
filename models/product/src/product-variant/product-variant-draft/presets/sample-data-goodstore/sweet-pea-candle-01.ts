@@ -48,12 +48,16 @@ const sweetPeaCandle01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Comes in glass jar\n- 180 grams',
         'de-DE': '- Wird im Glas geliefert\n- 180 Gramm',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Pink', 'de-DE': 'Rosa', 'en-US': 'Pink' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFD6E5', 'de-DE': '#FFD6E5', 'en-US': '#FFD6E5' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Pink:#FFC0CB',
+        'de-DE': 'Rosa:#FFC0CB',
+        'en-US': 'Pink:#FFC0CB',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Glass:transparent',
+        'de-DE': 'Glas:transparent',
+        'en-US': 'Glass:transparent',
+      }),
     ]);
 
 export default sweetPeaCandle01;

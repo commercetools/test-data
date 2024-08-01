@@ -42,6 +42,16 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Das Set enthält 4 Gläser',
         'en-US': '- Set includes 4 glasses',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Transparent:transparent',
+        'de-DE': 'Transparent:transparent',
+        'en-US': 'Transparent:transparent',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Glass:transparent',
+        'de-DE': 'Glas:transparent',
+        'en-US': 'Glass:transparent',
+      }),
     ]);
 
 export default doubleWalledEspressoGlass01;

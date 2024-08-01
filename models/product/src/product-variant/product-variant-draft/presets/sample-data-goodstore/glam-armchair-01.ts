@@ -36,24 +36,16 @@ const glamArmchair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Nur chemische Reinigung\n- Kissen inklusive',
         'en-US': '- Dry clean only\n- Pillow included',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FECB69', 'de-DE': '#FECB69', 'en-US': '#FECB69' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Gold', 'de-DE': 'Gold', 'en-US': 'Gold' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFD700',
-          label: { 'de-DE': 'Gold', 'en-GB': 'Gold', 'en-US': 'Gold' },
-        }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#FFDF7F', 'de-DE': '#FFDF7F', 'en-US': '#FFDF7F' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Brass', 'de-DE': 'Messing', 'en-US': 'Brass' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Golden Rod:#DAA520',
+        'de-DE': 'Goldene Rute:#DAA520',
+        'en-US': 'Golden Rod:#DAA520',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Gold:#FFD700',
+        'de-DE': 'Gold:#FFD700',
+        'en-US': 'Gold:#FFD700',
+      }),
     ]);
 
 export default glamArmchair01;

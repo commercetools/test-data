@@ -58,21 +58,10 @@ const rusticCountryDresser01 = (): TProductVariantDraftBuilder =>
           '- 3 small drawers and 4 large drawers\n- Nickel drawer handles\n- Assembled on site',
       }),
       AttributeDraft.random().name('finish').value({
-        'en-US': 'lightgrey',
-        'en-GB': '#C1B7A9',
-        'de-DE': 'lightgrey',
+        'en-US': 'Light Gray:#D3D3D3',
+        'en-GB': 'Light Gray:#D3D3D3',
+        'de-DE': 'Hell grau:#D3D3D3',
       }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-US': 'Limed Oak',
-        'en-GB': 'Limed Oak',
-        'de-DE': 'Limed Oak',
-      }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
     ]);
 
 export default rusticCountryDresser01;

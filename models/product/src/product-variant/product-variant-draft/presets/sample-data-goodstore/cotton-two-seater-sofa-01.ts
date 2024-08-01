@@ -43,18 +43,11 @@ const cottonTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFF',
-          label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+        'en-US': 'White:#FFFFFF',
+      }),
     ]);
 
 export default cottonTwoSeaterSofa01;

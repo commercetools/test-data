@@ -36,18 +36,11 @@ const opalKingBed01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Montage inklusive',
         'en-US': '- Assembly included',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#000', 'de-DE': '#000', 'en-US': '#000' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Black', 'de-DE': 'Schwarz', 'en-US': 'Black' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#000',
-          label: { 'de-DE': 'Schwarz', 'en-GB': 'Black', 'en-US': 'Black' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
+      }),
     ]);
 
 export default opalKingBed01;

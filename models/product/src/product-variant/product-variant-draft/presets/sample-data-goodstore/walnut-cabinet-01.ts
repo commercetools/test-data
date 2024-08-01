@@ -54,22 +54,11 @@ const walnutCabinet01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Assembly included in delivery',
         'de-DE': '- Montage im Lieferumfang enthalten',
       }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Walnut', 'de-DE': 'Nussbaum', 'en-US': 'Walnut' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#964B00',
-          label: {
-            'de-DE': 'Dunkelbraun',
-            'en-GB': 'Dark Brown',
-            'en-US': 'Dark Brown',
-          },
-        }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#7A5905', 'en-US': '#7A5905', 'de-DE': '#7A5905' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Brown:#a52a2a',
+        'en-US': 'Brown:#a52a2a',
+        'de-DE': 'Braun:#a52a2a',
+      }),
     ]);
 
 export default walnutCabinet01;

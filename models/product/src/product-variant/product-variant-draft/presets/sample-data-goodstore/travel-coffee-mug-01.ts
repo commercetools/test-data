@@ -37,12 +37,16 @@ const travelCoffeeMug01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Isoliert\n- Sowohl für kalte als auch heiße Getränke geeignet',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+        'en-US': 'White:#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Silver:#C0C0C0',
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+      }),
     ]);
 
 export default travelCoffeeMug01;

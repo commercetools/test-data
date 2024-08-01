@@ -36,6 +36,11 @@ const redModernPainting01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
         'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Red:#ff0000',
+        'de-DE': 'Rot:#ff0000',
+        'en-US': 'Red:#ff0000',
+      }),
     ]);
 
 export default redModernPainting01;

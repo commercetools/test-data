@@ -43,12 +43,11 @@ const modernGlamDresser01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': 'silver', 'en-GB': '#8A8071', 'de-DE': 'silver' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Suede', 'en-GB': 'Suede', 'de-DE': 'Suede' }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Brown:#a52a2a',
+        'en-GB': 'Braun:#a52a2a',
+        'de-DE': 'Brown:#a52a2a',
+      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- 3 large drawers\n- suede  and nickel finish on drawer handles\n- assembly on site',
@@ -57,12 +56,6 @@ const modernGlamDresser01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- 3 large drawers\n- suede  and nickel finish on drawer handles\n- assembly on site',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#C0C0C0',
-          label: { 'de-DE': 'Silber', 'en-GB': 'Silver', 'en-US': 'Silver' },
-        }),
     ]);
 
 export default modernGlamDresser01;

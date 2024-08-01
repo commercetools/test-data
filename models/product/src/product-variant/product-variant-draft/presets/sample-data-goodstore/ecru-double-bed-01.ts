@@ -36,12 +36,11 @@ const ecruDoubleBed01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Mit gepolstertem Kopfteil\n- Montage inklusive',
         'en-US': '- Comes with pillow-top headboard\n- Assembly included',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Gainsboro:#dcdcdc',
+        'de-DE': 'Gainsboro:#dcdcdc',
+        'en-US': 'Gainsboro:#dcdcdc',
+      }),
     ]);
 
 export default ecruDoubleBed01;

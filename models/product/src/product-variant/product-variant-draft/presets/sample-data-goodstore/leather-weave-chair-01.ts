@@ -37,25 +37,17 @@ const leatherWeaveChair01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 3375, h: 4500 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
       AttributeDraft.random().name('new-arrival').value(true),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Oak', 'de-DE': 'Eiche', 'en-US': 'Oak' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Tan', 'de-DE': 'Bräunen', 'en-US': 'Tan' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#BC5724', 'de-DE': '#BC5724', 'en-US': '#BC5724' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#E3AF81', 'de-DE': '#E3AF81', 'en-US': '#E3AF81' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+        'en-US': 'Saddle Brown:#8b4513',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default leatherWeaveChair01;

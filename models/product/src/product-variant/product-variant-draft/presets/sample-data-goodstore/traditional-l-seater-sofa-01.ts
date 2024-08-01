@@ -43,20 +43,17 @@ const traditionalLSeaterSofa01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': '#ebe6e1', 'en-GB': '#ebe6e1', 'de-DE': '#ebe6e1' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Beige', 'en-GB': 'Beige', 'de-DE': 'Beige' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': '#2e2822', 'en-GB': '#2e2822', 'de-DE': '#2e2822' }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-US': 'Espresso',
-        'en-GB': 'Espresso',
-        'de-DE': 'Espresso',
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Beige:#F5F5DC',
+        'en-GB': 'Beige:#F5F5DC',
+        'de-DE': 'Beige:#F5F5DC',
       }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Saddle Brown:#8b4513',
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+      }),
+
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Cotton upholstery\n- Comes with accent pillows\n- Assembly on site',
@@ -65,12 +62,6 @@ const traditionalLSeaterSofa01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Baumwollbezug\n- Wurfkissen um Lieferumfang enthalten\n- Selbstmontage',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
     ]);
 
 export default traditionalLSeaterSofa01;

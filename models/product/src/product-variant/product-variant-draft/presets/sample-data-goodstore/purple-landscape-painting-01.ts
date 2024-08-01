@@ -39,6 +39,11 @@ const purpleLandscapePainting01 = (): TProductVariantDraftBuilder =>
         'en-US':
           '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Purple:#800080',
+        'de-DE': 'Violett:#800080',
+        'en-US': 'Purple:#800080',
+      }),
     ]);
 
 export default purpleLandscapePainting01;
