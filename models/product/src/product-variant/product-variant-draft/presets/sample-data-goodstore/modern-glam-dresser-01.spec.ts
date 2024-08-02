@@ -15,8 +15,8 @@ describe(`with modernGlamDresser01 preset`, () => {
     {
       "name": "color",
       "value": {
-        "de-DE": "Brown:#a52a2a",
-        "en-GB": "Braun:#a52a2a",
+        "de-DE": "Braun:#a52a2a",
+        "en-GB": "Brown:#a52a2a",
         "en-US": "Brown:#a52a2a",
       },
     },
@@ -123,7 +123,7 @@ describe(`with modernGlamDresser01 preset`, () => {
   "attributes": [
     {
       "name": "color",
-      "value": "{"en-US":"Brown:#a52a2a","en-GB":"Braun:#a52a2a","de-DE":"Brown:#a52a2a"}",
+      "value": "{"en-US":"Brown:#a52a2a","en-GB":"Brown:#a52a2a","de-DE":"Braun:#a52a2a"}",
     },
     {
       "name": "productspec",

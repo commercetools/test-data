@@ -45,8 +45,8 @@ const modernGlamDresser01 = (): TProductVariantDraftBuilder =>
     .attributes([
       AttributeDraft.random().name('color').value({
         'en-US': 'Brown:#a52a2a',
-        'en-GB': 'Braun:#a52a2a',
-        'de-DE': 'Brown:#a52a2a',
+        'en-GB': 'Brown:#a52a2a',
+        'de-DE': 'Braun:#a52a2a',
       }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
