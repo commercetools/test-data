@@ -49,18 +49,11 @@ const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
           '- Nur chemische Reinigung\n- Montage im Lieferumfang enthalten',
         'en-US': '- Dry clean only\n- Assembly included in delivery',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Ivory', 'de-DE': 'Elfenbein', 'en-US': 'Ivory' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFF',
-          label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Ivory:#FFFFF0',
+        'de-DE': 'Elfenbein:#FFFFF0',
+        'en-US': 'Ivory:#FFFFF0',
+      }),
     ]);
 
 export default ivoryLoungeChair01;

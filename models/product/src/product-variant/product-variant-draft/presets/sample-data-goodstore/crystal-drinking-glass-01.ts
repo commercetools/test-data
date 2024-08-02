@@ -36,6 +36,11 @@ const crystalDrinkingGlass01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Das Set enthält 6 Gläser',
         'en-US': '- Set includes 6 glasses',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Transparent:transparent',
+        'de-DE': 'Transparent:transparent',
+        'en-US': 'Transparent:transparent',
+      }),
     ]);
 
 export default crystalDrinkingGlass01;

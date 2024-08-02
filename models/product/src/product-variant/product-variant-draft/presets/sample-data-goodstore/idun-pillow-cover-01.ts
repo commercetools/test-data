@@ -49,22 +49,11 @@ const idunPillowCover01 = (): TProductVariantDraftBuilder =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#964B00',
-          label: {
-            'de-DE': 'Dunkelbraun',
-            'en-GB': 'Dark Brown',
-            'en-US': 'Dark Brown',
-          },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#9B614C', 'de-DE': '#9B614C', 'en-US': '#9B614C' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Copper', 'de-DE': 'Kupfer', 'en-US': 'Copper' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Siena:#A0522D',
+        'de-DE': 'Siena:#A0522D',
+        'en-US': 'Siena:#A0522D',
+      }),
     ]);
 
 export default idunPillowCover01;

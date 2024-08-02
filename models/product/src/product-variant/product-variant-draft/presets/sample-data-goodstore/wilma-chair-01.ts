@@ -42,26 +42,16 @@ const wilmaChair01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Cushion covers are removable and machine washable',
         'de-DE': '- Kissenbezüge sind abnehmbar und maschinenwaschbar',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Cream', 'de-DE': 'Creme', 'en-US': 'Cream' }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-GB': 'Black Iron',
-        'de-DE': 'Schwarzes Eisen',
-        'en-US': 'Black Iron',
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Black:#000000',
+        'en-US': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
       }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#000', 'en-US': '#000', 'de-DE': '#000' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#E4DCC1', 'de-DE': '#E4DCC1', 'en-US': '#E4DCC1' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFFFF0',
-          label: { 'de-DE': 'Elfenbein', 'en-GB': 'Ivory', 'en-US': 'Ivory' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Floral White:#FFFAF0',
+        'de-DE': 'Blumen weiß:#FFFAF0',
+        'en-US': 'Floral White:#FFFAF0',
+      }),
     ]);
 
 export default wilmaChair01;

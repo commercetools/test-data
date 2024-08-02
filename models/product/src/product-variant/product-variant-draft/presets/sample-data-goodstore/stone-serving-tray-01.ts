@@ -36,12 +36,11 @@ const stoneServingTray01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Fragile',
         'de-DE': '- Zerbrechlich',
       }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Stone', 'de-DE': 'Stein', 'en-US': 'Stone' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#6B6B6B', 'en-US': '#6B6B6B', 'de-DE': '#6B6B6B' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Dark Slate Grey:#2F4F4F',
+        'en-US': 'Slate Gray:#708090',
+        'de-DE': 'Schiefer grau:#708090',
+      }),
     ]);
 
 export default stoneServingTray01;

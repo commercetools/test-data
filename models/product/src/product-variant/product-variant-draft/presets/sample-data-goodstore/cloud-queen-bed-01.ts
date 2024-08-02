@@ -37,25 +37,16 @@ const cloudQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Light Blue',
-        'de-DE': 'Hellblau',
-        'en-US': 'Light Blue',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Light Blue:#ADD8E6',
+        'de-DE': 'Hell blau:#ADD8E6',
+        'en-US': 'Light Blue:#ADD8E6',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#D4EEF2', 'de-DE': '#D4EEF2', 'en-US': '#D4EEF2' }),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Assembly is included',
         'de-DE': '- Die Montage ist im Preis inbegriffen',
         'en-US': '- Assembly is included',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#0000FF',
-          label: { 'de-DE': 'Blau', 'en-GB': 'Blue', 'en-US': 'Blue' },
-        }),
     ]);
 
 export default cloudQueenBed01;

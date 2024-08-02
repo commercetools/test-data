@@ -42,6 +42,11 @@ const cocktailStrainer01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Edelstahl\n- Spülmaschinenfest',
         'en-US': '- Stainless steel\n- Dishwasher safe',
       }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+        'en-US': 'Silver:#C0C0C0',
+      }),
     ]);
 
 export default cocktailStrainer01;

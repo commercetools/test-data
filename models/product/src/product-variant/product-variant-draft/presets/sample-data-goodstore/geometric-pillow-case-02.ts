@@ -38,14 +38,9 @@ const geometricPillowCase02 = (): TProductVariantDraftBuilder =>
     ])
     .attributes([
       AttributeDraft.random().name('color').value({
-        'en-US': 'lightpink',
-        'en-GB': 'lightpink',
-        'de-DE': 'lightpink',
-      }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-US': 'Salmon Gold',
-        'en-GB': 'Salmon Gold',
-        'de-DE': 'Salmon Gold',
+        'en-US': 'Light Pink:#FFB6C1',
+        'en-GB': 'Light Pink:#FFB6C1',
+        'de-DE': 'Hell rosa:#FFB6C1',
       }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
@@ -55,12 +50,6 @@ const geometricPillowCase02 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFC0CB',
-          label: { 'de-DE': 'Rosa', 'en-GB': 'Pink', 'en-US': 'Pink' },
-        }),
     ]);
 
 export default geometricPillowCase02;

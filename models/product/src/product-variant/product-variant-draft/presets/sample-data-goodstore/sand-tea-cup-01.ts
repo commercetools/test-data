@@ -36,18 +36,11 @@ const sandTeaCup01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Includes 1 mug',
         'de-DE': '- Enthält 1 Tasse',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Sand', 'de-DE': 'Sand', 'en-US': 'Sand' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFDC94', 'de-DE': '#FFDC94', 'en-US': '#FFDC94' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Sand:#C2B280',
+        'de-DE': 'Sand:#C2B280',
+        'en-US': 'Sand:#C2B280',
+      }),
     ]);
 
 export default sandTeaCup01;

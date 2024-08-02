@@ -36,6 +36,11 @@ const rusticBowl01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Includes 1 bowl',
         'de-DE': '- Enthält 1 Schüssel',
       }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Brown:#a52a2a',
+        'de-DE': 'Braun:#a52a2a',
+        'en-US': 'Brown:#a52a2a',
+      }),
     ]);
 
 export default rusticBowl01;

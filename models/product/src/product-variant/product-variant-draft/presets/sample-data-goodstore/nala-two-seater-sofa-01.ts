@@ -37,32 +37,22 @@ const nalaTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 6000, h: 3376 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#5B5858', 'de-DE': '#5B5858', 'en-US': '#5B5858' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#090909', 'de-DE': '#090909', 'en-US': '#090909' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Steel Gray',
-        'de-DE': 'Stahlgrau',
-        'en-US': 'Steel Gray',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Lightslate Gray:#778899',
+        'de-DE': 'Helles Schiefer grau:#778899',
+        'en-US': 'Lightslate Gray:#778899',
       }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Ebony', 'de-DE': 'Ebenholz', 'en-US': 'Ebony' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
+      }),
       AttributeDraft.random().name('new-arrival').value(true),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Two-seater sofa\n- Cotton linen upholstery',
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
     ]);
 
 export default nalaTwoSeaterSofa01;

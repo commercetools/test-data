@@ -31,21 +31,15 @@ const rusticCountryQueenBed01 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5000, h: 5000 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'tan', 'en-GB': 'tan', 'de-DE': 'tan' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Tan', 'en-GB': 'Tan', 'de-DE': 'Bräunen' }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-US': 'Briarsmoke',
-        'en-GB': 'Briarsmoke',
-        'de-DE': 'Briarsmoke',
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Tan:#D2B48C',
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
       }),
       AttributeDraft.random().name('finish').value({
-        'en-US': 'rosybrown',
-        'en-GB': 'rosybrown',
-        'de-DE': 'rosybrown',
+        'en-US': 'Saddle Brown:#8b4513',
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
       }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
@@ -55,12 +49,6 @@ const rusticCountryQueenBed01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Leather upholstery\n- Standard Queen size\n- Assembly on site',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
     ]);
 
 export default rusticCountryQueenBed01;

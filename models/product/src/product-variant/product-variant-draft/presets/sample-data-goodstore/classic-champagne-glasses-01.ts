@@ -55,6 +55,16 @@ const classicChampagneGlasses01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Set aus 5 Gläsern\n- Hochwertiges Glas\n- Zerbrechlich',
       }),
       AttributeDraft.random().name('new-arrival').value(true),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Transparent:transparent',
+        'de-DE': 'Transparent:transparent',
+        'en-US': 'Transparent:transparent',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Glass:transparent',
+        'de-DE': 'Glas:transparent',
+        'en-US': 'Glass:transparent',
+      }),
     ]);
 
 export default classicChampagneGlasses01;

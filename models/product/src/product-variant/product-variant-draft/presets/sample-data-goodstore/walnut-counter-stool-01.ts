@@ -36,22 +36,11 @@ const walnutCounterStool01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Includes 1 stool',
         'de-DE': '- Beinhaltet 1 Hocker',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#964B00',
-          label: {
-            'de-DE': 'Dunkelbraun',
-            'en-GB': 'Dark Brown',
-            'en-US': 'Dark Brown',
-          },
-        }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Walnut', 'de-DE': 'Nussbaum', 'en-US': 'Walnut' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#75412E', 'en-US': '#75412E', 'de-DE': '#75412E' }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Saddle Brown:#8b4513',
+        'en-US': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+      }),
     ]);
 
 export default walnutCounterStool01;

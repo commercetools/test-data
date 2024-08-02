@@ -42,24 +42,16 @@ const canelaThreeSeaterSofa01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Lederpolsterung\n- 3-Sitzer',
         'en-US': '- Leather upholstery \n- 3 seater',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Tan', 'de-DE': 'Bräunen', 'en-US': 'Tan' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#CE9A17', 'de-DE': '#CE9A17', 'en-US': '#CE9A17' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Pine', 'de-DE': 'Kiefer', 'en-US': 'Pine' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#E4B849', 'de-DE': '#E4B849', 'en-US': '#E4B849' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Peru:#CD853F',
+        'de-DE': 'Peru:#CD853F',
+        'en-US': 'Peru:#CD853F',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default canelaThreeSeaterSofa01;

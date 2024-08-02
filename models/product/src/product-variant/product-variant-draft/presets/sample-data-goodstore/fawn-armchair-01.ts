@@ -36,28 +36,16 @@ const fawnArmchair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Leder erfordert besondere Pflege',
         'en-US': '- Leather requires special care',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFF8ED', 'de-DE': '#FFF8ED', 'en-US': '#FFF8ED' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'White Leather',
-        'de-DE': 'Weißes Leder',
-        'en-US': 'White Leather',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
       }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-GB': 'Chestnut',
-        'de-DE': 'Kastanie',
-        'en-US': 'Chestnut',
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
       }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#1B1101', 'de-DE': '#1B1101', 'en-US': '#1B1101' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
     ]);
 
 export default fawnArmchair01;

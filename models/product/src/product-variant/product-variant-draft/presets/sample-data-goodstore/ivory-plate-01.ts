@@ -36,18 +36,11 @@ const ivoryPlate01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Enthält 1 Teller',
         'en-US': '- Includes 1 plate',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFFFF0',
-          label: { 'de-DE': 'Elfenbein', 'en-GB': 'Ivory', 'en-US': 'Ivory' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#F4F3F0', 'de-DE': '#F4F3F0', 'en-US': '#F4F3F0' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Ivory', 'de-DE': 'Elfenbein', 'en-US': 'Ivory' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Ivory:#FFFFF0',
+        'de-DE': 'Elfenbein:#FFFFF0',
+        'en-US': 'Ivory:#FFFFF0',
+      }),
     ]);
 
 export default ivoryPlate01;

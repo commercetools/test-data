@@ -36,24 +36,16 @@ const emeraldVelvetChair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Emerald', 'de-DE': 'Smaragd', 'en-US': 'Emerald' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#219A0E', 'de-DE': '#219A0E', 'en-US': '#219A0E' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Gold', 'de-DE': 'Gold', 'en-US': 'Gold' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#F8EE18', 'de-DE': '#F8EE18', 'en-US': '#F8EE18' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#00FF00',
-          label: { 'de-DE': 'Grün', 'en-GB': 'Green', 'en-US': 'Green' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Green:#008000',
+        'de-DE': 'Grün:#008000',
+        'en-US': 'Green:#008000',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Burlywood:#deb887',
+        'de-DE': 'Burlywood:#deb887',
+        'en-US': 'Burlywood:#deb887',
+      }),
     ]);
 
 export default emeraldVelvetChair01;

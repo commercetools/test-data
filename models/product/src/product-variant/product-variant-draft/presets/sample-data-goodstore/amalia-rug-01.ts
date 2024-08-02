@@ -36,18 +36,11 @@ const amaliaRug01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- 6 Fuß x 6 Fuß',
         'en-US': '- 6ft x 6ft',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFF', 'de-DE': '#FFF', 'en-US': '#FFF' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'White', 'de-DE': 'Weiß', 'en-US': 'White' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFF',
-          label: { 'de-DE': 'Weiss', 'en-GB': 'White', 'en-US': 'White' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+        'en-US': 'White:#FFFFFF',
+      }),
     ]);
 
 export default amaliaRug01;

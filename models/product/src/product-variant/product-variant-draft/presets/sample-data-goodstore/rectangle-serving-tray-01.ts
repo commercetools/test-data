@@ -36,6 +36,11 @@ const rectangleServingTray01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Hand wash only\n- Natural wood',
         'de-DE': '- Handwäsche nur\n- Naturholz',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Brown:#a52a2a',
+        'de-DE': 'Braun:#a52a2a',
+        'en-US': 'Brown:#a52a2a',
+      }),
     ]);
 
 export default rectangleServingTray01;

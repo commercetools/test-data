@@ -52,25 +52,15 @@ const modernUpholsteredTwinBed04 = (): TProductVariantDraftBuilder =>
           '- Cotton upholstery \n- Manufactured wood\n- Twin size\n- Assembled on site',
       }),
       AttributeDraft.random().name('finish').value({
-        'en-US': 'lightslategrey',
-        'en-GB': 'lightslategrey',
-        'de-DE': 'lightslategrey',
+        'en-US': 'Lightslate Gray:#778899',
+        'en-GB': 'Lightslate Grey:#778899',
+        'de-DE': 'Helles Schiefer grau:#778899',
       }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Oak', 'en-GB': 'Oak', 'de-DE': 'Oak' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Tan', 'en-GB': 'Tan', 'de-DE': 'Tan' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'tan', 'en-GB': 'tan', 'de-DE': 'tan' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Tan:#D2B48C',
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+      }),
     ]);
 
 export default modernUpholsteredTwinBed04;

@@ -54,23 +54,16 @@ const modernUpholsteredTwinBed03 = (): TProductVariantDraftBuilder =>
       AttributeDraft.random()
         .name('finishlabel')
         .value({ 'en-US': 'Oak', 'en-GB': 'Oak', 'de-DE': 'Oak' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': 'grey', 'en-GB': 'grey', 'de-DE': 'grey' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Grey', 'en-GB': 'Grey', 'de-DE': 'Grey' }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'lightslategrey',
-        'en-GB': 'lightslategrey',
-        'de-DE': 'lightslategrey',
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Gray:#808080',
+        'en-GB': 'Grey:#808080',
+        'de-DE': 'Grau:#808080',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Lightslate Gray:#778899',
+        'en-GB': 'Lightslate Grey:#778899',
+        'de-DE': 'Helles Schiefer grau:#778899',
+      }),
     ]);
 
 export default modernUpholsteredTwinBed03;

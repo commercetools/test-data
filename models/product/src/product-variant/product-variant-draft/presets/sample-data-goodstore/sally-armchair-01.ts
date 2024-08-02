@@ -36,26 +36,16 @@ const sallyArmchair01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Comes with matching throw pillow',
         'de-DE': '- Wird mit passendem Dekokissen geliefert',
       }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Baby Pink',
-        'de-DE': 'Baby Pink',
-        'en-US': 'Baby Pink',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Pink:#FFC0CB',
+        'de-DE': 'Rosa:#FFC0CB',
+        'en-US': 'Pink:#FFC0CB',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#FFE0E0', 'de-DE': '#FFE0E0', 'en-US': '#FFE0E0' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Cedar', 'de-DE': 'Zeder', 'en-US': 'Cedar' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#FAE7C6', 'en-US': '#FAE7C6', 'de-DE': '#FAE7C6' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFC0CB',
-          label: { 'de-DE': 'Rosa', 'en-GB': 'Pink', 'en-US': 'Pink' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Beige:#F5F5DC',
+        'en-US': 'Beige:#F5F5DC',
+        'de-DE': 'Beige:#F5F5DC',
+      }),
     ]);
 
 export default sallyArmchair01;

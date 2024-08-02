@@ -45,6 +45,11 @@ const cocktailShaker01 = (): TProductVariantDraftBuilder =>
         'en-US':
           '- Includes built in strainer\n- Stainless steel\n- Dishwasher safe',
       }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+        'en-US': 'Silver:#C0C0C0',
+      }),
     ]);
 
 export default cocktailShaker01;

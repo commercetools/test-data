@@ -48,20 +48,11 @@ const naturaRug01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- 6 Fuß x 6 Fuß',
         'en-US': '- 6ft x 6ft',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
       AttributeDraft.random().name('color').value({
-        'en-GB': '#F7ECD9 ',
-        'de-DE': '#F7ECD9 ',
-        'en-US': '#F7ECD9 ',
+        'en-GB': 'Beige:#F5F5DC',
+        'de-DE': 'Beige:#F5F5DC',
+        'en-US': 'Beige:#F5F5DC',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Beige', 'de-DE': 'Beige', 'en-US': 'Beige' }),
     ]);
 
 export default naturaRug01;

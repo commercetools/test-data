@@ -37,20 +37,11 @@ const cocoaPillowCover01 = (): TProductVariantDraftBuilder =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
       AttributeDraft.random().name('color').value({
-        'en-GB': '#A1947C ',
-        'de-DE': '#A1947C ',
-        'en-US': '#A1947C ',
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
       }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Tweed', 'de-DE': 'Tweed', 'en-US': 'Tweed' }),
     ]);
 
 export default cocoaPillowCover01;

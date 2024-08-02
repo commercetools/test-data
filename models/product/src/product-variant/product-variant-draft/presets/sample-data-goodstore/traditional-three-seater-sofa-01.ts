@@ -48,26 +48,16 @@ const traditionalThreeSeaterSofa01 = (): TProductVariantDraftBuilder =>
         'en-GB': '- Three seater sofa\n- Velvet upholstery\n- Assembly on site',
         'de-DE': '- Dreisitzer\n- Samtbezug\n- Selbstmontage',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': '#09331c', 'en-GB': '#09331c', 'de-DE': '#09331c' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-US': 'Emerald', 'en-GB': 'Emerald', 'de-DE': 'Emerald' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': '#202120', 'en-GB': '#202120', 'de-DE': '#202120' }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-US': 'Espresso',
-        'en-GB': 'Espresso',
-        'de-DE': 'Espresso',
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Medium Sea Green:#3CB371',
+        'en-GB': 'Medium Sea Green:#3CB371',
+        'de-DE': 'Mittel meer grün:#3CB371',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#00FF00',
-          label: { 'de-DE': 'Grün', 'en-GB': 'Green', 'en-US': 'Green' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Saddle Brown:#8b4513',
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+      }),
     ]);
 
 export default traditionalThreeSeaterSofa01;

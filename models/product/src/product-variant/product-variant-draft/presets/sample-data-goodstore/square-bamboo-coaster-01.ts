@@ -37,12 +37,11 @@ const squareBambooCoaster01 = (): TProductVariantDraftBuilder =>
         'de-DE':
           '- Mit einem feuchten Tuch abwischen\n- Das Set enthält 4 Untersetzer',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Wheat:#f5deb3',
+        'de-DE': 'Weizen:#f5deb3',
+        'en-US': 'Wheat:#f5deb3',
+      }),
     ]);
 
 export default squareBambooCoaster01;

@@ -37,19 +37,13 @@ const patternedPillowCover02 = (): TProductVariantDraftBuilder =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#0f0f0f', 'de-DE': '#0f0f0f', 'en-US': '#0f0f0f' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Black', 'de-DE': 'Schwarz', 'en-US': 'Black' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Black:#000000',
+        'de-DE': 'Schwarz:#000000',
+        'en-US': 'Black:#000000',
+      }),
+
       AttributeDraft.random().name('new-arrival').value(false),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#000',
-          label: { 'de-DE': 'Schwarz', 'en-GB': 'Black', 'en-US': 'Black' },
-        }),
     ]);
 
 export default patternedPillowCover02;

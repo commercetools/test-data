@@ -31,31 +31,21 @@ const minimalistModernSideTable02 = (): TProductVariantDraftBuilder =>
         .dimensions({ w: 5883, h: 6026 }),
     ])
     .attributes([
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-US': 'Walnut', 'en-GB': 'Walnut', 'de-DE': 'Walnut' }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-US': '#d69169', 'en-GB': '#d69169', 'de-DE': '#d69169' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-US': 'Golden Pecan',
-        'en-GB': 'Golden Pecan',
-        'de-DE': 'Golden Pecan',
+      AttributeDraft.random().name('color').value({
+        'en-US': 'Golden Rod:#DAA520',
+        'en-GB': 'Goldene Rute:#DAA520',
+        'de-DE': 'Golden Rod:#DAA520',
       }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-US': '#d69169', 'en-GB': '#d69169', 'de-DE': '#d69169' }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Saddle Brown:#8b4513',
+        'en-GB': 'Sattel braun:#8b4513',
+        'de-DE': 'Saddle Brown:#8b4513',
+      }),
       AttributeDraft.random().name('productspec').value({
         'en-US': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
         'en-GB': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
         'de-DE': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#D2B48C',
-          label: { 'de-DE': 'Bräunen', 'en-GB': 'Tan', 'en-US': 'Tan' },
-        }),
     ]);
 
 export default minimalistModernSideTable02;

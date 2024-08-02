@@ -36,20 +36,11 @@ const meadowRug03 = (): TProductVariantDraftBuilder =>
         'de-DE': '- 3 Fuß x 5 Fuß',
         'en-US': '- 3ft x 5ft',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#bed1e8', 'de-DE': '#bed1e8', 'en-US': '#bed1e8' }),
-      AttributeDraft.random().name('colorlabel').value({
-        'en-GB': 'Robbin Blue',
-        'de-DE': 'Robbin Blue',
-        'en-US': 'Robbin Blue',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Sky Blue:#87CEEB',
+        'de-DE': 'Himmel blau:#87CEEB',
+        'en-US': 'Sky Blue:#87CEEB',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#0000FF',
-          label: { 'de-DE': 'Blau', 'en-GB': 'Blue', 'en-US': 'Blue' },
-        }),
     ]);
 
 export default meadowRug03;

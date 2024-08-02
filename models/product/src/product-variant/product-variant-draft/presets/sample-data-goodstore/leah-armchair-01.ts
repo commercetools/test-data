@@ -36,24 +36,16 @@ const leahArmchair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#AAAAAA', 'de-DE': '#AAAAAA', 'en-US': '#AAAAAA' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Gray', 'de-DE': 'Grau', 'en-US': 'Gray' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Brass', 'de-DE': 'Messing', 'en-US': 'Brass' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#E9C55A', 'de-DE': '#E9C55A', 'en-US': '#E9C55A' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Grey:#808080',
+        'de-DE': 'Grau:#808080',
+        'en-US': 'Gray:#808080',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
+      }),
     ]);
 
 export default leahArmchair01;

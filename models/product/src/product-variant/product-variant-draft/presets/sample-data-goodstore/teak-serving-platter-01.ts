@@ -36,6 +36,11 @@ const teakServingPlatter01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Made of natural teak\n- Hand wash only',
         'de-DE': '- Hergestellt aus natürlichem Teakholz\n- Handwäsche nur',
       }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Brown:#a52a2a',
+        'de-DE': 'Braun:#a52a2a',
+        'en-US': 'Brown:#a52a2a',
+      }),
     ]);
 
 export default teakServingPlatter01;

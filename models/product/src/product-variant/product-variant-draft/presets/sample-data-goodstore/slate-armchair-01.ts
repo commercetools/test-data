@@ -42,12 +42,11 @@ const slateArmchair01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Includes ottoman',
         'de-DE': '- Inklusive Ottomane',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#989898', 'de-DE': '#989898', 'en-US': '#989898' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Slate', 'de-DE': 'Schiefer', 'en-US': 'Slate' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Dark Slate Grey:#2F4F4F',
+        'de-DE': 'Schiefer grau:#708090',
+        'en-US': 'Slate Gray:#708090',
+      }),
     ]);
 
 export default slateArmchair01;

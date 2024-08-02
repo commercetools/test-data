@@ -48,20 +48,16 @@ const entrywayCloset01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Montage im Lieferumfang enthalten',
         'en-US': '- Assembly included in delivery',
       }),
-      AttributeDraft.random().name('finishlabel').value({
-        'en-GB': 'White Oak',
-        'de-DE': 'weiße Eiche',
-        'en-US': 'White Oak',
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Tan:#D2B48C',
+        'de-DE': 'Bräunen:#D2B48C',
+        'en-US': 'Tan:#D2B48C',
       }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#EFDBB4', 'de-DE': '#EFDBB4', 'en-US': '#EFDBB4' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Burlywood:#deb887',
+        'de-DE': 'Burlywood:#deb887',
+        'en-US': 'Burlywood:#deb887',
+      }),
     ]);
 
 export default entrywayCloset01;

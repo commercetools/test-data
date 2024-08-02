@@ -9,198 +9,171 @@ describe(`with modernBookcase01 preset`, () => {
     const modernBookcase01Preset =
       modernBookcase01().build<TProductVariantDraft>();
     expect(modernBookcase01Preset).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "attributes": [
-          {
-            "name": "productspec",
-            "value": {
-              "de-DE": "- Montage im Lieferumfang enthalten",
-              "en-GB": "- Assembly included in delivery",
-              "en-US": "- Assembly included in delivery",
-            },
-          },
-          {
-            "name": "color-filter",
-            "value": {
-              "key": "#D2B48C",
-              "label": {
-                "de-DE": "Bräunen",
-                "en-GB": "Tan",
-                "en-US": "Tan",
-              },
-            },
-          },
-          {
-            "name": "finishlabel",
-            "value": {
-              "de-DE": "Nussbaum",
-              "en-GB": "Walnut",
-              "en-US": "Walnut",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "#9C5933",
-              "en-GB": "#9C5933",
-              "en-US": "#9C5933",
-            },
-          },
-        ],
-        "images": [
-          {
-            "dimensions": {
-              "h": 4600,
-              "w": 2760,
-            },
-            "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Bookcase-1.1.jpeg",
-          },
-        ],
-        "key": undefined,
-        "prices": [
-          {
-            "channel": undefined,
-            "country": "DE",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centAmount": 29900,
-              "currencyCode": "EUR",
-            },
-          },
-          {
-            "channel": undefined,
-            "country": "GB",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centAmount": 29900,
-              "currencyCode": "GBP",
-            },
-          },
-          {
-            "channel": undefined,
-            "country": "US",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centAmount": 29900,
-              "currencyCode": "USD",
-            },
-          },
-        ],
-        "sku": "MB-0973",
-      }
-    `);
+{
+  "assets": undefined,
+  "attributes": [
+    {
+      "name": "productspec",
+      "value": {
+        "de-DE": "- Montage im Lieferumfang enthalten",
+        "en-GB": "- Assembly included in delivery",
+        "en-US": "- Assembly included in delivery",
+      },
+    },
+    {
+      "name": "finish",
+      "value": {
+        "de-DE": "Sattel braun:#8b4513",
+        "en-GB": "Saddle Brown:#8b4513",
+        "en-US": "Saddle Brown:#8b4513",
+      },
+    },
+  ],
+  "images": [
+    {
+      "dimensions": {
+        "h": 4600,
+        "w": 2760,
+      },
+      "label": undefined,
+      "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Bookcase-1.1.jpeg",
+    },
+  ],
+  "key": undefined,
+  "prices": [
+    {
+      "channel": undefined,
+      "country": "DE",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centAmount": 29900,
+        "currencyCode": "EUR",
+      },
+    },
+    {
+      "channel": undefined,
+      "country": "GB",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centAmount": 29900,
+        "currencyCode": "GBP",
+      },
+    },
+    {
+      "channel": undefined,
+      "country": "US",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centAmount": 29900,
+        "currencyCode": "USD",
+      },
+    },
+  ],
+  "sku": "MB-0973",
+}
+`);
   });
 
   it(`should return a modernBookcase01 preset when built for graphql`, () => {
     const modernBookcase01PresetGraphql =
       modernBookcase01().buildGraphql<TProductVariantDraftGraphql>();
     expect(modernBookcase01PresetGraphql).toMatchInlineSnapshot(`
-      {
-        "assets": undefined,
-        "attributes": [
-          {
-            "name": "productspec",
-            "value": "{"en-GB":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten","en-US":"- Assembly included in delivery"}",
-          },
-          {
-            "name": "color-filter",
-            "value": "{"key":"#D2B48C","label":{"de-DE":"Bräunen","en-GB":"Tan","en-US":"Tan"}}",
-          },
-          {
-            "name": "finishlabel",
-            "value": "{"en-GB":"Walnut","de-DE":"Nussbaum","en-US":"Walnut"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-GB":"#9C5933","de-DE":"#9C5933","en-US":"#9C5933"}",
-          },
-        ],
-        "images": [
-          {
-            "dimensions": {
-              "height": 4600,
-              "width": 2760,
-            },
-            "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Bookcase-1.1.jpeg",
-          },
-        ],
-        "key": undefined,
-        "prices": [
-          {
-            "channel": undefined,
-            "country": "DE",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centPrecision": {
-                "centAmount": 29900,
-                "currencyCode": "EUR",
-              },
-            },
-          },
-          {
-            "channel": undefined,
-            "country": "GB",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centPrecision": {
-                "centAmount": 29900,
-                "currencyCode": "GBP",
-              },
-            },
-          },
-          {
-            "channel": undefined,
-            "country": "US",
-            "custom": undefined,
-            "customerGroup": undefined,
-            "discounted": undefined,
-            "key": undefined,
-            "tiers": undefined,
-            "validFrom": undefined,
-            "validUntil": undefined,
-            "value": {
-              "centPrecision": {
-                "centAmount": 29900,
-                "currencyCode": "USD",
-              },
-            },
-          },
-        ],
-        "sku": "MB-0973",
-      }
-    `);
+{
+  "assets": undefined,
+  "attributes": [
+    {
+      "name": "productspec",
+      "value": "{"en-GB":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten","en-US":"- Assembly included in delivery"}",
+    },
+    {
+      "name": "finish",
+      "value": "{"en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513","en-US":"Saddle Brown:#8b4513"}",
+    },
+  ],
+  "images": [
+    {
+      "dimensions": {
+        "height": 4600,
+        "width": 2760,
+      },
+      "label": undefined,
+      "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/goodstore/Modern_Bookcase-1.1.jpeg",
+    },
+  ],
+  "key": undefined,
+  "prices": [
+    {
+      "channel": undefined,
+      "country": "DE",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centPrecision": {
+          "centAmount": 29900,
+          "currencyCode": "EUR",
+        },
+      },
+    },
+    {
+      "channel": undefined,
+      "country": "GB",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centPrecision": {
+          "centAmount": 29900,
+          "currencyCode": "GBP",
+        },
+      },
+    },
+    {
+      "channel": undefined,
+      "country": "US",
+      "custom": undefined,
+      "customerGroup": undefined,
+      "discounted": undefined,
+      "key": undefined,
+      "tiers": undefined,
+      "validFrom": undefined,
+      "validUntil": undefined,
+      "value": {
+        "centPrecision": {
+          "centAmount": 29900,
+          "currencyCode": "USD",
+        },
+      },
+    },
+  ],
+  "sku": "MB-0973",
+}
+`);
   });
 });

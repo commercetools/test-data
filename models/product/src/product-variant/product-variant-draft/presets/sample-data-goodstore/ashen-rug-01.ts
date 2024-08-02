@@ -42,18 +42,11 @@ const ashenRug01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- 5 Fuß x 7 Fuß\n- Nur chemische Reinigung',
         'en-US': '- 5ft x 7ft\n- Dry-clean only',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: { 'de-DE': 'Grau', 'en-GB': 'Gray', 'en-US': 'Gray' },
-        }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#E3E4E4', 'de-DE': '#E3E4E4', 'en-US': '#E3E4E4' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Ashen', 'de-DE': 'Aschfahl', 'en-US': 'Ashen' }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Gainsboro:#dcdcdc',
+        'de-DE': 'Gainsboro:#dcdcdc',
+        'en-US': 'Gainsboro:#dcdcdc',
+      }),
     ]);
 
 export default ashenRug01;

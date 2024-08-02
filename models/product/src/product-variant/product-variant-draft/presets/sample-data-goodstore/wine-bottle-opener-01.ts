@@ -36,12 +36,16 @@ const wineBottleOpener01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Stainless steel',
         'de-DE': '- Edelstahl',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#C0C0C0',
-          label: { 'de-DE': 'Silber', 'en-GB': 'Silver', 'en-US': 'Silver' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-US': 'White:#FFFFFF',
+        'en-GB': 'White:#FFFFFF',
+        'de-DE': 'Weiß:#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-US': 'Silver:#C0C0C0',
+        'en-GB': 'Silver:#C0C0C0',
+        'de-DE': 'Silber:#C0C0C0',
+      }),
     ]);
 
 export default wineBottleOpener01;

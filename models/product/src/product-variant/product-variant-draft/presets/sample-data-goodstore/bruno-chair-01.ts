@@ -36,24 +36,16 @@ const brunoChair01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random()
-        .name('color')
-        .value({ 'en-GB': '#B29880', 'de-DE': '#B29880', 'en-US': '#B29880' }),
-      AttributeDraft.random()
-        .name('colorlabel')
-        .value({ 'en-GB': 'Beige', 'de-DE': 'Beige', 'en-US': 'Beige' }),
-      AttributeDraft.random()
-        .name('finishlabel')
-        .value({ 'en-GB': 'Birch', 'de-DE': 'Birke', 'en-US': 'Birch' }),
-      AttributeDraft.random()
-        .name('finish')
-        .value({ 'en-GB': '#FFC28D', 'de-DE': '#FFC28D', 'en-US': '#FFC28D' }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#F5F5DC',
-          label: { 'de-DE': 'Beige', 'en-GB': 'Beige', 'en-US': 'Beige' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Royal Blue:#4169E1',
+        'de-DE': 'Königs blau:#4169E1',
+        'en-US': 'Royal Blue:#4169E1',
+      }),
+      AttributeDraft.random().name('finish').value({
+        'en-GB': 'Saddle Brown:#8b4513',
+        'de-DE': 'Sattel braun:#8b4513',
+        'en-US': 'Saddle Brown:#8b4513',
+      }),
     ]);
 
 export default brunoChair01;

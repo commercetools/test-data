@@ -36,12 +36,11 @@ const marquisTray01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Enthält 1 Tablett',
         'en-US': '- Includes 1 tray',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#FFA500',
-          label: { 'de-DE': 'Orange', 'en-GB': 'Orange', 'en-US': 'Orange' },
-        }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Golden Rod:#DAA520',
+        'de-DE': 'Goldene Rute:#DAA520',
+        'en-US': 'Golden Rod:#DAA520',
+      }),
     ]);
 
 export default marquisTray01;
