@@ -43,13 +43,17 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'enum',
-        values: expect.arrayContaining([
-          expect.objectContaining({
-            key: expect.any(String),
-            label: expect.any(String),
-          }),
-        ]),
-        __typename: 'EnumAttributionDefinitionType',
+        values: expect.objectContaining({
+          results: [
+            expect.objectContaining({
+              key: expect.any(String),
+              label: expect.any(String),
+              __typename: 'PlainEnumValue',
+            }),
+          ],
+          __typename: 'PlainEnumValueResult',
+        }),
+        __typename: 'EnumAttributeDefinitionType',
       })
     )
   );
