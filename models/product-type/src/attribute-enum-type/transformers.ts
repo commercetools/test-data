@@ -1,4 +1,4 @@
-import { Transformer } from '@commercetools-test-data/core';
+import { Transformer, buildField } from '@commercetools-test-data/core';
 import { TAttributeEnumTypeGraphql, TAttributeEnumType } from './types';
 
 const transformers = {
@@ -11,9 +11,13 @@ const transformers = {
   graphql: Transformer<TAttributeEnumType, TAttributeEnumTypeGraphql>(
     'graphql',
     {
-      buildFields: ['values'],
-      addFields: ({ fields }) => ({
-        __typename: 'EnumAttributionDefinitionType',
+      replaceFields: ({ fields }) => ({
+        ...fields,
+        values: {
+          results: fields.values.map((value) => buildField(value, 'graphql')),
+          __typename: 'PlainEnumValueResult',
+        },
+        __typename: 'EnumAttributeDefinitionType',
       }),
     }
   ),

@@ -1,17 +1,22 @@
-import type {
-  AttributeEnumType,
-  AttributePlainEnumValue,
-} from '@commercetools/platform-sdk';
+import type { AttributeEnumType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  TAttributePlainEnumValueDraftGraphql,
+  TAttributePlainEnumValue,
+} from '../attribute-plain-enum-value';
 
 export type TAttributeEnumType = AttributeEnumType;
 export type TAttributeEnumTypeDraft = AttributeEnumType;
 
-export type TAttributeEnumTypeGraphql = AttributeEnumType & {
-  __typename: 'EnumAttributionDefinitionType';
+export type TAttributeEnumTypeGraphql = Omit<TAttributeEnumType, 'values'> & {
+  values: {
+    results: Array<TAttributePlainEnumValue>;
+    __typename: 'PlainEnumValueResult';
+  };
+  __typename: 'EnumAttributeDefinitionType';
 };
 export type TAttributeEnumTypeDraftGraphql = {
-  enum: { values: Array<AttributePlainEnumValue> };
+  enum: { values: Array<TAttributePlainEnumValueDraftGraphql> };
 };
 
 export type TAttributeEnumTypeBuilder = TBuilder<TAttributeEnumType>;
