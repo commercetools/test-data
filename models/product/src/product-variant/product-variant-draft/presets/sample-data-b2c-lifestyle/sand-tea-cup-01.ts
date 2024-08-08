@@ -1,0 +1,46 @@
+import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
+import { AttributeDraft } from '../../../../attribute';
+import { ImageDraft } from '../../../../image';
+import type { TProductVariantDraftBuilder } from '../../../types';
+import * as ProductVariantDraft from '../../index';
+
+const sandTeaCup01 = (): TProductVariantDraftBuilder =>
+  ProductVariantDraft.presets
+    .empty()
+    .sku('STM-09')
+    .prices([
+      PriceDraft.presets
+        .empty()
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(299))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .value(MoneyDraft.random().currencyCode('GBP').centAmount(299))
+        .country('GB'),
+      PriceDraft.presets
+        .empty()
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(299))
+        .country('US'),
+    ])
+    .images([
+      ImageDraft.presets
+        .empty()
+        .url(
+          'https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sand_Tea_Cup-1.1.jpeg'
+        )
+        .dimensions({ w: 6046, h: 4020 }),
+    ])
+    .attributes([
+      AttributeDraft.random().name('productspec').value({
+        'en-GB': '- Includes 1 mug',
+        'en-US': '- Includes 1 mug',
+        'de-DE': '- Enthält 1 Tasse',
+      }),
+      AttributeDraft.random().name('color').value({
+        'en-GB': 'Sand:#C2B280',
+        'de-DE': 'Sand:#C2B280',
+        'en-US': 'Sand:#C2B280',
+      }),
+    ]);
+
+export default sandTeaCup01;

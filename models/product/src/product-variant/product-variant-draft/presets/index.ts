@@ -1,7 +1,7 @@
 import empty from './empty';
 import sampleDataB2B from './sample-data-b2b';
+import sampleDataB2CLifestyle from './sample-data-b2c-lifestyle';
 import sampleDataFashion from './sample-data-fashion';
-import sampleDataGoodStore from './sample-data-goodstore';
 import withOneImage from './with-one-image';
 import withPrices from './with-prices';
 import withTwoImages from './with-two-images';
@@ -12,8 +12,8 @@ const presets = {
   withTwoImages,
   empty,
   sampleDataB2B,
+  sampleDataB2CLifestyle,
   sampleDataFashion,
-  sampleDataGoodStore,
 };
 
 export default presets;
