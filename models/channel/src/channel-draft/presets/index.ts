@@ -1,7 +1,7 @@
 import empty from './empty';
 import sampleDataB2B from './sample-data-b2b';
+import sampleDataB2CLifestyle from './sample-data-b2c-lifestyle';
 import sampleDataFashion from './sample-data-fashion';
-import sampleDataGoodStore from './sample-data-goodstore';
 import withGeoLocationOnly from './with-geolocation-only';
 import withInventorySupplyAndProductDistributionRoles from './with-inventory-supply-and-product-distribution-roles';
 import withInventorySupplyAndProductDistributionRolesNoAddress from './with-inventory-supply-and-product-distribution-roles-no-address';
@@ -12,6 +12,7 @@ import withProductDistributionRole from './with-product-distribution-role';
 const presets = {
   empty,
   sampleDataB2B,
+  sampleDataB2CLifestyle,
   sampleDataFashion,
   withProductDistributionRole,
   withInventorySupplyRole,
@@ -19,7 +20,6 @@ const presets = {
   withInventorySupplyAndProductDistributionRoles,
   withInventorySupplyAndProductDistributionRolesNoAddress,
   withGeoLocationOnly,
-  sampleDataGoodStore,
 };
 
 export default presets;
