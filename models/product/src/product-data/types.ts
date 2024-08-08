@@ -13,7 +13,7 @@ import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-da
 // The base generator model. Consumers configure these fields.
 export type TProductData = Omit<ProductData, 'categories'> & {
   categories: Array<Category>;
-  searchKeyword?: Array<SearchKeyword> | null;
+  searchKeyword?: Array<SearchKeyword>;
   allVariants: Array<ProductVariant>;
   variant: ProductVariant;
   skus: Array<String>;

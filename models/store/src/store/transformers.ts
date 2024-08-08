@@ -2,25 +2,21 @@ import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TStore, TStoreGraphql } from './types';
 
+const buildFields: Array<keyof TStore> = [
+  'name',
+  'createdBy',
+  'distributionChannels',
+  'lastModifiedBy',
+  'supplyChannels',
+];
+
 const transformers = {
   default: Transformer<TStore, TStore>('default', {
-    buildFields: [
-      'name',
-      'createdBy',
-      'distributionChannels',
-      'lastModifiedBy',
-      'supplyChannels',
-    ],
+    buildFields,
   }),
 
   rest: Transformer<TStore, TStore>('rest', {
-    buildFields: [
-      'name',
-      'createdBy',
-      'distributionChannels',
-      'lastModifiedBy',
-      'supplyChannels',
-    ],
+    buildFields,
     replaceFields: ({ fields }) => ({
       ...fields,
       distributionChannels: [
@@ -33,13 +29,7 @@ const transformers = {
   }),
 
   graphql: Transformer<TStore, TStoreGraphql>('graphql', {
-    buildFields: [
-      'name',
-      'createdBy',
-      'distributionChannels',
-      'lastModifiedBy',
-      'supplyChannels',
-    ],
+    buildFields,
     addFields: ({ fields }) => ({
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),
       distributionChannelsRef: fields.distributionChannels

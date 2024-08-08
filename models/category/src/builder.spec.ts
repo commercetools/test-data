@@ -66,6 +66,23 @@ describe('builder', () => {
       Category.random().name(LocalizedString.random().en('Pants').de('Hosen')),
       expect.objectContaining({
         __typename: 'Category',
+        name: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'de',
+            value: 'Hosen',
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'en',
+            value: 'Pants',
+          }),
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+            locale: 'fr',
+            value: expect.any(String),
+          }),
+        ]),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',
