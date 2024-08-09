@@ -1,5 +1,39 @@
 # @commercetools-test-data/product
 
+## 10.0.0
+
+### Major Changes
+
+- [#628](https://github.com/commercetools/test-data/pull/628) [`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Renamed GoodStore dataset to B2C Lifestyle to support Foundry.
+
+  This breaking change updates the export method for GoodStore, now B2C Lifestyle, presets. Presets that use this dataset are also updated.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Replace any instance of `<Entity>.presets.sampleDataGoodStore.<preset-name>()` with `<Entity>.presets.sampleDataB2CLifestyle.<preset-name>()`
+
+### Minor Changes
+
+- [#623](https://github.com/commercetools/test-data/pull/623) [`827861f`](https://github.com/commercetools/test-data/commit/827861fe7d04e297cfed09efd4646659f8e260d1) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Update B2C sample data to support Foundry.
+
+### Patch Changes
+
+- [#627](https://github.com/commercetools/test-data/pull/627) [`29ab14e`](https://github.com/commercetools/test-data/commit/29ab14e9c41e72fe5ca556a59dc407ca823d15dd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed `ProductVariant` model presets as they were using invalid values to populate the `attributes` property.
+
+  Fixed a couple of issues with the `Product` model:
+
+  - `searchKeywords` attribute was initialized as `null` where it needs to be an empty array.
+  - `masterVariant` attribute was not set as _buildable_ in the graphql transformer.
+
+- Updated dependencies [[`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655), [`6008d5e`](https://github.com/commercetools/test-data/commit/6008d5e75213c3eb775a4f7396c7ad604ec23208), [`827861f`](https://github.com/commercetools/test-data/commit/827861fe7d04e297cfed09efd4646659f8e260d1), [`29ab14e`](https://github.com/commercetools/test-data/commit/29ab14e9c41e72fe5ca556a59dc407ca823d15dd)]:
+  - @commercetools-test-data/product-type@10.0.0
+  - @commercetools-test-data/tax-category@10.0.0
+  - @commercetools-test-data/category@10.0.0
+  - @commercetools-test-data/channel@10.0.0
+  - @commercetools-test-data/commons@10.0.0
+  - @commercetools-test-data/core@10.0.0
+  - @commercetools-test-data/utils@10.0.0
+
 ## 9.0.7
 
 ### Patch Changes
