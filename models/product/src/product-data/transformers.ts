@@ -59,7 +59,7 @@ const transformers = {
     },
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
-    buildFields: ['categories'],
+    buildFields: ['categories', 'masterVariant'],
     replaceFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(

@@ -38,7 +38,7 @@ describe('builder', () => {
         variant: null,
         variants: expect.arrayContaining([]),
         allVariants: expect.arrayContaining([]),
-        searchKeywords: null,
+        searchKeywords: expect.arrayContaining([]),
         searchKeyword: expect.arrayContaining([]),
         categoryOrderHints: expect.any(Object),
       })

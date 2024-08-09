@@ -26,7 +26,7 @@ const generator = Generator<TStore>({
     key: fake((f) => f.lorem.slug()),
     name: fake(() => LocalizedString.random()),
     languages: [oneOf('en-US', 'de-DE', 'es-ES')],
-    countries: [fake((f) => f.location.countryCode())],
+    countries: [fake((f) => ({ code: f.location.countryCode() }))],
     distributionChannels: [fake(() => Channel.random())],
     supplyChannels: [fake(() => Channel.random())],
     productSelections: [],

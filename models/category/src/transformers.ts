@@ -2,52 +2,30 @@ import { LocalizedString } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TCategory, TCategoryGraphql } from './types';
 
+const buildFields: Array<keyof TCategory> = [
+  'createdBy',
+  'lastModifiedBy',
+  'name',
+  'slug',
+  'description',
+  'ancestors',
+  'parent',
+  'metaTitle',
+  'metaDescription',
+  'metaKeywords',
+  'custom',
+  'assets',
+];
+
 const transformers = {
   default: Transformer<TCategory, TCategory>('default', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'name',
-      'slug',
-      'description',
-      'ancestors',
-      'parent',
-      'metaTitle',
-      'metaDescription',
-      'metaKeywords',
-      'custom',
-      'assets',
-    ],
+    buildFields,
   }),
   rest: Transformer<TCategory, TCategory>('rest', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'name',
-      'slug',
-      'description',
-      'ancestors',
-      'parent',
-      'metaTitle',
-      'metaDescription',
-      'metaKeywords',
-      'custom',
-      'assets',
-    ],
+    buildFields,
   }),
   graphql: Transformer<TCategory, TCategoryGraphql>('graphql', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'slug',
-      'ancestors',
-      'parent',
-      'metaTitle',
-      'metaDescription',
-      'metaKeywords',
-      'custom',
-      'assets',
-    ],
+    buildFields,
     addFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(

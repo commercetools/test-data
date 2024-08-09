@@ -26,7 +26,7 @@ const generator = Generator<TProductData>({
     // TODO: Include random ProductVariant[] when available
     allVariants: [],
     // TODO: Include random SearchKeywords when available
-    searchKeywords: null,
+    searchKeywords: [],
     // TODO: Include random SearchKeywords[] when available
     searchKeyword: [],
     skus: fake((f) => [`${f.lorem.word()}-${f.string.alphanumeric(3)}`]),
