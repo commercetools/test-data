@@ -59,7 +59,13 @@ const transformers = {
     },
   }),
   graphql: Transformer<TProductData, TProductDataGraphql>('graphql', {
-    buildFields: ['categories', 'masterVariant'],
+    buildFields: [
+      'categories',
+      'masterVariant',
+      'variant',
+      'variants',
+      'allVariants',
+    ],
     replaceFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(
@@ -95,11 +101,24 @@ const transformers = {
 
       return {
         ...fields,
+        name: LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales)!,
         nameAllLocales,
+        description: LocalizedString.resolveGraphqlDefaultLocaleValue(
+          descriptionAllLocales
+        ),
         descriptionAllLocales,
+        slug: LocalizedString.resolveGraphqlDefaultLocaleValue(slugAllLocales)!,
         slugAllLocales,
+        metaTitle:
+          LocalizedString.resolveGraphqlDefaultLocaleValue(metaTitleAllLocales),
         metaTitleAllLocales,
+        metaKeywords: LocalizedString.resolveGraphqlDefaultLocaleValue(
+          metaKeywordsAllLocales
+        ),
         metaKeywordsAllLocales,
+        metaDescription: LocalizedString.resolveGraphqlDefaultLocaleValue(
+          metaDescriptionAllLocales
+        ),
         metaDescriptionAllLocales,
         categoryOrderHints,
         categoryOrderHint,

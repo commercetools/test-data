@@ -38,17 +38,29 @@ export type TCategoryReferenceGraphql = CategoryReference & {
 // Fields here must be transformable from the base model
 export type TProductDataGraphql = Omit<
   TProductData,
-  'categories' | 'categoryOrderHints'
+  // The shape of these props is different in GraphQL
+  | 'categoryOrderHints'
+  | 'name'
+  | 'description'
+  | 'slug'
+  | 'metaTitle'
+  | 'metaKeywords'
+  | 'metaDescription'
 > & {
   categoryOrderHints: Array<TCategoryOrderHintGraphql>;
   categoryOrderHint: String | null;
   categoriesRef: Array<TCategoryReferenceGraphql>;
-  categories: Array<Category>;
+  name: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
+  description?: string;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
+  slug: string;
   slugAllLocales?: TLocalizedStringGraphql | null;
+  metaTitle?: string;
   metaTitleAllLocales?: TLocalizedStringGraphql | null;
+  metaKeywords?: string;
   metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
+  metaDescription?: string;
   metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
   __typename: 'ProductData';
 };

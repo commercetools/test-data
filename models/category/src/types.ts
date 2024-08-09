@@ -33,18 +33,29 @@ export type TCategoryBuilder = TBuilder<TCategory>;
 export type TCreateCategoryBuilder = () => TCategoryBuilder;
 export type TCategoryGraphql = Omit<
   TCategory,
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
+  // The shape of these props is different in GraphQL
   | 'name'
-  // In GraphQL, we prefer to use `descriptionAllLocales` instead of `description`.
   | 'description'
-  // In GraphQL, the object shape is different.
+  | 'slug'
   | 'createdBy'
-  // In GraphQL, the object shape is different.
   | 'lastModifiedBy'
+  | 'metaTitle'
+  | 'metaKeywords'
+  | 'metaDescription'
 > & {
   __typename: 'Category';
   createdBy: TClientLoggingGraphql;
   lastModifiedBy: TClientLoggingGraphql;
+  name: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
+  description?: string;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
+  slug: string;
+  slugAllLocales?: TLocalizedStringGraphql | null;
+  metaTitle?: string;
+  metaTitleAllLocales?: TLocalizedStringGraphql | null;
+  metaKeywords?: string;
+  metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
+  metaDescription?: string;
+  metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
 };
