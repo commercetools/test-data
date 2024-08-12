@@ -2,6 +2,7 @@
 /* eslint-disable jest/valid-title */
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import type { TCategory, TCategoryGraphql } from './types';
 import * as Category from './index';
 
@@ -66,23 +67,7 @@ describe('builder', () => {
       Category.random().name(LocalizedString.random().en('Pants').de('Hosen')),
       expect.objectContaining({
         __typename: 'Category',
-        name: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'de',
-            value: 'Hosen',
-          }),
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'en',
-            value: 'Pants',
-          }),
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: 'fr',
-            value: expect.any(String),
-          }),
-        ]),
+        name: expect.any(String),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',
@@ -113,4 +98,80 @@ describe('builder', () => {
       })
     )
   );
+
+  it('should allow customization', () => {
+    const category = Category.random()
+      .ancestors([Category.random().key('category-ancestor-id-1')])
+      .custom(CustomFieldBooleanType.random())
+      .description(LocalizedString.random().en('Trendy pants'))
+      .externalId('external-id-123')
+      .id('category-123')
+      .key('key-pants')
+      .metaDescription(LocalizedString.random().en('Trendy pants (meta)'))
+      .metaKeywords(LocalizedString.random().en('pants (meta)'))
+      .metaTitle(LocalizedString.random().en('Pants (meta)'))
+      .name(LocalizedString.random().en('Pants'))
+      .orderHint('0.5')
+      .parent(Category.random().key('category-parent-id-1'))
+      .slug(LocalizedString.random().en('product-slug-1'))
+      .version(200)
+      .buildGraphql();
+
+    expect(category).toEqual(
+      expect.objectContaining({
+        ancestors: expect.arrayContaining([
+          expect.objectContaining({
+            key: 'category-ancestor-id-1',
+          }),
+        ]),
+        custom: expect.objectContaining({
+          name: 'Boolean',
+        }),
+        description: 'Trendy pants',
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: 'Trendy pants',
+          }),
+        ]),
+        externalId: 'external-id-123',
+        id: 'category-123',
+        key: 'key-pants',
+        metaTitle: 'Pants (meta)',
+        metaTitleAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: 'Pants (meta)',
+          }),
+        ]),
+        metaKeywords: 'pants (meta)',
+        metaKeywordsAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: 'pants (meta)',
+          }),
+        ]),
+        metaDescription: 'Trendy pants (meta)',
+        metaDescriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: 'Trendy pants (meta)',
+          }),
+        ]),
+        name: 'Pants',
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: 'Pants',
+          }),
+        ]),
+        orderHint: '0.5',
+        parent: expect.objectContaining({
+          key: 'category-parent-id-1',
+        }),
+        slug: 'product-slug-1',
+        version: 200,
+      })
+    );
+  });
 });

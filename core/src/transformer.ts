@@ -58,7 +58,7 @@ function Transformer<Model, TransformedModel>(
         );
       }
       return fieldsReplacer({
-        fields: transformedFields,
+        fields: transformedFields as unknown as TransformedModel,
       }) as unknown as TransformedModel;
     }
 
