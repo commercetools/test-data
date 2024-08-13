@@ -140,13 +140,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -164,22 +164,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/associate-role':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../associate-role
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/store':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -197,37 +197,37 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../business-unit
       '@commercetools-test-data/channel':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/discount-code':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../discount-code
       '@commercetools-test-data/product':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product
       '@commercetools-test-data/shipping-method':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../shipping-method
       '@commercetools-test-data/store':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../store
       '@commercetools-test-data/tax-category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -245,22 +245,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/product-type':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -278,16 +278,16 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/type':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../type
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -305,13 +305,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -329,10 +329,10 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -362,16 +362,16 @@ importers:
         specifier: ^22.10.0
         version: 22.27.0
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -395,13 +395,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -425,16 +425,16 @@ importers:
         specifier: ^22.10.0
         version: 22.27.0
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -458,16 +458,16 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -485,13 +485,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -509,16 +509,16 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/cart-discount':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -536,19 +536,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/filter-values':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../filter-values
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@faker-js/faker':
         specifier: ^8.0.0
@@ -563,13 +563,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@faker-js/faker':
         specifier: ^8.0.0
@@ -584,19 +584,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/product':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -614,25 +614,25 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/cart':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart
       '@commercetools-test-data/cart-discount':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/quote':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../quote
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -650,19 +650,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/user':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../user
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -677,19 +677,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
 
   models/payment:
@@ -701,19 +701,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/order':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../order
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -734,28 +734,28 @@ importers:
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../category
       '@commercetools-test-data/channel':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product-type
       '@commercetools-test-data/product-variant':
         specifier: 5.11.2
         version: 5.11.2
       '@commercetools-test-data/tax-category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -773,19 +773,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -803,13 +803,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -827,13 +827,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -851,10 +851,10 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -869,19 +869,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
 
   models/quote:
@@ -893,34 +893,34 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: ^9.0.7
+        specifier: ^10.0.0
         version: link:../staged-quote
       '@commercetools-test-data/store':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -938,28 +938,28 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/store':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -977,13 +977,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1001,19 +1001,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/tax-category':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools-test-data/zone':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../zone
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1031,13 +1031,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1055,31 +1055,31 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../quote-request
       '@commercetools-test-data/store':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1097,22 +1097,22 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../customer-group
       '@commercetools-test-data/product':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1130,13 +1130,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1154,19 +1154,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/product-selection':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../product-selection
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1184,13 +1184,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1208,13 +1208,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1232,19 +1232,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../graphql-types
       '@commercetools-test-data/project':
         specifier: workspace:^
         version: link:../project
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
@@ -1262,13 +1262,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 9.0.7
+        specifier: 10.0.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0

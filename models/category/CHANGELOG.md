@@ -1,5 +1,48 @@
 # @commercetools-test-data/category
 
+## 10.0.0
+
+### Major Changes
+
+- [#628](https://github.com/commercetools/test-data/pull/628) [`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Renamed GoodStore dataset to B2C Lifestyle to support Foundry.
+
+  This breaking change updates the export method for GoodStore, now B2C Lifestyle, presets. Presets that use this dataset are also updated.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Replace any instance of `<Entity>.presets.sampleDataGoodStore.<preset-name>()` with `<Entity>.presets.sampleDataB2CLifestyle.<preset-name>()`
+
+### Patch Changes
+
+- [#629](https://github.com/commercetools/test-data/pull/629) [`a4e8796`](https://github.com/commercetools/test-data/commit/a4e8796b7f733ffc39ca45cbb614c76f0af8cc4e) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed the return type for some properties in the GraphQL representation:
+
+  - name
+  - description
+  - slug
+  - metaTitle
+  - metaKeywords
+  - metaDescription
+
+  They all were returning a value with type `TLocalizedStringGraphql` where they should be returning a `string`.
+
+  From the consumer point of view, mocking those values won't change so they can still use the `LocalizedString` common model to set it up:
+
+  ```js
+  Category.random()
+    .name(LocalizedString.random().en('Shoes').de('Schuhe'))
+    .buildGraphql();
+  ```
+
+  The actual `string` returned will be the one with the default locale (`en`) or the first one if that one does not exist.
+
+- [#627](https://github.com/commercetools/test-data/pull/627) [`29ab14e`](https://github.com/commercetools/test-data/commit/29ab14e9c41e72fe5ca556a59dc407ca823d15dd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed the `Category` graphql transformer as it was not building the `name` and `description` properties which both are nested models of type `LocalizedString`.
+
+- Updated dependencies [[`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655), [`a4e8796`](https://github.com/commercetools/test-data/commit/a4e8796b7f733ffc39ca45cbb614c76f0af8cc4e)]:
+  - @commercetools-test-data/commons@10.0.0
+  - @commercetools-test-data/type@10.0.0
+  - @commercetools-test-data/core@10.0.0
+  - @commercetools-test-data/utils@10.0.0
+
 ## 9.0.7
 
 ### Patch Changes
