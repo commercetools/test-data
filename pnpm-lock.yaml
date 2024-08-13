@@ -748,9 +748,6 @@ importers:
       '@commercetools-test-data/product-type':
         specifier: 10.0.0
         version: link:../product-type
-      '@commercetools-test-data/product-variant':
-        specifier: 5.11.2
-        version: 5.11.2
       '@commercetools-test-data/tax-category':
         specifier: 10.0.0
         version: link:../tax-category
@@ -784,6 +781,45 @@ importers:
       '@commercetools-test-data/product-type':
         specifier: 10.0.0
         version: link:../product-type
+      '@commercetools-test-data/utils':
+        specifier: 10.0.0
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.8.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
+  models/product-projection:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/category':
+        specifier: 10.0.0
+        version: link:../category
+      '@commercetools-test-data/commons':
+        specifier: 10.0.0
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.0.0
+        version: link:../../core
+      '@commercetools-test-data/product':
+        specifier: 10.0.0
+        version: link:../product
+      '@commercetools-test-data/product-type':
+        specifier: 10.0.0
+        version: link:../product-type
+      '@commercetools-test-data/state':
+        specifier: 10.0.0
+        version: link:../state
+      '@commercetools-test-data/tax-category':
+        specifier: 10.0.0
+        version: link:../tax-category
       '@commercetools-test-data/utils':
         specifier: 10.0.0
         version: link:../../utils
@@ -2107,10 +2143,6 @@ packages:
 
   '@commercetools-test-data/core@5.11.2':
     resolution: {integrity: sha512-iz++zEBengERwg3REm51RsEFmiUeNPQz1K9K2kZjH1sAkFxOf1ydmpM0Tt4Awmi/OHQ+G2tGKKdJewm8AQyHNg==}
-
-  '@commercetools-test-data/product-variant@5.11.2':
-    resolution: {integrity: sha512-7VT0Iez2bi8fhpqJOzVx/WfmLV+mAXlc5SOxZoTeP1JyUyY07GiujI0ctKAh8Q3/0qzVyJ08RFV1BLtYxLWeKA==}
-    deprecated: Use the @commercetools-test-data/product package instead
 
   '@commercetools-test-data/utils@5.11.2':
     resolution: {integrity: sha512-7CU08wvYiQJ+tltvnEDunX/QtVgHimnMtNmwXBicL6/7OsiN/QHtW3pIuN8Sb/OQva6zUPLgOQe/6UbVHB+WpA==}
@@ -7602,19 +7634,6 @@ snapshots:
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.4
       lodash: 4.17.21
-
-  '@commercetools-test-data/product-variant@5.11.2':
-    dependencies:
-      '@babel/runtime': 7.24.6
-      '@babel/runtime-corejs3': 7.24.6
-      '@commercetools-test-data/attribute-definition': 5.11.2
-      '@commercetools-test-data/commons': 5.11.2
-      '@commercetools-test-data/core': 5.11.2
-      '@commercetools-test-data/utils': 5.11.2
-      '@commercetools/platform-sdk': 4.11.0
-      '@faker-js/faker': 8.4.1
-    transitivePeerDependencies:
-      - encoding
 
   '@commercetools-test-data/utils@5.11.2':
     dependencies:
