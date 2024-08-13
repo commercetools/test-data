@@ -1,5 +1,31 @@
 # @commercetools-test-data/commons
 
+## 10.0.0
+
+### Major Changes
+
+- [#628](https://github.com/commercetools/test-data/pull/628) [`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Renamed GoodStore dataset to B2C Lifestyle to support Foundry.
+
+  This breaking change updates the export method for GoodStore, now B2C Lifestyle, presets. Presets that use this dataset are also updated.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Replace any instance of `<Entity>.presets.sampleDataGoodStore.<preset-name>()` with `<Entity>.presets.sampleDataB2CLifestyle.<preset-name>()`
+
+### Minor Changes
+
+- [#629](https://github.com/commercetools/test-data/pull/629) [`a4e8796`](https://github.com/commercetools/test-data/commit/a4e8796b7f733ffc39ca45cbb614c76f0af8cc4e) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Added a new helper in the `LocalizedString` model which allows to get the default locale value out of all configured ones.
+
+  The default value has been configured to be `en`.
+
+  In case the model does not have that one configured, the helper will return the first one configured.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.0.0
+  - @commercetools-test-data/utils@10.0.0
+
 ## 9.0.7
 
 ### Patch Changes

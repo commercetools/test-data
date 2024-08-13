@@ -1,5 +1,26 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.0.0
+
+### Major Changes
+
+- [#628](https://github.com/commercetools/test-data/pull/628) [`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - Renamed GoodStore dataset to B2C Lifestyle to support Foundry.
+
+  This breaking change updates the export method for GoodStore, now B2C Lifestyle, presets. Presets that use this dataset are also updated.
+
+  Updating this package will require changes in your codebase. To migrate:
+
+  - Replace any instance of `<Entity>.presets.sampleDataGoodStore.<preset-name>()` with `<Entity>.presets.sampleDataB2CLifestyle.<preset-name>()`
+
+### Patch Changes
+
+- Updated dependencies [[`a4e8796`](https://github.com/commercetools/test-data/commit/a4e8796b7f733ffc39ca45cbb614c76f0af8cc4e), [`5e4d863`](https://github.com/commercetools/test-data/commit/5e4d8635485e876de88385890eb5c5940f872655), [`29ab14e`](https://github.com/commercetools/test-data/commit/29ab14e9c41e72fe5ca556a59dc407ca823d15dd), [`827861f`](https://github.com/commercetools/test-data/commit/827861fe7d04e297cfed09efd4646659f8e260d1), [`a4e8796`](https://github.com/commercetools/test-data/commit/a4e8796b7f733ffc39ca45cbb614c76f0af8cc4e)]:
+  - @commercetools-test-data/product@10.0.0
+  - @commercetools-test-data/channel@10.0.0
+  - @commercetools-test-data/commons@10.0.0
+  - @commercetools-test-data/core@10.0.0
+  - @commercetools-test-data/utils@10.0.0
+
 ## 9.0.7
 
 ### Patch Changes
