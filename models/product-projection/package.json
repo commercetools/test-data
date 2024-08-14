@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/product-projection",
   "version": "10.0.0",
-  "description": "Data models for commercetools API Product",
+  "description": "Data model for the commercetools platform `ProductProjection` type",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",

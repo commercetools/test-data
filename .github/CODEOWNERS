@@ -38,6 +38,7 @@
 /models/payment @commercetools/checkout-team-fe
 /models/product @commercetools/pacman-team-fe
 /models/product-discount @commercetools/priceless-team-fe
+/models/product-projection @commercetools/pacman-team-fe
 /models/product-selection @commercetools/context-team-fe
 /models/product-type @commercetools/pacman-team-fe
 /models/project @commercetools/shield-team-fe

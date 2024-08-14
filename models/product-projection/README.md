@@ -25,11 +25,11 @@ const productProjection =
 
 // For REST entities
 const productProjectionRest =
-  ProductProjection.random().buildRest<TProductProjection>();
+  ProductProjection.random().buildRest<TProductProjectionRest>();
 
 // For Graphql entities
 const productProjectionGraphql =
-  ProductProjection.random().buildGraphql<TProductProjection>();
+  ProductProjection.random().buildGraphql<TProductProjectionGraphql>();
 
 // Presets
 const happyCowProductProjection = ProductProjection.presets;
