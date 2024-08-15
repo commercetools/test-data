@@ -1,5 +1,21 @@
 # @commercetools-test-data/standalone-price
 
+## 10.1.0
+
+### Minor Changes
+
+- [#632](https://github.com/commercetools/test-data/pull/632) [`0be63dc`](https://github.com/commercetools/test-data/commit/0be63dc757e86380aba1af12defbfc944271a52e) Thanks [@nima-ct](https://github.com/nima-ct)! - Added StagedStandalonePrice model within the StandalonePrice entity
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.0
+  - @commercetools-test-data/channel@10.1.0
+  - @commercetools-test-data/commons@10.1.0
+  - @commercetools-test-data/customer-group@10.1.0
+  - @commercetools-test-data/product@10.1.0
+  - @commercetools-test-data/utils@10.1.0
+
 ## 10.0.0
 
 ### Patch Changes
