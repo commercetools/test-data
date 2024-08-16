@@ -23,10 +23,13 @@
     "@commercetools-test-data/cart-discount": "10.1.1",
     "@commercetools-test-data/commons": "10.1.1",
     "@commercetools-test-data/core": "10.1.1",
+    "@commercetools-test-data/customer": "10.1.1",
     "@commercetools-test-data/customer-group": "10.1.1",
     "@commercetools-test-data/quote": "10.1.1",
     "@commercetools-test-data/utils": "10.1.1",
     "@commercetools/platform-sdk": "^7.0.0",
-    "@faker-js/faker": "^8.0.0"
+    "@faker-js/faker": "^8.0.0",
+    "@types/lodash": "^4.17.0",
+    "lodash": "^4.17.21"
   }
 }
