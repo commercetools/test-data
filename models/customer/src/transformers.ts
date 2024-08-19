@@ -8,20 +8,18 @@ const commonBuildFields: (keyof TCustomer)[] = [
   'addresses',
 ];
 
-const removeFields: (keyof TCustomer)[] = [
-  'defaultShippingAddress',
-  'shippingAddresses',
-  'defaultBillingAddress',
-  'billingAddresses',
-];
-
 const transformers = {
   default: Transformer<TCustomer, TCustomer>('default', {
     buildFields: commonBuildFields,
   }),
   rest: Transformer<TCustomer, TCustomer>('rest', {
     buildFields: commonBuildFields,
-    removeFields: removeFields,
+    removeFields: [
+      'defaultShippingAddress',
+      'shippingAddresses',
+      'defaultBillingAddress',
+      'billingAddresses',
+    ],
   }),
   graphql: Transformer<TCustomer, TCustomerGraphql>('graphql', {
     buildFields: [
