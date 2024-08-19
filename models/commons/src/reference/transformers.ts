@@ -1,22 +1,44 @@
 import { Transformer } from '@commercetools-test-data/core';
 import omit from 'lodash/omit';
-import type { TReference, TReferenceGraphql, TReferenceRest } from './types';
+import type {
+  TExpandedReferenceObject,
+  TReference,
+  TReferenceGraphql,
+  TReferenceRest,
+} from './types';
 
 const transformers = {
   default: Transformer<TReference, TReference>('default', {}),
   rest: Transformer<TReference, TReferenceRest>('rest', {
-    replaceFields: ({ fields }) => ({
-      ...fields,
-      obj: omit(fields, ['typeId']),
-    }),
+    replaceFields: ({ fields }) => {
+      const obj = fields.obj
+        ? fields.obj.buildRest<TExpandedReferenceObject>()
+        : {
+            id: fields.id,
+          };
+
+      return {
+        ...fields,
+        id: obj.id,
+        obj,
+      };
+    },
   }),
   // we do not add the expanded object ourselves
   // since some fields are pure `*Ref`, e.g `channelsRef`
   // with no option to expand.
   graphql: Transformer<TReference, TReferenceGraphql>('graphql', {
-    addFields: () => ({
-      __typename: 'Reference',
-    }),
+    replaceFields: ({ fields }) => {
+      const id = fields.obj
+        ? fields.obj.buildGraphql<TExpandedReferenceObject>().id
+        : fields.id;
+
+      return {
+        id,
+        typeId: fields.typeId,
+        __typename: 'Reference',
+      };
+    },
   }),
 };
 

@@ -1,31 +1,25 @@
 import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
+export type TExpandedReferenceObject = {
+  id: string;
+  version?: number;
+};
 
 export interface TReference<TypeId = string> {
   typeId: TypeId;
   id: string;
+  obj?: TBuilder<TExpandedReferenceObject>;
 }
 
-export type TExpandedReferenceObject<TypeId = string> = {
-  id: TReference<TypeId>['id'];
-  version?: number;
-};
-
-export type TCreateReferenceBuilder<TypeId = string> =
-  () => TReferenceBuilder<TypeId>;
-
 export type TReferenceRest<
-  TypeId = string,
-  ExpandedObject extends TExpandedReferenceObject<TypeId> = TExpandedReferenceObject<TypeId>
-> = TReference<TypeId> & {
-  obj: ExpandedObject;
+  ExpandedObject extends TExpandedReferenceObject = TExpandedReferenceObject,
+> = Omit<TReference, 'obj'> & {
+  obj?: ExpandedObject;
 };
 
-export type TReferenceGraphql<TypeId = string> =
-  TExpandedReferenceObject<TypeId> & {
-    __typename: 'Reference';
-  };
+export type TReferenceGraphql = Omit<TReference, 'obj'> & {
+  __typename: 'Reference';
+};
 
 // Draft representation
 export interface TReferenceDraft<TypeId = string> {
@@ -33,8 +27,11 @@ export interface TReferenceDraft<TypeId = string> {
   id: string;
 }
 
-export type TReferenceDraftGraphql<TypeId = string> =
-  TExpandedReferenceObject<TypeId>;
+export type TReferenceDraftGraphql = TExpandedReferenceObject;
+
+export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
+export type TCreateReferenceBuilder<TypeId = string> =
+  () => TReferenceBuilder<TypeId>;
 
 export type TReferenceDraftBuilder<TypeId = string> = TBuilder<
   TReferenceDraft<TypeId>

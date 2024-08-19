@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
@@ -14,7 +14,11 @@ export default Generator<TProductProjection>({
     version: sequence(),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
-    productType: fake(() => ProductType.random()),
+    productType: fake(() =>
+      Reference.random()
+        .typeId('product-type')
+        .obj(ProductType.random().id('isla-bonita'))
+    ),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
