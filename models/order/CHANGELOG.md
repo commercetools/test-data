@@ -1,5 +1,21 @@
 # @commercetools-test-data/order
 
+## 10.1.2
+
+### Patch Changes
+
+- [#634](https://github.com/commercetools/test-data/pull/634) [`9fc1aba`](https://github.com/commercetools/test-data/commit/9fc1aba4a097c4a41fce855c43bc88b530c81d1d) Thanks [@dogayuksel](https://github.com/dogayuksel)! - Add `customer` property to Order model build fields on default and graphql transforms.
+
+- Updated dependencies [[`9fc1aba`](https://github.com/commercetools/test-data/commit/9fc1aba4a097c4a41fce855c43bc88b530c81d1d)]:
+  - @commercetools-test-data/customer@10.1.2
+  - @commercetools-test-data/cart@10.1.2
+  - @commercetools-test-data/quote@10.1.2
+  - @commercetools-test-data/core@10.1.2
+  - @commercetools-test-data/cart-discount@10.1.2
+  - @commercetools-test-data/commons@10.1.2
+  - @commercetools-test-data/customer-group@10.1.2
+  - @commercetools-test-data/utils@10.1.2
+
 ## 10.1.1
 
 ### Patch Changes
