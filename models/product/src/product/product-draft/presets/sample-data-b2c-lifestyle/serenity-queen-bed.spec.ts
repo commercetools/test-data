@@ -42,7 +42,7 @@ describe(`with serenityQueenBed preset`, () => {
         },
       },
       {
-        "name": "color-filter",
+        "name": "color",
         "value": {
           "key": "#808080",
           "label": {
@@ -192,7 +192,7 @@ describe(`with serenityQueenBed preset`, () => {
         "value": "{"en-GB":"- Assembly included in delivery","en-US":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten"}",
       },
       {
-        "name": "color-filter",
+        "name": "color",
         "value": "{"key":"#808080","label":{"de-DE":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}}",
       },
     ],
