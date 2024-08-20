@@ -1,5 +1,4 @@
 import {
-  type TReference,
   type TReferenceGraphql,
   Reference,
 } from '@commercetools-test-data/commons';
@@ -16,16 +15,6 @@ const transformers = {
   }),
   rest: Transformer<TAssociateDefault, TAssociateRest>('rest', {
     buildFields: ['associateRoleAssignments', 'customer'],
-    replaceFields: ({ fields }) => {
-      const customer: TReference<'customer'> = Reference.presets
-        .customerReference()
-        .id(fields.customer.id)
-        .build();
-      return {
-        ...fields,
-        customer,
-      };
-    },
   }),
   graphql: Transformer<TAssociateDefault, TAssociateGraphql>('graphql', {
     buildFields: ['associateRoleAssignments', 'customer'],

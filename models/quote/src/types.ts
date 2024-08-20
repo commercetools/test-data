@@ -12,8 +12,14 @@ import type {
 import {
   TReferenceGraphql,
   TKeyReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCustomer } from '@commercetools-test-data/customer';
+import { TCustomerGroup } from '@commercetools-test-data/customer-group';
+import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
+import { TStagedQuoteRest } from '@commercetools-test-data/staged-quote';
+import { TState } from '@commercetools-test-data/state';
 
 // Default
 export type TQuote = Omit<
@@ -36,7 +42,16 @@ export type TQuote = Omit<
 };
 
 // Rest
-export type TQuoteRest = Quote;
+export type TQuoteRest = Omit<
+  Quote,
+  'customer' | 'customerGroup' | 'quoteRequest' | 'stagedQuote' | 'state'
+> & {
+  customer?: TReferenceRest<TCustomer>;
+  customerGroup?: TReferenceRest<TCustomerGroup>;
+  quoteRequest: TReferenceRest<TQuoteRequestRest>;
+  stagedQuote: TReferenceRest<TStagedQuoteRest>;
+  state?: TReferenceRest<TState>;
+};
 export type TQuoteDraft = QuoteDraft;
 
 export type TQuoteGraphql = TQuote & {

@@ -1,9 +1,13 @@
 import { Customer, Payment, PaymentDraft } from '@commercetools/platform-sdk';
-import type { TReferenceGraphql } from '@commercetools-test-data/commons';
+import type {
+  TReferenceGraphql,
+  TReferenceRest,
+} from '@commercetools-test-data/commons';
 import type {
   TBuilder,
   TPaginatedQueryResult,
 } from '@commercetools-test-data/core';
+import { TCustomer, TCustomerGraphql } from '@commercetools-test-data/customer';
 
 // Default
 export type TPayment = Omit<Payment, 'customer'> & {
@@ -12,12 +16,15 @@ export type TPayment = Omit<Payment, 'customer'> & {
 export type TPaymentDraft = PaymentDraft;
 
 // Rest
-export type TPaymentRest = Payment;
+export type TPaymentRest = Omit<Payment, 'customer'> & {
+  customer?: TReferenceRest<TCustomer>;
+};
 export type TPaymentDraftRest = PaymentDraft;
 
 // Graphql
 export type TPaymentGraphql = TPayment & {
   __typename: 'Payment';
+  customer: TCustomerGraphql;
   customerRef: TReferenceGraphql;
   interfaceInteractionsRaw: TPaginatedQueryResult<null>;
 };

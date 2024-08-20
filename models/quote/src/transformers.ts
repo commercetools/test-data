@@ -5,12 +5,17 @@ import {
 import {
   Reference,
   KeyReference,
-  TReference,
   TReferenceGraphql,
   TKeyReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
+import { TCustomer } from '@commercetools-test-data/customer';
+import { TCustomerGroup } from '@commercetools-test-data/customer-group';
+import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
+import { TStagedQuoteRest } from '@commercetools-test-data/staged-quote';
+import { TState } from '@commercetools-test-data/state';
 import type { TQuote, TQuoteRest, TQuoteGraphql } from './types';
 
 const transformers = {
@@ -59,22 +64,22 @@ const transformers = {
       const quoteRequest = Reference.presets
         .quoteRequestReference()
         .id(fields.quoteRequest.id)
-        .build<TReference<'quote-request'>>();
+        .build<TReferenceRest<TQuoteRequestRest>>();
 
       const stagedQuote = Reference.presets
         .stagedQuoteReference()
         .id(fields.stagedQuote.id)
-        .build<TReference<'staged-quote'>>();
+        .build<TReferenceRest<TStagedQuoteRest>>();
 
       const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
-        .build<TReference<'customer'>>();
+        .build<TReferenceRest<TCustomer>>();
 
       const customerGroup = Reference.presets
         .customerGroupReference()
         .id(fields.customerGroup?.id)
-        .build<TReference<'customer-group'>>();
+        .build<TReferenceRest<TCustomerGroup>>();
 
       const store = KeyReference.presets
         .store()
@@ -84,7 +89,7 @@ const transformers = {
       const state = Reference.presets
         .stateReference()
         .id(fields.state?.id)
-        .build<TReference<'state'>>();
+        .build<TReferenceRest<TState>>();
 
       const businessUnit = KeyReference.presets
         .businessUnit()

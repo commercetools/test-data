@@ -27,6 +27,7 @@
     "@commercetools-test-data/customer-group": "10.1.1",
     "@commercetools-test-data/quote-request": "10.1.1",
     "@commercetools-test-data/staged-quote": "^10.1.1",
+    "@commercetools-test-data/state": "10.1.1",
     "@commercetools-test-data/store": "10.1.1",
     "@commercetools-test-data/utils": "10.1.1",
     "@commercetools/platform-sdk": "^7.0.0",

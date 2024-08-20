@@ -1,8 +1,9 @@
+import { TChannel } from '@commercetools-test-data/channel';
 import {
   Reference,
   KeyReference,
-  TReference,
   TReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import { type TCustomerGroup } from '@commercetools-test-data/customer-group';
@@ -16,11 +17,11 @@ import type {
 function createCustomerGroupReference(
   customerGroup: TCustomerGroup,
   target: 'rest'
-): TReference<'customer-group'>;
+): TReferenceRest<TCustomerGroup>;
 function createCustomerGroupReference(
   customerGroup: TCustomerGroup,
   target: 'graphql'
-): TReferenceGraphql<'customer-group'>;
+): TReferenceGraphql;
 
 // Create a customer group reference depending on `id` or `key` field availability
 function createCustomerGroupReference(
@@ -43,8 +44,8 @@ function createCustomerGroupReference(
   // Dynamically call buildRest or buildGraphql based on target
   if (referenceBuilder) {
     return target === 'rest'
-      ? referenceBuilder.buildRest<TReference<'customer-group'>>()
-      : referenceBuilder.buildGraphql<TReferenceGraphql<'customer-group'>>();
+      ? referenceBuilder.buildRest<TReferenceRest<TCustomerGroup>>()
+      : referenceBuilder.buildGraphql<TReferenceGraphql>();
   }
 }
 
@@ -76,7 +77,7 @@ const transformers = {
         ? KeyReference.random()
             .typeId('channel')
             .key(fields.channel.key)
-            .buildRest<TReference<'channel'>>()
+            .buildRest<TReferenceRest<TChannel>>()
         : undefined;
 
       return {
@@ -105,7 +106,7 @@ const transformers = {
         ? KeyReference.random()
             .typeId('channel')
             .key(fields.channel.key)
-            .buildGraphql<TReferenceGraphql<'channel'>>()
+            .buildGraphql<TReferenceGraphql>()
         : null;
 
       return { __typename: 'StandalonePrice', customerGroupRef, channelRef };

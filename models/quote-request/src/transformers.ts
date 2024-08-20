@@ -2,15 +2,19 @@ import {
   BusinessUnitKeyReference,
   StoreKeyReference,
 } from '@commercetools/platform-sdk';
+import { TCart } from '@commercetools-test-data/cart';
 import {
   Reference,
   KeyReference,
-  TReference,
   TReferenceGraphql,
   TKeyReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
+import { TCustomer } from '@commercetools-test-data/customer';
+import { TCustomerGroup } from '@commercetools-test-data/customer-group';
+import { TState } from '@commercetools-test-data/state';
 import type {
   TQuoteRequest,
   TQuoteRequestRest,
@@ -57,12 +61,12 @@ const transformers = {
       const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
-        .build<TReference<'customer'>>();
+        .build<TReferenceRest<TCustomer>>();
 
       const customerGroup = Reference.presets
         .customerGroupReference()
         .id(fields.customerGroup?.id)
-        .build<TReference<'customer-group'>>();
+        .build<TReferenceRest<TCustomerGroup>>();
 
       const store = KeyReference.random()
         .typeId('store')
@@ -72,15 +76,21 @@ const transformers = {
       const state = Reference.presets
         .stateReference()
         .id(fields.state?.id)
-        .build<TReference<'state'>>();
+        .build<TReferenceRest<TState>>();
 
       const businessUnit = KeyReference.random()
         .typeId('business-unit')
         .key(fields.businessUnit?.key)
         .buildRest<BusinessUnitKeyReference>();
 
+      const cart = Reference.presets
+        .cartReference()
+        .id(fields.cart?.id || '')
+        .build<TReferenceRest<TCart>>();
+
       return {
         ...fields,
+        cart,
         customer,
         customerGroup: fields.customerGroup ? customerGroup : undefined,
         store: fields.store ? store : undefined,

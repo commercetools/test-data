@@ -1,6 +1,8 @@
-import { CentPrecisionMoney } from '@commercetools-test-data/commons';
+import {
+  CentPrecisionMoney,
+  Reference,
+} from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
-import { Customer } from '@commercetools-test-data/customer';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as PaymentMethodInfo from '../payment-method-info';
 import * as PaymentStatus from '../payment-status';
@@ -16,7 +18,7 @@ const generator = Generator<TPayment>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.string.uuid()),
-    customer: fake((f) => Customer.random()),
+    customer: fake((f) => Reference.presets.customerReference()),
     anonymousId: fake((f) => f.string.uuid()),
     interfaceId: fake((f) => f.string.uuid()),
     amountPlanned: fake((f) => CentPrecisionMoney.random()),

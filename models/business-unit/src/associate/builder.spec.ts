@@ -40,6 +40,10 @@ describe('builder', () => {
         ]),
         customer: expect.objectContaining({
           id: expect.any(String),
+          typeId: 'customer',
+          obj: expect.objectContaining({
+            id: expect.any(String),
+          }),
         }),
       })
     )

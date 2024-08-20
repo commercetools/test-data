@@ -27,9 +27,8 @@ describe('builder', () => {
         restockableInDays: expect.any(Number),
         expectedDelivery: expect.any(String),
         supplyChannel: expect.objectContaining({
-          address: expect.objectContaining({
-            country: expect.any(String),
-          }),
+          id: expect.any(String),
+          typeId: 'channel',
         }),
         custom: null,
       })

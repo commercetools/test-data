@@ -1,9 +1,6 @@
-import {
-  Reference,
-  TReference,
-  TReferenceGraphql,
-} from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
+import { Channel, TChannelGraphql } from '@commercetools-test-data/channel';
+import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import { buildField, Transformer } from '@commercetools-test-data/core';
 import type {
   TInventoryEntry,
   TInventoryEntryRest,
@@ -16,26 +13,25 @@ const transformers = {
   }),
   rest: Transformer<TInventoryEntry, TInventoryEntryRest>('rest', {
     buildFields: ['supplyChannel'],
-    replaceFields: ({ fields }) => {
-      const supplyChannel = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .build<TReference<'channel'>>();
-      return {
-        ...fields,
-        supplyChannel,
-      };
-    },
   }),
   graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
-    buildFields: ['supplyChannel'],
     replaceFields: ({ fields }) => {
+      const restSupplyChannel = buildField(fields.supplyChannel, 'rest');
       const supplyChannelRef = Reference.presets
         .channelReference()
         .id(fields.supplyChannel.id)
-        .buildGraphql<TReferenceGraphql<'channel'>>();
+        .buildGraphql<TReferenceGraphql>();
+
+      const supplyChannel = Channel.random()
+        .description(restSupplyChannel.description)
+        .id(restSupplyChannel.id)
+        .key(restSupplyChannel.key)
+        .name(restSupplyChannel.name)
+        .buildGraphql<TChannelGraphql>();
+
       return {
         ...fields,
+        supplyChannel,
         supplyChannelRef,
         __typename: 'InventoryEntry',
       };

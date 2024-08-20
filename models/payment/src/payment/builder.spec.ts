@@ -12,7 +12,8 @@ describe('builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         customer: expect.objectContaining({
-          email: expect.any(String),
+          id: expect.any(String),
+          typeId: 'customer',
         }),
         anonymousId: expect.any(String),
         interfaceId: expect.any(String),
@@ -69,6 +70,9 @@ describe('builder', () => {
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: expect.any(String),
+          obj: expect.objectContaining({
+            id: expect.any(String),
+          }),
         }),
         anonymousId: expect.any(String),
         interfaceId: expect.any(String),

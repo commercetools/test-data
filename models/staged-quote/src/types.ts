@@ -7,11 +7,16 @@ import type {
   State,
   QuoteRequest,
 } from '@commercetools/platform-sdk';
+import { TCart } from '@commercetools-test-data/cart';
 import {
   TReferenceGraphql,
   TKeyReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCustomer } from '@commercetools-test-data/customer';
+import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
+import { TState } from '@commercetools-test-data/state';
 
 // Default
 export type TStagedQuote = Omit<
@@ -26,7 +31,15 @@ export type TStagedQuote = Omit<
 };
 
 // Rest
-export type TStagedQuoteRest = StagedQuote;
+export type TStagedQuoteRest = Omit<
+  StagedQuote,
+  'customer' | 'quoteRequest' | 'quoteRequest' | 'quotationCart' | 'state'
+> & {
+  customer?: TReferenceRest<TCustomer>;
+  quotationCart: TReferenceRest<TCart>;
+  quoteRequest: TReferenceRest<TQuoteRequestRest>;
+  state?: TReferenceRest<TState>;
+};
 export type TStagedQuoteDraft = StagedQuoteDraft;
 
 export type TStagedQuoteGraphql = TStagedQuote & {

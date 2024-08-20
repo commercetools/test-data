@@ -1,13 +1,17 @@
 import { BusinessUnitKeyReference } from '@commercetools/platform-sdk';
+import { TCart } from '@commercetools-test-data/cart';
 import {
   Reference,
   KeyReference,
-  TReference,
   TReferenceGraphql,
   TKeyReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 
+import { TCustomer } from '@commercetools-test-data/customer';
+import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
+import { TState } from '@commercetools-test-data/state';
 import type {
   TStagedQuote,
   TStagedQuoteRest,
@@ -42,22 +46,22 @@ const transformers = {
       const customer = Reference.presets
         .customerReference()
         .id(fields.customer.id)
-        .build<TReference<'customer'>>();
+        .build<TReferenceRest<TCustomer>>();
 
       const quoteRequest = Reference.presets
         .quoteRequestReference()
         .id(fields.quoteRequest.id)
-        .build<TReference<'quote-request'>>();
+        .build<TReferenceRest<TQuoteRequestRest>>();
 
       const quotationCart = Reference.presets
         .cartReference()
         .id(fields.quotationCart.id)
-        .build<TReference<'cart'>>();
+        .build<TReferenceRest<TCart>>();
 
       const state = Reference.presets
         .stateReference()
         .id(fields.state?.id)
-        .build<TReference<'state'>>();
+        .build<TReferenceRest<TState>>();
 
       const businessUnit = KeyReference.presets
         .businessUnit()

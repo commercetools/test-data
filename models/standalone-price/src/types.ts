@@ -4,13 +4,18 @@ import {
   CustomerGroup,
   Channel,
 } from '@commercetools/platform-sdk';
+import { TChannel } from '@commercetools-test-data/channel';
 import {
   TMoneyGraphql,
   TReferenceGraphql,
+  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCustomerGroup } from '@commercetools-test-data/customer-group';
 
 // Base representation
+// TODO: This doesn't seem to be right. I don't understand why the default type should have customized fields.
+// It seems to me that's something only transformed versions of the model should have.
 export type TStandalonePrice = Omit<
   StandalonePrice,
   'customerGroup' | 'channel'
@@ -21,7 +26,13 @@ export type TStandalonePrice = Omit<
 };
 
 // REST representation
-export type TStandalonePriceRest = StandalonePrice;
+export type TStandalonePriceRest = Omit<
+  StandalonePrice,
+  'channel' | 'customerGroup'
+> & {
+  channel?: TReferenceRest<TChannel>;
+  customerGroup?: TReferenceRest<TCustomerGroup>;
+};
 export type TStandalonePriceDraft = StandalonePriceDraft;
 
 // Graphql representation
