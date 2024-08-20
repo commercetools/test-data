@@ -1,12 +1,6 @@
-import {
-  Category,
-  TCategory,
-  TCategoryGraphql,
-} from '@commercetools-test-data/category';
+import { Category, TCategoryGraphql } from '@commercetools-test-data/category';
 import {
   LocalizedString,
-  Reference,
-  TReferenceRest,
   type TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import {
@@ -16,13 +10,11 @@ import {
 } from '@commercetools-test-data/core';
 import {
   ProductType,
-  TProductType,
   TProductTypeGraphql,
 } from '@commercetools-test-data/product-type';
-import { State, TState, TStateGraphql } from '@commercetools-test-data/state';
+import { State, TStateGraphql } from '@commercetools-test-data/state';
 import {
   TaxCategory,
-  TTaxCategory,
   TTaxCategoryGraphql,
 } from '@commercetools-test-data/tax-category';
 import type {
@@ -144,7 +136,7 @@ const transformers = {
             }
             return undefined;
           })
-          .filter((category) => !!category);
+          .filter(Boolean) as TCategoryGraphql[];
         const categoriesRef = buildFields(
           fields.categories,
           'graphql'
