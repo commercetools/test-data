@@ -3,9 +3,9 @@ import {
   ReviewRatingStatistics,
   SuggestTokenizer,
 } from '@commercetools/platform-sdk';
-import { TCategory } from '@commercetools-test-data/category';
+import { TCategory, TCategoryGraphql } from '@commercetools-test-data/category';
 import {
-  TLocalizedStringDraftGraphql,
+  TLocalizedStringGraphql,
   TReferenceRest,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
@@ -14,8 +14,11 @@ import {
   TProductType,
   TProductTypeGraphql,
 } from '@commercetools-test-data/product-type';
-import { TState } from '@commercetools-test-data/state';
-import { TTaxCategory } from '@commercetools-test-data/tax-category';
+import { TState, TStateGraphql } from '@commercetools-test-data/state';
+import {
+  TTaxCategory,
+  TTaxCategoryGraphql,
+} from '@commercetools-test-data/tax-category';
 
 export type TProductProjection = ProductProjection;
 
@@ -47,6 +50,7 @@ export type TSearchKeywords = {
 
 export type TProductProjectionGraphql = Omit<
   TProductProjection,
+  | 'categories'
   | 'categoryOrderHints'
   | 'description'
   | 'metaTitle'
@@ -60,17 +64,18 @@ export type TProductProjectionGraphql = Omit<
   | 'taxCategory'
 > & {
   categoryOrderHints: TCategoryOrderHintGraphql[];
+  categories: TCategoryGraphql[];
   categoriesRef: TReferenceGraphql[];
   description?: string;
-  descriptionAllLocales?: TLocalizedStringDraftGraphql | null;
+  descriptionAllLocales?: TLocalizedStringGraphql | null;
   name: string;
-  nameAllLocales: TLocalizedStringDraftGraphql;
+  nameAllLocales: TLocalizedStringGraphql;
   metaDescription?: string;
-  metaDescriptionAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
   metaKeywords?: string;
-  metaKeywordsAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
   metaTitle?: string;
-  metaTitleAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaTitleAllLocales?: TLocalizedStringGraphql | null;
   productType: TProductTypeGraphql;
   productTypeRef: TReferenceGraphql;
   reviewRatingStatistics?: ReviewRatingStatistics & {
@@ -78,10 +83,10 @@ export type TProductProjectionGraphql = Omit<
   };
   searchKeywords: TSearchKeywords[];
   slug: string;
-  slugAllLocales: TLocalizedStringDraftGraphql;
-  state?: TState;
-  stateRef?: TReferenceGraphql;
-  taxCategory?: TTaxCategory | null;
+  slugAllLocales: TLocalizedStringGraphql;
+  state?: TStateGraphql | null;
+  stateRef?: TReferenceGraphql | null;
+  taxCategory?: TTaxCategoryGraphql | null;
   taxCategoryRef?: TReferenceGraphql | null;
 };
 

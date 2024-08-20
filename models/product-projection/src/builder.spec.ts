@@ -4,18 +4,15 @@ import { Category } from '@commercetools-test-data/category';
 import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { ProductVariant } from '@commercetools-test-data/product';
-import {
-  ProductType,
-  TProductType,
-} from '@commercetools-test-data/product-type';
+import { ProductType } from '@commercetools-test-data/product-type';
+import { State } from '@commercetools-test-data/state';
+import { TaxCategory } from '@commercetools-test-data/tax-category';
 import {
   TProductProjection,
   TProductProjectionGraphql,
   TProductProjectionRest,
 } from './types';
 import * as ProductProjection from './index';
-import { State } from '@commercetools-test-data/state';
-import { TaxCategory } from '@commercetools-test-data/tax-category';
 
 describe('builder', () => {
   const expectedGeneralLocalizedString = expect.objectContaining({
@@ -31,40 +28,6 @@ describe('builder', () => {
     }),
   ]);
 
-  it('Base', () => {
-    const restProductProjection = ProductProjection.random()
-      .productType(
-        Reference.presets
-          .productTypeReference()
-          .obj(ProductType.presets.milk().id('product-type-id'))
-      )
-      .buildRest<TProductProjectionRest>();
-    // const graphqlProductProjection =
-    //   ProductProjection.random().buildGraphql<TProductProjectionGraphql>();
-    // console.log({
-    //   rest: restProductProjection.productType,
-    //   graphql: graphqlProductProjection.productType,
-    //   gqlProductTypeRef: graphqlProductProjection.productTypeRef,
-    // });
-
-    // const productTypeRef = Reference.presets
-    //   .productTypeReference()
-    //   .typeId('product-type')
-    //   .obj(ProductType.presets.milk().id('product-type-id'))
-    //   .buildRest<TProductType>();
-
-    console.log({ restProductProjection: restProductProjection.productType });
-
-    // const ref = Reference.random()
-    //   .typeId('product-type')
-    //   .obj(ProductType.random().id('isla-bonita'));
-    // console.log({
-    //   rawRef: ref,
-    //   restRef: ref.buildRest<TProductType>(),
-    //   graphqlRef: ref.buildGraphql<TProductType>(),
-    // });
-  });
-
   it(
     ...createBuilderSpec<TProductProjection, TProductProjection>(
       'default',
@@ -75,38 +38,42 @@ describe('builder', () => {
         key: expect.any(String),
         productType: expect.objectContaining({
           id: expect.any(String),
-          key: expect.any(String),
-          version: expect.any(Number),
-          createdAt: expect.any(String),
-          createdBy: expect.objectContaining({
-            customer: expect.objectContaining({ typeId: 'customer' }),
-          }),
-          lastModifiedAt: expect.any(String),
-          lastModifiedBy: expect.objectContaining({
-            customer: expect.objectContaining({ typeId: 'customer' }),
-          }),
-          name: expect.any(String),
-          description: expect.any(String),
-          attributes: expect.arrayContaining([
-            expect.objectContaining({
-              type: expect.objectContaining({ name: expect.any(String) }),
-              name: expect.any(String),
-              label: expect.objectContaining({
-                de: expect.any(String),
-                en: expect.any(String),
-                fr: expect.any(String),
-              }),
-              isRequired: expect.any(Boolean),
-              attributeConstraint: expect.any(String),
-              inputTip: expect.objectContaining({
-                de: expect.any(String),
-                en: expect.any(String),
-                fr: expect.any(String),
-              }),
-              inputHint: expect.any(String),
-              isSearchable: expect.any(Boolean),
+          typeId: expect.any(String),
+          obj: expect.objectContaining({
+            id: expect.any(String),
+            key: expect.any(String),
+            version: expect.any(Number),
+            createdAt: expect.any(String),
+            createdBy: expect.objectContaining({
+              customer: expect.objectContaining({ typeId: 'customer' }),
             }),
-          ]),
+            lastModifiedAt: expect.any(String),
+            lastModifiedBy: expect.objectContaining({
+              customer: expect.objectContaining({ typeId: 'customer' }),
+            }),
+            name: expect.any(String),
+            description: expect.any(String),
+            attributes: expect.arrayContaining([
+              expect.objectContaining({
+                type: expect.objectContaining({ name: expect.any(String) }),
+                name: expect.any(String),
+                label: expect.objectContaining({
+                  de: expect.any(String),
+                  en: expect.any(String),
+                  fr: expect.any(String),
+                }),
+                isRequired: expect.any(Boolean),
+                attributeConstraint: expect.any(String),
+                inputTip: expect.objectContaining({
+                  de: expect.any(String),
+                  en: expect.any(String),
+                  fr: expect.any(String),
+                }),
+                inputHint: expect.any(String),
+                isSearchable: expect.any(Boolean),
+              }),
+            ]),
+          }),
         }),
         name: expectedGeneralLocalizedString,
         description: expectedGeneralLocalizedString,
@@ -271,8 +238,8 @@ describe('builder', () => {
           sku: expect.any(String),
         }),
         variants: [],
-        taxCategory: undefined,
-        state: undefined,
+        taxCategory: null,
+        state: null,
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
         reviewRatingStatistics: undefined,
@@ -285,9 +252,13 @@ describe('builder', () => {
     const productProjectionMock = ProductProjection.presets
       .happyCowMilkProductProjection()
       .categories([
-        Category.random()
-          .id('category-id')
-          .name(LocalizedString.presets.empty().en('category-name')),
+        Reference.presets
+          .categoryReference()
+          .obj(
+            Category.random()
+              .id('category-id')
+              .name(LocalizedString.presets.empty().en('category-name'))
+          ),
       ])
       .categoryOrderHints({
         'category-1': '0.4',
@@ -296,7 +267,6 @@ describe('builder', () => {
       .key('happy-cow-milk-key')
       .metaKeywords(LocalizedString.presets.empty().en('happy'))
       .priceMode('Embedded')
-      // .productType(ProductType.presets.milk().id('product-type-id'))
       .productType(
         Reference.presets
           .productTypeReference()
@@ -323,16 +293,109 @@ describe('builder', () => {
       .variants([ProductVariant.random().key('alternative-variant-key')])
       .version(222);
 
-    it.todo('should build the right rest model');
+    it('should build the right rest model', () => {
+      const restProductProjection =
+        productProjectionMock.buildRest<TProductProjectionRest>();
 
-    it.only('should build the right graphql model', () => {
+      expect(restProductProjection).toEqual(
+        expect.objectContaining({
+          categories: expect.arrayContaining([
+            expect.objectContaining({
+              typeId: 'category',
+              id: 'category-id',
+              obj: expect.objectContaining({
+                id: 'category-id',
+                name: expect.objectContaining({
+                  en: 'category-name',
+                }),
+              }),
+            }),
+          ]),
+          categoryOrderHints: expect.objectContaining({
+            'category-1': '0.4',
+          }),
+          description: expect.objectContaining({
+            en: 'Very happy milk produced by very happy cow!',
+          }),
+          hasStagedChanges: false,
+          id: 'happy-cow-milk-id',
+          key: 'happy-cow-milk-key',
+          masterVariant: expect.objectContaining({
+            key: 'happy-cow-master-variant-key',
+            sku: 'happy-cow-master-variant-sku',
+          }),
+          metaDescription: expect.objectContaining({
+            en: 'Very happy milk produced by very happy cow!',
+          }),
+          metaKeywords: expect.objectContaining({
+            en: 'happy',
+          }),
+          metaTitle: expect.objectContaining({
+            en: 'Happy Cow Milk',
+          }),
+          name: expect.objectContaining({
+            en: 'Happy Cow Milk',
+          }),
+          priceMode: 'Embedded',
+          productType: expect.objectContaining({
+            id: 'product-type-id',
+            typeId: 'product-type',
+            obj: expect.objectContaining({
+              id: 'product-type-id',
+              name: 'Milk Product Type',
+              attributes: expect.any(Array),
+            }),
+          }),
+          published: true,
+          reviewRatingStatistics: expect.objectContaining({
+            averageRating: 3.12345,
+            highestRating: 4.9,
+            lowestRating: 2.1,
+            count: 25,
+            ratingsDistribution: {},
+          }),
+          searchKeywords: expect.objectContaining({
+            en: expect.arrayContaining([
+              {
+                text: 'product search keyword',
+              },
+            ]),
+          }),
+          slug: expect.objectContaining({
+            en: 'happy-cow-milk-slug',
+          }),
+          state: expect.objectContaining({
+            id: 'state-id',
+            typeId: 'state',
+            obj: expect.objectContaining({
+              id: 'state-id',
+              type: expect.any(String),
+              initial: expect.any(Boolean),
+            }),
+          }),
+          taxCategory: expect.objectContaining({
+            id: 'tax-category-id',
+            typeId: 'tax-category',
+            obj: expect.objectContaining({
+              id: 'tax-category-id',
+              name: expect.any(String),
+              rates: expect.any(Array),
+            }),
+          }),
+          variants: expect.arrayContaining([
+            expect.objectContaining({
+              key: 'alternative-variant-key',
+              sku: expect.any(String),
+            }),
+          ]),
+          version: 222,
+        })
+      );
+    });
+
+    it('should build the right graphql model', () => {
       const grapqlProductProjection =
         productProjectionMock.buildGraphql<TProductProjectionGraphql>();
-
-      console.log({
-        productType: grapqlProductProjection.taxCategory,
-        productTypeRef: grapqlProductProjection.taxCategoryRef,
-      });
 
       const expectedLocalizedName = expect.arrayContaining([
         expect.objectContaining({

@@ -15,9 +15,7 @@ export default Generator<TProductProjection>({
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
     productType: fake(() =>
-      Reference.random()
-        .typeId('product-type')
-        .obj(ProductType.random().id('isla-bonita'))
+      Reference.random().typeId('product-type').obj(ProductType.random())
     ),
     name: fake(() => LocalizedString.random()),
     description: fake(() => LocalizedString.random()),
