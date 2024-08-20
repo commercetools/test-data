@@ -70,7 +70,7 @@ describe('builder', () => {
 
     it('should build the right rest model', () => {
       const restReference = referenceMock.buildRest<TReferenceRest>();
-      console.log(restReference);
+
       expect(restReference).toEqual(
         expect.objectContaining({
           id: 'dummy-id',
@@ -84,6 +84,7 @@ describe('builder', () => {
     });
     it('should build the right graphql model', () => {
       const graphqlReference = referenceMock.buildGraphql<TReferenceGraphql>();
+
       expect(graphqlReference).toEqual(
         expect.objectContaining({
           __typename: 'Reference',
