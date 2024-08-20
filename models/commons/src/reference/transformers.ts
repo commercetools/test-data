@@ -1,5 +1,4 @@
 import { Transformer } from '@commercetools-test-data/core';
-import omit from 'lodash/omit';
 import type {
   TExpandedReferenceObject,
   TReference,
@@ -8,7 +7,9 @@ import type {
 } from './types';
 
 const transformers = {
-  default: Transformer<TReference, TReference>('default', {}),
+  default: Transformer<TReference, TReference>('default', {
+    buildFields: ['obj'],
+  }),
   rest: Transformer<TReference, TReferenceRest>('rest', {
     replaceFields: ({ fields }) => {
       const obj = fields.obj
