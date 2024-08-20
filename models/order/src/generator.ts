@@ -39,6 +39,7 @@ const generator = Generator<TOrder>({
     lastModifiedBy: fake(() => ClientLogging.random()),
     completedAt: null,
     orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
+    customer: null,
     customerId: fake((f) => f.string.uuid()),
     customerEmail: fake((f) => f.internet.email()),
     anonymousId: fake((f) => f.string.uuid()),

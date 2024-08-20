@@ -12,6 +12,7 @@ import {
 } from '@commercetools/platform-sdk';
 import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TCustomer } from '@commercetools-test-data/customer';
 
 export type TOrder = Omit<
   Order,
@@ -30,6 +31,7 @@ export type TOrder = Omit<
   state: State;
   cart: Cart;
   quote: Quote;
+  customer: TCustomer | null;
 };
 
 export type TOrderRest = Order;
