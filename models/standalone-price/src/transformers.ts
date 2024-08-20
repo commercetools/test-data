@@ -14,19 +14,11 @@ import type {
 
 // Overloads
 function createCustomerGroupReference(
-  customerGroup: TCustomerGroup,
-  target: 'rest'
+  customerGroup: TCustomerGroup
 ): TReference<'customer-group'>;
-function createCustomerGroupReference(
-  customerGroup: TCustomerGroup,
-  target: 'graphql'
-): TReferenceGraphql<'customer-group'>;
 
 // Create a customer group reference depending on `id` or `key` field availability
-function createCustomerGroupReference(
-  customerGroup: TCustomerGroup,
-  target: 'graphql' | 'rest'
-) {
+function createCustomerGroupReference(customerGroup: TCustomerGroup) {
   let referenceBuilder;
 
   // `key` is optional in CustomerGroup, prioritize it over `id`
@@ -42,9 +34,7 @@ function createCustomerGroupReference(
 
   // Dynamically call buildRest or buildGraphql based on target
   if (referenceBuilder) {
-    return target === 'rest'
-      ? referenceBuilder.buildRest<TReference<'customer-group'>>()
-      : referenceBuilder.buildGraphql<TReferenceGraphql<'customer-group'>>();
+    return referenceBuilder.buildRest<TReference<'customer-group'>>();
   }
 }
 
@@ -82,7 +72,7 @@ const transformers = {
       return {
         ...rest,
         customerGroup: fields.customerGroup
-          ? createCustomerGroupReference(fields.customerGroup, 'rest')
+          ? createCustomerGroupReference(fields.customerGroup)
           : undefined,
         channel,
       };
@@ -97,18 +87,27 @@ const transformers = {
       'channel',
       'tiers',
     ],
-    addFields: ({ fields }) => {
+    replaceFields: ({ fields }) => {
       const customerGroupRef = fields.customerGroup
-        ? createCustomerGroupReference(fields.customerGroup, 'graphql')
+        ? Reference.random()
+            .typeId('customer-group')
+            .id(fields.customerGroup.id)
+            .buildGraphql<TReferenceGraphql<'customer-group'>>()
         : null;
+
       const channelRef = fields.channel
-        ? KeyReference.random()
+        ? Reference.random()
             .typeId('channel')
-            .key(fields.channel.key)
+            .id(fields.channel.id)
             .buildGraphql<TReferenceGraphql<'channel'>>()
         : null;
 
-      return { __typename: 'StandalonePrice', customerGroupRef, channelRef };
+      return {
+        ...fields,
+        __typename: 'StandalonePrice',
+        customerGroupRef,
+        channelRef,
+      };
     },
   }),
 };

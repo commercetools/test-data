@@ -108,10 +108,11 @@ describe('builder', () => {
     )
   );
 
-  it(
-    ...createBuilderSpec<TStandalonePrice, TStandalonePriceGraphql>(
-      'graphql',
-      StandalonePrice.random(),
+  it('should build properties for "graphql"', () => {
+    const standalonePrice =
+      StandalonePrice.random().buildGraphql<TStandalonePriceGraphql>();
+
+    expect(standalonePrice).toEqual(
       expect.objectContaining({
         id: expect.any(String),
         version: expect.any(Number),
@@ -142,11 +143,11 @@ describe('builder', () => {
         }),
         customerGroupRef: expect.objectContaining({
           typeId: 'customer-group',
-          key: expect.any(String),
+          id: expect.any(String),
         }),
         channelRef: expect.objectContaining({
           typeId: 'channel',
-          key: expect.any(String),
+          id: expect.any(String),
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
@@ -166,6 +167,11 @@ describe('builder', () => {
         active: expect.any(Boolean),
         __typename: 'StandalonePrice',
       })
-    )
-  );
+    );
+
+    expect(standalonePrice.customerGroup?.id).toBe(
+      standalonePrice.customerGroupRef?.id
+    );
+    expect(standalonePrice.channel?.id).toBe(standalonePrice.channelRef?.id);
+  });
 });
