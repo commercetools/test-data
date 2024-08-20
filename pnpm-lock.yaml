@@ -625,6 +625,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.1.1
         version: link:../../core
+      '@commercetools-test-data/customer':
+        specifier: 10.1.1
+        version: link:../customer
       '@commercetools-test-data/customer-group':
         specifier: 10.1.1
         version: link:../customer-group
@@ -640,6 +643,12 @@ importers:
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
+      '@types/lodash':
+        specifier: ^4.17.0
+        version: 4.17.4
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
 
   models/organization:
     dependencies:

@@ -22,6 +22,7 @@ describe('builder', () => {
         }),
         completedAt: null,
         orderNumber: expect.any(String),
+        customer: null,
         customerId: expect.any(String),
         customerEmail: expect.any(String),
         anonymousId: expect.any(String),
@@ -94,101 +95,108 @@ describe('builder', () => {
     )
   );
 
-  it(
-    ...createBuilderSpec<TOrder, TOrderRest>(
-      'rest',
-      Order.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        completedAt: null,
-        orderNumber: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-        }),
-        store: expect.objectContaining({
-          typeId: 'store',
-        }),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
+  describe('rest transformation', () => {
+    it(
+      ...createBuilderSpec<TOrder, TOrderRest>(
+        'rest',
+        Order.random(),
+        expect.objectContaining({
+          id: expect.any(String),
+          version: expect.any(Number),
+          createdAt: expect.any(String),
+          createdBy: expect.objectContaining({
+            customer: expect.objectContaining({ typeId: 'customer' }),
           }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        totalPrice: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        taxedPrice: null,
-        taxedShippingPrice: null,
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        shippingMode: expect.any(String),
-        shipping: expect.arrayContaining([]),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
-        }),
-        country: expect.any(String),
-        orderState: expect.any(String),
-        state: expect.objectContaining({
-          typeId: 'state',
-        }),
-        shipmentState: expect.any(String),
-        paymentState: expect.any(String),
-        shippingInfo: null,
-        syncInfo: null,
-        returnInfo: expect.arrayContaining([]),
-        purchaseOrderNumber: expect.any(String),
-        discountCodes: expect.arrayContaining([]),
-        refusedGifts: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'cart-discount',
+          lastModifiedAt: expect.any(String),
+          lastModifiedBy: expect.objectContaining({
+            customer: expect.objectContaining({ typeId: 'customer' }),
           }),
-        ]),
-        cart: expect.objectContaining({
-          typeId: 'cart',
-        }),
-        quote: expect.objectContaining({
-          typeId: 'quote',
-        }),
-        custom: null,
-        paymentInfo: null,
-        locale: expect.any(String),
-        inventoryMode: expect.any(String),
-        shippingRateInput: null,
-        origin: null,
-        itemShippingAddresses: expect.arrayContaining([
-          expect.objectContaining({
-            title: expect.any(String),
-            state: expect.any(String),
+          completedAt: null,
+          orderNumber: expect.any(String),
+          customerId: expect.any(String),
+          customerEmail: expect.any(String),
+          anonymousId: expect.any(String),
+          businessUnit: expect.objectContaining({
+            typeId: 'business-unit',
           }),
-        ]),
-      })
-    )
-  );
+          store: expect.objectContaining({
+            typeId: 'store',
+          }),
+          lineItems: expect.arrayContaining([
+            expect.objectContaining({
+              id: expect.any(String),
+              quantity: expect.any(Number),
+            }),
+          ]),
+          customLineItems: expect.arrayContaining([]),
+          totalPrice: expect.objectContaining({
+            centAmount: expect.any(Number),
+            currencyCode: expect.any(String),
+          }),
+          taxedPrice: null,
+          taxedShippingPrice: null,
+          shippingAddress: expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+          billingAddress: expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+          shippingMode: expect.any(String),
+          shipping: expect.arrayContaining([]),
+          taxMode: expect.any(String),
+          taxRoundingMode: expect.any(String),
+          taxCalculationMode: expect.any(String),
+          customerGroup: expect.objectContaining({
+            typeId: 'customer-group',
+          }),
+          country: expect.any(String),
+          orderState: expect.any(String),
+          state: expect.objectContaining({
+            typeId: 'state',
+          }),
+          shipmentState: expect.any(String),
+          paymentState: expect.any(String),
+          shippingInfo: null,
+          syncInfo: null,
+          returnInfo: expect.arrayContaining([]),
+          purchaseOrderNumber: expect.any(String),
+          discountCodes: expect.arrayContaining([]),
+          refusedGifts: expect.arrayContaining([
+            expect.objectContaining({
+              typeId: 'cart-discount',
+            }),
+          ]),
+          cart: expect.objectContaining({
+            typeId: 'cart',
+          }),
+          quote: expect.objectContaining({
+            typeId: 'quote',
+          }),
+          custom: null,
+          paymentInfo: null,
+          locale: expect.any(String),
+          inventoryMode: expect.any(String),
+          shippingRateInput: null,
+          origin: null,
+          itemShippingAddresses: expect.arrayContaining([
+            expect.objectContaining({
+              title: expect.any(String),
+              state: expect.any(String),
+            }),
+          ]),
+        })
+      )
+    );
+
+    it('should not have graphql only properties', () => {
+      const defaultModel = Order.random().buildRest<TOrder>();
+      expect(defaultModel).not.toHaveProperty('customer');
+    });
+  });
 
   it(
     ...createBuilderSpec<TOrder, TOrderGraphql>(
@@ -209,6 +217,7 @@ describe('builder', () => {
         }),
         completedAt: null,
         orderNumber: expect.any(String),
+        customer: null,
         customerId: expect.any(String),
         customerEmail: expect.any(String),
         anonymousId: expect.any(String),
