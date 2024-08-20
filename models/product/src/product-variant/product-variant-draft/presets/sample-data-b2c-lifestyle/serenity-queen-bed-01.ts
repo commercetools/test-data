@@ -37,7 +37,7 @@ const serenityQueenBed01 = (): TProductVariantDraftBuilder =>
         'de-DE': '- Montage im Lieferumfang enthalten',
       }),
       AttributeDraft.random()
-        .name('color-filter')
+        .name('color')
         .value({
           key: '#808080',
           label: {
