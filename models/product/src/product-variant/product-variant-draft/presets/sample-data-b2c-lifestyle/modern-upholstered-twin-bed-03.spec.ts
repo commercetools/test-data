@@ -30,14 +30,6 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
       },
     },
     {
-      "name": "finishlabel",
-      "value": {
-        "de-DE": "Oak",
-        "en-GB": "Oak",
-        "en-US": "Oak",
-      },
-    },
-    {
       "name": "color",
       "value": {
         "de-DE": "Grau:#808080",
@@ -143,10 +135,6 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
     {
       "name": "productspec",
       "value": "{"en-US":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","en-GB":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","de-DE":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site"}",
-    },
-    {
-      "name": "finishlabel",
-      "value": "{"en-US":"Oak","en-GB":"Oak","de-DE":"Oak"}",
     },
     {
       "name": "color",

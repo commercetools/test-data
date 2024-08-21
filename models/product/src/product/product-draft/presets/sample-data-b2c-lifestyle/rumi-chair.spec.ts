@@ -42,17 +42,6 @@ describe(`with rumiChair preset`, () => {
         },
       },
       {
-        "name": "color-filter",
-        "value": {
-          "key": "#A020F0",
-          "label": {
-            "de-DE": "Lila",
-            "en-GB": "Purple",
-            "en-US": "Purple",
-          },
-        },
-      },
-      {
         "name": "color",
         "value": {
           "de-DE": "Lavendel:#fff0f5",
@@ -205,10 +194,6 @@ describe(`with rumiChair preset`, () => {
       {
         "name": "productspec",
         "value": "{"en-GB":"- Dry clean only","en-US":"- Dry clean only","de-DE":"- Nur chemische Reinigung"}",
-      },
-      {
-        "name": "color-filter",
-        "value": "{"key":"#A020F0","label":{"de-DE":"Lila","en-GB":"Purple","en-US":"Purple"}}",
       },
       {
         "name": "color",
