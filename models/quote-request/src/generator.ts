@@ -1,10 +1,10 @@
-import { Company } from '@commercetools-test-data/business-unit';
-import { LineItem } from '@commercetools-test-data/cart';
+import { Cart, LineItem } from '@commercetools-test-data/cart';
 import {
   CentPrecisionMoney,
   ClientLogging,
   Address,
   Reference,
+  KeyReference,
 } from '@commercetools-test-data/commons';
 import {
   sequence,
@@ -14,7 +14,6 @@ import {
 } from '@commercetools-test-data/core';
 import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
-import { Store } from '@commercetools-test-data/store';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import {
   QUOTE_REQUEST_STATE,
@@ -36,9 +35,13 @@ const generator = Generator<TQuoteRequest>({
     key: fake((f) => f.lorem.slug(2)),
     quoteRequestState: oneOf(...Object.values(QUOTE_REQUEST_STATE)),
     comment: null,
-    customer: fake(() => Customer.random()),
-    customerGroup: fake(() => CustomerGroup.random()),
-    store: fake(() => Store.random()),
+    customer: fake(() =>
+      Reference.presets.customerReference().obj(Customer.random())
+    ),
+    customerGroup: fake(() =>
+      Reference.presets.customerGroupReference().obj(CustomerGroup.random())
+    ),
+    store: fake(() => KeyReference.presets.store()),
     lineItems: fake(() => [LineItem.random()]),
     customLineItems: [],
     totalPrice: fake(() => CentPrecisionMoney.random()),
@@ -57,8 +60,11 @@ const generator = Generator<TQuoteRequest>({
     directDiscounts: [],
     state: null,
     purchaseOrderNumber: null,
-    cart: fake(() => Reference.random().typeId('cart')),
-    businessUnit: fake(() => Company.random()),
+    cart: fake(() => Reference.presets.cartReference().obj(Cart.random())),
+    businessUnit: fake(
+      () => KeyReference.presets.businessUnit()
+      // Reference.presets.businessUnitReference().obj(Company.random())
+    ),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

@@ -1,53 +1,42 @@
 import type {
-  BusinessUnit,
-  Cart,
-  Customer,
   StagedQuote,
   StagedQuoteDraft,
-  State,
-  QuoteRequest,
 } from '@commercetools/platform-sdk';
-import { TCart } from '@commercetools-test-data/cart';
+import {
+  TCompanyGraphql,
+  TDivisionGraphql,
+} from '@commercetools-test-data/business-unit';
+import { TCartGraphql } from '@commercetools-test-data/cart';
 import {
   TReferenceGraphql,
   TKeyReferenceGraphql,
-  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomer } from '@commercetools-test-data/customer';
-import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
-import { TState } from '@commercetools-test-data/state';
+import { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
+import { TStateGraphql } from '@commercetools-test-data/state';
 
 // Default
-export type TStagedQuote = Omit<
-  StagedQuote,
-  'businessUnit' | 'customer' | 'quotationCart' | 'quoteRequest' | 'state'
-> & {
-  businessUnit: BusinessUnit;
-  customer: Customer;
-  quotationCart: Cart;
-  quoteRequest: QuoteRequest;
-  state: State;
-};
+export type TStagedQuote = StagedQuote;
 
 // Rest
-export type TStagedQuoteRest = Omit<
-  StagedQuote,
-  'customer' | 'quoteRequest' | 'quoteRequest' | 'quotationCart' | 'state'
-> & {
-  customer?: TReferenceRest<TCustomer>;
-  quotationCart: TReferenceRest<TCart>;
-  quoteRequest: TReferenceRest<TQuoteRequestRest>;
-  state?: TReferenceRest<TState>;
-};
+export type TStagedQuoteRest = StagedQuote;
 export type TStagedQuoteDraft = StagedQuoteDraft;
 
-export type TStagedQuoteGraphql = TStagedQuote & {
-  businessUnitRef: TKeyReferenceGraphql | null;
-  customerRef: TReferenceGraphql | null;
+export type TStagedQuoteGraphql = Omit<
+  TStagedQuote,
+  'businessUnit' | 'customer' | 'quotationCart' | 'quoteRequest' | 'state'
+> & {
+  businessUnit?: TCompanyGraphql | TDivisionGraphql;
+  businessUnitRef?: TKeyReferenceGraphql;
+  customer?: TCustomerGraphql;
+  customerRef?: TReferenceGraphql;
+  quotationCart: TCartGraphql;
   quotationCartRef: TReferenceGraphql;
+  quoteRequest: TQuoteRequestGraphql;
   quoteRequestRef: TReferenceGraphql;
-  stateRef: TReferenceGraphql | null;
+  state?: TStateGraphql;
+  stateRef?: TReferenceGraphql | null;
   __typename: 'StagedQuote';
 };
 export type TStagedQuoteDraftGraphql = TStagedQuoteDraft;

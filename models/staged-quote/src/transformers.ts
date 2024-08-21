@@ -1,17 +1,23 @@
-import { BusinessUnitKeyReference } from '@commercetools/platform-sdk';
-import { TCart } from '@commercetools-test-data/cart';
+import {
+  Company,
+  TCompanyGraphql,
+} from '@commercetools-test-data/business-unit';
+import { Cart, TCartGraphql } from '@commercetools-test-data/cart';
 import {
   Reference,
   KeyReference,
   TReferenceGraphql,
   TKeyReferenceGraphql,
-  TReferenceRest,
+  LocalizedString,
 } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
+import { buildField, Transformer } from '@commercetools-test-data/core';
 
-import { TCustomer } from '@commercetools-test-data/customer';
-import { TQuoteRequestRest } from '@commercetools-test-data/quote-request';
-import { TState } from '@commercetools-test-data/state';
+import { Customer, TCustomerGraphql } from '@commercetools-test-data/customer';
+import {
+  QuoteRequest,
+  TQuoteRequestGraphql,
+} from '@commercetools-test-data/quote-request';
+import { State, TStateGraphql } from '@commercetools-test-data/state';
 import type {
   TStagedQuote,
   TStagedQuoteRest,
@@ -42,89 +48,94 @@ const transformers = {
       'createdBy',
       'lastModifiedBy',
     ],
+  }),
+  graphql: Transformer<TStagedQuote, TStagedQuoteGraphql>('graphql', {
+    buildFields: ['custom', 'createdBy', 'lastModifiedBy'],
     replaceFields: ({ fields }) => {
-      const customer = Reference.presets
-        .customerReference()
-        .id(fields.customer.id)
-        .build<TReferenceRest<TCustomer>>();
+      let businessUnit: TCompanyGraphql | undefined = undefined;
+      let businessUnitRef: TKeyReferenceGraphql | undefined = undefined;
+      let customer: TCustomerGraphql | undefined = undefined;
+      let customerRef: TReferenceGraphql | undefined = undefined;
+      let state: TStateGraphql | undefined = undefined;
+      let stateRef: TReferenceGraphql | undefined = undefined;
 
-      const quoteRequest = Reference.presets
+      const restQuoteRequestRef = buildField(fields.quoteRequest, 'rest');
+      const quoteRequestRef: TReferenceGraphql = Reference.presets
         .quoteRequestReference()
-        .id(fields.quoteRequest.id)
-        .build<TReferenceRest<TQuoteRequestRest>>();
+        .id(restQuoteRequestRef.id)
+        .buildGraphql();
+      const quoteRequest = QuoteRequest.random()
+        .id(restQuoteRequestRef.id)
+        .key(restQuoteRequestRef.obj?.key)
+        .buildGraphql<TQuoteRequestGraphql>();
 
-      const quotationCart = Reference.presets
+      const restQuotationCartRef = buildField(fields.quotationCart, 'rest');
+      const quotationCartRef: TReferenceGraphql = Reference.presets
         .cartReference()
-        .id(fields.quotationCart.id)
-        .build<TReferenceRest<TCart>>();
+        .id(restQuotationCartRef.id)
+        .buildGraphql();
+      const quotationCart = Cart.random()
+        .id(restQuotationCartRef.id)
+        .key(restQuotationCartRef.obj?.key)
+        .buildGraphql<TCartGraphql>();
 
-      const state = Reference.presets
-        .stateReference()
-        .id(fields.state?.id)
-        .build<TReferenceRest<TState>>();
+      if (fields.customer) {
+        const restCustomerRef = buildField(fields.customer, 'rest');
+        customerRef = Reference.presets
+          .customerReference()
+          .id(restCustomerRef.id)
+          .buildGraphql<TReferenceGraphql>();
+        customer = Customer.random()
+          .id(restCustomerRef.id)
+          .firstName(restCustomerRef.obj?.firstName)
+          .lastName(restCustomerRef.obj?.lastName)
+          .key(restCustomerRef.obj?.key)
+          .email(restCustomerRef.obj?.email || '')
+          .buildGraphql<TCustomerGraphql>();
+      }
 
-      const businessUnit = KeyReference.presets
-        .businessUnit()
-        .key(fields.businessUnit?.key)
-        .buildRest<BusinessUnitKeyReference>();
+      if (fields.businessUnit) {
+        const restBusinessUnitRef = buildField(fields.businessUnit, 'rest');
+        businessUnitRef = KeyReference.presets
+          .businessUnit()
+          .key(restBusinessUnitRef.key)
+          .buildGraphql<TKeyReferenceGraphql>();
+        businessUnit = Company.random()
+          .key(restBusinessUnitRef.key)
+          .buildGraphql<TCompanyGraphql>();
+      }
+
+      if (fields.state) {
+        const restStateRef = buildField(fields.state, 'rest');
+        stateRef = Reference.presets
+          .stateReference()
+          .id(restStateRef.id)
+          .buildGraphql<TReferenceGraphql>();
+        state = State.random()
+          .id(restStateRef.id)
+          .key(restStateRef.obj?.key || '')
+          .type(restStateRef.obj?.type || '')
+          .name(
+            LocalizedString.presets
+              .empty()
+              .en(restStateRef.obj?.name?.en)
+              .de(restStateRef.obj?.name?.de)
+          )
+          .buildGraphql<TStateGraphql>();
+      }
 
       return {
         ...fields,
+        businessUnit,
+        businessUnitRef,
         customer,
-        quoteRequest,
-        quotationCart,
-        state: fields.state ? state : undefined,
-        businessUnit: fields.businessUnit ? businessUnit : undefined,
-      };
-    },
-  }),
-  graphql: Transformer<TStagedQuote, TStagedQuoteGraphql>('graphql', {
-    buildFields: [
-      'customer',
-      'quoteRequest',
-      'quotationCart',
-      'state',
-      'businessUnit',
-      'custom',
-      'createdBy',
-      'lastModifiedBy',
-    ],
-    addFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.presets
-        .customerReference()
-        .id(fields.customer.id)
-        .typeId('customer')
-        .buildGraphql();
-
-      const quoteRequestRef: TReferenceGraphql = Reference.presets
-        .quoteRequestReference()
-        .id(fields.quoteRequest.id)
-        .typeId('quote-request')
-        .buildGraphql();
-
-      const quotationCartRef: TReferenceGraphql = Reference.presets
-        .cartReference()
-        .id(fields.quotationCart.id)
-        .typeId('cart')
-        .buildGraphql();
-
-      const stateRef: TReferenceGraphql = Reference.presets
-        .stateReference()
-        .id(fields.state?.id)
-        .typeId('state')
-        .buildGraphql();
-
-      const businessUnitRef: TKeyReferenceGraphql = KeyReference.presets
-        .businessUnit()
-        .key(fields.businessUnit?.key)
-        .buildGraphql();
-
-      return {
         customerRef,
-        quoteRequestRef,
+        quotationCart,
         quotationCartRef,
-        stateRef: fields.state ? stateRef : undefined,
-        businessUnitRef: fields.businessUnit ? businessUnitRef : undefined,
+        quoteRequest,
+        quoteRequestRef,
+        state,
+        stateRef,
         __typename: 'StagedQuote',
       };
     },

@@ -1,56 +1,48 @@
 import type {
-  BusinessUnit,
-  Customer,
-  CustomerGroup,
-  State,
-  Store,
   QuoteRequest,
   QuoteRequestDraft,
 } from '@commercetools/platform-sdk';
-import { TCart } from '@commercetools-test-data/cart';
+import {
+  TCompanyGraphql,
+  TDivisionGraphql,
+} from '@commercetools-test-data/business-unit';
+import { TCartGraphql } from '@commercetools-test-data/cart';
 import {
   TReferenceGraphql,
   TKeyReferenceGraphql,
-  TReferenceRest,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomer } from '@commercetools-test-data/customer';
-import { TCustomerGroup } from '@commercetools-test-data/customer-group';
-import { TState } from '@commercetools-test-data/state';
+import { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
+import { TStateGraphql } from '@commercetools-test-data/state';
+import { TStoreGraphql } from '@commercetools-test-data/store';
 
 // Default
-export type TQuoteRequest = Omit<
-  QuoteRequest,
-  'customer' | 'customerGroup' | 'store' | 'state' | 'businessUnit'
-> & {
-  customer: Customer;
-  customerGroup: CustomerGroup;
-  store: Store;
-  state: State;
-  businessUnit: BusinessUnit;
-};
+export type TQuoteRequest = QuoteRequest;
 
 // Rest
-export type TQuoteRequestRest = Omit<
-  QuoteRequest,
-  'cart' | 'customer' | 'customerGroup' | 'state'
-> & {
-  cart?: TReferenceRest<TCart>;
-  customer: TReferenceRest<TCustomer>;
-  customerGroup?: TReferenceRest<TCustomerGroup>;
-  state?: TReferenceRest<TState>;
-};
+export type TQuoteRequestRest = QuoteRequest;
 export type TQuoteRequestDraft = QuoteRequestDraft;
 
-export type TQuoteRequestGraphql = TQuoteRequest & {
-  customerRef: TReferenceGraphql | null;
-  customerGroupRef: TReferenceGraphql | null;
-  storeRef: TKeyReferenceGraphql | null;
-  stateRef: TReferenceGraphql | null;
-  cartRef: TReferenceGraphql | null;
-  businessUnitRef: TKeyReferenceGraphql | null;
+export type TQuoteRequestGraphql = Omit<
+  TQuoteRequest,
+  'cart' | 'businessUnit' | 'customer' | 'customerGroup' | 'state' | 'store'
+> & {
+  businessUnit?: TCompanyGraphql | TDivisionGraphql;
+  businessUnitRef?: TKeyReferenceGraphql | null;
+  cart?: TCartGraphql;
+  cartRef?: TReferenceGraphql;
+  customer: TCustomerGraphql;
+  customerRef: TReferenceGraphql;
+  customerGroup?: TCustomerGroupGraphql;
+  customerGroupRef?: TReferenceGraphql;
+  state?: TStateGraphql;
+  stateRef?: TReferenceGraphql;
+  store?: TStoreGraphql;
+  storeRef?: TKeyReferenceGraphql;
   __typename: 'QuoteRequest';
 };
+
 export type TQuoteRequestDraftGraphql = TQuoteRequestDraft;
 
 export type TQuoteRequestBuilder = TBuilder<TQuoteRequest>;
