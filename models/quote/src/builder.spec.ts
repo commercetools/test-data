@@ -15,105 +15,33 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         quoteRequest: expect.objectContaining({
-          quoteRequestState: expect.any(String),
-        }),
-        stagedQuote: expect.objectContaining({
-          stagedQuoteState: expect.any(String),
-        }),
-        customer: expect.objectContaining({
-          email: expect.any(String),
-        }),
-        customerGroup: expect.objectContaining({
-          name: expect.any(String),
-          version: expect.any(Number),
-        }),
-        validTo: expect.any(String),
-        sellerComment: expect.any(String),
-        buyerComment: expect.any(String),
-        store: expect.objectContaining({
-          id: expect.any(String),
-          key: expect.any(String),
-        }),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        totalPrice: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        taxedPrice: null,
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        country: expect.any(String),
-        shippingInfo: null,
-        paymentInfo: null,
-        shippingRateInput: null,
-        itemShippingAddresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-          }),
-        ]),
-        directDiscounts: expect.arrayContaining([]),
-        quoteState: expect.any(String),
-        state: null,
-        purchaseOrderNumber: null,
-        businessUnit: expect.objectContaining({
-          id: expect.any(String),
-          key: expect.any(String),
-          associateMode: expect.any(String),
-        }),
-        custom: null,
-        createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-      })
-    )
-  );
-  it(
-    ...createBuilderSpec<TQuote, TQuoteRest>(
-      'rest',
-      Quote.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        quoteRequest: expect.objectContaining({
           id: expect.any(String),
           typeId: 'quote-request',
+          obj: expect.objectContaining({
+            quoteRequestState: expect.any(String),
+          }),
         }),
         stagedQuote: expect.objectContaining({
           id: expect.any(String),
           typeId: 'staged-quote',
+          obj: expect.objectContaining({
+            stagedQuoteState: expect.any(String),
+          }),
         }),
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
         }),
         customerGroup: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'customer-group',
+          obj: expect.objectContaining({
+            name: expect.any(String),
+            version: expect.any(Number),
+          }),
         }),
         validTo: expect.any(String),
         sellerComment: expect.any(String),
@@ -161,7 +89,108 @@ describe('builder', () => {
         ]),
         directDiscounts: expect.arrayContaining([]),
         quoteState: expect.any(String),
-        state: undefined,
+        state: null,
+        purchaseOrderNumber: null,
+        businessUnit: expect.objectContaining({
+          key: expect.any(String),
+          typeId: 'business-unit',
+        }),
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TQuote, TQuoteRest>(
+      'rest',
+      Quote.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        quoteRequest: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'quote-request',
+          obj: expect.objectContaining({
+            quoteRequestState: expect.any(String),
+          }),
+        }),
+        stagedQuote: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'staged-quote',
+          obj: expect.objectContaining({
+            stagedQuoteState: expect.any(String),
+          }),
+        }),
+        customer: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
+        }),
+        customerGroup: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'customer-group',
+          obj: expect.objectContaining({
+            name: expect.any(String),
+            version: expect.any(Number),
+          }),
+        }),
+        validTo: expect.any(String),
+        sellerComment: expect.any(String),
+        buyerComment: expect.any(String),
+        store: expect.objectContaining({
+          key: expect.any(String),
+          typeId: 'store',
+        }),
+        lineItems: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            quantity: expect.any(Number),
+          }),
+        ]),
+        customLineItems: expect.arrayContaining([]),
+        totalPrice: expect.objectContaining({
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
+        }),
+        taxedPrice: null,
+        shippingAddress: expect.objectContaining({
+          city: expect.any(String),
+          firstName: expect.any(String),
+          lastName: expect.any(String),
+        }),
+        billingAddress: expect.objectContaining({
+          city: expect.any(String),
+          firstName: expect.any(String),
+          lastName: expect.any(String),
+        }),
+        inventoryMode: expect.any(String),
+        taxMode: expect.any(String),
+        taxRoundingMode: expect.any(String),
+        taxCalculationMode: expect.any(String),
+        country: expect.any(String),
+        shippingInfo: null,
+        paymentInfo: null,
+        shippingRateInput: null,
+        itemShippingAddresses: expect.arrayContaining([
+          expect.objectContaining({
+            city: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+          }),
+        ]),
+        directDiscounts: expect.arrayContaining([]),
+        quoteState: expect.any(String),
+        state: null,
         businessUnit: expect.objectContaining({
           key: expect.any(String),
           typeId: 'business-unit',
@@ -267,7 +296,7 @@ describe('builder', () => {
         ]),
         directDiscounts: expect.arrayContaining([]),
         quoteState: expect.any(String),
-        state: null,
+        state: undefined,
         stateRef: undefined,
         businessUnit: expect.objectContaining({
           id: expect.any(String),

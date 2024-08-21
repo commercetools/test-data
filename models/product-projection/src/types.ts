@@ -3,34 +3,19 @@ import {
   ReviewRatingStatistics,
   SuggestTokenizer,
 } from '@commercetools/platform-sdk';
-import { TCategory, TCategoryGraphql } from '@commercetools-test-data/category';
+import { TCategoryGraphql } from '@commercetools-test-data/category';
 import {
   TLocalizedStringGraphql,
-  TReferenceRest,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import {
-  TProductType,
-  TProductTypeGraphql,
-} from '@commercetools-test-data/product-type';
-import { TState, TStateGraphql } from '@commercetools-test-data/state';
-import {
-  TTaxCategory,
-  TTaxCategoryGraphql,
-} from '@commercetools-test-data/tax-category';
+import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
+import { TStateGraphql } from '@commercetools-test-data/state';
+import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
 
 export type TProductProjection = ProductProjection;
 
-export type TProductProjectionRest = Omit<
-  TProductProjection,
-  'productType' | 'categories' | 'taxCategory' | 'state'
-> & {
-  productType: TReferenceRest<TProductType>;
-  categories: TReferenceRest<TCategory>[];
-  taxCategory?: TReferenceRest<TTaxCategory>;
-  state?: TReferenceRest<TState>;
-};
+export type TProductProjectionRest = TProductProjection;
 
 export type TCategoryOrderHintGraphql = {
   categoryId: string;

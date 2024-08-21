@@ -24,7 +24,7 @@ const resolveGraphqlDefaultLocaleValue = (
   const defaultLocaleName = allLocales.find(
     (name) => name.locale === DEFAULT_LOCALE
   );
-  return defaultLocaleName ? defaultLocaleName.value : allLocales[0].value;
+  return defaultLocaleName ? defaultLocaleName.value : allLocales[0]?.value;
 };
 
 export { resolveGraphqlDefaultLocaleValue, toLocalizedField };

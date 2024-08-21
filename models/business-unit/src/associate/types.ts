@@ -1,26 +1,17 @@
-import type {
-  Associate,
-  AssociateDraft,
-  Customer,
-} from '@commercetools/platform-sdk';
-import {
-  TReferenceGraphql,
-  TReferenceRest,
-} from '@commercetools-test-data/commons';
+import type { Associate, AssociateDraft } from '@commercetools/platform-sdk';
+import { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomer } from '@commercetools-test-data/customer';
+import { TCustomerGraphql } from '@commercetools-test-data/customer';
+
+export type TAssociateDefault = Associate;
 
 export type TAssociateDraft = AssociateDraft;
 export type TAssociateDraftGraphql = TAssociateDraft;
 
-export type TAssociateDefault = Omit<Associate, 'customer'> & {
-  customer: Customer;
-};
-export type TAssociateRest = Omit<Associate, 'customer'> & {
-  customer: TReferenceRest<TCustomer>;
-};
+export type TAssociateRest = Associate;
 
-export type TAssociateGraphql = TAssociateDefault & {
+export type TAssociateGraphql = Omit<TAssociateDefault, 'customer'> & {
+  customer: TCustomerGraphql;
   customerRef: TReferenceGraphql | null;
   __typename: 'Associate';
 };

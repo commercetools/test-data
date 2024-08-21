@@ -1,4 +1,4 @@
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
 import {
   Transformer,
   buildField,
@@ -39,23 +39,29 @@ const transformers = {
       'custom',
     ],
     replaceFields: ({ fields }) => {
-      const restCustomer = buildField(fields.customer, 'rest');
-      const customerBuilder = restCustomer.email
-        ? Customer.random()
-            .id(restCustomer.id)
-            .firstName(restCustomer.firstName)
-            .lastName(restCustomer.lastName)
-            .key(restCustomer.key)
-            .customerNumber(restCustomer.customerNumber)
-            .externalId(restCustomer.externalId)
-            .email(restCustomer.email)
-            .title(restCustomer.title)
-        : Customer.random().id(restCustomer.id);
-      const customerRef: TReferenceGraphql = {
-        id: restCustomer.id,
-        typeId: 'customer',
-        __typename: 'Reference',
-      };
+      let customer: TCustomerGraphql | undefined = undefined;
+      let customerRef: TReferenceGraphql | undefined = undefined;
+
+      if (fields.customer) {
+        const restCustomerRef = buildField(fields.customer, 'rest');
+
+        customerRef = Reference.presets
+          .customerReference()
+          .id(restCustomerRef.id)
+          .buildGraphql<TReferenceGraphql>();
+
+        customer = Customer.random()
+          .id(restCustomerRef.id)
+          .firstName(restCustomerRef.obj?.firstName)
+          .lastName(restCustomerRef.obj?.lastName)
+          .key(restCustomerRef.obj?.key)
+          .customerNumber(restCustomerRef.obj?.customerNumber)
+          .externalId(restCustomerRef.obj?.externalId)
+          .email(restCustomerRef.obj?.email || '')
+          .title(restCustomerRef.obj?.title)
+          .buildGraphql<TCustomerGraphql>();
+      }
+
       // TODO: This exists in the Graphql API, but not in the REST API
       // We're stubbing it out for now because it's non-nullable
       const interfaceInteractionsRaw = toGraphqlPaginatedQueryResult([], {
@@ -63,7 +69,7 @@ const transformers = {
       });
       return {
         ...fields,
-        customer: customerBuilder.buildGraphql<TCustomerGraphql>(),
+        customer,
         customerRef,
         interfaceInteractionsRaw,
         __typename: 'Payment',

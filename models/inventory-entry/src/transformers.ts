@@ -1,5 +1,9 @@
 import { Channel, TChannelGraphql } from '@commercetools-test-data/channel';
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  LocalizedString,
+  Reference,
+  TReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
 import type {
   TInventoryEntry,
@@ -16,18 +20,29 @@ const transformers = {
   }),
   graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
     replaceFields: ({ fields }) => {
-      const restSupplyChannel = buildField(fields.supplyChannel, 'rest');
-      const supplyChannelRef = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .buildGraphql<TReferenceGraphql>();
+      let supplyChannel: TChannelGraphql | undefined = undefined;
+      let supplyChannelRef: TReferenceGraphql | undefined = undefined;
 
-      const supplyChannel = Channel.random()
-        .description(restSupplyChannel.description)
-        .id(restSupplyChannel.id)
-        .key(restSupplyChannel.key)
-        .name(restSupplyChannel.name)
-        .buildGraphql<TChannelGraphql>();
+      if (fields.supplyChannel) {
+        const restSupplyChannelRef = buildField(fields.supplyChannel, 'rest');
+
+        supplyChannelRef = Reference.presets
+          .channelReference()
+          .id(restSupplyChannelRef.id)
+          .buildGraphql<TReferenceGraphql>();
+
+        supplyChannel = Channel.random()
+          .description(restSupplyChannelRef.obj!.description)
+          .id(restSupplyChannelRef.id)
+          .key(restSupplyChannelRef.obj!.key)
+          .name(
+            LocalizedString.presets
+              .empty()
+              .en(restSupplyChannelRef.obj!.name?.en)
+              .de(restSupplyChannelRef.obj!.name?.de)
+          )
+          .buildGraphql<TChannelGraphql>();
+      }
 
       return {
         ...fields,

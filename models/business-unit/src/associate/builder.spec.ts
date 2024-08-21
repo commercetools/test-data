@@ -70,10 +70,10 @@ describe('builder', () => {
         ]),
         customer: expect.objectContaining({
           id: expect.any(String),
-          typeId: 'customer',
-          __typename: 'Reference',
+          email: expect.any(String),
         }),
         customerRef: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'customer',
           __typename: 'Reference',
         }),

@@ -19,19 +19,15 @@ export type TChannelDraftGraphql = Omit<
 
 export type TChannelGraphql = Omit<
   TChannel,
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
-  | 'name'
-  // In GraphQL, we prefer to use `descriptionAllLocales` instead of `description`.
-  | 'description'
-  // In GraphQL, the object shape is different.
-  | 'createdBy'
-  // In GraphQL, the object shape is different.
-  | 'lastModifiedBy'
+  // In GraphQL, these properties have different shapes.
+  'name' | 'description' | 'createdBy' | 'lastModifiedBy'
 > & {
   __typename: 'Channel';
-  createdBy: TClientLoggingGraphql;
-  lastModifiedBy: TClientLoggingGraphql;
+  createdBy?: TClientLoggingGraphql;
+  lastModifiedBy?: TClientLoggingGraphql;
+  name?: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
+  description?: string;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
 };
 

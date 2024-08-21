@@ -31,11 +31,11 @@ describe('builder', () => {
         country: expect.any(String),
         customerGroup: expect.objectContaining({
           id: expect.any(String),
-          key: expect.any(String),
+          typeId: 'customer-group',
         }),
         channel: expect.objectContaining({
           id: expect.any(String),
-          key: expect.any(String),
+          typeId: 'channel',
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
@@ -53,7 +53,6 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
-        expiresAt: expect.any(String),
       })
     )
   );
@@ -141,12 +140,14 @@ describe('builder', () => {
           key: expect.any(String),
         }),
         customerGroupRef: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'customer-group',
-          key: expect.any(String),
+          __typename: 'Reference',
         }),
         channelRef: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'channel',
-          key: expect.any(String),
+          __typename: 'Reference',
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),

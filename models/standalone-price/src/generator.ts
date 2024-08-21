@@ -3,6 +3,7 @@ import {
   ClientLogging,
   PriceTier,
   CentPrecisionMoney,
+  Reference,
 } from '@commercetools-test-data/commons';
 import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
@@ -25,15 +26,18 @@ const generator = Generator<TStandalonePrice>({
     sku: fake((f) => `${f.lorem.word()}-${f.string.alphanumeric(3)}`),
     value: fake(() => CentPrecisionMoney.random()),
     country: fake((f) => f.location.countryCode()),
-    customerGroup: fake(() => CustomerGroup.random()),
-    channel: fake(() => Channel.random()),
+    customerGroup: fake(() =>
+      Reference.presets.customerGroupReference().obj(CustomerGroup.random())
+    ),
+    channel: fake(() =>
+      Reference.presets.channelReference().obj(Channel.random())
+    ),
     validFrom: fake(getCreatedAt),
     validUntil: fake(getExpiresAt),
     tiers: [fake(() => PriceTier.random())],
     discounted: null,
     staged: null,
     active: fake((f) => f.datatype.boolean()),
-    expiresAt: fake(getExpiresAt),
   },
 });
 

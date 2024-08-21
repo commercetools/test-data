@@ -83,6 +83,7 @@ describe('builder', () => {
       ),
       expect.objectContaining({
         __typename: 'Channel',
+        name: 'Food Store',
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             __typename: 'LocalizedString',
