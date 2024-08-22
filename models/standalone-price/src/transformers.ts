@@ -31,7 +31,7 @@ const transformers = {
       'tiers',
     ],
     replaceFields: ({ fields }) => {
-      // Remove `expiresAt` from the fields ok
+      // Remove `expiresAt` from the fields
       const { expiresAt, ...rest } = fields;
 
       const customerGroup = fields.customerGroup
