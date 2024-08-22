@@ -29,6 +29,7 @@ export type TSearchKeyword = {
 export type TSearchKeywords = {
   locale: string;
   searchKeywords: TSearchKeyword[];
+  __typename: 'SearchKeywordsProductSearch';
 };
 
 export type TProductProjectionGraphql = Omit<

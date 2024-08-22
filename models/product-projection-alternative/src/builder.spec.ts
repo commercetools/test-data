@@ -19,193 +19,193 @@ import {
 } from './index';
 
 describe('builder', () => {
-  // const expectedGeneralLocalizedString = expect.objectContaining({
-  //   de: expect.any(String),
-  //   en: expect.any(String),
-  //   fr: expect.any(String),
-  // });
-  // const expectedGeneralLocalizedField = expect.arrayContaining([
-  //   expect.objectContaining({
-  //     locale: 'en',
-  //     value: expect.any(String),
-  //     __typename: 'LocalizedString',
-  //   }),
-  // ]);
+  const expectedGeneralLocalizedString = expect.objectContaining({
+    de: expect.any(String),
+    en: expect.any(String),
+    fr: expect.any(String),
+  });
+  const expectedGeneralLocalizedField = expect.arrayContaining([
+    expect.objectContaining({
+      locale: expect.any(String),
+      value: expect.any(String),
+      __typename: 'LocalizedField',
+    }),
+  ]);
 
-  // it(
-  //   ...createBuilderSpec<TProductProjectionRest, TProductProjectionRest>(
-  //     'rest',
-  //     ProductProjectionRest.random(),
-  //     expect.objectContaining({
-  //       id: expect.any(String),
-  //       version: expect.any(Number),
-  //       key: expect.any(String),
-  //       productType: expect.objectContaining({
-  //         id: expect.any(String),
-  //         typeId: expect.any(String),
-  //         obj: expect.objectContaining({
-  //           id: expect.any(String),
-  //           key: expect.any(String),
-  //           version: expect.any(Number),
-  //           name: expect.any(String),
-  //           description: expect.any(String),
-  //           attributes: expect.arrayContaining([
-  //             expect.objectContaining({
-  //               type: expect.objectContaining({ name: expect.any(String) }),
-  //               name: expect.any(String),
-  //               label: expectedGeneralLocalizedString,
-  //               isRequired: expect.any(Boolean),
-  //               attributeConstraint: expect.any(String),
-  //               inputTip: expectedGeneralLocalizedString,
-  //               inputHint: expect.any(String),
-  //               isSearchable: expect.any(Boolean),
-  //             }),
-  //           ]),
-  //         }),
-  //       }),
-  //       name: expectedGeneralLocalizedString,
-  //       description: expectedGeneralLocalizedString,
-  //       slug: expectedGeneralLocalizedString,
-  //       categories: [],
-  //       categoryOrderHints: null,
-  //       metaTitle: null,
-  //       metaDescription: null,
-  //       metaKeywords: null,
-  //       searchKeywords: [],
-  //       hasStagedChanges: expect.any(Boolean),
-  //       published: expect.any(Boolean),
-  //       masterVariant: expect.objectContaining({
-  //         key: expect.any(String),
-  //         sku: expect.any(String),
-  //         prices: expect.arrayContaining([
-  //           expect.objectContaining({
-  //             value: expect.any(Object),
-  //           }),
-  //         ]),
-  //         price: null,
-  //         images: expect.arrayContaining([
-  //           expect.objectContaining({
-  //             url: expect.any(String),
-  //           }),
-  //         ]),
-  //         attributes: expect.arrayContaining([
-  //           expect.objectContaining({
-  //             name: expect.any(String),
-  //           }),
-  //         ]),
-  //         assets: expect.arrayContaining([]),
-  //         availability: null,
-  //         isMatchingVariant: expect.any(Boolean),
-  //         scopedPrice: null,
-  //         scopedPriceDiscounted: null,
-  //       }),
-  //       variants: [],
-  //       taxCategory: null,
-  //       state: null,
-  //       createdAt: expect.any(String),
-  //       lastModifiedAt: expect.any(String),
-  //       reviewRatingStatistics: null,
-  //       priceMode: null,
-  //     })
-  //   )
-  // );
+  it(
+    ...createBuilderSpec<TProductProjectionRest, TProductProjectionRest>(
+      'rest',
+      // @ts-ignore
+      ProductProjectionRest.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        productType: expect.objectContaining({
+          id: expect.any(String),
+          typeId: expect.any(String),
+          obj: expect.objectContaining({
+            id: expect.any(String),
+            key: expect.any(String),
+            version: expect.any(Number),
+            name: expect.any(String),
+            description: expect.any(String),
+            attributes: expect.arrayContaining([
+              expect.objectContaining({
+                type: expect.objectContaining({ name: expect.any(String) }),
+                name: expect.any(String),
+                label: expectedGeneralLocalizedString,
+                isRequired: expect.any(Boolean),
+                attributeConstraint: expect.any(String),
+                inputTip: expectedGeneralLocalizedString,
+                inputHint: expect.any(String),
+                isSearchable: expect.any(Boolean),
+              }),
+            ]),
+          }),
+        }),
+        name: expectedGeneralLocalizedString,
+        description: expectedGeneralLocalizedString,
+        slug: expectedGeneralLocalizedString,
+        categories: [],
+        // categoryOrderHints: undefined,
+        // metaTitle: null,
+        // metaDescription: null,
+        // metaKeywords: null,
+        searchKeywords: [],
+        hasStagedChanges: expect.any(Boolean),
+        published: expect.any(Boolean),
+        masterVariant: expect.objectContaining({
+          key: expect.any(String),
+          sku: expect.any(String),
+          prices: expect.arrayContaining([
+            expect.objectContaining({
+              value: expect.any(Object),
+            }),
+          ]),
+          price: null,
+          images: expect.arrayContaining([
+            expect.objectContaining({
+              url: expect.any(String),
+            }),
+          ]),
+          attributes: expect.arrayContaining([
+            expect.objectContaining({
+              name: expect.any(String),
+            }),
+          ]),
+          assets: expect.arrayContaining([]),
+          availability: null,
+          isMatchingVariant: expect.any(Boolean),
+          scopedPrice: null,
+          scopedPriceDiscounted: null,
+        }),
+        variants: [],
+        // taxCategory: null,
+        // state: null,
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        // reviewRatingStatistics: null,
+        // priceMode: null,
+      })
+    )
+  );
 
-  // it(
-  //   ...createBuilderSpec<TProductProjectionGraphql, TProductProjectionGraphql>(
-  //     'graphql',
-  //     ProductProjection.random(),
-  //     expect.objectContaining({
-  //       id: expect.any(String),
-  //       version: expect.any(Number),
-  //       key: expect.any(String),
-  //       productType: expect.objectContaining({
-  //         __typename: 'ProductTypeDefinition',
-  //         id: expect.any(String),
-  //         key: expect.any(String),
-  //       }),
-  //       productTypeRef: expect.objectContaining({
-  //         typeId: 'product-type',
-  //         id: expect.any(String),
-  //         __typename: 'Reference',
-  //       }),
-  //       name: expect.any(String),
-  //       nameAllLocales: expectedGeneralLocalizedField,
-  //       description: expect.any(String),
-  //       descriptionAllLocales: expectedGeneralLocalizedField,
-  //       slug: expect.any(String),
-  //       slugAllLocales: expectedGeneralLocalizedField,
-  //       categories: [],
-  //       categoryOrderHints: [],
-  //       metaTitle: undefined,
-  //       metaDescription: undefined,
-  //       metaKeywords: undefined,
-  //       searchKeywords: [],
-  //       hasStagedChanges: expect.any(Boolean),
-  //       published: expect.any(Boolean),
-  //       masterVariant: expect.objectContaining({
-  //         __typename: 'ProductVariant',
-  //         key: expect.any(String),
-  //         sku: expect.any(String),
-  //       }),
-  //       variants: [],
-  //       taxCategory: null,
-  //       state: null,
-  //       createdAt: expect.any(String),
-  //       lastModifiedAt: expect.any(String),
-  //       reviewRatingStatistics: undefined,
-  //       priceMode: null,
-  //     })
-  //   )
-  // );
+  it(
+    ...createBuilderSpec<TProductProjectionGraphql, TProductProjectionGraphql>(
+      'graphql',
+      // @ts-ignore
+      ProductProjectionGraphql.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        productType: expect.objectContaining({
+          __typename: 'ProductTypeDefinition',
+          id: expect.any(String),
+          key: expect.any(String),
+        }),
+        productTypeRef: expect.objectContaining({
+          typeId: 'product-type',
+          id: expect.any(String),
+          __typename: 'Reference',
+        }),
+        name: expect.any(String),
+        nameAllLocales: expectedGeneralLocalizedField,
+        description: expect.any(String),
+        descriptionAllLocales: expectedGeneralLocalizedField,
+        slug: expect.any(String),
+        slugAllLocales: expectedGeneralLocalizedField,
+        categories: [],
+        categoryOrderHints: [],
+        // metaTitle: undefined,
+        // metaDescription: undefined,
+        // metaKeywords: undefined,
+        searchKeywords: [],
+        hasStagedChanges: expect.any(Boolean),
+        published: expect.any(Boolean),
+        masterVariant: expect.objectContaining({
+          __typename: 'ProductVariant',
+          key: expect.any(String),
+          sku: expect.any(String),
+        }),
+        variants: [],
+        // taxCategory: null,
+        // state: null,
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        // reviewRatingStatistics: undefined,
+        // priceMode: null,
+      })
+    )
+  );
 
   describe('when customizing the model', () => {
-    const productProjectionMock = presets.happyCowMilkProductProjection
-      .rest()
-      .categories([
-        Reference.presets
-          .categoryReference()
-          .obj(
-            Category.random()
-              .id('category-id')
-              .name(LocalizedString.presets.empty().en('category-name'))
-          ),
-      ])
-      .categoryOrderHints({
-        'category-1': '0.4',
-      })
-      .id('happy-cow-milk-id')
-      .key('happy-cow-milk-key')
-      .metaKeywords(LocalizedString.presets.empty().en('happy'))
-      .priceMode('Embedded')
-      .productType(
-        Reference.presets
-          .productTypeReference()
-          .obj(ProductType.presets.milk().id('product-type-id'))
-      )
-      .reviewRatingStatistics({
-        averageRating: 3.12345,
-        highestRating: 4.9,
-        lowestRating: 2.1,
-        count: 25,
-        ratingsDistribution: {},
-      })
-      .searchKeywords({
-        en: [{ text: 'product search keyword' }],
-      })
-      .state(
-        Reference.presets.stateReference().obj(State.random().id('state-id'))
-      )
-      .taxCategory(
-        Reference.presets
-          .taxCategoryReference()
-          .obj(TaxCategory.random().id('tax-category-id'))
-      )
-      .variants([ProductVariant.random().key('alternative-variant-key')])
-      .version(222);
-
     it('should build the right rest model', () => {
-      const restProductProjection =
-        productProjectionMock.buildRest<TProductProjectionRest>();
+      const restProductProjection = presets.happyCowMilkProductProjection
+        .rest()
+        .categories([
+          Reference.presets
+            .categoryReference()
+            .obj(
+              Category.random()
+                .id('category-id')
+                .name(LocalizedString.presets.empty().en('category-name'))
+            ),
+        ])
+        .categoryOrderHints({
+          'category-1': '0.4',
+        })
+        .id('happy-cow-milk-id')
+        .key('happy-cow-milk-key')
+        .metaKeywords(LocalizedString.presets.empty().en('happy'))
+        .priceMode('Embedded')
+        .productType(
+          Reference.presets
+            .productTypeReference()
+            .obj(ProductType.presets.milk().id('product-type-id'))
+        )
+        .reviewRatingStatistics({
+          averageRating: 3.12345,
+          highestRating: 4.9,
+          lowestRating: 2.1,
+          count: 25,
+          ratingsDistribution: {},
+        })
+        .searchKeywords({
+          en: [{ text: 'product search keyword' }],
+        })
+        .state(
+          Reference.presets.stateReference().obj(State.random().id('state-id'))
+        )
+        .taxCategory(
+          Reference.presets
+            .taxCategoryReference()
+            .obj(TaxCategory.random().id('tax-category-id'))
+        )
+        .variants([ProductVariant.random().key('alternative-variant-key')])
+        .version(222)
+        .build<TProductProjectionRest>();
 
       expect(restProductProjection).toEqual(
         expect.objectContaining({
@@ -353,6 +353,7 @@ describe('builder', () => {
           {
             locale: 'en',
             searchKeywords: [{ text: 'product search keyword' }],
+            __typename: 'SearchKeywordsProductSearch',
           },
         ])
         .state(State.random().id('state-id'))
@@ -364,8 +365,6 @@ describe('builder', () => {
         .variants([ProductVariant.random().key('alternative-variant-key')])
         .version(222)
         .build<TProductProjectionGraphql>();
-
-      console.log(graphqlProjectionMock.searchKeywords[0]);
 
       const expectedLocalizedName = expect.arrayContaining([
         expect.objectContaining({
@@ -453,7 +452,7 @@ describe('builder', () => {
                   text: 'product search keyword',
                 },
               ],
-              // __typename: 'SearchKeywordsProductSearch',
+              __typename: 'SearchKeywordsProductSearch',
             }),
           ]),
           slug: 'happy-cow-milk-slug',
