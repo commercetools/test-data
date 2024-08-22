@@ -20,12 +20,9 @@ describe(`with serenityQueenBed01 preset`, () => {
     {
       "name": "color",
       "value": {
-        "key": "#808080",
-        "label": {
-          "de-DE": "Beige:#F5F5DC",
-          "en-GB": "Beige:#F5F5DC",
-          "en-US": "Beige:#F5F5DC",
-        },
+        "de-DE": "Beige:#F5F5DC",
+        "en-GB": "Beige:#F5F5DC",
+        "en-US": "Beige:#F5F5DC",
       },
     },
   ],
@@ -105,7 +102,7 @@ describe(`with serenityQueenBed01 preset`, () => {
     },
     {
       "name": "color",
-      "value": "{"key":"#808080","label":{"de-DE":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}}",
+      "value": "{"de-DE":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
     },
   ],
   "images": [
