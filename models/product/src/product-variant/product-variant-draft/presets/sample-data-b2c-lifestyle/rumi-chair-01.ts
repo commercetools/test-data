@@ -36,12 +36,6 @@ const rumiChair01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Dry clean only',
         'de-DE': '- Nur chemische Reinigung',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#A020F0',
-          label: { 'de-DE': 'Lila', 'en-GB': 'Purple', 'en-US': 'Purple' },
-        }),
       AttributeDraft.random().name('color').value({
         'en-GB': 'Lavender Blush:#fff0f5',
         'de-DE': 'Lavendel:#fff0f5',

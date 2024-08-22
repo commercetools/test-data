@@ -1,5 +1,37 @@
 # @commercetools-test-data/customer
 
+## 10.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.3
+  - @commercetools-test-data/commons@10.1.3
+  - @commercetools-test-data/customer-group@10.1.3
+  - @commercetools-test-data/utils@10.1.3
+
+## 10.1.2
+
+### Patch Changes
+
+- [#634](https://github.com/commercetools/test-data/pull/634) [`9fc1aba`](https://github.com/commercetools/test-data/commit/9fc1aba4a097c4a41fce855c43bc88b530c81d1d) Thanks [@dogayuksel](https://github.com/dogayuksel)! - Fix Customer model to build `addresses` and `stores` on all transforms.
+  Allow Customer model to receive builders for `defaultShippingAddress`, `shippingAddresses`, `defaultBillingAddress`, and `billingAddresses` properties. Adds these properties to build fields for default and graphql transforms.
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.2
+  - @commercetools-test-data/commons@10.1.2
+  - @commercetools-test-data/customer-group@10.1.2
+  - @commercetools-test-data/utils@10.1.2
+
+## 10.1.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.1
+  - @commercetools-test-data/commons@10.1.1
+  - @commercetools-test-data/customer-group@10.1.1
+  - @commercetools-test-data/utils@10.1.1
+
 ## 10.1.0
 
 ### Patch Changes

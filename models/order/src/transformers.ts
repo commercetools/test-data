@@ -1,38 +1,30 @@
 import { Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
+import omit from 'lodash/omit';
 import type { TOrder, TOrderGraphql, TOrderRest } from './types';
+
+const commonBuildFields: (keyof TOrder)[] = [
+  'createdBy',
+  'lastModifiedBy',
+  'lineItems',
+  'totalPrice',
+  'shippingAddress',
+  'billingAddress',
+  'customerGroup',
+  'refusedGifts',
+  'cart',
+  'itemShippingAddresses',
+];
 
 const transformers = {
   default: Transformer<TOrder, TOrder>('default', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'lineItems',
-      'totalPrice',
-      'shippingAddress',
-      'billingAddress',
-      'customerGroup',
-      'refusedGifts',
-      'cart',
-      'itemShippingAddresses',
-    ],
+    buildFields: [...commonBuildFields, 'customer'],
   }),
   rest: Transformer<TOrder, TOrderRest>('rest', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'lineItems',
-      'totalPrice',
-      'shippingAddress',
-      'billingAddress',
-      'customerGroup',
-      'refusedGifts',
-      'cart',
-      'itemShippingAddresses',
-    ],
+    buildFields: commonBuildFields,
     replaceFields: ({ fields }) => {
       return {
-        ...fields,
+        ...omit(fields, 'customer'),
         customerGroup: fields.customerGroup
           ? Reference.random()
               .id(fields.customerGroup.id)
@@ -57,18 +49,7 @@ const transformers = {
     },
   }),
   graphql: Transformer<TOrder, TOrderGraphql>('graphql', {
-    buildFields: [
-      'createdBy',
-      'lastModifiedBy',
-      'lineItems',
-      'totalPrice',
-      'shippingAddress',
-      'billingAddress',
-      'customerGroup',
-      'refusedGifts',
-      'cart',
-      'itemShippingAddresses',
-    ],
+    buildFields: [...commonBuildFields, 'customer'],
     addFields: ({ fields }) => ({
       customerGroupRef: fields.customerGroup
         ? Reference.random()

@@ -1,5 +1,32 @@
 # @commercetools-test-data/tax-category
 
+## 10.1.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.3
+  - @commercetools-test-data/commons@10.1.3
+  - @commercetools-test-data/utils@10.1.3
+
+## 10.1.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.2
+  - @commercetools-test-data/commons@10.1.2
+  - @commercetools-test-data/utils@10.1.2
+
+## 10.1.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.1
+  - @commercetools-test-data/commons@10.1.1
+  - @commercetools-test-data/utils@10.1.1
+
 ## 10.1.0
 
 ### Patch Changes
