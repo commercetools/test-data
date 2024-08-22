@@ -839,6 +839,45 @@ importers:
         specifier: ^8.0.0
         version: 8.4.1
 
+  models/product-projection-alternative:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/category':
+        specifier: 10.1.3
+        version: link:../category
+      '@commercetools-test-data/commons':
+        specifier: 10.1.3
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.1.3
+        version: link:../../core
+      '@commercetools-test-data/product':
+        specifier: 10.1.3
+        version: link:../product
+      '@commercetools-test-data/product-type':
+        specifier: 10.1.3
+        version: link:../product-type
+      '@commercetools-test-data/state':
+        specifier: 10.1.3
+        version: link:../state
+      '@commercetools-test-data/tax-category':
+        specifier: 10.1.3
+        version: link:../tax-category
+      '@commercetools-test-data/utils':
+        specifier: 10.1.3
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.8.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
   models/product-selection:
     dependencies:
       '@babel/runtime':

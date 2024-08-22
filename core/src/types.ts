@@ -100,21 +100,21 @@ export type TBuilder<OriginalModel> = {
 
 export type TDefaultTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'default' extends TransformerType
   ? { default: TTransformer<Model> }
   : never;
 
 export type TGraphqlTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'graphql' extends TransformerType
   ? { graphql: TTransformer<Model> }
   : never;
 
 export type TRestTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
 export type TBuilderOptions<Model> = {
@@ -122,4 +122,5 @@ export type TBuilderOptions<Model> = {
   transformers?: {
     [Key in TTransformType]?: TTransformer<Model>;
   };
+  type?: 'rest' | 'graphql';
 };

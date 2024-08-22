@@ -77,6 +77,7 @@ function PropertyBuilder<Model>(initialProps?: Partial<Model>) {
 function Builder<Model>({
   generator,
   transformers,
+  type,
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
   const applyGeneratorIfExists = (): Partial<Model> => {
     if (!generator) return {};
@@ -91,7 +92,7 @@ function Builder<Model>({
     proxy: new CustomProxy<Partial<Model>, TBuilder<Model>>(
       {},
       {
-        get(_target, propToSet) {
+        get(_target, propToSet, foo) {
           // Cypress specs and files that they import are now bundled with
           // webpack starting from Cypress 5 (webpack is now the default preprocessor).
           // This result in non-null check of
@@ -133,6 +134,17 @@ function Builder<Model>({
                 }
                 default:
                   break;
+              }
+
+              // TODO: Super hack to try some things out
+              if (type === 'rest') {
+                transformed = (transformers?.rest?.transform(built) ??
+                  built) as Model;
+              }
+              if (type === 'graphql') {
+                // @ts-ignore: TS does not know about the `Model` being an object.
+                transformed = (transformers?.graphql?.transform(built) ??
+                  built) as Model;
               }
 
               if (keepFields.length > 0) {
