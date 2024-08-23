@@ -30,12 +30,14 @@ export * as AttributeLocalizableTextTypeDraft from './attribute-localizable-text
 export * as AttributeNumberType from './attribute-number-type';
 export * as AttributeNumberTypeDraft from './attribute-number-type/attribute-number-type-draft';
 export * as AttributeMoneyType from './attribute-money-type';
-export * as AttributeMoneyTypeDraft from './attribute-money-type/attribute-money-type-draft/index';
+export * as AttributeMoneyTypeDraft from './attribute-money-type/attribute-money-type-draft';
 export * as AttributeSetType from './attribute-set-type';
 export * as AttributeSetTypeDraft from './attribute-set-type/attribute-set-type-draft';
 export * as AttributeReferenceType from './attribute-reference-type';
 export * as AttributeReferenceTypeDraft from './attribute-reference-type/attribute-reference-type-draft';
 export * as AttributeTextType from './attribute-text-type';
 export * as AttributeTextTypeDraft from './attribute-text-type/attribute-text-type-draft';
+export * as AttributeTimeType from './attribute-time-type';
+export * as AttributeTimeTypeDraft from './attribute-time-type/attribute-time-type-draft';
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';
