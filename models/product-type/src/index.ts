@@ -13,6 +13,7 @@ export * from './attribute-reference-type/types';
 export * from './attribute-text-type/types';
 export * from './attribute-date-type/types';
 export * from './attribute-time-type/types';
+export * from './attribute-date-time-type/types';
 export * from './product-type/types';
 
 // Export models
@@ -44,5 +45,8 @@ export * as AttributeTimeType from './attribute-time-type';
 export * as AttributeTimeTypeDraft from './attribute-time-type/attribute-time-type-draft';
 export * as AttributeDateType from './attribute-date-type';
 export * as AttributeDateTypeDraft from './attribute-date-type/attribute-date-type-draft';
+export * as AttributeDateTimeType from './attribute-date-time-type';
+export * as AttributeDateTimeTypeDraft from './attribute-date-time-type/attribute-date-time-type-draft';
+
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';
