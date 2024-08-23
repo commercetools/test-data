@@ -29,6 +29,8 @@ export * as AttributeLocalizableTextType from './attribute-localizable-text-type
 export * as AttributeLocalizableTextTypeDraft from './attribute-localizable-text-type/attribute-localized-text-type-draft';
 export * as AttributeNumberType from './attribute-number-type';
 export * as AttributeNumberTypeDraft from './attribute-number-type/attribute-number-type-draft';
+export * as AttributeMoneyType from './attribute-money-type';
+export * as AttributeMoneyTypeDraft from './attribute-money-type/attribute-money-type-draft/index';
 export * as AttributeSetType from './attribute-set-type';
 export * as AttributeSetTypeDraft from './attribute-set-type/attribute-set-type-draft';
 export * as AttributeReferenceType from './attribute-reference-type';
