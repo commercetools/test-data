@@ -50,5 +50,6 @@ export const graphqlGenerator = Generator<TProductProjectionGraphql>({
     slugAllLocales: fake(() => [LocalizedField.random()]),
     categoriesRef: [],
     categoryOrderHints: [],
+    __typename: 'ProductProjection',
   },
 });

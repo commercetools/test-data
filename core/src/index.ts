@@ -3,6 +3,8 @@ export { default as Generator } from './generator';
 export { default as Transformer } from './transformer';
 
 export {
+  createSpecializedTransformers,
+  createSpecializedBuilder,
   buildField,
   buildFields,
   buildGraphqlList,

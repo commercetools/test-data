@@ -1,3 +1,5 @@
+import Builder from './builder';
+import Transformer from './transformer';
 import type {
   TReferenceObject,
   TExpandedReference,
@@ -9,6 +11,8 @@ import type {
   TBuildFieldMeta,
   TTransformType,
   TTransformBuildName,
+  TGeneratorResult,
+  TSpecializedBuilder,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -168,6 +172,41 @@ const buildRestList = <Model>(
   });
 };
 
+type TCreateSpecializedTransformersParams<TModel> = {
+  type: 'rest' | 'graphql';
+  buildFields: (keyof TModel)[];
+};
+const createSpecializedTransformers = <TModel>({
+  type,
+  buildFields,
+}: TCreateSpecializedTransformersParams<TModel>) => {
+  return {
+    [type]: Transformer<TModel, TModel>(type, {
+      buildFields: buildFields,
+    }),
+  };
+};
+
+type TCreateSpecializedBuilderParams<TModel> = {
+  generator: TGeneratorResult<TModel>;
+  type: 'rest' | 'graphql';
+  buildFields?: (keyof TModel)[];
+};
+const createSpecializedBuilder = <TModel>(
+  params: TCreateSpecializedBuilderParams<TModel>
+) => {
+  const modelBuilder = Builder<TModel>({
+    type: params.type,
+    generator: params.generator,
+    transformers: createSpecializedTransformers<TModel>({
+      type: params.type,
+      buildFields: params.buildFields || [],
+    }),
+  });
+
+  return modelBuilder as TSpecializedBuilder<TModel>;
+};
+
 export {
   isFunction,
   isString,
@@ -186,4 +225,6 @@ export {
   buildFields,
   buildGraphqlList,
   buildRestList,
+  createSpecializedTransformers,
+  createSpecializedBuilder,
 };

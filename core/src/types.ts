@@ -124,3 +124,10 @@ export type TBuilderOptions<Model> = {
   };
   type?: 'rest' | 'graphql';
 };
+
+export type TSpecializedBuilder<TModel> = Omit<
+  TBuilder<TModel>,
+  'build' | 'buildRest' | 'buildGraphql'
+> & {
+  build: () => TModel;
+};

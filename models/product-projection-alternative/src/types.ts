@@ -72,6 +72,7 @@ export type TProductProjectionGraphql = Omit<
   stateRef?: TReferenceGraphql | null;
   taxCategory?: TTaxCategoryGraphql | null;
   taxCategoryRef?: TReferenceGraphql | null;
+  __typename: 'ProductProjection';
 };
 
 export type TCreateProductProjectionBuilder<TModel> =
