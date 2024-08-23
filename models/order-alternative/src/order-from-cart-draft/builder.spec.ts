@@ -1,36 +1,15 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TOrderFromCartDraft, TOrderFromCartDraftGraphql } from '../types';
-import * as OrderFromCartDraft from './index';
+import { TOrderFromCartDraftGraphql, TOrderFromCartDraftRest } from '../types';
+import { OrderFromCartDraftGraphql, OrderFromCartDraftRest } from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TOrderFromCartDraft, TOrderFromCartDraft>(
-      'default',
-      OrderFromCartDraft.random(),
-      expect.objectContaining({
-        cart: expect.objectContaining({
-          typeId: 'cart',
-        }),
-        version: expect.any(Number),
-        orderNumber: expect.any(String),
-        purchaseOrderNumber: expect.any(String),
-        paymentState: expect.any(String),
-        orderState: expect.any(String),
-        state: expect.objectContaining({
-          typeId: 'state',
-        }),
-        shipmentState: expect.any(String),
-        custom: null,
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TOrderFromCartDraft, TOrderFromCartDraft>(
+    ...createBuilderSpec<TOrderFromCartDraftRest, TOrderFromCartDraftRest>(
       'rest',
-      OrderFromCartDraft.random(),
+      // @ts-ignore
+      OrderFromCartDraftRest.random(),
       expect.objectContaining({
         cart: expect.objectContaining({
           typeId: 'cart',
@@ -50,9 +29,13 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TOrderFromCartDraft, TOrderFromCartDraftGraphql>(
+    ...createBuilderSpec<
+      TOrderFromCartDraftGraphql,
+      TOrderFromCartDraftGraphql
+    >(
       'graphql',
-      OrderFromCartDraft.random(),
+      // @ts-ignore
+      OrderFromCartDraftGraphql.random(),
       expect.objectContaining({
         cart: expect.objectContaining({
           typeId: 'cart',

@@ -6,11 +6,9 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { orderState, paymentState, shipmentState } from '../constants';
-import { TOrderFromCartDraft } from '../types';
+import { TOrderFromCartDraftRest } from '../types';
 
-// https://docs.commercetools.com/api/projects/orders#orderfromcartdraft
-
-const generator = Generator<TOrderFromCartDraft>({
+export const restGenerator = Generator<TOrderFromCartDraftRest>({
   fields: {
     cart: fake(() => ReferenceDraft.random().typeId('cart')),
     version: sequence(),
@@ -24,4 +22,4 @@ const generator = Generator<TOrderFromCartDraft>({
   },
 });
 
-export default generator;
+export const graphqlGenerator = restGenerator;

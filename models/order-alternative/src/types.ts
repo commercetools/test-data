@@ -47,20 +47,27 @@ export type TOrderGraphql = Omit<
   __typename: 'Order';
 };
 
-export type TOrderFromCartDraft = OrderFromCartDraft;
-export type TOrderFromQuoteDraft = OrderFromQuoteDraft;
+export type TOrderFromCartDraftRest = OrderFromCartDraft;
+export type TOrderFromQuoteDraftRest = OrderFromQuoteDraft;
 
-export type TOrderFromCartDraftGraphql = TOrderFromCartDraft;
-export type TOrderFromQuoteDraftGraphql = TOrderFromQuoteDraft;
+export type TOrderFromCartDraftGraphql = TOrderFromCartDraftRest;
+export type TOrderFromQuoteDraftGraphql = TOrderFromQuoteDraftRest;
 
-export type TOrderBuilder = TBuilder<TOrderRest>;
-export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraft>;
-export type TOrderFromQuoteDraftBuilder = TBuilder<TOrderFromQuoteDraft>;
+// export type TOrderBuilder = TBuilder<TOrderRest>;
+// export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraftRest>;
+// export type TOrderFromQuoteDraftBuilder = TBuilder<TOrderFromQuoteDraftRest>;
 
 // export type TCreateOrderBuilder = () => TOrderBuilder;
-export type TCreateOrderFromCartDraftBuilder = () => TOrderFromCartDraftBuilder;
-export type TCreateOrderFromQuoteDraftBuilder =
-  () => TOrderFromQuoteDraftBuilder;
+// export type TCreateOrderFromCartDraftBuilder = () => TOrderFromCartDraftBuilder;
+// export type TCreateOrderFromQuoteDraftBuilder =
+//   () => TOrderFromQuoteDraftBuilder;
 
-export type TCreateOrderBuilder<TModel extends TOrderRest | TOrderGraphql> =
-  () => TSpecializedBuilder<TModel>;
+export type TCreateOrderBuilder<
+  TModel extends
+    | TOrderRest
+    | TOrderGraphql
+    | TOrderFromCartDraftRest
+    | TOrderFromCartDraftGraphql
+    | TOrderFromQuoteDraftRest
+    | TOrderFromQuoteDraftGraphql,
+> = () => TSpecializedBuilder<TModel>;

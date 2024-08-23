@@ -2,10 +2,10 @@ import {
   LocalizedField,
   LocalizedString,
 } from '@commercetools-test-data/commons';
+import { TSpecializedBuilder } from '@commercetools-test-data/core';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { ProductProjectionGraphql, ProductProjectionRest } from '..';
-import { TSpecializedBuilder } from '../core';
 import { TProductProjectionGraphql, TProductProjectionRest } from '../types';
 
 // TODO: This should be moved to commons package
@@ -44,25 +44,6 @@ export const happyCowMilkRest =
 
 export const happyCowMilkGraphql =
   (): TSpecializedBuilder<TProductProjectionGraphql> => {
-    // const productNameAllLocales = [
-    //   LocalizedField.random().locale('en').value('Happy Cow Milk'),
-    //   LocalizedField.random().locale('de').value('Fröhliche Kuhmilch'),
-    // ];
-
-    // const productDescription = [
-    //   LocalizedField.random()
-    //     .locale('en')
-    //     .value('Very happy milk produced by very happy cow!'),
-    //   LocalizedField.random()
-    //     .locale('de')
-    //     .value('Sehr glückliche Milch von sehr glücklicher Kuh!'),
-    // ];
-
-    // const slugAllLocales = [
-    //   LocalizedField.random().locale('en').value('happy-cow-milk-slug'),
-    //   LocalizedField.random().locale('de').value('glückliche-kuhmilch-slug'),
-    // ];
-
     return ProductProjectionGraphql.random()
       .productType(ProductType.presets.milk())
       .slug('happy-cow-milk-slug')
