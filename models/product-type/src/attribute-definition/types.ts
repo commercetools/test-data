@@ -12,8 +12,14 @@ export type TAttributeDefinition = AttributeDefinition;
 
 export type TAttributeDefinitionDraft = AttributeDefinitionDraft;
 
-export type TAttributeDefinitionGraphql = TAttributeDefinition & {
+export type TAttributeDefinitionGraphql = Omit<
+  TAttributeDefinition,
+  'label' | 'inputTip'
+> & {
+  label: string;
   labelAllLocales: TLocalizedStringGraphql | null;
+  inputTip: string;
+  inputTipAllLocales: TLocalizedStringGraphql | null;
   __typename: 'AttributeDefinition';
 };
 
