@@ -1,4 +1,4 @@
-import { createSpecializedBuilder } from './core';
+import { createSpecializedBuilder } from '@commercetools-test-data/core';
 import { restGenerator, graphqlGenerator } from './generators';
 import type {
   TCreateProductProjectionBuilder,

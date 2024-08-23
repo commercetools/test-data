@@ -8,10 +8,10 @@ import {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
+import { TSpecializedBuilder } from '@commercetools-test-data/core';
 import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
 import { TStateGraphql } from '@commercetools-test-data/state';
 import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
-import type { TSpecializedBuilder } from './core';
 
 export type TProductProjectionRest = ProductProjection;
 
