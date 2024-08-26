@@ -17,10 +17,13 @@ const transformers = {
   rest: Transformer<TInventoryEntry, TInventoryEntryRest>('rest', {
     buildFields: ['supplyChannel'],
     replaceFields: ({ fields }) => {
-      const supplyChannel = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .build<TReference<'channel'>>();
+      let supplyChannel;
+      if (fields.supplyChannel) {
+        supplyChannel = Reference.presets
+          .channelReference()
+          .id(fields.supplyChannel.id)
+          .build<TReference<'channel'>>();
+      }
       return {
         ...fields,
         supplyChannel,
@@ -30,10 +33,13 @@ const transformers = {
   graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
     buildFields: ['supplyChannel'],
     replaceFields: ({ fields }) => {
-      const supplyChannelRef = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .buildGraphql<TReferenceGraphql<'channel'>>();
+      let supplyChannelRef;
+      if (fields.supplyChannel) {
+        supplyChannelRef = Reference.presets
+          .channelReference()
+          .id(fields.supplyChannel.id)
+          .buildGraphql<TReferenceGraphql<'channel'>>();
+      }
       return {
         ...fields,
         supplyChannelRef,

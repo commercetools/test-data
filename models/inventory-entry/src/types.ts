@@ -8,7 +8,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 
 // Default
 export type TInventoryEntry = Omit<InventoryEntry, 'supplyChannel'> & {
-  supplyChannel: Channel;
+  supplyChannel?: Channel | null;
 };
 export type TInventoryEntryDraft = InventoryEntryDraft;
 
@@ -19,7 +19,7 @@ export type TInventoryEntryDraftRest = InventoryEntryDraft;
 // GraphQL
 export type TInventoryEntryGraphql = TInventoryEntry & {
   __typename: 'InventoryEntry';
-  supplyChannelRef: TReferenceGraphql;
+  supplyChannelRef?: TReferenceGraphql;
 };
 export type TInventoryEntryDraftGraphql = TInventoryEntryDraft;
 
