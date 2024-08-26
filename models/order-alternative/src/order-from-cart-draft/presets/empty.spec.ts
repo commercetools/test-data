@@ -1,8 +1,8 @@
-import emptyPreset from './empty';
+import { emptyRestPreset, emptyGraphqlPreset } from './empty';
 
 describe('empty preset', () => {
   it(`should set the specified fields to undefined - rest`, () => {
-    const emptyOrderFromCartDraftRest = emptyPreset.rest().build();
+    const emptyOrderFromCartDraftRest = emptyRestPreset().build();
     expect(emptyOrderFromCartDraftRest).toEqual({
       cart: undefined,
       version: expect.any(Number),
@@ -17,7 +17,7 @@ describe('empty preset', () => {
   });
 
   it(`should set the specified fields to undefined - graphql`, () => {
-    const emptyOrderFromCartDraftGraphql = emptyPreset.rest().build();
+    const emptyOrderFromCartDraftGraphql = emptyGraphqlPreset().build();
     expect(emptyOrderFromCartDraftGraphql).toEqual({
       cart: undefined,
       version: expect.any(Number),
