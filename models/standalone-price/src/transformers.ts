@@ -19,6 +19,9 @@ const transformers = {
       'customerGroup',
       'channel',
       'tiers',
+      'custom',
+      'discounted',
+      'staged',
     ],
   }),
   rest: Transformer<TStandalonePrice, TStandalonePriceRest>('rest', {
@@ -29,6 +32,9 @@ const transformers = {
       'customerGroup',
       'channel',
       'tiers',
+      'custom',
+      'discounted',
+      'staged',
     ],
     replaceFields: ({ fields }) => {
       // Remove `expiresAt` from the fields
@@ -63,6 +69,9 @@ const transformers = {
       'customerGroup',
       'channel',
       'tiers',
+      'custom',
+      'discounted',
+      'staged',
     ],
     replaceFields: ({ fields }) => {
       const customerGroupRef = fields.customerGroup
