@@ -53,15 +53,6 @@ export type TOrderFromQuoteDraftRest = OrderFromQuoteDraft;
 export type TOrderFromCartDraftGraphql = TOrderFromCartDraftRest;
 export type TOrderFromQuoteDraftGraphql = TOrderFromQuoteDraftRest;
 
-// export type TOrderBuilder = TBuilder<TOrderRest>;
-// export type TOrderFromCartDraftBuilder = TBuilder<TOrderFromCartDraftRest>;
-// export type TOrderFromQuoteDraftBuilder = TBuilder<TOrderFromQuoteDraftRest>;
-
-// export type TCreateOrderBuilder = () => TOrderBuilder;
-// export type TCreateOrderFromCartDraftBuilder = () => TOrderFromCartDraftBuilder;
-// export type TCreateOrderFromQuoteDraftBuilder =
-//   () => TOrderFromQuoteDraftBuilder;
-
 export type TCreateOrderBuilder<
   TModel extends
     | TOrderRest
