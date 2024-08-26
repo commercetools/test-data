@@ -32,3 +32,4 @@ export * as Reference from './reference';
 export * as ReferenceDraft from './reference/reference-draft';
 export * as PriceTier from './price-tier';
 export * as PriceTierDraft from './price-tier/price-tier-draft';
+export * as DiscountedPrice from './discounted-price';
