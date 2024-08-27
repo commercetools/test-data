@@ -39,7 +39,7 @@ const transformers = {
       'variants',
     ],
     replaceFields: ({ fields }) => {
-      const { categories } = fields;
+      const { allVariants, variant, skus, categories, ...rest } = fields;
 
       const categoryReferences: Array<CategoryReference> = categories.map(
         (category) => ({
@@ -49,7 +49,7 @@ const transformers = {
       );
 
       return {
-        ...fields,
+        ...rest,
         categories: categoryReferences,
       };
     },

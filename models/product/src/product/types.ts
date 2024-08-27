@@ -4,6 +4,9 @@ import {
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
+import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
+import { TStateGraphql } from '../../../state/src';
 
 export type TProduct = Product & {
   skus: Array<String>;
@@ -11,10 +14,16 @@ export type TProduct = Product & {
 
 export type TProductRest = Omit<TProduct, 'skus'>;
 
-export type TProductGraphql = TProduct & {
+export type TProductGraphql = Omit<
+  TProduct,
+  'productType' | 'state' | 'taxCategory'
+> & {
+  productType: TProductTypeGraphql;
   productTypeRef: TReferenceGraphql;
-  stateRef: TReferenceGraphql;
-  taxCategoryRef: TReferenceGraphql;
+  state?: TStateGraphql;
+  stateRef?: TReferenceGraphql;
+  taxCategory?: TTaxCategoryGraphql;
+  taxCategoryRef?: TReferenceGraphql;
   // TODO: add productSelectionRefs
   __typename: 'Product';
 };

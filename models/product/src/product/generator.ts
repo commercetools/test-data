@@ -1,4 +1,4 @@
-import { ClientLogging } from '@commercetools-test-data/commons';
+import { ClientLogging, Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
@@ -16,9 +16,13 @@ const generator = Generator<TProduct>({
     id: fake((f) => f.string.uuid()),
     version: fake((f) => f.number.int()),
     key: fake((f) => f.lorem.slug()),
-    productType: fake(() => ProductType.random()),
+    productType: fake(() =>
+      Reference.presets.productTypeReference().obj(ProductType.random())
+    ),
     masterData: fake(() => ProductCatalogData.random()),
-    taxCategory: fake(() => TaxCategory.random()),
+    taxCategory: fake(() =>
+      Reference.presets.taxCategoryReference().obj(TaxCategory.random())
+    ),
     state: null,
     reviewRatingStatistics: null,
     priceMode: oneOf(...Object.values(productPriceMode)),
