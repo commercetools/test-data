@@ -2,8 +2,8 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import type { TType, TTypeGraphql } from './types';
 import * as Type from '../index';
+import type { TType, TTypeGraphql } from './types';
 
 describe('builder', () => {
   it(
