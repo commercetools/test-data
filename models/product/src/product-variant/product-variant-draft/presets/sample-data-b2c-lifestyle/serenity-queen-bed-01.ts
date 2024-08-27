@@ -36,16 +36,11 @@ const serenityQueenBed01 = (): TProductVariantDraftBuilder =>
         'en-US': '- Assembly included in delivery',
         'de-DE': '- Montage im Lieferumfang enthalten',
       }),
-      AttributeDraft.random()
-        .name('color-filter')
-        .value({
-          key: '#808080',
-          label: {
-            'de-DE': 'Beige:#F5F5DC',
-            'en-GB': 'Beige:#F5F5DC',
-            'en-US': 'Beige:#F5F5DC',
-          },
-        }),
+      AttributeDraft.random().name('color').value({
+        'de-DE': 'Beige:#F5F5DC',
+        'en-GB': 'Beige:#F5F5DC',
+        'en-US': 'Beige:#F5F5DC',
+      }),
     ]);
 
 export default serenityQueenBed01;

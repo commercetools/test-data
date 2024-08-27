@@ -35,6 +35,8 @@ const transformers = {
       'metaDescription',
       'metaKeywords',
       'categories',
+      'masterVariant',
+      'variants',
     ],
     replaceFields: ({ fields }) => {
       const { categories } = fields;
@@ -48,12 +50,6 @@ const transformers = {
 
       return {
         ...fields,
-        name: fields.name,
-        description: fields.description,
-        slug: fields.slug,
-        metaTitle: fields.metaTitle,
-        metaDescription: fields.metaDescription,
-        metaKeywords: fields.metaKeywords,
         categories: categoryReferences,
       };
     },

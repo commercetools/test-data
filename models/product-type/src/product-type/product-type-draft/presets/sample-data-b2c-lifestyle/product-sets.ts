@@ -37,6 +37,38 @@ const productSets = (): TProductTypeDraftBuilder =>
         .attributeConstraint(attributeConstraints.None)
         .isSearchable(true)
         .inputHint(inputHints.SingleLine),
+
+      AttributeDefinitionDraft.presets
+        .empty()
+        .name('color')
+        .type(AttributeLocalizableTextTypeDraft.random())
+        .label(
+          LocalizedStringDraft.presets
+            .empty()
+            ['en-GB']('Color')
+            ['en-US']('Color')
+            ['de-DE']('Farbe')
+        )
+        .isRequired(false)
+        .attributeConstraint(attributeConstraints.None)
+        .isSearchable(false)
+        .inputHint(inputHints.SingleLine),
+
+      AttributeDefinitionDraft.presets
+        .empty()
+        .name('finish')
+        .type(AttributeLocalizableTextTypeDraft.random())
+        .label(
+          LocalizedStringDraft.presets
+            .empty()
+            ['en-GB']('Finish')
+            ['en-US']('Finish')
+            ['de-DE']('Fertig')
+        )
+        .isRequired(false)
+        .attributeConstraint(attributeConstraints.None)
+        .isSearchable(false)
+        .inputHint(inputHints.SingleLine),
     ]);
 
 export default productSets;

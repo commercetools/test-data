@@ -37,10 +37,14 @@ describe('builder', () => {
         metaKeywords: expect.objectContaining({
           en: expect.any(String),
         }),
-        masterVariant: null,
-        variant: null,
-        variants: expect.arrayContaining([]),
-        allVariants: expect.arrayContaining([]),
+        masterVariant: expect.objectContaining({ id: expect.any(String) }),
+        variant: expect.objectContaining({ id: expect.any(String) }),
+        variants: expect.arrayContaining([
+          expect.objectContaining({ id: expect.any(String) }),
+        ]),
+        allVariants: expect.arrayContaining([
+          expect.objectContaining({ id: expect.any(String) }),
+        ]),
         searchKeywords: expect.arrayContaining([]),
         searchKeyword: expect.arrayContaining([]),
         categoryOrderHints: expect.any(Object),
@@ -78,6 +82,10 @@ describe('builder', () => {
         metaKeywords: expect.objectContaining({
           en: expect.any(String),
         }),
+        masterVariant: expect.objectContaining({ id: expect.any(String) }),
+        variants: expect.arrayContaining([
+          expect.objectContaining({ id: expect.any(String) }),
+        ]),
       })
     )
   );
@@ -159,10 +167,14 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        masterVariant: null,
-        variants: expect.arrayContaining([]),
-        allVariants: expect.arrayContaining([]),
-        variant: null,
+        masterVariant: expect.objectContaining({ id: expect.any(String) }),
+        variant: expect.objectContaining({ id: expect.any(String) }),
+        variants: expect.arrayContaining([
+          expect.objectContaining({ id: expect.any(String) }),
+        ]),
+        allVariants: expect.arrayContaining([
+          expect.objectContaining({ id: expect.any(String) }),
+        ]),
         skus: expect.arrayContaining([expect.any(String)]),
         __typename: 'ProductData',
       })

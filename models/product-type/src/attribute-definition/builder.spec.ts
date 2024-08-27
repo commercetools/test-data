@@ -65,24 +65,7 @@ describe('builder', () => {
           __typename: expect.any(String),
         }),
         name: expect.any(String),
-        label: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: expect.any(String),
-            value: expect.any(String),
-          }),
-        ]),
-        isRequired: expect.any(Boolean),
-        attributeConstraint: expect.any(String),
-        inputTip: expect.arrayContaining([
-          expect.objectContaining({
-            __typename: 'LocalizedString',
-            locale: expect.any(String),
-            value: expect.any(String),
-          }),
-        ]),
-        inputHint: expect.any(String),
-        isSearchable: expect.any(Boolean),
+        label: expect.any(String),
         labelAllLocales: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
@@ -90,6 +73,18 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
+        isRequired: expect.any(Boolean),
+        attributeConstraint: expect.any(String),
+        inputTip: expect.any(String),
+        inputTipAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        inputHint: expect.any(String),
+        isSearchable: expect.any(Boolean),
         __typename: 'AttributeDefinition',
       })
     )
