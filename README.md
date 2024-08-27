@@ -37,6 +37,14 @@ const author2 = Author.random().firstName('Rebecca').buildGraphql<TAuthor>();
 
 For organization & ownership purposes, Pangolin & FCT house their presets under their respective folders (e.g. change-history-data, sample-data-fashion, sample-data-b2c-lifestyle). These should not be altered by an external team; however, if modifications occur for any reason, a corresponding team review is mandatory.
 
+## Generating a new Model using script
+
+```bash
+pnpm create-model <model-name>
+
+pnpm create-model product-type
+```
+
 ## FAQ
 
 #### whose review is mandatory for creating PR?
