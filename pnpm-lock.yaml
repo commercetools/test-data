@@ -956,10 +956,10 @@ importers:
         specifier: 10.1.4
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: ^10.1.4
+        specifier: 10.1.4
         version: link:../staged-quote
       '@commercetools-test-data/state':
-        specifier: 10.1.3
+        specifier: 10.1.4
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.1.4
@@ -1001,7 +1001,7 @@ importers:
         specifier: 10.1.4
         version: link:../customer-group
       '@commercetools-test-data/state':
-        specifier: 10.1.3
+        specifier: 10.1.4
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.1.4
@@ -1124,7 +1124,7 @@ importers:
         specifier: 10.1.4
         version: link:../quote-request
       '@commercetools-test-data/state':
-        specifier: 10.1.3
+        specifier: 10.1.4
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.1.4
