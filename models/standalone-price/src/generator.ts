@@ -37,6 +37,7 @@ const generator = Generator<TStandalonePrice>({
     tiers: [fake(() => PriceTier.random())],
     discounted: null,
     staged: null,
+    custom: null,
     active: fake((f) => f.datatype.boolean()),
   },
 });

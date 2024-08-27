@@ -15,11 +15,25 @@ const transformers = {
   graphql: Transformer<TAttributeDefinition, TAttributeDefinitionGraphql>(
     'graphql',
     {
-      buildFields: ['label', 'inputTip', 'type'],
-      addFields: ({ fields }) => ({
-        labelAllLocales: LocalizedString.toLocalizedField(fields.label),
-        __typename: 'AttributeDefinition',
-      }),
+      buildFields: ['type'],
+      replaceFields: ({ fields }) => {
+        const labelAllLocales = LocalizedString.toLocalizedField(fields.label);
+        const inputTipAllLocales = LocalizedString.toLocalizedField(
+          fields.inputTip
+        );
+        return {
+          ...fields,
+          labelAllLocales,
+          label:
+            LocalizedString.resolveGraphqlDefaultLocaleValue(labelAllLocales)!,
+          inputTipAllLocales,
+          inputTip:
+            LocalizedString.resolveGraphqlDefaultLocaleValue(
+              inputTipAllLocales
+            )!,
+          __typename: 'AttributeDefinition',
+        };
+      },
     }
   ),
 };

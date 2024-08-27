@@ -50,6 +50,25 @@ describe(`with productSets preset`, () => {
         "name": "ltext",
       },
     },
+    {
+      "attributeConstraint": "None",
+      "inputHint": "SingleLine",
+      "inputTip": undefined,
+      "isRequired": false,
+      "isSearchable": false,
+      "label": {
+        "de": undefined,
+        "de-DE": "Fertig",
+        "en": undefined,
+        "en-GB": "Finish",
+        "en-US": "Finish",
+        "fr": undefined,
+      },
+      "name": "finish",
+      "type": {
+        "name": "ltext",
+      },
+    },
   ],
   "description": "products also sold as sets with their variants",
   "key": "product-sets",
@@ -116,6 +135,33 @@ describe(`with productSets preset`, () => {
         },
       ],
       "name": "color",
+      "type": {
+        "ltext": {
+          "dummy": null,
+        },
+      },
+    },
+    {
+      "attributeConstraint": "None",
+      "inputHint": "SingleLine",
+      "inputTip": undefined,
+      "isRequired": false,
+      "isSearchable": false,
+      "label": [
+        {
+          "locale": "en-GB",
+          "value": "Finish",
+        },
+        {
+          "locale": "en-US",
+          "value": "Finish",
+        },
+        {
+          "locale": "de-DE",
+          "value": "Fertig",
+        },
+      ],
+      "name": "finish",
       "type": {
         "ltext": {
           "dummy": null,

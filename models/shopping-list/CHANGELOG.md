@@ -1,5 +1,14 @@
 # @commercetools-test-data/shopping-list
 
+## 10.1.4
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.1.4
+  - @commercetools-test-data/commons@10.1.4
+  - @commercetools-test-data/utils@10.1.4
+
 ## 10.1.3
 
 ### Patch Changes

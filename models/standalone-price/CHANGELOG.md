@@ -1,5 +1,22 @@
 # @commercetools-test-data/standalone-price
 
+## 10.1.4
+
+### Patch Changes
+
+- [#639](https://github.com/commercetools/test-data/pull/639) [`328ed4c`](https://github.com/commercetools/test-data/commit/328ed4c71b67be64420be55bd50461a0ceade89a) Thanks [@nima-ct](https://github.com/nima-ct)! - Fix for the GraphQL build of the StandalonePrice model
+
+  - Modified the GraphQL transformer to ensure that CustomerGroupRef and ChannelRef return IDs instead of keys
+  - Added a null custom property to the StandalonePrice model generator to align with schema requirements.
+
+- Updated dependencies [[`d25c8b7`](https://github.com/commercetools/test-data/commit/d25c8b7bc6cf56dc17e702f092b66a8e98c49d74)]:
+  - @commercetools-test-data/product@10.1.4
+  - @commercetools-test-data/core@10.1.4
+  - @commercetools-test-data/channel@10.1.4
+  - @commercetools-test-data/commons@10.1.4
+  - @commercetools-test-data/customer-group@10.1.4
+  - @commercetools-test-data/utils@10.1.4
+
 ## 10.1.3
 
 ### Patch Changes

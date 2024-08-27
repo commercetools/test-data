@@ -83,9 +83,11 @@ describe('builder', () => {
         country: expect.any(String),
         customerGroup: expect.objectContaining({
           typeId: 'customer-group',
+          id: expect.any(String),
         }),
         channel: expect.objectContaining({
           typeId: 'channel',
+          id: expect.any(String),
         }),
         validFrom: expect.any(String),
         validUntil: expect.any(String),
@@ -169,4 +171,14 @@ describe('builder', () => {
       })
     )
   );
+
+  it('should sync ids between customerGroup and customerGroupRef and between channel and channelRef in a GraphQL build', () => {
+    const standalonePrice =
+      StandalonePrice.random().buildGraphql<TStandalonePriceGraphql>();
+
+    expect(standalonePrice.customerGroup?.id).toBe(
+      standalonePrice.customerGroupRef?.id
+    );
+    expect(standalonePrice.channel?.id).toBe(standalonePrice.channelRef?.id);
+  });
 });

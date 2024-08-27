@@ -1,5 +1,20 @@
 # @commercetools-test-data/product
 
+## 10.1.4
+
+### Patch Changes
+
+- [#644](https://github.com/commercetools/test-data/pull/644) [`d25c8b7`](https://github.com/commercetools/test-data/commit/d25c8b7bc6cf56dc17e702f092b66a8e98c49d74) Thanks [@ByronDWall](https://github.com/ByronDWall)! - "fix(b2c presets): update product-set product-type to include 'finish' attribute, update 'serenity-queen-bed' product-draft to declare 'color' attribute correctly"
+
+- Updated dependencies [[`d25c8b7`](https://github.com/commercetools/test-data/commit/d25c8b7bc6cf56dc17e702f092b66a8e98c49d74)]:
+  - @commercetools-test-data/product-type@10.1.4
+  - @commercetools-test-data/core@10.1.4
+  - @commercetools-test-data/category@10.1.4
+  - @commercetools-test-data/channel@10.1.4
+  - @commercetools-test-data/commons@10.1.4
+  - @commercetools-test-data/tax-category@10.1.4
+  - @commercetools-test-data/utils@10.1.4
+
 ## 10.1.3
 
 ### Patch Changes
