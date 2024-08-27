@@ -1,5 +1,20 @@
 # @commercetools-test-data/product-type
 
+## 10.2.0
+
+### Minor Changes
+
+- [#647](https://github.com/commercetools/test-data/pull/647) [`c8357dd`](https://github.com/commercetools/test-data/commit/c8357dd8bf6dc9c87642b06ef2b4b3a480f4dadb) Thanks [@dogayuksel](https://github.com/dogayuksel)! - Add missing Attribution Definition Type Models for money, date, time, and datetime.
+
+### Patch Changes
+
+- [#646](https://github.com/commercetools/test-data/pull/646) [`e44812f`](https://github.com/commercetools/test-data/commit/e44812f21c71af531acd22bfc1100364b8ead8da) Thanks [@dogayuksel](https://github.com/dogayuksel)! - Fix LocalizedString GraphQL transformations on label and inputTip fields of AttributeDefinition.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.2.0
+  - @commercetools-test-data/commons@10.2.0
+  - @commercetools-test-data/utils@10.2.0
+
 ## 10.1.4
 
 ### Patch Changes
