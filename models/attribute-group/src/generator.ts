@@ -1,6 +1,6 @@
+import { ClientLogging } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { ClientLogging } from '../../commons/src';
 import { TAttributeGroup } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
