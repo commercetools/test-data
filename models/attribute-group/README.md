@@ -11,3 +11,12 @@ $ pnpm add -D @commercetools-test-data/attribute-group
 ```
 
 # Usage
+
+```ts
+import {
+  AttributeGroup,
+  type TAttributeGroup,
+} from '@commercetools-test-data/attribute-group';
+
+const attributeGroup = AttributeGroup.random().build<TAttributeGroup>();
+```
