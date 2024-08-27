@@ -14,7 +14,13 @@ describe('builder', () => {
         id: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+        }),
         lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customerRef: expect.objectContaining({ typeId: 'customer' }),
+        }),
         name: expect.any(String),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({

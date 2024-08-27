@@ -1,5 +1,6 @@
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { ClientLogging } from '../../commons/src';
 import { TAttributeGroup } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -14,8 +15,8 @@ const generator = Generator<TAttributeGroup>({
     description: fake((f) => f.lorem.sentences(2)),
     key: fake((f) => f.lorem.slug(2)),
     attributes: [],
-    createdBy: null,
-    lastModifiedBy: null,
+    createdBy: fake(() => ClientLogging.random()),
+    lastModifiedBy: fake(() => ClientLogging.random()),
   },
 });
 
