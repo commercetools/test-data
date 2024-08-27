@@ -22,6 +22,7 @@
 /models @commercetools/merchant-center-tech-leadership
 
 /models/associate-role @commercetools/customers-team-fe
+/models/attribute-group @commercetools/pacman-team-fe
 /models/business-unit @commercetools/customers-team-fe
 /models/cart @commercetools/checkout-team-fe
 /models/cart-discount @commercetools/priceless-team-fe
