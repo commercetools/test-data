@@ -31,6 +31,54 @@ const author1 = Author.random().firstName('John').buildGraphql<TAuthor>();
 const author2 = Author.random().firstName('Rebecca').buildGraphql<TAuthor>();
 ```
 
+# Local Development with Linked Packages
+
+When developing with multiple repositories, you may need to link packages locally to ensure your application uses the latest local changes without waiting for a package to be published. Below is a general approach to achieve this:
+
+## Steps to Link a Local Package
+
+1. **Clone and Set Up the test-data Repository:**
+
+   - Ensure that the test-data repository you want to link is cloned locally and properly set up.
+     ```bash
+     cd path-to-test-data-repo
+     pnpm install
+     pnpm run build
+     ```
+
+2. **Update the Application's `package.json`:**
+
+   - In your application’s `package.json`, replace the dependency version with the relative path to the local package directory. For example:
+     ```json
+     {
+       "dependencies": {
+         "@example/package-name": "<path-to-test-data-package>",
+         "@commercetools-test-data/commons": "../../../test-data/models/commons"
+       }
+     }
+     ```
+
+3. **Install Dependencies:**
+
+   - Run the following commands to ensure your application is using the local version of the package:
+     ```bash
+     cd path-to-application-repo
+     pnpm install
+     ```
+
+4. **Verify the Link:**
+
+   - Ensure that the package is correctly linked by inspecting the `node_modules` directory in your application repository. The package should point to your local build instead of fetching from a remote registry.
+
+5. **Development Workflow:**
+   - During development, make changes in the test-data repository, rebuild the package, and re-run your application to see the changes reflect immediately.
+   - Remember to revert the `package.json` changes before committing or pushing to a remote repository unless those changes are intended to be shared.
+
+## Important Notes
+
+- This approach is ideal for local development and testing. It ensures that your application runs with the latest package changes without the need to publish the package.
+- Make sure to revert or manage these changes appropriately when switching between local development and production environments.
+
 # Contribution
 
 ## Presets Folder
