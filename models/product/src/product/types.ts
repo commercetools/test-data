@@ -5,8 +5,8 @@ import type {
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import type { TProductTypeGraphql } from '@commercetools-test-data/product-type';
+import type { TStateGraphql } from '@commercetools-test-data/state';
 import type { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
-import type { TStateGraphql } from '../../../state/src';
 
 export type TProduct = Product & {
   skus: Array<String>;
