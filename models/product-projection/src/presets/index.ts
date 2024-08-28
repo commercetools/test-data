@@ -1,5 +1,5 @@
-import happyCowMilkProductProjection from './happy-cow-milk-product-projection';
+import happyCowMilk from './happy-cow-milk';
 
-const presets = { happyCowMilkProductProjection };
+const presets = { happyCowMilk };
 
 export default presets;

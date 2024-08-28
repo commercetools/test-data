@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
 import ProductProjection from '../builder';
@@ -17,7 +17,9 @@ const happyCowMilk = () => {
   const slug = LocalizedString.presets.empty().en('happy-cow-milk-slug');
 
   return ProductProjection()
-    .productType(ProductType.presets.milk())
+    .productType(
+      Reference.presets.productTypeReference().obj(ProductType.presets.milk())
+    )
     .slug(slug)
     .key('happy-cow-milk-key')
     .name(productName)
