@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import sofas from './sofas';
 
 describe(`with sofas preset`, () => {

@@ -1,9 +1,12 @@
-import { Channel, TChannelGraphql } from '@commercetools-test-data/channel';
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { TChannelGraphql } from '@commercetools-test-data/channel';
+import { Channel } from '@commercetools-test-data/channel';
+import type { TReferenceGraphql } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
+import type {
+  TCustomerGroupGraphql} from '@commercetools-test-data/customer-group';
 import {
-  CustomerGroup,
-  TCustomerGroupGraphql,
+  CustomerGroup
 } from '@commercetools-test-data/customer-group';
 import type {
   TStandalonePrice,

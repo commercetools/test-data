@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import { TCustomObject, TCreateCustomObjectBuilder } from './types';
+import type { TCustomObject, TCreateCustomObjectBuilder } from './types';
 
 const Model: TCreateCustomObjectBuilder = () =>
   Builder<TCustomObject>({

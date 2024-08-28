@@ -1,6 +1,7 @@
+import type {
+  TCategoryDraft} from '@commercetools-test-data/category';
 import {
-  CategoryDraft,
-  TCategoryDraft,
+  CategoryDraft
 } from '@commercetools-test-data/category';
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import {

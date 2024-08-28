@@ -1,4 +1,4 @@
-import {
+import type {
   CartDiscountValueAbsolute,
   CartDiscountValueAbsoluteDraft,
 } from '@commercetools/platform-sdk';

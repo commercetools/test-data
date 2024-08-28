@@ -1,4 +1,4 @@
-import {
+import type {
   CustomLineItem,
   CustomLineItemDraft,
 } from '@commercetools/platform-sdk';

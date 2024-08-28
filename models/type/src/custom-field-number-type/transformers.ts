@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TCustomFieldNumberTypeGraphql, TCustomFieldNumberType } from './types';
+import type { TCustomFieldNumberTypeGraphql, TCustomFieldNumberType } from './types';
 
 const transformers = {
   default: Transformer<TCustomFieldNumberType, TCustomFieldNumberType>(

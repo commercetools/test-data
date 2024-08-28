@@ -1,6 +1,6 @@
 import * as ProductData from '../../product-data';
 import ProductCatalogData from '../builder';
-import { TProductCatalogDataBuilder } from '../types';
+import type { TProductCatalogDataBuilder } from '../types';
 
 const boringGenericMilkProductCatalogData = (): TProductCatalogDataBuilder => {
   const productData = ProductData.presets.boringGenericMilkProductData();

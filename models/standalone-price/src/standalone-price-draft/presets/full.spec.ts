@@ -1,4 +1,4 @@
-import { TStandalonePriceDraft } from '../../types';
+import type { TStandalonePriceDraft } from '../../types';
 import full from './full';
 
 describe(`with full preset`, () => {

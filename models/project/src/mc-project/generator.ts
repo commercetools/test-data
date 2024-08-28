@@ -4,7 +4,7 @@ import * as AllPermissionsForAllApplications from './all-permissions-for-all-app
 import * as AppliedActionRight from './applied-action-right';
 import * as AppliedDataFence from './applied-data-fence';
 import * as AppliedPermission from './applied-permission';
-import { TMcProject } from './types';
+import type { TMcProject } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

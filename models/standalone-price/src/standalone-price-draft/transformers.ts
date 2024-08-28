@@ -1,4 +1,4 @@
-import { TMoneyDraftGraphql } from '@commercetools-test-data/commons';
+import type { TMoneyDraftGraphql } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TStandalonePriceDraft,

@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TStagedPriceDraft, TStagedPriceDraftGraphql } from './types';
+import type { TStagedPriceDraft, TStagedPriceDraftGraphql } from './types';
 import * as StagedPriceDraft from '.';
 
 describe('builder', () => {

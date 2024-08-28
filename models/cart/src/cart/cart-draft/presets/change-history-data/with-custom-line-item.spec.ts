@@ -1,4 +1,4 @@
-import { TCartDraft } from '../../../types';
+import type { TCartDraft } from '../../../types';
 import withCustomLineItem from './with-custom-line-item';
 
 describe('Cart with CustomLineItem preset', () => {

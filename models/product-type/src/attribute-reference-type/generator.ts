@@ -1,6 +1,6 @@
 import { Generator, oneOf } from '@commercetools-test-data/core';
 import { attributeReferenceTypeId } from './constants';
-import { TAttributeReferenceType } from './types';
+import type { TAttributeReferenceType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributereferencetype
 

@@ -1,18 +1,18 @@
 import type { Quote, QuoteDraft } from '@commercetools/platform-sdk';
-import {
+import type {
   TCompanyGraphql,
   TDivisionGraphql,
 } from '@commercetools-test-data/business-unit';
-import {
+import type {
   TReferenceGraphql,
   TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomerGraphql } from '@commercetools-test-data/customer';
-import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
-import { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
-import { TStagedQuoteGraphql } from '@commercetools-test-data/staged-quote';
-import { TStateGraphql } from '@commercetools-test-data/state';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
+import type { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
+import type { TStagedQuoteGraphql } from '@commercetools-test-data/staged-quote';
+import type { TStateGraphql } from '@commercetools-test-data/state';
 
 // Default
 export type TQuote = Quote;

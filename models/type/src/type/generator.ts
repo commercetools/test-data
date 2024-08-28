@@ -11,7 +11,7 @@ import {
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as FieldDefinition from '../field-definition';
 import { resourceTypeIds } from './constants';
-import { TType } from './types';
+import type { TType } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

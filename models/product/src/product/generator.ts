@@ -5,7 +5,7 @@ import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as ProductCatalogData from '../product-catalog-data';
 import { productPriceMode } from './constants';
-import { TProduct } from './types';
+import type { TProduct } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

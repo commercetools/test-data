@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
 import { generator } from './generator';
 import transformers from './transformers';
-import { TAttributeDateType, TCreateAttributeDateTypeBuilder } from './types';
+import type { TAttributeDateType, TCreateAttributeDateTypeBuilder } from './types';
 
 const Model: TCreateAttributeDateTypeBuilder = () =>
   Builder<TAttributeDateType>({

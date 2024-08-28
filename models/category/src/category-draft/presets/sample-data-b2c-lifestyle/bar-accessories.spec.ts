@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import barAccessories from './bar-accessories';
 
 describe(`with barAccessories preset`, () => {

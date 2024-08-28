@@ -1,7 +1,8 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type {
+  TProductTypeDraft} from '@commercetools-test-data/product-type';
 import {
-  ProductTypeDraft,
-  TProductTypeDraft,
+  ProductTypeDraft
 } from '@commercetools-test-data/product-type';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,

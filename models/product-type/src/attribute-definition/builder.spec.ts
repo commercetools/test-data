@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TAttributeDefinition, TAttributeDefinitionGraphql } from './types';
+import type { TAttributeDefinition, TAttributeDefinitionGraphql } from './types';
 import * as AttributeDefinition from './index';
 
 describe('builder', () => {

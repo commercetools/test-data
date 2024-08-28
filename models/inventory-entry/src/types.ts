@@ -1,8 +1,8 @@
-import {
+import type {
   InventoryEntry,
   InventoryEntryDraft,
 } from '@commercetools/platform-sdk';
-import { TChannelGraphql } from '@commercetools-test-data/channel';
+import type { TChannelGraphql } from '@commercetools-test-data/channel';
 import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 

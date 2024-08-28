@@ -4,7 +4,7 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as ProductDiscountValueAbsoluteDraft from '../../product-discount-value-absolute';
 import * as ProductDiscountValueExternalDraft from '../../product-discount-value-external';
 import * as ProductDiscountValueRelativeDraft from '../../product-discount-value-relative';
-import { TProductDiscountDraft } from '../types';
+import type { TProductDiscountDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountdraft
 

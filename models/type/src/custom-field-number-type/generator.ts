@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldNumberType } from './types';
+import type { TCustomFieldNumberType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldnumbertype
 

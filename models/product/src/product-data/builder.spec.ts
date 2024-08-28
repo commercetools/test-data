@@ -4,7 +4,7 @@ import { Category } from '@commercetools-test-data/category';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import * as ProductVariant from '../product-variant';
-import { TProductData, TProductDataGraphql } from './types';
+import type { TProductData, TProductDataGraphql } from './types';
 import * as ProductData from './index';
 
 describe('builder', () => {

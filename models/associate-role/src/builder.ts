@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import { TAssociateRole, TCreateAssociateRoleBuilder } from './types';
+import type { TAssociateRole, TCreateAssociateRoleBuilder } from './types';
 
 const Model: TCreateAssociateRoleBuilder = () =>
   Builder<TAssociateRole>({

@@ -1,7 +1,7 @@
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TCustomerGroup } from './types';
+import type { TCustomerGroup } from './types';
 
 // https://docs.commercetools.com/api/projects/customerGroups#customergroup
 

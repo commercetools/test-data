@@ -1,4 +1,4 @@
-import { TCustomerDraft, TCustomerDraftGraphql } from '../../../types';
+import type { TCustomerDraft, TCustomerDraftGraphql } from '../../../types';
 import sampleUsa from './sample-usa';
 
 describe('with the preset `sampleUsa`', () => {

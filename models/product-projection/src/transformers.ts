@@ -1,4 +1,5 @@
-import { Category, TCategoryGraphql } from '@commercetools-test-data/category';
+import type { TCategoryGraphql } from '@commercetools-test-data/category';
+import { Category } from '@commercetools-test-data/category';
 import {
   LocalizedString,
   type TReferenceGraphql,
@@ -8,14 +9,17 @@ import {
   buildField,
   buildFields,
 } from '@commercetools-test-data/core';
+import type {
+  TProductTypeGraphql} from '@commercetools-test-data/product-type';
 import {
-  ProductType,
-  TProductTypeGraphql,
+  ProductType
 } from '@commercetools-test-data/product-type';
-import { State, TStateGraphql } from '@commercetools-test-data/state';
+import type { TStateGraphql } from '@commercetools-test-data/state';
+import { State } from '@commercetools-test-data/state';
+import type {
+  TTaxCategoryGraphql} from '@commercetools-test-data/tax-category';
 import {
-  TaxCategory,
-  TTaxCategoryGraphql,
+  TaxCategory
 } from '@commercetools-test-data/tax-category';
 import type {
   TCategoryOrderHintGraphql,

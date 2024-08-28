@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TAttributeDateTypeGraphql, TAttributeDateType } from './types';
+import type { TAttributeDateTypeGraphql, TAttributeDateType } from './types';
 
 const transformers = {
   default: Transformer<TAttributeDateType, TAttributeDateType>('default', {

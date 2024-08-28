@@ -1,4 +1,4 @@
-import { TTransactionDraft } from '../../../types';
+import type { TTransactionDraft } from '../../../types';
 import withUsdCurrencyCode from './with-usd-currency-code';
 
 describe('Transaction with with the amount money of `USD` currencyCode and max cent amount preset', () => {

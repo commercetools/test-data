@@ -1,5 +1,5 @@
-import { PaymentMethodInfo } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import type { PaymentMethodInfo } from '@commercetools/platform-sdk';
+import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TPaymentMethodInfo = PaymentMethodInfo;

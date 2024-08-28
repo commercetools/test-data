@@ -3,7 +3,7 @@ import {
   Reference,
 } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TShoppingListDraft } from '../types';
+import type { TShoppingListDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/shoppingLists#shoppinglistdraft
 

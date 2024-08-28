@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProjectExpiry } from './types';
+import type { TProjectExpiry } from './types';
 
 const generator = Generator<TProjectExpiry>({
   fields: {

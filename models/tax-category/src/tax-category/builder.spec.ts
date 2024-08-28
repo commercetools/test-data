@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TTaxCategory, TTaxCategoryGraphql } from './types';
+import type { TTaxCategory, TTaxCategoryGraphql } from './types';
 import * as TaxCategory from './index';
 
 describe('builder', () => {

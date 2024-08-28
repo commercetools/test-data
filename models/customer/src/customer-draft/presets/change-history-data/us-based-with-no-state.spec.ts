@@ -1,4 +1,4 @@
-import { TCustomerDraft } from '../../../types';
+import type { TCustomerDraft } from '../../../types';
 import usBasedCustomerNoState from './us-based-with-no-state';
 
 describe('A US-based customer with no defined state', () => {

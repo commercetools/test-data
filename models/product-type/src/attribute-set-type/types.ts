@@ -1,4 +1,5 @@
-import { AttributeSetType, AttributeType } from '@commercetools/platform-sdk';
+import type { AttributeSetType} from '@commercetools/platform-sdk';
+import { AttributeType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TAttributeSetType = AttributeSetType;

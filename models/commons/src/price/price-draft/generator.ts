@@ -1,7 +1,7 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { MoneyDraft } from '../../index';
-import { TPriceDraft } from '../types';
+import type { TPriceDraft } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -1,4 +1,4 @@
-import { TAddressDraftBuilder } from '../../../types';
+import type { TAddressDraftBuilder } from '../../../types';
 import * as AddressDraft from '../../index';
 
 const lucasDuboisAddress = (): TAddressDraftBuilder =>

@@ -1,4 +1,4 @@
-import { TShippingRateDraft } from '../../../types';
+import type { TShippingRateDraft } from '../../../types';
 import usdCurrency from './with-usd-currency';
 
 describe('Shipping rate with the MoneyDraft `USD` currencyCode preset', () => {

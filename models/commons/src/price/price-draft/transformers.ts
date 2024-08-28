@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TMoneyDraftGraphql } from '../../money';
+import type { TMoneyDraftGraphql } from '../../money';
 import type { TPriceDraft, TPriceDraftGraphql } from '../types';
 
 const transformers = {

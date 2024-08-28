@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import theMinimalist from './the-minimalist';
 
 describe(`with theMinimalist preset`, () => {

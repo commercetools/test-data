@@ -6,7 +6,7 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { orderState, paymentState, shipmentState } from '../constants';
-import { TOrderFromQuoteDraft } from '../types';
+import type { TOrderFromQuoteDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/orders#orderfromquotedraft
 

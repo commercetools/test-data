@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { type TCustomFieldSetType, TCustomFieldSetTypeGraphql } from './types';
+import type { TCustomFieldSetTypeGraphql , type TCustomFieldSetType } from './types';
 import * as CustomFieldSetType from './index';
 
 describe('builder', () => {

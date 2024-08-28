@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TProjectDraft, TProjectDraftGraphql } from '../types';
+import type { TProjectDraft, TProjectDraftGraphql } from '../types';
 import * as ProjectDraft from './index';
 
 describe('builder', () => {

@@ -1,8 +1,8 @@
-import {
+import type {
   CartDiscountValueGiftLineItem,
   CartDiscountValueGiftLineItemDraft,
 } from '@commercetools/platform-sdk';
-import { TReference } from '@commercetools-test-data/commons';
+import type { TReference } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountValueGiftLineItem = CartDiscountValueGiftLineItem;

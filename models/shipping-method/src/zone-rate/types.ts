@@ -1,5 +1,5 @@
-import { ZoneRate, ZoneRateDraft, Zone } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { ZoneRate, ZoneRateDraft, Zone } from '@commercetools/platform-sdk';
+import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TZoneRate = Omit<ZoneRate, 'zone'> & { zone: Zone };

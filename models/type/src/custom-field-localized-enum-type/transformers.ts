@@ -1,5 +1,5 @@
 import { buildField, Transformer } from '@commercetools-test-data/core';
-import { TCustomFieldLocalizedEnumValueGraphql } from '../custom-field-localized-enum-value';
+import type { TCustomFieldLocalizedEnumValueGraphql } from '../custom-field-localized-enum-value';
 import {
   type TCustomFieldLocalizedEnumType,
   type TCustomFieldLocalizedEnumTypeGraphql,

@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAttributePlainEnumValueDraft } from '../types';
+import type { TAttributePlainEnumValueDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributeplainenumvalue
 

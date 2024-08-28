@@ -1,5 +1,5 @@
-import { StagedPriceDraft } from '@commercetools/platform-sdk';
-import { TBuilder } from '@commercetools-test-data/core';
+import type { StagedPriceDraft } from '@commercetools/platform-sdk';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TStagedPriceDraft = StagedPriceDraft;
 

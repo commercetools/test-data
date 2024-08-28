@@ -1,4 +1,4 @@
-import { TStoreDraftBuilder } from '../../types';
+import type { TStoreDraftBuilder } from '../../types';
 import StoreDraft from '../builder';
 
 const empty = (): TStoreDraftBuilder =>

@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TLocation, TLocationGraphql } from './types';
+import type { TLocation, TLocationGraphql } from './types';
 
 const transformers = {
   default: Transformer<TLocation, TLocation>('default', { buildFields: [] }),

@@ -23,7 +23,7 @@ import {
   taxMode,
   taxRoundingMode,
 } from './constants';
-import { TOrder } from './types';
+import type { TOrder } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

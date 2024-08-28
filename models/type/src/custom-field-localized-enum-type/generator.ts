@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as CustomFieldLocalizedEnumValue from '../custom-field-localized-enum-value';
-import { TCustomFieldLocalizedEnumType } from './types';
+import type { TCustomFieldLocalizedEnumType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldlocalizedenumtype
 

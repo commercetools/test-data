@@ -7,7 +7,7 @@ import {
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode } from '../constants';
-import { TLineItemDraft } from '../types';
+import type { TLineItemDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/carts#lineitemdraft
 

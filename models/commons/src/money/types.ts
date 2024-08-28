@@ -1,4 +1,4 @@
-import { Money } from '@commercetools/platform-sdk';
+import type { Money } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Base model

@@ -1,6 +1,6 @@
 import { MoneyDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TStagedPriceDraft } from './types';
+import type { TStagedPriceDraft } from './types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#stagedpricedraft
 

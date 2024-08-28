@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeBooleanTypeDraft } from '../types';
+import type { TAttributeBooleanTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributebooleantype
 

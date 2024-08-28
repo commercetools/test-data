@@ -1,4 +1,4 @@
-import { TShippingMethodDraft } from '../../../types';
+import type { TShippingMethodDraft } from '../../../types';
 import usZone from './with-us-zone-rate';
 
 describe('ShippingMethod with `US` Zone preset', () => {

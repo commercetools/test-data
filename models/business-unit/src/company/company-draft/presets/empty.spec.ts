@@ -1,4 +1,4 @@
-import { TCompanyDraft } from '../../types';
+import type { TCompanyDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

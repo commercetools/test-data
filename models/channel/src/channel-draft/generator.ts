@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { roles } from '../constants';
-import { TChannelDraft } from '../types';
+import type { TChannelDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/channels#channeldraft
 const generator = Generator<TChannelDraft>({

@@ -1,5 +1,5 @@
-import { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons/src';
+import type { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
+import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons/src';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TAttributeLocalizedEnumValue = AttributeLocalizedEnumValue;

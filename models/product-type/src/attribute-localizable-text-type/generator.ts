@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeLocalizableTextType } from './types';
+import type { TAttributeLocalizableTextType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributelocalizabletexttype
 

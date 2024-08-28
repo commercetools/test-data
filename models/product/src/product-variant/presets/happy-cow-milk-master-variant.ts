@@ -1,6 +1,6 @@
 import * as Attribute from '../../attribute';
 import ProductVariant from '../builder';
-import { TProductVariantBuilder } from '../types';
+import type { TProductVariantBuilder } from '../types';
 
 const happyCowMilkMasterVariant = (): TProductVariantBuilder =>
   ProductVariant()

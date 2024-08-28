@@ -1,6 +1,6 @@
 import { LocalizedString, Money } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TCustomLineItem } from './types';
+import type { TCustomLineItem } from './types';
 
 // https://docs.commercetools.com/api/projects/carts#cart
 

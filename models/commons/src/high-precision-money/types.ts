@@ -1,4 +1,4 @@
-import {
+import type {
   HighPrecisionMoney,
   HighPrecisionMoneyDraft,
 } from '@commercetools/platform-sdk';

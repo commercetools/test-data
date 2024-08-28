@@ -3,7 +3,7 @@ import type {
   ShippingMethodDraft,
   TaxCategory,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TLocalizedStringGraphql,
   type TReferenceGraphql,
 } from '@commercetools-test-data/commons';

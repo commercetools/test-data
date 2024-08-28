@@ -1,7 +1,7 @@
 import { Builder } from '@commercetools-test-data/core';
 import { generator } from './generator';
 import transformers from './transformers';
-import { TAttributeMoneyType, TCreateAttributeMoneyTypeBuilder } from './types';
+import type { TAttributeMoneyType, TCreateAttributeMoneyTypeBuilder } from './types';
 
 const Model: TCreateAttributeMoneyTypeBuilder = () =>
   Builder<TAttributeMoneyType>({

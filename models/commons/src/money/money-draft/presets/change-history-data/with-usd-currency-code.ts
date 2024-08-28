@@ -1,4 +1,4 @@
-import { TMoneyDraftBuilder } from '../../../types';
+import type { TMoneyDraftBuilder } from '../../../types';
 import MoneyDraft from '../../builder';
 
 const withUsdCurrencyCode = (): TMoneyDraftBuilder =>

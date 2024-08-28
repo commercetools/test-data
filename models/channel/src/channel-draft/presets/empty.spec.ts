@@ -1,4 +1,4 @@
-import { TChannelDraft } from '../../types';
+import type { TChannelDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

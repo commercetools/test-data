@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import bottomsKids from './bottoms-kids';
 
 describe(`with bottomsKids preset`, () => {

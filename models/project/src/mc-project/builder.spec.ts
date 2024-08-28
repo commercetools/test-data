@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import * as AppliedPermission from './applied-permission';
 import * as ProjectExpiry from './project-expiry';
-import { TMcProject, TMcProjectGraphql } from './types';
+import type { TMcProject, TMcProjectGraphql } from './types';
 import * as McProject from './index';
 
 describe('builder', () => {

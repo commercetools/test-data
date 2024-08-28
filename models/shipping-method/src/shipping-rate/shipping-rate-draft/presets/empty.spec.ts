@@ -1,4 +1,4 @@
-import { TShippingRateDraftBuilder } from '../../types';
+import type { TShippingRateDraftBuilder } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

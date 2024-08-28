@@ -1,4 +1,4 @@
-import { TReviewDraft } from '../../../types';
+import type { TReviewDraft } from '../../../types';
 import withRatingGreaterThanOne from './with-ranking-greater-than-one';
 
 describe('ReviewDraft with a ranking preset of greater than 1', () => {

@@ -1,4 +1,4 @@
-import { TQuoteDraft } from '../../types';
+import type { TQuoteDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

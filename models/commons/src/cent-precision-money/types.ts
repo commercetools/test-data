@@ -1,4 +1,4 @@
-import {
+import type {
   CentPrecisionMoney,
   CentPrecisionMoneyDraft,
 } from '@commercetools/platform-sdk';

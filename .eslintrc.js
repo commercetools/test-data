@@ -13,6 +13,7 @@ module.exports = {
       },
     ],
     'import/no-anonymous-default-export': 'off',
+    '@typescript-eslint/consistent-type-imports': 'error',
   },
   settings: {
     react: {

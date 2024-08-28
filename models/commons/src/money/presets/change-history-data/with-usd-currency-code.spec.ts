@@ -1,4 +1,4 @@
-import { TMoney } from '../../types';
+import type { TMoney } from '../../types';
 import withUsdCurrencyCode from './with-usd-currency-code';
 
 describe('Money with a defined `USD` currencyCode', () => {

@@ -1,4 +1,4 @@
-import { TCustomLineItemDraft } from '../../../types';
+import type { TCustomLineItemDraft } from '../../../types';
 import customLineItemWithUsdCurrencyCode from './with-usd-currency-code';
 
 describe('Custom line item with a MoneyDraft `USD` currencyCode', () => {

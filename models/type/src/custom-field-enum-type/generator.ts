@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldEnumType } from './types';
+import type { TCustomFieldEnumType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldenumtype
 

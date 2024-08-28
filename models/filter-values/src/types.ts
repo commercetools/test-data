@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TMcSettingsFilterValues } from '@commercetools-test-data/graphql-types';
+import type { TMcSettingsFilterValues } from '@commercetools-test-data/graphql-types';
 
 export type TFilterValues = Exclude<TMcSettingsFilterValues, '__typename'>;
 

@@ -3,7 +3,7 @@
 import { Channel } from '@commercetools-test-data/channel';
 import { Reference } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
+import type {
   TInventoryEntry,
   TInventoryEntryRest,
   TInventoryEntryGraphql,

@@ -1,4 +1,4 @@
-import { TPriceDraftBuilder } from '../../types';
+import type { TPriceDraftBuilder } from '../../types';
 import PriceDraft from '../builder';
 
 const empty = (): TPriceDraftBuilder =>

@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TImageDraft } from '../types';
+import type { TImageDraft } from '../types';
 
 /**
  * This model does not have a corresponding REST entity,

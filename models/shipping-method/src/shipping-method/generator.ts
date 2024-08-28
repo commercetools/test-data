@@ -5,7 +5,7 @@ import {
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TShippingMethod } from './types';
+import type { TShippingMethod } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingmethod
 

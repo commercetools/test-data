@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-conditional-expect */
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { TProductDiscountDraft } from '../../../types';
+import type { TProductDiscountDraft } from '../../../types';
 import withPredicate from './with-predicate';
 
 it(`should set all fields to specified values`, () => {

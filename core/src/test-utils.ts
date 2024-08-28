@@ -1,5 +1,5 @@
 /* eslint-disable jest/no-conditional-expect */
-import { TBuilder, TTransformType } from './types';
+import type { TBuilder, TTransformType } from './types';
 
 function createBuilderSpec<Model, TransformedModel, Expected = {}>(
   transformType: TTransformType,

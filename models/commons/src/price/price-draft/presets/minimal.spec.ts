@@ -1,4 +1,4 @@
-import { TPriceDraft } from '../../types';
+import type { TPriceDraft } from '../../types';
 import minimal from './minimal';
 
 describe('minimal preset', () => {

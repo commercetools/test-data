@@ -1,6 +1,6 @@
 import { Generator, fake } from '@commercetools-test-data/core';
 import * as CentPrecisionMoney from '../cent-precision-money';
-import { TPriceTier } from './types';
+import type { TPriceTier } from './types';
 
 // https://docs.commercetools.com/api/types#pricetier
 

@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TAppliedPermission, TAppliedPermissionGraphql } from './types';
+import type { TAppliedPermission, TAppliedPermissionGraphql } from './types';
 import * as AppliedPermission from './index';
 
 describe('builder', () => {

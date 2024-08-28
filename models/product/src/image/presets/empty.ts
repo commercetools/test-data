@@ -1,5 +1,5 @@
 import Image from '../builder';
-import { TImageBuilder } from '../types';
+import type { TImageBuilder } from '../types';
 
 const empty = (): TImageBuilder => Image().label(undefined);
 

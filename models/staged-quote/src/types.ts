@@ -2,19 +2,19 @@ import type {
   StagedQuote,
   StagedQuoteDraft,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TCompanyGraphql,
   TDivisionGraphql,
 } from '@commercetools-test-data/business-unit';
-import { TCartGraphql } from '@commercetools-test-data/cart';
-import {
+import type { TCartGraphql } from '@commercetools-test-data/cart';
+import type {
   TReferenceGraphql,
   TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomerGraphql } from '@commercetools-test-data/customer';
-import { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
-import { TStateGraphql } from '@commercetools-test-data/state';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
+import type { TStateGraphql } from '@commercetools-test-data/state';
 
 // Default
 export type TStagedQuote = StagedQuote;

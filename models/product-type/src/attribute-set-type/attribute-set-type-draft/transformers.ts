@@ -1,5 +1,5 @@
 import { Transformer, buildField } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributeSetTypeDraft,
   TAttributeSetTypeDraftGraphql,
 } from '../types';

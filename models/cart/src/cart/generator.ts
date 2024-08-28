@@ -21,7 +21,7 @@ import {
   taxMode,
   taxRoundingMode,
 } from './constants';
-import { TCart } from './types';
+import type { TCart } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -1,6 +1,6 @@
-import { AttributeLocalizedEnumType } from '@commercetools/platform-sdk';
+import type { AttributeLocalizedEnumType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributeLocalizedEnumValueDraftGraphql,
   TAttributeLocalizedEnumValueGraphql,
 } from '../attribute-localized-enum-value';

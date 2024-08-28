@@ -2,7 +2,7 @@ import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import * as FieldDefinition from '../../field-definition';
 import { resourceTypeIds } from '../constants';
-import { TTypeDraft } from '../types';
+import type { TTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/types#typedraft
 

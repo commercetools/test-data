@@ -1,7 +1,7 @@
 import { buildField, Transformer } from '@commercetools-test-data/core';
 import { faker } from '@faker-js/faker';
 import * as Reference from '../reference';
-import { TReference } from '../reference/types';
+import type { TReference } from '../reference/types';
 import type { TClientLogging, TClientLoggingGraphql } from './types';
 
 const transformers = {

@@ -1,8 +1,8 @@
-import {
+import type {
   AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';

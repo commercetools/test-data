@@ -1,6 +1,6 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAttributeLocalizedEnumValueDraft } from '../types';
+import type { TAttributeLocalizedEnumValueDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributelocalizedenumvalue
 

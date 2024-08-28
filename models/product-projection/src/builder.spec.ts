@@ -7,7 +7,7 @@ import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { State } from '@commercetools-test-data/state';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
-import {
+import type {
   TProductProjection,
   TProductProjectionGraphql,
   TProductProjectionRest,

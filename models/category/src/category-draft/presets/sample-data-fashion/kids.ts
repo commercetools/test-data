@@ -1,5 +1,5 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
-import { TCategoryDraftBuilder } from '../../../types';
+import type { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 
 const kids = (): TCategoryDraftBuilder =>

@@ -3,7 +3,7 @@ import AttributeBooleanType from '../../attribute-boolean-type/builder';
 import * as AttributeDefinition from '../../attribute-definition';
 import AttributeTextType from '../../attribute-text-type/builder';
 import ProductType from '../builder';
-import { TProductTypeBuilder } from '../types';
+import type { TProductTypeBuilder } from '../types';
 
 const milk = (): TProductTypeBuilder =>
   ProductType()

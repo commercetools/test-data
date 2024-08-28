@@ -2,7 +2,7 @@ import { Reference } from '@commercetools-test-data/commons';
 import { ProductType } from '@commercetools-test-data/product-type';
 import * as ProductCatalogData from '../../product-catalog-data';
 import Product from '../builder';
-import { TProductBuilder } from '../types';
+import type { TProductBuilder } from '../types';
 
 const boringGenericMilk = (): TProductBuilder =>
   Product()

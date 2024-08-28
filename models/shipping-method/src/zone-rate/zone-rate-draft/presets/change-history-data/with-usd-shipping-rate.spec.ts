@@ -1,4 +1,4 @@
-import { TZoneRateDraft } from '../../../types';
+import type { TZoneRateDraft } from '../../../types';
 import usZone from './with-usd-shipping-rate';
 
 describe('Zone rate with `USD` shippingRate & e2e key preset', () => {

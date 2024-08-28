@@ -1,7 +1,7 @@
 import { LocalizedField } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TCustomApplicationMenuLink } from './types';
+import type { TCustomApplicationMenuLink } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

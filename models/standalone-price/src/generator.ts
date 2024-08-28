@@ -8,7 +8,7 @@ import {
 import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TStandalonePrice } from './types';
+import type { TStandalonePrice } from './types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#standaloneprice
 

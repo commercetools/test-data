@@ -6,7 +6,7 @@ import {
   oneOf,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TReview } from './types';
+import type { TReview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

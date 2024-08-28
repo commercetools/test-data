@@ -1,6 +1,6 @@
 import { ReferenceDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TPaymentStatusDraft } from '../types';
+import type { TPaymentStatusDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentstatusdraft
 

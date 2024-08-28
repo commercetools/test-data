@@ -1,5 +1,5 @@
 import { buildField, Transformer } from '@commercetools-test-data/core';
-import { TAttributeLocalizedEnumValueGraphql } from '../attribute-localized-enum-value';
+import type { TAttributeLocalizedEnumValueGraphql } from '../attribute-localized-enum-value';
 import {
   type TAttributeLocalizedEnumType,
   type TAttributeLocalizedEnumTypeGraphql,

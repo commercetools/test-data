@@ -2,7 +2,7 @@ import * as Category from '@commercetools-test-data/category';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { ProductVariant } from '../';
-import { TProductData } from './types';
+import type { TProductData } from './types';
 
 // https://docs.commercetools.com/api/projects/products#productdata
 

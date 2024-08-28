@@ -2,7 +2,7 @@ import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
-import { TStandalonePriceDraftBuilder } from '../../../types';
+import type { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
 
 const p234Qw20234 = (): TStandalonePriceDraftBuilder =>

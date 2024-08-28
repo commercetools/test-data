@@ -6,7 +6,7 @@ import {
   CustomFieldStringType,
 } from '../index';
 import { inputHints } from './constants';
-import { TFieldDefinition } from './types';
+import type { TFieldDefinition } from './types';
 
 // https://docs.commercetools.com/api/projects/types#fielddefinition
 

@@ -7,7 +7,7 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 import * as PaymentMethodInfo from '../payment-method-info';
 import * as PaymentStatus from '../payment-status';
 import * as Transaction from '../transaction';
-import { TPayment } from './types';
+import type { TPayment } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomFieldDateType, TCustomFieldDateTypeGraphql } from './types';
+import type { TCustomFieldDateType, TCustomFieldDateTypeGraphql } from './types';
 import * as AttributeEnumType from './index';
 
 describe('builder', () => {

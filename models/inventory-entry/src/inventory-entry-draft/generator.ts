@@ -1,7 +1,7 @@
 import { ReferenceDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TInventoryEntryDraft } from '../types';
+import type { TInventoryEntryDraft } from '../types';
 
 const [getFutureDate] = createRelatedDates();
 

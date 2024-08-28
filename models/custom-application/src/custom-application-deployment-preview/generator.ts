@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates, slugify } from '@commercetools-test-data/utils';
-import { TCustomApplicationDeploymentPreview } from './types';
+import type { TCustomApplicationDeploymentPreview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

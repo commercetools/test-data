@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TCustomApplicationMenuLinkDraft } from '../types';
+import type { TCustomApplicationMenuLinkDraft } from '../types';
 
 const transformers = {
   default: Transformer<

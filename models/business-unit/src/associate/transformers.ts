@@ -3,7 +3,8 @@ import {
   Reference,
 } from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
-import { Customer, TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { Customer } from '@commercetools-test-data/customer';
 import type {
   TAssociateDefault,
   TAssociateRest,

@@ -1,4 +1,4 @@
-import { TImageDraft } from '../../types';
+import type { TImageDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

@@ -2,7 +2,7 @@ import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { FilterValues } from '@commercetools-test-data/filter-values';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TDiscountsCustomView } from './types';
+import type { TDiscountsCustomView } from './types';
 
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();
 

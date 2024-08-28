@@ -1,4 +1,4 @@
-import { TAddressDraft, TAddressDraftGraphql } from '../../../types';
+import type { TAddressDraft, TAddressDraftGraphql } from '../../../types';
 import sampleGermany from './sample-germany';
 
 describe('with the preset `sampleGermany`', () => {

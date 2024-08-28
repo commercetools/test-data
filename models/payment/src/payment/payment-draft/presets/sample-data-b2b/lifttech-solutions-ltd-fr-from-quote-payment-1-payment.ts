@@ -9,7 +9,7 @@ import {
 } from '@commercetools-test-data/customer';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
-import { TPaymentDraftBuilder } from '../../../types';
+import type { TPaymentDraftBuilder } from '../../../types';
 import * as PaymentDraft from '../../index';
 
 const avaBrown = CustomerDraft.presets.sampleDataB2B

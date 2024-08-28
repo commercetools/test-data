@@ -1,4 +1,4 @@
-import {
+import type {
   ProductDiscountValueAbsolute,
   ProductDiscountValueAbsoluteDraft,
 } from '@commercetools/platform-sdk';

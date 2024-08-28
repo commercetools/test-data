@@ -1,6 +1,6 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TPaymentMethodInfo } from './types';
+import type { TPaymentMethodInfo } from './types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentmethodinfo
 

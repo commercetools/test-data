@@ -3,7 +3,7 @@ import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TProductProjection } from './types';
+import type { TProductProjection } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -4,7 +4,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TStandalonePriceDraft } from '../types';
+import type { TStandalonePriceDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#standalonepricedraft
 

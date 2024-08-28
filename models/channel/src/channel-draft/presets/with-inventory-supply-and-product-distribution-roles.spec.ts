@@ -1,5 +1,5 @@
 import { roles } from '../../constants';
-import { TChannelDraft } from '../../types';
+import type { TChannelDraft } from '../../types';
 import withInventorySupplyAndProductDistributionRoles from './with-inventory-supply-and-product-distribution-roles';
 
 describe('with inventory supply and product distribution roles', () => {

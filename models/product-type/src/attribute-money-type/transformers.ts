@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TAttributeMoneyTypeGraphql, TAttributeMoneyType } from './types';
+import type { TAttributeMoneyTypeGraphql, TAttributeMoneyType } from './types';
 
 const transformers = {
   default: Transformer<TAttributeMoneyType, TAttributeMoneyType>('default', {

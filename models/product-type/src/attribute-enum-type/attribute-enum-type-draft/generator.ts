@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as AttributePlainEnumValueDraft from '../../attribute-plain-enum-value/attribute-plain-enum-value-draft';
-import { TAttributeEnumTypeDraft } from '../types';
+import type { TAttributeEnumTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributeenumtype
 

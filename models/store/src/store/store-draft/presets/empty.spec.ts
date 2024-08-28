@@ -1,4 +1,4 @@
-import { TStoreDraft } from '../../types';
+import type { TStoreDraft } from '../../types';
 import empty from './empty';
 
 it('should set all specified fields to undefined', () => {

@@ -1,6 +1,6 @@
 import { Reference } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
-import { TQuoteDraft } from '../types';
+import type { TQuoteDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/quotes#quotedraft
 

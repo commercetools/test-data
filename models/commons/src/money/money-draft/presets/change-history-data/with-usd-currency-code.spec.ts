@@ -1,4 +1,4 @@
-import { TMoneyDraft } from '../../../types';
+import type { TMoneyDraft } from '../../../types';
 import withUsdCurrencyCode from './with-usd-currency-code';
 
 describe('MoneyDraft with a defined `USD` currencyCode', () => {

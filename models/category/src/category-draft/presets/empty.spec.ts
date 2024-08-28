@@ -1,4 +1,4 @@
-import { TCategoryDraft } from '../../types';
+import type { TCategoryDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all fields but name and slug to undefined`, () => {

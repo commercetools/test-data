@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as AttributeLocalizedEnumValue from '../attribute-localized-enum-value';
-import { TAttributeLocalizedEnumType } from './types';
+import type { TAttributeLocalizedEnumType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributelocalizedenumtype
 

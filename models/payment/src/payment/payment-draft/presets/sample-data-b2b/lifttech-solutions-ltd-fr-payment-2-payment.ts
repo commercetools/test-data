@@ -7,15 +7,11 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
-import {
-  OrderFromCartDraft,
-  OrderFromQuoteDraft,
-  TOrderFromCartDraft,
-  TOrderFromQuoteDraft,
-} from '@commercetools-test-data/order';
+import type { TOrderFromCartDraft } from '@commercetools-test-data/order';
+import { OrderFromCartDraft } from '@commercetools-test-data/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
-import { TPaymentDraftBuilder } from '../../../types';
+import type { TPaymentDraftBuilder } from '../../../types';
 import * as PaymentDraft from '../../index';
 
 const camilleLefevre = CustomerDraft.presets.sampleDataB2B

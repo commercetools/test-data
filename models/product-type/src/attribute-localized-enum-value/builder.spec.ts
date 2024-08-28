@@ -1,9 +1,9 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import {
-  type TAttributeLocalizedEnumValue,
+import type {
   TAttributeLocalizedEnumValueGraphql,
+  type TAttributeLocalizedEnumValue
 } from './types';
 import * as AttributeLocalizedEnumValue from './index';
 

@@ -1,7 +1,7 @@
 import { ClientLogging } from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TCustomObject } from './types';
+import type { TCustomObject } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

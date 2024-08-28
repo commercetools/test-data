@@ -1,14 +1,14 @@
-import {
+import type {
   StandalonePrice,
   StandalonePriceDraft,
 } from '@commercetools/platform-sdk';
-import { TChannelGraphql } from '@commercetools-test-data/channel';
-import {
+import type { TChannelGraphql } from '@commercetools-test-data/channel';
+import type {
   TMoneyGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
+import type { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
 
 // Base representation
 export type TStandalonePrice = StandalonePrice;

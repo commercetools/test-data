@@ -1,5 +1,5 @@
 import { buildField, Transformer } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributeEnumTypeDraftGraphql,
   TAttributeEnumTypeDraft,
 } from '../types';

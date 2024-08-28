@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TAttributeBooleanTypeGraphql, TAttributeBooleanType } from './types';
+import type { TAttributeBooleanTypeGraphql, TAttributeBooleanType } from './types';
 
 const transformers = {
   default: Transformer<TAttributeBooleanType, TAttributeBooleanType>(

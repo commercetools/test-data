@@ -1,4 +1,5 @@
-import { Reference, TReference } from '@commercetools-test-data/commons';
+import type { TReference } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCartDiscountValueGiftLineItem,

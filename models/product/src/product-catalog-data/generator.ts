@@ -1,6 +1,6 @@
 import { Generator, fake } from '@commercetools-test-data/core';
 import * as ProductData from '../product-data';
-import { TProductCatalogData } from './types';
+import type { TProductCatalogData } from './types';
 
 // https://docs.commercetools.com/api/projects/products#productcatalogdata
 

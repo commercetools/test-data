@@ -1,4 +1,4 @@
-import {
+import type {
   TOrderFromCartDraft,
   TOrderFromCartDraftGraphql,
 } from '../../../types';

@@ -1,4 +1,4 @@
-import { TCustomerDraft } from '../../../types';
+import type { TCustomerDraft } from '../../../types';
 import withNoDob from './with-no-dob';
 
 describe('A customer with no date of birth', () => {

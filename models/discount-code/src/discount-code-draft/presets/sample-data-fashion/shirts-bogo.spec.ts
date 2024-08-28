@@ -1,4 +1,4 @@
-import { TDiscountCodeDraftGraphql, TDiscountCodeDraft } from '../../../types';
+import type { TDiscountCodeDraftGraphql, TDiscountCodeDraft } from '../../../types';
 import shirtsBogo from './shirts-bogo';
 
 describe('with the preset `employeeSale`', () => {

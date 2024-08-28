@@ -1,5 +1,5 @@
-import { FieldDefinition } from '@commercetools/platform-sdk';
-import {
+import type { FieldDefinition } from '@commercetools/platform-sdk';
+import type {
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';

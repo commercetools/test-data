@@ -1,10 +1,10 @@
-import {
+import type {
   CartDiscount,
   CartDiscountDraft,
   CartDiscountTarget,
   CartDiscountValueDraft,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TClientLoggingGraphql,
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,

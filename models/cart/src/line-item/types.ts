@@ -1,5 +1,5 @@
-import { Channel, LineItem, LineItemDraft } from '@commercetools/platform-sdk';
-import {
+import type { Channel, LineItem, LineItemDraft } from '@commercetools/platform-sdk';
+import type {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';

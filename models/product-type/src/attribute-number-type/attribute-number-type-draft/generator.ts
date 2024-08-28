@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeNumberTypeDraft } from '../types';
+import type { TAttributeNumberTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributenumbertype
 

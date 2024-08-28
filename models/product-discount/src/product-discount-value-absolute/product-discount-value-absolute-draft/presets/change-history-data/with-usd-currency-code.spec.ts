@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { TProductDiscountValueAbsoluteDraft } from '../../../types';
+import type { TProductDiscountValueAbsoluteDraft } from '../../../types';
 import withUsdCurrencyCode from './with-usd-currency-code';
 
 it(`should set all fields to specified values`, () => {

@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import theTraditionalist from './the-traditionalist';
 
 describe(`with theTraditionalist preset`, () => {

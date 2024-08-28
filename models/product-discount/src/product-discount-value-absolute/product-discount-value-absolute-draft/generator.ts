@@ -1,6 +1,6 @@
 import { MoneyDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueAbsoluteDraft } from '../types';
+import type { TProductDiscountValueAbsoluteDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalueabsolutedraft
 

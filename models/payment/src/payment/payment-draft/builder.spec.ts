@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TPaymentDraft, TPaymentDraftGraphql } from '../types';
+import type { TPaymentDraft, TPaymentDraftGraphql } from '../types';
 import * as PaymentDraft from '.';
 
 describe('builder', () => {

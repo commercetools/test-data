@@ -1,4 +1,4 @@
-import { TStandalonePriceDraft } from '../../types';
+import type { TStandalonePriceDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

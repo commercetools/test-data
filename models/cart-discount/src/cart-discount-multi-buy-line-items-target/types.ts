@@ -1,4 +1,4 @@
-import { MultiBuyLineItemsTarget } from '@commercetools/platform-sdk';
+import type { MultiBuyLineItemsTarget } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountMultiBuyLineItemsTarget = MultiBuyLineItemsTarget;

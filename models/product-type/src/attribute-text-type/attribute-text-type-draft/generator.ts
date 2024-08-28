@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeTextTypeDraft } from '../types';
+import type { TAttributeTextTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributeenumtype
 

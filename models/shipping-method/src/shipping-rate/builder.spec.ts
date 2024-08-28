@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TShippingRate, TShippingRateGraphql } from './types';
+import type { TShippingRate, TShippingRateGraphql } from './types';
 import * as ShippingRate from '.';
 
 describe('builder', () => {

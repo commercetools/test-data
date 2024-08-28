@@ -1,4 +1,4 @@
-import { TAddressDraft } from '../../../types';
+import type { TAddressDraft } from '../../../types';
 import withCountryUs from './with-country-us';
 
 describe('with country code usa', () => {

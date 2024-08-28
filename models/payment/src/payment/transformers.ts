@@ -1,10 +1,12 @@
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { TReferenceGraphql } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import {
   Transformer,
   buildField,
   toGraphqlPaginatedQueryResult,
 } from '@commercetools-test-data/core';
-import { Customer, TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { Customer } from '@commercetools-test-data/customer';
 import type { TPayment, TPaymentGraphql, TPaymentRest } from './types';
 
 const transformers = {

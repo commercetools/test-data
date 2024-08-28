@@ -2,9 +2,10 @@ import {
   LocalizedStringDraft,
   MoneyDraft,
 } from '@commercetools-test-data/commons';
+import type {
+  TCustomerGroupDraft} from '@commercetools-test-data/customer-group';
 import {
-  CustomerGroupDraft,
-  TCustomerGroupDraft,
+  CustomerGroupDraft
 } from '@commercetools-test-data/customer-group';
 import {
   CartDiscountLineItemsTargetDraft,

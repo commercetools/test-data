@@ -1,4 +1,4 @@
-import { Transaction, TransactionDraft } from '@commercetools/platform-sdk';
+import type { Transaction, TransactionDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TTransaction = Transaction;

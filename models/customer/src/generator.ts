@@ -7,7 +7,7 @@ import {
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { authenticationMode } from './constants';
-import { TCustomer } from './types';
+import type { TCustomer } from './types';
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/projects/customers

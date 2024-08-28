@@ -1,6 +1,6 @@
 import { Money } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TStagedStandalonePrice } from './types';
+import type { TStagedStandalonePrice } from './types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#stagedstandaloneprice
 

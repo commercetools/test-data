@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TZoneRateDraft, TZoneRateDraftGraphql } from '../types';
+import type { TZoneRateDraft, TZoneRateDraftGraphql } from '../types';
 import * as ZoneRateDraft from '.';
 
 describe('builder', () => {

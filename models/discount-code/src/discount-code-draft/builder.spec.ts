@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TDiscountCodeDraft, TDiscountCodeDraftGraphql } from '../types';
+import type { TDiscountCodeDraft, TDiscountCodeDraftGraphql } from '../types';
 import * as DiscountCodeDraft from './index';
 
 describe('builder', () => {

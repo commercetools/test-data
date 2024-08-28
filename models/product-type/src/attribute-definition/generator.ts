@@ -6,7 +6,7 @@ import {
   AttributeTextType,
 } from '../index';
 import { attributeConstraints, inputHints } from './constants';
-import { TAttributeDefinition } from './types';
+import type { TAttributeDefinition } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributedefinition
 

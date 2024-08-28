@@ -1,7 +1,7 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import * as ProductVariant from '../../product-variant';
 import ProductData from '../builder';
-import { TProductDataBuilder } from '../types';
+import type { TProductDataBuilder } from '../types';
 
 const happyCowMilkProductData = (): TProductDataBuilder => {
   const productName = LocalizedString.presets

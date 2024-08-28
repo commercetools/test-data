@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TCustomObjectDraft } from '../types';
+import type { TCustomObjectDraft } from '../types';
 
 const generator = Generator<TCustomObjectDraft>({
   fields: {

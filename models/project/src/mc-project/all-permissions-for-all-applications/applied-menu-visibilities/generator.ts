@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAppliedMenuVisibilities } from './types';
+import type { TAppliedMenuVisibilities } from './types';
 
 const fakeMenuVisibilityNames = [
   'hideProducts',

@@ -1,4 +1,4 @@
-import { TProductVariantDraft } from '../../types';
+import type { TProductVariantDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all fields to undefined`, () => {

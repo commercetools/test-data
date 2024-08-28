@@ -5,7 +5,7 @@ import {
 } from '@commercetools-test-data/commons';
 import { sequence, fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TShoppingList } from './types';
+import type { TShoppingList } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -1,6 +1,6 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
 import { authenticationMode } from '../../../constants';
-import { TCustomerDraftBuilder } from '../../../types';
+import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
 const sampleGermany = (): TCustomerDraftBuilder =>

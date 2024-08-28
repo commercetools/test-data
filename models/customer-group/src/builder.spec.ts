@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomerGroup, TCustomerGroupGraphql } from './types';
+import type { TCustomerGroup, TCustomerGroupGraphql } from './types';
 import * as CustomerGroup from './index';
 
 describe('builder', () => {

@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldBooleanType } from './types';
+import type { TCustomFieldBooleanType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldbooleantype
 

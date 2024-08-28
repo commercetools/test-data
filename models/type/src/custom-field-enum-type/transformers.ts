@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TCustomFieldEnumTypeGraphql, TCustomFieldEnumType } from './types';
+import type { TCustomFieldEnumTypeGraphql, TCustomFieldEnumType } from './types';
 
 const transformers = {
   default: Transformer<TCustomFieldEnumType, TCustomFieldEnumType>('default', {

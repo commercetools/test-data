@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TCustomFieldMoneyTypeGraphql, TCustomFieldMoneyType } from './types';
+import type { TCustomFieldMoneyTypeGraphql, TCustomFieldMoneyType } from './types';
 
 const transformers = {
   default: Transformer<TCustomFieldMoneyType, TCustomFieldMoneyType>(

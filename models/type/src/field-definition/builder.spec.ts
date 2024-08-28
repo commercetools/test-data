@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TFieldDefinition, TFieldDefinitionGraphql } from './types';
+import type { TFieldDefinition, TFieldDefinitionGraphql } from './types';
 import * as FieldDefinition from './index';
 
 describe('builder', () => {

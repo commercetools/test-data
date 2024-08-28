@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldMoneyType } from './types';
+import type { TCustomFieldMoneyType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldmoneytype
 

@@ -1,25 +1,32 @@
-import {
-  Company,
+import type {
   TCompanyGraphql,
-  TDivisionGraphql,
+  TDivisionGraphql} from '@commercetools-test-data/business-unit';
+import {
+  Company
 } from '@commercetools-test-data/business-unit';
-import { Cart, TCartGraphql } from '@commercetools-test-data/cart';
+import type { TCartGraphql } from '@commercetools-test-data/cart';
+import { Cart } from '@commercetools-test-data/cart';
+import type {
+  TReferenceGraphql,
+  TKeyReferenceGraphql} from '@commercetools-test-data/commons';
 import {
   Reference,
   KeyReference,
-  TReferenceGraphql,
-  TKeyReferenceGraphql,
   LocalizedString,
 } from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
 
-import { Customer, TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { Customer } from '@commercetools-test-data/customer';
+import type {
+  TCustomerGroupGraphql} from '@commercetools-test-data/customer-group';
 import {
-  CustomerGroup,
-  TCustomerGroupGraphql,
+  CustomerGroup
 } from '@commercetools-test-data/customer-group';
-import { State, TStateGraphql } from '@commercetools-test-data/state';
-import { Store, TStoreGraphql } from '@commercetools-test-data/store';
+import type { TStateGraphql } from '@commercetools-test-data/state';
+import { State } from '@commercetools-test-data/state';
+import type { TStoreGraphql } from '@commercetools-test-data/store';
+import { Store } from '@commercetools-test-data/store';
 import type {
   TQuoteRequest,
   TQuoteRequestRest,

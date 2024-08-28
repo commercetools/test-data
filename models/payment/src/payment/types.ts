@@ -1,10 +1,10 @@
-import { Payment, PaymentDraft } from '@commercetools/platform-sdk';
+import type { Payment, PaymentDraft } from '@commercetools/platform-sdk';
 import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type {
   TBuilder,
   TPaginatedQueryResult,
 } from '@commercetools-test-data/core';
-import { TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
 
 // Default
 export type TPayment = Payment;

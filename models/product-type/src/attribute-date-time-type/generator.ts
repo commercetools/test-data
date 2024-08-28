@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TAttributeDateTimeType } from './types';
+import type { TAttributeDateTimeType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributedatetimetype
 

@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TAssociateRoleDraft } from '../types';
+import type { TAssociateRoleDraft } from '../types';
 
 const generator = Generator<TAssociateRoleDraft>({
   fields: {

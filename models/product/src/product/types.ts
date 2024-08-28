@@ -1,12 +1,12 @@
-import { Product, ProductDraft } from '@commercetools/platform-sdk';
-import {
+import type { Product, ProductDraft } from '@commercetools/platform-sdk';
+import type {
   TLocalizedStringDraftGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
-import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
-import { TStateGraphql } from '../../../state/src';
+import type { TProductTypeGraphql } from '@commercetools-test-data/product-type';
+import type { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
+import type { TStateGraphql } from '../../../state/src';
 
 export type TProduct = Product & {
   skus: Array<String>;

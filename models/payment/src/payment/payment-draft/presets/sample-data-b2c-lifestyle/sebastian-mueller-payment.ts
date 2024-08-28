@@ -7,15 +7,16 @@ import {
   CustomerDraft,
   type TCustomerDraft,
 } from '@commercetools-test-data/customer';
+import type {
+  TOrderFromCartDraft} from '@commercetools-test-data/order';
 import {
-  OrderFromCartDraft,
-  TOrderFromCartDraft,
+  OrderFromCartDraft
 } from '@commercetools-test-data/order';
 import * as PaymentDraft from '../..';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft, constants } from '../../../../transaction';
-import { TPaymentDraftBuilder } from '../../../types';
+import type { TPaymentDraftBuilder } from '../../../types';
 
 const customerSebastianMueller = CustomerDraft.presets.sampleDataB2CLifestyle
   .sebastianMuller()

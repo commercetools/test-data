@@ -1,4 +1,4 @@
-import { TStoreDraft } from '../../../types';
+import type { TStoreDraft } from '../../../types';
 import b2cRetailStore from './b2c-retail-store';
 
 describe('with `b2c-retail-store` preset', () => {

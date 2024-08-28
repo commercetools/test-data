@@ -1,6 +1,6 @@
 import { Generator, oneOf } from '@commercetools-test-data/core';
 import { customReferenceTypeId } from './constants';
-import { TCustomFieldReferenceType } from './types';
+import type { TCustomFieldReferenceType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldreferencetype
 

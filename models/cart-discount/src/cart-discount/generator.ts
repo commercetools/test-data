@@ -9,7 +9,7 @@ import * as CartDiscountValueFixed from '../cart-discount-value-fixed';
 import * as CartDiscountValueGiftLineItem from '../cart-discount-value-gift-line-item';
 import * as CartDiscountValueRelative from '../cart-discount-value-relative';
 import { stackingMode } from './constants';
-import { TCartDiscount } from './types';
+import type { TCartDiscount } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscount
 

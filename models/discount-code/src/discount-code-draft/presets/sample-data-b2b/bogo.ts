@@ -2,7 +2,7 @@ import {
   LocalizedStringDraft,
   ReferenceDraft,
 } from '@commercetools-test-data/commons';
-import { TDiscountCodeDraftBuilder } from '../../../types';
+import type { TDiscountCodeDraftBuilder } from '../../../types';
 import * as DiscountCodeDraft from '../../index';
 
 const bogo = (cartDiscountId: string): TDiscountCodeDraftBuilder =>

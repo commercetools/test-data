@@ -1,4 +1,4 @@
-import { TAssociateRoleDraft } from '../../types';
+import type { TAssociateRoleDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

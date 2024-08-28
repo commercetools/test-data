@@ -1,5 +1,5 @@
 import { Transformer, buildField } from '@commercetools-test-data/core';
-import { TAttributeEnumTypeGraphql, TAttributeEnumType } from './types';
+import type { TAttributeEnumTypeGraphql, TAttributeEnumType } from './types';
 
 const transformers = {
   default: Transformer<TAttributeEnumType, TAttributeEnumType>('default', {

@@ -9,7 +9,7 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TProductSelection } from './types';
+import type { TProductSelection } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

@@ -1,5 +1,5 @@
 import type { Store, StoreDraft } from '@commercetools/platform-sdk';
-import {
+import type {
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';

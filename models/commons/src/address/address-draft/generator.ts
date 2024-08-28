@@ -1,5 +1,5 @@
 import { fake, oneOf, Generator } from '@commercetools-test-data/core';
-import { TAddressDraft } from '../types';
+import type { TAddressDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#addressdraft
 const generator = Generator<TAddressDraft>({

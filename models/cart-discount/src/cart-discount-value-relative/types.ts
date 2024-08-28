@@ -1,4 +1,4 @@
-import {
+import type {
   CartDiscountValueRelative,
   CartDiscountValueRelativeDraft,
 } from '@commercetools/platform-sdk';

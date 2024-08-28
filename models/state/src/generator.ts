@@ -10,7 +10,7 @@ import {
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { roles, type } from './constants';
-import { TState } from './types';
+import type { TState } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

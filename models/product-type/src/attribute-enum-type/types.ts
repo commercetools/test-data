@@ -1,6 +1,6 @@
 import type { AttributeEnumType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributePlainEnumValueDraftGraphql,
   TAttributePlainEnumValue,
 } from '../attribute-plain-enum-value';

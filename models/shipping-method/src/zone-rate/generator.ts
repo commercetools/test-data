@@ -1,7 +1,7 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import { Zone } from '@commercetools-test-data/zone';
 import * as ShippingRate from '../shipping-rate';
-import { TZoneRate } from './types';
+import type { TZoneRate } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#zonerate
 

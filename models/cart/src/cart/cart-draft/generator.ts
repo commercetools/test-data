@@ -9,7 +9,7 @@ import {
   taxMode,
   taxRoundingMode,
 } from '../constants';
-import { TCartDraft } from '../types';
+import type { TCartDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/carts#cartdraft
 

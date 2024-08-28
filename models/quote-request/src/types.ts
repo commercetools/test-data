@@ -2,20 +2,20 @@ import type {
   QuoteRequest,
   QuoteRequestDraft,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TCompanyGraphql,
   TDivisionGraphql,
 } from '@commercetools-test-data/business-unit';
-import { TCartGraphql } from '@commercetools-test-data/cart';
-import {
+import type { TCartGraphql } from '@commercetools-test-data/cart';
+import type {
   TReferenceGraphql,
   TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCustomerGraphql } from '@commercetools-test-data/customer';
-import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
-import { TStateGraphql } from '@commercetools-test-data/state';
-import { TStoreGraphql } from '@commercetools-test-data/store';
+import type { TCustomerGraphql } from '@commercetools-test-data/customer';
+import type { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
+import type { TStateGraphql } from '@commercetools-test-data/state';
+import type { TStoreGraphql } from '@commercetools-test-data/store';
 
 // Default
 export type TQuoteRequest = QuoteRequest;

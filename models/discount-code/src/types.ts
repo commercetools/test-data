@@ -1,5 +1,5 @@
-import { DiscountCode, DiscountCodeDraft } from '@commercetools/platform-sdk';
-import {
+import type { DiscountCode, DiscountCodeDraft } from '@commercetools/platform-sdk';
+import type {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';

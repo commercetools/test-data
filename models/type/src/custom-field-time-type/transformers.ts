@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TCustomFieldTimeTypeGraphql, TCustomFieldTimeType } from './types';
+import type { TCustomFieldTimeTypeGraphql, TCustomFieldTimeType } from './types';
 
 const transformers = {
   default: Transformer<TCustomFieldTimeType, TCustomFieldTimeType>('default', {

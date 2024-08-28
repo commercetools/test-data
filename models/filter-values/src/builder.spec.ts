@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TFilterValues, TFilterValuesGraphql } from './types';
+import type { TFilterValues, TFilterValuesGraphql } from './types';
 import * as FilterValues from './';
 
 describe('builder', () => {

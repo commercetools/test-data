@@ -1,5 +1,5 @@
 import { buildField } from '@commercetools-test-data/core';
-import { TLocalizedStringDraftGraphql } from '../types';
+import type { TLocalizedStringDraftGraphql } from '../types';
 
 const toLocalizedField = <Model>(value?: Model) => {
   if (!value) {

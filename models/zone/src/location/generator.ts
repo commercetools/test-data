@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TLocation } from './types';
+import type { TLocation } from './types';
 
 // https://docs.commercetools.com/api/projects/zones#location
 

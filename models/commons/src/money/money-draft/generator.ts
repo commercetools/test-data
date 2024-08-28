@@ -1,5 +1,5 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TMoneyDraft } from '../types';
+import type { TMoneyDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#money
 

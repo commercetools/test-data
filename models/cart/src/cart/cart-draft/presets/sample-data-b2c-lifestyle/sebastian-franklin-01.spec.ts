@@ -1,4 +1,4 @@
-import { TCartDraft } from '../../../types';
+import type { TCartDraft } from '../../../types';
 import sebastianFranklin01 from './sebastian-franklin-01';
 
 describe('with the preset cart `sebastianFranklin01`', () => {

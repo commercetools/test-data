@@ -1,4 +1,4 @@
-import {
+import type {
   ProductDiscountValueExternal,
   ProductDiscountValueExternalDraft,
 } from '@commercetools/platform-sdk';

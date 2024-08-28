@@ -1,4 +1,4 @@
-import { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
+import type { TCategoryDraft, TCategoryDraftGraphql } from '../../../types';
 import bedroomFurniture from './bedroom-furniture';
 describe(`with bedroomFurniture preset`, () => {
   it('should create a bedroomFurniture category type draft', () => {

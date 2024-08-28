@@ -1,13 +1,17 @@
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { TReferenceGraphql } from '@commercetools-test-data/commons';
+import { Reference } from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
+import type {
+  TProductTypeGraphql} from '@commercetools-test-data/product-type';
 import {
-  ProductType,
-  TProductTypeGraphql,
+  ProductType
 } from '@commercetools-test-data/product-type';
-import { TStateGraphql, State } from '@commercetools-test-data/state';
+import type { TStateGraphql} from '@commercetools-test-data/state';
+import { State } from '@commercetools-test-data/state';
+import type {
+  TTaxCategoryGraphql} from '@commercetools-test-data/tax-category';
 import {
-  TaxCategory,
-  TTaxCategoryGraphql,
+  TaxCategory
 } from '@commercetools-test-data/tax-category';
 import type { TProduct, TProductRest, TProductGraphql } from './types';
 

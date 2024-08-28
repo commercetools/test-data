@@ -1,4 +1,4 @@
-import { TZoneDraft, TZoneDraftGraphql } from '../../../types';
+import type { TZoneDraft, TZoneDraftGraphql } from '../../../types';
 import europeAndUk from './country-europe-and-uk';
 
 describe('with the preset `country germany`', () => {

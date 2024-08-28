@@ -1,6 +1,6 @@
 import { CentPrecisionMoney } from '@commercetools-test-data/commons';
 import { Generator, fake } from '@commercetools-test-data/core';
-import { TShippingRate } from './types';
+import type { TShippingRate } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingrate
 

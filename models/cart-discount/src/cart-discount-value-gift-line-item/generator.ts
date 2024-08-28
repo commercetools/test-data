@@ -1,6 +1,6 @@
 import { Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TCartDiscountValueGiftLineItem } from './types';
+import type { TCartDiscountValueGiftLineItem } from './types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluegiftlineitem
 

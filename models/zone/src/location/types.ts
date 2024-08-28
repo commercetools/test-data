@@ -1,4 +1,4 @@
-import { Location } from '@commercetools/platform-sdk';
+import type { Location } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TLocation = Location;

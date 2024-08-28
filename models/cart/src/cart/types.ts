@@ -1,4 +1,4 @@
-import { Cart, CartDraft } from '@commercetools/platform-sdk';
+import type { Cart, CartDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCart = Cart;

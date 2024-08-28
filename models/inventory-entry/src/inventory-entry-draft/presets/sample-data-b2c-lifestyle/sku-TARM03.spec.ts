@@ -1,4 +1,4 @@
-import {
+import type {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,
 } from '../../../types';

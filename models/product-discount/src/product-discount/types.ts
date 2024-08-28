@@ -1,9 +1,9 @@
-import {
+import type {
   ProductDiscount,
   ProductDiscountDraft,
   ProductDiscountValueDraft,
 } from '@commercetools/platform-sdk';
-import {
+import type {
   TClientLoggingGraphql,
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,

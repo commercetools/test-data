@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueRelative } from './types';
+import type { TProductDiscountValueRelative } from './types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvaluerelative
 

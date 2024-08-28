@@ -1,5 +1,5 @@
-import { PaymentStatus, PaymentStatusDraft } from '@commercetools/platform-sdk';
-import { TReferenceGraphql } from '@commercetools-test-data/commons';
+import type { PaymentStatus, PaymentStatusDraft } from '@commercetools/platform-sdk';
+import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TPaymentStatus = PaymentStatus;

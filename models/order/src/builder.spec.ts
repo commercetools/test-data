@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TOrder, TOrderGraphql, TOrderRest } from './types';
+import type { TOrder, TOrderGraphql, TOrderRest } from './types';
 import * as Order from './index';
 
 describe('builder', () => {

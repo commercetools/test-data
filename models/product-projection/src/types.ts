@@ -1,17 +1,17 @@
-import {
+import type {
   ProductProjection,
   ReviewRatingStatistics,
   SuggestTokenizer,
 } from '@commercetools/platform-sdk';
-import { TCategoryGraphql } from '@commercetools-test-data/category';
-import {
+import type { TCategoryGraphql } from '@commercetools-test-data/category';
+import type {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
-import { TStateGraphql } from '@commercetools-test-data/state';
-import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
+import type { TProductTypeGraphql } from '@commercetools-test-data/product-type';
+import type { TStateGraphql } from '@commercetools-test-data/state';
+import type { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
 
 export type TProductProjection = ProductProjection;
 

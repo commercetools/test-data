@@ -1,4 +1,4 @@
-import { TCartDraft } from '../../../types';
+import type { TCartDraft } from '../../../types';
 import sampleGermany01 from './sample-germany-01';
 
 describe('with the preset cart `sampleGermany01`', () => {

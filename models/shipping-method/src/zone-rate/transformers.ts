@@ -1,7 +1,8 @@
+import type {
+  TReferenceGraphql} from '@commercetools-test-data/commons';
 import {
   KeyReference,
-  Reference,
-  TReferenceGraphql,
+  Reference
 } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import type { TZoneRate, TZoneRateGraphql, TZoneRateRest } from './types';

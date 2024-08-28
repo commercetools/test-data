@@ -1,4 +1,4 @@
-import { CustomFieldSetType } from '@commercetools/platform-sdk';
+import type { CustomFieldSetType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCustomFieldSetType = CustomFieldSetType;

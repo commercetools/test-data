@@ -1,4 +1,5 @@
-import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import type { TChannelDraft } from '@commercetools-test-data/channel';
+import { ChannelDraft } from '@commercetools-test-data/channel';
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,

@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCustomLineItem } from './types';
+import type { TCustomLineItem } from './types';
 import * as CustomLineItemDraft from './index';
 
 describe('builder', () => {

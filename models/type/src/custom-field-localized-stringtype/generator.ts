@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldLocalizedStringType } from './types';
+import type { TCustomFieldLocalizedStringType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#CustomFieldLocalizedStringType
 

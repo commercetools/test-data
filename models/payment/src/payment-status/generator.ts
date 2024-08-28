@@ -1,5 +1,5 @@
 import { fake, Generator } from '@commercetools-test-data/core';
-import { TPaymentStatus } from './types';
+import type { TPaymentStatus } from './types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentstatusdraft
 

@@ -1,4 +1,4 @@
-import { TProductVariantDraftBuilder } from '../../types';
+import type { TProductVariantDraftBuilder } from '../../types';
 import ProductVariantDraft from '../builder';
 
 const empty = (): TProductVariantDraftBuilder =>

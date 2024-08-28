@@ -1,4 +1,4 @@
-import { TStoreDraft } from '../../../types';
+import type { TStoreDraft } from '../../../types';
 import store03 from './store-03';
 
 describe('with `store03` preset', () => {

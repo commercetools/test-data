@@ -1,4 +1,4 @@
-import {
+import type {
   ProductVariant,
   ProductVariantDraft,
 } from '@commercetools/platform-sdk';

@@ -2,7 +2,7 @@ import { MoneyDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TransactionType, TransactionState } from '../constants';
-import { TTransactionDraft } from '../types';
+import type { TTransactionDraft } from '../types';
 
 const [getOlderDate] = createRelatedDates();
 

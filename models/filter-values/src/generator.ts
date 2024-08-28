@@ -1,6 +1,6 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TFilterValues } from './types';
+import type { TFilterValues } from './types';
 
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();
 

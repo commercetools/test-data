@@ -1,4 +1,4 @@
-import { TStagedQuoteDraft } from '../../types';
+import type { TStagedQuoteDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

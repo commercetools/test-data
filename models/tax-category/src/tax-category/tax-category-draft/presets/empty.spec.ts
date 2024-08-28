@@ -1,4 +1,4 @@
-import { TTaxCategoryDraft } from '../../types';
+import type { TTaxCategoryDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

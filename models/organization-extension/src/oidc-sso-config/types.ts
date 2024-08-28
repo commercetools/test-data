@@ -1,4 +1,4 @@
-import { TBuilder } from '@commercetools-test-data/core';
+import type { TBuilder } from '@commercetools-test-data/core';
 import type { TMcSettingsOidcSsoConfig } from '@commercetools-test-data/graphql-types';
 
 export type TOidcSsoConfig = Omit<TMcSettingsOidcSsoConfig, '__typename'>;

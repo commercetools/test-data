@@ -1,4 +1,4 @@
-import { TInventoryEntryDraft } from '../../types';
+import type { TInventoryEntryDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

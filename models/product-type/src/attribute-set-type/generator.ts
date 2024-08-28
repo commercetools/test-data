@@ -1,6 +1,6 @@
 import { fake, Generator } from '@commercetools-test-data/core';
 import * as AttributeBooleanType from '../attribute-boolean-type';
-import { TAttributeSetType } from './types';
+import type { TAttributeSetType } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributesettype
 

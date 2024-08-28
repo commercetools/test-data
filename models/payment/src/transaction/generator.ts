@@ -2,7 +2,7 @@ import { CentPrecisionMoney } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TransactionType, TransactionState } from './constants';
-import { TTransaction } from './types';
+import type { TTransaction } from './types';
 
 const [getOlderDate] = createRelatedDates();
 

@@ -1,4 +1,4 @@
-import { TPaymentStatusDraft } from '../../types';
+import type { TPaymentStatusDraft } from '../../types';
 import empty from './empty';
 
 it(`should set all specified fields to undefined`, () => {

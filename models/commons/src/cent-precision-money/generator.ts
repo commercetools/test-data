@@ -1,5 +1,5 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TCentPrecisionMoney } from './types';
+import type { TCentPrecisionMoney } from './types';
 
 // https://docs.commercetools.com/api/types#centprecisionmoney
 

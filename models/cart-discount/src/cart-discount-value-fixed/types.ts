@@ -1,4 +1,4 @@
-import {
+import type {
   CartDiscountValueFixed,
   CartDiscountValueFixedDraft,
 } from '@commercetools/platform-sdk';

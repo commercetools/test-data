@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributeBooleanTypeDraftGraphql,
   TAttributeBooleanTypeDraft,
 } from '../types';

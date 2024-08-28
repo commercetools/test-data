@@ -1,5 +1,5 @@
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { THighPrecisionMoney } from './types';
+import type { THighPrecisionMoney } from './types';
 
 // https://docs.commercetools.com/api/types#highprecisionmoney
 

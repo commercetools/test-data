@@ -7,7 +7,7 @@ import {
   type TCustomerGroupDraft,
 } from '@commercetools-test-data/customer-group';
 import { authenticationMode } from '../../../constants';
-import { TCustomerDraftBuilder } from '../../../types';
+import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
 const customerGroup = CustomerGroupDraft.presets.sampleDataFashion

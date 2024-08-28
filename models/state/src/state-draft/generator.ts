@@ -1,7 +1,7 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { roles, type } from '../constants';
-import { TStateDraft } from '../types';
+import type { TStateDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/states#statedraft
 

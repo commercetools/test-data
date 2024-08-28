@@ -1,5 +1,5 @@
 import { Builder } from '@commercetools-test-data/core';
-import {
+import type {
   TAttributeDateType,
   TCreateAttributeDateTypeDraftBuilder,
 } from '../types';

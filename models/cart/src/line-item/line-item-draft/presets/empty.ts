@@ -1,4 +1,4 @@
-import { TLineItemDraftBuilder } from '../../types';
+import type { TLineItemDraftBuilder } from '../../types';
 import LineItemDraft from '../builder';
 
 const empty = (): TLineItemDraftBuilder =>

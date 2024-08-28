@@ -3,7 +3,7 @@ import {
   MoneyDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { TCustomLineItemDraft } from '../types';
+import type { TCustomLineItemDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/carts#cartdraft
 

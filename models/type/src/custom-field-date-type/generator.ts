@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TCustomFieldDateType } from './types';
+import type { TCustomFieldDateType } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfielddatetype
 

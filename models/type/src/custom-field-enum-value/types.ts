@@ -1,4 +1,4 @@
-import { CustomFieldEnumValue } from '@commercetools/platform-sdk';
+import type { CustomFieldEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCustomFieldEnumValue = CustomFieldEnumValue;

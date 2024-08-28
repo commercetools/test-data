@@ -1,4 +1,4 @@
-import { CartDiscountLineItemsTarget } from '@commercetools/platform-sdk';
+import type { CartDiscountLineItemsTarget } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TCartDiscountLineItemsTarget = CartDiscountLineItemsTarget;

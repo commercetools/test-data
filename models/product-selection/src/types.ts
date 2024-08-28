@@ -2,7 +2,7 @@ import type {
   ProductSelection,
   ProductSelectionDraft,
 } from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 //ProductSelectionDraft

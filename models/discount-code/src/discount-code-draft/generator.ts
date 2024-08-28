@@ -1,7 +1,7 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { TDiscountCodeDraft } from '../types';
+import type { TDiscountCodeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/discountCodes#discountcodedraft
 

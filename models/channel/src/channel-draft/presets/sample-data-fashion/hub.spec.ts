@@ -1,5 +1,5 @@
 import exp from 'constants';
-import { TChannelDraft, TChannelDraftGraphql } from '../../../types';
+import type { TChannelDraft, TChannelDraftGraphql } from '../../../types';
 import hub from './hub';
 
 describe('hub channel', () => {

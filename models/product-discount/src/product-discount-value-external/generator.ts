@@ -1,5 +1,5 @@
 import { Generator } from '@commercetools-test-data/core';
-import { TProductDiscountValueExternal } from './types';
+import type { TProductDiscountValueExternal } from './types';
 
 // https://docs.commercetools.com/api/projects/productDiscounts#productdiscountvalueexternal
 

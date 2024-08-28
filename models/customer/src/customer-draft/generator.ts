@@ -1,7 +1,7 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
 import { authenticationMode } from '../constants';
-import { TCustomerDraft } from '../types';
+import type { TCustomerDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/customers#customerdraft
 //** Required values:  email, password
