@@ -1,7 +1,7 @@
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TLimitWithCurrent = {
-  limit: number;
+  limit?: number;
   current: number;
 };
 
