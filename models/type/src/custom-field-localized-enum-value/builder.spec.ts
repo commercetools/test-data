@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
   TCustomFieldLocalizedEnumValueGraphql,
-  type TCustomFieldLocalizedEnumValue
+  TCustomFieldLocalizedEnumValue,
 } from './types';
 import * as CustomFieldLocalizedEnumValue from './index';
 

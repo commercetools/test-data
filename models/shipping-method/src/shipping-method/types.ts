@@ -5,7 +5,7 @@ import type {
 } from '@commercetools/platform-sdk';
 import type {
   TLocalizedStringGraphql,
-  type TReferenceGraphql,
+  TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 

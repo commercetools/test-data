@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
   TCustomFieldLocalizedStringTypeGraphql,
-  type TCustomFieldLocalizedStringType
+  TCustomFieldLocalizedStringType,
 } from './types';
 import * as CustomFieldLocalizedStringType from './index';
 

@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
   TAttributeLocalizableTextTypeGraphql,
-  type TAttributeLocalizableTextType
+  TAttributeLocalizableTextType,
 } from './types';
 import * as AttributeLocalizableTextType from './index';
 
