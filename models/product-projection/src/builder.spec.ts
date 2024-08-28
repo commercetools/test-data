@@ -250,7 +250,7 @@ describe('builder', () => {
 
   describe('when customizing the model', () => {
     const productProjectionMock = ProductProjection.presets
-      .happyCowMilkProductProjection()
+      .happyCowMilk()
       .categories([
         Reference.presets
           .categoryReference()
