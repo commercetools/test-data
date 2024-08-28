@@ -514,6 +514,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.1.4
         version: 10.1.4
+      '@commercetools-test-data/filter-values':
+        specifier: 10.1.4
+        version: 10.1.4
       '@commercetools-test-data/graphql-types':
         specifier: 10.1.4
         version: 10.1.4
@@ -2168,6 +2171,9 @@ packages:
 
   '@commercetools-test-data/core@10.1.4':
     resolution: {integrity: sha512-LNfTR35FM/X2aia47vGoJy6dyCbYhR0fNunkyMFn7lRE9uGScc5o4vTMaWjcmU8PfV5Df08AWwSqUAgrAaCPjA==}
+
+  '@commercetools-test-data/filter-values@10.1.4':
+    resolution: {integrity: sha512-axaajIUD6djniOrlOXR0xFMEv3u6/M0elneBp+Eu2Qfu5gG5xftbR2Aq7AmbtLYCDqbZYzcYHeU2ziwik5HZAQ==}
 
   '@commercetools-test-data/graphql-types@10.1.4':
     resolution: {integrity: sha512-QcBCXqCl3scatlsV+TOgK6ntSn9S+iqGsCTzlAiNoQzdIw6VIubZwtVM64115Dm4BazFYH6c9ARCjQ3a0DAu0Q==}
@@ -7633,6 +7639,15 @@ snapshots:
       '@faker-js/faker': 8.4.1
       '@types/lodash': 4.17.4
       lodash: 4.17.21
+
+  '@commercetools-test-data/filter-values@10.1.4':
+    dependencies:
+      '@babel/runtime': 7.24.6
+      '@babel/runtime-corejs3': 7.24.6
+      '@commercetools-test-data/core': 10.1.4
+      '@commercetools-test-data/graphql-types': 10.1.4
+      '@commercetools-test-data/utils': 10.1.4
+      '@faker-js/faker': 8.4.1
 
   '@commercetools-test-data/graphql-types@10.1.4': {}
 

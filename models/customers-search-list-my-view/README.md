@@ -15,9 +15,9 @@ $ pnpm add -D @commercetools-test-data/customers-search-list-my-view
 ```ts
 import type {
   CustomersSearchListMyView,
-  type TCustomersSearchListMyView,
+  type TCustomersSearchListMyViewGraphql,
 } from '@commercetools-test-data/customers-search-list-my-view';
 
 const customersSearchListMyView =
-  CustomersSearchListMyView.random().build<TCustomersSearchListMyView>();
+  CustomersSearchListMyView.random().buildGraphl<TCustomersSearchListMyViewGraphql>();
 ```

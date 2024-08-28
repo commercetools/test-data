@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedField } from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
 import {
   TCustomersSearchListMyView,
@@ -18,7 +18,9 @@ const transformers = {
   >('graphql', {
     removeFields: ['name'],
     addFields: ({ fields }) => ({
-      nameAllLocales: LocalizedString.toLocalizedField(fields.name),
+      nameAllLocales: [
+        LocalizedField.random().value(fields.name).buildGraphql(),
+      ],
       __typename: 'CustomersSearchListMyView',
     }),
   }),

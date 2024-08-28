@@ -1,4 +1,3 @@
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import type { TMcSettingsCustomersSearchListMyView } from '@commercetools-test-data/graphql-types';
 
@@ -7,11 +6,7 @@ export type TCustomersSearchListMyView =
     name: string;
   };
 
-export type TCustomersSearchListMyViewGraphql = Omit<
-  TCustomersSearchListMyView,
-  'nameAllLocales'
-> & {
-  nameAllLocales: TLocalizedStringGraphql | null;
+export type TCustomersSearchListMyViewGraphql = TCustomersSearchListMyView & {
   __typename: 'CustomersSearchListMyView';
 };
 
