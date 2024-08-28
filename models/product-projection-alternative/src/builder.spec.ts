@@ -12,11 +12,7 @@ import { ProductType } from '@commercetools-test-data/product-type';
 import { State } from '@commercetools-test-data/state';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { TProductProjectionGraphql, TProductProjectionRest } from './types';
-import {
-  ProductProjectionRest,
-  ProductProjectionGraphql,
-  presets,
-} from './index';
+import { ProductProjectionRest, ProductProjectionGraphql } from './index';
 
 describe('builder', () => {
   const expectedGeneralLocalizedString = expect.objectContaining({
@@ -68,10 +64,10 @@ describe('builder', () => {
         description: expectedGeneralLocalizedString,
         slug: expectedGeneralLocalizedString,
         categories: [],
-        // categoryOrderHints: undefined,
-        // metaTitle: null,
-        // metaDescription: null,
-        // metaKeywords: null,
+        categoryOrderHints: null,
+        metaTitle: null,
+        metaDescription: null,
+        metaKeywords: null,
         searchKeywords: [],
         hasStagedChanges: expect.any(Boolean),
         published: expect.any(Boolean),
@@ -101,12 +97,12 @@ describe('builder', () => {
           scopedPriceDiscounted: null,
         }),
         variants: [],
-        // taxCategory: null,
-        // state: null,
+        taxCategory: null,
+        state: null,
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
-        // reviewRatingStatistics: null,
-        // priceMode: null,
+        reviewRatingStatistics: null,
+        priceMode: null,
       })
     )
   );
@@ -138,9 +134,9 @@ describe('builder', () => {
         slugAllLocales: expectedGeneralLocalizedField,
         categories: [],
         categoryOrderHints: [],
-        // metaTitle: undefined,
-        // metaDescription: undefined,
-        // metaKeywords: undefined,
+        metaTitle: null,
+        metaDescription: null,
+        metaKeywords: null,
         searchKeywords: [],
         hasStagedChanges: expect.any(Boolean),
         published: expect.any(Boolean),
@@ -150,20 +146,20 @@ describe('builder', () => {
           sku: expect.any(String),
         }),
         variants: [],
-        // taxCategory: null,
-        // state: null,
+        taxCategory: null,
+        state: null,
         createdAt: expect.any(String),
         lastModifiedAt: expect.any(String),
-        // reviewRatingStatistics: undefined,
-        // priceMode: null,
+        reviewRatingStatistics: null,
+        priceMode: null,
       })
     )
   );
 
   describe('when customizing the model', () => {
     it('should build the right rest model', () => {
-      const restProductProjection = presets.happyCowMilkProductProjection
-        .rest()
+      const restProductProjection = ProductProjectionRest.presets
+        .happyCowMilkProductProjection()
         .categories([
           Reference.presets
             .categoryReference()
@@ -304,8 +300,8 @@ describe('builder', () => {
     });
 
     it('should build the right graphql model', () => {
-      const graphqlProjectionMock = presets.happyCowMilkProductProjection
-        .graphql()
+      const graphqlProjectionMock = ProductProjectionGraphql.presets
+        .happyCowMilkProductProjection()
         .categories([
           Category.random()
             .id('category-id')

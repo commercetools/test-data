@@ -12,7 +12,9 @@ import {
   Generator,
   oneOf,
   sequence,
+  nestedModel,
 } from '@commercetools-test-data/core';
+import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
 import { Quote } from '@commercetools-test-data/quote';
 import { State } from '@commercetools-test-data/state';
@@ -38,22 +40,22 @@ const commonFieldsInitializers = {
   version: sequence(),
   createdAt: fake(getOlderDate),
   lastModifiedAt: fake(getNewerDate),
-  createdBy: fake(() => ClientLogging.random()),
-  lastModifiedBy: fake(() => ClientLogging.random()),
-  // completedAt: null,
+  createdBy: nestedModel(() => ClientLogging.random()),
+  lastModifiedBy: nestedModel(() => ClientLogging.random()),
+  completedAt: null,
   orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
   customerId: fake((f) => f.string.uuid()),
   customerEmail: fake((f) => f.internet.email()),
   anonymousId: fake((f) => f.string.uuid()),
-  lineItems: fake(() => [LineItem.random()]),
-  customLineItems: [],
-  totalPrice: fake(() => CentPrecisionMoney.random()),
-  // taxedPrice: null,
-  // taxedShippingPrice: null,
-  shippingAddress: fake(() => Address.random()),
-  billingAddress: fake(() => Address.random()),
+  lineItems: nestedModel(() => [LineItem.random()]),
+  customLineItems: nestedModel(() => []),
+  totalPrice: nestedModel(() => CentPrecisionMoney.random()),
+  taxedPrice: null,
+  taxedShippingPrice: nestedModel(() => null),
+  shippingAddress: nestedModel(() => Address.random()),
+  billingAddress: nestedModel(() => Address.random()),
   shippingMode: oneOf(...Object.values(shippingMode)),
-  shipping: [],
+  shipping: nestedModel(() => []),
   taxMode: oneOf(...Object.values(taxMode)),
   taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
@@ -61,57 +63,74 @@ const commonFieldsInitializers = {
   orderState: oneOf(...Object.values(orderState)),
   shipmentState: oneOf(...Object.values(shipmentState)),
   paymentState: oneOf(...Object.values(paymentState)),
-  // shippingInfo: null,
+  shippingInfo: nestedModel(() => null),
   syncInfo: null,
-  returnInfo: [],
+  returnInfo: nestedModel(() => []),
   purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
-  discountCodes: [],
-  directDiscounts: [],
-  // custom: null,
-  // paymentInfo: null,
+  discountCodes: nestedModel(() => []),
+  directDiscounts: nestedModel(() => []),
+  custom: nestedModel(() => null),
+  paymentInfo: nestedModel(() => null),
   locale: oneOf('en-US', 'de-DE', 'es-ES'),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
-  // shippingRateInput: null,
+  shippingRateInput: nestedModel(() => null),
   origin: 'Customer',
-  itemShippingAddresses: fake(() => [Address.random()]),
+  itemShippingAddresses: nestedModel(() => [Address.random()]),
+  discountOnTotalPrice: nestedModel(() => null),
+  shippingCustomFields: nestedModel(() => null),
 };
 
 export const restGenerator = Generator<TOrderRest>({
   fields: {
     ...commonFieldsInitializers,
-    businessUnit: fake(() =>
+    businessUnit: nestedModel(() =>
       Reference.presets.businessUnitReference().obj(Company.random())
     ),
-    cart: fake(() => Reference.presets.cartReference().obj(Cart.random())),
-    customerGroup: fake(() =>
+    cart: nestedModel(() =>
+      Reference.presets.cartReference().obj(Cart.random())
+    ),
+    customerGroup: nestedModel(() =>
       Reference.presets.customerGroupReference().obj(CustomerGroup.random())
     ),
-    quote: fake(() => Reference.presets.quoteReference().obj(Quote.random())),
-    refusedGifts: fake(() => [
+    quote: nestedModel(() =>
+      Reference.presets.quoteReference().obj(Quote.random())
+    ),
+    refusedGifts: nestedModel(() => [
       Reference.presets.cartDiscountReference().obj(CartDiscount.random()),
     ]),
-    state: fake(() => Reference.presets.stateReference().obj(State.random())),
-    store: fake(() => Reference.presets.storeReference().obj(Store.random())),
+    state: nestedModel(() =>
+      Reference.presets.stateReference().obj(State.random())
+    ),
+    store: nestedModel(() =>
+      Reference.presets.storeReference().obj(Store.random())
+    ),
   },
 });
 
 export const graphqlGenerator = Generator<TOrderGraphql>({
   fields: {
     ...commonFieldsInitializers,
-    businessUnit: fake(() => Company.random()),
-    businessUnitRef: fake(() => Reference.presets.businessUnitReference()),
-    cart: fake(() => Cart.random()),
-    cartRef: fake(() => Reference.presets.cartReference()),
-    customerGroup: fake(() => CustomerGroup.random()),
-    customerGroupRef: fake(() => Reference.presets.customerGroupReference()),
-    quote: fake(() => Quote.random()),
-    quoteRef: fake(() => Reference.presets.quoteReference()),
-    refusedGifts: fake(() => [CartDiscount.random()]),
-    refusedGiftsRefs: fake(() => [Reference.presets.cartDiscountReference()]),
-    state: fake(() => State.random()),
-    stateRef: fake(() => Reference.presets.stateReference()),
-    store: fake(() => Store.random()),
-    storeRef: fake(() => Reference.presets.storeReference()),
+    businessUnit: nestedModel(() => Company.random()),
+    businessUnitRef: nestedModel(() =>
+      Reference.presets.businessUnitReference()
+    ),
+    cart: nestedModel(() => Cart.random()),
+    cartRef: nestedModel(() => Reference.presets.cartReference()),
+    customer: nestedModel(() => Customer.random()),
+    customerGroup: nestedModel(() => CustomerGroup.random()),
+    customerGroupRef: nestedModel(() =>
+      Reference.presets.customerGroupReference()
+    ),
+    quote: nestedModel(() => Quote.random()),
+    quoteRef: nestedModel(() => Reference.presets.quoteReference()),
+    refusedGifts: nestedModel(() => [CartDiscount.random()]),
+    refusedGiftsRefs: nestedModel(() => [
+      Reference.presets.cartDiscountReference(),
+    ]),
+    state: nestedModel(() => State.random()),
+    stateRef: nestedModel(() => Reference.presets.stateReference()),
+    store: nestedModel(() => Store.random()),
+    storeRef: nestedModel(() => Reference.presets.storeReference()),
     __typename: 'Order',
   },
 });

@@ -12,6 +12,7 @@ import type {
   TBuilder,
   TPropertyBuilder,
   TPropertyFieldUpdater,
+  TGeneratorResult,
 } from './types';
 
 // The Proxy constructor type does not differentiate between the target and the return type.
@@ -79,12 +80,19 @@ function Builder<Model>({
   transformers,
   type,
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
-  const applyGeneratorIfExists = (): Partial<Model> => {
-    if (!generator) return {};
+  const applyGeneratorIfExists = (): ReturnType<
+    TGeneratorResult<Model>['generate']
+  > => {
+    if (!generator)
+      return {
+        generatedFields: {} as Model,
+        buildableFieldsNames: [],
+      };
     return generator.generate();
   };
 
-  const propertyBuilder = PropertyBuilder<Model>(applyGeneratorIfExists());
+  const { generatedFields, buildableFieldsNames } = applyGeneratorIfExists();
+  const propertyBuilder = PropertyBuilder<Model>(generatedFields);
 
   const builder: {
     proxy: TBuilder<Model>;
@@ -118,18 +126,24 @@ function Builder<Model>({
 
               switch (propToSet) {
                 case 'build': {
-                  transformed = (transformers?.default?.transform(built) ??
-                    built) as Model;
+                  transformed = (transformers?.default?.transform(
+                    built,
+                    buildableFieldsNames
+                  ) ?? built) as Model;
                   break;
                 }
                 case 'buildGraphql': {
-                  transformed = (transformers?.graphql?.transform(built) ??
-                    built) as Model;
+                  transformed = (transformers?.graphql?.transform(
+                    built,
+                    buildableFieldsNames
+                  ) ?? built) as Model;
                   break;
                 }
                 case 'buildRest': {
-                  transformed = (transformers?.rest?.transform(built) ??
-                    built) as Model;
+                  transformed = (transformers?.rest?.transform(
+                    built,
+                    buildableFieldsNames
+                  ) ?? built) as Model;
                   break;
                 }
                 default:
@@ -138,13 +152,17 @@ function Builder<Model>({
 
               // TODO: Super hack to try some things out
               if (type === 'rest') {
-                transformed = (transformers?.rest?.transform(built) ??
-                  built) as Model;
+                transformed = (transformers?.rest?.transform(
+                  built,
+                  buildableFieldsNames
+                ) ?? built) as Model;
               }
               if (type === 'graphql') {
                 // @ts-ignore: TS does not know about the `Model` being an object.
-                transformed = (transformers?.graphql?.transform(built) ??
-                  built) as Model;
+                transformed = (transformers?.graphql?.transform(
+                  built,
+                  buildableFieldsNames
+                ) ?? built) as Model;
               }
 
               if (keepFields.length > 0) {

@@ -2,7 +2,7 @@ import { CartDraft } from '@commercetools-test-data/cart';
 import type { TCartDraft } from '@commercetools-test-data/cart';
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import { constants } from '../../../index';
-import emptyPreset from '../empty';
+import emptyPreset from '../empty/empty';
 
 const cart = CartDraft.presets.sampleDataFashion
   .sampleAustralia01()

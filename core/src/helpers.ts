@@ -174,7 +174,7 @@ const buildRestList = <Model>(
 
 type TCreateSpecializedTransformersParams<TModel> = {
   type: 'rest' | 'graphql';
-  buildFields: (keyof TModel)[];
+  buildFields?: (keyof TModel)[];
 };
 const createSpecializedTransformers = <TModel>({
   type,
@@ -200,7 +200,7 @@ const createSpecializedBuilder = <TModel>(
     generator: params.generator,
     transformers: createSpecializedTransformers<TModel>({
       type: params.type,
-      buildFields: params.buildFields || [],
+      buildFields: params.buildFields,
     }),
   });
 

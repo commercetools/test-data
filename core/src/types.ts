@@ -38,7 +38,10 @@ export type TBuilderMapStateFunction<Model> = (
 ) => Partial<Model>;
 
 export type TGeneratorResult<Model> = {
-  generate: () => Model;
+  generate: () => {
+    generatedFields: Model;
+    buildableFieldsNames: (keyof Model)[];
+  };
 };
 
 export type TTransformType = 'default' | 'graphql' | 'rest';
@@ -54,7 +57,7 @@ export type TTransformerOptions<Model, TransformedModel> = {
 
 export interface TTransformer<Model> {
   type: TTransformType;
-  transform(fields: Model): unknown;
+  transform(fields: Model, buildableFieldsNames?: (keyof Model)[]): unknown;
 }
 
 export type TPropertyFieldUpdater<Model> = (

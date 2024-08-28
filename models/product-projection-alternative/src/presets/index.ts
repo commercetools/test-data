@@ -1,5 +1,8 @@
 import happyCowMilkProductProjection from './happy-cow-milk-product-projection';
 
-const presets = { happyCowMilkProductProjection };
-
-export default presets;
+export const restPresets = {
+  happyCowMilkProductProjection: happyCowMilkProductProjection.rest,
+};
+export const graphqlPresets = {
+  happyCowMilkProductProjection: happyCowMilkProductProjection.graphql,
+};

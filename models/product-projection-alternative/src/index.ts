@@ -1,12 +1,14 @@
 import { GraphqlModelBuilder, RestModelBuilder } from './builders';
 
-export { default as presets } from './presets';
+import { restPresets, graphqlPresets } from './presets';
 
 export const ProductProjectionRest = {
   random: RestModelBuilder,
+  presets: restPresets,
 };
 export const ProductProjectionGraphql = {
   random: GraphqlModelBuilder,
+  presets: graphqlPresets,
 };
 
 export const ProductProjection = {

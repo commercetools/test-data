@@ -10,12 +10,13 @@ function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
-  function transform(fields: Model) {
-    let transformedFields = { ...fields };
+  function transform(fields: Model, buildableFieldsNames?: (keyof Model)[]) {
+    let transformedFields: Model = { ...fields };
     const fieldsReplacer = transformOptions?.replaceFields;
     const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
-    const fieldsToBuild = transformOptions?.buildFields;
+    const fieldsToBuild =
+      transformOptions?.buildFields || buildableFieldsNames || [];
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {

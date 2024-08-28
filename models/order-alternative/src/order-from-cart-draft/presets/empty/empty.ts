@@ -1,9 +1,9 @@
 import { TSpecializedBuilder } from '@commercetools-test-data/core';
-import { OrderFromCartDraftGraphql, OrderFromCartDraftRest } from '..';
+import { OrderFromCartDraftGraphql, OrderFromCartDraftRest } from '../..';
 import {
   TOrderFromCartDraftGraphql,
   TOrderFromCartDraftRest,
-} from '../../types';
+} from '../../../types';
 
 export const emptyRestPreset =
   (): TSpecializedBuilder<TOrderFromCartDraftRest> =>
@@ -29,4 +29,7 @@ export const emptyGraphqlPreset =
       .shipmentState(undefined)
       .custom(undefined);
 
-export default emptyRestPreset;
+export default {
+  rest: emptyRestPreset,
+  graphql: emptyGraphqlPreset,
+};
