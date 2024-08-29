@@ -4,6 +4,10 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TCartDiscountLimitsProjection } from './types';
 import * as CartDiscountsPlatformLimits from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,9 +15,9 @@ describe('building', () => {
       TCartDiscountLimitsProjection
     >(
       'default',
-      CartDiscountsPlatformLimits.random(),
+      CartDiscountsPlatformLimits.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActiveWithoutDiscountCodes: expect.any(Object),
+        totalActiveWithoutDiscountCodes: expectedLimitWithCurrent,
       })
     )
   );
@@ -23,9 +27,9 @@ describe('building', () => {
       TCartDiscountLimitsProjection
     >(
       'rest',
-      CartDiscountsPlatformLimits.random(),
+      CartDiscountsPlatformLimits.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActiveWithoutDiscountCodes: expect.any(Object),
+        totalActiveWithoutDiscountCodes: expectedLimitWithCurrent,
       })
     )
   );
@@ -35,9 +39,9 @@ describe('building', () => {
       TCartDiscountLimitsProjection
     >(
       'graphql',
-      CartDiscountsPlatformLimits.random(),
+      CartDiscountsPlatformLimits.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActiveWithoutDiscountCodes: expect.any(Object),
+        totalActiveWithoutDiscountCodes: expectedLimitWithCurrent,
         __typename: 'CartDiscountLimitsProjection',
       })
     )

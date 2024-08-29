@@ -4,31 +4,35 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TCustomerLimitsProjection } from './types';
 import * as CustomerLimitsProjection from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
 describe('building', () => {
   it(
     ...createBuilderSpec<TCustomerLimitsProjection, TCustomerLimitsProjection>(
       'default',
-      CustomerLimitsProjection.random(),
+      CustomerLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
   it(
     ...createBuilderSpec<TCustomerLimitsProjection, TCustomerLimitsProjection>(
       'rest',
-      CustomerLimitsProjection.random(),
+      CustomerLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
   it(
     ...createBuilderSpec<TCustomerLimitsProjection, TCustomerLimitsProjection>(
       'graphql',
-      CustomerLimitsProjection.random(),
+      CustomerLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
         __typename: 'CustomerLimitsProjection',
       })
     )
