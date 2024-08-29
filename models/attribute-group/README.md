@@ -16,7 +16,13 @@ $ pnpm add -D @commercetools-test-data/attribute-group
 import {
   AttributeGroup,
   type TAttributeGroup,
+  type TAttributeGroupGraphql,
 } from '@commercetools-test-data/attribute-group';
 
 const attributeGroup = AttributeGroup.random().build<TAttributeGroup>();
+// For REST entities
+const attributeGroupRest = AttributeGroup.random().buildRest<TAttributeGroup>();
+// For Graphql entities
+const attributeGroupGraphql =
+  AttributeGroup.random().buildGraphql<TAttributeGroupGraphql>();
 ```

@@ -1,4 +1,7 @@
-import { ClientLogging } from '@commercetools-test-data/commons';
+import {
+  ClientLogging,
+  LocalizedString,
+} from '@commercetools-test-data/commons';
 import { fake, Generator, sequence } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TAttributeGroup } from './types';
@@ -11,8 +14,8 @@ const generator = Generator<TAttributeGroup>({
     version: sequence(),
     createdAt: fake(getOlderDate),
     lastModifiedAt: fake(getNewerDate),
-    name: fake((f) => f.lorem.words(2)),
-    description: fake((f) => f.lorem.sentences(2)),
+    name: fake(() => LocalizedString.random()),
+    description: fake((f) => LocalizedString.random().en(f.lorem.sentences(2))),
     key: fake((f) => f.lorem.slug(2)),
     attributes: [],
     createdBy: fake(() => ClientLogging.random()),

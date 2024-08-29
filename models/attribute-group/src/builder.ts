@@ -1,9 +1,9 @@
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import { TAttributeGroup, TCreateAssociateRoleBuilder } from './types';
+import { TAttributeGroup, TCreateAttributeGroupBuilder } from './types';
 
-const Model: TCreateAssociateRoleBuilder = () =>
+const Model: TCreateAttributeGroupBuilder = () =>
   Builder<TAttributeGroup>({
     generator,
     transformers,
