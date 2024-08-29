@@ -1,14 +1,11 @@
-import {
-  LocalizedString,
-  LocalizedField,
-} from '@commercetools-test-data/commons';
+import { LocalizedField } from '@commercetools-test-data/commons';
 import { FilterValues } from '@commercetools-test-data/filter-values';
 import {
   TMcSettingsFilterValues,
   TMcSettingsSortOrder,
 } from '@commercetools-test-data/graphql-types';
 import CustomersSearchListMyView from './builder';
-import { TCustomersSearchListMyViewGraphql } from './types';
+import { TCustomersSearchListMyView } from './types';
 
 describe('building', () => {
   it('should build all primitive properties', () => {
@@ -22,7 +19,12 @@ describe('building', () => {
         updatedAt: expect.any(String),
         userId: expect.any(String),
         isActive: true,
-        nameAllLocales: null,
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+          }),
+        ]),
         sort: null,
         filters: null,
         table: null,
@@ -33,25 +35,14 @@ describe('building', () => {
 
 describe('building as GraphQL', () => {
   it('should add the __typename', () => {
-    const built: TCustomersSearchListMyViewGraphql =
+    const built: TCustomersSearchListMyView =
       CustomersSearchListMyView().buildGraphql();
     expect(built.__typename).toEqual('CustomersSearchListMyView');
-  });
-  it('should add the nameAllLocales', () => {
-    const built: TCustomersSearchListMyViewGraphql =
-      CustomersSearchListMyView().buildGraphql();
-    expect(built.nameAllLocales).toBeDefined();
-  });
-  it('should remove `name`', () => {
-    const built: TCustomersSearchListMyViewGraphql =
-      CustomersSearchListMyView().buildGraphql();
-    // @ts-ignore
-    expect(built.name).not.toBeDefined();
   });
 });
 
 it('should allow customization', () => {
-  const name = LocalizedString.random().en('my-view');
+  const name = LocalizedField.random();
   const filterValues =
     FilterValues.random().buildGraphql() as TMcSettingsFilterValues;
   const CustomersSearchListMyViewMock = CustomersSearchListMyView()
@@ -60,15 +51,14 @@ it('should allow customization', () => {
     .updatedAt('2022-08-26T22:00:00.123Z')
     .userId('user-123')
     .projectKey('my-project')
-    .nameAllLocales(name)
-    .name('my-view')
+    .nameAllLocales([name])
     .isActive(true)
     .table({
       visibleColumns: ['name', 'email'],
     })
     .sort({ key: 'createdAt', order: TMcSettingsSortOrder.Asc })
     .filters([filterValues])
-    .buildGraphql<TCustomersSearchListMyViewGraphql>();
+    .buildGraphql<TCustomersSearchListMyView>();
 
   expect(CustomersSearchListMyViewMock).toEqual(
     expect.objectContaining({
@@ -77,7 +67,7 @@ it('should allow customization', () => {
       updatedAt: '2022-08-26T22:00:00.123Z',
       userId: 'user-123',
       projectKey: 'my-project',
-      nameAllLocales: [LocalizedField.random().value(name).buildGraphql()],
+      nameAllLocales: [name.buildGraphql()],
       table: {
         visibleColumns: ['name', 'email'],
       },
