@@ -45,6 +45,7 @@ describe('building as GraphQL', () => {
   it('should remove `name`', () => {
     const built: TCustomersSearchListMyViewGraphql =
       CustomersSearchListMyView().buildGraphql();
+    // @ts-ignore
     expect(built.name).not.toBeDefined();
   });
 });
