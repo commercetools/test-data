@@ -6,9 +6,8 @@ export type TCustomersSearchListMyView =
     name: string;
   };
 
-export type TCustomersSearchListMyViewGraphql = TCustomersSearchListMyView & {
-  __typename: 'CustomersSearchListMyView';
-};
+export type TCustomersSearchListMyViewGraphql =
+  TMcSettingsCustomersSearchListMyView;
 
 export type TCustomersSearchListMyViewBuilder =
   TBuilder<TCustomersSearchListMyView>;
