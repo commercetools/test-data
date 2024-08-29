@@ -4,6 +4,9 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TBusinessUnitLimitsProjection } from './types';
 import * as BusinessUnitsPlatformLimits from './index';
 
+const expectedLimit = expect.objectContaining({
+  limit: expect.any(Number),
+});
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,12 +14,12 @@ describe('building', () => {
       TBusinessUnitLimitsProjection
     >(
       'default',
-      BusinessUnitsPlatformLimits.random(),
+      BusinessUnitsPlatformLimits.presets.withLimit(),
       expect.objectContaining({
-        maxDivisions: expect.any(Object),
-        maxDepthLimit: expect.any(Object),
-        maxAssociates: expect.any(Object),
-        maxAssociateRoles: expect.any(Object),
+        maxDivisions: expectedLimit,
+        maxDepthLimit: expectedLimit,
+        maxAssociates: expectedLimit,
+        maxAssociateRoles: expectedLimit,
       })
     )
   );
@@ -26,12 +29,12 @@ describe('building', () => {
       TBusinessUnitLimitsProjection
     >(
       'rest',
-      BusinessUnitsPlatformLimits.random(),
+      BusinessUnitsPlatformLimits.presets.withLimit(),
       expect.objectContaining({
-        maxDivisions: expect.any(Object),
-        maxDepthLimit: expect.any(Object),
-        maxAssociates: expect.any(Object),
-        maxAssociateRoles: expect.any(Object),
+        maxDivisions: expectedLimit,
+        maxDepthLimit: expectedLimit,
+        maxAssociates: expectedLimit,
+        maxAssociateRoles: expectedLimit,
       })
     )
   );
@@ -41,12 +44,12 @@ describe('building', () => {
       TBusinessUnitLimitsProjection
     >(
       'graphql',
-      BusinessUnitsPlatformLimits.random(),
+      BusinessUnitsPlatformLimits.presets.withLimit(),
       expect.objectContaining({
-        maxDivisions: expect.any(Object),
-        maxDepthLimit: expect.any(Object),
-        maxAssociates: expect.any(Object),
-        maxAssociateRoles: expect.any(Object),
+        maxDivisions: expectedLimit,
+        maxDepthLimit: expectedLimit,
+        maxAssociates: expectedLimit,
+        maxAssociateRoles: expectedLimit,
         __typename: 'BusinessUnitLimitsProjection',
       })
     )
