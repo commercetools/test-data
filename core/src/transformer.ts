@@ -17,15 +17,12 @@ function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
-  // function transform(fields: Model, buildableFieldsNames?: (keyof Model)[]) {
   function transform(params: TTransformFnParams<Model>) {
     let transformedFields: Model = { ...params.fields };
     const fieldsReplacer = transformOptions?.replaceFields;
     const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
     const fieldsToBuild = transformOptions?.buildFields;
-    // const fieldsToBuild =
-    //   transformOptions?.buildFields || buildableFieldsNames || [];
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {
@@ -48,24 +45,21 @@ function Transformer<Model, TransformedModel>(
       });
     } else {
       const builtFieldsNames = [];
-      if (transformedFields) {
-        for (const [key, value] of Object.entries(transformedFields)) {
-          if (!value || !isBuilder(value)) continue;
+      for (const [key, value] of Object.entries(transformedFields as {})) {
+        if (!value || !isBuilder(value)) continue;
 
-          const fieldValue = value as unknown as
-            | TBuilder<Model>
-            | TBuilder<Model>[];
-          transformedFields[key] = Array.isArray(fieldValue)
-            ? buildFields<Model>(fieldValue, transformType, {
-                fieldToBuild: key,
-                // modelName: transformOptions.modelName,
-              })
-            : buildField<Model>(fieldValue, transformType, {
-                fieldToBuild: key,
-                // modelName: transformOptions.modelName,
-              });
-          builtFieldsNames.push(key);
-        }
+        const fieldKey = key as keyof Model;
+        const fieldValue = value as unknown as
+          | TBuilder<Model>
+          | TBuilder<Model>[];
+        transformedFields[fieldKey] = Array.isArray(fieldValue)
+          ? (buildFields<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model])
+          : (buildField<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model]);
+        builtFieldsNames.push(fieldKey);
       }
 
       if (builtFieldsNames.length > 0) {
