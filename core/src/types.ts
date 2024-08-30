@@ -55,9 +55,15 @@ export type TTransformerOptions<Model, TransformedModel> = {
   buildFields?: (keyof Model)[];
 };
 
+export type TTransformFnParams<Model> = {
+  fields: Model;
+  buildableFieldsNames?: (keyof Model)[];
+  builderName?: string;
+};
+
 export interface TTransformer<Model> {
   type: TTransformType;
-  transform(fields: Model, buildableFieldsNames?: (keyof Model)[]): unknown;
+  transform(params: TTransformFnParams<Model>): unknown;
 }
 
 export type TPropertyFieldUpdater<Model> = (
@@ -126,6 +132,7 @@ export type TBuilderOptions<Model> = {
     [Key in TTransformType]?: TTransformer<Model>;
   };
   type?: 'rest' | 'graphql';
+  name?: string;
 };
 
 export type TSpecializedBuilder<TModel> = Omit<

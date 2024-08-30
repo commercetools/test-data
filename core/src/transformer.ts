@@ -4,19 +4,28 @@ import type {
   TTransformerOptions,
   TBuilder,
   TTransformType,
+  TTransformFnParams,
 } from './types';
+
+const isBuilder = (value?: unknown): boolean => {
+  const fieldValue =
+    value && Array.isArray(value) && value.length > 0 ? value[0] : value;
+  return Boolean(fieldValue) && fieldValue.build instanceof Function;
+};
 
 function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
-  function transform(fields: Model, buildableFieldsNames?: (keyof Model)[]) {
-    let transformedFields: Model = { ...fields };
+  // function transform(fields: Model, buildableFieldsNames?: (keyof Model)[]) {
+  function transform(params: TTransformFnParams<Model>) {
+    let transformedFields: Model = { ...params.fields };
     const fieldsReplacer = transformOptions?.replaceFields;
     const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
-    const fieldsToBuild =
-      transformOptions?.buildFields || buildableFieldsNames || [];
+    const fieldsToBuild = transformOptions?.buildFields;
+    // const fieldsToBuild =
+    //   transformOptions?.buildFields || buildableFieldsNames || [];
 
     if (fieldsToBuild) {
       fieldsToBuild.forEach((fieldToBuild) => {
@@ -37,6 +46,34 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
+    } else {
+      const builtFieldsNames = [];
+      if (transformedFields) {
+        for (const [key, value] of Object.entries(transformedFields)) {
+          if (!value || !isBuilder(value)) continue;
+
+          const fieldValue = value as unknown as
+            | TBuilder<Model>
+            | TBuilder<Model>[];
+          transformedFields[key] = Array.isArray(fieldValue)
+            ? buildFields<Model>(fieldValue, transformType, {
+                fieldToBuild: key,
+                // modelName: transformOptions.modelName,
+              })
+            : buildField<Model>(fieldValue, transformType, {
+                fieldToBuild: key,
+                // modelName: transformOptions.modelName,
+              });
+          builtFieldsNames.push(key);
+        }
+      }
+
+      if (builtFieldsNames.length > 0) {
+        console.log(
+          `Built fields for "${params.builderName}":`,
+          builtFieldsNames
+        );
+      }
     }
 
     // The default transformer only allows building nested fields to not
@@ -64,7 +101,7 @@ function Transformer<Model, TransformedModel>(
     }
 
     if (fieldsAdder) {
-      const fieldsToAdd = fieldsAdder({ fields });
+      const fieldsToAdd = fieldsAdder({ fields: params.fields });
       Object.entries(fieldsToAdd).forEach(([fieldName, fieldValue]) => {
         // @ts-ignore: TS does not know about the `Model` being an object.
         if (transformedFields[fieldName]) return;

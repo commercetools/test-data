@@ -191,6 +191,7 @@ type TCreateSpecializedBuilderParams<TModel> = {
   generator: TGeneratorResult<TModel>;
   type: 'rest' | 'graphql';
   buildFields?: (keyof TModel)[];
+  name: string;
 };
 const createSpecializedBuilder = <TModel>(
   params: TCreateSpecializedBuilderParams<TModel>
@@ -198,6 +199,7 @@ const createSpecializedBuilder = <TModel>(
   const modelBuilder = Builder<TModel>({
     type: params.type,
     generator: params.generator,
+    name: params.name,
     transformers: createSpecializedTransformers<TModel>({
       type: params.type,
       buildFields: params.buildFields,

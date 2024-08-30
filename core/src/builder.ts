@@ -79,6 +79,7 @@ function Builder<Model>({
   generator,
   transformers,
   type,
+  name = 'Unknown Builder',
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
   const applyGeneratorIfExists = (): ReturnType<
     TGeneratorResult<Model>['generate']
@@ -126,24 +127,27 @@ function Builder<Model>({
 
               switch (propToSet) {
                 case 'build': {
-                  transformed = (transformers?.default?.transform(
-                    built,
-                    buildableFieldsNames
-                  ) ?? built) as Model;
+                  transformed = (transformers?.default?.transform({
+                    fields: built,
+                    buildableFieldsNames,
+                    builderName: name,
+                  }) ?? built) as Model;
                   break;
                 }
                 case 'buildGraphql': {
-                  transformed = (transformers?.graphql?.transform(
-                    built,
-                    buildableFieldsNames
-                  ) ?? built) as Model;
+                  transformed = (transformers?.graphql?.transform({
+                    fields: built,
+                    buildableFieldsNames,
+                    builderName: name,
+                  }) ?? built) as Model;
                   break;
                 }
                 case 'buildRest': {
-                  transformed = (transformers?.rest?.transform(
-                    built,
-                    buildableFieldsNames
-                  ) ?? built) as Model;
+                  transformed = (transformers?.rest?.transform({
+                    fields: built,
+                    buildableFieldsNames,
+                    builderName: name,
+                  }) ?? built) as Model;
                   break;
                 }
                 default:
@@ -152,17 +156,19 @@ function Builder<Model>({
 
               // TODO: Super hack to try some things out
               if (type === 'rest') {
-                transformed = (transformers?.rest?.transform(
-                  built,
-                  buildableFieldsNames
-                ) ?? built) as Model;
+                transformed = (transformers?.rest?.transform({
+                  fields: built,
+                  buildableFieldsNames,
+                  builderName: name,
+                }) ?? built) as Model;
               }
               if (type === 'graphql') {
                 // @ts-ignore: TS does not know about the `Model` being an object.
-                transformed = (transformers?.graphql?.transform(
-                  built,
-                  buildableFieldsNames
-                ) ?? built) as Model;
+                transformed = (transformers?.graphql?.transform({
+                  fields: built,
+                  buildableFieldsNames,
+                  builderName: name,
+                }) ?? built) as Model;
               }
 
               if (keepFields.length > 0) {
