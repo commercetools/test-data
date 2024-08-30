@@ -957,7 +957,7 @@ importers:
         version: link:../../core
       '@commercetools-test-data/type':
         specifier: 10.1.1
-        version: link:../type
+        version: 10.1.1
       '@commercetools-test-data/utils':
         specifier: 10.5.0
         version: link:../../utils

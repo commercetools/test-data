@@ -1,82 +1,89 @@
 import { Reference } from '@commercetools-test-data/commons';
-import { Transformer, buildField } from '@commercetools-test-data/core';
-import * as EnumValue from '../enum-value';
-import * as LocalizedEnumValue from '../localized-enum-value';
+import {
+  Transformer,
+  buildField,
+  buildFields,
+} from '@commercetools-test-data/core';
+import { faker } from '@faker-js/faker';
+import * as CustomFieldEnumValue from '../custom-field-enum-value';
+import { TCustomFieldEnumValue } from '../custom-field-enum-value';
+import * as CustomFieldLocalizedEnumValue from '../custom-field-localized-enum-value';
+import { TCustomFieldLocalizedEnumValue } from '../custom-field-localized-enum-value';
 import FieldType from './builder';
 import { typeNames, graphqlTypenameByFieldTypeName } from './constants';
-import { TFieldType, TFieldTypeGraphql } from './types';
+import { TFieldName, TFieldType, TFieldTypeGraphql } from './types';
 
-// Returns an array of enum value builders (randomly between 1 to 7)
-const getRandomEnumValueBuilders = () =>
-  Array(Math.floor(Math.random() * 6 + 1))
-    .fill(0)
-    .map((_) => EnumValue.random());
+const list = <T>(fn: (index?: number) => T) =>
+  Array.from({ length: faker.number.int({ min: 1, max: 7 }) }, (_, index) =>
+    fn(index)
+  );
 
-// Returns an array of localized enum value builders (randomly between 1 to 7)
-const getRandomLocalizedEnumValueBuilders = () =>
-  Array(Math.floor(Math.random() * 6 + 1))
-    .fill(0)
-    .map((_) => LocalizedEnumValue.random());
+const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
+  fields: TFieldType
+): T => {
+  const commonFields = {
+    name: fields.name as TFieldName,
+    __typename: graphqlTypenameByFieldTypeName[fields.name],
+  } as T;
 
-const pickRandomFromList = (list: string[]) =>
-  list[(Math.random() * list.length) | 0];
-
-const transformers = {
-  default: Transformer<TFieldType, TFieldType>('default', {}),
-  rest: Transformer<TFieldType, TFieldType>('rest', {}),
-  graphql: Transformer<TFieldType, TFieldTypeGraphql>('graphql', {
-    replaceFields: ({ fields }) => {
-      const commonFields = {
-        name: fields.name,
-        __typename: graphqlTypenameByFieldTypeName[fields.name],
+  switch (fields.name) {
+    case 'Enum':
+      return {
+        ...commonFields,
+        values: buildFields(
+          (fields.values as TCustomFieldEnumValue[]) ||
+            list(CustomFieldEnumValue.random),
+          'rest'
+        ),
       };
-
-      if (fields.name === 'Enum') {
-        const enumValues = fields.values || getRandomEnumValueBuilders();
-        return {
-          ...commonFields,
-          values: enumValues.map((enumValue) =>
-            buildField(enumValue, 'graphql')
+    case 'LocalizedEnum':
+      return {
+        ...commonFields,
+        values: buildFields(
+          (fields.values as TCustomFieldLocalizedEnumValue[]) ||
+            list(CustomFieldLocalizedEnumValue.random),
+          'rest'
+        ),
+      };
+    case 'Reference':
+      return {
+        ...commonFields,
+        referenceTypeId:
+          fields.referenceTypeId ||
+          faker.helpers.arrayElement(
+            Object.values(Reference.constants.referenceTypes)
           ),
-        };
-      }
-
-      if (fields.name === 'LocalizedEnum') {
-        const lenumValues =
-          fields.values || getRandomLocalizedEnumValueBuilders();
-        return {
-          ...commonFields,
-          values: lenumValues.map((value) => buildField(value, 'graphql')),
-        };
-      }
-
-      if (fields.name === 'Reference') {
-        return {
-          ...commonFields,
-          referenceTypeId: fields.referenceTypeId || 'customer',
-          // pickRandomFromList(
-          //   Object.values(Reference.constants.referenceTypes)
-          // ),
-        };
-      }
-
-      if (fields.name === 'Set') {
-        const elementType = fields.elementType
+      };
+    case 'Set':
+      return {
+        ...commonFields,
+        elementType: fields.elementType
           ? buildField(fields.elementType, 'graphql')
           : FieldType()
               .name(
-                pickRandomFromList(typeNames.filter((type) => type !== 'Set'))
+                faker.helpers.arrayElement(
+                  typeNames.filter((type) => type !== 'Set')
+                ) as TFieldName
               )
-              .buildGraphql<TFieldType>();
-
-        return {
-          ...commonFields,
-          elementType,
-        };
-      }
-
+              .buildGraphql<TFieldTypeGraphql>(),
+      };
+    default:
       return commonFields;
-    },
+  }
+};
+
+const transformers = {
+  default: Transformer<TFieldType, TFieldType>('default', {
+    replaceFields: ({ fields }) =>
+      resolveCommonTransformations<TFieldType>(fields),
+  }),
+  rest: Transformer<TFieldType, TFieldType>('rest', {
+    replaceFields: ({ fields }) =>
+      resolveCommonTransformations<TFieldType>(fields),
+  }),
+  graphql: Transformer<TFieldType, TFieldTypeGraphql>('graphql', {
+    replaceFields: ({ fields }) =>
+      resolveCommonTransformations<TFieldTypeGraphql>(fields),
   }),
 };
 
