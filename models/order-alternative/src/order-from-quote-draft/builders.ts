@@ -4,15 +4,15 @@ import {
   TOrderFromQuoteDraftGraphql,
   TOrderFromQuoteDraftRest,
 } from '../types';
-import { graphqlGenerator, restGenerator } from './generators';
+import { restInitializers, graphqlInitializers } from './initializers';
 
 export const RestModelBuilder: TCreateOrderBuilder<
   TOrderFromQuoteDraftRest
 > = () =>
   createSpecializedBuilder({
     name: 'RestOrderBuilder',
-    generator: restGenerator,
     type: 'rest',
+    initializationConfig: restInitializers,
   });
 
 export const GraphqlModelBuilder: TCreateOrderBuilder<
@@ -20,6 +20,6 @@ export const GraphqlModelBuilder: TCreateOrderBuilder<
 > = () =>
   createSpecializedBuilder({
     name: 'GraphqlOrderBuilder',
-    generator: graphqlGenerator,
     type: 'graphql',
+    initializationConfig: graphqlInitializers,
   });

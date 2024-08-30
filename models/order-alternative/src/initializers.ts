@@ -9,9 +9,9 @@ import {
 } from '@commercetools-test-data/commons';
 import {
   fake,
-  Generator,
   oneOf,
   sequence,
+  TModelInitializerConfig,
 } from '@commercetools-test-data/core';
 import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
@@ -47,14 +47,14 @@ const commonFieldsInitializers = {
   customerEmail: fake((f) => f.internet.email()),
   anonymousId: fake((f) => f.string.uuid()),
   lineItems: fake(() => [LineItem.random()]),
-  customLineItems: fake(() => []),
+  customLineItems: [],
   totalPrice: fake(() => CentPrecisionMoney.random()),
   taxedPrice: null,
-  taxedShippingPrice: fake(() => null),
+  taxedShippingPrice: null,
   shippingAddress: fake(() => Address.random()),
   billingAddress: fake(() => Address.random()),
   shippingMode: oneOf(...Object.values(shippingMode)),
-  shipping: fake(() => []),
+  shipping: [],
   taxMode: oneOf(...Object.values(taxMode)),
   taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
@@ -62,24 +62,26 @@ const commonFieldsInitializers = {
   orderState: oneOf(...Object.values(orderState)),
   shipmentState: oneOf(...Object.values(shipmentState)),
   paymentState: oneOf(...Object.values(paymentState)),
-  shippingInfo: fake(() => null),
+  shippingInfo: null,
   syncInfo: null,
-  returnInfo: fake(() => []),
+  returnInfo: [],
   purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
-  discountCodes: fake(() => []),
-  directDiscounts: fake(() => []),
-  custom: fake(() => null),
-  paymentInfo: fake(() => null),
+  discountCodes: [],
+  directDiscounts: [],
+  custom: null,
+  paymentInfo: null,
   locale: oneOf('en-US', 'de-DE', 'es-ES'),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
-  shippingRateInput: fake(() => null),
+  shippingRateInput: null,
   origin: 'Customer',
   itemShippingAddresses: fake(() => [Address.random()]),
-  discountOnTotalPrice: fake(() => null),
-  shippingCustomFields: fake(() => null),
+  discountOnTotalPrice: null,
+  shippingCustomFields: null,
+  shippingKey: null,
+  lastMessageSequenceNumber: null,
 };
 
-export const restGenerator = Generator<TOrderRest>({
+export const restInitializers: TModelInitializerConfig<TOrderRest> = {
   fields: {
     ...commonFieldsInitializers,
     businessUnit: fake(() =>
@@ -96,26 +98,57 @@ export const restGenerator = Generator<TOrderRest>({
     state: fake(() => Reference.presets.stateReference().obj(State.random())),
     store: fake(() => Reference.presets.storeReference().obj(Store.random())),
   },
-});
+};
 
-export const graphqlGenerator = Generator<TOrderGraphql>({
+export const graphqlInitializers: TModelInitializerConfig<TOrderGraphql> = {
   fields: {
     ...commonFieldsInitializers,
     businessUnit: fake(() => Company.random()),
     businessUnitRef: fake(() => Reference.presets.businessUnitReference()),
     cart: fake(() => Cart.random()),
-    cartRef: fake(() => Reference.presets.cartReference()),
+    cartRef: null,
     customer: fake(() => Customer.random()),
     customerGroup: fake(() => CustomerGroup.random()),
-    customerGroupRef: fake(() => Reference.presets.customerGroupReference()),
+    customerGroupRef: null,
     quote: fake(() => Quote.random()),
-    quoteRef: fake(() => Reference.presets.quoteReference()),
+    quoteRef: null,
     refusedGifts: fake(() => [CartDiscount.random()]),
-    refusedGiftsRefs: fake(() => [Reference.presets.cartDiscountReference()]),
+    refusedGiftsRefs: [],
     state: fake(() => State.random()),
-    stateRef: fake(() => Reference.presets.stateReference()),
+    stateRef: null,
     store: fake(() => Store.random()),
-    storeRef: fake(() => Reference.presets.storeReference()),
+    storeRef: null,
     __typename: 'Order',
   },
-});
+  postBuild: (fields) => {
+    return {
+      businessUnitRef: fields.businessUnit
+        ? Reference.presets
+            .businessUnitReference()
+            .id(fields.businessUnit.id)
+            .buildGraphql()
+        : undefined,
+      cartRef: fields.cart
+        ? Reference.presets.cartReference().id(fields.cart.id).buildGraphql()
+        : undefined,
+      customerGroupRef: fields.customerGroup
+        ? Reference.presets
+            .customerGroupReference()
+            .id(fields.customerGroup.id)
+            .buildGraphql()
+        : undefined,
+      quoteRef: fields.quote
+        ? Reference.presets.quoteReference().id(fields.quote.id).buildGraphql()
+        : undefined,
+      refusedGiftsRefs: fields.refusedGifts.map((ref) =>
+        Reference.presets.cartDiscountReference().id(ref.id).buildGraphql()
+      ),
+      stateRef: fields.state
+        ? Reference.presets.stateReference().id(fields.state.id).buildGraphql()
+        : undefined,
+      storeRef: fields.store
+        ? Reference.presets.storeReference().id(fields.store.id).buildGraphql()
+        : undefined,
+    };
+  },
+};

@@ -4,6 +4,7 @@ describe('empty preset', () => {
   it(`should set the specified fields to undefined - rest`, () => {
     const emptyOrderFromCartDraftRest = restPreset().build();
     expect(emptyOrderFromCartDraftRest).toEqual({
+      id: null,
       cart: undefined,
       version: expect.any(Number),
       orderNumber: undefined,
@@ -19,6 +20,7 @@ describe('empty preset', () => {
   it(`should set the specified fields to undefined - graphql`, () => {
     const emptyOrderFromCartDraftGraphql = graphqlPreset().build();
     expect(emptyOrderFromCartDraftGraphql).toEqual({
+      id: null,
       cart: undefined,
       version: expect.any(Number),
       orderNumber: undefined,

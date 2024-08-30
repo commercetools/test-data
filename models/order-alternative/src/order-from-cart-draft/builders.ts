@@ -4,22 +4,22 @@ import {
   TOrderFromCartDraftGraphql,
   TOrderFromCartDraftRest,
 } from '../types';
-import { graphqlGenerator, restGenerator } from './generators';
+import { restInitializers, graphqlInitializers } from './initializers';
 
 export const RestModelBuilder: TCreateOrderBuilder<
   TOrderFromCartDraftRest
 > = () =>
   createSpecializedBuilder({
-    generator: restGenerator,
+    name: 'OrderFromCartDraftRestBuilder',
     type: 'rest',
-    buildFields: ['cart', 'state'],
+    initializationConfig: restInitializers,
   });
 
 export const GraphqlModelBuilder: TCreateOrderBuilder<
   TOrderFromCartDraftGraphql
 > = () =>
   createSpecializedBuilder({
-    generator: graphqlGenerator,
+    name: 'OrderFromCartDraftGraphqlBuilder',
     type: 'graphql',
-    buildFields: ['cart', 'state'],
+    initializationConfig: graphqlInitializers,
   });
