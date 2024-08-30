@@ -1,10 +1,5 @@
-import {
-  isFunction,
-  isBuilderFunction,
-  isString,
-  omitMany,
-  pickMany,
-} from './helpers';
+import omit from 'lodash/omit';
+import { isFunction, isBuilderFunction, isString, pickMany } from './helpers';
 import type {
   TBuilderMapStateFunction,
   TBuilderOptions,
@@ -79,6 +74,7 @@ function Builder<Model>({
   generator,
   transformers,
   type,
+  postBuild,
   name = 'Unknown Builder',
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
   const applyGeneratorIfExists = (): ReturnType<
@@ -101,7 +97,7 @@ function Builder<Model>({
     proxy: new CustomProxy<Partial<Model>, TBuilder<Model>>(
       {},
       {
-        get(_target, propToSet, foo) {
+        get(_target, propToSet) {
           // Cypress specs and files that they import are now bundled with
           // webpack starting from Cypress 5 (webpack is now the default preprocessor).
           // This result in non-null check of
@@ -154,7 +150,8 @@ function Builder<Model>({
                   break;
               }
 
-              // TODO: Super hack to try some things out
+              // TODO: This could be removed once all model would have been migrated
+              // to the two independent builders per model.
               if (type === 'rest') {
                 transformed = (transformers?.rest?.transform({
                   fields: built,
@@ -172,11 +169,19 @@ function Builder<Model>({
               }
 
               if (keepFields.length > 0) {
-                return pickMany<Model>(transformed, ...keepFields);
+                transformed = pickMany<Model>(transformed, ...keepFields);
               }
               if (omitFields.length > 0) {
-                return omitMany<Model>(transformed, ...omitFields);
+                transformed = omit(transformed as {}, omitFields) as Model;
               }
+
+              if (postBuild) {
+                transformed = {
+                  ...transformed,
+                  ...postBuild(transformed),
+                };
+              }
+
               return transformed;
             };
           }

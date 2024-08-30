@@ -1,3 +1,5 @@
+import { Field } from './@jackfranklin/test-data-bot';
+
 export type TReferenceObject = {
   id?: string;
 };
@@ -126,13 +128,20 @@ export type TRestTransformer<
   Model,
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
+export type TModelInitializerConfig<TModel> = {
+  fields: Record<keyof TModel, Field>;
+  postBuild?: (mode: TModel) => Partial<TModel>;
+};
+
 export type TBuilderOptions<Model> = {
+  initializerConfig?: TModelInitializerConfig<Model>;
   generator?: TGeneratorResult<Model>;
   transformers?: {
     [Key in TTransformType]?: TTransformer<Model>;
   };
   type?: 'rest' | 'graphql';
   name?: string;
+  postBuild?: (fields: Model) => Partial<Model>;
 };
 
 export type TSpecializedBuilder<TModel> = Omit<

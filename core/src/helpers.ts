@@ -1,4 +1,5 @@
 import Builder from './builder';
+import Generator from './generator';
 import Transformer from './transformer';
 import type {
   TReferenceObject,
@@ -11,8 +12,8 @@ import type {
   TBuildFieldMeta,
   TTransformType,
   TTransformBuildName,
-  TGeneratorResult,
   TSpecializedBuilder,
+  TModelInitializerConfig,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -188,7 +189,7 @@ const createSpecializedTransformers = <TModel>({
 };
 
 type TCreateSpecializedBuilderParams<TModel> = {
-  generator: TGeneratorResult<TModel>;
+  initializationConfig: TModelInitializerConfig<TModel>;
   type: 'rest' | 'graphql';
   buildFields?: (keyof TModel)[];
   name: string;
@@ -198,12 +199,15 @@ const createSpecializedBuilder = <TModel>(
 ) => {
   const modelBuilder = Builder<TModel>({
     type: params.type,
-    generator: params.generator,
+    generator: Generator<TModel>({
+      fields: params.initializationConfig.fields,
+    }),
     name: params.name,
     transformers: createSpecializedTransformers<TModel>({
       type: params.type,
       buildFields: params.buildFields,
     }),
+    postBuild: params.initializationConfig.postBuild,
   });
 
   return modelBuilder as TSpecializedBuilder<TModel>;
