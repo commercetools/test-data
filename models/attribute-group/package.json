@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/attribute-group",
-  "version": "1.0.0",
+  "version": "10.1.4",
   "description": "Model for attribute-group",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
