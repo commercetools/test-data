@@ -44,33 +44,35 @@ export const happyCowMilkRest =
 
 export const happyCowMilkGraphql =
   (): TSpecializedBuilder<TProductProjectionGraphql> => {
-    return ProductProjectionGraphql.random()
-      .productType(ProductType.presets.milk())
-      .slug('happy-cow-milk-slug')
-      .slugAllLocales(
-        createLocalizedFields([
-          ['en', 'happy-cow-milk-slug'],
-          ['de', 'glückliche-kuhmilch-slug'],
-        ])
-      )
-      .key('happy-cow-milk-key')
-      .name('Happy Cow Milk')
-      .nameAllLocales(
-        createLocalizedFields([
-          ['en', 'Happy Cow Milk'],
-          ['de', 'Fröhliche Kuhmilch'],
-        ])
-      )
-      .description('Very happy milk produced by very happy cow!')
-      .descriptionAllLocales(
-        createLocalizedFields([
-          ['en', 'Very happy milk produced by very happy cow!'],
-          ['de', 'Sehr glückliche Milch von sehr glücklicher Kuh!'],
-        ])
-      )
-      .masterVariant(ProductVariant.presets.happyCowMilkMasterVariant())
-      .published(true)
-      .hasStagedChanges(false);
+    return (
+      ProductProjectionGraphql.random()
+        .productType(ProductType.presets.milk())
+        .slug('happy-cow-milk-slug')
+        .slugAllLocales(
+          createLocalizedFields([
+            ['en', 'happy-cow-milk-slug'],
+            ['de', 'glückliche-kuhmilch-slug'],
+          ])
+        )
+        .key('happy-cow-milk-key')
+        // .name('Happy Cow Milk')
+        .nameAllLocales(
+          createLocalizedFields([
+            ['en', 'Happy Cow Milk'],
+            ['de', 'Fröhliche Kuhmilch'],
+          ])
+        )
+        // .description('Very happy milk produced by very happy cow!')
+        .descriptionAllLocales(
+          createLocalizedFields([
+            ['en', 'Very happy milk produced by very happy cow!'],
+            ['de', 'Sehr glückliche Milch von sehr glücklicher Kuh!'],
+          ])
+        )
+        .masterVariant(ProductVariant.presets.happyCowMilkMasterVariant())
+        .published(true)
+        .hasStagedChanges(false)
+    );
   };
 
 export default {

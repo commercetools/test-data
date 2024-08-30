@@ -16,7 +16,7 @@ const toLocalizedField = <Model>(value?: Model) => {
 const DEFAULT_LOCALE = 'en';
 
 const resolveGraphqlDefaultLocaleValue = (
-  allLocales: TLocalizedStringGraphql | null
+  allLocales?: TLocalizedStringGraphql | null
 ) => {
   if (!allLocales) {
     return undefined;
