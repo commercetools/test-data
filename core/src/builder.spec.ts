@@ -557,7 +557,7 @@ describe('building', () => {
           };
           const userTransformers = {
             graphql: Transformer<
-              TestExpandedUserReference,
+              TestExpandedUserReferenceGraphql,
               TestExpandedUserReferenceGraphql
             >('graphql', {
               addFields: () => ({
