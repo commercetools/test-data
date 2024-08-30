@@ -517,6 +517,7 @@ describe('building', () => {
             graphql: Transformer<TestUserReference, TestUserReference>(
               'graphql',
               {
+                buildFields: false,
                 replaceFields: ({ fields }) => ({
                   ...fields,
                   user: buildField<TestExpandedUserReference>(fields.user),
@@ -544,6 +545,7 @@ describe('building', () => {
         it('should build nested builders on demand', () => {
           const teamTransformers = {
             graphql: Transformer<TestTeam, TestTeam>('graphql', {
+              buildFields: false,
               replaceFields: ({ fields }) => ({
                 ...fields,
                 users: buildFields<TestExpandedUserReferenceGraphql>(

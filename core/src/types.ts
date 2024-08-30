@@ -49,7 +49,7 @@ export type TTransformerOptions<Model, TransformedModel> = {
   addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
   removeFields?: (keyof Model)[];
   replaceFields?: (args: { fields: Model }) => TransformedModel;
-  buildFields?: (keyof Model)[];
+  buildFields?: (keyof Model)[] | false;
 };
 
 export interface TTransformer<Model> {
@@ -100,21 +100,21 @@ export type TBuilder<OriginalModel> = {
 
 export type TDefaultTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'default' extends TransformerType
   ? { default: TTransformer<Model> }
   : never;
 
 export type TGraphqlTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'graphql' extends TransformerType
   ? { graphql: TTransformer<Model> }
   : never;
 
 export type TRestTransformer<
   TransformerType extends TTransformType,
-  Model
+  Model,
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
 export type TBuilderOptions<Model> = {

@@ -6,6 +6,12 @@ import type {
   TTransformType,
 } from './types';
 
+const isBuilder = (value?: unknown): boolean => {
+  const fieldValue =
+    value && Array.isArray(value) && value.length > 0 ? value[0] : value;
+  return Boolean(fieldValue) && fieldValue.build instanceof Function;
+};
+
 function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
@@ -18,6 +24,7 @@ function Transformer<Model, TransformedModel>(
     const fieldsToBuild = transformOptions?.buildFields;
 
     if (fieldsToBuild) {
+      // console.log('/// ----> Transforming fields from the "buildFields" list');
       fieldsToBuild.forEach((fieldToBuild) => {
         const field = transformedFields[fieldToBuild] as unknown as
           | TBuilder<Model>
@@ -36,6 +43,32 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
+    } else if (fieldsToBuild !== false) {
+      // console.log('/// ----> Transforming all fields that looks like builders');
+      const builtFieldsNames = [];
+      for (const [key, value] of Object.entries(transformedFields as {})) {
+        if (!value || !isBuilder(value)) continue;
+
+        const fieldKey = key as keyof Model;
+        const fieldValue = value as unknown as
+          | TBuilder<Model>
+          | TBuilder<Model>[];
+        transformedFields[fieldKey] = Array.isArray(fieldValue)
+          ? (buildFields<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model])
+          : (buildField<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model]);
+        builtFieldsNames.push(fieldKey);
+      }
+
+      // if (builtFieldsNames.length > 0) {
+      //   console.log(
+      //     `Built fields for "${params.builderName}":`,
+      //     builtFieldsNames
+      //   );
+      // }
     }
 
     // The default transformer only allows building nested fields to not
