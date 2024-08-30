@@ -6,10 +6,7 @@ import {
 import { TCartGraphql } from '@commercetools-test-data/cart';
 import { TCartDiscountGraphql } from '@commercetools-test-data/cart-discount';
 import { TReferenceGraphql } from '@commercetools-test-data/commons';
-import type {
-  TBuilder,
-  TSpecializedBuilder,
-} from '@commercetools-test-data/core';
+import type { TSpecializedBuilder } from '@commercetools-test-data/core';
 import { TCustomerGraphql } from '@commercetools-test-data/customer';
 import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
 import { TQuoteGraphql } from '@commercetools-test-data/quote';

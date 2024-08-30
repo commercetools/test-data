@@ -3,12 +3,7 @@ import {
   LocalizedString,
   Reference,
 } from '@commercetools-test-data/commons';
-import {
-  Generator,
-  fake,
-  sequence,
-  nestedModel,
-} from '@commercetools-test-data/core';
+import { Generator, fake, sequence } from '@commercetools-test-data/core';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { createRelatedDates } from '@commercetools-test-data/utils';
@@ -22,14 +17,14 @@ const commonFieldsInitializers = {
   version: sequence(),
   createdAt: fake(getOlderDate),
   lastModifiedAt: fake(getNewerDate),
-  categories: nestedModel(() => []),
+  categories: [],
   searchKeywords: [],
   hasStagedChanges: fake((f) => f.datatype.boolean()),
   published: fake((f) => f.datatype.boolean()),
-  masterVariant: nestedModel(() => ProductVariant.random()),
-  variants: nestedModel(() => []),
-  taxCategory: nestedModel(() => null),
-  state: nestedModel(() => null),
+  masterVariant: fake(() => ProductVariant.random()),
+  variants: [],
+  taxCategory: null,
+  state: null,
   reviewRatingStatistics: null,
   priceMode: null,
 };
@@ -37,15 +32,15 @@ const commonFieldsInitializers = {
 export const restGenerator = Generator<TProductProjectionRest>({
   fields: {
     ...commonFieldsInitializers,
-    productType: nestedModel(() =>
+    productType: fake(() =>
       Reference.random().typeId('product-type').obj(ProductType.random())
     ),
-    name: nestedModel(() => LocalizedString.random()),
-    description: nestedModel(() => LocalizedString.random()),
-    slug: nestedModel(() => LocalizedString.presets.ofSlugs()),
-    metaTitle: nestedModel(() => null),
-    metaDescription: nestedModel(() => null),
-    metaKeywords: nestedModel(() => null),
+    name: fake(() => LocalizedString.random()),
+    description: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
+    metaTitle: null,
+    metaDescription: null,
+    metaKeywords: null,
     categoryOrderHints: null,
   },
 });
@@ -53,26 +48,24 @@ export const restGenerator = Generator<TProductProjectionRest>({
 export const graphqlGenerator = Generator<TProductProjectionGraphql>({
   fields: {
     ...commonFieldsInitializers,
-    productType: nestedModel(() => ProductType.random()),
-    productTypeRef: nestedModel(() =>
-      Reference.random().typeId('product-type')
-    ),
+    productType: fake(() => ProductType.random()),
+    productTypeRef: fake(() => Reference.random().typeId('product-type')),
     name: fake((f) => f.lorem.words(3)),
-    nameAllLocales: nestedModel(() => [LocalizedField.random()]),
+    nameAllLocales: fake(() => [LocalizedField.random()]),
     description: fake((f) => f.lorem.words(3)),
-    descriptionAllLocales: nestedModel(() => [LocalizedField.random()]),
+    descriptionAllLocales: fake(() => [LocalizedField.random()]),
     slug: fake((f) => f.lorem.words(3)),
-    slugAllLocales: nestedModel(() => [LocalizedField.random()]),
+    slugAllLocales: fake(() => [LocalizedField.random()]),
     metaTitle: null,
-    metaTitleAllLocales: nestedModel(() => null),
+    metaTitleAllLocales: null,
     metaDescription: null,
-    metaDescriptionAllLocales: nestedModel(() => null),
+    metaDescriptionAllLocales: null,
     metaKeywords: null,
-    metaKeywordsAllLocales: nestedModel(() => null),
+    metaKeywordsAllLocales: null,
     categoryOrderHints: [],
-    categoriesRef: nestedModel(() => []),
-    stateRef: nestedModel(() => null),
-    taxCategoryRef: nestedModel(() => null),
+    categoriesRef: [],
+    stateRef: null,
+    taxCategoryRef: null,
     __typename: 'ProductProjection',
   },
 });

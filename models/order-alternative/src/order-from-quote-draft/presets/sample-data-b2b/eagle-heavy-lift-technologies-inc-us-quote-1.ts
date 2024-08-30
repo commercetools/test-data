@@ -1,18 +1,24 @@
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
+import { TSpecializedBuilder } from '@commercetools-test-data/core';
 import { QuoteDraft, type TQuoteDraft } from '@commercetools-test-data/quote';
-import { constants } from '../../../index';
-import type { TOrderFromQuoteDraftBuilder } from '../../../types';
-import * as OrderFromQuoteDraft from '../../index';
+import {
+  constants,
+  TOrderFromQuoteDraftGraphql,
+  TOrderFromQuoteDraftRest,
+} from '../../../index';
+import { restPresets, graphqlPresets } from '../index';
 
 const quote = QuoteDraft.presets.sampleDataB2B
   .eagleHeavyLiftTechnologiesIncUsQuote1(1)
   .build<TQuoteDraft>();
 
-const eagleHeavyLiftTechnologiesIncUsQuote1 = (
+const customizeBuilder = <
+  T extends TOrderFromQuoteDraftRest | TOrderFromQuoteDraftGraphql,
+>(
+  builder: TSpecializedBuilder<T>,
   versionNumber: number
-): TOrderFromQuoteDraftBuilder =>
-  OrderFromQuoteDraft.presets
-    .empty()
+): TSpecializedBuilder<T> => {
+  return builder
     .version(versionNumber)
     .quote(KeyReferenceDraft.presets.quote().key(quote.key!))
     .quoteStateToAccepted(true)
@@ -20,5 +26,10 @@ const eagleHeavyLiftTechnologiesIncUsQuote1 = (
     .orderState(constants.orderState.Open)
     .paymentState(constants.paymentState.Pending)
     .shipmentState(constants.shipmentState.Pending);
+};
 
-export default eagleHeavyLiftTechnologiesIncUsQuote1;
+export const restPreset = (versionNumber: number) =>
+  customizeBuilder(restPresets.empty(), versionNumber);
+
+export const graphqlPreset = (versionNumber: number) =>
+  customizeBuilder(graphqlPresets.empty(), versionNumber);

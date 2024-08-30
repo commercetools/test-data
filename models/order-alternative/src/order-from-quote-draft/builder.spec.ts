@@ -2,37 +2,17 @@
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type {
-  TOrderFromQuoteDraft,
+  TOrderFromQuoteDraftRest,
   TOrderFromQuoteDraftGraphql,
 } from '../types';
-import * as OrderFromQuoteDraftDraft from '.';
+import { OrderFromQuoteDraftRest, OrderFromQuoteDraftGraphql } from '.';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TOrderFromQuoteDraft, TOrderFromQuoteDraft>(
-      'default',
-      OrderFromQuoteDraftDraft.random(),
-      expect.objectContaining({
-        version: expect.any(Number),
-        quote: expect.objectContaining({
-          typeId: 'quote',
-        }),
-        quoteStateToAccepted: expect.any(Boolean),
-        orderNumber: expect.any(String),
-        paymentState: expect.any(String),
-        shipmentState: expect.any(String),
-        orderState: expect.any(String),
-        state: expect.objectContaining({
-          typeId: 'state',
-        }),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TOrderFromQuoteDraft, TOrderFromQuoteDraft>(
+    ...createBuilderSpec<TOrderFromQuoteDraftRest, TOrderFromQuoteDraftRest>(
       'rest',
-      OrderFromQuoteDraftDraft.random(),
+      // @ts-ignore
+      OrderFromQuoteDraftRest.random(),
       expect.objectContaining({
         version: expect.any(Number),
         quote: expect.objectContaining({
@@ -51,9 +31,13 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TOrderFromQuoteDraft, TOrderFromQuoteDraftGraphql>(
+    ...createBuilderSpec<
+      TOrderFromQuoteDraftGraphql,
+      TOrderFromQuoteDraftGraphql
+    >(
       'graphql',
-      OrderFromQuoteDraftDraft.random(),
+      // @ts-ignore
+      OrderFromQuoteDraftGraphql.random(),
       expect.objectContaining({
         version: expect.any(Number),
         quote: expect.objectContaining({

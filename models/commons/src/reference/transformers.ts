@@ -11,13 +11,13 @@ const transformers = {
     buildFields: ['obj'],
   }),
   rest: Transformer<TReference, TReferenceRest>('rest', {
+    buildFields: [],
     replaceFields: ({ fields }) => {
       const obj = fields.obj
         ? fields.obj.buildRest<TExpandedReferenceObject>()
         : {
             id: fields.id,
           };
-
       return {
         ...fields,
         id: obj.id,
@@ -29,6 +29,7 @@ const transformers = {
   // since some fields are pure `*Ref`, e.g `channelsRef`
   // with no option to expand.
   graphql: Transformer<TReference, TReferenceGraphql>('graphql', {
+    buildFields: [],
     replaceFields: ({ fields }) => {
       const id = fields.obj
         ? fields.obj.buildGraphql<TExpandedReferenceObject>().id

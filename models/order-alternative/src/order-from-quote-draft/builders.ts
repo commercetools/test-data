@@ -1,15 +1,23 @@
 import { createSpecializedBuilder } from '@commercetools-test-data/core';
+import {
+  TCreateOrderBuilder,
+  TOrderFromQuoteDraftGraphql,
+  TOrderFromQuoteDraftRest,
+} from '../types';
 import { graphqlGenerator, restGenerator } from './generators';
-import { TCreateOrderBuilder, TOrderGraphql, TOrderRest } from './types';
 
-export const RestModelBuilder: TCreateOrderBuilder<TOrderRest> = () =>
+export const RestModelBuilder: TCreateOrderBuilder<
+  TOrderFromQuoteDraftRest
+> = () =>
   createSpecializedBuilder({
     name: 'RestOrderBuilder',
     generator: restGenerator,
     type: 'rest',
   });
 
-export const GraphqlModelBuilder: TCreateOrderBuilder<TOrderGraphql> = () =>
+export const GraphqlModelBuilder: TCreateOrderBuilder<
+  TOrderFromQuoteDraftGraphql
+> = () =>
   createSpecializedBuilder({
     name: 'GraphqlOrderBuilder',
     generator: graphqlGenerator,

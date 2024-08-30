@@ -1,12 +1,12 @@
-import empty from './empty/empty';
-import sampleDataFashion from './sample-data-fashion/sample-australia-cart-01';
+import * as emptyPresets from './empty/empty';
+import * as sampleDataFashionPresets from './sample-data-fashion/sample-australia-cart-01';
 
 export const restPresets = {
-  empty: empty.rest,
-  sampleDataFashion: sampleDataFashion.rest,
+  empty: emptyPresets.restPreset,
+  sampleDataFashion: sampleDataFashionPresets.restPreset,
 };
 
 export const graphqlPresets = {
-  empty: empty.graphql,
-  sampleDataFashion: sampleDataFashion.graphql,
+  empty: emptyPresets.graphqlPreset,
+  sampleDataFashion: sampleDataFashionPresets.graphqlPreset,
 };

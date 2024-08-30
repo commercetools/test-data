@@ -5,6 +5,7 @@ import type { TCreateReferenceBuilder, TReference } from './types';
 
 const Model: TCreateReferenceBuilder = () =>
   Builder<TReference>({
+    name: 'ReferenceBuilder',
     generator,
     transformers,
   });

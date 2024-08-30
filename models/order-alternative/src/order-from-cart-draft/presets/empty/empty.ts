@@ -5,19 +5,18 @@ import {
   TOrderFromCartDraftRest,
 } from '../../../types';
 
-export const emptyRestPreset =
-  (): TSpecializedBuilder<TOrderFromCartDraftRest> =>
-    OrderFromCartDraftRest.random()
-      .cart(undefined)
-      .orderNumber(undefined)
-      .purchaseOrderNumber(undefined)
-      .paymentState(undefined)
-      .orderState(undefined)
-      .state(undefined)
-      .shipmentState(undefined)
-      .custom(undefined);
+export const restPreset = (): TSpecializedBuilder<TOrderFromCartDraftRest> =>
+  OrderFromCartDraftRest.random()
+    .cart(undefined)
+    .orderNumber(undefined)
+    .purchaseOrderNumber(undefined)
+    .paymentState(undefined)
+    .orderState(undefined)
+    .state(undefined)
+    .shipmentState(undefined)
+    .custom(undefined);
 
-export const emptyGraphqlPreset =
+export const graphqlPreset =
   (): TSpecializedBuilder<TOrderFromCartDraftGraphql> =>
     OrderFromCartDraftGraphql.random()
       .cart(undefined)
@@ -28,8 +27,3 @@ export const emptyGraphqlPreset =
       .state(undefined)
       .shipmentState(undefined)
       .custom(undefined);
-
-export default {
-  rest: emptyRestPreset,
-  graphql: emptyGraphqlPreset,
-};

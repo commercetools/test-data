@@ -12,7 +12,6 @@ import {
   Generator,
   oneOf,
   sequence,
-  nestedModel,
 } from '@commercetools-test-data/core';
 import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
@@ -40,22 +39,22 @@ const commonFieldsInitializers = {
   version: sequence(),
   createdAt: fake(getOlderDate),
   lastModifiedAt: fake(getNewerDate),
-  createdBy: nestedModel(() => ClientLogging.random()),
-  lastModifiedBy: nestedModel(() => ClientLogging.random()),
+  createdBy: fake(() => ClientLogging.random()),
+  lastModifiedBy: fake(() => ClientLogging.random()),
   completedAt: null,
   orderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
   customerId: fake((f) => f.string.uuid()),
   customerEmail: fake((f) => f.internet.email()),
   anonymousId: fake((f) => f.string.uuid()),
-  lineItems: nestedModel(() => [LineItem.random()]),
-  customLineItems: nestedModel(() => []),
-  totalPrice: nestedModel(() => CentPrecisionMoney.random()),
+  lineItems: fake(() => [LineItem.random()]),
+  customLineItems: fake(() => []),
+  totalPrice: fake(() => CentPrecisionMoney.random()),
   taxedPrice: null,
-  taxedShippingPrice: nestedModel(() => null),
-  shippingAddress: nestedModel(() => Address.random()),
-  billingAddress: nestedModel(() => Address.random()),
+  taxedShippingPrice: fake(() => null),
+  shippingAddress: fake(() => Address.random()),
+  billingAddress: fake(() => Address.random()),
   shippingMode: oneOf(...Object.values(shippingMode)),
-  shipping: nestedModel(() => []),
+  shipping: fake(() => []),
   taxMode: oneOf(...Object.values(taxMode)),
   taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
@@ -63,74 +62,60 @@ const commonFieldsInitializers = {
   orderState: oneOf(...Object.values(orderState)),
   shipmentState: oneOf(...Object.values(shipmentState)),
   paymentState: oneOf(...Object.values(paymentState)),
-  shippingInfo: nestedModel(() => null),
+  shippingInfo: fake(() => null),
   syncInfo: null,
-  returnInfo: nestedModel(() => []),
+  returnInfo: fake(() => []),
   purchaseOrderNumber: fake((f) => String(f.number.int({ min: 100000 }))),
-  discountCodes: nestedModel(() => []),
-  directDiscounts: nestedModel(() => []),
-  custom: nestedModel(() => null),
-  paymentInfo: nestedModel(() => null),
+  discountCodes: fake(() => []),
+  directDiscounts: fake(() => []),
+  custom: fake(() => null),
+  paymentInfo: fake(() => null),
   locale: oneOf('en-US', 'de-DE', 'es-ES'),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
-  shippingRateInput: nestedModel(() => null),
+  shippingRateInput: fake(() => null),
   origin: 'Customer',
-  itemShippingAddresses: nestedModel(() => [Address.random()]),
-  discountOnTotalPrice: nestedModel(() => null),
-  shippingCustomFields: nestedModel(() => null),
+  itemShippingAddresses: fake(() => [Address.random()]),
+  discountOnTotalPrice: fake(() => null),
+  shippingCustomFields: fake(() => null),
 };
 
 export const restGenerator = Generator<TOrderRest>({
   fields: {
     ...commonFieldsInitializers,
-    businessUnit: nestedModel(() =>
+    businessUnit: fake(() =>
       Reference.presets.businessUnitReference().obj(Company.random())
     ),
-    cart: nestedModel(() =>
-      Reference.presets.cartReference().obj(Cart.random())
-    ),
-    customerGroup: nestedModel(() =>
+    cart: fake(() => Reference.presets.cartReference().obj(Cart.random())),
+    customerGroup: fake(() =>
       Reference.presets.customerGroupReference().obj(CustomerGroup.random())
     ),
-    quote: nestedModel(() =>
-      Reference.presets.quoteReference().obj(Quote.random())
-    ),
-    refusedGifts: nestedModel(() => [
+    quote: fake(() => Reference.presets.quoteReference().obj(Quote.random())),
+    refusedGifts: fake(() => [
       Reference.presets.cartDiscountReference().obj(CartDiscount.random()),
     ]),
-    state: nestedModel(() =>
-      Reference.presets.stateReference().obj(State.random())
-    ),
-    store: nestedModel(() =>
-      Reference.presets.storeReference().obj(Store.random())
-    ),
+    state: fake(() => Reference.presets.stateReference().obj(State.random())),
+    store: fake(() => Reference.presets.storeReference().obj(Store.random())),
   },
 });
 
 export const graphqlGenerator = Generator<TOrderGraphql>({
   fields: {
     ...commonFieldsInitializers,
-    businessUnit: nestedModel(() => Company.random()),
-    businessUnitRef: nestedModel(() =>
-      Reference.presets.businessUnitReference()
-    ),
-    cart: nestedModel(() => Cart.random()),
-    cartRef: nestedModel(() => Reference.presets.cartReference()),
-    customer: nestedModel(() => Customer.random()),
-    customerGroup: nestedModel(() => CustomerGroup.random()),
-    customerGroupRef: nestedModel(() =>
-      Reference.presets.customerGroupReference()
-    ),
-    quote: nestedModel(() => Quote.random()),
-    quoteRef: nestedModel(() => Reference.presets.quoteReference()),
-    refusedGifts: nestedModel(() => [CartDiscount.random()]),
-    refusedGiftsRefs: nestedModel(() => [
-      Reference.presets.cartDiscountReference(),
-    ]),
-    state: nestedModel(() => State.random()),
-    stateRef: nestedModel(() => Reference.presets.stateReference()),
-    store: nestedModel(() => Store.random()),
-    storeRef: nestedModel(() => Reference.presets.storeReference()),
+    businessUnit: fake(() => Company.random()),
+    businessUnitRef: fake(() => Reference.presets.businessUnitReference()),
+    cart: fake(() => Cart.random()),
+    cartRef: fake(() => Reference.presets.cartReference()),
+    customer: fake(() => Customer.random()),
+    customerGroup: fake(() => CustomerGroup.random()),
+    customerGroupRef: fake(() => Reference.presets.customerGroupReference()),
+    quote: fake(() => Quote.random()),
+    quoteRef: fake(() => Reference.presets.quoteReference()),
+    refusedGifts: fake(() => [CartDiscount.random()]),
+    refusedGiftsRefs: fake(() => [Reference.presets.cartDiscountReference()]),
+    state: fake(() => State.random()),
+    stateRef: fake(() => Reference.presets.stateReference()),
+    store: fake(() => Store.random()),
+    storeRef: fake(() => Reference.presets.storeReference()),
     __typename: 'Order',
   },
 });

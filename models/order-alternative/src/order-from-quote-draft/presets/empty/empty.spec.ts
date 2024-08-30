@@ -2,32 +2,34 @@ import { restPreset, graphqlPreset } from './empty';
 
 describe('empty preset', () => {
   it(`should set the specified fields to undefined - rest`, () => {
-    const emptyOrderFromCartDraftRest = restPreset().build();
-    expect(emptyOrderFromCartDraftRest).toEqual({
-      cart: undefined,
+    const emptyOrderFromCartDraft = restPreset().build();
+    expect(emptyOrderFromCartDraft).toEqual({
+      quote: expect.objectContaining({
+        typeId: 'quote',
+      }),
       version: expect.any(Number),
+      quoteStateToAccepted: undefined,
       orderNumber: undefined,
-      purchaseOrderNumber: undefined,
       paymentState: undefined,
+      shipmentState: undefined,
       orderState: undefined,
       state: undefined,
-      shipmentState: undefined,
-      custom: undefined,
     });
   });
 
   it(`should set the specified fields to undefined - graphql`, () => {
-    const emptyOrderFromCartDraftGraphql = graphqlPreset().build();
-    expect(emptyOrderFromCartDraftGraphql).toEqual({
-      cart: undefined,
+    const emptyOrderFromCartDraft = graphqlPreset().build();
+    expect(emptyOrderFromCartDraft).toEqual({
+      quote: expect.objectContaining({
+        typeId: 'quote',
+      }),
       version: expect.any(Number),
+      quoteStateToAccepted: undefined,
       orderNumber: undefined,
-      purchaseOrderNumber: undefined,
       paymentState: undefined,
+      shipmentState: undefined,
       orderState: undefined,
       state: undefined,
-      shipmentState: undefined,
-      custom: undefined,
     });
   });
 });

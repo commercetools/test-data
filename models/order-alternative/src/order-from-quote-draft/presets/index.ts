@@ -1,6 +1,12 @@
-import empty from './empty';
-import sampleDataB2B from './sample-data-b2b';
+import * as emptyPresets from './empty/empty';
+import * as sampleDataB2BPresets from './sample-data-b2b/eagle-heavy-lift-technologies-inc-us-quote-1';
 
-const presets = { empty, sampleDataB2B };
+export const restPresets = {
+  empty: emptyPresets.restPreset,
+  sampleDataB2BPresets: sampleDataB2BPresets.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  empty: emptyPresets.graphqlPreset,
+  sampleDataB2BPresets: sampleDataB2BPresets.graphqlPreset,
+};

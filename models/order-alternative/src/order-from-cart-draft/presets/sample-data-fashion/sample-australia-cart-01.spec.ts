@@ -2,13 +2,11 @@ import {
   TOrderFromCartDraftRest,
   TOrderFromCartDraftGraphql,
 } from '../../../types';
-import sampleAustraliaCart01 from './sample-australia-cart-01';
+import { restPreset, graphqlPreset } from './sample-australia-cart-01';
 
 describe('with the preset order from cart draft `sampleAustraliaCart01`', () => {
   it(`should create an order draft`, () => {
-    const orderFromCartDraft = sampleAustraliaCart01
-      .rest(1)
-      .build<TOrderFromCartDraftRest>();
+    const orderFromCartDraft = restPreset(1).build<TOrderFromCartDraftRest>();
     expect(orderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
@@ -28,9 +26,8 @@ describe('with the preset order from cart draft `sampleAustraliaCart01`', () => 
   });
 
   it(`should create an order draft when built for graphql`, () => {
-    const orderFromCartDraft = sampleAustraliaCart01
-      .graphql(1)
-      .buildGraphql<TOrderFromCartDraftGraphql>();
+    const orderFromCartDraft =
+      graphqlPreset(1).buildGraphql<TOrderFromCartDraftGraphql>();
     expect(orderFromCartDraft).toMatchInlineSnapshot(`
       {
         "cart": {
