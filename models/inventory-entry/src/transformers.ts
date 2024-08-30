@@ -19,6 +19,7 @@ const transformers = {
     buildFields: ['supplyChannel'],
   }),
   graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
+    buildFields: false,
     replaceFields: ({ fields }) => {
       let supplyChannel: TChannelGraphql | undefined = undefined;
       let supplyChannelRef: TReferenceGraphql | undefined = undefined;

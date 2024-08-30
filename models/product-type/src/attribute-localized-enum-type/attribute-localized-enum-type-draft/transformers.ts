@@ -15,6 +15,7 @@ const transformers = {
     TAttributeLocalizedEnumTypeDraft,
     TAttributeLocalizedEnumTypeDraftGraphql
   >('graphql', {
+    buildFields: false,
     replaceFields: ({ fields }) => {
       return {
         [fields.name]: {

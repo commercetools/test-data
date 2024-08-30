@@ -43,8 +43,8 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
-    } else {
-      const builtFieldsNames = [];
+    } else if (fieldsToBuild !== false) {
+      // const builtFieldsNames = [];
       for (const [key, value] of Object.entries(transformedFields as {})) {
         if (!value || !isBuilder(value)) continue;
 
@@ -59,15 +59,15 @@ function Transformer<Model, TransformedModel>(
           : (buildField<Model>(fieldValue, transformType, {
               fieldToBuild: fieldKey,
             }) as unknown as Model[keyof Model]);
-        builtFieldsNames.push(fieldKey);
+        // builtFieldsNames.push(fieldKey);
       }
 
-      if (builtFieldsNames.length > 0) {
-        console.log(
-          `Built fields for "${params.builderName}":`,
-          builtFieldsNames
-        );
-      }
+      // if (builtFieldsNames.length > 0) {
+      //   console.log(
+      //     `Built fields for "${params.builderName}":`,
+      //     builtFieldsNames
+      //   );
+      // }
     }
 
     // The default transformer only allows building nested fields to not
