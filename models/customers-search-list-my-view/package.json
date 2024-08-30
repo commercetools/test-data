@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/customers-search-list-my-view",
-  "version": "1.0.0",
+  "version": "10.1.4",
   "description": "Data model for internal Merchan Center API CustomersSearchListMyView",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
