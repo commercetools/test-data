@@ -4,6 +4,57 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TProjectCustomLimitsProjection } from './types';
 import * as ProjectCustomLimitsProjection from './index';
 
+const expectedLimit = expect.objectContaining({
+  limit: expect.any(Number),
+});
+
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
+const expectedResult = {
+  customers: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  customerGroups: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  zones: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  taxCategories: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  shippingMethods: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  productDiscounts: expect.objectContaining({
+    totalActive: expectedLimitWithCurrent,
+  }),
+  cartDiscounts: expect.objectContaining({
+    totalActiveWithoutDiscountCodes: expectedLimitWithCurrent,
+  }),
+  stores: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+    inventorySupplyChannels: expectedLimit,
+    productDistributionChannels: expectedLimit,
+  }),
+  carts: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+  }),
+  shoppingLists: expect.objectContaining({
+    total: expectedLimitWithCurrent,
+    lineItems: expectedLimit,
+    textLineItems: expectedLimit,
+  }),
+  businessUnits: expect.objectContaining({
+    maxDivisions: expectedLimit,
+    maxDepthLimit: expectedLimit,
+    maxAssociates: expectedLimit,
+    maxAssociateRoles: expectedLimit,
+  }),
+};
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,20 +62,8 @@ describe('building', () => {
       TProjectCustomLimitsProjection
     >(
       'default',
-      ProjectCustomLimitsProjection.random(),
-      expect.objectContaining({
-        customers: expect.any(Object),
-        customerGroups: expect.any(Object),
-        zones: expect.any(Object),
-        taxCategories: expect.any(Object),
-        shippingMethods: expect.any(Object),
-        productDiscounts: expect.any(Object),
-        cartDiscounts: expect.any(Object),
-        stores: expect.any(Object),
-        carts: expect.any(Object),
-        shoppingLists: expect.any(Object),
-        businessUnits: expect.any(Object),
-      })
+      ProjectCustomLimitsProjection.presets.withAllPlatformLimits(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
@@ -33,20 +72,8 @@ describe('building', () => {
       TProjectCustomLimitsProjection
     >(
       'rest',
-      ProjectCustomLimitsProjection.random(),
-      expect.objectContaining({
-        customers: expect.any(Object),
-        customerGroups: expect.any(Object),
-        zones: expect.any(Object),
-        taxCategories: expect.any(Object),
-        shippingMethods: expect.any(Object),
-        productDiscounts: expect.any(Object),
-        cartDiscounts: expect.any(Object),
-        stores: expect.any(Object),
-        carts: expect.any(Object),
-        shoppingLists: expect.any(Object),
-        businessUnits: expect.any(Object),
-      })
+      ProjectCustomLimitsProjection.presets.withAllPlatformLimits(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
@@ -55,19 +82,9 @@ describe('building', () => {
       TProjectCustomLimitsProjection
     >(
       'graphql',
-      ProjectCustomLimitsProjection.random(),
+      ProjectCustomLimitsProjection.presets.withAllPlatformLimits(),
       expect.objectContaining({
-        customers: expect.any(Object),
-        customerGroups: expect.any(Object),
-        zones: expect.any(Object),
-        taxCategories: expect.any(Object),
-        shippingMethods: expect.any(Object),
-        productDiscounts: expect.any(Object),
-        cartDiscounts: expect.any(Object),
-        stores: expect.any(Object),
-        carts: expect.any(Object),
-        shoppingLists: expect.any(Object),
-        businessUnits: expect.any(Object),
+        ...expectedResult,
         __typename: 'ProjectCustomLimitsProjection',
       })
     )

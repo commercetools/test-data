@@ -4,6 +4,11 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TProductDiscountLimitsProjection } from './types';
 import * as ProductDiscountLimitsProjection from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,9 +16,9 @@ describe('building', () => {
       TProductDiscountLimitsProjection
     >(
       'default',
-      ProductDiscountLimitsProjection.random(),
+      ProductDiscountLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActive: expect.any(Object),
+        totalActive: expectedLimitWithCurrent,
       })
     )
   );
@@ -23,9 +28,9 @@ describe('building', () => {
       TProductDiscountLimitsProjection
     >(
       'rest',
-      ProductDiscountLimitsProjection.random(),
+      ProductDiscountLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActive: expect.any(Object),
+        totalActive: expectedLimitWithCurrent,
       })
     )
   );
@@ -35,9 +40,9 @@ describe('building', () => {
       TProductDiscountLimitsProjection
     >(
       'graphql',
-      ProductDiscountLimitsProjection.random(),
+      ProductDiscountLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        totalActive: expect.any(Object),
+        totalActive: expectedLimitWithCurrent,
         __typename: 'ProductDiscountLimitsProjection',
       })
     )

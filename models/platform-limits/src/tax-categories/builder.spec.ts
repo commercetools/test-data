@@ -4,6 +4,11 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TTaxCategoryLimitsProjection } from './types';
 import * as TaxCategoryLimitsProjection from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,9 +16,9 @@ describe('building', () => {
       TTaxCategoryLimitsProjection
     >(
       'default',
-      TaxCategoryLimitsProjection.random(),
+      TaxCategoryLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
@@ -23,9 +28,9 @@ describe('building', () => {
       TTaxCategoryLimitsProjection
     >(
       'rest',
-      TaxCategoryLimitsProjection.random(),
+      TaxCategoryLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
@@ -35,10 +40,9 @@ describe('building', () => {
       TTaxCategoryLimitsProjection
     >(
       'graphql',
-      TaxCategoryLimitsProjection.random(),
+      TaxCategoryLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
-
+        total: expectedLimitWithCurrent,
         __typename: 'TaxCategoryLimitsProjection',
       })
     )

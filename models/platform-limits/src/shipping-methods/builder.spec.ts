@@ -4,6 +4,11 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TShippingMethodLimitsProjection } from './types';
 import * as ShippingMethodLimitsProjection from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,9 +16,9 @@ describe('building', () => {
       TShippingMethodLimitsProjection
     >(
       'default',
-      ShippingMethodLimitsProjection.random(),
+      ShippingMethodLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
@@ -23,9 +28,9 @@ describe('building', () => {
       TShippingMethodLimitsProjection
     >(
       'rest',
-      ShippingMethodLimitsProjection.random(),
+      ShippingMethodLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
@@ -35,9 +40,9 @@ describe('building', () => {
       TShippingMethodLimitsProjection
     >(
       'graphql',
-      ShippingMethodLimitsProjection.random(),
+      ShippingMethodLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
         __typename: 'ShippingMethodLimitsProjection',
       })
     )

@@ -4,60 +4,38 @@ import {
   TProjectCustomLimitsProjectionGraphql,
 } from './types';
 
+const buildFields: (keyof TProjectCustomLimitsProjection)[] = [
+  'customers',
+  'customerGroups',
+  'zones',
+  'taxCategories',
+  'shippingMethods',
+  'productDiscounts',
+  'cartDiscounts',
+  'stores',
+  'shoppingLists',
+  'carts',
+  'businessUnits',
+];
+
 const transformers = {
   default: Transformer<
     TProjectCustomLimitsProjection,
     TProjectCustomLimitsProjection
   >('default', {
-    buildFields: [
-      'customers',
-      'customerGroups',
-      'zones',
-      'taxCategories',
-      'shippingMethods',
-      'productDiscounts',
-      'cartDiscounts',
-      'stores',
-      'shoppingLists',
-      'carts',
-      'businessUnits',
-    ],
+    buildFields,
   }),
   rest: Transformer<
     TProjectCustomLimitsProjection,
     TProjectCustomLimitsProjection
   >('rest', {
-    buildFields: [
-      'customers',
-      'customerGroups',
-      'zones',
-      'taxCategories',
-      'shippingMethods',
-      'productDiscounts',
-      'cartDiscounts',
-      'stores',
-      'shoppingLists',
-      'carts',
-      'businessUnits',
-    ],
+    buildFields,
   }),
   graphql: Transformer<
     TProjectCustomLimitsProjection,
     TProjectCustomLimitsProjectionGraphql
   >('graphql', {
-    buildFields: [
-      'customers',
-      'customerGroups',
-      'zones',
-      'taxCategories',
-      'shippingMethods',
-      'productDiscounts',
-      'cartDiscounts',
-      'stores',
-      'shoppingLists',
-      'carts',
-      'businessUnits',
-    ],
+    buildFields,
     addFields: () => ({
       __typename: 'ProjectCustomLimitsProjection',
     }),

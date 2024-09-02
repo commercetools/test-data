@@ -4,24 +4,30 @@ import {
   TShoppingListLimitsProjectionGraphql,
 } from './types';
 
+const buildFields: (keyof TShoppingListLimitsProjection)[] = [
+  'total',
+  'lineItems',
+  'textLineItems',
+];
+
 const transformers = {
   default: Transformer<
     TShoppingListLimitsProjection,
     TShoppingListLimitsProjection
   >('default', {
-    buildFields: ['total', 'lineItems', 'textLineItems'],
+    buildFields,
   }),
   rest: Transformer<
     TShoppingListLimitsProjection,
     TShoppingListLimitsProjection
   >('rest', {
-    buildFields: ['total', 'lineItems', 'textLineItems'],
+    buildFields,
   }),
   graphql: Transformer<
     TShoppingListLimitsProjection,
     TShoppingListLimitsProjectionGraphql
   >('graphql', {
-    buildFields: ['total', 'lineItems', 'textLineItems'],
+    buildFields,
     addFields: () => ({
       __typename: 'ShoppingListLimitsProjection',
     }),

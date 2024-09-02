@@ -4,37 +4,42 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TStoreLimitsProjection } from './types';
 import * as StoreLimitsProjection from './index';
 
+const expectedLimit = expect.objectContaining({
+  limit: expect.any(Number),
+});
+
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
+const expectedResult = {
+  total: expectedLimitWithCurrent,
+  inventorySupplyChannels: expectedLimit,
+  productDistributionChannels: expectedLimit,
+};
+
 describe('building', () => {
   it(
     ...createBuilderSpec<TStoreLimitsProjection, TStoreLimitsProjection>(
       'default',
-      StoreLimitsProjection.random(),
-      expect.objectContaining({
-        total: expect.any(Object),
-        inventorySupplyChannels: expect.any(Object),
-        productDistributionChannels: expect.any(Object),
-      })
+      StoreLimitsProjection.presets.withLimitAndCurrent(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
     ...createBuilderSpec<TStoreLimitsProjection, TStoreLimitsProjection>(
       'rest',
-      StoreLimitsProjection.random(),
-      expect.objectContaining({
-        total: expect.any(Object),
-        inventorySupplyChannels: expect.any(Object),
-        productDistributionChannels: expect.any(Object),
-      })
+      StoreLimitsProjection.presets.withLimitAndCurrent(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
     ...createBuilderSpec<TStoreLimitsProjection, TStoreLimitsProjection>(
       'graphql',
-      StoreLimitsProjection.random(),
+      StoreLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
-        inventorySupplyChannels: expect.any(Object),
-        productDistributionChannels: expect.any(Object),
+        ...expectedResult,
         __typename: 'StoreLimitsProjection',
       })
     )

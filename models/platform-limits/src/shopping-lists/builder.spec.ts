@@ -4,6 +4,21 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TShoppingListLimitsProjection } from './types';
 import * as ShoppingListLimitsProjection from './index';
 
+const expectedLimit = expect.objectContaining({
+  limit: expect.any(Number),
+});
+
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
+const expectedResult = {
+  total: expectedLimitWithCurrent,
+  lineItems: expectedLimit,
+  textLineItems: expectedLimit,
+};
+
 describe('building', () => {
   it(
     ...createBuilderSpec<
@@ -11,12 +26,8 @@ describe('building', () => {
       TShoppingListLimitsProjection
     >(
       'default',
-      ShoppingListLimitsProjection.random(),
-      expect.objectContaining({
-        total: expect.any(Object),
-        lineItems: expect.any(Object),
-        textLineItems: expect.any(Object),
-      })
+      ShoppingListLimitsProjection.presets.withLimitAndCurrent(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
@@ -25,12 +36,8 @@ describe('building', () => {
       TShoppingListLimitsProjection
     >(
       'rest',
-      ShoppingListLimitsProjection.random(),
-      expect.objectContaining({
-        total: expect.any(Object),
-        lineItems: expect.any(Object),
-        textLineItems: expect.any(Object),
-      })
+      ShoppingListLimitsProjection.presets.withLimitAndCurrent(),
+      expect.objectContaining(expectedResult)
     )
   );
   it(
@@ -39,11 +46,9 @@ describe('building', () => {
       TShoppingListLimitsProjection
     >(
       'graphql',
-      ShoppingListLimitsProjection.random(),
+      ShoppingListLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
-        lineItems: expect.any(Object),
-        textLineItems: expect.any(Object),
+        ...expectedResult,
         __typename: 'ShoppingListLimitsProjection',
       })
     )

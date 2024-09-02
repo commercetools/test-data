@@ -1,32 +1,24 @@
 import { Transformer } from '@commercetools-test-data/core';
 import { TStoreLimitsProjection, TStoreLimitsProjectionGraphql } from './types';
 
+const buildFields: (keyof TStoreLimitsProjection)[] = [
+  'total',
+  'inventorySupplyChannels',
+  'productDistributionChannels',
+];
+
 const transformers = {
   default: Transformer<TStoreLimitsProjection, TStoreLimitsProjection>(
     'default',
-    {
-      buildFields: [
-        'total',
-        'inventorySupplyChannels',
-        'productDistributionChannels',
-      ],
-    }
+    { buildFields }
   ),
   rest: Transformer<TStoreLimitsProjection, TStoreLimitsProjection>('rest', {
-    buildFields: [
-      'total',
-      'inventorySupplyChannels',
-      'productDistributionChannels',
-    ],
+    buildFields,
   }),
   graphql: Transformer<TStoreLimitsProjection, TStoreLimitsProjectionGraphql>(
     'graphql',
     {
-      buildFields: [
-        'total',
-        'inventorySupplyChannels',
-        'productDistributionChannels',
-      ],
+      buildFields,
       addFields: () => ({
         __typename: 'StoreLimitsProjection',
       }),

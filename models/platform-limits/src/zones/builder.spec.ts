@@ -4,31 +4,36 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import { TZoneLimitsProjection } from './types';
 import * as ZoneLimitsProjection from './index';
 
+const expectedLimitWithCurrent = expect.objectContaining({
+  limit: expect.any(Number),
+  current: expect.any(Number),
+});
+
 describe('building', () => {
   it(
     ...createBuilderSpec<TZoneLimitsProjection, TZoneLimitsProjection>(
       'default',
-      ZoneLimitsProjection.random(),
+      ZoneLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
   it(
     ...createBuilderSpec<TZoneLimitsProjection, TZoneLimitsProjection>(
       'rest',
-      ZoneLimitsProjection.random(),
+      ZoneLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
       })
     )
   );
   it(
     ...createBuilderSpec<TZoneLimitsProjection, TZoneLimitsProjection>(
       'graphql',
-      ZoneLimitsProjection.random(),
+      ZoneLimitsProjection.presets.withLimitAndCurrent(),
       expect.objectContaining({
-        total: expect.any(Object),
+        total: expectedLimitWithCurrent,
 
         __typename: 'ZoneLimitsProjection',
       })

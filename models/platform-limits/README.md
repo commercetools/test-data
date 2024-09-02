@@ -32,7 +32,7 @@ $ pnpm add -D @commercetools-test-data/platform-limits
 import {
   BusinessUnitLimitsProjection,
   type TBusinessUnitLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const businessUnitLimitsProjection =
   BusinessUnitLimitsProjection.random().build<TBusinessUnitLimitsProjection>();
@@ -49,7 +49,7 @@ const BusinessUnitWithLimit = businessUnitLimitsProjection.presets
 import {
   CartDiscountLimitsProjection,
   type TCartDiscountLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const cartDiscountLimitsProjection =
   CartDiscountLimitsProjection.random().build<TCartDiscountLimitsProjection>();
@@ -67,7 +67,7 @@ const cartDiscountLimitsProjectionWithLimitAndCurrent =
 import {
   CartLimitsProjection,
   type TCartLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const cartLimitsProjection =
   CartLimitsProjection.random().build<TCartLimitsProjection>();
@@ -84,7 +84,7 @@ const cartLimitsProjectionWithLimitAndCurrent = CartLimitsProjection.presets
 import {
   CustomerLimitsProjection,
   type TCustomerLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const customerLimitsProjection =
   CustomerLimitsProjection.random().build<TCustomerLimitsProjection>();
@@ -102,7 +102,7 @@ const customerLimitsProjectionWithLimitAndCurrent =
 import {
   CustomerGroupLimitsProjection,
   type TCustomerGroupLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const customerGroupLimitsProjection =
   CustomerGroupLimitsProjection.random().build<TCustomerGroupLimitsProjection>();
@@ -120,7 +120,7 @@ const customerGroupLimitsProjectionWithLimitAndCurrent =
 import {
   PlatformLimits,
   type TPlatformLimits,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const PlatformLimits = PlatformLimits.random().build<TPlatformLimits>();
 
@@ -136,7 +136,7 @@ const PlatformLimitsWithLimitAndCurrent = PlatformLimits.presets
 import {
   LimitWithCurrent,
   type TLimitWithCurrent,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const limitWithCurrent = LimitWithCurrent.random().build<TLimitWithCurrent>();
 
@@ -161,7 +161,7 @@ const limitWithCurrentWithWarningExceeded = LimitWithCurrent.presets
 import {
   ProductDiscountLimitsProjection,
   type TProductDiscountLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const productDiscountLimitsProjection =
   ProductDiscountLimitsProjection.random().build<TProductDiscountLimitsProjection>();
@@ -179,7 +179,7 @@ const productDiscountLimitsProjectionWithLimitAndCurrent =
 import {
   ShippingMethodLimitsProjection,
   type TShippingMethodLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const shippingMethodLimitsProjection =
   ShippingMethodLimitsProjection.random().build<TShippingMethodLimitsProjection>();
@@ -197,7 +197,7 @@ const shippingMethodLimitsProjectionWithLimitAndCurrent =
 import {
   ShoppingListLimitsProjection,
   type TShoppingListLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const ShoppingListLimitsProjection =
   ShoppingListLimitsProjection.random().build<TShoppingListLimitsProjection>();
@@ -215,7 +215,7 @@ const ShoppingListLimitsProjectionWithLimitAndCurrent =
 import {
   StoreLimitsProjection,
   type TStoreLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const StoreLimitsProjection =
   StoreLimitsProjection.random().build<TStoreLimitsProjection>();
@@ -232,7 +232,7 @@ const StoreLimitsProjectionWithLimitAndCurrent = StoreLimitsProjection.presets
 import {
   TaxCategoryLimitsProjection,
   type TTaxCategoryLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const taxCategoryLimitsProjection =
   TaxCategoryLimitsProjection.random().build<TTaxCategoryLimitsProjection>();
@@ -250,7 +250,7 @@ const taxCategoryLimitsProjectionWithLimitAndCurrent =
 import {
   ZoneLimitsProjection,
   type TZoneLimitsProjection,
-} from '@commercetools-test-data/product-type';
+} from '@commercetools-test-data/platform-limits';
 
 const zoneLimitsProjection =
   ZoneLimitsProjection.random().build<TZoneLimitsProjection>();
