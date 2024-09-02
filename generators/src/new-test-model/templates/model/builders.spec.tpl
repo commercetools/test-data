@@ -1,4 +1,3 @@
-import { T{{modelName}}Graphql, T{{modelName}}Rest } from './types';
 import { {{modelName}}Rest, {{modelName}}Graphql } from './index';
 
 describe('{{modelName}} Builder', () => {

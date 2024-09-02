@@ -3,3 +3,4 @@ packages:
 - "graphql-types"
 - "models/*"
 - "utils"
+- "generators"

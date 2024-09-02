@@ -1,14 +1,15 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import snakeCase from 'lodash/snakeCase';
 import Mustache from 'mustache';
 import prompts from 'prompts';
 import { CodeGenerator } from '../types';
-import { templates } from './templates';
+import { packageTemplatesData, modelTemplatesData } from './templates';
 
-function ensureDirectory(path: string) {
-  if (!existsSync(path)) {
-    mkdirSync(join(path, 'presets'), { recursive: true });
+function ensureDirectory(filePath: string) {
+  const dirPath = dirname(filePath);
+  if (!existsSync(dirPath)) {
+    mkdirSync(dirPath, { recursive: true });
   }
 }
 
@@ -18,64 +19,84 @@ export const newTestModelGenerator: CodeGenerator = {
     const { modelName } = await prompts({
       type: 'text',
       name: 'modelName',
-      message: 'What is the name of the model? (eg: Order, Product, etc)',
+      message:
+        'What is the name of the model? (eg: Order, ProductProjection, etc)',
     });
     const modelCodename = snakeCase(modelName).replaceAll('_', '-');
-    const { outputPath } = await prompts({
-      type: 'text',
-      name: 'outputPath',
-      message:
-        'Where do you want to save the model (relative path)? (default is the current directory)',
-      initial: process.cwd(),
+
+    const { generationType } = await prompts({
+      type: 'select',
+      name: 'generationType',
+      message: 'What type of model do you want to generate?',
+      choices: [
+        { title: 'Standalone model', value: 'standalone' },
+        { title: 'Child model', value: 'child' },
+      ],
     });
 
+    let outputPath = join(__dirname, '..', '..', '..', 'models', modelCodename);
+    if (generationType === 'child') {
+      const { parentModel } = await prompts({
+        type: 'text',
+        name: 'parentModel',
+        message:
+          'What is the name of the parent model folder? (eg: order, product-projection, etc)',
+      });
+      outputPath = join(
+        __dirname,
+        '..',
+        '..',
+        '..',
+        'models',
+        parentModel,
+        'src',
+        modelCodename
+      );
+    }
+
     // 2. Generate the files
-    const outDirectory = outputPath
-      ? join(process.cwd(), outputPath)
-      : process.cwd();
     const templatesData = { modelName, modelCodename };
 
     console.log('Generating files...');
-    ensureDirectory(outDirectory);
-    writeFileSync(
-      join(outDirectory, 'types.ts'),
-      Mustache.render(templates.types, templatesData)
-    );
-    console.log('  Types file generated.');
-    writeFileSync(
-      join(outDirectory, 'generators.ts'),
-      Mustache.render(templates.generators, templatesData)
-    );
-    console.log('  Generators file generated.');
-    writeFileSync(
-      join(outDirectory, 'builders.ts'),
-      Mustache.render(templates.builders, templatesData)
-    );
-    console.log('  Builders file generated.');
-    writeFileSync(
-      join(outDirectory, 'builders.spec.ts'),
-      Mustache.render(templates.buildersSpec, templatesData)
-    );
-    console.log('  Spec file generated.');
-    writeFileSync(
-      join(outDirectory, 'presets', 'example-preset.ts'),
-      Mustache.render(templates.examplePreset, templatesData)
-    );
-    writeFileSync(
-      join(outDirectory, 'presets', 'index.ts'),
-      Mustache.render(templates.presetsEntryPoint, templatesData)
-    );
-    console.log('  Presets file generated.');
-    writeFileSync(
-      join(outDirectory, 'index.ts'),
-      Mustache.render(templates.mainEntryPoint, templatesData)
-    );
-    console.log('  Main entry point file generated.');
+    console.log({
+      outputPath,
+      templatesData,
+      packageTemplatesData: packageTemplatesData.map(
+        (template) => template.templatePath
+      ),
+      modelTemplatesData: modelTemplatesData.map(
+        (template) => template.templatePath
+      ),
+    });
+
+    if (generationType === 'standalone') {
+      packageTemplatesData.forEach((template) => {
+        const filePath = join(outputPath, template.templatePath);
+        ensureDirectory(filePath);
+        writeFileSync(
+          filePath,
+          Mustache.render(template.templateContent, templatesData)
+        );
+      });
+    }
+
+    modelTemplatesData.forEach((template) => {
+      const filePath = join(
+        outputPath,
+        generationType === 'standalone' ? 'src' : '',
+        template.templatePath
+      );
+      ensureDirectory(filePath);
+      writeFileSync(
+        filePath,
+        Mustache.render(template.templateContent, templatesData)
+      );
+    });
 
     console.log('\nAll set! 🚀');
     console.log(
       'You can check the new files in the following directory:',
-      outDirectory
+      outputPath
     );
   },
 };
