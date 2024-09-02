@@ -54,11 +54,31 @@ const transformers = {
             .buildRest<TReference<'channel'>>()
         : undefined;
 
-      return {
+      const adjustedFields = {
         ...rest,
         customerGroup,
         channel,
+        // Currency sync
+        tiers: fields.tiers
+          ? fields.tiers.map((tier) => ({
+              ...tier,
+              value: {
+                ...tier.value,
+                currencyCode: fields.value.currencyCode,
+              },
+            }))
+          : undefined,
+        staged: fields.staged
+          ? {
+              value: {
+                ...fields.staged.value,
+                currencyCode: fields.value.currencyCode,
+              },
+            }
+          : undefined,
       };
+
+      return adjustedFields;
     },
   }),
   graphql: Transformer<TStandalonePrice, TStandalonePriceGraphql>('graphql', {
@@ -88,12 +108,32 @@ const transformers = {
             .buildGraphql<TReferenceGraphql<'channel'>>()
         : null;
 
-      return {
+      const adjustedFields = {
         ...fields,
-        __typename: 'StandalonePrice',
+        __typename: 'StandalonePrice' as const,
         customerGroupRef,
         channelRef,
+        // Currency sync
+        tiers: fields.tiers
+          ? fields.tiers.map((tier) => ({
+              ...tier,
+              value: {
+                ...tier.value,
+                currencyCode: fields.value.currencyCode,
+              },
+            }))
+          : undefined,
+        staged: fields.staged
+          ? {
+              value: {
+                ...fields.staged.value,
+                currencyCode: fields.value.currencyCode,
+              },
+            }
+          : undefined,
       };
+
+      return adjustedFields;
     },
   }),
 };
