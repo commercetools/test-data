@@ -62,7 +62,6 @@ const generator = Generator<TOrder>({
     shipping: [],
     itemShippingAddresses: fake(() => [Address.random()]),
     discountCodes: [],
-
     directDiscounts: [],
     refusedGifts: fake(() => [CartDiscount.random()]),
     paymentInfo: null,

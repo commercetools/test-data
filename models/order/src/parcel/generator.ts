@@ -7,7 +7,7 @@ import { TrackingData } from '../tracking-data';
 
 const [getOlderDate] = createRelatedDates();
 
-// https://docs.commercetools.com/api/projects/orders#Parcel
+// https://docs.commercetools.com/api/projects/orders#parcel
 
 const generator = Generator<Parcel>({
   fields: {

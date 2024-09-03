@@ -3,13 +3,13 @@ import type { TReturnInfo, TReturnInfoGraphql } from './types';
 
 const transformers = {
   default: Transformer<TReturnInfo, TReturnInfo>('default', {
-    buildFields: ['items'],
+    buildFields: [],
   }),
   rest: Transformer<TReturnInfo, TReturnInfo>('rest', {
-    buildFields: ['items'],
+    buildFields: [],
   }),
   graphql: Transformer<TReturnInfo, TReturnInfoGraphql>('graphql', {
-    buildFields: ['items'],
+    buildFields: [],
     addFields: () => ({
       __typename: 'ReturnInfo',
     }),

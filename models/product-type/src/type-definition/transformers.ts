@@ -4,10 +4,10 @@ import type { TTypeDefinition, TTypeDefinitionGraphql } from './types';
 
 const transformers = {
   default: Transformer<TTypeDefinition, TTypeDefinition>('default', {
-    buildFields: ['fieldDefinitions'],
+    buildFields: ['fieldDefinitions', 'name'],
   }),
   rest: Transformer<TTypeDefinition, TTypeDefinition>('rest', {
-    buildFields: ['fieldDefinitions'],
+    buildFields: ['fieldDefinitions', 'name'],
   }),
   graphql: Transformer<TTypeDefinition, TTypeDefinitionGraphql>('graphql', {
     buildFields: ['fieldDefinitions'],

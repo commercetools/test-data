@@ -1,6 +1,11 @@
 import type { LineItemReturnItem } from '@commercetools/platform-sdk';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import {
+  shipmentState,
+  paymentState,
+  LineItemReturnItemType,
+} from './constants';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -10,18 +15,13 @@ const generator = Generator<LineItemReturnItem>({
     id: fake((f) => f.string.uuid()),
     key: null,
     quantity: fake((f) => f.number.int()),
-    type: 'LineItemReturnItem',
+    type: LineItemReturnItemType,
     comment: null,
     shipmentState: fake((f) =>
-      f.helpers.arrayElement(['Advised', 'Returned', 'BackInStock', 'Unusable'])
+      f.helpers.arrayElement({ ...Object.values(shipmentState) })
     ),
     paymentState: fake((f) =>
-      f.helpers.arrayElement([
-        'NonRefundable',
-        'Initial',
-        'Refunded',
-        'NotRefunded',
-      ])
+      f.helpers.arrayElement({ ...Object.values(paymentState) })
     ),
     lineItemId: fake((f) => f.string.uuid()),
     custom: null,
