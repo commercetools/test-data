@@ -797,13 +797,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.4.0
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.4.0
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.4.0
         version: link:../../utils
       '@commercetools/platform-sdk':
         specifier: ^7.0.0
