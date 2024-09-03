@@ -4,7 +4,11 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TImage = Image;
 export type TImageDraft = Image;
 
-export type TImageGraphql = TImage & {
+export type TImageGraphql = Omit<TImage, 'dimensions'> & {
+  dimensions: {
+    width: number;
+    height: number;
+  };
   __typename: 'Image';
 };
 
