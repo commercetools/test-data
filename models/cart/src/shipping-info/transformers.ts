@@ -1,42 +1,26 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type { TShippingInfo, TShippingInfoGraphql } from './types';
 
+const buildFields: (keyof TShippingInfo)[] = [
+  'taxCategory',
+  'shippingMethod',
+  'price',
+  'shippingRate',
+  'taxedPrice',
+  'taxRate',
+  'deliveries',
+  'discountedPrice',
+];
+
 const transformers = {
   default: Transformer<TShippingInfo, TShippingInfo>('default', {
-    buildFields: [
-      'taxCategory',
-      'shippingMethod',
-      'price',
-      'shippingRate',
-      'taxedPrice',
-      'taxRate',
-      'deliveries',
-      'discountedPrice',
-    ],
+    buildFields,
   }),
   rest: Transformer<TShippingInfo, TShippingInfo>('rest', {
-    buildFields: [
-      'taxCategory',
-      'shippingMethod',
-      'price',
-      'shippingRate',
-      'taxedPrice',
-      'taxRate',
-      'deliveries',
-      'discountedPrice',
-    ],
+    buildFields,
   }),
   graphql: Transformer<TShippingInfo, TShippingInfoGraphql>('graphql', {
-    buildFields: [
-      'taxCategory',
-      'shippingMethod',
-      'price',
-      'shippingRate',
-      'taxedPrice',
-      'taxRate',
-      'deliveries',
-      'discountedPrice',
-    ],
+    buildFields,
     addFields: () => ({
       __typename: 'ShippingInfo',
     }),
