@@ -10,3 +10,4 @@ export * as CustomLineItem from './custom-line-item';
 export * as CustomLineItemDraft from './custom-line-item/custom-line-item-draft';
 export * as LineItem from './line-item';
 export * as LineItemDraft from './line-item/line-item-draft';
+export * as ShippingInfo from './shipping-info';
