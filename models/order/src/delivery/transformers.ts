@@ -1,15 +1,22 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type { TDelivery, TDeliveryGraphql } from './types';
 
+const buildFields: Array<keyof TDelivery> = [
+  'items',
+  'parcels',
+  'address',
+  'custom',
+];
+
 const transformers = {
   default: Transformer<TDelivery, TDelivery>('default', {
-    buildFields: ['items', 'parcels', 'address'],
+    buildFields,
   }),
   rest: Transformer<TDelivery, TDelivery>('rest', {
-    buildFields: ['items', 'parcels', 'address'],
+    buildFields,
   }),
   graphql: Transformer<TDelivery, TDeliveryGraphql>('graphql', {
-    buildFields: ['items', 'parcels', 'address'],
+    buildFields,
     addFields: () => ({
       __typename: 'Delivery',
     }),

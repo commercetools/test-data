@@ -1,15 +1,22 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type { TParcel, TParcelGraphql } from './types';
 
+const buildFields: Array<keyof TParcel> = [
+  'items',
+  'custom',
+  'measurements',
+  'trackingData',
+];
+
 const transformers = {
   default: Transformer<TParcel, TParcel>('default', {
-    buildFields: ['items', 'custom', 'measurements', 'trackingData'],
+    buildFields,
   }),
   rest: Transformer<TParcel, TParcel>('rest', {
-    buildFields: ['items', 'custom', 'measurements', 'trackingData'],
+    buildFields,
   }),
   graphql: Transformer<TParcel, TParcelGraphql>('graphql', {
-    buildFields: ['items', 'custom', 'measurements', 'trackingData'],
+    buildFields,
     addFields: () => ({
       __typename: 'Parcel',
     }),

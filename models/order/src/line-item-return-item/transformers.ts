@@ -3,15 +3,15 @@ import type { TLineItemReturnItem, TLineItemReturnItemGraphql } from './types';
 
 const transformers = {
   default: Transformer<TLineItemReturnItem, TLineItemReturnItem>('default', {
-    buildFields: [],
+    buildFields: ['custom'],
   }),
   rest: Transformer<TLineItemReturnItem, TLineItemReturnItem>('rest', {
-    buildFields: [],
+    buildFields: ['custom'],
   }),
   graphql: Transformer<TLineItemReturnItem, TLineItemReturnItemGraphql>(
     'graphql',
     {
-      buildFields: [],
+      buildFields: ['custom'],
       addFields: () => ({
         __typename: 'LineItemReturnItem',
       }),
