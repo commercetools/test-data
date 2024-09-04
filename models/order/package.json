@@ -27,7 +27,7 @@
     "@commercetools-test-data/customer-group": "10.5.1",
     "@commercetools-test-data/quote": "10.5.1",
     "@commercetools-test-data/utils": "10.5.1",
-    "@commercetools/platform-sdk": "^7.0.0",
+    "@commercetools/platform-sdk": "7.12.0",
     "@faker-js/faker": "^8.0.0",
     "@types/lodash": "^4.17.0",
     "lodash": "^4.17.21"

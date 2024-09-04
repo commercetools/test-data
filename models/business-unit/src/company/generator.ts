@@ -10,7 +10,13 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { status, storeMode, unitType, associateMode } from './constants';
+import {
+  status,
+  storeMode,
+  unitType,
+  associateMode,
+  approvalRuleMode,
+} from './constants';
 import type { TCompany } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -38,6 +44,7 @@ const generator = Generator<TCompany>({
     inheritedAssociates: [],
     parentUnit: null,
     topLevelUnit: fake(() => KeyReference.random().typeId('business-unit')),
+    approvalRuleMode: approvalRuleMode.Explicit,
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

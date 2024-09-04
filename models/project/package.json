@@ -21,6 +21,6 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/core": "10.5.1",
     "@commercetools-test-data/utils": "10.5.1",
-    "@commercetools/platform-sdk": "^7.0.0"
+    "@commercetools/platform-sdk": "7.12.0"
   }
 }

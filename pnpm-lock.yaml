@@ -149,8 +149,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -173,8 +173,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -209,8 +209,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -257,8 +257,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -290,8 +290,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -317,8 +317,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -341,8 +341,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -362,8 +362,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -401,8 +401,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -431,8 +431,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -464,8 +464,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -497,8 +497,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -521,8 +521,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -551,8 +551,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -578,8 +578,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -656,8 +656,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -695,8 +695,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -731,8 +731,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
 
   models/organization-extension:
     dependencies:
@@ -782,8 +782,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -806,8 +806,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -842,8 +842,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -872,8 +872,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -911,8 +911,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -935,8 +935,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -959,8 +959,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -980,8 +980,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
 
   models/project-extension:
     dependencies:
@@ -1046,8 +1046,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1085,8 +1085,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1109,8 +1109,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1139,8 +1139,8 @@ importers:
         specifier: 10.5.1
         version: link:../zone
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1163,8 +1163,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1205,8 +1205,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1238,8 +1238,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1262,8 +1262,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1292,8 +1292,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1316,8 +1316,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1340,8 +1340,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1370,8 +1370,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1394,8 +1394,8 @@ importers:
         specifier: 10.5.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -2217,8 +2217,8 @@ packages:
     peerDependencies:
       eslint: 8.x
 
-  '@commercetools/platform-sdk@7.8.0':
-    resolution: {integrity: sha512-7dpUG8kVULm286dyL1N5IZ6A+0iNwjHdeck7CZdUkVeJ697XN/YwPQkjQ2z62ZkaJRL0efPN5277TWttsU6uLA==}
+  '@commercetools/platform-sdk@7.12.0':
+    resolution: {integrity: sha512-fhO8kZgV1c1VuWe6pQ423dxat5E4y7uSyTjm5pO+yCO7EXdWT7IYkoP0xmnLay5kUuXxuD9GcTXobGxqkupESw==}
     engines: {node: '>=14'}
 
   '@commercetools/sdk-client-v2@2.5.0':
@@ -2237,8 +2237,8 @@ packages:
     resolution: {integrity: sha512-DhMXAA2yIch/AaGxy7st85Z1HFmeLtHWGkr9z5rX4xKjan4PHGB/IE5saAR+SNGHhs6+1Lp8vZEHDo3tFqVLmg==}
     engines: {node: '>=14'}
 
-  '@commercetools/ts-client@1.2.1':
-    resolution: {integrity: sha512-tgy78lQoEoqYoK0KeSj43/v1Mg17M1ouwXtDxKmjAqEW4RyiCGOPPjOiZT9adTyjbK4CcOcwDzJxUVziIerg5g==}
+  '@commercetools/ts-client@2.0.3':
+    resolution: {integrity: sha512-8S/wV56cyaXf5SbSdHtYqcFhZRFlM2N/nWgyD8wh84GuqYTJDKv5N1woKNOZVvajQZsnuy3DJDMSFzLG+EuDfw==}
     engines: {node: '>=14'}
 
   '@commitlint/cli@19.3.0':
@@ -3197,6 +3197,9 @@ packages:
   astral-regex@2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
+
+  async-mutex@0.5.0:
+    resolution: {integrity: sha512-1A94B18jkJ3DYq284ohPxoXbfTA5HsQ7/Mf4DEhcyLx3Bz27Rh59iScbB6EPiP+B+joue6YCxcMXSbFC1tZKwA==}
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
@@ -6344,8 +6347,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@9.0.1:
-    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
     hasBin: true
 
   v8-compile-cache@2.4.0:
@@ -7682,13 +7685,13 @@ snapshots:
       - jest
       - supports-color
 
-  '@commercetools/platform-sdk@7.8.0':
+  '@commercetools/platform-sdk@7.12.0':
     dependencies:
       '@commercetools/sdk-client-v2': 2.5.0
       '@commercetools/sdk-middleware-auth': 7.0.1
       '@commercetools/sdk-middleware-http': 7.0.4
       '@commercetools/sdk-middleware-logger': 3.0.0
-      '@commercetools/ts-client': 1.2.1
+      '@commercetools/ts-client': 2.0.3
     transitivePeerDependencies:
       - encoding
 
@@ -7709,12 +7712,13 @@ snapshots:
 
   '@commercetools/sdk-middleware-logger@3.0.0': {}
 
-  '@commercetools/ts-client@1.2.1':
+  '@commercetools/ts-client@2.0.3':
     dependencies:
       abort-controller: 3.0.0
+      async-mutex: 0.5.0
       buffer: 6.0.3
       node-fetch: 2.7.0
-      uuid: 9.0.1
+      uuid: 10.0.0
     transitivePeerDependencies:
       - encoding
 
@@ -9239,6 +9243,10 @@ snapshots:
   ast-types-flow@0.0.8: {}
 
   astral-regex@2.0.0: {}
+
+  async-mutex@0.5.0:
+    dependencies:
+      tslib: 2.6.3
 
   asynckit@0.4.0: {}
 
@@ -12860,7 +12868,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@9.0.1: {}
+  uuid@10.0.0: {}
 
   v8-compile-cache@2.4.0: {}
 
