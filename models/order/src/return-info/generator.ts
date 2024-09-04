@@ -8,7 +8,7 @@ const [returnDate] = createRelatedDates();
 // https://docs.commercetools.com/api/projects/orders#returninfo
 const generator = Generator<ReturnInfo>({
   fields: {
-    items: [LineItemReturnItem.random()],
+    items: [fake(() => LineItemReturnItem.random())],
     returnTrackingId: fake((f) => f.string.uuid()),
     returnDate: fake(returnDate),
   },

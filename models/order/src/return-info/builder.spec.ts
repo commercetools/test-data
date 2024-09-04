@@ -5,15 +5,14 @@ import { LineItemReturnItem } from '../line-item-return-item';
 import { TReturnInfo, TReturnInfoGraphql } from './types';
 import { ReturnInfo } from '.';
 
-// TODO: fix whatever is happening to the items field
 describe('builder', () => {
   const defaultReturnInfoSpec = {
-    // items: expect.arrayContaining([
-    //   expect.objectContaining({
-    //     id: expect.any(String),
-    //     quantity: expect.any(Number),
-    //   }),
-    // ]),
+    items: expect.arrayContaining([
+      expect.objectContaining({
+        id: expect.any(String),
+        quantity: expect.any(Number),
+      }),
+    ]),
     returnTrackingId: expect.any(String),
     returnDate: expect.any(String),
   };
@@ -43,18 +42,18 @@ describe('builder', () => {
     const lineItemReturnItem = LineItemReturnItem.random().comment(comment);
 
     const customReturnInfo = ReturnInfo.random()
-      // .items([lineItemReturnItem])
+      .items([lineItemReturnItem])
       .returnTrackingId(returnTrackingId)
       .returnDate(returnDate)
       .buildGraphql();
 
     expect(customReturnInfo).toEqual(
       expect.objectContaining({
-        // items: expect.arrayContaining([
-        //   expect.objectContaining({
-        //     comment,
-        //   }),
-        // ]),
+        items: expect.arrayContaining([
+          expect.objectContaining({
+            comment,
+          }),
+        ]),
         returnTrackingId,
         returnDate,
       })
