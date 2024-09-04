@@ -1,6 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCategorySearch, TCategorySearchGraphql } from '../types';
 import * as CategorySearch from './index';
@@ -149,4 +150,29 @@ describe('builder', () => {
       })
     )
   );
+
+  it('should allow customization', () => {
+    const ancestors = [CategorySearch.random()];
+    const productTypeNames = ['product-type-1'];
+    const children = [CategorySearch.random()];
+    const name = LocalizedString.random().en('custom-name');
+    const category: TCategorySearchGraphql = CategorySearch.random()
+      .name(name)
+      .ancestors(ancestors)
+      .productTypeNames(productTypeNames)
+      .children(children)
+      .buildGraphql();
+
+    expect(category.nameAllLocales).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          locale: 'en',
+          value: 'custom-name',
+        }),
+      ])
+    );
+    expect(category.ancestors).toEqual([ancestors[0].buildGraphql()]);
+    expect(category.productTypeNames).toEqual(productTypeNames);
+    expect(category.children).toEqual([children[0].buildGraphql()]);
+  });
 });

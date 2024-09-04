@@ -1,7 +1,8 @@
+import { TCategorySearchBuilder } from '../../types';
 import CategorySearch from '../builder';
 
-function withParent() {
+const withParent = (): TCategorySearchBuilder => {
   return CategorySearch().parent(CategorySearch());
-}
+};
 
 export default withParent;

@@ -7,7 +7,6 @@ const buildFields: (keyof TCategorySearch)[] = [
   'ancestors',
   'parentRef',
   'parent',
-  'productTypeNames',
   'children',
   'assets',
   'custom',
