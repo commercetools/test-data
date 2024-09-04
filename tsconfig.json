@@ -9,6 +9,7 @@
     "target": "ESNext",
     "module": "CommonJS",
     "moduleResolution": "Node",
+    "preserveSymlinks": true,
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
