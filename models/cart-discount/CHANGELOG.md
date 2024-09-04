@@ -1,5 +1,19 @@
 # @commercetools-test-data/cart-discount
 
+## 10.5.2
+
+### Patch Changes
+
+- [#672](https://github.com/commercetools/test-data/pull/672) [`8a124d6`](https://github.com/commercetools/test-data/commit/8a124d687e435db4adaa1f09a4b4a45f7f30160c) Thanks [@ragafus](https://github.com/ragafus)! - Bump @commercetools/platform-sdk dependency version
+
+- Updated dependencies [[`8a124d6`](https://github.com/commercetools/test-data/commit/8a124d687e435db4adaa1f09a4b4a45f7f30160c), [`26c4dfb`](https://github.com/commercetools/test-data/commit/26c4dfb195a2a5a39c8ff3cc0413a7eefb07de4d)]:
+  - @commercetools-test-data/customer-group@10.5.2
+  - @commercetools-test-data/product-type@10.5.2
+  - @commercetools-test-data/category@10.5.2
+  - @commercetools-test-data/commons@10.5.2
+  - @commercetools-test-data/core@10.5.2
+  - @commercetools-test-data/utils@10.5.2
+
 ## 10.5.1
 
 ### Patch Changes
