@@ -42,7 +42,6 @@ describe('builder', () => {
       expect.objectContaining({
         id,
         quantity,
-        lineItemId: id,
         __typename: 'DeliveryItem',
       })
     );

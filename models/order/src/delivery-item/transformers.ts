@@ -10,9 +10,7 @@ const transformers = {
   }),
   graphql: Transformer<TDeliveryItem, TDeliveryItemGraphql>('graphql', {
     buildFields: [],
-    replaceFields: ({ fields }) => ({
-      ...fields,
-      lineItemId: fields.id,
+    addFields: () => ({
       __typename: 'DeliveryItem',
     }),
   }),
