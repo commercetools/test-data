@@ -27,7 +27,7 @@
     "@commercetools-test-data/state": "10.5.1",
     "@commercetools-test-data/tax-category": "10.5.1",
     "@commercetools-test-data/utils": "10.5.1",
-    "@commercetools/platform-sdk": "^7.0.0",
+    "@commercetools/platform-sdk": "7.12.0",
     "@faker-js/faker": "^8.0.0"
   }
 }
