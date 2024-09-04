@@ -43,8 +43,8 @@ describe('builder', () => {
         label: expect.any(String),
         url: expect.any(String),
         dimensions: expect.objectContaining({
-          w: expect.any(Number),
-          h: expect.any(Number),
+          width: expect.any(Number),
+          height: expect.any(Number),
         }),
         __typename: 'Image',
       })
