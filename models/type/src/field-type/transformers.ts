@@ -23,7 +23,6 @@ const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
 ): T => {
   const commonFields = {
     name: fields.name as TFieldName,
-    __typename: graphqlTypenameByFieldTypeName[fields.name],
   } as T;
 
   switch (fields.name) {
@@ -82,8 +81,10 @@ const transformers = {
       resolveCommonTransformations<TFieldType>(fields),
   }),
   graphql: Transformer<TFieldType, TFieldTypeGraphql>('graphql', {
-    replaceFields: ({ fields }) =>
-      resolveCommonTransformations<TFieldTypeGraphql>(fields),
+    replaceFields: ({ fields }) => ({
+      ...resolveCommonTransformations<TFieldTypeGraphql>(fields),
+      __typename: graphqlTypenameByFieldTypeName[fields.name],
+    }),
   }),
 };
 
