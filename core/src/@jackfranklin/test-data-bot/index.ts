@@ -28,17 +28,11 @@ export interface OneOfGenerator {
   call: <T>(options: T[]) => T;
 }
 
-export interface NestedModelGenerator {
-  generatorType: 'nestedModel';
-  call: (fake: Faker) => any;
-}
-
 export type FieldGenerator =
   | FakerGenerator
   | SequenceGenerator
   | OneOfGenerator
-  | PerBuildGenerator
-  | NestedModelGenerator;
+  | PerBuildGenerator;
 
 export type Field =
   | string
@@ -153,8 +147,7 @@ export const build = <FactoryResultType>(
           break;
         }
 
-        case 'faker':
-        case 'nestedModel': {
+        case 'faker': {
           calculatedValue = fieldValue.call(faker);
           break;
         }
@@ -254,17 +247,6 @@ export const fake = (userDefinedUsage: FakerUserArgs): FakerGenerator => {
     generatorType: 'faker',
     call: (faker) => {
       return userDefinedUsage(faker);
-    },
-  };
-};
-
-export const nestedModel = (
-  generateNesteModelBuilder: FakerUserArgs
-): NestedModelGenerator => {
-  return {
-    generatorType: 'nestedModel',
-    call: (faker) => {
-      return generateNesteModelBuilder(faker);
     },
   };
 };
