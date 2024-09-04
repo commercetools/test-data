@@ -6,20 +6,36 @@ import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import type { TCategorySearch, TCategorySearchGraphql } from '../types';
 import * as CategorySearch from './index';
 
+const expectedResult = {
+  id: expect.any(String),
+  version: expect.any(Number),
+  key: expect.any(String),
+  externalId: expect.any(String),
+  orderHint: expect.any(String),
+  parent: expect.objectContaining({
+    typeId: 'category',
+  }),
+  createdAt: expect.any(String),
+  lastModifiedAt: expect.any(String),
+  parentRef: expect.objectContaining({
+    typeId: 'category',
+  }),
+  childCount: expect.any(Number),
+  stagedProductCount: expect.any(Number),
+  ancestorsRef: [],
+  ancestors: [],
+  productTypeNames: [],
+  children: [],
+  assets: [],
+  custom: [],
+};
 describe('builder', () => {
   it(
     ...createBuilderSpec<TCategorySearch, TCategorySearch>(
       'default',
       CategorySearch.random(),
       expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        externalId: expect.any(String),
-        orderHint: expect.any(String),
-        parent: expect.objectContaining({
-          typeId: 'category',
-        }),
+        ...expectedResult,
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -35,19 +51,6 @@ describe('builder', () => {
           de: expect.any(String),
           fr: expect.any(String),
         }),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        parentRef: expect.objectContaining({
-          typeId: 'category',
-        }),
-        childCount: expect.any(Number),
-        stagedProductCount: expect.any(Number),
-        ancestorsRef: [],
-        ancestors: [],
-        productTypeNames: [],
-        children: [],
-        assets: [],
-        custom: [],
       })
     )
   );
@@ -57,14 +60,7 @@ describe('builder', () => {
       'rest',
       CategorySearch.random(),
       expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        externalId: expect.any(String),
-        orderHint: expect.any(String),
-        parent: expect.objectContaining({
-          typeId: 'category',
-        }),
+        ...expectedResult,
         name: expect.objectContaining({
           en: expect.any(String),
           de: expect.any(String),
@@ -80,19 +76,6 @@ describe('builder', () => {
           de: expect.any(String),
           fr: expect.any(String),
         }),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        parentRef: expect.objectContaining({
-          typeId: 'category',
-        }),
-        childCount: expect.any(Number),
-        stagedProductCount: expect.any(Number),
-        ancestorsRef: [],
-        ancestors: [],
-        productTypeNames: [],
-        children: [],
-        assets: [],
-        custom: [],
       })
     )
   );
@@ -101,22 +84,10 @@ describe('builder', () => {
       'graphql',
       CategorySearch.random(),
       expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        externalId: expect.any(String),
-        orderHint: expect.any(String),
-        parent: expect.objectContaining({
-          typeId: 'category',
-        }),
+        ...expectedResult,
         name: expect.any(String),
         description: expect.any(String),
         slug: expect.any(String),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        parentRef: expect.objectContaining({
-          typeId: 'category',
-        }),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
             locale: 'en',
@@ -138,14 +109,6 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        childCount: expect.any(Number),
-        stagedProductCount: expect.any(Number),
-        ancestorsRef: [],
-        ancestors: [],
-        productTypeNames: [],
-        children: [],
-        assets: [],
-        custom: [],
         __typename: 'CategorySearch',
       })
     )
