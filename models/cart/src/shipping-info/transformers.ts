@@ -8,6 +8,7 @@ import {
   TaxCategory,
   TTaxCategoryGraphql,
 } from '@commercetools-test-data/tax-category';
+import { TTaxedItemPriceGraphql } from '../taxed-item-price/types';
 import type { TShippingInfo, TShippingInfoGraphql } from './types';
 
 const buildFields: (keyof TShippingInfo)[] = [
@@ -61,6 +62,7 @@ const transformers = {
         shippingMethodRef,
         taxCategory,
         taxCategoryRef,
+        taxedPrice: fields.taxedPrice as TTaxedItemPriceGraphql,
         __typename: 'ShippingInfo',
       };
     },

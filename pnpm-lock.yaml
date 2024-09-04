@@ -226,6 +226,9 @@ importers:
       '@commercetools-test-data/business-unit':
         specifier: 10.6.1
         version: link:../business-unit
+      '@commercetools-test-data/cart-discount':
+        specifier: 10.6.1
+        version: link:../cart-discount
       '@commercetools-test-data/channel':
         specifier: 10.6.1
         version: link:../channel
