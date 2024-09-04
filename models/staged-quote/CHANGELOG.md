@@ -1,5 +1,20 @@
 # @commercetools-test-data/staged-quote
 
+## 10.5.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart@10.5.1
+  - @commercetools-test-data/quote-request@10.5.1
+  - @commercetools-test-data/core@10.5.1
+  - @commercetools-test-data/business-unit@10.5.1
+  - @commercetools-test-data/commons@10.5.1
+  - @commercetools-test-data/customer@10.5.1
+  - @commercetools-test-data/customer-group@10.5.1
+  - @commercetools-test-data/store@10.5.1
+  - @commercetools-test-data/utils@10.5.1
+
 ## 10.5.0
 
 ### Patch Changes

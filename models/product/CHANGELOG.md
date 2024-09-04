@@ -1,5 +1,20 @@
 # @commercetools-test-data/product
 
+## 10.5.1
+
+### Patch Changes
+
+- [#667](https://github.com/commercetools/test-data/pull/667) [`9985834`](https://github.com/commercetools/test-data/commit/9985834ab7cf95fb533a7f1e38c306b88dfe10cc) Thanks [@antoniolodias](https://github.com/antoniolodias)! - Fix image dimension keys for graphQL response
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.5.1
+  - @commercetools-test-data/category@10.5.1
+  - @commercetools-test-data/channel@10.5.1
+  - @commercetools-test-data/commons@10.5.1
+  - @commercetools-test-data/product-type@10.5.1
+  - @commercetools-test-data/tax-category@10.5.1
+  - @commercetools-test-data/utils@10.5.1
+
 ## 10.5.0
 
 ### Patch Changes

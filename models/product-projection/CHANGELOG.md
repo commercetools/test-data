@@ -1,5 +1,19 @@
 # @commercetools-test-data/product-projection
 
+## 10.5.1
+
+### Patch Changes
+
+- Updated dependencies [[`9985834`](https://github.com/commercetools/test-data/commit/9985834ab7cf95fb533a7f1e38c306b88dfe10cc)]:
+  - @commercetools-test-data/product@10.5.1
+  - @commercetools-test-data/core@10.5.1
+  - @commercetools-test-data/category@10.5.1
+  - @commercetools-test-data/commons@10.5.1
+  - @commercetools-test-data/product-type@10.5.1
+  - @commercetools-test-data/state@10.5.1
+  - @commercetools-test-data/tax-category@10.5.1
+  - @commercetools-test-data/utils@10.5.1
+
 ## 10.5.0
 
 ### Patch Changes
