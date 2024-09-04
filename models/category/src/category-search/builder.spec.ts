@@ -1,0 +1,152 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+
+import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import type { TCategorySearch, TCategorySearchGraphql } from '../types';
+import * as CategorySearch from './index';
+
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TCategorySearch, TCategorySearch>(
+      'default',
+      CategorySearch.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        externalId: expect.any(String),
+        orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          typeId: 'category',
+        }),
+        name: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        description: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        slug: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        parentRef: expect.objectContaining({
+          typeId: 'category',
+        }),
+        childCount: expect.any(Number),
+        stagedProductCount: expect.any(Number),
+        ancestorsRef: [],
+        ancestors: [],
+        productTypeNames: [],
+        children: [],
+        assets: [],
+        custom: [],
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TCategorySearch, TCategorySearch>(
+      'rest',
+      CategorySearch.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        externalId: expect.any(String),
+        orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          typeId: 'category',
+        }),
+        name: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        description: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        slug: expect.objectContaining({
+          en: expect.any(String),
+          de: expect.any(String),
+          fr: expect.any(String),
+        }),
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        parentRef: expect.objectContaining({
+          typeId: 'category',
+        }),
+        childCount: expect.any(Number),
+        stagedProductCount: expect.any(Number),
+        ancestorsRef: [],
+        ancestors: [],
+        productTypeNames: [],
+        children: [],
+        assets: [],
+        custom: [],
+      })
+    )
+  );
+  it(
+    ...createBuilderSpec<TCategorySearch, TCategorySearchGraphql>(
+      'graphql',
+      CategorySearch.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        version: expect.any(Number),
+        key: expect.any(String),
+        externalId: expect.any(String),
+        orderHint: expect.any(String),
+        parent: expect.objectContaining({
+          typeId: 'category',
+        }),
+        name: expect.any(String),
+        description: expect.any(String),
+        slug: expect.any(String),
+        createdAt: expect.any(String),
+        lastModifiedAt: expect.any(String),
+        parentRef: expect.objectContaining({
+          typeId: 'category',
+        }),
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        descriptionAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        slugAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: 'en',
+            value: expect.any(String),
+            __typename: 'LocalizedString',
+          }),
+        ]),
+        childCount: expect.any(Number),
+        stagedProductCount: expect.any(Number),
+        ancestorsRef: [],
+        ancestors: [],
+        productTypeNames: [],
+        children: [],
+        assets: [],
+        custom: [],
+        __typename: 'CategorySearch',
+      })
+    )
+  );
+});
