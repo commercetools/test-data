@@ -23,6 +23,7 @@ const generator = Generator<TShippingMethod>({
     zoneRates: fake(() => []),
     isDefault: fake((f) => f.datatype.boolean()),
     predicate: '1=1',
+    active: fake(() => false),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

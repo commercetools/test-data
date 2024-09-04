@@ -26,6 +26,7 @@ describe('builder', () => {
         zoneRates: expect.any(Array),
         isDefault: expect.any(Boolean),
         predicate: expect.any(String),
+        active: false,
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({

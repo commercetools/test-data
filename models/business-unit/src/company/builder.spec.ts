@@ -31,6 +31,7 @@ describe('builder', () => {
         topLevelUnit: expect.objectContaining({
           typeId: 'business-unit',
         }),
+        approvalRuleMode: 'Explicit',
         custom: null,
         createdAt: expect.any(String),
         createdBy: expect.objectContaining({
