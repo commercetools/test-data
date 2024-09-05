@@ -1,19 +1,36 @@
-// import { TypeDefinition } from '@commercetools/platform-sdk'; shouldn't this come from here?
+import { CreatedBy, LastModifiedBy } from '@commercetools/platform-sdk';
+import type {
+  TLocalizedString,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TFieldDefinition } from '@commercetools-test-data/type';
 
-export interface TypeDefinition {
-  id: string;
+export type TTypeDefinition = {
   key: string;
-  name: null;
-  fieldDefinitions: null;
-}
+  name: TLocalizedString;
+  description?: TLocalizedString;
+  resourceTypeIds: string[];
+  fieldDefinitions: TFieldDefinition[];
+  id: string;
+  version: number;
+  createdAt: string;
+  lastModifiedAt: string;
+  lastModifiedBy?: LastModifiedBy;
+  createdBy?: CreatedBy;
+};
 
-export type TTypeDefinitionGraphql = TTypeDefinition & {
+export type TTypeDefinitionGraphql = Omit<
+  TTypeDefinition,
+  'name' | 'description'
+> & {
+  nameAllLocales: TLocalizedStringGraphql;
+  descriptionAllLocales?: TLocalizedStringGraphql;
+  name?: string;
+  description?: string;
   __typename: 'TypeDefinition';
 };
 
-export type TTypeDefinitionBuilder = TBuilder<TypeDefinition>;
-
-export type TTypeDefinition = TypeDefinition;
+export type TTypeDefinitionBuilder = TBuilder<TTypeDefinition>;
 
 export type TCreateTypeDefinitionBuilder = () => TTypeDefinitionBuilder;
