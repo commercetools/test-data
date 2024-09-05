@@ -1,6 +1,6 @@
-import { TSpecializedBuilder } from '@commercetools-test-data/core';
+import type { TSpecializedBuilder } from '@commercetools-test-data/core';
 import { {{modelName}}Graphql, {{modelName}}Rest } from '../..';
-import {
+import type {
   T{{modelName}}Graphql,
   T{{modelName}}Rest,
 } from '../../types';
