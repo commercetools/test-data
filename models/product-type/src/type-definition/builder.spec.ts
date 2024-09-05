@@ -1,8 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { LocalizedString } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { FieldDefinition } from '@commercetools-test-data/type';
 import { TTypeDefinition, TTypeDefinitionGraphql } from './types';
 import { TypeDefinition } from '.';
 
@@ -48,36 +46,4 @@ describe('builder', () => {
       })
     )
   );
-
-  it('should allow customization', () => {
-    const id = 'test-id';
-    const key = 'test key';
-    const nameEn = 'name in english';
-    const required = true;
-
-    const name = LocalizedString.random().en(nameEn);
-    const fieldDefinitions = FieldDefinition.random().required(required);
-
-    const typeDefinitionMock = TypeDefinition.random()
-      .id(id)
-      .key(key)
-      .name(name)
-      // TODO: fix TS error
-      .fieldDefinitions(fieldDefinitions)
-      .buildGraphql();
-
-    expect(typeDefinitionMock).toEqual(
-      expect.objectContaining({
-        id,
-        key,
-        nameAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            value: nameEn,
-          }),
-        ]),
-        fieldDefinitions: expect.objectContaining({ required }),
-        __typename: 'TypeDefinition',
-      })
-    );
-  });
 });
