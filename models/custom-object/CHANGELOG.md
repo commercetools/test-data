@@ -1,5 +1,25 @@
 # @commercetools-test-data/custom-object
 
+## 10.5.2
+
+### Patch Changes
+
+- [#672](https://github.com/commercetools/test-data/pull/672) [`8a124d6`](https://github.com/commercetools/test-data/commit/8a124d687e435db4adaa1f09a4b4a45f7f30160c) Thanks [@ragafus](https://github.com/ragafus)! - Bump @commercetools/platform-sdk dependency version
+
+- Updated dependencies [[`8a124d6`](https://github.com/commercetools/test-data/commit/8a124d687e435db4adaa1f09a4b4a45f7f30160c)]:
+  - @commercetools-test-data/commons@10.5.2
+  - @commercetools-test-data/core@10.5.2
+  - @commercetools-test-data/utils@10.5.2
+
+## 10.5.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.5.1
+  - @commercetools-test-data/commons@10.5.1
+  - @commercetools-test-data/utils@10.5.1
+
 ## 10.5.0
 
 ### Patch Changes
