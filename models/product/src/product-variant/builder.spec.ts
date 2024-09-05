@@ -21,6 +21,10 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
+            dimensions: expect.objectContaining({
+              w: expect.any(Number),
+              h: expect.any(Number),
+            }),
           }),
         ]),
         attributes: expect.arrayContaining([
@@ -53,6 +57,10 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
+            dimensions: expect.objectContaining({
+              w: expect.any(Number),
+              h: expect.any(Number),
+            }),
           }),
         ]),
         attributes: expect.arrayContaining([
@@ -87,6 +95,10 @@ describe('builder', () => {
         images: expect.arrayContaining([
           expect.objectContaining({
             url: expect.any(String),
+            dimensions: expect.objectContaining({
+              width: expect.any(Number),
+              height: expect.any(Number),
+            }),
             __typename: 'Image',
           }),
         ]),

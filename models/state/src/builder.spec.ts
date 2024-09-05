@@ -80,26 +80,8 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         type: expect.any(String),
-        name: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'de',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'fr',
-            value: expect.any(String),
-          }),
-        ]),
-        description: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: expect.any(String),
-          }),
-        ]),
+        name: expect.any(String),
+        description: expect.any(String),
         initial: expect.any(Boolean),
         builtIn: expect.any(Boolean),
         roles: expect.any(Array),

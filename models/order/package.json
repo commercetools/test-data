@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/order",
-  "version": "10.2.0",
+  "version": "10.5.2",
   "description": "Data model for commercetools API Order",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,15 +19,15 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/cart": "10.2.0",
-    "@commercetools-test-data/cart-discount": "10.2.0",
-    "@commercetools-test-data/commons": "10.2.0",
-    "@commercetools-test-data/core": "10.2.0",
-    "@commercetools-test-data/customer": "10.2.0",
-    "@commercetools-test-data/customer-group": "10.2.0",
-    "@commercetools-test-data/quote": "10.2.0",
-    "@commercetools-test-data/utils": "10.2.0",
-    "@commercetools/platform-sdk": "^7.0.0",
+    "@commercetools-test-data/cart": "10.5.2",
+    "@commercetools-test-data/cart-discount": "10.5.2",
+    "@commercetools-test-data/commons": "10.5.2",
+    "@commercetools-test-data/core": "10.5.2",
+    "@commercetools-test-data/customer": "10.5.2",
+    "@commercetools-test-data/customer-group": "10.5.2",
+    "@commercetools-test-data/quote": "10.5.2",
+    "@commercetools-test-data/utils": "10.5.2",
+    "@commercetools/platform-sdk": "7.12.0",
     "@faker-js/faker": "^8.0.0",
     "@types/lodash": "^4.17.0",
     "lodash": "^4.17.21"

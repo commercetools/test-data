@@ -140,20 +140,47 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
+
+  models/attribute-group:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/commons':
+        specifier: 10.5.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.5.2
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 10.5.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: 7.12.0
+        version: 7.12.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+      omit-deep:
+        specifier: ^0.3.0
+        version: 0.3.0
 
   models/business-unit:
     dependencies:
@@ -164,26 +191,26 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/associate-role':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../associate-role
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/store':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -197,41 +224,41 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../business-unit
       '@commercetools-test-data/channel':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/discount-code':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../discount-code
       '@commercetools-test-data/product':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product
       '@commercetools-test-data/shipping-method':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../shipping-method
       '@commercetools-test-data/store':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../store
       '@commercetools-test-data/tax-category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -245,26 +272,26 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/product-type':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -278,20 +305,20 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/type':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../type
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -305,17 +332,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -329,14 +356,14 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -362,20 +389,20 @@ importers:
         specifier: ^22.10.0
         version: 22.27.0
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -395,17 +422,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -425,20 +452,20 @@ importers:
         specifier: ^22.10.0
         version: 22.27.0
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -458,20 +485,20 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -485,17 +512,47 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
+  models/customers-search-list-my-view:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/commons':
+        specifier: 10.5.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.5.2
+        version: link:../../core
+      '@commercetools-test-data/filter-values':
+        specifier: 10.5.2
+        version: link:../filter-values
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.5.2
+        version: link:../../graphql-types
+      '@commercetools-test-data/utils':
+        specifier: 10.5.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -509,20 +566,20 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/cart-discount':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -536,19 +593,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/filter-values':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../filter-values
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@faker-js/faker':
         specifier: ^8.0.0
@@ -563,13 +620,13 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@faker-js/faker':
         specifier: ^8.0.0
@@ -584,23 +641,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/product':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -614,32 +671,32 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/cart':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart
       '@commercetools-test-data/cart-discount':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart-discount
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/quote':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../quote
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -659,23 +716,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/user':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../user
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
 
   models/organization-extension:
     dependencies:
@@ -686,19 +743,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
 
   models/payment:
@@ -710,23 +767,47 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/order':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../order
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
+  models/platform-limits:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.24.6
+      '@commercetools-test-data/commons':
+        specifier: 10.5.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.5.2
+        version: link:../../core
+      '@commercetools-test-data/utils':
+        specifier: 10.5.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -740,32 +821,32 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../category
       '@commercetools-test-data/channel':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product-type
       '@commercetools-test-data/state':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../state
       '@commercetools-test-data/tax-category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -779,23 +860,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/product-type':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product-type
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -809,32 +890,32 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../category
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/product':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product
       '@commercetools-test-data/product-type':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product-type
       '@commercetools-test-data/state':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../state
       '@commercetools-test-data/tax-category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -848,17 +929,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -872,17 +953,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -896,14 +977,14 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
 
   models/project-extension:
     dependencies:
@@ -914,19 +995,19 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/custom-application':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../custom-application
       '@commercetools-test-data/custom-view':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../custom-view
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
 
   models/quote:
@@ -938,41 +1019,41 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: 10.2.0
+        specifier: ^10.5.2
         version: link:../staged-quote
       '@commercetools-test-data/state':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../state
       '@commercetools-test-data/store':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -986,35 +1067,35 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/state':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../state
       '@commercetools-test-data/store':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1028,17 +1109,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1052,23 +1133,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/tax-category':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../tax-category
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools-test-data/zone':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../zone
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1082,17 +1163,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1106,38 +1187,38 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/business-unit':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../business-unit
       '@commercetools-test-data/cart':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../cart
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/quote-request':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../quote-request
       '@commercetools-test-data/state':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../state
       '@commercetools-test-data/store':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../store
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1151,26 +1232,26 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/customer-group':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../customer-group
       '@commercetools-test-data/product':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1184,17 +1265,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1208,23 +1289,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/channel':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../channel
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/product-selection':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../product-selection
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1238,17 +1319,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1262,17 +1343,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1286,23 +1367,23 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/graphql-types':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../graphql-types
       '@commercetools-test-data/project':
         specifier: workspace:^
         version: link:../project
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -1316,17 +1397,17 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@commercetools-test-data/commons':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../commons
       '@commercetools-test-data/core':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../core
       '@commercetools-test-data/utils':
-        specifier: 10.2.0
+        specifier: 10.5.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: ^7.0.0
-        version: 7.8.0
+        specifier: 7.12.0
+        version: 7.12.0
       '@faker-js/faker':
         specifier: ^8.0.0
         version: 8.4.1
@@ -2148,8 +2229,8 @@ packages:
     peerDependencies:
       eslint: 8.x
 
-  '@commercetools/platform-sdk@7.8.0':
-    resolution: {integrity: sha512-7dpUG8kVULm286dyL1N5IZ6A+0iNwjHdeck7CZdUkVeJ697XN/YwPQkjQ2z62ZkaJRL0efPN5277TWttsU6uLA==}
+  '@commercetools/platform-sdk@7.12.0':
+    resolution: {integrity: sha512-fhO8kZgV1c1VuWe6pQ423dxat5E4y7uSyTjm5pO+yCO7EXdWT7IYkoP0xmnLay5kUuXxuD9GcTXobGxqkupESw==}
     engines: {node: '>=14'}
 
   '@commercetools/sdk-client-v2@2.5.0':
@@ -2168,8 +2249,8 @@ packages:
     resolution: {integrity: sha512-DhMXAA2yIch/AaGxy7st85Z1HFmeLtHWGkr9z5rX4xKjan4PHGB/IE5saAR+SNGHhs6+1Lp8vZEHDo3tFqVLmg==}
     engines: {node: '>=14'}
 
-  '@commercetools/ts-client@1.2.1':
-    resolution: {integrity: sha512-tgy78lQoEoqYoK0KeSj43/v1Mg17M1ouwXtDxKmjAqEW4RyiCGOPPjOiZT9adTyjbK4CcOcwDzJxUVziIerg5g==}
+  '@commercetools/ts-client@2.0.3':
+    resolution: {integrity: sha512-8S/wV56cyaXf5SbSdHtYqcFhZRFlM2N/nWgyD8wh84GuqYTJDKv5N1woKNOZVvajQZsnuy3DJDMSFzLG+EuDfw==}
     engines: {node: '>=14'}
 
   '@commitlint/cli@19.3.0':
@@ -3128,6 +3209,9 @@ packages:
   astral-regex@2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
     engines: {node: '>=8'}
+
+  async-mutex@0.5.0:
+    resolution: {integrity: sha512-1A94B18jkJ3DYq284ohPxoXbfTA5HsQ7/Mf4DEhcyLx3Bz27Rh59iScbB6EPiP+B+joue6YCxcMXSbFC1tZKwA==}
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
@@ -4184,6 +4268,10 @@ packages:
   get-tsconfig@4.7.5:
     resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
 
+  get-value@2.0.6:
+    resolution: {integrity: sha512-Ln0UQDlxH1BapMu3GPtf7CuYNwRZf2gwCuPqbyG6pB8WfmFpzqcy4xtAaAMUhnNqjMKTiCPZG2oMT3YSx8U2NA==}
+    engines: {node: '>=0.10.0'}
+
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
@@ -4307,6 +4395,14 @@ packages:
   has-tostringtag@1.0.2:
     resolution: {integrity: sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==}
     engines: {node: '>= 0.4'}
+
+  has-value@0.3.1:
+    resolution: {integrity: sha512-gpG936j8/MzaeID5Yif+577c17TxaDmhuyVgSwtnL/q8UUTySg8Mecb+8Cf1otgLoD7DDH75axp86ER7LFsf3Q==}
+    engines: {node: '>=0.10.0'}
+
+  has-values@0.1.4:
+    resolution: {integrity: sha512-J8S0cEdWuQbqD9//tlZxiMuMNmxB8PlEwvYwuxsTmR1G5RXUePEX/SJn7aD0GMLieuZYSwNH0cQuJGwnYunXRQ==}
+    engines: {node: '>=0.10.0'}
 
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
@@ -4645,11 +4741,18 @@ packages:
     resolution: {integrity: sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==}
     engines: {node: '>=0.10.0'}
 
+  isarray@1.0.0:
+    resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
+
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
+
+  isobject@2.1.0:
+    resolution: {integrity: sha512-+OUdGJlgjOBZDfxnDjYYG6zp487z0JGNQq3cYQYg5f5hKR+syHMsaztzGeml/4kGG55CSpKSpWTY+jYGgsHLgA==}
+    engines: {node: '>=0.10.0'}
 
   isobject@3.0.1:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
@@ -5293,6 +5396,10 @@ packages:
   object.values@1.2.0:
     resolution: {integrity: sha512-yBYjY9QX2hnRmZHAjG/f13MzmBzxzYgQhFrke06TTyKY5zSTEqkOeukBzIdVA3j3ulu8Qa3MbVFShV7T2RmGtQ==}
     engines: {node: '>= 0.4'}
+
+  omit-deep@0.3.0:
+    resolution: {integrity: sha512-Lbl/Ma59sss2b15DpnWnGmECBRL8cRl/PjPbPMVW+Y8zIQzRrwMaI65Oy6HvxyhYeILVKBJb2LWeG81bj5zbMg==}
+    engines: {node: '>=0.10.0'}
 
   omit-empty-es@1.2.0:
     resolution: {integrity: sha512-4g0KMUt/IvlnnMt0lONaOStBsWs2R9Vi5dDOrBvu36m4J7KBx6EDcdqCrTrnTWknWQgo3VLj4Tjfcxf1Hs+0uA==}
@@ -6221,6 +6328,10 @@ packages:
     resolution: {integrity: sha512-6bc58dPYhCMHHuwxldQxO3RRNZ4eCogZ/st++0+fcC1nr0jiGUtAdBJ2qzmLQWSxbtz42pWt4QQMiZ9HvZf5cg==}
     engines: {node: '>=0.10.0'}
 
+  unset-value@0.1.2:
+    resolution: {integrity: sha512-yhv5I4TsldLdE3UcVQn0hD2T5sNCPv4+qm/CTUpRKIpwthYRIipsAPdsrNpOI79hPQa0rTTeW22Fq6JWRcTgNg==}
+    engines: {node: '>=0.10.0'}
+
   update-browserslist-db@1.0.16:
     resolution: {integrity: sha512-KVbTxlBYlckhF5wgfyZXTWnMn7MMZjMu9XG8bPlliUOP9ThaF4QnhP8qrjrH7DRzHfSk0oQv1wToW+iA5GajEQ==}
     hasBin: true
@@ -6248,8 +6359,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@9.0.1:
-    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
     hasBin: true
 
   v8-compile-cache@2.4.0:
@@ -7586,13 +7697,13 @@ snapshots:
       - jest
       - supports-color
 
-  '@commercetools/platform-sdk@7.8.0':
+  '@commercetools/platform-sdk@7.12.0':
     dependencies:
       '@commercetools/sdk-client-v2': 2.5.0
       '@commercetools/sdk-middleware-auth': 7.0.1
       '@commercetools/sdk-middleware-http': 7.0.4
       '@commercetools/sdk-middleware-logger': 3.0.0
-      '@commercetools/ts-client': 1.2.1
+      '@commercetools/ts-client': 2.0.3
     transitivePeerDependencies:
       - encoding
 
@@ -7613,12 +7724,13 @@ snapshots:
 
   '@commercetools/sdk-middleware-logger@3.0.0': {}
 
-  '@commercetools/ts-client@1.2.1':
+  '@commercetools/ts-client@2.0.3':
     dependencies:
       abort-controller: 3.0.0
+      async-mutex: 0.5.0
       buffer: 6.0.3
       node-fetch: 2.7.0
-      uuid: 9.0.1
+      uuid: 10.0.0
     transitivePeerDependencies:
       - encoding
 
@@ -9144,6 +9256,10 @@ snapshots:
 
   astral-regex@2.0.0: {}
 
+  async-mutex@0.5.0:
+    dependencies:
+      tslib: 2.6.3
+
   asynckit@0.4.0: {}
 
   at-least-node@1.0.0: {}
@@ -10451,6 +10567,8 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  get-value@2.0.6: {}
+
   git-raw-commits@4.0.0:
     dependencies:
       dargs: 8.1.0
@@ -10592,6 +10710,14 @@ snapshots:
   has-tostringtag@1.0.2:
     dependencies:
       has-symbols: 1.0.3
+
+  has-value@0.3.1:
+    dependencies:
+      get-value: 2.0.6
+      has-values: 0.1.4
+      isobject: 2.1.0
+
+  has-values@0.1.4: {}
 
   hasown@2.0.2:
     dependencies:
@@ -10907,9 +11033,15 @@ snapshots:
 
   is-windows@1.0.2: {}
 
+  isarray@1.0.0: {}
+
   isarray@2.0.5: {}
 
   isexe@2.0.0: {}
+
+  isobject@2.1.0:
+    dependencies:
+      isarray: 1.0.0
 
   isobject@3.0.1: {}
 
@@ -11791,6 +11923,11 @@ snapshots:
       call-bind: 1.0.7
       define-properties: 1.2.1
       es-object-atoms: 1.0.0
+
+  omit-deep@0.3.0:
+    dependencies:
+      is-plain-object: 2.0.4
+      unset-value: 0.1.2
 
   omit-empty-es@1.2.0:
     dependencies:
@@ -12709,6 +12846,11 @@ snapshots:
     dependencies:
       normalize-path: 2.1.1
 
+  unset-value@0.1.2:
+    dependencies:
+      has-value: 0.3.1
+      isobject: 3.0.1
+
   update-browserslist-db@1.0.16(browserslist@4.23.0):
     dependencies:
       browserslist: 4.23.0
@@ -12738,7 +12880,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@9.0.1: {}
+  uuid@10.0.0: {}
 
   v8-compile-cache@2.4.0: {}
 
