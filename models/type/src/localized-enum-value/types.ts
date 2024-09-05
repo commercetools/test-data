@@ -1,4 +1,4 @@
-import { TLocalizedFieldGraphql } from '@commercetools-test-data/commons';
+import type { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 export type TLocalizedEnumValue = {
@@ -7,7 +7,7 @@ export type TLocalizedEnumValue = {
 };
 
 export type TLocalizedEnumValueGraphql = TLocalizedEnumValue & {
-  labelAllLocales: TLocalizedFieldGraphql[];
+  labelAllLocales: TLocalizedStringGraphql;
   __typename: 'LocalizedEnumValue';
 };
 

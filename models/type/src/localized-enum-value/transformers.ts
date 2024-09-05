@@ -1,6 +1,8 @@
-import { LocalizedField } from '@commercetools-test-data/commons';
+import {
+  LocalizedString,
+  TLocalizedStringGraphql,
+} from '@commercetools-test-data/commons';
 import { Transformer } from '@commercetools-test-data/core';
-import { TLocalizedFieldGraphql } from './../../../commons/src/localized-field/types';
 
 import { TLocalizedEnumValue, TLocalizedEnumValueGraphql } from './types';
 
@@ -16,12 +18,10 @@ const transformers = {
     {
       buildFields: [],
       addFields: ({ fields }) => ({
-        labelAllLocales: [
-          LocalizedField.random()
-            .locale('en')
-            .value(fields.label)
-            .buildGraphql<TLocalizedFieldGraphql>(),
-        ],
+        labelAllLocales: LocalizedString.random()
+          .locale('en')
+          .value(fields.label)
+          .buildGraphql<TLocalizedStringGraphql>(),
         __typename: 'LocalizedEnumValue',
       }),
     }

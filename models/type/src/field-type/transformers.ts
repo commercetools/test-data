@@ -13,13 +13,13 @@ import FieldType from './builder';
 import { typeNames, graphqlTypenameByFieldTypeName } from './constants';
 import { TFieldName, TFieldType, TFieldTypeGraphql } from './types';
 
-const list = <T>(fn: (index?: number) => T) =>
-  Array.from({ length: faker.number.int({ min: 1, max: 7 }) }, (_, index) =>
-    fn(index)
-  );
+// This function is used to create a list of models builders between 1 and 7 elements
+const list = <T>(fn: () => T) =>
+  Array.from({ length: faker.number.int({ min: 1, max: 7 }) }, () => fn());
 
 const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
-  fields: TFieldType
+  fields: TFieldType,
+  transformerType: 'default' | 'rest' | 'graphql'
 ): T => {
   const commonFields = {
     name: fields.name as TFieldName,
@@ -32,7 +32,7 @@ const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
         values: buildFields(
           (fields.values as TCustomFieldEnumValue[]) ||
             list(CustomFieldEnumValue.random),
-          'rest'
+          transformerType
         ),
       };
     case 'LocalizedEnum':
@@ -41,7 +41,7 @@ const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
         values: buildFields(
           (fields.values as TCustomFieldLocalizedEnumValue[]) ||
             list(CustomFieldLocalizedEnumValue.random),
-          'rest'
+          transformerType
         ),
       };
     case 'Reference':
@@ -74,15 +74,15 @@ const resolveCommonTransformations = <T extends TFieldType | TFieldTypeGraphql>(
 const transformers = {
   default: Transformer<TFieldType, TFieldType>('default', {
     replaceFields: ({ fields }) =>
-      resolveCommonTransformations<TFieldType>(fields),
+      resolveCommonTransformations<TFieldType>(fields, 'default'),
   }),
   rest: Transformer<TFieldType, TFieldType>('rest', {
     replaceFields: ({ fields }) =>
-      resolveCommonTransformations<TFieldType>(fields),
+      resolveCommonTransformations<TFieldType>(fields, 'rest'),
   }),
   graphql: Transformer<TFieldType, TFieldTypeGraphql>('graphql', {
     replaceFields: ({ fields }) => ({
-      ...resolveCommonTransformations<TFieldTypeGraphql>(fields),
+      ...resolveCommonTransformations<TFieldTypeGraphql>(fields, 'graphql'),
       __typename: graphqlTypenameByFieldTypeName[fields.name],
     }),
   }),
