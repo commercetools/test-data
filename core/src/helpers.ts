@@ -13,7 +13,7 @@ import type {
   TTransformType,
   TTransformBuildName,
   TSpecializedBuilder,
-  TModelInitializerConfig,
+  TModelFieldsConfig,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -189,7 +189,7 @@ const createSpecializedTransformers = <TModel>({
 };
 
 type TCreateSpecializedBuilderParams<TModel> = {
-  initializationConfig: TModelInitializerConfig<TModel>;
+  modelFieldsConfig: TModelFieldsConfig<TModel>;
   type: 'rest' | 'graphql';
   buildFields?: (keyof TModel)[];
   name: string;
@@ -200,14 +200,14 @@ const createSpecializedBuilder = <TModel>(
   const modelBuilder = Builder<TModel>({
     type: params.type,
     generator: Generator<TModel>({
-      fields: params.initializationConfig.fields,
+      fields: params.modelFieldsConfig.fields,
     }),
     name: params.name,
     transformers: createSpecializedTransformers<TModel>({
       type: params.type,
       buildFields: params.buildFields,
     }),
-    postBuild: params.initializationConfig.postBuild,
+    postBuild: params.modelFieldsConfig.postBuild,
   });
 
   return modelBuilder as TSpecializedBuilder<TModel>;

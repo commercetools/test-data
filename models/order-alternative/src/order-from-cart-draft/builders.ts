@@ -4,7 +4,7 @@ import {
   TOrderFromCartDraftGraphql,
   TOrderFromCartDraftRest,
 } from '../types';
-import { restInitializers, graphqlInitializers } from './initializers';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
 export const RestModelBuilder: TCreateOrderBuilder<
   TOrderFromCartDraftRest
@@ -12,7 +12,7 @@ export const RestModelBuilder: TCreateOrderBuilder<
   createSpecializedBuilder({
     name: 'OrderFromCartDraftRestBuilder',
     type: 'rest',
-    initializationConfig: restInitializers,
+    modelFieldsConfig: restFieldsConfig,
   });
 
 export const GraphqlModelBuilder: TCreateOrderBuilder<
@@ -21,5 +21,5 @@ export const GraphqlModelBuilder: TCreateOrderBuilder<
   createSpecializedBuilder({
     name: 'OrderFromCartDraftGraphqlBuilder',
     type: 'graphql',
-    initializationConfig: graphqlInitializers,
+    modelFieldsConfig: graphqlFieldsConfig,
   });

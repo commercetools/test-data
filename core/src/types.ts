@@ -128,13 +128,13 @@ export type TRestTransformer<
   Model,
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
-export type TModelInitializerConfig<TModel> = {
+export type TModelFieldsConfig<TModel> = {
   fields: Record<keyof TModel, Field>;
   postBuild?: (mode: TModel) => Partial<TModel>;
 };
 
 export type TBuilderOptions<Model> = {
-  initializerConfig?: TModelInitializerConfig<Model>;
+  initializerConfig?: TModelFieldsConfig<Model>;
   generator?: TGeneratorResult<Model>;
   transformers?: {
     [Key in TTransformType]?: TTransformer<Model>;

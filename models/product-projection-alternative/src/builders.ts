@@ -1,5 +1,5 @@
 import { createSpecializedBuilder } from '@commercetools-test-data/core';
-import { graphqlInitializers, restInitializers } from './initializers';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
   TCreateProductProjectionBuilder,
   TProductProjectionRest,
@@ -12,7 +12,7 @@ export const RestModelBuilder: TCreateProductProjectionBuilder<
   return createSpecializedBuilder({
     name: 'ProductProjectionRestBuilder',
     type: 'rest',
-    initializationConfig: restInitializers,
+    modelFieldsConfig: restFieldsConfig,
   });
 };
 
@@ -22,6 +22,6 @@ export const GraphqlModelBuilder: TCreateProductProjectionBuilder<
   return createSpecializedBuilder({
     name: 'ProductProjectionGraphqlBuilder',
     type: 'graphql',
-    initializationConfig: graphqlInitializers,
+    modelFieldsConfig: graphqlFieldsConfig,
   });
 };

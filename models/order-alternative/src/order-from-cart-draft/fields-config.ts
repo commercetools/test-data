@@ -3,12 +3,12 @@ import {
   fake,
   oneOf,
   sequence,
-  TModelInitializerConfig,
+  TModelFieldsConfig,
 } from '@commercetools-test-data/core';
 import { orderState, paymentState, shipmentState } from '../constants';
 import { TOrderFromCartDraftRest } from '../types';
 
-const commonFieldsInitializers = {
+const commonFieldsConfig = {
   id: null,
   cart: fake(() => ReferenceDraft.random().typeId('cart')),
   version: sequence(),
@@ -21,12 +21,11 @@ const commonFieldsInitializers = {
   custom: null,
 };
 
-export const restInitializers: TModelInitializerConfig<TOrderFromCartDraftRest> =
-  {
-    fields: { ...commonFieldsInitializers },
-  };
+export const restFieldsConfig: TModelFieldsConfig<TOrderFromCartDraftRest> = {
+  fields: { ...commonFieldsConfig },
+};
 
-export const graphqlInitializers: TModelInitializerConfig<TOrderFromCartDraftRest> =
+export const graphqlFieldsConfig: TModelFieldsConfig<TOrderFromCartDraftRest> =
   {
-    fields: { ...commonFieldsInitializers },
+    fields: { ...commonFieldsConfig },
   };

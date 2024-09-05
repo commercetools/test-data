@@ -4,7 +4,7 @@ import {
   Reference,
 } from '@commercetools-test-data/commons';
 import {
-  TModelInitializerConfig,
+  TModelFieldsConfig,
   fake,
   sequence,
 } from '@commercetools-test-data/core';
@@ -15,7 +15,7 @@ import { TProductProjectionGraphql, TProductProjectionRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const commonFieldsInitializers = {
+const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   key: fake((f) => f.lorem.words()),
   version: sequence(),
@@ -33,27 +33,26 @@ const commonFieldsInitializers = {
   priceMode: null,
 };
 
-export const restInitializers: TModelInitializerConfig<TProductProjectionRest> =
-  {
-    fields: {
-      ...commonFieldsInitializers,
-      productType: fake(() =>
-        Reference.random().typeId('product-type').obj(ProductType.random())
-      ),
-      name: fake(() => LocalizedString.random()),
-      description: fake(() => LocalizedString.random()),
-      slug: fake(() => LocalizedString.presets.ofSlugs()),
-      metaTitle: null,
-      metaDescription: null,
-      metaKeywords: null,
-      categoryOrderHints: null,
-    },
-  };
+export const restFieldsConfig: TModelFieldsConfig<TProductProjectionRest> = {
+  fields: {
+    ...commonFieldsConfig,
+    productType: fake(() =>
+      Reference.random().typeId('product-type').obj(ProductType.random())
+    ),
+    name: fake(() => LocalizedString.random()),
+    description: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
+    metaTitle: null,
+    metaDescription: null,
+    metaKeywords: null,
+    categoryOrderHints: null,
+  },
+};
 
-export const graphqlInitializers: TModelInitializerConfig<TProductProjectionGraphql> =
+export const graphqlFieldsConfig: TModelFieldsConfig<TProductProjectionGraphql> =
   {
     fields: {
-      ...commonFieldsInitializers,
+      ...commonFieldsConfig,
       productType: fake(() => ProductType.random()),
       productTypeRef: fake(() => Reference.random().typeId('product-type')),
       name: fake((f) => f.lorem.words(3)),

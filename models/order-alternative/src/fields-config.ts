@@ -11,7 +11,7 @@ import {
   fake,
   oneOf,
   sequence,
-  TModelInitializerConfig,
+  TModelFieldsConfig,
 } from '@commercetools-test-data/core';
 import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
@@ -33,7 +33,7 @@ import { TOrderGraphql, TOrderRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const commonFieldsInitializers = {
+const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   key: fake((f) => f.lorem.words()),
   version: sequence(),
@@ -81,9 +81,9 @@ const commonFieldsInitializers = {
   lastMessageSequenceNumber: null,
 };
 
-export const restInitializers: TModelInitializerConfig<TOrderRest> = {
+export const restFieldsConfig: TModelFieldsConfig<TOrderRest> = {
   fields: {
-    ...commonFieldsInitializers,
+    ...commonFieldsConfig,
     businessUnit: fake(() =>
       Reference.presets.businessUnitReference().obj(Company.random())
     ),
@@ -100,9 +100,9 @@ export const restInitializers: TModelInitializerConfig<TOrderRest> = {
   },
 };
 
-export const graphqlInitializers: TModelInitializerConfig<TOrderGraphql> = {
+export const graphqlFieldsConfig: TModelFieldsConfig<TOrderGraphql> = {
   fields: {
-    ...commonFieldsInitializers,
+    ...commonFieldsConfig,
     businessUnit: fake(() => Company.random()),
     businessUnitRef: fake(() => Reference.presets.businessUnitReference()),
     cart: fake(() => Cart.random()),

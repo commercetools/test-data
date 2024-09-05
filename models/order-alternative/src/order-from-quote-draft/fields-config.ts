@@ -1,16 +1,12 @@
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
-import {
-  fake,
-  oneOf,
-  TModelInitializerConfig,
-} from '@commercetools-test-data/core';
+import { fake, oneOf, TModelFieldsConfig } from '@commercetools-test-data/core';
 import { orderState, paymentState, shipmentState } from '../constants';
 import {
   TOrderFromQuoteDraftGraphql,
   TOrderFromQuoteDraftRest,
 } from '../types';
 
-const commonFieldsInitializers = {
+const commonFieldsConfig = {
   quote: fake(() => KeyReferenceDraft.random().typeId('quote')),
   version: fake((f) => f.number.int()),
   quoteStateToAccepted: fake((f) => f.datatype.boolean()),
@@ -21,12 +17,11 @@ const commonFieldsInitializers = {
   state: fake(() => KeyReferenceDraft.random().typeId('state')),
 };
 
-export const restInitializers: TModelInitializerConfig<TOrderFromQuoteDraftRest> =
-  {
-    fields: commonFieldsInitializers,
-  };
+export const restFieldsConfig: TModelFieldsConfig<TOrderFromQuoteDraftRest> = {
+  fields: commonFieldsConfig,
+};
 
-export const graphqlInitializers: TModelInitializerConfig<TOrderFromQuoteDraftGraphql> =
+export const graphqlFieldsConfig: TModelFieldsConfig<TOrderFromQuoteDraftGraphql> =
   {
-    fields: commonFieldsInitializers,
+    fields: commonFieldsConfig,
   };
