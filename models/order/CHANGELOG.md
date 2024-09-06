@@ -1,5 +1,23 @@
 # @commercetools-test-data/order
 
+## 10.6.0
+
+### Minor Changes
+
+- [#669](https://github.com/commercetools/test-data/pull/669) [`bdd7383`](https://github.com/commercetools/test-data/commit/bdd7383e4b6fc06ffbef508be5e5d7de1d602249) Thanks [@antoniolodias](https://github.com/antoniolodias)! - Improved `order` test model and added the following new models: `delivery`, `delivery-item`, `line-item-return-item`, `parcel`, `parcel-measurements`, `return-info` and `tracking-data`
+
+### Patch Changes
+
+- Updated dependencies [[`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8)]:
+  - @commercetools-test-data/commons@10.6.0
+  - @commercetools-test-data/cart@10.6.0
+  - @commercetools-test-data/cart-discount@10.6.0
+  - @commercetools-test-data/customer@10.6.0
+  - @commercetools-test-data/customer-group@10.6.0
+  - @commercetools-test-data/quote@10.6.0
+  - @commercetools-test-data/core@10.6.0
+  - @commercetools-test-data/utils@10.6.0
+
 ## 10.5.2
 
 ### Patch Changes
