@@ -1,5 +1,18 @@
 # @commercetools-test-data/type
 
+## 10.6.0
+
+### Minor Changes
+
+- [#666](https://github.com/commercetools/test-data/pull/666) [`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8) Thanks [@antoniolodias](https://github.com/antoniolodias)! - Add `enum-value`, `localized-enum-value` and `field-type` test data models
+
+### Patch Changes
+
+- Updated dependencies [[`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8)]:
+  - @commercetools-test-data/commons@10.6.0
+  - @commercetools-test-data/core@10.6.0
+  - @commercetools-test-data/utils@10.6.0
+
 ## 10.5.2
 
 ### Patch Changes
