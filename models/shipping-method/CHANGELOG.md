@@ -1,5 +1,16 @@
 # @commercetools-test-data/shipping-method
 
+## 10.6.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.6.1
+  - @commercetools-test-data/commons@10.6.1
+  - @commercetools-test-data/tax-category@10.6.1
+  - @commercetools-test-data/zone@10.6.1
+  - @commercetools-test-data/utils@10.6.1
+
 ## 10.6.0
 
 ### Patch Changes
