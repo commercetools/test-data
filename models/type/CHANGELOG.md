@@ -1,5 +1,16 @@
 # @commercetools-test-data/type
 
+## 10.6.1
+
+### Patch Changes
+
+- [#678](https://github.com/commercetools/test-data/pull/678) [`f38fb81`](https://github.com/commercetools/test-data/commit/f38fb815bdf44a877851ab5cfeb485658e72d284) Thanks [@antoniolodias](https://github.com/antoniolodias)! - export field type model
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.6.1
+  - @commercetools-test-data/commons@10.6.1
+  - @commercetools-test-data/utils@10.6.1
+
 ## 10.6.0
 
 ### Minor Changes

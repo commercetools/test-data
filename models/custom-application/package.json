@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/custom-application",
-  "version": "10.6.0",
+  "version": "10.6.1",
   "description": "Data model for internal Merchant Center API Custom Application",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -21,10 +21,10 @@
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-frontend/application-config": "^22.10.0",
     "@commercetools-frontend/constants": "^22.10.0",
-    "@commercetools-test-data/commons": "10.6.0",
-    "@commercetools-test-data/core": "10.6.0",
-    "@commercetools-test-data/graphql-types": "10.6.0",
-    "@commercetools-test-data/utils": "10.6.0",
+    "@commercetools-test-data/commons": "10.6.1",
+    "@commercetools-test-data/core": "10.6.1",
+    "@commercetools-test-data/graphql-types": "10.6.1",
+    "@commercetools-test-data/utils": "10.6.1",
     "@commercetools/platform-sdk": "7.12.0",
     "@faker-js/faker": "^8.0.0",
     "@types/lodash": "^4.14.182",

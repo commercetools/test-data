@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/quote-request",
-  "version": "10.6.0",
+  "version": "10.6.1",
   "description": "Data model for commercetools API QuoteRequest",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,14 +19,14 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/business-unit": "10.6.0",
-    "@commercetools-test-data/cart": "10.6.0",
-    "@commercetools-test-data/commons": "10.6.0",
-    "@commercetools-test-data/core": "10.6.0",
-    "@commercetools-test-data/customer": "10.6.0",
-    "@commercetools-test-data/customer-group": "10.6.0",
-    "@commercetools-test-data/store": "10.6.0",
-    "@commercetools-test-data/utils": "10.6.0",
+    "@commercetools-test-data/business-unit": "10.6.1",
+    "@commercetools-test-data/cart": "10.6.1",
+    "@commercetools-test-data/commons": "10.6.1",
+    "@commercetools-test-data/core": "10.6.1",
+    "@commercetools-test-data/customer": "10.6.1",
+    "@commercetools-test-data/customer-group": "10.6.1",
+    "@commercetools-test-data/store": "10.6.1",
+    "@commercetools-test-data/utils": "10.6.1",
     "@commercetools/platform-sdk": "7.12.0",
     "@faker-js/faker": "^8.0.0"
   }
