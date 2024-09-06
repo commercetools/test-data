@@ -25,6 +25,7 @@ const transformers = {
         results: fields.values!.map((value) =>
           buildField(value, 'graphql')
         ) as unknown as Array<TAttributeLocalizedEnumValueGraphql>,
+        total: fields.values.length,
         __typename: 'LocalizableEnumValueTypeResult',
       },
       __typename: 'LocalizableEnumAttributeDefinitionType',
