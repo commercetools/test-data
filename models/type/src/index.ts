@@ -13,6 +13,7 @@ export * from './custom-field-reference-type/types';
 export * from './custom-field-set-type/types';
 export * from './custom-field-string-type/types';
 export * from './custom-field-time-type/types';
+export * from './field-definition/types';
 
 // Export models
 export * as CustomFieldBooleanType from './custom-field-boolean-type';
