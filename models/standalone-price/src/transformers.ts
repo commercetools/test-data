@@ -11,19 +11,6 @@ import type {
 } from './types';
 
 const transformers = {
-  default: Transformer<TStandalonePrice, TStandalonePrice>('default', {
-    buildFields: [
-      'lastModifiedBy',
-      'createdBy',
-      'value',
-      'customerGroup',
-      'channel',
-      'tiers',
-      'custom',
-      'discounted',
-      'staged',
-    ],
-  }),
   rest: Transformer<TStandalonePrice, TStandalonePriceRest>('rest', {
     buildFields: [
       'lastModifiedBy',
@@ -54,6 +41,8 @@ const transformers = {
             .buildRest<TReference<'channel'>>()
         : undefined;
 
+      const mainCurrency = fields.value.currencyCode;
+
       const adjustedFields = {
         ...rest,
         customerGroup,
@@ -64,18 +53,20 @@ const transformers = {
               ...tier,
               value: {
                 ...tier.value,
-                currencyCode: fields.value.currencyCode,
+                currencyCode: mainCurrency,
               },
             }))
           : undefined,
         staged: fields.staged
           ? {
+              ...fields.staged,
               value: {
                 ...fields.staged.value,
-                currencyCode: fields.value.currencyCode,
+                currencyCode: mainCurrency,
               },
             }
           : undefined,
+        discounted: fields.discounted || undefined,
       };
 
       return adjustedFields;
@@ -108,29 +99,34 @@ const transformers = {
             .buildGraphql<TReferenceGraphql<'channel'>>()
         : null;
 
-      const adjustedFields = {
+      const mainCurrency = fields.value.currencyCode;
+
+      const adjustedFields: TStandalonePriceGraphql = {
         ...fields,
         __typename: 'StandalonePrice' as const,
         customerGroupRef,
         channelRef,
+        custom: fields.custom || null,
         // Currency sync
         tiers: fields.tiers
           ? fields.tiers.map((tier) => ({
               ...tier,
               value: {
                 ...tier.value,
-                currencyCode: fields.value.currencyCode,
+                currencyCode: mainCurrency,
               },
             }))
-          : undefined,
+          : null,
         staged: fields.staged
           ? {
+              ...fields.staged,
               value: {
                 ...fields.staged.value,
-                currencyCode: fields.value.currencyCode,
+                currencyCode: mainCurrency,
               },
             }
-          : undefined,
+          : null,
+        discounted: fields.discounted || null,
       };
 
       return adjustedFields;
