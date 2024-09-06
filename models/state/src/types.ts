@@ -6,8 +6,8 @@ export type TState = State;
 export type TStateDraft = StateDraft;
 
 export type TStateGraphql = Omit<TState, 'name' | 'description'> & {
-  name?: string;
-  description?: string;
+  name?: string | null;
+  description?: string | null;
   nameAllLocales?: TLocalizedStringGraphql | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   __typename: 'State';
