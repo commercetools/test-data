@@ -11,6 +11,19 @@ import type {
 } from './types';
 
 const transformers = {
+  default: Transformer<TStandalonePrice, TStandalonePrice>('default', {
+    buildFields: [
+      'lastModifiedBy',
+      'createdBy',
+      'value',
+      'customerGroup',
+      'channel',
+      'tiers',
+      'custom',
+      'discounted',
+      'staged',
+    ],
+  }),
   rest: Transformer<TStandalonePrice, TStandalonePriceRest>('rest', {
     buildFields: [
       'lastModifiedBy',
