@@ -49,7 +49,7 @@ describe(`with standardTax preset`, () => {
           {
             "amount": 0.2,
             "country": "US",
-            "includedInPrice": true,
+            "includedInPrice": false,
             "key": "vat-standard-us",
             "name": "Standard VAT for US",
             "state": undefined,
@@ -126,7 +126,7 @@ describe(`with standardTax preset`, () => {
           {
             "amount": 0.2,
             "country": "US",
-            "includedInPrice": true,
+            "includedInPrice": false,
             "key": "vat-standard-us",
             "name": "Standard VAT for US",
             "state": undefined,
