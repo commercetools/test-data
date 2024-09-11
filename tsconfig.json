@@ -13,5 +13,5 @@
     "resolveJsonModule": true,
     "allowJs": false
   },
-  "files": ["global.d.ts"]
+  "typeRoots": ["./node_modules/@types", "./global.d.ts"]
 }
