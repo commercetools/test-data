@@ -7,12 +7,24 @@ import type { TBuilder } from '@commercetools-test-data/core';
 export type TCartDiscountValueAbsolute = CartDiscountValueAbsolute;
 export type TCartDiscountValueAbsoluteDraft = CartDiscountValueAbsoluteDraft;
 
-export type TCartDiscountValueAbsoluteGraphql = TCartDiscountValueAbsolute & {
+export type TCartDiscountValueAbsoluteGraphql = Omit<
+  TCartDiscountValueAbsolute,
+  'applicationMode'
+> & {
   __typename: 'AbsoluteDiscountValue';
 };
 
+export type TCartDiscountValueAbsoluteCartGraphql =
+  Required<TCartDiscountValueAbsolute> & {
+    __typename: 'AbsoluteCartDiscountValue';
+  };
+
 export type TCartDiscountValueAbsoluteDraftGraphql = {
-  absolute: Omit<TCartDiscountValueAbsoluteDraft, 'type'>;
+  absolute: Omit<TCartDiscountValueAbsoluteDraft, 'type' | 'applicationMode'>;
+};
+
+export type TCartDiscountValueAbsoluteCartDraftGraphql = {
+  absoluteCart: Required<Omit<TCartDiscountValueAbsoluteDraft, 'type'>>;
 };
 
 export type TCartDiscountValueAbsoluteBuilder =
