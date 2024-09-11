@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
-    "allowJs": false,
-    "types": ["jest", "jest-extended"]
-  }
+    "allowJs": false
+  },
+  "files": ["global.d.ts"]
 }
