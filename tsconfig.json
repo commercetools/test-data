@@ -12,6 +12,5 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "allowJs": false
-  },
-  "typeRoots": ["./node_modules/@types", "./global.d.ts"]
+  }
 }
