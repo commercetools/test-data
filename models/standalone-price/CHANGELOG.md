@@ -1,5 +1,21 @@
 # @commercetools-test-data/standalone-price
 
+## 10.7.0
+
+### Minor Changes
+
+- [#680](https://github.com/commercetools/test-data/pull/680) [`828909f`](https://github.com/commercetools/test-data/commit/828909f10c8cbe5fb5ff69e9017e75fc9b8d85f8) Thanks [@nima-ct](https://github.com/nima-ct)! - Improvments on the StandalonePrice model. Added currency sync between properties, limitations on price tiers, and alignments with GQL schemas
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.0
+  - @commercetools-test-data/channel@10.7.0
+  - @commercetools-test-data/commons@10.7.0
+  - @commercetools-test-data/customer-group@10.7.0
+  - @commercetools-test-data/product@10.7.0
+  - @commercetools-test-data/utils@10.7.0
+
 ## 10.6.1
 
 ### Patch Changes
