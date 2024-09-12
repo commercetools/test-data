@@ -1,8 +1,11 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { faker } from '@faker-js/faker';
+import { applicationModes } from './constants';
 import type {
   TCartDiscountValueAbsolute,
+  TCartDiscountValueAbsoluteCartGraphql,
   TCartDiscountValueAbsoluteGraphql,
 } from './types';
 import * as CartDiscountValueAbsolute from './index';
@@ -45,7 +48,8 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<
+    'should build properties for AbsoluteDiscountValue "graphql"',
+    createBuilderSpec<
       TCartDiscountValueAbsolute,
       TCartDiscountValueAbsoluteGraphql
     >(
@@ -60,6 +64,29 @@ describe('builder', () => {
         ]),
         __typename: 'AbsoluteDiscountValue',
       })
-    )
+    )[1]
+  );
+
+  it(
+    'should build properties for AbsoluteCartDiscountValue "graphql"',
+    createBuilderSpec<
+      TCartDiscountValueAbsolute,
+      TCartDiscountValueAbsoluteCartGraphql
+    >(
+      'graphql',
+      CartDiscountValueAbsolute.random().applicationMode(
+        faker.helpers.arrayElement(applicationModes)
+      ),
+      expect.objectContaining({
+        type: 'absolute',
+        money: expect.arrayContaining([
+          expect.objectContaining({
+            type: 'centPrecision',
+          }),
+        ]),
+        applicationMode: expect.toBeOneOf(applicationModes),
+        __typename: 'AbsoluteCartDiscountValue',
+      })
+    )[1]
   );
 });
