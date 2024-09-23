@@ -1,5 +1,14 @@
 import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
+import { buildField, Transformer } from '@commercetools-test-data/core';
+import {
+  ProductType,
+  TProductTypeGraphql,
+} from '@commercetools-test-data/product-type';
+import { TStateGraphql, State } from '@commercetools-test-data/state';
+import {
+  TaxCategory,
+  TTaxCategoryGraphql,
+} from '@commercetools-test-data/tax-category';
 import type { TProduct, TProductRest, TProductGraphql } from './types';
 
 const transformers = {
@@ -14,19 +23,6 @@ const transformers = {
     ],
   }),
   rest: Transformer<TProduct, TProductRest>('rest', {
-    buildFields: ['masterData', 'createdBy', 'lastModifiedBy'],
-    replaceFields: ({ fields }) => {
-      return {
-        ...fields,
-        productType: Reference.random().typeId('product-type').buildRest(),
-        taxCategory: Reference.random().typeId('tax-category').buildRest(),
-        state: fields.state
-          ? Reference.random().id(fields.state.id).typeId('state').buildRest()
-          : undefined,
-      };
-    },
-  }),
-  graphql: Transformer<TProduct, TProductGraphql>('graphql', {
     buildFields: [
       'productType',
       'masterData',
@@ -35,25 +31,61 @@ const transformers = {
       'createdBy',
       'lastModifiedBy',
     ],
-    addFields: ({ fields }) => {
-      const productTypeRef: TReferenceGraphql = Reference.random()
-        .id(fields.productType.id)
+  }),
+  graphql: Transformer<TProduct, TProductGraphql>('graphql', {
+    buildFields: ['masterData', 'state', 'createdBy', 'lastModifiedBy'],
+    replaceFields: ({ fields }) => {
+      const restProductType = buildField(fields.productType, 'rest');
+      const productType = ProductType.random()
+        .id(restProductType.id)
+        .key(restProductType.obj!.key)
+        .name(restProductType.obj!.name)
+        .description(restProductType.obj!.description)
+        .buildGraphql<TProductTypeGraphql>();
+      const productTypeRef = Reference.random()
+        .id(restProductType.id)
         .typeId('product-type')
-        .buildGraphql();
+        .buildGraphql<TReferenceGraphql>();
 
-      const stateRef: TReferenceGraphql = Reference.random()
-        .id(fields.productType.id)
-        .typeId('state')
-        .buildGraphql();
+      let state: TStateGraphql | undefined;
+      let stateRef: TReferenceGraphql | undefined;
+      let taxCategory: TTaxCategoryGraphql | undefined;
+      let taxCategoryRef: TReferenceGraphql | undefined;
 
-      const taxCategoryRef: TReferenceGraphql = Reference.random()
-        .id(fields.productType.id)
-        .typeId('tax-category')
-        .buildGraphql();
+      if (fields.state) {
+        const restStateRef = buildField(fields.state, 'rest');
+        stateRef = Reference.presets
+          .stateReference()
+          .id(restStateRef.id)
+          .buildGraphql<TReferenceGraphql>();
+        state = State.random()
+          .id(restStateRef.id)
+          .key(restStateRef.obj!.key)
+          .name(restStateRef.obj!.name)
+          .buildGraphql<TStateGraphql>();
+      }
+
+      if (fields.taxCategory) {
+        const restTaxCategoryRef = buildField(fields.taxCategory, 'rest');
+        taxCategoryRef = Reference.presets
+          .taxCategoryReference()
+          .id(restTaxCategoryRef.id)
+          .buildGraphql<TReferenceGraphql>();
+        taxCategory = TaxCategory.random()
+          .id(restTaxCategoryRef.id)
+          .key(restTaxCategoryRef.obj!.key)
+          .name(restTaxCategoryRef.obj!.name)
+          .description(restTaxCategoryRef.obj!.description)
+          .buildGraphql<TTaxCategoryGraphql>();
+      }
 
       return {
+        ...fields,
+        productType,
         productTypeRef,
+        state,
         stateRef,
+        taxCategory,
         taxCategoryRef,
         __typename: 'Product',
       };

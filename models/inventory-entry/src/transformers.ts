@@ -1,9 +1,10 @@
+import { Channel, TChannelGraphql } from '@commercetools-test-data/channel';
 import {
+  LocalizedString,
   Reference,
-  TReference,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
+import { buildField, Transformer } from '@commercetools-test-data/core';
 import type {
   TInventoryEntry,
   TInventoryEntryRest,
@@ -16,26 +17,36 @@ const transformers = {
   }),
   rest: Transformer<TInventoryEntry, TInventoryEntryRest>('rest', {
     buildFields: ['supplyChannel'],
+  }),
+  graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
     replaceFields: ({ fields }) => {
-      const supplyChannel = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .build<TReference<'channel'>>();
+      let supplyChannel: TChannelGraphql | undefined = undefined;
+      let supplyChannelRef: TReferenceGraphql | undefined = undefined;
+
+      if (fields.supplyChannel) {
+        const restSupplyChannelRef = buildField(fields.supplyChannel, 'rest');
+
+        supplyChannelRef = Reference.presets
+          .channelReference()
+          .id(restSupplyChannelRef.id)
+          .buildGraphql<TReferenceGraphql>();
+
+        supplyChannel = Channel.random()
+          .description(restSupplyChannelRef.obj!.description)
+          .id(restSupplyChannelRef.id)
+          .key(restSupplyChannelRef.obj!.key)
+          .name(
+            LocalizedString.presets
+              .empty()
+              .en(restSupplyChannelRef.obj!.name?.en)
+              .de(restSupplyChannelRef.obj!.name?.de)
+          )
+          .buildGraphql<TChannelGraphql>();
+      }
+
       return {
         ...fields,
         supplyChannel,
-      };
-    },
-  }),
-  graphql: Transformer<TInventoryEntry, TInventoryEntryGraphql>('graphql', {
-    buildFields: ['supplyChannel'],
-    replaceFields: ({ fields }) => {
-      const supplyChannelRef = Reference.presets
-        .channelReference()
-        .id(fields.supplyChannel.id)
-        .buildGraphql<TReferenceGraphql<'channel'>>();
-      return {
-        ...fields,
         supplyChannelRef,
         __typename: 'InventoryEntry',
       };

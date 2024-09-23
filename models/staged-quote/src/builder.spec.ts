@@ -20,22 +20,33 @@ describe('builder', () => {
         key: expect.any(String),
         stagedQuoteState: expect.any(String),
         customer: expect.objectContaining({
-          email: expect.any(String),
+          id: expect.any(String),
+          typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
         }),
         quoteRequest: expect.objectContaining({
-          quoteRequestState: expect.any(String),
+          id: expect.any(String),
+          typeId: 'quote-request',
+          obj: expect.objectContaining({
+            quoteRequestState: expect.any(String),
+          }),
         }),
         quotationCart: expect.objectContaining({
-          cartState: expect.any(String),
+          id: expect.any(String),
+          typeId: 'cart',
+          obj: expect.objectContaining({
+            cartState: expect.any(String),
+          }),
         }),
         validTo: expect.any(String),
         sellerComment: expect.any(String),
         state: null,
         purchaseOrderNumber: null,
         businessUnit: expect.objectContaining({
-          id: expect.any(String),
           key: expect.any(String),
-          associateMode: expect.any(String),
+          typeId: 'business-unit',
         }),
         custom: null,
         createdAt: expect.any(String),
@@ -61,18 +72,30 @@ describe('builder', () => {
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
         }),
         quoteRequest: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'quote-request',
+          obj: expect.objectContaining({
+            quoteRequestState: expect.any(String),
+          }),
         }),
         quotationCart: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'cart',
+          obj: expect.objectContaining({
+            cartState: expect.any(String),
+          }),
         }),
         validTo: expect.any(String),
         sellerComment: expect.any(String),
-        state: undefined,
+        state: null,
         purchaseOrderNumber: null,
         businessUnit: expect.objectContaining({
+          key: expect.any(String),
           typeId: 'business-unit',
         }),
         custom: null,
@@ -119,7 +142,7 @@ describe('builder', () => {
         }),
         validTo: expect.any(String),
         sellerComment: expect.any(String),
-        state: null,
+        state: undefined,
         stateRef: undefined,
         purchaseOrderNumber: null,
         businessUnit: expect.objectContaining({

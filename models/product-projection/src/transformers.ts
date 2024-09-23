@@ -1,13 +1,21 @@
+import { Category, TCategoryGraphql } from '@commercetools-test-data/category';
 import {
   LocalizedString,
-  Reference,
   type TReferenceGraphql,
 } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
-import { State, TState } from '@commercetools-test-data/state';
+import {
+  Transformer,
+  buildField,
+  buildFields,
+} from '@commercetools-test-data/core';
+import {
+  ProductType,
+  TProductTypeGraphql,
+} from '@commercetools-test-data/product-type';
+import { State, TStateGraphql } from '@commercetools-test-data/state';
 import {
   TaxCategory,
-  TTaxCategory,
+  TTaxCategoryGraphql,
 } from '@commercetools-test-data/tax-category';
 import type {
   TCategoryOrderHintGraphql,
@@ -43,7 +51,6 @@ const transformers = {
       'description',
       'slug',
       'categories',
-      'categoryOrderHints',
       'metaTitle',
       'metaDescription',
       'metaKeywords',
@@ -56,14 +63,7 @@ const transformers = {
   graphql: Transformer<TProductProjection, TProductProjectionGraphql>(
     'graphql',
     {
-      buildFields: [
-        'productType',
-        'categories',
-        'masterVariant',
-        'variants',
-        'taxCategory',
-        'state',
-      ],
+      buildFields: ['masterVariant', 'variants'],
       replaceFields: ({ fields }) => {
         const nameAllLocales = LocalizedString.toLocalizedField(fields.name)!;
         const descriptionAllLocales = LocalizedString.toLocalizedField(
@@ -79,35 +79,69 @@ const transformers = {
         const metaDescriptionAllLocales = LocalizedString.toLocalizedField(
           fields.metaDescription
         );
-        const productTypeRef = Reference.random()
-          .id(fields.productType.id)
-          .typeId('product-type')
-          .buildGraphql<TReferenceGraphql>();
-        const state = fields.state
-          ? State.random().id(fields.productType.id).buildGraphql<TState>()
-          : undefined;
-        const stateRef = fields.state
-          ? Reference.random()
-              .id(fields.productType.id)
-              .typeId('state')
-              .buildGraphql<TReferenceGraphql>()
-          : undefined;
-        const taxCategory = fields.taxCategory
-          ? TaxCategory.random()
-              .id(fields.productType.id)
-              .buildGraphql<TTaxCategory>()
-          : undefined;
-        const taxCategoryRef = fields.taxCategory
-          ? Reference.random()
-              .id(fields.productType.id)
-              .typeId('tax-category')
-              .buildGraphql<TReferenceGraphql>()
-          : undefined;
-        const categoriesRef = fields.categories.map((category) => ({
-          id: category.id,
-          typeId: 'category' as const,
-          __typename: 'Reference' as const,
-        }));
+
+        const restProductType = buildField(fields.productType, 'rest');
+        const productTypeRef = buildField(
+          fields.productType,
+          'graphql'
+        ) as TReferenceGraphql;
+        const productType = ProductType.random()
+          .description(restProductType.obj?.description || '')
+          .id(restProductType.id)
+          .key(restProductType.obj?.key || '')
+          .name(restProductType.obj?.name || '')
+          .buildGraphql<TProductTypeGraphql>();
+
+        let state: TStateGraphql | null = null;
+        let stateRef: TReferenceGraphql | null = null;
+        if (fields.state) {
+          const restState = buildField(fields.state, 'rest');
+          stateRef = buildField(fields.state, 'graphql') as TReferenceGraphql;
+          state = State.random()
+            .id(restState.id)
+            .key(restState.obj?.key || '')
+            .version(restState.obj?.version || 1)
+            .type(restState.obj?.type || 'unknown')
+            .buildGraphql<TStateGraphql>();
+        }
+
+        let taxCategory: TTaxCategoryGraphql | null = null;
+        let taxCategoryRef: TReferenceGraphql | null = null;
+        if (fields.taxCategory) {
+          const restTaxCategory = buildField(fields.taxCategory, 'rest');
+          taxCategory = TaxCategory.random()
+            .id(restTaxCategory.id)
+            .key(restTaxCategory.obj?.key || '')
+            .name(restTaxCategory.obj?.name || '')
+            .description(restTaxCategory.obj?.description || '')
+            .version(restTaxCategory.obj?.version || 1)
+            .buildGraphql<TTaxCategoryGraphql>();
+          taxCategoryRef = buildField(
+            fields.taxCategory,
+            'graphql'
+          ) as TReferenceGraphql;
+        }
+
+        const categories = fields.categories
+          .map((category) => {
+            const restCategory = buildField(category, 'rest');
+            const categoryObj = restCategory.obj;
+            if (categoryObj) {
+              return Category.random()
+                .id(categoryObj.id)
+                .key(categoryObj.key || '')
+                .name(LocalizedString.presets.empty().en(categoryObj.name.en))
+                .version(categoryObj.version || 1)
+                .buildGraphql<TCategoryGraphql>();
+            }
+            return undefined;
+          })
+          .filter(Boolean) as TCategoryGraphql[];
+        const categoriesRef = buildFields(
+          fields.categories,
+          'graphql'
+        ) as TReferenceGraphql[];
+
         const categoryOrderHints: Array<TCategoryOrderHintGraphql> =
           Object.entries(fields.categoryOrderHints || {}).map(
             ([key, value]) => ({
@@ -116,6 +150,7 @@ const transformers = {
               __typename: 'CategoryOrderHint',
             })
           );
+
         const searchKeywords: Array<TSearchKeywords> = Object.entries(
           fields.searchKeywords || {}
         ).map(([locale, searchKeywords]) => ({
@@ -126,6 +161,7 @@ const transformers = {
           })),
           __typename: 'SearchKeywordsProductSearch',
         }));
+
         const reviewRatingStatistics = fields.reviewRatingStatistics
           ? {
               ...fields.reviewRatingStatistics,
@@ -136,7 +172,7 @@ const transformers = {
         return {
           ...fields,
           name: LocalizedString.resolveGraphqlDefaultLocaleValue(
-            nameAllLocales
+            nameAllLocales!
           )!,
           nameAllLocales,
           description: LocalizedString.resolveGraphqlDefaultLocaleValue(
@@ -161,11 +197,13 @@ const transformers = {
           ),
           metaDescriptionAllLocales,
           reviewRatingStatistics,
+          productType,
           productTypeRef,
           state,
           stateRef,
           taxCategory,
           taxCategoryRef,
+          categories,
           categoriesRef,
           categoryOrderHints,
           searchKeywords,

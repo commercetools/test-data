@@ -1,9 +1,9 @@
 import {
-  type TReference,
   type TReferenceGraphql,
   Reference,
 } from '@commercetools-test-data/commons';
-import { Transformer } from '@commercetools-test-data/core';
+import { buildField, Transformer } from '@commercetools-test-data/core';
+import { Customer, TCustomerGraphql } from '@commercetools-test-data/customer';
 import type {
   TAssociateDefault,
   TAssociateRest,
@@ -16,26 +16,30 @@ const transformers = {
   }),
   rest: Transformer<TAssociateDefault, TAssociateRest>('rest', {
     buildFields: ['associateRoleAssignments', 'customer'],
+  }),
+  graphql: Transformer<TAssociateDefault, TAssociateGraphql>('graphql', {
+    buildFields: ['associateRoleAssignments'],
     replaceFields: ({ fields }) => {
-      const customer: TReference<'customer'> = Reference.presets
+      const restCustomerRef = buildField(fields.customer, 'rest');
+
+      const customerRef = Reference.presets
         .customerReference()
-        .id(fields.customer.id)
-        .build();
+        .id(restCustomerRef.id)
+        .buildGraphql<TReferenceGraphql>();
+
+      const customer = Customer.random()
+        .id(restCustomerRef.id)
+        .firstName(restCustomerRef.obj?.firstName)
+        .lastName(restCustomerRef.obj?.lastName)
+        .key(restCustomerRef.obj?.key)
+        .customerNumber(restCustomerRef.obj?.customerNumber)
+        .externalId(restCustomerRef.obj?.externalId)
+        .email(restCustomerRef.obj?.email || '')
+        .buildGraphql<TCustomerGraphql>();
+
       return {
         ...fields,
         customer,
-      };
-    },
-  }),
-  graphql: Transformer<TAssociateDefault, TAssociateGraphql>('graphql', {
-    buildFields: ['associateRoleAssignments', 'customer'],
-    replaceFields: ({ fields }) => {
-      const customerRef: TReferenceGraphql = Reference.presets
-        .customerReference()
-        .id(fields.customer.id)
-        .buildGraphql();
-      return {
-        ...fields,
         customerRef,
         __typename: 'Associate',
       };

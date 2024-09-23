@@ -21,15 +21,23 @@ describe('builder', () => {
         quoteRequestState: expect.any(String),
         comment: null,
         customer: expect.objectContaining({
-          email: expect.any(String),
+          id: expect.any(String),
+          typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
         }),
         customerGroup: expect.objectContaining({
-          name: expect.any(String),
-          version: expect.any(Number),
+          id: expect.any(String),
+          typeId: 'customer-group',
+          obj: expect.objectContaining({
+            name: expect.any(String),
+            version: expect.any(Number),
+          }),
         }),
         store: expect.objectContaining({
-          id: expect.any(String),
           key: expect.any(String),
+          typeId: 'store',
         }),
         lineItems: expect.arrayContaining([
           expect.objectContaining({
@@ -71,12 +79,15 @@ describe('builder', () => {
         directDiscounts: expect.arrayContaining([]),
         state: null,
         cart: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'cart',
+          obj: expect.objectContaining({
+            taxMode: expect.any(String),
+          }),
         }),
         businessUnit: expect.objectContaining({
-          id: expect.any(String),
           key: expect.any(String),
-          associateMode: expect.any(String),
+          typeId: 'business-unit',
         }),
         custom: null,
         createdAt: expect.any(String),
@@ -90,6 +101,7 @@ describe('builder', () => {
       })
     )
   );
+
   it(
     ...createBuilderSpec<TQuoteRequest, TQuoteRequestRest>(
       'rest',
@@ -103,11 +115,20 @@ describe('builder', () => {
         customer: expect.objectContaining({
           id: expect.any(String),
           typeId: 'customer',
+          obj: expect.objectContaining({
+            email: expect.any(String),
+          }),
         }),
         customerGroup: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'customer-group',
+          obj: expect.objectContaining({
+            name: expect.any(String),
+            version: expect.any(Number),
+          }),
         }),
         store: expect.objectContaining({
+          key: expect.any(String),
           typeId: 'store',
         }),
         lineItems: expect.arrayContaining([
@@ -148,11 +169,16 @@ describe('builder', () => {
           }),
         ]),
         directDiscounts: expect.arrayContaining([]),
-        state: undefined,
+        state: null,
         cart: expect.objectContaining({
+          id: expect.any(String),
           typeId: 'cart',
+          obj: expect.objectContaining({
+            taxMode: expect.any(String),
+          }),
         }),
         businessUnit: expect.objectContaining({
+          key: expect.any(String),
           typeId: 'business-unit',
         }),
         custom: null,
@@ -238,8 +264,13 @@ describe('builder', () => {
           }),
         ]),
         directDiscounts: expect.arrayContaining([]),
-        state: null,
+        state: undefined,
         stateRef: undefined,
+        cart: expect.objectContaining({
+          id: expect.any(String),
+          taxMode: expect.any(String),
+          __typename: 'Cart',
+        }),
         cartRef: expect.objectContaining({
           typeId: 'cart',
           __typename: 'Reference',
@@ -247,7 +278,7 @@ describe('builder', () => {
         businessUnit: expect.objectContaining({
           id: expect.any(String),
           key: expect.any(String),
-          associateMode: expect.any(String),
+          name: expect.any(String),
         }),
         businessUnitRef: expect.objectContaining({
           typeId: 'business-unit',

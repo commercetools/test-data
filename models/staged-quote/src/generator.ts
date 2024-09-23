@@ -1,6 +1,9 @@
-import { Company } from '@commercetools-test-data/business-unit';
 import { Cart } from '@commercetools-test-data/cart';
-import { ClientLogging } from '@commercetools-test-data/commons';
+import {
+  ClientLogging,
+  KeyReference,
+  Reference,
+} from '@commercetools-test-data/commons';
 import {
   sequence,
   fake,
@@ -23,14 +26,20 @@ const generator = Generator<TStagedQuote>({
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     stagedQuoteState: oneOf(...Object.values(STAGED_QUOTE_STATE)),
-    customer: fake(() => Customer.random()),
-    quoteRequest: fake(() => QuoteRequest.random()),
-    quotationCart: fake(() => Cart.random()),
+    customer: fake(() =>
+      Reference.presets.customerReference().obj(Customer.random())
+    ),
+    quoteRequest: fake(() =>
+      Reference.presets.quoteRequestReference().obj(QuoteRequest.random())
+    ),
+    quotationCart: fake(() =>
+      Reference.presets.cartReference().obj(Cart.random())
+    ),
     validTo: fake(getFutureDate),
     sellerComment: fake((f) => f.lorem.words(5)),
     state: null,
     purchaseOrderNumber: null,
-    businessUnit: fake(() => Company.random()),
+    businessUnit: fake(() => KeyReference.presets.businessUnit()),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

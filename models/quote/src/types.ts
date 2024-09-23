@@ -1,23 +1,28 @@
-import type {
-  BusinessUnit,
-  Customer,
-  CustomerGroup,
-  Quote,
-  QuoteDraft,
-  QuoteRequest,
-  StagedQuote,
-  State,
-  Store,
-} from '@commercetools/platform-sdk';
+import type { Quote, QuoteDraft } from '@commercetools/platform-sdk';
+import {
+  TCompanyGraphql,
+  TDivisionGraphql,
+} from '@commercetools-test-data/business-unit';
 import {
   TReferenceGraphql,
   TKeyReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCustomerGraphql } from '@commercetools-test-data/customer';
+import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
+import { TQuoteRequestGraphql } from '@commercetools-test-data/quote-request';
+import { TStagedQuoteGraphql } from '@commercetools-test-data/staged-quote';
+import { TStateGraphql } from '@commercetools-test-data/state';
 
 // Default
-export type TQuote = Omit<
-  Quote,
+export type TQuote = Quote;
+
+// Rest
+export type TQuoteRest = Quote;
+export type TQuoteDraft = QuoteDraft;
+
+export type TQuoteGraphql = Omit<
+  TQuote,
   | 'businessUnit'
   | 'customer'
   | 'customerGroup'
@@ -26,27 +31,20 @@ export type TQuote = Omit<
   | 'state'
   | 'store'
 > & {
-  businessUnit: BusinessUnit;
-  customer: Customer;
-  customerGroup: CustomerGroup;
-  quoteRequest: QuoteRequest;
-  stagedQuote: StagedQuote;
-  state: State;
-  store: Store;
-};
-
-// Rest
-export type TQuoteRest = Quote;
-export type TQuoteDraft = QuoteDraft;
-
-export type TQuoteGraphql = TQuote & {
-  businessUnitRef: TKeyReferenceGraphql | null;
-  customerRef: TReferenceGraphql | null;
-  customerGroupRef: TReferenceGraphql | null;
-  quoteReqestRef: TReferenceGraphql;
+  businessUnit?: TCompanyGraphql | TDivisionGraphql;
+  businessUnitRef?: TKeyReferenceGraphql;
+  customer?: TCustomerGraphql;
+  customerRef?: TReferenceGraphql;
+  customerGroup?: TCustomerGroupGraphql;
+  customerGroupRef?: TReferenceGraphql;
+  quoteRequest: TQuoteRequestGraphql;
+  quoteRequestRef: TReferenceGraphql;
+  stagedQuote: TStagedQuoteGraphql;
   stagedQuoteRef: TReferenceGraphql;
-  stateRef: TReferenceGraphql | null;
-  storeRef: TKeyReferenceGraphql | null;
+  state?: TStateGraphql;
+  stateRef?: TReferenceGraphql;
+  store?: TReferenceGraphql;
+  storeRef?: TKeyReferenceGraphql;
   __typename: 'Quote';
 };
 export type TQuoteDraftGraphql = TQuoteDraft;

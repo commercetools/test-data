@@ -1,28 +1,21 @@
 import {
   StandalonePrice,
   StandalonePriceDraft,
-  CustomerGroup,
-  Channel,
   StagedStandalonePrice,
   PriceTier,
   CustomFields,
   DiscountedPrice,
 } from '@commercetools/platform-sdk';
+import { TChannelGraphql } from '@commercetools-test-data/channel';
 import {
   TMoneyGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCustomerGroupGraphql } from '@commercetools-test-data/customer-group';
 
 // Base representation
-export type TStandalonePrice = Omit<
-  StandalonePrice,
-  'customerGroup' | 'channel'
-> & {
-  customerGroup: CustomerGroup | null;
-  channel: Channel | null;
-  expiresAt: string | null;
-};
+export type TStandalonePrice = StandalonePrice;
 
 // REST representation
 export type TStandalonePriceRest = StandalonePrice;
@@ -31,14 +24,16 @@ export type TStandalonePriceDraft = StandalonePriceDraft;
 // Graphql representation
 export type TStandalonePriceGraphql = Omit<
   TStandalonePrice,
-  'staged' | 'tiers' | 'custom' | 'discounted'
+  'staged' | 'tiers' | 'custom' | 'discounted' | 'channel' | 'customerGroup'
 > & {
+  channel?: TChannelGraphql;
+  channelRef?: TReferenceGraphql;
+  customerGroup?: TCustomerGroupGraphql;
+  customerGroupRef?: TReferenceGraphql;
   tiers: PriceTier[] | null;
   staged: StagedStandalonePrice | null;
   custom: CustomFields | null;
   discounted: DiscountedPrice | null;
-  customerGroupRef: TReferenceGraphql | null;
-  channelRef: TReferenceGraphql | null;
   __typename: 'StandalonePrice';
 };
 

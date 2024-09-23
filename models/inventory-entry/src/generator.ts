@@ -1,4 +1,4 @@
-import { Channel } from '@commercetools-test-data/channel';
+import { Reference } from '@commercetools-test-data/commons';
 import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { TInventoryEntry } from './types';
@@ -17,7 +17,7 @@ const generator = Generator<TInventoryEntry>({
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: null,
     sku: fake((f) => f.lorem.words()),
-    supplyChannel: fake(() => Channel.random()),
+    supplyChannel: fake(() => Reference.presets.channelReference()),
     quantityOnStock: fake((f) => f.number.int()),
     availableQuantity: fake((f) => f.number.int()),
     restockableInDays: fake((f) => f.number.int()),

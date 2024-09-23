@@ -1,9 +1,10 @@
-import { Company } from '@commercetools-test-data/business-unit';
 import { LineItem } from '@commercetools-test-data/cart';
 import {
   CentPrecisionMoney,
   ClientLogging,
   Address,
+  Reference,
+  KeyReference,
 } from '@commercetools-test-data/commons';
 import {
   sequence,
@@ -15,7 +16,6 @@ import { Customer } from '@commercetools-test-data/customer';
 import { CustomerGroup } from '@commercetools-test-data/customer-group';
 import { QuoteRequest } from '@commercetools-test-data/quote-request';
 import { StagedQuote } from '@commercetools-test-data/staged-quote';
-import { Store } from '@commercetools-test-data/store';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import {
   QUOTE_STATE,
@@ -35,14 +35,22 @@ const generator = Generator<TQuote>({
     id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
-    quoteRequest: fake(() => QuoteRequest.random()),
-    stagedQuote: fake(() => StagedQuote.random()),
-    customer: fake(() => Customer.random()),
-    customerGroup: fake(() => CustomerGroup.random()),
+    quoteRequest: fake(() =>
+      Reference.presets.quoteRequestReference().obj(QuoteRequest.random())
+    ),
+    stagedQuote: fake(() =>
+      Reference.presets.stagedQuoteReference().obj(StagedQuote.random())
+    ),
+    customer: fake(() =>
+      Reference.presets.customerReference().obj(Customer.random())
+    ),
+    customerGroup: fake(() =>
+      Reference.presets.customerGroupReference().obj(CustomerGroup.random())
+    ),
     validTo: fake(getFutureDate),
     sellerComment: fake((f) => f.lorem.words(5)),
     buyerComment: fake((f) => f.lorem.words(5)),
-    store: fake(() => Store.random()),
+    store: fake(() => KeyReference.presets.store()),
     lineItems: fake(() => [LineItem.random()]),
     customLineItems: [],
     totalPrice: fake(() => CentPrecisionMoney.random()),
@@ -62,7 +70,10 @@ const generator = Generator<TQuote>({
     quoteState: oneOf(...Object.values(QUOTE_STATE)),
     state: null,
     purchaseOrderNumber: null,
-    businessUnit: fake(() => Company.random()),
+    businessUnit: fake(
+      () => KeyReference.presets.businessUnit().key('company')
+      // Reference.random().typeId('company').obj(Company.random())
+    ),
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

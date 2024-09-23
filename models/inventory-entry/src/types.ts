@@ -1,25 +1,24 @@
 import {
   InventoryEntry,
   InventoryEntryDraft,
-  Channel,
 } from '@commercetools/platform-sdk';
+import { TChannelGraphql } from '@commercetools-test-data/channel';
 import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Default
-export type TInventoryEntry = Omit<InventoryEntry, 'supplyChannel'> & {
-  supplyChannel: Channel;
-};
+export type TInventoryEntry = InventoryEntry;
 export type TInventoryEntryDraft = InventoryEntryDraft;
 
 // REST
-export type TInventoryEntryRest = InventoryEntry;
+export type TInventoryEntryRest = TInventoryEntry;
 export type TInventoryEntryDraftRest = InventoryEntryDraft;
 
 // GraphQL
-export type TInventoryEntryGraphql = TInventoryEntry & {
+export type TInventoryEntryGraphql = Omit<InventoryEntry, 'supplyChannel'> & {
   __typename: 'InventoryEntry';
-  supplyChannelRef: TReferenceGraphql;
+  supplyChannel?: TChannelGraphql;
+  supplyChannelRef?: TReferenceGraphql;
 };
 export type TInventoryEntryDraftGraphql = TInventoryEntryDraft;
 

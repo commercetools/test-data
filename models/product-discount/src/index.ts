@@ -3,6 +3,7 @@ export * from './product-discount/types';
 export * from './product-discount-value-absolute/types';
 export * from './product-discount-value-external/types';
 export * from './product-discount-value-relative/types';
+export * from './discounted-product-price/types';
 
 // Export models
 export * as ProductDiscount from './product-discount';
@@ -16,3 +17,6 @@ export * as ProductDiscountValueExternalDraft from './product-discount-value-ext
 
 export * as ProductDiscountValueRelative from './product-discount-value-relative';
 export * as ProductDiscountValueRelativeDraft from './product-discount-value-relative/product-discount-value-relative-draft';
+
+export * as DiscountedProductPrice from './discounted-product-price';
+export * as DiscountedProductPriceDraft from './discounted-product-price/discounted-product-price-draft';
