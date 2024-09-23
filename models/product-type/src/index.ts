@@ -50,3 +50,4 @@ export * as AttributeDateTimeTypeDraft from './attribute-date-time-type/attribut
 
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';
+export * as TypeDefinition from './type-definition';

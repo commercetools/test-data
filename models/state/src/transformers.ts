@@ -35,10 +35,13 @@ const transformers = {
         __typename: 'State',
         nameAllLocales,
         descriptionAllLocales,
-        name: LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales)!,
-        description: LocalizedString.resolveGraphqlDefaultLocaleValue(
-          descriptionAllLocales
-        ),
+        name:
+          LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales) ??
+          null,
+        description:
+          LocalizedString.resolveGraphqlDefaultLocaleValue(
+            descriptionAllLocales
+          ) ?? null,
       };
     },
   }),

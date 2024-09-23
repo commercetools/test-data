@@ -1,5 +1,34 @@
 # @commercetools-test-data/state
 
+## 10.7.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.0
+  - @commercetools-test-data/commons@10.7.0
+  - @commercetools-test-data/utils@10.7.0
+
+## 10.6.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.6.1
+  - @commercetools-test-data/commons@10.6.1
+  - @commercetools-test-data/utils@10.6.1
+
+## 10.6.0
+
+### Patch Changes
+
+- [#676](https://github.com/commercetools/test-data/pull/676) [`6f935fa`](https://github.com/commercetools/test-data/commit/6f935fa58edd5815d2b6a13e4b94a0c6d1620684) Thanks [@jaikumar-tj](https://github.com/jaikumar-tj)! - Make `name`,`description` as optional and send `null` as fallback
+
+- Updated dependencies [[`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8)]:
+  - @commercetools-test-data/commons@10.6.0
+  - @commercetools-test-data/core@10.6.0
+  - @commercetools-test-data/utils@10.6.0
+
 ## 10.5.2
 
 ### Patch Changes

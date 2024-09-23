@@ -44,7 +44,7 @@ const standardTax = () =>
         .empty()
         .name('Standard VAT for US')
         .amount(0.2)
-        .includedInPrice(true)
+        .includedInPrice(false)
         .country('US')
         .key('vat-standard-us')
         .subRates([]),

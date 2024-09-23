@@ -1,6 +1,10 @@
 import {
   StandalonePrice,
   StandalonePriceDraft,
+  StagedStandalonePrice,
+  PriceTier,
+  CustomFields,
+  DiscountedPrice,
 } from '@commercetools/platform-sdk';
 import { TChannelGraphql } from '@commercetools-test-data/channel';
 import {
@@ -20,12 +24,16 @@ export type TStandalonePriceDraft = StandalonePriceDraft;
 // Graphql representation
 export type TStandalonePriceGraphql = Omit<
   TStandalonePrice,
-  'channel' | 'customerGroup'
+  'staged' | 'tiers' | 'custom' | 'discounted' | 'channel' | 'customerGroup'
 > & {
   channel?: TChannelGraphql;
   channelRef?: TReferenceGraphql;
   customerGroup?: TCustomerGroupGraphql;
   customerGroupRef?: TReferenceGraphql;
+  tiers: PriceTier[] | null;
+  staged: StagedStandalonePrice | null;
+  custom: CustomFields | null;
+  discounted: DiscountedPrice | null;
   __typename: 'StandalonePrice';
 };
 

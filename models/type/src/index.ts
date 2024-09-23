@@ -13,6 +13,8 @@ export * from './custom-field-reference-type/types';
 export * from './custom-field-set-type/types';
 export * from './custom-field-string-type/types';
 export * from './custom-field-time-type/types';
+export * from './field-definition/types';
+export * from './field-type/types';
 
 // Export models
 export * as CustomFieldBooleanType from './custom-field-boolean-type';
@@ -30,8 +32,10 @@ export * as CustomFieldSetType from './custom-field-set-type';
 export * as CustomFieldStringType from './custom-field-string-type';
 export * as CustomFieldTimeType from './custom-field-time-type';
 export * as FieldDefinition from './field-definition';
+export * as FieldType from './field-type';
 export * as TypeDraft from './type/type-draft';
 export * as Type from '.';
+
 export { default as random } from './type/builder';
 export { default as presets } from './type/presets';
 export * from './type/types';

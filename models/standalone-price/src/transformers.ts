@@ -20,6 +20,9 @@ const transformers = {
       'customerGroup',
       'channel',
       'tiers',
+      'custom',
+      'discounted',
+      'staged',
     ],
   }),
   rest: Transformer<TStandalonePrice, TStandalonePriceRest>('rest', {
@@ -30,6 +33,9 @@ const transformers = {
       'customerGroup',
       'channel',
       'tiers',
+      'custom',
+      'discounted',
+      'staged',
     ],
   }),
   graphql: Transformer<TStandalonePrice, TStandalonePriceGraphql>('graphql', {
@@ -68,7 +74,9 @@ const transformers = {
           .buildGraphql<TChannelGraphql>();
       }
 
-      return {
+      const mainCurrency = fields.value.currencyCode;
+
+      const adjustedFields: TStandalonePriceGraphql = {
         ...fields,
         __typename: 'StandalonePrice',
         channel,
@@ -76,6 +84,8 @@ const transformers = {
         customerGroup,
         customerGroupRef,
       };
+
+      return adjustedFields;
     },
   }),
 };

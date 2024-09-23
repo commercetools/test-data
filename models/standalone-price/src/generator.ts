@@ -34,7 +34,13 @@ const generator = Generator<TStandalonePrice>({
     ),
     validFrom: fake(getCreatedAt),
     validUntil: fake(getExpiresAt),
-    tiers: [fake(() => PriceTier.random())],
+    tiers: [
+      fake((f) =>
+        PriceTier.random().minimumQuantity(
+          f.number.int({ min: 1, max: 2000000000 })
+        )
+      ),
+    ],
     discounted: null,
     staged: null,
     custom: null,

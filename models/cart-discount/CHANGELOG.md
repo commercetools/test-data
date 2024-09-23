@@ -1,5 +1,45 @@
 # @commercetools-test-data/cart-discount
 
+## 10.7.0
+
+### Minor Changes
+
+- [#683](https://github.com/commercetools/test-data/pull/683) [`80e900c`](https://github.com/commercetools/test-data/commit/80e900c0c71ae07d688a8d9700a05fff06199800) Thanks [@ragafus](https://github.com/ragafus)! - Add applicationMode field to CartDiscountValueAbsolute model
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.0
+  - @commercetools-test-data/category@10.7.0
+  - @commercetools-test-data/commons@10.7.0
+  - @commercetools-test-data/customer-group@10.7.0
+  - @commercetools-test-data/product-type@10.7.0
+  - @commercetools-test-data/utils@10.7.0
+
+## 10.6.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/category@10.6.1
+  - @commercetools-test-data/product-type@10.6.1
+  - @commercetools-test-data/core@10.6.1
+  - @commercetools-test-data/commons@10.6.1
+  - @commercetools-test-data/customer-group@10.6.1
+  - @commercetools-test-data/utils@10.6.1
+
+## 10.6.0
+
+### Patch Changes
+
+- Updated dependencies [[`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8), [`072886c`](https://github.com/commercetools/test-data/commit/072886c0cead22be821dba4dad7ba8a6a3e48655)]:
+  - @commercetools-test-data/commons@10.6.0
+  - @commercetools-test-data/product-type@10.6.0
+  - @commercetools-test-data/category@10.6.0
+  - @commercetools-test-data/customer-group@10.6.0
+  - @commercetools-test-data/core@10.6.0
+  - @commercetools-test-data/utils@10.6.0
+
 ## 10.5.2
 
 ### Patch Changes

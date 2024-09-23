@@ -14,6 +14,8 @@ const commonBuildFields: (keyof TOrder)[] = [
   'refusedGifts',
   'cart',
   'itemShippingAddresses',
+  'returnInfo',
+  'shippingInfo',
 ];
 
 const transformers = {
