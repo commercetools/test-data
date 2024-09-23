@@ -102,7 +102,7 @@ describe('builder', () => {
             }),
           }),
         ]),
-        discounted: undefined,
+        discounted: null,
         staged: undefined,
         active: expect.any(Boolean),
       })

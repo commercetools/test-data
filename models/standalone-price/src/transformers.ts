@@ -1,5 +1,9 @@
 import { Channel, TChannelGraphql } from '@commercetools-test-data/channel';
-import { Reference, TReferenceGraphql } from '@commercetools-test-data/commons';
+import {
+  Reference,
+  TReference,
+  TReferenceGraphql,
+} from '@commercetools-test-data/commons';
 import { buildField, Transformer } from '@commercetools-test-data/core';
 import {
   CustomerGroup,
@@ -37,6 +41,31 @@ const transformers = {
       'discounted',
       'staged',
     ],
+    replaceFields: ({ fields }) => {
+      const mainCurrency = fields.value.currencyCode;
+
+      return {
+        ...fields,
+        tiers: fields.tiers
+          ? fields.tiers.map((tier) => ({
+              ...tier,
+              value: {
+                ...tier.value,
+                currencyCode: mainCurrency,
+              },
+            }))
+          : [],
+        staged: fields.staged
+          ? {
+              ...fields.staged,
+              value: {
+                ...fields.staged.value,
+                currencyCode: mainCurrency,
+              },
+            }
+          : undefined,
+      };
+    },
   }),
   graphql: Transformer<TStandalonePrice, TStandalonePriceGraphql>('graphql', {
     buildFields: ['lastModifiedBy', 'createdBy', 'value', 'tiers'],
@@ -83,6 +112,27 @@ const transformers = {
         channelRef,
         customerGroup,
         customerGroupRef,
+        custom: fields.custom || null,
+        // Currency sync
+        tiers: fields.tiers
+          ? fields.tiers.map((tier) => ({
+              ...tier,
+              value: {
+                ...tier.value,
+                currencyCode: mainCurrency,
+              },
+            }))
+          : null,
+        staged: fields.staged
+          ? {
+              ...fields.staged,
+              value: {
+                ...fields.staged.value,
+                currencyCode: mainCurrency,
+              },
+            }
+          : null,
+        discounted: fields.discounted || null,
       };
 
       return adjustedFields;

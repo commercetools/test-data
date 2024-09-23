@@ -840,7 +840,7 @@ importers:
         specifier: 10.7.0
         version: link:../product-type
       '@commercetools-test-data/state':
-        specifier: 10.5.2
+        specifier: 10.7.0
         version: link:../state
       '@commercetools-test-data/tax-category':
         specifier: 10.7.0
@@ -1050,7 +1050,7 @@ importers:
         specifier: ^10.7.0
         version: link:../staged-quote
       '@commercetools-test-data/state':
-        specifier: 10.5.2
+        specifier: 10.7.0
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.7.0
@@ -1092,7 +1092,7 @@ importers:
         specifier: 10.7.0
         version: link:../customer-group
       '@commercetools-test-data/state':
-        specifier: 10.5.2
+        specifier: 10.7.0
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.7.0
@@ -1215,7 +1215,7 @@ importers:
         specifier: 10.7.0
         version: link:../quote-request
       '@commercetools-test-data/state':
-        specifier: 10.5.2
+        specifier: 10.7.0
         version: link:../state
       '@commercetools-test-data/store':
         specifier: 10.7.0
