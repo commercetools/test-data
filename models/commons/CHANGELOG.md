@@ -1,5 +1,15 @@
 # @commercetools-test-data/commons
 
+## 10.7.1
+
+### Patch Changes
+
+- [#684](https://github.com/commercetools/test-data/pull/684) [`7c08fa2`](https://github.com/commercetools/test-data/commit/7c08fa25a8d9a906401fffeb8b92f20e9358bdce) Thanks [@ragafus](https://github.com/ragafus)! - Add max centAmount value to CentPrecisionMoney and CentPrecisioMoneyDraft models to avoid rounding errors
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.1
+  - @commercetools-test-data/utils@10.7.1
+
 ## 10.7.0
 
 ### Patch Changes
