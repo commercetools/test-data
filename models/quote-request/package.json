@@ -28,6 +28,6 @@
     "@commercetools-test-data/store": "10.7.1",
     "@commercetools-test-data/utils": "10.7.1",
     "@commercetools/platform-sdk": "7.12.0",
-    "@faker-js/faker": "^8.0.0"
+    "@faker-js/faker": "^9.0.0"
   }
 }
