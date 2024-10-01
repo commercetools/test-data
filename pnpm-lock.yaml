@@ -124,8 +124,8 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       '@types/lodash':
         specifier: ^4.17.0
         version: 4.17.4
@@ -156,8 +156,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/attribute-group:
     dependencies:
@@ -180,8 +180,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       omit-deep:
         specifier: ^0.3.0
         version: 0.3.0
@@ -216,8 +216,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/cart:
     dependencies:
@@ -264,8 +264,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/cart-discount:
     dependencies:
@@ -297,8 +297,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/category:
     dependencies:
@@ -324,8 +324,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/channel:
     dependencies:
@@ -348,8 +348,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/commons:
     dependencies:
@@ -369,8 +369,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       '@types/lodash':
         specifier: ^4.17.0
         version: 4.17.4
@@ -408,8 +408,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       '@types/lodash':
         specifier: ^4.14.182
         version: 4.17.4
@@ -438,8 +438,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/custom-view:
     dependencies:
@@ -471,8 +471,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       '@types/lodash':
         specifier: ^4.17.0
         version: 4.17.4
@@ -504,8 +504,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/customer-group:
     dependencies:
@@ -528,8 +528,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/customers-search-list-my-view:
     dependencies:
@@ -558,8 +558,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/discount-code:
     dependencies:
@@ -585,8 +585,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/discounts-custom-view:
     dependencies:
@@ -612,8 +612,8 @@ importers:
         specifier: 10.7.1
         version: link:../../utils
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/filter-values:
     dependencies:
@@ -633,8 +633,8 @@ importers:
         specifier: 10.7.1
         version: link:../../utils
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/inventory-entry:
     dependencies:
@@ -663,8 +663,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/order:
     dependencies:
@@ -702,8 +702,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
       '@types/lodash':
         specifier: ^4.17.0
         version: 4.17.4
@@ -789,8 +789,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/platform-limits:
     dependencies:
@@ -813,8 +813,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/product:
     dependencies:
@@ -849,8 +849,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/product-discount:
     dependencies:
@@ -879,8 +879,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/product-projection:
     dependencies:
@@ -918,8 +918,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/product-selection:
     dependencies:
@@ -942,8 +942,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/product-type:
     dependencies:
@@ -969,8 +969,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/project:
     dependencies:
@@ -1056,8 +1056,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/quote-request:
     dependencies:
@@ -1095,8 +1095,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/review:
     dependencies:
@@ -1119,8 +1119,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/shipping-method:
     dependencies:
@@ -1149,8 +1149,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/shopping-list:
     dependencies:
@@ -1173,8 +1173,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/staged-quote:
     dependencies:
@@ -1215,8 +1215,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/standalone-price:
     dependencies:
@@ -1248,8 +1248,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/state:
     dependencies:
@@ -1272,8 +1272,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/store:
     dependencies:
@@ -1302,8 +1302,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/tax-category:
     dependencies:
@@ -1326,8 +1326,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/type:
     dependencies:
@@ -1350,8 +1350,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/user:
     dependencies:
@@ -1380,8 +1380,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   models/zone:
     dependencies:
@@ -1404,8 +1404,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
   utils:
     dependencies:
@@ -1416,8 +1416,8 @@ importers:
         specifier: ^7.17.9
         version: 7.24.6
       '@faker-js/faker':
-        specifier: ^8.0.0
-        version: 8.4.1
+        specifier: ^9.0.0
+        version: 9.0.3
 
 packages:
 
@@ -2363,9 +2363,9 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@faker-js/faker@8.4.1':
-    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
+  '@faker-js/faker@9.0.3':
+    resolution: {integrity: sha512-lWrrK4QNlFSU+13PL9jMbMKLJYXDFu3tQfayBsMXX7KL/GiQeqfB1CzHkqD5UHBUtPAuPo6XwGbMFNdVMZObRA==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
   '@graphql-codegen/add@5.0.2':
     resolution: {integrity: sha512-ouBkSvMFUhda5VoKumo/ZvsZM9P5ZTyDsI8LW18VxSNWOjrTeLXBWHG8Gfaai0HwhflPtCYVABbriEcOmrRShQ==}
@@ -7915,7 +7915,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@faker-js/faker@8.4.1': {}
+  '@faker-js/faker@9.0.3': {}
 
   '@graphql-codegen/add@5.0.2(graphql@16.8.1)':
     dependencies:
