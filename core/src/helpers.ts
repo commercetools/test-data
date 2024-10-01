@@ -146,7 +146,7 @@ const buildFields = <Model, TransformedModel = Model>(
   );
 };
 
-const buildGraphqlList = <Model, GraphqlModel>(
+const buildGraphqlList = <Model, GraphqlModel = Model>(
   builders: TBuilder<Model>[],
   { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
 ): TGraphqlPaginatedQueryResult<GraphqlModel> => {
@@ -161,14 +161,17 @@ const buildGraphqlList = <Model, GraphqlModel>(
   );
 };
 
-const buildRestList = <Model>(
+const buildRestList = <Model, RestModel = Model>(
   builders: TBuilder<Model>[],
   { total, offset }: TPaginatedQueryResultOptions
-): TPaginatedQueryResult<Model> => {
-  return toRestPaginatedQueryResult(buildFields(builders, 'rest'), {
-    total,
-    offset,
-  });
+): TPaginatedQueryResult<RestModel> => {
+  return toRestPaginatedQueryResult<RestModel>(
+    buildFields<Model, RestModel>(builders, 'rest'),
+    {
+      total,
+      offset,
+    }
+  );
 };
 
 export {
