@@ -1,5 +1,5 @@
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
-import { TSpecializedBuilder } from '@commercetools-test-data/core';
+import { TBuilder } from '@commercetools-test-data/core';
 import { QuoteDraft, type TQuoteDraft } from '@commercetools-test-data/quote';
 import {
   constants,
@@ -13,11 +13,11 @@ const quote = QuoteDraft.presets.sampleDataB2B
   .build<TQuoteDraft>();
 
 const customizeBuilder = <
-  T extends TOrderFromQuoteDraftRest | TOrderFromQuoteDraftGraphql,
+  T extends TOrderFromQuoteDraftRest | TOrderFromQuoteDraftGraphql
 >(
-  builder: TSpecializedBuilder<T>,
+  builder: TBuilder<T>,
   versionNumber: number
-): TSpecializedBuilder<T> => {
+): TBuilder<T> => {
   return builder
     .version(versionNumber)
     .quote(KeyReferenceDraft.presets.quote().key(quote.key!))

@@ -5,6 +5,7 @@ import type { TCreateReferenceDraftBuilder, TReferenceDraft } from '../types';
 
 const Model: TCreateReferenceDraftBuilder = () =>
   Builder<TReferenceDraft>({
+    name: 'ReferenceDraft',
     generator,
     transformers,
   });

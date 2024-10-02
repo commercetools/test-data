@@ -8,7 +8,7 @@ import {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
-import { TSpecializedBuilder } from '@commercetools-test-data/core';
+import { TBuilder } from '@commercetools-test-data/core';
 import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
 import { TStateGraphql } from '@commercetools-test-data/state';
 import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
@@ -75,5 +75,4 @@ export type TProductProjectionGraphql = Omit<
   __typename: 'ProductProjection';
 };
 
-export type TCreateProductProjectionBuilder<TModel> =
-  () => TSpecializedBuilder<TModel>;
+export type TCreateProductProjectionBuilder<TModel> = () => TBuilder<TModel>;

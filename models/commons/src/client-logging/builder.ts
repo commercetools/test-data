@@ -5,6 +5,7 @@ import type { TCreateClientLoggingBuilder, TClientLogging } from './types';
 
 const Model: TCreateClientLoggingBuilder = () =>
   Builder<TClientLogging>({
+    name: 'ClientLogging',
     generator,
     transformers,
   });

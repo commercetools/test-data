@@ -1,4 +1,4 @@
-import { TSpecializedBuilder } from '@commercetools-test-data/core';
+import { TBuilder } from '@commercetools-test-data/core';
 import type {
   TOrderFromQuoteDraftGraphql,
   TOrderFromQuoteDraftRest,
@@ -6,10 +6,10 @@ import type {
 import { RestModelBuilder, GraphqlModelBuilder } from '../../builders';
 
 const customizeBuilder = <
-  T extends TOrderFromQuoteDraftRest | TOrderFromQuoteDraftGraphql,
+  T extends TOrderFromQuoteDraftRest | TOrderFromQuoteDraftGraphql
 >(
-  builder: TSpecializedBuilder<T>
-): TSpecializedBuilder<T> => {
+  builder: TBuilder<T>
+): TBuilder<T> => {
   return builder
     .quoteStateToAccepted(undefined)
     .orderNumber(undefined)
@@ -19,9 +19,8 @@ const customizeBuilder = <
     .state(undefined);
 };
 
-export const restPreset = (): TSpecializedBuilder<TOrderFromQuoteDraftRest> =>
+export const restPreset = (): TBuilder<TOrderFromQuoteDraftRest> =>
   customizeBuilder(RestModelBuilder());
 
-export const graphqlPreset =
-  (): TSpecializedBuilder<TOrderFromQuoteDraftGraphql> =>
-    customizeBuilder(GraphqlModelBuilder());
+export const graphqlPreset = (): TBuilder<TOrderFromQuoteDraftGraphql> =>
+  customizeBuilder(GraphqlModelBuilder());

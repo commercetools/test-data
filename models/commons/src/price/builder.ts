@@ -6,6 +6,7 @@ import type { TCreatePriceBuilder } from './types';
 
 const Model: TCreatePriceBuilder = () =>
   Builder<Price>({
+    name: 'Price',
     generator,
     transformers,
   });

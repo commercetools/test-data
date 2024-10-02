@@ -8,6 +8,7 @@ import type {
 
 const Model: TCreateLocalizedStringDraftBuilder = () =>
   Builder<TLocalizedStringDraft>({
+    name: 'LocalizedStringDraft',
     generator,
     transformers,
   });

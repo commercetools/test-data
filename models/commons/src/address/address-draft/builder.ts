@@ -5,6 +5,7 @@ import transformers from './transformers';
 
 const AddressDraft: TCreateAddressDraftBuilder = () =>
   Builder<TAddressDraft>({
+    name: 'AddressDraft',
     generator,
     transformers,
   });

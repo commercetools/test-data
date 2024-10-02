@@ -5,6 +5,7 @@ import transformers from './transformers';
 
 const PriceDraft: TCreatePriceDraftBuilder = () =>
   Builder<TPriceDraft>({
+    name: 'PriceDraft',
     generator,
     transformers,
   });
