@@ -1,6 +1,11 @@
-import clothesStore from './clothes-store';
-import foodStore from './food-store';
+import * as clothesStore from './clothes-store';
+import * as foodStore from './food-store';
 
-const presets = { foodStore, clothesStore };
-
-export default presets;
+export const restPresets = {
+  foodStore: foodStore.restPreset,
+  clothesStore: clothesStore.restPreset,
+};
+export const graphqlPresets = {
+  foodStore: foodStore.graphqlPreset,
+  clothesStore: clothesStore.graphqlPreset,
+};

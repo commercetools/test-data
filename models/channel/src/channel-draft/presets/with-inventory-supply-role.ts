@@ -1,6 +1,25 @@
+import { TBuilder } from '@commercetools-test-data/core';
 import { roles } from '../../constants';
-import Channel from '../builder';
+import type {
+  TChannelDraft,
+  TChannelDraftGraphql,
+  TChannelDraftRest,
+} from '../../types';
+import { ChannelDraft, ChannelDraftGraphql, ChannelDraftRest } from '../index';
 
-const withInventorySupplyRole = () => Channel().roles([roles.InventorySupply]);
+const populatePreset = <
+  TModel extends TChannelDraftGraphql | TChannelDraftRest
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder.roles([roles.InventorySupply]);
+};
 
-export default withInventorySupplyRole;
+export const restPreset = (): TBuilder<TChannelDraftRest> =>
+  populatePreset(ChannelDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TChannelDraftGraphql> =>
+  populatePreset(ChannelDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TChannelDraft> =>
+  populatePreset(ChannelDraft.random());
