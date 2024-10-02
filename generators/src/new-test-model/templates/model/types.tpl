@@ -1,7 +1,7 @@
 import {
   {{modelName}},
 } from '@commercetools/platform-sdk';
-import type { TSpecializedBuilder } from '@commercetools-test-data/core';
+import type { TBuilder } from '@commercetools-test-data/core';
 
 export type T{{modelName}}Rest = {{modelName}};
 
@@ -24,4 +24,4 @@ export type TCreate{{modelName}}Builder<
     | T{{modelName}}Graphql
     // | T{{modelName}}DraftRest
     // | T{{modelName}}DraftGraphql
-> = () => TSpecializedBuilder<TModel>;
+> = () => TBuilder<TModel>;

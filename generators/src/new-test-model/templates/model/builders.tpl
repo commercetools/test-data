@@ -1,5 +1,5 @@
 import { createSpecializedBuilder } from '@commercetools-test-data/core';
-import { restFieldsConfig, graphqlFieldsConfig } from './initializers';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type { TCreate{{modelName}}Builder, T{{modelName}}Graphql, T{{modelName}}Rest } from './types';
 
 export const RestModelBuilder: TCreate{{modelName}}Builder<T{{modelName}}Rest> = () =>

@@ -12,7 +12,6 @@ import type {
   TBuildFieldMeta,
   TTransformType,
   TTransformBuildName,
-  TSpecializedBuilder,
   TModelFieldsConfig,
 } from './types';
 
@@ -191,7 +190,6 @@ const createSpecializedTransformers = <TModel>({
 type TCreateSpecializedBuilderParams<TModel> = {
   modelFieldsConfig: TModelFieldsConfig<TModel>;
   type: 'rest' | 'graphql';
-  buildFields?: (keyof TModel)[];
   name: string;
 };
 const createSpecializedBuilder = <TModel>(
@@ -205,12 +203,47 @@ const createSpecializedBuilder = <TModel>(
     name: params.name,
     transformers: createSpecializedTransformers<TModel>({
       type: params.type,
-      buildFields: params.buildFields,
     }),
     postBuild: params.modelFieldsConfig.postBuild,
   });
 
-  return modelBuilder as TSpecializedBuilder<TModel>;
+  return modelBuilder as TBuilder<TModel>;
+};
+
+const createCompatibilityBuilder = <TModel>(params: {
+  name: string;
+  modelFieldsConfig: {
+    rest: TModelFieldsConfig<TModel>;
+    graphql: TModelFieldsConfig<TModel>;
+  };
+}) => {
+  const modelBuilder = Builder<TModel>({
+    name: params.name,
+    compatConfig: {
+      generators: {
+        rest: Generator<TModel>({
+          fields: params.modelFieldsConfig.rest.fields,
+        }),
+        graphql: Generator<TModel>({
+          fields: params.modelFieldsConfig.graphql.fields,
+        }),
+      },
+      postBuilders: {
+        rest: params.modelFieldsConfig.rest.postBuild,
+        graphql: params.modelFieldsConfig.graphql.postBuild,
+      },
+    },
+    transformers: {
+      ...createSpecializedTransformers<TModel>({
+        type: 'rest',
+      }),
+      ...createSpecializedTransformers<TModel>({
+        type: 'graphql',
+      }),
+    },
+  });
+
+  return modelBuilder;
 };
 
 export {
@@ -233,4 +266,5 @@ export {
   buildRestList,
   createSpecializedTransformers,
   createSpecializedBuilder,
+  createCompatibilityBuilder,
 };

@@ -14,17 +14,17 @@ const commonFieldsConfig = {
   lastModifiedAt: fake(getNewerDate),
 };
 
-// TODO: You just need to place here fields initializers that don't match with the GraphQL API
+// TODO: You just need to place here fields initializers that don't match with the REST API
 export const restFieldsConfig: TModelFieldsConfig<T{{modelName}}Rest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-// TODO: You just need to place here fields initializers that don't match with the REST API
+// TODO: You just need to place here fields initializers that don't match with the GraphQL API
 export const graphqlFieldsConfig: TModelFieldsConfig<T{{modelName}}Graphql> = {
   fields: {
     ...commonFieldsConfig,
-    __typename: 'Order',
+    __typename: '{{modelName}}',
   },
 };

@@ -77,6 +77,7 @@ export type TPropertyBuilder<Model> = {
 } & {
   get: () => Partial<Model>;
   update: (obj: Partial<Model>) => TPropertyBuilder<Model>;
+  mergeInitialProps: (initialProps: Partial<Model>) => void;
 };
 
 export type TFieldUpdater<OriginalModel, Value> = <Model = OriginalModel>(
@@ -98,39 +99,39 @@ export type TBuilder<OriginalModel> = {
     OriginalModel[K]
   >;
 } & {
-  build<TransformedModel>(
+  build<TransformedModel = OriginalModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
-  buildGraphql<TransformedModel>(
+  buildGraphql<TransformedModel = OriginalModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
-  buildRest<TransformedModel>(
+  buildRest<TransformedModel = OriginalModel>(
     args?: TFieldBuilderArgs<OriginalModel>
   ): TransformedModel;
 };
 
 export type TDefaultTransformer<
   TransformerType extends TTransformType,
-  Model,
+  Model
 > = 'default' extends TransformerType
   ? { default: TTransformer<Model> }
   : never;
 
 export type TGraphqlTransformer<
   TransformerType extends TTransformType,
-  Model,
+  Model
 > = 'graphql' extends TransformerType
   ? { graphql: TTransformer<Model> }
   : never;
 
 export type TRestTransformer<
   TransformerType extends TTransformType,
-  Model,
+  Model
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
 export type TModelFieldsConfig<TModel> = {
   fields: Record<keyof TModel, Field>;
-  postBuild?: (mode: TModel) => Partial<TModel>;
+  postBuild?: (model: TModel) => Partial<TModel>;
 };
 
 export type TBuilderOptions<Model> = {
@@ -142,11 +143,14 @@ export type TBuilderOptions<Model> = {
   type?: 'rest' | 'graphql';
   name?: string;
   postBuild?: (fields: Model) => Partial<Model>;
-};
-
-export type TSpecializedBuilder<TModel> = Omit<
-  TBuilder<TModel>,
-  'build' | 'buildRest' | 'buildGraphql'
-> & {
-  build: () => TModel;
+  compatConfig?: {
+    generators: {
+      rest: TGeneratorResult<Model>;
+      graphql: TGeneratorResult<Model>;
+    };
+    postBuilders?: {
+      rest?: (fields: Model) => Partial<Model>;
+      graphql?: (fields: Model) => Partial<Model>;
+    };
+  };
 };
