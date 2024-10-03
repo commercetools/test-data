@@ -1,23 +1,23 @@
 # Test data models overview
 
-A test data model is set of helper objects commercetools API consumers can use during writing their own tests in order to mock the data returned by our services.
+A test data model is set of helper objects commercetools API consumers can use when writing their own tests in order to mock the data returned by commercetools services.
 
 These helpers are flexible enough to represent different types of responses from different APIs and with different values.
 
 ## Public API
 
-Each test data model has the same API which consists on:
+Each test data model has the same API which consists of:
 
 - A Rest builder
-- A Graphql builder
-- Typescript types
+- A GraphQL builder
+- TypeScript types
 
-A `Builder` is the object you would be interacting with as a consumer and it has only two functions:
+A `Builder` is the object you are interacting with as a consumer. It has only two functions:
 
 - `random`: exposes a fluent API which allows to build a customized version of the data model
 - `presets`: predefined versions of the data model
 
-This is how it looks like the entry point of a data model package:
+This is how an entry point of a data model package looks like:
 
 ```ts
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
@@ -88,7 +88,7 @@ const graphqlGeometry: TGeometryGraphql = GraphqlModelBuilder.presets
 
 ## Internal structure
 
-The way a data model is implemented is by using some classes and helpers exposed from the [core](https://github.com/commercetools/test-data/tree/main/core) package.
+Test data model are implemented using some classes and helpers exposed from the [core](https://github.com/commercetools/test-data/tree/main/core) package.
 
 ### Fields config
 
@@ -119,12 +119,12 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TGeometryGraphql> = {
 };
 ```
 
-As you can see, this files is required to export two configuration objects (`restFieldsConfig`, `graphqlFieldsConfig`) which describe how to populate the properties of the data model when building the default version.
+As you can see, these files are required to export two configuration objects (`restFieldsConfig`, `graphqlFieldsConfig`) which describe how to populate the properties of the data model when building the default version.
 
 The configuration objects has two properties:
 
 - `fields` (**required**): Describe how the default values should be populated
-- `postBuild` (_optional_): Callback function to run modifications in the built data model
+- `postBuild` (_optional_): Callback function to run modifications on the built data model
 
 Here's an example where we use `postBuild` option to populate some values which depend on others to be built first:
 
@@ -153,13 +153,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 };
 ```
 
-In this example, `name` and `description` are values that are calculated based on the `nameAllLocales` and `descriptionAllLocales` ones but we need the latter to be built first, so that why we use the `postBuild` function.
+In this example, `name` and `description` are values that are calculated based on the `nameAllLocales` and `descriptionAllLocales`. The latter need to be built first using the `postBuild` function.
 
-This function just need to return an object with the updated properties values and it will be merged with the originally built one.
+This function just need to return an object with the updated properties and their values and it will be merged with the originally built one.
 
 ### Builders
 
-The other main file of the data model is the `builders` one where we actually create the objects which implement the fluent API that allows generating data models objects.
+The `builders` is another main file in which we actually create the objects which implement the fluent API that allows generating data models objects.
 
 This is how it looks like:
 
@@ -189,7 +189,7 @@ export const GraphqlModelBuilder: TCreateGeometryBuilder<
   });
 ```
 
-Basically we're exporting one builder for each representation (REST and GRAPHQL) of the data models where we use the `fields-config` file detailed above.
+We're exporting one builder for each representation (REST and GRAPHQL) of the data models for each of which we use the respective `fields-config` file detailed above.
 
 ## Testing
 
@@ -199,7 +199,7 @@ The bare minimum tests to implement are those which validate the generated defau
 
 Here's an example:
 
-```
+```ts
 import { GeometryRest, GeometryGraphql } from './index';
 
 describe('Geometry Builder', () => {
