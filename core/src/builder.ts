@@ -1,10 +1,5 @@
-import {
-  isFunction,
-  isBuilderFunction,
-  isString,
-  omitMany,
-  pickMany,
-} from './helpers';
+import omit from 'lodash/omit';
+import { isFunction, isBuilderFunction, isString, pickMany } from './helpers';
 import type {
   TBuilderMapStateFunction,
   TBuilderOptions,
@@ -12,6 +7,7 @@ import type {
   TBuilder,
   TPropertyBuilder,
   TPropertyFieldUpdater,
+  TGeneratorResult,
 } from './types';
 
 // The Proxy constructor type does not differentiate between the target and the return type.
@@ -34,8 +30,12 @@ const createState = <Model>({
 
   return {
     get: () => state,
-    merge: (update: Partial<Model>) => {
-      state = { ...state, ...update };
+    merge: (update: Partial<Model>, overwrite = true) => {
+      if (overwrite) {
+        state = { ...state, ...update };
+      } else {
+        state = { ...update, ...state };
+      }
     },
     set: (prop: string, value: unknown) => {
       state = { ...state, [prop]: value };
@@ -69,6 +69,15 @@ function PropertyBuilder<Model>(initialProps?: Partial<Model>) {
           }
         }
       },
+      // This allows to inject initial props into the state after it's created.
+      set(_target, prop, value) {
+        if (prop === 'initialProps') {
+          state.merge(value, false);
+        } else {
+          state.set(prop as string, value);
+        }
+        return true;
+      },
     }
   );
   return builder;
@@ -77,13 +86,31 @@ function PropertyBuilder<Model>(initialProps?: Partial<Model>) {
 function Builder<Model>({
   generator,
   transformers,
+  type,
+  postBuild,
+  name = 'Unknown Builder',
+  compatConfig,
 }: TBuilderOptions<Model> = {}): TBuilder<Model> {
-  const applyGeneratorIfExists = (): Partial<Model> => {
-    if (!generator) return {};
-    return generator.generate();
+  const applyGenerator = (
+    type: 'rest' | 'graphql'
+  ): ReturnType<TGeneratorResult<Model>['generate']> => {
+    if (compatConfig?.generators) {
+      return compatConfig.generators[type].generate();
+    }
+    if (generator) {
+      return generator.generate();
+    }
+    return {} as Model;
+    // return {
+    //   generatedFields: {} as Model,
+    //   buildableFieldsNames: [],
+    // };
   };
 
-  const propertyBuilder = PropertyBuilder<Model>(applyGeneratorIfExists());
+  // We build the properties builder here becuase it handles the builder state and
+  // it needs to be bound to the instance.
+  // We do not run the generator here though as it can depend on the build call (rest or graphql).
+  const propertyBuilder = PropertyBuilder<Model>();
 
   const builder: {
     proxy: TBuilder<Model>;
@@ -112,35 +139,53 @@ function Builder<Model>({
               omitFields = [],
               keepFields = [],
             }: TFieldBuilderArgs<Model> = {}) => {
+              const builderType =
+                type === 'graphql' || propToSet === 'buildGraphql'
+                  ? 'graphql'
+                  : 'rest';
+
+              // Now that we know which type of builder we are dealing with, we can
+              // run the appropriate generator
+              // This is required for compatibility between the new and legacy models.
+              const generatedFields = applyGenerator(builderType);
+              // @ts-expect-error `initialProps` is a dymamic property created in the PropertyBuilder proxy
+              propertyBuilder.initialProps = generatedFields;
+
               const built = propertyBuilder.get() as Model;
               let transformed = built;
 
-              switch (propToSet) {
-                case 'build': {
-                  transformed = (transformers?.default?.transform(built) ??
-                    built) as Model;
-                  break;
-                }
-                case 'buildGraphql': {
-                  transformed = (transformers?.graphql?.transform(built) ??
-                    built) as Model;
-                  break;
-                }
-                case 'buildRest': {
-                  transformed = (transformers?.rest?.transform(built) ??
-                    built) as Model;
-                  break;
-                }
-                default:
-                  break;
+              // Run transformers (they build the nested models)
+              if (builderType === 'rest') {
+                transformed = (transformers?.rest?.transform({
+                  fields: built,
+                  builderName: name,
+                }) ?? built) as Model;
+              }
+              if (builderType === 'graphql') {
+                transformed = (transformers?.graphql?.transform({
+                  fields: built,
+                  builderName: name,
+                }) ?? built) as Model;
               }
 
               if (keepFields.length > 0) {
-                return pickMany<Model>(transformed, ...keepFields);
+                transformed = pickMany<Model>(transformed, ...keepFields);
               }
               if (omitFields.length > 0) {
-                return omitMany<Model>(transformed, ...omitFields);
+                transformed = omit(transformed as {}, omitFields) as Model;
               }
+
+              // This is required for compatibility between the new and legacy models.
+              const postBuilder = compatConfig?.postBuilders
+                ? compatConfig.postBuilders[builderType]
+                : postBuild;
+              if (postBuilder) {
+                transformed = {
+                  ...transformed,
+                  ...postBuilder(transformed),
+                };
+              }
+
               return transformed;
             };
           }

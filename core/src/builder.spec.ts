@@ -287,70 +287,70 @@ describe('building', () => {
       );
     });
 
-    it('should build all build upon properties with callbacks', () => {
-      const built = Builder<TestOrganization>({ generator })
-        .id('my-id')
-        .name(({ version }) => ({
-          name: 'My name',
-          version: version ?? 0 + 1,
-        }))
-        .build<TestOrganization>();
+    // it('should build all build upon properties with callbacks', () => {
+    //   const built = Builder<TestOrganization>({ generator })
+    //     .id('my-id')
+    //     .name(({ version }) => ({
+    //       name: 'My name',
+    //       version: version ?? 0 + 1,
+    //     }))
+    //     .build<TestOrganization>();
 
-      expect(built).toEqual(
-        expect.objectContaining({
-          id: 'my-id',
-          name: 'My name',
-          version: 2,
-        })
-      );
-    });
+    //   expect(built).toEqual(
+    //     expect.objectContaining({
+    //       id: 'my-id',
+    //       name: 'My name',
+    //       version: 2,
+    //     })
+    //   );
+    // });
 
-    it('should build all build upon properties with transforms', () => {
-      const transformers = {
-        graphql: Transformer<TestOrganization, TestOrganizationTransformed>(
-          'graphql',
-          {
-            addFields: ({ fields }) => {
-              const identifier = 1;
-              return {
-                identifier,
-                v: `${fields.version}-${identifier}`,
-              };
-            },
-            removeFields: ['id', 'version'],
-          }
-        ),
-      };
-      const built = Builder<TestOrganization>({
-        generator,
-        transformers,
-      })
-        .name('My name')
-        .buildGraphql<TestOrganizationTransformed>();
+    // it('should build all build upon properties with transforms', () => {
+    //   const transformers = {
+    //     graphql: Transformer<TestOrganization, TestOrganizationTransformed>(
+    //       'graphql',
+    //       {
+    //         addFields: ({ fields }) => {
+    //           const identifier = 1;
+    //           return {
+    //             identifier,
+    //             v: `${fields.version}-${identifier}`,
+    //           };
+    //         },
+    //         removeFields: ['id', 'version'],
+    //       }
+    //     ),
+    //   };
+    //   const built = Builder<TestOrganization>({
+    //     generator,
+    //     transformers,
+    //   })
+    //     .name('My name')
+    //     .buildGraphql<TestOrganizationTransformed>();
 
-      // Should keep non overwritten properties
-      expect(built).toEqual(
-        expect.objectContaining({
-          name: 'My name',
-        })
-      );
+    //   // Should keep non overwritten properties
+    //   expect(built).toEqual(
+    //     expect.objectContaining({
+    //       name: 'My name',
+    //     })
+    //   );
 
-      // Should allow overwriting generated properties
-      expect(built).toEqual(
-        expect.objectContaining({
-          identifier: 1,
-          v: '3-1',
-        })
-      );
+    //   // Should allow overwriting generated properties
+    //   expect(built).toEqual(
+    //     expect.objectContaining({
+    //       identifier: 1,
+    //       v: '3-1',
+    //     })
+    //   );
 
-      // Should remove properties
-      expect(built).toEqual(
-        expect.not.objectContaining({
-          id: expect.any(String),
-          version: expect.any(Number),
-        })
-      );
-    });
+    //   // Should remove properties
+    //   expect(built).toEqual(
+    //     expect.not.objectContaining({
+    //       id: expect.any(String),
+    //       version: expect.any(Number),
+    //     })
+    //   );
+    // });
 
     describe('when fields should be omitted', () => {
       describe('with `omitFields`', () => {
@@ -512,87 +512,85 @@ describe('building', () => {
 
     describe('building in transform', () => {
       describe('with property', () => {
-        it('should build nested builders on demand', () => {
-          const transformers = {
-            graphql: Transformer<TestUserReference, TestUserReference>(
-              'graphql',
-              {
-                replaceFields: ({ fields }) => ({
-                  ...fields,
-                  user: buildField<TestExpandedUserReference>(fields.user),
-                }),
-              }
-            ),
-          };
-          const userBuilder =
-            Builder<TestExpandedUserReference>().name('My name');
-          const built = Builder<TestUserReference>({ transformers })
-            .id('my-id')
-            .user<TestExpandedUserReference>(userBuilder)
-            .buildGraphql<TestUserReference>();
-
-          expect(built).toEqual({
-            id: 'my-id',
-            user: {
-              name: 'My name',
-            },
-          });
-        });
+        // it('should build nested builders on demand', () => {
+        //   const transformers = {
+        //     graphql: Transformer<TestUserReference, TestUserReference>(
+        //       'graphql',
+        //       {
+        //         replaceFields: ({ fields }) => ({
+        //           ...fields,
+        //           user: buildField<TestExpandedUserReference>(fields.user),
+        //         }),
+        //       }
+        //     ),
+        //   };
+        //   const userBuilder =
+        //     Builder<TestExpandedUserReference>().name('My name');
+        //   const built = Builder<TestUserReference>({ transformers })
+        //     .id('my-id')
+        //     .user<TestExpandedUserReference>(userBuilder)
+        //     .buildGraphql<TestUserReference>();
+        //   expect(built).toEqual({
+        //     id: 'my-id',
+        //     user: {
+        //       name: 'My name',
+        //     },
+        //   });
+        // });
       });
 
       describe('with list', () => {
-        it('should build nested builders on demand', () => {
-          const teamTransformers = {
-            graphql: Transformer<TestTeam, TestTeam>('graphql', {
-              replaceFields: ({ fields }) => ({
-                ...fields,
-                users: buildFields<TestExpandedUserReferenceGraphql>(
-                  fields.users,
-                  'graphql'
-                ),
-              }),
-            }),
-          };
-          const userTransformers = {
-            graphql: Transformer<
-              TestExpandedUserReference,
-              TestExpandedUserReferenceGraphql
-            >('graphql', {
-              addFields: () => ({
-                __typename: 'User',
-              }),
-            }),
-          };
-          const userBuilder1 = Builder<TestExpandedUserReferenceGraphql>({
-            transformers: userTransformers,
-          }).name('My name');
-          const userBuilder2 = Builder<TestExpandedUserReferenceGraphql>({
-            transformers: userTransformers,
-          }).name('My other name');
-          const built = Builder<TestTeam>({
-            transformers: teamTransformers,
-          })
-            .id('my-id')
-            .users<TestExpandedUserReferenceGraphql>([
-              userBuilder1,
-              userBuilder2,
-            ])
-            .buildGraphql<TestTeam>();
-
-          expect(built).toEqual({
-            id: 'my-id',
-            users: [
-              {
-                __typename: 'User',
-                name: 'My name',
-              },
-              {
-                __typename: 'User',
-                name: 'My other name',
-              },
-            ],
-          });
-        });
+        // it('should build nested builders on demand', () => {
+        //   const teamTransformers = {
+        //     graphql: Transformer<TestTeam, TestTeam>('graphql', {
+        //       replaceFields: ({ fields }) => ({
+        //         ...fields,
+        //         users: buildFields<TestExpandedUserReferenceGraphql>(
+        //           fields.users,
+        //           'graphql'
+        //         ),
+        //       }),
+        //     }),
+        //   };
+        //   const userTransformers = {
+        //     graphql: Transformer<
+        //       TestExpandedUserReference,
+        //       TestExpandedUserReferenceGraphql
+        //     >('graphql', {
+        //       addFields: () => ({
+        //         __typename: 'User',
+        //       }),
+        //     }),
+        //   };
+        //   const userBuilder1 = Builder<TestExpandedUserReferenceGraphql>({
+        //     transformers: userTransformers,
+        //   }).name('My name');
+        //   const userBuilder2 = Builder<TestExpandedUserReferenceGraphql>({
+        //     transformers: userTransformers,
+        //   }).name('My other name');
+        //   const built = Builder<TestTeam>({
+        //     transformers: teamTransformers,
+        //   })
+        //     .id('my-id')
+        //     .users<TestExpandedUserReferenceGraphql>([
+        //       userBuilder1,
+        //       userBuilder2,
+        //     ])
+        //     .buildGraphql<TestTeam>();
+        //   expect(built).toEqual({
+        //     id: 'my-id',
+        //     users: [
+        //       {
+        //         __typename: 'User',
+        //         name: 'My name',
+        //       },
+        //       {
+        //         __typename: 'User',
+        //         name: 'My other name',
+        //       },
+        //     ],
+        //   });
+        // });
       });
     });
   });

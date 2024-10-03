@@ -4,20 +4,29 @@ import type {
   TTransformerOptions,
   TBuilder,
   TTransformType,
+  TTransformFnParams,
 } from './types';
+
+const isBuilder = (value?: unknown): boolean => {
+  const fieldValue =
+    value && Array.isArray(value) && value.length > 0 ? value[0] : value;
+  return Boolean(fieldValue) && fieldValue.build instanceof Function;
+};
 
 function Transformer<Model, TransformedModel>(
   transformType: TTransformType,
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
-  function transform(fields: Model) {
-    let transformedFields = { ...fields };
+  function transform(params: TTransformFnParams<Model>) {
+    console.log('Transformer', { params, transformType, transformOptions });
+    let transformedFields: Model = { ...params.fields };
     const fieldsReplacer = transformOptions?.replaceFields;
     const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
     const fieldsToBuild = transformOptions?.buildFields;
-
+    console.log('///---> 0');
     if (fieldsToBuild) {
+      console.log('///---> 1');
       fieldsToBuild.forEach((fieldToBuild) => {
         const field = transformedFields[fieldToBuild] as unknown as
           | TBuilder<Model>
@@ -36,11 +45,28 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
+    } else if (fieldsToBuild !== false) {
+      console.log('///---> 1');
+      for (const [key, value] of Object.entries(transformedFields as {})) {
+        if (!value || !isBuilder(value)) continue;
+        const fieldKey = key as keyof Model;
+        const fieldValue = value as unknown as
+          | TBuilder<Model>
+          | TBuilder<Model>[];
+        transformedFields[fieldKey] = Array.isArray(fieldValue)
+          ? (buildFields<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model])
+          : (buildField<Model>(fieldValue, transformType, {
+              fieldToBuild: fieldKey,
+            }) as unknown as Model[keyof Model]);
+      }
     }
 
     // The default transformer only allows building nested fields to not
     // allow re-transforming model shape
     if (transformType === 'default') {
+      console.log('///---> 3');
       return transformedFields as unknown as TransformedModel;
     }
 
@@ -57,13 +83,16 @@ function Transformer<Model, TransformedModel>(
           `The "replaceFields" option takes precedence over the "removeFields" option, making it unused.`
         );
       }
-      return fieldsReplacer({
+      const result = fieldsReplacer({
         fields: transformedFields,
       }) as unknown as TransformedModel;
+      console.log('///---> 4', { transformedFields, result });
+      return result;
     }
 
     if (fieldsAdder) {
-      const fieldsToAdd = fieldsAdder({ fields });
+      console.log('///---> 5');
+      const fieldsToAdd = fieldsAdder({ fields: params.fields });
       Object.entries(fieldsToAdd).forEach(([fieldName, fieldValue]) => {
         // @ts-ignore: TS does not know about the `Model` being an object.
         if (transformedFields[fieldName]) return;
@@ -75,6 +104,7 @@ function Transformer<Model, TransformedModel>(
     }
 
     if (fieldsToRemove) {
+      console.log('///---> 6');
       fieldsToRemove.forEach((fieldToRemove) => {
         delete transformedFields[fieldToRemove];
       });
