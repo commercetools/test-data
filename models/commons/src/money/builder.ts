@@ -5,6 +5,7 @@ import type { TMoney, TCreateMoneyBuilder } from './types';
 
 const Model: TCreateMoneyBuilder = () =>
   Builder<TMoney>({
+    name: 'Money',
     generator,
     transformers,
   });

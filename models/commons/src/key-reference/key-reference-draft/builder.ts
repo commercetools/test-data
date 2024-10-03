@@ -8,6 +8,7 @@ import transformers from './transformers';
 
 const Model: TCreateKeyReferenceDraftBuilder = () =>
   Builder<TKeyReferenceDraft>({
+    name: 'KeyReferenceDraft',
     generator,
     transformers,
   });

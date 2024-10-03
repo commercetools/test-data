@@ -8,6 +8,7 @@ import type {
 
 const Model: TCreateCentPrecisionMoneyBuilder = () =>
   Builder<TCentPrecisionMoney>({
+    name: 'CentPrecisionMoney',
     generator,
     transformers,
   });

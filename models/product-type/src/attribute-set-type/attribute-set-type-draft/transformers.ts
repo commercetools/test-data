@@ -14,6 +14,7 @@ const transformers = {
   graphql: Transformer<TAttributeSetTypeDraft, TAttributeSetTypeDraftGraphql>(
     'graphql',
     {
+      buildFields: false,
       replaceFields: ({ fields }) => {
         return {
           [fields.name]: {
