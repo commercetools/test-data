@@ -189,7 +189,7 @@ export const GraphqlModelBuilder: TCreateGeometryBuilder<
   });
 ```
 
-We're exporting one builder for each representation (REST and GRAPHQL) of the data models for each of which we use the respective `fields-config` file detailed above.
+We're exporting one builder for each representation (REST and GraphQL) of the data models for each of which we use the respective `fields-config` file detailed above.
 
 ## Testing
 

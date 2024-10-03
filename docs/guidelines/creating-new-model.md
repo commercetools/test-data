@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > This document builds on top of the [Test Data Models overview](../contributing/test-data-models-overview.md) one so it would be useful if you read it first.
 
-In this document we explain the steps we need to take in order to build a new test data model.
+In this document we explain the steps needed to build a new test data model.
 
 ## Context
 
@@ -84,7 +84,7 @@ On the other hand, the GraphQL representation can use the previous ones as a blu
 
 The next step can involve creating the `fields-config` file where we need to implement the population of the default values we want the test data model to have.
 
-Since we have two representations for it (REST and GRAPHQL), we need to export two objects.
+Since we have two representations for it (REST and GraphQL), we need to export two objects.
 
 Here's an example:
 
@@ -150,9 +150,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 };
 ```
 
-Probably you have spotted the `postBuild` property in the Graphql config object.
+Probably you have spotted the `postBuild` property in the GraphQL config object.
 
-This is an optional one which we should only use if there are any dependencies among the data model fields.
+This is an optional and we should only use if there are any dependencies among the data model fields.
 In this case, `name` and `description` depend on the values from `nameAllLocales` and `descriptionAllLocales` but we don't know them in advance but only once the data model has been built. The `postBuild` callback allows to manipulate the built object before it's returned to the consumer.
 
 ## Testing
