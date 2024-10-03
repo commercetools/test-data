@@ -176,6 +176,7 @@ function Builder<Model>({
               const postBuilder = compatConfig?.postBuilders
                 ? compatConfig.postBuilders[builderType]
                 : postBuild;
+              // Run the callback to allow for additional transformations
               if (postBuilder) {
                 transformed = {
                   ...transformed,
