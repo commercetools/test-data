@@ -5,7 +5,7 @@
   "main": "dist/commercetools-test-data-generators.cjs.js",
   "module": "dist/commercetools-test-data-generators.esm.js",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "generate": "tsx src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,7 @@
     "lodash": "^4.17.21",
     "mustache": "^4.2.0",
     "prompts": "^2.4.2",
-    "ts-node": "^10.9.2"
+    "tsx": "^4.19.1"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.7",
