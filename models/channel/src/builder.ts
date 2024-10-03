@@ -6,6 +6,7 @@ import type { TCreateChannelBuilder } from './types';
 
 const Model: TCreateChannelBuilder = () =>
   Builder<Channel>({
+    name: 'Channel',
     generator,
     transformers,
   });

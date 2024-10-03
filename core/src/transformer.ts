@@ -18,15 +18,13 @@ function Transformer<Model, TransformedModel>(
   transformOptions: TTransformerOptions<Model, TransformedModel>
 ): TTransformer<Model> {
   function transform(params: TTransformFnParams<Model>) {
-    console.log('Transformer', { params, transformType, transformOptions });
     let transformedFields: Model = { ...params.fields };
     const fieldsReplacer = transformOptions?.replaceFields;
     const fieldsAdder = transformOptions?.addFields;
     const fieldsToRemove = transformOptions?.removeFields;
     const fieldsToBuild = transformOptions?.buildFields;
-    console.log('///---> 0');
+
     if (fieldsToBuild) {
-      console.log('///---> 1');
       fieldsToBuild.forEach((fieldToBuild) => {
         const field = transformedFields[fieldToBuild] as unknown as
           | TBuilder<Model>
@@ -46,7 +44,6 @@ function Transformer<Model, TransformedModel>(
         }
       });
     } else if (fieldsToBuild !== false) {
-      console.log('///---> 1');
       for (const [key, value] of Object.entries(transformedFields as {})) {
         if (!value || !isBuilder(value)) continue;
         const fieldKey = key as keyof Model;
@@ -66,7 +63,6 @@ function Transformer<Model, TransformedModel>(
     // The default transformer only allows building nested fields to not
     // allow re-transforming model shape
     if (transformType === 'default') {
-      console.log('///---> 3');
       return transformedFields as unknown as TransformedModel;
     }
 
@@ -86,12 +82,10 @@ function Transformer<Model, TransformedModel>(
       const result = fieldsReplacer({
         fields: transformedFields,
       }) as unknown as TransformedModel;
-      console.log('///---> 4', { transformedFields, result });
       return result;
     }
 
     if (fieldsAdder) {
-      console.log('///---> 5');
       const fieldsToAdd = fieldsAdder({ fields: params.fields });
       Object.entries(fieldsToAdd).forEach(([fieldName, fieldValue]) => {
         // @ts-ignore: TS does not know about the `Model` being an object.
@@ -104,7 +98,6 @@ function Transformer<Model, TransformedModel>(
     }
 
     if (fieldsToRemove) {
-      console.log('///---> 6');
       fieldsToRemove.forEach((fieldToRemove) => {
         delete transformedFields[fieldToRemove];
       });

@@ -101,10 +101,6 @@ function Builder<Model>({
       return generator.generate();
     }
     return {} as Model;
-    // return {
-    //   generatedFields: {} as Model,
-    //   buildableFieldsNames: [],
-    // };
   };
 
   // We build the properties builder here becuase it handles the builder state and
@@ -155,18 +151,19 @@ function Builder<Model>({
               let transformed = built;
 
               // Run transformers (they build the nested models)
-              if (builderType === 'rest') {
-                transformed = (transformers?.rest?.transform({
-                  fields: built,
-                  builderName: name,
-                }) ?? built) as Model;
-              }
-              if (builderType === 'graphql') {
-                transformed = (transformers?.graphql?.transform({
-                  fields: built,
-                  builderName: name,
-                }) ?? built) as Model;
-              }
+              // By now we need to keep the three types in order to be backwards compatible
+              // but the "default" one should be removed in the future. When that happens
+              // we can get rid of this property and just use the `builderType` one.
+              const transformersType =
+                type === 'graphql' || propToSet === 'buildGraphql'
+                  ? 'graphql'
+                  : type === 'rest' || propToSet === 'buildRest'
+                    ? 'rest'
+                    : 'default';
+              transformed = (transformers?.[transformersType]?.transform({
+                fields: built,
+                builderName: name,
+              }) ?? built) as Model;
 
               if (keepFields.length > 0) {
                 transformed = pickMany<Model>(transformed, ...keepFields);
