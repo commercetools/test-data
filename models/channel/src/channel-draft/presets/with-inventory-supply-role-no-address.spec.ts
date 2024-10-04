@@ -1,14 +1,35 @@
 import { roles } from '../../constants';
-import { TChannelDraft } from '../../types';
-import withInventorySupplyRoleNoAddress from './with-inventory-supply-role-no-address';
+import { TChannelDraftGraphql, TChannelDraftRest } from '../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-inventory-supply-role-no-address';
 
-it('should have InventorySupply role with no address', () => {
-  const channel = withInventorySupplyRoleNoAddress().build<TChannelDraft>();
+const channelExpectation = (
+  channel: TChannelDraftRest | TChannelDraftGraphql
+) => {
+  expect(channel).toMatchObject({
+    roles: expect.arrayContaining([roles.InventorySupply]),
+    address: undefined,
+  });
+};
 
-  expect(channel).toEqual(
-    expect.objectContaining({
-      roles: expect.arrayContaining([roles.InventorySupply]),
-      address: undefined,
-    })
-  );
+describe('WithInventorySupplyRoleNoAddress preset', () => {
+  it('[REST] should have InventorySupply role with no address', () => {
+    const emptyChannelDraft = restPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Graphql] should have InventorySupply role with no address', () => {
+    const emptyChannelDraft = graphqlPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - REST] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildRest();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - Graphql] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildGraphql();
+    channelExpectation(emptyChannelDraft);
+  });
 });

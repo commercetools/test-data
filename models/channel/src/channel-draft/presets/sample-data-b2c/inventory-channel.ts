@@ -18,21 +18,11 @@ const populatePreset = <
   builder: TBuilder<TModel>
 ): TBuilder<TModel> => {
   return builder
-    .key('eu-warehouse')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE'](`Europalager`)
-        ['it-IT'](`Magazzino Europa`)
-        ['nl-NL'](`Europa magazijn`)
-        ['fr-FR'](`Entrepôt Europe`)
-        ['en-AU'](`Europe warehouse`)
-        ['es-ES'](`Almacén Europa`)
-        ['en-GB'](`Europe warehouse`)
-        ['en-NZ'](`Europe warehouse`)
-        ['pt-PT'](`Armazém Europa`)
-        ['en-US'](`Europe warehouse`)
+    .key('inventory-channel')
+    .description(
+      LocalizedStringDraft.presets.empty()['en-US'](`Inventory Channel`)
     )
+    .name(LocalizedStringDraft.presets.empty()['en-US'](`Inventory Channel`))
     .roles([roles.InventorySupply]);
 };
 

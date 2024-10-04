@@ -1,15 +1,34 @@
 import { roles } from '../../constants';
-import { TChannelDraft } from '../../types';
-import withProductDistributionRole from './with-product-distribution-role';
+import { TChannelDraftGraphql, TChannelDraftRest } from '../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-product-distribution-role';
 
-describe('with product distribution role', () => {
-  it('should have ProductDistribution only role', () => {
-    const channel = withProductDistributionRole().build<TChannelDraft>();
+const channelExpectation = (
+  channel: TChannelDraftRest | TChannelDraftGraphql
+) => {
+  expect(channel).toMatchObject({
+    roles: expect.arrayContaining([roles.ProductDistribution]),
+  });
+};
 
-    expect(channel).toEqual(
-      expect.objectContaining({
-        roles: expect.arrayContaining([roles.ProductDistribution]),
-      })
-    );
+describe('WithProductDistributionRole preset', () => {
+  it('[REST] should have ProductDistribution only role', () => {
+    const emptyChannelDraft = restPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Graphql] should have ProductDistribution only role', () => {
+    const emptyChannelDraft = graphqlPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - REST] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildRest();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - Graphql] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildGraphql();
+    channelExpectation(emptyChannelDraft);
   });
 });

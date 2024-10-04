@@ -1,9 +1,14 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import Channel from '../builder';
+import type { TBuilder } from '@commercetools-test-data/core';
+import { ChannelGraphql, ChannelRest } from '../index';
+import type { TChannelGraphql, TChannelRest } from '../types';
 
-const clothesStore = () =>
-  Channel()
-    .name(LocalizedString.presets.empty().en('Clothes Store'))
-    .key('clothes-store-key');
+export const restPreset = (): TBuilder<TChannelRest> =>
+  ChannelRest.random()
+    .key('food-store-key')
+    .name(LocalizedString.presets.empty().en('Clothes Store'));
 
-export default clothesStore;
+export const graphqlPreset = (): TBuilder<TChannelGraphql> =>
+  ChannelGraphql.random()
+    .key('food-store-key')
+    .nameAllLocales([LocalizedString.presets.empty().en('Clothes Store')]);
