@@ -104,6 +104,9 @@ importers:
       prettier:
         specifier: 3.3.3
         version: 3.3.3
+      prettier-jest:
+        specifier: npm:prettier@^2
+        version: prettier@2.8.8
       tsc-files:
         specifier: ^1.1.3
         version: 1.1.4(typescript@5.6.2)
@@ -232,7 +235,7 @@ importers:
         version: link:../business-unit
       '@commercetools-test-data/channel':
         specifier: 10.7.1
-        version: link:../channel
+        version: 10.7.1
       '@commercetools-test-data/commons':
         specifier: 10.7.1
         version: link:../commons
@@ -341,15 +344,18 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.7.1
         version: link:../../core
+      '@commercetools-test-data/type':
+        specifier: 10.7.1
+        version: link:../type
       '@commercetools-test-data/utils':
         specifier: 10.7.1
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: 7.14.0
+        specifier: ^7.0.0
         version: 7.14.0
       '@faker-js/faker':
-        specifier: ^9.0.0
-        version: 9.0.3
+        specifier: ^8.0.0
+        version: 8.4.1
 
   models/commons:
     dependencies:
@@ -646,7 +652,7 @@ importers:
         version: 7.24.6
       '@commercetools-test-data/channel':
         specifier: 10.7.1
-        version: link:../channel
+        version: 10.7.1
       '@commercetools-test-data/commons':
         specifier: 10.7.1
         version: link:../commons
@@ -829,7 +835,7 @@ importers:
         version: link:../category
       '@commercetools-test-data/channel':
         specifier: 10.7.1
-        version: link:../channel
+        version: 10.7.1
       '@commercetools-test-data/commons':
         specifier: 10.7.1
         version: link:../commons
@@ -1228,7 +1234,7 @@ importers:
         version: 7.24.6
       '@commercetools-test-data/channel':
         specifier: 10.7.1
-        version: link:../channel
+        version: 10.7.1
       '@commercetools-test-data/commons':
         specifier: 10.7.1
         version: link:../commons
@@ -1285,7 +1291,7 @@ importers:
         version: 7.24.6
       '@commercetools-test-data/channel':
         specifier: 10.7.1
-        version: link:../channel
+        version: 10.7.1
       '@commercetools-test-data/commons':
         specifier: 10.7.1
         version: link:../commons
@@ -2228,6 +2234,13 @@ packages:
     peerDependencies:
       eslint: 8.x
 
+  '@commercetools-test-data/channel@10.7.1':
+    resolution: {integrity: sha512-Hqy4/XG9cl+xm48lLcCJmqmG6O7C7zrNYNXP7rWOZe/NWNteBYs5BMkxcVW3gdUiWzxrkw8O61NVJfCW+wdgWw==}
+
+  '@commercetools/platform-sdk@7.12.0':
+    resolution: {integrity: sha512-fhO8kZgV1c1VuWe6pQ423dxat5E4y7uSyTjm5pO+yCO7EXdWT7IYkoP0xmnLay5kUuXxuD9GcTXobGxqkupESw==}
+    engines: {node: '>=14'}
+
   '@commercetools/platform-sdk@7.14.0':
     resolution: {integrity: sha512-08/7yAxZFa6s5iKWw+67x17wa4pqiG8WHAW3dECWhkMpTME65qTHz5eyDfcCq8Tayo1rp46g67/2mWxrqapRAA==}
     engines: {node: '>=14'}
@@ -2366,6 +2379,10 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@faker-js/faker@8.4.1':
+    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
 
   '@faker-js/faker@9.0.3':
     resolution: {integrity: sha512-lWrrK4QNlFSU+13PL9jMbMKLJYXDFu3tQfayBsMXX7KL/GiQeqfB1CzHkqD5UHBUtPAuPo6XwGbMFNdVMZObRA==}
@@ -7616,6 +7633,28 @@ snapshots:
       - jest
       - supports-color
 
+  '@commercetools-test-data/channel@10.7.1':
+    dependencies:
+      '@babel/runtime': 7.24.6
+      '@babel/runtime-corejs3': 7.24.6
+      '@commercetools-test-data/commons': link:models/commons
+      '@commercetools-test-data/core': link:core
+      '@commercetools-test-data/utils': link:utils
+      '@commercetools/platform-sdk': 7.12.0
+      '@faker-js/faker': 8.4.1
+    transitivePeerDependencies:
+      - encoding
+
+  '@commercetools/platform-sdk@7.12.0':
+    dependencies:
+      '@commercetools/sdk-client-v2': 2.5.0
+      '@commercetools/sdk-middleware-auth': 7.0.1
+      '@commercetools/sdk-middleware-http': 7.0.4
+      '@commercetools/sdk-middleware-logger': 3.0.0
+      '@commercetools/ts-client': 2.0.5
+    transitivePeerDependencies:
+      - encoding
+
   '@commercetools/platform-sdk@7.14.0':
     dependencies:
       '@commercetools/sdk-client-v2': 2.5.0
@@ -7828,6 +7867,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.1': {}
+
+  '@faker-js/faker@8.4.1': {}
 
   '@faker-js/faker@9.0.3': {}
 
