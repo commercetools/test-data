@@ -1,0 +1,25 @@
+{
+  "name": "@commercetools-test-data/generators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/commercetools-test-data-generators.cjs.js",
+  "module": "dist/commercetools-test-data-generators.esm.js",
+  "scripts": {
+    "generate": "tsx src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "lodash": "^4.17.21",
+    "mustache": "^4.2.0",
+    "prompts": "^2.4.2",
+    "tsx": "^4.19.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/mustache": "^4.2.5",
+    "@types/prompts": "^2.4.9"
+  }
+}
