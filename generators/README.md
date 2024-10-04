@@ -28,3 +28,5 @@ It has two main options:
 
 - Standalone package data model: Create a new public package in the repository
 - Child data model: Adds a new data model to an existing package
+
+Once the new model is created, you might want to check the contents of the new files and you will find some `TODO` comments with instructions about the next steps you should be following.
