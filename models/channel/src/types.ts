@@ -47,10 +47,6 @@ export type TChannelDraftGraphql = Omit<
   __typename: 'ChannelDraft';
 };
 
-// export type TChannelBuilder = TBuilder<Channel>;
-// export type TChannelDraftBuilder = TBuilder<ChannelDraft>;
-// export type TCreateChannelDraftBuilder = () => TChannelDraftBuilder;
-
 export type TCreateChannelBuilder<
   TChannelModel extends
     | TChannelRest
