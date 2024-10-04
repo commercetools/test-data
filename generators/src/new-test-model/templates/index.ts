@@ -24,23 +24,9 @@ const buildTemplatesConfig = (templatesDirectoryPath: string) => {
   });
 };
 
-// export const templates = readTemplates(__dirname).map((fileName) => {
-//   const [, templateFilePath] = fileName.split('templates/');
-//   const templateContent = readFileSync(fileName, 'utf-8');
-//   return {
-//     templatePath: templateFilePath.replace('.tpl', '.ts'),
-//     templateContent,
-//   };
-// }, {});
-
 export const packageTemplatesData = buildTemplatesConfig(
   join(__dirname, 'package')
 );
 export const modelTemplatesData = buildTemplatesConfig(
   join(__dirname, 'model')
 );
-
-// console.log('2 //// --->', {
-//   packageTemplatesData,
-//   modelTemplatesData,
-// });
