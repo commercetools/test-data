@@ -121,7 +121,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TGeometryGraphql> = {
 
 As you can see, these files are required to export two configuration objects (`restFieldsConfig`, `graphqlFieldsConfig`) which describe how to populate the properties of the data model when building the default version.
 
-The configuration objects has two properties:
+The configuration objects have two properties:
 
 - `fields` (**required**): Describe how the default values should be populated
 - `postBuild` (_optional_): Callback function to run modifications on the built data model
