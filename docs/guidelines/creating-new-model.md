@@ -7,7 +7,7 @@ In this document we explain the steps needed to build a new test data model.
 
 ## Context
 
-First of all, remember that a test data model is a set of objects that allows to create objects that mimic commercetools APIs responses which help during testing implementation.
+First of all, remember that a test data model is a set of objects that allow consumers to create objects that mimic commercetools APIs responses which help during testing implementation.
 
 Also, since our public services APIs expose our entities in both REST and GraphQL representations, we need to first get familiar with the one we're going to build the test data model for.
 
