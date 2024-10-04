@@ -153,7 +153,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 };
 ```
 
-In this example, `name` and `description` are values that are calculated based on the `nameAllLocales` and `descriptionAllLocales`. The latter need to be built first using the `postBuild` function.
+In this case, `name` and `description` depend on the values from `nameAllLocales` and `descriptionAllLocales` but we don't know them in advance, only once the data model has been built. The `postBuild` callback allows to manipulate the built object before it's returned to the consumer.
 
 This function just need to return an object with the updated properties and their values and it will be merged with the originally built one.
 
