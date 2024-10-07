@@ -1,4 +1,8 @@
-import { createSpecializedBuilder } from '@commercetools-test-data/core';
+import {
+  createCompatibilityBuilder,
+  createSpecializedBuilder,
+  TModelFieldsConfig,
+} from '@commercetools-test-data/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
   TCreateGeometryBuilder,
@@ -20,4 +24,15 @@ export const GraphqlModelBuilder: TCreateGeometryBuilder<
     name: 'GeometryGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
+  });
+
+export const CompatModelBuilder = <
+  TGeometryModel extends TGeometryRest | TGeometryGraphql = TGeometryRest,
+>() =>
+  createCompatibilityBuilder<TGeometryModel>({
+    name: 'GeometryCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TGeometryModel>,
+      graphql: graphqlFieldsConfig as TModelFieldsConfig<TGeometryModel>,
+    },
   });
