@@ -1,4 +1,5 @@
 import {
+  Geometry,
   GeometryGraphql,
   GeometryRest,
   LocalizedString,
@@ -6,35 +7,34 @@ import {
 import { TBuilder } from '@commercetools-test-data/core';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import { roles } from './constants';
-import type { TChannelRest, TChannelGraphql } from './types';
+import type { TChannelRest, TChannelGraphql, TChannel } from './types';
 import { Channel, ChannelGraphql, ChannelRest } from './index';
 
-const populateRestModel = (model: TBuilder<TChannelRest>) =>
+const populateCommon = <
+  TModel extends TChannel | TChannelRest | TChannelGraphql,
+>(
+  model: TBuilder<TModel>
+) =>
   model
-    .name(LocalizedString.random().en('Channel name'))
-    .description(LocalizedString.random().en('Channel description'))
     .reviewRatingStatistics({
       averageRating: 4.5,
       highestRating: 5,
       lowestRating: 1,
       count: 100,
       ratingsDistribution: { 1: 10, 2: 20, 3: 30, 4: 40, 5: 50 },
-    })
-    .custom(CustomFieldBooleanType.random())
+    } as TModel['reviewRatingStatistics'])
+    .custom(CustomFieldBooleanType.random());
+
+const populateRestModel = (model: TBuilder<TChannelRest>) =>
+  populateCommon(model)
+    .name(LocalizedString.random().en('Channel name'))
+    .description(LocalizedString.random().en('Channel description'))
     .geoLocation(GeometryRest.random());
 
 const populateGraphqlModel = (model: TBuilder<TChannelGraphql>) =>
-  model
+  populateCommon(model)
     .nameAllLocales(LocalizedString.random().en('Channel name'))
     .descriptionAllLocales(LocalizedString.random().en('Channel description'))
-    .reviewRatingStatistics({
-      averageRating: 4.5,
-      highestRating: 5,
-      lowestRating: 1,
-      count: 100,
-      ratingsDistribution: { 1: 10, 2: 20, 3: 30, 4: 40, 5: 50 },
-    })
-    .custom(CustomFieldBooleanType.random())
     .geoLocation(GeometryGraphql.random());
 
 const validateCommonFields = (model: TChannelRest | TChannelGraphql) => {
@@ -93,6 +93,7 @@ const validateGraphqlModel = (model: TChannelGraphql) => {
   validateCommonFields(model);
   expect(model).toEqual(
     expect.objectContaining({
+      __typename: 'Channel',
       createdBy: expect.objectContaining({
         clientId: expect.any(String),
         customerRef: expect.objectContaining({ typeId: 'customer' }),
@@ -143,7 +144,9 @@ describe('Channel model builders', () => {
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = populateGraphqlModel(ChannelGraphql.random()).build();
+    const graphqlModel = populateGraphqlModel(ChannelGraphql.random())
+      .geoLocation(Geometry.random())
+      .build();
 
     validateGraphqlModel(graphqlModel);
   });
@@ -157,7 +160,12 @@ describe('Channel model compatibility builders', () => {
   });
 
   it('builds a GraphQL model', () => {
-    const graphqlModel = populateGraphqlModel(Channel.random()).buildGraphql();
+    const graphqlModel = populateCommon(
+      Channel.random()
+        .geoLocation(Geometry.random())
+        .name(LocalizedString.random().en('Channel name'))
+        .description(LocalizedString.random().en('Channel description'))
+    ).buildGraphql<TChannelGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

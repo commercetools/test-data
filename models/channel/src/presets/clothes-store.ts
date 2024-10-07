@@ -1,14 +1,22 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { ChannelGraphql, ChannelRest } from '../index';
-import type { TChannelGraphql, TChannelRest } from '../types';
+import { Channel, ChannelGraphql, ChannelRest } from '../index';
+import type { TChannel, TChannelGraphql, TChannelRest } from '../types';
+
+const populatePreset = <TModel extends TChannelGraphql | TChannelRest>(
+  builder: TBuilder<TModel>,
+  nameField: keyof TModel = 'name'
+) => {
+  return builder[nameField](
+    LocalizedString.presets.empty().en('Clothes Store')
+  ).key('food-store-key');
+};
 
 export const restPreset = (): TBuilder<TChannelRest> =>
-  ChannelRest.random()
-    .key('food-store-key')
-    .name(LocalizedString.presets.empty().en('Clothes Store'));
+  populatePreset(ChannelRest.random());
 
 export const graphqlPreset = (): TBuilder<TChannelGraphql> =>
-  ChannelGraphql.random()
-    .key('food-store-key')
-    .nameAllLocales([LocalizedString.presets.empty().en('Clothes Store')]);
+  populatePreset(ChannelGraphql.random(), 'nameAllLocales');
+
+export const compatPreset = (): TBuilder<TChannel> =>
+  populatePreset(Channel.random());

@@ -2,6 +2,7 @@ import {
   Address,
   ClientLogging,
   LocalizedString,
+  TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import {
   fake,
@@ -42,7 +43,21 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
     nameAllLocales: null,
     descriptionAllLocales: null,
   },
-  postBuild: (model) => {
+  postBuild: (model, context) => {
+    if (context?.isCompatMode) {
+      const nameAllLocales = model.name as unknown as TLocalizedStringGraphql;
+      const descriptionAllLocales =
+        model.description as unknown as TLocalizedStringGraphql;
+      return {
+        name: LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales),
+        nameAllLocales,
+        description: LocalizedString.resolveGraphqlDefaultLocaleValue(
+          descriptionAllLocales
+        ),
+        descriptionAllLocales: descriptionAllLocales,
+      };
+    }
+
     const name = model.nameAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
       : undefined;
