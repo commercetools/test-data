@@ -185,10 +185,9 @@ function Builder<Model>({
               if (postBuilder) {
                 transformed = {
                   ...transformed,
-                  ...postBuilder(
-                    transformed,
-                    Boolean(compatConfig?.postBuilders)
-                  ),
+                  ...postBuilder(transformed, {
+                    isCompatMode: Boolean(compatConfig?.postBuilders),
+                  }),
                 };
               }
 
