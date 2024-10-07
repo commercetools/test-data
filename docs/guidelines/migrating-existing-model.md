@@ -437,7 +437,7 @@ We need to keep the current tests passing (using the compatibility builder) but 
 
 ### Presets
 
-Presets are just prepopulated instances of the data models with some static data.
+Presets are just pre-populated instances of the data models with some static data.
 With the legacy version, we were just exporting one object per preset, but since we now have three builders in the migrated version of the data models, presets need to expose one version for each one of them.
 
 This is how the legacy version looks like:
@@ -468,29 +468,27 @@ import { Channel, ChannelGraphql, ChannelRest } from '../index';
 import type { TChannel, TChannelGraphql, TChannelRest } from '../types';
 
 const populatePreset = <TModel extends TChannelGraphql | TChannelRest>(
-  builder: TBuilder<TModel>
+  builder: TBuilder<TModel>,
+  nameField: keyof TModel = 'name'
 ) => {
-  return builder
-    .key('food-store-key')
-    .name(
-      LocalizedString.presets
-        .empty()
-        .en('Food Store')
-        .de('Lebensmittelgeschäft')
-    );
+  return builder[nameField](
+    LocalizedString.presets.empty().en('Food Store').de('Lebensmittelgeschäft')
+  ).key('food-store-key');
 };
 
 export const restPreset = (): TBuilder<TChannelRest> =>
   populatePreset(ChannelRest.random());
 
 export const graphqlPreset = (): TBuilder<TChannelGraphql> =>
-  populatePreset(ChannelGraphql.random());
+  populatePreset(ChannelGraphql.random(), 'nameAllLocales');
 
 export const compatPreset = (): TBuilder<TChannel> =>
   populatePreset(Channel.random());
+er<TChannel> =>
+  populatePreset(Channel.random());
 ```
 
-Bear in mind in this example the same initialization values are similar for all representations but you might need to have a different implementation (ex: `graphqlPreset`) otherwise.
+Bear in mind you might find different requirements for the GraphQL version where you might need to tailor a bit that preset generator. In this case, we can still manage population with a helper function using an optional parameter.
 
 Also, there are data models which have generated presets for sample data (B2B and B2C). In that case, you should be using the [test-data-generation](https://github.com/commercetools/test-data-generation) repository to rebuild those presets.
 That repository has already been setup to support generating sample data presets for both legacy and new versions of the data models.
