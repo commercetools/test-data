@@ -152,12 +152,12 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
 
 Probably you have spotted the `postBuild` property in the GraphQL config object.
 
-This is an optional and we should only use if there are any dependencies among the data model fields.
-In this case, `name` and `description` depend on the values from `nameAllLocales` and `descriptionAllLocales` but we don't know them in advance but only once the data model has been built. The `postBuild` callback allows to manipulate the built object before it's returned to the consumer.
+This is optional and we should only use it if there are any dependencies among the data model fields.
+In this case, `name` and `description` depend on the values from `nameAllLocales` and `descriptionAllLocales`. We don't know the value in advance, but will only once the data model has been built. The `postBuild` callback allows us to manipulate the built object before it's returned to the consumer.
 
 ## Testing
 
-You are expected to implement tests for the builders (rest and graphql) that cover the generation of the default version of the data model as well as customized ones.
+You are expected to implement tests for the builders (REST and GraphQL) that cover the generation of the default version of the data model as well as customized ones.
 
 Examples of code to test:
 
