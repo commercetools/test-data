@@ -12,6 +12,7 @@ const transformers = {
     buildFields: ['customer'],
   }),
   graphql: Transformer<TClientLogging, TClientLoggingGraphql>('graphql', {
+    buildFields: false,
     replaceFields: ({ fields }) => {
       const customerRef = buildField(
         fields.customer,

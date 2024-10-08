@@ -5,6 +5,7 @@ import type { TCreateAddressBuilder, TAddress } from './types';
 
 const Model: TCreateAddressBuilder = () =>
   Builder<TAddress>({
+    name: 'Address',
     generator,
     transformers,
   });

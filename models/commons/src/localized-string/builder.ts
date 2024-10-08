@@ -5,6 +5,7 @@ import type { TCreateLocalizedStringBuilder, TLocalizedString } from './types';
 
 const Model: TCreateLocalizedStringBuilder = () =>
   Builder<TLocalizedString>({
+    name: 'LocalizedString',
     generator,
     transformers,
   });

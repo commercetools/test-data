@@ -11,6 +11,7 @@ const transformers = {
   graphql: Transformer<TAttributeEnumType, TAttributeEnumTypeGraphql>(
     'graphql',
     {
+      buildFields: false,
       replaceFields: ({ fields }) => ({
         ...fields,
         values: {

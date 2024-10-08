@@ -8,6 +8,7 @@ import transformers from './transformers';
 
 const Model: TCreateLocalizedStringDraftBuilder = () =>
   Builder<TLocalizedStringDraft>({
+    name: 'LocalizedStringDraft',
     generator,
     transformers,
   });

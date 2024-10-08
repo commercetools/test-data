@@ -1,3 +1,6 @@
+import Builder from './builder';
+import Generator from './generator';
+import Transformer from './transformer';
 import type {
   TReferenceObject,
   TExpandedReference,
@@ -9,6 +12,7 @@ import type {
   TBuildFieldMeta,
   TTransformType,
   TTransformBuildName,
+  TModelFieldsConfig,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -168,6 +172,80 @@ const buildRestList = <Model>(
   });
 };
 
+type TCreateSpecializedTransformersParams<TModel> = {
+  type: 'rest' | 'graphql';
+  buildFields?: (keyof TModel)[];
+};
+const createSpecializedTransformers = <TModel>({
+  type,
+  buildFields,
+}: TCreateSpecializedTransformersParams<TModel>) => {
+  return {
+    [type]: Transformer<TModel, TModel>(type, {
+      buildFields: buildFields,
+    }),
+  };
+};
+
+type TCreateSpecializedBuilderParams<TModel> = {
+  modelFieldsConfig: TModelFieldsConfig<TModel>;
+  type: 'rest' | 'graphql';
+  name: string;
+};
+const createSpecializedBuilder = <TModel>(
+  params: TCreateSpecializedBuilderParams<TModel>
+) => {
+  const modelBuilder = Builder<TModel>({
+    type: params.type,
+    generator: Generator<TModel>({
+      fields: params.modelFieldsConfig.fields,
+    }),
+    name: params.name,
+    transformers: createSpecializedTransformers<TModel>({
+      type: params.type,
+    }),
+    postBuild: params.modelFieldsConfig.postBuild,
+  });
+
+  return modelBuilder as TBuilder<TModel>;
+};
+
+const createCompatibilityBuilder = <TModel>(params: {
+  name: string;
+  modelFieldsConfig: {
+    rest: TModelFieldsConfig<TModel>;
+    graphql: TModelFieldsConfig<TModel>;
+  };
+}) => {
+  const modelBuilder = Builder<TModel>({
+    name: params.name,
+    compatConfig: {
+      generators: {
+        rest: Generator<TModel>({
+          fields: params.modelFieldsConfig.rest.fields,
+        }),
+        graphql: Generator<TModel>({
+          fields: params.modelFieldsConfig.graphql.fields,
+        }),
+      },
+      postBuilders: {
+        rest: params.modelFieldsConfig.rest.postBuild,
+        graphql: params.modelFieldsConfig.graphql.postBuild,
+      },
+    },
+    transformers: {
+      ...createSpecializedTransformers<TModel>({
+        type: 'rest',
+      }),
+      ...createSpecializedTransformers<TModel>({
+        type: 'graphql',
+      }),
+    },
+  });
+
+  return modelBuilder;
+};
+
 export {
   isFunction,
   isString,
@@ -186,4 +264,7 @@ export {
   buildFields,
   buildGraphqlList,
   buildRestList,
+  createSpecializedTransformers,
+  createSpecializedBuilder,
+  createCompatibilityBuilder,
 };

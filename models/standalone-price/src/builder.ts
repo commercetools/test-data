@@ -5,6 +5,7 @@ import type { TStandalonePrice, TCreateStandalonePriceBuilder } from './types';
 
 const Model: TCreateStandalonePriceBuilder = () =>
   Builder<TStandalonePrice>({
+    name: 'StandalonePrice',
     generator,
     transformers,
   });
