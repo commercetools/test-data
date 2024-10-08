@@ -33,6 +33,10 @@ To know more about how to work and build data models, [check out the documentati
 
 Once it's done, you can run `pnpm test` to test your changes.
 
+## Building a new test data model
+
+Please refer to [this documentation](docs/guidelines/creating-new-model.md) to get detailed information.
+
 ## Adding changesets
 
 commercetools test-data uses [changesets](https://github.com/atlassian/changesets) to do versioning and creating changelogs.
