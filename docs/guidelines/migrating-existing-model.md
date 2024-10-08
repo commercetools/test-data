@@ -356,7 +356,7 @@ const graphqlFoodStoreChannel = Channel.presets
   .buildGraphql<TChannelGraphql>();
 ```
 
-Again, since we want to be backwards, we need to keep that API and add the new builders.
+Again, since we want to be backwards compatible, we need to keep that API and add the new builders.
 Here is what it should look like:
 
 ```ts
