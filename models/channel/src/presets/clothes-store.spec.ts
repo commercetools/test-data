@@ -3,7 +3,7 @@ import { restPreset, graphqlPreset, compatPreset } from './clothes-store';
 
 const restExpectation = (channel: TChannelRest) => {
   expect(channel).toMatchObject({
-    key: 'food-store-key',
+    key: 'clothes-store-key',
     name: {
       en: 'Clothes Store',
     },
@@ -12,7 +12,7 @@ const restExpectation = (channel: TChannelRest) => {
 
 const graphqlExpectation = (channel: TChannelGraphql) => {
   expect(channel).toMatchObject({
-    key: 'food-store-key',
+    key: 'clothes-store-key',
     name: 'Clothes Store',
     nameAllLocales: [
       {

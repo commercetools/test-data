@@ -9,7 +9,7 @@ const populatePreset = <TModel extends TChannelGraphql | TChannelRest>(
 ) => {
   return builder[nameField](
     LocalizedString.presets.empty().en('Clothes Store')
-  ).key('food-store-key');
+  ).key('clothes-store-key');
 };
 
 export const restPreset = (): TBuilder<TChannelRest> =>
