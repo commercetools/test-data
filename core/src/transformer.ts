@@ -24,7 +24,7 @@ function Transformer<Model, TransformedModel>(
     const fieldsToRemove = transformOptions?.removeFields;
     const fieldsToBuild = transformOptions?.buildFields;
 
-    if (fieldsToBuild) {
+    if (fieldsToBuild && Array.isArray(fieldsToBuild)) {
       fieldsToBuild.forEach((fieldToBuild) => {
         const field = transformedFields[fieldToBuild] as unknown as
           | TBuilder<Model>
@@ -43,7 +43,7 @@ function Transformer<Model, TransformedModel>(
           };
         }
       });
-    } else if (fieldsToBuild !== false) {
+    } else if (fieldsToBuild === 'all') {
       for (const [key, value] of Object.entries(transformedFields as {})) {
         if (!value || !isBuilder(value)) continue;
         const fieldKey = key as keyof Model;

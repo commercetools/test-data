@@ -178,17 +178,14 @@ const buildRestList = <Model, RestModel = Model>(
   );
 };
 
-type TCreateSpecializedTransformersParams<TModel> = {
-  type: 'rest' | 'graphql';
-  buildFields?: (keyof TModel)[];
-};
 const createSpecializedTransformers = <TModel>({
   type,
-  buildFields,
-}: TCreateSpecializedTransformersParams<TModel>) => {
+}: {
+  type: 'rest' | 'graphql';
+}) => {
   return {
     [type]: Transformer<TModel, TModel>(type, {
-      buildFields: buildFields,
+      buildFields: 'all',
     }),
   };
 };

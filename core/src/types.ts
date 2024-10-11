@@ -51,8 +51,8 @@ export type TTransformerOptions<Model, TransformedModel> = {
   addFields?: (args: { fields: Model }) => Partial<TransformedModel>;
   removeFields?: (keyof Model)[];
   replaceFields?: (args: { fields: Model }) => TransformedModel;
-  // The `false` value means that the transformer should not build any model's fields
-  buildFields?: (keyof Model)[] | false;
+  // The `all` value means that the transformer should build all nested models fields
+  buildFields?: (keyof Model)[] | 'all';
 };
 
 export type TTransformFnParams<Model> = {
