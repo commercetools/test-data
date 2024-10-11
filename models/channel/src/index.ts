@@ -5,12 +5,10 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-// export * as ChannelDraft from './channel-draft';
 export * from './channel-draft';
 export * as Channel from '.';
 
 export * as constants from './constants';
-// export { default as draftPresets } from './channel-draft/presets';
 export * from './types';
 
 export const ChannelRest = {
