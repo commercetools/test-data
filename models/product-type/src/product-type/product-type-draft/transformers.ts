@@ -10,7 +10,6 @@ const transformers = {
     buildFields: ['attributes'],
   }),
   graphql: Transformer<TProductTypeDraft, TProductTypeDraftGraphql>('graphql', {
-    buildFields: false,
     addFields: ({ fields }) => {
       return {
         attributeDefinitions: fields.attributes!.map((attribute) =>
