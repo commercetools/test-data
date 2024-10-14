@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-type
 
+## 10.8.1
+
+### Patch Changes
+
+- [#693](https://github.com/commercetools/test-data/pull/693) [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update transformers configuration to comply with the new `buildFields` behaviour.
+
+- Updated dependencies [[`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93), [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93)]:
+  - @commercetools-test-data/core@10.8.1
+  - @commercetools-test-data/commons@10.8.1
+  - @commercetools-test-data/type@10.8.1
+  - @commercetools-test-data/utils@10.8.1
+
 ## 10.8.0
 
 ### Minor Changes
