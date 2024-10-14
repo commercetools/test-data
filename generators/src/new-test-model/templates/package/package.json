@@ -1,20 +1,20 @@
 {
-  "name": "@commercetools-test-data/{{modelCodename}}",
+  "name": "@commercetools-test-data/{{it.modelCodename}}",
   "version": "10.1.3",
-  "description": "Data model for commercetools API {{modelName}}",
+  "description": "Data model for commercetools API {{it.modelName}}",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/commercetools/test-data.git",
-    "directory": "models/{{modelCodename}}"
+    "directory": "models/{{it.modelCodename}}"
   },
   "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-{{modelCodename}}.cjs.js",
-  "module": "dist/commercetools-test-data-{{modelCodename}}.esm.js",
+  "main": "dist/commercetools-test-data-{{it.modelCodename}}.cjs.js",
+  "module": "dist/commercetools-test-data-{{it.modelCodename}}.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",

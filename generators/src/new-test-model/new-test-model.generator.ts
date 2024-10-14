@@ -1,8 +1,8 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import snakeCase from 'lodash/snakeCase';
-import Mustache from 'mustache';
 import prompts from 'prompts';
+import { render as renderTemplate } from 'squirrelly';
 import { CodeGenerator } from '../types';
 import { packageTemplatesData, modelTemplatesData } from './templates';
 
@@ -57,25 +57,15 @@ export const newTestModelGenerator: CodeGenerator = {
     // 2. Generate the files
     const templatesData = { modelName, modelCodename };
 
-    console.log('Generating files...');
-    console.log({
-      outputPath,
-      templatesData,
-      packageTemplatesData: packageTemplatesData.map(
-        (template) => template.templatePath
-      ),
-      modelTemplatesData: modelTemplatesData.map(
-        (template) => template.templatePath
-      ),
-    });
-
+    console.log(''); // a simple line break
     if (generationType === 'standalone') {
       packageTemplatesData.forEach((template) => {
         const filePath = join(outputPath, template.templatePath);
         ensureDirectory(filePath);
+        console.log(`Generating file: ${filePath}`);
         writeFileSync(
           filePath,
-          Mustache.render(template.templateContent, templatesData)
+          renderTemplate(template.templateContent, templatesData)
         );
       });
     }
@@ -87,9 +77,10 @@ export const newTestModelGenerator: CodeGenerator = {
         template.templatePath
       );
       ensureDirectory(filePath);
+      console.log(`Generating file: ${filePath}`);
       writeFileSync(
         filePath,
-        Mustache.render(template.templateContent, templatesData)
+        renderTemplate(template.templateContent, templatesData)
       );
     });
 

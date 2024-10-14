@@ -1,17 +1,17 @@
 import { createSpecializedBuilder } from '@commercetools-test-data/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
-import type { TCreate{{modelName}}Builder, T{{modelName}}Graphql, T{{modelName}}Rest } from './types';
+import type { TCreate{{it.modelName}}Builder, T{{it.modelName}}Graphql, T{{it.modelName}}Rest } from './types';
 
-export const RestModelBuilder: TCreate{{modelName}}Builder<T{{modelName}}Rest> = () =>
+export const RestModelBuilder: TCreate{{it.modelName}}Builder<T{{it.modelName}}Rest> = () =>
   createSpecializedBuilder({
-    name: '{{modelName}}RestBuilder',
+    name: '{{it.modelName}}RestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCreate{{modelName}}Builder<T{{modelName}}Graphql> = () =>
+export const GraphqlModelBuilder: TCreate{{it.modelName}}Builder<T{{it.modelName}}Graphql> = () =>
   createSpecializedBuilder({
-    name: '{{modelName}}GraphqlBuilder',
+    name: '{{it.modelName}}GraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

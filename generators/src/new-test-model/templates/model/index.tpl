@@ -1,13 +1,13 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
-import * as {{modelName}}Presets from './presets';
+import * as {{it.modelName}}Presets from './presets';
 export * from './types';
 
-export const {{modelName}}Rest = {
+export const {{it.modelName}}Rest = {
   random: RestModelBuilder,
-  presets: {{modelName}}Presets.restPresets,
+  presets: {{it.modelName}}Presets.restPresets,
 };
 
-export const {{modelName}}Graphql = {
+export const {{it.modelName}}Graphql = {
   random: GraphqlModelBuilder,
-  presets: {{modelName}}Presets.graphqlPresets
+  presets: {{it.modelName}}Presets.graphqlPresets
 };

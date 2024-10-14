@@ -1,1 +1,1 @@
-# @commercetools-test-data/{{modelCodename}}
+# @commercetools-test-data/{{it.modelCodename}}

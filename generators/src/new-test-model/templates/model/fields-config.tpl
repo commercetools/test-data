@@ -3,7 +3,7 @@ import {
   type TModelFieldsConfig,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import type { T{{modelName}}Graphql, T{{modelName}}Rest } from './types';
+import type { T{{it.modelName}}Graphql, T{{it.modelName}}Rest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
@@ -15,16 +15,16 @@ const commonFieldsConfig = {
 };
 
 // TODO: You just need to place here fields initializers that don't match with the REST API
-export const restFieldsConfig: TModelFieldsConfig<T{{modelName}}Rest> = {
+export const restFieldsConfig: TModelFieldsConfig<T{{it.modelName}}Rest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
 // TODO: You just need to place here fields initializers that don't match with the GraphQL API
-export const graphqlFieldsConfig: TModelFieldsConfig<T{{modelName}}Graphql> = {
+export const graphqlFieldsConfig: TModelFieldsConfig<T{{it.modelName}}Graphql> = {
   fields: {
     ...commonFieldsConfig,
-    __typename: '{{modelName}}',
+    __typename: '{{it.modelName}}',
   },
 };
