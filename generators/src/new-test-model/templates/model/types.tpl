@@ -8,7 +8,7 @@ export type T{{modelName}}Rest = {{modelName}};
 // TODO: Check wether the graphql version has different properties
 // or types than the rest version.
 // You might want to use the GraphQL Explorer for that
-// (https://mc.europe-west1.gcp.escemo.com/test-with-big-data-44/graphql-explorer-commercetools/platform)
+// (https://<merchant_center_domain>/<project_key>/graphql-explorer-commercetools/platform)
 export type T{{modelName}}Graphql = {{modelName}} & {
   __typename: '{{modelName}}';
 };
