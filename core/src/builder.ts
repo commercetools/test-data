@@ -160,7 +160,12 @@ function Builder<Model>({
                   : type === 'rest' || propToSet === 'buildRest'
                     ? 'rest'
                     : 'default';
-              transformed = (transformers?.[transformersType]?.transform({
+
+              // If we don't find a transformer, use REST by default as this only
+              // happens in the compatibility mode, where we don't have a 'default' transformer.
+              const transformer =
+                transformers?.[transformersType] || transformers?.rest;
+              transformed = (transformer?.transform({
                 fields: built,
                 builderName: name,
               }) ?? built) as Model;
@@ -180,7 +185,9 @@ function Builder<Model>({
               if (postBuilder) {
                 transformed = {
                   ...transformed,
-                  ...postBuilder(transformed),
+                  ...postBuilder(transformed, {
+                    isCompatMode: Boolean(compatConfig?.postBuilders),
+                  }),
                 };
               }
 

@@ -1,41 +1,56 @@
 import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
+  TGeometryGraphql,
+  TGeometryRest,
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
+/**
+ * @deprecated use `TChannelRest` instead
+ */
 export type TChannel = Channel;
-export type TChannelDraft = ChannelDraft;
+export type TChannelRest = Omit<Channel, 'geoLocation'> & {
+  geoLocation?: TGeometryRest;
+};
+export type TChannelGraphql = Omit<
+  Channel,
+  // In GraphQL, these properties have different shapes.
+  'name' | 'description' | 'createdBy' | 'lastModifiedBy' | 'geoLocation'
+> & {
+  __typename: 'Channel';
+  createdBy?: TClientLoggingGraphql;
+  lastModifiedBy?: TClientLoggingGraphql;
+  name?: string;
+  nameAllLocales?: TLocalizedStringGraphql | null;
+  description?: string;
+  descriptionAllLocales?: TLocalizedStringGraphql | null;
+  geoLocation?: TGeometryGraphql;
+};
 
+/**
+ * @deprecated use `TChannelDraftRest` instead
+ */
+export type TChannelDraft = ChannelDraft;
+export type TChannelDraftRest = Omit<ChannelDraft, 'geoLocation'> & {
+  geoLocation?: TGeometryRest;
+};
 export type TChannelDraftGraphql = Omit<
-  TChannelDraft,
-  'name' | 'description'
+  ChannelDraft,
+  'name' | 'description' | 'geoLocation'
 > & {
   name?: TLocalizedStringDraftGraphql;
   description?: TLocalizedStringDraftGraphql;
+  geoLocation?: TGeometryGraphql;
+  __typename: 'ChannelDraft';
 };
 
-export type TChannelGraphql = Omit<
-  TChannel,
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
-  | 'name'
-  // In GraphQL, we prefer to use `descriptionAllLocales` instead of `description`.
-  | 'description'
-  // In GraphQL, the object shape is different.
-  | 'createdBy'
-  // In GraphQL, the object shape is different.
-  | 'lastModifiedBy'
-> & {
-  __typename: 'Channel';
-  createdBy: TClientLoggingGraphql;
-  lastModifiedBy: TClientLoggingGraphql;
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
-};
-
-export type TChannelBuilder = TBuilder<Channel>;
-export type TChannelDraftBuilder = TBuilder<ChannelDraft>;
-export type TCreateChannelBuilder = () => TChannelBuilder;
-export type TCreateChannelDraftBuilder = () => TChannelDraftBuilder;
+export type TCreateChannelBuilder<
+  TChannelModel extends
+    | TChannelRest
+    | TChannelGraphql
+    | TChannelDraftRest
+    | TChannelDraftGraphql,
+> = () => TBuilder<TChannelModel>;

@@ -1,8 +1,28 @@
-export * as ChannelDraft from './channel-draft';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatChannelModelBuilder,
+} from './builders';
+import * as modelPresets from './presets';
+
+export * from './channel-draft';
 export * as Channel from '.';
 
-export { default as random } from './builder';
 export * as constants from './constants';
-export { default as presets } from './presets';
-export { default as draftPresets } from './channel-draft/presets';
 export * from './types';
+
+export const ChannelRest = {
+  random: RestModelBuilder,
+  presets: modelPresets.restPresets,
+};
+
+export const ChannelGraphql = {
+  random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `ChannelRest` or `ChannelGraphql` exported models instead of `Channel`.
+ */
+export const random = CompatChannelModelBuilder;
+export const presets = modelPresets.restPresets;
