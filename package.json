@@ -4,7 +4,7 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": ["core", "graphql-types", "models/*", "utils"]
+    "packages": ["core", "graphql-types", "models/*", "utils", "generators"]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -23,7 +23,8 @@
     "generate-types:settings": "graphql-codegen -r dotenv/config --config codegen.settings.yml",
     "generate-types:mc": "graphql-codegen -r dotenv/config --config codegen.mc.yml",
     "generate-types:core": "graphql-codegen -r dotenv/config --config codegen.core.yml",
-    "generate-types": "pnpm generate-types:settings && generate-types:mc && generate-types:core"
+    "generate-types": "pnpm generate-types:settings && generate-types:mc && generate-types:core",
+    "generate-model": "pnpm --filter @commercetools-test-data/generators generate"
   },
   "dependencies": {
     "@babel/core": "^7.21.0",
