@@ -9,6 +9,9 @@
     "channel",
     "commons",
     "core",
+    "quote",
+    "quote-request",
+    "staged-quote",
     "package.json"
   ],
   "preconstruct": {
@@ -16,7 +19,10 @@
       "index.ts",
       "channel.ts",
       "commons.ts",
-      "core.ts"
+      "core.ts",
+      "quote.ts",
+      "quote-request.ts",
+      "staged-quote.ts"
     ]
   },
   "keywords": [],

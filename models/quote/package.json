@@ -15,7 +15,10 @@
   },
   "main": "dist/commercetools-test-data-quote.cjs.js",
   "module": "dist/commercetools-test-data-quote.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": ["dist", "quote", "quote-request", "staged-quote", "package.json", "LICENSE", "README.md"],
+  "preconstruct": {
+    "entrypoints": ["index.ts", "quote/index.ts", "quote-request/index.ts", "staged-quote/index.ts"]
+  },
   "sideEffects": false,
   "dependencies": {
     "@babel/runtime": "^7.17.9",
@@ -26,8 +29,6 @@
     "@commercetools-test-data/core": "10.14.2",
     "@commercetools-test-data/customer": "10.14.2",
     "@commercetools-test-data/customer-group": "10.14.2",
-    "@commercetools-test-data/quote-request": "10.14.2",
-    "@commercetools-test-data/staged-quote": "^10.14.2",
     "@commercetools-test-data/store": "10.14.2",
     "@commercetools-test-data/utils": "10.14.2",
     "@commercetools/platform-sdk": "8.5.0",

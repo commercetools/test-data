@@ -1146,51 +1146,6 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 10.14.2
         version: link:../customer-group
-      '@commercetools-test-data/quote-request':
-        specifier: 10.14.2
-        version: link:../quote-request
-      '@commercetools-test-data/staged-quote':
-        specifier: ^10.14.2
-        version: link:../staged-quote
-      '@commercetools-test-data/store':
-        specifier: 10.14.2
-        version: link:../store
-      '@commercetools-test-data/utils':
-        specifier: 10.14.2
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: 8.5.0
-        version: 8.5.0
-      '@faker-js/faker':
-        specifier: ^9.0.0
-        version: 9.0.3
-
-  models/quote-request:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.24.6
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.24.6
-      '@commercetools-test-data/business-unit':
-        specifier: 10.14.2
-        version: link:../business-unit
-      '@commercetools-test-data/cart':
-        specifier: 10.14.2
-        version: link:../cart
-      '@commercetools-test-data/commons':
-        specifier: 10.14.2
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 10.14.2
-        version: link:../../core
-      '@commercetools-test-data/customer':
-        specifier: 10.14.2
-        version: link:../customer
-      '@commercetools-test-data/customer-group':
-        specifier: 10.14.2
-        version: link:../customer-group
       '@commercetools-test-data/store':
         specifier: 10.14.2
         version: link:../store
@@ -1272,48 +1227,6 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
-      '@commercetools-test-data/utils':
-        specifier: 10.14.2
-        version: link:../../utils
-      '@commercetools/platform-sdk':
-        specifier: 8.5.0
-        version: 8.5.0
-      '@faker-js/faker':
-        specifier: ^9.0.0
-        version: 9.0.3
-
-  models/staged-quote:
-    dependencies:
-      '@babel/runtime':
-        specifier: ^7.17.9
-        version: 7.24.6
-      '@babel/runtime-corejs3':
-        specifier: ^7.17.9
-        version: 7.24.6
-      '@commercetools-test-data/business-unit':
-        specifier: 10.14.2
-        version: link:../business-unit
-      '@commercetools-test-data/cart':
-        specifier: 10.14.2
-        version: link:../cart
-      '@commercetools-test-data/commons':
-        specifier: 10.14.2
-        version: link:../commons
-      '@commercetools-test-data/core':
-        specifier: 10.14.2
-        version: link:../../core
-      '@commercetools-test-data/customer':
-        specifier: 10.14.2
-        version: link:../customer
-      '@commercetools-test-data/customer-group':
-        specifier: 10.14.2
-        version: link:../customer-group
-      '@commercetools-test-data/quote-request':
-        specifier: 10.14.2
-        version: link:../quote-request
-      '@commercetools-test-data/store':
-        specifier: 10.14.2
-        version: link:../store
       '@commercetools-test-data/utils':
         specifier: 10.14.2
         version: link:../../utils
@@ -1616,7 +1529,7 @@ importers:
         version: link:../../models/quote
       '@commercetools-test-data/quote-request':
         specifier: 10.8.1
-        version: link:../../models/quote-request
+        version: 10.8.1
       '@commercetools-test-data/review':
         specifier: 10.8.1
         version: link:../../models/review
@@ -1628,7 +1541,7 @@ importers:
         version: link:../../models/shopping-list
       '@commercetools-test-data/staged-quote':
         specifier: 10.8.1
-        version: link:../../models/staged-quote
+        version: 10.8.1
       '@commercetools-test-data/standalone-price':
         specifier: 10.8.1
         version: link:../../models/standalone-price
@@ -2556,9 +2469,15 @@ packages:
     peerDependencies:
       eslint: 8.x
 
-  '@commercetools/platform-sdk@8.5.0':
-    resolution: {integrity: sha512-lotww0wdrdroiHilwYdRq8DUUuZjiY7IG3Hv1kDHcJkF1eXPYk2dRCKYxtBybBRugZLAmXg0eBgGmI82CvOPsA==}
-    engines: {node: '>=18'}
+  '@commercetools-test-data/quote-request@10.8.1':
+    resolution: {integrity: sha512-auynwM1AQi7zBvVp9g3cDhqJms0BzVdKYXESJuOqENMQRJ6Rgz50gRObMxJH5DOA1hyFQNGiyU8UbFfD2FvctQ==}
+
+  '@commercetools-test-data/staged-quote@10.8.1':
+    resolution: {integrity: sha512-yex4WbyvzUvIyhPTnchNH6AoHHg6Bzut1F8Vz/l65Szy0mVmS4YkA46y4ErI4zZTNdhR8RLNXscaS7pByBrhzw==}
+
+  '@commercetools/platform-sdk@7.14.0':
+    resolution: {integrity: sha512-08/7yAxZFa6s5iKWw+67x17wa4pqiG8WHAW3dECWhkMpTME65qTHz5eyDfcCq8Tayo1rp46g67/2mWxrqapRAA==}
+    engines: {node: '>=14'}
 
   '@commercetools/sdk-client-v2@3.0.0':
     resolution: {integrity: sha512-AU0qyd41lv3l7X/e17mwRbtqGUMCJrCP25/ca3CMGvLGYGLx8zFu5zUYggOyEMTkViwG3NlY83zTTG0/YoUo8Q==}
@@ -8224,7 +8143,42 @@ snapshots:
       - supports-color
       - ts-jest
 
-  '@commercetools/platform-sdk@8.5.0':
+  '@commercetools-test-data/quote-request@10.8.1':
+    dependencies:
+      '@babel/runtime': 7.17.9
+      '@babel/runtime-corejs3': 7.17.9
+      '@commercetools-test-data/business-unit': link:models/business-unit
+      '@commercetools-test-data/cart': link:models/cart
+      '@commercetools-test-data/commons': link:models/commons
+      '@commercetools-test-data/core': link:core
+      '@commercetools-test-data/customer': link:models/customer
+      '@commercetools-test-data/customer-group': link:models/customer-group
+      '@commercetools-test-data/store': link:models/store
+      '@commercetools-test-data/utils': link:utils
+      '@commercetools/platform-sdk': 7.14.0
+      '@faker-js/faker': 9.0.3
+    transitivePeerDependencies:
+      - encoding
+
+  '@commercetools-test-data/staged-quote@10.8.1':
+    dependencies:
+      '@babel/runtime': 7.17.9
+      '@babel/runtime-corejs3': 7.17.9
+      '@commercetools-test-data/business-unit': link:models/business-unit
+      '@commercetools-test-data/cart': link:models/cart
+      '@commercetools-test-data/commons': link:models/commons
+      '@commercetools-test-data/core': link:core
+      '@commercetools-test-data/customer': link:models/customer
+      '@commercetools-test-data/customer-group': link:models/customer-group
+      '@commercetools-test-data/quote-request': 10.8.1
+      '@commercetools-test-data/store': link:models/store
+      '@commercetools-test-data/utils': link:utils
+      '@commercetools/platform-sdk': 7.14.0
+      '@faker-js/faker': 9.0.3
+    transitivePeerDependencies:
+      - encoding
+
+  '@commercetools/platform-sdk@7.14.0':
     dependencies:
       '@commercetools/sdk-client-v2': 3.0.0
       '@commercetools/sdk-middleware-auth': 7.0.1
