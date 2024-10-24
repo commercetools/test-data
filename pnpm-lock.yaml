@@ -625,6 +625,30 @@ importers:
         specifier: ^9.0.0
         version: 9.0.3
 
+  models/discounted-price:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.17.9
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.17.9
+      '@commercetools-test-data/commons':
+        specifier: 10.1.3
+        version: 10.1.3
+      '@commercetools-test-data/core':
+        specifier: 10.1.3
+        version: 10.1.3
+      '@commercetools-test-data/utils':
+        specifier: 10.1.3
+        version: 10.1.3
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.14.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
   models/discounts-custom-view:
     dependencies:
       '@babel/runtime':
@@ -2273,6 +2297,15 @@ packages:
     peerDependencies:
       eslint: 8.x
 
+  '@commercetools-test-data/commons@10.1.3':
+    resolution: {integrity: sha512-6Ly17DtHww9TTO83l+y0ASr/1GP1sd37FY1CgUre6E28vPyTd/iIBnBw8Y5UtWKMhLwyAFTw3Ue/FKz44a77HA==}
+
+  '@commercetools-test-data/core@10.1.3':
+    resolution: {integrity: sha512-vipXJ/XUhOYcgyxODRhkzSSg56O5bm1un5hVe39f26qDcVc3hQHYcGm5uGk76mL+5eWRarhmDpIXR9ZClQiifA==}
+
+  '@commercetools-test-data/utils@10.1.3':
+    resolution: {integrity: sha512-r8cLjS+FCehP6elGMCteXa4JzzMwACCdQKfmuh/v+aKQNyQDGkPAyj7v1I3bwkL0GZ9lb4Rr4P4MbhbYSLqLpQ==}
+
   '@commercetools/platform-sdk@7.14.0':
     resolution: {integrity: sha512-08/7yAxZFa6s5iKWw+67x17wa4pqiG8WHAW3dECWhkMpTME65qTHz5eyDfcCq8Tayo1rp46g67/2mWxrqapRAA==}
     engines: {node: '>=14'}
@@ -2555,6 +2588,10 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@faker-js/faker@8.4.1':
+    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
 
   '@faker-js/faker@9.0.3':
     resolution: {integrity: sha512-lWrrK4QNlFSU+13PL9jMbMKLJYXDFu3tQfayBsMXX7KL/GiQeqfB1CzHkqD5UHBUtPAuPo6XwGbMFNdVMZObRA==}
@@ -7841,6 +7878,33 @@ snapshots:
       - jest
       - supports-color
 
+  '@commercetools-test-data/commons@10.1.3':
+    dependencies:
+      '@babel/runtime': 7.17.9
+      '@babel/runtime-corejs3': 7.17.9
+      '@commercetools-test-data/core': 10.1.3
+      '@commercetools-test-data/utils': 10.1.3
+      '@commercetools/platform-sdk': 7.14.0
+      '@faker-js/faker': 8.4.1
+      '@types/lodash': 4.17.10
+      lodash: 4.17.21
+    transitivePeerDependencies:
+      - encoding
+
+  '@commercetools-test-data/core@10.1.3':
+    dependencies:
+      '@babel/runtime': 7.17.9
+      '@babel/runtime-corejs3': 7.17.9
+      '@faker-js/faker': 8.4.1
+      '@types/lodash': 4.17.10
+      lodash: 4.17.21
+
+  '@commercetools-test-data/utils@10.1.3':
+    dependencies:
+      '@babel/runtime': 7.17.9
+      '@babel/runtime-corejs3': 7.17.9
+      '@faker-js/faker': 8.4.1
+
   '@commercetools/platform-sdk@7.14.0':
     dependencies:
       '@commercetools/sdk-client-v2': 2.5.0
@@ -8125,6 +8189,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.1': {}
+
+  '@faker-js/faker@8.4.1': {}
 
   '@faker-js/faker@9.0.3': {}
 
