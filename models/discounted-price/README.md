@@ -14,10 +14,22 @@ $ pnpm add -D @commercetools-test-data/discounted-price
 
 ```ts
 import type {
-  DiscountedPrice,
+  DiscountedPriceRest,
+  DiscountedPriceGraphql,
+  DiscountedPriceDraftRest,
+  DiscountedPriceDraftGraphql,
   type TDiscountedPriceRest,
   type TDiscountedPriceGraphql,
+  type TDiscountedPriceDraftRest,
+  type TDiscountedPriceDraftGraphql,
 } from '@commercetools-test-data/discounted-price';
 
-const DiscountedPrice = DiscountedPrice.random().build<TDiscountedPrice>();
+const DiscountedPriceRestModel =
+  DiscountedPriceRest.random().build<TDiscountedPriceRest>();
+const DiscountedPriceGraphqlModel =
+  DiscountedPriceGraphql.random().build<TDiscountedPriceGraphql>();
+const DiscountedPriceDraftRestModel =
+  DiscountedPriceDraftRest.random().build<TDiscountedPriceDraftRest>();
+const DiscountedPriceDraftGraphqlModel =
+  DiscountedPriceDraftGraphql.random().build<TDiscountedPriceDraftGraphql>();
 ```

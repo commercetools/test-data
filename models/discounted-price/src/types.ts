@@ -1,4 +1,7 @@
-import { DiscountedPrice } from '@commercetools/platform-sdk';
+import {
+  DiscountedPrice,
+  DiscountedPriceDraft,
+} from '@commercetools/platform-sdk';
 import { TReference } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
@@ -9,8 +12,8 @@ export type TDiscountedPriceGraphql = DiscountedPrice & {
   discountRef: TReference;
 };
 
-export type TDiscountedPriceDraftRest = TDiscountedPriceRest;
-export type TDiscountedPriceDraftGraphql = TDiscountedPriceRest;
+export type TDiscountedPriceDraftRest = DiscountedPriceDraft;
+export type TDiscountedPriceDraftGraphql = TDiscountedPriceDraftRest;
 
 export type TCreateDiscountedPriceBuilder<
   TModel extends
