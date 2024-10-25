@@ -1,6 +1,7 @@
 // Export types
 export * from './quote/types';
 export * from './quote-request/types';
+export * from './staged-quote/types';
 
 // Export models
 export * as Quote from './quote';
