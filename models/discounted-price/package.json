@@ -8,19 +8,28 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/discounted-price"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-discounted-price.cjs.js",
   "module": "dist/commercetools-test-data-discounted-price.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
     "@commercetools-test-data/commons": "10.1.3",
-    "@commercetools-test-data/core": "10.1.3",
+    "@commercetools-test-data/core": "workspace:10.8.1",
     "@commercetools-test-data/utils": "10.1.3",
     "@commercetools/platform-sdk": "^7.0.0",
     "@faker-js/faker": "^8.0.0"

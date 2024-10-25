@@ -1,4 +1,4 @@
-import { Reference } from '@commercetools-test-data/commons';
+import { Reference, Price } from '@commercetools-test-data/commons';
 import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
 import type { TDiscountedPriceGraphql, TDiscountedPriceRest } from './types';
 
@@ -7,7 +7,7 @@ import type { TDiscountedPriceGraphql, TDiscountedPriceRest } from './types';
  * discount - Reference to a ProductDiscount Reference Object {typeId, id}
  */
 const commonFieldsConfig = {
-  value: undefined,
+  value: fake(() => Price.random()),
   discount: fake(() => Reference.presets.productDiscountReference()),
 };
 

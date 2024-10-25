@@ -8,7 +8,13 @@ describe('DiscountedPrice Builder', () => {
 
     expect(restModel).toEqual(
       expect.objectContaining({
-        id: expect.any(String),
+        value: expect.objectContaining({
+          id: expect.any(String),
+          value: expect.any(Object),
+        }),
+        discount: expect.objectContaining({
+          id: expect.any(String),
+        }),
       })
     );
   });
@@ -19,8 +25,17 @@ describe('DiscountedPrice Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        id: expect.any(String),
-        __typename: 'DiscountedPrice',
+        __typename: 'DiscountedProductPriceValue',
+        value: expect.objectContaining({
+          id: expect.any(String),
+          value: expect.any(Object),
+        }),
+        discount: expect.objectContaining({
+          id: expect.any(String),
+        }),
+        discountRef: expect.objectContaining({
+          id: expect.any(String),
+        }),
       })
     );
   });

@@ -637,8 +637,8 @@ importers:
         specifier: 10.1.3
         version: 10.1.3
       '@commercetools-test-data/core':
-        specifier: 10.1.3
-        version: 10.1.3
+        specifier: workspace:10.8.1
+        version: link:../../core
       '@commercetools-test-data/utils':
         specifier: 10.1.3
         version: 10.1.3
