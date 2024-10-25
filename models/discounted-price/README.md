@@ -26,4 +26,10 @@ import type {
 
 const DiscountedPriceRest =
   DiscountedPriceRest.random().build<TDiscountedPriceRest>();
+const DiscountedPriceGraphql =
+  DiscountedPriceGraphql.random().build<TDiscountedPriceGraphql>();
+const DiscountedPriceDraftRest =
+  DiscountedPriceDraftRest.random().build<TDiscountedPriceDraftRest>();
+const DiscountedPriceDraftGraphql =
+  DiscountedPriceDraftGraphql.random().build<TDiscountedPriceDraftGraphql>();
 ```
