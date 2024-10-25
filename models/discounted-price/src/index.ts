@@ -1,5 +1,6 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as DiscountedPricePresets from './presets';
+export * from './discounted-price-draft';
 export * from './types';
 
 export const DiscountedPriceRest = {
