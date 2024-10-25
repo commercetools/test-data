@@ -1,6 +1,8 @@
 # @commercetools-test-data/discounted-price
 
-This package includes provides the data model for the commercetools platform `DiscountedPrice` type
+This package includes provides the data model for the commercetools platform `DiscountedPrice` representations
+
+https://docs.commercetools.com/api/types#discountedprice
 
 # Install
 
@@ -13,7 +15,8 @@ $ pnpm add -D @commercetools-test-data/discounted-price
 ```ts
 import type {
   DiscountedPrice,
-  type TDiscountedPrice,
+  type TDiscountedPriceRest,
+  type TDiscountedPriceGraphql,
 } from '@commercetools-test-data/discounted-price';
 
 const DiscountedPrice = DiscountedPrice.random().build<TDiscountedPrice>();
