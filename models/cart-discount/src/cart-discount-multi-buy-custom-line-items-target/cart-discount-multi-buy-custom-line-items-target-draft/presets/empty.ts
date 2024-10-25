@@ -1,7 +1,7 @@
-import type { TCartDiscountMultiBuyLineItemsTargetDraftBuilder } from '../../types';
-import CartDiscountMultiBuyLineItemsTargetDraft from '../builder';
+import type { TCartDiscountMultiBuyCustomLineItemsTargetDraftBuilder } from '../../types';
+import CartDiscountMultiBuyCustomLineItemsTargetDraft from '../builder';
 
-const empty = (): TCartDiscountMultiBuyLineItemsTargetDraftBuilder =>
-  CartDiscountMultiBuyLineItemsTargetDraft().maxOccurrence(undefined);
+const empty = (): TCartDiscountMultiBuyCustomLineItemsTargetDraftBuilder =>
+  CartDiscountMultiBuyCustomLineItemsTargetDraft().maxOccurrence(undefined);
 
 export default empty;
