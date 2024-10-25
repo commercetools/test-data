@@ -24,12 +24,6 @@ import type {
   type TDiscountedPriceDraftGraphql,
 } from '@commercetools-test-data/discounted-price';
 
-const DiscountedPriceRestModel =
+const DiscountedPriceRest =
   DiscountedPriceRest.random().build<TDiscountedPriceRest>();
-const DiscountedPriceGraphqlModel =
-  DiscountedPriceGraphql.random().build<TDiscountedPriceGraphql>();
-const DiscountedPriceDraftRestModel =
-  DiscountedPriceDraftRest.random().build<TDiscountedPriceDraftRest>();
-const DiscountedPriceDraftGraphqlModel =
-  DiscountedPriceDraftGraphql.random().build<TDiscountedPriceDraftGraphql>();
 ```
