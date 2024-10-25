@@ -1,28 +1,30 @@
-import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
-import { createRelatedDates } from '@commercetools-test-data/utils';
+import { Reference } from '@commercetools-test-data/commons';
+import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
 import type { TDiscountedPriceGraphql, TDiscountedPriceRest } from './types';
 
-const [getOlderDate, getNewerDate] = createRelatedDates();
-
-// TODO: You can place here all the common fields initializers
+/**
+ * value - Reference to Money
+ * discount - Reference to a ProductDiscount Reference Object {typeId, id}
+ */
 const commonFieldsConfig = {
-  id: fake((f) => f.string.uuid()),
-  createdAt: fake(getOlderDate),
-  lastModifiedAt: fake(getNewerDate),
+  value: undefined,
+  discount: fake(() => Reference.presets.productDiscountReference()),
 };
 
-// TODO: You just need to place here fields initializers that don't match with the REST API
 export const restFieldsConfig: TModelFieldsConfig<TDiscountedPriceRest> = {
   fields: {
     ...commonFieldsConfig,
   },
 };
 
-// TODO: You just need to place here fields initializers that don't match with the GraphQL API
+/**
+ * discountRef - Reference to a ProductDiscount Reference Object {typeId, id}
+ */
 export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedPriceGraphql> =
   {
     fields: {
       ...commonFieldsConfig,
-      __typename: 'DiscountedPrice',
+      __typename: 'DiscountedProductPriceValue',
+      discountRef: fake(() => Reference.presets.productDiscountReference()),
     },
   };
