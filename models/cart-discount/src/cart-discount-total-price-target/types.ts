@@ -1,24 +1,13 @@
 import type { CartDiscountTotalPriceTarget } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountTotalPriceTarget = CartDiscountTotalPriceTarget;
-export type TCartDiscountTotalPriceTargetDraft = CartDiscountTotalPriceTarget;
-
+export type TCartDiscountTotalPriceTargetRest = CartDiscountTotalPriceTarget;
 export type TCartDiscountTotalPriceTargetGraphql =
-  TCartDiscountTotalPriceTarget & {
+  TCartDiscountTotalPriceTargetRest & {
     __typename: 'CartDiscountTotalPriceTarget';
   };
 
+export type TCartDiscountTotalPriceTargetDraftRest =
+  CartDiscountTotalPriceTarget;
 export type TCartDiscountTotalPriceTargetDraftGraphql = {
-  totalPrice: { dummy?: String | null };
+  totalPrice: { dummy?: string | null };
 };
-
-export type TCartDiscountTotalPriceTargetBuilder =
-  TBuilder<TCartDiscountTotalPriceTarget>;
-export type TCartDiscountTotalPriceTargetDraftBuilder =
-  TBuilder<TCartDiscountTotalPriceTargetDraft>;
-
-export type TCreateCartDiscountTotalPriceTargetBuilder =
-  () => TCartDiscountTotalPriceTargetBuilder;
-export type TCreateCartDiscountTotalPriceTargetDraftBuilder =
-  () => TCartDiscountTotalPriceTargetDraftBuilder;
