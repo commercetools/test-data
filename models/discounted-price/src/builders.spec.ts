@@ -1,7 +1,7 @@
 import { DiscountedPriceRest, DiscountedPriceGraphql } from './index';
 
 describe('DiscountedPrice Builder', () => {
-  it('should build properties for the REST representation', () => {
+  it('should build properties for the discounted price REST representation', () => {
     const restModel = DiscountedPriceRest.random().build();
 
     expect(restModel).toEqual(
@@ -16,7 +16,8 @@ describe('DiscountedPrice Builder', () => {
       })
     );
   });
-  it('should build properties for the GraphQL representation', () => {
+
+  it('should build properties for the discounted price GraphQL representation', () => {
     const graphqlModel = DiscountedPriceGraphql.random().build();
 
     expect(graphqlModel).toEqual(
