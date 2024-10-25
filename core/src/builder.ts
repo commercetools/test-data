@@ -1,4 +1,5 @@
 import omit from 'lodash/omit';
+import type { TGeneratorResult } from './generator';
 import { isFunction, isBuilderFunction, isString, pickMany } from './helpers';
 import type {
   TBuilderMapStateFunction,
@@ -7,7 +8,6 @@ import type {
   TBuilder,
   TPropertyBuilder,
   TPropertyFieldUpdater,
-  TGeneratorResult,
 } from './types';
 
 // The Proxy constructor type does not differentiate between the target and the return type.

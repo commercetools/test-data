@@ -195,7 +195,7 @@ type TCreateSpecializedBuilderParams<TModel> = {
   type: 'rest' | 'graphql';
   name: string;
 };
-const createSpecializedBuilder = <TModel>(
+const createSpecializedBuilder = <TModel extends object>(
   params: TCreateSpecializedBuilderParams<TModel>
 ) => {
   const modelBuilder = Builder<TModel>({
@@ -213,7 +213,7 @@ const createSpecializedBuilder = <TModel>(
   return modelBuilder as TBuilder<TModel>;
 };
 
-const createCompatibilityBuilder = <TModel>(params: {
+const createCompatibilityBuilder = <TModel extends object>(params: {
   name: string;
   modelFieldsConfig: {
     rest: TModelFieldsConfig<TModel>;

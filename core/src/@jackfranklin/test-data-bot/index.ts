@@ -1,79 +1,108 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Faker } from '@faker-js/faker';
 import { faker } from '@faker-js/faker';
-import mapValues from 'lodash/mapValues';
 
-export type SequenceFunction = (counter: number) => unknown;
+type Entries<T> = {
+  [K in keyof T]: [key: K, value: T[K]];
+}[keyof T][];
 
-export interface SequenceGenerator {
+export type SequenceFunction<T = unknown> = (counter: number) => T;
+
+export interface SequenceGenerator<T = unknown> {
   generatorType: 'sequence';
-  userProvidedFunction: SequenceFunction;
-  call: (userProvidedFunction: SequenceFunction, counter: number) => unknown;
+  userProvidedFunction: SequenceFunction<T>;
+  call: (userProvidedFunction: SequenceFunction<T>, counter: number) => T;
 }
 
-export interface FakerGenerator {
+export interface FakerGenerator<T = any> {
   generatorType: 'faker';
-  call: (fake: Faker) => any;
+  call: (fake: Faker) => T;
 }
 
-export interface PerBuildGenerator {
+export interface PerBuildGenerator<T = any> {
   generatorType: 'perBuild';
-  func: () => any;
-  call: (f: () => any) => any;
+  func: () => T;
+  call: (f: () => T) => T;
 }
 
-export interface OneOfGenerator {
+export interface OneOfGenerator<T = any> {
   generatorType: 'oneOf';
-  options: any[];
-  call: <T>(options: T[]) => T;
+  options: T[];
+  call: (options: T[]) => T;
 }
 
-export type FieldGenerator =
-  | FakerGenerator
-  | SequenceGenerator
-  | OneOfGenerator
-  | PerBuildGenerator;
+export type FieldGenerator<T = unknown> =
+  | FakerGenerator<T>
+  | SequenceGenerator<T>
+  | OneOfGenerator<NonNullable<T>>
+  | PerBuildGenerator<T>;
 
-export type Field =
-  | string
-  | number
-  | null
-  | FieldGenerator
-  | { [x: string]: Field | {} }
-  | any[];
+export type Field<T> =
+  | (T extends Array<infer U>
+      ? FieldGenerator<U>[]
+      : T extends object
+        ? FieldsConfiguration<T>
+        : never)
+  | T
+  | FieldGenerator<T>;
 
 export type FieldsConfiguration<FactoryResultType> = {
-  readonly [x in keyof FactoryResultType]: Field;
+  [x in keyof FactoryResultType]: Field<FactoryResultType[x]>;
 };
 
-export interface Overrides {
-  [x: string]: Field;
-}
+type ExpandedConfigurationFields<FactoryResultType> = {
+  [x in keyof FactoryResultType]: FactoryResultType[x];
+};
+
+export type Overrides<T> = Partial<{
+  readonly [x in keyof T]: Field<T[x]>;
+}>;
 
 export interface BuildTimeConfig<FactoryResultType> {
-  overrides?: Overrides;
-  map?: (builtThing: FactoryResultType) => FactoryResultType;
+  overrides?: Overrides<FactoryResultType>;
+  map?: (
+    builtThing: ExpandedConfigurationFields<FactoryResultType>
+  ) => ExpandedConfigurationFields<FactoryResultType>;
   traits?: string | string[];
 }
 
 export interface TraitsConfiguration<FactoryResultType> {
   readonly [traitName: string]: {
-    overrides?: Overrides;
-    postBuild?: (builtThing: FactoryResultType) => FactoryResultType;
+    overrides?: Overrides<FactoryResultType>;
+    postBuild?: (
+      builtThing: ExpandedConfigurationFields<FactoryResultType>
+    ) => ExpandedConfigurationFields<FactoryResultType>;
   };
 }
 
 export interface BuildConfiguration<FactoryResultType> {
   readonly fields: FieldsConfiguration<FactoryResultType>;
   readonly traits?: TraitsConfiguration<FactoryResultType>;
-  readonly postBuild?: (x: FactoryResultType) => FactoryResultType;
+  readonly postBuild?: (
+    x: ExpandedConfigurationFields<FactoryResultType>
+  ) => ExpandedConfigurationFields<FactoryResultType>;
 }
 
-const isGenerator = (field: Field): field is FieldGenerator => {
-  if (!field) return false;
-
-  return (field as FieldGenerator).generatorType !== undefined;
+const isGenerator = <T>(field: Field<T>): field is FieldGenerator<T> => {
+  return !!(field && typeof field === 'object' && 'generatorType' in field);
 };
+
+const isSequenceGenerator = <T>(
+  generator: FieldGenerator<T>
+): generator is SequenceGenerator<T> => generator.generatorType === 'sequence';
+
+const isFakerGenerator = <T>(
+  generator: FieldGenerator<T>
+): generator is FakerGenerator<T> => generator.generatorType === 'faker';
+
+const isOneOfGenerator = <T>(
+  generator: FieldGenerator<T>
+): generator is OneOfGenerator<NonNullable<T>> =>
+  generator.generatorType === 'oneOf';
+
+const isPerBuildGenerator = <T>(
+  generator: FieldGenerator<T>
+): generator is PerBuildGenerator => generator.generatorType === 'perBuild';
 
 export type ValueOf<T> = T[keyof T];
 
@@ -98,16 +127,18 @@ export const build = <FactoryResultType>(
 
   let sequenceCounter = 0;
 
-  const expandConfigFields = (
+  const expandConfigFields = <FactoryResultType>(
     fields: FieldsConfiguration<FactoryResultType>,
     buildTimeConfig: BuildTimeConfig<FactoryResultType> = {}
-  ): { [P in keyof FieldsConfiguration<FactoryResultType>]: any } => {
-    const finalBuiltThing = mapValues(fields, (fieldValue, fieldKey) => {
-      const overrides = buildTimeConfig.overrides || {};
+  ): ExpandedConfigurationFields<FactoryResultType> => {
+    const finalBuiltThing = (
+      Object.entries(fields) as Entries<typeof fields>
+    ).reduce((acc, [fieldKey, fieldValue]) => {
+      const overrides = buildTimeConfig.overrides;
 
       const traitsArray = buildTimeTraitsArray(buildTimeConfig);
 
-      const traitOverrides: Overrides = traitsArray.reduce<Overrides>(
+      const traitOverrides = traitsArray.reduce<Overrides<FactoryResultType>>(
         (overrides, currentTraitKey) => {
           const hasTrait = config.traits && config.traits[currentTraitKey];
           if (!hasTrait) {
@@ -118,64 +149,62 @@ export const build = <FactoryResultType>(
             : {};
           return { ...overrides, ...(traitsConfig.overrides || {}) };
         },
-        {}
+        {} as Overrides<FactoryResultType>
       );
 
       const valueOrOverride =
-        overrides[fieldKey] || traitOverrides[fieldKey] || fieldValue;
+        overrides?.[fieldKey] || traitOverrides[fieldKey] || fieldValue;
 
-      /* eslint-disable-next-line @typescript-eslint/no-use-before-define */
-      return expandConfigField(valueOrOverride);
-    });
+      acc[fieldKey] =
+        /* eslint-disable-next-line @typescript-eslint/no-use-before-define */
+        expandConfigField<FactoryResultType[keyof FactoryResultType]>(
+          valueOrOverride
+        );
+
+      return acc;
+    }, {} as ExpandedConfigurationFields<FactoryResultType>);
 
     return finalBuiltThing;
   };
 
-  const expandConfigField = (
-    fieldValue: ValueOf<FieldsConfiguration<FactoryResultType>>
-  ): any => {
-    let calculatedValue;
+  const expandConfigField = <FactoryResultType>(
+    fieldValue: Field<FactoryResultType>
+  ): FactoryResultType => {
+    let calculatedValue: FactoryResultType;
 
     if (isGenerator(fieldValue)) {
-      switch (fieldValue.generatorType) {
-        case 'sequence': {
-          ++sequenceCounter;
-          calculatedValue = fieldValue.call(
-            fieldValue.userProvidedFunction,
-            sequenceCounter
-          );
-          break;
-        }
-
-        case 'faker': {
-          calculatedValue = fieldValue.call(faker);
-          break;
-        }
-
-        case 'oneOf': {
-          calculatedValue = fieldValue.call(fieldValue.options);
-          break;
-        }
-
-        case 'perBuild': {
-          calculatedValue = fieldValue.call(fieldValue.func);
-          break;
-        }
+      if (isSequenceGenerator<FactoryResultType>(fieldValue)) {
+        ++sequenceCounter;
+        calculatedValue = (
+          fieldValue as SequenceGenerator<FactoryResultType>
+        ).call(
+          (fieldValue as SequenceGenerator<FactoryResultType>)
+            .userProvidedFunction,
+          sequenceCounter
+        );
+      } else if (isFakerGenerator<FactoryResultType>(fieldValue)) {
+        calculatedValue = fieldValue.call(faker);
+      } else if (isOneOfGenerator<FactoryResultType>(fieldValue)) {
+        calculatedValue = fieldValue.call(fieldValue.options);
+      } else if (isPerBuildGenerator<FactoryResultType>(fieldValue)) {
+        calculatedValue = fieldValue.call(fieldValue.func);
+      } else {
+        throw new Error('Unknown generator type');
       }
     } else if (Array.isArray(fieldValue)) {
-      calculatedValue = fieldValue.map((v) => expandConfigField(v));
-      return calculatedValue;
-    } else if (fieldValue === null || fieldValue === undefined) {
-      // has to be before typeof fieldValue === 'object'
-      // as typeof null === 'object'
-      calculatedValue = fieldValue;
-    } else if (typeof fieldValue === 'object') {
-      const nestedFieldsObject =
-        fieldValue as FieldsConfiguration<FactoryResultType>;
+      calculatedValue = fieldValue.map((v) =>
+        expandConfigField(v)
+      ) as FactoryResultType;
+    }
+    // typeof null === 'object', we need to check for null explicitly
+    else if (typeof fieldValue === 'object' && fieldValue) {
+      const nestedFieldsObject = fieldValue;
 
-      calculatedValue = expandConfigFields(nestedFieldsObject);
+      calculatedValue = expandConfigFields<FactoryResultType>(
+        nestedFieldsObject as FieldsConfiguration<FactoryResultType>
+      ) as FactoryResultType;
     } else {
-      calculatedValue = fieldValue;
+      calculatedValue = fieldValue as FactoryResultType;
     }
 
     return calculatedValue;
@@ -204,11 +233,11 @@ export const build = <FactoryResultType>(
   };
 };
 
-export const oneOf = <T>(...options: T[]): OneOfGenerator => {
+export const oneOf = <T>(...options: T[]): OneOfGenerator<T> => {
   return {
     generatorType: 'oneOf',
     options,
-    call: <T>(options: T[]): T => {
+    call: (options: T[]): T => {
       const randomIndex = Math.floor(Math.random() * options.length);
 
       return options[randomIndex];
@@ -216,19 +245,30 @@ export const oneOf = <T>(...options: T[]): OneOfGenerator => {
   };
 };
 
-export const bool = (): OneOfGenerator => oneOf(true, false);
+export const bool = () => oneOf<boolean>(true, false);
 
-export const sequence = (
-  userProvidedFunction: SequenceFunction = (x) => x
-): SequenceGenerator => {
+export function sequence(
+  userProvidedFunction?: SequenceFunction<number>
+): SequenceGenerator<number>;
+export function sequence<T>(
+  userProvidedFunction: SequenceFunction<T>
+): SequenceGenerator<T>;
+export function sequence<T>(
+  userProvidedFunction?: SequenceFunction<T>
+): SequenceGenerator<T> {
+  const internalFunction =
+    typeof userProvidedFunction === 'function'
+      ? userProvidedFunction
+      : (counter: number) => counter as T;
+
   return {
     generatorType: 'sequence',
-    userProvidedFunction,
-    call: (userProvidedFunction: SequenceFunction, counter: number) => {
+    userProvidedFunction: internalFunction,
+    call: <T>(userProvidedFunction: SequenceFunction<T>, counter: number) => {
       return userProvidedFunction(counter);
     },
   };
-};
+}
 
 export const perBuild = <T>(func: () => T): PerBuildGenerator => {
   return {
@@ -240,9 +280,11 @@ export const perBuild = <T>(func: () => T): PerBuildGenerator => {
   };
 };
 
-export type FakerUserArgs = (fake: Faker) => any;
+export type FakerUserArgs<T = any> = (fake: Faker) => T;
 
-export const fake = (userDefinedUsage: FakerUserArgs): FakerGenerator => {
+export const fake = <T = any>(
+  userDefinedUsage: FakerUserArgs<T>
+): FakerGenerator<T> => {
   return {
     generatorType: 'faker',
     call: (faker) => {

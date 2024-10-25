@@ -1,4 +1,5 @@
-import { Field } from './@jackfranklin/test-data-bot';
+import { FieldsConfiguration } from './@jackfranklin/test-data-bot';
+import { GeneratorResultModel, TGeneratorResult } from './generator';
 
 export type TReferenceObject = {
   id?: string;
@@ -38,10 +39,6 @@ export type TBuildFieldMeta<Model> = {
 export type TBuilderMapStateFunction<Model> = (
   state: Partial<Model>
 ) => Partial<Model>;
-
-export type TGeneratorResult<Model> = {
-  generate: () => Model;
-};
 
 export type TTransformType = 'default' | 'graphql' | 'rest';
 
@@ -127,7 +124,7 @@ export type TRestTransformer<
 > = 'rest' extends TransformerType ? { rest: TTransformer<Model> } : never;
 
 export type TModelFieldsConfig<TModel> = {
-  fields: Record<keyof TModel, Field>;
+  fields: FieldsConfiguration<GeneratorResultModel<TModel>>;
   postBuild?: (
     model: TModel,
     context?: { isCompatMode?: boolean }

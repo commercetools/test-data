@@ -401,37 +401,41 @@ describe('test-data-bot', () => {
       const userBuilder = build<User>('User', {
         fields: {
           name: 'jack',
-          friends: [
-            friendBuilder({ overrides: { name: 'customName' } }),
-            friendBuilder({
-              overrides: {
-                sports: {
-                  rugby: false,
+          friends: {
+            names: [
+              friendBuilder({ overrides: { name: 'customName' } }),
+              friendBuilder({
+                overrides: {
+                  sports: {
+                    rugby: false,
+                  },
                 },
-              },
-            }),
-          ],
+              }),
+            ],
+          },
         },
       });
 
       const user = userBuilder();
       expect(user.name).toEqual('jack');
-      expect(user.friends).toEqual([
-        {
-          name: 'customName',
-          sports: {
-            football: expect.any(Boolean),
-            basketball: false,
-            rugby: true,
+      expect(user.friends).toEqual({
+        names: [
+          {
+            name: 'customName',
+            sports: {
+              football: expect.any(Boolean),
+              basketball: false,
+              rugby: true,
+            },
           },
-        },
-        {
-          name: expect.any(String),
-          sports: {
-            rugby: false,
+          {
+            name: expect.any(String),
+            sports: {
+              rugby: false,
+            },
           },
-        },
-      ]);
+        ],
+      });
     });
 
     it('fully expands objects to ensure all builders are executed', () => {
