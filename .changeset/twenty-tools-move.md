@@ -1,5 +1,5 @@
 ---
-'@commercetools-test-data/discounted-price': major
+'@commercetools-test-data/commons': minor
 ---
 
 introduction of the new type discounted price
