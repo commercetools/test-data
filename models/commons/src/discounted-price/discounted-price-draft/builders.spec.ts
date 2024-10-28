@@ -7,11 +7,12 @@ describe('DiscountedPriceDraft Builder', () => {
     expect(restDraftModel).toEqual(
       expect.objectContaining({
         value: expect.objectContaining({
-          id: expect.any(String),
-          value: expect.any(Object),
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
         }),
         discount: expect.objectContaining({
           id: expect.any(String),
+          typeId: 'product-discount',
         }),
       })
     );
@@ -22,12 +23,30 @@ describe('DiscountedPriceDraft Builder', () => {
 
     expect(graphqlDraftModel).toEqual(
       expect.objectContaining({
+        __typename: 'DiscountedProductPriceValue',
         value: expect.objectContaining({
-          id: expect.any(String),
-          value: expect.any(Object),
+          centAmount: expect.any(Number),
+          currencyCode: expect.any(String),
         }),
         discount: expect.objectContaining({
-          id: expect.any(String),
+          name: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+          description: expect.arrayContaining([
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ]),
+          value: expect.any(Object),
+          predicate: expect.any(String),
+          sortOrder: expect.any(String),
+          isActive: expect.any(Boolean),
+          validFrom: expect.any(String),
+          validUntil: expect.any(String),
         }),
       })
     );
