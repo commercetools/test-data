@@ -3,11 +3,8 @@ import {
   DiscountedPriceDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import {
-  TProductDiscountGraphql,
-  TProductDiscountDraftGraphql,
-} from '@commercetools-test-data/product-discount';
-import { TReferenceGraphql } from '../reference/types';
+import { TProductDiscountGraphql } from '@commercetools-test-data/product-discount';
+import { TReferenceGraphql, TReferenceDraftGraphql } from '../reference/types';
 
 export type TDiscountedPriceRest = DiscountedPrice;
 
@@ -22,8 +19,8 @@ export type TDiscountedPriceDraftGraphql = Omit<
   DiscountedPriceDraft,
   'discount'
 > & {
-  discount: TProductDiscountDraftGraphql;
   __typename: 'DiscountedProductPriceValue';
+  discount: TReferenceDraftGraphql<'product-discount'>;
 };
 
 export type TCreateDiscountedPriceBuilder<

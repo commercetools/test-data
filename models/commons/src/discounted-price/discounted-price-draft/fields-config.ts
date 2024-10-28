@@ -1,5 +1,4 @@
 import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
-import { ProductDiscount } from '@commercetools-test-data/product-discount';
 import * as Money from '../../money';
 import { ReferenceDraft } from '../../reference';
 import type {
@@ -14,12 +13,12 @@ import type {
  */
 const commonFieldsConfig = {
   value: fake(() => Money.random()),
+  discount: fake(() => ReferenceDraft.presets.productDiscountReference()),
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TDiscountedPriceDraftRest> = {
   fields: {
     ...commonFieldsConfig,
-    discount: fake(() => ReferenceDraft.presets.productDiscountReference()),
   },
 };
 
@@ -27,7 +26,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedPriceDraftGraphq
   {
     fields: {
       ...commonFieldsConfig,
-      discount: fake(() => ProductDiscount.ProductDiscountDraft.random()),
       __typename: 'DiscountedProductPriceValue',
     },
   };

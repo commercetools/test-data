@@ -29,24 +29,8 @@ describe('DiscountedPriceDraft Builder', () => {
           currencyCode: expect.any(String),
         }),
         discount: expect.objectContaining({
-          name: expect.arrayContaining([
-            expect.objectContaining({
-              locale: expect.any(String),
-              value: expect.any(String),
-            }),
-          ]),
-          description: expect.arrayContaining([
-            expect.objectContaining({
-              locale: expect.any(String),
-              value: expect.any(String),
-            }),
-          ]),
-          value: expect.any(Object),
-          predicate: expect.any(String),
-          sortOrder: expect.any(String),
-          isActive: expect.any(Boolean),
-          validFrom: expect.any(String),
-          validUntil: expect.any(String),
+          id: expect.any(String),
+          typeId: 'product-discount',
         }),
       })
     );
