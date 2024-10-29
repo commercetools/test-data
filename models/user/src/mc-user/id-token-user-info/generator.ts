@@ -2,7 +2,7 @@ import { fake, Generator } from '@commercetools-test-data/core';
 import { createRelatedTimestamps } from '@commercetools-test-data/utils';
 import type { TMcIdTokenUserInfo } from '../types';
 
-const [_, getNewerTimestamp] = createRelatedTimestamps();
+const [, getNewerTimestamp] = createRelatedTimestamps();
 
 const generator = Generator<TMcIdTokenUserInfo>({
   fields: {
