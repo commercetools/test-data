@@ -10,6 +10,9 @@ const transformers = {
   }),
   graphql: Transformer<TMoney, TMoneyGraphql>('graphql', {
     buildFields: [],
+    addFields: () => ({
+      __typename: 'Money',
+    }),
   }),
 };
 

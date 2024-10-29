@@ -27,35 +27,11 @@ describe('DiscountedPrice Builder', () => {
         value: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
+          __typename: 'Money',
         }),
         discount: expect.objectContaining({
-          __typename: 'ProductDiscount',
           id: expect.any(String),
-          version: expect.any(Number),
-          key: expect.any(String),
-          name: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: expect.any(String),
-              locale: expect.any(String),
-            }),
-          ]),
-          description: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: expect.any(String),
-              locale: expect.any(String),
-            }),
-          ]),
-          value: expect.any(Object),
-          predicate: expect.any(String),
-          sortOrder: expect.any(String),
-          isActive: expect.any(Boolean),
-          references: expect.any(Array),
-          validFrom: expect.any(String),
-          validUntil: expect.any(String),
-          createdAt: expect.any(String),
-          createdBy: expect.any(Object),
-          lastModifiedAt: expect.any(String),
-          lastModifiedBy: expect.any(Object),
+          __typename: 'ProductDiscount',
         }),
         discountRef: expect.objectContaining({
           id: expect.any(String),

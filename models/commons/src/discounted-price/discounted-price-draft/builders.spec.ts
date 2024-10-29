@@ -27,10 +27,12 @@ describe('DiscountedPriceDraft Builder', () => {
         value: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
+          __typename: 'Money',
         }),
         discount: expect.objectContaining({
           id: expect.any(String),
           typeId: 'product-discount',
+          __typename: 'Reference',
         }),
       })
     );
