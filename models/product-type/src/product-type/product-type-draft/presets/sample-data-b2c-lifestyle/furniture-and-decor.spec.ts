@@ -41,7 +41,7 @@ describe(`with furnitureAndDecor preset`, () => {
       "inputHint": "SingleLine",
       "inputTip": undefined,
       "isRequired": false,
-      "isSearchable": false,
+      "isSearchable": true,
       "label": {
         "de": undefined,
         "de-DE": "Farbe",
@@ -197,7 +197,7 @@ describe(`with furnitureAndDecor preset`, () => {
       "inputHint": "SingleLine",
       "inputTip": undefined,
       "isRequired": false,
-      "isSearchable": false,
+      "isSearchable": true,
       "label": [
         {
           "locale": "en-GB",

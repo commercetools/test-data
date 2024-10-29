@@ -59,7 +59,7 @@ const furnitureAndDecor = (): TProductTypeDraftBuilder =>
         )
         .isRequired(false)
         .attributeConstraint(attributeConstraints.None)
-        .isSearchable(false)
+        .isSearchable(true)
         .inputHint(inputHints.SingleLine),
 
       AttributeDefinitionDraft.presets
