@@ -1,29 +1,17 @@
 import { MultiBuyCustomLineItemsTarget } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountMultiBuyCustomLineItemsTarget =
+export type TCartDiscountMultiBuyCustomLineItemsTargetRest =
   MultiBuyCustomLineItemsTarget;
-export type TCartDiscountMultiBuyCustomLineItemsTargetDraft =
-  MultiBuyCustomLineItemsTarget;
-
 export type TCartDiscountMultiBuyCustomLineItemsTargetGraphql =
-  TCartDiscountMultiBuyCustomLineItemsTarget & {
+  TCartDiscountMultiBuyCustomLineItemsTargetRest & {
     __typename: 'MultiBuyCustomLineItemsTarget';
   };
 
+export type TCartDiscountMultiBuyCustomLineItemsTargetDraftRest =
+  MultiBuyCustomLineItemsTarget;
 export type TCartDiscountMultiBuyCustomLineItemsTargetDraftGraphql = {
   multiBuyCustomLineItems: Omit<
-    TCartDiscountMultiBuyCustomLineItemsTarget,
+    TCartDiscountMultiBuyCustomLineItemsTargetDraftRest,
     'type'
   >;
 };
-
-export type TCartDiscountMultiBuyCustomLineItemsTargetBuilder =
-  TBuilder<TCartDiscountMultiBuyCustomLineItemsTarget>;
-export type TCartDiscountMultiBuyCustomLineItemsTargetDraftBuilder =
-  TBuilder<TCartDiscountMultiBuyCustomLineItemsTargetDraft>;
-
-export type TCreateCartDiscountMultiBuyCustomLineItemsTargetBuilder =
-  () => TCartDiscountMultiBuyCustomLineItemsTargetBuilder;
-export type TCreateCartDiscountMultiBuyCustomLineItemsTargetDraftBuilder =
-  () => TCartDiscountMultiBuyCustomLineItemsTargetDraftBuilder;

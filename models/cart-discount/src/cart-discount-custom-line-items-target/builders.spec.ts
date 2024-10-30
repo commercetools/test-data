@@ -2,7 +2,7 @@ import {
   CartDiscountCustomLineItemsTarget,
   CartDiscountCustomLineItemsTargetGraphql,
   CartDiscountCustomLineItemsTargetRest,
-} from './index';
+} from './';
 
 describe('CartDiscountCustomLineItemsTarget model builders', () => {
   it('builds a REST model', () => {

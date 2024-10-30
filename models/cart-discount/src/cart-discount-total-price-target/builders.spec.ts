@@ -2,7 +2,7 @@ import {
   CartDiscountTotalPriceTarget,
   CartDiscountTotalPriceTargetGraphql,
   CartDiscountTotalPriceTargetRest,
-} from './index';
+} from './';
 
 describe('CartDiscountTotalPriceTarget model builders', () => {
   it('builds a REST model', () => {
