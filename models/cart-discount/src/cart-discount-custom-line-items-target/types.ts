@@ -1,26 +1,14 @@
 import { CartDiscountCustomLineItemsTarget } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@commercetools-test-data/core';
 
-export type TCartDiscountCustomLineItemsTarget =
+export type TCartDiscountCustomLineItemsTargetRest =
   CartDiscountCustomLineItemsTarget;
-export type TCartDiscountCustomLineItemsTargetDraft =
-  CartDiscountCustomLineItemsTarget;
-
 export type TCartDiscountCustomLineItemsTargetGraphql =
-  TCartDiscountCustomLineItemsTarget & {
+  TCartDiscountCustomLineItemsTargetRest & {
     __typename: 'CustomLineItemsTarget';
   };
 
+export type TCartDiscountCustomLineItemsTargetDraftRest =
+  CartDiscountCustomLineItemsTarget;
 export type TCartDiscountCustomLineItemsTargetDraftGraphql = {
-  customLineItems: Omit<TCartDiscountCustomLineItemsTarget, 'type'>;
+  customLineItems: Omit<TCartDiscountCustomLineItemsTargetDraftRest, 'type'>;
 };
-
-export type TCartDiscountCustomLineItemsTargetBuilder =
-  TBuilder<TCartDiscountCustomLineItemsTarget>;
-export type TCartDiscountCustomLineItemsTargetDraftBuilder =
-  TBuilder<TCartDiscountCustomLineItemsTargetDraft>;
-
-export type TCreateCartDiscountCustomLineItemsTargetBuilder =
-  () => TCartDiscountCustomLineItemsTargetBuilder;
-export type TCreateCartDiscountCustomLineItemsTargetDraftBuilder =
-  () => TCartDiscountCustomLineItemsTargetDraftBuilder;

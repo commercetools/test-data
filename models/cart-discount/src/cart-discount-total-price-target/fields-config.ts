@@ -5,7 +5,7 @@ import type {
 } from './types';
 
 const commonFieldsConfig = {
-  type: 'totalPrice',
+  type: 'totalPrice' as const,
 };
 export const restFieldsConfig: TModelFieldsConfig<TCartDiscountTotalPriceTargetRest> =
   {
