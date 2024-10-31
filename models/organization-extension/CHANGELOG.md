@@ -1,5 +1,16 @@
 # @commercetools-test-data/organization-extension
 
+## 10.9.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/custom-application@10.9.1
+  - @commercetools-test-data/custom-view@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/graphql-types@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
 ## 10.9.0
 
 ### Patch Changes

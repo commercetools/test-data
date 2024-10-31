@@ -1,5 +1,7 @@
 # @commercetools-test-data/generators
 
+## 10.9.1
+
 ## 10.9.0
 
 ### Minor Changes
