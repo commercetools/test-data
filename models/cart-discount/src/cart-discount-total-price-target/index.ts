@@ -1,14 +1,9 @@
-import {
-  RestModelBuilder,
-  GraphqlModelBuilder,
-  CompatModelBuilder,
-} from './builders';
+import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import { restPresets, graphqlPresets } from './presets';
 
 export {
   CartDiscountTotalPriceTargetDraftGraphql,
   CartDiscountTotalPriceTargetDraftRest,
-  CartDiscountTotalPriceTargetDraft,
 } from './cart-discount-total-price-target-draft';
 export type {
   TCartDiscountTotalPriceTargetDraftGraphql,
@@ -25,12 +20,4 @@ export const CartDiscountTotalPriceTargetRest = {
 export const CartDiscountTotalPriceTargetGraphql = {
   random: GraphqlModelBuilder,
   presets: graphqlPresets,
-};
-
-/**
- * @deprecated Use `CartDiscountTotalPriceTargetRest` or `CartDiscountTotalPriceTargetGraphql` exported models instead of `CartDiscountTotalPriceTarget`.
- */
-export const CartDiscountTotalPriceTarget = {
-  random: CompatModelBuilder,
-  presets: restPresets,
 };
