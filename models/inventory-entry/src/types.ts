@@ -7,6 +7,9 @@ import type { TReferenceGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 
 // Default
+/**
+ * @deprecated use `TInventoryEntryRest` instead
+ */
 export type TInventoryEntry = Omit<InventoryEntry, 'supplyChannel'> & {
   supplyChannel: Channel;
 };
