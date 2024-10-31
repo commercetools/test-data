@@ -1,5 +1,17 @@
 # @commercetools-test-data/business-unit
 
+## 10.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b)]:
+  - @commercetools-test-data/commons@10.9.0
+  - @commercetools-test-data/associate-role@10.9.0
+  - @commercetools-test-data/customer@10.9.0
+  - @commercetools-test-data/store@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
 ## 10.8.1
 
 ### Patch Changes

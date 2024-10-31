@@ -1,5 +1,15 @@
 # @commercetools-test-data/discount-code
 
+## 10.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`4a24360`](https://github.com/commercetools/test-data/commit/4a24360d90f5ec63a2a0db49524d3ad6219bb51f), [`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b)]:
+  - @commercetools-test-data/cart-discount@10.9.0
+  - @commercetools-test-data/commons@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
 ## 10.8.1
 
 ### Patch Changes

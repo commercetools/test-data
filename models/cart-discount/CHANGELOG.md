@@ -1,5 +1,21 @@
 # @commercetools-test-data/cart-discount
 
+## 10.9.0
+
+### Minor Changes
+
+- [#699](https://github.com/commercetools/test-data/pull/699) [`4a24360`](https://github.com/commercetools/test-data/commit/4a24360d90f5ec63a2a0db49524d3ad6219bb51f) Thanks [@ragafus](https://github.com/ragafus)! - Add `CartDiscountTotalPriceTarget`, `CartDiscountTotalPriceTargetDraft`, `CartDiscountCustomLineItemsTarget`, `CartDiscountCustomLineItemsTargetDraft`, `CartDiscountMultiBuyCustomLineItemsTarget` and `CartDiscountMultiBuyCustomLineItemsTargetDraft` models
+
+### Patch Changes
+
+- Updated dependencies [[`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b)]:
+  - @commercetools-test-data/commons@10.9.0
+  - @commercetools-test-data/category@10.9.0
+  - @commercetools-test-data/customer-group@10.9.0
+  - @commercetools-test-data/product-type@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
 ## 10.8.1
 
 ### Patch Changes

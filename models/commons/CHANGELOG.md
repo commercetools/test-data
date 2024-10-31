@@ -1,5 +1,18 @@
 # @commercetools-test-data/commons
 
+## 10.9.0
+
+### Minor Changes
+
+- [#698](https://github.com/commercetools/test-data/pull/698) [`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b) Thanks [@mario-priceless](https://github.com/mario-priceless)! - introduction of the new type discounted price
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
 ## 10.8.1
 
 ### Patch Changes

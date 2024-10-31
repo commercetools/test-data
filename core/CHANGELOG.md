@@ -1,5 +1,7 @@
 # @commercetools-test-data/core
 
+## 10.9.0
+
 ## 10.8.1
 
 ### Patch Changes
