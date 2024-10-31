@@ -16,8 +16,8 @@ const populatePreset = <
   return;
 };
 
-export const restPreset = (): TBuilder<TInventoryEntryRest> => {};
+export const restPresets = (): TBuilder<TInventoryEntryRest> => {};
 
-export const graphqlPreset = (): TBuilder<TInventoryEntryGraphql> => {};
+export const graphqlPresets = (): TBuilder<TInventoryEntryGraphql> => {};
 
-export const compatPreset = (): TBuilder<TInventoryEntry> => {};
+export const compatPresets = (): TBuilder<TInventoryEntry> => {};
