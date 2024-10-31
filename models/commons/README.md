@@ -181,3 +181,24 @@ const productRef = PriceTier.random().build<TPriceTier>();
 // Presets
 const categoryRef = PriceTier.presets.build<TPriceTier>();
 ```
+
+## `DiscountedPrice`
+
+```ts
+import {
+  DiscountedPriceRest,
+  DiscountedPriceGraphql,
+  DiscountedPriceDraftRest,
+  DiscountedPriceDraftGraphql,
+  type TDiscountedPriceRest,
+  type TDiscountedPriceGraphql,
+  type TDiscountedPriceDraftRest,
+  type TDiscountedPriceDraftGraphql,
+} from '@commercetools-test-data/commons';
+
+const DiscountedPriceRest = DiscountedPriceRest.random().build();
+const DiscountedPriceGraphql = DiscountedPriceGraphql.random().build();
+const DiscountedPriceDraftRest = DiscountedPriceDraftRest.random().build();
+const DiscountedPriceDraftGraphql =
+  DiscountedPriceDraftGraphql.random().build();
+```
