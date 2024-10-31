@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/shipping-method",
-  "version": "10.8.1",
+  "version": "10.9.0",
   "description": "Data models for commercetools Shipping Method representations",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "10.8.1",
-    "@commercetools-test-data/core": "10.8.1",
-    "@commercetools-test-data/tax-category": "10.8.1",
-    "@commercetools-test-data/utils": "10.8.1",
-    "@commercetools-test-data/zone": "10.8.1",
+    "@commercetools-test-data/commons": "10.9.0",
+    "@commercetools-test-data/core": "10.9.0",
+    "@commercetools-test-data/tax-category": "10.9.0",
+    "@commercetools-test-data/utils": "10.9.0",
+    "@commercetools-test-data/zone": "10.9.0",
     "@commercetools/platform-sdk": "7.14.0",
     "@faker-js/faker": "^9.0.0"
   }
