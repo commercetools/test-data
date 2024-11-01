@@ -5,7 +5,7 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-export * from './inventory-entry-draft';
+export * as InventoryEntryDraft from './inventory-entry-draft';
 export * as InventoryEntry from '.';
 
 export * from './types';
