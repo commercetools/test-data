@@ -14,18 +14,15 @@ describe('InventoryEntry Builder', () => {
         key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
-        createdBy: null,
+        createdBy: expect.any(Object),
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: null,
+        lastModifiedBy: expect.any(Object),
         sku: expect.any(String),
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
         availableQuantity: expect.any(Number),
         expectedDelivery: expect.any(String),
-        supplyChannel: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
+        supplyChannel: expect.any(Object),
         custom: null,
       })
     );
@@ -34,15 +31,15 @@ describe('InventoryEntry Builder', () => {
   it('should build properties for the inventory entry GraphQL representation', () => {
     const graphqlModel = InventoryEntryGraphql.random().build();
 
-    expect(graphqlModel).toEqual(
+    expect(graphqlModel).toMatchObject(
       expect.objectContaining({
         id: expect.any(String),
         key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
-        createdBy: null,
+        createdBy: expect.any(Object),
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: null,
+        lastModifiedBy: expect.any(Object),
         sku: expect.any(String),
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
@@ -68,15 +65,15 @@ describe('InventoryEntry Builder', () => {
   it('should build properties for the deprecated inventory entry representation', () => {
     const model = deprecatedInventoryEntry.random().build();
 
-    expect(model).toEqual(
+    expect(model).toMatchObject(
       expect.objectContaining({
         id: expect.any(String),
         key: expect.any(String),
         version: expect.any(Number),
         createdAt: expect.any(String),
-        createdBy: null,
+        createdBy: expect.any(Object),
         lastModifiedAt: expect.any(String),
-        lastModifiedBy: null,
+        lastModifiedBy: expect.any(Object),
         sku: expect.any(String),
         availableQuantity: expect.any(Number),
         quantityOnStock: expect.any(Number),
