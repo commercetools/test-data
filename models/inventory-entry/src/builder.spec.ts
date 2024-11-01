@@ -1,45 +1,14 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
 import {
-  TInventoryEntry,
-  TInventoryEntryRest,
-  TInventoryEntryGraphql,
-} from './types';
-import * as InventoryEntry from '.';
+  InventoryEntryRest,
+  InventoryEntryGraphql,
+  deprecatedInventoryEntry,
+} from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TInventoryEntry, TInventoryEntry>(
-      'default',
-      InventoryEntry.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        key: expect.any(String),
-        version: expect.any(Number),
-        createdAt: expect.any(String),
-        createdBy: null,
-        lastModifiedAt: expect.any(String),
-        lastModifiedBy: null,
-        sku: expect.any(String),
-        availableQuantity: expect.any(Number),
-        quantityOnStock: expect.any(Number),
-        restockableInDays: expect.any(Number),
-        expectedDelivery: expect.any(String),
-        supplyChannel: expect.objectContaining({
-          address: expect.objectContaining({
-            country: expect.any(String),
-          }),
-        }),
-        custom: null,
-      })
-    )
-  );
+describe('InventoryEntry Builder', () => {
+  it('should build properties for the inventory entry REST representation', () => {
+    const restModel = InventoryEntryRest.random().build();
 
-  it(
-    ...createBuilderSpec<TInventoryEntry, TInventoryEntryRest>(
-      'rest',
-      InventoryEntry.random(),
+    expect(restModel).toEqual(
       expect.objectContaining({
         id: expect.any(String),
         key: expect.any(String),
@@ -59,13 +28,13 @@ describe('builder', () => {
         }),
         custom: null,
       })
-    )
-  );
+    );
+  });
 
-  it(
-    ...createBuilderSpec<TInventoryEntry, TInventoryEntryGraphql>(
-      'graphql',
-      InventoryEntry.random(),
+  it('should build properties for the inventory entry GraphQL representation', () => {
+    const graphqlModel = InventoryEntryGraphql.random().build();
+
+    expect(graphqlModel).toEqual(
       expect.objectContaining({
         id: expect.any(String),
         key: expect.any(String),
@@ -93,6 +62,33 @@ describe('builder', () => {
         custom: null,
         __typename: 'InventoryEntry',
       })
-    )
-  );
+    );
+  });
+
+  it('should build properties for the deprecated inventory entry representation', () => {
+    const model = deprecatedInventoryEntry.random().build();
+
+    expect(model).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        key: expect.any(String),
+        version: expect.any(Number),
+        createdAt: expect.any(String),
+        createdBy: null,
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: null,
+        sku: expect.any(String),
+        availableQuantity: expect.any(Number),
+        quantityOnStock: expect.any(Number),
+        restockableInDays: expect.any(Number),
+        expectedDelivery: expect.any(String),
+        supplyChannel: expect.objectContaining({
+          address: expect.objectContaining({
+            country: expect.any(String),
+          }),
+        }),
+        custom: null,
+      })
+    );
+  });
 });
