@@ -42,14 +42,14 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
     supplyChannelRef: fake((f) => f.string.uuid()),
   },
   postBuild: (model) => {
-    const supply = model.supplyChannelRef
+    const supplyChannelRef = model.supplyChannelRef
       ? Reference.presets
           .channelReference()
-          .id(model.supplyChannel.id)
+          .id(model.supplyChannel?.id)
           .buildGraphql<TReferenceGraphql<'channel'>>()
       : undefined;
     return {
-      supply,
+      supplyChannelRef,
     };
   },
 };

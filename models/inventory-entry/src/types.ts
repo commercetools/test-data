@@ -29,6 +29,6 @@ export type TInventoryEntryDraftGraphql = TInventoryEntryDraft;
 export type TInventoryEntryBuilder = TBuilder<TInventoryEntry>;
 export type TInventoryEntryDraftBuilder = TBuilder<TInventoryEntryDraft>;
 
-export type TCreateInventoryEntryBuilder = () => TInventoryEntryBuilder;
+export type TCreateInventoryEntryBuilder<T> = () => TInventoryEntryBuilder;
 export type TCreateInventoryEntryDraftBuilder =
   () => TInventoryEntryDraftBuilder;

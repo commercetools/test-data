@@ -16,8 +16,14 @@ const populatePreset = <
   return;
 };
 
-export const restPresets = (): TBuilder<TInventoryEntryRest> => {};
+export const restPresets = (): TBuilder<TInventoryEntryRest> => {
+  return {} as TBuilder<TInventoryEntryRest>;
+};
 
-export const graphqlPresets = (): TBuilder<TInventoryEntryGraphql> => {};
+export const graphqlPresets = (): TBuilder<TInventoryEntryGraphql> => {
+  return {} as TBuilder<TInventoryEntryGraphql>;
+};
 
-export const compatPresets = (): TBuilder<TInventoryEntry> => {};
+export const compatPresets = (): TBuilder<TInventoryEntry> => {
+  return {} as TBuilder<TInventoryEntry>;
+};
