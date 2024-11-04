@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-type
 
+## 10.9.1
+
+### Patch Changes
+
+- [#702](https://github.com/commercetools/test-data/pull/702) [`1d115d7`](https://github.com/commercetools/test-data/commit/1d115d755af028674c66618c5e3a2ae0220be425) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - B2C Lifestyle Presets - Updated Furniture and Decor product type attribute `color` to be searchable.
+
+- Updated dependencies []:
+  - @commercetools-test-data/commons@10.9.1
+  - @commercetools-test-data/type@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
 ## 10.9.0
 
 ### Patch Changes
