@@ -1,11 +1,11 @@
 import {
+  InventoryEntry,
   InventoryEntryRest,
   InventoryEntryGraphql,
-  deprecatedInventoryEntry,
 } from './index';
 
-describe('InventoryEntry Builder', () => {
-  it('should build properties for the inventory entry REST representation', () => {
+describe('InventoryEntry model builders', () => {
+  it('builds a REST model', () => {
     const restModel = InventoryEntryRest.random().build();
 
     expect(restModel).toEqual(
@@ -28,7 +28,7 @@ describe('InventoryEntry Builder', () => {
     );
   });
 
-  it('should build properties for the inventory entry GraphQL representation', () => {
+  it('builds a GraphQL model', () => {
     const graphqlModel = InventoryEntryGraphql.random().build();
 
     expect(graphqlModel).toMatchObject(
@@ -61,11 +61,36 @@ describe('InventoryEntry Builder', () => {
       })
     );
   });
+});
 
-  it('should build properties for the deprecated inventory entry representation', () => {
-    const model = deprecatedInventoryEntry.random().build();
+describe('InventoryEntry model compatibility builders', () => {
+  it('builds a REST model', () => {
+    const restModel = InventoryEntry.random().buildRest();
 
-    expect(model).toMatchObject(
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        id: expect.any(String),
+        key: expect.any(String),
+        version: expect.any(Number),
+        createdAt: expect.any(String),
+        createdBy: expect.any(Object),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.any(Object),
+        sku: expect.any(String),
+        quantityOnStock: expect.any(Number),
+        restockableInDays: expect.any(Number),
+        availableQuantity: expect.any(Number),
+        expectedDelivery: expect.any(String),
+        supplyChannel: expect.any(Object),
+        custom: null,
+      })
+    );
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = InventoryEntry.random().buildGraphql();
+
+    expect(graphqlModel).toMatchObject(
       expect.objectContaining({
         id: expect.any(String),
         key: expect.any(String),
@@ -80,9 +105,7 @@ describe('InventoryEntry Builder', () => {
         restockableInDays: expect.any(Number),
         expectedDelivery: expect.any(String),
         supplyChannel: expect.objectContaining({
-          address: expect.objectContaining({
-            country: expect.any(String),
-          }),
+          __typename: 'Channel',
         }),
         custom: null,
       })

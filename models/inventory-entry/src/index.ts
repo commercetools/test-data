@@ -23,7 +23,5 @@ export const InventoryEntryGraphql = {
 /**
  * @deprecated Use `InventoryEntryRest` or `InventoryEntryGraphql` exported models instead of `InventoryEntry`.
  */
-export const deprecatedInventoryEntry = {
-  random: CompatInventoryEntryModelBuilder,
-  presets: modelPresets.restPresets,
-};
+export const random = CompatInventoryEntryModelBuilder;
+export const presets = modelPresets.graphqlPresets;

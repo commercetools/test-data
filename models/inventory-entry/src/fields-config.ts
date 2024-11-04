@@ -1,4 +1,4 @@
-import { Channel } from '@commercetools-test-data/channel';
+import { ChannelGraphql } from '@commercetools-test-data/channel';
 import {
   ClientLogging,
   Reference,
@@ -23,7 +23,6 @@ const commonFieldsConfig = {
   lastModifiedBy: fake(() => ClientLogging.random()),
   key: fake((f) => f.lorem.slug(2)),
   sku: fake((f) => f.lorem.words()),
-  supplyChannel: fake(() => Channel.random()),
   quantityOnStock: fake((f) => f.number.int()),
   availableQuantity: fake((f) => f.number.int()),
   restockableInDays: fake((f) => f.number.int()),
@@ -33,21 +32,23 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryRest> = {
   fields: {
     ...commonFieldsConfig,
+    supplyChannel: fake(() => Reference.presets.channelReference()),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
   fields: {
     ...commonFieldsConfig,
     __typename: 'InventoryEntry',
-    supplyChannelRef: fake((f) => f.string.uuid()),
+    supplyChannel: fake(() => ChannelGraphql.random()),
+    supplyChannelRef: fake((f) => Reference.presets.channelReference()),
   },
   postBuild: (model) => {
-    const supplyChannelRef = model.supplyChannelRef
+    const supplyChannelRef = model.supplyChannel
       ? Reference.presets
           .channelReference()
-          .id(model.supplyChannel?.id)
+          .id(model.supplyChannel.id)
           .buildGraphql<TReferenceGraphql<'channel'>>()
-      : undefined;
+      : null;
     return {
       supplyChannelRef,
     };

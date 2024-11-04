@@ -8,7 +8,6 @@ import type {
   TCreateInventoryEntryBuilder,
   TInventoryEntryRest,
   TInventoryEntryGraphql,
-  TInventoryEntry,
 } from './types';
 
 export const RestModelBuilder: TCreateInventoryEntryBuilder<
@@ -17,8 +16,7 @@ export const RestModelBuilder: TCreateInventoryEntryBuilder<
   createSpecializedBuilder({
     name: 'InventoryEntryRestBuilder',
     type: 'rest',
-    modelFieldsConfig:
-      restFieldsConfig as unknown as TModelFieldsConfig<TInventoryEntry>,
+    modelFieldsConfig: restFieldsConfig,
   });
 
 export const GraphqlModelBuilder: TCreateInventoryEntryBuilder<
