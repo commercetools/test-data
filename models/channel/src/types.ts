@@ -23,9 +23,9 @@ export type TChannelGraphql = Omit<
   __typename: 'Channel';
   createdBy?: TClientLoggingGraphql;
   lastModifiedBy?: TClientLoggingGraphql;
-  name?: string;
+  name?: string | null;
   nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   geoLocation?: TGeometryGraphql;
 };
