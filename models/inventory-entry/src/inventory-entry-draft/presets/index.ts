@@ -3,11 +3,23 @@ import empty from './empty';
 import sampleDataB2B from './sample-data-b2b';
 import sampleDataB2CLifestyle from './sample-data-b2c-lifestyle';
 
-const presets = {
+export const restPresets = {
   changeHistoryData,
   empty,
   sampleDataB2B,
   sampleDataB2CLifestyle,
 };
 
-export default presets;
+export const graphqlPresets = {
+  changeHistoryData,
+  empty,
+  sampleDataB2B,
+  sampleDataB2CLifestyle,
+};
+
+export const compatPresets = {
+  changeHistoryData,
+  empty,
+  sampleDataB2B,
+  sampleDataB2CLifestyle,
+};

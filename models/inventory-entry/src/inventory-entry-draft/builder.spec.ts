@@ -6,13 +6,17 @@ import {
   TInventoryEntryDraftRest,
   TInventoryEntryDraftGraphql,
 } from '../types';
-import * as InventoryEntryDraft from '.';
+import {
+  InventoryEntryDraft,
+  InventoryEntryDraftRest,
+  InventoryEntryDraftGraphql,
+} from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraft>(
-      'default',
-      InventoryEntryDraft.random(),
+describe('InventoryEntry model builders', () => {
+  it('builds a REST model', () => {
+    const restModel = InventoryEntryDraftRest.random().build();
+
+    expect(restModel).toEqual(
       expect.objectContaining({
         key: expect.any(String),
         sku: expect.any(String),
@@ -25,13 +29,13 @@ describe('builder', () => {
         }),
         custom: null,
       })
-    )
-  );
+    );
+  });
 
-  it(
-    ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftRest>(
-      'rest',
-      InventoryEntryDraft.random(),
+  it('builds a GraphQL model', () => {
+    const graphqlModel = InventoryEntryDraftGraphql.random().build();
+
+    expect(graphqlModel).toMatchObject(
       expect.objectContaining({
         key: expect.any(String),
         sku: expect.any(String),
@@ -44,25 +48,105 @@ describe('builder', () => {
         }),
         custom: null,
       })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftGraphql>(
-      'graphql',
-      InventoryEntryDraft.random(),
-      expect.objectContaining({
-        key: expect.any(String),
-        sku: expect.any(String),
-        quantityOnStock: expect.any(Number),
-        restockableInDays: expect.any(Number),
-        expectedDelivery: expect.any(String),
-        supplyChannel: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
-        custom: null,
-      })
-    )
-  );
+    );
+  });
 });
+
+describe('InventoryEntryDraft model compatibility builders', () => {
+  it('builds a REST model', () => {
+    const restModel = InventoryEntryDraft.random().buildRest();
+
+    expect(restModel).toEqual(
+      expect.objectContaining({
+        key: expect.any(String),
+        sku: expect.any(String),
+        quantityOnStock: expect.any(Number),
+        restockableInDays: expect.any(Number),
+        expectedDelivery: expect.any(String),
+        supplyChannel: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'channel',
+        }),
+        custom: null,
+      })
+    );
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = InventoryEntryDraft.random().buildGraphql();
+
+    expect(graphqlModel).toMatchObject(
+      expect.objectContaining({
+        key: expect.any(String),
+        sku: expect.any(String),
+        quantityOnStock: expect.any(Number),
+        restockableInDays: expect.any(Number),
+        expectedDelivery: expect.any(String),
+        supplyChannel: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'channel',
+        }),
+        custom: null,
+      })
+    );
+  });
+});
+
+// describe('builder', () => {
+//   it(
+//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraft>(
+//       'default',
+//       InventoryEntryDraft.random(),
+//       expect.objectContaining({
+//         key: expect.any(String),
+//         sku: expect.any(String),
+//         quantityOnStock: expect.any(Number),
+//         restockableInDays: expect.any(Number),
+//         expectedDelivery: expect.any(String),
+//         supplyChannel: expect.objectContaining({
+//           id: expect.any(String),
+//           typeId: 'channel',
+//         }),
+//         custom: null,
+//       })
+//     )
+//   );
+
+//   it(
+//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftRest>(
+//       'rest',
+//       InventoryEntryDraft.random(),
+//       expect.objectContaining({
+//         key: expect.any(String),
+//         sku: expect.any(String),
+//         quantityOnStock: expect.any(Number),
+//         restockableInDays: expect.any(Number),
+//         expectedDelivery: expect.any(String),
+//         supplyChannel: expect.objectContaining({
+//           id: expect.any(String),
+//           typeId: 'channel',
+//         }),
+//         custom: null,
+//       })
+//     )
+//   );
+
+//   it(
+//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftGraphql>(
+//       'graphql',
+//       InventoryEntryDraft.random(),
+//       expect.objectContaining({
+//         key: expect.any(String),
+//         sku: expect.any(String),
+//         quantityOnStock: expect.any(Number),
+//         restockableInDays: expect.any(Number),
+//         expectedDelivery: expect.any(String),
+//         supplyChannel: expect.objectContaining({
+//           id: expect.any(String),
+//           typeId: 'channel',
+//         }),
+//         custom: null,
+//       })
+//     )
+//   );
+// });

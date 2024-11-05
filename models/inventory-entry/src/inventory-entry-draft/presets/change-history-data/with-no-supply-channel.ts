@@ -1,4 +1,4 @@
-import InventoryEntryDraft from '../../builder';
+import InventoryEntryDraft from '../../builders';
 
 const withNoSupplyChannel = () =>
   InventoryEntryDraft().supplyChannel(undefined);

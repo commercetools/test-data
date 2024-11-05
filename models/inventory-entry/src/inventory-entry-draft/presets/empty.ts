@@ -1,5 +1,5 @@
 import type { TInventoryEntryDraftBuilder } from '../../types';
-import InventoryEntryDraft from '../builder';
+import InventoryEntryDraft from '../builders';
 
 const empty = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft()
