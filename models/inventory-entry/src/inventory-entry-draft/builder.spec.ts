@@ -38,7 +38,7 @@ describe('InventoryEntry model builders', () => {
         expectedDelivery: expect.any(String),
         supplyChannel: expect.objectContaining({
           id: expect.any(String),
-          typeId: 'channel',
+          __typename: 'Channel',
         }),
         custom: null,
       })
@@ -78,69 +78,10 @@ describe('InventoryEntryDraft model compatibility builders', () => {
         expectedDelivery: expect.any(String),
         supplyChannel: expect.objectContaining({
           id: expect.any(String),
-          typeId: 'channel',
+          __typename: 'Channel',
         }),
         custom: null,
       })
     );
   });
 });
-
-// describe('builder', () => {
-//   it(
-//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraft>(
-//       'default',
-//       InventoryEntryDraft.random(),
-//       expect.objectContaining({
-//         key: expect.any(String),
-//         sku: expect.any(String),
-//         quantityOnStock: expect.any(Number),
-//         restockableInDays: expect.any(Number),
-//         expectedDelivery: expect.any(String),
-//         supplyChannel: expect.objectContaining({
-//           id: expect.any(String),
-//           typeId: 'channel',
-//         }),
-//         custom: null,
-//       })
-//     )
-//   );
-
-//   it(
-//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftRest>(
-//       'rest',
-//       InventoryEntryDraft.random(),
-//       expect.objectContaining({
-//         key: expect.any(String),
-//         sku: expect.any(String),
-//         quantityOnStock: expect.any(Number),
-//         restockableInDays: expect.any(Number),
-//         expectedDelivery: expect.any(String),
-//         supplyChannel: expect.objectContaining({
-//           id: expect.any(String),
-//           typeId: 'channel',
-//         }),
-//         custom: null,
-//       })
-//     )
-//   );
-
-//   it(
-//     ...createBuilderSpec<TInventoryEntryDraft, TInventoryEntryDraftGraphql>(
-//       'graphql',
-//       InventoryEntryDraft.random(),
-//       expect.objectContaining({
-//         key: expect.any(String),
-//         sku: expect.any(String),
-//         quantityOnStock: expect.any(Number),
-//         restockableInDays: expect.any(Number),
-//         expectedDelivery: expect.any(String),
-//         supplyChannel: expect.objectContaining({
-//           id: expect.any(String),
-//           typeId: 'channel',
-//         }),
-//         custom: null,
-//       })
-//     )
-//   );
-// });
