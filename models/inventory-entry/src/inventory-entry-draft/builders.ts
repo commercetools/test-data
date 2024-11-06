@@ -3,7 +3,6 @@ import {
   createSpecializedBuilder,
   TModelFieldsConfig,
 } from '@commercetools-test-data/core';
-import { Builder } from '@commercetools-test-data/core';
 import type {
   TCreateInventoryEntryBuilder,
   TInventoryEntryDraftGraphql,
