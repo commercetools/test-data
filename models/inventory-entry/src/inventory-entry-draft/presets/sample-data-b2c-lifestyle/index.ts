@@ -1,253 +1,505 @@
-import skuAAR34 from './sku-AAR34';
-import skuADARM04 from './sku-ADARM04';
-import skuADCT01 from './sku-ADCT01';
-import skuADPC09 from './sku-ADPC09';
-import skuADPC7 from './sku-ADPC7';
-import skuALC01 from './sku-ALC01';
-import skuAMR09 from './sku-AMR09';
-import skuARG56 from './sku-ARG56';
-import skuBA092 from './sku-BA092';
-import skuBAMB084 from './sku-BAMB084';
-import skuBARM03 from './sku-BARM03';
-import skuBCOAS08 from './sku-BCOAS08';
-import skuBLP01 from './sku-BLP01';
-import skuBLPC09 from './sku-BLPC09';
-import skuBR0983 from './sku-BR0983';
-import skuBUCK023 from './sku-BUCK023';
-import skuCARM023 from './sku-CARM023';
-import skuCBM03 from './sku-CBM03';
-import skuCCC09 from './sku-CCC09';
-import skuCCG01 from './sku-CCG01';
-import skuCCG02 from './sku-CCG02';
-import skuCCH093 from './sku-CCH093';
-import skuCCM089 from './sku-CCM089';
-import skuCDG09 from './sku-CDG09';
-import skuCJB01 from './sku-CJB01';
-import skuCNS0434 from './sku-CNS0434';
-import skuCOC0843 from './sku-COC0843';
-import skuCQB09 from './sku-CQB09';
-import skuCR098 from './sku-CR098';
-import skuCST01 from './sku-CST01';
-import skuCTSS098 from './sku-CTSS098';
-import skuCTSS0983 from './sku-CTSS0983';
-import skuCWG01 from './sku-CWG01';
-import skuDWEG09 from './sku-DWEG09';
-import skuEARM04 from './sku-EARM04';
-import skuEC0993 from './sku-EC0993';
-import skuEWC07 from './sku-EWC07';
-import skuFARM05 from './sku-FARM05';
-import skuFLAS094 from './sku-FLAS094';
-import skuGARM093 from './sku-GARM093';
-import skuGC01 from './sku-GC01';
-import skuGMCT01 from './sku-GMCT01';
-import skuGPC01 from './sku-GPC01';
-import skuGPC02 from './sku-GPC02';
-import skuGPC03 from './sku-GPC03';
-import skuGRCG01 from './sku-GRCG01';
-import skuHDG02 from './sku-HDG02';
-import skuHP01 from './sku-HP01';
-import skuILC01 from './sku-ILC01';
-import skuIQB09 from './sku-IQB09';
-import skuISP01 from './sku-ISP01';
-import skuJAR08 from './sku-JAR08';
-import skuLAMR03 from './sku-LAMR03';
-import skuLBPC09 from './sku-LBPC09';
-import skuLCO034 from './sku-LCO034';
-import skuLCP01 from './sku-LCP01';
-import skuLCP02 from './sku-LCP02';
-import skuLPC011 from './sku-LPC011';
-import skuLPC09 from './sku-LPC09';
-import skuLPQB084 from './sku-LPQB084';
-import skuMB0973 from './sku-MB0973';
-import skuMCP01 from './sku-MCP01';
-import skuMGD01 from './sku-MGD01';
-import skuMLP01 from './sku-MLP01';
-import skuMMST01 from './sku-MMST01';
-import skuMMST02 from './sku-MMST02';
-import skuMPC02 from './sku-MPC02';
-import skuMPC07 from './sku-MPC07';
-import skuMR05 from './sku-MR05';
-import skuMR08 from './sku-MR08';
-import skuMTB023 from './sku-MTB023';
-import skuMTSS01 from './sku-MTSS01';
-import skuMUQB01 from './sku-MUQB01';
-import skuMWT01 from './sku-MWT01';
-import skuNJOP09 from './sku-NJOP09';
-import skuNR09 from './sku-NR09';
-import skuNTSS01 from './sku-NTSS01';
-import skuNTSS02 from './sku-NTSS02';
-import skuNTSS03 from './sku-NTSS03';
-import skuNTSS05 from './sku-NTSS05';
-import skuNTSS06 from './sku-NTSS06';
-import skuNTSS07 from './sku-NTSS07';
-import skuNTTS04 from './sku-NTTS04';
-import skuOTB07 from './sku-OTB07';
-import skuPAP01 from './sku-PAP01';
-import skuPMAP01 from './sku-PMAP01';
-import skuRB01 from './sku-RB01';
-import skuRB093 from './sku-RB093';
-import skuRCC09 from './sku-RCC09';
-import skuRCD01 from './sku-RCD01';
-import skuRCQB01 from './sku-RCQB01';
-import skuRLC08 from './sku-RLC08';
-import skuRMP01 from './sku-RMP01';
-import skuRST01 from './sku-RST01';
-import skuRST02 from './sku-RST02';
-import skuRWG09 from './sku-RWG09';
-import skuSARM09 from './sku-SARM09';
-import skuSARMO034 from './sku-SARMO034';
-import skuSBG09 from './sku-SBG09';
-import skuSCG09 from './sku-SCG09';
-import skuSCM02 from './sku-SCM02';
-import skuSGB01 from './sku-SGB01';
-import skuSGB02 from './sku-SGB02';
-import skuSHOT095 from './sku-SHOT095';
-import skuSPC01 from './sku-SPC01';
-import skuSPC06 from './sku-SPC06';
-import skuSPOO094 from './sku-SPOO094';
-import skuSQB034 from './sku-SQB034';
-import skuSST02 from './sku-SST02';
-import skuSTM09 from './sku-STM09';
-import skuSTRA095 from './sku-STRA095';
-import skuSWB01 from './sku-SWB01';
-import skuTARM03 from './sku-TARM03';
-import skuTARM034 from './sku-TARM034';
-import skuTCM03 from './sku-TCM03';
-import skuTLSS01 from './sku-TLSS01';
-import skuTST02 from './sku-TST02';
-import skuTTSS01 from './sku-TTSS01';
-import skuVARM09 from './sku-VARM09';
-import skuVC01 from './sku-VC01';
-import skuWCS09 from './sku-WCS09';
-import skuWCSI09 from './sku-WCSI09';
-import skuWOP09 from './sku-WOP09';
-import skuWTP09 from './sku-WTP09';
+import * as skuCst01Presets from './sku-cst-01';
+import * as skuLcp02Presets from './sku-lcp-02';
+import * as skuNtss06Presets from './sku-ntss-06';
+import * as skuCqb09Presets from './sku-cqb-09';
+import * as skuMuqb01Presets from './sku-muqb-01';
+import * as skuLcp01Presets from './sku-lcp-01';
+import * as skuMr08Presets from './sku-mr-08';
+import * as skuNtts04Presets from './sku-ntts-04';
+import * as skuSpc06Presets from './sku-spc-06';
+import * as skuTcm03Presets from './sku-tcm-03';
+import * as skuSarmo034Presets from './sku-sarmo-034';
+import * as skuLco034Presets from './sku-lco-034';
+import * as skuSpc01Presets from './sku-spc-01';
+import * as skuNtss01Presets from './sku-ntss-01';
+import * as skuSqb034Presets from './sku-sqb-034';
+import * as skuCarm023Presets from './sku-carm-023';
+import * as skuScm02Presets from './sku-scm-02';
+import * as skuRlc08Presets from './sku-rlc-08';
+import * as skuSbg09Presets from './sku-sbg-09';
+import * as skuSst02Presets from './sku-sst-02';
+import * as skuEc0993Presets from './sku-ec-0993';
+import * as skuTarm03Presets from './sku-tarm-03';
+import * as skuAdpc09Presets from './sku-adpc-09';
+import * as skuCwg01Presets from './sku-cwg-01';
+import * as skuShot095Presets from './sku-shot-095';
+import * as skuRcqb01Presets from './sku-rcqb-01';
+import * as skuGmct01Presets from './sku-gmct-01';
+import * as skuGarm093Presets from './sku-garm-093';
+import * as skuGc01Presets from './sku-gc-01';
+import * as skuDweg09Presets from './sku-dweg-09';
+import * as skuOtb07Presets from './sku-otb-07';
+import * as skuLpc09Presets from './sku-lpc-09';
+import * as skuRcd01Presets from './sku-rcd-01';
+import * as skuGpc03Presets from './sku-gpc-03';
+import * as skuCbm03Presets from './sku-cbm-03';
+import * as skuJar08Presets from './sku-jar-08';
+import * as skuHdg02Presets from './sku-hdg-02';
+import * as skuBr0983Presets from './sku-br-0983';
+import * as skuMtss01Presets from './sku-mtss-01';
+import * as skuArg56Presets from './sku-arg-56';
+import * as skuWcs09Presets from './sku-wcs-09';
+import * as skuCoc0843Presets from './sku-coc-0843';
+import * as skuBarm03Presets from './sku-barm-03';
+import * as skuHp01Presets from './sku-hp-01';
+import * as skuIsp01Presets from './sku-isp-01';
+import * as skuPap01Presets from './sku-pap-01';
+import * as skuBa092Presets from './sku-ba-092';
+import * as skuMmst01Presets from './sku-mmst-01';
+import * as skuStra095Presets from './sku-stra-095';
+import * as skuCcg01Presets from './sku-ccg-01';
+import * as skuCr098Presets from './sku-cr-098';
+import * as skuLamr03Presets from './sku-lamr-03';
+import * as skuGrcg01Presets from './sku-grcg-01';
+import * as skuRb093Presets from './sku-rb-093';
+import * as skuMpc07Presets from './sku-mpc-07';
+import * as skuCcm089Presets from './sku-ccm-089';
+import * as skuCtss0983Presets from './sku-ctss-0983';
+import * as skuSarm09Presets from './sku-sarm-09';
+import * as skuLpqb084Presets from './sku-lpqb-084';
+import * as skuVarm09Presets from './sku-varm-09';
+import * as skuFarm05Presets from './sku-farm-05';
+import * as skuRwg09Presets from './sku-rwg-09';
+import * as skuBcoas08Presets from './sku-bcoas-08';
+import * as skuGpc01Presets from './sku-gpc-01';
+import * as skuNtss03Presets from './sku-ntss-03';
+import * as skuNtss05Presets from './sku-ntss-05';
+import * as skuRmp01Presets from './sku-rmp-01';
+import * as skuIlc01Presets from './sku-ilc-01';
+import * as skuCdg09Presets from './sku-cdg-09';
+import * as skuAlc01Presets from './sku-alc-01';
+import * as skuMwt01Presets from './sku-mwt-01';
+import * as skuTtss01Presets from './sku-ttss-01';
+import * as skuRcc09Presets from './sku-rcc-09';
+import * as skuEarm04Presets from './sku-earm-04';
+import * as skuMb0973Presets from './sku-mb-0973';
+import * as skuEwc07Presets from './sku-ewc-07';
+import * as skuCch093Presets from './sku-cch-093';
+import * as skuFlas094Presets from './sku-flas-094';
+import * as skuRb01Presets from './sku-rb-01';
+import * as skuMpc02Presets from './sku-mpc-02';
+import * as skuBamb084Presets from './sku-bamb-084';
+import * as skuBlpc09Presets from './sku-blpc-09';
+import * as skuBlp01Presets from './sku-blp-01';
+import * as skuSgb02Presets from './sku-sgb-02';
+import * as skuTst02Presets from './sku-tst-02';
+import * as skuCtss098Presets from './sku-ctss-098';
+import * as skuMr05Presets from './sku-mr-05';
+import * as skuRst01Presets from './sku-rst-01';
+import * as skuWcsi09Presets from './sku-wcsi-09';
+import * as skuStm09Presets from './sku-stm-09';
+import * as skuMgd01Presets from './sku-mgd-01';
+import * as skuWtp09Presets from './sku-wtp-09';
+import * as skuNjop09Presets from './sku-njop-09';
+import * as skuSwb01Presets from './sku-swb-01';
+import * as skuIqb09Presets from './sku-iqb-09';
+import * as skuTarm034Presets from './sku-tarm-034';
+import * as skuBuck023Presets from './sku-buck-023';
+import * as skuNtss02Presets from './sku-ntss-02';
+import * as skuWop09Presets from './sku-wop-09';
+import * as skuVc01Presets from './sku-vc-01';
+import * as skuTlss01Presets from './sku-tlss-01';
+import * as skuAdarm04Presets from './sku-adarm-04';
+import * as skuMlp01Presets from './sku-mlp-01';
+import * as skuAar34Presets from './sku-aar-34';
+import * as skuLbpc09Presets from './sku-lbpc-09';
+import * as skuNtss07Presets from './sku-ntss-07';
+import * as skuScg09Presets from './sku-scg-09';
+import * as skuCns0434Presets from './sku-cns-0434';
+import * as skuMmst02Presets from './sku-mmst-02';
+import * as skuLpc011Presets from './sku-lpc-011';
+import * as skuAmr09Presets from './sku-amr-09';
+import * as skuMcp01Presets from './sku-mcp-01';
+import * as skuPmap01Presets from './sku-pmap-01';
+import * as skuCcg02Presets from './sku-ccg-02';
+import * as skuRst02Presets from './sku-rst-02';
+import * as skuAdpc7Presets from './sku-adpc-7';
+import * as skuAdct01Presets from './sku-adct-01';
+import * as skuNr09Presets from './sku-nr-09';
+import * as skuMtb023Presets from './sku-mtb-023';
+import * as skuCjb01Presets from './sku-cjb-01';
+import * as skuSpoo094Presets from './sku-spoo-094';
+import * as skuCcc09Presets from './sku-ccc-09';
+import * as skuSgb01Presets from './sku-sgb-01';
+import * as skuGpc02Presets from './sku-gpc-02';
 
-const presets = {
-  skuAAR34,
-  skuADARM04,
-  skuADCT01,
-  skuADPC7,
-  skuADPC09,
-  skuALC01,
-  skuAMR09,
-  skuARG56,
-  skuBA092,
-  skuBAMB084,
-  skuBARM03,
-  skuBCOAS08,
-  skuBLP01,
-  skuBLPC09,
-  skuBR0983,
-  skuBUCK023,
-  skuCARM023,
-  skuCBM03,
-  skuCCC09,
-  skuCCG01,
-  skuCCG02,
-  skuCCH093,
-  skuCCM089,
-  skuCDG09,
-  skuCJB01,
-  skuCNS0434,
-  skuCOC0843,
-  skuCQB09,
-  skuCR098,
-  skuCST01,
-  skuCTSS098,
-  skuCTSS0983,
-  skuCWG01,
-  skuDWEG09,
-  skuEARM04,
-  skuEC0993,
-  skuEWC07,
-  skuFARM05,
-  skuFLAS094,
-  skuGARM093,
-  skuGC01,
-  skuGMCT01,
-  skuGPC01,
-  skuGPC02,
-  skuGPC03,
-  skuGRCG01,
-  skuHDG02,
-  skuHP01,
-  skuILC01,
-  skuIQB09,
-  skuISP01,
-  skuJAR08,
-  skuLAMR03,
-  skuLBPC09,
-  skuLCO034,
-  skuLCP01,
-  skuLCP02,
-  skuLPC09,
-  skuLPC011,
-  skuLPQB084,
-  skuMB0973,
-  skuMCP01,
-  skuMGD01,
-  skuMLP01,
-  skuMMST01,
-  skuMMST02,
-  skuMPC02,
-  skuMPC07,
-  skuMR05,
-  skuMR08,
-  skuMTB023,
-  skuMTSS01,
-  skuMUQB01,
-  skuMWT01,
-  skuNJOP09,
-  skuNR09,
-  skuNTSS01,
-  skuNTSS02,
-  skuNTSS03,
-  skuNTTS04,
-  skuNTSS05,
-  skuNTSS06,
-  skuNTSS07,
-  skuOTB07,
-  skuPAP01,
-  skuPMAP01,
-  skuRB01,
-  skuRB093,
-  skuRCC09,
-  skuRCD01,
-  skuRCQB01,
-  skuRLC08,
-  skuRMP01,
-  skuRST01,
-  skuRST02,
-  skuRWG09,
-  skuSARM09,
-  skuSARMO034,
-  skuSBG09,
-  skuSCG09,
-  skuSCM02,
-  skuSGB01,
-  skuSGB02,
-  skuSHOT095,
-  skuSPC01,
-  skuSPC06,
-  skuSPOO094,
-  skuSQB034,
-  skuSST02,
-  skuSTM09,
-  skuSTRA095,
-  skuSWB01,
-  skuTARM03,
-  skuTARM034,
-  skuTCM03,
-  skuTLSS01,
-  skuTST02,
-  skuTTSS01,
-  skuVARM09,
-  skuVC01,
-  skuWCS09,
-  skuWCSI09,
-  skuWOP09,
-  skuWTP09,
+export const restPresets = {
+  skuCst01: skuCst01Presets.restPreset,
+  skuLcp02: skuLcp02Presets.restPreset,
+  skuNtss06: skuNtss06Presets.restPreset,
+  skuCqb09: skuCqb09Presets.restPreset,
+  skuMuqb01: skuMuqb01Presets.restPreset,
+  skuLcp01: skuLcp01Presets.restPreset,
+  skuMr08: skuMr08Presets.restPreset,
+  skuNtts04: skuNtts04Presets.restPreset,
+  skuSpc06: skuSpc06Presets.restPreset,
+  skuTcm03: skuTcm03Presets.restPreset,
+  skuSarmo034: skuSarmo034Presets.restPreset,
+  skuLco034: skuLco034Presets.restPreset,
+  skuSpc01: skuSpc01Presets.restPreset,
+  skuNtss01: skuNtss01Presets.restPreset,
+  skuSqb034: skuSqb034Presets.restPreset,
+  skuCarm023: skuCarm023Presets.restPreset,
+  skuScm02: skuScm02Presets.restPreset,
+  skuRlc08: skuRlc08Presets.restPreset,
+  skuSbg09: skuSbg09Presets.restPreset,
+  skuSst02: skuSst02Presets.restPreset,
+  skuEc0993: skuEc0993Presets.restPreset,
+  skuTarm03: skuTarm03Presets.restPreset,
+  skuAdpc09: skuAdpc09Presets.restPreset,
+  skuCwg01: skuCwg01Presets.restPreset,
+  skuShot095: skuShot095Presets.restPreset,
+  skuRcqb01: skuRcqb01Presets.restPreset,
+  skuGmct01: skuGmct01Presets.restPreset,
+  skuGarm093: skuGarm093Presets.restPreset,
+  skuGc01: skuGc01Presets.restPreset,
+  skuDweg09: skuDweg09Presets.restPreset,
+  skuOtb07: skuOtb07Presets.restPreset,
+  skuLpc09: skuLpc09Presets.restPreset,
+  skuRcd01: skuRcd01Presets.restPreset,
+  skuGpc03: skuGpc03Presets.restPreset,
+  skuCbm03: skuCbm03Presets.restPreset,
+  skuJar08: skuJar08Presets.restPreset,
+  skuHdg02: skuHdg02Presets.restPreset,
+  skuBr0983: skuBr0983Presets.restPreset,
+  skuMtss01: skuMtss01Presets.restPreset,
+  skuArg56: skuArg56Presets.restPreset,
+  skuWcs09: skuWcs09Presets.restPreset,
+  skuCoc0843: skuCoc0843Presets.restPreset,
+  skuBarm03: skuBarm03Presets.restPreset,
+  skuHp01: skuHp01Presets.restPreset,
+  skuIsp01: skuIsp01Presets.restPreset,
+  skuPap01: skuPap01Presets.restPreset,
+  skuBa092: skuBa092Presets.restPreset,
+  skuMmst01: skuMmst01Presets.restPreset,
+  skuStra095: skuStra095Presets.restPreset,
+  skuCcg01: skuCcg01Presets.restPreset,
+  skuCr098: skuCr098Presets.restPreset,
+  skuLamr03: skuLamr03Presets.restPreset,
+  skuGrcg01: skuGrcg01Presets.restPreset,
+  skuRb093: skuRb093Presets.restPreset,
+  skuMpc07: skuMpc07Presets.restPreset,
+  skuCcm089: skuCcm089Presets.restPreset,
+  skuCtss0983: skuCtss0983Presets.restPreset,
+  skuSarm09: skuSarm09Presets.restPreset,
+  skuLpqb084: skuLpqb084Presets.restPreset,
+  skuVarm09: skuVarm09Presets.restPreset,
+  skuFarm05: skuFarm05Presets.restPreset,
+  skuRwg09: skuRwg09Presets.restPreset,
+  skuBcoas08: skuBcoas08Presets.restPreset,
+  skuGpc01: skuGpc01Presets.restPreset,
+  skuNtss03: skuNtss03Presets.restPreset,
+  skuNtss05: skuNtss05Presets.restPreset,
+  skuRmp01: skuRmp01Presets.restPreset,
+  skuIlc01: skuIlc01Presets.restPreset,
+  skuCdg09: skuCdg09Presets.restPreset,
+  skuAlc01: skuAlc01Presets.restPreset,
+  skuMwt01: skuMwt01Presets.restPreset,
+  skuTtss01: skuTtss01Presets.restPreset,
+  skuRcc09: skuRcc09Presets.restPreset,
+  skuEarm04: skuEarm04Presets.restPreset,
+  skuMb0973: skuMb0973Presets.restPreset,
+  skuEwc07: skuEwc07Presets.restPreset,
+  skuCch093: skuCch093Presets.restPreset,
+  skuFlas094: skuFlas094Presets.restPreset,
+  skuRb01: skuRb01Presets.restPreset,
+  skuMpc02: skuMpc02Presets.restPreset,
+  skuBamb084: skuBamb084Presets.restPreset,
+  skuBlpc09: skuBlpc09Presets.restPreset,
+  skuBlp01: skuBlp01Presets.restPreset,
+  skuSgb02: skuSgb02Presets.restPreset,
+  skuTst02: skuTst02Presets.restPreset,
+  skuCtss098: skuCtss098Presets.restPreset,
+  skuMr05: skuMr05Presets.restPreset,
+  skuRst01: skuRst01Presets.restPreset,
+  skuWcsi09: skuWcsi09Presets.restPreset,
+  skuStm09: skuStm09Presets.restPreset,
+  skuMgd01: skuMgd01Presets.restPreset,
+  skuWtp09: skuWtp09Presets.restPreset,
+  skuNjop09: skuNjop09Presets.restPreset,
+  skuSwb01: skuSwb01Presets.restPreset,
+  skuIqb09: skuIqb09Presets.restPreset,
+  skuTarm034: skuTarm034Presets.restPreset,
+  skuBuck023: skuBuck023Presets.restPreset,
+  skuNtss02: skuNtss02Presets.restPreset,
+  skuWop09: skuWop09Presets.restPreset,
+  skuVc01: skuVc01Presets.restPreset,
+  skuTlss01: skuTlss01Presets.restPreset,
+  skuAdarm04: skuAdarm04Presets.restPreset,
+  skuMlp01: skuMlp01Presets.restPreset,
+  skuAar34: skuAar34Presets.restPreset,
+  skuLbpc09: skuLbpc09Presets.restPreset,
+  skuNtss07: skuNtss07Presets.restPreset,
+  skuScg09: skuScg09Presets.restPreset,
+  skuCns0434: skuCns0434Presets.restPreset,
+  skuMmst02: skuMmst02Presets.restPreset,
+  skuLpc011: skuLpc011Presets.restPreset,
+  skuAmr09: skuAmr09Presets.restPreset,
+  skuMcp01: skuMcp01Presets.restPreset,
+  skuPmap01: skuPmap01Presets.restPreset,
+  skuCcg02: skuCcg02Presets.restPreset,
+  skuRst02: skuRst02Presets.restPreset,
+  skuAdpc7: skuAdpc7Presets.restPreset,
+  skuAdct01: skuAdct01Presets.restPreset,
+  skuNr09: skuNr09Presets.restPreset,
+  skuMtb023: skuMtb023Presets.restPreset,
+  skuCjb01: skuCjb01Presets.restPreset,
+  skuSpoo094: skuSpoo094Presets.restPreset,
+  skuCcc09: skuCcc09Presets.restPreset,
+  skuSgb01: skuSgb01Presets.restPreset,
+  skuGpc02: skuGpc02Presets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  skuCst01: skuCst01Presets.graphqlPreset,
+  skuLcp02: skuLcp02Presets.graphqlPreset,
+  skuNtss06: skuNtss06Presets.graphqlPreset,
+  skuCqb09: skuCqb09Presets.graphqlPreset,
+  skuMuqb01: skuMuqb01Presets.graphqlPreset,
+  skuLcp01: skuLcp01Presets.graphqlPreset,
+  skuMr08: skuMr08Presets.graphqlPreset,
+  skuNtts04: skuNtts04Presets.graphqlPreset,
+  skuSpc06: skuSpc06Presets.graphqlPreset,
+  skuTcm03: skuTcm03Presets.graphqlPreset,
+  skuSarmo034: skuSarmo034Presets.graphqlPreset,
+  skuLco034: skuLco034Presets.graphqlPreset,
+  skuSpc01: skuSpc01Presets.graphqlPreset,
+  skuNtss01: skuNtss01Presets.graphqlPreset,
+  skuSqb034: skuSqb034Presets.graphqlPreset,
+  skuCarm023: skuCarm023Presets.graphqlPreset,
+  skuScm02: skuScm02Presets.graphqlPreset,
+  skuRlc08: skuRlc08Presets.graphqlPreset,
+  skuSbg09: skuSbg09Presets.graphqlPreset,
+  skuSst02: skuSst02Presets.graphqlPreset,
+  skuEc0993: skuEc0993Presets.graphqlPreset,
+  skuTarm03: skuTarm03Presets.graphqlPreset,
+  skuAdpc09: skuAdpc09Presets.graphqlPreset,
+  skuCwg01: skuCwg01Presets.graphqlPreset,
+  skuShot095: skuShot095Presets.graphqlPreset,
+  skuRcqb01: skuRcqb01Presets.graphqlPreset,
+  skuGmct01: skuGmct01Presets.graphqlPreset,
+  skuGarm093: skuGarm093Presets.graphqlPreset,
+  skuGc01: skuGc01Presets.graphqlPreset,
+  skuDweg09: skuDweg09Presets.graphqlPreset,
+  skuOtb07: skuOtb07Presets.graphqlPreset,
+  skuLpc09: skuLpc09Presets.graphqlPreset,
+  skuRcd01: skuRcd01Presets.graphqlPreset,
+  skuGpc03: skuGpc03Presets.graphqlPreset,
+  skuCbm03: skuCbm03Presets.graphqlPreset,
+  skuJar08: skuJar08Presets.graphqlPreset,
+  skuHdg02: skuHdg02Presets.graphqlPreset,
+  skuBr0983: skuBr0983Presets.graphqlPreset,
+  skuMtss01: skuMtss01Presets.graphqlPreset,
+  skuArg56: skuArg56Presets.graphqlPreset,
+  skuWcs09: skuWcs09Presets.graphqlPreset,
+  skuCoc0843: skuCoc0843Presets.graphqlPreset,
+  skuBarm03: skuBarm03Presets.graphqlPreset,
+  skuHp01: skuHp01Presets.graphqlPreset,
+  skuIsp01: skuIsp01Presets.graphqlPreset,
+  skuPap01: skuPap01Presets.graphqlPreset,
+  skuBa092: skuBa092Presets.graphqlPreset,
+  skuMmst01: skuMmst01Presets.graphqlPreset,
+  skuStra095: skuStra095Presets.graphqlPreset,
+  skuCcg01: skuCcg01Presets.graphqlPreset,
+  skuCr098: skuCr098Presets.graphqlPreset,
+  skuLamr03: skuLamr03Presets.graphqlPreset,
+  skuGrcg01: skuGrcg01Presets.graphqlPreset,
+  skuRb093: skuRb093Presets.graphqlPreset,
+  skuMpc07: skuMpc07Presets.graphqlPreset,
+  skuCcm089: skuCcm089Presets.graphqlPreset,
+  skuCtss0983: skuCtss0983Presets.graphqlPreset,
+  skuSarm09: skuSarm09Presets.graphqlPreset,
+  skuLpqb084: skuLpqb084Presets.graphqlPreset,
+  skuVarm09: skuVarm09Presets.graphqlPreset,
+  skuFarm05: skuFarm05Presets.graphqlPreset,
+  skuRwg09: skuRwg09Presets.graphqlPreset,
+  skuBcoas08: skuBcoas08Presets.graphqlPreset,
+  skuGpc01: skuGpc01Presets.graphqlPreset,
+  skuNtss03: skuNtss03Presets.graphqlPreset,
+  skuNtss05: skuNtss05Presets.graphqlPreset,
+  skuRmp01: skuRmp01Presets.graphqlPreset,
+  skuIlc01: skuIlc01Presets.graphqlPreset,
+  skuCdg09: skuCdg09Presets.graphqlPreset,
+  skuAlc01: skuAlc01Presets.graphqlPreset,
+  skuMwt01: skuMwt01Presets.graphqlPreset,
+  skuTtss01: skuTtss01Presets.graphqlPreset,
+  skuRcc09: skuRcc09Presets.graphqlPreset,
+  skuEarm04: skuEarm04Presets.graphqlPreset,
+  skuMb0973: skuMb0973Presets.graphqlPreset,
+  skuEwc07: skuEwc07Presets.graphqlPreset,
+  skuCch093: skuCch093Presets.graphqlPreset,
+  skuFlas094: skuFlas094Presets.graphqlPreset,
+  skuRb01: skuRb01Presets.graphqlPreset,
+  skuMpc02: skuMpc02Presets.graphqlPreset,
+  skuBamb084: skuBamb084Presets.graphqlPreset,
+  skuBlpc09: skuBlpc09Presets.graphqlPreset,
+  skuBlp01: skuBlp01Presets.graphqlPreset,
+  skuSgb02: skuSgb02Presets.graphqlPreset,
+  skuTst02: skuTst02Presets.graphqlPreset,
+  skuCtss098: skuCtss098Presets.graphqlPreset,
+  skuMr05: skuMr05Presets.graphqlPreset,
+  skuRst01: skuRst01Presets.graphqlPreset,
+  skuWcsi09: skuWcsi09Presets.graphqlPreset,
+  skuStm09: skuStm09Presets.graphqlPreset,
+  skuMgd01: skuMgd01Presets.graphqlPreset,
+  skuWtp09: skuWtp09Presets.graphqlPreset,
+  skuNjop09: skuNjop09Presets.graphqlPreset,
+  skuSwb01: skuSwb01Presets.graphqlPreset,
+  skuIqb09: skuIqb09Presets.graphqlPreset,
+  skuTarm034: skuTarm034Presets.graphqlPreset,
+  skuBuck023: skuBuck023Presets.graphqlPreset,
+  skuNtss02: skuNtss02Presets.graphqlPreset,
+  skuWop09: skuWop09Presets.graphqlPreset,
+  skuVc01: skuVc01Presets.graphqlPreset,
+  skuTlss01: skuTlss01Presets.graphqlPreset,
+  skuAdarm04: skuAdarm04Presets.graphqlPreset,
+  skuMlp01: skuMlp01Presets.graphqlPreset,
+  skuAar34: skuAar34Presets.graphqlPreset,
+  skuLbpc09: skuLbpc09Presets.graphqlPreset,
+  skuNtss07: skuNtss07Presets.graphqlPreset,
+  skuScg09: skuScg09Presets.graphqlPreset,
+  skuCns0434: skuCns0434Presets.graphqlPreset,
+  skuMmst02: skuMmst02Presets.graphqlPreset,
+  skuLpc011: skuLpc011Presets.graphqlPreset,
+  skuAmr09: skuAmr09Presets.graphqlPreset,
+  skuMcp01: skuMcp01Presets.graphqlPreset,
+  skuPmap01: skuPmap01Presets.graphqlPreset,
+  skuCcg02: skuCcg02Presets.graphqlPreset,
+  skuRst02: skuRst02Presets.graphqlPreset,
+  skuAdpc7: skuAdpc7Presets.graphqlPreset,
+  skuAdct01: skuAdct01Presets.graphqlPreset,
+  skuNr09: skuNr09Presets.graphqlPreset,
+  skuMtb023: skuMtb023Presets.graphqlPreset,
+  skuCjb01: skuCjb01Presets.graphqlPreset,
+  skuSpoo094: skuSpoo094Presets.graphqlPreset,
+  skuCcc09: skuCcc09Presets.graphqlPreset,
+  skuSgb01: skuSgb01Presets.graphqlPreset,
+  skuGpc02: skuGpc02Presets.graphqlPreset,
+};
+
+export const compatPresets = {
+  skuCst01: skuCst01Presets.compatPreset,
+  skuLcp02: skuLcp02Presets.compatPreset,
+  skuNtss06: skuNtss06Presets.compatPreset,
+  skuCqb09: skuCqb09Presets.compatPreset,
+  skuMuqb01: skuMuqb01Presets.compatPreset,
+  skuLcp01: skuLcp01Presets.compatPreset,
+  skuMr08: skuMr08Presets.compatPreset,
+  skuNtts04: skuNtts04Presets.compatPreset,
+  skuSpc06: skuSpc06Presets.compatPreset,
+  skuTcm03: skuTcm03Presets.compatPreset,
+  skuSarmo034: skuSarmo034Presets.compatPreset,
+  skuLco034: skuLco034Presets.compatPreset,
+  skuSpc01: skuSpc01Presets.compatPreset,
+  skuNtss01: skuNtss01Presets.compatPreset,
+  skuSqb034: skuSqb034Presets.compatPreset,
+  skuCarm023: skuCarm023Presets.compatPreset,
+  skuScm02: skuScm02Presets.compatPreset,
+  skuRlc08: skuRlc08Presets.compatPreset,
+  skuSbg09: skuSbg09Presets.compatPreset,
+  skuSst02: skuSst02Presets.compatPreset,
+  skuEc0993: skuEc0993Presets.compatPreset,
+  skuTarm03: skuTarm03Presets.compatPreset,
+  skuAdpc09: skuAdpc09Presets.compatPreset,
+  skuCwg01: skuCwg01Presets.compatPreset,
+  skuShot095: skuShot095Presets.compatPreset,
+  skuRcqb01: skuRcqb01Presets.compatPreset,
+  skuGmct01: skuGmct01Presets.compatPreset,
+  skuGarm093: skuGarm093Presets.compatPreset,
+  skuGc01: skuGc01Presets.compatPreset,
+  skuDweg09: skuDweg09Presets.compatPreset,
+  skuOtb07: skuOtb07Presets.compatPreset,
+  skuLpc09: skuLpc09Presets.compatPreset,
+  skuRcd01: skuRcd01Presets.compatPreset,
+  skuGpc03: skuGpc03Presets.compatPreset,
+  skuCbm03: skuCbm03Presets.compatPreset,
+  skuJar08: skuJar08Presets.compatPreset,
+  skuHdg02: skuHdg02Presets.compatPreset,
+  skuBr0983: skuBr0983Presets.compatPreset,
+  skuMtss01: skuMtss01Presets.compatPreset,
+  skuArg56: skuArg56Presets.compatPreset,
+  skuWcs09: skuWcs09Presets.compatPreset,
+  skuCoc0843: skuCoc0843Presets.compatPreset,
+  skuBarm03: skuBarm03Presets.compatPreset,
+  skuHp01: skuHp01Presets.compatPreset,
+  skuIsp01: skuIsp01Presets.compatPreset,
+  skuPap01: skuPap01Presets.compatPreset,
+  skuBa092: skuBa092Presets.compatPreset,
+  skuMmst01: skuMmst01Presets.compatPreset,
+  skuStra095: skuStra095Presets.compatPreset,
+  skuCcg01: skuCcg01Presets.compatPreset,
+  skuCr098: skuCr098Presets.compatPreset,
+  skuLamr03: skuLamr03Presets.compatPreset,
+  skuGrcg01: skuGrcg01Presets.compatPreset,
+  skuRb093: skuRb093Presets.compatPreset,
+  skuMpc07: skuMpc07Presets.compatPreset,
+  skuCcm089: skuCcm089Presets.compatPreset,
+  skuCtss0983: skuCtss0983Presets.compatPreset,
+  skuSarm09: skuSarm09Presets.compatPreset,
+  skuLpqb084: skuLpqb084Presets.compatPreset,
+  skuVarm09: skuVarm09Presets.compatPreset,
+  skuFarm05: skuFarm05Presets.compatPreset,
+  skuRwg09: skuRwg09Presets.compatPreset,
+  skuBcoas08: skuBcoas08Presets.compatPreset,
+  skuGpc01: skuGpc01Presets.compatPreset,
+  skuNtss03: skuNtss03Presets.compatPreset,
+  skuNtss05: skuNtss05Presets.compatPreset,
+  skuRmp01: skuRmp01Presets.compatPreset,
+  skuIlc01: skuIlc01Presets.compatPreset,
+  skuCdg09: skuCdg09Presets.compatPreset,
+  skuAlc01: skuAlc01Presets.compatPreset,
+  skuMwt01: skuMwt01Presets.compatPreset,
+  skuTtss01: skuTtss01Presets.compatPreset,
+  skuRcc09: skuRcc09Presets.compatPreset,
+  skuEarm04: skuEarm04Presets.compatPreset,
+  skuMb0973: skuMb0973Presets.compatPreset,
+  skuEwc07: skuEwc07Presets.compatPreset,
+  skuCch093: skuCch093Presets.compatPreset,
+  skuFlas094: skuFlas094Presets.compatPreset,
+  skuRb01: skuRb01Presets.compatPreset,
+  skuMpc02: skuMpc02Presets.compatPreset,
+  skuBamb084: skuBamb084Presets.compatPreset,
+  skuBlpc09: skuBlpc09Presets.compatPreset,
+  skuBlp01: skuBlp01Presets.compatPreset,
+  skuSgb02: skuSgb02Presets.compatPreset,
+  skuTst02: skuTst02Presets.compatPreset,
+  skuCtss098: skuCtss098Presets.compatPreset,
+  skuMr05: skuMr05Presets.compatPreset,
+  skuRst01: skuRst01Presets.compatPreset,
+  skuWcsi09: skuWcsi09Presets.compatPreset,
+  skuStm09: skuStm09Presets.compatPreset,
+  skuMgd01: skuMgd01Presets.compatPreset,
+  skuWtp09: skuWtp09Presets.compatPreset,
+  skuNjop09: skuNjop09Presets.compatPreset,
+  skuSwb01: skuSwb01Presets.compatPreset,
+  skuIqb09: skuIqb09Presets.compatPreset,
+  skuTarm034: skuTarm034Presets.compatPreset,
+  skuBuck023: skuBuck023Presets.compatPreset,
+  skuNtss02: skuNtss02Presets.compatPreset,
+  skuWop09: skuWop09Presets.compatPreset,
+  skuVc01: skuVc01Presets.compatPreset,
+  skuTlss01: skuTlss01Presets.compatPreset,
+  skuAdarm04: skuAdarm04Presets.compatPreset,
+  skuMlp01: skuMlp01Presets.compatPreset,
+  skuAar34: skuAar34Presets.compatPreset,
+  skuLbpc09: skuLbpc09Presets.compatPreset,
+  skuNtss07: skuNtss07Presets.compatPreset,
+  skuScg09: skuScg09Presets.compatPreset,
+  skuCns0434: skuCns0434Presets.compatPreset,
+  skuMmst02: skuMmst02Presets.compatPreset,
+  skuLpc011: skuLpc011Presets.compatPreset,
+  skuAmr09: skuAmr09Presets.compatPreset,
+  skuMcp01: skuMcp01Presets.compatPreset,
+  skuPmap01: skuPmap01Presets.compatPreset,
+  skuCcg02: skuCcg02Presets.compatPreset,
+  skuRst02: skuRst02Presets.compatPreset,
+  skuAdpc7: skuAdpc7Presets.compatPreset,
+  skuAdct01: skuAdct01Presets.compatPreset,
+  skuNr09: skuNr09Presets.compatPreset,
+  skuMtb023: skuMtb023Presets.compatPreset,
+  skuCjb01: skuCjb01Presets.compatPreset,
+  skuSpoo094: skuSpoo094Presets.compatPreset,
+  skuCcc09: skuCcc09Presets.compatPreset,
+  skuSgb01: skuSgb01Presets.compatPreset,
+  skuGpc02: skuGpc02Presets.compatPreset,
+};

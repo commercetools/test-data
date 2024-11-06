@@ -1,0 +1,28 @@
+import {
+  ChannelDraft,
+  type TChannelDraft,
+} from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
+import {
+  ProductVariantDraft,
+  type TProductVariantDraft,
+} from '@commercetools-test-data/product';
+import type { TInventoryEntryDraftBuilder } from '../../../types';
+import * as InventoryEntryDraft from '../../index';
+
+const supplyChannel = ChannelDraft.presets.sampleData
+  .euWarehouse()
+  .build<TChannelDraft>();
+
+const variant = ProductVariantDraft.presets.sampleData
+  .gg123Qr03()
+  .build<TProductVariantDraft>();
+
+const skuGg123Qr2023EuWarehouse = (): TInventoryEntryDraftBuilder =>
+  InventoryEntryDraft.presets
+    .empty()
+    .key('gg123-qr-2023-eu-warehouse')
+    .sku(variant.sku!)
+    .quantityOnStock(1000)
+    .supplyChannel(KeyReferenceDraft.presets.channel().key(supplyChannel.key!));
+export default skuGg123Qr2023EuWarehouse;

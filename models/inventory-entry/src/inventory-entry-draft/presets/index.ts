@@ -1,7 +1,7 @@
 import * as changeHistoryData from './change-history-data';
 import * as empty from './empty';
-import sampleDataB2B from './sample-data-b2b';
-import sampleDataB2CLifestyle from './sample-data-b2c-lifestyle';
+import * as sampleDataB2B from './sample-data-b2b';
+import * as sampleDataB2CLifestyle from './sample-data-b2c-lifestyle';
 
 export const restPresets = {
   changeHistoryData,
