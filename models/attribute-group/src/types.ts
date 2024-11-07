@@ -10,7 +10,7 @@ export type TAttributeGroupGraphql = Omit<
 > & {
   name: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   __typename: 'AttributeGroup';
 };

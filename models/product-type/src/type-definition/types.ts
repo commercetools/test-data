@@ -26,8 +26,8 @@ export type TTypeDefinitionGraphql = Omit<
 > & {
   nameAllLocales: TLocalizedStringGraphql;
   descriptionAllLocales?: TLocalizedStringGraphql;
-  name?: string;
-  description?: string;
+  name?: string | null;
+  description?: string | null;
   __typename: 'TypeDefinition';
 };
 

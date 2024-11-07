@@ -46,15 +46,15 @@ export type TProductProjectionGraphql = Omit<
 > & {
   categoryOrderHints: TCategoryOrderHintGraphql[];
   categoriesRef: TReferenceGraphql[];
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringDraftGraphql | null;
   name: string;
   nameAllLocales: TLocalizedStringDraftGraphql;
-  metaDescription?: string;
+  metaDescription?: string | null;
   metaDescriptionAllLocales?: TLocalizedStringDraftGraphql | null;
-  metaKeywords?: string;
+  metaKeywords?: string | null;
   metaKeywordsAllLocales?: TLocalizedStringDraftGraphql | null;
-  metaTitle?: string;
+  metaTitle?: string | null;
   metaTitleAllLocales?: TLocalizedStringDraftGraphql | null;
   productTypeRef: TReferenceGraphql;
   reviewRatingStatistics?: ReviewRatingStatistics & {

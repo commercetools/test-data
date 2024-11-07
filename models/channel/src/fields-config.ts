@@ -1,6 +1,8 @@
 import {
   Address,
   ClientLogging,
+  GeometryGraphql,
+  GeometryRest,
   LocalizedString,
   TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
@@ -29,11 +31,11 @@ const commonFieldsConfig = {
   address: fake(() => Address.random()),
   reviewRatingStatistics: null,
   custom: null,
-  geoLocation: null,
 };
 export const restFieldsConfig: TModelFieldsConfig<TChannelRest> = {
   fields: {
     ...commonFieldsConfig,
+    geoLocation: fake(() => GeometryRest.random()),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
@@ -42,6 +44,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
     __typename: 'Channel',
     nameAllLocales: null,
     descriptionAllLocales: null,
+    geoLocation: fake(() => GeometryGraphql.random()),
   },
   postBuild: (model, context) => {
     if (context?.isCompatMode) {

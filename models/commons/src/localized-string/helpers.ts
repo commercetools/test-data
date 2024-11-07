@@ -19,7 +19,7 @@ const resolveGraphqlDefaultLocaleValue = (
   allLocales: TLocalizedStringGraphql | null
 ) => {
   if (!allLocales) {
-    return undefined;
+    return null;
   }
   const defaultLocaleName = allLocales.find(
     (name) => name.locale === DEFAULT_LOCALE
