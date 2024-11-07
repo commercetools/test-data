@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 10.9.2
+
+### Patch Changes
+
+- [#709](https://github.com/commercetools/test-data/pull/709) [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update `LocalizedString.resolveGraphqlDefaultLocaleValue` helper to return `null` instead of `undefined` when not input value is provided.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
 ## 10.9.1
 
 ### Patch Changes
