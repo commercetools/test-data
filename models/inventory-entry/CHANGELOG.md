@@ -1,5 +1,16 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.9.2
+
+### Patch Changes
+
+- Updated dependencies [[`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4)]:
+  - @commercetools-test-data/commons@10.9.2
+  - @commercetools-test-data/product@10.9.2
+  - @commercetools-test-data/channel@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
 ## 10.9.1
 
 ### Patch Changes
