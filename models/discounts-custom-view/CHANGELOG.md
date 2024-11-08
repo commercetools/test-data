@@ -1,5 +1,16 @@
 # @commercetools-test-data/discounts-custom-view
 
+## 10.9.3
+
+### Patch Changes
+
+- Updated dependencies [[`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867)]:
+  - @commercetools-test-data/commons@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/graphql-types@10.9.3
+  - @commercetools-test-data/filter-values@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
 ## 10.9.2
 
 ### Patch Changes

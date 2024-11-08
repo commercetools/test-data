@@ -1,5 +1,16 @@
 # @commercetools-test-data/commons
 
+## 10.9.3
+
+### Patch Changes
+
+- [#711](https://github.com/commercetools/test-data/pull/711) [`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fix an error in the `LocalizedString.resolveGraphqlDefaultLocaleValue` helper function when an empty array is passed as a parameter.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
 ## 10.9.2
 
 ### Patch Changes
