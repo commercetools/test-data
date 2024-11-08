@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/project",
-  "version": "10.9.2",
+  "version": "10.9.3",
   "description": "Data model for commercetools API Project",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,8 +19,8 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/core": "10.9.2",
-    "@commercetools-test-data/utils": "10.9.2",
+    "@commercetools-test-data/core": "10.9.3",
+    "@commercetools-test-data/utils": "10.9.3",
     "@commercetools/platform-sdk": "7.14.0"
   }
 }
