@@ -11,14 +11,17 @@ const braidedRug01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('9999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(9999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('9999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(9999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('9999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(9999))
         .country('US'),
     ])

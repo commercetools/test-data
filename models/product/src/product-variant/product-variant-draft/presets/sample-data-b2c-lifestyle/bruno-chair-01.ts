@@ -11,14 +11,17 @@ const brunoChair01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('7999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(7999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('7999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(7999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('7999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(7999))
         .country('US'),
     ])

@@ -20,17 +20,25 @@ const steelHipFlask01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('599EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(599))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .key('499EUR_dist')
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(499))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('599GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(599))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('599USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(599))
         .country('US'),
     ])

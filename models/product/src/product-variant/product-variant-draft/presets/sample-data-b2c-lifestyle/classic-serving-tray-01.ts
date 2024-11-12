@@ -11,14 +11,17 @@ const classicServingTray01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('299EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(299))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('299GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(299))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('299USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(299))
         .country('US'),
     ])

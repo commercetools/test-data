@@ -11,14 +11,17 @@ const sparkleChampagneGlass01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('4599EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(4599))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('4599GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(4599))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('4599USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(4599))
         .country('US'),
     ])

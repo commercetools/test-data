@@ -9,174 +9,174 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
     const cocktailStirringSpoon01Preset =
       cocktailStirringSpoon01().build<TProductVariantDraft>();
     expect(cocktailStirringSpoon01Preset).toMatchInlineSnapshot(`
-{
-  "assets": undefined,
-  "attributes": [
-    {
-      "name": "productspec",
-      "value": {
-        "de-DE": "- Edelstahl
-- Spülmaschinenfest",
-        "en-GB": "- Stainless steel
-- Dishwasher safe",
-        "en-US": "- Stainless steel
-- Dishwasher safe",
-      },
-    },
-    {
-      "name": "finish",
-      "value": {
-        "de-DE": "Silber:#C0C0C0",
-        "en-GB": "Silver:#C0C0C0",
-        "en-US": "Silver:#C0C0C0",
-      },
-    },
-  ],
-  "images": [
-    {
-      "dimensions": {
-        "h": 4555,
-        "w": 5757,
-      },
-      "label": undefined,
-      "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
-    },
-  ],
-  "key": undefined,
-  "prices": [
-    {
-      "channel": undefined,
-      "country": "DE",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centAmount": 199,
-        "currencyCode": "EUR",
-      },
-    },
-    {
-      "channel": undefined,
-      "country": "GB",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centAmount": 199,
-        "currencyCode": "GBP",
-      },
-    },
-    {
-      "channel": undefined,
-      "country": "US",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centAmount": 199,
-        "currencyCode": "USD",
-      },
-    },
-  ],
-  "sku": "SPOO-094",
-}
-`);
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": {
+              "de-DE": "- Edelstahl
+      - Spülmaschinenfest",
+              "en-GB": "- Stainless steel
+      - Dishwasher safe",
+              "en-US": "- Stainless steel
+      - Dishwasher safe",
+            },
+          },
+          {
+            "name": "finish",
+            "value": {
+              "de-DE": "Silber:#C0C0C0",
+              "en-GB": "Silver:#C0C0C0",
+              "en-US": "Silver:#C0C0C0",
+            },
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "h": 4555,
+              "w": 5757,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199EUR",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "EUR",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199GBP",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "GBP",
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199USD",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centAmount": 199,
+              "currencyCode": "USD",
+            },
+          },
+        ],
+        "sku": "SPOO-094",
+      }
+    `);
   });
 
   it(`should return a cocktailStirringSpoon01 preset when built for graphql`, () => {
     const cocktailStirringSpoon01PresetGraphql =
       cocktailStirringSpoon01().buildGraphql<TProductVariantDraftGraphql>();
     expect(cocktailStirringSpoon01PresetGraphql).toMatchInlineSnapshot(`
-{
-  "assets": undefined,
-  "attributes": [
-    {
-      "name": "productspec",
-      "value": "{"en-GB":"- Stainless steel\\n- Dishwasher safe","de-DE":"- Edelstahl\\n- Spülmaschinenfest","en-US":"- Stainless steel\\n- Dishwasher safe"}",
-    },
-    {
-      "name": "finish",
-      "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
-    },
-  ],
-  "images": [
-    {
-      "dimensions": {
-        "height": 4555,
-        "width": 5757,
-      },
-      "label": undefined,
-      "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
-    },
-  ],
-  "key": undefined,
-  "prices": [
-    {
-      "channel": undefined,
-      "country": "DE",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centPrecision": {
-          "centAmount": 199,
-          "currencyCode": "EUR",
-        },
-      },
-    },
-    {
-      "channel": undefined,
-      "country": "GB",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centPrecision": {
-          "centAmount": 199,
-          "currencyCode": "GBP",
-        },
-      },
-    },
-    {
-      "channel": undefined,
-      "country": "US",
-      "custom": undefined,
-      "customerGroup": undefined,
-      "discounted": undefined,
-      "key": undefined,
-      "tiers": undefined,
-      "validFrom": undefined,
-      "validUntil": undefined,
-      "value": {
-        "centPrecision": {
-          "centAmount": 199,
-          "currencyCode": "USD",
-        },
-      },
-    },
-  ],
-  "sku": "SPOO-094",
-}
-`);
+      {
+        "assets": undefined,
+        "attributes": [
+          {
+            "name": "productspec",
+            "value": "{"en-GB":"- Stainless steel\\n- Dishwasher safe","de-DE":"- Edelstahl\\n- Spülmaschinenfest","en-US":"- Stainless steel\\n- Dishwasher safe"}",
+          },
+          {
+            "name": "finish",
+            "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+          },
+        ],
+        "images": [
+          {
+            "dimensions": {
+              "height": 4555,
+              "width": 5757,
+            },
+            "label": undefined,
+            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
+          },
+        ],
+        "key": undefined,
+        "prices": [
+          {
+            "channel": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199EUR",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 199,
+                "currencyCode": "EUR",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "GB",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199GBP",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 199,
+                "currencyCode": "GBP",
+              },
+            },
+          },
+          {
+            "channel": undefined,
+            "country": "US",
+            "custom": undefined,
+            "customerGroup": undefined,
+            "discounted": undefined,
+            "key": "199USD",
+            "tiers": undefined,
+            "validFrom": undefined,
+            "validUntil": undefined,
+            "value": {
+              "centPrecision": {
+                "centAmount": 199,
+                "currencyCode": "USD",
+              },
+            },
+          },
+        ],
+        "sku": "SPOO-094",
+      }
+    `);
   });
 });

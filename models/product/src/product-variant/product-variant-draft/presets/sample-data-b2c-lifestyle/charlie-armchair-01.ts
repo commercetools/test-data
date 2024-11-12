@@ -11,14 +11,17 @@ const charlieArmchair01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('49900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(49900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('49900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(49900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('49900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(49900))
         .country('US'),
     ])

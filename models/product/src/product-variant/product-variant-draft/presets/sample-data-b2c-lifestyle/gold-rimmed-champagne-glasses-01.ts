@@ -11,14 +11,17 @@ const goldRimmedChampagneGlasses01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('3000EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(3000))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('3000GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(3000))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('3000USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(3000))
         .country('US'),
     ])

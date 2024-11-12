@@ -11,14 +11,17 @@ const classicBeerMug01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('3599EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(3599))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('3599GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(3599))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('3599USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(3599))
         .country('US'),
     ])

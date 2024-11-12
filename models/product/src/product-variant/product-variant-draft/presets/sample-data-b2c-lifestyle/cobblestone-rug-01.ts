@@ -11,14 +11,17 @@ const cobblestoneRug01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('12999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(12999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('12999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(12999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('12999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(12999))
         .country('US'),
     ])
