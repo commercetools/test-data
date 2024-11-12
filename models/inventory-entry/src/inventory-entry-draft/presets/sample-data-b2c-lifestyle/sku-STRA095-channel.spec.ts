@@ -2,11 +2,11 @@ import {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,
 } from '../../../types';
-import skuSTRA095 from './sku-STRA095';
+import skuSTRA095Channel from './sku-STRA095-channel';
 
-describe('with skuSTRA095 preset', () => {
-  it('should return skuSTRA095 preset', () => {
-    const skuSTRA095Preset = skuSTRA095().build<TInventoryEntryDraft>();
+describe('with skuSTRA095Channel preset', () => {
+  it('should return skuSTRA095Channel preset', () => {
+    const skuSTRA095Preset = skuSTRA095Channel().build<TInventoryEntryDraft>();
     expect(skuSTRA095Preset).toMatchInlineSnapshot(`
       {
         "custom": null,
@@ -15,14 +15,17 @@ describe('with skuSTRA095 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
 
-  it('should return skuSTRA095 preset when built for GraphQL', () => {
+  it('should return skuSTRA095Channel preset when built for GraphQL', () => {
     const skuSTRA095PresetGraphql =
-      skuSTRA095().buildGraphql<TInventoryEntryDraftGraphql>();
+      skuSTRA095Channel().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuSTRA095PresetGraphql).toMatchInlineSnapshot(`
       {
         "custom": null,
@@ -31,7 +34,10 @@ describe('with skuSTRA095 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
