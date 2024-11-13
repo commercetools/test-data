@@ -46,14 +46,6 @@ describe(`with doubleWalledEspressoGlass01 preset`, () => {
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.1.jpeg",
           },
-          {
-            "dimensions": {
-              "h": 1481,
-              "w": 987,
-            },
-            "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.2.jpeg",
-          },
         ],
         "key": undefined,
         "prices": [
@@ -136,14 +128,6 @@ describe(`with doubleWalledEspressoGlass01 preset`, () => {
             },
             "label": undefined,
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.1.jpeg",
-          },
-          {
-            "dimensions": {
-              "height": 1481,
-              "width": 987,
-            },
-            "label": undefined,
-            "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.2.jpeg",
           },
         ],
         "key": undefined,

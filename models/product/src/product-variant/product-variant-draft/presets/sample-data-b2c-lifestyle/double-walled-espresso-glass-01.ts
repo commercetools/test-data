@@ -32,12 +32,6 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
           'https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.1.jpeg'
         )
         .dimensions({ w: 3371, h: 3098 }),
-      ImageDraft.presets
-        .empty()
-        .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.2.jpeg'
-        )
-        .dimensions({ w: 987, h: 1481 }),
     ])
     .attributes([
       AttributeDraft.random().name('productspec').value({
