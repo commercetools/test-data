@@ -15,15 +15,15 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           {
             "name": "productspec",
             "value": {
-              "de-DE": "- Cotton upholstery
+              "de-DE": "- Cotton upholstery 
       - Manufactured wood
       - Twin size
       - Assembled on site",
-              "en-GB": "- Cotton upholstery
+              "en-GB": "- Cotton upholstery 
       - Manufactured wood
       - Twin size
       - Assembled on site",
-              "en-US": "- Cotton upholstery
+              "en-US": "- Cotton upholstery 
       - Manufactured wood
       - Twin size
       - Assembled on site",

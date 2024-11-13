@@ -14,9 +14,9 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
             "value": {
               "de-DE": "- Lederpolsterung
       - 3-Sitzer",
-              "en-GB": "- Leather upholstery
+              "en-GB": "- Leather upholstery 
       - 3 seater",
-              "en-US": "- Leather upholstery
+              "en-US": "- Leather upholstery 
       - 3 seater",
             },
           },

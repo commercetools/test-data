@@ -31,13 +31,13 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
           {
             "name": "productspec",
             "value": {
-              "de-DE": "- Cotton Upholstery
+              "de-DE": "- Cotton Upholstery 
       - Standard Queen size
       - Assembly on site",
-              "en-GB": "- Cotton Upholstery
+              "en-GB": "- Cotton Upholstery 
       - Standard Queen size
       - Assembly on site",
-              "en-US": "- Cotton Upholstery
+              "en-US": "- Cotton Upholstery 
       - Standard Queen size
       - Assembly on site",
             },

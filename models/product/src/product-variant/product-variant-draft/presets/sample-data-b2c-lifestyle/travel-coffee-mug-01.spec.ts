@@ -17,9 +17,9 @@ describe(`with travelCoffeeMug01 preset`, () => {
             "value": {
               "de-DE": "- Isoliert
       - Sowohl für kalte als auch heiße Getränke geeignet",
-              "en-GB": "- Insulated
+              "en-GB": "- Insulated 
       - Suitable for both cold and hot drinks",
-              "en-US": "- Insulated
+              "en-US": "- Insulated 
       - Suitable for both cold and hot drinks",
             },
           },
