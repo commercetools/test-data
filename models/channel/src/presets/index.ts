@@ -9,3 +9,7 @@ export const graphqlPresets = {
   foodStore: foodStore.graphqlPreset,
   clothesStore: clothesStore.graphqlPreset,
 };
+export const compatPresets = {
+  foodStore: foodStore.compatPreset,
+  clothesStore: clothesStore.compatPreset,
+};
