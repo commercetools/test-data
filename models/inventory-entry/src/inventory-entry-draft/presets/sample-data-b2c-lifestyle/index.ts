@@ -6,11 +6,13 @@ import skuADPC7 from './sku-ADPC7';
 import skuALC01 from './sku-ALC01';
 import skuAMR09 from './sku-AMR09';
 import skuARG56 from './sku-ARG56';
+import skuARG56Channel from './sku-ARG56-channel';
 import skuBA092 from './sku-BA092';
 import skuBAMB084 from './sku-BAMB084';
 import skuBARM03 from './sku-BARM03';
 import skuBCOAS08 from './sku-BCOAS08';
 import skuBLP01 from './sku-BLP01';
+import skuBLP01Channel from './sku-BLP01-channel';
 import skuBLPC09 from './sku-BLPC09';
 import skuBR0983 from './sku-BR0983';
 import skuBUCK023 from './sku-BUCK023';
@@ -19,6 +21,7 @@ import skuCBM03 from './sku-CBM03';
 import skuCCC09 from './sku-CCC09';
 import skuCCG01 from './sku-CCG01';
 import skuCCG02 from './sku-CCG02';
+import skuCCG02Channel from './sku-CCG02-channel';
 import skuCCH093 from './sku-CCH093';
 import skuCCM089 from './sku-CCM089';
 import skuCDG09 from './sku-CDG09';
@@ -27,6 +30,7 @@ import skuCNS0434 from './sku-CNS0434';
 import skuCOC0843 from './sku-COC0843';
 import skuCQB09 from './sku-CQB09';
 import skuCR098 from './sku-CR098';
+import skuCR098Channel from './sku-CR098-channel';
 import skuCST01 from './sku-CST01';
 import skuCTSS098 from './sku-CTSS098';
 import skuCTSS0983 from './sku-CTSS0983';
@@ -75,6 +79,7 @@ import skuMWT01 from './sku-MWT01';
 import skuNJOP09 from './sku-NJOP09';
 import skuNR09 from './sku-NR09';
 import skuNTSS01 from './sku-NTSS01';
+import skuNTSS01Channel from './sku-NTSS01-channel';
 import skuNTSS02 from './sku-NTSS02';
 import skuNTSS03 from './sku-NTSS03';
 import skuNTSS05 from './sku-NTSS05';
@@ -84,7 +89,9 @@ import skuNTTS04 from './sku-NTTS04';
 import skuOTB07 from './sku-OTB07';
 import skuPAP01 from './sku-PAP01';
 import skuPMAP01 from './sku-PMAP01';
+import skuPMAP01Channel from './sku-PMAP01-channel';
 import skuRB01 from './sku-RB01';
+import skuRB01Channel from './sku-RB01-channel';
 import skuRB093 from './sku-RB093';
 import skuRCC09 from './sku-RCC09';
 import skuRCD01 from './sku-RCD01';
@@ -109,13 +116,16 @@ import skuSQB034 from './sku-SQB034';
 import skuSST02 from './sku-SST02';
 import skuSTM09 from './sku-STM09';
 import skuSTRA095 from './sku-STRA095';
+import skuSTRA095Channel from './sku-STRA095-channel';
 import skuSWB01 from './sku-SWB01';
+import skuSWB01Channel from './sku-SWB01-channel';
 import skuTARM03 from './sku-TARM03';
 import skuTARM034 from './sku-TARM034';
 import skuTCM03 from './sku-TCM03';
 import skuTLSS01 from './sku-TLSS01';
 import skuTST02 from './sku-TST02';
 import skuTTSS01 from './sku-TTSS01';
+import skuTTSS01Channel from './sku-TTSS01-channel';
 import skuVARM09 from './sku-VARM09';
 import skuVC01 from './sku-VC01';
 import skuWCS09 from './sku-WCS09';
@@ -132,11 +142,13 @@ const presets = {
   skuALC01,
   skuAMR09,
   skuARG56,
+  skuARG56Channel,
   skuBA092,
   skuBAMB084,
   skuBARM03,
   skuBCOAS08,
   skuBLP01,
+  skuBLP01Channel,
   skuBLPC09,
   skuBR0983,
   skuBUCK023,
@@ -145,6 +157,7 @@ const presets = {
   skuCCC09,
   skuCCG01,
   skuCCG02,
+  skuCCG02Channel,
   skuCCH093,
   skuCCM089,
   skuCDG09,
@@ -153,6 +166,7 @@ const presets = {
   skuCOC0843,
   skuCQB09,
   skuCR098,
+  skuCR098Channel,
   skuCST01,
   skuCTSS098,
   skuCTSS0983,
@@ -201,6 +215,7 @@ const presets = {
   skuNJOP09,
   skuNR09,
   skuNTSS01,
+  skuNTSS01Channel,
   skuNTSS02,
   skuNTSS03,
   skuNTTS04,
@@ -210,7 +225,9 @@ const presets = {
   skuOTB07,
   skuPAP01,
   skuPMAP01,
+  skuPMAP01Channel,
   skuRB01,
+  skuRB01Channel,
   skuRB093,
   skuRCC09,
   skuRCD01,
@@ -235,13 +252,16 @@ const presets = {
   skuSST02,
   skuSTM09,
   skuSTRA095,
+  skuSTRA095Channel,
   skuSWB01,
+  skuSWB01Channel,
   skuTARM03,
   skuTARM034,
   skuTCM03,
   skuTLSS01,
   skuTST02,
   skuTTSS01,
+  skuTTSS01Channel,
   skuVARM09,
   skuVC01,
   skuWCS09,

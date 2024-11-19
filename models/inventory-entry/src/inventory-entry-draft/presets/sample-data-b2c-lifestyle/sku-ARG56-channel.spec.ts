@@ -2,10 +2,10 @@ import {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,
 } from '../../../types';
-import skuARG56Channel from './sku-ARG56';
+import skuARG56Channel from './sku-ARG56-channel';
 
-describe('with skuARG56 preset', () => {
-  it('should return skuARG56 preset', () => {
+describe('with skuARG56Channel preset', () => {
+  it('should return skuARG56Channel preset', () => {
     const skuARG56Preset = skuARG56Channel().build<TInventoryEntryDraft>();
     expect(skuARG56Preset).toMatchInlineSnapshot(`
       {
@@ -15,12 +15,15 @@ describe('with skuARG56 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "ARG-56",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
 
-  it('should return skuARG56 preset when built for GraphQL', () => {
+  it('should return skuARG56Channel preset when built for GraphQL', () => {
     const skuARG56PresetGraphql =
       skuARG56Channel().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuARG56PresetGraphql).toMatchInlineSnapshot(`
@@ -31,7 +34,10 @@ describe('with skuARG56 preset', () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "ARG-56",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

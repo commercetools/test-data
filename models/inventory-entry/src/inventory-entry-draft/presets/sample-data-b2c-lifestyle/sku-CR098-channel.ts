@@ -1,3 +1,5 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -10,10 +12,17 @@ const cobblestoneRug01Preset =
     .cobblestoneRug01()
     .build<TProductVariantDraft>();
 
-const skuCR098 = (): TInventoryEntryDraftBuilder =>
+const inventoryChannel = ChannelDraft.presets.sampleDataB2CLifestyle
+  .inventoryChannel()
+  .build<TChannelDraft>();
+
+const skuCR098Channel = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft.presets
     .empty()
     .sku(cobblestoneRug01Preset.sku!)
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
+    )
     .quantityOnStock(100);
 
-export default skuCR098;
+export default skuCR098Channel;

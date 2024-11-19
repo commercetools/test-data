@@ -1,3 +1,5 @@
+import { ChannelDraft, TChannelDraft } from '@commercetools-test-data/channel';
+import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
@@ -10,10 +12,17 @@ const purpleLandscapePainting01Preset =
     .purpleLandscapePainting01()
     .build<TProductVariantDraft>();
 
-const skuBLP01 = (): TInventoryEntryDraftBuilder =>
+const inventoryChannel = ChannelDraft.presets.sampleDataB2CLifestyle
+  .inventoryChannel()
+  .build<TChannelDraft>();
+
+const skuBLP01Channel = (): TInventoryEntryDraftBuilder =>
   InventoryEntryDraft.presets
     .empty()
     .sku(purpleLandscapePainting01Preset.sku!)
+    .supplyChannel(
+      KeyReferenceDraft.presets.channel().key(inventoryChannel.key!)
+    )
     .quantityOnStock(80);
 
-export default skuBLP01;
+export default skuBLP01Channel;

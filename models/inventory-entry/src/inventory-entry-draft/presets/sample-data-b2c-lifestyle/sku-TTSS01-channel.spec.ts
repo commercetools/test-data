@@ -2,11 +2,11 @@ import {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,
 } from '../../../types';
-import skuTTSS01 from './sku-TTSS01';
+import skuTTSS01Channel from './sku-TTSS01-channel';
 
-describe('with skuTTSS01 preset', () => {
-  it('should return skuTTSS01 preset', () => {
-    const skuTTSS01Preset = skuTTSS01().build<TInventoryEntryDraft>();
+describe('with skuTTSS01Channel preset', () => {
+  it('should return skuTTSS01Channel preset', () => {
+    const skuTTSS01Preset = skuTTSS01Channel().build<TInventoryEntryDraft>();
     expect(skuTTSS01Preset).toMatchInlineSnapshot(`
       {
         "custom": null,
@@ -15,14 +15,17 @@ describe('with skuTTSS01 preset', () => {
         "quantityOnStock": 76,
         "restockableInDays": undefined,
         "sku": "TTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
 
-  it('should return skuTTSS01 preset when built for GraphQL', () => {
+  it('should return skuTTSS01Channel preset when built for GraphQL', () => {
     const skuTTSS01PresetGraphql =
-      skuTTSS01().buildGraphql<TInventoryEntryDraftGraphql>();
+      skuTTSS01Channel().buildGraphql<TInventoryEntryDraftGraphql>();
     expect(skuTTSS01PresetGraphql).toMatchInlineSnapshot(`
       {
         "custom": null,
@@ -31,7 +34,10 @@ describe('with skuTTSS01 preset', () => {
         "quantityOnStock": 76,
         "restockableInDays": undefined,
         "sku": "TTSS-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
