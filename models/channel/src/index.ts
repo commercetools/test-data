@@ -25,4 +25,4 @@ export const ChannelGraphql = {
  * @deprecated Use `ChannelRest` or `ChannelGraphql` exported models instead of `Channel`.
  */
 export const random = CompatChannelModelBuilder;
-export const presets = modelPresets.graphqlPresets;
+export const presets = modelPresets.compatPresets;
