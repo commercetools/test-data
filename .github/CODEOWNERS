@@ -17,6 +17,7 @@
 # Tooling
 /core/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 /generators/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
+/codegen* @commercetools/shield-team-fe
 
 # Models
 /models @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
