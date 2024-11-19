@@ -16,6 +16,7 @@
 
 # Tooling
 /core/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
+/generators/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 
 # Models
 /models @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
