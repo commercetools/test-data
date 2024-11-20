@@ -13,6 +13,23 @@ $ yarn add -D @commercetools-test-data/inventory-entry
 # Usage
 
 ```ts
+import {
+  InventoryEntryRest,
+  InventoryEntryDraftRest,
+  InventoryEntryGraphql,
+  InventoryEntryDraftGraphql,
+} from '@commercetools-test-data/inventory-entry';
+
+const inventoryEntryRest = InventoryEntryRest.random().build();
+const inventoryEntryDraftRest = InventoryEntryDraftRest.random().build();
+
+const inventoryEntryGraphql = InventoryEntryGraphql.random().build();
+const inventoryEntryDraftGraphql = InventoryEntryDraftGraphql.random().build();
+```
+
+For backwards compatibility, we still support using the generic data models, but you should consider them legacy as we will be removing them in the future.
+
+```ts
 import type {
   TInventoryEntry,
   TInventoryEntryDraft,
