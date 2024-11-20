@@ -2,38 +2,82 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import {
-  InventoryEntryDraft,
-  InventoryEntryDraftGraphql,
-  InventoryEntryDraftRest,
-} from '../../index';
+import * as presets from './sku-fuel-filter-eu-warehouse';
 
 describe(`with skuFuelFilterEuWarehouse preset`, () => {
   it(`should return a skuFuelFilterEuWarehouse preset when built for rest`, () => {
-    const skuFuelFilterEuWarehousePreset = InventoryEntryDraftRest.presets
-      .skuFuelFilterEuWarehouse()
-      .build();
-    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot();
+    const skuFuelFilterEuWarehousePreset = presets.restPreset().build();
+    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fuel-filter-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fuel-filter",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFuelFilterEuWarehouse preset when built for graphql`, () => {
-    const skuFuelFilterEuWarehousePreset = InventoryEntryDraftGraphql.presets
-      .skuFuelFilterEuWarehouse()
-      .build();
-    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot();
+    const skuFuelFilterEuWarehousePreset = presets.graphqlPreset().build();
+    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fuel-filter-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fuel-filter",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFuelFilterEuWarehouse preset when built for legacy rest`, () => {
-    const skuFuelFilterEuWarehousePreset = InventoryEntryDraft.presets
-      .skuFuelFilterEuWarehouse()
+    const skuFuelFilterEuWarehousePreset = presets
+      .compatPreset()
       .buildRest<TInventoryEntryDraftRest>();
-    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot();
+    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fuel-filter-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fuel-filter",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFuelFilterEuWarehouse preset when built for legacy graphql`, () => {
-    const skuFuelFilterEuWarehousePreset = InventoryEntryDraft.presets
-      .skuFuelFilterEuWarehouse()
+    const skuFuelFilterEuWarehousePreset = presets
+      .compatPreset()
       .buildGraphql<TInventoryEntryDraftGraphql>();
-    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot();
+    expect(skuFuelFilterEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fuel-filter-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fuel-filter",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 });

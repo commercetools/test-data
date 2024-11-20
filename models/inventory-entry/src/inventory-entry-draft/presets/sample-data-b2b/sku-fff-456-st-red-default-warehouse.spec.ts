@@ -2,39 +2,84 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import {
-  InventoryEntryDraft,
-  InventoryEntryDraftGraphql,
-  InventoryEntryDraftRest,
-} from '../../index';
+import * as presets from './sku-fff-456-st-red-default-warehouse';
 
 describe(`with skuFff456StRedDefaultWarehouse preset`, () => {
   it(`should return a skuFff456StRedDefaultWarehouse preset when built for rest`, () => {
-    const skuFff456StRedDefaultWarehousePreset = InventoryEntryDraftRest.presets
-      .skuFff456StRedDefaultWarehouse()
-      .build();
-    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot();
+    const skuFff456StRedDefaultWarehousePreset = presets.restPreset().build();
+    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fff456-st-red-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fff456-st-red",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFff456StRedDefaultWarehouse preset when built for graphql`, () => {
-    const skuFff456StRedDefaultWarehousePreset =
-      InventoryEntryDraftGraphql.presets
-        .skuFff456StRedDefaultWarehouse()
-        .build();
-    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot();
+    const skuFff456StRedDefaultWarehousePreset = presets
+      .graphqlPreset()
+      .build();
+    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fff456-st-red-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fff456-st-red",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFff456StRedDefaultWarehouse preset when built for legacy rest`, () => {
-    const skuFff456StRedDefaultWarehousePreset = InventoryEntryDraft.presets
-      .skuFff456StRedDefaultWarehouse()
+    const skuFff456StRedDefaultWarehousePreset = presets
+      .compatPreset()
       .buildRest<TInventoryEntryDraftRest>();
-    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot();
+    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fff456-st-red-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fff456-st-red",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuFff456StRedDefaultWarehouse preset when built for legacy graphql`, () => {
-    const skuFff456StRedDefaultWarehousePreset = InventoryEntryDraft.presets
-      .skuFff456StRedDefaultWarehouse()
+    const skuFff456StRedDefaultWarehousePreset = presets
+      .compatPreset()
       .buildGraphql<TInventoryEntryDraftGraphql>();
-    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot();
+    expect(skuFff456StRedDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "fff456-st-red-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "fff456-st-red",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 });

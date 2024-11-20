@@ -2,38 +2,82 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import {
-  InventoryEntryDraft,
-  InventoryEntryDraftGraphql,
-  InventoryEntryDraftRest,
-} from '../../index';
+import * as presets from './sku-cc-789-uv-2015-us-warehouse';
 
 describe(`with skuCc789Uv2015UsWarehouse preset`, () => {
   it(`should return a skuCc789Uv2015UsWarehouse preset when built for rest`, () => {
-    const skuCc789Uv2015UsWarehousePreset = InventoryEntryDraftRest.presets
-      .skuCc789Uv2015UsWarehouse()
-      .build();
-    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot();
+    const skuCc789Uv2015UsWarehousePreset = presets.restPreset().build();
+    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "cc789-uv-2015-us-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "cc789-uv-2015",
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuCc789Uv2015UsWarehouse preset when built for graphql`, () => {
-    const skuCc789Uv2015UsWarehousePreset = InventoryEntryDraftGraphql.presets
-      .skuCc789Uv2015UsWarehouse()
-      .build();
-    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot();
+    const skuCc789Uv2015UsWarehousePreset = presets.graphqlPreset().build();
+    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "cc789-uv-2015-us-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "cc789-uv-2015",
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuCc789Uv2015UsWarehouse preset when built for legacy rest`, () => {
-    const skuCc789Uv2015UsWarehousePreset = InventoryEntryDraft.presets
-      .skuCc789Uv2015UsWarehouse()
+    const skuCc789Uv2015UsWarehousePreset = presets
+      .compatPreset()
       .buildRest<TInventoryEntryDraftRest>();
-    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot();
+    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "cc789-uv-2015-us-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "cc789-uv-2015",
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuCc789Uv2015UsWarehouse preset when built for legacy graphql`, () => {
-    const skuCc789Uv2015UsWarehousePreset = InventoryEntryDraft.presets
-      .skuCc789Uv2015UsWarehouse()
+    const skuCc789Uv2015UsWarehousePreset = presets
+      .compatPreset()
       .buildGraphql<TInventoryEntryDraftGraphql>();
-    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot();
+    expect(skuCc789Uv2015UsWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "cc789-uv-2015-us-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "cc789-uv-2015",
+        "supplyChannel": {
+          "key": "us-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 });

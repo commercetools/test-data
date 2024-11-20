@@ -2,38 +2,82 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import {
-  InventoryEntryDraft,
-  InventoryEntryDraftGraphql,
-  InventoryEntryDraftRest,
-} from '../../index';
+import * as presets from './sku-hydraulic-hose-eu-warehouse';
 
 describe(`with skuHydraulicHoseEuWarehouse preset`, () => {
   it(`should return a skuHydraulicHoseEuWarehouse preset when built for rest`, () => {
-    const skuHydraulicHoseEuWarehousePreset = InventoryEntryDraftRest.presets
-      .skuHydraulicHoseEuWarehouse()
-      .build();
-    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot();
+    const skuHydraulicHoseEuWarehousePreset = presets.restPreset().build();
+    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "hydraulic-hose-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "hydraulic-hose",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuHydraulicHoseEuWarehouse preset when built for graphql`, () => {
-    const skuHydraulicHoseEuWarehousePreset = InventoryEntryDraftGraphql.presets
-      .skuHydraulicHoseEuWarehouse()
-      .build();
-    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot();
+    const skuHydraulicHoseEuWarehousePreset = presets.graphqlPreset().build();
+    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "hydraulic-hose-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "hydraulic-hose",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuHydraulicHoseEuWarehouse preset when built for legacy rest`, () => {
-    const skuHydraulicHoseEuWarehousePreset = InventoryEntryDraft.presets
-      .skuHydraulicHoseEuWarehouse()
+    const skuHydraulicHoseEuWarehousePreset = presets
+      .compatPreset()
       .buildRest<TInventoryEntryDraftRest>();
-    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot();
+    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "hydraulic-hose-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "hydraulic-hose",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuHydraulicHoseEuWarehouse preset when built for legacy graphql`, () => {
-    const skuHydraulicHoseEuWarehousePreset = InventoryEntryDraft.presets
-      .skuHydraulicHoseEuWarehouse()
+    const skuHydraulicHoseEuWarehousePreset = presets
+      .compatPreset()
       .buildGraphql<TInventoryEntryDraftGraphql>();
-    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot();
+    expect(skuHydraulicHoseEuWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "hydraulic-hose-eu-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "hydraulic-hose",
+        "supplyChannel": {
+          "key": "eu-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 });

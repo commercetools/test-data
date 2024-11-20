@@ -2,38 +2,84 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import {
-  InventoryEntryDraft,
-  InventoryEntryDraftGraphql,
-  InventoryEntryDraftRest,
-} from '../../index';
+import * as presets from './sku-starter-motor-default-warehouse';
 
 describe(`with skuStarterMotorDefaultWarehouse preset`, () => {
   it(`should return a skuStarterMotorDefaultWarehouse preset when built for rest`, () => {
-    const skuStarterMotorDefaultWarehousePreset =
-      InventoryEntryDraftRest.presets.skuStarterMotorDefaultWarehouse().build();
-    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot();
+    const skuStarterMotorDefaultWarehousePreset = presets.restPreset().build();
+    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "starter-motor-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "starter-motor",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuStarterMotorDefaultWarehouse preset when built for graphql`, () => {
-    const skuStarterMotorDefaultWarehousePreset =
-      InventoryEntryDraftGraphql.presets
-        .skuStarterMotorDefaultWarehouse()
-        .build();
-    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot();
+    const skuStarterMotorDefaultWarehousePreset = presets
+      .graphqlPreset()
+      .build();
+    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "starter-motor-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "starter-motor",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuStarterMotorDefaultWarehouse preset when built for legacy rest`, () => {
-    const skuStarterMotorDefaultWarehousePreset = InventoryEntryDraft.presets
-      .skuStarterMotorDefaultWarehouse()
+    const skuStarterMotorDefaultWarehousePreset = presets
+      .compatPreset()
       .buildRest<TInventoryEntryDraftRest>();
-    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot();
+    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "starter-motor-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "starter-motor",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 
   it(`should return a skuStarterMotorDefaultWarehouse preset when built for legacy graphql`, () => {
-    const skuStarterMotorDefaultWarehousePreset = InventoryEntryDraft.presets
-      .skuStarterMotorDefaultWarehouse()
+    const skuStarterMotorDefaultWarehousePreset = presets
+      .compatPreset()
       .buildGraphql<TInventoryEntryDraftGraphql>();
-    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot();
+    expect(skuStarterMotorDefaultWarehousePreset).toMatchInlineSnapshot(`
+      {
+        "custom": null,
+        "expectedDelivery": undefined,
+        "key": "starter-motor-default-warehouse",
+        "quantityOnStock": 1000,
+        "restockableInDays": undefined,
+        "sku": "starter-motor",
+        "supplyChannel": {
+          "key": "default-warehouse",
+          "typeId": "channel",
+        },
+      }
+    `);
   });
 });

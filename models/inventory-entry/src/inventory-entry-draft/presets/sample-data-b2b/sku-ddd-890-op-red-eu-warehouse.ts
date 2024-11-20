@@ -3,26 +3,47 @@ import {
   type TChannelDraft,
 } from '@commercetools-test-data/channel';
 import { KeyReferenceDraft } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
 } from '@commercetools-test-data/product';
-import type { TInventoryEntryDraftBuilder } from '../../../types';
-import * as InventoryEntryDraft from '../../index';
+import type {
+  TInventoryEntryDraft,
+  TInventoryEntryDraftGraphql,
+  TInventoryEntryDraftRest,
+} from '../../../types';
+import {
+  InventoryEntryDraft,
+  InventoryEntryDraftGraphql,
+  InventoryEntryDraftRest,
+} from '../../index';
 
-const supplyChannel = ChannelDraft.presets.sampleData
+const supplyChannel = ChannelDraft.presets.sampleDataB2B
   .euWarehouse()
   .build<TChannelDraft>();
 
-const variant = ProductVariantDraft.presets.sampleData
+const variant = ProductVariantDraft.presets.sampleDataB2B
   .ddd890Op01()
   .build<TProductVariantDraft>();
 
-const skuDdd890OpRedEuWarehouse = (): TInventoryEntryDraftBuilder =>
-  InventoryEntryDraft.presets
-    .empty()
+const populatePreset = <
+  TModel extends TInventoryEntryDraftRest | TInventoryEntryDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('ddd890-op-red-eu-warehouse')
     .sku(variant.sku!)
     .quantityOnStock(999)
     .supplyChannel(KeyReferenceDraft.presets.channel().key(supplyChannel.key!));
-export default skuDdd890OpRedEuWarehouse;
+};
+
+export const restPreset = (): TBuilder<TInventoryEntryDraftRest> =>
+  populatePreset(InventoryEntryDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TInventoryEntryDraftGraphql> =>
+  populatePreset(InventoryEntryDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TInventoryEntryDraft> =>
+  populatePreset(InventoryEntryDraft.presets.empty());
