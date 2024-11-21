@@ -11,14 +11,17 @@ const rusticBowl01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('199EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(199))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('199GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(199))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('199USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(199))
         .country('US'),
     ])

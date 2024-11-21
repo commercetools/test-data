@@ -11,14 +11,17 @@ const modernLandscapePainting01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('5299EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(5299))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('5299GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(5299))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('5299USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(5299))
         .country('US'),
     ])

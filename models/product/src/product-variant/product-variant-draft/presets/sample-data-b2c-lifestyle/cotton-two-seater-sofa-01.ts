@@ -11,14 +11,17 @@ const cottonTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('54900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(54900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('54900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(54900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('54900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(54900))
         .country('US'),
     ])

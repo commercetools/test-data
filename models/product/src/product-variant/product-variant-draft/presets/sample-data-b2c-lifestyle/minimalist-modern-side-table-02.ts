@@ -11,14 +11,17 @@ const minimalistModernSideTable02 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('4999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(4999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('4999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(4999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('4999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(4999))
         .country('US'),
     ])

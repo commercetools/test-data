@@ -11,14 +11,17 @@ const largeCeramicPlate01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('399EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(399))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('399GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(399))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('399USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(399))
         .country('US'),
     ])

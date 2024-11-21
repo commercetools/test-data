@@ -11,14 +11,17 @@ const modernUpholsteredTwinBed02 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('45000EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(45000))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('45000GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(45000))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('45000USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(45000))
         .country('US'),
     ])

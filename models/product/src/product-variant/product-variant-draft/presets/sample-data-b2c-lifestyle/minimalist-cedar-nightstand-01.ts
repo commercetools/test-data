@@ -11,14 +11,17 @@ const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('7900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(7900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('7900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(7900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('7900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(7900))
         .country('US'),
     ])

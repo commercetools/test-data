@@ -20,17 +20,25 @@ const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('2999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(2999))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .key('3999EUR_dist')
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(3999))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('2999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(2999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('2999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(2999))
         .country('US'),
     ])

@@ -11,14 +11,17 @@ const traditionalLSeaterSofa01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('359900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(359900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('359900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(359900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('359900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(359900))
         .country('US'),
     ])

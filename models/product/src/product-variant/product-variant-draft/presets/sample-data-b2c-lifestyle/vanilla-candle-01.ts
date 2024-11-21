@@ -20,17 +20,25 @@ const vanillaCandle01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(999))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .key('1099EUR_dist')
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(1099))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(999))
         .country('US'),
     ])

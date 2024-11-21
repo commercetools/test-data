@@ -11,14 +11,17 @@ const geometricPillowCase02 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('1999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(1999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('1999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(1999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('1999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(1999))
         .country('US'),
     ])

@@ -11,14 +11,17 @@ const sunnaiGlassBowl01 = (): TProductVariantDraftBuilder =>
     .prices([
       PriceDraft.presets
         .empty()
+        .key('799EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(799))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('799GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(799))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('799USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(799))
         .country('US'),
     ])
