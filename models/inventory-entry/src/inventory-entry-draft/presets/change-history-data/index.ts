@@ -1,7 +1,13 @@
-import withNoSupplyChannel from './with-no-supply-channel';
+import * as withNoSupplyChannelPresets from './with-no-supply-channel';
 
-const presets = {
-  withNoSupplyChannel,
+export const restPresets = {
+  withNoSupplyChannel: withNoSupplyChannelPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withNoSupplyChannel: withNoSupplyChannelPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  withNoSupplyChannel: withNoSupplyChannelPresets.compatPreset,
+};
