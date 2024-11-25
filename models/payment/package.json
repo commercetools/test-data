@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/payment",
-  "version": "10.9.3",
+  "version": "10.10.0",
   "description": "Data models for commercetools Payment representations",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "10.9.3",
-    "@commercetools-test-data/core": "10.9.3",
-    "@commercetools-test-data/customer": "10.9.3",
-    "@commercetools-test-data/order": "10.9.3",
-    "@commercetools-test-data/utils": "10.9.3",
+    "@commercetools-test-data/commons": "10.10.0",
+    "@commercetools-test-data/core": "10.10.0",
+    "@commercetools-test-data/customer": "10.10.0",
+    "@commercetools-test-data/order": "10.10.0",
+    "@commercetools-test-data/utils": "10.10.0",
     "@commercetools/platform-sdk": "7.14.0",
     "@faker-js/faker": "^9.0.0"
   }
