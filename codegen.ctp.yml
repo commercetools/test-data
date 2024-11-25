@@ -1,0 +1,22 @@
+schema:
+  - '${MC_API_URL}/graphql':
+      headers:
+        Cookie: mcAccessToken=${MC_ACCESS_TOKEN}
+        X-Graphql-Target: ctp
+        X-Project-Key: ${CTP_PROJECT_KEY}
+extensions:
+  codegen:
+    generates:
+      schemas/ctp.json:
+        plugins:
+          - introspection
+      graphql-types/src/generated/ctp.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+        config:
+          typesPrefix: TCtp
+          addUnderscoreToArgsType: true
+    hooks:
+      afterAllFileWrite:
+        - prettier --write

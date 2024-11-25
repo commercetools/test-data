@@ -11,7 +11,7 @@ export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
 };
 export type MakeEmpty<
   T extends { [key: string]: unknown },
-  K extends keyof T
+  K extends keyof T,
 > = { [_ in K]?: never };
 export type Incremental<T> =
   | T
@@ -49,6 +49,18 @@ export type TCoreAttributeGroupLimits = {
   maxTotalAttributeGroups?: Maybe<Scalars['Int']['output']>;
 };
 
+export type TCoreAttribution = {
+  __typename?: 'Attribution';
+  clientId?: Maybe<Scalars['String']['output']>;
+  source: TCoreAttributionSource;
+  userRef?: Maybe<TCoreReference>;
+};
+
+export enum TCoreAttributionSource {
+  Export = 'Export',
+  Import = 'Import',
+}
+
 /** AWS S3 container config */
 export type TCoreAwsContainer = {
   __typename?: 'AwsContainer';
@@ -56,6 +68,15 @@ export type TCoreAwsContainer = {
   bucketUrl: Scalars['String']['output'];
   /** Project part of the object path on s3 */
   projectPrefix: Scalars['String']['output'];
+};
+
+/** Azure Blob Storage container config */
+export type TCoreAzureBlobStorageContainer = {
+  __typename?: 'AzureBlobStorageContainer';
+  /** Project part of the object path on s3 */
+  baseUrl: Scalars['String']['output'];
+  /** Public bucket url, without the project part */
+  name: Scalars['String']['output'];
 };
 
 export enum TCoreBusinessRole {
@@ -76,6 +97,14 @@ export enum TCoreBusinessRole {
   /** SalesAndECommerceManager role. */
   SalesAndECommerceManager = 'SalesAndECommerceManager',
 }
+
+export type TCoreBusinessUnitLimits = {
+  __typename?: 'BusinessUnitLimits';
+  maxAssociateRoles?: Maybe<Scalars['Int']['output']>;
+  maxAssociates?: Maybe<Scalars['Int']['output']>;
+  maxDepthLimit?: Maybe<Scalars['Int']['output']>;
+  maxDivisions?: Maybe<Scalars['Int']['output']>;
+};
 
 export type TCoreCartClassificationType = TCoreShippingRateInputType & {
   __typename?: 'CartClassificationType';
@@ -164,6 +193,13 @@ export type TCoreCustomerLimits = {
   maxCustomers?: Maybe<Scalars['Long']['output']>;
 };
 
+export type TCoreCustomersDomainLimits = {
+  __typename?: 'CustomersDomainLimits';
+  businessUnits?: Maybe<TCoreBusinessUnitLimits>;
+  customerGroups?: Maybe<TCoreCustomerGroupLimits>;
+  customers?: Maybe<TCoreCustomerLimits>;
+};
+
 export type TCoreDbClusterConfig = {
   __typename?: 'DBClusterConfig';
   dbClusterKey: TCoreDbClusterKey;
@@ -190,6 +226,7 @@ export type TCoreDbClustersConfig = {
   commits?: Maybe<TCoreDbClusterConfig>;
   default: TCoreDbClusterKey;
   orders?: Maybe<TCoreDbClusterConfig>;
+  products?: Maybe<TCoreDbClusterConfig>;
 };
 
 export type TCoreDbClustersConfigInput = {
@@ -197,6 +234,7 @@ export type TCoreDbClustersConfigInput = {
   commits?: InputMaybe<TCoreDbClusterConfigInput>;
   default: TCoreDbClusterKeyInput;
   orders?: InputMaybe<TCoreDbClusterConfigInput>;
+  products?: InputMaybe<TCoreDbClusterConfigInput>;
 };
 
 export type TCoreDataFence = {
@@ -229,7 +267,9 @@ export type TCoreEsCluster = {
   categoriesShardConfig?: Maybe<TCoreEsClusterShardConfig>;
   categoryComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
   clusterKey: Scalars['String']['output'];
+  platformProducts?: Maybe<TCorePlatformProductsClusterConfig>;
   productComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
+  products?: Maybe<TCoreProductsClusterConfig>;
   productsShardConfig?: Maybe<TCoreEsClusterShardConfig>;
   replicateToClusterKey?: Maybe<Scalars['String']['output']>;
 };
@@ -238,7 +278,9 @@ export type TCoreEsClusterInput = {
   categoriesShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
   categoryComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
   clusterKey: Scalars['String']['input'];
+  platformProducts?: InputMaybe<TCorePlatformProductsClusterConfigInput>;
   productComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  products?: InputMaybe<TCoreProductsClusterConfigInput>;
   productsShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
   replicateToClusterKey?: InputMaybe<Scalars['String']['input']>;
 };
@@ -272,6 +314,7 @@ export type TCoreInitiator = {
   __typename?: 'Initiator';
   anonymousId?: Maybe<Scalars['String']['output']>;
   associateRef?: Maybe<TCoreReference>;
+  attributedTo?: Maybe<TCoreAttribution>;
   clientId?: Maybe<Scalars['String']['output']>;
   customerRef?: Maybe<TCoreReference>;
   externalUserId?: Maybe<Scalars['String']['output']>;
@@ -285,7 +328,10 @@ export type TCoreLocalizedString = {
   value: Scalars['String']['output'];
 };
 
-export type TCoreMediaContainer = TCoreAwsContainer | TCorePublicContainer;
+export type TCoreMediaContainer =
+  | TCoreAwsContainer
+  | TCoreAzureBlobStorageContainer
+  | TCorePublicContainer;
 
 export type TCoreMessagesConfiguration = {
   __typename?: 'MessagesConfiguration';
@@ -443,6 +489,25 @@ export type TCorePermissionUpdateAction = {
   setResourceAccessPermissions?: InputMaybe<TCoreSetPermissionResourceAccessPermissions>;
 };
 
+export type TCorePlatformProductsClusterConfig = {
+  __typename?: 'PlatformProductsClusterConfig';
+  categoriesShardConfig?: Maybe<TCoreEsClusterShardConfig>;
+  categoryComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
+  clusterKey: Scalars['String']['output'];
+  productComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
+  productsShardConfig?: Maybe<TCoreEsClusterShardConfig>;
+  replicateToClusterKey?: Maybe<Scalars['String']['output']>;
+};
+
+export type TCorePlatformProductsClusterConfigInput = {
+  categoriesShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
+  categoryComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  clusterKey: Scalars['String']['input'];
+  productComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  productsShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
+  replicateToClusterKey?: InputMaybe<Scalars['String']['input']>;
+};
+
 export type TCoreProductDiscountLimits = {
   __typename?: 'ProductDiscountLimits';
   activeLimit?: Maybe<Scalars['Long']['output']>;
@@ -458,6 +523,15 @@ export type TCoreProductLimits = {
 export type TCoreProductTypeLimits = {
   __typename?: 'ProductTypeLimits';
   maxTotalProductTypes?: Maybe<Scalars['Int']['output']>;
+};
+
+export type TCoreProductsClusterConfig = {
+  __typename?: 'ProductsClusterConfig';
+  clusterKey: Scalars['String']['output'];
+};
+
+export type TCoreProductsClusterConfigInput = {
+  clusterKey: Scalars['String']['input'];
 };
 
 export type TCoreProject = TCoreVersioned & {
@@ -506,8 +580,7 @@ export type TCoreProjectCustomLimits = {
   carts?: Maybe<TCoreCartLimits>;
   categoryLimits?: Maybe<TCoreCategoryLimits>;
   customObjects?: Maybe<TCoreCustomObjectLimits>;
-  customerGroups?: Maybe<TCoreCustomerGroupLimits>;
-  customers?: Maybe<TCoreCustomerLimits>;
+  customersDomainLimits: TCoreCustomersDomainLimits;
   extensions?: Maybe<TCoreExtensionLimits>;
   orderEdits?: Maybe<TCoreOrderEditLimits>;
   productDiscounts?: Maybe<TCoreProductDiscountLimits>;

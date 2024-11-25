@@ -135,6 +135,80 @@
       },
       {
         "kind": "OBJECT",
+        "name": "Attribution",
+        "description": null,
+        "fields": [
+          {
+            "name": "clientId",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "source",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "ENUM",
+                "name": "AttributionSource",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "userRef",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Reference",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "AttributionSource",
+        "description": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "Export",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "Import",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "AwsContainer",
         "description": "AWS S3 container config",
         "fields": [
@@ -157,6 +231,49 @@
           {
             "name": "projectPrefix",
             "description": "Project part of the object path on s3",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "AzureBlobStorageContainer",
+        "description": "Azure Blob Storage container config",
+        "fields": [
+          {
+            "name": "baseUrl",
+            "description": "Project part of the object path on s3",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "name",
+            "description": "Public bucket url, without the project part",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -243,6 +360,65 @@
             "deprecationReason": null
           }
         ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "BusinessUnitLimits",
+        "description": null,
+        "fields": [
+          {
+            "name": "maxAssociateRoles",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "maxAssociates",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "maxDepthLimit",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "maxDivisions",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Int",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
         "possibleTypes": null
       },
       {
@@ -889,6 +1065,53 @@
       },
       {
         "kind": "OBJECT",
+        "name": "CustomersDomainLimits",
+        "description": null,
+        "fields": [
+          {
+            "name": "businessUnits",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "BusinessUnitLimits",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "customerGroups",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "CustomerGroupLimits",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "customers",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "CustomerLimits",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "DBClusterConfig",
         "description": null,
         "fields": [
@@ -1083,6 +1306,18 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "products",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "DBClusterConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -1138,6 +1373,18 @@
           },
           {
             "name": "orders",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DBClusterConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "products",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
@@ -1424,12 +1671,36 @@
             "deprecationReason": null
           },
           {
+            "name": "platformProducts",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "PlatformProductsClusterConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "productComparison",
             "description": null,
             "args": [],
             "type": {
               "kind": "OBJECT",
               "name": "ESAlternativeComparisonConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "products",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ProductsClusterConfig",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1512,11 +1783,35 @@
             "deprecationReason": null
           },
           {
+            "name": "platformProducts",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "PlatformProductsClusterConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "productComparison",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "ESAlternativeComparisonConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "products",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ProductsClusterConfigInput",
               "ofType": null
             },
             "defaultValue": null,
@@ -1776,6 +2071,18 @@
             "deprecationReason": null
           },
           {
+            "name": "attributedTo",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "Attribution",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "clientId",
             "description": null,
             "args": [],
@@ -1926,6 +2233,11 @@
           {
             "kind": "OBJECT",
             "name": "AwsContainer",
+            "ofType": null
+          },
+          {
+            "kind": "OBJECT",
+            "name": "AzureBlobStorageContainer",
             "ofType": null
           },
           {
@@ -3349,6 +3661,180 @@
       },
       {
         "kind": "OBJECT",
+        "name": "PlatformProductsClusterConfig",
+        "description": null,
+        "fields": [
+          {
+            "name": "categoriesShardConfig",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ESClusterShardConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "categoryComparison",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ESAlternativeComparisonConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "clusterKey",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "productComparison",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ESAlternativeComparisonConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "productsShardConfig",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ESClusterShardConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "replicateToClusterKey",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PlatformProductsClusterConfigInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "categoriesShardConfig",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ESClusterShardConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "categoryComparison",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ESAlternativeComparisonConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "clusterKey",
+            "description": null,
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "productComparison",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ESAlternativeComparisonConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "productsShardConfig",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ESClusterShardConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "replicateToClusterKey",
+            "description": null,
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "ProductDiscountLimits",
         "description": null,
         "fields": [
@@ -3437,6 +3923,60 @@
         ],
         "inputFields": null,
         "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "ProductsClusterConfig",
+        "description": null,
+        "fields": [
+          {
+            "name": "clusterKey",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ProductsClusterConfigInput",
+        "description": null,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clusterKey",
+            "description": null,
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
         "enumValues": null,
         "possibleTypes": null
       },
@@ -4006,25 +4546,17 @@
             "deprecationReason": null
           },
           {
-            "name": "customerGroups",
+            "name": "customersDomainLimits",
             "description": null,
             "args": [],
             "type": {
-              "kind": "OBJECT",
-              "name": "CustomerGroupLimits",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "customers",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "CustomerLimits",
-              "ofType": null
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "CustomersDomainLimits",
+                "ofType": null
+              }
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -7628,6 +8160,13 @@
             "deprecationReason": null
           }
         ]
+      },
+      {
+        "name": "oneOf",
+        "description": "Indicates exactly one field must be supplied and this field must not be `null`.",
+        "isRepeatable": false,
+        "locations": ["INPUT_OBJECT"],
+        "args": []
       },
       {
         "name": "skip",

@@ -11,7 +11,7 @@ export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
 };
 export type MakeEmpty<
   T extends { [key: string]: unknown },
-  K extends keyof T
+  K extends keyof T,
 > = { [_ in K]?: never };
 export type Incremental<T> =
   | T
@@ -189,6 +189,7 @@ export type TMcMutation = {
   createMyOrganization?: Maybe<TMcOrganizationCreated>;
   createMyProject?: Maybe<TMcProjectPendingCreation>;
   createOAuthClient: TMcOAuthClient;
+  createUserFromIdentity: TMcUser;
   deleteAccount: TMcDeletedUser;
   deleteOAuthClient: TMcOAuthClient;
   importSampleData: TMcImportResponse;
@@ -224,6 +225,7 @@ export type TMcMutation_DeleteOAuthClientArgs = {
 };
 
 export type TMcMutation_ImportSampleDataArgs = {
+  dataset?: InputMaybe<TMcSampleDatasets>;
   projectKey: Scalars['String']['input'];
 };
 
@@ -337,6 +339,7 @@ export type TMcProject = TMcMetaData & {
   expiry: TMcProjectExpiry;
   initialized: Scalars['Boolean']['output'];
   isProductionProject: Scalars['Boolean']['output'];
+  isUserAdminOfCurrentProject?: Maybe<Scalars['Boolean']['output']>;
   key: Scalars['String']['output'];
   languages: Array<Scalars['String']['output']>;
   lastModifiedAt: Scalars['String']['output'];
@@ -525,6 +528,12 @@ export type TMcResetUser = {
   id: Scalars['String']['output'];
 };
 
+export enum TMcSampleDatasets {
+  B2B = 'B2B',
+  B2Clifestyle = 'B2CLIFESTYLE',
+  Goodstore = 'GOODSTORE',
+}
+
 export type TMcSetUserTimeZone = {
   timeZone?: InputMaybe<Scalars['String']['input']>;
 };
@@ -616,6 +625,7 @@ export type TMcUser = TMcMetaData & {
   launchdarklyTrackingId: Scalars['String']['output'];
   launchdarklyTrackingSubgroup?: Maybe<Scalars['String']['output']>;
   launchdarklyTrackingTeam?: Maybe<Array<Scalars['String']['output']>>;
+  /** @deprecated This field is replaced by launchdarklyTrackingCloudEnvironment. */
   launchdarklyTrackingTenant: Scalars['String']['output'];
   numberFormat: Scalars['String']['output'];
   projects: TMcProjectQueryResult;
