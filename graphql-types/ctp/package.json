@@ -1,0 +1,4 @@
+{
+  "main": "dist/commercetools-test-data-graphql-types-ctp.cjs.js",
+  "module": "dist/commercetools-test-data-graphql-types-ctp.esm.js"
+}
