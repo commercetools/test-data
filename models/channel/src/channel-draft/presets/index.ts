@@ -40,15 +40,15 @@ export const graphqlPresets = {
 
 export const compatPresets = {
   empty: empty.compatPreset,
-  withGeoLocationOnly: withGeoLocationOnly.graphqlPreset,
+  withGeoLocationOnly: withGeoLocationOnly.compatPreset,
   withInventorySupplyAndProductDistributionRoles:
-    withInventorySupplyAndProductDistributionRoles.graphqlPreset,
+    withInventorySupplyAndProductDistributionRoles.compatPreset,
   withInventorySupplyAndProductDistributionRolesNoAddress:
-    withInventorySupplyAndProductDistributionRolesNoAddress.graphqlPreset,
-  withInventorySupplyRole: withInventorySupplyRole.graphqlPreset,
+    withInventorySupplyAndProductDistributionRolesNoAddress.compatPreset,
+  withInventorySupplyRole: withInventorySupplyRole.compatPreset,
   withInventorySupplyRoleNoAddress:
-    withInventorySupplyRoleNoAddress.graphqlPreset,
-  withProductDistributionRole: withProductDistributionRole.graphqlPreset,
+    withInventorySupplyRoleNoAddress.compatPreset,
+  withProductDistributionRole: withProductDistributionRole.compatPreset,
   sampleDataB2B: sampleDataB2B.compatPresets,
   sampleDataB2CLifestyle: sampleDataB2C.compatPresets,
 };
