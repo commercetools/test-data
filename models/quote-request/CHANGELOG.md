@@ -1,5 +1,19 @@
 # @commercetools-test-data/quote-request
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart@10.10.1
+  - @commercetools-test-data/store@10.10.1
+  - @commercetools-test-data/business-unit@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/customer@10.10.1
+  - @commercetools-test-data/customer-group@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
 ## 10.10.0
 
 ### Patch Changes

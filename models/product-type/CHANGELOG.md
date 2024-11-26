@@ -1,5 +1,15 @@
 # @commercetools-test-data/product-type
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/type@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
 ## 10.10.0
 
 ### Patch Changes
