@@ -42,7 +42,7 @@ describe(`with comfortCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Comfort_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "comfortCoffeeMug01",
         "prices": [
           {
             "channel": undefined,
@@ -139,7 +139,7 @@ describe(`with comfortCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Comfort_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "comfortCoffeeMug01",
         "prices": [
           {
             "channel": undefined,

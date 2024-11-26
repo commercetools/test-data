@@ -67,7 +67,7 @@ describe(`with purpleLandscapePainting preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Purple_Landscape_Painting-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "purpleLandscapePainting01",
           "prices": [
             {
               "channel": undefined,
@@ -210,7 +210,7 @@ describe(`with purpleLandscapePainting preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Purple_Landscape_Painting-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "purpleLandscapePainting01",
           "prices": [
             {
               "channel": undefined,

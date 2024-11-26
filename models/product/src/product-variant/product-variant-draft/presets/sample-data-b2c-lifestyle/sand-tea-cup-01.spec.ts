@@ -35,7 +35,7 @@ describe(`with sandTeaCup01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sand_Tea_Cup-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sandTeaCup01",
         "prices": [
           {
             "channel": undefined,
@@ -114,7 +114,7 @@ describe(`with sandTeaCup01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sand_Tea_Cup-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sandTeaCup01",
         "prices": [
           {
             "channel": undefined,

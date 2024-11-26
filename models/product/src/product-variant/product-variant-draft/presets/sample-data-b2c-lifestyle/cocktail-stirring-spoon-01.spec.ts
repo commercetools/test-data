@@ -42,7 +42,7 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocktailStirringSpoon01",
         "prices": [
           {
             "channel": undefined,
@@ -121,7 +121,7 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Stirring_Spoon-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocktailStirringSpoon01",
         "prices": [
           {
             "channel": undefined,

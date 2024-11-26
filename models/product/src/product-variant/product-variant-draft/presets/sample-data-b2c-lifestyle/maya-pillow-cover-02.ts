@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const mayaPillowCover02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('mayaPillowCover02')
     .sku('MPC-07')
     .prices([
       PriceDraft.presets

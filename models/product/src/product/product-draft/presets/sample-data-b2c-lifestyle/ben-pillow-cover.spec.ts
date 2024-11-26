@@ -62,7 +62,7 @@ describe(`with benPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ben_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "benPillowCover01",
           "prices": [
             {
               "channel": undefined,
@@ -201,7 +201,7 @@ describe(`with benPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ben_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "benPillowCover01",
           "prices": [
             {
               "channel": undefined,

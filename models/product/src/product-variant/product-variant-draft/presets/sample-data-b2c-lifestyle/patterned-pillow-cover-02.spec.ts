@@ -46,7 +46,7 @@ describe(`with patternedPillowCover02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-2.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "patternedPillowCover02",
         "prices": [
           {
             "channel": undefined,
@@ -129,7 +129,7 @@ describe(`with patternedPillowCover02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-2.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "patternedPillowCover02",
         "prices": [
           {
             "channel": undefined,

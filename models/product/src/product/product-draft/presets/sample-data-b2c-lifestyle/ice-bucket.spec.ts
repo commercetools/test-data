@@ -63,7 +63,7 @@ describe(`with iceBucket preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ice_Bucket-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "iceBucket01",
           "prices": [
             {
               "channel": undefined,
@@ -205,7 +205,7 @@ describe(`with iceBucket preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ice_Bucket-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "iceBucket01",
           "prices": [
             {
               "channel": undefined,

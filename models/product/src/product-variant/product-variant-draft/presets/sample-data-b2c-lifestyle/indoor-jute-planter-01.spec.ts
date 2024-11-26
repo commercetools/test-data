@@ -34,7 +34,7 @@ describe(`with indoorJutePlanter01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Indoor_Jute_Planter-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "indoorJutePlanter01",
         "prices": [
           {
             "channel": undefined,
@@ -113,7 +113,7 @@ describe(`with indoorJutePlanter01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Indoor_Jute_Planter-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "indoorJutePlanter01",
         "prices": [
           {
             "channel": undefined,

@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const iceBucket01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('iceBucket01')
     .sku('BUCK-023')
     .prices([
       PriceDraft.presets

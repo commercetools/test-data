@@ -44,7 +44,7 @@ describe(`with chiantiWineGlass01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Chianti_Wine_Glass-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "chiantiWineGlass01",
         "prices": [
           {
             "channel": undefined,
@@ -127,7 +127,7 @@ describe(`with chiantiWineGlass01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Chianti_Wine_Glass-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "chiantiWineGlass01",
         "prices": [
           {
             "channel": undefined,

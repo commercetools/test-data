@@ -47,7 +47,7 @@ describe(`with wineBottleOpener01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Wine_Bottle_Opener-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "wineBottleOpener01",
         "prices": [
           {
             "channel": undefined,
@@ -130,7 +130,7 @@ describe(`with wineBottleOpener01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Wine_Bottle_Opener-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "wineBottleOpener01",
         "prices": [
           {
             "channel": undefined,

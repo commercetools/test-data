@@ -39,7 +39,7 @@ describe(`with cobblestoneRug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cobblestone_Rug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cobblestoneRug01",
         "prices": [
           {
             "channel": undefined,
@@ -118,7 +118,7 @@ describe(`with cobblestoneRug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cobblestone_Rug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cobblestoneRug01",
         "prices": [
           {
             "channel": undefined,

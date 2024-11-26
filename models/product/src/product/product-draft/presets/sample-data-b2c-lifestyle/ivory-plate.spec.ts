@@ -72,7 +72,7 @@ describe(`with ivoryPlate preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ivory_Plate-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ivoryPlate01",
           "prices": [
             {
               "channel": undefined,
@@ -226,7 +226,7 @@ describe(`with ivoryPlate preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ivory_Plate-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ivoryPlate01",
           "prices": [
             {
               "channel": undefined,

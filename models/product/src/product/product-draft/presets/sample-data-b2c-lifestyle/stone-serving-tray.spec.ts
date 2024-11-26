@@ -72,7 +72,7 @@ describe(`with stoneServingTray preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Stone_Serving_Tray-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "stoneServingTray01",
           "prices": [
             {
               "channel": undefined,
@@ -227,7 +227,7 @@ describe(`with stoneServingTray preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Stone_Serving_Tray-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "stoneServingTray01",
           "prices": [
             {
               "channel": undefined,

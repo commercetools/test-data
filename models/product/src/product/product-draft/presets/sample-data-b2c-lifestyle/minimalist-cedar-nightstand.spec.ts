@@ -85,7 +85,7 @@ describe(`with minimalistCedarNightstand preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Minimalist_Cedar_Nightstand-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "minimalistCedarNightstand01",
           "prices": [
             {
               "channel": undefined,
@@ -256,7 +256,7 @@ describe(`with minimalistCedarNightstand preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Minimalist_Cedar_Nightstand-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "minimalistCedarNightstand01",
           "prices": [
             {
               "channel": undefined,

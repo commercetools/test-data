@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const indoorJutePlanter02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('indoorJutePlanter02')
     .sku('IJP-04')
     .prices([
       PriceDraft.presets

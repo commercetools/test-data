@@ -68,7 +68,7 @@ describe(`with leahArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leah_Armchair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "leahArmchair01",
           "prices": [
             {
               "channel": undefined,
@@ -215,7 +215,7 @@ describe(`with leahArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leah_Armchair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "leahArmchair01",
           "prices": [
             {
               "channel": undefined,

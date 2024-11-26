@@ -60,7 +60,7 @@ describe(`with serenityQueenBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Serenity_Queen_Bed-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "serenityQueenBed01",
           "prices": [
             {
               "channel": undefined,
@@ -203,7 +203,7 @@ describe(`with serenityQueenBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Serenity_Queen_Bed-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "serenityQueenBed01",
           "prices": [
             {
               "channel": undefined,

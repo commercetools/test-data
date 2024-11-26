@@ -45,7 +45,7 @@ describe(`with cubeJuteBasket01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cube_Jute_Basket-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cubeJuteBasket01",
         "prices": [
           {
             "channel": undefined,
@@ -142,7 +142,7 @@ describe(`with cubeJuteBasket01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cube_Jute_Basket-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cubeJuteBasket01",
         "prices": [
           {
             "channel": undefined,

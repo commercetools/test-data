@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const crystalDrinkingGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('crystalDrinkingGlass01')
     .sku('CDG-09')
     .prices([
       PriceDraft.presets

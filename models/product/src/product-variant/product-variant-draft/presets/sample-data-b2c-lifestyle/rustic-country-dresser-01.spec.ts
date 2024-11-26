@@ -66,7 +66,7 @@ describe(`with rusticCountryDresser01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Country_Dresser-1.4.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rusticCountryDresser01",
         "prices": [
           {
             "channel": undefined,
@@ -169,7 +169,7 @@ describe(`with rusticCountryDresser01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Country_Dresser-1.4.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rusticCountryDresser01",
         "prices": [
           {
             "channel": undefined,

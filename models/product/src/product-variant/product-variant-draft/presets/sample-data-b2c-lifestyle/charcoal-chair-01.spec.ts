@@ -52,7 +52,7 @@ describe(`with charcoalChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Charcoal_Chair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "charcoalChair01",
         "prices": [
           {
             "channel": undefined,
@@ -143,7 +143,7 @@ describe(`with charcoalChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Charcoal_Chair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "charcoalChair01",
         "prices": [
           {
             "channel": undefined,

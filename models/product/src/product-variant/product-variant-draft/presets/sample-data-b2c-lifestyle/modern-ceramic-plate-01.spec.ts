@@ -39,7 +39,7 @@ describe(`with modernCeramicPlate01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Ceramic_Plate-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernCeramicPlate01",
         "prices": [
           {
             "channel": undefined,
@@ -118,7 +118,7 @@ describe(`with modernCeramicPlate01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Ceramic_Plate-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernCeramicPlate01",
         "prices": [
           {
             "channel": undefined,

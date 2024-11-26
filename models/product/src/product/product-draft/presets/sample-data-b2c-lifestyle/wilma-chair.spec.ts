@@ -76,7 +76,7 @@ describe(`with wilmaChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Wilma_Chair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "wilmaChair01",
           "prices": [
             {
               "channel": undefined,
@@ -231,7 +231,7 @@ describe(`with wilmaChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Wilma_Chair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "wilmaChair01",
           "prices": [
             {
               "channel": undefined,

@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const chiantiWineGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('chiantiWineGlass01')
     .sku('CWG-01')
     .prices([
       PriceDraft.presets

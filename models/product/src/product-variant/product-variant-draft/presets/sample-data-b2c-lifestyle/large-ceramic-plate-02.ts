@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const largeCeramicPlate02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('largeCeramicPlate02')
     .sku('LCP-02')
     .prices([
       PriceDraft.presets

@@ -102,7 +102,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-1.3.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernUpholsteredTwinBed01",
           "prices": [
             {
               "channel": undefined,
@@ -247,7 +247,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-2.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed02",
             "prices": [
               {
                 "channel": undefined,
@@ -360,7 +360,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-3.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed03",
             "prices": [
               {
                 "channel": undefined,
@@ -473,7 +473,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-4.3.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed04",
             "prices": [
               {
                 "channel": undefined,
@@ -613,7 +613,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-1.3.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernUpholsteredTwinBed01",
           "prices": [
             {
               "channel": undefined,
@@ -755,7 +755,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-2.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed02",
             "prices": [
               {
                 "channel": undefined,
@@ -853,7 +853,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-3.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed03",
             "prices": [
               {
                 "channel": undefined,
@@ -951,7 +951,7 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-4.3.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "modernUpholsteredTwinBed04",
             "prices": [
               {
                 "channel": undefined,

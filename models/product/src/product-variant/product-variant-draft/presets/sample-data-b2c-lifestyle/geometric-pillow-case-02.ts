@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const geometricPillowCase02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('geometricPillowCase02')
     .sku('GPC-02')
     .prices([
       PriceDraft.presets

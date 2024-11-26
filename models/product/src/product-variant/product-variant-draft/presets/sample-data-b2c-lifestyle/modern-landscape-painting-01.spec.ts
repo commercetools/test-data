@@ -45,7 +45,7 @@ describe(`with modernLandscapePainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Landscape_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernLandscapePainting01",
         "prices": [
           {
             "channel": undefined,
@@ -124,7 +124,7 @@ describe(`with modernLandscapePainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Landscape_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernLandscapePainting01",
         "prices": [
           {
             "channel": undefined,

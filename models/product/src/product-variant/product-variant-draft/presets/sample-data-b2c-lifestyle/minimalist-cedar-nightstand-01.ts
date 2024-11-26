@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const minimalistCedarNightstand01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('minimalistCedarNightstand01')
     .sku('CNS-0434')
     .prices([
       PriceDraft.presets

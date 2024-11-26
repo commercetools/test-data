@@ -51,7 +51,7 @@ describe(`with juteRug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Jute_Rug-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "juteRug01",
         "prices": [
           {
             "channel": undefined,
@@ -164,7 +164,7 @@ describe(`with juteRug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Jute_Rug-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "juteRug01",
         "prices": [
           {
             "channel": undefined,

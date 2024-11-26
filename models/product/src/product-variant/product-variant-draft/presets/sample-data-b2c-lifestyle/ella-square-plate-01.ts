@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const ellaSquarePlate01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ellaSquarePlate01')
     .sku('ESP-1')
     .prices([
       PriceDraft.presets

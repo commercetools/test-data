@@ -59,7 +59,7 @@ describe(`with idunPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Idun_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "idunPillowCover01",
           "prices": [
             {
               "channel": undefined,
@@ -216,7 +216,7 @@ describe(`with idunPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Idun_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "idunPillowCover01",
           "prices": [
             {
               "channel": undefined,

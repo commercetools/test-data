@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const ariaRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ariaRug01')
     .sku('AAR-34')
     .prices([
       PriceDraft.presets

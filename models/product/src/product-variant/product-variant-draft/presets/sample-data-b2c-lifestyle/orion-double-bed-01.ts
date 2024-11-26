@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('orionDoubleBed01')
     .sku('OTB-07')
     .prices([
       PriceDraft.presets

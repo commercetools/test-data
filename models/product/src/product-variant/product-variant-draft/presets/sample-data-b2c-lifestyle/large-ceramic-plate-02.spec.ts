@@ -51,7 +51,7 @@ describe(`with largeCeramicPlate02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Large_Ceramic_Plate-2.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "largeCeramicPlate02",
         "prices": [
           {
             "channel": undefined,
@@ -138,7 +138,7 @@ describe(`with largeCeramicPlate02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Large_Ceramic_Plate-2.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "largeCeramicPlate02",
         "prices": [
           {
             "channel": undefined,

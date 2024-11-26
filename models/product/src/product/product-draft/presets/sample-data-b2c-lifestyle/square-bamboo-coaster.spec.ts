@@ -64,7 +64,7 @@ describe(`with squareBambooCoaster preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Square_Bamboo_Coaster-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "squareBambooCoaster01",
           "prices": [
             {
               "channel": undefined,
@@ -207,7 +207,7 @@ describe(`with squareBambooCoaster preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Square_Bamboo_Coaster-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "squareBambooCoaster01",
           "prices": [
             {
               "channel": undefined,

@@ -60,7 +60,7 @@ describe(`with naturaRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Natura_Rug-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "naturaRug01",
           "prices": [
             {
               "channel": undefined,
@@ -220,7 +220,7 @@ describe(`with naturaRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Natura_Rug-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "naturaRug01",
           "prices": [
             {
               "channel": undefined,

@@ -75,7 +75,7 @@ describe(`with ellaSquarePlate preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ella_Square_Plate-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ellaSquarePlate01",
           "prices": [
             {
               "channel": undefined,

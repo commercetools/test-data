@@ -83,7 +83,7 @@ describe(`with entrywayCloset preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Entryway_Closet-1.3.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "entrywayCloset01",
           "prices": [
             {
               "channel": undefined,

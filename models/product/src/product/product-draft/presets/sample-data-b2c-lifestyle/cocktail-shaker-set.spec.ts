@@ -62,7 +62,7 @@ describe(`with cocktailShakerSet preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Shaker_Set-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "cocktailShakerSet01",
           "prices": [
             {
               "channel": undefined,

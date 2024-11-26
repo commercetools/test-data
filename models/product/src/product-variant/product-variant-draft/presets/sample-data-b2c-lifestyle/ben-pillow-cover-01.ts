@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const benPillowCover01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('benPillowCover01')
     .sku('LBPC-09')
     .prices([
       PriceDraft.presets

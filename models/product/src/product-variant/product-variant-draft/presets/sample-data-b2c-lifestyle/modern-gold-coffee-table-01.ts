@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const modernGoldCoffeeTable01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('modernGoldCoffeeTable01')
     .sku('GMCT-01')
     .prices([
       PriceDraft.presets

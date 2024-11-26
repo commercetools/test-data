@@ -39,7 +39,7 @@ describe(`with luxePillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Luxe_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "luxePillowCover01",
         "prices": [
           {
             "channel": undefined,
@@ -118,7 +118,7 @@ describe(`with luxePillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Luxe_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "luxePillowCover01",
         "prices": [
           {
             "channel": undefined,

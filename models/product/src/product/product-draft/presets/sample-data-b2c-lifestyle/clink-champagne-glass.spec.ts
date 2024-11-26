@@ -69,7 +69,7 @@ describe(`with clinkChampagneGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Clink_Champagne_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "clinkChampagneGlass01",
           "prices": [
             {
               "channel": undefined,
@@ -216,7 +216,7 @@ describe(`with clinkChampagneGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Clink_Champagne_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "clinkChampagneGlass01",
           "prices": [
             {
               "channel": undefined,

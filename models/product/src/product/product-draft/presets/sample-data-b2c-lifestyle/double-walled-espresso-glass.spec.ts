@@ -68,7 +68,7 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "doubleWalledEspressoGlass01",
           "prices": [
             {
               "channel": undefined,

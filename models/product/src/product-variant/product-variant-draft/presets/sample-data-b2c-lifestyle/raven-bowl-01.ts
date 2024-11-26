@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const ravenBowl01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ravenBowl01')
     .sku('RB-093')
     .prices([
       PriceDraft.presets

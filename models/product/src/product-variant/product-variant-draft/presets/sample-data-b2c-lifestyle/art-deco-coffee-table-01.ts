@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const artDecoCoffeeTable01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('artDecoCoffeeTable01')
     .sku('ADCT-01')
     .prices([
       PriceDraft.presets

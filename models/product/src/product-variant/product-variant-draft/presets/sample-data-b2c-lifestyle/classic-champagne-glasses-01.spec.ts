@@ -78,7 +78,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Champagne_Glasses-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicChampagneGlasses01",
         "prices": [
           {
             "channel": undefined,
@@ -189,7 +189,7 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Champagne_Glasses-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicChampagneGlasses01",
         "prices": [
           {
             "channel": undefined,

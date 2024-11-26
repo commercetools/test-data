@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const classicServingTray01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('classicServingTray01')
     .sku('CST-01')
     .prices([
       PriceDraft.presets

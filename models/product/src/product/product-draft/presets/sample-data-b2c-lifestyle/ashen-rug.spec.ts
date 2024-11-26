@@ -71,7 +71,7 @@ describe(`with ashenRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ashen_Rug-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ashenRug01",
           "prices": [
             {
               "channel": undefined,
@@ -221,7 +221,7 @@ describe(`with ashenRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ashen_Rug-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ashenRug01",
           "prices": [
             {
               "channel": undefined,

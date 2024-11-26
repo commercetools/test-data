@@ -68,7 +68,7 @@ describe(`with brunoChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Bruno_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "brunoChair01",
           "prices": [
             {
               "channel": undefined,
@@ -214,7 +214,7 @@ describe(`with brunoChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Bruno_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "brunoChair01",
           "prices": [
             {
               "channel": undefined,

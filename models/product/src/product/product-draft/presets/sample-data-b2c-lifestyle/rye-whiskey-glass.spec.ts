@@ -76,7 +76,7 @@ describe(`with ryeWhiskeyGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rye_Whiskey_Glass-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ryeWhiskeyGlass01",
           "prices": [
             {
               "channel": undefined,
@@ -231,7 +231,7 @@ describe(`with ryeWhiskeyGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rye_Whiskey_Glass-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "ryeWhiskeyGlass01",
           "prices": [
             {
               "channel": undefined,

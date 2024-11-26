@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const comfortCoffeeMug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('comfortCoffeeMug01')
     .sku('CCM-089')
     .prices([
       PriceDraft.presets

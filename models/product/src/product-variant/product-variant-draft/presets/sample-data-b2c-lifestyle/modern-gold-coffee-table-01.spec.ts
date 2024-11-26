@@ -86,7 +86,7 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Gold_Coffee_Table-1.4.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernGoldCoffeeTable01",
         "prices": [
           {
             "channel": undefined,
@@ -193,7 +193,7 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Gold_Coffee_Table-1.4.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernGoldCoffeeTable01",
         "prices": [
           {
             "channel": undefined,

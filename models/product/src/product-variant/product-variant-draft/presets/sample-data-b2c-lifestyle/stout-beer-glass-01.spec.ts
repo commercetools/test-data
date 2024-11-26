@@ -47,7 +47,7 @@ describe(`with stoutBeerGlass01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Stout_Beer_Glass-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "stoutBeerGlass01",
         "prices": [
           {
             "channel": undefined,
@@ -130,7 +130,7 @@ describe(`with stoutBeerGlass01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Stout_Beer_Glass-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "stoutBeerGlass01",
         "prices": [
           {
             "channel": undefined,

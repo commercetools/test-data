@@ -47,7 +47,7 @@ describe(`with sunnaiGlassBowl01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sunnai_Glass_Bowl-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sunnaiGlassBowl01",
         "prices": [
           {
             "channel": undefined,
@@ -130,7 +130,7 @@ describe(`with sunnaiGlassBowl01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sunnai_Glass_Bowl-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sunnaiGlassBowl01",
         "prices": [
           {
             "channel": undefined,

@@ -47,7 +47,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Turner_Velvet_Armchair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "turnerVelvetArmchair01",
         "prices": [
           {
             "channel": undefined,
@@ -134,7 +134,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Turner_Velvet_Armchair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "turnerVelvetArmchair01",
         "prices": [
           {
             "channel": undefined,

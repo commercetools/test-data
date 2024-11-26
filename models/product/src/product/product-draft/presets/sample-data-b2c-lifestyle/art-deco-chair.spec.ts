@@ -60,7 +60,7 @@ describe(`with artDecoChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Art_Deco_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "artDecoChair01",
           "prices": [
             {
               "channel": undefined,
@@ -203,7 +203,7 @@ describe(`with artDecoChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Art_Deco_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "artDecoChair01",
           "prices": [
             {
               "channel": undefined,

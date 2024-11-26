@@ -55,7 +55,7 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Canela_Three_Seater_Sofa-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "canelaThreeSeaterSofa01",
         "prices": [
           {
             "channel": undefined,
@@ -146,7 +146,7 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Canela_Three_Seater_Sofa-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "canelaThreeSeaterSofa01",
         "prices": [
           {
             "channel": undefined,

@@ -72,7 +72,7 @@ describe(`with modernUpholsteredTwinBed04 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-4.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernUpholsteredTwinBed04",
         "prices": [
           {
             "channel": undefined,
@@ -171,7 +171,7 @@ describe(`with modernUpholsteredTwinBed04 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Twin_Bed-4.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernUpholsteredTwinBed04",
         "prices": [
           {
             "channel": undefined,

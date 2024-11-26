@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const evergreenCandle01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('evergreenCandle01')
     .sku('EC-0993')
     .prices([
       PriceDraft.presets

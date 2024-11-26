@@ -92,7 +92,7 @@ describe(`with smallWoodenBowl preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Small_Wooden_Bowl-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "smallWoodenBowl01",
           "prices": [
             {
               "channel": undefined,
@@ -267,7 +267,7 @@ describe(`with smallWoodenBowl preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Small_Wooden_Bowl-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "smallWoodenBowl01",
           "prices": [
             {
               "channel": undefined,

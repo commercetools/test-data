@@ -95,7 +95,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "nalaTwoSeaterSofa01",
           "prices": [
             {
               "channel": undefined,
@@ -230,7 +230,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-2.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa02",
             "prices": [
               {
                 "channel": undefined,
@@ -333,7 +333,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-3.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa03",
             "prices": [
               {
                 "channel": undefined,
@@ -428,7 +428,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-4.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa04",
             "prices": [
               {
                 "channel": undefined,
@@ -531,7 +531,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-5.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa05",
             "prices": [
               {
                 "channel": undefined,
@@ -626,7 +626,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-6.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa06",
             "prices": [
               {
                 "channel": undefined,
@@ -721,7 +721,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-7.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa07",
             "prices": [
               {
                 "channel": undefined,
@@ -861,7 +861,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "nalaTwoSeaterSofa01",
           "prices": [
             {
               "channel": undefined,
@@ -999,7 +999,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-2.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa02",
             "prices": [
               {
                 "channel": undefined,
@@ -1093,7 +1093,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-3.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa03",
             "prices": [
               {
                 "channel": undefined,
@@ -1179,7 +1179,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-4.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa04",
             "prices": [
               {
                 "channel": undefined,
@@ -1273,7 +1273,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-5.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa05",
             "prices": [
               {
                 "channel": undefined,
@@ -1359,7 +1359,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-6.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa06",
             "prices": [
               {
                 "channel": undefined,
@@ -1445,7 +1445,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Nala_Two_Seater_Sofa-7.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "nalaTwoSeaterSofa07",
             "prices": [
               {
                 "channel": undefined,

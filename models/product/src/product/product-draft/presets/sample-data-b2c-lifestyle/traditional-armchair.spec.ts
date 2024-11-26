@@ -85,7 +85,7 @@ describe(`with traditionalArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Traditional_Armchair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "traditionalArmchair01",
           "prices": [
             {
               "channel": undefined,
@@ -252,7 +252,7 @@ describe(`with traditionalArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Traditional_Armchair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "traditionalArmchair01",
           "prices": [
             {
               "channel": undefined,

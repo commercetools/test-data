@@ -47,7 +47,7 @@ describe(`with evergreenCandle01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Evergreen_Candle-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "evergreenCandle01",
         "prices": [
           {
             "channel": undefined,
@@ -138,7 +138,7 @@ describe(`with evergreenCandle01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Evergreen_Candle-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "evergreenCandle01",
         "prices": [
           {
             "channel": undefined,
