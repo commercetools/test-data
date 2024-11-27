@@ -1,25 +1,25 @@
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
+export type TMcMaybe<T> = T | null;
+export type TMcInputMaybe<T> = TMcMaybe<T>;
+export type TMcExact<T extends { [key: string]: unknown }> = {
   [K in keyof T]: T[K];
 };
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]?: Maybe<T[SubKey]>;
+export type TMcMakeOptional<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]?: TMcMaybe<T[SubKey]>;
 };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]: Maybe<T[SubKey]>;
+export type TMcMakeMaybe<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]: TMcMaybe<T[SubKey]>;
 };
-export type MakeEmpty<
+export type TMcMakeEmpty<
   T extends { [key: string]: unknown },
   K extends keyof T,
 > = { [_ in K]?: never };
-export type Incremental<T> =
+export type TMcIncremental<T> =
   | T
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
     };
 /** All built-in and custom scalars, mapped to their actual values */
-export type Scalars = {
+export type TMcScalars = {
   ID: { input: string; output: string };
   String: { input: string; output: string };
   Boolean: { input: boolean; output: boolean };
@@ -28,8 +28,8 @@ export type Scalars = {
 };
 
 export type TMcAdditionalUserInfo = {
-  firstName: Scalars['String']['input'];
-  lastName: Scalars['String']['input'];
+  firstName: TMcScalars['String']['input'];
+  lastName: TMcScalars['String']['input'];
 };
 
 export type TMcAllPermissionsForAllApplications = {
@@ -42,117 +42,117 @@ export type TMcAllPermissionsForAllApplications = {
 
 export type TMcAppliedActionRight = {
   __typename?: 'AppliedActionRight';
-  group: Scalars['String']['output'];
-  name: Scalars['String']['output'];
-  value: Scalars['Boolean']['output'];
+  group: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
+  value: TMcScalars['Boolean']['output'];
 };
 
 export type TMcAppliedDataFence = TMcStoreDataFence;
 
 export type TMcAppliedMenuVisibilities = {
   __typename?: 'AppliedMenuVisibilities';
-  name: Scalars['String']['output'];
-  value: Scalars['Boolean']['output'];
+  name: TMcScalars['String']['output'];
+  value: TMcScalars['Boolean']['output'];
 };
 
 export type TMcAppliedPermission = {
   __typename?: 'AppliedPermission';
-  name: Scalars['String']['output'];
-  value: Scalars['Boolean']['output'];
+  name: TMcScalars['String']['output'];
+  value: TMcScalars['Boolean']['output'];
 };
 
 export type TMcCartClassificationValue = {
   __typename?: 'CartClassificationValue';
-  allLocaleLabels: Array<Maybe<TMcLocalizedField>>;
-  key: Scalars['String']['output'];
+  allLocaleLabels: Array<TMcMaybe<TMcLocalizedField>>;
+  key: TMcScalars['String']['output'];
 };
 
 export type TMcChangeUserBusinessRole = {
-  businessRole?: InputMaybe<Scalars['String']['input']>;
+  businessRole?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcChangeUserLanguage = {
-  language: Scalars['String']['input'];
+  language: TMcScalars['String']['input'];
 };
 
 export type TMcChangeUserName = {
-  firstName: Scalars['String']['input'];
-  lastName: Scalars['String']['input'];
+  firstName: TMcScalars['String']['input'];
+  lastName: TMcScalars['String']['input'];
 };
 
 export type TMcChangeUserNumberFormat = {
-  numberFormat: Scalars['String']['input'];
+  numberFormat: TMcScalars['String']['input'];
 };
 
 export type TMcChangeUserPassword = {
-  password: Scalars['String']['input'];
+  password: TMcScalars['String']['input'];
 };
 
 export type TMcDataFence = {
-  type: Scalars['String']['output'];
+  type: TMcScalars['String']['output'];
 };
 
 export type TMcDeleteAccountRequest = {
   __typename?: 'DeleteAccountRequest';
-  jwt?: Maybe<Scalars['String']['output']>;
+  jwt?: TMcMaybe<TMcScalars['String']['output']>;
 };
 
 export type TMcDeletedUser = {
   __typename?: 'DeletedUser';
-  id: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
 };
 
 export type TMcFeature = {
   __typename?: 'Feature';
-  name: Scalars['String']['output'];
-  reason?: Maybe<Scalars['String']['output']>;
-  value: Scalars['Boolean']['output'];
+  name: TMcScalars['String']['output'];
+  reason?: TMcMaybe<TMcScalars['String']['output']>;
+  value: TMcScalars['Boolean']['output'];
 };
 
 export type TMcIdTokenUserInfo = {
   __typename?: 'IdTokenUserInfo';
-  additionalClaims?: Maybe<Scalars['String']['output']>;
-  aud: Scalars['String']['output'];
-  email?: Maybe<Scalars['String']['output']>;
-  exp: Scalars['Float']['output'];
-  iat?: Maybe<Scalars['Float']['output']>;
-  iss: Scalars['String']['output'];
-  name?: Maybe<Scalars['String']['output']>;
-  sub: Scalars['String']['output'];
+  additionalClaims?: TMcMaybe<TMcScalars['String']['output']>;
+  aud: TMcScalars['String']['output'];
+  email?: TMcMaybe<TMcScalars['String']['output']>;
+  exp: TMcScalars['Float']['output'];
+  iat?: TMcMaybe<TMcScalars['Float']['output']>;
+  iss: TMcScalars['String']['output'];
+  name?: TMcMaybe<TMcScalars['String']['output']>;
+  sub: TMcScalars['String']['output'];
 };
 
 export type TMcImportResponse = {
   __typename?: 'ImportResponse';
-  hasImportedSampleData?: Maybe<Scalars['Boolean']['output']>;
-  importedSampleData?: Maybe<Scalars['String']['output']>;
-  projectKey?: Maybe<Scalars['String']['output']>;
+  hasImportedSampleData?: TMcMaybe<TMcScalars['Boolean']['output']>;
+  importedSampleData?: TMcMaybe<TMcScalars['String']['output']>;
+  projectKey?: TMcMaybe<TMcScalars['String']['output']>;
 };
 
 export type TMcInvitationInput = {
-  emails: Array<Scalars['String']['input']>;
+  emails: Array<TMcScalars['String']['input']>;
   organization: TMcInvitationOrganizationInput;
   team: TMcInvitationTeamInput;
 };
 
 export type TMcInvitationOrganizationInput = {
-  id: Scalars['ID']['input'];
-  name?: InputMaybe<Scalars['String']['input']>;
-  version: Scalars['Int']['input'];
+  id: TMcScalars['ID']['input'];
+  name?: TMcInputMaybe<TMcScalars['String']['input']>;
+  version: TMcScalars['Int']['input'];
 };
 
 export type TMcInvitationQueryResult = {
   __typename?: 'InvitationQueryResult';
-  gravatarHash?: Maybe<Scalars['String']['output']>;
-  hasValidEmail: Scalars['Boolean']['output'];
-  isAlreadyAMemberOfTeam: Scalars['Boolean']['output'];
-  isKnownUser: Scalars['Boolean']['output'];
-  version: Scalars['Int']['output'];
+  gravatarHash?: TMcMaybe<TMcScalars['String']['output']>;
+  hasValidEmail: TMcScalars['Boolean']['output'];
+  isAlreadyAMemberOfTeam: TMcScalars['Boolean']['output'];
+  isKnownUser: TMcScalars['Boolean']['output'];
+  version: TMcScalars['Int']['output'];
 };
 
 export type TMcInvitationResult = {
   __typename?: 'InvitationResult';
-  email: Scalars['String']['output'];
-  jwt?: Maybe<Scalars['String']['output']>;
+  email: TMcScalars['String']['output'];
+  jwt?: TMcMaybe<TMcScalars['String']['output']>;
   status: TMcInvitationStatus;
 };
 
@@ -163,42 +163,42 @@ export enum TMcInvitationStatus {
 }
 
 export type TMcInvitationTeamInput = {
-  id: Scalars['ID']['input'];
+  id: TMcScalars['ID']['input'];
 };
 
 export type TMcInvitationWhereInput = {
-  email: Scalars['String']['input'];
-  organizationId: Scalars['ID']['input'];
-  teamId: Scalars['ID']['input'];
+  email: TMcScalars['String']['input'];
+  organizationId: TMcScalars['ID']['input'];
+  teamId: TMcScalars['ID']['input'];
 };
 
 export type TMcLocalizedField = {
   __typename?: 'LocalizedField';
-  locale: Scalars['String']['output'];
-  value: Scalars['String']['output'];
+  locale: TMcScalars['String']['output'];
+  value: TMcScalars['String']['output'];
 };
 
 export type TMcMetaData = {
-  createdAt: Scalars['String']['output'];
-  lastModifiedAt: Scalars['String']['output'];
-  version?: Maybe<Scalars['Int']['output']>;
+  createdAt: TMcScalars['String']['output'];
+  lastModifiedAt: TMcScalars['String']['output'];
+  version?: TMcMaybe<TMcScalars['Int']['output']>;
 };
 
 export type TMcMutation = {
   __typename?: 'Mutation';
-  createMyOrganization?: Maybe<TMcOrganizationCreated>;
-  createMyProject?: Maybe<TMcProjectPendingCreation>;
+  createMyOrganization?: TMcMaybe<TMcOrganizationCreated>;
+  createMyProject?: TMcMaybe<TMcProjectPendingCreation>;
   createOAuthClient: TMcOAuthClient;
   createUserFromIdentity: TMcUser;
   deleteAccount: TMcDeletedUser;
   deleteOAuthClient: TMcOAuthClient;
   importSampleData: TMcImportResponse;
   invite: Array<TMcInvitationResult>;
-  random: Scalars['String']['output'];
+  random: TMcScalars['String']['output'];
   resetPassword: TMcResetUser;
-  sendLinkToDeleteAccount?: Maybe<TMcDeleteAccountRequest>;
-  sendLinkToResetPassword?: Maybe<TMcResetPasswordRequest>;
-  sendLinkToSignUp?: Maybe<TMcSignUpRequest>;
+  sendLinkToDeleteAccount?: TMcMaybe<TMcDeleteAccountRequest>;
+  sendLinkToResetPassword?: TMcMaybe<TMcResetPasswordRequest>;
+  sendLinkToSignUp?: TMcMaybe<TMcSignUpRequest>;
   signUp: TMcSignedUpUser;
   updateUser: TMcUser;
 };
@@ -217,111 +217,111 @@ export type TMcMutation_CreateOAuthClientArgs = {
 };
 
 export type TMcMutation_DeleteAccountArgs = {
-  jwt: Scalars['String']['input'];
+  jwt: TMcScalars['String']['input'];
 };
 
 export type TMcMutation_DeleteOAuthClientArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcScalars['ID']['input'];
 };
 
 export type TMcMutation_ImportSampleDataArgs = {
-  dataset?: InputMaybe<TMcSampleDatasets>;
-  projectKey: Scalars['String']['input'];
+  dataset?: TMcInputMaybe<TMcSampleDatasets>;
+  projectKey: TMcScalars['String']['input'];
 };
 
 export type TMcMutation_InviteArgs = {
   draft: TMcInvitationInput;
-  origin?: InputMaybe<Scalars['String']['input']>;
+  origin?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcMutation_RandomArgs = {
-  byteLength: Scalars['Int']['input'];
+  byteLength: TMcScalars['Int']['input'];
 };
 
 export type TMcMutation_ResetPasswordArgs = {
   draft: TMcResetPasswordDraft;
-  jwt: Scalars['String']['input'];
+  jwt: TMcScalars['String']['input'];
 };
 
 export type TMcMutation_SendLinkToResetPasswordArgs = {
-  email: Scalars['String']['input'];
+  email: TMcScalars['String']['input'];
 };
 
 export type TMcMutation_SendLinkToSignUpArgs = {
-  additionalInfo?: InputMaybe<TMcAdditionalUserInfo>;
-  email: Scalars['String']['input'];
-  language?: InputMaybe<Scalars['String']['input']>;
+  additionalInfo?: TMcInputMaybe<TMcAdditionalUserInfo>;
+  email: TMcScalars['String']['input'];
+  language?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcMutation_SignUpArgs = {
   draft: TMcUserDraft;
-  jwt: Scalars['String']['input'];
+  jwt: TMcScalars['String']['input'];
 };
 
 export type TMcMutation_UpdateUserArgs = {
   actions: Array<TMcUserUpdateAction>;
-  version: Scalars['Int']['input'];
+  version: TMcScalars['Int']['input'];
 };
 
 export type TMcMyPermissionInitializationInput = {
-  teamId: Scalars['String']['input'];
+  teamId: TMcScalars['String']['input'];
 };
 
 export type TMcOAuthClient = {
   __typename?: 'OAuthClient';
-  createdAt?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  lastUsedAt?: Maybe<Scalars['String']['output']>;
-  name: Scalars['String']['output'];
-  ownerId: Scalars['ID']['output'];
+  createdAt?: TMcMaybe<TMcScalars['String']['output']>;
+  id: TMcScalars['ID']['output'];
+  lastUsedAt?: TMcMaybe<TMcScalars['String']['output']>;
+  name: TMcScalars['String']['output'];
+  ownerId: TMcScalars['ID']['output'];
   permissions: Array<TMcProjectPermission>;
-  secret: Scalars['String']['output'];
+  secret: TMcScalars['String']['output'];
 };
 
 export type TMcOAuthClientCreationInput = {
-  name: Scalars['String']['input'];
-  ownerId: Scalars['ID']['input'];
+  name: TMcScalars['String']['input'];
+  ownerId: TMcScalars['ID']['input'];
   permissions: Array<TMcProjectPermissionInput>;
 };
 
 export type TMcOAuthClientQueryResult = TMcQueryResult & {
   __typename?: 'OAuthClientQueryResult';
-  count: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
+  count: TMcScalars['Int']['output'];
+  offset: TMcScalars['Int']['output'];
   results: Array<TMcOAuthClient>;
-  total: Scalars['Int']['output'];
+  total: TMcScalars['Int']['output'];
 };
 
 export type TMcOAuthClientTemplate = {
   __typename?: 'OAuthClientTemplate';
-  key: Scalars['String']['output'];
-  oAuthScopes: Array<Scalars['String']['output']>;
+  key: TMcScalars['String']['output'];
+  oAuthScopes: Array<TMcScalars['String']['output']>;
 };
 
 export type TMcOrganization = {
   __typename?: 'Organization';
   /** @deprecated This field will be removed in the future. */
-  createdAt: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
-  name: Scalars['String']['output'];
+  createdAt: TMcScalars['String']['output'];
+  id: TMcScalars['ID']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcOrganizationCreated = {
   __typename?: 'OrganizationCreated';
-  id: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
   teams: Array<TMcOrganizationTeamsCreated>;
 };
 
 export type TMcOrganizationDraftType = {
-  name: Scalars['String']['input'];
-  ownerId: Scalars['String']['input'];
+  name: TMcScalars['String']['input'];
+  ownerId: TMcScalars['String']['input'];
 };
 
 export type TMcOrganizationTeamsCreated = {
   __typename?: 'OrganizationTeamsCreated';
-  id: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcProject = TMcMetaData & {
@@ -332,76 +332,76 @@ export type TMcProject = TMcMetaData & {
   allAppliedMenuVisibilities: Array<TMcAppliedMenuVisibilities>;
   allAppliedPermissions: Array<TMcAppliedPermission>;
   allPermissionsForAllApplications: TMcAllPermissionsForAllApplications;
-  apiVersion: Scalars['String']['output'];
-  countries: Array<Scalars['String']['output']>;
-  createdAt: Scalars['String']['output'];
-  currencies: Array<Scalars['String']['output']>;
+  apiVersion: TMcScalars['String']['output'];
+  countries: Array<TMcScalars['String']['output']>;
+  createdAt: TMcScalars['String']['output'];
+  currencies: Array<TMcScalars['String']['output']>;
   expiry: TMcProjectExpiry;
-  initialized: Scalars['Boolean']['output'];
-  isProductionProject: Scalars['Boolean']['output'];
-  isUserAdminOfCurrentProject?: Maybe<Scalars['Boolean']['output']>;
-  key: Scalars['String']['output'];
-  languages: Array<Scalars['String']['output']>;
-  lastModifiedAt: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  initialized: TMcScalars['Boolean']['output'];
+  isProductionProject: TMcScalars['Boolean']['output'];
+  isUserAdminOfCurrentProject?: TMcMaybe<TMcScalars['Boolean']['output']>;
+  key: TMcScalars['String']['output'];
+  languages: Array<TMcScalars['String']['output']>;
+  lastModifiedAt: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
   owner: TMcOrganization;
-  plan: Scalars['String']['output'];
-  sampleDataImportDataset?: Maybe<Scalars['String']['output']>;
-  shippingRateInputType?: Maybe<TMcShippingRateInputType>;
+  plan: TMcScalars['String']['output'];
+  sampleDataImportDataset?: TMcMaybe<TMcScalars['String']['output']>;
+  shippingRateInputType?: TMcMaybe<TMcShippingRateInputType>;
   suspension: TMcProjectSuspension;
-  version?: Maybe<Scalars['Int']['output']>;
+  version?: TMcMaybe<TMcScalars['Int']['output']>;
 };
 
 export type TMcProjectDraftType = {
-  countries: Array<Scalars['String']['input']>;
-  currencies: Array<Scalars['String']['input']>;
-  deleteDaysAfterCreation?: InputMaybe<Scalars['Int']['input']>;
-  key: Scalars['String']['input'];
-  languages: Array<Scalars['String']['input']>;
-  messagesEnabled?: InputMaybe<Scalars['Boolean']['input']>;
-  name: Scalars['String']['input'];
-  ownerId: Scalars['String']['input'];
+  countries: Array<TMcScalars['String']['input']>;
+  currencies: Array<TMcScalars['String']['input']>;
+  deleteDaysAfterCreation?: TMcInputMaybe<TMcScalars['Int']['input']>;
+  key: TMcScalars['String']['input'];
+  languages: Array<TMcScalars['String']['input']>;
+  messagesEnabled?: TMcInputMaybe<TMcScalars['Boolean']['input']>;
+  name: TMcScalars['String']['input'];
+  ownerId: TMcScalars['String']['input'];
 };
 
 export type TMcProjectExpiry = {
   __typename?: 'ProjectExpiry';
-  daysLeft?: Maybe<Scalars['Int']['output']>;
-  isActive: Scalars['Boolean']['output'];
+  daysLeft?: TMcMaybe<TMcScalars['Int']['output']>;
+  isActive: TMcScalars['Boolean']['output'];
 };
 
 export type TMcProjectPendingCreation = {
   __typename?: 'ProjectPendingCreation';
-  id: Scalars['String']['output'];
-  key: Scalars['String']['output'];
-  name: Scalars['String']['output'];
-  version: Scalars['Int']['output'];
+  id: TMcScalars['String']['output'];
+  key: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
+  version: TMcScalars['Int']['output'];
 };
 
 export type TMcProjectPermission = {
   __typename?: 'ProjectPermission';
-  key: Scalars['String']['output'];
-  projectKey?: Maybe<Scalars['String']['output']>;
-  storeKey?: Maybe<Scalars['String']['output']>;
+  key: TMcScalars['String']['output'];
+  projectKey?: TMcMaybe<TMcScalars['String']['output']>;
+  storeKey?: TMcMaybe<TMcScalars['String']['output']>;
 };
 
 export type TMcProjectPermissionInput = {
-  key: Scalars['String']['input'];
-  projectKey?: InputMaybe<Scalars['String']['input']>;
-  storeKey?: InputMaybe<Scalars['String']['input']>;
+  key: TMcScalars['String']['input'];
+  projectKey?: TMcInputMaybe<TMcScalars['String']['input']>;
+  storeKey?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcProjectQueryResult = TMcQueryResult & {
   __typename?: 'ProjectQueryResult';
-  count: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
+  count: TMcScalars['Int']['output'];
+  offset: TMcScalars['Int']['output'];
   results: Array<TMcProject>;
-  total: Scalars['Int']['output'];
+  total: TMcScalars['Int']['output'];
 };
 
 export type TMcProjectSuspension = {
   __typename?: 'ProjectSuspension';
-  isActive: Scalars['Boolean']['output'];
-  reason?: Maybe<TMcProjectSuspensionReason>;
+  isActive: TMcScalars['Boolean']['output'];
+  reason?: TMcMaybe<TMcProjectSuspensionReason>;
 };
 
 export enum TMcProjectSuspensionReason {
@@ -413,92 +413,92 @@ export enum TMcProjectSuspensionReason {
 export type TMcQuery = {
   __typename?: 'Query';
   allFeatures: Array<TMcFeature>;
-  allImpliedOAuthScopes: Array<Scalars['String']['output']>;
-  allSupportedActionRights?: Maybe<Array<TMcSupportedActionRight>>;
-  allSupportedMenuVisibilities?: Maybe<Array<TMcSupportedMenuVisibility>>;
-  allSupportedOAuthScopes: Array<Scalars['String']['output']>;
+  allImpliedOAuthScopes: Array<TMcScalars['String']['output']>;
+  allSupportedActionRights?: TMcMaybe<Array<TMcSupportedActionRight>>;
+  allSupportedMenuVisibilities?: TMcMaybe<Array<TMcSupportedMenuVisibility>>;
+  allSupportedOAuthScopes: Array<TMcScalars['String']['output']>;
   allSupportedOAuthScopesForOAuthClients: Array<TMcSupportedOAuthScopeForOAuthClient>;
-  allSupportedResources?: Maybe<Array<TMcSupportedResource>>;
-  allSupportedStoreScopes?: Maybe<Array<TMcSupportedStoreScope>>;
-  amILoggedIn: Scalars['Boolean']['output'];
-  invitation?: Maybe<TMcInvitationQueryResult>;
-  me?: Maybe<TMcUser>;
-  oAuthClient?: Maybe<TMcOAuthClient>;
+  allSupportedResources?: TMcMaybe<Array<TMcSupportedResource>>;
+  allSupportedStoreScopes?: TMcMaybe<Array<TMcSupportedStoreScope>>;
+  amILoggedIn: TMcScalars['Boolean']['output'];
+  invitation?: TMcMaybe<TMcInvitationQueryResult>;
+  me?: TMcMaybe<TMcUser>;
+  oAuthClient?: TMcMaybe<TMcOAuthClient>;
   oAuthClientTemplates: Array<TMcOAuthClientTemplate>;
   oAuthClients: TMcOAuthClientQueryResult;
-  project?: Maybe<TMcProject>;
-  release?: Maybe<Scalars['String']['output']>;
-  releases?: Maybe<TMcReleaseHistory>;
-  storeOAuthScopes: Array<Scalars['String']['output']>;
+  project?: TMcMaybe<TMcProject>;
+  release?: TMcMaybe<TMcScalars['String']['output']>;
+  releases?: TMcMaybe<TMcReleaseHistory>;
+  storeOAuthScopes: Array<TMcScalars['String']['output']>;
   systemStatus: TMcSystemStatus;
 };
 
 export type TMcQuery_AllImpliedOAuthScopesArgs = {
-  onlyConfiguredOnTrustedClient?: InputMaybe<Scalars['Boolean']['input']>;
-  resourceAccessPermissions: Array<Scalars['String']['input']>;
+  onlyConfiguredOnTrustedClient?: TMcInputMaybe<TMcScalars['Boolean']['input']>;
+  resourceAccessPermissions: Array<TMcScalars['String']['input']>;
 };
 
 export type TMcQuery_InvitationArgs = {
-  where?: InputMaybe<TMcInvitationWhereInput>;
+  where?: TMcInputMaybe<TMcInvitationWhereInput>;
 };
 
 export type TMcQuery_OAuthClientArgs = {
-  id: Scalars['String']['input'];
+  id: TMcScalars['String']['input'];
 };
 
 export type TMcQuery_OAuthClientsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
+  limit?: TMcInputMaybe<TMcScalars['Int']['input']>;
+  offset?: TMcInputMaybe<TMcScalars['Int']['input']>;
+  sort?: TMcInputMaybe<Array<TMcScalars['String']['input']>>;
 };
 
 export type TMcQuery_ProjectArgs = {
-  key?: InputMaybe<Scalars['String']['input']>;
+  key?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcQuery_ReleasesArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
+  limit?: TMcInputMaybe<TMcScalars['Int']['input']>;
+  offset?: TMcInputMaybe<TMcScalars['Int']['input']>;
   origin: TMcReleaseOrigin;
 };
 
 export type TMcQueryResult = {
-  count: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
-  total: Scalars['Int']['output'];
+  count: TMcScalars['Int']['output'];
+  offset: TMcScalars['Int']['output'];
+  total: TMcScalars['Int']['output'];
 };
 
 export type TMcReference = {
   __typename?: 'Reference';
-  id: Scalars['String']['output'];
-  typeId: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
+  typeId: TMcScalars['String']['output'];
 };
 
 export type TMcReferenceInput = {
-  id: Scalars['ID']['input'];
-  typeId: Scalars['String']['input'];
+  id: TMcScalars['ID']['input'];
+  typeId: TMcScalars['String']['input'];
 };
 
 export type TMcReleaseEntry = {
   __typename?: 'ReleaseEntry';
-  description: Scalars['String']['output'];
-  guid: Scalars['String']['output'];
-  link: Scalars['String']['output'];
-  releasedAt: Scalars['String']['output'];
-  title: Scalars['String']['output'];
+  description: TMcScalars['String']['output'];
+  guid: TMcScalars['String']['output'];
+  link: TMcScalars['String']['output'];
+  releasedAt: TMcScalars['String']['output'];
+  title: TMcScalars['String']['output'];
 };
 
 export type TMcReleaseHistory = {
   __typename?: 'ReleaseHistory';
-  description: Scalars['String']['output'];
+  description: TMcScalars['String']['output'];
   entries: TMcReleaseQueryResult;
-  link: Scalars['String']['output'];
-  title: Scalars['String']['output'];
+  link: TMcScalars['String']['output'];
+  title: TMcScalars['String']['output'];
 };
 
 export type TMcReleaseHistory_EntriesArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
+  limit?: TMcInputMaybe<TMcScalars['Int']['input']>;
+  offset?: TMcInputMaybe<TMcScalars['Int']['input']>;
 };
 
 export enum TMcReleaseOrigin {
@@ -508,24 +508,24 @@ export enum TMcReleaseOrigin {
 
 export type TMcReleaseQueryResult = TMcQueryResult & {
   __typename?: 'ReleaseQueryResult';
-  count: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
+  count: TMcScalars['Int']['output'];
+  offset: TMcScalars['Int']['output'];
   results: Array<TMcReleaseEntry>;
-  total: Scalars['Int']['output'];
+  total: TMcScalars['Int']['output'];
 };
 
 export type TMcResetPasswordDraft = {
-  password: Scalars['String']['input'];
+  password: TMcScalars['String']['input'];
 };
 
 export type TMcResetPasswordRequest = {
   __typename?: 'ResetPasswordRequest';
-  jwt?: Maybe<Scalars['String']['output']>;
+  jwt?: TMcMaybe<TMcScalars['String']['output']>;
 };
 
 export type TMcResetUser = {
   __typename?: 'ResetUser';
-  id: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
 };
 
 export enum TMcSampleDatasets {
@@ -535,13 +535,13 @@ export enum TMcSampleDatasets {
 }
 
 export type TMcSetUserTimeZone = {
-  timeZone?: InputMaybe<Scalars['String']['input']>;
+  timeZone?: TMcInputMaybe<TMcScalars['String']['input']>;
 };
 
 export type TMcShippingRateInputType = {
   __typename?: 'ShippingRateInputType';
   type: TMcShippingRateType;
-  values?: Maybe<Array<Maybe<TMcCartClassificationValue>>>;
+  values?: TMcMaybe<Array<TMcMaybe<TMcCartClassificationValue>>>;
 };
 
 export enum TMcShippingRateType {
@@ -552,48 +552,48 @@ export enum TMcShippingRateType {
 
 export type TMcSignUpRequest = {
   __typename?: 'SignUpRequest';
-  jwt?: Maybe<Scalars['String']['output']>;
+  jwt?: TMcMaybe<TMcScalars['String']['output']>;
 };
 
 export type TMcSignedUpUser = {
   __typename?: 'SignedUpUser';
-  id: Scalars['String']['output'];
+  id: TMcScalars['String']['output'];
 };
 
 export type TMcStoreDataFence = TMcDataFence & {
   __typename?: 'StoreDataFence';
-  group: Scalars['String']['output'];
-  name: Scalars['String']['output'];
-  type: Scalars['String']['output'];
-  value: Scalars['String']['output'];
+  group: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
+  type: TMcScalars['String']['output'];
+  value: TMcScalars['String']['output'];
 };
 
 export type TMcSupportedActionRight = {
   __typename?: 'SupportedActionRight';
-  group: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  group: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcSupportedMenuVisibility = {
   __typename?: 'SupportedMenuVisibility';
-  group: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  group: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcSupportedOAuthScopeForOAuthClient = {
   __typename?: 'SupportedOAuthScopeForOAuthClient';
-  name: Scalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcSupportedResource = {
   __typename?: 'SupportedResource';
-  name: Scalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export type TMcSupportedStoreScope = {
   __typename?: 'SupportedStoreScope';
-  group: Scalars['String']['output'];
-  name: Scalars['String']['output'];
+  group: TMcScalars['String']['output'];
+  name: TMcScalars['String']['output'];
 };
 
 export enum TMcSystemOperabilityStatus {
@@ -609,46 +609,46 @@ export type TMcSystemStatus = {
 
 export type TMcUser = TMcMetaData & {
   __typename?: 'User';
-  businessRole?: Maybe<Scalars['String']['output']>;
-  createdAt: Scalars['String']['output'];
-  defaultProjectKey?: Maybe<Scalars['String']['output']>;
-  email: Scalars['String']['output'];
-  firstName: Scalars['String']['output'];
-  gravatarHash: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
-  idTokenUserInfo?: Maybe<TMcIdTokenUserInfo>;
-  language: Scalars['String']['output'];
-  lastModifiedAt: Scalars['String']['output'];
-  lastName: Scalars['String']['output'];
-  launchdarklyTrackingCloudEnvironment: Scalars['String']['output'];
-  launchdarklyTrackingGroup: Scalars['String']['output'];
-  launchdarklyTrackingId: Scalars['String']['output'];
-  launchdarklyTrackingSubgroup?: Maybe<Scalars['String']['output']>;
-  launchdarklyTrackingTeam?: Maybe<Array<Scalars['String']['output']>>;
+  businessRole?: TMcMaybe<TMcScalars['String']['output']>;
+  createdAt: TMcScalars['String']['output'];
+  defaultProjectKey?: TMcMaybe<TMcScalars['String']['output']>;
+  email: TMcScalars['String']['output'];
+  firstName: TMcScalars['String']['output'];
+  gravatarHash: TMcScalars['String']['output'];
+  id: TMcScalars['ID']['output'];
+  idTokenUserInfo?: TMcMaybe<TMcIdTokenUserInfo>;
+  language: TMcScalars['String']['output'];
+  lastModifiedAt: TMcScalars['String']['output'];
+  lastName: TMcScalars['String']['output'];
+  launchdarklyTrackingCloudEnvironment: TMcScalars['String']['output'];
+  launchdarklyTrackingGroup: TMcScalars['String']['output'];
+  launchdarklyTrackingId: TMcScalars['String']['output'];
+  launchdarklyTrackingSubgroup?: TMcMaybe<TMcScalars['String']['output']>;
+  launchdarklyTrackingTeam?: TMcMaybe<Array<TMcScalars['String']['output']>>;
   /** @deprecated This field is replaced by launchdarklyTrackingCloudEnvironment. */
-  launchdarklyTrackingTenant: Scalars['String']['output'];
-  numberFormat: Scalars['String']['output'];
+  launchdarklyTrackingTenant: TMcScalars['String']['output'];
+  numberFormat: TMcScalars['String']['output'];
   projects: TMcProjectQueryResult;
-  timeZone?: Maybe<Scalars['String']['output']>;
+  timeZone?: TMcMaybe<TMcScalars['String']['output']>;
   /** @deprecated This field is not used anymore. */
   verificationStatus: TMcVerificationStatus;
-  version?: Maybe<Scalars['Int']['output']>;
+  version?: TMcMaybe<TMcScalars['Int']['output']>;
 };
 
 export type TMcUserDraft = {
-  businessRole?: InputMaybe<Scalars['String']['input']>;
-  firstName: Scalars['String']['input'];
-  lastName: Scalars['String']['input'];
-  password: Scalars['String']['input'];
+  businessRole?: TMcInputMaybe<TMcScalars['String']['input']>;
+  firstName: TMcScalars['String']['input'];
+  lastName: TMcScalars['String']['input'];
+  password: TMcScalars['String']['input'];
 };
 
 export type TMcUserUpdateAction = {
-  changeBusinessRole?: InputMaybe<TMcChangeUserBusinessRole>;
-  changeLanguage?: InputMaybe<TMcChangeUserLanguage>;
-  changeName?: InputMaybe<TMcChangeUserName>;
-  changeNumberFormat?: InputMaybe<TMcChangeUserNumberFormat>;
-  changePassword?: InputMaybe<TMcChangeUserPassword>;
-  setTimeZone?: InputMaybe<TMcSetUserTimeZone>;
+  changeBusinessRole?: TMcInputMaybe<TMcChangeUserBusinessRole>;
+  changeLanguage?: TMcInputMaybe<TMcChangeUserLanguage>;
+  changeName?: TMcInputMaybe<TMcChangeUserName>;
+  changeNumberFormat?: TMcInputMaybe<TMcChangeUserNumberFormat>;
+  changePassword?: TMcInputMaybe<TMcChangeUserPassword>;
+  setTimeZone?: TMcInputMaybe<TMcSetUserTimeZone>;
 };
 
 export enum TMcVerificationStatus {

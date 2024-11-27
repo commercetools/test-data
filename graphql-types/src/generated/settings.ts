@@ -1,25 +1,25 @@
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
+export type TMcSettingsMaybe<T> = T | null;
+export type TMcSettingsInputMaybe<T> = TMcSettingsMaybe<T>;
+export type TMcSettingsExact<T extends { [key: string]: unknown }> = {
   [K in keyof T]: T[K];
 };
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]?: Maybe<T[SubKey]>;
+export type TMcSettingsMakeOptional<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]?: TMcSettingsMaybe<T[SubKey]>;
 };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]: Maybe<T[SubKey]>;
+export type TMcSettingsMakeMaybe<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]: TMcSettingsMaybe<T[SubKey]>;
 };
-export type MakeEmpty<
+export type TMcSettingsMakeEmpty<
   T extends { [key: string]: unknown },
   K extends keyof T,
 > = { [_ in K]?: never };
-export type Incremental<T> =
+export type TMcSettingsIncremental<T> =
   | T
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
     };
 /** All built-in and custom scalars, mapped to their actual values */
-export type Scalars = {
+export type TMcSettingsScalars = {
   ID: { input: string; output: string };
   String: { input: string; output: string };
   Boolean: { input: boolean; output: boolean };
@@ -34,20 +34,22 @@ export type Scalars = {
 
 export type TMcSettingsAllPublicCustomApplicationsDevelopedByCommercetoolsQueryInput =
   {
-    organizationId?: InputMaybe<Scalars['String']['input']>;
+    organizationId?: TMcSettingsInputMaybe<
+      TMcSettingsScalars['String']['input']
+    >;
   };
 
 export type TMcSettingsApplicationExtension = {
   __typename?: 'ApplicationExtension';
-  createdAt: Scalars['DateTime']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  name: Scalars['String']['output'];
-  navbarMenu?: Maybe<TMcSettingsNavbarMenu>;
-  oAuthScopes: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  name: TMcSettingsScalars['String']['output'];
+  navbarMenu?: TMcSettingsMaybe<TMcSettingsNavbarMenu>;
+  oAuthScopes: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export enum TMcSettingsAuthPermission {
@@ -71,14 +73,14 @@ export enum TMcSettingsAuthPermission {
 
 export type TMcSettingsAverageOrderValueConfiguration = {
   __typename?: 'AverageOrderValueConfiguration';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  showPreviousTimeframe: Scalars['Boolean']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsAverageOrderValueConfigurationInput = {
-  showPreviousTimeframe: Scalars['Boolean']['input'];
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['input'];
 };
 
 export type TMcSettingsBatchProcessResult = {
@@ -95,27 +97,27 @@ export enum TMcSettingsBestSellingLimit {
 
 export type TMcSettingsBusinessUnitsListMyView = {
   __typename?: 'BusinessUnitsListMyView';
-  createdAt: Scalars['DateTime']['output'];
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  filters?: TMcSettingsMaybe<Array<TMcSettingsFilterValues>>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsBusinessUnitsListMyViewInput = {
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsBusinessUnitsListMyViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsBusinessUnitsListMyViewTableInput>;
 };
 
 export type TMcSettingsBusinessUnitsListMyViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export enum TMcSettingsCategoryRecommendationSearchProperty {
@@ -127,157 +129,159 @@ export enum TMcSettingsCategoryRecommendationSearchProperty {
 
 export type TMcSettingsCategoryRecommendationSettings = {
   __typename?: 'CategoryRecommendationSettings';
-  attributeName?: Maybe<Scalars['String']['output']>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
+  attributeName?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   searchProperty: TMcSettingsCategoryRecommendationSearchProperty;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCategoryRecommendationSettingsDataInput = {
-  attributeName?: InputMaybe<Scalars['String']['input']>;
+  attributeName?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   searchProperty: TMcSettingsCategoryRecommendationSearchProperty;
 };
 
 export type TMcSettingsContactInformation = {
   __typename?: 'ContactInformation';
-  createdAt: Scalars['DateTime']['output'];
-  email: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
-  updatedAt: Scalars['DateTime']['output'];
-  verifiedEmail?: Maybe<Scalars['String']['output']>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  email: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  verifiedEmail?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
 };
 
 export type TMcSettingsContactInformationDataInput = {
-  email: Scalars['String']['input'];
+  email: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomApplication = {
   __typename?: 'CustomApplication';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   deployments: Array<TMcSettingsCustomApplicationDeploymentPreview>;
-  description?: Maybe<Scalars['String']['output']>;
-  entryPointUriPath: Scalars['String']['output'];
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  entryPointUriPath: TMcSettingsScalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   installedBy: Array<TMcSettingsCustomApplicationInstallation>;
   mainMenuLink: TMcSettingsCustomApplicationMenuLink;
-  name: Scalars['String']['output'];
+  name: TMcSettingsScalars['String']['output'];
   owner: TMcSettingsOrganizationExtension;
-  ownerId: Scalars['String']['output'];
+  ownerId: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomApplicationPermission>;
   status: TMcSettingsCustomApplicationStatus;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomApplication_DeploymentsArgs = {
-  params?: InputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
 };
 
 export type TMcSettingsCustomApplicationDeploymentPreview = {
   __typename?: 'CustomApplicationDeploymentPreview';
-  alias?: Maybe<Scalars['String']['output']>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  alias?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomApplicationDeploymentPreviewCreateInput = {
-  alias?: InputMaybe<Scalars['String']['input']>;
-  url: Scalars['String']['input'];
+  alias?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  url: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomApplicationDeploymentPreviewUpdateInput = {
-  url: Scalars['String']['input'];
+  url: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomApplicationDeploymentPreviewsQueryInput = {
-  sort?: InputMaybe<Scalars['String']['input']>;
+  sort?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsCustomApplicationDraftDataInput = {
-  description?: InputMaybe<Scalars['String']['input']>;
-  entryPointUriPath: Scalars['String']['input'];
-  icon: Scalars['String']['input'];
+  description?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  entryPointUriPath: TMcSettingsScalars['String']['input'];
+  icon: TMcSettingsScalars['String']['input'];
   mainMenuLink: TMcSettingsCustomApplicationMenuLinkDraftDataInput;
-  name: Scalars['String']['input'];
+  name: TMcSettingsScalars['String']['input'];
   permissions: Array<TMcSettingsCustomApplicationPermissionDataInput>;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLinkDraftDataInput>;
-  url: Scalars['String']['input'];
+  url: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomApplicationInstallation = {
   __typename?: 'CustomApplicationInstallation';
   acceptedPermissions: Array<TMcSettingsCustomApplicationInstallationPermission>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  installInAllProjects: Scalars['Boolean']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  installInAllProjects: TMcSettingsScalars['Boolean']['output'];
   owner: TMcSettingsOrganizationExtension;
-  ownerId: Scalars['String']['output'];
+  ownerId: TMcSettingsScalars['String']['output'];
   projects: Array<TMcSettingsProjectExtension>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomApplicationInstallationPermission = {
   __typename?: 'CustomApplicationInstallationPermission';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  name: Scalars['String']['output'];
-  oAuthScopes: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomApplicationMenuLink = {
   __typename?: 'CustomApplicationMenuLink';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
   /** @deprecated This field has been moved outside of the menu link. */
-  icon: Scalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
   /** @deprecated This field has been renamed to icon. */
-  iconName?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  iconName?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  permissions: Array<Scalars['String']['output']>;
+  permissions: Array<TMcSettingsScalars['String']['output']>;
   /** @deprecated This field has been moved outside of the menu link and is now a top level field. */
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomApplicationMenuLinkDraftDataInput = {
-  defaultLabel: Scalars['String']['input'];
+  defaultLabel: TMcSettingsScalars['String']['input'];
   labelAllLocales: Array<TMcSettingsLocalizedFieldDataInput>;
-  permissions: Array<Scalars['String']['input']>;
+  permissions: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsCustomApplicationPermission = {
   __typename?: 'CustomApplicationPermission';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  name: Scalars['String']['output'];
-  oAuthScopes: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomApplicationPermissionDataInput = {
-  name: Scalars['String']['input'];
-  oAuthScopes: Array<Scalars['String']['input']>;
+  name: TMcSettingsScalars['String']['input'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsCustomApplicationQueryInput = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['String']['input']>;
-  where?: InputMaybe<TMcSettingsCustomApplicationQueryWhereInput>;
+  limit?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  offset?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  sort?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  where?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationQueryWhereInput>;
 };
 
 export type TMcSettingsCustomApplicationQueryWhereInput = {
-  entryPointUriPath?: InputMaybe<Scalars['String']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  name?: InputMaybe<Scalars['String']['input']>;
-  organizationId?: InputMaybe<Scalars['String']['input']>;
+  entryPointUriPath?: TMcSettingsInputMaybe<
+    TMcSettingsScalars['String']['input']
+  >;
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  name?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  organizationId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export enum TMcSettingsCustomApplicationStatus {
@@ -287,136 +291,138 @@ export enum TMcSettingsCustomApplicationStatus {
 
 export type TMcSettingsCustomApplicationSubmenuLink = {
   __typename?: 'CustomApplicationSubmenuLink';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  permissions: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
-  uriPath: Scalars['String']['output'];
+  permissions: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  uriPath: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomApplicationSubmenuLinkDraftDataInput = {
-  defaultLabel: Scalars['String']['input'];
+  defaultLabel: TMcSettingsScalars['String']['input'];
   labelAllLocales: Array<TMcSettingsLocalizedFieldDataInput>;
-  permissions: Array<Scalars['String']['input']>;
-  uriPath: Scalars['String']['input'];
+  permissions: Array<TMcSettingsScalars['String']['input']>;
+  uriPath: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomApplicationsMaintainerContactEmailVerificationConfirmation =
   {
     __typename?: 'CustomApplicationsMaintainerContactEmailVerificationConfirmation';
-    organizationId: Scalars['ID']['output'];
+    organizationId: TMcSettingsScalars['ID']['output'];
   };
 
 export type TMcSettingsCustomApplicationsMaintainerContactEmailVerificationRequest =
   {
     __typename?: 'CustomApplicationsMaintainerContactEmailVerificationRequest';
-    token?: Maybe<Scalars['String']['output']>;
+    token?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
   };
 
 export type TMcSettingsCustomApplicationsPagedQueryResult = {
   __typename?: 'CustomApplicationsPagedQueryResult';
-  count: Scalars['Int']['output'];
-  limit: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
+  count: TMcSettingsScalars['Int']['output'];
+  limit: TMcSettingsScalars['Int']['output'];
+  offset: TMcSettingsScalars['Int']['output'];
   results: Array<TMcSettingsCustomApplication>;
-  total: Scalars['Int']['output'];
+  total: TMcSettingsScalars['Int']['output'];
 };
 
 export type TMcSettingsCustomView = {
   __typename?: 'CustomView';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
   installedBy: Array<TMcSettingsCustomViewInstallation>;
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  locators: Array<Scalars['String']['output']>;
+  locators: Array<TMcSettingsScalars['String']['output']>;
   owner: TMcSettingsOrganizationExtension;
-  ownerId: Scalars['String']['output'];
+  ownerId: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomViewPermission>;
   status: TMcSettingsCustomViewStatus;
   type: TMcSettingsCustomViewType;
-  typeSettings?: Maybe<TMcSettingsCustomViewTypeSettings>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  typeSettings?: TMcSettingsMaybe<TMcSettingsCustomViewTypeSettings>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomViewDraftDataInput = {
-  defaultLabel: Scalars['String']['input'];
-  description?: InputMaybe<Scalars['String']['input']>;
+  defaultLabel: TMcSettingsScalars['String']['input'];
+  description?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   labelAllLocales: Array<TMcSettingsLocalizedFieldDataInput>;
-  locators: Array<Scalars['String']['input']>;
+  locators: Array<TMcSettingsScalars['String']['input']>;
   permissions: Array<TMcSettingsCustomViewPermissionDataInput>;
   type: TMcSettingsCustomViewType;
   /**
    * The value of this property depends on the value of the 'type' property value.
    * In case the `type` value is `CustomPanel`, you are supposed to provide it's size.
    */
-  typeSettings?: InputMaybe<TMcSettingsCustomViewTypeSettingsInput>;
-  url: Scalars['String']['input'];
+  typeSettings?: TMcSettingsInputMaybe<TMcSettingsCustomViewTypeSettingsInput>;
+  url: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsCustomViewInstallation = {
   __typename?: 'CustomViewInstallation';
   acceptedPermissions: Array<TMcSettingsCustomViewInstallationPermission>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  installInAllProjects: Scalars['Boolean']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  installInAllProjects: TMcSettingsScalars['Boolean']['output'];
   owner: TMcSettingsOrganizationExtension;
-  ownerId: Scalars['String']['output'];
+  ownerId: TMcSettingsScalars['String']['output'];
   projects: Array<TMcSettingsProjectExtension>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomViewInstallationPermission = {
   __typename?: 'CustomViewInstallationPermission';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  name: Scalars['String']['output'];
-  oAuthScopes: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomViewLocator = {
   __typename?: 'CustomViewLocator';
-  key: Scalars['String']['output'];
+  key: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomViewLocatorGroup = {
   __typename?: 'CustomViewLocatorGroup';
-  key: Scalars['String']['output'];
+  key: TMcSettingsScalars['String']['output'];
   locators: Array<TMcSettingsCustomViewLocator>;
 };
 
 export type TMcSettingsCustomViewPermission = {
   __typename?: 'CustomViewPermission';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  name: Scalars['String']['output'];
-  oAuthScopes: Array<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsCustomViewPermissionDataInput = {
-  name: Scalars['String']['input'];
-  oAuthScopes: Array<Scalars['String']['input']>;
+  name: TMcSettingsScalars['String']['input'];
+  oAuthScopes: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsCustomViewQueryInput = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Scalars['String']['input']>;
-  where?: InputMaybe<TMcSettingsCustomViewQueryWhereInput>;
+  limit?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  offset?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  sort?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  where?: TMcSettingsInputMaybe<TMcSettingsCustomViewQueryWhereInput>;
 };
 
 export type TMcSettingsCustomViewQueryWhereInput = {
-  defaultLabel?: InputMaybe<Scalars['String']['input']>;
-  id?: InputMaybe<Scalars['ID']['input']>;
-  locators?: InputMaybe<Array<Scalars['String']['input']>>;
-  organizationId?: InputMaybe<Scalars['String']['input']>;
-  type?: InputMaybe<TMcSettingsCustomViewType>;
+  defaultLabel?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  locators?: TMcSettingsInputMaybe<
+    Array<TMcSettingsScalars['String']['input']>
+  >;
+  organizationId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  type?: TMcSettingsInputMaybe<TMcSettingsCustomViewType>;
 };
 
 export enum TMcSettingsCustomViewSize {
@@ -435,70 +441,70 @@ export enum TMcSettingsCustomViewType {
 
 export type TMcSettingsCustomViewTypeSettings = {
   __typename?: 'CustomViewTypeSettings';
-  size?: Maybe<TMcSettingsCustomViewSize>;
+  size?: TMcSettingsMaybe<TMcSettingsCustomViewSize>;
 };
 
 export type TMcSettingsCustomViewTypeSettingsInput = {
-  size?: InputMaybe<TMcSettingsCustomViewSize>;
+  size?: TMcSettingsInputMaybe<TMcSettingsCustomViewSize>;
 };
 
 export type TMcSettingsCustomViewsPagedQueryResult = {
   __typename?: 'CustomViewsPagedQueryResult';
-  count: Scalars['Int']['output'];
-  limit: Scalars['Int']['output'];
-  offset: Scalars['Int']['output'];
+  count: TMcSettingsScalars['Int']['output'];
+  limit: TMcSettingsScalars['Int']['output'];
+  offset: TMcSettingsScalars['Int']['output'];
   results: Array<TMcSettingsCustomView>;
-  total: Scalars['Int']['output'];
+  total: TMcSettingsScalars['Int']['output'];
 };
 
 export type TMcSettingsCustomerEmailValidationSettingsInput = {
-  isCustomerEmailValidationDisabled: Scalars['Boolean']['input'];
+  isCustomerEmailValidationDisabled: TMcSettingsScalars['Boolean']['input'];
 };
 
 export type TMcSettingsCustomersSearchListMyView = {
   __typename?: 'CustomersSearchListMyView';
-  createdAt: Scalars['DateTime']['output'];
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  filters?: TMcSettingsMaybe<Array<TMcSettingsFilterValues>>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsCustomersSearchListMyViewInput = {
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsCustomersSearchListMyViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsCustomersSearchListMyViewTableInput>;
 };
 
 export type TMcSettingsCustomersSearchListMyViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsDashboardView = {
   __typename?: 'DashboardView';
-  createdAt: Scalars['DateTime']['output'];
-  currencyCode?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  isActive: Scalars['Boolean']['output'];
-  layout?: Maybe<Array<TMcSettingsLayoutCard>>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  timeZone?: Maybe<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  currencyCode?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive: TMcSettingsScalars['Boolean']['output'];
+  layout?: TMcSettingsMaybe<Array<TMcSettingsLayoutCard>>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  timeZone?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsDashboardViewInput = {
-  currencyCode?: InputMaybe<Scalars['String']['input']>;
+  currencyCode?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   layout: Array<TMcSettingsLayoutCardInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  timeZone?: InputMaybe<Scalars['String']['input']>;
+  timeZone?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export enum TMcSettingsDateFilterType {
@@ -518,26 +524,26 @@ export enum TMcSettingsDiscountType {
 
 export type TMcSettingsDiscountsCustomView = {
   __typename?: 'DiscountsCustomView';
-  createdAt: Scalars['DateTime']['output'];
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  search?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  filters?: TMcSettingsMaybe<Array<TMcSettingsFilterValues>>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  search?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
   type: TMcSettingsDiscountType;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsDiscountsCustomViewInput = {
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  search?: InputMaybe<Scalars['String']['input']>;
+  search?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsOrdersListViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsOrdersListViewTableInput>;
 };
 
 export enum TMcSettingsExistence {
@@ -548,14 +554,14 @@ export enum TMcSettingsExistence {
 
 export type TMcSettingsFeature = {
   __typename?: 'Feature';
-  name: Scalars['String']['output'];
-  reason?: Maybe<Scalars['String']['output']>;
-  value: Scalars['Boolean']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  reason?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  value: TMcSettingsScalars['Boolean']['output'];
 };
 
 export type TMcSettingsFeatureQueryInput = {
-  organizationId?: InputMaybe<Scalars['String']['input']>;
-  projectKey?: InputMaybe<Scalars['String']['input']>;
+  organizationId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  projectKey?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export enum TMcSettingsFilterType {
@@ -571,123 +577,127 @@ export enum TMcSettingsFilterType {
 
 export type TMcSettingsFilterValues = {
   __typename?: 'FilterValues';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  json: Scalars['Json']['output'];
-  target: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  json: TMcSettingsScalars['Json']['output'];
+  target: TMcSettingsScalars['String']['output'];
   type: TMcSettingsFilterType;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsFilterValuesCreateInput = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  json: Scalars['Json']['input'];
-  target: Scalars['String']['input'];
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  json: TMcSettingsScalars['Json']['input'];
+  target: TMcSettingsScalars['String']['input'];
   type: TMcSettingsFilterType;
 };
 
 export type TMcSettingsImageRegex = {
   __typename?: 'ImageRegex';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  small?: Maybe<TMcSettingsImageRegexOptions>;
-  thumb?: Maybe<TMcSettingsImageRegexOptions>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  small?: TMcSettingsMaybe<TMcSettingsImageRegexOptions>;
+  thumb?: TMcSettingsMaybe<TMcSettingsImageRegexOptions>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsImageRegexDataInput = {
-  small?: InputMaybe<TMcSettingsImageRegexOptionsInput>;
-  thumb?: InputMaybe<TMcSettingsImageRegexOptionsInput>;
+  small?: TMcSettingsInputMaybe<TMcSettingsImageRegexOptionsInput>;
+  thumb?: TMcSettingsInputMaybe<TMcSettingsImageRegexOptionsInput>;
 };
 
 export type TMcSettingsImageRegexOptions = {
   __typename?: 'ImageRegexOptions';
-  flag?: Maybe<Scalars['String']['output']>;
-  replace: Scalars['String']['output'];
-  search: Scalars['String']['output'];
+  flag?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  replace: TMcSettingsScalars['String']['output'];
+  search: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsImageRegexOptionsInput = {
-  flag?: InputMaybe<Scalars['String']['input']>;
-  replace: Scalars['String']['input'];
-  search: Scalars['String']['input'];
+  flag?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  replace: TMcSettingsScalars['String']['input'];
+  search: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsLayoutCard = {
   __typename?: 'LayoutCard';
-  averageOrderValueConfiguration?: Maybe<TMcSettingsAverageOrderValueConfiguration>;
-  createdAt: Scalars['DateTime']['output'];
-  height: Scalars['Int']['output'];
-  id: Scalars['ID']['output'];
+  averageOrderValueConfiguration?: TMcSettingsMaybe<TMcSettingsAverageOrderValueConfiguration>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  height: TMcSettingsScalars['Int']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   key: TMcSettingsMetricCardType;
-  maxHeight?: Maybe<Scalars['Int']['output']>;
-  maxWidth?: Maybe<Scalars['Int']['output']>;
-  minHeight?: Maybe<Scalars['Int']['output']>;
-  minWidth?: Maybe<Scalars['Int']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  orderStatusConfiguration?: Maybe<TMcSettingsOrderStatusConfiguration>;
-  resizeHandles: Array<Scalars['String']['output']>;
-  resourcesNumbersConfiguration?: Maybe<TMcSettingsResourcesNumbersConfiguration>;
-  salesPerformanceConfiguration?: Maybe<TMcSettingsSalesPerformanceConfiguration>;
-  topProductsConfiguration?: Maybe<TMcSettingsTopProductsConfiguration>;
-  totalOrdersConfiguration?: Maybe<TMcSettingsTotalOrdersConfiguration>;
-  totalSalesConfiguration?: Maybe<TMcSettingsTotalSalesConfiguration>;
-  updatedAt: Scalars['DateTime']['output'];
-  width: Scalars['Int']['output'];
-  xPosition: Scalars['Int']['output'];
-  yPosition: Scalars['Int']['output'];
+  maxHeight?: TMcSettingsMaybe<TMcSettingsScalars['Int']['output']>;
+  maxWidth?: TMcSettingsMaybe<TMcSettingsScalars['Int']['output']>;
+  minHeight?: TMcSettingsMaybe<TMcSettingsScalars['Int']['output']>;
+  minWidth?: TMcSettingsMaybe<TMcSettingsScalars['Int']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  orderStatusConfiguration?: TMcSettingsMaybe<TMcSettingsOrderStatusConfiguration>;
+  resizeHandles: Array<TMcSettingsScalars['String']['output']>;
+  resourcesNumbersConfiguration?: TMcSettingsMaybe<TMcSettingsResourcesNumbersConfiguration>;
+  salesPerformanceConfiguration?: TMcSettingsMaybe<TMcSettingsSalesPerformanceConfiguration>;
+  topProductsConfiguration?: TMcSettingsMaybe<TMcSettingsTopProductsConfiguration>;
+  totalOrdersConfiguration?: TMcSettingsMaybe<TMcSettingsTotalOrdersConfiguration>;
+  totalSalesConfiguration?: TMcSettingsMaybe<TMcSettingsTotalSalesConfiguration>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  width: TMcSettingsScalars['Int']['output'];
+  xPosition: TMcSettingsScalars['Int']['output'];
+  yPosition: TMcSettingsScalars['Int']['output'];
 };
 
 export type TMcSettingsLayoutCardInput = {
-  averageOrderValueConfiguration?: InputMaybe<TMcSettingsAverageOrderValueConfigurationInput>;
-  height: Scalars['Int']['input'];
-  id?: InputMaybe<Scalars['ID']['input']>;
+  averageOrderValueConfiguration?: TMcSettingsInputMaybe<TMcSettingsAverageOrderValueConfigurationInput>;
+  height: TMcSettingsScalars['Int']['input'];
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
   key: TMcSettingsMetricCardType;
-  maxHeight?: InputMaybe<Scalars['Int']['input']>;
-  maxWidth?: InputMaybe<Scalars['Int']['input']>;
-  minHeight?: InputMaybe<Scalars['Int']['input']>;
-  minWidth?: InputMaybe<Scalars['Int']['input']>;
-  nameAllLocales?: InputMaybe<Array<TMcSettingsLocalizedFieldCreateInput>>;
-  orderStatusConfiguration?: InputMaybe<TMcSettingsOrderStatusConfigurationInput>;
-  resizeHandles?: InputMaybe<Array<Scalars['String']['input']>>;
-  resourcesNumbersConfiguration?: InputMaybe<TMcSettingsResourcesNumbersConfigurationInput>;
-  salesPerformanceConfiguration?: InputMaybe<TMcSettingsSalesPerformanceConfigurationInput>;
-  topProductsConfiguration?: InputMaybe<TMcSettingsTopProductsConfigurationInput>;
-  totalOrdersConfiguration?: InputMaybe<TMcSettingsTotalOrdersConfigurationInput>;
-  totalSalesConfiguration?: InputMaybe<TMcSettingsTotalSalesConfigurationInput>;
-  width: Scalars['Int']['input'];
-  xPosition: Scalars['Int']['input'];
-  yPosition: Scalars['Int']['input'];
+  maxHeight?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  maxWidth?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  minHeight?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  minWidth?: TMcSettingsInputMaybe<TMcSettingsScalars['Int']['input']>;
+  nameAllLocales?: TMcSettingsInputMaybe<
+    Array<TMcSettingsLocalizedFieldCreateInput>
+  >;
+  orderStatusConfiguration?: TMcSettingsInputMaybe<TMcSettingsOrderStatusConfigurationInput>;
+  resizeHandles?: TMcSettingsInputMaybe<
+    Array<TMcSettingsScalars['String']['input']>
+  >;
+  resourcesNumbersConfiguration?: TMcSettingsInputMaybe<TMcSettingsResourcesNumbersConfigurationInput>;
+  salesPerformanceConfiguration?: TMcSettingsInputMaybe<TMcSettingsSalesPerformanceConfigurationInput>;
+  topProductsConfiguration?: TMcSettingsInputMaybe<TMcSettingsTopProductsConfigurationInput>;
+  totalOrdersConfiguration?: TMcSettingsInputMaybe<TMcSettingsTotalOrdersConfigurationInput>;
+  totalSalesConfiguration?: TMcSettingsInputMaybe<TMcSettingsTotalSalesConfigurationInput>;
+  width: TMcSettingsScalars['Int']['input'];
+  xPosition: TMcSettingsScalars['Int']['input'];
+  yPosition: TMcSettingsScalars['Int']['input'];
 };
 
 export type TMcSettingsLocalizedField = {
   __typename?: 'LocalizedField';
-  locale: Scalars['String']['output'];
-  value: Scalars['String']['output'];
+  locale: TMcSettingsScalars['String']['output'];
+  value: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsLocalizedFieldCreateInput = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  locale: Scalars['String']['input'];
-  value: Scalars['String']['input'];
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  locale: TMcSettingsScalars['String']['input'];
+  value: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsLocalizedFieldDataInput = {
-  locale: Scalars['String']['input'];
-  value: Scalars['String']['input'];
+  locale: TMcSettingsScalars['String']['input'];
+  value: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMessage = {
   __typename?: 'Message';
-  ackId: Scalars['String']['output'];
-  data: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  ackId: TMcSettingsScalars['String']['output'];
+  data: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
 };
 
 export type TMcSettingsMessageInput = {
-  ackId: Scalars['String']['input'];
-  data: Scalars['String']['input'];
-  id: Scalars['ID']['input'];
+  ackId: TMcSettingsScalars['String']['input'];
+  data: TMcSettingsScalars['String']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export enum TMcSettingsMetricCardType {
@@ -702,33 +712,33 @@ export enum TMcSettingsMetricCardType {
 
 export type TMcSettingsMigrationMatchingScore = {
   __typename?: 'MigrationMatchingScore';
-  matchFrom: Scalars['String']['output'];
-  matchTo: Scalars['String']['output'];
-  score: Scalars['Float']['output'];
+  matchFrom: TMcSettingsScalars['String']['output'];
+  matchTo: TMcSettingsScalars['String']['output'];
+  score: TMcSettingsScalars['Float']['output'];
 };
 
 export type TMcSettingsMutation = {
   __typename?: 'Mutation';
-  activateBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
-  activateCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activateCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
-  activateDashboardView?: Maybe<TMcSettingsDashboardView>;
-  activateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activateOrderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  activateOrdersListView?: Maybe<TMcSettingsOrdersListView>;
-  activateOrganizationExtensionOidcSsoConfig?: Maybe<TMcSettingsOrganizationExtension>;
-  activatePimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  activateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activateProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
-  activateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
-  activateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
-  changeCustomApplicationStatus?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
-  changeCustomViewStatus?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  activateBusinessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>;
+  activateCartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activateCustomersSearchListMyView?: TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>;
+  activateDashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  activateDiscountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activateOrderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  activateOrdersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  activateOrganizationExtensionOidcSsoConfig?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
+  activatePimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  activateProductDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activateProductTypeAttributesView?: TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>;
+  activateProjectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
+  activateQuotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
+  changeCustomApplicationStatus?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
+  changeCustomViewStatus?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewForOrganization>;
   createBusinessUnitsListMyView: TMcSettingsBusinessUnitsListMyView;
   createCartDiscountsCustomView: TMcSettingsDiscountsCustomView;
-  createCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
+  createCustomApplication?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   createCustomApplicationDeploymentPreview: TMcSettingsCustomApplicationDeploymentPreview;
-  createCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  createCustomView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewForOrganization>;
   createCustomersSearchListMyView: TMcSettingsCustomersSearchListMyView;
   createDashboardView: TMcSettingsDashboardView;
   createDiscountCodesCustomView: TMcSettingsDiscountsCustomView;
@@ -739,143 +749,143 @@ export type TMcSettingsMutation = {
   createProductTypeAttributesView: TMcSettingsProductTypeAttributesView;
   createProjectSettingsStoresView: TMcSettingsProjectSettingsStoresView;
   createQuotesListView: TMcSettingsQuotesListView;
-  createVariantPricesListView?: Maybe<TMcSettingsVariantPricesListView>;
-  deactivateBusinessUnitsListMyView?: Maybe<TMcSettingsOrdersListView>;
-  deactivateCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deactivateCustomersSearchListMyView?: Maybe<TMcSettingsOrdersListView>;
-  deactivateDashboardView?: Maybe<TMcSettingsDashboardView>;
-  deactivateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deactivateOrderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  deactivateOrdersListView?: Maybe<TMcSettingsOrdersListView>;
-  deactivateOrganizationExtensionOidcSsoConfig?: Maybe<TMcSettingsOrganizationExtension>;
-  deactivatePimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  deactivateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deactivateProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
-  deactivateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
-  deactivateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
+  createVariantPricesListView?: TMcSettingsMaybe<TMcSettingsVariantPricesListView>;
+  deactivateBusinessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  deactivateCartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deactivateCustomersSearchListMyView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  deactivateDashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  deactivateDiscountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deactivateOrderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  deactivateOrdersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  deactivateOrganizationExtensionOidcSsoConfig?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
+  deactivatePimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  deactivateProductDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deactivateProductTypeAttributesView?: TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>;
+  deactivateProjectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
+  deactivateQuotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
   deleteAllDashboardViews: Array<TMcSettingsDashboardView>;
   deleteAllOrderDetailViews: Array<TMcSettingsOrderDetailView>;
   deleteAllOrdersListViews: Array<TMcSettingsOrdersListView>;
   deleteAllQuotesListViews: Array<TMcSettingsQuotesListView>;
-  deleteBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
-  deleteCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deleteCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
+  deleteBusinessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>;
+  deleteCartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deleteCustomApplication?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   deleteCustomApplicationDeploymentPreview: TMcSettingsCustomApplicationDeploymentPreview;
-  deleteCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
-  deleteCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
-  deleteDashboardView?: Maybe<TMcSettingsDashboardView>;
-  deleteDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deleteOrderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  deleteOrdersListView?: Maybe<TMcSettingsOrdersListView>;
-  deletePimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  deleteProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deleteProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
-  deleteProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
-  deleteQuotesListView?: Maybe<TMcSettingsQuotesListView>;
-  installCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
-  installCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
+  deleteCustomView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  deleteCustomersSearchListMyView?: TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>;
+  deleteDashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  deleteDiscountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deleteOrderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  deleteOrdersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  deletePimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  deleteProductDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  deleteProductTypeAttributesView?: TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>;
+  deleteProjectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
+  deleteQuotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
+  installCustomApplication?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
+  installCustomView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
   /** @deprecated Experimental feature - For internal usage only */
-  moveMessagesFromDeadLetterQueueToMainQueue?: Maybe<TMcSettingsBatchProcessResult>;
-  random: Scalars['String']['output'];
+  moveMessagesFromDeadLetterQueueToMainQueue?: TMcSettingsMaybe<TMcSettingsBatchProcessResult>;
+  random: TMcSettingsScalars['String']['output'];
   /** @deprecated Experimental feature - For internal usage only */
-  removeMessagesFromDeadLetterQueue?: Maybe<TMcSettingsBatchProcessResult>;
-  sendLinkToVerifyCustomApplicationsMaintainerContactEmail?: Maybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationRequest>;
-  setCustomApplicationsMaintainerContactInformation?: Maybe<TMcSettingsOrganizationExtension>;
-  setOrganizationExtensionOidcSsoConfig?: Maybe<TMcSettingsOrganizationExtension>;
-  setProjectExtensionCategoryRecommendation?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionCustomerEmailValidationSettings?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionImageRegex?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionImportSampleDataset?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionOrderStatesVisibility?: Maybe<TMcSettingsProjectExtension>;
-  setProjectExtensionRichTextEditorSettings?: Maybe<TMcSettingsProjectExtension>;
-  uninstallCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
-  uninstallCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
-  updateBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
-  updateCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  updateCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
+  removeMessagesFromDeadLetterQueue?: TMcSettingsMaybe<TMcSettingsBatchProcessResult>;
+  sendLinkToVerifyCustomApplicationsMaintainerContactEmail?: TMcSettingsMaybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationRequest>;
+  setCustomApplicationsMaintainerContactInformation?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
+  setOrganizationExtensionOidcSsoConfig?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
+  setProjectExtensionCategoryRecommendation?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  setProjectExtensionCustomerEmailValidationSettings?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  setProjectExtensionImageRegex?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  setProjectExtensionImportSampleDataset?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  setProjectExtensionOrderStatesVisibility?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  setProjectExtensionRichTextEditorSettings?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  uninstallCustomApplication?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
+  uninstallCustomView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
+  updateBusinessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>;
+  updateCartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  updateCustomApplication?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   updateCustomApplicationDeploymentPreview: TMcSettingsCustomApplicationDeploymentPreview;
-  updateCustomApplicationProjectsInstallation?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
-  updateCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
-  updateCustomViewProjectsInstallation?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
-  updateCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
-  updateDashboardView?: Maybe<TMcSettingsDashboardView>;
-  updateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  updateOrderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  updateOrdersListView?: Maybe<TMcSettingsOrdersListView>;
-  updatePimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  updateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
+  updateCustomApplicationProjectsInstallation?: TMcSettingsMaybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
+  updateCustomView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  updateCustomViewProjectsInstallation?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
+  updateCustomersSearchListMyView?: TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>;
+  updateDashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  updateDiscountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  updateOrderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  updateOrdersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  updatePimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  updateProductDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
   updateProductTypeAttributesView: TMcSettingsProductTypeAttributesView;
-  updateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
-  updateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
-  updateRuleBuilderQuickSelectionValues?: Maybe<TMcSettingsRuleBuilderQuickSelectionValues>;
-  updateVariantPricesListView?: Maybe<TMcSettingsVariantPricesListView>;
-  verifyCustomApplicationsMaintainerContactEmail?: Maybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationConfirmation>;
+  updateProjectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
+  updateQuotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
+  updateRuleBuilderQuickSelectionValues?: TMcSettingsMaybe<TMcSettingsRuleBuilderQuickSelectionValues>;
+  updateVariantPricesListView?: TMcSettingsMaybe<TMcSettingsVariantPricesListView>;
+  verifyCustomApplicationsMaintainerContactEmail?: TMcSettingsMaybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationConfirmation>;
 };
 
 export type TMcSettingsMutation_ActivateBusinessUnitsListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateCartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateCustomersSearchListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateDashboardViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateDiscountCodesCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateOrderDetailViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateOrdersListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateOrganizationExtensionOidcSsoConfigArgs =
   {
-    organizationId: Scalars['String']['input'];
+    organizationId: TMcSettingsScalars['String']['input'];
   };
 
 export type TMcSettingsMutation_ActivatePimSearchListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateProductDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateProductTypeAttributesViewArgs = {
-  id: Scalars['ID']['input'];
-  isVariant: Scalars['Boolean']['input'];
-  productTypeId: Scalars['String']['input'];
+  id: TMcSettingsScalars['ID']['input'];
+  isVariant: TMcSettingsScalars['Boolean']['input'];
+  productTypeId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_ActivateProjectSettingsStoresViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ActivateQuotesListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_ChangeCustomApplicationStatusArgs = {
-  applicationId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
   status: TMcSettingsCustomApplicationStatus;
 };
 
 export type TMcSettingsMutation_ChangeCustomViewStatusArgs = {
-  customViewId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  customViewId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
   status: TMcSettingsCustomViewStatus;
 };
 
@@ -889,18 +899,18 @@ export type TMcSettingsMutation_CreateCartDiscountsCustomViewArgs = {
 
 export type TMcSettingsMutation_CreateCustomApplicationArgs = {
   data: TMcSettingsCustomApplicationDraftDataInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_CreateCustomApplicationDeploymentPreviewArgs = {
-  applicationId: Scalars['ID']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
   data: TMcSettingsCustomApplicationDeploymentPreviewCreateInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_CreateCustomViewArgs = {
   data: TMcSettingsCustomViewDraftDataInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_CreateCustomersSearchListMyViewArgs = {
@@ -948,131 +958,135 @@ export type TMcSettingsMutation_CreateVariantPricesListViewArgs = {
 };
 
 export type TMcSettingsMutation_DeactivateBusinessUnitsListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateCartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateCustomersSearchListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateDashboardViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateDiscountCodesCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateOrderDetailViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateOrdersListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateOrganizationExtensionOidcSsoConfigArgs =
   {
-    organizationId: Scalars['String']['input'];
+    organizationId: TMcSettingsScalars['String']['input'];
   };
 
 export type TMcSettingsMutation_DeactivatePimSearchListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateProductDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateProductTypeAttributesViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateProjectSettingsStoresViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeactivateQuotesListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteBusinessUnitsListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCustomApplicationArgs = {
-  applicationId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCustomApplicationDeploymentPreviewArgs = {
-  deploymentId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  deploymentId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCustomViewArgs = {
-  customViewId: Scalars['String']['input'];
-  organizationId: Scalars['String']['input'];
+  customViewId: TMcSettingsScalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCustomersSearchListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteDashboardViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteDiscountCodesCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteOrderDetailViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteOrdersListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeletePimSearchListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteProductDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteProductTypeAttributesViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteProjectSettingsStoresViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteQuotesListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_InstallCustomApplicationArgs = {
-  applicationId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
-  projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  applicationId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
+  projectKeys?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+  >;
 };
 
 export type TMcSettingsMutation_InstallCustomViewArgs = {
-  customViewId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
-  projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  customViewId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
+  projectKeys?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+  >;
 };
 
 export type TMcSettingsMutation_MoveMessagesFromDeadLetterQueueToMainQueueArgs =
@@ -1081,7 +1095,7 @@ export type TMcSettingsMutation_MoveMessagesFromDeadLetterQueueToMainQueueArgs =
   };
 
 export type TMcSettingsMutation_RandomArgs = {
-  byteLength: Scalars['Int']['input'];
+  byteLength: TMcSettingsScalars['Int']['input'];
 };
 
 export type TMcSettingsMutation_RemoveMessagesFromDeadLetterQueueArgs = {
@@ -1090,248 +1104,258 @@ export type TMcSettingsMutation_RemoveMessagesFromDeadLetterQueueArgs = {
 
 export type TMcSettingsMutation_SendLinkToVerifyCustomApplicationsMaintainerContactEmailArgs =
   {
-    organizationId: Scalars['String']['input'];
+    organizationId: TMcSettingsScalars['String']['input'];
   };
 
 export type TMcSettingsMutation_SetCustomApplicationsMaintainerContactInformationArgs =
   {
-    data?: InputMaybe<TMcSettingsContactInformationDataInput>;
-    organizationId: Scalars['String']['input'];
+    data?: TMcSettingsInputMaybe<TMcSettingsContactInformationDataInput>;
+    organizationId: TMcSettingsScalars['String']['input'];
   };
 
 export type TMcSettingsMutation_SetOrganizationExtensionOidcSsoConfigArgs = {
   data: TMcSettingsOidcSsoConfigDataInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_SetProjectExtensionCategoryRecommendationArgs =
   {
-    data?: InputMaybe<TMcSettingsCategoryRecommendationSettingsDataInput>;
+    data?: TMcSettingsInputMaybe<TMcSettingsCategoryRecommendationSettingsDataInput>;
   };
 
 export type TMcSettingsMutation_SetProjectExtensionCustomerEmailValidationSettingsArgs =
   {
-    data?: InputMaybe<TMcSettingsCustomerEmailValidationSettingsInput>;
+    data?: TMcSettingsInputMaybe<TMcSettingsCustomerEmailValidationSettingsInput>;
   };
 
 export type TMcSettingsMutation_SetProjectExtensionImageRegexArgs = {
-  data?: InputMaybe<TMcSettingsImageRegexDataInput>;
+  data?: TMcSettingsInputMaybe<TMcSettingsImageRegexDataInput>;
 };
 
 export type TMcSettingsMutation_SetProjectExtensionImportSampleDatasetArgs = {
-  data?: InputMaybe<TMcSettingsSampleDatasets>;
+  data?: TMcSettingsInputMaybe<TMcSettingsSampleDatasets>;
 };
 
 export type TMcSettingsMutation_SetProjectExtensionOrderStatesVisibilityArgs = {
-  data?: InputMaybe<Array<InputMaybe<TMcSettingsOrderStatesVisibility>>>;
+  data?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsOrderStatesVisibility>>
+  >;
 };
 
 export type TMcSettingsMutation_SetProjectExtensionRichTextEditorSettingsArgs =
   {
-    data?: InputMaybe<TMcSettingsRichTextEditorSettingsInput>;
+    data?: TMcSettingsInputMaybe<TMcSettingsRichTextEditorSettingsInput>;
   };
 
 export type TMcSettingsMutation_UninstallCustomApplicationArgs = {
-  installedApplicationId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  installedApplicationId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_UninstallCustomViewArgs = {
-  installedCustomViewId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  installedCustomViewId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_UpdateBusinessUnitsListMyViewArgs = {
   data: TMcSettingsBusinessUnitsListMyViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateCartDiscountsCustomViewArgs = {
   data: TMcSettingsDiscountsCustomViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateCustomApplicationArgs = {
-  applicationId: Scalars['ID']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
   data: TMcSettingsCustomApplicationDraftDataInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_UpdateCustomApplicationDeploymentPreviewArgs = {
   data: TMcSettingsCustomApplicationDeploymentPreviewUpdateInput;
-  deploymentId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
+  deploymentId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_UpdateCustomApplicationProjectsInstallationArgs =
   {
-    installedApplicationId: Scalars['ID']['input'];
-    organizationId: Scalars['String']['input'];
-    projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+    installedApplicationId: TMcSettingsScalars['ID']['input'];
+    organizationId: TMcSettingsScalars['String']['input'];
+    projectKeys?: TMcSettingsInputMaybe<
+      Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+    >;
   };
 
 export type TMcSettingsMutation_UpdateCustomViewArgs = {
-  customViewId: Scalars['String']['input'];
+  customViewId: TMcSettingsScalars['String']['input'];
   data: TMcSettingsCustomViewDraftDataInput;
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsMutation_UpdateCustomViewProjectsInstallationArgs = {
-  installedCustomViewId: Scalars['ID']['input'];
-  organizationId: Scalars['String']['input'];
-  projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  installedCustomViewId: TMcSettingsScalars['ID']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
+  projectKeys?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+  >;
 };
 
 export type TMcSettingsMutation_UpdateCustomersSearchListMyViewArgs = {
   data: TMcSettingsCustomersSearchListMyViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateDashboardViewArgs = {
   data: TMcSettingsDashboardViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateDiscountCodesCustomViewArgs = {
   data: TMcSettingsDiscountsCustomViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateOrderDetailViewArgs = {
   data: TMcSettingsOrderDetailViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateOrdersListViewArgs = {
   data: TMcSettingsOrdersListViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdatePimSearchListViewArgs = {
   data: TMcSettingsPimSearchListViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateProductDiscountsCustomViewArgs = {
   data: TMcSettingsDiscountsCustomViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateProductTypeAttributesViewArgs = {
   data: TMcSettingsProductTypeAttributesViewUpdateInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateProjectSettingsStoresViewArgs = {
   data: TMcSettingsProjectSettingsStoresViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateQuotesListViewArgs = {
   data: TMcSettingsQuotesListViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_UpdateRuleBuilderQuickSelectionValuesArgs = {
   data: TMcSettingsRuleBuilderQuickSelectionInput;
-  id?: InputMaybe<Scalars['ID']['input']>;
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
 };
 
 export type TMcSettingsMutation_UpdateVariantPricesListViewArgs = {
   data: TMcSettingsVariantPricesListViewInput;
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_VerifyCustomApplicationsMaintainerContactEmailArgs =
   {
-    token: Scalars['String']['input'];
+    token: TMcSettingsScalars['String']['input'];
   };
 
 export type TMcSettingsMyCustomApplication = {
   __typename?: 'MyCustomApplication';
-  createdAt: Scalars['DateTime']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  entryPointUriPath: Scalars['String']['output'];
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  entryPointUriPath: TMcSettingsScalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   mainMenuLink: TMcSettingsCustomApplicationMenuLink;
-  name: Scalars['String']['output'];
-  organizationId: Scalars['String']['output'];
-  organizationName: Scalars['String']['output'];
+  name: TMcSettingsScalars['String']['output'];
+  organizationId: TMcSettingsScalars['String']['output'];
+  organizationName: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomApplicationPermission>;
   status: TMcSettingsCustomApplicationStatus;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsMyCustomApplicationQueryInput = {
-  where?: InputMaybe<TMcSettingsMyCustomApplicationQueryWhereInput>;
+  where?: TMcSettingsInputMaybe<TMcSettingsMyCustomApplicationQueryWhereInput>;
 };
 
 export type TMcSettingsMyCustomApplicationQueryWhereInput = {
-  status?: InputMaybe<TMcSettingsCustomApplicationStatus>;
+  status?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationStatus>;
 };
 
 export type TMcSettingsMyCustomView = {
   __typename?: 'MyCustomView';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  locators: Array<Scalars['String']['output']>;
-  organizationId: Scalars['String']['output'];
-  organizationName: Scalars['String']['output'];
+  locators: Array<TMcSettingsScalars['String']['output']>;
+  organizationId: TMcSettingsScalars['String']['output'];
+  organizationName: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomViewPermission>;
   status: TMcSettingsCustomViewStatus;
   type: TMcSettingsCustomViewType;
-  typeSettings?: Maybe<TMcSettingsCustomViewTypeSettings>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  typeSettings?: TMcSettingsMaybe<TMcSettingsCustomViewTypeSettings>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsMyCustomViewsQueryInput = {
-  where?: InputMaybe<TMcSettingsMyCustomViewsQueryWhereInput>;
+  where?: TMcSettingsInputMaybe<TMcSettingsMyCustomViewsQueryWhereInput>;
 };
 
 export type TMcSettingsMyCustomViewsQueryWhereInput = {
-  status?: InputMaybe<TMcSettingsCustomViewStatus>;
+  status?: TMcSettingsInputMaybe<TMcSettingsCustomViewStatus>;
 };
 
 export type TMcSettingsNavbarMenu = {
   __typename?: 'NavbarMenu';
-  createdAt: Scalars['DateTime']['output'];
-  featureToggle?: Maybe<Scalars['String']['output']>;
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
-  key: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  featureToggle?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  key: TMcSettingsScalars['String']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
   permissions: Array<TMcSettingsOAuthScope>;
   submenu: Array<TMcSettingsNavbarSubmenu>;
-  updatedAt: Scalars['DateTime']['output'];
-  uriPath: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  uriPath: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsNavbarSubmenu = {
   __typename?: 'NavbarSubmenu';
-  createdAt: Scalars['DateTime']['output'];
-  featureToggle?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  key: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  featureToggle?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  key: TMcSettingsScalars['String']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
   permissions: Array<TMcSettingsOAuthScope>;
-  updatedAt: Scalars['DateTime']['output'];
-  uriPath: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  uriPath: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsNestedTable = {
   __typename?: 'NestedTable';
-  visibleColumns?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
+  visibleColumns?: TMcSettingsMaybe<
+    Array<TMcSettingsMaybe<TMcSettingsScalars['String']['output']>>
+  >;
 };
 
 export type TMcSettingsNestedTableInput = {
-  visibleColumns?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  visibleColumns?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+  >;
 };
 
 export enum TMcSettingsOAuthScope {
@@ -1366,46 +1390,50 @@ export enum TMcSettingsOAuthScope {
 
 export type TMcSettingsOidcSsoConfig = {
   __typename?: 'OidcSsoConfig';
-  authorityUrl: Scalars['String']['output'];
-  clientId: Scalars['String']['output'];
-  clientSecret?: Maybe<Scalars['String']['output']>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  logoutUrl?: Maybe<Scalars['String']['output']>;
-  sessionTokenExpTimeSeconds?: Maybe<Scalars['Int']['output']>;
-  teamIdForNewUsers: Scalars['String']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  authorityUrl: TMcSettingsScalars['String']['output'];
+  clientId: TMcSettingsScalars['String']['output'];
+  clientSecret?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  logoutUrl?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  sessionTokenExpTimeSeconds?: TMcSettingsMaybe<
+    TMcSettingsScalars['Int']['output']
+  >;
+  teamIdForNewUsers: TMcSettingsScalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsOidcSsoConfigDataInput = {
-  authorityUrl: Scalars['String']['input'];
-  clientId: Scalars['String']['input'];
-  clientSecret?: InputMaybe<Scalars['String']['input']>;
-  logoutUrl?: InputMaybe<Scalars['String']['input']>;
-  sessionTokenExpTimeSeconds?: InputMaybe<Scalars['Int']['input']>;
-  teamIdForNewUsers: Scalars['String']['input'];
+  authorityUrl: TMcSettingsScalars['String']['input'];
+  clientId: TMcSettingsScalars['String']['input'];
+  clientSecret?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  logoutUrl?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  sessionTokenExpTimeSeconds?: TMcSettingsInputMaybe<
+    TMcSettingsScalars['Int']['input']
+  >;
+  teamIdForNewUsers: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsOrderDetailView = {
   __typename?: 'OrderDetailView';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsOrderDetailViewInput = {
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  table?: InputMaybe<TMcSettingsOrderDetailViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsOrderDetailViewTableInput>;
 };
 
 export type TMcSettingsOrderDetailViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export enum TMcSettingsOrderStatesVisibility {
@@ -1416,227 +1444,229 @@ export enum TMcSettingsOrderStatesVisibility {
 
 export type TMcSettingsOrderStatusConfiguration = {
   __typename?: 'OrderStatusConfiguration';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: Maybe<Scalars['DateTime']['output']>;
-  dateTo?: Maybe<Scalars['DateTime']['output']>;
-  id: Scalars['ID']['output'];
-  productId?: Maybe<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  dateFrom?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  dateTo?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  productId?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsOrderStatusConfigurationInput = {
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: InputMaybe<Scalars['DateTime']['input']>;
-  dateTo?: InputMaybe<Scalars['DateTime']['input']>;
-  productId?: InputMaybe<Scalars['String']['input']>;
+  dateFrom?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  dateTo?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  productId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsOrdersListView = {
   __typename?: 'OrdersListView';
-  createdAt: Scalars['DateTime']['output'];
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  search?: Maybe<Scalars['String']['output']>;
-  searchParams?: Maybe<Scalars['Json']['output']>;
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  filters?: TMcSettingsMaybe<Array<TMcSettingsFilterValues>>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  search?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  searchParams?: TMcSettingsMaybe<TMcSettingsScalars['Json']['output']>;
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsOrdersListViewInput = {
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  searchParams?: InputMaybe<Scalars['Json']['input']>;
+  search?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  searchParams?: TMcSettingsInputMaybe<TMcSettingsScalars['Json']['input']>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsOrdersListViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsOrdersListViewTableInput>;
 };
 
 export type TMcSettingsOrdersListViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsOrganizationExtension = {
   __typename?: 'OrganizationExtension';
-  applicationsMaintainerContactInformation?: Maybe<TMcSettingsContactInformation>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
+  applicationsMaintainerContactInformation?: TMcSettingsMaybe<TMcSettingsContactInformation>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   installedApplications: Array<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   installedCustomViews: Array<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
-  oidcSsoConfig?: Maybe<TMcSettingsOidcSsoConfig>;
-  organizationId: Scalars['String']['output'];
+  oidcSsoConfig?: TMcSettingsMaybe<TMcSettingsOidcSsoConfig>;
+  organizationId: TMcSettingsScalars['String']['output'];
   registeredApplications: Array<TMcSettingsRestrictedCustomApplicationForOrganization>;
   registeredCustomViews: Array<TMcSettingsRestrictedCustomViewForOrganization>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsOrganizationExtensionForCustomApplication = {
   __typename?: 'OrganizationExtensionForCustomApplication';
   application: TMcSettingsRestrictedCustomApplicationForOrganization;
-  id: Scalars['ID']['output'];
-  organizationId: Scalars['String']['output'];
-  organizationName?: Maybe<Scalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  organizationId: TMcSettingsScalars['String']['output'];
+  organizationName?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
 };
 
 export type TMcSettingsOrganizationExtensionForCustomView = {
   __typename?: 'OrganizationExtensionForCustomView';
-  customView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
-  id: Scalars['ID']['output'];
-  organizationId: Scalars['String']['output'];
-  organizationName?: Maybe<Scalars['String']['output']>;
+  customView?: TMcSettingsMaybe<TMcSettingsRestrictedCustomViewForOrganization>;
+  id: TMcSettingsScalars['ID']['output'];
+  organizationId: TMcSettingsScalars['String']['output'];
+  organizationName?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
 };
 
 export type TMcSettingsPimSearchListView = {
   __typename?: 'PimSearchListView';
-  createdAt: Scalars['DateTime']['output'];
-  expandedRows: Array<Scalars['String']['output']>;
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  search?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  expandedRows: Array<TMcSettingsScalars['String']['output']>;
+  filters?: TMcSettingsMaybe<Array<TMcSettingsFilterValues>>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  search?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsPimSearchListViewInput = {
-  expandedRows?: InputMaybe<Array<Scalars['String']['input']>>;
+  expandedRows?: TMcSettingsInputMaybe<
+    Array<TMcSettingsScalars['String']['input']>
+  >;
   filters: Array<TMcSettingsFilterValuesCreateInput>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  search?: InputMaybe<Scalars['String']['input']>;
+  search?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsPimSearchListViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsPimSearchListViewTableInput>;
 };
 
 export type TMcSettingsPimSearchListViewTableInput = {
-  nestedTable?: InputMaybe<TMcSettingsNestedTableInput>;
-  visibleColumns: Array<Scalars['String']['input']>;
+  nestedTable?: TMcSettingsInputMaybe<TMcSettingsNestedTableInput>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsProductTypeAttributesView = {
   __typename?: 'ProductTypeAttributesView';
-  createdAt: Scalars['DateTime']['output'];
-  existence?: Maybe<TMcSettingsExistence>;
-  id: Scalars['ID']['output'];
-  isActive: Scalars['Boolean']['output'];
-  isVariant?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  pinnedAttributes: Array<Scalars['String']['output']>;
-  productTypeId: Scalars['String']['output'];
-  projectKey: Scalars['String']['output'];
-  searchTerm?: Maybe<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  existence?: TMcSettingsMaybe<TMcSettingsExistence>;
+  id: TMcSettingsScalars['ID']['output'];
+  isActive: TMcSettingsScalars['Boolean']['output'];
+  isVariant?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  pinnedAttributes: Array<TMcSettingsScalars['String']['output']>;
+  productTypeId: TMcSettingsScalars['String']['output'];
+  projectKey: TMcSettingsScalars['String']['output'];
+  searchTerm?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsProductTypeAttributesViewInput = {
-  existence?: InputMaybe<TMcSettingsExistence>;
-  isVariant?: InputMaybe<Scalars['Boolean']['input']>;
+  existence?: TMcSettingsInputMaybe<TMcSettingsExistence>;
+  isVariant?: TMcSettingsInputMaybe<TMcSettingsScalars['Boolean']['input']>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  pinnedAttributes: Array<Scalars['String']['input']>;
-  productTypeId: Scalars['String']['input'];
-  searchTerm?: InputMaybe<Scalars['String']['input']>;
+  pinnedAttributes: Array<TMcSettingsScalars['String']['input']>;
+  productTypeId: TMcSettingsScalars['String']['input'];
+  searchTerm?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsProductTypeAttributesViewUpdateInput = {
-  existence?: InputMaybe<TMcSettingsExistence>;
-  isVariant?: InputMaybe<Scalars['Boolean']['input']>;
+  existence?: TMcSettingsInputMaybe<TMcSettingsExistence>;
+  isVariant?: TMcSettingsInputMaybe<TMcSettingsScalars['Boolean']['input']>;
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  pinnedAttributes: Array<Scalars['String']['input']>;
-  searchTerm?: InputMaybe<Scalars['String']['input']>;
+  pinnedAttributes: Array<TMcSettingsScalars['String']['input']>;
+  searchTerm?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsProjectExtension = {
   __typename?: 'ProjectExtension';
   /** @deprecated Feature not available anymore */
   applications: Array<TMcSettingsApplicationExtension>;
-  categoryRecommendationSettings?: Maybe<TMcSettingsCategoryRecommendationSettings>;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  imageRegex?: Maybe<TMcSettingsImageRegex>;
+  categoryRecommendationSettings?: TMcSettingsMaybe<TMcSettingsCategoryRecommendationSettings>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  imageRegex?: TMcSettingsMaybe<TMcSettingsImageRegex>;
   installedApplications: Array<TMcSettingsRestrictedCustomApplicationInstallationForProject>;
   installedCustomViews: Array<TMcSettingsRestrictedCustomViewInstallationForProject>;
-  isCustomerEmailValidationDisabled: Scalars['Boolean']['output'];
-  isRichTextEditorEnabled: Scalars['Boolean']['output'];
+  isCustomerEmailValidationDisabled: TMcSettingsScalars['Boolean']['output'];
+  isRichTextEditorEnabled: TMcSettingsScalars['Boolean']['output'];
   orderStatesVisibility: Array<TMcSettingsOrderStatesVisibility>;
-  projectKey: Scalars['String']['output'];
-  sampleDataImport?: Maybe<TMcSettingsSampleDataImportMetadata>;
-  updatedAt: Scalars['DateTime']['output'];
+  projectKey: TMcSettingsScalars['String']['output'];
+  sampleDataImport?: TMcSettingsMaybe<TMcSettingsSampleDataImportMetadata>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsProjectExtension_ApplicationsArgs = {
-  where?: InputMaybe<TMcSettingsRestrictedApplicationExtensionWhereInput>;
+  where?: TMcSettingsInputMaybe<TMcSettingsRestrictedApplicationExtensionWhereInput>;
 };
 
 export type TMcSettingsProjectExtension_InstalledApplicationsArgs = {
-  where?: InputMaybe<TMcSettingsRestrictedCustomApplicationInstallationForProjectWhereInput>;
+  where?: TMcSettingsInputMaybe<TMcSettingsRestrictedCustomApplicationInstallationForProjectWhereInput>;
 };
 
 export type TMcSettingsProjectExtension_InstalledCustomViewsArgs = {
-  where?: InputMaybe<TMcSettingsRestrictedCustomViewInstallationForProjectWhereInput>;
+  where?: TMcSettingsInputMaybe<TMcSettingsRestrictedCustomViewInstallationForProjectWhereInput>;
 };
 
 export type TMcSettingsProjectSettingsStoresView = {
   __typename?: 'ProjectSettingsStoresView';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  table?: TMcSettingsMaybe<TMcSettingsTable>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsProjectSettingsStoresViewInput = {
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
   sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsProjectSettingsStoresViewTableInput>;
+  table?: TMcSettingsInputMaybe<TMcSettingsProjectSettingsStoresViewTableInput>;
 };
 
 export type TMcSettingsProjectSettingsStoresViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsPublicCustomApplicationDevelopedByCommercetools = {
   __typename?: 'PublicCustomApplicationDevelopedByCommercetools';
-  createdAt: Scalars['DateTime']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  entryPointUriPath: Scalars['String']['output'];
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  entryPointUriPath: TMcSettingsScalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   mainMenuLink: TMcSettingsCustomApplicationMenuLink;
-  name: Scalars['String']['output'];
+  name: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomApplicationPermission>;
   status: TMcSettingsCustomApplicationStatus;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsQuery = {
   __typename?: 'Query';
-  activeBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
-  activeCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activeCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
-  activeDashboardView?: Maybe<TMcSettingsDashboardView>;
-  activeDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activeOrderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  activeOrdersListView?: Maybe<TMcSettingsOrdersListView>;
-  activePimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  activeProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activeProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
-  activeProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
-  activeQuotesListView?: Maybe<TMcSettingsQuotesListView>;
+  activeBusinessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>;
+  activeCartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activeCustomersSearchListMyView?: TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>;
+  activeDashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  activeDiscountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activeOrderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  activeOrdersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  activePimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  activeProductDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  activeProductTypeAttributesView?: TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>;
+  activeProjectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
+  activeQuotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
   /** @deprecated Experimental feature - For internal usage only */
   allAppliedCustomApplicationPermissions: Array<TMcSettingsCustomApplicationInstallationPermission>;
   /** @deprecated Experimental feature - For internal usage only */
@@ -1652,179 +1682,191 @@ export type TMcSettingsQuery = {
   allOrganizationExtensions: Array<TMcSettingsOrganizationExtension>;
   allProjectExtensions: Array<TMcSettingsProjectExtension>;
   allPublicCustomApplicationsDevelopedByCommercetools: Array<TMcSettingsPublicCustomApplicationDevelopedByCommercetools>;
-  businessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
-  businessUnitsListMyViews: Array<Maybe<TMcSettingsBusinessUnitsListMyView>>;
-  cartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  cartDiscountsCustomViews: Array<Maybe<TMcSettingsDiscountsCustomView>>;
-  /** @deprecated Experimental feature - For internal usage only */
-  customApplication?: Maybe<TMcSettingsCustomApplication>;
-  /** @deprecated Experimental feature - For internal usage only */
-  customView?: Maybe<TMcSettingsCustomView>;
-  customersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
-  customersSearchListMyViews: Array<
-    Maybe<TMcSettingsCustomersSearchListMyView>
+  businessUnitsListMyView?: TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>;
+  businessUnitsListMyViews: Array<
+    TMcSettingsMaybe<TMcSettingsBusinessUnitsListMyView>
   >;
-  dashboardView?: Maybe<TMcSettingsDashboardView>;
-  dashboardViews: Array<Maybe<TMcSettingsDashboardView>>;
-  discountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  discountCodesCustomViews: Array<Maybe<TMcSettingsDiscountsCustomView>>;
+  cartDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  cartDiscountsCustomViews: Array<
+    TMcSettingsMaybe<TMcSettingsDiscountsCustomView>
+  >;
   /** @deprecated Experimental feature - For internal usage only */
-  globalOrganizationExtension?: Maybe<TMcSettingsOrganizationExtension>;
+  customApplication?: TMcSettingsMaybe<TMcSettingsCustomApplication>;
+  /** @deprecated Experimental feature - For internal usage only */
+  customView?: TMcSettingsMaybe<TMcSettingsCustomView>;
+  customersSearchListMyView?: TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>;
+  customersSearchListMyViews: Array<
+    TMcSettingsMaybe<TMcSettingsCustomersSearchListMyView>
+  >;
+  dashboardView?: TMcSettingsMaybe<TMcSettingsDashboardView>;
+  dashboardViews: Array<TMcSettingsMaybe<TMcSettingsDashboardView>>;
+  discountCodesCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  discountCodesCustomViews: Array<
+    TMcSettingsMaybe<TMcSettingsDiscountsCustomView>
+  >;
+  /** @deprecated Experimental feature - For internal usage only */
+  globalOrganizationExtension?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
   myCustomApplications: Array<TMcSettingsMyCustomApplication>;
   myCustomViews: Array<TMcSettingsMyCustomView>;
-  orderDetailView?: Maybe<TMcSettingsOrderDetailView>;
-  orderDetailViews: Array<Maybe<TMcSettingsOrderDetailView>>;
-  ordersListView?: Maybe<TMcSettingsOrdersListView>;
-  ordersListViews: Array<Maybe<TMcSettingsOrdersListView>>;
-  organizationExtension?: Maybe<TMcSettingsOrganizationExtension>;
-  organizationExtensionForCustomApplication?: Maybe<TMcSettingsOrganizationExtensionForCustomApplication>;
-  organizationExtensionForCustomView?: Maybe<TMcSettingsOrganizationExtensionForCustomView>;
-  pimSearchListView?: Maybe<TMcSettingsPimSearchListView>;
-  pimSearchListViews: Array<Maybe<TMcSettingsPimSearchListView>>;
-  productDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  productDiscountsCustomViews: Array<Maybe<TMcSettingsDiscountsCustomView>>;
-  productTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
-  productTypeAttributesViews?: Maybe<
-    Array<Maybe<TMcSettingsProductTypeAttributesView>>
+  orderDetailView?: TMcSettingsMaybe<TMcSettingsOrderDetailView>;
+  orderDetailViews: Array<TMcSettingsMaybe<TMcSettingsOrderDetailView>>;
+  ordersListView?: TMcSettingsMaybe<TMcSettingsOrdersListView>;
+  ordersListViews: Array<TMcSettingsMaybe<TMcSettingsOrdersListView>>;
+  organizationExtension?: TMcSettingsMaybe<TMcSettingsOrganizationExtension>;
+  organizationExtensionForCustomApplication?: TMcSettingsMaybe<TMcSettingsOrganizationExtensionForCustomApplication>;
+  organizationExtensionForCustomView?: TMcSettingsMaybe<TMcSettingsOrganizationExtensionForCustomView>;
+  pimSearchListView?: TMcSettingsMaybe<TMcSettingsPimSearchListView>;
+  pimSearchListViews: Array<TMcSettingsMaybe<TMcSettingsPimSearchListView>>;
+  productDiscountsCustomView?: TMcSettingsMaybe<TMcSettingsDiscountsCustomView>;
+  productDiscountsCustomViews: Array<
+    TMcSettingsMaybe<TMcSettingsDiscountsCustomView>
   >;
-  projectExtension?: Maybe<TMcSettingsProjectExtension>;
-  projectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  productTypeAttributesView?: TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>;
+  productTypeAttributesViews?: TMcSettingsMaybe<
+    Array<TMcSettingsMaybe<TMcSettingsProductTypeAttributesView>>
+  >;
+  projectExtension?: TMcSettingsMaybe<TMcSettingsProjectExtension>;
+  projectSettingsStoresView?: TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>;
   projectSettingsStoresViews: Array<
-    Maybe<TMcSettingsProjectSettingsStoresView>
+    TMcSettingsMaybe<TMcSettingsProjectSettingsStoresView>
   >;
-  quotesListView?: Maybe<TMcSettingsQuotesListView>;
-  quotesListViews: Array<Maybe<TMcSettingsQuotesListView>>;
+  quotesListView?: TMcSettingsMaybe<TMcSettingsQuotesListView>;
+  quotesListViews: Array<TMcSettingsMaybe<TMcSettingsQuotesListView>>;
   /** @deprecated Experimental feature - For internal usage only */
   readMessagesFromDeadLetterQueue: Array<TMcSettingsMessage>;
-  release?: Maybe<Scalars['String']['output']>;
-  ruleBuilderQuickSelectionValues?: Maybe<
-    Array<Maybe<TMcSettingsRuleBuilderQuickSelectionValues>>
+  release?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  ruleBuilderQuickSelectionValues?: TMcSettingsMaybe<
+    Array<TMcSettingsMaybe<TMcSettingsRuleBuilderQuickSelectionValues>>
   >;
-  variantPricesListViews: Array<Maybe<TMcSettingsVariantPricesListView>>;
+  variantPricesListViews: Array<
+    TMcSettingsMaybe<TMcSettingsVariantPricesListView>
+  >;
 };
 
 export type TMcSettingsQuery_ActiveProductTypeAttributesViewArgs = {
-  isVariant: Scalars['Boolean']['input'];
-  productTypeId: Scalars['String']['input'];
+  isVariant: TMcSettingsScalars['Boolean']['input'];
+  productTypeId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_AllAppliedCustomApplicationPermissionsArgs = {
-  applicationId: Scalars['ID']['input'];
-  entryPointUriPath: Scalars['String']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
+  entryPointUriPath: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_AllAppliedCustomViewPermissionsArgs = {
-  customViewId: Scalars['ID']['input'];
+  customViewId: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_AllCustomApplicationsArgs = {
-  params?: InputMaybe<TMcSettingsCustomApplicationQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationQueryInput>;
 };
 
 export type TMcSettingsQuery_AllCustomViewsArgs = {
-  params?: InputMaybe<TMcSettingsCustomViewQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsCustomViewQueryInput>;
 };
 
 export type TMcSettingsQuery_AllCustomViewsInstallationsByLocatorArgs = {
-  locator: Scalars['String']['input'];
+  locator: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_AllFeaturesArgs = {
-  params?: InputMaybe<TMcSettingsFeatureQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsFeatureQueryInput>;
 };
 
 export type TMcSettingsQuery_AllOrganizationExtensionsArgs = {
-  organizationIds?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  organizationIds?: TMcSettingsInputMaybe<
+    Array<TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>>
+  >;
 };
 
 export type TMcSettingsQuery_AllPublicCustomApplicationsDevelopedByCommercetoolsArgs =
   {
-    params?: InputMaybe<TMcSettingsAllPublicCustomApplicationsDevelopedByCommercetoolsQueryInput>;
+    params?: TMcSettingsInputMaybe<TMcSettingsAllPublicCustomApplicationsDevelopedByCommercetoolsQueryInput>;
   };
 
 export type TMcSettingsQuery_BusinessUnitsListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_CartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_CustomApplicationArgs = {
-  applicationId: Scalars['ID']['input'];
+  applicationId: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_CustomViewArgs = {
-  customViewId: Scalars['ID']['input'];
+  customViewId: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_CustomersSearchListMyViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_DashboardViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_DiscountCodesCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_GlobalOrganizationExtensionArgs = {
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_MyCustomApplicationsArgs = {
-  params?: InputMaybe<TMcSettingsMyCustomApplicationQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsMyCustomApplicationQueryInput>;
 };
 
 export type TMcSettingsQuery_MyCustomViewsArgs = {
-  params?: InputMaybe<TMcSettingsMyCustomViewsQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsMyCustomViewsQueryInput>;
 };
 
 export type TMcSettingsQuery_OrderDetailViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_OrdersListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_OrganizationExtensionArgs = {
-  organizationId: Scalars['String']['input'];
+  organizationId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_OrganizationExtensionForCustomApplicationArgs = {
-  entryPointUriPath: Scalars['String']['input'];
+  entryPointUriPath: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_OrganizationExtensionForCustomViewArgs = {
-  customViewId: Scalars['String']['input'];
+  customViewId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_PimSearchListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_ProductDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_ProductTypeAttributesViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_ProductTypeAttributesViewsArgs = {
-  isVariant: Scalars['Boolean']['input'];
-  productTypeId: Scalars['String']['input'];
+  isVariant: TMcSettingsScalars['Boolean']['input'];
+  productTypeId: TMcSettingsScalars['String']['input'];
 };
 
 export type TMcSettingsQuery_ProjectSettingsStoresViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_QuotesListViewArgs = {
-  id: Scalars['ID']['input'];
+  id: TMcSettingsScalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_RuleBuilderQuickSelectionValuesArgs = {
@@ -1833,20 +1875,20 @@ export type TMcSettingsQuery_RuleBuilderQuickSelectionValuesArgs = {
 
 export type TMcSettingsQuotesListView = {
   __typename?: 'QuotesListView';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  search?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<TMcSettingsSort>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  isActive?: TMcSettingsMaybe<TMcSettingsScalars['Boolean']['output']>;
+  nameAllLocales?: TMcSettingsMaybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: TMcSettingsScalars['String']['output'];
+  search?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  sort?: TMcSettingsMaybe<TMcSettingsSort>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsQuotesListViewInput = {
   nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  search?: InputMaybe<Scalars['String']['input']>;
+  search?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
   sort: TMcSettingsSortCreateInput;
 };
 
@@ -1859,10 +1901,10 @@ export enum TMcSettingsResourceType {
 
 export type TMcSettingsResourcesNumbersConfiguration = {
   __typename?: 'ResourcesNumbersConfiguration';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   resourceOptions: Array<TMcSettingsResourceType>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsResourcesNumbersConfigurationInput = {
@@ -1870,54 +1912,54 @@ export type TMcSettingsResourcesNumbersConfigurationInput = {
 };
 
 export type TMcSettingsRestrictedApplicationExtensionWhereInput = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  isActive?: InputMaybe<Scalars['Boolean']['input']>;
-  url?: InputMaybe<Scalars['String']['input']>;
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  isActive?: TMcSettingsInputMaybe<TMcSettingsScalars['Boolean']['input']>;
+  url?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsRestrictedCustomApplicationForOrganization = {
   __typename?: 'RestrictedCustomApplicationForOrganization';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   deployments: Array<TMcSettingsCustomApplicationDeploymentPreview>;
-  description?: Maybe<Scalars['String']['output']>;
-  entryPointUriPath: Scalars['String']['output'];
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  entryPointUriPath: TMcSettingsScalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   mainMenuLink: TMcSettingsCustomApplicationMenuLink;
-  name: Scalars['String']['output'];
+  name: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomApplicationPermission>;
   status: TMcSettingsCustomApplicationStatus;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsRestrictedCustomApplicationForOrganization_DeploymentsArgs =
   {
-    params?: InputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
+    params?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
   };
 
 export type TMcSettingsRestrictedCustomApplicationForProject = {
   __typename?: 'RestrictedCustomApplicationForProject';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   deployments: Array<TMcSettingsCustomApplicationDeploymentPreview>;
-  description?: Maybe<Scalars['String']['output']>;
-  entryPointUriPath: Scalars['String']['output'];
-  icon: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  entryPointUriPath: TMcSettingsScalars['String']['output'];
+  icon: TMcSettingsScalars['String']['output'];
+  id: TMcSettingsScalars['ID']['output'];
   mainMenuLink: TMcSettingsCustomApplicationMenuLink;
   /** @deprecated This field has been renamed to mainMenuLink field. The nested submenuLinks is also now a top level field. */
-  menuLinks?: Maybe<TMcSettingsCustomApplicationMenuLink>;
-  name: Scalars['String']['output'];
+  menuLinks?: TMcSettingsMaybe<TMcSettingsCustomApplicationMenuLink>;
+  name: TMcSettingsScalars['String']['output'];
   permissions: Array<TMcSettingsCustomApplicationPermission>;
-  status?: Maybe<TMcSettingsCustomApplicationStatus>;
+  status?: TMcSettingsMaybe<TMcSettingsCustomApplicationStatus>;
   submenuLinks: Array<TMcSettingsCustomApplicationSubmenuLink>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsRestrictedCustomApplicationForProject_DeploymentsArgs = {
-  params?: InputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
+  params?: TMcSettingsInputMaybe<TMcSettingsCustomApplicationDeploymentPreviewsQueryInput>;
 };
 
 export type TMcSettingsRestrictedCustomApplicationInstallationForOrganization =
@@ -1925,113 +1967,115 @@ export type TMcSettingsRestrictedCustomApplicationInstallationForOrganization =
     __typename?: 'RestrictedCustomApplicationInstallationForOrganization';
     acceptedPermissions: Array<TMcSettingsCustomApplicationInstallationPermission>;
     application: TMcSettingsRestrictedCustomApplicationForProject;
-    createdAt: Scalars['DateTime']['output'];
-    id: Scalars['ID']['output'];
-    installInAllProjects: Scalars['Boolean']['output'];
+    createdAt: TMcSettingsScalars['DateTime']['output'];
+    id: TMcSettingsScalars['ID']['output'];
+    installInAllProjects: TMcSettingsScalars['Boolean']['output'];
     projects: Array<TMcSettingsProjectExtension>;
-    updatedAt: Scalars['DateTime']['output'];
+    updatedAt: TMcSettingsScalars['DateTime']['output'];
   };
 
 export type TMcSettingsRestrictedCustomApplicationInstallationForProject = {
   __typename?: 'RestrictedCustomApplicationInstallationForProject';
   acceptedPermissions: Array<TMcSettingsCustomApplicationInstallationPermission>;
   application: TMcSettingsRestrictedCustomApplicationForProject;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  installInAllProjects: Scalars['Boolean']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  installInAllProjects: TMcSettingsScalars['Boolean']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsRestrictedCustomApplicationInstallationForProjectWhereInput =
   {
-    entryPointUriPath?: InputMaybe<Scalars['String']['input']>;
+    entryPointUriPath?: TMcSettingsInputMaybe<
+      TMcSettingsScalars['String']['input']
+    >;
   };
 
 export type TMcSettingsRestrictedCustomViewForOrganization = {
   __typename?: 'RestrictedCustomViewForOrganization';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  locators: Array<Scalars['String']['output']>;
+  locators: Array<TMcSettingsScalars['String']['output']>;
   permissions: Array<TMcSettingsCustomViewPermission>;
   status: TMcSettingsCustomViewStatus;
   type: TMcSettingsCustomViewType;
-  typeSettings?: Maybe<TMcSettingsCustomViewTypeSettings>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  typeSettings?: TMcSettingsMaybe<TMcSettingsCustomViewTypeSettings>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsRestrictedCustomViewForProject = {
   __typename?: 'RestrictedCustomViewForProject';
-  createdAt: Scalars['DateTime']['output'];
-  defaultLabel: Scalars['String']['output'];
-  description?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  defaultLabel: TMcSettingsScalars['String']['output'];
+  description?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
   labelAllLocales: Array<TMcSettingsLocalizedField>;
-  locators: Array<Scalars['String']['output']>;
+  locators: Array<TMcSettingsScalars['String']['output']>;
   permissions: Array<TMcSettingsCustomViewPermission>;
   status: TMcSettingsCustomViewStatus;
   type: TMcSettingsCustomViewType;
-  typeSettings?: Maybe<TMcSettingsCustomViewTypeSettings>;
-  updatedAt: Scalars['DateTime']['output'];
-  url: Scalars['String']['output'];
+  typeSettings?: TMcSettingsMaybe<TMcSettingsCustomViewTypeSettings>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  url: TMcSettingsScalars['String']['output'];
 };
 
 export type TMcSettingsRestrictedCustomViewInstallationForOrganization = {
   __typename?: 'RestrictedCustomViewInstallationForOrganization';
   acceptedPermissions: Array<TMcSettingsCustomViewInstallationPermission>;
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   customView: TMcSettingsRestrictedCustomViewForProject;
-  id: Scalars['ID']['output'];
-  installInAllProjects: Scalars['Boolean']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  installInAllProjects: TMcSettingsScalars['Boolean']['output'];
   projects: Array<TMcSettingsProjectExtension>;
-  updatedAt: Scalars['DateTime']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsRestrictedCustomViewInstallationForProject = {
   __typename?: 'RestrictedCustomViewInstallationForProject';
   acceptedPermissions: Array<TMcSettingsCustomViewInstallationPermission>;
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   customView: TMcSettingsRestrictedCustomViewForProject;
-  id: Scalars['ID']['output'];
-  installInAllProjects: Scalars['Boolean']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  installInAllProjects: TMcSettingsScalars['Boolean']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsRestrictedCustomViewInstallationForProjectWhereInput = {
-  customViewId?: InputMaybe<Scalars['String']['input']>;
+  customViewId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsRichTextEditorSettingsInput = {
-  isRichTextEditorEnabled: Scalars['Boolean']['input'];
+  isRichTextEditorEnabled: TMcSettingsScalars['Boolean']['input'];
 };
 
 export type TMcSettingsRuleBuilderQuickSelectCreatefunctionsInput = {
-  set?: InputMaybe<Array<Scalars['String']['input']>>;
+  set?: TMcSettingsInputMaybe<Array<TMcSettingsScalars['String']['input']>>;
 };
 
 export type TMcSettingsRuleBuilderQuickSelectCreatepredicatesInput = {
-  set?: InputMaybe<Array<Scalars['String']['input']>>;
+  set?: TMcSettingsInputMaybe<Array<TMcSettingsScalars['String']['input']>>;
 };
 
 export type TMcSettingsRuleBuilderQuickSelectionInput = {
-  functions?: InputMaybe<TMcSettingsRuleBuilderQuickSelectCreatepredicatesInput>;
-  predicates?: InputMaybe<TMcSettingsRuleBuilderQuickSelectCreatefunctionsInput>;
+  functions?: TMcSettingsInputMaybe<TMcSettingsRuleBuilderQuickSelectCreatepredicatesInput>;
+  predicates?: TMcSettingsInputMaybe<TMcSettingsRuleBuilderQuickSelectCreatefunctionsInput>;
   ruleBuilderType: TMcSettingsRuleBuilderType;
 };
 
 export type TMcSettingsRuleBuilderQuickSelectionValues = {
   __typename?: 'RuleBuilderQuickSelectionValues';
-  createdAt: Scalars['DateTime']['output'];
-  functions: Array<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
-  predicates: Array<Scalars['String']['output']>;
-  projectKey: Scalars['String']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  functions: Array<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  predicates: Array<TMcSettingsScalars['String']['output']>;
+  projectKey: TMcSettingsScalars['String']['output'];
   ruleBuilderType: TMcSettingsRuleBuilderType;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
 };
 
 export enum TMcSettingsRuleBuilderType {
@@ -2043,26 +2087,26 @@ export enum TMcSettingsRuleBuilderType {
 
 export type TMcSettingsSalesPerformanceConfiguration = {
   __typename?: 'SalesPerformanceConfiguration';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: Maybe<Scalars['DateTime']['output']>;
-  dateTo?: Maybe<Scalars['DateTime']['output']>;
-  id: Scalars['ID']['output'];
-  showPreviousTimeframe: Scalars['Boolean']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  dateFrom?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  dateTo?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsSalesPerformanceConfigurationInput = {
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: InputMaybe<Scalars['DateTime']['input']>;
-  dateTo?: InputMaybe<Scalars['DateTime']['input']>;
-  showPreviousTimeframe: Scalars['Boolean']['input'];
+  dateFrom?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  dateTo?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['input'];
 };
 
 export type TMcSettingsSampleDataImportMetadata = {
   __typename?: 'SampleDataImportMetadata';
-  completed: Scalars['Boolean']['output'];
-  dataset?: Maybe<TMcSettingsSampleDatasets>;
+  completed: TMcSettingsScalars['Boolean']['output'];
+  dataset?: TMcSettingsMaybe<TMcSettingsSampleDatasets>;
 };
 
 export enum TMcSettingsSampleDatasets {
@@ -2074,13 +2118,13 @@ export enum TMcSettingsSampleDatasets {
 
 export type TMcSettingsSort = {
   __typename?: 'Sort';
-  key: Scalars['String']['output'];
+  key: TMcSettingsScalars['String']['output'];
   order: TMcSettingsSortOrder;
 };
 
 export type TMcSettingsSortCreateInput = {
-  id?: InputMaybe<Scalars['ID']['input']>;
-  key: Scalars['String']['input'];
+  id?: TMcSettingsInputMaybe<TMcSettingsScalars['ID']['input']>;
+  key: TMcSettingsScalars['String']['input'];
   order: TMcSettingsSortOrder;
 };
 
@@ -2091,72 +2135,72 @@ export enum TMcSettingsSortOrder {
 
 export type TMcSettingsTdlqMessageResult = {
   __typename?: 'TDLQMessageResult';
-  ackId: Scalars['String']['output'];
-  data: Scalars['String']['output'];
-  error?: Maybe<Scalars['String']['output']>;
-  id: Scalars['ID']['output'];
+  ackId: TMcSettingsScalars['String']['output'];
+  data: TMcSettingsScalars['String']['output'];
+  error?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
 };
 
 export type TMcSettingsTable = {
   __typename?: 'Table';
-  nestedTable?: Maybe<TMcSettingsNestedTable>;
-  visibleColumns: Array<Scalars['String']['output']>;
+  nestedTable?: TMcSettingsMaybe<TMcSettingsNestedTable>;
+  visibleColumns: Array<TMcSettingsScalars['String']['output']>;
 };
 
 export type TMcSettingsTopProductsConfiguration = {
   __typename?: 'TopProductsConfiguration';
   bestSellingLimit: TMcSettingsBestSellingLimit;
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsTopProductsConfigurationInput = {
-  bestSellingLimit?: InputMaybe<TMcSettingsBestSellingLimit>;
+  bestSellingLimit?: TMcSettingsInputMaybe<TMcSettingsBestSellingLimit>;
 };
 
 export type TMcSettingsTotalOrdersConfiguration = {
   __typename?: 'TotalOrdersConfiguration';
-  createdAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: Maybe<Scalars['DateTime']['output']>;
-  dateTo?: Maybe<Scalars['DateTime']['output']>;
-  id: Scalars['ID']['output'];
-  productId?: Maybe<Scalars['String']['output']>;
-  showPreviousTimeframe: Scalars['Boolean']['output'];
-  updatedAt: Scalars['DateTime']['output'];
+  dateFrom?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  dateTo?: TMcSettingsMaybe<TMcSettingsScalars['DateTime']['output']>;
+  id: TMcSettingsScalars['ID']['output'];
+  productId?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsTotalOrdersConfigurationInput = {
   dateFilterType: TMcSettingsDateFilterType;
-  dateFrom?: InputMaybe<Scalars['DateTime']['input']>;
-  dateTo?: InputMaybe<Scalars['DateTime']['input']>;
-  productId?: InputMaybe<Scalars['String']['input']>;
-  showPreviousTimeframe: Scalars['Boolean']['input'];
+  dateFrom?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  dateTo?: TMcSettingsInputMaybe<TMcSettingsScalars['DateTime']['input']>;
+  productId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
+  showPreviousTimeframe: TMcSettingsScalars['Boolean']['input'];
 };
 
 export type TMcSettingsTotalSalesConfiguration = {
   __typename?: 'TotalSalesConfiguration';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  productId?: Maybe<Scalars['String']['output']>;
-  updatedAt: Scalars['DateTime']['output'];
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  productId?: TMcSettingsMaybe<TMcSettingsScalars['String']['output']>;
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
 };
 
 export type TMcSettingsTotalSalesConfigurationInput = {
-  productId?: InputMaybe<Scalars['String']['input']>;
+  productId?: TMcSettingsInputMaybe<TMcSettingsScalars['String']['input']>;
 };
 
 export type TMcSettingsVariantPricesListView = {
   __typename?: 'VariantPricesListView';
-  createdAt: Scalars['DateTime']['output'];
-  id: Scalars['ID']['output'];
-  projectKey: Scalars['String']['output'];
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
-  visibleColumns: Array<Scalars['String']['output']>;
+  createdAt: TMcSettingsScalars['DateTime']['output'];
+  id: TMcSettingsScalars['ID']['output'];
+  projectKey: TMcSettingsScalars['String']['output'];
+  updatedAt: TMcSettingsScalars['DateTime']['output'];
+  userId: TMcSettingsScalars['String']['output'];
+  visibleColumns: Array<TMcSettingsScalars['String']['output']>;
 };
 
 export type TMcSettingsVariantPricesListViewInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
+  visibleColumns: Array<TMcSettingsScalars['String']['input']>;
 };

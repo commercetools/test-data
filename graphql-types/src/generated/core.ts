@@ -1,59 +1,59 @@
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
+export type TCoreMaybe<T> = T | null;
+export type TCoreInputMaybe<T> = TCoreMaybe<T>;
+export type TCoreExact<T extends { [key: string]: unknown }> = {
   [K in keyof T]: T[K];
 };
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]?: Maybe<T[SubKey]>;
+export type TCoreMakeOptional<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]?: TCoreMaybe<T[SubKey]>;
 };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]: Maybe<T[SubKey]>;
+export type TCoreMakeMaybe<T, K extends keyof T> = Omit<T, K> & {
+  [SubKey in K]: TCoreMaybe<T[SubKey]>;
 };
-export type MakeEmpty<
+export type TCoreMakeEmpty<
   T extends { [key: string]: unknown },
   K extends keyof T,
 > = { [_ in K]?: never };
-export type Incremental<T> =
+export type TCoreIncremental<T> =
   | T
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
     };
 /** All built-in and custom scalars, mapped to their actual values */
-export type Scalars = {
+export type TCoreScalars = {
   ID: { input: string; output: string };
   String: { input: string; output: string };
   Boolean: { input: boolean; output: boolean };
   Int: { input: number; output: number };
   Float: { input: number; output: number };
-  Country: { input: any; output: any };
-  Currency: { input: any; output: any };
-  DateTime: { input: any; output: any };
-  DateTimeZone: { input: any; output: any };
-  Locale: { input: any; output: any };
-  Long: { input: any; output: any };
+  Country: { input: unknown; output: unknown };
+  Currency: { input: unknown; output: unknown };
+  DateTime: { input: unknown; output: unknown };
+  DateTimeZone: { input: unknown; output: unknown };
+  Locale: { input: unknown; output: unknown };
+  Long: { input: unknown; output: unknown };
 };
 
 export type TCoreAddTeam = {
-  members?: InputMaybe<Array<TCoreReferenceInput>>;
-  name: Scalars['String']['input'];
-  permissions?: InputMaybe<Scalars['String']['input']>;
+  members?: TCoreInputMaybe<Array<TCoreReferenceInput>>;
+  name: TCoreScalars['String']['input'];
+  permissions?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreAddTeamMembership = {
-  teamId: Scalars['String']['input'];
+  teamId: TCoreScalars['String']['input'];
   user: TCoreReferenceInput;
 };
 
 export type TCoreAttributeGroupLimits = {
   __typename?: 'AttributeGroupLimits';
-  maxTotalAttributeGroups?: Maybe<Scalars['Int']['output']>;
+  maxTotalAttributeGroups?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreAttribution = {
   __typename?: 'Attribution';
-  clientId?: Maybe<Scalars['String']['output']>;
+  clientId?: TCoreMaybe<TCoreScalars['String']['output']>;
   source: TCoreAttributionSource;
-  userRef?: Maybe<TCoreReference>;
+  userRef?: TCoreMaybe<TCoreReference>;
 };
 
 export enum TCoreAttributionSource {
@@ -65,18 +65,18 @@ export enum TCoreAttributionSource {
 export type TCoreAwsContainer = {
   __typename?: 'AwsContainer';
   /** Public bucket url, without the project part */
-  bucketUrl: Scalars['String']['output'];
+  bucketUrl: TCoreScalars['String']['output'];
   /** Project part of the object path on s3 */
-  projectPrefix: Scalars['String']['output'];
+  projectPrefix: TCoreScalars['String']['output'];
 };
 
 /** Azure Blob Storage container config */
 export type TCoreAzureBlobStorageContainer = {
   __typename?: 'AzureBlobStorageContainer';
   /** Project part of the object path on s3 */
-  baseUrl: Scalars['String']['output'];
+  baseUrl: TCoreScalars['String']['output'];
   /** Public bucket url, without the project part */
-  name: Scalars['String']['output'];
+  name: TCoreScalars['String']['output'];
 };
 
 export enum TCoreBusinessRole {
@@ -100,145 +100,149 @@ export enum TCoreBusinessRole {
 
 export type TCoreBusinessUnitLimits = {
   __typename?: 'BusinessUnitLimits';
-  maxAssociateRoles?: Maybe<Scalars['Int']['output']>;
-  maxAssociates?: Maybe<Scalars['Int']['output']>;
-  maxDepthLimit?: Maybe<Scalars['Int']['output']>;
-  maxDivisions?: Maybe<Scalars['Int']['output']>;
+  maxAssociateRoles?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  maxAssociates?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  maxDepthLimit?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  maxDivisions?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreCartClassificationType = TCoreShippingRateInputType & {
   __typename?: 'CartClassificationType';
-  type: Scalars['String']['output'];
+  type: TCoreScalars['String']['output'];
   values: Array<TCoreShippingRateInputLocalizedEnumValue>;
 };
 
 export type TCoreCartDiscountLimits = {
   __typename?: 'CartDiscountLimits';
-  withoutDiscountCodeLimit?: Maybe<Scalars['Long']['output']>;
+  withoutDiscountCodeLimit?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreCartLimits = {
   __typename?: 'CartLimits';
-  maxCarts?: Maybe<Scalars['Long']['output']>;
+  maxCarts?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreCartScoreType = TCoreShippingRateInputType & {
   __typename?: 'CartScoreType';
-  type: Scalars['String']['output'];
+  type: TCoreScalars['String']['output'];
 };
 
 export type TCoreCartValueType = TCoreShippingRateInputType & {
   __typename?: 'CartValueType';
-  type: Scalars['String']['output'];
+  type: TCoreScalars['String']['output'];
 };
 
 export type TCoreCategoryLimits = {
   __typename?: 'CategoryLimits';
-  maxTotalCategories?: Maybe<Scalars['Int']['output']>;
+  maxTotalCategories?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreCdnContainerConfiguration = {
   __typename?: 'CdnContainerConfiguration';
-  enabled: Scalars['Boolean']['output'];
+  enabled: TCoreScalars['Boolean']['output'];
 };
 
 export type TCoreChangeName = {
-  name: Scalars['String']['input'];
+  name: TCoreScalars['String']['input'];
 };
 
 export type TCoreChangeTeamName = {
-  name: Scalars['String']['input'];
-  teamId: Scalars['String']['input'];
+  name: TCoreScalars['String']['input'];
+  teamId: TCoreScalars['String']['input'];
 };
 
 export type TCoreClustersConfig = {
   __typename?: 'ClustersConfig';
-  db?: Maybe<TCoreDbClustersConfig>;
-  elasticsearch?: Maybe<TCoreEsCluster>;
+  db?: TCoreMaybe<TCoreDbClustersConfig>;
+  elasticsearch?: TCoreMaybe<TCoreEsCluster>;
 };
 
 export type TCoreClustersConfigInput = {
-  db?: InputMaybe<TCoreDbClustersConfigInput>;
-  elasticsearch?: InputMaybe<TCoreEsClusterInput>;
+  db?: TCoreInputMaybe<TCoreDbClustersConfigInput>;
+  elasticsearch?: TCoreInputMaybe<TCoreEsClusterInput>;
 };
 
 export type TCoreCreateOrganizationCommand = {
-  defaultClusters?: InputMaybe<TCoreClustersConfigInput>;
-  name: Scalars['String']['input'];
+  defaultClusters?: TCoreInputMaybe<TCoreClustersConfigInput>;
+  name: TCoreScalars['String']['input'];
   owner: TCoreReferenceInput;
 };
 
 export type TCoreCreatePermissionCommand = {
-  actionRightPermissions?: InputMaybe<Array<Scalars['String']['input']>>;
-  dataFences?: InputMaybe<Array<TCoreDataFenceDraft>>;
-  group: Scalars['String']['input'];
-  hiddenMenuItems?: InputMaybe<Array<Scalars['String']['input']>>;
+  actionRightPermissions?: TCoreInputMaybe<
+    Array<TCoreScalars['String']['input']>
+  >;
+  dataFences?: TCoreInputMaybe<Array<TCoreDataFenceDraft>>;
+  group: TCoreScalars['String']['input'];
+  hiddenMenuItems?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
   owner: TCoreReferenceInput;
-  resourceAccessPermissions?: InputMaybe<Array<Scalars['String']['input']>>;
+  resourceAccessPermissions?: TCoreInputMaybe<
+    Array<TCoreScalars['String']['input']>
+  >;
   team: TCoreReferenceInput;
 };
 
 export type TCoreCustomObjectLimits = {
   __typename?: 'CustomObjectLimits';
-  maxCustomObjects?: Maybe<Scalars['Long']['output']>;
+  maxCustomObjects?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreCustomerGroupLimits = {
   __typename?: 'CustomerGroupLimits';
-  maxCustomerGroups?: Maybe<Scalars['Long']['output']>;
+  maxCustomerGroups?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreCustomerLimits = {
   __typename?: 'CustomerLimits';
-  maxCustomers?: Maybe<Scalars['Long']['output']>;
+  maxCustomers?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreCustomersDomainLimits = {
   __typename?: 'CustomersDomainLimits';
-  businessUnits?: Maybe<TCoreBusinessUnitLimits>;
-  customerGroups?: Maybe<TCoreCustomerGroupLimits>;
-  customers?: Maybe<TCoreCustomerLimits>;
+  businessUnits?: TCoreMaybe<TCoreBusinessUnitLimits>;
+  customerGroups?: TCoreMaybe<TCoreCustomerGroupLimits>;
+  customers?: TCoreMaybe<TCoreCustomerLimits>;
 };
 
 export type TCoreDbClusterConfig = {
   __typename?: 'DBClusterConfig';
   dbClusterKey: TCoreDbClusterKey;
-  sharded: Scalars['Boolean']['output'];
+  sharded: TCoreScalars['Boolean']['output'];
 };
 
 export type TCoreDbClusterConfigInput = {
   dbClusterKey: TCoreDbClusterKeyInput;
-  sharded: Scalars['Boolean']['input'];
+  sharded: TCoreScalars['Boolean']['input'];
 };
 
 export type TCoreDbClusterKey = {
   __typename?: 'DBClusterKey';
-  name: Scalars['String']['output'];
+  name: TCoreScalars['String']['output'];
 };
 
 export type TCoreDbClusterKeyInput = {
-  name: Scalars['String']['input'];
+  name: TCoreScalars['String']['input'];
 };
 
 export type TCoreDbClustersConfig = {
   __typename?: 'DBClustersConfig';
-  carts?: Maybe<TCoreDbClusterConfig>;
-  commits?: Maybe<TCoreDbClusterConfig>;
+  carts?: TCoreMaybe<TCoreDbClusterConfig>;
+  commits?: TCoreMaybe<TCoreDbClusterConfig>;
   default: TCoreDbClusterKey;
-  orders?: Maybe<TCoreDbClusterConfig>;
-  products?: Maybe<TCoreDbClusterConfig>;
+  orders?: TCoreMaybe<TCoreDbClusterConfig>;
+  products?: TCoreMaybe<TCoreDbClusterConfig>;
 };
 
 export type TCoreDbClustersConfigInput = {
-  carts?: InputMaybe<TCoreDbClusterConfigInput>;
-  commits?: InputMaybe<TCoreDbClusterConfigInput>;
+  carts?: TCoreInputMaybe<TCoreDbClusterConfigInput>;
+  commits?: TCoreInputMaybe<TCoreDbClusterConfigInput>;
   default: TCoreDbClusterKeyInput;
-  orders?: InputMaybe<TCoreDbClusterConfigInput>;
-  products?: InputMaybe<TCoreDbClusterConfigInput>;
+  orders?: TCoreInputMaybe<TCoreDbClusterConfigInput>;
+  products?: TCoreInputMaybe<TCoreDbClusterConfigInput>;
 };
 
 export type TCoreDataFence = {
-  type: Scalars['String']['output'];
+  type: TCoreScalars['String']['output'];
 };
 
 export type TCoreDataFenceDraft = {
@@ -246,86 +250,86 @@ export type TCoreDataFenceDraft = {
 };
 
 export type TCoreDataFenceStoreDraftType = {
-  storeKeys: Array<Scalars['String']['input']>;
+  storeKeys: Array<TCoreScalars['String']['input']>;
 };
 
 export type TCoreEsAlternativeComparisonConfig = {
   __typename?: 'ESAlternativeComparisonConfig';
-  comparisonProbability: Scalars['Float']['output'];
-  logComparisonResults: Scalars['Boolean']['output'];
-  versioning?: Maybe<Scalars['Boolean']['output']>;
+  comparisonProbability: TCoreScalars['Float']['output'];
+  logComparisonResults: TCoreScalars['Boolean']['output'];
+  versioning?: TCoreMaybe<TCoreScalars['Boolean']['output']>;
 };
 
 export type TCoreEsAlternativeComparisonConfigInput = {
-  comparisonProbability: Scalars['Float']['input'];
-  logComparisonResults: Scalars['Boolean']['input'];
-  versioning?: InputMaybe<Scalars['Boolean']['input']>;
+  comparisonProbability: TCoreScalars['Float']['input'];
+  logComparisonResults: TCoreScalars['Boolean']['input'];
+  versioning?: TCoreInputMaybe<TCoreScalars['Boolean']['input']>;
 };
 
 export type TCoreEsCluster = {
   __typename?: 'ESCluster';
-  categoriesShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  categoryComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
-  clusterKey: Scalars['String']['output'];
-  platformProducts?: Maybe<TCorePlatformProductsClusterConfig>;
-  productComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
-  products?: Maybe<TCoreProductsClusterConfig>;
-  productsShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  replicateToClusterKey?: Maybe<Scalars['String']['output']>;
+  categoriesShardConfig?: TCoreMaybe<TCoreEsClusterShardConfig>;
+  categoryComparison?: TCoreMaybe<TCoreEsAlternativeComparisonConfig>;
+  clusterKey: TCoreScalars['String']['output'];
+  platformProducts?: TCoreMaybe<TCorePlatformProductsClusterConfig>;
+  productComparison?: TCoreMaybe<TCoreEsAlternativeComparisonConfig>;
+  products?: TCoreMaybe<TCoreProductsClusterConfig>;
+  productsShardConfig?: TCoreMaybe<TCoreEsClusterShardConfig>;
+  replicateToClusterKey?: TCoreMaybe<TCoreScalars['String']['output']>;
 };
 
 export type TCoreEsClusterInput = {
-  categoriesShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  categoryComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
-  clusterKey: Scalars['String']['input'];
-  platformProducts?: InputMaybe<TCorePlatformProductsClusterConfigInput>;
-  productComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
-  products?: InputMaybe<TCoreProductsClusterConfigInput>;
-  productsShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  replicateToClusterKey?: InputMaybe<Scalars['String']['input']>;
+  categoriesShardConfig?: TCoreInputMaybe<TCoreEsClusterShardConfigInput>;
+  categoryComparison?: TCoreInputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  clusterKey: TCoreScalars['String']['input'];
+  platformProducts?: TCoreInputMaybe<TCorePlatformProductsClusterConfigInput>;
+  productComparison?: TCoreInputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  products?: TCoreInputMaybe<TCoreProductsClusterConfigInput>;
+  productsShardConfig?: TCoreInputMaybe<TCoreEsClusterShardConfigInput>;
+  replicateToClusterKey?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreEsClusterShardConfig = {
   __typename?: 'ESClusterShardConfig';
-  numberOfReplicas?: Maybe<Scalars['Int']['output']>;
-  numberOfShards?: Maybe<Scalars['Int']['output']>;
-  refreshIntervalSeconds?: Maybe<Scalars['Int']['output']>;
-  versioning?: Maybe<Scalars['Boolean']['output']>;
+  numberOfReplicas?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  numberOfShards?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  refreshIntervalSeconds?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  versioning?: TCoreMaybe<TCoreScalars['Boolean']['output']>;
 };
 
 export type TCoreEsClusterShardConfigInput = {
-  numberOfReplicas?: InputMaybe<Scalars['Int']['input']>;
-  numberOfShards?: InputMaybe<Scalars['Int']['input']>;
-  refreshIntervalSeconds?: InputMaybe<Scalars['Int']['input']>;
-  versioning?: InputMaybe<Scalars['Boolean']['input']>;
+  numberOfReplicas?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  numberOfShards?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  refreshIntervalSeconds?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  versioning?: TCoreInputMaybe<TCoreScalars['Boolean']['input']>;
 };
 
 export type TCoreExtensionLimits = {
   __typename?: 'ExtensionLimits';
-  maxTimeoutInMs?: Maybe<Scalars['Int']['output']>;
+  maxTimeoutInMs?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreExternalOAuthInput = {
-  authorizationHeader: Scalars['String']['input'];
-  url: Scalars['String']['input'];
+  authorizationHeader: TCoreScalars['String']['input'];
+  url: TCoreScalars['String']['input'];
 };
 
 export type TCoreInitiator = {
   __typename?: 'Initiator';
-  anonymousId?: Maybe<Scalars['String']['output']>;
-  associateRef?: Maybe<TCoreReference>;
-  attributedTo?: Maybe<TCoreAttribution>;
-  clientId?: Maybe<Scalars['String']['output']>;
-  customerRef?: Maybe<TCoreReference>;
-  externalUserId?: Maybe<Scalars['String']['output']>;
-  isPlatformClient?: Maybe<Scalars['Boolean']['output']>;
-  userRef?: Maybe<TCoreReference>;
+  anonymousId?: TCoreMaybe<TCoreScalars['String']['output']>;
+  associateRef?: TCoreMaybe<TCoreReference>;
+  attributedTo?: TCoreMaybe<TCoreAttribution>;
+  clientId?: TCoreMaybe<TCoreScalars['String']['output']>;
+  customerRef?: TCoreMaybe<TCoreReference>;
+  externalUserId?: TCoreMaybe<TCoreScalars['String']['output']>;
+  isPlatformClient?: TCoreMaybe<TCoreScalars['Boolean']['output']>;
+  userRef?: TCoreMaybe<TCoreReference>;
 };
 
 export type TCoreLocalizedString = {
   __typename?: 'LocalizedString';
-  locale: Scalars['Locale']['output'];
-  value: Scalars['String']['output'];
+  locale: TCoreScalars['Locale']['output'];
+  value: TCoreScalars['String']['output'];
 };
 
 export type TCoreMediaContainer =
@@ -335,25 +339,25 @@ export type TCoreMediaContainer =
 
 export type TCoreMessagesConfiguration = {
   __typename?: 'MessagesConfiguration';
-  deleteDaysAfterCreation?: Maybe<Scalars['Int']['output']>;
-  enabled: Scalars['Boolean']['output'];
+  deleteDaysAfterCreation?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  enabled: TCoreScalars['Boolean']['output'];
 };
 
 export type TCoreMutation = {
   __typename?: 'Mutation';
-  createMyOrganization?: Maybe<TCoreOrganization>;
-  createMyPermission?: Maybe<TCorePermission>;
-  createMyProject?: Maybe<TCoreProject>;
-  createPermission?: Maybe<TCorePermission>;
-  deleteMyOrganization?: Maybe<TCoreOrganization>;
-  deleteMyPermission?: Maybe<TCorePermission>;
-  deleteMyProject?: Maybe<TCoreProject>;
-  deletePermission?: Maybe<TCorePermission>;
-  revokeAccessTokensByGroup?: Maybe<TCoreRevokedTokens>;
-  revokeAccessTokensByTeam?: Maybe<TCoreRevokedTokens>;
-  updateMyOrganization?: Maybe<TCoreOrganization>;
-  updateMyPermission?: Maybe<TCorePermission>;
-  updatePermission?: Maybe<TCorePermission>;
+  createMyOrganization?: TCoreMaybe<TCoreOrganization>;
+  createMyPermission?: TCoreMaybe<TCorePermission>;
+  createMyProject?: TCoreMaybe<TCoreProject>;
+  createPermission?: TCoreMaybe<TCorePermission>;
+  deleteMyOrganization?: TCoreMaybe<TCoreOrganization>;
+  deleteMyPermission?: TCoreMaybe<TCorePermission>;
+  deleteMyProject?: TCoreMaybe<TCoreProject>;
+  deletePermission?: TCoreMaybe<TCorePermission>;
+  revokeAccessTokensByGroup?: TCoreMaybe<TCoreRevokedTokens>;
+  revokeAccessTokensByTeam?: TCoreMaybe<TCoreRevokedTokens>;
+  updateMyOrganization?: TCoreMaybe<TCoreOrganization>;
+  updateMyPermission?: TCoreMaybe<TCorePermission>;
+  updatePermission?: TCoreMaybe<TCorePermission>;
 };
 
 export type TCoreMutation_CreateMyOrganizationArgs = {
@@ -373,248 +377,248 @@ export type TCoreMutation_CreatePermissionArgs = {
 };
 
 export type TCoreMutation_DeleteMyOrganizationArgs = {
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_DeleteMyPermissionArgs = {
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_DeleteMyProjectArgs = {
-  key: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  key: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_DeletePermissionArgs = {
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_RevokeAccessTokensByGroupArgs = {
   owner: TCoreReferenceInput;
-  permissionGroup: Scalars['String']['input'];
+  permissionGroup: TCoreScalars['String']['input'];
 };
 
 export type TCoreMutation_RevokeAccessTokensByTeamArgs = {
   owner: TCoreReferenceInput;
-  teamId: Scalars['String']['input'];
+  teamId: TCoreScalars['String']['input'];
 };
 
 export type TCoreMutation_UpdateMyOrganizationArgs = {
   actions: Array<TCoreOrganizationUpdateAction>;
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_UpdateMyPermissionArgs = {
   actions: Array<TCorePermissionUpdateAction>;
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreMutation_UpdatePermissionArgs = {
   actions: Array<TCorePermissionUpdateAction>;
-  id: Scalars['String']['input'];
-  version: Scalars['Long']['input'];
+  id: TCoreScalars['String']['input'];
+  version: TCoreScalars['Long']['input'];
 };
 
 export type TCoreOrderEditLimits = {
   __typename?: 'OrderEditLimits';
-  maxOrderEdits?: Maybe<Scalars['Long']['output']>;
+  maxOrderEdits?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreOrganization = TCoreVersioned & {
   __typename?: 'Organization';
-  createdAt: Scalars['DateTime']['output'];
-  createdBy?: Maybe<TCoreInitiator>;
-  defaultClusters?: Maybe<TCoreClustersConfig>;
-  id: Scalars['String']['output'];
-  lastModifiedAt: Scalars['DateTime']['output'];
-  lastModifiedBy?: Maybe<TCoreInitiator>;
-  name: Scalars['String']['output'];
+  createdAt: TCoreScalars['DateTime']['output'];
+  createdBy?: TCoreMaybe<TCoreInitiator>;
+  defaultClusters?: TCoreMaybe<TCoreClustersConfig>;
+  id: TCoreScalars['String']['output'];
+  lastModifiedAt: TCoreScalars['DateTime']['output'];
+  lastModifiedBy?: TCoreMaybe<TCoreInitiator>;
+  name: TCoreScalars['String']['output'];
   teams: Array<TCoreTeam>;
-  version: Scalars['Long']['output'];
+  version: TCoreScalars['Long']['output'];
 };
 
 export type TCoreOrganizationQueryResult = {
   __typename?: 'OrganizationQueryResult';
-  count: Scalars['Int']['output'];
-  exists: Scalars['Boolean']['output'];
-  offset: Scalars['Int']['output'];
+  count: TCoreScalars['Int']['output'];
+  exists: TCoreScalars['Boolean']['output'];
+  offset: TCoreScalars['Int']['output'];
   results: Array<TCoreOrganization>;
-  total: Scalars['Long']['output'];
+  total: TCoreScalars['Long']['output'];
 };
 
 export type TCoreOrganizationUpdateAction = {
-  addTeam?: InputMaybe<TCoreAddTeam>;
-  addTeamMembership?: InputMaybe<TCoreAddTeamMembership>;
-  changeName?: InputMaybe<TCoreChangeName>;
-  changeTeamName?: InputMaybe<TCoreChangeTeamName>;
-  removeTeam?: InputMaybe<TCoreRemoveTeam>;
-  removeTeamMembership?: InputMaybe<TCoreRemoveTeamMembership>;
+  addTeam?: TCoreInputMaybe<TCoreAddTeam>;
+  addTeamMembership?: TCoreInputMaybe<TCoreAddTeamMembership>;
+  changeName?: TCoreInputMaybe<TCoreChangeName>;
+  changeTeamName?: TCoreInputMaybe<TCoreChangeTeamName>;
+  removeTeam?: TCoreInputMaybe<TCoreRemoveTeam>;
+  removeTeamMembership?: TCoreInputMaybe<TCoreRemoveTeamMembership>;
 };
 
 export type TCorePermission = TCoreVersioned & {
   __typename?: 'Permission';
-  actionRightPermissions: Array<Scalars['String']['output']>;
-  createdAt: Scalars['DateTime']['output'];
-  createdBy?: Maybe<TCoreInitiator>;
+  actionRightPermissions: Array<TCoreScalars['String']['output']>;
+  createdAt: TCoreScalars['DateTime']['output'];
+  createdBy?: TCoreMaybe<TCoreInitiator>;
   dataFences: Array<TCoreDataFence>;
-  group: Scalars['String']['output'];
-  hiddenMenuItems: Array<Scalars['String']['output']>;
-  id: Scalars['String']['output'];
-  lastModifiedAt: Scalars['DateTime']['output'];
-  lastModifiedBy?: Maybe<TCoreInitiator>;
+  group: TCoreScalars['String']['output'];
+  hiddenMenuItems: Array<TCoreScalars['String']['output']>;
+  id: TCoreScalars['String']['output'];
+  lastModifiedAt: TCoreScalars['DateTime']['output'];
+  lastModifiedBy?: TCoreMaybe<TCoreInitiator>;
   ownerRef: TCoreReference;
-  resourceAccessPermissions: Array<Scalars['String']['output']>;
+  resourceAccessPermissions: Array<TCoreScalars['String']['output']>;
   teamRef: TCoreReference;
-  version: Scalars['Long']['output'];
+  version: TCoreScalars['Long']['output'];
 };
 
 export type TCorePermissionQueryResult = {
   __typename?: 'PermissionQueryResult';
-  count: Scalars['Int']['output'];
-  exists: Scalars['Boolean']['output'];
-  offset: Scalars['Int']['output'];
+  count: TCoreScalars['Int']['output'];
+  exists: TCoreScalars['Boolean']['output'];
+  offset: TCoreScalars['Int']['output'];
   results: Array<TCorePermission>;
-  total: Scalars['Long']['output'];
+  total: TCoreScalars['Long']['output'];
 };
 
 export type TCorePermissionUpdateAction = {
-  setActionRightPermissions?: InputMaybe<TCoreSetPermissionActionRightPermissions>;
-  setDataFences?: InputMaybe<TCoreSetPermissionDataFences>;
-  setHiddenMenuItems?: InputMaybe<TCoreSetPermissionHiddenMenuItems>;
-  setResourceAccessPermissions?: InputMaybe<TCoreSetPermissionResourceAccessPermissions>;
+  setActionRightPermissions?: TCoreInputMaybe<TCoreSetPermissionActionRightPermissions>;
+  setDataFences?: TCoreInputMaybe<TCoreSetPermissionDataFences>;
+  setHiddenMenuItems?: TCoreInputMaybe<TCoreSetPermissionHiddenMenuItems>;
+  setResourceAccessPermissions?: TCoreInputMaybe<TCoreSetPermissionResourceAccessPermissions>;
 };
 
 export type TCorePlatformProductsClusterConfig = {
   __typename?: 'PlatformProductsClusterConfig';
-  categoriesShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  categoryComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
-  clusterKey: Scalars['String']['output'];
-  productComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
-  productsShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  replicateToClusterKey?: Maybe<Scalars['String']['output']>;
+  categoriesShardConfig?: TCoreMaybe<TCoreEsClusterShardConfig>;
+  categoryComparison?: TCoreMaybe<TCoreEsAlternativeComparisonConfig>;
+  clusterKey: TCoreScalars['String']['output'];
+  productComparison?: TCoreMaybe<TCoreEsAlternativeComparisonConfig>;
+  productsShardConfig?: TCoreMaybe<TCoreEsClusterShardConfig>;
+  replicateToClusterKey?: TCoreMaybe<TCoreScalars['String']['output']>;
 };
 
 export type TCorePlatformProductsClusterConfigInput = {
-  categoriesShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  categoryComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
-  clusterKey: Scalars['String']['input'];
-  productComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
-  productsShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  replicateToClusterKey?: InputMaybe<Scalars['String']['input']>;
+  categoriesShardConfig?: TCoreInputMaybe<TCoreEsClusterShardConfigInput>;
+  categoryComparison?: TCoreInputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  clusterKey: TCoreScalars['String']['input'];
+  productComparison?: TCoreInputMaybe<TCoreEsAlternativeComparisonConfigInput>;
+  productsShardConfig?: TCoreInputMaybe<TCoreEsClusterShardConfigInput>;
+  replicateToClusterKey?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreProductDiscountLimits = {
   __typename?: 'ProductDiscountLimits';
-  activeLimit?: Maybe<Scalars['Long']['output']>;
+  activeLimit?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreProductLimits = {
   __typename?: 'ProductLimits';
-  pricesLimitPerVariant?: Maybe<Scalars['Int']['output']>;
-  productTailoringLimit?: Maybe<Scalars['Int']['output']>;
-  variantLimit?: Maybe<Scalars['Int']['output']>;
+  pricesLimitPerVariant?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  productTailoringLimit?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  variantLimit?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreProductTypeLimits = {
   __typename?: 'ProductTypeLimits';
-  maxTotalProductTypes?: Maybe<Scalars['Int']['output']>;
+  maxTotalProductTypes?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreProductsClusterConfig = {
   __typename?: 'ProductsClusterConfig';
-  clusterKey: Scalars['String']['output'];
+  clusterKey: TCoreScalars['String']['output'];
 };
 
 export type TCoreProductsClusterConfigInput = {
-  clusterKey: Scalars['String']['input'];
+  clusterKey: TCoreScalars['String']['input'];
 };
 
 export type TCoreProject = TCoreVersioned & {
   __typename?: 'Project';
-  billingInfo?: Maybe<TCoreProjectBillingInfo>;
-  cdnContainer?: Maybe<TCoreMediaContainer>;
+  billingInfo?: TCoreMaybe<TCoreProjectBillingInfo>;
+  cdnContainer?: TCoreMaybe<TCoreMediaContainer>;
   cdnContainerConfiguration: TCoreCdnContainerConfiguration;
-  countries: Array<Scalars['Country']['output']>;
-  createdAt: Scalars['DateTime']['output'];
-  createdBy?: Maybe<TCoreInitiator>;
-  currencies: Array<Scalars['Currency']['output']>;
-  customLimits?: Maybe<TCoreProjectCustomLimits>;
-  id: Scalars['String']['output'];
-  initialized: Scalars['Boolean']['output'];
-  isProductionProject?: Maybe<Scalars['Boolean']['output']>;
-  key: Scalars['String']['output'];
-  languages: Array<Scalars['Locale']['output']>;
-  lastModifiedAt: Scalars['DateTime']['output'];
-  lastModifiedBy?: Maybe<TCoreInitiator>;
+  countries: Array<TCoreScalars['Country']['output']>;
+  createdAt: TCoreScalars['DateTime']['output'];
+  createdBy?: TCoreMaybe<TCoreInitiator>;
+  currencies: Array<TCoreScalars['Currency']['output']>;
+  customLimits?: TCoreMaybe<TCoreProjectCustomLimits>;
+  id: TCoreScalars['String']['output'];
+  initialized: TCoreScalars['Boolean']['output'];
+  isProductionProject?: TCoreMaybe<TCoreScalars['Boolean']['output']>;
+  key: TCoreScalars['String']['output'];
+  languages: Array<TCoreScalars['Locale']['output']>;
+  lastModifiedAt: TCoreScalars['DateTime']['output'];
+  lastModifiedBy?: TCoreMaybe<TCoreInitiator>;
   messages: TCoreMessagesConfiguration;
-  name: Scalars['String']['output'];
-  owner?: Maybe<TCoreOrganization>;
-  ownerRef?: Maybe<TCoreReference>;
+  name: TCoreScalars['String']['output'];
+  owner?: TCoreMaybe<TCoreOrganization>;
+  ownerRef?: TCoreMaybe<TCoreReference>;
   participations: Array<TCoreOrganization>;
   participationsRef: Array<TCoreReference>;
-  plan: Scalars['String']['output'];
-  shippingRateInputType?: Maybe<TCoreShippingRateInputType>;
-  suspended?: Maybe<TCoreProjectSuspendData>;
-  trialUntil?: Maybe<Scalars['DateTime']['output']>;
-  version: Scalars['Long']['output'];
+  plan: TCoreScalars['String']['output'];
+  shippingRateInputType?: TCoreMaybe<TCoreShippingRateInputType>;
+  suspended?: TCoreMaybe<TCoreProjectSuspendData>;
+  trialUntil?: TCoreMaybe<TCoreScalars['DateTime']['output']>;
+  version: TCoreScalars['Long']['output'];
 };
 
 export type TCoreProjectBillingInfo = {
   __typename?: 'ProjectBillingInfo';
-  accountId?: Maybe<Scalars['String']['output']>;
-  accountName?: Maybe<Scalars['String']['output']>;
-  accountNumber?: Maybe<Scalars['String']['output']>;
-  comment?: Maybe<Scalars['String']['output']>;
-  contractNumber?: Maybe<Scalars['String']['output']>;
+  accountId?: TCoreMaybe<TCoreScalars['String']['output']>;
+  accountName?: TCoreMaybe<TCoreScalars['String']['output']>;
+  accountNumber?: TCoreMaybe<TCoreScalars['String']['output']>;
+  comment?: TCoreMaybe<TCoreScalars['String']['output']>;
+  contractNumber?: TCoreMaybe<TCoreScalars['String']['output']>;
 };
 
 export type TCoreProjectCustomLimits = {
   __typename?: 'ProjectCustomLimits';
-  attributeGroupLimits?: Maybe<TCoreAttributeGroupLimits>;
-  cartDiscounts?: Maybe<TCoreCartDiscountLimits>;
-  carts?: Maybe<TCoreCartLimits>;
-  categoryLimits?: Maybe<TCoreCategoryLimits>;
-  customObjects?: Maybe<TCoreCustomObjectLimits>;
+  attributeGroupLimits?: TCoreMaybe<TCoreAttributeGroupLimits>;
+  cartDiscounts?: TCoreMaybe<TCoreCartDiscountLimits>;
+  carts?: TCoreMaybe<TCoreCartLimits>;
+  categoryLimits?: TCoreMaybe<TCoreCategoryLimits>;
+  customObjects?: TCoreMaybe<TCoreCustomObjectLimits>;
   customersDomainLimits: TCoreCustomersDomainLimits;
-  extensions?: Maybe<TCoreExtensionLimits>;
-  orderEdits?: Maybe<TCoreOrderEditLimits>;
-  productDiscounts?: Maybe<TCoreProductDiscountLimits>;
-  productTypeLimits?: Maybe<TCoreProductTypeLimits>;
-  products?: Maybe<TCoreProductLimits>;
-  queryLimits?: Maybe<TCoreQueryLimits>;
-  refreshTokens?: Maybe<TCoreRefreshTokenLimits>;
-  searchLimits?: Maybe<TCoreSearchLimits>;
-  shippingMethods?: Maybe<TCoreShippingMethodLimit>;
-  shoppingLists?: Maybe<TCoreShoppingListLimits>;
-  stores?: Maybe<TCoreStoreLimits>;
-  subscriptions?: Maybe<TCoreSubscriptionsLimits>;
-  taxCategories?: Maybe<TCoreTaxCategoryLimit>;
-  termFacetSize?: Maybe<Scalars['Int']['output']>;
-  zones?: Maybe<TCoreZoneLimits>;
+  extensions?: TCoreMaybe<TCoreExtensionLimits>;
+  orderEdits?: TCoreMaybe<TCoreOrderEditLimits>;
+  productDiscounts?: TCoreMaybe<TCoreProductDiscountLimits>;
+  productTypeLimits?: TCoreMaybe<TCoreProductTypeLimits>;
+  products?: TCoreMaybe<TCoreProductLimits>;
+  queryLimits?: TCoreMaybe<TCoreQueryLimits>;
+  refreshTokens?: TCoreMaybe<TCoreRefreshTokenLimits>;
+  searchLimits?: TCoreMaybe<TCoreSearchLimits>;
+  shippingMethods?: TCoreMaybe<TCoreShippingMethodLimit>;
+  shoppingLists?: TCoreMaybe<TCoreShoppingListLimits>;
+  stores?: TCoreMaybe<TCoreStoreLimits>;
+  subscriptions?: TCoreMaybe<TCoreSubscriptionsLimits>;
+  taxCategories?: TCoreMaybe<TCoreTaxCategoryLimit>;
+  termFacetSize?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  zones?: TCoreMaybe<TCoreZoneLimits>;
 };
 
 export type TCoreProjectDraftType = {
-  asyncInitialization?: InputMaybe<Scalars['Boolean']['input']>;
-  cdnContainerEnabled?: InputMaybe<Scalars['Boolean']['input']>;
-  countries?: Array<Scalars['Country']['input']>;
-  currencies: Array<Scalars['Currency']['input']>;
-  dbClustersConfig?: InputMaybe<TCoreDbClustersConfigInput>;
-  deleteDaysAfterCreation?: InputMaybe<Scalars['Int']['input']>;
-  esCluster?: InputMaybe<TCoreEsClusterInput>;
-  externalOAuth?: InputMaybe<TCoreExternalOAuthInput>;
-  key: Scalars['String']['input'];
-  languages: Array<Scalars['Locale']['input']>;
-  messagesEnabled?: InputMaybe<Scalars['Boolean']['input']>;
-  name: Scalars['String']['input'];
+  asyncInitialization?: TCoreInputMaybe<TCoreScalars['Boolean']['input']>;
+  cdnContainerEnabled?: TCoreInputMaybe<TCoreScalars['Boolean']['input']>;
+  countries?: Array<TCoreScalars['Country']['input']>;
+  currencies: Array<TCoreScalars['Currency']['input']>;
+  dbClustersConfig?: TCoreInputMaybe<TCoreDbClustersConfigInput>;
+  deleteDaysAfterCreation?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  esCluster?: TCoreInputMaybe<TCoreEsClusterInput>;
+  externalOAuth?: TCoreInputMaybe<TCoreExternalOAuthInput>;
+  key: TCoreScalars['String']['input'];
+  languages: Array<TCoreScalars['Locale']['input']>;
+  messagesEnabled?: TCoreInputMaybe<TCoreScalars['Boolean']['input']>;
+  name: TCoreScalars['String']['input'];
   owner: TCoreReferenceInput;
   plan: TCoreProjectPlan;
-  searchIndexing?: InputMaybe<TCoreSearchIndexingConfigurationInput>;
-  trialUntil?: InputMaybe<Scalars['DateTime']['input']>;
+  searchIndexing?: TCoreInputMaybe<TCoreSearchIndexingConfigurationInput>;
+  trialUntil?: TCoreInputMaybe<TCoreScalars['DateTime']['input']>;
 };
 
 export enum TCoreProjectPlan {
@@ -624,16 +628,16 @@ export enum TCoreProjectPlan {
 
 export type TCoreProjectQueryResult = {
   __typename?: 'ProjectQueryResult';
-  count: Scalars['Int']['output'];
-  exists: Scalars['Boolean']['output'];
-  offset: Scalars['Int']['output'];
+  count: TCoreScalars['Int']['output'];
+  exists: TCoreScalars['Boolean']['output'];
+  offset: TCoreScalars['Int']['output'];
   results: Array<TCoreProject>;
-  total: Scalars['Long']['output'];
+  total: TCoreScalars['Long']['output'];
 };
 
 export type TCoreProjectSuspendData = {
   __typename?: 'ProjectSuspendData';
-  description?: Maybe<Scalars['String']['output']>;
+  description?: TCoreMaybe<TCoreScalars['String']['output']>;
   reason: TCoreProjectSuspensionReason;
 };
 
@@ -649,11 +653,11 @@ export enum TCoreProjectSuspensionReason {
 /** Rackspace Cloud Files container config */
 export type TCorePublicContainer = {
   __typename?: 'PublicContainer';
-  httpUri: Scalars['String']['output'];
-  httpsUri: Scalars['String']['output'];
-  iosUri: Scalars['String']['output'];
-  name: Scalars['String']['output'];
-  streamingUri: Scalars['String']['output'];
+  httpUri: TCoreScalars['String']['output'];
+  httpsUri: TCoreScalars['String']['output'];
+  iosUri: TCoreScalars['String']['output'];
+  name: TCoreScalars['String']['output'];
+  streamingUri: TCoreScalars['String']['output'];
 };
 
 export type TCoreQuery = {
@@ -682,109 +686,109 @@ export type TCoreQuery = {
 };
 
 export type TCoreQuery_MyAccessibleProjectsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_MyOrganizationsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_MyPermissionsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
   owner: TCoreReferenceInput;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_MyProjectsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_PermissionsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_PermissionsForUserArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
   owner: TCoreReferenceInput;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  userId: Scalars['String']['input'];
-  where?: InputMaybe<Scalars['String']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  userId: TCoreScalars['String']['input'];
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQuery_ProjectsArgs = {
-  limit?: InputMaybe<Scalars['Int']['input']>;
-  offset?: InputMaybe<Scalars['Int']['input']>;
-  sort?: InputMaybe<Array<Scalars['String']['input']>>;
-  where?: InputMaybe<Scalars['String']['input']>;
+  limit?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  offset?: TCoreInputMaybe<TCoreScalars['Int']['input']>;
+  sort?: TCoreInputMaybe<Array<TCoreScalars['String']['input']>>;
+  where?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreQueryLimits = {
   __typename?: 'QueryLimits';
-  maxOffset: Scalars['Int']['output'];
+  maxOffset: TCoreScalars['Int']['output'];
 };
 
 export type TCoreReference = {
   __typename?: 'Reference';
-  id: Scalars['String']['output'];
-  typeId: Scalars['String']['output'];
+  id: TCoreScalars['String']['output'];
+  typeId: TCoreScalars['String']['output'];
 };
 
 export type TCoreReferenceInput = {
-  id: Scalars['String']['input'];
-  typeId: Scalars['String']['input'];
+  id: TCoreScalars['String']['input'];
+  typeId: TCoreScalars['String']['input'];
 };
 
 export type TCoreRefreshTokenLimits = {
   __typename?: 'RefreshTokenLimits';
-  maxRefreshTokens?: Maybe<Scalars['Long']['output']>;
+  maxRefreshTokens?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreRemoveTeam = {
-  teamId: Scalars['String']['input'];
+  teamId: TCoreScalars['String']['input'];
 };
 
 export type TCoreRemoveTeamMembership = {
-  teamId: Scalars['String']['input'];
+  teamId: TCoreScalars['String']['input'];
   user: TCoreReferenceInput;
 };
 
 export type TCoreRevokedTokens = {
   __typename?: 'RevokedTokens';
   owner: TCoreReference;
-  revoked: Scalars['Long']['output'];
-  teams: Array<Scalars['String']['output']>;
+  revoked: TCoreScalars['Long']['output'];
+  teams: Array<TCoreScalars['String']['output']>;
 };
 
 export type TCoreSearchIndexingConfigurationInput = {
-  products?: InputMaybe<TCoreSearchIndexingConfigurationValuesInput>;
+  products?: TCoreInputMaybe<TCoreSearchIndexingConfigurationValuesInput>;
 };
 
 export type TCoreSearchIndexingConfigurationValuesInput = {
-  status?: InputMaybe<Scalars['String']['input']>;
+  status?: TCoreInputMaybe<TCoreScalars['String']['input']>;
 };
 
 export type TCoreSearchLimits = {
   __typename?: 'SearchLimits';
-  maxTextSize?: Maybe<Scalars['Int']['output']>;
+  maxTextSize?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreSetPermissionActionRightPermissions = {
-  actionRightPermissions: Array<Scalars['String']['input']>;
+  actionRightPermissions: Array<TCoreScalars['String']['input']>;
 };
 
 export type TCoreSetPermissionDataFences = {
@@ -792,104 +796,108 @@ export type TCoreSetPermissionDataFences = {
 };
 
 export type TCoreSetPermissionHiddenMenuItems = {
-  hiddenMenuItems: Array<Scalars['String']['input']>;
+  hiddenMenuItems: Array<TCoreScalars['String']['input']>;
 };
 
 export type TCoreSetPermissionResourceAccessPermissions = {
-  resourceAccessPermissions: Array<Scalars['String']['input']>;
+  resourceAccessPermissions: Array<TCoreScalars['String']['input']>;
 };
 
 export type TCoreShippingMethodLimit = {
   __typename?: 'ShippingMethodLimit';
-  maxShippingMethods?: Maybe<Scalars['Long']['output']>;
+  maxShippingMethods?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreShippingRateInputLocalizedEnumValue = {
   __typename?: 'ShippingRateInputLocalizedEnumValue';
-  key: Scalars['String']['output'];
-  label?: Maybe<Scalars['String']['output']>;
+  key: TCoreScalars['String']['output'];
+  label?: TCoreMaybe<TCoreScalars['String']['output']>;
   labelAllLocales: Array<TCoreLocalizedString>;
 };
 
 export type TCoreShippingRateInputLocalizedEnumValue_LabelArgs = {
-  acceptLanguage?: InputMaybe<Array<Scalars['Locale']['input']>>;
-  locale?: InputMaybe<Scalars['Locale']['input']>;
+  acceptLanguage?: TCoreInputMaybe<Array<TCoreScalars['Locale']['input']>>;
+  locale?: TCoreInputMaybe<TCoreScalars['Locale']['input']>;
 };
 
 export type TCoreShippingRateInputType = {
-  type: Scalars['String']['output'];
+  type: TCoreScalars['String']['output'];
 };
 
 export type TCoreShoppingListLimits = {
   __typename?: 'ShoppingListLimits';
-  maxLineItems?: Maybe<Scalars['Int']['output']>;
-  maxShoppingLists?: Maybe<Scalars['Long']['output']>;
-  maxTextLineItems?: Maybe<Scalars['Int']['output']>;
+  maxLineItems?: TCoreMaybe<TCoreScalars['Int']['output']>;
+  maxShoppingLists?: TCoreMaybe<TCoreScalars['Long']['output']>;
+  maxTextLineItems?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreStoreDataFence = TCoreDataFence & {
   __typename?: 'StoreDataFence';
-  storeKeys: Array<Scalars['String']['output']>;
-  type: Scalars['String']['output'];
+  storeKeys: Array<TCoreScalars['String']['output']>;
+  type: TCoreScalars['String']['output'];
 };
 
 export type TCoreStoreLimits = {
   __typename?: 'StoreLimits';
-  maxInventorySupplyChannelsPerStore?: Maybe<Scalars['Long']['output']>;
-  maxProductDistributionChannelsPerStore?: Maybe<Scalars['Long']['output']>;
-  maxProductSelectionsPerStore?: Maybe<Scalars['Long']['output']>;
-  maxStores?: Maybe<Scalars['Long']['output']>;
+  maxInventorySupplyChannelsPerStore?: TCoreMaybe<
+    TCoreScalars['Long']['output']
+  >;
+  maxProductDistributionChannelsPerStore?: TCoreMaybe<
+    TCoreScalars['Long']['output']
+  >;
+  maxProductSelectionsPerStore?: TCoreMaybe<TCoreScalars['Long']['output']>;
+  maxStores?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreSubscriptionsLimits = {
   __typename?: 'SubscriptionsLimits';
-  maxSubscriptions?: Maybe<Scalars['Int']['output']>;
+  maxSubscriptions?: TCoreMaybe<TCoreScalars['Int']['output']>;
 };
 
 export type TCoreTaxCategoryLimit = {
   __typename?: 'TaxCategoryLimit';
-  maxTaxCategories?: Maybe<Scalars['Long']['output']>;
+  maxTaxCategories?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
 
 export type TCoreTeam = {
   __typename?: 'Team';
-  id: Scalars['String']['output'];
+  id: TCoreScalars['String']['output'];
   members: Array<TCoreUser>;
   membersRef: Array<TCoreReference>;
-  name: Scalars['String']['output'];
+  name: TCoreScalars['String']['output'];
 };
 
 export type TCoreUser = TCoreVersioned & {
   __typename?: 'User';
-  businessRole?: Maybe<TCoreBusinessRole>;
-  createdAt: Scalars['DateTime']['output'];
-  createdBy?: Maybe<TCoreInitiator>;
-  email: Scalars['String']['output'];
-  firstName: Scalars['String']['output'];
-  id: Scalars['String']['output'];
-  language: Scalars['Locale']['output'];
-  lastLoginAt?: Maybe<Scalars['DateTime']['output']>;
-  lastModifiedAt: Scalars['DateTime']['output'];
-  lastModifiedBy?: Maybe<TCoreInitiator>;
-  lastName: Scalars['String']['output'];
-  locked: Scalars['Boolean']['output'];
-  lowercaseEmail: Scalars['String']['output'];
-  numberFormat: Scalars['Locale']['output'];
-  timeZone?: Maybe<Scalars['DateTimeZone']['output']>;
-  version: Scalars['Long']['output'];
+  businessRole?: TCoreMaybe<TCoreBusinessRole>;
+  createdAt: TCoreScalars['DateTime']['output'];
+  createdBy?: TCoreMaybe<TCoreInitiator>;
+  email: TCoreScalars['String']['output'];
+  firstName: TCoreScalars['String']['output'];
+  id: TCoreScalars['String']['output'];
+  language: TCoreScalars['Locale']['output'];
+  lastLoginAt?: TCoreMaybe<TCoreScalars['DateTime']['output']>;
+  lastModifiedAt: TCoreScalars['DateTime']['output'];
+  lastModifiedBy?: TCoreMaybe<TCoreInitiator>;
+  lastName: TCoreScalars['String']['output'];
+  locked: TCoreScalars['Boolean']['output'];
+  lowercaseEmail: TCoreScalars['String']['output'];
+  numberFormat: TCoreScalars['Locale']['output'];
+  timeZone?: TCoreMaybe<TCoreScalars['DateTimeZone']['output']>;
+  version: TCoreScalars['Long']['output'];
 };
 
 /** Versioned object have an ID and version and modification. Every update of this object changes it's version. */
 export type TCoreVersioned = {
-  createdAt: Scalars['DateTime']['output'];
-  createdBy?: Maybe<TCoreInitiator>;
-  id: Scalars['String']['output'];
-  lastModifiedAt: Scalars['DateTime']['output'];
-  lastModifiedBy?: Maybe<TCoreInitiator>;
-  version: Scalars['Long']['output'];
+  createdAt: TCoreScalars['DateTime']['output'];
+  createdBy?: TCoreMaybe<TCoreInitiator>;
+  id: TCoreScalars['String']['output'];
+  lastModifiedAt: TCoreScalars['DateTime']['output'];
+  lastModifiedBy?: TCoreMaybe<TCoreInitiator>;
+  version: TCoreScalars['Long']['output'];
 };
 
 export type TCoreZoneLimits = {
   __typename?: 'ZoneLimits';
-  maxZones?: Maybe<Scalars['Long']['output']>;
+  maxZones?: TCoreMaybe<TCoreScalars['Long']['output']>;
 };
