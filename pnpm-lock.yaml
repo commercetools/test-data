@@ -409,6 +409,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.9.3
         version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.9.3
+        version: link:../../graphql-types
       '@commercetools-test-data/product-discount':
         specifier: 10.9.3
         version: link:../product-discount

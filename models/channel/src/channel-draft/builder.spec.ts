@@ -59,7 +59,6 @@ describe('ChannelDraft builder', () => {
           coordinates: [expect.any(Number), expect.any(Number)],
           __typename: 'Geometry',
         }),
-        __typename: 'ChannelDraft',
       })
     );
   });
@@ -117,7 +116,6 @@ describe('ChannelDraft compatibility builder', () => {
           coordinates: [expect.any(Number), expect.any(Number)],
           __typename: 'Geometry',
         }),
-        __typename: 'ChannelDraft',
       })
     );
   });

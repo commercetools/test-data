@@ -37,7 +37,6 @@ describe(`with deFrUk preset`, () => {
     const deFrUkPreset = presets.graphqlPreset().build();
     expect(deFrUkPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,
@@ -129,7 +128,6 @@ describe(`with deFrUk preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(deFrUkPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,

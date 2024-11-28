@@ -26,6 +26,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelDraftGraphql> = {
   fields: {
     ...commonFieldsConfig,
     geoLocation: fake(() => GeometryGraphql.random()),
-    __typename: 'ChannelDraft',
   },
 };
