@@ -15,11 +15,12 @@
 /.github/CODEOWNERS @commercetools/merchant-center-tech-leadership
 
 # Tooling
-/core/ @commercetools/merchant-center-tech-leadership
+/core/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
+/generators/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 /codegen* @commercetools/shield-team-fe
 
 # Models
-/models @commercetools/merchant-center-tech-leadership
+/models @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 
 /models/associate-role @commercetools/customers-team-fe
 /models/attribute-group @commercetools/pacman-team-fe
