@@ -175,6 +175,9 @@ importers:
       '@graphql-codegen/plugin-helpers':
         specifier: 5.1.0
         version: 5.1.0(graphql@16.8.1)
+      lodash:
+        specifier: 4.17.21
+        version: 4.17.21
 
   models/associate-role:
     dependencies:

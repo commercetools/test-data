@@ -18,6 +18,7 @@
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime-corejs3": "^7.21.0",
-    "@graphql-codegen/plugin-helpers": "5.1.0"
+    "@graphql-codegen/plugin-helpers": "5.1.0",
+    "lodash": "4.17.21"
   }
 }
