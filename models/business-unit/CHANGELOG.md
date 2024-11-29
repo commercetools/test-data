@@ -1,5 +1,29 @@
 # @commercetools-test-data/business-unit
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/store@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/associate-role@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/customer@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/store@10.10.0
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/associate-role@10.10.0
+  - @commercetools-test-data/commons@10.10.0
+  - @commercetools-test-data/customer@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
 ## 10.9.3
 
 ### Patch Changes

@@ -1,5 +1,29 @@
 # @commercetools-test-data/standalone-price
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies [[`2ff2954`](https://github.com/commercetools/test-data/commit/2ff295413c3d3bc1c04d4f134da74f5e3e98f40e)]:
+  - @commercetools-test-data/channel@10.10.1
+  - @commercetools-test-data/product@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/customer-group@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies [[`2f02fac`](https://github.com/commercetools/test-data/commit/2f02fac9b5eb06197f1d4c2f0509ff10d2c5ef6c), [`ac18883`](https://github.com/commercetools/test-data/commit/ac188833fd16f09d109fb420aa2d24d0505da917)]:
+  - @commercetools-test-data/product@10.10.0
+  - @commercetools-test-data/channel@10.10.0
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/commons@10.10.0
+  - @commercetools-test-data/customer-group@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
 ## 10.9.3
 
 ### Patch Changes

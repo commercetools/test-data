@@ -1,5 +1,27 @@
 # @commercetools-test-data/store
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies [[`2ff2954`](https://github.com/commercetools/test-data/commit/2ff295413c3d3bc1c04d4f134da74f5e3e98f40e)]:
+  - @commercetools-test-data/channel@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/product-selection@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies [[`ac18883`](https://github.com/commercetools/test-data/commit/ac188833fd16f09d109fb420aa2d24d0505da917)]:
+  - @commercetools-test-data/channel@10.10.0
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/commons@10.10.0
+  - @commercetools-test-data/product-selection@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
 ## 10.9.3
 
 ### Patch Changes
