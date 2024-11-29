@@ -12,7 +12,7 @@ export type TCreateLocalizedStringBuilder = () => TLocalizedStringBuilder;
 export type TLocalizedStringDraft = TLocalizedString;
 
 export type TLocalizedStringDraftGraphql = Omit<
-  TLocalizedStringGraphql,
+  TCtpLocalizedString,
   '__typename'
 >[];
 

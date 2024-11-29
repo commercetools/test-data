@@ -4,7 +4,7 @@ import {
   SuggestTokenizer,
 } from '@commercetools/platform-sdk';
 import {
-  TLocalizedStringDraftGraphql,
+  TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
@@ -47,22 +47,22 @@ export type TProductProjectionGraphql = Omit<
   categoryOrderHints: TCategoryOrderHintGraphql[];
   categoriesRef: TReferenceGraphql[];
   description?: string | null;
-  descriptionAllLocales?: TLocalizedStringDraftGraphql | null;
+  descriptionAllLocales?: TLocalizedStringGraphql | null;
   name: string;
-  nameAllLocales: TLocalizedStringDraftGraphql;
+  nameAllLocales: TLocalizedStringGraphql;
   metaDescription?: string | null;
-  metaDescriptionAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
   metaKeywords?: string | null;
-  metaKeywordsAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
   metaTitle?: string | null;
-  metaTitleAllLocales?: TLocalizedStringDraftGraphql | null;
+  metaTitleAllLocales?: TLocalizedStringGraphql | null;
   productTypeRef: TReferenceGraphql;
   reviewRatingStatistics?: ReviewRatingStatistics & {
     __typename: 'ReviewRatingStatistics';
   };
   searchKeywords: TSearchKeywords[];
   slug: string;
-  slugAllLocales: TLocalizedStringDraftGraphql;
+  slugAllLocales: TLocalizedStringGraphql;
   state?: TState;
   stateRef?: TReferenceGraphql;
   taxCategory?: TTaxCategory | null;

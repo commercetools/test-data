@@ -1,5 +1,4 @@
 import { buildField } from '@commercetools-test-data/core';
-import type { TCtpLocalizedString } from '@commercetools-test-data/graphql-types/ctp';
 import { TLocalizedStringGraphql } from './types';
 
 const toLocalizedField = <Model>(value?: Model) => {
@@ -17,7 +16,6 @@ const toLocalizedField = <Model>(value?: Model) => {
 const DEFAULT_LOCALE = 'en';
 
 const resolveGraphqlDefaultLocaleValue = (
-  // allLocales?: TLocalizedStringGraphql | TCtpLocalizedString[] | null
   allLocales?: TLocalizedStringGraphql | null
 ) => {
   if (!allLocales || allLocales.length < 1) {
