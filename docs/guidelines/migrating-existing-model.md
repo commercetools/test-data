@@ -36,24 +36,12 @@ In the legacy data models we were supporting three representations of a data mod
 
 ```ts
 import type { Channel } from '@commercetools/platform-sdk';
-import type {
-  TClientLoggingGraphql,
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpChannel } from '@commercetools-test-data/graphql-types';
 
 export type TChannel = Channel;
 export type TChannelRest = Channel;
-export type TChannelGraphql = Omit<
-  TChannel,
-  'name' | 'description' | 'createdBy' | 'lastModifiedBy'
-> & {
-  __typename: 'Channel';
-  createdBy: TClientLoggingGraphql;
-  lastModifiedBy: TClientLoggingGraphql;
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
-};
+export type TChannelGraphql = TCtpChannel;
 ```
 
 In the new implementation patterns, we don't want to keep three representations of the data model so the first one (`TChannel` in this case) should no longer be used. You can see that it is the same as the `TChannelRest` type.
