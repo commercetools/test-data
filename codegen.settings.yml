@@ -17,10 +17,11 @@ extensions:
         config:
           typesPrefix: TMcSettings
           addUnderscoreToArgsType: true
+          useImplementingTypes: true
           scalars:
             DateTime: string
             Json: '{ [key: string]: unknown }'
     hooks:
       afterAllFileWrite:
         - prettier --write
-        - node ./graphql-types/src/types-post-processor.js --types-prefix=TMcSettings
+        - node ./graphql-types/src/types-post-processor.mjs
