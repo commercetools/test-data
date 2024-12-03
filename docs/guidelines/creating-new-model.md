@@ -101,6 +101,36 @@ type TCtpCart = TCtpReferenceExpandable &
 
 You need to bear this in mind when configuring the REST and GraphQL fields of a test data model since the value you will use for populating the referenced entity property will be different among REST and GraphQL specific configuration (and the latter has one extra property compared with the former).
 
+Here is an example:
+
+```ts
+export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
+  fields: {
+    ...commonFieldsConfig,
+    store: fake(() => Reference.presets.storeReference()),
+  },
+};
+export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
+  fields: {
+    ...commonFieldsConfig,
+    __typename: 'InventoryEntry',
+    store: fake(() => StoreGraphql.random()),
+    storeRef: fake((f) => Reference.presets.storeReference()),
+  },
+  postBuild: (model) => {
+    const storeRef = model.store
+      ? Reference.presets
+          .channelReference()
+          .id(model.store.id)
+          .buildGraphql<TReferenceGraphql<'store'>>()
+      : null;
+    return {
+      storeRef,
+    };
+  },
+};
+```
+
 ## Configuring fields
 
 The next step can involve creating the `fields-config` file where we need to implement the population of the default values we want the test data model to have.
