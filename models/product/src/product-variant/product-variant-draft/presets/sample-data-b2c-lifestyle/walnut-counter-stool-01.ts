@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const walnutCounterStool01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('walnutCounterStool01')
     .sku('WCSI-09')
     .prices([
       PriceDraft.presets

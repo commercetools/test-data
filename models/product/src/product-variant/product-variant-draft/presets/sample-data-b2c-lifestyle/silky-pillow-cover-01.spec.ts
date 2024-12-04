@@ -36,7 +36,7 @@ describe(`with silkyPillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Silky_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "silkyPillowCover01",
         "prices": [
           {
             "channel": undefined,
@@ -115,7 +115,7 @@ describe(`with silkyPillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Silky_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "silkyPillowCover01",
         "prices": [
           {
             "channel": undefined,

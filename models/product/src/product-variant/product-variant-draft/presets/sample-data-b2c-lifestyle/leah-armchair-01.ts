@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const leahArmchair01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('leahArmchair01')
     .sku('LAMR-03')
     .prices([
       PriceDraft.presets

@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const cobblestoneRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cobblestoneRug01')
     .sku('CR-098')
     .prices([
       PriceDraft.presets

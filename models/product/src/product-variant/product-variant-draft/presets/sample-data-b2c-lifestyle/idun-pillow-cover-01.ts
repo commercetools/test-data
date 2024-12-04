@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const idunPillowCover01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('idunPillowCover01')
     .sku('IPC-09')
     .prices([
       PriceDraft.presets

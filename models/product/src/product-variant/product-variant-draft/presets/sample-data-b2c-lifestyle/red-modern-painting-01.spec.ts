@@ -39,7 +39,7 @@ describe(`with redModernPainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Red_Modern_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "redModernPainting01",
         "prices": [
           {
             "channel": undefined,
@@ -118,7 +118,7 @@ describe(`with redModernPainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Red_Modern_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "redModernPainting01",
         "prices": [
           {
             "channel": undefined,

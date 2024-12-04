@@ -44,7 +44,7 @@ describe(`with classicBeerMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Beer_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicBeerMug01",
         "prices": [
           {
             "channel": undefined,
@@ -127,7 +127,7 @@ describe(`with classicBeerMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Beer_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicBeerMug01",
         "prices": [
           {
             "channel": undefined,

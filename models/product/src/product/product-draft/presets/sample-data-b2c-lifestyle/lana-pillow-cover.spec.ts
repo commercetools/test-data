@@ -62,7 +62,7 @@ describe(`with lanaPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Lana_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "lanaPillowCover01",
           "prices": [
             {
               "channel": undefined,
@@ -201,7 +201,7 @@ describe(`with lanaPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Lana_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "lanaPillowCover01",
           "prices": [
             {
               "channel": undefined,

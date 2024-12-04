@@ -36,7 +36,7 @@ describe(`with leatherCoaster01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leather_Coaster-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "leatherCoaster01",
         "prices": [
           {
             "channel": undefined,
@@ -115,7 +115,7 @@ describe(`with leatherCoaster01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leather_Coaster-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "leatherCoaster01",
         "prices": [
           {
             "channel": undefined,

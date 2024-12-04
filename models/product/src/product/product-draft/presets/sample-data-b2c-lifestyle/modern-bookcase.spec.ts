@@ -72,7 +72,7 @@ describe(`with modernBookcase preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Bookcase-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernBookcase01",
           "prices": [
             {
               "channel": undefined,
@@ -227,7 +227,7 @@ describe(`with modernBookcase preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Bookcase-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernBookcase01",
           "prices": [
             {
               "channel": undefined,

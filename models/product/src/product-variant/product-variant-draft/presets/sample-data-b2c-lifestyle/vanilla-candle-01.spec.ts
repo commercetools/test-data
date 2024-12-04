@@ -58,7 +58,7 @@ describe(`with vanillaCandle01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Vanilla_Candle-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "vanillaCandle01",
         "prices": [
           {
             "channel": undefined,
@@ -167,7 +167,7 @@ describe(`with vanillaCandle01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Vanilla_Candle-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "vanillaCandle01",
         "prices": [
           {
             "channel": undefined,

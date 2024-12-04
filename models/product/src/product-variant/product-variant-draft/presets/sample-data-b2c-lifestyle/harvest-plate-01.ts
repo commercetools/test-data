@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const harvestPlate01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('harvestPlate01')
     .sku('HP-01')
     .prices([
       PriceDraft.presets

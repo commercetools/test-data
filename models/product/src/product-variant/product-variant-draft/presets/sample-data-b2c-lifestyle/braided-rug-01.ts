@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const braidedRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('braidedRug01')
     .sku('BR-0983')
     .prices([
       PriceDraft.presets

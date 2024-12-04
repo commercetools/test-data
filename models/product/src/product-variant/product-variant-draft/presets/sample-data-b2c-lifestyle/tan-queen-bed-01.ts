@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const tanQueenBed01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('tanQueenBed01')
     .sku('LPQB-084')
     .prices([
       PriceDraft.presets

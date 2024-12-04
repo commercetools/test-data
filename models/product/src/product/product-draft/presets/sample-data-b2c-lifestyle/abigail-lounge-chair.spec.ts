@@ -79,7 +79,7 @@ describe(`with abigailLoungeChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Abigail_Lounge_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "abigailLoungeChair01",
           "prices": [
             {
               "channel": undefined,
@@ -248,7 +248,7 @@ describe(`with abigailLoungeChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Abigail_Lounge_Chair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "abigailLoungeChair01",
           "prices": [
             {
               "channel": undefined,

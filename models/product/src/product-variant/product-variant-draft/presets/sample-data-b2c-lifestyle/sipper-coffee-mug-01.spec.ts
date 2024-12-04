@@ -36,7 +36,7 @@ describe(`with sipperCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sipper_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sipperCoffeeMug01",
         "prices": [
           {
             "channel": undefined,
@@ -115,7 +115,7 @@ describe(`with sipperCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sipper_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "sipperCoffeeMug01",
         "prices": [
           {
             "channel": undefined,

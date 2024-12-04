@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const cottonSilkBedsheet05 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cottonSilkBedsheet05')
     .sku('CSKP-0932')
     .prices([
       PriceDraft.presets

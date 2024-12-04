@@ -44,7 +44,7 @@ describe(`with classicServingTray01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Serving_Tray-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicServingTray01",
         "prices": [
           {
             "channel": undefined,
@@ -131,7 +131,7 @@ describe(`with classicServingTray01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Serving_Tray-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "classicServingTray01",
         "prices": [
           {
             "channel": undefined,

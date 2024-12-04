@@ -53,7 +53,7 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Queen_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernUpholsteredQueenBed01",
         "prices": [
           {
             "channel": undefined,
@@ -136,7 +136,7 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Upholstered_Queen_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernUpholsteredQueenBed01",
         "prices": [
           {
             "channel": undefined,

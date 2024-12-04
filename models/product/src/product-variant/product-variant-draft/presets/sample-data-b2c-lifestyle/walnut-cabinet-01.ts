@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const walnutCabinet01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('walnutCabinet01')
     .sku('WCS-09')
     .prices([
       PriceDraft.presets

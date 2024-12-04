@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('doubleWalledEspressoGlass01')
     .sku('DWEG-09')
     .prices([
       PriceDraft.presets

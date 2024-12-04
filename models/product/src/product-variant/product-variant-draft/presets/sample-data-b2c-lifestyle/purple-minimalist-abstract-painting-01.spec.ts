@@ -42,7 +42,7 @@ describe(`with purpleMinimalistAbstractPainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Purple_Minimalist_Abstract_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "purpleMinimalistAbstractPainting01",
         "prices": [
           {
             "channel": undefined,
@@ -140,7 +140,7 @@ describe(`with purpleMinimalistAbstractPainting01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Purple_Minimalist_Abstract_Painting-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "purpleMinimalistAbstractPainting01",
         "prices": [
           {
             "channel": undefined,

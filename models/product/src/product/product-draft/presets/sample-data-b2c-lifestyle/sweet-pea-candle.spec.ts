@@ -87,7 +87,7 @@ describe(`with sweetPeaCandle preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sweet_Pea_Candle-1.3.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "sweetPeaCandle01",
           "prices": [
             {
               "channel": undefined,
@@ -250,7 +250,7 @@ describe(`with sweetPeaCandle preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sweet_Pea_Candle-1.3.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "sweetPeaCandle01",
           "prices": [
             {
               "channel": undefined,

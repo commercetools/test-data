@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const willowTeapot01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('willowTeapot01')
     .sku('WTP-09')
     .prices([
       PriceDraft.presets

@@ -44,7 +44,7 @@ describe(`with cloudQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cloud_Queen_Bed-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cloudQueenBed01",
         "prices": [
           {
             "channel": undefined,
@@ -131,7 +131,7 @@ describe(`with cloudQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cloud_Queen_Bed-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cloudQueenBed01",
         "prices": [
           {
             "channel": undefined,

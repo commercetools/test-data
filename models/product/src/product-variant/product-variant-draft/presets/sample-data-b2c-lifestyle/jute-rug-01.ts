@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const juteRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('juteRug01')
     .sku('JAR-08')
     .prices([
       PriceDraft.presets

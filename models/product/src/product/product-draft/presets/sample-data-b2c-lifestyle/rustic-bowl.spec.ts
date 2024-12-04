@@ -47,7 +47,7 @@ describe(`with rusticBowl preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Bowl-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "rusticBowl01",
           "prices": [
             {
               "channel": undefined,
@@ -176,7 +176,7 @@ describe(`with rusticBowl preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Bowl-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "rusticBowl01",
           "prices": [
             {
               "channel": undefined,

@@ -35,7 +35,7 @@ describe(`with ravenBowl01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Raven_Bowl-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ravenBowl01",
         "prices": [
           {
             "channel": undefined,
@@ -114,7 +114,7 @@ describe(`with ravenBowl01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Raven_Bowl-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ravenBowl01",
         "prices": [
           {
             "channel": undefined,

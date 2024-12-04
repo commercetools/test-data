@@ -68,7 +68,7 @@ describe(`with charlieArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Charlie_Armchair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "charlieArmchair01",
           "prices": [
             {
               "channel": undefined,
@@ -215,7 +215,7 @@ describe(`with charlieArmchair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Charlie_Armchair-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "charlieArmchair01",
           "prices": [
             {
               "channel": undefined,

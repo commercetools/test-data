@@ -50,7 +50,7 @@ describe(`with travelCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Travel_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "travelCoffeeMug01",
         "prices": [
           {
             "channel": undefined,
@@ -133,7 +133,7 @@ describe(`with travelCoffeeMug01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Travel_Coffee_Mug-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "travelCoffeeMug01",
         "prices": [
           {
             "channel": undefined,

@@ -83,7 +83,7 @@ describe(`with artDecoCoffeeTable preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Art_Deco_Coffee_Table-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "artDecoCoffeeTable01",
           "prices": [
             {
               "channel": undefined,
@@ -238,7 +238,7 @@ describe(`with artDecoCoffeeTable preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Art_Deco_Coffee_Table-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "artDecoCoffeeTable01",
           "prices": [
             {
               "channel": undefined,

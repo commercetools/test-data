@@ -53,7 +53,7 @@ describe(`with minimalistModernSideTable02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Minimalist_Modern_Side_Table-2.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "minimalistModernSideTable02",
         "prices": [
           {
             "channel": undefined,
@@ -136,7 +136,7 @@ describe(`with minimalistModernSideTable02 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Minimalist_Modern_Side_Table-2.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "minimalistModernSideTable02",
         "prices": [
           {
             "channel": undefined,

@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const modernBookcase01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('modernBookcase01')
     .sku('MB-0973')
     .prices([
       PriceDraft.presets

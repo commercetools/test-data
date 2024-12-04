@@ -44,7 +44,7 @@ describe(`with greenServingPlate01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Green_Serving_Plate-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "greenServingPlate01",
         "prices": [
           {
             "channel": undefined,
@@ -131,7 +131,7 @@ describe(`with greenServingPlate01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Green_Serving_Plate-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "greenServingPlate01",
         "prices": [
           {
             "channel": undefined,

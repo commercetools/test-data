@@ -43,7 +43,7 @@ describe(`with rumiChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rumi_Chair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rumiChair01",
         "prices": [
           {
             "channel": undefined,
@@ -126,7 +126,7 @@ describe(`with rumiChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rumi_Chair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rumiChair01",
         "prices": [
           {
             "channel": undefined,

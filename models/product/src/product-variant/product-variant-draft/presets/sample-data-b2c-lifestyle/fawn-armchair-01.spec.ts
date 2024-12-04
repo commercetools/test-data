@@ -46,7 +46,7 @@ describe(`with fawnArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Fawn_Armchair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "fawnArmchair01",
         "prices": [
           {
             "channel": undefined,
@@ -129,7 +129,7 @@ describe(`with fawnArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Fawn_Armchair-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "fawnArmchair01",
         "prices": [
           {
             "channel": undefined,

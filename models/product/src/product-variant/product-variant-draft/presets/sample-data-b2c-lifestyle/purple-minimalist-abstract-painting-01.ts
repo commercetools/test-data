@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const purpleMinimalistAbstractPainting01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('purpleMinimalistAbstractPainting01')
     .sku('PMAP-01')
     .prices([
       PriceDraft.presets

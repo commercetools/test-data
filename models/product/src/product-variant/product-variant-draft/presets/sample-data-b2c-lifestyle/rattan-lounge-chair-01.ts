@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const rattanLoungeChair01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('rattanLoungeChair01')
     .sku('RLC-08')
     .prices([
       PriceDraft.presets

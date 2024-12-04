@@ -64,7 +64,7 @@ describe(`with willowTeapot preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Willow_Teapot-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "willowTeapot01",
           "prices": [
             {
               "channel": undefined,
@@ -211,7 +211,7 @@ describe(`with willowTeapot preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Willow_Teapot-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "willowTeapot01",
           "prices": [
             {
               "channel": undefined,

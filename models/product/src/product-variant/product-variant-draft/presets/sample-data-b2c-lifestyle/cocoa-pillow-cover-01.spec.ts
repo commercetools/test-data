@@ -42,7 +42,7 @@ describe(`with cocoaPillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocoa_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocoaPillowCover01",
         "prices": [
           {
             "channel": undefined,
@@ -121,7 +121,7 @@ describe(`with cocoaPillowCover01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocoa_Pillow_Cover-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocoaPillowCover01",
         "prices": [
           {
             "channel": undefined,

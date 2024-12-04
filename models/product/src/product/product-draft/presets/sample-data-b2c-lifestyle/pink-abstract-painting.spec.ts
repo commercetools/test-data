@@ -64,7 +64,7 @@ describe(`with pinkAbstractPainting preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Pink_Abstract_Painting-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "pinkAbstractPainting01",
           "prices": [
             {
               "channel": undefined,
@@ -207,7 +207,7 @@ describe(`with pinkAbstractPainting preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Pink_Abstract_Painting-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "pinkAbstractPainting01",
           "prices": [
             {
               "channel": undefined,

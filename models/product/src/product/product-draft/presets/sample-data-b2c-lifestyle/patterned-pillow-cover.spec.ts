@@ -60,7 +60,7 @@ describe(`with patternedPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "patternedPillowCover01",
           "prices": [
             {
               "channel": undefined,
@@ -179,7 +179,7 @@ describe(`with patternedPillowCover preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-2.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "patternedPillowCover02",
             "prices": [
               {
                 "channel": undefined,
@@ -287,7 +287,7 @@ describe(`with patternedPillowCover preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "patternedPillowCover01",
           "prices": [
             {
               "channel": undefined,
@@ -413,7 +413,7 @@ describe(`with patternedPillowCover preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Patterned_Pillow_Cover-2.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "patternedPillowCover02",
             "prices": [
               {
                 "channel": undefined,

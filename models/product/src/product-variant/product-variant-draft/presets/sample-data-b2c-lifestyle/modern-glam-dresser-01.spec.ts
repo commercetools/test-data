@@ -61,7 +61,7 @@ describe(`with modernGlamDresser01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Glam_Dresser-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernGlamDresser01",
         "prices": [
           {
             "channel": undefined,
@@ -156,7 +156,7 @@ describe(`with modernGlamDresser01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Glam_Dresser-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "modernGlamDresser01",
         "prices": [
           {
             "channel": undefined,

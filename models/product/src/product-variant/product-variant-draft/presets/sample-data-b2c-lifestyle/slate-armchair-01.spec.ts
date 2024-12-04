@@ -44,7 +44,7 @@ describe(`with slateArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Slate_Armchair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "slateArmchair01",
         "prices": [
           {
             "channel": undefined,
@@ -131,7 +131,7 @@ describe(`with slateArmchair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Slate_Armchair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "slateArmchair01",
         "prices": [
           {
             "channel": undefined,

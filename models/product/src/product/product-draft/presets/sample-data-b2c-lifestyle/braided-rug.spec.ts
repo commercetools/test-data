@@ -68,7 +68,7 @@ describe(`with braidedRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Braided_Rug-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "braidedRug01",
           "prices": [
             {
               "channel": undefined,
@@ -222,7 +222,7 @@ describe(`with braidedRug preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Braided_Rug-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "braidedRug01",
           "prices": [
             {
               "channel": undefined,

@@ -69,7 +69,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Traditional_L_Seater_Sofa-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "traditionalLSeaterSofa01",
         "prices": [
           {
             "channel": undefined,
@@ -168,7 +168,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Traditional_L_Seater_Sofa-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "traditionalLSeaterSofa01",
         "prices": [
           {
             "channel": undefined,

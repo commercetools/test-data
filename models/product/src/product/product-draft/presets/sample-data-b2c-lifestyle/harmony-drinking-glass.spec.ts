@@ -61,7 +61,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Harmony_Drinking_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "harmonyDrinkingGlass01",
           "prices": [
             {
               "channel": undefined,
@@ -222,7 +222,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Harmony_Drinking_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "harmonyDrinkingGlass01",
           "prices": [
             {
               "channel": undefined,

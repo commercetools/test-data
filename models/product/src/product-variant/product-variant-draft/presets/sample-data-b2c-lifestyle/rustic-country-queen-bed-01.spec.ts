@@ -50,7 +50,7 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Country_Queen_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rusticCountryQueenBed01",
         "prices": [
           {
             "channel": undefined,
@@ -133,7 +133,7 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rustic_Country_Queen_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rusticCountryQueenBed01",
         "prices": [
           {
             "channel": undefined,

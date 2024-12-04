@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const ecruDoubleBed01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ecruDoubleBed01')
     .sku('SQB-034')
     .prices([
       PriceDraft.presets

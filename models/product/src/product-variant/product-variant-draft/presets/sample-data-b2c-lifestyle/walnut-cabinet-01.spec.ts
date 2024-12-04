@@ -47,7 +47,7 @@ describe(`with walnutCabinet01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Walnut_Cabinet-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "walnutCabinet01",
         "prices": [
           {
             "channel": undefined,
@@ -152,7 +152,7 @@ describe(`with walnutCabinet01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Walnut_Cabinet-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "walnutCabinet01",
         "prices": [
           {
             "channel": undefined,

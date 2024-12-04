@@ -42,7 +42,7 @@ describe(`with ecruDoubleBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ecru_Double_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ecruDoubleBed01",
         "prices": [
           {
             "channel": undefined,
@@ -121,7 +121,7 @@ describe(`with ecruDoubleBed01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ecru_Double_Bed-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ecruDoubleBed01",
         "prices": [
           {
             "channel": undefined,

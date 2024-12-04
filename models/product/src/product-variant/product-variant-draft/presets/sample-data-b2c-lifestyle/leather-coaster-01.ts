@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const leatherCoaster01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('leatherCoaster01')
     .sku('LCO-034')
     .prices([
       PriceDraft.presets

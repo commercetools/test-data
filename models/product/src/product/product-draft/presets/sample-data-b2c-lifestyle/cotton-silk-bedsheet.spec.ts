@@ -72,7 +72,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "cottonSilkBedsheet01",
           "prices": [
             {
               "channel": undefined,
@@ -196,7 +196,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-2.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet02",
             "prices": [
               {
                 "channel": undefined,
@@ -288,7 +288,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-3.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet03",
             "prices": [
               {
                 "channel": undefined,
@@ -388,7 +388,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-4.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet04",
             "prices": [
               {
                 "channel": undefined,
@@ -488,7 +488,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-5.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet05",
             "prices": [
               {
                 "channel": undefined,
@@ -588,7 +588,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-6.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet06",
             "prices": [
               {
                 "channel": undefined,
@@ -680,7 +680,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-7.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet07",
             "prices": [
               {
                 "channel": undefined,
@@ -772,7 +772,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-8.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet08",
             "prices": [
               {
                 "channel": undefined,
@@ -864,7 +864,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-9.1.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "cottonSilkBedsheet09",
             "prices": [
               {
                 "channel": undefined,

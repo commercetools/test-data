@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const modernUpholsteredTwinBed04 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('modernUpholsteredTwinBed04')
     .sku('MUTB-04')
     .prices([
       PriceDraft.presets

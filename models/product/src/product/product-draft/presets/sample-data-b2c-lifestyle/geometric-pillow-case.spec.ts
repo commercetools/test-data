@@ -82,7 +82,7 @@ describe(`with geometricPillowCase preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "geometricPillowCase01",
           "prices": [
             {
               "channel": undefined,
@@ -215,7 +215,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-2.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "geometricPillowCase02",
             "prices": [
               {
                 "channel": undefined,
@@ -316,7 +316,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-3.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "geometricPillowCase03",
             "prices": [
               {
                 "channel": undefined,
@@ -436,7 +436,7 @@ describe(`with geometricPillowCase preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "geometricPillowCase01",
           "prices": [
             {
               "channel": undefined,
@@ -566,7 +566,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-2.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "geometricPillowCase02",
             "prices": [
               {
                 "channel": undefined,
@@ -652,7 +652,7 @@ describe(`with geometricPillowCase preset`, () => {
                 "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-3.2.jpeg",
               },
             ],
-            "key": undefined,
+            "key": "geometricPillowCase03",
             "prices": [
               {
                 "channel": undefined,

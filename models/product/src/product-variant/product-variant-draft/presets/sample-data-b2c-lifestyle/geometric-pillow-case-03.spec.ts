@@ -57,7 +57,7 @@ describe(`with geometricPillowCase03 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-3.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "geometricPillowCase03",
         "prices": [
           {
             "channel": undefined,
@@ -144,7 +144,7 @@ describe(`with geometricPillowCase03 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Geometric_Pillow_Case-3.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "geometricPillowCase03",
         "prices": [
           {
             "channel": undefined,

@@ -68,7 +68,7 @@ describe(`with cottonTwoSeaterSofa preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Two_Seater_Sofa-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "cottonTwoSeaterSofa01",
           "prices": [
             {
               "channel": undefined,

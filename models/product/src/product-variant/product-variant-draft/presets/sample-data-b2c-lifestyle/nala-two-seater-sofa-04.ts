@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const nalaTwoSeaterSofa04 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('nalaTwoSeaterSofa04')
     .sku('NTTS-04')
     .prices([
       PriceDraft.presets

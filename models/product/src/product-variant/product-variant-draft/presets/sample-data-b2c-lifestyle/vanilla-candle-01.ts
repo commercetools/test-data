@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const vanillaCandle01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('vanillaCandle01')
     .sku('VC-01')
     .prices([
       PriceDraft.presets

@@ -69,7 +69,7 @@ describe(`with modernBlackCoaster preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Black_Coaster-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernBlackCoaster01",
           "prices": [
             {
               "channel": undefined,
@@ -220,7 +220,7 @@ describe(`with modernBlackCoaster preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Modern_Black_Coaster-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "modernBlackCoaster01",
           "prices": [
             {
               "channel": undefined,

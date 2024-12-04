@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const squareBambooCoaster01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('squareBambooCoaster01')
     .sku('BAMB-084')
     .prices([
       PriceDraft.presets

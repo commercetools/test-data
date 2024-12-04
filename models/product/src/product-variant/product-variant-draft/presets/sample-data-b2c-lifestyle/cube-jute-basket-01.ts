@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const cubeJuteBasket01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cubeJuteBasket01')
     .sku('CJB-01')
     .prices([
       PriceDraft.presets

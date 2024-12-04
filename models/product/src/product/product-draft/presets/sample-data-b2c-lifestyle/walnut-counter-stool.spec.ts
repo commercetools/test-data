@@ -69,7 +69,7 @@ describe(`with walnutCounterStool preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Walnut_Counter_Stool-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "walnutCounterStool01",
           "prices": [
             {
               "channel": undefined,
@@ -220,7 +220,7 @@ describe(`with walnutCounterStool preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Walnut_Counter_Stool-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "walnutCounterStool01",
           "prices": [
             {
               "channel": undefined,

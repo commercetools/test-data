@@ -38,7 +38,7 @@ describe(`with meadowRug03 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Meadow_Rug-3.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "meadowRug03",
         "prices": [
           {
             "channel": undefined,
@@ -117,7 +117,7 @@ describe(`with meadowRug03 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Meadow_Rug-3.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "meadowRug03",
         "prices": [
           {
             "channel": undefined,

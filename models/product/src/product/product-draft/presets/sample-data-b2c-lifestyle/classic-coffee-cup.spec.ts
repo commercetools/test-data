@@ -71,7 +71,7 @@ describe(`with classicCoffeeCup preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Coffee_Cup-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "classicCoffeeCup01",
           "prices": [
             {
               "channel": undefined,
@@ -222,7 +222,7 @@ describe(`with classicCoffeeCup preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Classic_Coffee_Cup-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "classicCoffeeCup01",
           "prices": [
             {
               "channel": undefined,

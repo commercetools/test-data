@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const harmonyDrinkingGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('harmonyDrinkingGlass01')
     .sku('HDG-02')
     .prices([
       PriceDraft.presets

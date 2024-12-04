@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const cocktailStrainer01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cocktailStrainer01')
     .sku('STRA-095')
     .prices([
       PriceDraft.presets

@@ -63,7 +63,7 @@ describe(`with doubleSidedShotGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Sided_Shot_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "doubleSidedShotGlass01",
           "prices": [
             {
               "channel": undefined,

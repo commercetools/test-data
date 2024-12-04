@@ -59,7 +59,7 @@ describe(`with cottonSilkBedsheet05 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-5.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cottonSilkBedsheet05",
         "prices": [
           {
             "channel": undefined,
@@ -150,7 +150,7 @@ describe(`with cottonSilkBedsheet05 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cotton_Silk_Bedsheet-5.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cottonSilkBedsheet05",
         "prices": [
           {
             "channel": undefined,

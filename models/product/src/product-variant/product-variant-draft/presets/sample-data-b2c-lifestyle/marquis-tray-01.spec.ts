@@ -35,7 +35,7 @@ describe(`with marquisTray01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Marquis_Tray-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "marquisTray01",
         "prices": [
           {
             "channel": undefined,
@@ -114,7 +114,7 @@ describe(`with marquisTray01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Marquis_Tray-1.1.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "marquisTray01",
         "prices": [
           {
             "channel": undefined,

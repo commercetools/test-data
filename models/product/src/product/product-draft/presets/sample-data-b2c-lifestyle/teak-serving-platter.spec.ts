@@ -68,7 +68,7 @@ describe(`with teakServingPlatter preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Teak_Serving_Platter-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "teakServingPlatter01",
           "prices": [
             {
               "channel": undefined,
@@ -215,7 +215,7 @@ describe(`with teakServingPlatter preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Teak_Serving_Platter-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "teakServingPlatter01",
           "prices": [
             {
               "channel": undefined,

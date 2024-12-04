@@ -55,7 +55,7 @@ describe(`with ivoryLoungeChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ivory_Lounge_Chair-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ivoryLoungeChair01",
         "prices": [
           {
             "channel": undefined,
@@ -150,7 +150,7 @@ describe(`with ivoryLoungeChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Ivory_Lounge_Chair-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "ivoryLoungeChair01",
         "prices": [
           {
             "channel": undefined,

@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const abigailLoungeChair01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('abigailLoungeChair01')
     .sku('ALC-01')
     .prices([
       PriceDraft.presets

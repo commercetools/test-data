@@ -72,7 +72,7 @@ describe(`with leatherWeaveChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leather_Weave_Chair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "leatherWeaveChair01",
           "prices": [
             {
               "channel": undefined,
@@ -227,7 +227,7 @@ describe(`with leatherWeaveChair preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Leather_Weave_Chair-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "leatherWeaveChair01",
           "prices": [
             {
               "channel": undefined,

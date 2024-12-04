@@ -50,7 +50,7 @@ describe(`with cocktailStrainer01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Strainer-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocktailStrainer01",
         "prices": [
           {
             "channel": undefined,
@@ -137,7 +137,7 @@ describe(`with cocktailStrainer01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Cocktail_Strainer-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "cocktailStrainer01",
         "prices": [
           {
             "channel": undefined,

@@ -69,7 +69,7 @@ describe(`with sparkleChampagneGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sparkle_Champagne_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "sparkleChampagneGlass01",
           "prices": [
             {
               "channel": undefined,
@@ -216,7 +216,7 @@ describe(`with sparkleChampagneGlass preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Sparkle_Champagne_Glass-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "sparkleChampagneGlass01",
           "prices": [
             {
               "channel": undefined,

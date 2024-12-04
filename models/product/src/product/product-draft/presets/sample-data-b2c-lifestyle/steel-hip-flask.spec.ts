@@ -60,7 +60,7 @@ describe(`with steelHipFlask preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Steel_Hip_Flask-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "steelHipFlask01",
           "prices": [
             {
               "channel": undefined,
@@ -221,7 +221,7 @@ describe(`with steelHipFlask preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Steel_Hip_Flask-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "steelHipFlask01",
           "prices": [
             {
               "channel": undefined,

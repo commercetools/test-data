@@ -52,7 +52,7 @@ describe(`with rattanLoungeChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rattan_Lounge_Chair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rattanLoungeChair01",
         "prices": [
           {
             "channel": undefined,
@@ -143,7 +143,7 @@ describe(`with rattanLoungeChair01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Rattan_Lounge_Chair-1.2.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "rattanLoungeChair01",
         "prices": [
           {
             "channel": undefined,

@@ -60,7 +60,7 @@ describe(`with opalKingBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Opal_King_Bed-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "opalKingBed01",
           "prices": [
             {
               "channel": undefined,
@@ -203,7 +203,7 @@ describe(`with opalKingBed preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Opal_King_Bed-1.1.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "opalKingBed01",
           "prices": [
             {
               "channel": undefined,

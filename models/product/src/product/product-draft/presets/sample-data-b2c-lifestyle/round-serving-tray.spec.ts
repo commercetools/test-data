@@ -76,7 +76,7 @@ describe(`with roundServingTray preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Round_Serving_Tray-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "roundServingTray01",
           "prices": [
             {
               "channel": undefined,
@@ -235,7 +235,7 @@ describe(`with roundServingTray preset`, () => {
               "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Round_Serving_Tray-1.2.jpeg",
             },
           ],
-          "key": undefined,
+          "key": "roundServingTray01",
           "prices": [
             {
               "channel": undefined,

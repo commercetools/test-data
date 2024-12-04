@@ -16,6 +16,7 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const steelHipFlask01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('steelHipFlask01')
     .sku('FLAS-094')
     .prices([
       PriceDraft.presets

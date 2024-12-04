@@ -7,6 +7,7 @@ import * as ProductVariantDraft from '../../index';
 const minimalistModernSideTable02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('minimalistModernSideTable02')
     .sku('MMST-02')
     .prices([
       PriceDraft.presets

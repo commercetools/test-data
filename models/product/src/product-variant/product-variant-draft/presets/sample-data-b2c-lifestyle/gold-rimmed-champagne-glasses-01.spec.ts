@@ -74,7 +74,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Gold_Rimmed_Champagne_Glasses-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "goldRimmedChampagneGlasses01",
         "prices": [
           {
             "channel": undefined,
@@ -181,7 +181,7 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
             "url": "https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Gold_Rimmed_Champagne_Glasses-1.3.jpeg",
           },
         ],
-        "key": undefined,
+        "key": "goldRimmedChampagneGlasses01",
         "prices": [
           {
             "channel": undefined,
