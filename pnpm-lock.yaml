@@ -167,17 +167,7 @@ importers:
         specifier: ^2.4.9
         version: 2.4.9
 
-  graphql-types:
-    dependencies:
-      '@babel/runtime-corejs3':
-        specifier: ^7.21.0
-        version: 7.24.6
-      '@graphql-codegen/plugin-helpers':
-        specifier: 5.1.0
-        version: 5.1.0(graphql@16.8.1)
-      lodash:
-        specifier: 4.17.21
-        version: 4.17.21
+  graphql-types: {}
 
   models/associate-role:
     dependencies:
