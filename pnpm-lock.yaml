@@ -158,13 +158,13 @@ importers:
         version: 4.19.2
     devDependencies:
       '@types/lodash':
-        specifier: ^4.17.10
+        specifier: 4.17.10
         version: 4.17.10
       '@types/mustache':
-        specifier: ^4.2.5
+        specifier: 4.2.5
         version: 4.2.5
       '@types/prompts':
-        specifier: ^2.4.9
+        specifier: 2.4.9
         version: 2.4.9
 
   graphql-types: {}
@@ -3115,9 +3115,6 @@ packages:
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
-
-  '@types/node@20.16.10':
-    resolution: {integrity: sha512-vQUKgWTjEIRFCvK6CyriPH3MZYiYlNy0fKiEYHWbcoWLEgs4opurGGKlebrTLqdSMIbXImH6XExNiIyNUv3WpA==}
 
   '@types/node@20.17.9':
     resolution: {integrity: sha512-0JOXkRyLanfGPE2QRCwgxhzlBAvaRdCNMcvbd7jFfpmD4eEXll7LRwy5ymJmyeZqk7Nh7eD2LeUyQ68BbndmXw==}
@@ -8978,10 +8975,6 @@ snapshots:
 
   '@types/node@12.20.55': {}
 
-  '@types/node@20.16.10':
-    dependencies:
-      undici-types: 6.19.8
-
   '@types/node@20.17.9':
     dependencies:
       undici-types: 6.19.8
@@ -8990,7 +8983,7 @@ snapshots:
 
   '@types/prompts@2.4.9':
     dependencies:
-      '@types/node': 20.16.10
+      '@types/node': 20.17.9
       kleur: 3.0.3
 
   '@types/prop-types@15.7.12': {}

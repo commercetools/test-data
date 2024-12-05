@@ -25,8 +25,8 @@
     "tsx": "4.19.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.10",
-    "@types/mustache": "^4.2.5",
-    "@types/prompts": "^2.4.9"
+    "@types/lodash": "4.17.10",
+    "@types/mustache": "4.2.5",
+    "@types/prompts": "2.4.9"
   }
 }
