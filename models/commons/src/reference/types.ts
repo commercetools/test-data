@@ -1,4 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpReference } from '@commercetools-test-data/graphql-types';
 
 export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
 
@@ -17,15 +18,18 @@ export type TCreateReferenceBuilder<TypeId = string> =
 
 export type TReferenceRest<
   TypeId = string,
-  ExpandedObject extends TExpandedReferenceObject<TypeId> = TExpandedReferenceObject<TypeId>
+  ExpandedObject extends
+    TExpandedReferenceObject<TypeId> = TExpandedReferenceObject<TypeId>,
 > = TReference<TypeId> & {
   obj: ExpandedObject;
 };
 
-export type TReferenceGraphql<TypeId = string> =
-  TExpandedReferenceObject<TypeId> & {
-    __typename: 'Reference';
-  };
+export type TReferenceGraphql<TypeId = string> = Omit<
+  TCtpReference,
+  'typeId'
+> & {
+  typeId: TypeId;
+};
 
 // Draft representation
 export interface TReferenceDraft<TypeId = string> {

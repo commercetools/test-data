@@ -699,6 +699,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.10.1
         version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.10.1
+        version: link:../../graphql-types
       '@commercetools-test-data/product':
         specifier: 10.10.1
         version: link:../product

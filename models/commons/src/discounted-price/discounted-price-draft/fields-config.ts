@@ -26,6 +26,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedPriceDraftGraphq
   {
     fields: {
       ...commonFieldsConfig,
-      __typename: 'DiscountedProductPriceValue',
     },
   };

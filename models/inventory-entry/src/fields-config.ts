@@ -1,4 +1,3 @@
-import { ChannelGraphql } from '@commercetools-test-data/channel';
 import {
   ClientLogging,
   Reference,
@@ -27,20 +26,19 @@ const commonFieldsConfig = {
   availableQuantity: fake((f) => f.number.int()),
   restockableInDays: fake((f) => f.number.int()),
   expectedDelivery: fake(getFutureDate),
+  supplyChannel: null,
   custom: null,
 };
 export const restFieldsConfig: TModelFieldsConfig<TInventoryEntryRest> = {
   fields: {
     ...commonFieldsConfig,
-    supplyChannel: fake(() => Reference.presets.channelReference()),
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
   fields: {
     ...commonFieldsConfig,
     __typename: 'InventoryEntry',
-    supplyChannel: fake(() => ChannelGraphql.random()),
-    supplyChannelRef: fake((f) => Reference.presets.channelReference()),
+    supplyChannelRef: null,
   },
   postBuild: (model) => {
     const supplyChannelRef = model.supplyChannel

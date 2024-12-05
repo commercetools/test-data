@@ -22,6 +22,7 @@
     "@commercetools-test-data/channel": "10.10.1",
     "@commercetools-test-data/commons": "10.10.1",
     "@commercetools-test-data/core": "10.10.1",
+    "@commercetools-test-data/graphql-types": "10.10.1",
     "@commercetools-test-data/product": "10.10.1",
     "@commercetools-test-data/utils": "10.10.1",
     "@commercetools/platform-sdk": "7.14.0",
