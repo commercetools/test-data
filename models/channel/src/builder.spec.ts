@@ -91,6 +91,7 @@ const validateRestModel = (model: TChannelRest) => {
 
 const validateGraphqlModel = (model: TChannelGraphql) => {
   validateCommonFields(model);
+
   expect(model).toEqual(
     expect.objectContaining({
       __typename: 'Channel',
@@ -131,6 +132,7 @@ const validateGraphqlModel = (model: TChannelGraphql) => {
       }),
       geoLocation: expect.objectContaining({
         __typename: 'Geometry',
+        coordinates: [expect.any(Number), expect.any(Number)],
       }),
     })
   );
@@ -145,7 +147,7 @@ describe('Channel model builders', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = populateGraphqlModel(ChannelGraphql.random())
-      .geoLocation(Geometry.random())
+      .geoLocation(GeometryGraphql.random())
       .build();
 
     validateGraphqlModel(graphqlModel);

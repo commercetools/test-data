@@ -37,7 +37,6 @@ describe(`with defaultChannel preset`, () => {
     const defaultChannelPreset = presets.graphqlPreset().build();
     expect(defaultChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,
@@ -131,7 +130,6 @@ describe(`with defaultChannel preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(defaultChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,

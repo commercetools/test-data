@@ -33,7 +33,6 @@ describe(`with distributionChannel preset`, () => {
     const distributionChannelPreset = presets.graphqlPreset().build();
     expect(distributionChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": [
@@ -92,7 +91,6 @@ describe(`with distributionChannel preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(distributionChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": [

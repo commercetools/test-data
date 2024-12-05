@@ -33,7 +33,6 @@ describe(`with inventoryChannel preset`, () => {
     const inventoryChannelPreset = presets.graphqlPreset().build();
     expect(inventoryChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": [
@@ -92,7 +91,6 @@ describe(`with inventoryChannel preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(inventoryChannelPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": [

@@ -37,7 +37,6 @@ describe(`with spain preset`, () => {
     const spainPreset = presets.graphqlPreset().build();
     expect(spainPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,
@@ -129,7 +128,6 @@ describe(`with spain preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(spainPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,

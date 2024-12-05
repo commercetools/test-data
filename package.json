@@ -23,7 +23,8 @@
     "generate-types:settings": "graphql-codegen -r dotenv/config --config codegen.settings.yml",
     "generate-types:mc": "graphql-codegen -r dotenv/config --config codegen.mc.yml",
     "generate-types:core": "graphql-codegen -r dotenv/config --config codegen.core.yml",
-    "generate-types": "pnpm generate-types:settings && generate-types:mc && generate-types:core",
+    "generate-types:ctp": "graphql-codegen -r dotenv/config --config codegen.ctp.yml",
+    "generate-types": "pnpm generate-types:settings && pnpm generate-types:mc && pnpm generate-types:core && pnpm generate-types:ctp",
     "generate-model": "pnpm --filter @commercetools-test-data/generators generate"
   },
   "dependencies": {

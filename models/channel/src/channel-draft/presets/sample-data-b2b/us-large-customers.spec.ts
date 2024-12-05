@@ -37,7 +37,6 @@ describe(`with usLargeCustomers preset`, () => {
     const usLargeCustomersPreset = presets.graphqlPreset().build();
     expect(usLargeCustomersPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,
@@ -131,7 +130,6 @@ describe(`with usLargeCustomers preset`, () => {
       .buildGraphql<TChannelDraftGraphql>();
     expect(usLargeCustomersPreset).toMatchInlineSnapshot(`
       {
-        "__typename": "ChannelDraft",
         "address": undefined,
         "custom": undefined,
         "description": undefined,

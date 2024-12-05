@@ -6,6 +6,13 @@ import { render as renderTemplate } from 'squirrelly';
 import { CodeGenerator } from '../types';
 import { packageTemplatesData, modelTemplatesData } from './templates';
 
+const servicesToTypePrefixMap = {
+  core: 'TCore',
+  ctp: 'TCtp',
+  mc: 'TMc',
+  settings: 'TMcSettings',
+} as const;
+
 function ensureDirectory(filePath: string) {
   const dirPath = dirname(filePath);
   if (!existsSync(dirPath)) {
@@ -23,6 +30,22 @@ export const newTestModelGenerator: CodeGenerator = {
         'What is the name of the model? (eg: Order, ProductProjection, etc)',
     });
     const modelCodename = snakeCase(modelName).replaceAll('_', '-');
+
+    const { modelOwningService } = await prompts({
+      type: 'select',
+      name: 'modelOwningService',
+      message: 'What is the name of the service that owns this model',
+      choices: [
+        { title: 'Core (Organization related models)', value: 'core' },
+        { title: 'CTP (Project related models)', value: 'ctp' },
+        { title: 'MC Gateway', value: 'mc' },
+        { title: 'MC Settings', value: 'settings' },
+      ],
+    });
+    const graphqlTypePrefix =
+      servicesToTypePrefixMap[
+        modelOwningService as keyof typeof servicesToTypePrefixMap
+      ];
 
     const { generationType } = await prompts({
       type: 'select',
@@ -54,8 +77,18 @@ export const newTestModelGenerator: CodeGenerator = {
       );
     }
 
+    // Get the current version of the packages in this repo
+    const corePackageJson = await import(
+      join(__dirname, '..', '..', '..', 'core', 'package.json')
+    );
+
     // 2. Generate the files
-    const templatesData = { modelName, modelCodename };
+    const templatesData = {
+      modelName,
+      modelCodename,
+      graphqlTypePrefix,
+      packageVersion: corePackageJson.version,
+    };
 
     console.log(''); // a simple line break
     if (generationType === 'standalone') {
