@@ -22,7 +22,7 @@ describe('InventoryEntry model builders', () => {
         restockableInDays: expect.any(Number),
         availableQuantity: expect.any(Number),
         expectedDelivery: expect.any(String),
-        supplyChannel: expect.any(Object),
+        supplyChannel: null,
         custom: null,
       })
     );
@@ -45,17 +45,8 @@ describe('InventoryEntry model builders', () => {
         restockableInDays: expect.any(Number),
         availableQuantity: expect.any(Number),
         expectedDelivery: expect.any(String),
-        supplyChannel: expect.objectContaining({
-          __typename: 'Channel',
-          address: expect.objectContaining({
-            country: expect.any(String),
-          }),
-        }),
-        supplyChannelRef: expect.objectContaining({
-          __typename: 'Reference',
-          id: expect.any(String),
-          typeId: 'channel',
-        }),
+        supplyChannel: null,
+        supplyChannelRef: null,
         custom: null,
         __typename: 'InventoryEntry',
       })
@@ -81,7 +72,7 @@ describe('InventoryEntry model compatibility builders', () => {
         restockableInDays: expect.any(Number),
         availableQuantity: expect.any(Number),
         expectedDelivery: expect.any(String),
-        supplyChannel: expect.any(Object),
+        supplyChannel: null,
         custom: null,
       })
     );
@@ -104,9 +95,8 @@ describe('InventoryEntry model compatibility builders', () => {
         quantityOnStock: expect.any(Number),
         restockableInDays: expect.any(Number),
         expectedDelivery: expect.any(String),
-        supplyChannel: expect.objectContaining({
-          __typename: 'Channel',
-        }),
+        supplyChannel: null,
+        supplyChannelRef: null,
         custom: null,
       })
     );
