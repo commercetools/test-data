@@ -23,46 +23,17 @@ Here's an example of such a file:
 
 ```ts
 import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
-import type {
-  TClientLoggingGraphql,
-  TGeometryGraphql,
-  TGeometryRest,
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  TCtpChannel,
+  TCtpChannelDraft,
+} from '@commercetools-test-data/graphql-types';
 
-export type TChannel = Channel;
-export type TChannelRest = Omit<Channel, 'geoLocation'> & {
-  geoLocation?: TGeometryRest;
-};
-export type TChannelGraphql = Omit<
-  Channel,
-  // In GraphQL, these properties have different shapes.
-  'name' | 'description' | 'createdBy' | 'lastModifiedBy' | 'geoLocation'
-> & {
-  __typename: 'Channel';
-  createdBy?: TClientLoggingGraphql;
-  lastModifiedBy?: TClientLoggingGraphql;
-  name?: string;
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
-  geoLocation?: TGeometryGraphql;
-};
+export type TChannelRest = Channel;
+export type TChannelGraphql = TCtpChannel;
 
-export type TChannelDraftRest = Omit<ChannelDraft, 'geoLocation'> & {
-  geoLocation?: TGeometryRest;
-};
-export type TChannelDraftGraphql = Omit<
-  ChannelDraft,
-  'name' | 'description' | 'geoLocation'
-> & {
-  name?: TLocalizedStringDraftGraphql;
-  description?: TLocalizedStringDraftGraphql;
-  geoLocation?: TGeometryGraphql;
-  __typename: 'ChannelDraft';
-};
+export type TChannelDraftRest = ChannelDraft;
+export type TChannelDraftGraphql = TCtpChannelDraft;
 
 export type TCreateChannelBuilder<
   TChannelModel extends
@@ -75,10 +46,90 @@ export type TCreateChannelBuilder<
 
 As you can see, we have four main types: two for the full entity (`TChannelRest` and `TChannelGraphql`) and another pair for the draft version (`TChannelDraftRest` and `TChannelDraftGraphql`).
 
-The REST representations are just using the `@commercetools/platform-sdk`.
+The REST representations are just using the `@commercetools/platform-sdk` package.
 This is a package which is auto-generated with the latest versions of the commercetools REST APIs and already contains all the Typescript interfaces describing the models.
 
-On the other hand, the GraphQL representation can use the previous ones as a blueprint, but most likely will use different types for some of their properties (specially the nested models).
+For GraphQL, we use the `@commercetools-test-data/graphql-types` package.
+This is an internal package of this repository and it exposes the types for the different services we might want to use models from: `core` (organization related), `ctp` (project related), `mc` (MC Gateway) and `settings` (MC Settings).
+You might want to run the `generate-types` NPM script to make sure the package types are updated.
+
+### Handling references
+
+Something relevant to keep in mind is that reference properties are handled differently between the REST and GraphQL APIs.
+
+References are the way our APIs can link entities with each other but the design is a little different.
+
+In the REST APIs, whenever we want to link entities chances are we don't want to bring the linked entity when we load the main entity we want to use. For this reason, referenced entity objects looks like this:
+
+```ts
+export interface StoreReference {
+  readonly typeId: 'store';
+  readonly id: string;
+  readonly obj?: Store;
+}
+
+// Usage example
+interface Cart extends BaseResource {
+  readonly id: string;
+  ...
+  readonly store?: StoreReference;
+}
+```
+
+As you can see, the object by default only loads the ID of the referenced entity but it also has an `obj` optional property with the actual linked entity object you can optionally load (through endpoint parameters).
+
+Since GraphQL implements a query language where consumers can define what they want to consume, the way those types are defined is different.
+In this context, what was decided is to actually have the property defined as the linked entity but also have a reference property similar:
+
+```ts
+type TCtpReference = {
+  __typename?: 'KeyReference';
+  key: TCtpScalars['String']['output'];
+  typeId: TCtpScalars['String']['output'];
+};
+
+// Usage example
+type TCtpCart = TCtpReferenceExpandable &
+  TCtpVersioned & {
+    __typename?: 'Cart';
+    id: TCtpScalars['String']['output'];
+    ...
+    store?: TCtpMaybe<TCtpStore>;
+    storeRef?: TCtpMaybe<TCtpReference>;
+  };
+```
+
+You need to bear this in mind when configuring the REST and GraphQL fields of a test data model since the value you will use for populating the referenced entity property will be different among REST and GraphQL specific configuration (and the latter has one extra property compared with the former).
+
+Here is an example:
+
+```ts
+export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
+  fields: {
+    ...commonFieldsConfig,
+    store: fake(() => Reference.presets.storeReference()),
+  },
+};
+export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
+  fields: {
+    ...commonFieldsConfig,
+    __typename: 'InventoryEntry',
+    store: fake(() => StoreGraphql.random()),
+    storeRef: fake((f) => Reference.presets.storeReference()),
+  },
+  postBuild: (model) => {
+    const storeRef = model.store
+      ? Reference.presets
+          .channelReference()
+          .id(model.store.id)
+          .buildGraphql<TReferenceGraphql<'store'>>()
+      : null;
+    return {
+      storeRef,
+    };
+  },
+};
+```
 
 ## Configuring fields
 
@@ -119,7 +170,6 @@ const commonFieldsConfig = {
   address: fake(() => Address.random()),
   reviewRatingStatistics: null,
   custom: null,
-  geoLocation: null,
 };
 export const restFieldsConfig: TModelFieldsConfig<TChannelRest> = {
   fields: {
