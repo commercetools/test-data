@@ -13,6 +13,9 @@ import type {
  * @deprecated use `TInventoryEntryRest` instead
  */
 export type TInventoryEntry = InventoryEntry;
+/**
+ * @deprecated use `TInventoryEntryDraftRest` instead
+ */
 export type TInventoryEntryDraft = InventoryEntryDraft;
 
 // REST
