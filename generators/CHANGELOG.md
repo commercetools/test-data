@@ -1,5 +1,7 @@
 # @commercetools-test-data/generators
 
+## 10.11.0
+
 ## 10.10.1
 
 ## 10.10.0
