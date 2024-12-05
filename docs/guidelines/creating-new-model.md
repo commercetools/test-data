@@ -78,7 +78,7 @@ interface Cart extends BaseResource {
 
 As you can see, the object by default only loads the ID of the referenced entity but it also has an `obj` optional property with the actual linked entity object you can optionally load (through endpoint parameters).
 
-Since GraphQL implements a query language where consumers can define what they want to consumer, the way those types are defined is different.
+Since GraphQL implements a query language where consumers can define what they want to consume, the way those types are defined is different.
 In this context, what was decided is to actually have the property defined as the linked entity but also have a reference property similar:
 
 ```ts
