@@ -1,99 +1,122 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
+import { CustomFieldBooleanType } from '@commercetools-test-data/type';
+import {
+  getDefaultGraphqlLocalesExpect,
+  getDefaultRestLocalesExpect,
+} from '@commercetools-test-data/utils/src/test-utils';
 import { roles } from '../constants';
-import type { TChannelDraft, TChannelDraftGraphql } from '../types';
-import * as ChannelDraft from './index';
+import { TChannelDraftGraphql, TChannelDraftRest } from '../types';
+import { ChannelDraft, ChannelDraftGraphql, ChannelDraftRest } from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TChannelDraft, TChannelDraft>(
-      'default',
-      ChannelDraft.random(),
+describe('ChannelDraft builder', () => {
+  it('should build a valid REST object', () => {
+    const channelDraft = ChannelDraftRest.random()
+      .custom(CustomFieldBooleanType.random())
+      .build();
+
+    expect(channelDraft).toEqual(
       expect.objectContaining({
         key: expect.any(String),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
+        roles: [roles.Primary],
+        name: getDefaultRestLocalesExpect(),
+        description: getDefaultRestLocalesExpect(),
+        address: expect.objectContaining({
+          country: expect.any(String),
+          state: expect.any(String),
+          city: expect.any(String),
         }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
+        custom: expect.objectContaining({
+          name: 'Boolean',
         }),
-        custom: null,
         geoLocation: expect.objectContaining({
+          type: 'Point',
           coordinates: [expect.any(Number), expect.any(Number)],
         }),
-        roles: [roles.Primary],
       })
-    )
-  );
-  it(
-    ...createBuilderSpec<TChannelDraft, TChannelDraft>(
-      'rest',
-      ChannelDraft.random(),
+    );
+  });
+
+  it('should build a valid Graphql object', () => {
+    const channelDraft = ChannelDraftGraphql.random()
+      .custom(CustomFieldBooleanType.random())
+      .build();
+
+    expect(channelDraft).toEqual(
       expect.objectContaining({
         key: expect.any(String),
-        name: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
-        description: expect.objectContaining({
-          en: expect.any(String),
-          de: expect.any(String),
-          fr: expect.any(String),
-        }),
-        custom: null,
-        geoLocation: expect.objectContaining({
-          coordinates: [expect.any(Number), expect.any(Number)],
-        }),
         roles: [roles.Primary],
+        name: getDefaultGraphqlLocalesExpect(),
+        description: getDefaultGraphqlLocalesExpect(),
+        address: expect.objectContaining({
+          city: expect.any(String),
+          __typename: 'Address',
+        }),
+        custom: expect.objectContaining({
+          name: 'Boolean',
+          __typename: 'BooleanCustomFieldType',
+        }),
+        geoLocation: expect.objectContaining({
+          type: 'Point',
+          coordinates: [expect.any(Number), expect.any(Number)],
+          __typename: 'Geometry',
+        }),
       })
-    )
-  );
-  it(
-    ...createBuilderSpec<TChannelDraft, TChannelDraftGraphql>(
-      'graphql',
-      ChannelDraft.random(),
+    );
+  });
+});
+
+describe('ChannelDraft compatibility builder', () => {
+  it('should build a valid REST object', () => {
+    const channelDraft = ChannelDraft.random()
+      .custom(CustomFieldBooleanType.random())
+      .buildRest<TChannelDraftRest>();
+
+    expect(channelDraft).toEqual(
       expect.objectContaining({
         key: expect.any(String),
-        name: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'de',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'en',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'fr',
-            value: expect.any(String),
-          }),
-        ]),
-        description: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'de',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'en',
-            value: expect.any(String),
-          }),
-          expect.objectContaining({
-            locale: 'fr',
-            value: expect.any(String),
-          }),
-        ]),
-        custom: null,
+        roles: [roles.Primary],
+        name: getDefaultRestLocalesExpect(),
+        description: getDefaultRestLocalesExpect(),
+        address: expect.objectContaining({
+          country: expect.any(String),
+          state: expect.any(String),
+          city: expect.any(String),
+        }),
+        custom: expect.objectContaining({
+          name: 'Boolean',
+        }),
         geoLocation: expect.objectContaining({
+          type: 'Point',
           coordinates: [expect.any(Number), expect.any(Number)],
         }),
-        roles: [roles.Primary],
       })
-    )
-  );
+    );
+  });
+
+  it('should build a valid Graphql object', () => {
+    const channelDraft = ChannelDraft.random()
+      .custom(CustomFieldBooleanType.random())
+      .buildGraphql<TChannelDraftGraphql>();
+
+    expect(channelDraft).toEqual(
+      expect.objectContaining({
+        key: expect.any(String),
+        roles: [roles.Primary],
+        name: getDefaultGraphqlLocalesExpect(),
+        description: getDefaultGraphqlLocalesExpect(),
+        address: expect.objectContaining({
+          city: expect.any(String),
+          __typename: 'Address',
+        }),
+        custom: expect.objectContaining({
+          name: 'Boolean',
+          __typename: 'BooleanCustomFieldType',
+        }),
+        geoLocation: expect.objectContaining({
+          type: 'Point',
+          coordinates: [expect.any(Number), expect.any(Number)],
+          __typename: 'Geometry',
+        }),
+      })
+    );
+  });
 });

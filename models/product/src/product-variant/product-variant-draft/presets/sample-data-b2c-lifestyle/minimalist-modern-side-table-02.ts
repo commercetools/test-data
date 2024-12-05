@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const minimalistModernSideTable02 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('minimalistModernSideTable02')
     .sku('MMST-02')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('4999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(4999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('4999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(4999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('4999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(4999))
         .country('US'),
     ])

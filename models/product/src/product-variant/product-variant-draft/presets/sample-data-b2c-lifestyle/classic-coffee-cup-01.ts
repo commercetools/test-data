@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const classicCoffeeCup01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('classicCoffeeCup01')
     .sku('CCC-09')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('6999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(6999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('6999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(6999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('6999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(6999))
         .country('US'),
     ])

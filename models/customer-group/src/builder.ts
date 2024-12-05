@@ -5,6 +5,7 @@ import type { TCreateCustomerGroupBuilder, TCustomerGroup } from './types';
 
 const Model: TCreateCustomerGroupBuilder = () =>
   Builder<TCustomerGroup>({
+    name: 'CustomerGroup',
     generator,
     transformers,
   });

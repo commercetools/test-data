@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const greenServingPlate01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('greenServingPlate01')
     .sku('GC-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('599EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(599))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('599GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(599))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('599USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(599))
         .country('US'),
     ])

@@ -1,4 +1,10 @@
-import type { Category, CategoryDraft } from '@commercetools/platform-sdk';
+import type {
+  Asset,
+  Category,
+  CategoryDraft,
+  CustomFields,
+  Reference,
+} from '@commercetools/platform-sdk';
 import type {
   TClientLoggingGraphql,
   TLocalizedStringDraftGraphql,
@@ -48,14 +54,46 @@ export type TCategoryGraphql = Omit<
   lastModifiedBy: TClientLoggingGraphql;
   name: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   slug: string;
   slugAllLocales?: TLocalizedStringGraphql | null;
-  metaTitle?: string;
+  metaTitle?: string | null;
   metaTitleAllLocales?: TLocalizedStringGraphql | null;
-  metaKeywords?: string;
+  metaKeywords?: string | null;
   metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
-  metaDescription?: string;
+  metaDescription?: string | null;
   metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
+};
+
+// CategorySearch
+export type TCategorySearch = {
+  id: string;
+  key: string;
+  version: number;
+  name?: string | null;
+  description?: string | null;
+  slug?: String | null;
+  ancestorsRef: Reference[];
+  ancestors: TCategorySearch[];
+  parentRef: Reference;
+  parent: TCategorySearch;
+  externalId: String;
+  stagedProductCount: number;
+  childCount: number;
+  productTypeNames: String[] | null;
+  children: TCategorySearch[] | null;
+  createdAt: string;
+  lastModifiedAt: string;
+  orderHint: string;
+  assets: Asset[];
+  custom: CustomFields[];
+};
+export type TCategorySearchBuilder = TBuilder<TCategorySearch>;
+export type TCreateCategorySearchBuilder = () => TCategorySearchBuilder;
+export type TCategorySearchGraphql = TCategorySearch & {
+  nameAllLocales: TLocalizedStringGraphql | null;
+  descriptionAllLocales: TLocalizedStringGraphql | null;
+  slugAllLocales: TLocalizedStringGraphql | null;
+  __typename: 'CategorySearch';
 };

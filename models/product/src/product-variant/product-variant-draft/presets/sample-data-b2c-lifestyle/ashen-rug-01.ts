@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const ashenRug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ashenRug01')
     .sku('ARG-56')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('19999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(19999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('19999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(19999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('19999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(25000))
         .country('US'),
     ])

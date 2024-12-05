@@ -86,7 +86,7 @@ describe('builder', () => {
           }),
         ]),
         orderHint: expect.any(String),
-        description: undefined,
+        description: null,
         descriptionAllLocales: null,
         createdBy: expect.objectContaining({
           customerRef: expect.objectContaining({ typeId: 'customer' }),

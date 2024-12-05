@@ -8,16 +8,16 @@ const transformers = {
   default: Transformer<TStagedStandalonePrice, TStagedStandalonePrice>(
     'default',
     {
-      buildFields: ['value'],
+      buildFields: ['value', 'discounted'],
     }
   ),
   rest: Transformer<TStagedStandalonePrice, TStagedStandalonePrice>('rest', {
-    buildFields: ['value'],
+    buildFields: ['value', 'discounted'],
   }),
   graphql: Transformer<TStagedStandalonePrice, TStagedStandalonePriceGraphql>(
     'graphql',
     {
-      buildFields: ['value'],
+      buildFields: ['value', 'discounted'],
     }
   ),
 };

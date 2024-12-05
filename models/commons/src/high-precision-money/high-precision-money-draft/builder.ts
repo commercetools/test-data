@@ -8,6 +8,7 @@ import transformers from './transformers';
 
 const Model: TCreateHighPrecisionMoneyDraftBuilder = () =>
   Builder<THighPrecisionMoneyDraft>({
+    name: 'HighPrecisionMoneyDraft',
     generator,
     transformers,
   });

@@ -10,7 +10,12 @@ const transformers = {
   }),
   graphql: Transformer<TImage, TImageGraphql>('graphql', {
     buildFields: [],
-    addFields: () => ({
+    replaceFields: ({ fields }) => ({
+      ...fields,
+      dimensions: {
+        width: fields.dimensions.w,
+        height: fields.dimensions.h,
+      },
       __typename: 'Image',
     }),
   }),

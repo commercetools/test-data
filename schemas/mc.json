@@ -1462,6 +1462,22 @@
             "deprecationReason": null
           },
           {
+            "name": "createUserFromIdentity",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "kind": "OBJECT",
+                "name": "User",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "deleteAccount",
             "description": null,
             "args": [
@@ -1531,6 +1547,18 @@
             "name": "importSampleData",
             "description": null,
             "args": [
+              {
+                "name": "dataset",
+                "description": null,
+                "type": {
+                  "kind": "ENUM",
+                  "name": "SampleDatasets",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
               {
                 "name": "projectKey",
                 "description": null,
@@ -2711,6 +2739,18 @@
                 "name": "Boolean",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isUserAdminOfCurrentProject",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -4474,6 +4514,35 @@
         "possibleTypes": null
       },
       {
+        "kind": "ENUM",
+        "name": "SampleDatasets",
+        "description": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "B2B",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "B2CLIFESTYLE",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "GOODSTORE",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
         "kind": "INPUT_OBJECT",
         "name": "SetUserTimeZone",
         "description": null,
@@ -5210,8 +5279,8 @@
                 "ofType": null
               }
             },
-            "isDeprecated": false,
-            "deprecationReason": null
+            "isDeprecated": true,
+            "deprecationReason": "This field is replaced by launchdarklyTrackingCloudEnvironment."
           },
           {
             "name": "numberFormat",
@@ -6488,6 +6557,13 @@
         "description": null,
         "isRepeatable": false,
         "locations": ["FIELD_DEFINITION"],
+        "args": []
+      },
+      {
+        "name": "oneOf",
+        "description": "Indicates exactly one field must be supplied and this field must not be `null`.",
+        "isRepeatable": false,
+        "locations": ["INPUT_OBJECT"],
         "args": []
       },
       {

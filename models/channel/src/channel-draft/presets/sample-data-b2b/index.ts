@@ -1,21 +1,41 @@
-import deFrUk from './de-fr-uk';
-import defaultChannel from './default-channel';
-import defaultWarehouse from './default-warehouse';
-import euWarehouse from './eu-warehouse';
-import spain from './spain';
-import usLargeCustomers from './us-large-customers';
-import usMediumCustomers from './us-medium-customers';
-import usWarehouse from './us-warehouse';
+import * as deFrUkPresets from './de-fr-uk';
+import * as defaultChannelPresets from './default-channel';
+import * as defaultWarehousePresets from './default-warehouse';
+import * as euWarehousePresets from './eu-warehouse';
+import * as spainPresets from './spain';
+import * as usLargeCustomersPresets from './us-large-customers';
+import * as usMediumCustomersPresets from './us-medium-customers';
+import * as usWarehousePresets from './us-warehouse';
 
-const presets = {
-  deFrUk,
-  spain,
-  usLargeCustomers,
-  usMediumCustomers,
-  defaultChannel,
-  euWarehouse,
-  usWarehouse,
-  defaultWarehouse,
+export const restPresets = {
+  euWarehouse: euWarehousePresets.restPreset,
+  defaultWarehouse: defaultWarehousePresets.restPreset,
+  defaultChannel: defaultChannelPresets.restPreset,
+  usMediumCustomers: usMediumCustomersPresets.restPreset,
+  usWarehouse: usWarehousePresets.restPreset,
+  spain: spainPresets.restPreset,
+  usLargeCustomers: usLargeCustomersPresets.restPreset,
+  deFrUk: deFrUkPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  euWarehouse: euWarehousePresets.graphqlPreset,
+  defaultWarehouse: defaultWarehousePresets.graphqlPreset,
+  defaultChannel: defaultChannelPresets.graphqlPreset,
+  usMediumCustomers: usMediumCustomersPresets.graphqlPreset,
+  usWarehouse: usWarehousePresets.graphqlPreset,
+  spain: spainPresets.graphqlPreset,
+  usLargeCustomers: usLargeCustomersPresets.graphqlPreset,
+  deFrUk: deFrUkPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  euWarehouse: euWarehousePresets.compatPreset,
+  defaultWarehouse: defaultWarehousePresets.compatPreset,
+  defaultChannel: defaultChannelPresets.compatPreset,
+  usMediumCustomers: usMediumCustomersPresets.compatPreset,
+  usWarehouse: usWarehousePresets.compatPreset,
+  spain: spainPresets.compatPreset,
+  usLargeCustomers: usLargeCustomersPresets.compatPreset,
+  deFrUk: deFrUkPresets.compatPreset,
+};

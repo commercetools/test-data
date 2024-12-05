@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const orionDoubleBed01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('orionDoubleBed01')
     .sku('OTB-07')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('159900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(159900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('159900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(159900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('159900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(159900))
         .country('US'),
     ])

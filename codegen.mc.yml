@@ -15,6 +15,8 @@ extensions:
         config:
           typesPrefix: TMc
           addUnderscoreToArgsType: true
+          useImplementingTypes: true
     hooks:
       afterAllFileWrite:
         - prettier --write
+        - node ./graphql-types/src/types-post-processor.mjs

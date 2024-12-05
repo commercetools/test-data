@@ -1,0 +1,32 @@
+{
+  "name": "@commercetools-test-data/generators",
+  "private": true,
+  "version": "10.10.1",
+  "description": "Data model generator CLI for commercetools APIs",
+  "main": "dist/commercetools-test-data-generators.cjs.js",
+  "module": "dist/commercetools-test-data-generators.esm.js",
+  "scripts": {
+    "generate": "tsx src/index.ts"
+  },
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "generators"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "7.17.9",
+    "@babel/runtime-corejs3": "7.17.9",
+    "lodash": "4.17.21",
+    "squirrelly": "9.1.0",
+    "prompts": "2.4.2",
+    "tsx": "4.19.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/mustache": "^4.2.5",
+    "@types/prompts": "^2.4.9"
+  }
+}

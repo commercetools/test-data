@@ -1,23 +1,20 @@
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TCtpLocalizedString } from '@commercetools-test-data/graphql-types';
 
 export type TLocalizedString = {
   [locale: string]: string | undefined;
 };
-export type TLocalizedStringGraphql = {
-  __typename: 'LocalizedString';
-  locale: string;
-  value: string | undefined;
-}[];
+export type TLocalizedStringGraphql = TCtpLocalizedString[];
 
 export type TLocalizedStringBuilder = TBuilder<TLocalizedString>;
 export type TCreateLocalizedStringBuilder = () => TLocalizedStringBuilder;
 
 export type TLocalizedStringDraft = TLocalizedString;
 
-export type TLocalizedStringDraftGraphql = {
-  locale: string;
-  value: string | undefined;
-}[];
+export type TLocalizedStringDraftGraphql = Omit<
+  TCtpLocalizedString,
+  '__typename'
+>[];
 
 export type TLocalizedStringDraftBuilder = TBuilder<TLocalizedStringDraft>;
 export type TCreateLocalizedStringDraftBuilder =

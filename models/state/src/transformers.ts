@@ -23,23 +23,25 @@ const transformers = {
   }),
   // Note that the State graphql is provided as scaffolding only and may not be complete at this time.
   graphql: Transformer<TState, TStateGraphql>('graphql', {
-    buildFields: [
-      'name',
-      'description',
-      'createdBy',
-      'lastModifiedBy',
-      'transitions',
-    ],
-    addFields: ({ fields }) => {
+    buildFields: ['createdBy', 'lastModifiedBy', 'transitions'],
+    replaceFields: ({ fields }) => {
       const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
       const descriptionAllLocales = LocalizedString.toLocalizedField(
         fields.description
       );
 
       return {
+        ...(fields as unknown as TStateGraphql),
         __typename: 'State',
         nameAllLocales,
         descriptionAllLocales,
+        name:
+          LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales) ??
+          null,
+        description:
+          LocalizedString.resolveGraphqlDefaultLocaleValue(
+            descriptionAllLocales
+          ) ?? null,
       };
     },
   }),

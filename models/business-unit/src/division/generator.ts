@@ -10,6 +10,7 @@ import {
   sequence,
 } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
+import { approvalRuleMode } from '../company/constants';
 import { status, storeMode, unitType, associateMode } from './constants';
 import type { TDivision } from './types';
 
@@ -38,6 +39,7 @@ const generator = Generator<TDivision>({
     inheritedAssociates: [],
     parentUnit: fake(() => KeyReference.random().typeId('business-unit')),
     topLevelUnit: fake(() => KeyReference.random().typeId('business-unit')),
+    approvalRuleMode: approvalRuleMode.Explicit,
     custom: null,
     createdAt: fake(getOlderDate),
     createdBy: fake(() => ClientLogging.random()),

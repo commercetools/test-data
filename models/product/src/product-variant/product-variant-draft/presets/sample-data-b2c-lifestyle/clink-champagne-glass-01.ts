@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const clinkChampagneGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('clinkChampagneGlass01')
     .sku('CCG-02')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('5499EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(5499))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('5499GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(5499))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('5499USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(5499))
         .country('US'),
     ])

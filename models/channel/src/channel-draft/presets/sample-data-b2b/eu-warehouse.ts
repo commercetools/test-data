@@ -1,26 +1,46 @@
 import { LocalizedStringDraft } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import { roles } from '../../../constants';
-import type { TChannelDraftBuilder } from '../../../types';
-import * as ChannelDraft from '../../index';
+import type {
+  TChannelDraft,
+  TChannelDraftGraphql,
+  TChannelDraftRest,
+} from '../../../types';
+import {
+  ChannelDraft,
+  ChannelDraftGraphql,
+  ChannelDraftRest,
+} from '../../index';
 
-const euWarehouse = (): TChannelDraftBuilder =>
-  ChannelDraft.presets
-    .empty()
+const populatePreset = <
+  TModel extends TChannelDraftRest | TChannelDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('eu-warehouse')
     .name(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE']('Europalager')
-        ['it-IT']('Magazzino Europa')
-        ['nl-NL']('Europa magazijn')
-        ['fr-FR']('Entrepôt Europe')
-        ['en-AU']('Europe warehouse')
-        ['es-ES']('Almacén Europa')
-        ['en-GB']('Europe warehouse')
-        ['en-NZ']('Europe warehouse')
-        ['pt-PT']('Armazém Europa')
-        ['en-US']('Europe warehouse')
+        ['de-DE'](`Europalager`)
+        ['it-IT'](`Magazzino Europa`)
+        ['nl-NL'](`Europa magazijn`)
+        ['fr-FR'](`Entrepôt Europe`)
+        ['en-AU'](`Europe warehouse`)
+        ['es-ES'](`Almacén Europa`)
+        ['en-GB'](`Europe warehouse`)
+        ['en-NZ'](`Europe warehouse`)
+        ['pt-PT'](`Armazém Europa`)
+        ['en-US'](`Europe warehouse`)
     )
     .roles([roles.InventorySupply]);
+};
 
-export default euWarehouse;
+export const restPreset = (): TBuilder<TChannelDraftRest> =>
+  populatePreset(ChannelDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TChannelDraftGraphql> =>
+  populatePreset(ChannelDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TChannelDraft> =>
+  populatePreset(ChannelDraft.presets.empty());

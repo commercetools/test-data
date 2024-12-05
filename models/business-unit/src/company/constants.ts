@@ -3,6 +3,11 @@ export const associateMode = {
   ExplicitAndFromParent: 'ExplicitAndFromParent',
 } as const;
 
+export const approvalRuleMode = {
+  Explicit: 'Explicit',
+  ExplicitAndFromParent: 'ExplicitAndFromParent',
+} as const;
+
 export const status = {
   Active: 'Active',
   Inactive: 'Inactive',

@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/core",
-  "version": "10.1.4",
+  "version": "10.10.1",
   "description": "This package provides the core functions to define the data models",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@faker-js/faker": "^8.0.0",
+    "@faker-js/faker": "^9.0.0",
     "@types/lodash": "^4.17.0",
     "lodash": "^4.17.21"
   }

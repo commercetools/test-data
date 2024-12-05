@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const modernThreeSeaterSofa01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('modernThreeSeaterSofa01')
     .sku('MTSS-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('249900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(249900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('249900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(249900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('249900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(249900))
         .country('US'),
     ])

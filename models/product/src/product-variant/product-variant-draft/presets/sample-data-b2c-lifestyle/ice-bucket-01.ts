@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const iceBucket01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('iceBucket01')
     .sku('BUCK-023')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('499EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(499))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('499GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(499))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('499USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(499))
         .country('US'),
     ])

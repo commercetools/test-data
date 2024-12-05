@@ -5,6 +5,7 @@ import type { TCreateLocalizedFieldBuilder, TLocalizedField } from './types';
 
 const Model: TCreateLocalizedFieldBuilder = () =>
   Builder<TLocalizedField>({
+    name: 'LocalizedField',
     generator,
     transformers,
   });

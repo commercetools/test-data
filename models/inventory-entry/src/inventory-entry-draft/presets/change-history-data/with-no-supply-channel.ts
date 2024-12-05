@@ -1,6 +1,28 @@
-import InventoryEntryDraft from '../../builder';
+import { TBuilder } from '@commercetools-test-data/core';
+import type {
+  TInventoryEntryDraft,
+  TInventoryEntryDraftGraphql,
+  TInventoryEntryDraftRest,
+} from '../../../types';
+import {
+  InventoryEntryDraft,
+  InventoryEntryDraftGraphql,
+  InventoryEntryDraftRest,
+} from '../../index';
 
-const withNoSupplyChannel = () =>
-  InventoryEntryDraft().supplyChannel(undefined);
+const populatePreset = <
+  TModel extends TInventoryEntryDraftRest | TInventoryEntryDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder.supplyChannel(undefined);
+};
 
-export default withNoSupplyChannel;
+export const restPreset = (): TBuilder<TInventoryEntryDraftRest> =>
+  populatePreset(InventoryEntryDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TInventoryEntryDraftGraphql> =>
+  populatePreset(InventoryEntryDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TInventoryEntryDraft> =>
+  populatePreset(InventoryEntryDraft.random());

@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('doubleWalledEspressoGlass01')
     .sku('DWEG-09')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('4299EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(4299))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('4299GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(4299))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('4299USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(4299))
         .country('US'),
     ])
@@ -29,12 +33,6 @@ const doubleWalledEspressoGlass01 = (): TProductVariantDraftBuilder =>
           'https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.1.jpeg'
         )
         .dimensions({ w: 3371, h: 3098 }),
-      ImageDraft.presets
-        .empty()
-        .url(
-          'https://storage.googleapis.com/merchant-center-europe/sample-data/b2c-lifestyle/Double_Walled_Espresso_Glass-1.2.jpeg'
-        )
-        .dimensions({ w: 987, h: 1481 }),
     ])
     .attributes([
       AttributeDraft.random().name('productspec').value({

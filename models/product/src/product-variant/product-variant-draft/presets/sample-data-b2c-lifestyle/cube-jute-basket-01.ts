@@ -16,19 +16,28 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const cubeJuteBasket01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cubeJuteBasket01')
     .sku('CJB-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('1299EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(1299))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('1299GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(1299))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('1299USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(1299))
+        .country('US'),
+      PriceDraft.presets
+        .empty()
+        .key('1199USD_dist')
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(1199))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
         )

@@ -1,5 +1,177 @@
 # @commercetools-test-data/commons
 
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/product-discount@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/product-discount@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
+## 10.9.3
+
+### Patch Changes
+
+- [#711](https://github.com/commercetools/test-data/pull/711) [`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fix an error in the `LocalizedString.resolveGraphqlDefaultLocaleValue` helper function when an empty array is passed as a parameter.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
+## 10.9.2
+
+### Patch Changes
+
+- [#709](https://github.com/commercetools/test-data/pull/709) [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update `LocalizedString.resolveGraphqlDefaultLocaleValue` helper to return `null` instead of `undefined` when not input value is provided.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
+## 10.9.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
+## 10.9.0
+
+### Minor Changes
+
+- [#698](https://github.com/commercetools/test-data/pull/698) [`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b) Thanks [@mario-priceless](https://github.com/mario-priceless)! - introduction of the new type discounted price
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
+## 10.8.1
+
+### Patch Changes
+
+- [#693](https://github.com/commercetools/test-data/pull/693) [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update transformers configuration to comply with the new `buildFields` behaviour.
+
+- Updated dependencies [[`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93)]:
+  - @commercetools-test-data/core@10.8.1
+  - @commercetools-test-data/utils@10.8.1
+
+## 10.8.0
+
+### Minor Changes
+
+- [#688](https://github.com/commercetools/test-data/pull/688) [`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - The main change is about the `core` package where we are introducing support for writing test data models using new implementation patterns which makes the process simpler. Also, the resulting code will be more maintainable.
+
+  You can head over [here]() for updated documentation about those new patterns.
+
+### Patch Changes
+
+- Updated dependencies [[`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03), [`1e2bba1`](https://github.com/commercetools/test-data/commit/1e2bba10e41fd1b7dabc71b0bc2166c538bf6ee8)]:
+  - @commercetools-test-data/core@10.8.0
+  - @commercetools-test-data/utils@10.8.0
+
+## 10.7.1
+
+### Patch Changes
+
+- [#684](https://github.com/commercetools/test-data/pull/684) [`7c08fa2`](https://github.com/commercetools/test-data/commit/7c08fa25a8d9a906401fffeb8b92f20e9358bdce) Thanks [@ragafus](https://github.com/ragafus)! - Add max centAmount value to CentPrecisionMoney and CentPrecisioMoneyDraft models to avoid rounding errors
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.1
+  - @commercetools-test-data/utils@10.7.1
+
+## 10.7.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.0
+  - @commercetools-test-data/utils@10.7.0
+
+## 10.6.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.6.1
+  - @commercetools-test-data/utils@10.6.1
+
+## 10.6.0
+
+### Patch Changes
+
+- [#666](https://github.com/commercetools/test-data/pull/666) [`8a16662`](https://github.com/commercetools/test-data/commit/8a1666229d82d9ed37b7b5baa4d8083b72e3d3c8) Thanks [@antoniolodias](https://github.com/antoniolodias)! - Add `enum-value`, `localized-enum-value` and `field-type` test data models
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.6.0
+  - @commercetools-test-data/utils@10.6.0
+
+## 10.5.2
+
+### Patch Changes
+
+- [#672](https://github.com/commercetools/test-data/pull/672) [`8a124d6`](https://github.com/commercetools/test-data/commit/8a124d687e435db4adaa1f09a4b4a45f7f30160c) Thanks [@ragafus](https://github.com/ragafus)! - Bump @commercetools/platform-sdk dependency version
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.5.2
+  - @commercetools-test-data/utils@10.5.2
+
+## 10.5.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.5.1
+  - @commercetools-test-data/utils@10.5.1
+
+## 10.5.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.5.0
+  - @commercetools-test-data/utils@10.5.0
+
+## 10.4.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.4.0
+  - @commercetools-test-data/utils@10.4.0
+
+## 10.3.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.3.0
+  - @commercetools-test-data/utils@10.3.0
+
+## 10.2.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.2.0
+  - @commercetools-test-data/utils@10.2.0
+
 ## 10.1.4
 
 ### Patch Changes

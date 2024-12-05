@@ -1,6 +1,7 @@
 import { Transformer } from '@commercetools-test-data/core';
 import type {
   TCartDiscountValueAbsolute,
+  TCartDiscountValueAbsoluteCartGraphql,
   TCartDiscountValueAbsoluteGraphql,
 } from './types';
 
@@ -19,11 +20,13 @@ const transformers = {
   ),
   graphql: Transformer<
     TCartDiscountValueAbsolute,
-    TCartDiscountValueAbsoluteGraphql
+    TCartDiscountValueAbsoluteGraphql | TCartDiscountValueAbsoluteCartGraphql
   >('graphql', {
     buildFields: ['money'],
-    addFields: () => ({
-      __typename: 'AbsoluteDiscountValue',
+    addFields: ({ fields }) => ({
+      __typename: fields.applicationMode
+        ? 'AbsoluteCartDiscountValue'
+        : 'AbsoluteDiscountValue',
     }),
   }),
 };

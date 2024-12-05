@@ -1,3 +1,6 @@
+import Builder from './builder';
+import Generator from './generator';
+import Transformer from './transformer';
 import type {
   TReferenceObject,
   TExpandedReference,
@@ -9,6 +12,7 @@ import type {
   TBuildFieldMeta,
   TTransformType,
   TTransformBuildName,
+  TModelFieldsConfig,
 } from './types';
 
 const isFunction = <Fn>(value: unknown): value is Fn =>
@@ -115,17 +119,17 @@ const toGraphqlPaginatedQueryResult = <Model>(
   };
 };
 
-const buildField = <Model>(
+const buildField = <Model, TransformedModel = Model>(
   builder: Model | TBuilder<Model>,
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
-): Model => {
+): TransformedModel => {
   const buildName = convertTransformNameToBuildName(transformName);
   // @ts-ignore: TS does not know about the `Model` being an object.
   const builderField = builder?.[buildName];
   // We need to cast this to `() => Model` as otherwise the value is unknown.
   // We know it's a function because of the proxy builder.
-  const builderFn = builderField as (() => Model) | undefined;
+  const builderFn = builderField as (() => TransformedModel) | undefined;
   if (!builderFn) {
     throw new Error(
       `Builder with name '${buildName}' does not exist on field '${String(
@@ -136,19 +140,22 @@ const buildField = <Model>(
   return builderFn();
 };
 
-const buildFields = <Model>(
+const buildFields = <Model, TransformedModel = Model>(
   builders: (Model | TBuilder<Model>)[],
   transformName: TTransformType = 'default',
   meta?: TBuildFieldMeta<Model>
-): Model[] =>
-  builders.map((builder) => buildField(builder, transformName, meta));
+): TransformedModel[] => {
+  return builders.map((builder) =>
+    buildField<Model, TransformedModel>(builder, transformName, meta)
+  );
+};
 
-const buildGraphqlList = <Model>(
+const buildGraphqlList = <Model, GraphqlModel = Model>(
   builders: TBuilder<Model>[],
   { name, total, offset, __typename }: TGraphqlPaginatedQueryResultOptions
-): TGraphqlPaginatedQueryResult<Model> => {
-  return toGraphqlPaginatedQueryResult<Model>(
-    buildFields<Model>(builders, 'graphql'),
+): TGraphqlPaginatedQueryResult<GraphqlModel> => {
+  return toGraphqlPaginatedQueryResult<GraphqlModel>(
+    buildFields<Model, GraphqlModel>(builders, 'graphql'),
     {
       name,
       __typename,
@@ -158,14 +165,88 @@ const buildGraphqlList = <Model>(
   );
 };
 
-const buildRestList = <Model>(
+const buildRestList = <Model, RestModel = Model>(
   builders: TBuilder<Model>[],
   { total, offset }: TPaginatedQueryResultOptions
-): TPaginatedQueryResult<Model> => {
-  return toRestPaginatedQueryResult(buildFields(builders, 'rest'), {
-    total,
-    offset,
+): TPaginatedQueryResult<RestModel> => {
+  return toRestPaginatedQueryResult<RestModel>(
+    buildFields<Model, RestModel>(builders, 'rest'),
+    {
+      total,
+      offset,
+    }
+  );
+};
+
+const createSpecializedTransformers = <TModel>({
+  type,
+}: {
+  type: 'rest' | 'graphql';
+}) => {
+  return {
+    [type]: Transformer<TModel, TModel>(type, {
+      buildFields: 'all',
+    }),
+  };
+};
+
+type TCreateSpecializedBuilderParams<TModel> = {
+  modelFieldsConfig: TModelFieldsConfig<TModel>;
+  type: 'rest' | 'graphql';
+  name: string;
+};
+const createSpecializedBuilder = <TModel>(
+  params: TCreateSpecializedBuilderParams<TModel>
+) => {
+  const modelBuilder = Builder<TModel>({
+    type: params.type,
+    generator: Generator<TModel>({
+      fields: params.modelFieldsConfig.fields,
+    }),
+    name: params.name,
+    transformers: createSpecializedTransformers<TModel>({
+      type: params.type,
+    }),
+    postBuild: params.modelFieldsConfig.postBuild,
   });
+
+  return modelBuilder as TBuilder<TModel>;
+};
+
+const createCompatibilityBuilder = <TModel>(params: {
+  name: string;
+  modelFieldsConfig: {
+    rest: TModelFieldsConfig<TModel>;
+    graphql: TModelFieldsConfig<TModel>;
+  };
+}) => {
+  const modelBuilder = Builder<TModel>({
+    name: params.name,
+    compatConfig: {
+      generators: {
+        rest: Generator<TModel>({
+          fields: params.modelFieldsConfig.rest.fields,
+        }),
+        graphql: Generator<TModel>({
+          fields: params.modelFieldsConfig.graphql.fields,
+        }),
+      },
+      postBuilders: {
+        rest: params.modelFieldsConfig.rest.postBuild,
+        graphql: params.modelFieldsConfig.graphql.postBuild,
+      },
+    },
+    transformers: {
+      ...createSpecializedTransformers<TModel>({
+        type: 'rest',
+      }),
+      ...createSpecializedTransformers<TModel>({
+        type: 'graphql',
+      }),
+    },
+  });
+
+  return modelBuilder;
 };
 
 export {
@@ -186,4 +267,7 @@ export {
   buildFields,
   buildGraphqlList,
   buildRestList,
+  createSpecializedTransformers,
+  createSpecializedBuilder,
+  createCompatibilityBuilder,
 };

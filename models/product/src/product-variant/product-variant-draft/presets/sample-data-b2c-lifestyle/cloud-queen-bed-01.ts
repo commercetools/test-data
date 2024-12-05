@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const cloudQueenBed01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cloudQueenBed01')
     .sku('CQB-09')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('45999EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(45999))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('45999GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(45999))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('45999USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(45999))
         .country('US'),
     ])

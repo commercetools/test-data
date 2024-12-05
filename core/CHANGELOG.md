@@ -1,5 +1,68 @@
 # @commercetools-test-data/core
 
+## 10.10.1
+
+## 10.10.0
+
+## 10.9.3
+
+## 10.9.2
+
+## 10.9.1
+
+## 10.9.0
+
+## 10.8.1
+
+### Patch Changes
+
+- [#693](https://github.com/commercetools/test-data/pull/693) [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - When creating Transformers, you can provide a `buildFields` property with the list of names of the nested models fields that should be transformed.
+
+  In our latest version, we updated that behaviour so that, if you don't provide that property, the Transformer will automatically detect the nested models and build them.
+
+  There were a few models where transformers where not providing the `buildFields` properties but they meant they didn't want any nested model to be build.
+  In order to cover this use case, we modified the `buildFields` property to also accept `false` as a value, which was used as a signal to not build nested models and we updated those few models accordingly.
+
+  However, we discovered one of our internal packages which relies on this one had many more models with the same use case and it's difficult to update all of them accordingly so we're updating the `buildFields` behaviour again to leave it as it was before.
+
+  So now:
+
+  - If the transformer configuration specifies a list of nested models, only those will be built
+  - In the transformer configuration does not provide the `buildFields` property, no nested model will be built
+  - [NEW] In the transformer configuration contains the `buildFields` property with the string value `all`, every nested model will be built (this is used in the new data models patterns)
+
+## 10.8.0
+
+### Minor Changes
+
+- [#688](https://github.com/commercetools/test-data/pull/688) [`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - The main change is about the `core` package where we are introducing support for writing test data models using new implementation patterns which makes the process simpler. Also, the resulting code will be more maintainable.
+
+  You can head over [here]() for updated documentation about those new patterns.
+
+### Patch Changes
+
+- [#691](https://github.com/commercetools/test-data/pull/691) [`1e2bba1`](https://github.com/commercetools/test-data/commit/1e2bba10e41fd1b7dabc71b0bc2166c538bf6ee8) Thanks [@nima-ct](https://github.com/nima-ct)! - Update core helpers to support accurate typing for transformed models
+
+## 10.7.1
+
+## 10.7.0
+
+## 10.6.1
+
+## 10.6.0
+
+## 10.5.2
+
+## 10.5.1
+
+## 10.5.0
+
+## 10.4.0
+
+## 10.3.0
+
+## 10.2.0
+
 ## 10.1.4
 
 ## 10.1.3

@@ -1,19 +1,37 @@
 import { roles } from '../../constants';
-import { TChannelDraft } from '../../types';
-import withInventorySupplyAndProductDistributionRoles from './with-inventory-supply-and-product-distribution-roles';
+import { TChannelDraftGraphql, TChannelDraftRest } from '../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './with-inventory-supply-and-product-distribution-roles';
 
-describe('with inventory supply and product distribution roles', () => {
-  it('should have InventorySupply and ProductDistribution roles', () => {
-    const channel =
-      withInventorySupplyAndProductDistributionRoles().build<TChannelDraft>();
+const channelExpectation = (
+  channel: TChannelDraftRest | TChannelDraftGraphql
+) => {
+  expect(channel).toMatchObject({
+    roles: expect.arrayContaining([
+      roles.InventorySupply,
+      roles.ProductDistribution,
+    ]),
+  });
+};
 
-    expect(channel).toEqual(
-      expect.objectContaining({
-        roles: expect.arrayContaining([
-          roles.InventorySupply,
-          roles.ProductDistribution,
-        ]),
-      })
-    );
+describe('WithInventorySupplyAndProductDistributionRoles preset', () => {
+  it('[REST] should have InventorySupply and ProductDistribution roles', () => {
+    const emptyChannelDraft = restPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Graphql] should have InventorySupply and ProductDistribution roles', () => {
+    const emptyChannelDraft = graphqlPreset().build();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - REST] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildRest();
+    channelExpectation(emptyChannelDraft);
+  });
+  it('[Compat - Graphql] should set all specified fields to undefined', () => {
+    const emptyChannelDraft = compatPreset().buildGraphql();
+    channelExpectation(emptyChannelDraft);
   });
 });
