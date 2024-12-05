@@ -31,4 +31,14 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedPriceGraphql> =
       discount: fake(() => ProductDiscount.random()),
       discountRef: fake(() => Reference.presets.productDiscountReference()),
     },
+    postBuild: (model) => {
+      if (model.discount) {
+        model.discountRef = Reference.presets
+          .productDiscountReference()
+          .id(model.discount.id)
+          .buildGraphql();
+      }
+
+      return model;
+    },
   };

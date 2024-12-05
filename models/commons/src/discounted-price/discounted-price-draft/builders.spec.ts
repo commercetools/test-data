@@ -23,7 +23,6 @@ describe('DiscountedPriceDraft Builder', () => {
 
     expect(graphqlDraftModel).toEqual(
       expect.objectContaining({
-        __typename: 'DiscountedProductPriceValue',
         value: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),

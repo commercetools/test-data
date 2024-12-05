@@ -34,7 +34,7 @@ describe('DiscountedPrice Builder', () => {
           __typename: 'ProductDiscount',
         }),
         discountRef: expect.objectContaining({
-          id: expect.any(String),
+          id: graphqlModel.discount?.id,
           typeId: 'product-discount',
           __typename: 'Reference',
         }),
