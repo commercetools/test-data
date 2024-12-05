@@ -17,15 +17,15 @@
   "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "7.17.9",
-    "@babel/runtime-corejs3": "7.17.9",
+    "@babel/runtime": "7.26.0",
+    "@babel/runtime-corejs3": "7.26.0",
     "lodash": "4.17.21",
     "squirrelly": "9.1.0",
     "prompts": "2.4.2",
-    "tsx": "4.19.1"
+    "tsx": "4.19.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.7",
+    "@types/lodash": "^4.17.10",
     "@types/mustache": "^4.2.5",
     "@types/prompts": "^2.4.9"
   }
