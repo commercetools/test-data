@@ -1,4 +1,7 @@
-import { CentPrecisionMoney } from '@commercetools-test-data/commons';
+import {
+  CentPrecisionMoney,
+  Reference,
+} from '@commercetools-test-data/commons';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
 import { ShippingRate } from '@commercetools-test-data/shipping-method';
 import type { TShippingInfoGraphql, TShippingInfoRest } from './types';
@@ -30,5 +33,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingInfoGraphql> = {
     shippingMethodRef: null,
     taxCategoryRef: null,
     __typename: 'ShippingInfo',
+  },
+  postBuild: (model) => {
+    return {
+      shippingMethodRef: model.shippingMethod
+        ? Reference.presets
+            .shippingMethodReference()
+            .id(model.shippingMethod.id)
+            .buildGraphql()
+        : model.shippingMethodRef,
+    };
   },
 };

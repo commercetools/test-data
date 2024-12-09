@@ -14,7 +14,15 @@ describe('TaxedItemPrice Builder', () => {
           currencyCode: expect.any(String),
           centAmount: expect.any(Number),
         }),
-        taxPortions: [],
+        taxPortions: expect.arrayContaining([
+          expect.objectContaining({
+            rate: expect.any(Number),
+            amount: expect.objectContaining({
+              currencyCode: expect.any(String),
+              centAmount: expect.any(Number),
+            }),
+          }),
+        ]),
         totalTax: null,
       })
     );
@@ -30,7 +38,11 @@ describe('TaxedItemPrice Builder', () => {
         totalGross: expect.objectContaining({
           __typename: 'Money',
         }),
-        taxPortions: [],
+        taxPortions: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'TaxPortion',
+          }),
+        ]),
         totalTax: null,
         __typename: 'TaxedItemPrice',
       })

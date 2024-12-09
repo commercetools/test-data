@@ -6,21 +6,20 @@ import type { TTaxedItemPriceGraphql, TTaxedItemPriceRest } from './types';
 const commonFieldsConfig = {
   totalNet: fake(() => Money.random()),
   totalGross: fake(() => Money.random()),
-  taxPortions: [],
   totalTax: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TTaxedItemPriceRest> = {
   fields: {
     ...commonFieldsConfig,
-    taxPortions: fake(() => TaxPortionRest.random()),
+    taxPortions: fake(() => [TaxPortionRest.random()]),
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TTaxedItemPriceGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    taxPortions: fake(() => TaxPortionGraphql.random()),
+    taxPortions: fake(() => [TaxPortionGraphql.random()]),
     __typename: 'TaxedItemPrice',
   },
 };
