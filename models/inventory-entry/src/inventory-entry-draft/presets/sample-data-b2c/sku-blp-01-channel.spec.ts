@@ -2,7 +2,7 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import * as presets from './sku-blp-01';
+import * as presets from './sku-blp-01-channel';
 
 describe(`with skuBlp01 preset`, () => {
   it(`should return a skuBlp01 preset when built for rest`, () => {
@@ -15,7 +15,10 @@ describe(`with skuBlp01 preset`, () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -30,7 +33,10 @@ describe(`with skuBlp01 preset`, () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -47,7 +53,10 @@ describe(`with skuBlp01 preset`, () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -64,7 +73,10 @@ describe(`with skuBlp01 preset`, () => {
         "quantityOnStock": 80,
         "restockableInDays": undefined,
         "sku": "BLP-01",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

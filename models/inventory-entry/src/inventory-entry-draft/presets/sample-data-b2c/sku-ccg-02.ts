@@ -1,8 +1,3 @@
-import {
-  ChannelDraft,
-  type TChannelDraft,
-} from '@commercetools-test-data/channel';
-import { KeyReferenceDraft } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductVariantDraft,
@@ -19,10 +14,6 @@ import {
   InventoryEntryDraftRest,
 } from '../../index';
 
-const supplyChannel = ChannelDraft.presets.sampleDataB2CLifestyle
-  .inventoryChannel()
-  .build<TChannelDraft>();
-
 const variant = ProductVariantDraft.presets.sampleDataB2CLifestyle
   .clinkChampagneGlass01()
   .build<TProductVariantDraft>();
@@ -32,10 +23,7 @@ const populatePreset = <
 >(
   builder: TBuilder<TModel>
 ): TBuilder<TModel> => {
-  return builder
-    .sku(variant.sku!)
-    .quantityOnStock(100)
-    .supplyChannel(KeyReferenceDraft.presets.channel().key(supplyChannel.key!));
+  return builder.sku(variant.sku!).quantityOnStock(100);
 };
 
 export const restPreset = (): TBuilder<TInventoryEntryDraftRest> =>
