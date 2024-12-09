@@ -62,3 +62,44 @@ const emptyLineItemDraft = LineItemDraft.presets
   .empty()
   .build<TLineItemDraft>();
 ```
+
+## TaxPortion
+
+```ts
+import {
+  TaxPortionRest,
+  TaxPortionDraftRest,
+  TaxPortionGraphql,
+  TaxPortionDraftGraphql,
+} from '@commercetools-test-data/cart';
+
+const restTaxPortion = TaxPortionRest.random().build();
+const graphqlTaxPortion = TaxPortionGraphql.random().build();
+
+const restTaxPortionDraft = TaxPortionDraftRest.random().build();
+const graphqlTaxPortionDraft = TaxPortionDraftGraphql.random().build();
+```
+
+## TaxedItemPrice
+
+```ts
+import {
+  TaxedItemPriceRest,
+  TaxedItemPriceGraphql,
+} from '@commercetools-test-data/cart';
+
+const restTaxedItemPrice = TaxedItemPriceRest.random().build();
+const graphqlTaxedItemPrice = TaxedItemPriceGraphql.random().build();
+```
+
+## ShippingInfo
+
+```ts
+import {
+  ShippingInfoRest,
+  ShippingInfoGraphql,
+} from '@commercetools-test-data/cart';
+
+const restShippingInfo = ShippingInfoRest.random().build();
+const graphqlShippingInfo = ShippingInfoGraphql.random().build();
+```

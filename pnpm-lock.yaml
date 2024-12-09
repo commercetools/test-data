@@ -279,6 +279,9 @@ importers:
       '@commercetools-test-data/discount-code':
         specifier: 10.10.1
         version: link:../discount-code
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.10.1
+        version: link:../../graphql-types
       '@commercetools-test-data/product':
         specifier: 10.10.1
         version: link:../product

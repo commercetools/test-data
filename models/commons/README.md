@@ -15,6 +15,8 @@ $ pnpm add -D @commercetools-test-data/commons
 - [Address](#address)<br>
 - [CentPrecisionMoney](#centprecisionmoney)<br>
 - [ClientLogging](#clientlogging)<br>
+- [DiscountedLineItemPortion](#dicountedlineitemportion)<br>
+- [DiscountedLineItemPrice](#discountedlineitemprice)<br>
 - [HighPrecisionMoney](#highprecisionmoney)<br>
 - [KeyReference](#keyreference)<br>
 - [LocalizedString](#localizedstring)<br>
@@ -61,6 +63,41 @@ import {
   type TClientLogging,
 } from '@commercetools-test-data/commons';
 const clientLogging = ClientLogging.random().build<TClientLogging>();
+```
+
+# DiscountedLineItemPortion
+
+```ts
+import {
+  DiscountedLineItemPortionRest,
+  DiscountedLineItemPortionDraftRest,
+  DiscountedLineItemPortionGraphql,
+  DiscountedLineItemPortionDraftGraphql,
+} from '@commercetools-test-data/commons';
+
+const restDiscountedLineItemPortion = \
+  DiscountedLineItemPortionRest.random().build();
+const restDiscountedLineItemPortionDraft =
+  DiscountedLineItemPortionDraftRest.random().build();
+
+const graphqlDiscountedLineItemPortion =
+  DiscountedLineItemPortionGraphql.random().build();
+const graphqlDiscountedLineItemPortionDraft =
+  DiscountedLineItemPortionDraftGraphql.random().build();
+```
+
+# DiscountedLineItemPrice
+
+```ts
+import {
+  DiscountedLineItemPriceRest,
+  DiscountedLineItemPriceGraphql,
+} from '@commercetools-test-data/commons';
+
+const restDiscountedLineItemPrice = \
+  DiscountedLineItemPriceRest.random().build();
+const restDiscountedLineItemPriceDraft =
+  DiscountedLineItemPriceDraftRest.random().build();
 ```
 
 # HighPrecisionMoney
