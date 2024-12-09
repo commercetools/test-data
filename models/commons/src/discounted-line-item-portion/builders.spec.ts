@@ -25,9 +25,7 @@ describe('DiscountedLineItemPortion Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        discount: expect.objectContaining({
-          __typename: 'CartDiscount',
-        }),
+        discount: null,
         discountRef: expect.objectContaining({
           id: expect.any(String),
           typeId: 'cart-discount',

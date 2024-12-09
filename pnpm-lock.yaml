@@ -402,9 +402,6 @@ importers:
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
         version: 7.24.6
-      '@commercetools-test-data/cart-discount':
-        specifier: 10.10.1
-        version: link:../cart-discount
       '@commercetools-test-data/core':
         specifier: 10.10.1
         version: link:../../core

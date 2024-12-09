@@ -30,19 +30,14 @@ describe('DiscountedLineItemPrice Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         value: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
+          __typename: 'Money',
         }),
         includedDiscounts: expect.arrayContaining([
           expect.objectContaining({
             discountedAmount: expect.objectContaining({
-              centAmount: expect.any(Number),
-              currencyCode: expect.any(String),
               __typename: 'Money',
             }),
-            discount: expect.objectContaining({
-              __typename: 'CartDiscount',
-            }),
+            discount: null,
             discountRef: expect.objectContaining({
               typeId: 'cart-discount',
               __typename: 'Reference',

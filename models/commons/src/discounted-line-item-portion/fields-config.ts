@@ -1,4 +1,4 @@
-import { CartDiscount } from '@commercetools-test-data/cart-discount';
+// import { CartDiscount } from '@commercetools-test-data/cart-discount';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
 import { Money, Reference, TReferenceGraphql } from '../index';
 import type {
@@ -22,8 +22,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPortionG
   {
     fields: {
       ...commonFieldsConfig,
-      discount: fake(() => CartDiscount.random()),
-      discountRef: null,
+      discount: null,
+      discountRef: fake(() => Reference.presets.cartDiscountReference()),
       __typename: 'DiscountedLineItemPortion',
     },
     postBuild: (model) => {
@@ -33,7 +33,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPortionG
               .cartDiscountReference()
               .id(model.discount.id)
               .buildGraphql<TReferenceGraphql<'cart-discount'>>()
-          : undefined,
+          : model.discountRef,
       };
     },
   };
