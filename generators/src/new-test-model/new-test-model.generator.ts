@@ -20,6 +20,21 @@ function ensureDirectory(filePath: string) {
   }
 }
 
+function modelTemplatesFilter(
+  isPresetExampleRequired: boolean,
+  isDraftModel = false
+) {
+  return (template: { templatePath: string; templateContent: string }) => {
+    if (isDraftModel && template.templatePath.includes('types')) {
+      return false;
+    }
+    if (!isPresetExampleRequired && template.templatePath.includes('example')) {
+      return false;
+    }
+    return true;
+  };
+}
+
 export const newTestModelGenerator: CodeGenerator = {
   generate: async () => {
     // 1. Get input information
@@ -35,6 +50,13 @@ export const newTestModelGenerator: CodeGenerator = {
       type: 'confirm',
       name: 'isDraftRequired',
       message: 'Does this model require a Draft?',
+      initial: false,
+    });
+
+    const { isPresetExampleRequired } = await prompts({
+      type: 'confirm',
+      name: 'isPresetExampleRequired',
+      message: 'Do you want to generate a preset example?',
       initial: false,
     });
 
@@ -95,6 +117,7 @@ export const newTestModelGenerator: CodeGenerator = {
       modelCodename,
       graphqlTypePrefix,
       isDraftRequired,
+      isPresetExampleRequired,
       packageVersion: corePackageJson.version,
     };
 
@@ -111,44 +134,45 @@ export const newTestModelGenerator: CodeGenerator = {
       });
     }
 
-    modelTemplatesData.forEach((template) => {
-      const filePath = join(
-        outputPath,
-        generationType === 'standalone' ? 'src' : '',
-        template.templatePath
-      );
-      ensureDirectory(filePath);
-      console.log(`Generating file: ${filePath}`);
-      writeFileSync(
-        filePath,
-        renderTemplate(template.templateContent, templatesData)
-      );
-    });
-
-    if (isDraftRequired) {
-      modelTemplatesData.forEach((template) => {
-        if (template.templatePath.includes('types')) {
-          return;
-        }
-
+    modelTemplatesData
+      .filter(modelTemplatesFilter(isPresetExampleRequired))
+      .forEach((template) => {
         const filePath = join(
           outputPath,
-          'src',
-          `${modelCodename}-draft`,
+          generationType === 'standalone' ? 'src' : '',
           template.templatePath
         );
         ensureDirectory(filePath);
         console.log(`Generating file: ${filePath}`);
         writeFileSync(
           filePath,
-          renderTemplate(template.templateContent, {
-            isDraftModel: true,
-            modelName: `${modelName}Draft`,
-            modelCodename: `${modelCodename}-draft`,
-            graphqlTypePrefix,
-          })
+          renderTemplate(template.templateContent, templatesData)
         );
       });
+
+    if (isDraftRequired) {
+      modelTemplatesData
+        .filter(modelTemplatesFilter(isPresetExampleRequired, true))
+        .forEach((template) => {
+          const filePath = join(
+            outputPath,
+            'src',
+            `${modelCodename}-draft`,
+            template.templatePath
+          );
+          ensureDirectory(filePath);
+          console.log(`Generating file: ${filePath}`);
+          writeFileSync(
+            filePath,
+            renderTemplate(template.templateContent, {
+              isDraftModel: true,
+              isPresetExampleRequired,
+              modelName: `${modelName}Draft`,
+              modelCodename: `${modelCodename}-draft`,
+              graphqlTypePrefix,
+            })
+          );
+        });
     }
 
     console.log('\nAll set! 🚀');
