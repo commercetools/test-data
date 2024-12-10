@@ -133,8 +133,8 @@ export const newTestModelGenerator: CodeGenerator = {
 
         const filePath = join(
           outputPath,
+          'src',
           `${modelCodename}-draft`,
-          generationType === 'standalone' ? 'src' : '',
           template.templatePath
         );
         ensureDirectory(filePath);
