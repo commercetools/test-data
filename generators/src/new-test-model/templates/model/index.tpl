@@ -1,6 +1,11 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as {{it.modelName}}Presets from './presets';
+{{@if(it.isDraftRequired === true)}}
+export * from './{{it.modelCodename}}-draft';
+{{/if}}
+{{@if(it.isDraftModel !== true)}}
 export * from './types';
+{{/if}}
 
 export const {{it.modelName}}Rest = {
   random: RestModelBuilder,

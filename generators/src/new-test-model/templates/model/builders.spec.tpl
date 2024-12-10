@@ -20,7 +20,7 @@ describe('{{it.modelName}} Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         id: expect.any(String),
-        __typename: '{{it.modelName}}',
+        {{@if(it.isDraftModel !== true)}}__typename: '{{it.modelName}}',{{/if}}
       })
     );
   });

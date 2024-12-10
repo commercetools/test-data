@@ -31,6 +31,13 @@ export const newTestModelGenerator: CodeGenerator = {
     });
     const modelCodename = snakeCase(modelName).replaceAll('_', '-');
 
+    const { isDraftRequired } = await prompts({
+      type: 'confirm',
+      name: 'isDraftRequired',
+      message: 'Does this model require a Draft?',
+      initial: false,
+    });
+
     const { modelOwningService } = await prompts({
       type: 'select',
       name: 'modelOwningService',
@@ -87,6 +94,7 @@ export const newTestModelGenerator: CodeGenerator = {
       modelName,
       modelCodename,
       graphqlTypePrefix,
+      isDraftRequired,
       packageVersion: corePackageJson.version,
     };
 
@@ -116,6 +124,32 @@ export const newTestModelGenerator: CodeGenerator = {
         renderTemplate(template.templateContent, templatesData)
       );
     });
+
+    if (isDraftRequired) {
+      modelTemplatesData.forEach((template) => {
+        if (template.templatePath.includes('types')) {
+          return;
+        }
+
+        const filePath = join(
+          outputPath,
+          `${modelCodename}-draft`,
+          generationType === 'standalone' ? 'src' : '',
+          template.templatePath
+        );
+        ensureDirectory(filePath);
+        console.log(`Generating file: ${filePath}`);
+        writeFileSync(
+          filePath,
+          renderTemplate(template.templateContent, {
+            isDraftModel: true,
+            modelName: `${modelName}Draft`,
+            modelCodename: `${modelCodename}-draft`,
+            graphqlTypePrefix,
+          })
+        );
+      });
+    }
 
     console.log('\nAll set! 🚀');
     console.log(
