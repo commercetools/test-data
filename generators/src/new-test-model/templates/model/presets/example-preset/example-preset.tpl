@@ -3,7 +3,7 @@ import { {{it.modelName}}Graphql, {{it.modelName}}Rest } from '../..';
 import type {
   T{{it.modelName}}Graphql,
   T{{it.modelName}}Rest,
-} from '../../types';
+} from '{{@if(it.isDraftModel !== true)}}../..{{#else}}../../..{{/if}}/types';
 
 export const restPreset = (): TBuilder<T{{it.modelName}}Rest> =>
   {{it.modelName}}Rest.random()
