@@ -20,15 +20,18 @@ function ensureDirectory(filePath: string) {
   }
 }
 
-function modelTemplatesFilter(
-  isPresetExampleRequired: boolean,
-  isDraftModel = false
-) {
+function modelTemplatesFilter(params: {
+  isPresetExampleRequired: boolean;
+  isDraftModel: boolean;
+}) {
   return (template: { templatePath: string; templateContent: string }) => {
-    if (isDraftModel && template.templatePath.includes('types')) {
+    if (params.isDraftModel && template.templatePath.includes('types')) {
       return false;
     }
-    if (!isPresetExampleRequired && template.templatePath.includes('example')) {
+    if (
+      !params.isPresetExampleRequired &&
+      template.templatePath.includes('example')
+    ) {
       return false;
     }
     return true;
@@ -135,7 +138,12 @@ export const newTestModelGenerator: CodeGenerator = {
     }
 
     modelTemplatesData
-      .filter(modelTemplatesFilter(isPresetExampleRequired))
+      .filter(
+        modelTemplatesFilter({
+          isPresetExampleRequired,
+          isDraftModel: false,
+        })
+      )
       .forEach((template) => {
         const filePath = join(
           outputPath,
@@ -152,7 +160,12 @@ export const newTestModelGenerator: CodeGenerator = {
 
     if (isDraftRequired) {
       modelTemplatesData
-        .filter(modelTemplatesFilter(isPresetExampleRequired, true))
+        .filter(
+          modelTemplatesFilter({
+            isPresetExampleRequired,
+            isDraftModel: false,
+          })
+        )
         .forEach((template) => {
           const filePath = join(
             outputPath,
@@ -175,7 +188,9 @@ export const newTestModelGenerator: CodeGenerator = {
         });
     }
 
-    console.log('\nAll set! 🚀');
+    console.log(
+      "\n 🚀 All set! We've generated all files. You can now adjust them to your needs."
+    );
     console.log(
       'You can check the new files in the following directory:',
       outputPath
