@@ -1,5 +1,22 @@
 # @commercetools-test-data/product
 
+## 10.11.0
+
+### Minor Changes
+
+- [#721](https://github.com/commercetools/test-data/pull/721) [`3aff52c`](https://github.com/commercetools/test-data/commit/3aff52c4413e6201b6df12ca47759e687bcbd86d) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added keys to product variants for the B2C dataset
+
+### Patch Changes
+
+- Updated dependencies [[`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa)]:
+  - @commercetools-test-data/tax-category@10.11.0
+  - @commercetools-test-data/commons@10.11.0
+  - @commercetools-test-data/product-type@10.11.0
+  - @commercetools-test-data/category@10.11.0
+  - @commercetools-test-data/channel@10.11.0
+  - @commercetools-test-data/core@10.11.0
+  - @commercetools-test-data/utils@10.11.0
+
 ## 10.10.1
 
 ### Patch Changes
