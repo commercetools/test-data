@@ -6,11 +6,13 @@ import * as skuAdpc7Presets from './sku-adpc-7';
 import * as skuAlc01Presets from './sku-alc-01';
 import * as skuAmr09Presets from './sku-amr-09';
 import * as skuArg56Presets from './sku-arg-56';
+import * as skuArg56ChannelPresets from './sku-arg-56-channel';
 import * as skuBa092Presets from './sku-ba-092';
 import * as skuBamb084Presets from './sku-bamb-084';
 import * as skuBarm03Presets from './sku-barm-03';
 import * as skuBcoas08Presets from './sku-bcoas-08';
 import * as skuBlp01Presets from './sku-blp-01';
+import * as skuBlp01ChannelPresets from './sku-blp-01-channel';
 import * as skuBlpc09Presets from './sku-blpc-09';
 import * as skuBr0983Presets from './sku-br-0983';
 import * as skuBuck023Presets from './sku-buck-023';
@@ -19,6 +21,7 @@ import * as skuCbm03Presets from './sku-cbm-03';
 import * as skuCcc09Presets from './sku-ccc-09';
 import * as skuCcg01Presets from './sku-ccg-01';
 import * as skuCcg02Presets from './sku-ccg-02';
+import * as skuCcg02ChannelPresets from './sku-ccg-02-channel';
 import * as skuCch093Presets from './sku-cch-093';
 import * as skuCcm089Presets from './sku-ccm-089';
 import * as skuCdg09Presets from './sku-cdg-09';
@@ -27,6 +30,7 @@ import * as skuCns0434Presets from './sku-cns-0434';
 import * as skuCoc0843Presets from './sku-coc-0843';
 import * as skuCqb09Presets from './sku-cqb-09';
 import * as skuCr098Presets from './sku-cr-098';
+import * as skuCr098ChannelPresets from './sku-cr-098-channel';
 import * as skuCst01Presets from './sku-cst-01';
 import * as skuCtss098Presets from './sku-ctss-098';
 import * as skuCtss0983Presets from './sku-ctss-0983';
@@ -75,6 +79,7 @@ import * as skuMwt01Presets from './sku-mwt-01';
 import * as skuNjop09Presets from './sku-njop-09';
 import * as skuNr09Presets from './sku-nr-09';
 import * as skuNtss01Presets from './sku-ntss-01';
+import * as skuNtss01ChannelPresets from './sku-ntss-01-channel';
 import * as skuNtss02Presets from './sku-ntss-02';
 import * as skuNtss03Presets from './sku-ntss-03';
 import * as skuNtss05Presets from './sku-ntss-05';
@@ -84,7 +89,9 @@ import * as skuNtts04Presets from './sku-ntts-04';
 import * as skuOtb07Presets from './sku-otb-07';
 import * as skuPap01Presets from './sku-pap-01';
 import * as skuPmap01Presets from './sku-pmap-01';
+import * as skuPmap01ChannelPresets from './sku-pmap-01-channel';
 import * as skuRb01Presets from './sku-rb-01';
+import * as skuRb01ChannelPresets from './sku-rb-01-channel';
 import * as skuRb093Presets from './sku-rb-093';
 import * as skuRcc09Presets from './sku-rcc-09';
 import * as skuRcd01Presets from './sku-rcd-01';
@@ -109,13 +116,16 @@ import * as skuSqb034Presets from './sku-sqb-034';
 import * as skuSst02Presets from './sku-sst-02';
 import * as skuStm09Presets from './sku-stm-09';
 import * as skuStra095Presets from './sku-stra-095';
+import * as skuStra095ChannelPresets from './sku-stra-095-channel';
 import * as skuSwb01Presets from './sku-swb-01';
+import * as skuSwb01ChannelPresets from './sku-swb-01-channel';
 import * as skuTarm03Presets from './sku-tarm-03';
 import * as skuTarm034Presets from './sku-tarm-034';
 import * as skuTcm03Presets from './sku-tcm-03';
 import * as skuTlss01Presets from './sku-tlss-01';
 import * as skuTst02Presets from './sku-tst-02';
 import * as skuTtss01Presets from './sku-ttss-01';
+import * as skuTtss01ChannelPresets from './sku-ttss-01-channel';
 import * as skuVarm09Presets from './sku-varm-09';
 import * as skuVc01Presets from './sku-vc-01';
 import * as skuWcs09Presets from './sku-wcs-09';
@@ -136,6 +146,7 @@ export const restPresets = {
   skuTcm03: skuTcm03Presets.restPreset,
   skuSarmo034: skuSarmo034Presets.restPreset,
   skuNtss01: skuNtss01Presets.restPreset,
+  skuNtss01Channel: skuNtss01ChannelPresets.restPreset,
   skuSqb034: skuSqb034Presets.restPreset,
   skuCarm023: skuCarm023Presets.restPreset,
   skuSpc01: skuSpc01Presets.restPreset,
@@ -171,8 +182,10 @@ export const restPresets = {
   skuBa092: skuBa092Presets.restPreset,
   skuWcs09: skuWcs09Presets.restPreset,
   skuArg56: skuArg56Presets.restPreset,
+  skuArg56Channel: skuArg56ChannelPresets.restPreset,
   skuGc01: skuGc01Presets.restPreset,
   skuStra095: skuStra095Presets.restPreset,
+  skuStra095Channel: skuStra095ChannelPresets.restPreset,
   skuMpc07: skuMpc07Presets.restPreset,
   skuGrcg01: skuGrcg01Presets.restPreset,
   skuLpqb084: skuLpqb084Presets.restPreset,
@@ -180,6 +193,7 @@ export const restPresets = {
   skuLamr03: skuLamr03Presets.restPreset,
   skuCcm089: skuCcm089Presets.restPreset,
   skuCr098: skuCr098Presets.restPreset,
+  skuCr098Channel: skuCr098ChannelPresets.restPreset,
   skuSarm09: skuSarm09Presets.restPreset,
   skuVarm09: skuVarm09Presets.restPreset,
   skuRwg09: skuRwg09Presets.restPreset,
@@ -194,6 +208,7 @@ export const restPresets = {
   skuAlc01: skuAlc01Presets.restPreset,
   skuRcc09: skuRcc09Presets.restPreset,
   skuTtss01: skuTtss01Presets.restPreset,
+  skuTtss01Channel: skuTtss01ChannelPresets.restPreset,
   skuFlas094: skuFlas094Presets.restPreset,
   skuRmp01: skuRmp01Presets.restPreset,
   skuIlc01: skuIlc01Presets.restPreset,
@@ -203,8 +218,10 @@ export const restPresets = {
   skuCch093: skuCch093Presets.restPreset,
   skuNtss03: skuNtss03Presets.restPreset,
   skuRb01: skuRb01Presets.restPreset,
+  skuRb01Channel: skuRb01ChannelPresets.restPreset,
   skuMpc02: skuMpc02Presets.restPreset,
   skuBlp01: skuBlp01Presets.restPreset,
+  skuBlp01Channel: skuBlp01ChannelPresets.restPreset,
   skuStm09: skuStm09Presets.restPreset,
   skuNjop09: skuNjop09Presets.restPreset,
   skuTst02: skuTst02Presets.restPreset,
@@ -218,6 +235,7 @@ export const restPresets = {
   skuCtss098: skuCtss098Presets.restPreset,
   skuMgd01: skuMgd01Presets.restPreset,
   skuSwb01: skuSwb01Presets.restPreset,
+  skuSwb01Channel: skuSwb01ChannelPresets.restPreset,
   skuNtss02: skuNtss02Presets.restPreset,
   skuVc01: skuVc01Presets.restPreset,
   skuAdarm04: skuAdarm04Presets.restPreset,
@@ -236,8 +254,10 @@ export const restPresets = {
   skuMmst02: skuMmst02Presets.restPreset,
   skuMcp01: skuMcp01Presets.restPreset,
   skuPmap01: skuPmap01Presets.restPreset,
+  skuPmap01Channel: skuPmap01ChannelPresets.restPreset,
   skuAmr09: skuAmr09Presets.restPreset,
   skuCcg02: skuCcg02Presets.restPreset,
+  skuCcg02Channel: skuCcg02ChannelPresets.restPreset,
   skuRst02: skuRst02Presets.restPreset,
   skuAdpc7: skuAdpc7Presets.restPreset,
   skuNr09: skuNr09Presets.restPreset,
@@ -263,6 +283,7 @@ export const graphqlPresets = {
   skuTcm03: skuTcm03Presets.graphqlPreset,
   skuSarmo034: skuSarmo034Presets.graphqlPreset,
   skuNtss01: skuNtss01Presets.graphqlPreset,
+  skuNtss01Channel: skuNtss01ChannelPresets.graphqlPreset,
   skuSqb034: skuSqb034Presets.graphqlPreset,
   skuCarm023: skuCarm023Presets.graphqlPreset,
   skuSpc01: skuSpc01Presets.graphqlPreset,
@@ -298,8 +319,10 @@ export const graphqlPresets = {
   skuBa092: skuBa092Presets.graphqlPreset,
   skuWcs09: skuWcs09Presets.graphqlPreset,
   skuArg56: skuArg56Presets.graphqlPreset,
+  skuArg56Channel: skuArg56ChannelPresets.graphqlPreset,
   skuGc01: skuGc01Presets.graphqlPreset,
   skuStra095: skuStra095Presets.graphqlPreset,
+  skuStra095Channel: skuStra095ChannelPresets.graphqlPreset,
   skuMpc07: skuMpc07Presets.graphqlPreset,
   skuGrcg01: skuGrcg01Presets.graphqlPreset,
   skuLpqb084: skuLpqb084Presets.graphqlPreset,
@@ -307,6 +330,7 @@ export const graphqlPresets = {
   skuLamr03: skuLamr03Presets.graphqlPreset,
   skuCcm089: skuCcm089Presets.graphqlPreset,
   skuCr098: skuCr098Presets.graphqlPreset,
+  skuCr098Channel: skuCr098ChannelPresets.graphqlPreset,
   skuSarm09: skuSarm09Presets.graphqlPreset,
   skuVarm09: skuVarm09Presets.graphqlPreset,
   skuRwg09: skuRwg09Presets.graphqlPreset,
@@ -321,6 +345,7 @@ export const graphqlPresets = {
   skuAlc01: skuAlc01Presets.graphqlPreset,
   skuRcc09: skuRcc09Presets.graphqlPreset,
   skuTtss01: skuTtss01Presets.graphqlPreset,
+  skuTtss01Channel: skuTtss01ChannelPresets.graphqlPreset,
   skuFlas094: skuFlas094Presets.graphqlPreset,
   skuRmp01: skuRmp01Presets.graphqlPreset,
   skuIlc01: skuIlc01Presets.graphqlPreset,
@@ -330,8 +355,10 @@ export const graphqlPresets = {
   skuCch093: skuCch093Presets.graphqlPreset,
   skuNtss03: skuNtss03Presets.graphqlPreset,
   skuRb01: skuRb01Presets.graphqlPreset,
+  skuRb01Channel: skuRb01ChannelPresets.graphqlPreset,
   skuMpc02: skuMpc02Presets.graphqlPreset,
   skuBlp01: skuBlp01Presets.graphqlPreset,
+  skuBlp01Channel: skuBlp01ChannelPresets.graphqlPreset,
   skuStm09: skuStm09Presets.graphqlPreset,
   skuNjop09: skuNjop09Presets.graphqlPreset,
   skuTst02: skuTst02Presets.graphqlPreset,
@@ -345,6 +372,7 @@ export const graphqlPresets = {
   skuCtss098: skuCtss098Presets.graphqlPreset,
   skuMgd01: skuMgd01Presets.graphqlPreset,
   skuSwb01: skuSwb01Presets.graphqlPreset,
+  skuSwb01Channel: skuSwb01ChannelPresets.graphqlPreset,
   skuNtss02: skuNtss02Presets.graphqlPreset,
   skuVc01: skuVc01Presets.graphqlPreset,
   skuAdarm04: skuAdarm04Presets.graphqlPreset,
@@ -363,8 +391,10 @@ export const graphqlPresets = {
   skuMmst02: skuMmst02Presets.graphqlPreset,
   skuMcp01: skuMcp01Presets.graphqlPreset,
   skuPmap01: skuPmap01Presets.graphqlPreset,
+  skuPmap01Channel: skuPmap01ChannelPresets.graphqlPreset,
   skuAmr09: skuAmr09Presets.graphqlPreset,
   skuCcg02: skuCcg02Presets.graphqlPreset,
+  skuCcg02Channel: skuCcg02ChannelPresets.graphqlPreset,
   skuRst02: skuRst02Presets.graphqlPreset,
   skuAdpc7: skuAdpc7Presets.graphqlPreset,
   skuNr09: skuNr09Presets.graphqlPreset,
@@ -390,6 +420,7 @@ export const compatPresets = {
   skuTcm03: skuTcm03Presets.compatPreset,
   skuSarmo034: skuSarmo034Presets.compatPreset,
   skuNtss01: skuNtss01Presets.compatPreset,
+  skuNtss01Channel: skuNtss01ChannelPresets.compatPreset,
   skuSqb034: skuSqb034Presets.compatPreset,
   skuCarm023: skuCarm023Presets.compatPreset,
   skuSpc01: skuSpc01Presets.compatPreset,
@@ -425,8 +456,10 @@ export const compatPresets = {
   skuBa092: skuBa092Presets.compatPreset,
   skuWcs09: skuWcs09Presets.compatPreset,
   skuArg56: skuArg56Presets.compatPreset,
+  skuArg56Channel: skuArg56ChannelPresets.compatPreset,
   skuGc01: skuGc01Presets.compatPreset,
   skuStra095: skuStra095Presets.compatPreset,
+  skuStra095Channel: skuStra095ChannelPresets.compatPreset,
   skuMpc07: skuMpc07Presets.compatPreset,
   skuGrcg01: skuGrcg01Presets.compatPreset,
   skuLpqb084: skuLpqb084Presets.compatPreset,
@@ -434,6 +467,7 @@ export const compatPresets = {
   skuLamr03: skuLamr03Presets.compatPreset,
   skuCcm089: skuCcm089Presets.compatPreset,
   skuCr098: skuCr098Presets.compatPreset,
+  skuCr098Channel: skuCr098ChannelPresets.compatPreset,
   skuSarm09: skuSarm09Presets.compatPreset,
   skuVarm09: skuVarm09Presets.compatPreset,
   skuRwg09: skuRwg09Presets.compatPreset,
@@ -448,6 +482,7 @@ export const compatPresets = {
   skuAlc01: skuAlc01Presets.compatPreset,
   skuRcc09: skuRcc09Presets.compatPreset,
   skuTtss01: skuTtss01Presets.compatPreset,
+  skuTtss01Channel: skuTtss01ChannelPresets.compatPreset,
   skuFlas094: skuFlas094Presets.compatPreset,
   skuRmp01: skuRmp01Presets.compatPreset,
   skuIlc01: skuIlc01Presets.compatPreset,
@@ -457,8 +492,10 @@ export const compatPresets = {
   skuCch093: skuCch093Presets.compatPreset,
   skuNtss03: skuNtss03Presets.compatPreset,
   skuRb01: skuRb01Presets.compatPreset,
+  skuRb01Channel: skuRb01ChannelPresets.compatPreset,
   skuMpc02: skuMpc02Presets.compatPreset,
   skuBlp01: skuBlp01Presets.compatPreset,
+  skuBlp01Channel: skuBlp01ChannelPresets.compatPreset,
   skuStm09: skuStm09Presets.compatPreset,
   skuNjop09: skuNjop09Presets.compatPreset,
   skuTst02: skuTst02Presets.compatPreset,
@@ -472,6 +509,7 @@ export const compatPresets = {
   skuCtss098: skuCtss098Presets.compatPreset,
   skuMgd01: skuMgd01Presets.compatPreset,
   skuSwb01: skuSwb01Presets.compatPreset,
+  skuSwb01Channel: skuSwb01ChannelPresets.compatPreset,
   skuNtss02: skuNtss02Presets.compatPreset,
   skuVc01: skuVc01Presets.compatPreset,
   skuAdarm04: skuAdarm04Presets.compatPreset,
@@ -490,8 +528,10 @@ export const compatPresets = {
   skuMmst02: skuMmst02Presets.compatPreset,
   skuMcp01: skuMcp01Presets.compatPreset,
   skuPmap01: skuPmap01Presets.compatPreset,
+  skuPmap01Channel: skuPmap01ChannelPresets.compatPreset,
   skuAmr09: skuAmr09Presets.compatPreset,
   skuCcg02: skuCcg02Presets.compatPreset,
+  skuCcg02Channel: skuCcg02ChannelPresets.compatPreset,
   skuRst02: skuRst02Presets.compatPreset,
   skuAdpc7: skuAdpc7Presets.compatPreset,
   skuNr09: skuNr09Presets.compatPreset,

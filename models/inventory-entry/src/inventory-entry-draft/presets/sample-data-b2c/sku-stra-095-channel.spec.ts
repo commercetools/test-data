@@ -2,7 +2,7 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import * as presets from './sku-stra-095';
+import * as presets from './sku-stra-095-channel';
 
 describe(`with skuStra095 preset`, () => {
   it(`should return a skuStra095 preset when built for rest`, () => {
@@ -15,7 +15,10 @@ describe(`with skuStra095 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -30,7 +33,10 @@ describe(`with skuStra095 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -47,7 +53,10 @@ describe(`with skuStra095 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -64,7 +73,10 @@ describe(`with skuStra095 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "STRA-095",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });

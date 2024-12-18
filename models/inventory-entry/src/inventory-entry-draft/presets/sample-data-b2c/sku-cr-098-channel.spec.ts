@@ -2,7 +2,7 @@ import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,
 } from '../../../types';
-import * as presets from './sku-cr-098';
+import * as presets from './sku-cr-098-channel';
 
 describe(`with skuCr098 preset`, () => {
   it(`should return a skuCr098 preset when built for rest`, () => {
@@ -15,7 +15,10 @@ describe(`with skuCr098 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -30,7 +33,10 @@ describe(`with skuCr098 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -47,7 +53,10 @@ describe(`with skuCr098 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
@@ -64,7 +73,10 @@ describe(`with skuCr098 preset`, () => {
         "quantityOnStock": 100,
         "restockableInDays": undefined,
         "sku": "CR-098",
-        "supplyChannel": undefined,
+        "supplyChannel": {
+          "key": "inventory-channel",
+          "typeId": "channel",
+        },
       }
     `);
   });
