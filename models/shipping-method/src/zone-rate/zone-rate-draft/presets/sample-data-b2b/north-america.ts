@@ -11,6 +11,6 @@ const northAmericaZone = ZoneDraft.presets.sampleDataB2B
 const northAmerica = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
     .zone(KeyReferenceDraft.presets.zone().key(northAmericaZone.key!))
-    .shippingRates([ShippingRateDraft.presets.sampleDataB2B.usd500()]);
+    .shippingRates([ShippingRateDraft.presets.sampleDataB2B.usd10000()]);
 
 export default northAmerica;

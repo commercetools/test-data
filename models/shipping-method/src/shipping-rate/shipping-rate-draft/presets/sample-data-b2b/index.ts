@@ -1,15 +1,15 @@
-import eur1000 from './eur-1000';
-import eur500 from './eur-500';
-import gbp1000 from './gbp-1000';
-import gbp500 from './gbp-500';
-import usd500 from './usd-500';
+import eur10000 from './eur-10000';
+import eur30000 from './eur-30000';
+import gbp10000 from './gbp-10000';
+import gbp30000 from './gbp-30000';
+import usd10000 from './usd-10000';
 
 const presets = {
-  eur1000,
-  gbp1000,
-  eur500,
-  gbp500,
-  usd500,
+  eur10000,
+  gbp10000,
+  eur30000,
+  gbp30000,
+  usd10000,
 };
 
 export default presets;

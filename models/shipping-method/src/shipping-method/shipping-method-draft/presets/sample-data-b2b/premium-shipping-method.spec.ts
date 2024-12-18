@@ -12,18 +12,30 @@ describe(`with premiumShippingMethod preset`, () => {
         "key": "premium-shipping-method",
         "localizedDescription": {
           "de": undefined,
-          "de-DE": "Premium -Versandmethode",
+          "de-DE": "2-3 Wochen",
           "en": undefined,
-          "en-GB": "Premium shipping method",
-          "en-US": "Premium shipping method",
-          "es-ES": "Método de envío premium",
+          "en-GB": "2-3 weeks",
+          "en-US": "2-3 weeks",
+          "es-ES": "2-3 semanas",
           "fr": undefined,
-          "fr-FR": "Méthode d'expédition premium",
-          "it-IT": "Metodo di spedizione premium",
-          "nl-NL": "Premium verzendmethode",
-          "pt-PT": "Método de envio premium",
+          "fr-FR": "2-3 settimane",
+          "it-IT": "2-3 semaines",
+          "nl-NL": "2-3 weken",
+          "pt-PT": "2-3 semanas",
         },
-        "localizedName": undefined,
+        "localizedName": {
+          "de": undefined,
+          "de-DE": "Premium-Versand",
+          "en": undefined,
+          "en-GB": "Premium shipping",
+          "en-US": "Premium shipping",
+          "es-ES": "Envío Premium",
+          "fr": undefined,
+          "fr-FR": "Spedizione premium",
+          "it-IT": "Expédition Premium",
+          "nl-NL": "Premium verzending",
+          "pt-PT": "Transporte Premium",
+        },
         "name": "Premium shipping method",
         "predicate": undefined,
         "taxCategory": {
@@ -35,22 +47,22 @@ describe(`with premiumShippingMethod preset`, () => {
             "shippingRates": [
               {
                 "freeAbove": {
-                  "centAmount": 10000,
+                  "centAmount": 1000000,
                   "currencyCode": "EUR",
                 },
                 "price": {
-                  "centAmount": 1000,
+                  "centAmount": 10000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": {
-                  "centAmount": 10000,
+                  "centAmount": 1000000,
                   "currencyCode": "GBP",
                 },
                 "price": {
-                  "centAmount": 1000,
+                  "centAmount": 10000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
@@ -77,38 +89,71 @@ describe(`with premiumShippingMethod preset`, () => {
         "localizedDescription": [
           {
             "locale": "de-DE",
-            "value": "Premium -Versandmethode",
+            "value": "2-3 Wochen",
           },
           {
             "locale": "en-GB",
-            "value": "Premium shipping method",
-          },
-          {
-            "locale": "it-IT",
-            "value": "Metodo di spedizione premium",
-          },
-          {
-            "locale": "nl-NL",
-            "value": "Premium verzendmethode",
-          },
-          {
-            "locale": "fr-FR",
-            "value": "Méthode d'expédition premium",
-          },
-          {
-            "locale": "es-ES",
-            "value": "Método de envío premium",
-          },
-          {
-            "locale": "pt-PT",
-            "value": "Método de envio premium",
+            "value": "2-3 weeks",
           },
           {
             "locale": "en-US",
-            "value": "Premium shipping method",
+            "value": "2-3 weeks",
+          },
+          {
+            "locale": "es-ES",
+            "value": "2-3 semanas",
+          },
+          {
+            "locale": "it-IT",
+            "value": "2-3 semaines",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "2-3 settimane",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "2-3 weken",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "2-3 semanas",
           },
         ],
-        "localizedName": undefined,
+        "localizedName": [
+          {
+            "locale": "de-DE",
+            "value": "Premium-Versand",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Premium shipping",
+          },
+          {
+            "locale": "en-US",
+            "value": "Premium shipping",
+          },
+          {
+            "locale": "es-ES",
+            "value": "Envío Premium",
+          },
+          {
+            "locale": "it-IT",
+            "value": "Expédition Premium",
+          },
+          {
+            "locale": "fr-FR",
+            "value": "Spedizione premium",
+          },
+          {
+            "locale": "nl-NL",
+            "value": "Premium verzending",
+          },
+          {
+            "locale": "pt-PT",
+            "value": "Transporte Premium",
+          },
+        ],
         "name": "Premium shipping method",
         "predicate": undefined,
         "taxCategory": {
@@ -120,22 +165,22 @@ describe(`with premiumShippingMethod preset`, () => {
             "shippingRates": [
               {
                 "freeAbove": {
-                  "centAmount": 10000,
+                  "centAmount": 1000000,
                   "currencyCode": "EUR",
                 },
                 "price": {
-                  "centAmount": 1000,
+                  "centAmount": 10000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": {
-                  "centAmount": 10000,
+                  "centAmount": 1000000,
                   "currencyCode": "GBP",
                 },
                 "price": {
-                  "centAmount": 1000,
+                  "centAmount": 10000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
