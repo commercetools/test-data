@@ -1,7 +1,7 @@
 {
   "name": "@commercetools-test-data/generators",
   "private": true,
-  "version": "10.10.1",
+  "version": "10.11.0",
   "description": "Data model generator CLI for commercetools APIs",
   "main": "dist/commercetools-test-data-generators.cjs.js",
   "module": "dist/commercetools-test-data-generators.esm.js",

@@ -1,5 +1,29 @@
 # @commercetools-test-data/product-type
 
+## 10.11.0
+
+### Minor Changes
+
+- [#650](https://github.com/commercetools/test-data/pull/650) [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa) Thanks [@jaikumar-tj](https://github.com/jaikumar-tj)! - ### Common Model (`common`)
+
+  - Introduced a new model called `discounted-price`.
+
+  ### Inventory Entry Model (`inventory-entry`)
+
+  - Updated the transformer file to conditionally send the supply channel, making it optional.
+
+  ### Product Type (`product-type`)
+
+  - Added new presets for enum and localized enum types.
+
+### Patch Changes
+
+- Updated dependencies [[`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa)]:
+  - @commercetools-test-data/commons@10.11.0
+  - @commercetools-test-data/type@10.11.0
+  - @commercetools-test-data/core@10.11.0
+  - @commercetools-test-data/utils@10.11.0
+
 ## 10.10.1
 
 ### Patch Changes
