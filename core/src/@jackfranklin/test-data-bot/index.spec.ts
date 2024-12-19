@@ -641,7 +641,8 @@ describe('test-data-bot', () => {
         name: string;
       }
 
-      jest.spyOn(console, 'warn').mockImplementationOnce(() => {});
+      vi.spyOn(console, 'warn').mockImplementationOnce(() => {});
+      // jest.spyOn(console, 'warn').mockImplementationOnce(() => {});
 
       const userBuilder = build<User>({
         fields: {

@@ -4,7 +4,13 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": ["core", "graphql-types", "models/*", "utils", "generators"]
+    "packages": [
+      "core",
+      "graphql-types",
+      "models/*",
+      "utils",
+      "generators"
+    ]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -17,6 +23,7 @@
     "format:js": "prettier --write '**/*.{js,ts,tsx}'",
     "format:md": "prettier --write --parser markdown '**/*.md'",
     "test": "jest --config jest.test.config.js",
+    "test:vitest": "vitest --config vitest.config.ts",
     "test:watch": "pnpm run test --watch",
     "typecheck": "tsc --noEmit",
     "changeset:version-and-format": "changeset version && prettier --write --parser json '**/package.json' && pnpm install --lockfile-only",
@@ -65,7 +72,10 @@
     "typescript": "5.7.2"
   },
   "devDependencies": {
-    "jest-extended": "4.0.2"
+    "@vitest/ui": "^2.1.8",
+    "jest-extended": "4.0.2",
+    "vitest": "^2.1.8",
+    "vitest-extended": "^0.0.1"
   },
   "packageManager": "pnpm@9.14.4"
 }
