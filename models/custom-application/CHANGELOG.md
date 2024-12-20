@@ -1,5 +1,15 @@
 # @commercetools-test-data/custom-application
 
+## 10.11.1
+
+### Patch Changes
+
+- Updated dependencies [[`a83c452`](https://github.com/commercetools/test-data/commit/a83c452340799c3773462b3938910065cd934bec)]:
+  - @commercetools-test-data/graphql-types@10.11.1
+  - @commercetools-test-data/commons@10.11.1
+  - @commercetools-test-data/core@10.11.1
+  - @commercetools-test-data/utils@10.11.1
+
 ## 10.11.0
 
 ### Patch Changes

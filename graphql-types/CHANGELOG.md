@@ -1,5 +1,11 @@
 # @commercetools-test-data/graphql-types
 
+## 10.11.1
+
+### Patch Changes
+
+- [#730](https://github.com/commercetools/test-data/pull/730) [`a83c452`](https://github.com/commercetools/test-data/commit/a83c452340799c3773462b3938910065cd934bec) Thanks [@jaikamat](https://github.com/jaikamat)! - Use narrow types for scalar types
+
 ## 10.11.0
 
 ## 10.10.1
