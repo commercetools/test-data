@@ -18,6 +18,21 @@ extensions:
           typesPrefix: TCtp
           addUnderscoreToArgsType: true
           useImplementingTypes: true
+          scalars:
+            Long: number
+            DateTime: string
+            Country: string
+            Locale: string
+            Date: string
+            Json: '{ [key: string]: unknown }'
+            Currency: string
+            KeyReferenceInput: string
+            SearchFilter: string
+            SearchSort: string
+            YearMonth: string
+            BigDecimal: string
+            Time: string
+            Set: 'unknown[]'
     hooks:
       afterAllFileWrite:
         - prettier --write
