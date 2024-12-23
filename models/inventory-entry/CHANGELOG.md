@@ -1,5 +1,19 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.11.2
+
+### Patch Changes
+
+- [#732](https://github.com/commercetools/test-data/pull/732) [`b247e64`](https://github.com/commercetools/test-data/commit/b247e64947b97ecb9a438b99ddfa14a833e6ff90) Thanks [@jaikamat](https://github.com/jaikamat)! - Fix export formatting
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/graphql-types@10.11.2
+  - @commercetools-test-data/channel@10.11.2
+  - @commercetools-test-data/commons@10.11.2
+  - @commercetools-test-data/product@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
 ## 10.11.1
 
 ### Patch Changes

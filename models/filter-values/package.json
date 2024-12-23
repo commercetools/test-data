@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/filter-values",
-  "version": "10.11.1",
+  "version": "10.11.2",
   "description": "Data model for commercetools API FilterValues",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,9 +19,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/core": "10.11.1",
-    "@commercetools-test-data/graphql-types": "10.11.1",
-    "@commercetools-test-data/utils": "10.11.1",
+    "@commercetools-test-data/core": "10.11.2",
+    "@commercetools-test-data/graphql-types": "10.11.2",
+    "@commercetools-test-data/utils": "10.11.2",
     "@faker-js/faker": "^9.0.0"
   }
 }

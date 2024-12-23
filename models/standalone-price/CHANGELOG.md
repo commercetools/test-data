@@ -1,5 +1,17 @@
 # @commercetools-test-data/standalone-price
 
+## 10.11.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/channel@10.11.2
+  - @commercetools-test-data/commons@10.11.2
+  - @commercetools-test-data/customer-group@10.11.2
+  - @commercetools-test-data/product@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
 ## 10.11.1
 
 ### Patch Changes

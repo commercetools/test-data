@@ -1,5 +1,14 @@
 # @commercetools-test-data/review
 
+## 10.11.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/commons@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
 ## 10.11.1
 
 ### Patch Changes
