@@ -1,5 +1,16 @@
 # @commercetools-test-data/project-extension
 
+## 10.11.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/graphql-types@10.11.2
+  - @commercetools-test-data/custom-application@10.11.2
+  - @commercetools-test-data/custom-view@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
 ## 10.11.1
 
 ### Patch Changes
