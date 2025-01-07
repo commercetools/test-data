@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const cottonSilkBedsheet09 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cottonSilkBedsheet09')
     .sku('CSKG-2345')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('1899EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(1899))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('1899GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(1899))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('1899USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(1899))
         .country('US'),
     ])

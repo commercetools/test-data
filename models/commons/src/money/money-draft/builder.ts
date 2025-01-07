@@ -5,6 +5,7 @@ import transformers from './transformers';
 
 const Model: TCreateMoneyBuilder = () =>
   Builder<TMoneyDraft>({
+    name: 'MoneyDraft',
     generator,
     transformers,
   });

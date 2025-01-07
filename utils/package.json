@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/utils",
-  "version": "10.7.0",
+  "version": "10.11.2",
   "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,6 +19,6 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@faker-js/faker": "^8.0.0"
+    "@faker-js/faker": "^9.0.0"
   }
 }

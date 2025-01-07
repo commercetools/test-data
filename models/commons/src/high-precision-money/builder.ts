@@ -8,6 +8,7 @@ import type {
 
 const Model: TCreateHighPrecisionMoneyBuilder = () =>
   Builder<THighPrecisionMoney>({
+    name: 'HighPrecisionMoney',
     generator,
     transformers,
   });

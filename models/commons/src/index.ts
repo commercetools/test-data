@@ -2,14 +2,17 @@
 export * from './address/types';
 export * from './cent-precision-money/types';
 export * from './client-logging/types';
+export * from './discounted-line-item-portion/types';
+export * from './discounted-line-item-price/types';
+export * from './geometry/types';
 export * from './high-precision-money/types';
 export * from './key-reference/types';
 export * from './localized-field/types';
 export * from './localized-string/types';
 export * from './money/types';
 export * from './price/types';
-export * from './reference/types';
 export * from './price-tier/types';
+export * from './reference/types';
 
 // Export models
 export * as Address from './address';
@@ -32,3 +35,7 @@ export * as Reference from './reference';
 export * as ReferenceDraft from './reference/reference-draft';
 export * as PriceTier from './price-tier';
 export * as PriceTierDraft from './price-tier/price-tier-draft';
+
+export * from './discounted-line-item-portion';
+export * from './discounted-line-item-price';
+export * from './geometry';

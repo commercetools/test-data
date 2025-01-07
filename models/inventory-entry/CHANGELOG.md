@@ -1,5 +1,165 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.11.2
+
+### Patch Changes
+
+- [#732](https://github.com/commercetools/test-data/pull/732) [`b247e64`](https://github.com/commercetools/test-data/commit/b247e64947b97ecb9a438b99ddfa14a833e6ff90) Thanks [@jaikamat](https://github.com/jaikamat)! - Fix export formatting
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/graphql-types@10.11.2
+  - @commercetools-test-data/channel@10.11.2
+  - @commercetools-test-data/commons@10.11.2
+  - @commercetools-test-data/product@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
+## 10.11.1
+
+### Patch Changes
+
+- Updated dependencies [[`a83c452`](https://github.com/commercetools/test-data/commit/a83c452340799c3773462b3938910065cd934bec)]:
+  - @commercetools-test-data/graphql-types@10.11.1
+  - @commercetools-test-data/channel@10.11.1
+  - @commercetools-test-data/commons@10.11.1
+  - @commercetools-test-data/product@10.11.1
+  - @commercetools-test-data/core@10.11.1
+  - @commercetools-test-data/utils@10.11.1
+
+## 10.11.0
+
+### Patch Changes
+
+- [#727](https://github.com/commercetools/test-data/pull/727) [`cccf9fe`](https://github.com/commercetools/test-data/commit/cccf9fe8c079f847dbf0c6a3f64163fc48b55ae4) Thanks [@stephsprinkle](https://github.com/stephsprinkle)! - B2C Lifestyle Presets: Added inventory entries without channels to support Launchpad.
+
+- [#650](https://github.com/commercetools/test-data/pull/650) [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa) Thanks [@jaikumar-tj](https://github.com/jaikumar-tj)! - ### Common Model (`common`)
+
+  - Introduced a new model called `discounted-price`.
+
+  ### Inventory Entry Model (`inventory-entry`)
+
+  - Updated the transformer file to conditionally send the supply channel, making it optional.
+
+  ### Product Type (`product-type`)
+
+  - Added new presets for enum and localized enum types.
+
+- Updated dependencies [[`3aff52c`](https://github.com/commercetools/test-data/commit/3aff52c4413e6201b6df12ca47759e687bcbd86d), [`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa)]:
+  - @commercetools-test-data/product@10.11.0
+  - @commercetools-test-data/commons@10.11.0
+  - @commercetools-test-data/channel@10.11.0
+  - @commercetools-test-data/core@10.11.0
+  - @commercetools-test-data/graphql-types@10.11.0
+  - @commercetools-test-data/utils@10.11.0
+
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies [[`2ff2954`](https://github.com/commercetools/test-data/commit/2ff295413c3d3bc1c04d4f134da74f5e3e98f40e)]:
+  - @commercetools-test-data/channel@10.10.1
+  - @commercetools-test-data/product@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Minor Changes
+
+- [#703](https://github.com/commercetools/test-data/pull/703) [`a2a8f73`](https://github.com/commercetools/test-data/commit/a2a8f732a35bbba8744d3b75993c06b26c9752ab) Thanks [@jmcreasman](https://github.com/jmcreasman)! - Refactored `InventoryEntry` and `InventoryEntryDraft` models to use the new implementation patterns.
+  This means the existing models are now deprecated (though we still support them for backwards compatibility) and consumers should move to the new ones implemented:
+  - `InventoryEntryRest`
+  - `InventoryEntryGraphql`
+  - `InventoryEntryDraftRest`
+  - `InventoryEntryDraftGraphql`
+
+### Patch Changes
+
+- Updated dependencies [[`2f02fac`](https://github.com/commercetools/test-data/commit/2f02fac9b5eb06197f1d4c2f0509ff10d2c5ef6c), [`ac18883`](https://github.com/commercetools/test-data/commit/ac188833fd16f09d109fb420aa2d24d0505da917)]:
+  - @commercetools-test-data/product@10.10.0
+  - @commercetools-test-data/channel@10.10.0
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/commons@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
+## 10.9.3
+
+### Patch Changes
+
+- Updated dependencies [[`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867)]:
+  - @commercetools-test-data/commons@10.9.3
+  - @commercetools-test-data/channel@10.9.3
+  - @commercetools-test-data/product@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
+## 10.9.2
+
+### Patch Changes
+
+- Updated dependencies [[`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4)]:
+  - @commercetools-test-data/commons@10.9.2
+  - @commercetools-test-data/product@10.9.2
+  - @commercetools-test-data/channel@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
+## 10.9.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@10.9.1
+  - @commercetools-test-data/commons@10.9.1
+  - @commercetools-test-data/channel@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
+## 10.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b)]:
+  - @commercetools-test-data/commons@10.9.0
+  - @commercetools-test-data/channel@10.9.0
+  - @commercetools-test-data/product@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
+## 10.8.1
+
+### Patch Changes
+
+- Updated dependencies [[`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93), [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93)]:
+  - @commercetools-test-data/core@10.8.1
+  - @commercetools-test-data/commons@10.8.1
+  - @commercetools-test-data/channel@10.8.1
+  - @commercetools-test-data/product@10.8.1
+  - @commercetools-test-data/utils@10.8.1
+
+## 10.8.0
+
+### Patch Changes
+
+- Updated dependencies [[`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03), [`1e2bba1`](https://github.com/commercetools/test-data/commit/1e2bba10e41fd1b7dabc71b0bc2166c538bf6ee8)]:
+  - @commercetools-test-data/channel@10.8.0
+  - @commercetools-test-data/commons@10.8.0
+  - @commercetools-test-data/core@10.8.0
+  - @commercetools-test-data/product@10.8.0
+  - @commercetools-test-data/utils@10.8.0
+
+## 10.7.1
+
+### Patch Changes
+
+- Updated dependencies [[`7c08fa2`](https://github.com/commercetools/test-data/commit/7c08fa25a8d9a906401fffeb8b92f20e9358bdce)]:
+  - @commercetools-test-data/commons@10.7.1
+  - @commercetools-test-data/channel@10.7.1
+  - @commercetools-test-data/product@10.7.1
+  - @commercetools-test-data/core@10.7.1
+  - @commercetools-test-data/utils@10.7.1
+
 ## 10.7.0
 
 ### Patch Changes

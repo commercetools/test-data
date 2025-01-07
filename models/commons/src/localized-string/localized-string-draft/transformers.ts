@@ -21,7 +21,7 @@ const transformers = {
           .filter(([, value]) => !isNil(value))
           .map(([locale, value]) => ({
             locale,
-            value,
+            value: value || '',
           })),
     }
   ),

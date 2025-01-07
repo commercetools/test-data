@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const cocoaPillowCover01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('cocoaPillowCover01')
     .sku('BLPC-09')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('1099EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(1099))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('1099GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(1099))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('1099USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(1099))
         .country('US'),
     ])

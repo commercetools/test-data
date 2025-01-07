@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const smallWoodenBowl01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('smallWoodenBowl01')
     .sku('SWB-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('399EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(399))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('399GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(399))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('399USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(399))
         .country('US'),
     ])

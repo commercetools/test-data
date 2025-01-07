@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const ivoryLoungeChair01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('ivoryLoungeChair01')
     .sku('ILC-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('29900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(29900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('29900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(29900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('29900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(29900))
         .country('US'),
     ])

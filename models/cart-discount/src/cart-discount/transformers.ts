@@ -11,6 +11,7 @@ const transformers = {
       'createdBy',
       'lastModifiedBy',
       'stores',
+      'target',
     ],
   }),
   rest: Transformer<TCartDiscount, TCartDiscount>('rest', {
@@ -21,6 +22,7 @@ const transformers = {
       'createdBy',
       'lastModifiedBy',
       'stores',
+      'target',
     ],
   }),
   graphql: Transformer<TCartDiscount, TCartDiscountGraphql>('graphql', {
@@ -31,6 +33,7 @@ const transformers = {
       'createdBy',
       'lastModifiedBy',
       'stores',
+      'target',
     ],
     addFields: ({ fields }) => ({
       nameAllLocales: LocalizedString.toLocalizedField(fields.name),

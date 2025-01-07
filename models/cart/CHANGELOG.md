@@ -1,5 +1,220 @@
 # @commercetools-test-data/cart
 
+## 10.11.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/graphql-types@10.11.2
+  - @commercetools-test-data/business-unit@10.11.2
+  - @commercetools-test-data/channel@10.11.2
+  - @commercetools-test-data/commons@10.11.2
+  - @commercetools-test-data/customer@10.11.2
+  - @commercetools-test-data/discount-code@10.11.2
+  - @commercetools-test-data/product@10.11.2
+  - @commercetools-test-data/shipping-method@10.11.2
+  - @commercetools-test-data/store@10.11.2
+  - @commercetools-test-data/tax-category@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
+## 10.11.1
+
+### Patch Changes
+
+- Updated dependencies [[`a83c452`](https://github.com/commercetools/test-data/commit/a83c452340799c3773462b3938910065cd934bec)]:
+  - @commercetools-test-data/graphql-types@10.11.1
+  - @commercetools-test-data/channel@10.11.1
+  - @commercetools-test-data/commons@10.11.1
+  - @commercetools-test-data/product@10.11.1
+  - @commercetools-test-data/store@10.11.1
+  - @commercetools-test-data/business-unit@10.11.1
+  - @commercetools-test-data/customer@10.11.1
+  - @commercetools-test-data/discount-code@10.11.1
+  - @commercetools-test-data/shipping-method@10.11.1
+  - @commercetools-test-data/tax-category@10.11.1
+  - @commercetools-test-data/core@10.11.1
+  - @commercetools-test-data/utils@10.11.1
+
+## 10.11.0
+
+### Minor Changes
+
+- [#726](https://github.com/commercetools/test-data/pull/726) [`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Added new child models used within the `Cart` one:
+
+  - `TaxedItemPrice`
+  - `TaxPortion`
+  - `ShippingInfo`
+
+### Patch Changes
+
+- Updated dependencies [[`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`3aff52c`](https://github.com/commercetools/test-data/commit/3aff52c4413e6201b6df12ca47759e687bcbd86d), [`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd), [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa)]:
+  - @commercetools-test-data/tax-category@10.11.0
+  - @commercetools-test-data/product@10.11.0
+  - @commercetools-test-data/commons@10.11.0
+  - @commercetools-test-data/shipping-method@10.11.0
+  - @commercetools-test-data/business-unit@10.11.0
+  - @commercetools-test-data/channel@10.11.0
+  - @commercetools-test-data/customer@10.11.0
+  - @commercetools-test-data/discount-code@10.11.0
+  - @commercetools-test-data/store@10.11.0
+  - @commercetools-test-data/core@10.11.0
+  - @commercetools-test-data/graphql-types@10.11.0
+  - @commercetools-test-data/utils@10.11.0
+
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies [[`2ff2954`](https://github.com/commercetools/test-data/commit/2ff295413c3d3bc1c04d4f134da74f5e3e98f40e)]:
+  - @commercetools-test-data/channel@10.10.1
+  - @commercetools-test-data/product@10.10.1
+  - @commercetools-test-data/store@10.10.1
+  - @commercetools-test-data/business-unit@10.10.1
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/commons@10.10.1
+  - @commercetools-test-data/customer@10.10.1
+  - @commercetools-test-data/discount-code@10.10.1
+  - @commercetools-test-data/shipping-method@10.10.1
+  - @commercetools-test-data/tax-category@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies [[`2f02fac`](https://github.com/commercetools/test-data/commit/2f02fac9b5eb06197f1d4c2f0509ff10d2c5ef6c), [`ac18883`](https://github.com/commercetools/test-data/commit/ac188833fd16f09d109fb420aa2d24d0505da917)]:
+  - @commercetools-test-data/product@10.10.0
+  - @commercetools-test-data/channel@10.10.0
+  - @commercetools-test-data/store@10.10.0
+  - @commercetools-test-data/business-unit@10.10.0
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/commons@10.10.0
+  - @commercetools-test-data/customer@10.10.0
+  - @commercetools-test-data/discount-code@10.10.0
+  - @commercetools-test-data/shipping-method@10.10.0
+  - @commercetools-test-data/tax-category@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
+## 10.9.3
+
+### Patch Changes
+
+- Updated dependencies [[`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867)]:
+  - @commercetools-test-data/commons@10.9.3
+  - @commercetools-test-data/business-unit@10.9.3
+  - @commercetools-test-data/channel@10.9.3
+  - @commercetools-test-data/customer@10.9.3
+  - @commercetools-test-data/discount-code@10.9.3
+  - @commercetools-test-data/product@10.9.3
+  - @commercetools-test-data/shipping-method@10.9.3
+  - @commercetools-test-data/store@10.9.3
+  - @commercetools-test-data/tax-category@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
+## 10.9.2
+
+### Patch Changes
+
+- Updated dependencies [[`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4), [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4)]:
+  - @commercetools-test-data/commons@10.9.2
+  - @commercetools-test-data/product@10.9.2
+  - @commercetools-test-data/channel@10.9.2
+  - @commercetools-test-data/business-unit@10.9.2
+  - @commercetools-test-data/customer@10.9.2
+  - @commercetools-test-data/discount-code@10.9.2
+  - @commercetools-test-data/shipping-method@10.9.2
+  - @commercetools-test-data/store@10.9.2
+  - @commercetools-test-data/tax-category@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
+## 10.9.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product@10.9.1
+  - @commercetools-test-data/discount-code@10.9.1
+  - @commercetools-test-data/commons@10.9.1
+  - @commercetools-test-data/business-unit@10.9.1
+  - @commercetools-test-data/channel@10.9.1
+  - @commercetools-test-data/customer@10.9.1
+  - @commercetools-test-data/shipping-method@10.9.1
+  - @commercetools-test-data/store@10.9.1
+  - @commercetools-test-data/tax-category@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
+## 10.9.0
+
+### Patch Changes
+
+- Updated dependencies [[`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b)]:
+  - @commercetools-test-data/commons@10.9.0
+  - @commercetools-test-data/discount-code@10.9.0
+  - @commercetools-test-data/business-unit@10.9.0
+  - @commercetools-test-data/channel@10.9.0
+  - @commercetools-test-data/customer@10.9.0
+  - @commercetools-test-data/product@10.9.0
+  - @commercetools-test-data/shipping-method@10.9.0
+  - @commercetools-test-data/store@10.9.0
+  - @commercetools-test-data/tax-category@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
+## 10.8.1
+
+### Patch Changes
+
+- Updated dependencies [[`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93), [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93)]:
+  - @commercetools-test-data/core@10.8.1
+  - @commercetools-test-data/commons@10.8.1
+  - @commercetools-test-data/business-unit@10.8.1
+  - @commercetools-test-data/channel@10.8.1
+  - @commercetools-test-data/customer@10.8.1
+  - @commercetools-test-data/discount-code@10.8.1
+  - @commercetools-test-data/product@10.8.1
+  - @commercetools-test-data/shipping-method@10.8.1
+  - @commercetools-test-data/store@10.8.1
+  - @commercetools-test-data/tax-category@10.8.1
+  - @commercetools-test-data/utils@10.8.1
+
+## 10.8.0
+
+### Patch Changes
+
+- Updated dependencies [[`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03), [`1e2bba1`](https://github.com/commercetools/test-data/commit/1e2bba10e41fd1b7dabc71b0bc2166c538bf6ee8)]:
+  - @commercetools-test-data/channel@10.8.0
+  - @commercetools-test-data/commons@10.8.0
+  - @commercetools-test-data/core@10.8.0
+  - @commercetools-test-data/customer@10.8.0
+  - @commercetools-test-data/product@10.8.0
+  - @commercetools-test-data/store@10.8.0
+  - @commercetools-test-data/business-unit@10.8.0
+  - @commercetools-test-data/discount-code@10.8.0
+  - @commercetools-test-data/shipping-method@10.8.0
+  - @commercetools-test-data/tax-category@10.8.0
+  - @commercetools-test-data/utils@10.8.0
+
+## 10.7.1
+
+### Patch Changes
+
+- Updated dependencies [[`7c08fa2`](https://github.com/commercetools/test-data/commit/7c08fa25a8d9a906401fffeb8b92f20e9358bdce)]:
+  - @commercetools-test-data/commons@10.7.1
+  - @commercetools-test-data/business-unit@10.7.1
+  - @commercetools-test-data/channel@10.7.1
+  - @commercetools-test-data/customer@10.7.1
+  - @commercetools-test-data/discount-code@10.7.1
+  - @commercetools-test-data/product@10.7.1
+  - @commercetools-test-data/shipping-method@10.7.1
+  - @commercetools-test-data/store@10.7.1
+  - @commercetools-test-data/tax-category@10.7.1
+  - @commercetools-test-data/core@10.7.1
+  - @commercetools-test-data/utils@10.7.1
+
 ## 10.7.0
 
 ### Patch Changes

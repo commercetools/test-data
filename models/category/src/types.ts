@@ -54,15 +54,15 @@ export type TCategoryGraphql = Omit<
   lastModifiedBy: TClientLoggingGraphql;
   name: string;
   nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   slug: string;
   slugAllLocales?: TLocalizedStringGraphql | null;
-  metaTitle?: string;
+  metaTitle?: string | null;
   metaTitleAllLocales?: TLocalizedStringGraphql | null;
-  metaKeywords?: string;
+  metaKeywords?: string | null;
   metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
-  metaDescription?: string;
+  metaDescription?: string | null;
   metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
 };
 

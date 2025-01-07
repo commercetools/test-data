@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const harvestPlate01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('harvestPlate01')
     .sku('HP-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('1399EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(1399))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('1399GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(1399))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('1399USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(1399))
         .country('US'),
     ])

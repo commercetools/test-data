@@ -34,6 +34,7 @@ describe('builder', () => {
       expect.objectContaining({
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
+        __typename: 'Money',
       })
     )
   );

@@ -1,25 +1,24 @@
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
+type Maybe<T> = T | null;
+type InputMaybe<T> = Maybe<T>;
+type Exact<T extends { [key: string]: unknown }> = {
   [K in keyof T]: T[K];
 };
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
+type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]?: Maybe<T[SubKey]>;
 };
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
+type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
-export type MakeEmpty<
-  T extends { [key: string]: unknown },
-  K extends keyof T,
-> = { [_ in K]?: never };
-export type Incremental<T> =
+type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
+  [_ in K]?: never;
+};
+type Incremental<T> =
   | T
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
     };
 /** All built-in and custom scalars, mapped to their actual values */
-export type Scalars = {
+type Scalars = {
   ID: { input: string; output: string };
   String: { input: string; output: string };
   Boolean: { input: boolean; output: boolean };
@@ -64,6 +63,7 @@ export enum TMcSettingsAuthPermission {
   ViewProductDiscounts = 'viewProductDiscounts',
   ViewProducts = 'viewProducts',
   ViewProjectSettings = 'viewProjectSettings',
+  ViewQuotes = 'viewQuotes',
   ViewSomeDiscounts = 'viewSomeDiscounts',
   ViewUsersAndOrganizations = 'viewUsersAndOrganizations',
 }
@@ -454,33 +454,6 @@ export type TMcSettingsCustomerEmailValidationSettingsInput = {
   isCustomerEmailValidationDisabled: Scalars['Boolean']['input'];
 };
 
-export type TMcSettingsCustomersListView = {
-  __typename?: 'CustomersListView';
-  createdAt: Scalars['DateTime']['output'];
-  filters?: Maybe<Array<TMcSettingsFilterValues>>;
-  id: Scalars['ID']['output'];
-  isActive?: Maybe<Scalars['Boolean']['output']>;
-  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
-  projectKey: Scalars['String']['output'];
-  search?: Maybe<Scalars['String']['output']>;
-  sort?: Maybe<TMcSettingsSort>;
-  table?: Maybe<TMcSettingsTable>;
-  updatedAt: Scalars['DateTime']['output'];
-  userId: Scalars['String']['output'];
-};
-
-export type TMcSettingsCustomersListViewInput = {
-  filters: Array<TMcSettingsFilterValuesCreateInput>;
-  nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
-  search?: InputMaybe<Scalars['String']['input']>;
-  sort: TMcSettingsSortCreateInput;
-  table?: InputMaybe<TMcSettingsCustomersListViewTableInput>;
-};
-
-export type TMcSettingsCustomersListViewTableInput = {
-  visibleColumns: Array<Scalars['String']['input']>;
-};
-
 export type TMcSettingsCustomersSearchListMyView = {
   __typename?: 'CustomersSearchListMyView';
   createdAt: Scalars['DateTime']['output'];
@@ -737,7 +710,6 @@ export type TMcSettingsMutation = {
   __typename?: 'Mutation';
   activateBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
   activateCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activateCustomersListView?: Maybe<TMcSettingsCustomersListView>;
   activateCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
   activateDashboardView?: Maybe<TMcSettingsDashboardView>;
   activateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -748,6 +720,7 @@ export type TMcSettingsMutation = {
   activateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   activateProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
   activateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  activateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
   changeCustomApplicationStatus?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   changeCustomViewStatus?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
   createBusinessUnitsListMyView: TMcSettingsBusinessUnitsListMyView;
@@ -755,7 +728,6 @@ export type TMcSettingsMutation = {
   createCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   createCustomApplicationDeploymentPreview: TMcSettingsCustomApplicationDeploymentPreview;
   createCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
-  createCustomersListView: TMcSettingsCustomersListView;
   createCustomersSearchListMyView: TMcSettingsCustomersSearchListMyView;
   createDashboardView: TMcSettingsDashboardView;
   createDiscountCodesCustomView: TMcSettingsDiscountsCustomView;
@@ -765,10 +737,10 @@ export type TMcSettingsMutation = {
   createProductDiscountsCustomView: TMcSettingsDiscountsCustomView;
   createProductTypeAttributesView: TMcSettingsProductTypeAttributesView;
   createProjectSettingsStoresView: TMcSettingsProjectSettingsStoresView;
+  createQuotesListView: TMcSettingsQuotesListView;
   createVariantPricesListView?: Maybe<TMcSettingsVariantPricesListView>;
   deactivateBusinessUnitsListMyView?: Maybe<TMcSettingsOrdersListView>;
   deactivateCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  deactivateCustomersListView?: Maybe<TMcSettingsOrdersListView>;
   deactivateCustomersSearchListMyView?: Maybe<TMcSettingsOrdersListView>;
   deactivateDashboardView?: Maybe<TMcSettingsDashboardView>;
   deactivateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -779,15 +751,16 @@ export type TMcSettingsMutation = {
   deactivateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   deactivateProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
   deactivateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  deactivateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
   deleteAllDashboardViews: Array<TMcSettingsDashboardView>;
   deleteAllOrderDetailViews: Array<TMcSettingsOrderDetailView>;
   deleteAllOrdersListViews: Array<TMcSettingsOrdersListView>;
+  deleteAllQuotesListViews: Array<TMcSettingsQuotesListView>;
   deleteBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
   deleteCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   deleteCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationForOrganization>;
   deleteCustomApplicationDeploymentPreview: TMcSettingsCustomApplicationDeploymentPreview;
   deleteCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
-  deleteCustomersListView?: Maybe<TMcSettingsCustomersListView>;
   deleteCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
   deleteDashboardView?: Maybe<TMcSettingsDashboardView>;
   deleteDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -797,6 +770,7 @@ export type TMcSettingsMutation = {
   deleteProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   deleteProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
   deleteProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  deleteQuotesListView?: Maybe<TMcSettingsQuotesListView>;
   installCustomApplication?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   installCustomView?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
   /** @deprecated Experimental feature - For internal usage only */
@@ -822,7 +796,6 @@ export type TMcSettingsMutation = {
   updateCustomApplicationProjectsInstallation?: Maybe<TMcSettingsRestrictedCustomApplicationInstallationForOrganization>;
   updateCustomView?: Maybe<TMcSettingsRestrictedCustomViewForOrganization>;
   updateCustomViewProjectsInstallation?: Maybe<TMcSettingsRestrictedCustomViewInstallationForOrganization>;
-  updateCustomersListView?: Maybe<TMcSettingsCustomersListView>;
   updateCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
   updateDashboardView?: Maybe<TMcSettingsDashboardView>;
   updateDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -832,6 +805,7 @@ export type TMcSettingsMutation = {
   updateProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   updateProductTypeAttributesView: TMcSettingsProductTypeAttributesView;
   updateProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  updateQuotesListView?: Maybe<TMcSettingsQuotesListView>;
   updateRuleBuilderQuickSelectionValues?: Maybe<TMcSettingsRuleBuilderQuickSelectionValues>;
   updateVariantPricesListView?: Maybe<TMcSettingsVariantPricesListView>;
   verifyCustomApplicationsMaintainerContactEmail?: Maybe<TMcSettingsCustomApplicationsMaintainerContactEmailVerificationConfirmation>;
@@ -842,10 +816,6 @@ export type TMcSettingsMutation_ActivateBusinessUnitsListMyViewArgs = {
 };
 
 export type TMcSettingsMutation_ActivateCartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
-};
-
-export type TMcSettingsMutation_ActivateCustomersListViewArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -892,6 +862,10 @@ export type TMcSettingsMutation_ActivateProjectSettingsStoresViewArgs = {
   id: Scalars['ID']['input'];
 };
 
+export type TMcSettingsMutation_ActivateQuotesListViewArgs = {
+  id: Scalars['ID']['input'];
+};
+
 export type TMcSettingsMutation_ChangeCustomApplicationStatusArgs = {
   applicationId: Scalars['ID']['input'];
   organizationId: Scalars['String']['input'];
@@ -926,10 +900,6 @@ export type TMcSettingsMutation_CreateCustomApplicationDeploymentPreviewArgs = {
 export type TMcSettingsMutation_CreateCustomViewArgs = {
   data: TMcSettingsCustomViewDraftDataInput;
   organizationId: Scalars['String']['input'];
-};
-
-export type TMcSettingsMutation_CreateCustomersListViewArgs = {
-  data: TMcSettingsCustomersListViewInput;
 };
 
 export type TMcSettingsMutation_CreateCustomersSearchListMyViewArgs = {
@@ -968,6 +938,10 @@ export type TMcSettingsMutation_CreateProjectSettingsStoresViewArgs = {
   data: TMcSettingsProjectSettingsStoresViewInput;
 };
 
+export type TMcSettingsMutation_CreateQuotesListViewArgs = {
+  data: TMcSettingsQuotesListViewInput;
+};
+
 export type TMcSettingsMutation_CreateVariantPricesListViewArgs = {
   data: TMcSettingsVariantPricesListViewInput;
 };
@@ -977,10 +951,6 @@ export type TMcSettingsMutation_DeactivateBusinessUnitsListMyViewArgs = {
 };
 
 export type TMcSettingsMutation_DeactivateCartDiscountsCustomViewArgs = {
-  id: Scalars['ID']['input'];
-};
-
-export type TMcSettingsMutation_DeactivateCustomersListViewArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -1025,6 +995,10 @@ export type TMcSettingsMutation_DeactivateProjectSettingsStoresViewArgs = {
   id: Scalars['ID']['input'];
 };
 
+export type TMcSettingsMutation_DeactivateQuotesListViewArgs = {
+  id: Scalars['ID']['input'];
+};
+
 export type TMcSettingsMutation_DeleteBusinessUnitsListMyViewArgs = {
   id: Scalars['ID']['input'];
 };
@@ -1046,10 +1020,6 @@ export type TMcSettingsMutation_DeleteCustomApplicationDeploymentPreviewArgs = {
 export type TMcSettingsMutation_DeleteCustomViewArgs = {
   customViewId: Scalars['String']['input'];
   organizationId: Scalars['String']['input'];
-};
-
-export type TMcSettingsMutation_DeleteCustomersListViewArgs = {
-  id: Scalars['ID']['input'];
 };
 
 export type TMcSettingsMutation_DeleteCustomersSearchListMyViewArgs = {
@@ -1085,6 +1055,10 @@ export type TMcSettingsMutation_DeleteProductTypeAttributesViewArgs = {
 };
 
 export type TMcSettingsMutation_DeleteProjectSettingsStoresViewArgs = {
+  id: Scalars['ID']['input'];
+};
+
+export type TMcSettingsMutation_DeleteQuotesListViewArgs = {
   id: Scalars['ID']['input'];
 };
 
@@ -1207,11 +1181,6 @@ export type TMcSettingsMutation_UpdateCustomViewProjectsInstallationArgs = {
   projectKeys?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
-export type TMcSettingsMutation_UpdateCustomersListViewArgs = {
-  data: TMcSettingsCustomersListViewInput;
-  id: Scalars['ID']['input'];
-};
-
 export type TMcSettingsMutation_UpdateCustomersSearchListMyViewArgs = {
   data: TMcSettingsCustomersSearchListMyViewInput;
   id: Scalars['ID']['input'];
@@ -1254,6 +1223,11 @@ export type TMcSettingsMutation_UpdateProductTypeAttributesViewArgs = {
 
 export type TMcSettingsMutation_UpdateProjectSettingsStoresViewArgs = {
   data: TMcSettingsProjectSettingsStoresViewInput;
+  id: Scalars['ID']['input'];
+};
+
+export type TMcSettingsMutation_UpdateQuotesListViewArgs = {
+  data: TMcSettingsQuotesListViewInput;
   id: Scalars['ID']['input'];
 };
 
@@ -1652,7 +1626,6 @@ export type TMcSettingsQuery = {
   __typename?: 'Query';
   activeBusinessUnitsListMyView?: Maybe<TMcSettingsBusinessUnitsListMyView>;
   activeCartDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
-  activeCustomersListView?: Maybe<TMcSettingsCustomersListView>;
   activeCustomersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
   activeDashboardView?: Maybe<TMcSettingsDashboardView>;
   activeDiscountCodesCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
@@ -1662,6 +1635,7 @@ export type TMcSettingsQuery = {
   activeProductDiscountsCustomView?: Maybe<TMcSettingsDiscountsCustomView>;
   activeProductTypeAttributesView?: Maybe<TMcSettingsProductTypeAttributesView>;
   activeProjectSettingsStoresView?: Maybe<TMcSettingsProjectSettingsStoresView>;
+  activeQuotesListView?: Maybe<TMcSettingsQuotesListView>;
   /** @deprecated Experimental feature - For internal usage only */
   allAppliedCustomApplicationPermissions: Array<TMcSettingsCustomApplicationInstallationPermission>;
   /** @deprecated Experimental feature - For internal usage only */
@@ -1685,8 +1659,6 @@ export type TMcSettingsQuery = {
   customApplication?: Maybe<TMcSettingsCustomApplication>;
   /** @deprecated Experimental feature - For internal usage only */
   customView?: Maybe<TMcSettingsCustomView>;
-  customersListView?: Maybe<TMcSettingsCustomersListView>;
-  customersListViews: Array<Maybe<TMcSettingsCustomersListView>>;
   customersSearchListMyView?: Maybe<TMcSettingsCustomersSearchListMyView>;
   customersSearchListMyViews: Array<
     Maybe<TMcSettingsCustomersSearchListMyView>
@@ -1719,6 +1691,8 @@ export type TMcSettingsQuery = {
   projectSettingsStoresViews: Array<
     Maybe<TMcSettingsProjectSettingsStoresView>
   >;
+  quotesListView?: Maybe<TMcSettingsQuotesListView>;
+  quotesListViews: Array<Maybe<TMcSettingsQuotesListView>>;
   /** @deprecated Experimental feature - For internal usage only */
   readMessagesFromDeadLetterQueue: Array<TMcSettingsMessage>;
   release?: Maybe<Scalars['String']['output']>;
@@ -1781,10 +1755,6 @@ export type TMcSettingsQuery_CustomApplicationArgs = {
 
 export type TMcSettingsQuery_CustomViewArgs = {
   customViewId: Scalars['ID']['input'];
-};
-
-export type TMcSettingsQuery_CustomersListViewArgs = {
-  id: Scalars['ID']['input'];
 };
 
 export type TMcSettingsQuery_CustomersSearchListMyViewArgs = {
@@ -1852,8 +1822,31 @@ export type TMcSettingsQuery_ProjectSettingsStoresViewArgs = {
   id: Scalars['ID']['input'];
 };
 
+export type TMcSettingsQuery_QuotesListViewArgs = {
+  id: Scalars['ID']['input'];
+};
+
 export type TMcSettingsQuery_RuleBuilderQuickSelectionValuesArgs = {
   ruleBuilderType: TMcSettingsRuleBuilderType;
+};
+
+export type TMcSettingsQuotesListView = {
+  __typename?: 'QuotesListView';
+  createdAt: Scalars['DateTime']['output'];
+  id: Scalars['ID']['output'];
+  isActive?: Maybe<Scalars['Boolean']['output']>;
+  nameAllLocales?: Maybe<Array<TMcSettingsLocalizedField>>;
+  projectKey: Scalars['String']['output'];
+  search?: Maybe<Scalars['String']['output']>;
+  sort?: Maybe<TMcSettingsSort>;
+  updatedAt: Scalars['DateTime']['output'];
+  userId: Scalars['String']['output'];
+};
+
+export type TMcSettingsQuotesListViewInput = {
+  nameAllLocales: Array<TMcSettingsLocalizedFieldCreateInput>;
+  search?: InputMaybe<Scalars['String']['input']>;
+  sort: TMcSettingsSortCreateInput;
 };
 
 export enum TMcSettingsResourceType {
@@ -2044,6 +2037,7 @@ export enum TMcSettingsRuleBuilderType {
   CartDiscount = 'CartDiscount',
   CartTargetDiscount = 'CartTargetDiscount',
   ProductDiscount = 'ProductDiscount',
+  ShippingMethod = 'ShippingMethod',
 }
 
 export type TMcSettingsSalesPerformanceConfiguration = {
@@ -2072,6 +2066,7 @@ export type TMcSettingsSampleDataImportMetadata = {
 
 export enum TMcSettingsSampleDatasets {
   B2B = 'B2B',
+  B2Clifestyle = 'B2CLIFESTYLE',
   Fashion = 'FASHION',
   Goodstore = 'GOODSTORE',
 }

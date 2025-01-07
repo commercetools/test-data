@@ -1,5 +1,151 @@
 # @commercetools-test-data/commons
 
+## 10.11.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.11.2
+  - @commercetools-test-data/graphql-types@10.11.2
+  - @commercetools-test-data/product-discount@10.11.2
+  - @commercetools-test-data/utils@10.11.2
+
+## 10.11.1
+
+### Patch Changes
+
+- Updated dependencies [[`a83c452`](https://github.com/commercetools/test-data/commit/a83c452340799c3773462b3938910065cd934bec)]:
+  - @commercetools-test-data/graphql-types@10.11.1
+  - @commercetools-test-data/product-discount@10.11.1
+  - @commercetools-test-data/core@10.11.1
+  - @commercetools-test-data/utils@10.11.1
+
+## 10.11.0
+
+### Minor Changes
+
+- [#726](https://github.com/commercetools/test-data/pull/726) [`3afc6db`](https://github.com/commercetools/test-data/commit/3afc6db3895ecfcef3bb0ba3c12e62ae4e6379dd) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Added three new test data models:
+
+  - `DicountedLineItemPortion`
+  - `DicountedLineItemPortionDraft`
+  - `DiscountedLitemItemPrice`
+
+- [#650](https://github.com/commercetools/test-data/pull/650) [`8038c61`](https://github.com/commercetools/test-data/commit/8038c61d9506acebbc8f020b915367bdf87a81fa) Thanks [@jaikumar-tj](https://github.com/jaikumar-tj)! - ### Common Model (`common`)
+
+  - Introduced a new model called `discounted-price`.
+
+  ### Inventory Entry Model (`inventory-entry`)
+
+  - Updated the transformer file to conditionally send the supply channel, making it optional.
+
+  ### Product Type (`product-type`)
+
+  - Added new presets for enum and localized enum types.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.11.0
+  - @commercetools-test-data/core@10.11.0
+  - @commercetools-test-data/graphql-types@10.11.0
+  - @commercetools-test-data/utils@10.11.0
+
+## 10.10.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.10.1
+  - @commercetools-test-data/product-discount@10.10.1
+  - @commercetools-test-data/utils@10.10.1
+
+## 10.10.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.10.0
+  - @commercetools-test-data/product-discount@10.10.0
+  - @commercetools-test-data/utils@10.10.0
+
+## 10.9.3
+
+### Patch Changes
+
+- [#711](https://github.com/commercetools/test-data/pull/711) [`073ec7d`](https://github.com/commercetools/test-data/commit/073ec7d34ae62c672df194bbcb56aa42fc862867) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fix an error in the `LocalizedString.resolveGraphqlDefaultLocaleValue` helper function when an empty array is passed as a parameter.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.3
+  - @commercetools-test-data/core@10.9.3
+  - @commercetools-test-data/utils@10.9.3
+
+## 10.9.2
+
+### Patch Changes
+
+- [#709](https://github.com/commercetools/test-data/pull/709) [`0e2404c`](https://github.com/commercetools/test-data/commit/0e2404c997a4afb772dc32c53595fb350c0991e4) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update `LocalizedString.resolveGraphqlDefaultLocaleValue` helper to return `null` instead of `undefined` when not input value is provided.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.2
+  - @commercetools-test-data/core@10.9.2
+  - @commercetools-test-data/utils@10.9.2
+
+## 10.9.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.1
+  - @commercetools-test-data/core@10.9.1
+  - @commercetools-test-data/utils@10.9.1
+
+## 10.9.0
+
+### Minor Changes
+
+- [#698](https://github.com/commercetools/test-data/pull/698) [`b983780`](https://github.com/commercetools/test-data/commit/b9837802e3b4b96a0cd20ec7ffd1f87fb1f5168b) Thanks [@mario-priceless](https://github.com/mario-priceless)! - introduction of the new type discounted price
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.9.0
+  - @commercetools-test-data/core@10.9.0
+  - @commercetools-test-data/utils@10.9.0
+
+## 10.8.1
+
+### Patch Changes
+
+- [#693](https://github.com/commercetools/test-data/pull/693) [`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Update transformers configuration to comply with the new `buildFields` behaviour.
+
+- Updated dependencies [[`4599846`](https://github.com/commercetools/test-data/commit/459984623f345f5d21141624cb26e65d38f02f93)]:
+  - @commercetools-test-data/core@10.8.1
+  - @commercetools-test-data/utils@10.8.1
+
+## 10.8.0
+
+### Minor Changes
+
+- [#688](https://github.com/commercetools/test-data/pull/688) [`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - The main change is about the `core` package where we are introducing support for writing test data models using new implementation patterns which makes the process simpler. Also, the resulting code will be more maintainable.
+
+  You can head over [here]() for updated documentation about those new patterns.
+
+### Patch Changes
+
+- Updated dependencies [[`6bdcbe6`](https://github.com/commercetools/test-data/commit/6bdcbe6c75b49aa6d6258ad3c64230bb8c19de03), [`1e2bba1`](https://github.com/commercetools/test-data/commit/1e2bba10e41fd1b7dabc71b0bc2166c538bf6ee8)]:
+  - @commercetools-test-data/core@10.8.0
+  - @commercetools-test-data/utils@10.8.0
+
+## 10.7.1
+
+### Patch Changes
+
+- [#684](https://github.com/commercetools/test-data/pull/684) [`7c08fa2`](https://github.com/commercetools/test-data/commit/7c08fa25a8d9a906401fffeb8b92f20e9358bdce) Thanks [@ragafus](https://github.com/ragafus)! - Add max centAmount value to CentPrecisionMoney and CentPrecisioMoneyDraft models to avoid rounding errors
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.7.1
+  - @commercetools-test-data/utils@10.7.1
+
 ## 10.7.0
 
 ### Patch Changes

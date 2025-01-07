@@ -17,6 +17,7 @@ const transformers = {
         results: fields.attributes!.map((attribute) =>
           buildField(attribute, 'graphql')
         ) as unknown as Array<TAttributeDefinitionGraphql>,
+        total: fields.attributes!.length,
         __typename: 'AttributeDefinitionResult',
       },
     }),

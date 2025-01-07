@@ -1,0 +1,39 @@
+schema:
+  - '${MC_API_URL}/graphql':
+      headers:
+        Cookie: mcAccessToken=${MC_ACCESS_TOKEN}
+        X-Graphql-Target: ctp
+        X-Project-Key: ${CTP_PROJECT_KEY}
+extensions:
+  codegen:
+    generates:
+      schemas/ctp.json:
+        plugins:
+          - introspection
+      graphql-types/src/generated/ctp.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+        config:
+          typesPrefix: TCtp
+          addUnderscoreToArgsType: true
+          useImplementingTypes: true
+          scalars:
+            Long: number
+            DateTime: string
+            Country: string
+            Locale: string
+            Date: string
+            Json: '{ [key: string]: unknown }'
+            Currency: string
+            KeyReferenceInput: string
+            SearchFilter: string
+            SearchSort: string
+            YearMonth: string
+            BigDecimal: string
+            Time: string
+            Set: 'unknown[]'
+    hooks:
+      afterAllFileWrite:
+        - prettier --write
+        - node ./graphql-types/src/types-post-processor.mjs

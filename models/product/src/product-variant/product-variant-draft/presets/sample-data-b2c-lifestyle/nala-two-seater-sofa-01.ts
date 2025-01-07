@@ -7,18 +7,22 @@ import * as ProductVariantDraft from '../../index';
 const nalaTwoSeaterSofa01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('nalaTwoSeaterSofa01')
     .sku('NTSS-01')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('129900EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(129900))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('129900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(129900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('129900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(129900))
         .country('US'),
     ])

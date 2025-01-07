@@ -5,6 +5,7 @@ import type { TCreateKeyReferenceBuilder, TKeyReference } from './types';
 
 const Model: TCreateKeyReferenceBuilder = () =>
   Builder<TKeyReference>({
+    name: 'KeyReference',
     generator,
     transformers,
   });

@@ -14,6 +14,33 @@ $ pnpm add -D @commercetools-test-data/channel
 
 ```ts
 import {
+  ChannelRest,
+  ChannelDraftRest,
+  ChannelGraphql,
+  ChannelDraftGraphql,
+} from '@commercetools-test-data/inventory-entry';
+
+const channelRest = ChannelRest.random().build();
+const channelDraftRest = ChannelDraftRest.random().build();
+
+const channelGraphql = ChannelGraphql.random().build();
+const channelDraftGraphql = ChannelDraftGraphql.random().build();
+
+// Presets
+const withInventorySupplyAndProductDistributionRolesRest =
+  ChannelDraftRest.presets
+    .withInventorySupplyAndProductDistributionRoles()
+    .build();
+const withInventorySupplyAndProductDistributionRolesGraphql =
+  ChannelDraftGraphql.presets
+    .withInventorySupplyAndProductDistributionRoles()
+    .build();
+```
+
+For backwards compatibility, we still support using the generic data models, but you should consider them legacy as we will be removing them in the future.
+
+```ts
+import {
   Channel,
   ChannelDraft,
   type TChannel,

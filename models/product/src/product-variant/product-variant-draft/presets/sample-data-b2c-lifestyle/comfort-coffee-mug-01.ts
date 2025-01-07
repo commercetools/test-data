@@ -16,18 +16,27 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const comfortCoffeeMug01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('comfortCoffeeMug01')
     .sku('CCM-089')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('199EUR')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(199))
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('199GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(199))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('149USD')
+        .value(MoneyDraft.random().currencyCode('USD').centAmount(149))
+        .country('US'),
+      PriceDraft.presets
+        .empty()
+        .key('199USD_dist')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(199))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)

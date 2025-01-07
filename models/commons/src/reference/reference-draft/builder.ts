@@ -5,6 +5,7 @@ import transformers from './transformers';
 
 const Model: TCreateReferenceDraftBuilder = () =>
   Builder<TReferenceDraft>({
+    name: 'ReferenceDraft',
     generator,
     transformers,
   });

@@ -16,10 +16,17 @@ const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
 const walnutCabinet01 = (): TProductVariantDraftBuilder =>
   ProductVariantDraft.presets
     .empty()
+    .key('walnutCabinet01')
     .sku('WCS-09')
     .prices([
       PriceDraft.presets
         .empty()
+        .key('159900EUR')
+        .value(MoneyDraft.random().currencyCode('EUR').centAmount(159900))
+        .country('DE'),
+      PriceDraft.presets
+        .empty()
+        .key('159900EUR_dist')
         .value(MoneyDraft.random().currencyCode('EUR').centAmount(159900))
         .channel(
           KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
@@ -27,10 +34,12 @@ const walnutCabinet01 = (): TProductVariantDraftBuilder =>
         .country('DE'),
       PriceDraft.presets
         .empty()
+        .key('159900GBP')
         .value(MoneyDraft.random().currencyCode('GBP').centAmount(159900))
         .country('GB'),
       PriceDraft.presets
         .empty()
+        .key('159900USD')
         .value(MoneyDraft.random().currencyCode('USD').centAmount(159900))
         .country('US'),
     ])

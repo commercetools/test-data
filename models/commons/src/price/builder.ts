@@ -1,11 +1,11 @@
-import type { Price } from '@commercetools/platform-sdk';
 import { Builder } from '@commercetools-test-data/core';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreatePriceBuilder } from './types';
+import type { TPrice, TCreatePriceBuilder } from './types';
 
 const Model: TCreatePriceBuilder = () =>
-  Builder<Price>({
+  Builder<TPrice>({
+    name: 'Price',
     generator,
     transformers,
   });

@@ -3,15 +3,13 @@ import {
   ReviewRatingStatistics,
   SuggestTokenizer,
 } from '@commercetools/platform-sdk';
-import { TCategoryGraphql } from '@commercetools-test-data/category';
 import {
   TLocalizedStringGraphql,
   TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TProductTypeGraphql } from '@commercetools-test-data/product-type';
-import { TStateGraphql } from '@commercetools-test-data/state';
-import { TTaxCategoryGraphql } from '@commercetools-test-data/tax-category';
+import { TState } from '@commercetools-test-data/state';
+import { TTaxCategory } from '@commercetools-test-data/tax-category';
 
 export type TProductProjection = ProductProjection;
 
@@ -35,33 +33,29 @@ export type TSearchKeywords = {
 
 export type TProductProjectionGraphql = Omit<
   TProductProjection,
-  | 'categories'
   | 'categoryOrderHints'
   | 'description'
   | 'metaTitle'
   | 'metaDescription'
   | 'metaKeywords'
   | 'name'
-  | 'productType'
   | 'searchKeywords'
   | 'slug'
   | 'state'
   | 'taxCategory'
 > & {
   categoryOrderHints: TCategoryOrderHintGraphql[];
-  categories: TCategoryGraphql[];
   categoriesRef: TReferenceGraphql[];
-  description?: string;
+  description?: string | null;
   descriptionAllLocales?: TLocalizedStringGraphql | null;
   name: string;
   nameAllLocales: TLocalizedStringGraphql;
-  metaDescription?: string;
+  metaDescription?: string | null;
   metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
-  metaKeywords?: string;
+  metaKeywords?: string | null;
   metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
-  metaTitle?: string;
+  metaTitle?: string | null;
   metaTitleAllLocales?: TLocalizedStringGraphql | null;
-  productType: TProductTypeGraphql;
   productTypeRef: TReferenceGraphql;
   reviewRatingStatistics?: ReviewRatingStatistics & {
     __typename: 'ReviewRatingStatistics';
@@ -69,9 +63,9 @@ export type TProductProjectionGraphql = Omit<
   searchKeywords: TSearchKeywords[];
   slug: string;
   slugAllLocales: TLocalizedStringGraphql;
-  state?: TStateGraphql | null;
-  stateRef?: TReferenceGraphql | null;
-  taxCategory?: TTaxCategoryGraphql | null;
+  state?: TState;
+  stateRef?: TReferenceGraphql;
+  taxCategory?: TTaxCategory | null;
   taxCategoryRef?: TReferenceGraphql | null;
 };
 
