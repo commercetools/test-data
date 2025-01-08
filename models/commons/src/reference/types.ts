@@ -6,6 +6,7 @@ export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
 export interface TReference<TypeId = string> {
   typeId: TypeId;
   id: string;
+  obj?: unknown;
 }
 
 export type TExpandedReferenceObject<TypeId = string> = {
