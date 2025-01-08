@@ -1,4 +1,4 @@
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedString, Reference } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { ProductVariant } from '@commercetools-test-data/product';
 import { ProductType } from '@commercetools-test-data/product-type';
@@ -23,7 +23,6 @@ const populatePreset = <
   builder: TBuilder<TModel>
 ) => {
   return builder
-    .productType(ProductType.presets.milk())
     .key('happy-cow-milk-key')
     .masterVariant(ProductVariant.presets.happyCowMilkMasterVariant())
     .published(true)
@@ -36,7 +35,10 @@ export const restPreset = (): TBuilder<TProductProjectionRest> => {
     .name(productName)
     .description(productDescription)
     .metaTitle(productName)
-    .metaDescription(productDescription);
+    .metaDescription(productDescription)
+    .productType(
+      Reference.presets.productTypeReference().obj(ProductType.presets.milk())
+    );
 };
 
 export const graphqlPreset = (): TBuilder<TProductProjectionGraphql> => {
@@ -45,5 +47,6 @@ export const graphqlPreset = (): TBuilder<TProductProjectionGraphql> => {
     .nameAllLocales(productName)
     .descriptionAllLocales(productDescription)
     .metaTitleAllLocales(productName)
-    .metaDescriptionAllLocales(productDescription);
+    .metaDescriptionAllLocales(productDescription)
+    .productType(ProductType.presets.milk());
 };

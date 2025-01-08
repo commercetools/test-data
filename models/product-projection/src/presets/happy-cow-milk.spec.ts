@@ -2,7 +2,7 @@ import { restPresets, graphqlPresets } from './index';
 
 describe('ProductProjection HappyCowMilk presets', () => {
   it('should return a valid Rest model', () => {
-    const model = restPresets.happyCowMilk().build();
+    const model = restPresets.happyCowMilk().buildRest();
 
     expect(model).toEqual(
       expect.objectContaining({
@@ -26,6 +26,15 @@ describe('ProductProjection HappyCowMilk presets', () => {
         },
         masterVariant: expect.objectContaining({
           key: 'happy-cow-master-variant-key',
+        }),
+        productType: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'product-type',
+          obj: expect.objectContaining({
+            id: expect.any(String),
+            key: expect.any(String),
+            name: 'Milk Product Type',
+          }),
         }),
         published: true,
         hasStagedChanges: false,
@@ -100,6 +109,16 @@ describe('ProductProjection HappyCowMilk presets', () => {
             __typename: 'LocalizedString',
           },
         ]),
+        productType: expect.objectContaining({
+          id: expect.any(String),
+          name: 'Milk Product Type',
+          __typename: 'ProductTypeDefinition',
+        }),
+        productTypeRef: expect.objectContaining({
+          id: expect.any(String),
+          typeId: 'product-type',
+          __typename: 'Reference',
+        }),
         published: true,
         hasStagedChanges: false,
       })
