@@ -14,24 +14,21 @@ $ pnpm add -D @commercetools-test-data/product-projection
 
 ```ts
 import {
-  ProductProjection,
-  type TProductProjection,
-  type TProductProjectionRest,
-  type TProductProjectionGraphql,
+  ProductProjectionRest,
+  ProductProjectionGraphql,
 } from '@commercetools-test-data/product-projection';
 
-const productProjection =
-  ProductProjection.random().build<TProductProjection>();
-
 // For REST entities
-const productProjectionRest =
-  ProductProjection.random().buildRest<TProductProjectionRest>();
+const productProjectionRest = ProductProjectionRest.random().build();
 
 // For Graphql entities
-const productProjectionGraphql =
-  ProductProjection.random().buildGraphql<TProductProjectionGraphql>();
+const productProjectionGraphql = ProductProjectionGraphql.random().build();
 
 // Presets
-const happyCowProductProjection = ProductProjection.presets;
-happyCowMilkProductProjection().build<TProductProjection>();
+const happyCowProductProjectionRest = ProductProjectionRest.presets
+  .happyCowMilk()
+  .build();
+const happyCowProductProjectionGraphql = ProductProjectionGraphql.presets
+  .happyCowMilk()
+  .build();
 ```

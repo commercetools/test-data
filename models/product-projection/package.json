@@ -22,6 +22,7 @@
     "@commercetools-test-data/category": "10.11.2",
     "@commercetools-test-data/commons": "10.11.2",
     "@commercetools-test-data/core": "10.11.2",
+    "@commercetools-test-data/graphql-types": "10.11.2",
     "@commercetools-test-data/product": "10.11.2",
     "@commercetools-test-data/product-type": "10.11.2",
     "@commercetools-test-data/state": "10.11.2",

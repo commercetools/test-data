@@ -6,6 +6,10 @@ export type TReferenceBuilder<TypeId = string> = TBuilder<TReference<TypeId>>;
 export interface TReference<TypeId = string> {
   typeId: TypeId;
   id: string;
+  // This is a temporary think. We will be migrating this model to the
+  // new implementation patterns as a follow-up whih will make this unncecessary.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  obj?: any;
 }
 
 export type TExpandedReferenceObject<TypeId = string> = {

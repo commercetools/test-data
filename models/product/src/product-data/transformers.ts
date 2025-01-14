@@ -45,6 +45,7 @@ const transformers = {
         (category) => ({
           id: category.id,
           typeId: 'category',
+          obj: category,
         })
       );
 
