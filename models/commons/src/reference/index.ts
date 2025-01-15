@@ -3,13 +3,12 @@ import {
   GraphqlModelBuilder,
   CompatModelBuilder,
 } from './builders';
+import * as constants from './constants';
 import * as modelPresets from './presets';
 
-export * as Reference from '.';
 export * from './reference-draft';
 
 export * as constants from './constants';
-export * from './types';
 
 export const ReferenceRest = {
   random: RestModelBuilder,
@@ -24,5 +23,8 @@ export const ReferenceGraphql = {
 /**
  * @deprecated Use `ReferenceRest` or `ReferenceGraphql` exported models instead of `Reference`.
  */
-export const random = CompatModelBuilder;
-export const presets = modelPresets.compatPresets;
+export const Reference = {
+  random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
+  constants,
+};
