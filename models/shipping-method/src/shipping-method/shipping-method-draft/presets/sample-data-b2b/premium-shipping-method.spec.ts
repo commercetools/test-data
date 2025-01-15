@@ -47,22 +47,22 @@ describe(`with premiumShippingMethod preset`, () => {
             "shippingRates": [
               {
                 "freeAbove": {
-                  "centAmount": 1000000,
+                  "centAmount": 1500000,
                   "currencyCode": "EUR",
                 },
                 "price": {
-                  "centAmount": 10000,
+                  "centAmount": 30000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": {
-                  "centAmount": 1000000,
+                  "centAmount": 1500000,
                   "currencyCode": "GBP",
                 },
                 "price": {
-                  "centAmount": 10000,
+                  "centAmount": 30000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
@@ -165,22 +165,22 @@ describe(`with premiumShippingMethod preset`, () => {
             "shippingRates": [
               {
                 "freeAbove": {
-                  "centAmount": 1000000,
+                  "centAmount": 1500000,
                   "currencyCode": "EUR",
                 },
                 "price": {
-                  "centAmount": 10000,
+                  "centAmount": 30000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
               },
               {
                 "freeAbove": {
-                  "centAmount": 1000000,
+                  "centAmount": 1500000,
                   "currencyCode": "GBP",
                 },
                 "price": {
-                  "centAmount": 10000,
+                  "centAmount": 30000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
