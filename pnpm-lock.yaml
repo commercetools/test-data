@@ -294,6 +294,9 @@ importers:
       '@commercetools-test-data/tax-category':
         specifier: 10.12.0
         version: link:../tax-category
+      '@commercetools-test-data/type':
+        specifier: 10.12.0
+        version: link:../type
       '@commercetools-test-data/utils':
         specifier: 10.12.0
         version: link:../../utils

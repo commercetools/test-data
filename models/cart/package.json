@@ -25,6 +25,7 @@
     "@commercetools-test-data/core": "10.12.0",
     "@commercetools-test-data/customer": "10.12.0",
     "@commercetools-test-data/discount-code": "10.12.0",
+    "@commercetools-test-data/type": "10.12.0",
     "@commercetools-test-data/graphql-types": "10.12.0",
     "@commercetools-test-data/product": "10.12.0",
     "@commercetools-test-data/shipping-method": "10.12.0",

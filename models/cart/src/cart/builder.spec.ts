@@ -1,267 +1,199 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCart, TCartGraphql } from './types';
-import * as Cart from './index';
+import { TBuilder } from '@commercetools-test-data/core';
+import { CustomFieldBooleanType } from '@commercetools-test-data/type';
+import { LineItem } from '../line-item';
+import type { TCart, TCartGraphql, TCartRest } from './types';
+import { CartGraphql, CartRest } from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TCart, TCart>(
-      'default',
-      Cart.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
-        }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-        }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-          }),
-        ]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-        totalPrice: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        cartState: expect.any(String),
-        refusedGifts: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'cart-discount',
-          }),
-        ]),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        totalLineItemQuantity: expect.any(Number),
-        shippingInfo: null,
-        directDiscounts: expect.arrayContaining([]),
-        taxedPrice: null,
-        taxedShippingPrice: null,
-        paymentInfo: null,
-      })
-    )
+const populateCommon = <TModel extends TCart | TCartRest | TCartGraphql>(
+  model: TBuilder<TModel>
+) => model.country('DE').custom(CustomFieldBooleanType.random());
+
+const populateRestModel = (model: TBuilder<TCartRest>) => populateCommon(model);
+
+const populateGraphqlModel = (model: TBuilder<TCartGraphql>) =>
+  populateCommon(model);
+
+const validateCommonFields = (model: TCartRest | TCartGraphql) => {
+  expect(model).toEqual(
+    expect.objectContaining({
+      id: expect.any(String),
+      version: expect.any(Number),
+      key: expect.any(String),
+      customerId: expect.any(String),
+      customerEmail: expect.any(String),
+      anonymousId: expect.any(String),
+      store: null,
+      country: expect.any(String),
+      inventoryMode: expect.any(String),
+      taxMode: expect.any(String),
+      taxRoundingMode: expect.any(String),
+      taxCalculationMode: expect.any(String),
+      customLineItems: expect.arrayContaining([]),
+      locale: expect.any(String),
+      deleteDaysAfterLastModification: null,
+      shippingRateInput: null,
+      origin: expect.any(String),
+      shippingMode: expect.any(String),
+      shipping: expect.arrayContaining([]),
+      discountCodes: expect.arrayContaining([expect.any(String)]),
+      createdAt: expect.any(String),
+      lastModifiedAt: expect.any(String),
+      cartState: expect.any(String),
+      totalLineItemQuantity: expect.any(Number),
+      shippingInfo: null,
+      directDiscounts: expect.arrayContaining([]),
+      taxedPrice: null,
+      taxedShippingPrice: null,
+      paymentInfo: null,
+    })
   );
-
-  it(
-    ...createBuilderSpec<TCart, TCart>(
-      'rest',
-      Cart.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
+};
+const validateRestModel = (model: TCartRest) => {
+  validateCommonFields(model);
+  expect(model).toEqual(
+    expect.objectContaining({
+      createdBy: expect.objectContaining({
+        customer: expect.objectContaining({ typeId: 'customer' }),
+      }),
+      lastModifiedBy: expect.objectContaining({
+        customer: expect.objectContaining({ typeId: 'customer' }),
+      }),
+      custom: expect.objectContaining({
+        name: 'Boolean',
+      }),
+      lineItems: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          quantity: expect.any(Number),
         }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
+      ]),
+      customerGroup: expect.objectContaining({
+        typeId: 'customer-group',
+      }),
+      businessUnit: expect.objectContaining({
+        typeId: 'business-unit',
+      }),
+      refusedGifts: expect.arrayContaining([
+        expect.objectContaining({
+          typeId: 'cart-discount',
         }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
+      ]),
+      shippingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+      }),
+      billingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+      }),
+      itemShippingAddresses: expect.arrayContaining([
+        expect.objectContaining({
           city: expect.any(String),
           firstName: expect.any(String),
           lastName: expect.any(String),
         }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-          }),
-        ]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-        totalPrice: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        cartState: expect.any(String),
-        refusedGifts: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'cart-discount',
-          }),
-        ]),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        totalLineItemQuantity: expect.any(Number),
-        shippingInfo: null,
-        directDiscounts: expect.arrayContaining([]),
-        taxedPrice: null,
-        taxedShippingPrice: null,
-        paymentInfo: null,
-      })
-    )
+      ]),
+      totalPrice: expect.objectContaining({
+        centAmount: expect.any(Number),
+        currencyCode: expect.any(String),
+      }),
+    })
   );
+};
+const validateGraphqlModel = (model: TCartGraphql) => {
+  validateCommonFields(model);
 
-  it(
-    ...createBuilderSpec<TCart, TCartGraphql>(
-      'graphql',
-      Cart.random(),
-      expect.objectContaining({
-        id: expect.any(String),
-        version: expect.any(Number),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
+  expect(model).toEqual(
+    expect.objectContaining({
+      __typename: 'Cart',
+      lineItems: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          quantity: expect.any(Number),
+          __typename: 'LineItem',
+        }),
+      ]),
+      businessUnitRef: expect.objectContaining({
+        typeId: 'business-unit',
+        __typename: 'Reference',
+      }),
+      custom: expect.objectContaining({
+        name: 'Boolean',
+        __typename: 'BooleanCustomFieldType',
+      }),
+      customer: null,
+      customerGroupRef: expect.objectContaining({
+        typeId: 'customer-group',
+        __typename: 'Reference',
+      }),
+      placement: null,
+      refusedGiftsRefs: expect.arrayContaining([
+        expect.objectContaining({
+          typeId: 'cart-discount',
           __typename: 'Reference',
         }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-          __typename: 'Reference',
-        }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            quantity: expect.any(Number),
-            __typename: 'LineItem',
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
+      ]),
+      storeRef: expect.objectContaining({
+        typeId: 'store',
+        __typename: 'Reference',
+      }),
+      shippingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+        __typename: 'Address',
+      }),
+      billingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+        __typename: 'Address',
+      }),
+      itemShippingAddresses: expect.arrayContaining([
+        expect.objectContaining({
           city: expect.any(String),
           firstName: expect.any(String),
           lastName: expect.any(String),
           __typename: 'Address',
         }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-          __typename: 'Address',
-        }),
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([
-          expect.objectContaining({
-            city: expect.any(String),
-            firstName: expect.any(String),
-            lastName: expect.any(String),
-            __typename: 'Address',
-          }),
-        ]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-        totalPrice: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-          __typename: 'Money',
-        }),
-        createdAt: expect.any(String),
-        lastModifiedAt: expect.any(String),
-        cartState: expect.any(String),
-        refusedGifts: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'cart-discount',
-            __typename: 'Reference',
-          }),
-        ]),
-        createdBy: expect.objectContaining({
-          customerRef: expect.objectContaining({ typeId: 'customer' }),
-          userRef: expect.objectContaining({ typeId: 'user' }),
-        }),
-        lastModifiedBy: expect.objectContaining({
-          customerRef: expect.objectContaining({ typeId: 'customer' }),
-          userRef: expect.objectContaining({ typeId: 'user' }),
-        }),
-        totalLineItemQuantity: expect.any(Number),
-        shippingInfo: null,
-        directDiscounts: expect.arrayContaining([]),
-        taxedPrice: null,
-        taxedShippingPrice: null,
-        paymentInfo: null,
-        __typename: 'Cart',
-      })
-    )
+      ]),
+      totalPrice: expect.objectContaining({
+        centAmount: expect.any(Number),
+        currencyCode: expect.any(String),
+        __typename: 'Money',
+      }),
+      createdBy: expect.objectContaining({
+        clientId: expect.any(String),
+        customerRef: expect.objectContaining({ typeId: 'customer' }),
+        userRef: expect.objectContaining({ typeId: 'user' }),
+        __typename: 'Initiator',
+      }),
+      lastModifiedBy: expect.objectContaining({
+        clientId: expect.any(String),
+        customerRef: expect.objectContaining({ typeId: 'customer' }),
+        userRef: expect.objectContaining({ typeId: 'user' }),
+        __typename: 'Initiator',
+      }),
+    })
   );
+};
+
+describe('Cart model builders', () => {
+  it('builds a REST model', () => {
+    const restModel = populateRestModel(
+      CartRest.random().lineItems([LineItem.random()])
+    ).build();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = populateGraphqlModel(
+      CartGraphql.random().lineItems([LineItem.random()])
+    ).build();
+
+    validateGraphqlModel(graphqlModel);
+  });
 });

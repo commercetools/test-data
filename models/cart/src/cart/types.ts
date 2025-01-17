@@ -1,15 +1,28 @@
 import { Cart, CartDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  TCtpCart,
+  TCtpCartDraft,
+} from '@commercetools-test-data/graphql-types';
 
+/**
+ * @deprecated use `TCartRest` instead
+ */
 export type TCart = Cart;
+export type TCartRest = Cart;
+export type TCartGraphql = TCtpCart;
+
+/**
+ * @deprecated use `TCartDraftRest` instead
+ */
 export type TCartDraft = CartDraft;
+export type TCartDraftRest = CartDraft;
+export type TCartDraftGraphql = TCtpCartDraft;
 
-export type TCartGraphql = TCart & {
-  __typename: 'Cart';
-};
-export type TCartDraftGraphql = TCartDraft;
-
-export type TCartBuilder = TBuilder<TCart>;
-export type TCartDraftBuilder = TBuilder<TCartDraft>;
-export type TCreateCartBuilder = () => TCartBuilder;
-export type TCreateCartDraftBuilder = () => TCartDraftBuilder;
+export type TCreateCartBuilder<
+  TCartModel extends
+    | TCartRest
+    | TCartGraphql
+    | TCartDraftRest
+    | TCartDraftGraphql,
+> = () => TBuilder<TCartModel>;
