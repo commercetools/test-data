@@ -23,7 +23,7 @@ const commonFieldsConfig = {
   customerGroup: fake(() => ReferenceDraft.random().typeId('customer-group')),
   anonymousId: fake((f) => f.string.uuid()),
   businessUnit: fake(() => ReferenceDraft.random().typeId('business-unit')),
-  store: null,
+  store: fake(() => ReferenceDraft.random().typeId('store')),
   country: fake((f) => f.location.countryCode()),
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   taxMode: oneOf(...Object.values(taxMode)),

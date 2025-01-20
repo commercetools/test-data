@@ -1,178 +1,97 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TCartDraft, TCartDraftGraphql } from '../types';
-import * as CartDraft from './index';
+import { CustomFieldBooleanType } from '@commercetools-test-data/type';
+import { TCartDraftGraphql, TCartDraftRest } from '../types';
+import { CartDraft, CartDraftGraphql, CartDraftRest } from './index';
 
-describe('builder', () => {
-  it(
-    ...createBuilderSpec<TCartDraft, TCartDraft>(
-      'default',
-      CartDraft.random(),
-      expect.objectContaining({
-        currency: expect.any(String),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
+const validateCommonFields = (model: TCartDraftRest | TCartDraftGraphql) => {
+  expect(model).toEqual(
+    expect.objectContaining({
+      key: expect.any(String),
+      customerId: expect.any(String),
+      customerEmail: expect.any(String),
+      currency: expect.any(String),
+      country: expect.any(String),
+      inventoryMode: expect.any(String),
+      taxMode: expect.any(String),
+      taxRoundingMode: expect.any(String),
+      taxCalculationMode: expect.any(String),
+      lineItems: expect.arrayContaining([
+        expect.objectContaining({
+          sku: expect.any(String),
+          quantity: expect.any(Number),
         }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-        }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            sku: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        shippingMethod: expect.objectContaining({
-          typeId: 'shipping-method',
-        }),
-        externalTaxRateForShippingMethod: null,
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        customShipping: expect.arrayContaining([]),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-      })
-    )
+      ]),
+      customLineItems: expect.any(Array),
+      shippingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+      }),
+      billingAddress: expect.objectContaining({
+        city: expect.any(String),
+        firstName: expect.any(String),
+        lastName: expect.any(String),
+      }),
+      shippingMethod: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'shipping-method',
+      }),
+      businessUnit: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'business-unit',
+      }),
+      store: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'store',
+      }),
+      externalTaxRateForShippingMethod: null,
+      custom: expect.objectContaining({
+        name: 'Boolean',
+      }),
+      locale: expect.any(String),
+      deleteDaysAfterLastModification: null,
+      shippingRateInput: null,
+      origin: expect.any(String),
+      shippingMode: expect.any(String),
+      customShipping: expect.any(Array),
+      shipping: expect.any(Array),
+      itemShippingAddresses: expect.any(Array),
+      discountCodes: expect.any(Array),
+    })
   );
+};
 
-  it(
-    ...createBuilderSpec<TCartDraft, TCartDraft>(
-      'rest',
-      CartDraft.random(),
-      expect.objectContaining({
-        currency: expect.any(String),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
-        }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-        }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            sku: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        shippingMethod: expect.objectContaining({
-          typeId: 'shipping-method',
-        }),
-        externalTaxRateForShippingMethod: null,
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        customShipping: expect.arrayContaining([]),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-      })
-    )
-  );
+describe('CartDraft builder', () => {
+  it('should build a valid REST object', () => {
+    const cartDraft = CartDraftRest.random()
+      .custom(CustomFieldBooleanType.random())
+      .build();
 
-  it(
-    ...createBuilderSpec<TCartDraft, TCartDraftGraphql>(
-      'graphql',
-      CartDraft.random(),
-      expect.objectContaining({
-        currency: expect.any(String),
-        key: expect.any(String),
-        customerId: expect.any(String),
-        customerEmail: expect.any(String),
-        customerGroup: expect.objectContaining({
-          typeId: 'customer-group',
-        }),
-        anonymousId: expect.any(String),
-        businessUnit: expect.objectContaining({
-          typeId: 'business-unit',
-        }),
-        store: null,
-        country: expect.any(String),
-        inventoryMode: expect.any(String),
-        taxMode: expect.any(String),
-        taxRoundingMode: expect.any(String),
-        taxCalculationMode: expect.any(String),
-        lineItems: expect.arrayContaining([
-          expect.objectContaining({
-            sku: expect.any(String),
-            quantity: expect.any(Number),
-          }),
-        ]),
-        customLineItems: expect.arrayContaining([]),
-        shippingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        billingAddress: expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
-        }),
-        shippingMethod: expect.objectContaining({
-          typeId: 'shipping-method',
-        }),
-        externalTaxRateForShippingMethod: null,
-        custom: null,
-        locale: expect.any(String),
-        deleteDaysAfterLastModification: null,
-        shippingRateInput: null,
-        origin: expect.any(String),
-        shippingMode: expect.any(String),
-        customShipping: expect.arrayContaining([]),
-        shipping: expect.arrayContaining([]),
-        itemShippingAddresses: expect.arrayContaining([]),
-        discountCodes: expect.arrayContaining([expect.any(String)]),
-      })
-    )
-  );
+    validateCommonFields(cartDraft);
+  });
+
+  it('should build a valid GraphQL object', () => {
+    const cartDraft = CartDraftGraphql.random()
+      .custom(CustomFieldBooleanType.random())
+      .build();
+
+    validateCommonFields(cartDraft);
+  });
+});
+
+describe('CartDraft compatibility builder', () => {
+  it('should build a valid REST object', () => {
+    const cartDraft = CartDraft.random()
+      .custom(CustomFieldBooleanType.random())
+      .buildRest<TCartDraftRest>();
+
+    validateCommonFields(cartDraft);
+  });
+
+  it('should build a valid Compat GraphQL object', () => {
+    const cartDraft = CartDraft.random()
+      .custom(CustomFieldBooleanType.random())
+      .buildGraphql<TCartDraftGraphql>();
+
+    validateCommonFields(cartDraft);
+  });
 });
