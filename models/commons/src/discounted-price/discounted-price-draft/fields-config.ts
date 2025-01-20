@@ -1,6 +1,6 @@
 import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
 import * as Money from '../../money';
-import * as Reference from '../../reference';
+import { Reference } from '../../reference';
 import type {
   TDiscountedPriceDraftRest,
   TDiscountedPriceDraftGraphql,

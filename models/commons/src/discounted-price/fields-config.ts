@@ -1,7 +1,7 @@
 import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
 import { ProductDiscount } from '@commercetools-test-data/product-discount';
 import * as Money from '../money';
-import * as Reference from '../reference';
+import { Reference } from '../reference';
 import type { TDiscountedPriceGraphql, TDiscountedPriceRest } from './types';
 
 // https://docs.commercetools.com/api/types#discountedprice

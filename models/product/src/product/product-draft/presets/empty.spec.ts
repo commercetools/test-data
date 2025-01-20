@@ -11,6 +11,7 @@ it(`should set all specified fields to undefined`, () => {
   expect(emptyProductDraft.productType).toEqual({
     id: expect.any(String),
     typeId: expect.any(String),
+    obj: expect.any(Object),
   });
   expect(emptyProductDraft.slug).toEqual({
     de: expect.any(String),

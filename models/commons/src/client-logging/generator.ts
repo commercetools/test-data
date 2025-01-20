@@ -1,5 +1,5 @@
 import { Generator, fake } from '@commercetools-test-data/core';
-import * as Reference from '../reference';
+import { Reference } from '../reference';
 import type { TClientLogging } from './types';
 
 // https://docs.commercetools.com/api/types#client-logging
