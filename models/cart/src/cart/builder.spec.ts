@@ -1,17 +1,32 @@
-import { TBuilder } from '@commercetools-test-data/core';
+import { KeyReference, Reference } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
+import { Company } from '../../../business-unit';
+import { CustomerGroup } from '../../../customer-group';
 import { LineItem } from '../line-item';
+import { cartState } from './constants';
 import type { TCart, TCartGraphql, TCartRest } from './types';
 import { Cart, CartGraphql, CartRest } from './index';
 
 const populateCommon = <TModel extends TCart | TCartRest | TCartGraphql>(
   model: TBuilder<TModel>
-) => model.country('DE').custom(CustomFieldBooleanType.random());
+) =>
+  model
+    .custom(CustomFieldBooleanType.random())
+    .cartState(cartState.Active)
+    .locale('en-US');
 
-const populateRestModel = (model: TBuilder<TCartRest>) => populateCommon(model);
+const populateRestModel = (model: TBuilder<TCartRest>) =>
+  populateCommon(model)
+    .customerGroup(Reference.random().typeId('customer-group'))
+    .businessUnit(KeyReference.random().typeId('business-unit'));
 
 const populateGraphqlModel = (model: TBuilder<TCartGraphql>) =>
-  populateCommon(model);
+  populateCommon(model)
+    .customerGroup(CustomerGroup.random())
+    .businessUnit(Company.random())
+    .customerGroupRef(Reference.random().typeId('customer-group'))
+    .businessUnitRef(KeyReference.random().typeId('business-unit'));
 
 const validateCommonFields = (model: TCartRest | TCartGraphql) => {
   expect(model).toEqual(
@@ -22,7 +37,6 @@ const validateCommonFields = (model: TCartRest | TCartGraphql) => {
       customerId: expect.any(String),
       customerEmail: expect.any(String),
       anonymousId: expect.any(String),
-      store: null,
       country: expect.any(String),
       inventoryMode: expect.any(String),
       taxMode: expect.any(String),
@@ -70,6 +84,9 @@ const validateRestModel = (model: TCartRest) => {
       customerGroup: expect.objectContaining({
         typeId: 'customer-group',
       }),
+      store: expect.objectContaining({
+        typeId: 'store',
+      }),
       businessUnit: expect.objectContaining({
         typeId: 'business-unit',
       }),
@@ -108,6 +125,12 @@ const validateGraphqlModel = (model: TCartGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
       __typename: 'Cart',
+      custom: expect.objectContaining({
+        name: 'Boolean',
+        __typename: 'BooleanCustomFieldType',
+      }),
+      customer: null,
+      placement: null,
       lineItems: expect.arrayContaining([
         expect.objectContaining({
           id: expect.any(String),
@@ -115,30 +138,6 @@ const validateGraphqlModel = (model: TCartGraphql) => {
           __typename: 'LineItem',
         }),
       ]),
-      businessUnitRef: expect.objectContaining({
-        typeId: 'business-unit',
-        __typename: 'Reference',
-      }),
-      custom: expect.objectContaining({
-        name: 'Boolean',
-        __typename: 'BooleanCustomFieldType',
-      }),
-      customer: null,
-      customerGroupRef: expect.objectContaining({
-        typeId: 'customer-group',
-        __typename: 'Reference',
-      }),
-      placement: null,
-      refusedGiftsRefs: expect.arrayContaining([
-        expect.objectContaining({
-          typeId: 'cart-discount',
-          __typename: 'Reference',
-        }),
-      ]),
-      storeRef: expect.objectContaining({
-        typeId: 'store',
-        __typename: 'Reference',
-      }),
       shippingAddress: expect.objectContaining({
         city: expect.any(String),
         firstName: expect.any(String),
@@ -175,6 +174,42 @@ const validateGraphqlModel = (model: TCartGraphql) => {
         customerRef: expect.objectContaining({ typeId: 'customer' }),
         userRef: expect.objectContaining({ typeId: 'user' }),
         __typename: 'Initiator',
+      }),
+      businessUnitRef: expect.objectContaining({
+        typeId: 'business-unit',
+        __typename: 'Reference',
+      }),
+      customerGroupRef: expect.objectContaining({
+        typeId: 'customer-group',
+        __typename: 'Reference',
+      }),
+      refusedGiftsRefs: expect.arrayContaining([
+        expect.objectContaining({
+          typeId: 'cart-discount',
+          __typename: 'Reference',
+        }),
+      ]),
+      storeRef: expect.objectContaining({
+        typeId: 'store',
+        __typename: 'Reference',
+      }),
+      businessUnit: expect.objectContaining({
+        id: expect.any(String),
+        __typename: 'BusinessUnit',
+      }),
+      customerGroup: expect.objectContaining({
+        id: expect.any(String),
+        __typename: 'CustomerGroup',
+      }),
+      refusedGifts: expect.arrayContaining([
+        expect.objectContaining({
+          id: expect.any(String),
+          __typename: 'CartDiscount',
+        }),
+      ]),
+      store: expect.objectContaining({
+        id: expect.any(String),
+        __typename: 'Store',
       }),
     })
   );
