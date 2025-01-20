@@ -1,8 +1,8 @@
+import { Company } from '@commercetools-test-data/business-unit';
 import { KeyReference, Reference } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { CustomerGroup } from '@commercetools-test-data/customer-group';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
-import { Company } from '../../../business-unit';
-import { CustomerGroup } from '../../../customer-group';
 import { LineItem } from '../line-item';
 import { cartState } from './constants';
 import type { TCart, TCartGraphql, TCartRest } from './types';
