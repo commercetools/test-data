@@ -1,3 +1,5 @@
+import { Company } from '@commercetools-test-data/business-unit';
+import { CartDiscount } from '@commercetools-test-data/cart-discount';
 import {
   Address,
   CentPrecisionMoney,
@@ -11,11 +13,9 @@ import {
   type TModelFieldsConfig,
   sequence,
 } from '@commercetools-test-data/core';
+import { CustomerGroup } from '@commercetools-test-data/customer-group';
+import { Store } from '@commercetools-test-data/store';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { Company } from '../../../business-unit';
-import { CartDiscount } from '../../../cart-discount';
-import { CustomerGroup } from '../../../customer-group';
-import { Store } from '../../../store';
 import { LineItem } from '../index';
 import {
   cartState,
