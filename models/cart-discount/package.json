@@ -8,14 +8,23 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "models/cart-discount"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "main": "dist/commercetools-test-data-cart-discount.cjs.js",
   "module": "dist/commercetools-test-data-cart-discount.esm.js",
-  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
@@ -23,9 +32,14 @@
     "@commercetools-test-data/commons": "10.11.2",
     "@commercetools-test-data/core": "10.11.2",
     "@commercetools-test-data/customer-group": "10.11.2",
+    "@commercetools-test-data/graphql-types": "workspace:10.11.2",
     "@commercetools-test-data/product-type": "10.11.2",
     "@commercetools-test-data/utils": "10.11.2",
-    "@commercetools/platform-sdk": "7.21.0",
-    "@faker-js/faker": "^9.0.0"
+    "@commercetools/platform-sdk": "8.0.0",
+    "@faker-js/faker": "^9.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.14"
   }
 }

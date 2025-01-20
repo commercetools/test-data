@@ -324,6 +324,9 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 10.11.2
         version: link:../customer-group
+      '@commercetools-test-data/graphql-types':
+        specifier: workspace:10.11.2
+        version: link:../../graphql-types
       '@commercetools-test-data/product-type':
         specifier: 10.11.2
         version: link:../product-type
@@ -331,11 +334,18 @@ importers:
         specifier: 10.11.2
         version: link:../../utils
       '@commercetools/platform-sdk':
-        specifier: 7.21.0
-        version: 7.21.0
+        specifier: 8.0.0
+        version: 8.0.0
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.0.3
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+    devDependencies:
+      '@types/lodash':
+        specifier: ^4.17.14
+        version: 4.17.14
 
   models/category:
     dependencies:
@@ -2295,9 +2305,17 @@ packages:
     resolution: {integrity: sha512-Oy8NmTCUAiuJ8r7kvTbv/Ve0jxnJsAKHOqEHfvg4ZjqJqM8DRzLoLa/SIzywqZbyc1eE6JEpIYsf92rArj+vWw==}
     engines: {node: '>=14'}
 
+  '@commercetools/platform-sdk@8.0.0':
+    resolution: {integrity: sha512-jpDA3E2p00evwRf252+XtbZGa2RQ74yFHQxRgzWrOFPbIs0b19SPk5fDS8kHks7ssGpiJ+DTseAAEcj1ZDCUyQ==}
+    engines: {node: '>=18'}
+
   '@commercetools/sdk-client-v2@2.5.0':
     resolution: {integrity: sha512-v1y++O6yllG+IRTYm9jPE8s667+GapnysyGIf8NJDZbVwhvcanixZL4d20imXjCpOr4u1iZrgRftc90mgYqblw==}
     engines: {node: '>=14'}
+
+  '@commercetools/sdk-client-v2@3.0.0':
+    resolution: {integrity: sha512-AU0qyd41lv3l7X/e17mwRbtqGUMCJrCP25/ca3CMGvLGYGLx8zFu5zUYggOyEMTkViwG3NlY83zTTG0/YoUo8Q==}
+    engines: {node: '>=18'}
 
   '@commercetools/sdk-middleware-auth@7.0.1':
     resolution: {integrity: sha512-XLRm+o3Yd0mkVoyzsOA98PUu0U0ajQdBHMhZ8N2XMOtL4OY8zsgT8ap5JneXV8zWZNiwIYYAYoUDwBlLZh2lAQ==}
@@ -2314,6 +2332,10 @@ packages:
   '@commercetools/ts-client@2.1.3':
     resolution: {integrity: sha512-Ol1GrtibWuRPajyGPVkZDrMVr67rGBqAZkT031Re2wpFilGEmATqwBosupeerJ2Q6h7i1uF3f5JP+y6MbWSehA==}
     engines: {node: '>=14'}
+
+  '@commercetools/ts-client@3.0.0':
+    resolution: {integrity: sha512-naGdBbV/UxHeRe28wPOUB+A8nk3y5mTUFWOtHRNwZ6RSvE3vPXe9QkLavrAbzp2nMDG0UTWR1oTurUAXLIbs8Q==}
+    engines: {node: '>=18'}
 
   '@commitlint/cli@19.6.0':
     resolution: {integrity: sha512-v17BgGD9w5KnthaKxXnEg6KLq6DYiAxyiN44TpiRtqyW8NSq+Kx99mkEG8Qo6uu6cI5eMzMojW2muJxjmPnF8w==}
@@ -3112,6 +3134,9 @@ packages:
 
   '@types/lodash@4.17.10':
     resolution: {integrity: sha512-YpS0zzoduEhuOWjAotS6A5AVCva7X4lVlYLF0FYHAY9sdraBfnatttHItlWeZdGhuEkf+OzMNg2ZYAx8t+52uQ==}
+
+  '@types/lodash@4.17.14':
+    resolution: {integrity: sha512-jsxagdikDiDBeIRaPYtArcT8my4tN1og7MtMRquFT3XNA6axxyHDRUemqDz/taRDdOUn0GnGHRCuff4q48sW9A==}
 
   '@types/lodash@4.17.4':
     resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
@@ -7735,12 +7760,26 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
+  '@commercetools/platform-sdk@8.0.0':
+    dependencies:
+      '@commercetools/sdk-client-v2': 3.0.0
+      '@commercetools/sdk-middleware-auth': 7.0.1
+      '@commercetools/sdk-middleware-http': 7.0.4
+      '@commercetools/sdk-middleware-logger': 3.0.0
+      '@commercetools/ts-client': 3.0.0
+    transitivePeerDependencies:
+      - encoding
+
   '@commercetools/sdk-client-v2@2.5.0':
     dependencies:
       buffer: 6.0.3
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
+
+  '@commercetools/sdk-client-v2@3.0.0':
+    dependencies:
+      buffer: 6.0.3
 
   '@commercetools/sdk-middleware-auth@7.0.1':
     dependencies:
@@ -7759,6 +7798,10 @@ snapshots:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
+
+  '@commercetools/ts-client@3.0.0':
+    dependencies:
+      buffer: 6.0.3
 
   '@commitlint/cli@19.6.0(@types/node@20.17.9)(typescript@5.7.2)':
     dependencies:
@@ -8977,6 +9020,8 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@types/lodash@4.17.10': {}
+
+  '@types/lodash@4.17.14': {}
 
   '@types/lodash@4.17.4': {}
 
