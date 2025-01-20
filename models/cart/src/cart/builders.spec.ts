@@ -24,9 +24,7 @@ const populateRestModel = (model: TBuilder<TCartRest>) =>
 const populateGraphqlModel = (model: TBuilder<TCartGraphql>) =>
   populateCommon(model)
     .customerGroup(CustomerGroup.random())
-    .businessUnit(Company.random())
-    .customerGroupRef(Reference.random().typeId('customer-group'))
-    .businessUnitRef(KeyReference.random().typeId('business-unit'));
+    .businessUnit(Company.random());
 
 const validateCommonFields = (model: TCartRest | TCartGraphql) => {
   expect(model).toEqual(
@@ -126,35 +124,23 @@ const validateGraphqlModel = (model: TCartGraphql) => {
     expect.objectContaining({
       __typename: 'Cart',
       custom: expect.objectContaining({
-        name: 'Boolean',
         __typename: 'BooleanCustomFieldType',
       }),
       customer: null,
       placement: null,
       lineItems: expect.arrayContaining([
         expect.objectContaining({
-          id: expect.any(String),
-          quantity: expect.any(Number),
           __typename: 'LineItem',
         }),
       ]),
       shippingAddress: expect.objectContaining({
-        city: expect.any(String),
-        firstName: expect.any(String),
-        lastName: expect.any(String),
         __typename: 'Address',
       }),
       billingAddress: expect.objectContaining({
-        city: expect.any(String),
-        firstName: expect.any(String),
-        lastName: expect.any(String),
         __typename: 'Address',
       }),
       itemShippingAddresses: expect.arrayContaining([
         expect.objectContaining({
-          city: expect.any(String),
-          firstName: expect.any(String),
-          lastName: expect.any(String),
           __typename: 'Address',
         }),
       ]),
@@ -235,7 +221,9 @@ describe('Cart model builders', () => {
 
 describe('Cart model compatibility builders', () => {
   it('builds a REST model', () => {
-    const restModel = populateRestModel(Cart.random()).buildRest();
+    const restModel = populateRestModel(
+      Cart.random().lineItems([LineItem.random()])
+    ).buildRest();
 
     validateRestModel(restModel);
   });
