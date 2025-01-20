@@ -76,8 +76,8 @@ export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {
   fields: {
     ...commonFieldsConfig,
     customerGroup: fake(() => Reference.random().typeId('customer-group')),
-    businessUnit: fake(() => Reference.random().typeId('business-unit')),
-    store: fake(() => Reference.random().typeId('store')),
+    businessUnit: fake(() => KeyReference.random().typeId('business-unit')),
+    store: fake(() => KeyReference.random().typeId('store')),
     refusedGifts: fake(() => [Reference.random().typeId('cart-discount')]),
   },
 };
