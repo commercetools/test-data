@@ -2,7 +2,7 @@ import { TBuilder } from '@commercetools-test-data/core';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import { LineItem } from '../line-item';
 import type { TCart, TCartGraphql, TCartRest } from './types';
-import { CartGraphql, CartRest } from './index';
+import { Cart, CartGraphql, CartRest } from './index';
 
 const populateCommon = <TModel extends TCart | TCartRest | TCartGraphql>(
   model: TBuilder<TModel>
@@ -193,6 +193,22 @@ describe('Cart model builders', () => {
     const graphqlModel = populateGraphqlModel(
       CartGraphql.random().lineItems([LineItem.random()])
     ).build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('Cart model compatibility builders', () => {
+  it('builds a REST model', () => {
+    const restModel = populateRestModel(Cart.random()).buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = populateCommon(
+      Cart.random().lineItems([LineItem.random()])
+    ).buildGraphql<TCartGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

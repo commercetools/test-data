@@ -1,8 +1,15 @@
-import type { TCartDraftBuilder } from '../../types';
-import CartDraft from '../builder';
+import type { TBuilder } from '@commercetools-test-data/core';
+import type {
+  TCartDraft,
+  TCartDraftGraphql,
+  TCartDraftRest,
+} from '../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../index';
 
-const empty = (): TCartDraftBuilder =>
-  CartDraft()
+const populatePreset = <TModel extends TCartDraftGraphql | TCartDraftRest>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key(undefined)
     .customerId(undefined)
     .customerEmail(undefined)
@@ -31,5 +38,13 @@ const empty = (): TCartDraftBuilder =>
     .origin(undefined)
     .deleteDaysAfterLastModification(undefined)
     .custom(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.random());

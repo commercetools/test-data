@@ -2,7 +2,7 @@ import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatCartModelBuilder,
-} from './builder';
+} from './builders';
 import * as modelPresets from './presets';
 
 export * as CartDraft from './cart-draft';
@@ -24,6 +24,5 @@ export const CartGraphql = {
 /**
  * @deprecated Use `CartRest` or `CartGraphql` exported models instead of `Cart`.
  */
-
 export const random = CompatCartModelBuilder;
 export const presets = modelPresets.default;
