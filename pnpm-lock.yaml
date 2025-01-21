@@ -325,7 +325,7 @@ importers:
         specifier: 10.11.2
         version: link:../customer-group
       '@commercetools-test-data/graphql-types':
-        specifier: workspace:10.11.2
+        specifier: 10.11.2
         version: link:../../graphql-types
       '@commercetools-test-data/product-type':
         specifier: 10.11.2

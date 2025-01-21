@@ -23,7 +23,7 @@
     "@commercetools-test-data/commons": "10.11.2",
     "@commercetools-test-data/core": "10.11.2",
     "@commercetools-test-data/customer-group": "10.11.2",
-    "@commercetools-test-data/graphql-types": "workspace:10.11.2",
+    "@commercetools-test-data/graphql-types": "10.11.2",
     "@commercetools-test-data/product-type": "10.11.2",
     "@commercetools-test-data/utils": "10.11.2",
     "@commercetools/platform-sdk": "8.0.0",
