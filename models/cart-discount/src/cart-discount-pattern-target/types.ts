@@ -2,13 +2,13 @@ import { CartDiscountPatternTarget } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
   TCtpCartDiscountPatternTarget,
-  TCtpCartDiscountPatternTargetInput as TCartDiscountPatternTargetDraft,
+  TCtpCartDiscountPatternTargetInput,
 } from '@commercetools-test-data/graphql-types';
 
 export type TCartDiscountPatternTargetRest = CartDiscountPatternTarget;
 export type TCartDiscountPatternTargetGraphql = TCtpCartDiscountPatternTarget;
 export type TCartDiscountPatternTargetDraftGraphql =
-  TCartDiscountPatternTargetDraft;
+  TCtpCartDiscountPatternTargetInput;
 
 export type TCreateCartDiscountPatternTargetBuilder<
   TModel extends

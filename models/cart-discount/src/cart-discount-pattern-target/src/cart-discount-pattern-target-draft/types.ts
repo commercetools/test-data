@@ -1,8 +1,8 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpCartDiscountPatternTargetInput as TCartDiscountPatternTargetDraft } from '@commercetools-test-data/graphql-types';
+import { TCtpCartDiscountPatternTargetInput } from '@commercetools-test-data/graphql-types';
 
 export type TCartDiscountPatternTargetDraftGraphql =
-  TCartDiscountPatternTargetDraft;
+  TCtpCartDiscountPatternTargetInput;
 
 export type TCreateCartDiscountPatternTargetDraftBuilder<
   TModel extends TCartDiscountPatternTargetDraftGraphql,

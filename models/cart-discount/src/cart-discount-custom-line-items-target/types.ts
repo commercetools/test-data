@@ -1,7 +1,4 @@
-import {
-  CartDiscountCustomLineItemsTarget,
-  CartDiscountPatternTarget,
-} from '@commercetools/platform-sdk';
+import { CartDiscountCustomLineItemsTarget } from '@commercetools/platform-sdk';
 
 export type TCartDiscountCustomLineItemsTargetRest =
   CartDiscountCustomLineItemsTarget;

@@ -1,7 +1,7 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpCountOnLineItemUnitsInput as TCountOnLineItemUnitsDraft } from '@commercetools-test-data/graphql-types';
+import { TCtpCountOnLineItemUnitsInput } from '@commercetools-test-data/graphql-types';
 
-export type TCountOnLineItemUnitsDraftGraphql = TCountOnLineItemUnitsDraft;
+export type TCountOnLineItemUnitsDraftGraphql = TCtpCountOnLineItemUnitsInput;
 
 export type TCreateCountOnLineItemUnitsDraftBuilder<
   TModel extends TCountOnLineItemUnitsDraftGraphql,
