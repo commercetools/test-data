@@ -2333,8 +2333,8 @@ packages:
     resolution: {integrity: sha512-Ol1GrtibWuRPajyGPVkZDrMVr67rGBqAZkT031Re2wpFilGEmATqwBosupeerJ2Q6h7i1uF3f5JP+y6MbWSehA==}
     engines: {node: '>=14'}
 
-  '@commercetools/ts-client@3.0.0':
-    resolution: {integrity: sha512-naGdBbV/UxHeRe28wPOUB+A8nk3y5mTUFWOtHRNwZ6RSvE3vPXe9QkLavrAbzp2nMDG0UTWR1oTurUAXLIbs8Q==}
+  '@commercetools/ts-client@3.0.1':
+    resolution: {integrity: sha512-ooUnon3p4YtNtWTlSolFqS1dCOQ6+zadPGx7Og5qPqYHuOrAToUwjru8zBUAZC/mgiCMHtgBHXuXMwFZ3emyaw==}
     engines: {node: '>=18'}
 
   '@commitlint/cli@19.6.0':
@@ -7766,7 +7766,7 @@ snapshots:
       '@commercetools/sdk-middleware-auth': 7.0.1
       '@commercetools/sdk-middleware-http': 7.0.4
       '@commercetools/sdk-middleware-logger': 3.0.0
-      '@commercetools/ts-client': 3.0.0
+      '@commercetools/ts-client': 3.0.1
     transitivePeerDependencies:
       - encoding
 
@@ -7799,7 +7799,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@commercetools/ts-client@3.0.0':
+  '@commercetools/ts-client@3.0.1':
     dependencies:
       buffer: 6.0.3
 
