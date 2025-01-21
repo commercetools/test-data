@@ -5,13 +5,15 @@ import {
 
 describe('CountOnCustomLineItemUnits Builder', () => {
   it('should build properties for the REST representation', () => {
-    // TODO: Complete the test by adding all the properties of the model
-    // and check for the expected values
     const restModel = CountOnCustomLineItemUnitsRest.random().build();
 
     expect(restModel).toEqual(
       expect.objectContaining({
-        id: expect.any(String),
+        type: 'CountOnCustomLineItemUnits',
+        predicate: expect.any(String),
+        minCount: expect.any(Number),
+        maxCount: expect.toBeOneOf([expect.any(Number), null]),
+        excludeCount: expect.any(Number),
       })
     );
   });
@@ -22,8 +24,12 @@ describe('CountOnCustomLineItemUnits Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        id: expect.any(String),
         __typename: 'CountOnCustomLineItemUnits',
+        type: 'CountOnCustomLineItemUnits',
+        predicate: expect.any(String),
+        minCount: expect.any(Number),
+        maxCount: expect.toBeOneOf([expect.any(Number), null]),
+        excludeCount: expect.any(Number),
       })
     );
   });

@@ -2,13 +2,13 @@ import { CountOnCustomLineItemUnits } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
   TCtpCountOnCustomLineItemUnits,
-  TCtpCountOnCustomLineItemUnitsInput as TCtpCountOnCustomLineItemUnitsDraft,
+  TCtpCountOnCustomLineItemUnitsInput as TCountOnCustomLineItemUnitsDraft,
 } from '@commercetools-test-data/graphql-types';
 
 export type TCountOnCustomLineItemUnitsRest = CountOnCustomLineItemUnits;
 export type TCountOnCustomLineItemUnitsGraphql = TCtpCountOnCustomLineItemUnits;
 export type TCountOnCustomLineItemUnitsDraftGraphql =
-  TCtpCountOnCustomLineItemUnitsDraft;
+  TCountOnCustomLineItemUnitsDraft;
 
 export type TCreateCountOnCustomLineItemUnitsBuilder<
   TModel extends

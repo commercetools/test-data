@@ -4,15 +4,6 @@ import type { TCountOnLineItemUnitsDraftGraphql } from './types';
 export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnLineItemUnitsDraftGraphql> =
   {
     fields: {
-      excludeCount: fake((f) =>
-        f.helpers.arrayElement([0, f.number.int({ min: 1, max: 10 })])
-      ),
-      maxCount: fake((f) =>
-        f.helpers.arrayElement([null, 0, f.number.int({ min: 1, max: 5 })])
-      ),
-      minCount: fake((f) =>
-        f.helpers.arrayElement([1, f.number.int({ min: 2, max: 5 })])
-      ),
       predicate: fake((f) =>
         f.helpers.arrayElement([
           '1 = 1',
@@ -21,6 +12,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnLineItemUnitsDraftG
             .productName()
             .replaceAll(' ', '-')}" and price = "${f.finance.amount()} USD"`,
         ])
+      ),
+      minCount: fake((f) =>
+        f.helpers.arrayElement([1, f.number.int({ min: 2, max: 5 })])
+      ),
+      maxCount: fake((f) =>
+        f.helpers.arrayElement([null, 0, f.number.int({ min: 1, max: 5 })])
+      ),
+      excludeCount: fake((f) =>
+        f.helpers.arrayElement([0, f.number.int({ min: 1, max: 10 })])
       ),
     },
   };
