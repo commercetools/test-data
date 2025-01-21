@@ -339,13 +339,12 @@ importers:
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.0.3
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-    devDependencies:
       '@types/lodash':
         specifier: ^4.17.14
         version: 4.17.14
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
 
   models/category:
     dependencies:
