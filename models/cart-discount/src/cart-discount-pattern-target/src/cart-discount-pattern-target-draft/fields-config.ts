@@ -18,8 +18,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetD
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsDraftGraphql.random,
-              CountOnCustomLineItemUnitsDraftGraphql.random,
+              CountOnLineItemUnitsDraftGraphql.random(),
+              CountOnCustomLineItemUnitsDraftGraphql.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )
@@ -28,8 +28,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetD
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsDraftGraphql.random,
-              CountOnCustomLineItemUnitsDraftGraphql.random,
+              CountOnLineItemUnitsDraftGraphql.random(),
+              CountOnCustomLineItemUnitsDraftGraphql.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )

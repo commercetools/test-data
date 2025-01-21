@@ -32,8 +32,8 @@ export const restFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetRest
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsRest.random,
-              CountOnCustomLineItemUnitsRest.random,
+              CountOnLineItemUnitsRest.random(),
+              CountOnCustomLineItemUnitsRest.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )
@@ -42,8 +42,8 @@ export const restFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetRest
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsRest.random,
-              CountOnCustomLineItemUnitsRest.random,
+              CountOnLineItemUnitsRest.random(),
+              CountOnCustomLineItemUnitsRest.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )
@@ -59,8 +59,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetG
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsGraphql.random,
-              CountOnCustomLineItemUnitsGraphql.random,
+              CountOnLineItemUnitsGraphql.random(),
+              CountOnCustomLineItemUnitsGraphql.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )
@@ -69,8 +69,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartDiscountPatternTargetG
         f.helpers.multiple(
           () =>
             f.helpers.arrayElement([
-              CountOnLineItemUnitsGraphql.random,
-              CountOnCustomLineItemUnitsGraphql.random,
+              CountOnLineItemUnitsGraphql.random(),
+              CountOnCustomLineItemUnitsGraphql.random(),
             ]),
           { count: { min: 1, max: 8 } }
         )

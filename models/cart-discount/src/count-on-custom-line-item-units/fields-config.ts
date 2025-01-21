@@ -39,4 +39,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnCustomLineItemUnits
       ...commonFieldsConfig,
       __typename: 'CountOnCustomLineItemUnits',
     },
+    postBuild: (fields) => {
+      return {
+        ...fields,
+        maxCount:
+          fields.maxCount === null
+            ? fields.maxCount
+            : fields.minCount! + fields.maxCount!,
+      };
+    },
   };

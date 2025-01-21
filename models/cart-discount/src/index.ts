@@ -36,3 +36,7 @@ export * as CartDiscountValueGiftLineItemDraft from './cart-discount-value-gift-
 
 export * as CartDiscountValueRelative from './cart-discount-value-relative';
 export * as CartDiscountValueRelativeDraft from './cart-discount-value-relative/cart-discount-value-relative-draft';
+
+export * from './cart-discount-pattern-target';
+export * from './count-on-line-item-units';
+export * from './count-on-custom-line-item-units';
