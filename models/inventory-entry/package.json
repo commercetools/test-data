@@ -25,7 +25,7 @@
     "@commercetools-test-data/graphql-types": "10.11.2",
     "@commercetools-test-data/product": "10.11.2",
     "@commercetools-test-data/utils": "10.11.2",
-    "@commercetools/platform-sdk": "7.21.0",
+    "@commercetools/platform-sdk": "7.25.1",
     "@faker-js/faker": "^9.0.0"
   }
 }
