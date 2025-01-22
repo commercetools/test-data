@@ -187,25 +187,45 @@ const priceDraft = PriceDraft.random().build<TPriceDraft>();
 ```ts
 import {
   Reference,
+  ReferenceRest,
+  ReferenceGraphql,
   ReferenceDraft,
+  ReferenceDraftRest,
+  ReferenceDraftGraphql,
   type TReference,
   type TReferenceDraft,
 } from '@commercetools-test-data/commons';
 
+// DEPRECATED. Please use one of the methods below
 const productRef = Reference.random()
   .typeId('product')
   .build<TReference<'product'>>();
+const restProductRef = ReferenceRest.random().
+  .typeId('product')
+  .build();
+const graphqlProductRef = ReferenceGraphql.random().
+  .typeId('product')
+  .build();
+
+// DEPRECATED. Please use one of the methods below
 const productRefDraft = ReferenceDraft.random()
   .typeId('product')
   .build<TReferenceDraft<'product'>>();
+const restProductRefDraft = ReferenceDraftRest.random().
+  .typeId('product')
+  .build();
+const graphqlProductRefDraft = ReferenceDraftGraphql.random().
+  .typeId('product')
+  .build();
+
 
 // Presets
-const categoryRef = Reference.presets
+const restCategoryRef = ReferenceRest.presets
   .category()
-  .build<TReference<'category'>>();
-const categoryRefDraft = ReferenceDraft.presets
+  .build();
+const graphqlCategoryRefDraft = ReferenceDraftGraphql.presets
   .category()
-  .build<TReferenceDraft<'category'>>();
+  .build();
 ```
 
 ## `PriceTier`

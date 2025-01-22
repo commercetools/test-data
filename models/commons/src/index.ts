@@ -31,11 +31,10 @@ export * as Money from './money';
 export * as MoneyDraft from './money/money-draft';
 export * as Price from './price';
 export * as PriceDraft from './price/price-draft';
-export * as Reference from './reference';
-export * as ReferenceDraft from './reference/reference-draft';
 export * as PriceTier from './price-tier';
 export * as PriceTierDraft from './price-tier/price-tier-draft';
 
 export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
 export * from './geometry';
+export * from './reference';
