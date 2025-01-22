@@ -5,7 +5,6 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-export * from './cart-draft';
 export * as Cart from '.';
 
 export * as constants from './constants';
