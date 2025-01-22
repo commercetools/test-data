@@ -2,6 +2,7 @@ import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -15,49 +16,66 @@ import {
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
-import { CartDraft, LineItemDraft } from '../../../../index';
+import { LineItemDraft } from '../../../../index';
 import { origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataFashion
   .sampleUsa()
   .build<TCustomerDraft>();
+
 const address = AddressDraft.presets.sampleDataFashion.sampleUsa();
-const toteBagProductVariant = ProductVariantDraft.presets.sampleDataFashion
+
+const toteBagVariant01 = ProductVariantDraft.presets.sampleDataFashion
   .toteBagVariant01()
   .build<TProductVariantDraft>();
-const toddlerTrousersProductVariant =
-  ProductVariantDraft.presets.sampleDataFashion
-    .toddlerTrousersVariant02()
-    .build<TProductVariantDraft>();
+
+const toddlerTrousersVariant02 = ProductVariantDraft.presets.sampleDataFashion
+  .toddlerTrousersVariant02()
+  .build<TProductVariantDraft>();
+
 const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .usaAustralia()
   .build<TShippingMethodDraft>();
+
 const store = StoreDraft.presets.sampleDataFashion
   .store02()
   .build<TStoreDraft>();
 
-const sampleUsa01 = (customerId?: string): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('sample-usa-01-cart')
     .customerEmail(customer.email)
-    .customerId(customerId)
     .currency('USD')
     .country('US')
     .origin(origin.Merchant)
     .shippingAddress(address)
     .billingAddress(address)
     .lineItems([
-      LineItemDraft.presets.empty().sku(toteBagProductVariant.sku).quantity(2),
+      LineItemDraft.presets.empty().sku(toteBagVariant01.sku).quantity(2),
       LineItemDraft.presets
         .empty()
-        .sku(toddlerTrousersProductVariant.sku)
+        .sku(toddlerTrousersVariant02.sku)
         .quantity(1),
     ])
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .store(KeyReferenceDraft.presets.store().key(store.key!));
+};
 
-export default sampleUsa01;
+export const restPreset = (): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty());

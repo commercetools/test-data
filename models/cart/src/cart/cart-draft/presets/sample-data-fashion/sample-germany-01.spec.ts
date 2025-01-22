@@ -1,127 +1,10 @@
-import { TCartDraft } from '../../../types';
-import sampleGermany01 from './sample-germany-01';
+import type { TCartDraftGraphql, TCartDraftRest } from '../../../types';
+import * as presets from './sample-germany-01';
 
-describe('with the preset cart `sampleGermany01`', () => {
-  it('should return a cart discount draft', () => {
-    const cartDraft = sampleGermany01(
-      '9b3ea3f7-9858-4dc5-bf5c-9ac66e794513'
-    ).build<TCartDraft>();
-
-    expect(cartDraft).toMatchInlineSnapshot(`
-      {
-        "anonymousId": undefined,
-        "billingAddress": {
-          "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
-          "apartment": undefined,
-          "building": undefined,
-          "city": "Sample Town",
-          "company": undefined,
-          "country": "DE",
-          "custom": undefined,
-          "department": undefined,
-          "email": undefined,
-          "externalId": undefined,
-          "fax": undefined,
-          "firstName": "Sample Customer",
-          "id": undefined,
-          "key": undefined,
-          "lastName": "Germany",
-          "mobile": undefined,
-          "pOBox": undefined,
-          "phone": undefined,
-          "postalCode": "12345",
-          "region": undefined,
-          "salutation": undefined,
-          "state": undefined,
-          "streetName": "Sample Street",
-          "streetNumber": "1",
-          "title": undefined,
-        },
-        "businessUnit": undefined,
-        "country": "DE",
-        "currency": "EUR",
-        "custom": undefined,
-        "customLineItems": undefined,
-        "customShipping": undefined,
-        "customerEmail": "samplecustomer.germany@example.com",
-        "customerGroup": undefined,
-        "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
-        "deleteDaysAfterLastModification": undefined,
-        "discountCodes": undefined,
-        "externalTaxRateForShippingMethod": undefined,
-        "inventoryMode": undefined,
-        "itemShippingAddresses": undefined,
-        "key": "sample-germany-01-cart",
-        "lineItems": [
-          {
-            "addedAt": undefined,
-            "custom": undefined,
-            "distributionChannel": undefined,
-            "externalPrice": undefined,
-            "externalTaxRate": undefined,
-            "externalTotalPrice": undefined,
-            "inventoryMode": undefined,
-            "productId": undefined,
-            "quantity": 1,
-            "shippingDetails": undefined,
-            "sku": "752502",
-            "supplyChannel": undefined,
-            "variantId": undefined,
-          },
-        ],
-        "locale": undefined,
-        "origin": "Merchant",
-        "shipping": undefined,
-        "shippingAddress": {
-          "additionalAddressInfo": undefined,
-          "additionalStreetInfo": undefined,
-          "apartment": undefined,
-          "building": undefined,
-          "city": "Sample Town",
-          "company": undefined,
-          "country": "DE",
-          "custom": undefined,
-          "department": undefined,
-          "email": undefined,
-          "externalId": undefined,
-          "fax": undefined,
-          "firstName": "Sample Customer",
-          "id": undefined,
-          "key": undefined,
-          "lastName": "Germany",
-          "mobile": undefined,
-          "pOBox": undefined,
-          "phone": undefined,
-          "postalCode": "12345",
-          "region": undefined,
-          "salutation": undefined,
-          "state": undefined,
-          "streetName": "Sample Street",
-          "streetNumber": "1",
-          "title": undefined,
-        },
-        "shippingMethod": {
-          "key": "shipping-europe",
-          "typeId": "shipping-method",
-        },
-        "shippingMode": undefined,
-        "shippingRateInput": undefined,
-        "store": {
-          "key": "sample_store_one",
-          "typeId": "store",
-        },
-        "taxCalculationMode": undefined,
-        "taxMode": undefined,
-        "taxRoundingMode": undefined,
-      }
-    `);
-  });
-
-  it('without customer ID, should return a cart discount draft', () => {
-    const cartDraft = sampleGermany01().build<TCartDraft>();
-
-    expect(cartDraft).toMatchInlineSnapshot(`
+describe(`with sampleGermany01 preset`, () => {
+  it(`should return a sampleGermany01 preset when built for rest`, () => {
+    const sampleGermany01Preset = presets.restPreset().build();
+    expect(sampleGermany01Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
         "billingAddress": {
@@ -232,12 +115,9 @@ describe('with the preset cart `sampleGermany01`', () => {
     `);
   });
 
-  it('should return a cart discount draft when build for GraphQL', () => {
-    const cartDraft = sampleGermany01(
-      '9b3ea3f7-9858-4dc5-bf5c-9ac66e794513'
-    ).buildGraphql<TCartDraft>();
-
-    expect(cartDraft).toMatchInlineSnapshot(`
+  it(`should return a sampleGermany01 preset when built for graphql`, () => {
+    const sampleGermany01Preset = presets.graphqlPreset().build();
+    expect(sampleGermany01Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
         "billingAddress": {
@@ -276,7 +156,7 @@ describe('with the preset cart `sampleGermany01`', () => {
         "customShipping": undefined,
         "customerEmail": "samplecustomer.germany@example.com",
         "customerGroup": undefined,
-        "customerId": "9b3ea3f7-9858-4dc5-bf5c-9ac66e794513",
+        "customerId": undefined,
         "deleteDaysAfterLastModification": undefined,
         "discountCodes": undefined,
         "externalTaxRateForShippingMethod": undefined,
@@ -346,5 +226,235 @@ describe('with the preset cart `sampleGermany01`', () => {
         "taxRoundingMode": undefined,
       }
     `);
+  });
+
+  it(`should return a sampleGermany01 preset when built for legacy rest`, () => {
+    const sampleGermany01Preset = presets
+      .compatPreset()
+      .buildRest<TCartDraftRest>();
+    expect(sampleGermany01Preset).toMatchInlineSnapshot(`
+        {
+          "anonymousId": undefined,
+          "billingAddress": {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Sample Town",
+            "company": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Sample Customer",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Germany",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "12345",
+            "region": undefined,
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Sample Street",
+            "streetNumber": "1",
+            "title": undefined,
+          },
+          "businessUnit": undefined,
+          "country": "DE",
+          "currency": "EUR",
+          "custom": undefined,
+          "customLineItems": undefined,
+          "customShipping": undefined,
+          "customerEmail": "samplecustomer.germany@example.com",
+          "customerGroup": undefined,
+          "customerId": undefined,
+          "deleteDaysAfterLastModification": undefined,
+          "discountCodes": undefined,
+          "externalTaxRateForShippingMethod": undefined,
+          "inventoryMode": undefined,
+          "itemShippingAddresses": undefined,
+          "key": "sample-germany-01-cart",
+          "lineItems": [
+            {
+              "addedAt": undefined,
+              "custom": undefined,
+              "distributionChannel": undefined,
+              "externalPrice": undefined,
+              "externalTaxRate": undefined,
+              "externalTotalPrice": undefined,
+              "inventoryMode": undefined,
+              "productId": undefined,
+              "quantity": 1,
+              "shippingDetails": undefined,
+              "sku": "752502",
+              "supplyChannel": undefined,
+              "variantId": undefined,
+            },
+          ],
+          "locale": undefined,
+          "origin": "Merchant",
+          "shipping": undefined,
+          "shippingAddress": {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Sample Town",
+            "company": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Sample Customer",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Germany",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "12345",
+            "region": undefined,
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Sample Street",
+            "streetNumber": "1",
+            "title": undefined,
+          },
+          "shippingMethod": {
+            "key": "shipping-europe",
+            "typeId": "shipping-method",
+          },
+          "shippingMode": undefined,
+          "shippingRateInput": undefined,
+          "store": {
+            "key": "sample_store_one",
+            "typeId": "store",
+          },
+          "taxCalculationMode": undefined,
+          "taxMode": undefined,
+          "taxRoundingMode": undefined,
+        }
+      `);
+  });
+
+  it(`should return a sampleGermany01 preset when built for legacy graphql`, () => {
+    const sampleGermany01Preset = presets
+      .compatPreset()
+      .buildGraphql<TCartDraftGraphql>();
+    expect(sampleGermany01Preset).toMatchInlineSnapshot(`
+        {
+          "anonymousId": undefined,
+          "billingAddress": {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Sample Town",
+            "company": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Sample Customer",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Germany",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "12345",
+            "region": undefined,
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Sample Street",
+            "streetNumber": "1",
+            "title": undefined,
+          },
+          "businessUnit": undefined,
+          "country": "DE",
+          "currency": "EUR",
+          "custom": undefined,
+          "customLineItems": undefined,
+          "customShipping": undefined,
+          "customerEmail": "samplecustomer.germany@example.com",
+          "customerGroup": undefined,
+          "customerId": undefined,
+          "deleteDaysAfterLastModification": undefined,
+          "discountCodes": undefined,
+          "externalTaxRateForShippingMethod": undefined,
+          "inventoryMode": undefined,
+          "itemShippingAddresses": undefined,
+          "key": "sample-germany-01-cart",
+          "lineItems": [
+            {
+              "addedAt": undefined,
+              "custom": undefined,
+              "distributionChannel": undefined,
+              "externalPrice": undefined,
+              "externalTaxRate": undefined,
+              "externalTotalPrice": undefined,
+              "inventoryMode": undefined,
+              "productId": undefined,
+              "quantity": 1,
+              "shippingDetails": undefined,
+              "sku": "752502",
+              "supplyChannel": undefined,
+              "variantId": undefined,
+            },
+          ],
+          "locale": undefined,
+          "origin": "Merchant",
+          "shipping": undefined,
+          "shippingAddress": {
+            "additionalAddressInfo": undefined,
+            "additionalStreetInfo": undefined,
+            "apartment": undefined,
+            "building": undefined,
+            "city": "Sample Town",
+            "company": undefined,
+            "country": "DE",
+            "custom": undefined,
+            "department": undefined,
+            "email": undefined,
+            "externalId": undefined,
+            "fax": undefined,
+            "firstName": "Sample Customer",
+            "id": undefined,
+            "key": undefined,
+            "lastName": "Germany",
+            "mobile": undefined,
+            "pOBox": undefined,
+            "phone": undefined,
+            "postalCode": "12345",
+            "region": undefined,
+            "salutation": undefined,
+            "state": undefined,
+            "streetName": "Sample Street",
+            "streetNumber": "1",
+            "title": undefined,
+          },
+          "shippingMethod": {
+            "key": "shipping-europe",
+            "typeId": "shipping-method",
+          },
+          "shippingMode": undefined,
+          "shippingRateInput": undefined,
+          "store": {
+            "key": "sample_store_one",
+            "typeId": "store",
+          },
+          "taxCalculationMode": undefined,
+          "taxMode": undefined,
+          "taxRoundingMode": undefined,
+        }
+      `);
   });
 });
