@@ -1018,6 +1018,60 @@ importers:
         specifier: ^9.0.0
         version: 9.0.3
 
+  models/product-tailoring:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.26.0
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.26.0
+      '@commercetools-test-data/commons':
+        specifier: 10.11.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.11.2
+        version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.11.2
+        version: link:../../graphql-types
+      '@commercetools-test-data/utils':
+        specifier: 10.11.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.21.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
+  models/product-tailoringv2:
+    dependencies:
+      '@babel/runtime':
+        specifier: ^7.17.9
+        version: 7.26.0
+      '@babel/runtime-corejs3':
+        specifier: ^7.17.9
+        version: 7.26.0
+      '@commercetools-test-data/commons':
+        specifier: 10.11.2
+        version: link:../commons
+      '@commercetools-test-data/core':
+        specifier: 10.11.2
+        version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.11.2
+        version: link:../../graphql-types
+      '@commercetools-test-data/utils':
+        specifier: 10.11.2
+        version: link:../../utils
+      '@commercetools/platform-sdk':
+        specifier: ^7.0.0
+        version: 7.21.0
+      '@faker-js/faker':
+        specifier: ^8.0.0
+        version: 8.4.1
+
   models/product-type:
     dependencies:
       '@babel/runtime':
@@ -2664,6 +2718,10 @@ packages:
   '@eslint/js@8.57.1':
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@faker-js/faker@8.4.1':
+    resolution: {integrity: sha512-XQ3cU+Q8Uqmrbf2e0cIC/QN43sTBSC8KF12u29Mb47tWrt2hAgBXSgpZMj4Ao8Uk0iJcU99QsOCaIL8934obCg==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
 
   '@faker-js/faker@9.0.3':
     resolution: {integrity: sha512-lWrrK4QNlFSU+13PL9jMbMKLJYXDFu3tQfayBsMXX7KL/GiQeqfB1CzHkqD5UHBUtPAuPo6XwGbMFNdVMZObRA==}
@@ -8336,6 +8394,8 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
+  '@faker-js/faker@8.4.1': {}
+
   '@faker-js/faker@9.0.3': {}
 
   '@formatjs/ecma402-abstract@2.3.2':
@@ -10641,7 +10701,11 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
+<<<<<<< HEAD
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.1)
+=======
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.2))(eslint-plugin-import@2.29.1)(eslint@8.57.1))(eslint@8.57.1)
+>>>>>>> 2ac70586 (chore(): add product tailoring test components)
       hasown: 2.0.2
       is-core-module: 2.13.1
       is-glob: 4.0.3
