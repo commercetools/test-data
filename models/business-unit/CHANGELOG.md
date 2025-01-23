@@ -1,5 +1,17 @@
 # @commercetools-test-data/business-unit
 
+## 10.12.0
+
+### Patch Changes
+
+- Updated dependencies [[`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b), [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614)]:
+  - @commercetools-test-data/commons@10.12.0
+  - @commercetools-test-data/associate-role@10.12.0
+  - @commercetools-test-data/customer@10.12.0
+  - @commercetools-test-data/store@10.12.0
+  - @commercetools-test-data/core@10.12.0
+  - @commercetools-test-data/utils@10.12.0
+
 ## 10.11.2
 
 ### Patch Changes
