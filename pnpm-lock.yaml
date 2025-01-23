@@ -324,6 +324,9 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 10.11.2
         version: link:../customer-group
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.11.2
+        version: link:../../graphql-types
       '@commercetools-test-data/product-type':
         specifier: 10.11.2
         version: link:../product-type
@@ -336,6 +339,12 @@ importers:
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.0.3
+      '@types/lodash':
+        specifier: ^4.17.14
+        version: 4.17.14
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
 
   models/category:
     dependencies:
@@ -3214,6 +3223,9 @@ packages:
 
   '@types/lodash@4.17.10':
     resolution: {integrity: sha512-YpS0zzoduEhuOWjAotS6A5AVCva7X4lVlYLF0FYHAY9sdraBfnatttHItlWeZdGhuEkf+OzMNg2ZYAx8t+52uQ==}
+
+  '@types/lodash@4.17.14':
+    resolution: {integrity: sha512-jsxagdikDiDBeIRaPYtArcT8my4tN1og7MtMRquFT3XNA6axxyHDRUemqDz/taRDdOUn0GnGHRCuff4q48sW9A==}
 
   '@types/lodash@4.17.4':
     resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
@@ -9326,6 +9338,8 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@types/lodash@4.17.10': {}
+
+  '@types/lodash@4.17.14': {}
 
   '@types/lodash@4.17.4': {}
 
