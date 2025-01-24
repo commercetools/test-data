@@ -49,12 +49,16 @@ const store = StoreDraft.presets.sampleDataB2CLifestyle
   .b2cRetailStore()
   .build<TStoreDraft>();
 
-const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
-  builder: TBuilder<TModel>
+const populatePreset = <
+  TModel extends TCartDraftRest | TCartDraftGraphql | TCartDraft,
+>(
+  builder: TBuilder<TModel>,
+  customerId?: string
 ): TBuilder<TModel> => {
   return builder
     .key('jennifer-schmidt-01')
     .customerEmail(customer.email)
+    .customerId(customerId)
     .currency('EUR')
     .country('DE')
     .origin(origin.Merchant)
@@ -77,11 +81,13 @@ const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
     .store(KeyReferenceDraft.presets.store().key(store.key!));
 };
 
-export const restPreset = (): TBuilder<TCartDraftRest> =>
-  populatePreset(CartDraftRest.presets.empty());
+export const restPreset = (customerId?: string): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty(), customerId);
 
-export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
-  populatePreset(CartDraftGraphql.presets.empty());
+export const graphqlPreset = (
+  customerId?: string
+): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty(), customerId);
 
-export const compatPreset = (): TBuilder<TCartDraft> =>
-  populatePreset(CartDraft.presets.empty());
+export const compatPreset = (customerId?: string): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty(), customerId);
