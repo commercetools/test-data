@@ -1,4 +1,12 @@
 import {
+  CompanyDraft,
+  type TCompanyDraft,
+} from '@commercetools-test-data/business-unit';
+import {
+  ChannelDraftRest,
+  type TChannelDraftRest,
+} from '@commercetools-test-data/channel';
+import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
@@ -29,7 +37,8 @@ const customer = CustomerDraft.presets.sampleDataB2B
   .michaelWilliams()
   .build<TCustomerDraft>();
 
-const address = AddressDraft.presets.sampleDataB2B.michaelWilliamsAddress();
+const address =
+  AddressDraft.presets.sampleDataB2B.eagleHeavyLiftTechnologiesIncUsNy1Address();
 
 const eee123Qr01 = ProductVariantDraft.presets.sampleDataB2B
   .eee123Qr01()
@@ -49,34 +58,80 @@ const store = StoreDraft.presets.sampleDataB2B
   .usLargeCustomers()
   .build<TStoreDraft>();
 
-const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
-  builder: TBuilder<TModel>
+const businessUnit = CompanyDraft.presets.sampleDataB2B
+  .eagleHeavyLiftTechnologiesIncUs()
+  .build<TCompanyDraft>();
+
+const usLargeCustomersChannel = ChannelDraftRest.presets.sampleDataB2B
+  .usLargeCustomers()
+  .build<TChannelDraftRest>();
+const usWarehouseChannel = ChannelDraftRest.presets.sampleDataB2B
+  .usWarehouse()
+  .build<TChannelDraftRest>();
+
+const populatePreset = <
+  TModel extends TCartDraftRest | TCartDraftGraphql | TCartDraft,
+>(
+  builder: TBuilder<TModel>,
+  customerId?: string
 ): TBuilder<TModel> => {
   return builder
     .key('eagle-heavy-lift-technologies-inc-us-cart-1')
     .customerEmail(customer.email)
+    .customerId(customerId)
     .currency('USD')
     .country('US')
     .origin(origin.Customer)
     .inventoryMode(inventoryMode.TrackOnly)
     .shippingAddress(address)
-    .billingAddress(address)
     .lineItems([
-      LineItemDraft.presets.empty().sku(eee123Qr01.sku).quantity(1),
-      LineItemDraft.presets.empty().sku(eee123Qr02.sku).quantity(1),
-      LineItemDraft.presets.empty().sku(eee123Qr03.sku).quantity(1),
+      LineItemDraft.presets
+        .empty()
+        .sku(eee123Qr01.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
+        ),
+      LineItemDraft.presets
+        .empty()
+        .sku(eee123Qr02.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
+        ),
+      LineItemDraft.presets
+        .empty()
+        .sku(eee123Qr03.sku)
+        .quantity(1)
+        .distributionChannel(
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
+        )
+        .supplyChannel(
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
+        ),
     ])
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
-    .store(KeyReferenceDraft.presets.store().key(store.key!));
+    .store(KeyReferenceDraft.presets.store().key(store.key!))
+    .businessUnit(
+      KeyReferenceDraft.presets.businessUnit().key(businessUnit.key!)
+    );
 };
 
-export const restPreset = (): TBuilder<TCartDraftRest> =>
-  populatePreset(CartDraftRest.presets.empty());
+export const restPreset = (customerId?: string): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty(), customerId);
 
-export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
-  populatePreset(CartDraftGraphql.presets.empty());
+export const graphqlPreset = (
+  customerId?: string
+): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty(), customerId);
 
-export const compatPreset = (): TBuilder<TCartDraft> =>
-  populatePreset(CartDraft.presets.empty());
+export const compatPreset = (customerId?: string): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty(), customerId);
