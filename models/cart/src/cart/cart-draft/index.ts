@@ -7,7 +7,6 @@ import {
   CompatCartModelBuilder,
 } from './builders';
 import * as modelPresets from './presets';
-export * as constants from '../constants';
 
 export const CartDraftRest = {
   random: RestModelBuilder,

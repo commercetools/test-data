@@ -3,12 +3,9 @@ import {
   GraphqlModelBuilder,
   CompatCartModelBuilder,
 } from './builders';
+import * as constants from './constants';
 import * as modelPresets from './presets';
-
-export * as Cart from '.';
-
 export * as constants from './constants';
-export * from './types';
 
 export const CartRest = {
   random: RestModelBuilder,
@@ -23,5 +20,11 @@ export const CartGraphql = {
 /**
  * @deprecated Use `CartRest` or `CartGraphql` exported models instead of `Cart`.
  */
-export const random = CompatCartModelBuilder;
-export const presets = modelPresets.default;
+export const Cart = {
+  random: CompatCartModelBuilder,
+  presets: modelPresets.default,
+  /**
+   * @deprecated Import `constants` directly from this package root instead of accessing them via the `Cart` model.
+   */
+  constants,
+};
