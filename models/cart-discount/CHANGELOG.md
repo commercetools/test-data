@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart-discount
 
+## 10.12.0
+
+### Minor Changes
+
+- [#744](https://github.com/commercetools/test-data/pull/744) [`6df7aac`](https://github.com/commercetools/test-data/commit/6df7aac12e45d42e0dea87fdec310c0dc3f52f59) Thanks [@nima-ct](https://github.com/nima-ct)! - Introducing the new CartDiscountPatternTarget, CountOnLineItemUnits and CountOnCustomLineItemUnitsInput models for cart discount
+
+### Patch Changes
+
+- Updated dependencies [[`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b), [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614)]:
+  - @commercetools-test-data/commons@10.12.0
+  - @commercetools-test-data/category@10.12.0
+  - @commercetools-test-data/customer-group@10.12.0
+  - @commercetools-test-data/product-type@10.12.0
+  - @commercetools-test-data/core@10.12.0
+  - @commercetools-test-data/graphql-types@10.12.0
+  - @commercetools-test-data/utils@10.12.0
+
 ## 10.11.2
 
 ### Patch Changes

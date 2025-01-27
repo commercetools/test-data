@@ -1,5 +1,20 @@
 # @commercetools-test-data/shipping-method
 
+## 10.12.0
+
+### Minor Changes
+
+- [#745](https://github.com/commercetools/test-data/pull/745) [`59c602f`](https://github.com/commercetools/test-data/commit/59c602f538e552373d225ccc593d717e3a335ae6) Thanks [@NickDevG](https://github.com/NickDevG)! - Updating zone rates for b2b sample data presets
+
+### Patch Changes
+
+- Updated dependencies [[`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b), [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614)]:
+  - @commercetools-test-data/commons@10.12.0
+  - @commercetools-test-data/tax-category@10.12.0
+  - @commercetools-test-data/zone@10.12.0
+  - @commercetools-test-data/core@10.12.0
+  - @commercetools-test-data/utils@10.12.0
+
 ## 10.11.2
 
 ### Patch Changes

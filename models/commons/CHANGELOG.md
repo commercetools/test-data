@@ -1,5 +1,55 @@
 # @commercetools-test-data/commons
 
+## 10.12.0
+
+### Patch Changes
+
+- [#741](https://github.com/commercetools/test-data/pull/741) [`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Migrated the `Reference` model to the new implementation patterns.
+
+  Now REST and GraphQL model instances can be created using their own builders:
+
+  ```ts
+  import {
+    ReferenceRest,
+    ReferenceGraphql,
+    ReferenceDraftRest,
+    ReferenceDraftGraphql,
+  } from '@commercetools-test-data/commons';
+
+  // Query models
+  const restProductRef = ReferenceRest.random().
+    .typeId('product')
+    .build();
+  const graphqlProductRef = ReferenceGraphql.random().
+    .typeId('product')
+    .build();
+
+  // Draft models
+  const restProductRefDraft = ReferenceDraftRest.random().
+    .typeId('product')
+    .build();
+  const graphqlProductRefDraft = ReferenceDraftGraphql.random().
+    .typeId('product')
+    .build();
+
+
+  // Presets
+  const restCategoryRef = ReferenceRest.presets
+    .category()
+    .build();
+  const graphqlCategoryRefDraft = ReferenceDraftGraphql.presets
+    .category()
+    .build();
+  ```
+
+- [#738](https://github.com/commercetools/test-data/pull/738) [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - When providing a model to the `obj` property of the `Reference` model, that one was not used at build time in the REST representation.
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.12.0
+  - @commercetools-test-data/core@10.12.0
+  - @commercetools-test-data/graphql-types@10.12.0
+  - @commercetools-test-data/utils@10.12.0
+
 ## 10.11.2
 
 ### Patch Changes

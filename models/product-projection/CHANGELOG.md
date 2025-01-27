@@ -1,5 +1,22 @@
 # @commercetools-test-data/product-projection
 
+## 10.12.0
+
+### Patch Changes
+
+- [#738](https://github.com/commercetools/test-data/pull/738) [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Migrated the `ProductProjection` model to the new implementation patterns.
+
+- Updated dependencies [[`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b), [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614), [`e374c6f`](https://github.com/commercetools/test-data/commit/e374c6feaa5fd15799374fec83d1d0da28d36614), [`608b432`](https://github.com/commercetools/test-data/commit/608b43292e563e0b07e276b576c5383a3d42d79b)]:
+  - @commercetools-test-data/commons@10.12.0
+  - @commercetools-test-data/product@10.12.0
+  - @commercetools-test-data/category@10.12.0
+  - @commercetools-test-data/product-type@10.12.0
+  - @commercetools-test-data/state@10.12.0
+  - @commercetools-test-data/tax-category@10.12.0
+  - @commercetools-test-data/core@10.12.0
+  - @commercetools-test-data/graphql-types@10.12.0
+  - @commercetools-test-data/utils@10.12.0
+
 ## 10.11.2
 
 ### Patch Changes
