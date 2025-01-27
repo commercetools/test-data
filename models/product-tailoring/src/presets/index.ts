@@ -1,13 +1,23 @@
+import type { Image } from '@commercetools/platform-sdk';
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import type { TCtpImage } from '@commercetools-test-data/graphql-types';
 import {
   RestModelBuilder as ProductTailoringRest,
   GraphqlModelBuilder as ProductTailoringGraphql,
 } from '../builders';
 import {
+  RestModelBuilder as ProductTailoringAttributeRest,
+  GraphqlModelBuilder as ProductTailoringAttributeGraphql,
+} from '../product-tailoring-attribute/builders';
+import {
   RestModelBuilder as ProductTailoringDataRest,
   GraphqlModelBuilder as ProductTailoringDataGraphql,
 } from '../product-tailoring-data/builders';
+import {
+  RestModelBuilder as ProductVariantTailoringRest,
+  GraphqlModelBuilder as ProductVariantTailoringGraphql,
+} from '../product-variant-tailoring/builders';
 import type { TProductTailoringRest, TProductTailoringGraphql } from '../types';
 
 const getLocalizedData = () => {
@@ -44,6 +54,77 @@ const getLocalizedData = () => {
   return { name, description, metaTitle, metaDescription, metaKeywords, slug };
 };
 
+const createRestImages = (): Image[] => {
+  return [
+    {
+      url: '//product-image-1.jpg',
+      dimensions: { w: 800, h: 600 },
+      label: 'Product Image 1',
+    },
+    {
+      url: '//product-image-2.jpg',
+      dimensions: { w: 400, h: 300 },
+      label: 'Product Image 2',
+    },
+  ];
+};
+
+const createGraphqlImages = (): TCtpImage[] => {
+  return [
+    {
+      url: '//product-image-1.jpg',
+      dimensions: { width: 800, height: 600 },
+      label: 'Product Image 1',
+      __typename: 'Image',
+    },
+    {
+      url: '//product-image-2.jpg',
+      dimensions: { width: 400, height: 300 },
+      label: 'Product Image 2',
+      __typename: 'Image',
+    },
+  ];
+};
+
+const createRestVariant = (id: number) => {
+  const attributeValue = LocalizedString.presets
+    .empty()
+    .en(`Color ${id}`)
+    .de(`Farbe ${id}`);
+
+  return ProductVariantTailoringRest()
+    .id(id)
+    .images(createRestImages())
+    .attributes([
+      ProductTailoringAttributeRest().name('color').value(attributeValue),
+      ProductTailoringAttributeRest()
+        .name('size')
+        .value(LocalizedString.presets.empty().en('M').de('M')),
+    ]);
+};
+
+const createGraphqlVariant = (id: number) => {
+  const attributeValue = LocalizedString.presets
+    .empty()
+    .en(`Color ${id}`)
+    .de(`Farbe ${id}`);
+
+  return ProductVariantTailoringGraphql()
+    .id(id)
+    .images(createGraphqlImages())
+    .attributesRaw([
+      ProductTailoringAttributeGraphql()
+        .name('color')
+        .value({ type: 'ltext', value: attributeValue })
+        .__typename('RawProductAttribute'),
+      ProductTailoringAttributeGraphql()
+        .name('size')
+        .value({ type: 'text', value: 'M' })
+        .__typename('RawProductAttribute'),
+    ])
+    .__typename('ProductVariantTailoring');
+};
+
 export const restPresets = {
   basic: (): TBuilder<TProductTailoringRest> => {
     const data = getLocalizedData();
@@ -53,7 +134,12 @@ export const restPresets = {
       .metaTitle(data.metaTitle)
       .metaDescription(data.metaDescription)
       .metaKeywords(data.metaKeywords)
-      .slug(data.slug);
+      .slug(data.slug)
+      .variants([
+        createRestVariant(1),
+        createRestVariant(2),
+        createRestVariant(3),
+      ]);
 
     return ProductTailoringRest()
       .key('tailored-product-key')
@@ -74,6 +160,11 @@ export const graphqlPresets = {
       .metaDescriptionAllLocales(data.metaDescription)
       .metaKeywordsAllLocales(data.metaKeywords)
       .slugAllLocales(data.slug)
+      .variants([
+        createGraphqlVariant(1),
+        createGraphqlVariant(2),
+        createGraphqlVariant(3),
+      ])
       .__typename('ProductTailoringData');
 
     return ProductTailoringGraphql()

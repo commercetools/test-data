@@ -10,7 +10,7 @@ module.exports = {
     //   Error: An error occurred while adding the reporter at path "/path/to/file".Reporter is not a constructor
     //
     // For that reason, we move the `--onlyChanged` flag next to it.
-    'pnpm lint --reporters=jest-silent-reporter --onlyChanged',
+    'pnpm lint --reporters=jest-silent-reporter --onlyChanged --passWithNoTests',
   ],
   '*.ts': [
     'prettier --write',
@@ -22,7 +22,7 @@ module.exports = {
     //   Error: An error occurred while adding the reporter at path "/path/to/file".Reporter is not a constructor
     //
     // For that reason, we move the `--onlyChanged` flag next to it.
-    'pnpm lint --reporters=jest-silent-reporter --onlyChanged',
+    'pnpm lint --reporters=jest-silent-reporter --onlyChanged --passWithNoTests',
     'tsc-files --noEmit',
   ],
 };
