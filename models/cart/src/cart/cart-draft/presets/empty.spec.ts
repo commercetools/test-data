@@ -1,9 +1,8 @@
-import type { TCartDraft } from '../../types';
-import empty from './empty';
+import { TCartDraftGraphql, TCartDraftRest } from '../../types';
+import { restPreset, graphqlPreset, compatPreset } from './empty';
 
-it('should set all specified fields to undefined', () => {
-  const emptyCartDraft = empty().build<TCartDraft>();
-  expect(emptyCartDraft).toMatchObject({
+const cartExpectation = (cart: TCartDraftRest | TCartDraftGraphql) => {
+  expect(cart).toMatchObject({
     key: undefined,
     customerId: undefined,
     customerEmail: undefined,
@@ -32,5 +31,24 @@ it('should set all specified fields to undefined', () => {
     origin: undefined,
     deleteDaysAfterLastModification: undefined,
     custom: undefined,
+  });
+};
+
+describe('Empty preset', () => {
+  it('[REST] should set all specified fields to undefined', () => {
+    const emptyCartDraft = restPreset().build();
+    cartExpectation(emptyCartDraft);
+  });
+  it('[Graphql] should set all specified fields to undefined', () => {
+    const emptyCartDraft = graphqlPreset().build();
+    cartExpectation(emptyCartDraft);
+  });
+  it('[Compat - REST] should set all specified fields to undefined', () => {
+    const emptyCartDraft = compatPreset().buildRest();
+    cartExpectation(emptyCartDraft);
+  });
+  it('[Compat - Graphql] should set all specified fields to undefined', () => {
+    const emptyCartDraft = compatPreset().buildGraphql();
+    cartExpectation(emptyCartDraft);
   });
 });

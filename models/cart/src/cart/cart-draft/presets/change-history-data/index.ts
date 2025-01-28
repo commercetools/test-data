@@ -1,5 +1,13 @@
-import withCustomLineItem from './with-custom-line-item';
+import * as withCustomLineItem from './with-custom-line-item';
 
-const presets = { withCustomLineItem };
+export const restPresets = {
+  withCustomLineItem: withCustomLineItem.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  withCustomLineItem: withCustomLineItem.graphqlPreset,
+};
+
+export const compatPresets = {
+  withCustomLineItem: withCustomLineItem.compatPreset,
+};

@@ -2,6 +2,7 @@ import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -15,15 +16,22 @@ import {
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
-import { CartDraft, LineItemDraft } from '../../../../index';
-import { origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
+import { LineItemDraft } from '../../../../index';
+import { inventoryMode, origin } from '../../../constants';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataB2CLifestyle
   .sebastianSmith()
   .build<TCustomerDraft>();
+
 const address =
   AddressDraft.presets.sampleDataB2CLifestyle.sebastianSmithAddress();
+
 const rusticCountryQueenBed01 =
   ProductVariantDraft.presets.sampleDataB2CLifestyle
     .rusticCountryQueenBed01()
@@ -39,22 +47,29 @@ const modernThreeSeaterSofa01 =
   ProductVariantDraft.presets.sampleDataB2CLifestyle
     .modernThreeSeaterSofa01()
     .build<TProductVariantDraft>();
+
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2CLifestyle
   .expressShippingMethod()
   .build<TShippingMethodDraft>();
+
 const store = StoreDraft.presets.sampleDataB2CLifestyle
   .b2cRetailStore()
   .build<TStoreDraft>();
 
-const sebastianSmith01 = (customerId?: string): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+const populatePreset = <
+  TModel extends TCartDraftRest | TCartDraftGraphql | TCartDraft,
+>(
+  builder: TBuilder<TModel>,
+  customerId?: string
+): TBuilder<TModel> => {
+  return builder
     .key('sebastian-smith-01')
     .customerEmail(customer.email)
     .customerId(customerId)
     .currency('GBP')
     .country('GB')
     .origin(origin.Merchant)
+    .inventoryMode(inventoryMode.None)
     .shippingAddress(address)
     .billingAddress(address)
     .lineItems([
@@ -76,5 +91,15 @@ const sebastianSmith01 = (customerId?: string): TCartDraftBuilder =>
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .store(KeyReferenceDraft.presets.store().key(store.key!));
+};
 
-export default sebastianSmith01;
+export const restPreset = (customerId?: string): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty(), customerId);
+
+export const graphqlPreset = (
+  customerId?: string
+): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty(), customerId);
+
+export const compatPreset = (customerId?: string): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty(), customerId);

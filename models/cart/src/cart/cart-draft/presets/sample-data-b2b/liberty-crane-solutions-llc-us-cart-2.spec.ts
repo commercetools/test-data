@@ -1,10 +1,9 @@
-import type { TCartDraft } from '../../../types';
-import libertyCraneSolutionsLlcUsCart2 from './liberty-crane-solutions-llc-us-cart-2';
+import type { TCartDraftGraphql, TCartDraftRest } from '../../../types';
+import * as presets from './liberty-crane-solutions-llc-us-cart-2';
 
 describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
-  it(`should return a libertyCraneSolutionsLlcUsCart2 preset`, () => {
-    const libertyCraneSolutionsLlcUsCart2Preset =
-      libertyCraneSolutionsLlcUsCart2().build<TCartDraft>();
+  it(`should return a libertyCraneSolutionsLlcUsCart2 preset when built for rest`, () => {
+    const libertyCraneSolutionsLlcUsCart2Preset = presets.restPreset().build();
     expect(libertyCraneSolutionsLlcUsCart2Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
@@ -141,9 +140,288 @@ describe(`with libertyCraneSolutionsLlcUsCart2 preset`, () => {
   });
 
   it(`should return a libertyCraneSolutionsLlcUsCart2 preset when built for graphql`, () => {
-    const libertyCraneSolutionsLlcUsCart2PresetGraphql =
-      libertyCraneSolutionsLlcUsCart2().buildGraphql<TCartDraft>();
-    expect(libertyCraneSolutionsLlcUsCart2PresetGraphql).toMatchInlineSnapshot(`
+    const libertyCraneSolutionsLlcUsCart2Preset = presets
+      .graphqlPreset()
+      .build();
+    expect(libertyCraneSolutionsLlcUsCart2Preset).toMatchInlineSnapshot(`
+      {
+        "anonymousId": undefined,
+        "billingAddress": undefined,
+        "businessUnit": {
+          "key": "liberty-crane-solutions-llc-us",
+          "typeId": "business-unit",
+        },
+        "country": "US",
+        "currency": "USD",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "ava-brown@lcs.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": undefined,
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": "TrackOnly",
+        "itemShippingAddresses": undefined,
+        "key": "liberty-crane-solutions-llc-us-cart-2",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-red",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-blue",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-green",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Customer",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": "Building B",
+          "apartment": "456",
+          "building": "C",
+          "city": "Raleigh",
+          "company": "Liberty Crane Solutions LLC NC",
+          "country": "US",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": undefined,
+          "id": undefined,
+          "key": "liberty-crane-solutions-llc-us-nc-1",
+          "lastName": undefined,
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "27601",
+          "region": "North Carolina",
+          "salutation": undefined,
+          "state": "North Carolina",
+          "streetName": "Main Street",
+          "streetNumber": "789",
+          "title": undefined,
+        },
+        "shippingMethod": {
+          "key": "standard-shipping-method",
+          "typeId": "shipping-method",
+        },
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": {
+          "key": "us-medium-customers",
+          "typeId": "store",
+        },
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
+  });
+
+  it(`should return a libertyCraneSolutionsLlcUsCart2 preset when built for legacy rest`, () => {
+    const libertyCraneSolutionsLlcUsCart2Preset = presets
+      .compatPreset()
+      .buildRest<TCartDraftRest>();
+    expect(libertyCraneSolutionsLlcUsCart2Preset).toMatchInlineSnapshot(`
+      {
+        "anonymousId": undefined,
+        "billingAddress": undefined,
+        "businessUnit": {
+          "key": "liberty-crane-solutions-llc-us",
+          "typeId": "business-unit",
+        },
+        "country": "US",
+        "currency": "USD",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "ava-brown@lcs.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": undefined,
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": "TrackOnly",
+        "itemShippingAddresses": undefined,
+        "key": "liberty-crane-solutions-llc-us-cart-2",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-red",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-blue",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "us-medium-customers",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "zz456-st-green",
+            "supplyChannel": {
+              "key": "us-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Customer",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": "Building B",
+          "apartment": "456",
+          "building": "C",
+          "city": "Raleigh",
+          "company": "Liberty Crane Solutions LLC NC",
+          "country": "US",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": undefined,
+          "id": undefined,
+          "key": "liberty-crane-solutions-llc-us-nc-1",
+          "lastName": undefined,
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "27601",
+          "region": "North Carolina",
+          "salutation": undefined,
+          "state": "North Carolina",
+          "streetName": "Main Street",
+          "streetNumber": "789",
+          "title": undefined,
+        },
+        "shippingMethod": {
+          "key": "standard-shipping-method",
+          "typeId": "shipping-method",
+        },
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": {
+          "key": "us-medium-customers",
+          "typeId": "store",
+        },
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
+  });
+
+  it(`should return a libertyCraneSolutionsLlcUsCart2 preset when built for legacy graphql`, () => {
+    const libertyCraneSolutionsLlcUsCart2Preset = presets
+      .compatPreset()
+      .buildGraphql<TCartDraftGraphql>();
+    expect(libertyCraneSolutionsLlcUsCart2Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
         "billingAddress": undefined,

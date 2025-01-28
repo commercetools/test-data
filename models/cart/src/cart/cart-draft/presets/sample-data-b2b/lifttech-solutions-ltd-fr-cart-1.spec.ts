@@ -1,10 +1,9 @@
-import type { TCartDraft } from '../../../types';
-import lifttechSolutionsLtdFrCart1 from './lifttech-solutions-ltd-fr-cart-1';
+import type { TCartDraftGraphql, TCartDraftRest } from '../../../types';
+import * as presets from './lifttech-solutions-ltd-fr-cart-1';
 
 describe(`with lifttechSolutionsLtdFrCart1 preset`, () => {
-  it(`should return a lifttechSolutionsLtdFrCart1 preset`, () => {
-    const lifttechSolutionsLtdFrCart1Preset =
-      lifttechSolutionsLtdFrCart1().build<TCartDraft>();
+  it(`should return a lifttechSolutionsLtdFrCart1 preset when built for rest`, () => {
+    const lifttechSolutionsLtdFrCart1Preset = presets.restPreset().build();
     expect(lifttechSolutionsLtdFrCart1Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
@@ -141,9 +140,286 @@ describe(`with lifttechSolutionsLtdFrCart1 preset`, () => {
   });
 
   it(`should return a lifttechSolutionsLtdFrCart1 preset when built for graphql`, () => {
-    const lifttechSolutionsLtdFrCart1PresetGraphql =
-      lifttechSolutionsLtdFrCart1().buildGraphql<TCartDraft>();
-    expect(lifttechSolutionsLtdFrCart1PresetGraphql).toMatchInlineSnapshot(`
+    const lifttechSolutionsLtdFrCart1Preset = presets.graphqlPreset().build();
+    expect(lifttechSolutionsLtdFrCart1Preset).toMatchInlineSnapshot(`
+      {
+        "anonymousId": undefined,
+        "billingAddress": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd-fr",
+          "typeId": "business-unit",
+        },
+        "country": "FR",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "camille-lefevre@ltsl.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": undefined,
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": "TrackOnly",
+        "itemShippingAddresses": undefined,
+        "key": "lifttech-solutions-ltd-fr-cart-1",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-red",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-blue",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-green",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Customer",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": "Étage 4",
+          "apartment": "321",
+          "building": "E",
+          "city": "Paris",
+          "company": "LiftTech Solutions Ltd FR",
+          "country": "FR",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": undefined,
+          "id": undefined,
+          "key": "lifttech-solutions-ltd-fr",
+          "lastName": undefined,
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "75002",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Rue de la Paix",
+          "streetNumber": "789",
+          "title": undefined,
+        },
+        "shippingMethod": {
+          "key": "standard-shipping-method",
+          "typeId": "shipping-method",
+        },
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": {
+          "key": "de-fr-uk",
+          "typeId": "store",
+        },
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
+  });
+
+  it(`should return a lifttechSolutionsLtdFrCart1 preset when built for legacy rest`, () => {
+    const lifttechSolutionsLtdFrCart1Preset = presets
+      .compatPreset()
+      .buildRest<TCartDraftRest>();
+    expect(lifttechSolutionsLtdFrCart1Preset).toMatchInlineSnapshot(`
+      {
+        "anonymousId": undefined,
+        "billingAddress": undefined,
+        "businessUnit": {
+          "key": "lifttech-solutions-ltd-fr",
+          "typeId": "business-unit",
+        },
+        "country": "FR",
+        "currency": "EUR",
+        "custom": undefined,
+        "customLineItems": undefined,
+        "customShipping": undefined,
+        "customerEmail": "camille-lefevre@ltsl.com",
+        "customerGroup": undefined,
+        "customerId": undefined,
+        "deleteDaysAfterLastModification": undefined,
+        "discountCodes": undefined,
+        "externalTaxRateForShippingMethod": undefined,
+        "inventoryMode": "TrackOnly",
+        "itemShippingAddresses": undefined,
+        "key": "lifttech-solutions-ltd-fr-cart-1",
+        "lineItems": [
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-red",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-blue",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+          {
+            "addedAt": undefined,
+            "custom": undefined,
+            "distributionChannel": {
+              "key": "de-fr-uk",
+              "typeId": "channel",
+            },
+            "externalPrice": undefined,
+            "externalTaxRate": undefined,
+            "externalTotalPrice": undefined,
+            "inventoryMode": undefined,
+            "productId": undefined,
+            "quantity": 1,
+            "shippingDetails": undefined,
+            "sku": "iii567-yz-green",
+            "supplyChannel": {
+              "key": "eu-warehouse",
+              "typeId": "channel",
+            },
+            "variantId": undefined,
+          },
+        ],
+        "locale": undefined,
+        "origin": "Customer",
+        "shipping": undefined,
+        "shippingAddress": {
+          "additionalAddressInfo": undefined,
+          "additionalStreetInfo": "Étage 4",
+          "apartment": "321",
+          "building": "E",
+          "city": "Paris",
+          "company": "LiftTech Solutions Ltd FR",
+          "country": "FR",
+          "custom": undefined,
+          "department": undefined,
+          "email": undefined,
+          "externalId": undefined,
+          "fax": undefined,
+          "firstName": undefined,
+          "id": undefined,
+          "key": "lifttech-solutions-ltd-fr",
+          "lastName": undefined,
+          "mobile": undefined,
+          "pOBox": undefined,
+          "phone": undefined,
+          "postalCode": "75002",
+          "region": undefined,
+          "salutation": undefined,
+          "state": undefined,
+          "streetName": "Rue de la Paix",
+          "streetNumber": "789",
+          "title": undefined,
+        },
+        "shippingMethod": {
+          "key": "standard-shipping-method",
+          "typeId": "shipping-method",
+        },
+        "shippingMode": undefined,
+        "shippingRateInput": undefined,
+        "store": {
+          "key": "de-fr-uk",
+          "typeId": "store",
+        },
+        "taxCalculationMode": undefined,
+        "taxMode": undefined,
+        "taxRoundingMode": undefined,
+      }
+    `);
+  });
+
+  it(`should return a lifttechSolutionsLtdFrCart1 preset when built for legacy graphql`, () => {
+    const lifttechSolutionsLtdFrCart1Preset = presets
+      .compatPreset()
+      .buildGraphql<TCartDraftGraphql>();
+    expect(lifttechSolutionsLtdFrCart1Preset).toMatchInlineSnapshot(`
       {
         "anonymousId": undefined,
         "billingAddress": undefined,

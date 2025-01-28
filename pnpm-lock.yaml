@@ -264,6 +264,9 @@ importers:
       '@commercetools-test-data/business-unit':
         specifier: 10.12.0
         version: link:../business-unit
+      '@commercetools-test-data/cart-discount':
+        specifier: 10.12.0
+        version: link:../cart-discount
       '@commercetools-test-data/channel':
         specifier: 10.12.0
         version: link:../channel
@@ -276,6 +279,9 @@ importers:
       '@commercetools-test-data/customer':
         specifier: 10.12.0
         version: link:../customer
+      '@commercetools-test-data/customer-group':
+        specifier: 10.12.0
+        version: link:../customer-group
       '@commercetools-test-data/discount-code':
         specifier: 10.12.0
         version: link:../discount-code
@@ -294,6 +300,9 @@ importers:
       '@commercetools-test-data/tax-category':
         specifier: 10.12.0
         version: link:../tax-category
+      '@commercetools-test-data/type':
+        specifier: 10.12.0
+        version: link:../type
       '@commercetools-test-data/utils':
         specifier: 10.12.0
         version: link:../../utils

@@ -2,6 +2,7 @@ import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -15,10 +16,14 @@ import {
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
-import { LineItemDraft } from '../../../../line-item';
+import { LineItemDraft } from '../../../../index';
 import { origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
-import * as CartDraft from '../../index';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataFashion
   .sampleAustralia()
@@ -34,11 +39,11 @@ const store = StoreDraft.presets.sampleDataFashion
   .store03()
   .build<TStoreDraft>();
 
-const sampleAustralia01 = (customerId?: string): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('sample-australia-01-cart')
-    .customerId(customerId)
     .customerEmail(customer.email)
     .currency('AUD')
     .country('AU')
@@ -52,5 +57,13 @@ const sampleAustralia01 = (customerId?: string): TCartDraftBuilder =>
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .store(KeyReferenceDraft.presets.store().key(store.key!));
+};
 
-export default sampleAustralia01;
+export const restPreset = (): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty());

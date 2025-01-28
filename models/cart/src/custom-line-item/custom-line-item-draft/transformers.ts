@@ -14,7 +14,7 @@ const transformers = {
   //scaffolding only
   graphql: Transformer<TCustomLineItemDraft, TCustomLineItemDraftGraphql>(
     'graphql',
-    { buildFields: [] }
+    { buildFields: ['money', 'name'] }
   ),
 };
 

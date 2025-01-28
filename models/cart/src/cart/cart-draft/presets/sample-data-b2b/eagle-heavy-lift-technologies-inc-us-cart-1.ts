@@ -3,13 +3,14 @@ import {
   type TCompanyDraft,
 } from '@commercetools-test-data/business-unit';
 import {
-  ChannelDraft,
-  type TChannelDraft,
+  ChannelDraftRest,
+  type TChannelDraftRest,
 } from '@commercetools-test-data/channel';
 import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -23,13 +24,19 @@ import {
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
 import { StoreDraft, type TStoreDraft } from '@commercetools-test-data/store';
-import { CartDraft, LineItemDraft } from '../../../../index';
+import { LineItemDraft } from '../../../../index';
 import { inventoryMode, origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataB2B
   .michaelWilliams()
   .build<TCustomerDraft>();
+
 const address =
   AddressDraft.presets.sampleDataB2B.eagleHeavyLiftTechnologiesIncUsNy1Address();
 
@@ -55,18 +62,20 @@ const businessUnit = CompanyDraft.presets.sampleDataB2B
   .eagleHeavyLiftTechnologiesIncUs()
   .build<TCompanyDraft>();
 
-const distributionChannel = ChannelDraft.presets.sampleDataB2B
+const usLargeCustomersChannel = ChannelDraftRest.presets.sampleDataB2B
   .usLargeCustomers()
-  .build<TChannelDraft>();
-const supplyChannel = ChannelDraft.presets.sampleDataB2B
+  .build<TChannelDraftRest>();
+const usWarehouseChannel = ChannelDraftRest.presets.sampleDataB2B
   .usWarehouse()
-  .build<TChannelDraft>();
+  .build<TChannelDraftRest>();
 
-const eagleHeavyLiftTechnologiesIncUsCart1 = (
+const populatePreset = <
+  TModel extends TCartDraftRest | TCartDraftGraphql | TCartDraft,
+>(
+  builder: TBuilder<TModel>,
   customerId?: string
-): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+): TBuilder<TModel> => {
+  return builder
     .key('eagle-heavy-lift-technologies-inc-us-cart-1')
     .customerEmail(customer.email)
     .customerId(customerId)
@@ -81,30 +90,30 @@ const eagleHeavyLiftTechnologiesIncUsCart1 = (
         .sku(eee123Qr01.sku)
         .quantity(1)
         .distributionChannel(
-          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
         )
         .supplyChannel(
-          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
         ),
       LineItemDraft.presets
         .empty()
         .sku(eee123Qr02.sku)
         .quantity(1)
         .distributionChannel(
-          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
         )
         .supplyChannel(
-          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
         ),
       LineItemDraft.presets
         .empty()
         .sku(eee123Qr03.sku)
         .quantity(1)
         .distributionChannel(
-          KeyReferenceDraft.presets.channel().key(distributionChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usLargeCustomersChannel.key!)
         )
         .supplyChannel(
-          KeyReferenceDraft.presets.channel().key(supplyChannel.key!)
+          KeyReferenceDraft.presets.channel().key(usWarehouseChannel.key!)
         ),
     ])
     .shippingMethod(
@@ -114,5 +123,15 @@ const eagleHeavyLiftTechnologiesIncUsCart1 = (
     .businessUnit(
       KeyReferenceDraft.presets.businessUnit().key(businessUnit.key!)
     );
+};
 
-export default eagleHeavyLiftTechnologiesIncUsCart1;
+export const restPreset = (customerId?: string): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty(), customerId);
+
+export const graphqlPreset = (
+  customerId?: string
+): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty(), customerId);
+
+export const compatPreset = (customerId?: string): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty(), customerId);

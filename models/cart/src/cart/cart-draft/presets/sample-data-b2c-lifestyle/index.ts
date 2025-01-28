@@ -1,15 +1,29 @@
-import jenniferJones01 from './jennifer-jones-01';
-import jenniferSchmidt01 from './jennnifer-schmidt-01';
-import sebastianFranklin01 from './sebastian-franklin-01';
-import sebastianMueller01 from './sebastian-mueller-01';
-import sebastianSmith01 from './sebastian-smith-01';
+import * as jenniferJones01Presets from './jennifer-jones-01';
+import * as jenniferSchmidt01Presets from './jennifer-schmidt-01';
+import * as sebastianFranklin01Presets from './sebastian-franklin-01';
+import * as sebastianMueller01Presets from './sebastian-mueller-01';
+import * as sebastianSmith01Presets from './sebastian-smith-01';
 
-const presets = {
-  jenniferJones01,
-  jenniferSchmidt01,
-  sebastianFranklin01,
-  sebastianMueller01,
-  sebastianSmith01,
+export const restPresets = {
+  sebastianMueller01: sebastianMueller01Presets.restPreset,
+  jenniferJones01: jenniferJones01Presets.restPreset,
+  jenniferSchmidt01: jenniferSchmidt01Presets.restPreset,
+  sebastianSmith01: sebastianSmith01Presets.restPreset,
+  sebastianFranklin01: sebastianFranklin01Presets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  sebastianMueller01: sebastianMueller01Presets.graphqlPreset,
+  jenniferJones01: jenniferJones01Presets.graphqlPreset,
+  jenniferSchmidt01: jenniferSchmidt01Presets.graphqlPreset,
+  sebastianSmith01: sebastianSmith01Presets.graphqlPreset,
+  sebastianFranklin01: sebastianFranklin01Presets.graphqlPreset,
+};
+
+export const compatPresets = {
+  sebastianMueller01: sebastianMueller01Presets.compatPreset,
+  jenniferJones01: jenniferJones01Presets.compatPreset,
+  jenniferSchmidt01: jenniferSchmidt01Presets.compatPreset,
+  sebastianSmith01: sebastianSmith01Presets.compatPreset,
+  sebastianFranklin01: sebastianFranklin01Presets.compatPreset,
+};

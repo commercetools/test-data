@@ -2,6 +2,7 @@ import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -18,46 +19,59 @@ import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
-import { LineItemDraft } from '../../../../line-item';
+import { LineItemDraft } from '../../../../index';
 import { origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
-import * as CartDraft from '../../index';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataFashion
   .sampleAustralia()
   .build<TCustomerDraft>();
+
 const address = AddressDraft.presets.sampleDataFashion.sampleAustralia();
+
 const employeeSale = DiscountCodeDraft.presets.sampleDataFashion
   // cartDiscountId is not used, we can pass an empty string
   .employeeSale('')
   .build<TDiscountCodeDraft>();
-const denimJacketProductVariant = ProductVariantDraft.presets.sampleDataFashion
+
+const denimJacketVariant01 = ProductVariantDraft.presets.sampleDataFashion
   .denimJacketVariant01()
   .build<TProductVariantDraft>();
+
 const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .usaAustralia()
   .build<TShippingMethodDraft>();
 
-const sampleAustralia02 = (customerId?: string): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('sample-australia-02-cart')
     .customerEmail(customer.email)
-    .customerId(customerId)
     .currency('AUD')
     .country('AU')
     .origin(origin.Merchant)
     .shippingAddress(address)
     .billingAddress(address)
     .lineItems([
-      LineItemDraft.presets
-        .empty()
-        .sku(denimJacketProductVariant.sku)
-        .quantity(1),
+      LineItemDraft.presets.empty().sku(denimJacketVariant01.sku).quantity(1),
     ])
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .discountCodes([employeeSale.code]);
+};
 
-export default sampleAustralia02;
+export const restPreset = (): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty());

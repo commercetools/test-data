@@ -2,6 +2,7 @@ import {
   AddressDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import type { TBuilder } from '@commercetools-test-data/core';
 import {
   CustomerDraft,
   type TCustomerDraft,
@@ -18,46 +19,59 @@ import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
 } from '@commercetools-test-data/shipping-method';
-import { LineItemDraft } from '../../../../line-item';
-import { origin } from '../../../constants';
-import type { TCartDraftBuilder } from '../../../types';
-import * as CartDraft from '../../index';
+import { LineItemDraft } from '../../../../index';
+import { inventoryMode, origin } from '../../../constants';
+import type {
+  TCartDraftGraphql,
+  TCartDraftRest,
+  TCartDraft,
+} from '../../../types';
+import { CartDraftGraphql, CartDraftRest, CartDraft } from '../../index';
 
 const customer = CustomerDraft.presets.sampleDataFashion
   .sampleGermany()
   .build<TCustomerDraft>();
+
 const address = AddressDraft.presets.sampleDataFashion.sampleGermany();
+
 const shirtsBogo = DiscountCodeDraft.presets.sampleDataFashion
   // cartDiscountId is not used, we can pass an empty string
   .shirtsBogo('')
   .build<TDiscountCodeDraft>();
-const maternityTopProductVariant = ProductVariantDraft.presets.sampleDataFashion
+
+const maternityTopVariant03 = ProductVariantDraft.presets.sampleDataFashion
   .maternityTopVariant03()
   .build<TProductVariantDraft>();
+
 const shippingMethod = ShippingMethodDraft.presets.sampleDataFashion
   .europe()
   .build<TShippingMethodDraft>();
 
-const sampleGermany02 = (customerId?: string): TCartDraftBuilder =>
-  CartDraft.presets
-    .empty()
+const populatePreset = <TModel extends TCartDraftRest | TCartDraftGraphql>(
+  builder: TBuilder<TModel>
+): TBuilder<TModel> => {
+  return builder
     .key('sample-germany-02-cart')
     .customerEmail(customer.email)
-    .customerId(customerId)
     .currency('EUR')
     .country('DE')
     .origin(origin.Merchant)
     .shippingAddress(address)
     .billingAddress(address)
     .lineItems([
-      LineItemDraft.presets
-        .empty()
-        .sku(maternityTopProductVariant.sku)
-        .quantity(2),
+      LineItemDraft.presets.empty().sku(maternityTopVariant03.sku).quantity(2),
     ])
     .shippingMethod(
       KeyReferenceDraft.presets.shippingMethod().key(shippingMethod.key!)
     )
     .discountCodes([shirtsBogo.code]);
+};
 
-export default sampleGermany02;
+export const restPreset = (): TBuilder<TCartDraftRest> =>
+  populatePreset(CartDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TCartDraftGraphql> =>
+  populatePreset(CartDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TCartDraft> =>
+  populatePreset(CartDraft.presets.empty());
