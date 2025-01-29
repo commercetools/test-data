@@ -27,6 +27,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringAttributeG
       referencedResourceSet: [],
       attributeDefinition: null,
       referencedResource: null,
-      name: null,
     },
   };

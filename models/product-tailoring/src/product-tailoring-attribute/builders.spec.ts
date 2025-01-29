@@ -21,7 +21,7 @@ describe('ProductTailoringAttribute Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        name: null,
+        name: expect.any(String),
         attributeDefinition: null,
         referencedResource: null,
         referencedResourceSet: [],

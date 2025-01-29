@@ -7,7 +7,6 @@ import type {
 } from './types';
 
 const commonFieldsConfig = {
-  name: null,
   slug: fake((f) => f.lorem.slug(2)),
   description: null,
   metaTitle: null,
@@ -27,6 +26,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataGraphq
   {
     fields: {
       ...commonFieldsConfig,
+      name: null,
       nameAllLocales: fake(() => LocalizedString.random()),
       slugAllLocales: fake(() => LocalizedString.random()),
       descriptionAllLocales: null,
