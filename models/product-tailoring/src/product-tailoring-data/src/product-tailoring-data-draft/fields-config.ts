@@ -1,3 +1,4 @@
+import { ReferenceRest } from '@commercetools-test-data/commons';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
 import type {
   TProductTailoringDataDraftGraphql,
@@ -20,8 +21,8 @@ export const restFieldsConfig: TModelFieldsConfig<TProductTailoringDataDraftRest
   {
     fields: {
       ...commonFieldsConfig,
-      product: fake(() => ({ id: null, key: null, typeId: 'product' })),
-      store: fake(() => ({ id: null, key: null, typeId: 'store' })),
+      product: fake(() => ReferenceRest.random().typeId('product')),
+      store: fake(() => ReferenceRest.random().typeId('store')),
     },
   };
 
