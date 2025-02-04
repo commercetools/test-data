@@ -12,7 +12,12 @@ import {
   RestModelBuilder as ProductVariantTailoringRestBuilder,
   GraphqlModelBuilder as ProductVariantTailoringGraphqlBuilder,
 } from './product-variant-tailoring/builders';
+
+// Export all types
 export * from './types';
+export * from './product-tailoring-data/types';
+export * from './product-variant-tailoring/types';
+export * from './product-tailoring-attribute/types';
 
 // Main Product Tailoring models
 export const ProductTailoringRest = {

@@ -33,7 +33,7 @@ describe('ProductTailoringDataDraft Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         product: expect.objectContaining({
-          typeId: null,
+          typeId: 'product',
         }),
         key: null,
         description: null,

@@ -21,8 +21,8 @@ export const restFieldsConfig: TModelFieldsConfig<TProductTailoringDataDraftRest
   {
     fields: {
       ...commonFieldsConfig,
-      product: fake(() => ReferenceRest.random().typeId('product')),
-      store: fake(() => ReferenceRest.random().typeId('store')),
+      product: fake(() => ReferenceRest.presets.productReference()),
+      store: fake(() => ReferenceRest.presets.storeReference()),
     },
   };
 
@@ -30,6 +30,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataDraftG
   {
     fields: {
       ...commonFieldsConfig,
-      product: fake(() => ({ id: null, key: null, typeId: null })),
+      product: fake(() => ReferenceRest.presets.productReference()),
     },
   };

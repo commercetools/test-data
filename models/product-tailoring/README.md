@@ -84,89 +84,9 @@ Example:
 ```ts
 // REST
 const basicRest = ProductTailoringRest.presets.basic().build();
-// Creates a product tailoring with REST structure:
-// {
-//   key: 'tailored-product-key',
-//   published: true,
-//   hasStagedChanges: false,
-//   current: {
-//     name: { en: 'Tailored Product', de: 'Angepasstes Produkt' },
-//     // ... other localized fields
-//     variants: [
-//       {
-//         id: 1,
-//         images: [
-//           {
-//             url: '//product-image-1.jpg',
-//             dimensions: { w: 800, h: 600 },
-//             label: 'Product Image 1'
-//           },
-//           // ... second image
-//         ],
-//         attributes: [
-//           {
-//             name: 'color',
-//             value: { en: 'Color 1', de: 'Farbe 1' }
-//           },
-//           {
-//             name: 'size',
-//             value: { en: 'M', de: 'M' }
-//           }
-//         ]
-//       },
-//       // ... variants 2 and 3
-//     ]
-//   },
-//   staged: { /* same structure as current */ }
-// }
 
 // GraphQL
 const basicGraphql = ProductTailoringGraphql.presets.basic().build();
-// Creates a product tailoring with GraphQL structure:
-// {
-//   key: 'tailored-product-key',
-//   published: true,
-//   hasStagedChanges: false,
-//   __typename: 'ProductTailoring',
-//   current: {
-//     name: 'Tailored Product',
-//     nameAllLocales: [
-//       { locale: 'en', value: 'Tailored Product' },
-//       { locale: 'de', value: 'Angepasstes Produkt' }
-//     ],
-//     // ... other localized fields
-//     variants: [
-//       {
-//         id: 1,
-//         images: [
-//           {
-//             url: '//product-image-1.jpg',
-//             dimensions: { width: 800, height: 600 },
-//             label: 'Product Image 1',
-//             __typename: 'Image'
-//           },
-//           // ... second image
-//         ],
-//         attributesRaw: [
-//           {
-//             name: 'color',
-//             value: { type: 'ltext', value: { en: 'Color 1', de: 'Farbe 1' } },
-//             __typename: 'RawProductAttribute'
-//           },
-//           {
-//             name: 'size',
-//             value: { type: 'text', value: 'M' },
-//             __typename: 'RawProductAttribute'
-//           }
-//         ],
-//         __typename: 'ProductVariantTailoring'
-//       },
-//       // ... variants 2 and 3
-//     ],
-//     __typename: 'ProductTailoringData'
-//   },
-//   staged: { /* same structure as current */ }
-// }
 ```
 
 ## ProductTailoringData
