@@ -18,8 +18,8 @@ describe(`with premiumShippingMethod preset`, () => {
           "en-US": "2-3 weeks",
           "es-ES": "2-3 semanas",
           "fr": undefined,
-          "fr-FR": "2-3 settimane",
-          "it-IT": "2-3 semaines",
+          "fr-FR": "2-3 semaines",
+          "it-IT": "2-3 settimane",
           "nl-NL": "2-3 weken",
           "pt-PT": "2-3 semanas",
         },
@@ -31,8 +31,8 @@ describe(`with premiumShippingMethod preset`, () => {
           "en-US": "Premium shipping",
           "es-ES": "Envío Premium",
           "fr": undefined,
-          "fr-FR": "Spedizione premium",
-          "it-IT": "Expédition Premium",
+          "fr-FR": "Expédition premium",
+          "it-IT": "Spedizione Premium",
           "nl-NL": "Premium verzending",
           "pt-PT": "Transporte Premium",
         },
@@ -104,11 +104,11 @@ describe(`with premiumShippingMethod preset`, () => {
             "value": "2-3 semanas",
           },
           {
-            "locale": "it-IT",
+            "locale": "fr-FR",
             "value": "2-3 semaines",
           },
           {
-            "locale": "fr-FR",
+            "locale": "it-IT",
             "value": "2-3 settimane",
           },
           {
@@ -138,12 +138,12 @@ describe(`with premiumShippingMethod preset`, () => {
             "value": "Envío Premium",
           },
           {
-            "locale": "it-IT",
-            "value": "Expédition Premium",
+            "locale": "fr-FR",
+            "value": "Expédition premium",
           },
           {
-            "locale": "fr-FR",
-            "value": "Spedizione premium",
+            "locale": "it-IT",
+            "value": "Spedizione Premium",
           },
           {
             "locale": "nl-NL",
