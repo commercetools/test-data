@@ -36,6 +36,5 @@ export * as PriceTierDraft from './price-tier/price-tier-draft';
 
 export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
-export * from './discounted-price';
 export * from './geometry';
 export * from './reference';

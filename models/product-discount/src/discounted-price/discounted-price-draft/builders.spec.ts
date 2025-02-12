@@ -1,4 +1,4 @@
-import { DiscountedPriceDraftRest, DiscountedPriceDraftGraphql } from './index';
+import { DiscountedPriceDraftRest, DiscountedPriceDraftGraphql } from '../..';
 
 describe('DiscountedPriceDraft Builder', () => {
   it('should build properties for the discounted price draft REST representation', () => {

@@ -1,4 +1,4 @@
-import { DiscountedPriceRest, DiscountedPriceGraphql } from './index';
+import { DiscountedPriceRest, DiscountedPriceGraphql } from '..';
 
 describe('DiscountedPrice Builder', () => {
   it('should build properties for the discounted price REST representation', () => {
