@@ -3,21 +3,21 @@ import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import type { TCtpImage } from '@commercetools-test-data/graphql-types';
 import {
+  ProductTailoringAttributeRest,
+  ProductTailoringAttributeGraphql,
+} from '../../product-tailoring-attribute';
+import {
+  ProductTailoringDataRest,
+  ProductTailoringDataGraphql,
+} from '../../product-tailoring-data/';
+import {
+  ProductVariantTailoringRest,
+  ProductVariantTailoringGraphql,
+} from '../../product-variant-tailoring';
+import {
   RestModelBuilder as ProductTailoringRest,
   GraphqlModelBuilder as ProductTailoringGraphql,
 } from '../builders';
-import {
-  RestModelBuilder as ProductTailoringAttributeRest,
-  GraphqlModelBuilder as ProductTailoringAttributeGraphql,
-} from '../product-tailoring-attribute/builders';
-import {
-  RestModelBuilder as ProductTailoringDataRest,
-  GraphqlModelBuilder as ProductTailoringDataGraphql,
-} from '../product-tailoring-data/builders';
-import {
-  RestModelBuilder as ProductVariantTailoringRest,
-  GraphqlModelBuilder as ProductVariantTailoringGraphql,
-} from '../product-variant-tailoring/builders';
 import type { TProductTailoringRest, TProductTailoringGraphql } from '../types';
 
 const getLocalizedData = () => {
@@ -92,12 +92,14 @@ const createRestVariant = (id: number) => {
     .en(`Color ${id}`)
     .de(`Farbe ${id}`);
 
-  return ProductVariantTailoringRest()
+  return ProductVariantTailoringRest.random()
     .id(id)
     .images(createRestImages())
     .attributes([
-      ProductTailoringAttributeRest().name('color').value(attributeValue),
-      ProductTailoringAttributeRest()
+      ProductTailoringAttributeRest.random()
+        .name('color')
+        .value(attributeValue),
+      ProductTailoringAttributeRest.random()
         .name('size')
         .value(LocalizedString.presets.empty().en('M').de('M')),
     ]);
@@ -109,15 +111,15 @@ const createGraphqlVariant = (id: number) => {
     .en(`Color ${id}`)
     .de(`Farbe ${id}`);
 
-  return ProductVariantTailoringGraphql()
+  return ProductVariantTailoringGraphql.random()
     .id(id)
     .images(createGraphqlImages())
     .attributesRaw([
-      ProductTailoringAttributeGraphql()
+      ProductTailoringAttributeGraphql.random()
         .name('color')
         .value({ type: 'ltext', value: attributeValue })
         .__typename('RawProductAttribute'),
-      ProductTailoringAttributeGraphql()
+      ProductTailoringAttributeGraphql.random()
         .name('size')
         .value({ type: 'text', value: 'M' })
         .__typename('RawProductAttribute'),
@@ -128,7 +130,7 @@ const createGraphqlVariant = (id: number) => {
 export const restPresets = {
   basic: (): TBuilder<TProductTailoringRest> => {
     const data = getLocalizedData();
-    const tailoringData = ProductTailoringDataRest()
+    const tailoringData = ProductTailoringDataRest.random()
       .name(data.name)
       .description(data.description)
       .metaTitle(data.metaTitle)
@@ -153,7 +155,7 @@ export const restPresets = {
 export const graphqlPresets = {
   basic: (): TBuilder<TProductTailoringGraphql> => {
     const data = getLocalizedData();
-    const tailoringData = ProductTailoringDataGraphql()
+    const tailoringData = ProductTailoringDataGraphql.random()
       .nameAllLocales(data.name)
       .descriptionAllLocales(data.description)
       .metaTitleAllLocales(data.metaTitle)

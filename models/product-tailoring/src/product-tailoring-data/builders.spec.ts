@@ -26,10 +26,10 @@ describe('ProductTailoringData Builder', () => {
       expect.objectContaining({
         name: expect.any(String),
         slug: expect.any(String),
-        description: undefined,
-        metaTitle: undefined,
-        metaDescription: undefined,
-        metaKeywords: undefined,
+        description: null,
+        metaTitle: null,
+        metaDescription: null,
+        metaKeywords: null,
         variants: [],
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({

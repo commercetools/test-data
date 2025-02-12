@@ -13,7 +13,7 @@ import { createRelatedDates } from '@commercetools-test-data/utils';
 import {
   ProductTailoringDataRest,
   ProductTailoringDataGraphql,
-} from './product-tailoring-data';
+} from '../product-tailoring-data';
 import type { TProductTailoringGraphql, TProductTailoringRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

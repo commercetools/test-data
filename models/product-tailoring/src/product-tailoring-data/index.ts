@@ -1,5 +1,8 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as ProductTailoringDataPresets from './presets';
+
+export * from './product-tailoring-data-draft';
+
 export * from './types';
 
 export const ProductTailoringDataRest = {

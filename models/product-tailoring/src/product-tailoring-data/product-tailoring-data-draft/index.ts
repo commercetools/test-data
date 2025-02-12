@@ -1,6 +1,8 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as ProductTailoringDataDraftPresets from './presets';
 
+export * from './types';
+
 export const ProductTailoringDataDraftRest = {
   random: RestModelBuilder,
   presets: ProductTailoringDataDraftPresets.restPresets,

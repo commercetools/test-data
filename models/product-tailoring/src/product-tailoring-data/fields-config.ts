@@ -38,30 +38,30 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataGraphq
     postBuild: (model) => {
       const name = model.nameAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
-        : undefined;
+        : null;
       const description = model.descriptionAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(
             model.descriptionAllLocales
           )
-        : undefined;
+        : null;
       const slug = model.slugAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.slugAllLocales)
-        : undefined;
+        : null;
       const metaTitle = model.metaTitleAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(
             model.metaTitleAllLocales
           )
-        : undefined;
+        : null;
       const metaDescription = model.metaDescriptionAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(
             model.metaDescriptionAllLocales
           )
-        : undefined;
+        : null;
       const metaKeywords = model.metaKeywordsAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(
             model.metaKeywordsAllLocales
           )
-        : undefined;
+        : null;
       return {
         name,
         description,
