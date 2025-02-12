@@ -1,9 +1,9 @@
 import { Product, ProductDraft } from '@commercetools/platform-sdk';
-import {
-  TLocalizedStringDraftGraphql,
-  TReferenceGraphql,
-} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  TCtpProduct,
+  TCtpProductDraft,
+} from '@commercetools-test-data/graphql-types';
 
 export type TProduct = Product & {
   skus: Array<String>;
@@ -11,31 +11,10 @@ export type TProduct = Product & {
 
 export type TProductRest = Omit<TProduct, 'skus'>;
 
-export type TProductGraphql = TProduct & {
-  productTypeRef: TReferenceGraphql;
-  stateRef: TReferenceGraphql;
-  taxCategoryRef: TReferenceGraphql;
-  // TODO: add productSelectionRefs
-  __typename: 'Product';
-};
+export type TProductGraphql = TCtpProduct;
 
 export type TProductDraft = ProductDraft;
-export type TProductDraftGraphql = Omit<
-  TProductDraft,
-  | 'name'
-  | 'description'
-  | 'slug'
-  | 'metaTitle'
-  | 'metaDescription'
-  | 'metaKeywords'
-> & {
-  name: TLocalizedStringDraftGraphql;
-  slug: TLocalizedStringDraftGraphql;
-  description?: TLocalizedStringDraftGraphql | null;
-  metaTitle?: TLocalizedStringDraftGraphql | null;
-  metaDescription?: TLocalizedStringDraftGraphql | null;
-  metaKeywords?: TLocalizedStringDraftGraphql | null;
-};
+export type TProductDraftGraphql = TCtpProductDraft;
 
 export type TProductBuilder = TBuilder<TProduct>;
 export type TCreateProductBuilder = () => TProductBuilder;
