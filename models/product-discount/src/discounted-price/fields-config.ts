@@ -1,7 +1,10 @@
+import {
+  Money,
+  ReferenceGraphql,
+  ReferenceRest,
+} from '@commercetools-test-data/commons';
 import { fake, TModelFieldsConfig } from '@commercetools-test-data/core';
-import { ProductDiscount } from '@commercetools-test-data/product-discount';
-import * as Money from '../money';
-import { Reference } from '../reference';
+import { ProductDiscount } from '..';
 import type { TDiscountedPriceGraphql, TDiscountedPriceRest } from './types';
 
 // https://docs.commercetools.com/api/types#discountedprice
@@ -16,7 +19,7 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TDiscountedPriceRest> = {
   fields: {
     ...commonFieldsConfig,
-    discount: fake(() => Reference.presets.productDiscountReference()),
+    discount: fake(() => ReferenceRest.presets.productDiscountReference()),
   },
 };
 
@@ -29,11 +32,13 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedPriceGraphql> =
       ...commonFieldsConfig,
       __typename: 'DiscountedProductPriceValue',
       discount: fake(() => ProductDiscount.random()),
-      discountRef: fake(() => Reference.presets.productDiscountReference()),
+      discountRef: fake(() =>
+        ReferenceGraphql.presets.productDiscountReference()
+      ),
     },
     postBuild: (model) => {
       if (model.discount) {
-        model.discountRef = Reference.presets
+        model.discountRef = ReferenceGraphql.presets
           .productDiscountReference()
           .id(model.discount.id)
           .buildGraphql();

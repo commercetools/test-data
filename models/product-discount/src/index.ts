@@ -1,10 +1,18 @@
 // Export types
+export * from './discounted-price/types';
 export * from './product-discount/types';
 export * from './product-discount-value-absolute/types';
 export * from './product-discount-value-external/types';
 export * from './product-discount-value-relative/types';
 
 // Export models
+export {
+  DiscountedPriceRest,
+  DiscountedPriceGraphql,
+  DiscountedPriceDraftRest,
+  DiscountedPriceDraftGraphql,
+} from './discounted-price';
+
 export * as ProductDiscount from './product-discount';
 export * as ProductDiscountDraft from './product-discount/product-discount-draft';
 
