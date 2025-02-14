@@ -17,8 +17,8 @@
   "keywords": ["javascript", "typescript", "test-data"],
   "license": "MIT",
   "dependencies": {
-    "@babel/runtime": "7.26.0",
-    "@babel/runtime-corejs3": "7.26.0",
+    "@babel/runtime": "7.26.9",
+    "@babel/runtime-corejs3": "7.26.9",
     "lodash": "4.17.21",
     "squirrelly": "9.1.0",
     "prompts": "2.4.2",
