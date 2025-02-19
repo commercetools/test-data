@@ -1,10 +1,10 @@
-import { DiscountedPriceDraftRest, DiscountedPriceDraftGraphql } from './index';
+import { DiscountedPriceRest, DiscountedPriceGraphql } from '..';
 
-describe('DiscountedPriceDraft Builder', () => {
-  it('should build properties for the discounted price draft REST representation', () => {
-    const restDraftModel = DiscountedPriceDraftRest.random().build();
+describe('DiscountedPrice Builder', () => {
+  it('should build properties for the discounted price REST representation', () => {
+    const restModel = DiscountedPriceRest.random().build();
 
-    expect(restDraftModel).toEqual(
+    expect(restModel).toEqual(
       expect.objectContaining({
         value: expect.objectContaining({
           centAmount: expect.any(Number),
@@ -18,11 +18,12 @@ describe('DiscountedPriceDraft Builder', () => {
     );
   });
 
-  it('should build properties for the discounted price draft GraphQL representation', () => {
-    const graphqlDraftModel = DiscountedPriceDraftGraphql.random().build();
+  it('should build properties for the discounted price GraphQL representation', () => {
+    const graphqlModel = DiscountedPriceGraphql.random().build();
 
-    expect(graphqlDraftModel).toEqual(
+    expect(graphqlModel).toEqual(
       expect.objectContaining({
+        __typename: 'DiscountedProductPriceValue',
         value: expect.objectContaining({
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
@@ -30,6 +31,10 @@ describe('DiscountedPriceDraft Builder', () => {
         }),
         discount: expect.objectContaining({
           id: expect.any(String),
+          __typename: 'ProductDiscount',
+        }),
+        discountRef: expect.objectContaining({
+          id: graphqlModel.discount?.id,
           typeId: 'product-discount',
           __typename: 'Reference',
         }),

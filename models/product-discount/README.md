@@ -83,3 +83,24 @@ const productDiscountValueRelative =
 const productDiscountValueRelativeDraft =
   ProductDiscountValueRelativeDraft.random().build<TProductDiscountValueRelativeDraft>();
 ```
+
+## `DiscountedPrice`
+
+```ts
+import {
+  DiscountedPriceRest,
+  DiscountedPriceGraphql,
+  DiscountedPriceDraftRest,
+  DiscountedPriceDraftGraphql,
+  type TDiscountedPriceRest,
+  type TDiscountedPriceGraphql,
+  type TDiscountedPriceDraftRest,
+  type TDiscountedPriceDraftGraphql,
+} from '@commercetools-test-data/product-discount';
+
+const DiscountedPriceRest = DiscountedPriceRest.random().build();
+const DiscountedPriceGraphql = DiscountedPriceGraphql.random().build();
+const DiscountedPriceDraftRest = DiscountedPriceDraftRest.random().build();
+const DiscountedPriceDraftGraphql =
+  DiscountedPriceDraftGraphql.random().build();
+```
