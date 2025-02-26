@@ -1,5 +1,19 @@
 # @commercetools-test-data/product-discount
 
+## 10.13.0
+
+### Patch Changes
+
+- [#751](https://github.com/commercetools/test-data/pull/751) [`1ab50ac`](https://github.com/commercetools/test-data/commit/1ab50ac8a071bbe8acbce1160ff6a7248640a9b3) Thanks [@ragafus](https://github.com/ragafus)! - Move unexported DiscountedPriceRest, DiscountedPriceGraphql, DiscountedPriceDraftRest and DiscountedPriceDraftGraphql from @commercetools-test-data/commons to @commercetools-test-data/product-discount
+
+- Updated dependencies [[`1ab50ac`](https://github.com/commercetools/test-data/commit/1ab50ac8a071bbe8acbce1160ff6a7248640a9b3)]:
+  - @commercetools-test-data/commons@10.13.0
+  - @commercetools-test-data/category@10.13.0
+  - @commercetools-test-data/product-type@10.13.0
+  - @commercetools-test-data/core@10.13.0
+  - @commercetools-test-data/graphql-types@10.13.0
+  - @commercetools-test-data/utils@10.13.0
+
 ## 10.12.0
 
 ### Patch Changes
