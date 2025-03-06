@@ -1,5 +1,17 @@
 # @commercetools-test-data/commons
 
+## 10.14.0
+
+### Patch Changes
+
+- [#757](https://github.com/commercetools/test-data/pull/757) [`9205f34`](https://github.com/commercetools/test-data/commit/9205f34d9409d5bfbb840bccd20bde3da594669f) Thanks [@ragafus](https://github.com/ragafus)! - Fix Money and HighPrecisionMoney GraphQL models
+
+- Updated dependencies []:
+  - @commercetools-test-data/product-discount@10.14.0
+  - @commercetools-test-data/core@10.14.0
+  - @commercetools-test-data/graphql-types@10.14.0
+  - @commercetools-test-data/utils@10.14.0
+
 ## 10.13.0
 
 ### Patch Changes
