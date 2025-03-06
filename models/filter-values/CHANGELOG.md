@@ -1,5 +1,14 @@
 # @commercetools-test-data/filter-values
 
+## 10.14.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.14.0
+  - @commercetools-test-data/graphql-types@10.14.0
+  - @commercetools-test-data/utils@10.14.0
+
 ## 10.13.0
 
 ### Patch Changes

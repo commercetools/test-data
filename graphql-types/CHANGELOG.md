@@ -1,5 +1,7 @@
 # @commercetools-test-data/graphql-types
 
+## 10.14.0
+
 ## 10.13.0
 
 ## 10.12.0

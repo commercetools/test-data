@@ -1,5 +1,21 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.14.0
+
+### Minor Changes
+
+- [#753](https://github.com/commercetools/test-data/pull/753) [`a252c8f`](https://github.com/commercetools/test-data/commit/a252c8f1fbd536e2b6144abf299b77483b8413b4) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Added inventory entries for some of the B2C products
+
+### Patch Changes
+
+- Updated dependencies [[`9205f34`](https://github.com/commercetools/test-data/commit/9205f34d9409d5bfbb840bccd20bde3da594669f)]:
+  - @commercetools-test-data/commons@10.14.0
+  - @commercetools-test-data/channel@10.14.0
+  - @commercetools-test-data/product@10.14.0
+  - @commercetools-test-data/core@10.14.0
+  - @commercetools-test-data/graphql-types@10.14.0
+  - @commercetools-test-data/utils@10.14.0
+
 ## 10.13.0
 
 ### Patch Changes
