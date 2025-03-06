@@ -1,5 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
-import { TMoneyDraftGraphql } from '../../money';
+import { MoneyDraft, TMoneyDraftGraphql } from '../../money';
 import type { TPriceDraft, TPriceDraftGraphql } from '../types';
 
 const transformers = {
@@ -32,12 +32,17 @@ const transformers = {
       'discounted',
       'custom',
     ],
-    replaceFields: ({ fields }) => ({
-      ...fields,
-      value: {
-        centPrecision: fields.value as TMoneyDraftGraphql,
-      },
-    }),
+    replaceFields: ({ fields }) => {
+      return {
+        ...fields,
+        value: {
+          centPrecision: MoneyDraft.random()
+            .centAmount(fields.value.centAmount ?? 0)
+            .currencyCode(fields.value.currencyCode)
+            .buildGraphql<TMoneyDraftGraphql>(),
+        },
+      } as TPriceDraftGraphql;
+    },
   }),
 };
 

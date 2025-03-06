@@ -1344,6 +1344,9 @@ importers:
       '@commercetools-test-data/customer-group':
         specifier: 10.13.0
         version: link:../customer-group
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.13.0
+        version: link:../../graphql-types
       '@commercetools-test-data/product':
         specifier: 10.13.0
         version: link:../product

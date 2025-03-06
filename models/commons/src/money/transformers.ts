@@ -1,4 +1,5 @@
 import { Transformer } from '@commercetools-test-data/core';
+import { faker } from '@faker-js/faker';
 import type { TMoney, TMoneyGraphql } from './types';
 
 const transformers = {
@@ -11,6 +12,8 @@ const transformers = {
   graphql: Transformer<TMoney, TMoneyGraphql>('graphql', {
     buildFields: [],
     addFields: () => ({
+      type: 'centPrecision',
+      fractionDigits: faker.number.int({ min: 1, max: 3 }),
       __typename: 'Money',
     }),
   }),

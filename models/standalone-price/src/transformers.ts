@@ -114,7 +114,7 @@ const transformers = {
 
       const mainCurrency = fields.value.currencyCode;
 
-      const adjustedFields: TStandalonePriceGraphql = {
+      const adjustedFields = {
         ...fields,
         __typename: 'StandalonePrice' as const,
         customerGroupRef,
@@ -140,7 +140,7 @@ const transformers = {
             }
           : null,
         discounted: fields.discounted || null,
-      };
+      } as TStandalonePriceGraphql;
 
       return adjustedFields;
     },
