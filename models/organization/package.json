@@ -24,6 +24,6 @@
     "@commercetools-test-data/graphql-types": "10.14.0",
     "@commercetools-test-data/user": "10.14.0",
     "@commercetools-test-data/utils": "10.14.0",
-    "@commercetools/platform-sdk": "7.25.1"
+    "@commercetools/platform-sdk": "8.5.0"
   }
 }
