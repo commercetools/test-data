@@ -24,18 +24,18 @@ const heavyDutySoilCompactorsRollers = (): TCategoryDraftBuilder =>
         ['de-DE']('Verdichter und Walzen für schwere Bodenaufgaben')
         ['it-IT']('Compattatori e rulli per compiti pesanti su suolo')
         ['nl-NL']('Verdichters en walsen voor zware bodemtaken')
-        ['fr-FR'](
-          'Compacteurs et rouleaux pour des tâches de sol haute résistance'
-        )
+        [
+          'fr-FR'
+        ]('Compacteurs et rouleaux pour des tâches de sol haute résistance')
         ['en-AU']('Compactors and rollers for heavy-duty soil tasks')
-        ['es-ES'](
-          'Compactadores y rodillos para tareas de suelo de servicio pesado'
-        )
+        [
+          'es-ES'
+        ]('Compactadores y rodillos para tareas de suelo de servicio pesado')
         ['en-GB']('Compactors and rollers for heavy-duty soil tasks')
         ['en-NZ']('Compactors and rollers for heavy-duty soil tasks')
-        ['pt-PT'](
-          'Compactadores e rolos para tarefas pesadas de compactação de solo'
-        )
+        [
+          'pt-PT'
+        ]('Compactadores e rolos para tarefas pesadas de compactação de solo')
         ['en-US']('Compactors and rollers for heavy-duty soil tasks')
     )
     .slug(

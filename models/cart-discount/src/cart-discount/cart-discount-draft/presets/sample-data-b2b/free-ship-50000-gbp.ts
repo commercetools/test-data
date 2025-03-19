@@ -31,13 +31,13 @@ const freeShip50000Gbp = (): TCartDiscountDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Kostenloser Versand bei einer Bestellung von mindestens 50000 GBP'
-        )
+        [
+          'de-DE'
+        ]('Kostenloser Versand bei einer Bestellung von mindestens 50000 GBP')
         ['it-IT']('Spedizione gratuita per ordini di almeno 50000 GBP')
-        ['nl-NL'](
-          'Gratis verzending bij een bestelling van ten minste 50000 GBP'
-        )
+        [
+          'nl-NL'
+        ]('Gratis verzending bij een bestelling van ten minste 50000 GBP')
         ['fr-FR']("Livraison gratuite pour toute commande d'au moins 50000 GBP")
         ['en-AU']('Free shipping when your order is at least 50000 GBP')
         ['es-ES']('Envío gratuito en pedidos de al menos 50000 GBP')

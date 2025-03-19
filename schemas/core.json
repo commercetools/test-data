@@ -251,49 +251,6 @@
         "possibleTypes": null
       },
       {
-        "kind": "OBJECT",
-        "name": "AzureBlobStorageContainer",
-        "description": "Azure Blob Storage container config",
-        "fields": [
-          {
-            "name": "baseUrl",
-            "description": "Project part of the object path on s3",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "name",
-            "description": "Public bucket url, without the project part",
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
-        "inputFields": null,
-        "interfaces": [],
-        "enumValues": null,
-        "possibleTypes": null
-      },
-      {
         "kind": "SCALAR",
         "name": "Boolean",
         "description": "The `Boolean` scalar type represents `true` or `false`.",
@@ -1631,46 +1588,6 @@
         "description": null,
         "fields": [
           {
-            "name": "categoriesShardConfig",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "ESClusterShardConfig",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "categoryComparison",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "ESAlternativeComparisonConfig",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "clusterKey",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "platformProducts",
             "description": null,
             "args": [],
@@ -1683,48 +1600,12 @@
             "deprecationReason": null
           },
           {
-            "name": "productComparison",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "ESAlternativeComparisonConfig",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "products",
             "description": null,
             "args": [],
             "type": {
               "kind": "OBJECT",
               "name": "ProductsClusterConfig",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "productsShardConfig",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "OBJECT",
-              "name": "ESClusterShardConfig",
-              "ofType": null
-            },
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "replicateToClusterKey",
-            "description": null,
-            "args": [],
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
               "ofType": null
             },
             "isDeprecated": false,
@@ -1743,46 +1624,6 @@
         "fields": null,
         "inputFields": [
           {
-            "name": "categoriesShardConfig",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "ESClusterShardConfigInput",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "categoryComparison",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "ESAlternativeComparisonConfigInput",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "clusterKey",
-            "description": null,
-            "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "platformProducts",
             "description": null,
             "type": {
@@ -1795,47 +1636,11 @@
             "deprecationReason": null
           },
           {
-            "name": "productComparison",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "ESAlternativeComparisonConfigInput",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
             "name": "products",
             "description": null,
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "ProductsClusterConfigInput",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "productsShardConfig",
-            "description": null,
-            "type": {
-              "kind": "INPUT_OBJECT",
-              "name": "ESClusterShardConfigInput",
-              "ofType": null
-            },
-            "defaultValue": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "replicateToClusterKey",
-            "description": null,
-            "type": {
-              "kind": "SCALAR",
-              "name": "String",
               "ofType": null
             },
             "defaultValue": null,
@@ -2233,11 +2038,6 @@
           {
             "kind": "OBJECT",
             "name": "AwsContainer",
-            "ofType": null
-          },
-          {
-            "kind": "OBJECT",
-            "name": "AzureBlobStorageContainer",
             "ofType": null
           },
           {
@@ -6606,6 +6406,18 @@
         "name": "StoreLimits",
         "description": null,
         "fields": [
+          {
+            "name": "maxCartDiscountsPerStore",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Long",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
           {
             "name": "maxInventorySupplyChannelsPerStore",
             "description": null,

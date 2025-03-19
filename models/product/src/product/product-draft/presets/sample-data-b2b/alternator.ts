@@ -53,13 +53,13 @@ const alternator = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Lädt die Batterie und versorgt das elektrische System mit Strom.'
-        )
+        [
+          'de-DE'
+        ]('Lädt die Batterie und versorgt das elektrische System mit Strom.')
         ['it-IT']('Carica la batteria e alimenta il sistema elettrico.')
-        ['nl-NL'](
-          'Laadt de accu op en voorziet het elektrische systeem van stroom.'
-        )
+        [
+          'nl-NL'
+        ]('Laadt de accu op en voorziet het elektrische systeem van stroom.')
         ['fr-FR']('Charge la batterie et alimente le système électrique.')
         ['es-ES']('Carga la batería y alimenta el sistema eléctrico.')
         ['pt-PT']('Carrega a bateria e alimenta o sistema elétrico.')

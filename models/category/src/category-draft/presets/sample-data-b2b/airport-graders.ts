@@ -29,15 +29,15 @@ const airportGraders = (): TCategoryDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Motorgrader, die für den Flughafenbau geeignet sind')
-        ['it-IT'](
-          'Livellatrici motorizzate adatte per la costruzione di aeroporti'
-        )
+        [
+          'it-IT'
+        ]('Livellatrici motorizzate adatte per la costruzione di aeroporti')
         ['nl-NL']('Motorgraders geschikt voor luchthavenbouw')
         ['fr-FR']('Niveleuses adaptées à la construction aéroportuaire')
         ['en-AU']('Motor graders suitable for airport construction')
-        ['es-ES'](
-          'Motoniveladoras adecuadas para la construcción de aeropuertos'
-        )
+        [
+          'es-ES'
+        ]('Motoniveladoras adecuadas para la construcción de aeropuertos')
         ['en-GB']('Motor graders suitable for airport construction')
         ['en-NZ']('Motor graders suitable for airport construction')
         ['pt-PT']('Motoniveladoras adequadas para construção de aeroportos')

@@ -54,36 +54,36 @@ const n123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Steinbruchlader für effiziente Materialverarbeitung im Bergbau und Bauwesen.'
-        )
-        ['it-IT'](
-          'Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.'
-        )
-        ['nl-NL'](
-          'Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.'
-        )
-        ['fr-FR'](
-          "Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction."
-        )
-        ['en-AU'](
-          'Robust quarry loader designed for efficient material handling in mining and construction.'
-        )
-        ['es-ES'](
-          'Cargador de cantera resistente diseñado para la manipulación eficiente de materiales en minería y construcción.'
-        )
-        ['en-GB'](
-          'Robust quarry loader designed for efficient material handling in mining and construction.'
-        )
-        ['en-NZ'](
-          'Robust quarry loader designed for efficient material handling in mining and construction.'
-        )
-        ['pt-PT'](
-          'Carregadeira robusta para pedreiras projetada para manuseio eficiente de materiais em mineração e construção.'
-        )
-        ['en-US'](
-          'Robust quarry loader designed for efficient material handling in mining and construction.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Steinbruchlader für effiziente Materialverarbeitung im Bergbau und Bauwesen.')
+        [
+          'it-IT'
+        ]('Caricatore robusto per cave progettato per la manipolazione efficiente di materiali in miniere e costruzioni.')
+        [
+          'nl-NL'
+        ]('Robuuste steengroeve lader ontworpen voor efficiënte materiaalhantering in mijnbouw en bouw.')
+        [
+          'fr-FR'
+        ]("Chargeur de carrière robuste conçu pour la manipulation efficace des matériaux dans l'exploitation minière et la construction.")
+        [
+          'en-AU'
+        ]('Robust quarry loader designed for efficient material handling in mining and construction.')
+        [
+          'es-ES'
+        ]('Cargador de cantera resistente diseñado para la manipulación eficiente de materiales en minería y construcción.')
+        [
+          'en-GB'
+        ]('Robust quarry loader designed for efficient material handling in mining and construction.')
+        [
+          'en-NZ'
+        ]('Robust quarry loader designed for efficient material handling in mining and construction.')
+        [
+          'pt-PT'
+        ]('Carregadeira robusta para pedreiras projetada para manuseio eficiente de materiais em mineração e construção.')
+        [
+          'en-US'
+        ]('Robust quarry loader designed for efficient material handling in mining and construction.')
     )
     .slug(
       LocalizedStringDraft.presets

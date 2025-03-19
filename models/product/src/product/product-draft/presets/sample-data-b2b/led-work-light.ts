@@ -53,24 +53,24 @@ const ledWorkLight = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Bietet Beleuchtung für Arbeiten bei Nacht oder bei schwachem Licht.'
-        )
-        ['it-IT'](
-          'Fornisce illuminazione per lavori notturni o in condizioni di scarsa luce.'
-        )
-        ['nl-NL'](
-          'Zorgt voor verlichting voor nachtwerk of werk bij weinig licht.'
-        )
-        ['fr-FR'](
-          'Fournit un éclairage pour le travail de nuit ou en faible luminosité.'
-        )
-        ['es-ES'](
-          'Proporciona iluminación para trabajar de noche o en condiciones de poca luz.'
-        )
-        ['pt-PT'](
-          'Fornece iluminação para trabalho noturno ou em condições de pouca luz.'
-        )
+        [
+          'de-DE'
+        ]('Bietet Beleuchtung für Arbeiten bei Nacht oder bei schwachem Licht.')
+        [
+          'it-IT'
+        ]('Fornisce illuminazione per lavori notturni o in condizioni di scarsa luce.')
+        [
+          'nl-NL'
+        ]('Zorgt voor verlichting voor nachtwerk of werk bij weinig licht.')
+        [
+          'fr-FR'
+        ]('Fournit un éclairage pour le travail de nuit ou en faible luminosité.')
+        [
+          'es-ES'
+        ]('Proporciona iluminación para trabajar de noche o en condiciones de poca luz.')
+        [
+          'pt-PT'
+        ]('Fornece iluminação para trabalho noturno ou em condições de pouca luz.')
         ['en-US']('Provides illumination for night-time or low-light work.')
         ['en-GB']('Provides illumination for night-time or low-light work.')
         ['en-AU']('Provides illumination for night-time or low-light work.')

@@ -26,9 +26,9 @@ const heavyDutyConstructionCranes = (): TCategoryDraftBuilder =>
         ['nl-NL']('Kranen ontworpen voor zware bouwtaken')
         ['fr-FR']('Grues conçues pour des tâches de construction lourdes')
         ['en-AU']('Cranes designed for heavy-duty construction tasks')
-        ['es-ES'](
-          'Gruas diseñadas para tareas de construcción de servicio pesado'
-        )
+        [
+          'es-ES'
+        ]('Gruas diseñadas para tareas de construcción de servicio pesado')
         ['en-GB']('Cranes designed for heavy-duty construction tasks')
         ['en-NZ']('Cranes designed for heavy-duty construction tasks')
         ['pt-PT']('Guindastes projetados para tarefas pesadas de construção')

@@ -54,36 +54,36 @@ const f890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Holzlader mit speziellen Funktionen für eine effiziente Handhabung von Baumstämmen in Forstanwendungen.'
-        )
-        ['it-IT'](
-          'Caricatore di tronchi versatile con caratteristiche specializzate per la manipolazione efficiente di tronchi in applicazioni forestali.'
-        )
-        ['nl-NL'](
-          'Veelzijdige boomlader met gespecialiseerde functies voor efficiënte boomstamhantering in bosbouwtoepassingen.'
-        )
-        ['fr-FR'](
-          'Chargeur de bûches polyvalent avec des fonctionnalités spécialisées pour une manipulation efficace des grumes dans les applications forestières.'
-        )
-        ['en-AU'](
-          'Versatile log loader with specialized features for efficient log handling in forestry applications.'
-        )
-        ['es-ES'](
-          'Cargador de troncos versátil con características especializadas para la manipulación eficiente de troncos en aplicaciones forestales.'
-        )
-        ['en-GB'](
-          'Versatile log loader with specialized features for efficient log handling in forestry applications.'
-        )
-        ['en-NZ'](
-          'Versatile log loader with specialized features for efficient log handling in forestry applications.'
-        )
-        ['pt-PT'](
-          'Carregadeira de toras versátil com características especializadas para manuseio eficiente de toras em aplicações florestais.'
-        )
-        ['en-US'](
-          'Versatile log loader with specialized features for efficient log handling in forestry applications.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Holzlader mit speziellen Funktionen für eine effiziente Handhabung von Baumstämmen in Forstanwendungen.')
+        [
+          'it-IT'
+        ]('Caricatore di tronchi versatile con caratteristiche specializzate per la manipolazione efficiente di tronchi in applicazioni forestali.')
+        [
+          'nl-NL'
+        ]('Veelzijdige boomlader met gespecialiseerde functies voor efficiënte boomstamhantering in bosbouwtoepassingen.')
+        [
+          'fr-FR'
+        ]('Chargeur de bûches polyvalent avec des fonctionnalités spécialisées pour une manipulation efficace des grumes dans les applications forestières.')
+        [
+          'en-AU'
+        ]('Versatile log loader with specialized features for efficient log handling in forestry applications.')
+        [
+          'es-ES'
+        ]('Cargador de troncos versátil con características especializadas para la manipulación eficiente de troncos en aplicaciones forestales.')
+        [
+          'en-GB'
+        ]('Versatile log loader with specialized features for efficient log handling in forestry applications.')
+        [
+          'en-NZ'
+        ]('Versatile log loader with specialized features for efficient log handling in forestry applications.')
+        [
+          'pt-PT'
+        ]('Carregadeira de toras versátil com características especializadas para manuseio eficiente de toras em aplicações florestais.')
+        [
+          'en-US'
+        ]('Versatile log loader with specialized features for efficient log handling in forestry applications.')
     )
     .slug(
       LocalizedStringDraft.presets

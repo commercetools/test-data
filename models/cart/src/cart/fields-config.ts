@@ -70,6 +70,7 @@ const commonFieldsConfig = {
   lastModifiedBy: fake(() => ClientLogging.random()),
   cartState: oneOf(...Object.values(cartState)),
   paymentInfo: null,
+  discountTypeCombination: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TCartRest> = {

@@ -54,36 +54,36 @@ const s567Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Amphibienbagger mit hoher Kapazität für effiziente Aushubanwendungen an Land und im Wasser.'
-        )
-        ['it-IT'](
-          'Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.'
-        )
-        ['fr-FR'](
-          "Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau."
-        )
-        ['en-AU'](
-          'High-capacity amphibious excavator for efficient land and water excavation applications.'
-        )
-        ['es-ES'](
-          'Excavadora anfibia de alta capacidad para aplicaciones eficientes de excavación en tierra y agua.'
-        )
-        ['en-GB'](
-          'High-capacity amphibious excavator for efficient land and water excavation applications.'
-        )
-        ['en-NZ'](
-          'High-capacity amphibious excavator for efficient land and water excavation applications.'
-        )
-        ['pt-PT'](
-          'Escavadeira anfíbia de alta capacidade para aplicações eficientes de escavação em terra e água.'
-        )
-        ['en-US'](
-          'High-capacity amphibious excavator for efficient land and water excavation applications.'
-        )
+        [
+          'de-DE'
+        ]('Amphibienbagger mit hoher Kapazität für effiziente Aushubanwendungen an Land und im Wasser.')
+        [
+          'it-IT'
+        ]('Escavatore anfibio ad alta capacità per applicazioni efficienti di scavo in terra e in acqua.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits amfibische graafmachine voor efficiënte land- en watergraaf toepassingen.')
+        [
+          'fr-FR'
+        ]("Excavateur amphibie haute capacité pour des applications d'excavation efficaces sur terre et dans l'eau.")
+        [
+          'en-AU'
+        ]('High-capacity amphibious excavator for efficient land and water excavation applications.')
+        [
+          'es-ES'
+        ]('Excavadora anfibia de alta capacidad para aplicaciones eficientes de excavación en tierra y agua.')
+        [
+          'en-GB'
+        ]('High-capacity amphibious excavator for efficient land and water excavation applications.')
+        [
+          'en-NZ'
+        ]('High-capacity amphibious excavator for efficient land and water excavation applications.')
+        [
+          'pt-PT'
+        ]('Escavadeira anfíbia de alta capacidade para aplicações eficientes de escavação em terra e água.')
+        [
+          'en-US'
+        ]('High-capacity amphibious excavator for efficient land and water excavation applications.')
     )
     .slug(
       LocalizedStringDraft.presets

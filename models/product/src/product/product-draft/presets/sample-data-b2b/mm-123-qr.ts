@@ -55,36 +55,36 @@ const mm123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Radbagger mit fortschrittlichen Funktionen für effiziente Ausgrabungen auf Baustellen.'
-        )
-        ['it-IT'](
-          'Escavatore su ruote versatile con caratteristiche avanzate per scavi efficienti nei cantieri edili.'
-        )
-        ['nl-NL'](
-          'Veelzijdige wiellader met geavanceerde functies voor efficiënte graafwerkzaamheden op bouwplaatsen.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues polyvalente avec des fonctionnalités avancées pour une excavation efficace sur le chantier de construction.'
-        )
-        ['en-AU'](
-          'Versatile wheeled excavator with advanced features for efficient construction site excavation.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas versátil con características avanzadas para excavaciones eficientes en el sitio de construcción.'
-        )
-        ['en-GB'](
-          'Versatile wheeled excavator with advanced features for efficient construction site excavation.'
-        )
-        ['en-NZ'](
-          'Versatile wheeled excavator with advanced features for efficient construction site excavation.'
-        )
-        ['pt-PT'](
-          'Escavadeira com rodas versátil com recursos avançados para escavação eficiente em canteiros de obras.'
-        )
-        ['en-US'](
-          'Versatile wheeled excavator with advanced features for efficient construction site excavation.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Radbagger mit fortschrittlichen Funktionen für effiziente Ausgrabungen auf Baustellen.')
+        [
+          'it-IT'
+        ]('Escavatore su ruote versatile con caratteristiche avanzate per scavi efficienti nei cantieri edili.')
+        [
+          'nl-NL'
+        ]('Veelzijdige wiellader met geavanceerde functies voor efficiënte graafwerkzaamheden op bouwplaatsen.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues polyvalente avec des fonctionnalités avancées pour une excavation efficace sur le chantier de construction.')
+        [
+          'en-AU'
+        ]('Versatile wheeled excavator with advanced features for efficient construction site excavation.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas versátil con características avanzadas para excavaciones eficientes en el sitio de construcción.')
+        [
+          'en-GB'
+        ]('Versatile wheeled excavator with advanced features for efficient construction site excavation.')
+        [
+          'en-NZ'
+        ]('Versatile wheeled excavator with advanced features for efficient construction site excavation.')
+        [
+          'pt-PT'
+        ]('Escavadeira com rodas versátil com recursos avançados para escavação eficiente em canteiros de obras.')
+        [
+          'en-US'
+        ]('Versatile wheeled excavator with advanced features for efficient construction site excavation.')
     )
     .slug(
       LocalizedStringDraft.presets

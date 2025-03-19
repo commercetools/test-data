@@ -54,36 +54,36 @@ const yy123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Blasthole-Bohrer für effizientes Bohren in Bergbauoperationen.'
-        )
-        ['it-IT'](
-          'Potente trapano per fori di miniera progettato per trapanazioni efficienti in operazioni minerarie.'
-        )
-        ['nl-NL'](
-          'Krachtige boorgatboor ontworpen voor efficiënt boren in mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Forage de trou de mine puissant conçu pour le forage efficace dans les opérations minières.'
-        )
-        ['en-AU'](
-          'Powerful blasthole drill designed for efficient drilling in mining operations.'
-        )
-        ['es-ES'](
-          'Perforadora de agujeros de voladura potente diseñada para perforar de manera eficiente en operaciones mineras.'
-        )
-        ['en-GB'](
-          'Powerful blasthole drill designed for efficient drilling in mining operations.'
-        )
-        ['en-NZ'](
-          'Powerful blasthole drill designed for efficient drilling in mining operations.'
-        )
-        ['pt-PT'](
-          'Perfuratriz potente projetada para perfuração eficiente em operações de mineração.'
-        )
-        ['en-US'](
-          'Powerful blasthole drill designed for efficient drilling in mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Blasthole-Bohrer für effizientes Bohren in Bergbauoperationen.')
+        [
+          'it-IT'
+        ]('Potente trapano per fori di miniera progettato per trapanazioni efficienti in operazioni minerarie.')
+        [
+          'nl-NL'
+        ]('Krachtige boorgatboor ontworpen voor efficiënt boren in mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Forage de trou de mine puissant conçu pour le forage efficace dans les opérations minières.')
+        [
+          'en-AU'
+        ]('Powerful blasthole drill designed for efficient drilling in mining operations.')
+        [
+          'es-ES'
+        ]('Perforadora de agujeros de voladura potente diseñada para perforar de manera eficiente en operaciones mineras.')
+        [
+          'en-GB'
+        ]('Powerful blasthole drill designed for efficient drilling in mining operations.')
+        [
+          'en-NZ'
+        ]('Powerful blasthole drill designed for efficient drilling in mining operations.')
+        [
+          'pt-PT'
+        ]('Perfuratriz potente projetada para perfuração eficiente em operações de mineração.')
+        [
+          'en-US'
+        ]('Powerful blasthole drill designed for efficient drilling in mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -54,36 +54,36 @@ const oo789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Radbagger mit speziellen Funktionen für Präzision in Bergbauoperationen.'
-        )
-        ['it-IT'](
-          'Escavatore avanzato su ruote con caratteristiche specializzate per precisione nelle operazioni minerarie.'
-        )
-        ['nl-NL'](
-          'Geavanceerde wiellader met gespecialiseerde functies voor precisie in mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues avancée avec des fonctionnalités spécialisées pour la précision dans les opérations minières.'
-        )
-        ['en-AU'](
-          'Advanced wheeled excavator with specialized features for precision in mining operations.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas avanzada con características especializadas para la precisión en operaciones mineras.'
-        )
-        ['en-GB'](
-          'Advanced wheeled excavator with specialized features for precision in mining operations.'
-        )
-        ['en-NZ'](
-          'Advanced wheeled excavator with specialized features for precision in mining operations.'
-        )
-        ['pt-PT'](
-          'Escavadeira com rodas avançada com recursos especializados para precisão em operações de mineração.'
-        )
-        ['en-US'](
-          'Advanced wheeled excavator with specialized features for precision in mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Radbagger mit speziellen Funktionen für Präzision in Bergbauoperationen.')
+        [
+          'it-IT'
+        ]('Escavatore avanzato su ruote con caratteristiche specializzate per precisione nelle operazioni minerarie.')
+        [
+          'nl-NL'
+        ]('Geavanceerde wiellader met gespecialiseerde functies voor precisie in mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues avancée avec des fonctionnalités spécialisées pour la précision dans les opérations minières.')
+        [
+          'en-AU'
+        ]('Advanced wheeled excavator with specialized features for precision in mining operations.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas avanzada con características especializadas para la precisión en operaciones mineras.')
+        [
+          'en-GB'
+        ]('Advanced wheeled excavator with specialized features for precision in mining operations.')
+        [
+          'en-NZ'
+        ]('Advanced wheeled excavator with specialized features for precision in mining operations.')
+        [
+          'pt-PT'
+        ]('Escavadeira com rodas avançada com recursos especializados para precisão em operações de mineração.')
+        [
+          'en-US'
+        ]('Advanced wheeled excavator with specialized features for precision in mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

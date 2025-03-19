@@ -55,18 +55,18 @@ const pinAndBushingKit = (): TProductDraftBuilder =>
         .empty()
         ['de-DE']('Für Gelenke in Armen und Schaufeln von Baggern und Ladern.')
         ['it-IT']('Per giunti su bracci e benne di escavatori e caricatrici.')
-        ['nl-NL'](
-          'Voor gewrichten in armen en bakken van graafmachines en laders.'
-        )
-        ['fr-FR'](
-          'Pour les articulations des bras et des godets des excavatrices et des chargeurs.'
-        )
-        ['es-ES'](
-          'Para articulaciones en brazos y cucharones de excavadoras y cargadoras.'
-        )
-        ['pt-PT'](
-          'Para articulações em braços e baldes de escavadeiras e carregadeiras.'
-        )
+        [
+          'nl-NL'
+        ]('Voor gewrichten in armen en bakken van graafmachines en laders.')
+        [
+          'fr-FR'
+        ]('Pour les articulations des bras et des godets des excavatrices et des chargeurs.')
+        [
+          'es-ES'
+        ]('Para articulaciones en brazos y cucharones de excavadoras y cargadoras.')
+        [
+          'pt-PT'
+        ]('Para articulações em braços e baldes de escavadeiras e carregadeiras.')
         ['en-US']('For joints in arms and buckets of excavators and loaders.')
         ['en-GB']('For joints in arms and buckets of excavators and loaders.')
         ['en-AU']('For joints in arms and buckets of excavators and loaders.')

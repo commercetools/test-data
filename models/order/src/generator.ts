@@ -82,6 +82,7 @@ const generator = Generator<TOrder>({
     createdBy: fake(() => ClientLogging.random()),
     lastModifiedAt: fake(getNewerDate),
     lastModifiedBy: fake(() => ClientLogging.random()),
+    discountTypeCombination: null,
   },
 });
 

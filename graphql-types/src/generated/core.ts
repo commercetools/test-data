@@ -69,15 +69,6 @@ export type TCoreAwsContainer = {
   projectPrefix: Scalars['String']['output'];
 };
 
-/** Azure Blob Storage container config */
-export type TCoreAzureBlobStorageContainer = {
-  __typename?: 'AzureBlobStorageContainer';
-  /** Project part of the object path on s3 */
-  baseUrl: Scalars['String']['output'];
-  /** Public bucket url, without the project part */
-  name: Scalars['String']['output'];
-};
-
 export enum TCoreBusinessRole {
   /** Architect role. */
   Architect = 'Architect',
@@ -263,25 +254,13 @@ export type TCoreEsAlternativeComparisonConfigInput = {
 
 export type TCoreEsCluster = {
   __typename?: 'ESCluster';
-  categoriesShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  categoryComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
-  clusterKey: Scalars['String']['output'];
   platformProducts?: Maybe<TCorePlatformProductsClusterConfig>;
-  productComparison?: Maybe<TCoreEsAlternativeComparisonConfig>;
   products?: Maybe<TCoreProductsClusterConfig>;
-  productsShardConfig?: Maybe<TCoreEsClusterShardConfig>;
-  replicateToClusterKey?: Maybe<Scalars['String']['output']>;
 };
 
 export type TCoreEsClusterInput = {
-  categoriesShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  categoryComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
-  clusterKey: Scalars['String']['input'];
   platformProducts?: InputMaybe<TCorePlatformProductsClusterConfigInput>;
-  productComparison?: InputMaybe<TCoreEsAlternativeComparisonConfigInput>;
   products?: InputMaybe<TCoreProductsClusterConfigInput>;
-  productsShardConfig?: InputMaybe<TCoreEsClusterShardConfigInput>;
-  replicateToClusterKey?: InputMaybe<Scalars['String']['input']>;
 };
 
 export type TCoreEsClusterShardConfig = {
@@ -327,10 +306,7 @@ export type TCoreLocalizedString = {
   value: Scalars['String']['output'];
 };
 
-export type TCoreMediaContainer =
-  | TCoreAwsContainer
-  | TCoreAzureBlobStorageContainer
-  | TCorePublicContainer;
+export type TCoreMediaContainer = TCoreAwsContainer | TCorePublicContainer;
 
 export type TCoreMessagesConfiguration = {
   __typename?: 'MessagesConfiguration';
@@ -836,6 +812,7 @@ export type TCoreStoreDataFence = TCoreDataFence & {
 
 export type TCoreStoreLimits = {
   __typename?: 'StoreLimits';
+  maxCartDiscountsPerStore?: Maybe<Scalars['Long']['output']>;
   maxInventorySupplyChannelsPerStore?: Maybe<Scalars['Long']['output']>;
   maxProductDistributionChannelsPerStore?: Maybe<Scalars['Long']['output']>;
   maxProductSelectionsPerStore?: Maybe<Scalars['Long']['output']>;

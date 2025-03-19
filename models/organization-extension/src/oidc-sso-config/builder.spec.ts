@@ -20,6 +20,7 @@ describe('builder', () => {
         logoutUrl: expect.any(String),
         sessionTokenExpTimeSeconds: expect.any(Number),
         teamIdForNewUsers: expect.any(String),
+        hasClientSecret: expect.any(Boolean),
       })
     )
   );
@@ -39,6 +40,7 @@ describe('builder', () => {
         logoutUrl: expect.any(String),
         sessionTokenExpTimeSeconds: expect.any(Number),
         teamIdForNewUsers: expect.any(String),
+        hasClientSecret: expect.any(Boolean),
       })
     )
   );

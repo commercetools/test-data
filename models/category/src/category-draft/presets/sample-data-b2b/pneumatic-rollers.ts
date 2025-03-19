@@ -28,12 +28,12 @@ const pneumaticRollers = (): TCategoryDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Walzen, die pneumatische Kraft für die Verdichtung verwenden'
-        )
-        ['it-IT'](
-          'Rulli che utilizzano la forza pneumatica per la compattazione'
-        )
+        [
+          'de-DE'
+        ]('Walzen, die pneumatische Kraft für die Verdichtung verwenden')
+        [
+          'it-IT'
+        ]('Rulli che utilizzano la forza pneumatica per la compattazione')
         ['nl-NL']('Walsen die pneumatische kracht gebruiken voor verdichting')
         ['fr-FR']('Rouleaux utilisant la force pneumatique pour le compactage')
         ['en-AU']('Rollers using pneumatic force for compaction')

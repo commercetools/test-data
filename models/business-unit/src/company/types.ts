@@ -16,7 +16,6 @@ export type TCompanyDraftGraphql = TCompanyDraft;
 export type TCompany = Company;
 export type TCompanyGraphql = Omit<TCompany, 'topLevelUnit' | 'parentUnit'> & {
   ancestors: [];
-  inheritedStores: null;
   __typename: 'BusinessUnit';
   storesRef: KeyReference;
   parentUnitRef: null;

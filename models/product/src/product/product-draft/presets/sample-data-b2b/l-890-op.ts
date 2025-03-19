@@ -54,36 +54,36 @@ const l890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Sumpfbagger mit hoher Kapazität und speziellen Funktionen für anspruchsvolle Projekte in Feuchtgebieten.'
-        )
-        ['it-IT'](
-          'Bulldozer per paludi ad alta capacità L890 OP con caratteristiche specializzate per progetti impegnativi in terreni umidi.'
-        )
-        ['nl-NL'](
-          'L890 OP Hoogcapaciteits moeras bulldozer met gespecialiseerde functies voor uitdagende wetland projecten.'
-        )
-        ['fr-FR'](
-          'Bulldozer des marais haute capacité avec des fonctionnalités spécialisées pour des projets difficiles en zones humides.'
-        )
-        ['en-AU'](
-          'L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.'
-        )
-        ['es-ES'](
-          'Topadora de pantano de alta capacidad con características especializadas para proyectos desafiantes en áreas húmedas.'
-        )
-        ['en-GB'](
-          'L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.'
-        )
-        ['en-NZ'](
-          'L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras para pântano de alta capacidade L890 OP com características especializadas para projetos desafiadores em terrenos úmidos.'
-        )
-        ['en-US'](
-          'L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.'
-        )
+        [
+          'de-DE'
+        ]('Sumpfbagger mit hoher Kapazität und speziellen Funktionen für anspruchsvolle Projekte in Feuchtgebieten.')
+        [
+          'it-IT'
+        ]('Bulldozer per paludi ad alta capacità L890 OP con caratteristiche specializzate per progetti impegnativi in terreni umidi.')
+        [
+          'nl-NL'
+        ]('L890 OP Hoogcapaciteits moeras bulldozer met gespecialiseerde functies voor uitdagende wetland projecten.')
+        [
+          'fr-FR'
+        ]('Bulldozer des marais haute capacité avec des fonctionnalités spécialisées pour des projets difficiles en zones humides.')
+        [
+          'en-AU'
+        ]('L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.')
+        [
+          'es-ES'
+        ]('Topadora de pantano de alta capacidad con características especializadas para proyectos desafiantes en áreas húmedas.')
+        [
+          'en-GB'
+        ]('L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.')
+        [
+          'en-NZ'
+        ]('L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras para pântano de alta capacidade L890 OP com características especializadas para projetos desafiadores em terrenos úmidos.')
+        [
+          'en-US'
+        ]('L890 OP High-capacity swamp bulldozer with specialized features for challenging wetland projects.')
     )
     .slug(
       LocalizedStringDraft.presets

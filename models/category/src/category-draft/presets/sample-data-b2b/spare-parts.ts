@@ -24,36 +24,36 @@ const spareParts = (): TCategoryDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Austauschbares Teil, das für die Reparatur oder den Austausch defekter Einheiten in Maschinen, Fahrzeugen oder elektronischen Geräten verwendet wird'
-        )
-        ['it-IT'](
-          'Parte intercambiabile utilizzata per la riparazione o la sostituzione di unità guaste in macchinari, veicoli o dispositivi elettronici'
-        )
-        ['nl-NL'](
-          'Uitwisselbaar onderdeel gebruikt voor de reparatie of vervanging van defecte eenheden in machines, voertuigen of elektronische apparaten'
-        )
-        ['fr-FR'](
-          "Pièce interchangeable utilisée pour la réparation ou le remplacement d'unités défaillantes dans des machines, véhicules ou dispositifs électroniques"
-        )
-        ['en-AU'](
-          'Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices'
-        )
-        ['es-ES'](
-          'Pieza intercambiable utilizada para la reparación o sustitución de unidades defectuosas en maquinaria, vehículos o dispositivos electrónicos'
-        )
-        ['en-GB'](
-          'Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices'
-        )
-        ['en-NZ'](
-          'Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices'
-        )
-        ['pt-PT'](
-          'Peça intercambiável usada para a reparação ou substituição de unidades avariadas em maquinaria, veículos ou dispositivos eletrónicos'
-        )
-        ['en-US'](
-          'Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices'
-        )
+        [
+          'de-DE'
+        ]('Austauschbares Teil, das für die Reparatur oder den Austausch defekter Einheiten in Maschinen, Fahrzeugen oder elektronischen Geräten verwendet wird')
+        [
+          'it-IT'
+        ]('Parte intercambiabile utilizzata per la riparazione o la sostituzione di unità guaste in macchinari, veicoli o dispositivi elettronici')
+        [
+          'nl-NL'
+        ]('Uitwisselbaar onderdeel gebruikt voor de reparatie of vervanging van defecte eenheden in machines, voertuigen of elektronische apparaten')
+        [
+          'fr-FR'
+        ]("Pièce interchangeable utilisée pour la réparation ou le remplacement d'unités défaillantes dans des machines, véhicules ou dispositifs électroniques")
+        [
+          'en-AU'
+        ]('Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices')
+        [
+          'es-ES'
+        ]('Pieza intercambiable utilizada para la reparación o sustitución de unidades defectuosas en maquinaria, vehículos o dispositivos electrónicos')
+        [
+          'en-GB'
+        ]('Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices')
+        [
+          'en-NZ'
+        ]('Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices')
+        [
+          'pt-PT'
+        ]('Peça intercambiável usada para a reparação ou substituição de unidades avariadas em maquinaria, veículos ou dispositivos eletrónicos')
+        [
+          'en-US'
+        ]('Interchangeable part used for the repair or replacement of failed units in machinery, vehicles, or electronic devices')
     )
     .slug(
       LocalizedStringDraft.presets

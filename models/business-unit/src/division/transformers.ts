@@ -48,7 +48,7 @@ const transformers = {
         inheritedStores:
           'inheritedStores' in fields && fields.inheritedStores
             ? fields.inheritedStores
-            : null,
+            : undefined,
         __typename: 'BusinessUnit',
       }),
     }

@@ -54,36 +54,36 @@ const ll890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Deponie-Verdichter für verschiedene Anwendungen im Bereich der Abfallverdichtung.'
-        )
-        ['it-IT'](
-          'Compattatore per discariche versatile per varie applicazioni di compattazione dei rifiuti.'
-        )
-        ['nl-NL'](
-          'Veelzijdige stortplaatsverdichter voor diverse afvalverdichtingstoepassingen.'
-        )
-        ['fr-FR'](
-          'Compacteur de décharge polyvalent pour diverses applications de compactage des déchets.'
-        )
-        ['en-AU'](
-          'Versatile landfill compactor for various waste compaction applications.'
-        )
-        ['es-ES'](
-          'Compactador de vertedero versátil para diversas aplicaciones de compactación de residuos.'
-        )
-        ['en-GB'](
-          'Versatile landfill compactor for various waste compaction applications.'
-        )
-        ['en-NZ'](
-          'Versatile landfill compactor for various waste compaction applications.'
-        )
-        ['pt-PT'](
-          'Compactador de aterro versátil para várias aplicações de compactação de resíduos.'
-        )
-        ['en-US'](
-          'Versatile landfill compactor for various waste compaction applications.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Deponie-Verdichter für verschiedene Anwendungen im Bereich der Abfallverdichtung.')
+        [
+          'it-IT'
+        ]('Compattatore per discariche versatile per varie applicazioni di compattazione dei rifiuti.')
+        [
+          'nl-NL'
+        ]('Veelzijdige stortplaatsverdichter voor diverse afvalverdichtingstoepassingen.')
+        [
+          'fr-FR'
+        ]('Compacteur de décharge polyvalent pour diverses applications de compactage des déchets.')
+        [
+          'en-AU'
+        ]('Versatile landfill compactor for various waste compaction applications.')
+        [
+          'es-ES'
+        ]('Compactador de vertedero versátil para diversas aplicaciones de compactación de residuos.')
+        [
+          'en-GB'
+        ]('Versatile landfill compactor for various waste compaction applications.')
+        [
+          'en-NZ'
+        ]('Versatile landfill compactor for various waste compaction applications.')
+        [
+          'pt-PT'
+        ]('Compactador de aterro versátil para várias aplicações de compactação de resíduos.')
+        [
+          'en-US'
+        ]('Versatile landfill compactor for various waste compaction applications.')
     )
     .slug(
       LocalizedStringDraft.presets

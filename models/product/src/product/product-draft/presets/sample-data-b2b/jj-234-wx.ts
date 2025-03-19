@@ -54,36 +54,36 @@ const jj234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Hochleistungs-Deponie-Verdichter für effiziente Verdichtung von Abfällen auf Deponiestandorten.'
-        )
-        ['it-IT'](
-          'Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.'
-        )
-        ['fr-FR'](
-          "Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement."
-        )
-        ['en-AU'](
-          'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'
-        )
-        ['es-ES'](
-          'Compactador de vertedero de alta capacidad para la compactación eficiente de residuos en vertederos.'
-        )
-        ['en-GB'](
-          'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'
-        )
-        ['en-NZ'](
-          'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'
-        )
-        ['pt-PT'](
-          'Compactador de aterro de alta capacidade para compactação eficiente de resíduos em aterros sanitários.'
-        )
-        ['en-US'](
-          'High-capacity landfill compactor for efficient compaction of waste in landfill sites.'
-        )
+        [
+          'de-DE'
+        ]('Hochleistungs-Deponie-Verdichter für effiziente Verdichtung von Abfällen auf Deponiestandorten.')
+        [
+          'it-IT'
+        ]('Compattatore per discariche ad alta capacità per la compattazione efficiente dei rifiuti nei siti di discarica.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits stortplaatsverdichter voor efficiënte verdichting van afval op stortplaatsen.')
+        [
+          'fr-FR'
+        ]("Compacteur de décharge haute capacité pour le compactage efficace des déchets sur les sites d'enfouissement.")
+        [
+          'en-AU'
+        ]('High-capacity landfill compactor for efficient compaction of waste in landfill sites.')
+        [
+          'es-ES'
+        ]('Compactador de vertedero de alta capacidad para la compactación eficiente de residuos en vertederos.')
+        [
+          'en-GB'
+        ]('High-capacity landfill compactor for efficient compaction of waste in landfill sites.')
+        [
+          'en-NZ'
+        ]('High-capacity landfill compactor for efficient compaction of waste in landfill sites.')
+        [
+          'pt-PT'
+        ]('Compactador de aterro de alta capacidade para compactação eficiente de resíduos em aterros sanitários.')
+        [
+          'en-US'
+        ]('High-capacity landfill compactor for efficient compaction of waste in landfill sites.')
     )
     .slug(
       LocalizedStringDraft.presets

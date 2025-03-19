@@ -54,36 +54,36 @@ const k567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Sumpfbagger mit fortschrittlichen Funktionen für vielfältige Arbeiten in Feuchtgebieten.'
-        )
-        ['it-IT'](
-          'Bulldozer per paludi versatile con caratteristiche avanzate per operazioni diverse in ambienti umidi.'
-        )
-        ['nl-NL'](
-          'Veelzijdige moeras bulldozer met geavanceerde functies voor diverse operaties in wetland omgevingen.'
-        )
-        ['fr-FR'](
-          'Bulldozer des marais polyvalent avec des fonctionnalités avancées pour des opérations diverses dans des environnements humides.'
-        )
-        ['en-AU'](
-          'Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.'
-        )
-        ['es-ES'](
-          'Topadora de pantano versátil con características avanzadas para operaciones diversas en entornos húmedos.'
-        )
-        ['en-GB'](
-          'Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.'
-        )
-        ['en-NZ'](
-          'Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras versátil para pântano com características avançadas para operações diversas em ambientes úmidos.'
-        )
-        ['en-US'](
-          'Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Sumpfbagger mit fortschrittlichen Funktionen für vielfältige Arbeiten in Feuchtgebieten.')
+        [
+          'it-IT'
+        ]('Bulldozer per paludi versatile con caratteristiche avanzate per operazioni diverse in ambienti umidi.')
+        [
+          'nl-NL'
+        ]('Veelzijdige moeras bulldozer met geavanceerde functies voor diverse operaties in wetland omgevingen.')
+        [
+          'fr-FR'
+        ]('Bulldozer des marais polyvalent avec des fonctionnalités avancées pour des opérations diverses dans des environnements humides.')
+        [
+          'en-AU'
+        ]('Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.')
+        [
+          'es-ES'
+        ]('Topadora de pantano versátil con características avanzadas para operaciones diversas en entornos húmedos.')
+        [
+          'en-GB'
+        ]('Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.')
+        [
+          'en-NZ'
+        ]('Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras versátil para pântano com características avançadas para operações diversas em ambientes úmidos.')
+        [
+          'en-US'
+        ]('Versatile swamp bulldozer with advanced features for diverse operations in wetland environments.')
     )
     .slug(
       LocalizedStringDraft.presets

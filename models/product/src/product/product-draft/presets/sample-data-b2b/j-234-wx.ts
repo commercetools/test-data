@@ -54,36 +54,36 @@ const j234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Spezialisierter Sumpfbagger für effiziente Arbeiten in moorigen und feuchten Gebieten.'
-        )
-        ['it-IT'](
-          'Bulldozer specializzato per paludi per operazioni efficienti in aree paludose e terreni umidi.'
-        )
-        ['nl-NL'](
-          'Gespecialiseerde moeras bulldozer voor efficiënte operaties in moerassige en wetland gebieden.'
-        )
-        ['fr-FR'](
-          'Bulldozer des marais spécialisé pour des opérations efficaces dans les zones marécageuses et humides.'
-        )
-        ['en-AU'](
-          'Specialized swamp bulldozer for efficient operations in marshy and wetland areas.'
-        )
-        ['es-ES'](
-          'Topadora de pantano especializada para operaciones eficientes en áreas pantanosas y húmedas.'
-        )
-        ['en-GB'](
-          'Specialized swamp bulldozer for efficient operations in marshy and wetland areas.'
-        )
-        ['en-NZ'](
-          'Specialized swamp bulldozer for efficient operations in marshy and wetland areas.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras especializado para operações eficientes em áreas pantanosas e terrenos úmidos.'
-        )
-        ['en-US'](
-          'Specialized swamp bulldozer for efficient operations in marshy and wetland areas.'
-        )
+        [
+          'de-DE'
+        ]('Spezialisierter Sumpfbagger für effiziente Arbeiten in moorigen und feuchten Gebieten.')
+        [
+          'it-IT'
+        ]('Bulldozer specializzato per paludi per operazioni efficienti in aree paludose e terreni umidi.')
+        [
+          'nl-NL'
+        ]('Gespecialiseerde moeras bulldozer voor efficiënte operaties in moerassige en wetland gebieden.')
+        [
+          'fr-FR'
+        ]('Bulldozer des marais spécialisé pour des opérations efficaces dans les zones marécageuses et humides.')
+        [
+          'en-AU'
+        ]('Specialized swamp bulldozer for efficient operations in marshy and wetland areas.')
+        [
+          'es-ES'
+        ]('Topadora de pantano especializada para operaciones eficientes en áreas pantanosas y húmedas.')
+        [
+          'en-GB'
+        ]('Specialized swamp bulldozer for efficient operations in marshy and wetland areas.')
+        [
+          'en-NZ'
+        ]('Specialized swamp bulldozer for efficient operations in marshy and wetland areas.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras especializado para operações eficientes em áreas pantanosas e terrenos úmidos.')
+        [
+          'en-US'
+        ]('Specialized swamp bulldozer for efficient operations in marshy and wetland areas.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -54,36 +54,36 @@ const i789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Abfallverarbeitungsbagger mit erweiterten Funktionen für komplexe Aufgaben der Abfallwirtschaft.'
-        )
-        ['it-IT'](
-          'Bulldozer avanzato per la gestione dei rifiuti con caratteristiche potenziate per compiti di gestione dei rifiuti complessi.'
-        )
-        ['nl-NL'](
-          'Geavanceerde afvalverwerkings bulldozer met verbeterde functies voor complexe afvalbeheertaken.'
-        )
-        ['fr-FR'](
-          'Bulldozer de manutention des déchets avancé avec des fonctionnalités améliorées pour des tâches complexes de gestion des déchets.'
-        )
-        ['en-AU'](
-          'Advanced waste handling bulldozer with enhanced features for complex waste management tasks.'
-        )
-        ['es-ES'](
-          'Topadora de manipulación de residuos avanzada con características mejoradas para tareas complejas de gestión de residuos.'
-        )
-        ['en-GB'](
-          'Advanced waste handling bulldozer with enhanced features for complex waste management tasks.'
-        )
-        ['en-NZ'](
-          'Advanced waste handling bulldozer with enhanced features for complex waste management tasks.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras avançado para manejo de resíduos com características aprimoradas para tarefas complexas de gestão de resíduos.'
-        )
-        ['en-US'](
-          'Advanced waste handling bulldozer with enhanced features for complex waste management tasks.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Abfallverarbeitungsbagger mit erweiterten Funktionen für komplexe Aufgaben der Abfallwirtschaft.')
+        [
+          'it-IT'
+        ]('Bulldozer avanzato per la gestione dei rifiuti con caratteristiche potenziate per compiti di gestione dei rifiuti complessi.')
+        [
+          'nl-NL'
+        ]('Geavanceerde afvalverwerkings bulldozer met verbeterde functies voor complexe afvalbeheertaken.')
+        [
+          'fr-FR'
+        ]('Bulldozer de manutention des déchets avancé avec des fonctionnalités améliorées pour des tâches complexes de gestion des déchets.')
+        [
+          'en-AU'
+        ]('Advanced waste handling bulldozer with enhanced features for complex waste management tasks.')
+        [
+          'es-ES'
+        ]('Topadora de manipulación de residuos avanzada con características mejoradas para tareas complejas de gestión de residuos.')
+        [
+          'en-GB'
+        ]('Advanced waste handling bulldozer with enhanced features for complex waste management tasks.')
+        [
+          'en-NZ'
+        ]('Advanced waste handling bulldozer with enhanced features for complex waste management tasks.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras avançado para manejo de resíduos com características aprimoradas para tarefas complexas de gestão de resíduos.')
+        [
+          'en-US'
+        ]('Advanced waste handling bulldozer with enhanced features for complex waste management tasks.')
     )
     .slug(
       LocalizedStringDraft.presets

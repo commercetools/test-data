@@ -54,36 +54,36 @@ const ff890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Feinplanierer mit speziellen Funktionen für präzises Nivellieren von Oberflächen.'
-        )
-        ['it-IT'](
-          'Livellatrice fine versatile con caratteristiche specializzate per la graduazione precisa delle superfici.'
-        )
-        ['nl-NL'](
-          'Veelzijdige fijnnivelleermachine met gespecialiseerde functies voor precieze oppervlakte egalisatie.'
-        )
-        ['fr-FR'](
-          'Niveleuse fine polyvalente avec des fonctionnalités spécialisées pour un nivellement précis des surfaces.'
-        )
-        ['en-AU'](
-          'Versatile fine grader with specialized features for precise surface grading.'
-        )
-        ['es-ES'](
-          'Niveladora fina versátil con características especializadas para la nivelación precisa de superficies.'
-        )
-        ['en-GB'](
-          'Versatile fine grader with specialized features for precise surface grading.'
-        )
-        ['en-NZ'](
-          'Versatile fine grader with specialized features for precise surface grading.'
-        )
-        ['pt-PT'](
-          'Niveladora fina versátil com recursos especializados para graduação precisa de superfícies.'
-        )
-        ['en-US'](
-          'Versatile fine grader with specialized features for precise surface grading.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Feinplanierer mit speziellen Funktionen für präzises Nivellieren von Oberflächen.')
+        [
+          'it-IT'
+        ]('Livellatrice fine versatile con caratteristiche specializzate per la graduazione precisa delle superfici.')
+        [
+          'nl-NL'
+        ]('Veelzijdige fijnnivelleermachine met gespecialiseerde functies voor precieze oppervlakte egalisatie.')
+        [
+          'fr-FR'
+        ]('Niveleuse fine polyvalente avec des fonctionnalités spécialisées pour un nivellement précis des surfaces.')
+        [
+          'en-AU'
+        ]('Versatile fine grader with specialized features for precise surface grading.')
+        [
+          'es-ES'
+        ]('Niveladora fina versátil con características especializadas para la nivelación precisa de superficies.')
+        [
+          'en-GB'
+        ]('Versatile fine grader with specialized features for precise surface grading.')
+        [
+          'en-NZ'
+        ]('Versatile fine grader with specialized features for precise surface grading.')
+        [
+          'pt-PT'
+        ]('Niveladora fina versátil com recursos especializados para graduação precisa de superfícies.')
+        [
+          'en-US'
+        ]('Versatile fine grader with specialized features for precise surface grading.')
     )
     .slug(
       LocalizedStringDraft.presets

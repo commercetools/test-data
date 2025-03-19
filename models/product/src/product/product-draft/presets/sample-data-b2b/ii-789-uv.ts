@@ -54,36 +54,36 @@ const ii789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Pneumatikwalze mit hoher Kapazität und fortschrittlichen Funktionen für effiziente Verdichtung.'
-        )
-        ['it-IT'](
-          'Rullo pneumatico ad alta capacità con caratteristiche avanzate per una compattazione efficiente.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits pneumatische wals met geavanceerde functies voor efficiënte verdichting.'
-        )
-        ['fr-FR'](
-          'Rouleau pneumatique haute capacité avec des fonctionnalités avancées pour une compactage efficace.'
-        )
-        ['en-AU'](
-          'High-capacity pneumatic roller with advanced features for efficient compaction.'
-        )
-        ['es-ES'](
-          'Rodillo neumático de alta capacidad con características avanzadas para una compactación eficiente.'
-        )
-        ['en-GB'](
-          'High-capacity pneumatic roller with advanced features for efficient compaction.'
-        )
-        ['en-NZ'](
-          'High-capacity pneumatic roller with advanced features for efficient compaction.'
-        )
-        ['pt-PT'](
-          'Rolo pneumático de alta capacidade com recursos avançados para compactação eficiente.'
-        )
-        ['en-US'](
-          'High-capacity pneumatic roller with advanced features for efficient compaction.'
-        )
+        [
+          'de-DE'
+        ]('Pneumatikwalze mit hoher Kapazität und fortschrittlichen Funktionen für effiziente Verdichtung.')
+        [
+          'it-IT'
+        ]('Rullo pneumatico ad alta capacità con caratteristiche avanzate per una compattazione efficiente.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits pneumatische wals met geavanceerde functies voor efficiënte verdichting.')
+        [
+          'fr-FR'
+        ]('Rouleau pneumatique haute capacité avec des fonctionnalités avancées pour une compactage efficace.')
+        [
+          'en-AU'
+        ]('High-capacity pneumatic roller with advanced features for efficient compaction.')
+        [
+          'es-ES'
+        ]('Rodillo neumático de alta capacidad con características avanzadas para una compactación eficiente.')
+        [
+          'en-GB'
+        ]('High-capacity pneumatic roller with advanced features for efficient compaction.')
+        [
+          'en-NZ'
+        ]('High-capacity pneumatic roller with advanced features for efficient compaction.')
+        [
+          'pt-PT'
+        ]('Rolo pneumático de alta capacidade com recursos avançados para compactação eficiente.')
+        [
+          'en-US'
+        ]('High-capacity pneumatic roller with advanced features for efficient compaction.')
     )
     .slug(
       LocalizedStringDraft.presets

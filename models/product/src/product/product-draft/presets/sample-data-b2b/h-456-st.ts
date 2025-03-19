@@ -54,36 +54,36 @@ const h456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Spezialisierter Bulldozer für die effiziente Handhabung von Abfallmaterialien in Abfallwirtschaftsprojekten.'
-        )
-        ['it-IT'](
-          'Bulldozer specializzato per la gestione efficiente dei materiali di scarto in progetti di gestione dei rifiuti.'
-        )
-        ['nl-NL'](
-          'Gespecialiseerde bulldozer voor efficiënte afvalverwerking in afvalbeheerprojecten.'
-        )
-        ['fr-FR'](
-          'Bulldozer spécialisé pour la manipulation efficace des matériaux de déchets dans les projets de gestion des déchets.'
-        )
-        ['en-AU'](
-          'Specialized bulldozer for efficient handling of waste materials in waste management projects.'
-        )
-        ['es-ES'](
-          'Topadora especializada para la manipulación eficiente de materiales de desecho en proyectos de gestión de residuos.'
-        )
-        ['en-GB'](
-          'Specialized bulldozer for efficient handling of waste materials in waste management projects.'
-        )
-        ['en-NZ'](
-          'Specialized bulldozer for efficient handling of waste materials in waste management projects.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras especializado para manuseio eficiente de materiais de resíduos em projetos de gestão de resíduos.'
-        )
-        ['en-US'](
-          'Specialized bulldozer for efficient handling of waste materials in waste management projects.'
-        )
+        [
+          'de-DE'
+        ]('Spezialisierter Bulldozer für die effiziente Handhabung von Abfallmaterialien in Abfallwirtschaftsprojekten.')
+        [
+          'it-IT'
+        ]('Bulldozer specializzato per la gestione efficiente dei materiali di scarto in progetti di gestione dei rifiuti.')
+        [
+          'nl-NL'
+        ]('Gespecialiseerde bulldozer voor efficiënte afvalverwerking in afvalbeheerprojecten.')
+        [
+          'fr-FR'
+        ]('Bulldozer spécialisé pour la manipulation efficace des matériaux de déchets dans les projets de gestion des déchets.')
+        [
+          'en-AU'
+        ]('Specialized bulldozer for efficient handling of waste materials in waste management projects.')
+        [
+          'es-ES'
+        ]('Topadora especializada para la manipulación eficiente de materiales de desecho en proyectos de gestión de residuos.')
+        [
+          'en-GB'
+        ]('Specialized bulldozer for efficient handling of waste materials in waste management projects.')
+        [
+          'en-NZ'
+        ]('Specialized bulldozer for efficient handling of waste materials in waste management projects.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras especializado para manuseio eficiente de materiais de resíduos em projetos de gestão de resíduos.')
+        [
+          'en-US'
+        ]('Specialized bulldozer for efficient handling of waste materials in waste management projects.')
     )
     .slug(
       LocalizedStringDraft.presets

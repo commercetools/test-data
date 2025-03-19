@@ -54,36 +54,36 @@ const jjj890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Rammpfahlhammer für verschiedene Rammarbeiten im Bau und in Infrastrukturprojekten geeignet.'
-        )
-        ['it-IT'](
-          'Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.'
-        )
-        ['nl-NL'](
-          'Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.'
-        )
-        ['fr-FR'](
-          "Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure."
-        )
-        ['en-AU'](
-          'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
-        )
-        ['es-ES'](
-          'Martillo de pilotaje versátil adecuado para diversas tareas de pilotes de cimentación en proyectos de construcción e infraestructura.'
-        )
-        ['en-GB'](
-          'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
-        )
-        ['en-NZ'](
-          'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
-        )
-        ['pt-PT'](
-          'Martelo de cravação versátil adequado para várias tarefas de cravação de fundações em projetos de construção e infraestrutura.'
-        )
-        ['en-US'](
-          'Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Rammpfahlhammer für verschiedene Rammarbeiten im Bau und in Infrastrukturprojekten geeignet.')
+        [
+          'it-IT'
+        ]('Martello versatile per pali adatto per vari compiti di piantare pali in progetti di costruzione e infrastruttura.')
+        [
+          'nl-NL'
+        ]('Veelzijdige heihamer geschikt voor diverse heiwerkzaamheden in bouw- en infrastructuurprojecten.')
+        [
+          'fr-FR'
+        ]("Marteau de battage polyvalent adapté à diverses tâches de fonçage de fondation dans des projets de construction et d'infrastructure.")
+        [
+          'en-AU'
+        ]('Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.')
+        [
+          'es-ES'
+        ]('Martillo de pilotaje versátil adecuado para diversas tareas de pilotes de cimentación en proyectos de construcción e infraestructura.')
+        [
+          'en-GB'
+        ]('Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.')
+        [
+          'en-NZ'
+        ]('Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.')
+        [
+          'pt-PT'
+        ]('Martelo de cravação versátil adequado para várias tarefas de cravação de fundações em projetos de construção e infraestrutura.')
+        [
+          'en-US'
+        ]('Versatile piling hammer suitable for various foundation piling tasks in construction and infrastructure projects.')
     )
     .slug(
       LocalizedStringDraft.presets

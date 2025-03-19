@@ -18,6 +18,7 @@ const generator = Generator<TOidcSsoConfig>({
       f.number.int({ min: 3600, max: 2505600 })
     ),
     teamIdForNewUsers: fake((f) => f.string.uuid()),
+    hasClientSecret: fake((f) => f.datatype.boolean()),
   },
 });
 

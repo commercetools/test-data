@@ -54,36 +54,36 @@ const d234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Spezialisierter Holzlader für effiziente Handhabung von Baumstämmen in Forstbetrieben.'
-        )
-        ['it-IT'](
-          'Caricatore di tronchi specializzato progettato per la manipolazione efficiente di tronchi in operazioni forestali.'
-        )
-        ['nl-NL'](
-          'Gespecialiseerde boomlader ontworpen voor efficiënte hantering van boomstammen in bosbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Chargeur de bûches spécialisé conçu pour la manipulation efficace des grumes dans les opérations forestières.'
-        )
-        ['en-AU'](
-          'Specialized log loader designed for efficient handling of logs in forestry operations.'
-        )
-        ['es-ES'](
-          'Cargador de troncos especializado diseñado para la manipulación eficiente de troncos en operaciones forestales.'
-        )
-        ['en-GB'](
-          'Specialized log loader designed for efficient handling of logs in forestry operations.'
-        )
-        ['en-NZ'](
-          'Specialized log loader designed for efficient handling of logs in forestry operations.'
-        )
-        ['pt-PT'](
-          'Carregadeira especializada de toras projetada para manuseio eficiente de toras em operações florestais.'
-        )
-        ['en-US'](
-          'Specialized log loader designed for efficient handling of logs in forestry operations.'
-        )
+        [
+          'de-DE'
+        ]('Spezialisierter Holzlader für effiziente Handhabung von Baumstämmen in Forstbetrieben.')
+        [
+          'it-IT'
+        ]('Caricatore di tronchi specializzato progettato per la manipolazione efficiente di tronchi in operazioni forestali.')
+        [
+          'nl-NL'
+        ]('Gespecialiseerde boomlader ontworpen voor efficiënte hantering van boomstammen in bosbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Chargeur de bûches spécialisé conçu pour la manipulation efficace des grumes dans les opérations forestières.')
+        [
+          'en-AU'
+        ]('Specialized log loader designed for efficient handling of logs in forestry operations.')
+        [
+          'es-ES'
+        ]('Cargador de troncos especializado diseñado para la manipulación eficiente de troncos en operaciones forestales.')
+        [
+          'en-GB'
+        ]('Specialized log loader designed for efficient handling of logs in forestry operations.')
+        [
+          'en-NZ'
+        ]('Specialized log loader designed for efficient handling of logs in forestry operations.')
+        [
+          'pt-PT'
+        ]('Carregadeira especializada de toras projetada para manuseio eficiente de toras em operações florestais.')
+        [
+          'en-US'
+        ]('Specialized log loader designed for efficient handling of logs in forestry operations.')
     )
     .slug(
       LocalizedStringDraft.presets

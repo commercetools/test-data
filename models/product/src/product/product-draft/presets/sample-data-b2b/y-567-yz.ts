@@ -54,36 +54,36 @@ const y567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Geländekipplaster mit erweiterten Funktionen für den zuverlässigen Transport von Material.'
-        )
-        ['it-IT'](
-          'Camion ribaltabile fuoristrada per impieghi pesanti con caratteristiche potenziate per un trasporto affidabile dei materiali.'
-        )
-        ['nl-NL'](
-          'Zware off-highway dumptruck met verbeterde functies voor betrouwbaar materiaaltransport.'
-        )
-        ['fr-FR'](
-          'Camion benne tout-terrain robuste avec des fonctionnalités améliorées pour un transport fiable des matériaux.'
-        )
-        ['en-AU'](
-          'Heavy-duty off-highway dump truck with enhanced features for reliable material transport.'
-        )
-        ['es-ES'](
-          'Camión volquete fuera de carretera resistente con características mejoradas para el transporte confiable de materiales.'
-        )
-        ['en-GB'](
-          'Heavy-duty off-highway dump truck with enhanced features for reliable material transport.'
-        )
-        ['en-NZ'](
-          'Heavy-duty off-highway dump truck with enhanced features for reliable material transport.'
-        )
-        ['pt-PT'](
-          'Caminhão basculante fora-de-estrada de serviço pesado com recursos aprimorados para transporte confiável de materiais.'
-        )
-        ['en-US'](
-          'Heavy-duty off-highway dump truck with enhanced features for reliable material transport.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Geländekipplaster mit erweiterten Funktionen für den zuverlässigen Transport von Material.')
+        [
+          'it-IT'
+        ]('Camion ribaltabile fuoristrada per impieghi pesanti con caratteristiche potenziate per un trasporto affidabile dei materiali.')
+        [
+          'nl-NL'
+        ]('Zware off-highway dumptruck met verbeterde functies voor betrouwbaar materiaaltransport.')
+        [
+          'fr-FR'
+        ]('Camion benne tout-terrain robuste avec des fonctionnalités améliorées pour un transport fiable des matériaux.')
+        [
+          'en-AU'
+        ]('Heavy-duty off-highway dump truck with enhanced features for reliable material transport.')
+        [
+          'es-ES'
+        ]('Camión volquete fuera de carretera resistente con características mejoradas para el transporte confiable de materiales.')
+        [
+          'en-GB'
+        ]('Heavy-duty off-highway dump truck with enhanced features for reliable material transport.')
+        [
+          'en-NZ'
+        ]('Heavy-duty off-highway dump truck with enhanced features for reliable material transport.')
+        [
+          'pt-PT'
+        ]('Caminhão basculante fora-de-estrada de serviço pesado com recursos aprimorados para transporte confiável de materiais.')
+        [
+          'en-US'
+        ]('Heavy-duty off-highway dump truck with enhanced features for reliable material transport.')
     )
     .slug(
       LocalizedStringDraft.presets

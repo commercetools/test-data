@@ -54,36 +54,36 @@ const bbb234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Produktionsbohrer für effizientes Bohren in groß angelegten Bergbauoperationen.'
-        )
-        ['it-IT'](
-          'Trapano ad alte prestazioni per produzione progettato per trapanazioni efficienti in operazioni minerarie su larga scala.'
-        )
-        ['nl-NL'](
-          'Hoogpresterende productieboor ontworpen voor efficiënt boren in grootschalige mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Forage de production haute performance conçu pour un forage efficace dans les opérations minières à grande échelle.'
-        )
-        ['en-AU'](
-          'High-performance production drill designed for efficient drilling in large-scale mining operations.'
-        )
-        ['es-ES'](
-          'Perforadora de producción de alto rendimiento diseñada para perforar de manera eficiente en operaciones mineras a gran escala.'
-        )
-        ['en-GB'](
-          'High-performance production drill designed for efficient drilling in large-scale mining operations.'
-        )
-        ['en-NZ'](
-          'High-performance production drill designed for efficient drilling in large-scale mining operations.'
-        )
-        ['pt-PT'](
-          'Perfuratriz de produção de alto desempenho projetada para perfuração eficiente em operações de mineração em grande escala.'
-        )
-        ['en-US'](
-          'High-performance production drill designed for efficient drilling in large-scale mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Produktionsbohrer für effizientes Bohren in groß angelegten Bergbauoperationen.')
+        [
+          'it-IT'
+        ]('Trapano ad alte prestazioni per produzione progettato per trapanazioni efficienti in operazioni minerarie su larga scala.')
+        [
+          'nl-NL'
+        ]('Hoogpresterende productieboor ontworpen voor efficiënt boren in grootschalige mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Forage de production haute performance conçu pour un forage efficace dans les opérations minières à grande échelle.')
+        [
+          'en-AU'
+        ]('High-performance production drill designed for efficient drilling in large-scale mining operations.')
+        [
+          'es-ES'
+        ]('Perforadora de producción de alto rendimiento diseñada para perforar de manera eficiente en operaciones mineras a gran escala.')
+        [
+          'en-GB'
+        ]('High-performance production drill designed for efficient drilling in large-scale mining operations.')
+        [
+          'en-NZ'
+        ]('High-performance production drill designed for efficient drilling in large-scale mining operations.')
+        [
+          'pt-PT'
+        ]('Perfuratriz de produção de alto desempenho projetada para perfuração eficiente em operações de mineração em grande escala.')
+        [
+          'en-US'
+        ]('High-performance production drill designed for efficient drilling in large-scale mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

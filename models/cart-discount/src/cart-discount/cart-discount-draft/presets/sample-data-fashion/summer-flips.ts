@@ -23,9 +23,9 @@ const summerFlips = (): TCartDiscountDraftBuilder =>
     .name(
       LocalizedStringDraft.presets
         .empty()
-        ['en-US'](
-          'Summer special - get a free pair of flip flops with the Summer Dress'
-        )
+        [
+          'en-US'
+        ]('Summer special - get a free pair of flip flops with the Summer Dress')
     )
     .description(
       LocalizedStringDraft.presets

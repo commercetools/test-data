@@ -54,36 +54,36 @@ const eee123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Abbruchhammer für effizientes Brechen und Abbrucharbeiten in Bauprojekten.'
-        )
-        ['it-IT'](
-          'Potente martello demolitore progettato per compiti efficienti di demolizione e frantumazione in progetti edili.'
-        )
-        ['nl-NL'](
-          'Krachtige sloophamer ontworpen voor efficiënt breken en slopen in bouwprojecten.'
-        )
-        ['fr-FR'](
-          'Marteau de démolition puissant conçu pour des tâches de casse et de démolition efficaces dans les projets de construction.'
-        )
-        ['en-AU'](
-          'Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.'
-        )
-        ['es-ES'](
-          'Martillo de demolición potente diseñado para tareas eficientes de rotura y demolición en proyectos de construcción.'
-        )
-        ['en-GB'](
-          'Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.'
-        )
-        ['en-NZ'](
-          'Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.'
-        )
-        ['pt-PT'](
-          'Martelo demolidor potente projetado para tarefas eficientes de quebra e demolição em projetos de construção.'
-        )
-        ['en-US'](
-          'Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Abbruchhammer für effizientes Brechen und Abbrucharbeiten in Bauprojekten.')
+        [
+          'it-IT'
+        ]('Potente martello demolitore progettato per compiti efficienti di demolizione e frantumazione in progetti edili.')
+        [
+          'nl-NL'
+        ]('Krachtige sloophamer ontworpen voor efficiënt breken en slopen in bouwprojecten.')
+        [
+          'fr-FR'
+        ]('Marteau de démolition puissant conçu pour des tâches de casse et de démolition efficaces dans les projets de construction.')
+        [
+          'en-AU'
+        ]('Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.')
+        [
+          'es-ES'
+        ]('Martillo de demolición potente diseñado para tareas eficientes de rotura y demolición en proyectos de construcción.')
+        [
+          'en-GB'
+        ]('Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.')
+        [
+          'en-NZ'
+        ]('Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.')
+        [
+          'pt-PT'
+        ]('Martelo demolidor potente projetado para tarefas eficientes de quebra e demolição em projetos de construção.')
+        [
+          'en-US'
+        ]('Powerful demolition hammer designed for efficient breaking and demolition tasks in construction projects.')
     )
     .slug(
       LocalizedStringDraft.presets

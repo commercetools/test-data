@@ -54,36 +54,36 @@ const g123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Erdbewegungsbagger für effiziente Geländemanipulation und Aushub.'
-        )
-        ['it-IT'](
-          "Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione."
-        )
-        ['nl-NL'](
-          'Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.'
-        )
-        ['fr-FR'](
-          "Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation."
-        )
-        ['en-AU'](
-          'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
-        )
-        ['es-ES'](
-          'Topadora de movimiento de tierras potente para la manipulación eficiente del terreno y la excavación.'
-        )
-        ['en-GB'](
-          'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
-        )
-        ['en-NZ'](
-          'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
-        )
-        ['pt-PT'](
-          'Trator de esteiras poderoso para movimentação eficiente de terra e escavação.'
-        )
-        ['en-US'](
-          'Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Erdbewegungsbagger für effiziente Geländemanipulation und Aushub.')
+        [
+          'it-IT'
+        ]("Potente bulldozer per movimento terra per la manipolazione efficiente del terreno e l'escavazione.")
+        [
+          'nl-NL'
+        ]('Krachtige aardeverzet bulldozer voor efficiënte terreinmanipulatie en graafwerkzaamheden.')
+        [
+          'fr-FR'
+        ]("Bulldozer de terrassement puissant pour une manipulation efficace du terrain et l'excavation.")
+        [
+          'en-AU'
+        ]('Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.')
+        [
+          'es-ES'
+        ]('Topadora de movimiento de tierras potente para la manipulación eficiente del terreno y la excavación.')
+        [
+          'en-GB'
+        ]('Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.')
+        [
+          'en-NZ'
+        ]('Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.')
+        [
+          'pt-PT'
+        ]('Trator de esteiras poderoso para movimentação eficiente de terra e escavação.')
+        [
+          'en-US'
+        ]('Powerful earthmoving bulldozer for efficient terrain manipulation and excavation.')
     )
     .slug(
       LocalizedStringDraft.presets

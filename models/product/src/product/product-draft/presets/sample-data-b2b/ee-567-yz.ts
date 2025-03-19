@@ -54,36 +54,36 @@ const ee567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Feinplanierer mit hoher Kapazität und fortschrittlichen Funktionen für effizientes Finish von Oberflächen.'
-        )
-        ['it-IT'](
-          'Livellatrice fine ad alta capacità con caratteristiche avanzate per una finitura efficiente delle superfici.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits fijnnivelleermachine met geavanceerde functies voor efficiënte oppervlakteafwerking.'
-        )
-        ['fr-FR'](
-          'Niveleuse fine haute capacité avec des fonctionnalités avancées pour une finition de surface efficace.'
-        )
-        ['en-AU'](
-          'High-capacity fine grader with advanced features for efficient surface finishing.'
-        )
-        ['es-ES'](
-          'Niveladora fina de alta capacidad con características avanzadas para un acabado de superficie eficiente.'
-        )
-        ['en-GB'](
-          'High-capacity fine grader with advanced features for efficient surface finishing.'
-        )
-        ['en-NZ'](
-          'High-capacity fine grader with advanced features for efficient surface finishing.'
-        )
-        ['pt-PT'](
-          'Niveladora fina de alta capacidade com recursos avançados para acabamento eficiente de superfícies.'
-        )
-        ['en-US'](
-          'High-capacity fine grader with advanced features for efficient surface finishing.'
-        )
+        [
+          'de-DE'
+        ]('Feinplanierer mit hoher Kapazität und fortschrittlichen Funktionen für effizientes Finish von Oberflächen.')
+        [
+          'it-IT'
+        ]('Livellatrice fine ad alta capacità con caratteristiche avanzate per una finitura efficiente delle superfici.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits fijnnivelleermachine met geavanceerde functies voor efficiënte oppervlakteafwerking.')
+        [
+          'fr-FR'
+        ]('Niveleuse fine haute capacité avec des fonctionnalités avancées pour une finition de surface efficace.')
+        [
+          'en-AU'
+        ]('High-capacity fine grader with advanced features for efficient surface finishing.')
+        [
+          'es-ES'
+        ]('Niveladora fina de alta capacidad con características avanzadas para un acabado de superficie eficiente.')
+        [
+          'en-GB'
+        ]('High-capacity fine grader with advanced features for efficient surface finishing.')
+        [
+          'en-NZ'
+        ]('High-capacity fine grader with advanced features for efficient surface finishing.')
+        [
+          'pt-PT'
+        ]('Niveladora fina de alta capacidade com recursos avançados para acabamento eficiente de superfícies.')
+        [
+          'en-US'
+        ]('High-capacity fine grader with advanced features for efficient surface finishing.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -54,36 +54,36 @@ const x456Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Hoch effizienter Tiefbergbaubagger, konzipiert für die Gewinnung von Ressourcen aus der Tiefe.'
-        )
-        ['it-IT'](
-          "Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità."
-        )
-        ['nl-NL'](
-          'Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.'
-        )
-        ['fr-FR'](
-          'Excavateur minier profond hautement efficace conçu pour extraire des ressources en profondeur.'
-        )
-        ['en-AU'](
-          'Highly efficient deep mining excavator designed for extracting resources from depth.'
-        )
-        ['es-ES'](
-          'Excavadora minera profunda altamente eficiente diseñada para extraer recursos desde la profundidad.'
-        )
-        ['en-GB'](
-          'Highly efficient deep mining excavator designed for extracting resources from depth.'
-        )
-        ['en-NZ'](
-          'Highly efficient deep mining excavator designed for extracting resources from depth.'
-        )
-        ['pt-PT'](
-          'Escavadeira para mineração profunda altamente eficiente projetada para extrair recursos das profundezas.'
-        )
-        ['en-US'](
-          'Highly efficient deep mining excavator designed for extracting resources from depth.'
-        )
+        [
+          'de-DE'
+        ]('Hoch effizienter Tiefbergbaubagger, konzipiert für die Gewinnung von Ressourcen aus der Tiefe.')
+        [
+          'it-IT'
+        ]("Escavatore per miniere profonde ad alta efficienza progettato per l'estrazione di risorse in profondità.")
+        [
+          'nl-NL'
+        ]('Zeer efficiënte diepe mijnbouw graafmachine ontworpen voor het extraheren van grondstoffen uit de diepte.')
+        [
+          'fr-FR'
+        ]('Excavateur minier profond hautement efficace conçu pour extraire des ressources en profondeur.')
+        [
+          'en-AU'
+        ]('Highly efficient deep mining excavator designed for extracting resources from depth.')
+        [
+          'es-ES'
+        ]('Excavadora minera profunda altamente eficiente diseñada para extraer recursos desde la profundidad.')
+        [
+          'en-GB'
+        ]('Highly efficient deep mining excavator designed for extracting resources from depth.')
+        [
+          'en-NZ'
+        ]('Highly efficient deep mining excavator designed for extracting resources from depth.')
+        [
+          'pt-PT'
+        ]('Escavadeira para mineração profunda altamente eficiente projetada para extrair recursos das profundezas.')
+        [
+          'en-US'
+        ]('Highly efficient deep mining excavator designed for extracting resources from depth.')
     )
     .slug(
       LocalizedStringDraft.presets

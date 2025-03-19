@@ -53,24 +53,24 @@ const airFilter = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Filtert die in den Motor eindringende Luft, um Motorverschleiß zu verhindern.'
-        )
-        ['it-IT'](
-          "Filtra l'aria che entra nel motore per prevenire l'usura del motore."
-        )
-        ['nl-NL'](
-          'Filtert de lucht die de motor binnenkomt om motorslijtage te voorkomen.'
-        )
-        ['fr-FR'](
-          "Filtre l'air entrant dans le moteur pour prévenir l'usure du moteur."
-        )
-        ['es-ES'](
-          'Filtra el aire que entra en el motor para prevenir el desgaste del motor.'
-        )
-        ['pt-PT'](
-          'Filtra o ar que entra no motor para prevenir o desgaste do motor.'
-        )
+        [
+          'de-DE'
+        ]('Filtert die in den Motor eindringende Luft, um Motorverschleiß zu verhindern.')
+        [
+          'it-IT'
+        ]("Filtra l'aria che entra nel motore per prevenire l'usura del motore.")
+        [
+          'nl-NL'
+        ]('Filtert de lucht die de motor binnenkomt om motorslijtage te voorkomen.')
+        [
+          'fr-FR'
+        ]("Filtre l'air entrant dans le moteur pour prévenir l'usure du moteur.")
+        [
+          'es-ES'
+        ]('Filtra el aire que entra en el motor para prevenir el desgaste del motor.')
+        [
+          'pt-PT'
+        ]('Filtra o ar que entra no motor para prevenir o desgaste do motor.')
         ['en-US']('Filters air entering the engine to prevent engine wear.')
         ['en-GB']('Filters air entering the engine to prevent engine wear.')
         ['en-AU']('Filters air entering the engine to prevent engine wear.')

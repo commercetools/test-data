@@ -54,36 +54,36 @@ const uu789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Kompakter Mobilkran, geeignet für eine Vielzahl von Hebearbeiten mit einfacher Mobilität.'
-        )
-        ['it-IT'](
-          'Gru mobile compatta adatta per una varietà di compiti di sollevamento con facilità di mobilità.'
-        )
-        ['nl-NL'](
-          'Compacte mobiele kraan geschikt voor diverse hijstaken met gemak van mobiliteit.'
-        )
-        ['fr-FR'](
-          'Grue mobile compacte adaptée à diverses tâches de levage avec une grande facilité de mobilité.'
-        )
-        ['en-AU'](
-          'Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.'
-        )
-        ['es-ES'](
-          'Grúa móvil compacta adecuada para una variedad de tareas de elevación con facilidad de movilidad.'
-        )
-        ['en-GB'](
-          'Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.'
-        )
-        ['en-NZ'](
-          'Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.'
-        )
-        ['pt-PT'](
-          'Grua móvel compacta adequada para uma variedade de tarefas de elevação com facilidade de mobilidade.'
-        )
-        ['en-US'](
-          'Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.'
-        )
+        [
+          'de-DE'
+        ]('Kompakter Mobilkran, geeignet für eine Vielzahl von Hebearbeiten mit einfacher Mobilität.')
+        [
+          'it-IT'
+        ]('Gru mobile compatta adatta per una varietà di compiti di sollevamento con facilità di mobilità.')
+        [
+          'nl-NL'
+        ]('Compacte mobiele kraan geschikt voor diverse hijstaken met gemak van mobiliteit.')
+        [
+          'fr-FR'
+        ]('Grue mobile compacte adaptée à diverses tâches de levage avec une grande facilité de mobilité.')
+        [
+          'en-AU'
+        ]('Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.')
+        [
+          'es-ES'
+        ]('Grúa móvil compacta adecuada para una variedad de tareas de elevación con facilidad de movilidad.')
+        [
+          'en-GB'
+        ]('Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.')
+        [
+          'en-NZ'
+        ]('Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.')
+        [
+          'pt-PT'
+        ]('Grua móvel compacta adequada para uma variedade de tarefas de elevação com facilidade de mobilidade.')
+        [
+          'en-US'
+        ]('Compact mobile crane suitable for a variety of lifting tasks with ease of mobility.')
     )
     .slug(
       LocalizedStringDraft.presets

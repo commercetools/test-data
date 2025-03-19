@@ -54,36 +54,36 @@ const gg123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Vibrationswalze für die effiziente Verdichtung verschiedener Bodentypen.'
-        )
-        ['it-IT'](
-          'Potente compattatore vibrante per terreni per la compattazione efficiente di vari tipi di suolo.'
-        )
-        ['nl-NL'](
-          'Krachtige trilbodemverdichter voor efficiënte verdichting van diverse grondsoorten.'
-        )
-        ['fr-FR'](
-          'Compacteur de sol vibrant puissant pour la compactage efficace de différents types de sols.'
-        )
-        ['en-AU'](
-          'Powerful vibratory soil compactor for efficient compaction of various soil types.'
-        )
-        ['es-ES'](
-          'Compactador de suelo vibratorio potente para la compactación eficiente de diversos tipos de suelos.'
-        )
-        ['en-GB'](
-          'Powerful vibratory soil compactor for efficient compaction of various soil types.'
-        )
-        ['en-NZ'](
-          'Powerful vibratory soil compactor for efficient compaction of various soil types.'
-        )
-        ['pt-PT'](
-          'Compactador de solo vibratório potente para compactação eficiente de vários tipos de solo.'
-        )
-        ['en-US'](
-          'Powerful vibratory soil compactor for efficient compaction of various soil types.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Vibrationswalze für die effiziente Verdichtung verschiedener Bodentypen.')
+        [
+          'it-IT'
+        ]('Potente compattatore vibrante per terreni per la compattazione efficiente di vari tipi di suolo.')
+        [
+          'nl-NL'
+        ]('Krachtige trilbodemverdichter voor efficiënte verdichting van diverse grondsoorten.')
+        [
+          'fr-FR'
+        ]('Compacteur de sol vibrant puissant pour la compactage efficace de différents types de sols.')
+        [
+          'en-AU'
+        ]('Powerful vibratory soil compactor for efficient compaction of various soil types.')
+        [
+          'es-ES'
+        ]('Compactador de suelo vibratorio potente para la compactación eficiente de diversos tipos de suelos.')
+        [
+          'en-GB'
+        ]('Powerful vibratory soil compactor for efficient compaction of various soil types.')
+        [
+          'en-NZ'
+        ]('Powerful vibratory soil compactor for efficient compaction of various soil types.')
+        [
+          'pt-PT'
+        ]('Compactador de solo vibratório potente para compactação eficiente de vários tipos de solo.')
+        [
+          'en-US'
+        ]('Powerful vibratory soil compactor for efficient compaction of various soil types.')
     )
     .slug(
       LocalizedStringDraft.presets

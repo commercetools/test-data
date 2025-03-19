@@ -43,9 +43,9 @@ const ss123Qr = (): TProductDraftBuilder =>
         ['de-DE']('SS123 QR Turmkran für Hochhausbau')
         ['it-IT']('SS123 QR Gru a Torre per Costruzioni Alte')
         ['nl-NL']('SS123 QR Torenkraan voor Hoogbouw')
-        ['fr-FR'](
-          'SS123 QR Grue de chantier pour la construction de gratte-ciel'
-        )
+        [
+          'fr-FR'
+        ]('SS123 QR Grue de chantier pour la construction de gratte-ciel')
         ['en-AU']('SS123 QR Tower Crane for High-rise Construction')
         ['es-ES']('SS123 QR Grúa torre para construcción de rascacielos')
         ['en-GB']('SS123 QR Tower Crane for High-rise Construction')
@@ -56,36 +56,36 @@ const ss123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Hochleistungs-Turmkran für effizientes Heben in Hochhausbau-Projekten.'
-        )
-        ['it-IT'](
-          'Gru a torre ad alte prestazioni progettata per sollevamenti efficienti in progetti di costruzione di grattacieli.'
-        )
-        ['nl-NL'](
-          'Hoogpresterende torenkraan ontworpen voor efficiënt hijsen bij hoogbouwprojecten.'
-        )
-        ['fr-FR'](
-          'Grue de chantier haute performance conçue pour un levage efficace dans les projets de construction de gratte-ciel.'
-        )
-        ['en-AU'](
-          'High-performance tower crane designed for efficient lifting in high-rise construction projects.'
-        )
-        ['es-ES'](
-          'Grúa torre de alto rendimiento diseñada para elevación eficiente en proyectos de construcción de rascacielos.'
-        )
-        ['en-GB'](
-          'High-performance tower crane designed for efficient lifting in high-rise construction projects.'
-        )
-        ['en-NZ'](
-          'High-performance tower crane designed for efficient lifting in high-rise construction projects.'
-        )
-        ['pt-PT'](
-          'Grua de torre de alto desempenho projetada para elevação eficiente em projetos de construção de edifícios altos.'
-        )
-        ['en-US'](
-          'High-performance tower crane designed for efficient lifting in high-rise construction projects.'
-        )
+        [
+          'de-DE'
+        ]('Hochleistungs-Turmkran für effizientes Heben in Hochhausbau-Projekten.')
+        [
+          'it-IT'
+        ]('Gru a torre ad alte prestazioni progettata per sollevamenti efficienti in progetti di costruzione di grattacieli.')
+        [
+          'nl-NL'
+        ]('Hoogpresterende torenkraan ontworpen voor efficiënt hijsen bij hoogbouwprojecten.')
+        [
+          'fr-FR'
+        ]('Grue de chantier haute performance conçue pour un levage efficace dans les projets de construction de gratte-ciel.')
+        [
+          'en-AU'
+        ]('High-performance tower crane designed for efficient lifting in high-rise construction projects.')
+        [
+          'es-ES'
+        ]('Grúa torre de alto rendimiento diseñada para elevación eficiente en proyectos de construcción de rascacielos.')
+        [
+          'en-GB'
+        ]('High-performance tower crane designed for efficient lifting in high-rise construction projects.')
+        [
+          'en-NZ'
+        ]('High-performance tower crane designed for efficient lifting in high-rise construction projects.')
+        [
+          'pt-PT'
+        ]('Grua de torre de alto desempenho projetada para elevação eficiente em projetos de construção de edifícios altos.')
+        [
+          'en-US'
+        ]('High-performance tower crane designed for efficient lifting in high-rise construction projects.')
     )
     .slug(
       LocalizedStringDraft.presets

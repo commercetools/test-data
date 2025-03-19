@@ -54,36 +54,36 @@ const v456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Starren Kipplaster für den zuverlässigen Transport großer Materialmengen im Bergbau und Bauwesen.'
-        )
-        ['it-IT'](
-          'Camion ribaltabile rigido V456 ST per impieghi pesanti per il trasporto affidabile di grandi volumi di materiale in miniere e costruzioni.'
-        )
-        ['nl-NL'](
-          'V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.'
-        )
-        ['fr-FR'](
-          "Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l'exploitation minière et la construction."
-        )
-        ['en-AU'](
-          'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'
-        )
-        ['es-ES'](
-          'Camión volquete rígido resistente para el transporte confiable de grandes volúmenes de material en minería y construcción.'
-        )
-        ['en-GB'](
-          'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'
-        )
-        ['en-NZ'](
-          'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'
-        )
-        ['pt-PT'](
-          'Caminhão basculante rígido V456 ST para serviço pesado para transporte confiável de grandes volumes de material em mineração e construção.'
-        )
-        ['en-US'](
-          'V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Starren Kipplaster für den zuverlässigen Transport großer Materialmengen im Bergbau und Bauwesen.')
+        [
+          'it-IT'
+        ]('Camion ribaltabile rigido V456 ST per impieghi pesanti per il trasporto affidabile di grandi volumi di materiale in miniere e costruzioni.')
+        [
+          'nl-NL'
+        ]('V456 ST Zware starre dumptruck voor betrouwbaar transport van grote hoeveelheden materiaal in mijnbouw en bouw.')
+        [
+          'fr-FR'
+        ]("Camion benne rigide robuste pour le transport fiable de grandes quantités de matériau dans l'exploitation minière et la construction.")
+        [
+          'en-AU'
+        ]('V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.')
+        [
+          'es-ES'
+        ]('Camión volquete rígido resistente para el transporte confiable de grandes volúmenes de material en minería y construcción.')
+        [
+          'en-GB'
+        ]('V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.')
+        [
+          'en-NZ'
+        ]('V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.')
+        [
+          'pt-PT'
+        ]('Caminhão basculante rígido V456 ST para serviço pesado para transporte confiável de grandes volumes de material em mineração e construção.')
+        [
+          'en-US'
+        ]('V456 ST Heavy-duty rigid dump truck for reliable transport of large volumes of material in mining and construction.')
     )
     .slug(
       LocalizedStringDraft.presets
