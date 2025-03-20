@@ -1,5 +1,21 @@
 # @commercetools-test-data/product
 
+## 10.14.1
+
+### Patch Changes
+
+- [#758](https://github.com/commercetools/test-data/pull/758) [`eee5722`](https://github.com/commercetools/test-data/commit/eee57224ae26cbe1131c2aaa9645fb8c9abdb4aa) Thanks [@YahiaElTai](https://github.com/YahiaElTai)! - fix(deps): update dependency @commercetools/platform-sdk to v8.5.0
+
+- Updated dependencies [[`eee5722`](https://github.com/commercetools/test-data/commit/eee57224ae26cbe1131c2aaa9645fb8c9abdb4aa)]:
+  - @commercetools-test-data/product-type@10.14.1
+  - @commercetools-test-data/tax-category@10.14.1
+  - @commercetools-test-data/category@10.14.1
+  - @commercetools-test-data/channel@10.14.1
+  - @commercetools-test-data/commons@10.14.1
+  - @commercetools-test-data/graphql-types@10.14.1
+  - @commercetools-test-data/core@10.14.1
+  - @commercetools-test-data/utils@10.14.1
+
 ## 10.14.0
 
 ### Patch Changes

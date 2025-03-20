@@ -1,5 +1,11 @@
 # @commercetools-test-data/graphql-types
 
+## 10.14.1
+
+### Patch Changes
+
+- [#758](https://github.com/commercetools/test-data/pull/758) [`eee5722`](https://github.com/commercetools/test-data/commit/eee57224ae26cbe1131c2aaa9645fb8c9abdb4aa) Thanks [@YahiaElTai](https://github.com/YahiaElTai)! - fix(deps): update dependency @commercetools/platform-sdk to v8.5.0
+
 ## 10.14.0
 
 ## 10.13.0
