@@ -54,36 +54,36 @@ const nn456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Radbagger mit hoher Kapazität und speziellen Funktionen für effiziente Bergbauoperationen.'
-        )
-        ['it-IT'](
-          'Escavatore su ruote ad alta capacità con caratteristiche specializzate per operazioni di estrazione efficienti.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits wiellader met gespecialiseerde functies voor efficiënte mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues haute capacité avec des fonctionnalités spécialisées pour des opérations minières efficaces.'
-        )
-        ['en-AU'](
-          'High-capacity wheeled excavator with specialized features for efficient mining operations.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas de alta capacidad con características especializadas para operaciones mineras eficientes.'
-        )
-        ['en-GB'](
-          'High-capacity wheeled excavator with specialized features for efficient mining operations.'
-        )
-        ['en-NZ'](
-          'High-capacity wheeled excavator with specialized features for efficient mining operations.'
-        )
-        ['pt-PT'](
-          'Escavadeira com rodas de alta capacidade com recursos especializados para operações eficientes de mineração.'
-        )
-        ['en-US'](
-          'High-capacity wheeled excavator with specialized features for efficient mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Radbagger mit hoher Kapazität und speziellen Funktionen für effiziente Bergbauoperationen.')
+        [
+          'it-IT'
+        ]('Escavatore su ruote ad alta capacità con caratteristiche specializzate per operazioni di estrazione efficienti.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits wiellader met gespecialiseerde functies voor efficiënte mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues haute capacité avec des fonctionnalités spécialisées pour des opérations minières efficaces.')
+        [
+          'en-AU'
+        ]('High-capacity wheeled excavator with specialized features for efficient mining operations.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas de alta capacidad con características especializadas para operaciones mineras eficientes.')
+        [
+          'en-GB'
+        ]('High-capacity wheeled excavator with specialized features for efficient mining operations.')
+        [
+          'en-NZ'
+        ]('High-capacity wheeled excavator with specialized features for efficient mining operations.')
+        [
+          'pt-PT'
+        ]('Escavadeira com rodas de alta capacidade com recursos especializados para operações eficientes de mineração.')
+        [
+          'en-US'
+        ]('High-capacity wheeled excavator with specialized features for efficient mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

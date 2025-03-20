@@ -53,24 +53,24 @@ const hydraulicHose = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Flexibler Schlauch zum Übertragen von Hydraulikflüssigkeit zwischen Komponenten.'
-        )
-        ['it-IT'](
-          'Tubo flessibile per convogliare il fluido idraulico tra i componenti.'
-        )
-        ['nl-NL'](
-          'Flexibele slang voor het overbrengen van hydraulische vloeistof tussen componenten.'
-        )
-        ['fr-FR'](
-          'Tuyau flexible pour transporter le fluide hydraulique entre les composants.'
-        )
-        ['es-ES'](
-          'Manguera flexible para transportar fluido hidráulico entre componentes.'
-        )
-        ['pt-PT'](
-          'Mangueira flexível para conduzir fluido hidráulico entre componentes.'
-        )
+        [
+          'de-DE'
+        ]('Flexibler Schlauch zum Übertragen von Hydraulikflüssigkeit zwischen Komponenten.')
+        [
+          'it-IT'
+        ]('Tubo flessibile per convogliare il fluido idraulico tra i componenti.')
+        [
+          'nl-NL'
+        ]('Flexibele slang voor het overbrengen van hydraulische vloeistof tussen componenten.')
+        [
+          'fr-FR'
+        ]('Tuyau flexible pour transporter le fluide hydraulique entre les composants.')
+        [
+          'es-ES'
+        ]('Manguera flexible para transportar fluido hidráulico entre componentes.')
+        [
+          'pt-PT'
+        ]('Mangueira flexível para conduzir fluido hidráulico entre componentes.')
         ['en-US']('Flexible hose to convey hydraulic fluid between components.')
         ['en-GB']('Flexible hose to convey hydraulic fluid between components.')
         ['en-AU']('Flexible hose to convey hydraulic fluid between components.')

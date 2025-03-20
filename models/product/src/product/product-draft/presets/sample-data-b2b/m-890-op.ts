@@ -54,36 +54,36 @@ const m890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Amphibienbagger mit speziellen Funktionen für vielseitige Land- und Wasserprojekte.'
-        )
-        ['it-IT'](
-          'Escavatore anfibio con caratteristiche specializzate per progetti versatili su terra e in acqua.'
-        )
-        ['nl-NL'](
-          'Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.'
-        )
-        ['fr-FR'](
-          "Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l'eau."
-        )
-        ['en-AU'](
-          'Amphibious excavator with specialized features for versatile land and water projects.'
-        )
-        ['es-ES'](
-          'Excavadora anfibia con características especializadas para proyectos versátiles en tierra y agua.'
-        )
-        ['en-GB'](
-          'Amphibious excavator with specialized features for versatile land and water projects.'
-        )
-        ['en-NZ'](
-          'Amphibious excavator with specialized features for versatile land and water projects.'
-        )
-        ['pt-PT'](
-          'Escavadeira anfíbia com características especializadas para projetos versáteis em terra e água.'
-        )
-        ['en-US'](
-          'Amphibious excavator with specialized features for versatile land and water projects.'
-        )
+        [
+          'de-DE'
+        ]('Amphibienbagger mit speziellen Funktionen für vielseitige Land- und Wasserprojekte.')
+        [
+          'it-IT'
+        ]('Escavatore anfibio con caratteristiche specializzate per progetti versatili su terra e in acqua.')
+        [
+          'nl-NL'
+        ]('Amfibische graafmachine met gespecialiseerde functies voor veelzijdige land- en waterprojecten.')
+        [
+          'fr-FR'
+        ]("Excavateur amphibie avec des fonctionnalités spécialisées pour des projets polyvalents sur terre et dans l'eau.")
+        [
+          'en-AU'
+        ]('Amphibious excavator with specialized features for versatile land and water projects.')
+        [
+          'es-ES'
+        ]('Excavadora anfibia con características especializadas para proyectos versátiles en tierra y agua.')
+        [
+          'en-GB'
+        ]('Amphibious excavator with specialized features for versatile land and water projects.')
+        [
+          'en-NZ'
+        ]('Amphibious excavator with specialized features for versatile land and water projects.')
+        [
+          'pt-PT'
+        ]('Escavadeira anfíbia com características especializadas para projetos versáteis em terra e água.')
+        [
+          'en-US'
+        ]('Amphibious excavator with specialized features for versatile land and water projects.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -54,36 +54,36 @@ const ww567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Raupenkran mit fortschrittlichen Stabilitätsfunktionen für anspruchsvolle Hebeoperationen.'
-        )
-        ['it-IT'](
-          'Gru cingolata robusta con caratteristiche avanzate di stabilità per operazioni di sollevamento pesanti.'
-        )
-        ['nl-NL'](
-          'Robuuste rupskraan met geavanceerde stabiliteitsfuncties voor zware hijswerkzaamheden.'
-        )
-        ['fr-FR'](
-          'Grue sur chenilles robuste avec des fonctionnalités de stabilité avancées pour des opérations de levage intensives.'
-        )
-        ['en-AU'](
-          'Robust crawler crane with advanced stability features for heavy-duty lifting operations.'
-        )
-        ['es-ES'](
-          'Grúa sobre orugas robusta con características avanzadas de estabilidad para operaciones de elevación de servicio pesado.'
-        )
-        ['en-GB'](
-          'Robust crawler crane with advanced stability features for heavy-duty lifting operations.'
-        )
-        ['en-NZ'](
-          'Robust crawler crane with advanced stability features for heavy-duty lifting operations.'
-        )
-        ['pt-PT'](
-          'Grua de esteiras robusta com características avançadas de estabilidade para operações pesadas de elevação.'
-        )
-        ['en-US'](
-          'Robust crawler crane with advanced stability features for heavy-duty lifting operations.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Raupenkran mit fortschrittlichen Stabilitätsfunktionen für anspruchsvolle Hebeoperationen.')
+        [
+          'it-IT'
+        ]('Gru cingolata robusta con caratteristiche avanzate di stabilità per operazioni di sollevamento pesanti.')
+        [
+          'nl-NL'
+        ]('Robuuste rupskraan met geavanceerde stabiliteitsfuncties voor zware hijswerkzaamheden.')
+        [
+          'fr-FR'
+        ]('Grue sur chenilles robuste avec des fonctionnalités de stabilité avancées pour des opérations de levage intensives.')
+        [
+          'en-AU'
+        ]('Robust crawler crane with advanced stability features for heavy-duty lifting operations.')
+        [
+          'es-ES'
+        ]('Grúa sobre orugas robusta con características avanzadas de estabilidad para operaciones de elevación de servicio pesado.')
+        [
+          'en-GB'
+        ]('Robust crawler crane with advanced stability features for heavy-duty lifting operations.')
+        [
+          'en-NZ'
+        ]('Robust crawler crane with advanced stability features for heavy-duty lifting operations.')
+        [
+          'pt-PT'
+        ]('Grua de esteiras robusta com características avançadas de estabilidade para operações pesadas de elevação.')
+        [
+          'en-US'
+        ]('Robust crawler crane with advanced stability features for heavy-duty lifting operations.')
     )
     .slug(
       LocalizedStringDraft.presets

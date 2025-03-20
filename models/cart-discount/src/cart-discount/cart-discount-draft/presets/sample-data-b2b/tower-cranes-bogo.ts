@@ -33,9 +33,9 @@ const towerCranesBogo = (): TCartDiscountDraftBuilder =>
     .name(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Kaufen Sie einen Turmkran und erhalten Sie den zweiten kostenlos'
-        )
+        [
+          'de-DE'
+        ]('Kaufen Sie einen Turmkran und erhalten Sie den zweiten kostenlos')
         ['it-IT']('Acquista una gru a torre e ricevi la seconda gratis')
         ['nl-NL']('Koop één torenkraan en krijg de tweede gratis')
         ['fr-FR']('Achetez une grue à tour et recevez la deuxième gratuitement')
@@ -49,36 +49,36 @@ const towerCranesBogo = (): TCartDiscountDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Zwei zum Preis von einem bei allen Turmkränen (Rabatt auf den günstigsten Artikel)'
-        )
-        ['it-IT'](
-          "Due al prezzo di uno su tutte le gru a torre (sconto sull'articolo più economico)"
-        )
-        ['nl-NL'](
-          'Twee voor de prijs van één op alle torenkranen (korting op het goedkoopste artikel)'
-        )
-        ['fr-FR'](
-          "Deux pour le prix d'un sur toutes les grues à tour (réduction sur l'article le moins cher)"
-        )
-        ['en-AU'](
-          'Two for one on all tower cranes (discount on the cheapest item)'
-        )
-        ['es-ES'](
-          'Dos por uno en todas las grúas torre (descuento en el artículo más barato)'
-        )
-        ['en-GB'](
-          'Two for one on all tower cranes (discount on the cheapest item)'
-        )
-        ['en-NZ'](
-          'Two for one on all tower cranes (discount on the cheapest item)'
-        )
-        ['pt-PT'](
-          'Dois pelo preço de um em todas as gruas torre (desconto no item mais barato)'
-        )
-        ['en-US'](
-          'Two for one on all tower cranes (discount on the cheapest item)'
-        )
+        [
+          'de-DE'
+        ]('Zwei zum Preis von einem bei allen Turmkränen (Rabatt auf den günstigsten Artikel)')
+        [
+          'it-IT'
+        ]("Due al prezzo di uno su tutte le gru a torre (sconto sull'articolo più economico)")
+        [
+          'nl-NL'
+        ]('Twee voor de prijs van één op alle torenkranen (korting op het goedkoopste artikel)')
+        [
+          'fr-FR'
+        ]("Deux pour le prix d'un sur toutes les grues à tour (réduction sur l'article le moins cher)")
+        [
+          'en-AU'
+        ]('Two for one on all tower cranes (discount on the cheapest item)')
+        [
+          'es-ES'
+        ]('Dos por uno en todas las grúas torre (descuento en el artículo más barato)')
+        [
+          'en-GB'
+        ]('Two for one on all tower cranes (discount on the cheapest item)')
+        [
+          'en-NZ'
+        ]('Two for one on all tower cranes (discount on the cheapest item)')
+        [
+          'pt-PT'
+        ]('Dois pelo preço de um em todas as gruas torre (desconto no item mais barato)')
+        [
+          'en-US'
+        ]('Two for one on all tower cranes (discount on the cheapest item)')
     )
     .stackingMode(stackingMode.Stacking)
     .isActive(true)

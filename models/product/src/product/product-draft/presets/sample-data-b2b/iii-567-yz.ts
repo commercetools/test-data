@@ -54,36 +54,36 @@ const iii567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Rammpfahlhammer mit fortschrittlicher Schlagkraftregelung für effizientes und kontrolliertes Rammen von Fundamenten.'
-        )
-        ['it-IT'](
-          "Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato."
-        )
-        ['nl-NL'](
-          'Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.'
-        )
-        ['fr-FR'](
-          "Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé."
-        )
-        ['en-AU'](
-          'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'
-        )
-        ['es-ES'](
-          'Martillo de pilotaje robusto con control avanzado de la fuerza de impacto para pilotes de cimentación eficientes y controlados.'
-        )
-        ['en-GB'](
-          'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'
-        )
-        ['en-NZ'](
-          'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'
-        )
-        ['pt-PT'](
-          'Martelo de cravação robusto com controle avançado de força de impacto para cravação eficiente e controlada de fundações.'
-        )
-        ['en-US'](
-          'Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Rammpfahlhammer mit fortschrittlicher Schlagkraftregelung für effizientes und kontrolliertes Rammen von Fundamenten.')
+        [
+          'it-IT'
+        ]("Martello robusto per pali con controllo avanzato della forza d'impatto per piantare pali in modo efficiente e controllato.")
+        [
+          'nl-NL'
+        ]('Robuuste heihamer met geavanceerde slagkrachtcontrole voor efficiënt en gecontroleerd heien van funderingen.')
+        [
+          'fr-FR'
+        ]("Marteau de battage robuste avec un contrôle avancé de la force d'impact pour un fonçage de fondation efficace et maîtrisé.")
+        [
+          'en-AU'
+        ]('Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.')
+        [
+          'es-ES'
+        ]('Martillo de pilotaje robusto con control avanzado de la fuerza de impacto para pilotes de cimentación eficientes y controlados.')
+        [
+          'en-GB'
+        ]('Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.')
+        [
+          'en-NZ'
+        ]('Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.')
+        [
+          'pt-PT'
+        ]('Martelo de cravação robusto com controle avançado de força de impacto para cravação eficiente e controlada de fundações.')
+        [
+          'en-US'
+        ]('Robust piling hammer with advanced impact force control for efficient and controlled foundation piling.')
     )
     .slug(
       LocalizedStringDraft.presets

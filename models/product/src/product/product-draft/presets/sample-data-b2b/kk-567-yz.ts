@@ -54,36 +54,36 @@ const kk567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Deponie-Verdichter mit speziellen Funktionen für effektive Verdichtung von Abfällen.'
-        )
-        ['it-IT'](
-          'Compattatore avanzato per discariche con caratteristiche specializzate per una compattazione efficace dei rifiuti.'
-        )
-        ['nl-NL'](
-          'Geavanceerde stortplaatsverdichter met gespecialiseerde functies voor effectieve afvalverdichting.'
-        )
-        ['fr-FR'](
-          'Compacteur de décharge avancé avec des fonctionnalités spécialisées pour un compactage efficace des déchets.'
-        )
-        ['en-AU'](
-          'Advanced landfill compactor with specialized features for effective waste compaction.'
-        )
-        ['es-ES'](
-          'Compactador de vertedero avanzado con características especializadas para una compactación efectiva de residuos.'
-        )
-        ['en-GB'](
-          'Advanced landfill compactor with specialized features for effective waste compaction.'
-        )
-        ['en-NZ'](
-          'Advanced landfill compactor with specialized features for effective waste compaction.'
-        )
-        ['pt-PT'](
-          'Compactador de aterro avançado com recursos especializados para compactação eficaz de resíduos.'
-        )
-        ['en-US'](
-          'Advanced landfill compactor with specialized features for effective waste compaction.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Deponie-Verdichter mit speziellen Funktionen für effektive Verdichtung von Abfällen.')
+        [
+          'it-IT'
+        ]('Compattatore avanzato per discariche con caratteristiche specializzate per una compattazione efficace dei rifiuti.')
+        [
+          'nl-NL'
+        ]('Geavanceerde stortplaatsverdichter met gespecialiseerde functies voor effectieve afvalverdichting.')
+        [
+          'fr-FR'
+        ]('Compacteur de décharge avancé avec des fonctionnalités spécialisées pour un compactage efficace des déchets.')
+        [
+          'en-AU'
+        ]('Advanced landfill compactor with specialized features for effective waste compaction.')
+        [
+          'es-ES'
+        ]('Compactador de vertedero avanzado con características especializadas para una compactación efectiva de residuos.')
+        [
+          'en-GB'
+        ]('Advanced landfill compactor with specialized features for effective waste compaction.')
+        [
+          'en-NZ'
+        ]('Advanced landfill compactor with specialized features for effective waste compaction.')
+        [
+          'pt-PT'
+        ]('Compactador de aterro avançado com recursos especializados para compactação eficaz de resíduos.')
+        [
+          'en-US'
+        ]('Advanced landfill compactor with specialized features for effective waste compaction.')
     )
     .slug(
       LocalizedStringDraft.presets

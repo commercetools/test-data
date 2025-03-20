@@ -34,6 +34,7 @@ const generator = Generator<TProjectExtension>({
     ),
     sampleDataImport: fake(() => SampleDataImport.random()),
     isCustomerEmailValidationDisabled: fake((f) => f.datatype.boolean()),
+    isSingleCustomerGroupAssignmentHidden: fake((f) => f.datatype.boolean()),
   },
 });
 

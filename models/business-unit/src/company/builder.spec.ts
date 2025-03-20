@@ -92,10 +92,17 @@ describe('builder', () => {
         version: expect.any(Number),
         key: expect.any(String),
         status: expect.any(String),
-        storesRef: expect.objectContaining({
-          typeId: 'store',
-        }),
         stores: [],
+        storesRef: expect.arrayContaining([
+          expect.objectContaining({
+            typeId: 'store',
+          }),
+        ]),
+        inheritedStoresRef: expect.arrayContaining([
+          expect.objectContaining({
+            typeId: 'store',
+          }),
+        ]),
         storeMode: expect.any(String),
         unitType: 'Company',
         name: expect.any(String),
@@ -128,7 +135,6 @@ describe('builder', () => {
           userRef: expect.objectContaining({ typeId: 'user' }),
         }),
         ancestors: expect.any(Array),
-        inheritedStores: null,
         __typename: 'BusinessUnit',
       })
     )

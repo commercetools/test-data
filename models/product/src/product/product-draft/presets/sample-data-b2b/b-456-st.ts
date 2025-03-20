@@ -54,36 +54,36 @@ const b456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Baulader für verschiedene Bau- und Ladeanwendungen.'
-        )
-        ['it-IT'](
-          'Caricatore per costruzioni versatile per varie applicazioni di costruzione e carico.'
-        )
-        ['nl-NL'](
-          'Veelzijdige bouwlader voor diverse bouw- en laadtoepassingen.'
-        )
-        ['fr-FR'](
-          'Chargeur de construction polyvalent pour diverses applications de construction et de chargement.'
-        )
-        ['en-AU'](
-          'Versatile construction loader for various construction and loading applications.'
-        )
-        ['es-ES'](
-          'Cargador de construcción versátil para diversas aplicaciones de construcción y carga.'
-        )
-        ['en-GB'](
-          'Versatile construction loader for various construction and loading applications.'
-        )
-        ['en-NZ'](
-          'Versatile construction loader for various construction and loading applications.'
-        )
-        ['pt-PT'](
-          'Carregadeira de construção versátil para várias aplicações de construção e carregamento.'
-        )
-        ['en-US'](
-          'Versatile construction loader for various construction and loading applications.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Baulader für verschiedene Bau- und Ladeanwendungen.')
+        [
+          'it-IT'
+        ]('Caricatore per costruzioni versatile per varie applicazioni di costruzione e carico.')
+        [
+          'nl-NL'
+        ]('Veelzijdige bouwlader voor diverse bouw- en laadtoepassingen.')
+        [
+          'fr-FR'
+        ]('Chargeur de construction polyvalent pour diverses applications de construction et de chargement.')
+        [
+          'en-AU'
+        ]('Versatile construction loader for various construction and loading applications.')
+        [
+          'es-ES'
+        ]('Cargador de construcción versátil para diversas aplicaciones de construcción y carga.')
+        [
+          'en-GB'
+        ]('Versatile construction loader for various construction and loading applications.')
+        [
+          'en-NZ'
+        ]('Versatile construction loader for various construction and loading applications.')
+        [
+          'pt-PT'
+        ]('Carregadeira de construção versátil para várias aplicações de construção e carregamento.')
+        [
+          'en-US'
+        ]('Versatile construction loader for various construction and loading applications.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -82,6 +82,7 @@ describe('builder', () => {
       }),
     ]),
     paymentInfo: null,
+    discountTypeCombination: null,
     country: expect.any(String),
     locale: expect.stringMatching(/^(en-US|de-DE|es-ES)$/),
     origin: null,

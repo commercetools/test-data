@@ -54,36 +54,36 @@ const w789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Starren Kipplaster mit hoher Kapazität und fortschrittlichen Funktionen für den effizienten Transport von Material.'
-        )
-        ['it-IT'](
-          'Camion ribaltabile rigido ad alta capacità con caratteristiche avanzate per il trasporto efficiente di materiali.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits starre dumptruck met geavanceerde functies voor efficiënt materiaaltransport.'
-        )
-        ['fr-FR'](
-          'Camion benne rigide haute capacité avec des fonctionnalités avancées pour un transport efficace des matériaux.'
-        )
-        ['en-AU'](
-          'High-capacity rigid dump truck with advanced features for efficient material transport.'
-        )
-        ['es-ES'](
-          'Camión volquete rígido de alta capacidad con características avanzadas para el transporte eficiente de materiales.'
-        )
-        ['en-GB'](
-          'High-capacity rigid dump truck with advanced features for efficient material transport.'
-        )
-        ['en-NZ'](
-          'High-capacity rigid dump truck with advanced features for efficient material transport.'
-        )
-        ['pt-PT'](
-          'Caminhão basculante rígido de alta capacidade com recursos avançados para transporte eficiente de materiais.'
-        )
-        ['en-US'](
-          'High-capacity rigid dump truck with advanced features for efficient material transport.'
-        )
+        [
+          'de-DE'
+        ]('Starren Kipplaster mit hoher Kapazität und fortschrittlichen Funktionen für den effizienten Transport von Material.')
+        [
+          'it-IT'
+        ]('Camion ribaltabile rigido ad alta capacità con caratteristiche avanzate per il trasporto efficiente di materiali.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits starre dumptruck met geavanceerde functies voor efficiënt materiaaltransport.')
+        [
+          'fr-FR'
+        ]('Camion benne rigide haute capacité avec des fonctionnalités avancées pour un transport efficace des matériaux.')
+        [
+          'en-AU'
+        ]('High-capacity rigid dump truck with advanced features for efficient material transport.')
+        [
+          'es-ES'
+        ]('Camión volquete rígido de alta capacidad con características avanzadas para el transporte eficiente de materiales.')
+        [
+          'en-GB'
+        ]('High-capacity rigid dump truck with advanced features for efficient material transport.')
+        [
+          'en-NZ'
+        ]('High-capacity rigid dump truck with advanced features for efficient material transport.')
+        [
+          'pt-PT'
+        ]('Caminhão basculante rígido de alta capacidade com recursos avançados para transporte eficiente de materiais.')
+        [
+          'en-US'
+        ]('High-capacity rigid dump truck with advanced features for efficient material transport.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -57,6 +57,7 @@ const validateCommonFields = (model: TCartRest | TCartGraphql) => {
       taxedPrice: null,
       taxedShippingPrice: null,
       paymentInfo: null,
+      discountTypeCombination: null,
     })
   );
 };

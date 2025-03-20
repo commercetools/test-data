@@ -54,36 +54,36 @@ const qq567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Schienenradbagger mit hoher Kapazität und fortschrittlichen Funktionen für effizienten Bahnbau.'
-        )
-        ['it-IT'](
-          'Escavatore su ruote per ferrovie ad alta capacità con caratteristiche avanzate per la costruzione efficiente di ferrovie.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits spoorweg wiellader graafmachine met geavanceerde functies voor efficiënte spoorwegbouw.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues pour chemin de fer haute capacité avec des fonctionnalités avancées pour une construction ferroviaire efficace.'
-        )
-        ['en-AU'](
-          'High-capacity railroad wheeled excavator with advanced features for efficient railway construction.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas para ferrocarril de alta capacidad con características avanzadas para una construcción ferroviaria eficiente.'
-        )
-        ['en-GB'](
-          'High-capacity railroad wheeled excavator with advanced features for efficient railway construction.'
-        )
-        ['en-NZ'](
-          'High-capacity railroad wheeled excavator with advanced features for efficient railway construction.'
-        )
-        ['pt-PT'](
-          'Escavadeira rodoviária de alta capacidade com características avançadas para construção eficiente de ferrovias.'
-        )
-        ['en-US'](
-          'High-capacity railroad wheeled excavator with advanced features for efficient railway construction.'
-        )
+        [
+          'de-DE'
+        ]('Schienenradbagger mit hoher Kapazität und fortschrittlichen Funktionen für effizienten Bahnbau.')
+        [
+          'it-IT'
+        ]('Escavatore su ruote per ferrovie ad alta capacità con caratteristiche avanzate per la costruzione efficiente di ferrovie.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits spoorweg wiellader graafmachine met geavanceerde functies voor efficiënte spoorwegbouw.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues pour chemin de fer haute capacité avec des fonctionnalités avancées pour une construction ferroviaire efficace.')
+        [
+          'en-AU'
+        ]('High-capacity railroad wheeled excavator with advanced features for efficient railway construction.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas para ferrocarril de alta capacidad con características avanzadas para una construcción ferroviaria eficiente.')
+        [
+          'en-GB'
+        ]('High-capacity railroad wheeled excavator with advanced features for efficient railway construction.')
+        [
+          'en-NZ'
+        ]('High-capacity railroad wheeled excavator with advanced features for efficient railway construction.')
+        [
+          'pt-PT'
+        ]('Escavadeira rodoviária de alta capacidade com características avançadas para construção eficiente de ferrovias.')
+        [
+          'en-US'
+        ]('High-capacity railroad wheeled excavator with advanced features for efficient railway construction.')
     )
     .slug(
       LocalizedStringDraft.presets

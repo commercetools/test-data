@@ -54,36 +54,36 @@ const ccc567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Robuster Produktionsbohrer mit fortschrittlichen Bohrfähigkeiten für kontinuierliche Bergbauoperationen im Schwerlastbereich.'
-        )
-        ['it-IT'](
-          'Trapano robusto per produzione con capacità avanzate di trapanazione per operazioni minerarie continue e pesanti.'
-        )
-        ['nl-NL'](
-          'Robuuste productieboor met geavanceerde boorcapaciteiten voor continue zware mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Forage de production robuste avec des capacités de forage avancées pour des opérations minières continues et intensives.'
-        )
-        ['en-AU'](
-          'Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.'
-        )
-        ['es-ES'](
-          'Perforadora de producción robusta con capacidades avanzadas de perforación para operaciones mineras continuas y de servicio pesado.'
-        )
-        ['en-GB'](
-          'Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.'
-        )
-        ['en-NZ'](
-          'Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.'
-        )
-        ['pt-PT'](
-          'Perfuratriz de produção robusta com capacidades avançadas de perfuração para operações contínuas de mineração pesada.'
-        )
-        ['en-US'](
-          'Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Robuster Produktionsbohrer mit fortschrittlichen Bohrfähigkeiten für kontinuierliche Bergbauoperationen im Schwerlastbereich.')
+        [
+          'it-IT'
+        ]('Trapano robusto per produzione con capacità avanzate di trapanazione per operazioni minerarie continue e pesanti.')
+        [
+          'nl-NL'
+        ]('Robuuste productieboor met geavanceerde boorcapaciteiten voor continue zware mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Forage de production robuste avec des capacités de forage avancées pour des opérations minières continues et intensives.')
+        [
+          'en-AU'
+        ]('Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.')
+        [
+          'es-ES'
+        ]('Perforadora de producción robusta con capacidades avanzadas de perforación para operaciones mineras continuas y de servicio pesado.')
+        [
+          'en-GB'
+        ]('Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.')
+        [
+          'en-NZ'
+        ]('Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.')
+        [
+          'pt-PT'
+        ]('Perfuratriz de produção robusta com capacidades avançadas de perfuração para operações contínuas de mineração pesada.')
+        [
+          'en-US'
+        ]('Robust production drill with advanced drilling capabilities for continuous heavy-duty mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

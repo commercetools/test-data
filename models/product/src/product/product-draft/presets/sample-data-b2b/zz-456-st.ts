@@ -54,36 +54,36 @@ const zz456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Erkundungsbohrer für verschiedene Bohraufgaben in Erkundungs- und geotechnischen Projekten geeignet.'
-        )
-        ['it-IT'](
-          'Trapano per esplorazione versatile adatto per vari compiti di trapanazione in progetti di esplorazione e geotecnici.'
-        )
-        ['nl-NL'](
-          'Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.'
-        )
-        ['fr-FR'](
-          "Forage d'exploration polyvalent adapté à diverses tâches de forage dans des projets d'exploration et géotechniques."
-        )
-        ['en-AU'](
-          'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'
-        )
-        ['es-ES'](
-          'Perforadora de exploración versátil adecuada para diversas tareas de perforación en proyectos de exploración y geotécnica.'
-        )
-        ['en-GB'](
-          'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'
-        )
-        ['en-NZ'](
-          'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'
-        )
-        ['pt-PT'](
-          'Perfuratriz de exploração versátil adequada para várias tarefas de perfuração em projetos de exploração e geotécnicos.'
-        )
-        ['en-US'](
-          'Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Erkundungsbohrer für verschiedene Bohraufgaben in Erkundungs- und geotechnischen Projekten geeignet.')
+        [
+          'it-IT'
+        ]('Trapano per esplorazione versatile adatto per vari compiti di trapanazione in progetti di esplorazione e geotecnici.')
+        [
+          'nl-NL'
+        ]('Veelzijdige exploratieboor geschikt voor diverse boortaken in exploratie- en geotechnische projecten.')
+        [
+          'fr-FR'
+        ]("Forage d'exploration polyvalent adapté à diverses tâches de forage dans des projets d'exploration et géotechniques.")
+        [
+          'en-AU'
+        ]('Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.')
+        [
+          'es-ES'
+        ]('Perforadora de exploración versátil adecuada para diversas tareas de perforación en proyectos de exploración y geotécnica.')
+        [
+          'en-GB'
+        ]('Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.')
+        [
+          'en-NZ'
+        ]('Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.')
+        [
+          'pt-PT'
+        ]('Perfuratriz de exploração versátil adequada para várias tarefas de perfuração em projetos de exploração e geotécnicos.')
+        [
+          'en-US'
+        ]('Versatile exploration drill suitable for various drilling tasks in exploration and geotechnical projects.')
     )
     .slug(
       LocalizedStringDraft.presets

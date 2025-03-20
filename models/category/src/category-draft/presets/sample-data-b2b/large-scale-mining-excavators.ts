@@ -27,23 +27,23 @@ const largeScaleMiningExcavators = (): TCategoryDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Bagger, die bei Bergbauoperationen im großen Maßstab eingesetzt werden'
-        )
-        ['it-IT'](
-          'Escavatori utilizzati in operazioni minerarie su larga scala'
-        )
+        [
+          'de-DE'
+        ]('Bagger, die bei Bergbauoperationen im großen Maßstab eingesetzt werden')
+        [
+          'it-IT'
+        ]('Escavatori utilizzati in operazioni minerarie su larga scala')
         ['nl-NL']('Graafmachines gebruikt in grootschalige mijnbouwoperaties')
-        ['fr-FR'](
-          'Excavatrices utilisées dans les opérations minières à grande échelle'
-        )
+        [
+          'fr-FR'
+        ]('Excavatrices utilisées dans les opérations minières à grande échelle')
         ['en-AU']('Excavators used in large-scale mining operations')
         ['es-ES']('Excavadoras utilizadas en operaciones mineras a gran escala')
         ['en-GB']('Excavators used in large-scale mining operations')
         ['en-NZ']('Excavators used in large-scale mining operations')
-        ['pt-PT'](
-          'Escavadeiras usadas em operações de mineração de grande escala'
-        )
+        [
+          'pt-PT'
+        ]('Escavadeiras usadas em operações de mineração de grande escala')
         ['en-US']('Excavators used in large-scale mining operations')
     )
     .slug(

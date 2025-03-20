@@ -54,36 +54,36 @@ const aa123Qr = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Straßenplanierer für präzises Nivellieren und Planieren von Straßenoberflächen.'
-        )
-        ['it-IT'](
-          'Livellatrice stradale versatile per livellamento e graduazione precisi delle superfici stradali.'
-        )
-        ['nl-NL'](
-          'Veelzijdige wegnivelleermachine voor precieze nivellering en egalisering van wegoppervlakken.'
-        )
-        ['fr-FR'](
-          'Niveleuse routière polyvalente pour le nivellement et le nivellement précis des surfaces routières.'
-        )
-        ['en-AU'](
-          'Versatile road grader for precise leveling and grading of road surfaces.'
-        )
-        ['es-ES'](
-          'Niveladora de carreteras versátil para el nivelado preciso y la nivelación de superficies de carreteras.'
-        )
-        ['en-GB'](
-          'Versatile road grader for precise leveling and grading of road surfaces.'
-        )
-        ['en-NZ'](
-          'Versatile road grader for precise leveling and grading of road surfaces.'
-        )
-        ['pt-PT'](
-          'Niveladora de estradas versátil para nivelamento preciso e graduação de superfícies rodoviárias.'
-        )
-        ['en-US'](
-          'Versatile road grader for precise leveling and grading of road surfaces.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Straßenplanierer für präzises Nivellieren und Planieren von Straßenoberflächen.')
+        [
+          'it-IT'
+        ]('Livellatrice stradale versatile per livellamento e graduazione precisi delle superfici stradali.')
+        [
+          'nl-NL'
+        ]('Veelzijdige wegnivelleermachine voor precieze nivellering en egalisering van wegoppervlakken.')
+        [
+          'fr-FR'
+        ]('Niveleuse routière polyvalente pour le nivellement et le nivellement précis des surfaces routières.')
+        [
+          'en-AU'
+        ]('Versatile road grader for precise leveling and grading of road surfaces.')
+        [
+          'es-ES'
+        ]('Niveladora de carreteras versátil para el nivelado preciso y la nivelación de superficies de carreteras.')
+        [
+          'en-GB'
+        ]('Versatile road grader for precise leveling and grading of road surfaces.')
+        [
+          'en-NZ'
+        ]('Versatile road grader for precise leveling and grading of road surfaces.')
+        [
+          'pt-PT'
+        ]('Niveladora de estradas versátil para nivelamento preciso e graduação de superfícies rodoviárias.')
+        [
+          'en-US'
+        ]('Versatile road grader for precise leveling and grading of road surfaces.')
     )
     .slug(
       LocalizedStringDraft.presets

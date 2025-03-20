@@ -54,36 +54,36 @@ const rr890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Schienenradbagger mit speziellen Funktionen für verschiedene Aufgaben im Bahnbau.'
-        )
-        ['it-IT'](
-          'Escavatore su ruote per ferrovie versatile con caratteristiche specializzate per vari compiti nella costruzione di ferrovie.'
-        )
-        ['nl-NL'](
-          'Veelzijdige spoorweg wiellader graafmachine met gespecialiseerde functies voor diverse spoorwegbouwtaken.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues polyvalente avec des fonctionnalités spécialisées pour diverses tâches de construction ferroviaire.'
-        )
-        ['en-AU'](
-          'Versatile railroad wheeled excavator with specialized features for various railway construction tasks.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas versátil con características especializadas para diversas tareas de construcción ferroviaria.'
-        )
-        ['en-GB'](
-          'Versatile railroad wheeled excavator with specialized features for various railway construction tasks.'
-        )
-        ['en-NZ'](
-          'Versatile railroad wheeled excavator with specialized features for various railway construction tasks.'
-        )
-        ['pt-PT'](
-          'Escavadeira rodoviária versátil com características especializadas para várias tarefas de construção ferroviária.'
-        )
-        ['en-US'](
-          'Versatile railroad wheeled excavator with specialized features for various railway construction tasks.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Schienenradbagger mit speziellen Funktionen für verschiedene Aufgaben im Bahnbau.')
+        [
+          'it-IT'
+        ]('Escavatore su ruote per ferrovie versatile con caratteristiche specializzate per vari compiti nella costruzione di ferrovie.')
+        [
+          'nl-NL'
+        ]('Veelzijdige spoorweg wiellader graafmachine met gespecialiseerde functies voor diverse spoorwegbouwtaken.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues polyvalente avec des fonctionnalités spécialisées pour diverses tâches de construction ferroviaire.')
+        [
+          'en-AU'
+        ]('Versatile railroad wheeled excavator with specialized features for various railway construction tasks.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas versátil con características especializadas para diversas tareas de construcción ferroviaria.')
+        [
+          'en-GB'
+        ]('Versatile railroad wheeled excavator with specialized features for various railway construction tasks.')
+        [
+          'en-NZ'
+        ]('Versatile railroad wheeled excavator with specialized features for various railway construction tasks.')
+        [
+          'pt-PT'
+        ]('Escavadeira rodoviária versátil com características especializadas para várias tarefas de construção ferroviária.')
+        [
+          'en-US'
+        ]('Versatile railroad wheeled excavator with specialized features for various railway construction tasks.')
     )
     .slug(
       LocalizedStringDraft.presets

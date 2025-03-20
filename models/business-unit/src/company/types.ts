@@ -1,8 +1,8 @@
 import type {
   BusinessUnitKeyReference,
-  KeyReference,
   Company,
   CompanyDraft,
+  StoreKeyReference,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 
@@ -16,9 +16,9 @@ export type TCompanyDraftGraphql = TCompanyDraft;
 export type TCompany = Company;
 export type TCompanyGraphql = Omit<TCompany, 'topLevelUnit' | 'parentUnit'> & {
   ancestors: [];
-  inheritedStores: null;
   __typename: 'BusinessUnit';
-  storesRef: KeyReference;
+  storesRef?: StoreKeyReference[];
+  inheritedStoresRef?: StoreKeyReference[];
   parentUnitRef: null;
   parentUnit?: BusinessUnitKeyReference;
   topLevelUnitRef: BusinessUnitKeyReference;

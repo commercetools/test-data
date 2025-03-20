@@ -54,36 +54,36 @@ const r123Ts = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Leistungsstarker Oberflächenbergbaubagger für den Großbergbau konzipiert.'
-        )
-        ['it-IT'](
-          'Potente escavatore per miniere di superficie progettato per operazioni di estrazione su larga scala.'
-        )
-        ['nl-NL'](
-          'Krachtige oppervlakte mijnbouw graafmachine ontworpen voor grootschalige mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          'Excavateur minier de surface puissant conçu pour les opérations minières à grande échelle.'
-        )
-        ['en-AU'](
-          'Powerful surface mining excavator designed for large-scale mining operations.'
-        )
-        ['es-ES'](
-          'Excavadora minera de superficie potente diseñada para operaciones mineras a gran escala.'
-        )
-        ['en-GB'](
-          'Powerful surface mining excavator designed for large-scale mining operations.'
-        )
-        ['en-NZ'](
-          'Powerful surface mining excavator designed for large-scale mining operations.'
-        )
-        ['pt-PT'](
-          'Escavadeira potente para mineração de superfície projetada para operações de mineração em grande escala.'
-        )
-        ['en-US'](
-          'Powerful surface mining excavator designed for large-scale mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Leistungsstarker Oberflächenbergbaubagger für den Großbergbau konzipiert.')
+        [
+          'it-IT'
+        ]('Potente escavatore per miniere di superficie progettato per operazioni di estrazione su larga scala.')
+        [
+          'nl-NL'
+        ]('Krachtige oppervlakte mijnbouw graafmachine ontworpen voor grootschalige mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]('Excavateur minier de surface puissant conçu pour les opérations minières à grande échelle.')
+        [
+          'en-AU'
+        ]('Powerful surface mining excavator designed for large-scale mining operations.')
+        [
+          'es-ES'
+        ]('Excavadora minera de superficie potente diseñada para operaciones mineras a gran escala.')
+        [
+          'en-GB'
+        ]('Powerful surface mining excavator designed for large-scale mining operations.')
+        [
+          'en-NZ'
+        ]('Powerful surface mining excavator designed for large-scale mining operations.')
+        [
+          'pt-PT'
+        ]('Escavadeira potente para mineração de superfície projetada para operações de mineração em grande escala.')
+        [
+          'en-US'
+        ]('Powerful surface mining excavator designed for large-scale mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

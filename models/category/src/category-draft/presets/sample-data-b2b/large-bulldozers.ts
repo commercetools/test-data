@@ -24,18 +24,18 @@ const largeBulldozers = (): TCategoryDraftBuilder =>
         ['de-DE']('Bulldozer im Großraumbagger- und Baubereich')
         ['it-IT']('Bulldozer per movimento terra e costruzioni su larga scala')
         ['nl-NL']('Bulldozers in grootschalige grondverzet- en bouwprojecten')
-        ['fr-FR'](
-          'Bulldozers pour les travaux de terrassement et de construction à grande échelle'
-        )
+        [
+          'fr-FR'
+        ]('Bulldozers pour les travaux de terrassement et de construction à grande échelle')
         ['en-AU']('Bulldozers in large-scale earthmoving and construction')
-        ['es-ES'](
-          'Bulldozers en movimiento de tierras y construcción a gran escala'
-        )
+        [
+          'es-ES'
+        ]('Bulldozers en movimiento de tierras y construcción a gran escala')
         ['en-GB']('Bulldozers in large-scale earthmoving and construction')
         ['en-NZ']('Bulldozers in large-scale earthmoving and construction')
-        ['pt-PT'](
-          'Bulldozers em movimentação de terra e construção de grande escala'
-        )
+        [
+          'pt-PT'
+        ]('Bulldozers em movimentação de terra e construção de grande escala')
         ['en-US']('Bulldozers in large-scale earthmoving and construction')
     )
     .slug(

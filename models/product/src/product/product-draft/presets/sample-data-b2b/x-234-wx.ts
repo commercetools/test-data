@@ -54,36 +54,36 @@ const x234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Geländekipplaster für den effizienten Transport von Material in anspruchsvollem Gelände.'
-        )
-        ['it-IT'](
-          'Camion ribaltabile fuoristrada versatile per il trasporto efficiente di materiali in terreni difficili.'
-        )
-        ['nl-NL'](
-          'Veelzijdige off-highway dumptruck voor efficiënt materiaaltransport in uitdagende terreinen.'
-        )
-        ['fr-FR'](
-          'Camion benne tout-terrain polyvalent pour le transport efficace de matériaux dans des terrains difficiles.'
-        )
-        ['en-AU'](
-          'Versatile off-highway dump truck for efficient material transport in challenging terrains.'
-        )
-        ['es-ES'](
-          'Camión volquete fuera de carretera versátil para el transporte eficiente de materiales en terrenos desafiantes.'
-        )
-        ['en-GB'](
-          'Versatile off-highway dump truck for efficient material transport in challenging terrains.'
-        )
-        ['en-NZ'](
-          'Versatile off-highway dump truck for efficient material transport in challenging terrains.'
-        )
-        ['pt-PT'](
-          'Caminhão basculante fora-de-estrada versátil para transporte eficiente de materiais em terrenos desafiadores.'
-        )
-        ['en-US'](
-          'Versatile off-highway dump truck for efficient material transport in challenging terrains.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Geländekipplaster für den effizienten Transport von Material in anspruchsvollem Gelände.')
+        [
+          'it-IT'
+        ]('Camion ribaltabile fuoristrada versatile per il trasporto efficiente di materiali in terreni difficili.')
+        [
+          'nl-NL'
+        ]('Veelzijdige off-highway dumptruck voor efficiënt materiaaltransport in uitdagende terreinen.')
+        [
+          'fr-FR'
+        ]('Camion benne tout-terrain polyvalent pour le transport efficace de matériaux dans des terrains difficiles.')
+        [
+          'en-AU'
+        ]('Versatile off-highway dump truck for efficient material transport in challenging terrains.')
+        [
+          'es-ES'
+        ]('Camión volquete fuera de carretera versátil para el transporte eficiente de materiales en terrenos desafiantes.')
+        [
+          'en-GB'
+        ]('Versatile off-highway dump truck for efficient material transport in challenging terrains.')
+        [
+          'en-NZ'
+        ]('Versatile off-highway dump truck for efficient material transport in challenging terrains.')
+        [
+          'pt-PT'
+        ]('Caminhão basculante fora-de-estrada versátil para transporte eficiente de materiais em terrenos desafiadores.')
+        [
+          'en-US'
+        ]('Versatile off-highway dump truck for efficient material transport in challenging terrains.')
     )
     .slug(
       LocalizedStringDraft.presets

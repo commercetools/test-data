@@ -54,36 +54,36 @@ const xx890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Raupenkran mit hoher Kapazität und außergewöhnlichen Stabilitätsmerkmalen für präzise Hebearbeiten.'
-        )
-        ['it-IT'](
-          'Gru cingolata ad alta capacità con caratteristiche eccezionali di stabilità per compiti di sollevamento pesanti e precisi.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits rupskraan met uitzonderlijke stabiliteitsfuncties voor nauwkeurige zware hijstaken.'
-        )
-        ['fr-FR'](
-          'Grue sur chenilles à haute capacité avec des caractéristiques de stabilité exceptionnelles pour des tâches de levage lourdes et précises.'
-        )
-        ['en-AU'](
-          'High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.'
-        )
-        ['es-ES'](
-          'Grúa sobre orugas de gran capacidad con características excepcionales de estabilidad para tareas precisas de elevación pesada.'
-        )
-        ['en-GB'](
-          'High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.'
-        )
-        ['en-NZ'](
-          'High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.'
-        )
-        ['pt-PT'](
-          'Grua de esteiras de alta capacidade com características excepcionais de estabilidade para tarefas precisas de elevação pesada.'
-        )
-        ['en-US'](
-          'High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.'
-        )
+        [
+          'de-DE'
+        ]('Raupenkran mit hoher Kapazität und außergewöhnlichen Stabilitätsmerkmalen für präzise Hebearbeiten.')
+        [
+          'it-IT'
+        ]('Gru cingolata ad alta capacità con caratteristiche eccezionali di stabilità per compiti di sollevamento pesanti e precisi.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits rupskraan met uitzonderlijke stabiliteitsfuncties voor nauwkeurige zware hijstaken.')
+        [
+          'fr-FR'
+        ]('Grue sur chenilles à haute capacité avec des caractéristiques de stabilité exceptionnelles pour des tâches de levage lourdes et précises.')
+        [
+          'en-AU'
+        ]('High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.')
+        [
+          'es-ES'
+        ]('Grúa sobre orugas de gran capacidad con características excepcionales de estabilidad para tareas precisas de elevación pesada.')
+        [
+          'en-GB'
+        ]('High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.')
+        [
+          'en-NZ'
+        ]('High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.')
+        [
+          'pt-PT'
+        ]('Grua de esteiras de alta capacidade com características excepcionais de estabilidade para tarefas precisas de elevação pesada.')
+        [
+          'en-US'
+        ]('High-capacity crawler crane with exceptional stability features for precise heavy lifting tasks.')
     )
     .slug(
       LocalizedStringDraft.presets

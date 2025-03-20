@@ -54,36 +54,36 @@ const p234Qw = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Amphibienbagger, konzipiert für land- und wasserbasierte Aushubprojekte.'
-        )
-        ['it-IT'](
-          'Escavatore anfibio versatile progettato sia per progetti di scavo terrestri che acquatici.'
-        )
-        ['nl-NL'](
-          'Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.'
-        )
-        ['fr-FR'](
-          "Excavateur amphibie polyvalent conçu pour des projets d'excavation à la fois sur terre et dans l'eau."
-        )
-        ['en-AU'](
-          'Versatile amphibious excavator designed for both land and water-based excavation projects.'
-        )
-        ['es-ES'](
-          'Excavadora anfibia versátil diseñada para proyectos de excavación en tierra y agua.'
-        )
-        ['en-GB'](
-          'Versatile amphibious excavator designed for both land and water-based excavation projects.'
-        )
-        ['en-NZ'](
-          'Versatile amphibious excavator designed for both land and water-based excavation projects.'
-        )
-        ['pt-PT'](
-          'Escavadeira anfíbia versátil projetada para projetos de escavação em terra e água.'
-        )
-        ['en-US'](
-          'Versatile amphibious excavator designed for both land and water-based excavation projects.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Amphibienbagger, konzipiert für land- und wasserbasierte Aushubprojekte.')
+        [
+          'it-IT'
+        ]('Escavatore anfibio versatile progettato sia per progetti di scavo terrestri che acquatici.')
+        [
+          'nl-NL'
+        ]('Veelzijdige amfibische graafmachine ontworpen voor zowel land- als watergebonden graafprojecten.')
+        [
+          'fr-FR'
+        ]("Excavateur amphibie polyvalent conçu pour des projets d'excavation à la fois sur terre et dans l'eau.")
+        [
+          'en-AU'
+        ]('Versatile amphibious excavator designed for both land and water-based excavation projects.')
+        [
+          'es-ES'
+        ]('Excavadora anfibia versátil diseñada para proyectos de excavación en tierra y agua.')
+        [
+          'en-GB'
+        ]('Versatile amphibious excavator designed for both land and water-based excavation projects.')
+        [
+          'en-NZ'
+        ]('Versatile amphibious excavator designed for both land and water-based excavation projects.')
+        [
+          'pt-PT'
+        ]('Escavadeira anfíbia versátil projetada para projetos de escavação em terra e água.')
+        [
+          'en-US'
+        ]('Versatile amphibious excavator designed for both land and water-based excavation projects.')
     )
     .slug(
       LocalizedStringDraft.presets

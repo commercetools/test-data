@@ -1,9 +1,8 @@
 import type {
   BusinessUnitKeyReference,
-  KeyReference,
-  Store,
   Division,
   DivisionDraft,
+  StoreKeyReference,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
 import type { TCompanyGraphql } from '../company/types';
@@ -21,9 +20,9 @@ export type TDivisionGraphql = Omit<
   'topLevelUnit' | 'parentUnit'
 > & {
   ancestors: Array<TCompanyGraphql | TDivisionGraphql>;
-  inheritedStores: Array<Store> | null;
+  inheritedStoresRef?: StoreKeyReference[];
   __typename: 'BusinessUnit';
-  storesRef: KeyReference;
+  storesRef?: StoreKeyReference[];
   parentUnitRef: BusinessUnitKeyReference;
   parentUnit?: TDivisionGraphql | TCompanyGraphql;
   topLevelUnitRef: BusinessUnitKeyReference;

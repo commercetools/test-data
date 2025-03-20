@@ -54,36 +54,36 @@ const pp234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Spezialisierter Schienenradbagger für effiziente Arbeiten auf Eisenbahngleisen.'
-        )
-        ['it-IT'](
-          'Escavatore su ruote specializzato per ferrovie per operazioni efficienti sui binari ferroviari.'
-        )
-        ['nl-NL'](
-          'Gespecialiseerde spoorweg wiellader graafmachine voor efficiënte operaties op spoorwegen.'
-        )
-        ['fr-FR'](
-          'Excavatrice sur roues spécialisée pour des opérations efficaces sur les voies ferrées.'
-        )
-        ['en-AU'](
-          'Specialized railroad wheeled excavator for efficient operations on railway tracks.'
-        )
-        ['es-ES'](
-          'Excavadora de ruedas especializada para operaciones eficientes en vías férreas.'
-        )
-        ['en-GB'](
-          'Specialized railroad wheeled excavator for efficient operations on railway tracks.'
-        )
-        ['en-NZ'](
-          'Specialized railroad wheeled excavator for efficient operations on railway tracks.'
-        )
-        ['pt-PT'](
-          'Escavadeira com rodas especializada para ferrovias para operações eficientes em trilhos ferroviários.'
-        )
-        ['en-US'](
-          'Specialized railroad wheeled excavator for efficient operations on railway tracks.'
-        )
+        [
+          'de-DE'
+        ]('Spezialisierter Schienenradbagger für effiziente Arbeiten auf Eisenbahngleisen.')
+        [
+          'it-IT'
+        ]('Escavatore su ruote specializzato per ferrovie per operazioni efficienti sui binari ferroviari.')
+        [
+          'nl-NL'
+        ]('Gespecialiseerde spoorweg wiellader graafmachine voor efficiënte operaties op spoorwegen.')
+        [
+          'fr-FR'
+        ]('Excavatrice sur roues spécialisée pour des opérations efficaces sur les voies ferrées.')
+        [
+          'en-AU'
+        ]('Specialized railroad wheeled excavator for efficient operations on railway tracks.')
+        [
+          'es-ES'
+        ]('Excavadora de ruedas especializada para operaciones eficientes en vías férreas.')
+        [
+          'en-GB'
+        ]('Specialized railroad wheeled excavator for efficient operations on railway tracks.')
+        [
+          'en-NZ'
+        ]('Specialized railroad wheeled excavator for efficient operations on railway tracks.')
+        [
+          'pt-PT'
+        ]('Escavadeira com rodas especializada para ferrovias para operações eficientes em trilhos ferroviários.')
+        [
+          'en-US'
+        ]('Specialized railroad wheeled excavator for efficient operations on railway tracks.')
     )
     .slug(
       LocalizedStringDraft.presets

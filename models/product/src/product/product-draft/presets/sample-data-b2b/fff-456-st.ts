@@ -54,36 +54,36 @@ const fff456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Schwerlast-Steinbruchhammer für effiziente Gesteinsgewinnung in Steinbruch- und Bergbauoperationen.'
-        )
-        ['it-IT'](
-          "Martello pesante per cave per l'estrazione efficiente di roccia in operazioni di cava e minerarie."
-        )
-        ['nl-NL'](
-          'Zware steengroevehamer voor efficiënte rotsontginning in steengroeve- en mijnbouwoperaties.'
-        )
-        ['fr-FR'](
-          "Marteau de carrière robuste pour l'extraction efficace de roches dans les opérations de carrière et d'exploitation minière."
-        )
-        ['en-AU'](
-          'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'
-        )
-        ['es-ES'](
-          'Martillo de cantera resistente para una extracción eficiente de rocas en operaciones de canteras y minería.'
-        )
-        ['en-GB'](
-          'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'
-        )
-        ['en-NZ'](
-          'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'
-        )
-        ['pt-PT'](
-          'Martelo de pedreira de serviço pesado para extração eficiente de rochas em operações de pedreiras e mineração.'
-        )
-        ['en-US'](
-          'Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.'
-        )
+        [
+          'de-DE'
+        ]('Schwerlast-Steinbruchhammer für effiziente Gesteinsgewinnung in Steinbruch- und Bergbauoperationen.')
+        [
+          'it-IT'
+        ]("Martello pesante per cave per l'estrazione efficiente di roccia in operazioni di cava e minerarie.")
+        [
+          'nl-NL'
+        ]('Zware steengroevehamer voor efficiënte rotsontginning in steengroeve- en mijnbouwoperaties.')
+        [
+          'fr-FR'
+        ]("Marteau de carrière robuste pour l'extraction efficace de roches dans les opérations de carrière et d'exploitation minière.")
+        [
+          'en-AU'
+        ]('Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.')
+        [
+          'es-ES'
+        ]('Martillo de cantera resistente para una extracción eficiente de rocas en operaciones de canteras y minería.')
+        [
+          'en-GB'
+        ]('Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.')
+        [
+          'en-NZ'
+        ]('Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.')
+        [
+          'pt-PT'
+        ]('Martelo de pedreira de serviço pesado para extração eficiente de rochas em operações de pedreiras e mineração.')
+        [
+          'en-US'
+        ]('Heavy-duty quarrying hammer for efficient rock extraction in quarry and mining operations.')
     )
     .slug(
       LocalizedStringDraft.presets

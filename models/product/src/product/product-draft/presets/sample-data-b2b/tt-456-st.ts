@@ -54,36 +54,36 @@ const tt456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Mobilkran mit fortschrittlichen Funktionen für eine Vielzahl von Hebeanwendungen.'
-        )
-        ['it-IT'](
-          'Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.'
-        )
-        ['nl-NL'](
-          'Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.'
-        )
-        ['fr-FR'](
-          "Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage."
-        )
-        ['en-AU'](
-          'Versatile mobile crane with advanced features for a wide range of lifting applications.'
-        )
-        ['es-ES'](
-          'Grúa móvil versátil con características avanzadas para una amplia gama de aplicaciones de elevación.'
-        )
-        ['en-GB'](
-          'Versatile mobile crane with advanced features for a wide range of lifting applications.'
-        )
-        ['en-NZ'](
-          'Versatile mobile crane with advanced features for a wide range of lifting applications.'
-        )
-        ['pt-PT'](
-          'Grua móvel versátil com características avançadas para uma ampla gama de aplicações de elevação.'
-        )
-        ['en-US'](
-          'Versatile mobile crane with advanced features for a wide range of lifting applications.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Mobilkran mit fortschrittlichen Funktionen für eine Vielzahl von Hebeanwendungen.')
+        [
+          'it-IT'
+        ]('Gru mobile versatile con caratteristiche avanzate per una vasta gamma di applicazioni di sollevamento.')
+        [
+          'nl-NL'
+        ]('Veelzijdige mobiele kraan met geavanceerde functies voor een breed scala aan hijstoepassingen.')
+        [
+          'fr-FR'
+        ]("Grue mobile polyvalente avec des fonctionnalités avancées pour une large gamme d'applications de levage.")
+        [
+          'en-AU'
+        ]('Versatile mobile crane with advanced features for a wide range of lifting applications.')
+        [
+          'es-ES'
+        ]('Grúa móvil versátil con características avanzadas para una amplia gama de aplicaciones de elevación.')
+        [
+          'en-GB'
+        ]('Versatile mobile crane with advanced features for a wide range of lifting applications.')
+        [
+          'en-NZ'
+        ]('Versatile mobile crane with advanced features for a wide range of lifting applications.')
+        [
+          'pt-PT'
+        ]('Grua móvel versátil com características avançadas para uma ampla gama de aplicações de elevação.')
+        [
+          'en-US'
+        ]('Versatile mobile crane with advanced features for a wide range of lifting applications.')
     )
     .slug(
       LocalizedStringDraft.presets

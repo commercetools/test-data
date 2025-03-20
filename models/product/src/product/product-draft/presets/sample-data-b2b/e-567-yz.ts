@@ -54,36 +54,36 @@ const e567Yz = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Holzlader mit Präzisionskontrolle für eine effiziente Handhabung von Baumstämmen in Forstanwendungen.'
-        )
-        ['it-IT'](
-          'Caricatore di tronchi avanzato con controllo di precisione per la manipolazione efficiente di tronchi in applicazioni forestali.'
-        )
-        ['nl-NL'](
-          'Geavanceerde boomlader met precisiecontrole voor efficiënte boomstamhantering in bosbouwtoepassingen.'
-        )
-        ['fr-FR'](
-          'Chargeur de bûches avancé avec contrôle de précision pour une manipulation efficace des grumes dans les applications forestières.'
-        )
-        ['en-AU'](
-          'Advanced log loader with precision control for efficient log handling in forestry applications.'
-        )
-        ['es-ES'](
-          'Cargador de troncos avanzado con control de precisión para una manipulación eficiente de troncos en aplicaciones forestales.'
-        )
-        ['en-GB'](
-          'Advanced log loader with precision control for efficient log handling in forestry applications.'
-        )
-        ['en-NZ'](
-          'Advanced log loader with precision control for efficient log handling in forestry applications.'
-        )
-        ['pt-PT'](
-          'Carregadeira de toras avançada com controle de precisão para manuseio eficiente de toras em aplicações florestais.'
-        )
-        ['en-US'](
-          'Advanced log loader with precision control for efficient log handling in forestry applications.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Holzlader mit Präzisionskontrolle für eine effiziente Handhabung von Baumstämmen in Forstanwendungen.')
+        [
+          'it-IT'
+        ]('Caricatore di tronchi avanzato con controllo di precisione per la manipolazione efficiente di tronchi in applicazioni forestali.')
+        [
+          'nl-NL'
+        ]('Geavanceerde boomlader met precisiecontrole voor efficiënte boomstamhantering in bosbouwtoepassingen.')
+        [
+          'fr-FR'
+        ]('Chargeur de bûches avancé avec contrôle de précision pour une manipulation efficace des grumes dans les applications forestières.')
+        [
+          'en-AU'
+        ]('Advanced log loader with precision control for efficient log handling in forestry applications.')
+        [
+          'es-ES'
+        ]('Cargador de troncos avanzado con control de precisión para una manipulación eficiente de troncos en aplicaciones forestales.')
+        [
+          'en-GB'
+        ]('Advanced log loader with precision control for efficient log handling in forestry applications.')
+        [
+          'en-NZ'
+        ]('Advanced log loader with precision control for efficient log handling in forestry applications.')
+        [
+          'pt-PT'
+        ]('Carregadeira de toras avançada com controle de precisão para manuseio eficiente de toras em aplicações florestais.')
+        [
+          'en-US'
+        ]('Advanced log loader with precision control for efficient log handling in forestry applications.')
     )
     .slug(
       LocalizedStringDraft.presets

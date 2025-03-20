@@ -54,6 +54,7 @@ describe('builder', () => {
         }),
         orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
         isCustomerEmailValidationDisabled: expect.any(Boolean),
+        isSingleCustomerGroupAssignmentHidden: expect.any(Boolean),
       })
     )
   );
@@ -111,6 +112,7 @@ describe('builder', () => {
         }),
         orderStatesVisibility: expect.arrayContaining([expect.any(String)]),
         isCustomerEmailValidationDisabled: expect.any(Boolean),
+        isSingleCustomerGroupAssignmentHidden: expect.any(Boolean),
       })
     )
   );

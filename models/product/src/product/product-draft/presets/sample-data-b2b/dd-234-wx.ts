@@ -54,36 +54,36 @@ const dd234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Präziser Feinplanierer für sorgfältiges Finish und Nivellierung von Oberflächen.'
-        )
-        ['it-IT'](
-          'Livellatrice fine di precisione per finiture meticolose e graduazione di superfici.'
-        )
-        ['nl-NL'](
-          'Precisie fijnnivelleermachine voor nauwkeurige afwerking en egalisatie van oppervlakken.'
-        )
-        ['fr-FR'](
-          'Niveleuse fine de précision pour une finition méticuleuse et le nivellement des surfaces.'
-        )
-        ['en-AU'](
-          'Precision fine grader for meticulous finishing and grading of surfaces.'
-        )
-        ['es-ES'](
-          'Niveladora fina de precisión para un acabado meticuloso y la nivelación de superficies.'
-        )
-        ['en-GB'](
-          'Precision fine grader for meticulous finishing and grading of surfaces.'
-        )
-        ['en-NZ'](
-          'Precision fine grader for meticulous finishing and grading of surfaces.'
-        )
-        ['pt-PT'](
-          'Niveladora fina de precisão para acabamento meticuloso e graduação de superfícies.'
-        )
-        ['en-US'](
-          'Precision fine grader for meticulous finishing and grading of surfaces.'
-        )
+        [
+          'de-DE'
+        ]('Präziser Feinplanierer für sorgfältiges Finish und Nivellierung von Oberflächen.')
+        [
+          'it-IT'
+        ]('Livellatrice fine di precisione per finiture meticolose e graduazione di superfici.')
+        [
+          'nl-NL'
+        ]('Precisie fijnnivelleermachine voor nauwkeurige afwerking en egalisatie van oppervlakken.')
+        [
+          'fr-FR'
+        ]('Niveleuse fine de précision pour une finition méticuleuse et le nivellement des surfaces.')
+        [
+          'en-AU'
+        ]('Precision fine grader for meticulous finishing and grading of surfaces.')
+        [
+          'es-ES'
+        ]('Niveladora fina de precisión para un acabado meticuloso y la nivelación de superficies.')
+        [
+          'en-GB'
+        ]('Precision fine grader for meticulous finishing and grading of surfaces.')
+        [
+          'en-NZ'
+        ]('Precision fine grader for meticulous finishing and grading of surfaces.')
+        [
+          'pt-PT'
+        ]('Niveladora fina de precisão para acabamento meticuloso e graduação de superfícies.')
+        [
+          'en-US'
+        ]('Precision fine grader for meticulous finishing and grading of surfaces.')
     )
     .slug(
       LocalizedStringDraft.presets

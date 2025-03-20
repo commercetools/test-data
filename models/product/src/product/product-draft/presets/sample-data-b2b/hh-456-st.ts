@@ -54,36 +54,36 @@ const hh456St = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Pneumatikwalze für effektive Verdichtung verschiedener Oberflächen.'
-        )
-        ['it-IT'](
-          'Rullo pneumatico versatile per la compattazione efficace di varie superfici.'
-        )
-        ['nl-NL'](
-          'Veelzijdige pneumatische wals voor effectieve verdichting van diverse oppervlakken.'
-        )
-        ['fr-FR'](
-          'Rouleau pneumatique polyvalent pour la compactage efficace de diverses surfaces.'
-        )
-        ['en-AU'](
-          'Versatile pneumatic roller for effective compaction of various surfaces.'
-        )
-        ['es-ES'](
-          'Rodillo neumático versátil para la compactación efectiva de diversas superficies.'
-        )
-        ['en-GB'](
-          'Versatile pneumatic roller for effective compaction of various surfaces.'
-        )
-        ['en-NZ'](
-          'Versatile pneumatic roller for effective compaction of various surfaces.'
-        )
-        ['pt-PT'](
-          'Rolo pneumático versátil para compactação eficaz de várias superfícies.'
-        )
-        ['en-US'](
-          'Versatile pneumatic roller for effective compaction of various surfaces.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Pneumatikwalze für effektive Verdichtung verschiedener Oberflächen.')
+        [
+          'it-IT'
+        ]('Rullo pneumatico versatile per la compattazione efficace di varie superfici.')
+        [
+          'nl-NL'
+        ]('Veelzijdige pneumatische wals voor effectieve verdichting van diverse oppervlakken.')
+        [
+          'fr-FR'
+        ]('Rouleau pneumatique polyvalent pour la compactage efficace de diverses surfaces.')
+        [
+          'en-AU'
+        ]('Versatile pneumatic roller for effective compaction of various surfaces.')
+        [
+          'es-ES'
+        ]('Rodillo neumático versátil para la compactación efectiva de diversas superficies.')
+        [
+          'en-GB'
+        ]('Versatile pneumatic roller for effective compaction of various surfaces.')
+        [
+          'en-NZ'
+        ]('Versatile pneumatic roller for effective compaction of various surfaces.')
+        [
+          'pt-PT'
+        ]('Rolo pneumático versátil para compactação eficaz de várias superfícies.')
+        [
+          'en-US'
+        ]('Versatile pneumatic roller for effective compaction of various surfaces.')
     )
     .slug(
       LocalizedStringDraft.presets

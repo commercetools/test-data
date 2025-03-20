@@ -29,15 +29,15 @@ const blastholeDrills = (): TCategoryDraftBuilder =>
       LocalizedStringDraft.presets
         .empty()
         ['de-DE']('Bohrer, die für Sprenglochoperationen konzipiert sind')
-        ['it-IT'](
-          'Trapani progettati per operazioni di perforazione di fori di scoppio'
-        )
+        [
+          'it-IT'
+        ]('Trapani progettati per operazioni di perforazione di fori di scoppio')
         ['nl-NL']('Boormachines ontworpen voor explosiegaten')
         ['fr-FR']('Forages conçus pour les opérations de trous de mine')
         ['en-AU']('Drills designed for blasthole operations')
-        ['es-ES'](
-          'Perforadoras diseñadas para operaciones de agujeros de voladura'
-        )
+        [
+          'es-ES'
+        ]('Perforadoras diseñadas para operaciones de agujeros de voladura')
         ['en-GB']('Drills designed for blasthole operations')
         ['en-NZ']('Drills designed for blasthole operations')
         ['pt-PT']('Brocas projetadas para operações de furos de explosão')

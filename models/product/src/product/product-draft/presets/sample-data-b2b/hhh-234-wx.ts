@@ -54,36 +54,36 @@ const hhh234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Hochleistungs-Rammpfahlhammer für effizientes und präzises Rammen von Fundamenten in Bauprojekten.'
-        )
-        ['it-IT'](
-          'Martello per pali ad alta capacità progettato per piantare pali in modo efficiente e preciso in progetti edili.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits heihamer ontworpen voor efficiënt en nauwkeurig heien van funderingen in bouwprojecten.'
-        )
-        ['fr-FR'](
-          'Marteau de battage haute capacité conçu pour un fonçage de fondation efficace et précis dans les projets de construction.'
-        )
-        ['en-AU'](
-          'High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.'
-        )
-        ['es-ES'](
-          'Martillo de pilotaje de gran capacidad diseñado para pilotes de cimentación eficientes y precisos en proyectos de construcción.'
-        )
-        ['en-GB'](
-          'High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.'
-        )
-        ['en-NZ'](
-          'High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.'
-        )
-        ['pt-PT'](
-          'Martelo de cravação de alta capacidade projetado para cravação eficiente e precisa de fundações em projetos de construção.'
-        )
-        ['en-US'](
-          'High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.'
-        )
+        [
+          'de-DE'
+        ]('Hochleistungs-Rammpfahlhammer für effizientes und präzises Rammen von Fundamenten in Bauprojekten.')
+        [
+          'it-IT'
+        ]('Martello per pali ad alta capacità progettato per piantare pali in modo efficiente e preciso in progetti edili.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits heihamer ontworpen voor efficiënt en nauwkeurig heien van funderingen in bouwprojecten.')
+        [
+          'fr-FR'
+        ]('Marteau de battage haute capacité conçu pour un fonçage de fondation efficace et précis dans les projets de construction.')
+        [
+          'en-AU'
+        ]('High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.')
+        [
+          'es-ES'
+        ]('Martillo de pilotaje de gran capacidad diseñado para pilotes de cimentación eficientes y precisos en proyectos de construcción.')
+        [
+          'en-GB'
+        ]('High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.')
+        [
+          'en-NZ'
+        ]('High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.')
+        [
+          'pt-PT'
+        ]('Martelo de cravação de alta capacidade projetado para cravação eficiente e precisa de fundações em projetos de construção.')
+        [
+          'en-US'
+        ]('High-capacity piling hammer designed for efficient and precise foundation piling in construction projects.')
     )
     .slug(
       LocalizedStringDraft.presets

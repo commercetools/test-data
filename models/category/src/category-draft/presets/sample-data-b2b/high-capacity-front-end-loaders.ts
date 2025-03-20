@@ -24,9 +24,9 @@ const highCapacityFrontEndLoaders = (): TCategoryDraftBuilder =>
         ['de-DE']('Lader mit hoher Kapazität für den Fronteinsatz')
         ['it-IT']('Caricatori ad alta capacità per uso frontale')
         ['nl-NL']('Laders met hoge capaciteit voor front-end gebruik')
-        ['fr-FR'](
-          'Chargeuses avec une capacité élevée pour une utilisation frontale'
-        )
+        [
+          'fr-FR'
+        ]('Chargeuses avec une capacité élevée pour une utilisation frontale')
         ['en-AU']('Loaders with high capacity for front-end use')
         ['es-ES']('Cargadores con alta capacidad para uso frontal')
         ['en-GB']('Loaders with high capacity for front-end use')

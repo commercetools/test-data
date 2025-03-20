@@ -54,36 +54,36 @@ const cc789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Flughafenplanierer mit speziellen Funktionen für präzises Nivellieren von Start- und Landebahnen.'
-        )
-        ['it-IT'](
-          'Livellatrice avanzata per aeroporti con caratteristiche specializzate per la classificazione precisa delle piste.'
-        )
-        ['nl-NL'](
-          'Geavanceerde luchthavennivelleermachine met gespecialiseerde functies voor precieze baanegalisatie.'
-        )
-        ['fr-FR'](
-          'Niveleuse aéroportuaire avancée avec des fonctionnalités spécialisées pour un nivellement précis des pistes.'
-        )
-        ['en-AU'](
-          'Advanced airport grader with specialized features for precise runway grading.'
-        )
-        ['es-ES'](
-          'Niveladora de aeropuerto avanzada con características especializadas para el nivelado preciso de pistas.'
-        )
-        ['en-GB'](
-          'Advanced airport grader with specialized features for precise runway grading.'
-        )
-        ['en-NZ'](
-          'Advanced airport grader with specialized features for precise runway grading.'
-        )
-        ['pt-PT'](
-          'Niveladora avançada de aeroporto com recursos especializados para classificação precisa de pistas.'
-        )
-        ['en-US'](
-          'Advanced airport grader with specialized features for precise runway grading.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Flughafenplanierer mit speziellen Funktionen für präzises Nivellieren von Start- und Landebahnen.')
+        [
+          'it-IT'
+        ]('Livellatrice avanzata per aeroporti con caratteristiche specializzate per la classificazione precisa delle piste.')
+        [
+          'nl-NL'
+        ]('Geavanceerde luchthavennivelleermachine met gespecialiseerde functies voor precieze baanegalisatie.')
+        [
+          'fr-FR'
+        ]('Niveleuse aéroportuaire avancée avec des fonctionnalités spécialisées pour un nivellement précis des pistes.')
+        [
+          'en-AU'
+        ]('Advanced airport grader with specialized features for precise runway grading.')
+        [
+          'es-ES'
+        ]('Niveladora de aeropuerto avanzada con características especializadas para el nivelado preciso de pistas.')
+        [
+          'en-GB'
+        ]('Advanced airport grader with specialized features for precise runway grading.')
+        [
+          'en-NZ'
+        ]('Advanced airport grader with specialized features for precise runway grading.')
+        [
+          'pt-PT'
+        ]('Niveladora avançada de aeroporto com recursos especializados para classificação precisa de pistas.')
+        [
+          'en-US'
+        ]('Advanced airport grader with specialized features for precise runway grading.')
     )
     .slug(
       LocalizedStringDraft.presets

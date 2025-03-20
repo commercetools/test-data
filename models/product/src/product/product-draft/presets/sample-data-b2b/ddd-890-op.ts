@@ -54,36 +54,36 @@ const ddd890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Vielseitiger Produktionsbohrer für verschiedene Bohraufgaben in groß angelegten Bergbauprojekten geeignet.'
-        )
-        ['it-IT'](
-          'Trapano versatile per produzione adatto per una varietà di compiti di trapanazione in progetti minerari su larga scala.'
-        )
-        ['nl-NL'](
-          'Veelzijdige productieboor geschikt voor een verscheidenheid aan boortaken in grootschalige mijnbouwprojecten.'
-        )
-        ['fr-FR'](
-          'Forage de production polyvalent adapté à diverses tâches de forage dans des projets miniers à grande échelle.'
-        )
-        ['en-AU'](
-          'Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.'
-        )
-        ['es-ES'](
-          'Perforadora de producción versátil adecuada para una variedad de tareas de perforación en proyectos mineros a gran escala.'
-        )
-        ['en-GB'](
-          'Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.'
-        )
-        ['en-NZ'](
-          'Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.'
-        )
-        ['pt-PT'](
-          'Perfuratriz de produção versátil adequada para uma variedade de tarefas de perfuração em projetos de mineração em grande escala.'
-        )
-        ['en-US'](
-          'Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.'
-        )
+        [
+          'de-DE'
+        ]('Vielseitiger Produktionsbohrer für verschiedene Bohraufgaben in groß angelegten Bergbauprojekten geeignet.')
+        [
+          'it-IT'
+        ]('Trapano versatile per produzione adatto per una varietà di compiti di trapanazione in progetti minerari su larga scala.')
+        [
+          'nl-NL'
+        ]('Veelzijdige productieboor geschikt voor een verscheidenheid aan boortaken in grootschalige mijnbouwprojecten.')
+        [
+          'fr-FR'
+        ]('Forage de production polyvalent adapté à diverses tâches de forage dans des projets miniers à grande échelle.')
+        [
+          'en-AU'
+        ]('Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.')
+        [
+          'es-ES'
+        ]('Perforadora de producción versátil adecuada para una variedad de tareas de perforación en proyectos mineros a gran escala.')
+        [
+          'en-GB'
+        ]('Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.')
+        [
+          'en-NZ'
+        ]('Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.')
+        [
+          'pt-PT'
+        ]('Perfuratriz de produção versátil adequada para uma variedade de tarefas de perfuração em projetos de mineração em grande escala.')
+        [
+          'en-US'
+        ]('Versatile production drill suitable for a variety of drilling tasks in large-scale mining projects.')
     )
     .slug(
       LocalizedStringDraft.presets

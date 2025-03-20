@@ -54,36 +54,36 @@ const c789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Baulader mit hoher Kapazität und fortschrittlichen Funktionen für anspruchsvolle Bauaufgaben.'
-        )
-        ['it-IT'](
-          'Caricatore per costruzioni ad alta capacità con caratteristiche avanzate per compiti gravosi di costruzione.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits bouwlader met geavanceerde functies voor zware bouwtaken.'
-        )
-        ['fr-FR'](
-          'Chargeur de construction haute capacité avec des fonctionnalités avancées pour les tâches de construction intensives.'
-        )
-        ['en-AU'](
-          'High-capacity construction loader with advanced features for heavy-duty construction tasks.'
-        )
-        ['es-ES'](
-          'Cargador de construcción de alta capacidad con características avanzadas para tareas de construcción pesada.'
-        )
-        ['en-GB'](
-          'High-capacity construction loader with advanced features for heavy-duty construction tasks.'
-        )
-        ['en-NZ'](
-          'High-capacity construction loader with advanced features for heavy-duty construction tasks.'
-        )
-        ['pt-PT'](
-          'Carregadeira de construção de alta capacidade com recursos avançados para tarefas pesadas de construção.'
-        )
-        ['en-US'](
-          'High-capacity construction loader with advanced features for heavy-duty construction tasks.'
-        )
+        [
+          'de-DE'
+        ]('Baulader mit hoher Kapazität und fortschrittlichen Funktionen für anspruchsvolle Bauaufgaben.')
+        [
+          'it-IT'
+        ]('Caricatore per costruzioni ad alta capacità con caratteristiche avanzate per compiti gravosi di costruzione.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits bouwlader met geavanceerde functies voor zware bouwtaken.')
+        [
+          'fr-FR'
+        ]('Chargeur de construction haute capacité avec des fonctionnalités avancées pour les tâches de construction intensives.')
+        [
+          'en-AU'
+        ]('High-capacity construction loader with advanced features for heavy-duty construction tasks.')
+        [
+          'es-ES'
+        ]('Cargador de construcción de alta capacidad con características avanzadas para tareas de construcción pesada.')
+        [
+          'en-GB'
+        ]('High-capacity construction loader with advanced features for heavy-duty construction tasks.')
+        [
+          'en-NZ'
+        ]('High-capacity construction loader with advanced features for heavy-duty construction tasks.')
+        [
+          'pt-PT'
+        ]('Carregadeira de construção de alta capacidade com recursos avançados para tarefas pesadas de construção.')
+        [
+          'en-US'
+        ]('High-capacity construction loader with advanced features for heavy-duty construction tasks.')
     )
     .slug(
       LocalizedStringDraft.presets

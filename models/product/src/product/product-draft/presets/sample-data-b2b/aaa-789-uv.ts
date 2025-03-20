@@ -54,36 +54,36 @@ const aaa789Uv = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Erkundungsbohrer mit präzisen Bohrfähigkeiten für geotechnische Untersuchungen.'
-        )
-        ['it-IT'](
-          'Trapano avanzato per esplorazione con capacità di trapanazione di precisione per indagini geotecniche.'
-        )
-        ['nl-NL'](
-          'Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.'
-        )
-        ['fr-FR'](
-          "Forage d'exploration avancé avec des capacités de forage de précision pour des investigations géotechniques."
-        )
-        ['en-AU'](
-          'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'
-        )
-        ['es-ES'](
-          'Perforadora de exploración avanzada con capacidades de perforación de precisión para investigaciones geotécnicas.'
-        )
-        ['en-GB'](
-          'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'
-        )
-        ['en-NZ'](
-          'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'
-        )
-        ['pt-PT'](
-          'Perfuratriz de exploração avançada com capacidades de perfuração de precisão para investigações geotécnicas.'
-        )
-        ['en-US'](
-          'Advanced exploration drill with precision drilling capabilities for geotechnical investigations.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Erkundungsbohrer mit präzisen Bohrfähigkeiten für geotechnische Untersuchungen.')
+        [
+          'it-IT'
+        ]('Trapano avanzato per esplorazione con capacità di trapanazione di precisione per indagini geotecniche.')
+        [
+          'nl-NL'
+        ]('Geavanceerde exploratieboor met precisieboorcapaciteiten voor geotechnisch onderzoek.')
+        [
+          'fr-FR'
+        ]("Forage d'exploration avancé avec des capacités de forage de précision pour des investigations géotechniques.")
+        [
+          'en-AU'
+        ]('Advanced exploration drill with precision drilling capabilities for geotechnical investigations.')
+        [
+          'es-ES'
+        ]('Perforadora de exploración avanzada con capacidades de perforación de precisión para investigaciones geotécnicas.')
+        [
+          'en-GB'
+        ]('Advanced exploration drill with precision drilling capabilities for geotechnical investigations.')
+        [
+          'en-NZ'
+        ]('Advanced exploration drill with precision drilling capabilities for geotechnical investigations.')
+        [
+          'pt-PT'
+        ]('Perfuratriz de exploração avançada com capacidades de perfuração de precisão para investigações geotécnicas.')
+        [
+          'en-US'
+        ]('Advanced exploration drill with precision drilling capabilities for geotechnical investigations.')
     )
     .slug(
       LocalizedStringDraft.presets

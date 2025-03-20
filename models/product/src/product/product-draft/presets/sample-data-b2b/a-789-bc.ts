@@ -54,36 +54,36 @@ const a789Bc = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Fortgeschrittener Tiefbergbaubagger mit Präzisionskontrolle für die Gewinnung von Ressourcen aus der Tiefe.'
-        )
-        ['it-IT'](
-          "Escavatore avanzato per miniere profonde con controllo di precisione per l'estrazione di risorse in profondità."
-        )
-        ['nl-NL'](
-          'Geavanceerde diepe mijnbouw graafmachine met precisiecontrole voor het extraheren van grondstoffen uit de diepte.'
-        )
-        ['fr-FR'](
-          "Excavateur minier profond avancé avec contrôle de précision pour l'extraction de ressources en profondeur."
-        )
-        ['en-AU'](
-          'Advanced deep mining excavator with precision control for extracting resources from depth.'
-        )
-        ['es-ES'](
-          'Excavadora minera profunda avanzada con control de precisión para extraer recursos desde la profundidad.'
-        )
-        ['en-GB'](
-          'Advanced deep mining excavator with precision control for extracting resources from depth.'
-        )
-        ['en-NZ'](
-          'Advanced deep mining excavator with precision control for extracting resources from depth.'
-        )
-        ['pt-PT'](
-          'Escavadeira avançada para mineração profunda com controle de precisão para extração de recursos das profundezas.'
-        )
-        ['en-US'](
-          'Advanced deep mining excavator with precision control for extracting resources from depth.'
-        )
+        [
+          'de-DE'
+        ]('Fortgeschrittener Tiefbergbaubagger mit Präzisionskontrolle für die Gewinnung von Ressourcen aus der Tiefe.')
+        [
+          'it-IT'
+        ]("Escavatore avanzato per miniere profonde con controllo di precisione per l'estrazione di risorse in profondità.")
+        [
+          'nl-NL'
+        ]('Geavanceerde diepe mijnbouw graafmachine met precisiecontrole voor het extraheren van grondstoffen uit de diepte.')
+        [
+          'fr-FR'
+        ]("Excavateur minier profond avancé avec contrôle de précision pour l'extraction de ressources en profondeur.")
+        [
+          'en-AU'
+        ]('Advanced deep mining excavator with precision control for extracting resources from depth.')
+        [
+          'es-ES'
+        ]('Excavadora minera profunda avanzada con control de precisión para extraer recursos desde la profundidad.')
+        [
+          'en-GB'
+        ]('Advanced deep mining excavator with precision control for extracting resources from depth.')
+        [
+          'en-NZ'
+        ]('Advanced deep mining excavator with precision control for extracting resources from depth.')
+        [
+          'pt-PT'
+        ]('Escavadeira avançada para mineração profunda com controle de precisão para extração de recursos das profundezas.')
+        [
+          'en-US'
+        ]('Advanced deep mining excavator with precision control for extracting resources from depth.')
     )
     .slug(
       LocalizedStringDraft.presets

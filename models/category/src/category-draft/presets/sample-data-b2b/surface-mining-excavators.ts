@@ -31,9 +31,9 @@ const surfaceMiningExcavators = (): TCategoryDraftBuilder =>
         ['de-DE']('Bagger, die im Oberflächenbergbau eingesetzt werden')
         ['it-IT']('Escavatori utilizzati in miniere di superficie')
         ['nl-NL']('Graafmachines gebruikt in oppervlaktemijnbouw')
-        ['fr-FR'](
-          "Excavatrices utilisées dans l'exploitation minière de surface"
-        )
+        [
+          'fr-FR'
+        ]("Excavatrices utilisées dans l'exploitation minière de surface")
         ['en-AU']('Excavators used in surface mining')
         ['es-ES']('Excavadoras utilizadas en minería superficial')
         ['en-GB']('Excavators used in surface mining')

@@ -54,36 +54,36 @@ const vv234Wx = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Stabiler Raupenkran für anspruchsvolle Hebearbeiten in schwierigem Gelände.'
-        )
-        ['it-IT'](
-          'Gru cingolata stabile progettata per compiti di sollevamento pesanti in terreni difficili.'
-        )
-        ['nl-NL'](
-          'Stabiele rupskraan ontworpen voor zware hijstaken in uitdagend terrein.'
-        )
-        ['fr-FR'](
-          'Grue sur chenilles stable conçue pour des tâches de levage lourdes dans un terrain difficile.'
-        )
-        ['en-AU'](
-          'Stable crawler crane designed for heavy lifting tasks in challenging terrain.'
-        )
-        ['es-ES'](
-          'Grúa sobre orugas estable diseñada para tareas de elevación pesadas en terrenos desafiantes.'
-        )
-        ['en-GB'](
-          'Stable crawler crane designed for heavy lifting tasks in challenging terrain.'
-        )
-        ['en-NZ'](
-          'Stable crawler crane designed for heavy lifting tasks in challenging terrain.'
-        )
-        ['pt-PT'](
-          'Grua de esteiras estável projetada para tarefas pesadas de elevação em terrenos desafiadores.'
-        )
-        ['en-US'](
-          'Stable crawler crane designed for heavy lifting tasks in challenging terrain.'
-        )
+        [
+          'de-DE'
+        ]('Stabiler Raupenkran für anspruchsvolle Hebearbeiten in schwierigem Gelände.')
+        [
+          'it-IT'
+        ]('Gru cingolata stabile progettata per compiti di sollevamento pesanti in terreni difficili.')
+        [
+          'nl-NL'
+        ]('Stabiele rupskraan ontworpen voor zware hijstaken in uitdagend terrein.')
+        [
+          'fr-FR'
+        ]('Grue sur chenilles stable conçue pour des tâches de levage lourdes dans un terrain difficile.')
+        [
+          'en-AU'
+        ]('Stable crawler crane designed for heavy lifting tasks in challenging terrain.')
+        [
+          'es-ES'
+        ]('Grúa sobre orugas estable diseñada para tareas de elevación pesadas en terrenos desafiantes.')
+        [
+          'en-GB'
+        ]('Stable crawler crane designed for heavy lifting tasks in challenging terrain.')
+        [
+          'en-NZ'
+        ]('Stable crawler crane designed for heavy lifting tasks in challenging terrain.')
+        [
+          'pt-PT'
+        ]('Grua de esteiras estável projetada para tarefas pesadas de elevação em terrenos desafiadores.')
+        [
+          'en-US'
+        ]('Stable crawler crane designed for heavy lifting tasks in challenging terrain.')
     )
     .slug(
       LocalizedStringDraft.presets

@@ -54,36 +54,36 @@ const z890Op = (): TProductDraftBuilder =>
     .description(
       LocalizedStringDraft.presets
         .empty()
-        ['de-DE'](
-          'Geländekipplaster mit hoher Kapazität und speziellen Funktionen für anspruchsvollen Transport von Material.'
-        )
-        ['it-IT'](
-          'Camion ribaltabile fuoristrada ad alta capacità con caratteristiche specializzate per il trasporto esigente di materiali.'
-        )
-        ['nl-NL'](
-          'Hoogcapaciteits off-highway dumptruck met gespecialiseerde functies voor veeleisend materiaaltransport.'
-        )
-        ['fr-FR'](
-          'Camion benne tout-terrain haute capacité avec des fonctionnalités spécialisées pour un transport exigeant des matériaux.'
-        )
-        ['en-AU'](
-          'High-capacity off-highway dump truck with specialized features for demanding material transport.'
-        )
-        ['es-ES'](
-          'Camión volquete fuera de carretera de alta capacidad con características especializadas para el transporte exigente de materiales.'
-        )
-        ['en-GB'](
-          'High-capacity off-highway dump truck with specialized features for demanding material transport.'
-        )
-        ['en-NZ'](
-          'High-capacity off-highway dump truck with specialized features for demanding material transport.'
-        )
-        ['pt-PT'](
-          'Caminhão basculante fora-de-estrada de alta capacidade com recursos especializados para transporte exigente de materiais.'
-        )
-        ['en-US'](
-          'High-capacity off-highway dump truck with specialized features for demanding material transport.'
-        )
+        [
+          'de-DE'
+        ]('Geländekipplaster mit hoher Kapazität und speziellen Funktionen für anspruchsvollen Transport von Material.')
+        [
+          'it-IT'
+        ]('Camion ribaltabile fuoristrada ad alta capacità con caratteristiche specializzate per il trasporto esigente di materiali.')
+        [
+          'nl-NL'
+        ]('Hoogcapaciteits off-highway dumptruck met gespecialiseerde functies voor veeleisend materiaaltransport.')
+        [
+          'fr-FR'
+        ]('Camion benne tout-terrain haute capacité avec des fonctionnalités spécialisées pour un transport exigeant des matériaux.')
+        [
+          'en-AU'
+        ]('High-capacity off-highway dump truck with specialized features for demanding material transport.')
+        [
+          'es-ES'
+        ]('Camión volquete fuera de carretera de alta capacidad con características especializadas para el transporte exigente de materiales.')
+        [
+          'en-GB'
+        ]('High-capacity off-highway dump truck with specialized features for demanding material transport.')
+        [
+          'en-NZ'
+        ]('High-capacity off-highway dump truck with specialized features for demanding material transport.')
+        [
+          'pt-PT'
+        ]('Caminhão basculante fora-de-estrada de alta capacidade com recursos especializados para transporte exigente de materiais.')
+        [
+          'en-US'
+        ]('High-capacity off-highway dump truck with specialized features for demanding material transport.')
     )
     .slug(
       LocalizedStringDraft.presets

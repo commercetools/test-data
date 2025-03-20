@@ -14,7 +14,7 @@ const transformers = {
     replaceFields: ({ fields }) => {
       return {
         ...(fields as TCompany),
-        storesRef: KeyReference.random().typeId('store').buildGraphql(),
+        storesRef: [KeyReference.random().typeId('store').buildGraphql()],
         parentUnitRef: null,
         topLevelUnitRef: KeyReference.random()
           .typeId('business-unit')
@@ -29,10 +29,9 @@ const transformers = {
               },
         ancestors:
           'ancestors' in fields && fields.ancestors ? fields.ancestors : [],
-        inheritedStores:
-          'inheritedStores' in fields && fields.inheritedStores
-            ? fields.inheritedStores
-            : null,
+        inheritedStoresRef: [
+          KeyReference.random().typeId('store').buildGraphql(),
+        ],
         __typename: 'BusinessUnit',
       };
     },

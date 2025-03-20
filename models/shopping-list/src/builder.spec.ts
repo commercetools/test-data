@@ -90,7 +90,7 @@ describe('builder', () => {
       })
     )
   );
-// Note that the ShoppingList graphql is provided as scaffolding only and may not be complete at this time.
+  // Note that the ShoppingList graphql is provided as scaffolding only and may not be complete at this time.
   it(
     ...createBuilderSpec<TShoppingList, TShoppingListGraphql>(
       'graphql',

@@ -31,18 +31,18 @@ const railroadWheeledExcavators = (): TCategoryDraftBuilder =>
         ['de-DE']('Radbagger, die für den Bau von Eisenbahnen geeignet sind')
         ['it-IT']('Escavatori su ruote adatti per la costruzione ferroviaria')
         ['nl-NL']('Wielladers geschikt voor spoorwegbouw')
-        ['fr-FR'](
-          'Excavatrices à roues adaptées à la construction de voies ferrées'
-        )
+        [
+          'fr-FR'
+        ]('Excavatrices à roues adaptées à la construction de voies ferrées')
         ['en-AU']('Wheel excavators suitable for railroad construction')
-        ['es-ES'](
-          'Excavadoras de ruedas adecuadas para la construcción de ferrocarriles'
-        )
+        [
+          'es-ES'
+        ]('Excavadoras de ruedas adecuadas para la construcción de ferrocarriles')
         ['en-GB']('Wheel excavators suitable for railroad construction')
         ['en-NZ']('Wheel excavators suitable for railroad construction')
-        ['pt-PT'](
-          'Escavadeiras com rodas adequadas para construção ferroviária'
-        )
+        [
+          'pt-PT'
+        ]('Escavadeiras com rodas adequadas para construção ferroviária')
         ['en-US']('Wheel excavators suitable for railroad construction')
     )
     .slug(
