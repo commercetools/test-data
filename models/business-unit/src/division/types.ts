@@ -20,9 +20,9 @@ export type TDivisionGraphql = Omit<
   'topLevelUnit' | 'parentUnit'
 > & {
   ancestors: Array<TCompanyGraphql | TDivisionGraphql>;
-  inheritedStoresRef: StoreKeyReference[];
+  inheritedStoresRef?: StoreKeyReference[];
   __typename: 'BusinessUnit';
-  storesRef: StoreKeyReference[];
+  storesRef?: StoreKeyReference[];
   parentUnitRef: BusinessUnitKeyReference;
   parentUnit?: TDivisionGraphql | TCompanyGraphql;
   topLevelUnitRef: BusinessUnitKeyReference;
