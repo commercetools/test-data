@@ -25,6 +25,7 @@ const generator = Generator<TDivision>({
     key: fake((f) => f.lorem.slug(2)),
     status: oneOf(...Object.values(status)),
     stores: [],
+    inheritedStores: [],
     storeMode: oneOf(...Object.values(storeMode)),
     unitType: unitType.Division,
     name: fake((f) => f.lorem.words(2)),

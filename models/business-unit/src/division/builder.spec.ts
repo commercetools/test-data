@@ -16,6 +16,7 @@ describe('builder', () => {
         key: expect.any(String),
         status: expect.any(String),
         stores: [],
+        inheritedStores: [],
         storeMode: expect.any(String),
         unitType: 'Division',
         name: expect.any(String),
@@ -58,6 +59,7 @@ describe('builder', () => {
         key: expect.any(String),
         status: expect.any(String),
         stores: [],
+        inheritedStores: [],
         storeMode: expect.any(String),
         unitType: 'Division',
         name: expect.any(String),
@@ -99,16 +101,9 @@ describe('builder', () => {
         key: expect.any(String),
         status: expect.any(String),
         stores: [],
-        storesRef: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'store',
-          }),
-        ]),
-        inheritedStoresRef: expect.arrayContaining([
-          expect.objectContaining({
-            typeId: 'store',
-          }),
-        ]),
+        storesRef: [],
+        inheritedStores: [],
+        inheritedStoresRef: [],
         storeMode: expect.any(String),
         unitType: 'Division',
         name: expect.any(String),
