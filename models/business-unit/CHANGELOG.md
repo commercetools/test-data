@@ -1,5 +1,19 @@
 # @commercetools-test-data/business-unit
 
+## 10.14.2
+
+### Patch Changes
+
+- [#764](https://github.com/commercetools/test-data/pull/764) [`db15d6c`](https://github.com/commercetools/test-data/commit/db15d6c4b2f0f75a42fd1b4921bcc329e03b777f) Thanks [@YahiaElTai](https://github.com/YahiaElTai)! - chore: add inheritedStores field to Company and Division entities
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.14.2
+  - @commercetools-test-data/associate-role@10.14.2
+  - @commercetools-test-data/commons@10.14.2
+  - @commercetools-test-data/customer@10.14.2
+  - @commercetools-test-data/store@10.14.2
+  - @commercetools-test-data/utils@10.14.2
+
 ## 10.14.1
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.14.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.14.2
+  - @commercetools-test-data/graphql-types@10.14.2
+  - @commercetools-test-data/channel@10.14.2
+  - @commercetools-test-data/commons@10.14.2
+  - @commercetools-test-data/product@10.14.2
+  - @commercetools-test-data/utils@10.14.2
+
 ## 10.14.1
 
 ### Patch Changes
