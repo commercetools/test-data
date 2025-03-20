@@ -27,8 +27,25 @@ const transformers = {
     {
       buildFields: ['addresses', 'createdBy', 'lastModifiedBy'],
       replaceFields: ({ fields }) => ({
-        ...(fields as TDivision),
-        storesRef: [KeyReference.random().typeId('store').buildGraphql()],
+        ...fields,
+        storesRef:
+          'stores' in fields
+            ? fields.stores?.map((store) =>
+                KeyReference.random()
+                  .typeId('store')
+                  .key(store.key)
+                  .buildGraphql()
+              )
+            : [],
+        inheritedStoresRef:
+          'inheritedStores' in fields
+            ? fields.inheritedStores?.map((store) =>
+                KeyReference.random()
+                  .typeId('store')
+                  .key(store.key)
+                  .buildGraphql()
+              )
+            : [],
         parentUnitRef: KeyReference.random()
           .typeId('business-unit')
           .buildGraphql(),
@@ -45,9 +62,6 @@ const transformers = {
             : Company.random().buildGraphql(),
         ancestors:
           'ancestors' in fields && fields.ancestors ? fields.ancestors : [],
-        inheritedStoresRef: [
-          KeyReference.random().typeId('store').buildGraphql(),
-        ],
         __typename: 'BusinessUnit',
       }),
     }

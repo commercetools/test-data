@@ -30,6 +30,7 @@ const generator = Generator<TCompany>({
     key: fake((f) => f.lorem.slug(2)),
     status: oneOf(...Object.values(status)),
     stores: [],
+    inheritedStores: [],
     storeMode: storeMode.Explicit,
     unitType: unitType.Company,
     name: fake((f) => f.lorem.words(2)),
