@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/standalone-price",
-  "version": "10.14.1",
+  "version": "10.14.2",
   "description": "Data model for commercetools API StandalonePrice",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,13 +19,13 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/channel": "10.14.1",
-    "@commercetools-test-data/commons": "10.14.1",
-    "@commercetools-test-data/core": "10.14.1",
-    "@commercetools-test-data/customer-group": "10.14.1",
-    "@commercetools-test-data/graphql-types": "10.14.1",
-    "@commercetools-test-data/product": "10.14.1",
-    "@commercetools-test-data/utils": "10.14.1",
+    "@commercetools-test-data/channel": "10.14.2",
+    "@commercetools-test-data/commons": "10.14.2",
+    "@commercetools-test-data/core": "10.14.2",
+    "@commercetools-test-data/customer-group": "10.14.2",
+    "@commercetools-test-data/graphql-types": "10.14.2",
+    "@commercetools-test-data/product": "10.14.2",
+    "@commercetools-test-data/utils": "10.14.2",
     "@commercetools/platform-sdk": "8.5.0",
     "@faker-js/faker": "^9.0.0"
   }

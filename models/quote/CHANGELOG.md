@@ -1,5 +1,21 @@
 # @commercetools-test-data/quote
 
+## 10.14.2
+
+### Patch Changes
+
+- Updated dependencies [[`db15d6c`](https://github.com/commercetools/test-data/commit/db15d6c4b2f0f75a42fd1b4921bcc329e03b777f)]:
+  - @commercetools-test-data/business-unit@10.14.2
+  - @commercetools-test-data/cart@10.14.2
+  - @commercetools-test-data/quote-request@10.14.2
+  - @commercetools-test-data/staged-quote@10.14.2
+  - @commercetools-test-data/core@10.14.2
+  - @commercetools-test-data/commons@10.14.2
+  - @commercetools-test-data/customer@10.14.2
+  - @commercetools-test-data/customer-group@10.14.2
+  - @commercetools-test-data/store@10.14.2
+  - @commercetools-test-data/utils@10.14.2
+
 ## 10.14.1
 
 ### Patch Changes
