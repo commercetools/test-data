@@ -1,9 +1,7 @@
 import { createSpecializedBuilder } from '@commercetools-test-data/core';
+import { TCountOnLineItemUnitsDraftGraphql } from '../../types';
 import { graphqlFieldsConfig } from './fields-config';
-import type {
-  TCreateCountOnLineItemUnitsDraftBuilder,
-  TCountOnLineItemUnitsDraftGraphql,
-} from './types';
+import type { TCreateCountOnLineItemUnitsDraftBuilder } from './types';
 
 export const GraphqlModelBuilder: TCreateCountOnLineItemUnitsDraftBuilder<
   TCountOnLineItemUnitsDraftGraphql

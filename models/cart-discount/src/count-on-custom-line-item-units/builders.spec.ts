@@ -13,7 +13,6 @@ describe('CountOnCustomLineItemUnits Builder', () => {
         predicate: expect.any(String),
         minCount: expect.any(Number),
         maxCount: expect.toBeOneOf([expect.any(Number), null]),
-        excludeCount: expect.any(Number),
       })
     );
   });
@@ -28,7 +27,6 @@ describe('CountOnCustomLineItemUnits Builder', () => {
         predicate: expect.any(String),
         minCount: expect.any(Number),
         maxCount: expect.toBeOneOf([expect.any(Number), null]),
-        excludeCount: expect.any(Number),
       })
     );
   });
