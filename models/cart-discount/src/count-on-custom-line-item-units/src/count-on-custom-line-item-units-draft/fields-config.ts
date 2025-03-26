@@ -19,8 +19,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnCustomLineItemUnits
       maxCount: fake((f) =>
         f.helpers.arrayElement([null, 0, f.number.int({ min: 1, max: 5 })])
       ),
-      excludeCount: fake((f) =>
-        f.helpers.arrayElement([0, f.number.int({ min: 1, max: 10 })])
-      ),
     },
   };
