@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
-import type { TCountOnCustomLineItemUnitsDraftGraphql } from './types';
+import { TCountOnCustomLineItemUnitsDraftGraphql } from '../../types';
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnCustomLineItemUnitsDraftGraphql> =
   {

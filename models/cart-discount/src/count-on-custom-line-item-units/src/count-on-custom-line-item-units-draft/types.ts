@@ -1,10 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpCountOnCustomLineItemUnitsInput } from '@commercetools-test-data/graphql-types';
-
-export type TCountOnCustomLineItemUnitsDraftGraphql = Omit<
-  TCtpCountOnCustomLineItemUnitsInput,
-  'excludeCount'
->;
+import { TCountOnCustomLineItemUnitsDraftGraphql } from '../../types';
 
 export type TCreateCountOnCustomLineItemUnitsDraftBuilder<
   TModel extends TCountOnCustomLineItemUnitsDraftGraphql,

@@ -13,7 +13,10 @@ export type TCountOnLineItemUnitsGraphql = Omit<
   TCtpCountOnLineItemUnits,
   'excludeCount'
 >;
-export type TCountOnLineItemUnitsDraftGraphql = TCtpCountOnLineItemUnitsInput;
+export type TCountOnLineItemUnitsDraftGraphql = Omit<
+  TCtpCountOnLineItemUnitsInput,
+  'excludeCount'
+>;
 
 export type TCreateCountOnLineItemUnitsBuilder<
   TModel extends
