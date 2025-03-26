@@ -13,8 +13,10 @@ export type TCountOnCustomLineItemUnitsGraphql = Omit<
   TCtpCountOnCustomLineItemUnits,
   'excludeCount'
 >;
-export type TCountOnCustomLineItemUnitsDraftGraphql =
-  TCtpCountOnCustomLineItemUnitsInput;
+export type TCountOnCustomLineItemUnitsDraftGraphql = Omit<
+  TCtpCountOnCustomLineItemUnitsInput,
+  'excludeCount'
+>;
 
 export type TCreateCountOnCustomLineItemUnitsBuilder<
   TModel extends
