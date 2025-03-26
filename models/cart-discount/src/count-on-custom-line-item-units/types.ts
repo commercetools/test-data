@@ -5,8 +5,14 @@ import {
   TCtpCountOnCustomLineItemUnitsInput,
 } from '@commercetools-test-data/graphql-types';
 
-export type TCountOnCustomLineItemUnitsRest = CountOnCustomLineItemUnits;
-export type TCountOnCustomLineItemUnitsGraphql = TCtpCountOnCustomLineItemUnits;
+export type TCountOnCustomLineItemUnitsRest = Omit<
+  CountOnCustomLineItemUnits,
+  'excludeCount'
+>;
+export type TCountOnCustomLineItemUnitsGraphql = Omit<
+  TCtpCountOnCustomLineItemUnits,
+  'excludeCount'
+>;
 export type TCountOnCustomLineItemUnitsDraftGraphql =
   TCtpCountOnCustomLineItemUnitsInput;
 
