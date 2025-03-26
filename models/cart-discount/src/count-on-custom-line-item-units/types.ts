@@ -5,6 +5,7 @@ import {
   TCtpCountOnCustomLineItemUnitsInput,
 } from '@commercetools-test-data/graphql-types';
 
+//@TODO: remove Omit when CountOnCustomLineItemUnits gets the excludeCount field in the SDK
 export type TCountOnCustomLineItemUnitsRest = Omit<
   CountOnCustomLineItemUnits,
   'excludeCount'
