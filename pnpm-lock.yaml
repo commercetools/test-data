@@ -125,7 +125,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.0.3
@@ -142,8 +142,8 @@ importers:
         specifier: 7.26.0
         version: 7.26.0
       '@babel/runtime-corejs3':
-        specifier: 7.26.0
-        version: 7.26.0
+        specifier: 7.26.10
+        version: 7.26.10
       lodash:
         specifier: 4.17.21
         version: 4.17.21
@@ -176,7 +176,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -200,7 +200,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -227,7 +227,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/associate-role':
         specifier: 10.14.2
         version: link:../associate-role
@@ -260,7 +260,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/business-unit':
         specifier: 10.14.2
         version: link:../business-unit
@@ -320,7 +320,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/category':
         specifier: 10.14.2
         version: link:../category
@@ -362,7 +362,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -389,7 +389,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -419,7 +419,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
@@ -452,7 +452,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-frontend/application-config':
         specifier: ^22.10.0
         version: 22.27.0
@@ -491,7 +491,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -515,7 +515,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-frontend/application-config':
         specifier: ^22.10.0
         version: 22.27.0
@@ -554,7 +554,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -581,7 +581,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -605,7 +605,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -635,7 +635,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/cart-discount':
         specifier: 10.14.2
         version: link:../cart-discount
@@ -662,7 +662,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -689,7 +689,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
@@ -710,7 +710,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/channel':
         specifier: 10.14.2
         version: link:../channel
@@ -743,7 +743,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/cart':
         specifier: 10.14.2
         version: link:../cart
@@ -788,7 +788,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -815,7 +815,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
@@ -839,7 +839,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -869,7 +869,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -893,7 +893,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/category':
         specifier: 10.14.2
         version: link:../category
@@ -932,7 +932,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/category':
         specifier: 10.14.2
         version: link:../category
@@ -965,7 +965,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/category':
         specifier: 10.14.2
         version: link:../category
@@ -1007,7 +1007,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1031,7 +1031,7 @@ importers:
         version: 7.26.0
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.26.0
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1058,7 +1058,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1085,7 +1085,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
@@ -1103,7 +1103,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/core':
         specifier: 10.14.2
         version: link:../../core
@@ -1127,7 +1127,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/business-unit':
         specifier: 10.14.2
         version: link:../business-unit
@@ -1172,7 +1172,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/business-unit':
         specifier: 10.14.2
         version: link:../business-unit
@@ -1211,7 +1211,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1235,7 +1235,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1265,7 +1265,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1289,7 +1289,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/business-unit':
         specifier: 10.14.2
         version: link:../business-unit
@@ -1331,7 +1331,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/channel':
         specifier: 10.14.2
         version: link:../channel
@@ -1367,7 +1367,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1391,7 +1391,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/channel':
         specifier: 10.14.2
         version: link:../channel
@@ -1421,7 +1421,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1445,7 +1445,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1469,7 +1469,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1499,7 +1499,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@commercetools-test-data/commons':
         specifier: 10.14.2
         version: link:../commons
@@ -1523,7 +1523,7 @@ importers:
         version: 7.24.6
       '@babel/runtime-corejs3':
         specifier: ^7.17.9
-        version: 7.24.6
+        version: 7.26.10
       '@faker-js/faker':
         specifier: ^9.0.0
         version: 9.0.3
@@ -2293,12 +2293,8 @@ packages:
   '@babel/regjsgen@0.8.0':
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
-  '@babel/runtime-corejs3@7.24.6':
-    resolution: {integrity: sha512-tbC3o8uHK9xMgMsvUm9qGqxVpbv6yborMBLbDteHIc7JDNHsTV0vDMQ5j1O1NXvO+BDELtL9KgoWYaUVIVGt8w==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/runtime-corejs3@7.26.0':
-    resolution: {integrity: sha512-YXHu5lN8kJCb1LOb9PgV6pvak43X2h4HvRApcN5SdWeaItQOzfn1hgP6jasD6KWQyJDBxrVmA9o9OivlnNJK/w==}
+  '@babel/runtime-corejs3@7.26.10':
+    resolution: {integrity: sha512-uITFQYO68pMEYR46AHgQoyBg7KPPJDAbGn4jUTIRgCFJIp88MIBUianVOplhZDEec07bp9zIyr4Kp0FCyQzmWg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/runtime@7.24.6':
@@ -3903,8 +3899,8 @@ packages:
   core-js-compat@3.37.1:
     resolution: {integrity: sha512-9TNiImhKvQqSUkOvk/mMRZzOANTiEVC7WaBNhHcKM7x+/5E1l5NvsysR19zuDQScE8k+kfQXWRN3AtS/eOSHpg==}
 
-  core-js-pure@3.37.1:
-    resolution: {integrity: sha512-J/r5JTHSmzTxbiYYrzXg9w1VpqrYt+gexenBE9pugeyhwPZTAEJddyiReJWsLO6uNQ8xJZFbod6XC7KKwatCiA==}
+  core-js-pure@3.41.0:
+    resolution: {integrity: sha512-71Gzp96T9YPk63aUvE5Q5qP+DryB4ZloUZPSOebGM88VNw8VNfvdA7z6kGA8iGOTEzAomsRidp4jXSmUIJsL+Q==}
 
   core-js@3.37.1:
     resolution: {integrity: sha512-Xn6qmxrQZyB0FFY8E3bgRXei3lWDJHhvI+u0q9TKIYM49G8pAr0FgnnrFRAmsbptZL1yxRADVXn+x5AGsbBfyw==}
@@ -7738,14 +7734,9 @@ snapshots:
 
   '@babel/regjsgen@0.8.0': {}
 
-  '@babel/runtime-corejs3@7.24.6':
+  '@babel/runtime-corejs3@7.26.10':
     dependencies:
-      core-js-pure: 3.37.1
-      regenerator-runtime: 0.14.1
-
-  '@babel/runtime-corejs3@7.26.0':
-    dependencies:
-      core-js-pure: 3.37.1
+      core-js-pure: 3.41.0
       regenerator-runtime: 0.14.1
 
   '@babel/runtime@7.24.6':
@@ -7970,7 +7961,7 @@ snapshots:
       '@babel/core': 7.24.6
       '@babel/register': 7.24.6(@babel/core@7.24.6)
       '@babel/runtime': 7.26.0
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
       '@commercetools-frontend/babel-preset-mc-app': 22.27.0
       '@commercetools-frontend/constants': 22.27.0
       '@types/dompurify': 2.4.0
@@ -8007,7 +7998,7 @@ snapshots:
       '@babel/preset-react': 7.24.6(@babel/core@7.24.6)
       '@babel/preset-typescript': 7.24.6(@babel/core@7.24.6)
       '@babel/runtime': 7.26.0
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
       '@emotion/babel-plugin': 11.11.0
       '@emotion/babel-preset-css-prop': 11.11.0(@babel/core@7.24.6)
       babel-plugin-dev-expression: 0.2.3(@babel/core@7.24.6)
@@ -8037,7 +8028,7 @@ snapshots:
       '@babel/preset-react': 7.24.6(@babel/core@7.24.6)
       '@babel/preset-typescript': 7.24.6(@babel/core@7.24.6)
       '@babel/runtime': 7.26.0
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
       '@emotion/babel-plugin': 11.11.0
       '@emotion/babel-preset-css-prop': 11.11.0(@babel/core@7.24.6)
       babel-plugin-dev-expression: 0.2.3(@babel/core@7.24.6)
@@ -8054,7 +8045,7 @@ snapshots:
   '@commercetools-frontend/constants@22.27.0':
     dependencies:
       '@babel/runtime': 7.26.0
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
 
   '@commercetools-frontend/eslint-config-mc-app@22.38.3(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.14)(babel-plugin-macros@3.1.0))':
     dependencies:
@@ -10168,7 +10159,7 @@ snapshots:
     dependencies:
       browserslist: 4.23.0
 
-  core-js-pure@3.37.1: {}
+  core-js-pure@3.41.0: {}
 
   core-js@3.37.1: {}
 
@@ -12385,7 +12376,7 @@ snapshots:
   omit-empty-es@1.2.0:
     dependencies:
       '@babel/runtime': 7.26.0
-      '@babel/runtime-corejs3': 7.26.0
+      '@babel/runtime-corejs3': 7.26.10
 
   once@1.4.0:
     dependencies:
