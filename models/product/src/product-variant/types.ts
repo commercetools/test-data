@@ -3,27 +3,31 @@ import {
   ProductVariantDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import type { TAttributeDraftGraphql, TAttributeGraphql } from '../attribute';
 
+import {
+  TCtpAddProductVariant,
+  TCtpProductVariant,
+} from '@commercetools-test-data/graphql-types';
+
+/**
+ * @deprecated use `TProductVariantRest` or `TProductVariantGraphql` instead
+ */
 export type TProductVariant = ProductVariant;
+/**
+ * @deprecated use `TProductVariantDraftRest` or `TProductVariantDraftGraphql` instead
+ */
 export type TProductVariantDraft = ProductVariantDraft;
 
-export type TProductVariantGraphql = Omit<
-  TProductVariant,
-  'attributes' | 'isMatchingVariant' | 'scopedPrice' | 'scopedPriceDiscounted'
-> & {
-  attributesRaw: Array<TAttributeGraphql>;
-  __typename: 'ProductVariant';
-};
-export type TProductVariantDraftGraphql = Omit<
-  TProductVariantDraft,
-  'attributes'
-> & {
-  attributes: Array<TAttributeDraftGraphql>;
-};
+export type TProductVariantRest = ProductVariant;
+export type TProductVariantDraftRest = ProductVariantDraft;
 
-export type TProductVariantBuilder = TBuilder<TProductVariant>;
-export type TProductVariantDraftBuilder = TBuilder<TProductVariantDraft>;
-export type TCreateProductVariantBuilder = () => TProductVariantBuilder;
-export type TCreateProductVariantDraftBuilder =
-  () => TProductVariantDraftBuilder;
+export type TProductVariantGraphql = TCtpProductVariant;
+export type TProductVariantDraftGraphql = TCtpAddProductVariant;
+
+export type TCreateProductVariantBuilder<
+  TProductVariantModel extends
+    | TProductVariantRest
+    | TProductVariantDraftRest
+    | TProductVariantGraphql
+    | TProductVariantDraftGraphql,
+> = () => TBuilder<TProductVariantModel>;

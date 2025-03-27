@@ -1,13 +1,48 @@
-import { TProductVariantDraftBuilder } from '../../types';
-import ProductVariantDraft from '../builder';
+// import { TProductVariantDraftDraftBuilder } from '../../types';
+// import ProductVariantDraftDraft from '../builder';
 
-const empty = (): TProductVariantDraftBuilder =>
-  ProductVariantDraft()
+// const empty = (): TProductVariantDraftDraftBuilder =>
+//   ProductVariantDraftDraft()
+//     .key(undefined)
+//     .sku(undefined)
+//     .prices(undefined)
+//     .attributes(undefined)
+//     .images(undefined)
+//     .assets(undefined);
+
+// export default empty;
+
+import { TBuilder } from '@commercetools-test-data/core';
+import {
+  ProductVariantDraft,
+  ProductVariantDraftGraphql,
+  ProductVariantDraftRest,
+} from '..';
+import {
+  TProductVariantDraft,
+  TProductVariantDraftGraphql,
+  TProductVariantDraftRest,
+} from '../../types';
+
+const populatePreset = <
+  TModel extends TProductVariantDraftGraphql | TProductVariantDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key(undefined)
     .sku(undefined)
     .prices(undefined)
     .attributes(undefined)
     .images(undefined)
     .assets(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TProductVariantDraftRest> =>
+  populatePreset(ProductVariantDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TProductVariantDraftGraphql> =>
+  populatePreset(ProductVariantDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TProductVariantDraft> =>
+  populatePreset(ProductVariantDraft.random());
