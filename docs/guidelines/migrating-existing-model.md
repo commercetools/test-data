@@ -472,8 +472,6 @@ export const graphqlPreset = (): TBuilder<TChannelGraphql> =>
 
 export const compatPreset = (): TBuilder<TChannel> =>
   populatePreset(Channel.random());
-er<TChannel> =>
-  populatePreset(Channel.random());
 ```
 
 Bear in mind you might find different requirements for the GraphQL version where you might need to tailor a bit that preset generator. In this case, we can still manage population with a helper function using an optional parameter.
