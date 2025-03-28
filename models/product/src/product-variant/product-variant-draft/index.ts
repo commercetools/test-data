@@ -1,6 +1,3 @@
-// export { default as random } from './builder';
-// export { default as presets } from './presets';
-
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
@@ -18,10 +15,9 @@ export const ProductVariantDraftGraphql = {
   presets: modelPresets.graphqlPresets,
 };
 
+export * as ProductVariantDraft from '.';
 /**
  * @deprecated Use `ProductVariantDraftRest` or `ProductVariantDraftGraphql` exported models instead of `ProductVariantDraft`.
  */
-export const ProductVariantDraft = {
-  random: CompatProductVariantModelBuilder,
-  presets: modelPresets.compatPresets,
-};
+export const random = CompatProductVariantModelBuilder;
+export const presets = modelPresets.compatPresets;

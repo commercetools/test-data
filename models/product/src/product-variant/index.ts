@@ -1,10 +1,3 @@
-// export * as ProductVariantDraft from './product-variant-draft';
-
-// export { default as random } from './builder';
-// export { default as presets } from './presets';
-
-// export * from './types';
-
 import {
   RestModelBuilder,
   GraphqlModelBuilder,
@@ -12,7 +5,7 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-// export * from './product-variant-draft';
+export * from './product-variant-draft';
 export * as ProductVariant from '.';
 
 export * from './types';
