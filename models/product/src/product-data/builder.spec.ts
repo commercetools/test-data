@@ -37,13 +37,13 @@ describe('builder', () => {
         metaKeywords: expect.objectContaining({
           en: expect.any(String),
         }),
-        masterVariant: expect.objectContaining({ id: expect.any(String) }),
-        variant: expect.objectContaining({ id: expect.any(String) }),
+        masterVariant: expect.objectContaining({ id: expect.any(Number) }),
+        variant: expect.objectContaining({ id: expect.any(Number) }),
         variants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(String) }),
+          expect.objectContaining({ id: expect.any(Number) }),
         ]),
         allVariants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(String) }),
+          expect.objectContaining({ id: expect.any(Number) }),
         ]),
         searchKeywords: expect.arrayContaining([]),
         searchKeyword: expect.arrayContaining([]),
@@ -82,9 +82,9 @@ describe('builder', () => {
         metaKeywords: expect.objectContaining({
           en: expect.any(String),
         }),
-        masterVariant: expect.objectContaining({ id: expect.any(String) }),
+        masterVariant: expect.objectContaining({ id: expect.any(Number) }),
         variants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(String) }),
+          expect.objectContaining({ id: expect.any(Number) }),
         ]),
       })
     )
@@ -167,13 +167,13 @@ describe('builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        masterVariant: expect.objectContaining({ id: expect.any(String) }),
-        variant: expect.objectContaining({ id: expect.any(String) }),
+        masterVariant: expect.objectContaining({ id: expect.any(Number) }),
+        variant: expect.objectContaining({ id: expect.any(Number) }),
         variants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(String) }),
+          expect.objectContaining({ id: expect.any(Number) }),
         ]),
         allVariants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(String) }),
+          expect.objectContaining({ id: expect.any(Number) }),
         ]),
         skus: expect.arrayContaining([expect.any(String)]),
         __typename: 'ProductData',
