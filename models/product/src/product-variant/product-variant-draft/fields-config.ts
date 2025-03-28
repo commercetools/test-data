@@ -1,5 +1,6 @@
 import { PriceDraft } from '@commercetools-test-data/commons';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
+import { AttributeDraft } from '../../attribute';
 import { ImageDraft } from '../../image';
 import type {
   TProductVariantDraftGraphql,
@@ -8,7 +9,7 @@ import type {
 
 const commonFieldsConfig = {
   assets: [],
-  attributes: [],
+  attributes: fake(() => [AttributeDraft.random()]),
   images: fake(() => [ImageDraft.random()]),
   key: fake((f) => f.lorem.slug(2)),
   prices: fake(() => [PriceDraft.random()]),
@@ -23,6 +24,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantDraftGraphql
   {
     fields: {
       ...commonFieldsConfig,
-      staged: fake(() => false),
+      staged: fake(() => true),
     },
   };
