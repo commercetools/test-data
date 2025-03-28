@@ -82,6 +82,7 @@ describe(`with s567Uv02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "s567-uv-2019",
+        "staged": true,
       }
     `);
   });

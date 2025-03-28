@@ -189,6 +189,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
           },
         ],
         "sku": "BCOAS-08",
+        "staged": true,
       }
     `);
   });

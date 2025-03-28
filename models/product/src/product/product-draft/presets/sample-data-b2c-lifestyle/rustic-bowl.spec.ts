@@ -231,6 +231,7 @@ describe(`with rusticBowl preset`, () => {
             },
           ],
           "sku": "RB-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -297,6 +297,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
             },
           ],
           "sku": "HDG-02",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

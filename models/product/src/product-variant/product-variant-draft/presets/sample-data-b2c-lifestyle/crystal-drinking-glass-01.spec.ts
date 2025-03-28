@@ -173,6 +173,7 @@ describe(`with crystalDrinkingGlass01 preset`, () => {
           },
         ],
         "sku": "CDG-09",
+        "staged": true,
       }
     `);
   });

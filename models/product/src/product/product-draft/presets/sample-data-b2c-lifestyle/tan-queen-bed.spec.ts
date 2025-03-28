@@ -270,6 +270,7 @@ describe(`with tanQueenBed preset`, () => {
             },
           ],
           "sku": "LPQB-084",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

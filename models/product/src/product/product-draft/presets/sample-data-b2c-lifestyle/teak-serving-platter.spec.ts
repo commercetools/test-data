@@ -270,6 +270,7 @@ describe(`with teakServingPlatter preset`, () => {
             },
           ],
           "sku": "TST-02",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -286,6 +286,7 @@ describe(`with wilmaChair preset`, () => {
             },
           ],
           "sku": "NJOP-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

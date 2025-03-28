@@ -82,6 +82,7 @@ describe(`with nn456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "nn456-st-2023",
+        "staged": true,
       }
     `);
   });

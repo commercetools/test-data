@@ -182,6 +182,7 @@ describe(`with sallyArmchair01 preset`, () => {
           },
         ],
         "sku": "SARMO-034",
+        "staged": true,
       }
     `);
   });

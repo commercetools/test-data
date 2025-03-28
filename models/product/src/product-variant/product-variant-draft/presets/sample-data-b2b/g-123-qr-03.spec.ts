@@ -82,6 +82,7 @@ describe(`with g123Qr03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "g123-qr-2023",
+        "staged": true,
       }
     `);
   });

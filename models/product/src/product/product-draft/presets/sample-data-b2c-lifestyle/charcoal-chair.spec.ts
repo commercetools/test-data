@@ -286,6 +286,7 @@ describe(`with charcoalChair preset`, () => {
             },
           ],
           "sku": "CCH-093",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

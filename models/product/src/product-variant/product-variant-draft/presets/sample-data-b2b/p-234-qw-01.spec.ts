@@ -82,6 +82,7 @@ describe(`with p234Qw01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "p234-qw-2015",
+        "staged": true,
       }
     `);
   });

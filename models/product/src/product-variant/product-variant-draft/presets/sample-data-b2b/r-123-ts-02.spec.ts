@@ -82,6 +82,7 @@ describe(`with r123Ts02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "r123-ts-2019",
+        "staged": true,
       }
     `);
   });

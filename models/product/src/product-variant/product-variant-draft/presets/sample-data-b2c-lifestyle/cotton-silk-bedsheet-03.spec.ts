@@ -189,6 +189,7 @@ describe(`with cottonSilkBedsheet03 preset`, () => {
           },
         ],
         "sku": "CSKW-9822",
+        "staged": true,
       }
     `);
   });

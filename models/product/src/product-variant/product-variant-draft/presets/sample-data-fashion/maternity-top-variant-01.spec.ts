@@ -136,6 +136,7 @@ describe(`with maternityTopVariant01 preset`, () => {
           },
         ],
         "sku": "118716",
+        "staged": true,
       }
     `);
   });

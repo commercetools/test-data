@@ -270,6 +270,7 @@ describe(`with chiantiWineGlass preset`, () => {
             },
           ],
           "sku": "CWG-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

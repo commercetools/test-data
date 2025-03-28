@@ -82,6 +82,7 @@ describe(`with hh456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "hh456-st-2015",
+        "staged": true,
       }
     `);
   });

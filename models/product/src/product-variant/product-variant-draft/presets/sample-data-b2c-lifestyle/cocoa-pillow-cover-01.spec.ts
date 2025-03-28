@@ -176,6 +176,7 @@ describe(`with cocoaPillowCover01 preset`, () => {
           },
         ],
         "sku": "BLPC-09",
+        "staged": true,
       }
     `);
   });

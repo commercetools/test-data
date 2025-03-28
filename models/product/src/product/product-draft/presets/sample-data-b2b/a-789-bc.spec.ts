@@ -278,6 +278,7 @@ describe(`with a789Bc preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "a789-bc-2015",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -412,6 +413,7 @@ describe(`with a789Bc preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "a789-bc-2019",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -446,6 +448,7 @@ describe(`with a789Bc preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "a789-bc-2023",
+            "staged": true,
           },
         ],
       }

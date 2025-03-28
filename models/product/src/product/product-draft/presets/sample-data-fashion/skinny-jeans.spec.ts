@@ -248,6 +248,7 @@ describe(`with skinnyJeans preset`, () => {
             },
           ],
           "sku": "396594",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -337,6 +338,7 @@ describe(`with skinnyJeans preset`, () => {
               },
             ],
             "sku": "349700",
+            "staged": true,
           },
         ],
       }

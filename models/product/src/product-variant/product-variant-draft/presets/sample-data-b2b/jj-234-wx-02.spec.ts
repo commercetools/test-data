@@ -82,6 +82,7 @@ describe(`with jj234Wx02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "jj234-wx-2019",
+        "staged": true,
       }
     `);
   });

@@ -173,6 +173,7 @@ describe(`with rectangleServingTray01 preset`, () => {
           },
         ],
         "sku": "RST-02",
+        "staged": true,
       }
     `);
   });

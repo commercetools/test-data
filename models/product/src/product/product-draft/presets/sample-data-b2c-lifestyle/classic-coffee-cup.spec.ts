@@ -277,6 +277,7 @@ describe(`with classicCoffeeCup preset`, () => {
             },
           ],
           "sku": "CCC-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

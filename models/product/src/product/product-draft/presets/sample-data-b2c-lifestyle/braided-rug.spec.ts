@@ -277,6 +277,7 @@ describe(`with braidedRug preset`, () => {
             },
           ],
           "sku": "BR-0983",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

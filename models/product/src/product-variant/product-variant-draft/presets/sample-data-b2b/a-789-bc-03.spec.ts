@@ -82,6 +82,7 @@ describe(`with a789Bc03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "a789-bc-2023",
+        "staged": true,
       }
     `);
   });

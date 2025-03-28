@@ -46,6 +46,7 @@ describe(`with pistonRingSet01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "piston-ring-set",
+        "staged": true,
       }
     `);
   });

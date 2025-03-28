@@ -194,6 +194,7 @@ describe(`with leatherWeaveChair01 preset`, () => {
           },
         ],
         "sku": "BA-092",
+        "staged": true,
       }
     `);
   });

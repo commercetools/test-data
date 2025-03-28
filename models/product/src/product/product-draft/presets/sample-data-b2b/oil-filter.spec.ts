@@ -166,6 +166,7 @@ describe(`with oilFilter preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "oil-filter",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

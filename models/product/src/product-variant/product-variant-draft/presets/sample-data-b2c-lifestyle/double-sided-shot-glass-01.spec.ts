@@ -176,6 +176,7 @@ describe(`with doubleSidedShotGlass01 preset`, () => {
           },
         ],
         "sku": "SHOT-095",
+        "staged": true,
       }
     `);
   });

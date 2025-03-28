@@ -282,6 +282,7 @@ describe(`with marquisTray preset`, () => {
             },
           ],
           "sku": "MWT-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

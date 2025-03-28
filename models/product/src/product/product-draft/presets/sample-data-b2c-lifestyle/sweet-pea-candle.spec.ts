@@ -305,6 +305,7 @@ describe(`with sweetPeaCandle preset`, () => {
             },
           ],
           "sku": "SPC-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

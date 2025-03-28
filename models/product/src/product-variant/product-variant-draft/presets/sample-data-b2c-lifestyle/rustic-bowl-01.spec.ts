@@ -169,6 +169,7 @@ describe(`with rusticBowl01 preset`, () => {
           },
         ],
         "sku": "RB-01",
+        "staged": true,
       }
     `);
   });

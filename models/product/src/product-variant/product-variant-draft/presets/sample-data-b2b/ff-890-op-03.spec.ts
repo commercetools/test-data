@@ -82,6 +82,7 @@ describe(`with ff890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ff890-op-2023",
+        "staged": true,
       }
     `);
   });

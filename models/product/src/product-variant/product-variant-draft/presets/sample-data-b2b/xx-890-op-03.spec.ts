@@ -96,6 +96,7 @@ describe(`with xx890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "xx890-op-green",
+        "staged": true,
       }
     `);
   });

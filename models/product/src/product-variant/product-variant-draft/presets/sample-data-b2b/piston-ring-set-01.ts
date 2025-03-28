@@ -1,9 +1,9 @@
-import { AttributeDraft } from '../../../../attribute';
+import { TBuilder } from '@commercetools-test-data/core';
 import * as Image from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 import * as ProductVariantDraft from '../../index';
 
-const pistonRingSet01 = (): TProductVariantDraftBuilder =>
+const pistonRingSet01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .sku('piston-ring-set')

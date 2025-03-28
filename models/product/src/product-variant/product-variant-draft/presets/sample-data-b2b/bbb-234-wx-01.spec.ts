@@ -96,6 +96,7 @@ describe(`with bbb234Wx01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "bbb234-wx-red",
+        "staged": true,
       }
     `);
   });

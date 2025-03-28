@@ -262,6 +262,7 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
           ],
           "sku": "PAP-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -217,6 +217,7 @@ describe(`with cubeJuteBasket01 preset`, () => {
           },
         ],
         "sku": "CJB-01",
+        "staged": true,
       }
     `);
   });

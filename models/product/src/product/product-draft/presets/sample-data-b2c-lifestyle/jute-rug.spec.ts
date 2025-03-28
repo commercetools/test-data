@@ -327,6 +327,7 @@ describe(`with juteRug preset`, () => {
             },
           ],
           "sku": "JAR-08",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -172,6 +172,7 @@ describe(`with opalKingBed01 preset`, () => {
           },
         ],
         "sku": "MTB-023",
+        "staged": true,
       }
     `);
   });

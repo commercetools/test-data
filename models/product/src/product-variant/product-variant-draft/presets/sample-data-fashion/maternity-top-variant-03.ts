@@ -1,10 +1,11 @@
 import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import * as ProductVariantDraft from '../..';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
+import type { TProductVariantDraft } from '../../../types';
 
-const maternityTopVariant03 = (): TProductVariantDraftBuilder =>
+const maternityTopVariant03 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .sku('118718')

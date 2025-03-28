@@ -311,6 +311,7 @@ describe(`with maternityTop preset`, () => {
             },
           ],
           "sku": "118716",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -400,6 +401,7 @@ describe(`with maternityTop preset`, () => {
               },
             ],
             "sku": "118717",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -461,6 +463,7 @@ describe(`with maternityTop preset`, () => {
               },
             ],
             "sku": "118718",
+            "staged": true,
           },
         ],
       }

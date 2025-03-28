@@ -125,6 +125,7 @@ describe(`with sandalsAU variant preset`, () => {
           },
         ],
         "sku": "148097",
+        "staged": true,
       }
     `);
   });

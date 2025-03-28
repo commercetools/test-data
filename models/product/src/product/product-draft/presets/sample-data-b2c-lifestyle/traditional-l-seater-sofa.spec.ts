@@ -325,6 +325,7 @@ describe(`with traditionalLSeaterSofa preset`, () => {
             },
           ],
           "sku": "TLSS-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

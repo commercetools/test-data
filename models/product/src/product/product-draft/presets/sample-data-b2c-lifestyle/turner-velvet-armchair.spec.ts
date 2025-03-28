@@ -275,6 +275,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
             },
           ],
           "sku": "TARM-03",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

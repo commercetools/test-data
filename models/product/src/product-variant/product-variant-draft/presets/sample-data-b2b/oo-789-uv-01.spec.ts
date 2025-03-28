@@ -82,6 +82,7 @@ describe(`with oo789Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "oo789-uv-2015",
+        "staged": true,
       }
     `);
   });

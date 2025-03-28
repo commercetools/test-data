@@ -96,6 +96,7 @@ describe(`with ddd890Op02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ddd890-op-blue",
+        "staged": true,
       }
     `);
   });

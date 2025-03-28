@@ -170,6 +170,7 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
         ],
         "sku": "RCC-09",
+        "staged": true,
       }
     `);
   });

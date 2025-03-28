@@ -82,6 +82,7 @@ describe(`with pp234Wx02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "pp234-wx-2019",
+        "staged": true,
       }
     `);
   });

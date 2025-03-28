@@ -82,6 +82,7 @@ describe(`with v456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "v456-st-2023",
+        "staged": true,
       }
     `);
   });

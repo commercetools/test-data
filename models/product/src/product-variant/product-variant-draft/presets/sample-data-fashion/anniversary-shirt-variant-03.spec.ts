@@ -41,6 +41,7 @@ describe(`with anniversaryShirtVariant03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": undefined,
+        "staged": true,
       }
     `);
   });

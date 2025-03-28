@@ -82,6 +82,7 @@ describe(`with n123Qr02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "n123-qr-2019",
+        "staged": true,
       }
     `);
   });

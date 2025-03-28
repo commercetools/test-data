@@ -333,6 +333,7 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
             },
           ],
           "sku": "TTSS-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

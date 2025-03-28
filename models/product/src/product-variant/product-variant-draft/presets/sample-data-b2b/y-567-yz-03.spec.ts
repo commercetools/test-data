@@ -82,6 +82,7 @@ describe(`with y567Yz03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "y567-yz-2023",
+        "staged": true,
       }
     `);
   });

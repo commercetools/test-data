@@ -46,6 +46,7 @@ describe(`with taperedRollerBearing01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "tapered-roller-bearing",
+        "staged": true,
       }
     `);
   });

@@ -185,6 +185,7 @@ describe(`with wineBottleOpener01 preset`, () => {
           },
         ],
         "sku": "WOP-09",
+        "staged": true,
       }
     `);
   });

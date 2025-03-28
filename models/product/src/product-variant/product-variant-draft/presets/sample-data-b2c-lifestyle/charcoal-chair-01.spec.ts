@@ -198,6 +198,7 @@ describe(`with charcoalChair01 preset`, () => {
           },
         ],
         "sku": "CCH-093",
+        "staged": true,
       }
     `);
   });

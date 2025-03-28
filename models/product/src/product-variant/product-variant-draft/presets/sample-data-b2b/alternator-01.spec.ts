@@ -45,6 +45,7 @@ describe(`with alternator01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "alternator",
+        "staged": true,
       }
     `);
   });

@@ -262,6 +262,7 @@ describe(`with squareBambooCoaster preset`, () => {
             },
           ],
           "sku": "BAMB-084",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -184,6 +184,7 @@ describe(`with tanQueenBed01 preset`, () => {
           },
         ],
         "sku": "LPQB-084",
+        "staged": true,
       }
     `);
   });

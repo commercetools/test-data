@@ -192,6 +192,7 @@ describe(`with cocktailStrainer01 preset`, () => {
           },
         ],
         "sku": "STRA-095",
+        "staged": true,
       }
     `);
   });

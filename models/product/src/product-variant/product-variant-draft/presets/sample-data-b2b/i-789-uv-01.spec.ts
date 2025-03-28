@@ -82,6 +82,7 @@ describe(`with i789Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "i789-uv-2015",
+        "staged": true,
       }
     `);
   });

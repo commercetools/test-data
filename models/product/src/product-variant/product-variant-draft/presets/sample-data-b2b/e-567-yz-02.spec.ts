@@ -82,6 +82,7 @@ describe(`with e567Yz02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "e567-yz-2019",
+        "staged": true,
       }
     `);
   });
