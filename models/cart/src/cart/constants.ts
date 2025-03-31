@@ -39,3 +39,8 @@ export const cartState = {
   Ordered: 'Ordered',
   Frozen: 'Frozen',
 } as const;
+
+export const customLineItemPriceMode = {
+  Standard: 'Standard',
+  External: 'External',
+} as const;
