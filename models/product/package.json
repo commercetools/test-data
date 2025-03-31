@@ -24,6 +24,7 @@
     "@commercetools-test-data/commons": "10.14.2",
     "@commercetools-test-data/core": "10.14.2",
     "@commercetools-test-data/graphql-types": "10.14.2",
+    "@commercetools-test-data/product-selection": "10.14.2",
     "@commercetools-test-data/product-type": "10.14.2",
     "@commercetools-test-data/tax-category": "10.14.2",
     "@commercetools-test-data/utils": "10.14.2",
