@@ -146,4 +146,6 @@ const presets = {
   jjj890Op,
 };
 
-export default presets;
+export const restPresets = presets;
+export const graphqlPresets = presets;
+export const compatPresets = presets;

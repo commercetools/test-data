@@ -1,8 +1,17 @@
-import type { TProductDraftBuilder } from '../../types';
-import ProductDraft from '../builder';
+import { TBuilder } from '@commercetools-test-data/core';
+import {
+  TProductDraft,
+  TProductDraftGraphql,
+  TProductDraftRest,
+} from '../../types';
+import { ProductDraft, ProductDraftGraphql, ProductDraftRest } from '../index';
 
-const empty = (): TProductDraftBuilder =>
-  ProductDraft()
+const populatePreset = <
+  TModel extends TProductDraftGraphql | TProductDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key(undefined)
     .description(undefined)
     .categories(undefined)
@@ -17,5 +26,13 @@ const empty = (): TProductDraftBuilder =>
     .priceMode(undefined)
     .searchKeywords(undefined)
     .publish(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TProductDraftRest> =>
+  populatePreset(ProductDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TProductDraftGraphql> =>
+  populatePreset(ProductDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TProductDraft> =>
+  populatePreset(ProductDraft.random());

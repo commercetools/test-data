@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -16,7 +17,7 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const jacketsProductTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .jackets()
@@ -30,7 +31,7 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
   .topsMen()
   .build<TCategoryDraft>();
 
-const denimJacket = (): TProductDraftBuilder =>
+const denimJacket = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Denim Jacket'))

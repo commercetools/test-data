@@ -1,17 +1,3 @@
-// import { TProductVariantDraftDraftBuilder } from '../../types';
-// import ProductVariantDraftDraft from '../builder';
-
-// const empty = (): TProductVariantDraftDraftBuilder =>
-//   ProductVariantDraftDraft()
-//     .key(undefined)
-//     .sku(undefined)
-//     .prices(undefined)
-//     .attributes(undefined)
-//     .images(undefined)
-//     .assets(undefined);
-
-// export default empty;
-
 import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductVariantDraft,

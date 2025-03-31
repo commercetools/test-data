@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -16,7 +17,7 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant/index';
 import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const shirtProductTypeDraft = ProductTypeDraft.presets.sampleDataFashion
   .shirts()
@@ -30,7 +31,7 @@ const categoryDraft = CategoryDraft.presets.sampleDataFashion
   .topsKids()
   .build<TCategoryDraft>();
 
-const anniversaryShirt = (): TProductDraftBuilder =>
+const anniversaryShirt = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .name(

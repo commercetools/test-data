@@ -9,9 +9,7 @@ import * as modelPresets from './presets';
 
 export * from './types';
 export * as constants from './constants';
-// export { default as random } from './builder';
-// export { default as presets } from './presets';
-// export { default as draftPresets } from './product-draft/presets';
+export * from './product-draft';
 
 export const ProductRest = {
   random: RestModelBuilder,

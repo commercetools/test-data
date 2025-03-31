@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -17,7 +18,7 @@ import {
 import { ProductVariantDraft } from '../../../../product-variant';
 import { productPriceMode } from '../../../constants';
 import { ProductDraft } from '../../../index';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxTaxCategory = TaxCategoryDraft.presets.sampleDataB2B
   .standardTax()
@@ -33,7 +34,7 @@ const wheeledExcavatorsForConstructionCategory =
     .wheeledExcavatorsForConstruction()
     .build<TCategoryDraft>();
 
-const mm123Qr = (): TProductDraftBuilder =>
+const mm123Qr = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .priceMode(productPriceMode.Standalone)

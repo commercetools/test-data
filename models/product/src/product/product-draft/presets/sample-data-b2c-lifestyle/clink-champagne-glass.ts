@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -16,7 +17,7 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
 import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -39,7 +40,7 @@ const kitchenDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .kitchen()
   .build<TCategoryDraft>();
 
-const clinkChampagneGlass = (): TProductDraftBuilder =>
+const clinkChampagneGlass = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('clink-champagne-glass')

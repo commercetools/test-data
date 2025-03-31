@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -16,7 +17,7 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
 import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -39,7 +40,7 @@ const tablesDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .tables()
   .build<TCategoryDraft>();
 
-const artDecoCoffeeTable = (): TProductDraftBuilder =>
+const artDecoCoffeeTable = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('art-deco-coffee-table')

@@ -17,43 +17,6 @@ import type { TProductGraphql, TProductRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-// REST
-// id: string;
-// createdAt: string;
-// createdBy?: CreatedBy;
-// key?: string;
-// lastModifiedAt: string;
-// lastModifiedBy?: LastModifiedBy;
-// masterData: ProductCatalogData;
-// priceMode?: ProductPriceModeEnum;
-// productType: ProductTypeReference;
-// reviewRatingStatistics?: ReviewRatingStatistics;
-// state?: StateReference;
-// taxCategory?: TaxCategoryReference;
-// version: number;
-// warnings?: WarningObject[];
-
-// GRAPHQL
-// __typename?: 'Product';
-// createdAt: Scalars['DateTime']['output'];
-// createdBy?: Maybe<TCtpInitiator>;
-// id: Scalars['String']['output'];
-// key?: Maybe<Scalars['String']['output']>;
-// lastModifiedAt: Scalars['DateTime']['output'];
-// lastModifiedBy?: Maybe<TCtpInitiator>;
-// masterData: TCtpProductCatalogData;
-// priceMode?: Maybe<TCtpPriceMode>;
-// productSelectionRefs: TCtpSelectionOfProductQueryResult;
-// productType?: Maybe<TCtpProductTypeDefinition>;
-// productTypeRef: TCtpReference;
-// reviewRatingStatistics?: Maybe<TCtpReviewRatingStatistics>;
-// skus: Array<Scalars['String']['output']>;
-// state?: Maybe<TCtpState>;
-// stateRef?: Maybe<TCtpReference>;
-// taxCategory?: Maybe<TCtpTaxCategory>;
-// taxCategoryRef?: Maybe<TCtpReference>;
-// version: Scalars['Long']['output'];
-
 const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   createdAt: fake(getOlderDate),
@@ -79,16 +42,6 @@ export const restFieldsConfig: TModelFieldsConfig<TProductRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    // productSelectionRefs: TCtpSelectionOfProductQueryResult;
-    // TODO: To be implemented
-    // productSelectionRefs: fake(() => ({
-    //   count: 0,
-    //   exists: false,
-    //   offset: 0,
-    //   results: [],
-    //   total: 0,
-    //   __typename: 'SelectionOfProductQueryResult',
-    // })),
     productSelectionRefs: fake(() =>
       buildGraphqlList([], { __typename: 'SelectionOfProductQueryResult' })
     ),
