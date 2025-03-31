@@ -1,6 +1,17 @@
-import boringGenericMilk from './boring-generic-milk';
-import happyCowMilk from './happy-cow-milk';
+import * as boringGenericMilk from './boring-generic-milk';
+import * as happyCowMilk from './happy-cow-milk';
 
-const presets = { happyCowMilk, boringGenericMilk };
+export const restPresets = {
+  happyCowMilk: happyCowMilk.restPreset,
+  boringGenericMilk: boringGenericMilk.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  happyCowMilk: happyCowMilk.graphqlPreset,
+  boringGenericMilk: boringGenericMilk.graphqlPreset,
+};
+
+export const compatPresets = {
+  happyCowMilk: happyCowMilk.compatPreset,
+  boringGenericMilk: boringGenericMilk.compatPreset,
+};

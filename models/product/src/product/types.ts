@@ -5,22 +5,25 @@ import {
   TCtpProductDraft,
 } from '@commercetools-test-data/graphql-types';
 
-export type TProduct = Product & {
-  skus: Array<String>;
-};
+/**
+ * @deprecated use `TProductRest` or `TProductGraphql` instead
+ */
+export type TProduct = Product;
+/**
+ * @deprecated use `TProductDraftRest` or `TProductDraftGraphql` instead
+ */
+export type TProductDraft = ProductDraft;
 
-export type TProductRest = Omit<TProduct, 'skus'>;
+export type TProductRest = Product;
+export type TProductDraftRest = ProductDraft;
 
 export type TProductGraphql = TCtpProduct;
-
-export type TProductDraft = ProductDraft;
 export type TProductDraftGraphql = TCtpProductDraft;
 
-export type TProductBuilder = TBuilder<TProduct>;
-export type TCreateProductBuilder = () => TProductBuilder;
-
-export type TProductDraftBuilder = TBuilder<TProductDraft>;
-export type TCreateProductDraftBuilder = () => TProductDraftBuilder;
-
-export type TProductBuilderGraphql = TBuilder<TProductGraphql>;
-export type TCreateProductBuilderGraphql = () => TProductBuilderGraphql;
+export type TCreateProductBuilder<
+  TProductModel extends
+    | TProductRest
+    | TProductDraftRest
+    | TProductGraphql
+    | TProductDraftGraphql,
+> = () => TBuilder<TProductModel>;
