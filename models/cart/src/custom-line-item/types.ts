@@ -29,3 +29,9 @@ export type TCreateCustomLineItemBuilder<
     | TCustomLineItemDraftRest
     | TCustomLineItemDraftGraphql,
 > = () => TBuilder<TCustomLineItemModel>;
+
+export type TCreateCustomLineItemDraftBuilder<
+  TCustomLineItemDraftModel extends
+    | TCustomLineItemDraftRest
+    | TCustomLineItemDraftGraphql,
+> = () => TBuilder<TCustomLineItemDraftModel>;

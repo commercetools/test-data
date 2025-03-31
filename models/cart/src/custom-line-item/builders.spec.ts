@@ -1,6 +1,7 @@
 import { Money, LocalizedString } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
+import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import {
   TCustomLineItem,
   TCustomLineItemRest,
@@ -16,7 +17,7 @@ const populateCommonFields = <
   TModel extends TCustomLineItem | TCustomLineItemGraphql | TCustomLineItemRest,
 >(
   model: TBuilder<TModel>
-) => model.money(Money.random());
+) => model.money(Money.random()).custom(CustomFieldBooleanType.random());
 
 const populateGraphqlFields = (model: TBuilder<TCustomLineItemGraphql>) =>
   populateCommonFields(model)
@@ -44,7 +45,9 @@ const validateCommonFields = (
       discountedPricePerQuantity: expect.arrayContaining([]),
       shippingDetails: null,
       priceMode: expect.any(String),
-      custom: null,
+      custom: expect.objectContaining({
+        name: 'Boolean',
+      }),
     })
   );
 };
@@ -53,6 +56,9 @@ const validateGraphqlFields = (model: TCustomLineItemGraphql) => {
   validateCommonFields(model);
   expect(model).toEqual(
     expect.objectContaining({
+      custom: expect.objectContaining({
+        __typename: 'BooleanCustomFieldType',
+      }),
       __typename: 'CustomLineItem',
       name: expect.any(String),
       taxCategory: expect.objectContaining({
@@ -96,7 +102,6 @@ describe('CustomLineItem model builders', () => {
     const graphqlModel = populateGraphqlFields(
       CustomLineItemGraphql.random()
     ).buildGraphql();
-    console.log(graphqlModel);
     validateGraphqlFields(graphqlModel);
   });
 });
