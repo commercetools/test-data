@@ -1,9 +1,9 @@
 import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
-import * as ProductVariantDraft from '../..';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
 const maternityTopVariant03 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets

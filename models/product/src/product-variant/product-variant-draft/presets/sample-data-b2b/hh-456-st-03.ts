@@ -1,7 +1,7 @@
 import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import type { TProductVariantDraft } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import { ProductVariantDraft } from '../../index';
 
 const hh456St03 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets

@@ -1,7 +1,7 @@
 import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import type { TProductVariantDraft } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import { ProductVariantDraft } from '../../index';
 
 // rename master variants to variant01, etc...
 const anniversaryShirtVariant03 = (): TBuilder<TProductVariantDraft> =>

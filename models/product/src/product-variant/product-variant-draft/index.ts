@@ -15,9 +15,10 @@ export const ProductVariantDraftGraphql = {
   presets: modelPresets.graphqlPresets,
 };
 
-export * as ProductVariantDraft from '.';
 /**
  * @deprecated Use `ProductVariantDraftRest` or `ProductVariantDraftGraphql` exported models instead of `ProductVariantDraft`.
  */
-export const random = CompatProductVariantModelBuilder;
-export const presets = modelPresets.compatPresets;
+export const ProductVariantDraft = {
+  random: CompatProductVariantModelBuilder,
+  presets: modelPresets.compatPresets,
+};
