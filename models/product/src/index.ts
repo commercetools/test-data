@@ -5,7 +5,6 @@ export * from './product/types';
 export * from './product-catalog-data/types';
 export * from './product-data/types';
 export * from './product-variant/types';
-export * from './selection-of-product/types';
 
 // Export models
 export * as Attribute from './attribute';
@@ -24,4 +23,4 @@ export * as ProductData from './product-data';
 export * as ProductVariant from './product-variant';
 export * from './product-variant/product-variant-draft';
 
-export * as SelectionOfProduct from './selection-of-product';
+export * from './selection-of-product';

@@ -23,18 +23,18 @@ function validateRestModel(restModel: TProductRest) {
       priceMode: expect.any(String),
       state: null,
       taxCategory: expect.objectContaining({
+        typeId: 'tax-category',
         id: expect.any(String),
-        key: expect.any(String),
+        obj: expect.objectContaining({
+          id: expect.any(String),
+        }),
       }),
       productType: expect.objectContaining({
+        typeId: 'product-type',
         id: expect.any(String),
-        key: expect.any(String),
-        attributes: expect.arrayContaining([
-          expect.objectContaining({
-            type: expect.objectContaining({ name: expect.any(String) }),
-            name: expect.any(String),
-          }),
-        ]),
+        obj: expect.objectContaining({
+          id: expect.any(String),
+        }),
       }),
       createdBy: expect.objectContaining({
         customer: expect.objectContaining({ typeId: 'customer' }),

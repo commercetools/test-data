@@ -1,3 +1,4 @@
+import { ReferenceRest } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { ProductType } from '@commercetools-test-data/product-type';
 import * as ProductCatalogData from '../../product-catalog-data';
@@ -8,19 +9,24 @@ const populatePreset = <TModel extends TProductGraphql | TProductRest>(
   builder: TBuilder<TModel>
 ) => {
   return builder
-    .productType(ProductType.presets.milk())
     .key('happy-cow-milk-key')
     .masterData(ProductCatalogData.presets.happyCowMilkProductCatalogData());
 };
 
 export const restPreset = (): TBuilder<TProductRest> => {
-  return populatePreset(ProductRest.random());
+  return populatePreset(ProductRest.random()).productType(
+    ReferenceRest.presets.productTypeReference().obj(ProductType.presets.milk())
+  );
 };
 
 export const graphqlPreset = (): TBuilder<TProductGraphql> => {
-  return populatePreset(ProductGraphql.random());
+  return populatePreset(ProductGraphql.random()).productType(
+    ProductType.presets.milk()
+  );
 };
 
 export const compatPreset = (): TBuilder<TProduct> => {
-  return populatePreset(Product.random());
+  return populatePreset(Product.random()).productType(
+    ReferenceRest.presets.productTypeReference().obj(ProductType.presets.milk())
+  );
 };
