@@ -1,7 +1,7 @@
 import { TBuilder } from '@commercetools-test-data/core';
 import * as Image from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import { ProductVariantDraft } from '../../index';
 
 const alternator01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets

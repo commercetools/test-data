@@ -2,7 +2,7 @@ import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import { ProductVariantDraft } from '../../index';
 
 const qq567Yz03 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets

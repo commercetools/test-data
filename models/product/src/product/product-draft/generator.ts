@@ -4,7 +4,7 @@ import {
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
 import { fake, Generator, oneOf } from '@commercetools-test-data/core';
-import { ProductVariantDraft } from '../../index';
+import { ProductVariantDraft } from '../../product-variant';
 import { productPriceMode } from '../constants';
 import type { TProductDraft } from '../types';
 
