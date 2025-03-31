@@ -16,7 +16,7 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant/index';
-import * as ProductDraft from '../../../product-draft';
+import { ProductDraft } from '../../../product-draft';
 import type { TProductDraft } from '../../../types';
 
 const shirtProductTypeDraft = ProductTypeDraft.presets.sampleDataFashion
