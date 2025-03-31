@@ -1,5 +1,13 @@
-import customLineItemWithUsdCurrencyCode from './with-usd-currency-code';
+import * as customLineItemWithUsdCurrencyCode from './with-usd-currency-code';
 
-const presets = { customLineItemWithUsdCurrencyCode };
+export const restPresets = {
+  withCustomLineItem: customLineItemWithUsdCurrencyCode.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  withCustomLineItem: customLineItemWithUsdCurrencyCode.graphqlPreset,
+};
+
+export const compatPresets = {
+  withCustomLineItem: customLineItemWithUsdCurrencyCode.compatPreset,
+};

@@ -15,7 +15,7 @@ const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   key: fake((f) => f.string.uuid()),
   name: null,
-  money: fake(() => [Money.random()]),
+  money: fake(() => Money.random()),
   taxedPrice: null,
   taxedPricePortions: [],
   totalPrice: null,
