@@ -1,13 +1,16 @@
 import * as customLineItemWithUsdCurrencyCode from './with-usd-currency-code';
 
 export const restPresets = {
-  withCustomLineItem: customLineItemWithUsdCurrencyCode.restPreset,
+  customLineItemWithUsdCurrencyCode:
+    customLineItemWithUsdCurrencyCode.restPreset,
 };
 
 export const graphqlPresets = {
-  withCustomLineItem: customLineItemWithUsdCurrencyCode.graphqlPreset,
+  customLineItemWithUsdCurrencyCode:
+    customLineItemWithUsdCurrencyCode.graphqlPreset,
 };
 
 export const compatPresets = {
-  withCustomLineItem: customLineItemWithUsdCurrencyCode.compatPreset,
+  customLineItemWithUsdCurrencyCode:
+    customLineItemWithUsdCurrencyCode.compatPreset,
 };
