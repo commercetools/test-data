@@ -81,8 +81,6 @@ describe('CustomLineItemDraft model builders', () => {
       .custom(CustomFieldBooleanType.random())
       .buildGraphql();
 
-    console.log(customLineItemDraftGraphql);
-
     validateGraphqlFields(customLineItemDraftGraphql);
   });
 });
