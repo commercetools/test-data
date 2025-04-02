@@ -27,6 +27,10 @@ describe('Custom line item with a MoneyDraft `USD` currencyCode', () => {
     validateMoneyField(graphqlPreset().build());
   });
 
+  it('[Compat - DEFAULT] should return a custom line item with the money currencyCode set to `USD`', () => {
+    validateMoneyField(compatPreset().build());
+  });
+
   it('[Compat - REST] should return a custom line item with the money currencyCode set to `USD`', () => {
     validateMoneyField(compatPreset().buildRest());
   });
