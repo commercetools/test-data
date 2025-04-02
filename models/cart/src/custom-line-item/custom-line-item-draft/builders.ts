@@ -6,11 +6,11 @@ import {
 import type {
   TCustomLineItemDraftGraphql,
   TCustomLineItemDraftRest,
-  TCreateCustomLineItemDraftBuilder,
+  TCreateCustomLineItemBuilder,
 } from '../types';
 import { restFieldsConfig, graphqlFieldsConfig } from './field-config';
 
-export const RestModelBuilder: TCreateCustomLineItemDraftBuilder<
+export const RestModelBuilder: TCreateCustomLineItemBuilder<
   TCustomLineItemDraftRest
 > = () =>
   createSpecializedBuilder({
@@ -19,7 +19,7 @@ export const RestModelBuilder: TCreateCustomLineItemDraftBuilder<
     modelFieldsConfig: restFieldsConfig,
   });
 
-export const GraphqlModelBuilder: TCreateCustomLineItemDraftBuilder<
+export const GraphqlModelBuilder: TCreateCustomLineItemBuilder<
   TCustomLineItemDraftGraphql
 > = () =>
   createSpecializedBuilder({
