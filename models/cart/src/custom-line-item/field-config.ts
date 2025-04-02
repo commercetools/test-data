@@ -17,7 +17,6 @@ const commonFieldsConfig = {
   key: fake((f) => f.string.uuid()),
   taxedPrice: null,
   taxedPricePortions: [],
-  totalPrice: fake(() => CentPrecisionMoney.random()),
   slug: fake((f) => f.lorem.slug(3)),
   quantity: fake((f) => f.number.int(9)),
   state: [],
@@ -35,6 +34,7 @@ export const restFieldsConfig: TModelFieldsConfig<TCustomLineItemRest> = {
     ...commonFieldsConfig,
     name: fake((f) => LocalizedString.random()),
     money: fake(() => CentPrecisionMoney.random()),
+    totalPrice: fake(() => CentPrecisionMoney.random()),
   },
 };
 
@@ -43,6 +43,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
     ...commonFieldsConfig,
     name: null,
     money: fake(() => Money.random()),
+    totalPrice: fake(() => Money.random()),
     __typename: 'CustomLineItem',
     nameAllLocales: fake((f) => LocalizedString.random()),
     taxCategoryRef: null,
