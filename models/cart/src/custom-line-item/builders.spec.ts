@@ -2,30 +2,21 @@ import { Money, LocalizedString } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
-import {
-  TCustomLineItem,
-  TCustomLineItemRest,
-  TCustomLineItemGraphql,
-} from './types';
+import { TCustomLineItemRest, TCustomLineItemGraphql } from './types';
 import {
   CustomLineItemRest,
   CustomLineItemGraphql,
   CustomLineItem,
 } from './index';
 
-const populateCommonFields = <
-  TModel extends TCustomLineItem | TCustomLineItemGraphql | TCustomLineItemRest,
->(
-  model: TBuilder<TModel>
-) => model.money(Money.random()).custom(CustomFieldBooleanType.random());
-
 const populateGraphqlFields = (model: TBuilder<TCustomLineItemGraphql>) =>
-  populateCommonFields(model)
+  model
+    .custom(CustomFieldBooleanType.random())
     .nameAllLocales(LocalizedString.random())
     .taxCategory(TaxCategory.random());
 
 const populateRestFields = (model: TBuilder<TCustomLineItemRest>) =>
-  populateCommonFields(model);
+  model.custom(CustomFieldBooleanType.random());
 
 const validateCommonFields = (
   model: TCustomLineItemGraphql | TCustomLineItemRest
@@ -36,7 +27,18 @@ const validateCommonFields = (
       key: expect.any(String),
       taxedPrice: null,
       taxedPricePortions: expect.arrayContaining([]),
-      totalPrice: null,
+      money: expect.objectContaining({
+        centAmount: expect.any(Number),
+        currencyCode: expect.any(String),
+        type: 'centPrecision',
+        fractionDigits: expect.any(Number),
+      }),
+      totalPrice: expect.objectContaining({
+        centAmount: expect.any(Number),
+        currencyCode: expect.any(String),
+        type: 'centPrecision',
+        fractionDigits: expect.any(Number),
+      }),
       slug: expect.any(String),
       quantity: expect.any(Number),
       state: expect.arrayContaining([]),
@@ -61,14 +63,15 @@ const validateGraphqlFields = (model: TCustomLineItemGraphql) => {
       }),
       __typename: 'CustomLineItem',
       name: expect.any(String),
+      totalPrice: expect.objectContaining({
+        __typename: 'Money',
+      }),
       taxCategory: expect.objectContaining({
         __typename: 'TaxCategory',
         id: expect.any(String),
       }),
       money: expect.objectContaining({
         __typename: 'Money',
-        currencyCode: expect.any(String),
-        centAmount: expect.any(Number),
       }),
       taxCategoryRef: expect.objectContaining({
         __typename: 'Reference',
@@ -83,18 +86,23 @@ const validateRestFields = (model: TCustomLineItemRest) => {
   validateCommonFields(model);
   expect(model).toEqual(
     expect.objectContaining({
-      money: expect.objectContaining({
-        currencyCode: expect.any(String),
-        centAmount: expect.any(Number),
+      name: expect.objectContaining({
+        en: expect.any(String),
+        de: expect.any(String),
+        fr: expect.any(String),
       }),
+      taxCategory: null,
     })
   );
 };
+
 describe('CustomLineItem model builders', () => {
   it('builds a REST model', () => {
     const restModel = populateRestFields(
       CustomLineItemRest.random()
     ).buildRest();
+
+    console.log(restModel);
     validateRestFields(restModel);
   });
 
@@ -102,11 +110,17 @@ describe('CustomLineItem model builders', () => {
     const graphqlModel = populateGraphqlFields(
       CustomLineItemGraphql.random()
     ).buildGraphql();
+
     validateGraphqlFields(graphqlModel);
   });
 });
 
 describe('CustomLineItem compatibility builder', () => {
+  it('builds a DEFAULT model', () => {
+    const defaultModel = populateRestFields(CustomLineItem.random()).build();
+    validateRestFields(defaultModel);
+  });
+
   it('builds a REST model', () => {
     const restModel = populateRestFields(CustomLineItem.random()).buildRest();
     validateRestFields(restModel);

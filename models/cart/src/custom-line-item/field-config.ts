@@ -1,4 +1,5 @@
 import {
+  CentPrecisionMoney,
   LocalizedString,
   Money,
   ReferenceGraphql,
@@ -14,11 +15,9 @@ import { TCustomLineItemRest, TCustomLineItemGraphql } from './types';
 const commonFieldsConfig = {
   id: fake((f) => f.string.uuid()),
   key: fake((f) => f.string.uuid()),
-  name: null,
-  money: fake(() => Money.random()),
   taxedPrice: null,
   taxedPricePortions: [],
-  totalPrice: null,
+  totalPrice: fake(() => CentPrecisionMoney.random()),
   slug: fake((f) => f.lorem.slug(3)),
   quantity: fake((f) => f.number.int(9)),
   state: [],
@@ -34,14 +33,18 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TCustomLineItemRest> = {
   fields: {
     ...commonFieldsConfig,
+    name: fake((f) => LocalizedString.random()),
+    money: fake(() => CentPrecisionMoney.random()),
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
   fields: {
     ...commonFieldsConfig,
+    name: null,
+    money: fake(() => Money.random()),
     __typename: 'CustomLineItem',
-    nameAllLocales: null,
+    nameAllLocales: fake((f) => LocalizedString.random()),
     taxCategoryRef: null,
   },
   postBuild: (model) => {

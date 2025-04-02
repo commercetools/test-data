@@ -15,7 +15,6 @@ const validateCommonFields = (
   expect(model).toEqual(
     expect.objectContaining({
       key: expect.any(String),
-
       quantity: expect.any(Number),
       money: expect.objectContaining({
         centAmount: expect.any(Number),
@@ -72,7 +71,6 @@ describe('CustomLineItemDraft model builders', () => {
     const customLineItemDraftRest = CustomLineItemDraftRest.random()
       .custom(CustomFieldBooleanType.random())
       .buildRest();
-
     validateRestFields(customLineItemDraftRest);
   });
 
@@ -80,25 +78,29 @@ describe('CustomLineItemDraft model builders', () => {
     const customLineItemDraftGraphql = CustomLineItemDraftGraphql.random()
       .custom(CustomFieldBooleanType.random())
       .buildGraphql();
-
     validateGraphqlFields(customLineItemDraftGraphql);
   });
 });
 
 describe('CustomLineItemDraft compatibility builders', () => {
+  it('builds a DEFAULT model', () => {
+    const customLineItemDraftDefault = CustomLineItemDraft.random()
+      .custom(CustomFieldBooleanType.random())
+      .build();
+    validateCommonFields(customLineItemDraftDefault);
+  });
+
   it('builds a REST model', () => {
     const customLineItemDraftRest = CustomLineItemDraft.random()
       .custom(CustomFieldBooleanType.random())
-      .buildRest<TCustomLineItemDraftRest>();
-
+      .buildRest();
     validateRestFields(customLineItemDraftRest);
   });
 
   it('builds a GraphQL model', () => {
     const customLineItemDraftGraphql = CustomLineItemDraft.random()
       .custom(CustomFieldBooleanType.random())
-      .buildGraphql<TCustomLineItemDraftGraphql>();
-
+      .buildGraphql();
     validateGraphqlFields(customLineItemDraftGraphql);
   });
 });
