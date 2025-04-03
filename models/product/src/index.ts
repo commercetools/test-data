@@ -22,3 +22,5 @@ export * as ProductData from './product-data';
 
 export * as ProductVariant from './product-variant';
 export * from './product-variant/product-variant-draft';
+
+export * from './selection-of-product';

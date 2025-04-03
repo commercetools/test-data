@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -16,7 +17,7 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductDraft } from '../../../';
 import { ProductVariantDraft } from '../../../../product-variant';
-import type { TProductDraftBuilder } from '../../../types';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -43,7 +44,7 @@ const newArrivalsDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .newArrivals()
   .build<TCategoryDraft>();
 
-const abigailLoungeChair = (): TProductDraftBuilder =>
+const abigailLoungeChair = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('abigail-lounge-chair')

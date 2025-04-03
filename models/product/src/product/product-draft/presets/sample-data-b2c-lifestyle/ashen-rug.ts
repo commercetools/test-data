@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -15,8 +16,8 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
-import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import { ProductDraft } from '../../../product-draft';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -38,7 +39,7 @@ const homeDecorDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .homeDecor()
   .build<TCategoryDraft>();
 
-const ashenRug = (): TProductDraftBuilder =>
+const ashenRug = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('ashen-rug')

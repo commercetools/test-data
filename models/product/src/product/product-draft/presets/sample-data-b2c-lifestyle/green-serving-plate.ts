@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -15,8 +16,8 @@ import {
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant/product-variant-draft';
-import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import { ProductDraft } from '../../../product-draft';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -43,7 +44,7 @@ const servingPlattersDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .servingPlatters()
   .build<TCategoryDraft>();
 
-const greenServingPlate = (): TProductDraftBuilder =>
+const greenServingPlate = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('green-serving-plate')
