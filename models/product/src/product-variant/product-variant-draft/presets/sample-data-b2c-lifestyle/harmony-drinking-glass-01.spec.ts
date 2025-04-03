@@ -208,6 +208,7 @@ describe(`with harmonyDrinkingGlass01 preset`, () => {
           },
         ],
         "sku": "HDG-02",
+        "staged": true,
       }
     `);
   });

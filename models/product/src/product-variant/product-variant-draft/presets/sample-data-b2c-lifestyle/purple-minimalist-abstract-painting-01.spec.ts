@@ -215,6 +215,7 @@ describe(`with purpleMinimalistAbstractPainting01 preset`, () => {
           },
         ],
         "sku": "PMAP-01",
+        "staged": true,
       }
     `);
   });

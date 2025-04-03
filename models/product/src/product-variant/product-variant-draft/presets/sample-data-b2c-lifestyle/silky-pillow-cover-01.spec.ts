@@ -170,6 +170,7 @@ describe(`with silkyPillowCover01 preset`, () => {
           },
         ],
         "sku": "SPC-06",
+        "staged": true,
       }
     `);
   });

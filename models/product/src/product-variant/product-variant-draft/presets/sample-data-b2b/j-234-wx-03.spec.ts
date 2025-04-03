@@ -82,6 +82,7 @@ describe(`with j234Wx03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "j234-wx-2023",
+        "staged": true,
       }
     `);
   });

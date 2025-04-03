@@ -173,6 +173,7 @@ describe(`with stoneServingTray01 preset`, () => {
           },
         ],
         "sku": "SST-02",
+        "staged": true,
       }
     `);
   });

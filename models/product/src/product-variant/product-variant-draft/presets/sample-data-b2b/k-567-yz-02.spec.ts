@@ -82,6 +82,7 @@ describe(`with k567Yz02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "k567-yz-2019",
+        "staged": true,
       }
     `);
   });

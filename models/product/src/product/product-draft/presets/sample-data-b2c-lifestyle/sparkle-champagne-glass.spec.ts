@@ -271,6 +271,7 @@ describe(`with sparkleChampagneGlass preset`, () => {
             },
           ],
           "sku": "SCG-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

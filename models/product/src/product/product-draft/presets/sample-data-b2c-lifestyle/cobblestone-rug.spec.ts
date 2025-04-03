@@ -257,6 +257,7 @@ describe(`with cobblestoneRug preset`, () => {
             },
           ],
           "sku": "CR-098",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

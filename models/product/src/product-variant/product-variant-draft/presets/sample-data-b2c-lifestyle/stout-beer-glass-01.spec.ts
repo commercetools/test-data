@@ -185,6 +185,7 @@ describe(`with stoutBeerGlass01 preset`, () => {
           },
         ],
         "sku": "SBG-09",
+        "staged": true,
       }
     `);
   });

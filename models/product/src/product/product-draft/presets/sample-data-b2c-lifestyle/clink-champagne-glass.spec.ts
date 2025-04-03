@@ -271,6 +271,7 @@ describe(`with clinkChampagneGlass preset`, () => {
             },
           ],
           "sku": "CCG-02",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

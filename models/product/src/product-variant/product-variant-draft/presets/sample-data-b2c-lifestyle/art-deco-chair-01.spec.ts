@@ -169,6 +169,7 @@ describe(`with artDecoChair01 preset`, () => {
           },
         ],
         "sku": "ADARM-04",
+        "staged": true,
       }
     `);
   });

@@ -258,6 +258,7 @@ describe(`with sipperCoffeeMug preset`, () => {
             },
           ],
           "sku": "SCM-02",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

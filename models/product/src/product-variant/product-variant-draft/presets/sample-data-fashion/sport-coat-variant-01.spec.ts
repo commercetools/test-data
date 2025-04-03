@@ -125,6 +125,7 @@ describe(`with sportCoatVariant01 preset`, () => {
           },
         ],
         "sku": "692457",
+        "staged": true,
       }
     `);
   });

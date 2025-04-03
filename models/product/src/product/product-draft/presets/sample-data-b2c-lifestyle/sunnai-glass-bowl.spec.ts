@@ -395,6 +395,7 @@ describe(`with sunnaiGlassBowl preset`, () => {
             },
           ],
           "sku": "SGB-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -521,6 +522,7 @@ describe(`with sunnaiGlassBowl preset`, () => {
               },
             ],
             "sku": "SGB-02",
+            "staged": true,
           },
         ],
       }

@@ -323,6 +323,7 @@ describe(`with abigailLoungeChair preset`, () => {
             },
           ],
           "sku": "ALC-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

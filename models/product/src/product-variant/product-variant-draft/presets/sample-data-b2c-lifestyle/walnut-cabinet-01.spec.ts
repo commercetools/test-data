@@ -227,6 +227,7 @@ describe(`with walnutCabinet01 preset`, () => {
           },
         ],
         "sku": "WCS-09",
+        "staged": true,
       }
     `);
   });

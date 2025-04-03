@@ -169,6 +169,7 @@ describe(`with harvestPlate01 preset`, () => {
           },
         ],
         "sku": "HP-01",
+        "staged": true,
       }
     `);
   });

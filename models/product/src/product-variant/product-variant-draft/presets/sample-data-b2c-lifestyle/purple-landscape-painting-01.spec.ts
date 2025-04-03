@@ -179,6 +179,7 @@ describe(`with purpleLandscapePainting01 preset`, () => {
           },
         ],
         "sku": "BLP-01",
+        "staged": true,
       }
     `);
   });

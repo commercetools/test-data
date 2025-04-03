@@ -1,9 +1,9 @@
-import { AttributeDraft } from '../../../../attribute';
+import { TBuilder } from '@commercetools-test-data/core';
 import * as Image from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
-const airFilter01 = (): TProductVariantDraftBuilder =>
+const airFilter01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .sku('air-filter')

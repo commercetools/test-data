@@ -166,6 +166,7 @@ describe(`with alternator preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "alternator",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

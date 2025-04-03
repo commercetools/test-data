@@ -21,4 +21,4 @@ export * as ProductCatalogData from './product-catalog-data';
 export * as ProductData from './product-data';
 
 export * as ProductVariant from './product-variant';
-export * as ProductVariantDraft from './product-variant/product-variant-draft';
+export * from './product-variant/product-variant-draft';

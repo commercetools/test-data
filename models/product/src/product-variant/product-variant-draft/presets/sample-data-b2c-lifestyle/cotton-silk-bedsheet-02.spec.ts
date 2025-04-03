@@ -189,6 +189,7 @@ describe(`with cottonSilkBedsheet02 preset`, () => {
           },
         ],
         "sku": "CSKW-0922",
+        "staged": true,
       }
     `);
   });

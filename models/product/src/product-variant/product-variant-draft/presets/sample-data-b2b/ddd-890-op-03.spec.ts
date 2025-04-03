@@ -96,6 +96,7 @@ describe(`with ddd890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ddd890-op-green",
+        "staged": true,
       }
     `);
   });

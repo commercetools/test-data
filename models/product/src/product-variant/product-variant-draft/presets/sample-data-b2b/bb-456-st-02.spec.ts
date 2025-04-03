@@ -82,6 +82,7 @@ describe(`with bb456St02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "bb456-st-2019",
+        "staged": true,
       }
     `);
   });

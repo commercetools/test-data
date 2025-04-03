@@ -82,6 +82,7 @@ describe(`with x456Yz01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "x456-yz-2015",
+        "staged": true,
       }
     `);
   });

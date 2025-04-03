@@ -186,6 +186,7 @@ describe(`with classicServingTray01 preset`, () => {
           },
         ],
         "sku": "CST-01",
+        "staged": true,
       }
     `);
   });

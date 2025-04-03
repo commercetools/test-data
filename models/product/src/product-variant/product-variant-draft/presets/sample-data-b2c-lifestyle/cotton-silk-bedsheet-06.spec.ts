@@ -205,6 +205,7 @@ describe(`with cottonSilkBedsheet06 preset`, () => {
           },
         ],
         "sku": "CSKP-083",
+        "staged": true,
       }
     `);
   });

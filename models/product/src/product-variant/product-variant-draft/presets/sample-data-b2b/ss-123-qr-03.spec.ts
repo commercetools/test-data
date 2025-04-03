@@ -96,6 +96,7 @@ describe(`with ss123Qr03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ss123-qr-green",
+        "staged": true,
       }
     `);
   });

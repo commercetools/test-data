@@ -211,6 +211,7 @@ describe(`with modernGlamDresser01 preset`, () => {
           },
         ],
         "sku": "MGD-01",
+        "staged": true,
       }
     `);
   });

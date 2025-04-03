@@ -189,6 +189,7 @@ describe(`with cottonSilkBedsheet09 preset`, () => {
           },
         ],
         "sku": "CSKG-2345",
+        "staged": true,
       }
     `);
   });

@@ -167,6 +167,7 @@ describe(`with pinAndBushingKit preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "pin-and-bushing-kit",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

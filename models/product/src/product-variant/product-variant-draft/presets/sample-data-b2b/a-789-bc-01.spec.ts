@@ -82,6 +82,7 @@ describe(`with a789Bc01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "a789-bc-2015",
+        "staged": true,
       }
     `);
   });

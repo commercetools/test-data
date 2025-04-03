@@ -172,6 +172,7 @@ describe(`with willowTeapot01 preset`, () => {
           },
         ],
         "sku": "WTP-09",
+        "staged": true,
       }
     `);
   });

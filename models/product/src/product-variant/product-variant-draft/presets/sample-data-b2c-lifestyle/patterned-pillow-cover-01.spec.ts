@@ -176,6 +176,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
         ],
         "sku": "ADPC-09",
+        "staged": true,
       }
     `);
   });

@@ -210,6 +210,7 @@ describe(`with naturaRug01 preset`, () => {
           },
         ],
         "sku": "NR-09",
+        "staged": true,
       }
     `);
   });

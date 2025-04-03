@@ -274,6 +274,7 @@ describe(`with cloudQueenBed preset`, () => {
             },
           ],
           "sku": "CQB-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

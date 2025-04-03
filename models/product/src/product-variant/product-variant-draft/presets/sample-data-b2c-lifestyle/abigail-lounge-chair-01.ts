@@ -4,16 +4,17 @@ import {
   PriceDraft,
   KeyReferenceDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
 const distributionChannel = ChannelDraft.presets.sampleDataB2CLifestyle
   .distributionChannel()
   .build<TChannelDraft>();
 
-const abigailLoungeChair01 = (): TProductVariantDraftBuilder =>
+const abigailLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .key('abigailLoungeChair01')

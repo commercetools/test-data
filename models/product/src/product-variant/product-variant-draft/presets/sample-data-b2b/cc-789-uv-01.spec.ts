@@ -82,6 +82,7 @@ describe(`with cc789Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "cc789-uv-2015",
+        "staged": true,
       }
     `);
   });

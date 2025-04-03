@@ -188,6 +188,7 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
           },
         ],
         "sku": "RCQB-01",
+        "staged": true,
       }
     `);
   });

@@ -82,6 +82,7 @@ describe(`with x456Yz03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "x456-yz-2023",
+        "staged": true,
       }
     `);
   });

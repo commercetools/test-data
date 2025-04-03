@@ -286,6 +286,7 @@ describe(`with ryeWhiskeyGlass preset`, () => {
             },
           ],
           "sku": "RWG-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

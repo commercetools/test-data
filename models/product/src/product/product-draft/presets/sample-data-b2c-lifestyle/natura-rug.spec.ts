@@ -295,6 +295,7 @@ describe(`with naturaRug preset`, () => {
             },
           ],
           "sku": "NR-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

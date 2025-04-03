@@ -290,6 +290,7 @@ describe(`with roundServingTray preset`, () => {
             },
           ],
           "sku": "RST-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

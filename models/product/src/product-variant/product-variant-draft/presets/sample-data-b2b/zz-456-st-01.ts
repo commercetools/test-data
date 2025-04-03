@@ -1,9 +1,10 @@
+import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
-const zz456St01 = (): TProductVariantDraftBuilder =>
+const zz456St01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .sku('zz456-st-red')

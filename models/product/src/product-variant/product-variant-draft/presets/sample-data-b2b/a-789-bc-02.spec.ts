@@ -82,6 +82,7 @@ describe(`with a789Bc02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "a789-bc-2019",
+        "staged": true,
       }
     `);
   });

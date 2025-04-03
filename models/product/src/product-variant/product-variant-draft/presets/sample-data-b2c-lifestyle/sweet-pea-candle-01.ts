@@ -1,10 +1,11 @@
 import { MoneyDraft, PriceDraft } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
-const sweetPeaCandle01 = (): TProductVariantDraftBuilder =>
+const sweetPeaCandle01 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .key('sweetPeaCandle01')

@@ -269,6 +269,7 @@ describe(`with hh456St preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "hh456-st-2015",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -403,6 +404,7 @@ describe(`with hh456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "hh456-st-2019",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -428,6 +430,7 @@ describe(`with hh456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "hh456-st-2023",
+            "staged": true,
           },
         ],
       }

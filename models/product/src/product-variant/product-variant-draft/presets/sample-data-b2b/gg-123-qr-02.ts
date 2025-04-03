@@ -1,9 +1,10 @@
+import { TBuilder } from '@commercetools-test-data/core';
 import { AttributeDraft } from '../../../../attribute';
 import * as Image from '../../../../image';
-import type { TProductVariantDraftBuilder } from '../../../types';
-import * as ProductVariantDraft from '../../index';
+import type { TProductVariantDraft } from '../../../types';
+import { ProductVariantDraft } from '../../index';
 
-const gg123Qr02 = (): TProductVariantDraftBuilder =>
+const gg123Qr02 = (): TBuilder<TProductVariantDraft> =>
   ProductVariantDraft.presets
     .empty()
     .sku('gg123-qr-2019')

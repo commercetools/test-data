@@ -96,6 +96,7 @@ describe(`with tt456St02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "tt456-st-blue",
+        "staged": true,
       }
     `);
   });

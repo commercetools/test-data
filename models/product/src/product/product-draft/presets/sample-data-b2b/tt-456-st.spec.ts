@@ -320,6 +320,7 @@ describe(`with tt456St preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "tt456-st-red",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -454,6 +455,7 @@ describe(`with tt456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "tt456-st-blue",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -488,6 +490,7 @@ describe(`with tt456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "tt456-st-green",
+            "staged": true,
           },
         ],
       }

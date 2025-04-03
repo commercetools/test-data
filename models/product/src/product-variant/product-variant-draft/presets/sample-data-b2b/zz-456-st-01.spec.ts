@@ -96,6 +96,7 @@ describe(`with zz456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "zz456-st-red",
+        "staged": true,
       }
     `);
   });

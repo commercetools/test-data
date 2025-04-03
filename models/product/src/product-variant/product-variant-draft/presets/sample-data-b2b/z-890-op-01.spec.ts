@@ -82,6 +82,7 @@ describe(`with z890Op01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "z890-op-2015",
+        "staged": true,
       }
     `);
   });

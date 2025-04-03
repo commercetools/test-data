@@ -291,6 +291,7 @@ describe(`with idunPillowCover preset`, () => {
             },
           ],
           "sku": "IPC-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

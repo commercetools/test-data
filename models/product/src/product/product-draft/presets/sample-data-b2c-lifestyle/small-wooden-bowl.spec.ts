@@ -322,6 +322,7 @@ describe(`with smallWoodenBowl preset`, () => {
             },
           ],
           "sku": "SWB-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

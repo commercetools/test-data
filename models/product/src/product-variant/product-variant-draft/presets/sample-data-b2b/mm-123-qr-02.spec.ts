@@ -82,6 +82,7 @@ describe(`with mm123Qr02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "mm123-qr-2019",
+        "staged": true,
       }
     `);
   });

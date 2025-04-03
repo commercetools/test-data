@@ -201,6 +201,7 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
           },
         ],
         "sku": "CTSS-098",
+        "staged": true,
       }
     `);
   });
