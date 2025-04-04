@@ -1,0 +1,4 @@
+{
+  "main": "dist/commercetools-test-data-quote-staged-quote.cjs.js",
+  "module": "dist/commercetools-test-data-quote-staged-quote.esm.js"
+}
