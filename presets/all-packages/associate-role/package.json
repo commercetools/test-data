@@ -1,0 +1,6 @@
+{
+  "name": "@commercetools/composable-commerce-test-data-associate-role",
+  "version": "1.0.0",
+  "main": "dist/commercetools-composable-commerce-test-data-associate-role.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-associate-role.esm.js"
+}

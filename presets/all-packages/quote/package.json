@@ -1,4 +1,6 @@
 {
-  "main": "dist/commercetools-frontend-test-data-quote.cjs.js",
-  "module": "dist/commercetools-frontend-test-data-quote.esm.js"
+  "name": "@commercetools/composable-commerce-test-data-quote",
+  "version": "1.0.0",
+  "main": "dist/commercetools-composable-commerce-test-data-quote.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-quote.esm.js"
 }
