@@ -1,4 +1,4 @@
-import { Money, LocalizedString } from '@commercetools-test-data/commons';
+import { ReferenceRest } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
@@ -12,11 +12,12 @@ import {
 const populateGraphqlFields = (model: TBuilder<TCustomLineItemGraphql>) =>
   model
     .custom(CustomFieldBooleanType.random())
-    .nameAllLocales(LocalizedString.random())
     .taxCategory(TaxCategory.random());
 
 const populateRestFields = (model: TBuilder<TCustomLineItemRest>) =>
-  model.custom(CustomFieldBooleanType.random());
+  model
+    .custom(CustomFieldBooleanType.random())
+    .taxCategory(ReferenceRest.random().typeId('tax-category'));
 
 const validateCommonFields = (
   model: TCustomLineItemGraphql | TCustomLineItemRest
@@ -42,6 +43,9 @@ const validateCommonFields = (
       slug: expect.any(String),
       quantity: expect.any(Number),
       state: expect.arrayContaining([]),
+      taxCategory: expect.objectContaining({
+        id: expect.any(String),
+      }),
       taxRate: null,
       perMethodTaxRate: expect.arrayContaining([]),
       discountedPricePerQuantity: expect.arrayContaining([]),
@@ -68,7 +72,6 @@ const validateGraphqlFields = (model: TCustomLineItemGraphql) => {
       }),
       taxCategory: expect.objectContaining({
         __typename: 'TaxCategory',
-        id: expect.any(String),
       }),
       money: expect.objectContaining({
         __typename: 'Money',
@@ -91,7 +94,12 @@ const validateRestFields = (model: TCustomLineItemRest) => {
         de: expect.any(String),
         fr: expect.any(String),
       }),
-      taxCategory: null,
+      taxCategory: expect.objectContaining({
+        typeId: 'tax-category',
+        obj: expect.objectContaining({
+          id: expect.any(String),
+        }),
+      }),
     })
   );
 };
@@ -101,7 +109,6 @@ describe('CustomLineItem model builders', () => {
     const restModel = populateRestFields(
       CustomLineItemRest.random()
     ).buildRest();
-
     console.log(restModel);
     validateRestFields(restModel);
   });
@@ -110,7 +117,6 @@ describe('CustomLineItem model builders', () => {
     const graphqlModel = populateGraphqlFields(
       CustomLineItemGraphql.random()
     ).buildGraphql();
-
     validateGraphqlFields(graphqlModel);
   });
 });
