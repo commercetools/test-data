@@ -19,7 +19,6 @@
   "preconstruct": {
     "entrypoints": ["index.ts", "quote/index.ts", "quote-request/index.ts", "staged-quote/index.ts"]
   },
-  "sideEffects": false,
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",

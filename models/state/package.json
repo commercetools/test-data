@@ -16,7 +16,6 @@
   "main": "dist/commercetools-test-data-state.cjs.js",
   "module": "dist/commercetools-test-data-state.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
-  "sideEffects": false,
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
