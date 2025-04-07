@@ -44,3 +44,14 @@ export const customLineItemPriceMode = {
   Standard: 'Standard',
   External: 'External',
 } as const;
+
+export const priceMode = {
+  Platform: 'Platform',
+  ExternalPrice: 'ExternalPrice',
+  ExternalTotal: 'ExternalTotal',
+} as const;
+
+export const lineItemMode = {
+  Standard: 'Standard',
+  GiftLineItem: 'GiftLineItem',
+} as const;
