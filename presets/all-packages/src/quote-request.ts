@@ -1,1 +1,1 @@
-export * from '@commercetools-test-data/quote/quote-request';
+export * from '@commercetools-test-data/quote-request';

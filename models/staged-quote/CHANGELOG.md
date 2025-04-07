@@ -1,4 +1,4 @@
-# @commercetools-test-data/quote
+# @commercetools-test-data/staged-quote
 
 ## 10.15.0
 
@@ -7,7 +7,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.15.0
   - @commercetools-test-data/quote-request@10.15.0
-  - @commercetools-test-data/staged-quote@10.15.0
   - @commercetools-test-data/core@10.15.0
   - @commercetools-test-data/business-unit@10.15.0
   - @commercetools-test-data/commons@10.15.0
@@ -24,7 +23,6 @@
   - @commercetools-test-data/business-unit@10.14.2
   - @commercetools-test-data/cart@10.14.2
   - @commercetools-test-data/quote-request@10.14.2
-  - @commercetools-test-data/staged-quote@10.14.2
   - @commercetools-test-data/core@10.14.2
   - @commercetools-test-data/commons@10.14.2
   - @commercetools-test-data/customer@10.14.2
@@ -42,7 +40,6 @@
   - @commercetools-test-data/customer-group@10.14.1
   - @commercetools-test-data/business-unit@10.14.1
   - @commercetools-test-data/quote-request@10.14.1
-  - @commercetools-test-data/staged-quote@10.14.1
   - @commercetools-test-data/customer@10.14.1
   - @commercetools-test-data/commons@10.14.1
   - @commercetools-test-data/store@10.14.1
@@ -61,7 +58,6 @@
   - @commercetools-test-data/customer@10.14.0
   - @commercetools-test-data/customer-group@10.14.0
   - @commercetools-test-data/quote-request@10.14.0
-  - @commercetools-test-data/staged-quote@10.14.0
   - @commercetools-test-data/store@10.14.0
   - @commercetools-test-data/core@10.14.0
   - @commercetools-test-data/utils@10.14.0
@@ -77,7 +73,6 @@
   - @commercetools-test-data/customer@10.13.0
   - @commercetools-test-data/customer-group@10.13.0
   - @commercetools-test-data/quote-request@10.13.0
-  - @commercetools-test-data/staged-quote@10.13.0
   - @commercetools-test-data/store@10.13.0
   - @commercetools-test-data/core@10.13.0
   - @commercetools-test-data/utils@10.13.0
@@ -93,7 +88,6 @@
   - @commercetools-test-data/customer@10.12.0
   - @commercetools-test-data/customer-group@10.12.0
   - @commercetools-test-data/quote-request@10.12.0
-  - @commercetools-test-data/staged-quote@10.12.0
   - @commercetools-test-data/store@10.12.0
   - @commercetools-test-data/core@10.12.0
   - @commercetools-test-data/utils@10.12.0
@@ -110,7 +104,6 @@
   - @commercetools-test-data/customer@10.11.2
   - @commercetools-test-data/customer-group@10.11.2
   - @commercetools-test-data/quote-request@10.11.2
-  - @commercetools-test-data/staged-quote@10.11.2
   - @commercetools-test-data/store@10.11.2
   - @commercetools-test-data/utils@10.11.2
 
@@ -122,7 +115,6 @@
   - @commercetools-test-data/cart@10.11.1
   - @commercetools-test-data/commons@10.11.1
   - @commercetools-test-data/quote-request@10.11.1
-  - @commercetools-test-data/staged-quote@10.11.1
   - @commercetools-test-data/store@10.11.1
   - @commercetools-test-data/business-unit@10.11.1
   - @commercetools-test-data/customer@10.11.1
@@ -138,7 +130,6 @@
   - @commercetools-test-data/cart@10.11.0
   - @commercetools-test-data/commons@10.11.0
   - @commercetools-test-data/quote-request@10.11.0
-  - @commercetools-test-data/staged-quote@10.11.0
   - @commercetools-test-data/business-unit@10.11.0
   - @commercetools-test-data/customer@10.11.0
   - @commercetools-test-data/customer-group@10.11.0
@@ -154,7 +145,6 @@
   - @commercetools-test-data/cart@10.10.1
   - @commercetools-test-data/store@10.10.1
   - @commercetools-test-data/quote-request@10.10.1
-  - @commercetools-test-data/staged-quote@10.10.1
   - @commercetools-test-data/business-unit@10.10.1
   - @commercetools-test-data/core@10.10.1
   - @commercetools-test-data/commons@10.10.1
@@ -170,7 +160,6 @@
   - @commercetools-test-data/cart@10.10.0
   - @commercetools-test-data/store@10.10.0
   - @commercetools-test-data/quote-request@10.10.0
-  - @commercetools-test-data/staged-quote@10.10.0
   - @commercetools-test-data/business-unit@10.10.0
   - @commercetools-test-data/core@10.10.0
   - @commercetools-test-data/commons@10.10.0
@@ -189,7 +178,6 @@
   - @commercetools-test-data/customer@10.9.3
   - @commercetools-test-data/customer-group@10.9.3
   - @commercetools-test-data/quote-request@10.9.3
-  - @commercetools-test-data/staged-quote@10.9.3
   - @commercetools-test-data/store@10.9.3
   - @commercetools-test-data/core@10.9.3
   - @commercetools-test-data/utils@10.9.3
@@ -205,7 +193,6 @@
   - @commercetools-test-data/customer@10.9.2
   - @commercetools-test-data/customer-group@10.9.2
   - @commercetools-test-data/quote-request@10.9.2
-  - @commercetools-test-data/staged-quote@10.9.2
   - @commercetools-test-data/store@10.9.2
   - @commercetools-test-data/core@10.9.2
   - @commercetools-test-data/utils@10.9.2
@@ -218,7 +205,6 @@
   - @commercetools-test-data/cart@10.9.1
   - @commercetools-test-data/commons@10.9.1
   - @commercetools-test-data/quote-request@10.9.1
-  - @commercetools-test-data/staged-quote@10.9.1
   - @commercetools-test-data/business-unit@10.9.1
   - @commercetools-test-data/customer@10.9.1
   - @commercetools-test-data/customer-group@10.9.1
@@ -237,7 +223,6 @@
   - @commercetools-test-data/customer@10.9.0
   - @commercetools-test-data/customer-group@10.9.0
   - @commercetools-test-data/quote-request@10.9.0
-  - @commercetools-test-data/staged-quote@10.9.0
   - @commercetools-test-data/store@10.9.0
   - @commercetools-test-data/core@10.9.0
   - @commercetools-test-data/utils@10.9.0
@@ -254,7 +239,6 @@
   - @commercetools-test-data/customer@10.8.1
   - @commercetools-test-data/customer-group@10.8.1
   - @commercetools-test-data/quote-request@10.8.1
-  - @commercetools-test-data/staged-quote@10.8.1
   - @commercetools-test-data/store@10.8.1
   - @commercetools-test-data/utils@10.8.1
 
@@ -268,7 +252,6 @@
   - @commercetools-test-data/core@10.8.0
   - @commercetools-test-data/customer@10.8.0
   - @commercetools-test-data/quote-request@10.8.0
-  - @commercetools-test-data/staged-quote@10.8.0
   - @commercetools-test-data/cart@10.8.0
   - @commercetools-test-data/store@10.8.0
   - @commercetools-test-data/business-unit@10.8.0
@@ -285,7 +268,6 @@
   - @commercetools-test-data/customer@10.7.1
   - @commercetools-test-data/customer-group@10.7.1
   - @commercetools-test-data/quote-request@10.7.1
-  - @commercetools-test-data/staged-quote@10.7.1
   - @commercetools-test-data/store@10.7.1
   - @commercetools-test-data/core@10.7.1
   - @commercetools-test-data/utils@10.7.1
@@ -297,7 +279,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.7.0
   - @commercetools-test-data/quote-request@10.7.0
-  - @commercetools-test-data/staged-quote@10.7.0
   - @commercetools-test-data/core@10.7.0
   - @commercetools-test-data/business-unit@10.7.0
   - @commercetools-test-data/commons@10.7.0
@@ -313,7 +294,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.6.1
   - @commercetools-test-data/quote-request@10.6.1
-  - @commercetools-test-data/staged-quote@10.6.1
   - @commercetools-test-data/core@10.6.1
   - @commercetools-test-data/business-unit@10.6.1
   - @commercetools-test-data/commons@10.6.1
@@ -333,7 +313,6 @@
   - @commercetools-test-data/customer@10.6.0
   - @commercetools-test-data/customer-group@10.6.0
   - @commercetools-test-data/quote-request@10.6.0
-  - @commercetools-test-data/staged-quote@10.6.0
   - @commercetools-test-data/store@10.6.0
   - @commercetools-test-data/core@10.6.0
   - @commercetools-test-data/utils@10.6.0
@@ -348,7 +327,6 @@
   - @commercetools-test-data/customer-group@10.5.2
   - @commercetools-test-data/business-unit@10.5.2
   - @commercetools-test-data/quote-request@10.5.2
-  - @commercetools-test-data/staged-quote@10.5.2
   - @commercetools-test-data/customer@10.5.2
   - @commercetools-test-data/commons@10.5.2
   - @commercetools-test-data/store@10.5.2
@@ -363,7 +341,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.5.1
   - @commercetools-test-data/quote-request@10.5.1
-  - @commercetools-test-data/staged-quote@10.5.1
   - @commercetools-test-data/core@10.5.1
   - @commercetools-test-data/business-unit@10.5.1
   - @commercetools-test-data/commons@10.5.1
@@ -384,7 +361,6 @@
   - @commercetools-test-data/customer@10.5.0
   - @commercetools-test-data/customer-group@10.5.0
   - @commercetools-test-data/quote-request@10.5.0
-  - @commercetools-test-data/staged-quote@10.5.0
   - @commercetools-test-data/store@10.5.0
   - @commercetools-test-data/utils@10.5.0
 
@@ -400,7 +376,6 @@
   - @commercetools-test-data/customer@10.4.0
   - @commercetools-test-data/customer-group@10.4.0
   - @commercetools-test-data/quote-request@10.4.0
-  - @commercetools-test-data/staged-quote@10.4.0
   - @commercetools-test-data/store@10.4.0
   - @commercetools-test-data/utils@10.4.0
 
@@ -416,7 +391,6 @@
   - @commercetools-test-data/customer@10.3.0
   - @commercetools-test-data/customer-group@10.3.0
   - @commercetools-test-data/quote-request@10.3.0
-  - @commercetools-test-data/staged-quote@10.3.0
   - @commercetools-test-data/store@10.3.0
   - @commercetools-test-data/utils@10.3.0
 
@@ -427,7 +401,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.2.0
   - @commercetools-test-data/quote-request@10.2.0
-  - @commercetools-test-data/staged-quote@10.2.0
   - @commercetools-test-data/core@10.2.0
   - @commercetools-test-data/business-unit@10.2.0
   - @commercetools-test-data/commons@10.2.0
@@ -443,7 +416,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.1.4
   - @commercetools-test-data/quote-request@10.1.4
-  - @commercetools-test-data/staged-quote@10.1.4
   - @commercetools-test-data/core@10.1.4
   - @commercetools-test-data/business-unit@10.1.4
   - @commercetools-test-data/commons@10.1.4
@@ -459,7 +431,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@10.1.3
   - @commercetools-test-data/quote-request@10.1.3
-  - @commercetools-test-data/staged-quote@10.1.3
   - @commercetools-test-data/core@10.1.3
   - @commercetools-test-data/business-unit@10.1.3
   - @commercetools-test-data/commons@10.1.3
@@ -477,7 +448,6 @@
   - @commercetools-test-data/business-unit@10.1.2
   - @commercetools-test-data/cart@10.1.2
   - @commercetools-test-data/quote-request@10.1.2
-  - @commercetools-test-data/staged-quote@10.1.2
   - @commercetools-test-data/core@10.1.2
   - @commercetools-test-data/commons@10.1.2
   - @commercetools-test-data/customer-group@10.1.2
@@ -496,7 +466,6 @@
   - @commercetools-test-data/customer@10.1.1
   - @commercetools-test-data/customer-group@10.1.1
   - @commercetools-test-data/quote-request@10.1.1
-  - @commercetools-test-data/staged-quote@10.1.1
   - @commercetools-test-data/store@10.1.1
   - @commercetools-test-data/utils@10.1.1
 
@@ -512,7 +481,6 @@
   - @commercetools-test-data/customer@10.1.0
   - @commercetools-test-data/customer-group@10.1.0
   - @commercetools-test-data/quote-request@10.1.0
-  - @commercetools-test-data/staged-quote@10.1.0
   - @commercetools-test-data/store@10.1.0
   - @commercetools-test-data/utils@10.1.0
 
@@ -527,7 +495,6 @@
   - @commercetools-test-data/cart@10.0.0
   - @commercetools-test-data/business-unit@10.0.0
   - @commercetools-test-data/quote-request@10.0.0
-  - @commercetools-test-data/staged-quote@10.0.0
   - @commercetools-test-data/customer-group@10.0.0
   - @commercetools-test-data/core@10.0.0
   - @commercetools-test-data/utils@10.0.0
@@ -544,7 +511,6 @@
   - @commercetools-test-data/customer@9.0.7
   - @commercetools-test-data/customer-group@9.0.7
   - @commercetools-test-data/quote-request@9.0.7
-  - @commercetools-test-data/staged-quote@9.0.7
   - @commercetools-test-data/store@9.0.7
   - @commercetools-test-data/utils@9.0.7
 
@@ -555,7 +521,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@9.0.6
   - @commercetools-test-data/quote-request@9.0.6
-  - @commercetools-test-data/staged-quote@9.0.6
   - @commercetools-test-data/core@9.0.6
   - @commercetools-test-data/business-unit@9.0.6
   - @commercetools-test-data/commons@9.0.6
@@ -571,7 +536,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@9.0.5
   - @commercetools-test-data/quote-request@9.0.5
-  - @commercetools-test-data/staged-quote@9.0.5
   - @commercetools-test-data/core@9.0.5
   - @commercetools-test-data/business-unit@9.0.5
   - @commercetools-test-data/commons@9.0.5
@@ -592,7 +556,6 @@
   - @commercetools-test-data/customer@9.0.4
   - @commercetools-test-data/customer-group@9.0.4
   - @commercetools-test-data/quote-request@9.0.4
-  - @commercetools-test-data/staged-quote@9.0.4
   - @commercetools-test-data/store@9.0.4
   - @commercetools-test-data/utils@9.0.4
 
@@ -608,7 +571,6 @@
   - @commercetools-test-data/customer@9.0.3
   - @commercetools-test-data/customer-group@9.0.3
   - @commercetools-test-data/quote-request@9.0.3
-  - @commercetools-test-data/staged-quote@9.0.3
   - @commercetools-test-data/store@9.0.3
   - @commercetools-test-data/utils@9.0.3
 
@@ -624,7 +586,6 @@
   - @commercetools-test-data/customer@9.0.2
   - @commercetools-test-data/customer-group@9.0.2
   - @commercetools-test-data/quote-request@9.0.2
-  - @commercetools-test-data/staged-quote@9.0.2
   - @commercetools-test-data/store@9.0.2
   - @commercetools-test-data/utils@9.0.2
 
@@ -640,7 +601,6 @@
   - @commercetools-test-data/customer@9.0.1
   - @commercetools-test-data/customer-group@9.0.1
   - @commercetools-test-data/quote-request@9.0.1
-  - @commercetools-test-data/staged-quote@9.0.1
   - @commercetools-test-data/store@9.0.1
   - @commercetools-test-data/utils@9.0.1
 
@@ -660,7 +620,6 @@
 - Updated dependencies [[`42e42c3`](https://github.com/commercetools/test-data/commit/42e42c3c020d98a73ef45883094a27f3ed116b12)]:
   - @commercetools-test-data/business-unit@9.0.0
   - @commercetools-test-data/quote-request@9.0.0
-  - @commercetools-test-data/staged-quote@9.0.0
   - @commercetools-test-data/commons@9.0.0
   - @commercetools-test-data/cart@9.0.0
   - @commercetools-test-data/customer@9.0.0
@@ -676,7 +635,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.5.0
   - @commercetools-test-data/quote-request@8.5.0
-  - @commercetools-test-data/staged-quote@8.5.0
   - @commercetools-test-data/core@8.5.0
   - @commercetools-test-data/business-unit@8.5.0
   - @commercetools-test-data/commons@8.5.0
@@ -692,7 +650,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.4.0
   - @commercetools-test-data/quote-request@8.4.0
-  - @commercetools-test-data/staged-quote@8.4.0
   - @commercetools-test-data/core@8.4.0
   - @commercetools-test-data/business-unit@8.4.0
   - @commercetools-test-data/commons@8.4.0
@@ -708,7 +665,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.3.0
   - @commercetools-test-data/quote-request@8.3.0
-  - @commercetools-test-data/staged-quote@8.3.0
   - @commercetools-test-data/core@8.3.0
   - @commercetools-test-data/business-unit@8.3.0
   - @commercetools-test-data/commons@8.3.0
@@ -724,7 +680,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.2.2
   - @commercetools-test-data/quote-request@8.2.2
-  - @commercetools-test-data/staged-quote@8.2.2
   - @commercetools-test-data/core@8.2.2
   - @commercetools-test-data/business-unit@8.2.2
   - @commercetools-test-data/commons@8.2.2
@@ -740,7 +695,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.2.1
   - @commercetools-test-data/quote-request@8.2.1
-  - @commercetools-test-data/staged-quote@8.2.1
   - @commercetools-test-data/core@8.2.1
   - @commercetools-test-data/business-unit@8.2.1
   - @commercetools-test-data/commons@8.2.1
@@ -756,7 +710,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.2.0
   - @commercetools-test-data/quote-request@8.2.0
-  - @commercetools-test-data/staged-quote@8.2.0
   - @commercetools-test-data/core@8.2.0
   - @commercetools-test-data/business-unit@8.2.0
   - @commercetools-test-data/commons@8.2.0
@@ -774,7 +727,6 @@
   - @commercetools-test-data/commons@8.1.1
   - @commercetools-test-data/cart@8.1.1
   - @commercetools-test-data/quote-request@8.1.1
-  - @commercetools-test-data/staged-quote@8.1.1
   - @commercetools-test-data/customer@8.1.1
   - @commercetools-test-data/customer-group@8.1.1
   - @commercetools-test-data/store@8.1.1
@@ -788,7 +740,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.1.0
   - @commercetools-test-data/quote-request@8.1.0
-  - @commercetools-test-data/staged-quote@8.1.0
   - @commercetools-test-data/core@8.1.0
   - @commercetools-test-data/business-unit@8.1.0
   - @commercetools-test-data/commons@8.1.0
@@ -804,7 +755,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@8.0.0
   - @commercetools-test-data/quote-request@8.0.0
-  - @commercetools-test-data/staged-quote@8.0.0
   - @commercetools-test-data/core@8.0.0
   - @commercetools-test-data/business-unit@8.0.0
   - @commercetools-test-data/commons@8.0.0
@@ -825,7 +775,6 @@
   - @commercetools-test-data/customer@7.11.0
   - @commercetools-test-data/customer-group@7.11.0
   - @commercetools-test-data/quote-request@7.11.0
-  - @commercetools-test-data/staged-quote@7.11.0
   - @commercetools-test-data/store@7.11.0
   - @commercetools-test-data/core@7.11.0
 
@@ -840,7 +789,6 @@
   - @commercetools-test-data/customer@7.10.0
   - @commercetools-test-data/customer-group@7.10.0
   - @commercetools-test-data/quote-request@7.10.0
-  - @commercetools-test-data/staged-quote@7.10.0
   - @commercetools-test-data/store@7.10.0
   - @commercetools-test-data/core@7.10.0
   - @commercetools-test-data/utils@7.10.0
@@ -854,7 +802,6 @@
   - @commercetools-test-data/commons@7.9.1
   - @commercetools-test-data/cart@7.9.1
   - @commercetools-test-data/quote-request@7.9.1
-  - @commercetools-test-data/staged-quote@7.9.1
   - @commercetools-test-data/customer@7.9.1
   - @commercetools-test-data/customer-group@7.9.1
   - @commercetools-test-data/store@7.9.1
@@ -872,7 +819,6 @@
   - @commercetools-test-data/customer@7.9.0
   - @commercetools-test-data/customer-group@7.9.0
   - @commercetools-test-data/quote-request@7.9.0
-  - @commercetools-test-data/staged-quote@7.9.0
   - @commercetools-test-data/store@7.9.0
   - @commercetools-test-data/core@7.9.0
   - @commercetools-test-data/utils@7.9.0
@@ -884,7 +830,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@7.8.0
   - @commercetools-test-data/quote-request@7.8.0
-  - @commercetools-test-data/staged-quote@7.8.0
   - @commercetools-test-data/core@7.8.0
   - @commercetools-test-data/business-unit@7.8.0
   - @commercetools-test-data/commons@7.8.0
@@ -902,7 +847,6 @@
   - @commercetools-test-data/business-unit@7.7.1
   - @commercetools-test-data/cart@7.7.1
   - @commercetools-test-data/quote-request@7.7.1
-  - @commercetools-test-data/staged-quote@7.7.1
   - @commercetools-test-data/core@7.7.1
   - @commercetools-test-data/commons@7.7.1
   - @commercetools-test-data/customer@7.7.1
@@ -921,7 +865,6 @@
   - @commercetools-test-data/customer@7.7.0
   - @commercetools-test-data/customer-group@7.7.0
   - @commercetools-test-data/quote-request@7.7.0
-  - @commercetools-test-data/staged-quote@7.7.0
   - @commercetools-test-data/core@7.7.0
   - @commercetools-test-data/utils@7.7.0
 
@@ -935,7 +878,6 @@
   - @commercetools-test-data/commons@7.6.0
   - @commercetools-test-data/cart@7.6.0
   - @commercetools-test-data/quote-request@7.6.0
-  - @commercetools-test-data/staged-quote@7.6.0
   - @commercetools-test-data/customer-group@7.6.0
   - @commercetools-test-data/store@7.6.0
   - @commercetools-test-data/core@7.6.0
@@ -952,7 +894,6 @@
 - Updated dependencies [[`8c7e851`](https://github.com/commercetools/test-data/commit/8c7e851eec46668a84d7d748125dda67072e42fc)]:
   - @commercetools-test-data/business-unit@7.5.0
   - @commercetools-test-data/quote-request@7.5.0
-  - @commercetools-test-data/staged-quote@7.5.0
   - @commercetools-test-data/store@7.5.0
   - @commercetools-test-data/cart@7.5.0
   - @commercetools-test-data/core@7.5.0
@@ -972,7 +913,6 @@
 - Updated dependencies [[`7a06a20`](https://github.com/commercetools/test-data/commit/7a06a2011dbc3a0f72d1b7b08ccdc8be5f1af50a)]:
   - @commercetools-test-data/business-unit@7.4.0
   - @commercetools-test-data/quote-request@7.4.0
-  - @commercetools-test-data/staged-quote@7.4.0
   - @commercetools-test-data/store@7.4.0
   - @commercetools-test-data/cart@7.4.0
   - @commercetools-test-data/core@7.4.0
@@ -988,7 +928,6 @@
 - Updated dependencies [[`92e57eb`](https://github.com/commercetools/test-data/commit/92e57eb577ab813685e89225c67c11040a3ea19c)]:
   - @commercetools-test-data/cart@7.3.0
   - @commercetools-test-data/quote-request@7.3.0
-  - @commercetools-test-data/staged-quote@7.3.0
   - @commercetools-test-data/core@7.3.0
   - @commercetools-test-data/business-unit@7.3.0
   - @commercetools-test-data/commons@7.3.0
@@ -1009,7 +948,6 @@
   - @commercetools-test-data/customer@7.2.13
   - @commercetools-test-data/customer-group@7.2.13
   - @commercetools-test-data/quote-request@7.2.13
-  - @commercetools-test-data/staged-quote@7.2.13
   - @commercetools-test-data/store@7.2.13
   - @commercetools-test-data/utils@7.2.13
 
@@ -1025,7 +963,6 @@
   - @commercetools-test-data/customer@7.2.12
   - @commercetools-test-data/customer-group@7.2.12
   - @commercetools-test-data/quote-request@7.2.12
-  - @commercetools-test-data/staged-quote@7.2.12
   - @commercetools-test-data/store@7.2.12
   - @commercetools-test-data/utils@7.2.12
 
@@ -1038,7 +975,6 @@
   - @commercetools-test-data/business-unit@7.2.11
   - @commercetools-test-data/cart@7.2.11
   - @commercetools-test-data/quote-request@7.2.11
-  - @commercetools-test-data/staged-quote@7.2.11
   - @commercetools-test-data/core@7.2.11
   - @commercetools-test-data/commons@7.2.11
   - @commercetools-test-data/customer@7.2.11
@@ -1057,7 +993,6 @@
   - @commercetools-test-data/customer@7.2.10
   - @commercetools-test-data/customer-group@7.2.10
   - @commercetools-test-data/quote-request@7.2.10
-  - @commercetools-test-data/staged-quote@7.2.10
   - @commercetools-test-data/store@7.2.10
   - @commercetools-test-data/utils@7.2.10
 
@@ -1073,7 +1008,6 @@
   - @commercetools-test-data/customer@7.2.9
   - @commercetools-test-data/customer-group@7.2.9
   - @commercetools-test-data/quote-request@7.2.9
-  - @commercetools-test-data/staged-quote@7.2.9
   - @commercetools-test-data/store@7.2.9
   - @commercetools-test-data/utils@7.2.9
 
@@ -1084,7 +1018,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@7.2.8
   - @commercetools-test-data/quote-request@7.2.8
-  - @commercetools-test-data/staged-quote@7.2.8
   - @commercetools-test-data/core@7.2.8
   - @commercetools-test-data/business-unit@7.2.8
   - @commercetools-test-data/commons@7.2.8
@@ -1097,8 +1030,6 @@
 
 ### Patch Changes
 
-- [#511](https://github.com/commercetools/test-data/pull/511) [`df56292`](https://github.com/commercetools/test-data/commit/df56292c7867ea099de77794700ddfcae82503e5) Thanks [@jaikamat](https://github.com/jaikamat)! - Fixes B2B quote preset state
-
 - Updated dependencies []:
   - @commercetools-test-data/core@7.2.7
   - @commercetools-test-data/business-unit@7.2.7
@@ -1107,7 +1038,6 @@
   - @commercetools-test-data/customer@7.2.7
   - @commercetools-test-data/customer-group@7.2.7
   - @commercetools-test-data/quote-request@7.2.7
-  - @commercetools-test-data/staged-quote@7.2.7
   - @commercetools-test-data/store@7.2.7
   - @commercetools-test-data/utils@7.2.7
 
@@ -1118,7 +1048,6 @@
 - Updated dependencies [[`0ff9651`](https://github.com/commercetools/test-data/commit/0ff9651601ca072ebceee17c68efe18a2accd92a)]:
   - @commercetools-test-data/cart@7.2.6
   - @commercetools-test-data/quote-request@7.2.6
-  - @commercetools-test-data/staged-quote@7.2.6
   - @commercetools-test-data/core@7.2.6
   - @commercetools-test-data/business-unit@7.2.6
   - @commercetools-test-data/commons@7.2.6
@@ -1135,7 +1064,6 @@
   - @commercetools-test-data/business-unit@7.2.5
   - @commercetools-test-data/cart@7.2.5
   - @commercetools-test-data/quote-request@7.2.5
-  - @commercetools-test-data/staged-quote@7.2.5
   - @commercetools-test-data/core@7.2.5
   - @commercetools-test-data/commons@7.2.5
   - @commercetools-test-data/customer@7.2.5
@@ -1154,7 +1082,6 @@
   - @commercetools-test-data/customer@7.2.4
   - @commercetools-test-data/customer-group@7.2.4
   - @commercetools-test-data/quote-request@7.2.4
-  - @commercetools-test-data/staged-quote@7.2.4
   - @commercetools-test-data/store@7.2.4
   - @commercetools-test-data/core@7.2.4
   - @commercetools-test-data/utils@7.2.4
@@ -1166,7 +1093,6 @@
 - Updated dependencies [[`ccc923d`](https://github.com/commercetools/test-data/commit/ccc923df48c2143524497ad4700e705dba39c19e)]:
   - @commercetools-test-data/business-unit@7.2.3
   - @commercetools-test-data/quote-request@7.2.3
-  - @commercetools-test-data/staged-quote@7.2.3
   - @commercetools-test-data/core@7.2.3
   - @commercetools-test-data/cart@7.2.3
   - @commercetools-test-data/commons@7.2.3
@@ -1182,7 +1108,6 @@
 - Updated dependencies [[`ee0ff71`](https://github.com/commercetools/test-data/commit/ee0ff7111b0521d2e8d789e53130142c188a6462)]:
   - @commercetools-test-data/cart@7.2.2
   - @commercetools-test-data/quote-request@7.2.2
-  - @commercetools-test-data/staged-quote@7.2.2
   - @commercetools-test-data/core@7.2.2
   - @commercetools-test-data/business-unit@7.2.2
   - @commercetools-test-data/commons@7.2.2
@@ -1198,7 +1123,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@7.2.1
   - @commercetools-test-data/quote-request@7.2.1
-  - @commercetools-test-data/staged-quote@7.2.1
   - @commercetools-test-data/core@7.2.1
   - @commercetools-test-data/business-unit@7.2.1
   - @commercetools-test-data/commons@7.2.1
@@ -1214,7 +1138,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@7.2.0
   - @commercetools-test-data/quote-request@7.2.0
-  - @commercetools-test-data/staged-quote@7.2.0
   - @commercetools-test-data/core@7.2.0
   - @commercetools-test-data/business-unit@7.2.0
   - @commercetools-test-data/commons@7.2.0
@@ -1230,7 +1153,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@7.1.1
   - @commercetools-test-data/quote-request@7.1.1
-  - @commercetools-test-data/staged-quote@7.1.1
   - @commercetools-test-data/core@7.1.1
   - @commercetools-test-data/business-unit@7.1.1
   - @commercetools-test-data/commons@7.1.1
@@ -1250,7 +1172,6 @@
 - Updated dependencies [[`387e367`](https://github.com/commercetools/test-data/commit/387e367b189bc9f33fe1288392ee6beae7caf96f), [`041993b`](https://github.com/commercetools/test-data/commit/041993b41a0aaae5d68a67b0004cba2175d738aa), [`6da8af0`](https://github.com/commercetools/test-data/commit/6da8af0291c9769f9d2654408e16ddb8cf728217), [`9e7e964`](https://github.com/commercetools/test-data/commit/9e7e964b10c155bc1bbda3a1d291cb14ceac7e16)]:
   - @commercetools-test-data/business-unit@7.1.0
   - @commercetools-test-data/quote-request@7.1.0
-  - @commercetools-test-data/staged-quote@7.1.0
   - @commercetools-test-data/customer@7.1.0
   - @commercetools-test-data/commons@7.1.0
   - @commercetools-test-data/store@7.1.0
@@ -1271,7 +1192,6 @@
   - @commercetools-test-data/cart@7.0.0
   - @commercetools-test-data/customer-group@7.0.0
   - @commercetools-test-data/quote-request@7.0.0
-  - @commercetools-test-data/staged-quote@7.0.0
   - @commercetools-test-data/core@7.0.0
   - @commercetools-test-data/utils@7.0.0
 
@@ -1282,7 +1202,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@6.11.0
   - @commercetools-test-data/quote-request@6.11.0
-  - @commercetools-test-data/staged-quote@6.11.0
   - @commercetools-test-data/core@6.11.0
   - @commercetools-test-data/business-unit@6.11.0
   - @commercetools-test-data/commons@6.11.0
@@ -1302,7 +1221,6 @@
   - @commercetools-test-data/cart@6.10.0
   - @commercetools-test-data/customer-group@6.10.0
   - @commercetools-test-data/quote-request@6.10.0
-  - @commercetools-test-data/staged-quote@6.10.0
   - @commercetools-test-data/store@6.10.0
   - @commercetools-test-data/core@6.10.0
   - @commercetools-test-data/utils@6.10.0
@@ -1315,7 +1233,6 @@
   - @commercetools-test-data/customer@6.9.0
   - @commercetools-test-data/cart@6.9.0
   - @commercetools-test-data/quote-request@6.9.0
-  - @commercetools-test-data/staged-quote@6.9.0
   - @commercetools-test-data/core@6.9.0
   - @commercetools-test-data/business-unit@6.9.0
   - @commercetools-test-data/commons@6.9.0
@@ -1330,7 +1247,6 @@
 - Updated dependencies []:
   - @commercetools-test-data/cart@6.8.1
   - @commercetools-test-data/quote-request@6.8.1
-  - @commercetools-test-data/staged-quote@6.8.1
   - @commercetools-test-data/core@6.8.1
   - @commercetools-test-data/business-unit@6.8.1
   - @commercetools-test-data/commons@6.8.1
@@ -1346,7 +1262,6 @@
 - Updated dependencies [[`b1abc67`](https://github.com/commercetools/test-data/commit/b1abc67a77a5f3567ce88577e6340cbea9db6565)]:
   - @commercetools-test-data/business-unit@6.8.0
   - @commercetools-test-data/quote-request@6.8.0
-  - @commercetools-test-data/staged-quote@6.8.0
   - @commercetools-test-data/core@6.8.0
   - @commercetools-test-data/cart@6.8.0
   - @commercetools-test-data/commons@6.8.0
@@ -1357,16 +1272,15 @@
 
 ## 6.6.0
 
-### Minor Changes
+### Patch Changes
 
 - [#436](https://github.com/commercetools/test-data/pull/436) [`0f9014fa`](https://github.com/commercetools/test-data/commit/0f9014fa7f1f29427ddf6d836560bcbf5772fe6f) Thanks [@ByronDWall](https://github.com/ByronDWall)! - feat(quote model): adds package for `Quote` and `QuoteDraft` models
 
-### Patch Changes
+- [#433](https://github.com/commercetools/test-data/pull/433) [`3622e5d4`](https://github.com/commercetools/test-data/commit/3622e5d485a05a4b394b4a4035ae3309dc06aad3) Thanks [@ByronDWall](https://github.com/ByronDWall)! - feat(staged quote) add test data package for staged quote model
 
 - Updated dependencies [[`c1d67887`](https://github.com/commercetools/test-data/commit/c1d678873faeb4de4f995fb705b67b5633748562), [`0f9014fa`](https://github.com/commercetools/test-data/commit/0f9014fa7f1f29427ddf6d836560bcbf5772fe6f), [`3622e5d4`](https://github.com/commercetools/test-data/commit/3622e5d485a05a4b394b4a4035ae3309dc06aad3)]:
   - @commercetools-test-data/commons@6.6.0
   - @commercetools-test-data/quote-request@6.6.0
-  - @commercetools-test-data/staged-quote@6.6.0
   - @commercetools-test-data/business-unit@6.6.0
   - @commercetools-test-data/cart@6.6.0
   - @commercetools-test-data/customer@6.6.0

@@ -1,7 +1,7 @@
 {
-  "name": "@commercetools-test-data/quote",
+  "name": "@commercetools-test-data/staged-quote",
   "version": "10.15.0",
-  "description": "Data model for commercetools API Quote",
+  "description": "Data model for commercetools API StagedQuote",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
     "type": "git",
@@ -13,8 +13,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/commercetools-test-data-quote.cjs.js",
-  "module": "dist/commercetools-test-data-quote.esm.js",
+  "main": "dist/commercetools-test-data-staged-quote.cjs.js",
+  "module": "dist/commercetools-test-data-staged-quote.esm.js",
   "files": ["dist", "package.json", "LICENSE", "README.md"],
   "dependencies": {
     "@babel/runtime": "^7.17.9",
@@ -26,7 +26,6 @@
     "@commercetools-test-data/customer": "10.15.0",
     "@commercetools-test-data/customer-group": "10.15.0",
     "@commercetools-test-data/quote-request": "10.15.0",
-    "@commercetools-test-data/staged-quote": "^10.15.0",
     "@commercetools-test-data/store": "10.15.0",
     "@commercetools-test-data/utils": "10.15.0",
     "@commercetools/platform-sdk": "8.5.0",
