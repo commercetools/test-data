@@ -10,7 +10,6 @@ describe('CartDiscountPatternTargetDraft Builder', () => {
         selectionMode: expect.any(String),
         targetPattern: expect.arrayContaining([
           expect.objectContaining({
-            excludeCount: expect.any(Number),
             maxCount: expect.toBeOneOf([expect.any(Number), null]),
             minCount: expect.any(Number),
             predicate: expect.any(String),
@@ -18,7 +17,6 @@ describe('CartDiscountPatternTargetDraft Builder', () => {
         ]),
         triggerPattern: expect.arrayContaining([
           expect.objectContaining({
-            excludeCount: expect.any(Number),
             maxCount: expect.toBeOneOf([expect.any(Number), null]),
             minCount: expect.any(Number),
             predicate: expect.any(String),

@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
-import type { TCountOnCustomLineItemUnitsDraftGraphql } from './types';
+import { TCountOnCustomLineItemUnitsDraftGraphql } from '../../types';
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnCustomLineItemUnitsDraftGraphql> =
   {
@@ -18,9 +18,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnCustomLineItemUnits
       ),
       maxCount: fake((f) =>
         f.helpers.arrayElement([null, 0, f.number.int({ min: 1, max: 5 })])
-      ),
-      excludeCount: fake((f) =>
-        f.helpers.arrayElement([0, f.number.int({ min: 1, max: 10 })])
       ),
     },
   };

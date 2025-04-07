@@ -5,10 +5,19 @@ import {
   TCtpCountOnCustomLineItemUnitsInput,
 } from '@commercetools-test-data/graphql-types';
 
-export type TCountOnCustomLineItemUnitsRest = CountOnCustomLineItemUnits;
-export type TCountOnCustomLineItemUnitsGraphql = TCtpCountOnCustomLineItemUnits;
-export type TCountOnCustomLineItemUnitsDraftGraphql =
-  TCtpCountOnCustomLineItemUnitsInput;
+//@TODO: remove Omit when CountOnCustomLineItemUnits gets the excludeCount field in the SDK
+export type TCountOnCustomLineItemUnitsRest = Omit<
+  CountOnCustomLineItemUnits,
+  'excludeCount'
+>;
+export type TCountOnCustomLineItemUnitsGraphql = Omit<
+  TCtpCountOnCustomLineItemUnits,
+  'excludeCount'
+>;
+export type TCountOnCustomLineItemUnitsDraftGraphql = Omit<
+  TCtpCountOnCustomLineItemUnitsInput,
+  'excludeCount'
+>;
 
 export type TCreateCountOnCustomLineItemUnitsBuilder<
   TModel extends
