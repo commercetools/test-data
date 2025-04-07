@@ -176,6 +176,7 @@ describe(`with cocktailShakerSet01 preset`, () => {
           },
         ],
         "sku": "COC-0843",
+        "staged": true,
       }
     `);
   });

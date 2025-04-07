@@ -261,6 +261,7 @@ describe(`with redModernPainting preset`, () => {
             },
           ],
           "sku": "RMP-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

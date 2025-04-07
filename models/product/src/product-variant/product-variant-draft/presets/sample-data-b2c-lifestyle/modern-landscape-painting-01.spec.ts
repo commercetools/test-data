@@ -179,6 +179,7 @@ describe(`with modernLandscapePainting01 preset`, () => {
           },
         ],
         "sku": "MLP-01",
+        "staged": true,
       }
     `);
   });

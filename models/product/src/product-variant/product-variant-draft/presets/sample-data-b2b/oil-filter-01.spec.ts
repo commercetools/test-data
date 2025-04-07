@@ -45,6 +45,7 @@ describe(`with oilFilter01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "oil-filter",
+        "staged": true,
       }
     `);
   });

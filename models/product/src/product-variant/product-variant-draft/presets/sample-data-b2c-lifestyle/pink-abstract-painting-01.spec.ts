@@ -176,6 +176,7 @@ describe(`with pinkAbstractPainting01 preset`, () => {
           },
         ],
         "sku": "PAP-01",
+        "staged": true,
       }
     `);
   });

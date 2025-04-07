@@ -96,6 +96,7 @@ describe(`with fff456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "fff456-st-green",
+        "staged": true,
       }
     `);
   });

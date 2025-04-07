@@ -270,6 +270,7 @@ describe(`with sallyArmchair preset`, () => {
             },
           ],
           "sku": "SARMO-034",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

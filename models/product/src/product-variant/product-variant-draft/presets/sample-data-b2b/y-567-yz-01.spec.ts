@@ -82,6 +82,7 @@ describe(`with y567Yz01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "y567-yz-2015",
+        "staged": true,
       }
     `);
   });

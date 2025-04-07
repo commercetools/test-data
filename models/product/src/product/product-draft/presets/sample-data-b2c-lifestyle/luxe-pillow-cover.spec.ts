@@ -253,6 +253,7 @@ describe(`with luxePillowCover preset`, () => {
             },
           ],
           "sku": "LPC-011",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

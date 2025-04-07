@@ -165,6 +165,7 @@ describe(`with necklace variant preset`, () => {
           },
         ],
         "sku": "752502",
+        "staged": true,
       }
     `);
   });

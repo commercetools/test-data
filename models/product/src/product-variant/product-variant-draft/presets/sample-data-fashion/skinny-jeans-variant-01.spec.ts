@@ -136,6 +136,7 @@ describe(`with skinnyJeansVariant01 preset`, () => {
           },
         ],
         "sku": "396594",
+        "staged": true,
       }
     `);
   });

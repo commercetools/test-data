@@ -270,6 +270,7 @@ describe(`with rectangleServingTray preset`, () => {
             },
           ],
           "sku": "RST-02",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

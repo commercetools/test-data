@@ -229,6 +229,7 @@ describe(`with toteBag preset`, () => {
             },
           ],
           "sku": "718289",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -314,6 +315,7 @@ describe(`with toteBag preset`, () => {
               },
             ],
             "sku": "124965",
+            "staged": true,
           },
         ],
       }

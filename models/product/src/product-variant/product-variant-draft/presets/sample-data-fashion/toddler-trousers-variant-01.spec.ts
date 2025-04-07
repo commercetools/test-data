@@ -158,6 +158,7 @@ describe(`with toddlerTrousersVariant01 preset`, () => {
           },
         ],
         "sku": "855485",
+        "staged": true,
       }
     `);
   });

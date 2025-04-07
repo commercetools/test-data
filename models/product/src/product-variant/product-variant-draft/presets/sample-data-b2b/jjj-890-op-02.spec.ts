@@ -96,6 +96,7 @@ describe(`with jjj890Op02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "jjj890-op-blue",
+        "staged": true,
       }
     `);
   });

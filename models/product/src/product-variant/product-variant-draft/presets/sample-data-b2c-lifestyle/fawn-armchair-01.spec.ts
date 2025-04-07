@@ -184,6 +184,7 @@ describe(`with fawnArmchair01 preset`, () => {
           },
         ],
         "sku": "FARM-05",
+        "staged": true,
       }
     `);
   });

@@ -96,6 +96,7 @@ describe(`with xx890Op02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "xx890-op-blue",
+        "staged": true,
       }
     `);
   });

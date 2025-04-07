@@ -176,6 +176,7 @@ describe(`with lanaPillowCover01 preset`, () => {
           },
         ],
         "sku": "LPC-09",
+        "staged": true,
       }
     `);
   });

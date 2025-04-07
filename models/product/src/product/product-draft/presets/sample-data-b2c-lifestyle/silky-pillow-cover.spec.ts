@@ -250,6 +250,7 @@ describe(`with silkyPillowCover preset`, () => {
             },
           ],
           "sku": "SPC-06",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

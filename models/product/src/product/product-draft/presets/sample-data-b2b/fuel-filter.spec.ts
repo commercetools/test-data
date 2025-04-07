@@ -166,6 +166,7 @@ describe(`with fuelFilter preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "fuel-filter",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -223,6 +223,7 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
           },
         ],
         "sku": "TLSS-01",
+        "staged": true,
       }
     `);
   });

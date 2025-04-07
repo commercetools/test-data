@@ -82,6 +82,7 @@ describe(`with d234Wx01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "d234-wx-2015",
+        "staged": true,
       }
     `);
   });

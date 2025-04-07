@@ -308,6 +308,7 @@ describe(`with ariaRug preset`, () => {
             },
           ],
           "sku": "AAR-34",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

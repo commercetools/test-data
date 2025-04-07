@@ -122,6 +122,7 @@ describe(`with anniversaryShirt preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": undefined,
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -163,6 +164,7 @@ describe(`with anniversaryShirt preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": undefined,
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -176,6 +178,7 @@ describe(`with anniversaryShirt preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": undefined,
+            "staged": true,
           },
         ],
       }

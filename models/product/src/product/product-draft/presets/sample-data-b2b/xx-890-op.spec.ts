@@ -320,6 +320,7 @@ describe(`with xx890Op preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "xx890-op-red",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -454,6 +455,7 @@ describe(`with xx890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "xx890-op-blue",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -488,6 +490,7 @@ describe(`with xx890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "xx890-op-green",
+            "staged": true,
           },
         ],
       }

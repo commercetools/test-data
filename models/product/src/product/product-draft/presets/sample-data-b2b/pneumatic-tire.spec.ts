@@ -167,6 +167,7 @@ describe(`with pneumaticTire preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "pneumatic-tire",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

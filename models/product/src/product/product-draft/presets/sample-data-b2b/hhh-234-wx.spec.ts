@@ -320,6 +320,7 @@ describe(`with hhh234Wx preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "hhh234-wx-red",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -454,6 +455,7 @@ describe(`with hhh234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "hhh234-wx-blue",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -488,6 +490,7 @@ describe(`with hhh234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "hhh234-wx-green",
+            "staged": true,
           },
         ],
       }

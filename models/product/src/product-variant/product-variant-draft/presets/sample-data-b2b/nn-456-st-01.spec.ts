@@ -82,6 +82,7 @@ describe(`with nn456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "nn456-st-2015",
+        "staged": true,
       }
     `);
   });

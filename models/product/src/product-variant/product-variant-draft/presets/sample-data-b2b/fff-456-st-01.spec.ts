@@ -96,6 +96,7 @@ describe(`with fff456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "fff456-st-red",
+        "staged": true,
       }
     `);
   });

@@ -325,6 +325,7 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
             },
           ],
           "sku": "GRCG-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -82,6 +82,7 @@ describe(`with aa123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "aa123-qr-2015",
+        "staged": true,
       }
     `);
   });

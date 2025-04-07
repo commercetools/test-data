@@ -186,6 +186,7 @@ describe(`with slateArmchair01 preset`, () => {
           },
         ],
         "sku": "SARM-09",
+        "staged": true,
       }
     `);
   });

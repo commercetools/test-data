@@ -173,6 +173,7 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
         ],
         "sku": "MPC-02",
+        "staged": true,
       }
     `);
   });

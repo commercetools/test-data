@@ -169,6 +169,7 @@ describe(`with ravenBowl01 preset`, () => {
           },
         ],
         "sku": "RB-093",
+        "staged": true,
       }
     `);
   });

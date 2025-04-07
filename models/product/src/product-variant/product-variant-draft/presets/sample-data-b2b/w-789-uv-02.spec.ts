@@ -82,6 +82,7 @@ describe(`with w789Uv02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "w789-uv-2019",
+        "staged": true,
       }
     `);
   });

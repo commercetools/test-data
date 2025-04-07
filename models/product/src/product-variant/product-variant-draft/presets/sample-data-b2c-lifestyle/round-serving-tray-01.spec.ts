@@ -186,6 +186,7 @@ describe(`with roundServingTray01 preset`, () => {
           },
         ],
         "sku": "RST-01",
+        "staged": true,
       }
     `);
   });

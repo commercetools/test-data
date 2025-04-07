@@ -6,6 +6,7 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '@commercetools-test-data/commons';
+import { TBuilder } from '@commercetools-test-data/core';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
@@ -14,9 +15,9 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import * as ProductVariantDraft from '../../../../product-variant/product-variant-draft';
-import * as ProductDraft from '../../../product-draft';
-import type { TProductDraftBuilder } from '../../../types';
+import { ProductVariantDraft } from '../../../../product-variant/product-variant-draft';
+import { ProductDraft } from '../../../product-draft';
+import type { TProductDraft } from '../../../types';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()
@@ -47,7 +48,7 @@ const dinnerwareDraft = CategoryDraft.presets.sampleDataB2CLifestyle
   .dinnerware()
   .build<TCategoryDraft>();
 
-const smallWoodenBowl = (): TProductDraftBuilder =>
+const smallWoodenBowl = (): TBuilder<TProductDraft> =>
   ProductDraft.presets
     .empty()
     .key('small-wooden-bowl')

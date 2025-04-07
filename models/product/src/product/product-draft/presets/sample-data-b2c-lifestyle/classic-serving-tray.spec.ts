@@ -283,6 +283,7 @@ describe(`with classicServingTray preset`, () => {
             },
           ],
           "sku": "CST-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

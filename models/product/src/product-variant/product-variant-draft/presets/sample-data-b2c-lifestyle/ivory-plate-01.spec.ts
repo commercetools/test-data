@@ -169,6 +169,7 @@ describe(`with ivoryPlate01 preset`, () => {
           },
         ],
         "sku": "ISP-01",
+        "staged": true,
       }
     `);
   });

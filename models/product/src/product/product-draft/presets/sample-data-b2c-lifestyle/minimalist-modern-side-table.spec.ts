@@ -396,6 +396,7 @@ describe(`with minimalistModernSideTable preset`, () => {
             },
           ],
           "sku": "MMST-01",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -522,6 +523,7 @@ describe(`with minimalistModernSideTable preset`, () => {
               },
             ],
             "sku": "MMST-02",
+            "staged": true,
           },
         ],
       }

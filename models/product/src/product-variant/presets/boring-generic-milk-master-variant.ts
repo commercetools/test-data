@@ -1,12 +1,37 @@
-import * as Attribute from '../../attribute';
-import ProductVariant from '../builder';
-import { TProductVariantBuilder } from '../types';
+import { TBuilder } from '@commercetools-test-data/core';
+import { ProductVariant, ProductVariantGraphql, ProductVariantRest } from '..';
+import { Attribute } from '../..';
+import {
+  TProductVariant,
+  TProductVariantGraphql,
+  TProductVariantRest,
+} from '../types';
 
-const boringGenericMilkMasterVariant = (): TProductVariantBuilder =>
-  ProductVariant()
+const populatePreset = <
+  TModel extends TProductVariantGraphql | TProductVariantRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
+    .id(1)
     .key('boring-generic-milk-master-variant-key')
-    .sku('boring-generic-milk-master-variant-sku')
-    .attributes([Attribute.random().name('cow-name').value('unknown')])
-    .id(1);
+    .sku('boring-generic-milk-master-variant-sku');
+};
 
-export default boringGenericMilkMasterVariant;
+export const restPreset = (): TBuilder<TProductVariantRest> => {
+  return populatePreset(ProductVariantRest.random()).attributes([
+    Attribute.random().name('cow-name').value('unknown'),
+  ]);
+};
+
+export const graphqlPreset = (): TBuilder<TProductVariantGraphql> => {
+  return populatePreset(ProductVariantGraphql.random()).attributesRaw([
+    Attribute.random().name('cow-name').value('unknown'),
+  ]);
+};
+
+export const compatPreset = (): TBuilder<TProductVariant> => {
+  return populatePreset(ProductVariant.random()).attributes([
+    Attribute.random().name('cow-name').value('unknown'),
+  ]);
+};

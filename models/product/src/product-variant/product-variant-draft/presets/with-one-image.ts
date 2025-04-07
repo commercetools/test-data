@@ -1,8 +1,37 @@
+// import ProductVariantDraft from '../builder';
+
+// function withOneImage() {
+//   return ProductVariantDraft().images([Image.presets.commercetoolsPosAem()]);
+// }
+
+// export default withOneImage;
+
+import { TBuilder } from '@commercetools-test-data/core';
+import {
+  ProductVariantDraft,
+  ProductVariantDraftGraphql,
+  ProductVariantDraftRest,
+} from '..';
 import { Image } from '../../../index';
-import ProductVariantDraft from '../builder';
+import {
+  TProductVariantDraft,
+  TProductVariantDraftGraphql,
+  TProductVariantDraftRest,
+} from '../../types';
 
-function withOneImage() {
-  return ProductVariantDraft().images([Image.presets.commercetoolsPosAem()]);
-}
+const populatePreset = <
+  TModel extends TProductVariantDraftGraphql | TProductVariantDraftRest,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder.images([Image.presets.commercetoolsPosAem()]);
+};
 
-export default withOneImage;
+export const restPreset = (): TBuilder<TProductVariantDraftRest> =>
+  populatePreset(ProductVariantDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TProductVariantDraftGraphql> =>
+  populatePreset(ProductVariantDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TProductVariantDraft> =>
+  populatePreset(ProductVariantDraft.random());

@@ -197,6 +197,7 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
           },
         ],
         "sku": "CSKW-093",
+        "staged": true,
       }
     `);
   });

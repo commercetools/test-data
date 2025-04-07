@@ -82,6 +82,7 @@ describe(`with pp234Wx03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "pp234-wx-2023",
+        "staged": true,
       }
     `);
   });

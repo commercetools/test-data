@@ -290,4 +290,8 @@ const presets = {
   wineBottleOpener01,
 };
 
+export const restPresets = { ...presets };
+export const graphqlPresets = { ...presets };
+export const compatPresets = { ...presets };
+
 export default presets;

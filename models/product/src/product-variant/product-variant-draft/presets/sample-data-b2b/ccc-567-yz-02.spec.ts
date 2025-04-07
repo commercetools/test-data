@@ -96,6 +96,7 @@ describe(`with ccc567Yz02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ccc567-yz-blue",
+        "staged": true,
       }
     `);
   });

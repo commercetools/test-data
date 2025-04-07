@@ -278,6 +278,7 @@ describe(`with j234Wx preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "j234-wx-2015",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -412,6 +413,7 @@ describe(`with j234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "j234-wx-2019",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -446,6 +448,7 @@ describe(`with j234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "j234-wx-2023",
+            "staged": true,
           },
         ],
       }

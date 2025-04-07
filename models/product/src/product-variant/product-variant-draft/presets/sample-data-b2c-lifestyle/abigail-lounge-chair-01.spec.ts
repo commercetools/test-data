@@ -226,6 +226,7 @@ describe(`with abigailLoungeChair01 preset`, () => {
           },
         ],
         "sku": "ALC-01",
+        "staged": true,
       }
     `);
   });

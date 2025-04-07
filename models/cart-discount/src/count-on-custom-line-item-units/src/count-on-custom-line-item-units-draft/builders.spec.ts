@@ -10,7 +10,6 @@ describe('CountOnCustomLineItemUnitsDraft Builder', () => {
         predicate: expect.any(String),
         minCount: expect.any(Number),
         maxCount: expect.toBeOneOf([expect.any(Number), null]),
-        excludeCount: expect.any(Number),
       })
     );
   });

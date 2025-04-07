@@ -188,6 +188,7 @@ describe(`with travelCoffeeMug01 preset`, () => {
           },
         ],
         "sku": "TCM-03",
+        "staged": true,
       }
     `);
   });

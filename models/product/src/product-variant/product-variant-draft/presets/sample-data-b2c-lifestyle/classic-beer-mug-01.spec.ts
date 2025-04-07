@@ -182,6 +182,7 @@ describe(`with classicBeerMug01 preset`, () => {
           },
         ],
         "sku": "CBM-03",
+        "staged": true,
       }
     `);
   });

@@ -157,6 +157,7 @@ describe(`with summerDressVariant01 preset`, () => {
           },
         ],
         "sku": "791840",
+        "staged": true,
       }
     `);
   });

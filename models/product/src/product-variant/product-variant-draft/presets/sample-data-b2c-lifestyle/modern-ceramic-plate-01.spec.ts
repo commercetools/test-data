@@ -173,6 +173,7 @@ describe(`with modernCeramicPlate01 preset`, () => {
           },
         ],
         "sku": "MCP-01",
+        "staged": true,
       }
     `);
   });

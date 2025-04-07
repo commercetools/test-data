@@ -312,6 +312,7 @@ describe(`with walnutCabinet preset`, () => {
             },
           ],
           "sku": "WCS-09",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

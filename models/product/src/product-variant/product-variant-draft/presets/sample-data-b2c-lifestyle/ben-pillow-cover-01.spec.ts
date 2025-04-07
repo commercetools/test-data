@@ -176,6 +176,7 @@ describe(`with benPillowCover01 preset`, () => {
           },
         ],
         "sku": "LBPC-09",
+        "staged": true,
       }
     `);
   });

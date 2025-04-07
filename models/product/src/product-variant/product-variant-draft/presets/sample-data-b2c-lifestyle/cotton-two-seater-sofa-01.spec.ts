@@ -193,6 +193,7 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
           },
         ],
         "sku": "CTSS-0983",
+        "staged": true,
       }
     `);
   });

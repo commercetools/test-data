@@ -185,6 +185,7 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
         ],
         "sku": "VARM-09",
+        "staged": true,
       }
     `);
   });

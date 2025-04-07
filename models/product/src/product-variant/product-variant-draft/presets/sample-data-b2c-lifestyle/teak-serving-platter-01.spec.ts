@@ -176,6 +176,7 @@ describe(`with teakServingPlatter01 preset`, () => {
           },
         ],
         "sku": "TST-02",
+        "staged": true,
       }
     `);
   });

@@ -185,6 +185,7 @@ describe(`with edgarArmchair01 preset`, () => {
           },
         ],
         "sku": "EARM-04",
+        "staged": true,
       }
     `);
   });

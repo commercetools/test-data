@@ -82,6 +82,7 @@ describe(`with g123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "g123-qr-2015",
+        "staged": true,
       }
     `);
   });

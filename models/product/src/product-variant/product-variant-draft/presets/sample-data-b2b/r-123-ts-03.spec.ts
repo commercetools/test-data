@@ -82,6 +82,7 @@ describe(`with r123Ts03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "r123-ts-2023",
+        "staged": true,
       }
     `);
   });

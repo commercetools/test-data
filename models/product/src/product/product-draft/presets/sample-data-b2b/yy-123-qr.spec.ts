@@ -320,6 +320,7 @@ describe(`with yy123Qr preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "yy123-qr-red",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -454,6 +455,7 @@ describe(`with yy123Qr preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "yy123-qr-blue",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -488,6 +490,7 @@ describe(`with yy123Qr preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "yy123-qr-green",
+            "staged": true,
           },
         ],
       }

@@ -217,6 +217,7 @@ describe(`with entrywayCloset01 preset`, () => {
           },
         ],
         "sku": "EWC-07",
+        "staged": true,
       }
     `);
   });

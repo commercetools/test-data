@@ -278,6 +278,7 @@ describe(`with x456Yz preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "x456-yz-2015",
+          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -412,6 +413,7 @@ describe(`with x456Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "x456-yz-2019",
+            "staged": true,
           },
           {
             "assets": undefined,
@@ -446,6 +448,7 @@ describe(`with x456Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "x456-yz-2023",
+            "staged": true,
           },
         ],
       }

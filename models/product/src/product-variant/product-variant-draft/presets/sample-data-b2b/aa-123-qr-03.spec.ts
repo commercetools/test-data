@@ -82,6 +82,7 @@ describe(`with aa123Qr03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "aa123-qr-2023",
+        "staged": true,
       }
     `);
   });

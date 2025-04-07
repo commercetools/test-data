@@ -189,6 +189,7 @@ describe(`with sandals variant preset`, () => {
           },
         ],
         "sku": "148096",
+        "staged": true,
       }
     `);
   });

@@ -96,6 +96,7 @@ describe(`with zz456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "zz456-st-green",
+        "staged": true,
       }
     `);
   });
