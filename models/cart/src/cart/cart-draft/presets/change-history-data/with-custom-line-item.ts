@@ -1,6 +1,6 @@
 import { AddressDraft } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import * as CustomLineItemDraft from '../../../../custom-line-item/custom-line-item-draft';
+import { CustomLineItemDraft } from '../../../../custom-line-item/custom-line-item-draft';
 import type {
   TCartDraft,
   TCartDraftGraphql,
