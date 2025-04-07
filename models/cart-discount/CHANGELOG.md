@@ -1,5 +1,22 @@
 # @commercetools-test-data/cart-discount
 
+## 10.15.0
+
+### Minor Changes
+
+- [#766](https://github.com/commercetools/test-data/pull/766) [`950f529`](https://github.com/commercetools/test-data/commit/950f5293dcdb12e727bcede2cc1a574965fdd857) Thanks [@mario-priceless](https://github.com/mario-priceless)! - remove excludeCount property from cart discounts models
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.0
+  - @commercetools-test-data/graphql-types@10.15.0
+  - @commercetools-test-data/category@10.15.0
+  - @commercetools-test-data/commons@10.15.0
+  - @commercetools-test-data/customer-group@10.15.0
+  - @commercetools-test-data/product-type@10.15.0
+  - @commercetools-test-data/utils@10.15.0
+
 ## 10.14.2
 
 ### Patch Changes
