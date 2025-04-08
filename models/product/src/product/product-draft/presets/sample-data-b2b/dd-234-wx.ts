@@ -17,8 +17,8 @@ import {
 } from '@commercetools-test-data/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant';
 import { productPriceMode } from '../../../constants';
-import { ProductDraft } from '../../../index';
 import type { TProductDraft } from '../../../types';
+import { ProductDraft } from '../../index';
 
 const standardTaxTaxCategory = TaxCategoryDraft.presets.sampleDataB2B
   .standardTax()
