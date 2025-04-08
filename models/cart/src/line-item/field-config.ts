@@ -1,7 +1,8 @@
-import { ChannelRest, ChannelGraphql } from '@commercetools-test-data/channel';
+import { ChannelGraphql } from '@commercetools-test-data/channel';
 import {
   CentPrecisionMoney,
   LocalizedString,
+  Money,
   Price,
   ReferenceGraphql,
   ReferenceRest,
@@ -11,13 +12,10 @@ import {
   type TModelFieldsConfig,
   oneOf,
 } from '@commercetools-test-data/core';
-import {
-  ProductVariantGraphql,
-  ProductVariantRest,
-} from '@commercetools-test-data/product';
+import { ProductVariant } from '@commercetools-test-data/product';
 import {} from '@commercetools-test-data/product/src/product-variant';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { inventoryMode, lineItemMode, priceMode } from './constants';
+import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
 import { TLineItemRest, TLineItemGraphql } from './types';
 
 const [addedAt, lastModifiedAt] = createRelatedDates();
@@ -33,9 +31,8 @@ const commonFieldsConfig = {
       min: 1,
     })
   ),
-  totalPrice: fake(() => CentPrecisionMoney.random()),
   discountedPricePerQuantity: [],
-  taxedPrice: fake(() => CentPrecisionMoney.random()),
+  taxedPrice: null,
   taxedPricePortions: [],
   state: [],
   taxRate: null,
@@ -53,11 +50,12 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
   fields: {
     ...commonFieldsConfig,
     name: fake(() => LocalizedString.random()),
-    variant: fake(() => ProductVariantRest.random()),
-    supplyChannel: fake(() => ReferenceRest.random().typeId('channel')),
-    distributionChannel: fake(() => ReferenceRest.random().typeId('channel')),
     productSlug: fake((f) => LocalizedString.presets.ofSlugs()),
     productType: fake(() => ReferenceRest.random().typeId('product-type')),
+    variant: fake(() => ProductVariant.ProductVariantRest.random()),
+    totalPrice: fake(() => CentPrecisionMoney.random()),
+    supplyChannel: fake(() => ReferenceRest.random().typeId('channel')),
+    distributionChannel: fake(() => ReferenceRest.random().typeId('channel')),
   },
 };
 
@@ -65,14 +63,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
   fields: {
     ...commonFieldsConfig,
     name: null,
-    variant: fake(() => ProductVariantGraphql.random()),
-    supplyChannel: fake(() => ChannelGraphql.random()),
-    distributionChannel: fake(() => ChannelGraphql.random()),
     productSlug: null,
     productType: fake(() => ReferenceGraphql.random().typeId('product-type')),
+    variant: fake(() => ProductVariant.ProductVariantGraphql.random()),
+    totalPrice: fake(() => Money.random()),
+    supplyChannel: fake(() => ChannelGraphql.random()),
+    distributionChannel: fake(() => ChannelGraphql.random()),
     distributionChannelRef: null,
-    nameAllLocales: fake(() => LocalizedString.random()),
-    productSlugAllLocales: fake(() => LocalizedString.random()),
+    nameAllLocales: fake((f) => LocalizedString.random()),
+    productSlugAllLocales: fake((f) => LocalizedString.random()),
     productTypeRef: null,
     supplyChannelRef: null,
     __typename: 'LineItem',
@@ -104,6 +103,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
           .id(model.supplyChannel.id)
           .buildGraphql()
       : model.supplyChannel;
+
     return {
       name,
       productSlug,
