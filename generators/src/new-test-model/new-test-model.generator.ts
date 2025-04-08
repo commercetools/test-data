@@ -7,6 +7,12 @@ import { render as renderTemplate } from 'squirrelly';
 import { CodeGenerator } from '../types';
 import { packageTemplatesData, modelTemplatesData } from './templates';
 
+type TExecCommandError = Error & {
+  status?: number;
+  stdout?: Buffer;
+  stderr?: Buffer;
+};
+
 const servicesToTypePrefixMap = {
   core: 'TCore',
   ctp: 'TCtp',
@@ -224,7 +230,8 @@ export const newTestModelGenerator: CodeGenerator = {
         execSync('npx preconstruct fix', {
           cwd: rootDirectoryPath,
         });
-      } catch (error) {
+      } catch (err) {
+        const error = err as TExecCommandError;
         throw new Error(
           `Failed to run "preconstruct fix": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
         );
@@ -235,7 +242,8 @@ export const newTestModelGenerator: CodeGenerator = {
         execSync('pnpm install', {
           cwd: rootDirectoryPath,
         });
-      } catch (error) {
+      } catch (err) {
+        const error = err as TExecCommandError;
         throw new Error(
           `Failed to run "pnpm install": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
         );
