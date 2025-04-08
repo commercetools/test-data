@@ -3,7 +3,7 @@ import { TaxRate } from '@commercetools-test-data/tax-category';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../index';
 import { TLineItemGraphql, TLineItemRest } from './types';
-import { LineItemRest, LineItemGraphql } from './index';
+import { LineItem, LineItemRest, LineItemGraphql } from './index';
 
 const populateRestModel = (model: TBuilder<TLineItemRest>) =>
   model
@@ -25,10 +25,8 @@ const validateCommonFields = (model: TLineItemRest | TLineItemGraphql) => {
       productId: expect.any(String),
       productKey: expect.any(String),
       productType: expect.objectContaining({
+        id: expect.any(String),
         typeId: 'product-type',
-      }),
-      variant: expect.objectContaining({
-        attributes: expect.any(Array),
       }),
       price: expect.objectContaining({
         id: expect.any(String),
@@ -43,6 +41,7 @@ const validateCommonFields = (model: TLineItemRest | TLineItemGraphql) => {
       taxedPricePortions: [],
       totalPrice: expect.objectContaining({
         centAmount: expect.any(Number),
+        type: 'centPrecision',
       }),
       quantity: expect.any(Number),
       addedAt: expect.any(String),
@@ -50,15 +49,14 @@ const validateCommonFields = (model: TLineItemRest | TLineItemGraphql) => {
       taxRate: expect.objectContaining({
         id: expect.any(String),
         amount: expect.any(Number),
+        includedInPrice: expect.any(Boolean),
       }),
       perMethodTaxRate: [],
       supplyChannel: expect.objectContaining({
         id: expect.any(String),
-        typeId: 'channel',
       }),
       distributionChannel: expect.objectContaining({
         id: expect.any(String),
-        typeId: 'channel',
       }),
       discountedPricePerQuantity: [],
       priceMode: expect.any(String),
@@ -77,6 +75,9 @@ const validateRestFields = (model: TLineItemRest) => {
   validateCommonFields(model);
   expect(model).toEqual(
     expect.objectContaining({
+      variant: expect.objectContaining({
+        attributes: expect.any(Array),
+      }),
       name: expect.objectContaining({
         en: expect.any(String),
         de: expect.any(String),
@@ -87,78 +88,112 @@ const validateRestFields = (model: TLineItemRest) => {
         de: expect.any(String),
         fr: expect.any(String),
       }),
+      supplyChannel: expect.objectContaining({
+        id: expect.any(String),
+      }),
+      distributionChannel: expect.objectContaining({
+        id: expect.any(String),
+      }),
     })
   );
 };
 
 const validateGraphqlFields = (model: TLineItemGraphql) => {
   validateCommonFields(model);
-  //   expect(model).toEqual({
-  //     price: expect.objectContaining({
-  //       __typename: 'ProductPrice',
-  //     }),
-  //     taxedPrice: expect.objectContaining({
-  //       __typename: 'Money',
-  //     }),
-  //     taxRate: expect.objectContaining({
-  //       __typename: 'TaxRate',
-  //     }),
-  //     variant: expect.objectContaining({
-  //       __typename: 'ProductVariant',
-  //     }),
-  //     supplyChannel: expect.objectContaining({
-  //       __typename: 'Channel',
-  //     }),
-  //     distributionChannel: expect.objectContaining({
-  //       __typename: 'Channel',
-  //     }),
-  //     productSlug: expect.any(String),
-  //     productType: expect.objectContaining({
-  //       __typename: 'ProductType',
-  //     }),
-  //     distributionChannelRef: expect.objectContaining({
-  //       id: expect.any(String),
-  //       typeId: 'channel',
-  //       __typename: 'Reference',
-  //     }),
-  //     nameAllLocales: expect.arrayContaining([
-  //       {
-  //         __typename: 'LocalizedString',
-  //         locale: expect.any(String),
-  //         value: expect.any(String),
-  //       },
-  //     ]),
-  //     productSlugAllLocales: expect.arrayContaining([
-  //       {
-  //         __typename: 'LocalizedString',
-  //         locale: expect.any(String),
-  //         value: expect.any(String),
-  //       },
-  //     ]),
-  //     productTypeRef: expect.objectContaining({
-  //       id: expect.any(String),
-  //       typeId: 'product',
-  //       __typename: 'Reference',
-  //     }),
-  //     supplyChannelRef: expect.objectContaining({
-  //       id: expect.any(String),
-  //       typeId: 'channel',
-  //       __typename: 'Reference',
-  //     }),
-  //     __typename: 'LineItem',
-  //   });
+  expect(model).toEqual(
+    expect.objectContaining({
+      name: expect.any(String),
+      productSlug: expect.any(String),
+      variant: expect.objectContaining({
+        sku: expect.any(String),
+        attributesRaw: expect.any(Array),
+        __typename: 'ProductVariant',
+      }),
+      price: expect.objectContaining({
+        __typename: 'ProductPrice',
+      }),
+      taxedPrice: expect.objectContaining({
+        __typename: 'TaxedItemPrice',
+      }),
+      totalPrice: expect.objectContaining({
+        __typename: 'Money',
+      }),
+      taxRate: expect.objectContaining({
+        __typename: 'TaxRate',
+      }),
+      supplyChannel: expect.objectContaining({
+        roles: expect.arrayContaining([expect.any(String)]),
+        __typename: 'Channel',
+      }),
+      distributionChannel: expect.objectContaining({
+        roles: expect.arrayContaining([expect.any(String)]),
+        __typename: 'Channel',
+      }),
+      productType: expect.objectContaining({
+        __typename: 'Reference',
+      }),
+      nameAllLocales: expect.arrayContaining([
+        {
+          locale: expect.any(String),
+          value: expect.any(String),
+          __typename: 'LocalizedString',
+        },
+      ]),
+      productSlugAllLocales: expect.arrayContaining([
+        {
+          locale: expect.any(String),
+          value: expect.any(String),
+          __typename: 'LocalizedString',
+        },
+      ]),
+      productTypeRef: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'product',
+        __typename: 'Reference',
+      }),
+      distributionChannelRef: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'channel',
+        __typename: 'Reference',
+      }),
+      supplyChannelRef: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'channel',
+        __typename: 'Reference',
+      }),
+      custom: expect.objectContaining({
+        __typename: 'BooleanCustomFieldType',
+      }),
+      __typename: 'LineItem',
+    })
+  );
 };
 
 describe('LineItem model builders', () => {
   it('builds a REST model', () => {
     const model = populateRestModel(LineItemRest.random()).build();
-    console.log(model);
-    validateCommonFields(model);
+    validateRestFields(model);
   });
 
   it('builds a GraphQL model', () => {
     const model = populateGraphqlModel(LineItemGraphql.random()).build();
-    console.log(model);
+    validateGraphqlFields(model);
+  });
+});
+
+describe('LineItem compatibility builder', () => {
+  it('builds a DEFAULT model', () => {
+    const model = populateRestModel(LineItem.random()).build();
+    validateRestFields(model);
+  });
+
+  it('builds a REST model', () => {
+    const model = populateRestModel(LineItem.random()).buildRest();
+    validateRestFields(model);
+  });
+
+  it('builds a GraphQL model', () => {
+    const model = populateGraphqlModel(LineItem.random()).buildGraphql();
     validateGraphqlFields(model);
   });
 });
