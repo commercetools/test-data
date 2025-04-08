@@ -1,5 +1,22 @@
 # @commercetools-test-data/product
 
+## 10.15.1
+
+### Patch Changes
+
+- [#773](https://github.com/commercetools/test-data/pull/773) [`3f0ed6e`](https://github.com/commercetools/test-data/commit/3f0ed6ec08f81dda20d009aa6fca46cd8d8e7f09) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixes the way the `ProductDraft` model is exported as the current one (introduced in the previous release) is not retro-compatible.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.1
+  - @commercetools-test-data/graphql-types@10.15.1
+  - @commercetools-test-data/category@10.15.1
+  - @commercetools-test-data/channel@10.15.1
+  - @commercetools-test-data/commons@10.15.1
+  - @commercetools-test-data/product-selection@10.15.1
+  - @commercetools-test-data/product-type@10.15.1
+  - @commercetools-test-data/tax-category@10.15.1
+  - @commercetools-test-data/utils@10.15.1
+
 ## 10.15.0
 
 ### Patch Changes
