@@ -15,9 +15,9 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductDraft } from '../../../';
 import { ProductVariantDraft } from '../../../../product-variant';
 import type { TProductDraft } from '../../../types';
+import { ProductDraft } from '../../index';
 
 const standardTaxCategory = TaxCategoryDraft.presets.sampleDataB2CLifestyle
   .standardTaxCategory()

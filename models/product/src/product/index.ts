@@ -5,11 +5,10 @@ import {
   GraphqlModelBuilder,
   RestModelBuilder,
 } from './builders';
+import * as constants from './constants';
 import * as modelPresets from './presets';
 
 export * from './types';
-export * as constants from './constants';
-export * from './product-draft';
 
 export const ProductRest = {
   random: RestModelBuilder,
@@ -21,9 +20,11 @@ export const ProductGraphql = {
   presets: modelPresets.graphqlPresets,
 };
 
-export * as Product from '.';
 /**
  * @deprecated Use `ProductRest` or `ProductGraphql` exported models instead of `Product`.
  */
-export const random = CompatProductModelBuilder;
-export const presets = modelPresets.compatPresets;
+export const Product = {
+  random: CompatProductModelBuilder,
+  presets: modelPresets.compatPresets,
+  constants,
+};
