@@ -1,5 +1,15 @@
 # @commercetools-test-data/discount-code
 
+## 10.15.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.1
+  - @commercetools-test-data/cart-discount@10.15.1
+  - @commercetools-test-data/commons@10.15.1
+  - @commercetools-test-data/utils@10.15.1
+
 ## 10.15.0
 
 ### Patch Changes

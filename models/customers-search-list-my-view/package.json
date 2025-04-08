@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/customers-search-list-my-view",
-  "version": "10.15.0",
+  "version": "10.15.1",
   "description": "Data model for internal Merchan Center API CustomersSearchListMyView",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "@babel/runtime-corejs3": "^7.17.9",
-    "@commercetools-test-data/commons": "10.15.0",
-    "@commercetools-test-data/core": "10.15.0",
-    "@commercetools-test-data/filter-values": "10.15.0",
-    "@commercetools-test-data/graphql-types": "10.15.0",
-    "@commercetools-test-data/utils": "10.15.0",
+    "@commercetools-test-data/commons": "10.15.1",
+    "@commercetools-test-data/core": "10.15.1",
+    "@commercetools-test-data/filter-values": "10.15.1",
+    "@commercetools-test-data/graphql-types": "10.15.1",
+    "@commercetools-test-data/utils": "10.15.1",
     "@commercetools/platform-sdk": "8.5.0",
     "@faker-js/faker": "^9.0.0"
   }
