@@ -14,7 +14,7 @@ Models are defined in the `models/*` workspace and are grouped by domain in diff
 
 All models are built using the `core` package, which contains the necessary methods to implement and work with models. The `core` package is very much agnostic of the commercetools platform domain, so you can potentially use it to build your own models for other domains.
 
-To know more about how to work and build data models, [check out the documentation of the `core` package](./core).
+To know more about how to work and build data models, take a look at the [models overview](./docs/contributing/test-data-models-overview.md) first and head to the ["Create new model" guideline](./docs/guidelines/creating-new-model.md) as a follow up to learn how to implement a new one.
 
 # Usage
 
