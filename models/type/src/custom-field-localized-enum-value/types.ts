@@ -3,7 +3,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 import {
   TCtpLocalizedEnumValue,
   TCtpLocalizedEnumValueInput,
-} from '../../../../graphql-types/src';
+} from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldLocalizedEnumValue = CustomFieldLocalizedEnumValue;
 export type TCustomFieldLocalizedEnumValueDraft = CustomFieldLocalizedEnumValue;

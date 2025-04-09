@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpLocalizedEnumValue } from '../../../../graphql-types/src';
+import { TCtpLocalizedEnumValue } from '@commercetools-test-data/graphql-types';
 
 export type TLocalizedEnumValue = {
   key: string;

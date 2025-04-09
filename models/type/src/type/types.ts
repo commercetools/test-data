@@ -3,7 +3,7 @@ import type { TBuilder } from '@commercetools-test-data/core';
 import {
   TCtpTypeDefinition,
   TCtpTypeDefinitionDraft,
-} from '../../../../graphql-types/src';
+} from '@commercetools-test-data/graphql-types';
 
 export type TType = Type;
 export type TTypeDraft = TypeDraft;

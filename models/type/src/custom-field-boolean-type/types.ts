@@ -1,6 +1,6 @@
 import type { CustomFieldBooleanType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpBooleanType } from '../../../../graphql-types/src';
+import { TCtpBooleanType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldBooleanType = CustomFieldBooleanType;
 export type TCustomFieldBooleanTypeDraft = CustomFieldBooleanType;

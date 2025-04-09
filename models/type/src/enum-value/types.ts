@@ -1,5 +1,5 @@
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpEnumValue } from '../../../../graphql-types/src';
+import { TCtpEnumValue } from '@commercetools-test-data/graphql-types';
 
 export type TEnumValue = {
   key: string;

@@ -1,6 +1,6 @@
 import type { CustomFieldMoneyType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpMoneyType } from '../../../../graphql-types/src';
+import { TCtpMoneyType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldMoneyType = CustomFieldMoneyType;
 export type TCustomFieldMoneyTypeDraft = CustomFieldMoneyType;

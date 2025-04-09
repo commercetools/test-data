@@ -1,6 +1,6 @@
 import type { CustomFieldReferenceType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpReferenceType } from '../../../../graphql-types/src';
+import { TCtpReferenceType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldReferenceType = CustomFieldReferenceType;
 export type TCustomFieldReferenceTypeDraft = CustomFieldReferenceType;

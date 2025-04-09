@@ -12,7 +12,8 @@ const transformers = {
   graphql: Transformer<TFieldDefinition, TFieldDefinitionGraphql>('graphql', {
     buildFields: ['label', 'type'],
     addFields: ({ fields }) => ({
-      labelAllLocales: LocalizedString.toLocalizedField(fields.label),
+      labelAllLocales:
+        LocalizedString.toLocalizedField(fields.label) ?? undefined,
       __typename: 'FieldDefinition',
     }),
   }),

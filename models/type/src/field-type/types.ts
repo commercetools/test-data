@@ -1,6 +1,6 @@
 import type { FieldType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpFieldType } from '../../../../graphql-types/src';
+import { TCtpFieldType } from '@commercetools-test-data/graphql-types';
 import { TCustomFieldEnumValue } from '../custom-field-enum-value';
 import { TCustomFieldLocalizedEnumValue } from '../custom-field-localized-enum-value';
 
