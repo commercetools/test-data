@@ -37,7 +37,7 @@ describe('builder', () => {
       CustomFieldBooleanType.random(),
       expect.objectContaining({
         name: 'Boolean',
-        __typename: 'BooleanCustomFieldType',
+        __typename: 'BooleanType',
       })
     )
   );

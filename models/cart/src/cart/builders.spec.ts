@@ -125,7 +125,7 @@ const validateGraphqlModel = (model: TCartGraphql) => {
     expect.objectContaining({
       __typename: 'Cart',
       custom: expect.objectContaining({
-        __typename: 'BooleanCustomFieldType',
+        __typename: 'BooleanType',
       }),
       customer: null,
       placement: null,

@@ -1,12 +1,11 @@
 import { CustomFieldSetType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpSetType } from '../../../../graphql-types/src';
 
 export type TCustomFieldSetType = CustomFieldSetType;
 export type TCustomFieldSetTypeDraft = CustomFieldSetType;
 
-export type TCustomFieldSetTypeGraphql = TCustomFieldSetType & {
-  __typename: 'SetCustomFieldType';
-};
+export type TCustomFieldSetTypeGraphql = TCtpSetType;
 export type TCustomFieldSetTypeDraftGraphql = {
   set: {
     elementType: TCustomFieldSetTypeGraphql['elementType'];

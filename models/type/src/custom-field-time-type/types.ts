@@ -1,12 +1,11 @@
 import type { CustomFieldTimeType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpTimeType } from '../../../../graphql-types/src';
 
 export type TCustomFieldTimeType = CustomFieldTimeType;
 export type TCustomFieldTimeTypeDraft = CustomFieldTimeType;
 
-export type TCustomFieldTimeTypeGraphql = CustomFieldTimeType & {
-  __typename: 'TimeCustomFieldType';
-};
+export type TCustomFieldTimeTypeGraphql = TCtpTimeType;
 export type TCustomFieldTimeTypeDraftGraphql = {
   time: {
     dummy: string | null;

@@ -128,7 +128,7 @@ const validateGraphqlModel = (model: TChannelGraphql) => {
       }),
       custom: expect.objectContaining({
         name: 'Boolean',
-        __typename: 'BooleanCustomFieldType',
+        __typename: 'BooleanType',
       }),
       geoLocation: expect.objectContaining({
         __typename: 'Geometry',

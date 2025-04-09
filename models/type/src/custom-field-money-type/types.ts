@@ -1,12 +1,11 @@
 import type { CustomFieldMoneyType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpMoneyType } from '../../../../graphql-types/src';
 
 export type TCustomFieldMoneyType = CustomFieldMoneyType;
 export type TCustomFieldMoneyTypeDraft = CustomFieldMoneyType;
 
-export type TCustomFieldMoneyTypeGraphql = CustomFieldMoneyType & {
-  __typename: 'MoneyCustomFieldType';
-};
+export type TCustomFieldMoneyTypeGraphql = TCtpMoneyType;
 export type TCustomFieldMoneyTypeDraftGraphql = {
   money: {
     dummy: string | null;

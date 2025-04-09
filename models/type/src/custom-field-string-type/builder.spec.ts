@@ -31,7 +31,7 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'String',
-        __typename: 'StringCustomFieldType',
+        __typename: 'StringType',
       })
     )
   );

@@ -3,13 +3,12 @@ import type {
   CustomFieldEnumValue,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpEnumType } from '../../../../graphql-types/src';
 
 export type TCustomFieldEnumType = CustomFieldEnumType;
 export type TCustomFieldEnumTypeDraft = CustomFieldEnumType;
 
-export type TCustomFieldEnumTypeGraphql = CustomFieldEnumType & {
-  __typename: 'EnumType';
-};
+export type TCustomFieldEnumTypeGraphql = TCtpEnumType;
 export type TCustomFieldEnumTypeDraftGraphql = {
   enum: { values: Array<CustomFieldEnumValue> };
 };
