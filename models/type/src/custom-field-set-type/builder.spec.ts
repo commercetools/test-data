@@ -41,7 +41,7 @@ describe('builder', () => {
           name: 'Boolean',
           __typename: 'BooleanType',
         },
-        __typename: 'SetCustomFieldType',
+        __typename: 'SetType',
       })
     )
   );

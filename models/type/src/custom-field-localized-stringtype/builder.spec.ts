@@ -43,7 +43,7 @@ describe('builder', () => {
       CustomFieldLocalizedStringType.random(),
       expect.objectContaining({
         name: 'LocalizedString',
-        __typename: 'LocalizableStringtypeCustomFieldType',
+        __typename: 'LocalizedStringType',
       })
     )
   );
