@@ -1,8 +1,22 @@
-import { TLineItemDraftBuilder } from '../../types';
-import LineItemDraft from '../builder';
+import { TBuilder } from '@commercetools-test-data/core';
+import {
+  TLineItemDraftRest,
+  TLineItemDraftGraphql,
+  TLineItemDraft,
+} from '../../types';
+import {
+  LineItemDraft,
+  LineItemDraftRest,
+  LineItemDraftGraphql,
+} from '../index';
 
-const empty = (): TLineItemDraftBuilder =>
-  LineItemDraft()
+const populatePreset = <
+  TModel extends TLineItemDraftRest | TLineItemDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
+    .key(undefined)
     .productId(undefined)
     .variantId(undefined)
     .sku(undefined)
@@ -16,5 +30,13 @@ const empty = (): TLineItemDraftBuilder =>
     .inventoryMode(undefined)
     .shippingDetails(undefined)
     .custom(undefined);
+};
 
-export default empty;
+export const restPreset = (): TBuilder<TLineItemDraftRest> =>
+  populatePreset(LineItemDraftRest.random());
+
+export const graphqlPreset = (): TBuilder<TLineItemDraftGraphql> =>
+  populatePreset(LineItemDraftGraphql.random());
+
+export const compatPreset = (): TBuilder<TLineItemDraftRest> =>
+  populatePreset(LineItemDraft.random());
