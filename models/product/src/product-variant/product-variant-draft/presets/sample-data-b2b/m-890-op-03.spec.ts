@@ -82,7 +82,6 @@ describe(`with m890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "m890-op-2023",
-        "staged": true,
       }
     `);
   });

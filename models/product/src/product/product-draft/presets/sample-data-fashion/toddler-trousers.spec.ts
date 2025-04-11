@@ -361,7 +361,6 @@ describe(`with toddlerTrousers preset`, () => {
             },
           ],
           "sku": "855484",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -459,7 +458,6 @@ describe(`with toddlerTrousers preset`, () => {
               },
             ],
             "sku": "855485",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -529,7 +527,6 @@ describe(`with toddlerTrousers preset`, () => {
               },
             ],
             "sku": "855486",
-            "staged": true,
           },
         ],
       }

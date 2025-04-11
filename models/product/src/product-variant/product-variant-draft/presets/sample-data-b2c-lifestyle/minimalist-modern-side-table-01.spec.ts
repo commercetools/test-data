@@ -191,7 +191,6 @@ describe(`with minimalistModernSideTable01 preset`, () => {
           },
         ],
         "sku": "MMST-01",
-        "staged": true,
       }
     `);
   });

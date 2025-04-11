@@ -82,7 +82,6 @@ describe(`with u123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "u123-qr-2015",
-        "staged": true,
       }
     `);
   });

@@ -170,7 +170,6 @@ describe(`with serenityQueenBed01 preset`, () => {
           },
         ],
         "sku": "IQB-09",
-        "staged": true,
       }
     `);
   });

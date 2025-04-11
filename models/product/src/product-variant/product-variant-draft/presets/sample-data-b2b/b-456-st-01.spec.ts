@@ -82,7 +82,6 @@ describe(`with b456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "b456-st-2015",
-        "staged": true,
       }
     `);
   });

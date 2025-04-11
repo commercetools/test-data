@@ -96,7 +96,6 @@ describe(`with aaa789Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "aaa789-uv-red",
-        "staged": true,
       }
     `);
   });

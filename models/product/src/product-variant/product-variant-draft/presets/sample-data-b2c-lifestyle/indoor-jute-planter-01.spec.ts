@@ -168,7 +168,6 @@ describe(`with indoorJutePlanter01 preset`, () => {
           },
         ],
         "sku": "IJP-03",
-        "staged": true,
       }
     `);
   });

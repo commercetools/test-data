@@ -176,7 +176,6 @@ describe(`with cocktailStirringSpoon01 preset`, () => {
           },
         ],
         "sku": "SPOO-094",
-        "staged": true,
       }
     `);
   });

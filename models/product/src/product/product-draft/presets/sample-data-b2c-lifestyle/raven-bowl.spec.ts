@@ -265,7 +265,6 @@ describe(`with ravenBowl preset`, () => {
             },
           ],
           "sku": "RB-093",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

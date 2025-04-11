@@ -82,7 +82,6 @@ describe(`with oo789Uv03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "oo789-uv-2023",
-        "staged": true,
       }
     `);
   });

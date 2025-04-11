@@ -273,7 +273,6 @@ describe(`with orionDoubleBed preset`, () => {
             },
           ],
           "sku": "OTB-07",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

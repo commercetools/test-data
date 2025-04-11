@@ -64,7 +64,6 @@ describe(`with hh456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "hh456-st-2023",
-        "staged": true,
       }
     `);
   });

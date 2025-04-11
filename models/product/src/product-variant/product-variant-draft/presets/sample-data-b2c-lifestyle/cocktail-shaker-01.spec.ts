@@ -195,7 +195,6 @@ describe(`with cocktailShaker01 preset`, () => {
           },
         ],
         "sku": "COCT-09",
-        "staged": true,
       }
     `);
   });

@@ -256,7 +256,6 @@ describe(`with benPillowCover preset`, () => {
             },
           ],
           "sku": "LBPC-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

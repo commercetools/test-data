@@ -173,7 +173,6 @@ describe(`with walnutCounterStool01 preset`, () => {
           },
         ],
         "sku": "WCSI-09",
-        "staged": true,
       }
     `);
   });

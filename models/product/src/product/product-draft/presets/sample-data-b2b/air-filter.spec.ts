@@ -166,7 +166,6 @@ describe(`with airFilter preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "air-filter",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

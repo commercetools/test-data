@@ -185,7 +185,6 @@ describe(`with sunnaiGlassBowl02 preset`, () => {
           },
         ],
         "sku": "SGB-02",
-        "staged": true,
       }
     `);
   });
