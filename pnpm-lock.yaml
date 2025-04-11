@@ -158,13 +158,13 @@ importers:
         version: 4.19.2
     devDependencies:
       '@types/lodash':
-        specifier: ^4.17.10
+        specifier: 4.17.16
         version: 4.17.16
       '@types/mustache':
-        specifier: ^4.2.5
+        specifier: 4.2.5
         version: 4.2.5
       '@types/prompts':
-        specifier: ^2.4.9
+        specifier: 2.4.9
         version: 2.4.9
 
   graphql-types: {}
