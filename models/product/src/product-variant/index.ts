@@ -5,9 +5,6 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-export * from './product-variant-draft';
-export * as ProductVariant from '.';
-
 export * from './types';
 
 export const ProductVariantRest = {
@@ -23,5 +20,7 @@ export const ProductVariantGraphql = {
 /**
  * @deprecated Use `ProductVariantRest` or `ProductVariantGraphql` exported models instead of `ProductVariant`.
  */
-export const random = CompatProductVariantModelBuilder;
-export const presets = modelPresets.compatPresets;
+export const ProductVariant = {
+  random: CompatProductVariantModelBuilder,
+  presets: modelPresets.compatPresets,
+};

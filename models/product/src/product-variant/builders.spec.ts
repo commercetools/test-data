@@ -63,7 +63,12 @@ const validateGraphqlModel = (
         }),
       ]),
       sku: expect.any(String),
-      attributesRaw: [],
+      attributesRaw: expect.arrayContaining([
+        expect.objectContaining({
+          name: expect.any(String),
+          __typename: 'RawProductAttribute',
+        }),
+      ]),
       __typename: 'ProductVariant',
     })
   );

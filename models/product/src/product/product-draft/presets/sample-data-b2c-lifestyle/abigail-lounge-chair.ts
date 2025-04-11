@@ -15,7 +15,7 @@ import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
 } from '@commercetools-test-data/tax-category';
-import { ProductVariantDraft } from '../../../../product-variant';
+import { ProductVariantDraft } from '../../../../product-variant/product-variant-draft';
 import type { TProductDraft } from '../../../types';
 import { ProductDraft } from '../../index';
 
