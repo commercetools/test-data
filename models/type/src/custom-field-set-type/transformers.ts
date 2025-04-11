@@ -17,7 +17,7 @@ const transformers = {
     {
       buildFields: ['elementType'],
       addFields: () => ({
-        __typename: 'SetCustomFieldType',
+        __typename: 'SetType',
       }),
     }
   ),

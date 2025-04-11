@@ -1,23 +1,12 @@
 import { CustomFieldLocalizedEnumType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import {
-  TCustomFieldLocalizedEnumValueDraftGraphql,
-  TCustomFieldLocalizedEnumValueGraphql,
-} from '../custom-field-localized-enum-value';
+import { TCtpLocalizedEnumType } from '@commercetools-test-data/graphql-types';
+import { TCustomFieldLocalizedEnumValueDraftGraphql } from '../custom-field-localized-enum-value';
 
 export type TCustomFieldLocalizedEnumType = CustomFieldLocalizedEnumType;
 export type TCustomFieldLocalizedEnumTypeDraft = CustomFieldLocalizedEnumType;
 
-export type TCustomFieldLocalizedEnumTypeGraphql = Omit<
-  TCustomFieldLocalizedEnumType,
-  'values'
-> & {
-  values: {
-    results: Array<TCustomFieldLocalizedEnumValueGraphql>;
-    __typename: 'LocalizableEnumValueTypeResult';
-  };
-  __typename: 'LocalizableEnumCustomFieldType';
-};
+export type TCustomFieldLocalizedEnumTypeGraphql = TCtpLocalizedEnumType;
 
 export type TCustomFieldLocalizedEnumTypeDraftGraphql = {
   lenum: {

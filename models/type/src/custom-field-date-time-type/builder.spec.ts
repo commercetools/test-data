@@ -37,7 +37,7 @@ describe('builder', () => {
       AttributeEnumType.random(),
       expect.objectContaining({
         name: 'DateTime',
-        __typename: 'DateTimeCustomFieldType',
+        __typename: 'DateTimeType',
       })
     )
   );

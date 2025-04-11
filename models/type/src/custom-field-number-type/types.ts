@@ -1,12 +1,11 @@
 import type { CustomFieldNumberType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpNumberType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldNumberType = CustomFieldNumberType;
 export type TCustomFieldNumberTypeDraft = CustomFieldNumberType;
 
-export type TCustomFieldNumberTypeGraphql = CustomFieldNumberType & {
-  __typename: 'NumberCustomFieldType';
-};
+export type TCustomFieldNumberTypeGraphql = TCtpNumberType;
 export type TCustomFieldNumberTypeDraftGraphql = {
   number: {
     dummy: string | null;

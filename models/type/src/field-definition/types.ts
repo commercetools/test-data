@@ -1,26 +1,17 @@
 import { FieldDefinition } from '@commercetools/platform-sdk';
-import {
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
+import {
+  TCtpFieldDefinition,
+  TCtpFieldDefinitionInput,
+} from '@commercetools-test-data/graphql-types';
 
 export type TFieldDefinition = FieldDefinition;
 
 export type TFieldDefinitionDraft = FieldDefinition;
 
-export type TFieldDefinitionGraphql = TFieldDefinition & {
-  labelAllLocales: TLocalizedStringGraphql | null;
-  __typename: 'FieldDefinition';
-};
+export type TFieldDefinitionGraphql = TCtpFieldDefinition;
 
-export type TFieldDefinitionDraftGraphql = Omit<
-  TFieldDefinitionDraft,
-  'label' | 'inputHint'
-> & {
-  label: TLocalizedStringDraftGraphql;
-  inputHint?: TLocalizedStringDraftGraphql | null;
-};
+export type TFieldDefinitionDraftGraphql = TCtpFieldDefinitionInput;
 
 export type TFieldDefinitionBuilder = TBuilder<TFieldDefinition>;
 

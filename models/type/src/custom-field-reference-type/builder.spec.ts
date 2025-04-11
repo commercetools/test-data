@@ -40,7 +40,7 @@ describe('builder', () => {
       expect.objectContaining({
         name: 'Reference',
         referenceTypeId: expect.any(String),
-        __typename: 'ReferenceCustomFieldType',
+        __typename: 'ReferenceType',
       })
     )
   );

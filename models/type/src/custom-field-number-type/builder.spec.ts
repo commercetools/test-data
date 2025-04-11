@@ -31,7 +31,7 @@ describe('builder', () => {
       CustomFieldNumberType.random(),
       expect.objectContaining({
         name: 'Number',
-        __typename: 'NumberCustomFieldType',
+        __typename: 'NumberType',
       })
     )
   );

@@ -1455,6 +1455,9 @@ importers:
       '@commercetools-test-data/core':
         specifier: 10.15.1
         version: link:../../core
+      '@commercetools-test-data/graphql-types':
+        specifier: 10.15.1
+        version: link:../../graphql-types
       '@commercetools-test-data/utils':
         specifier: 10.15.1
         version: link:../../utils

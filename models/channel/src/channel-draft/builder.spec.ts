@@ -52,7 +52,7 @@ describe('ChannelDraft builder', () => {
         }),
         custom: expect.objectContaining({
           name: 'Boolean',
-          __typename: 'BooleanCustomFieldType',
+          __typename: 'BooleanType',
         }),
         geoLocation: expect.objectContaining({
           type: 'Point',
@@ -109,7 +109,7 @@ describe('ChannelDraft compatibility builder', () => {
         }),
         custom: expect.objectContaining({
           name: 'Boolean',
-          __typename: 'BooleanCustomFieldType',
+          __typename: 'BooleanType',
         }),
         geoLocation: expect.objectContaining({
           type: 'Point',

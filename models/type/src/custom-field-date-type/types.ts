@@ -1,12 +1,11 @@
 import type { CustomFieldDateType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpDateType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldDateType = CustomFieldDateType;
 export type TCustomFieldDateTypeDraft = CustomFieldDateType;
 
-export type TCustomFieldDateTypeGraphql = CustomFieldDateType & {
-  __typename: 'DateCustomFieldType';
-};
+export type TCustomFieldDateTypeGraphql = TCtpDateType;
 export type TCustomFieldDateTypeDraftGraphql = {
   date: {
     dummy: string | null;

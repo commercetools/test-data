@@ -20,7 +20,7 @@ const transformers = {
   >('graphql', {
     buildFields: [],
     addFields: () => ({
-      __typename: 'LocalizableStringtypeCustomFieldType',
+      __typename: 'LocalizedStringType',
     }),
   }),
 };

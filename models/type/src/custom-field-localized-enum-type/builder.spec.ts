@@ -60,23 +60,20 @@ describe('builder', () => {
       CustomFieldLocalizedEnumType.random(),
       expect.objectContaining({
         name: 'lenum',
-        values: expect.objectContaining({
-          results: [
-            expect.objectContaining({
-              key: expect.any(String),
-              labelAllLocales: expect.arrayContaining([
-                expect.objectContaining({
-                  locale: 'en',
-                  value: expect.any(String),
-                  __typename: 'LocalizedString',
-                }),
-              ]),
-              __typename: 'LocalizedEnumValue',
-            }),
-          ],
-          __typename: 'LocalizableEnumValueTypeResult',
-        }),
-        __typename: 'LocalizableEnumCustomFieldType',
+        values: [
+          {
+            key: expect.any(String),
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                locale: 'en',
+                value: expect.any(String),
+                __typename: 'LocalizedString',
+              }),
+            ]),
+            __typename: 'LocalizedEnumValue',
+          },
+        ],
+        __typename: 'LocalizedEnumType',
       })
     )
   );
