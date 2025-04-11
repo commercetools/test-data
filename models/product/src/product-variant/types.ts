@@ -5,8 +5,8 @@ import {
 import type { TBuilder } from '@commercetools-test-data/core';
 
 import {
-  TCtpAddProductVariant,
   TCtpProductVariant,
+  TCtpProductVariantInput,
 } from '@commercetools-test-data/graphql-types';
 
 /**
@@ -22,7 +22,7 @@ export type TProductVariantRest = ProductVariant;
 export type TProductVariantDraftRest = ProductVariantDraft;
 
 export type TProductVariantGraphql = TCtpProductVariant;
-export type TProductVariantDraftGraphql = TCtpAddProductVariant;
+export type TProductVariantDraftGraphql = TCtpProductVariantInput;
 
 export type TCreateProductVariantBuilder<
   TProductVariantModel extends
