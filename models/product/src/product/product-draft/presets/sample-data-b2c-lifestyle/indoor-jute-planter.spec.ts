@@ -335,7 +335,6 @@ describe(`with indoorJutePlanter preset`, () => {
             },
           ],
           "sku": "IJP-03",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -458,7 +457,6 @@ describe(`with indoorJutePlanter preset`, () => {
               },
             ],
             "sku": "IJP-04",
-            "staged": true,
           },
         ],
       }

@@ -46,7 +46,6 @@ describe(`with hydraulicHose01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "hydraulic-hose",
-        "staged": true,
       }
     `);
   });

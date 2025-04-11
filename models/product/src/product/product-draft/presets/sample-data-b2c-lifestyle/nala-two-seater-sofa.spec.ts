@@ -916,7 +916,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
           ],
           "sku": "NTSS-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -1055,7 +1054,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTSS-02",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1150,7 +1148,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTSS-03",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1237,7 +1234,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTTS-04",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1332,7 +1328,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTSS-05",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1419,7 +1414,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTSS-06",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1506,7 +1500,6 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
             ],
             "sku": "NTSS-07",
-            "staged": true,
           },
         ],
       }
