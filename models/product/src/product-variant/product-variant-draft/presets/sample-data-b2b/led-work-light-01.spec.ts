@@ -45,7 +45,6 @@ describe(`with ledWorkLight01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "led-work-light",
-        "staged": true,
       }
     `);
   });

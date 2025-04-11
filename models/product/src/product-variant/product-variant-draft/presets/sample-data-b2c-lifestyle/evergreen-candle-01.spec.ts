@@ -193,7 +193,6 @@ describe(`with evergreenCandle01 preset`, () => {
           },
         ],
         "sku": "EC-0993",
-        "staged": true,
       }
     `);
   });

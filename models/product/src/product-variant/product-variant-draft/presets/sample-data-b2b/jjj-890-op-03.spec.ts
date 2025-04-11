@@ -96,7 +96,6 @@ describe(`with jjj890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "jjj890-op-green",
-        "staged": true,
       }
     `);
   });

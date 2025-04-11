@@ -239,7 +239,6 @@ describe(`with juteRug01 preset`, () => {
           },
         ],
         "sku": "JAR-08",
-        "staged": true,
       }
     `);
   });

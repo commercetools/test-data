@@ -82,7 +82,6 @@ describe(`with j234Wx01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "j234-wx-2015",
-        "staged": true,
       }
     `);
   });

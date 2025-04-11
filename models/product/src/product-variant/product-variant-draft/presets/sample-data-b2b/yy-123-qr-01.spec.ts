@@ -96,7 +96,6 @@ describe(`with yy123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "yy123-qr-red",
-        "staged": true,
       }
     `);
   });

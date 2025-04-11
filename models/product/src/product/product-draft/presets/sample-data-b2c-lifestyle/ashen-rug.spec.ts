@@ -276,7 +276,6 @@ describe(`with ashenRug preset`, () => {
             },
           ],
           "sku": "ARG-56",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

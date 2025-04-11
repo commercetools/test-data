@@ -24,6 +24,5 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantDraftGraphql
   {
     fields: {
       ...commonFieldsConfig,
-      staged: fake(() => true),
     },
   };

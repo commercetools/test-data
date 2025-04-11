@@ -82,7 +82,6 @@ describe(`with f890Op01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "f890-op-2015",
-        "staged": true,
       }
     `);
   });

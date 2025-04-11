@@ -82,7 +82,6 @@ describe(`with kk567Yz01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "kk567-yz-2015",
-        "staged": true,
       }
     `);
   });

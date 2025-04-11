@@ -193,7 +193,6 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
           },
         ],
         "sku": "CNS-0434",
-        "staged": true,
       }
     `);
   });

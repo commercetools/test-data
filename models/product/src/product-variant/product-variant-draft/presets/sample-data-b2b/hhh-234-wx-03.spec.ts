@@ -96,7 +96,6 @@ describe(`with hhh234Wx03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "hhh234-wx-green",
-        "staged": true,
       }
     `);
   });

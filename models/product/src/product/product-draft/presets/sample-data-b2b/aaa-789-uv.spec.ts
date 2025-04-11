@@ -320,7 +320,6 @@ describe(`with aaa789Uv preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "aaa789-uv-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with aaa789Uv preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "aaa789-uv-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with aaa789Uv preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "aaa789-uv-green",
-            "staged": true,
           },
         ],
       }

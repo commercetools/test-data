@@ -270,7 +270,6 @@ describe(`with leahArmchair preset`, () => {
             },
           ],
           "sku": "LAMR-03",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

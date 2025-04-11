@@ -82,7 +82,6 @@ describe(`with dd234Wx03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "dd234-wx-2023",
-        "staged": true,
       }
     `);
   });

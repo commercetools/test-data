@@ -258,7 +258,6 @@ describe(`with serenityQueenBed preset`, () => {
             },
           ],
           "sku": "IQB-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

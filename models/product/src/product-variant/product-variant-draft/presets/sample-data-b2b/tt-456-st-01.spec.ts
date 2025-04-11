@@ -96,7 +96,6 @@ describe(`with tt456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "tt456-st-red",
-        "staged": true,
       }
     `);
   });

@@ -260,7 +260,6 @@ describe(`with iceBucket preset`, () => {
             },
           ],
           "sku": "BUCK-023",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -342,7 +342,6 @@ describe(`with patternedPillowCover preset`, () => {
             },
           ],
           "sku": "ADPC-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -469,7 +468,6 @@ describe(`with patternedPillowCover preset`, () => {
               },
             ],
             "sku": "ADPC-7",
-            "staged": true,
           },
         ],
       }

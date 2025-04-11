@@ -278,7 +278,6 @@ describe(`with r123Ts preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "r123-ts-2015",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -413,7 +412,6 @@ describe(`with r123Ts preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "r123-ts-2019",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -448,7 +446,6 @@ describe(`with r123Ts preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "r123-ts-2023",
-            "staged": true,
           },
         ],
       }

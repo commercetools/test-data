@@ -169,7 +169,6 @@ describe(`with sandTeaCup01 preset`, () => {
           },
         ],
         "sku": "STM-09",
-        "staged": true,
       }
     `);
   });

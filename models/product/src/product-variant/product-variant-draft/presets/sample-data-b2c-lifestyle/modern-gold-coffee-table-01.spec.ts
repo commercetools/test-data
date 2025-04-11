@@ -248,7 +248,6 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
         ],
         "sku": "GMCT-01",
-        "staged": true,
       }
     `);
   });

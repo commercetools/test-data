@@ -165,7 +165,6 @@ describe(`with denimJacketVariant02 preset`, () => {
           },
         ],
         "sku": "996025",
-        "staged": true,
       }
     `);
   });

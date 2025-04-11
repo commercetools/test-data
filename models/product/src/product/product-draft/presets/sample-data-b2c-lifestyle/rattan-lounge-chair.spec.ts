@@ -286,7 +286,6 @@ describe(`with rattanLoungeChair preset`, () => {
             },
           ],
           "sku": "RLC-08",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

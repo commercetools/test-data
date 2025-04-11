@@ -82,7 +82,6 @@ describe(`with w789Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "w789-uv-2015",
-        "staged": true,
       }
     `);
   });

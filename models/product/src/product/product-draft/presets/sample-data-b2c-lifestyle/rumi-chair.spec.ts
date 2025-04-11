@@ -269,7 +269,6 @@ describe(`with rumiChair preset`, () => {
             },
           ],
           "sku": "RAM-094",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

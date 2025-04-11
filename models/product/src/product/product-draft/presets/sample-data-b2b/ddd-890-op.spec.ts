@@ -320,7 +320,6 @@ describe(`with ddd890Op preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "ddd890-op-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with ddd890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ddd890-op-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with ddd890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ddd890-op-green",
-            "staged": true,
           },
         ],
       }

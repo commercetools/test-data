@@ -220,7 +220,6 @@ describe(`with ariaRug01 preset`, () => {
           },
         ],
         "sku": "AAR-34",
-        "staged": true,
       }
     `);
   });

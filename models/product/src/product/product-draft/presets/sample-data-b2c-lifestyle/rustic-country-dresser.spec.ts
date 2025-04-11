@@ -313,7 +313,6 @@ describe(`with rusticCountryDresser preset`, () => {
             },
           ],
           "sku": "RCD-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

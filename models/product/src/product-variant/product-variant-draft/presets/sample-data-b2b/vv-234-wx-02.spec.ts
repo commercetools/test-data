@@ -96,7 +96,6 @@ describe(`with vv234Wx02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "vv234-wx-blue",
-        "staged": true,
       }
     `);
   });

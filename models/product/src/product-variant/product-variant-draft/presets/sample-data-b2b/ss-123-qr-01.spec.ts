@@ -96,7 +96,6 @@ describe(`with ss123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ss123-qr-red",
-        "staged": true,
       }
     `);
   });

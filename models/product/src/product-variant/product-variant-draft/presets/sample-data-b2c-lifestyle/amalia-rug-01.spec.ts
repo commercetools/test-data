@@ -169,7 +169,6 @@ describe(`with amaliaRug01 preset`, () => {
           },
         ],
         "sku": "AMR-09",
-        "staged": true,
       }
     `);
   });

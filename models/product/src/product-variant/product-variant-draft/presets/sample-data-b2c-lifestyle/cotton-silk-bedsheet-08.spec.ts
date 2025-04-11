@@ -189,7 +189,6 @@ describe(`with cottonSilkBedsheet08 preset`, () => {
           },
         ],
         "sku": "CSKG-023",
-        "staged": true,
       }
     `);
   });

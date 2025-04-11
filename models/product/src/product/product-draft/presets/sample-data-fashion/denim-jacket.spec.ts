@@ -321,7 +321,6 @@ describe(`with denimJacket preset`, () => {
             },
           ],
           "sku": "996024",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -428,7 +427,6 @@ describe(`with denimJacket preset`, () => {
               },
             ],
             "sku": "996025",
-            "staged": true,
           },
         ],
       }

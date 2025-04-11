@@ -181,7 +181,6 @@ describe(`with brunoChair preset`, () => {
           },
         ],
         "sku": "BARM-03",
-        "staged": true,
       }
     `);
   });

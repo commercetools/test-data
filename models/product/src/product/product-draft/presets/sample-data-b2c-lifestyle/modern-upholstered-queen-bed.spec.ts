@@ -293,7 +293,6 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
           ],
           "sku": "MUQB-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

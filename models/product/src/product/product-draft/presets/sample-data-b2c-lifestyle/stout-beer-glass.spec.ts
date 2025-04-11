@@ -270,7 +270,6 @@ describe(`with stoutBeerGlass preset`, () => {
             },
           ],
           "sku": "SBG-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

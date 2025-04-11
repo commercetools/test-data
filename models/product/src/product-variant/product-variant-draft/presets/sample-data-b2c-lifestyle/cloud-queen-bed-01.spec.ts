@@ -186,7 +186,6 @@ describe(`with cloudQueenBed01 preset`, () => {
           },
         ],
         "sku": "CQB-09",
-        "staged": true,
       }
     `);
   });

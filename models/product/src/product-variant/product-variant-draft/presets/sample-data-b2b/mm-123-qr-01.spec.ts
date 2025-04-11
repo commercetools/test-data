@@ -82,7 +82,6 @@ describe(`with mm123Qr01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "mm123-qr-2015",
-        "staged": true,
       }
     `);
   });

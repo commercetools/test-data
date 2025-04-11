@@ -244,7 +244,6 @@ describe(`with classicChampagneGlasses01 preset`, () => {
           },
         ],
         "sku": "CCG-01",
-        "staged": true,
       }
     `);
   });

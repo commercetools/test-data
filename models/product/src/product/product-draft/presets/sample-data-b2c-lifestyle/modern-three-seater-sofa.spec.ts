@@ -341,7 +341,6 @@ describe(`with modernThreeSeaterSofa preset`, () => {
             },
           ],
           "sku": "MTSS-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

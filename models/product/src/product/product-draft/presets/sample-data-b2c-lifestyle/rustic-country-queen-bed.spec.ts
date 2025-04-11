@@ -285,7 +285,6 @@ describe(`with rusticCountryQueenBed preset`, () => {
             },
           ],
           "sku": "RCQB-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
