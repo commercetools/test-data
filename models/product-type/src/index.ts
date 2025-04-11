@@ -17,8 +17,8 @@ export * from './attribute-date-time-type/types';
 export * from './product-type/types';
 
 // Export models
-export * as AttributeBooleanType from './attribute-boolean-type';
-export * as AttributeBooleanTypeDraft from './attribute-boolean-type/attribute-boolean-type-draft';
+export * from './attribute-boolean-type';
+export * from './attribute-boolean-type/attribute-boolean-type-draft';
 export * as AttributeDefinition from './attribute-definition';
 export * as AttributeDefinitionDraft from './attribute-definition/attribute-definition-draft';
 export * as AttributePlainEnumValue from './attribute-plain-enum-value';

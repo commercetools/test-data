@@ -1,5 +1,5 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
-import AttributeBooleanType from '../../attribute-boolean-type/builder';
+import { AttributeBooleanType } from '../../attribute-boolean-type';
 import * as AttributeDefinition from '../../attribute-definition';
 import AttributeTextType from '../../attribute-text-type/builder';
 import ProductType from '../builder';
@@ -21,7 +21,7 @@ const milk = (): TProductTypeBuilder =>
         .inputHint('MultiLine')
         .isRequired(true)
         .isSearchable(true)
-        .type(AttributeBooleanType()),
+        .type(AttributeBooleanType.random()),
       AttributeDefinition.random()
         .attributeConstraint('SameForAll')
         .name('cow-name')
