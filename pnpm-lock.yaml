@@ -18,11 +18,11 @@ importers:
         specifier: 2.27.11
         version: 2.27.11
       '@commercetools-frontend/babel-preset-mc-app':
-        specifier: 22.38.3
-        version: 22.38.3
+        specifier: 23.2.2
+        version: 23.2.2
       '@commercetools-frontend/eslint-config-mc-app':
-        specifier: 22.38.3
-        version: 22.38.3(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.14)(babel-plugin-macros@3.1.0))
+        specifier: 23.2.2
+        version: 23.2.2(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.14)(babel-plugin-macros@3.1.0))
       '@commitlint/cli':
         specifier: 19.6.1
         version: 19.6.1(@types/node@20.17.14)(typescript@5.7.3)
@@ -454,11 +454,11 @@ importers:
         specifier: ^7.17.9
         version: 7.26.0
       '@commercetools-frontend/application-config':
-        specifier: ^22.10.0
-        version: 22.42.1(@types/node@22.13.14)(typescript@5.7.3)
+        specifier: ^23.0.0
+        version: 23.2.2(@types/node@22.13.14)(typescript@5.7.3)
       '@commercetools-frontend/constants':
-        specifier: ^22.10.0
-        version: 22.42.1
+        specifier: ^23.0.0
+        version: 23.2.2
       '@commercetools-test-data/commons':
         specifier: 10.15.3
         version: link:../commons
@@ -517,11 +517,11 @@ importers:
         specifier: ^7.17.9
         version: 7.26.0
       '@commercetools-frontend/application-config':
-        specifier: ^22.10.0
-        version: 22.42.1(@types/node@22.13.14)(typescript@5.7.3)
+        specifier: ^23.0.0
+        version: 23.2.2(@types/node@22.13.14)(typescript@5.7.3)
       '@commercetools-frontend/constants':
-        specifier: ^22.10.0
-        version: 22.42.1
+        specifier: ^23.0.0
+        version: 23.2.2
       '@commercetools-test-data/commons':
         specifier: 10.15.3
         version: link:../commons
@@ -2261,20 +2261,20 @@ packages:
   '@changesets/write@0.3.2':
     resolution: {integrity: sha512-kDxDrPNpUgsjDbWBvUo27PzKX4gqeKOlhibaOXDJA6kuBisGqNHv/HwGJrAu8U/dSf8ZEFIeHIPtvSlZI1kULw==}
 
-  '@commercetools-frontend/application-config@22.42.1':
-    resolution: {integrity: sha512-xt0qVpwpmMflRvea2NtE4/wrdADGrmCpHxSPu+3m1RxgVpSPG974mgprYxbR+O2YmXRaYDFy2ErCPVfvyZJ8cw==}
-    engines: {node: 16.x || >=18.0.0}
+  '@commercetools-frontend/application-config@23.2.2':
+    resolution: {integrity: sha512-OvueyiHC/mp5cN9XWomrZClbkH0WVPtGbEnXpVegXb2roaBOrFASm0JkqImgTmaGJ+7+7GF50E+GmhliE6fsUg==}
+    engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/babel-preset-mc-app@22.38.3':
-    resolution: {integrity: sha512-DLVzxnAznAxBiKOcPhqp6PiOS4lL5l2nO4mcJZ+zT9VZWI/W2L5Kr/j3fVD/4bmlZBSmtNE7ylCFykWgsis8jQ==}
-    engines: {node: 16.x || >=18.0.0}
+  '@commercetools-frontend/babel-preset-mc-app@23.2.2':
+    resolution: {integrity: sha512-Yj9gHVrXylTIMFvO+2MatqP45elEQCXqkdHjEu5C07imIyOLq2DIi847J50if1/ZV2Rb56nA9G2gOFJ120SbYQ==}
+    engines: {node: 18.x || 20.x || >=22.0.0}
 
-  '@commercetools-frontend/constants@22.42.1':
-    resolution: {integrity: sha512-6+CfJwqbaiF79Y5GlmNiIS320Q/2AwFnkap8Q60a5mUeLwxEC9yT5Pz/KHFdrta9IeZRm8rH2QADyUz8KNz6PA==}
+  '@commercetools-frontend/constants@23.2.2':
+    resolution: {integrity: sha512-i9QpgETWLaqBLz3pCwVWj+A18310xA2f5fdR8uTptXOiaze5jJkoJOIXkeihi6ELAcki6TiAYutK6xSV0/0CIg==}
 
-  '@commercetools-frontend/eslint-config-mc-app@22.38.3':
-    resolution: {integrity: sha512-bRxRqFA4G1BsLlu2GGoKmbV6XFYViCh4K0gl3jQ0AL87XA+yzLuX0wv7ESAQVv1wqJNMLDHqZfkRTFN63SwntQ==}
-    engines: {node: 16.x || >=18.0.0}
+  '@commercetools-frontend/eslint-config-mc-app@23.2.2':
+    resolution: {integrity: sha512-4XSCmPfi8yd5SU8Th44Lx6ldhCQRityXwt0Tx4B8GsPae2zPJSjeP6wi4/xF8UNHXXdrBSgPQfwkORtzmaXZKg==}
+    engines: {node: 18.x || 20.x || >=22.0.0}
     peerDependencies:
       eslint: 8.x
 
@@ -3149,9 +3149,6 @@ packages:
 
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
-
-  '@types/dompurify@2.4.0':
-    resolution: {integrity: sha512-IDBwO5IZhrKvHFUl+clZxgf3hn2b/lU6H1KaBShPkQyGJUQ0xwebezIPSuiyGwfz1UzJWQl4M7BDxtHtCCPlTg==}
 
   '@types/eslint@8.56.12':
     resolution: {integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==}
@@ -4075,8 +4072,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  dompurify@2.5.8:
-    resolution: {integrity: sha512-o1vSNgrmYMQObbSSvF/1brBYEQPHhV1+gsmrusO7/GXtp1T9rCS8cXFqVxK/9crT1jA6Ccv+5MTSjBNqr7Sovw==}
+  dompurify@3.2.5:
+    resolution: {integrity: sha512-mLPd29uoRe9HpvwP2TxClGQBzGXeEC/we/q+bFlmPPmj2p2Ugl3r6ATu/UU1v77DXNcehiBg9zsr1dREyA/dJQ==}
 
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
@@ -7783,21 +7780,20 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@commercetools-frontend/application-config@22.42.1(@types/node@22.13.14)(typescript@5.7.3)':
+  '@commercetools-frontend/application-config@23.2.2(@types/node@22.13.14)(typescript@5.7.3)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/register': 7.25.9(@babel/core@7.26.10)
       '@babel/runtime': 7.26.0
       '@babel/runtime-corejs3': 7.26.0
-      '@commercetools-frontend/constants': 22.42.1
-      '@types/dompurify': 2.4.0
+      '@commercetools-frontend/constants': 23.2.2
       '@types/lodash': 4.17.16
       '@types/react': 17.0.85
       ajv: 8.16.0
       core-js: 3.41.0
       cosmiconfig: 9.0.0(typescript@5.7.3)
       cosmiconfig-typescript-loader: 6.1.0(@types/node@22.13.14)(cosmiconfig@9.0.0(typescript@5.7.3))(typescript@5.7.3)
-      dompurify: 2.5.8
+      dompurify: 3.2.5
       jsdom: 21.1.2
       lodash: 4.17.21
       omit-empty-es: 1.2.0
@@ -7809,7 +7805,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@commercetools-frontend/babel-preset-mc-app@22.38.3':
+  '@commercetools-frontend/babel-preset-mc-app@23.2.2':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-proposal-do-expressions': 7.25.9(@babel/core@7.26.10)
@@ -7841,16 +7837,16 @@ snapshots:
       - supports-color
       - ts-jest
 
-  '@commercetools-frontend/constants@22.42.1':
+  '@commercetools-frontend/constants@23.2.2':
     dependencies:
       '@babel/runtime': 7.26.0
       '@babel/runtime-corejs3': 7.26.0
 
-  '@commercetools-frontend/eslint-config-mc-app@22.38.3(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.14)(babel-plugin-macros@3.1.0))':
+  '@commercetools-frontend/eslint-config-mc-app@23.2.2(eslint@8.57.1)(jest@29.7.0(@types/node@20.17.14)(babel-plugin-macros@3.1.0))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/eslint-parser': 7.27.0(@babel/core@7.26.10)(eslint@8.57.1)
-      '@commercetools-frontend/babel-preset-mc-app': 22.38.3
+      '@commercetools-frontend/babel-preset-mc-app': 23.2.2
       '@rushstack/eslint-patch': 1.11.0
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.7.3))(eslint@8.57.1)(typescript@5.7.3)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.1)(typescript@5.7.3)
@@ -8654,7 +8650,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.10.0)':
     dependencies:
       graphql: 16.10.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/prisma-loader@8.0.17(@types/node@20.17.14)(graphql@16.10.0)':
     dependencies:
@@ -8689,7 +8685,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.3(graphql@16.10.0)
       '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
       graphql: 16.10.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
 
@@ -8735,7 +8731,7 @@ snapshots:
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
       graphql: 16.10.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/wrap@10.0.34(graphql@16.10.0)':
     dependencies:
@@ -9207,10 +9203,6 @@ snapshots:
     dependencies:
       '@types/node': 20.17.14
 
-  '@types/dompurify@2.4.0':
-    dependencies:
-      '@types/trusted-types': 2.0.7
-
   '@types/eslint@8.56.12':
     dependencies:
       '@types/estree': 1.0.7
@@ -9288,7 +9280,8 @@ snapshots:
 
   '@types/stack-utils@2.0.3': {}
 
-  '@types/trusted-types@2.0.7': {}
+  '@types/trusted-types@2.0.7':
+    optional: true
 
   '@types/ws@8.18.0':
     dependencies:
@@ -9861,7 +9854,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -9872,7 +9865,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   chalk@4.1.2:
@@ -9908,7 +9901,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   char-regex@1.0.2: {}
 
@@ -10001,7 +9994,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case: 2.0.2
 
   conventional-changelog-angular@7.0.0:
@@ -10239,12 +10232,14 @@ snapshots:
     dependencies:
       webidl-conversions: 7.0.0
 
-  dompurify@2.5.8: {}
+  dompurify@3.2.5:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
 
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -11035,7 +11030,7 @@ snapshots:
   graphql-tag@2.12.6(graphql@16.10.0):
     dependencies:
       graphql: 16.10.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   graphql-ws@6.0.4(graphql@16.10.0)(ws@8.18.1):
     dependencies:
@@ -11078,7 +11073,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   html-encoding-sniffer@3.0.0:
     dependencies:
@@ -11299,7 +11294,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-map@2.0.3: {}
 
@@ -11378,7 +11373,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-weakmap@2.0.2: {}
 
@@ -12062,11 +12057,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lru-cache@5.1.1:
     dependencies:
@@ -12149,7 +12144,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   node-domexception@1.0.0: {}
 
@@ -12356,7 +12351,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -12391,12 +12386,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -12706,7 +12701,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   set-function-length@1.2.2:
@@ -12810,7 +12805,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   source-map-support@0.5.13:
     dependencies:
@@ -12837,7 +12832,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sprintf-js@1.0.3: {}
 
@@ -12975,7 +12970,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   symbol-tree@3.2.4: {}
 
@@ -13019,7 +13014,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   tmp@0.0.33:
     dependencies:
@@ -13191,11 +13186,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uri-js@4.4.1:
     dependencies:
