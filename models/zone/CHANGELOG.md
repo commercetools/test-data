@@ -1,5 +1,14 @@
 # @commercetools-test-data/zone
 
+## 10.15.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/commons@10.15.2
+  - @commercetools-test-data/core@10.15.2
+  - @commercetools-test-data/utils@10.15.2
+
 ## 10.15.1
 
 ### Patch Changes
