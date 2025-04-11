@@ -51,6 +51,21 @@ export const restFieldsConfig: TModelFieldsConfig<TProductRest> = {
         .obj(TaxCategory.random().id(taxCategoryId));
     }),
   },
+  postBuild: (model) => {
+    const result = { ...model };
+    // This is required because the 'productType' prop has a different type for REST and GraphQL
+    // and compatibility presets can use just one value for it. We decided to use the GraphQL
+    // one so here we check whether the productType has the GraphQL shape and convert it to
+    // REST (it should be a reference) if needed.
+    if (model.productType && !model.productType.typeId) {
+      result.productType = ReferenceRest.presets
+        .productTypeReference()
+        .id(model.productType.id)
+        .obj(model.productType)
+        .build();
+    }
+    return result;
+  },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductGraphql> = {
   fields: {

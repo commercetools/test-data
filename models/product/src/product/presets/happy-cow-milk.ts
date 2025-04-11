@@ -27,6 +27,6 @@ export const graphqlPreset = (): TBuilder<TProductGraphql> => {
 
 export const compatPreset = (): TBuilder<TProduct> => {
   return populatePreset(Product.random()).productType(
-    ReferenceRest.presets.productTypeReference().obj(ProductType.presets.milk())
+    ProductType.presets.milk()
   );
 };
