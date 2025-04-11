@@ -281,7 +281,6 @@ describe(`with ivoryPlate preset`, () => {
             },
           ],
           "sku": "ISP-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

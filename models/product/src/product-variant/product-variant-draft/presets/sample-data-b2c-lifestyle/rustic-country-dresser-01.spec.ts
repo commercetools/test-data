@@ -224,7 +224,6 @@ describe(`with rusticCountryDresser01 preset`, () => {
           },
         ],
         "sku": "RCD-01",
-        "staged": true,
       }
     `);
   });

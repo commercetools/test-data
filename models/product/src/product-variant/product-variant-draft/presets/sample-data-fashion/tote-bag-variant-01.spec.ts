@@ -125,7 +125,6 @@ describe(`with toteBagVariant01 preset`, () => {
           },
         ],
         "sku": "718289",
-        "staged": true,
       }
     `);
   });

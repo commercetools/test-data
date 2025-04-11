@@ -282,7 +282,6 @@ describe(`with modernBookcase preset`, () => {
             },
           ],
           "sku": "MB-0973",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

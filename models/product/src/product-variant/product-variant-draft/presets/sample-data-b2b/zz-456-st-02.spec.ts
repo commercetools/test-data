@@ -96,7 +96,6 @@ describe(`with zz456St02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "zz456-st-blue",
-        "staged": true,
       }
     `);
   });

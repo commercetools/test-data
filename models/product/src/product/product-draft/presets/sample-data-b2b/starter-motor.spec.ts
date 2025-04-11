@@ -167,7 +167,6 @@ describe(`with starterMotor preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "starter-motor",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

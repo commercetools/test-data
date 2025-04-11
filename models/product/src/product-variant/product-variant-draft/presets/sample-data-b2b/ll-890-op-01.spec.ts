@@ -82,7 +82,6 @@ describe(`with ll890Op01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ll890-op-2015",
-        "staged": true,
       }
     `);
   });

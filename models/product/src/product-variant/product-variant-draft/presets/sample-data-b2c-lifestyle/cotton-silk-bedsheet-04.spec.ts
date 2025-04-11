@@ -205,7 +205,6 @@ describe(`with cottonSilkBedsheet04 preset`, () => {
           },
         ],
         "sku": "CSKP-0934",
-        "staged": true,
       }
     `);
   });

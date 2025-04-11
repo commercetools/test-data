@@ -82,7 +82,6 @@ describe(`with ii789Uv02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ii789-uv-2019",
-        "staged": true,
       }
     `);
   });

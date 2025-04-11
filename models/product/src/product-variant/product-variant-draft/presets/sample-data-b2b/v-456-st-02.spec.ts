@@ -82,7 +82,6 @@ describe(`with v456St02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "v456-st-2019",
-        "staged": true,
       }
     `);
   });

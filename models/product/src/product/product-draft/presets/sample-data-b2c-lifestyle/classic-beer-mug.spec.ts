@@ -270,7 +270,6 @@ describe(`with classicBeerMug preset`, () => {
             },
           ],
           "sku": "CBM-03",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

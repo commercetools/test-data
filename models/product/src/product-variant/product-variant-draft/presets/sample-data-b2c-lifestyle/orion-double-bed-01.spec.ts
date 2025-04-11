@@ -188,7 +188,6 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
         ],
         "sku": "OTB-07",
-        "staged": true,
       }
     `);
   });

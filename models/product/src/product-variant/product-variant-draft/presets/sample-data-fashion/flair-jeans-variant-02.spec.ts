@@ -74,7 +74,6 @@ describe(`with flairJeansVariant02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": undefined,
-        "staged": true,
       }
     `);
   });

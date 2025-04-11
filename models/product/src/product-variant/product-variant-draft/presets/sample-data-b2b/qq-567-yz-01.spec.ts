@@ -82,7 +82,6 @@ describe(`with qq567Yz01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "qq567-yz-2015",
-        "staged": true,
       }
     `);
   });

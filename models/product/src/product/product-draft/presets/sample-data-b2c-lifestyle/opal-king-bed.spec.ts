@@ -258,7 +258,6 @@ describe(`with opalKingBed preset`, () => {
             },
           ],
           "sku": "MTB-023",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

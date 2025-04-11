@@ -282,7 +282,6 @@ describe(`with stoneServingTray preset`, () => {
             },
           ],
           "sku": "SST-02",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

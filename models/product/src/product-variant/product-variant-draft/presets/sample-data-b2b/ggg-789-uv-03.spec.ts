@@ -96,7 +96,6 @@ describe(`with ggg789Uv03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ggg789-uv-green",
-        "staged": true,
       }
     `);
   });

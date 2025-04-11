@@ -82,7 +82,6 @@ describe(`with h456St02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "h456-st-2019",
-        "staged": true,
       }
     `);
   });

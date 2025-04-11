@@ -278,7 +278,6 @@ describe(`with d234Wx preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "d234-wx-2015",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -413,7 +412,6 @@ describe(`with d234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "d234-wx-2019",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -448,7 +446,6 @@ describe(`with d234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "d234-wx-2023",
-            "staged": true,
           },
         ],
       }

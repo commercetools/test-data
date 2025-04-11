@@ -82,7 +82,6 @@ describe(`with v456St01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "v456-st-2015",
-        "staged": true,
       }
     `);
   });
