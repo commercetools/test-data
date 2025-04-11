@@ -262,7 +262,6 @@ describe(`with summerDress preset`, () => {
             },
           ],
           "sku": "791840",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -348,7 +347,6 @@ describe(`with summerDress preset`, () => {
               },
             ],
             "sku": "439502",
-            "staged": true,
           },
         ],
       }

@@ -226,7 +226,6 @@ describe(`with modernUpholsteredTwinBed02 preset`, () => {
           },
         ],
         "sku": "MUTB-02",
-        "staged": true,
       }
     `);
   });
