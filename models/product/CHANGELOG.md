@@ -1,5 +1,22 @@
 # @commercetools-test-data/product
 
+## 10.15.3
+
+### Patch Changes
+
+- [#782](https://github.com/commercetools/test-data/pull/782) [`53b5471`](https://github.com/commercetools/test-data/commit/53b54715ffb13045c8a562f1f0d347eea099578c) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fix ProductVariant draft GraphQL model
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.3
+  - @commercetools-test-data/graphql-types@10.15.3
+  - @commercetools-test-data/category@10.15.3
+  - @commercetools-test-data/channel@10.15.3
+  - @commercetools-test-data/commons@10.15.3
+  - @commercetools-test-data/product-selection@10.15.3
+  - @commercetools-test-data/product-type@10.15.3
+  - @commercetools-test-data/tax-category@10.15.3
+  - @commercetools-test-data/utils@10.15.3
+
 ## 10.15.2
 
 ### Patch Changes
