@@ -33,6 +33,7 @@ export * as CustomFieldStringType from './custom-field-string-type';
 export * as CustomFieldTimeType from './custom-field-time-type';
 export * as FieldDefinition from './field-definition';
 export * as FieldType from './field-type';
+export * as LocalizedEnumValue from './localized-enum-value';
 export * as TypeDraft from './type/type-draft';
 export * as Type from '.';
 
