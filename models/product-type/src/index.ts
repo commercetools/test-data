@@ -1,5 +1,6 @@
 // Export types
 export * from './attribute-boolean-type/types';
+export * from './attribute-date-time-type/types';
 export * from './attribute-definition/types';
 export * from './attribute-enum-type/types';
 export * from './attribute-localized-enum-type/types';
@@ -13,12 +14,13 @@ export * from './attribute-reference-type/types';
 export * from './attribute-text-type/types';
 export * from './attribute-date-type/types';
 export * from './attribute-time-type/types';
-export * from './attribute-date-time-type/types';
 export * from './product-type/types';
 
 // Export models
 export * from './attribute-boolean-type';
 export * from './attribute-boolean-type/attribute-boolean-type-draft';
+export * from './attribute-date-time-type';
+export * from './attribute-date-time-type/attribute-date-time-type-draft';
 export * as AttributeDefinition from './attribute-definition';
 export * as AttributeDefinitionDraft from './attribute-definition/attribute-definition-draft';
 export * as AttributePlainEnumValue from './attribute-plain-enum-value';
@@ -45,8 +47,6 @@ export * as AttributeTimeType from './attribute-time-type';
 export * as AttributeTimeTypeDraft from './attribute-time-type/attribute-time-type-draft';
 export * as AttributeDateType from './attribute-date-type';
 export * as AttributeDateTypeDraft from './attribute-date-type/attribute-date-type-draft';
-export * as AttributeDateTimeType from './attribute-date-time-type';
-export * as AttributeDateTimeTypeDraft from './attribute-date-time-type/attribute-date-time-type-draft';
 
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';
