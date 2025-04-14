@@ -162,7 +162,7 @@ const validateGraphqlFields = (model: TLineItemGraphql) => {
         __typename: 'Reference',
       }),
       custom: expect.objectContaining({
-        __typename: 'BooleanCustomFieldType',
+        __typename: 'BooleanType',
       }),
       __typename: 'LineItem',
     })
