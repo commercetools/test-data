@@ -469,7 +469,7 @@ describe(`with lifttechSolutionsLtdFrCart1 preset`, () => {
             "externalTotalPrice": undefined,
             "inventoryMode": undefined,
             "key": undefined,
-\            "productId": undefined,
+            "productId": undefined,
             "quantity": 1,
             "shippingDetails": undefined,
             "sku": "iii567-yz-red",
