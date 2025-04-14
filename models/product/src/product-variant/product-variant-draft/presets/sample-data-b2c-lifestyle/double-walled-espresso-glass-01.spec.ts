@@ -185,7 +185,6 @@ describe(`with doubleWalledEspressoGlass01 preset`, () => {
           },
         ],
         "sku": "DWEG-09",
-        "staged": true,
       }
     `);
   });

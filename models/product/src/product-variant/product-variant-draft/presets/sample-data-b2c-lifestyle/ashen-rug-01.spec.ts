@@ -188,7 +188,6 @@ describe(`with ashenRug01 preset`, () => {
           },
         ],
         "sku": "ARG-56",
-        "staged": true,
       }
     `);
   });

@@ -227,7 +227,6 @@ describe(`with ellaSquarePlate01 preset`, () => {
           },
         ],
         "sku": "ESP-1",
-        "staged": true,
       }
     `);
   });

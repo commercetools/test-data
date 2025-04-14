@@ -181,7 +181,6 @@ describe(`with leahArmchair01 preset`, () => {
           },
         ],
         "sku": "LAMR-03",
-        "staged": true,
       }
     `);
   });

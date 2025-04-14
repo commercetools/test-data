@@ -1,5 +1,29 @@
 # @commercetools-test-data/inventory-entry
 
+## 10.15.3
+
+### Patch Changes
+
+- Updated dependencies [[`53b5471`](https://github.com/commercetools/test-data/commit/53b54715ffb13045c8a562f1f0d347eea099578c)]:
+  - @commercetools-test-data/product@10.15.3
+  - @commercetools-test-data/core@10.15.3
+  - @commercetools-test-data/graphql-types@10.15.3
+  - @commercetools-test-data/channel@10.15.3
+  - @commercetools-test-data/commons@10.15.3
+  - @commercetools-test-data/utils@10.15.3
+
+## 10.15.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/channel@10.15.2
+  - @commercetools-test-data/product@10.15.2
+  - @commercetools-test-data/commons@10.15.2
+  - @commercetools-test-data/core@10.15.2
+  - @commercetools-test-data/graphql-types@10.15.2
+  - @commercetools-test-data/utils@10.15.2
+
 ## 10.15.1
 
 ### Patch Changes

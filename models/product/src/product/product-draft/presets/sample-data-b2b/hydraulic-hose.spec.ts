@@ -167,7 +167,6 @@ describe(`with hydraulicHose preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "hydraulic-hose",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

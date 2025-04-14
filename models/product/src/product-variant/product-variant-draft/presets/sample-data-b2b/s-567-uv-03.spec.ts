@@ -82,7 +82,6 @@ describe(`with s567Uv03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "s567-uv-2023",
-        "staged": true,
       }
     `);
   });

@@ -385,7 +385,6 @@ describe(`with largeCeramicPlate preset`, () => {
             },
           ],
           "sku": "LCP-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -516,7 +515,6 @@ describe(`with largeCeramicPlate preset`, () => {
               },
             ],
             "sku": "LCP-02",
-            "staged": true,
           },
         ],
       }

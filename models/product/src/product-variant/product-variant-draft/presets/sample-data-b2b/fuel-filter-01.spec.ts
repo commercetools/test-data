@@ -45,7 +45,6 @@ describe(`with fuelFilter01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "fuel-filter",
-        "staged": true,
       }
     `);
   });

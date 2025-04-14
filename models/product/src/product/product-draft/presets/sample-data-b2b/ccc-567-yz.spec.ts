@@ -320,7 +320,6 @@ describe(`with ccc567Yz preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "ccc567-yz-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with ccc567Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ccc567-yz-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with ccc567Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ccc567-yz-green",
-            "staged": true,
           },
         ],
       }

@@ -96,7 +96,6 @@ describe(`with eee123Qr02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "eee123-qr-blue",
-        "staged": true,
       }
     `);
   });

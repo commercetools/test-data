@@ -96,7 +96,6 @@ describe(`with uu789Uv03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "uu789-uv-green",
-        "staged": true,
       }
     `);
   });

@@ -82,7 +82,6 @@ describe(`with qq567Yz02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "qq567-yz-2019",
-        "staged": true,
       }
     `);
   });

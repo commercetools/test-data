@@ -273,7 +273,6 @@ describe(`with travelCoffeeMug preset`, () => {
             },
           ],
           "sku": "TCM-03",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

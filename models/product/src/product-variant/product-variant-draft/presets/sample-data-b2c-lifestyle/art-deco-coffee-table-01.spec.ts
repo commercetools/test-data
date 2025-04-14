@@ -204,7 +204,6 @@ describe(`with artDecoCoffeeTable01 preset`, () => {
           },
         ],
         "sku": "ADCT-01",
-        "staged": true,
       }
     `);
   });

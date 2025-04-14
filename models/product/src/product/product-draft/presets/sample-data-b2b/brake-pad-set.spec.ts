@@ -167,7 +167,6 @@ describe(`with brakePadSet preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "brake-pad-set",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

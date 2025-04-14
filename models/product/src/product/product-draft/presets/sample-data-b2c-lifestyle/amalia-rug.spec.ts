@@ -257,7 +257,6 @@ describe(`with amaliaRug preset`, () => {
             },
           ],
           "sku": "AMR-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

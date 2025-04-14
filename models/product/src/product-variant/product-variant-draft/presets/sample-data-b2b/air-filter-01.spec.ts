@@ -45,7 +45,6 @@ describe(`with airFilter01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "air-filter",
-        "staged": true,
       }
     `);
   });

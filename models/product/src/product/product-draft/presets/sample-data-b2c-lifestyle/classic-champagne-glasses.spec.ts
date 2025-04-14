@@ -333,7 +333,6 @@ describe(`with classicChampagneGlasses preset`, () => {
             },
           ],
           "sku": "CCG-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

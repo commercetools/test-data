@@ -45,7 +45,6 @@ describe(`with brakePadSet01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "brake-pad-set",
-        "staged": true,
       }
     `);
   });

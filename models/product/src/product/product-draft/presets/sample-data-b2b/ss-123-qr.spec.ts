@@ -320,7 +320,6 @@ describe(`with ss123Qr preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "ss123-qr-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with ss123Qr preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ss123-qr-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with ss123Qr preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ss123-qr-green",
-            "staged": true,
           },
         ],
       }

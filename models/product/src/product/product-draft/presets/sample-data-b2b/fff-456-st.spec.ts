@@ -320,7 +320,6 @@ describe(`with fff456St preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "fff456-st-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with fff456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "fff456-st-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with fff456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "fff456-st-green",
-            "staged": true,
           },
         ],
       }

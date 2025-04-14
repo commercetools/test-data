@@ -278,7 +278,6 @@ describe(`with z890Op preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "z890-op-2015",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -413,7 +412,6 @@ describe(`with z890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "z890-op-2019",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -448,7 +446,6 @@ describe(`with z890Op preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "z890-op-2023",
-            "staged": true,
           },
         ],
       }

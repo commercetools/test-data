@@ -265,7 +265,6 @@ describe(`with modernLandscapePainting preset`, () => {
             },
           ],
           "sku": "MLP-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

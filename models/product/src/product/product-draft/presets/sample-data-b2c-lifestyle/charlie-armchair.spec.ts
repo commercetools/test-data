@@ -270,7 +270,6 @@ describe(`with charlieArmchair preset`, () => {
             },
           ],
           "sku": "CARM-023",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -327,7 +327,6 @@ describe(`with vanillaCandle preset`, () => {
             },
           ],
           "sku": "VC-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

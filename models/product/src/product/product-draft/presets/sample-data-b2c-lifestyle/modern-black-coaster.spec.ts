@@ -275,7 +275,6 @@ describe(`with modernBlackCoaster preset`, () => {
             },
           ],
           "sku": "BCOAS-08",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

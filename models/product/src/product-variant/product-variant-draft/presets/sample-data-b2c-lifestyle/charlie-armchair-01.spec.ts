@@ -182,7 +182,6 @@ describe(`with charlieArmchair01 preset`, () => {
           },
         ],
         "sku": "CARM-023",
-        "staged": true,
       }
     `);
   });

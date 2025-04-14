@@ -82,7 +82,6 @@ describe(`with p234Qw03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "p234-qw-2023",
-        "staged": true,
       }
     `);
   });

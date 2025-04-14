@@ -172,7 +172,6 @@ describe(`with meadowRug03 preset`, () => {
           },
         ],
         "sku": "MR-05",
-        "staged": true,
       }
     `);
   });

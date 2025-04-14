@@ -82,7 +82,6 @@ describe(`with u123Qr03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "u123-qr-2023",
-        "staged": true,
       }
     `);
   });

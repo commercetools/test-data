@@ -278,7 +278,6 @@ describe(`with b456St preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "b456-st-2015",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -413,7 +412,6 @@ describe(`with b456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "b456-st-2019",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -448,7 +446,6 @@ describe(`with b456St preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "b456-st-2023",
-            "staged": true,
           },
         ],
       }

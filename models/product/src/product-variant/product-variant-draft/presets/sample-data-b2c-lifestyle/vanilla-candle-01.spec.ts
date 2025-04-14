@@ -242,7 +242,6 @@ describe(`with vanillaCandle01 preset`, () => {
           },
         ],
         "sku": "VC-01",
-        "staged": true,
       }
     `);
   });

@@ -311,7 +311,6 @@ describe(`with minimalistCedarNightstand preset`, () => {
             },
           ],
           "sku": "CNS-0434",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

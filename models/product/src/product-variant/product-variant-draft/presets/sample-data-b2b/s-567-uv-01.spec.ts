@@ -82,7 +82,6 @@ describe(`with s567Uv01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "s567-uv-2015",
-        "staged": true,
       }
     `);
   });

@@ -198,7 +198,6 @@ describe(`with ryeWhiskeyGlass01 preset`, () => {
           },
         ],
         "sku": "RWG-09",
-        "staged": true,
       }
     `);
   });

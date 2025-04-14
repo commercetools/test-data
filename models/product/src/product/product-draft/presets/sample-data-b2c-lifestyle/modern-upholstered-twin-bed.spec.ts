@@ -668,7 +668,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
             },
           ],
           "sku": "MUTB-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -811,7 +810,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
             ],
             "sku": "MUTB-02",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -910,7 +908,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
             ],
             "sku": "MUTB-03",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -1009,7 +1006,6 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
             ],
             "sku": "MUTB-04",
-            "staged": true,
           },
         ],
       }

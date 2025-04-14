@@ -275,7 +275,6 @@ describe(`with walnutCounterStool preset`, () => {
             },
           ],
           "sku": "WCSI-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

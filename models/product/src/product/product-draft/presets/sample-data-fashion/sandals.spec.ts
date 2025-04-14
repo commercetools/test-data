@@ -294,7 +294,6 @@ describe(`with sampleSandals preset`, () => {
             },
           ],
           "sku": "148096",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -380,7 +379,6 @@ describe(`with sampleSandals preset`, () => {
               },
             ],
             "sku": "148097",
-            "staged": true,
           },
         ],
       }

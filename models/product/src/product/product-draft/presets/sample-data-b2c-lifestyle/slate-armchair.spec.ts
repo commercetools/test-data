@@ -274,7 +274,6 @@ describe(`with slateArmchair preset`, () => {
             },
           ],
           "sku": "SARM-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

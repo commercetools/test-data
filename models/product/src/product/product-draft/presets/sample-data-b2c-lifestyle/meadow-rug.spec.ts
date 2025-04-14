@@ -418,7 +418,6 @@ describe(`with meadowRug preset`, () => {
             },
           ],
           "sku": "MR-03",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -541,7 +540,6 @@ describe(`with meadowRug preset`, () => {
               },
             ],
             "sku": "MR-08",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -620,7 +618,6 @@ describe(`with meadowRug preset`, () => {
               },
             ],
             "sku": "MR-05",
-            "staged": true,
           },
         ],
       }

@@ -172,7 +172,6 @@ describe(`with iceBucket01 preset`, () => {
           },
         ],
         "sku": "BUCK-023",
-        "staged": true,
       }
     `);
   });

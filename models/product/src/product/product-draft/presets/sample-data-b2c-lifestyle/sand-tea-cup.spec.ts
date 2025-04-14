@@ -257,7 +257,6 @@ describe(`with sandTeaCup preset`, () => {
             },
           ],
           "sku": "STM-09",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

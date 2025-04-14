@@ -199,7 +199,6 @@ describe(`with geometricPillowCase01 preset`, () => {
           },
         ],
         "sku": "GPC-01",
-        "staged": true,
       }
     `);
   });

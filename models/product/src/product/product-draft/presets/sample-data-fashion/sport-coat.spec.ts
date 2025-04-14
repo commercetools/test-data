@@ -229,7 +229,6 @@ describe(`with sportCoat preset`, () => {
             },
           ],
           "sku": "692457",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -315,7 +314,6 @@ describe(`with sportCoat preset`, () => {
               },
             ],
             "sku": "692458",
-            "staged": true,
           },
         ],
       }

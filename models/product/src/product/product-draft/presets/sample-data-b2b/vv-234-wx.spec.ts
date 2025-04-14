@@ -320,7 +320,6 @@ describe(`with vv234Wx preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "vv234-wx-red",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -455,7 +454,6 @@ describe(`with vv234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "vv234-wx-blue",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -490,7 +488,6 @@ describe(`with vv234Wx preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "vv234-wx-green",
-            "staged": true,
           },
         ],
       }

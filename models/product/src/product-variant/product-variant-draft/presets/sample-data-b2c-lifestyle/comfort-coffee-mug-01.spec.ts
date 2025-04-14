@@ -214,7 +214,6 @@ describe(`with comfortCoffeeMug01 preset`, () => {
           },
         ],
         "sku": "CCM-089",
-        "staged": true,
       }
     `);
   });

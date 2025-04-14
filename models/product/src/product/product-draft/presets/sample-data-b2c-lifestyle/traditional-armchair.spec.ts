@@ -307,7 +307,6 @@ describe(`with traditionalArmchair preset`, () => {
             },
           ],
           "sku": "TARM-034",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
