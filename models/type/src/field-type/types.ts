@@ -1,5 +1,6 @@
 import type { FieldType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpFieldType } from '@commercetools-test-data/graphql-types';
 import { TCustomFieldEnumValue } from '../custom-field-enum-value';
 import { TCustomFieldLocalizedEnumValue } from '../custom-field-localized-enum-value';
 
@@ -12,9 +13,7 @@ export type TFieldType = {
   elementType?: TFieldType;
 };
 
-export type TFieldTypeGraphql = TFieldType & {
-  __typename: string;
-};
+export type TFieldTypeGraphql = TCtpFieldType;
 
 export type TFieldTypeBuilder = TBuilder<TFieldType>;
 export type TCreateFieldTypeBuilder = () => TFieldTypeBuilder;

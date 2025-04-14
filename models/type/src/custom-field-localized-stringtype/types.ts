@@ -1,15 +1,12 @@
 import { CustomFieldLocalizedStringType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpLocalizedStringType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldLocalizedStringType = CustomFieldLocalizedStringType;
 export type TCustomFieldLocalizedStringTypeDraft =
   CustomFieldLocalizedStringType;
 
-export type TCustomFieldLocalizedStringTypeGraphql =
-  TCustomFieldLocalizedStringType & {
-    __typename: 'LocalizableStringtypeCustomFieldType';
-  };
-
+export type TCustomFieldLocalizedStringTypeGraphql = TCtpLocalizedStringType;
 export type TCustomFieldLocalizedStringTypeDraftGraphql = {
   lstringtype: {
     dummy: string | null;

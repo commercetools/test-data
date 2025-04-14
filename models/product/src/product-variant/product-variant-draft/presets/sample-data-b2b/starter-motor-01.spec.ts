@@ -45,7 +45,6 @@ describe(`with starterMotor01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "starter-motor",
-        "staged": true,
       }
     `);
   });

@@ -301,7 +301,6 @@ describe(`with ivoryLoungeChair preset`, () => {
             },
           ],
           "sku": "ILC-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

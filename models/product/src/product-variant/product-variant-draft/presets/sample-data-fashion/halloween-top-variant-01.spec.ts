@@ -168,7 +168,6 @@ describe(`with halloweenTopVariant01 preset`, () => {
           },
         ],
         "sku": "888035",
-        "staged": true,
       }
     `);
   });

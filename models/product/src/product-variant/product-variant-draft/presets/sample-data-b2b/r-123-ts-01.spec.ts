@@ -82,7 +82,6 @@ describe(`with r123Ts01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "r123-ts-2015",
-        "staged": true,
       }
     `);
   });

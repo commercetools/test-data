@@ -189,7 +189,6 @@ describe(`with classicCoffeeCup01 preset`, () => {
           },
         ],
         "sku": "CCC-09",
-        "staged": true,
       }
     `);
   });

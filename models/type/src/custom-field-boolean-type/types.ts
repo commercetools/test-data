@@ -1,12 +1,11 @@
 import type { CustomFieldBooleanType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
+import { TCtpBooleanType } from '@commercetools-test-data/graphql-types';
 
 export type TCustomFieldBooleanType = CustomFieldBooleanType;
 export type TCustomFieldBooleanTypeDraft = CustomFieldBooleanType;
 
-export type TCustomFieldBooleanTypeGraphql = CustomFieldBooleanType & {
-  __typename: 'BooleanCustomFieldType';
-};
+export type TCustomFieldBooleanTypeGraphql = TCtpBooleanType;
 export type TCustomFieldBooleanTypeDraftGraphql = {
   boolean: {
     dummy: string | null;

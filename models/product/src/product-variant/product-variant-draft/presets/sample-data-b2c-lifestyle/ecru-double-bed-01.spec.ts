@@ -176,7 +176,6 @@ describe(`with ecruDoubleBed01 preset`, () => {
           },
         ],
         "sku": "SQB-034",
-        "staged": true,
       }
     `);
   });

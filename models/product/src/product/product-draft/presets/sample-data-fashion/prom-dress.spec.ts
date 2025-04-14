@@ -229,7 +229,6 @@ describe(`with promDress preset`, () => {
             },
           ],
           "sku": "711595",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -315,7 +314,6 @@ describe(`with promDress preset`, () => {
               },
             ],
             "sku": "214452",
-            "staged": true,
           },
         ],
       }

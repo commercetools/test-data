@@ -46,7 +46,6 @@ describe(`with pinAndBushingKit01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "pin-and-bushing-kit",
-        "staged": true,
       }
     `);
   });

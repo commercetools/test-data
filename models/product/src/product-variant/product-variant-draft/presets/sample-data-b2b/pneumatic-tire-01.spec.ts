@@ -46,7 +46,6 @@ describe(`with pneumaticTire01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "pneumatic-tire",
-        "staged": true,
       }
     `);
   });

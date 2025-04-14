@@ -295,7 +295,6 @@ describe(`with halloweenTop preset`, () => {
             },
           ],
           "sku": "888035",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -402,7 +401,6 @@ describe(`with halloweenTop preset`, () => {
               },
             ],
             "sku": "828329",
-            "staged": true,
           },
         ],
       }

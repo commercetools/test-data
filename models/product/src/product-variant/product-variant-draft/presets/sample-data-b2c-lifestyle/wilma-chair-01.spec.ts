@@ -200,7 +200,6 @@ describe(`with wilmaChair01 preset`, () => {
           },
         ],
         "sku": "NJOP-09",
-        "staged": true,
       }
     `);
   });

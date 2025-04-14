@@ -82,7 +82,6 @@ describe(`with cc789Uv03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "cc789-uv-2023",
-        "staged": true,
       }
     `);
   });

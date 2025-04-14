@@ -181,7 +181,6 @@ describe(`with rumiChair01 preset`, () => {
           },
         ],
         "sku": "RAM-094",
-        "staged": true,
       }
     `);
   });

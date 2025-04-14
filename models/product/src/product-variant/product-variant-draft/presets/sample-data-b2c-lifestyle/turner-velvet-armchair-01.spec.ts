@@ -189,7 +189,6 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
         ],
         "sku": "TARM-03",
-        "staged": true,
       }
     `);
   });

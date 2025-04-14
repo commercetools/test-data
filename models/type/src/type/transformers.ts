@@ -31,13 +31,14 @@ const transformers = {
       'fieldDefinitions',
     ],
     addFields: ({ fields }) => {
-      const nameAllLocales = LocalizedString.toLocalizedField(fields.name);
+      const nameAllLocales =
+        LocalizedString.toLocalizedField(fields.name) ?? undefined;
       const descriptionAllLocales = LocalizedString.toLocalizedField(
         fields.description
       );
 
       return {
-        __typename: 'Type',
+        __typename: 'TypeDefinition',
         nameAllLocales,
         descriptionAllLocales,
       };

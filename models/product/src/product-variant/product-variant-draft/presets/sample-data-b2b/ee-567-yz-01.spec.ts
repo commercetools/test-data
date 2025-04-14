@@ -82,7 +82,6 @@ describe(`with ee567Yz01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ee567-yz-2015",
-        "staged": true,
       }
     `);
   });

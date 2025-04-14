@@ -20,7 +20,7 @@
 /codegen* @commercetools/shield-team-fe
 
 # Models
-/models @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
+/models/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 
 /models/associate-role @commercetools/customers-team-fe
 /models/attribute-group @commercetools/pacman-team-fe

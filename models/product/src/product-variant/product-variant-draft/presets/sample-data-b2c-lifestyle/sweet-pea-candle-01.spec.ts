@@ -220,7 +220,6 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
         ],
         "sku": "SPC-01",
-        "staged": true,
       }
     `);
   });

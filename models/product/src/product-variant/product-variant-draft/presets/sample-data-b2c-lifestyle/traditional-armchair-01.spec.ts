@@ -205,7 +205,6 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
         ],
         "sku": "TARM-034",
-        "staged": true,
       }
     `);
   });

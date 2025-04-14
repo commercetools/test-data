@@ -1,3 +1,4 @@
+import { CustomFieldLocalizedEnumValue } from '@commercetools/platform-sdk';
 import { buildField, Transformer } from '@commercetools-test-data/core';
 import { TCustomFieldLocalizedEnumValueGraphql } from '../custom-field-localized-enum-value';
 import {
@@ -21,13 +22,13 @@ const transformers = {
     buildFields: [],
     replaceFields: ({ fields }) => ({
       ...fields,
-      values: {
-        results: fields.values!.map((value) =>
-          buildField(value, 'graphql')
-        ) as unknown as Array<TCustomFieldLocalizedEnumValueGraphql>,
-        __typename: 'LocalizableEnumValueTypeResult',
-      },
-      __typename: 'LocalizableEnumCustomFieldType',
+      values: fields.values!.map((value) =>
+        buildField<
+          CustomFieldLocalizedEnumValue,
+          TCustomFieldLocalizedEnumValueGraphql
+        >(value, 'graphql')
+      ),
+      __typename: 'LocalizedEnumType',
     }),
   }),
 };

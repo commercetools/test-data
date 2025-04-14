@@ -282,7 +282,6 @@ describe(`with greenServingPlate preset`, () => {
             },
           ],
           "sku": "GC-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

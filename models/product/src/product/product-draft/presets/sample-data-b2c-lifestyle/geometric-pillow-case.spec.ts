@@ -491,7 +491,6 @@ describe(`with geometricPillowCase preset`, () => {
             },
           ],
           "sku": "GPC-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -622,7 +621,6 @@ describe(`with geometricPillowCase preset`, () => {
               },
             ],
             "sku": "GPC-02",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -709,7 +707,6 @@ describe(`with geometricPillowCase preset`, () => {
               },
             ],
             "sku": "GPC-03",
-            "staged": true,
           },
         ],
       }

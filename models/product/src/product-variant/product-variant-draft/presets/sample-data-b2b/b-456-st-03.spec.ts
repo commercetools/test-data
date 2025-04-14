@@ -82,7 +82,6 @@ describe(`with b456St03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "b456-st-2023",
-        "staged": true,
       }
     `);
   });

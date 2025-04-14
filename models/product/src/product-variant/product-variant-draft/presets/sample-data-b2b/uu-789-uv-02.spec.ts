@@ -96,7 +96,6 @@ describe(`with uu789Uv02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "uu789-uv-blue",
-        "staged": true,
       }
     `);
   });

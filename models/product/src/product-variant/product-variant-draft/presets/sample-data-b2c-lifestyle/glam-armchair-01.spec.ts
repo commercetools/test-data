@@ -184,7 +184,6 @@ describe(`with glamArmchair01 preset`, () => {
           },
         ],
         "sku": "GARM-093",
-        "staged": true,
       }
     `);
   });

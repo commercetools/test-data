@@ -82,7 +82,6 @@ describe(`with l890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "l890-op-2023",
-        "staged": true,
       }
     `);
   });

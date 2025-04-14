@@ -125,7 +125,6 @@ describe(`with promDressVariant02 preset`, () => {
           },
         ],
         "sku": "214452",
-        "staged": true,
       }
     `);
   });

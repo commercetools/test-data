@@ -96,7 +96,6 @@ describe(`with hhh234Wx01 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "hhh234-wx-red",
-        "staged": true,
       }
     `);
   });

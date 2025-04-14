@@ -173,7 +173,6 @@ describe(`with cobblestoneRug01 preset`, () => {
           },
         ],
         "sku": "CR-098",
-        "staged": true,
       }
     `);
   });

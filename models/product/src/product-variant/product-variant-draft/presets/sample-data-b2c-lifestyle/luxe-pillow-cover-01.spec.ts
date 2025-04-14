@@ -173,7 +173,6 @@ describe(`with luxePillowCover01 preset`, () => {
           },
         ],
         "sku": "LPC-011",
-        "staged": true,
       }
     `);
   });

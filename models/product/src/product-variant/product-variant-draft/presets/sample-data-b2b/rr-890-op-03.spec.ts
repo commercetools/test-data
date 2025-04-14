@@ -82,7 +82,6 @@ describe(`with rr890Op03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "rr890-op-2023",
-        "staged": true,
       }
     `);
   });

@@ -96,7 +96,6 @@ describe(`with iii567Yz02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "iii567-yz-blue",
-        "staged": true,
       }
     `);
   });

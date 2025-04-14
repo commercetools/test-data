@@ -63,7 +63,7 @@ const validateGraphqlFields = (model: TCustomLineItemGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
       custom: expect.objectContaining({
-        __typename: 'BooleanCustomFieldType',
+        __typename: 'BooleanType',
       }),
       __typename: 'CustomLineItem',
       name: expect.any(String),

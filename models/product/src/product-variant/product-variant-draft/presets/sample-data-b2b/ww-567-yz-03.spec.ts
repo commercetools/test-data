@@ -96,7 +96,6 @@ describe(`with ww567Yz03 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "ww567-yz-green",
-        "staged": true,
       }
     `);
   });

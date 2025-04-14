@@ -1,5 +1,36 @@
 # @commercetools-test-data/type
 
+## 10.15.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.3
+  - @commercetools-test-data/graphql-types@10.15.3
+  - @commercetools-test-data/commons@10.15.3
+  - @commercetools-test-data/utils@10.15.3
+
+## 10.15.2
+
+### Patch Changes
+
+- [#778](https://github.com/commercetools/test-data/pull/778) [`1d560a0`](https://github.com/commercetools/test-data/commit/1d560a0610bb970bb136d236cc3eeb9e18499e8c) Thanks [@ragafus](https://github.com/ragafus)! - Use generated types from GraphQL schema
+
+- Updated dependencies []:
+  - @commercetools-test-data/commons@10.15.2
+  - @commercetools-test-data/core@10.15.2
+  - @commercetools-test-data/graphql-types@10.15.2
+  - @commercetools-test-data/utils@10.15.2
+
+## 10.15.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.1
+  - @commercetools-test-data/commons@10.15.1
+  - @commercetools-test-data/utils@10.15.1
+
 ## 10.15.0
 
 ### Patch Changes

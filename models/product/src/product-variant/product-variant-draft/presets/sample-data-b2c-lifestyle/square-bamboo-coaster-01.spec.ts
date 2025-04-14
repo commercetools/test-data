@@ -173,7 +173,6 @@ describe(`with squareBambooCoaster01 preset`, () => {
           },
         ],
         "sku": "BAMB-084",
-        "staged": true,
       }
     `);
   });

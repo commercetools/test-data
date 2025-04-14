@@ -258,7 +258,6 @@ describe(`with leatherCoaster preset`, () => {
             },
           ],
           "sku": "LCO-034",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

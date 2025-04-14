@@ -167,7 +167,6 @@ describe(`with ledWorkLight preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "led-work-light",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

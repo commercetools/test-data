@@ -193,7 +193,6 @@ describe(`with largeCeramicPlate01 preset`, () => {
           },
         ],
         "sku": "LCP-01",
-        "staged": true,
       }
     `);
   });

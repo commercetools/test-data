@@ -167,7 +167,6 @@ describe(`with pistonRingSet preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "piston-ring-set",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

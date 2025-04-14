@@ -182,7 +182,6 @@ describe(`with chiantiWineGlass01 preset`, () => {
           },
         ],
         "sku": "CWG-01",
-        "staged": true,
       }
     `);
   });

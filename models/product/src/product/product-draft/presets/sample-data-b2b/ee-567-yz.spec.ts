@@ -278,7 +278,6 @@ describe(`with ee567Yz preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": "ee567-yz-2015",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -413,7 +412,6 @@ describe(`with ee567Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ee567-yz-2019",
-            "staged": true,
           },
           {
             "assets": undefined,
@@ -448,7 +446,6 @@ describe(`with ee567Yz preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": "ee567-yz-2023",
-            "staged": true,
           },
         ],
       }

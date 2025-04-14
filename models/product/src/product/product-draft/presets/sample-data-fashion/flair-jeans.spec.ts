@@ -159,7 +159,6 @@ describe(`with flairJeans preset`, () => {
           "key": undefined,
           "prices": undefined,
           "sku": undefined,
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -213,7 +212,6 @@ describe(`with flairJeans preset`, () => {
             "key": undefined,
             "prices": undefined,
             "sku": undefined,
-            "staged": true,
           },
         ],
       }

@@ -1,5 +1,38 @@
 # @commercetools-test-data/store
 
+## 10.15.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.3
+  - @commercetools-test-data/channel@10.15.3
+  - @commercetools-test-data/commons@10.15.3
+  - @commercetools-test-data/product-selection@10.15.3
+  - @commercetools-test-data/utils@10.15.3
+
+## 10.15.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/channel@10.15.2
+  - @commercetools-test-data/commons@10.15.2
+  - @commercetools-test-data/product-selection@10.15.2
+  - @commercetools-test-data/core@10.15.2
+  - @commercetools-test-data/utils@10.15.2
+
+## 10.15.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.1
+  - @commercetools-test-data/channel@10.15.1
+  - @commercetools-test-data/commons@10.15.1
+  - @commercetools-test-data/product-selection@10.15.1
+  - @commercetools-test-data/utils@10.15.1
+
 ## 10.15.0
 
 ### Patch Changes

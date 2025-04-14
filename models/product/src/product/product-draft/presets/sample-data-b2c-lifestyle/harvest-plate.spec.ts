@@ -274,7 +274,6 @@ describe(`with harvestPlate preset`, () => {
             },
           ],
           "sku": "HP-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -196,7 +196,6 @@ describe(`with nalaTwoSeaterSofa07 preset`, () => {
           },
         ],
         "sku": "NTSS-07",
-        "staged": true,
       }
     `);
   });

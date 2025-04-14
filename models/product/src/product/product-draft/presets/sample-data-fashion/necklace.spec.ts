@@ -254,7 +254,6 @@ describe(`with necklace preset`, () => {
             },
           ],
           "sku": "752502",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -323,7 +322,6 @@ describe(`with necklace preset`, () => {
               },
             ],
             "sku": "42610",
-            "staged": true,
           },
         ],
       }

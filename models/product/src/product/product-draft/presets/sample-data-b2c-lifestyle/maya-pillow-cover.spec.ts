@@ -337,7 +337,6 @@ describe(`with mayaPillowCover preset`, () => {
             },
           ],
           "sku": "MPC-02",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
@@ -460,7 +459,6 @@ describe(`with mayaPillowCover preset`, () => {
               },
             ],
             "sku": "MPC-07",
-            "staged": true,
           },
         ],
       }

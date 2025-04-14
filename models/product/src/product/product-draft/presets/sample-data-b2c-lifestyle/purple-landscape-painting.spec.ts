@@ -265,7 +265,6 @@ describe(`with purpleLandscapePainting preset`, () => {
             },
           ],
           "sku": "BLP-01",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,

@@ -1,5 +1,41 @@
 # @commercetools-test-data/product-discount
 
+## 10.15.3
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.3
+  - @commercetools-test-data/graphql-types@10.15.3
+  - @commercetools-test-data/category@10.15.3
+  - @commercetools-test-data/commons@10.15.3
+  - @commercetools-test-data/product-type@10.15.3
+  - @commercetools-test-data/utils@10.15.3
+
+## 10.15.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/category@10.15.2
+  - @commercetools-test-data/product-type@10.15.2
+  - @commercetools-test-data/commons@10.15.2
+  - @commercetools-test-data/core@10.15.2
+  - @commercetools-test-data/graphql-types@10.15.2
+  - @commercetools-test-data/utils@10.15.2
+
+## 10.15.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.15.1
+  - @commercetools-test-data/graphql-types@10.15.1
+  - @commercetools-test-data/category@10.15.1
+  - @commercetools-test-data/commons@10.15.1
+  - @commercetools-test-data/product-type@10.15.1
+  - @commercetools-test-data/utils@10.15.1
+
 ## 10.15.0
 
 ### Patch Changes

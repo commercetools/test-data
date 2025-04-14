@@ -223,7 +223,6 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
         ],
         "sku": "TTSS-01",
-        "staged": true,
       }
     `);
   });

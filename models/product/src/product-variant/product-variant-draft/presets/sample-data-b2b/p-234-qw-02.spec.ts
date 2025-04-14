@@ -82,7 +82,6 @@ describe(`with p234Qw02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "p234-qw-2019",
-        "staged": true,
       }
     `);
   });

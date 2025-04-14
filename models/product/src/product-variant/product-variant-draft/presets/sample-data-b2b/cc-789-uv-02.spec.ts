@@ -82,7 +82,6 @@ describe(`with cc789Uv02 preset`, () => {
         "key": undefined,
         "prices": undefined,
         "sku": "cc789-uv-2019",
-        "staged": true,
       }
     `);
   });

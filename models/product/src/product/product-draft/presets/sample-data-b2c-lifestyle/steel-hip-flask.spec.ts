@@ -296,7 +296,6 @@ describe(`with steelHipFlask preset`, () => {
             },
           ],
           "sku": "FLAS-094",
-          "staged": true,
         },
         "metaDescription": undefined,
         "metaKeywords": undefined,
