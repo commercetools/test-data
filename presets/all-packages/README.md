@@ -1,6 +1,6 @@
-# @commercetools-test-data/cart
+# @commercetools/composable-commerce-test-data
 
-This package provides access to all the data model used in the commercetools APIs .
+This package provides access to all the test data models used in the commercetools APIs.
 
 # Install
 
