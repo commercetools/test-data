@@ -36,10 +36,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {
       // @ts-expect-error The GraphQL mode does not have a `attributes` field but we need this logic for the compatibility builder
       model.attributesRaw = model.attributes.map((attribute) => ({
         ...attribute,
-        __typename: 'Attribute',
+        __typename: 'RawProductAttribute',
       }));
       // @ts-expect-error The GraphQL mode does not have a `attributes` field but we need this logic for the compatibility builder
-      delete model.attributes;
+      model.attributes = undefined;
     }
     return model;
   },
