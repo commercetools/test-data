@@ -1,3 +1,5 @@
+import { ChannelGraphql } from '@commercetools-test-data/channel';
+import { LocalizedString } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
 import { TaxRate } from '@commercetools-test-data/tax-category';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
@@ -7,6 +9,7 @@ import { LineItem, LineItemRest, LineItemGraphql } from './index';
 
 const populateRestModel = (model: TBuilder<TLineItemRest>) =>
   model
+    .productSlug(LocalizedString.presets.ofSlugs())
     .taxRate(TaxRate.random())
     .taxedPrice(TaxedItemPriceRest.random())
     .custom(CustomFieldBooleanType.random());
@@ -14,6 +17,9 @@ const populateRestModel = (model: TBuilder<TLineItemRest>) =>
 const populateGraphqlModel = (model: TBuilder<TLineItemGraphql>) =>
   model
     .taxRate(TaxRate.random())
+    .supplyChannel(ChannelGraphql.random())
+    .distributionChannel(ChannelGraphql.random())
+    .productSlugAllLocales(LocalizedString.presets.ofSlugs())
     .taxedPrice(TaxedItemPriceGraphql.random())
     .custom(CustomFieldBooleanType.random());
 

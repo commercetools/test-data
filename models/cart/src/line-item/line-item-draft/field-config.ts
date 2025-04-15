@@ -27,6 +27,8 @@ const commonFieldsConfig = {
   externalTaxRate: null,
   inventoryMode: oneOf(...Object.values(inventoryMode)),
   shippingDetails: null,
+  distributionChannel: null,
+  supplyChannel: null,
   custom: null,
 };
 
@@ -34,17 +36,11 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemDraftRest> = {
   fields: {
     ...commonFieldsConfig,
     perMethodExternalTaxRate: [],
-    distributionChannel: fake(() => ReferenceRest.random().typeId('channel')),
-    supplyChannel: fake(() => ReferenceRest.random().typeId('channel')),
   },
 };
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemDraftGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    distributionChannel: fake(() =>
-      ReferenceGraphql.random().typeId('channel')
-    ),
-    supplyChannel: fake(() => ReferenceGraphql.random().typeId('channel')),
   },
 };
