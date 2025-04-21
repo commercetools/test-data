@@ -3,7 +3,6 @@ export * from './attribute/types';
 export * from './image/types';
 export * from './product-catalog-data/types';
 export * from './product-data/types';
-export * from './product-variant/types';
 
 // Export models
 export * as Attribute from './attribute';
@@ -19,7 +18,7 @@ export * as ProductCatalogData from './product-catalog-data';
 
 export * as ProductData from './product-data';
 
-export * as ProductVariant from './product-variant';
+export * from './product-variant';
 export * from './product-variant/product-variant-draft';
 
 export * from './selection-of-product';

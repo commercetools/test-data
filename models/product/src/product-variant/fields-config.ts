@@ -27,7 +27,20 @@ export const restFieldsConfig: TModelFieldsConfig<TProductVariantRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {
   fields: {
     ...commonFieldsConfig,
-    attributesRaw: [],
+    attributesRaw: fake(() => [Attribute.random()]),
     __typename: 'ProductVariant',
+  },
+  postBuild: (model, context) => {
+    // @ts-expect-error The GraphQL mode does not have a `attributes` field but we need this logic for the compatibility builder
+    if (context.isCompatMode && model.attributes) {
+      // @ts-expect-error The GraphQL mode does not have a `attributes` field but we need this logic for the compatibility builder
+      model.attributesRaw = model.attributes.map((attribute) => ({
+        ...attribute,
+        __typename: 'RawProductAttribute',
+      }));
+      // @ts-expect-error The GraphQL mode does not have a `attributes` field but we need this logic for the compatibility builder
+      model.attributes = undefined;
+    }
+    return model;
   },
 };
