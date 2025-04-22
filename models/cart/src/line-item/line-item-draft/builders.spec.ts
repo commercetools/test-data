@@ -1,4 +1,8 @@
-import { TLineItemDraftRest, TLineItemDraftGraphql } from '../types';
+import {
+  TLineItemDraft,
+  TLineItemDraftRest,
+  TLineItemDraftGraphql,
+} from '../types';
 import {
   LineItemDraft,
   LineItemDraftRest,
@@ -58,17 +62,19 @@ describe('LineItemDraft model builders', () => {
 
 describe('LineItemDraft compatibility builders', () => {
   it('builds a DEFAULT model', () => {
-    const lineItemDraft = LineItemDraft.random().build();
+    const lineItemDraft = LineItemDraft.random().build() as TLineItemDraft;
     validateRestFields(lineItemDraft);
   });
 
   it('builds a REST model', () => {
-    const lineItemDraft = LineItemDraft.random().buildRest();
+    const lineItemDraft =
+      LineItemDraft.random().buildRest() as TLineItemDraftRest;
     validateRestFields(lineItemDraft);
   });
 
   it('builds a GraphQL model', () => {
-    const lineItemDraft = LineItemDraft.random().buildGraphql();
+    const lineItemDraft =
+      LineItemDraft.random().buildGraphql() as TLineItemDraftGraphql;
     validateCommonFields(lineItemDraft);
   });
 });
