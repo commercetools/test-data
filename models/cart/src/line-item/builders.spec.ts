@@ -1,7 +1,4 @@
-import { ChannelGraphql } from '@commercetools-test-data/channel';
-import { LocalizedString } from '@commercetools-test-data/commons';
 import { TBuilder } from '@commercetools-test-data/core';
-import { TaxRate } from '@commercetools-test-data/tax-category';
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
 import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../index';
 import { TLineItemGraphql, TLineItemRest } from './types';
@@ -9,17 +6,11 @@ import { LineItem, LineItemRest, LineItemGraphql } from './index';
 
 const populateRestModel = (model: TBuilder<TLineItemRest>) =>
   model
-    .productSlug(LocalizedString.presets.ofSlugs())
-    .taxRate(TaxRate.random())
     .taxedPrice(TaxedItemPriceRest.random())
     .custom(CustomFieldBooleanType.random());
 
 const populateGraphqlModel = (model: TBuilder<TLineItemGraphql>) =>
   model
-    .taxRate(TaxRate.random())
-    .supplyChannel(ChannelGraphql.random())
-    .distributionChannel(ChannelGraphql.random())
-    .productSlugAllLocales(LocalizedString.presets.ofSlugs())
     .taxedPrice(TaxedItemPriceGraphql.random())
     .custom(CustomFieldBooleanType.random());
 
@@ -30,10 +21,6 @@ const validateCommonFields = (model: TLineItemRest | TLineItemGraphql) => {
       key: expect.any(String),
       productId: expect.any(String),
       productKey: expect.any(String),
-      productType: expect.objectContaining({
-        id: expect.any(String),
-        typeId: 'product-type',
-      }),
       price: expect.objectContaining({
         id: expect.any(String),
         value: expect.any(Object),
@@ -84,6 +71,10 @@ const validateRestFields = (model: TLineItemRest) => {
       variant: expect.objectContaining({
         attributes: expect.any(Array),
       }),
+      productType: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'product-type',
+      }),
       name: expect.objectContaining({
         en: expect.any(String),
         de: expect.any(String),
@@ -115,6 +106,10 @@ const validateGraphqlFields = (model: TLineItemGraphql) => {
         attributesRaw: expect.any(Array),
         __typename: 'ProductVariant',
       }),
+      productType: expect.objectContaining({
+        id: expect.any(String),
+        __typename: 'ProductTypeDefinition',
+      }),
       price: expect.objectContaining({
         __typename: 'ProductPrice',
       }),
@@ -134,9 +129,6 @@ const validateGraphqlFields = (model: TLineItemGraphql) => {
       distributionChannel: expect.objectContaining({
         roles: expect.arrayContaining([expect.any(String)]),
         __typename: 'Channel',
-      }),
-      productType: expect.objectContaining({
-        __typename: 'Reference',
       }),
       nameAllLocales: expect.arrayContaining([
         {

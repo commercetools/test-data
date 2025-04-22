@@ -1,24 +1,9 @@
-import {
-  ReferenceDraftRest,
-  ReferenceDraftGraphql,
-} from '@commercetools-test-data/commons';
-import { TBuilder } from '@commercetools-test-data/core';
 import { TLineItemDraftRest, TLineItemDraftGraphql } from '../types';
 import {
   LineItemDraft,
   LineItemDraftRest,
   LineItemDraftGraphql,
 } from './index';
-
-const populateRestModel = (model: TBuilder<TLineItemDraftRest>) =>
-  model
-    .supplyChannel(ReferenceDraftRest.presets.channelReference())
-    .distributionChannel(ReferenceDraftRest.presets.channelReference());
-
-const populateGraphqlModel = (model: TBuilder<TLineItemDraftGraphql>) =>
-  model
-    .supplyChannel(ReferenceDraftGraphql.presets.channelReference())
-    .distributionChannel(ReferenceDraftGraphql.presets.channelReference());
 
 const validateCommonFields = (
   model: TLineItemDraftRest | TLineItemDraftGraphql
@@ -29,7 +14,7 @@ const validateCommonFields = (
       productId: expect.any(String),
       sku: expect.any(String),
       quantity: expect.any(Number),
-      variantId: expect.any(String),
+      variantId: expect.any(Number),
       supplyChannel: expect.objectContaining({
         typeId: 'channel',
       }),
@@ -60,35 +45,30 @@ const validateRestFields = (model: TLineItemDraftRest) => {
 
 describe('LineItemDraft model builders', () => {
   it('builds a REST model', () => {
-    const lineItemDraft = populateRestModel(LineItemDraftRest.random()).build();
+    const lineItemDraft = LineItemDraftRest.random().build();
 
-    console.log(lineItemDraft);
     validateRestFields(lineItemDraft);
   });
 
   it('builds a GraphQL model', () => {
-    const lineItemDraft = populateGraphqlModel(
-      LineItemDraftGraphql.random()
-    ).build();
+    const lineItemDraft = LineItemDraftGraphql.random().build();
     validateCommonFields(lineItemDraft);
   });
 });
 
 describe('LineItemDraft compatibility builders', () => {
   it('builds a DEFAULT model', () => {
-    const lineItemDraft = populateRestModel(LineItemDraft.random()).build();
+    const lineItemDraft = LineItemDraft.random().build();
     validateRestFields(lineItemDraft);
   });
 
   it('builds a REST model', () => {
-    const lineItemDraft = populateRestModel(LineItemDraft.random()).buildRest();
+    const lineItemDraft = LineItemDraft.random().buildRest();
     validateRestFields(lineItemDraft);
   });
 
   it('builds a GraphQL model', () => {
-    const lineItemDraft = populateGraphqlModel(
-      LineItemDraft.random()
-    ).buildGraphql();
+    const lineItemDraft = LineItemDraft.random().buildGraphql();
     validateCommonFields(lineItemDraft);
   });
 });

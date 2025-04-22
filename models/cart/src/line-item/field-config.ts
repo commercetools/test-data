@@ -1,3 +1,4 @@
+import { ChannelGraphql } from '@commercetools-test-data/channel';
 import {
   CentPrecisionMoney,
   LocalizedString,
@@ -16,6 +17,8 @@ import {
   ProductVariantGraphql,
 } from '@commercetools-test-data/product';
 import {} from '@commercetools-test-data/product/src/product-variant';
+import { ProductType } from '@commercetools-test-data/product-type';
+import { TaxRate } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
 import { TLineItemRest, TLineItemGraphql } from './types';
@@ -27,7 +30,6 @@ const commonFieldsConfig = {
   key: fake((f) => f.string.uuid()),
   productId: fake((f) => f.string.uuid()),
   productKey: fake((f) => f.string.uuid()),
-  productSlug: null,
   price: fake(() => Price.random()),
   quantity: fake((f) =>
     f.number.int({
@@ -38,7 +40,7 @@ const commonFieldsConfig = {
   taxedPrice: null,
   taxedPricePortions: [],
   state: [],
-  taxRate: null,
+  taxRate: fake(() => TaxRate.random()),
   perMethodTaxRate: [],
   priceMode: oneOf(...Object.values(priceMode)),
   lineItemMode: oneOf(...Object.values(lineItemMode)),
@@ -53,6 +55,7 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
   fields: {
     ...commonFieldsConfig,
     name: fake(() => LocalizedString.random()),
+    productSlug: fake(() => LocalizedString.presets.ofSlugs()),
     productType: fake(() => ReferenceRest.presets.productTypeReference()),
     variant: fake(() => ProductVariantRest.random()),
     totalPrice: fake(() => CentPrecisionMoney.random()),
@@ -65,16 +68,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
   fields: {
     ...commonFieldsConfig,
     name: null,
-    productType: fake(() => ReferenceGraphql.presets.productTypeReference()),
+    productSlug: null,
+    productType: fake(() => ProductType.random()),
     variant: fake(() => ProductVariantGraphql.random()),
     totalPrice: fake(() => Money.random()),
-    supplyChannel: fake(() => ReferenceGraphql.presets.channelReference()),
-    distributionChannel: fake(() =>
-      ReferenceGraphql.presets.channelReference()
-    ),
+    supplyChannel: fake(() => ChannelGraphql.random()),
+    distributionChannel: fake(() => ChannelGraphql.random()),
     distributionChannelRef: null,
     nameAllLocales: fake((f) => LocalizedString.random()),
-    productSlugAllLocales: null,
+    productSlugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
     productTypeRef: null,
     supplyChannelRef: null,
     __typename: 'LineItem',
