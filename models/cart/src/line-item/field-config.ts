@@ -1,4 +1,3 @@
-import { ChannelGraphql } from '@commercetools-test-data/channel';
 import {
   CentPrecisionMoney,
   LocalizedString,
@@ -54,8 +53,8 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
     productType: fake(() => ReferenceRest.presets.productTypeReference()),
     variant: fake(() => ProductVariant.ProductVariantRest.random()),
     totalPrice: fake(() => CentPrecisionMoney.random()),
-    supplyChannel: fake(() => ReferenceRest.random().typeId('channel')),
-    distributionChannel: fake(() => ReferenceRest.random().typeId('channel')),
+    supplyChannel: fake(() => ReferenceRest.presets.channelReference()),
+    distributionChannel: fake(() => ReferenceRest.presets.channelReference()),
   },
 };
 
@@ -66,8 +65,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     productType: fake(() => ReferenceGraphql.presets.productTypeReference()),
     variant: fake(() => ProductVariant.ProductVariantGraphql.random()),
     totalPrice: fake(() => Money.random()),
-    supplyChannel: null,
-    distributionChannel: null,
+    supplyChannel: fake(() => ReferenceGraphql.presets.channelReference()),
+    distributionChannel: fake(() =>
+      ReferenceGraphql.presets.channelReference()
+    ),
     distributionChannelRef: null,
     nameAllLocales: fake((f) => LocalizedString.random()),
     productSlugAllLocales: null,
