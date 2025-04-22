@@ -11,7 +11,10 @@ import {
   type TModelFieldsConfig,
   oneOf,
 } from '@commercetools-test-data/core';
-import { ProductVariant } from '@commercetools-test-data/product';
+import {
+  ProductVariantRest,
+  ProductVariantGraphql,
+} from '@commercetools-test-data/product';
 import {} from '@commercetools-test-data/product/src/product-variant';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
@@ -51,7 +54,7 @@ export const restFieldsConfig: TModelFieldsConfig<TLineItemRest> = {
     ...commonFieldsConfig,
     name: fake(() => LocalizedString.random()),
     productType: fake(() => ReferenceRest.presets.productTypeReference()),
-    variant: fake(() => ProductVariant.ProductVariantRest.random()),
+    variant: fake(() => ProductVariantRest.random()),
     totalPrice: fake(() => CentPrecisionMoney.random()),
     supplyChannel: fake(() => ReferenceRest.presets.channelReference()),
     distributionChannel: fake(() => ReferenceRest.presets.channelReference()),
@@ -63,7 +66,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     ...commonFieldsConfig,
     name: null,
     productType: fake(() => ReferenceGraphql.presets.productTypeReference()),
-    variant: fake(() => ProductVariant.ProductVariantGraphql.random()),
+    variant: fake(() => ProductVariantGraphql.random()),
     totalPrice: fake(() => Money.random()),
     supplyChannel: fake(() => ReferenceGraphql.presets.channelReference()),
     distributionChannel: fake(() =>
