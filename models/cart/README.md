@@ -33,34 +33,38 @@ const emptyCartDraft = CartDraft.presets.empty().build<TCartDraft>();
 
 ```ts
 import {
-  CustomLineItem,
-  CustomLineItemDraft,
-  type TCustomLineItem,
-  type TCustomLineItemDraft,
+  CustomLineItemRest,
+  CustomLineItemDraftRest,
+  CustomLineItemGraphql,
+  CustomLineItemDraftGraphql,
 } from '@commercetools-test-data/cart';
 
-const customLineItem = CustomLineItem.random().build<TCustomLineItem>();
-const customLineItemDraft =
-  CustomLineItemDraft.random().build<TCustomLineItemDraft>();
+const restCustomLineItem = CustomLineItemRest.random().build();
+const graphqlCustomLineItem = CustomLineItemGraphql.random().build();
+
+const restCustomLineItemDraft = CustomLineItemDraftRest.random().build();
+const graphqlCustomLineItemDraft = CustomLineItemDraftGraphql.random().build();
 ```
 
 ## LineItem
 
 ```ts
 import {
-  LineItem,
-  LineItemDraft,
-  type TLineItem,
-  type TLineItemDraft,
+  LineItemRest,
+  LineItemDraftRest
+  LineItemGraphql,
+  LineItemDraftGraphql,
 } from '@commercetools-test-data/cart';
 
-const lineItem = LineItem.random().build<TLineItem>();
-const lineItemDraft = LineItemDraft.random().build<TLineItemDraft>();
+const restLineItem = LineItemRest.random().build();
+const graphqlLineItem = LineItemGraphql.random().build();
+
+const restLineItemDraft = LineItemDraftRest.random().build();
+const graphqlLineItemDraft = LineItemDraftGraphql.random().build()
 
 // Presets
-const emptyLineItemDraft = LineItemDraft.presets
-  .empty()
-  .build<TLineItemDraft>();
+const restEmptyLineItemDraft = LineItemDraftRest.presets.empty().build();
+const graphqlEmptyLineItemDraft = LineItemDraftGraphql.presets.empty().build()
 ```
 
 ## TaxPortion
