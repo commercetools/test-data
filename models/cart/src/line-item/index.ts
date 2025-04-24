@@ -1,9 +1,28 @@
-export * as LineItemDraft from './line-item-draft';
-export * as LineItem from '../line-item';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatLineItemModelBuilder,
+} from './builders';
+import * as constants from './constants';
+import * as modelPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from '../line-item/line-item-draft/presets';
-export * as constants from './constants';
+export const LineItemRest = {
+  random: RestModelBuilder,
+  presets: modelPresets.default,
+};
 
-export * from './types';
+export const LineItemGraphql = {
+  random: GraphqlModelBuilder,
+  presets: modelPresets.default,
+};
+/**
+ * @deprecated Use `LineItemRest` or `LineItemGraphql` instead.
+ */
+export const LineItem = {
+  random: CompatLineItemModelBuilder,
+  presets: modelPresets.default,
+  /**
+   * @deprecated Import `constants` directly from this package root instead of accessing them via the `LineItem` model.
+   */
+  constants,
+};

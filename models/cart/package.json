@@ -30,6 +30,7 @@
     "@commercetools-test-data/type": "10.15.3",
     "@commercetools-test-data/graphql-types": "10.15.3",
     "@commercetools-test-data/product": "10.15.3",
+    "@commercetools-test-data/product-type": "10.15.3",
     "@commercetools-test-data/shipping-method": "10.15.3",
     "@commercetools-test-data/store": "10.15.3",
     "@commercetools-test-data/tax-category": "10.15.3",

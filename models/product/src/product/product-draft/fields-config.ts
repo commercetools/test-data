@@ -12,7 +12,7 @@ import {
 import {
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
-} from '../../product-variant';
+} from '../../product-variant/product-variant-draft';
 import { productPriceMode } from '../constants';
 import type { TProductDraftGraphql, TProductDraftRest } from '../types';
 
