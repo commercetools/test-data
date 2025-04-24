@@ -2,12 +2,12 @@ import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as taxedPricePresets from './presets';
 export * from './types';
 
-export const taxedPriceRest = {
+export const TaxedPriceRest = {
   random: RestModelBuilder,
   presets: taxedPricePresets.restPresets,
 };
 
-export const taxedPriceGraphql = {
+export const TaxedPriceGraphql = {
   random: GraphqlModelBuilder,
   presets: taxedPricePresets.graphqlPresets,
 };

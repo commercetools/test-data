@@ -107,3 +107,15 @@ import {
 const restShippingInfo = ShippingInfoRest.random().build();
 const graphqlShippingInfo = ShippingInfoGraphql.random().build();
 ```
+
+## TaxedPrice
+
+```ts
+import {
+  TaxedPriceRest,
+  TaxedPriceGraphql,
+} from '@commercetools-test-data/cart';
+
+const restTaxedPrice = TaxedPriceRest.random().build();
+const graphqlTaxedPrice = TaxedPriceGraphql.random().build();
+```
