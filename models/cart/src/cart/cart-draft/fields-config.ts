@@ -4,7 +4,7 @@ import {
   type TModelFieldsConfig,
   oneOf,
 } from '@commercetools-test-data/core';
-import * as LineItem from '../../line-item';
+import { LineItemDraft } from '../../index';
 import {
   inventoryMode,
   origin,
@@ -29,7 +29,7 @@ const commonFieldsConfig = {
   taxMode: oneOf(...Object.values(taxMode)),
   taxRoundingMode: oneOf(...Object.values(taxRoundingMode)),
   taxCalculationMode: oneOf(...Object.values(taxCalculationMode)),
-  lineItems: fake(() => [LineItem.LineItemDraft.random()]),
+  lineItems: fake(() => [LineItemDraft.random()]),
   customLineItems: [],
   shippingAddress: fake(() => AddressDraft.random()),
   billingAddress: fake(() => AddressDraft.random()),
