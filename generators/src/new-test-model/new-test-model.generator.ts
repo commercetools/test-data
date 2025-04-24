@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import snakeCase from 'lodash/snakeCase';
@@ -5,6 +6,12 @@ import prompts from 'prompts';
 import { render as renderTemplate } from 'squirrelly';
 import { CodeGenerator } from '../types';
 import { packageTemplatesData, modelTemplatesData } from './templates';
+
+type TExecCommandError = Error & {
+  status?: number;
+  stdout?: Buffer;
+  stderr?: Buffer;
+};
 
 const servicesToTypePrefixMap = {
   core: 'TCore',
@@ -114,7 +121,7 @@ export const newTestModelGenerator: CodeGenerator = {
       join(__dirname, '..', '..', '..', 'core', 'package.json')
     );
 
-    // 2. Generate the files
+    // 2. Generate the model files
     const templatesData = {
       modelName,
       modelCodename,
@@ -186,6 +193,61 @@ export const newTestModelGenerator: CodeGenerator = {
             })
           );
         });
+    }
+
+    // 3. Update the single package preset
+    if (generationType === 'standalone') {
+      const presetDirectoryPath = join(
+        __dirname,
+        '..',
+        '..',
+        '..',
+        'presets',
+        'all-packages'
+      );
+      // Generate the re-export proxy file
+      writeFileSync(
+        join(presetDirectoryPath, 'src', `${modelCodename}.ts`),
+        `export * from '@commercetools-test-data/${modelCodename}';`
+      );
+      // Update package.json
+      const presetPackageJson = (
+        await import(join(presetDirectoryPath, 'package.json'))
+      ).default;
+      presetPackageJson.files.push(modelCodename);
+      presetPackageJson.preconstruct.entrypoints.push(`${modelCodename}.ts`);
+      presetPackageJson.dependencies[
+        `@commercetools-test-data/${modelCodename}`
+      ] = 'workspace:*';
+      writeFileSync(
+        join(presetDirectoryPath, 'package.json'),
+        JSON.stringify(presetPackageJson, null, 2)
+      );
+
+      // Run preconstruct to generate the proxy package.json file
+      const rootDirectoryPath = join(__dirname, '..', '..', '..');
+      try {
+        execSync('npx preconstruct fix', {
+          cwd: rootDirectoryPath,
+        });
+      } catch (err) {
+        const error = err as TExecCommandError;
+        throw new Error(
+          `Failed to run "preconstruct fix": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
+        );
+      }
+
+      // Run pnpm install to install the new package
+      try {
+        execSync('pnpm install', {
+          cwd: rootDirectoryPath,
+        });
+      } catch (err) {
+        const error = err as TExecCommandError;
+        throw new Error(
+          `Failed to run "pnpm install": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
+        );
+      }
     }
 
     console.log(

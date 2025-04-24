@@ -1,0 +1,6 @@
+{
+  "name": "@commercetools/composable-commerce-test-data-quote-request",
+  "version": "1.0.0",
+  "main": "dist/commercetools-composable-commerce-test-data-quote-request.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-quote-request.esm.js"
+}

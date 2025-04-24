@@ -1,0 +1,6 @@
+{
+  "name": "@commercetools/composable-commerce-test-data-attribute-group",
+  "version": "1.0.0",
+  "main": "dist/commercetools-composable-commerce-test-data-attribute-group.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-attribute-group.esm.js"
+}

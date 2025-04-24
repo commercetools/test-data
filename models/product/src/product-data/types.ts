@@ -3,12 +3,11 @@ import {
   ProductData,
   ProductVariant,
   SearchKeyword,
-  CategoryOrderHints,
   Category,
 } from '@commercetools/platform-sdk';
 import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { ValueOf } from '@commercetools-test-data/core/src/@jackfranklin/test-data-bot';
+import { TCtpCategoryOrderHint } from '@commercetools-test-data/graphql-types';
 
 // The base generator model. Consumers configure these fields.
 export type TProductData = Omit<ProductData, 'categories'> & {
@@ -25,11 +24,7 @@ export type TProductDataRest = Omit<ProductData, 'categories'> & {
 };
 
 // This type only appears in the GraphQL representation
-export type TCategoryOrderHintGraphql = {
-  categoryId: keyof CategoryOrderHints;
-  orderHint: ValueOf<CategoryOrderHints>;
-  __typename: 'CategoryOrderHint';
-};
+export type TCategoryOrderHintGraphql = TCtpCategoryOrderHint;
 
 export type TCategoryReferenceGraphql = CategoryReference & {
   __typename: 'Reference';
