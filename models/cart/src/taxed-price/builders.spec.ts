@@ -1,7 +1,7 @@
 import { CentPrecisionMoney, Money } from '@commercetools-test-data/commons';
 import {
-  taxedPriceRest,
-  taxedPriceGraphql,
+  TaxedPriceRest,
+  TaxedPriceGraphql,
   type TTaxedPriceRest,
   type TTaxedPriceGraphql,
 } from './index';
@@ -78,8 +78,7 @@ const validateGraphqlFields = (model: TTaxedPriceGraphql) => {
 
 describe('taxed-price Builder', () => {
   it('should build properties for the REST representation', () => {
-    const restModel = taxedPriceRest
-      .random()
+    const restModel = TaxedPriceRest.random()
       .totalTax(CentPrecisionMoney.random())
       .build();
 
@@ -87,8 +86,7 @@ describe('taxed-price Builder', () => {
   });
 
   it('should build properties for the GraphQL representation', () => {
-    const graphqlModel = taxedPriceGraphql
-      .random()
+    const graphqlModel = TaxedPriceGraphql.random()
       .totalTax(Money.random())
       .build();
 
