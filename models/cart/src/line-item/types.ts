@@ -1,34 +1,26 @@
-import { Channel, LineItem, LineItemDraft } from '@commercetools/platform-sdk';
-import {
-  TLocalizedStringGraphql,
-  TReferenceGraphql,
-} from '@commercetools-test-data/commons';
+import type { LineItem, LineItemDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-
-export type TLineItem = Omit<
-  LineItem,
-  'supplyChannel' | 'distributionChannel'
-> & {
-  supplyChannel: Channel;
-  distributionChannel: Channel;
-};
-
+import {
+  TCtpLineItem,
+  TCtpLineItemDraft,
+} from '@commercetools-test-data/graphql-types';
+/**
+ * @deprecated Use `TCtpLineItemRest` or `TCtpLineItemGraphql` instead.
+ */
+export type TLineItem = LineItem;
 export type TLineItemRest = LineItem;
-
-export type TLineItemGraphql = TLineItem & {
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  productSlugAllLocales?: TLocalizedStringGraphql | null;
-  productTypeRef: TReferenceGraphql | null;
-  supplyChannelRef: TReferenceGraphql | null;
-  distributionChannelRef: TReferenceGraphql | null;
-  __typename: 'LineItem';
-};
-
-export type TLineItemBuilder = TBuilder<TLineItem>;
-export type TCreateLineItemBuilder = () => TLineItemBuilder;
-
+export type TLineItemGraphql = TCtpLineItem;
+/**
+ * @deprecated Use `TCtpLineItemDraftRest` or `TCtpLineItemDraftGraphql` instead.
+ */
 export type TLineItemDraft = LineItemDraft;
+export type TLineItemDraftRest = LineItemDraft;
+export type TLineItemDraftGraphql = TCtpLineItemDraft;
 
-export type TLineItemDraftGraphql = TLineItemDraft;
-export type TLineItemDraftBuilder = TBuilder<TLineItemDraft>;
-export type TCreateLineItemDraftBuilder = () => TLineItemDraftBuilder;
+export type TCreateLineItemBuilder<
+  TLineItemModel extends
+    | TLineItemRest
+    | TLineItemGraphql
+    | TLineItemDraftRest
+    | TLineItemDraftGraphql,
+> = () => TBuilder<TLineItemModel>;
