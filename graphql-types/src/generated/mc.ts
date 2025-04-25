@@ -9,9 +9,10 @@ type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
 type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
-type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
-  [_ in K]?: never;
-};
+type MakeEmpty<
+  T extends { [key: string]: unknown },
+  K extends keyof T,
+> = { [_ in K]?: never };
 type Incremental<T> =
   | T
   | {
@@ -213,6 +214,10 @@ export type TMcMutation_CreateMyProjectArgs = {
 
 export type TMcMutation_CreateOAuthClientArgs = {
   draft: TMcOAuthClientCreationInput;
+};
+
+export type TMcMutation_CreateUserFromIdentityArgs = {
+  token: Scalars['String']['input'];
 };
 
 export type TMcMutation_DeleteAccountArgs = {
