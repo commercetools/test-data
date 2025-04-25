@@ -10,6 +10,7 @@ export * from './custom-line-item';
 export * from './custom-line-item/custom-line-item-draft';
 export * from './line-item';
 export * from './line-item/line-item-draft';
+export * from './taxed-price';
 
 export * from './shipping-info';
 export * from './tax-portion';
