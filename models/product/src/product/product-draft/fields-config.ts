@@ -50,5 +50,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDraftGraphql> = {
     state: fake(() => ReferenceGraphql.presets.stateReference()),
     taxCategory: fake(() => ReferenceGraphql.presets.taxCategoryReference()),
     variants: fake(() => [ProductVariantDraftGraphql.random()]),
+    attributes: null,
   },
 };

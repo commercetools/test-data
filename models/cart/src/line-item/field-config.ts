@@ -80,6 +80,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
     productTypeRef: null,
     supplyChannelRef: null,
     __typename: 'LineItem',
+    recurrenceInfo: null,
   },
   postBuild: (model) => {
     const name = model.nameAllLocales

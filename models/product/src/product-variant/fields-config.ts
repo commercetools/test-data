@@ -28,6 +28,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductVariantGraphql> = {
   fields: {
     ...commonFieldsConfig,
     attributesRaw: fake(() => [Attribute.random()]),
+    allRecurrencePrices: null,
     __typename: 'ProductVariant',
   },
   postBuild: (model, context) => {
