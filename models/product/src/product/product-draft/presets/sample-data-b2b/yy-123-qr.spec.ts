@@ -237,6 +237,7 @@ describe(`with yy123Qr preset`, () => {
     const yy123QrPresetGraphql = yy123Qr().buildGraphql<TProductDraft>();
     expect(yy123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "blasthole-drills",

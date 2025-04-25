@@ -237,6 +237,7 @@ describe(`with iii567Yz preset`, () => {
     const iii567YzPresetGraphql = iii567Yz().buildGraphql<TProductDraft>();
     expect(iii567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "piling-hammers",

@@ -195,6 +195,7 @@ describe(`with kk567Yz preset`, () => {
     const kk567YzPresetGraphql = kk567Yz().buildGraphql<TProductDraft>();
     expect(kk567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "landfill-compactors",

@@ -101,6 +101,7 @@ describe(`with brakePadSet preset`, () => {
       brakePadSet().buildGraphql<TProductDraft>();
     expect(brakePadSetPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

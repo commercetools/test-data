@@ -159,6 +159,7 @@ describe(`with chiantiWineGlass preset`, () => {
       chiantiWineGlass().buildGraphql<TProductDraft>();
     expect(chiantiWineGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

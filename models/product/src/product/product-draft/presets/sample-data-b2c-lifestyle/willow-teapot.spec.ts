@@ -155,6 +155,7 @@ describe(`with willowTeapot preset`, () => {
       willowTeapot().buildGraphql<TProductDraftGraphql>();
     expect(willowTeapotPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "dinnerware",

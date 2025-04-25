@@ -237,6 +237,7 @@ describe(`with jjj890Op preset`, () => {
     const jjj890OpPresetGraphql = jjj890Op().buildGraphql<TProductDraft>();
     expect(jjj890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "piling-hammers",

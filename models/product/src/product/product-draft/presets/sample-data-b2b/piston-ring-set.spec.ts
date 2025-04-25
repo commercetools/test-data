@@ -101,6 +101,7 @@ describe(`with pistonRingSet preset`, () => {
       pistonRingSet().buildGraphql<TProductDraft>();
     expect(pistonRingSetPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

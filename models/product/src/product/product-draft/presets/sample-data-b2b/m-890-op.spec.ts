@@ -195,6 +195,7 @@ describe(`with m890Op preset`, () => {
     const m890OpPresetGraphql = m890Op().buildGraphql<TProductDraft>();
     expect(m890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "amphibious-excavators",

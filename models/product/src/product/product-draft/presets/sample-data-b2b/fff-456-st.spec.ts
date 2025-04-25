@@ -237,6 +237,7 @@ describe(`with fff456St preset`, () => {
     const fff456StPresetGraphql = fff456St().buildGraphql<TProductDraft>();
     expect(fff456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "quarrying-hammers",

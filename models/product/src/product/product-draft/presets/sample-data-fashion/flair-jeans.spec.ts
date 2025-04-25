@@ -126,6 +126,7 @@ describe(`with flairJeans preset`, () => {
     const flairJeansPresetGraphql = flairJeans().buildGraphql<TProductDraft>();
     expect(flairJeansPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bottoms-women",

@@ -100,6 +100,7 @@ describe(`with fuelFilter preset`, () => {
     const fuelFilterPresetGraphql = fuelFilter().buildGraphql<TProductDraft>();
     expect(fuelFilterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

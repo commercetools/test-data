@@ -159,6 +159,7 @@ describe(`with slateArmchair preset`, () => {
       slateArmchair().buildGraphql<TProductDraft>();
     expect(slateArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

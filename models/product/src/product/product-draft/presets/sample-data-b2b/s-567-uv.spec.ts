@@ -195,6 +195,7 @@ describe(`with s567Uv preset`, () => {
     const s567UvPresetGraphql = s567Uv().buildGraphql<TProductDraft>();
     expect(s567UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "amphibious-excavators",

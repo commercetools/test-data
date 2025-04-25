@@ -159,6 +159,7 @@ describe(`with harvestPlate preset`, () => {
       harvestPlate().buildGraphql<TProductDraft>();
     expect(harvestPlatePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "plates",

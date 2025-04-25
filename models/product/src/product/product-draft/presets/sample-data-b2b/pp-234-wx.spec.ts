@@ -195,6 +195,7 @@ describe(`with pp234Wx preset`, () => {
     const pp234WxPresetGraphql = pp234Wx().buildGraphql<TProductDraft>();
     expect(pp234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "railroad-wheeled-excavators",

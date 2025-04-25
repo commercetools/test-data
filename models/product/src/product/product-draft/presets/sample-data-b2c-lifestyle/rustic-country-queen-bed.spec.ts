@@ -170,6 +170,7 @@ describe(`with rusticCountryQueenBed preset`, () => {
       rusticCountryQueenBed().buildGraphql<TProductDraft>();
     expect(rusticCountryQueenBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedroom-furniture",

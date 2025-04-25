@@ -159,6 +159,7 @@ describe(`with wineBottleOpener preset`, () => {
       wineBottleOpener().buildGraphql<TProductDraftGraphql>();
     expect(wineBottleOpenerPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-accessories",

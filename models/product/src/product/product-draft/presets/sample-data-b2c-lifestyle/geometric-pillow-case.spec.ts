@@ -376,6 +376,7 @@ describe(`with geometricPillowCase preset`, () => {
       geometricPillowCase().buildGraphql<TProductDraft>();
     expect(geometricPillowCasePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-decor",

@@ -267,6 +267,7 @@ describe(`with sunnaiGlassBowl preset`, () => {
 
     expect(sunnaiGlassBowlPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bowls",

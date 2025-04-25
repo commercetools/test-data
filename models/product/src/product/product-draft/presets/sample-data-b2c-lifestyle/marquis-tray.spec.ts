@@ -163,6 +163,7 @@ describe(`with marquisTray preset`, () => {
       marquisTray().buildGraphql<TProductDraft>();
     expect(marquisTrayPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "plates",

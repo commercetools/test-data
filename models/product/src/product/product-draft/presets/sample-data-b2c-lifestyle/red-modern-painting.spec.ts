@@ -154,6 +154,7 @@ describe(`with redModernPainting preset`, () => {
       redModernPainting().buildGraphql<TProductDraft>();
     expect(redModernPaintingPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

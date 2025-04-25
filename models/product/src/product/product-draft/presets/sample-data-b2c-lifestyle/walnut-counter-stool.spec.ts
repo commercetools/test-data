@@ -160,6 +160,7 @@ describe(`with walnutCounterStool preset`, () => {
       walnutCounterStool().buildGraphql<TProductDraftGraphql>();
     expect(walnutCounterStoolPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tables",

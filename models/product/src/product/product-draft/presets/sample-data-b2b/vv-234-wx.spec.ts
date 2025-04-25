@@ -237,6 +237,7 @@ describe(`with vv234Wx preset`, () => {
     const vv234WxPresetGraphql = vv234Wx().buildGraphql<TProductDraft>();
     expect(vv234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "crawler-cranes",

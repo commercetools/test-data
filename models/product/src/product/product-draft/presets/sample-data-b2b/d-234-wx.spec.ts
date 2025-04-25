@@ -195,6 +195,7 @@ describe(`with d234Wx preset`, () => {
     const d234WxPresetGraphql = d234Wx().buildGraphql<TProductDraft>();
     expect(d234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "log-loaders",

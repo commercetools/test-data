@@ -195,6 +195,7 @@ describe(`with aa123Qr preset`, () => {
     const aa123QrPresetGraphql = aa123Qr().buildGraphql<TProductDraft>();
     expect(aa123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "road-graders",

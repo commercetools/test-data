@@ -163,6 +163,7 @@ describe(`with leatherWeaveChair preset`, () => {
       leatherWeaveChair().buildGraphql<TProductDraft>();
     expect(leatherWeaveChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "new-arrivals",

@@ -195,6 +195,7 @@ describe(`with mm123Qr preset`, () => {
     const mm123QrPresetGraphql = mm123Qr().buildGraphql<TProductDraft>();
     expect(mm123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "wheeled-excavators-for-construction",

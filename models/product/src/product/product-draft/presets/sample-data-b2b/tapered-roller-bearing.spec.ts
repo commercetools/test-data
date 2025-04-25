@@ -102,6 +102,7 @@ describe(`with taperedRollerBearing preset`, () => {
       taperedRollerBearing().buildGraphql<TProductDraft>();
     expect(taperedRollerBearingPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

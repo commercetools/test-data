@@ -170,6 +170,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
       harmonyDrinkingGlass().buildGraphql<TProductDraft>();
     expect(harmonyDrinkingGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

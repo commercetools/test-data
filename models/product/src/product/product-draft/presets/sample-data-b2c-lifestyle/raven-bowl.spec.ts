@@ -154,6 +154,7 @@ describe(`with ravenBowl preset`, () => {
     const ravenBowlPresetGraphql = ravenBowl().buildGraphql<TProductDraft>();
     expect(ravenBowlPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bowls",

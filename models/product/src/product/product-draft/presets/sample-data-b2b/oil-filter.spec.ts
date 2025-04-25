@@ -100,6 +100,7 @@ describe(`with oilFilter preset`, () => {
     const oilFilterPresetGraphql = oilFilter().buildGraphql<TProductDraft>();
     expect(oilFilterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

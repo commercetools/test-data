@@ -195,6 +195,7 @@ describe(`with jj234Wx preset`, () => {
     const jj234WxPresetGraphql = jj234Wx().buildGraphql<TProductDraft>();
     expect(jj234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "landfill-compactors",

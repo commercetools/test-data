@@ -160,6 +160,7 @@ describe(`with sparkleChampagneGlass preset`, () => {
       sparkleChampagneGlass().buildGraphql<TProductDraft>();
     expect(sparkleChampagneGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

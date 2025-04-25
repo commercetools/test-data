@@ -195,6 +195,7 @@ describe(`with e567Yz preset`, () => {
     const e567YzPresetGraphql = e567Yz().buildGraphql<TProductDraft>();
     expect(e567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "log-loaders",

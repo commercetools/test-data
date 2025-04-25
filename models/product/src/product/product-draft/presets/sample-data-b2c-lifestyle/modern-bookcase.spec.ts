@@ -163,6 +163,7 @@ describe(`with modernBookcase preset`, () => {
       modernBookcase().buildGraphql<TProductDraft>();
     expect(modernBookcasePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

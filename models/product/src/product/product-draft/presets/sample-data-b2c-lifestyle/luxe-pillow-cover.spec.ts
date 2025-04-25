@@ -150,6 +150,7 @@ describe(`with luxePillowCover preset`, () => {
       luxePillowCover().buildGraphql<TProductDraft>();
     expect(luxePillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

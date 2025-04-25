@@ -163,6 +163,7 @@ describe(`with greenServingPlate preset`, () => {
       greenServingPlate().buildGraphql<TProductDraft>();
     expect(greenServingPlatePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "dinnerware",

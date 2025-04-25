@@ -163,6 +163,7 @@ describe(`with stoneServingTray preset`, () => {
       stoneServingTray().buildGraphql<TProductDraftGraphql>();
     expect(stoneServingTrayPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "kitchen",

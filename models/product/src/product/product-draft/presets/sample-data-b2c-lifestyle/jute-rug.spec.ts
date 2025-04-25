@@ -184,6 +184,7 @@ describe(`with juteRug preset`, () => {
     const juteRugPresetGraphql = juteRug().buildGraphql<TProductDraft>();
     expect(juteRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

@@ -101,6 +101,7 @@ describe(`with pneumaticTire preset`, () => {
       pneumaticTire().buildGraphql<TProductDraft>();
     expect(pneumaticTirePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

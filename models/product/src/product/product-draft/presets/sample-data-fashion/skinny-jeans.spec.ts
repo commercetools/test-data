@@ -179,6 +179,7 @@ describe(`with skinnyJeans preset`, () => {
       skinnyJeans().buildGraphql<TProductDraft>();
     expect(skinnyJeansPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bottoms-women",

@@ -164,6 +164,7 @@ describe(`with toteBag preset`, () => {
     const toteBagPresetGraphql = toteBag().buildGraphql<TProductDraft>();
     expect(toteBagPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "other-women",

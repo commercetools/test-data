@@ -167,6 +167,7 @@ describe(`with roundServingTray preset`, () => {
       roundServingTray().buildGraphql<TProductDraft>();
     expect(roundServingTrayPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "plates",

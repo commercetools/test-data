@@ -195,6 +195,7 @@ describe(`with qq567Yz preset`, () => {
     const qq567YzPresetGraphql = qq567Yz().buildGraphql<TProductDraft>();
     expect(qq567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "railroad-wheeled-excavators",

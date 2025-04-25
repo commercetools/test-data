@@ -155,6 +155,7 @@ describe(`with pinkAbstractPainting preset`, () => {
       pinkAbstractPainting().buildGraphql<TProductDraft>();
     expect(pinkAbstractPaintingPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

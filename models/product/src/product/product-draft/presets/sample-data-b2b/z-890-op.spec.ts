@@ -195,6 +195,7 @@ describe(`with z890Op preset`, () => {
     const z890OpPresetGraphql = z890Op().buildGraphql<TProductDraft>();
     expect(z890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "off-highway-dump-trucks",

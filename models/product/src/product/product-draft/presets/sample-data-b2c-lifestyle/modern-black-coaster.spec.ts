@@ -160,6 +160,7 @@ describe(`with modernBlackCoaster preset`, () => {
       modernBlackCoaster().buildGraphql<TProductDraft>();
     expect(modernBlackCoasterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-accessories",

@@ -237,6 +237,7 @@ describe(`with ss123Qr preset`, () => {
     const ss123QrPresetGraphql = ss123Qr().buildGraphql<TProductDraft>();
     expect(ss123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tower-cranes",

@@ -137,6 +137,7 @@ describe(`with rusticBowl preset`, () => {
     const rusticBowlPresetGraphql = rusticBowl().buildGraphql<TProductDraft>();
     expect(rusticBowlPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [],
         "categoryOrderHints": undefined,
         "description": [

@@ -150,6 +150,7 @@ describe(`with amaliaRug preset`, () => {
     const amaliaRugPresetGraphql = amaliaRug().buildGraphql<TProductDraft>();
     expect(amaliaRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

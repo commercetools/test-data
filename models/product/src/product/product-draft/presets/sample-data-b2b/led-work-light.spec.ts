@@ -101,6 +101,7 @@ describe(`with ledWorkLight preset`, () => {
       ledWorkLight().buildGraphql<TProductDraft>();
     expect(ledWorkLightPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

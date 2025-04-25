@@ -153,6 +153,7 @@ describe(`with lanaPillowCover preset`, () => {
       lanaPillowCover().buildGraphql<TProductDraft>();
     expect(lanaPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

@@ -162,6 +162,7 @@ describe(`with glamArmchair preset`, () => {
       glamArmchair().buildGraphql<TProductDraft>();
     expect(glamArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

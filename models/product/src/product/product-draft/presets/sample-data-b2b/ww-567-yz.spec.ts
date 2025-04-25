@@ -237,6 +237,7 @@ describe(`with ww567Yz preset`, () => {
     const ww567YzPresetGraphql = ww567Yz().buildGraphql<TProductDraft>();
     expect(ww567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "crawler-cranes",

@@ -190,6 +190,7 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
       goldRimmedChampagneGlasses().buildGraphql<TProductDraft>();
     expect(goldRimmedChampagneGlassesPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "kitchen",

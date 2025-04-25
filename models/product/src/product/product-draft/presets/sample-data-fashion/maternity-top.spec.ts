@@ -242,6 +242,7 @@ describe(`with maternityTop preset`, () => {
       maternityTop().buildGraphql<TProductDraft>();
     expect(maternityTopPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tops-women",

@@ -147,6 +147,7 @@ describe(`with silkyPillowCover preset`, () => {
       silkyPillowCover().buildGraphql<TProductDraft>();
     expect(silkyPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

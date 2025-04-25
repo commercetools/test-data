@@ -195,6 +195,7 @@ describe(`with j234Wx preset`, () => {
     const j234WxPresetGraphql = j234Wx().buildGraphql<TProductDraft>();
     expect(j234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "swamp-bulldozers",

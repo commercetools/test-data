@@ -195,6 +195,7 @@ describe(`with g123Qr preset`, () => {
     const g123QrPresetGraphql = g123Qr().buildGraphql<TProductDraft>();
     expect(g123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "earthmoving-bulldozers",

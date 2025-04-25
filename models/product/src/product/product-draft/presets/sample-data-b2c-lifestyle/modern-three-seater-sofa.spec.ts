@@ -198,6 +198,7 @@ describe(`with modernThreeSeaterSofa preset`, () => {
       modernThreeSeaterSofa().buildGraphql<TProductDraft>();
     expect(modernThreeSeaterSofaPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

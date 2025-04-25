@@ -159,6 +159,7 @@ describe(`with sallyArmchair preset`, () => {
       sallyArmchair().buildGraphql<TProductDraft>();
     expect(sallyArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

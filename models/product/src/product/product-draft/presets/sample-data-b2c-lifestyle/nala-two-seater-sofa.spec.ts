@@ -781,6 +781,7 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
       nalaTwoSeaterSofa().buildGraphql<TProductDraft>();
     expect(nalaTwoSeaterSofaPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

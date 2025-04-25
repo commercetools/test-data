@@ -158,6 +158,7 @@ describe(`with modernLandscapePainting preset`, () => {
       modernLandscapePainting().buildGraphql<TProductDraft>();
     expect(modernLandscapePaintingPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

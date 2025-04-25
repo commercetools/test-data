@@ -100,6 +100,7 @@ describe(`with alternator preset`, () => {
     const alternatorPresetGraphql = alternator().buildGraphql<TProductDraft>();
     expect(alternatorPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

@@ -209,6 +209,7 @@ describe(`with halloweenTop preset`, () => {
       halloweenTop().buildGraphql<TProductDraft>();
     expect(halloweenTopPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tops-men",

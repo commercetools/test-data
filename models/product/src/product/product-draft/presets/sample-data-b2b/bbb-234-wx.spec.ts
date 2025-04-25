@@ -237,6 +237,7 @@ describe(`with bbb234Wx preset`, () => {
     const bbb234WxPresetGraphql = bbb234Wx().buildGraphql<TProductDraft>();
     expect(bbb234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "production-drills",

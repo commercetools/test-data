@@ -158,6 +158,7 @@ describe(`with braidedRug preset`, () => {
     const braidedRugPresetGraphql = braidedRug().buildGraphql<TProductDraft>();
     expect(braidedRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

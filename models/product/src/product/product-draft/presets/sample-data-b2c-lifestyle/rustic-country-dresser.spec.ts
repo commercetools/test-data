@@ -182,6 +182,7 @@ describe(`with rusticCountryDresser preset`, () => {
       rusticCountryDresser().buildGraphql<TProductDraft>();
     expect(rusticCountryDresserPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedroom-furniture",

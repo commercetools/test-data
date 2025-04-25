@@ -160,6 +160,7 @@ describe(`with clinkChampagneGlass preset`, () => {
       clinkChampagneGlass().buildGraphql<TProductDraft>();
     expect(clinkChampagneGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

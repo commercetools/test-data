@@ -101,6 +101,7 @@ describe(`with starterMotor preset`, () => {
       starterMotor().buildGraphql<TProductDraft>();
     expect(starterMotorPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

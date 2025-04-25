@@ -195,6 +195,7 @@ describe(`with ee567Yz preset`, () => {
     const ee567YzPresetGraphql = ee567Yz().buildGraphql<TProductDraft>();
     expect(ee567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "fine-graders",

@@ -195,6 +195,7 @@ describe(`with x456Yz preset`, () => {
     const x456YzPresetGraphql = x456Yz().buildGraphql<TProductDraft>();
     expect(x456YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "deep-mining-excavators",

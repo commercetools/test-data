@@ -183,6 +183,7 @@ describe(`with smallWoodenBowl preset`, () => {
       smallWoodenBowl().buildGraphql<TProductDraft>();
     expect(smallWoodenBowlPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bowls",

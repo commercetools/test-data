@@ -273,6 +273,7 @@ describe(`with minimalistModernSideTable preset`, () => {
       minimalistModernSideTable().buildGraphql<TProductDraft>();
     expect(minimalistModernSideTablePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tables",

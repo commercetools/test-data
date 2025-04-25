@@ -160,6 +160,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
       turnerVelvetArmchair().buildGraphql<TProductDraftGraphql>();
     expect(turnerVelvetArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

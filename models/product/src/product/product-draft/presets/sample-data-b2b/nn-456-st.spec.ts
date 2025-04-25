@@ -195,6 +195,7 @@ describe(`with nn456St preset`, () => {
     const nn456StPresetGraphql = nn456St().buildGraphql<TProductDraft>();
     expect(nn456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "wheeled-excavators-for-mining",

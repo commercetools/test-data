@@ -171,6 +171,7 @@ describe(`with canelaThreeSeaterSofa preset`, () => {
       canelaThreeSeaterSofa().buildGraphql<TProductDraft>();
     expect(canelaThreeSeaterSofaPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

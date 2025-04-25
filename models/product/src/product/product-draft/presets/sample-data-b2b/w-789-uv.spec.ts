@@ -195,6 +195,7 @@ describe(`with w789Uv preset`, () => {
     const w789UvPresetGraphql = w789Uv().buildGraphql<TProductDraft>();
     expect(w789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rigid-dump-trucks",

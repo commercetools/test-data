@@ -159,6 +159,7 @@ describe(`with rectangleServingTray preset`, () => {
       rectangleServingTray().buildGraphql<TProductDraft>();
     expect(rectangleServingTrayPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "serving-platters",

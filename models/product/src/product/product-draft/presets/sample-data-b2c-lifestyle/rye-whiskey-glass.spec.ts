@@ -167,6 +167,7 @@ describe(`with ryeWhiskeyGlass preset`, () => {
       ryeWhiskeyGlass().buildGraphql<TProductDraft>();
     expect(ryeWhiskeyGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-and-glassware",

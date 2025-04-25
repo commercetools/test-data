@@ -234,6 +234,7 @@ describe(`with mayaPillowCover preset`, () => {
       mayaPillowCover().buildGraphql<TProductDraft>();
     expect(mayaPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

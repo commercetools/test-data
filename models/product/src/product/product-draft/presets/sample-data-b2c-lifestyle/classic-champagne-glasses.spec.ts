@@ -194,6 +194,7 @@ describe(`with classicChampagneGlasses preset`, () => {
       classicChampagneGlasses().buildGraphql<TProductDraft>();
     expect(classicChampagneGlassesPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

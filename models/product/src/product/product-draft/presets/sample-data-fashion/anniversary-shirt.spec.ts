@@ -101,6 +101,7 @@ describe(`with anniversaryShirt preset`, () => {
       anniversaryShirt().buildGraphql<TProductDraft>();
     expect(anniversaryShirtPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tops-kids",

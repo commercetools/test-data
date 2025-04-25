@@ -195,6 +195,7 @@ describe(`with h456St preset`, () => {
     const h456StPresetGraphql = h456St().buildGraphql<TProductDraft>();
     expect(h456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "waste-handling-bulldozers",

@@ -139,6 +139,7 @@ describe(`with rusticOvenCasserole preset`, () => {
       rusticOvenCasserole().buildGraphql<TProductDraft>();
     expect(rusticOvenCasserolePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [],
         "categoryOrderHints": undefined,
         "description": [

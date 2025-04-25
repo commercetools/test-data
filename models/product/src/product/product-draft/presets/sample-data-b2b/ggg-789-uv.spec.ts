@@ -237,6 +237,7 @@ describe(`with ggg789Uv preset`, () => {
     const ggg789UvPresetGraphql = ggg789Uv().buildGraphql<TProductDraft>();
     expect(ggg789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "quarrying-hammers",

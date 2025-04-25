@@ -188,6 +188,7 @@ describe(`with vanillaCandle preset`, () => {
       vanillaCandle().buildGraphql<TProductDraftGraphql>();
     expect(vanillaCandlePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

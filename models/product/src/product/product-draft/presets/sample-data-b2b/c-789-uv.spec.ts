@@ -195,6 +195,7 @@ describe(`with c789Uv preset`, () => {
     const c789UvPresetGraphql = c789Uv().buildGraphql<TProductDraft>();
     expect(c789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "construction-loaders",

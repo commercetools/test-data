@@ -162,6 +162,7 @@ describe(`with orionDoubleBed preset`, () => {
       orionDoubleBed().buildGraphql<TProductDraft>();
     expect(orionDoubleBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedroom-furniture",

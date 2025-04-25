@@ -207,6 +207,7 @@ describe(`with modernGoldCoffeeTable preset`, () => {
       modernGoldCoffeeTable().buildGraphql<TProductDraft>();
     expect(modernGoldCoffeeTablePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tables",
