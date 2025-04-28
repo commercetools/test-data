@@ -11,6 +11,9 @@ export * from './custom-line-item/custom-line-item-draft';
 export * from './line-item';
 export * from './line-item/line-item-draft';
 export * from './taxed-price';
+export * from './discounted-line-item-portion';
+export * from './discounted-line-item-price';
+export * from './discounted-line-item-price-for-quantity';
 
 export * from './shipping-info';
 export * from './tax-portion';
