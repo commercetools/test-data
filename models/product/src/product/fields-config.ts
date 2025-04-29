@@ -12,7 +12,10 @@ import {
 import { ProductType } from '@commercetools-test-data/product-type';
 import { TaxCategory } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
-import { ProductCatalogData } from '../index';
+import {
+  ProductCatalogDataGraphql,
+  ProductCatalogDataRest,
+} from '../product-catalog-data';
 import { productPriceMode } from './constants';
 import type { TProductGraphql, TProductRest } from './types';
 
@@ -25,7 +28,6 @@ const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),
   lastModifiedAt: fake(getNewerDate),
   lastModifiedBy: fake(() => ClientLogging.random()),
-  masterData: fake(() => ProductCatalogData.random()),
   priceMode: oneOf(...Object.values(productPriceMode)),
   reviewRatingStatistics: null,
   state: null,
@@ -36,6 +38,7 @@ const commonFieldsConfig = {
 export const restFieldsConfig: TModelFieldsConfig<TProductRest> = {
   fields: {
     ...commonFieldsConfig,
+    masterData: fake(() => ProductCatalogDataRest.random()),
     productType: fake((f) => {
       const productTypeId = f.string.uuid();
       return ReferenceRest.presets
@@ -70,6 +73,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductRest> = {
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductGraphql> = {
   fields: {
     ...commonFieldsConfig,
+    masterData: fake(() => ProductCatalogDataGraphql.random()),
     productSelectionRefs: fake(() =>
       buildGraphqlList([], { __typename: 'SelectionOfProductQueryResult' })
     ),

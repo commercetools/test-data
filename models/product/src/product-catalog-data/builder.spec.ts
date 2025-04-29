@@ -1,99 +1,14 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { TProductCatalogData, TProductCatalogDataGraphql } from './types';
-import * as ProductCatalogData from './index';
+import { TProductCatalogDataRest, TProductCatalogDataGraphql } from './types';
+import { ProductCatalogDataRest, ProductCatalogDataGraphql } from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductCatalogData, TProductCatalogData>(
-      'default',
-      ProductCatalogData.random(),
-      expect.objectContaining({
-        current: expect.objectContaining({
-          name: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          categories: expect.arrayContaining([
-            expect.objectContaining({
-              id: expect.any(String),
-              key: expect.any(String),
-            }),
-          ]),
-          description: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          slug: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaTitle: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaDescription: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaKeywords: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          masterVariant: expect.objectContaining({ id: expect.any(Number) }),
-          variant: expect.objectContaining({ id: expect.any(Number) }),
-          variants: expect.arrayContaining([
-            expect.objectContaining({ id: expect.any(Number) }),
-          ]),
-          allVariants: expect.arrayContaining([
-            expect.objectContaining({ id: expect.any(Number) }),
-          ]),
-          searchKeywords: expect.arrayContaining([]),
-          searchKeyword: expect.arrayContaining([]),
-          categoryOrderHints: expect.any(Object),
-        }),
-        staged: expect.objectContaining({
-          name: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          categories: expect.arrayContaining([
-            expect.objectContaining({
-              id: expect.any(String),
-              key: expect.any(String),
-            }),
-          ]),
-          description: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          slug: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaTitle: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaDescription: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          metaKeywords: expect.objectContaining({
-            en: expect.any(String),
-          }),
-          masterVariant: expect.objectContaining({ id: expect.any(Number) }),
-          variant: expect.objectContaining({ id: expect.any(Number) }),
-          variants: expect.arrayContaining([
-            expect.objectContaining({ id: expect.any(Number) }),
-          ]),
-          allVariants: expect.arrayContaining([
-            expect.objectContaining({ id: expect.any(Number) }),
-          ]),
-          searchKeywords: expect.arrayContaining([]),
-          searchKeyword: expect.arrayContaining([]),
-          categoryOrderHints: expect.any(Object),
-        }),
-        published: expect.any(Boolean),
-        hasStagedChanges: expect.any(Boolean),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TProductCatalogData, TProductCatalogData>(
+    ...createBuilderSpec<TProductCatalogDataRest, TProductCatalogDataRest>(
       'rest',
-      ProductCatalogData.random(),
+      ProductCatalogDataRest.random(),
       expect.objectContaining({
         current: expect.objectContaining({
           name: expect.objectContaining({
@@ -164,9 +79,12 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductCatalogData, TProductCatalogDataGraphql>(
+    ...createBuilderSpec<
+      TProductCatalogDataGraphql,
+      TProductCatalogDataGraphql
+    >(
       'graphql',
-      ProductCatalogData.random(),
+      ProductCatalogDataGraphql.random(),
       expect.objectContaining({
         current: expect.objectContaining({
           nameAllLocales: expect.arrayContaining([

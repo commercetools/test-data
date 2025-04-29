@@ -1,15 +1,25 @@
-import { Builder } from '@commercetools-test-data/core';
-import generator from './generator';
-import transformers from './transformers';
+import { createSpecializedBuilder } from '@commercetools-test-data/core';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
-  TProductCatalogData,
   TCreateProductCatalogDataBuilder,
+  TProductCatalogDataGraphql,
+  TProductCatalogDataRest,
 } from './types';
 
-const Model: TCreateProductCatalogDataBuilder = () =>
-  Builder<TProductCatalogData>({
-    generator,
-    transformers,
+export const RestModelBuilder: TCreateProductCatalogDataBuilder<
+  TProductCatalogDataRest
+> = () =>
+  createSpecializedBuilder({
+    name: 'ProductCatalogDataRestBuilder',
+    type: 'rest',
+    modelFieldsConfig: restFieldsConfig,
   });
 
-export default Model;
+export const GraphqlModelBuilder: TCreateProductCatalogDataBuilder<
+  TProductCatalogDataGraphql
+> = () =>
+  createSpecializedBuilder({
+    name: 'ProductCatalogDataGraphqlBuilder',
+    type: 'graphql',
+    modelFieldsConfig: graphqlFieldsConfig,
+  });
