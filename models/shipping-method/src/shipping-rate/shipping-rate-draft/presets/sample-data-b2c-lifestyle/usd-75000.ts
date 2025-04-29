@@ -1,10 +1,10 @@
 import { MoneyDraft } from '@commercetools-test-data/commons';
 import { ShippingRateDraft } from '../../..';
 
-const gbp10000 = () =>
+const usd75000 = () =>
   ShippingRateDraft.presets
     .empty()
-    .price(MoneyDraft.presets.withCent().currencyCode('GBP').centAmount(10000))
+    .price(MoneyDraft.presets.withCent().currencyCode('USD').centAmount(75000))
     .tiers([]);
 
-export default gbp10000;
+export default usd75000;

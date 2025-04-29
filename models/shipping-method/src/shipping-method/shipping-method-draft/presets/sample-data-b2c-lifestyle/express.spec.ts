@@ -9,17 +9,24 @@ describe('Shipping Method with express preset', () => {
       {
         "custom": undefined,
         "isDefault": false,
-        "key": "express-delivery",
-        "localizedDescription": undefined,
-        "localizedName": {
+        "key": "express-shipping",
+        "localizedDescription": {
           "de": undefined,
-          "de-DE": "Express Delivery",
+          "de-DE": "1-2 Arbeitstage",
           "en": undefined,
-          "en-GB": "Express Delivery",
-          "en-US": "Express Delivery",
+          "en-GB": "1-2 business days",
+          "en-US": "1-2 business days",
           "fr": undefined,
         },
-        "name": "Express Delivery",
+        "localizedName": {
+          "de": undefined,
+          "de-DE": "Expressversand",
+          "en": undefined,
+          "en-GB": "Express shipping",
+          "en-US": "Express shipping",
+          "fr": undefined,
+        },
+        "name": "Express Shipping",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -31,7 +38,7 @@ describe('Shipping Method with express preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "centAmount": 50000,
+                  "centAmount": 75000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
@@ -39,16 +46,30 @@ describe('Shipping Method with express preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "centAmount": 50000,
+                  "centAmount": 75000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
               },
+              {
+                "freeAbove": undefined,
+                "price": {
+                  "centAmount": 75000,
+                  "currencyCode": "USD",
+                },
+                "tiers": [],
+              },
             ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
+            "zone": [
+              {
+                "key": "europe",
+                "typeId": "zone",
+              },
+              {
+                "key": "usa",
+                "typeId": "zone",
+              },
+            ],
           },
         ],
       }
@@ -62,23 +83,36 @@ describe('Shipping Method with express preset', () => {
       {
         "custom": undefined,
         "isDefault": false,
-        "key": "express-delivery",
-        "localizedDescription": undefined,
-        "localizedName": [
+        "key": "express-shipping",
+        "localizedDescription": [
           {
             "locale": "en-US",
-            "value": "Express Delivery",
+            "value": "1-2 business days",
           },
           {
             "locale": "de-DE",
-            "value": "Express Delivery",
+            "value": "1-2 Arbeitstage",
           },
           {
             "locale": "en-GB",
-            "value": "Express Delivery",
+            "value": "1-2 business days",
           },
         ],
-        "name": "Express Delivery",
+        "localizedName": [
+          {
+            "locale": "en-US",
+            "value": "Express shipping",
+          },
+          {
+            "locale": "de-DE",
+            "value": "Expressversand",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Express shipping",
+          },
+        ],
+        "name": "Express Shipping",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -90,7 +124,7 @@ describe('Shipping Method with express preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "centAmount": 50000,
+                  "centAmount": 75000,
                   "currencyCode": "EUR",
                 },
                 "tiers": [],
@@ -98,16 +132,30 @@ describe('Shipping Method with express preset', () => {
               {
                 "freeAbove": undefined,
                 "price": {
-                  "centAmount": 50000,
+                  "centAmount": 75000,
                   "currencyCode": "GBP",
                 },
                 "tiers": [],
               },
+              {
+                "freeAbove": undefined,
+                "price": {
+                  "centAmount": 75000,
+                  "currencyCode": "USD",
+                },
+                "tiers": [],
+              },
             ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
+            "zone": [
+              {
+                "key": "europe",
+                "typeId": "zone",
+              },
+              {
+                "key": "usa",
+                "typeId": "zone",
+              },
+            ],
           },
         ],
       }

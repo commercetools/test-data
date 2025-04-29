@@ -101,7 +101,7 @@ describe(`with sebastianFranklin01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "us-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -215,7 +215,7 @@ describe(`with sebastianFranklin01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "us-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -332,7 +332,7 @@ describe(`with sebastianFranklin01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "us-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -448,7 +448,7 @@ describe(`with sebastianFranklin01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "us-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,

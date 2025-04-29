@@ -2,12 +2,12 @@ import { MoneyDraft } from '@commercetools-test-data/commons';
 import type { TShippingRateDraftBuilder } from '../../../types';
 import * as ShippingRateDraft from '../../index';
 
-const usd5000 = (): TShippingRateDraftBuilder =>
+const usd50000 = (): TShippingRateDraftBuilder =>
   ShippingRateDraft.presets
     .empty()
-    .price(MoneyDraft.presets.withCent().currencyCode('USD').centAmount(5000))
+    .price(MoneyDraft.presets.withCent().currencyCode('USD').centAmount(50000))
     .freeAbove(
-      MoneyDraft.presets.withCent().currencyCode('USD').centAmount(100000)
+      MoneyDraft.presets.withCent().currencyCode('USD').centAmount(1000000)
     );
 
-export default usd5000;
+export default usd50000;

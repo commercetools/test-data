@@ -118,7 +118,7 @@ describe(`with jenniferSchmidt01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -248,7 +248,7 @@ describe(`with jenniferSchmidt01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -382,7 +382,7 @@ describe(`with jenniferSchmidt01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -514,7 +514,7 @@ describe(`with jenniferSchmidt01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,

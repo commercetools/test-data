@@ -10,12 +10,15 @@ describe('with eur50000 preset', () => {
 
     expect(eur50000Preset).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 1000000,
+          "currencyCode": "EUR",
+        },
         "price": {
           "centAmount": 50000,
           "currencyCode": "EUR",
         },
-        "tiers": [],
+        "tiers": undefined,
       }
     `);
   });
@@ -26,12 +29,15 @@ describe('with eur50000 preset', () => {
 
     expect(eur50000PresetGraphql).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 1000000,
+          "currencyCode": "EUR",
+        },
         "price": {
           "centAmount": 50000,
           "currencyCode": "EUR",
         },
-        "tiers": [],
+        "tiers": undefined,
       }
     `);
   });

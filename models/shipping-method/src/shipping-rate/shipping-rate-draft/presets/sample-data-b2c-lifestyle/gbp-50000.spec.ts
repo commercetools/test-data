@@ -10,12 +10,15 @@ describe('with gbp50000 preset', () => {
 
     expect(gbp50000Preset).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 1000000,
+          "currencyCode": "GBP",
+        },
         "price": {
           "centAmount": 50000,
           "currencyCode": "GBP",
         },
-        "tiers": [],
+        "tiers": undefined,
       }
     `);
   });
@@ -26,12 +29,15 @@ describe('with gbp50000 preset', () => {
 
     expect(gbp50000PresetGraphql).toMatchInlineSnapshot(`
       {
-        "freeAbove": undefined,
+        "freeAbove": {
+          "centAmount": 1000000,
+          "currencyCode": "GBP",
+        },
         "price": {
           "centAmount": 50000,
           "currencyCode": "GBP",
         },
-        "tiers": [],
+        "tiers": undefined,
       }
     `);
   });
