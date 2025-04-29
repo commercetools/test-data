@@ -1,64 +1,10 @@
-import {
-  CategoryReference,
-  ProductData,
-  ProductVariant,
-  SearchKeyword,
-  Category,
-} from '@commercetools/platform-sdk';
-import { TLocalizedStringGraphql } from '@commercetools-test-data/commons';
+import type { ProductData } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@commercetools-test-data/core';
-import { TCtpCategoryOrderHint } from '@commercetools-test-data/graphql-types';
+import type { TCtpProductData } from '@commercetools-test-data/graphql-types';
 
-// The base generator model. Consumers configure these fields.
-export type TProductData = Omit<ProductData, 'categories'> & {
-  categories: Array<Category>;
-  searchKeyword?: Array<SearchKeyword> | null;
-  allVariants: Array<ProductVariant>;
-  variant: ProductVariant;
-  skus: Array<String>;
-};
+export type TProductDataRest = ProductData;
+export type TProductDataGraphql = TCtpProductData;
 
-// Fields here must be transformable from the base model
-export type TProductDataRest = Omit<ProductData, 'categories'> & {
-  categories: Array<CategoryReference>;
-};
-
-// This type only appears in the GraphQL representation
-export type TCategoryOrderHintGraphql = TCtpCategoryOrderHint;
-
-export type TCategoryReferenceGraphql = CategoryReference & {
-  __typename: 'Reference';
-};
-
-// Fields here must be transformable from the base model
-export type TProductDataGraphql = Omit<
-  TProductData,
-  // The shape of these props is different in GraphQL
-  | 'categoryOrderHints'
-  | 'name'
-  | 'description'
-  | 'slug'
-  | 'metaTitle'
-  | 'metaKeywords'
-  | 'metaDescription'
-> & {
-  categoryOrderHints: Array<TCategoryOrderHintGraphql>;
-  categoryOrderHint: String | null;
-  categoriesRef: Array<TCategoryReferenceGraphql>;
-  name: string;
-  nameAllLocales?: TLocalizedStringGraphql | null;
-  description?: string | null;
-  descriptionAllLocales?: TLocalizedStringGraphql | null;
-  slug: string;
-  slugAllLocales?: TLocalizedStringGraphql | null;
-  metaTitle?: string | null;
-  metaTitleAllLocales?: TLocalizedStringGraphql | null;
-  metaKeywords?: string | null;
-  metaKeywordsAllLocales?: TLocalizedStringGraphql | null;
-  metaDescription?: string | null;
-  metaDescriptionAllLocales?: TLocalizedStringGraphql | null;
-  __typename: 'ProductData';
-};
-
-export type TProductDataBuilder = TBuilder<TProductData>;
-export type TCreateProductDataBuilder = () => TProductDataBuilder;
+export type TCreateProductDataBuilder<
+  TProductDataModel extends TProductDataRest | TProductDataGraphql,
+> = () => TBuilder<TProductDataModel>;

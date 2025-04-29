@@ -1,61 +1,19 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { Category } from '@commercetools-test-data/category';
-import { LocalizedString } from '@commercetools-test-data/commons';
+import { LocalizedField } from '@commercetools-test-data/commons';
 import { createBuilderSpec } from '@commercetools-test-data/core/test-utils';
-import { ProductVariant } from '../product-variant';
-import { TProductData, TProductDataGraphql } from './types';
-import * as ProductData from './index';
+import { ProductVariantGraphql } from '../product-variant';
+import { SearchKeywordGraphql } from './search-keyword';
+import { SearchKeywordsGraphql } from './search-keywords';
+import type { TProductDataRest, TProductDataGraphql } from './types';
+import { ProductDataRest, ProductDataGraphql } from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TProductData, TProductData>(
-      'default',
-      ProductData.random(),
-      expect.objectContaining({
-        name: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        categories: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            key: expect.any(String),
-          }),
-        ]),
-        description: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        slug: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        metaTitle: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        metaDescription: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        metaKeywords: expect.objectContaining({
-          en: expect.any(String),
-        }),
-        masterVariant: expect.objectContaining({ id: expect.any(Number) }),
-        variant: expect.objectContaining({ id: expect.any(Number) }),
-        variants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(Number) }),
-        ]),
-        allVariants: expect.arrayContaining([
-          expect.objectContaining({ id: expect.any(Number) }),
-        ]),
-        searchKeywords: expect.arrayContaining([]),
-        searchKeyword: expect.arrayContaining([]),
-        categoryOrderHints: expect.any(Object),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TProductData, TProductData>(
+    ...createBuilderSpec<TProductDataRest, TProductDataRest>(
       'rest',
-      ProductData.random(),
+      ProductDataRest.random(),
       expect.objectContaining({
         name: expect.objectContaining({
           en: expect.any(String),
@@ -91,9 +49,9 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TProductData, TProductDataGraphql>(
+    ...createBuilderSpec<TProductDataGraphql, TProductDataGraphql>(
       'graphql',
-      ProductData.random(),
+      ProductDataGraphql.random(),
       expect.objectContaining({
         name: expect.any(String),
         nameAllLocales: expect.arrayContaining([
@@ -141,8 +99,20 @@ describe('builder', () => {
             __typename: 'Category',
           }),
         ]),
-        searchKeyword: expect.arrayContaining([]),
-        searchKeywords: expect.arrayContaining([]),
+        searchKeyword: expect.arrayContaining([
+          expect.objectContaining({
+            text: expect.any(String),
+          }),
+        ]),
+        searchKeywords: expect.arrayContaining([
+          expect.objectContaining({
+            searchKeywords: expect.arrayContaining([
+              expect.objectContaining({
+                text: expect.any(String),
+              }),
+            ]),
+          }),
+        ]),
         metaTitle: expect.any(String),
         metaTitleAllLocales: expect.arrayContaining([
           expect.objectContaining({
@@ -182,24 +152,39 @@ describe('builder', () => {
   );
 
   it('should allow customization', () => {
-    const productData = ProductData.random()
-      .allVariants([ProductVariant.presets.happyCowMilkMasterVariant()])
+    const productData = ProductDataGraphql.random()
+      .allVariants([ProductVariantGraphql.presets.happyCowMilkMasterVariant()])
       .categories([Category.random().id('category-id-1')])
-      .categoryOrderHints({ 'category-id-1': '0.5' })
-      .description(LocalizedString.random().en('product description #1'))
-      .masterVariant(ProductVariant.presets.happyCowMilkMasterVariant())
-      .metaTitle(LocalizedString.random().en('product meta title #1'))
-      .metaKeywords(LocalizedString.random().en('product meta keywords #1'))
-      .metaDescription(
-        LocalizedString.random().en('product meta description #1')
-      )
-      .name(LocalizedString.random().en('product name #1'))
-      .searchKeyword([{ text: 'search-keyword-1' }])
-      .searchKeywords({ en: [{ text: 'search-keyword-2' }] })
+      .categoryOrderHints([{ categoryId: 'category-id-1', orderHint: '0.5' }])
+      .descriptionAllLocales([
+        LocalizedField.random().locale('en').value('product description #1'),
+      ])
+      .masterVariant(ProductVariantGraphql.presets.happyCowMilkMasterVariant())
+      .metaTitleAllLocales([
+        LocalizedField.random().locale('en').value('product meta title #1'),
+      ])
+      .metaKeywordsAllLocales([
+        LocalizedField.random().locale('en').value('product meta keywords #1'),
+      ])
+      .metaDescriptionAllLocales([
+        LocalizedField.random()
+          .locale('en')
+          .value('product meta description #1'),
+      ])
+      .nameAllLocales([
+        LocalizedField.random().locale('en').value('product name #1'),
+      ])
+      .searchKeywords([
+        SearchKeywordsGraphql.random().searchKeywords([
+          SearchKeywordGraphql.random().text('search-keyword-1'),
+        ]),
+      ])
       .skus(['sku-1', 'sku-2'])
-      .slug(LocalizedString.random().en('product-slug-1'))
-      .variant(ProductVariant.presets.happyCowMilkMasterVariant())
-      .buildGraphql<TProductDataGraphql>();
+      .slugAllLocales([
+        LocalizedField.random().locale('en').value('product-slug-1'),
+      ])
+      .variant(ProductVariantGraphql.presets.happyCowMilkMasterVariant())
+      .build();
 
     expect(productData).toEqual(
       expect.objectContaining({
@@ -211,6 +196,15 @@ describe('builder', () => {
         categories: expect.arrayContaining([
           expect.objectContaining({
             id: 'category-id-1',
+          }),
+        ]),
+        searchKeywords: expect.arrayContaining([
+          expect.objectContaining({
+            searchKeywords: expect.arrayContaining([
+              expect.objectContaining({
+                text: 'search-keyword-1',
+              }),
+            ]),
           }),
         ]),
         categoryOrderHints: expect.arrayContaining([
@@ -257,18 +251,6 @@ describe('builder', () => {
             value: 'product name #1',
           }),
         ]),
-        searchKeyword: expect.arrayContaining([
-          expect.objectContaining({
-            text: 'search-keyword-1',
-          }),
-        ]),
-        searchKeywords: expect.objectContaining({
-          en: expect.arrayContaining([
-            expect.objectContaining({
-              text: 'search-keyword-2',
-            }),
-          ]),
-        }),
         skus: expect.arrayContaining(['sku-1', 'sku-2']),
         slug: 'product-slug-1',
         slugAllLocales: expect.arrayContaining([
