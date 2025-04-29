@@ -119,3 +119,69 @@ import {
 const restTaxedPrice = TaxedPriceRest.random().build();
 const graphqlTaxedPrice = TaxedPriceGraphql.random().build();
 ```
+
+## DirectDiscount
+
+```ts
+import {
+  DirectDiscountRest,
+  DirectDiscountGraphql,
+  DirectDiscountDraftRest,
+  DirectDiscountDraftGraphql,
+} from '@commercetools-test-data/cart';
+
+const restDirectDiscount = DirectDiscountRest.random().build();
+const graphqlDirectDiscount = DirectDiscountGraphql.random().build();
+
+const restDirectDiscountDraft = DirectDiscountDraftRest.random().build();
+const graphqlDirectDiscountDraft = DirectDiscountDraftGraphql.random().build();
+```
+
+## DiscountedLineItemPortion
+
+```ts
+import {
+  DiscountedLineItemPortionRest,
+  DiscountedLineItemPortionGraphql,
+  DiscountedLineItemPortionDraftRest,
+  DiscountedLineItemPortionDraftGraphql,
+} from '@commercetools-test-data/cart';
+
+const restDiscountedLineItemPortion =
+  DiscountedLineItemPortionRest.random().build();
+const graphqlDiscountedLineItemPortion =
+  DiscountedLineItemPortionGraphql.random().build();
+
+const restDiscountedLineItemPortionDraft =
+  DiscountedLineItemPortionDraftRest.random().build();
+const graphqlDiscountedLineItemPortionDraft =
+  DiscountedLineItemPortionDraftGraphql.random().build();
+```
+
+## DiscountedLineItemPrice
+
+```ts
+import {
+  DiscountedLineItemPriceRest,
+  DiscountedLineItemPriceGraphql,
+} from '@commercetools-test-data/cart';
+
+const restDiscountedLineItemPrice =
+  DiscountedLineItemPriceRest.random().build();
+const graphqlDiscountedLineItemPrice =
+  DiscountedLineItemPriceGraphql.random().build();
+```
+
+## DiscountedLineItemPriceForQuantity
+
+```ts
+import {
+  DiscountedLineItemPriceForQuantityRest,
+  DiscountedLineItemPriceForQuantityGraphql,
+} from '@commercetools-test-data/cart';
+
+const restDiscountedLineItemPriceForQuantity =
+  DiscountedLineItemPriceForQuantityRest.random().build();
+const graphqlDiscountedLineItemPriceForQuantity =
+  DiscountedLineItemPriceForQuantityGraphql.random().build();
+```
