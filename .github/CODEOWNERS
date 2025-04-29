@@ -23,11 +23,11 @@
 /models/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 
 /models/associate-role @commercetools/customers-team-fe
-/models/attribute-group @commercetools/pacman-team-fe
+/models/attribute-group @commercetools/pdm-team-fe
 /models/business-unit @commercetools/customers-team-fe
 /models/cart @commercetools/checkout-team-fe
 /models/cart-discount @commercetools/priceless-team-fe
-/models/category @commercetools/pacman-team-fe
+/models/category @commercetools/pdm-team-fe
 /models/channel @commercetools/context-team-fe
 /models/custom-view @commercetools/shield-team-fe
 /models/customer @commercetools/customers-team-fe
@@ -35,14 +35,14 @@
 /models/discount-code @commercetools/priceless-team-fe
 /models/discounts-custom-view @commercetools/priceless-team-fe
 /models/filter-values @commercetools/priceless-team-fe
-/models/inventory-entry @commercetools/pacman-team-fe
+/models/inventory-entry @commercetools/pdm-team-fe
 /models/order @commercetools/checkout-team-fe
 /models/payment @commercetools/checkout-team-fe
-/models/product @commercetools/pacman-team-fe
+/models/product @commercetools/pdm-team-fe
 /models/product-discount @commercetools/priceless-team-fe
-/models/product-projection @commercetools/pacman-team-fe
+/models/product-projection @commercetools/pdm-team-fe
 /models/product-selection @commercetools/context-team-fe
-/models/product-type @commercetools/pacman-team-fe
+/models/product-type @commercetools/pdm-team-fe
 /models/project @commercetools/shield-team-fe
 /models/quote @commercetools/customers-team-fe
 /models/quote-request @commercetools/customers-team-fe
