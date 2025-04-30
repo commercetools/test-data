@@ -1,4 +1,8 @@
-import { createSpecializedBuilder } from '@commercetools-test-data/core';
+import {
+  createCompatibilityBuilder,
+  createSpecializedBuilder,
+  type TModelFieldsConfig,
+} from '@commercetools-test-data/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
   TCreateProductDataBuilder,
@@ -22,4 +26,17 @@ export const GraphqlModelBuilder: TCreateProductDataBuilder<
     name: 'ProductDataGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
+  });
+
+export const CompatProductModelBuilder = <
+  TProductModel extends
+    | TProductDataRest
+    | TProductDataGraphql = TProductDataRest,
+>() =>
+  createCompatibilityBuilder<TProductModel>({
+    name: 'ProductDataCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TProductModel>,
+      graphql: graphqlFieldsConfig as TModelFieldsConfig<TProductModel>,
+    },
   });

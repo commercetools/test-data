@@ -4,7 +4,10 @@ import type { TCtpProductCatalogData } from '@commercetools-test-data/graphql-ty
 
 export type TProductCatalogDataRest = ProductCatalogData;
 export type TProductCatalogDataGraphql = TCtpProductCatalogData;
-
+/**
+ * @deprecated use `TProductCatalogDataRest` or `TProductCatalogDataGraphql` instead
+ */
+export type TProductCatalogData = TProductCatalogDataRest;
 export type TCreateProductCatalogDataBuilder<
   TProductCatalogDataModel extends
     | TProductCatalogDataRest

@@ -1,5 +1,5 @@
 import { TProductGraphql, TProductRest } from '../types';
-import { restPreset, graphqlPreset } from './happy-cow-milk';
+import { restPreset, graphqlPreset, compatPreset } from './happy-cow-milk';
 
 function validateRestModel(restModel: TProductRest) {
   expect(restModel).toEqual(
@@ -58,6 +58,26 @@ describe('Product "happy cow milk" presets', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = graphqlPreset().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('Product "happy cow milk" compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = compatPreset().build();
+
+    validateRestModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = compatPreset().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = compatPreset().buildGraphql<TProductGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

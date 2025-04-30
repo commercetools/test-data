@@ -1,4 +1,8 @@
-import { GraphqlModelBuilder, RestModelBuilder } from './builder';
+import {
+  GraphqlModelBuilder,
+  RestModelBuilder,
+  CompatProductModelBuilder,
+} from './builders';
 import * as modelPresets from './presets';
 
 export * from './types';
@@ -11,4 +15,12 @@ export const ProductCatalogDataRest = {
 export const ProductCatalogDataGraphql = {
   random: GraphqlModelBuilder,
   presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `ProductCatalogDataRest` or `ProductCatalogDataGraphql` exported models instead of `ProductCatalogData`.
+ */
+export const ProductCatalogData = {
+  random: CompatProductModelBuilder,
+  presets: modelPresets.compatPresets,
 };

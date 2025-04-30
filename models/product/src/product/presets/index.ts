@@ -10,3 +10,8 @@ export const graphqlPresets = {
   happyCowMilk: happyCowMilk.graphqlPreset,
   boringGenericMilk: boringGenericMilk.graphqlPreset,
 };
+
+export const compatPresets = {
+  happyCowMilk: happyCowMilk.compatPreset,
+  boringGenericMilk: boringGenericMilk.compatPreset,
+};

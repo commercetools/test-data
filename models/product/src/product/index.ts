@@ -25,5 +25,6 @@ export const ProductGraphql = {
  */
 export const Product = {
   random: CompatProductModelBuilder,
+  presets: modelPresets.compatPresets,
   constants,
 };

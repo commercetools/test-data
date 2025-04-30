@@ -27,3 +27,10 @@ export const graphqlPreset = (): TBuilder<TProductGraphql> => {
     )
     .productType(ProductType.presets.milk());
 };
+
+export const compatPreset = (): TBuilder<TProductRest> => {
+  return ProductRest.random()
+    .key('happy-cow-milk-key')
+    .masterData(ProductCatalogDataRest.presets.happyCowMilkProductCatalogData())
+    .productType(ProductType.presets.milk());
+};

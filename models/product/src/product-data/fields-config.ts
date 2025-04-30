@@ -1,25 +1,25 @@
-import type {
-  CategoryReference,
-  Category as TCtpCategory,
-} from '@commercetools/platform-sdk';
 import { Category } from '@commercetools-test-data/category';
 import {
   LocalizedString,
+  ReferenceRest,
   type TReferenceGraphql,
 } from '@commercetools-test-data/commons';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
 import { ProductVariantGraphql, ProductVariantRest } from '../product-variant';
-import { CategoryOrderHintGraphql } from './category-order-hint';
+import {
+  CategoryOrderHintGraphql,
+  CategoryOrderHintRest,
+} from './category-order-hint';
 import { SearchKeywordsGraphql, SearchKeywordsRest } from './search-keywords';
 import type { TProductDataGraphql, TProductDataRest } from './types';
 
 export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
   fields: {
     name: fake(() => LocalizedString.random()),
-    categories: fake(() => [Category.random()]),
-    categoryOrderHints: fake((f) => ({
-      [f.string.uuid()]: String(Math.random()),
-    })),
+    categories: fake(() => [
+      ReferenceRest.random().typeId('category').obj(Category.random()),
+    ]),
+    categoryOrderHints: fake(() => [CategoryOrderHintRest.random()]),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.random()),
     metaTitle: fake(() => LocalizedString.random()),
@@ -28,18 +28,6 @@ export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
     masterVariant: fake(() => ProductVariantRest.random()),
     variants: fake(() => [ProductVariantRest.random()]),
     searchKeywords: fake(() => SearchKeywordsRest.random()),
-  },
-  postBuild: (model) => {
-    return {
-      categories: model.categories.map<CategoryReference>((category) => {
-        const expandedCategory = category as unknown as TCtpCategory;
-        return {
-          id: expandedCategory.id,
-          typeId: 'category',
-          obj: expandedCategory,
-        };
-      }),
-    };
   },
 };
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {

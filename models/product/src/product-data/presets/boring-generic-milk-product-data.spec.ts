@@ -1,55 +1,67 @@
+import type { TProductDataGraphql, TProductDataRest } from '../types';
 import { graphqlPresets, restPresets } from '.';
 
-describe('presets', () => {
-  it('should build rest preset', () => {
-    const productData = restPresets.boringGenericMilkProductData().build();
-    expect(productData).toEqual(
-      expect.objectContaining({
-        name: expect.objectContaining({
-          en: 'Boring Generic Milk',
-          de: 'Langweilige generische Milch',
+function validateRestModel(restModel: TProductDataRest) {
+  expect(restModel).toEqual(
+    expect.objectContaining({
+      name: expect.objectContaining({
+        en: 'Boring Generic Milk',
+        de: 'Langweilige generische Milch',
+      }),
+      description: expect.objectContaining({
+        en: 'Very average milk produced by a very average cow!',
+        de: 'Sehr durchschnittliche Milch von einer sehr durchschnittlichen Kuh!',
+      }),
+      slug: expect.objectContaining({
+        en: 'boring-generic-milk-slug',
+      }),
+    })
+  );
+}
+
+function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
+  expect(graphqlModel).toEqual(
+    expect.objectContaining({
+      name: 'Boring Generic Milk',
+      nameAllLocales: expect.arrayContaining([
+        expect.objectContaining({
+          locale: 'en',
+          value: 'Boring Generic Milk',
         }),
-        description: expect.objectContaining({
-          en: 'Very average milk produced by a very average cow!',
-          de: 'Sehr durchschnittliche Milch von einer sehr durchschnittlichen Kuh!',
+      ]),
+      description: 'Very average milk produced by a very average cow!',
+      descriptionAllLocales: expect.arrayContaining([
+        expect.objectContaining({
+          locale: 'en',
+          value: 'Very average milk produced by a very average cow!',
         }),
-        slug: expect.objectContaining({
-          en: 'boring-generic-milk-slug',
+        expect.objectContaining({
+          locale: 'de',
+          value:
+            'Sehr durchschnittliche Milch von einer sehr durchschnittlichen Kuh!',
         }),
-      })
-    );
+      ]),
+      slug: 'boring-generic-milk-slug',
+      slugAllLocales: expect.arrayContaining([
+        expect.objectContaining({
+          locale: 'en',
+          value: 'boring-generic-milk-slug',
+        }),
+      ]),
+    })
+  );
+}
+
+describe('Product "boring generic milk" presets', () => {
+  it('builds a REST model', () => {
+    const restModel = restPresets.boringGenericMilkProductData().build();
+
+    validateRestModel(restModel);
   });
-  it('should build graphql preset', () => {
-    const productData = graphqlPresets.boringGenericMilkProductData().build();
-    expect(productData).toEqual(
-      expect.objectContaining({
-        name: 'Boring Generic Milk',
-        nameAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: 'Boring Generic Milk',
-          }),
-        ]),
-        description: 'Very average milk produced by a very average cow!',
-        descriptionAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: 'Very average milk produced by a very average cow!',
-          }),
-          expect.objectContaining({
-            locale: 'de',
-            value:
-              'Sehr durchschnittliche Milch von einer sehr durchschnittlichen Kuh!',
-          }),
-        ]),
-        slug: 'boring-generic-milk-slug',
-        slugAllLocales: expect.arrayContaining([
-          expect.objectContaining({
-            locale: 'en',
-            value: 'boring-generic-milk-slug',
-          }),
-        ]),
-      })
-    );
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = graphqlPresets.boringGenericMilkProductData().build();
+
+    validateGraphqlModel(graphqlModel);
   });
 });

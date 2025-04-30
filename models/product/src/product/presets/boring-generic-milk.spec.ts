@@ -1,5 +1,5 @@
 import { TProductGraphql, TProductRest } from '../types';
-import { restPreset, graphqlPreset } from './boring-generic-milk';
+import { restPreset, graphqlPreset, compatPreset } from './boring-generic-milk';
 
 function validateRestModel(restModel: TProductRest) {
   expect(restModel).toEqual(
@@ -31,7 +31,7 @@ function validateGraphqlModel(graphqlModel: TProductGraphql) {
       key: 'boring-generic-milk-key',
       masterData: expect.objectContaining({
         current: expect.objectContaining({
-          slug: 'boring-generic-milk-slug',
+          __typename: 'ProductData',
         }),
         published: true,
         __typename: 'ProductCatalogData',
@@ -58,6 +58,26 @@ describe('Product "boring generic milk" presets', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = graphqlPreset().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('Product "boring generic milk" compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = compatPreset().build();
+
+    validateRestModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = compatPreset().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it('builds a GraphQL model', () => {
+    const graphqlModel = compatPreset().buildGraphql<TProductGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });

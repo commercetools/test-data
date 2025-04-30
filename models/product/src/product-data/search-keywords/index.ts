@@ -1,4 +1,4 @@
-import { RestModelBuilder, GraphqlModelBuilder } from './builder';
+import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 
 export * from './types';
 

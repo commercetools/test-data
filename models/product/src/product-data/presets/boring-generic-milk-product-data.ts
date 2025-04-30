@@ -1,11 +1,20 @@
 import { LocalizedString } from '@commercetools-test-data/commons';
 import type { TBuilder } from '@commercetools-test-data/core';
 import {
+  ProductVariant,
   ProductVariantGraphql,
   ProductVariantRest,
 } from '../../product-variant';
-import { RestModelBuilder, GraphqlModelBuilder } from '../builder';
-import type { TProductDataGraphql, TProductDataRest } from '../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatProductModelBuilder,
+} from '../builders';
+import type {
+  TProductData,
+  TProductDataGraphql,
+  TProductDataRest,
+} from '../types';
 
 export const restPreset = (): TBuilder<TProductDataRest> => {
   const productName = LocalizedString.presets
@@ -47,4 +56,24 @@ export const graphqlPreset = (): TBuilder<TProductDataGraphql> => {
     .masterVariant(
       ProductVariantGraphql.presets.boringGenericMilkMasterVariant()
     );
+};
+
+export const compatPreset = (): TBuilder<TProductData> => {
+  const productName = LocalizedString.presets
+    .empty()
+    .en('Boring Generic Milk')
+    .de('Langweilige generische Milch');
+  const productDescription = LocalizedString.presets
+    .empty()
+    .en('Very average milk produced by a very average cow!')
+    .de('Sehr durchschnittliche Milch von einer sehr durchschnittlichen Kuh!');
+  const slug = LocalizedString.presets.empty().en('boring-generic-milk-slug');
+
+  return CompatProductModelBuilder()
+    .name(productName)
+    .description(productDescription)
+    .metaTitle(productName)
+    .metaDescription(productDescription)
+    .slug(slug)
+    .masterVariant(ProductVariant.presets.boringGenericMilkMasterVariant());
 };
