@@ -180,6 +180,7 @@ describe(`with summerDress preset`, () => {
       summerDress().buildGraphql<TProductDraft>();
     expect(summerDressPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "other-women",

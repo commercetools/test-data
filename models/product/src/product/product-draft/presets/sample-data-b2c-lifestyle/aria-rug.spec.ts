@@ -177,6 +177,7 @@ describe(`with ariaRug preset`, () => {
     const ariaRugPresetGraphql = ariaRug().buildGraphql<TProductDraft>();
     expect(ariaRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

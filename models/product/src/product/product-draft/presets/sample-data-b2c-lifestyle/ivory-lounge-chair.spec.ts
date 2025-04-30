@@ -174,6 +174,7 @@ describe(`with ivoryLoungeChair preset`, () => {
       ivoryLoungeChair().buildGraphql<TProductDraft>();
     expect(ivoryLoungeChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "new-arrivals",

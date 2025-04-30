@@ -150,6 +150,7 @@ describe(`with cobblestoneRug preset`, () => {
       cobblestoneRug().buildGraphql<TProductDraftGraphql>();
     expect(cobblestoneRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

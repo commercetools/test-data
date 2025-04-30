@@ -195,6 +195,7 @@ describe(`with p234Qw preset`, () => {
     const p234QwPresetGraphql = p234Qw().buildGraphql<TProductDraft>();
     expect(p234QwPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "amphibious-excavators",

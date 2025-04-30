@@ -237,6 +237,7 @@ describe(`with uu789Uv preset`, () => {
     const uu789UvPresetGraphql = uu789Uv().buildGraphql<TProductDraft>();
     expect(uu789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "mobile-cranes",

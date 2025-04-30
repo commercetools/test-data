@@ -164,6 +164,7 @@ describe(`with promDress preset`, () => {
     const promDressPresetGraphql = promDress().buildGraphql<TProductDraft>();
     expect(promDressPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "other-women",

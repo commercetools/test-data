@@ -162,6 +162,7 @@ describe(`with travelCoffeeMug preset`, () => {
       travelCoffeeMug().buildGraphql<TProductDraftGraphql>();
     expect(travelCoffeeMugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

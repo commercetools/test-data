@@ -195,6 +195,7 @@ describe(`with v456St preset`, () => {
     const v456StPresetGraphql = v456St().buildGraphql<TProductDraft>();
     expect(v456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rigid-dump-trucks",

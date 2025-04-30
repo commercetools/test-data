@@ -311,6 +311,7 @@ describe(`with meadowRug preset`, () => {
     const meadowRugPresetGraphql = meadowRug().buildGraphql<TProductDraft>();
     expect(meadowRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "room-decor",

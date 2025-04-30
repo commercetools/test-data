@@ -177,6 +177,7 @@ describe(`with walnutCabinet preset`, () => {
       walnutCabinet().buildGraphql<TProductDraftGraphql>();
     expect(walnutCabinetPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

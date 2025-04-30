@@ -237,6 +237,7 @@ describe(`with ccc567Yz preset`, () => {
     const ccc567YzPresetGraphql = ccc567Yz().buildGraphql<TProductDraft>();
     expect(ccc567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "production-drills",

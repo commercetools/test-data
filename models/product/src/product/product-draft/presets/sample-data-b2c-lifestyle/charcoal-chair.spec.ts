@@ -167,6 +167,7 @@ describe(`with charcoalChair preset`, () => {
       charcoalChair().buildGraphql<TProductDraft>();
     expect(charcoalChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

@@ -239,6 +239,7 @@ describe(`with patternedPillowCover preset`, () => {
       patternedPillowCover().buildGraphql<TProductDraft>();
     expect(patternedPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

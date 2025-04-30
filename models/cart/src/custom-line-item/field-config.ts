@@ -47,6 +47,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
     __typename: 'CustomLineItem',
     nameAllLocales: fake((f) => LocalizedString.random()),
     taxCategoryRef: null,
+    recurrenceInfo: null
   },
   postBuild: (model) => {
     const name = model.nameAllLocales

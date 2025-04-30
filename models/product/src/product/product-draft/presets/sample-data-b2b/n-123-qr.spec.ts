@@ -195,6 +195,7 @@ describe(`with n123Qr preset`, () => {
     const n123QrPresetGraphql = n123Qr().buildGraphql<TProductDraft>();
     expect(n123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "quarry-loaders",

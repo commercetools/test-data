@@ -195,6 +195,7 @@ describe(`with ii789Uv preset`, () => {
     const ii789UvPresetGraphql = ii789Uv().buildGraphql<TProductDraft>();
     expect(ii789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "pneumatic-rollers",

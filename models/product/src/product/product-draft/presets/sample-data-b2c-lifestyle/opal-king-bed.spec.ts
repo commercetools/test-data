@@ -151,6 +151,7 @@ describe(`with opalKingBed preset`, () => {
       opalKingBed().buildGraphql<TProductDraft>();
     expect(opalKingBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedroom-furniture",

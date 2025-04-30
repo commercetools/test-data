@@ -174,6 +174,7 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
       modernUpholsteredQueenBed().buildGraphql<TProductDraft>();
     expect(modernUpholsteredQueenBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

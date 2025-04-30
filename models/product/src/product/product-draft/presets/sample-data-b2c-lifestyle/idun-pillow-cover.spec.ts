@@ -168,6 +168,7 @@ describe(`with idunPillowCover preset`, () => {
       idunPillowCover().buildGraphql<TProductDraft>();
     expect(idunPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

@@ -195,6 +195,7 @@ describe(`with ff890Op preset`, () => {
     const ff890OpPresetGraphql = ff890Op().buildGraphql<TProductDraft>();
     expect(ff890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "fine-graders",

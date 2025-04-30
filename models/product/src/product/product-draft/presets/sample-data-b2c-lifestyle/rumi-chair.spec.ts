@@ -158,6 +158,7 @@ describe(`with rumiChair preset`, () => {
     const rumiChairPresetGraphql = rumiChair().buildGraphql<TProductDraft>();
     expect(rumiChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

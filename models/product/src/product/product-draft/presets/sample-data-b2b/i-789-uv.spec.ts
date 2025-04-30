@@ -195,6 +195,7 @@ describe(`with i789Uv preset`, () => {
     const i789UvPresetGraphql = i789Uv().buildGraphql<TProductDraft>();
     expect(i789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "waste-handling-bulldozers",

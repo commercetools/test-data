@@ -151,6 +151,7 @@ describe(`with serenityQueenBed preset`, () => {
       serenityQueenBed().buildGraphql<TProductDraft>();
     expect(serenityQueenBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedroom-furniture",

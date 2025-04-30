@@ -9,9 +9,10 @@ type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
 type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>;
 };
-type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> = {
-  [_ in K]?: never;
-};
+type MakeEmpty<
+  T extends { [key: string]: unknown },
+  K extends keyof T,
+> = { [_ in K]?: never };
 type Incremental<T> =
   | T
   | {
@@ -47,6 +48,18 @@ export type TCoreAttributeGroupLimits = {
   __typename?: 'AttributeGroupLimits';
   maxTotalAttributeGroups?: Maybe<Scalars['Int']['output']>;
 };
+
+export enum TCoreAttributeMigrationStatus {
+  Aborted = 'Aborted',
+  Finished = 'Finished',
+  Shadowing = 'Shadowing',
+  StaleDataReplicatedFromProducts = 'StaleDataReplicatedFromProducts',
+  StaleDataReplicatedFromProductsV2 = 'StaleDataReplicatedFromProductsV2',
+  UsingAndReplicatingFromProducts = 'UsingAndReplicatingFromProducts',
+  UsingAndReplicatingFromProductsV2 = 'UsingAndReplicatingFromProductsV2',
+  UsingOnlyProducts = 'UsingOnlyProducts',
+  UsingOnlyProductsV2 = 'UsingOnlyProductsV2',
+}
 
 export type TCoreAttribution = {
   __typename?: 'Attribution';
@@ -217,6 +230,7 @@ export type TCoreDbClustersConfig = {
   default: TCoreDbClusterKey;
   orders?: Maybe<TCoreDbClusterConfig>;
   products?: Maybe<TCoreDbClusterConfig>;
+  recurringOrders?: Maybe<TCoreDbClusterConfig>;
 };
 
 export type TCoreDbClustersConfigInput = {
@@ -225,6 +239,7 @@ export type TCoreDbClustersConfigInput = {
   default: TCoreDbClusterKeyInput;
   orders?: InputMaybe<TCoreDbClusterConfigInput>;
   products?: InputMaybe<TCoreDbClusterConfigInput>;
+  recurringOrders?: InputMaybe<TCoreDbClusterConfigInput>;
 };
 
 export type TCoreDataFence = {
@@ -237,6 +252,11 @@ export type TCoreDataFenceDraft = {
 
 export type TCoreDataFenceStoreDraftType = {
   storeKeys: Array<Scalars['String']['input']>;
+};
+
+export type TCoreDiscountGroupLimits = {
+  __typename?: 'DiscountGroupLimits';
+  activeLimit?: Maybe<Scalars['Long']['output']>;
 };
 
 export type TCoreEsAlternativeComparisonConfig = {
@@ -286,6 +306,10 @@ export type TCoreExtensionLimits = {
 export type TCoreExternalOAuthInput = {
   authorizationHeader: Scalars['String']['input'];
   url: Scalars['String']['input'];
+};
+
+export type TCoreInitialAttributeMigrationStatus = {
+  attributeMigrationStatus?: InputMaybe<TCoreAttributeMigrationStatus>;
 };
 
 export type TCoreInitiator = {
@@ -558,6 +582,7 @@ export type TCoreProjectCustomLimits = {
   categoryLimits?: Maybe<TCoreCategoryLimits>;
   customObjects?: Maybe<TCoreCustomObjectLimits>;
   customersDomainLimits: TCoreCustomersDomainLimits;
+  discountGroups?: Maybe<TCoreDiscountGroupLimits>;
   extensions?: Maybe<TCoreExtensionLimits>;
   orderEdits?: Maybe<TCoreOrderEditLimits>;
   productDiscounts?: Maybe<TCoreProductDiscountLimits>;
@@ -584,6 +609,7 @@ export type TCoreProjectDraftType = {
   deleteDaysAfterCreation?: InputMaybe<Scalars['Int']['input']>;
   esCluster?: InputMaybe<TCoreEsClusterInput>;
   externalOAuth?: InputMaybe<TCoreExternalOAuthInput>;
+  forceAttributeMigrationStatus?: InputMaybe<TCoreInitialAttributeMigrationStatus>;
   key: Scalars['String']['input'];
   languages: Array<Scalars['Locale']['input']>;
   messagesEnabled?: InputMaybe<Scalars['Boolean']['input']>;
@@ -842,16 +868,17 @@ export type TCoreUser = TCoreVersioned & {
   businessRole?: Maybe<TCoreBusinessRole>;
   createdAt: Scalars['DateTime']['output'];
   createdBy?: Maybe<TCoreInitiator>;
-  email: Scalars['String']['output'];
-  firstName: Scalars['String']['output'];
+  email?: Maybe<Scalars['String']['output']>;
+  firstName?: Maybe<Scalars['String']['output']>;
   id: Scalars['String']['output'];
+  identityId?: Maybe<Scalars['String']['output']>;
   language: Scalars['Locale']['output'];
   lastLoginAt?: Maybe<Scalars['DateTime']['output']>;
   lastModifiedAt: Scalars['DateTime']['output'];
   lastModifiedBy?: Maybe<TCoreInitiator>;
-  lastName: Scalars['String']['output'];
+  lastName?: Maybe<Scalars['String']['output']>;
   locked: Scalars['Boolean']['output'];
-  lowercaseEmail: Scalars['String']['output'];
+  lowercaseEmail?: Maybe<Scalars['String']['output']>;
   numberFormat: Scalars['Locale']['output'];
   timeZone?: Maybe<Scalars['DateTimeZone']['output']>;
   version: Scalars['Long']['output'];

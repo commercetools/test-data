@@ -167,6 +167,7 @@ describe(`with rattanLoungeChair preset`, () => {
       rattanLoungeChair().buildGraphql<TProductDraft>();
     expect(rattanLoungeChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

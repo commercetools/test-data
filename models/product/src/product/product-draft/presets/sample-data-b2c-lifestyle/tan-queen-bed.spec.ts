@@ -159,6 +159,7 @@ describe(`with tanQueenBed preset`, () => {
       tanQueenBed().buildGraphql<TProductDraftGraphql>();
     expect(tanQueenBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

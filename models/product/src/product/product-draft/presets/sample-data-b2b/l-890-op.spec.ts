@@ -195,6 +195,7 @@ describe(`with l890Op preset`, () => {
     const l890OpPresetGraphql = l890Op().buildGraphql<TProductDraft>();
     expect(l890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "swamp-bulldozers",

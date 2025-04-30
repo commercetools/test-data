@@ -195,6 +195,7 @@ describe(`with bb456St preset`, () => {
     const bb456StPresetGraphql = bb456St().buildGraphql<TProductDraft>();
     expect(bb456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "airport-graders",

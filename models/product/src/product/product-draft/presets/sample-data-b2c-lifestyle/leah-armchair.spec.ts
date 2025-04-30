@@ -159,6 +159,7 @@ describe(`with leahArmchair preset`, () => {
       leahArmchair().buildGraphql<TProductDraft>();
     expect(leahArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

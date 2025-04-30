@@ -181,6 +181,7 @@ describe(`with modernGlamDresser preset`, () => {
       modernGlamDresser().buildGraphql<TProductDraft>();
     expect(modernGlamDresserPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

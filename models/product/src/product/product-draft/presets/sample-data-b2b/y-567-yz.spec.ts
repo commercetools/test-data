@@ -195,6 +195,7 @@ describe(`with y567Yz preset`, () => {
     const y567YzPresetGraphql = y567Yz().buildGraphql<TProductDraft>();
     expect(y567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "off-highway-dump-trucks",

@@ -151,6 +151,7 @@ describe(`with leatherCoaster preset`, () => {
       leatherCoaster().buildGraphql<TProductDraft>();
     expect(leatherCoasterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-accessories",

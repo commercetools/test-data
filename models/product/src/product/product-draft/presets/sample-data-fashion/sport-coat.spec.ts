@@ -164,6 +164,7 @@ describe(`with sportCoat preset`, () => {
     const sportCoatPresetGraphql = sportCoat().buildGraphql<TProductDraft>();
     expect(sportCoatPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tops-men",

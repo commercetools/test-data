@@ -174,6 +174,7 @@ describe(`with artDecoCoffeeTable preset`, () => {
       artDecoCoffeeTable().buildGraphql<TProductDraft>();
     expect(artDecoCoffeeTablePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

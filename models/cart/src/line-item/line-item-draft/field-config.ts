@@ -48,5 +48,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemDraftGraphql> = {
       ReferenceDraftGraphql.presets.channelReference()
     ),
     supplyChannel: fake(() => ReferenceDraftGraphql.presets.channelReference()),
+    recurrenceInfo: null,
+    perMethodExternalTaxRate: null,
   },
 };

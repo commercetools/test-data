@@ -195,6 +195,7 @@ describe(`with gg123Qr preset`, () => {
     const gg123QrPresetGraphql = gg123Qr().buildGraphql<TProductDraft>();
     expect(gg123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "vibratory-soil-compactors",

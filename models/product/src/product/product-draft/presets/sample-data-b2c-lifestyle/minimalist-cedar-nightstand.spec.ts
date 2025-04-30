@@ -176,6 +176,7 @@ describe(`with minimalistCedarNightstand preset`, () => {
       minimalistCedarNightstand().buildGraphql<TProductDraft>();
     expect(minimalistCedarNightstandPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tables",

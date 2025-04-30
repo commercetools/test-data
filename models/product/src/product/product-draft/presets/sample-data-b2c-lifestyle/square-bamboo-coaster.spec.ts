@@ -155,6 +155,7 @@ describe(`with squareBambooCoaster preset`, () => {
       squareBambooCoaster().buildGraphql<TProductDraft>();
     expect(squareBambooCoasterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "kitchen",

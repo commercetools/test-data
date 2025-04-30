@@ -101,6 +101,7 @@ describe(`with hydraulicHose preset`, () => {
       hydraulicHose().buildGraphql<TProductDraft>();
     expect(hydraulicHosePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

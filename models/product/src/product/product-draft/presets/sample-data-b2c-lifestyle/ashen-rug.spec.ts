@@ -161,6 +161,7 @@ describe(`with ashenRug preset`, () => {
     const ashenRugPresetGraphql = ashenRug().buildGraphql<TProductDraft>();
     expect(ashenRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

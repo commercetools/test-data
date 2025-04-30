@@ -162,6 +162,7 @@ describe(`with classicCoffeeCup preset`, () => {
       classicCoffeeCup().buildGraphql<TProductDraft>();
     expect(classicCoffeeCupPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-and-glassware",

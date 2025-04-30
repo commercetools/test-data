@@ -195,6 +195,7 @@ describe(`with rr890Op preset`, () => {
     const rr890OpPresetGraphql = rr890Op().buildGraphql<TProductDraft>();
     expect(rr890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "railroad-wheeled-excavators",

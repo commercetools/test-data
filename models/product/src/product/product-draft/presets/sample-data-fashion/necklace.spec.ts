@@ -168,6 +168,7 @@ describe(`with necklace preset`, () => {
     const necklacePresetGraphql = necklace().buildGraphql<TProductDraft>();
     expect(necklacePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "other-women",

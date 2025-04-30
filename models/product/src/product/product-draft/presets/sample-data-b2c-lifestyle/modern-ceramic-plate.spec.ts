@@ -164,6 +164,7 @@ describe(`with modernCeramicPlate preset`, () => {
       modernCeramicPlate().buildGraphql<TProductDraft>();
     expect(modernCeramicPlatePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "plates",

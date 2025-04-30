@@ -195,6 +195,7 @@ describe(`with b456St preset`, () => {
     const b456StPresetGraphql = b456St().buildGraphql<TProductDraft>();
     expect(b456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "construction-loaders",

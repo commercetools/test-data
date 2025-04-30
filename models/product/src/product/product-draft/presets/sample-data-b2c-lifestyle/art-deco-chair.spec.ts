@@ -151,6 +151,7 @@ describe(`with artDecoChair preset`, () => {
       artDecoChair().buildGraphql<TProductDraft>();
     expect(artDecoChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

@@ -158,6 +158,7 @@ describe(`with brunoChair preset`, () => {
     const brunoChairPresetGraphql = brunoChair().buildGraphql<TProductDraft>();
     expect(brunoChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "furniture",

@@ -237,6 +237,7 @@ describe(`with tt456St preset`, () => {
     const tt456StPresetGraphql = tt456St().buildGraphql<TProductDraft>();
     expect(tt456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "mobile-cranes",

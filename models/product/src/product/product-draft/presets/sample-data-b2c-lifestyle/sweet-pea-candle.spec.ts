@@ -178,6 +178,7 @@ describe(`with sweetPeaCandle preset`, () => {
       sweetPeaCandle().buildGraphql<TProductDraftGraphql>();
     expect(sweetPeaCandlePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

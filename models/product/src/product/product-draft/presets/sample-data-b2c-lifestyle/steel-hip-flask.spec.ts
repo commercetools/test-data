@@ -169,6 +169,7 @@ describe(`with steelHipFlask preset`, () => {
       steelHipFlask().buildGraphql<TProductDraftGraphql>();
     expect(steelHipFlaskPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-accessories",

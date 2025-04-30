@@ -195,6 +195,7 @@ describe(`with f890Op preset`, () => {
     const f890OpPresetGraphql = f890Op().buildGraphql<TProductDraft>();
     expect(f890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "log-loaders",

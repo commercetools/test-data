@@ -266,6 +266,7 @@ describe(`with largeCeramicPlate preset`, () => {
       largeCeramicPlate().buildGraphql<TProductDraft>();
     expect(largeCeramicPlatePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "kitchen",

@@ -284,6 +284,7 @@ describe(`with toddlerTrousers preset`, () => {
       toddlerTrousers().buildGraphql<TProductDraft>();
     expect(toddlerTrousersPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bottoms_kids",

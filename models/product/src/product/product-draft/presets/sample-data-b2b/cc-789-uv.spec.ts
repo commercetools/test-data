@@ -195,6 +195,7 @@ describe(`with cc789Uv preset`, () => {
     const cc789UvPresetGraphql = cc789Uv().buildGraphql<TProductDraft>();
     expect(cc789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "airport-graders",

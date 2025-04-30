@@ -34,6 +34,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataGraphq
       metaDescriptionAllLocales: null,
       metaKeywordsAllLocales: null,
       __typename: 'ProductTailoringData',
+      attributesRaw: [],
     },
     postBuild: (model) => {
       const name = model.nameAllLocales

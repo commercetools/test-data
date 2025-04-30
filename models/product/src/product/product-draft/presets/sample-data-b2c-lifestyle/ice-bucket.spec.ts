@@ -153,6 +153,7 @@ describe(`with iceBucket preset`, () => {
     const iceBucketPresetGraphql = iceBucket().buildGraphql<TProductDraft>();
     expect(iceBucketPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bar-accessories",

@@ -195,6 +195,7 @@ describe(`with x234Wx preset`, () => {
     const x234WxPresetGraphql = x234Wx().buildGraphql<TProductDraft>();
     expect(x234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "off-highway-dump-trucks",

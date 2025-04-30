@@ -186,6 +186,7 @@ describe(`with hh456St preset`, () => {
     const hh456StPresetGraphql = hh456St().buildGraphql<TProductDraft>();
     expect(hh456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "pneumatic-rollers",

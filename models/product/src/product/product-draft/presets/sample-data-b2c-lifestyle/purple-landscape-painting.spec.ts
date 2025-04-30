@@ -158,6 +158,7 @@ describe(`with purpleLandscapePainting preset`, () => {
       purpleLandscapePainting().buildGraphql<TProductDraft>();
     expect(purpleLandscapePaintingPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

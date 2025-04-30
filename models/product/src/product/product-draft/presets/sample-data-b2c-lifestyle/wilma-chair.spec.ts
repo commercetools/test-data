@@ -167,6 +167,7 @@ describe(`with wilmaChair preset`, () => {
       wilmaChair().buildGraphql<TProductDraftGraphql>();
     expect(wilmaChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

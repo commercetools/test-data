@@ -151,6 +151,7 @@ describe(`with sipperCoffeeMug preset`, () => {
       sipperCoffeeMug().buildGraphql<TProductDraft>();
     expect(sipperCoffeeMugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

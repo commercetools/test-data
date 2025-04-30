@@ -237,6 +237,7 @@ describe(`with hhh234Wx preset`, () => {
     const hhh234WxPresetGraphql = hhh234Wx().buildGraphql<TProductDraft>();
     expect(hhh234WxPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "piling-hammers",

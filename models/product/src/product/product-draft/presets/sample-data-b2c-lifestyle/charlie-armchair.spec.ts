@@ -159,6 +159,7 @@ describe(`with charlieArmchair preset`, () => {
       charlieArmchair().buildGraphql<TProductDraft>();
     expect(charlieArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "armchairs",

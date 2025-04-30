@@ -195,6 +195,7 @@ describe(`with r123Ts preset`, () => {
     const r123TsPresetGraphql = r123Ts().buildGraphql<TProductDraft>();
     expect(r123TsPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "surface-mining-excavators",

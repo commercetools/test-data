@@ -228,6 +228,7 @@ describe(`with indoorJutePlanter preset`, () => {
       indoorJutePlanter().buildGraphql<TProductDraft>();
     expect(indoorJutePlanterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "room-decor",

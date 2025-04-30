@@ -190,6 +190,7 @@ describe(`with traditionalLSeaterSofa preset`, () => {
       traditionalLSeaterSofa().buildGraphql<TProductDraftGraphql>();
     expect(traditionalLSeaterSofaPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

@@ -159,6 +159,7 @@ describe(`with stoutBeerGlass preset`, () => {
       stoutBeerGlass().buildGraphql<TProductDraftGraphql>();
     expect(stoutBeerGlassPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

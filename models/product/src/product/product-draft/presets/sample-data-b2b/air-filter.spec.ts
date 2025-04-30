@@ -100,6 +100,7 @@ describe(`with airFilter preset`, () => {
     const airFilterPresetGraphql = airFilter().buildGraphql<TProductDraft>();
     expect(airFilterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

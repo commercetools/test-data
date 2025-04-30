@@ -150,6 +150,7 @@ describe(`with sandTeaCup preset`, () => {
     const sandTeaCupPresetGraphql = sandTeaCup().buildGraphql<TProductDraft>();
     expect(sandTeaCupPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

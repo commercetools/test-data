@@ -195,6 +195,7 @@ describe(`with a789Bc preset`, () => {
     const a789BcPresetGraphql = a789Bc().buildGraphql<TProductDraft>();
     expect(a789BcPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "deep-mining-excavators",

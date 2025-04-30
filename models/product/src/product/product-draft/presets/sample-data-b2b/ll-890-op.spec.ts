@@ -195,6 +195,7 @@ describe(`with ll890Op preset`, () => {
     const ll890OpPresetGraphql = ll890Op().buildGraphql<TProductDraft>();
     expect(ll890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "landfill-compactors",

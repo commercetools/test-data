@@ -153,6 +153,7 @@ describe(`with benPillowCover preset`, () => {
       benPillowCover().buildGraphql<TProductDraft>();
     expect(benPillowCoverPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "bedding",

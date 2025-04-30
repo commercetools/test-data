@@ -218,6 +218,7 @@ describe(`with denimJacket preset`, () => {
       denimJacket().buildGraphql<TProductDraft>();
     expect(denimJacketPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "tops-men",

@@ -168,6 +168,7 @@ describe(`with naturaRug preset`, () => {
     const naturaRugPresetGraphql = naturaRug().buildGraphql<TProductDraft>();
     expect(naturaRugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "rugs",

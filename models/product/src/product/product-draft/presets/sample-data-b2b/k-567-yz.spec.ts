@@ -195,6 +195,7 @@ describe(`with k567Yz preset`, () => {
     const k567YzPresetGraphql = k567Yz().buildGraphql<TProductDraft>();
     expect(k567YzPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "swamp-bulldozers",

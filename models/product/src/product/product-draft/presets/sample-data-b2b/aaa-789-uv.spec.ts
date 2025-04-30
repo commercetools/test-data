@@ -237,6 +237,7 @@ describe(`with aaa789Uv preset`, () => {
     const aaa789UvPresetGraphql = aaa789Uv().buildGraphql<TProductDraft>();
     expect(aaa789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "exploration-drills",

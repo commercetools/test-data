@@ -237,6 +237,7 @@ describe(`with zz456St preset`, () => {
     const zz456StPresetGraphql = zz456St().buildGraphql<TProductDraft>();
     expect(zz456StPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "exploration-drills",

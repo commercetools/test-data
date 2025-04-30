@@ -195,6 +195,7 @@ describe(`with sampleSandals preset`, () => {
       sampleSandals().buildGraphql<TProductDraft>();
     expect(sampleSandalsPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "other-kids",

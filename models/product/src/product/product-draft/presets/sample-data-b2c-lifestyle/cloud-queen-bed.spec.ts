@@ -159,6 +159,7 @@ describe(`with cloudQueenBed preset`, () => {
       cloudQueenBed().buildGraphql<TProductDraft>();
     expect(cloudQueenBedPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "beds",

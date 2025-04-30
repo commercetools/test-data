@@ -195,6 +195,7 @@ describe(`with oo789Uv preset`, () => {
     const oo789UvPresetGraphql = oo789Uv().buildGraphql<TProductDraft>();
     expect(oo789UvPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "wheeled-excavators-for-mining",

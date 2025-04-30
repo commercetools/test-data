@@ -195,6 +195,7 @@ describe(`with u123Qr preset`, () => {
     const u123QrPresetGraphql = u123Qr().buildGraphql<TProductDraft>();
     expect(u123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "articulated-dump-trucks",

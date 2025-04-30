@@ -101,6 +101,7 @@ describe(`with pinAndBushingKit preset`, () => {
       pinAndBushingKit().buildGraphql<TProductDraft>();
     expect(pinAndBushingKitPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "spare-parts",

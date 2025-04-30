@@ -164,6 +164,7 @@ describe(`with classicServingTray preset`, () => {
       classicServingTray().buildGraphql<TProductDraft>();
     expect(classicServingTrayPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "serving-platters",

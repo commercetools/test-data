@@ -1,10 +1,12 @@
 {
   "__schema": {
     "queryType": {
-      "name": "Query"
+      "name": "Query",
+      "kind": "OBJECT"
     },
     "mutationType": {
-      "name": "Mutation"
+      "name": "Mutation",
+      "kind": "OBJECT"
     },
     "subscriptionType": null,
     "types": [
@@ -12,6 +14,7 @@
         "kind": "INPUT_OBJECT",
         "name": "AddTeam",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -71,6 +74,7 @@
         "kind": "INPUT_OBJECT",
         "name": "AddTeamMembership",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -114,6 +118,7 @@
         "kind": "OBJECT",
         "name": "AttributeGroupLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTotalAttributeGroups",
@@ -134,9 +139,76 @@
         "possibleTypes": null
       },
       {
+        "kind": "ENUM",
+        "name": "AttributeMigrationStatus",
+        "description": null,
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "Aborted",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "Finished",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "Shadowing",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "StaleDataReplicatedFromProducts",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "StaleDataReplicatedFromProductsV2",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UsingAndReplicatingFromProducts",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UsingAndReplicatingFromProductsV2",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UsingOnlyProducts",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UsingOnlyProductsV2",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
         "kind": "OBJECT",
         "name": "Attribution",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "clientId",
@@ -188,6 +260,7 @@
         "kind": "ENUM",
         "name": "AttributionSource",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -211,6 +284,7 @@
         "kind": "OBJECT",
         "name": "AwsContainer",
         "description": "AWS S3 container config",
+        "isOneOf": null,
         "fields": [
           {
             "name": "bucketUrl",
@@ -254,6 +328,7 @@
         "kind": "SCALAR",
         "name": "Boolean",
         "description": "The `Boolean` scalar type represents `true` or `false`.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -264,6 +339,7 @@
         "kind": "ENUM",
         "name": "BusinessRole",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -323,6 +399,7 @@
         "kind": "OBJECT",
         "name": "BusinessUnitLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxAssociateRoles",
@@ -382,6 +459,7 @@
         "kind": "OBJECT",
         "name": "CartClassificationType",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "type",
@@ -439,6 +517,7 @@
         "kind": "OBJECT",
         "name": "CartDiscountLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "withoutDiscountCodeLimit",
@@ -462,6 +541,7 @@
         "kind": "OBJECT",
         "name": "CartLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxCarts",
@@ -485,6 +565,7 @@
         "kind": "OBJECT",
         "name": "CartScoreType",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "type",
@@ -518,6 +599,7 @@
         "kind": "OBJECT",
         "name": "CartValueType",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "type",
@@ -551,6 +633,7 @@
         "kind": "OBJECT",
         "name": "CategoryLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTotalCategories",
@@ -574,6 +657,7 @@
         "kind": "OBJECT",
         "name": "CdnContainerConfiguration",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "enabled",
@@ -601,6 +685,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ChangeName",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -628,6 +713,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ChangeTeamName",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -671,6 +757,7 @@
         "kind": "OBJECT",
         "name": "ClustersConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "db",
@@ -706,6 +793,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ClustersConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -741,6 +829,7 @@
         "kind": "SCALAR",
         "name": "Country",
         "description": "[ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) country code.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -751,6 +840,7 @@
         "kind": "INPUT_OBJECT",
         "name": "CreateOrganizationCommand",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -806,6 +896,7 @@
         "kind": "INPUT_OBJECT",
         "name": "CreatePermissionCommand",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -945,6 +1036,7 @@
         "kind": "SCALAR",
         "name": "Currency",
         "description": "Represents a currency. Currencies are identified by their [ISO 4217](http://www.iso.org/iso/home/standards/currency_codes.htm) currency codes.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -955,6 +1047,7 @@
         "kind": "OBJECT",
         "name": "CustomObjectLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxCustomObjects",
@@ -978,6 +1071,7 @@
         "kind": "OBJECT",
         "name": "CustomerGroupLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxCustomerGroups",
@@ -1001,6 +1095,7 @@
         "kind": "OBJECT",
         "name": "CustomerLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxCustomers",
@@ -1024,6 +1119,7 @@
         "kind": "OBJECT",
         "name": "CustomersDomainLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "businessUnits",
@@ -1071,6 +1167,7 @@
         "kind": "OBJECT",
         "name": "DBClusterConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "dbClusterKey",
@@ -1114,6 +1211,7 @@
         "kind": "INPUT_OBJECT",
         "name": "DBClusterConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1157,6 +1255,7 @@
         "kind": "OBJECT",
         "name": "DBClusterKey",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -1184,6 +1283,7 @@
         "kind": "INPUT_OBJECT",
         "name": "DBClusterKeyInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1211,6 +1311,7 @@
         "kind": "OBJECT",
         "name": "DBClustersConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "carts",
@@ -1275,6 +1376,18 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "recurringOrders",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "DBClusterConfig",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -1286,6 +1399,7 @@
         "kind": "INPUT_OBJECT",
         "name": "DBClustersConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1351,6 +1465,18 @@
             "defaultValue": null,
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "recurringOrders",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "DBClusterConfigInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "interfaces": null,
@@ -1361,6 +1487,7 @@
         "kind": "INTERFACE",
         "name": "DataFence",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "type",
@@ -1394,6 +1521,7 @@
         "kind": "INPUT_OBJECT",
         "name": "DataFenceDraft",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1421,6 +1549,7 @@
         "kind": "INPUT_OBJECT",
         "name": "DataFenceStoreDraftType",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1456,6 +1585,7 @@
         "kind": "SCALAR",
         "name": "DateTime",
         "description": "DateTime is a scalar value that represents an ISO8601 formatted date and time.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -1466,6 +1596,7 @@
         "kind": "SCALAR",
         "name": "DateTimeZone",
         "description": "DateTimeZone is a scalar value that represents a time zone.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -1474,8 +1605,33 @@
       },
       {
         "kind": "OBJECT",
+        "name": "DiscountGroupLimits",
+        "description": null,
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "activeLimit",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Long",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "ESAlternativeComparisonConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "comparisonProbability",
@@ -1531,6 +1687,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ESAlternativeComparisonConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1586,6 +1743,7 @@
         "kind": "OBJECT",
         "name": "ESCluster",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "platformProducts",
@@ -1621,6 +1779,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ESClusterInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1656,6 +1815,7 @@
         "kind": "OBJECT",
         "name": "ESClusterShardConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "numberOfReplicas",
@@ -1715,6 +1875,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ESClusterShardConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1774,6 +1935,7 @@
         "kind": "OBJECT",
         "name": "ExtensionLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTimeoutInMs",
@@ -1797,6 +1959,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ExternalOAuthInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -1840,8 +2003,33 @@
         "kind": "SCALAR",
         "name": "Float",
         "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "InitialAttributeMigrationStatus",
+        "description": null,
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "attributeMigrationStatus",
+            "description": null,
+            "type": {
+              "kind": "ENUM",
+              "name": "AttributeMigrationStatus",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "interfaces": null,
         "enumValues": null,
         "possibleTypes": null
@@ -1850,6 +2038,7 @@
         "kind": "OBJECT",
         "name": "Initiator",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "anonymousId",
@@ -1957,6 +2146,7 @@
         "kind": "SCALAR",
         "name": "Int",
         "description": "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -1967,6 +2157,7 @@
         "kind": "SCALAR",
         "name": "Locale",
         "description": "Locale is a scalar value represented as a string language tag.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -1977,6 +2168,7 @@
         "kind": "OBJECT",
         "name": "LocalizedString",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "locale",
@@ -2020,6 +2212,7 @@
         "kind": "SCALAR",
         "name": "Long",
         "description": "The `Long` scalar type represents non-fractional signed whole numeric values. Long can represent values between -(2^63) and 2^63 - 1.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -2030,6 +2223,7 @@
         "kind": "UNION",
         "name": "MediaContainer",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -2051,6 +2245,7 @@
         "kind": "OBJECT",
         "name": "MessagesConfiguration",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "deleteDaysAfterCreation",
@@ -2090,6 +2285,7 @@
         "kind": "OBJECT",
         "name": "Mutation",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "createMyOrganization",
@@ -2694,6 +2890,7 @@
         "kind": "OBJECT",
         "name": "OrderEditLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxOrderEdits",
@@ -2717,6 +2914,7 @@
         "kind": "OBJECT",
         "name": "Organization",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "createdAt",
@@ -2874,6 +3072,7 @@
         "kind": "OBJECT",
         "name": "OrganizationQueryResult",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -2973,6 +3172,7 @@
         "kind": "INPUT_OBJECT",
         "name": "OrganizationUpdateAction",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -3056,6 +3256,7 @@
         "kind": "OBJECT",
         "name": "Permission",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "actionRightPermissions",
@@ -3305,6 +3506,7 @@
         "kind": "OBJECT",
         "name": "PermissionQueryResult",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -3404,6 +3606,7 @@
         "kind": "INPUT_OBJECT",
         "name": "PermissionUpdateAction",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -3463,6 +3666,7 @@
         "kind": "OBJECT",
         "name": "PlatformProductsClusterConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "categoriesShardConfig",
@@ -3550,6 +3754,7 @@
         "kind": "INPUT_OBJECT",
         "name": "PlatformProductsClusterConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -3637,6 +3842,7 @@
         "kind": "OBJECT",
         "name": "ProductDiscountLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "activeLimit",
@@ -3660,6 +3866,7 @@
         "kind": "OBJECT",
         "name": "ProductLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "pricesLimitPerVariant",
@@ -3707,6 +3914,7 @@
         "kind": "OBJECT",
         "name": "ProductTypeLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTotalProductTypes",
@@ -3730,6 +3938,7 @@
         "kind": "OBJECT",
         "name": "ProductsClusterConfig",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "clusterKey",
@@ -3757,6 +3966,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ProductsClusterConfigInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -3784,6 +3994,7 @@
         "kind": "OBJECT",
         "name": "Project",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "billingInfo",
@@ -4213,6 +4424,7 @@
         "kind": "OBJECT",
         "name": "ProjectBillingInfo",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "accountId",
@@ -4284,6 +4496,7 @@
         "kind": "OBJECT",
         "name": "ProjectCustomLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "attributeGroupLimits",
@@ -4357,6 +4570,18 @@
                 "name": "CustomersDomainLimits",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "discountGroups",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "DiscountGroupLimits",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -4551,6 +4776,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ProjectDraftType",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -4667,6 +4893,18 @@
             "type": {
               "kind": "INPUT_OBJECT",
               "name": "ExternalOAuthInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "forceAttributeMigrationStatus",
+            "description": null,
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "InitialAttributeMigrationStatus",
               "ofType": null
             },
             "defaultValue": null,
@@ -4806,6 +5044,7 @@
         "kind": "ENUM",
         "name": "ProjectPlan",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -4829,6 +5068,7 @@
         "kind": "OBJECT",
         "name": "ProjectQueryResult",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "count",
@@ -4928,6 +5168,7 @@
         "kind": "OBJECT",
         "name": "ProjectSuspendData",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "description",
@@ -4967,6 +5208,7 @@
         "kind": "ENUM",
         "name": "ProjectSuspensionReason",
         "description": null,
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -4996,6 +5238,7 @@
         "kind": "OBJECT",
         "name": "PublicContainer",
         "description": "Rackspace Cloud Files container config",
+        "isOneOf": null,
         "fields": [
           {
             "name": "httpUri",
@@ -5087,6 +5330,7 @@
         "kind": "OBJECT",
         "name": "Query",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "myAccessibleProjects",
@@ -5657,6 +5901,7 @@
         "kind": "OBJECT",
         "name": "QueryLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxOffset",
@@ -5684,6 +5929,7 @@
         "kind": "OBJECT",
         "name": "Reference",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -5727,6 +5973,7 @@
         "kind": "INPUT_OBJECT",
         "name": "ReferenceInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -5770,6 +6017,7 @@
         "kind": "OBJECT",
         "name": "RefreshTokenLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxRefreshTokens",
@@ -5793,6 +6041,7 @@
         "kind": "INPUT_OBJECT",
         "name": "RemoveTeam",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -5820,6 +6069,7 @@
         "kind": "INPUT_OBJECT",
         "name": "RemoveTeamMembership",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -5863,6 +6113,7 @@
         "kind": "OBJECT",
         "name": "RevokedTokens",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "owner",
@@ -5930,6 +6181,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SearchIndexingConfigurationInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -5953,6 +6205,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SearchIndexingConfigurationValuesInput",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -5976,6 +6229,7 @@
         "kind": "OBJECT",
         "name": "SearchLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTextSize",
@@ -5999,6 +6253,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SetPermissionActionRightPermissions",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -6034,6 +6289,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SetPermissionDataFences",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -6069,6 +6325,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SetPermissionHiddenMenuItems",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -6104,6 +6361,7 @@
         "kind": "INPUT_OBJECT",
         "name": "SetPermissionResourceAccessPermissions",
         "description": null,
+        "isOneOf": false,
         "fields": null,
         "inputFields": [
           {
@@ -6139,6 +6397,7 @@
         "kind": "OBJECT",
         "name": "ShippingMethodLimit",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxShippingMethods",
@@ -6162,6 +6421,7 @@
         "kind": "OBJECT",
         "name": "ShippingRateInputLocalizedEnumValue",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "key",
@@ -6258,6 +6518,7 @@
         "kind": "INTERFACE",
         "name": "ShippingRateInputType",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "type",
@@ -6301,6 +6562,7 @@
         "kind": "OBJECT",
         "name": "ShoppingListLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxLineItems",
@@ -6348,6 +6610,7 @@
         "kind": "OBJECT",
         "name": "StoreDataFence",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "storeKeys",
@@ -6405,6 +6668,7 @@
         "kind": "OBJECT",
         "name": "StoreLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxCartDiscountsPerStore",
@@ -6476,6 +6740,7 @@
         "kind": "SCALAR",
         "name": "String",
         "description": "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -6486,6 +6751,7 @@
         "kind": "OBJECT",
         "name": "SubscriptionsLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxSubscriptions",
@@ -6509,6 +6775,7 @@
         "kind": "OBJECT",
         "name": "TaxCategoryLimit",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxTaxCategories",
@@ -6532,6 +6799,7 @@
         "kind": "OBJECT",
         "name": "Team",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "id",
@@ -6623,6 +6891,7 @@
         "kind": "OBJECT",
         "name": "User",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "businessRole",
@@ -6669,13 +6938,9 @@
             "description": null,
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -6685,13 +6950,9 @@
             "description": null,
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -6708,6 +6969,18 @@
                 "name": "String",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "identityId",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -6773,13 +7046,9 @@
             "description": null,
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -6805,13 +7074,9 @@
             "description": null,
             "args": [],
             "type": {
-              "kind": "NON_NULL",
-              "name": null,
-              "ofType": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              }
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -6876,6 +7141,7 @@
         "kind": "INTERFACE",
         "name": "Versioned",
         "description": "Versioned object have an ID and version and modification. Every update of this object changes it's version.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "createdAt",
@@ -6996,6 +7262,7 @@
         "kind": "OBJECT",
         "name": "ZoneLimits",
         "description": null,
+        "isOneOf": null,
         "fields": [
           {
             "name": "maxZones",
@@ -7019,6 +7286,7 @@
         "kind": "OBJECT",
         "name": "__Directive",
         "description": "A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.\n\nIn some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -7135,6 +7403,7 @@
         "kind": "ENUM",
         "name": "__DirectiveLocation",
         "description": "A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,
@@ -7260,6 +7529,7 @@
         "kind": "OBJECT",
         "name": "__EnumValue",
         "description": "One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -7327,6 +7597,7 @@
         "kind": "OBJECT",
         "name": "__Field",
         "description": "Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -7447,6 +7718,7 @@
         "kind": "OBJECT",
         "name": "__InputValue",
         "description": "Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "name",
@@ -7542,6 +7814,7 @@
         "kind": "OBJECT",
         "name": "__Schema",
         "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "description",
@@ -7653,6 +7926,7 @@
         "kind": "OBJECT",
         "name": "__Type",
         "description": "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name, description and optional `specifiedByURL`, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
+        "isOneOf": null,
         "fields": [
           {
             "name": "kind",
@@ -7856,6 +8130,18 @@
             },
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "isOneOf",
+            "description": null,
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "inputFields": null,
@@ -7867,6 +8153,7 @@
         "kind": "ENUM",
         "name": "__TypeKind",
         "description": "An enum describing what kind of type a given `__Type` is.",
+        "isOneOf": null,
         "fields": null,
         "inputFields": null,
         "interfaces": null,

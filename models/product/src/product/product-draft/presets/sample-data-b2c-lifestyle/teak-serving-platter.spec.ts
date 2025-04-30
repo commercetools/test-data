@@ -159,6 +159,7 @@ describe(`with teakServingPlatter preset`, () => {
       teakServingPlatter().buildGraphql<TProductDraftGraphql>();
     expect(teakServingPlatterPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "cheese-trays",

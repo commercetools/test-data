@@ -159,6 +159,7 @@ describe(`with classicBeerMug preset`, () => {
       classicBeerMug().buildGraphql<TProductDraft>();
     expect(classicBeerMugPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "glassware",

@@ -188,6 +188,7 @@ describe(`with abigailLoungeChair preset`, () => {
       abigailLoungeChair().buildGraphql<TProductDraft>();
     expect(abigailLoungeChairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

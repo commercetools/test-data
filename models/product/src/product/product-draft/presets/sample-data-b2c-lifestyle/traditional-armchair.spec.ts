@@ -176,6 +176,7 @@ describe(`with traditionalArmchair preset`, () => {
       traditionalArmchair().buildGraphql<TProductDraftGraphql>();
     expect(traditionalArmchairPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "living-room-furniture",

@@ -36,5 +36,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemDraftGraphql
   {
     fields: {
       ...commonFieldsConfig,
+      recurrenceInfo: null,
     },
   };

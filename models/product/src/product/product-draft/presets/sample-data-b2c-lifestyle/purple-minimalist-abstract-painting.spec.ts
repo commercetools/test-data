@@ -174,6 +174,7 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
     expect(purpleMinimalistAbstractPaintingPresetGraphql)
       .toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "home-accents",

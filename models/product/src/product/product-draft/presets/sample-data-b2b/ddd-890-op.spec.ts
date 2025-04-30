@@ -237,6 +237,7 @@ describe(`with ddd890Op preset`, () => {
     const ddd890OpPresetGraphql = ddd890Op().buildGraphql<TProductDraft>();
     expect(ddd890OpPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "production-drills",

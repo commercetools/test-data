@@ -162,6 +162,7 @@ describe(`with ivoryPlate preset`, () => {
     const ivoryPlatePresetGraphql = ivoryPlate().buildGraphql<TProductDraft>();
     expect(ivoryPlatePresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "plates",

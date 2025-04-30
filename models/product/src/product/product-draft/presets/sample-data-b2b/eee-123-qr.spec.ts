@@ -237,6 +237,7 @@ describe(`with eee123Qr preset`, () => {
     const eee123QrPresetGraphql = eee123Qr().buildGraphql<TProductDraft>();
     expect(eee123QrPresetGraphql).toMatchInlineSnapshot(`
       {
+        "attributes": null,
         "categories": [
           {
             "key": "demolition-hammers",
