@@ -34,6 +34,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
   fields: {
     __typename: 'ProductData',
     allVariants: fake(() => [ProductVariantGraphql.random()]),
+    attributesRaw: fake(() => []),
     categories: fake(() => [Category.random()]),
     categoriesRef: null, // computed
     categoryOrderHint: null, // computed
