@@ -1,7 +1,17 @@
 {
   "name": "@commercetools/composable-commerce-test-data",
   "version": "1.0.0",
-  "description": "",
+  "description": "Data models for commercetools platform APIs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "presets/all-packages"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/commercetools-composable-commerce-test-data.cjs.js",
   "module": "dist/commercetools-composable-commerce-test-data.esm.js",
   "files": [
@@ -52,7 +62,9 @@
     "user",
     "zone",
     "utils",
-    "package.json"
+    "package.json",
+    "LICENSE",
+    "README.md"
   ],
   "preconstruct": {
     "entrypoints": [
@@ -105,9 +117,6 @@
       "utils.ts"
     ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@commercetools-test-data/associate-role": "workspace:*",
     "@commercetools-test-data/attribute-group": "workspace:*",
