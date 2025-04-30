@@ -31,7 +31,7 @@ function validateGraphqlModel(graphqlModel: TProductGraphql) {
       key: 'happy-cow-milk-key',
       masterData: expect.objectContaining({
         current: expect.objectContaining({
-          slug: 'happy-cow-milk-slug',
+          __typename: 'ProductData',
         }),
         published: true,
         __typename: 'ProductCatalogData',

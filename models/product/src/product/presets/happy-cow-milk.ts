@@ -4,9 +4,10 @@ import { ProductType } from '@commercetools-test-data/product-type';
 import {
   ProductCatalogDataRest,
   ProductCatalogDataGraphql,
+  ProductCatalogData,
 } from '../../product-catalog-data';
-import { ProductGraphql, ProductRest } from '../index';
-import type { TProductGraphql, TProductRest } from '../types';
+import { Product, ProductGraphql, ProductRest } from '../index';
+import type { TProduct, TProductGraphql, TProductRest } from '../types';
 
 export const restPreset = (): TBuilder<TProductRest> => {
   return ProductRest.random()
@@ -28,9 +29,9 @@ export const graphqlPreset = (): TBuilder<TProductGraphql> => {
     .productType(ProductType.presets.milk());
 };
 
-export const compatPreset = (): TBuilder<TProductRest> => {
-  return ProductRest.random()
+export const compatPreset = (): TBuilder<TProduct> => {
+  return Product.random()
     .key('happy-cow-milk-key')
-    .masterData(ProductCatalogDataRest.presets.happyCowMilkProductCatalogData())
+    .masterData(ProductCatalogData.presets.happyCowMilkProductCatalogData())
     .productType(ProductType.presets.milk());
 };
