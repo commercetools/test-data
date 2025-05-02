@@ -189,22 +189,21 @@ describe(`with pants preset`, () => {
             ],
             "name": "size",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Small",
-                    "label": "Small",
-                  },
-                  {
-                    "key": "Medium",
-                    "label": "Medium",
-                  },
-                  {
-                    "key": "Large",
-                    "label": "Large",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Small",
+                  "label": "Small",
+                },
+                {
+                  "key": "Medium",
+                  "label": "Medium",
+                },
+                {
+                  "key": "Large",
+                  "label": "Large",
+                },
+              ],
             },
           },
           {
@@ -226,22 +225,21 @@ describe(`with pants preset`, () => {
             ],
             "name": "fit",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Slim",
-                    "label": "Slim",
-                  },
-                  {
-                    "key": "Straight",
-                    "label": "Straight",
-                  },
-                  {
-                    "key": "Flair",
-                    "label": "Flair",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Slim",
+                  "label": "Slim",
+                },
+                {
+                  "key": "Straight",
+                  "label": "Straight",
+                },
+                {
+                  "key": "Flair",
+                  "label": "Flair",
+                },
+              ],
             },
           },
           {
@@ -263,22 +261,21 @@ describe(`with pants preset`, () => {
             ],
             "name": "color",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Blue",
-                    "label": "Blue",
-                  },
-                  {
-                    "key": "Black",
-                    "label": "Black",
-                  },
-                  {
-                    "key": "White",
-                    "label": "White",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Blue",
+                  "label": "Blue",
+                },
+                {
+                  "key": "Black",
+                  "label": "Black",
+                },
+                {
+                  "key": "White",
+                  "label": "White",
+                },
+              ],
             },
           },
           {
@@ -300,22 +297,21 @@ describe(`with pants preset`, () => {
             ],
             "name": "length",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Ankle",
-                    "label": "Ankle",
-                  },
-                  {
-                    "key": "Crop",
-                    "label": "Crop",
-                  },
-                  {
-                    "key": "Extra Long",
-                    "label": "Extra Long",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Ankle",
+                  "label": "Ankle",
+                },
+                {
+                  "key": "Crop",
+                  "label": "Crop",
+                },
+                {
+                  "key": "Extra Long",
+                  "label": "Extra Long",
+                },
+              ],
             },
           },
         ],

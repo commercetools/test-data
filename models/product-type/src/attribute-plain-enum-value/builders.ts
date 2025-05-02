@@ -14,7 +14,7 @@ export const RestModelBuilder: TCreateAttributePlainEnumValueBuilder<
   TAttributePlainEnumValueRest
 > = () =>
   createSpecializedBuilder({
-    name: 'AttributelainEnumValueRestBuilder',
+    name: 'AttributePlainEnumValueRestBuilder',
     type: 'rest',
     modelFieldsConfig: restFieldsConfig,
   });
@@ -23,7 +23,7 @@ export const GraphqlModelBuilder: TCreateAttributePlainEnumValueBuilder<
   TAttributePlainEnumValueGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'AttributelainEnumValueGraphqlBuilder',
+    name: 'AttributePlainEnumValueGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });
@@ -34,7 +34,7 @@ export const CompatModelBuilder = <
     | TAttributePlainEnumValueGraphql = TAttributePlainEnumValueRest,
 >() =>
   createCompatibilityBuilder<TAttributePlainEnumValueModel>({
-    name: 'AttributelainEnumValueCompatBuilder',
+    name: 'AttributePlainEnumValueCompatBuilder',
     modelFieldsConfig: {
       rest: restFieldsConfig as TModelFieldsConfig<TAttributePlainEnumValueModel>,
       graphql:

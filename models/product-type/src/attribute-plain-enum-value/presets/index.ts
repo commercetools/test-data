@@ -1,13 +1,14 @@
 import { TBuilder } from '@commercetools-test-data/core';
 import {
-  AttributePlainEnumValueRest,
-  AttributePlainEnumValueGraphql,
-  AttributePlainEnumValue,
-} from '../index';
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../builders';
 import {
   TAttributePlainEnumValue,
   TAttributePlainEnumValueGraphql,
   TAttributePlainEnumValueRest,
+  TCreateAttributePlainEnumValueBuilder,
 } from '../types';
 
 type TPresets<TModel> = {
@@ -23,22 +24,20 @@ type TPresets<TModel> = {
 const buildPresets = <
   TModel extends TAttributePlainEnumValueRest | TAttributePlainEnumValueGraphql,
 >(
-  builder: TBuilder<TModel>
+  builder: TCreateAttributePlainEnumValueBuilder<TModel>
 ): TPresets<TModel> => ({
-  red: () => builder.key('red').label('Red color'),
-  blue: () => builder.key('blue').label('Blue color'),
-  green: () => builder.key('green').label('Green color'),
-  s: () => builder.key('s').label('Size S'),
-  m: () => builder.key('m').label('Size M'),
-  l: () => builder.key('l').label('Size L'),
-  xl: () => builder.key('xl').label('Size XL'),
+  red: () => builder().key('red').label('Red color'),
+  blue: () => builder().key('blue').label('Blue color'),
+  green: () => builder().key('green').label('Green color'),
+  s: () => builder().key('s').label('Size S'),
+  m: () => builder().key('m').label('Size M'),
+  l: () => builder().key('l').label('Size L'),
+  xl: () => builder().key('xl').label('Size XL'),
 });
 
-export const restPresets: TPresets<TAttributePlainEnumValueRest> = buildPresets(
-  AttributePlainEnumValueRest.random()
-);
+export const restPresets: TPresets<TAttributePlainEnumValueRest> =
+  buildPresets(RestModelBuilder);
 export const graphqlPresets: TPresets<TAttributePlainEnumValueGraphql> =
-  buildPresets(AttributePlainEnumValueGraphql.random());
-export const compatPresets: TPresets<TAttributePlainEnumValue> = buildPresets(
-  AttributePlainEnumValue.random()
-);
+  buildPresets(GraphqlModelBuilder);
+export const compatPresets: TPresets<TAttributePlainEnumValue> =
+  buildPresets(CompatModelBuilder);

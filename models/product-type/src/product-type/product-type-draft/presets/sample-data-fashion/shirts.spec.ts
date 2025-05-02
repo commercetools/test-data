@@ -121,22 +121,21 @@ describe(`with shirts preset`, () => {
             ],
             "name": "size",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Small",
-                    "label": "Small",
-                  },
-                  {
-                    "key": "Medium",
-                    "label": "Medium",
-                  },
-                  {
-                    "key": "Large",
-                    "label": "Large",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Small",
+                  "label": "Small",
+                },
+                {
+                  "key": "Medium",
+                  "label": "Medium",
+                },
+                {
+                  "key": "Large",
+                  "label": "Large",
+                },
+              ],
             },
           },
           {
@@ -158,26 +157,25 @@ describe(`with shirts preset`, () => {
             ],
             "name": "color",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Red",
-                    "label": "Red",
-                  },
-                  {
-                    "key": "Green",
-                    "label": "Green",
-                  },
-                  {
-                    "key": "Purple",
-                    "label": "Purple",
-                  },
-                  {
-                    "key": "Multi-Color",
-                    "label": "Multi-Color",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Red",
+                  "label": "Red",
+                },
+                {
+                  "key": "Green",
+                  "label": "Green",
+                },
+                {
+                  "key": "Purple",
+                  "label": "Purple",
+                },
+                {
+                  "key": "Multi-Color",
+                  "label": "Multi-Color",
+                },
+              ],
             },
           },
         ],
