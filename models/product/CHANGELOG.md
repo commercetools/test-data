@@ -1,5 +1,28 @@
 # @commercetools-test-data/product
 
+## 10.16.0
+
+### Patch Changes
+
+- [#779](https://github.com/commercetools/test-data/pull/779) [`b751d0e`](https://github.com/commercetools/test-data/commit/b751d0e8da303a7ed11f455e1890f74dac8a3560) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixes an issue with the `ProductVariant` compatibility builder related to the `attributesRaw` property when a GraphQL representation was requested.
+
+- [#697](https://github.com/commercetools/test-data/pull/697) [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Use Graphql generated Typescript type instead of a manual one.
+
+- [#776](https://github.com/commercetools/test-data/pull/776) [`9f1870c`](https://github.com/commercetools/test-data/commit/9f1870c8d2eed480e3175f9e9ea34cfd3978fab9) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We had a bug in the `Product` compatibility presets where they were always returning a GraphQL value for the `productType` property even when the consumer wanted to build a REST `Product`.
+
+- [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731) Thanks [@ragafus](https://github.com/ragafus)! - Update GraphQL schemas and their generated types
+
+- Updated dependencies [[`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08), [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731)]:
+  - @commercetools-test-data/product-type@10.16.0
+  - @commercetools-test-data/graphql-types@10.16.0
+  - @commercetools-test-data/category@10.16.0
+  - @commercetools-test-data/channel@10.16.0
+  - @commercetools-test-data/commons@10.16.0
+  - @commercetools-test-data/product-selection@10.16.0
+  - @commercetools-test-data/tax-category@10.16.0
+  - @commercetools-test-data/core@10.16.0
+  - @commercetools-test-data/utils@10.16.0
+
 ## 10.15.3
 
 ### Patch Changes

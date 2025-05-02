@@ -1,1 +1,57 @@
 # @commercetools/composable-commerce-test-data
+
+## 1.1.0
+
+### Minor Changes
+
+- [#697](https://github.com/commercetools/test-data/pull/697) [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - New package which acts as an aggregator for all the test data models so consumers just need to use one dependency.
+
+### Patch Changes
+
+- Updated dependencies [[`b751d0e`](https://github.com/commercetools/test-data/commit/b751d0e8da303a7ed11f455e1890f74dac8a3560), [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08), [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08), [`9f1870c`](https://github.com/commercetools/test-data/commit/9f1870c8d2eed480e3175f9e9ea34cfd3978fab9), [`abb3703`](https://github.com/commercetools/test-data/commit/abb3703cd3b4a07815de9309958cd6c44af9a344), [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731)]:
+  - @commercetools-test-data/product@10.16.0
+  - @commercetools-test-data/product-type@10.16.0
+  - @commercetools-test-data/type@10.16.0
+  - @commercetools-test-data/cart@10.16.0
+  - @commercetools-test-data/product-tailoring@10.16.0
+  - @commercetools-test-data/inventory-entry@10.16.0
+  - @commercetools-test-data/product-projection@10.16.0
+  - @commercetools-test-data/standalone-price@10.16.0
+  - @commercetools-test-data/cart-discount@10.16.0
+  - @commercetools-test-data/product-discount@10.16.0
+  - @commercetools-test-data/category@10.16.0
+  - @commercetools-test-data/channel@10.16.0
+  - @commercetools-test-data/order@10.16.0
+  - @commercetools-test-data/quote@10.16.0
+  - @commercetools-test-data/quote-request@10.16.0
+  - @commercetools-test-data/staged-quote@10.16.0
+  - @commercetools-test-data/commons@10.16.0
+  - @commercetools-test-data/custom-application@10.16.0
+  - @commercetools-test-data/custom-view@10.16.0
+  - @commercetools-test-data/customers-search-list-my-view@10.16.0
+  - @commercetools-test-data/discounts-custom-view@10.16.0
+  - @commercetools-test-data/filter-values@10.16.0
+  - @commercetools-test-data/organization@10.16.0
+  - @commercetools-test-data/organization-extension@10.16.0
+  - @commercetools-test-data/project-extension@10.16.0
+  - @commercetools-test-data/user@10.16.0
+  - @commercetools-test-data/discount-code@10.16.0
+  - @commercetools-test-data/store@10.16.0
+  - @commercetools-test-data/payment@10.16.0
+  - @commercetools-test-data/associate-role@10.16.0
+  - @commercetools-test-data/attribute-group@10.16.0
+  - @commercetools-test-data/business-unit@10.16.0
+  - @commercetools-test-data/custom-object@10.16.0
+  - @commercetools-test-data/customer@10.16.0
+  - @commercetools-test-data/customer-group@10.16.0
+  - @commercetools-test-data/platform-limits@10.16.0
+  - @commercetools-test-data/product-selection@10.16.0
+  - @commercetools-test-data/review@10.16.0
+  - @commercetools-test-data/shipping-method@10.16.0
+  - @commercetools-test-data/shopping-list@10.16.0
+  - @commercetools-test-data/state@10.16.0
+  - @commercetools-test-data/tax-category@10.16.0
+  - @commercetools-test-data/zone@10.16.0
+  - @commercetools-test-data/core@10.16.0
+  - @commercetools-test-data/project@10.16.0
+  - @commercetools-test-data/utils@10.16.0

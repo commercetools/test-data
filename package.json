@@ -4,7 +4,14 @@
   "description": "Modules to generate test data for commercetools APIs",
   "private": true,
   "preconstruct": {
-    "packages": ["core", "graphql-types", "models/*", "utils", "generators", "presets/*"]
+    "packages": [
+      "core",
+      "graphql-types",
+      "models/*",
+      "utils",
+      "generators",
+      "presets/*"
+    ]
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
