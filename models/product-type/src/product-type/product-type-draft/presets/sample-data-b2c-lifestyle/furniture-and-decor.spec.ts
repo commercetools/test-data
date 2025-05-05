@@ -187,9 +187,7 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "productspec",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -214,9 +212,7 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "color",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -241,9 +237,7 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "finish",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -298,9 +292,7 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "size",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -330,9 +322,7 @@ describe(`with furnitureAndDecor preset`, () => {
             ],
             "name": "product-description",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
         ],
