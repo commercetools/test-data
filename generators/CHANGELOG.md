@@ -1,5 +1,11 @@
 # @commercetools-test-data/generators
 
+## 10.16.0
+
+### Minor Changes
+
+- [#697](https://github.com/commercetools/test-data/pull/697) [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Extend the test data model generator so the created ones are registered in the new single aggregated package.
+
 ## 10.15.3
 
 ## 10.15.2

@@ -1,5 +1,17 @@
 # @commercetools-test-data/product-tailoring
 
+## 10.16.0
+
+### Patch Changes
+
+- [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731) Thanks [@ragafus](https://github.com/ragafus)! - Update GraphQL schemas and their generated types
+
+- Updated dependencies [[`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731)]:
+  - @commercetools-test-data/graphql-types@10.16.0
+  - @commercetools-test-data/commons@10.16.0
+  - @commercetools-test-data/core@10.16.0
+  - @commercetools-test-data/utils@10.16.0
+
 ## 10.15.3
 
 ### Patch Changes

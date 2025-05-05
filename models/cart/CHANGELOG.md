@@ -1,5 +1,31 @@
 # @commercetools-test-data/cart
 
+## 10.16.0
+
+### Patch Changes
+
+- [`abb3703`](https://github.com/commercetools/test-data/commit/abb3703cd3b4a07815de9309958cd6c44af9a344) Thanks [@krishhna123](https://github.com/krishhna123)! - chore: added new models for `DirectDiscount`, `DirectDiscountDraft`, `DiscountedLineItemPortion`, `DiscountedLineItemPortionDraft`, `DiscountedLineItemPrice`, `DiscountedLineItemPriceForQuantity`, and `taxedPrice`. Also migrated `CustomLineItem`, `CustomLineItemDraft`, `LineItem`, and `LineItemDraft` to new models
+
+- [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731) Thanks [@ragafus](https://github.com/ragafus)! - Update GraphQL schemas and their generated types
+
+- Updated dependencies [[`b751d0e`](https://github.com/commercetools/test-data/commit/b751d0e8da303a7ed11f455e1890f74dac8a3560), [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08), [`de2f642`](https://github.com/commercetools/test-data/commit/de2f6429d50ac3087dc1ae469f4a3936234a5f08), [`9f1870c`](https://github.com/commercetools/test-data/commit/9f1870c8d2eed480e3175f9e9ea34cfd3978fab9), [`bfc8004`](https://github.com/commercetools/test-data/commit/bfc8004a9031cbcc146129e2d74a402ceea61731)]:
+  - @commercetools-test-data/product@10.16.0
+  - @commercetools-test-data/product-type@10.16.0
+  - @commercetools-test-data/type@10.16.0
+  - @commercetools-test-data/graphql-types@10.16.0
+  - @commercetools-test-data/cart-discount@10.16.0
+  - @commercetools-test-data/channel@10.16.0
+  - @commercetools-test-data/commons@10.16.0
+  - @commercetools-test-data/discount-code@10.16.0
+  - @commercetools-test-data/store@10.16.0
+  - @commercetools-test-data/business-unit@10.16.0
+  - @commercetools-test-data/customer@10.16.0
+  - @commercetools-test-data/customer-group@10.16.0
+  - @commercetools-test-data/shipping-method@10.16.0
+  - @commercetools-test-data/tax-category@10.16.0
+  - @commercetools-test-data/core@10.16.0
+  - @commercetools-test-data/utils@10.16.0
+
 ## 10.15.3
 
 ### Patch Changes

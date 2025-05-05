@@ -1,5 +1,16 @@
 # @commercetools-test-data/payment
 
+## 10.16.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/order@10.16.0
+  - @commercetools-test-data/commons@10.16.0
+  - @commercetools-test-data/customer@10.16.0
+  - @commercetools-test-data/core@10.16.0
+  - @commercetools-test-data/utils@10.16.0
+
 ## 10.15.3
 
 ### Patch Changes
