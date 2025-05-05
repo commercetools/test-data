@@ -102,22 +102,21 @@ describe(`with accessories preset`, () => {
             ],
             "name": "type",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Jewelry",
-                    "label": "Jewelry",
-                  },
-                  {
-                    "key": "Bag",
-                    "label": "Bag",
-                  },
-                  {
-                    "key": "Shoes",
-                    "label": "Shoes",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Jewelry",
+                  "label": "Jewelry",
+                },
+                {
+                  "key": "Bag",
+                  "label": "Bag",
+                },
+                {
+                  "key": "Shoes",
+                  "label": "Shoes",
+                },
+              ],
             },
           },
           {

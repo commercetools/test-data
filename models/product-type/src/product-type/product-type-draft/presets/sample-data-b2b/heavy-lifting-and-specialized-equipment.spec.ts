@@ -336,9 +336,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "iso45001",
             "type": {
-              "boolean": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -450,26 +448,25 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "mobility",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "tracked",
-                    "label": "Tracked",
-                  },
-                  {
-                    "key": "wheeled",
-                    "label": "Wheeled",
-                  },
-                  {
-                    "key": "fixed",
-                    "label": "Fixed",
-                  },
-                  {
-                    "key": "marine",
-                    "label": "Marine",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "tracked",
+                  "label": "Tracked",
+                },
+                {
+                  "key": "wheeled",
+                  "label": "Wheeled",
+                },
+                {
+                  "key": "fixed",
+                  "label": "Fixed",
+                },
+                {
+                  "key": "marine",
+                  "label": "Marine",
+                },
+              ],
             },
           },
           {
