@@ -46,28 +46,29 @@ function validateRestModel(restModel: TProductDataRest) {
 function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
   expect(graphqlModel).toEqual(
     expect.objectContaining({
+      __typename: 'ProductData',
       name: expect.any(String),
       nameAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       description: expect.any(String),
       descriptionAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       slug: expect.any(String),
       slugAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       categoryOrderHint: expect.any(String),
@@ -80,27 +81,30 @@ function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
       ]),
       categoriesRef: expect.arrayContaining([
         {
+          __typename: 'Reference',
           typeId: 'category',
           id: expect.any(String),
-          __typename: 'Reference',
         },
       ]),
       categories: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'Category',
           id: expect.any(String),
           key: expect.any(String),
-          __typename: 'Category',
         }),
       ]),
       searchKeyword: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'SearchKeyword',
           text: expect.any(String),
         }),
       ]),
       searchKeywords: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'SearchKeywords',
           searchKeywords: expect.arrayContaining([
             expect.objectContaining({
+              __typename: 'SearchKeyword',
               text: expect.any(String),
             }),
           ]),
@@ -109,37 +113,48 @@ function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
       metaTitle: expect.any(String),
       metaTitleAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       metaKeywords: expect.any(String),
       metaKeywordsAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
       metaDescription: expect.any(String),
       metaDescriptionAllLocales: expect.arrayContaining([
         expect.objectContaining({
+          __typename: 'LocalizedString',
           locale: 'en',
           value: expect.any(String),
-          __typename: 'LocalizedString',
         }),
       ]),
-      masterVariant: expect.objectContaining({ id: expect.any(Number) }),
-      variant: expect.objectContaining({ id: expect.any(Number) }),
+      masterVariant: expect.objectContaining({
+        __typename: 'ProductVariant',
+        id: expect.any(Number),
+      }),
+      variant: expect.objectContaining({
+        __typename: 'ProductVariant',
+        id: expect.any(Number),
+      }),
       variants: expect.arrayContaining([
-        expect.objectContaining({ id: expect.any(Number) }),
+        expect.objectContaining({
+          __typename: 'ProductVariant',
+          id: expect.any(Number),
+        }),
       ]),
       allVariants: expect.arrayContaining([
-        expect.objectContaining({ id: expect.any(Number) }),
+        expect.objectContaining({
+          __typename: 'ProductVariant',
+          id: expect.any(Number),
+        }),
       ]),
       skus: expect.arrayContaining([expect.any(String)]),
-      __typename: 'ProductData',
     })
   );
 }

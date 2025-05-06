@@ -1,5 +1,5 @@
 import type { TProductDataGraphql, TProductDataRest } from '../types';
-import { graphqlPresets, restPresets } from '.';
+import { graphqlPresets, restPresets, compatPresets } from '.';
 
 function validateRestModel(restModel: TProductDataRest) {
   expect(restModel).toEqual(
@@ -61,6 +61,28 @@ describe('Product "boring generic milk" presets', () => {
 
   it('builds a GraphQL model', () => {
     const graphqlModel = graphqlPresets.boringGenericMilkProductData().build();
+
+    validateGraphqlModel(graphqlModel);
+  });
+});
+
+describe('Product "boring generic milk" compatibility presets', () => {
+  it('builds a default (REST) model', () => {
+    const compatModel = compatPresets.boringGenericMilkProductData().build();
+
+    validateRestModel(compatModel);
+  });
+
+  it('builds a REST model', () => {
+    const restModel = compatPresets.boringGenericMilkProductData().buildRest();
+
+    validateRestModel(restModel);
+  });
+
+  it.skip('builds a GraphQL model', () => {
+    const graphqlModel = compatPresets
+      .boringGenericMilkProductData()
+      .buildGraphql<TProductDataGraphql>();
 
     validateGraphqlModel(graphqlModel);
   });
