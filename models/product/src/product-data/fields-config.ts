@@ -60,24 +60,33 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
     variants: fake(() => [ProductVariantGraphql.random()]),
   },
   postBuild: (model, context) => {
-    const slugAllLocales = context?.isCompatMode
-      ? (model.slug as unknown as TLocalizedStringGraphql)
-      : model.slugAllLocales;
-    const nameAllLocales = context?.isCompatMode
-      ? (model.name as unknown as TLocalizedStringGraphql)
-      : model.nameAllLocales;
-    const descriptionAllLocales = context?.isCompatMode
-      ? (model.description as unknown as TLocalizedStringGraphql)
-      : model.descriptionAllLocales;
-    const metaDescriptionAllLocales = context?.isCompatMode
-      ? (model.metaDescription as unknown as TLocalizedStringGraphql)
-      : model.metaDescriptionAllLocales;
-    const metaKeywordsAllLocales = context?.isCompatMode
-      ? (model.metaKeywords as unknown as TLocalizedStringGraphql)
-      : model.metaKeywordsAllLocales;
-    const metaTitleAllLocales = context?.isCompatMode
-      ? (model.metaTitle as unknown as TLocalizedStringGraphql)
-      : model.metaTitleAllLocales;
+    // The compatibility model is defined out of the REST one so it might happen that we
+    // have a slug (and others) populated with the actual GraphQL value which should go in the *AllLocales fields.
+    // (we can remove this once the compatibility mode is removed)
+    const slugAllLocales =
+      context?.isCompatMode && model.slug
+        ? (model.slug as unknown as TLocalizedStringGraphql)
+        : model.slugAllLocales;
+    const nameAllLocales =
+      context?.isCompatMode && model.name
+        ? (model.name as unknown as TLocalizedStringGraphql)
+        : model.nameAllLocales;
+    const descriptionAllLocales =
+      context?.isCompatMode && model.description
+        ? (model.description as unknown as TLocalizedStringGraphql)
+        : model.descriptionAllLocales;
+    const metaDescriptionAllLocales =
+      context?.isCompatMode && model.metaDescription
+        ? (model.metaDescription as unknown as TLocalizedStringGraphql)
+        : model.metaDescriptionAllLocales;
+    const metaKeywordsAllLocales =
+      context?.isCompatMode && model.metaKeywords
+        ? (model.metaKeywords as unknown as TLocalizedStringGraphql)
+        : model.metaKeywordsAllLocales;
+    const metaTitleAllLocales =
+      context?.isCompatMode && model.metaTitle
+        ? (model.metaTitle as unknown as TLocalizedStringGraphql)
+        : model.metaTitleAllLocales;
 
     const slug = slugAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(slugAllLocales)
