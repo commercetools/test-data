@@ -16,7 +16,6 @@ import {
   ProductVariantRest,
   ProductVariantGraphql,
 } from '@commercetools-test-data/product';
-import {} from '@commercetools-test-data/product/src/product-variant';
 import { ProductType } from '@commercetools-test-data/product-type';
 import { TaxRate } from '@commercetools-test-data/tax-category';
 import { createRelatedDates } from '@commercetools-test-data/utils';
