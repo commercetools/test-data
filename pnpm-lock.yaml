@@ -1156,7 +1156,7 @@ importers:
         specifier: 10.16.0
         version: link:../quote-request
       '@commercetools-test-data/staged-quote':
-        specifier: ^10.16.0
+        specifier: 10.16.0
         version: link:../staged-quote
       '@commercetools-test-data/store':
         specifier: 10.16.0
