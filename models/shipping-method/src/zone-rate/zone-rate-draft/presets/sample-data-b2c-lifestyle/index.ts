@@ -1,11 +1,9 @@
-import europe from './europe';
-import europeExpress from './europe-express';
-import usa from './usa';
+import express from './express';
+import standard from './standard';
 
 const presets = {
-  europe,
-  europeExpress,
-  usa,
+  express,
+  standard,
 };
 
 export default presets;

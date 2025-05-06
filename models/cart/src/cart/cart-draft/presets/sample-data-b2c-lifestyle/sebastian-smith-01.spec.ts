@@ -152,7 +152,7 @@ describe(`with sebastianSmith01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "express-delivery",
+          "key": "express-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -322,7 +322,7 @@ describe(`with sebastianSmith01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "express-delivery",
+          "key": "express-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -490,7 +490,7 @@ describe(`with sebastianSmith01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "express-delivery",
+          "key": "express-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -662,7 +662,7 @@ describe(`with sebastianSmith01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "express-delivery",
+          "key": "express-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,

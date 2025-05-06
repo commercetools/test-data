@@ -37,7 +37,7 @@ const steelHipFlask01 = ProductVariantDraft.presets.sampleDataB2CLifestyle
   .build<TProductVariantDraft>();
 
 const shippingMethod = ShippingMethodDraft.presets.sampleDataB2CLifestyle
-  .usaShippingMethod()
+  .standardShippingMethod()
   .build<TShippingMethodDraft>();
 
 const store = StoreDraft.presets.sampleDataB2CLifestyle

@@ -17,19 +17,26 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataB2CLifestyle
 const standardShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
-    .key('standard-delivery')
-    .name('Standard Delivery')
+    .key('standard-shipping')
+    .name('Standard Shipping')
     .localizedName(
       LocalizedStringDraft.presets
         .empty()
-        ['en-US']('Standard Delivery')
-        ['de-DE']('Standard Delivery')
-        ['en-GB']('Standard Delivery')
+        ['en-US']('Standard Shipping')
+        ['de-DE']('Standardversand')
+        ['en-GB']('Standard Shipping')
+    )
+    .localizedDescription(
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('3-5 business days')
+        ['de-DE']('3-5 Arbeitstage')
+        ['en-GB']('3-5 business days')
     )
     .taxCategory(
       KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([ZoneRateDraft.presets.sampleDataB2CLifestyle.europe()])
+    .zoneRates([ZoneRateDraft.presets.sampleDataB2CLifestyle.standard()])
     .isDefault(true);
 
 export default standardShippingMethod;

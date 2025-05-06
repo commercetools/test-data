@@ -8,12 +8,20 @@ const europeZone = ZoneDraft.presets.sampleDataB2CLifestyle
   .europeAndUk()
   .build<TZoneDraft>();
 
-const europeExpress = (): TZoneRateDraftBuilder =>
+const usaZone = ZoneDraft.presets.sampleDataB2CLifestyle
+  .countryUsa()
+  .build<TZoneDraft>();
+
+const standard = (): TZoneRateDraftBuilder =>
   ZoneRateDraft.random()
-    .zone(KeyReferenceDraft.presets.zone().key(europeZone.key!))
+    .zone([
+      KeyReferenceDraft.presets.zone().key(europeZone.key!),
+      KeyReferenceDraft.presets.zone().key(usaZone.key!),
+    ])
     .shippingRates([
       ShippingRateDraft.presets.sampleDataB2CLifestyle.eur50000(),
       ShippingRateDraft.presets.sampleDataB2CLifestyle.gbp50000(),
+      ShippingRateDraft.presets.sampleDataB2CLifestyle.usd50000(),
     ]);
 
-export default europeExpress;
+export default standard;

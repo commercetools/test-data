@@ -9,17 +9,24 @@ describe('Shipping Method with standard preset', () => {
       {
         "custom": undefined,
         "isDefault": true,
-        "key": "standard-delivery",
-        "localizedDescription": undefined,
-        "localizedName": {
+        "key": "standard-shipping",
+        "localizedDescription": {
           "de": undefined,
-          "de-DE": "Standard Delivery",
+          "de-DE": "3-5 Arbeitstage",
           "en": undefined,
-          "en-GB": "Standard Delivery",
-          "en-US": "Standard Delivery",
+          "en-GB": "3-5 business days",
+          "en-US": "3-5 business days",
           "fr": undefined,
         },
-        "name": "Standard Delivery",
+        "localizedName": {
+          "de": undefined,
+          "de-DE": "Standardversand",
+          "en": undefined,
+          "en-GB": "Standard Shipping",
+          "en-US": "Standard Shipping",
+          "fr": undefined,
+        },
+        "name": "Standard Shipping",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -29,26 +36,49 @@ describe('Shipping Method with standard preset', () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
+                "freeAbove": {
+                  "centAmount": 1000000,
                   "currencyCode": "EUR",
                 },
-                "tiers": [],
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "EUR",
+                },
+                "tiers": undefined,
               },
               {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
+                "freeAbove": {
+                  "centAmount": 1000000,
                   "currencyCode": "GBP",
                 },
-                "tiers": [],
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "GBP",
+                },
+                "tiers": undefined,
+              },
+              {
+                "freeAbove": {
+                  "centAmount": 1000000,
+                  "currencyCode": "USD",
+                },
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "USD",
+                },
+                "tiers": undefined,
               },
             ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
+            "zone": [
+              {
+                "key": "europe",
+                "typeId": "zone",
+              },
+              {
+                "key": "usa",
+                "typeId": "zone",
+              },
+            ],
           },
         ],
       }
@@ -62,23 +92,36 @@ describe('Shipping Method with standard preset', () => {
       {
         "custom": undefined,
         "isDefault": true,
-        "key": "standard-delivery",
-        "localizedDescription": undefined,
-        "localizedName": [
+        "key": "standard-shipping",
+        "localizedDescription": [
           {
             "locale": "en-US",
-            "value": "Standard Delivery",
+            "value": "3-5 business days",
           },
           {
             "locale": "de-DE",
-            "value": "Standard Delivery",
+            "value": "3-5 Arbeitstage",
           },
           {
             "locale": "en-GB",
-            "value": "Standard Delivery",
+            "value": "3-5 business days",
           },
         ],
-        "name": "Standard Delivery",
+        "localizedName": [
+          {
+            "locale": "en-US",
+            "value": "Standard Shipping",
+          },
+          {
+            "locale": "de-DE",
+            "value": "Standardversand",
+          },
+          {
+            "locale": "en-GB",
+            "value": "Standard Shipping",
+          },
+        ],
+        "name": "Standard Shipping",
         "predicate": undefined,
         "taxCategory": {
           "key": "standard-tax",
@@ -88,26 +131,49 @@ describe('Shipping Method with standard preset', () => {
           {
             "shippingRates": [
               {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
+                "freeAbove": {
+                  "centAmount": 1000000,
                   "currencyCode": "EUR",
                 },
-                "tiers": [],
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "EUR",
+                },
+                "tiers": undefined,
               },
               {
-                "freeAbove": undefined,
-                "price": {
-                  "centAmount": 10000,
+                "freeAbove": {
+                  "centAmount": 1000000,
                   "currencyCode": "GBP",
                 },
-                "tiers": [],
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "GBP",
+                },
+                "tiers": undefined,
+              },
+              {
+                "freeAbove": {
+                  "centAmount": 1000000,
+                  "currencyCode": "USD",
+                },
+                "price": {
+                  "centAmount": 50000,
+                  "currencyCode": "USD",
+                },
+                "tiers": undefined,
               },
             ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
+            "zone": [
+              {
+                "key": "europe",
+                "typeId": "zone",
+              },
+              {
+                "key": "usa",
+                "typeId": "zone",
+              },
+            ],
           },
         ],
       }

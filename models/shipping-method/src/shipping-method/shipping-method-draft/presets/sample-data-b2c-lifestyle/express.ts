@@ -17,19 +17,26 @@ const standardTaxCategoryDraft = TaxCategoryDraft.presets.sampleDataB2CLifestyle
 const expressShippingMethod = (): TShippingMethodDraftBuilder =>
   ShippingMethodDraft.presets
     .empty()
-    .key('express-delivery')
-    .name('Express Delivery')
+    .key('express-shipping')
+    .name('Express Shipping')
     .localizedName(
       LocalizedStringDraft.presets
         .empty()
-        ['en-US']('Express Delivery')
-        ['de-DE']('Express Delivery')
-        ['en-GB']('Express Delivery')
+        ['en-US']('Express shipping')
+        ['de-DE']('Expressversand')
+        ['en-GB']('Express shipping')
+    )
+    .localizedDescription(
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('1-2 business days')
+        ['de-DE']('1-2 Arbeitstage')
+        ['en-GB']('1-2 business days')
     )
     .taxCategory(
       KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([ZoneRateDraft.presets.sampleDataB2CLifestyle.europeExpress()])
+    .zoneRates([ZoneRateDraft.presets.sampleDataB2CLifestyle.express()])
     .isDefault(false);
 
 export default expressShippingMethod;

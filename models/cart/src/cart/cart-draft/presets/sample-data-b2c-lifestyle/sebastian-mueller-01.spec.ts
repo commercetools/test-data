@@ -101,7 +101,7 @@ describe(`with sebastianMueller01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -217,7 +217,7 @@ describe(`with sebastianMueller01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -334,7 +334,7 @@ describe(`with sebastianMueller01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
@@ -452,7 +452,7 @@ describe(`with sebastianMueller01 preset`, () => {
           "title": undefined,
         },
         "shippingMethod": {
-          "key": "standard-delivery",
+          "key": "standard-shipping",
           "typeId": "shipping-method",
         },
         "shippingMode": undefined,
