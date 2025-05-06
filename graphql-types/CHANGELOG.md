@@ -1,5 +1,7 @@
 # @commercetools-test-data/graphql-types
 
+## 10.17.0
+
 ## 10.16.0
 
 ### Patch Changes
