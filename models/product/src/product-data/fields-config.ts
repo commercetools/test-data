@@ -3,6 +3,7 @@ import {
   LocalizedString,
   ReferenceRest,
   type TReferenceGraphql,
+  type TLocalizedStringGraphql,
 } from '@commercetools-test-data/commons';
 import { fake, type TModelFieldsConfig } from '@commercetools-test-data/core';
 import { ProductVariantGraphql, ProductVariantRest } from '../product-variant';
@@ -58,32 +59,45 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
     variant: fake(() => ProductVariantGraphql.random()),
     variants: fake(() => [ProductVariantGraphql.random()]),
   },
-  postBuild: (model) => {
-    const slug = model.slugAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.slugAllLocales)
+  postBuild: (model, context) => {
+    const slugAllLocales = context?.isCompatMode
+      ? (model.slug as unknown as TLocalizedStringGraphql)
+      : model.slugAllLocales;
+    const nameAllLocales = context?.isCompatMode
+      ? (model.name as unknown as TLocalizedStringGraphql)
+      : model.nameAllLocales;
+    const descriptionAllLocales = context?.isCompatMode
+      ? (model.description as unknown as TLocalizedStringGraphql)
+      : model.descriptionAllLocales;
+    const metaDescriptionAllLocales = context?.isCompatMode
+      ? (model.metaDescription as unknown as TLocalizedStringGraphql)
+      : model.metaDescriptionAllLocales;
+    const metaKeywordsAllLocales = context?.isCompatMode
+      ? (model.metaKeywords as unknown as TLocalizedStringGraphql)
+      : model.metaKeywordsAllLocales;
+    const metaTitleAllLocales = context?.isCompatMode
+      ? (model.metaTitle as unknown as TLocalizedStringGraphql)
+      : model.metaTitleAllLocales;
+
+    const slug = slugAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(slugAllLocales)
       : undefined;
-    const name = model.nameAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
+    const name = nameAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales)
       : undefined;
-    const description = model.descriptionAllLocales
+    const description = descriptionAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(descriptionAllLocales)
+      : undefined;
+    const metaDescription = metaDescriptionAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.descriptionAllLocales
+          metaDescriptionAllLocales
         )
       : undefined;
-    const metaDescription = model.metaDescriptionAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.metaDescriptionAllLocales
-        )
+    const metaKeywords = metaKeywordsAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(metaKeywordsAllLocales)
       : undefined;
-    const metaKeywords = model.metaKeywordsAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.metaKeywordsAllLocales
-        )
-      : undefined;
-    const metaTitle = model.metaTitleAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(
-          model.metaTitleAllLocales
-        )
+    const metaTitle = metaTitleAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(metaTitleAllLocales)
       : undefined;
     const categoriesRef = model.categories.map<TReferenceGraphql<'category'>>(
       (category) => ({
@@ -99,6 +113,12 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
       (keyword) => keyword.searchKeywords
     );
     return {
+      slugAllLocales,
+      nameAllLocales,
+      descriptionAllLocales,
+      metaDescriptionAllLocales,
+      metaKeywordsAllLocales,
+      metaTitleAllLocales,
       slug,
       name,
       description,

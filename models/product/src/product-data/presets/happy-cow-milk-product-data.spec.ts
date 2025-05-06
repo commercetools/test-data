@@ -78,7 +78,7 @@ describe('Product "boring generic milk" compatibility presets', () => {
     validateRestModel(restModel);
   });
 
-  it.skip('builds a GraphQL model', () => {
+  it('builds a GraphQL model', () => {
     const graphqlModel = compatPresets
       .happyCowMilkProductData()
       .buildGraphql<TProductDataGraphql>();
