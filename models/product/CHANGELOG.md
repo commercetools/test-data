@@ -1,5 +1,20 @@
 # @commercetools-test-data/product
 
+## 10.17.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.17.0
+  - @commercetools-test-data/graphql-types@10.17.0
+  - @commercetools-test-data/category@10.17.0
+  - @commercetools-test-data/channel@10.17.0
+  - @commercetools-test-data/commons@10.17.0
+  - @commercetools-test-data/product-selection@10.17.0
+  - @commercetools-test-data/product-type@10.17.0
+  - @commercetools-test-data/tax-category@10.17.0
+  - @commercetools-test-data/utils@10.17.0
+
 ## 10.16.0
 
 ### Patch Changes

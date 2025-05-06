@@ -1,5 +1,20 @@
 # @commercetools-test-data/shipping-method
 
+## 10.17.0
+
+### Minor Changes
+
+- [#791](https://github.com/commercetools/test-data/pull/791) [`dd73146`](https://github.com/commercetools/test-data/commit/dd731461228c2c342e725d568b82ca02858be189) Thanks [@lidiyacommercetools](https://github.com/lidiyacommercetools)! - Updated shipping methods and the impacted carts
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.17.0
+  - @commercetools-test-data/commons@10.17.0
+  - @commercetools-test-data/tax-category@10.17.0
+  - @commercetools-test-data/zone@10.17.0
+  - @commercetools-test-data/utils@10.17.0
+
 ## 10.16.0
 
 ### Patch Changes
