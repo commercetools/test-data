@@ -1,5 +1,22 @@
 # @commercetools-test-data/product
 
+## 10.18.1
+
+### Patch Changes
+
+- [#799](https://github.com/commercetools/test-data/pull/799) [`7c9c9de`](https://github.com/commercetools/test-data/commit/7c9c9de3bb0468c94f0c5603ea3072bb88a94739) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed `ProductCatalogData` and `ProductData` sub-models exports.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.18.1
+  - @commercetools-test-data/graphql-types@10.18.1
+  - @commercetools-test-data/category@10.18.1
+  - @commercetools-test-data/channel@10.18.1
+  - @commercetools-test-data/commons@10.18.1
+  - @commercetools-test-data/product-selection@10.18.1
+  - @commercetools-test-data/product-type@10.18.1
+  - @commercetools-test-data/tax-category@10.18.1
+  - @commercetools-test-data/utils@10.18.1
+
 ## 10.18.0
 
 ### Minor Changes
