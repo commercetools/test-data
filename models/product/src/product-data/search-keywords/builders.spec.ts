@@ -1,10 +1,6 @@
 import { SearchKeywordGraphql, SearchKeywordRest } from '../search-keyword';
-import {
-  SearchKeywordsGraphql,
-  SearchKeywordsRest,
-  type TSearchKeywordsGraphql,
-  type TSearchKeywordsRest,
-} from './index';
+import type { TSearchKeywordsGraphql, TSearchKeywordsRest } from './types';
+import { SearchKeywordsGraphql, SearchKeywordsRest } from './index';
 
 function validateRestModel(restModel: TSearchKeywordsRest) {
   expect(restModel).toEqual(

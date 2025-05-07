@@ -17,9 +17,9 @@ export * as ImageDraft from './image/image-draft';
 export * from './product';
 export * from './product/product-draft';
 
-export * as ProductCatalogData from './product-catalog-data';
+export * from './product-catalog-data';
 
-export * as ProductData from './product-data';
+export * from './product-data';
 
 export * from './product-variant';
 export * from './product-variant/product-variant-draft';

@@ -5,8 +5,6 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-export * from './types';
-
 export const ProductCatalogDataRest = {
   random: RestModelBuilder,
   presets: modelPresets.restPresets,
