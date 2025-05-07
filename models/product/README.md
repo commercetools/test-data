@@ -39,54 +39,59 @@ const image = Image.random().build<TImage>();
 
 ```ts
 import {
-  Product,
-  ProductDraft,
-  type TProduct,
-  type TProductDraft,
+  ProductGraphql,
+  ProductRest,
+  ProductGraphqlDraft,
+  ProductRestDraft,
 } from '@commercetools-test-data/product';
 
-const product = Product.random().build<TProduct>();
-const productDraft = ProductDraft.random().build<TProductDraft>();
+const productGraphql = ProductGraphql.random().build();
+const productRest = ProductRest.random().build();
+
+const productGraphqlDraft = ProductGraphqlDraft.random().build();
+const productRestDraft = ProductRestDraft.random().build();
 ```
 
 ## ProductCatalogData
 
 ```ts
 import {
-  ProductCatalogData,
-  type TProductCatalogData,
+  ProductCatalogDataGraphql,
+  ProductCatalogDataRest,
 } from '@commercetools-test-data/product';
 
-const productCatalogData =
-  ProductCatalogData.random().build<TProductCatalogData>();
+const productCatalogDataGraphql = ProductCatalogDataGraphql.random().build();
+const productCatalogDataRest = ProductCatalogDataRest.random().build();
 ```
 
 ## ProductData
 
 ```ts
 import {
-  ProductData,
-  type TProductData,
+  ProductDataGraphql,
+  TProductDataRest,
 } from '@commercetools-test-data/product';
 
 // For REST entities
-const productDataRest = ProductData.random().buildRest<TProductData>();
+const productDataRest = ProductDataRest.random().build();
 
 // For Graphql entities
-const productDataGraphql = ProductData.random().buildGraphql<TProductData>();
+const productDataGraphql = ProductData.random().build();
 ```
 
 ## ProductVariant
 
 ```ts
 import {
-  ProductVariant,
-  ProductVariantDraft,
-  type TProductVariant,
-  type TProductVariantDraft,
+  ProductVariantGraphql,
+  ProductVariantRest,
+  ProductVariantGraphqlDraft,
+  ProductVariantRestDraft,
 } from '@commercetools-test-data/product';
 
-const productVariant = ProductVariant.random().build<TProductVariant>();
-const productVariantDraft =
-  ProductVariantDraft.random().build<TProductVariantDraft>();
+const productVariantGraphql = ProductVariantGraphql.random().build();
+const productVariantRest = ProductVariantRest.random().build();
+
+const productVariantGraphqlDraft = ProductVariantGraphqlDraft.random().build();
+const productVariantRestDraft = ProductVariantGraphqlDraft.random().build();
 ```
