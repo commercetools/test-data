@@ -1,9 +1,8 @@
-import {
-  CategoryOrderHintGraphql,
-  CategoryOrderHintRest,
-  type TCategoryOrderHintGraphql,
-  type TCategoryOrderHintRest,
-} from './index';
+import type {
+  TCategoryOrderHintGraphql,
+  TCategoryOrderHintRest,
+} from './types';
+import { CategoryOrderHintGraphql, CategoryOrderHintRest } from './index';
 
 function validateRestModel(restModel: TCategoryOrderHintRest) {
   expect(restModel).toEqual(
