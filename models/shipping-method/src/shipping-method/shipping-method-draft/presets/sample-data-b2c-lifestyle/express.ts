@@ -36,7 +36,10 @@ const expressShippingMethod = (): TShippingMethodDraftBuilder =>
     .taxCategory(
       KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
-    .zoneRates([ZoneRateDraft.presets.sampleDataB2CLifestyle.express()])
+    .zoneRates([
+      ZoneRateDraft.presets.sampleDataB2CLifestyle.expressEuropeUk(),
+      ZoneRateDraft.presets.sampleDataB2CLifestyle.expressUsa(),
+    ])
     .isDefault(false);
 
 export default expressShippingMethod;

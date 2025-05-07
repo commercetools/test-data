@@ -1,9 +1,9 @@
 import type { TZoneRateDraft, TZoneRateDraftGraphql } from '../../../types';
-import express from './express';
+import expressEuropeUk from './express-europe-uk';
 
-describe('with express preset', () => {
+describe('with express europe and uk preset', () => {
   it(`should return an express preset`, () => {
-    const expressPreset = express().build<TZoneRateDraft>();
+    const expressPreset = expressEuropeUk().build<TZoneRateDraft>();
     expect(expressPreset).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -23,32 +23,18 @@ describe('with express preset', () => {
             },
             "tiers": [],
           },
-          {
-            "freeAbove": undefined,
-            "price": {
-              "centAmount": 75000,
-              "currencyCode": "USD",
-            },
-            "tiers": [],
-          },
         ],
-        "zone": [
-          {
-            "key": "europe",
-            "typeId": "zone",
-          },
-          {
-            "key": "usa",
-            "typeId": "zone",
-          },
-        ],
+        "zone": {
+          "key": "europe",
+          "typeId": "zone",
+        },
       }
     `);
   });
 
   it(`should return an express preset when built for Graphql`, () => {
     const expressPresetGraphql =
-      express().buildGraphql<TZoneRateDraftGraphql>();
+      expressEuropeUk().buildGraphql<TZoneRateDraftGraphql>();
     expect(expressPresetGraphql).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -68,25 +54,11 @@ describe('with express preset', () => {
             },
             "tiers": [],
           },
-          {
-            "freeAbove": undefined,
-            "price": {
-              "centAmount": 75000,
-              "currencyCode": "USD",
-            },
-            "tiers": [],
-          },
         ],
-        "zone": [
-          {
-            "key": "europe",
-            "typeId": "zone",
-          },
-          {
-            "key": "usa",
-            "typeId": "zone",
-          },
-        ],
+        "zone": {
+          "key": "europe",
+          "typeId": "zone",
+        },
       }
     `);
   });
