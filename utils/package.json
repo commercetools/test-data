@@ -1,6 +1,6 @@
 {
   "name": "@commercetools-test-data/utils",
-  "version": "10.17.0",
+  "version": "10.18.0",
   "description": "Data model for commercetools platform common types",
   "bugs": "https://github.com/commercetools/test-data/issues",
   "repository": {

@@ -1,5 +1,24 @@
 # @commercetools-test-data/product
 
+## 10.18.0
+
+### Minor Changes
+
+- [#790](https://github.com/commercetools/test-data/pull/790) [`149c2d2`](https://github.com/commercetools/test-data/commit/149c2d2b0abddc5703af513a397c7b37dc3c5884) Thanks [@emmenko](https://github.com/emmenko)! - Migrate remaining models to new structure, fix inconsistencies with fields in `ProductData` model
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.18.0
+  - @commercetools-test-data/graphql-types@10.18.0
+  - @commercetools-test-data/category@10.18.0
+  - @commercetools-test-data/channel@10.18.0
+  - @commercetools-test-data/commons@10.18.0
+  - @commercetools-test-data/product-selection@10.18.0
+  - @commercetools-test-data/product-type@10.18.0
+  - @commercetools-test-data/tax-category@10.18.0
+  - @commercetools-test-data/utils@10.18.0
+
 ## 10.17.0
 
 ### Patch Changes
