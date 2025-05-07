@@ -3,6 +3,9 @@ export * from './attribute/types';
 export * from './image/types';
 export * from './product-catalog-data/types';
 export * from './product-data/types';
+export * from './product-data/category-order-hint/types';
+export * from './product-data/search-keyword/types';
+export * from './product-data/search-keywords/types';
 
 // Export models
 export * as Attribute from './attribute';

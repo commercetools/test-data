@@ -1,8 +1,18 @@
-import boringGenericMilkProductCatalogData from './boring-generic-milk-product-catalog-data';
-import happyCowMilkProductCatalogData from './happy-cow-milk-product-catalog-data';
-const presets = {
-  happyCowMilkProductCatalogData,
-  boringGenericMilkProductCatalogData,
-};
+import * as boringGenericMilkProductCatalogData from './boring-generic-milk-product-catalog-data';
+import * as happyCowMilkProductCatalogData from './happy-cow-milk-product-catalog-data';
 
-export default presets;
+export const restPresets = {
+  boringGenericMilkProductCatalogData:
+    boringGenericMilkProductCatalogData.restPreset,
+  happyCowMilkProductCatalogData: happyCowMilkProductCatalogData.restPreset,
+};
+export const graphqlPresets = {
+  boringGenericMilkProductCatalogData:
+    boringGenericMilkProductCatalogData.graphqlPreset,
+  happyCowMilkProductCatalogData: happyCowMilkProductCatalogData.graphqlPreset,
+};
+export const compatPresets = {
+  boringGenericMilkProductCatalogData:
+    boringGenericMilkProductCatalogData.compatPreset,
+  happyCowMilkProductCatalogData: happyCowMilkProductCatalogData.compatPreset,
+};

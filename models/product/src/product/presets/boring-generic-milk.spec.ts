@@ -31,7 +31,7 @@ function validateGraphqlModel(graphqlModel: TProductGraphql) {
       key: 'boring-generic-milk-key',
       masterData: expect.objectContaining({
         current: expect.objectContaining({
-          slug: 'boring-generic-milk-slug',
+          __typename: 'ProductData',
         }),
         published: true,
         __typename: 'ProductCatalogData',
@@ -63,7 +63,7 @@ describe('Product "boring generic milk" presets', () => {
   });
 });
 
-describe('Product "happy cow milk" compatibility presets', () => {
+describe('Product "boring generic milk" compatibility presets', () => {
   it('builds a default (REST) model', () => {
     const compatModel = compatPreset().build();
 

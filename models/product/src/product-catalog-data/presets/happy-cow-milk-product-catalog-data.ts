@@ -1,14 +1,43 @@
-import * as ProductData from '../../product-data';
-import ProductCatalogData from '../builder';
+import { TBuilder } from '@commercetools-test-data/core';
+import {
+  ProductData,
+  ProductDataGraphql,
+  ProductDataRest,
+} from '../../product-data';
+import {
+  CompatProductModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
+import type {
+  TProductCatalogData,
+  TProductCatalogDataGraphql,
+  TProductCatalogDataRest,
+} from '../types';
 
-const happyCowMilkProductCatalogData = () => {
-  const productData = ProductData.presets.happyCowMilkProductData();
-
-  return ProductCatalogData()
+export const restPreset = (): TBuilder<TProductCatalogDataRest> => {
+  const productData = ProductDataRest.presets.happyCowMilkProductData();
+  return RestModelBuilder()
     .staged(productData)
     .current(productData)
     .published(true)
     .hasStagedChanges(false);
 };
 
-export default happyCowMilkProductCatalogData;
+export const graphqlPreset = (): TBuilder<TProductCatalogDataGraphql> => {
+  const productData = ProductDataGraphql.presets.happyCowMilkProductData();
+  return GraphqlModelBuilder()
+    .staged(productData)
+    .current(productData)
+    .published(true)
+    .hasStagedChanges(false);
+};
+
+export const compatPreset = (): TBuilder<TProductCatalogData> => {
+  const productData = ProductData.presets.happyCowMilkProductData();
+  return CompatProductModelBuilder()
+    .staged(productData)
+    .current(productData)
+    .published(true)
+    .hasStagedChanges(false);
+};
