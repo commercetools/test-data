@@ -7,7 +7,11 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "presets/all-packages"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -64,7 +68,8 @@
     "utils",
     "package.json",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "recurrence-policy"
   ],
   "preconstruct": {
     "entrypoints": [
@@ -114,7 +119,8 @@
       "type.ts",
       "user.ts",
       "zone.ts",
-      "utils.ts"
+      "utils.ts",
+      "recurrence-policy.ts"
     ]
   },
   "dependencies": {
@@ -163,6 +169,7 @@
     "@commercetools-test-data/user": "workspace:*",
     "@commercetools-test-data/zone": "workspace:*",
     "@commercetools-test-data/core": "workspace:*",
-    "@commercetools-test-data/utils": "workspace:*"
+    "@commercetools-test-data/utils": "workspace:*",
+    "@commercetools-test-data/recurrence-policy": "workspace:*"
   }
 }

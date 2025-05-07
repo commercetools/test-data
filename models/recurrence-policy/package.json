@@ -1,0 +1,29 @@
+{
+  "name": "@commercetools-test-data/recurrence-policy",
+  "version": "10.16.0",
+  "description": "Data model for commercetools API RecurrencePolicy",
+  "bugs": "https://github.com/commercetools/test-data/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/test-data.git",
+    "directory": "models/recurrence-policy"
+  },
+  "keywords": ["javascript", "typescript", "test-data"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/commercetools-test-data-recurrence-policy.cjs.js",
+  "module": "dist/commercetools-test-data-recurrence-policy.esm.js",
+  "files": ["dist", "package.json", "LICENSE", "README.md"],
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@babel/runtime-corejs3": "^7.17.9",
+    "@commercetools-test-data/commons": "10.16.0",
+    "@commercetools-test-data/core": "10.16.0",
+    "@commercetools-test-data/graphql-types": "10.16.0",
+    "@commercetools-test-data/utils": "10.16.0",
+    "@commercetools/platform-sdk": "^8.5.0",
+    "@faker-js/faker": "^8.0.0"
+  }
+}
