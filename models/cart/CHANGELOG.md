@@ -1,5 +1,27 @@
 # @commercetools-test-data/cart
 
+## 10.18.0
+
+### Patch Changes
+
+- Updated dependencies [[`149c2d2`](https://github.com/commercetools/test-data/commit/149c2d2b0abddc5703af513a397c7b37dc3c5884)]:
+  - @commercetools-test-data/product@10.18.0
+  - @commercetools-test-data/core@10.18.0
+  - @commercetools-test-data/graphql-types@10.18.0
+  - @commercetools-test-data/business-unit@10.18.0
+  - @commercetools-test-data/cart-discount@10.18.0
+  - @commercetools-test-data/channel@10.18.0
+  - @commercetools-test-data/commons@10.18.0
+  - @commercetools-test-data/customer@10.18.0
+  - @commercetools-test-data/customer-group@10.18.0
+  - @commercetools-test-data/discount-code@10.18.0
+  - @commercetools-test-data/product-type@10.18.0
+  - @commercetools-test-data/shipping-method@10.18.0
+  - @commercetools-test-data/store@10.18.0
+  - @commercetools-test-data/tax-category@10.18.0
+  - @commercetools-test-data/type@10.18.0
+  - @commercetools-test-data/utils@10.18.0
+
 ## 10.17.0
 
 ### Minor Changes

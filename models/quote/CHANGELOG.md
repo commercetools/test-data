@@ -1,5 +1,23 @@
 # @commercetools-test-data/quote
 
+## 10.18.0
+
+### Patch Changes
+
+- [#796](https://github.com/commercetools/test-data/pull/796) [`d28d5d5`](https://github.com/commercetools/test-data/commit/d28d5d51cc20de814ef40deda2a0d8208845a4d0) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We were using a range version for the `staged-quote` package which we don't use for any other dependency and we need to avoid to keep dependencies consistency.
+
+- Updated dependencies []:
+  - @commercetools-test-data/cart@10.18.0
+  - @commercetools-test-data/quote-request@10.18.0
+  - @commercetools-test-data/staged-quote@10.18.0
+  - @commercetools-test-data/core@10.18.0
+  - @commercetools-test-data/business-unit@10.18.0
+  - @commercetools-test-data/commons@10.18.0
+  - @commercetools-test-data/customer@10.18.0
+  - @commercetools-test-data/customer-group@10.18.0
+  - @commercetools-test-data/store@10.18.0
+  - @commercetools-test-data/utils@10.18.0
+
 ## 10.17.0
 
 ### Patch Changes
