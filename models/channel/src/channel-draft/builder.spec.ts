@@ -1,8 +1,5 @@
 import { CustomFieldBooleanType } from '@commercetools-test-data/type';
-import {
-  getDefaultGraphqlLocalesExpect,
-  getDefaultRestLocalesExpect,
-} from '@commercetools-test-data/utils/src/test-utils';
+import { testUtils } from '@commercetools-test-data/utils';
 import { roles } from '../constants';
 import { TChannelDraftGraphql, TChannelDraftRest } from '../types';
 import { ChannelDraft, ChannelDraftGraphql, ChannelDraftRest } from './index';
@@ -17,8 +14,8 @@ describe('ChannelDraft builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         roles: [roles.Primary],
-        name: getDefaultRestLocalesExpect(),
-        description: getDefaultRestLocalesExpect(),
+        name: testUtils.getDefaultRestLocalesExpect(),
+        description: testUtils.getDefaultRestLocalesExpect(),
         address: expect.objectContaining({
           country: expect.any(String),
           state: expect.any(String),
@@ -44,8 +41,8 @@ describe('ChannelDraft builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         roles: [roles.Primary],
-        name: getDefaultGraphqlLocalesExpect(),
-        description: getDefaultGraphqlLocalesExpect(),
+        name: testUtils.getDefaultGraphqlLocalesExpect(),
+        description: testUtils.getDefaultGraphqlLocalesExpect(),
         address: expect.objectContaining({
           city: expect.any(String),
           __typename: 'Address',
@@ -74,8 +71,8 @@ describe('ChannelDraft compatibility builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         roles: [roles.Primary],
-        name: getDefaultRestLocalesExpect(),
-        description: getDefaultRestLocalesExpect(),
+        name: testUtils.getDefaultRestLocalesExpect(),
+        description: testUtils.getDefaultRestLocalesExpect(),
         address: expect.objectContaining({
           country: expect.any(String),
           state: expect.any(String),
@@ -101,8 +98,8 @@ describe('ChannelDraft compatibility builder', () => {
       expect.objectContaining({
         key: expect.any(String),
         roles: [roles.Primary],
-        name: getDefaultGraphqlLocalesExpect(),
-        description: getDefaultGraphqlLocalesExpect(),
+        name: testUtils.getDefaultGraphqlLocalesExpect(),
+        description: testUtils.getDefaultGraphqlLocalesExpect(),
         address: expect.objectContaining({
           city: expect.any(String),
           __typename: 'Address',
