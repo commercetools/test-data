@@ -19,7 +19,10 @@ function validateRestModel(restModel: TProductDataRest) {
           typeId: 'category',
         }),
       ]),
-      categoryOrderHints: expect.any(Object),
+      categoryOrderHints: expect.objectContaining({
+        categoryId: expect.any(String),
+        orderHint: expect.any(String),
+      }),
       description: expect.objectContaining({
         en: expect.any(String),
       }),

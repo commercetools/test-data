@@ -20,7 +20,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
     categories: fake(() => [
       ReferenceRest.random().typeId('category').obj(Category.random()),
     ]),
-    categoryOrderHints: fake(() => [CategoryOrderHintRest.random()]),
+    categoryOrderHints: fake(() => CategoryOrderHintRest.random()),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.random()),
     metaTitle: fake(() => LocalizedString.random()),
