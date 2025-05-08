@@ -1,5 +1,22 @@
 # @commercetools-test-data/product
 
+## 10.18.2
+
+### Patch Changes
+
+- [#803](https://github.com/commercetools/test-data/pull/803) [`1828d09`](https://github.com/commercetools/test-data/commit/1828d09244b052416da855e44fbb9dfea21f5ffc) Thanks [@emmenko](https://github.com/emmenko)! - Fix `categoryOrderHints` in `ProductDataRest`.
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.18.2
+  - @commercetools-test-data/graphql-types@10.18.2
+  - @commercetools-test-data/category@10.18.2
+  - @commercetools-test-data/channel@10.18.2
+  - @commercetools-test-data/commons@10.18.2
+  - @commercetools-test-data/product-selection@10.18.2
+  - @commercetools-test-data/product-type@10.18.2
+  - @commercetools-test-data/tax-category@10.18.2
+  - @commercetools-test-data/utils@10.18.2
+
 ## 10.18.1
 
 ### Patch Changes
