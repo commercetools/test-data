@@ -1,7 +1,7 @@
 import type { Image } from '@commercetools/platform-sdk';
 import type { TBuilder } from '../../../../core';
-import { LocalizedString } from '../../../commons';
 import type { TCtpImage } from '../../../../graphql-types';
+import { LocalizedString } from '../../../commons';
 import {
   ProductTailoringAttributeRest,
   ProductTailoringAttributeGraphql,

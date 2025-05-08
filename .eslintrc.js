@@ -5,6 +5,7 @@ module.exports = {
   // TODO: use the new `eslint-config-node`?
   extends: ['@commercetools-frontend/eslint-config-mc-app'],
   rules: {
+    'import/export': 'off', // To avoid the error: `RangeError: Maximum call stack size exceeded`
     'import/order': [
       'error',
       {

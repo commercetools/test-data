@@ -1,10 +1,7 @@
 import type { Channel, ChannelDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '../../core';
+import { TCtpChannel, TCtpChannelDraft } from '../../graphql-types';
 import type { TGeometryRest } from '../commons';
-import {
-  TCtpChannel,
-  TCtpChannelDraft,
-} from '../../graphql-types';
 
 /**
  * @deprecated use `TChannelRest` instead
