@@ -40,7 +40,7 @@ Releases of test-data models can be created when needed by merging a respective 
 1. Check open Pull Requests which are pending review and contact creators if they wish to be part of the next release
     - If code review is close to be finished help to ensure it progresses to include the change in your release
     - If code review of Pull Request(s) requires more time inform the owner that the change won't be part of your release
-2. Perform the release and inform any other teams are have functionality in the release
+2. Perform the release and inform any other teams are have a contribution in the release
     - This should raise awareness in teams to update the test-data packages in their repositories
     - If the release contains issues with test-data packages of other teams those teams, not you, are expected to fix the bug(s)
 4. Ensure that relevant test-data packages are updated in your repository and working as expected
