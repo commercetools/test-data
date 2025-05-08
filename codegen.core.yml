@@ -9,7 +9,7 @@ extensions:
       schemas/core.json:
         plugins:
           - introspection
-      graphql-types/src/generated/core.ts:
+      standalone/src/graphql-types/generated/core.ts:
         plugins:
           - typescript
           - typescript-operations
@@ -20,4 +20,4 @@ extensions:
     hooks:
       afterAllFileWrite:
         - prettier --write
-        - node ./graphql-types/src/types-post-processor.mjs
+        - node ./types-post-processor.mjs

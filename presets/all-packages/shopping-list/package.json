@@ -1,6 +1,0 @@
-{
-  "name": "@commercetools/composable-commerce-test-data-shopping-list",
-  "version": "1.0.0",
-  "main": "dist/commercetools-composable-commerce-test-data-shopping-list.cjs.js",
-  "module": "dist/commercetools-composable-commerce-test-data-shopping-list.esm.js"
-}

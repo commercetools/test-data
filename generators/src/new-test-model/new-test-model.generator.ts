@@ -1,11 +1,13 @@
 import { execSync } from 'node:child_process';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { constants } from 'node:fs';
+import { access, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { findRoot } from '@manypkg/find-root';
 import snakeCase from 'lodash/snakeCase';
 import prompts from 'prompts';
 import { render as renderTemplate } from 'squirrelly';
 import { CodeGenerator } from '../types';
-import { packageTemplatesData, modelTemplatesData } from './templates';
+import { modelTemplatesData } from './templates';
 
 type TExecCommandError = Error & {
   status?: number;
@@ -20,10 +22,13 @@ const servicesToTypePrefixMap = {
   settings: 'TMcSettings',
 } as const;
 
-function ensureDirectory(filePath: string) {
+async function ensureDirectory(filePath: string) {
   const dirPath = dirname(filePath);
-  if (!existsSync(dirPath)) {
-    mkdirSync(dirPath, { recursive: true });
+
+  try {
+    await access(dirPath, constants.F_OK);
+  } catch {
+    await mkdir(dirPath, { recursive: true });
   }
 }
 
@@ -47,6 +52,12 @@ function modelTemplatesFilter(params: {
 
 export const newTestModelGenerator: CodeGenerator = {
   generate: async () => {
+    const { rootDir } = await findRoot(process.cwd());
+
+    const standaloneDir = join(rootDir, 'standalone');
+    const standalonePackageJsonPath = join(standaloneDir, 'package.json');
+    const modelsDir = join(standaloneDir, 'src/models');
+
     // 1. Get input information
     const { modelName } = await prompts({
       type: 'text',
@@ -54,6 +65,9 @@ export const newTestModelGenerator: CodeGenerator = {
       message:
         'What is the name of the model? (eg: Order, ProductProjection, etc)',
     });
+    if (!modelName) {
+      throw new Error('Model name is required');
+    }
     const modelCodename = snakeCase(modelName).replaceAll('_', '-');
 
     const { isDraftRequired } = await prompts({
@@ -96,7 +110,7 @@ export const newTestModelGenerator: CodeGenerator = {
       ],
     });
 
-    let outputPath = join(__dirname, '..', '..', '..', 'models', modelCodename);
+    let outputPath = join(modelsDir, modelCodename);
     if (generationType === 'child') {
       const { parentModel } = await prompts({
         type: 'text',
@@ -104,21 +118,12 @@ export const newTestModelGenerator: CodeGenerator = {
         message:
           'What is the name of the parent model folder? (eg: order, product-projection, etc)',
       });
-      outputPath = join(
-        __dirname,
-        '..',
-        '..',
-        '..',
-        'models',
-        parentModel,
-        'src',
-        modelCodename
-      );
+      outputPath = join(modelsDir, parentModel, modelCodename);
     }
 
     // Get the current version of the packages in this repo
-    const corePackageJson = await import(
-      join(__dirname, '..', '..', '..', 'core', 'package.json')
+    const standalonePackageJson = JSON.parse(
+      await readFile(standalonePackageJsonPath, { encoding: 'utf-8' })
     );
 
     // 2. Generate the model files
@@ -128,128 +133,114 @@ export const newTestModelGenerator: CodeGenerator = {
       graphqlTypePrefix,
       isDraftRequired,
       isPresetExampleRequired,
-      packageVersion: corePackageJson.version,
+      packageVersion: standalonePackageJson.version,
     };
 
-    console.log(''); // a simple line break
-    if (generationType === 'standalone') {
-      packageTemplatesData.forEach((template) => {
-        const filePath = join(outputPath, template.templatePath);
-        ensureDirectory(filePath);
-        console.log(`Generating file: ${filePath}`);
-        writeFileSync(
-          filePath,
-          renderTemplate(template.templateContent, templatesData)
-        );
-      });
+    const filteredModelTemplatesData = modelTemplatesData.filter(
+      modelTemplatesFilter({
+        isPresetExampleRequired,
+        isDraftModel: false,
+      })
+    );
+
+    for (const template of filteredModelTemplatesData) {
+      const filePath = join(outputPath, template.templatePath);
+      await ensureDirectory(filePath);
+      console.log(`Generating file: ${filePath}`);
+      await writeFile(
+        filePath,
+        renderTemplate(template.templateContent, templatesData),
+        { encoding: 'utf-8' }
+      );
     }
 
-    modelTemplatesData
-      .filter(
+    if (isDraftRequired) {
+      const filteredModelTemplatesData = modelTemplatesData.filter(
         modelTemplatesFilter({
           isPresetExampleRequired,
           isDraftModel: false,
         })
-      )
-      .forEach((template) => {
+      );
+      for (const template of filteredModelTemplatesData) {
         const filePath = join(
           outputPath,
-          generationType === 'standalone' ? 'src' : '',
+          `${modelCodename}-draft`,
           template.templatePath
         );
-        ensureDirectory(filePath);
+        await ensureDirectory(filePath);
         console.log(`Generating file: ${filePath}`);
-        writeFileSync(
+        await writeFile(
           filePath,
-          renderTemplate(template.templateContent, templatesData)
-        );
-      });
-
-    if (isDraftRequired) {
-      modelTemplatesData
-        .filter(
-          modelTemplatesFilter({
+          renderTemplate(template.templateContent, {
+            isDraftModel: true,
             isPresetExampleRequired,
-            isDraftModel: false,
-          })
-        )
-        .forEach((template) => {
-          const filePath = join(
-            outputPath,
-            'src',
-            `${modelCodename}-draft`,
-            template.templatePath
-          );
-          ensureDirectory(filePath);
-          console.log(`Generating file: ${filePath}`);
-          writeFileSync(
-            filePath,
-            renderTemplate(template.templateContent, {
-              isDraftModel: true,
-              isPresetExampleRequired,
-              modelName: `${modelName}Draft`,
-              modelCodename: `${modelCodename}-draft`,
-              graphqlTypePrefix,
-            })
-          );
-        });
+            modelName: `${modelName}Draft`,
+            modelCodename: `${modelCodename}-draft`,
+            graphqlTypePrefix,
+          }),
+          { encoding: 'utf-8' }
+        );
+      }
     }
 
-    // 3. Update the single package preset
+    // 3. Update the standalone package
     if (generationType === 'standalone') {
-      const presetDirectoryPath = join(
-        __dirname,
-        '..',
-        '..',
-        '..',
-        'presets',
-        'all-packages'
-      );
-      // Generate the re-export proxy file
-      writeFileSync(
-        join(presetDirectoryPath, 'src', `${modelCodename}.ts`),
-        `export * from '@commercetools-test-data/${modelCodename}';`
+      console.log();
+      console.log(
+        `Updating standalone package to add new entrypoint for "${modelCodename}"`
       );
       // Update package.json
-      const presetPackageJson = (
-        await import(join(presetDirectoryPath, 'package.json'))
-      ).default;
-      presetPackageJson.files.push(modelCodename);
-      presetPackageJson.preconstruct.entrypoints.push(`${modelCodename}.ts`);
-      presetPackageJson.dependencies[
-        `@commercetools-test-data/${modelCodename}`
-      ] = 'workspace:*';
-      writeFileSync(
-        join(presetDirectoryPath, 'package.json'),
-        JSON.stringify(presetPackageJson, null, 2)
+      standalonePackageJson.files.push(modelCodename);
+      standalonePackageJson.files.sort();
+      standalonePackageJson.preconstruct.entrypoints.push(
+        `./${modelCodename}.ts`
+      );
+      standalonePackageJson.preconstruct.entrypoints.sort();
+      await writeFile(
+        standalonePackageJsonPath,
+        JSON.stringify(standalonePackageJson, null, 2),
+        { encoding: 'utf-8' }
       );
 
-      // Run preconstruct to generate the proxy package.json file
-      const rootDirectoryPath = join(__dirname, '..', '..', '..');
+      console.log(`Creating entrypoint`);
+      const modelEntryPointPath = join(
+        standaloneDir,
+        `src/${modelCodename}.ts`
+      );
+      await writeFile(
+        modelEntryPointPath,
+        `export * from './models/${modelCodename}';`,
+        { encoding: 'utf-8' }
+      );
+
+      // Run Preconstruct to generate the entrypoint proxy folder.
+      console.log(`Running "preconstruct fix"`);
       try {
-        execSync('npx preconstruct fix', {
-          cwd: rootDirectoryPath,
+        execSync('pnpm preconstruct fix', {
+          cwd: rootDir,
         });
       } catch (err) {
         const error = err as TExecCommandError;
         throw new Error(
-          `Failed to run "preconstruct fix": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
+          `Failed to run "preconstruct fix": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDir}`
         );
       }
 
       // Run pnpm install to install the new package
+      console.log(`Running "pnpm install"`);
       try {
         execSync('pnpm install', {
-          cwd: rootDirectoryPath,
+          cwd: rootDir,
         });
       } catch (err) {
         const error = err as TExecCommandError;
         throw new Error(
-          `Failed to run "pnpm install": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDirectoryPath}`
+          `Failed to run "pnpm install": ${error.message} - Exit code: ${error.status} - stdout: ${error.stdout?.toString()} - stderr: ${error.stderr?.toString()} - cwd: ${rootDir}`
         );
       }
     }
 
+    console.log();
     console.log(
       "\n 🚀 All set! We've generated all files. You can now adjust them to your needs."
     );
