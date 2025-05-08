@@ -18,12 +18,12 @@ To know more about how to work and build data models, take a look at the [models
 
 # Ownership & Gouvernance
 
-## Ownership 
+## Ownership
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This repository is not owned by a single team. Each individual aspect of this repository is owned by the respective teams of their respective domains.
 
-## Contributing 
+## Contributing
 
 It is _mandatory that before contributing to this repository_ you make sure you have read the [contribution guidelines](https://github.com/commercetools/test-data/blob/main/CONTRIBUTING.md) as well as the documentation about the [test data models overview](https://github.com/commercetools/test-data/blob/main/docs/contributing/test-data-models-overview.md) and [building a new test data model](https://github.com/commercetools/test-data/blob/main/docs/guidelines/creating-new-model.md) if needed.
 
@@ -38,13 +38,13 @@ Pull Request reviews must and is expected to only involve the team owning the re
 Releases of test-data models can be created when needed by merging a respective "Version Packages" Pull Request. Keep in mind that releases should be aggregated whenever possible. As a result before releasing you are expected to:
 
 1. Check open Pull Requests which are pending review and contact creators if they wish to be part of the next release
-    - If code review is close to be finished help to ensure it progresses to include the change in your release
-    - If code review of Pull Request(s) requires more time inform the owner that the change won't be part of your release
-2. Perform the release and inform any other teams are have a contribution in the release
-    - This should raise awareness in teams to update the test-data packages in their repositories
-    - If the release contains issues with test-data packages of other teams those teams, not you, are expected to fix the bug(s)
-4. Ensure that relevant test-data packages are updated in your repository and working as expected
-    - If you see issues with test-data packages of your team's domain you must investigate the bug(s) and fix them
+   - If code review is close to be finished help to ensure it progresses to include the change in your release
+   - If code review of Pull Request(s) requires more time inform the owner that the change won't be part of your release
+2. Perform the release and inform any other teams that have a contribution in the release
+   - This should raise awareness in teams to update the test-data packages in their repositories
+   - If the release contains issues with test-data packages of other teams those teams, not you, are expected to fix the bug(s)
+3. Ensure that relevant test-data packages are updated in your repository and working as expected
+   - If you see issues with test-data packages of your team's domain you must investigate the bug(s) and fix them
 
 # Usage
 
