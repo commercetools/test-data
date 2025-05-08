@@ -1,5 +1,17 @@
 # @commercetools-test-data/business-unit
 
+## 10.18.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @commercetools-test-data/core@10.18.2
+  - @commercetools-test-data/associate-role@10.18.2
+  - @commercetools-test-data/commons@10.18.2
+  - @commercetools-test-data/customer@10.18.2
+  - @commercetools-test-data/store@10.18.2
+  - @commercetools-test-data/utils@10.18.2
+
 ## 10.18.1
 
 ### Patch Changes

@@ -1,5 +1,57 @@
 # @commercetools/composable-commerce-test-data
 
+## 10.18.2
+
+### Patch Changes
+
+- Updated dependencies [[`1828d09`](https://github.com/commercetools/test-data/commit/1828d09244b052416da855e44fbb9dfea21f5ffc)]:
+  - @commercetools-test-data/product@10.18.2
+  - @commercetools-test-data/cart@10.18.2
+  - @commercetools-test-data/inventory-entry@10.18.2
+  - @commercetools-test-data/product-projection@10.18.2
+  - @commercetools-test-data/standalone-price@10.18.2
+  - @commercetools-test-data/order@10.18.2
+  - @commercetools-test-data/quote@10.18.2
+  - @commercetools-test-data/quote-request@10.18.2
+  - @commercetools-test-data/staged-quote@10.18.2
+  - @commercetools-test-data/payment@10.18.2
+  - @commercetools-test-data/core@10.18.2
+  - @commercetools-test-data/associate-role@10.18.2
+  - @commercetools-test-data/attribute-group@10.18.2
+  - @commercetools-test-data/business-unit@10.18.2
+  - @commercetools-test-data/cart-discount@10.18.2
+  - @commercetools-test-data/category@10.18.2
+  - @commercetools-test-data/channel@10.18.2
+  - @commercetools-test-data/commons@10.18.2
+  - @commercetools-test-data/custom-application@10.18.2
+  - @commercetools-test-data/custom-object@10.18.2
+  - @commercetools-test-data/custom-view@10.18.2
+  - @commercetools-test-data/customer@10.18.2
+  - @commercetools-test-data/customer-group@10.18.2
+  - @commercetools-test-data/customers-search-list-my-view@10.18.2
+  - @commercetools-test-data/discount-code@10.18.2
+  - @commercetools-test-data/discounts-custom-view@10.18.2
+  - @commercetools-test-data/filter-values@10.18.2
+  - @commercetools-test-data/organization@10.18.2
+  - @commercetools-test-data/organization-extension@10.18.2
+  - @commercetools-test-data/platform-limits@10.18.2
+  - @commercetools-test-data/product-discount@10.18.2
+  - @commercetools-test-data/product-selection@10.18.2
+  - @commercetools-test-data/product-tailoring@10.18.2
+  - @commercetools-test-data/product-type@10.18.2
+  - @commercetools-test-data/project@10.18.2
+  - @commercetools-test-data/project-extension@10.18.2
+  - @commercetools-test-data/review@10.18.2
+  - @commercetools-test-data/shipping-method@10.18.2
+  - @commercetools-test-data/shopping-list@10.18.2
+  - @commercetools-test-data/state@10.18.2
+  - @commercetools-test-data/store@10.18.2
+  - @commercetools-test-data/tax-category@10.18.2
+  - @commercetools-test-data/type@10.18.2
+  - @commercetools-test-data/user@10.18.2
+  - @commercetools-test-data/zone@10.18.2
+  - @commercetools-test-data/utils@10.18.2
+
 ## 10.18.1
 
 ### Patch Changes
