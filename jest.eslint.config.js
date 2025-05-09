@@ -10,7 +10,7 @@ module.exports = {
     'dist',
     'public',
     'generated',
-    'sample-data-',
+    'sample-data-*',
   ],
   testMatch: ['<rootDir>/**/*.js', '<rootDir>/**/*.ts', '<rootDir>/**/*.tsx'],
   watchPlugins: ['jest-watch-typeahead/filename'],

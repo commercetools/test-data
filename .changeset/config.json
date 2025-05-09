@@ -9,7 +9,6 @@
   "commit": false,
   "fixed": [
     [
-      "@commercetools-test-data/*",
       "@commercetools/composable-commerce-test-data"
     ]
   ],
