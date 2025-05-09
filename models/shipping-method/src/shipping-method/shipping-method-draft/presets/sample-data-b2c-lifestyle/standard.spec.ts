@@ -57,6 +57,14 @@ describe('Shipping Method with standard preset', () => {
                 },
                 "tiers": undefined,
               },
+            ],
+            "zone": {
+              "key": "europe",
+              "typeId": "zone",
+            },
+          },
+          {
+            "shippingRates": [
               {
                 "freeAbove": {
                   "centAmount": 1000000,
@@ -69,16 +77,10 @@ describe('Shipping Method with standard preset', () => {
                 "tiers": undefined,
               },
             ],
-            "zone": [
-              {
-                "key": "europe",
-                "typeId": "zone",
-              },
-              {
-                "key": "usa",
-                "typeId": "zone",
-              },
-            ],
+            "zone": {
+              "key": "usa",
+              "typeId": "zone",
+            },
           },
         ],
       }
@@ -152,6 +154,14 @@ describe('Shipping Method with standard preset', () => {
                 },
                 "tiers": undefined,
               },
+            ],
+            "zone": {
+              "key": "europe",
+              "typeId": "zone",
+            },
+          },
+          {
+            "shippingRates": [
               {
                 "freeAbove": {
                   "centAmount": 1000000,
@@ -164,16 +174,10 @@ describe('Shipping Method with standard preset', () => {
                 "tiers": undefined,
               },
             ],
-            "zone": [
-              {
-                "key": "europe",
-                "typeId": "zone",
-              },
-              {
-                "key": "usa",
-                "typeId": "zone",
-              },
-            ],
+            "zone": {
+              "key": "usa",
+              "typeId": "zone",
+            },
           },
         ],
       }

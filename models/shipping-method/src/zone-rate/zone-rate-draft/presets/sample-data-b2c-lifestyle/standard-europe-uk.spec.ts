@@ -1,9 +1,9 @@
 import type { TZoneRateDraft, TZoneRateDraftGraphql } from '../../../types';
-import standard from './standard';
+import standardEuropeUk from './standard-europe-uk';
 
-describe('with standard preset', () => {
+describe('with standard eu and uk preset', () => {
   it(`should return a standard preset`, () => {
-    const standardPreset = standard().build<TZoneRateDraft>();
+    const standardPreset = standardEuropeUk().build<TZoneRateDraft>();
     expect(standardPreset).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -29,35 +29,18 @@ describe('with standard preset', () => {
             },
             "tiers": undefined,
           },
-          {
-            "freeAbove": {
-              "centAmount": 1000000,
-              "currencyCode": "USD",
-            },
-            "price": {
-              "centAmount": 50000,
-              "currencyCode": "USD",
-            },
-            "tiers": undefined,
-          },
         ],
-        "zone": [
-          {
-            "key": "europe",
-            "typeId": "zone",
-          },
-          {
-            "key": "usa",
-            "typeId": "zone",
-          },
-        ],
+        "zone": {
+          "key": "europe",
+          "typeId": "zone",
+        },
       }
     `);
   });
 
   it(`should return a standard preset when built for Graphql`, () => {
     const standardPresetGraphql =
-      standard().buildGraphql<TZoneRateDraftGraphql>();
+      standardEuropeUk().buildGraphql<TZoneRateDraftGraphql>();
     expect(standardPresetGraphql).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -83,28 +66,11 @@ describe('with standard preset', () => {
             },
             "tiers": undefined,
           },
-          {
-            "freeAbove": {
-              "centAmount": 1000000,
-              "currencyCode": "USD",
-            },
-            "price": {
-              "centAmount": 50000,
-              "currencyCode": "USD",
-            },
-            "tiers": undefined,
-          },
         ],
-        "zone": [
-          {
-            "key": "europe",
-            "typeId": "zone",
-          },
-          {
-            "key": "usa",
-            "typeId": "zone",
-          },
-        ],
+        "zone": {
+          "key": "europe",
+          "typeId": "zone",
+        },
       }
     `);
   });
