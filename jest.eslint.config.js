@@ -10,6 +10,7 @@ module.exports = {
     'dist',
     'public',
     'generated',
+    // TODO: remove once sample data is removed from the repository
     'sample-data-*',
   ],
   testMatch: ['<rootDir>/**/*.js', '<rootDir>/**/*.ts', '<rootDir>/**/*.tsx'],
