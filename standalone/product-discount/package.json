@@ -1,0 +1,4 @@
+{
+  "main": "dist/commercetools-composable-commerce-test-data-product-discount.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-product-discount.esm.js"
+}

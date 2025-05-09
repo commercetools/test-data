@@ -8,7 +8,7 @@ extensions:
       schemas/mc.json:
         plugins:
           - introspection
-      graphql-types/src/generated/mc.ts:
+      standalone/src/graphql-types/generated/mc.ts:
         plugins:
           - typescript
           - typescript-operations
@@ -19,4 +19,4 @@ extensions:
     hooks:
       afterAllFileWrite:
         - prettier --write
-        - node ./graphql-types/src/types-post-processor.mjs
+        - node ./types-post-processor.mjs

@@ -24,9 +24,6 @@ const buildTemplatesConfig = (templatesDirectoryPath: string) => {
   });
 };
 
-export const packageTemplatesData = buildTemplatesConfig(
-  join(__dirname, 'package')
-);
 export const modelTemplatesData = buildTemplatesConfig(
   join(__dirname, 'model')
 );

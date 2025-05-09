@@ -1,6 +1,0 @@
-{
-  "name": "@commercetools/composable-commerce-test-data-customer-group",
-  "version": "1.0.0",
-  "main": "dist/commercetools-composable-commerce-test-data-customer-group.cjs.js",
-  "module": "dist/commercetools-composable-commerce-test-data-customer-group.esm.js"
-}
