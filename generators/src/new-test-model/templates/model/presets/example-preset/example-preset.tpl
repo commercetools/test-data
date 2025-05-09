@@ -1,4 +1,4 @@
-import type { TBuilder } from '../../../../core';
+import type { TBuilder } from '../../../../../core';
 import { {{it.modelName}}Graphql, {{it.modelName}}Rest } from '../..';
 import type {
   T{{it.modelName}}Graphql,
