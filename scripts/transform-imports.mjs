@@ -14,19 +14,37 @@
  * The script will:
  * 1. Find all TypeScript and JavaScript files in the specified directory
  * 2. Transform imports from @commercetools-test-data/* to @commercetools/composable-commerce-test-data/*
- * 3. Print the names of files that were updated
+ * 3. Update package.json files to replace @commercetools-test-data/* dependencies with @commercetools/composable-commerce-test-data
+ * 4. Print the names of files that were updated
+ * 5. Detect the package manager (from packageManager field or lockfiles)
+ * 6. Install dependencies using the detected package manager
  *
- * What it transforms ES Module imports
- *  import { something } from '@commercetools-test-data/core';
- *  // becomes
- *  import { something } from '@commercetools/composable-commerce-test-data/core';
+ * What it transforms:
+ * - ES Module imports:
+ *   import { something } from '@commercetools-test-data/core';
+ *   // becomes
+ *   import { something } from '@commercetools/composable-commerce-test-data/core';
+ *
+ * - Package.json dependencies:
+ *   {
+ *     "dependencies": {
+ *       "@commercetools-test-data/core": "1.0.0"
+ *     }
+ *   }
+ *   // becomes
+ *   {
+ *     "dependencies": {
+ *       "@commercetools/composable-commerce-test-data": "11.0.0"
+ *     }
+ *   }
  *
  * The script ignores files in node_modules, dist, and build directories.
  */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { execSync } from 'node:child_process';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { readdir } from 'node:fs/promises';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 
 const PACKAGE_JSON = 'package.json';
 const TEST_DATA_SCOPE = '@commercetools-test-data/';
@@ -114,6 +132,58 @@ const findFiles = async (dir) => {
   return { files, packageJsons };
 };
 
+const detectPackageManager = (rootDir) => {
+  // First check packageManager field in root package.json
+  const rootPackageJson = join(rootDir, 'package.json');
+  if (existsSync(rootPackageJson)) {
+    try {
+      const pkg = JSON.parse(readFileSync(rootPackageJson, 'utf8'));
+      if (pkg.packageManager) {
+        const [name] = pkg.packageManager.split('@');
+        return name;
+      }
+    } catch (error) {
+      console.warn('Could not parse root package.json:', error.message);
+    }
+  }
+
+  // Then check for lockfiles
+  if (existsSync(join(rootDir, 'pnpm-lock.yaml'))) {
+    return 'pnpm';
+  }
+  if (existsSync(join(rootDir, 'yarn.lock'))) {
+    return 'yarn';
+  }
+  if (existsSync(join(rootDir, 'package-lock.json'))) {
+    return 'npm';
+  }
+
+  // Default to npm if no lockfile is found
+  return 'npm';
+};
+
+const installDependencies = (rootDir) => {
+  const packageManager = detectPackageManager(rootDir);
+  console.log(`\nInstalling dependencies using ${packageManager}...`);
+
+  try {
+    const command = packageManager === 'yarn'
+      ? 'yarn install'
+      : packageManager === 'pnpm'
+      ? 'pnpm install'
+      : 'npm install';
+
+    execSync(command, {
+      cwd: rootDir,
+      stdio: 'inherit'
+    });
+    console.log('Dependencies installed successfully!');
+  } catch (error) {
+    console.error('Failed to install dependencies:', error.message);
+    process.exit(1);
+  }
+};
+
 const main = async () => {
   const targetPath = process.argv[2] || '.';
   console.log(`Looking for files in: ${targetPath}`);
@@ -122,6 +192,19 @@ const main = async () => {
   files.forEach(transformFile);
   packageJsons.forEach(transformPackageJson);
   console.log('Done!');
+
+  // Find the repository root (where package.json is located)
+  let currentDir = process.cwd();
+  while (!existsSync(join(currentDir, 'package.json'))) {
+    const parentDir = dirname(currentDir);
+    if (parentDir === currentDir) {
+      console.error('Could not find repository root (package.json)');
+      process.exit(1);
+    }
+    currentDir = parentDir;
+  }
+
+  installDependencies(currentDir);
 };
 
 main().catch(console.error);
