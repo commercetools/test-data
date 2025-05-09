@@ -18,15 +18,34 @@ In order to make sure consumers only pull the models they need, you need to impo
 ```ts
 import {
   ChanelGraphql,
+  ChannelDraftGraphql,
   TChannelGraphql,
+  TChannelDraftGraphql,
 } from '@commercetools/composable-commerce-test-data/channel';
 import {
   ProductRest,
+  ProductDraftRest,
   TProductRest,
+  TProductDraftRest,
 } from '@commercetools/composable-commerce-test-data/product';
 
+// This is how to build read models
 const channelGraphqlModel: TChannelGraphql = ChannelGraphql.random().build();
 const productRestModel: TProductRest = ProductRest.random().build();
+
+// This is how to build write models
+const channelDraftGraphqlModel: TChannelDraftGraphql =
+  ChannelDraftGraphql.random().build();
+const productDraftRestModel: TProductDraftRest =
+  ProductDraftRest.random().build();
+
+// Some models also provide presets you can use like this
+const foodStoreChannelGraphql: TChannelGraphql = ChannelGraphql.presets
+  .foodStore()
+  .build();
+const happyCowMilkProductRest: TProductRest = ProductRest.presets
+  .happyCowMilk()
+  .build();
 ```
 
 ## Available test data models
