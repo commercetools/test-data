@@ -74,5 +74,5 @@
   "devDependencies": {
     "jest-extended": "4.0.2"
   },
-  "packageManager": "pnpm@9.15.9"
+  "packageManager": "pnpm@10.10.0"
 }
