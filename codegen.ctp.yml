@@ -10,7 +10,7 @@ extensions:
       schemas/ctp.json:
         plugins:
           - introspection
-      graphql-types/src/generated/ctp.ts:
+      standalone/src/graphql-types/generated/ctp.ts:
         plugins:
           - typescript
           - typescript-operations
@@ -36,4 +36,4 @@ extensions:
     hooks:
       afterAllFileWrite:
         - prettier --write
-        - node ./graphql-types/src/types-post-processor.mjs
+        - node ./types-post-processor.mjs

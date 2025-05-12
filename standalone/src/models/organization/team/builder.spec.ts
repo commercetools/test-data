@@ -1,0 +1,78 @@
+/* eslint-disable jest/no-disabled-tests */
+/* eslint-disable jest/valid-title */
+import { createBuilderSpec } from '../../../core/test-utils';
+import type { TTeam, TTeamGraphql } from './types';
+import * as Team from './index';
+
+describe('builder', () => {
+  it(
+    ...createBuilderSpec<TTeam, TTeam>(
+      'default',
+      Team.random().name('foo'),
+      expect.objectContaining({
+        id: expect.any(String),
+        name: 'foo',
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+          }),
+        ]),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TTeam, TTeam>(
+      'rest',
+      Team.random(),
+      expect.objectContaining({
+        id: expect.any(String),
+        name: expect.any(String),
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+          }),
+        ]),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TTeam, TTeamGraphql>(
+      'graphql',
+      Team.random(),
+      expect.objectContaining({
+        __typename: 'Team',
+        id: expect.any(String),
+        name: expect.any(String),
+        members: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            version: expect.any(Number),
+            email: expect.any(String),
+            lowercaseEmail: expect.any(String),
+            firstName: expect.any(String),
+            lastName: expect.any(String),
+            language: ['en'],
+            numberFormat: ['en'],
+            businessRole: expect.any(String),
+            createdAt: expect.any(String),
+            lastModifiedAt: expect.any(String),
+            lastLoginAt: expect.any(String),
+            locked: false,
+            __typename: 'User',
+          }),
+        ]),
+        membersRef: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(String),
+            typeId: 'user',
+            __typename: 'Reference',
+          }),
+        ]),
+      })
+    )
+  );
+});

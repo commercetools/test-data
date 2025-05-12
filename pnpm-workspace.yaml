@@ -1,7 +1,3 @@
 packages:
-- "core"
-- "graphql-types"
-- "models/*"
-- "utils"
 - "generators"
-- "presets/all-packages"
+- "standalone"

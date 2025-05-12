@@ -1,0 +1,18 @@
+import {
+  KeyReferenceDraft,
+  MoneyDraft,
+} from '../../../../commons';
+import { TStandalonePriceDraftBuilder } from '../../../types';
+import * as StandalonePriceDraft from '../../index';
+
+const xx890OpRed8 = (): TStandalonePriceDraftBuilder =>
+  StandalonePriceDraft.presets
+    .empty()
+    .key('xx890-op-red-8')
+    .sku('xx890-op-red')
+    .value(MoneyDraft.random().currencyCode('USD').centAmount(5500000))
+    .country('US')
+    .channel(KeyReferenceDraft.presets.channel().key('us-large-customers'))
+    .active(true);
+
+export default xx890OpRed8;

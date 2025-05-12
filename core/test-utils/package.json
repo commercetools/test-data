@@ -1,4 +1,0 @@
-{
-  "main": "dist/commercetools-test-data-core-test-utils.cjs.js",
-  "module": "dist/commercetools-test-data-core-test-utils.esm.js"
-}
