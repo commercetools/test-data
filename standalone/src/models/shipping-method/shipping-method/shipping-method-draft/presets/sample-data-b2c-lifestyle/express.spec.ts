@@ -51,6 +51,14 @@ describe('Shipping Method with express preset', () => {
                 },
                 "tiers": [],
               },
+            ],
+            "zone": {
+              "key": "europe",
+              "typeId": "zone",
+            },
+          },
+          {
+            "shippingRates": [
               {
                 "freeAbove": undefined,
                 "price": {
@@ -60,16 +68,10 @@ describe('Shipping Method with express preset', () => {
                 "tiers": [],
               },
             ],
-            "zone": [
-              {
-                "key": "europe",
-                "typeId": "zone",
-              },
-              {
-                "key": "usa",
-                "typeId": "zone",
-              },
-            ],
+            "zone": {
+              "key": "usa",
+              "typeId": "zone",
+            },
           },
         ],
       }
@@ -137,6 +139,14 @@ describe('Shipping Method with express preset', () => {
                 },
                 "tiers": [],
               },
+            ],
+            "zone": {
+              "key": "europe",
+              "typeId": "zone",
+            },
+          },
+          {
+            "shippingRates": [
               {
                 "freeAbove": undefined,
                 "price": {
@@ -146,16 +156,10 @@ describe('Shipping Method with express preset', () => {
                 "tiers": [],
               },
             ],
-            "zone": [
-              {
-                "key": "europe",
-                "typeId": "zone",
-              },
-              {
-                "key": "usa",
-                "typeId": "zone",
-              },
-            ],
+            "zone": {
+              "key": "usa",
+              "typeId": "zone",
+            },
           },
         ],
       }
