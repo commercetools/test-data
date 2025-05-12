@@ -1,6 +1,24 @@
-export * as ProductSelectionDraft from './product-selection-draft';
-export * as ProductSelection from '.';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as modelPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export const ProductSelectionRest = {
+  random: RestModelBuilder,
+  presets: modelPresets.restPresets,
+};
+
+export const ProductSelectionGraphql = {
+  random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `ProductSelectionRest` or `ProductSelectionGraphql` exported models instead of `ProductSelection`.
+ */
+export const ProductSelection = {
+  random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
+};

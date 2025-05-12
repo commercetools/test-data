@@ -1,5 +1,5 @@
-import defaultProductSelection from './default-product-selection';
-import usMediumCustomersCatalog from './us-medium-customers-catalog';
+import * as defaultProductSelection from './default-product-selection';
+import * as usMediumCustomersCatalog from './us-medium-customers-catalog';
 
 const presets = {
   usMediumCustomersCatalog,
