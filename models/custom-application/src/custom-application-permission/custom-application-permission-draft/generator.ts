@@ -1,6 +1,6 @@
 import { Generator, fake } from '@commercetools-test-data/core';
 import upperFirst from 'lodash/upperFirst';
-import { supportedViewOAuthScopes } from '../custom-application-permission/constants';
+import { supportedViewOAuthScopes } from '../constants';
 import type { TCustomApplicationPermissionDraft } from './types';
 
 const generator = Generator<TCustomApplicationPermissionDraft>({

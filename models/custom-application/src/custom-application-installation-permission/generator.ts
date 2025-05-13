@@ -2,7 +2,7 @@ import { Generator, fake } from '@commercetools-test-data/core';
 import { createRelatedDates } from '@commercetools-test-data/utils';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import { supportedViewOAuthScopes } from '../custom-application-permission/custom-application-permission/constants';
+import { supportedViewOAuthScopes } from '../custom-application-permission/constants';
 import type { TCustomApplicationInstallationPermission } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

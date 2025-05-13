@@ -1,8 +1,9 @@
-import { ViewOnlyPermissions, ManageOnlyPermissions } from '.';
+import type { TCustomApplicationPermissionGraphql } from '../types';
+import { graphqlPresets } from './index';
 
 describe('view only permissions', () => {
   it('should build important properties', () => {
-    const built = ViewOnlyPermissions('avengers').buildGraphql();
+    const built = graphqlPresets.viewOnly().buildGraphql();
     expect(built).toEqual(
       expect.objectContaining({
         name: 'viewAvengers',
@@ -13,7 +14,7 @@ describe('view only permissions', () => {
 });
 describe('with manage only permissions', () => {
   it('should build important properties', () => {
-    const built = ManageOnlyPermissions('avengers').buildGraphql();
+    const built = graphqlPresets.manageOnly().buildGraphql();
 
     expect(built).toEqual(
       expect.objectContaining({

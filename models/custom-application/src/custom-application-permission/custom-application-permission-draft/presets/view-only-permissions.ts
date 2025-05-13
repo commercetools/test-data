@@ -2,7 +2,7 @@ import { entryPointUriPathToResourceAccesses } from '@commercetools-frontend/app
 import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import { supportedViewOAuthScopes } from '../../custom-application-permission/constants';
+import { supportedViewOAuthScopes } from '../../constants';
 import CustomApplicationPermission from '../builder';
 
 const preset = (entryPointUriPath = 'avengers', additionalPermission = '') => {
