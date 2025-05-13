@@ -11,6 +11,8 @@ import type {
 
 const commonFieldsConfig = {
   discountedAmount: fake(() => Money.random()),
+  discountedNetAmount: null,
+  discountedGrossAmount: null,
 };
 
 export const restFieldsConfig: TModelFieldsConfig<TDiscountOnTotalPriceRest> = {
