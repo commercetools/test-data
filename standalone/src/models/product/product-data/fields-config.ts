@@ -22,7 +22,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
     ]),
     categoryOrderHints: fake(() => CategoryOrderHintRest.random()),
     description: fake(() => LocalizedString.random()),
-    slug: fake(() => LocalizedString.random()),
+    slug: fake(() => LocalizedString.presets.ofSlugs()),
     metaTitle: fake(() => LocalizedString.random()),
     metaDescription: fake(() => LocalizedString.random()),
     metaKeywords: fake(() => LocalizedString.random()),
@@ -55,7 +55,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
     searchKeywords: fake(() => [SearchKeywordsGraphql.random()]),
     skus: fake((f) => [`${f.lorem.word()}-${f.string.alphanumeric(3)}`]),
     slug: null, // computed
-    slugAllLocales: fake(() => LocalizedString.random()),
+    slugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
     variant: fake(() => ProductVariantGraphql.random()),
     variants: fake(() => [ProductVariantGraphql.random()]),
   },
