@@ -1,8 +1,8 @@
 import {
   fake,
   type TModelFieldsConfig,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
+} from '@/core';
+import { createRelatedDates } from '@/utils';
 import type { T{{it.modelName}}Graphql, T{{it.modelName}}Rest } from '{{@if(it.isDraftModel !== true)}}.{{#else}}..{{/if}}/types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
