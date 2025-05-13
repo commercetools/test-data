@@ -1,9 +1,17 @@
 import * as defaultProductSelection from './default-product-selection';
 import * as usMediumCustomersCatalog from './us-medium-customers-catalog';
 
-const presets = {
-  usMediumCustomersCatalog,
-  defaultProductSelection,
+export const restPresets = {
+  usMediumCustomersCatalog: usMediumCustomersCatalog.restPreset,
+  defaultProductSelection: defaultProductSelection.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  usMediumCustomersCatalog: usMediumCustomersCatalog.graphqlPreset,
+  defaultProductSelection: defaultProductSelection.graphqlPreset,
+};
+
+export const compatPresets = {
+  usMediumCustomersCatalog: usMediumCustomersCatalog.compatPreset,
+  defaultProductSelection: defaultProductSelection.compatPreset,
+};

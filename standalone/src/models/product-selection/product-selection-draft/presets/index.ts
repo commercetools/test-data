@@ -1,27 +1,15 @@
 import * as empty from './empty';
-import sampleDataB2B from './sample-data-b2b';
+import * as sampleDataB2B from './sample-data-b2b';
 
 export const restPresets = {
   empty: empty.restPreset,
-  sampleDataB2B: {
-    usMediumCustomersCatalog: sampleDataB2B.usMediumCustomersCatalog.restPreset,
-    defaultProductSelection: sampleDataB2B.defaultProductSelection.restPreset,
-  },
+  sampleDataB2B: sampleDataB2B.restPresets,
 };
 export const graphqlPresets = {
   empty: empty.graphqlPreset,
-  sampleDataB2B: {
-    usMediumCustomersCatalog:
-      sampleDataB2B.usMediumCustomersCatalog.graphqlPreset,
-    defaultProductSelection:
-      sampleDataB2B.defaultProductSelection.graphqlPreset,
-  },
+  sampleDataB2B: sampleDataB2B.graphqlPresets,
 };
 export const compatPresets = {
   empty: empty.compatPreset,
-  sampleDataB2B: {
-    usMediumCustomersCatalog:
-      sampleDataB2B.usMediumCustomersCatalog.compatPreset,
-    defaultProductSelection: sampleDataB2B.defaultProductSelection.compatPreset,
-  },
+  sampleDataB2B: sampleDataB2B.compatPresets,
 };
