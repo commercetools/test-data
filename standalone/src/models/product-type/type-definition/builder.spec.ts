@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { LocalizedString } from '../../commons';
-import { FieldDefinition } from '../../type';
+import { LocalizedString } from '@/models/commons';
+import { FieldDefinition } from '@/models/type';
 import { TypeDefinition } from '.';
 
 describe('builder', () => {

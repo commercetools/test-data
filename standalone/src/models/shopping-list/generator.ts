@@ -1,10 +1,6 @@
-import { sequence, fake, Generator } from '../../core';
-import { createRelatedDates } from '../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-  Reference,
-} from '../commons';
+import { sequence, fake, Generator } from '@/core';
+import { ClientLogging, LocalizedString, Reference } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TShoppingList } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

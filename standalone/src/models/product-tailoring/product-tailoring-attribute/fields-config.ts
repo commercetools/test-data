@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { LocalizedString } from '../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { LocalizedString } from '@/models/commons';
 
 import type {
   TProductTailoringAttributeGraphql,

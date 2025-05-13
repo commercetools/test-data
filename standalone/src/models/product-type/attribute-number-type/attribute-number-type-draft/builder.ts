@@ -1,4 +1,4 @@
-import { Builder } from '../../../../core';
+import { Builder } from '@/core';
 import {
   TAttributeNumberType,
   TCreateAttributeNumberTypeDraftBuilder,

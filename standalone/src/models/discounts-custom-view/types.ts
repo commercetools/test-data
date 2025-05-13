@@ -1,9 +1,12 @@
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import type {
   TMcSettingsDiscountsCustomView,
   TMcSettingsDiscountsCustomViewInput,
-} from '../../graphql-types';
-import type { TLocalizedString, TLocalizedStringGraphql } from '../commons';
+} from '@/graphql-types';
+import type {
+  TLocalizedString,
+  TLocalizedStringGraphql,
+} from '@/models/commons';
 
 export type TDiscountsCustomView = Omit<
   TMcSettingsDiscountsCustomView,

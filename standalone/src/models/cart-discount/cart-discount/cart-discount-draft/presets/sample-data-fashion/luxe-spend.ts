@@ -1,11 +1,8 @@
-import {
-  LocalizedStringDraft,
-  MoneyDraft,
-} from '../../../../../commons';
+import { LocalizedStringDraft, MoneyDraft } from '@/models/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
-} from '../../../../../customer-group';
+} from '@/models/customer-group';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueAbsoluteDraft,

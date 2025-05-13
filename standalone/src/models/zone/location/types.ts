@@ -1,5 +1,5 @@
 import { Location } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TLocation = Location;
 

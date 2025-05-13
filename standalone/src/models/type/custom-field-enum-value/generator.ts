@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import { type TCustomFieldEnumValue } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldenumvalue

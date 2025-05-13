@@ -1,6 +1,6 @@
+import type { TBuilder } from '@/core';
+import { Money } from '@/models/commons';
 import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../..';
-import type { TBuilder } from '../../../../../core';
-import { Money } from '../../../../commons';
 import { TaxPortionGraphql, TaxPortionRest } from '../../../tax-portion';
 import type { TTaxedItemPriceGraphql, TTaxedItemPriceRest } from '../../types';
 

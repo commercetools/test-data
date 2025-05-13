@@ -12,6 +12,33 @@ module.exports = {
       {
         alphabetize: { order: 'asc', caseInsensitive: true },
         pathGroupsExcludedImportTypes: ['builtin'],
+        pathGroups: [
+          {
+            pattern: '@/core',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: '@/core/test-utils',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: '@/graphql-types',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: '@/models/**',
+            group: 'external',
+            position: 'after',
+          },
+          {
+            pattern: '@/utils',
+            group: 'external',
+            position: 'after',
+          },
+        ],
       },
     ],
     'import/no-anonymous-default-export': 'off',

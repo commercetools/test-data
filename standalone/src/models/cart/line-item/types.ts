@@ -1,9 +1,6 @@
 import type { LineItem, LineItemDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpLineItem,
-  TCtpLineItemDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpLineItem, TCtpLineItemDraft } from '@/graphql-types';
 /**
  * @deprecated Use `TCtpLineItemRest` or `TCtpLineItemGraphql` instead.
  */

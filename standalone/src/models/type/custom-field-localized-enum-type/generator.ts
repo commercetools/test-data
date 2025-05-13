@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import * as CustomFieldLocalizedEnumValue from '../custom-field-localized-enum-value';
 import { TCustomFieldLocalizedEnumType } from './types';
 

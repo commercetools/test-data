@@ -1,4 +1,4 @@
-import { CustomFieldBooleanType } from '../../../type';
+import { CustomFieldBooleanType } from '@/models/type';
 import { TCartDraftGraphql, TCartDraftRest } from '../types';
 import { CartDraft, CartDraftGraphql, CartDraftRest } from './index';
 

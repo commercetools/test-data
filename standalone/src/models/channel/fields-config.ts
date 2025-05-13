@@ -1,9 +1,4 @@
-import {
-  fake,
-  sequence,
-  type TModelFieldsConfig,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
+import { fake, sequence, type TModelFieldsConfig } from '@/core';
 import {
   Address,
   ClientLogging,
@@ -11,7 +6,8 @@ import {
   GeometryRest,
   LocalizedString,
   TLocalizedStringGraphql,
-} from '../commons';
+} from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { roles } from './constants';
 import type { TChannelGraphql, TChannelRest } from './types';
 

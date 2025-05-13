@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
-import { ReferenceRest } from '../../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { ReferenceRest } from '@/models/commons';
 import type {
   TProductTailoringDataDraftGraphql,
   TProductTailoringDataDraftRest,

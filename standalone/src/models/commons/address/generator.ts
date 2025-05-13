@@ -1,4 +1,4 @@
-import { fake, oneOf, Generator } from '../../../core';
+import { fake, oneOf, Generator } from '@/core';
 import type { TAddress } from './types';
 
 const generator = Generator<TAddress>({

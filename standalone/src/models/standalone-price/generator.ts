@@ -1,12 +1,8 @@
-import { Generator, fake, sequence } from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Channel } from '../channel';
-import {
-  ClientLogging,
-  PriceTier,
-  CentPrecisionMoney,
-} from '../commons';
-import { CustomerGroup } from '../customer-group';
+import { Generator, fake, sequence } from '@/core';
+import { Channel } from '@/models/channel';
+import { ClientLogging, PriceTier, CentPrecisionMoney } from '@/models/commons';
+import { CustomerGroup } from '@/models/customer-group';
+import { createRelatedDates } from '@/utils';
 import { TStandalonePrice } from './types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#standaloneprice

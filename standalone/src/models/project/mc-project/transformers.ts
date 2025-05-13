@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TMcProject, TMcProjectGraphql } from './types';
 
 const buildFields: (keyof TMcProject)[] = [

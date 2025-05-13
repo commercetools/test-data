@@ -1,29 +1,17 @@
-import type { TBuilder } from '../../../../../../core';
-import {
-  CompanyDraft,
-  type TCompanyDraft,
-} from '../../../../../business-unit';
-import {
-  ChannelDraftRest,
-  type TChannelDraftRest,
-} from '../../../../../channel';
-import {
-  AddressDraft,
-  KeyReferenceDraft,
-} from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+import type { TBuilder } from '@/core';
+import { CompanyDraft, type TCompanyDraft } from '@/models/business-unit';
+import { ChannelDraftRest, type TChannelDraftRest } from '@/models/channel';
+import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '../../../../../product';
+} from '@/models/product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
-} from '../../../../../shipping-method';
-import { StoreDraft, type TStoreDraft } from '../../../../../store';
+} from '@/models/shipping-method';
+import { StoreDraft, type TStoreDraft } from '@/models/store';
 import { LineItemDraft } from '../../../../index';
 import { inventoryMode, origin } from '../../../constants';
 import type {

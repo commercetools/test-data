@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { LocalizedString } from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import { type TCustomFieldLocalizedEnumValue } from './types';
 
 // https://docs.commercetools.com/api/projects/types#customfieldlocalizedenumvalue

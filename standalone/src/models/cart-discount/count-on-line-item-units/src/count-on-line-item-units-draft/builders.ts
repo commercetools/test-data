@@ -1,4 +1,4 @@
-import { createSpecializedBuilder } from '../../../../../core';
+import { createSpecializedBuilder } from '@/core';
 import { TCountOnLineItemUnitsDraftGraphql } from '../../types';
 import { graphqlFieldsConfig } from './fields-config';
 import type { TCreateCountOnLineItemUnitsDraftBuilder } from './types';

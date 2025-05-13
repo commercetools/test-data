@@ -1,5 +1,5 @@
-import { CartDraft, type TCartDraft } from '../../../../cart';
-import { KeyReferenceDraft } from '../../../../commons';
+import { CartDraft, type TCartDraft } from '@/models/cart';
+import { KeyReferenceDraft } from '@/models/commons';
 import {
   QuoteRequestDraft,
   type TQuoteRequestDraftBuilder,

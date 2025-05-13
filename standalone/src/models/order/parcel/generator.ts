@@ -1,6 +1,6 @@
 import type { Parcel } from '@commercetools/platform-sdk';
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { DeliveryItem } from '../delivery-item';
 import { ParcelMeasurements } from '../parcel-measurements';
 import { TrackingData } from '../tracking-data';

@@ -1,4 +1,4 @@
-import { Transformer } from '../../core';
+import { Transformer } from '@/core';
 import { TCustomersSearchListMyView } from './types';
 
 const transformers = {

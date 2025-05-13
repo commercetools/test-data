@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TCustomFieldMoneyTypeGraphql, TCustomFieldMoneyType } from './types';
 
 const transformers = {

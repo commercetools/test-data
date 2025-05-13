@@ -1,4 +1,4 @@
-import { Generator } from '../../../core';
+import { Generator } from '@/core';
 import { TCartDiscountLimitsProjection } from './types';
 
 /**

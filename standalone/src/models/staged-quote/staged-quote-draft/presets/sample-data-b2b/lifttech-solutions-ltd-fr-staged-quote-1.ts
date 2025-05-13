@@ -1,8 +1,8 @@
-import { KeyReferenceDraft } from '../../../../commons';
+import { KeyReferenceDraft } from '@/models/commons';
 import {
   QuoteRequestDraft,
   type TQuoteRequestDraft,
-} from '../../../../quote-request';
+} from '@/models/quote-request';
 import {
   StagedQuoteDraft,
   type TStagedQuoteDraftBuilder,

@@ -1,9 +1,6 @@
-import {
-  TMcSettingsFilterValues,
-  TMcSettingsSortOrder,
-} from '../../graphql-types';
-import { LocalizedField } from '../commons';
-import { FilterValues } from '../filter-values';
+import { TMcSettingsFilterValues, TMcSettingsSortOrder } from '@/graphql-types';
+import { LocalizedField } from '@/models/commons';
+import { FilterValues } from '@/models/filter-values';
 import CustomersSearchListMyView from './builder';
 import { TCustomersSearchListMyView } from './types';
 

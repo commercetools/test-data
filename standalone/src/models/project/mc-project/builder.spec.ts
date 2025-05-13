@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import * as AppliedPermission from './applied-permission';
 import * as ProjectExpiry from './project-expiry';
 import { TMcProject, TMcProjectGraphql } from './types';

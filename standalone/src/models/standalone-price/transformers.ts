@@ -1,9 +1,5 @@
-import { Transformer } from '../../core';
-import {
-  Reference,
-  TReference,
-  TReferenceGraphql,
-} from '../commons';
+import { Transformer } from '@/core';
+import { Reference, TReference, TReferenceGraphql } from '@/models/commons';
 import type {
   TStandalonePrice,
   TStandalonePriceGraphql,

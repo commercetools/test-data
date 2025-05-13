@@ -1,13 +1,10 @@
-import type { TBuilder } from '../../../../../core';
-import {
-  ChannelDraft,
-  type TChannelDraft,
-} from '../../../../channel';
-import { KeyReferenceDraft } from '../../../../commons';
+import type { TBuilder } from '@/core';
+import { ChannelDraft, type TChannelDraft } from '@/models/channel';
+import { KeyReferenceDraft } from '@/models/commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '../../../../product';
+} from '@/models/product';
 import type {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,

@@ -1,9 +1,9 @@
+import { LocalizedString } from '@/models/commons';
 import {
   AttributeEnumType,
   AttributeNumberType,
   AttributeTextType,
-} from '../..';
-import { LocalizedString } from '../../../commons';
+} from '@/models/product-type';
 import AttributeDefinition from '../builder';
 
 const presets = {

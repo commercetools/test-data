@@ -1,6 +1,6 @@
 import omit from 'lodash/omit';
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { TCtpSelectionMode } from '../../../graphql-types';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { TCtpSelectionMode } from '@/graphql-types';
 import {
   CountOnCustomLineItemUnitsGraphql,
   CountOnCustomLineItemUnitsRest,

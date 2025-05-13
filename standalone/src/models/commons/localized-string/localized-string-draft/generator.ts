@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../../core';
+import { Generator, fake } from '@/core';
 import type { TLocalizedStringDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#localizedstring

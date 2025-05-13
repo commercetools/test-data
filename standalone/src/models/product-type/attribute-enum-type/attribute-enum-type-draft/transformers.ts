@@ -1,4 +1,4 @@
-import { buildField, Transformer } from '../../../../core';
+import { buildField, Transformer } from '@/core';
 import {
   TAttributeEnumTypeDraftGraphql,
   TAttributeEnumTypeDraft,

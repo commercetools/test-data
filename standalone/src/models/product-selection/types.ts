@@ -2,8 +2,8 @@ import type {
   ProductSelection,
   ProductSelectionDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import { TLocalizedStringGraphql } from '../commons';
+import type { TBuilder } from '@/core';
+import { TLocalizedStringGraphql } from '@/models/commons';
 
 //ProductSelectionDraft
 export type TProductSelectionDraft = ProductSelectionDraft;

@@ -1,9 +1,9 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import {
   LocalizedString,
   Reference,
   type TReferenceGraphql,
-} from '../../commons';
+} from '@/models/commons';
 import type {
   TShippingMethod,
   TShippingMethodRest,

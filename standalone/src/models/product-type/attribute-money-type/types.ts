@@ -1,5 +1,5 @@
 import type { AttributeMoneyType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAttributeMoneyType = AttributeMoneyType;
 export type TAttributeMoneyTypeDraft = AttributeMoneyType;

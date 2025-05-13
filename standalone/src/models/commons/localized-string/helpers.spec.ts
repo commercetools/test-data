@@ -1,4 +1,4 @@
-import { LocalizedString } from '..';
+import { LocalizedString } from '@/models/commons';
 import { toLocalizedField, resolveGraphqlDefaultLocaleValue } from './helpers';
 import { TLocalizedStringGraphql } from './types';
 

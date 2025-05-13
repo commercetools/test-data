@@ -1,5 +1,5 @@
+import { TBuilder } from '@/core';
 import { Reference, ReferenceGraphql, ReferenceRest } from '../..';
-import { TBuilder } from '../../../../../core';
 import { TReference, TReferenceGraphql, TReferenceRest } from '../../types';
 
 export function buildReferencePresets(typeId: string) {

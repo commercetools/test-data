@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../../../core';
-import { LocalizedStringDraft } from '../../../../commons';
+import type { TBuilder } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import { roles } from '../../../constants';
 import type {
   TChannelDraft,

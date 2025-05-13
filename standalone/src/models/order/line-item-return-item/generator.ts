@@ -1,6 +1,6 @@
 import type { LineItemReturnItem } from '@commercetools/platform-sdk';
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import {
   shipmentState,
   paymentState,

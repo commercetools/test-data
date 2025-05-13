@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { LocalizedField } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedField } from '@/models/commons';
 import * as CustomViewPermissionDraft from '../../custom-view-permission-draft';
 import * as CustomViewTypeSettings from '../../custom-view-type-settings-for-custom-panel';
 import { defaultLocators } from '../constants';

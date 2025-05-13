@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { LocalizedString } from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import {
   AttributeBooleanType,
   AttributeEnumType,

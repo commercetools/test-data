@@ -1,5 +1,5 @@
 import upperFirst from 'lodash/upperFirst';
-import { Generator, fake } from '../../../../core';
+import { Generator, fake } from '@/core';
 import { supportedViewOAuthScopes } from '../custom-application-permission/constants';
 import type { TCustomApplicationPermissionDraft } from './types';
 

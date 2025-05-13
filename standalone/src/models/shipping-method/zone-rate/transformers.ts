@@ -1,9 +1,5 @@
-import { Transformer } from '../../../core';
-import {
-  KeyReference,
-  Reference,
-  TReferenceGraphql,
-} from '../../commons';
+import { Transformer } from '@/core';
+import { KeyReference, Reference, TReferenceGraphql } from '@/models/commons';
 import type { TZoneRate, TZoneRateGraphql, TZoneRateRest } from './types';
 
 const transformers = {

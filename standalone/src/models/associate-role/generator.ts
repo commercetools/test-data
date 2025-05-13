@@ -1,6 +1,6 @@
-import { fake, Generator, sequence } from '../../core';
-import { createRelatedDates } from '../../utils';
-import { ClientLogging } from '../commons';
+import { fake, Generator, sequence } from '@/core';
+import { ClientLogging } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TAssociateRole } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

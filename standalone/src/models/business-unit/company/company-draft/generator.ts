@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../../../core';
-import { AddressDraft } from '../../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { AddressDraft } from '@/models/commons';
 import { status, storeMode, unitType, associateMode } from '../constants';
 import type { TCompanyDraft } from '../types';
 

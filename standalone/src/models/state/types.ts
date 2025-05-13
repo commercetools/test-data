@@ -1,6 +1,6 @@
 import type { State, StateDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import { TLocalizedStringGraphql } from '../commons';
+import type { TBuilder } from '@/core';
+import { TLocalizedStringGraphql } from '@/models/commons';
 
 export type TState = State;
 export type TStateDraft = StateDraft;

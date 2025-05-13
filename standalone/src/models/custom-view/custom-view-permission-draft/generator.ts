@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../core';
+import { Generator, fake } from '@/core';
 import { supportedViewOAuthScopes } from '../custom-view-permission/constants';
 import type { TCustomViewPermissionDraft } from './types';
 

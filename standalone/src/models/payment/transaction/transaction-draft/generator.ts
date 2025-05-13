@@ -1,6 +1,6 @@
-import { fake, Generator, oneOf } from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
-import { MoneyDraft } from '../../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { MoneyDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TransactionType, TransactionState } from '../constants';
 import { TTransactionDraft } from '../types';
 

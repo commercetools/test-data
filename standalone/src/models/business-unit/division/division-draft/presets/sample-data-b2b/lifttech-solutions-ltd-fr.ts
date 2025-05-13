@@ -1,7 +1,4 @@
-import {
-  KeyReferenceDraft,
-  AddressDraft,
-} from '../../../../../commons';
+import { KeyReferenceDraft, AddressDraft } from '@/models/commons';
 import { AssociateDraft } from '../../../../associate';
 import { CompanyDraft, type TCompanyDraft } from '../../../../company';
 import { storeMode, unitType, associateMode } from '../../../constants';

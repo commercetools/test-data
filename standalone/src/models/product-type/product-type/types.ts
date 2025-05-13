@@ -1,5 +1,5 @@
 import { ProductType, ProductTypeDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TAttributeDefinitionGraphql,
   TAttributeDefinitionDraftGraphql,

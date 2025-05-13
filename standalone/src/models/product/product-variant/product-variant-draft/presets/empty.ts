@@ -1,9 +1,9 @@
+import { TBuilder } from '@/core';
 import {
   ProductVariantDraft,
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
 } from '..';
-import { TBuilder } from '../../../../../core';
 import {
   TProductVariantDraft,
   TProductVariantDraftGraphql,

@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TCtpLocalizedString } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TCtpLocalizedString } from '@/graphql-types';
 
 export type TLocalizedString = {
   [locale: string]: string | undefined;

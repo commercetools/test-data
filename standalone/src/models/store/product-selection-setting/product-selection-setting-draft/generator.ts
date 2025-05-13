@@ -1,5 +1,5 @@
-import { Generator, fake } from '../../../../core';
-import { Reference } from '../../../commons';
+import { Generator, fake } from '@/core';
+import { Reference } from '@/models/commons';
 import type { TProductSelectionSettingDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/stores#productselectionsettingdraft

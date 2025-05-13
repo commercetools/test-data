@@ -1,15 +1,10 @@
-import {
-  fake,
-  type TModelFieldsConfig,
-  oneOf,
-  sequence,
-} from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
+import { fake, type TModelFieldsConfig, oneOf, sequence } from '@/core';
 import {
   MoneyDraft,
   ReferenceDraftRest,
   ReferenceDraftGraphql,
-} from '../../../commons';
+} from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { inventoryMode } from '../../cart/constants';
 import { TLineItemDraftRest, TLineItemDraftGraphql } from '../types';
 

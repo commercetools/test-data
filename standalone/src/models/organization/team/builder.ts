@@ -1,4 +1,4 @@
-import { Builder } from '../../../core';
+import { Builder } from '@/core';
 import generator from './generator';
 import transformers from './transformers';
 import type { TCreateTeamBuilder, TTeam } from './types';

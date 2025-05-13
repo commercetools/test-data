@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TProjectExpiry, TProjectExpiryGraphql } from './types';
 
 const transformers = {

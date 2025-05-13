@@ -5,12 +5,12 @@ import type {
   CustomFields,
   Reference,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import type {
   TClientLoggingGraphql,
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
-} from '../commons';
+} from '@/models/commons';
 
 //CategoryDraft
 export type TCategoryDraft = CategoryDraft;

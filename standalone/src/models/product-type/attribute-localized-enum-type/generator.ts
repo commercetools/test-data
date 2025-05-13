@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import * as AttributeLocalizedEnumValue from '../attribute-localized-enum-value';
 import { TAttributeLocalizedEnumType } from './types';
 

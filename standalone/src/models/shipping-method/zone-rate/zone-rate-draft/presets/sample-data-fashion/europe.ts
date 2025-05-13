@@ -1,5 +1,5 @@
-import { KeyReferenceDraft } from '../../../../../commons';
-import { ZoneDraft, type TZoneDraft } from '../../../../../zone';
+import { KeyReferenceDraft } from '@/models/commons';
+import { ZoneDraft, type TZoneDraft } from '@/models/zone';
 import { ShippingRateDraft } from '../../../../shipping-rate';
 import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';

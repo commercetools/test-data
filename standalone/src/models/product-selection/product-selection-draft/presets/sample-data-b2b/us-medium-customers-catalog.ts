@@ -1,4 +1,4 @@
-import { LocalizedStringDraft } from '../../../../commons';
+import { LocalizedStringDraft } from '@/models/commons';
 import type { TProductSelectionDraftBuilder } from '../../../types';
 import * as ProductSelectionDraft from '../../index';
 

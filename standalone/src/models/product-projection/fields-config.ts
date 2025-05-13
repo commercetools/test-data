@@ -1,12 +1,8 @@
-import {
-  type TModelFieldsConfig,
-  fake,
-  sequence,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { LocalizedString, Reference } from '../commons';
-import { ProductVariant } from '../product';
-import { ProductType } from '../product-type';
+import { type TModelFieldsConfig, fake, sequence } from '@/core';
+import { LocalizedString, Reference } from '@/models/commons';
+import { ProductVariant } from '@/models/product';
+import { ProductType } from '@/models/product-type';
+import { createRelatedDates } from '@/utils';
 import type {
   TProductProjectionGraphql,
   TProductProjectionRest,

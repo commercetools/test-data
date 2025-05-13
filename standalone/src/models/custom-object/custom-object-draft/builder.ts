@@ -1,4 +1,4 @@
-import { Builder } from '../../../core';
+import { Builder } from '@/core';
 import { TCustomObjectDraft, TCreateCustomObjectDraftBuilder } from '../types';
 import generator from './generator';
 import transformers from './transformers';

@@ -1,4 +1,4 @@
-import { Transformer, buildField } from '../../../core';
+import { Transformer, buildField } from '@/core';
 import { TAttributeDefinitionGraphql } from '../attribute-definition';
 import type { TProductType, TProductTypeGraphql } from './types';
 

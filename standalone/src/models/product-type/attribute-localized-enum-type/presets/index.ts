@@ -1,4 +1,4 @@
-import { AttributeLocalizedEnumValue } from '../..';
+import { AttributeLocalizedEnumValue } from '@/models/product-type';
 import AttributeLocalizedEnumType from '../builder';
 
 const presets = {

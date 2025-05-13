@@ -1,6 +1,6 @@
 import type { ReturnInfo } from '@commercetools/platform-sdk';
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { LineItemReturnItem } from '../line-item-return-item';
 
 const [returnDate] = createRelatedDates();

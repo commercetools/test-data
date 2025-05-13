@@ -4,12 +4,12 @@ import {
   CartDiscountTarget,
   CartDiscountValueDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TClientLoggingGraphql,
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
-} from '../../commons';
+} from '@/models/commons';
 
 export type TCartDiscount = CartDiscount;
 export type TCartDiscountDraft = CartDiscountDraft;

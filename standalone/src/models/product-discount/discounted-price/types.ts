@@ -2,11 +2,11 @@ import {
   DiscountedPrice,
   DiscountedPriceDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type {
   TCtpDiscountedProductPriceValue,
   TCtpDiscountedProductPriceValueInput,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TDiscountedPriceRest = DiscountedPrice;
 

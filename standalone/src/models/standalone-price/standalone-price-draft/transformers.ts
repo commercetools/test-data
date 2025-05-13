@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { TMoneyDraftGraphql } from '../../commons';
+import { Transformer } from '@/core';
+import { TMoneyDraftGraphql } from '@/models/commons';
 import type {
   TStandalonePriceDraft,
   TStandalonePriceDraftGraphql,

@@ -1,8 +1,5 @@
-import { fake, Generator } from '../../../core';
-import {
-  LocalizedStringDraft,
-  Reference,
-} from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedStringDraft, Reference } from '@/models/commons';
 import { TShoppingListDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/shoppingLists#shoppinglistdraft

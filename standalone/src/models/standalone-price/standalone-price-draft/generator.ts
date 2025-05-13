@@ -1,9 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  KeyReferenceDraft,
-  MoneyDraft,
-} from '../../commons';
+import { fake, Generator } from '@/core';
+import { KeyReferenceDraft, MoneyDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TStandalonePriceDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/standalone-prices#standalonepricedraft

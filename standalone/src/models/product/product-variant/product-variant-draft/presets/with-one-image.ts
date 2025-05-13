@@ -6,12 +6,12 @@
 
 // export default withOneImage;
 
+import { TBuilder } from '@/core';
 import {
   ProductVariantDraft,
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
 } from '..';
-import { TBuilder } from '../../../../../core';
 import { Image } from '../../../index';
 import {
   TProductVariantDraft,

@@ -1,4 +1,4 @@
-import { TBuilder } from '../../../../core';
+import { TBuilder } from '@/core';
 import { roles } from '../../constants';
 import type {
   TChannelDraft,

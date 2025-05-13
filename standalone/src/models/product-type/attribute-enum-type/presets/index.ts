@@ -1,4 +1,4 @@
-import { AttributePlainEnumValue } from '../..';
+import { AttributePlainEnumValue } from '@/models/product-type';
 import AttributeEnumType from '../builder';
 
 const presets = {

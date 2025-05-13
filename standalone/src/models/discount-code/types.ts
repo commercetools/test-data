@@ -1,9 +1,9 @@
 import { DiscountCode, DiscountCodeDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import {
   TClientLoggingGraphql,
   TLocalizedStringGraphql,
-} from '../commons';
+} from '@/models/commons';
 
 export type TDiscountCode = DiscountCode;
 export type TDiscountCodeDraft = DiscountCodeDraft;

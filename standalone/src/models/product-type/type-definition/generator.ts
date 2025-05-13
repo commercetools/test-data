@@ -1,10 +1,7 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  LocalizedString,
-  ClientLogging,
-} from '../../commons';
-import { FieldDefinition } from '../../type';
+import { fake, Generator, sequence } from '@/core';
+import { LocalizedString, ClientLogging } from '@/models/commons';
+import { FieldDefinition } from '@/models/type';
+import { createRelatedDates } from '@/utils';
 import type { TTypeDefinition } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

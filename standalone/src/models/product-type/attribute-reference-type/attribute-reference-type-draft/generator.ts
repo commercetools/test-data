@@ -1,4 +1,4 @@
-import { Generator, oneOf } from '../../../../core';
+import { Generator, oneOf } from '@/core';
 import { attributeReferenceTypeId } from '../constants';
 import { TAttributeReferenceTypeDraft } from '../types';
 

@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
-import { CartDiscountValueRelativeDraft } from '../../../cart-discount';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { CartDiscountValueRelativeDraft } from '@/models/cart-discount';
 import type {
   TDirectDiscountDraftGraphql,
   TDirectDiscountDraftRest,

@@ -1,8 +1,5 @@
-import { fake, Generator, oneOf } from '../../../../core';
-import {
-  AddressDraft,
-  KeyReferenceDraft,
-} from '../../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
 import { status, storeMode, unitType, associateMode } from '../constants';
 import type { TDivisionDraft } from '../types';
 

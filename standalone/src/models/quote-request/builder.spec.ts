@@ -1,7 +1,7 @@
 /* eslint-disable jest/valid-title */
 /* eslint-disable jest/no-disabled-tests */
 
-import { createBuilderSpec } from '../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import type {
   TQuoteRequest,
   TQuoteRequestRest,

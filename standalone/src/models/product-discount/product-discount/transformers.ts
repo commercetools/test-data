@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { LocalizedString } from '../../commons';
+import { Transformer } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import type { TProductDiscount, TProductDiscountGraphql } from './types';
 
 const transformers = {

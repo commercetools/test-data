@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import { TCtpEnumValue } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpEnumValue } from '@/graphql-types';
 
 export type TEnumValue = {
   key: string;

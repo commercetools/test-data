@@ -1,10 +1,10 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator, sequence } from '@/core';
 import {
   KeyReferenceDraft,
   LocalizedString,
   Reference,
-} from '../../commons';
+} from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TCategorySearch } from '../types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

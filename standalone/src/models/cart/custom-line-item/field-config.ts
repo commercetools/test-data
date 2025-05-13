@@ -1,14 +1,10 @@
-import {
-  fake,
-  type TModelFieldsConfig,
-  oneOf,
-} from '../../../core';
+import { fake, type TModelFieldsConfig, oneOf } from '@/core';
 import {
   CentPrecisionMoney,
   LocalizedString,
   Money,
   ReferenceGraphql,
-} from '../../commons';
+} from '@/models/commons';
 import { customLineItemPriceMode } from '../cart/constants';
 import { TCustomLineItemRest, TCustomLineItemGraphql } from './types';
 
@@ -47,7 +43,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
     __typename: 'CustomLineItem',
     nameAllLocales: fake((f) => LocalizedString.random()),
     taxCategoryRef: null,
-    recurrenceInfo: null
+    recurrenceInfo: null,
   },
   postBuild: (model) => {
     const name = model.nameAllLocales

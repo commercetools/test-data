@@ -4,7 +4,7 @@ import type {
   CompanyDraft,
   StoreKeyReference,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 //BusinessUnitDraft
 export type TCompanyDraft = CompanyDraft;

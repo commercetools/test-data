@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import { TZoneLimitsProjection } from './types';
 import * as ZoneLimitsProjection from './index';
 

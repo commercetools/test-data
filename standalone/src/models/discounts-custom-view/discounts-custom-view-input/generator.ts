@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { LocalizedString } from '../../commons';
-import { FilterValues } from '../../filter-values';
+import { fake, Generator } from '@/core';
+import { LocalizedString } from '@/models/commons';
+import { FilterValues } from '@/models/filter-values';
 import { TDiscountsCustomViewInput } from '../types';
 
 const generator = Generator<TDiscountsCustomViewInput>({

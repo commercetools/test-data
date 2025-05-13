@@ -1,4 +1,4 @@
-import { LocalizedString } from '../../../commons';
+import { LocalizedString } from '@/models/commons';
 import AttributeLocalizedEnumValue from '../builder';
 
 const presets = {

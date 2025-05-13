@@ -2,7 +2,7 @@ import type {
   CustomerGroup,
   CustomerGroupDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 
 export type TCustomerGroup = CustomerGroup;
 export type TCustomerGroupDraft = CustomerGroupDraft;

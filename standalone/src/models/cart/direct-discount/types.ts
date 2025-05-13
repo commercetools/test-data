@@ -2,11 +2,8 @@ import {
   DirectDiscount,
   DirectDiscountDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpDirectDiscount,
-  TCtpDirectDiscountDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpDirectDiscount, TCtpDirectDiscountDraft } from '@/graphql-types';
 
 export type TDirectDiscountRest = DirectDiscount;
 export type TDirectDiscountDraftRest = DirectDiscountDraft;

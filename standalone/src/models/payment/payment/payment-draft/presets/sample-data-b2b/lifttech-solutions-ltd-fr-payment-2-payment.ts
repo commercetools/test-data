@@ -2,17 +2,14 @@ import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
-} from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+} from '@/models/commons';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
 import {
   OrderFromCartDraft,
   OrderFromQuoteDraft,
   TOrderFromCartDraft,
   TOrderFromQuoteDraft,
-} from '../../../../../order';
+} from '@/models/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';

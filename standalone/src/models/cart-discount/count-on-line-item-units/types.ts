@@ -1,9 +1,9 @@
 import { CountOnLineItemUnits } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpCountOnLineItemUnits,
   TCtpCountOnLineItemUnitsInput,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 //@TODO: remove Omit when CountOnLineItemUnits gets the excludeCount field in the SDK
 export type TCountOnLineItemUnitsRest = Omit<

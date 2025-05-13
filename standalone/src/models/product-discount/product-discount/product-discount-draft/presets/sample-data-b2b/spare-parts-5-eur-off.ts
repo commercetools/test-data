@@ -1,11 +1,5 @@
-import {
-  CategoryDraft,
-  type TCategoryDraft,
-} from '../../../../../category';
-import {
-  LocalizedStringDraft,
-  MoneyDraft,
-} from '../../../../../commons';
+import { CategoryDraft, type TCategoryDraft } from '@/models/category';
+import { LocalizedStringDraft, MoneyDraft } from '@/models/commons';
 import { ProductDiscountValueAbsoluteDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';

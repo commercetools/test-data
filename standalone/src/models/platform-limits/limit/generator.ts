@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import { TLimit } from './types';
 
 /**

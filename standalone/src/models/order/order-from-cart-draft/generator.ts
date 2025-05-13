@@ -1,10 +1,5 @@
-import {
-  fake,
-  Generator,
-  oneOf,
-  sequence,
-} from '../../../core';
-import { ReferenceDraft } from '../../commons';
+import { fake, Generator, oneOf, sequence } from '@/core';
+import { ReferenceDraft } from '@/models/commons';
 import { orderState, paymentState, shipmentState } from '../constants';
 import { TOrderFromCartDraft } from '../types';
 

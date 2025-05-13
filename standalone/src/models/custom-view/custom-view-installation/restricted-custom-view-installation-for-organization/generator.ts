@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import * as CustomView from '../../custom-view';
 import * as CustomViewInstallationPermission from '../../custom-view-installation-permission';
 import type { TRestrictedCustomViewInstallationForOrganization } from './types';

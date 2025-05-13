@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../core';
-import { createRelatedDates } from '../../utils';
+import { fake, Generator, oneOf } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { TFilterValues } from './types';
 
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();

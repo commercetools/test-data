@@ -1,4 +1,4 @@
-import { LocalizedStringDraft } from '../../../../../commons';
+import { LocalizedStringDraft } from '@/models/commons';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';
 

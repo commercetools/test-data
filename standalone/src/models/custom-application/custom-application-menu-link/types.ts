@@ -1,8 +1,8 @@
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type {
   TMcSettingsCustomApplicationMenuLink,
   TMcSettingsCustomApplicationMenuLinkDraftDataInput,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TCustomApplicationMenuLinkGraphql = Omit<
   TMcSettingsCustomApplicationMenuLink,

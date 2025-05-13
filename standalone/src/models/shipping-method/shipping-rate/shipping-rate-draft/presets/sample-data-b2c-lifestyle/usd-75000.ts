@@ -1,5 +1,5 @@
 import { ShippingRateDraft } from '../../..';
-import { MoneyDraft } from '../../../../../commons';
+import { MoneyDraft } from '@/models/commons';
 
 const usd75000 = () =>
   ShippingRateDraft.presets

@@ -4,11 +4,11 @@ import {
   CustomerGroup,
   Channel,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpCreateStandalonePrice,
   TCtpStandalonePrice,
-} from '../../graphql-types';
+} from '@/graphql-types';
 
 // Base representation
 export type TStandalonePrice = Omit<

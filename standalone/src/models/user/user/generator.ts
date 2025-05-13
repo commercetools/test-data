@@ -1,5 +1,5 @@
-import { sequence, fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { sequence, fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { fakeBusinessRoles } from '../constants';
 import type { TUser } from './types';
 

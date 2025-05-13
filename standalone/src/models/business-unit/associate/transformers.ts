@@ -1,9 +1,9 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import {
   type TReference,
   type TReferenceGraphql,
   Reference,
-} from '../../commons';
+} from '@/models/commons';
 import type {
   TAssociateDefault,
   TAssociateRest,

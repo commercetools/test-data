@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { ReferenceDraft } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { ReferenceDraft } from '@/models/commons';
 import { TPaymentStatusDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/payments#paymentstatusdraft

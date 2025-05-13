@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import type { FieldType as FieldTypeSDK } from '@commercetools/platform-sdk';
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import { typeNames, graphqlTypenameByFieldTypeName } from './constants';
 import { TFieldType, TFieldTypeGraphql } from './types';
 import { FieldType } from '.';

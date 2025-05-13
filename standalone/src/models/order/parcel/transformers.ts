@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TParcel, TParcelGraphql } from './types';
 
 const buildFields: Array<keyof TParcel> = [

@@ -1,4 +1,4 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import type { TSearchKeywordGraphql, TSearchKeywordRest } from './types';
 
 export const restFieldsConfig: TModelFieldsConfig<TSearchKeywordRest> = {

@@ -1,5 +1,5 @@
-import { testUtils } from '../../../utils';
-import { CustomFieldBooleanType } from '../../type';
+import { CustomFieldBooleanType } from '@/models/type';
+import { testUtils } from '@/utils';
 import { roles } from '../constants';
 import { TChannelDraftGraphql, TChannelDraftRest } from '../types';
 import { ChannelDraft, ChannelDraftGraphql, ChannelDraftRest } from './index';

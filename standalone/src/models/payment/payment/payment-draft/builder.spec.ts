@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import { TPaymentDraft, TPaymentDraftGraphql } from '../types';
 import * as PaymentDraft from '.';
 

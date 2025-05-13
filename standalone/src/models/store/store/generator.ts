@@ -1,15 +1,7 @@
-import {
-  Generator,
-  fake,
-  oneOf,
-  sequence,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { Channel } from '../../channel';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../../commons';
+import { Generator, fake, oneOf, sequence } from '@/core';
+import { Channel } from '@/models/channel';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import type { TStore } from './types';
 
 // https://docs.commercetools.com/api/projects/stores#store

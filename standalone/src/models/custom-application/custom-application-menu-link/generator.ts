@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { LocalizedField } from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedField } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TCustomApplicationMenuLink } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

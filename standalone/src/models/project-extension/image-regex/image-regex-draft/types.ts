@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../../core';
-import type { TMcSettingsImageRegexDataInput } from '../../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsImageRegexDataInput } from '@/graphql-types';
 
 export type TImageRegexDraft = Omit<
   TMcSettingsImageRegexDataInput,

@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
-import { LocalizedStringDraft } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import * as ProductDiscountValueAbsoluteDraft from '../../product-discount-value-absolute';
 import * as ProductDiscountValueExternalDraft from '../../product-discount-value-external';
 import * as ProductDiscountValueRelativeDraft from '../../product-discount-value-relative';

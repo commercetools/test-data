@@ -1,4 +1,4 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import { selectionMode } from './constants';
 import type {
   TCartDiscountMultiBuyCustomLineItemsTargetGraphql,

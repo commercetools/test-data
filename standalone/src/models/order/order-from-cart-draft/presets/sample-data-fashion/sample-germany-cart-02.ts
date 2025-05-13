@@ -1,6 +1,6 @@
-import { CartDraft } from '../../../../cart';
-import type { TCartDraft } from '../../../../cart';
-import { KeyReferenceDraft } from '../../../../commons';
+import { CartDraft } from '@/models/cart';
+import type { TCartDraft } from '@/models/cart';
+import { KeyReferenceDraft } from '@/models/commons';
 import { constants } from '../../../index';
 import { TOrderFromCartDraftBuilder } from '../../../types';
 import * as OrderFromCartDraft from '../../index';

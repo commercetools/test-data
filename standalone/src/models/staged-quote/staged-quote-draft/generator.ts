@@ -1,5 +1,5 @@
-import { fake, Generator, sequence } from '../../../core';
-import { Reference } from '../../commons';
+import { fake, Generator, sequence } from '@/core';
+import { Reference } from '@/models/commons';
 import type { TStagedQuoteDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/staged-quotes#stagedquotedraft

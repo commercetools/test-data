@@ -1,4 +1,4 @@
-import { MoneyDraft } from '../../../../../commons';
+import { MoneyDraft } from '@/models/commons';
 import type { TShippingRateDraftBuilder } from '../../../types';
 import * as ShippingRateDraft from '../../index';
 

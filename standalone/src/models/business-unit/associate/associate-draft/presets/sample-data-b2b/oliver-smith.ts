@@ -1,12 +1,9 @@
 import {
   AssociateRoleDraft,
   type TAssociateRoleDraft,
-} from '../../../../../associate-role';
-import { KeyReferenceDraft } from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+} from '@/models/associate-role';
+import { KeyReferenceDraft } from '@/models/commons';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
 import { AssociateRoleAssignmentDraft } from '../../../../associate-role-assignment';
 import { associateRoleInheritanceMode } from '../../../../associate-role-assignment/constants';
 import { type TAssociateDraftBuilder } from '../../../types';

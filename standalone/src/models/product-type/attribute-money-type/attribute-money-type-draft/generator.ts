@@ -1,4 +1,4 @@
-import { Generator } from '../../../../core';
+import { Generator } from '@/core';
 import { TAttributeMoneyTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributemoneytype

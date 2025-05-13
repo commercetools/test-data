@@ -1,5 +1,5 @@
-import { Generator, fake, oneOf } from '../../../../core';
-import { LocalizedStringDraft } from '../../../commons';
+import { Generator, fake, oneOf } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import type { TStoreDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/stores#storedraft

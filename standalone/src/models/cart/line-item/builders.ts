@@ -2,7 +2,7 @@ import {
   createCompatibilityBuilder,
   createSpecializedBuilder,
   type TModelFieldsConfig,
-} from '../../../core';
+} from '@/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './field-config';
 import {
   TLineItemGraphql,

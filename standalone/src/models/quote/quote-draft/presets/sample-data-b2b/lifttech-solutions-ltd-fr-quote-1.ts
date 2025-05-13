@@ -1,8 +1,8 @@
-import { KeyReferenceDraft } from '../../../../commons';
+import { KeyReferenceDraft } from '@/models/commons';
 import {
   StagedQuoteDraft,
   type TStagedQuoteDraft,
-} from '../../../../staged-quote';
+} from '@/models/staged-quote';
 import { QuoteDraft, type TQuoteDraftBuilder } from '../../../index';
 
 const lifttechSolutionsLtdFrStagedQuote1StagedQuote =

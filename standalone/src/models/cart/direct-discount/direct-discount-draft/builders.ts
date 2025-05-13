@@ -1,4 +1,4 @@
-import { createSpecializedBuilder } from '../../../../core';
+import { createSpecializedBuilder } from '@/core';
 import type {
   TCreateDirectDiscountBuilder,
   TDirectDiscountDraftGraphql,

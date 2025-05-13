@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import * as AttributeBooleanType from '../attribute-boolean-type';
 import { TAttributeSetType } from './types';
 

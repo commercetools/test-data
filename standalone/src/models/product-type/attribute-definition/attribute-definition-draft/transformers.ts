@@ -1,5 +1,5 @@
-import { Transformer } from '../../../../core';
-import { LocalizedStringDraft } from '../../../commons';
+import { Transformer } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import type {
   TAttributeDefinitionDraft,
   TAttributeDefinitionDraftGraphql,

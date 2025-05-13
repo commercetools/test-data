@@ -1,11 +1,7 @@
-import {
-  fake,
-  oneOf,
-  type TModelFieldsConfig,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { ReferenceGraphql } from '../../commons';
-import { ProductSelection } from '../../product-selection';
+import { fake, oneOf, type TModelFieldsConfig } from '@/core';
+import { ReferenceGraphql } from '@/models/commons';
+import { ProductSelection } from '@/models/product-selection';
+import { createRelatedDates } from '@/utils';
 import type { TSelectionOfProductGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

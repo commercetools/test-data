@@ -1,11 +1,6 @@
-import {
-  Generator,
-  fake,
-  sequence,
-  oneOf,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Address, ClientLogging } from '../commons';
+import { Generator, fake, sequence, oneOf } from '@/core';
+import { Address, ClientLogging } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { authenticationMode } from './constants';
 import { TCustomer } from './types';
 const [getOlderDate, getNewerDate] = createRelatedDates();

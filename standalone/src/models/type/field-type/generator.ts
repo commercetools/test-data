@@ -1,5 +1,5 @@
 import type { FieldType } from '@commercetools/platform-sdk';
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import { typeNames } from './constants';
 
 // https://docs.commercetools.com/api/projects/types#fieldtype

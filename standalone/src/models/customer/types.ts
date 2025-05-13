@@ -1,6 +1,6 @@
 import type { Customer, CustomerDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import { TAddress } from '../commons';
+import type { TBuilder } from '@/core';
+import { TAddress } from '@/models/commons';
 
 export type TCustomer = Customer & {
   defaultShippingAddress: TAddress | null;

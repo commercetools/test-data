@@ -1,4 +1,4 @@
-import { fake, oneOf, Generator } from '../../../../core';
+import { fake, oneOf, Generator } from '@/core';
 import { TAddressDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#addressdraft

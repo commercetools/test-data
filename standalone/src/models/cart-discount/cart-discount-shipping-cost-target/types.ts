@@ -1,5 +1,5 @@
 import { CartDiscountShippingCostTarget } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TCartDiscountShippingCostTarget = CartDiscountShippingCostTarget;
 export type TCartDiscountShippingCostTargetDraft =

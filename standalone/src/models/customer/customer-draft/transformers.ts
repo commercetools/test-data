@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TCustomerDraft, TCustomerDraftGraphql } from '../types';
 
 const transformers = {

@@ -1,18 +1,9 @@
-import {
-  Generator,
-  fake,
-  oneOf,
-  sequence,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Cart, LineItem } from '../cart';
-import { CartDiscount } from '../cart-discount';
-import {
-  CentPrecisionMoney,
-  ClientLogging,
-  Address,
-} from '../commons';
-import * as CustomerGroup from '../customer-group';
+import { Generator, fake, oneOf, sequence } from '@/core';
+import { Cart, LineItem } from '@/models/cart';
+import { CartDiscount } from '@/models/cart-discount';
+import { CentPrecisionMoney, ClientLogging, Address } from '@/models/commons';
+import * as CustomerGroup from '@/models/customer-group';
+import { createRelatedDates } from '@/utils';
 import {
   inventoryMode,
   orderState,

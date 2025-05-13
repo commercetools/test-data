@@ -1,5 +1,5 @@
 import type { MessagesConfiguration } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../../core';
+import type { TBuilder } from '@/core';
 
 export type TMessagesConfiguration = MessagesConfiguration;
 

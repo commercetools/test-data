@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import { TCtpLocalizedEnumValue } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpLocalizedEnumValue } from '@/graphql-types';
 
 export type TLocalizedEnumValue = {
   key: string;

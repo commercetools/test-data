@@ -1,4 +1,4 @@
-import { Generator } from '../../../core';
+import { Generator } from '@/core';
 import { TShippingMethodLimitsProjection } from './types';
 
 const generator = Generator<TShippingMethodLimitsProjection>({

@@ -1,8 +1,5 @@
-import {
-  KeyReferenceDraft,
-  AddressDraft,
-} from '../../../../../commons';
-import { type TStoreDraft, StoreDraft } from '../../../../../store';
+import { KeyReferenceDraft, AddressDraft } from '@/models/commons';
+import { type TStoreDraft, StoreDraft } from '@/models/store';
 import { AssociateDraft } from '../../../../associate';
 import { CompanyDraft, type TCompanyDraft } from '../../../../company';
 import { storeMode, unitType, associateMode } from '../../../constants';

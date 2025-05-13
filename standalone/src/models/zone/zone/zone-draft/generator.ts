@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import type { TZoneDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/zones#zonedraft

@@ -1,7 +1,7 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { CentPrecisionMoney } from '../../commons';
-import { Customer } from '../../customer';
+import { fake, Generator, sequence } from '@/core';
+import { CentPrecisionMoney } from '@/models/commons';
+import { Customer } from '@/models/customer';
+import { createRelatedDates } from '@/utils';
 import * as PaymentMethodInfo from '../payment-method-info';
 import * as PaymentStatus from '../payment-status';
 import * as Transaction from '../transaction';

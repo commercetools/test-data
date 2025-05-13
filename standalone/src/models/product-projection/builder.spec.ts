@@ -1,12 +1,12 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../core/test-utils';
-import { Category } from '../category';
-import { LocalizedString } from '../commons';
-import { ProductVariant } from '../product';
-import { ProductType } from '../product-type';
-import { State } from '../state';
-import { TaxCategory } from '../tax-category';
+import { createBuilderSpec } from '@/core/test-utils';
+import { Category } from '@/models/category';
+import { LocalizedString } from '@/models/commons';
+import { ProductVariant } from '@/models/product';
+import { ProductType } from '@/models/product-type';
+import { State } from '@/models/state';
+import { TaxCategory } from '@/models/tax-category';
 import { TProductProjectionGraphql, TProductProjectionRest } from './types';
 import * as ProductProjection from './index';
 

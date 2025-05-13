@@ -1,5 +1,5 @@
-import { Transformer } from '../../core';
-import { LocalizedString } from '../commons';
+import { Transformer } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import type { TState, TStateGraphql } from './types';
 
 const transformers = {

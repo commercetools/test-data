@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TTaxRate, TTaxRateGraphql } from './types';
 
 const transformers = {

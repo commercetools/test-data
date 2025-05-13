@@ -3,15 +3,9 @@ import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
-} from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
-import {
-  OrderFromCartDraft,
-  TOrderFromCartDraft,
-} from '../../../../../order';
+} from '@/models/commons';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
+import { OrderFromCartDraft, TOrderFromCartDraft } from '@/models/order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft, constants } from '../../../../transaction';

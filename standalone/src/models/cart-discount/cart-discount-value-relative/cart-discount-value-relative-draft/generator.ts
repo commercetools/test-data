@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import type { TCartDiscountValueRelativeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluerelativedraft

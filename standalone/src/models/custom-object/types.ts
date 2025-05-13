@@ -2,7 +2,7 @@ import type {
   CustomObject,
   CustomObjectDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 
 //CustomObjectDraft
 export type TCustomObjectDraft = CustomObjectDraft;

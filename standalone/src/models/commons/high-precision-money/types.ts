@@ -2,11 +2,11 @@ import {
   HighPrecisionMoney,
   HighPrecisionMoneyDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpHighPrecisionMoney,
   TCtpHighPrecisionMoneyInput,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type THighPrecisionMoney = HighPrecisionMoney;
 export type THighPrecisionMoneyDraft = HighPrecisionMoneyDraft;

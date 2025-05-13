@@ -1,8 +1,8 @@
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type {
   TMcUser as TMcUserGraphql,
   TMcIdTokenUserInfo as TMcIdTokenUserInfoGraphql,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 export type { TMcUserGraphql, TMcIdTokenUserInfoGraphql };
 
 export type TMcUser = Omit<TMcUserGraphql, '__typename'>;

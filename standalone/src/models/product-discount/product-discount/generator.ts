@@ -1,9 +1,6 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../../commons';
+import { fake, Generator, sequence } from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import * as ProductDiscountValueAbsolute from '../product-discount-value-absolute';
 import * as ProductDiscountValueExternal from '../product-discount-value-external';
 import * as ProductDiscountValueRelative from '../product-discount-value-relative';

@@ -1,7 +1,4 @@
-import {
-  LocalizedStringDraft,
-  ReferenceDraft,
-} from '../../../../commons';
+import { LocalizedStringDraft, ReferenceDraft } from '@/models/commons';
 import { TDiscountCodeDraftBuilder } from '../../../types';
 import * as DiscountCodeDraft from '../../index';
 

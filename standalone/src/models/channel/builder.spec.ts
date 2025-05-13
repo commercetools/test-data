@@ -1,11 +1,11 @@
-import { TBuilder } from '../../core';
+import { TBuilder } from '@/core';
 import {
   Geometry,
   GeometryGraphql,
   GeometryRest,
   LocalizedString,
-} from '../commons';
-import { CustomFieldBooleanType } from '../type';
+} from '@/models/commons';
+import { CustomFieldBooleanType } from '@/models/type';
 import { roles } from './constants';
 import type { TChannelRest, TChannelGraphql, TChannel } from './types';
 import { Channel, ChannelGraphql, ChannelRest } from './index';

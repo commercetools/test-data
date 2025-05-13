@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import type { TAppliedPermission } from './types';
 
 const fakePermissions = [

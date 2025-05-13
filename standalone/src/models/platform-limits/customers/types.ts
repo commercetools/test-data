@@ -1,4 +1,4 @@
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type { TLimitWithCurrent } from '../limit-with-current';
 
 export type TCustomerLimitsProjection = {

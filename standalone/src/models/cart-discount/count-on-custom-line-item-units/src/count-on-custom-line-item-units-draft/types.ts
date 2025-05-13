@@ -1,4 +1,4 @@
-import type { TBuilder } from '../../../../../core';
+import type { TBuilder } from '@/core';
 import { TCountOnCustomLineItemUnitsDraftGraphql } from '../../types';
 
 export type TCreateCountOnCustomLineItemUnitsDraftBuilder<

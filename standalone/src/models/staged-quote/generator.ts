@@ -1,15 +1,10 @@
-import {
-  sequence,
-  fake,
-  Generator,
-  oneOf,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Company } from '../business-unit';
-import { Cart } from '../cart';
-import { ClientLogging } from '../commons';
-import { Customer } from '../customer';
-import { QuoteRequest } from '../quote-request';
+import { sequence, fake, Generator, oneOf } from '@/core';
+import { Company } from '@/models/business-unit';
+import { Cart } from '@/models/cart';
+import { ClientLogging } from '@/models/commons';
+import { Customer } from '@/models/customer';
+import { QuoteRequest } from '@/models/quote-request';
+import { createRelatedDates } from '@/utils';
 import { STAGED_QUOTE_STATE } from './constants';
 import type { TStagedQuote } from './types';
 

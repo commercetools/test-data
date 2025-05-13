@@ -1,7 +1,4 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '../../../../commons';
+import { LocalizedStringDraft, KeyReferenceDraft } from '@/models/commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
 import largeScaleMiningExcavators from './large-scale-mining-excavators';

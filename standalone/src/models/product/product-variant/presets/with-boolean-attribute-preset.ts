@@ -1,11 +1,11 @@
-import { ProductVariant, ProductVariantGraphql, ProductVariantRest } from '..';
-import { Attribute } from '../..';
-import { TBuilder } from '../../../../core';
-import { LocalizedString } from '../../../commons';
+import { TBuilder } from '@/core';
+import { LocalizedString } from '@/models/commons';
+import { Attribute } from '@/models/product';
 import {
   AttributeBooleanType,
   AttributeDefinition,
-} from '../../../product-type';
+} from '@/models/product-type';
+import { ProductVariant, ProductVariantGraphql, ProductVariantRest } from '..';
 import {
   TProductVariant,
   TProductVariantGraphql,

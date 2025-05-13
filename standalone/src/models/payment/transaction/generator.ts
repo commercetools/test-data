@@ -1,6 +1,6 @@
-import { fake, Generator, oneOf } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { CentPrecisionMoney } from '../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { CentPrecisionMoney } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TransactionType, TransactionState } from './constants';
 import { TTransaction } from './types';
 

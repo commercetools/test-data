@@ -1,5 +1,5 @@
+import { MoneyDraft } from '@/models/commons';
 import * as PaymentDraft from '../..';
-import { MoneyDraft } from '../../../../../commons';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft } from '../../../../transaction';
 import type { TPaymentDraftBuilder } from '../../../types';

@@ -1,8 +1,5 @@
-import { Generator, fake } from '../../../../core';
-import {
-  LocalizedStringDraft,
-  Reference,
-} from '../../../commons';
+import { Generator, fake } from '@/core';
+import { LocalizedStringDraft, Reference } from '@/models/commons';
 import type { TShippingMethodDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingmethoddraft

@@ -1,9 +1,6 @@
 import type { Type, TypeDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpTypeDefinition,
-  TCtpTypeDefinitionDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpTypeDefinition, TCtpTypeDefinitionDraft } from '@/graphql-types';
 
 export type TType = Type;
 export type TTypeDraft = TypeDraft;

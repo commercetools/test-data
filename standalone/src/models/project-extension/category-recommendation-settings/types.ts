@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TMcSettingsCategoryRecommendationSettings } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsCategoryRecommendationSettings } from '@/graphql-types';
 
 export type TCategoryRecommendationSettings = Omit<
   TMcSettingsCategoryRecommendationSettings,

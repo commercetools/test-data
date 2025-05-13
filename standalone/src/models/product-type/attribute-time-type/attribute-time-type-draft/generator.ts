@@ -1,4 +1,4 @@
-import { Generator } from '../../../../core';
+import { Generator } from '@/core';
 import { TAttributeTimeTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributetimetype
