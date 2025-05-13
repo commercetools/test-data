@@ -35,7 +35,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionGraphql> =
       ...commonFieldsConfig,
       __typename: 'ProductSelection',
       nameAllLocales: fake(() => LocalizedString.random()),
-      name: null,
       productRefs: null,
     },
     postBuild: (model) => {
