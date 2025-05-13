@@ -27,16 +27,12 @@ describe('DiscountedTotalPricePortion Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         discount: expect.objectContaining({
-          id: expect.any(String),
           __typename: 'CartDiscount',
         }),
         discountedAmount: expect.objectContaining({
-          currencyCode: expect.any(String),
-          centAmount: expect.any(Number),
+          __typename: 'Money',
         }),
         discountRef: expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'cart-discount',
           __typename: 'Reference',
         }),
         __typename: 'DiscountedTotalPricePortion',

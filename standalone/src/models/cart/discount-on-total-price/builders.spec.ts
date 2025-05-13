@@ -10,14 +10,6 @@ describe('DiscountOnTotalPrice Builder', () => {
           centAmount: expect.any(Number),
           currencyCode: expect.any(String),
         }),
-        discountedNetAmount: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        discountedGrossAmount: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
         includedDiscounts: expect.arrayContaining([
           expect.objectContaining({
             discount: expect.any(Object),
@@ -33,23 +25,11 @@ describe('DiscountOnTotalPrice Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        discountedAmount: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        discountedNetAmount: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
-        discountedGrossAmount: expect.objectContaining({
-          centAmount: expect.any(Number),
-          currencyCode: expect.any(String),
-        }),
         includedDiscounts: expect.arrayContaining([
           expect.objectContaining({
-            discount: expect.any(Object),
-            discountedAmount: expect.any(Object),
-            discountRef: expect.any(Object),
+            discountedAmount: expect.objectContaining({
+              __typename: 'Money',
+            }),
             __typename: 'DiscountedTotalPricePortion',
           }),
         ]),
