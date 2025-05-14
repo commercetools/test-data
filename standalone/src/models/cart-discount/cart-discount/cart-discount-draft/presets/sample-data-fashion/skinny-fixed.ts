@@ -1,4 +1,4 @@
-import { MoneyDraft, LocalizedStringDraft } from '@/models/commons';
+import { MoneyDraft, LocalizedStringDraft } from '../../../../../commons';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueFixedDraft,

@@ -2,8 +2,8 @@ import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
-} from '@/models/commons';
-import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
+} from '../../../../../commons';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';

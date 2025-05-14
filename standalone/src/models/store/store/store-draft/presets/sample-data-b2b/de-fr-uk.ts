@@ -1,5 +1,8 @@
-import { ChannelDraft, type TChannelDraft } from '@/models/channel';
-import { KeyReferenceDraft, LocalizedStringDraft } from '@/models/commons';
+import { ChannelDraft, type TChannelDraft } from '../../../../../channel';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '../../../../../commons';
 import { ProductSelectionSettingDraft } from '../../../../product-selection-setting/index';
 import type { TStoreDraftBuilder } from '../../../types';
 import * as StoreDraft from '../../index';

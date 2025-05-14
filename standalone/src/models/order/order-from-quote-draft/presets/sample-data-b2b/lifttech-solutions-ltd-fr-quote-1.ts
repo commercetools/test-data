@@ -1,5 +1,5 @@
-import { KeyReferenceDraft } from '@/models/commons';
-import { QuoteDraft, type TQuoteDraft } from '@/models/quote';
+import { KeyReferenceDraft } from '../../../../commons';
+import { QuoteDraft, type TQuoteDraft } from '../../../../quote';
 import { constants } from '../../../index';
 import type { TOrderFromQuoteDraftBuilder } from '../../../types';
 import * as OrderFromQuoteDraft from '../../index';

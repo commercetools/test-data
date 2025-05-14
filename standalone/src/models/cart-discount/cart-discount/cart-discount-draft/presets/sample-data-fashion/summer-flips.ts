@@ -1,4 +1,7 @@
-import { LocalizedStringDraft, KeyReferenceDraft } from '@/models/commons';
+import {
+  LocalizedStringDraft,
+  KeyReferenceDraft,
+} from '../../../../../commons';
 import { CartDiscountValueGiftLineItemDraft } from '../../../../index';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';

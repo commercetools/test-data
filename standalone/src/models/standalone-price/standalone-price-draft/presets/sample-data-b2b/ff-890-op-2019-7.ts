@@ -1,4 +1,4 @@
-import { KeyReferenceDraft, MoneyDraft } from '@/models/commons';
+import { KeyReferenceDraft, MoneyDraft } from '../../../../commons';
 import { TStandalonePriceDraftBuilder } from '../../../types';
 import * as StandalonePriceDraft from '../../index';
 

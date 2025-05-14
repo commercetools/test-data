@@ -1,4 +1,4 @@
-import { LocalizedStringDraft, KeyReferenceDraft } from '@/models/commons';
+import { LocalizedStringDraft, KeyReferenceDraft } from '../../../../commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
 import dumpTrucks from './dump-trucks';

@@ -1,5 +1,5 @@
-import { TBuilder } from '@/core';
-import { MoneyDraft, PriceDraft } from '@/models/commons';
+import { TBuilder } from '../../../../../../core';
+import { MoneyDraft, PriceDraft } from '../../../../../commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';

@@ -1,4 +1,4 @@
-import { LocalizedStringDraft } from '@/models/commons';
+import { LocalizedStringDraft } from '../../../../commons';
 import { TCategoryDraftBuilder } from '../../../types';
 import empty from '../empty';
 

@@ -1,15 +1,15 @@
-import type { TBuilder } from '@/core';
-import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
-import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
+import type { TBuilder } from '../../../../../../core';
+import { AddressDraft, KeyReferenceDraft } from '../../../../../commons';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '@/models/product';
+} from '../../../../../product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
-} from '@/models/shipping-method';
-import { StoreDraft, type TStoreDraft } from '@/models/store';
+} from '../../../../../shipping-method';
+import { StoreDraft, type TStoreDraft } from '../../../../../store';
 import { LineItemDraft } from '../../../../index';
 import { inventoryMode, origin } from '../../../constants';
 import type {

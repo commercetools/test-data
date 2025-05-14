@@ -1,6 +1,9 @@
-import { KeyReferenceDraft, LocalizedStringDraft } from '@/models/commons';
-import { TaxCategoryDraft } from '@/models/tax-category';
-import type { TTaxCategoryDraft } from '@/models/tax-category';
+import {
+  KeyReferenceDraft,
+  LocalizedStringDraft,
+} from '../../../../../commons';
+import { TaxCategoryDraft } from '../../../../../tax-category';
+import type { TTaxCategoryDraft } from '../../../../../tax-category';
 import * as ZoneRateDraft from '../../../../zone-rate/zone-rate-draft';
 import type { TShippingMethodDraftBuilder } from '../../../types';
 import * as ShippingMethodDraft from '../../index';

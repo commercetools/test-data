@@ -1,4 +1,4 @@
-import { LocalizedStringDraft } from '@/models/commons';
+import { LocalizedStringDraft } from '../../../../../commons';
 import {
   AttributeDefinitionDraft,
   AttributeEnumTypeDraft,

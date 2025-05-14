@@ -1,4 +1,4 @@
-import { AddressDraft } from '@/models/commons';
+import { AddressDraft } from '../../../../commons';
 import { authenticationMode } from '../../../constants';
 import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';

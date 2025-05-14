@@ -1,8 +1,8 @@
-import type { TBuilder } from '@/core';
+import type { TBuilder } from '../../../../../core';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '@/models/product';
+} from '../../../../product';
 import type {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,

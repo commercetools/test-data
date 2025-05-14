@@ -1,5 +1,8 @@
-import { LocalizedStringDraft } from '@/models/commons';
-import { ProductTypeDraft, TProductTypeDraft } from '@/models/product-type';
+import { LocalizedStringDraft } from '../../../../../commons';
+import {
+  ProductTypeDraft,
+  TProductTypeDraft,
+} from '../../../../../product-type';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,

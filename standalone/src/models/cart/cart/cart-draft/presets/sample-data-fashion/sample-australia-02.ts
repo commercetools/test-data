@@ -1,18 +1,18 @@
-import type { TBuilder } from '@/core';
-import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
-import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
+import type { TBuilder } from '../../../../../../core';
+import { AddressDraft, KeyReferenceDraft } from '../../../../../commons';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import {
   DiscountCodeDraft,
   type TDiscountCodeDraft,
-} from '@/models/discount-code';
+} from '../../../../../discount-code';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '@/models/product';
+} from '../../../../../product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
-} from '@/models/shipping-method';
+} from '../../../../../shipping-method';
 import { LineItemDraft } from '../../../../index';
 import { origin } from '../../../constants';
 import type {
