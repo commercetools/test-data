@@ -1,4 +1,3 @@
-import type { TCustomApplicationPermissionGraphql } from '../types';
 import { graphqlPresets } from './index';
 
 describe('view only permissions', () => {

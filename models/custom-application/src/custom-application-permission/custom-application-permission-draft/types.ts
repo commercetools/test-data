@@ -1,14 +1,9 @@
 import type { TBuilder } from '@commercetools-test-data/core';
 import type { TMcSettingsCustomApplicationPermissionDataInput } from '@commercetools-test-data/graphql-types';
 
-type TCustomApplicationPermission = Omit<
-  TMcSettingsCustomApplicationPermissionDataInput,
-  '__typename'
->;
+export type TCustomApplicationPermissionDraftGraphql =
+  TMcSettingsCustomApplicationPermissionDataInput;
 
-export type TCustomApplicationPermissionDraft = TCustomApplicationPermission;
-
-export type TCustomApplicationPermissionDraftBuilder =
-  TBuilder<TCustomApplicationPermissionDraft>;
-export type TCreateCustomApplicationPermissionDraftBuilder =
-  () => TCustomApplicationPermissionDraftBuilder;
+export type TCreateCustomApplicationPermissionDraftBuilder<
+  TModel extends TCustomApplicationPermissionDraftGraphql,
+> = () => TBuilder<TModel>;
