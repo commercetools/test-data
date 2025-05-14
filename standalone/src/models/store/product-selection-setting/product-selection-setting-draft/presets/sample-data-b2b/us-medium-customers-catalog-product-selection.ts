@@ -1,6 +1,8 @@
 import { KeyReferenceDraft } from '../../../../../commons';
-import { ProductSelectionDraft } from '../../../../../product-selection';
-import type { TProductSelectionDraft } from '../../../../../product-selection/types';
+import {
+  ProductSelectionDraft,
+  type TProductSelectionDraft,
+} from '../../../../../product-selection';
 import type { TProductSelectionSettingDraftBuilder } from '../../../types';
 import ProductSelectionSettingDraft from '../../builder';
 

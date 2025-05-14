@@ -5,11 +5,8 @@ import {
 } from './builders';
 import * as modelPresets from './presets';
 
-export {
-  ProductSelectionDraftRest,
-  ProductSelectionDraftGraphql,
-  ProductSelectionDraft,
-} from './product-selection-draft';
+export * from './types';
+export * from './product-selection-draft';
 
 export const ProductSelectionRest = {
   random: RestModelBuilder,
