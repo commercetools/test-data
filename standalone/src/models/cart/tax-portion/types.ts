@@ -1,9 +1,6 @@
 import { TaxPortion, TaxPortionDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpTaxPortion,
-  TCtpTaxPortionDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpTaxPortion, TCtpTaxPortionDraft } from '@/graphql-types';
 
 export type TTaxPortionRest = TaxPortion;
 

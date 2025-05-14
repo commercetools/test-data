@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { Reference, TReference } from '../../commons';
+import { Transformer } from '@/core';
+import { Reference, TReference } from '@/models/commons';
 import type {
   TCartDiscountValueGiftLineItem,
   TCartDiscountValueGiftLineItemGraphql,

@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import { fakeBusinessRoles } from '../../constants';
 import type { TMcUserDraft } from '../types';
 

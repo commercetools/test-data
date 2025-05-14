@@ -1,4 +1,4 @@
-import { Generator } from '../../../core';
+import { Generator } from '@/core';
 import type { TTaxCategoryLimitsProjection } from './types';
 
 const generator = Generator<TTaxCategoryLimitsProjection>({

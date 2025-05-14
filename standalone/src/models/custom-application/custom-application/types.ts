@@ -1,8 +1,8 @@
-import { TBuilder } from '../../../core';
+import { TBuilder } from '@/core';
 import type {
   TMcSettingsCustomApplicationDraftDataInput,
   TMcSettingsRestrictedCustomApplicationForOrganization,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TCustomApplication = Omit<
   TMcSettingsRestrictedCustomApplicationForOrganization,

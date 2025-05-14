@@ -1,7 +1,4 @@
-import {
-  CategoryDraft,
-  type TCategoryDraft,
-} from '../../../../../category';
+import { CategoryDraft, type TCategoryDraft } from '../../../../../category';
 import { LocalizedStringDraft } from '../../../../../commons';
 import {
   CartDiscountMultiBuyLineItemsTargetDraft,

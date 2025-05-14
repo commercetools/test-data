@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import type { TAppliedDataFence } from './types';
 
 const fakeDataFenceNames = [

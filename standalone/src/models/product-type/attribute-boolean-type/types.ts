@@ -1,9 +1,9 @@
 import type { AttributeBooleanType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpBooleanAttributeDefinitionType,
   TCtpSimpleAttributeTypeDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead

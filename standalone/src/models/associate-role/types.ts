@@ -2,7 +2,7 @@ import type {
   AssociateRole,
   AssociateRoleDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 
 //AssociateRoleDraft
 export type TAssociateRoleDraft = AssociateRoleDraft;

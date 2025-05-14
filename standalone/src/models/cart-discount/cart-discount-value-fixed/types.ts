@@ -2,7 +2,7 @@ import {
   CartDiscountValueFixed,
   CartDiscountValueFixedDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TCartDiscountValueFixed = CartDiscountValueFixed;
 export type TCartDiscountValueFixedDraft = CartDiscountValueFixedDraft;

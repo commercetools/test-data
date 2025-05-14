@@ -1,10 +1,10 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import {
   Address,
   GeometryGraphql,
   GeometryRest,
   LocalizedStringDraft,
-} from '../../commons';
+} from '@/models/commons';
 import { roles } from '../constants';
 import type { TChannelDraftGraphql, TChannelDraftRest } from '../types';
 

@@ -1,5 +1,5 @@
 import type { Zone, ZoneDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TZone = Zone;
 export type TZoneDraft = ZoneDraft;

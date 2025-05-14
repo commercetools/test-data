@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TMcSettingsCustomViewInstallationPermission } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomViewInstallationPermission } from '@/graphql-types';
 
 export type TCustomViewInstallationPermissionGraphql =
   TMcSettingsCustomViewInstallationPermission;

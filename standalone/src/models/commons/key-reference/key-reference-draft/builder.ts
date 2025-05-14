@@ -1,8 +1,8 @@
+import { Builder } from '@/core';
 import type {
   TCreateKeyReferenceDraftBuilder,
   TKeyReferenceDraft,
 } from '.././types';
-import { Builder } from '../../../../core';
 import generator from './generator';
 import transformers from './transformers';
 

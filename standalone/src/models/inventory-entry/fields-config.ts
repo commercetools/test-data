@@ -1,14 +1,6 @@
-import {
-  fake,
-  sequence,
-  type TModelFieldsConfig,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import {
-  ClientLogging,
-  Reference,
-  TReferenceGraphql,
-} from '../commons';
+import { fake, sequence, type TModelFieldsConfig } from '@/core';
+import { ClientLogging, Reference, TReferenceGraphql } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import type { TInventoryEntryGraphql, TInventoryEntryRest } from './types';
 
 const [getOlderDate, getNewerDate, getFutureDate] = createRelatedDates();

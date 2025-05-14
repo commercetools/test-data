@@ -1,8 +1,5 @@
-import { Generator, fake } from '../../../core';
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '../../commons';
+import { Generator, fake } from '@/core';
+import { LocalizedStringDraft, KeyReferenceDraft } from '@/models/commons';
 import type { TCategoryDraft } from '../types';
 
 const KEY = 'key';

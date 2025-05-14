@@ -1,4 +1,4 @@
-import { buildField } from '../../../../core';
+import { buildField } from '@/core';
 import { TLocalizedStringDraftGraphql } from '../types';
 
 const toLocalizedField = <Model>(value?: Model) => {

@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../../../core';
-import { TCtpSelectionMode } from '../../../../../graphql-types';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { TCtpSelectionMode } from '@/graphql-types';
 import { CountOnCustomLineItemUnitsDraftGraphql } from '../../../count-on-custom-line-item-units';
 import { CountOnLineItemUnitsDraftGraphql } from '../../../count-on-line-item-units';
 

@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { ReferenceDraft } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { ReferenceDraft } from '@/models/commons';
 import { AssociateRoleAssignmentDraft } from '../../associate-role-assignment/';
 import { TAssociateDraft } from '../types';
 

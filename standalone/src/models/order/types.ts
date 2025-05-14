@@ -10,9 +10,9 @@ import {
   State,
   Store,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import { TReferenceGraphql } from '../commons';
-import type { TCustomer } from '../customer';
+import type { TBuilder } from '@/core';
+import { TReferenceGraphql } from '@/models/commons';
+import type { TCustomer } from '@/models/customer';
 
 export type TOrder = Omit<
   Order,

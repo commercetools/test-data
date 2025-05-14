@@ -1,15 +1,11 @@
-import {
-  fake,
-  sequence,
-  type TModelFieldsConfig,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, sequence, type TModelFieldsConfig } from '@/core';
 import {
   ClientLogging,
   KeyReference,
   ReferenceGraphql,
   ReferenceRest,
-} from '../../commons';
+} from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import {
   ProductTailoringDataRest,
   ProductTailoringDataGraphql,

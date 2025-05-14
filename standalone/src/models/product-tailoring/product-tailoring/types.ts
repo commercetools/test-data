@@ -2,11 +2,11 @@ import {
   ProductTailoring,
   ProductTailoringDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpProductTailoring,
   TCtpProductTailoringDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TProductTailoringRest = ProductTailoring;
 export type TProductTailoringDraftRest = ProductTailoringDraft;

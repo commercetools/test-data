@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { CentPrecisionMoney, Money } from '../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { CentPrecisionMoney, Money } from '@/models/commons';
 import { TaxPortionRest, TaxPortionGraphql } from '../tax-portion';
 import type { TTaxedPriceGraphql, TTaxedPriceRest } from './types';
 

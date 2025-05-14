@@ -1,6 +1,6 @@
 import sampleSize from 'lodash/sampleSize';
-import { Generator, fake } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { Generator, fake } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { supportedViewOAuthScopes } from '../custom-view-permission/constants';
 import type { TCustomViewInstallationPermission } from './types';
 

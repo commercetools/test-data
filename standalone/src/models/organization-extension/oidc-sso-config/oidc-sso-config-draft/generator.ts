@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import type { TOidcSsoConfigDraft } from './types';
 
 const generator = Generator<TOidcSsoConfigDraft>({

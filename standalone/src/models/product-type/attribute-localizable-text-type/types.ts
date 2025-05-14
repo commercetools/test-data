@@ -1,9 +1,9 @@
 import { AttributeLocalizableTextType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpLocalizableTextAttributeDefinitionType,
   TCtpSimpleAttributeTypeDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeLocalizableTextTypeRest` or `TAttributeLocalizableTextTypeGraphql` instead

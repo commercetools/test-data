@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { DiscountsCustomViewInput } from '../';
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
+import { DiscountsCustomViewInput } from '@/models/discounts-custom-view';
 import {
   TDiscountsCustomViewInput,
   TDiscountsCustomViewInputGraphql,

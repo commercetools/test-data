@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import type { TCustomApplicationSubmenuLinkDraft } from '../types';
 import * as CustomApplicationSubmenuLinkDraft from './index';
 

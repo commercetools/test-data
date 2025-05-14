@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TMoney, TMoneyGraphql } from './types';
 
 const transformers = {

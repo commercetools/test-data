@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TCoreBusinessRole, TCoreUser } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TCoreBusinessRole, TCoreUser } from '@/graphql-types';
 
 export type TUser = Omit<TCoreUser, '__typename'>;
 

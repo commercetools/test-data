@@ -1,4 +1,4 @@
-import { MoneyDraft } from '../../../../../commons';
+import { MoneyDraft } from '@/models/commons';
 import type { TProductDiscountValueAbsoluteDraftBuilder } from '../../../types';
 import * as ProductDiscountValueAbsoluteDraft from '../../index';
 

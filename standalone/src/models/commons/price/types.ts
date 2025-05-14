@@ -1,9 +1,6 @@
 import type { Price, PriceDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpProductPrice,
-  TCtpProductPriceDataInput,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpProductPrice, TCtpProductPriceDataInput } from '@/graphql-types';
 
 export type TPrice = Price;
 export type TPriceDraft = PriceDraft;

@@ -1,9 +1,9 @@
 import type { AttributeMoneyType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpMoneyAttributeDefinitionType,
   TCtpSimpleAttributeTypeDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeMoneyTypeRest` or `TAttributeMoneyTypeGraphql` instead

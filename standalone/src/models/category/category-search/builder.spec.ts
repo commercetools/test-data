@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 
-import { createBuilderSpec } from '../../../core/test-utils';
-import { LocalizedString } from '../../commons';
+import { createBuilderSpec } from '@/core/test-utils';
+import { LocalizedString } from '@/models/commons';
 import type { TCategorySearch, TCategorySearchGraphql } from '../types';
 import * as CategorySearch from './index';
 

@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { AttributeDefinition } from '../../product-type';
+import { fake, Generator } from '@/core';
+import { AttributeDefinition } from '@/models/product-type';
 import type { TAttribute } from './types';
 
 // https://docs.commercetools.com/api/projects/products#attribute

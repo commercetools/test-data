@@ -1,5 +1,5 @@
-import { Category } from '../../category';
-import { LocalizedField } from '../../commons';
+import { Category } from '@/models/category';
+import { LocalizedField } from '@/models/commons';
 import { ProductVariantGraphql } from '../product-variant';
 import { CategoryOrderHintGraphql } from './category-order-hint';
 import { SearchKeywordGraphql } from './search-keyword';

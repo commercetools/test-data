@@ -1,8 +1,5 @@
 import { TBuilder } from '../../../../../../core';
-import {
-  CategoryDraft,
-  TCategoryDraft,
-} from '../../../../../category';
+import { CategoryDraft, TCategoryDraft } from '../../../../../category';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,

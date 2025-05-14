@@ -1,9 +1,5 @@
-import { fake, TModelFieldsConfig } from '../../../../core';
-import {
-  Money,
-  ReferenceGraphql,
-  ReferenceRest,
-} from '../../../commons';
+import { fake, TModelFieldsConfig } from '@/core';
+import { Money, ReferenceGraphql, ReferenceRest } from '@/models/commons';
 import type {
   TDiscountedPriceDraftRest,
   TDiscountedPriceDraftGraphql,

@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { LocalizedStringDraft } from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TDiscountCodeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/discountCodes#discountcodedraft

@@ -1,6 +1,6 @@
 import type { CustomFieldDateTimeType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpDateTimeType } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpDateTimeType } from '@/graphql-types';
 
 export type TCustomFieldDateTimeType = CustomFieldDateTimeType;
 export type TCustomFieldDateTimeTypeDraft = CustomFieldDateTimeType;

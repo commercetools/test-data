@@ -2,7 +2,7 @@ import {
   createCompatibilityBuilder,
   createSpecializedBuilder,
   type TModelFieldsConfig,
-} from '../../../core';
+} from '@/core';
 import { graphqlFieldsConfig, restFieldsConfig } from './fields-config';
 import type { TCartGraphql, TCartRest, TCreateCartBuilder } from './types';
 

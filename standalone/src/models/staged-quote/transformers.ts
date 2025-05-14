@@ -1,12 +1,12 @@
 import { BusinessUnitKeyReference } from '@commercetools/platform-sdk';
-import { Transformer } from '../../core';
+import { Transformer } from '@/core';
 import {
   Reference,
   KeyReference,
   TReference,
   TReferenceGraphql,
   TKeyReferenceGraphql,
-} from '../commons';
+} from '@/models/commons';
 
 import type {
   TStagedQuote,

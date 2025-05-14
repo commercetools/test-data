@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../../core';
+import { Generator, fake } from '@/core';
 import * as TaxRateDraft from '../../tax-rate/tax-rate-draft';
 import type { TTaxCategoryDraft } from '../types';
 

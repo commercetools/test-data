@@ -1,9 +1,9 @@
-import type { TBuilder } from '../../../../../core';
-import { {{it.modelName}}Graphql, {{it.modelName}}Rest } from '../..';
+import type { TBuilder } from '@/core';
 import type {
   T{{it.modelName}}Graphql,
   T{{it.modelName}}Rest,
 } from '{{@if(it.isDraftModel !== true)}}../..{{#else}}../../..{{/if}}/types';
+import { {{it.modelName}}Graphql, {{it.modelName}}Rest } from '../../index';
 
 export const restPreset = (): TBuilder<T{{it.modelName}}Rest> =>
   {{it.modelName}}Rest.random()

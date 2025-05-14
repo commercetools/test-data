@@ -1,12 +1,6 @@
 import type { TBuilder } from '../../../../../../core';
-import {
-  AddressDraft,
-  KeyReferenceDraft,
-} from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+import { AddressDraft, KeyReferenceDraft } from '../../../../../commons';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,

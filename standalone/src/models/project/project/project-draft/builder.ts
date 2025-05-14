@@ -1,4 +1,4 @@
-import { Builder } from '../../../../core';
+import { Builder } from '@/core';
 import type { TCreateProjectDraftBuilder, TProjectDraft } from '../types';
 import generator from './generator';
 import transformers from './transformers';

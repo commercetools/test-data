@@ -1,5 +1,5 @@
 import type { AttributeReferenceType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAttributeReferenceType = AttributeReferenceType;
 export type TAttributeReferenceTypeDraft = AttributeReferenceType;

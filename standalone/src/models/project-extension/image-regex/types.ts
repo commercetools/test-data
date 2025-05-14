@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TMcSettingsImageRegex } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsImageRegex } from '@/graphql-types';
 
 export type TImageRegex = Omit<TMcSettingsImageRegex, '__typename'>;
 

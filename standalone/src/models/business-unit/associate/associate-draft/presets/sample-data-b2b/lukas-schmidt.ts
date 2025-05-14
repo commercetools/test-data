@@ -3,10 +3,7 @@ import {
   type TAssociateRoleDraft,
 } from '../../../../../associate-role';
 import { KeyReferenceDraft } from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import { AssociateRoleAssignmentDraft } from '../../../../associate-role-assignment';
 import { associateRoleInheritanceMode } from '../../../../associate-role-assignment/constants';
 import { type TAssociateDraftBuilder } from '../../../types';

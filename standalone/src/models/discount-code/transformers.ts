@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
-import { Transformer } from '../../core';
-import { LocalizedString } from '../commons';
+import { Transformer } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import type { TDiscountCode, TDiscountCodeGraphql } from './types';
 
 const transformers = {

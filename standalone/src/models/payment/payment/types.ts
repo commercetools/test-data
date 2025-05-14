@@ -1,9 +1,6 @@
 import { Customer, Payment, PaymentDraft } from '@commercetools/platform-sdk';
-import type {
-  TBuilder,
-  TPaginatedQueryResult,
-} from '../../../core';
-import type { TReferenceGraphql } from '../../commons';
+import type { TBuilder, TPaginatedQueryResult } from '@/core';
+import type { TReferenceGraphql } from '@/models/commons';
 
 // Default
 export type TPayment = Omit<Payment, 'customer'> & {

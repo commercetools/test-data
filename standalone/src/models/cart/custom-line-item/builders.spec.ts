@@ -1,7 +1,7 @@
-import { TBuilder } from '../../../core';
-import { ReferenceRest } from '../../commons';
-import { TaxCategory } from '../../tax-category';
-import { CustomFieldBooleanType } from '../../type';
+import { TBuilder } from '@/core';
+import { ReferenceRest } from '@/models/commons';
+import { TaxCategory } from '@/models/tax-category';
+import { CustomFieldBooleanType } from '@/models/type';
 import { TCustomLineItemRest, TCustomLineItemGraphql } from './types';
 import {
   CustomLineItemRest,

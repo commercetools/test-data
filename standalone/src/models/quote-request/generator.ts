@@ -1,21 +1,16 @@
-import {
-  sequence,
-  fake,
-  Generator,
-  oneOf,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Company } from '../business-unit';
-import { LineItem } from '../cart';
+import { sequence, fake, Generator, oneOf } from '@/core';
+import { Company } from '@/models/business-unit';
+import { LineItem } from '@/models/cart';
 import {
   CentPrecisionMoney,
   ClientLogging,
   Address,
   Reference,
-} from '../commons';
-import { Customer } from '../customer';
-import { CustomerGroup } from '../customer-group';
-import { Store } from '../store';
+} from '@/models/commons';
+import { Customer } from '@/models/customer';
+import { CustomerGroup } from '@/models/customer-group';
+import { Store } from '@/models/store';
+import { createRelatedDates } from '@/utils';
 import {
   QUOTE_REQUEST_STATE,
   INVENTORY_MODE,

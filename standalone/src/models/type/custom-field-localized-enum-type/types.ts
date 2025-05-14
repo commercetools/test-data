@@ -1,6 +1,6 @@
 import { CustomFieldLocalizedEnumType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpLocalizedEnumType } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpLocalizedEnumType } from '@/graphql-types';
 import { TCustomFieldLocalizedEnumValueDraftGraphql } from '../custom-field-localized-enum-value';
 
 export type TCustomFieldLocalizedEnumType = CustomFieldLocalizedEnumType;

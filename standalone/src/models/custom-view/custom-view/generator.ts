@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { LocalizedField } from '../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedField } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { CustomViewInstallation } from '../custom-view-installation';
 import * as CustomViewPermission from '../custom-view-permission';
 import * as CustomViewTypeSettingsForCustomPanel from '../custom-view-type-settings-for-custom-panel';

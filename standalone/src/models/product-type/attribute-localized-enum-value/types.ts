@@ -1,9 +1,9 @@
 import { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpLocalizedEnumValue,
   TCtpLocalizedEnumValueDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeLocalizedEnumValueRest` or `TAttributeLocalizedEnumValueGraphql` instead

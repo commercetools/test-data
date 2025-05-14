@@ -1,7 +1,4 @@
-import {
-  CategoryDraft,
-  TCategoryDraft,
-} from '../../../../../category';
+import { CategoryDraft, TCategoryDraft } from '../../../../../category';
 import { LocalizedStringDraft } from '../../../../../commons';
 import { ProductDiscountValueRelativeDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';

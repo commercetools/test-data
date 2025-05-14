@@ -1,4 +1,4 @@
-import { LocalizedString } from '../../../../commons';
+import { LocalizedString } from '@/models/commons';
 import { AttributeBooleanType } from '../../attribute-boolean-type';
 import * as AttributeDefinition from '../../attribute-definition';
 import AttributeTextType from '../../attribute-text-type/builder';

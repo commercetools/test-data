@@ -1,8 +1,8 @@
-import { TBuilder } from '../../../core';
+import { TBuilder } from '@/core';
 import type {
   TMcSettingsCustomView,
   TMcSettingsCustomViewDraftDataInput,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TCustomViewGraphql = TMcSettingsCustomView;
 

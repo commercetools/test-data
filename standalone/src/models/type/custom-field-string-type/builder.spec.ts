@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import { TCustomFieldStringType, TCustomFieldStringTypeGraphql } from './types';
 import * as AttributeEnumType from './index';
 

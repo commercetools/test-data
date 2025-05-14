@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { Reference } from '../../commons';
+import { Transformer } from '@/core';
+import { Reference } from '@/models/commons';
 import type { TPaymentStatus, TPaymentStatusGraphql } from './types';
 
 const transformers = {

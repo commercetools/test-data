@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TImage, TImageGraphql } from './types';
 
 const transformers = {

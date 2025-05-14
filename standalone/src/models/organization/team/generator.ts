@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { Reference } from '../../commons';
+import { fake, Generator } from '@/core';
+import { Reference } from '@/models/commons';
 import type { TTeam } from './types';
 
 const generator = Generator<TTeam>({

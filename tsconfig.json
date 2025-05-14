@@ -1,5 +1,4 @@
 {
-  // Reference: https://github.com/tsconfig/bases#readme
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
@@ -11,6 +10,13 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
-    "allowJs": false
+    "allowJs": false,
+    "paths": {
+      "@/core": ["./standalone/src/core"],
+      "@/core/test-utils": ["./standalone/src/core/test-utils"],
+      "@/graphql-types": ["./standalone/src/graphql-types"],
+      "@/models/*": ["./standalone/src/models/*"],
+      "@/utils": ["./standalone/src/utils"]
+    }
   }
 }

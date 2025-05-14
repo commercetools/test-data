@@ -1,22 +1,13 @@
-import {
-  sequence,
-  fake,
-  Generator,
-  oneOf,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { Company } from '../business-unit';
-import { LineItem } from '../cart';
-import {
-  CentPrecisionMoney,
-  ClientLogging,
-  Address,
-} from '../commons';
-import { Customer } from '../customer';
-import { CustomerGroup } from '../customer-group';
-import { QuoteRequest } from '../quote-request';
-import { StagedQuote } from '../staged-quote';
-import { Store } from '../store';
+import { sequence, fake, Generator, oneOf } from '@/core';
+import { Company } from '@/models/business-unit';
+import { LineItem } from '@/models/cart';
+import { CentPrecisionMoney, ClientLogging, Address } from '@/models/commons';
+import { Customer } from '@/models/customer';
+import { CustomerGroup } from '@/models/customer-group';
+import { QuoteRequest } from '@/models/quote-request';
+import { StagedQuote } from '@/models/staged-quote';
+import { Store } from '@/models/store';
+import { createRelatedDates } from '@/utils';
 import {
   QUOTE_STATE,
   INVENTORY_MODE,

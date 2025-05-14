@@ -1,9 +1,6 @@
 import { FieldDefinition } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpFieldDefinition,
-  TCtpFieldDefinitionInput,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpFieldDefinition, TCtpFieldDefinitionInput } from '@/graphql-types';
 
 export type TFieldDefinition = FieldDefinition;
 

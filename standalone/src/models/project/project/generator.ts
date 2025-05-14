@@ -1,5 +1,5 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator, sequence } from '@/core';
+import { createRelatedDates } from '@/utils';
 import * as MessagesConfiguration from './messages-configuration';
 import type { TProject } from './types';
 

@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../../../core';
-import { ReferenceDraft } from '../../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { ReferenceDraft } from '@/models/commons';
 import { associateRoleInheritanceMode } from '../constants';
 import { TAssociateRoleAssignmentDraft } from '../types';
 

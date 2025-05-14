@@ -1,6 +1,6 @@
-import { sequence, fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { McProject } from '../../project';
+import { sequence, fake, Generator } from '@/core';
+import { McProject } from '@/models/project';
+import { createRelatedDates } from '@/utils';
 import { fakeBusinessRoles } from '../constants';
 import * as IdTokenUserInfo from './id-token-user-info';
 import type { TMcUser } from './types';

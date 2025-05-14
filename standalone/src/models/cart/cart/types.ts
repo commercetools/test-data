@@ -1,9 +1,6 @@
 import { Cart, CartDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpCart,
-  TCtpCartDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpCart, TCtpCartDraft } from '@/graphql-types';
 
 /**
  * @deprecated use `TCartRest` instead

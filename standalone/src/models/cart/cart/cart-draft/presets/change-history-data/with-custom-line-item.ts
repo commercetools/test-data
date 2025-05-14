@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../../../../core';
-import { AddressDraft } from '../../../../../commons';
+import type { TBuilder } from '@/core';
+import { AddressDraft } from '@/models/commons';
 import { CustomLineItemDraft } from '../../../../custom-line-item/custom-line-item-draft';
 import type {
   TCartDraft,

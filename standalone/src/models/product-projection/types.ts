@@ -1,6 +1,6 @@
 import { ProductProjection } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import type { TCtpProductProjection } from '../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TCtpProductProjection } from '@/graphql-types';
 
 export type TProductProjectionRest = ProductProjection;
 

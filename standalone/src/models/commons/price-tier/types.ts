@@ -1,5 +1,5 @@
 import { PriceTier, PriceTierDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TPriceTier = PriceTier;
 export type TPriceTierDraft = PriceTierDraft;

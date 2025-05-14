@@ -1,21 +1,16 @@
-import {
-  fake,
-  oneOf,
-  type TModelFieldsConfig,
-  sequence,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { Company } from '../../business-unit';
-import { CartDiscount } from '../../cart-discount';
+import { fake, oneOf, type TModelFieldsConfig, sequence } from '@/core';
+import { Company } from '@/models/business-unit';
+import { CartDiscount } from '@/models/cart-discount';
 import {
   Address,
   CentPrecisionMoney,
   ClientLogging,
   KeyReference,
   Reference,
-} from '../../commons';
-import { CustomerGroup } from '../../customer-group';
-import { Store } from '../../store';
+} from '@/models/commons';
+import { CustomerGroup } from '@/models/customer-group';
+import { Store } from '@/models/store';
+import { createRelatedDates } from '@/utils';
 import { LineItem } from '../index';
 import {
   cartState,

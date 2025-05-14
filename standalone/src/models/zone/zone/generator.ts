@@ -1,6 +1,6 @@
-import { sequence, fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { ClientLogging } from '../../commons';
+import { sequence, fake, Generator } from '@/core';
+import { ClientLogging } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import type { TZone } from './types';
 
 //https://docs.commercetools.com/api/projects/zones#zone

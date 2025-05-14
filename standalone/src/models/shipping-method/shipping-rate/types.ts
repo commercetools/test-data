@@ -1,5 +1,5 @@
 import { ShippingRate, ShippingRateDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TShippingRate = ShippingRate;
 export type TShippingRateDraft = ShippingRateDraft;

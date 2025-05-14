@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TMcUser, TMcUserGraphql } from './types';
 
 const buildFields: (keyof TMcUser)[] = ['idTokenUserInfo', 'projects'];

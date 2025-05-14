@@ -1,9 +1,6 @@
 import { Money } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpMoney,
-  TCtpMoneyDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpMoney, TCtpMoneyDraft } from '@/graphql-types';
 
 // Base model
 export type TMoney = Money;

@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
-import { PriceDraft } from '../../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { PriceDraft } from '@/models/commons';
 import { AttributeDraft } from '../../attribute';
 import { ImageDraft } from '../../image';
 import type {

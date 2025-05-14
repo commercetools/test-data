@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { slugify } from '../../../../utils';
+import { fake, Generator } from '@/core';
+import { slugify } from '@/utils';
 import { CustomApplicationMenuLinkDraft } from '../../custom-application-menu-link';
 import { CustomApplicationPermissionDraft } from '../../custom-application-permission';
 import { CustomApplicationSubmenuLinkDraft } from '../../custom-application-submenu-link';

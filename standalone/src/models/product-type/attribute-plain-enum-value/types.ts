@@ -1,9 +1,6 @@
 import type { AttributePlainEnumValue } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpPlainEnumValue,
-  TCtpPlainEnumValueDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpPlainEnumValue, TCtpPlainEnumValueDraft } from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributePlainEnumValueRest` or `TAttributePlainEnumValueGraphql` instead

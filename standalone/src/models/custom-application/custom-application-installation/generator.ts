@@ -1,6 +1,6 @@
-import { CustomApplication } from '..';
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { CustomApplication } from '@/models/custom-application';
+import { createRelatedDates } from '@/utils';
 import * as CustomApplicationInstallationPermission from '../custom-application-installation-permission';
 import type { TCustomApplicationInstallation } from './types';
 

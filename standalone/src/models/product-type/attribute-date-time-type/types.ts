@@ -1,9 +1,9 @@
 import type { AttributeDateTimeType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpDateTimeAttributeDefinitionType,
   TCtpSimpleAttributeTypeDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead

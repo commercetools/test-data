@@ -1,4 +1,4 @@
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type { TLimit } from '../limit';
 import type { TLimitWithCurrent } from '../limit-with-current';
 

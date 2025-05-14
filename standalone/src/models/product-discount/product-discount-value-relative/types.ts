@@ -2,7 +2,7 @@ import {
   ProductDiscountValueRelative,
   ProductDiscountValueRelativeDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TProductDiscountValueRelative = ProductDiscountValueRelative;
 export type TProductDiscountValueRelativeDraft =

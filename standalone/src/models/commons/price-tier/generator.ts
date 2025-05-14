@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../core';
+import { Generator, fake } from '@/core';
 import * as CentPrecisionMoney from '../cent-precision-money';
 import { TPriceTier } from './types';
 

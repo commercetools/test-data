@@ -4,7 +4,7 @@ import type {
   DivisionDraft,
   StoreKeyReference,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type { TCompanyGraphql } from '../company/types';
 
 //BusinessUnitDraft

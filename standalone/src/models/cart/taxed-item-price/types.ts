@@ -1,6 +1,6 @@
 import { TaxedItemPrice } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpTaxedItemPrice } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpTaxedItemPrice } from '@/graphql-types';
 
 export type TTaxedItemPriceRest = TaxedItemPrice;
 

@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../core';
+import { Generator, fake } from '@/core';
 import { Reference } from '../reference';
 import type { TClientLogging } from './types';
 

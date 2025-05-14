@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import { MoneyDraft, TMoneyDraftGraphql } from '../../money';
 import type { TPriceDraft, TPriceDraftGraphql } from '../types';
 

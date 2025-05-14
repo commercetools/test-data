@@ -1,7 +1,4 @@
-import {
-  ChannelDraft,
-  type TChannelDraft,
-} from '../../../../../channel';
+import { ChannelDraft, type TChannelDraft } from '../../../../../channel';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,

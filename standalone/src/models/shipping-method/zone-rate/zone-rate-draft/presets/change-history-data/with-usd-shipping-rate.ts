@@ -1,4 +1,4 @@
-import { KeyReferenceDraft } from '../../../../../commons';
+import { KeyReferenceDraft } from '@/models/commons';
 import { ShippingRateDraft } from '../../../../shipping-rate';
 import type { TZoneRateDraftBuilder } from '../../../types';
 import * as ZoneRateDraft from '../../index';

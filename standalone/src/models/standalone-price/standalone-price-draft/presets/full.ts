@@ -1,4 +1,4 @@
-import { MoneyDraft, PriceTierDraft } from '../../../commons';
+import { MoneyDraft, PriceTierDraft } from '@/models/commons';
 import * as StagedPriceDraft from '../../staged-price-draft';
 import type { TStandalonePriceDraftBuilder } from '../../types';
 import StandalonePriceDraft from '../builder';

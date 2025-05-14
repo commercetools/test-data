@@ -2,7 +2,7 @@ import type {
   ShoppingList,
   ShoppingListDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 
 export type TShoppingList = ShoppingList;
 export type TShoppingListDraft = ShoppingListDraft;

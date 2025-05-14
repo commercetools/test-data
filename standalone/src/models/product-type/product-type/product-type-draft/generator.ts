@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import { AttributeDefinitionDraft } from '../../attribute-definition';
 import type { TProductTypeDraft } from '../types';
 

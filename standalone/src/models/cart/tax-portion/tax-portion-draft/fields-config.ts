@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
-import { Money } from '../../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { Money } from '@/models/commons';
 import type { TTaxPortionDraftGraphql, TTaxPortionDraftRest } from '../types';
 
 const commonFieldsConfig = {

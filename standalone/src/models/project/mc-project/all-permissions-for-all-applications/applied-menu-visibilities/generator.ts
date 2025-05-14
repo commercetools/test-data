@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../../core';
+import { fake, Generator } from '@/core';
 import { TAppliedMenuVisibilities } from './types';
 
 const fakeMenuVisibilityNames = [

@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { Zone } from '../../zone';
+import { fake, Generator } from '@/core';
+import { Zone } from '@/models/zone';
 import * as ShippingRate from '../shipping-rate';
 import { TZoneRate } from './types';
 

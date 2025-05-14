@@ -1,5 +1,5 @@
-import { TBuilder } from '../../core';
-import type { TMcSettingsCustomersSearchListMyView } from '../../graphql-types';
+import { TBuilder } from '@/core';
+import type { TMcSettingsCustomersSearchListMyView } from '@/graphql-types';
 
 export type TCustomersSearchListMyView = TMcSettingsCustomersSearchListMyView;
 

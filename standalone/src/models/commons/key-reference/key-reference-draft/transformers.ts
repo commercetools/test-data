@@ -1,5 +1,5 @@
+import { Transformer } from '@/core';
 import type { TKeyReferenceDraft, TKeyReferenceDraftGraphql } from '.././types';
-import { Transformer } from '../../../../core';
 
 const transformers = {
   default: Transformer<TKeyReferenceDraft, TKeyReferenceDraft>('default', {}),

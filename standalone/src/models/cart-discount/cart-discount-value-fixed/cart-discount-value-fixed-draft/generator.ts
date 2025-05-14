@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { MoneyDraft } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { MoneyDraft } from '@/models/commons';
 import type { TCartDiscountValueFixedDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluefixeddraft

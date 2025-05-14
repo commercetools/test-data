@@ -1,7 +1,4 @@
-import {
-  AddressDraft,
-  KeyReferenceDraft,
-} from '../../../../commons';
+import { AddressDraft, KeyReferenceDraft } from '../../../../commons';
 import {
   CustomerGroupDraft,
   type TCustomerGroupDraft,

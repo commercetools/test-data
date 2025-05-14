@@ -9,11 +9,8 @@ import type {
   State,
   Store,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import {
-  TReferenceGraphql,
-  TKeyReferenceGraphql,
-} from '../commons';
+import type { TBuilder } from '@/core';
+import { TReferenceGraphql, TKeyReferenceGraphql } from '@/models/commons';
 
 // Default
 export type TQuote = Omit<

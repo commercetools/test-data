@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TImageRegexDraft, TImageRegexDraftGraphql } from './types';
 
 const buildFields: (keyof TImageRegexDraft)[] = [];

@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TOrganization, TOrganizationGraphql } from './types';
 
 const transformers = {

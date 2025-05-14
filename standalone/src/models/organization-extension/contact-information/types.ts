@@ -1,5 +1,5 @@
-import { TBuilder } from '../../../core';
-import type { TMcSettingsContactInformation } from '../../../graphql-types';
+import { TBuilder } from '@/core';
+import type { TMcSettingsContactInformation } from '@/graphql-types';
 
 export type TContactInformation = Omit<
   TMcSettingsContactInformation,

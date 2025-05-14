@@ -1,6 +1,6 @@
 import type { CustomFieldNumberType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpNumberType } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpNumberType } from '@/graphql-types';
 
 export type TCustomFieldNumberType = CustomFieldNumberType;
 export type TCustomFieldNumberTypeDraft = CustomFieldNumberType;

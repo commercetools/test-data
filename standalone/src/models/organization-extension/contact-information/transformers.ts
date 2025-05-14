@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TContactInformation, TContactInformationGraphql } from './types';
 
 const buildFields: (keyof TContactInformation)[] = [];

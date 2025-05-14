@@ -1,10 +1,7 @@
-import { sequence, fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../../commons';
-import { TaxCategory } from '../../tax-category';
+import { sequence, fake, Generator } from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { TaxCategory } from '@/models/tax-category';
+import { createRelatedDates } from '@/utils';
 import { TShippingMethod } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingmethod

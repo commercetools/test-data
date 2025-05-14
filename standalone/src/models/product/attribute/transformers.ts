@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TAttribute, TAttributeRest, TAttributeGraphql } from './types';
 
 const transformers = {

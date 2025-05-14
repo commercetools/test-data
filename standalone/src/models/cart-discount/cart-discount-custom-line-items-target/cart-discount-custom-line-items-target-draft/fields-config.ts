@@ -1,4 +1,4 @@
-import { type TModelFieldsConfig } from '../../../../core';
+import { type TModelFieldsConfig } from '@/core';
 
 import type {
   TCartDiscountCustomLineItemsTargetDraftGraphql,

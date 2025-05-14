@@ -3,8 +3,8 @@ import type {
   AssociateDraft,
   Customer,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TReferenceGraphql } from '../../commons';
+import type { TBuilder } from '@/core';
+import { TReferenceGraphql } from '@/models/commons';
 
 export type TAssociateDraft = AssociateDraft;
 export type TAssociateDraftGraphql = TAssociateDraft;

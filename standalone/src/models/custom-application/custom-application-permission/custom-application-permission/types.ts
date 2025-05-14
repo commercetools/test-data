@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../../core';
-import type { TMcSettingsCustomApplicationPermission as McSettingsCustomApplicationPermission } from '../../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomApplicationPermission as McSettingsCustomApplicationPermission } from '@/graphql-types';
 
 export type TCustomApplicationPermission = Omit<
   McSettingsCustomApplicationPermission,

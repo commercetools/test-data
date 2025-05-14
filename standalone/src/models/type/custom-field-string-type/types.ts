@@ -1,6 +1,6 @@
 import type { CustomFieldStringType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpStringType } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpStringType } from '@/graphql-types';
 
 export type TCustomFieldStringType = CustomFieldStringType;
 export type TCustomFieldStringTypeDraft = CustomFieldStringType;
