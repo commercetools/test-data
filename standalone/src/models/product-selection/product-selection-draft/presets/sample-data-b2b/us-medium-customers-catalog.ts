@@ -1,6 +1,6 @@
-import type { TBuilder } from '../../../../../core';
-import { TCtpProductSelectionMode } from '../../../../../graphql-types';
-import { LocalizedStringDraft } from '../../../../commons';
+import type { TBuilder } from '@/core';
+import { TCtpProductSelectionMode } from '@/graphql-types';
+import { LocalizedStringDraft } from '@/models/commons';
 import type {
   TProductSelectionDraftGraphql,
   TProductSelectionDraftRest,

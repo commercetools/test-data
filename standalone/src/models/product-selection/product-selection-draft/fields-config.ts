@@ -1,5 +1,5 @@
-import { fake, TModelFieldsConfig } from '../../../core';
-import { LocalizedString } from '../../commons';
+import { fake, TModelFieldsConfig } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import {
   TProductSelectionDraftGraphql,
   TProductSelectionDraftRest,

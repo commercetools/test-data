@@ -1,10 +1,10 @@
+import { fake, oneOf, sequence, TModelFieldsConfig } from '@/core';
 import {
   ClientLogging,
   LocalizedString,
   //   ReferenceGraphql,
-} from '../../commons';
-import { fake, oneOf, sequence, TModelFieldsConfig } from '../../core';
-import { createRelatedDates } from '../../utils';
+} from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { productSelectionMode } from './constants';
 import { TProductSelectionRest, TProductSelectionGraphql } from './types';
 
