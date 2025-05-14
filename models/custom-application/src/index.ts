@@ -3,8 +3,9 @@ import * as CustomApplicationDeploymentPreview from './custom-application-deploy
 import * as CustomApplicationInstallation from './custom-application-installation';
 import * as CustomApplicationInstallationPermission from './custom-application-installation-permission';
 import * as CustomApplicationMenuLink from './custom-application-menu-link';
-import * as CustomApplicationPermission from './custom-application-permission';
 import * as CustomApplicationSubmenuLink from './custom-application-submenu-link';
+export * from './custom-application-permission';
+export * from './custom-application-permission/custom-application-permission-draft';
 
 export {
   CustomApplication,
@@ -12,6 +13,5 @@ export {
   CustomApplicationInstallation,
   CustomApplicationInstallationPermission,
   CustomApplicationMenuLink,
-  CustomApplicationPermission,
   CustomApplicationSubmenuLink,
 };
