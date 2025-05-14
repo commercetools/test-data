@@ -5,20 +5,87 @@ import {
   ProductSelectionRest,
 } from './index';
 
-const validateModel = (
-  model: TProductSelectionGraphql | TProductSelectionRest
-): void => {
+const validateRestModel = (model: TProductSelectionRest): void => {
   expect(model).toMatchObject({
     version: expect.any(Number),
     id: expect.any(String),
     createdAt: expect.any(String),
     lastModifiedAt: expect.any(String),
-    lastModifiedBy: expect.any(Object),
-    createdBy: expect.any(Object),
+    lastModifiedBy: expect.objectContaining({
+      externalUserId: expect.any(String),
+      anonymousId: expect.any(String),
+      clientId: expect.any(String),
+      customer: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'customer',
+        obj: expect.objectContaining({
+          id: expect.any(String),
+        }),
+      }),
+    }),
+    createdBy: expect.objectContaining({
+      externalUserId: expect.any(String),
+      anonymousId: expect.any(String),
+      clientId: expect.any(String),
+      customer: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'customer',
+        obj: expect.objectContaining({
+          id: expect.any(String),
+        }),
+      }),
+    }),
     key: expect.any(String),
     productCount: expect.any(Number),
     mode: expect.any(String),
     custom: expect.any(Object),
+    name: expect.objectContaining({
+      en: expect.any(String),
+    }),
+  });
+};
+
+const validateGraphqlModel = (model: TProductSelectionGraphql): void => {
+  expect(model).toMatchObject({
+    version: expect.any(Number),
+    id: expect.any(String),
+    createdAt: expect.any(String),
+    lastModifiedAt: expect.any(String),
+    lastModifiedBy: expect.objectContaining({
+      __typename: 'Initiator',
+      externalUserId: expect.any(String),
+      anonymousId: expect.any(String),
+      clientId: expect.any(String),
+      customerRef: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'customer',
+        __typename: 'Reference',
+      }),
+    }),
+    createdBy: expect.objectContaining({
+      __typename: 'Initiator',
+      externalUserId: expect.any(String),
+      anonymousId: expect.any(String),
+      clientId: expect.any(String),
+      customerRef: expect.objectContaining({
+        id: expect.any(String),
+        typeId: 'customer',
+        __typename: 'Reference',
+      }),
+    }),
+    nameAllLocales: expect.arrayContaining([
+      expect.objectContaining({
+        __typename: 'LocalizedString',
+        value: expect.any(String),
+        locale: expect.any(String),
+      }),
+    ]),
+    name: expect.any(String),
+    key: expect.any(String),
+    productCount: expect.any(Number),
+    mode: expect.any(String),
+    custom: expect.any(Object),
+    __typename: 'ProductSelection',
   });
 };
 
@@ -26,14 +93,13 @@ describe('ProductSelection model builders', () => {
   it('builds a REST model', () => {
     const restModel = ProductSelectionRest.random().build();
 
-    validateModel(restModel);
+    validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel = ProductSelectionGraphql.random().build();
 
-    validateModel(graphqlModel);
-    expect(graphqlModel.__typename).toEqual('ProductSelection');
+    validateGraphqlModel(graphqlModel);
   });
 });
 
@@ -41,20 +107,19 @@ describe('ProductSelection model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const restModel = ProductSelection.random().build();
 
-    validateModel(restModel);
+    validateRestModel(restModel);
   });
 
   it('builds a REST model', () => {
     const restModel = ProductSelection.random().buildRest();
 
-    validateModel(restModel);
+    validateRestModel(restModel);
   });
 
   it('builds a GraphQL model', () => {
     const graphqlModel =
       ProductSelection.random().buildGraphql<TProductSelectionGraphql>();
 
-    validateModel(graphqlModel);
-    expect(graphqlModel.__typename).toEqual('ProductSelection');
+    validateGraphqlModel(graphqlModel);
   });
 });
