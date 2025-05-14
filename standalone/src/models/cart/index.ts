@@ -2,6 +2,8 @@
 export * from './custom-line-item/types';
 export * from './cart/types';
 export * from './line-item/types';
+export * from './discount-on-total-price/types';
+export * from './discounted-total-price-portion/types';
 
 // Export models
 export * from './cart';

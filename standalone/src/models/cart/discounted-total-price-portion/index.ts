@@ -1,6 +1,5 @@
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as DiscountedTotalPricePortionPresets from './presets';
-export * from './types';
 
 export const DiscountedTotalPricePortionRest = {
   random: RestModelBuilder,
