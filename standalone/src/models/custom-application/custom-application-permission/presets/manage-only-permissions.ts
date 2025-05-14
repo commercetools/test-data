@@ -1,16 +1,22 @@
 import { entryPointUriPathToResourceAccesses } from '@commercetools-frontend/application-config/ssr';
+import type { TBuilder } from '@commercetools-test-data/core';
 import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import CustomApplicationPermission from '../builder';
 import { supportedManageOAuthScopes } from '../constants';
+import { CustomApplicationPermissionGraphql } from '../index';
+import type { TCustomApplicationPermissionGraphql } from '../types';
 
-const preset = (entryPointUriPath = 'avengers', additionalPermission = '') => {
+const populatePreset = <TModel extends TCustomApplicationPermissionGraphql>(
+  builder: TBuilder<TModel>,
+  entryPointUriPath: string = 'avengers',
+  additionalPermission: string = ''
+) => {
   const resourceAccesses = entryPointUriPathToResourceAccesses(
     entryPointUriPath,
     [additionalPermission]
   );
-  return CustomApplicationPermission()
+  return builder
     .name(
       !additionalPermission
         ? resourceAccesses.manage
@@ -22,4 +28,6 @@ const preset = (entryPointUriPath = 'avengers', additionalPermission = '') => {
     .oAuthScopes(sampleSize(supportedManageOAuthScopes, 1));
 };
 
-export default preset;
+export const graphqlPreset =
+  (): TBuilder<TCustomApplicationPermissionGraphql> =>
+    populatePreset(CustomApplicationPermissionGraphql.random());

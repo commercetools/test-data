@@ -1,2 +1,7 @@
-export * as CustomApplicationPermissionDraft from './custom-application-permission-draft';
-export * as CustomApplicationPermission from './custom-application-permission';
+import { GraphqlModelBuilder } from './builders';
+import * as CustomApplicationPermissionPresets from './presets';
+
+export const CustomApplicationPermissionGraphql = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationPermissionPresets.graphqlPresets,
+};

@@ -1,10 +1,9 @@
 import type { TBuilder } from '@/core';
 import type { TMcSettingsCustomApplicationPermissionDataInput } from '@/graphql-types';
 
-export type TCustomApplicationPermissionDraft =
+export type TCustomApplicationPermissionDraftGraphql =
   TMcSettingsCustomApplicationPermissionDataInput;
 
-export type TCustomApplicationPermissionDraftBuilder =
-  TBuilder<TCustomApplicationPermissionDraft>;
-export type TCreateCustomApplicationPermissionDraftBuilder =
-  () => TCustomApplicationPermissionDraftBuilder;
+export type TCreateCustomApplicationPermissionDraftBuilder<
+  TModel extends TCustomApplicationPermissionDraftGraphql,
+> = () => TBuilder<TModel>;

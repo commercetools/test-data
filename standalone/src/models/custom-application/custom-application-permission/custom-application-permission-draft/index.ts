@@ -1,3 +1,7 @@
-export { default as random } from './builder';
-export * as presets from './presets';
-export * from './types';
+import { GraphqlModelBuilder } from './builders';
+import * as CustomApplicationPermissionDraftPresets from './presets';
+
+export const CustomApplicationPermissionDraftGraphql = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationPermissionDraftPresets.graphqlPresets,
+};
