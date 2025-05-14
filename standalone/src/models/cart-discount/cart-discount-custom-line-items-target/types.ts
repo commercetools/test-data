@@ -1,11 +1,10 @@
 import { CartDiscountCustomLineItemsTarget } from '@commercetools/platform-sdk';
+import { TCtpCustomLineItemsTarget } from '../../../graphql-types';
 
 export type TCartDiscountCustomLineItemsTargetRest =
   CartDiscountCustomLineItemsTarget;
 export type TCartDiscountCustomLineItemsTargetGraphql =
-  TCartDiscountCustomLineItemsTargetRest & {
-    __typename: 'CustomLineItemsTarget';
-  };
+  TCtpCustomLineItemsTarget;
 
 export type TCartDiscountCustomLineItemsTargetDraftRest =
   CartDiscountCustomLineItemsTarget;
