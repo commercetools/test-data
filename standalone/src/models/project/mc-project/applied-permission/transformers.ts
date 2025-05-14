@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TAppliedPermission, TAppliedPermissionGraphql } from './types';
 
 const transformers = {

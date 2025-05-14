@@ -1,6 +1,6 @@
-import type { TBuilder } from '../../../core';
-import type { TCoreTeam } from '../../../graphql-types';
-import type { TReference } from '../../commons';
+import type { TBuilder } from '@/core';
+import type { TCoreTeam } from '@/graphql-types';
+import type { TReference } from '@/models/commons';
 
 export type TTeamGraphql = TCoreTeam;
 

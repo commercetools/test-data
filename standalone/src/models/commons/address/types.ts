@@ -1,5 +1,5 @@
 import type { Address, AddressDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAddress = Address;
 export type TAddressDraft = AddressDraft;

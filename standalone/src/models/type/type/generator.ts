@@ -1,14 +1,6 @@
-import {
-  sequence,
-  fake,
-  Generator,
-  oneOf,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../../commons';
+import { sequence, fake, Generator, oneOf } from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import * as FieldDefinition from '../field-definition';
 import { resourceTypeIds } from './constants';
 import { TType } from './types';

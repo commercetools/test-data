@@ -1,7 +1,4 @@
-import {
-  KeyReferenceDraft,
-  AddressDraft,
-} from '../../../../../commons';
+import { KeyReferenceDraft, AddressDraft } from '../../../../../commons';
 import { type TStoreDraft, StoreDraft } from '../../../../../store';
 import { AssociateDraft } from '../../../../associate';
 import { CompanyDraft, type TCompanyDraft } from '../../../../company';

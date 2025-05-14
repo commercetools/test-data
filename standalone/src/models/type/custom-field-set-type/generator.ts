@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import * as CustomFieldBooleanType from '../custom-field-boolean-type';
 import { TCustomFieldSetType } from './types';
 

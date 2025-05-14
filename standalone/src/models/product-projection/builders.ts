@@ -1,4 +1,4 @@
-import { createSpecializedBuilder } from '../../core';
+import { createSpecializedBuilder } from '@/core';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 import type {
   TCreateProductProjectionBuilder,

@@ -1,5 +1,5 @@
-import { Generator, fake } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { Generator, fake } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { supportedViewOAuthScopes } from './constants';
 import type { TCustomViewPermission } from './types';
 

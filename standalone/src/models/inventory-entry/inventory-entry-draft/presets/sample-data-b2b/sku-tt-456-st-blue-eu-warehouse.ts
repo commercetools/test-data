@@ -1,8 +1,5 @@
 import type { TBuilder } from '../../../../../core';
-import {
-  ChannelDraft,
-  type TChannelDraft,
-} from '../../../../channel';
+import { ChannelDraft, type TChannelDraft } from '../../../../channel';
 import { KeyReferenceDraft } from '../../../../commons';
 import {
   ProductVariantDraft,

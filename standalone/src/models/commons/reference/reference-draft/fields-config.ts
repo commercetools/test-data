@@ -1,4 +1,4 @@
-import { type TModelFieldsConfig, fake } from '../../../../core';
+import { type TModelFieldsConfig, fake } from '@/core';
 import type { TReferenceDraftGraphql, TReferenceDraftRest } from '../types';
 
 const commonFieldsConfig = {

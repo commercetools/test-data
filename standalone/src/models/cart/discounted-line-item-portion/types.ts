@@ -2,11 +2,11 @@ import {
   DiscountedLineItemPortion,
   DiscountedLineItemPortionDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TCtpDiscountedLineItemPortion,
   TCtpDiscountedLineItemPortionDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TDiscountedLineItemPortionRest = DiscountedLineItemPortion;
 export type TDiscountedLineItemPortionDraftRest =

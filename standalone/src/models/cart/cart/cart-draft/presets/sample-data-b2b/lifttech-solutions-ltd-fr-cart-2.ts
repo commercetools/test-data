@@ -7,14 +7,8 @@ import {
   ChannelDraftRest,
   type TChannelDraftRest,
 } from '../../../../../channel';
-import {
-  AddressDraft,
-  KeyReferenceDraft,
-} from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
+import { AddressDraft, KeyReferenceDraft } from '../../../../../commons';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,

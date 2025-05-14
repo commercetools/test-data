@@ -1,4 +1,4 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import { SearchKeywordGraphql, SearchKeywordRest } from '../search-keyword';
 import type { TSearchKeywordsGraphql, TSearchKeywordsRest } from './types';
 

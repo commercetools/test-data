@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { LocalizedField } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { LocalizedField } from '@/models/commons';
 import type { TCustomApplicationSubmenuLinkDraft } from '../types';
 
 const generator = Generator<TCustomApplicationSubmenuLinkDraft>({

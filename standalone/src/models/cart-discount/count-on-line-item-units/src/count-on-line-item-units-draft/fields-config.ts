@@ -1,4 +1,4 @@
-import { fake, type TModelFieldsConfig } from '../../../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import { TCountOnLineItemUnitsDraftGraphql } from '../../types';
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCountOnLineItemUnitsDraftGraphql> =

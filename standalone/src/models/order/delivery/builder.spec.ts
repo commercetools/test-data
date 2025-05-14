@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 
-import { Address } from '../../commons';
+import { Address } from '@/models/commons';
 import { TDelivery, TDeliveryGraphql } from './types';
 import * as Delivery from '.';
 

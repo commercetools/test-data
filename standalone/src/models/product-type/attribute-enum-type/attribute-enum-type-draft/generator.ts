@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import * as AttributePlainEnumValueDraft from '../../attribute-plain-enum-value/attribute-plain-enum-value-draft';
 import { TAttributeEnumTypeDraft } from '../types';
 

@@ -1,12 +1,5 @@
-import {
-  Transformer,
-  toGraphqlPaginatedQueryResult,
-} from '../../../core';
-import {
-  Reference,
-  TReference,
-  TReferenceGraphql,
-} from '../../commons';
+import { Transformer, toGraphqlPaginatedQueryResult } from '@/core';
+import { Reference, TReference, TReferenceGraphql } from '@/models/commons';
 import type { TPayment, TPaymentGraphql, TPaymentRest } from './types';
 
 const transformers = {

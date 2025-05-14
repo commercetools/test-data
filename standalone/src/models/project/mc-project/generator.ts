@@ -1,5 +1,5 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, Generator, sequence } from '@/core';
+import { createRelatedDates } from '@/utils';
 import * as AllPermissionsForAllApplications from './all-permissions-for-all-applications';
 import * as AppliedActionRight from './applied-action-right';
 import * as AppliedDataFence from './applied-data-fence';

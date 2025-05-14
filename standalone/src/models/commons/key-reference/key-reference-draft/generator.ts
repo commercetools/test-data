@@ -1,5 +1,5 @@
+import { Generator, fake } from '@/core';
 import type { TKeyReferenceDraft } from '.././types';
-import { Generator, fake } from '../../../../core';
 
 // https://docs.commercetools.com/api/types#keyreference
 const generator = Generator<TKeyReferenceDraft>({

@@ -1,9 +1,9 @@
 import type { Store, StoreDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
-} from '../../commons';
+} from '@/models/commons';
 
 //StoreDraft
 export type TStoreDraft = StoreDraft;

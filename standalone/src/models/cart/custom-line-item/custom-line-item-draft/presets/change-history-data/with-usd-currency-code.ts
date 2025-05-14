@@ -1,5 +1,5 @@
-import { TBuilder } from '../../../../../../core';
-import { MoneyDraft } from '../../../../../commons';
+import { TBuilder } from '@/core';
+import { MoneyDraft } from '@/models/commons';
 import {
   TCustomLineItemDraftRest,
   TCustomLineItemDraftGraphql,

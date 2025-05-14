@@ -1,8 +1,8 @@
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type {
   TCoreOrganization,
   TCoreCreateOrganizationCommand,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 export type TOrganization = Omit<TCoreOrganization, '__typename'>;
 

@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../core';
+import { Generator, fake } from '@/core';
 import type { TLocalizedField } from './types';
 
 const generator = Generator<TLocalizedField>({

@@ -1,9 +1,6 @@
 import { Product, ProductDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpProduct,
-  TCtpProductDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpProduct, TCtpProductDraft } from '@/graphql-types';
 
 /**
  * @deprecated use `TProductRest` or `TProductGraphql` instead

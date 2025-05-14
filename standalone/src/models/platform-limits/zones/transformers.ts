@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TZoneLimitsProjection, TZoneLimitsProjectionGraphql } from './types';
 
 const transformers = {

@@ -1,10 +1,6 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { CartDiscount } from '../../cart-discount';
-import {
-  Money,
-  ReferenceGraphql,
-  ReferenceRest,
-} from '../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { CartDiscount } from '@/models/cart-discount';
+import { Money, ReferenceGraphql, ReferenceRest } from '@/models/commons';
 import type {
   TDiscountedLineItemPortionGraphql,
   TDiscountedLineItemPortionRest,

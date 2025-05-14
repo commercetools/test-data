@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { Reference } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { Reference } from '@/models/commons';
 import { TCartDiscountValueGiftLineItemDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountvaluegiftlineitemdraft

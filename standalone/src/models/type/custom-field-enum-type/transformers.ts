@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TCustomFieldEnumTypeGraphql, TCustomFieldEnumType } from './types';
 
 const transformers = {

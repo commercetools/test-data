@@ -1,4 +1,4 @@
-import { Transformer } from '../../core';
+import { Transformer } from '@/core';
 import type { TProjectExtension, TProjectExtensionGraphql } from './types';
 
 const buildFields: (keyof TProjectExtension)[] = [

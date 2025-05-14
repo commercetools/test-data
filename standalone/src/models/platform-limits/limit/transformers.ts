@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TLimit, TLimitGraphql } from './types';
 
 const transformers = {

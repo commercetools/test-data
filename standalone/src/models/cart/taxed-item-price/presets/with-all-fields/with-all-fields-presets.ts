@@ -1,7 +1,7 @@
-import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../..';
-import type { TBuilder } from '../../../../../core';
-import { Money } from '../../../../commons';
+import type { TBuilder } from '@/core';
+import { Money } from '@/models/commons';
 import { TaxPortionGraphql, TaxPortionRest } from '../../../tax-portion';
+import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../../index';
 import type { TTaxedItemPriceGraphql, TTaxedItemPriceRest } from '../../types';
 
 export const restPreset = (): TBuilder<TTaxedItemPriceRest> =>

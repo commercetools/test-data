@@ -1,4 +1,4 @@
-import { CentPrecisionMoney, Money } from '../../commons';
+import { CentPrecisionMoney, Money } from '@/models/commons';
 import {
   TaxedPriceRest,
   TaxedPriceGraphql,

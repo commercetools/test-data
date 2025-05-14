@@ -1,5 +1,5 @@
-import { Generator, fake } from '../../../core';
-import { CentPrecisionMoney } from '../../commons';
+import { Generator, fake } from '@/core';
+import { CentPrecisionMoney } from '@/models/commons';
 import { TShippingRate } from './types';
 
 // https://docs.commercetools.com/api/projects/shippingMethods#shippingrate

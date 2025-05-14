@@ -1,21 +1,15 @@
-import * as PaymentDraft from '../..';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
   MoneyDraft,
 } from '../../../../../commons';
-import {
-  CustomerDraft,
-  type TCustomerDraft,
-} from '../../../../../customer';
-import {
-  OrderFromCartDraft,
-  TOrderFromCartDraft,
-} from '../../../../../order';
+import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
+import { OrderFromCartDraft, TOrderFromCartDraft } from '../../../../../order';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft, constants } from '../../../../transaction';
 import { TPaymentDraftBuilder } from '../../../types';
+import * as PaymentDraft from '../../index';
 
 const customerSebastianMueller = CustomerDraft.presets.sampleDataB2CLifestyle
   .sebastianMuller()

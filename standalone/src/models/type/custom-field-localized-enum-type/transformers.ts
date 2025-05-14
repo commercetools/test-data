@@ -1,5 +1,5 @@
 import { CustomFieldLocalizedEnumValue } from '@commercetools/platform-sdk';
-import { buildField, Transformer } from '../../../core';
+import { buildField, Transformer } from '@/core';
 import { TCustomFieldLocalizedEnumValueGraphql } from '../custom-field-localized-enum-value';
 import {
   type TCustomFieldLocalizedEnumType,

@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { LocalizedString, Reference } from '../../commons';
+import { Transformer } from '@/core';
+import { LocalizedString, Reference } from '@/models/commons';
 import type { TStore, TStoreGraphql } from './types';
 
 const buildFields: Array<keyof TStore> = [

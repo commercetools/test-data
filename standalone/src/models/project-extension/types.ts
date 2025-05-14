@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../core';
-import type { TMcSettingsProjectExtension } from '../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsProjectExtension } from '@/graphql-types';
 
 export type TProjectExtension = Omit<TMcSettingsProjectExtension, '__typename'>;
 

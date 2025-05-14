@@ -1,5 +1,5 @@
-import { TBuilder } from '../../../core';
-import { CustomFieldBooleanType } from '../../type';
+import { TBuilder } from '@/core';
+import { CustomFieldBooleanType } from '@/models/type';
 import { TaxedItemPriceGraphql, TaxedItemPriceRest } from '../index';
 import { TLineItemGraphql, TLineItemRest } from './types';
 import { LineItem, LineItemRest, LineItemGraphql } from './index';

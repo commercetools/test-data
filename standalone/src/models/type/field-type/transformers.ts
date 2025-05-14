@@ -1,10 +1,6 @@
 import { faker } from '@faker-js/faker';
-import {
-  Transformer,
-  buildField,
-  buildFields,
-} from '../../../core';
-import { Reference } from '../../commons';
+import { Transformer, buildField, buildFields } from '@/core';
+import { Reference } from '@/models/commons';
 import * as CustomFieldEnumValue from '../custom-field-enum-value';
 import { TCustomFieldEnumValue } from '../custom-field-enum-value';
 import * as CustomFieldLocalizedEnumValue from '../custom-field-localized-enum-value';

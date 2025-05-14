@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TAttributeDateTimeTypeGraphql, TAttributeDateTimeType } from './types';
 
 const transformers = {

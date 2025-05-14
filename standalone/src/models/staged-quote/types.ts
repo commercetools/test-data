@@ -7,11 +7,8 @@ import type {
   State,
   QuoteRequest,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
-import {
-  TReferenceGraphql,
-  TKeyReferenceGraphql,
-} from '../commons';
+import type { TBuilder } from '@/core';
+import { TReferenceGraphql, TKeyReferenceGraphql } from '@/models/commons';
 
 // Default
 export type TStagedQuote = Omit<

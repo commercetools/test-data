@@ -2,11 +2,8 @@ import {
   CustomLineItem,
   CustomLineItemDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpCustomLineItem,
-  TCtpCustomLineItemDraft,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpCustomLineItem, TCtpCustomLineItemDraft } from '@/graphql-types';
 
 /**
  * @deprecated use `TCustomLineItemRest` instead

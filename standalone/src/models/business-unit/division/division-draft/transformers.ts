@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TDivisionDraft, TDivisionDraftGraphql } from '../types';
 
 const transformers = {

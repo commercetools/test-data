@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TKeyReference, TKeyReferenceGraphql } from './types';
 
 const transformers = {

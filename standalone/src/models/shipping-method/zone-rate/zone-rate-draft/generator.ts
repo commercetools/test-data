@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { KeyReferenceDraft } from '../../../commons';
+import { fake, Generator } from '@/core';
+import { KeyReferenceDraft } from '@/models/commons';
 import * as ShippingRateDraft from '../../shipping-rate/shipping-rate-draft';
 import { TZoneRateDraft } from '../types';
 

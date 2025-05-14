@@ -1,10 +1,10 @@
 import { CreatedBy, LastModifiedBy } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import type {
   TLocalizedString,
   TLocalizedStringGraphql,
-} from '../../commons';
-import type { TFieldDefinition } from '../../type';
+} from '@/models/commons';
+import type { TFieldDefinition } from '@/models/type';
 
 export type TTypeDefinition = {
   key: string;

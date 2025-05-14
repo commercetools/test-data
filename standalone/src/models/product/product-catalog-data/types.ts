@@ -1,6 +1,6 @@
 import type { ProductCatalogData } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import type { TCtpProductCatalogData } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TCtpProductCatalogData } from '@/graphql-types';
 
 export type TProductCatalogDataRest = ProductCatalogData;
 export type TProductCatalogDataGraphql = TCtpProductCatalogData;

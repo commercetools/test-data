@@ -1,5 +1,5 @@
 import type { AttributeTextType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAttributeTextType = AttributeTextType;
 export type TAttributeTextTypeDraft = AttributeTextType;

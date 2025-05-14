@@ -2,11 +2,11 @@ import {
   InventoryEntry,
   InventoryEntryDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import type {
   TCtpInventoryEntry,
   TCtpInventoryEntryDraft,
-} from '../../graphql-types';
+} from '@/graphql-types';
 
 // Default
 /**

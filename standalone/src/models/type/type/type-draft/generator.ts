@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../../../core';
-import { LocalizedStringDraft } from '../../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import * as FieldDefinition from '../../field-definition';
 import { resourceTypeIds } from '../constants';
 import { TTypeDraft } from '../types';

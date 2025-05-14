@@ -1,6 +1,6 @@
-import type { TBuilder } from '../../../../core';
-import { ReferenceRest } from '../../../commons';
-import { ProductType } from '../../../product-type';
+import type { TBuilder } from '@/core';
+import { ReferenceRest } from '@/models/commons';
+import { ProductType } from '@/models/product-type';
 import {
   ProductCatalogData,
   ProductCatalogDataGraphql,

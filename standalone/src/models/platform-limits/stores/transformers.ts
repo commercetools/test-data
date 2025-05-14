@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TStoreLimitsProjection, TStoreLimitsProjectionGraphql } from './types';
 
 const buildFields: (keyof TStoreLimitsProjection)[] = [

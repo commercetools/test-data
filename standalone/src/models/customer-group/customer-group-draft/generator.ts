@@ -1,5 +1,5 @@
-import { TCustomerGroupDraft } from '..//types';
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
+import { TCustomerGroupDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/customerGroups#customergroupdraft
 

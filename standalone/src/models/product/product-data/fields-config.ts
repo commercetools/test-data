@@ -1,11 +1,11 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { Category } from '../../category';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { Category } from '@/models/category';
 import {
   LocalizedString,
   ReferenceRest,
   type TReferenceGraphql,
   type TLocalizedStringGraphql,
-} from '../../commons';
+} from '@/models/commons';
 import { ProductVariantGraphql, ProductVariantRest } from '../product-variant';
 import {
   CategoryOrderHintGraphql,

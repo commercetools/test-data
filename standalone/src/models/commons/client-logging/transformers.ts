@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { buildField, Transformer } from '../../../core';
+import { buildField, Transformer } from '@/core';
 import { Reference } from '../reference';
 import { TReference } from '../reference/types';
 import type { TClientLogging, TClientLoggingGraphql } from './types';

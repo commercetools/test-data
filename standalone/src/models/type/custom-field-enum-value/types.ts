@@ -1,9 +1,6 @@
 import { CustomFieldEnumValue } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import {
-  TCtpEnumValue,
-  TCtpEnumValueInput,
-} from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpEnumValue, TCtpEnumValueInput } from '@/graphql-types';
 
 export type TCustomFieldEnumValue = CustomFieldEnumValue;
 export type TCustomFieldEnumValueDraft = CustomFieldEnumValue;

@@ -1,5 +1,5 @@
-import { TBuilder } from '../../../core';
-import type { TMcSettingsOidcSsoConfig } from '../../../graphql-types';
+import { TBuilder } from '@/core';
+import type { TMcSettingsOidcSsoConfig } from '@/graphql-types';
 
 export type TOidcSsoConfig = Omit<TMcSettingsOidcSsoConfig, '__typename'>;
 

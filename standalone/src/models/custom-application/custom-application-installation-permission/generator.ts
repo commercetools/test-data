@@ -1,7 +1,7 @@
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import { Generator, fake } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { Generator, fake } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { supportedViewOAuthScopes } from '../custom-application-permission/custom-application-permission/constants';
 import type { TCustomApplicationInstallationPermission } from './types';
 

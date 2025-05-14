@@ -1,4 +1,4 @@
-import { fake, Generator, oneOf } from '../../../../core';
+import { fake, Generator, oneOf } from '@/core';
 import { TCentPrecisionMoneyDraft } from '../types';
 
 // https://docs.commercetools.com/api/types#centprecisionmoneydraft

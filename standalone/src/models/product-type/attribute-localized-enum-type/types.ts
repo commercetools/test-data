@@ -1,5 +1,5 @@
 import { AttributeLocalizedEnumType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TAttributeLocalizedEnumValueDraftGraphql,
   TAttributeLocalizedEnumValueGraphql,

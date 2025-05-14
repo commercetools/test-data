@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TCustomViewDraft, TCustomViewDraftGraphql } from '../types';
 
 const transformers = {

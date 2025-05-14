@@ -4,13 +4,13 @@ import {
   {{it.modelName}}Draft,
   {{/if}}
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../core';
+import type { TBuilder } from '@/core';
 import {
   {{it.graphqlTypePrefix}}{{it.modelName}},
   {{@if(it.isDraftRequired === true)}}
   {{it.graphqlTypePrefix}}{{it.modelName}}Draft,
   {{/if}}
-} from '../../graphql-types';
+} from '@/graphql-types';
 
 
 export type T{{it.modelName}}Rest = {{it.modelName}};

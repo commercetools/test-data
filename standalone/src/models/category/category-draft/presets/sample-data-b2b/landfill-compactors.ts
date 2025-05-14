@@ -1,7 +1,4 @@
-import {
-  LocalizedStringDraft,
-  KeyReferenceDraft,
-} from '../../../../commons';
+import { LocalizedStringDraft, KeyReferenceDraft } from '../../../../commons';
 import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
 import empty from '../empty';
 import heavyDutySoilCompactorsRollers from './heavy-duty-soil-compactors-rollers';

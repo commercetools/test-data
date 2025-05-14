@@ -1,11 +1,7 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { ChannelGraphql } from '../../channel';
-import {
-  Reference,
-  ReferenceDraft,
-  TReferenceGraphql,
-} from '../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { ChannelGraphql } from '@/models/channel';
+import { Reference, ReferenceDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import type {
   TInventoryEntryDraftGraphql,
   TInventoryEntryDraftRest,

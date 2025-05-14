@@ -1,5 +1,5 @@
 import type { ParcelMeasurements } from '@commercetools/platform-sdk';
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 
 // https://docs.commercetools.com/api/projects/orders#ctp:api:type:ParcelMeasurements
 

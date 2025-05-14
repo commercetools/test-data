@@ -1,4 +1,4 @@
-import { Generator } from '../../../../core';
+import { Generator } from '@/core';
 import type { TCartDiscountLineItemsTargetDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/cartDiscounts#cartdiscountlineitemstarget

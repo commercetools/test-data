@@ -1,10 +1,5 @@
-import {
-  fake,
-  type TModelFieldsConfig,
-  oneOf,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { ChannelGraphql } from '../../channel';
+import { fake, type TModelFieldsConfig, oneOf } from '@/core';
+import { ChannelGraphql } from '@/models/channel';
 import {
   CentPrecisionMoney,
   LocalizedString,
@@ -12,13 +7,11 @@ import {
   Price,
   ReferenceGraphql,
   ReferenceRest,
-} from '../../commons';
-import {
-  ProductVariantRest,
-  ProductVariantGraphql,
-} from '../../product';
-import { ProductType } from '../../product-type';
-import { TaxRate } from '../../tax-category';
+} from '@/models/commons';
+import { ProductVariantRest, ProductVariantGraphql } from '@/models/product';
+import { ProductType } from '@/models/product-type';
+import { TaxRate } from '@/models/tax-category';
+import { createRelatedDates } from '@/utils';
 import { inventoryMode, lineItemMode, priceMode } from '../cart/constants';
 import { TLineItemRest, TLineItemGraphql } from './types';
 

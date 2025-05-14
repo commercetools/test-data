@@ -1,10 +1,7 @@
-import type { TBuilder } from '../../../../../core';
-import { Money, Reference } from '../../../../commons';
-import {
-  ShippingMethod,
-  ShippingRate,
-} from '../../../../shipping-method';
-import { TaxRate } from '../../../../tax-category';
+import type { TBuilder } from '@/core';
+import { Money, Reference } from '@/models/commons';
+import { ShippingMethod, ShippingRate } from '@/models/shipping-method';
+import { TaxRate } from '@/models/tax-category';
 import {
   TaxedItemPriceGraphql,
   TaxedItemPriceRest,

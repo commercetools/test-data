@@ -3,11 +3,11 @@ import type {
   ShippingMethodDraft,
   TaxCategory,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TLocalizedStringGraphql,
   type TReferenceGraphql,
-} from '../../commons';
+} from '@/models/commons';
 
 export type TShippingMethod = ShippingMethod & { taxCategory: TaxCategory };
 export type TShippingMethodRest = ShippingMethod;

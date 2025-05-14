@@ -1,5 +1,5 @@
-// import { CartDiscount } from '../../cart-discount';
-import { fake, type TModelFieldsConfig } from '../../../core';
+// import { CartDiscount } from '@/models/cart-discount';
+import { fake, type TModelFieldsConfig } from '@/core';
 import { Money, Reference, TReferenceGraphql } from '../index';
 import type {
   TDiscountedLineItemPortionGraphql,

@@ -1,8 +1,7 @@
-import { fake, Generator } from '../../core';
-import { createRelatedDates } from '../../utils';
-import { CustomApplicationInstallation } from '../custom-application';
-import { CustomViewInstallation } from '../custom-view';
-
+import { fake, Generator } from '@/core';
+import { CustomApplicationInstallation } from '@/models/custom-application';
+import { CustomViewInstallation } from '@/models/custom-view';
+import { createRelatedDates } from '@/utils';
 import * as CategoryRecommendationSettings from './category-recommendation-settings';
 import * as ImageRegex from './image-regex';
 import * as SampleDataImport from './sample-data-import';

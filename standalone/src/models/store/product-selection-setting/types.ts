@@ -3,7 +3,7 @@ import type {
   ProductSelectionSetting,
   ProductSelectionSettingDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 //ProductSelectionSettingsDraft
 export type TProductSelectionSettingDraft = ProductSelectionSettingDraft;

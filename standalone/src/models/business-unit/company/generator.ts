@@ -1,15 +1,6 @@
-import {
-  fake,
-  Generator,
-  oneOf,
-  sequence,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  Address,
-  ClientLogging,
-  KeyReference,
-} from '../../commons';
+import { fake, Generator, oneOf, sequence } from '@/core';
+import { Address, ClientLogging, KeyReference } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import {
   status,
   storeMode,

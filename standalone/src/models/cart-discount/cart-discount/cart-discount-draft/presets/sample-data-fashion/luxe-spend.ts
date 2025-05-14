@@ -1,7 +1,4 @@
-import {
-  LocalizedStringDraft,
-  MoneyDraft,
-} from '../../../../../commons';
+import { LocalizedStringDraft, MoneyDraft } from '../../../../../commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,

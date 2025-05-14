@@ -1,4 +1,4 @@
-import { fake, type TModelFieldsConfig } from '../../../../core';
+import { fake, type TModelFieldsConfig } from '@/core';
 import { MoneyDraft, Reference } from '../../index';
 import type {
   TDiscountedLineItemPortionDraftGraphql,

@@ -1,6 +1,6 @@
 import { ShippingInfo } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpShippingInfo } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpShippingInfo } from '@/graphql-types';
 
 export type TShippingInfoRest = ShippingInfo;
 

@@ -1,7 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../core/test-utils';
-import { LocalizedString } from '../commons';
+import { createBuilderSpec } from '@/core/test-utils';
+import { LocalizedString } from '@/models/commons';
 import type { TAttributeGroup, TAttributeGroupGraphql } from './types';
 import * as AttributeGroup from './index';
 

@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../../core';
-import { AssociateRole } from '../../associate-role';
+import { fake, Generator, oneOf } from '@/core';
+import { AssociateRole } from '@/models/associate-role';
 import { associateRoleInheritanceMode } from './constants';
 import { TAssociateRoleAssignmentDefault } from './types';
 

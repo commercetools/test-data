@@ -1,4 +1,4 @@
-import { Generator, oneOf } from '../../../core';
+import { Generator, oneOf } from '@/core';
 import { customReferenceTypeId } from './constants';
 import { TCustomFieldReferenceType } from './types';
 

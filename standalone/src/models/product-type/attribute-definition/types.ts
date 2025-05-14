@@ -2,11 +2,11 @@ import {
   AttributeDefinition,
   AttributeDefinitionDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 import {
   TLocalizedStringDraftGraphql,
   TLocalizedStringGraphql,
-} from '../../commons';
+} from '@/models/commons';
 
 export type TAttributeDefinition = AttributeDefinition;
 

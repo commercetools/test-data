@@ -1,8 +1,11 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import type { THighPrecisionMoney, THighPrecisionMoneyGraphql } from '../';
-import { HighPrecisionMoney } from '../';
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
+import type {
+  THighPrecisionMoney,
+  THighPrecisionMoneyGraphql,
+} from '@/models/commons';
+import { HighPrecisionMoney } from '@/models/commons';
 
 describe('builder', () => {
   it(

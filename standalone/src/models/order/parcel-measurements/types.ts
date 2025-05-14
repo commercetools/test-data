@@ -1,5 +1,5 @@
 import type { ParcelMeasurements } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TParcelMeasurements = ParcelMeasurements;
 

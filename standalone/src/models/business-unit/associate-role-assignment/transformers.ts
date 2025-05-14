@@ -1,6 +1,6 @@
 import { type AssociateRoleKeyReference } from '@commercetools/platform-sdk';
-import { Transformer } from '../../../core';
-import { KeyReference } from '../../commons';
+import { Transformer } from '@/core';
+import { KeyReference } from '@/models/commons';
 import type {
   TAssociateRoleAssignmentDefault,
   TAssociateRoleAssignmentRest,

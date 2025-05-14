@@ -1,6 +1,6 @@
 import { DiscountedLineItemPriceForQuantity } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
-import { TCtpDiscountedLineItemPriceForQuantity } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpDiscountedLineItemPriceForQuantity } from '@/graphql-types';
 
 export type TDiscountedLineItemPriceForQuantityRest =
   DiscountedLineItemPriceForQuantity;

@@ -1,7 +1,4 @@
-import {
-  MoneyDraft,
-  LocalizedStringDraft,
-} from '../../../../../commons';
+import { MoneyDraft, LocalizedStringDraft } from '../../../../../commons';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueFixedDraft,

@@ -1,6 +1,6 @@
-import { Generator, fake } from '../../core';
-import { createRelatedDates } from '../../utils';
-import { LocalizedField } from '../commons';
+import { Generator, fake } from '@/core';
+import { LocalizedField } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TCustomersSearchListMyView } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

@@ -1,6 +1,6 @@
-import { Attribute } from '..';
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { Price } from '../../commons';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { Price } from '@/models/commons';
+import { Attribute } from '@/models/product';
 import * as Image from '../image';
 import type { TProductVariantGraphql, TProductVariantRest } from './types';
 

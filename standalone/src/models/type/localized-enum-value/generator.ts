@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../core';
+import { fake, Generator } from '@/core';
 import type { TLocalizedEnumValue } from './types';
 
 const generator = Generator<TLocalizedEnumValue>({

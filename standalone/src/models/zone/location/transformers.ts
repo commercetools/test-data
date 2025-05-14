@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import { TLocation, TLocationGraphql } from './types';
 
 const transformers = {

@@ -1,17 +1,12 @@
-import {
-  buildGraphqlList,
-  fake,
-  oneOf,
-  type TModelFieldsConfig,
-} from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { buildGraphqlList, fake, oneOf, type TModelFieldsConfig } from '@/core';
 import {
   ClientLogging,
   ReferenceGraphql,
   ReferenceRest,
-} from '../../commons';
-import { ProductType } from '../../product-type';
-import { TaxCategory } from '../../tax-category';
+} from '@/models/commons';
+import { ProductType } from '@/models/product-type';
+import { TaxCategory } from '@/models/tax-category';
+import { createRelatedDates } from '@/utils';
 import {
   ProductCatalogDataGraphql,
   ProductCatalogDataRest,

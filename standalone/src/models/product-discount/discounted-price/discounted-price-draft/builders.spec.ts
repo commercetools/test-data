@@ -1,4 +1,7 @@
-import { DiscountedPriceDraftRest, DiscountedPriceDraftGraphql } from '../..';
+import {
+  DiscountedPriceDraftRest,
+  DiscountedPriceDraftGraphql,
+} from '@/models/product-discount';
 
 describe('DiscountedPriceDraft Builder', () => {
   it('should build properties for the discounted price draft REST representation', () => {

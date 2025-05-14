@@ -1,8 +1,8 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../core/test-utils';
-import { LocalizedString } from '../commons';
-import { CustomFieldBooleanType } from '../type';
+import { createBuilderSpec } from '@/core/test-utils';
+import { LocalizedString } from '@/models/commons';
+import { CustomFieldBooleanType } from '@/models/type';
 import type { TCategory, TCategoryGraphql } from './types';
 import * as Category from './index';
 

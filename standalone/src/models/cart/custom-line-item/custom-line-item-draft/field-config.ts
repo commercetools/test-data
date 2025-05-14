@@ -1,12 +1,5 @@
-import {
-  fake,
-  type TModelFieldsConfig,
-  oneOf,
-} from '../../../../core';
-import {
-  MoneyDraft,
-  LocalizedStringDraft,
-} from '../../../commons';
+import { fake, type TModelFieldsConfig, oneOf } from '@/core';
+import { MoneyDraft, LocalizedStringDraft } from '@/models/commons';
 import { customLineItemPriceMode } from '../../cart/constants';
 import {
   TCustomLineItemDraftRest,

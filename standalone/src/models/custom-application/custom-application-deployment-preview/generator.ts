@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates, slugify } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates, slugify } from '@/utils';
 import { TCustomApplicationDeploymentPreview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

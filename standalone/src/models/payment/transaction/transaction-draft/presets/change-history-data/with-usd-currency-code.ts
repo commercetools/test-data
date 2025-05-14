@@ -1,4 +1,4 @@
-import { MoneyDraft } from '../../../../../commons';
+import { MoneyDraft } from '@/models/commons';
 import type { TTransactionDraftBuilder } from '../../../types';
 import * as TransactionDraft from '../../index';
 

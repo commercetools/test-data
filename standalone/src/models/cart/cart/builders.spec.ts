@@ -1,8 +1,8 @@
-import type { TBuilder } from '../../../core';
-import { Company } from '../../business-unit';
-import { KeyReference, Reference } from '../../commons';
-import { CustomerGroup } from '../../customer-group';
-import { CustomFieldBooleanType } from '../../type';
+import type { TBuilder } from '@/core';
+import { Company } from '@/models/business-unit';
+import { KeyReference, Reference } from '@/models/commons';
+import { CustomerGroup } from '@/models/customer-group';
+import { CustomFieldBooleanType } from '@/models/type';
 import { LineItem } from '../line-item';
 import { cartState } from './constants';
 import type { TCart, TCartGraphql, TCartRest } from './types';

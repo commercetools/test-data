@@ -1,5 +1,5 @@
-import { Transformer } from '../../../core';
-import { KeyReference } from '../../commons';
+import { Transformer } from '@/core';
+import { KeyReference } from '@/models/commons';
 import * as Company from '../company';
 import type { TDivision, TDivisionGraphql } from './types';
 

@@ -1,4 +1,4 @@
-import { fake, Generator } from '../../../../core';
+import { fake, Generator } from '@/core';
 import * as AppliedActionRight from '../applied-action-right';
 import * as AppliedDataFence from '../applied-data-fence';
 import * as AppliedPermission from '../applied-permission';

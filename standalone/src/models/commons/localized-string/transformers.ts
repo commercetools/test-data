@@ -1,4 +1,4 @@
-import { Transformer } from '../../../core';
+import { Transformer } from '@/core';
 import type { TLocalizedString, TLocalizedStringGraphql } from './types';
 
 const isNil = (value: string | undefined) =>

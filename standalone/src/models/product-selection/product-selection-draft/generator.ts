@@ -1,5 +1,5 @@
-import { fake, Generator, oneOf } from '../../../core';
-import { LocalizedStringDraft } from '../../commons';
+import { fake, Generator, oneOf } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import { TProductSelectionDraft } from '../types';
 
 //https://docs.commercetools.com/api/projects/product-selections#productselectiondraft

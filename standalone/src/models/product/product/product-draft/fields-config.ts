@@ -1,14 +1,10 @@
-import {
-  fake,
-  oneOf,
-  type TModelFieldsConfig,
-} from '../../../../core';
+import { fake, oneOf, type TModelFieldsConfig } from '@/core';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,
   ReferenceGraphql,
   ReferenceRest,
-} from '../../../commons';
+} from '@/models/commons';
 import {
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,

@@ -1,9 +1,6 @@
-import { fake, Generator, sequence } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../../commons';
+import { fake, Generator, sequence } from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import * as CartDiscountValueAbsolute from '../cart-discount-value-absolute';
 import * as CartDiscountValueFixed from '../cart-discount-value-fixed';
 import * as CartDiscountValueGiftLineItem from '../cart-discount-value-gift-line-item';

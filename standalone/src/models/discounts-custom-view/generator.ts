@@ -1,7 +1,7 @@
-import { fake, Generator, oneOf } from '../../core';
-import { createRelatedDates } from '../../utils';
-import { LocalizedString } from '../commons';
-import { FilterValues } from '../filter-values';
+import { fake, Generator, oneOf } from '@/core';
+import { LocalizedString } from '@/models/commons';
+import { FilterValues } from '@/models/filter-values';
+import { createRelatedDates } from '@/utils';
 import { TDiscountsCustomView } from './types';
 
 const [getCreatedAt, getUpdatedAt] = createRelatedDates();

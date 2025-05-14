@@ -1,9 +1,6 @@
-import { Generator, fake, sequence } from '../../core';
-import { createRelatedDates } from '../../utils';
-import {
-  ClientLogging,
-  LocalizedString,
-} from '../commons';
+import { Generator, fake, sequence } from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import type { TCategory } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

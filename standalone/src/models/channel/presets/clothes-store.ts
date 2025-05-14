@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import { LocalizedString } from '../../commons';
+import type { TBuilder } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import { Channel, ChannelGraphql, ChannelRest } from '../index';
 import type { TChannel, TChannelGraphql, TChannelRest } from '../types';
 

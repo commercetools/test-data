@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import { TCtpReference } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import { TCtpReference } from '@/graphql-types';
 
 // export interface BusinessUnitReference {
 //     readonly typeId: 'business-unit';

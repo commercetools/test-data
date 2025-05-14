@@ -1,10 +1,10 @@
+import { TBuilder } from '@/core';
+import { PriceDraft } from '@/models/commons';
 import {
   ProductVariantDraft,
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
-} from '..';
-import { TBuilder } from '../../../../../core';
-import { PriceDraft } from '../../../../commons';
+} from '../../product-variant-draft';
 // import ProductVariantDraft from '../builder';
 
 // const withPrices = () =>

@@ -1,5 +1,5 @@
 import type { AttributeNumberType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAttributeNumberType = AttributeNumberType;
 export type TAttributeNumberTypeDraft = AttributeNumberType;

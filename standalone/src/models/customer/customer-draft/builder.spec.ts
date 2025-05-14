@@ -1,6 +1,6 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-import { createBuilderSpec } from '../../../core/test-utils';
+import { createBuilderSpec } from '@/core/test-utils';
 import type { TCustomerDraft, TCustomerDraftGraphql } from '../types';
 import * as CustomerDraft from './index';
 

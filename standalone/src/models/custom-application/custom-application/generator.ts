@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates, slugify } from '../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates, slugify } from '@/utils';
 import * as CustomApplicationDeploymentPreview from '../custom-application-deployment-preview';
 import * as CustomApplicationMenuLink from '../custom-application-menu-link';
 import * as CustomApplicationPermission from '../custom-application-permission/custom-application-permission';

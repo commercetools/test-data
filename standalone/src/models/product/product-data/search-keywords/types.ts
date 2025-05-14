@@ -1,6 +1,6 @@
 import type { SearchKeywords } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../../core';
-import type { TCtpSearchKeywords } from '../../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TCtpSearchKeywords } from '@/graphql-types';
 
 export type TSearchKeywordsRest = SearchKeywords;
 export type TSearchKeywordsGraphql = TCtpSearchKeywords;

@@ -1,9 +1,5 @@
-import {
-  fake,
-  type TModelFieldsConfig,
-  oneOf,
-} from '../../../../core';
-import { ReferenceDraft, AddressDraft } from '../../../commons';
+import { fake, type TModelFieldsConfig, oneOf } from '@/core';
+import { ReferenceDraft, AddressDraft } from '@/models/commons';
 import { LineItemDraft } from '../../index';
 import {
   inventoryMode,

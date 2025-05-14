@@ -2,12 +2,9 @@ import {
   ProductVariant,
   ProductVariantDraft,
 } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
-import {
-  TCtpProductVariant,
-  TCtpProductVariantInput,
-} from '../../../graphql-types';
+import { TCtpProductVariant, TCtpProductVariantInput } from '@/graphql-types';
 
 /**
  * @deprecated use `TProductVariantRest` or `TProductVariantGraphql` instead

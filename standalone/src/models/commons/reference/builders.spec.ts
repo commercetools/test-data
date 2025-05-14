@@ -3,7 +3,7 @@ import {
   fake,
   TBuilder,
   TModelFieldsConfig,
-} from '../../../core';
+} from '@/core';
 import type { TReferenceGraphql, TReferenceRest } from './types';
 import { Reference, ReferenceGraphql, ReferenceRest } from './index';
 

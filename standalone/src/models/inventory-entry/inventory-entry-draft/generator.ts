@@ -1,6 +1,6 @@
-import { fake, Generator } from '../../../core';
-import { createRelatedDates } from '../../../utils';
-import { ReferenceDraft } from '../../commons';
+import { fake, Generator } from '@/core';
+import { ReferenceDraft } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TInventoryEntryDraft } from '../types';
 
 const [getFutureDate] = createRelatedDates();

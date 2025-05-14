@@ -1,4 +1,4 @@
-import { CartDiscountLineItemsTargetDraft } from '../../../cart-discount';
+import { CartDiscountLineItemsTargetDraft } from '@/models/cart-discount';
 import { DirectDiscountDraftRest, DirectDiscountDraftGraphql } from './index';
 
 describe('DirectDiscountDraft Builder', () => {

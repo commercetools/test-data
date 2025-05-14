@@ -1,4 +1,4 @@
-import { Transformer } from '../../core';
+import { Transformer } from '@/core';
 import type { TCustomer, TCustomerGraphql } from './types';
 
 const commonBuildFields: (keyof TCustomer)[] = [

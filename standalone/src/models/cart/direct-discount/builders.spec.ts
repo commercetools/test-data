@@ -1,4 +1,4 @@
-import { CartDiscountLineItemsTarget } from '../../cart-discount';
+import { CartDiscountLineItemsTarget } from '@/models/cart-discount';
 import { DirectDiscountRest, DirectDiscountGraphql } from './index';
 
 describe('DirectDiscount Builder', () => {

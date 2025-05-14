@@ -1,11 +1,6 @@
-import {
-  sequence,
-  fake,
-  Generator,
-  oneOf,
-} from '../../core';
-import { createRelatedDates } from '../../utils';
-import { ClientLogging } from '../commons';
+import { sequence, fake, Generator, oneOf } from '@/core';
+import { ClientLogging } from '@/models/commons';
+import { createRelatedDates } from '@/utils';
 import { TReview } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

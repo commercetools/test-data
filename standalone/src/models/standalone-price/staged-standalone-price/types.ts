@@ -1,5 +1,5 @@
 import { StagedStandalonePrice } from '@commercetools/platform-sdk';
-import { TBuilder } from '../../../core';
+import { TBuilder } from '@/core';
 
 export type TStagedStandalonePrice = StagedStandalonePrice;
 

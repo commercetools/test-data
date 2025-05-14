@@ -1,8 +1,5 @@
-import { Transformer } from '../../../core';
-import {
-  LocalizedString,
-  TLocalizedStringGraphql,
-} from '../../commons';
+import { Transformer } from '@/core';
+import { LocalizedString, TLocalizedStringGraphql } from '@/models/commons';
 
 import { TLocalizedEnumValue, TLocalizedEnumValueGraphql } from './types';
 

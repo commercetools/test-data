@@ -1,4 +1,4 @@
-import { fake, Generator, oneOf } from '../../../core';
+import { fake, Generator, oneOf } from '@/core';
 import { TMoney } from './types';
 
 // https://docs.commercetools.com/api/types#money

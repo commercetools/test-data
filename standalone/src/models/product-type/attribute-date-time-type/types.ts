@@ -1,5 +1,5 @@
 import type { AttributeDateTimeType } from '@commercetools/platform-sdk';
-import type { TBuilder } from '../../../core';
+import type { TBuilder } from '@/core';
 
 export type TAttributeDateTimeType = AttributeDateTimeType;
 export type TAttributeDateTimeTypeDraft = AttributeDateTimeType;

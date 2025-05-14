@@ -1,4 +1,4 @@
-import { Generator, fake } from '../../../../core';
+import { Generator, fake } from '@/core';
 import type { TTaxRateDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/taxCategories#taxratedraft

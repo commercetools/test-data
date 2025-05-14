@@ -1,5 +1,5 @@
-import { fake, Generator, sequence } from '../../../core';
-import { Reference } from '../../commons';
+import { fake, Generator, sequence } from '@/core';
+import { Reference } from '@/models/commons';
 import { TQuoteRequestDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/quote-requests#quoterequestdraft

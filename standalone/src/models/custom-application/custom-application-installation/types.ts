@@ -1,5 +1,5 @@
-import type { TBuilder } from '../../../core';
-import type { TMcSettingsRestrictedCustomApplicationInstallationForOrganization } from '../../../graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsRestrictedCustomApplicationInstallationForOrganization } from '@/graphql-types';
 
 export type TCustomApplicationInstallationGraphql =
   TMcSettingsRestrictedCustomApplicationInstallationForOrganization;

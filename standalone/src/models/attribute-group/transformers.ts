@@ -1,5 +1,5 @@
-import { Transformer } from '../../core';
-import { LocalizedString } from '../commons';
+import { Transformer } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import type { TAttributeGroup, TAttributeGroupGraphql } from './types';
 const transformers = {
   rest: Transformer<TAttributeGroup, TAttributeGroup>('rest', {

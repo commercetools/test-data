@@ -1,4 +1,4 @@
-import { Transformer, buildField } from '../../../core';
+import { Transformer, buildField } from '@/core';
 import { TAttributeEnumTypeGraphql, TAttributeEnumType } from './types';
 
 const transformers = {
