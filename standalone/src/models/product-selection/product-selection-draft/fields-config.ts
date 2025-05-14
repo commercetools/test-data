@@ -1,4 +1,5 @@
 import { fake, TModelFieldsConfig } from '../../../core';
+import { LocalizedString } from '../../commons';
 import {
   TProductSelectionDraftGraphql,
   TProductSelectionDraftRest,
@@ -7,7 +8,7 @@ import {
 export const restFieldsConfig: TModelFieldsConfig<TProductSelectionDraftRest> =
   {
     fields: {
-      name: fake((f) => f.lorem.word()),
+      name: fake(() => LocalizedString.random()),
       key: fake((f) => f.lorem.slug()),
       custom: null,
       mode: 'Individual',
@@ -17,7 +18,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductSelectionDraftRest> =
 export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionDraftGraphql> =
   {
     fields: {
-      name: fake((f) => f.lorem.word()),
+      name: fake((f) => LocalizedString.random()),
       key: fake((f) => f.lorem.slug()),
       custom: null,
       mode: 'Individual',

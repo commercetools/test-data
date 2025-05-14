@@ -14,7 +14,7 @@ const validateModel = (
   expect(model).toEqual(
     expect.objectContaining({
       key: expect.any(String),
-      name: expect.any(String),
+      name: expect.any(Object),
       mode: expect.any(String),
       custom: expect.any(Object),
     })
