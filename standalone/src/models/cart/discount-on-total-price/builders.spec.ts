@@ -25,11 +25,11 @@ describe('DiscountOnTotalPrice Builder', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
+        discountedAmount: expect.objectContaining({
+          __typename: 'Money',
+        }),
         includedDiscounts: expect.arrayContaining([
           expect.objectContaining({
-            discountedAmount: expect.objectContaining({
-              __typename: 'Money',
-            }),
             __typename: 'DiscountedTotalPricePortion',
           }),
         ]),
