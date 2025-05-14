@@ -1,8 +1,8 @@
 import { MoneyDraft } from '@/models/commons';
-import * as PaymentDraft from '../..';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft } from '../../../../transaction';
 import type { TPaymentDraftBuilder } from '../../../types';
+import * as PaymentDraft from '../../index';
 
 const withUsdCurrencyCode = (): TPaymentDraftBuilder =>
   PaymentDraft.random()

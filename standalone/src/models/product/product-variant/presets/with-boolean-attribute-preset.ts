@@ -5,7 +5,11 @@ import {
   AttributeBooleanType,
   AttributeDefinition,
 } from '@/models/product-type';
-import { ProductVariant, ProductVariantGraphql, ProductVariantRest } from '..';
+import {
+  ProductVariant,
+  ProductVariantGraphql,
+  ProductVariantRest,
+} from '../index';
 import {
   TProductVariant,
   TProductVariantGraphql,

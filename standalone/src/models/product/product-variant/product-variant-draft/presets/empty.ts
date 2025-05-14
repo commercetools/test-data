@@ -3,7 +3,7 @@ import {
   ProductVariantDraft,
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
-} from '..';
+} from '../../product-variant-draft';
 import {
   TProductVariantDraft,
   TProductVariantDraftGraphql,

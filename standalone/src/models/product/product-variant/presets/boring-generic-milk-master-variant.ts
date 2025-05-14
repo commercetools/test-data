@@ -1,6 +1,10 @@
 import { TBuilder } from '@/core';
 import { Attribute } from '@/models/product';
-import { ProductVariant, ProductVariantGraphql, ProductVariantRest } from '..';
+import {
+  ProductVariant,
+  ProductVariantGraphql,
+  ProductVariantRest,
+} from '../index';
 import {
   TProductVariant,
   TProductVariantGraphql,

@@ -1,4 +1,3 @@
-import * as PaymentDraft from '../..';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
@@ -10,6 +9,7 @@ import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TransactionDraft, constants } from '../../../../transaction';
 import { TPaymentDraftBuilder } from '../../../types';
+import * as PaymentDraft from '../../index';
 
 const customerJenniferJones = CustomerDraft.presets.sampleDataB2CLifestyle
   .jenniferJones()

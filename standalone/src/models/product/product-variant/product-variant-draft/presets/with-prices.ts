@@ -4,7 +4,7 @@ import {
   ProductVariantDraft,
   ProductVariantDraftGraphql,
   ProductVariantDraftRest,
-} from '..';
+} from '../../product-variant-draft';
 // import ProductVariantDraft from '../builder';
 
 // const withPrices = () =>
