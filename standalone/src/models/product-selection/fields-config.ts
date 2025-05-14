@@ -5,6 +5,7 @@ import {
 } from '../../commons';
 import { fake, oneOf, sequence, TModelFieldsConfig } from '../../core';
 import { createRelatedDates } from '../../utils';
+import { productSelectionMode } from './constants';
 import { TProductSelectionRest, TProductSelectionGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -15,7 +16,7 @@ const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),
   name: fake(() => LocalizedString.random()),
   productCount: fake((f) => f.number.int()),
-  mode: oneOf('Individual', 'IndividualExclusion'),
+  mode: oneOf(...Object.values(productSelectionMode)),
   custom: null,
   createdAt: fake(getOlderDate),
   createdBy: fake(() => ClientLogging.random()),

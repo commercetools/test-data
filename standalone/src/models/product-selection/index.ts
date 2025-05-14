@@ -7,6 +7,7 @@ import * as modelPresets from './presets';
 
 export * from './types';
 export * from './product-selection-draft';
+export * from './constants';
 
 export const ProductSelectionRest = {
   random: RestModelBuilder,
