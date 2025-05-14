@@ -1,4 +1,7 @@
-import ManageOnlyPermissions from './manage-only-permissions';
-import ViewOnlyPermissions from './view-only-permissions';
+import * as ManageOnlyPermissionsDraft from './manage-only-permissions-draft';
+import * as ViewOnlyPermissionsDraft from './view-only-permissions-draft';
 
-export { ViewOnlyPermissions, ManageOnlyPermissions };
+export const graphqlPresets = {
+  manageOnly: ManageOnlyPermissionsDraft.graphqlPreset,
+  viewOnly: ViewOnlyPermissionsDraft.graphqlPreset,
+};
