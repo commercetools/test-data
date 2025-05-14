@@ -1,5 +1,5 @@
 import { fake, Generator } from '@/core';
-import { AttributeDefinitionDraft } from '@/models/product-type';
+import { AttributeDefinitionDraft } from '../../attribute-definition';
 import type { TProductTypeDraft } from '../types';
 
 // https://docs.commercetools.com/api/projects/productTypes#producttypedraft

@@ -27,9 +27,7 @@ describe('builder', () => {
       expect.objectContaining({
         set: {
           elementType: {
-            boolean: {
-              dummy: null,
-            },
+            dummy: null,
           },
         },
       })

@@ -1,24 +1,34 @@
 import type { AttributeReferenceType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import {
+  TCtpReferenceAttributeDefinitionType,
+  TCtpReferenceTypeDefinitionDraft,
+} from '@/graphql-types';
 
+/**
+ * @deprecated use `TAttributeReferenceTypeRest` or `TAttributeReferenceTypeGraphql` instead
+ */
 export type TAttributeReferenceType = AttributeReferenceType;
+/**
+ * @deprecated use `TAttributeReferenceTypeRest` or `TAttributeReferenceTypeGraphql` instead
+ */
 export type TAttributeReferenceTypeDraft = AttributeReferenceType;
 
-export type TAttributeReferenceTypeGraphql = AttributeReferenceType & {
-  __typename: 'ReferenceAttributeDefinitionType';
-};
+// REST types
+export type TAttributeReferenceTypeRest = AttributeReferenceType;
+export type TAttributeReferenceTypeDraftRest = AttributeReferenceType;
 
-export type TAttributeReferenceTypeDraftGraphql = {
-  reference: {
-    referenceTypeId: TAttributeReferenceTypeGraphql['referenceTypeId'];
-  };
-};
+// GraphQL types
+export type TAttributeReferenceTypeGraphql =
+  TCtpReferenceAttributeDefinitionType;
+export type TAttributeReferenceTypeDraftGraphql =
+  TCtpReferenceTypeDefinitionDraft;
 
-export type TAttributeReferenceTypeBuilder = TBuilder<TAttributeReferenceType>;
-export type TAttributeReferenceTypeDraftBuilder =
-  TBuilder<TAttributeReferenceTypeDraft>;
-
-export type TCreateAttributeReferenceTypeBuilder =
-  () => TAttributeReferenceTypeBuilder;
-export type TCreateAttributeReferenceTypeDraftBuilder =
-  () => TAttributeReferenceTypeDraftBuilder;
+// Builder type
+export type TCreateAttributeReferenceTypeBuilder<
+  TAttributeReferenceTypeModel extends
+    | TAttributeReferenceTypeRest
+    | TAttributeReferenceTypeDraftRest
+    | TAttributeReferenceTypeGraphql
+    | TAttributeReferenceTypeDraftGraphql,
+> = () => TBuilder<TAttributeReferenceTypeModel>;

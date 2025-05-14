@@ -1,25 +1,21 @@
-import { AttributePlainEnumValue } from '@/models/product-type';
-import AttributeEnumType from '../builder';
+import * as allSizesEnumPresets from './all-sizes-enum';
+import * as bigSizesEnumPresets from './big-sizes-enum';
+import * as smallSizesEnumPresets from './small-sizes-enum';
 
-const presets = {
-  allSizesEnum: () =>
-    AttributeEnumType().values([
-      AttributePlainEnumValue.presets.s(),
-      AttributePlainEnumValue.presets.m(),
-      AttributePlainEnumValue.presets.l(),
-      AttributePlainEnumValue.presets.xl(),
-    ]),
-  smallSizesEnum: () =>
-    AttributeEnumType().values([
-      AttributePlainEnumValue.presets.s(),
-      AttributePlainEnumValue.presets.m(),
-    ]),
-
-  bigSizesEnum: () =>
-    AttributeEnumType().values([
-      AttributePlainEnumValue.presets.l(),
-      AttributePlainEnumValue.presets.xl(),
-    ]),
+export const restPresets = {
+  allSizesEnum: allSizesEnumPresets.restPreset,
+  smallSizesEnum: smallSizesEnumPresets.restPreset,
+  bigSizesEnum: bigSizesEnumPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  allSizesEnum: allSizesEnumPresets.graphqlPreset,
+  smallSizesEnum: smallSizesEnumPresets.graphqlPreset,
+  bigSizesEnum: bigSizesEnumPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  allSizesEnum: allSizesEnumPresets.compatPreset,
+  smallSizesEnum: smallSizesEnumPresets.compatPreset,
+  bigSizesEnum: bigSizesEnumPresets.compatPreset,
+};

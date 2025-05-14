@@ -1,8 +1,12 @@
 export const attributeReferenceTypeId = {
+  AssociateRole: 'associate-role',
+  BusinessUnit: 'business-unit',
   Cart: 'cart',
+  CartDiscount: 'cart-discount',
   Category: 'category',
   Channel: 'channel',
   Customer: 'customer',
+  CustomerGroup: 'customer-group',
   KeyValueDocument: 'key-value-document',
   Order: 'order',
   Product: 'product',
