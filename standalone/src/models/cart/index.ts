@@ -2,6 +2,8 @@
 export * from './custom-line-item/types';
 export * from './cart/types';
 export * from './line-item/types';
+export * from './discount-on-total-price/types';
+export * from './discounted-total-price-portion/types';
 
 // Export models
 export * from './cart';
@@ -9,6 +11,8 @@ export * from './cart/cart-draft';
 export * from './custom-line-item';
 export * from './custom-line-item/custom-line-item-draft';
 export * from './direct-discount';
+export * from './discount-on-total-price';
+export * from './discounted-total-price-portion';
 export * from './discounted-line-item-portion';
 export * from './discounted-line-item-price';
 export * from './discounted-line-item-price-for-quantity';
