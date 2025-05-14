@@ -1,20 +1,29 @@
-import { AttributePlainEnumValue } from '@commercetools/platform-sdk';
+import type { AttributePlainEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '../../../core';
+import {
+  TCtpPlainEnumValue,
+  TCtpPlainEnumValueDraft,
+} from '../../../graphql-types';
 
+/**
+ * @deprecated use `TAttributePlainEnumValueRest` or `TAttributePlainEnumValueGraphql` instead
+ */
 export type TAttributePlainEnumValue = AttributePlainEnumValue;
+/**
+ * @deprecated use `TAttributePlainEnumValueRest` or `TAttributePlainEnumValueGraphql` instead
+ */
 export type TAttributePlainEnumValueDraft = AttributePlainEnumValue;
 
-export type TAttributePlainEnumValueGraphql = TAttributePlainEnumValue & {
-  __typename: 'PlainEnumValue';
-};
-export type TAttributePlainEnumValueDraftGraphql = AttributePlainEnumValue;
+export type TAttributePlainEnumValueRest = AttributePlainEnumValue;
+export type TAttributePlainEnumValueDraftRest = AttributePlainEnumValue;
 
-export type TAttributePlainEnumValueBuilder =
-  TBuilder<TAttributePlainEnumValue>;
-export type TCreateAttributePlainEnumValueBuilder =
-  () => TAttributePlainEnumValueBuilder;
+export type TAttributePlainEnumValueGraphql = TCtpPlainEnumValue;
+export type TAttributePlainEnumValueDraftGraphql = TCtpPlainEnumValueDraft;
 
-export type TAttributePlainEnumValueDraftBuilder =
-  TBuilder<TAttributePlainEnumValueDraft>;
-export type TCreateAttributePlainEnumValueDraftBuilder =
-  () => TAttributePlainEnumValueDraftBuilder;
+export type TCreateAttributePlainEnumValueBuilder<
+  TAttributePlainEnumValueModel extends
+    | TAttributePlainEnumValueRest
+    | TAttributePlainEnumValueDraftRest
+    | TAttributePlainEnumValueGraphql
+    | TAttributePlainEnumValueDraftGraphql,
+> = () => TBuilder<TAttributePlainEnumValueModel>;

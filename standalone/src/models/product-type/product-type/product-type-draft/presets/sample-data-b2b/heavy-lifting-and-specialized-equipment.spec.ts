@@ -336,9 +336,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "iso45001",
             "type": {
-              "boolean": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -450,26 +448,25 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "mobility",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "tracked",
-                    "label": "Tracked",
-                  },
-                  {
-                    "key": "wheeled",
-                    "label": "Wheeled",
-                  },
-                  {
-                    "key": "fixed",
-                    "label": "Fixed",
-                  },
-                  {
-                    "key": "marine",
-                    "label": "Marine",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "tracked",
+                  "label": "Tracked",
+                },
+                {
+                  "key": "wheeled",
+                  "label": "Wheeled",
+                },
+                {
+                  "key": "fixed",
+                  "label": "Fixed",
+                },
+                {
+                  "key": "marine",
+                  "label": "Marine",
+                },
+              ],
             },
           },
           {
@@ -522,145 +519,143 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "color",
             "type": {
-              "lenum": {
-                "values": [
-                  {
-                    "key": "RED",
-                    "label": [
-                      {
-                        "locale": "de-DE",
-                        "value": "Rot",
-                      },
-                      {
-                        "locale": "it-IT",
-                        "value": "Rosso",
-                      },
-                      {
-                        "locale": "nl-NL",
-                        "value": "Rood",
-                      },
-                      {
-                        "locale": "fr-FR",
-                        "value": "Rouge",
-                      },
-                      {
-                        "locale": "en-AU",
-                        "value": "Red",
-                      },
-                      {
-                        "locale": "es-ES",
-                        "value": "Rojo",
-                      },
-                      {
-                        "locale": "en-GB",
-                        "value": "Red",
-                      },
-                      {
-                        "locale": "en-NZ",
-                        "value": "Red",
-                      },
-                      {
-                        "locale": "pt-PT",
-                        "value": "Vermelho",
-                      },
-                      {
-                        "locale": "en-US",
-                        "value": "Red",
-                      },
-                    ],
-                  },
-                  {
-                    "key": "BLUE",
-                    "label": [
-                      {
-                        "locale": "de-DE",
-                        "value": "Blau",
-                      },
-                      {
-                        "locale": "it-IT",
-                        "value": "Blu",
-                      },
-                      {
-                        "locale": "nl-NL",
-                        "value": "Blauw",
-                      },
-                      {
-                        "locale": "fr-FR",
-                        "value": "Bleu",
-                      },
-                      {
-                        "locale": "en-AU",
-                        "value": "Blue",
-                      },
-                      {
-                        "locale": "es-ES",
-                        "value": "Azul",
-                      },
-                      {
-                        "locale": "en-GB",
-                        "value": "Blue",
-                      },
-                      {
-                        "locale": "en-NZ",
-                        "value": "Blue",
-                      },
-                      {
-                        "locale": "pt-PT",
-                        "value": "Azul",
-                      },
-                      {
-                        "locale": "en-US",
-                        "value": "Blue",
-                      },
-                    ],
-                  },
-                  {
-                    "key": "GREEN",
-                    "label": [
-                      {
-                        "locale": "de-DE",
-                        "value": "Grün",
-                      },
-                      {
-                        "locale": "it-IT",
-                        "value": "Verde",
-                      },
-                      {
-                        "locale": "nl-NL",
-                        "value": "Groen",
-                      },
-                      {
-                        "locale": "fr-FR",
-                        "value": "Vert",
-                      },
-                      {
-                        "locale": "en-AU",
-                        "value": "Green",
-                      },
-                      {
-                        "locale": "es-ES",
-                        "value": "Verde",
-                      },
-                      {
-                        "locale": "en-GB",
-                        "value": "Green",
-                      },
-                      {
-                        "locale": "en-NZ",
-                        "value": "Green",
-                      },
-                      {
-                        "locale": "pt-PT",
-                        "value": "Verde",
-                      },
-                      {
-                        "locale": "en-US",
-                        "value": "Green",
-                      },
-                    ],
-                  },
-                ],
-              },
+              "values": [
+                {
+                  "key": "RED",
+                  "label": [
+                    {
+                      "locale": "de-DE",
+                      "value": "Rot",
+                    },
+                    {
+                      "locale": "it-IT",
+                      "value": "Rosso",
+                    },
+                    {
+                      "locale": "nl-NL",
+                      "value": "Rood",
+                    },
+                    {
+                      "locale": "fr-FR",
+                      "value": "Rouge",
+                    },
+                    {
+                      "locale": "en-AU",
+                      "value": "Red",
+                    },
+                    {
+                      "locale": "es-ES",
+                      "value": "Rojo",
+                    },
+                    {
+                      "locale": "en-GB",
+                      "value": "Red",
+                    },
+                    {
+                      "locale": "en-NZ",
+                      "value": "Red",
+                    },
+                    {
+                      "locale": "pt-PT",
+                      "value": "Vermelho",
+                    },
+                    {
+                      "locale": "en-US",
+                      "value": "Red",
+                    },
+                  ],
+                },
+                {
+                  "key": "BLUE",
+                  "label": [
+                    {
+                      "locale": "de-DE",
+                      "value": "Blau",
+                    },
+                    {
+                      "locale": "it-IT",
+                      "value": "Blu",
+                    },
+                    {
+                      "locale": "nl-NL",
+                      "value": "Blauw",
+                    },
+                    {
+                      "locale": "fr-FR",
+                      "value": "Bleu",
+                    },
+                    {
+                      "locale": "en-AU",
+                      "value": "Blue",
+                    },
+                    {
+                      "locale": "es-ES",
+                      "value": "Azul",
+                    },
+                    {
+                      "locale": "en-GB",
+                      "value": "Blue",
+                    },
+                    {
+                      "locale": "en-NZ",
+                      "value": "Blue",
+                    },
+                    {
+                      "locale": "pt-PT",
+                      "value": "Azul",
+                    },
+                    {
+                      "locale": "en-US",
+                      "value": "Blue",
+                    },
+                  ],
+                },
+                {
+                  "key": "GREEN",
+                  "label": [
+                    {
+                      "locale": "de-DE",
+                      "value": "Grün",
+                    },
+                    {
+                      "locale": "it-IT",
+                      "value": "Verde",
+                    },
+                    {
+                      "locale": "nl-NL",
+                      "value": "Groen",
+                    },
+                    {
+                      "locale": "fr-FR",
+                      "value": "Vert",
+                    },
+                    {
+                      "locale": "en-AU",
+                      "value": "Green",
+                    },
+                    {
+                      "locale": "es-ES",
+                      "value": "Verde",
+                    },
+                    {
+                      "locale": "en-GB",
+                      "value": "Green",
+                    },
+                    {
+                      "locale": "en-NZ",
+                      "value": "Green",
+                    },
+                    {
+                      "locale": "pt-PT",
+                      "value": "Verde",
+                    },
+                    {
+                      "locale": "en-US",
+                      "value": "Green",
+                    },
+                  ],
+                },
+              ],
             },
           },
         ],

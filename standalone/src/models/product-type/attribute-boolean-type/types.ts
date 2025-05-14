@@ -1,23 +1,29 @@
 import type { AttributeBooleanType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '../../../core';
+import {
+  TCtpBooleanAttributeDefinitionType,
+  TCtpSimpleAttributeTypeDraft,
+} from '../../../graphql-types';
 
+/**
+ * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead
+ */
 export type TAttributeBooleanType = AttributeBooleanType;
+/**
+ * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead
+ */
 export type TAttributeBooleanTypeDraft = AttributeBooleanType;
 
-export type TAttributeBooleanTypeGraphql = AttributeBooleanType & {
-  __typename: 'BooleanAttributeDefinitionType';
-};
-export type TAttributeBooleanTypeDraftGraphql = {
-  boolean: {
-    dummy: string | null;
-  };
-};
+export type TAttributeBooleanTypeRest = AttributeBooleanType;
+export type TAttributeBooleanTypeDraftRest = AttributeBooleanType;
 
-export type TAttributeBooleanTypeBuilder = TBuilder<TAttributeBooleanType>;
-export type TAttributeBooleanTypeDraftBuilder =
-  TBuilder<TAttributeBooleanTypeDraft>;
+export type TAttributeBooleanTypeGraphql = TCtpBooleanAttributeDefinitionType;
+export type TAttributeBooleanTypeDraftGraphql = TCtpSimpleAttributeTypeDraft;
 
-export type TCreateAttributeBooleanTypeBuilder =
-  () => TAttributeBooleanTypeBuilder;
-export type TCreateAttributeBooleanTypeDraftBuilder =
-  () => TAttributeBooleanTypeDraftBuilder;
+export type TCreateAttributeBooleanTypeBuilder<
+  TAttributeBooleanTypeModel extends
+    | TAttributeBooleanTypeRest
+    | TAttributeBooleanTypeDraftRest
+    | TAttributeBooleanTypeGraphql
+    | TAttributeBooleanTypeDraftGraphql,
+> = () => TBuilder<TAttributeBooleanTypeModel>;

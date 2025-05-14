@@ -117,22 +117,21 @@ describe(`with dresses preset`, () => {
             ],
             "name": "length",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "Maxi",
-                    "label": "Maxi",
-                  },
-                  {
-                    "key": "Knee Length",
-                    "label": "Knee Length",
-                  },
-                  {
-                    "key": "Mini",
-                    "label": "Mini",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "Maxi",
+                  "label": "Maxi",
+                },
+                {
+                  "key": "Knee Length",
+                  "label": "Knee Length",
+                },
+                {
+                  "key": "Mini",
+                  "label": "Mini",
+                },
+              ],
             },
           },
           {
@@ -154,22 +153,21 @@ describe(`with dresses preset`, () => {
             ],
             "name": "color",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "White",
-                    "label": "White",
-                  },
-                  {
-                    "key": "Pink",
-                    "label": "Pink",
-                  },
-                  {
-                    "key": "Floral",
-                    "label": "Floral",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "White",
+                  "label": "White",
+                },
+                {
+                  "key": "Pink",
+                  "label": "Pink",
+                },
+                {
+                  "key": "Floral",
+                  "label": "Floral",
+                },
+              ],
             },
           },
         ],

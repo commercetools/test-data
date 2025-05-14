@@ -1,5 +1,4 @@
 import { Transformer } from '../../../../core';
-import { TAttributeEnumType } from '../../attribute-enum-type';
 import {
   TAttributeTimeTypeDraftGraphql,
   TAttributeTimeTypeDraft,

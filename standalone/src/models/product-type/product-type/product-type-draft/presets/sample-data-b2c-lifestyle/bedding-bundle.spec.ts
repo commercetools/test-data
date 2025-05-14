@@ -115,9 +115,7 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-description",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -138,9 +136,7 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-spec",
             "type": {
-              "ltext": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {

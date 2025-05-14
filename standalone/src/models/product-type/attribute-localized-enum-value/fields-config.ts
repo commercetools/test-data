@@ -1,0 +1,49 @@
+import { LocalizedString } from '../../../commons';
+import { fake, TModelFieldsConfig } from '../../../core';
+import { TCtpLocalizedString } from '../../../graphql-types';
+import {
+  TAttributeLocalizedEnumValueGraphql,
+  TAttributeLocalizedEnumValueRest,
+} from './types';
+
+// https://docs.commercetools.com/api/projects/productTypes#attributelocalizedenumvalue
+
+const commonFieldsConfig = {
+  key: fake((f) => f.lorem.slug(2)),
+};
+
+export const restFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumValueRest> =
+  {
+    fields: {
+      ...commonFieldsConfig,
+      label: fake(() => LocalizedString.random()),
+    },
+  };
+
+export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumValueGraphql> =
+  {
+    fields: {
+      ...commonFieldsConfig,
+      label: null, // computed field
+      labelAllLocales: fake(() => LocalizedString.random()),
+      __typename: 'LocalizedEnumValue',
+    },
+    postBuild: (model, context) => {
+      // This is needed for the compatibility builder since it's built from the REST model
+      if (model.label && context?.isCompatMode) {
+        const _labelAllLocales =
+          model.label as unknown as TCtpLocalizedString[];
+        return {
+          labelAllLocales: _labelAllLocales,
+          label:
+            LocalizedString.resolveGraphqlDefaultLocaleValue(_labelAllLocales),
+        };
+      }
+
+      return {
+        label: LocalizedString.resolveGraphqlDefaultLocaleValue(
+          model.labelAllLocales
+        ),
+      };
+    },
+  };

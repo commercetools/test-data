@@ -1,6 +1,6 @@
+import { ClientLogging } from '../../../commons';
 import { fake, Generator } from '../../../core';
 import { createRelatedDates } from '../../../utils';
-import { ClientLogging } from '../../commons';
 import { AttributeDefinition } from '../attribute-definition';
 import type { TProductType } from './types';
 
