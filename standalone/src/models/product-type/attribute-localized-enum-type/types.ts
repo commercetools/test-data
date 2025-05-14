@@ -3,7 +3,7 @@ import type { TBuilder } from '@/core';
 import {
   TCtpLocalizableEnumAttributeDefinitionType,
   TCtpLocalizableEnumTypeDraft,
-} from '../../../graphql-types';
+} from '@/graphql-types';
 
 /**
  * @deprecated use `TAttributeLocalizedEnumTypeRest` or `TAttributeLocalizedEnumTypeGraphql` instead

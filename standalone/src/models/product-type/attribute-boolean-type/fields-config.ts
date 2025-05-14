@@ -1,4 +1,4 @@
-import { TModelFieldsConfig } from '../../../core';
+import { TModelFieldsConfig } from '@/core';
 import {
   TAttributeBooleanTypeGraphql,
   TAttributeBooleanTypeRest,

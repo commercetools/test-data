@@ -1,6 +1,6 @@
-import { LocalizedString } from '../../../commons';
-import { fake, TModelFieldsConfig } from '../../../core';
-import { TCtpLocalizedString } from '../../../graphql-types';
+import { fake, TModelFieldsConfig } from '@/core';
+import { TCtpLocalizedString } from '@/graphql-types';
+import { LocalizedString } from '@/models/commons';
 import {
   TAttributeLocalizedEnumValueGraphql,
   TAttributeLocalizedEnumValueRest,

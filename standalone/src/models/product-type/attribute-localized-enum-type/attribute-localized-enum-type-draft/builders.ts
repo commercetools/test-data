@@ -2,7 +2,7 @@ import {
   createCompatibilityBuilder,
   createSpecializedBuilder,
   TModelFieldsConfig,
-} from '../../../../core';
+} from '@/core';
 import type {
   TCreateAttributeLocalizedEnumTypeBuilder,
   TAttributeLocalizedEnumTypeDraftGraphql,

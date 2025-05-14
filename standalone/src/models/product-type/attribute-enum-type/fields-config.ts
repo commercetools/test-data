@@ -1,4 +1,4 @@
-import { fake, TModelFieldsConfig } from '../../../core';
+import { fake, TModelFieldsConfig } from '@/core';
 import {
   AttributePlainEnumValueGraphql,
   AttributePlainEnumValueRest,

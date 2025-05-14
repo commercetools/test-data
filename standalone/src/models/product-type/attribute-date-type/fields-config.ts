@@ -1,4 +1,4 @@
-import { TModelFieldsConfig } from '../../../core';
+import { TModelFieldsConfig } from '@/core';
 import { TAttributeDateTypeGraphql, TAttributeDateTypeRest } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributedatetype

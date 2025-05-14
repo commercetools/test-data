@@ -1,4 +1,4 @@
-import { fake, TModelFieldsConfig } from '../../../core';
+import { fake, TModelFieldsConfig } from '@/core';
 import { TAttributeMoneyTypeGraphql, TAttributeMoneyTypeRest } from './types';
 
 // https://docs.commercetools.com/api/projects/productTypes#attributemoneytype

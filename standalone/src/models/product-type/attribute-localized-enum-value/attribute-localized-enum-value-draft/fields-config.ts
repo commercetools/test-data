@@ -1,5 +1,5 @@
-import { LocalizedStringDraft } from '../../../../commons';
-import { fake, TModelFieldsConfig } from '../../../../core';
+import { fake, TModelFieldsConfig } from '@/core';
+import { LocalizedStringDraft } from '@/models/commons';
 import {
   TAttributeLocalizedEnumValueDraftGraphql,
   TAttributeLocalizedEnumValueDraftRest,
