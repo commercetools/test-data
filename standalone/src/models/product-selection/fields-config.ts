@@ -1,11 +1,14 @@
-import { fake, oneOf, sequence, TModelFieldsConfig } from '@/core';
 import {
-  ClientLogging,
-  LocalizedString,
-  //   ReferenceGraphql,
-} from '@/models/commons';
+  fake,
+  oneOf,
+  sequence,
+  TModelFieldsConfig,
+  buildGraphqlList,
+} from '@/core';
+import { ClientLogging, LocalizedString } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
 import { productSelectionMode } from './constants';
+import { ProductOfSelectionGraphql } from './product-of-selection';
 import { TProductSelectionRest, TProductSelectionGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -36,20 +39,19 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionGraphql> =
       ...commonFieldsConfig,
       __typename: 'ProductSelection',
       nameAllLocales: fake(() => LocalizedString.random()),
-      productRefs: null,
+      productRefs: fake(() =>
+        buildGraphqlList([ProductOfSelectionGraphql.random()], {
+          __typename: 'SelectionOfProductQueryResult',
+        })
+      ),
     },
     postBuild: (model) => {
       const name = model.nameAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
         : undefined;
 
-      //   const productRefs = ReferenceGraphql.presets
-      //     .productReference()
-      //     .buildGraphql();
-
       return {
         name,
-        // productRefs,
       };
     },
   };
