@@ -1,5 +1,4 @@
 import { CustomApplicationSubmenuLinkGraphql } from './index';
-
 describe('CustomApplicationSubmenuLink', () => {
   it('builds a GraphQL model', () => {
     const graphqlModel = CustomApplicationSubmenuLinkGraphql.random().build();

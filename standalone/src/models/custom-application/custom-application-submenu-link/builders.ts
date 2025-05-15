@@ -1,4 +1,4 @@
-import { createSpecializedBuilder } from '../../../core';
+import { createSpecializedBuilder } from '@/core';
 import { graphqlFieldsConfig } from './fields-config';
 import type {
   TCustomApplicationSubmenuLinkGraphql,
@@ -6,7 +6,7 @@ import type {
 } from './types';
 
 export const GraphqlModelBuilder: TCreateCustomApplicationSubmenuLinkBuilder<
-TCustomApplicationSubmenuLinkGraphql
+  TCustomApplicationSubmenuLinkGraphql
 > = () =>
   createSpecializedBuilder({
     name: 'CustomApplicationSubmenuLinkGraphqlBuilder',
