@@ -1,5 +1,7 @@
-export * as CustomApplicationMenuLinkDraft from './custom-application-menu-link-draft';
+import { GraphqlModelBuilder } from './builders';
+import * as CustomApplicationMenuLinkPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export const CustomApplicationMenuLinkGraphql = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationMenuLinkPresets.graphqlPresets,
+};
