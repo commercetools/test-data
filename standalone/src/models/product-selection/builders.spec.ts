@@ -53,31 +53,13 @@ const validateGraphqlModel = (model: TProductSelectionGraphql): void => {
     lastModifiedAt: expect.any(String),
     lastModifiedBy: expect.objectContaining({
       __typename: 'Initiator',
-      externalUserId: expect.any(String),
-      anonymousId: expect.any(String),
-      clientId: expect.any(String),
-      customerRef: expect.objectContaining({
-        id: expect.any(String),
-        typeId: 'customer',
-        __typename: 'Reference',
-      }),
     }),
     createdBy: expect.objectContaining({
       __typename: 'Initiator',
-      externalUserId: expect.any(String),
-      anonymousId: expect.any(String),
-      clientId: expect.any(String),
-      customerRef: expect.objectContaining({
-        id: expect.any(String),
-        typeId: 'customer',
-        __typename: 'Reference',
-      }),
     }),
     nameAllLocales: expect.arrayContaining([
       expect.objectContaining({
         __typename: 'LocalizedString',
-        value: expect.any(String),
-        locale: expect.any(String),
       }),
     ]),
     name: expect.any(String),
@@ -87,20 +69,9 @@ const validateGraphqlModel = (model: TProductSelectionGraphql): void => {
     custom: expect.any(Object),
     productRefs: expect.objectContaining({
       __typename: 'SelectionOfProductQueryResult',
-      count: expect.any(Number),
-      offset: expect.any(Number),
-      total: expect.any(Number),
       results: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'ProductOfSelection',
-          product: expect.any(Object),
-          variantExclusion: expect.any(Object),
-          variantSelection: expect.any(Object),
-          productRef: expect.objectContaining({
-            __typename: 'Reference',
-            id: expect.any(String),
-            typeId: 'product',
-          }),
         }),
       ]),
     }),

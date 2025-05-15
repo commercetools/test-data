@@ -6,6 +6,8 @@ import {
 import * as modelPresets from './presets';
 
 export * from './types';
+export * from './product-of-selection/types';
+
 export * from './product-selection-draft';
 export * from './product-of-selection';
 

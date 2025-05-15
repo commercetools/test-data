@@ -1,11 +1,11 @@
 import { createSpecializedBuilder } from '@/core';
-import type {
-  TCreateProductSelectionBuilder,
-  TProductOfSelectionGraphql,
-} from '../types';
 import { graphqlFieldsConfig } from './fields-config';
+import type {
+  TCreateProductOfSelectionBuilder,
+  TProductOfSelectionGraphql,
+} from './types';
 
-export const GraphqlModelBuilder: TCreateProductSelectionBuilder<
+export const GraphqlModelBuilder: TCreateProductOfSelectionBuilder<
   TProductOfSelectionGraphql
 > = () =>
   createSpecializedBuilder({

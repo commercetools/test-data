@@ -6,7 +6,6 @@ import type { TBuilder } from '@/core';
 import {
   TCtpProductSelection,
   TCtpCreateProductSelectionDraft,
-  TCtpProductOfSelection,
 } from '@/graphql-types';
 
 /**
@@ -25,7 +24,6 @@ export type TProductSelectionRest = ProductSelection;
 // GraphQL types
 export type TProductSelectionDraftGraphql = TCtpCreateProductSelectionDraft;
 export type TProductSelectionGraphql = TCtpProductSelection;
-export type TProductOfSelectionGraphql = TCtpProductOfSelection;
 
 // Builders types
 export type TCreateProductSelectionBuilder<
@@ -33,6 +31,5 @@ export type TCreateProductSelectionBuilder<
     | TProductSelectionRest
     | TProductSelectionGraphql
     | TProductSelectionDraftRest
-    | TProductSelectionDraftGraphql
-    | TProductOfSelectionGraphql,
+    | TProductSelectionDraftGraphql,
 > = () => TBuilder<TProductSelectionModel>;
