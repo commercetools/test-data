@@ -1,5 +1,5 @@
-import { fake, type TModelFieldsConfig } from '../../../core';
-import { createRelatedDates } from '../../../utils';
+import { fake, type TModelFieldsConfig } from '@/core';
+import { createRelatedDates } from '@/utils';
 import { supportedViewOAuthScopes } from './constants';
 import type { TCustomApplicationPermissionGraphql } from './types';
 
