@@ -1,8 +1,8 @@
 import { fake, Generator } from '@/core';
 import { LocalizedField } from '@/models/commons';
-import type { TCustomApplicationMenuLinkDraft } from '../types';
+import type { TCustomApplicationMenuLinkDraftGraphql } from './types';
 
-const generator = Generator<TCustomApplicationMenuLinkDraft>({
+const generator = Generator<TCustomApplicationMenuLinkDraftGraphql>({
   fields: {
     labelAllLocales: fake(() => [LocalizedField.random()]),
     defaultLabel: fake((f) => f.lorem.word()),
