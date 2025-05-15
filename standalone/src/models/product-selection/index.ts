@@ -7,6 +7,8 @@ import * as modelPresets from './presets';
 
 export * from './types';
 export * from './product-selection-draft';
+export * from './product-of-selection';
+
 export * from './constants';
 
 export const ProductSelectionRest = {
