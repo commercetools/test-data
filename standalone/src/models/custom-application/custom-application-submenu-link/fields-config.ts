@@ -5,16 +5,15 @@ import type { TCustomApplicationSubmenuLink } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const generator = Generator<TCustomApplicationSubmenuLink>({
+export const graphqlFieldsConfig: TModelFieldsConfig<TMcSettingsCustomApplicationSubmenuLink> = {
   fields: {
     id: fake((f) => f.string.uuid()),
     createdAt: fake(getOlderDate),
     updatedAt: fake(getNewerDate),
-    labelAllLocales: fake(() => [LocalizedField.random()]),
-    defaultLabel: fake((f) => f.lorem.word()),
-    permissions: [],
     uriPath: fake((f) => f.lorem.word()),
-  },
-});
+    defaultLabel: fake((f) => f.lorem.word()),
+    labelAllLocales: fake(() => [LocalizedField.random()]),
+    permissions: [],
+  }
+}
 
-export default generator;
