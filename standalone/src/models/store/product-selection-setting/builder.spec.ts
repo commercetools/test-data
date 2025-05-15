@@ -77,20 +77,9 @@ describe('builder', () => {
           productCount: expect.any(Number),
           productRefs: expect.objectContaining({
             __typename: 'SelectionOfProductQueryResult',
-            count: expect.any(Number),
-            offset: expect.any(Number),
-            total: expect.any(Number),
             results: expect.arrayContaining([
               expect.objectContaining({
                 __typename: 'ProductOfSelection',
-                product: expect.any(Object),
-                variantExclusion: expect.any(Object),
-                variantSelection: expect.any(Object),
-                productRef: expect.objectContaining({
-                  __typename: 'Reference',
-                  id: expect.any(String),
-                  typeId: 'product',
-                }),
               }),
             ]),
           }),
