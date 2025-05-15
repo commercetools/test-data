@@ -2,7 +2,7 @@ import { graphqlPresets } from './index';
 
 describe('view only permissions', () => {
   it('should build important properties', () => {
-    const built = graphqlPresets.viewOnly().buildGraphql();
+    const built = graphqlPresets.ViewOnlyPermissions().buildGraphql();
     expect(built).toEqual(
       expect.objectContaining({
         name: 'viewAvengers',
@@ -13,7 +13,7 @@ describe('view only permissions', () => {
 });
 describe('with manage only permissions', () => {
   it('should build important properties', () => {
-    const built = graphqlPresets.manageOnly().buildGraphql();
+    const built = graphqlPresets.ManageOnlyPermissions().buildGraphql();
 
     expect(built).toEqual(
       expect.objectContaining({
