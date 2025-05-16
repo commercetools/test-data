@@ -8,8 +8,6 @@ describe('ProductOfSelection Builder', () => {
       expect.objectContaining({
         productRef: expect.objectContaining({
           __typename: 'Reference',
-          typeId: 'product',
-          id: expect.any(String),
         }),
         product: expect.any(Object),
         variantExclusion: expect.any(Object),

@@ -1,7 +1,6 @@
 import type {
   TProductSelectionDraftGraphql,
   TProductSelectionDraftRest,
-  TProductSelectionDraft,
 } from '../../types';
 import { restPreset, graphqlPreset, compatPreset } from './empty';
 

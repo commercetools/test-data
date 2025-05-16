@@ -1,8 +1,8 @@
 import { GraphqlModelBuilder } from './builders';
 import * as ProductOfSelectionPresets from './presets';
-export * from '../types';
+export * from './types';
 
-// We only export the GraphQL model for product-of-selection, as the REST model is not used in the current implementation.
+// This model only exists in the GrahpQL API and that's why there's no REST version of it.
 export const ProductOfSelectionGraphql = {
   random: GraphqlModelBuilder,
   presets: ProductOfSelectionPresets.graphqlPresets,

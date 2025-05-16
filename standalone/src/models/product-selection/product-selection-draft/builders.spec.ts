@@ -21,7 +21,7 @@ const validateModel = (
   );
 };
 
-describe('ProductSelection model builders', () => {
+describe('ProductSelectionDraft model builders', () => {
   it('builds a REST model', () => {
     const restModel = ProductSelectionDraftRest.random().build();
 
@@ -34,7 +34,7 @@ describe('ProductSelection model builders', () => {
   });
 });
 
-describe('ProductSelection model compatibility builders', () => {
+describe('ProductSelectionDraft model compatibility builders', () => {
   it('builds a default (REST) model', () => {
     const restModel = ProductSelectionDraft.random().build();
 
