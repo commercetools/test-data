@@ -1,5 +1,49 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.1.0
+
+### Minor Changes
+
+- [#815](https://github.com/commercetools/test-data/pull/815) [`79f4d99`](https://github.com/commercetools/test-data/commit/79f4d996c3efe732d13d1a488e66c2dc749e6b3f) Thanks [@rajrdk](https://github.com/rajrdk)! - Added two new sub-models to the Cart one:
+
+  - `DiscountOnTotalPrice`
+  - `DiscountedTotalPricePortion`
+
+  You can use them like this:
+
+  ```ts
+  import {
+    DiscountOnTotalPriceGraphql,
+    DiscountedTotalPricePortionGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const discountOnTotalPriceModel =
+    DiscountOnTotalPriceGraphql.random().build();
+  const discountedTotalPricePortionModel =
+    DiscountedTotalPricePortionGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#809](https://github.com/commercetools/test-data/pull/809) [`516a1f6`](https://github.com/commercetools/test-data/commit/516a1f60b9930da224e96e82c99f39092f03f128) Thanks [@Rombelirk](https://github.com/Rombelirk)! - The `ProductSelection` and `ProductSelectionDraft` models have been refactored to use the new implementation patterns but that does not affect consumers..
+  Added new submodel to the ProductSelection model:
+
+  - `ProductOfSelection`
+
+  You can use it like this:
+
+  ```ts
+  import { ProductOfSelectionGraphql } from '@commercetools/composable-commerce-test-data/product-selection';
+
+  const productOfSelectionModel = ProductOfSelectionGraphql.random().build();
+  ```
+
+  This submodel is now used to populate the required `productRefs` field of the ProductSelection GraphQL model, which was previously `null` by default.
+
+- [#817](https://github.com/commercetools/test-data/pull/817) [`58a2db6`](https://github.com/commercetools/test-data/commit/58a2db6b8730e0d2d315d98a676cbaaa678c74d1) Thanks [@krishhna123](https://github.com/krishhna123)! - added missing import for cart-discount-custom-line-items-target
+
+- [#811](https://github.com/commercetools/test-data/pull/811) [`15295ad`](https://github.com/commercetools/test-data/commit/15295add8ca475a907651ce3a824588f4ef624f6) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - B2C Lifestyle Presets - Fix shipping method zone rates in the shipping-method data models.
+
 ## 11.0.0
 
 ### Major Changes
