@@ -1,6 +1,6 @@
 import { sequence, fake, Generator, oneOf } from '@/core';
 import { Company } from '@/models/business-unit';
-import { LineItem } from '@/models/cart';
+import { LineItem } from '@/models/cart/cart';
 import {
   CentPrecisionMoney,
   ClientLogging,
