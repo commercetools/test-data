@@ -1,5 +1,5 @@
 ---
-'@commercetools/composable-commerce-test-data': major
+'@commercetools/composable-commerce-test-data': minor
 ---
 
 Added two new sub-models to the Cart one:
