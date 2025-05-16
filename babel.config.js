@@ -12,6 +12,9 @@ module.exports = {
           '@/core': './standalone/src/core',
           '@/core/test-utils': './standalone/src/core/test-utils',
           '@/graphql-types': './standalone/src/graphql-types',
+          '@/models/cart': './standalone/src/models/cart/cart',
+          '@/models/cart-discount':
+            './standalone/src/models/cart/cart-discount',
           '@/models': './standalone/src/models',
           '@/utils': './standalone/src/utils',
         },
