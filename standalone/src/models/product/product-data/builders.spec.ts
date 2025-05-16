@@ -27,7 +27,7 @@ function validateRestModel(restModel: TProductDataRest) {
         en: expect.any(String),
       }),
       slug: expect.objectContaining({
-        en: expect.any(String),
+        en: expect.stringMatching(/^[A-Za-z0-9_-]{2,256}$/),
       }),
       metaTitle: expect.objectContaining({
         en: expect.any(String),
@@ -66,12 +66,12 @@ function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
           value: expect.any(String),
         }),
       ]),
-      slug: expect.any(String),
+      slug: expect.stringMatching(/^[A-Za-z0-9_-]{2,256}$/),
       slugAllLocales: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'LocalizedString',
           locale: 'en',
-          value: expect.any(String),
+          value: expect.stringMatching(/^[A-Za-z0-9_-]{2,256}$/),
         }),
       ]),
       categoryOrderHint: expect.any(String),
