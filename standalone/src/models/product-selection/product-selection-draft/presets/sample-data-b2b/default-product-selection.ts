@@ -1,10 +1,21 @@
-import { LocalizedStringDraft } from '../../../../commons';
-import type { TProductSelectionDraftBuilder } from '../../../types';
-import * as ProductSelectionDraft from '../../index';
+import type { TBuilder } from '@/core';
+import { TCtpProductSelectionMode } from '@/graphql-types';
+import { LocalizedStringDraft } from '@/models/commons';
+import type {
+  TProductSelectionDraftGraphql,
+  TProductSelectionDraftRest,
+  TProductSelectionDraft,
+} from '../../../types';
+import {
+  ProductSelectionDraftRest,
+  ProductSelectionDraftGraphql,
+  ProductSelectionDraft,
+} from '../../index';
 
-const defaultProductSelection = (): TProductSelectionDraftBuilder =>
-  ProductSelectionDraft.presets
-    .empty()
+function populateBuilder<
+  TModel extends TProductSelectionDraftRest | TProductSelectionDraftGraphql,
+>(builder: TBuilder<TModel>): TBuilder<TModel> {
+  return builder
     .key('default-product-selection')
     .name(
       LocalizedStringDraft.presets
@@ -20,6 +31,14 @@ const defaultProductSelection = (): TProductSelectionDraftBuilder =>
         ['pt-PT']('Padrão')
         ['en-US']('Default')
     )
-    .mode('Individual');
+    .mode(TCtpProductSelectionMode.Individual);
+}
 
-export default defaultProductSelection;
+export const restPreset = (): TBuilder<TProductSelectionDraftRest> =>
+  populateBuilder(ProductSelectionDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TProductSelectionDraftGraphql> =>
+  populateBuilder(ProductSelectionDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<TProductSelectionDraft> =>
+  populateBuilder(ProductSelectionDraft.presets.empty());

@@ -75,7 +75,14 @@ describe('builder', () => {
             }),
           ]),
           productCount: expect.any(Number),
-          productRefs: null,
+          productRefs: expect.objectContaining({
+            __typename: 'SelectionOfProductQueryResult',
+            results: expect.arrayContaining([
+              expect.objectContaining({
+                __typename: 'ProductOfSelection',
+              }),
+            ]),
+          }),
           mode: expect.any(String),
           custom: null,
           createdAt: expect.any(String),
