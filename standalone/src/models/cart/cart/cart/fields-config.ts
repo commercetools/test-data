@@ -1,6 +1,6 @@
 import { fake, oneOf, type TModelFieldsConfig, sequence } from '@/core';
 import { Company } from '@/models/business-unit';
-import { CartDiscount } from '@/models/cart-discount';
+import { CartDiscount } from '@/models/cart/cart-discount';
 import {
   Address,
   CentPrecisionMoney,

@@ -1,5 +1,5 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { CartDiscountValueRelative } from '@/models/cart-discount';
+import { CartDiscountValueRelative } from '@/models/cart/cart-discount';
 import type { TDirectDiscountGraphql, TDirectDiscountRest } from './types';
 
 const commonFieldsConfig = {
