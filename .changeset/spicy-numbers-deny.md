@@ -2,7 +2,7 @@
 '@commercetools/composable-commerce-test-data': patch
 ---
 
-ProductSelection is migrated to the new model.
+The `ProductSelection` and `ProductSelectionDraft` models have been refactored to use the new implementation patterns but that does not affect consumers..
 Added new submodel to the ProductSelection model:
 
 - `ProductOfSelection`
