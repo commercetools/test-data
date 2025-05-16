@@ -1,15 +1,15 @@
 import { createSpecializedBuilder } from '@/core';
 import { graphqlFieldsConfig } from './fields-config';
 import type {
-  TCustomApplicationDraftGraphql,
-  TCreateCustomApplicationDraftBuilder,
+  TCustomApplicationGraphql,
+  TCreateCustomApplicationBuilder,
 } from './types';
 
-export const GraphqlModelBuilder: TCreateCustomApplicationDraftBuilder<
-  TCustomApplicationDraftGraphql
+export const GraphqlModelBuilder: TCreateCustomApplicationBuilder<
+  TCustomApplicationGraphql
 > = () =>
   createSpecializedBuilder({
-    name: 'CustomApplicationDraftGraphqlBuilder',
+    name: 'CustomApplicationGraphqlBuilder',
     type: 'graphql',
     modelFieldsConfig: graphqlFieldsConfig,
   });

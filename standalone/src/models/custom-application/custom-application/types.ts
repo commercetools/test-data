@@ -1,24 +1,9 @@
 import { TBuilder } from '@/core';
-import type {
-  TMcSettingsCustomApplicationDraftDataInput,
-  TMcSettingsRestrictedCustomApplicationForOrganization,
-} from '@/graphql-types';
-
-export type TCustomApplication = Omit<
-  TMcSettingsRestrictedCustomApplicationForOrganization,
-  '__typename'
->;
+import type { TMcSettingsRestrictedCustomApplicationForOrganization } from '@/graphql-types';
 
 export type TCustomApplicationGraphql =
   TMcSettingsRestrictedCustomApplicationForOrganization;
 
-export type TCustomApplicationDraft =
-  TMcSettingsCustomApplicationDraftDataInput;
-export type TCustomApplicationDraftGraphql = TCustomApplicationDraft;
-
-export type TCustomApplicationBuilder = TBuilder<TCustomApplication>;
-export type TCreateCustomApplicationBuilder = () => TCustomApplicationBuilder;
-
-export type TCustomApplicationDraftBuilder = TBuilder<TCustomApplicationDraft>;
-export type TCreateCustomApplicationDraftBuilder =
-  () => TCustomApplicationDraftBuilder;
+export type TCreateCustomApplicationBuilder<
+  TModel extends TCustomApplicationGraphql,
+> = () => TBuilder<TModel>;
