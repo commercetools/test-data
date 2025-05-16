@@ -1,6 +1,6 @@
-import { Transformer } from '../../../../core';
-import { Reference } from '../../../commons';
-import { User } from '../../../user';
+import { Transformer } from '@/core';
+import { Reference } from '@/models/commons';
+import { User } from '@/models/user';
 import type { TTeam, TTeamGraphql } from './types';
 
 const transformers = {

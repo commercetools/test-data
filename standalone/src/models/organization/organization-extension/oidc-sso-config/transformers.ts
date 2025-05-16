@@ -1,4 +1,4 @@
-import { Transformer } from '../../../../core';
+import { Transformer } from '@/core';
 import type { TOidcSsoConfig, TOidcSsoConfigGraphql } from './types';
 
 const buildFields: (keyof TOidcSsoConfig)[] = [];

@@ -1,5 +1,5 @@
-import { TBuilder } from '../../../../core';
-import type { TMcSettingsOrganizationExtension } from '../../../../graphql-types';
+import { TBuilder } from '@/core';
+import type { TMcSettingsOrganizationExtension } from '@/graphql-types';
 
 export type TOrganizationExtension = Omit<
   TMcSettingsOrganizationExtension,

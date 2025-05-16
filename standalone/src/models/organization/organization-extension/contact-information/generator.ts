@@ -1,5 +1,5 @@
-import { fake, Generator } from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
+import { fake, Generator } from '@/core';
+import { createRelatedDates } from '@/utils';
 import type { TContactInformation } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

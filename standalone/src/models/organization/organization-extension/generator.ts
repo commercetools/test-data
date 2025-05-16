@@ -1,10 +1,10 @@
-import { fake, Generator } from '../../../../core';
-import { createRelatedDates } from '../../../../utils';
+import { fake, Generator } from '@/core';
 import {
   CustomApplicationInstallation,
   CustomApplication,
-} from '../../custom-application';
-import { CustomViewInstallation, CustomView } from '../../custom-view';
+} from '@/models/custom-application';
+import { CustomViewInstallation, CustomView } from '@/models/custom-view';
+import { createRelatedDates } from '@/utils';
 import * as ContactInformation from './contact-information';
 import * as OidcSSOConfig from './oidc-sso-config';
 import type { TOrganizationExtension } from './types';
