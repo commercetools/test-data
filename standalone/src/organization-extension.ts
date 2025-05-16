@@ -1,1 +1,1 @@
-export * from './models/organization-extension';
+export * from './models/organization/organization-extension';
