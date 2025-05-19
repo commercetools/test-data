@@ -2,7 +2,7 @@ import { TBuilder } from '@/core';
 import { CompanyDraft, type TCompanyDraft } from '@/models/business-unit';
 import { ChannelDraftRest, type TChannelDraftRest } from '@/models/channel';
 import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
-import { CustomerDraft, type TCustomerDraft } from '@/models/customer';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,

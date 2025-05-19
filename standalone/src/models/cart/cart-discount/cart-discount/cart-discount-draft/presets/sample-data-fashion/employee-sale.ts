@@ -1,12 +1,12 @@
-import { LocalizedStringDraft } from '../../../../../../commons';
+import { LocalizedStringDraft } from '@/models/commons';
 import {
   CustomerGroupDraft,
   TCustomerGroupDraft,
-} from '../../../../../../customer-group';
+} from '@/models/customer/customer-group';
 import {
   CartDiscountLineItemsTargetDraft,
   CartDiscountValueRelativeDraft,
-} from '../../../../index';
+} from '@/models/cart/cart-discount';
 import { stackingMode } from '../../../constants';
 import type { TCartDiscountDraftBuilder } from '../../../types';
 import * as CartDiscountDraft from '../../index';
