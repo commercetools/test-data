@@ -1,20 +1,20 @@
-import { AddressDraft } from '../../../../commons';
+import { AddressDraft } from '@/models/commons';
 import { authenticationMode } from '../../../constants';
 import type { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';
 
-const jenniferRobinson = (): TCustomerDraftBuilder =>
+const samSmith = (): TCustomerDraftBuilder =>
   CustomerDraft.presets
     .empty()
-    .key('jennifer-robinson')
-    .email('jen@example.com')
+    .key('sebastian-smith')
+    .email('seb@example.uk')
     .password('123')
-    .firstName('Jennifer')
-    .lastName('Robinson')
+    .firstName('Sebastian')
+    .lastName('Smith')
     .addresses([
-      AddressDraft.presets.sampleDataB2CLifestyle.jenniferRobinsonAddress(),
+      AddressDraft.presets.sampleDataB2CLifestyle.sebastianSmithAddress(),
     ])
     .authenticationMode(authenticationMode.Password)
     .isEmailVerified(true);
 
-export default jenniferRobinson;
+export default samSmith;

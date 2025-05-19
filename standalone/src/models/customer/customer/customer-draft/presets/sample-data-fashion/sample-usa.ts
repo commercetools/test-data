@@ -1,4 +1,4 @@
-import { AddressDraft, KeyReferenceDraft } from '../../../../commons';
+import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
 import {
   CustomerGroupDraft,
   type TCustomerGroupDraft,

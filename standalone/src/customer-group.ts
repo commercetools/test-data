@@ -1,1 +1,1 @@
-export * from './models/customer-group';
+export * from './models/customer/customer-group';
