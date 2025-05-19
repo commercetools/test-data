@@ -1,8 +1,8 @@
-import { AddressDraft, KeyReferenceDraft } from '../../../../commons';
+import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
 import {
   CustomerGroupDraft,
   type TCustomerGroupDraft,
-} from '../../../../customer-group';
+} from '@/models/customer/customer-group';
 import { authenticationMode } from '../../../constants';
 import { TCustomerDraftBuilder } from '../../../types';
 import * as CustomerDraft from '../../index';

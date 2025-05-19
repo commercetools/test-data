@@ -7,8 +7,8 @@ import {
   Address,
   Reference,
 } from '@/models/commons';
-import { Customer } from '@/models/customer';
-import { CustomerGroup } from '@/models/customer-group';
+import { Customer } from '@/models/customer/customer';
+import { CustomerGroup } from '@/models/customer/customer-group';
 import { Store } from '@/models/store';
 import { createRelatedDates } from '@/utils';
 import {

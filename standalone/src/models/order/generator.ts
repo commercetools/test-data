@@ -2,7 +2,7 @@ import { Generator, fake, oneOf, sequence } from '@/core';
 import { Cart, LineItem } from '@/models/cart/cart';
 import { CartDiscount } from '@/models/cart/cart-discount';
 import { CentPrecisionMoney, ClientLogging, Address } from '@/models/commons';
-import * as CustomerGroup from '@/models/customer-group';
+import * as CustomerGroup from '@/models/customer/customer-group';
 import { createRelatedDates } from '@/utils';
 import {
   inventoryMode,

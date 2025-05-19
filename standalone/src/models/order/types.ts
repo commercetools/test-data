@@ -12,7 +12,7 @@ import {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import { TReferenceGraphql } from '@/models/commons';
-import type { TCustomer } from '@/models/customer';
+import type { TCustomer } from '@/models/customer/customer';
 
 export type TOrder = Omit<
   Order,

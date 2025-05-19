@@ -3,7 +3,7 @@ import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '../../../../../commons';
-import { CustomerDraft, type TCustomerDraft } from '../../../../../customer';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
 import {
   OrderFromCartDraft,
   OrderFromQuoteDraft,

@@ -7,8 +7,8 @@ import {
   ChannelDraftRest,
   type TChannelDraftRest,
 } from '../../../../../../channel';
-import { AddressDraft, KeyReferenceDraft } from '../../../../../../commons';
-import { CustomerDraft, type TCustomerDraft } from '../../../../../../customer';
+import { AddressDraft, KeyReferenceDraft } from '@/models/commons';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,

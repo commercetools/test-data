@@ -1,1 +1,1 @@
-export * from './models/customers-search-list-my-view';
+export * from './models/customer/customers-search-list-my-view';

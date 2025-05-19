@@ -1,6 +1,6 @@
 import { fake, Generator, sequence } from '@/core';
 import { CentPrecisionMoney } from '@/models/commons';
-import { Customer } from '@/models/customer';
+import { Customer } from '@/models/customer/customer';
 import { createRelatedDates } from '@/utils';
 import * as PaymentMethodInfo from '../payment-method-info';
 import * as PaymentStatus from '../payment-status';
