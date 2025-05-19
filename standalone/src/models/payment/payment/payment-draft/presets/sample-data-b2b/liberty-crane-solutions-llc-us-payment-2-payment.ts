@@ -3,7 +3,7 @@ import {
   KeyReferenceDraft,
   MoneyDraft,
 } from '../../../../../commons';
-import { CustomerDraft, type TCustomerDraft } from '@models/customer/customer';
+import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
 import { PaymentMethodInfoDraft } from '../../../../payment-method-info';
 import { PaymentStatusDraft } from '../../../../payment-status';
 import { TPaymentDraftBuilder } from '../../../types';
