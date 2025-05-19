@@ -8,7 +8,7 @@ import {
   KeyReference,
   Reference,
 } from '@/models/commons';
-import { CustomerGroup } from '@/models/customer-group';
+import { CustomerGroup } from '@/models/customer/customer-group';
 import { Store } from '@/models/store';
 import { createRelatedDates } from '@/utils';
 import { LineItem } from '../index';

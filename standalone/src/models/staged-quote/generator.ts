@@ -2,7 +2,7 @@ import { sequence, fake, Generator, oneOf } from '@/core';
 import { Company } from '@/models/business-unit';
 import { Cart } from '@/models/cart/cart';
 import { ClientLogging } from '@/models/commons';
-import { Customer } from '@/models/customer';
+import { Customer } from '@/models/customer/customer';
 import { QuoteRequest } from '@/models/quote-request';
 import { createRelatedDates } from '@/utils';
 import { STAGED_QUOTE_STATE } from './constants';

@@ -1,7 +1,7 @@
 import type { TBuilder } from '@/core';
 import { Company } from '@/models/business-unit';
 import { KeyReference, Reference } from '@/models/commons';
-import { CustomerGroup } from '@/models/customer-group';
+import { CustomerGroup } from '@/models/customer/customer-group';
 import { CustomFieldBooleanType } from '@/models/type';
 import { LineItem } from '../line-item';
 import { cartState } from './constants';

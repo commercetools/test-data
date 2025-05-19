@@ -1,7 +1,7 @@
 import { Generator, fake, sequence } from '@/core';
 import { Channel } from '@/models/channel';
 import { ClientLogging, PriceTier, CentPrecisionMoney } from '@/models/commons';
-import { CustomerGroup } from '@/models/customer-group';
+import { CustomerGroup } from '@/models/customer/customer-group';
 import { createRelatedDates } from '@/utils';
 import { TStandalonePrice } from './types';
 
