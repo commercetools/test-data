@@ -1,1 +1,1 @@
-export * from './models/project-extension';
+export * from './models/project/project-extension';
