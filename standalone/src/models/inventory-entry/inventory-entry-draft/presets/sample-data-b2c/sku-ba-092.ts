@@ -2,7 +2,7 @@ import type { TBuilder } from '../../../../../core';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '../../../../product';
+} from '@/models/product/product';
 import type {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,

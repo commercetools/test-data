@@ -4,7 +4,7 @@ import { KeyReferenceDraft } from '../../../../commons';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '../../../../product';
+} from '@/models/product/product';
 import type {
   TInventoryEntryDraft,
   TInventoryEntryDraftGraphql,
