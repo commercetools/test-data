@@ -1,6 +1,6 @@
 import { TBuilder } from '@/core';
 import { LocalizedString, Reference } from '@/models/commons';
-import { ProductVariant } from '@/models/product';
+import { ProductVariant } from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
 import { RestModelBuilder, GraphqlModelBuilder } from '../builders';
 import { TProductProjectionGraphql, TProductProjectionRest } from '../types';

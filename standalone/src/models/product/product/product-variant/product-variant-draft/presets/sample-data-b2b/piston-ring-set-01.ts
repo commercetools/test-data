@@ -1,4 +1,4 @@
-import { TBuilder } from '../../../../../../core';
+import { TBuilder } from '@/core';
 import * as Image from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';
 import { ProductVariantDraft } from '../../index';

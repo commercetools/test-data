@@ -8,7 +8,10 @@ import {
   ReferenceGraphql,
   ReferenceRest,
 } from '@/models/commons';
-import { ProductVariantRest, ProductVariantGraphql } from '@/models/product';
+import {
+  ProductVariantRest,
+  ProductVariantGraphql,
+} from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
 import { TaxRate } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';

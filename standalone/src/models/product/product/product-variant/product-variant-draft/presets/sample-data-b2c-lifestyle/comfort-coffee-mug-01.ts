@@ -1,10 +1,6 @@
-import { TBuilder } from '../../../../../../core';
+import { TBuilder } from '@/core';
 import { ChannelDraft, TChannelDraft } from '../../../../../channel';
-import {
-  MoneyDraft,
-  PriceDraft,
-  KeyReferenceDraft,
-} from '../../../../../commons';
+import { MoneyDraft, PriceDraft, KeyReferenceDraft } from '@/models/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
 import type { TProductVariantDraft } from '../../../types';

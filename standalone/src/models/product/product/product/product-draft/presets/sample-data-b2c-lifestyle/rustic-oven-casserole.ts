@@ -1,16 +1,13 @@
-import { TBuilder } from '../../../../../../core';
-import {
-  KeyReferenceDraft,
-  LocalizedStringDraft,
-} from '../../../../../commons';
+import { TBuilder } from '@/core';
+import { KeyReferenceDraft, LocalizedStringDraft } from '@/models/commons';
 import {
   ProductTypeDraft,
   type TProductTypeDraft,
-} from '../../../../../product-type';
+} from '@/models/product-type';
 import {
   TaxCategoryDraft,
   type TTaxCategoryDraft,
-} from '../../../../../tax-category';
+} from '@/models/tax-category';
 import { ProductVariantDraft } from '../../../../product-variant/product-variant-draft';
 import { ProductDraft } from '../..';
 import type { TProductDraft } from '../../../types';
