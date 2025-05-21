@@ -1,1 +1,1 @@
-export * from './models/quote';
+export * from './models/quote/quote';

@@ -1,1 +1,1 @@
-export * from './models/staged-quote';
+export * from './models/quote/staged-quote';
