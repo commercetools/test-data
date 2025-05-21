@@ -43,8 +43,8 @@ export * from './attribute-set-type';
 export * from './attribute-set-type/attribute-set-type-draft';
 export * from './attribute-reference-type';
 export * from './attribute-reference-type/attribute-reference-type-draft';
-export * as AttributeTextType from './attribute-text-type';
-export * as AttributeTextTypeDraft from './attribute-text-type/attribute-text-type-draft';
+export * from './attribute-text-type';
+export * from './attribute-text-type/attribute-text-type-draft';
 export * as AttributeTimeType from './attribute-time-type';
 export * as AttributeTimeTypeDraft from './attribute-time-type/attribute-time-type-draft';
 

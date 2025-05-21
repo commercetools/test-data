@@ -138,9 +138,8 @@ describe(`with accessories preset`, () => {
             ],
             "name": "engraving",
             "type": {
-              "text": {
-                "dummy": null,
-              },
+              "dummy": null,
+              "name": "text",
             },
           },
         ],
