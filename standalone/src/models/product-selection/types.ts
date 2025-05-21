@@ -3,24 +3,33 @@ import type {
   ProductSelectionDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TLocalizedStringGraphql } from '@/models/commons';
+import {
+  TCtpProductSelection,
+  TCtpCreateProductSelectionDraft,
+} from '@/graphql-types';
 
-//ProductSelectionDraft
+/**
+ * @deprecated use `TProductSelectionDraftRest` or `TProductSelectionDraftGraphql` instead
+ */
 export type TProductSelectionDraft = ProductSelectionDraft;
-export type TProductSelectionDraftBuilder = TBuilder<TProductSelectionDraft>;
-export type TCreateProductSelectionDraftBuilder =
-  () => TProductSelectionDraftBuilder;
-export type TProductSelectionDraftGraphql = Omit<
-  TProductSelectionDraft,
-  'name'
-> & {
-  name: TLocalizedStringGraphql;
-};
-
-//ProductSelection
+/**
+ * @deprecated use `TProductSelectionRest` or `TProductSelectionGraphql` instead
+ */
 export type TProductSelection = ProductSelection;
-export type TProductSelectionBuilder = TBuilder<TProductSelection>;
-export type TCreateProductSelectionBuilder = () => TProductSelectionBuilder;
-export type TProductSelectionGraphql = TProductSelection & {
-  __typename: 'ProductSelection';
-};
+
+// REST types
+export type TProductSelectionDraftRest = ProductSelectionDraft;
+export type TProductSelectionRest = ProductSelection;
+
+// GraphQL types
+export type TProductSelectionDraftGraphql = TCtpCreateProductSelectionDraft;
+export type TProductSelectionGraphql = TCtpProductSelection;
+
+// Builders types
+export type TCreateProductSelectionBuilder<
+  TProductSelectionModel extends
+    | TProductSelectionRest
+    | TProductSelectionGraphql
+    | TProductSelectionDraftRest
+    | TProductSelectionDraftGraphql,
+> = () => TBuilder<TProductSelectionModel>;

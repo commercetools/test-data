@@ -1,4 +1,4 @@
-// import { CartDiscount } from '@/models/cart-discount';
+// import { CartDiscount } from '@/models/cart/cart-discount';
 import { fake, type TModelFieldsConfig } from '@/core';
 import { Money, Reference, TReferenceGraphql } from '../index';
 import type {

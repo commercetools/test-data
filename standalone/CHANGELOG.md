@@ -1,5 +1,59 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.1.0
+
+### Minor Changes
+
+- [#815](https://github.com/commercetools/test-data/pull/815) [`79f4d99`](https://github.com/commercetools/test-data/commit/79f4d996c3efe732d13d1a488e66c2dc749e6b3f) Thanks [@rajrdk](https://github.com/rajrdk)! - Added two new sub-models to the Cart one:
+
+  - `DiscountOnTotalPrice`
+  - `DiscountedTotalPricePortion`
+
+  You can use them like this:
+
+  ```ts
+  import {
+    DiscountOnTotalPriceGraphql,
+    DiscountedTotalPricePortionGraphql,
+  } from '@commercetools/composable-commerce-test-data/cart';
+
+  const discountOnTotalPriceModel =
+    DiscountOnTotalPriceGraphql.random().build();
+  const discountedTotalPricePortionModel =
+    DiscountedTotalPricePortionGraphql.random().build();
+  ```
+
+### Patch Changes
+
+- [#820](https://github.com/commercetools/test-data/pull/820) [`6d5e10d`](https://github.com/commercetools/test-data/commit/6d5e10dddaa7179d3e05abe533cabca3f3e6481a) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Organization` and `Organization-extention` models directories within the repository structure to improve readability.
+
+- [#821](https://github.com/commercetools/test-data/pull/821) [`887f3f9`](https://github.com/commercetools/test-data/commit/887f3f920be66a5a36314cf766c859369597e817) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Customer`, `Customer Group` and `Customers search list my view` models directories within the repository structure to improve readability.
+
+- [#809](https://github.com/commercetools/test-data/pull/809) [`516a1f6`](https://github.com/commercetools/test-data/commit/516a1f60b9930da224e96e82c99f39092f03f128) Thanks [@Rombelirk](https://github.com/Rombelirk)! - The `ProductSelection` and `ProductSelectionDraft` models have been refactored to use the new implementation patterns but that does not affect consumers..
+  Added new submodel to the ProductSelection model:
+
+  - `ProductOfSelection`
+
+  You can use it like this:
+
+  ```ts
+  import { ProductOfSelectionGraphql } from '@commercetools/composable-commerce-test-data/product-selection';
+
+  const productOfSelectionModel = ProductOfSelectionGraphql.random().build();
+  ```
+
+  This submodel is now used to populate the required `productRefs` field of the ProductSelection GraphQL model, which was previously `null` by default.
+
+- [#817](https://github.com/commercetools/test-data/pull/817) [`58a2db6`](https://github.com/commercetools/test-data/commit/58a2db6b8730e0d2d315d98a676cbaaa678c74d1) Thanks [@krishhna123](https://github.com/krishhna123)! - added missing import for cart-discount-custom-line-items-target
+
+- [#811](https://github.com/commercetools/test-data/pull/811) [`15295ad`](https://github.com/commercetools/test-data/commit/15295add8ca475a907651ce3a824588f4ef624f6) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - B2C Lifestyle Presets - Fix shipping method zone rates in the shipping-method data models.
+
+- [#813](https://github.com/commercetools/test-data/pull/813) [`fddc2a7`](https://github.com/commercetools/test-data/commit/fddc2a7756288c5368fe558240d5fe07ce1d1f29) Thanks [@ahmehri](https://github.com/ahmehri)! - fix(product-data): update slug generation to match pattern
+
+  Source: https://docs.commercetools.com/api/projects/products#productdata
+
+- [#810](https://github.com/commercetools/test-data/pull/810) [`f0e33e3`](https://github.com/commercetools/test-data/commit/f0e33e3d0611acff158ddac747bc2fc243c04969) Thanks [@emmenko](https://github.com/emmenko)! - We've moved the `Cart` and `CartDiscount` models directories within the repository for better readability. This does not imply any change from the consumers side.
+
 ## 11.0.0
 
 ### Major Changes

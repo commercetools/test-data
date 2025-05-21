@@ -1,5 +1,5 @@
 import { sequence, fake, Generator } from '@/core';
-import { McProject } from '@/models/project';
+import { McProject } from '@/models/project/project';
 import { createRelatedDates } from '@/utils';
 import { fakeBusinessRoles } from '../constants';
 import * as IdTokenUserInfo from './id-token-user-info';
