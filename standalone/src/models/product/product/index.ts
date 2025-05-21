@@ -1,30 +1,27 @@
-// export * as ProductDraft from './product-draft';
+// Export types
+export * from './attribute/types';
+export * from './image/types';
+export * from './product-catalog-data/types';
+export * from './product-data/types';
+export * from './product-data/category-order-hint/types';
+export * from './product-data/search-keyword/types';
+export * from './product-data/search-keywords/types';
 
-import {
-  CompatProductModelBuilder,
-  GraphqlModelBuilder,
-  RestModelBuilder,
-} from './builders';
-import * as constants from './constants';
-import * as modelPresets from './presets';
+// Export models
+export * as Attribute from './attribute';
+export * as AttributeDraft from './attribute/attribute-draft';
 
-export * from './types';
+export * as Image from './image';
+export * as ImageDraft from './image/image-draft';
 
-export const ProductRest = {
-  random: RestModelBuilder,
-  presets: modelPresets.restPresets,
-};
+export * from './product';
+export * from './product/product-draft';
 
-export const ProductGraphql = {
-  random: GraphqlModelBuilder,
-  presets: modelPresets.graphqlPresets,
-};
+export * from './product-catalog-data';
 
-/**
- * @deprecated Use `ProductRest` or `ProductGraphql` exported models instead of `Product`.
- */
-export const Product = {
-  random: CompatProductModelBuilder,
-  presets: modelPresets.compatPresets,
-  constants,
-};
+export * from './product-data';
+
+export * from './product-variant';
+export * from './product-variant/product-variant-draft';
+
+export * from './selection-of-product';
