@@ -1,5 +1,5 @@
 import { TBuilder } from '@/core';
-import { ChannelDraft, TChannelDraft } from '../../../../../channel';
+import { ChannelDraft, TChannelDraft } from '@/models/channel';
 import { MoneyDraft, PriceDraft, KeyReferenceDraft } from '@/models/commons';
 import { AttributeDraft } from '../../../../attribute';
 import { ImageDraft } from '../../../../image';
