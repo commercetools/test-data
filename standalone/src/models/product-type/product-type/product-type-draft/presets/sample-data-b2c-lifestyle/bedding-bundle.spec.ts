@@ -161,10 +161,8 @@ describe(`with beddingBundle preset`, () => {
             ],
             "name": "product-ref",
             "type": {
-              "set": {
-                "elementType": {
-                  "referenceTypeId": "product",
-                },
+              "elementType": {
+                "referenceTypeId": "product",
               },
             },
           },

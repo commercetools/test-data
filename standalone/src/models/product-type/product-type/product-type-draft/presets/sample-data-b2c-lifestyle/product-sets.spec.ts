@@ -105,10 +105,8 @@ describe(`with productSets preset`, () => {
             ],
             "name": "type",
             "type": {
-              "set": {
-                "elementType": {
-                  "dummy": null,
-                },
+              "elementType": {
+                "dummy": null,
               },
             },
           },
