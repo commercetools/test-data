@@ -4,7 +4,7 @@ import { CustomerDraft, type TCustomerDraft } from '@/models/customer/customer';
 import {
   ProductVariantDraft,
   type TProductVariantDraft,
-} from '../../../../../../product';
+} from '@/models/product/product';
 import {
   ShippingMethodDraft,
   type TShippingMethodDraft,
