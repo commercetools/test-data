@@ -226,9 +226,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "capacity",
             "type": {
-              "number": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -462,9 +460,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "model",
             "type": {
-              "number": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
         ],

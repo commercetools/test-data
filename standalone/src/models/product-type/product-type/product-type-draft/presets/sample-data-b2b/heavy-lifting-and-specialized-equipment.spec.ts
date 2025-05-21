@@ -281,9 +281,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             ],
             "name": "capacity",
             "type": {
-              "number": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
