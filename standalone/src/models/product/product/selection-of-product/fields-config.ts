@@ -1,6 +1,6 @@
 import { fake, oneOf, type TModelFieldsConfig } from '@/core';
 import { ReferenceGraphql } from '@/models/commons';
-import { ProductSelection } from '@/models/product-selection';
+import { ProductSelection } from '@/models/product/product-selection';
 import { createRelatedDates } from '@/utils';
 import type { TSelectionOfProductGraphql } from './types';
 
