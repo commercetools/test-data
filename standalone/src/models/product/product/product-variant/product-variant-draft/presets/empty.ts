@@ -1,14 +1,14 @@
 import { TBuilder } from '@/core';
 import {
-  ProductVariantDraft,
-  ProductVariantDraftGraphql,
-  ProductVariantDraftRest,
-} from '..';
-import {
   TProductVariantDraft,
   TProductVariantDraftGraphql,
   TProductVariantDraftRest,
 } from '../../types';
+import {
+  ProductVariantDraft,
+  ProductVariantDraftGraphql,
+  ProductVariantDraftRest,
+} from '../index';
 
 const populatePreset = <
   TModel extends TProductVariantDraftGraphql | TProductVariantDraftRest,
