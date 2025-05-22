@@ -14,6 +14,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationMenuLinkG
       labelAllLocales: fake(() => [LocalizedField.random()]),
       defaultLabel: fake((f) => f.lorem.word()),
       permissions: [],
-      icon: '<svg><path fill="#000000" /></svg>',
+      __typename: fake((f) => 'CustomApplicationMenuLink'),
     },
   };

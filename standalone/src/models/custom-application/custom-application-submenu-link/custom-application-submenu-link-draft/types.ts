@@ -1,7 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
-import type {
-  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput,
-} from '@commercetools-test-data/graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomApplicationSubmenuLinkDraftDataInput } from '@/graphql-types';
 
 export type TCustomApplicationSubmenuLinkDraftGraphql =
   TMcSettingsCustomApplicationSubmenuLinkDraftDataInput;

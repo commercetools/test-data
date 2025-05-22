@@ -1,8 +1,8 @@
 import type { TBuilder } from '@/core';
-import type { TMcSettingsCustomApplicationMenuLinkDraft } from '@/graphql-types';
+import type { TMcSettingsCustomApplicationMenuLinkDraftDataInput } from '@/graphql-types';
 
 export type TCustomApplicationMenuLinkDraftGraphql =
-  TMcSettingsCustomApplicationMenuLinkDraft;
+  TMcSettingsCustomApplicationMenuLinkDraftDataInput;
 
 export type TCreateCustomApplicationMenuLinkDraftBuilder<
   TModel extends TCustomApplicationMenuLinkDraftGraphql,

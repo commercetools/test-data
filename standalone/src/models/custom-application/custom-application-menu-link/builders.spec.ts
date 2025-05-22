@@ -1,10 +1,14 @@
+import type { TCustomApplicationMenuLinkGraphql } from './types';
 import { CustomApplicationMenuLinkGraphql } from './index';
-describe('CustomApplicationMenuLink', () => {
-  it('builds a GraphQL model', () => {
-    const graphqlModel = CustomApplicationMenuLinkGraphql.random().build();
 
-    expect(graphqlModel).toEqual(
+describe('builder', () => {
+  it('GraphQL model', () => {
+    const graphqlModel =
+      CustomApplicationMenuLinkGraphql.random().buildGraphql<TCustomApplicationMenuLinkGraphql>();
+
+    expect(graphqlModel).toMatchObject(
       expect.objectContaining({
+        __typename: 'CustomApplicationMenuLink',
         createdAt: expect.any(String),
         id: expect.any(String),
         updatedAt: expect.any(String),
@@ -16,7 +20,6 @@ describe('CustomApplicationMenuLink', () => {
         ],
         defaultLabel: expect.any(String),
         permissions: [],
-        icon: expect.any(String),
       })
     );
   });

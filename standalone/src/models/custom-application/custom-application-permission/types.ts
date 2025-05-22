@@ -1,5 +1,5 @@
-import type { TBuilder } from '@commercetools-test-data/core';
-import type { TMcSettingsCustomApplicationPermission } from '@commercetools-test-data/graphql-types';
+import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomApplicationPermission } from '@/graphql-types';
 
 export type TCustomApplicationPermissionGraphql =
   TMcSettingsCustomApplicationPermission;

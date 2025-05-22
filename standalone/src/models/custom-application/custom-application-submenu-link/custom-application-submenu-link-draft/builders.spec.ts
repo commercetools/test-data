@@ -1,8 +1,9 @@
+import type { TCustomApplicationSubmenuLinkDraftGraphql } from './types';
 import { CustomApplicationSubmenuLinkDraftGraphql } from './index';
-describe('CustomApplicationSubmenuLinkDraft', () => {
-  it('builds a GraphQL model', () => {
+describe('builder', () => {
+  it('GraphQL model', () => {
     const graphqlModel =
-      CustomApplicationSubmenuLinkDraftGraphql.random().build();
+      CustomApplicationSubmenuLinkDraftGraphql.random().buildGraphql<TCustomApplicationSubmenuLinkDraftGraphql>();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({

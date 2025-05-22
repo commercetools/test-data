@@ -1,6 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
-import { supportedViewOAuthScopes } from './constants';
+import { supportedViewOAuthScopes } from '../constants';
 import type { TCustomApplicationPermissionGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -15,5 +15,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationPermissio
       oAuthScopes: fake((f) =>
         f.helpers.arrayElements(supportedViewOAuthScopes, 2)
       ),
+      __typename: fake((f) => 'CustomApplicationPermission'),
     },
   };

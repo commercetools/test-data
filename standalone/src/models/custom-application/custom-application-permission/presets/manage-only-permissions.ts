@@ -1,9 +1,9 @@
 import { entryPointUriPathToResourceAccesses } from '@commercetools-frontend/application-config/ssr';
-import type { TBuilder } from '@commercetools-test-data/core';
 import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import { supportedManageOAuthScopes } from '../constants';
+import type { TBuilder } from '@/core';
+import { supportedManageOAuthScopes } from '../../constants';
 import { CustomApplicationPermissionGraphql } from '../index';
 import type { TCustomApplicationPermissionGraphql } from '../types';
 

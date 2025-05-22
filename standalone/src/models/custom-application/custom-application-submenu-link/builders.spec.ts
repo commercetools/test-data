@@ -1,10 +1,13 @@
+import type { TCustomApplicationSubmenuLinkGraphql } from './types';
 import { CustomApplicationSubmenuLinkGraphql } from './index';
-describe('CustomApplicationSubmenuLink', () => {
-  it('builds a GraphQL model', () => {
-    const graphqlModel = CustomApplicationSubmenuLinkGraphql.random().build();
+describe('builder', () => {
+  it('GraphQL model', () => {
+    const graphqlModel =
+      CustomApplicationSubmenuLinkGraphql.random().buildGraphql<TCustomApplicationSubmenuLinkGraphql>();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
+        __typename: 'CustomApplicationSubmenuLink',
         permissions: expect.any(Array),
         createdAt: expect.any(String),
         id: expect.any(String),
