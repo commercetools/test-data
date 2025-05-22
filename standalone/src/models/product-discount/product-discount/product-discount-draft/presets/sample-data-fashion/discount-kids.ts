@@ -1,4 +1,4 @@
-import { LocalizedStringDraft } from '../../../../../commons';
+import { LocalizedStringDraft } from '@/models/commons';
 import { ProductDiscountValueRelativeDraft } from '../../../../index';
 import type { TProductDiscountDraftBuilder } from '../../../types';
 import * as ProductDiscountDraft from '../../index';

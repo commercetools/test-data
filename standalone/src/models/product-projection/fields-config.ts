@@ -1,6 +1,6 @@
 import { type TModelFieldsConfig, fake, sequence } from '@/core';
 import { LocalizedString, Reference } from '@/models/commons';
-import { ProductVariant } from '@/models/product';
+import { ProductVariant } from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
 import { createRelatedDates } from '@/utils';
 import type {

@@ -3,7 +3,7 @@
 import { createBuilderSpec } from '@/core/test-utils';
 import { Category } from '@/models/category';
 import { LocalizedString } from '@/models/commons';
-import { ProductVariant } from '@/models/product';
+import { ProductVariant } from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
 import { State } from '@/models/state';
 import { TaxCategory } from '@/models/tax-category';
