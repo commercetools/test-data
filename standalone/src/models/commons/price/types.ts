@@ -1,9 +1,15 @@
-import type { Price, PriceDraft } from '@commercetools/platform-sdk';
+import type { Price, PriceDraft, Reference } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import { TCtpProductPrice, TCtpProductPriceDataInput } from '@/graphql-types';
 
-export type TPrice = Price;
-export type TPriceDraft = PriceDraft;
+export type TPrice = Price & {
+  // @TODO: remove this once the recurrencePolicyRef is available in the SDK
+  recurrencePolicyRef: Reference | null;
+};
+export type TPriceDraft = PriceDraft & {
+  // @TODO: remove this once the recurrencePolicyRef is available in the SDK
+  recurrencePolicyRef: Reference | null;
+};
 
 export type TPriceGraphql = TCtpProductPrice;
 export type TPriceDraftGraphql = TCtpProductPriceDataInput;

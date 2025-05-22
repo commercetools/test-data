@@ -10,6 +10,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicyRef',
     ],
   }),
   rest: Transformer<TPrice, TPrice>('rest', {
@@ -20,6 +21,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicyRef',
     ],
   }),
   graphql: Transformer<TPrice, TPriceGraphql>('graphql', {
@@ -30,6 +32,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicyRef',
     ],
     addFields: () => ({
       __typename: 'ProductPrice',
