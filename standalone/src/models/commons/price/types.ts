@@ -14,7 +14,9 @@ export type TPriceDraft = PriceDraft & {
 export type TPriceGraphql = TCtpProductPrice;
 export type TPriceDraftGraphql = TCtpProductPriceDataInput;
 
+// @TODO: Replace TPrice and TPriceDraft with the SDK imports once the recurrencePolicyRef is available in the SDK
 export type TPriceBuilder = TBuilder<TPrice>;
 export type TPriceDraftBuilder = TBuilder<TPriceDraft>;
+
 export type TCreatePriceBuilder = () => TPriceBuilder;
 export type TCreatePriceDraftBuilder = () => TPriceDraftBuilder;

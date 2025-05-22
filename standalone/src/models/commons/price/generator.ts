@@ -1,8 +1,8 @@
-import type { Price } from '@commercetools/platform-sdk';
 import { fake, Generator } from '@/core';
 import { createRelatedDates } from '@/utils';
 import * as CentPrecisionMoney from '../cent-precision-money';
-import { TPrice } from './types';
+// @TODO: Replace this with the SDK import once the recurrencePolicyRef is available in the SDK
+import type { TPrice } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
