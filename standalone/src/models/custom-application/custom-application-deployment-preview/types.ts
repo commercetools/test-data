@@ -1,5 +1,5 @@
-import type { TMcSettingsCustomApplicationDeploymentPreview } from '@commercetools-test-data/graphql-types';
 import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomApplicationDeploymentPreview } from '@/graphql-types';
 
 export type TCustomApplicationDeploymentPreviewGraphql =
   TMcSettingsCustomApplicationDeploymentPreview;

@@ -1,5 +1,5 @@
-import type { TMcSettingsCustomApplicationDraftDataInput } from '@commercetools-test-data/graphql-types';
 import type { TBuilder } from '@/core';
+import type { TMcSettingsCustomApplicationDraftDataInput } from '@/graphql-types';
 
 export type TCustomApplicationDraftGraphql =
   TMcSettingsCustomApplicationDraftDataInput;

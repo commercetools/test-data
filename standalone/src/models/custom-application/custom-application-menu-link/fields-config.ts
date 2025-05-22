@@ -15,5 +15,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationMenuLinkG
       defaultLabel: fake((f) => f.lorem.word()),
       permissions: [],
       __typename: fake((f) => 'CustomApplicationMenuLink'),
+      icon: fake(() => '<svg><path fill="#000000" /></svg>'),
+      submenuLinks: [],
+      iconName: fake((f) => f.lorem.word()),
     },
   };
