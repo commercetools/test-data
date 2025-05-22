@@ -1,6 +1,6 @@
 import { LocalizedString } from '@/models/commons';
 import { AttributeBooleanType } from '../../attribute-boolean-type';
-import * as AttributeDefinition from '../../attribute-definition';
+import { AttributeDefinition } from '../../attribute-definition';
 import { AttributeTextType } from '../../attribute-text-type';
 import ProductType from '../builder';
 import { TProductTypeBuilder } from '../types';
