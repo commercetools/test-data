@@ -26,6 +26,7 @@ describe('builder', () => {
         tiers: null,
         discounted: null,
         custom: null,
+        recurrencePolicyRef: null,
       })
     )
   );
@@ -51,6 +52,7 @@ describe('builder', () => {
         tiers: null,
         discounted: null,
         custom: null,
+        recurrencePolicyRef: null,
       })
     )
   );
@@ -77,6 +79,7 @@ describe('builder', () => {
         tiers: null,
         discounted: null,
         custom: null,
+        recurrencePolicyRef: null,
         __typename: 'ProductPrice',
       })
     )

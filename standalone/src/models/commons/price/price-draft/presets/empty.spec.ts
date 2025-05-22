@@ -18,4 +18,7 @@ it(`should set all specified fields to undefined`, () => {
   expect(emptyPriceDraft.tiers).toMatchInlineSnapshot(`undefined`);
   expect(emptyPriceDraft.discounted).toMatchInlineSnapshot(`undefined`);
   expect(emptyPriceDraft.custom).toMatchInlineSnapshot(`undefined`);
+  expect(emptyPriceDraft.recurrencePolicyRef).toMatchInlineSnapshot(
+    `undefined`
+  );
 });
