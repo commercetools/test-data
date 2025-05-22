@@ -45,8 +45,8 @@ export * from './attribute-reference-type';
 export * from './attribute-reference-type/attribute-reference-type-draft';
 export * from './attribute-text-type';
 export * from './attribute-text-type/attribute-text-type-draft';
-export * as AttributeTimeType from './attribute-time-type';
-export * as AttributeTimeTypeDraft from './attribute-time-type/attribute-time-type-draft';
+export * from './attribute-time-type';
+export * from './attribute-time-type/attribute-time-type-draft';
 
 export * as ProductType from './product-type';
 export * as ProductTypeDraft from './product-type/product-type-draft';

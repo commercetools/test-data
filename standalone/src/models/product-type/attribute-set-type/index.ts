@@ -22,5 +22,3 @@ export const AttributeSetType = {
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
 };
-
-export * from './types';

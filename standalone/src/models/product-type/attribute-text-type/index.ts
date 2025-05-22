@@ -22,5 +22,3 @@ export const AttributeTextType = {
   random: CompatModelBuilder,
   presets: modelPresets.compatPresets,
 };
-
-export * from './types';
