@@ -1,12 +1,12 @@
-import type { Price } from '@commercetools/platform-sdk';
 import { fake, Generator } from '@/core';
 import { createRelatedDates } from '@/utils';
 import * as CentPrecisionMoney from '../cent-precision-money';
-
+// @TODO: should fallback to the SDK import type once recurrencePolicy is available in the SDK
+import type { TPrice } from './types';
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 // https://docs.commercetools.com/api/types#price
-const generator = Generator<Price>({
+const generator = Generator<TPrice>({
   fields: {
     id: fake((f) => f.string.uuid()),
     key: null,
@@ -19,6 +19,7 @@ const generator = Generator<Price>({
     tiers: null,
     discounted: null,
     custom: null,
+    recurrencePolicy: null,
   },
 });
 
