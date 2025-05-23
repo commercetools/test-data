@@ -10,7 +10,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationGraphql> =
   {
     fields: {
-      __typename: fake((f) => 'RestrictedCustomApplicationForOrganization'),
+      __typename: 'RestrictedCustomApplicationForOrganization',
       id: fake((f) => f.string.uuid()),
       createdAt: fake(getOlderDate),
       updatedAt: fake(getNewerDate),

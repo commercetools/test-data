@@ -15,6 +15,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationSubmenuLi
       defaultLabel: fake((f) => f.lorem.word()),
       labelAllLocales: fake(() => [LocalizedField.random()]),
       permissions: [],
-      __typename: fake((f) => 'CustomApplicationSubmenuLink'),
+      __typename: 'CustomApplicationSubmenuLink',
     },
   };

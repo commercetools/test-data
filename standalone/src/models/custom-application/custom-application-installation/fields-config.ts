@@ -8,9 +8,7 @@ const [getOlderDate, getNewerDate] = createRelatedDates();
 export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationInstallationGraphql> =
   {
     fields: {
-      __typename: fake(
-        () => 'RestrictedCustomApplicationInstallationForOrganization'
-      ),
+      __typename: 'RestrictedCustomApplicationInstallationForOrganization',
       acceptedPermissions: fake(() => [
         CustomApplicationInstallationPermissionGraphql.presets.ViewOnlyPermissions(),
         CustomApplicationInstallationPermissionGraphql.presets.ManageOnlyPermissions(),

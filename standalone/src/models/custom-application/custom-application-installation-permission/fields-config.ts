@@ -15,6 +15,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationInstallat
       oAuthScopes: fake((f) =>
         f.helpers.arrayElements(supportedViewOAuthScopes, 2)
       ),
-      __typename: fake(() => 'CustomApplicationInstallationPermission'),
+      __typename: 'CustomApplicationInstallationPermission',
     },
   };

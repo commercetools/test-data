@@ -12,6 +12,6 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationDeploymen
       updatedAt: fake(getNewerDate),
       alias: fake((f) => slugify(f.lorem.word())),
       url: fake((f) => f.internet.url()),
-      __typename: fake((f) => 'CustomApplicationDeploymentPreview'),
+      __typename: 'CustomApplicationDeploymentPreview',
     },
   };
