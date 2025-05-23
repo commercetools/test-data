@@ -11,6 +11,7 @@ const empty = (): TPriceDraftBuilder =>
     .validUntil(undefined)
     .tiers(undefined)
     .discounted(undefined)
-    .custom(undefined);
+    .custom(undefined)
+    .recurrencePolicy(undefined);
 
 export default empty;

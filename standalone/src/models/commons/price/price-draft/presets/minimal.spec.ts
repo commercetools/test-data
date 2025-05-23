@@ -19,6 +19,7 @@ describe('minimal preset', () => {
         centAmount: expect.any(Number),
         currencyCode: expect.any(String),
       },
+      recurrencePolicy: null,
     });
   });
 });

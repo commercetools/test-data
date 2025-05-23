@@ -11,6 +11,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicy',
     ],
   }),
   rest: Transformer<TPriceDraft, TPriceDraft>('rest', {
@@ -21,6 +22,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicy',
     ],
   }),
   graphql: Transformer<TPriceDraft, TPriceDraftGraphql>('graphql', {
@@ -31,6 +33,7 @@ const transformers = {
       'tiers',
       'discounted',
       'custom',
+      'recurrencePolicy',
     ],
     replaceFields: ({ fields }) => {
       return {

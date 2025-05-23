@@ -18,6 +18,7 @@ const generator = Generator<TPriceDraft>({
     tiers: null,
     discounted: null,
     custom: null,
+    recurrencePolicy: null,
   },
 });
 
