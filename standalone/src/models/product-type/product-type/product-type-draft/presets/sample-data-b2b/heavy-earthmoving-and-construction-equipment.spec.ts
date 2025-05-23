@@ -226,9 +226,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "capacity",
             "type": {
-              "number": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -281,9 +279,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "iso45001",
             "type": {
-              "boolean": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
           {
@@ -336,12 +332,8 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "relatedProducts",
             "type": {
-              "set": {
-                "elementType": {
-                  "reference": {
-                    "referenceTypeId": "product",
-                  },
-                },
+              "elementType": {
+                "referenceTypeId": "product",
               },
             },
           },
@@ -395,26 +387,25 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "mobility",
             "type": {
-              "enum": {
-                "values": [
-                  {
-                    "key": "tracked",
-                    "label": "Tracked",
-                  },
-                  {
-                    "key": "wheeled",
-                    "label": "Wheeled",
-                  },
-                  {
-                    "key": "fixed",
-                    "label": "Fixed",
-                  },
-                  {
-                    "key": "marine",
-                    "label": "Marine",
-                  },
-                ],
-              },
+              "name": "enum",
+              "values": [
+                {
+                  "key": "tracked",
+                  "label": "Tracked",
+                },
+                {
+                  "key": "wheeled",
+                  "label": "Wheeled",
+                },
+                {
+                  "key": "fixed",
+                  "label": "Fixed",
+                },
+                {
+                  "key": "marine",
+                  "label": "Marine",
+                },
+              ],
             },
           },
           {
@@ -467,9 +458,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             ],
             "name": "model",
             "type": {
-              "number": {
-                "dummy": null,
-              },
+              "dummy": null,
             },
           },
         ],

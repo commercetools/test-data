@@ -1,11 +1,34 @@
-import type { TAttributeDefinitionDraftBuilder } from '../../types';
-import AttributeDefinition from '../builder';
+import { TBuilder } from '@/core';
+import {
+  TAttributeDefinitionDraft,
+  TAttributeDefinitionDraftGraphql,
+  TAttributeDefinitionDraftRest,
+} from '../../types';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../builders';
 
-const empty = (): TAttributeDefinitionDraftBuilder =>
-  AttributeDefinition()
+const populateBuilder = <
+  T extends
+    | TAttributeDefinitionDraftRest
+    | TAttributeDefinitionDraftGraphql
+    | TAttributeDefinitionDraft,
+>(
+  builder: TBuilder<T>
+) =>
+  builder
     .attributeConstraint(undefined)
     .inputHint(undefined)
-    .isSearchable(undefined)
+    .isSearchable(false)
     .inputTip(undefined);
 
-export default empty;
+export const restPreset = (): TBuilder<TAttributeDefinitionDraftRest> =>
+  populateBuilder(RestModelBuilder());
+
+export const graphqlPreset = (): TBuilder<TAttributeDefinitionDraftGraphql> =>
+  populateBuilder(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<TAttributeDefinitionDraft> =>
+  populateBuilder(CompatModelBuilder());

@@ -1,7 +1,7 @@
 import { LocalizedString } from '@/models/commons';
-import AttributeBooleanType from '../../attribute-boolean-type/builder';
-import * as AttributeDefinition from '../../attribute-definition';
-import AttributeTextType from '../../attribute-text-type/builder';
+import { AttributeBooleanType } from '../../attribute-boolean-type';
+import { AttributeDefinition } from '../../attribute-definition';
+import { AttributeTextType } from '../../attribute-text-type';
 import ProductType from '../builder';
 import { TProductTypeBuilder } from '../types';
 
@@ -21,7 +21,7 @@ const milk = (): TProductTypeBuilder =>
         .inputHint('MultiLine')
         .isRequired(true)
         .isSearchable(true)
-        .type(AttributeBooleanType()),
+        .type(AttributeBooleanType.random()),
       AttributeDefinition.random()
         .attributeConstraint('SameForAll')
         .name('cow-name')
@@ -38,7 +38,7 @@ const milk = (): TProductTypeBuilder =>
         .inputHint('SingleLine')
         .isRequired(true)
         .isSearchable(false)
-        .type(AttributeTextType()),
+        .type(AttributeTextType.random()),
     ]);
 
 export default milk;

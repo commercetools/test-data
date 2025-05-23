@@ -4,40 +4,33 @@ import {
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import {
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@/models/commons';
+  TCtpAttributeDefinition,
+  TCtpAttributeDefinitionDraft,
+} from '@/graphql-types';
 
+/**
+ * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead
+ */
 export type TAttributeDefinition = AttributeDefinition;
 
+/**
+ * @deprecated use `TAttributeDefinitionDraftRest` or `TAttributeDefinitionDraftGraphql` instead
+ */
 export type TAttributeDefinitionDraft = AttributeDefinitionDraft;
 
-export type TAttributeDefinitionGraphql = Omit<
-  TAttributeDefinition,
-  'label' | 'inputTip'
-> & {
-  label: string;
-  labelAllLocales: TLocalizedStringGraphql | null;
-  inputTip: string;
-  inputTipAllLocales: TLocalizedStringGraphql | null;
-  __typename: 'AttributeDefinition';
-};
+// REST types
+export type TAttributeDefinitionRest = AttributeDefinition;
+export type TAttributeDefinitionDraftRest = AttributeDefinitionDraft;
 
-export type TAttributeDefinitionDraftGraphql = Omit<
-  TAttributeDefinitionDraft,
-  'label' | 'inputTip'
-> & {
-  label: TLocalizedStringDraftGraphql;
-  inputTip?: TLocalizedStringDraftGraphql | null;
-};
+// GraphQL types
+export type TAttributeDefinitionGraphql = TCtpAttributeDefinition;
+export type TAttributeDefinitionDraftGraphql = TCtpAttributeDefinitionDraft;
 
-export type TAttributeDefinitionBuilder = TBuilder<TAttributeDefinition>;
-
-export type TAttributeDefinitionDraftBuilder =
-  TBuilder<TAttributeDefinitionDraft>;
-
-export type TCreateAttributeDefinitionBuilder =
-  () => TAttributeDefinitionBuilder;
-
-export type TCreateAttributeDefinitionDraftBuilder =
-  () => TAttributeDefinitionDraftBuilder;
+// Builders types
+export type TCreateAttributeDefinitionBuilder<
+  TAttributeDefinitionModel extends
+    | TAttributeDefinitionRest
+    | TAttributeDefinitionDraftRest
+    | TAttributeDefinitionGraphql
+    | TAttributeDefinitionDraftGraphql,
+> = () => TBuilder<TAttributeDefinitionModel>;
