@@ -4,12 +4,6 @@ import type { TMcSettingsCustomApplicationDeploymentPreview } from '@/graphql-ty
 export type TCustomApplicationDeploymentPreviewGraphql =
   TMcSettingsCustomApplicationDeploymentPreview;
 
-export type TCustomApplicationDeploymentPreview = Omit<
-  TCustomApplicationDeploymentPreviewGraphql,
-  '__typename'
->;
-
-export type TCustomApplicationDeploymentPreviewBuilder =
-  TBuilder<TCustomApplicationDeploymentPreview>;
-export type TCreateCustomApplicationDeploymentPreviewBuilder =
-  () => TCustomApplicationDeploymentPreviewBuilder;
+export type TCreateCustomApplicationDeploymentPreviewBuilder<
+  TModel extends TCustomApplicationDeploymentPreviewGraphql,
+> = () => TBuilder<TModel>;

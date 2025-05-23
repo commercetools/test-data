@@ -1,5 +1,15 @@
-export * as CustomApplicationDraft from './custom-application-draft';
+import { GraphqlModelBuilder } from './builders';
+import * as CustomApplicationPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export const CustomApplicationGraphql = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `CustomApplicationGraphql` exported model instead of `CustomApplication`.
+ */
+export const CustomApplication = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationPresets.graphqlPresets,
+};

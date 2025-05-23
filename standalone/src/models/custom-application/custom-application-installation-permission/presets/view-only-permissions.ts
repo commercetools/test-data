@@ -2,15 +2,23 @@ import { entryPointUriPathToResourceAccesses } from '@commercetools-frontend/app
 import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
-import { supportedViewOAuthScopes } from '../../custom-application-permission/custom-application-permission/constants';
-import CustomApplicationInstallationPermission from '../builder';
+import type { TBuilder } from '@/core';
+import { supportedViewOAuthScopes } from '../../constants';
+import { CustomApplicationInstallationPermissionGraphql } from '../index';
+import type { TCustomApplicationInstallationPermissionGraphql } from '../types';
 
-const preset = (entryPointUriPath = 'avengers', additionalPermission = '') => {
+const populatePreset = <
+  TModel extends TCustomApplicationInstallationPermissionGraphql,
+>(
+  builder: TBuilder<TModel>,
+  entryPointUriPath: string = 'avengers',
+  additionalPermission: string = ''
+) => {
   const resourceAccesses = entryPointUriPathToResourceAccesses(
     entryPointUriPath,
     [additionalPermission]
   );
-  return CustomApplicationInstallationPermission()
+  return builder
     .name(
       !additionalPermission
         ? resourceAccesses.view
@@ -20,4 +28,6 @@ const preset = (entryPointUriPath = 'avengers', additionalPermission = '') => {
     .oAuthScopes(sampleSize(supportedViewOAuthScopes, 1));
 };
 
-export default preset;
+export const graphqlPreset =
+  (): TBuilder<TCustomApplicationInstallationPermissionGraphql> =>
+    populatePreset(CustomApplicationInstallationPermissionGraphql.random());
