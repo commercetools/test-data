@@ -1,1 +1,1 @@
-export * from './models/product-discount';
+export * from './models/product/product-discount';

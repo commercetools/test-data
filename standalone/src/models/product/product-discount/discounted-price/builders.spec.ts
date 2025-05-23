@@ -1,7 +1,7 @@
 import {
   DiscountedPriceRest,
   DiscountedPriceGraphql,
-} from '@/models/product-discount';
+} from '@/models/product/product-discount';
 
 describe('DiscountedPrice Builder', () => {
   it('should build properties for the discounted price REST representation', () => {

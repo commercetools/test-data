@@ -2,7 +2,7 @@ import { KeyReferenceDraft } from '../../../../../commons';
 import {
   ProductSelectionDraft,
   type TProductSelectionDraft,
-} from '../../../../../product-selection';
+} from '../../../../../product/product-selection';
 import type { TProductSelectionSettingDraftBuilder } from '../../../types';
 import ProductSelectionSettingDraft from '../../builder';
 
