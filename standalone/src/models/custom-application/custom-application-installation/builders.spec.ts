@@ -19,6 +19,8 @@ describe('builder', () => {
         }),
       ]),
       application: expect.objectContaining({
+        // TODO: add typename field once application model is using
+        // TMcSettingsRestrictedCustomApplicationForProject based model
         name: expect.any(String),
         description: expect.any(String),
         url: expect.any(String),

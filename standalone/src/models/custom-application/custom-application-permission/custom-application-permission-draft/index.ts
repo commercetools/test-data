@@ -5,3 +5,11 @@ export const CustomApplicationPermissionDraftGraphql = {
   random: GraphqlModelBuilder,
   presets: CustomApplicationPermissionDraftPresets.graphqlPresets,
 };
+
+/**
+ * @deprecated Use `CustomApplicationPermissionDraftGraphql` exported model instead of `CustomApplicationPermissionDraft`.
+ */
+export const CustomApplicationPermissionDraft = {
+  random: GraphqlModelBuilder,
+  presets: CustomApplicationPermissionDraftPresets.graphqlPresets,
+};
