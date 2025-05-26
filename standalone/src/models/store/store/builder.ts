@@ -1,12 +1,32 @@
-import { Builder } from '@/core';
-import generator from './generator';
-import transformers from './transformers';
-import type { TCreateStoreBuilder, TStore } from './types';
+import {
+  createCompatibilityBuilder,
+  createSpecializedBuilder,
+  type TModelFieldsConfig,
+} from '@/core';
+import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
+import type { TCreateStoreBuilder, TStoreGraphql, TStoreRest } from './types';
 
-const Model: TCreateStoreBuilder = () =>
-  Builder<TStore>({
-    generator,
-    transformers,
+export const RestModelBuilder: TCreateStoreBuilder<TStoreRest> = () =>
+  createSpecializedBuilder({
+    modelFieldsConfig: restFieldsConfig,
+    type: 'rest',
+    name: 'store',
   });
 
-export default Model;
+export const GraphqlModelBuilder: TCreateStoreBuilder<TStoreGraphql> = () =>
+  createSpecializedBuilder({
+    modelFieldsConfig: graphqlFieldsConfig,
+    type: 'graphql',
+    name: 'store',
+  });
+
+export const CompatModelBuilder = <
+  TStoreModel extends TStoreGraphql | TStoreRest,
+>() =>
+  createCompatibilityBuilder<TStoreModel>({
+    name: 'StoreCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TStoreModel>,
+      graphql: graphqlFieldsConfig as TModelFieldsConfig<TStoreModel>,
+    },
+  });

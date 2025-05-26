@@ -1,15 +1,14 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-
 import { createBuilderSpec } from '@/core/test-utils';
-import type { TStore, TStoreGraphql } from './types';
-import * as Store from './index';
+import type { TStore, TStoreGraphql, TStoreRest } from './types';
+import { StoreRest, StoreGraphql, Store } from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TStore, TStore>(
+    ...createBuilderSpec<TStoreRest, TStoreRest>(
       'default',
-      Store.random(),
+      StoreRest.random(),
       expect.objectContaining({
         key: expect.any(String),
         name: expect.objectContaining({
@@ -66,9 +65,9 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TStore, TStoreGraphql>(
+    ...createBuilderSpec<TStoreGraphql, TStoreGraphql>(
       'graphql',
-      Store.random(),
+      StoreGraphql.random(),
       expect.objectContaining({
         __typename: 'Store',
         id: expect.any(String),

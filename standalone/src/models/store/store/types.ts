@@ -1,22 +1,17 @@
-import type { Store, StoreDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@/core';
-import {
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@/models/commons';
+import { Store, StoreDraft } from '@commercetools/platform-sdk';
+import { TBuilder } from '@/core';
+import { TCtpStore } from '@/graphql-types';
 
-//StoreDraft
-export type TStoreDraft = StoreDraft;
-export type TStoreDraftBuilder = TBuilder<TStoreDraft>;
-export type TCreateStoreDraftBuilder = () => TStoreDraftBuilder;
-export type TStoreDraftGraphql = Omit<TStoreDraft, 'name'> & {
-  name: TLocalizedStringDraftGraphql | null;
-};
-//Store
-export type TStore = Store;
-export type TStoreBuilder = TBuilder<TStore>;
-export type TCreateStoreBuilder = () => TStoreBuilder;
-export type TStoreGraphql = TStore & {
-  __typename: 'Store';
-  nameAllLocales?: TLocalizedStringGraphql | null;
-};
+export type TStoreRest = Store;
+export type TStoreGraphql = TCtpStore;
+export type TStoreDraftRest = StoreDraft;
+export type TStoreDraftGraphql = TStoreDraftRest;
+
+/**
+ * @deprecated Use `TStoreRest` or `TStoreGraphql` instead
+ */
+export type TStore = TStoreRest;
+
+export type TCreateStoreBuilder<
+  TStoreModel extends TStoreRest | TStoreGraphql,
+> = () => TBuilder<TStoreModel>;
