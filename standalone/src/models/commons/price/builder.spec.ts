@@ -1,6 +1,7 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
 import { createBuilderSpec } from '@/core/test-utils';
+import { ReferenceGraphql } from '../reference';
 import type { TPrice, TPriceGraphql } from './types';
 import * as Price from './index';
 
@@ -85,4 +86,14 @@ describe('builder', () => {
       })
     )
   );
+
+  it('should sync ids between recurrencePolicy and recurrencePolicyRef in a GraphQL build', () => {
+    const price = Price.random()
+      .recurrencePolicy(
+        ReferenceGraphql.random().typeId('recurrence-policy').id('123')
+      )
+      .buildGraphql<TPriceGraphql>();
+
+    expect(price.recurrencePolicy?.id).toBe(price.recurrencePolicyRef?.id);
+  });
 });
