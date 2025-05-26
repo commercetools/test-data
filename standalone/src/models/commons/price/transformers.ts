@@ -35,15 +35,19 @@ const transformers = {
       'custom',
       'recurrencePolicy',
     ],
-    addFields: ({ fields }) => ({
-      recurrencePolicyRef: fields.recurrencePolicy
+    replaceFields: ({ fields }) => {
+      const recurrencePolicyRef = fields.recurrencePolicy
         ? ReferenceGraphql.random()
             .typeId('recurrence-policy')
             .id(fields.recurrencePolicy.id)
             .build()
-        : null,
-      __typename: 'ProductPrice',
-    }),
+        : null;
+      return {
+        ...fields,
+        recurrencePolicyRef,
+        __typename: 'ProductPrice',
+      } as TPriceGraphql;
+    },
   }),
 };
 
