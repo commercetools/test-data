@@ -3,6 +3,7 @@ import {
   GraphqlModelBuilder,
   RestModelBuilder,
 } from './builder';
+import * as modelPresets from './presets';
 export { default as presets } from './presets';
 
 export const StoreDraftRest = {
@@ -16,6 +17,10 @@ export const StoreDraftGraphql = {
 /**
  * @deprecated Use `StoreDraftRest` or `StoreDraftGraphql` instead
  */
+
 export const StoreDraft = {
   random: CompatModelBuilder,
+  presets: {
+    empty: modelPresets.default.empty,
+  },
 };

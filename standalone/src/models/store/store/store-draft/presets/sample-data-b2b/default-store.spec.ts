@@ -1,9 +1,9 @@
-import type { TStoreDraft } from '../../../types';
+import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
 import defaultStore from './default-store';
 
 describe(`with defaultStore preset`, () => {
   it(`should return a defaultStore preset`, () => {
-    const defaultStorePreset = defaultStore().build<TStoreDraft>();
+    const defaultStorePreset = defaultStore().build<TStoreDraftRest>();
     expect(defaultStorePreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -52,7 +52,7 @@ describe(`with defaultStore preset`, () => {
 
   it(`should return a defaultStore preset when built for graphql`, () => {
     const defaultStorePresetGraphql =
-      defaultStore().buildGraphql<TStoreDraft>();
+      defaultStore().buildGraphql<TStoreDraftGraphql>();
     expect(defaultStorePresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,
