@@ -4,14 +4,19 @@ import {
   GraphqlModelBuilder,
 } from './builder';
 
-export * as StoreDraft from './store-draft';
-
 export * from './types';
+
+export * from './store-draft';
+
 export const StoreRest = {
   random: RestModelBuilder,
 };
 
 export const StoreGraphql = {
+  random: GraphqlModelBuilder,
+};
+
+export const StoreDraftGraphql = {
   random: GraphqlModelBuilder,
 };
 

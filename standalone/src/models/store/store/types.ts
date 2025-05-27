@@ -12,6 +12,15 @@ export type TStoreDraftGraphql = TStoreDraftRest;
  */
 export type TStore = TStoreRest;
 
+/**
+ * @deprecated Use `TStoreDraftRest` or `TStoreDraftGraphql` instead
+ */
+export type TStoreDraft = TStoreDraftRest;
+
 export type TCreateStoreBuilder<
   TStoreModel extends TStoreRest | TStoreGraphql,
 > = () => TBuilder<TStoreModel>;
+
+export type TCreateStoreDraftBuilder<
+  TStoreDraftModel extends TStoreDraftRest | TStoreDraftGraphql,
+> = () => TBuilder<TStoreDraftModel>;

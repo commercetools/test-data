@@ -6,10 +6,11 @@ import { StoreRest, StoreGraphql, Store } from './index';
 
 describe('builder', () => {
   it(
-    ...createBuilderSpec<TStoreRest, TStoreRest>(
+    ...createBuilderSpec<TStore, TStore>(
       'default',
-      StoreRest.random(),
+      Store.random(),
       expect.objectContaining({
+        id: expect.any(String),
         key: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
@@ -35,11 +36,10 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TStore, TStore>(
+    ...createBuilderSpec<TStoreRest, TStoreRest>(
       'rest',
-      Store.random(),
+      StoreRest.random(),
       expect.objectContaining({
-        id: expect.any(String),
         key: expect.any(String),
         name: expect.objectContaining({
           de: expect.any(String),
