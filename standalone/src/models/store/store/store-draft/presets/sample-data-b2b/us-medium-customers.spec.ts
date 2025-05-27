@@ -1,9 +1,10 @@
-import type { TStoreDraft } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import usMediumCustomers from './us-medium-customers';
 
 describe(`with usMediumCustomers preset`, () => {
   it(`should return a usMediumCustomers preset`, () => {
-    const usMediumCustomersPreset = usMediumCustomers().build<TStoreDraft>();
+    const usMediumCustomersPreset =
+      usMediumCustomers().build<TStoreDraftRest>();
     expect(usMediumCustomersPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -52,7 +53,7 @@ describe(`with usMediumCustomers preset`, () => {
 
   it(`should return a usMediumCustomers preset when built for graphql`, () => {
     const usMediumCustomersPresetGraphql =
-      usMediumCustomers().buildGraphql<TStoreDraft>();
+      usMediumCustomers().buildGraphql<TStoreDraftGraphql>();
     expect(usMediumCustomersPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,

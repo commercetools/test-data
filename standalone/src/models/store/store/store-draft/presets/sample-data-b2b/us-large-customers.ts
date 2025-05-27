@@ -1,12 +1,13 @@
+import { TBuilder } from '@/core';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '../../../../../commons';
 import { ProductSelectionSettingDraft } from '../../../../product-selection-setting/index';
-import type { TStoreDraftBuilder } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import * as StoreDraft from '../../index';
 
-const usLargeCustomers = (): TStoreDraftBuilder =>
+const usLargeCustomers = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
   StoreDraft.presets
     .empty()
     .key('us-large-customers')
