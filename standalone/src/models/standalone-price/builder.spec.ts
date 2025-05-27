@@ -54,6 +54,7 @@ describe('builder', () => {
         staged: null,
         active: expect.any(Boolean),
         expiresAt: expect.any(String),
+        recurrencePolicy: null,
       })
     )
   );
@@ -106,6 +107,7 @@ describe('builder', () => {
         discounted: undefined,
         staged: undefined,
         active: expect.any(Boolean),
+        recurrencePolicy: undefined,
       })
     )
   );
@@ -167,11 +169,12 @@ describe('builder', () => {
         staged: null,
         active: expect.any(Boolean),
         __typename: 'StandalonePrice',
+        recurrencePolicy: null,
       })
     )
   );
 
-  it('should sync ids between customerGroup and customerGroupRef and between channel and channelRef in a GraphQL build', () => {
+  it('should sync reference IDs with their corresponding refs in GraphQL build', () => {
     const standalonePrice =
       StandalonePrice.random().buildGraphql<TStandalonePriceGraphql>();
 
@@ -179,6 +182,10 @@ describe('builder', () => {
       standalonePrice.customerGroupRef?.id
     );
     expect(standalonePrice.channel?.id).toBe(standalonePrice.channelRef?.id);
+
+    expect(standalonePrice.recurrencePolicy?.id).toBe(
+      standalonePrice.recurrencePolicyRef?.id
+    );
   });
 
   describe('StandalonePrice builder currency code consistency', () => {
