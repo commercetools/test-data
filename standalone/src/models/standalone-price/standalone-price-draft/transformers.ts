@@ -9,11 +9,25 @@ const transformers = {
   default: Transformer<TStandalonePriceDraft, TStandalonePriceDraft>(
     'default',
     {
-      buildFields: ['value', 'customerGroup', 'channel', 'tiers', 'staged'],
+      buildFields: [
+        'value',
+        'customerGroup',
+        'channel',
+        'tiers',
+        'staged',
+        'recurrencePolicy',
+      ],
     }
   ),
   rest: Transformer<TStandalonePriceDraft, TStandalonePriceDraft>('rest', {
-    buildFields: ['value', 'customerGroup', 'channel', 'tiers', 'staged'],
+    buildFields: [
+      'value',
+      'customerGroup',
+      'channel',
+      'tiers',
+      'staged',
+      'recurrencePolicy',
+    ],
     replaceFields: ({ fields }) => {
       const newFields = {
         ...fields,
@@ -43,7 +57,14 @@ const transformers = {
   graphql: Transformer<TStandalonePriceDraft, TStandalonePriceDraftGraphql>(
     'graphql',
     {
-      buildFields: ['value', 'customerGroup', 'channel', 'tiers', 'staged'],
+      buildFields: [
+        'value',
+        'customerGroup',
+        'channel',
+        'tiers',
+        'staged',
+        'recurrencePolicy',
+      ],
       replaceFields: ({ fields }) => {
         const newFields = {
           ...fields,

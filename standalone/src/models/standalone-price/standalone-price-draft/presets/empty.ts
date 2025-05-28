@@ -12,6 +12,7 @@ const empty = (): TStandalonePriceDraftBuilder =>
     .tiers(undefined)
     .discounted(undefined)
     .staged(undefined)
-    .active(undefined);
+    .active(undefined)
+    .recurrencePolicy(undefined);
 
 export default empty;

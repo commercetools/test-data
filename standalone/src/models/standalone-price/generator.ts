@@ -37,6 +37,7 @@ const generator = Generator<TStandalonePrice>({
     custom: null,
     active: fake((f) => f.datatype.boolean()),
     expiresAt: fake(getExpiresAt),
+    recurrencePolicy: null,
   },
 });
 

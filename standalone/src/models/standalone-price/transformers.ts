@@ -1,5 +1,11 @@
 import { Transformer } from '@/core';
-import { Reference, TReference, TReferenceGraphql } from '@/models/commons';
+import {
+  Reference,
+  ReferenceGraphql,
+  ReferenceRest,
+  TReference,
+  TReferenceGraphql,
+} from '@/models/commons';
 import type {
   TStandalonePrice,
   TStandalonePriceGraphql,
@@ -18,6 +24,7 @@ const transformers = {
       'custom',
       'discounted',
       'staged',
+      'recurrencePolicy',
     ],
   }),
   rest: Transformer<TStandalonePrice, TStandalonePriceRest>('rest', {
@@ -31,6 +38,7 @@ const transformers = {
       'custom',
       'discounted',
       'staged',
+      'recurrencePolicy',
     ],
     replaceFields: ({ fields }) => {
       // Remove `expiresAt` from the fields
@@ -50,12 +58,20 @@ const transformers = {
             .buildRest<TReference<'channel'>>()
         : undefined;
 
+      const recurrencePolicy = fields.recurrencePolicy
+        ? ReferenceRest.random()
+            .typeId('recurrence-policy')
+            .id(fields.recurrencePolicy.id)
+            .build<TReference<'recurrence-policy'>>()
+        : undefined;
+
       const mainCurrency = fields.value.currencyCode;
 
       const adjustedFields = {
         ...rest,
         customerGroup,
         channel,
+        recurrencePolicy,
         // Currency sync
         tiers: fields.tiers
           ? fields.tiers.map((tier) => ({
@@ -76,7 +92,7 @@ const transformers = {
             }
           : undefined,
         discounted: fields.discounted || undefined,
-      };
+      } as TStandalonePriceRest;
 
       return adjustedFields;
     },
@@ -92,6 +108,7 @@ const transformers = {
       'custom',
       'discounted',
       'staged',
+      'recurrencePolicy',
     ],
     replaceFields: ({ fields }) => {
       const customerGroupRef = fields.customerGroup
@@ -108,6 +125,13 @@ const transformers = {
             .buildGraphql<TReferenceGraphql<'channel'>>()
         : null;
 
+      const recurrencePolicyRef = fields.recurrencePolicy
+        ? ReferenceGraphql.random()
+            .typeId('recurrence-policy')
+            .id(fields.recurrencePolicy.id)
+            .build<TReferenceGraphql<'recurrence-policy'>>()
+        : null;
+
       const mainCurrency = fields.value.currencyCode;
 
       const adjustedFields = {
@@ -115,6 +139,7 @@ const transformers = {
         __typename: 'StandalonePrice' as const,
         customerGroupRef,
         channelRef,
+        recurrencePolicyRef,
         custom: fields.custom || null,
         // Currency sync
         tiers: fields.tiers

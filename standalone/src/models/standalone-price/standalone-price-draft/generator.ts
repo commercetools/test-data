@@ -21,6 +21,7 @@ const generator = Generator<TStandalonePriceDraft>({
     discounted: null,
     staged: null,
     active: fake((f) => f.datatype.boolean()),
+    recurrencePolicy: null,
   },
 });
 

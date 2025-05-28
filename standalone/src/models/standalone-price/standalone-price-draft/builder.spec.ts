@@ -29,6 +29,7 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
+        recurrencePolicy: null,
       })
     )
   );
@@ -57,6 +58,7 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
+        recurrencePolicy: null,
       })
     )
   );
@@ -87,6 +89,7 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
+        recurrencePolicy: null,
       })
     )
   );
