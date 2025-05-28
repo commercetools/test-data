@@ -168,8 +168,8 @@ describe('builder', () => {
         discounted: null,
         staged: null,
         active: expect.any(Boolean),
-        __typename: 'StandalonePrice',
         recurrencePolicy: null,
+        __typename: 'StandalonePrice',
       })
     )
   );
@@ -182,7 +182,6 @@ describe('builder', () => {
       standalonePrice.customerGroupRef?.id
     );
     expect(standalonePrice.channel?.id).toBe(standalonePrice.channelRef?.id);
-
     expect(standalonePrice.recurrencePolicy?.id).toBe(
       standalonePrice.recurrencePolicyRef?.id
     );

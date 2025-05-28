@@ -28,7 +28,7 @@ export type TStandalonePrice = Omit<
 };
 
 export type TStandalonePriceDraft = StandalonePriceDraft & {
-  recurrencePolicy: Reference | null;
+  recurrencePolicy?: Reference;
 };
 
 // REST representation
