@@ -190,7 +190,6 @@ describe(`with full preset`, () => {
         }),
         active: expect.any(Boolean),
         recurrencePolicy: null,
-        recurrencePolicyRef: null,
       })
     );
   });
