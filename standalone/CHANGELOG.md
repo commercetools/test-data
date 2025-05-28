@@ -1,5 +1,19 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.1.1
+
+### Patch Changes
+
+- [#830](https://github.com/commercetools/test-data/pull/830) [`3c1b134`](https://github.com/commercetools/test-data/commit/3c1b1348d56d1ca4f22f7828dce6e05fc0bf0336) Thanks [@nima-ct](https://github.com/nima-ct)! - Fix non-synchronised recurrence-policy ids in GQL builds
+
+- [#822](https://github.com/commercetools/test-data/pull/822) [`d70993c`](https://github.com/commercetools/test-data/commit/d70993c8f26cd0a630ac5e6b66f1339988af42d2) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Project` and `Project extension` models directories within the repository structure to improve readability.
+
+- [#828](https://github.com/commercetools/test-data/pull/828) [`f57df75`](https://github.com/commercetools/test-data/commit/f57df753bd0b52c5320e65e22ee0b61d3b30dd6e) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Product Discount`, `Product Selection` and `Product Projection` models directories within the repository structure to improve readability.
+
+- [#824](https://github.com/commercetools/test-data/pull/824) [`aaa88fd`](https://github.com/commercetools/test-data/commit/aaa88fd07a1009265dec21e9584857ceae1ff71e) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Quote`, `Quote request` and `Staged quote` models directories within the repository structure to improve readability.
+
+- [#825](https://github.com/commercetools/test-data/pull/825) [`54ff915`](https://github.com/commercetools/test-data/commit/54ff915f25f1b2bce7829ebf119c964c646c4dc9) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Product`, and `Product Tailoring` models directories within the repository structure to improve readability.
+
 ## 11.1.0
 
 ### Minor Changes
