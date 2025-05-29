@@ -1,10 +1,12 @@
 import type { TProductTypeDraft } from '../../../types';
-import heavyLiftingAndSpecializedEquipment from './heavy-lifting-and-specialized-equipment';
+import * as heavyLiftingAndSpecializedEquipmentPresets from './heavy-lifting-and-specialized-equipment';
 
 describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
   it(`should return a heavyLiftingAndSpecializedEquipment preset`, () => {
     const heavyLiftingAndSpecializedEquipmentPreset =
-      heavyLiftingAndSpecializedEquipment().build<TProductTypeDraft>();
+      heavyLiftingAndSpecializedEquipmentPresets
+        .restPreset()
+        .build<TProductTypeDraft>();
     expect(heavyLiftingAndSpecializedEquipmentPreset).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -226,7 +228,9 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
 
   it(`should return a heavyLiftingAndSpecializedEquipment preset when built for graphql`, () => {
     const heavyLiftingAndSpecializedEquipmentPresetGraphql =
-      heavyLiftingAndSpecializedEquipment().buildGraphql<TProductTypeDraft>();
+      heavyLiftingAndSpecializedEquipmentPresets
+        .graphqlPreset()
+        .buildGraphql<TProductTypeDraft>();
     expect(heavyLiftingAndSpecializedEquipmentPresetGraphql)
       .toMatchInlineSnapshot(`
       {
@@ -279,6 +283,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
                 "value": "Capacity",
               },
             ],
+            "level": "Variant",
             "name": "capacity",
             "type": {
               "number": {
@@ -334,6 +339,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
                 "value": "ISO 45001 certified",
               },
             ],
+            "level": "Variant",
             "name": "iso45001",
             "type": {
               "boolean": {
@@ -389,13 +395,12 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
                 "value": "Related products",
               },
             ],
+            "level": "Variant",
             "name": "relatedProducts",
             "type": {
               "set": {
                 "elementType": {
-                  "reference": {
-                    "referenceTypeId": "product",
-                  },
+                  "referenceTypeId": "product",
                 },
               },
             },
@@ -448,6 +453,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
                 "value": "Mobility",
               },
             ],
+            "level": "Variant",
             "name": "mobility",
             "type": {
               "enum": {
@@ -520,6 +526,7 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
                 "value": "Color",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
               "lenum": {

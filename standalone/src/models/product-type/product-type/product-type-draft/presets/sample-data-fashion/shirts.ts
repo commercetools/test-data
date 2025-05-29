@@ -1,13 +1,158 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
 import {
   AttributeDefinitionDraft,
+  AttributeDefinitionDraftGraphql,
+  AttributeDefinitionDraftRest,
   AttributeEnumTypeDraft,
+  AttributeEnumTypeDraftGraphql,
+  AttributeEnumTypeDraftRest,
   AttributePlainEnumValueDraft,
+  AttributePlainEnumValueDraftGraphql,
+  AttributePlainEnumValueDraftRest,
 } from '../../../../index';
-import type { TProductTypeDraftBuilder } from '../../../types';
-import * as ProductTypeDraft from '../../index';
+import {
+  TProductTypeDraft,
+  TProductTypeDraftGraphql,
+  TProductTypeDraftRest,
+} from '../../../types';
+import {
+  ProductTypeDraft,
+  ProductTypeDraftGraphql,
+  ProductTypeDraftRest,
+} from '../../index';
 
-const shirts = (): TProductTypeDraftBuilder =>
+export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
+  ProductTypeDraftRest.presets
+    .empty()
+    .key('shirts')
+    .name('Shirts')
+    .description('Shirts')
+    .attributes([
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('size')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random()
+              .key('Small')
+              .label('Small'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Medium')
+              .label('Medium'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Large')
+              .label('Large'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints
+            .CombinationUnique
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('color')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random().key('Red').label('Red'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Green')
+              .label('Green'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Purple')
+              .label('Purple'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Multi-Color')
+              .label('Multi-Color'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints
+            .CombinationUnique
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
+  ProductTypeDraftGraphql.presets
+    .empty()
+    .key('shirts')
+    .name('Shirts')
+    .description('Shirts')
+    .attributeDefinitions([
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('size')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Small')
+              .label('Small'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Medium')
+              .label('Medium'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Large')
+              .label('Large'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints
+            .CombinationUnique
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('color')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Red')
+              .label('Red'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Green')
+              .label('Green'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Purple')
+              .label('Purple'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Multi-Color')
+              .label('Multi-Color'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints
+            .CombinationUnique
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const compatPreset = (): TBuilder<TProductTypeDraft> =>
   ProductTypeDraft.presets
     .empty()
     .key('shirts')
@@ -27,9 +172,12 @@ const shirts = (): TProductTypeDraftBuilder =>
             AttributePlainEnumValueDraft.random().key('Large').label('Large'),
           ])
         )
-        .attributeConstraint('CombinationUnique')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints
+            .CombinationUnique
+        )
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
@@ -46,9 +194,10 @@ const shirts = (): TProductTypeDraftBuilder =>
               .label('Multi-Color'),
           ])
         )
-        .attributeConstraint('CombinationUnique')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints
+            .CombinationUnique
+        )
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
     ]);
-
-export default shirts;
