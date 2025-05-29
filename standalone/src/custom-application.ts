@@ -1,1 +1,1 @@
-export * from './models/custom-application';
+export * from './models/customization/custom-application';

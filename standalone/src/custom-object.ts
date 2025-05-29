@@ -1,1 +1,1 @@
-export * from './models/custom-object';
+export * from './models/customization/custom-object';
