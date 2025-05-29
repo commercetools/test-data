@@ -1,9 +1,17 @@
 import type { TBuilder } from '@/core';
-import type { TMcSettingsCustomApplicationSubmenuLink } from '@/graphql-types';
+import type {
+  TMcSettingsCustomApplicationSubmenuLink,
+  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput,
+} from '@/graphql-types';
 
 export type TCustomApplicationSubmenuLinkGraphql =
   TMcSettingsCustomApplicationSubmenuLink;
 
+export type TCustomApplicationSubmenuLinkDraftGraphql =
+  TMcSettingsCustomApplicationSubmenuLinkDraftDataInput;
+
 export type TCreateCustomApplicationSubmenuLinkBuilder<
-  TModel extends TCustomApplicationSubmenuLinkGraphql,
+  TModel extends
+    | TCustomApplicationSubmenuLinkGraphql
+    | TCustomApplicationSubmenuLinkDraftGraphql,
 > = () => TBuilder<TModel>;

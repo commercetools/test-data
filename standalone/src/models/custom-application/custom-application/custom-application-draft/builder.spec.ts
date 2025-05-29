@@ -1,4 +1,4 @@
-import type { TCustomApplicationDraftGraphql } from './types';
+import type { TCustomApplicationDraftGraphql } from '../types';
 import { CustomApplicationDraftGraphql } from './index';
 
 describe('builder', () => {

@@ -1,6 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { supportedViewOAuthScopes } from '../../constants';
-import type { TCustomApplicationPermissionDraftGraphql } from './types';
+import type { TCustomApplicationPermissionDraftGraphql } from '../types';
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationPermissionDraftGraphql> =
   {

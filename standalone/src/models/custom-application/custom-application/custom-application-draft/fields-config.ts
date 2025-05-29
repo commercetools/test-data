@@ -3,7 +3,7 @@ import { slugify } from '@/utils';
 import { CustomApplicationMenuLinkGraphql } from '../../custom-application-menu-link';
 import { CustomApplicationPermissionGraphql } from '../../custom-application-permission';
 import { CustomApplicationSubmenuLinkGraphql } from '../../custom-application-submenu-link';
-import type { TCustomApplicationDraftGraphql } from './types';
+import type { TCustomApplicationDraftGraphql } from '../types';
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationDraftGraphql> =
   {

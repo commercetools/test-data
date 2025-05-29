@@ -1,11 +1,11 @@
 import { createSpecializedBuilder } from '@/core';
-import { graphqlFieldsConfig } from './fields-config';
 import type {
   TCustomApplicationPermissionDraftGraphql,
-  TCreateCustomApplicationPermissionDraftBuilder,
-} from './types';
+  TCreateCustomApplicationPermissionBuilder,
+} from '../types';
+import { graphqlFieldsConfig } from './fields-config';
 
-export const GraphqlModelBuilder: TCreateCustomApplicationPermissionDraftBuilder<
+export const GraphqlModelBuilder: TCreateCustomApplicationPermissionBuilder<
   TCustomApplicationPermissionDraftGraphql
 > = () =>
   createSpecializedBuilder({

@@ -1,4 +1,4 @@
-import type { TCustomApplicationPermissionDraftGraphql } from './types';
+import type { TCustomApplicationPermissionDraftGraphql } from '../types';
 import { CustomApplicationPermissionDraftGraphql } from './index';
 describe('builder', () => {
   it('GraphQL model', () => {

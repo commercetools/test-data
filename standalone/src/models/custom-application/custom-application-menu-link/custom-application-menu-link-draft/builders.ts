@@ -1,11 +1,11 @@
 import { createSpecializedBuilder } from '@/core';
-import { graphqlFieldsConfig } from './fields-config';
 import type {
   TCustomApplicationMenuLinkDraftGraphql,
-  TCreateCustomApplicationMenuLinkDraftBuilder,
-} from './types';
+  TCreateCustomApplicationMenuLinkBuilder,
+} from '../types';
+import { graphqlFieldsConfig } from './fields-config';
 
-export const GraphqlModelBuilder: TCreateCustomApplicationMenuLinkDraftBuilder<
+export const GraphqlModelBuilder: TCreateCustomApplicationMenuLinkBuilder<
   TCustomApplicationMenuLinkDraftGraphql
 > = () =>
   createSpecializedBuilder({

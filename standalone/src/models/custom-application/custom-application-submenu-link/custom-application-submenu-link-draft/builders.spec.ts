@@ -1,4 +1,4 @@
-import type { TCustomApplicationSubmenuLinkDraftGraphql } from './types';
+import type { TCustomApplicationSubmenuLinkDraftGraphql } from '../types';
 import { CustomApplicationSubmenuLinkDraftGraphql } from './index';
 describe('builder', () => {
   it('GraphQL model', () => {
