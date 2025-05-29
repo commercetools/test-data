@@ -4,8 +4,8 @@ import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
 import type { TBuilder } from '@/core';
 import { supportedViewOAuthScopes } from '../../../constants';
+import type { TCustomApplicationPermissionDraftGraphql } from '../../types';
 import { CustomApplicationPermissionDraftGraphql } from '../index';
-import type { TCustomApplicationPermissionDraftGraphql } from '../types';
 
 export const graphqlPreset = (
   entryPointUriPath: string = 'avengers',

@@ -1,4 +1,4 @@
-import { TCustomApplicationPermissionDraftGraphql } from '../types';
+import { TCustomApplicationPermissionDraftGraphql } from '../../types';
 import { graphqlPresets } from './index';
 
 describe('view only permissions', () => {
