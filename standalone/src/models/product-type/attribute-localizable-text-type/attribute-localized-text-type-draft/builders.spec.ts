@@ -22,7 +22,7 @@ describe('AttributeLocalizableTextTypeDraft model builders', () => {
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        dummy: null,
+        dummy: 'ltext',
       })
     );
   });
@@ -55,7 +55,7 @@ describe('AttributeLocalizableTextTypeDraft model compatibility builders', () =>
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
-        dummy: null,
+        dummy: 'ltext',
       })
     );
   });

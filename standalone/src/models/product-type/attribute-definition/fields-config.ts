@@ -50,7 +50,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionGraphql
       inputTipAllLocales: fake(() => LocalizedString.random()),
       label: null,
       labelAllLocales: fake(() => LocalizedString.random()),
-      level: fake((f) => f.helpers.arrayElement(Object.values(levels))),
+      level: fake(() => levels.Variant),
       type: fake((f) =>
         f.helpers.arrayElement([
           AttributeBooleanTypeGraphql.random(),

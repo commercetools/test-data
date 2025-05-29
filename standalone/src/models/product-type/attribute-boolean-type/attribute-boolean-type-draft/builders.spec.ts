@@ -19,7 +19,7 @@ function validateRestModel(model: TAttributeBooleanTypeDraftRest) {
 function validateGraphqlModel(model: TAttributeBooleanTypeDraftGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'boolean',
     })
   );
 }

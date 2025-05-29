@@ -19,7 +19,7 @@ const validateRestModel = (model: TAttributeTextTypeDraftRest): void => {
 const validateGraphqlModel = (model: TAttributeTextTypeDraftGraphql): void => {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'text',
     })
   );
 };

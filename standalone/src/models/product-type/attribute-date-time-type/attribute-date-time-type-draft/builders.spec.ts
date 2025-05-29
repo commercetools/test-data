@@ -19,7 +19,7 @@ function validateRestModel(model: TAttributeDateTimeTypeDraftRest) {
 function validateGraphqlModel(model: TAttributeDateTimeTypeDraftGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'datetime',
     })
   );
 }

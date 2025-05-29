@@ -10,10 +10,14 @@ import {
 
 // https://docs.commercetools.com/api/projects/productTypes#attributelocalizedenumtype
 
+const commonFieldsConfig = {
+  name: 'lenum',
+};
+
 export const restFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumTypeDraftRest> =
   {
     fields: {
-      name: fake(() => 'lenum'),
+      ...commonFieldsConfig,
       values: fake(() => [AttributeLocalizedEnumValueDraftRest.random()]),
     },
   };
@@ -21,6 +25,7 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumTypeDra
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumTypeDraftGraphql> =
   {
     fields: {
+      ...commonFieldsConfig,
       values: fake(() => [AttributeLocalizedEnumValueDraftGraphql.random()]),
     },
   };

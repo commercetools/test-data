@@ -23,7 +23,7 @@ const validateGraphqlModel = (model: TAttributeSetTypeDraftGraphql): void => {
   expect(model).toEqual(
     expect.objectContaining({
       elementType: expect.objectContaining({
-        dummy: null,
+        dummy: 'boolean',
       }),
     })
   );

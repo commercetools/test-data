@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeLocalizableTextTypeD
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizableTextTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'ltext',
     },
   };

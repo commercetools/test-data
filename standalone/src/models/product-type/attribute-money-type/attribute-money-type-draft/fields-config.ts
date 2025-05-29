@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeMoneyTypeDraftRest> 
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeMoneyTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'money',
     },
   };

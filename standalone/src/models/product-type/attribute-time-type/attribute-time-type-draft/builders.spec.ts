@@ -19,7 +19,7 @@ const validateRestModel = (model: TAttributeTimeTypeDraftRest): void => {
 const validateGraphqlModel = (model: TAttributeTimeTypeDraftGraphql): void => {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'time',
     })
   );
 };

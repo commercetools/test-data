@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeBooleanTypeDraftRest
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeBooleanTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'boolean',
     },
   };

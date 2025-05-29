@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeTimeTypeDraftRest> =
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeTimeTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'time',
     },
   };

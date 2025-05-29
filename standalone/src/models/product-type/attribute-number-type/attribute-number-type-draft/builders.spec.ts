@@ -21,7 +21,7 @@ const validateGraphqlModel = (
 ): void => {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'number',
     })
   );
 };

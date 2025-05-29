@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDateTimeTypeDraftRes
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDateTimeTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'datetime',
     },
   };

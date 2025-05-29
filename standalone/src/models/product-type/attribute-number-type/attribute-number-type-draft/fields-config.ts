@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeNumberTypeDraftRest>
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeNumberTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'number',
     },
   };

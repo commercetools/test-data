@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeDateTypeDraftRest> =
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDateTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'date',
     },
   };

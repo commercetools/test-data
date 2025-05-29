@@ -19,7 +19,7 @@ const validateRestModel = (model: TAttributeMoneyTypeDraftRest): void => {
 const validateGraphqlModel = (model: TAttributeMoneyTypeDraftGraphql): void => {
   expect(model).toEqual(
     expect.objectContaining({
-      dummy: null,
+      dummy: 'money',
     })
   );
 };

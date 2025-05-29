@@ -16,6 +16,6 @@ export const restFieldsConfig: TModelFieldsConfig<TAttributeTextTypeDraftRest> =
 export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeTextTypeDraftGraphql> =
   {
     fields: {
-      dummy: null,
+      dummy: 'text',
     },
   };
