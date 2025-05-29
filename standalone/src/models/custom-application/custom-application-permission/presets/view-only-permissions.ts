@@ -7,16 +7,15 @@ import { supportedViewOAuthScopes } from '../../constants';
 import { CustomApplicationPermissionGraphql } from '../index';
 import type { TCustomApplicationPermissionGraphql } from '../types';
 
-const populatePreset = <TModel extends TCustomApplicationPermissionGraphql>(
-  builder: TBuilder<TModel>,
+export const graphqlPreset = (
   entryPointUriPath: string = 'avengers',
   additionalPermission: string = ''
-) => {
+): TBuilder<TCustomApplicationPermissionGraphql> => {
   const resourceAccesses = entryPointUriPathToResourceAccesses(
     entryPointUriPath,
     [additionalPermission]
   );
-  return builder
+  return CustomApplicationPermissionGraphql.random()
     .name(
       !additionalPermission
         ? resourceAccesses.view
@@ -25,7 +24,3 @@ const populatePreset = <TModel extends TCustomApplicationPermissionGraphql>(
     )
     .oAuthScopes(sampleSize(supportedViewOAuthScopes, 1));
 };
-
-export const graphqlPreset =
-  (): TBuilder<TCustomApplicationPermissionGraphql> =>
-    populatePreset(CustomApplicationPermissionGraphql.random());
