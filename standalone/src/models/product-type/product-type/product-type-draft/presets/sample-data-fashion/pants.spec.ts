@@ -2,11 +2,13 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import pants from './pants';
+import * as pantsPresets from './pants';
 
 describe(`with pants preset`, () => {
   it(`should create a pants product type draft`, () => {
-    const pantsProductType = pants().build<TProductTypeDraft>();
+    const pantsProductType = pantsPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
 
     expect(pantsProductType).toMatchInlineSnapshot(`
       {
@@ -164,8 +166,9 @@ describe(`with pants preset`, () => {
   });
 
   it(`should create a pants product type draft when built for graphql`, () => {
-    const pantsProductTypeGraphql =
-      pants().buildGraphql<TProductTypeDraftGraphql>();
+    const pantsProductTypeGraphql = pantsPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
 
     expect(pantsProductTypeGraphql).toMatchInlineSnapshot(`
       {
@@ -187,23 +190,25 @@ describe(`with pants preset`, () => {
                 "value": "Size",
               },
             ],
+            "level": "Variant",
             "name": "size",
             "type": {
-              "name": "enum",
-              "values": [
-                {
-                  "key": "Small",
-                  "label": "Small",
-                },
-                {
-                  "key": "Medium",
-                  "label": "Medium",
-                },
-                {
-                  "key": "Large",
-                  "label": "Large",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Small",
+                    "label": "Small",
+                  },
+                  {
+                    "key": "Medium",
+                    "label": "Medium",
+                  },
+                  {
+                    "key": "Large",
+                    "label": "Large",
+                  },
+                ],
+              },
             },
           },
           {
@@ -223,23 +228,25 @@ describe(`with pants preset`, () => {
                 "value": "Fit",
               },
             ],
+            "level": "Variant",
             "name": "fit",
             "type": {
-              "name": "enum",
-              "values": [
-                {
-                  "key": "Slim",
-                  "label": "Slim",
-                },
-                {
-                  "key": "Straight",
-                  "label": "Straight",
-                },
-                {
-                  "key": "Flair",
-                  "label": "Flair",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Slim",
+                    "label": "Slim",
+                  },
+                  {
+                    "key": "Straight",
+                    "label": "Straight",
+                  },
+                  {
+                    "key": "Flair",
+                    "label": "Flair",
+                  },
+                ],
+              },
             },
           },
           {
@@ -259,23 +266,25 @@ describe(`with pants preset`, () => {
                 "value": "Color",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
-              "name": "enum",
-              "values": [
-                {
-                  "key": "Blue",
-                  "label": "Blue",
-                },
-                {
-                  "key": "Black",
-                  "label": "Black",
-                },
-                {
-                  "key": "White",
-                  "label": "White",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Blue",
+                    "label": "Blue",
+                  },
+                  {
+                    "key": "Black",
+                    "label": "Black",
+                  },
+                  {
+                    "key": "White",
+                    "label": "White",
+                  },
+                ],
+              },
             },
           },
           {
@@ -295,23 +304,25 @@ describe(`with pants preset`, () => {
                 "value": "Length",
               },
             ],
+            "level": "Variant",
             "name": "length",
             "type": {
-              "name": "enum",
-              "values": [
-                {
-                  "key": "Ankle",
-                  "label": "Ankle",
-                },
-                {
-                  "key": "Crop",
-                  "label": "Crop",
-                },
-                {
-                  "key": "Extra Long",
-                  "label": "Extra Long",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Ankle",
+                    "label": "Ankle",
+                  },
+                  {
+                    "key": "Crop",
+                    "label": "Crop",
+                  },
+                  {
+                    "key": "Extra Long",
+                    "label": "Extra Long",
+                  },
+                ],
+              },
             },
           },
         ],

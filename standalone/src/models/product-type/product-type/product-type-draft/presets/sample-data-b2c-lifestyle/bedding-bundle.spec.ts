@@ -2,10 +2,12 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import beddingBundle from './bedding-bundle';
+import * as beddingBundlePresets from './bedding-bundle';
 describe(`with beddingBundle preset`, () => {
   it('should create a beddingBundle product type draft', () => {
-    const beddingBundlePreset = beddingBundle().build<TProductTypeDraft>();
+    const beddingBundlePreset = beddingBundlePresets
+      .restPreset()
+      .build<TProductTypeDraft>();
     expect(beddingBundlePreset).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -83,8 +85,9 @@ describe(`with beddingBundle preset`, () => {
   });
 
   it('should create a beddingBundle product type draft for graphql', () => {
-    const beddingBundlePreset =
-      beddingBundle().buildGraphql<TProductTypeDraftGraphql>();
+    const beddingBundlePreset = beddingBundlePresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
     expect(beddingBundlePreset).toMatchInlineSnapshot(`
       {
         "attributeDefinitions": [
@@ -113,9 +116,12 @@ describe(`with beddingBundle preset`, () => {
                 "value": "product-description",
               },
             ],
+            "level": "Variant",
             "name": "product-description",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -134,9 +140,12 @@ describe(`with beddingBundle preset`, () => {
                 "value": "Product Spec",
               },
             ],
+            "level": "Variant",
             "name": "product-spec",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -159,10 +168,13 @@ describe(`with beddingBundle preset`, () => {
                 "value": "Produkte dieses Bundles",
               },
             ],
+            "level": "Variant",
             "name": "product-ref",
             "type": {
-              "elementType": {
-                "referenceTypeId": "product",
+              "set": {
+                "elementType": {
+                  "referenceTypeId": "product",
+                },
               },
             },
           },

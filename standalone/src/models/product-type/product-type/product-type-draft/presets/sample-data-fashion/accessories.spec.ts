@@ -1,12 +1,12 @@
 import type {
-  TProductTypeDraft,
   TProductTypeDraftGraphql,
+  TProductTypeDraftRest,
 } from '../../../types';
-import accessories from './accessories';
+import { restPreset, graphqlPreset } from './accessories';
 
 describe(`with accessories preset`, () => {
   it(`should create an accessories product type draft`, () => {
-    const accessoriesProductType = accessories().build<TProductTypeDraft>();
+    const accessoriesProductType = restPreset().build<TProductTypeDraftRest>();
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -78,7 +78,7 @@ describe(`with accessories preset`, () => {
 
   it(`should create an accessories product type draft when built for GraphQl`, () => {
     const accessoriesProductType =
-      accessories().buildGraphql<TProductTypeDraftGraphql>();
+      graphqlPreset().build<TProductTypeDraftGraphql>();
 
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
@@ -100,23 +100,25 @@ describe(`with accessories preset`, () => {
                 "value": "Type",
               },
             ],
+            "level": "Variant",
             "name": "type",
             "type": {
-              "name": "enum",
-              "values": [
-                {
-                  "key": "Jewelry",
-                  "label": "Jewelry",
-                },
-                {
-                  "key": "Bag",
-                  "label": "Bag",
-                },
-                {
-                  "key": "Shoes",
-                  "label": "Shoes",
-                },
-              ],
+              "enum": {
+                "values": [
+                  {
+                    "key": "Jewelry",
+                    "label": "Jewelry",
+                  },
+                  {
+                    "key": "Bag",
+                    "label": "Bag",
+                  },
+                  {
+                    "key": "Shoes",
+                    "label": "Shoes",
+                  },
+                ],
+              },
             },
           },
           {
@@ -136,10 +138,12 @@ describe(`with accessories preset`, () => {
                 "value": "Engraving",
               },
             ],
+            "level": "Variant",
             "name": "engraving",
             "type": {
-              "dummy": null,
-              "name": "text",
+              "text": {
+                "dummy": null,
+              },
             },
           },
         ],

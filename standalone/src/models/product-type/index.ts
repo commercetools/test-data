@@ -48,6 +48,5 @@ export * from './attribute-text-type/attribute-text-type-draft';
 export * from './attribute-time-type';
 export * from './attribute-time-type/attribute-time-type-draft';
 
-export * as ProductType from './product-type';
-export * as ProductTypeDraft from './product-type/product-type-draft';
-export * as TypeDefinition from './type-definition';
+export * from './product-type';
+export * from './product-type/product-type-draft';

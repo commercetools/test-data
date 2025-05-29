@@ -2,12 +2,13 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import furnitureAndDecor from './furniture-and-decor';
+import * as furnitureAndDecorPresets from './furniture-and-decor';
 
 describe(`with furnitureAndDecor preset`, () => {
   it('should create a furnitureAndDecor product type draft', () => {
-    const furnitureAndDecorPreset =
-      furnitureAndDecor().build<TProductTypeDraft>();
+    const furnitureAndDecorPreset = furnitureAndDecorPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
     expect(furnitureAndDecorPreset).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -150,8 +151,9 @@ describe(`with furnitureAndDecor preset`, () => {
   });
 
   it(`should create a furnitureAndDecor product type draft when built for graphql`, () => {
-    const furnitureAndDecorPreset =
-      furnitureAndDecor().buildGraphql<TProductTypeDraftGraphql>();
+    const furnitureAndDecorPreset = furnitureAndDecorPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
 
     expect(furnitureAndDecorPreset).toMatchInlineSnapshot(`
       {
@@ -185,9 +187,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Produktspezifikationen",
               },
             ],
+            "level": "Variant",
             "name": "productspec",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -210,9 +215,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Farbe",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -235,9 +243,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Fertig",
               },
             ],
+            "level": "Variant",
             "name": "finish",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -260,9 +271,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Neuankömmling",
               },
             ],
+            "level": "Variant",
             "name": "new-arrival",
             "type": {
-              "dummy": null,
+              "boolean": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -290,9 +304,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Size",
               },
             ],
+            "level": "Variant",
             "name": "size",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -320,9 +337,12 @@ describe(`with furnitureAndDecor preset`, () => {
                 "value": "Product Description",
               },
             ],
+            "level": "Variant",
             "name": "product-description",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
         ],

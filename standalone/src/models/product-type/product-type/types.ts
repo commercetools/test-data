@@ -1,30 +1,34 @@
 import { ProductType, ProductTypeDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import {
-  TAttributeDefinitionGraphql,
-  TAttributeDefinitionDraftGraphql,
-} from '../attribute-definition';
+  TCtpProductTypeDefinition,
+  TCtpProductTypeDraft,
+} from '@/graphql-types';
 
+/**
+ * @deprecated use `TProductTypeRest` or `TProductTypeGraphql` instead
+ */
 export type TProductType = ProductType;
-
-export type TProductTypeGraphql = TProductType & {
-  __typename: 'ProductTypeDefinition';
-  attributeDefinitions: {
-    results: Array<TAttributeDefinitionGraphql>;
-    __typename: 'AttributeDefinitionResult';
-  };
-};
-
+/**
+ * @deprecated use `TProductTypeDraftRest` or `TProductTypeDraftGraphql` instead
+ */
 export type TProductTypeDraft = ProductTypeDraft;
 
-export type TProductTypeDraftGraphql = Omit<TProductTypeDraft, 'attributes'> & {
-  attributeDefinitions: Array<TAttributeDefinitionDraftGraphql>;
-};
+// REST types
+export type TProductTypeRest = ProductType;
+export type TProductTypeDraftRest = ProductTypeDraft;
 
-export type TProductTypeBuilder = TBuilder<TProductType>;
+// GraphQL types
+export type TProductTypeGraphql = TCtpProductTypeDefinition;
+export type TProductTypeDraftGraphql = TCtpProductTypeDraft;
 
-export type TProductTypeDraftBuilder = TBuilder<TProductTypeDraft>;
-
-export type TCreateProductTypeBuilder = () => TProductTypeBuilder;
-
-export type TCreateProductTypeDraftBuilder = () => TProductTypeDraftBuilder;
+// Builders types
+export type TCreateProductTypeBuilder<
+  TProductTypeModel extends
+    | TProductType
+    | TProductTypeDraft
+    | TProductTypeRest
+    | TProductTypeDraftRest
+    | TProductTypeGraphql
+    | TProductTypeDraftGraphql,
+> = () => TBuilder<TProductTypeModel>;

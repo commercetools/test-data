@@ -2,10 +2,12 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import productSets from './product-sets';
+import * as productSetsPresets from './product-sets';
 describe(`with productSets preset`, () => {
   it('should create a productSets product type draft', () => {
-    const productSetsPreset = productSets().build<TProductTypeDraft>();
+    const productSetsPreset = productSetsPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
     expect(productSetsPreset).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -78,8 +80,9 @@ describe(`with productSets preset`, () => {
   });
 
   it('should create a productSets product type draft for graphql', () => {
-    const productSetsPreset =
-      productSets().buildGraphql<TProductTypeDraftGraphql>();
+    const productSetsPreset = productSetsPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
     expect(productSetsPreset).toMatchInlineSnapshot(`
       {
         "attributeDefinitions": [
@@ -103,10 +106,13 @@ describe(`with productSets preset`, () => {
                 "value": "Typ",
               },
             ],
+            "level": "Variant",
             "name": "type",
             "type": {
-              "elementType": {
-                "dummy": null,
+              "set": {
+                "elementType": {
+                  "dummy": "ltext",
+                },
               },
             },
           },
@@ -130,9 +136,12 @@ describe(`with productSets preset`, () => {
                 "value": "Farbe",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
           {
@@ -155,9 +164,12 @@ describe(`with productSets preset`, () => {
                 "value": "Fertig",
               },
             ],
+            "level": "Variant",
             "name": "finish",
             "type": {
-              "dummy": null,
+              "ltext": {
+                "dummy": null,
+              },
             },
           },
         ],
