@@ -7,15 +7,18 @@ import { supportedManageOAuthScopes } from '../../../constants';
 import { CustomApplicationPermissionDraftGraphql } from '../index';
 import type { TCustomApplicationPermissionDraftGraphql } from '../types';
 
-export const graphqlPreset = (
+const populatePreset = <
+  TModel extends TCustomApplicationPermissionDraftGraphql,
+>(
+  builder: TBuilder<TModel>,
   entryPointUriPath: string = 'avengers',
   additionalPermission: string = ''
-): TBuilder<TCustomApplicationPermissionDraftGraphql> => {
+) => {
   const resourceAccesses = entryPointUriPathToResourceAccesses(
     entryPointUriPath,
     [additionalPermission]
   );
-  return CustomApplicationPermissionDraftGraphql.random()
+  return builder
     .name(
       !additionalPermission
         ? resourceAccesses.manage
@@ -26,3 +29,7 @@ export const graphqlPreset = (
     )
     .oAuthScopes(sampleSize(supportedManageOAuthScopes, 1));
 };
+
+export const graphqlPreset =
+  (): TBuilder<TCustomApplicationPermissionDraftGraphql> =>
+    populatePreset(CustomApplicationPermissionDraftGraphql.random());

@@ -15,11 +15,3 @@ export * from './custom-application/custom-application-draft';
 export * from './custom-application-installation';
 
 export * from './custom-application-installation-permission';
-
-export * from './custom-application/types';
-export * from './custom-application-permission/types';
-export * from './custom-application-menu-link/types';
-export * from './custom-application-submenu-link/types';
-export * from './custom-application-deployment-preview/types';
-export * from './custom-application-installation/types';
-export * from './custom-application-installation-permission/types';
