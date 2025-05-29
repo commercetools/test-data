@@ -14,4 +14,5 @@ export const CustomApplicationGraphql = {
 export const CustomApplication = {
   random: GraphqlModelBuilder,
   presets: CustomApplicationPresets.graphqlPresets,
+  constants,
 };

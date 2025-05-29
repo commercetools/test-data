@@ -1,9 +1,11 @@
+import * as constants from '../../constants';
 import { GraphqlModelBuilder } from './builders';
 import * as CustomApplicationDraftPresets from './presets';
 
 export const CustomApplicationDraftGraphql = {
   random: GraphqlModelBuilder,
   presets: CustomApplicationDraftPresets.graphqlPresets,
+  constants,
 };
 
 /**
@@ -12,4 +14,5 @@ export const CustomApplicationDraftGraphql = {
 export const CustomApplicationDraft = {
   random: GraphqlModelBuilder,
   presets: CustomApplicationDraftPresets.graphqlPresets,
+  constants,
 };
