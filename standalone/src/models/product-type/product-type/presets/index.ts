@@ -1,13 +1,4 @@
-import * as milkPresets from './milk';
+import milk from './milk';
+const presets = { milk };
 
-export const restPresets = {
-  milk: milkPresets.restPreset,
-};
-
-export const graphqlPresets = {
-  milk: milkPresets.graphqlPreset,
-};
-
-export const compatPresets = {
-  milk: milkPresets.compatPreset,
-};
+export default presets;

@@ -1,21 +1,45 @@
-import * as countryOfOriginPresets from './country-of-origin-attribute-definition';
-import * as numberPresets from './number-attribute-definition';
-import * as sizePresets from './size-attribute-definition';
+import { LocalizedString } from '@/models/commons';
+import {
+  AttributeEnumType,
+  AttributeNumberType,
+  AttributeTextType,
+} from '@/models/product-type';
+import AttributeDefinition from '../builder';
 
-export const restPresets = {
-  number: numberPresets.restPreset,
-  countryOfOrigin: countryOfOriginPresets.restPreset,
-  size: sizePresets.restPreset,
+const presets = {
+  number: () =>
+    AttributeDefinition()
+      .type(AttributeNumberType.random())
+      .name('Number Attribute Definition')
+      .label(
+        LocalizedString.presets
+          .empty()
+          .en(`Number Attribute Definition's Label`)
+      )
+      .inputTip(
+        LocalizedString.presets
+          .empty()
+          .en(`Number Attribute Definition's Input Tip`)
+      ),
+
+  countryOfOrigin: () =>
+    AttributeDefinition()
+      .attributeConstraint('None')
+      .name('country-of-origin')
+      .label(LocalizedString.presets.empty().en('Country of Origin'))
+      .isRequired(true)
+      .type(AttributeTextType.random()),
+
+  size: () =>
+    AttributeDefinition()
+      .attributeConstraint('None')
+      .name('size')
+      .label(LocalizedString.presets.empty().en('Size'))
+      .inputTip(LocalizedString.presets.empty().en('Size of a product'))
+      .inputHint('SingleLine')
+      .isRequired(true)
+      .isSearchable(true)
+      .type(AttributeEnumType.presets.allSizesEnum()),
 };
 
-export const graphqlPresets = {
-  number: numberPresets.graphqlPreset,
-  countryOfOrigin: countryOfOriginPresets.graphqlPreset,
-  size: sizePresets.graphqlPreset,
-};
-
-export const compatPresets = {
-  number: numberPresets.compatPreset,
-  countryOfOrigin: countryOfOriginPresets.compatPreset,
-  size: sizePresets.compatPreset,
-};
+export default presets;

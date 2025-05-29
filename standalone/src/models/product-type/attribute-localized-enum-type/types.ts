@@ -1,34 +1,36 @@
 import { AttributeLocalizedEnumType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import {
-  TCtpLocalizableEnumAttributeDefinitionType,
-  TCtpLocalizableEnumTypeDraft,
-} from '@/graphql-types';
+  TAttributeLocalizedEnumValueDraftGraphql,
+  TAttributeLocalizedEnumValueGraphql,
+} from '../attribute-localized-enum-value';
 
-/**
- * @deprecated use `TAttributeLocalizedEnumTypeRest` or `TAttributeLocalizedEnumTypeGraphql` instead
- */
 export type TAttributeLocalizedEnumType = AttributeLocalizedEnumType;
-/**
- * @deprecated use `TAttributeLocalizedEnumTypeRest` or `TAttributeLocalizedEnumTypeGraphql` instead
- */
 export type TAttributeLocalizedEnumTypeDraft = AttributeLocalizedEnumType;
 
-// REST types
-export type TAttributeLocalizedEnumTypeRest = AttributeLocalizedEnumType;
-export type TAttributeLocalizedEnumTypeDraftRest = AttributeLocalizedEnumType;
+export type TAttributeLocalizedEnumTypeGraphql = Omit<
+  TAttributeLocalizedEnumType,
+  'values'
+> & {
+  values: {
+    results: Array<TAttributeLocalizedEnumValueGraphql>;
+    __typename: 'LocalizableEnumValueTypeResult';
+  };
+  __typename: 'LocalizableEnumAttributeDefinitionType';
+};
 
-// GraphQL types
-export type TAttributeLocalizedEnumTypeGraphql =
-  TCtpLocalizableEnumAttributeDefinitionType;
-export type TAttributeLocalizedEnumTypeDraftGraphql =
-  TCtpLocalizableEnumTypeDraft;
+export type TAttributeLocalizedEnumTypeDraftGraphql = {
+  lenum: {
+    values: Array<TAttributeLocalizedEnumValueDraftGraphql>;
+  };
+};
 
-// Builders type
-export type TCreateAttributeLocalizedEnumTypeBuilder<
-  TAttributeLocalizedEnumTypeModel extends
-    | TAttributeLocalizedEnumTypeRest
-    | TAttributeLocalizedEnumTypeDraftRest
-    | TAttributeLocalizedEnumTypeGraphql
-    | TAttributeLocalizedEnumTypeDraftGraphql,
-> = () => TBuilder<TAttributeLocalizedEnumTypeModel>;
+export type TAttributeLocalizedEnumTypeBuilder =
+  TBuilder<TAttributeLocalizedEnumType>;
+export type TAttributeLocalizedEnumTypeDraftBuilder =
+  TBuilder<TAttributeLocalizedEnumTypeDraft>;
+
+export type TCreateAttributeLocalizedEnumTypeBuilder =
+  () => TAttributeLocalizedEnumTypeBuilder;
+export type TCreateAttributeLocalizedEnumTypeDraftBuilder =
+  () => TAttributeLocalizedEnumTypeDraftBuilder;

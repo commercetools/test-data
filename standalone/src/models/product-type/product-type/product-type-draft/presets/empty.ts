@@ -1,24 +1,7 @@
-import { TBuilder } from '@/core';
-import {
-  TProductTypeDraft,
-  TProductTypeDraftGraphql,
-  TProductTypeDraftRest,
-} from '../../types';
-import {
-  CompatModelBuilder,
-  GraphqlModelBuilder,
-  RestModelBuilder,
-} from '../builders';
+import type { TProductTypeDraftBuilder } from '../../types';
+import ProductType from '../builder';
 
-export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
-  RestModelBuilder().key(undefined).attributes(undefined);
+const empty = (): TProductTypeDraftBuilder =>
+  ProductType().key(undefined).attributes(undefined);
 
-export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
-  GraphqlModelBuilder().key(undefined).attributeDefinitions(undefined);
-
-export const compatPreset = (): TBuilder<TProductTypeDraft> =>
-  CompatModelBuilder()
-    .key(undefined)
-    .attributes(undefined)
-    // @ts-expect-error - "attributesDefinition" exists in the Graphql model, which we use in the compatibility builder.
-    .attributeDefinitions(undefined);
+export default empty;

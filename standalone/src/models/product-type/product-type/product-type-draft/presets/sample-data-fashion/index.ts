@@ -1,29 +1,15 @@
-import * as accessoriesPresets from './accessories';
-import * as dressesPresets from './dresses';
-import * as jacketsPresets from './jackets';
-import * as pantsPresets from './pants';
-import * as shirtsPresets from './shirts';
+import accessories from './accessories';
+import dresses from './dresses';
+import jackets from './jackets';
+import pants from './pants';
+import shirts from './shirts';
 
-export const restPresets = {
-  accessories: accessoriesPresets.restPreset,
-  dresses: dressesPresets.restPreset,
-  jackets: jacketsPresets.restPreset,
-  pants: pantsPresets.restPreset,
-  shirts: shirtsPresets.restPreset,
+const presets = {
+  accessories,
+  dresses,
+  jackets,
+  pants,
+  shirts,
 };
 
-export const graphqlPresets = {
-  accessories: accessoriesPresets.graphqlPreset,
-  dresses: dressesPresets.graphqlPreset,
-  jackets: jacketsPresets.graphqlPreset,
-  pants: pantsPresets.graphqlPreset,
-  shirts: shirtsPresets.graphqlPreset,
-};
-
-export const compatPresets = {
-  accessories: accessoriesPresets.compatPreset,
-  dresses: dressesPresets.compatPreset,
-  jackets: jacketsPresets.compatPreset,
-  pants: pantsPresets.compatPreset,
-  shirts: shirtsPresets.compatPreset,
-};
+export default presets;

@@ -24,6 +24,8 @@ describe('DiscountedLineItemPortionDraft Builder', () => {
   it('should build properties for the GraphQL representation', () => {
     const graphqlModel = DiscountedLineItemPortionDraftGraphql.random().build();
 
+    console.log(graphqlModel);
+
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         discount: expect.objectContaining({

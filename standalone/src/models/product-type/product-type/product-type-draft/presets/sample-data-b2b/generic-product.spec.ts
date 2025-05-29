@@ -1,11 +1,9 @@
 import type { TProductTypeDraft } from '../../../types';
-import * as genericProductPresets from './generic-product';
+import genericProduct from './generic-product';
 
 describe(`with genericProduct preset`, () => {
   it(`should return a genericProduct preset`, () => {
-    const genericProductPreset = genericProductPresets
-      .restPreset()
-      .build<TProductTypeDraft>();
+    const genericProductPreset = genericProduct().build<TProductTypeDraft>();
     expect(genericProductPreset).toMatchInlineSnapshot(`
       {
         "attributes": [],
@@ -17,9 +15,8 @@ describe(`with genericProduct preset`, () => {
   });
 
   it(`should return a genericProduct preset when built for graphql`, () => {
-    const genericProductPresetGraphql = genericProductPresets
-      .graphqlPreset()
-      .buildGraphql<TProductTypeDraft>();
+    const genericProductPresetGraphql =
+      genericProduct().buildGraphql<TProductTypeDraft>();
     expect(genericProductPresetGraphql).toMatchInlineSnapshot(`
       {
         "attributeDefinitions": [],

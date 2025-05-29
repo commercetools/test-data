@@ -1,24 +1,13 @@
-import {
-  TCtpAttributeConstraint,
-  TCtpLevel,
-  TCtpTextInputHint,
-} from '@/graphql-types';
-
 const attributeConstraints = {
-  SameForAll: TCtpAttributeConstraint.SameForAll,
-  None: TCtpAttributeConstraint.None,
-  Unique: TCtpAttributeConstraint.Unique,
-  CombinationUnique: TCtpAttributeConstraint.CombinationUnique,
+  SameForAll: 'SameForAll',
+  None: 'None',
+  Unique: 'Unique',
+  CombinationUnique: 'CombinationUnique',
 } as const;
 
 const inputHints = {
-  SingleLine: TCtpTextInputHint.SingleLine,
-  MultiLine: TCtpTextInputHint.MultiLine,
+  SingleLine: 'SingleLine',
+  MultiLine: 'MultiLine',
 } as const;
 
-const levels = {
-  Product: TCtpLevel.Product,
-  Variant: TCtpLevel.Variant,
-} as const;
-
-export { attributeConstraints, inputHints, levels };
+export { attributeConstraints, inputHints };

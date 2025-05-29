@@ -2,12 +2,10 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import * as beddingBundlePresets from './bedding-bundle';
+import beddingBundle from './bedding-bundle';
 describe(`with beddingBundle preset`, () => {
   it('should create a beddingBundle product type draft', () => {
-    const beddingBundlePreset = beddingBundlePresets
-      .restPreset()
-      .build<TProductTypeDraft>();
+    const beddingBundlePreset = beddingBundle().build<TProductTypeDraft>();
     expect(beddingBundlePreset).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -85,9 +83,8 @@ describe(`with beddingBundle preset`, () => {
   });
 
   it('should create a beddingBundle product type draft for graphql', () => {
-    const beddingBundlePreset = beddingBundlePresets
-      .graphqlPreset()
-      .buildGraphql<TProductTypeDraftGraphql>();
+    const beddingBundlePreset =
+      beddingBundle().buildGraphql<TProductTypeDraftGraphql>();
     expect(beddingBundlePreset).toMatchInlineSnapshot(`
       {
         "attributeDefinitions": [
@@ -116,7 +113,6 @@ describe(`with beddingBundle preset`, () => {
                 "value": "product-description",
               },
             ],
-            "level": "Variant",
             "name": "product-description",
             "type": {
               "ltext": {
@@ -140,7 +136,6 @@ describe(`with beddingBundle preset`, () => {
                 "value": "Product Spec",
               },
             ],
-            "level": "Variant",
             "name": "product-spec",
             "type": {
               "ltext": {
@@ -168,12 +163,13 @@ describe(`with beddingBundle preset`, () => {
                 "value": "Produkte dieses Bundles",
               },
             ],
-            "level": "Variant",
             "name": "product-ref",
             "type": {
               "set": {
                 "elementType": {
-                  "referenceTypeId": "product",
+                  "reference": {
+                    "referenceTypeId": "product",
+                  },
                 },
               },
             },

@@ -1,33 +1,27 @@
 import { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import {
-  TCtpLocalizedEnumValue,
-  TCtpLocalizedEnumValueDraft,
-} from '@/graphql-types';
+import { TLocalizedStringGraphql } from '@/models/commons';
 
-/**
- * @deprecated use `TAttributeLocalizedEnumValueRest` or `TAttributeLocalizedEnumValueGraphql` instead
- */
 export type TAttributeLocalizedEnumValue = AttributeLocalizedEnumValue;
-/**
- * @deprecated use `TAttributeLocalizedEnumValueDraftRest` or `TAttributeLocalizedEnumValueDraftGraphql` instead
- */
 export type TAttributeLocalizedEnumValueDraft = AttributeLocalizedEnumValue;
 
-// REST types
-export type TAttributeLocalizedEnumValueRest = AttributeLocalizedEnumValue;
-export type TAttributeLocalizedEnumValueDraftRest = AttributeLocalizedEnumValue;
-
-// GraphQL types
-export type TAttributeLocalizedEnumValueGraphql = TCtpLocalizedEnumValue;
+export type TAttributeLocalizedEnumValueGraphql = Omit<
+  TAttributeLocalizedEnumValue,
+  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
+  'label'
+> & {
+  labelAllLocales: TLocalizedStringGraphql | null;
+  __typename: 'LocalizableEnumValueType';
+};
 export type TAttributeLocalizedEnumValueDraftGraphql =
-  TCtpLocalizedEnumValueDraft;
+  TAttributeLocalizedEnumValueDraft;
 
-// Builders type
-export type TCreateAttributeLocalizedEnumValueBuilder<
-  TAttributeLocalizedEnumValueModel extends
-    | TAttributeLocalizedEnumValueRest
-    | TAttributeLocalizedEnumValueDraftRest
-    | TAttributeLocalizedEnumValueGraphql
-    | TAttributeLocalizedEnumValueDraftGraphql,
-> = () => TBuilder<TAttributeLocalizedEnumValueModel>;
+export type TAttributeLocalizedEnumValueBuilder =
+  TBuilder<TAttributeLocalizedEnumValue>;
+export type TAttributeLocalizedEnumValueDraftBuilder =
+  TBuilder<TAttributeLocalizedEnumValueDraft>;
+
+export type TCreateAttributeLocalizedEnumValueBuilder =
+  () => TAttributeLocalizedEnumValueBuilder;
+export type TCreateAttributeLocalizedEnumValueDraftBuilder =
+  () => TAttributeLocalizedEnumValueDraftBuilder;

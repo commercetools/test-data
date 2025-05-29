@@ -1,12 +1,12 @@
 import type {
+  TProductTypeDraft,
   TProductTypeDraftGraphql,
-  TProductTypeDraftRest,
 } from '../../../types';
-import { restPreset, graphqlPreset } from './accessories';
+import accessories from './accessories';
 
 describe(`with accessories preset`, () => {
   it(`should create an accessories product type draft`, () => {
-    const accessoriesProductType = restPreset().build<TProductTypeDraftRest>();
+    const accessoriesProductType = accessories().build<TProductTypeDraft>();
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
         "attributes": [
@@ -78,7 +78,7 @@ describe(`with accessories preset`, () => {
 
   it(`should create an accessories product type draft when built for GraphQl`, () => {
     const accessoriesProductType =
-      graphqlPreset().build<TProductTypeDraftGraphql>();
+      accessories().buildGraphql<TProductTypeDraftGraphql>();
 
     expect(accessoriesProductType).toMatchInlineSnapshot(`
       {
@@ -100,7 +100,6 @@ describe(`with accessories preset`, () => {
                 "value": "Type",
               },
             ],
-            "level": "Variant",
             "name": "type",
             "type": {
               "enum": {
@@ -138,7 +137,6 @@ describe(`with accessories preset`, () => {
                 "value": "Engraving",
               },
             ],
-            "level": "Variant",
             "name": "engraving",
             "type": {
               "text": {

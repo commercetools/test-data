@@ -1,21 +1,26 @@
-import * as allSizesPreset from './all-sizes-preset';
-import * as bigSizesPreset from './big-sizes-preset';
-import * as smallSizesPreset from './small-sizes-preset';
+import { AttributeLocalizedEnumValue } from '@/models/product-type';
+import AttributeLocalizedEnumType from '../builder';
 
-export const restPresets = {
-  allSizesLenum: allSizesPreset.restPreset,
-  bigSizesLenum: bigSizesPreset.restPreset,
-  smallSizesLenum: smallSizesPreset.restPreset,
+const presets = {
+  allSizesLenum: () =>
+    AttributeLocalizedEnumType().values([
+      AttributeLocalizedEnumValue.presets.s(),
+      AttributeLocalizedEnumValue.presets.m(),
+      AttributeLocalizedEnumValue.presets.l(),
+      AttributeLocalizedEnumValue.presets.xl(),
+    ]),
+
+  smallSizesLenum: () =>
+    AttributeLocalizedEnumType().values([
+      AttributeLocalizedEnumValue.presets.s(),
+      AttributeLocalizedEnumValue.presets.m(),
+    ]),
+
+  bigSizesLenum: () =>
+    AttributeLocalizedEnumType().values([
+      AttributeLocalizedEnumValue.presets.l(),
+      AttributeLocalizedEnumValue.presets.xl(),
+    ]),
 };
 
-export const graphqlPresets = {
-  allSizesLenum: allSizesPreset.graphqlPreset,
-  bigSizesLenum: bigSizesPreset.graphqlPreset,
-  smallSizesLenum: smallSizesPreset.graphqlPreset,
-};
-
-export const compatPresets = {
-  allSizesLenum: allSizesPreset.compatPreset,
-  bigSizesLenum: bigSizesPreset.compatPreset,
-  smallSizesLenum: smallSizesPreset.compatPreset,
-};
+export default presets;

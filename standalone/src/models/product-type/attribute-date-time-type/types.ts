@@ -1,29 +1,23 @@
 import type { AttributeDateTimeType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import {
-  TCtpDateTimeAttributeDefinitionType,
-  TCtpSimpleAttributeTypeDraft,
-} from '@/graphql-types';
 
-/**
- * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead
- */
 export type TAttributeDateTimeType = AttributeDateTimeType;
-/**
- * @deprecated use `TAttributeDefinitionRest` or `TAttributeDefinitionGraphql` instead
- */
 export type TAttributeDateTimeTypeDraft = AttributeDateTimeType;
 
-export type TAttributeDateTimeTypeRest = AttributeDateTimeType;
-export type TAttributeDateTimeTypeDraftRest = AttributeDateTimeType;
+export type TAttributeDateTimeTypeGraphql = AttributeDateTimeType & {
+  __typename: 'DateTimeAttributeDefinitionType';
+};
+export type TAttributeDateTimeTypeDraftGraphql = {
+  datetime: {
+    dummy: string | null;
+  };
+};
 
-export type TAttributeDateTimeTypeGraphql = TCtpDateTimeAttributeDefinitionType;
-export type TAttributeDateTimeTypeDraftGraphql = TCtpSimpleAttributeTypeDraft;
+export type TAttributeDateTimeTypeBuilder = TBuilder<TAttributeDateTimeType>;
+export type TAttributeDateTimeTypeDraftBuilder =
+  TBuilder<TAttributeDateTimeTypeDraft>;
 
-export type TCreateAttributeDateTimeTypeBuilder<
-  TAttributeDateTimeTypeModel extends
-    | TAttributeDateTimeTypeRest
-    | TAttributeDateTimeTypeDraftRest
-    | TAttributeDateTimeTypeGraphql
-    | TAttributeDateTimeTypeDraftGraphql,
-> = () => TBuilder<TAttributeDateTimeTypeModel>;
+export type TCreateAttributeDateTimeTypeBuilder =
+  () => TAttributeDateTimeTypeBuilder;
+export type TCreateAttributeDateTimeTypeDraftBuilder =
+  () => TAttributeDateTimeTypeDraftBuilder;

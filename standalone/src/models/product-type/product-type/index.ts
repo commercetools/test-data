@@ -1,24 +1,8 @@
-import {
-  RestModelBuilder,
-  GraphqlModelBuilder,
-  CompatModelBuilder,
-} from './builders';
-import * as modelPresets from './presets';
+export * as ProductTypeDraft from './product-type-draft';
+export * as Product from '.';
 
-export const ProductTypeRest = {
-  random: RestModelBuilder,
-  presets: modelPresets.restPresets,
-};
+export { default as random } from './builder';
+export { default as presets } from './presets';
+export { default as draftPresets } from './product-type-draft/presets';
 
-export const ProductTypeGraphql = {
-  random: GraphqlModelBuilder,
-  presets: modelPresets.graphqlPresets,
-};
-
-/**
- * @deprecated Use `ProductTypeRest` or `ProductTypeGraphql` exported models instead of `ProductType`.
- */
-export const ProductType = {
-  random: CompatModelBuilder,
-  presets: modelPresets.compatPresets,
-};
+export * from './types';
