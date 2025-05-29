@@ -7,20 +7,11 @@ import type {
 export type TCustomApplicationSubmenuLinkGraphql =
   TMcSettingsCustomApplicationSubmenuLink;
 
-export type TCustomApplicationSubmenuLink = Omit<
-  TCustomApplicationSubmenuLinkGraphql,
-  '__typename'
->;
-
-export type TCustomApplicationSubmenuLinkDraft =
+export type TCustomApplicationSubmenuLinkDraftGraphql =
   TMcSettingsCustomApplicationSubmenuLinkDraftDataInput;
 
-export type TCustomApplicationSubmenuLinkBuilder =
-  TBuilder<TCustomApplicationSubmenuLink>;
-export type TCreateCustomApplicationSubmenuLinkBuilder =
-  () => TCustomApplicationSubmenuLinkBuilder;
-
-export type TCustomApplicationSubmenuLinkDraftBuilder =
-  TBuilder<TCustomApplicationSubmenuLinkDraft>;
-export type TCreateCustomApplicationSubmenuLinkDraftBuilder =
-  () => TCustomApplicationSubmenuLinkDraftBuilder;
+export type TCreateCustomApplicationSubmenuLinkBuilder<
+  TModel extends
+    | TCustomApplicationSubmenuLinkGraphql
+    | TCustomApplicationSubmenuLinkDraftGraphql,
+> = () => TBuilder<TModel>;

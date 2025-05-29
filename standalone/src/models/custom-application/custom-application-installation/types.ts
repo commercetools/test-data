@@ -4,12 +4,6 @@ import type { TMcSettingsRestrictedCustomApplicationInstallationForOrganization 
 export type TCustomApplicationInstallationGraphql =
   TMcSettingsRestrictedCustomApplicationInstallationForOrganization;
 
-export type TCustomApplicationInstallation = Omit<
-  TCustomApplicationInstallationGraphql,
-  '__typename'
->;
-
-export type TCustomApplicationInstallationBuilder =
-  TBuilder<TCustomApplicationInstallation>;
-export type TCreateCustomApplicationInstallationBuilder =
-  () => TCustomApplicationInstallationBuilder;
+export type TCreateCustomApplicationInstallationBuilder<
+  TModel extends TCustomApplicationInstallationGraphql,
+> = () => TBuilder<TModel>;

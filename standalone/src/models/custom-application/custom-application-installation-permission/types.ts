@@ -4,12 +4,6 @@ import type { TMcSettingsCustomApplicationInstallationPermission } from '@/graph
 export type TCustomApplicationInstallationPermissionGraphql =
   TMcSettingsCustomApplicationInstallationPermission;
 
-export type TCustomApplicationInstallationPermission = Omit<
-  TCustomApplicationInstallationPermissionGraphql,
-  '__typename'
->;
-
-export type TCustomApplicationInstallationPermissionBuilder =
-  TBuilder<TCustomApplicationInstallationPermission>;
-export type TCreateCustomApplicationInstallationPermissionBuilder =
-  () => TCustomApplicationInstallationPermissionBuilder;
+export type TCreateCustomApplicationInstallationPermissionBuilder<
+  TModel extends TCustomApplicationInstallationPermissionGraphql,
+> = () => TBuilder<TModel>;

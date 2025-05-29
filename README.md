@@ -82,7 +82,7 @@ When developing with multiple repositories, you may need to link packages locall
      {
        "dependencies": {
          "@example/package-name": "<path-to-test-data-package>",
-         "@commercetools-test-data/commons": "../../../test-data/models/commons"
+         "@commercetools/composable-commerce-test-data": "../../../test-data/standalone"
        }
      }
      ```

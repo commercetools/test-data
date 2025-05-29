@@ -4,25 +4,14 @@ import type {
   TMcSettingsCustomApplicationMenuLinkDraftDataInput,
 } from '@/graphql-types';
 
-export type TCustomApplicationMenuLinkGraphql = Omit<
-  TMcSettingsCustomApplicationMenuLink,
-  'submenuLinks'
->;
+export type TCustomApplicationMenuLinkGraphql =
+  TMcSettingsCustomApplicationMenuLink;
 
-export type TCustomApplicationMenuLink = Omit<
-  TCustomApplicationMenuLinkGraphql,
-  '__typename'
->;
-
-export type TCustomApplicationMenuLinkDraft =
+export type TCustomApplicationMenuLinkDraftGraphql =
   TMcSettingsCustomApplicationMenuLinkDraftDataInput;
 
-export type TCustomApplicationMenuLinkBuilder =
-  TBuilder<TCustomApplicationMenuLink>;
-export type TCreateCustomApplicationMenuLinkBuilder =
-  () => TCustomApplicationMenuLinkBuilder;
-
-export type TCustomApplicationMenuLinkDraftBuilder =
-  TBuilder<TCustomApplicationMenuLinkDraft>;
-export type TCreateCustomApplicationMenuLinkDraftBuilder =
-  () => TCustomApplicationMenuLinkDraftBuilder;
+export type TCreateCustomApplicationMenuLinkBuilder<
+  TModel extends
+    | TCustomApplicationMenuLinkGraphql
+    | TCustomApplicationMenuLinkDraftGraphql,
+> = () => TBuilder<TModel>;
