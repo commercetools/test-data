@@ -1,8 +1,28 @@
-export * as AttributeDefinitionDraft from '../attribute-definition/attribute-definition-draft';
-export * as AttributeDefinition from '../attribute-definition';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from './builders';
+import * as constants from './constants';
+import * as modelPresets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from '../attribute-definition/presets';
-export { default as draftPresets } from '../attribute-definition/attribute-definition-draft/presets';
-export * as constants from './constants';
-export * from './types';
+export const AttributeDefinitionRest = {
+  constants: constants,
+  random: RestModelBuilder,
+  presets: modelPresets.restPresets,
+};
+
+export const AttributeDefinitionGraphql = {
+  constants: constants,
+  random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `AttributeDefinitionRest` or `AttributeDefinitionGraphql` exported models instead of `AttributeDefinition`.
+ */
+export const AttributeDefinition = {
+  constants: constants,
+  random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
+};

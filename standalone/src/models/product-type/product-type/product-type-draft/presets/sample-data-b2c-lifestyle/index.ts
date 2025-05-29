@@ -1,11 +1,21 @@
-import beddingBundle from './bedding-bundle';
-import furnitureAndDecor from './furniture-and-decor';
-import productSets from './product-sets';
+import * as beddingBundlePresets from './bedding-bundle';
+import * as furnitureAndDecorPresets from './furniture-and-decor';
+import * as productSetsPresets from './product-sets';
 
-const presets = {
-  beddingBundle,
-  furnitureAndDecor,
-  productSets,
+export const restPresets = {
+  beddingBundle: beddingBundlePresets.restPreset,
+  furnitureAndDecor: furnitureAndDecorPresets.restPreset,
+  productSets: productSetsPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  beddingBundle: beddingBundlePresets.graphqlPreset,
+  furnitureAndDecor: furnitureAndDecorPresets.graphqlPreset,
+  productSets: productSetsPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  beddingBundle: beddingBundlePresets.compatPreset,
+  furnitureAndDecor: furnitureAndDecorPresets.compatPreset,
+  productSets: productSetsPresets.compatPreset,
+};

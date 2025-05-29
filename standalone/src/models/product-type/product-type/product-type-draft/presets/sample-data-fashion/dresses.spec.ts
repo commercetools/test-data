@@ -2,11 +2,13 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import dresses from './dresses';
+import * as dressesPresets from './dresses';
 
 describe(`with dresses preset`, () => {
   it(`should create a dresses product type draft`, () => {
-    const dressesProductType = dresses().build<TProductTypeDraft>();
+    const dressesProductType = dressesPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
 
     expect(dressesProductType).toMatchInlineSnapshot(`
       {
@@ -92,8 +94,9 @@ describe(`with dresses preset`, () => {
   });
 
   it(`should create a dresses product type draft when built for graphql`, () => {
-    const dressesProductTypeGraphql =
-      dresses().buildGraphql<TProductTypeDraftGraphql>();
+    const dressesProductTypeGraphql = dressesPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
 
     expect(dressesProductTypeGraphql).toMatchInlineSnapshot(`
       {
@@ -115,6 +118,7 @@ describe(`with dresses preset`, () => {
                 "value": "Length",
               },
             ],
+            "level": "Variant",
             "name": "length",
             "type": {
               "enum": {
@@ -152,6 +156,7 @@ describe(`with dresses preset`, () => {
                 "value": "Color",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
               "enum": {
