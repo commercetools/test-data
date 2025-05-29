@@ -8,7 +8,7 @@ describe('builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         name: expect.any(String),
-        oAuthScopes: expect.any(Array),
+        oAuthScopes: expect.arrayContaining([expect.any(String)]),
       })
     );
   });

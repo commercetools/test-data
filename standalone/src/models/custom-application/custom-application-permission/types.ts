@@ -10,6 +10,12 @@ export type TCustomApplicationPermissionGraphql =
 export type TCustomApplicationPermissionDraftGraphql =
   TMcSettingsCustomApplicationPermissionDataInput;
 
+/**
+ * @deprecated use `TCustomApplicationPermissionDraftGraphql` instead
+ */
+export type TCustomApplicationPermissionDraft =
+  TCustomApplicationPermissionDraftGraphql;
+
 export type TCreateCustomApplicationPermissionBuilder<
   TModel extends
     | TCustomApplicationPermissionGraphql

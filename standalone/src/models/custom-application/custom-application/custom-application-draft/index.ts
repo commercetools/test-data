@@ -1,4 +1,4 @@
-import { GraphqlModelBuilder } from './builder';
+import { GraphqlModelBuilder } from './builders';
 import * as CustomApplicationDraftPresets from './presets';
 
 export const CustomApplicationDraftGraphql = {

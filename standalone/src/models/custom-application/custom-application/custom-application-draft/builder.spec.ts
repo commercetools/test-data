@@ -9,12 +9,38 @@ describe('builder', () => {
     expect(graphqlModel).toMatchObject({
       url: expect.any(String),
       description: expect.any(String),
-      permissions: expect.any(Array),
+      permissions: expect.arrayContaining([
+        expect.objectContaining({
+          name: expect.stringMatching(/^(view|manage)(\w+)$/),
+          oAuthScopes: expect.arrayContaining([expect.any(String)]),
+        }),
+      ]),
       icon: expect.any(String),
       name: expect.any(String),
       entryPointUriPath: expect.any(String),
-      mainMenuLink: expect.any(Object),
-      submenuLinks: expect.any(Array),
+      mainMenuLink: expect.objectContaining({
+        defaultLabel: expect.any(String),
+        permissions: [],
+        labelAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            locale: expect.any(String),
+            value: expect.any(String),
+          }),
+        ]),
+      }),
+      submenuLinks: expect.arrayContaining([
+        expect.objectContaining({
+          labelAllLocales: [
+            expect.objectContaining({
+              locale: expect.any(String),
+              value: expect.any(String),
+            }),
+          ],
+          defaultLabel: expect.any(String),
+          permissions: [],
+          uriPath: expect.any(String),
+        }),
+      ]),
     });
   });
 });
