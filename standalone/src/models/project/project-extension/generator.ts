@@ -1,6 +1,6 @@
 import { fake, Generator } from '@/core';
-import { CustomApplicationInstallationGraphql } from '@/models/custom-application';
-import { CustomViewInstallation } from '@/models/custom-view';
+import { CustomApplicationInstallationGraphql } from '@/models/customization/custom-application';
+import { CustomViewInstallation } from '@/models/customization/custom-view';
 import { createRelatedDates } from '@/utils';
 import * as CategoryRecommendationSettings from './category-recommendation-settings';
 import * as ImageRegex from './image-regex';

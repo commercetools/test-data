@@ -2,8 +2,11 @@ import { fake, Generator } from '@/core';
 import {
   CustomApplicationInstallationGraphql,
   CustomApplicationGraphql,
-} from '@/models/custom-application';
-import { CustomViewInstallation, CustomView } from '@/models/custom-view';
+} from '@/models/customization/custom-application';
+import {
+  CustomViewInstallation,
+  CustomView,
+} from '@/models/customization/custom-view';
 import { createRelatedDates } from '@/utils';
 import * as ContactInformation from './contact-information';
 import * as OidcSSOConfig from './oidc-sso-config';
