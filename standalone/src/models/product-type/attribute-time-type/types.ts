@@ -1,21 +1,32 @@
 import type { AttributeTimeType } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import {
+  TCtpTimeAttributeDefinitionType,
+  TCtpSimpleAttributeTypeDraft,
+} from '@/graphql-types';
 
+/**
+ * @deprecated use `TAttributeTimeTypeRest` or `TAttributeTimeTypeGraphql` instead
+ */
 export type TAttributeTimeType = AttributeTimeType;
+/**
+ * @deprecated use `TAttributeTimeTypeRest` or `TAttributeTimeTypeGraphql` instead
+ */
 export type TAttributeTimeTypeDraft = AttributeTimeType;
 
-export type TAttributeTimeTypeGraphql = AttributeTimeType & {
-  __typename: 'TimeAttributeDefinitionType';
-};
-export type TAttributeTimeTypeDraftGraphql = {
-  time: {
-    dummy: string | null;
-  };
-};
+// REST types
+export type TAttributeTimeTypeRest = AttributeTimeType;
+export type TAttributeTimeTypeDraftRest = AttributeTimeType;
 
-export type TAttributeTimeTypeBuilder = TBuilder<TAttributeTimeType>;
-export type TAttributeTimeTypeDraftBuilder = TBuilder<TAttributeTimeTypeDraft>;
+// GraphQL types
+export type TAttributeTimeTypeGraphql = TCtpTimeAttributeDefinitionType;
+export type TAttributeTimeTypeDraftGraphql = TCtpSimpleAttributeTypeDraft;
 
-export type TCreateAttributeTimeTypeBuilder = () => TAttributeTimeTypeBuilder;
-export type TCreateAttributeTimeTypeDraftBuilder =
-  () => TAttributeTimeTypeDraftBuilder;
+// Builders types
+export type TCreateAttributeTimeTypeBuilder<
+  TAttributeTimeTypeModel extends
+    | TAttributeTimeTypeRest
+    | TAttributeTimeTypeDraftRest
+    | TAttributeTimeTypeGraphql
+    | TAttributeTimeTypeDraftGraphql,
+> = () => TBuilder<TAttributeTimeTypeModel>;

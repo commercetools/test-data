@@ -2,11 +2,13 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import shirts from './shirts';
+import * as shirtsPresets from './shirts';
 
 describe(`with shirts preset`, () => {
   it(`should create a shirts product type draft`, () => {
-    const shirtsProductType = shirts().build<TProductTypeDraft>();
+    const shirtsProductType = shirtsPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
 
     expect(shirtsProductType).toMatchInlineSnapshot(`
       {
@@ -96,8 +98,9 @@ describe(`with shirts preset`, () => {
   });
 
   it(`should create a shirts product type draft when built for graphql`, () => {
-    const shirtsProductTypeGraphql =
-      shirts().buildGraphql<TProductTypeDraftGraphql>();
+    const shirtsProductTypeGraphql = shirtsPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
 
     expect(shirtsProductTypeGraphql).toMatchInlineSnapshot(`
       {
@@ -119,6 +122,7 @@ describe(`with shirts preset`, () => {
                 "value": "Size",
               },
             ],
+            "level": "Variant",
             "name": "size",
             "type": {
               "enum": {
@@ -156,6 +160,7 @@ describe(`with shirts preset`, () => {
                 "value": "Color",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
               "enum": {

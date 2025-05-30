@@ -1,13 +1,249 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
 import {
   AttributeDefinitionDraft,
+  AttributeDefinitionDraftGraphql,
+  AttributeDefinitionDraftRest,
   AttributeEnumTypeDraft,
+  AttributeEnumTypeDraftGraphql,
+  AttributeEnumTypeDraftRest,
   AttributePlainEnumValueDraft,
+  AttributePlainEnumValueDraftGraphql,
+  AttributePlainEnumValueDraftRest,
 } from '../../../../index';
-import type { TProductTypeDraftBuilder } from '../../../types';
-import * as ProductTypeDraft from '../../index';
 
-const pants = (): TProductTypeDraftBuilder =>
+import {
+  TProductTypeDraft,
+  TProductTypeDraftGraphql,
+  TProductTypeDraftRest,
+} from '../../../types';
+import {
+  ProductTypeDraft,
+  ProductTypeDraftGraphql,
+  ProductTypeDraftRest,
+} from '../../index';
+
+export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
+  ProductTypeDraftRest.presets
+    .empty()
+    .key('pants')
+    .name('Pants')
+    .description('Pants')
+    .attributes([
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('size')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .isRequired(true)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random()
+              .key('Small')
+              .label('Small'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Medium')
+              .label('Medium'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Large')
+              .label('Large'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('fit')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random().key('Slim').label('Slim'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Straight')
+              .label('Straight'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Flair')
+              .label('Flair'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('color')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random().key('Blue').label('Blue'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Black')
+              .label('Black'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('White')
+              .label('White'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('length')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Length'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Length'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random()
+              .key('Ankle')
+              .label('Ankle'),
+            AttributePlainEnumValueDraftRest.random().key('Crop').label('Crop'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Extra Long')
+              .label('Extra Long'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
+  ProductTypeDraftGraphql.presets
+    .empty()
+    .key('pants')
+    .name('Pants')
+    .description('Pants')
+    .attributeDefinitions([
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('size')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Size'))
+        .isRequired(true)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Small')
+              .label('Small'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Medium')
+              .label('Medium'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Large')
+              .label('Large'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('fit')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Fit'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Slim')
+              .label('Slim'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Straight')
+              .label('Straight'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Flair')
+              .label('Flair'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('color')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Color'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Blue')
+              .label('Blue'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Black')
+              .label('Black'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('White')
+              .label('White'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('length')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Length'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Length'))
+        .isRequired(false)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Ankle')
+              .label('Ankle'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Crop')
+              .label('Crop'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Extra Long')
+              .label('Extra Long'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const compatPreset = (): TBuilder<TProductTypeDraft> =>
   ProductTypeDraft.presets
     .empty()
     .key('pants')
@@ -27,9 +263,11 @@ const pants = (): TProductTypeDraftBuilder =>
             AttributePlainEnumValueDraft.random().key('Large').label('Large'),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
       AttributeDefinitionDraft.presets
         .empty()
         .name('fit')
@@ -45,9 +283,11 @@ const pants = (): TProductTypeDraftBuilder =>
             AttributePlainEnumValueDraft.random().key('Flair').label('Flair'),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
       AttributeDefinitionDraft.presets
         .empty()
         .name('color')
@@ -61,9 +301,11 @@ const pants = (): TProductTypeDraftBuilder =>
             AttributePlainEnumValueDraft.random().key('White').label('White'),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
       AttributeDefinitionDraft.presets
         .empty()
         .name('length')
@@ -79,9 +321,9 @@ const pants = (): TProductTypeDraftBuilder =>
               .label('Extra Long'),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
     ]);
-
-export default pants;

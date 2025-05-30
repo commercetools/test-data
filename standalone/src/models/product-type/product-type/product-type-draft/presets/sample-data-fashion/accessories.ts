@@ -1,14 +1,127 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
 import {
   AttributeDefinitionDraft,
+  AttributeDefinitionDraftGraphql,
+  AttributeDefinitionDraftRest,
   AttributeEnumTypeDraft,
+  AttributeEnumTypeDraftGraphql,
+  AttributeEnumTypeDraftRest,
   AttributePlainEnumValueDraft,
+  AttributePlainEnumValueDraftGraphql,
+  AttributePlainEnumValueDraftRest,
   AttributeTextTypeDraft,
+  AttributeTextTypeDraftGraphql,
+  AttributeTextTypeDraftRest,
 } from '../../../../index';
-import type { TProductTypeDraftBuilder } from '../../../types';
-import * as ProductTypeDraft from '../../index';
+import {
+  TProductTypeDraft,
+  TProductTypeDraftGraphql,
+  TProductTypeDraftRest,
+} from '../../../types';
+import {
+  ProductTypeDraft,
+  ProductTypeDraftGraphql,
+  ProductTypeDraftRest,
+} from '../../index';
 
-const accessories = (): TProductTypeDraftBuilder =>
+export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
+  ProductTypeDraftRest.presets
+    .empty()
+    .key('accessories')
+    .name('Accessories')
+    .description('Accessories')
+    .attributes([
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('type')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Type'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Type'))
+        .isRequired(true)
+        .type(
+          AttributeEnumTypeDraftRest.random().values([
+            AttributePlainEnumValueDraftRest.random()
+              .key('Jewelry')
+              .label('Jewelry'),
+            AttributePlainEnumValueDraftRest.random().key('Bag').label('Bag'),
+            AttributePlainEnumValueDraftRest.random()
+              .key('Shoes')
+              .label('Shoes'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftRest.presets
+        .empty()
+        .name('engraving')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
+        .isRequired(false)
+        .type(AttributeTextTypeDraftRest.random().name('text'))
+        .attributeConstraint(
+          AttributeDefinitionDraftRest.constants.attributeConstraints.None
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftRest.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
+  ProductTypeDraftGraphql.presets
+    .empty()
+    .key('accessories')
+    .name('Accessories')
+    .description('Accessories')
+    .attributeDefinitions([
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('type')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Type'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Type'))
+        .isRequired(true)
+        .type(
+          AttributeEnumTypeDraftGraphql.random().values([
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Jewelry')
+              .label('Jewelry'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Bag')
+              .label('Bag'),
+            AttributePlainEnumValueDraftGraphql.random()
+              .key('Shoes')
+              .label('Shoes'),
+          ])
+        )
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(true)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+      AttributeDefinitionDraftGraphql.presets
+        .empty()
+        .name('engraving')
+        .label(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
+        .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
+        .isRequired(false)
+        .type(AttributeTextTypeDraftGraphql.random())
+        .attributeConstraint(
+          AttributeDefinitionDraftGraphql.constants.attributeConstraints.None
+        )
+        .isSearchable(false)
+        .inputHint(
+          AttributeDefinitionDraftGraphql.constants.inputHints.SingleLine
+        ),
+    ]);
+
+export const compatPreset = (): TBuilder<TProductTypeDraft> =>
   ProductTypeDraft.presets
     .empty()
     .key('accessories')
@@ -30,9 +143,11 @@ const accessories = (): TProductTypeDraftBuilder =>
             AttributePlainEnumValueDraft.random().key('Shoes').label('Shoes'),
           ])
         )
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(true)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
       AttributeDefinitionDraft.presets
         .empty()
         .name('engraving')
@@ -40,9 +155,9 @@ const accessories = (): TProductTypeDraftBuilder =>
         .inputTip(LocalizedStringDraft.presets.empty()['en-US']('Engraving'))
         .isRequired(false)
         .type(AttributeTextTypeDraft.random().name('text'))
-        .attributeConstraint('None')
+        .attributeConstraint(
+          AttributeDefinitionDraft.constants.attributeConstraints.None
+        )
         .isSearchable(false)
-        .inputHint('SingleLine'),
+        .inputHint(AttributeDefinitionDraft.constants.inputHints.SingleLine),
     ]);
-
-export default accessories;
