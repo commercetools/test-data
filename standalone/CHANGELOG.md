@@ -1,5 +1,15 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.1.2
+
+### Patch Changes
+
+- [#835](https://github.com/commercetools/test-data/pull/835) [`41c0a63`](https://github.com/commercetools/test-data/commit/41c0a63254625538050df12955e0abea97d91889) Thanks [@rajrdk](https://github.com/rajrdk)! - Moved `Custom application` & `Custom view` models directories within the repository structure to improve readability.
+
+- [#832](https://github.com/commercetools/test-data/pull/832) [`f4954ca`](https://github.com/commercetools/test-data/commit/f4954caf47eaa9267e39c54530fb221df22de4a2) Thanks [@rajrdk](https://github.com/rajrdk)! - Fix : Add missing exports to shipping info presets
+
+- [#827](https://github.com/commercetools/test-data/pull/827) [`3fae39a`](https://github.com/commercetools/test-data/commit/3fae39a32ad86038a4b1fa8b38969ea2f7d4ce8a) Thanks [@leventekobor](https://github.com/leventekobor)! - The `CustomApplication`, `CustomApplicationDraft`, `CustomApplicationDeploymentPreview`, `CustomApplicationInstallation`, `CustomApplicationInstallationPermission`, `CustomApplicationMenuLink`, `CustomApplicationMenuLinkDraft`, `CustomApplicationPermission`, `CustomApplicationPermissionDraft`, `CustomApplicationSubmenuLink` and `CustomApplicationSubmenuLinkDraft` models have been refactored to use the new implementation patterns but that does not affect consumers.
+
 ## 11.1.1
 
 ### Patch Changes
