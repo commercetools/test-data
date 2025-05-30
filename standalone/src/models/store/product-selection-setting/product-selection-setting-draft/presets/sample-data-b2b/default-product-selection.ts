@@ -1,9 +1,10 @@
+import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '../../../../../commons';
 import {
   ProductSelectionDraft,
   type TProductSelectionDraft,
 } from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraftBuilder } from '../../../types';
+import type { TProductSelectionSettingDraft } from '../../../types';
 import ProductSelectionSettingDraft from '../../builder';
 
 const defaultProductSelection = ProductSelectionDraft.presets.sampleDataB2B
@@ -11,7 +12,7 @@ const defaultProductSelection = ProductSelectionDraft.presets.sampleDataB2B
   .build<TProductSelectionDraft>();
 
 const defaultProductSelectionSetting =
-  (): TProductSelectionSettingDraftBuilder =>
+  (): TBuilder<TProductSelectionSettingDraft> =>
     ProductSelectionSettingDraft()
       .productSelection(
         KeyReferenceDraft.presets
