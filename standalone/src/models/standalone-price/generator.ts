@@ -11,7 +11,7 @@ const [getCreatedAt, getLastModifiedAt, getExpiresAt] = createRelatedDates();
 
 const generator = Generator<TStandalonePrice>({
   fields: {
-    id: fake((f) => f.string.alphanumeric(10)),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     createdAt: fake(getCreatedAt),
     lastModifiedAt: fake(getLastModifiedAt),
