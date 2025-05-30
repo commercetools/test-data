@@ -111,7 +111,9 @@ describe(`with productSets preset`, () => {
             "type": {
               "set": {
                 "elementType": {
-                  "dummy": "ltext",
+                  "ltext": {
+                    "dummy": null,
+                  },
                 },
               },
             },

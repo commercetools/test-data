@@ -400,7 +400,9 @@ describe(`with heavyLiftingAndSpecializedEquipment preset`, () => {
             "type": {
               "set": {
                 "elementType": {
-                  "referenceTypeId": "product",
+                  "reference": {
+                    "referenceTypeId": "product",
+                  },
                 },
               },
             },

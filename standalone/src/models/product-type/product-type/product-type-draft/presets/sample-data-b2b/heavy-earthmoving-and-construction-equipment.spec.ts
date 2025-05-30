@@ -345,7 +345,9 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
             "type": {
               "set": {
                 "elementType": {
-                  "referenceTypeId": "product",
+                  "reference": {
+                    "referenceTypeId": "product",
+                  },
                 },
               },
             },
