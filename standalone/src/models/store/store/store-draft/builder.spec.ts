@@ -2,8 +2,12 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@/core/test-utils';
-import type { TStoreDraft, TStoreDraftGraphql } from '../types';
-import * as StoreDraft from './index';
+import type {
+  TStoreDraft,
+  TStoreDraftGraphql,
+  TStoreDraftRest,
+} from '../types';
+import { StoreDraftGraphql, StoreDraftRest, StoreDraft } from './index';
 
 describe('builder', () => {
   it(
@@ -28,9 +32,9 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TStoreDraft, TStoreDraft>(
+    ...createBuilderSpec<TStoreDraftRest, TStoreDraftRest>(
       'rest',
-      StoreDraft.random(),
+      StoreDraftRest.random(),
       expect.objectContaining({
         key: expect.any(String),
         name: expect.objectContaining({
@@ -49,9 +53,9 @@ describe('builder', () => {
   );
   //Note that the storeDraft graphql is provided as scaffolding only and may not be complete at this time.
   it(
-    ...createBuilderSpec<TStoreDraft, TStoreDraftGraphql>(
+    ...createBuilderSpec<TStoreDraftGraphql, TStoreDraftGraphql>(
       'graphql',
-      StoreDraft.random(),
+      StoreDraftGraphql.random(),
       expect.objectContaining({
         key: expect.any(String),
       })

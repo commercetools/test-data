@@ -1,8 +1,9 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import type { TStoreDraftBuilder } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import * as StoreDraft from '../../index';
 
-const b2cRetailStore = (): TStoreDraftBuilder =>
+const b2cRetailStore = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
   StoreDraft.presets
     .empty()
     .key('b2c-retail-store')

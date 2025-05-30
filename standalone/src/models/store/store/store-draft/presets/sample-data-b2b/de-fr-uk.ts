@@ -1,10 +1,11 @@
+import { TBuilder } from '@/core';
 import { ChannelDraft, type TChannelDraft } from '../../../../../channel';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '../../../../../commons';
 import { ProductSelectionSettingDraft } from '../../../../product-selection-setting/index';
-import type { TStoreDraftBuilder } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import * as StoreDraft from '../../index';
 
 const deFrUkChannel = ChannelDraft.presets.sampleDataB2B
@@ -14,7 +15,7 @@ const euWarehouseChannel = ChannelDraft.presets.sampleDataB2B
   .euWarehouse()
   .build<TChannelDraft>();
 
-const deFrUk = (): TStoreDraftBuilder =>
+const deFrUk = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
   StoreDraft.presets
     .empty()
     .key('de-fr-uk')

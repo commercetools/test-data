@@ -1,9 +1,9 @@
-import type { TStoreDraft } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import usLargeCustomers from './us-large-customers';
 
 describe(`with usLargeCustomers preset`, () => {
   it(`should return a usLargeCustomers preset`, () => {
-    const usLargeCustomersPreset = usLargeCustomers().build<TStoreDraft>();
+    const usLargeCustomersPreset = usLargeCustomers().build<TStoreDraftRest>();
     expect(usLargeCustomersPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -52,7 +52,7 @@ describe(`with usLargeCustomers preset`, () => {
 
   it(`should return a usLargeCustomers preset when built for graphql`, () => {
     const usLargeCustomersPresetGraphql =
-      usLargeCustomers().buildGraphql<TStoreDraft>();
+      usLargeCustomers().buildGraphql<TStoreDraftGraphql>();
     expect(usLargeCustomersPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,

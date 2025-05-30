@@ -1,8 +1,9 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import type { TStoreDraftBuilder } from '../../../types';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import * as StoreDraft from '../../index';
 
-const store01 = (): TStoreDraftBuilder =>
+const store01 = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
   StoreDraft.presets
     .empty()
     .key('sample_store_three')
