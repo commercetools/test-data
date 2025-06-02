@@ -1,5 +1,5 @@
 import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
-import { deFrUk, deFrUkRest } from './de-fr-uk';
+import { deFrUk, deFrUkRest, deFrUkGraphql } from './de-fr-uk';
 
 describe(`with deFrUk preset`, () => {
   it(`should return a deFrUk preset for rest`, () => {
@@ -51,7 +51,8 @@ describe(`with deFrUk preset`, () => {
   });
 
   it(`should return a deFrUk preset for graphql`, () => {
-    const deFrUkPresetGraphql = deFrUk().buildGraphql<TStoreDraftGraphql>();
+    const deFrUkPresetGraphql =
+      deFrUkGraphql().buildGraphql<TStoreDraftGraphql>();
     expect(deFrUkPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -110,8 +111,51 @@ describe(`with deFrUk preset`, () => {
           {
             "active": true,
             "productSelection": {
+              "custom": undefined,
               "key": "default-product-selection",
-              "typeId": "product-selection",
+              "mode": "Individual",
+              "name": [
+                {
+                    "locale": "de-DE",
+                    "value": "Standard",
+                  },
+                  {
+                    "locale": "it-IT",
+                    "value": "Predefinito",
+                  },
+                  {
+                    "locale": "nl-NL",
+                    "value": "Standaard",
+                  },
+                  {
+                    "locale": "fr-FR",
+                    "value": "Défaut",
+                  },
+                  {
+                    "locale": "en-AU",
+                    "value": "Default",
+                  },
+                  {
+                    "locale": "es-ES",
+                    "value": "Predeterminado",
+                  },
+                  {
+                    "locale": "en-GB",
+                    "value": "Default",
+                  },
+                  {
+                    "locale": "en-NZ",
+                    "value": "Default",
+                  },
+                  {
+                    "locale": "pt-PT",
+                    "value": "Padrão",
+                  },
+                  {
+                    "locale": "en-US",
+                    "value": "Default",
+                  },
+                ],
             },
           },
         ],

@@ -57,7 +57,7 @@ describe('builder', () => {
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
-          key: expect.any(String),
+          id: expect.any(String),
         }),
         active: expect.any(Boolean),
       })

@@ -3,11 +3,76 @@ import {
   KeyReferenceDraft,
   LocalizedStringDraft,
 } from '../../../../../commons';
-import { ProductSelectionSettingDraft } from '../../../../product-selection-setting/index';
+import {
+  ProductSelectionSetting,
+  ProductSelectionSettingGraphql,
+  ProductSelectionSettingRest,
+} from '../../../../product-selection-setting/index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import * as StoreDraft from '../../index';
+import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
-const defaultStore = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
+export const defaultStoreRest = (): TBuilder<TStoreDraftRest> =>
+  StoreDraftRest.presets
+    .empty()
+    .key('default-store')
+    .name(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Standard')
+        ['it-IT']('Predefinito')
+        ['nl-NL']('Standaard')
+        ['fr-FR']('Défaut')
+        ['en-AU']('Default')
+        ['es-ES']('Predeterminado')
+        ['en-GB']('Default')
+        ['en-NZ']('Default')
+        ['pt-PT']('Padrão')
+        ['en-US']('Default')
+    )
+    .distributionChannels([
+      KeyReferenceDraft.presets.channel().key('default-channel'),
+    ])
+    .supplyChannels([
+      KeyReferenceDraft.presets.channel().key('default-warehouse'),
+    ])
+    .productSelections([
+      ProductSelectionSettingRest.draft.presets.sampleDataB2B.defaultProductSelection(),
+    ]);
+
+export const defaultStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
+  StoreDraftGraphql.presets
+    .empty()
+    .key('default-store')
+    .name(
+      LocalizedStringDraft.presets
+        .empty()
+        ['de-DE']('Standard')
+        ['it-IT']('Predefinito')
+        ['nl-NL']('Standaard')
+        ['fr-FR']('Défaut')
+        ['en-AU']('Default')
+        ['es-ES']('Predeterminado')
+        ['en-GB']('Default')
+        ['en-NZ']('Default')
+        ['pt-PT']('Padrão')
+        ['en-US']('Default')
+    )
+    .distributionChannels([
+      KeyReferenceDraft.presets.channel().key('default-channel'),
+    ])
+    .supplyChannels([
+      KeyReferenceDraft.presets.channel().key('default-warehouse'),
+    ])
+    .productSelections([
+      ProductSelectionSettingGraphql.draft.presets.sampleDataB2B.defaultProductSelection(),
+    ]);
+
+/**
+ * @deprecated Use `defaultStoreRest` or `defaultStoreGraphql` instead
+ */
+export const defaultStore = (): TBuilder<
+  TStoreDraftRest | TStoreDraftGraphql
+> =>
   StoreDraft.presets
     .empty()
     .key('default-store')
@@ -32,7 +97,5 @@ const defaultStore = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
       KeyReferenceDraft.presets.channel().key('default-warehouse'),
     ])
     .productSelections([
-      ProductSelectionSettingDraft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSetting.draft.presets.sampleDataB2B.defaultProductSelection(),
     ]);
-
-export default defaultStore;

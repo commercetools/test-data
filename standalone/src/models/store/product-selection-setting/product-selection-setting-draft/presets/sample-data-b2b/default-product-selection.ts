@@ -1,9 +1,6 @@
 import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '@/models/commons';
-import {
-  ProductSelectionDraftGraphql,
-  ProductSelectionDraftRest,
-} from '@/models/product/product-selection';
+import { ProductSelectionDraftRest } from '@/models/product/product-selection';
 import type {
   TProductSelectionSettingDraftGraphql,
   TProductSelectionSettingDraftRest,
@@ -19,24 +16,30 @@ const defaultProductSelectionKey =
     .defaultProductSelection()
     .build().key;
 
-export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
-  RestModelBuilder()
-    .productSelection(
-      KeyReferenceDraft.presets
-        .productSelection()
-        .key(defaultProductSelectionKey!)
-    )
-    .active(true);
-
-export const graphqlPreset =
-  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
-    GraphqlModelBuilder()
+export const defaultProductSelectionRest =
+  (): TBuilder<TProductSelectionSettingDraftRest> =>
+    RestModelBuilder()
       .productSelection(
-        ProductSelectionDraftGraphql.presets.sampleDataB2B.defaultProductSelection()
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(defaultProductSelectionKey!)
       )
       .active(true);
 
-export const compatPreset = (): TBuilder<
+export const defaultProductSelectionGraphql =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
+      .productSelection(
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(defaultProductSelectionKey!)
+      )
+      .active(true);
+
+/**
+ * @deprecated Use `defaultProductSelectionRest` or `defaultProductSelectionGraphql` instead
+ */
+export const defaultProductSelection = (): TBuilder<
   TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
 > =>
   CompatModelBuilder()

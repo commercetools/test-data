@@ -1,6 +1,5 @@
 import { fake, TModelFieldsConfig } from '@/core';
-import { KeyReferenceDraft, ReferenceRest } from '@/models/commons';
-import { ProductSelectionGraphql } from '@/models/product/product-selection';
+import { ReferenceDraftGraphql, ReferenceDraftRest } from '@/models/commons';
 import {
   TProductSelectionSettingDraftRest,
   TProductSelectionSettingDraftGraphql,
@@ -10,7 +9,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductSelectionSettingDraftR
   {
     fields: {
       productSelection: fake(() =>
-        ReferenceRest.presets.productSelectionReference()
+        ReferenceDraftRest.presets.productSelectionReference()
       ),
       active: fake((f) => f.datatype.boolean()),
     },
@@ -20,7 +19,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionSettingDra
   {
     fields: {
       productSelection: fake(() =>
-        KeyReferenceDraft.presets.productSelection()
+        ReferenceDraftGraphql.presets.productSelectionReference()
       ),
       active: fake((f) => f.datatype.boolean()),
     },
