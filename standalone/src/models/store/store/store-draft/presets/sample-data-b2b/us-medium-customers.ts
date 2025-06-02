@@ -4,10 +4,10 @@ import {
   LocalizedStringDraft,
 } from '../../../../../commons';
 import {
-  ProductSelectionSetting,
-  ProductSelectionSettingGraphql,
-  ProductSelectionSettingRest,
-} from '../../../../product-selection-setting/index';
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from '../../../../index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
@@ -34,7 +34,7 @@ export const usMediumCustomersRest = (): TBuilder<TStoreDraftRest> =>
     ])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
     .productSelections([
-      ProductSelectionSettingRest.draft.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ProductSelectionSettingDraftRest.presets.usMediumCustomersCatalogProductSelection(),
     ]);
 
 export const usMediumCustomersGraphql = (): TBuilder<TStoreDraftGraphql> =>
@@ -60,7 +60,7 @@ export const usMediumCustomersGraphql = (): TBuilder<TStoreDraftGraphql> =>
     ])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
     .productSelections([
-      ProductSelectionSettingGraphql.draft.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ProductSelectionSettingDraftGraphql.presets.usMediumCustomersCatalogProductSelection(),
     ]);
 
 export const usMediumCustomers = (): TBuilder<
@@ -88,5 +88,5 @@ export const usMediumCustomers = (): TBuilder<
     ])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
     .productSelections([
-      ProductSelectionSetting.draft.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ProductSelectionSettingDraft.presets.usMediumCustomersCatalogProductSelection(),
     ]);

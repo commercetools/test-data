@@ -111,51 +111,8 @@ describe(`with deFrUk preset`, () => {
           {
             "active": true,
             "productSelection": {
-              "custom": undefined,
               "key": "default-product-selection",
-              "mode": "Individual",
-              "name": [
-                {
-                    "locale": "de-DE",
-                    "value": "Standard",
-                  },
-                  {
-                    "locale": "it-IT",
-                    "value": "Predefinito",
-                  },
-                  {
-                    "locale": "nl-NL",
-                    "value": "Standaard",
-                  },
-                  {
-                    "locale": "fr-FR",
-                    "value": "Défaut",
-                  },
-                  {
-                    "locale": "en-AU",
-                    "value": "Default",
-                  },
-                  {
-                    "locale": "es-ES",
-                    "value": "Predeterminado",
-                  },
-                  {
-                    "locale": "en-GB",
-                    "value": "Default",
-                  },
-                  {
-                    "locale": "en-NZ",
-                    "value": "Default",
-                  },
-                  {
-                    "locale": "pt-PT",
-                    "value": "Padrão",
-                  },
-                  {
-                    "locale": "en-US",
-                    "value": "Default",
-                  },
-                ],
+              "typeId": "product-selection",
             },
           },
         ],

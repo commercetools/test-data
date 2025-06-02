@@ -4,10 +4,10 @@ import {
   LocalizedStringDraft,
 } from '../../../../../commons';
 import {
-  ProductSelectionSetting,
-  ProductSelectionSettingGraphql,
-  ProductSelectionSettingRest,
-} from '../../../../product-selection-setting/index';
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from '../../../../index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
@@ -32,7 +32,7 @@ export const spainRest = (): TBuilder<TStoreDraftRest> =>
     .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
     .productSelections([
-      ProductSelectionSettingRest.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
     ]);
 
 export const spainGraphql = (): TBuilder<TStoreDraftGraphql> =>
@@ -56,7 +56,7 @@ export const spainGraphql = (): TBuilder<TStoreDraftGraphql> =>
     .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
     .productSelections([
-      ProductSelectionSettingGraphql.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
     ]);
 
 /**
@@ -83,5 +83,5 @@ export const spain = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
     .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
     .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
     .productSelections([
-      ProductSelectionSetting.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraft.presets.defaultProductSelection(),
     ]);

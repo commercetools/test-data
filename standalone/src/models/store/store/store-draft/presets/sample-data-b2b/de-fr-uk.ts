@@ -5,10 +5,10 @@ import {
   LocalizedStringDraft,
 } from '../../../../../commons';
 import {
-  ProductSelectionSetting,
-  ProductSelectionSettingRest,
-  ProductSelectionSettingGraphql,
-} from '../../../../product-selection-setting/index';
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from '../../../../index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
@@ -44,7 +44,7 @@ export const deFrUkRest = (): TBuilder<TStoreDraftRest> =>
       KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
     ])
     .productSelections([
-      ProductSelectionSettingRest.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
     ]);
 
 export const deFrUkGraphql = (): TBuilder<TStoreDraftGraphql> =>
@@ -72,7 +72,7 @@ export const deFrUkGraphql = (): TBuilder<TStoreDraftGraphql> =>
       KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
     ])
     .productSelections([
-      ProductSelectionSettingGraphql.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
     ]);
 
 /**
@@ -103,5 +103,5 @@ export const deFrUk = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
       KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
     ])
     .productSelections([
-      ProductSelectionSetting.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraft.presets.defaultProductSelection(),
     ]);

@@ -4,10 +4,10 @@ import {
   LocalizedStringDraft,
 } from '../../../../../commons';
 import {
-  ProductSelectionSetting,
-  ProductSelectionSettingGraphql,
-  ProductSelectionSettingRest,
-} from '../../../../product-selection-setting/index';
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from '../../../../index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
@@ -36,7 +36,7 @@ export const defaultStoreRest = (): TBuilder<TStoreDraftRest> =>
       KeyReferenceDraft.presets.channel().key('default-warehouse'),
     ])
     .productSelections([
-      ProductSelectionSettingRest.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
     ]);
 
 export const defaultStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
@@ -64,7 +64,7 @@ export const defaultStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
       KeyReferenceDraft.presets.channel().key('default-warehouse'),
     ])
     .productSelections([
-      ProductSelectionSettingGraphql.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
     ]);
 
 /**
@@ -97,5 +97,5 @@ export const defaultStore = (): TBuilder<
       KeyReferenceDraft.presets.channel().key('default-warehouse'),
     ])
     .productSelections([
-      ProductSelectionSetting.draft.presets.sampleDataB2B.defaultProductSelection(),
+      ProductSelectionSettingDraft.presets.defaultProductSelection(),
     ]);

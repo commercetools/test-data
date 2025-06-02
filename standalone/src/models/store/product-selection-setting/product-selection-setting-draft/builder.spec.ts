@@ -2,16 +2,16 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@/core/test-utils';
-import {
-  ProductSelectionSetting,
-  ProductSelectionSettingGraphql,
-  ProductSelectionSettingRest,
-} from '../index';
 import type {
   TProductSelectionSettingDraft,
   TProductSelectionSettingDraftGraphql,
   TProductSelectionSettingDraftRest,
 } from '../types';
+import {
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from './index';
 
 describe('builder', () => {
   it(
@@ -20,7 +20,7 @@ describe('builder', () => {
       TProductSelectionSettingDraft
     >(
       'default',
-      ProductSelectionSetting.draft.random(),
+      ProductSelectionSettingDraft.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -37,7 +37,7 @@ describe('builder', () => {
       TProductSelectionSettingDraftRest
     >(
       'rest',
-      ProductSelectionSettingRest.draft.random(),
+      ProductSelectionSettingDraftRest.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -53,7 +53,7 @@ describe('builder', () => {
       TProductSelectionSettingDraftGraphql
     >(
       'graphql',
-      ProductSelectionSettingGraphql.draft.random(),
+      ProductSelectionSettingDraftGraphql.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
