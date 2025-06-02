@@ -57,9 +57,25 @@ export const Store = {
 };
 
 /**
+ * @deprecated Use `StoreDraftRest` or `StoreDraftGraphql` exported models instead of  `StoreDraft`
+ */
+export const StoreDraft = {
+  random: StoreDraftModel.StoreDraftRest.random,
+  presets: StoreDraftModel.StoreDraftRest.presets,
+};
+
+/**
  * @deprecated Use `ProductSelectionSettingRest` or `ProductSelectionSettingGraphql` exported models instead of  `ProductSelectionSetting`
  */
 export const ProductSelectionSetting = {
   random: ProductSelectionSettingModel.ProductSelectionSettingRest.random,
   presets: ProductSelectionSettingModel.ProductSelectionSettingRest.presets,
+};
+
+/**
+ * @deprecated Use `ProductSelectionSettingDraftRest` or `ProductSelectionSettingDraftGraphql` exported models instead of  `ProductSelectionSettingDraft`
+ */
+export const ProductSelectionSettingDraft = {
+  random: ProductSelectionSettingDraftModel.restPresets.random,
+  presets: ProductSelectionSettingDraftModel.restPresets.presets,
 };
