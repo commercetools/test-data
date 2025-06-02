@@ -1,10 +1,10 @@
 import type { TProductSelectionSettingDraft } from '../../../types';
-import defaultProductSelection from './default-product-selection';
+import { compatPreset } from './default-product-selection';
 
 describe('with defaultProductSelection present', () => {
   it('should return a defaultProductSelection preset', () => {
     const defaultProductSelectionPreset =
-      defaultProductSelection().build<TProductSelectionSettingDraft>();
+      compatPreset().build<TProductSelectionSettingDraft>();
 
     expect(defaultProductSelectionPreset).toMatchInlineSnapshot(`
       {
@@ -18,7 +18,7 @@ describe('with defaultProductSelection present', () => {
   });
   it('should return a defaultProductSelection preset when built for graphql', () => {
     const defaultProductSelectionPresetGraphql =
-      defaultProductSelection().buildGraphql<TProductSelectionSettingDraft>();
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(defaultProductSelectionPresetGraphql).toMatchInlineSnapshot(`
       {

@@ -3,17 +3,19 @@ import {
   RestModelBuilder,
   GraphqlModelBuilder,
 } from './builder';
+import * as modelPresets from './presets';
 
 export * from './types';
-
 export * from './store-draft';
 
 export const StoreRest = {
   random: RestModelBuilder,
+  presets: modelPresets.restPresets,
 };
 
 export const StoreGraphql = {
   random: GraphqlModelBuilder,
+  presets: modelPresets.graphqlPresets,
 };
 
 export const StoreDraftGraphql = {
@@ -25,4 +27,5 @@ export const StoreDraftGraphql = {
  */
 export const Store = {
   random: CompatModelBuilder,
+  presets: modelPresets.compatPresets,
 };

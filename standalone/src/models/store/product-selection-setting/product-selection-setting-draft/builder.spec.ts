@@ -2,11 +2,16 @@
 /* eslint-disable jest/valid-title */
 
 import { createBuilderSpec } from '@/core/test-utils';
+import {
+  ProductSelectionSetting,
+  ProductSelectionSettingGraphql,
+  ProductSelectionSettingRest,
+} from '../index';
 import type {
   TProductSelectionSettingDraft,
   TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
 } from '../types';
-import * as ProductSelectionSettingDraft from './index';
 
 describe('builder', () => {
   it(
@@ -15,7 +20,7 @@ describe('builder', () => {
       TProductSelectionSettingDraft
     >(
       'default',
-      ProductSelectionSettingDraft.random(),
+      ProductSelectionSetting.draft.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -28,11 +33,11 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TProductSelectionSettingDraft,
-      TProductSelectionSettingDraft
+      TProductSelectionSettingDraftRest,
+      TProductSelectionSettingDraftRest
     >(
       'rest',
-      ProductSelectionSettingDraft.random(),
+      ProductSelectionSettingRest.draft.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -44,15 +49,15 @@ describe('builder', () => {
   );
   it(
     ...createBuilderSpec<
-      TProductSelectionSettingDraft,
+      TProductSelectionSettingDraftGraphql,
       TProductSelectionSettingDraftGraphql
     >(
       'graphql',
-      ProductSelectionSettingDraft.random(),
+      ProductSelectionSettingGraphql.draft.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
-          id: expect.any(String),
+          key: expect.any(String),
         }),
         active: expect.any(Boolean),
       })

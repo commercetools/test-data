@@ -1,24 +1,49 @@
 import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '../../../../../commons';
 import {
-  ProductSelectionDraft,
+  ProductSelectionDraftGraphql,
+  ProductSelectionDraftRest,
   type TProductSelectionDraft,
 } from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraft } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builder';
 
-const usMediumCustomersCatalog = ProductSelectionDraft.presets.sampleDataB2B
-  .usMediumCustomersCatalog()
-  .build<TProductSelectionDraft>();
+const usMediumCustomersCatalogKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .usMediumCustomersCatalog()
+    .build<TProductSelectionDraft>().key;
 
-const usMediumCustomersCatalogProductSelectionSetting =
-  (): TBuilder<TProductSelectionSettingDraft> =>
-    ProductSelectionSettingDraft()
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  RestModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(usMediumCustomersCatalogKey!)
+    )
+    .active(true);
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
       .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(usMediumCustomersCatalog.key!)
+        ProductSelectionDraftGraphql.presets.sampleDataB2B.usMediumCustomersCatalog()
       )
       .active(true);
 
-export default usMediumCustomersCatalogProductSelectionSetting;
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftGraphql | TProductSelectionSettingDraftRest
+> =>
+  CompatModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(usMediumCustomersCatalogKey!)
+    )
+    .active(true);

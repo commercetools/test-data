@@ -1,10 +1,10 @@
 import type { TProductSelectionSettingDraft } from '../../../types';
-import usMediumCustomersCatalogProductSelection from './us-medium-customers-catalog-product-selection';
+import { compatPreset } from './us-medium-customers-catalog-product-selection';
 
 describe('with usMediumCustomersCatalogProductSelection present', () => {
   it('should return a usMediumCustomersCatalogProductSelection preset', () => {
     const usMediumCustomersCatalogProductSelectionPreset =
-      usMediumCustomersCatalogProductSelection().build<TProductSelectionSettingDraft>();
+      compatPreset().build<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPreset)
       .toMatchInlineSnapshot(`
@@ -19,7 +19,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
   });
   it('should return a usMediumCustomersCatalogProductSelection preset when built for graphql', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
-      usMediumCustomersCatalogProductSelection().buildGraphql<TProductSelectionSettingDraft>();
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPresetGraphql)
       .toMatchInlineSnapshot(`

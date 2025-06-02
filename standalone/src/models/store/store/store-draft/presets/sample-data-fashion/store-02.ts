@@ -1,12 +1,25 @@
 import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import * as StoreDraft from '../../index';
+import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
+import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
-const store01 = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
-  StoreDraft.presets
+export const store02Rest = (): TBuilder<TStoreDraftRest> =>
+  StoreDraftRest.presets
     .empty()
     .key('sample_store_two')
     .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));
 
-export default store01;
+export const store02Graphql = (): TBuilder<TStoreDraftGraphql> =>
+  StoreDraftGraphql.presets
+    .empty()
+    .key('sample_store_two')
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));
+
+/**
+ * @deprecated Use `store02Rest` or `store02Graphql` instead
+ */
+export const store02 = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
+  StoreDraft.presets
+    .empty()
+    .key('sample_store_two')
+    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));

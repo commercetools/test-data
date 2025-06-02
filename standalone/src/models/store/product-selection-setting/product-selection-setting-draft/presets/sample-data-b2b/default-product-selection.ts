@@ -1,24 +1,48 @@
 import { TBuilder } from '@/core';
-import { KeyReferenceDraft } from '../../../../../commons';
+import { KeyReferenceDraft } from '@/models/commons';
 import {
-  ProductSelectionDraft,
-  type TProductSelectionDraft,
-} from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraft } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+  ProductSelectionDraftGraphql,
+  ProductSelectionDraftRest,
+} from '@/models/product/product-selection';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builder';
 
-const defaultProductSelection = ProductSelectionDraft.presets.sampleDataB2B
-  .defaultProductSelection()
-  .build<TProductSelectionDraft>();
+const defaultProductSelectionKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .defaultProductSelection()
+    .build().key;
 
-const defaultProductSelectionSetting =
-  (): TBuilder<TProductSelectionSettingDraft> =>
-    ProductSelectionSettingDraft()
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  RestModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(defaultProductSelectionKey!)
+    )
+    .active(true);
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
       .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(defaultProductSelection.key!)
+        ProductSelectionDraftGraphql.presets.sampleDataB2B.defaultProductSelection()
       )
       .active(true);
 
-export default defaultProductSelectionSetting;
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> =>
+  CompatModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(defaultProductSelectionKey!)
+    )
+    .active(true);
