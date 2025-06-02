@@ -20,24 +20,30 @@ const usMediumCustomersCatalogKey =
     .usMediumCustomersCatalog()
     .build<TProductSelectionDraft>().key;
 
-export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
-  RestModelBuilder()
-    .productSelection(
-      KeyReferenceDraft.presets
-        .productSelection()
-        .key(usMediumCustomersCatalogKey!)
-    )
-    .active(true);
-
-export const graphqlPreset =
-  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
-    GraphqlModelBuilder()
+export const usMediumCustomersCatalogRest =
+  (): TBuilder<TProductSelectionSettingDraftRest> =>
+    RestModelBuilder()
       .productSelection(
-        ProductSelectionDraftGraphql.presets.sampleDataB2B.usMediumCustomersCatalog()
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(usMediumCustomersCatalogKey!)
       )
       .active(true);
 
-export const compatPreset = (): TBuilder<
+export const usMediumCustomersCatalogGraphql =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
+      .productSelection(
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(usMediumCustomersCatalogKey!)
+      )
+      .active(true);
+
+/**
+ * @deprecated Use `usMediumCustomersCatalogRest` or `usMediumCustomersCatalogGraphql` instead
+ */
+export const usMediumCustomersCatalogPreset = (): TBuilder<
   TProductSelectionSettingDraftGraphql | TProductSelectionSettingDraftRest
 > =>
   CompatModelBuilder()

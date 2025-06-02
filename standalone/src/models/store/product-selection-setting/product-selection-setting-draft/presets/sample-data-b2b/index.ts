@@ -4,18 +4,18 @@ import * as usMediumCustomersCatalogProductSelection from './us-medium-customers
 export const restPresets = {
   defaultProductSelection: defaultProductSelection.defaultProductSelectionRest,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.restPreset,
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogRest,
 };
 
 export const graphqlPresets = {
   defaultProductSelection:
     defaultProductSelection.defaultProductSelectionGraphql,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.graphqlPreset,
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogGraphql,
 };
 
 export const compatPresets = {
   defaultProductSelection: defaultProductSelection.defaultProductSelection,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.compatPreset,
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogPreset,
 };
