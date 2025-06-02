@@ -4,31 +4,38 @@ import {
   defaultStoreGraphql,
   defaultStoreRest,
 } from './default-store';
-import spain from './spain';
-import usLargeCustomers from './us-large-customers';
-import usMediumCustomers from './us-medium-customers';
-
-const presets = {
-  deFrUk,
-  spain,
+import { spain, spainGraphql, spainRest } from './spain';
+import {
   usLargeCustomers,
+  usLargeCustomersGraphql,
+  usLargeCustomersRest,
+} from './us-large-customers';
+import {
   usMediumCustomers,
-  defaultStore,
-};
+  usMediumCustomersGraphql,
+  usMediumCustomersRest,
+} from './us-medium-customers';
 
 export const restPresets = {
   deFrUk: deFrUkRest,
   defaultStore: defaultStoreRest,
+  spain: spainRest,
+  usLargeCustomers: usLargeCustomersRest,
+  usMediumCustomers: usMediumCustomersRest,
 };
 
 export const graphqlPresets = {
   deFrUk: deFrUkGraphql,
   defaultStore: defaultStoreGraphql,
+  spain: spainGraphql,
+  usLargeCustomers: usLargeCustomersGraphql,
+  usMediumCustomers: usMediumCustomersGraphql,
 };
 
 export const compatPresets = {
   deFrUk: deFrUk,
   defaultStore: defaultStore,
+  spain: spain,
+  usLargeCustomers: usLargeCustomers,
+  usMediumCustomers: usMediumCustomers,
 };
-
-export default presets;
