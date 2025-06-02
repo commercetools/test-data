@@ -26,7 +26,7 @@ export const b2cRetailStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
     );
 
 /**
- * @deprecated Use `store01Rest` or `store01Graphql` instead
+ * @deprecated Use `b2cRetailStoreRest` or `b2cRetailStoreGraphql` instead
  */
 export const b2cRetailStore = (): TBuilder<
   TStoreDraftRest | TStoreDraftGraphql
