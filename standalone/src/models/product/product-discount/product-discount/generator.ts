@@ -14,7 +14,7 @@ const [getCreatedAt, getLastModifiedAt] = createRelatedDates();
 
 const generator = Generator<TProductDiscount>({
   fields: {
-    id: fake((f) => f.string.alphanumeric(8)),
+    id: fake((f) => f.string.uuid()),
     version: sequence(),
     key: fake((f) => f.lorem.slug(2)),
     name: fake(() => LocalizedString.random()),
