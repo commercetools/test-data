@@ -1,9 +1,9 @@
 import type { TZoneRateDraft, TZoneRateDraftGraphql } from '../../../types';
-import expressEuropeUk from './express-europe-uk';
+import expressGermanyAndUkAndUs from './express-germany-uk-us';
 
 describe('with express europe and uk preset', () => {
   it(`should return an express preset`, () => {
-    const expressPreset = expressEuropeUk().build<TZoneRateDraft>();
+    const expressPreset = expressGermanyAndUkAndUs().build<TZoneRateDraft>();
     expect(expressPreset).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -23,9 +23,17 @@ describe('with express europe and uk preset', () => {
             },
             "tiers": [],
           },
+          {
+            "freeAbove": undefined,
+            "price": {
+              "centAmount": 75000,
+              "currencyCode": "USD",
+            },
+            "tiers": [],
+          },
         ],
         "zone": {
-          "key": "europe",
+          "key": "germany-uk-us",
           "typeId": "zone",
         },
       }
@@ -34,7 +42,7 @@ describe('with express europe and uk preset', () => {
 
   it(`should return an express preset when built for Graphql`, () => {
     const expressPresetGraphql =
-      expressEuropeUk().buildGraphql<TZoneRateDraftGraphql>();
+      expressGermanyAndUkAndUs().buildGraphql<TZoneRateDraftGraphql>();
     expect(expressPresetGraphql).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -54,9 +62,17 @@ describe('with express europe and uk preset', () => {
             },
             "tiers": [],
           },
+          {
+            "freeAbove": undefined,
+            "price": {
+              "centAmount": 75000,
+              "currencyCode": "USD",
+            },
+            "tiers": [],
+          },
         ],
         "zone": {
-          "key": "europe",
+          "key": "germany-uk-us",
           "typeId": "zone",
         },
       }

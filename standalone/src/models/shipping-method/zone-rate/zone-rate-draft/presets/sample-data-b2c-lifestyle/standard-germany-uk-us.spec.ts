@@ -1,9 +1,9 @@
 import type { TZoneRateDraft, TZoneRateDraftGraphql } from '../../../types';
-import standardEuropeUk from './standard-europe-uk';
+import standardGermanyAndUkAndUs from './standard-germany-uk-us';
 
 describe('with standard eu and uk preset', () => {
   it(`should return a standard preset`, () => {
-    const standardPreset = standardEuropeUk().build<TZoneRateDraft>();
+    const standardPreset = standardGermanyAndUkAndUs().build<TZoneRateDraft>();
     expect(standardPreset).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -29,9 +29,20 @@ describe('with standard eu and uk preset', () => {
             },
             "tiers": undefined,
           },
+          {
+            "freeAbove": {
+              "centAmount": 1000000,
+              "currencyCode": "USD",
+            },
+            "price": {
+              "centAmount": 50000,
+              "currencyCode": "USD",
+            },
+            "tiers": undefined,
+          },
         ],
         "zone": {
-          "key": "europe",
+          "key": "germany-uk-us",
           "typeId": "zone",
         },
       }
@@ -40,7 +51,7 @@ describe('with standard eu and uk preset', () => {
 
   it(`should return a standard preset when built for Graphql`, () => {
     const standardPresetGraphql =
-      standardEuropeUk().buildGraphql<TZoneRateDraftGraphql>();
+      standardGermanyAndUkAndUs().buildGraphql<TZoneRateDraftGraphql>();
     expect(standardPresetGraphql).toMatchInlineSnapshot(`
       {
         "shippingRates": [
@@ -66,9 +77,20 @@ describe('with standard eu and uk preset', () => {
             },
             "tiers": undefined,
           },
+          {
+            "freeAbove": {
+              "centAmount": 1000000,
+              "currencyCode": "USD",
+            },
+            "price": {
+              "centAmount": 50000,
+              "currencyCode": "USD",
+            },
+            "tiers": undefined,
+          },
         ],
         "zone": {
-          "key": "europe",
+          "key": "germany-uk-us",
           "typeId": "zone",
         },
       }

@@ -1,13 +1,9 @@
-import expressEuropeUk from './express-europe-uk';
-import expressUsa from './express-us';
-import standardEuropeUk from './standard-europe-uk';
-import standardUsa from './standard-us';
+import expressGermanyAndUkAndUs from './express-germany-uk-us';
+import standardGermanyAndUkAndUs from './standard-germany-uk-us';
 
 const presets = {
-  expressEuropeUk,
-  expressUsa,
-  standardEuropeUk,
-  standardUsa,
+  expressGermanyAndUkAndUs,
+  standardGermanyAndUkAndUs,
 };
 
 export default presets;

@@ -57,14 +57,6 @@ describe('Shipping Method with standard preset', () => {
                 },
                 "tiers": undefined,
               },
-            ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
-          },
-          {
-            "shippingRates": [
               {
                 "freeAbove": {
                   "centAmount": 1000000,
@@ -78,7 +70,7 @@ describe('Shipping Method with standard preset', () => {
               },
             ],
             "zone": {
-              "key": "usa",
+              "key": "germany-uk-us",
               "typeId": "zone",
             },
           },
@@ -154,14 +146,6 @@ describe('Shipping Method with standard preset', () => {
                 },
                 "tiers": undefined,
               },
-            ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
-          },
-          {
-            "shippingRates": [
               {
                 "freeAbove": {
                   "centAmount": 1000000,
@@ -175,7 +159,7 @@ describe('Shipping Method with standard preset', () => {
               },
             ],
             "zone": {
-              "key": "usa",
+              "key": "germany-uk-us",
               "typeId": "zone",
             },
           },

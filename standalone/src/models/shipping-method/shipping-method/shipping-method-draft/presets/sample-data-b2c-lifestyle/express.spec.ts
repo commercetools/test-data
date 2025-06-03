@@ -51,14 +51,6 @@ describe('Shipping Method with express preset', () => {
                 },
                 "tiers": [],
               },
-            ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
-          },
-          {
-            "shippingRates": [
               {
                 "freeAbove": undefined,
                 "price": {
@@ -69,7 +61,7 @@ describe('Shipping Method with express preset', () => {
               },
             ],
             "zone": {
-              "key": "usa",
+              "key": "germany-uk-us",
               "typeId": "zone",
             },
           },
@@ -139,14 +131,6 @@ describe('Shipping Method with express preset', () => {
                 },
                 "tiers": [],
               },
-            ],
-            "zone": {
-              "key": "europe",
-              "typeId": "zone",
-            },
-          },
-          {
-            "shippingRates": [
               {
                 "freeAbove": undefined,
                 "price": {
@@ -157,7 +141,7 @@ describe('Shipping Method with express preset', () => {
               },
             ],
             "zone": {
-              "key": "usa",
+              "key": "germany-uk-us",
               "typeId": "zone",
             },
           },

@@ -37,8 +37,7 @@ const standardShippingMethod = (): TShippingMethodDraftBuilder =>
       KeyReferenceDraft.presets.taxCategory().key(standardTaxCategoryDraft.key!)
     )
     .zoneRates([
-      ZoneRateDraft.presets.sampleDataB2CLifestyle.standardEuropeUk(),
-      ZoneRateDraft.presets.sampleDataB2CLifestyle.standardUsa(),
+      ZoneRateDraft.presets.sampleDataB2CLifestyle.standardGermanyAndUkAndUs(),
     ])
     .isDefault(true);
 
