@@ -13,5 +13,6 @@ it(`should set all specified fields to undefined`, () => {
     discounted: undefined,
     staged: undefined,
     active: undefined,
+    recurrencePolicy: undefined,
   });
 });

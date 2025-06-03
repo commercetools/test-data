@@ -1,1 +1,1 @@
-export * from './models/custom-view';
+export * from './models/customization/custom-view';

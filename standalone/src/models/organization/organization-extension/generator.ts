@@ -1,9 +1,12 @@
 import { fake, Generator } from '@/core';
 import {
-  CustomApplicationInstallation,
-  CustomApplication,
-} from '@/models/custom-application';
-import { CustomViewInstallation, CustomView } from '@/models/custom-view';
+  CustomApplicationInstallationGraphql,
+  CustomApplicationGraphql,
+} from '@/models/customization/custom-application';
+import {
+  CustomViewInstallation,
+  CustomView,
+} from '@/models/customization/custom-view';
 import { createRelatedDates } from '@/utils';
 import * as ContactInformation from './contact-information';
 import * as OidcSSOConfig from './oidc-sso-config';
@@ -16,12 +19,14 @@ const generator = Generator<TOrganizationExtension>({
     id: fake((f) => f.string.uuid()),
     createdAt: fake(getOlderDate),
     updatedAt: fake(getNewerDate),
-    installedApplications: fake(() => [CustomApplicationInstallation.random()]),
+    installedApplications: fake(() => [
+      CustomApplicationInstallationGraphql.random(),
+    ]),
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),
     organizationId: fake((f) => f.string.uuid()),
     registeredApplications: fake(() => [
-      CustomApplication.random(),
-      CustomApplication.random(),
+      CustomApplicationGraphql.random(),
+      CustomApplicationGraphql.random(),
     ]),
     registeredCustomViews: fake(() => [
       CustomView.random(),

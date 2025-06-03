@@ -1,6 +1,6 @@
 import { fake, Generator } from '@/core';
-import { CustomApplicationInstallation } from '@/models/custom-application';
-import { CustomViewInstallation } from '@/models/custom-view';
+import { CustomApplicationInstallationGraphql } from '@/models/customization/custom-application';
+import { CustomViewInstallation } from '@/models/customization/custom-view';
 import { createRelatedDates } from '@/utils';
 import * as CategoryRecommendationSettings from './category-recommendation-settings';
 import * as ImageRegex from './image-regex';
@@ -18,7 +18,9 @@ const generator = Generator<TProjectExtension>({
     projectKey: fake((f) => f.lorem.slug()),
     imageRegex: fake(() => ImageRegex.random()),
     applications: [], // Note: This is deprecated
-    installedApplications: fake(() => [CustomApplicationInstallation.random()]),
+    installedApplications: fake(() => [
+      CustomApplicationInstallationGraphql.random(),
+    ]),
     installedCustomViews: fake(() => [CustomViewInstallation.random()]),
     isRichTextEditorEnabled: fake((f) => f.datatype.boolean()),
     orderStatesVisibility: fake((f) =>
