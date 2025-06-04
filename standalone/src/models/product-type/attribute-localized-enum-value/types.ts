@@ -1,27 +1,33 @@
 import { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import { TLocalizedStringGraphql } from '@/models/commons';
+import {
+  TCtpLocalizableEnumValueType,
+  TCtpLocalizedEnumValueDraft,
+} from '@/graphql-types';
 
+/**
+ * @deprecated use `TAttributeLocalizedEnumValueRest` or `TAttributeLocalizedEnumValueGraphql` instead
+ */
 export type TAttributeLocalizedEnumValue = AttributeLocalizedEnumValue;
+/**
+ * @deprecated use `TAttributeLocalizedEnumValueDraftRest` or `TAttributeLocalizedEnumValueDraftGraphql` instead
+ */
 export type TAttributeLocalizedEnumValueDraft = AttributeLocalizedEnumValue;
 
-export type TAttributeLocalizedEnumValueGraphql = Omit<
-  TAttributeLocalizedEnumValue,
-  // In GraphQL, we prefer to use `nameAllLocales` instead of `name`.
-  'label'
-> & {
-  labelAllLocales: TLocalizedStringGraphql | null;
-  __typename: 'LocalizableEnumValueType';
-};
+// REST types
+export type TAttributeLocalizedEnumValueRest = AttributeLocalizedEnumValue;
+export type TAttributeLocalizedEnumValueDraftRest = AttributeLocalizedEnumValue;
+
+// GraphQL types
+export type TAttributeLocalizedEnumValueGraphql = TCtpLocalizableEnumValueType;
 export type TAttributeLocalizedEnumValueDraftGraphql =
-  TAttributeLocalizedEnumValueDraft;
+  TCtpLocalizedEnumValueDraft;
 
-export type TAttributeLocalizedEnumValueBuilder =
-  TBuilder<TAttributeLocalizedEnumValue>;
-export type TAttributeLocalizedEnumValueDraftBuilder =
-  TBuilder<TAttributeLocalizedEnumValueDraft>;
-
-export type TCreateAttributeLocalizedEnumValueBuilder =
-  () => TAttributeLocalizedEnumValueBuilder;
-export type TCreateAttributeLocalizedEnumValueDraftBuilder =
-  () => TAttributeLocalizedEnumValueDraftBuilder;
+// Builders type
+export type TCreateAttributeLocalizedEnumValueBuilder<
+  TAttributeLocalizedEnumValueModel extends
+    | TAttributeLocalizedEnumValueRest
+    | TAttributeLocalizedEnumValueDraftRest
+    | TAttributeLocalizedEnumValueGraphql
+    | TAttributeLocalizedEnumValueDraftGraphql,
+> = () => TBuilder<TAttributeLocalizedEnumValueModel>;

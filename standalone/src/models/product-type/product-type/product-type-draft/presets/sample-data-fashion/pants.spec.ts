@@ -2,11 +2,13 @@ import type {
   TProductTypeDraft,
   TProductTypeDraftGraphql,
 } from '../../../types';
-import pants from './pants';
+import * as pantsPresets from './pants';
 
 describe(`with pants preset`, () => {
   it(`should create a pants product type draft`, () => {
-    const pantsProductType = pants().build<TProductTypeDraft>();
+    const pantsProductType = pantsPresets
+      .restPreset()
+      .build<TProductTypeDraft>();
 
     expect(pantsProductType).toMatchInlineSnapshot(`
       {
@@ -164,8 +166,9 @@ describe(`with pants preset`, () => {
   });
 
   it(`should create a pants product type draft when built for graphql`, () => {
-    const pantsProductTypeGraphql =
-      pants().buildGraphql<TProductTypeDraftGraphql>();
+    const pantsProductTypeGraphql = pantsPresets
+      .graphqlPreset()
+      .buildGraphql<TProductTypeDraftGraphql>();
 
     expect(pantsProductTypeGraphql).toMatchInlineSnapshot(`
       {
@@ -187,6 +190,7 @@ describe(`with pants preset`, () => {
                 "value": "Size",
               },
             ],
+            "level": "Variant",
             "name": "size",
             "type": {
               "enum": {
@@ -224,6 +228,7 @@ describe(`with pants preset`, () => {
                 "value": "Fit",
               },
             ],
+            "level": "Variant",
             "name": "fit",
             "type": {
               "enum": {
@@ -261,6 +266,7 @@ describe(`with pants preset`, () => {
                 "value": "Color",
               },
             ],
+            "level": "Variant",
             "name": "color",
             "type": {
               "enum": {
@@ -298,6 +304,7 @@ describe(`with pants preset`, () => {
                 "value": "Length",
               },
             ],
+            "level": "Variant",
             "name": "length",
             "type": {
               "enum": {

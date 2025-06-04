@@ -1,10 +1,12 @@
 import type { TProductTypeDraft } from '../../../types';
-import heavyEarthmovingAndConstructionEquipment from './heavy-earthmoving-and-construction-equipment';
+import * as heavyEarthmovingAndConstructionEquipmentPresets from './heavy-earthmoving-and-construction-equipment';
 
 describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
   it(`should return a heavyEarthmovingAndConstructionEquipment preset`, () => {
     const heavyEarthmovingAndConstructionEquipmentPreset =
-      heavyEarthmovingAndConstructionEquipment().build<TProductTypeDraft>();
+      heavyEarthmovingAndConstructionEquipmentPresets
+        .restPreset()
+        .build<TProductTypeDraft>();
     expect(heavyEarthmovingAndConstructionEquipmentPreset)
       .toMatchInlineSnapshot(`
       {
@@ -171,7 +173,9 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
 
   it(`should return a heavyEarthmovingAndConstructionEquipment preset when built for graphql`, () => {
     const heavyEarthmovingAndConstructionEquipmentPresetGraphql =
-      heavyEarthmovingAndConstructionEquipment().buildGraphql<TProductTypeDraft>();
+      heavyEarthmovingAndConstructionEquipmentPresets
+        .graphqlPreset()
+        .buildGraphql<TProductTypeDraft>();
     expect(heavyEarthmovingAndConstructionEquipmentPresetGraphql)
       .toMatchInlineSnapshot(`
       {
@@ -224,6 +228,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
                 "value": "Capacity",
               },
             ],
+            "level": "Variant",
             "name": "capacity",
             "type": {
               "number": {
@@ -279,6 +284,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
                 "value": "ISO 45001 certified",
               },
             ],
+            "level": "Variant",
             "name": "iso45001",
             "type": {
               "boolean": {
@@ -334,6 +340,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
                 "value": "Related products",
               },
             ],
+            "level": "Variant",
             "name": "relatedProducts",
             "type": {
               "set": {
@@ -393,6 +400,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
                 "value": "Mobility",
               },
             ],
+            "level": "Variant",
             "name": "mobility",
             "type": {
               "enum": {
@@ -465,6 +473,7 @@ describe(`with heavyEarthmovingAndConstructionEquipment preset`, () => {
                 "value": "Model",
               },
             ],
+            "level": "Variant",
             "name": "model",
             "type": {
               "number": {

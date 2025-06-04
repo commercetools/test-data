@@ -1,7 +1,13 @@
-import withNoAttributes from './with-no-attributes';
+import * as withNoAttributesPresets from './with-no-attributes';
 
-const presets = {
-  withNoAttributes,
+export const restPresets = {
+  withNoAttributes: withNoAttributesPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withNoAttributes: withNoAttributesPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  withNoAttributes: withNoAttributesPresets.compatPreset,
+};
