@@ -32,7 +32,7 @@ function validateGraphqlModel(model: TAttributeLocalizedEnumValueGraphql) {
           __typename: 'LocalizedString',
         }),
       ]),
-      __typename: 'LocalizedEnumValue',
+      __typename: 'LocalizableEnumValueType',
     })
   );
 }

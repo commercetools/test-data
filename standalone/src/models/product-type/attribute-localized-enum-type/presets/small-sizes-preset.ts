@@ -22,10 +22,14 @@ export const restPreset = (): TBuilder<TAttributeLocalizedEnumTypeRest> =>
   ]);
 
 export const graphqlPreset = (): TBuilder<TAttributeLocalizedEnumTypeGraphql> =>
-  GraphqlModelBuilder().values([
-    AttributeLocalizedEnumValueGraphql.presets.s(),
-    AttributeLocalizedEnumValueGraphql.presets.m(),
-  ]);
+  GraphqlModelBuilder().values({
+    results: [
+      AttributeLocalizedEnumValueGraphql.presets.s().build(),
+      AttributeLocalizedEnumValueGraphql.presets.m().build(),
+    ],
+    total: 2,
+    __typename: 'LocalizableEnumValueTypeResult',
+  });
 
 export const compatPreset = (): TBuilder<TAttributeLocalizedEnumType> =>
   CompatModelBuilder().values([

@@ -29,17 +29,21 @@ function validateGraphqlModel(model: TAttributeLocalizedEnumTypeGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
       name: expect.any(String),
-      values: expect.arrayContaining([
-        expect.objectContaining({
-          key: expect.any(String),
-          label: expect.any(String),
-          labelAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              __typename: 'LocalizedString',
-            }),
-          ]),
-        }),
-      ]),
+      values: expect.objectContaining({
+        results: expect.arrayContaining([
+          expect.objectContaining({
+            key: expect.any(String),
+            label: expect.any(String),
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                __typename: 'LocalizedString',
+              }),
+            ]),
+          }),
+        ]),
+        total: 1,
+        __typename: 'LocalizableEnumValueTypeResult',
+      }),
       __typename: 'LocalizableEnumAttributeDefinitionType',
     })
   );

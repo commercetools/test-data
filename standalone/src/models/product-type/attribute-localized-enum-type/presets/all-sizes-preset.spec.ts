@@ -46,68 +46,72 @@ function validateGraphqlModel(model: TAttributeLocalizedEnumTypeGraphql) {
   expect(model).toEqual(
     expect.objectContaining({
       name: 'lenum',
-      values: expect.arrayContaining([
-        expect.objectContaining({
-          key: 's',
-          label: 'Size S',
-          labelAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              locale: 'en',
-              value: 'Size S',
-            }),
-            expect.objectContaining({
-              locale: 'de',
-              value: 'Größe S',
-              __typename: 'LocalizedString',
-            }),
-          ]),
-        }),
-        expect.objectContaining({
-          key: 'm',
-          label: 'Size M',
-          labelAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              locale: 'en',
-              value: 'Size M',
-            }),
-            expect.objectContaining({
-              locale: 'de',
-              value: 'Größe M',
-              __typename: 'LocalizedString',
-            }),
-          ]),
-        }),
-        expect.objectContaining({
-          key: 'l',
-          label: 'Size L',
-          labelAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              locale: 'en',
-              value: 'Size L',
-            }),
-            expect.objectContaining({
-              locale: 'de',
-              value: 'Größe L',
-              __typename: 'LocalizedString',
-            }),
-          ]),
-        }),
-        expect.objectContaining({
-          key: 'xl',
-          label: 'Size XL',
-          labelAllLocales: expect.arrayContaining([
-            expect.objectContaining({
-              locale: 'en',
-              value: 'Size XL',
-            }),
-            expect.objectContaining({
-              locale: 'de',
-              value: 'Größe XL',
-              __typename: 'LocalizedString',
-            }),
-          ]),
-        }),
-      ]),
+      values: expect.objectContaining({
+        results: [
+          expect.objectContaining({
+            key: 's',
+            label: 'Size S',
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                locale: 'en',
+                value: 'Size S',
+              }),
+              expect.objectContaining({
+                locale: 'de',
+                value: 'Größe S',
+                __typename: 'LocalizedString',
+              }),
+            ]),
+          }),
+          expect.objectContaining({
+            key: 'm',
+            label: 'Size M',
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                locale: 'en',
+                value: 'Size M',
+              }),
+              expect.objectContaining({
+                locale: 'de',
+                value: 'Größe M',
+                __typename: 'LocalizedString',
+              }),
+            ]),
+          }),
+          expect.objectContaining({
+            key: 'l',
+            label: 'Size L',
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                locale: 'en',
+                value: 'Size L',
+              }),
+              expect.objectContaining({
+                locale: 'de',
+                value: 'Größe L',
+                __typename: 'LocalizedString',
+              }),
+            ]),
+          }),
+          expect.objectContaining({
+            key: 'xl',
+            label: 'Size XL',
+            labelAllLocales: expect.arrayContaining([
+              expect.objectContaining({
+                locale: 'en',
+                value: 'Size XL',
+              }),
+              expect.objectContaining({
+                locale: 'de',
+                value: 'Größe XL',
+                __typename: 'LocalizedString',
+              }),
+            ]),
+          }),
+        ],
+        total: 4,
+        __typename: 'LocalizableEnumValueTypeResult',
+      }),
       __typename: 'LocalizableEnumAttributeDefinitionType',
     })
   );
