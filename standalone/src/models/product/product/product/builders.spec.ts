@@ -22,13 +22,7 @@ function validateRestModel(restModel: TProductRest) {
       }),
       priceMode: expect.any(String),
       state: null,
-      taxCategory: expect.objectContaining({
-        typeId: 'tax-category',
-        id: expect.any(String),
-        obj: expect.objectContaining({
-          id: expect.any(String),
-        }),
-      }),
+      taxCategory: null,
       productType: expect.objectContaining({
         typeId: 'product-type',
         id: expect.any(String),
@@ -61,13 +55,8 @@ function validateGraphqlModel(graphqlModel: TProductGraphql) {
       priceMode: expect.any(String),
       state: null,
       stateRef: null,
-      taxCategory: expect.objectContaining({
-        __typename: 'TaxCategory',
-      }),
-      taxCategoryRef: expect.objectContaining({
-        typeId: 'tax-category',
-        __typename: 'Reference',
-      }),
+      taxCategory: null,
+      taxCategoryRef: null,
       productType: expect.objectContaining({
         __typename: 'ProductTypeDefinition',
       }),

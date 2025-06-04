@@ -41,13 +41,7 @@ export const restFieldsConfig: TModelFieldsConfig<TProductRest> = {
         .id(productTypeId)
         .obj(ProductType.random().id(productTypeId));
     }),
-    taxCategory: fake((f) => {
-      const taxCategoryId = f.string.uuid();
-      return ReferenceRest.presets
-        .taxCategoryReference()
-        .id(taxCategoryId)
-        .obj(TaxCategory.random().id(taxCategoryId));
-    }),
+    taxCategory: null,
   },
   postBuild: (model) => {
     const result = { ...model };
@@ -76,7 +70,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductGraphql> = {
     productTypeRef: null,
     skus: fake(() => []),
     stateRef: null,
-    taxCategory: fake(() => TaxCategory.random()),
+    taxCategory: null,
     taxCategoryRef: null,
     __typename: 'Product',
   },
