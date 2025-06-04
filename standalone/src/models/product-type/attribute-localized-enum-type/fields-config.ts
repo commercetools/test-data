@@ -26,7 +26,23 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumType
   {
     fields: {
       ...commonFieldsConfig,
-      values: fake(() => [AttributeLocalizedEnumValueGraphql.random()]),
+      values: fake(() => ({
+        results: [AttributeLocalizedEnumValueGraphql.random().build()],
+        total: 1,
+        __typename: 'LocalizableEnumValueTypeResult',
+      })),
       __typename: 'LocalizableEnumAttributeDefinitionType',
+    },
+    postBuild: (model, context) => {
+      // When building a compatibility model with custom values, the values property
+      // is an array of the items so we need to transform it to the GraphQL object shape
+      if (context?.isCompatMode && Array.isArray(model.values)) {
+        model.values = {
+          results: model.values,
+          total: model.values.length,
+          __typename: 'LocalizableEnumValueTypeResult',
+        };
+      }
+      return model;
     },
   };

@@ -26,7 +26,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumValu
       ...commonFieldsConfig,
       label: null, // computed field
       labelAllLocales: fake(() => LocalizedString.random()),
-      __typename: 'LocalizedEnumValue',
+      __typename: 'LocalizableEnumValueType',
     },
     postBuild: (model, context) => {
       // This is needed for the compatibility builder since it's built from the REST model

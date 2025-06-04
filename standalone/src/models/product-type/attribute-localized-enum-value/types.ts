@@ -1,7 +1,7 @@
 import { AttributeLocalizedEnumValue } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
 import {
-  TCtpLocalizedEnumValue,
+  TCtpLocalizableEnumValueType,
   TCtpLocalizedEnumValueDraft,
 } from '@/graphql-types';
 
@@ -19,7 +19,7 @@ export type TAttributeLocalizedEnumValueRest = AttributeLocalizedEnumValue;
 export type TAttributeLocalizedEnumValueDraftRest = AttributeLocalizedEnumValue;
 
 // GraphQL types
-export type TAttributeLocalizedEnumValueGraphql = TCtpLocalizedEnumValue;
+export type TAttributeLocalizedEnumValueGraphql = TCtpLocalizableEnumValueType;
 export type TAttributeLocalizedEnumValueDraftGraphql =
   TCtpLocalizedEnumValueDraft;
 
