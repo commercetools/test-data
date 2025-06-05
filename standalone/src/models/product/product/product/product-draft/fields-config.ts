@@ -17,7 +17,7 @@ const commonFieldsConfig = {
   slug: fake(() => LocalizedStringDraft.presets.ofSlugs()),
   key: fake((f) => f.lorem.slug()),
   description: fake(() => LocalizedStringDraft.random()),
-  categories: fake(() => [KeyReferenceDraft.presets.category()]),
+  categories: null,
   categoryOrderHints: null,
   metaTitle: null,
   metaDescription: null,
