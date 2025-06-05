@@ -1,10 +1,5 @@
-import {
-  Product,
-  ProductGraphql,
-  ProductRest,
-  TProductGraphql,
-  TProductRest,
-} from './index';
+import type { TProductGraphql, TProductRest } from './types';
+import { Product, ProductGraphql, ProductRest } from './index';
 
 function validateRestModel(restModel: TProductRest) {
   expect(restModel).toEqual(
@@ -20,7 +15,7 @@ function validateRestModel(restModel: TProductRest) {
           categories: expect.arrayContaining([]),
         }),
       }),
-      priceMode: expect.any(String),
+      priceMode: null,
       state: null,
       taxCategory: null,
       productType: expect.objectContaining({
@@ -52,7 +47,7 @@ function validateGraphqlModel(graphqlModel: TProductGraphql) {
       masterData: expect.objectContaining({
         __typename: 'ProductCatalogData',
       }),
-      priceMode: expect.any(String),
+      priceMode: null,
       state: null,
       stateRef: null,
       taxCategory: null,
