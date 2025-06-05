@@ -15,12 +15,7 @@ function validateRestModel(restModel: TProductCatalogDataRest) {
         name: expect.objectContaining({
           en: expect.any(String),
         }),
-        categories: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            typeId: 'category',
-          }),
-        ]),
+        categories: expect.any(Array),
         categoryOrderHints: expect.any(Object),
         description: expect.objectContaining({
           en: expect.any(String),
@@ -46,12 +41,7 @@ function validateRestModel(restModel: TProductCatalogDataRest) {
         name: expect.objectContaining({
           en: expect.any(String),
         }),
-        categories: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            typeId: 'category',
-          }),
-        ]),
+        categories: expect.any(Array),
         categoryOrderHints: expect.any(Object),
         description: expect.objectContaining({
           en: expect.any(String),
@@ -112,20 +102,8 @@ function validateGraphqlModel(graphqlModel: TProductCatalogDataGraphql) {
             orderHint: expect.any(String),
           }),
         ]),
-        categoriesRef: expect.arrayContaining([
-          {
-            typeId: 'category',
-            id: expect.any(String),
-            __typename: 'Reference',
-          },
-        ]),
-        categories: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            key: expect.any(String),
-            __typename: 'Category',
-          }),
-        ]),
+        categoriesRef: expect.any(Array),
+        categories: expect.any(Array),
         searchKeyword: expect.arrayContaining([]),
         searchKeywords: expect.arrayContaining([]),
         metaTitleAllLocales: expect.arrayContaining([
@@ -190,20 +168,8 @@ function validateGraphqlModel(graphqlModel: TProductCatalogDataGraphql) {
             orderHint: expect.any(String),
           }),
         ]),
-        categoriesRef: expect.arrayContaining([
-          {
-            typeId: 'category',
-            id: expect.any(String),
-            __typename: 'Reference',
-          },
-        ]),
-        categories: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(String),
-            key: expect.any(String),
-            __typename: 'Category',
-          }),
-        ]),
+        categoriesRef: expect.any(Array),
+        categories: expect.any(Array),
         searchKeyword: expect.arrayContaining([]),
         searchKeywords: expect.arrayContaining([]),
         metaTitleAllLocales: expect.arrayContaining([

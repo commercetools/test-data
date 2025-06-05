@@ -17,9 +17,7 @@ import type { TProductDataGraphql, TProductDataRest } from './types';
 export const restFieldsConfig: TModelFieldsConfig<TProductDataRest> = {
   fields: {
     name: fake(() => LocalizedString.random()),
-    categories: fake(() => [
-      ReferenceRest.random().typeId('category').obj(Category.random()),
-    ]),
+    categories: [],
     categoryOrderHints: fake(() => CategoryOrderHintRest.random()),
     description: fake(() => LocalizedString.random()),
     slug: fake(() => LocalizedString.presets.ofSlugs()),
@@ -36,7 +34,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
     __typename: 'ProductData',
     allVariants: fake(() => [ProductVariantGraphql.random()]),
     attributesRaw: fake(() => []),
-    categories: fake(() => [Category.random()]),
+    categories: [],
     categoriesRef: null, // computed
     categoryOrderHint: null, // computed
     categoryOrderHints: fake(() => [CategoryOrderHintGraphql.random()]),

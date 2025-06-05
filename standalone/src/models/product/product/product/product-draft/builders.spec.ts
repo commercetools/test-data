@@ -19,11 +19,7 @@ function validateRestModel(restModel: TProductDraftRest) {
         en: expect.any(String),
         fr: expect.any(String),
       }),
-      categories: expect.arrayContaining([
-        expect.objectContaining({
-          typeId: 'category',
-        }),
-      ]),
+      categories: null,
       categoryOrderHints: null,
       masterVariant: expect.objectContaining({
         key: expect.any(String),
@@ -104,11 +100,7 @@ function validateGraphqlModel(graphqlModel: TProductDraftGraphql) {
           value: expect.any(String),
         }),
       ]),
-      categories: expect.arrayContaining([
-        expect.objectContaining({
-          typeId: 'category',
-        }),
-      ]),
+      categories: null,
       categoryOrderHints: null,
       masterVariant: expect.objectContaining({
         key: expect.any(String),
