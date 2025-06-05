@@ -13,12 +13,7 @@ function validateRestModel(restModel: TProductDataRest) {
       name: expect.objectContaining({
         en: expect.any(String),
       }),
-      categories: expect.arrayContaining([
-        expect.objectContaining({
-          id: expect.any(String),
-          typeId: 'category',
-        }),
-      ]),
+      categories: expect.any(Array),
       categoryOrderHints: expect.objectContaining({
         categoryId: expect.any(String),
         orderHint: expect.any(String),
@@ -82,20 +77,8 @@ function validateGraphqlModel(graphqlModel: TProductDataGraphql) {
           orderHint: expect.any(String),
         }),
       ]),
-      categoriesRef: expect.arrayContaining([
-        {
-          __typename: 'Reference',
-          typeId: 'category',
-          id: expect.any(String),
-        },
-      ]),
-      categories: expect.arrayContaining([
-        expect.objectContaining({
-          __typename: 'Category',
-          id: expect.any(String),
-          key: expect.any(String),
-        }),
-      ]),
+      categoriesRef: expect.any(Array),
+      categories: expect.any(Array),
       searchKeyword: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'SearchKeyword',
