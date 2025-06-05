@@ -1,5 +1,3 @@
-// export * as ProductDraft from './product-draft';
-
 import {
   CompatProductModelBuilder,
   GraphqlModelBuilder,
@@ -8,14 +6,14 @@ import {
 import * as constants from './constants';
 import * as modelPresets from './presets';
 
-export * from './types';
-
 export const ProductRest = {
+  constants,
   random: RestModelBuilder,
   presets: modelPresets.restPresets,
 };
 
 export const ProductGraphql = {
+  constants,
   random: GraphqlModelBuilder,
   presets: modelPresets.graphqlPresets,
 };

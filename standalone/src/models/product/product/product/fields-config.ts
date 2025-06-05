@@ -1,17 +1,15 @@
-import { buildGraphqlList, fake, oneOf, type TModelFieldsConfig } from '@/core';
+import { buildGraphqlList, fake, type TModelFieldsConfig } from '@/core';
 import {
   ClientLogging,
   ReferenceGraphql,
   ReferenceRest,
 } from '@/models/commons';
 import { ProductType } from '@/models/product-type';
-import { TaxCategory } from '@/models/tax-category';
 import { createRelatedDates } from '@/utils';
 import {
   ProductCatalogDataGraphql,
   ProductCatalogDataRest,
 } from '../product-catalog-data';
-import { productPriceMode } from './constants';
 import type { TProductGraphql, TProductRest } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
@@ -23,7 +21,7 @@ const commonFieldsConfig = {
   key: fake((f) => f.lorem.slug(2)),
   lastModifiedAt: fake(getNewerDate),
   lastModifiedBy: fake(() => ClientLogging.random()),
-  priceMode: oneOf(...Object.values(productPriceMode)),
+  priceMode: null,
   reviewRatingStatistics: null,
   state: null,
   version: fake((f) => f.number.int()),
