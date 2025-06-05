@@ -1,5 +1,11 @@
 # @commercetools-test-data/generators
 
+## 10.19.0
+
+### Minor Changes
+
+- [#846](https://github.com/commercetools/test-data/pull/846) [`aa13349`](https://github.com/commercetools/test-data/commit/aa133494c239237ad22aaae489cb403096e54354) Thanks [@mario-priceless](https://github.com/mario-priceless)! - Updated the `ProductData` and `ProductDraft` test models so it does not populate the `categories` property by default. That's an optional property and so the default version of the model should not populate it.
+
 ## 10.18.2
 
 ## 10.18.1

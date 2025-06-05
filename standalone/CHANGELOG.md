@@ -1,5 +1,39 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.2.0
+
+### Minor Changes
+
+- [#844](https://github.com/commercetools/test-data/pull/844) [`1d9ab2f`](https://github.com/commercetools/test-data/commit/1d9ab2f0d8264f5e3c8015e4e004ea388ace5d78) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Updated the `Product` test model so it does not populate the `taxCategory` property by default. That's an optional property and so the default version of the model should not populate it.
+
+- [#846](https://github.com/commercetools/test-data/pull/846) [`aa13349`](https://github.com/commercetools/test-data/commit/aa133494c239237ad22aaae489cb403096e54354) Thanks [@mario-priceless](https://github.com/mario-priceless)! - Updated the `ProductData` and `ProductDraft` test models so it does not populate the `categories` property by default. That's an optional property and so the default version of the model should not populate it.
+
+- [#834](https://github.com/commercetools/test-data/pull/834) [`c87387c`](https://github.com/commercetools/test-data/commit/c87387c1ca258410940d2d2dbb0f60a2a329eb56) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Migrated the `ProductType` and all its related sub-models to the new implementation patterns.
+  These changes are transparent for consumers.
+
+  Here's the complete list of migrated models:
+
+  - AttributeBooleanType
+  - AttributeDateTimeType
+  - AttributeDateType
+  - AttributeDefinition
+  - AttributeEnumType
+  - AttributeLocalizableTextType
+  - AttributeLocalizedEnumType
+  - AttributeLocalizedEnumValue
+  - AttributeMoneyType
+  - AttributeNumberType
+  - AttributePlainEnumType
+  - AttributeReferenceType
+  - AttributeSetType
+  - AttributeTextType
+  - AttributeTimeType
+  - ProductType
+
+### Patch Changes
+
+- [#847](https://github.com/commercetools/test-data/pull/847) [`9b60de1`](https://github.com/commercetools/test-data/commit/9b60de1126df9ccda6e06e45ce9cee1ea6dce762) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Updated the `Product` test model so it does not populate the `priceMode` property by default. That's an optional property and so the default version of the model should not populate it.
+
 ## 11.1.2
 
 ### Patch Changes
