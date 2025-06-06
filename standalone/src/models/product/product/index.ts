@@ -1,7 +1,7 @@
 // Export types
-export * from './product/types';
 export * from './attribute/types';
 export * from './image/types';
+export * from './product/types';
 export * from './product-catalog-data/types';
 export * from './product-data/types';
 export * from './product-data/category-order-hint/types';
