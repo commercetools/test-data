@@ -1,6 +1,6 @@
 {
   "name": "@commercetools/composable-commerce-test-data",
-  "version": "11.2.0",
+  "version": "11.2.1",
   "description": "Data models for commercetools platform APIs",
   "repository": {
     "type": "git",
