@@ -18,7 +18,7 @@
 /standalone/src/core/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 /standalone/src/utils/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
 /generators/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
-/codegen* @commercetools/shield-team-fe
+/codegen* @commercetools/bots-team-engineers
 
 # Models
 /standalone/src/models/ @commercetools/merchant-center-tech-leadership @commercetools/test-automation-engineers
@@ -30,7 +30,7 @@
 /standalone/src/models/cart-discount @commercetools/priceless-team-fe
 /standalone/src/models/category @commercetools/pdm-team-fe
 /standalone/src/models/channel @commercetools/context-team-fe
-/standalone/src/models/custom-view @commercetools/shield-team-fe
+/standalone/src/models/custom-view @commercetools/bots-team-engineers
 /standalone/src/models/customer @commercetools/customers-team-fe
 /standalone/src/models/customer-group @commercetools/customers-team-fe
 /standalone/src/models/discount-code @commercetools/priceless-team-fe
@@ -44,7 +44,7 @@
 /standalone/src/models/product-projection @commercetools/pdm-team-fe
 /standalone/src/models/product-selection @commercetools/context-team-fe
 /standalone/src/models/product-type @commercetools/pdm-team-fe
-/standalone/src/models/project @commercetools/shield-team-fe
+/standalone/src/models/project @commercetools/bots-team-engineers
 /standalone/src/models/quote @commercetools/customers-team-fe
 /standalone/src/models/quote-request @commercetools/customers-team-fe
 /standalone/src/models/shipping-method @commercetools/checkout-team-fe
@@ -56,4 +56,4 @@
 /standalone/src/models/zone @commercetools/checkout-team-fe
 
 /standalone/src/models/*/change-history-* @commercetools/pangolin-team-fe
-/standalone/src/models/*/sample-data-* @commercetools/first-contact-team-fe
+/standalone/src/models/*/sample-data-* @commercetools/craft-team-fe
