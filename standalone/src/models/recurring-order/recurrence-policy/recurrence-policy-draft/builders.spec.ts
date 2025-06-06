@@ -1,4 +1,5 @@
 import { LocalizedString } from '@/models/commons';
+import { StandardScheduleGraphql } from '../../index';
 import { RecurrencePolicyDraftGraphql } from './index';
 
 describe('RecurrencePolicyDraft Builder', () => {
@@ -6,7 +7,8 @@ describe('RecurrencePolicyDraft Builder', () => {
     const graphqlModel = RecurrencePolicyDraftGraphql.random()
       .name(LocalizedString.random())
       .description(LocalizedString.random())
-      .build();
+      .schedule(StandardScheduleGraphql.random())
+      .buildGraphql();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
@@ -25,7 +27,12 @@ describe('RecurrencePolicyDraft Builder', () => {
             __typename: 'LocalizedString',
           }),
         ]),
-        schedule: null,
+        schedule: expect.objectContaining({
+          type: 'Standard',
+          value: expect.any(Number),
+          intervalUnit: expect.any(String),
+          __typename: 'StandardSchedule',
+        }),
       })
     );
   });
