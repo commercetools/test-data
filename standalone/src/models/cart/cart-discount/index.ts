@@ -1,6 +1,7 @@
 // Export constants
 export * from './cart-discount/constants';
 export * from './cart-discount-multi-buy-line-items-target/constants';
+export * from './cart-discount-value-absolute/constants';
 
 // Export types
 export * from './cart-discount/types';
