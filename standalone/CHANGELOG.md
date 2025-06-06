@@ -1,5 +1,13 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.2.1
+
+### Patch Changes
+
+- [#848](https://github.com/commercetools/test-data/pull/848) [`baee8c9`](https://github.com/commercetools/test-data/commit/baee8c9711e510736d7eb196e954cd59edac312d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Fixed the `@commercetools/composable-commerce-test-data/product` entry point to export again the `ProductType` test data models Typescript types which were removed by accident.
+
+- [#851](https://github.com/commercetools/test-data/pull/851) [`5499be5`](https://github.com/commercetools/test-data/commit/5499be502aeaee6b4ec9fca0d11cc70e9c44a625) Thanks [@YahiaElTai](https://github.com/YahiaElTai)! - ensure constants being exported from models
+
 ## 11.2.0
 
 ### Minor Changes
