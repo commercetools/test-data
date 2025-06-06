@@ -1,32 +1,41 @@
 import type {
-  ProductSelection,
   ProductSelectionSetting,
   ProductSelectionSettingDraft,
 } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
+import {
+  TCtpProductSelectionSetting,
+  TCtpProductSelectionSettingDraft,
+} from '@/graphql-types';
 
 //ProductSelectionSettingsDraft
+export type TProductSelectionSettingDraftRest = ProductSelectionSettingDraft;
+export type TProductSelectionSettingDraftGraphql =
+  TCtpProductSelectionSettingDraft;
+
+/**
+ * @deprecated Use `TProductSelectionSettingDraftGraphql` instead
+ */
 export type TProductSelectionSettingDraft = ProductSelectionSettingDraft;
-export type TProductSelectionSettingDraftBuilder =
-  TBuilder<TProductSelectionSettingDraft>;
-export type TCreateProductSelectionSettingDraftBuilder =
-  () => TProductSelectionSettingDraftBuilder;
-export type TProductSelectionSettingDraftGraphql = TProductSelectionSetting;
+
+export type TCreateProductSelectionSettingDraftBuilder<
+  TProductSelectionSettingDraftModel extends
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
+> = () => TBuilder<TProductSelectionSettingDraftModel>;
 
 //ProductSelectionSettings
 export type TProductSelectionSettingRest = ProductSelectionSetting;
-export type TProductSelectionSettingBuilder =
-  TBuilder<TProductSelectionSetting>;
-export type TCreateProductSelectionSettingBuilder =
-  () => TProductSelectionSettingBuilder;
-export type TProductSelectionSettingGraphql = TProductSelectionSetting & {
-  __typename: 'ProductSelectionSetting';
-};
+export type TProductSelectionSettingGraphql = TCtpProductSelectionSetting;
 
-//Default shape
-export type TProductSelectionSetting = Omit<
-  ProductSelectionSetting,
-  'productSelection'
-> & {
-  productSelection: ProductSelection;
-};
+/**
+ * @deprecated Use `TProductSelectionSettingRest` or `TProductSelectionSettingGraphql` instead
+ */
+
+export type TProductSelectionSetting = TProductSelectionSettingRest;
+
+export type TCreateProductSelectionSettingBuilder<
+  TProductSelectionSettingModel extends
+    | TProductSelectionSettingRest
+    | TProductSelectionSettingGraphql,
+> = () => TBuilder<TProductSelectionSettingModel>;

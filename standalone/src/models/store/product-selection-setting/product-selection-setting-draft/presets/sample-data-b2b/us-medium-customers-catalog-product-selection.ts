@@ -1,23 +1,55 @@
+import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '../../../../../commons';
 import {
-  ProductSelectionDraft,
+  ProductSelectionDraftGraphql,
+  ProductSelectionDraftRest,
   type TProductSelectionDraft,
 } from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraftBuilder } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builder';
 
-const usMediumCustomersCatalog = ProductSelectionDraft.presets.sampleDataB2B
-  .usMediumCustomersCatalog()
-  .build<TProductSelectionDraft>();
+const usMediumCustomersCatalogKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .usMediumCustomersCatalog()
+    .build<TProductSelectionDraft>().key;
 
-const usMediumCustomersCatalogProductSelectionSetting =
-  (): TProductSelectionSettingDraftBuilder =>
-    ProductSelectionSettingDraft()
+export const usMediumCustomersCatalogRest =
+  (): TBuilder<TProductSelectionSettingDraftRest> =>
+    RestModelBuilder()
       .productSelection(
         KeyReferenceDraft.presets
           .productSelection()
-          .key(usMediumCustomersCatalog.key!)
+          .key(usMediumCustomersCatalogKey!)
       )
       .active(true);
 
-export default usMediumCustomersCatalogProductSelectionSetting;
+export const usMediumCustomersCatalogGraphql =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
+      .productSelection(
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(usMediumCustomersCatalogKey!)
+      )
+      .active(true);
+
+/**
+ * @deprecated Use `usMediumCustomersCatalogRest` or `usMediumCustomersCatalogGraphql` instead
+ */
+export const usMediumCustomersCatalogPreset = (): TBuilder<
+  TProductSelectionSettingDraftGraphql | TProductSelectionSettingDraftRest
+> =>
+  CompatModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(usMediumCustomersCatalogKey!)
+    )
+    .active(true);

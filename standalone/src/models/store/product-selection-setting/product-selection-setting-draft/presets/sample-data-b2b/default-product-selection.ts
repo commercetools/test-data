@@ -1,23 +1,51 @@
-import { KeyReferenceDraft } from '../../../../../commons';
+import { TBuilder } from '@/core';
+import { KeyReferenceDraft } from '@/models/commons';
+import { ProductSelectionDraftRest } from '@/models/product/product-selection';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
 import {
-  ProductSelectionDraft,
-  type TProductSelectionDraft,
-} from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraftBuilder } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builder';
 
-const defaultProductSelection = ProductSelectionDraft.presets.sampleDataB2B
-  .defaultProductSelection()
-  .build<TProductSelectionDraft>();
+const defaultProductSelectionKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .defaultProductSelection()
+    .build().key;
 
-const defaultProductSelectionSetting =
-  (): TProductSelectionSettingDraftBuilder =>
-    ProductSelectionSettingDraft()
+export const defaultProductSelectionRest =
+  (): TBuilder<TProductSelectionSettingDraftRest> =>
+    RestModelBuilder()
       .productSelection(
         KeyReferenceDraft.presets
           .productSelection()
-          .key(defaultProductSelection.key!)
+          .key(defaultProductSelectionKey!)
       )
       .active(true);
 
-export default defaultProductSelectionSetting;
+export const defaultProductSelectionGraphql =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    GraphqlModelBuilder()
+      .productSelection(
+        KeyReferenceDraft.presets
+          .productSelection()
+          .key(defaultProductSelectionKey!)
+      )
+      .active(true);
+
+/**
+ * @deprecated Use `defaultProductSelectionRest` or `defaultProductSelectionGraphql` instead
+ */
+export const defaultProductSelection = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> =>
+  CompatModelBuilder()
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(defaultProductSelectionKey!)
+    )
+    .active(true);

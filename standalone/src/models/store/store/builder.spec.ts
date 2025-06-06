@@ -1,43 +1,13 @@
 /* eslint-disable jest/no-disabled-tests */
 /* eslint-disable jest/valid-title */
-
 import { createBuilderSpec } from '@/core/test-utils';
-import type { TStore, TStoreGraphql } from './types';
-import * as Store from './index';
+import type { TStore, TStoreGraphql, TStoreRest } from './types';
+import { StoreRest, StoreGraphql, Store } from './index';
 
 describe('builder', () => {
   it(
     ...createBuilderSpec<TStore, TStore>(
       'default',
-      Store.random(),
-      expect.objectContaining({
-        key: expect.any(String),
-        name: expect.objectContaining({
-          de: expect.any(String),
-          en: expect.any(String),
-          fr: expect.any(String),
-        }),
-        languages: expect.any(Array),
-        countries: expect.any(Array),
-        distributionChannels: expect.any(Array),
-        supplyChannels: expect.any(Array),
-        productSelections: [],
-        custom: null,
-        createdAt: expect.any(String),
-        createdBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-        lastModifiedAt: expect.any(String),
-        lastModifiedBy: expect.objectContaining({
-          customer: expect.objectContaining({ typeId: 'customer' }),
-        }),
-      })
-    )
-  );
-
-  it(
-    ...createBuilderSpec<TStore, TStore>(
-      'rest',
       Store.random(),
       expect.objectContaining({
         id: expect.any(String),
@@ -66,9 +36,38 @@ describe('builder', () => {
   );
 
   it(
-    ...createBuilderSpec<TStore, TStoreGraphql>(
+    ...createBuilderSpec<TStoreRest, TStoreRest>(
+      'rest',
+      StoreRest.random(),
+      expect.objectContaining({
+        key: expect.any(String),
+        name: expect.objectContaining({
+          de: expect.any(String),
+          en: expect.any(String),
+          fr: expect.any(String),
+        }),
+        languages: expect.any(Array),
+        countries: expect.any(Array),
+        distributionChannels: expect.any(Array),
+        supplyChannels: expect.any(Array),
+        productSelections: [],
+        custom: null,
+        createdAt: expect.any(String),
+        createdBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+        lastModifiedAt: expect.any(String),
+        lastModifiedBy: expect.objectContaining({
+          customer: expect.objectContaining({ typeId: 'customer' }),
+        }),
+      })
+    )
+  );
+
+  it(
+    ...createBuilderSpec<TStoreGraphql, TStoreGraphql>(
       'graphql',
-      Store.random(),
+      StoreGraphql.random(),
       expect.objectContaining({
         __typename: 'Store',
         id: expect.any(String),

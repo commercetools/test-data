@@ -1,9 +1,21 @@
-import defaultProductSelection from './default-product-selection';
-import usMediumCustomersCatalogProductSelection from './us-medium-customers-catalog-product-selection';
+import * as defaultProductSelection from './default-product-selection';
+import * as usMediumCustomersCatalogProductSelection from './us-medium-customers-catalog-product-selection';
 
-const presets = {
-  defaultProductSelection,
-  usMediumCustomersCatalogProductSelection,
+export const restPresets = {
+  defaultProductSelection: defaultProductSelection.defaultProductSelectionRest,
+  usMediumCustomersCatalogProductSelection:
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogRest,
 };
 
-export default presets;
+export const graphqlPresets = {
+  defaultProductSelection:
+    defaultProductSelection.defaultProductSelectionGraphql,
+  usMediumCustomersCatalogProductSelection:
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogGraphql,
+};
+
+export const compatPresets = {
+  defaultProductSelection: defaultProductSelection.defaultProductSelection,
+  usMediumCustomersCatalogProductSelection:
+    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogPreset,
+};

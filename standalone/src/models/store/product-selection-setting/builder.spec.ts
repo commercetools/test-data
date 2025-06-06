@@ -7,7 +7,11 @@ import type {
   TProductSelectionSettingRest,
   TProductSelectionSettingGraphql,
 } from './types';
-import * as ProductSelectionSetting from './index';
+import {
+  ProductSelectionSettingRest,
+  ProductSelectionSettingGraphql,
+  ProductSelectionSetting,
+} from './index';
 
 describe('builder', () => {
   it(
@@ -16,21 +20,8 @@ describe('builder', () => {
       ProductSelectionSetting.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
+          typeId: 'product-selection',
           id: expect.any(String),
-          version: expect.any(Number),
-          key: expect.any(String),
-          name: expect.any(Object),
-          productCount: expect.any(Number),
-          mode: expect.any(String),
-          custom: null,
-          createdAt: expect.any(String),
-          createdBy: expect.objectContaining({
-            customer: expect.objectContaining({ typeId: 'customer' }),
-          }),
-          lastModifiedAt: expect.any(String),
-          lastModifiedBy: expect.objectContaining({
-            customer: expect.objectContaining({ typeId: 'customer' }),
-          }),
         }),
         active: expect.any(Boolean),
       })
@@ -39,11 +30,11 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TProductSelectionSetting,
+      TProductSelectionSettingRest,
       TProductSelectionSettingRest
     >(
       'rest',
-      ProductSelectionSetting.random(),
+      ProductSelectionSettingRest.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -55,11 +46,11 @@ describe('builder', () => {
   );
   it(
     ...createBuilderSpec<
-      TProductSelectionSetting,
+      TProductSelectionSettingGraphql,
       TProductSelectionSettingGraphql
     >(
       'graphql',
-      ProductSelectionSetting.random(),
+      ProductSelectionSettingGraphql.random(),
       expect.objectContaining({
         __typename: 'ProductSelectionSetting',
         active: expect.any(Boolean),

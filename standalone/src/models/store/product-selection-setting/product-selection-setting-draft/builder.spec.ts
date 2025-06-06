@@ -5,8 +5,13 @@ import { createBuilderSpec } from '@/core/test-utils';
 import type {
   TProductSelectionSettingDraft,
   TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
 } from '../types';
-import * as ProductSelectionSettingDraft from './index';
+import {
+  ProductSelectionSettingDraft,
+  ProductSelectionSettingDraftRest,
+  ProductSelectionSettingDraftGraphql,
+} from './index';
 
 describe('builder', () => {
   it(
@@ -28,11 +33,11 @@ describe('builder', () => {
 
   it(
     ...createBuilderSpec<
-      TProductSelectionSettingDraft,
-      TProductSelectionSettingDraft
+      TProductSelectionSettingDraftRest,
+      TProductSelectionSettingDraftRest
     >(
       'rest',
-      ProductSelectionSettingDraft.random(),
+      ProductSelectionSettingDraftRest.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',
@@ -44,11 +49,11 @@ describe('builder', () => {
   );
   it(
     ...createBuilderSpec<
-      TProductSelectionSettingDraft,
+      TProductSelectionSettingDraftGraphql,
       TProductSelectionSettingDraftGraphql
     >(
       'graphql',
-      ProductSelectionSettingDraft.random(),
+      ProductSelectionSettingDraftGraphql.random(),
       expect.objectContaining({
         productSelection: expect.objectContaining({
           typeId: 'product-selection',

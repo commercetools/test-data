@@ -1,5 +1,17 @@
-import b2cRetailStore from './b2c-retail-store';
+import {
+  b2cRetailStoreRest,
+  b2cRetailStoreGraphql,
+  b2cRetailStore,
+} from './b2c-retail-store';
 
-const presets = { b2cRetailStore };
+export const restPresets = {
+  b2cRetailStore: b2cRetailStoreRest,
+};
 
-export default presets;
+export const graphqlPresets = {
+  b2cRetailStore: b2cRetailStoreGraphql,
+};
+
+export const compatPresets = {
+  b2cRetailStore: b2cRetailStore,
+};

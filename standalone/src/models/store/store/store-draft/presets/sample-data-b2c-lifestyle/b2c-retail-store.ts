@@ -1,8 +1,36 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import type { TStoreDraftBuilder } from '../../../types';
-import * as StoreDraft from '../../index';
+import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
+import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
-const b2cRetailStore = (): TStoreDraftBuilder =>
+export const b2cRetailStoreRest = (): TBuilder<TStoreDraftRest> =>
+  StoreDraftRest.presets
+    .empty()
+    .key('b2c-retail-store')
+    .name(
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('B2C Retail Store')
+        ['en-GB']('B2C Retail Store')
+    );
+
+export const b2cRetailStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
+  StoreDraftGraphql.presets
+    .empty()
+    .key('b2c-retail-store')
+    .name(
+      LocalizedStringDraft.presets
+        .empty()
+        ['en-US']('B2C Retail Store')
+        ['en-GB']('B2C Retail Store')
+    );
+
+/**
+ * @deprecated Use `b2cRetailStoreRest` or `b2cRetailStoreGraphql` instead
+ */
+export const b2cRetailStore = (): TBuilder<
+  TStoreDraftRest | TStoreDraftGraphql
+> =>
   StoreDraft.presets
     .empty()
     .key('b2c-retail-store')
@@ -12,4 +40,3 @@ const b2cRetailStore = (): TStoreDraftBuilder =>
         ['en-US']('B2C Retail Store')
         ['en-GB']('B2C Retail Store')
     );
-export default b2cRetailStore;

@@ -1,15 +1,43 @@
-import { Builder } from '@/core';
-import type {
+import {
+  createCompatibilityBuilder,
+  createSpecializedBuilder,
+  TModelFieldsConfig,
+} from '@/core';
+import {
   TCreateProductSelectionSettingDraftBuilder,
-  TProductSelectionSettingDraft,
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
 } from '../types';
-import generator from './generator';
-import transformers from './transformers';
+import { graphqlFieldsConfig, restFieldsConfig } from './fields-config';
 
-const Model: TCreateProductSelectionSettingDraftBuilder = () =>
-  Builder<TProductSelectionSettingDraft>({
-    generator,
-    transformers,
+export const RestModelBuilder: TCreateProductSelectionSettingDraftBuilder<
+  TProductSelectionSettingDraftRest
+> = () =>
+  createSpecializedBuilder({
+    modelFieldsConfig: restFieldsConfig,
+    type: 'rest',
+    name: 'product-selection-setting-draft',
   });
 
-export default Model;
+export const GraphqlModelBuilder: TCreateProductSelectionSettingDraftBuilder<
+  TProductSelectionSettingDraftGraphql
+> = () =>
+  createSpecializedBuilder({
+    modelFieldsConfig: graphqlFieldsConfig,
+    type: 'graphql',
+    name: 'product-selection-setting-draft',
+  });
+
+export const CompatModelBuilder = <
+  TProductSelectionSettingDraftModel extends
+    | TProductSelectionSettingDraftGraphql
+    | TProductSelectionSettingDraftRest,
+>() =>
+  createCompatibilityBuilder<TProductSelectionSettingDraftModel>({
+    name: 'ProductSelectionSettingDraftCompatBuilder',
+    modelFieldsConfig: {
+      rest: restFieldsConfig as TModelFieldsConfig<TProductSelectionSettingDraftModel>,
+      graphql:
+        graphqlFieldsConfig as TModelFieldsConfig<TProductSelectionSettingDraftModel>,
+    },
+  });
