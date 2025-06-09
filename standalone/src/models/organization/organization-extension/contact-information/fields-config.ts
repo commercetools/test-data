@@ -11,7 +11,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TContactInformationGraphql>
       createdAt: fake(getOlderDate),
       updatedAt: fake(getNewerDate),
       email: fake((f) => f.internet.email()),
-      verifiedEmail: fake((f) => f.internet.email()),
+      verifiedEmail: null,
       __typename: 'ContactInformation',
     },
   };
