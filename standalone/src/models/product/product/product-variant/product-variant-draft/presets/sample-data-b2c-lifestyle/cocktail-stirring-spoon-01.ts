@@ -41,10 +41,24 @@ const cocktailStirringSpoon01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Edelstahl\n- Spülmaschinenfest',
         'en-US': '- Stainless steel\n- Dishwasher safe',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Silver:#C0C0C0',
-        'de-DE': 'Silber:#C0C0C0',
-        'en-US': 'Silver:#C0C0C0',
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Silver',
+            'en-GB': 'Silver',
+            'de-DE': 'Silber',
+          },
+        ]),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Silver',
+        'de-DE': 'Silber',
+        'en-US': 'Silver',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#C0C0C0',
+        'en-GB': '#C0C0C0',
+        'de-DE': '#C0C0C0',
       }),
     ]);
 

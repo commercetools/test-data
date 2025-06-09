@@ -24,20 +24,40 @@ describe(`with orionDoubleBed01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "green",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "silver",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Salbei:#BCB88A",
-              "en-GB": "Sage:#BCB88A",
-              "en-US": "Sage:#BCB88A",
+              "de-DE": "Salbei",
+              "en-GB": "Sage",
+              "en-US": "Sage",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Silber:#C0C0C0",
-              "en-GB": "Silver:#C0C0C0",
-              "en-US": "Silver:#C0C0C0",
+              "de-DE": "Silber",
+              "en-GB": "Silver",
+              "en-US": "Silver",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#BCB88A",
+          },
+          {
+            "name": "finish-code",
+            "value": "#C0C0C0",
           },
         ],
         "images": [
@@ -118,12 +138,28 @@ describe(`with orionDoubleBed01 preset`, () => {
             "value": "{"en-GB":"- Assembly included at delivery\\n- Mattress not included","de-DE":"- Montage im Lieferumfang enthalten\\n- Matratze nicht im Lieferumfang enthalten","en-US":"- Assembly included at delivery\\n- Mattress not included"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Sage:#BCB88A","de-DE":"Salbei:#BCB88A","en-US":"Sage:#BCB88A"}",
+            "name": "search-color",
+            "value": "["green"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+            "name": "search-finish",
+            "value": "["silver"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sage","de-DE":"Salbei","en-US":"Sage"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#BCB88A"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#C0C0C0"",
           },
         ],
         "images": [

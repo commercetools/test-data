@@ -41,15 +41,43 @@ const emeraldVelvetChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Green:#008000',
-        'de-DE': 'Grün:#008000',
-        'en-US': 'Green:#008000',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Green',
+            'en-GB': 'Green',
+            'de-DE': 'Grün',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Green',
+        'de-DE': 'Grün',
+        'en-US': 'Green',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Burlywood:#deb887',
-        'de-DE': 'Burlywood:#deb887',
-        'en-US': 'Burlywood:#deb887',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Burlywood',
+        'de-DE': 'Burlywood',
+        'en-US': 'Burlywood',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#008000',
+        'en-GB': '#008000',
+        'de-DE': '#008000',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#deb887',
+        'en-GB': '#deb887',
+        'de-DE': '#deb887',
       }),
     ]);
 

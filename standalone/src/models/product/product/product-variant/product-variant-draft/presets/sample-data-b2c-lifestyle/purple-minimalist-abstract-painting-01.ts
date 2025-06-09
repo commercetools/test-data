@@ -54,10 +54,24 @@ const purpleMinimalistAbstractPainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
         'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Purple:#800080',
-        'de-DE': 'Violett:#800080',
-        'en-US': 'Purple:#800080',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Purple',
+            'en-GB': 'Purple',
+            'de-DE': 'Violett',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Purple',
+        'de-DE': 'Violett',
+        'en-US': 'Purple',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#800080',
+        'en-GB': '#800080',
+        'de-DE': '#800080',
       }),
     ]);
 

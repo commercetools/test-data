@@ -47,15 +47,43 @@ const rattanLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 2 cushions for seat and backrest',
         'de-DE': '- Inklusive 2 Kissen für Sitz und Rückenlehne',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Antique White:#faebd7',
-        'de-DE': 'Antik-weiß:#faebd7',
-        'en-US': 'Antique White:#faebd7',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Antique White',
+        'de-DE': 'Antik-weiß',
+        'en-US': 'Antique White',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Beige:#F5F5DC',
-        'en-US': 'Beige:#F5F5DC',
-        'de-DE': 'Beige:#F5F5DC',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Beige',
+        'de-DE': 'Beige',
+        'en-US': 'Beige',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#faebd7',
+        'en-GB': '#faebd7',
+        'de-DE': '#faebd7',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#F5F5DC',
+        'en-GB': '#F5F5DC',
+        'de-DE': '#F5F5DC',
       }),
     ]);
 

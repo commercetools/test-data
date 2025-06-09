@@ -10,14 +10,6 @@ describe(`with geometricPillowCase01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Silber:#C0C0C0",
-              "en-GB": "Silver:#C0C0C0",
-              "en-US": "Silver:#C0C0C0",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Velvet fabric
@@ -37,6 +29,24 @@ describe(`with geometricPillowCase01 preset`, () => {
       - Washable
       ",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "silver",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Silber",
+              "en-GB": "Silver",
+              "en-US": "Silver",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#C0C0C0",
           },
         ],
         "images": [
@@ -121,12 +131,20 @@ describe(`with geometricPillowCase01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Silver:#C0C0C0","en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["silver"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#C0C0C0"",
           },
         ],
         "images": [

@@ -30,20 +30,40 @@ describe(`with modernUpholsteredTwinBed01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "white",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "gray",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Weiß:#FFFFFF",
-              "en-GB": "White:#FFFFFF",
-              "en-US": "White:#FFFFFF",
+              "de-DE": "Weiß",
+              "en-GB": "White",
+              "en-US": "White",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Helles Schiefer grau:#778899",
-              "en-GB": "Lightslate Grey:#778899",
-              "en-US": "Lightslate Gray:#778899",
+              "de-DE": "Helles Schiefer grau",
+              "en-GB": "Lightslate Grey",
+              "en-US": "Lightslate Gray",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#FFFFFF",
+          },
+          {
+            "name": "finish-code",
+            "value": "#778899",
           },
         ],
         "images": [
@@ -140,12 +160,28 @@ describe(`with modernUpholsteredTwinBed01 preset`, () => {
             "value": "{"en-US":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","en-GB":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","de-DE":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site"}",
           },
           {
-            "name": "color",
-            "value": "{"en-US":"White:#FFFFFF","en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF"}",
+            "name": "search-color",
+            "value": "["white"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-US":"Lightslate Gray:#778899","en-GB":"Lightslate Grey:#778899","de-DE":"Helles Schiefer grau:#778899"}",
+            "name": "search-finish",
+            "value": "["gray"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Lightslate Grey","de-DE":"Helles Schiefer grau","en-US":"Lightslate Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#FFFFFF"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#778899"",
           },
         ],
         "images": [

@@ -13,22 +13,6 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Beige:#F5F5DC",
-              "en-GB": "Beige:#F5F5DC",
-              "en-US": "Beige:#F5F5DC",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Baumwollbezug
@@ -41,6 +25,42 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
       - Comes with accent pillows
       - Assembly on site",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "brown",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Beige",
+              "en-GB": "Beige",
+              "en-US": "Beige",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#F5F5DC",
+          },
+          {
+            "name": "finish-code",
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -133,16 +153,32 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Cotton upholstery\\n- Comes with accent pillows\\n- Assembly on site","en-GB":"- Cotton upholstery\\n- Comes with accent pillows\\n- Assembly on site","de-DE":"- Baumwollbezug\\n- Wurfkissen um Lieferumfang enthalten\\n- Selbstmontage"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["yellow"]",
+          },
+          {
+            "name": "search-finish",
+            "value": "["brown"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#F5F5DC"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

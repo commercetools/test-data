@@ -54,10 +54,24 @@ const harmonyDrinkingGlass01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Das Set enthält 6 Gläser',
         'en-US': '- Set includes 6 glasses',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Transparent:transparent',
-        'de-DE': 'Transparent:transparent',
-        'en-US': 'Transparent:transparent',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Transparent',
+            'en-GB': 'Transparent',
+            'de-DE': 'Transparent',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Transparent',
+        'de-DE': 'Transparent',
+        'en-US': 'Transparent',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': 'transparent',
+        'en-GB': 'transparent',
+        'de-DE': 'transparent',
       }),
     ]);
 

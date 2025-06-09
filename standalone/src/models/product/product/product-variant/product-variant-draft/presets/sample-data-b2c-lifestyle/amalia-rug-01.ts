@@ -41,10 +41,24 @@ const amaliaRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 6 Fuß x 6 Fuß',
         'en-US': '- 6ft x 6ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
-        'en-US': 'White:#FFFFFF',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFFFFF',
+        'en-GB': '#FFFFFF',
+        'de-DE': '#FFFFFF',
       }),
     ]);
 

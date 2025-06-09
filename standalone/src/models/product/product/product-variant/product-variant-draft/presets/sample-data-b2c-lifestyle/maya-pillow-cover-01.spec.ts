@@ -21,12 +21,22 @@ describe(`with mayaPillowCover01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "purple",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Pflaume:#DDA0DD",
-              "en-GB": "Plum:#DDA0DD",
-              "en-US": "Plum:#DDA0DD",
+              "de-DE": "Pflaume",
+              "en-GB": "Plum",
+              "en-US": "Plum",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#DDA0DD",
           },
         ],
         "images": [
@@ -107,8 +117,16 @@ describe(`with mayaPillowCover01 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Does not include pillow"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Plum:#DDA0DD","de-DE":"Pflaume:#DDA0DD","en-US":"Plum:#DDA0DD"}",
+            "name": "search-color",
+            "value": "["purple"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Plum","de-DE":"Pflaume","en-US":"Plum"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#DDA0DD"",
           },
         ],
         "images": [

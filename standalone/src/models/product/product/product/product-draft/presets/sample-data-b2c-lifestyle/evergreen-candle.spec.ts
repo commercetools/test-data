@@ -33,12 +33,22 @@ describe(`with evergreenCandle preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "green",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Helles Oliv:#BAB86C",
-                "en-GB": "Light Olive:#BAB86C",
-                "en-US": "Light Olive:#BAB86C",
+                "de-DE": "Helles Oliv",
+                "en-GB": "Light Olive",
+                "en-US": "Light Olive",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#BAB86C",
             },
           ],
           "images": [

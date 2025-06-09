@@ -13,22 +13,6 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Königs blau:#4169E1",
-              "en-GB": "Royal Blue:#4169E1",
-              "en-US": "Royal Blue:#4169E1",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
             "name": "new-arrival",
             "value": true,
           },
@@ -42,6 +26,42 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
               "en-US": "- Two-seater sofa
       - Cotton linen upholstery",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "blue",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "black",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Königs blau",
+              "en-GB": "Royal Blue",
+              "en-US": "Royal Blue",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#4169E1",
+          },
+          {
+            "name": "finish-code",
+            "value": "#000000",
           },
         ],
         "images": [
@@ -126,20 +146,36 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Royal Blue:#4169E1","de-DE":"Königs blau:#4169E1","en-US":"Royal Blue:#4169E1"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-          },
-          {
             "name": "new-arrival",
             "value": "true",
           },
           {
             "name": "productspec",
             "value": "{"en-GB":"- Two-seater sofa\\n- Cotton linen upholstery","de-DE":"- Zweisitzer-Sofa\\n- Polsterung aus Baumwollleinen","en-US":"- Two-seater sofa\\n- Cotton linen upholstery"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["blue"]",
+          },
+          {
+            "name": "search-finish",
+            "value": "["black"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Royal Blue","de-DE":"Königs blau","en-US":"Royal Blue"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#4169E1"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#000000"",
           },
         ],
         "images": [

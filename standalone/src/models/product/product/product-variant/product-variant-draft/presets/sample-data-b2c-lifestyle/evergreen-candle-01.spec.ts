@@ -13,12 +13,22 @@ describe(`with evergreenCandle01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "green",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Helles Oliv:#BAB86C",
-              "en-GB": "Light Olive:#BAB86C",
-              "en-US": "Light Olive:#BAB86C",
+              "de-DE": "Helles Oliv",
+              "en-GB": "Light Olive",
+              "en-US": "Light Olive",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#BAB86C",
           },
         ],
         "images": [
@@ -111,8 +121,16 @@ describe(`with evergreenCandle01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Olive:#BAB86C","de-DE":"Helles Oliv:#BAB86C","en-US":"Light Olive:#BAB86C"}",
+            "name": "search-color",
+            "value": "["green"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Olive","de-DE":"Helles Oliv","en-US":"Light Olive"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#BAB86C"",
           },
         ],
         "images": [

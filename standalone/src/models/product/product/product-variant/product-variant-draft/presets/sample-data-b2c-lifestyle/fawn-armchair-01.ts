@@ -41,15 +41,43 @@ const fawnArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Leder erfordert besondere Pflege',
         'en-US': '- Leather requires special care',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Black',
+            'en-GB': 'Black',
+            'de-DE': 'Schwarz',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Black:#000000',
-        'de-DE': 'Schwarz:#000000',
-        'en-US': 'Black:#000000',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Black',
+        'de-DE': 'Schwarz',
+        'en-US': 'Black',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#D2B48C',
+        'en-GB': '#D2B48C',
+        'de-DE': '#D2B48C',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#000000',
+        'en-GB': '#000000',
+        'de-DE': '#000000',
       }),
     ]);
 

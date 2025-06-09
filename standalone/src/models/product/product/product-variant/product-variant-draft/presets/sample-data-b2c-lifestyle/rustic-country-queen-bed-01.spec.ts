@@ -10,22 +10,6 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Leather upholstery
@@ -38,6 +22,42 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
       - Standard Queen size
       - Assembly on site",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "brown",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
+          },
+          {
+            "name": "finish-code",
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -114,16 +134,32 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Tan:#D2B48C","en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Leather upholstery\\n- Standard Queen size\\n- Assembly on site","en-GB":"- Leather upholstery\\n- Standard Queen size\\n- Assembly on site","de-DE":"- Leather upholstery\\n- Standard Queen size\\n- Assembly on site"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["yellow"]",
+          },
+          {
+            "name": "search-finish",
+            "value": "["brown"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

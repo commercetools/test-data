@@ -41,15 +41,43 @@ const leahArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Grey:#808080',
-        'de-DE': 'Grau:#808080',
-        'en-US': 'Gray:#808080',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Gray',
+            'en-GB': 'Grey',
+            'de-DE': 'Grau',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Grey',
+        'de-DE': 'Grau',
+        'en-US': 'Gray',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#808080',
+        'en-GB': '#808080',
+        'de-DE': '#808080',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#D2B48C',
+        'en-GB': '#D2B48C',
+        'de-DE': '#D2B48C',
       }),
     ]);
 

@@ -53,15 +53,43 @@ const sweetPeaCandle01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Comes in glass jar\n- 180 grams',
         'de-DE': '- Wird im Glas geliefert\n- 180 Gramm',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Pink:#FFC0CB',
-        'de-DE': 'Rosa:#FFC0CB',
-        'en-US': 'Pink:#FFC0CB',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Pink',
+            'en-GB': 'Pink',
+            'de-DE': 'Rosa',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Glass',
+            'en-GB': 'Glass',
+            'de-DE': 'Glas',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Pink',
+        'de-DE': 'Rosa',
+        'en-US': 'Pink',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Glass:transparent',
-        'de-DE': 'Glas:transparent',
-        'en-US': 'Glass:transparent',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Glass',
+        'de-DE': 'Glas',
+        'en-US': 'Glass',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFC0CB',
+        'en-GB': '#FFC0CB',
+        'de-DE': '#FFC0CB',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': 'transparent',
+        'en-GB': 'transparent',
+        'de-DE': 'transparent',
       }),
     ]);
 

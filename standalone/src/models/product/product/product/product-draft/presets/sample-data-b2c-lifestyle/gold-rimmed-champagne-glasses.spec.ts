@@ -49,20 +49,40 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "transparent",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "gold",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Transparent:transparent",
-                "en-GB": "Transparent:transparent",
-                "en-US": "Transparent:transparent",
+                "de-DE": "Transparent",
+                "en-GB": "Transparent",
+                "en-US": "Transparent",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "transparent",
+            },
+            {
+              "name": "finish-code",
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -232,12 +252,28 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
               "value": "{"en-GB":"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims","de-DE":"- Set mit 5 Gläsern\\n- Importierter Kristall\\n- Goldpolitur an den Felgen","en-US":"- Set of 5 glasses\\n- Imported crystal\\n- Gold polish on the rims"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Transparent:transparent","de-DE":"Transparent:transparent","en-US":"Transparent:transparent"}",
+              "name": "search-color",
+              "value": "["transparent"]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700","en-US":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": "["gold"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Transparent","de-DE":"Transparent","en-US":"Transparent"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""transparent"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

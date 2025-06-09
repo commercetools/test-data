@@ -42,11 +42,6 @@ const geometricPillowCase02 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5000, h: 5000 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Light Pink:#FFB6C1',
-        'en-GB': 'Light Pink:#FFB6C1',
-        'de-DE': 'Hell rosa:#FFB6C1',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable\n',
@@ -54,6 +49,25 @@ const geometricPillowCase02 = (): TBuilder<TProductVariantDraft> =>
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
         'de-DE':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Pink',
+            'en-GB': 'Pink',
+            'de-DE': 'Rosa',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Light Pink',
+        'de-DE': 'Hell rosa',
+        'en-US': 'Light Pink',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFB6C1',
+        'en-GB': '#FFB6C1',
+        'de-DE': '#FFB6C1',
       }),
     ]);
 

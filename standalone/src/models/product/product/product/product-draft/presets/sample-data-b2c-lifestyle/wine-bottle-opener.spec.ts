@@ -42,20 +42,40 @@ describe(`with wineBottleOpener preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "white",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "silver",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Silber:#C0C0C0",
-                "en-GB": "Silver:#C0C0C0",
-                "en-US": "Silver:#C0C0C0",
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#FFFFFF",
+            },
+            {
+              "name": "finish-code",
+              "value": "#C0C0C0",
             },
           ],
           "images": [
@@ -201,12 +221,28 @@ describe(`with wineBottleOpener preset`, () => {
               "value": "{"en-GB":"- Stainless steel","en-US":"- Stainless steel","de-DE":"- Edelstahl"}",
             },
             {
-              "name": "color",
-              "value": "{"en-US":"White:#FFFFFF","en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF"}",
+              "name": "search-color",
+              "value": "["white"]",
             },
             {
-              "name": "finish",
-              "value": "{"en-US":"Silver:#C0C0C0","en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0"}",
+              "name": "search-finish",
+              "value": "["silver"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#FFFFFF"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#C0C0C0"",
             },
           ],
           "images": [

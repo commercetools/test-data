@@ -28,20 +28,40 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             "value": true,
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "transparent",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "glass",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Transparent:transparent",
-              "en-GB": "Transparent:transparent",
-              "en-US": "Transparent:transparent",
+              "de-DE": "Transparent",
+              "en-GB": "Transparent",
+              "en-US": "Transparent",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Glas:transparent",
-              "en-GB": "Glass:transparent",
-              "en-US": "Glass:transparent",
+              "de-DE": "Glas",
+              "en-GB": "Glass",
+              "en-US": "Glass",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "transparent",
+          },
+          {
+            "name": "finish-code",
+            "value": "transparent",
           },
         ],
         "images": [
@@ -150,12 +170,28 @@ describe(`with classicChampagneGlasses01 preset`, () => {
             "value": "true",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Transparent:transparent","de-DE":"Transparent:transparent","en-US":"Transparent:transparent"}",
+            "name": "search-color",
+            "value": "["transparent"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Glass:transparent","de-DE":"Glas:transparent","en-US":"Glass:transparent"}",
+            "name": "search-finish",
+            "value": "["glass"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Transparent","de-DE":"Transparent","en-US":"Transparent"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Glass","de-DE":"Glas","en-US":"Glass"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""transparent"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""transparent"",
           },
         ],
         "images": [

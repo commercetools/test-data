@@ -45,20 +45,40 @@ describe(`with edgarArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "green",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "black",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Helles Oliv:#BAB86C",
-                "en-GB": "Light Olive:#BAB86C",
-                "en-US": "Light Olive:#BAB86C",
+                "de-DE": "Helles Oliv",
+                "en-GB": "Light Olive",
+                "en-US": "Light Olive",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#BAB86C",
+            },
+            {
+              "name": "finish-code",
+              "value": "#000000",
             },
           ],
           "images": [

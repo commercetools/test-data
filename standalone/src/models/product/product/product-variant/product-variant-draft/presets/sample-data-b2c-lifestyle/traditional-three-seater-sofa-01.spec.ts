@@ -27,20 +27,40 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "green",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "brown",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Mittel meer grün:#3CB371",
-              "en-GB": "Medium Sea Green:#3CB371",
-              "en-US": "Medium Sea Green:#3CB371",
+              "de-DE": "Mittel meer grün",
+              "en-GB": "Medium Sea Green",
+              "en-US": "Medium Sea Green",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#3CB371",
+          },
+          {
+            "name": "finish-code",
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -137,12 +157,28 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
             "value": "{"en-US":"- Three seater sofa\\n- Velvet upholstery\\n- Assembly on site","en-GB":"- Three seater sofa\\n- Velvet upholstery\\n- Assembly on site","de-DE":"- Dreisitzer\\n- Samtbezug\\n- Selbstmontage"}",
           },
           {
-            "name": "color",
-            "value": "{"en-US":"Medium Sea Green:#3CB371","en-GB":"Medium Sea Green:#3CB371","de-DE":"Mittel meer grün:#3CB371"}",
+            "name": "search-color",
+            "value": "["green"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513"}",
+            "name": "search-finish",
+            "value": "["brown"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Medium Sea Green","de-DE":"Mittel meer grün","en-US":"Medium Sea Green"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#3CB371"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

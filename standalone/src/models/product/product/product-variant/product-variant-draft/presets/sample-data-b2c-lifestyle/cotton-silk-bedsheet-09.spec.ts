@@ -27,18 +27,28 @@ describe(`with cottonSilkBedsheet09 preset`, () => {
             },
           },
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell grau:#D3D3D3",
-              "en-GB": "Light Grey:#D3D3D3",
-              "en-US": "Light Gray:#D3D3D3",
-            },
-          },
-          {
             "name": "size",
             "value": {
               "en-GB": "King",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "gray",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell grau",
+              "en-GB": "Light Grey",
+              "en-US": "Light Gray",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#D3D3D3",
           },
         ],
         "images": [
@@ -119,12 +129,20 @@ describe(`with cottonSilkBedsheet09 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","en-US":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","de-DE":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3","en-US":"Light Gray:#D3D3D3"}",
-          },
-          {
             "name": "size",
             "value": "{"en-GB":"King"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["gray"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D3D3D3"",
           },
         ],
         "images": [

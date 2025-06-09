@@ -42,16 +42,30 @@ const largeCeramicPlate01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 3000, h: 2700 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Light Olive:#BAB86C',
-        'en-GB': 'Light Olive:#BAB86C',
-        'de-DE': 'Helles Oliv:#BAB86C',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
         'en-GB':
           '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe\n- Microwave safe',
         'de-DE': '- Ceramic\n- Sold as 1 piece\n- Dishwasher safe',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Green',
+            'en-GB': 'Green',
+            'de-DE': 'Grün',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Light Olive',
+        'de-DE': 'Helles Oliv',
+        'en-US': 'Light Olive',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#BAB86C',
+        'en-GB': '#BAB86C',
+        'de-DE': '#BAB86C',
       }),
     ]);
 

@@ -55,12 +55,22 @@ describe(`with modernCeramicPlate preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "white",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#FFFFFF",
             },
           ],
           "images": [
@@ -218,8 +228,16 @@ describe(`with modernCeramicPlate preset`, () => {
               "value": "{"en-GB":"- Includes 1 plate","de-DE":"- Enthält 1 Teller","en-US":"- Includes 1 plate"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF","en-US":"White:#FFFFFF"}",
+              "name": "search-color",
+              "value": "["white"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#FFFFFF"",
             },
           ],
           "images": [

@@ -13,22 +13,6 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Weiß:#FFFFFF",
-              "en-GB": "White:#FFFFFF",
-              "en-US": "White:#FFFFFF",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Gold:#FFD700",
-              "en-GB": "Gold:#FFD700",
-              "en-US": "Gold:#FFD700",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Length: 5 feet
@@ -50,6 +34,42 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
       - Gold finish on legs
       - Preassembled",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "white",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "gold",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Weiß",
+              "en-GB": "White",
+              "en-US": "White",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Gold",
+              "en-GB": "Gold",
+              "en-US": "Gold",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#FFFFFF",
+          },
+          {
+            "name": "finish-code",
+            "value": "#FFD700",
           },
         ],
         "images": [
@@ -150,16 +170,32 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"White:#FFFFFF","en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Gold:#FFD700","en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled","en-GB":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled","de-DE":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["white"]",
+          },
+          {
+            "name": "search-finish",
+            "value": "["gold"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#FFFFFF"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#FFD700"",
           },
         ],
         "images": [

@@ -27,12 +27,22 @@ describe(`with cubeJuteBasket01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -132,8 +142,16 @@ describe(`with cubeJuteBasket01 preset`, () => {
             "value": "{"en-GB":"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft","de-DE":"- Jute\\n- Vormontiert\\n- 1 Fuß x 1 Fuß x 1 Fuß","en-US":"- Jute\\n- Preassembled\\n- 1ft x 1ft x 1ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-color",
+            "value": "["yellow"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

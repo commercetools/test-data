@@ -47,6 +47,24 @@ describe(`with indoorJutePlanter preset`, () => {
                 "en-GB": "Large",
               },
             },
+            {
+              "name": "search-color",
+              "value": [
+                "brown",
+              ],
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": "#D2B48C",
+            },
           ],
           "images": [
             {
@@ -159,6 +177,24 @@ describe(`with indoorJutePlanter preset`, () => {
                 "value": {
                   "en-GB": "Small",
                 },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  "brown",
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Bräunen",
+                  "en-GB": "Tan",
+                  "en-US": "Tan",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": "#D2B48C",
               },
             ],
             "images": [
@@ -275,6 +311,18 @@ describe(`with indoorJutePlanter preset`, () => {
             {
               "name": "size",
               "value": "{"en-GB":"Large"}",
+            },
+            {
+              "name": "search-color",
+              "value": "["brown"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#D2B48C"",
             },
           ],
           "images": [
@@ -400,6 +448,18 @@ describe(`with indoorJutePlanter preset`, () => {
               {
                 "name": "size",
                 "value": "{"en-GB":"Small"}",
+              },
+              {
+                "name": "search-color",
+                "value": "["brown"]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+              },
+              {
+                "name": "color-code",
+                "value": ""#D2B48C"",
               },
             ],
             "images": [

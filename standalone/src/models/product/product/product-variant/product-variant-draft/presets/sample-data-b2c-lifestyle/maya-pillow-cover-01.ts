@@ -42,10 +42,24 @@ const mayaPillowCover01 = (): TBuilder<TProductVariantDraft> =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Does not include pillow',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Plum:#DDA0DD',
-        'de-DE': 'Pflaume:#DDA0DD',
-        'en-US': 'Plum:#DDA0DD',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Purple',
+            'en-GB': 'Purple',
+            'de-DE': 'Violett',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Plum',
+        'de-DE': 'Pflaume',
+        'en-US': 'Plum',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#DDA0DD',
+        'en-GB': '#DDA0DD',
+        'de-DE': '#DDA0DD',
       }),
     ]);
 

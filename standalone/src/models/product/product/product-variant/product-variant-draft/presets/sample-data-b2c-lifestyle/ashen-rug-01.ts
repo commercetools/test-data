@@ -47,10 +47,24 @@ const ashenRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 5 Fuß x 7 Fuß\n- Nur chemische Reinigung',
         'en-US': '- 5ft x 7ft\n- Dry-clean only',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Gainsboro:#dcdcdc',
-        'de-DE': 'Gainsboro:#dcdcdc',
-        'en-US': 'Gainsboro:#dcdcdc',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Gray',
+            'en-GB': 'Grey',
+            'de-DE': 'Grau',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Gainsboro',
+        'de-DE': 'Gainsboro',
+        'en-US': 'Gainsboro',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#dcdcdc',
+        'en-GB': '#dcdcdc',
+        'de-DE': '#dcdcdc',
       }),
     ]);
 

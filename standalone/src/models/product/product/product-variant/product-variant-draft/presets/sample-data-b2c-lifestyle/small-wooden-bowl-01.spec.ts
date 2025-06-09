@@ -18,12 +18,22 @@ describe(`with smallWoodenBowl01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "brown",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -128,8 +138,16 @@ describe(`with smallWoodenBowl01 preset`, () => {
             "value": "{"en-GB":"- Includes 1 bowl","en-US":"- Includes 1 bowl","de-DE":"- Enthält 1 Schüssel"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513","en-US":"Saddle Brown:#8b4513"}",
+            "name": "search-color",
+            "value": "["brown"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

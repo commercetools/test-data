@@ -46,12 +46,22 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "purple",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Violett:#800080",
-                "en-GB": "Purple:#800080",
-                "en-US": "Purple:#800080",
+                "de-DE": "Violett",
+                "en-GB": "Purple",
+                "en-US": "Purple",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#800080",
             },
           ],
           "images": [
@@ -217,8 +227,16 @@ describe(`with purpleMinimalistAbstractPainting preset`, () => {
               "value": "{"en-GB":"- Acrylic on canvas\\n- 2ft by 2ft","de-DE":"- Acryl auf Leinwand\\n- 2 Fuß mal 2 Fuß","en-US":"- Acrylic on canvas\\n- 2ft by 2ft"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Purple:#800080","de-DE":"Violett:#800080","en-US":"Purple:#800080"}",
+              "name": "search-color",
+              "value": "["purple"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Purple","de-DE":"Violett","en-US":"Purple"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#800080"",
             },
           ],
           "images": [

@@ -20,12 +20,22 @@ describe(`with naturaRug01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Beige:#F5F5DC",
-              "en-GB": "Beige:#F5F5DC",
-              "en-US": "Beige:#F5F5DC",
+              "de-DE": "Beige",
+              "en-GB": "Beige",
+              "en-US": "Beige",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#F5F5DC",
           },
         ],
         "images": [
@@ -125,8 +135,16 @@ describe(`with naturaRug01 preset`, () => {
             "value": "{"en-GB":"- 6ft x 6ft","de-DE":"- 6 Fuß x 6 Fuß","en-US":"- 6ft x 6ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
+            "name": "search-color",
+            "value": "["yellow"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#F5F5DC"",
           },
         ],
         "images": [

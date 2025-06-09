@@ -41,10 +41,24 @@ const ivoryPlate01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Enthält 1 Teller',
         'en-US': '- Includes 1 plate',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Ivory:#FFFFF0',
-        'de-DE': 'Elfenbein:#FFFFF0',
-        'en-US': 'Ivory:#FFFFF0',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Ivory',
+        'de-DE': 'Elfenbein',
+        'en-US': 'Ivory',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFFFF0',
+        'en-GB': '#FFFFF0',
+        'de-DE': '#FFFFF0',
       }),
     ]);
 

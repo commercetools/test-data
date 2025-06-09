@@ -42,20 +42,40 @@ describe(`with leahArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "gray",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "yellow",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Grau:#808080",
-                "en-GB": "Grey:#808080",
-                "en-US": "Gray:#808080",
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#808080",
+            },
+            {
+              "name": "finish-code",
+              "value": "#D2B48C",
             },
           ],
           "images": [
@@ -201,12 +221,28 @@ describe(`with leahArmchair preset`, () => {
               "value": "{"en-GB":"- Dry clean only","de-DE":"- Nur chemische Reinigung","en-US":"- Dry clean only"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Grey:#808080","de-DE":"Grau:#808080","en-US":"Gray:#808080"}",
+              "name": "search-color",
+              "value": "["gray"]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+              "name": "search-finish",
+              "value": "["yellow"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Grey","de-DE":"Grau","en-US":"Gray"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#808080"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#D2B48C"",
             },
           ],
           "images": [

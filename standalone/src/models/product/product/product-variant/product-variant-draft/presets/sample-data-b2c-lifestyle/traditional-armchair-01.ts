@@ -53,10 +53,24 @@ const traditionalArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Cotton upholstery',
         'de-DE': '- Baumwollpolsterung',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Corn Silk:#FFF8DC',
-        'de-DE': 'Mais seide:#FFF8DC',
-        'en-US': 'Corn Silk:#FFF8DC',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Corn Silk',
+        'de-DE': 'Mais seide',
+        'en-US': 'Corn Silk',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFF8DC',
+        'en-GB': '#FFF8DC',
+        'de-DE': '#FFF8DC',
       }),
     ]);
 

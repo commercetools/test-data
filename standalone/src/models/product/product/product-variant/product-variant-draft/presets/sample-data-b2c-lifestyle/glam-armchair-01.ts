@@ -41,15 +41,43 @@ const glamArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung\n- Kissen inklusive',
         'en-US': '- Dry clean only\n- Pillow included',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Golden Rod:#DAA520',
-        'de-DE': 'Goldene Rute:#DAA520',
-        'en-US': 'Golden Rod:#DAA520',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gold',
+            'en-GB': 'Gold',
+            'de-DE': 'Gold',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Golden Rod',
+        'de-DE': 'Goldene Rute',
+        'en-US': 'Golden Rod',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Gold:#FFD700',
-        'de-DE': 'Gold:#FFD700',
-        'en-US': 'Gold:#FFD700',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gold',
+        'de-DE': 'Gold',
+        'en-US': 'Gold',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#DAA520',
+        'en-GB': '#DAA520',
+        'de-DE': '#DAA520',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#FFD700',
+        'en-GB': '#FFD700',
+        'de-DE': '#FFD700',
       }),
     ]);
 

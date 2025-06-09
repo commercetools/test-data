@@ -49,12 +49,22 @@ describe(`with ellaSquarePlate preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "white",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#FFFFFF",
             },
           ],
           "images": [

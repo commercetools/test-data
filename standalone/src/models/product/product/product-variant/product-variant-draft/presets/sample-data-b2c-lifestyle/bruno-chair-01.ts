@@ -41,15 +41,43 @@ const brunoChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Royal Blue:#4169E1',
-        'de-DE': 'Königs blau:#4169E1',
-        'en-US': 'Royal Blue:#4169E1',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Blue',
+            'en-GB': 'Blue',
+            'de-DE': 'Blau',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Royal Blue',
+        'de-DE': 'Königs blau',
+        'en-US': 'Royal Blue',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
-        'en-US': 'Saddle Brown:#8b4513',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#4169E1',
+        'en-GB': '#4169E1',
+        'de-DE': '#4169E1',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#8b4513',
+        'en-GB': '#8b4513',
+        'de-DE': '#8b4513',
       }),
     ]);
 

@@ -44,12 +44,22 @@ describe(`with cocktailShakerSet preset`, () => {
               },
             },
             {
-              "name": "finish",
+              "name": "search-finish",
+              "value": [
+                "gold",
+              ],
+            },
+            {
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
               },
+            },
+            {
+              "name": "finish-code",
+              "value": "#FFD700",
             },
           ],
           "images": [

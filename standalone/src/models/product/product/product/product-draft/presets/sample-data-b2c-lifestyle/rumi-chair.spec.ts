@@ -42,20 +42,40 @@ describe(`with rumiChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "pink",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "gold",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Lavendel:#fff0f5",
-                "en-GB": "Lavender Blush:#fff0f5",
-                "en-US": "Lavender Blush:#fff0f5",
+                "de-DE": "Lavendel",
+                "en-GB": "Lavender Blush",
+                "en-US": "Lavender Blush",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#fff0f5",
+            },
+            {
+              "name": "finish-code",
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -200,12 +220,28 @@ describe(`with rumiChair preset`, () => {
               "value": "{"en-GB":"- Dry clean only","en-US":"- Dry clean only","de-DE":"- Nur chemische Reinigung"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Lavender Blush:#fff0f5","de-DE":"Lavendel:#fff0f5","en-US":"Lavender Blush:#fff0f5"}",
+              "name": "search-color",
+              "value": "["pink"]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Gold:#FFD700","en-US":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": "["gold"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Lavender Blush","de-DE":"Lavendel","en-US":"Lavender Blush"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#fff0f5"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

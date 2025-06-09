@@ -21,20 +21,40 @@ describe(`with entrywayCloset01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "brown",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Burlywood:#deb887",
-              "en-GB": "Burlywood:#deb887",
-              "en-US": "Burlywood:#deb887",
+              "de-DE": "Burlywood",
+              "en-GB": "Burlywood",
+              "en-US": "Burlywood",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
+          },
+          {
+            "name": "finish-code",
+            "value": "#deb887",
           },
         ],
         "images": [
@@ -131,12 +151,28 @@ describe(`with entrywayCloset01 preset`, () => {
             "value": "{"en-GB":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten","en-US":"- Assembly included in delivery"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-color",
+            "value": "["yellow"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Burlywood:#deb887","de-DE":"Burlywood:#deb887","en-US":"Burlywood:#deb887"}",
+            "name": "search-finish",
+            "value": "["brown"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Burlywood","de-DE":"Burlywood","en-US":"Burlywood"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#deb887"",
           },
         ],
         "images": [

@@ -41,20 +41,40 @@ describe(`with fawnArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "yellow",
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                "black",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#D2B48C",
+            },
+            {
+              "name": "finish-code",
+              "value": "#000000",
             },
           ],
           "images": [

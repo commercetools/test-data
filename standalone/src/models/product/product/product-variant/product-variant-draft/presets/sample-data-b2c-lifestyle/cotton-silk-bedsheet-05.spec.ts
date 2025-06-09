@@ -27,18 +27,28 @@ describe(`with cottonSilkBedsheet05 preset`, () => {
             },
           },
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell rosa:#FFB6C1",
-              "en-GB": "Light Pink:#FFB6C1",
-              "en-US": "Light Pink:#FFB6C1",
-            },
-          },
-          {
             "name": "size",
             "value": {
               "en-GB": "Queen",
             },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              "pink",
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell rosa",
+              "en-GB": "Light Pink",
+              "en-US": "Light Pink",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#FFB6C1",
           },
         ],
         "images": [
@@ -127,12 +137,20 @@ describe(`with cottonSilkBedsheet05 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","en-US":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","de-DE":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Pink:#FFB6C1","de-DE":"Hell rosa:#FFB6C1","en-US":"Light Pink:#FFB6C1"}",
-          },
-          {
             "name": "size",
             "value": "{"en-GB":"Queen"}",
+          },
+          {
+            "name": "search-color",
+            "value": "["pink"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Pink","de-DE":"Hell rosa","en-US":"Light Pink"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#FFB6C1"",
           },
         ],
         "images": [

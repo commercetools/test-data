@@ -20,20 +20,40 @@ describe(`with glamArmchair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              "yellow",
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              "gold",
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Goldene Rute:#DAA520",
-              "en-GB": "Golden Rod:#DAA520",
-              "en-US": "Golden Rod:#DAA520",
+              "de-DE": "Goldene Rute",
+              "en-GB": "Golden Rod",
+              "en-US": "Golden Rod",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Gold:#FFD700",
-              "en-GB": "Gold:#FFD700",
-              "en-US": "Gold:#FFD700",
+              "de-DE": "Gold",
+              "en-GB": "Gold",
+              "en-US": "Gold",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#DAA520",
+          },
+          {
+            "name": "finish-code",
+            "value": "#FFD700",
           },
         ],
         "images": [
@@ -114,12 +134,28 @@ describe(`with glamArmchair01 preset`, () => {
             "value": "{"en-GB":"- Dry clean only\\n- Pillow included","de-DE":"- Nur chemische Reinigung\\n- Kissen inklusive","en-US":"- Dry clean only\\n- Pillow included"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Golden Rod:#DAA520","de-DE":"Goldene Rute:#DAA520","en-US":"Golden Rod:#DAA520"}",
+            "name": "search-color",
+            "value": "["yellow"]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700","en-US":"Gold:#FFD700"}",
+            "name": "search-finish",
+            "value": "["gold"]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Golden Rod","de-DE":"Goldene Rute","en-US":"Golden Rod"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#DAA520"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#FFD700"",
           },
         ],
         "images": [

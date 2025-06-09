@@ -44,12 +44,22 @@ describe(`with ecruDoubleBed preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "gray",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Gainsboro:#dcdcdc",
-                "en-GB": "Gainsboro:#dcdcdc",
-                "en-US": "Gainsboro:#dcdcdc",
+                "de-DE": "Gainsboro",
+                "en-GB": "Gainsboro",
+                "en-US": "Gainsboro",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#dcdcdc",
             },
           ],
           "images": [

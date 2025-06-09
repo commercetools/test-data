@@ -46,12 +46,22 @@ describe(`with greenServingPlate preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                "green",
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Grün:#008000",
-                "en-GB": "Green:#008000",
-                "en-US": "Green:#008000",
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#008000",
             },
           ],
           "images": [
@@ -209,8 +219,16 @@ describe(`with greenServingPlate preset`, () => {
               "value": "{"en-GB":"- Includes 1 plate","de-DE":"- Enthält 1 Teller","en-US":"- Includes 1 plate"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Green:#008000","de-DE":"Grün:#008000","en-US":"Green:#008000"}",
+              "name": "search-color",
+              "value": "["green"]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Green","de-DE":"Grün","en-US":"Green"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#008000"",
             },
           ],
           "images": [
