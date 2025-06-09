@@ -3,7 +3,7 @@ import camelCase from 'lodash/camelCase';
 import sampleSize from 'lodash/sampleSize';
 import upperFirst from 'lodash/upperFirst';
 import type { TBuilder } from '@/core';
-import { supportedViewOAuthScopes } from '../../constants';
+import { supportedViewOAuthScopes } from '../constants';
 import { CustomApplicationPermissionGraphql } from '../index';
 import type { TCustomApplicationPermissionGraphql } from '../types';
 

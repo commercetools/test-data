@@ -1,3 +1,4 @@
+import { CustomApplicationStatus } from './constants';
 import { CustomApplicationGraphql } from './index';
 
 describe('CustomApplicationGraphql', () => {
@@ -10,14 +11,16 @@ describe('CustomApplicationGraphql', () => {
         id: expect.any(String),
         createdAt: expect.any(String),
         updatedAt: expect.any(String),
-        url: expect.any(String),
+        status: expect.stringFromArray(Object.values(CustomApplicationStatus)),
         name: expect.any(String),
+        description: expect.any(String),
+        url: expect.any(String),
         entryPointUriPath: expect.any(String),
         icon: expect.any(String),
-        permissions: expect.any(Array),
-        mainMenuLink: expect.any(Object),
-        submenuLinks: expect.any(Array),
-        deployments: expect.any(Array),
+        permissions: [],
+        mainMenuLink: null,
+        submenuLinks: [],
+        deployments: [],
       })
     );
   });
