@@ -1,15 +1,15 @@
 import { GraphqlModelBuilder } from './builders';
 import * as presets from './presets';
 
-export const ContactInformationGraphql = {
+export const OrganizationExtensionGraphql = {
   random: GraphqlModelBuilder,
   presets: presets.graphqlPresets,
 };
 
 /**
- * @deprecated Use `ContactInformationGraphql` exported model instead of `ContactInformation`.
+ * @deprecated Use `OrganizationExtensionGraphql` exported model instead of `OrganizationExtension`.
  */
-export const ContactInformation = {
+export const OrganizationExtension = {
   random: GraphqlModelBuilder,
   presets: presets.compatPresets,
 };

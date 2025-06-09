@@ -1,2 +1,2 @@
-export const graphqlPreset = null;
-export const compatPreset = null;
+export const graphqlPresets = null;
+export const compatPresets = null;

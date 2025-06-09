@@ -1,6 +1,8 @@
-export * as ContactInformation from './contact-information';
-export * as OidcSSOConfig from './oidc-sso-config';
+export * from './contact-information/types';
+export * from './oidc-sso-config/types';
+export * from './organization-extension/types';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export * from './contact-information';
+export * from './oidc-sso-config';
+export * from './oidc-sso-config/oidc-sso-config-draft';
+export * from './organization-extension';
