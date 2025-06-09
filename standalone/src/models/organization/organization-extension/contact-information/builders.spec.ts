@@ -11,7 +11,7 @@ describe('ContactInformationGraphql', () => {
         createdAt: expect.any(String),
         updatedAt: expect.any(String),
         email: expect.any(String),
-        verifiedEmail: expect.any(String),
+        verifiedEmail: null,
       })
     );
   });

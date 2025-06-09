@@ -12,12 +12,12 @@ describe('OidcSsoConfigGraphql', () => {
         updatedAt: expect.any(String),
         authorityUrl: expect.any(String),
         clientId: expect.any(String),
-        clientSecret: expect.any(String),
+        clientSecret: null,
         isActive: expect.any(Boolean),
-        logoutUrl: expect.any(String),
-        sessionTokenExpTimeSeconds: expect.any(Number),
-        teamIdForNewUsers: expect.any(String),
-        hasClientSecret: expect.any(Boolean),
+        logoutUrl: null,
+        sessionTokenExpTimeSeconds: null,
+        teamIdForNewUsers: null,
+        hasClientSecret: false,
       })
     );
   });
