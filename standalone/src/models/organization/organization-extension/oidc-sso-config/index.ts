@@ -1,5 +1,15 @@
-export * as OidcSSOConfigDraft from './oidc-sso-config-draft';
+import { GraphqlModelBuilder } from './builders';
+import * as presets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export * from './types';
+export const OidcSsoConfigGraphql = {
+  random: GraphqlModelBuilder,
+  presets: presets.graphqlPresets,
+};
+
+/**
+ * @deprecated Use `OidcSsoConfigGraphql` exported model instead of `OidcSsoConfig`.
+ */
+export const OidcSsoConfig = {
+  random: GraphqlModelBuilder,
+  presets: presets.compatPresets,
+};

@@ -1,10 +1,10 @@
-import { fake, Generator } from '@/core';
+import { fake, TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
-import type { TOidcSsoConfig } from './types';
+import type { TOidcSsoConfigGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
-const generator = Generator<TOidcSsoConfig>({
+export const graphqlFieldsConfig: TModelFieldsConfig<TOidcSsoConfigGraphql> = {
   fields: {
     id: fake((f) => f.string.uuid()),
     createdAt: fake(getOlderDate),
@@ -19,7 +19,6 @@ const generator = Generator<TOidcSsoConfig>({
     ),
     teamIdForNewUsers: fake((f) => f.string.uuid()),
     hasClientSecret: fake((f) => f.datatype.boolean()),
+    __typename: 'OidcSsoConfig',
   },
-});
-
-export default generator;
+};
