@@ -13,7 +13,7 @@ describe('PimSearchListView Builder', () => {
         projectKey: expect.any(String),
         nameAllLocales: expect.arrayContaining([
           expect.objectContaining({
-            __typename: 'LocalizedString',
+            __typename: 'LocalizedField',
           }),
         ]),
         isActive: true,
