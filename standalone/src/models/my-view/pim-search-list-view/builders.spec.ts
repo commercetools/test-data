@@ -7,13 +7,15 @@ describe('PimSearchListView Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         id: expect.any(String),
-        createdAt: expect.any(Date),
-        updatedAt: expect.any(Date),
+        createdAt: expect.any(String),
+        updatedAt: expect.any(String),
         userId: expect.any(String),
         projectKey: expect.any(String),
-        nameAllLocales: expect.objectContaining({
-          __typename: 'LocalizedString',
-        }),
+        nameAllLocales: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'LocalizedString',
+          }),
+        ]),
         isActive: true,
         search: null,
         table: null,
