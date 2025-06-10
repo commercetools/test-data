@@ -1,8 +1,9 @@
 import { GraphqlModelBuilder } from './builders';
+import * as constants from './constants';
 import * as StandardSchedulePresets from './presets';
-export * from './types';
 
 export const StandardScheduleGraphql = {
+  constants,
   random: GraphqlModelBuilder,
   presets: StandardSchedulePresets.graphqlPresets,
 };
