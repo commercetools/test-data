@@ -8,7 +8,7 @@ describe('MyViewSort Builder', () => {
     expect(graphqlModel).toEqual(
       expect.objectContaining({
         key: expect.any(String),
-        order: SortOrder.ASCENDING,
+        order: SortOrder.Asc,
         __typename: 'Sort',
       })
     );
