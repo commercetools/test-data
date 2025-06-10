@@ -1,5 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { createRelatedDates, slugify } from '@/utils';
+import { CustomApplicationMenuLinkGraphql } from '../custom-application-menu-link';
 import { CustomApplicationStatus } from './constants';
 import type { TCustomApplicationGraphql } from './types';
 
@@ -19,7 +20,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomApplicationGraphql> 
       entryPointUriPath: fake((f) => slugify(f.lorem.word())),
       icon: '<svg><path fill="#000000" /></svg>',
       permissions: [],
-      mainMenuLink: null,
+      mainMenuLink: fake(() => CustomApplicationMenuLinkGraphql.random()),
       submenuLinks: [],
       deployments: [],
     },

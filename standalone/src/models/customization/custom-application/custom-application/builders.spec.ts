@@ -18,7 +18,9 @@ describe('CustomApplicationGraphql', () => {
         entryPointUriPath: expect.any(String),
         icon: expect.any(String),
         permissions: [],
-        mainMenuLink: null,
+        mainMenuLink: expect.objectContaining({
+          __typename: 'CustomApplicationMenuLink',
+        }),
         submenuLinks: [],
         deployments: [],
       })
