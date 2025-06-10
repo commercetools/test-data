@@ -5,7 +5,7 @@ import type { TMyViewSortGraphql } from './types';
 export const graphqlFieldsConfig: TModelFieldsConfig<TMyViewSortGraphql> = {
   fields: {
     key: fake((f) => f.lorem.slug()),
-    order: fake(() => SortOrder.ASCENDING),
+    order: fake(() => SortOrder.Asc),
     __typename: 'Sort',
   },
 };

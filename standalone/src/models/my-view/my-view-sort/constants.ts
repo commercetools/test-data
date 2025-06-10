@@ -1,4 +1,3 @@
-export const SortOrder = {
-  ASCENDING: 'Asc',
-  DESCENDING: 'Desc',
-} as const;
+import { TMcSettingsSortOrder } from '@/graphql-types';
+
+export const SortOrder = TMcSettingsSortOrder;
