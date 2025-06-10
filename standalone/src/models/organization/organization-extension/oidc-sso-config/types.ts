@@ -1,9 +1,12 @@
 import { TBuilder } from '@/core';
-import type { TMcSettingsOidcSsoConfig } from '@/graphql-types';
-
-export type TOidcSsoConfig = Omit<TMcSettingsOidcSsoConfig, '__typename'>;
+import type {
+  TMcSettingsOidcSsoConfig,
+  TMcSettingsOidcSsoConfigDataInput,
+} from '@/graphql-types';
 
 export type TOidcSsoConfigGraphql = TMcSettingsOidcSsoConfig;
+export type TOidcSsoConfigDraftGraphql = TMcSettingsOidcSsoConfigDataInput;
 
-export type TOidcSsoConfigBuilder = TBuilder<TOidcSsoConfig>;
-export type TCreateOidcSsoConfigBuilder = () => TOidcSsoConfigBuilder;
+export type TCreateOidcSsoConfigBuilder<
+  TModel extends TOidcSsoConfigGraphql | TOidcSsoConfigDraftGraphql,
+> = () => TBuilder<TModel>;

@@ -1,15 +1,15 @@
 import { GraphqlModelBuilder } from './builders';
 import * as presets from './presets';
 
-export const OidcSsoConfigGraphql = {
+export const OrganizationExtensionGraphql = {
   random: GraphqlModelBuilder,
   presets: presets.graphqlPresets,
 };
 
 /**
- * @deprecated Use `OidcSsoConfigGraphql` exported model instead of `OidcSsoConfig`.
+ * @deprecated Use `OrganizationExtensionGraphql` exported model instead of `OrganizationExtension`.
  */
-export const OidcSsoConfig = {
+export const OrganizationExtension = {
   random: GraphqlModelBuilder,
   presets: presets.compatPresets,
 };
