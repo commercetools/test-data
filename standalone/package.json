@@ -7,7 +7,11 @@
     "url": "https://github.com/commercetools/test-data.git",
     "directory": "presets/all-packages"
   },
-  "keywords": ["javascript", "typescript", "test-data"],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "test-data"
+  ],
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -38,6 +42,7 @@
     "filter-values",
     "graphql-types",
     "inventory-entry",
+    "my-view",
     "order",
     "organization",
     "organization-extension",
@@ -91,6 +96,7 @@
       "./graphql-types/index.ts",
       "./index.ts",
       "./inventory-entry.ts",
+      "./my-view.ts",
       "./order.ts",
       "./organization-extension.ts",
       "./organization.ts",
