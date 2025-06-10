@@ -7,6 +7,7 @@ export * from './product-data/types';
 export * from './product-data/category-order-hint/types';
 export * from './product-data/search-keyword/types';
 export * from './product-data/search-keywords/types';
+export * from './product-variant-availability/types';
 
 // Export models
 export * as Attribute from './attribute';
@@ -24,5 +25,7 @@ export * from './product-data';
 
 export * from './product-variant';
 export * from './product-variant/product-variant-draft';
+
+export * from './product-variant-availability';
 
 export * from './selection-of-product';
