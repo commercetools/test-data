@@ -1,5 +1,23 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.3.0
+
+### Minor Changes
+
+- [#854](https://github.com/commercetools/test-data/pull/854) [`e4f2733`](https://github.com/commercetools/test-data/commit/e4f273347ad5bd68d8aea420e7244ec6d7114037) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - Migrated test-data models related to Organization extensions to the new implementation patterns.
+  Included models:
+
+  - `ContactInformation`
+  - `OidcSsoConfig`
+  - `OrganizationExtension`
+
+  The main change is that the default `OrganizationExtension` model was populating all its fields and that's not what consumers were expecting so we changed it to populate only the required ones.
+  On top of that, there's a new preset available (`OrganizationExtension.presets.withAllFields`) that can be use to generate a fully populated model object.
+
+### Patch Changes
+
+- [#856](https://github.com/commercetools/test-data/pull/856) [`ba38257`](https://github.com/commercetools/test-data/commit/ba38257f96fe293a002b2b97831b6ac9c4a8c65a) Thanks [@ragafus](https://github.com/ragafus)! - Export CartDiscountTotalPriceTarget and CartDiscountMultiBuyCustomLineItemsTarget models
+
 ## 11.2.1
 
 ### Patch Changes
