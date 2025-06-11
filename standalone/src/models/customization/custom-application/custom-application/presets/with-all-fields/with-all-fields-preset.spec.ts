@@ -1,9 +1,9 @@
-import { CustomApplicationStatus } from './constants';
-import { CustomApplicationGraphql } from './index';
+import { CustomApplicationStatus } from '../../constants';
+import { graphqlPreset } from './with-all-fields-preset';
 
 describe('CustomApplicationGraphql', () => {
   it('should build a graphql model', () => {
-    const graphqlModel = CustomApplicationGraphql.random().build();
+    const graphqlModel = graphqlPreset().build();
 
     expect(graphqlModel).toEqual(
       expect.objectContaining({
@@ -17,12 +17,24 @@ describe('CustomApplicationGraphql', () => {
         url: expect.any(String),
         entryPointUriPath: expect.any(String),
         icon: expect.any(String),
-        permissions: [],
+        permissions: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'CustomApplicationPermission',
+          }),
+        ]),
         mainMenuLink: expect.objectContaining({
           __typename: 'CustomApplicationMenuLink',
         }),
-        submenuLinks: [],
-        deployments: [],
+        submenuLinks: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'CustomApplicationSubmenuLink',
+          }),
+        ]),
+        deployments: expect.arrayContaining([
+          expect.objectContaining({
+            __typename: 'CustomApplicationDeploymentPreview',
+          }),
+        ]),
       })
     );
   });

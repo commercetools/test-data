@@ -1,6 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
 import { createRelatedDates } from '@/utils';
-import { supportedViewOAuthScopes } from '../constants';
+import { supportedViewOAuthScopes } from './constants';
 import type { TCustomApplicationInstallationPermissionGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();

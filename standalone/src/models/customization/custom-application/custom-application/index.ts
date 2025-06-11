@@ -1,5 +1,5 @@
-import * as constants from '../constants';
 import { GraphqlModelBuilder } from './builders';
+import * as constants from './constants';
 import * as CustomApplicationPresets from './presets';
 
 export const CustomApplicationGraphql = {
