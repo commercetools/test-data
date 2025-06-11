@@ -73,6 +73,7 @@ When developing with multiple repositories, you may need to link packages locall
      ```bash
      cd path-to-test-data-repo
      pnpm install
+     pnpm build
      ```
 
 2. **Update the Application's `package.json`:**
@@ -100,7 +101,7 @@ When developing with multiple repositories, you may need to link packages locall
    - Ensure that the package is correctly linked by inspecting the `node_modules` directory in your application repository. The package should point to your local build instead of fetching from a remote registry.
 
 5. **Development Workflow:**
-   - During development, make changes in the test-data repository, rebuild the package using `pnpm install` in test-data repository, and re-run your application to see the changes reflect immediately.
+   - During development, make changes in the test-data repository, rebuild the package using `pnpm build` in test-data repository, and re-run your application to see the changes reflect immediately.
    - Remember to revert the `package.json` changes before committing or pushing to a remote repository unless those changes are intended to be shared.
 
 ## Important Notes
