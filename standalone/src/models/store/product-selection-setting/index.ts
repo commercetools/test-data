@@ -5,8 +5,6 @@ import {
 } from './builders';
 import * as presets from './presets';
 
-export * from './types';
-
 export const ProductSelectionSettingRest = {
   random: RestModelBuilder,
   presets: presets.restPresets,
