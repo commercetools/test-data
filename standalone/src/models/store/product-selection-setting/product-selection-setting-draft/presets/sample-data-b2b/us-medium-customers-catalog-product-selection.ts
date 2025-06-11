@@ -13,7 +13,7 @@ import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
-} from '../../builder';
+} from '../../builders';
 
 const usMediumCustomersCatalogKey =
   ProductSelectionDraftRest.presets.sampleDataB2B

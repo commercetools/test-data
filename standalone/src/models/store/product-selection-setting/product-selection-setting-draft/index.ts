@@ -2,7 +2,7 @@ import {
   GraphqlModelBuilder,
   RestModelBuilder,
   CompatModelBuilder,
-} from './builder';
+} from './builders';
 import * as modelPresets from './presets';
 
 export const ProductSelectionSettingDraftRest = {

@@ -4,28 +4,28 @@ import {
   TModelFieldsConfig,
 } from '@/core';
 import {
-  TCreateProductSelectionSettingDraftBuilder,
+  TCreateProductSelectionSettingBuilder,
   TProductSelectionSettingDraftGraphql,
   TProductSelectionSettingDraftRest,
 } from '../types';
 import { graphqlFieldsConfig, restFieldsConfig } from './fields-config';
 
-export const RestModelBuilder: TCreateProductSelectionSettingDraftBuilder<
+export const RestModelBuilder: TCreateProductSelectionSettingBuilder<
   TProductSelectionSettingDraftRest
 > = () =>
   createSpecializedBuilder({
     modelFieldsConfig: restFieldsConfig,
     type: 'rest',
-    name: 'product-selection-setting-draft',
+    name: 'ProductSelectionSettingDraftRestBuilder',
   });
 
-export const GraphqlModelBuilder: TCreateProductSelectionSettingDraftBuilder<
+export const GraphqlModelBuilder: TCreateProductSelectionSettingBuilder<
   TProductSelectionSettingDraftGraphql
 > = () =>
   createSpecializedBuilder({
     modelFieldsConfig: graphqlFieldsConfig,
     type: 'graphql',
-    name: 'product-selection-setting-draft',
+    name: 'ProductSelectionSettingDraftGraphqlBuilder',
   });
 
 export const CompatModelBuilder = <

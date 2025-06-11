@@ -9,7 +9,7 @@ import {
   RestModelBuilder,
   GraphqlModelBuilder,
   CompatModelBuilder,
-} from '../../builder';
+} from '../../builders';
 
 const defaultProductSelectionKey =
   ProductSelectionDraftRest.presets.sampleDataB2B
