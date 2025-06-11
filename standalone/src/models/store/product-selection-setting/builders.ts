@@ -16,7 +16,7 @@ export const RestModelBuilder: TCreateProductSelectionSettingBuilder<
   createSpecializedBuilder({
     modelFieldsConfig: restFieldsConfig,
     type: 'rest',
-    name: 'product-selection-setting',
+    name: 'ProductSelectionSettingRestBuilder',
   });
 
 export const GraphqlModelBuilder: TCreateProductSelectionSettingBuilder<
@@ -25,7 +25,7 @@ export const GraphqlModelBuilder: TCreateProductSelectionSettingBuilder<
   createSpecializedBuilder({
     modelFieldsConfig: graphqlFieldsConfig,
     type: 'graphql',
-    name: 'product-selection-setting',
+    name: 'ProductSelectionSettingGraphqlBuilder',
   });
 
 export const CompatModelBuilder = <
