@@ -18,9 +18,9 @@ export type TStore = TStoreRest;
 export type TStoreDraft = TStoreDraftRest;
 
 export type TCreateStoreBuilder<
-  TStoreModel extends TStoreRest | TStoreGraphql,
+  TStoreModel extends
+    | TStoreRest
+    | TStoreGraphql
+    | TStoreDraftRest
+    | TStoreDraftGraphql,
 > = () => TBuilder<TStoreModel>;
-
-export type TCreateStoreDraftBuilder<
-  TStoreDraftModel extends TStoreDraftRest | TStoreDraftGraphql,
-> = () => TBuilder<TStoreDraftModel>;
