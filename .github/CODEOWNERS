@@ -61,3 +61,4 @@
 # Sample data preset directories
 **/presets/sample-data-b2c-lifestyle/ @commercetools/craft-team-fe
 **/presets/sample-data-b2b/ @commercetools/craft-team-fe
+**/presets/sample-data-fashion/ @commercetools/craft-team-fe
