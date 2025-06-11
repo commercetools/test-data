@@ -6,6 +6,8 @@ import {
   TProductSelectionSettingGraphql,
 } from './types';
 
+// https://docs.commercetools.com/api/projects/stores#productselectionsetting
+
 export const restFieldsConfig: TModelFieldsConfig<TProductSelectionSettingRest> =
   {
     fields: {
