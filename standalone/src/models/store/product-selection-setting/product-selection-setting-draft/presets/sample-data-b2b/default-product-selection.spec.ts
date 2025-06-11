@@ -10,7 +10,7 @@ import {
 } from './default-product-selection';
 
 describe('with defaultProductSelection present', () => {
-  it('should return a defaultProductSelection preset for rest', () => {
+  it('should return a defaultProductSelection REST preset object', () => {
     const defaultProductSelectionPreset =
       restPreset().build<TProductSelectionSettingDraftRest>();
 
@@ -25,7 +25,7 @@ describe('with defaultProductSelection present', () => {
     `);
   });
 
-  it('should return a defaultProductSelection preset', () => {
+  it('should return a defaultProductSelection REST preset object from compat preset', () => {
     const defaultProductSelectionPreset =
       compatPreset().build<TProductSelectionSettingDraft>();
 
@@ -40,7 +40,7 @@ describe('with defaultProductSelection present', () => {
     `);
   });
 
-  it('should return a defaultProductSelection preset for graphql', () => {
+  it('should return a defaultProductSelection GraphQL preset object', () => {
     const defaultProductSelectionPresetGraphql =
       graphqlPreset().buildRest<TProductSelectionSettingDraftGraphql>();
 
@@ -55,7 +55,7 @@ describe('with defaultProductSelection present', () => {
     `);
   });
 
-  it('should return a defaultProductSelection compatibility preset when built for graphql', () => {
+  it('should return a defaultProductSelection GraphQL preset object from compat preset', () => {
     const defaultProductSelectionPresetGraphql =
       compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 

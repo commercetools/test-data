@@ -10,7 +10,7 @@ import {
 } from './us-medium-customers-catalog-product-selection';
 
 describe('with usMediumCustomersCatalogProductSelection present', () => {
-  it('should return a usMediumCustomersCatalogProductSelection preset for rest', () => {
+  it('should return a usMediumCustomersCatalogProductSelection REST preset object', () => {
     const usMediumCustomersCatalogProductSelectionPresetRest =
       restPreset().build<TProductSelectionSettingDraftRest>();
 
@@ -26,7 +26,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       `);
   });
 
-  it('should return a usMediumCustomersCatalogProductSelection preset for graphql', () => {
+  it('should return a usMediumCustomersCatalogProductSelection GraphQL preset object', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
       graphqlPreset().build<TProductSelectionSettingDraftGraphql>();
 
@@ -41,7 +41,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       }
       `);
   });
-  it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for rest', () => {
+  it('should return a usMediumCustomersCatalogProductSelection REST preset object from compat preset', () => {
     const usMediumCustomersCatalogProductSelectionPreset =
       compatPreset().buildRest<TProductSelectionSettingDraft>();
 
@@ -56,7 +56,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       }
     `);
   });
-  it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for graphql', () => {
+  it('should return a usMediumCustomersCatalogProductSelection GraphQL preset object from compat preset', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
       compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 

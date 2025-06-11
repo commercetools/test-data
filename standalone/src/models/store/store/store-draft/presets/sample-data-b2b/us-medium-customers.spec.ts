@@ -2,7 +2,7 @@ import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { restPreset, graphqlPreset, compatPreset } from './us-medium-customers';
 
 describe(`with usMediumCustomers preset`, () => {
-  it(`should return a usMediumCustomers preset rest`, () => {
+  it('should return a usMediumCustomers REST preset object', () => {
     const usMediumCustomersPreset = restPreset().build<TStoreDraftRest>();
     expect(usMediumCustomersPreset).toMatchInlineSnapshot(`
       {
@@ -50,7 +50,7 @@ describe(`with usMediumCustomers preset`, () => {
     `);
   });
 
-  it(`should return a usMediumCustomers preset when built for graphql`, () => {
+  it('should return a usMediumCustomers GraphQL preset object', () => {
     const usMediumCustomersPresetGraphql =
       graphqlPreset().build<TStoreDraftGraphql>();
     expect(usMediumCustomersPresetGraphql).toMatchInlineSnapshot(`
@@ -125,7 +125,8 @@ describe(`with usMediumCustomers preset`, () => {
       }
     `);
   });
-  it(`should return a usMediumCustomers preset`, () => {
+
+  it('should return a usMediumCustomers REST preset object from compat preset', () => {
     const usMediumCustomersPreset = compatPreset().buildRest<TStoreDraftRest>();
     expect(usMediumCustomersPreset).toMatchInlineSnapshot(`
       {
@@ -173,7 +174,7 @@ describe(`with usMediumCustomers preset`, () => {
     `);
   });
 
-  it(`should return a usMediumCustomers preset when built for graphql legacy`, () => {
+  it('should return a usMediumCustomers GraphQL preset object from compat preset', () => {
     const usMediumCustomersPresetGraphql =
       compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(usMediumCustomersPresetGraphql).toMatchInlineSnapshot(`

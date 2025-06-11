@@ -2,7 +2,7 @@ import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { restPreset, graphqlPreset, compatPreset } from './us-large-customers';
 
 describe(`with usLargeCustomers preset`, () => {
-  it(`should return a usLargeCustomers preset rest`, () => {
+  it('should return a usLargeCustomers REST preset object', () => {
     const usLargeCustomersPreset = restPreset().build<TStoreDraftRest>();
 
     expect(usLargeCustomersPreset).toMatchInlineSnapshot(`
@@ -51,7 +51,7 @@ describe(`with usLargeCustomers preset`, () => {
     `);
   });
 
-  it(`should return a usLargeCustomers preset when built for graphql`, () => {
+  it('should return a usLargeCustomers GraphQL preset object', () => {
     const usLargeCustomersPresetGraphql =
       graphqlPreset().build<TStoreDraftGraphql>();
     expect(usLargeCustomersPresetGraphql).toMatchInlineSnapshot(`
@@ -127,7 +127,7 @@ describe(`with usLargeCustomers preset`, () => {
     `);
   });
 
-  it(`should return a usLargeCustomers preset`, () => {
+  it('should return a usLargeCustomers REST preset object from compat preset', () => {
     const usLargeCustomersPreset = compatPreset().buildRest<TStoreDraftRest>();
 
     expect(usLargeCustomersPreset).toMatchInlineSnapshot(`
@@ -176,7 +176,7 @@ describe(`with usLargeCustomers preset`, () => {
     `);
   });
 
-  it(`should return a usLargeCustomers preset when built for graphql legacy`, () => {
+  it('should return a usLargeCustomers GraphQL preset object from compat preset', () => {
     const usLargeCustomersPresetGraphql =
       compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(usLargeCustomersPresetGraphql).toMatchInlineSnapshot(`

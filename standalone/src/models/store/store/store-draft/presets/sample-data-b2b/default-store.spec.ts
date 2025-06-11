@@ -2,7 +2,7 @@ import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
 import { restPreset, graphqlPreset, compatPreset } from './default-store';
 
 describe(`with defaultStore preset`, () => {
-  it(`should return a defaultStore preset for rest`, () => {
+  it('should return a defaultStore REST preset object', () => {
     const defaultStorePresetRest = restPreset().build<TStoreDraftRest>();
     expect(defaultStorePresetRest).toMatchInlineSnapshot(`
       {
@@ -50,7 +50,7 @@ describe(`with defaultStore preset`, () => {
     `);
   });
 
-  it(`should return a defaultStore preset for graphql`, () => {
+  it('should return a defaultStore GraphQL preset object', () => {
     const defaultStorePresetGraphql =
       graphqlPreset().build<TStoreDraftGraphql>();
     expect(defaultStorePresetGraphql).toMatchInlineSnapshot(`
@@ -126,7 +126,7 @@ describe(`with defaultStore preset`, () => {
     `);
   });
 
-  it(`should return a defaultStore preset`, () => {
+  it('should return a defaultStore REST preset object from compat preset', () => {
     const defaultStorePreset = compatPreset().build<TStoreDraftRest>();
     expect(defaultStorePreset).toMatchInlineSnapshot(`
       {
@@ -174,7 +174,7 @@ describe(`with defaultStore preset`, () => {
     `);
   });
 
-  it(`should return a defaultStore preset when built for graphql`, () => {
+  it('should return a defaultStore GraphQL preset object from compat preset', () => {
     const defaultStorePresetGraphql =
       compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(defaultStorePresetGraphql).toMatchInlineSnapshot(`

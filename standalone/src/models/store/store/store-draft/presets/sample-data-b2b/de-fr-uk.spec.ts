@@ -2,7 +2,7 @@ import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
 import { restPreset, graphqlPreset, compatPreset } from './de-fr-uk';
 
 describe(`with deFrUk preset`, () => {
-  it(`should return a deFrUk preset for rest`, () => {
+  it('should return a deFrUk REST preset object', () => {
     const deFrUkPresetRest = restPreset().build<TStoreDraftRest>();
     expect(deFrUkPresetRest).toMatchInlineSnapshot(`
       {
@@ -50,7 +50,7 @@ describe(`with deFrUk preset`, () => {
     `);
   });
 
-  it(`should return a deFrUk preset for graphql`, () => {
+  it('should return a deFrUk GraphQL preset object', () => {
     const deFrUkPresetGraphql = graphqlPreset().build<TStoreDraftGraphql>();
     expect(deFrUkPresetGraphql).toMatchInlineSnapshot(`
       {
@@ -125,7 +125,7 @@ describe(`with deFrUk preset`, () => {
     `);
   });
 
-  it(`should return a deFrUk preset`, () => {
+  it('should return a deFrUk REST preset object from compat preset', () => {
     const deFrUkPreset = compatPreset().buildRest<TStoreDraftRest>();
     expect(deFrUkPreset).toMatchInlineSnapshot(`
       {
@@ -173,7 +173,7 @@ describe(`with deFrUk preset`, () => {
     `);
   });
 
-  it(`should return a deFrUk preset when built for graphql`, () => {
+  it('should return a deFrUk GraphQL preset object from compat preset', () => {
     const deFrUkPresetGraphql =
       compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(deFrUkPresetGraphql).toMatchInlineSnapshot(`
