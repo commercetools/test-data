@@ -57,3 +57,7 @@
 
 /standalone/src/models/*/change-history-* @commercetools/pangolin-team-fe
 /standalone/src/models/*/sample-data-* @commercetools/craft-team-fe
+
+# Sample data preset directories
+**/presets/sample-data-b2c-lifestyle/ @commercetools/craft-team-fe
+**/presets/sample-data-b2b/ @commercetools/craft-team-fe
