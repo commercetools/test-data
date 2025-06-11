@@ -10,14 +10,14 @@ export const RestModelBuilder: TCreateStoreBuilder<TStoreRest> = () =>
   createSpecializedBuilder({
     modelFieldsConfig: restFieldsConfig,
     type: 'rest',
-    name: 'StoreGraphqlBuilder',
+    name: 'StoreRestBuilder',
   });
 
 export const GraphqlModelBuilder: TCreateStoreBuilder<TStoreGraphql> = () =>
   createSpecializedBuilder({
     modelFieldsConfig: graphqlFieldsConfig,
     type: 'graphql',
-    name: 'StoreRestBuilder',
+    name: 'StoreGraphqlBuilder',
   });
 
 export const CompatModelBuilder = <

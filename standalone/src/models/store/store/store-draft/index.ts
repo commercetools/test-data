@@ -2,7 +2,7 @@ import {
   CompatModelBuilder,
   GraphqlModelBuilder,
   RestModelBuilder,
-} from './builder';
+} from './builders';
 import * as modelPresets from './presets';
 
 export const StoreDraftRest = {
