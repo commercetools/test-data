@@ -18,12 +18,6 @@ export type TProductSelectionSettingDraftGraphql =
  */
 export type TProductSelectionSettingDraft = ProductSelectionSettingDraft;
 
-export type TCreateProductSelectionSettingDraftBuilder<
-  TProductSelectionSettingDraftModel extends
-    | TProductSelectionSettingDraftRest
-    | TProductSelectionSettingDraftGraphql,
-> = () => TBuilder<TProductSelectionSettingDraftModel>;
-
 //ProductSelectionSettings
 export type TProductSelectionSettingRest = ProductSelectionSetting;
 export type TProductSelectionSettingGraphql = TCtpProductSelectionSetting;
@@ -37,5 +31,7 @@ export type TProductSelectionSetting = TProductSelectionSettingRest;
 export type TCreateProductSelectionSettingBuilder<
   TProductSelectionSettingModel extends
     | TProductSelectionSettingRest
-    | TProductSelectionSettingGraphql,
+    | TProductSelectionSettingGraphql
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
 > = () => TBuilder<TProductSelectionSettingModel>;
