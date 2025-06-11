@@ -1,5 +1,56 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.4.0
+
+### Minor Changes
+
+- [#857](https://github.com/commercetools/test-data/pull/857) [`28047b3`](https://github.com/commercetools/test-data/commit/28047b3b5c1fc76b2f50df2de3c438339d682eab) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new model named `PimSearchListView` which is the first one associated with the "My views" Merchant Center functionality so we've created a new package entry point (`@commercetools/composable-commerce-test-data/my-view`) we can use to aggregate all the other use cases we will need in the future.
+
+  This is how the new model could be used:
+
+  ```ts
+  import { PimSearchListViewGraphql } from '@commercetools/composable-commerce-test-data/my-view';
+
+  const model = PimSearchListViewGraphql.random().build();
+  ```
+
+- [#853](https://github.com/commercetools/test-data/pull/853) [`3211242`](https://github.com/commercetools/test-data/commit/3211242cd8de6a1d2c17c8cdbcc1ce82aeebbf6c) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've updated several models related to Custom Applications:
+
+  - `CustomApplicationInstallation`: It now exports a `constants` property including values for different oAuth scopes.
+  - `CustomApplicationInstallationPermissions`: It now exports a `constants` property including values for different oAuth scopes.
+  - `CustomApplication`: The `constants` property was exporting the wrong values. We also change the default model to populate the minimal fields and include a new preset (`withAllFields`) which can be used for use cases when a fully populated object is needed.
+
+- [#858](https://github.com/commercetools/test-data/pull/858) [`bac9f7c`](https://github.com/commercetools/test-data/commit/bac9f7cf98de637b357eb60d1d26691d3c03e608) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're introducing a new model named `ProductVariantAvailability` that can be consumed from the `@commercetools/composable-commerce-test-data/product` entry point.
+
+  This is how the new model could be used:
+
+  ```ts
+  import { ProductVariantAvailabilityGraphql } from '@commercetools/composable-commerce-test-data/product';
+
+  const model = ProductVariantAvailabilityGraphql.random().build();
+  ```
+
+- [#861](https://github.com/commercetools/test-data/pull/861) [`5b09856`](https://github.com/commercetools/test-data/commit/5b0985641b890e57a9266724de99ab9c4938979d) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We've migrated two models (`Store` and `ProductSelectionSetting`) both from the `@commercetools/composable-commerce-test-data/store` entry point to the new implementation patterns.
+
+  This change is transparent for consumers.
+
+- [#852](https://github.com/commercetools/test-data/pull/852) [`5777f16`](https://github.com/commercetools/test-data/commit/5777f1616360e22d238a6a064594fbad22f536d0) Thanks [@krishhna123](https://github.com/krishhna123)! - We're introducing a new models named `RecurrencePolicy` and `StandardSchedule` that can be consumed from the `@commercetools/composable-commerce-test-data/recurring-order` entry point.
+
+  This is how the new model could be used:
+
+  ```ts
+  import {
+    RecurrencePolicyDraftGraphql,
+    RecurrencePolicyGraphql,
+    StandardScheduleGraphql,
+  } from '@commercetools/composable-commerce-test-data/recurring-order';
+
+  const recurrencePolicy = RecurrencePolicyDraftGraphql.random().build();
+  const recurrencePolicyDraft = RecurrencePolicyDraftGraphql.random().build();
+
+  const standardSchedule = StandardScheduleGraphql.random().build();
+  ```
+
 ## 11.3.0
 
 ### Minor Changes
