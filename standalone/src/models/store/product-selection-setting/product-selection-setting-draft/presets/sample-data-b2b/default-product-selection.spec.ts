@@ -1,10 +1,18 @@
-import type { TProductSelectionSettingDraft } from '../../../types';
-import defaultProductSelection from './default-product-selection';
+import type {
+  TProductSelectionSettingDraft,
+  TProductSelectionSettingDraftRest,
+  TProductSelectionSettingDraftGraphql,
+} from '../../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './default-product-selection';
 
 describe('with defaultProductSelection present', () => {
-  it('should return a defaultProductSelection preset', () => {
+  it('should return a defaultProductSelection REST preset object', () => {
     const defaultProductSelectionPreset =
-      defaultProductSelection().build<TProductSelectionSettingDraft>();
+      restPreset().build<TProductSelectionSettingDraftRest>();
 
     expect(defaultProductSelectionPreset).toMatchInlineSnapshot(`
       {
@@ -16,9 +24,40 @@ describe('with defaultProductSelection present', () => {
       }
     `);
   });
-  it('should return a defaultProductSelection preset when built for graphql', () => {
+
+  it('should return a defaultProductSelection REST preset object from compat preset', () => {
+    const defaultProductSelectionPreset =
+      compatPreset().build<TProductSelectionSettingDraft>();
+
+    expect(defaultProductSelectionPreset).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "productSelection": {
+          "key": "default-product-selection",
+          "typeId": "product-selection",
+        },
+      }
+    `);
+  });
+
+  it('should return a defaultProductSelection GraphQL preset object', () => {
     const defaultProductSelectionPresetGraphql =
-      defaultProductSelection().buildGraphql<TProductSelectionSettingDraft>();
+      graphqlPreset().buildRest<TProductSelectionSettingDraftGraphql>();
+
+    expect(defaultProductSelectionPresetGraphql).toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "productSelection": {
+          "key": "default-product-selection",
+          "typeId": "product-selection",
+        },
+      }
+    `);
+  });
+
+  it('should return a defaultProductSelection GraphQL preset object from compat preset', () => {
+    const defaultProductSelectionPresetGraphql =
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(defaultProductSelectionPresetGraphql).toMatchInlineSnapshot(`
       {

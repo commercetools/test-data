@@ -1,10 +1,12 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import type { TStoreDraftBuilder } from '../../../types';
-import * as StoreDraft from '../../index';
+import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
+import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
-const b2cRetailStore = (): TStoreDraftBuilder =>
-  StoreDraft.presets
-    .empty()
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('b2c-retail-store')
     .name(
       LocalizedStringDraft.presets
@@ -12,4 +14,14 @@ const b2cRetailStore = (): TStoreDraftBuilder =>
         ['en-US']('B2C Retail Store')
         ['en-GB']('B2C Retail Store')
     );
-export default b2cRetailStore;
+};
+
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(StoreDraftRest.presets.empty());
+
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(StoreDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftRest | TStoreDraftGraphql
+> => populatePreset(StoreDraft.presets.empty());

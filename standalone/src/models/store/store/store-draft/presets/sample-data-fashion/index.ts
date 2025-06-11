@@ -1,7 +1,21 @@
-import store01 from './store-01';
-import store02 from './store-02';
-import store03 from './store-03';
+import * as store01 from './store-01';
+import * as store02 from './store-02';
+import * as store03 from './store-03';
 
-const presets = { store01, store02, store03 };
+export const restPresets = {
+  store01: store01.restPreset,
+  store02: store02.restPreset,
+  store03: store03.restPreset,
+};
 
-export default presets;
+export const graphqlPresets = {
+  store01: store01.graphqlPreset,
+  store02: store02.graphqlPreset,
+  store03: store03.graphqlPreset,
+};
+
+export const compatPresets = {
+  store01: store01.compatPreset,
+  store02: store02.compatPreset,
+  store03: store03.compatPreset,
+};

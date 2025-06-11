@@ -1,20 +1,20 @@
-import { TStoreDraft } from '../../../types';
-import store02 from './store-01';
+import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
+import { restPreset, graphqlPreset, compatPreset } from './store-02';
 
 describe('with `store02` preset', () => {
-  it('should return a store draft preset', () => {
-    const storeDraft = store02().build<TStoreDraft>();
+  it('should return a store-02 REST preset object', () => {
+    const storeDraft = restPreset().buildRest<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
         "custom": undefined,
         "distributionChannels": undefined,
-        "key": "sample_store_one",
+        "key": "sample_store_two",
         "languages": undefined,
         "name": {
           "de": undefined,
           "en": undefined,
-          "en-US": "Sample Store One",
+          "en-US": "Sample Store Two",
           "fr": undefined,
         },
         "productSelections": undefined,
@@ -23,19 +23,60 @@ describe('with `store02` preset', () => {
     `);
   });
 
-  it('should return a store draft preset preset when built for graphql', () => {
-    const storeDraft = store02().buildGraphql<TStoreDraft>();
+  it('should return a store-02 GraphQL preset object', () => {
+    const storeDraft = graphqlPreset().buildRest<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
         "custom": undefined,
         "distributionChannels": undefined,
-        "key": "sample_store_one",
+        "key": "sample_store_two",
         "languages": undefined,
         "name": [
           {
             "locale": "en-US",
-            "value": "Sample Store One",
+            "value": "Sample Store Two",
+          },
+        ],
+        "productSelections": undefined,
+        "supplyChannels": undefined,
+      }
+    `);
+  });
+  it('should return a store-02 REST preset object from compat preset', () => {
+    const storeDraft = compatPreset().buildGraphql<TStoreDraftGraphql>();
+    expect(storeDraft).toMatchInlineSnapshot(`
+      {
+        "countries": undefined,
+        "custom": undefined,
+        "distributionChannels": undefined,
+        "key": "sample_store_two",
+        "languages": undefined,
+        "name": [
+          {
+            "locale": "en-US",
+            "value": "Sample Store Two",
+          },
+        ],
+        "productSelections": undefined,
+        "supplyChannels": undefined,
+      }
+    `);
+  });
+
+  it('should return a store-02 GraphQL preset object from compat preset', () => {
+    const storeDraft = compatPreset().buildGraphql<TStoreDraftGraphql>();
+    expect(storeDraft).toMatchInlineSnapshot(`
+      {
+        "countries": undefined,
+        "custom": undefined,
+        "distributionChannels": undefined,
+        "key": "sample_store_two",
+        "languages": undefined,
+        "name": [
+          {
+            "locale": "en-US",
+            "value": "Sample Store Two",
           },
         ],
         "productSelections": undefined,

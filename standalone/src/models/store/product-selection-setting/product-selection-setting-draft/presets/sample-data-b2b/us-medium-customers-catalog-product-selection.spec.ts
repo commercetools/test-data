@@ -1,10 +1,49 @@
-import type { TProductSelectionSettingDraft } from '../../../types';
-import usMediumCustomersCatalogProductSelection from './us-medium-customers-catalog-product-selection';
+import type {
+  TProductSelectionSettingDraft,
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
+import {
+  restPreset,
+  graphqlPreset,
+  compatPreset,
+} from './us-medium-customers-catalog-product-selection';
 
 describe('with usMediumCustomersCatalogProductSelection present', () => {
-  it('should return a usMediumCustomersCatalogProductSelection preset', () => {
+  it('should return a usMediumCustomersCatalogProductSelection REST preset object', () => {
+    const usMediumCustomersCatalogProductSelectionPresetRest =
+      restPreset().build<TProductSelectionSettingDraftRest>();
+
+    expect(usMediumCustomersCatalogProductSelectionPresetRest)
+      .toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "productSelection": {
+          "key": "us-medium-customers-catalog",
+          "typeId": "product-selection",
+        },
+      }
+      `);
+  });
+
+  it('should return a usMediumCustomersCatalogProductSelection GraphQL preset object', () => {
+    const usMediumCustomersCatalogProductSelectionPresetGraphql =
+      graphqlPreset().build<TProductSelectionSettingDraftGraphql>();
+
+    expect(usMediumCustomersCatalogProductSelectionPresetGraphql)
+      .toMatchInlineSnapshot(`
+      {
+        "active": true,
+        "productSelection": {
+          "key": "us-medium-customers-catalog",
+          "typeId": "product-selection",
+        },
+      }
+      `);
+  });
+  it('should return a usMediumCustomersCatalogProductSelection REST preset object from compat preset', () => {
     const usMediumCustomersCatalogProductSelectionPreset =
-      usMediumCustomersCatalogProductSelection().build<TProductSelectionSettingDraft>();
+      compatPreset().buildRest<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPreset)
       .toMatchInlineSnapshot(`
@@ -17,9 +56,9 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       }
     `);
   });
-  it('should return a usMediumCustomersCatalogProductSelection preset when built for graphql', () => {
+  it('should return a usMediumCustomersCatalogProductSelection GraphQL preset object from compat preset', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
-      usMediumCustomersCatalogProductSelection().buildGraphql<TProductSelectionSettingDraft>();
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPresetGraphql)
       .toMatchInlineSnapshot(`

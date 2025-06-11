@@ -1,23 +1,47 @@
+import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '../../../../../commons';
 import {
-  ProductSelectionDraft,
+  ProductSelectionDraftRest,
   type TProductSelectionDraft,
 } from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraftBuilder } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
+import {
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
 
-const usMediumCustomersCatalog = ProductSelectionDraft.presets.sampleDataB2B
-  .usMediumCustomersCatalog()
-  .build<TProductSelectionDraft>();
+const usMediumCustomersCatalogKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .usMediumCustomersCatalog()
+    .build<TProductSelectionDraft>().key;
 
-const usMediumCustomersCatalogProductSelectionSetting =
-  (): TProductSelectionSettingDraftBuilder =>
-    ProductSelectionSettingDraft()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(usMediumCustomersCatalog.key!)
-      )
-      .active(true);
+const populatePreset = <
+  TModel extends
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(usMediumCustomersCatalogKey!)
+    )
+    .active(true);
+};
 
-export default usMediumCustomersCatalogProductSelectionSetting;
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> => populatePreset(CompatModelBuilder());
