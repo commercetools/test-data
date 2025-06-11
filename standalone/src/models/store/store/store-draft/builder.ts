@@ -4,26 +4,26 @@ import {
   TModelFieldsConfig,
 } from '@/core';
 import type {
-  TCreateStoreDraftBuilder,
+  TCreateStoreBuilder,
   TStoreDraftRest,
   TStoreDraftGraphql,
 } from '../types';
 import { restFieldConfig, graphqlFieldConfig } from './fields-config';
 
-export const RestModelBuilder: TCreateStoreDraftBuilder<TStoreDraftRest> = () =>
+export const RestModelBuilder: TCreateStoreBuilder<TStoreDraftRest> = () =>
   createSpecializedBuilder({
     modelFieldsConfig: restFieldConfig,
     type: 'rest',
-    name: 'storeDraft',
+    name: 'storeDraftRestBuilder',
   });
 
-export const GraphqlModelBuilder: TCreateStoreDraftBuilder<
+export const GraphqlModelBuilder: TCreateStoreBuilder<
   TStoreDraftGraphql
 > = () =>
   createSpecializedBuilder({
     modelFieldsConfig: graphqlFieldConfig,
     type: 'graphql',
-    name: 'storeDraft',
+    name: 'storeDraftGraphqlBuilder',
   });
 
 export const CompatModelBuilder = <
