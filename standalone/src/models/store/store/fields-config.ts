@@ -1,5 +1,5 @@
 import { fake, oneOf, sequence, type TModelFieldsConfig } from '@/core';
-import { Channel, ChannelGraphql } from '@/models/channel';
+import { ChannelGraphql } from '@/models/channel';
 import {
   ClientLogging,
   LocalizedString,
@@ -40,17 +40,23 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TStoreGraphql> = {
   fields: {
     __typename: 'Store',
     ...commonFieldsConfig,
-    distributionChannels: [fake(() => Channel.ChannelRest.random())],
+    distributionChannels: fake(() => [ChannelGraphql.random()]),
     distributionChannelsRef: null,
     name: null,
     nameAllLocales: fake(() => LocalizedString.random()),
     supplyChannels: fake(() => [ChannelGraphql.random()]),
     supplyChannelsRef: null,
   },
-  postBuild: (model) => {
-    const name = model.nameAllLocales
-      ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
-      : model.nameAllLocales;
+  postBuild: (model, context) => {
+    let nameAllLocales = model.nameAllLocales;
+    if (context?.isCompatMode && model.name) {
+      // @ts-expect-error - This is a temporary workaround to support the compat mode
+      nameAllLocales = model.name;
+    }
+
+    const name = nameAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales)
+      : model.name;
     const distributionChannelsRef = model.distributionChannels
       ? model.distributionChannels.map((channel) =>
           ReferenceGraphql.presets
@@ -67,8 +73,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TStoreGraphql> = {
             .buildGraphql()
         )
       : undefined;
+
     return {
       name,
+      nameAllLocales,
       distributionChannelsRef,
       supplyChannelsRef,
     };
