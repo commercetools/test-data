@@ -1,9 +1,9 @@
 import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
-import { deFrUk, deFrUkRest, deFrUkGraphql } from './de-fr-uk';
+import { restPreset, graphqlPreset, compatPreset } from './de-fr-uk';
 
 describe(`with deFrUk preset`, () => {
   it(`should return a deFrUk preset for rest`, () => {
-    const deFrUkPresetRest = deFrUkRest().buildRest<TStoreDraftRest>();
+    const deFrUkPresetRest = restPreset().build<TStoreDraftRest>();
     expect(deFrUkPresetRest).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -51,8 +51,7 @@ describe(`with deFrUk preset`, () => {
   });
 
   it(`should return a deFrUk preset for graphql`, () => {
-    const deFrUkPresetGraphql =
-      deFrUkGraphql().buildGraphql<TStoreDraftGraphql>();
+    const deFrUkPresetGraphql = graphqlPreset().build<TStoreDraftGraphql>();
     expect(deFrUkPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -127,7 +126,7 @@ describe(`with deFrUk preset`, () => {
   });
 
   it(`should return a deFrUk preset`, () => {
-    const deFrUkPreset = deFrUk().build<TStoreDraftRest | TStoreDraftGraphql>();
+    const deFrUkPreset = compatPreset().buildRest<TStoreDraftRest>();
     expect(deFrUkPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -175,7 +174,8 @@ describe(`with deFrUk preset`, () => {
   });
 
   it(`should return a deFrUk preset when built for graphql`, () => {
-    const deFrUkPresetGraphql = deFrUk().buildGraphql<TStoreDraftGraphql>();
+    const deFrUkPresetGraphql =
+      compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(deFrUkPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,

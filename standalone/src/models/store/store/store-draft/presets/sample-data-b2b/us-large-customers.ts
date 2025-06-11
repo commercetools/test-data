@@ -11,85 +11,58 @@ import {
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
-export const usLargeCustomersRest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
+const localize = () => {
+  return LocalizedStringDraft.presets
     .empty()
+    ['de-DE']('US-Großkunden')
+    ['it-IT']('Grandi Clienti degli Stati Uniti')
+    ['nl-NL']('Grote Klanten in de VS')
+    ['fr-FR']('Grands Clients des États-Unis')
+    ['en-AU']('US Large Customers')
+    ['es-ES']('Grandes Clientes de EE. UU.')
+    ['en-GB']('US Large Customers')
+    ['en-NZ']('US Large Customers')
+    ['pt-PT']('Grandes Clientes dos EUA')
+    ['en-US']('US Large Customers');
+};
+
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('us-large-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Großkunden')
-        ['it-IT']('Grandi Clienti degli Stati Uniti')
-        ['nl-NL']('Grote Klanten in de VS')
-        ['fr-FR']('Grands Clients des États-Unis')
-        ['en-AU']('US Large Customers')
-        ['es-ES']('Grandes Clientes de EE. UU.')
-        ['en-GB']('US Large Customers')
-        ['en-NZ']('US Large Customers')
-        ['pt-PT']('Grandes Clientes dos EUA')
-        ['en-US']('US Large Customers')
-    )
+    .name(localize())
     .distributionChannels([
       KeyReferenceDraft.presets.channel().key('us-large-customers'),
     ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
-    ]);
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')]);
+};
 
-export const usLargeCustomersGraphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
-    .key('us-large-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Großkunden')
-        ['it-IT']('Grandi Clienti degli Stati Uniti')
-        ['nl-NL']('Grote Klanten in de VS')
-        ['fr-FR']('Grands Clients des États-Unis')
-        ['en-AU']('US Large Customers')
-        ['es-ES']('Grandes Clientes de EE. UU.')
-        ['en-GB']('US Large Customers')
-        ['en-NZ']('US Large Customers')
-        ['pt-PT']('Grandes Clientes dos EUA')
-        ['en-US']('US Large Customers')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key('us-large-customers'),
-    ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
-    ]);
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(
+    StoreDraftRest.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftRest.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
 
-/**
- * @deprecated Use usLargeCustomersRest or usLargeCustomersGraphql instead
- */
-export const usLargeCustomers = (): TBuilder<
-  TStoreDraftRest | TStoreDraftGraphql
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(
+    StoreDraftGraphql.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftGraphql.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftGraphql | TStoreDraftRest
 > =>
-  StoreDraft.presets
-    .empty()
-    .key('us-large-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Großkunden')
-        ['it-IT']('Grandi Clienti degli Stati Uniti')
-        ['nl-NL']('Grote Klanten in de VS')
-        ['fr-FR']('Grands Clients des États-Unis')
-        ['en-AU']('US Large Customers')
-        ['es-ES']('Grandes Clientes de EE. UU.')
-        ['en-GB']('US Large Customers')
-        ['en-NZ']('US Large Customers')
-        ['pt-PT']('Grandes Clientes dos EUA')
-        ['en-US']('US Large Customers')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key('us-large-customers'),
-    ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraft.presets.defaultProductSelection(),
-    ]);
+  populatePreset(
+    StoreDraft.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraft.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );

@@ -1,7 +1,6 @@
 import { TBuilder } from '@/core';
 import { KeyReferenceDraft } from '../../../../../commons';
 import {
-  ProductSelectionDraftGraphql,
   ProductSelectionDraftRest,
   type TProductSelectionDraft,
 } from '../../../../../product/product-selection';
@@ -19,37 +18,29 @@ const usMediumCustomersCatalogKey =
   ProductSelectionDraftRest.presets.sampleDataB2B
     .usMediumCustomersCatalog()
     .build<TProductSelectionDraft>().key;
-
-export const usMediumCustomersCatalogRest =
-  (): TBuilder<TProductSelectionSettingDraftRest> =>
-    RestModelBuilder()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(usMediumCustomersCatalogKey!)
-      )
-      .active(true);
-
-export const usMediumCustomersCatalogGraphql =
-  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
-    GraphqlModelBuilder()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(usMediumCustomersCatalogKey!)
-      )
-      .active(true);
-
-/**
- * @deprecated Use `usMediumCustomersCatalogRest` or `usMediumCustomersCatalogGraphql` instead
- */
-export const usMediumCustomersCatalogPreset = (): TBuilder<
-  TProductSelectionSettingDraftGraphql | TProductSelectionSettingDraftRest
-> =>
-  CompatModelBuilder()
+const populatePreset = <
+  TModel extends
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .productSelection(
       KeyReferenceDraft.presets
         .productSelection()
         .key(usMediumCustomersCatalogKey!)
     )
     .active(true);
+};
+
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> => populatePreset(CompatModelBuilder());

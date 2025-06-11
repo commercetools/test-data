@@ -2,20 +2,19 @@ import * as defaultProductSelection from './default-product-selection';
 import * as usMediumCustomersCatalogProductSelection from './us-medium-customers-catalog-product-selection';
 
 export const restPresets = {
-  defaultProductSelection: defaultProductSelection.defaultProductSelectionRest,
+  defaultProductSelection: defaultProductSelection.restPreset,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogRest,
+    usMediumCustomersCatalogProductSelection.restPreset,
 };
 
 export const graphqlPresets = {
-  defaultProductSelection:
-    defaultProductSelection.defaultProductSelectionGraphql,
+  defaultProductSelection: defaultProductSelection.graphqlPreset,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogGraphql,
+    usMediumCustomersCatalogProductSelection.graphqlPreset,
 };
 
 export const compatPresets = {
-  defaultProductSelection: defaultProductSelection.defaultProductSelection,
+  defaultProductSelection: defaultProductSelection.compatPreset,
   usMediumCustomersCatalogProductSelection:
-    usMediumCustomersCatalogProductSelection.usMediumCustomersCatalogPreset,
+    usMediumCustomersCatalogProductSelection.compatPreset,
 };

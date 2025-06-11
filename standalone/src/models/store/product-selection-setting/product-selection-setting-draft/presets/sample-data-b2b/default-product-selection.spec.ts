@@ -4,15 +4,15 @@ import type {
   TProductSelectionSettingDraftGraphql,
 } from '../../../types';
 import {
-  defaultProductSelection,
-  defaultProductSelectionRest,
-  defaultProductSelectionGraphql,
+  restPreset,
+  graphqlPreset,
+  compatPreset,
 } from './default-product-selection';
 
 describe('with defaultProductSelection present', () => {
   it('should return a defaultProductSelection preset for rest', () => {
     const defaultProductSelectionPreset =
-      defaultProductSelectionRest().buildRest<TProductSelectionSettingDraftRest>();
+      restPreset().build<TProductSelectionSettingDraftRest>();
 
     expect(defaultProductSelectionPreset).toMatchInlineSnapshot(`
       {
@@ -27,7 +27,7 @@ describe('with defaultProductSelection present', () => {
 
   it('should return a defaultProductSelection preset', () => {
     const defaultProductSelectionPreset =
-      defaultProductSelection().build<TProductSelectionSettingDraft>();
+      compatPreset().build<TProductSelectionSettingDraft>();
 
     expect(defaultProductSelectionPreset).toMatchInlineSnapshot(`
       {
@@ -42,7 +42,7 @@ describe('with defaultProductSelection present', () => {
 
   it('should return a defaultProductSelection preset for graphql', () => {
     const defaultProductSelectionPresetGraphql =
-      defaultProductSelectionGraphql().buildGraphql<TProductSelectionSettingDraftGraphql>();
+      graphqlPreset().buildRest<TProductSelectionSettingDraftGraphql>();
 
     expect(defaultProductSelectionPresetGraphql).toMatchInlineSnapshot(`
       {
@@ -57,7 +57,7 @@ describe('with defaultProductSelection present', () => {
 
   it('should return a defaultProductSelection compatibility preset when built for graphql', () => {
     const defaultProductSelectionPresetGraphql =
-      defaultProductSelection().buildGraphql<TProductSelectionSettingDraft>();
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(defaultProductSelectionPresetGraphql).toMatchInlineSnapshot(`
       {

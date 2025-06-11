@@ -16,36 +16,28 @@ const defaultProductSelectionKey =
     .defaultProductSelection()
     .build().key;
 
-export const defaultProductSelectionRest =
-  (): TBuilder<TProductSelectionSettingDraftRest> =>
-    RestModelBuilder()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(defaultProductSelectionKey!)
-      )
-      .active(true);
-
-export const defaultProductSelectionGraphql =
-  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
-    GraphqlModelBuilder()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(defaultProductSelectionKey!)
-      )
-      .active(true);
-
-/**
- * @deprecated Use `defaultProductSelectionRest` or `defaultProductSelectionGraphql` instead
- */
-export const defaultProductSelection = (): TBuilder<
-  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
-> =>
-  CompatModelBuilder()
+export const populatePreset = <
+  TModel extends
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) =>
+  builder
     .productSelection(
       KeyReferenceDraft.presets
         .productSelection()
         .key(defaultProductSelectionKey!)
     )
     .active(true);
+
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> => populatePreset(CompatModelBuilder());

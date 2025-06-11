@@ -1,9 +1,9 @@
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import { spain, spainGraphql, spainRest } from './spain';
+import { restPreset, graphqlPreset, compatPreset } from './spain';
 
 describe(`with spain preset`, () => {
   it(`should return a spain preset for rest`, () => {
-    const spainPresetRest = spainRest().buildRest<TStoreDraftRest>();
+    const spainPresetRest = restPreset().build<TStoreDraftRest>();
     expect(spainPresetRest).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -51,8 +51,7 @@ describe(`with spain preset`, () => {
   });
 
   it(`should return a spain preset for graphql`, () => {
-    const spainPresetGraphql =
-      spainGraphql().buildGraphql<TStoreDraftGraphql>();
+    const spainPresetGraphql = graphqlPreset().build<TStoreDraftGraphql>();
     expect(spainPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -126,7 +125,7 @@ describe(`with spain preset`, () => {
     `);
   });
   it(`should return a spain preset`, () => {
-    const spainPreset = spain().build<TStoreDraftRest>();
+    const spainPreset = compatPreset().buildRest<TStoreDraftRest>();
     expect(spainPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -174,7 +173,8 @@ describe(`with spain preset`, () => {
   });
 
   it(`should return a spain preset when built for graphql`, () => {
-    const spainPresetGraphql = spain().buildGraphql<TStoreDraftGraphql>();
+    const spainPresetGraphql =
+      compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(spainPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,

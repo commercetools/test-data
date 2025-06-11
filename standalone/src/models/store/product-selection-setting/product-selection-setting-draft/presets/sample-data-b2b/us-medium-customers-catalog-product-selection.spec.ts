@@ -4,15 +4,15 @@ import type {
   TProductSelectionSettingDraftRest,
 } from '../../../types';
 import {
-  usMediumCustomersCatalogPreset,
-  usMediumCustomersCatalogGraphql,
-  usMediumCustomersCatalogRest,
+  restPreset,
+  graphqlPreset,
+  compatPreset,
 } from './us-medium-customers-catalog-product-selection';
 
 describe('with usMediumCustomersCatalogProductSelection present', () => {
   it('should return a usMediumCustomersCatalogProductSelection preset for rest', () => {
     const usMediumCustomersCatalogProductSelectionPresetRest =
-      usMediumCustomersCatalogRest().buildRest<TProductSelectionSettingDraftRest>();
+      restPreset().build<TProductSelectionSettingDraftRest>();
 
     expect(usMediumCustomersCatalogProductSelectionPresetRest)
       .toMatchInlineSnapshot(`
@@ -28,7 +28,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
 
   it('should return a usMediumCustomersCatalogProductSelection preset for graphql', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
-      usMediumCustomersCatalogGraphql().buildGraphql<TProductSelectionSettingDraftGraphql>();
+      graphqlPreset().build<TProductSelectionSettingDraftGraphql>();
 
     expect(usMediumCustomersCatalogProductSelectionPresetGraphql)
       .toMatchInlineSnapshot(`
@@ -43,7 +43,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
   });
   it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for rest', () => {
     const usMediumCustomersCatalogProductSelectionPreset =
-      usMediumCustomersCatalogPreset().build<TProductSelectionSettingDraft>();
+      compatPreset().buildRest<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPreset)
       .toMatchInlineSnapshot(`
@@ -58,7 +58,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
   });
   it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for graphql', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
-      usMediumCustomersCatalogPreset().buildGraphql<TProductSelectionSettingDraft>();
+      compatPreset().buildGraphql<TProductSelectionSettingDraft>();
 
     expect(usMediumCustomersCatalogProductSelectionPresetGraphql)
       .toMatchInlineSnapshot(`

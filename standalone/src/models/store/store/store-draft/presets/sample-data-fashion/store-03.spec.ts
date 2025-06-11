@@ -1,9 +1,9 @@
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import { store03Rest, store03Graphql, store03 } from './store-03';
+import { restPreset, graphqlPreset, compatPreset } from './store-03';
 
 describe('with `store03` preset', () => {
   it('should return a store draft preset for rest', () => {
-    const storeDraft = store03Rest().buildRest<TStoreDraftRest>();
+    const storeDraft = restPreset().build<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -24,7 +24,7 @@ describe('with `store03` preset', () => {
   });
 
   it('should return a store draft preset for graphql', () => {
-    const storeDraft = store03Graphql().buildGraphql<TStoreDraftGraphql>();
+    const storeDraft = graphqlPreset().build<TStoreDraftGraphql>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -45,7 +45,7 @@ describe('with `store03` preset', () => {
   });
 
   it('should return a store draft preset', () => {
-    const storeDraft = store03().build<TStoreDraftRest>();
+    const storeDraft = compatPreset().build<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -66,7 +66,7 @@ describe('with `store03` preset', () => {
   });
 
   it('should return a store draft preset preset when built for graphql', () => {
-    const storeDraft = store03().buildGraphql<TStoreDraftGraphql>();
+    const storeDraft = compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(storeDraft).toMatchInlineSnapshot(`
       {
         "countries": undefined,

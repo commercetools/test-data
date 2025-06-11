@@ -1,13 +1,9 @@
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import {
-  b2cRetailStoreRest,
-  b2cRetailStoreGraphql,
-  b2cRetailStore,
-} from './b2c-retail-store';
+import { restPreset, graphqlPreset, compatPreset } from './b2c-retail-store';
 
 describe('with `b2c-retail-store` preset', () => {
   it('should return a store draft preset for rest', () => {
-    const storeDraft = b2cRetailStoreRest().buildRest<TStoreDraftRest>();
+    const storeDraft = restPreset().build<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
 {
   "countries": undefined,
@@ -28,8 +24,7 @@ describe('with `b2c-retail-store` preset', () => {
 `);
   });
   it('should return a store draft preset for graphql', () => {
-    const storeDraft =
-      b2cRetailStoreGraphql().buildGraphql<TStoreDraftGraphql>();
+    const storeDraft = graphqlPreset().build<TStoreDraftGraphql>();
     expect(storeDraft).toMatchInlineSnapshot(`
 {
   "countries": undefined,
@@ -54,7 +49,7 @@ describe('with `b2c-retail-store` preset', () => {
   });
 
   it('should return a store draft preset', () => {
-    const storeDraft = b2cRetailStore().build<TStoreDraftRest>();
+    const storeDraft = compatPreset().buildRest<TStoreDraftRest>();
     expect(storeDraft).toMatchInlineSnapshot(`
 {
   "countries": undefined,
@@ -76,7 +71,7 @@ describe('with `b2c-retail-store` preset', () => {
   });
 
   it('should return a store draft preset preset when built for graphql', () => {
-    const storeDraft = b2cRetailStore().buildGraphql<TStoreDraftGraphql>();
+    const storeDraft = compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(storeDraft).toMatchInlineSnapshot(`
 {
   "countries": undefined,

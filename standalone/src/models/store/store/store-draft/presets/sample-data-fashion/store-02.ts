@@ -3,23 +3,20 @@ import { LocalizedStringDraft } from '../../../../../commons';
 import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
 import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
-export const store02Rest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
-    .empty()
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('sample_store_two')
     .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));
+};
 
-export const store02Graphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
-    .key('sample_store_two')
-    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(StoreDraftRest.presets.empty());
 
-/**
- * @deprecated Use `store02Rest` or `store02Graphql` instead
- */
-export const store02 = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
-  StoreDraft.presets
-    .empty()
-    .key('sample_store_two')
-    .name(LocalizedStringDraft.presets.empty()['en-US']('Sample Store Two'));
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(StoreDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftRest | TStoreDraftGraphql
+> => populatePreset(StoreDraft.presets.empty());

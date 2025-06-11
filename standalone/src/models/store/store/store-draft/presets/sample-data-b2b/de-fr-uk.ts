@@ -19,89 +19,60 @@ const euWarehouseChannel = ChannelDraft.presets.sampleDataB2B
   .euWarehouse()
   .build<TChannelDraft>();
 
-export const deFrUkRest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
+const localize = () => {
+  return LocalizedStringDraft.presets
     .empty()
-    .key('de-fr-uk')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Deutschland, Frankreich und Vereinigtes Königreich')
-        ['it-IT']('Germania, Francia e Regno Unito')
-        ['nl-NL']('Duitsland, Frankrijk en Verenigd Koninkrijk')
-        ['fr-FR']('Allemagne, France et Royaume-Uni')
-        ['en-AU']('Germany, France and United Kingdom')
-        ['es-ES']('Alemania, Francia y Reino Unido')
-        ['en-GB']('Germany, France and United Kingdom')
-        ['en-NZ']('Germany, France and United Kingdom')
-        ['pt-PT']('Alemanha, França e Reino Unido')
-        ['en-US']('Germany, France and United Kingdom')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key(deFrUkChannel.key),
-    ])
-    .supplyChannels([
-      KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
-    ])
-    .productSelections([
-      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
-    ]);
+    ['de-DE']('Deutschland, Frankreich und Vereinigtes Königreich')
+    ['it-IT']('Germania, Francia e Regno Unito')
+    ['nl-NL']('Duitsland, Frankrijk en Verenigd Koninkrijk')
+    ['fr-FR']('Allemagne, France et Royaume-Uni')
+    ['en-AU']('Germany, France and United Kingdom')
+    ['es-ES']('Alemania, Francia y Reino Unido')
+    ['en-GB']('Germany, France and United Kingdom')
+    ['en-NZ']('Germany, France and United Kingdom')
+    ['pt-PT']('Alemanha, França e Reino Unido')
+    ['en-US']('Germany, France and United Kingdom');
+};
 
-export const deFrUkGraphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
+const populatePreset = (
+  builder: TBuilder<TStoreDraftRest | TStoreDraftGraphql>
+) => {
+  return builder
     .key('de-fr-uk')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Deutschland, Frankreich und Vereinigtes Königreich')
-        ['it-IT']('Germania, Francia e Regno Unito')
-        ['nl-NL']('Duitsland, Frankrijk en Verenigd Koninkrijk')
-        ['fr-FR']('Allemagne, France et Royaume-Uni')
-        ['en-AU']('Germany, France and United Kingdom')
-        ['es-ES']('Alemania, Francia y Reino Unido')
-        ['en-GB']('Germany, France and United Kingdom')
-        ['en-NZ']('Germany, France and United Kingdom')
-        ['pt-PT']('Alemanha, França e Reino Unido')
-        ['en-US']('Germany, France and United Kingdom')
-    )
+    .name(localize())
     .distributionChannels([
       KeyReferenceDraft.presets.channel().key(deFrUkChannel.key),
     ])
     .supplyChannels([
       KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
-    ])
-    .productSelections([
-      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
     ]);
+};
 
-/**
- * @deprecated Use `deFrUkRest` or `deFrUkGraphql` instead
- */
-export const deFrUk = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
-  StoreDraft.presets
-    .empty()
-    .key('de-fr-uk')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Deutschland, Frankreich und Vereinigtes Königreich')
-        ['it-IT']('Germania, Francia e Regno Unito')
-        ['nl-NL']('Duitsland, Frankrijk en Verenigd Koninkrijk')
-        ['fr-FR']('Allemagne, France et Royaume-Uni')
-        ['en-AU']('Germany, France and United Kingdom')
-        ['es-ES']('Alemania, Francia y Reino Unido')
-        ['en-GB']('Germany, France and United Kingdom')
-        ['en-NZ']('Germany, France and United Kingdom')
-        ['pt-PT']('Alemanha, França e Reino Unido')
-        ['en-US']('Germany, France and United Kingdom')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key(deFrUkChannel.key),
-    ])
-    .supplyChannels([
-      KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
-    ])
-    .productSelections([
-      ProductSelectionSettingDraft.presets.defaultProductSelection(),
-    ]);
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(
+    StoreDraftRest.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftRest.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
+
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(
+    StoreDraftGraphql.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftGraphql.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftGraphql | TStoreDraftRest
+> =>
+  populatePreset(
+    StoreDraft.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraft.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );

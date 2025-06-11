@@ -11,82 +11,58 @@ import {
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
-export const usMediumCustomersRest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
+const localize = () => {
+  return LocalizedStringDraft.presets
     .empty()
+    ['de-DE']('US-Mittelgroße Kunden')
+    ['it-IT']('Clienti Medi degli Stati Uniti')
+    ['nl-NL']('Middelgrote Klanten in de VS')
+    ['fr-FR']('Clients Moyens des États-Unis')
+    ['en-AU']('US Medium Customers')
+    ['es-ES']('Clientes Medianos de EE. UU.')
+    ['en-GB']('US Medium Customers')
+    ['en-NZ']('US Medium Customers')
+    ['pt-PT']('Clientes Médios dos EUA')
+    ['en-US']('US Medium Customers');
+};
+
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('us-medium-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Mittelgroße Kunden')
-        ['it-IT']('Clienti Medi degli Stati Uniti')
-        ['nl-NL']('Middelgrote Klanten in de VS')
-        ['fr-FR']('Clients Moyens des États-Unis')
-        ['en-AU']('US Medium Customers')
-        ['es-ES']('Clientes Medianos de EE. UU.')
-        ['en-GB']('US Medium Customers')
-        ['en-NZ']('US Medium Customers')
-        ['pt-PT']('Clientes Médios dos EUA')
-        ['en-US']('US Medium Customers')
-    )
+    .name(localize())
     .distributionChannels([
       KeyReferenceDraft.presets.channel().key('us-medium-customers'),
     ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftRest.presets.usMediumCustomersCatalogProductSelection(),
-    ]);
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')]);
+};
 
-export const usMediumCustomersGraphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
-    .key('us-medium-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Mittelgroße Kunden')
-        ['it-IT']('Clienti Medi degli Stati Uniti')
-        ['nl-NL']('Middelgrote Klanten in de VS')
-        ['fr-FR']('Clients Moyens des États-Unis')
-        ['en-AU']('US Medium Customers')
-        ['es-ES']('Clientes Medianos de EE. UU.')
-        ['en-GB']('US Medium Customers')
-        ['en-NZ']('US Medium Customers')
-        ['pt-PT']('Clientes Médios dos EUA')
-        ['en-US']('US Medium Customers')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key('us-medium-customers'),
-    ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftGraphql.presets.usMediumCustomersCatalogProductSelection(),
-    ]);
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(
+    StoreDraftRest.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftRest.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ])
+  );
 
-export const usMediumCustomers = (): TBuilder<
-  TStoreDraftRest | TStoreDraftGraphql
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(
+    StoreDraftGraphql.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftGraphql.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ])
+  );
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftGraphql | TStoreDraftRest
 > =>
-  StoreDraft.presets
-    .empty()
-    .key('us-medium-customers')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('US-Mittelgroße Kunden')
-        ['it-IT']('Clienti Medi degli Stati Uniti')
-        ['nl-NL']('Middelgrote Klanten in de VS')
-        ['fr-FR']('Clients Moyens des États-Unis')
-        ['en-AU']('US Medium Customers')
-        ['es-ES']('Clientes Medianos de EE. UU.')
-        ['en-GB']('US Medium Customers')
-        ['en-NZ']('US Medium Customers')
-        ['pt-PT']('Clientes Médios dos EUA')
-        ['en-US']('US Medium Customers')
-    )
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key('us-medium-customers'),
-    ])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('us-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraft.presets.usMediumCustomersCatalogProductSelection(),
-    ]);
+  populatePreset(
+    StoreDraft.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraft.presets.sampleDataB2B.usMediumCustomersCatalogProductSelection(),
+      ])
+  );

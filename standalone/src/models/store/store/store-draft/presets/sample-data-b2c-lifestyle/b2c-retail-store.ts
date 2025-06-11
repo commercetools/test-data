@@ -3,9 +3,10 @@ import { LocalizedStringDraft } from '../../../../../commons';
 import { TStoreDraftRest, TStoreDraftGraphql } from '../../../types';
 import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
 
-export const b2cRetailStoreRest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
-    .empty()
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('b2c-retail-store')
     .name(
       LocalizedStringDraft.presets
@@ -13,30 +14,14 @@ export const b2cRetailStoreRest = (): TBuilder<TStoreDraftRest> =>
         ['en-US']('B2C Retail Store')
         ['en-GB']('B2C Retail Store')
     );
+};
 
-export const b2cRetailStoreGraphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
-    .key('b2c-retail-store')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['en-US']('B2C Retail Store')
-        ['en-GB']('B2C Retail Store')
-    );
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(StoreDraftRest.presets.empty());
 
-/**
- * @deprecated Use `b2cRetailStoreRest` or `b2cRetailStoreGraphql` instead
- */
-export const b2cRetailStore = (): TBuilder<
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(StoreDraftGraphql.presets.empty());
+
+export const compatPreset = (): TBuilder<
   TStoreDraftRest | TStoreDraftGraphql
-> =>
-  StoreDraft.presets
-    .empty()
-    .key('b2c-retail-store')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['en-US']('B2C Retail Store')
-        ['en-GB']('B2C Retail Store')
-    );
+> => populatePreset(StoreDraft.presets.empty());

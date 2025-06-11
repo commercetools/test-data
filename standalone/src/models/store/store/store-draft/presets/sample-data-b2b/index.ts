@@ -1,41 +1,29 @@
-import { deFrUk, deFrUkRest, deFrUkGraphql } from './de-fr-uk';
-import {
-  defaultStore,
-  defaultStoreGraphql,
-  defaultStoreRest,
-} from './default-store';
-import { spain, spainGraphql, spainRest } from './spain';
-import {
-  usLargeCustomers,
-  usLargeCustomersGraphql,
-  usLargeCustomersRest,
-} from './us-large-customers';
-import {
-  usMediumCustomers,
-  usMediumCustomersGraphql,
-  usMediumCustomersRest,
-} from './us-medium-customers';
+import * as deFrUk from './de-fr-uk';
+import * as defaultStore from './default-store';
+import * as spain from './spain';
+import * as usLargeCustomers from './us-large-customers';
+import * as usMediumCustomers from './us-medium-customers';
 
 export const restPresets = {
-  deFrUk: deFrUkRest,
-  defaultStore: defaultStoreRest,
-  spain: spainRest,
-  usLargeCustomers: usLargeCustomersRest,
-  usMediumCustomers: usMediumCustomersRest,
+  deFrUk: deFrUk.restPreset,
+  defaultStore: defaultStore.restPreset,
+  spain: spain.restPreset,
+  usLargeCustomers: usLargeCustomers.restPreset,
+  usMediumCustomers: usMediumCustomers.restPreset,
 };
 
 export const graphqlPresets = {
-  deFrUk: deFrUkGraphql,
-  defaultStore: defaultStoreGraphql,
-  spain: spainGraphql,
-  usLargeCustomers: usLargeCustomersGraphql,
-  usMediumCustomers: usMediumCustomersGraphql,
+  deFrUk: deFrUk.graphqlPreset,
+  defaultStore: defaultStore.graphqlPreset,
+  spain: spain.graphqlPreset,
+  usLargeCustomers: usLargeCustomers.graphqlPreset,
+  usMediumCustomers: usMediumCustomers.graphqlPreset,
 };
 
 export const compatPresets = {
-  deFrUk: deFrUk,
-  defaultStore: defaultStore,
-  spain: spain,
-  usLargeCustomers: usLargeCustomers,
-  usMediumCustomers: usMediumCustomers,
+  deFrUk: deFrUk.compatPreset,
+  defaultStore: defaultStore.compatPreset,
+  spain: spain.compatPreset,
+  usLargeCustomers: usLargeCustomers.restPreset,
+  usMediumCustomers: usMediumCustomers.compatPreset,
 };

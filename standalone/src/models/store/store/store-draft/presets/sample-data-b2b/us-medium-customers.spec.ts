@@ -1,14 +1,9 @@
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
-import {
-  usMediumCustomers,
-  usMediumCustomersGraphql,
-  usMediumCustomersRest,
-} from './us-medium-customers';
+import { restPreset, graphqlPreset, compatPreset } from './us-medium-customers';
 
 describe(`with usMediumCustomers preset`, () => {
   it(`should return a usMediumCustomers preset rest`, () => {
-    const usMediumCustomersPreset =
-      usMediumCustomersRest().buildGraphql<TStoreDraftRest>();
+    const usMediumCustomersPreset = restPreset().build<TStoreDraftRest>();
     expect(usMediumCustomersPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -57,7 +52,7 @@ describe(`with usMediumCustomers preset`, () => {
 
   it(`should return a usMediumCustomers preset when built for graphql`, () => {
     const usMediumCustomersPresetGraphql =
-      usMediumCustomersGraphql().buildGraphql<TStoreDraftGraphql>();
+      graphqlPreset().build<TStoreDraftGraphql>();
     expect(usMediumCustomersPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -131,8 +126,7 @@ describe(`with usMediumCustomers preset`, () => {
     `);
   });
   it(`should return a usMediumCustomers preset`, () => {
-    const usMediumCustomersPreset =
-      usMediumCustomers().build<TStoreDraftRest>();
+    const usMediumCustomersPreset = compatPreset().buildRest<TStoreDraftRest>();
     expect(usMediumCustomersPreset).toMatchInlineSnapshot(`
       {
         "countries": undefined,
@@ -181,7 +175,7 @@ describe(`with usMediumCustomers preset`, () => {
 
   it(`should return a usMediumCustomers preset when built for graphql legacy`, () => {
     const usMediumCustomersPresetGraphql =
-      usMediumCustomers().buildGraphql<TStoreDraftGraphql>();
+      compatPreset().buildGraphql<TStoreDraftGraphql>();
     expect(usMediumCustomersPresetGraphql).toMatchInlineSnapshot(`
       {
         "countries": undefined,

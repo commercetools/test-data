@@ -11,77 +11,56 @@ import {
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftGraphql, StoreDraftRest } from '../../index';
 
-export const spainRest = (): TBuilder<TStoreDraftRest> =>
-  StoreDraftRest.presets
+const localize = () => {
+  return LocalizedStringDraft.presets
     .empty()
-    .key('spain')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Spanien')
-        ['it-IT']('Spagna')
-        ['nl-NL']('Spanje')
-        ['fr-FR']('Espagnole')
-        ['en-AU']('Spain')
-        ['es-ES']('España')
-        ['en-GB']('Spain')
-        ['en-NZ']('Spain')
-        ['pt-PT']('Espanha')
-        ['en-US']('Spain')
-    )
-    .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftRest.presets.defaultProductSelection(),
-    ]);
+    ['de-DE']('Spanien')
+    ['it-IT']('Spagna')
+    ['nl-NL']('Spanje')
+    ['fr-FR']('Espagnole')
+    ['en-AU']('Spain')
+    ['es-ES']('España')
+    ['en-GB']('Spain')
+    ['en-NZ']('Spain')
+    ['pt-PT']('Espanha')
+    ['en-US']('Spain');
+};
 
-export const spainGraphql = (): TBuilder<TStoreDraftGraphql> =>
-  StoreDraftGraphql.presets
-    .empty()
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
+) => {
+  return builder
     .key('spain')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Spanien')
-        ['it-IT']('Spagna')
-        ['nl-NL']('Spanje')
-        ['fr-FR']('Espagnole')
-        ['en-AU']('Spain')
-        ['es-ES']('España')
-        ['en-GB']('Spain')
-        ['en-NZ']('Spain')
-        ['pt-PT']('Espanha')
-        ['en-US']('Spain')
-    )
+    .name(localize())
     .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraftGraphql.presets.defaultProductSelection(),
-    ]);
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')]);
+};
 
-/**
- * @deprecated Use `StoreDraft.presets.spainGraphql` instead.
- */
-export const spain = (): TBuilder<TStoreDraftRest | TStoreDraftGraphql> =>
-  StoreDraft.presets
-    .empty()
-    .key('spain')
-    .name(
-      LocalizedStringDraft.presets
-        .empty()
-        ['de-DE']('Spanien')
-        ['it-IT']('Spagna')
-        ['nl-NL']('Spanje')
-        ['fr-FR']('Espagnole')
-        ['en-AU']('Spain')
-        ['es-ES']('España')
-        ['en-GB']('Spain')
-        ['en-NZ']('Spain')
-        ['pt-PT']('Espanha')
-        ['en-US']('Spain')
-    )
-    .distributionChannels([KeyReferenceDraft.presets.channel().key('spain')])
-    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')])
-    .productSelections([
-      ProductSelectionSettingDraft.presets.defaultProductSelection(),
-    ]);
+export const restPreset = (): TBuilder<TStoreDraftRest> =>
+  populatePreset(
+    StoreDraftRest.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftRest.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
+
+export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
+  populatePreset(
+    StoreDraftGraphql.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraftGraphql.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
+
+export const compatPreset = (): TBuilder<
+  TStoreDraftGraphql | TStoreDraftRest
+> =>
+  populatePreset(
+    StoreDraft.presets
+      .empty()
+      .productSelections([
+        ProductSelectionSettingDraft.presets.sampleDataB2B.defaultProductSelection(),
+      ])
+  );
