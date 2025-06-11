@@ -2,7 +2,7 @@ import {
   CompatModelBuilder,
   RestModelBuilder,
   GraphqlModelBuilder,
-} from './builder';
+} from './builders';
 import * as modelPresets from './presets';
 
 export * from './types';
