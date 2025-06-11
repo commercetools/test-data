@@ -18,6 +18,7 @@ const usMediumCustomersCatalogKey =
   ProductSelectionDraftRest.presets.sampleDataB2B
     .usMediumCustomersCatalog()
     .build<TProductSelectionDraft>().key;
+
 const populatePreset = <
   TModel extends
     | TProductSelectionSettingDraftRest

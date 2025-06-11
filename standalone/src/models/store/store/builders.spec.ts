@@ -1,5 +1,3 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
 import type { TStoreGraphql, TStoreRest } from './types';
 import { StoreRest, StoreGraphql, Store } from './index';
 
@@ -38,27 +36,28 @@ const validateGraphqlModel = (model: TStoreGraphql) => {
       id: expect.any(String),
       key: expect.any(String),
       languages: expect.any(Array),
+      name: expect.any(String),
       nameAllLocales: expect.arrayContaining([
         expect.objectContaining({
           __typename: 'LocalizedString',
         }),
       ]),
       countries: expect.any(Array),
-      productSelections: [],
-      distributionChannelsRef: expect.any(Array),
+      custom: null,
       distributionChannels: expect.any(Array),
-      supplyChannelsRef: expect.any(Array),
+      distributionChannelsRef: expect.any(Array),
       supplyChannels: expect.any(Array),
+      supplyChannelsRef: expect.any(Array),
+      productSelections: [],
       createdAt: expect.any(String),
       createdBy: expect.objectContaining({
-        customerRef: expect.objectContaining({ typeId: 'customer' }),
-        userRef: expect.objectContaining({ typeId: 'user' }),
+        __typename: 'Initiator',
       }),
       lastModifiedAt: expect.any(String),
       lastModifiedBy: expect.objectContaining({
-        customerRef: expect.objectContaining({ typeId: 'customer' }),
-        userRef: expect.objectContaining({ typeId: 'user' }),
+        __typename: 'Initiator',
       }),
+      version: expect.any(Number),
     })
   );
 };

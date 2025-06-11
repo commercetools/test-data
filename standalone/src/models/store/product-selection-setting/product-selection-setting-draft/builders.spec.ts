@@ -39,9 +39,13 @@ describe('ProductSelectionSettingDraft builder', () => {
   });
 
   describe('ProductSelectionSettingDraft model compatibility builders', () => {
+    it('builds a default model', () => {
+      const model = ProductSelectionSettingDraft.random().build();
+      validateModel(model);
+    });
+
     it('builds a Rest model', () => {
-      const model =
-        ProductSelectionSettingDraft.random().buildRest<TProductSelectionSettingDraftRest>();
+      const model = ProductSelectionSettingDraft.random().buildRest();
       validateModel(model);
     });
 

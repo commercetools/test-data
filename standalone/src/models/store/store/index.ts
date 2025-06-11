@@ -16,7 +16,7 @@ export const StoreGraphql = {
 };
 
 /**
- * @deprecated Use `StoreRest` or `StoreGraphql` exported models instead of  `Store`
+ * @deprecated Use `StoreRest` or `StoreGraphql` exported models instead of `Store`
  */
 export const Store = {
   random: CompatModelBuilder,

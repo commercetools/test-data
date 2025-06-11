@@ -1,11 +1,14 @@
 import { Store, StoreDraft } from '@commercetools/platform-sdk';
 import { TBuilder } from '@/core';
-import { TCtpStore } from '@/graphql-types';
+import { TCtpStore, TCtpCreateStore } from '@/graphql-types';
 
+// REST types
 export type TStoreRest = Store;
-export type TStoreGraphql = TCtpStore;
 export type TStoreDraftRest = StoreDraft;
-export type TStoreDraftGraphql = StoreDraft;
+
+// GraphQL types
+export type TStoreGraphql = TCtpStore;
+export type TStoreDraftGraphql = TCtpCreateStore;
 
 /**
  * @deprecated Use `TStoreRest` or `TStoreGraphql` instead

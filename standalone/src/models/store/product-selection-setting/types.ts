@@ -8,25 +8,24 @@ import {
   TCtpProductSelectionSettingDraft,
 } from '@/graphql-types';
 
-//ProductSelectionSettingsDraft
-export type TProductSelectionSettingDraftRest = ProductSelectionSettingDraft;
-export type TProductSelectionSettingDraftGraphql =
-  TCtpProductSelectionSettingDraft;
-
 /**
  * @deprecated Use `TProductSelectionSettingDraftGraphql` instead
  */
 export type TProductSelectionSettingDraft = ProductSelectionSettingDraft;
 
-//ProductSelectionSettings
-export type TProductSelectionSettingRest = ProductSelectionSetting;
-export type TProductSelectionSettingGraphql = TCtpProductSelectionSetting;
-
 /**
  * @deprecated Use `TProductSelectionSettingRest` or `TProductSelectionSettingGraphql` instead
  */
-
 export type TProductSelectionSetting = TProductSelectionSettingRest;
+
+// REST types
+export type TProductSelectionSettingRest = ProductSelectionSetting;
+export type TProductSelectionSettingDraftRest = ProductSelectionSettingDraft;
+
+// GraphQL types
+export type TProductSelectionSettingGraphql = TCtpProductSelectionSetting;
+export type TProductSelectionSettingDraftGraphql =
+  TCtpProductSelectionSettingDraft;
 
 export type TCreateProductSelectionSettingBuilder<
   TProductSelectionSettingModel extends

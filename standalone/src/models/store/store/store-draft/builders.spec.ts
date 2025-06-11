@@ -1,17 +1,16 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-import type { TStoreDraftGraphql, TStoreDraftRest } from '../types';
+import type {
+  TStoreDraft,
+  TStoreDraftGraphql,
+  TStoreDraftRest,
+} from '../types';
 import { StoreDraftGraphql, StoreDraftRest, StoreDraft } from './index';
 
-const validateRestModel = (model: TStoreDraftRest | TStoreDraftGraphql) => {
+const validateModel = (
+  model: TStoreDraft | TStoreDraftRest | TStoreDraftGraphql
+) => {
   expect(model).toEqual(
     expect.objectContaining({
       key: expect.any(String),
-      name: expect.objectContaining({
-        de: expect.any(String),
-        en: expect.any(String),
-        fr: expect.any(String),
-      }),
       languages: expect.any(Array),
       countries: expect.any(Array),
       distributionChannels: null,
@@ -22,17 +21,29 @@ const validateRestModel = (model: TStoreDraftRest | TStoreDraftGraphql) => {
   );
 };
 
-const validateGraphqlModel = (model: TStoreDraftGraphql) => {
+const validateRestModel = (model: TStoreDraftRest) => {
+  validateModel(model);
   expect(model).toEqual(
     expect.objectContaining({
-      key: expect.any(String),
-      name: expect.any(Array),
-      languages: expect.any(Array),
-      countries: expect.any(Array),
-      distributionChannels: null,
-      supplyChannels: null,
-      productSelections: null,
-      custom: null,
+      name: expect.objectContaining({
+        de: expect.any(String),
+        en: expect.any(String),
+        fr: expect.any(String),
+      }),
+    })
+  );
+};
+
+const validateGraphqlModel = (model: TStoreDraftGraphql) => {
+  validateModel(model);
+  expect(model).toEqual(
+    expect.objectContaining({
+      name: expect.arrayContaining([
+        expect.objectContaining({
+          locale: expect.any(String),
+          value: expect.any(String),
+        }),
+      ]),
     })
   );
 };
@@ -49,13 +60,18 @@ describe('StoreDraft builder', () => {
   });
 
   describe('StoreDraft model compatibility builders', () => {
+    it('builds a default model', () => {
+      const model = StoreDraft.random().build<TStoreDraft>();
+      validateRestModel(model);
+    });
+
     it('builds a Rest model', () => {
-      const model = StoreDraft.random().buildRest();
+      const model = StoreDraft.random().buildRest<TStoreDraftRest>();
       validateRestModel(model);
     });
 
     it('builds a Graphql model', () => {
-      const model = StoreDraft.random().buildGraphql();
+      const model = StoreDraft.random().buildGraphql<TStoreDraftGraphql>();
       validateGraphqlModel(model);
     });
   });
