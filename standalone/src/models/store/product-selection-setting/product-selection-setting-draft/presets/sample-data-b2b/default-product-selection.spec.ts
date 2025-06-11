@@ -55,7 +55,7 @@ describe('with defaultProductSelection present', () => {
     `);
   });
 
-  it('should return a defaultProductSelection preset when built for graphql', () => {
+  it('should return a defaultProductSelection compatibility preset when built for graphql', () => {
     const defaultProductSelectionPresetGraphql =
       defaultProductSelection().buildGraphql<TProductSelectionSettingDraft>();
 

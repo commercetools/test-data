@@ -41,7 +41,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       }
       `);
   });
-  it('should return a usMediumCustomersCatalogProductSelection preset', () => {
+  it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for rest', () => {
     const usMediumCustomersCatalogProductSelectionPreset =
       usMediumCustomersCatalogPreset().build<TProductSelectionSettingDraft>();
 
@@ -56,7 +56,7 @@ describe('with usMediumCustomersCatalogProductSelection present', () => {
       }
     `);
   });
-  it('should return a usMediumCustomersCatalogProductSelection preset when built for graphql', () => {
+  it('should return a usMediumCustomersCatalogProductSelection compatibility preset when built for graphql', () => {
     const usMediumCustomersCatalogProductSelectionPresetGraphql =
       usMediumCustomersCatalogPreset().buildGraphql<TProductSelectionSettingDraft>();
 
