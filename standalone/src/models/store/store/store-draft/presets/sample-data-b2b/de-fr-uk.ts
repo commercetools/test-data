@@ -1,5 +1,4 @@
 import { TBuilder } from '@/core';
-import { ChannelDraft, type TChannelDraft } from '../../../../../channel';
 import {
   KeyReferenceDraft,
   LocalizedStringDraft,
@@ -11,13 +10,6 @@ import {
 } from '../../../../index';
 import { TStoreDraftGraphql, TStoreDraftRest } from '../../../types';
 import { StoreDraft, StoreDraftRest, StoreDraftGraphql } from '../../index';
-
-const deFrUkChannel = ChannelDraft.presets.sampleDataB2B
-  .deFrUk()
-  .build<TChannelDraft>();
-const euWarehouseChannel = ChannelDraft.presets.sampleDataB2B
-  .euWarehouse()
-  .build<TChannelDraft>();
 
 const localize = () => {
   return LocalizedStringDraft.presets
@@ -34,18 +26,14 @@ const localize = () => {
     ['en-US']('Germany, France and United Kingdom');
 };
 
-const populatePreset = (
-  builder: TBuilder<TStoreDraftRest | TStoreDraftGraphql>
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
 ) => {
   return builder
     .key('de-fr-uk')
     .name(localize())
-    .distributionChannels([
-      KeyReferenceDraft.presets.channel().key(deFrUkChannel.key),
-    ])
-    .supplyChannels([
-      KeyReferenceDraft.presets.channel().key(euWarehouseChannel.key),
-    ]);
+    .distributionChannels([KeyReferenceDraft.presets.channel().key('de-fr-uk')])
+    .supplyChannels([KeyReferenceDraft.presets.channel().key('eu-warehouse')]);
 };
 
 export const restPreset = (): TBuilder<TStoreDraftRest> =>
@@ -69,10 +57,10 @@ export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
 export const compatPreset = (): TBuilder<
   TStoreDraftGraphql | TStoreDraftRest
 > =>
-  populatePreset(
+  populatePreset<TStoreDraftGraphql | TStoreDraftRest>(
     StoreDraft.presets
       .empty()
       .productSelections([
         ProductSelectionSettingDraft.presets.sampleDataB2B.defaultProductSelection(),
       ])
-  );
+  ) as TBuilder<TStoreDraftGraphql | TStoreDraftRest>;

@@ -26,8 +26,8 @@ const localize = () => {
     ['en-US']('Default');
 };
 
-const populatePreset = (
-  builder: TBuilder<TStoreDraftRest | TStoreDraftGraphql>
+const populatePreset = <TModel extends TStoreDraftRest | TStoreDraftGraphql>(
+  builder: TBuilder<TModel>
 ) => {
   return builder
     .key('default-store')
@@ -61,7 +61,7 @@ export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
 export const compatPreset = (): TBuilder<
   TStoreDraftGraphql | TStoreDraftRest
 > =>
-  populatePreset(
+  populatePreset<TStoreDraftGraphql | TStoreDraftRest>(
     StoreDraft.presets
       .empty()
       .productSelections([

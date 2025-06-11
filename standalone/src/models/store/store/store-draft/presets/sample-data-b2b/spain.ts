@@ -57,7 +57,7 @@ export const graphqlPreset = (): TBuilder<TStoreDraftGraphql> =>
 export const compatPreset = (): TBuilder<
   TStoreDraftGraphql | TStoreDraftRest
 > =>
-  populatePreset(
+  populatePreset<TStoreDraftGraphql | TStoreDraftRest>(
     StoreDraft.presets
       .empty()
       .productSelections([
