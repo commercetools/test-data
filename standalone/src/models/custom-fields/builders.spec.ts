@@ -1,4 +1,5 @@
 import { TBuilder } from '@/core';
+import { TCtpRawCustomField } from '@/graphql-types';
 import { ReferenceRest } from '@/models/commons';
 import { Type } from '@/models/type';
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
@@ -16,7 +17,7 @@ const populateGraphqlModel = (model: TBuilder<TCustomFieldsGraphql>) =>
     { name: 'stringField', value: 'test value' },
     { name: 'booleanField', value: true },
     { name: 'numberField', value: 42 },
-  ]);
+  ] as unknown as TCtpRawCustomField[]);
 
 const validateRestModel = (model: TCustomFieldsRest) => {
   expect(model).toEqual(
