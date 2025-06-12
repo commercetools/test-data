@@ -89,6 +89,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
         // @ts-expect-error AttributeEnumTypeDraftGraphql and AttributeLocalizedEnumTypeDraftGraphql types have a `name` field
         const { name, ...rest } = model.type;
         return {
+          ...model,
           type: {
             [name]: rest,
           },
@@ -97,6 +98,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
       // @ts-expect-error AttributeReferenceTypeDraftGraphql type has a `referenceTypeId` field
       if (model.type.referenceTypeId) {
         return {
+          ...model,
           type: {
             reference: {
               // @ts-expect-error AttributeReferenceTypeDraftGraphql type has a `referenceTypeId` field
@@ -108,6 +110,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
       // @ts-expect-error AttributeSetTypeDraftGraphql type has a `elementType` field
       if (model.type.elementType) {
         return {
+          ...model,
           type: {
             set: {
               // @ts-expect-error AttributeSetTypeDraftGraphql type has a `elementType` field
@@ -119,6 +122,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionDraftGr
       // @ts-expect-error Simple attribute types have `dummy` field
       if (model.type.dummy) {
         return {
+          ...model,
           type: {
             // @ts-expect-error Simple attribute types have `dummy` field
             [model.type.dummy]: {

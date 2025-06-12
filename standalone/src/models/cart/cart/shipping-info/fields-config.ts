@@ -33,6 +33,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TShippingInfoGraphql> = {
   },
   postBuild: (model) => {
     return {
+      ...model,
       shippingMethodRef: model.shippingMethod
         ? Reference.presets
             .shippingMethodReference()

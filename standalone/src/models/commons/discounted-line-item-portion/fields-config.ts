@@ -28,6 +28,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedLineItemPortionG
     },
     postBuild: (model) => {
       return {
+        ...model,
         discountRef: model.discount
           ? Reference.presets
               .cartDiscountReference()

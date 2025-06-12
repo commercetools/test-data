@@ -109,7 +109,6 @@ describe('CustomLineItem model builders', () => {
     const restModel = populateRestFields(
       CustomLineItemRest.random()
     ).buildRest();
-    console.log(restModel);
     validateRestFields(restModel);
   });
 

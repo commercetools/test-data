@@ -57,24 +57,15 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TStoreGraphql> = {
     const name = nameAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales)
       : model.name;
-    const distributionChannelsRef = model.distributionChannels
-      ? model.distributionChannels.map((channel) =>
-          ReferenceGraphql.presets
-            .channelReference()
-            .id(channel.id)
-            .buildGraphql()
-        )
-      : undefined;
-    const supplyChannelsRef = model.supplyChannels
-      ? model.supplyChannels.map((channel) =>
-          ReferenceGraphql.presets
-            .channelReference()
-            .id(channel.id)
-            .buildGraphql()
-        )
-      : undefined;
+    const distributionChannelsRef = model.distributionChannels.map((channel) =>
+      ReferenceGraphql.presets.channelReference().id(channel.id).buildGraphql()
+    );
+    const supplyChannelsRef = model.supplyChannels.map((channel) =>
+      ReferenceGraphql.presets.channelReference().id(channel.id).buildGraphql()
+    );
 
     return {
+      ...model,
       name,
       nameAllLocales,
       distributionChannelsRef,
