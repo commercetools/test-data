@@ -1,0 +1,4 @@
+{
+  "main": "dist/commercetools-composable-commerce-test-data-custom-fields.cjs.js",
+  "module": "dist/commercetools-composable-commerce-test-data-custom-fields.esm.js"
+}
