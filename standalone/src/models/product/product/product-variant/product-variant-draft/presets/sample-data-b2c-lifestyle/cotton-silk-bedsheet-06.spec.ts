@@ -35,7 +35,11 @@ describe(`with cottonSilkBedsheet06 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "pink",
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
             ],
           },
           {
@@ -48,7 +52,11 @@ describe(`with cottonSilkBedsheet06 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#FFB6C1",
+            "value": {
+              "de-DE": "#FFB6C1",
+              "en-GB": "#FFB6C1",
+              "en-US": "#FFB6C1",
+            },
           },
         ],
         "images": [
@@ -142,7 +150,7 @@ describe(`with cottonSilkBedsheet06 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["pink"]",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
           },
           {
             "name": "color-label",
@@ -150,7 +158,7 @@ describe(`with cottonSilkBedsheet06 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#FFB6C1"",
+            "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
           },
         ],
         "images": [

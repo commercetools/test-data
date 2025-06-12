@@ -23,7 +23,11 @@ describe(`with stoneServingTray01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with stoneServingTray01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#2F4F4F",
+            "value": {
+              "de-DE": "#2F4F4F",
+              "en-GB": "#2F4F4F",
+              "en-US": "#2F4F4F",
+            },
           },
         ],
         "images": [
@@ -118,7 +126,7 @@ describe(`with stoneServingTray01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "color-label",
@@ -126,7 +134,7 @@ describe(`with stoneServingTray01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#2F4F4F"",
+            "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
           },
         ],
         "images": [

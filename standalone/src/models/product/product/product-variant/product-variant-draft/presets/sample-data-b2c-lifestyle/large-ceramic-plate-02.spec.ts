@@ -27,7 +27,11 @@ describe(`with largeCeramicPlate02 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
@@ -40,7 +44,11 @@ describe(`with largeCeramicPlate02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#D3D3D3",
+            "value": {
+              "de-DE": "#D3D3D3",
+              "en-GB": "#D3D3D3",
+              "en-US": "#D3D3D3",
+            },
           },
         ],
         "images": [
@@ -130,7 +138,7 @@ describe(`with largeCeramicPlate02 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "color-label",
@@ -138,7 +146,7 @@ describe(`with largeCeramicPlate02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#D3D3D3"",
+            "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
           },
         ],
         "images": [

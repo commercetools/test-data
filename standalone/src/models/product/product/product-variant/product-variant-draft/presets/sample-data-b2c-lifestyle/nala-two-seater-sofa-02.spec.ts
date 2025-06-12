@@ -30,13 +30,21 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "blue",
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "black",
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
             ],
           },
           {
@@ -57,11 +65,19 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#4169E1",
+            "value": {
+              "de-DE": "#4169E1",
+              "en-GB": "#4169E1",
+              "en-US": "#4169E1",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#000000",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
+            },
           },
         ],
         "images": [
@@ -155,11 +171,11 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["blue"]",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
           },
           {
             "name": "search-finish",
-            "value": "["black"]",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
           },
           {
             "name": "color-label",
@@ -171,11 +187,11 @@ describe(`with nalaTwoSeaterSofa02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#4169E1"",
+            "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
           },
           {
             "name": "finish-code",
-            "value": ""#000000"",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

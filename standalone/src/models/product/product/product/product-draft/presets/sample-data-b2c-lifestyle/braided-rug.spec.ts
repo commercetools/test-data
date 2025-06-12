@@ -36,7 +36,11 @@ describe(`with braidedRug preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -49,7 +53,11 @@ describe(`with braidedRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#D2B48C",
+              "value": {
+                "de-DE": "#D2B48C",
+                "en-GB": "#D2B48C",
+                "en-US": "#D2B48C",
+              },
             },
           ],
           "images": [
@@ -207,7 +215,7 @@ describe(`with braidedRug preset`, () => {
           "attributes": [
             {
               "name": "search-color",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "color-label",
@@ -215,7 +223,7 @@ describe(`with braidedRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#D2B48C"",
+              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
             },
           ],
           "images": [

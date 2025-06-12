@@ -26,13 +26,21 @@ describe(`with artDecoCoffeeTable01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "black",
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "gold",
+              {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
             ],
           },
           {
@@ -53,11 +61,19 @@ describe(`with artDecoCoffeeTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#000000",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#FFD700",
+            "value": {
+              "de-DE": "#FFD700",
+              "en-GB": "#FFD700",
+              "en-US": "#FFD700",
+            },
           },
         ],
         "images": [
@@ -147,11 +163,11 @@ describe(`with artDecoCoffeeTable01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["black"]",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
           },
           {
             "name": "search-finish",
-            "value": "["gold"]",
+            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
           },
           {
             "name": "color-label",
@@ -163,11 +179,11 @@ describe(`with artDecoCoffeeTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#000000"",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
           {
             "name": "finish-code",
-            "value": ""#FFD700"",
+            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
           },
         ],
         "images": [

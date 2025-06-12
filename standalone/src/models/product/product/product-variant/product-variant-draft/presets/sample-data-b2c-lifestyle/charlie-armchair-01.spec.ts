@@ -20,13 +20,21 @@ describe(`with charlieArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
@@ -47,11 +55,19 @@ describe(`with charlieArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#CD853F",
+            "value": {
+              "de-DE": "#CD853F",
+              "en-GB": "#CD853F",
+              "en-US": "#CD853F",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#D2B48C",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
+            },
           },
         ],
         "images": [
@@ -133,11 +149,11 @@ describe(`with charlieArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "search-finish",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "color-label",
@@ -149,11 +165,11 @@ describe(`with charlieArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#CD853F"",
+            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
           },
           {
             "name": "finish-code",
-            "value": ""#D2B48C"",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
         ],
         "images": [

@@ -51,7 +51,11 @@ describe(`with modernLandscapePainting preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "blue",
+                {
+                  "de-DE": "Blau",
+                  "en-GB": "Blue",
+                  "en-US": "Blue",
+                },
               ],
             },
             {
@@ -64,7 +68,11 @@ describe(`with modernLandscapePainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#87CEEB",
+              "value": {
+                "de-DE": "#87CEEB",
+                "en-GB": "#87CEEB",
+                "en-US": "#87CEEB",
+              },
             },
           ],
           "images": [
@@ -211,7 +219,7 @@ describe(`with modernLandscapePainting preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["blue"]",
+              "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
             },
             {
               "name": "color-label",
@@ -219,7 +227,7 @@ describe(`with modernLandscapePainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#87CEEB"",
+              "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
             },
           ],
           "images": [

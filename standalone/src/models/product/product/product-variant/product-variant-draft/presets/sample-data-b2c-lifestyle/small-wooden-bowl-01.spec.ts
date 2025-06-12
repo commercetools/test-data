@@ -20,7 +20,11 @@ describe(`with smallWoodenBowl01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -33,7 +37,11 @@ describe(`with smallWoodenBowl01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#8b4513",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
+            },
           },
         ],
         "images": [
@@ -139,7 +147,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -147,7 +155,7 @@ describe(`with smallWoodenBowl01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#8b4513"",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

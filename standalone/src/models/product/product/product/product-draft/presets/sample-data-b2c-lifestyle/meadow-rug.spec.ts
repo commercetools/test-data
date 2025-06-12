@@ -44,7 +44,11 @@ describe(`with meadowRug preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "gray",
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
               ],
             },
             {
@@ -57,7 +61,11 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#808080",
+              "value": {
+                "de-DE": "#808080",
+                "en-GB": "#808080",
+                "en-US": "#808080",
+              },
             },
           ],
           "images": [
@@ -169,7 +177,11 @@ describe(`with meadowRug preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -182,7 +194,11 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -262,7 +278,11 @@ describe(`with meadowRug preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "blue",
+                  {
+                    "de-DE": "Blau",
+                    "en-GB": "Blue",
+                    "en-US": "Blue",
+                  },
                 ],
               },
               {
@@ -275,7 +295,11 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#87CEEB",
+                "value": {
+                  "de-DE": "#87CEEB",
+                  "en-GB": "#87CEEB",
+                  "en-US": "#87CEEB",
+                },
               },
             ],
             "images": [
@@ -390,7 +414,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["gray"]",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
             },
             {
               "name": "color-label",
@@ -398,7 +422,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#808080"",
+              "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
             },
           ],
           "images": [
@@ -523,7 +547,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -531,7 +555,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -612,7 +636,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["blue"]",
+                "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
               },
               {
                 "name": "color-label",
@@ -620,7 +644,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#87CEEB"",
+                "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
               },
             ],
             "images": [

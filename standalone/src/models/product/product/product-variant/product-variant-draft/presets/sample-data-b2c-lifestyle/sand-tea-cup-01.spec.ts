@@ -19,7 +19,11 @@ describe(`with sandTeaCup01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
@@ -32,7 +36,11 @@ describe(`with sandTeaCup01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#C2B280",
+            "value": {
+              "de-DE": "#C2B280",
+              "en-GB": "#C2B280",
+              "en-US": "#C2B280",
+            },
           },
         ],
         "images": [
@@ -114,7 +122,7 @@ describe(`with sandTeaCup01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "color-label",
@@ -122,7 +130,7 @@ describe(`with sandTeaCup01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#C2B280"",
+            "value": "{"en-US":"#C2B280","en-GB":"#C2B280","de-DE":"#C2B280"}",
           },
         ],
         "images": [

@@ -19,13 +19,21 @@ describe(`with brunoChair preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "blue",
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -46,11 +54,19 @@ describe(`with brunoChair preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#4169E1",
+            "value": {
+              "de-DE": "#4169E1",
+              "en-GB": "#4169E1",
+              "en-US": "#4169E1",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#8b4513",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
+            },
           },
         ],
         "images": [
@@ -132,11 +148,11 @@ describe(`with brunoChair preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["blue"]",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -148,11 +164,11 @@ describe(`with brunoChair preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#4169E1"",
+            "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
           },
           {
             "name": "finish-code",
-            "value": ""#8b4513"",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

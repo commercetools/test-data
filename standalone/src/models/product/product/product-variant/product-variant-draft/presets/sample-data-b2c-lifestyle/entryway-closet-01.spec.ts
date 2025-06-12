@@ -23,13 +23,21 @@ describe(`with entrywayCloset01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -50,11 +58,19 @@ describe(`with entrywayCloset01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#D2B48C",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#deb887",
+            "value": {
+              "de-DE": "#deb887",
+              "en-GB": "#deb887",
+              "en-US": "#deb887",
+            },
           },
         ],
         "images": [
@@ -152,11 +168,11 @@ describe(`with entrywayCloset01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -168,11 +184,11 @@ describe(`with entrywayCloset01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#D2B48C"",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
           {
             "name": "finish-code",
-            "value": ""#deb887"",
+            "value": "{"en-US":"#deb887","en-GB":"#deb887","de-DE":"#deb887"}",
           },
         ],
         "images": [

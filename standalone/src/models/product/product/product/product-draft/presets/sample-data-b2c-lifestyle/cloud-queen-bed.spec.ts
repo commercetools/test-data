@@ -44,7 +44,11 @@ describe(`with cloudQueenBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "blue",
+                {
+                  "de-DE": "Blau",
+                  "en-GB": "Blue",
+                  "en-US": "Blue",
+                },
               ],
             },
             {
@@ -57,7 +61,11 @@ describe(`with cloudQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#ADD8E6",
+              "value": {
+                "de-DE": "#ADD8E6",
+                "en-GB": "#ADD8E6",
+                "en-US": "#ADD8E6",
+              },
             },
           ],
           "images": [
@@ -212,7 +220,7 @@ describe(`with cloudQueenBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["blue"]",
+              "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
             },
             {
               "name": "color-label",
@@ -220,7 +228,7 @@ describe(`with cloudQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#ADD8E6"",
+              "value": "{"en-US":"#ADD8E6","en-GB":"#ADD8E6","de-DE":"#ADD8E6"}",
             },
           ],
           "images": [

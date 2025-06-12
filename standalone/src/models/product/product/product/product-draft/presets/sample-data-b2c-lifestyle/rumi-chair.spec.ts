@@ -44,13 +44,21 @@ describe(`with rumiChair preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "pink",
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "gold",
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
               ],
             },
             {
@@ -71,11 +79,19 @@ describe(`with rumiChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#fff0f5",
+              "value": {
+                "de-DE": "#fff0f5",
+                "en-GB": "#fff0f5",
+                "en-US": "#fff0f5",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#FFD700",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
+              },
             },
           ],
           "images": [
@@ -221,11 +237,11 @@ describe(`with rumiChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["pink"]",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
               "name": "search-finish",
-              "value": "["gold"]",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
             },
             {
               "name": "color-label",
@@ -237,11 +253,11 @@ describe(`with rumiChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#fff0f5"",
+              "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
             },
             {
               "name": "finish-code",
-              "value": ""#FFD700"",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

@@ -55,13 +55,21 @@ describe(`with abigailLoungeChair preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "pink",
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "gold",
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
               ],
             },
             {
@@ -82,11 +90,19 @@ describe(`with abigailLoungeChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFB6C1",
+              "value": {
+                "de-DE": "#FFB6C1",
+                "en-GB": "#FFB6C1",
+                "en-US": "#FFB6C1",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#FFD700",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
+              },
             },
           ],
           "images": [
@@ -256,11 +272,11 @@ describe(`with abigailLoungeChair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["pink"]",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
               "name": "search-finish",
-              "value": "["gold"]",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
             },
             {
               "name": "color-label",
@@ -272,11 +288,11 @@ describe(`with abigailLoungeChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFB6C1"",
+              "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
             },
             {
               "name": "finish-code",
-              "value": ""#FFD700"",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

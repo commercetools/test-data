@@ -23,7 +23,11 @@ describe(`with mayaPillowCover01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "purple",
+              {
+                "de-DE": "Violett",
+                "en-GB": "Purple",
+                "en-US": "Purple",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#DDA0DD",
+            "value": {
+              "de-DE": "#DDA0DD",
+              "en-GB": "#DDA0DD",
+              "en-US": "#DDA0DD",
+            },
           },
         ],
         "images": [
@@ -118,7 +126,7 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["purple"]",
+            "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
           },
           {
             "name": "color-label",
@@ -126,7 +134,7 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#DDA0DD"",
+            "value": "{"en-US":"#DDA0DD","en-GB":"#DDA0DD","de-DE":"#DDA0DD"}",
           },
         ],
         "images": [

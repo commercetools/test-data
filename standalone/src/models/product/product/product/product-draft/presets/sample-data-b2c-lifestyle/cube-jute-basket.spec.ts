@@ -49,7 +49,11 @@ describe(`with cubeJuteBasket preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -62,7 +66,11 @@ describe(`with cubeJuteBasket preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#D2B48C",
+              "value": {
+                "de-DE": "#D2B48C",
+                "en-GB": "#D2B48C",
+                "en-US": "#D2B48C",
+              },
             },
           ],
           "images": [

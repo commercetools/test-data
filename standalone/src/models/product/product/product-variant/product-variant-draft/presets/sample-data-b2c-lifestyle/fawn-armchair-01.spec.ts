@@ -22,13 +22,21 @@ describe(`with fawnArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "black",
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
             ],
           },
           {
@@ -49,11 +57,19 @@ describe(`with fawnArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#D2B48C",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#000000",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
+            },
           },
         ],
         "images": [
@@ -135,11 +151,11 @@ describe(`with fawnArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "search-finish",
-            "value": "["black"]",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
           },
           {
             "name": "color-label",
@@ -151,11 +167,11 @@ describe(`with fawnArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#D2B48C"",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
           {
             "name": "finish-code",
-            "value": ""#000000"",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

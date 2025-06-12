@@ -48,7 +48,11 @@ describe(`with squareBambooCoaster preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -61,7 +65,11 @@ describe(`with squareBambooCoaster preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#f5deb3",
+              "value": {
+                "de-DE": "#f5deb3",
+                "en-GB": "#f5deb3",
+                "en-US": "#f5deb3",
+              },
             },
           ],
           "images": [
@@ -208,7 +216,7 @@ describe(`with squareBambooCoaster preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "color-label",
@@ -216,7 +224,7 @@ describe(`with squareBambooCoaster preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#f5deb3"",
+              "value": "{"en-US":"#f5deb3","en-GB":"#f5deb3","de-DE":"#f5deb3"}",
             },
           ],
           "images": [

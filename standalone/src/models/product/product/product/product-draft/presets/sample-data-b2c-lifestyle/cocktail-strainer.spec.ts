@@ -46,7 +46,11 @@ describe(`with cocktailStrainer preset`, () => {
             {
               "name": "search-finish",
               "value": [
-                "silver",
+                {
+                  "de-DE": "Silber",
+                  "en-GB": "Silver",
+                  "en-US": "Silver",
+                },
               ],
             },
             {
@@ -59,7 +63,11 @@ describe(`with cocktailStrainer preset`, () => {
             },
             {
               "name": "finish-code",
-              "value": "#C0C0C0",
+              "value": {
+                "de-DE": "#C0C0C0",
+                "en-GB": "#C0C0C0",
+                "en-US": "#C0C0C0",
+              },
             },
           ],
           "images": [

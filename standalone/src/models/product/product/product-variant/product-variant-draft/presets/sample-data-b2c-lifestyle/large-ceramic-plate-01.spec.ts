@@ -27,7 +27,11 @@ describe(`with largeCeramicPlate01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "green",
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
             ],
           },
           {
@@ -40,7 +44,11 @@ describe(`with largeCeramicPlate01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#BAB86C",
+            "value": {
+              "de-DE": "#BAB86C",
+              "en-GB": "#BAB86C",
+              "en-US": "#BAB86C",
+            },
           },
         ],
         "images": [
@@ -130,7 +138,7 @@ describe(`with largeCeramicPlate01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["green"]",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
             "name": "color-label",
@@ -138,7 +146,7 @@ describe(`with largeCeramicPlate01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#BAB86C"",
+            "value": "{"en-US":"#BAB86C","en-GB":"#BAB86C","de-DE":"#BAB86C"}",
           },
         ],
         "images": [

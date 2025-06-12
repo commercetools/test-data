@@ -26,13 +26,21 @@ describe(`with orionDoubleBed01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "green",
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "silver",
+              {
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
             ],
           },
           {
@@ -53,11 +61,19 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#BCB88A",
+            "value": {
+              "de-DE": "#BCB88A",
+              "en-GB": "#BCB88A",
+              "en-US": "#BCB88A",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#C0C0C0",
+            "value": {
+              "de-DE": "#C0C0C0",
+              "en-GB": "#C0C0C0",
+              "en-US": "#C0C0C0",
+            },
           },
         ],
         "images": [
@@ -139,11 +155,11 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["green"]",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
             "name": "search-finish",
-            "value": "["silver"]",
+            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
           },
           {
             "name": "color-label",
@@ -155,11 +171,11 @@ describe(`with orionDoubleBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#BCB88A"",
+            "value": "{"en-US":"#BCB88A","en-GB":"#BCB88A","de-DE":"#BCB88A"}",
           },
           {
             "name": "finish-code",
-            "value": ""#C0C0C0"",
+            "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
           },
         ],
         "images": [

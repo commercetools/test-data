@@ -20,13 +20,21 @@ describe(`with clinkChampagneGlass01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "transparent",
+              {
+                "de-DE": "Transparent",
+                "en-GB": "Transparent",
+                "en-US": "Transparent",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "glass",
+              {
+                "de-DE": "Glas",
+                "en-GB": "Glass",
+                "en-US": "Glass",
+              },
             ],
           },
           {
@@ -47,11 +55,19 @@ describe(`with clinkChampagneGlass01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "transparent",
+            "value": {
+              "de-DE": "transparent",
+              "en-GB": "transparent",
+              "en-US": "transparent",
+            },
           },
           {
             "name": "finish-code",
-            "value": "transparent",
+            "value": {
+              "de-DE": "transparent",
+              "en-GB": "transparent",
+              "en-US": "transparent",
+            },
           },
         ],
         "images": [
@@ -133,11 +149,11 @@ describe(`with clinkChampagneGlass01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["transparent"]",
+            "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
           },
           {
             "name": "search-finish",
-            "value": "["glass"]",
+            "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
           },
           {
             "name": "color-label",
@@ -149,11 +165,11 @@ describe(`with clinkChampagneGlass01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""transparent"",
+            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
           },
           {
             "name": "finish-code",
-            "value": ""transparent"",
+            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
           },
         ],
         "images": [

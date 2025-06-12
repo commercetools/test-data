@@ -23,7 +23,11 @@ describe(`with walnutCabinet01 preset`, () => {
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with walnutCabinet01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "#a52a2a",
+            "value": {
+              "de-DE": "#a52a2a",
+              "en-GB": "#a52a2a",
+              "en-US": "#a52a2a",
+            },
           },
         ],
         "images": [
@@ -145,7 +153,7 @@ describe(`with walnutCabinet01 preset`, () => {
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "finish-label",
@@ -153,7 +161,7 @@ describe(`with walnutCabinet01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": ""#a52a2a"",
+            "value": "{"en-US":"#a52a2a","en-GB":"#a52a2a","de-DE":"#a52a2a"}",
           },
         ],
         "images": [

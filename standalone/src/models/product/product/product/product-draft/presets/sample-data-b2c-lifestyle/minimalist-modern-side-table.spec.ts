@@ -63,13 +63,21 @@ describe(`with minimalistModernSideTable preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "white",
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "brown",
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
               ],
             },
             {
@@ -90,11 +98,19 @@ describe(`with minimalistModernSideTable preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFFFFF",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#8b4513",
+              "value": {
+                "de-DE": "#8b4513",
+                "en-GB": "#8b4513",
+                "en-US": "#8b4513",
+              },
             },
           ],
           "images": [
@@ -212,13 +228,21 @@ describe(`with minimalistModernSideTable preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "yellow",
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "brown",
+                  {
+                    "de-DE": "Braun",
+                    "en-GB": "Brown",
+                    "en-US": "Brown",
+                  },
                 ],
               },
               {
@@ -239,11 +263,19 @@ describe(`with minimalistModernSideTable preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#DAA520",
+                "value": {
+                  "de-DE": "#DAA520",
+                  "en-GB": "#DAA520",
+                  "en-US": "#DAA520",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#8b4513",
+                "value": {
+                  "de-DE": "#8b4513",
+                  "en-GB": "#8b4513",
+                  "en-US": "#8b4513",
+                },
               },
             ],
             "images": [
@@ -371,11 +403,11 @@ describe(`with minimalistModernSideTable preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["white"]",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
               "name": "search-finish",
-              "value": "["brown"]",
+              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
             },
             {
               "name": "color-label",
@@ -387,11 +419,11 @@ describe(`with minimalistModernSideTable preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFFFFF"",
+              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
             },
             {
               "name": "finish-code",
-              "value": ""#8b4513"",
+              "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
             },
           ],
           "images": [
@@ -516,11 +548,11 @@ describe(`with minimalistModernSideTable preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["yellow"]",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["brown"]",
+                "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
               },
               {
                 "name": "color-label",
@@ -532,11 +564,11 @@ describe(`with minimalistModernSideTable preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#DAA520"",
+                "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#8b4513"",
+                "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
               },
             ],
             "images": [

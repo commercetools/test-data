@@ -59,13 +59,21 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "white",
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "black",
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
               ],
             },
             {
@@ -86,11 +94,19 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFFFFF",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#000000",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
+              },
             },
           ],
           "images": [
@@ -245,11 +261,11 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["white"]",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
               "name": "search-finish",
-              "value": "["black"]",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
             },
             {
               "name": "color-label",
@@ -261,11 +277,11 @@ describe(`with modernUpholsteredQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFFFFF"",
+              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
             },
             {
               "name": "finish-code",
-              "value": ""#000000"",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
             },
           ],
           "images": [

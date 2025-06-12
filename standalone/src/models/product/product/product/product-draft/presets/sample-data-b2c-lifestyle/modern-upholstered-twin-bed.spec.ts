@@ -62,13 +62,21 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "white",
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "gray",
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
               ],
             },
             {
@@ -89,11 +97,19 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFFFFF",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#778899",
+              "value": {
+                "de-DE": "#778899",
+                "en-GB": "#778899",
+                "en-US": "#778899",
+              },
             },
           ],
           "images": [
@@ -230,13 +246,21 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "green",
+                  {
+                    "de-DE": "Grün",
+                    "en-GB": "Green",
+                    "en-US": "Green",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
@@ -257,11 +281,19 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#2E8B57",
+                "value": {
+                  "de-DE": "#2E8B57",
+                  "en-GB": "#2E8B57",
+                  "en-US": "#2E8B57",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#778899",
+                "value": {
+                  "de-DE": "#778899",
+                  "en-GB": "#778899",
+                  "en-US": "#778899",
+                },
               },
             ],
             "images": [
@@ -366,13 +398,21 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
@@ -393,11 +433,19 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#808080",
+                "value": {
+                  "de-DE": "#808080",
+                  "en-GB": "#808080",
+                  "en-US": "#808080",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#778899",
+                "value": {
+                  "de-DE": "#778899",
+                  "en-GB": "#778899",
+                  "en-US": "#778899",
+                },
               },
             ],
             "images": [
@@ -502,13 +550,21 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "yellow",
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
@@ -529,11 +585,19 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#D2B48C",
+                "value": {
+                  "de-DE": "#D2B48C",
+                  "en-GB": "#D2B48C",
+                  "en-US": "#D2B48C",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#778899",
+                "value": {
+                  "de-DE": "#778899",
+                  "en-GB": "#778899",
+                  "en-US": "#778899",
+                },
               },
             ],
             "images": [
@@ -673,11 +737,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["white"]",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
               "name": "search-finish",
-              "value": "["gray"]",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
             },
             {
               "name": "color-label",
@@ -689,11 +753,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFFFFF"",
+              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
             },
             {
               "name": "finish-code",
-              "value": ""#778899"",
+              "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
             },
           ],
           "images": [
@@ -834,11 +898,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["green"]",
+                "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "color-label",
@@ -850,11 +914,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#2E8B57"",
+                "value": "{"en-US":"#2E8B57","en-GB":"#2E8B57","de-DE":"#2E8B57"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#778899"",
+                "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
               },
             ],
             "images": [
@@ -951,11 +1015,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "color-label",
@@ -967,11 +1031,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#808080"",
+                "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#778899"",
+                "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
               },
             ],
             "images": [
@@ -1068,11 +1132,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["yellow"]",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "color-label",
@@ -1084,11 +1148,11 @@ describe(`with modernUpholsteredTwinBed preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#D2B48C"",
+                "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#778899"",
+                "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
               },
             ],
             "images": [

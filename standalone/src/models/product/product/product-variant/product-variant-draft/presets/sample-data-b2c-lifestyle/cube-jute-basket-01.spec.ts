@@ -29,7 +29,11 @@ describe(`with cubeJuteBasket01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
@@ -42,7 +46,11 @@ describe(`with cubeJuteBasket01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#D2B48C",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
+            },
           },
         ],
         "images": [
@@ -143,7 +151,7 @@ describe(`with cubeJuteBasket01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "color-label",
@@ -151,7 +159,7 @@ describe(`with cubeJuteBasket01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#D2B48C"",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
         ],
         "images": [

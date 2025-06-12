@@ -47,7 +47,11 @@ describe(`with ariaRug preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "white",
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
               ],
             },
             {
@@ -60,7 +64,11 @@ describe(`with ariaRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFFFF0",
+              "value": {
+                "de-DE": "#FFFFF0",
+                "en-GB": "#FFFFF0",
+                "en-US": "#FFFFF0",
+              },
             },
           ],
           "images": [
@@ -230,7 +238,7 @@ describe(`with ariaRug preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["white"]",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
               "name": "color-label",
@@ -238,7 +246,7 @@ describe(`with ariaRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFFFF0"",
+              "value": "{"en-US":"#FFFFF0","en-GB":"#FFFFF0","de-DE":"#FFFFF0"}",
             },
           ],
           "images": [

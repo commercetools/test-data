@@ -23,7 +23,11 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "blue",
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#4169E1",
+            "value": {
+              "de-DE": "#4169E1",
+              "en-GB": "#4169E1",
+              "en-US": "#4169E1",
+            },
           },
         ],
         "images": [
@@ -126,7 +134,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["blue"]",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
           },
           {
             "name": "color-label",
@@ -134,7 +142,7 @@ describe(`with turnerVelvetArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#4169E1"",
+            "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
           },
         ],
         "images": [

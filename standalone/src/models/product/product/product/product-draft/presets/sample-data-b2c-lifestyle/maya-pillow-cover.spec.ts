@@ -43,7 +43,11 @@ describe(`with mayaPillowCover preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "purple",
+                {
+                  "de-DE": "Violett",
+                  "en-GB": "Purple",
+                  "en-US": "Purple",
+                },
               ],
             },
             {
@@ -56,7 +60,11 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#DDA0DD",
+              "value": {
+                "de-DE": "#DDA0DD",
+                "en-GB": "#DDA0DD",
+                "en-US": "#DDA0DD",
+              },
             },
           ],
           "images": [
@@ -171,7 +179,11 @@ describe(`with mayaPillowCover preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "yellow",
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
                 ],
               },
               {
@@ -184,7 +196,11 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#F5F5DC",
+                "value": {
+                  "de-DE": "#F5F5DC",
+                  "en-GB": "#F5F5DC",
+                  "en-US": "#F5F5DC",
+                },
               },
             ],
             "images": [
@@ -296,7 +312,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["purple"]",
+              "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
             },
             {
               "name": "color-label",
@@ -304,7 +320,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#DDA0DD"",
+              "value": "{"en-US":"#DDA0DD","en-GB":"#DDA0DD","de-DE":"#DDA0DD"}",
             },
           ],
           "images": [
@@ -429,7 +445,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["yellow"]",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
               },
               {
                 "name": "color-label",
@@ -437,7 +453,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#F5F5DC"",
+                "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
               },
             ],
             "images": [

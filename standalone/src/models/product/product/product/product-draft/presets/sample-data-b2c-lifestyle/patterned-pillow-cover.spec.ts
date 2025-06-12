@@ -44,7 +44,11 @@ describe(`with patternedPillowCover preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "pink",
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
               ],
             },
             {
@@ -57,7 +61,11 @@ describe(`with patternedPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#fff0f5",
+              "value": {
+                "de-DE": "#fff0f5",
+                "en-GB": "#fff0f5",
+                "en-US": "#fff0f5",
+              },
             },
           ],
           "images": [
@@ -176,7 +184,11 @@ describe(`with patternedPillowCover preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -189,7 +201,11 @@ describe(`with patternedPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -301,7 +317,7 @@ describe(`with patternedPillowCover preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["pink"]",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
               "name": "color-label",
@@ -309,7 +325,7 @@ describe(`with patternedPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#fff0f5"",
+              "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
             },
           ],
           "images": [
@@ -438,7 +454,7 @@ describe(`with patternedPillowCover preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -446,7 +462,7 @@ describe(`with patternedPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [

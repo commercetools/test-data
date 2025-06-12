@@ -26,13 +26,21 @@ describe(`with sweetPeaCandle01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "pink",
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "glass",
+              {
+                "de-DE": "Glas",
+                "en-GB": "Glass",
+                "en-US": "Glass",
+              },
             ],
           },
           {
@@ -53,11 +61,19 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#FFC0CB",
+            "value": {
+              "de-DE": "#FFC0CB",
+              "en-GB": "#FFC0CB",
+              "en-US": "#FFC0CB",
+            },
           },
           {
             "name": "finish-code",
-            "value": "transparent",
+            "value": {
+              "de-DE": "transparent",
+              "en-GB": "transparent",
+              "en-US": "transparent",
+            },
           },
         ],
         "images": [
@@ -155,11 +171,11 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["pink"]",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
           },
           {
             "name": "search-finish",
-            "value": "["glass"]",
+            "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
           },
           {
             "name": "color-label",
@@ -171,11 +187,11 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#FFC0CB"",
+            "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
           },
           {
             "name": "finish-code",
-            "value": ""transparent"",
+            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
           },
         ],
         "images": [

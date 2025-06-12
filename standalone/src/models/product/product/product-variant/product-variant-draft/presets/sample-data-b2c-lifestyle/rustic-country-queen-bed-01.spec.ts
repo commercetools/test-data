@@ -26,13 +26,21 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -53,11 +61,19 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#D2B48C",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#8b4513",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
+            },
           },
         ],
         "images": [
@@ -139,11 +155,11 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -155,11 +171,11 @@ describe(`with rusticCountryQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#D2B48C"",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
           {
             "name": "finish-code",
-            "value": ""#8b4513"",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

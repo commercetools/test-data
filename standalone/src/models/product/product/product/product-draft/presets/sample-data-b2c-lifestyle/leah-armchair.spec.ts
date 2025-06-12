@@ -44,13 +44,21 @@ describe(`with leahArmchair preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "gray",
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -71,11 +79,19 @@ describe(`with leahArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#808080",
+              "value": {
+                "de-DE": "#808080",
+                "en-GB": "#808080",
+                "en-US": "#808080",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#D2B48C",
+              "value": {
+                "de-DE": "#D2B48C",
+                "en-GB": "#D2B48C",
+                "en-US": "#D2B48C",
+              },
             },
           ],
           "images": [
@@ -222,11 +238,11 @@ describe(`with leahArmchair preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["gray"]",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
             },
             {
               "name": "search-finish",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "color-label",
@@ -238,11 +254,11 @@ describe(`with leahArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#808080"",
+              "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
             },
             {
               "name": "finish-code",
-              "value": ""#D2B48C"",
+              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
             },
           ],
           "images": [

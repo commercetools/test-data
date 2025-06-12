@@ -20,13 +20,21 @@ describe(`with sallyArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "pink",
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
@@ -47,11 +55,19 @@ describe(`with sallyArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#FFC0CB",
+            "value": {
+              "de-DE": "#FFC0CB",
+              "en-GB": "#FFC0CB",
+              "en-US": "#FFC0CB",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#F5F5DC",
+            "value": {
+              "de-DE": "#F5F5DC",
+              "en-GB": "#F5F5DC",
+              "en-US": "#F5F5DC",
+            },
           },
         ],
         "images": [
@@ -133,11 +149,11 @@ describe(`with sallyArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["pink"]",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
           },
           {
             "name": "search-finish",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "color-label",
@@ -149,11 +165,11 @@ describe(`with sallyArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#FFC0CB"",
+            "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
           },
           {
             "name": "finish-code",
-            "value": ""#F5F5DC"",
+            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
           },
         ],
         "images": [

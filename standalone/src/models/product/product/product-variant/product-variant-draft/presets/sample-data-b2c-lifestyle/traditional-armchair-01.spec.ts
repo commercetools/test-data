@@ -23,7 +23,11 @@ describe(`with traditionalArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#FFF8DC",
+            "value": {
+              "de-DE": "#FFF8DC",
+              "en-GB": "#FFF8DC",
+              "en-US": "#FFF8DC",
+            },
           },
         ],
         "images": [
@@ -134,7 +142,7 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "color-label",
@@ -142,7 +150,7 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#FFF8DC"",
+            "value": "{"en-US":"#FFF8DC","en-GB":"#FFF8DC","de-DE":"#FFF8DC"}",
           },
         ],
         "images": [

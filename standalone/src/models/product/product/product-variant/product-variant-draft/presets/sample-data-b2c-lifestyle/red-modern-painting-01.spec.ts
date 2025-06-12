@@ -23,7 +23,11 @@ describe(`with redModernPainting01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "red",
+              {
+                "de-DE": "Rot",
+                "en-GB": "Red",
+                "en-US": "Red",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with redModernPainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#ff0000",
+            "value": {
+              "de-DE": "#ff0000",
+              "en-GB": "#ff0000",
+              "en-US": "#ff0000",
+            },
           },
         ],
         "images": [
@@ -118,7 +126,7 @@ describe(`with redModernPainting01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["red"]",
+            "value": "[{"en-US":"Red","en-GB":"Red","de-DE":"Rot"}]",
           },
           {
             "name": "color-label",
@@ -126,7 +134,7 @@ describe(`with redModernPainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#ff0000"",
+            "value": "{"en-US":"#ff0000","en-GB":"#ff0000","de-DE":"#ff0000"}",
           },
         ],
         "images": [

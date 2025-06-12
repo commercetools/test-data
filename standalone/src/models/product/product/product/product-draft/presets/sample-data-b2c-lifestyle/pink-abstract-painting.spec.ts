@@ -48,7 +48,11 @@ describe(`with pinkAbstractPainting preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "pink",
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
               ],
             },
             {
@@ -61,7 +65,11 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#FFC0CB",
+              "value": {
+                "de-DE": "#FFC0CB",
+                "en-GB": "#FFC0CB",
+                "en-US": "#FFC0CB",
+              },
             },
           ],
           "images": [
@@ -208,7 +216,7 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["pink"]",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
               "name": "color-label",
@@ -216,7 +224,7 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#FFC0CB"",
+              "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
             },
           ],
           "images": [

@@ -20,7 +20,11 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -33,7 +37,11 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#CD853F",
+            "value": {
+              "de-DE": "#CD853F",
+              "en-GB": "#CD853F",
+              "en-US": "#CD853F",
+            },
           },
         ],
         "images": [
@@ -115,7 +123,7 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -123,7 +131,7 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#CD853F"",
+            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
           },
         ],
         "images": [

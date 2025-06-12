@@ -26,7 +26,11 @@ describe(`with patternedPillowCover01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "pink",
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
             ],
           },
           {
@@ -39,7 +43,11 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#fff0f5",
+            "value": {
+              "de-DE": "#fff0f5",
+              "en-GB": "#fff0f5",
+              "en-US": "#fff0f5",
+            },
           },
         ],
         "images": [
@@ -121,7 +129,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["pink"]",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
           },
           {
             "name": "color-label",
@@ -129,7 +137,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#fff0f5"",
+            "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
           },
         ],
         "images": [

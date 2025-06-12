@@ -26,13 +26,21 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "transparent",
+              {
+                "de-DE": "Transparent",
+                "en-GB": "Transparent",
+                "en-US": "Transparent",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "gold",
+              {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
             ],
           },
           {
@@ -53,11 +61,19 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "transparent",
+            "value": {
+              "de-DE": "transparent",
+              "en-GB": "transparent",
+              "en-US": "transparent",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#FFD700",
+            "value": {
+              "de-DE": "#FFD700",
+              "en-GB": "#FFD700",
+              "en-US": "#FFD700",
+            },
           },
         ],
         "images": [
@@ -163,11 +179,11 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["transparent"]",
+            "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
           },
           {
             "name": "search-finish",
-            "value": "["gold"]",
+            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
           },
           {
             "name": "color-label",
@@ -179,11 +195,11 @@ describe(`with goldRimmedChampagneGlasses01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""transparent"",
+            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
           },
           {
             "name": "finish-code",
-            "value": ""#FFD700"",
+            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
           },
         ],
         "images": [

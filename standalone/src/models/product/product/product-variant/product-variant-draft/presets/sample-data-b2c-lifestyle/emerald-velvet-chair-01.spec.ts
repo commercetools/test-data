@@ -23,13 +23,21 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "green",
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -50,11 +58,19 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#008000",
+            "value": {
+              "de-DE": "#008000",
+              "en-GB": "#008000",
+              "en-US": "#008000",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#deb887",
+            "value": {
+              "de-DE": "#deb887",
+              "en-GB": "#deb887",
+              "en-US": "#deb887",
+            },
           },
         ],
         "images": [
@@ -136,11 +152,11 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["green"]",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -152,11 +168,11 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#008000"",
+            "value": "{"en-US":"#008000","en-GB":"#008000","de-DE":"#008000"}",
           },
           {
             "name": "finish-code",
-            "value": ""#deb887"",
+            "value": "{"en-US":"#deb887","en-GB":"#deb887","de-DE":"#deb887"}",
           },
         ],
         "images": [

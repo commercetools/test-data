@@ -15,7 +15,11 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
           {
             "name": "search-finish",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
@@ -28,7 +32,11 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "#dcdcdc",
+            "value": {
+              "de-DE": "#dcdcdc",
+              "en-GB": "#dcdcdc",
+              "en-US": "#dcdcdc",
+            },
           },
         ],
         "images": [
@@ -122,7 +130,7 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
         "attributes": [
           {
             "name": "search-finish",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "finish-label",
@@ -130,7 +138,7 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": ""#dcdcdc"",
+            "value": "{"en-US":"#dcdcdc","en-GB":"#dcdcdc","de-DE":"#dcdcdc"}",
           },
         ],
         "images": [

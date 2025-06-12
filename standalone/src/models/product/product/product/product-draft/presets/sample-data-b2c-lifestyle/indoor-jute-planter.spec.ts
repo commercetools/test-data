@@ -50,7 +50,11 @@ describe(`with indoorJutePlanter preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "brown",
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
               ],
             },
             {
@@ -63,7 +67,11 @@ describe(`with indoorJutePlanter preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#D2B48C",
+              "value": {
+                "de-DE": "#D2B48C",
+                "en-GB": "#D2B48C",
+                "en-US": "#D2B48C",
+              },
             },
           ],
           "images": [
@@ -181,7 +189,11 @@ describe(`with indoorJutePlanter preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "brown",
+                  {
+                    "de-DE": "Braun",
+                    "en-GB": "Brown",
+                    "en-US": "Brown",
+                  },
                 ],
               },
               {
@@ -194,7 +206,11 @@ describe(`with indoorJutePlanter preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#D2B48C",
+                "value": {
+                  "de-DE": "#D2B48C",
+                  "en-GB": "#D2B48C",
+                  "en-US": "#D2B48C",
+                },
               },
             ],
             "images": [
@@ -314,7 +330,7 @@ describe(`with indoorJutePlanter preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["brown"]",
+              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
             },
             {
               "name": "color-label",
@@ -322,7 +338,7 @@ describe(`with indoorJutePlanter preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#D2B48C"",
+              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
             },
           ],
           "images": [
@@ -451,7 +467,7 @@ describe(`with indoorJutePlanter preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["brown"]",
+                "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
               },
               {
                 "name": "color-label",
@@ -459,7 +475,7 @@ describe(`with indoorJutePlanter preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#D2B48C"",
+                "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
               },
             ],
             "images": [

@@ -51,7 +51,11 @@ describe(`with purpleLandscapePainting preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "purple",
+                {
+                  "de-DE": "Violett",
+                  "en-GB": "Purple",
+                  "en-US": "Purple",
+                },
               ],
             },
             {
@@ -64,7 +68,11 @@ describe(`with purpleLandscapePainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#800080",
+              "value": {
+                "de-DE": "#800080",
+                "en-GB": "#800080",
+                "en-US": "#800080",
+              },
             },
           ],
           "images": [
@@ -211,7 +219,7 @@ describe(`with purpleLandscapePainting preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["purple"]",
+              "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
             },
             {
               "name": "color-label",
@@ -219,7 +227,7 @@ describe(`with purpleLandscapePainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#800080"",
+              "value": "{"en-US":"#800080","en-GB":"#800080","de-DE":"#800080"}",
             },
           ],
           "images": [

@@ -58,7 +58,11 @@ describe(`with geometricPillowCase preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "silver",
+                {
+                  "de-DE": "Silber",
+                  "en-GB": "Silver",
+                  "en-US": "Silver",
+                },
               ],
             },
             {
@@ -71,7 +75,11 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#C0C0C0",
+              "value": {
+                "de-DE": "#C0C0C0",
+                "en-GB": "#C0C0C0",
+                "en-US": "#C0C0C0",
+              },
             },
           ],
           "images": [
@@ -204,7 +212,11 @@ describe(`with geometricPillowCase preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "pink",
+                  {
+                    "de-DE": "Rosa",
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                  },
                 ],
               },
               {
@@ -217,7 +229,11 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#FFB6C1",
+                "value": {
+                  "de-DE": "#FFB6C1",
+                  "en-GB": "#FFB6C1",
+                  "en-US": "#FFB6C1",
+                },
               },
             ],
             "images": [
@@ -318,7 +334,11 @@ describe(`with geometricPillowCase preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "yellow",
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
                 ],
               },
               {
@@ -331,7 +351,11 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#D2B48C",
+                "value": {
+                  "de-DE": "#D2B48C",
+                  "en-GB": "#D2B48C",
+                  "en-US": "#D2B48C",
+                },
               },
             ],
             "images": [
@@ -455,7 +479,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["silver"]",
+              "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
             },
             {
               "name": "color-label",
@@ -463,7 +487,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#C0C0C0"",
+              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
             },
           ],
           "images": [
@@ -596,7 +620,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["pink"]",
+                "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
               },
               {
                 "name": "color-label",
@@ -604,7 +628,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#FFB6C1"",
+                "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
               },
             ],
             "images": [
@@ -693,7 +717,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["yellow"]",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
               },
               {
                 "name": "color-label",
@@ -701,7 +725,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#D2B48C"",
+                "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
               },
             ],
             "images": [

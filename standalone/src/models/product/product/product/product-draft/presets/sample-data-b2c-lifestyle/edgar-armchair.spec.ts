@@ -47,13 +47,21 @@ describe(`with edgarArmchair preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "green",
+                {
+                  "de-DE": "Grün",
+                  "en-GB": "Green",
+                  "en-US": "Green",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "black",
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
               ],
             },
             {
@@ -74,11 +82,19 @@ describe(`with edgarArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#BAB86C",
+              "value": {
+                "de-DE": "#BAB86C",
+                "en-GB": "#BAB86C",
+                "en-US": "#BAB86C",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#000000",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
+              },
             },
           ],
           "images": [

@@ -23,7 +23,11 @@ describe(`with idunPillowCover01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -36,7 +40,11 @@ describe(`with idunPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#A0522D",
+            "value": {
+              "de-DE": "#A0522D",
+              "en-GB": "#A0522D",
+              "en-US": "#A0522D",
+            },
           },
         ],
         "images": [
@@ -137,7 +145,7 @@ describe(`with idunPillowCover01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -145,7 +153,7 @@ describe(`with idunPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#A0522D"",
+            "value": "{"en-US":"#A0522D","en-GB":"#A0522D","de-DE":"#A0522D"}",
           },
         ],
         "images": [

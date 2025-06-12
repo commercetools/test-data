@@ -47,13 +47,21 @@ describe(`with vanillaCandle preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "glass",
+                {
+                  "de-DE": "Glas",
+                  "en-GB": "Glass",
+                  "en-US": "Glass",
+                },
               ],
             },
             {
@@ -74,11 +82,19 @@ describe(`with vanillaCandle preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#F5F5DC",
+              "value": {
+                "de-DE": "#F5F5DC",
+                "en-GB": "#F5F5DC",
+                "en-US": "#F5F5DC",
+              },
             },
             {
               "name": "finish-code",
-              "value": "transparent",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
+              },
             },
           ],
           "images": [
@@ -252,11 +268,11 @@ describe(`with vanillaCandle preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "search-finish",
-              "value": "["glass"]",
+              "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
             },
             {
               "name": "color-label",
@@ -268,11 +284,11 @@ describe(`with vanillaCandle preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#F5F5DC"",
+              "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
             },
             {
               "name": "finish-code",
-              "value": ""transparent"",
+              "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
             },
           ],
           "images": [

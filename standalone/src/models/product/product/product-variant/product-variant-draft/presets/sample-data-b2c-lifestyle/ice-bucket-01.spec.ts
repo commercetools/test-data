@@ -22,7 +22,11 @@ describe(`with iceBucket01 preset`, () => {
           {
             "name": "search-finish",
             "value": [
-              "silver",
+              {
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
             ],
           },
           {
@@ -35,7 +39,11 @@ describe(`with iceBucket01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "#C0C0C0",
+            "value": {
+              "de-DE": "#C0C0C0",
+              "en-GB": "#C0C0C0",
+              "en-US": "#C0C0C0",
+            },
           },
         ],
         "images": [
@@ -117,7 +125,7 @@ describe(`with iceBucket01 preset`, () => {
           },
           {
             "name": "search-finish",
-            "value": "["silver"]",
+            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
           },
           {
             "name": "finish-label",
@@ -125,7 +133,7 @@ describe(`with iceBucket01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": ""#C0C0C0"",
+            "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
           },
         ],
         "images": [

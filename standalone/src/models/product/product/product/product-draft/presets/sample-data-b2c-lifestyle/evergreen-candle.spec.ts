@@ -35,7 +35,11 @@ describe(`with evergreenCandle preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "green",
+                {
+                  "de-DE": "Grün",
+                  "en-GB": "Green",
+                  "en-US": "Green",
+                },
               ],
             },
             {
@@ -48,7 +52,11 @@ describe(`with evergreenCandle preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#BAB86C",
+              "value": {
+                "de-DE": "#BAB86C",
+                "en-GB": "#BAB86C",
+                "en-US": "#BAB86C",
+              },
             },
           ],
           "images": [

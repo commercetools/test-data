@@ -32,13 +32,21 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
@@ -59,11 +67,19 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#808080",
+            "value": {
+              "de-DE": "#808080",
+              "en-GB": "#808080",
+              "en-US": "#808080",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#778899",
+            "value": {
+              "de-DE": "#778899",
+              "en-GB": "#778899",
+              "en-US": "#778899",
+            },
           },
         ],
         "images": [
@@ -161,11 +177,11 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "search-finish",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "color-label",
@@ -177,11 +193,11 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#808080"",
+            "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
           },
           {
             "name": "finish-code",
-            "value": ""#778899"",
+            "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
           },
         ],
         "images": [

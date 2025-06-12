@@ -45,7 +45,11 @@ describe(`with harmonyDrinkingGlass preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "transparent",
+                {
+                  "de-DE": "Transparent",
+                  "en-GB": "Transparent",
+                  "en-US": "Transparent",
+                },
               ],
             },
             {
@@ -58,7 +62,11 @@ describe(`with harmonyDrinkingGlass preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "transparent",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
+              },
             },
           ],
           "images": [
@@ -224,7 +232,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["transparent"]",
+              "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
             },
             {
               "name": "color-label",
@@ -232,7 +240,7 @@ describe(`with harmonyDrinkingGlass preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""transparent"",
+              "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
             },
           ],
           "images": [

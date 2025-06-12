@@ -44,13 +44,21 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "transparent",
+                {
+                  "de-DE": "Transparent",
+                  "en-GB": "Transparent",
+                  "en-US": "Transparent",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "glass",
+                {
+                  "de-DE": "Glas",
+                  "en-GB": "Glass",
+                  "en-US": "Glass",
+                },
               ],
             },
             {
@@ -71,11 +79,19 @@ describe(`with doubleWalledEspressoGlass preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "transparent",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
+              },
             },
             {
               "name": "finish-code",
-              "value": "transparent",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
+              },
             },
           ],
           "images": [

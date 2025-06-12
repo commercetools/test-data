@@ -44,7 +44,11 @@ describe(`with opalKingBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "black",
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
               ],
             },
             {
@@ -57,7 +61,11 @@ describe(`with opalKingBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#000000",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
+              },
             },
           ],
           "images": [
@@ -204,7 +212,7 @@ describe(`with opalKingBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["black"]",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
             },
             {
               "name": "color-label",
@@ -212,7 +220,7 @@ describe(`with opalKingBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#000000"",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
             },
           ],
           "images": [

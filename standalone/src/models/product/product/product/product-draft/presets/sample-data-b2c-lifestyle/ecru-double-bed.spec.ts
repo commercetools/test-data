@@ -46,7 +46,11 @@ describe(`with ecruDoubleBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "gray",
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
               ],
             },
             {
@@ -59,7 +63,11 @@ describe(`with ecruDoubleBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#dcdcdc",
+              "value": {
+                "de-DE": "#dcdcdc",
+                "en-GB": "#dcdcdc",
+                "en-US": "#dcdcdc",
+              },
             },
           ],
           "images": [

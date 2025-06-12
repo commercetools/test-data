@@ -26,7 +26,11 @@ describe(`with ecruDoubleBed01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
@@ -39,7 +43,11 @@ describe(`with ecruDoubleBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#dcdcdc",
+            "value": {
+              "de-DE": "#dcdcdc",
+              "en-GB": "#dcdcdc",
+              "en-US": "#dcdcdc",
+            },
           },
         ],
         "images": [
@@ -121,7 +129,7 @@ describe(`with ecruDoubleBed01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "color-label",
@@ -129,7 +137,7 @@ describe(`with ecruDoubleBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#dcdcdc"",
+            "value": "{"en-US":"#dcdcdc","en-GB":"#dcdcdc","de-DE":"#dcdcdc"}",
           },
         ],
         "images": [

@@ -20,7 +20,11 @@ describe(`with greenServingPlate01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "green",
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
             ],
           },
           {
@@ -33,7 +37,11 @@ describe(`with greenServingPlate01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#008000",
+            "value": {
+              "de-DE": "#008000",
+              "en-GB": "#008000",
+              "en-US": "#008000",
+            },
           },
         ],
         "images": [
@@ -123,7 +131,7 @@ describe(`with greenServingPlate01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["green"]",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
             "name": "color-label",
@@ -131,7 +139,7 @@ describe(`with greenServingPlate01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#008000"",
+            "value": "{"en-US":"#008000","en-GB":"#008000","de-DE":"#008000"}",
           },
         ],
         "images": [

@@ -29,13 +29,21 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "green",
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -56,11 +64,19 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#3CB371",
+            "value": {
+              "de-DE": "#3CB371",
+              "en-GB": "#3CB371",
+              "en-US": "#3CB371",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#8b4513",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
+            },
           },
         ],
         "images": [
@@ -158,11 +174,11 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["green"]",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -174,11 +190,11 @@ describe(`with traditionalThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#3CB371"",
+            "value": "{"en-US":"#3CB371","en-GB":"#3CB371","de-DE":"#3CB371"}",
           },
           {
             "name": "finish-code",
-            "value": ""#8b4513"",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

@@ -38,13 +38,21 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "white",
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "gold",
+              {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
             ],
           },
           {
@@ -65,11 +73,19 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#FFFFFF",
+            "value": {
+              "de-DE": "#FFFFFF",
+              "en-GB": "#FFFFFF",
+              "en-US": "#FFFFFF",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#FFD700",
+            "value": {
+              "de-DE": "#FFD700",
+              "en-GB": "#FFD700",
+              "en-US": "#FFD700",
+            },
           },
         ],
         "images": [
@@ -175,11 +191,11 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["white"]",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
           },
           {
             "name": "search-finish",
-            "value": "["gold"]",
+            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
           },
           {
             "name": "color-label",
@@ -191,11 +207,11 @@ describe(`with modernGoldCoffeeTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#FFFFFF"",
+            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
           },
           {
             "name": "finish-code",
-            "value": ""#FFD700"",
+            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
           },
         ],
         "images": [

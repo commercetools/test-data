@@ -56,7 +56,11 @@ describe(`with marquisTray preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -69,7 +73,11 @@ describe(`with marquisTray preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#DAA520",
+              "value": {
+                "de-DE": "#DAA520",
+                "en-GB": "#DAA520",
+                "en-US": "#DAA520",
+              },
             },
           ],
           "images": [
@@ -228,7 +236,7 @@ describe(`with marquisTray preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "color-label",
@@ -236,7 +244,7 @@ describe(`with marquisTray preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#DAA520"",
+              "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
             },
           ],
           "images": [

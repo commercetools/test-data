@@ -63,13 +63,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "gray",
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
               ],
             },
             {
               "name": "search-finish",
               "value": [
-                "black",
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
               ],
             },
             {
@@ -90,11 +98,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#778899",
+              "value": {
+                "de-DE": "#778899",
+                "en-GB": "#778899",
+                "en-US": "#778899",
+              },
             },
             {
               "name": "finish-code",
-              "value": "#000000",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
+              },
             },
           ],
           "images": [
@@ -221,13 +237,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "blue",
+                  {
+                    "de-DE": "Blau",
+                    "en-GB": "Blue",
+                    "en-US": "Blue",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -248,11 +272,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#4169E1",
+                "value": {
+                  "de-DE": "#4169E1",
+                  "en-GB": "#4169E1",
+                  "en-US": "#4169E1",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -347,13 +379,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "brown",
+                  {
+                    "de-DE": "Braun",
+                    "en-GB": "Brown",
+                    "en-US": "Brown",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -374,11 +414,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#CD853F",
+                "value": {
+                  "de-DE": "#CD853F",
+                  "en-GB": "#CD853F",
+                  "en-US": "#CD853F",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -473,13 +521,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "blue",
+                  {
+                    "de-DE": "Blau",
+                    "en-GB": "Blue",
+                    "en-US": "Blue",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -500,11 +556,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#00BFFF",
+                "value": {
+                  "de-DE": "#00BFFF",
+                  "en-GB": "#00BFFF",
+                  "en-US": "#00BFFF",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -591,13 +655,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -618,11 +690,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#D3D3D3",
+                "value": {
+                  "de-DE": "#D3D3D3",
+                  "en-GB": "#D3D3D3",
+                  "en-US": "#D3D3D3",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -717,13 +797,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "green",
+                  {
+                    "de-DE": "Grün",
+                    "en-GB": "Green",
+                    "en-US": "Green",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -744,11 +832,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#8FBC8F",
+                "value": {
+                  "de-DE": "#8FBC8F",
+                  "en-GB": "#8FBC8F",
+                  "en-US": "#8FBC8F",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -835,13 +931,21 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               {
                 "name": "search-color",
                 "value": [
-                  "gray",
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
                 ],
               },
               {
                 "name": "search-finish",
                 "value": [
-                  "black",
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
                 ],
               },
               {
@@ -862,11 +966,19 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "#2F4F4F",
+                "value": {
+                  "de-DE": "#2F4F4F",
+                  "en-GB": "#2F4F4F",
+                  "en-US": "#2F4F4F",
+                },
               },
               {
                 "name": "finish-code",
-                "value": "#000000",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -998,11 +1110,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["gray"]",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
             },
             {
               "name": "search-finish",
-              "value": "["black"]",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
             },
             {
               "name": "color-label",
@@ -1014,11 +1126,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#778899"",
+              "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
             },
             {
               "name": "finish-code",
-              "value": ""#000000"",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
             },
           ],
           "images": [
@@ -1155,11 +1267,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["blue"]",
+                "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1171,11 +1283,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#4169E1"",
+                "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -1268,11 +1380,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["brown"]",
+                "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1284,11 +1396,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#CD853F"",
+                "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -1381,11 +1493,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["blue"]",
+                "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1397,11 +1509,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#00BFFF"",
+                "value": "{"en-US":"#00BFFF","en-GB":"#00BFFF","de-DE":"#00BFFF"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -1486,11 +1598,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1502,11 +1614,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#D3D3D3"",
+                "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -1599,11 +1711,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["green"]",
+                "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1615,11 +1727,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#8FBC8F"",
+                "value": "{"en-US":"#8FBC8F","en-GB":"#8FBC8F","de-DE":"#8FBC8F"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [
@@ -1704,11 +1816,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "search-color",
-                "value": "["gray"]",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
               },
               {
                 "name": "search-finish",
-                "value": "["black"]",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
               },
               {
                 "name": "color-label",
@@ -1720,11 +1832,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": ""#2F4F4F"",
+                "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
               },
               {
                 "name": "finish-code",
-                "value": ""#000000"",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [

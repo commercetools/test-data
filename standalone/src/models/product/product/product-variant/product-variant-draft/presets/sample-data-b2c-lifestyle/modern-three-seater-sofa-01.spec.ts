@@ -29,13 +29,21 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "gray",
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "brown",
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
             ],
           },
           {
@@ -56,11 +64,19 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#2F4F4F",
+            "value": {
+              "de-DE": "#2F4F4F",
+              "en-GB": "#2F4F4F",
+              "en-US": "#2F4F4F",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#8b4513",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
+            },
           },
         ],
         "images": [
@@ -166,11 +182,11 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["gray"]",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
             "name": "search-finish",
-            "value": "["brown"]",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
             "name": "color-label",
@@ -182,11 +198,11 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#2F4F4F"",
+            "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
           },
           {
             "name": "finish-code",
-            "value": ""#8b4513"",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

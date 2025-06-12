@@ -44,7 +44,11 @@ describe(`with serenityQueenBed preset`, () => {
             {
               "name": "search-color",
               "value": [
-                "yellow",
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
               ],
             },
             {
@@ -57,7 +61,11 @@ describe(`with serenityQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "#F5F5DC",
+              "value": {
+                "de-DE": "#F5F5DC",
+                "en-GB": "#F5F5DC",
+                "en-US": "#F5F5DC",
+              },
             },
           ],
           "images": [
@@ -204,7 +212,7 @@ describe(`with serenityQueenBed preset`, () => {
             },
             {
               "name": "search-color",
-              "value": "["yellow"]",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
               "name": "color-label",
@@ -212,7 +220,7 @@ describe(`with serenityQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": ""#F5F5DC"",
+              "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
             },
           ],
           "images": [

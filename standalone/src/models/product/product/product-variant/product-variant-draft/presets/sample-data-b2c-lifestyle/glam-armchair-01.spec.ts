@@ -22,13 +22,21 @@ describe(`with glamArmchair01 preset`, () => {
           {
             "name": "search-color",
             "value": [
-              "yellow",
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
             ],
           },
           {
             "name": "search-finish",
             "value": [
-              "gold",
+              {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
             ],
           },
           {
@@ -49,11 +57,19 @@ describe(`with glamArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "#DAA520",
+            "value": {
+              "de-DE": "#DAA520",
+              "en-GB": "#DAA520",
+              "en-US": "#DAA520",
+            },
           },
           {
             "name": "finish-code",
-            "value": "#FFD700",
+            "value": {
+              "de-DE": "#FFD700",
+              "en-GB": "#FFD700",
+              "en-US": "#FFD700",
+            },
           },
         ],
         "images": [
@@ -135,11 +151,11 @@ describe(`with glamArmchair01 preset`, () => {
           },
           {
             "name": "search-color",
-            "value": "["yellow"]",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
           },
           {
             "name": "search-finish",
-            "value": "["gold"]",
+            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
           },
           {
             "name": "color-label",
@@ -151,11 +167,11 @@ describe(`with glamArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": ""#DAA520"",
+            "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
           },
           {
             "name": "finish-code",
-            "value": ""#FFD700"",
+            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
           },
         ],
         "images": [
