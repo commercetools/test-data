@@ -183,12 +183,9 @@ function Builder<Model>({
                 : postBuild;
               // Run the callback to allow for additional transformations
               if (postBuilder) {
-                transformed = {
-                  ...transformed,
-                  ...postBuilder(transformed, {
-                    isCompatMode: Boolean(compatConfig?.postBuilders),
-                  }),
-                };
+                transformed = postBuilder(transformed, {
+                  isCompatMode: Boolean(compatConfig?.postBuilders),
+                });
               }
 
               return transformed;
