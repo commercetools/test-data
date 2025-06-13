@@ -5,7 +5,7 @@ import {
   Reference,
 } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import { TCategorySearch } from '../types';
+import { TCategorySearch } from '../category/types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 

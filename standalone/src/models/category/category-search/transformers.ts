@@ -1,6 +1,6 @@
 import { Transformer } from '@/core';
 import { LocalizedString } from '@/models/commons';
-import { TCategorySearch, TCategorySearchGraphql } from '../types';
+import { TCategorySearch, TCategorySearchGraphql } from '../category/types';
 
 const buildFields: (keyof TCategorySearch)[] = [
   'ancestorsRef',

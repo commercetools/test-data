@@ -1,4 +1,4 @@
-import { TCategorySearch } from '../../types';
+import { TCategorySearch } from '../../category/types';
 import withParentAndAncestors from './with-parent-and-ancestors';
 
 it('should set the label only for en locale', () => {

@@ -1,5 +1,8 @@
 import { Builder } from '@/core';
-import type { TCreateCategorySearchBuilder, TCategorySearch } from '../types';
+import type {
+  TCreateCategorySearchBuilder,
+  TCategorySearch,
+} from '../category/types';
 import generator from './generator';
 import transformers from './transformers';
 
