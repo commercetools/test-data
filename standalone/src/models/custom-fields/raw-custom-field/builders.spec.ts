@@ -5,7 +5,6 @@ import type { TRawCustomFielGraphql } from './types';
 const populateGraphqlModel = (model: TBuilder<TRawCustomFielGraphql>) =>
   model
     .name('testName')
-    // @ts-expect-error - value is typed as JSON while it accepts any of the field types
     .value('test value')
     .referencedResource(null)
     .referencedResourceSet([]);

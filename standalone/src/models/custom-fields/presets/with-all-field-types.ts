@@ -1,6 +1,9 @@
 import { TBuilder } from '@/core';
-import { TCtpRawCustomField } from '@/graphql-types';
-import { CustomFieldsRest, CustomFieldsGraphql } from '../index';
+import {
+  CustomFieldsRest,
+  CustomFieldsGraphql,
+  RawCustomFieldGraphql,
+} from '../index';
 import { TCustomFieldsGraphql, TCustomFieldsRest } from '../types';
 
 export const restPreset = (): TBuilder<TCustomFieldsRest> =>
@@ -77,23 +80,23 @@ export const restPreset = (): TBuilder<TCustomFieldsRest> =>
 
 export const graphqlPreset = (): TBuilder<TCustomFieldsGraphql> =>
   CustomFieldsGraphql.random().customFieldsRaw([
-    { name: 'boolean-field', value: true },
-    { name: 'set-of-boolean-field', value: [true, false, true] },
-    { name: 'string-field', value: 'Any String value' },
-    {
-      name: 'set-of-string-field',
-      value: ['Some String value', 'Another String value'],
-    },
-    {
-      name: 'localized-string-field',
-      value: {
-        en: 'English text',
-        es: 'texto en español',
-      },
-    },
-    {
-      name: 'set-of-localized-string-field',
-      value: [
+    RawCustomFieldGraphql.random().name('boolean-field').value(true),
+    RawCustomFieldGraphql.random()
+      .name('set-of-boolean-field')
+      .value([true, false, true]),
+    RawCustomFieldGraphql.random()
+      .name('string-field')
+      .value('Any String value'),
+    RawCustomFieldGraphql.random()
+      .name('set-of-string-field')
+      .value(['Some String value', 'Another String value']),
+    RawCustomFieldGraphql.random().name('localized-string-field').value({
+      en: 'English text',
+      es: 'texto en español',
+    }),
+    RawCustomFieldGraphql.random()
+      .name('set-of-localized-string-field')
+      .value([
         {
           en: 'English text 1',
           es: 'texto en español 1',
@@ -102,30 +105,27 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsGraphql> =>
           en: 'English text 2',
           es: 'texto en español 2',
         },
-      ],
-    },
-    { name: 'enum-field', value: 'enum key defined in FieldDefinition' },
-    {
-      name: 'set-of-enum-field',
-      value: [
+      ]),
+    RawCustomFieldGraphql.random()
+      .name('enum-field')
+      .value('enum key defined in FieldDefinition'),
+    RawCustomFieldGraphql.random()
+      .name('set-of-enum-field')
+      .value([
         'enum key defined in FieldDefinition-1',
         'enum key defined in FieldDefinition-2',
-      ],
-    },
-    { name: 'number-field', value: 42 },
-    { name: 'set-of-number-field', value: [1, 2, 7] },
-    {
-      name: 'money-field',
-      value: {
-        type: 'centPrecision',
-        currencyCode: 'USD',
-        centAmount: 124500,
-        fractionDigits: 2,
-      },
-    },
-    {
-      name: 'set-of-money-field',
-      value: [
+      ]),
+    RawCustomFieldGraphql.random().name('number-field').value(42),
+    RawCustomFieldGraphql.random().name('set-of-number-field').value([1, 2, 7]),
+    RawCustomFieldGraphql.random().name('money-field').value({
+      type: 'centPrecision',
+      currencyCode: 'USD',
+      centAmount: 124500,
+      fractionDigits: 2,
+    }),
+    RawCustomFieldGraphql.random()
+      .name('set-of-money-field')
+      .value([
         {
           type: 'centPrecision',
           currencyCode: 'USD',
@@ -138,30 +138,28 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsGraphql> =>
           centAmount: 1000,
           fractionDigits: 2,
         },
-      ],
-    },
-    { name: 'date-field', value: '2001-10-12' },
-    {
-      name: 'set-of-date-field',
-      value: ['2001-10-12', '2015-03-14', '2003-05-15'],
-    },
-    { name: 'time-field', value: '14:00:00.000' },
-    { name: 'set-of-time-field', value: ['14:00:00.000', '14:30:00.000'] },
-    { name: 'datetime-field', value: '2018-10-14T14:00:00.000Z' },
-    {
-      name: 'set-of-datetime-field',
-      value: ['2018-10-14T14:00:00.000Z', '2025-10-14T14:00:00.000Z'],
-    },
-    {
-      name: 'reference-field',
-      value: {
-        typeId: 'product',
-        id: 'd1229e6f-2b79-441e-b419-180311e52754',
-      },
-    },
-    {
-      name: 'set-of-reference-field',
-      value: [
+      ]),
+    RawCustomFieldGraphql.random().name('date-field').value('2001-10-12'),
+    RawCustomFieldGraphql.random()
+      .name('set-of-date-field')
+      .value(['2001-10-12', '2015-03-14', '2003-05-15']),
+    RawCustomFieldGraphql.random().name('time-field').value('14:00:00.000'),
+    RawCustomFieldGraphql.random()
+      .name('set-of-time-field')
+      .value(['14:00:00.000', '14:30:00.000']),
+    RawCustomFieldGraphql.random()
+      .name('datetime-field')
+      .value('2018-10-14T14:00:00.000Z'),
+    RawCustomFieldGraphql.random()
+      .name('set-of-datetime-field')
+      .value(['2018-10-14T14:00:00.000Z', '2025-10-14T14:00:00.000Z']),
+    RawCustomFieldGraphql.random().name('reference-field').value({
+      typeId: 'product',
+      id: 'd1229e6f-2b79-441e-b419-180311e52754',
+    }),
+    RawCustomFieldGraphql.random()
+      .name('set-of-reference-field')
+      .value([
         {
           typeId: 'product',
           id: 'd1229e6f-2b79-441e-b419-180311e52754',
@@ -170,6 +168,5 @@ export const graphqlPreset = (): TBuilder<TCustomFieldsGraphql> =>
           typeId: 'customer',
           id: 'e1549e6f-3b79-441e-c486-957480r23744',
         },
-      ],
-    },
-  ] as unknown as TCtpRawCustomField[]);
+      ]),
+  ]);
