@@ -46,11 +46,29 @@ describe(`with squareBambooCoaster preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Weizen:#f5deb3",
-                "en-GB": "Wheat:#f5deb3",
-                "en-US": "Wheat:#f5deb3",
+                "de-DE": "Weizen",
+                "en-GB": "Wheat",
+                "en-US": "Wheat",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#f5deb3",
+                "en-GB": "#f5deb3",
+                "en-US": "#f5deb3",
               },
             },
           ],
@@ -197,8 +215,16 @@ describe(`with squareBambooCoaster preset`, () => {
               "value": "{"en-GB":"- Wipe clean with wet cloth\\n- Set includes 4 coaster","en-US":"- Wipe clean with wet cloth\\n- Set includes 4 coaster","de-DE":"- Mit einem feuchten Tuch abwischen\\n- Das Set enthält 4 Untersetzer"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Wheat:#f5deb3","de-DE":"Weizen:#f5deb3","en-US":"Wheat:#f5deb3"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Wheat","de-DE":"Weizen","en-US":"Wheat"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#f5deb3","en-GB":"#f5deb3","de-DE":"#f5deb3"}",
             },
           ],
           "images": [

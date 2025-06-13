@@ -18,11 +18,29 @@ describe(`with rusticOvenCasserole01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Peru:#CD853F",
-              "en-GB": "Peru:#CD853F",
-              "en-US": "Peru:#CD853F",
+              "de-DE": "Peru",
+              "en-GB": "Peru",
+              "en-US": "Peru",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#CD853F",
+              "en-GB": "#CD853F",
+              "en-US": "#CD853F",
             },
           },
         ],
@@ -104,8 +122,16 @@ describe(`with rusticOvenCasserole01 preset`, () => {
             "value": "{"en-GB":"- Does not include lid","en-US":"- Does not include lid","de-DE":"- Ohne Deckel"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Peru:#CD853F","de-DE":"Peru:#CD853F","en-US":"Peru:#CD853F"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Peru","de-DE":"Peru","en-US":"Peru"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
           },
         ],
         "images": [

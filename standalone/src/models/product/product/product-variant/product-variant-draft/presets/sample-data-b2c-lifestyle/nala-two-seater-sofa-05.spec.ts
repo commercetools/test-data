@@ -13,22 +13,6 @@ describe(`with nalaTwoSeaterSofa05 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "finish",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell grau:#D3D3D3",
-              "en-GB": "Light Grey:#D3D3D3",
-              "en-US": "Light Gray:#D3D3D3",
-            },
-          },
-          {
             "name": "new-arrival",
             "value": true,
           },
@@ -41,6 +25,58 @@ describe(`with nalaTwoSeaterSofa05 preset`, () => {
       - Cotton linen upholstery",
               "en-US": "- Two-seater sofa
       - Cotton linen upholstery",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell grau",
+              "en-GB": "Light Grey",
+              "en-US": "Light Gray",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#D3D3D3",
+              "en-GB": "#D3D3D3",
+              "en-US": "#D3D3D3",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
             },
           },
         ],
@@ -126,20 +162,36 @@ describe(`with nalaTwoSeaterSofa05 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-          },
-          {
-            "name": "color",
-            "value": "{"en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3","en-US":"Light Gray:#D3D3D3"}",
-          },
-          {
             "name": "new-arrival",
             "value": "true",
           },
           {
             "name": "productspec",
             "value": "{"en-GB":"- Two-seater sofa\\n- Cotton linen upholstery","de-DE":"- Zweisitzer-Sofa\\n- Polsterung aus Baumwollleinen","en-US":"- Two-seater sofa\\n- Cotton linen upholstery"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

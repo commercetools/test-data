@@ -54,11 +54,29 @@ describe(`with stoneServingTray preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schiefer grau:#708090",
-                "en-GB": "Dark Slate Grey:#2F4F4F",
-                "en-US": "Slate Gray:#708090",
+                "de-DE": "Schiefer grau",
+                "en-GB": "Dark Slate Grey",
+                "en-US": "Slate Gray",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#2F4F4F",
+                "en-GB": "#2F4F4F",
+                "en-US": "#2F4F4F",
               },
             },
           ],
@@ -217,8 +235,16 @@ describe(`with stoneServingTray preset`, () => {
               "value": "{"en-GB":"- Fragile","en-US":"- Fragile","de-DE":"- Zerbrechlich"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Dark Slate Grey:#2F4F4F","en-US":"Slate Gray:#708090","de-DE":"Schiefer grau:#708090"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Dark Slate Grey","de-DE":"Schiefer grau","en-US":"Slate Gray"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
             },
           ],
           "images": [

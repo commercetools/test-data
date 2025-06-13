@@ -24,11 +24,29 @@ describe(`with pinkAbstractPainting01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Rosa:#FFC0CB",
-              "en-GB": "Pink:#FFC0CB",
-              "en-US": "Pink:#FFC0CB",
+              "de-DE": "Rosa",
+              "en-GB": "Pink",
+              "en-US": "Pink",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFC0CB",
+              "en-GB": "#FFC0CB",
+              "en-US": "#FFC0CB",
             },
           },
         ],
@@ -110,8 +128,16 @@ describe(`with pinkAbstractPainting01 preset`, () => {
             "value": "{"en-GB":"- Acrylic on canvas\\n- 2ft by 2ft","de-DE":"- Acryl auf Leinwand\\n- 2 Fuß mal 2 Fuß","en-US":"- Acrylic on canvas\\n- 2ft by 2ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Pink:#FFC0CB","de-DE":"Rosa:#FFC0CB","en-US":"Pink:#FFC0CB"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Pink","de-DE":"Rosa","en-US":"Pink"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
           },
         ],
         "images": [

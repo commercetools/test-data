@@ -13,14 +13,6 @@ describe(`with modernGlamDresser01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Braun:#a52a2a",
-              "en-GB": "Brown:#a52a2a",
-              "en-US": "Brown:#a52a2a",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- 3 large drawers
@@ -32,6 +24,32 @@ describe(`with modernGlamDresser01 preset`, () => {
               "en-US": "- 3 large drawers
       - suede  and nickel finish on drawer handles
       - assembly on site",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Braun",
+              "en-GB": "Brown",
+              "en-US": "Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#a52a2a",
+              "en-GB": "#a52a2a",
+              "en-US": "#a52a2a",
             },
           },
         ],
@@ -125,12 +143,20 @@ describe(`with modernGlamDresser01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Brown:#a52a2a","en-GB":"Brown:#a52a2a","de-DE":"Braun:#a52a2a"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- 3 large drawers\\n- suede  and nickel finish on drawer handles\\n- assembly on site","en-GB":"- 3 large drawers\\n- suede  and nickel finish on drawer handles\\n- assembly on site","de-DE":"- 3 large drawers\\n- suede  and nickel finish on drawer handles\\n- assembly on site"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Brown","de-DE":"Braun","en-US":"Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#a52a2a","en-GB":"#a52a2a","de-DE":"#a52a2a"}",
           },
         ],
         "images": [

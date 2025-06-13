@@ -44,11 +44,29 @@ describe(`with cocktailStrainer preset`, () => {
               },
             },
             {
-              "name": "finish",
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Silber",
+                  "en-GB": "Silver",
+                  "en-US": "Silver",
+                },
+              ],
+            },
+            {
+              "name": "finish-label",
               "value": {
-                "de-DE": "Silber:#C0C0C0",
-                "en-GB": "Silver:#C0C0C0",
-                "en-US": "Silver:#C0C0C0",
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#C0C0C0",
+                "en-GB": "#C0C0C0",
+                "en-US": "#C0C0C0",
               },
             },
           ],

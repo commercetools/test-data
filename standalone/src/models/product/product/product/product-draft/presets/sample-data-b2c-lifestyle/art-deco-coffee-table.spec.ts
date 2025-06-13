@@ -49,19 +49,55 @@ describe(`with artDecoCoffeeTable preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
               },
             },
           ],
@@ -216,12 +252,28 @@ describe(`with artDecoCoffeeTable preset`, () => {
               "value": "{"en-US":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled","en-GB":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled","de-DE":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled"}",
             },
             {
-              "name": "color",
-              "value": "{"en-US":"Black:#000000","en-GB":"Black:#000000","de-DE":"Schwarz:#000000"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-US":"Gold:#FFD700","en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

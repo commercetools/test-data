@@ -10,19 +10,37 @@ describe(`with cloudQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell blau:#ADD8E6",
-              "en-GB": "Light Blue:#ADD8E6",
-              "en-US": "Light Blue:#ADD8E6",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Die Montage ist im Preis inbegriffen",
               "en-GB": "- Assembly is included",
               "en-US": "- Assembly is included",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell blau",
+              "en-GB": "Light Blue",
+              "en-US": "Light Blue",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#ADD8E6",
+              "en-GB": "#ADD8E6",
+              "en-US": "#ADD8E6",
             },
           },
         ],
@@ -108,12 +126,20 @@ describe(`with cloudQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Blue:#ADD8E6","de-DE":"Hell blau:#ADD8E6","en-US":"Light Blue:#ADD8E6"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-GB":"- Assembly is included","de-DE":"- Die Montage ist im Preis inbegriffen","en-US":"- Assembly is included"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Blue","de-DE":"Hell blau","en-US":"Light Blue"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#ADD8E6","en-GB":"#ADD8E6","de-DE":"#ADD8E6"}",
           },
         ],
         "images": [

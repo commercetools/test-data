@@ -41,10 +41,24 @@ const stoneServingTray01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Fragile',
         'de-DE': '- Zerbrechlich',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Dark Slate Grey:#2F4F4F',
-        'en-US': 'Slate Gray:#708090',
-        'de-DE': 'Schiefer grau:#708090',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Gray',
+            'en-GB': 'Grey',
+            'de-DE': 'Grau',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Dark Slate Grey',
+        'de-DE': 'Schiefer grau',
+        'en-US': 'Slate Gray',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#2F4F4F',
+        'en-GB': '#2F4F4F',
+        'de-DE': '#2F4F4F',
       }),
     ]);
 

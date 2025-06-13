@@ -13,11 +13,29 @@ describe(`with evergreenCandle01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Helles Oliv:#BAB86C",
-              "en-GB": "Light Olive:#BAB86C",
-              "en-US": "Light Olive:#BAB86C",
+              "de-DE": "Helles Oliv",
+              "en-GB": "Light Olive",
+              "en-US": "Light Olive",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#BAB86C",
+              "en-GB": "#BAB86C",
+              "en-US": "#BAB86C",
             },
           },
         ],
@@ -111,8 +129,16 @@ describe(`with evergreenCandle01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Olive:#BAB86C","de-DE":"Helles Oliv:#BAB86C","en-US":"Light Olive:#BAB86C"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Olive","de-DE":"Helles Oliv","en-US":"Light Olive"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#BAB86C","en-GB":"#BAB86C","de-DE":"#BAB86C"}",
           },
         ],
         "images": [

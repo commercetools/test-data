@@ -43,11 +43,29 @@ describe(`with harmonyDrinkingGlass preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Transparent",
+                  "en-GB": "Transparent",
+                  "en-US": "Transparent",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Transparent:transparent",
-                "en-GB": "Transparent:transparent",
-                "en-US": "Transparent:transparent",
+                "de-DE": "Transparent",
+                "en-GB": "Transparent",
+                "en-US": "Transparent",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
               },
             },
           ],
@@ -213,8 +231,16 @@ describe(`with harmonyDrinkingGlass preset`, () => {
               "value": "{"en-GB":"- Set includes 6 glasses","de-DE":"- Das Set enthält 6 Gläser","en-US":"- Set includes 6 glasses"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Transparent:transparent","de-DE":"Transparent:transparent","en-US":"Transparent:transparent"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Transparent","en-GB":"Transparent","de-DE":"Transparent"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Transparent","de-DE":"Transparent","en-US":"Transparent"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
             },
           ],
           "images": [

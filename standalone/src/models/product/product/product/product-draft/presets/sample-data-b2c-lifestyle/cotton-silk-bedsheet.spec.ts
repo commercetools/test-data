@@ -44,14 +44,6 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
             },
             {
-              "name": "color",
-              "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
-              },
-            },
-            {
               "name": "new-arrival",
               "value": false,
             },
@@ -59,6 +51,32 @@ describe(`with cottonSilkBedsheet preset`, () => {
               "name": "size",
               "value": {
                 "en-GB": "Queen",
+              },
+            },
+            {
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
               },
             },
           ],
@@ -175,17 +193,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Weiß:#FFFFFF",
-                  "en-GB": "White:#FFFFFF",
-                  "en-US": "White:#FFFFFF",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "Twin",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Weiß",
+                    "en-GB": "White",
+                    "en-US": "White",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFFFFF",
+                  "en-GB": "#FFFFFF",
+                  "en-US": "#FFFFFF",
                 },
               },
             ],
@@ -270,17 +306,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Weiß:#FFFFFF",
-                  "en-GB": "White:#FFFFFF",
-                  "en-US": "White:#FFFFFF",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "King",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Weiß",
+                    "en-GB": "White",
+                    "en-US": "White",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFFFFF",
+                  "en-GB": "#FFFFFF",
+                  "en-US": "#FFFFFF",
                 },
               },
             ],
@@ -365,17 +419,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell rosa:#FFB6C1",
-                  "en-GB": "Light Pink:#FFB6C1",
-                  "en-US": "Light Pink:#FFB6C1",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "Twin",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Rosa",
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell rosa",
+                  "en-GB": "Light Pink",
+                  "en-US": "Light Pink",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFB6C1",
+                  "en-GB": "#FFB6C1",
+                  "en-US": "#FFB6C1",
                 },
               },
             ],
@@ -468,17 +540,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell rosa:#FFB6C1",
-                  "en-GB": "Light Pink:#FFB6C1",
-                  "en-US": "Light Pink:#FFB6C1",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "Queen",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Rosa",
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell rosa",
+                  "en-GB": "Light Pink",
+                  "en-US": "Light Pink",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFB6C1",
+                  "en-GB": "#FFB6C1",
+                  "en-US": "#FFB6C1",
                 },
               },
             ],
@@ -571,17 +661,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell rosa:#FFB6C1",
-                  "en-GB": "Light Pink:#FFB6C1",
-                  "en-US": "Light Pink:#FFB6C1",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "King",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Rosa",
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell rosa",
+                  "en-GB": "Light Pink",
+                  "en-US": "Light Pink",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFB6C1",
+                  "en-GB": "#FFB6C1",
+                  "en-US": "#FFB6C1",
                 },
               },
             ],
@@ -674,17 +782,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell grau:#D3D3D3",
-                  "en-GB": "Light Grey:#D3D3D3",
-                  "en-US": "Light Gray:#D3D3D3",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "Twin",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell grau",
+                  "en-GB": "Light Grey",
+                  "en-US": "Light Gray",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#D3D3D3",
+                  "en-GB": "#D3D3D3",
+                  "en-US": "#D3D3D3",
                 },
               },
             ],
@@ -769,17 +895,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell grau:#D3D3D3",
-                  "en-GB": "Light Grey:#D3D3D3",
-                  "en-US": "Light Gray:#D3D3D3",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "Queen",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell grau",
+                  "en-GB": "Light Grey",
+                  "en-US": "Light Gray",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#D3D3D3",
+                  "en-GB": "#D3D3D3",
+                  "en-US": "#D3D3D3",
                 },
               },
             ],
@@ -864,17 +1008,35 @@ describe(`with cottonSilkBedsheet preset`, () => {
                 },
               },
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell grau:#D3D3D3",
-                  "en-GB": "Light Grey:#D3D3D3",
-                  "en-US": "Light Gray:#D3D3D3",
-                },
-              },
-              {
                 "name": "size",
                 "value": {
                   "en-GB": "King",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell grau",
+                  "en-GB": "Light Grey",
+                  "en-US": "Light Gray",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#D3D3D3",
+                  "en-GB": "#D3D3D3",
+                  "en-US": "#D3D3D3",
                 },
               },
             ],

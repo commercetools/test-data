@@ -17,19 +17,55 @@ describe(`with leahArmchair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Grau:#808080",
-              "en-GB": "Grey:#808080",
-              "en-US": "Gray:#808080",
+              "de-DE": "Grau",
+              "en-GB": "Grey",
+              "en-US": "Gray",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#808080",
+              "en-GB": "#808080",
+              "en-US": "#808080",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
             },
           },
         ],
@@ -111,12 +147,28 @@ describe(`with leahArmchair01 preset`, () => {
             "value": "{"en-GB":"- Dry clean only","de-DE":"- Nur chemische Reinigung","en-US":"- Dry clean only"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Grey:#808080","de-DE":"Grau:#808080","en-US":"Gray:#808080"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Grey","de-DE":"Grau","en-US":"Gray"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
         ],
         "images": [

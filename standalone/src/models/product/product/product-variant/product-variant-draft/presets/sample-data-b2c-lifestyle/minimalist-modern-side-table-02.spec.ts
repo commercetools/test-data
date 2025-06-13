@@ -13,22 +13,6 @@ describe(`with minimalistModernSideTable02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Golden Rod:#DAA520",
-              "en-GB": "Goldene Rute:#DAA520",
-              "en-US": "Golden Rod:#DAA520",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Saddle Brown:#8b4513",
-              "en-GB": "Sattel braun:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- 4 legged side table
@@ -40,6 +24,58 @@ describe(`with minimalistModernSideTable02 preset`, () => {
               "en-US": "- 4 legged side table
       - Walnut legs
       - Pre-assembled",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Golden Rod",
+              "en-GB": "Goldene Rute",
+              "en-US": "Golden Rod",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Saddle Brown",
+              "en-GB": "Sattel braun",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#DAA520",
+              "en-GB": "#DAA520",
+              "en-US": "#DAA520",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
             },
           },
         ],
@@ -117,16 +153,32 @@ describe(`with minimalistModernSideTable02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Golden Rod:#DAA520","en-GB":"Goldene Rute:#DAA520","de-DE":"Golden Rod:#DAA520"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Sattel braun:#8b4513","de-DE":"Saddle Brown:#8b4513"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled","en-GB":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled","de-DE":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Goldene Rute","de-DE":"Golden Rod","en-US":"Golden Rod"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Sattel braun","de-DE":"Saddle Brown","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

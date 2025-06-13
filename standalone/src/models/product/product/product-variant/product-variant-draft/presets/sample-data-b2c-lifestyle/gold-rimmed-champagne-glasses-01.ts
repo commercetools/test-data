@@ -62,15 +62,43 @@ const goldRimmedChampagneGlasses01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Set of 5 glasses\n- Imported crystal\n- Gold polish on the rims',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Transparent:transparent',
-        'de-DE': 'Transparent:transparent',
-        'en-US': 'Transparent:transparent',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Transparent',
+            'en-GB': 'Transparent',
+            'de-DE': 'Transparent',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gold',
+            'en-GB': 'Gold',
+            'de-DE': 'Gold',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Transparent',
+        'de-DE': 'Transparent',
+        'en-US': 'Transparent',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Gold:#FFD700',
-        'de-DE': 'Gold:#FFD700',
-        'en-US': 'Gold:#FFD700',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gold',
+        'de-DE': 'Gold',
+        'en-US': 'Gold',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': 'transparent',
+        'en-GB': 'transparent',
+        'de-DE': 'transparent',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#FFD700',
+        'en-GB': '#FFD700',
+        'de-DE': '#FFD700',
       }),
     ]);
 

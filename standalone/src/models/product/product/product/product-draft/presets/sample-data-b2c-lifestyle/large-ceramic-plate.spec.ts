@@ -38,14 +38,6 @@ describe(`with largeCeramicPlate preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": {
-                "de-DE": "Helles Oliv:#BAB86C",
-                "en-GB": "Light Olive:#BAB86C",
-                "en-US": "Light Olive:#BAB86C",
-              },
-            },
-            {
               "name": "productspec",
               "value": {
                 "de-DE": "- Ceramic
@@ -58,6 +50,32 @@ describe(`with largeCeramicPlate preset`, () => {
                 "en-US": "- Ceramic
       - Sold as 1 piece
       - Dishwasher safe",
+              },
+            },
+            {
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Grün",
+                  "en-GB": "Green",
+                  "en-US": "Green",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Helles Oliv",
+                "en-GB": "Light Olive",
+                "en-US": "Light Olive",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#BAB86C",
+                "en-GB": "#BAB86C",
+                "en-US": "#BAB86C",
               },
             },
           ],
@@ -168,14 +186,6 @@ describe(`with largeCeramicPlate preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell grau:#D3D3D3",
-                  "en-GB": "Light Grey:#D3D3D3",
-                  "en-US": "Light Gray:#D3D3D3",
-                },
-              },
-              {
                 "name": "productspec",
                 "value": {
                   "de-DE": "- Ceramic
@@ -188,6 +198,32 @@ describe(`with largeCeramicPlate preset`, () => {
                   "en-US": "- Ceramic
       - Sold as 1 piece
       - Dishwasher safe",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Grau",
+                    "en-GB": "Grey",
+                    "en-US": "Gray",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell grau",
+                  "en-GB": "Light Grey",
+                  "en-US": "Light Gray",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#D3D3D3",
+                  "en-GB": "#D3D3D3",
+                  "en-US": "#D3D3D3",
                 },
               },
             ],
@@ -311,12 +347,20 @@ describe(`with largeCeramicPlate preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": "{"en-US":"Light Olive:#BAB86C","en-GB":"Light Olive:#BAB86C","de-DE":"Helles Oliv:#BAB86C"}",
-            },
-            {
               "name": "productspec",
               "value": "{"en-US":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe","en-GB":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe\\n- Microwave safe","de-DE":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe"}",
+            },
+            {
+              "name": "search-color",
+              "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Light Olive","de-DE":"Helles Oliv","en-US":"Light Olive"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#BAB86C","en-GB":"#BAB86C","de-DE":"#BAB86C"}",
             },
           ],
           "images": [
@@ -444,12 +488,20 @@ describe(`with largeCeramicPlate preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": "{"en-US":"Light Gray:#D3D3D3","en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3"}",
-              },
-              {
                 "name": "productspec",
                 "value": "{"en-US":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe","en-GB":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe\\n- Microwave safe","de-DE":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe"}",
+              },
+              {
+                "name": "search-color",
+                "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+              },
+              {
+                "name": "color-code",
+                "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
               },
             ],
             "images": [

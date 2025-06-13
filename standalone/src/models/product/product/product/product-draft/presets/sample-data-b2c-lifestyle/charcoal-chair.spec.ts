@@ -42,19 +42,55 @@ describe(`with charcoalChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Dunkles Schiefer grau:#2F4F4F",
-                "en-GB": "Dark Slate Grey:#2F4F4F",
-                "en-US": "Dark Slate Gray:#2F4F4F",
+                "de-DE": "Dunkles Schiefer grau",
+                "en-GB": "Dark Slate Grey",
+                "en-US": "Dark Slate Gray",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#2F4F4F",
+                "en-GB": "#2F4F4F",
+                "en-US": "#2F4F4F",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#D2B48C",
+                "en-GB": "#D2B48C",
+                "en-US": "#D2B48C",
               },
             },
           ],
@@ -209,12 +245,28 @@ describe(`with charcoalChair preset`, () => {
               "value": "{"en-GB":"- Includes 1 chair","de-DE":"- Beinhaltet 1 Stuhl","en-US":"- Includes 1 chair"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Dark Slate Grey:#2F4F4F","de-DE":"Dunkles Schiefer grau:#2F4F4F","en-US":"Dark Slate Gray:#2F4F4F"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Dark Slate Grey","de-DE":"Dunkles Schiefer grau","en-US":"Dark Slate Gray"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
             },
           ],
           "images": [

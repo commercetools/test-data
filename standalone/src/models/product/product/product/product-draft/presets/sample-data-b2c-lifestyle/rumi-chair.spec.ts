@@ -42,19 +42,55 @@ describe(`with rumiChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Lavendel:#fff0f5",
-                "en-GB": "Lavender Blush:#fff0f5",
-                "en-US": "Lavender Blush:#fff0f5",
+                "de-DE": "Lavendel",
+                "en-GB": "Lavender Blush",
+                "en-US": "Lavender Blush",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#fff0f5",
+                "en-GB": "#fff0f5",
+                "en-US": "#fff0f5",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
               },
             },
           ],
@@ -200,12 +236,28 @@ describe(`with rumiChair preset`, () => {
               "value": "{"en-GB":"- Dry clean only","en-US":"- Dry clean only","de-DE":"- Nur chemische Reinigung"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Lavender Blush:#fff0f5","de-DE":"Lavendel:#fff0f5","en-US":"Lavender Blush:#fff0f5"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Gold:#FFD700","en-US":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Lavender Blush","de-DE":"Lavendel","en-US":"Lavender Blush"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

@@ -42,19 +42,55 @@ describe(`with wilmaChair preset`, () => {
               },
             },
             {
-              "name": "finish",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Blumen weiß",
+                "en-GB": "Floral White",
+                "en-US": "Floral White",
               },
             },
             {
-              "name": "color",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Blumen weiß:#FFFAF0",
-                "en-GB": "Floral White:#FFFAF0",
-                "en-US": "Floral White:#FFFAF0",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFFAF0",
+                "en-GB": "#FFFAF0",
+                "en-US": "#FFFAF0",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
               },
             },
           ],
@@ -209,12 +245,28 @@ describe(`with wilmaChair preset`, () => {
               "value": "{"en-GB":"- Cushion covers are removable and machine washable","en-US":"- Cushion covers are removable and machine washable","de-DE":"- Kissenbezüge sind abnehmbar und maschinenwaschbar"}",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Black:#000000","en-US":"Black:#000000","de-DE":"Schwarz:#000000"}",
+              "name": "search-color",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Floral White:#FFFAF0","de-DE":"Blumen weiß:#FFFAF0","en-US":"Floral White:#FFFAF0"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Floral White","de-DE":"Blumen weiß","en-US":"Floral White"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFFAF0","en-GB":"#FFFAF0","de-DE":"#FFFAF0"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
             },
           ],
           "images": [

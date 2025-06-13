@@ -21,19 +21,55 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Peru:#CD853F",
-              "en-GB": "Peru:#CD853F",
-              "en-US": "Peru:#CD853F",
+              "de-DE": "Peru",
+              "en-GB": "Peru",
+              "en-US": "Peru",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#CD853F",
+              "en-GB": "#CD853F",
+              "en-US": "#CD853F",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
             },
           },
         ],
@@ -123,12 +159,28 @@ describe(`with canelaThreeSeaterSofa01 preset`, () => {
             "value": "{"en-GB":"- Leather upholstery \\n- 3 seater","de-DE":"- Lederpolsterung\\n- 3-Sitzer","en-US":"- Leather upholstery \\n- 3 seater"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Peru:#CD853F","de-DE":"Peru:#CD853F","en-US":"Peru:#CD853F"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Peru","de-DE":"Peru","en-US":"Peru"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
         ],
         "images": [

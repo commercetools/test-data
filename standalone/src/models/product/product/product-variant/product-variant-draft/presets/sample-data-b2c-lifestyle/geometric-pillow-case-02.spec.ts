@@ -10,14 +10,6 @@ describe(`with geometricPillowCase02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell rosa:#FFB6C1",
-              "en-GB": "Light Pink:#FFB6C1",
-              "en-US": "Light Pink:#FFB6C1",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Velvet fabric
@@ -36,6 +28,32 @@ describe(`with geometricPillowCase02 preset`, () => {
       - Pillow not included
       - Washable
       ",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell rosa",
+              "en-GB": "Light Pink",
+              "en-US": "Light Pink",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFB6C1",
+              "en-GB": "#FFB6C1",
+              "en-US": "#FFB6C1",
             },
           },
         ],
@@ -121,12 +139,20 @@ describe(`with geometricPillowCase02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Light Pink:#FFB6C1","en-GB":"Light Pink:#FFB6C1","de-DE":"Hell rosa:#FFB6C1"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Pink","de-DE":"Hell rosa","en-US":"Light Pink"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
           },
         ],
         "images": [

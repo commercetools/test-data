@@ -17,11 +17,29 @@ describe(`with ivoryPlate01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Elfenbein:#FFFFF0",
-              "en-GB": "Ivory:#FFFFF0",
-              "en-US": "Ivory:#FFFFF0",
+              "de-DE": "Elfenbein",
+              "en-GB": "Ivory",
+              "en-US": "Ivory",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFFFF0",
+              "en-GB": "#FFFFF0",
+              "en-US": "#FFFFF0",
             },
           },
         ],
@@ -103,8 +121,16 @@ describe(`with ivoryPlate01 preset`, () => {
             "value": "{"en-GB":"- Includes 1 plate","de-DE":"- Enthält 1 Teller","en-US":"- Includes 1 plate"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Ivory:#FFFFF0","de-DE":"Elfenbein:#FFFFF0","en-US":"Ivory:#FFFFF0"}",
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Ivory","de-DE":"Elfenbein","en-US":"Ivory"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFFFF0","en-GB":"#FFFFF0","de-DE":"#FFFFF0"}",
           },
         ],
         "images": [

@@ -50,11 +50,29 @@ describe(`with teakServingPlatter preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Braun:#a52a2a",
-                "en-GB": "Brown:#a52a2a",
-                "en-US": "Brown:#a52a2a",
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#a52a2a",
+                "en-GB": "#a52a2a",
+                "en-US": "#a52a2a",
               },
             },
           ],
@@ -205,8 +223,16 @@ describe(`with teakServingPlatter preset`, () => {
               "value": "{"en-GB":"- Made of natural teak\\n- Hand wash only","en-US":"- Made of natural teak\\n- Hand wash only","de-DE":"- Hergestellt aus natürlichem Teakholz\\n- Handwäsche nur"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Brown:#a52a2a","de-DE":"Braun:#a52a2a","en-US":"Brown:#a52a2a"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Brown","de-DE":"Braun","en-US":"Brown"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#a52a2a","en-GB":"#a52a2a","de-DE":"#a52a2a"}",
             },
           ],
           "images": [

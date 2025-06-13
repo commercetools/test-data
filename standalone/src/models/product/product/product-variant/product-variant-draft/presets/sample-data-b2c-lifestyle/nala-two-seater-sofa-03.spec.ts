@@ -13,22 +13,6 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Peru:#CD853F",
-              "en-GB": "Peru:#CD853F",
-              "en-US": "Peru:#CD853F",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
             "name": "new-arrival",
             "value": true,
           },
@@ -41,6 +25,58 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
       - Cotton linen upholstery",
               "en-US": "- Two-seater sofa
       - Cotton linen upholstery",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Peru",
+              "en-GB": "Peru",
+              "en-US": "Peru",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#CD853F",
+              "en-GB": "#CD853F",
+              "en-US": "#CD853F",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
             },
           },
         ],
@@ -126,20 +162,36 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Peru:#CD853F","de-DE":"Peru:#CD853F","en-US":"Peru:#CD853F"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-          },
-          {
             "name": "new-arrival",
             "value": "true",
           },
           {
             "name": "productspec",
             "value": "{"en-GB":"- Two-seater sofa\\n- Cotton linen upholstery","de-DE":"- Zweisitzer-Sofa\\n- Polsterung aus Baumwollleinen","en-US":"- Two-seater sofa\\n- Cotton linen upholstery"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Peru","de-DE":"Peru","en-US":"Peru"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

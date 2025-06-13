@@ -20,11 +20,29 @@ describe(`with meadowRug01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Grau:#808080",
-              "en-GB": "Grey:#808080",
-              "en-US": "Gray:#808080",
+              "de-DE": "Grau",
+              "en-GB": "Grey",
+              "en-US": "Gray",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#808080",
+              "en-GB": "#808080",
+              "en-US": "#808080",
             },
           },
         ],
@@ -106,8 +124,16 @@ describe(`with meadowRug01 preset`, () => {
             "value": "{"en-GB":"- 3ft x 5ft","de-DE":"- 3 Fuß x 5 Fuß","en-US":"- 3ft x 5ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Grey:#808080","de-DE":"Grau:#808080","en-US":"Gray:#808080"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Grey","de-DE":"Grau","en-US":"Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
           },
         ],
         "images": [

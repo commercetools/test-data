@@ -41,15 +41,43 @@ const clinkChampagneGlass01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Das Set enthält 6 Gläser',
         'en-US': '- Set includes 6 glasses',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Transparent:transparent',
-        'de-DE': 'Transparent:transparent',
-        'en-US': 'Transparent:transparent',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Transparent',
+            'en-GB': 'Transparent',
+            'de-DE': 'Transparent',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Glass',
+            'en-GB': 'Glass',
+            'de-DE': 'Glas',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Transparent',
+        'de-DE': 'Transparent',
+        'en-US': 'Transparent',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Glass:transparent',
-        'de-DE': 'Glas:transparent',
-        'en-US': 'Glass:transparent',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Glass',
+        'de-DE': 'Glas',
+        'en-US': 'Glass',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': 'transparent',
+        'en-GB': 'transparent',
+        'de-DE': 'transparent',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': 'transparent',
+        'en-GB': 'transparent',
+        'de-DE': 'transparent',
       }),
     ]);
 

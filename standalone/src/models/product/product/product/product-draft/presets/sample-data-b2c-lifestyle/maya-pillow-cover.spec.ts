@@ -41,11 +41,29 @@ describe(`with mayaPillowCover preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Violett",
+                  "en-GB": "Purple",
+                  "en-US": "Purple",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Pflaume:#DDA0DD",
-                "en-GB": "Plum:#DDA0DD",
-                "en-US": "Plum:#DDA0DD",
+                "de-DE": "Pflaume",
+                "en-GB": "Plum",
+                "en-US": "Plum",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#DDA0DD",
+                "en-GB": "#DDA0DD",
+                "en-US": "#DDA0DD",
               },
             },
           ],
@@ -159,11 +177,29 @@ describe(`with mayaPillowCover preset`, () => {
                 },
               },
               {
-                "name": "color",
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
                 "value": {
-                  "de-DE": "Beige:#F5F5DC",
-                  "en-GB": "Beige:#F5F5DC",
-                  "en-US": "Beige:#F5F5DC",
+                  "de-DE": "Beige",
+                  "en-GB": "Beige",
+                  "en-US": "Beige",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#F5F5DC",
+                  "en-GB": "#F5F5DC",
+                  "en-US": "#F5F5DC",
                 },
               },
             ],
@@ -275,8 +311,16 @@ describe(`with mayaPillowCover preset`, () => {
               "value": "{"en-GB":"- Machine washable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Does not include pillow"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Plum:#DDA0DD","de-DE":"Pflaume:#DDA0DD","en-US":"Plum:#DDA0DD"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Purple","en-GB":"Purple","de-DE":"Violett"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Plum","de-DE":"Pflaume","en-US":"Plum"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#DDA0DD","en-GB":"#DDA0DD","de-DE":"#DDA0DD"}",
             },
           ],
           "images": [
@@ -400,8 +444,16 @@ describe(`with mayaPillowCover preset`, () => {
                 "value": "{"en-GB":"- Machine washable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Does not include pillow"}",
               },
               {
-                "name": "color",
-                "value": "{"en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
+                "name": "search-color",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+              },
+              {
+                "name": "color-code",
+                "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
               },
             ],
             "images": [

@@ -27,14 +27,6 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
             },
           },
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Weiß:#FFFFFF",
-              "en-GB": "White:#FFFFFF",
-              "en-US": "White:#FFFFFF",
-            },
-          },
-          {
             "name": "new-arrival",
             "value": false,
           },
@@ -42,6 +34,32 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
             "name": "size",
             "value": {
               "en-GB": "Queen",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Weiß",
+              "en-GB": "White",
+              "en-US": "White",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFFFFF",
+              "en-GB": "#FFFFFF",
+              "en-US": "#FFFFFF",
             },
           },
         ],
@@ -123,16 +141,24 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","en-US":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet","de-DE":"- Machine washable\\n- 600 thread count\\n- Includes 1 fitted sheet"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF","en-US":"White:#FFFFFF"}",
-          },
-          {
             "name": "new-arrival",
             "value": "false",
           },
           {
             "name": "size",
             "value": "{"en-GB":"Queen"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
           },
         ],
         "images": [

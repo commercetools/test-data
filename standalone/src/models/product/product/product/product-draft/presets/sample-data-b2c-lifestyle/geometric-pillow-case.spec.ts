@@ -35,14 +35,6 @@ describe(`with geometricPillowCase preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": {
-                "de-DE": "Silber:#C0C0C0",
-                "en-GB": "Silver:#C0C0C0",
-                "en-US": "Silver:#C0C0C0",
-              },
-            },
-            {
               "name": "productspec",
               "value": {
                 "de-DE": "- Velvet fabric
@@ -61,6 +53,32 @@ describe(`with geometricPillowCase preset`, () => {
       - Pillow not included
       - Washable
       ",
+              },
+            },
+            {
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Silber",
+                  "en-GB": "Silver",
+                  "en-US": "Silver",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#C0C0C0",
+                "en-GB": "#C0C0C0",
+                "en-US": "#C0C0C0",
               },
             },
           ],
@@ -171,14 +189,6 @@ describe(`with geometricPillowCase preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Hell rosa:#FFB6C1",
-                  "en-GB": "Light Pink:#FFB6C1",
-                  "en-US": "Light Pink:#FFB6C1",
-                },
-              },
-              {
                 "name": "productspec",
                 "value": {
                   "de-DE": "- Velvet fabric
@@ -197,6 +207,32 @@ describe(`with geometricPillowCase preset`, () => {
       - Pillow not included
       - Washable
       ",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Rosa",
+                    "en-GB": "Pink",
+                    "en-US": "Pink",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Hell rosa",
+                  "en-GB": "Light Pink",
+                  "en-US": "Light Pink",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#FFB6C1",
+                  "en-GB": "#FFB6C1",
+                  "en-US": "#FFB6C1",
                 },
               },
             ],
@@ -275,14 +311,6 @@ describe(`with geometricPillowCase preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": {
-                  "de-DE": "Bräunen:#D2B48C",
-                  "en-GB": "Tan:#D2B48C",
-                  "en-US": "Tan:#D2B48C",
-                },
-              },
-              {
                 "name": "productspec",
                 "value": {
                   "de-DE": "- Velvet fabric
@@ -301,6 +329,32 @@ describe(`with geometricPillowCase preset`, () => {
       - Pillow not included
       - Washable
       ",
+                },
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Gelb",
+                    "en-GB": "Yellow",
+                    "en-US": "Yellow",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
+                "value": {
+                  "de-DE": "Bräunen",
+                  "en-GB": "Tan",
+                  "en-US": "Tan",
+                },
+              },
+              {
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#D2B48C",
+                  "en-GB": "#D2B48C",
+                  "en-US": "#D2B48C",
                 },
               },
             ],
@@ -420,12 +474,20 @@ describe(`with geometricPillowCase preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": "{"en-US":"Silver:#C0C0C0","en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0"}",
-            },
-            {
               "name": "productspec",
               "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+            },
+            {
+              "name": "search-color",
+              "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
             },
           ],
           "images": [
@@ -553,12 +615,20 @@ describe(`with geometricPillowCase preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": "{"en-US":"Light Pink:#FFB6C1","en-GB":"Light Pink:#FFB6C1","de-DE":"Hell rosa:#FFB6C1"}",
-              },
-              {
                 "name": "productspec",
                 "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+              },
+              {
+                "name": "search-color",
+                "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Light Pink","de-DE":"Hell rosa","en-US":"Light Pink"}",
+              },
+              {
+                "name": "color-code",
+                "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
               },
             ],
             "images": [
@@ -642,12 +712,20 @@ describe(`with geometricPillowCase preset`, () => {
             "assets": undefined,
             "attributes": [
               {
-                "name": "color",
-                "value": "{"en-US":"Tan:#D2B48C","en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C"}",
-              },
-              {
                 "name": "productspec",
                 "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+              },
+              {
+                "name": "search-color",
+                "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+              },
+              {
+                "name": "color-code",
+                "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
               },
             ],
             "images": [

@@ -59,10 +59,24 @@ const smallWoodenBowl01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 1 bowl',
         'de-DE': '- Enthält 1 Schüssel',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
-        'en-US': 'Saddle Brown:#8b4513',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#8b4513',
+        'en-GB': '#8b4513',
+        'de-DE': '#8b4513',
       }),
     ]);
 

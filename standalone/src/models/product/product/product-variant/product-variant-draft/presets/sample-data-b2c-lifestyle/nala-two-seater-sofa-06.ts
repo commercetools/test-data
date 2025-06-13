@@ -36,21 +36,49 @@ const nalaTwoSeaterSofa06 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 6000, h: 3376 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Dark Sea Green:#8FBC8F',
-        'de-DE': 'Dunkles See grün:#8FBC8F',
-        'en-US': 'Dark Sea Green:#8FBC8F',
-      }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Black:#000000',
-        'de-DE': 'Schwarz:#000000',
-        'en-US': 'Black:#000000',
-      }),
       AttributeDraft.random().name('new-arrival').value(true),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Two-seater sofa\n- Cotton linen upholstery',
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Green',
+            'en-GB': 'Green',
+            'de-DE': 'Grün',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Black',
+            'en-GB': 'Black',
+            'de-DE': 'Schwarz',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Dark Sea Green',
+        'de-DE': 'Dunkles See grün',
+        'en-US': 'Dark Sea Green',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Black',
+        'de-DE': 'Schwarz',
+        'en-US': 'Black',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#8FBC8F',
+        'en-GB': '#8FBC8F',
+        'de-DE': '#8FBC8F',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#000000',
+        'en-GB': '#000000',
+        'de-DE': '#000000',
       }),
     ]);
 

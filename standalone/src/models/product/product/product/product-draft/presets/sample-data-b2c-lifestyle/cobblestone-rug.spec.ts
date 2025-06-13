@@ -41,11 +41,29 @@ describe(`with cobblestoneRug preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Grau",
+                  "en-GB": "Grey",
+                  "en-US": "Gray",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Hell grau:#D3D3D3",
-                "en-GB": "Light Grey:#D3D3D3",
-                "en-US": "Light Gray:#D3D3D3",
+                "de-DE": "Hell grau",
+                "en-GB": "Light Grey",
+                "en-US": "Light Gray",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#D3D3D3",
+                "en-GB": "#D3D3D3",
+                "en-US": "#D3D3D3",
               },
             },
           ],
@@ -192,8 +210,16 @@ describe(`with cobblestoneRug preset`, () => {
               "value": "{"en-GB":"- 5ft x 3ft","de-DE":"- 5 Fuß x 3 Fuß","en-US":"- 5ft x 3ft"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3","en-US":"Light Gray:#D3D3D3"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
             },
           ],
           "images": [

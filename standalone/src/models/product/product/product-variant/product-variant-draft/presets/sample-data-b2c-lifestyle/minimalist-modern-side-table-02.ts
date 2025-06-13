@@ -36,20 +36,48 @@ const minimalistModernSideTable02 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5883, h: 6026 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Golden Rod:#DAA520',
-        'en-GB': 'Goldene Rute:#DAA520',
-        'de-DE': 'Golden Rod:#DAA520',
-      }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Saddle Brown:#8b4513',
-        'en-GB': 'Sattel braun:#8b4513',
-        'de-DE': 'Saddle Brown:#8b4513',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
         'en-GB': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
         'de-DE': '- 4 legged side table\n- Walnut legs\n- Pre-assembled',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Goldene Rute',
+        'de-DE': 'Golden Rod',
+        'en-US': 'Golden Rod',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Sattel braun',
+        'de-DE': 'Saddle Brown',
+        'en-US': 'Saddle Brown',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#DAA520',
+        'en-GB': '#DAA520',
+        'de-DE': '#DAA520',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#8b4513',
+        'en-GB': '#8b4513',
+        'de-DE': '#8b4513',
       }),
     ]);
 

@@ -21,19 +21,55 @@ describe(`with edgarArmchair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Helles Oliv:#BAB86C",
-              "en-GB": "Light Olive:#BAB86C",
-              "en-US": "Light Olive:#BAB86C",
+              "de-DE": "Helles Oliv",
+              "en-GB": "Light Olive",
+              "en-US": "Light Olive",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#BAB86C",
+              "en-GB": "#BAB86C",
+              "en-US": "#BAB86C",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
             },
           },
         ],
@@ -115,12 +151,28 @@ describe(`with edgarArmchair01 preset`, () => {
             "value": "{"en-GB":"- Assembly on delivery","de-DE":"- Montage bei Lieferung","en-US":"- Assembly on delivery"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Olive:#BAB86C","de-DE":"Helles Oliv:#BAB86C","en-US":"Light Olive:#BAB86C"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Olive","de-DE":"Helles Oliv","en-US":"Light Olive"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#BAB86C","en-GB":"#BAB86C","de-DE":"#BAB86C"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

@@ -18,11 +18,29 @@ describe(`with serenityQueenBed01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Beige:#F5F5DC",
-              "en-GB": "Beige:#F5F5DC",
-              "en-US": "Beige:#F5F5DC",
+              "de-DE": "Beige",
+              "en-GB": "Beige",
+              "en-US": "Beige",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#F5F5DC",
+              "en-GB": "#F5F5DC",
+              "en-US": "#F5F5DC",
             },
           },
         ],
@@ -104,8 +122,16 @@ describe(`with serenityQueenBed01 preset`, () => {
             "value": "{"en-GB":"- Assembly included in delivery","en-US":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten"}",
           },
           {
-            "name": "color",
-            "value": "{"de-DE":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
           },
         ],
         "images": [

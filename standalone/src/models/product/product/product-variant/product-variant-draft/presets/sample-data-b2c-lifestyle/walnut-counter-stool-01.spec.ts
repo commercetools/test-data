@@ -21,11 +21,29 @@ describe(`with walnutCounterStool01 preset`, () => {
             },
           },
           {
-            "name": "finish",
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "finish-label",
             "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
             },
           },
         ],
@@ -107,8 +125,16 @@ describe(`with walnutCounterStool01 preset`, () => {
             "value": "{"en-GB":"- Includes 1 stool","en-US":"- Includes 1 stool","de-DE":"- Beinhaltet 1 Hocker"}",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Saddle Brown:#8b4513","en-US":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

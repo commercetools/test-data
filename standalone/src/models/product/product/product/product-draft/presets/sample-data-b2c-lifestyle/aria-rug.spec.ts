@@ -45,11 +45,29 @@ describe(`with ariaRug preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Elfenbein:#FFFFF0",
-                "en-GB": "Ivory:#FFFFF0",
-                "en-US": "Ivory:#FFFFF0",
+                "de-DE": "Elfenbein",
+                "en-GB": "Ivory",
+                "en-US": "Ivory",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFFFF0",
+                "en-GB": "#FFFFF0",
+                "en-US": "#FFFFF0",
               },
             },
           ],
@@ -219,8 +237,16 @@ describe(`with ariaRug preset`, () => {
               "value": "{"en-GB":"- Dry clean only\\n- 5ft x 7ft","de-DE":"- Nur chemische Reinigung\\n- 5 Fuß x 7 Fuß","en-US":"- Dry clean only\\n- 5ft x 7ft"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Ivory:#FFFFF0","de-DE":"Elfenbein:#FFFFF0","en-US":"Ivory:#FFFFF0"}",
+              "name": "search-color",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Ivory","de-DE":"Elfenbein","en-US":"Ivory"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFFFF0","en-GB":"#FFFFF0","de-DE":"#FFFFF0"}",
             },
           ],
           "images": [

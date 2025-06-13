@@ -10,14 +10,6 @@ describe(`with luxePillowCover01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Waschmaschinenfest
@@ -26,6 +18,32 @@ describe(`with luxePillowCover01 preset`, () => {
       - Pillow not included",
               "en-US": "- Machine washable
       - Pillow not included",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
             },
           },
         ],
@@ -103,12 +121,20 @@ describe(`with luxePillowCover01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

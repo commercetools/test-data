@@ -54,11 +54,29 @@ describe(`with marquisTray preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Goldene Rute:#DAA520",
-                "en-GB": "Golden Rod:#DAA520",
-                "en-US": "Golden Rod:#DAA520",
+                "de-DE": "Goldene Rute",
+                "en-GB": "Golden Rod",
+                "en-US": "Golden Rod",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#DAA520",
+                "en-GB": "#DAA520",
+                "en-US": "#DAA520",
               },
             },
           ],
@@ -217,8 +235,16 @@ describe(`with marquisTray preset`, () => {
               "value": "{"en-GB":"- Includes 1 tray","de-DE":"- Enthält 1 Tablett","en-US":"- Includes 1 tray"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Golden Rod:#DAA520","de-DE":"Goldene Rute:#DAA520","en-US":"Golden Rod:#DAA520"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Golden Rod","de-DE":"Goldene Rute","en-US":"Golden Rod"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
             },
           ],
           "images": [

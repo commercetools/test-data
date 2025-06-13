@@ -45,19 +45,55 @@ describe(`with glamArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Goldene Rute:#DAA520",
-                "en-GB": "Golden Rod:#DAA520",
-                "en-US": "Golden Rod:#DAA520",
+                "de-DE": "Goldene Rute",
+                "en-GB": "Golden Rod",
+                "en-US": "Golden Rod",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#DAA520",
+                "en-GB": "#DAA520",
+                "en-US": "#DAA520",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
               },
             },
           ],
@@ -204,12 +240,28 @@ describe(`with glamArmchair preset`, () => {
               "value": "{"en-GB":"- Dry clean only\\n- Pillow included","de-DE":"- Nur chemische Reinigung\\n- Kissen inklusive","en-US":"- Dry clean only\\n- Pillow included"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Golden Rod:#DAA520","de-DE":"Goldene Rute:#DAA520","en-US":"Golden Rod:#DAA520"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700","en-US":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Golden Rod","de-DE":"Goldene Rute","en-US":"Golden Rod"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

@@ -42,11 +42,29 @@ describe(`with walnutCabinet preset`, () => {
               },
             },
             {
-              "name": "finish",
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
+              ],
+            },
+            {
+              "name": "finish-label",
               "value": {
-                "de-DE": "Braun:#a52a2a",
-                "en-GB": "Brown:#a52a2a",
-                "en-US": "Brown:#a52a2a",
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#a52a2a",
+                "en-GB": "#a52a2a",
+                "en-US": "#a52a2a",
               },
             },
           ],
@@ -220,8 +238,16 @@ describe(`with walnutCabinet preset`, () => {
               "value": "{"en-GB":"- Assembly included in delivery","en-US":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten"}",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Brown:#a52a2a","en-US":"Brown:#a52a2a","de-DE":"Braun:#a52a2a"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Brown","de-DE":"Braun","en-US":"Brown"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#a52a2a","en-GB":"#a52a2a","de-DE":"#a52a2a"}",
             },
           ],
           "images": [

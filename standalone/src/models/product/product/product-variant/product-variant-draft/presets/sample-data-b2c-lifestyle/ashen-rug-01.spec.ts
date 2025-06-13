@@ -20,11 +20,29 @@ describe(`with ashenRug01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Gainsboro:#dcdcdc",
-              "en-GB": "Gainsboro:#dcdcdc",
-              "en-US": "Gainsboro:#dcdcdc",
+              "de-DE": "Gainsboro",
+              "en-GB": "Gainsboro",
+              "en-US": "Gainsboro",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#dcdcdc",
+              "en-GB": "#dcdcdc",
+              "en-US": "#dcdcdc",
             },
           },
         ],
@@ -114,8 +132,16 @@ describe(`with ashenRug01 preset`, () => {
             "value": "{"en-GB":"- 5ft x 7ft\\n- Dry-clean only","de-DE":"- 5 Fuß x 7 Fuß\\n- Nur chemische Reinigung","en-US":"- 5ft x 7ft\\n- Dry-clean only"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Gainsboro:#dcdcdc","de-DE":"Gainsboro:#dcdcdc","en-US":"Gainsboro:#dcdcdc"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Gainsboro","de-DE":"Gainsboro","en-US":"Gainsboro"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#dcdcdc","en-GB":"#dcdcdc","de-DE":"#dcdcdc"}",
           },
         ],
         "images": [

@@ -42,11 +42,29 @@ describe(`with opalKingBed preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#000000",
+                "en-GB": "#000000",
+                "en-US": "#000000",
               },
             },
           ],
@@ -193,8 +211,16 @@ describe(`with opalKingBed preset`, () => {
               "value": "{"en-GB":"- Assembly included","de-DE":"- Montage inklusive","en-US":"- Assembly included"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
             },
           ],
           "images": [

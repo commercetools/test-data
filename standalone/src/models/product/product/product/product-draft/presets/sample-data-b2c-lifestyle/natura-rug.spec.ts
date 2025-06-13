@@ -42,11 +42,29 @@ describe(`with naturaRug preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Beige:#F5F5DC",
-                "en-GB": "Beige:#F5F5DC",
-                "en-US": "Beige:#F5F5DC",
+                "de-DE": "Beige",
+                "en-GB": "Beige",
+                "en-US": "Beige",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#F5F5DC",
+                "en-GB": "#F5F5DC",
+                "en-US": "#F5F5DC",
               },
             },
           ],
@@ -211,8 +229,16 @@ describe(`with naturaRug preset`, () => {
               "value": "{"en-GB":"- 6ft x 6ft","de-DE":"- 6 Fuß x 6 Fuß","en-US":"- 6ft x 6ft"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
             },
           ],
           "images": [

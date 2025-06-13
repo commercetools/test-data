@@ -45,19 +45,55 @@ describe(`with travelCoffeeMug preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Silber",
+                  "en-GB": "Silver",
+                  "en-US": "Silver",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Silber:#C0C0C0",
-                "en-GB": "Silver:#C0C0C0",
-                "en-US": "Silver:#C0C0C0",
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#C0C0C0",
+                "en-GB": "#C0C0C0",
+                "en-US": "#C0C0C0",
               },
             },
           ],
@@ -204,12 +240,28 @@ describe(`with travelCoffeeMug preset`, () => {
               "value": "{"en-GB":"- Insulated \\n- Suitable for both cold and hot drinks","en-US":"- Insulated \\n- Suitable for both cold and hot drinks","de-DE":"- Isoliert\\n- Sowohl für kalte als auch heiße Getränke geeignet"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF","en-US":"White:#FFFFFF"}",
+              "name": "search-color",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-US":"Silver:#C0C0C0","en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
             },
           ],
           "images": [

@@ -21,11 +21,29 @@ describe(`with traditionalArmchair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Mais seide:#FFF8DC",
-              "en-GB": "Corn Silk:#FFF8DC",
-              "en-US": "Corn Silk:#FFF8DC",
+              "de-DE": "Mais seide",
+              "en-GB": "Corn Silk",
+              "en-US": "Corn Silk",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFF8DC",
+              "en-GB": "#FFF8DC",
+              "en-US": "#FFF8DC",
             },
           },
         ],
@@ -123,8 +141,16 @@ describe(`with traditionalArmchair01 preset`, () => {
             "value": "{"en-GB":"- Cotton upholstery","en-US":"- Cotton upholstery","de-DE":"- Baumwollpolsterung"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Corn Silk:#FFF8DC","de-DE":"Mais seide:#FFF8DC","en-US":"Corn Silk:#FFF8DC"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Corn Silk","de-DE":"Mais seide","en-US":"Corn Silk"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFF8DC","en-GB":"#FFF8DC","de-DE":"#FFF8DC"}",
           },
         ],
         "images": [

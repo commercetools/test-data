@@ -30,19 +30,55 @@ describe(`with modernUpholsteredTwinBed02 preset`, () => {
             },
           },
           {
-            "name": "finish",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Helles Schiefer grau:#778899",
-              "en-GB": "Lightslate Grey:#778899",
-              "en-US": "Lightslate Gray:#778899",
+              "de-DE": "See grün",
+              "en-GB": "Sea Green",
+              "en-US": "Sea Green",
             },
           },
           {
-            "name": "color",
+            "name": "finish-label",
             "value": {
-              "de-DE": "See grün:#2E8B57",
-              "en-GB": "Sea Green:#2E8B57",
-              "en-US": "Sea Green:#2E8B57",
+              "de-DE": "Helles Schiefer grau",
+              "en-GB": "Lightslate Grey",
+              "en-US": "Lightslate Gray",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#2E8B57",
+              "en-GB": "#2E8B57",
+              "en-US": "#2E8B57",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#778899",
+              "en-GB": "#778899",
+              "en-US": "#778899",
             },
           },
         ],
@@ -140,12 +176,28 @@ describe(`with modernUpholsteredTwinBed02 preset`, () => {
             "value": "{"en-US":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","en-GB":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","de-DE":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site"}",
           },
           {
-            "name": "finish",
-            "value": "{"en-US":"Lightslate Gray:#778899","en-GB":"Lightslate Grey:#778899","de-DE":"Helles Schiefer grau:#778899"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
-            "name": "color",
-            "value": "{"en-US":"Sea Green:#2E8B57","en-GB":"Sea Green:#2E8B57","de-DE":"See grün:#2E8B57"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sea Green","de-DE":"See grün","en-US":"Sea Green"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Lightslate Grey","de-DE":"Helles Schiefer grau","en-US":"Lightslate Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#2E8B57","en-GB":"#2E8B57","de-DE":"#2E8B57"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
           },
         ],
         "images": [

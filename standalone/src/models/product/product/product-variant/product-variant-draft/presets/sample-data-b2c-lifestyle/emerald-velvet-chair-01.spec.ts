@@ -21,19 +21,55 @@ describe(`with emeraldVelvetChair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Grün:#008000",
-              "en-GB": "Green:#008000",
-              "en-US": "Green:#008000",
+              "de-DE": "Grün",
+              "en-GB": "Green",
+              "en-US": "Green",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Burlywood:#deb887",
-              "en-GB": "Burlywood:#deb887",
-              "en-US": "Burlywood:#deb887",
+              "de-DE": "Burlywood",
+              "en-GB": "Burlywood",
+              "en-US": "Burlywood",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#008000",
+              "en-GB": "#008000",
+              "en-US": "#008000",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#deb887",
+              "en-GB": "#deb887",
+              "en-US": "#deb887",
             },
           },
         ],
@@ -115,12 +151,28 @@ describe(`with emeraldVelvetChair01 preset`, () => {
             "value": "{"en-GB":"- Dry clean only","de-DE":"- Nur chemische Reinigung","en-US":"- Dry clean only"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Green:#008000","de-DE":"Grün:#008000","en-US":"Green:#008000"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Burlywood:#deb887","de-DE":"Burlywood:#deb887","en-US":"Burlywood:#deb887"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Green","de-DE":"Grün","en-US":"Green"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Burlywood","de-DE":"Burlywood","en-US":"Burlywood"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#008000","en-GB":"#008000","de-DE":"#008000"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#deb887","en-GB":"#deb887","de-DE":"#deb887"}",
           },
         ],
         "images": [

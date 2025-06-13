@@ -13,11 +13,29 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Weiß:#FFFFFF",
-              "en-GB": "White:#FFFFFF",
-              "en-US": "White:#FFFFFF",
+              "de-DE": "Weiß",
+              "en-GB": "White",
+              "en-US": "White",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFFFFF",
+              "en-GB": "#FFFFFF",
+              "en-US": "#FFFFFF",
             },
           },
         ],
@@ -111,8 +129,16 @@ describe(`with cottonTwoSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF","en-US":"White:#FFFFFF"}",
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
           },
         ],
         "images": [

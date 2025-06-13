@@ -24,19 +24,55 @@ describe(`with orionDoubleBed01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Salbei:#BCB88A",
-              "en-GB": "Sage:#BCB88A",
-              "en-US": "Sage:#BCB88A",
+              "de-DE": "Salbei",
+              "en-GB": "Sage",
+              "en-US": "Sage",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Silber:#C0C0C0",
-              "en-GB": "Silver:#C0C0C0",
-              "en-US": "Silver:#C0C0C0",
+              "de-DE": "Silber",
+              "en-GB": "Silver",
+              "en-US": "Silver",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#BCB88A",
+              "en-GB": "#BCB88A",
+              "en-US": "#BCB88A",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#C0C0C0",
+              "en-GB": "#C0C0C0",
+              "en-US": "#C0C0C0",
             },
           },
         ],
@@ -118,12 +154,28 @@ describe(`with orionDoubleBed01 preset`, () => {
             "value": "{"en-GB":"- Assembly included at delivery\\n- Mattress not included","de-DE":"- Montage im Lieferumfang enthalten\\n- Matratze nicht im Lieferumfang enthalten","en-US":"- Assembly included at delivery\\n- Mattress not included"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Sage:#BCB88A","de-DE":"Salbei:#BCB88A","en-US":"Sage:#BCB88A"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Green","en-GB":"Green","de-DE":"Grün"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sage","de-DE":"Salbei","en-US":"Sage"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#BCB88A","en-GB":"#BCB88A","de-DE":"#BCB88A"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
           },
         ],
         "images": [

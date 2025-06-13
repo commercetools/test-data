@@ -41,15 +41,43 @@ const wineBottleOpener01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Stainless steel',
         'de-DE': '- Edelstahl',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-US': 'White:#FFFFFF',
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Silver',
+            'en-GB': 'Silver',
+            'de-DE': 'Silber',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Silver:#C0C0C0',
-        'en-GB': 'Silver:#C0C0C0',
-        'de-DE': 'Silber:#C0C0C0',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Silver',
+        'de-DE': 'Silber',
+        'en-US': 'Silver',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFFFFF',
+        'en-GB': '#FFFFFF',
+        'de-DE': '#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#C0C0C0',
+        'en-GB': '#C0C0C0',
+        'de-DE': '#C0C0C0',
       }),
     ]);
 

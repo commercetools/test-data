@@ -49,16 +49,6 @@ const abigailLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5000, h: 4000 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Light Pink:#FFB6C1',
-        'en-GB': 'Light Pink:#FFB6C1',
-        'de-DE': 'Hell rosa:#FFB6C1',
-      }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Gold:#FFD700',
-        'en-GB': 'Gold:#FFD700',
-        'de-DE': 'Gold:#FFD700',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Comes with matching throw pillow\n- Velvet upholstery\n- Pre-assembled',
@@ -66,6 +56,44 @@ const abigailLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
           '- Comes with matching throw pillow\n- Velvet upholstery\n- Pre-assembled',
         'de-DE':
           '- Wird mit passendem Kissen geliefert\n- Samtpolsterung\n- Wird zusammengebaut geliefert',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Pink',
+            'en-GB': 'Pink',
+            'de-DE': 'Rosa',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gold',
+            'en-GB': 'Gold',
+            'de-DE': 'Gold',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Light Pink',
+        'de-DE': 'Hell rosa',
+        'en-US': 'Light Pink',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gold',
+        'de-DE': 'Gold',
+        'en-US': 'Gold',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFB6C1',
+        'en-GB': '#FFB6C1',
+        'de-DE': '#FFB6C1',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#FFD700',
+        'en-GB': '#FFD700',
+        'de-DE': '#FFD700',
       }),
     ]);
 

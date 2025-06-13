@@ -42,19 +42,55 @@ describe(`with emeraldVelvetChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Grün",
+                  "en-GB": "Green",
+                  "en-US": "Green",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Grün:#008000",
-                "en-GB": "Green:#008000",
-                "en-US": "Green:#008000",
+                "de-DE": "Grün",
+                "en-GB": "Green",
+                "en-US": "Green",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Burlywood:#deb887",
-                "en-GB": "Burlywood:#deb887",
-                "en-US": "Burlywood:#deb887",
+                "de-DE": "Burlywood",
+                "en-GB": "Burlywood",
+                "en-US": "Burlywood",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#008000",
+                "en-GB": "#008000",
+                "en-US": "#008000",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#deb887",
+                "en-GB": "#deb887",
+                "en-US": "#deb887",
               },
             },
           ],

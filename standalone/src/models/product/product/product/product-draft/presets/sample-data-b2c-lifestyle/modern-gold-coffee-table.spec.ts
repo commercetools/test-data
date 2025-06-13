@@ -43,22 +43,6 @@ describe(`with modernGoldCoffeeTable preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": {
-                "de-DE": "Weiß:#FFFFFF",
-                "en-GB": "White:#FFFFFF",
-                "en-US": "White:#FFFFFF",
-              },
-            },
-            {
-              "name": "finish",
-              "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
-              },
-            },
-            {
               "name": "productspec",
               "value": {
                 "de-DE": "- Length: 5 feet
@@ -79,6 +63,58 @@ describe(`with modernGoldCoffeeTable preset`, () => {
       - Tables made of plastic laminate on manufactured wood
       - Gold finish on legs
       - Preassembled",
+              },
+            },
+            {
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Weiß",
+                  "en-GB": "White",
+                  "en-US": "White",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gold",
+                  "en-GB": "Gold",
+                  "en-US": "Gold",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            },
+            {
+              "name": "finish-label",
+              "value": {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFFFFF",
+                "en-GB": "#FFFFFF",
+                "en-US": "#FFFFFF",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#FFD700",
+                "en-GB": "#FFD700",
+                "en-US": "#FFD700",
               },
             },
           ],
@@ -253,16 +289,32 @@ describe(`with modernGoldCoffeeTable preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": "{"en-US":"White:#FFFFFF","en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF"}",
-            },
-            {
-              "name": "finish",
-              "value": "{"en-US":"Gold:#FFD700","en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
-            },
-            {
               "name": "productspec",
               "value": "{"en-US":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled","en-GB":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled","de-DE":"- Length: 5 feet\\n- Width: 3 feet\\n- Height: 2 feet\\n- Tables made of plastic laminate on manufactured wood\\n- Gold finish on legs\\n- Preassembled"}",
+            },
+            {
+              "name": "search-color",
+              "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+            },
+            {
+              "name": "search-finish",
+              "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
             },
           ],
           "images": [

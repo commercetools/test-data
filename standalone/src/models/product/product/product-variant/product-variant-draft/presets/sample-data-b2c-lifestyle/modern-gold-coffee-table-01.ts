@@ -54,16 +54,6 @@ const modernGoldCoffeeTable01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 2500, h: 2500 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'White:#FFFFFF',
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
-      }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Gold:#FFD700',
-        'en-GB': 'Gold:#FFD700',
-        'de-DE': 'Gold:#FFD700',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Length: 5 feet\n- Width: 3 feet\n- Height: 2 feet\n- Tables made of plastic laminate on manufactured wood\n- Gold finish on legs\n- Preassembled',
@@ -71,6 +61,44 @@ const modernGoldCoffeeTable01 = (): TBuilder<TProductVariantDraft> =>
           '- Length: 5 feet\n- Width: 3 feet\n- Height: 2 feet\n- Tables made of plastic laminate on manufactured wood\n- Gold finish on legs\n- Preassembled',
         'de-DE':
           '- Length: 5 feet\n- Width: 3 feet\n- Height: 2 feet\n- Tables made of plastic laminate on manufactured wood\n- Gold finish on legs\n- Preassembled',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gold',
+            'en-GB': 'Gold',
+            'de-DE': 'Gold',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gold',
+        'de-DE': 'Gold',
+        'en-US': 'Gold',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFFFFF',
+        'en-GB': '#FFFFFF',
+        'de-DE': '#FFFFFF',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#FFD700',
+        'en-GB': '#FFD700',
+        'de-DE': '#FFD700',
       }),
     ]);
 

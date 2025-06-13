@@ -41,15 +41,43 @@ const sallyArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Comes with matching throw pillow',
         'de-DE': '- Wird mit passendem Dekokissen geliefert',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Pink:#FFC0CB',
-        'de-DE': 'Rosa:#FFC0CB',
-        'en-US': 'Pink:#FFC0CB',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Pink',
+            'en-GB': 'Pink',
+            'de-DE': 'Rosa',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Pink',
+        'de-DE': 'Rosa',
+        'en-US': 'Pink',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Beige:#F5F5DC',
-        'en-US': 'Beige:#F5F5DC',
-        'de-DE': 'Beige:#F5F5DC',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Beige',
+        'de-DE': 'Beige',
+        'en-US': 'Beige',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFC0CB',
+        'en-GB': '#FFC0CB',
+        'de-DE': '#FFC0CB',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#F5F5DC',
+        'en-GB': '#F5F5DC',
+        'de-DE': '#F5F5DC',
       }),
     ]);
 

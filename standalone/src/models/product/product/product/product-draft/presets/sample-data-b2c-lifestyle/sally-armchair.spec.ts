@@ -42,19 +42,55 @@ describe(`with sallyArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Gelb",
+                  "en-GB": "Yellow",
+                  "en-US": "Yellow",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Rosa:#FFC0CB",
-                "en-GB": "Pink:#FFC0CB",
-                "en-US": "Pink:#FFC0CB",
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Beige:#F5F5DC",
-                "en-GB": "Beige:#F5F5DC",
-                "en-US": "Beige:#F5F5DC",
+                "de-DE": "Beige",
+                "en-GB": "Beige",
+                "en-US": "Beige",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFC0CB",
+                "en-GB": "#FFC0CB",
+                "en-US": "#FFC0CB",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "#F5F5DC",
+                "en-GB": "#F5F5DC",
+                "en-US": "#F5F5DC",
               },
             },
           ],
@@ -201,12 +237,28 @@ describe(`with sallyArmchair preset`, () => {
               "value": "{"en-GB":"- Comes with matching throw pillow","en-US":"- Comes with matching throw pillow","de-DE":"- Wird mit passendem Dekokissen geliefert"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Pink:#FFC0CB","de-DE":"Rosa:#FFC0CB","en-US":"Pink:#FFC0CB"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Pink","de-DE":"Rosa","en-US":"Pink"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
             },
           ],
           "images": [

@@ -17,19 +17,55 @@ describe(`with brunoChair preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Königs blau:#4169E1",
-              "en-GB": "Royal Blue:#4169E1",
-              "en-US": "Royal Blue:#4169E1",
+              "de-DE": "Königs blau",
+              "en-GB": "Royal Blue",
+              "en-US": "Royal Blue",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#4169E1",
+              "en-GB": "#4169E1",
+              "en-US": "#4169E1",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
             },
           },
         ],
@@ -111,12 +147,28 @@ describe(`with brunoChair preset`, () => {
             "value": "{"en-GB":"- Includes 1 chair","de-DE":"- Beinhaltet 1 Stuhl","en-US":"- Includes 1 chair"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Royal Blue:#4169E1","de-DE":"Königs blau:#4169E1","en-US":"Royal Blue:#4169E1"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513","en-US":"Saddle Brown:#8b4513"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Royal Blue","de-DE":"Königs blau","en-US":"Royal Blue"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

@@ -48,17 +48,6 @@ const traditionalLSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5760, h: 3840 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Beige:#F5F5DC',
-        'en-GB': 'Beige:#F5F5DC',
-        'de-DE': 'Beige:#F5F5DC',
-      }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Saddle Brown:#8b4513',
-        'en-GB': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
-      }),
-
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Cotton upholstery\n- Comes with accent pillows\n- Assembly on site',
@@ -66,6 +55,44 @@ const traditionalLSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
           '- Cotton upholstery\n- Comes with accent pillows\n- Assembly on site',
         'de-DE':
           '- Baumwollbezug\n- Wurfkissen um Lieferumfang enthalten\n- Selbstmontage',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Beige',
+        'de-DE': 'Beige',
+        'en-US': 'Beige',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#F5F5DC',
+        'en-GB': '#F5F5DC',
+        'de-DE': '#F5F5DC',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#8b4513',
+        'en-GB': '#8b4513',
+        'de-DE': '#8b4513',
       }),
     ]);
 

@@ -45,19 +45,55 @@ describe(`with sweetPeaCandle preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
+              ],
+            },
+            {
+              "name": "search-finish",
+              "value": [
+                {
+                  "de-DE": "Glas",
+                  "en-GB": "Glass",
+                  "en-US": "Glass",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Rosa:#FFC0CB",
-                "en-GB": "Pink:#FFC0CB",
-                "en-US": "Pink:#FFC0CB",
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Glas:transparent",
-                "en-GB": "Glass:transparent",
-                "en-US": "Glass:transparent",
+                "de-DE": "Glas",
+                "en-GB": "Glass",
+                "en-US": "Glass",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#FFC0CB",
+                "en-GB": "#FFC0CB",
+                "en-US": "#FFC0CB",
+              },
+            },
+            {
+              "name": "finish-code",
+              "value": {
+                "de-DE": "transparent",
+                "en-GB": "transparent",
+                "en-US": "transparent",
               },
             },
           ],
@@ -220,12 +256,28 @@ describe(`with sweetPeaCandle preset`, () => {
               "value": "{"en-GB":"- Comes in glass jar\\n- 180 grams","en-US":"- Comes in glass jar\\n- 180 grams","de-DE":"- Wird im Glas geliefert\\n- 180 Gramm"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Pink:#FFC0CB","de-DE":"Rosa:#FFC0CB","en-US":"Pink:#FFC0CB"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Glass:transparent","de-DE":"Glas:transparent","en-US":"Glass:transparent"}",
+              "name": "search-finish",
+              "value": "[{"en-US":"Glass","en-GB":"Glass","de-DE":"Glas"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Pink","de-DE":"Rosa","en-US":"Pink"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Glass","de-DE":"Glas","en-US":"Glass"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
+            },
+            {
+              "name": "finish-code",
+              "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
             },
           ],
           "images": [

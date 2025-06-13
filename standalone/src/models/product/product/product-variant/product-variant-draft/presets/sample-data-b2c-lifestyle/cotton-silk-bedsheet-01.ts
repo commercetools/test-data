@@ -44,13 +44,27 @@ const cottonSilkBedsheet01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Machine washable\n- 600 thread count\n- Includes 1 fitted sheet',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
-        'en-US': 'White:#FFFFFF',
-      }),
       AttributeDraft.random().name('new-arrival').value(false),
       AttributeDraft.random().name('size').value({ 'en-GB': 'Queen' }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'White',
+            'en-GB': 'White',
+            'de-DE': 'Weiß',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#FFFFFF',
+        'en-GB': '#FFFFFF',
+        'de-DE': '#FFFFFF',
+      }),
     ]);
 
 export default cottonSilkBedsheet01;

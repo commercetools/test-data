@@ -42,10 +42,24 @@ const patternedPillowCover01 = (): TBuilder<TProductVariantDraft> =>
           '- Waschmaschinenfest\n- Kissen nicht im Lieferumfang enthalten',
         'en-US': '- Machine washable\n- Pillow not included',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Lavender Blush:#fff0f5',
-        'de-DE': 'Lavendel:#fff0f5',
-        'en-US': 'Lavender Blush:#fff0f5',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Pink',
+            'en-GB': 'Pink',
+            'de-DE': 'Rosa',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Lavender Blush',
+        'de-DE': 'Lavendel',
+        'en-US': 'Lavender Blush',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#fff0f5',
+        'en-GB': '#fff0f5',
+        'de-DE': '#fff0f5',
       }),
     ]);
 

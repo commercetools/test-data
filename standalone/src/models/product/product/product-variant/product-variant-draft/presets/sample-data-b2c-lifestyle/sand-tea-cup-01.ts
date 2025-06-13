@@ -41,10 +41,24 @@ const sandTeaCup01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Includes 1 mug',
         'de-DE': '- Enthält 1 Tasse',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Sand:#C2B280',
-        'de-DE': 'Sand:#C2B280',
-        'en-US': 'Sand:#C2B280',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Sand',
+        'de-DE': 'Sand',
+        'en-US': 'Sand',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#C2B280',
+        'en-GB': '#C2B280',
+        'de-DE': '#C2B280',
       }),
     ]);
 

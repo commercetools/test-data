@@ -13,22 +13,6 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Dunkles Schiefer grau:#2F4F4F",
-              "en-GB": "Dark Slate Grey:#2F4F4F",
-              "en-US": "Dark Slate Gray:#2F4F4F",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Velvet upholstery
@@ -40,6 +24,58 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
               "en-US": "- Velvet upholstery
       - 3-seater sofa
       - Assembled on site",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Dunkles Schiefer grau",
+              "en-GB": "Dark Slate Grey",
+              "en-US": "Dark Slate Gray",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#2F4F4F",
+              "en-GB": "#2F4F4F",
+              "en-US": "#2F4F4F",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
             },
           },
         ],
@@ -141,16 +177,32 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Dark Slate Gray:#2F4F4F","en-GB":"Dark Slate Grey:#2F4F4F","de-DE":"Dunkles Schiefer grau:#2F4F4F"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Velvet upholstery\\n- 3-seater sofa\\n- Assembled on site","en-GB":"- Velvet upholstery\\n- 3-seater sofa\\n- Assembled on site","de-DE":"- Velvet upholstery\\n- 3-seater sofa\\n- Assembled on site"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Gray","en-GB":"Grey","de-DE":"Grau"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Dark Slate Grey","de-DE":"Dunkles Schiefer grau","en-US":"Dark Slate Gray"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

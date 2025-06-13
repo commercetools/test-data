@@ -42,15 +42,29 @@ const cloudQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5000, h: 3621 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Light Blue:#ADD8E6',
-        'de-DE': 'Hell blau:#ADD8E6',
-        'en-US': 'Light Blue:#ADD8E6',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Assembly is included',
         'de-DE': '- Die Montage ist im Preis inbegriffen',
         'en-US': '- Assembly is included',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Blue',
+            'en-GB': 'Blue',
+            'de-DE': 'Blau',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Light Blue',
+        'de-DE': 'Hell blau',
+        'en-US': 'Light Blue',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#ADD8E6',
+        'en-GB': '#ADD8E6',
+        'de-DE': '#ADD8E6',
       }),
     ]);
 

@@ -42,11 +42,29 @@ describe(`with patternedPillowCover preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Rosa",
+                  "en-GB": "Pink",
+                  "en-US": "Pink",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Lavendel:#fff0f5",
-                "en-GB": "Lavender Blush:#fff0f5",
-                "en-US": "Lavender Blush:#fff0f5",
+                "de-DE": "Lavendel",
+                "en-GB": "Lavender Blush",
+                "en-US": "Lavender Blush",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#fff0f5",
+                "en-GB": "#fff0f5",
+                "en-US": "#fff0f5",
               },
             },
           ],
@@ -160,16 +178,34 @@ describe(`with patternedPillowCover preset`, () => {
                 },
               },
               {
-                "name": "color",
+                "name": "new-arrival",
+                "value": false,
+              },
+              {
+                "name": "search-color",
+                "value": [
+                  {
+                    "de-DE": "Schwarz",
+                    "en-GB": "Black",
+                    "en-US": "Black",
+                  },
+                ],
+              },
+              {
+                "name": "color-label",
                 "value": {
-                  "de-DE": "Schwarz:#000000",
-                  "en-GB": "Black:#000000",
-                  "en-US": "Black:#000000",
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
                 },
               },
               {
-                "name": "new-arrival",
-                "value": false,
+                "name": "color-code",
+                "value": {
+                  "de-DE": "#000000",
+                  "en-GB": "#000000",
+                  "en-US": "#000000",
+                },
               },
             ],
             "images": [
@@ -280,8 +316,16 @@ describe(`with patternedPillowCover preset`, () => {
               "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Lavender Blush:#fff0f5","de-DE":"Lavendel:#fff0f5","en-US":"Lavender Blush:#fff0f5"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Lavender Blush","de-DE":"Lavendel","en-US":"Lavender Blush"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
             },
           ],
           "images": [
@@ -405,12 +449,20 @@ describe(`with patternedPillowCover preset`, () => {
                 "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
               },
               {
-                "name": "color",
-                "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-              },
-              {
                 "name": "new-arrival",
                 "value": "false",
+              },
+              {
+                "name": "search-color",
+                "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+              },
+              {
+                "name": "color-code",
+                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
               },
             ],
             "images": [

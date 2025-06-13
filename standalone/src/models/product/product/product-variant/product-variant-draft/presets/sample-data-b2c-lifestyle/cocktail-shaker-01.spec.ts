@@ -27,11 +27,29 @@ describe(`with cocktailShaker01 preset`, () => {
             },
           },
           {
-            "name": "finish",
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
+              },
+            ],
+          },
+          {
+            "name": "finish-label",
             "value": {
-              "de-DE": "Silber:#C0C0C0",
-              "en-GB": "Silver:#C0C0C0",
-              "en-US": "Silver:#C0C0C0",
+              "de-DE": "Silber",
+              "en-GB": "Silver",
+              "en-US": "Silver",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#C0C0C0",
+              "en-GB": "#C0C0C0",
+              "en-US": "#C0C0C0",
             },
           },
         ],
@@ -121,8 +139,16 @@ describe(`with cocktailShaker01 preset`, () => {
             "value": "{"en-GB":"- Includes built in strainer\\n- Stainless steel\\n- Dishwasher safe","de-DE":"- Inklusive eingebautem Sieb\\n- Edelstahl\\n- Spülmaschinenfest","en-US":"- Includes built in strainer\\n- Stainless steel\\n- Dishwasher safe"}",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Silver","en-GB":"Silver","de-DE":"Silber"}]",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
           },
         ],
         "images": [

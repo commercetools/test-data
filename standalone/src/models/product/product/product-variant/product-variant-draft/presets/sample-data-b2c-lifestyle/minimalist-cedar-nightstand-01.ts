@@ -48,10 +48,24 @@ const minimalistCedarNightstand01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 4011, h: 6016 }),
     ])
     .attributes([
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Gainsboro:#dcdcdc',
-        'de-DE': 'Gainsboro:#dcdcdc',
-        'en-US': 'Gainsboro:#dcdcdc',
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gray',
+            'en-GB': 'Grey',
+            'de-DE': 'Grau',
+          },
+        ]),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gainsboro',
+        'de-DE': 'Gainsboro',
+        'en-US': 'Gainsboro',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#dcdcdc',
+        'en-GB': '#dcdcdc',
+        'de-DE': '#dcdcdc',
       }),
     ]);
 

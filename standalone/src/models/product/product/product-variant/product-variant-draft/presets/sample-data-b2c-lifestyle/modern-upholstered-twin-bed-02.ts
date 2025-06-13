@@ -56,15 +56,43 @@ const modernUpholsteredTwinBed02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Cotton upholstery \n- Manufactured wood\n- Twin size\n- Assembled on site',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Lightslate Gray:#778899',
-        'en-GB': 'Lightslate Grey:#778899',
-        'de-DE': 'Helles Schiefer grau:#778899',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Green',
+            'en-GB': 'Green',
+            'de-DE': 'Grün',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gray',
+            'en-GB': 'Grey',
+            'de-DE': 'Grau',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Sea Green',
+        'de-DE': 'See grün',
+        'en-US': 'Sea Green',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Sea Green:#2E8B57',
-        'en-GB': 'Sea Green:#2E8B57',
-        'de-DE': 'See grün:#2E8B57',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Lightslate Grey',
+        'de-DE': 'Helles Schiefer grau',
+        'en-US': 'Lightslate Gray',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#2E8B57',
+        'en-GB': '#2E8B57',
+        'de-DE': '#2E8B57',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#778899',
+        'en-GB': '#778899',
+        'de-DE': '#778899',
       }),
     ]);
 

@@ -18,19 +18,55 @@ describe(`with rattanLoungeChair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Antik-weiß:#faebd7",
-              "en-GB": "Antique White:#faebd7",
-              "en-US": "Antique White:#faebd7",
+              "de-DE": "Antik-weiß",
+              "en-GB": "Antique White",
+              "en-US": "Antique White",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Beige:#F5F5DC",
-              "en-GB": "Beige:#F5F5DC",
-              "en-US": "Beige:#F5F5DC",
+              "de-DE": "Beige",
+              "en-GB": "Beige",
+              "en-US": "Beige",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#faebd7",
+              "en-GB": "#faebd7",
+              "en-US": "#faebd7",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#F5F5DC",
+              "en-GB": "#F5F5DC",
+              "en-US": "#F5F5DC",
             },
           },
         ],
@@ -120,12 +156,28 @@ describe(`with rattanLoungeChair01 preset`, () => {
             "value": "{"en-GB":"- Includes 2 cushions for seat and backrest","en-US":"- Includes 2 cushions for seat and backrest","de-DE":"- Inklusive 2 Kissen für Sitz und Rückenlehne"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Antique White:#faebd7","de-DE":"Antik-weiß:#faebd7","en-US":"Antique White:#faebd7"}",
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC"}",
+            "name": "search-finish",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Antique White","de-DE":"Antik-weiß","en-US":"Antique White"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#faebd7","en-GB":"#faebd7","de-DE":"#faebd7"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
           },
         ],
         "images": [

@@ -13,22 +13,6 @@ describe(`with minimalistModernSideTable01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "White:#FFFFFF",
-              "en-GB": "Weiß:#FFFFFF",
-              "en-US": "White:#FFFFFF",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Saddle Brown:#8b4513",
-              "en-GB": "Sattel braun:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- 4 legged side table
@@ -40,6 +24,58 @@ describe(`with minimalistModernSideTable01 preset`, () => {
               "en-US": "- 4 legged side table
       - Walnut legs
       - Pre-assembled",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Braun",
+                "en-GB": "Brown",
+                "en-US": "Brown",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "White",
+              "en-GB": "Weiß",
+              "en-US": "White",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Saddle Brown",
+              "en-GB": "Sattel braun",
+              "en-US": "Saddle Brown",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFFFFF",
+              "en-GB": "#FFFFFF",
+              "en-US": "#FFFFFF",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#8b4513",
+              "en-GB": "#8b4513",
+              "en-US": "#8b4513",
             },
           },
         ],
@@ -117,16 +153,32 @@ describe(`with minimalistModernSideTable01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"White:#FFFFFF","en-GB":"Weiß:#FFFFFF","de-DE":"White:#FFFFFF"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Saddle Brown:#8b4513","en-GB":"Sattel braun:#8b4513","de-DE":"Saddle Brown:#8b4513"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled","en-GB":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled","de-DE":"- 4 legged side table\\n- Walnut legs\\n- Pre-assembled"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Weiß","de-DE":"White","en-US":"White"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Sattel braun","de-DE":"Saddle Brown","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
           },
         ],
         "images": [

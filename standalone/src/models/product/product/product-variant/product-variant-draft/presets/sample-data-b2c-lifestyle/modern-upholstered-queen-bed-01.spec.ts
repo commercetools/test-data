@@ -13,22 +13,6 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Weiß:#FFFFFF",
-              "en-GB": "White:#FFFFFF",
-              "en-US": "White:#FFFFFF",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Cotton Upholstery 
@@ -40,6 +24,58 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
               "en-US": "- Cotton Upholstery 
       - Standard Queen size
       - Assembly on site",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Weiß",
+                "en-GB": "White",
+                "en-US": "White",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Weiß",
+              "en-GB": "White",
+              "en-US": "White",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFFFFF",
+              "en-GB": "#FFFFFF",
+              "en-US": "#FFFFFF",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#000000",
+              "en-GB": "#000000",
+              "en-US": "#000000",
             },
           },
         ],
@@ -117,16 +153,32 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"White:#FFFFFF","en-GB":"White:#FFFFFF","de-DE":"Weiß:#FFFFFF"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Black:#000000","en-GB":"Black:#000000","de-DE":"Schwarz:#000000"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Cotton Upholstery \\n- Standard Queen size\\n- Assembly on site","en-GB":"- Cotton Upholstery \\n- Standard Queen size\\n- Assembly on site","de-DE":"- Cotton Upholstery \\n- Standard Queen size\\n- Assembly on site"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"White","en-GB":"White","de-DE":"Weiß"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Black","en-GB":"Black","de-DE":"Schwarz"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"White","de-DE":"Weiß","en-US":"White"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
           },
         ],
         "images": [

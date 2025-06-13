@@ -24,11 +24,29 @@ describe(`with cocoaPillowCover01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Gelb",
+                "en-GB": "Yellow",
+                "en-US": "Yellow",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#D2B48C",
+              "en-GB": "#D2B48C",
+              "en-US": "#D2B48C",
             },
           },
         ],
@@ -110,8 +128,16 @@ describe(`with cocoaPillowCover01 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Yellow","en-GB":"Yellow","de-DE":"Gelb"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
           },
         ],
         "images": [

@@ -41,10 +41,24 @@ const cocktailShakerSet01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Edelstahl\n- Handwäsche nur',
         'en-US': '- Stainless steel\n- Hand wash only',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Gold:#FFD700',
-        'de-DE': 'Gold:#FFD700',
-        'en-US': 'Gold:#FFD700',
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Gold',
+            'en-GB': 'Gold',
+            'de-DE': 'Gold',
+          },
+        ]),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Gold',
+        'de-DE': 'Gold',
+        'en-US': 'Gold',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#FFD700',
+        'en-GB': '#FFD700',
+        'de-DE': '#FFD700',
       }),
     ]);
 

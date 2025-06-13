@@ -42,11 +42,6 @@ const geometricPillowCase03 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5000, h: 5000 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Tan:#D2B48C',
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-      }),
       AttributeDraft.random().name('productspec').value({
         'en-US':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable\n',
@@ -54,6 +49,25 @@ const geometricPillowCase03 = (): TBuilder<TProductVariantDraft> =>
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
         'de-DE':
           '- Velvet fabric\n- Cotton lining\n- Pillow case comes with zip for easy removal\n- Pillow not included\n- Washable',
+      }),
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#D2B48C',
+        'en-GB': '#D2B48C',
+        'de-DE': '#D2B48C',
       }),
     ]);
 

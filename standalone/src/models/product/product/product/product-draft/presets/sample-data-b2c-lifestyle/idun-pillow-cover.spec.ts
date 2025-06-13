@@ -41,11 +41,29 @@ describe(`with idunPillowCover preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": [
+                {
+                  "de-DE": "Braun",
+                  "en-GB": "Brown",
+                  "en-US": "Brown",
+                },
+              ],
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Siena:#A0522D",
-                "en-GB": "Siena:#A0522D",
-                "en-US": "Siena:#A0522D",
+                "de-DE": "Siena",
+                "en-GB": "Siena",
+                "en-US": "Siena",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": {
+                "de-DE": "#A0522D",
+                "en-GB": "#A0522D",
+                "en-US": "#A0522D",
               },
             },
           ],
@@ -207,8 +225,16 @@ describe(`with idunPillowCover preset`, () => {
               "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Siena:#A0522D","de-DE":"Siena:#A0522D","en-US":"Siena:#A0522D"}",
+              "name": "search-color",
+              "value": "[{"en-US":"Brown","en-GB":"Brown","de-DE":"Braun"}]",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Siena","de-DE":"Siena","en-US":"Siena"}",
+            },
+            {
+              "name": "color-code",
+              "value": "{"en-US":"#A0522D","en-GB":"#A0522D","de-DE":"#A0522D"}",
             },
           ],
           "images": [

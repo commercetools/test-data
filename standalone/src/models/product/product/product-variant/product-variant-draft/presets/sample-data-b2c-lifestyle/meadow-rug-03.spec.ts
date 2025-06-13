@@ -20,11 +20,29 @@ describe(`with meadowRug03 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Blau",
+                "en-GB": "Blue",
+                "en-US": "Blue",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Himmel blau:#87CEEB",
-              "en-GB": "Sky Blue:#87CEEB",
-              "en-US": "Sky Blue:#87CEEB",
+              "de-DE": "Himmel blau",
+              "en-GB": "Sky Blue",
+              "en-US": "Sky Blue",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#87CEEB",
+              "en-GB": "#87CEEB",
+              "en-US": "#87CEEB",
             },
           },
         ],
@@ -106,8 +124,16 @@ describe(`with meadowRug03 preset`, () => {
             "value": "{"en-GB":"- 3ft x 5ft","de-DE":"- 3 Fuß x 5 Fuß","en-US":"- 3ft x 5ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Sky Blue:#87CEEB","de-DE":"Himmel blau:#87CEEB","en-US":"Sky Blue:#87CEEB"}",
+            "name": "search-color",
+            "value": "[{"en-US":"Blue","en-GB":"Blue","de-DE":"Blau"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sky Blue","de-DE":"Himmel blau","en-US":"Sky Blue"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
           },
         ],
         "images": [

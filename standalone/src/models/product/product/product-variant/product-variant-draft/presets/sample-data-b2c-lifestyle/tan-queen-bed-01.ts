@@ -41,15 +41,43 @@ const tanQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Assembly included in delivery',
         'de-DE': '- Montage im Lieferumfang enthalten',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random()
+        .name('search-color')
+        .value([
+          {
+            'en-US': 'Yellow',
+            'en-GB': 'Yellow',
+            'de-DE': 'Gelb',
+          },
+        ]),
+      AttributeDraft.random()
+        .name('search-finish')
+        .value([
+          {
+            'en-US': 'Brown',
+            'en-GB': 'Brown',
+            'de-DE': 'Braun',
+          },
+        ]),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Saddle Brown:#8b4513',
-        'en-US': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
+      }),
+      AttributeDraft.random().name('color-code').value({
+        'en-US': '#D2B48C',
+        'en-GB': '#D2B48C',
+        'de-DE': '#D2B48C',
+      }),
+      AttributeDraft.random().name('finish-code').value({
+        'en-US': '#8b4513',
+        'en-GB': '#8b4513',
+        'de-DE': '#8b4513',
       }),
     ]);
 

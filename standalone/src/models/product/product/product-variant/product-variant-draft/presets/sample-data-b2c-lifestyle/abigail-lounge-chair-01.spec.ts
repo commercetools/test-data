@@ -10,22 +10,6 @@ describe(`with abigailLoungeChair01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell rosa:#FFB6C1",
-              "en-GB": "Light Pink:#FFB6C1",
-              "en-US": "Light Pink:#FFB6C1",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Gold:#FFD700",
-              "en-GB": "Gold:#FFD700",
-              "en-US": "Gold:#FFD700",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Wird mit passendem Kissen geliefert
@@ -37,6 +21,58 @@ describe(`with abigailLoungeChair01 preset`, () => {
               "en-US": "- Comes with matching throw pillow
       - Velvet upholstery
       - Pre-assembled",
+            },
+          },
+          {
+            "name": "search-color",
+            "value": [
+              {
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
+              },
+            ],
+          },
+          {
+            "name": "search-finish",
+            "value": [
+              {
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
+              },
+            ],
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell rosa",
+              "en-GB": "Light Pink",
+              "en-US": "Light Pink",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Gold",
+              "en-GB": "Gold",
+              "en-US": "Gold",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": {
+              "de-DE": "#FFB6C1",
+              "en-GB": "#FFB6C1",
+              "en-US": "#FFB6C1",
+            },
+          },
+          {
+            "name": "finish-code",
+            "value": {
+              "de-DE": "#FFD700",
+              "en-GB": "#FFD700",
+              "en-US": "#FFD700",
             },
           },
         ],
@@ -133,16 +169,32 @@ describe(`with abigailLoungeChair01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Light Pink:#FFB6C1","en-GB":"Light Pink:#FFB6C1","de-DE":"Hell rosa:#FFB6C1"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-US":"Gold:#FFD700","en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Comes with matching throw pillow\\n- Velvet upholstery\\n- Pre-assembled","en-GB":"- Comes with matching throw pillow\\n- Velvet upholstery\\n- Pre-assembled","de-DE":"- Wird mit passendem Kissen geliefert\\n- Samtpolsterung\\n- Wird zusammengebaut geliefert"}",
+          },
+          {
+            "name": "search-color",
+            "value": "[{"en-US":"Pink","en-GB":"Pink","de-DE":"Rosa"}]",
+          },
+          {
+            "name": "search-finish",
+            "value": "[{"en-US":"Gold","en-GB":"Gold","de-DE":"Gold"}]",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Pink","de-DE":"Hell rosa","en-US":"Light Pink"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+          },
+          {
+            "name": "color-code",
+            "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
+          },
+          {
+            "name": "finish-code",
+            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
           },
         ],
         "images": [
