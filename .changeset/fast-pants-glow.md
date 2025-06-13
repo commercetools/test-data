@@ -4,4 +4,4 @@
 
 fix(store): export correct `compatPreset` for `usLargeCustomers` in store model
 
-Previously, the `restPreset` was mistakenly exported instead of the intended `compatPreset` for the `usLargeCustomers` store model.
+We're fixing a preset in the StoreDraft model where we were exporting a REST one instead of the expected compatibility one (StoreDraft.presets.useLargeCustomers).
