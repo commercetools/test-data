@@ -34,6 +34,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumValu
         const _labelAllLocales =
           model.label as unknown as TCtpLocalizedString[];
         return {
+          ...model,
           labelAllLocales: _labelAllLocales,
           label:
             LocalizedString.resolveGraphqlDefaultLocaleValue(_labelAllLocales),
@@ -41,6 +42,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeLocalizedEnumValu
       }
 
       return {
+        ...model,
         label: LocalizedString.resolveGraphqlDefaultLocaleValue(
           model.labelAllLocales
         ),

@@ -40,6 +40,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TInventoryEntryGraphql> = {
           .buildGraphql<TReferenceGraphql<'channel'>>()
       : null;
     return {
+      ...model,
       supplyChannelRef,
     };
   },

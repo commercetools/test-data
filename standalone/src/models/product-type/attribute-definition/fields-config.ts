@@ -81,6 +81,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TAttributeDefinitionGraphql
         LocalizedString.resolveGraphqlDefaultLocaleValue(inputTipAllLocales);
 
       return {
+        ...model,
         label,
         labelAllLocales,
         inputTip,

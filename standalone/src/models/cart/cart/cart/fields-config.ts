@@ -117,6 +117,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
     );
 
     return {
+      ...model,
       storeRef,
       businessUnitRef,
       customerGroupRef,

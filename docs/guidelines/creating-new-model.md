@@ -125,6 +125,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCartGraphql> = {
           .buildGraphql<TReferenceGraphql<'store'>>()
       : null;
     return {
+      ...model,
       storeRef,
     };
   },
@@ -193,6 +194,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
         )
       : undefined;
     return {
+      ...model,
       name,
       description,
     };

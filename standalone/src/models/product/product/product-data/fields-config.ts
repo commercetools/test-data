@@ -1,8 +1,6 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { Category } from '@/models/category';
 import {
   LocalizedString,
-  ReferenceRest,
   type TReferenceGraphql,
   type TLocalizedStringGraphql,
 } from '@/models/commons';
@@ -119,7 +117,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductDataGraphql> = {
     const [searchKeyword] = model.searchKeywords.map(
       (keyword) => keyword.searchKeywords
     );
+
     return {
+      ...model,
       slugAllLocales,
       nameAllLocales,
       descriptionAllLocales,

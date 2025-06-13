@@ -106,6 +106,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TLineItemGraphql> = {
       : model.supplyChannel;
 
     return {
+      ...model,
       name,
       productSlug,
       distributionChannelRef,

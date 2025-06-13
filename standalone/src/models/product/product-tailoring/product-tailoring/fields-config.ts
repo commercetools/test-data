@@ -55,16 +55,17 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringGraphql> =
             .typeId('product')
             .id(model.product.id)
             .buildGraphql()
-        : undefined;
+        : ReferenceGraphql.presets.productReference().buildGraphql();
 
       const storeRef = model.store
         ? KeyReference.random()
             .typeId('store')
             .key(model.store.key)
             .buildGraphql()
-        : undefined;
+        : KeyReference.random().typeId('store').buildGraphql();
 
       return {
+        ...model,
         productRef,
         storeRef,
       };

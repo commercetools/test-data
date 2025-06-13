@@ -232,6 +232,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
         )
       : undefined;
     return {
+      ...model,
       name,
       description,
     };

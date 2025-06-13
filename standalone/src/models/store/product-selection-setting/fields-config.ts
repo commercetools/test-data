@@ -32,8 +32,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionSettingGra
             .productSelectionReference()
             .id(model.productSelection.id)
             .buildGraphql()
-        : undefined;
+        : ReferenceGraphql.presets.productSelectionReference().buildGraphql();
+
       return {
+        ...model,
         productSelectionRef,
       };
     },
