@@ -6,7 +6,7 @@ import { TCustomFieldLocalizedEnumType } from './types';
 
 const generator = Generator<TCustomFieldLocalizedEnumType>({
   fields: {
-    name: 'lenum',
+    name: 'LocalizedEnum',
     values: fake(() => [CustomFieldLocalizedEnumValue.random()]),
   },
 });

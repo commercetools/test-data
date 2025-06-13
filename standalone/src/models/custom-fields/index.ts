@@ -2,6 +2,7 @@ import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 import * as modelPresets from './presets';
 
 export * from './custom-fields-draft';
+export * from './raw-custom-field';
 export * from './types';
 
 export const CustomFieldsRest = {

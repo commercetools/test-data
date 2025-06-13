@@ -1,6 +1,9 @@
 import { TBuilder } from '@/core';
-import { TCtpRawCustomField } from '@/graphql-types';
-import { CustomFieldsRest, CustomFieldsGraphql } from '../index';
+import {
+  CustomFieldsRest,
+  CustomFieldsGraphql,
+  RawCustomFieldGraphql,
+} from '../index';
 import { TCustomFieldsGraphql, TCustomFieldsRest } from '../types';
 
 export const restPreset = (
@@ -16,5 +19,5 @@ export const graphqlPreset = (
   stringValue: string = 'test value'
 ): TBuilder<TCustomFieldsGraphql> =>
   CustomFieldsGraphql.random().customFieldsRaw([
-    { name: stringFieldName, value: stringValue },
-  ] as unknown as TCtpRawCustomField[]);
+    RawCustomFieldGraphql.random().name(stringFieldName).value(stringValue),
+  ]);

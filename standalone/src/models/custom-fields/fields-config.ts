@@ -1,5 +1,4 @@
 import { fake, type TModelFieldsConfig } from '@/core';
-import { TCtpRawCustomField } from '@/graphql-types';
 import { ReferenceRest, ReferenceGraphql } from '@/models/commons';
 import { Type } from '@/models/type';
 import { TCustomFieldsRest, TCustomFieldsGraphql } from './types';
@@ -7,6 +6,7 @@ import { TCustomFieldsRest, TCustomFieldsGraphql } from './types';
 export const restFieldsConfig: TModelFieldsConfig<TCustomFieldsRest> = {
   fields: {
     type: fake(() => ReferenceRest.presets.typeReference()),
+    // Use an array ofRawCustomFieldGraphql to create the fields.
     fields: null,
   },
 };
@@ -26,14 +26,8 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomFieldsGraphql> = {
           .buildGraphql()
       : undefined;
 
-    const customFieldsRaw = model.customFieldsRaw?.map((field) => ({
-      __typename: 'RawCustomField',
-      name: field.name,
-      value: field.value,
-    })) as TCtpRawCustomField[];
-
     return {
-      customFieldsRaw,
+      ...model,
       typeRef,
     };
   },

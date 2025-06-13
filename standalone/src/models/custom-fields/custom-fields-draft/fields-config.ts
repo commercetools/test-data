@@ -25,6 +25,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomFieldsDraftGraphql> 
       }));
 
       return {
+        ...model,
         fields,
       };
     },
