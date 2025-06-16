@@ -15,6 +15,8 @@ import {
   AttributeSetTypeDraftGraphql,
   AttributeLocalizableTextTypeDraftGraphql,
   AttributeTextTypeDraftGraphql,
+  AttributeTextTypeDraft,
+  AttributeTextTypeDraftRest,
 } from '../../../../index';
 import {
   TProductTypeDraft,
@@ -165,7 +167,7 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('color-code')
-        .type(AttributeTextTypeDraftGraphql.random())
+        .type(AttributeTextTypeDraftRest.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -194,7 +196,7 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('finish-code')
-        .type(AttributeTextTypeDraftGraphql.random())
+        .type(AttributeTextTypeDraftRest.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -359,7 +361,7 @@ export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
       AttributeDefinitionDraftGraphql.presets
         .empty()
         .name('color-code')
-        .type(AttributeLocalizableTextTypeDraftGraphql.random())
+        .type(AttributeTextTypeDraftGraphql.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -388,7 +390,7 @@ export const graphqlPreset = (): TBuilder<TProductTypeDraftGraphql> =>
       AttributeDefinitionDraftGraphql.presets
         .empty()
         .name('finish-code')
-        .type(AttributeLocalizableTextTypeDraftGraphql.random())
+        .type(AttributeTextTypeDraftGraphql.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -553,7 +555,7 @@ export const compatPreset = (): TBuilder<TProductTypeDraft> =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('color-code')
-        .type(AttributeLocalizableTextTypeDraft.random())
+        .type(AttributeTextTypeDraft.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -582,7 +584,7 @@ export const compatPreset = (): TBuilder<TProductTypeDraft> =>
       AttributeDefinitionDraft.presets
         .empty()
         .name('finish-code')
-        .type(AttributeLocalizableTextTypeDraft.random())
+        .type(AttributeTextTypeDraft.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
