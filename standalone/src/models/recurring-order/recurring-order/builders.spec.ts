@@ -1,6 +1,6 @@
 import { Company } from '@/models/business-unit';
-import { Customer } from '../../../customer';
-import { State } from '../../../state';
+import { Customer } from '@/models/customer/customer';
+import { State } from '@/models/state';
 import { recurringOrderState } from './constants';
 import { RecurringOrderGraphql } from './index';
 
