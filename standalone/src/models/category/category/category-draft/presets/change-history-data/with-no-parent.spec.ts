@@ -1,9 +1,9 @@
 import type { TCategoryDraft } from '../../../types';
-import withNoParent from './with-no-parent';
+import { compatPreset } from './with-no-parent';
 
 describe('Category with no parent', () => {
   it('should return a category containing no parent value', () => {
-    const category = withNoParent().build<TCategoryDraft>();
+    const category = compatPreset().build<TCategoryDraft>();
 
     expect(category).toEqual(
       expect.objectContaining({

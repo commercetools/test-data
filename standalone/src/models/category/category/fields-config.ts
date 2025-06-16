@@ -7,6 +7,8 @@ import {
 import { createRelatedDates } from '@/utils';
 import { TCategoryGraphql, TCategoryRest } from './types';
 
+// https://docs.commercetools.com/api/projects/categories#category
+
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 const commonFields = {

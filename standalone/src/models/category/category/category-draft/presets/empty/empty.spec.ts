@@ -1,8 +1,8 @@
-import { TCategoryDraft } from '../../types';
-import empty from './empty';
+import { TCategoryDraft } from '../../../types';
+import { compatPreset } from './empty';
 
 it(`should set all fields but name and slug to undefined`, () => {
-  const emptyCategoryDraft = empty().build<TCategoryDraft>();
+  const emptyCategoryDraft = compatPreset().build<TCategoryDraft>();
   expect(emptyCategoryDraft).toEqual({
     key: undefined,
     externalId: undefined,

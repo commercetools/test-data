@@ -1,7 +1,13 @@
-import withNoParent from './with-no-parent';
+import * as withNoParentPresets from './with-no-parent';
 
-const presets = {
-  withNoParent,
+export const restPresets = {
+  withNoParent: withNoParentPresets.restPreset,
 };
 
-export default presets;
+export const graphqlPresets = {
+  withNoParent: withNoParentPresets.graphqlPreset,
+};
+
+export const compatPresets = {
+  withNoParent: withNoParentPresets.compatPreset,
+};
