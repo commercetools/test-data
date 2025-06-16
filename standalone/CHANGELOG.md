@@ -1,5 +1,11 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.5.1
+
+### Patch Changes
+
+- [#866](https://github.com/commercetools/test-data/pull/866) [`cecd5d8`](https://github.com/commercetools/test-data/commit/cecd5d8df240c3aefb17244fccda88cbd27533a8) Thanks [@jaikamat](https://github.com/jaikamat)! - Update sample data (b2c - lifestyle) product type and product variant presets with additional configuration data.
+
 ## 11.5.0
 
 ### Minor Changes
