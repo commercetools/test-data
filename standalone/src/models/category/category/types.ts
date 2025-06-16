@@ -1,10 +1,6 @@
 import type { Category, CategoryDraft } from '@commercetools/platform-sdk';
 import type { TBuilder } from '@/core';
-import {
-  TCtpCategory,
-  TCtpCategoryDraft,
-  TCtpCategorySearch,
-} from '@/graphql-types';
+import { TCtpCategory, TCtpCategoryDraft } from '@/graphql-types';
 
 /**
  * @deprecated Use `TCategoryDraftRest` or `TCategoryDraftGraphql` instead.
@@ -23,8 +19,6 @@ export type TCategoryTypeRest = Category;
 // GraphQL types
 export type TCategoryTypeGraphql = TCtpCategory;
 export type TCategoryDraftTypeGraphql = TCtpCategoryDraft;
-// category search only exist in graphql model
-export type TCategorySearchGraphql = TCtpCategorySearch;
 
 // builders types
 export type TCreateCategoryTypeBuilder<
@@ -34,6 +28,5 @@ export type TCreateCategoryTypeBuilder<
     | TCategoryDraftRest
     | TCategoryTypeRest
     | TCategoryTypeGraphql
-    | TCategoryDraftTypeGraphql
-    | TCategorySearchGraphql,
+    | TCategoryDraftTypeGraphql,
 > = () => TBuilder<TCategoryTypeModel>;

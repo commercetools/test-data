@@ -1,55 +1,70 @@
 import { fake, sequence, type TModelFieldsConfig } from '@/core';
-import { LocalizedString, TLocalizedStringGraphql } from '@/models/commons';
+import { LocalizedString, ReferenceGraphql } from '@/models/commons';
 import { createRelatedDates } from '@/utils';
-import { TCategorySearchGraphql } from '../category/types';
+import { TCategorySearchGraphql } from './types';
 
 const [getOlderDate, getNewerDate] = createRelatedDates();
 
 export const graphqlFieldsConfig: TModelFieldsConfig<TCategorySearchGraphql> = {
   fields: {
-    id: fake((f) => f.string.uuid()),
-    version: sequence(),
-    key: fake((f) => f.lorem.slug(2)),
-    externalId: fake((f) => f.string.uuid()),
-    name: null, //computed
-    slug: null,
-    description: null,
     ancestors: [],
-    parent: null,
-    orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
-    assets: null,
-    custom: null,
-    createdAt: fake(getOlderDate),
-    lastModifiedAt: fake(getNewerDate),
-    ancestorsRef: [],
+    ancestorsRef: [], // computed
+    assets: [],
     childCount: 0,
     children: [],
-    stagedProductCount: 0,
-    __typename: 'CategorySearch',
+    createdAt: fake(getOlderDate),
+    custom: null,
+    description: null, // computed
     descriptionAllLocales: null,
+    externalId: fake((f) => f.string.uuid()),
+    id: fake((f) => f.string.uuid()),
+    key: fake((f) => f.lorem.slug(3)),
+    lastModifiedAt: fake(getNewerDate),
+    name: null, // computed
     nameAllLocales: fake(() => LocalizedString.random()),
-    parentRef: null,
+    orderHint: fake((f) => f.number.float({ min: 0.01, max: 0.99 }).toString()),
+    parent: null,
+    parentRef: null, // computed
+    productTypeNames: [],
+    slug: null, // computed
     slugAllLocales: fake(() => LocalizedString.presets.ofSlugs()),
-    productTypeNames: null,
+    stagedProductCount: 0,
+    version: sequence(),
+    __typename: 'CategorySearch',
   },
   postBuild: (model) => {
+    const description = model.descriptionAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(
+          model.descriptionAllLocales
+        )
+      : null;
     const name = model.nameAllLocales
       ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
-      : model.name;
+      : null;
+    const slug = model.slugAllLocales
+      ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.slugAllLocales)
+      : null;
 
-    const slugAllLocales =
-      LocalizedString.toLocalizedField(model.slug) ?? undefined;
-    const descriptionAllLocales =
-      model.description as unknown as TLocalizedStringGraphql;
+    const ancestorsRef = model.ancestors
+      ? model.ancestors.map((ancestor) => {
+          return ReferenceGraphql.presets
+            .categoryReference()
+            .id(ancestor.id)
+            .build();
+        })
+      : [];
+
+    const parentRef = model.parent
+      ? ReferenceGraphql.presets.categoryReference().id(model.parent.id).build()
+      : null;
 
     return {
+      ...model,
       name,
-      slugAllLocales,
-      descriptionAllLocales,
-      description: LocalizedString.resolveGraphqlDefaultLocaleValue(
-        descriptionAllLocales
-      ),
-      slug: LocalizedString.resolveGraphqlDefaultLocaleValue(slugAllLocales),
+      slug,
+      description,
+      ancestorsRef,
+      parentRef,
     };
   },
 };

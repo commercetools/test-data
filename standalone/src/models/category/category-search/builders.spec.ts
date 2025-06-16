@@ -1,41 +1,40 @@
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable jest/valid-title */
-
-import type { TCategorySearchGraphql } from '../category/types';
+import type { TCategorySearchGraphql } from './types';
 import { CategorySearchGraphql } from './index';
 
 const validateGraphqlModel = (model: TCategorySearchGraphql) => {
   expect(model).toEqual(
     expect.objectContaining({
-      id: expect.any(String),
-      version: expect.any(Number),
-      key: expect.any(String),
-      externalId: expect.any(String),
-      name: expect.any(String),
-      slug: null,
-      description: null,
       ancestors: [],
-      parent: null,
-      orderHint: expect.any(String),
-      assets: null,
-      custom: null,
-      createdAt: expect.any(String),
-      lastModifiedAt: expect.any(String),
       ancestorsRef: [],
-      childCount: expect.any(Number),
+      assets: [],
+      childCount: 0,
       children: [],
-      parentRef: null,
-      stagedProductCount: expect.any(Number),
-      __typename: 'CategorySearch',
+      createdAt: expect.any(String),
+      custom: null,
+      description: null,
       descriptionAllLocales: null,
-      slugAllLocales: undefined,
+      externalId: expect.any(String),
+      id: expect.any(String),
+      key: expect.any(String),
+      lastModifiedAt: expect.any(String),
+      name: expect.any(String),
       nameAllLocales: expect.arrayContaining([
-        {
-          locale: expect.any(String),
-          value: expect.any(String),
+        expect.objectContaining({
           __typename: 'LocalizedString',
-        },
+        }),
       ]),
+      orderHint: expect.any(String),
+      parent: null,
+      parentRef: null,
+      slug: expect.any(String),
+      slugAllLocales: expect.arrayContaining([
+        expect.objectContaining({
+          __typename: 'LocalizedString',
+        }),
+      ]),
+      stagedProductCount: 0,
+      version: expect.any(Number),
+      __typename: 'CategorySearch',
     })
   );
 };
