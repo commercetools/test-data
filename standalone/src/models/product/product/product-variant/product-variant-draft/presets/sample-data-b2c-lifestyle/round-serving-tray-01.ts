@@ -47,11 +47,13 @@ const roundServingTray01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Hand wash only',
         'de-DE': '- Handwäsche nur',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Brown:#a52a2a',
-        'de-DE': 'Braun:#a52a2a',
-        'en-US': 'Brown:#a52a2a',
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Brown',
+        'de-DE': 'Braun',
+        'en-US': 'Brown',
       }),
+      AttributeDraft.random().name('color-code').value('#a52a2a'),
     ]);
 
 export default roundServingTray01;

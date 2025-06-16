@@ -41,11 +41,13 @@ const silkyPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Pillow not included',
         'de-DE': '- Kissen nicht im Lieferumfang enthalten',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Silver:#C0C0C0',
-        'de-DE': 'Silber:#C0C0C0',
-        'en-US': 'Silver:#C0C0C0',
+      AttributeDraft.random().name('search-color').value('silver'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Silver',
+        'de-DE': 'Silber',
+        'en-US': 'Silver',
       }),
+      AttributeDraft.random().name('color-code').value('#C0C0C0'),
     ]);
 
 export default silkyPillowCover01;

@@ -21,20 +21,36 @@ describe(`with edgarArmchair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "green",
+          },
+          {
+            "name": "search-finish",
+            "value": "black",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Helles Oliv:#BAB86C",
-              "en-GB": "Light Olive:#BAB86C",
-              "en-US": "Light Olive:#BAB86C",
+              "de-DE": "Helles Oliv",
+              "en-GB": "Light Olive",
+              "en-US": "Light Olive",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#BAB86C",
+          },
+          {
+            "name": "finish-code",
+            "value": "#000000",
           },
         ],
         "images": [
@@ -115,12 +131,28 @@ describe(`with edgarArmchair01 preset`, () => {
             "value": "{"en-GB":"- Assembly on delivery","de-DE":"- Montage bei Lieferung","en-US":"- Assembly on delivery"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Olive:#BAB86C","de-DE":"Helles Oliv:#BAB86C","en-US":"Light Olive:#BAB86C"}",
+            "name": "search-color",
+            "value": ""green"",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
+            "name": "search-finish",
+            "value": ""black"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Olive","de-DE":"Helles Oliv","en-US":"Light Olive"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#BAB86C"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#000000"",
           },
         ],
         "images": [

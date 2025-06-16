@@ -42,20 +42,36 @@ describe(`with charlieArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "brown",
+            },
+            {
+              "name": "search-finish",
+              "value": "yellow",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Peru:#CD853F",
-                "en-GB": "Peru:#CD853F",
-                "en-US": "Peru:#CD853F",
+                "de-DE": "Peru",
+                "en-GB": "Peru",
+                "en-US": "Peru",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#CD853F",
+            },
+            {
+              "name": "finish-code",
+              "value": "#D2B48C",
             },
           ],
           "images": [
@@ -201,12 +217,28 @@ describe(`with charlieArmchair preset`, () => {
               "value": "{"en-GB":"- Dry clean only","de-DE":"- Nur chemische Reinigung","en-US":"- Dry clean only"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Peru:#CD853F","de-DE":"Peru:#CD853F","en-US":"Peru:#CD853F"}",
+              "name": "search-color",
+              "value": ""brown"",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+              "name": "search-finish",
+              "value": ""yellow"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Peru","de-DE":"Peru","en-US":"Peru"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#CD853F"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#D2B48C"",
             },
           ],
           "images": [

@@ -42,12 +42,20 @@ describe(`with slateArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "gray",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schiefer grau:#708090",
-                "en-GB": "Dark Slate Grey:#2F4F4F",
-                "en-US": "Slate Gray:#708090",
+                "de-DE": "Schiefer grau",
+                "en-GB": "Dark Slate Grey",
+                "en-US": "Slate Gray",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#2F4F4F",
             },
           ],
           "images": [
@@ -201,8 +209,16 @@ describe(`with slateArmchair preset`, () => {
               "value": "{"en-GB":"- Includes ottoman","en-US":"- Includes ottoman","de-DE":"- Inklusive Ottomane"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Dark Slate Grey:#2F4F4F","de-DE":"Schiefer grau:#708090","en-US":"Slate Gray:#708090"}",
+              "name": "search-color",
+              "value": ""gray"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Dark Slate Grey","de-DE":"Schiefer grau","en-US":"Slate Gray"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#2F4F4F"",
             },
           ],
           "images": [

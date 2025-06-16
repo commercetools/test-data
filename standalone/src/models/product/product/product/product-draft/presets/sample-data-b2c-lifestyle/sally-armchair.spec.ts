@@ -42,20 +42,36 @@ describe(`with sallyArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "pink",
+            },
+            {
+              "name": "search-finish",
+              "value": "yellow",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Rosa:#FFC0CB",
-                "en-GB": "Pink:#FFC0CB",
-                "en-US": "Pink:#FFC0CB",
+                "de-DE": "Rosa",
+                "en-GB": "Pink",
+                "en-US": "Pink",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Beige:#F5F5DC",
-                "en-GB": "Beige:#F5F5DC",
-                "en-US": "Beige:#F5F5DC",
+                "de-DE": "Beige",
+                "en-GB": "Beige",
+                "en-US": "Beige",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#FFC0CB",
+            },
+            {
+              "name": "finish-code",
+              "value": "#F5F5DC",
             },
           ],
           "images": [
@@ -201,12 +217,28 @@ describe(`with sallyArmchair preset`, () => {
               "value": "{"en-GB":"- Comes with matching throw pillow","en-US":"- Comes with matching throw pillow","de-DE":"- Wird mit passendem Dekokissen geliefert"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Pink:#FFC0CB","de-DE":"Rosa:#FFC0CB","en-US":"Pink:#FFC0CB"}",
+              "name": "search-color",
+              "value": ""pink"",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC"}",
+              "name": "search-finish",
+              "value": ""yellow"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Pink","de-DE":"Rosa","en-US":"Pink"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#FFC0CB"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#F5F5DC"",
             },
           ],
           "images": [

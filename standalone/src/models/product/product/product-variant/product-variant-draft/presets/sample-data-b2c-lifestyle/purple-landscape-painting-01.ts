@@ -44,11 +44,13 @@ const purpleLandscapePainting01 = (): TBuilder<TProductVariantDraft> =>
         'en-US':
           '- Oil painting on canvas\n- Frame not included\n- Size: 4ft by 3ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Purple:#800080',
-        'de-DE': 'Violett:#800080',
-        'en-US': 'Purple:#800080',
+      AttributeDraft.random().name('search-color').value('purple'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Purple',
+        'de-DE': 'Violett',
+        'en-US': 'Purple',
       }),
+      AttributeDraft.random().name('color-code').value('#800080'),
     ]);
 
 export default purpleLandscapePainting01;

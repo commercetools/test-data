@@ -48,11 +48,13 @@ const braidedRug01 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 5527, h: 3685 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
     ]);
 
 export default braidedRug01;

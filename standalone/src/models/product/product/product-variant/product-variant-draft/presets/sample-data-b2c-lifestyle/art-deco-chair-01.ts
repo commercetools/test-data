@@ -41,11 +41,13 @@ const artDecoChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Montage bei Lieferung',
         'en-US': '- Assembly on delivery',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Grey:#808080',
-        'de-DE': 'Grau:#808080',
-        'en-US': 'Gray:#808080',
+      AttributeDraft.random().name('search-color').value('gray'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Grey',
+        'de-DE': 'Grau',
+        'en-US': 'Gray',
       }),
+      AttributeDraft.random().name('color-code').value('#808080'),
     ]);
 
 export default artDecoChair01;

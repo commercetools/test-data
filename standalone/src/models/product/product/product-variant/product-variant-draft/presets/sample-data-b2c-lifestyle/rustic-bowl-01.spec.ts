@@ -17,12 +17,20 @@ describe(`with rusticBowl01 preset`, () => {
             },
           },
           {
-            "name": "finish",
+            "name": "search-finish",
+            "value": "brown",
+          },
+          {
+            "name": "finish-label",
             "value": {
-              "de-DE": "Braun:#a52a2a",
-              "en-GB": "Brown:#a52a2a",
-              "en-US": "Brown:#a52a2a",
+              "de-DE": "Braun",
+              "en-GB": "Brown",
+              "en-US": "Brown",
             },
+          },
+          {
+            "name": "finish-code",
+            "value": "#a52a2a",
           },
         ],
         "images": [
@@ -103,8 +111,16 @@ describe(`with rusticBowl01 preset`, () => {
             "value": "{"en-GB":"- Includes 1 bowl","en-US":"- Includes 1 bowl","de-DE":"- Enthält 1 Schüssel"}",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Brown:#a52a2a","de-DE":"Braun:#a52a2a","en-US":"Brown:#a52a2a"}",
+            "name": "search-finish",
+            "value": ""brown"",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Brown","de-DE":"Braun","en-US":"Brown"}",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#a52a2a"",
           },
         ],
         "images": [

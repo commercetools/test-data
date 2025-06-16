@@ -42,12 +42,20 @@ describe(`with artDecoChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "gray",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Grau:#808080",
-                "en-GB": "Grey:#808080",
-                "en-US": "Gray:#808080",
+                "de-DE": "Grau",
+                "en-GB": "Grey",
+                "en-US": "Gray",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#808080",
             },
           ],
           "images": [
@@ -193,8 +201,16 @@ describe(`with artDecoChair preset`, () => {
               "value": "{"en-GB":"- Assembly on delivery","de-DE":"- Montage bei Lieferung","en-US":"- Assembly on delivery"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Grey:#808080","de-DE":"Grau:#808080","en-US":"Gray:#808080"}",
+              "name": "search-color",
+              "value": ""gray"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Grey","de-DE":"Grau","en-US":"Gray"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#808080"",
             },
           ],
           "images": [

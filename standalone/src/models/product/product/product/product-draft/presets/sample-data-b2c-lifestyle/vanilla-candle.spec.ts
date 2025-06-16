@@ -45,20 +45,36 @@ describe(`with vanillaCandle preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "yellow",
+            },
+            {
+              "name": "search-finish",
+              "value": "glass",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Beige:#F5F5DC",
-                "en-GB": "Beige:#F5F5DC",
-                "en-US": "Beige:#F5F5DC",
+                "de-DE": "Beige",
+                "en-GB": "Beige",
+                "en-US": "Beige",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Glas:transparent",
-                "en-GB": "Glass:transparent",
-                "en-US": "Glass:transparent",
+                "de-DE": "Glas",
+                "en-GB": "Glass",
+                "en-US": "Glass",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#F5F5DC",
+            },
+            {
+              "name": "finish-code",
+              "value": "transparent",
             },
           ],
           "images": [
@@ -231,12 +247,28 @@ describe(`with vanillaCandle preset`, () => {
               "value": "{"en-GB":"- Comes in glass jar\\n- 300 grams","en-US":"- Comes in glass jar\\n- 300 grams","de-DE":"- Wird im Glas geliefert\\n- 300 Gramm"}",
             },
             {
-              "name": "color",
-              "value": "{"en-US":"Beige:#F5F5DC","en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC"}",
+              "name": "search-color",
+              "value": ""yellow"",
             },
             {
-              "name": "finish",
-              "value": "{"en-US":"Glass:transparent","en-GB":"Glass:transparent","de-DE":"Glas:transparent"}",
+              "name": "search-finish",
+              "value": ""glass"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Glass","de-DE":"Glas","en-US":"Glass"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#F5F5DC"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""transparent"",
             },
           ],
           "images": [

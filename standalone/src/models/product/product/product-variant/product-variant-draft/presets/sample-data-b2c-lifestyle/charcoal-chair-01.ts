@@ -47,16 +47,20 @@ const charcoalChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Beinhaltet 1 Stuhl',
         'en-US': '- Includes 1 chair',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Dark Slate Grey:#2F4F4F',
-        'de-DE': 'Dunkles Schiefer grau:#2F4F4F',
-        'en-US': 'Dark Slate Gray:#2F4F4F',
+      AttributeDraft.random().name('search-color').value('gray'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Dark Slate Grey',
+        'de-DE': 'Dunkles Schiefer grau',
+        'en-US': 'Dark Slate Gray',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
+      AttributeDraft.random().name('color-code').value('#2F4F4F'),
+      AttributeDraft.random().name('finish-code').value('#D2B48C'),
     ]);
 
 export default charcoalChair01;

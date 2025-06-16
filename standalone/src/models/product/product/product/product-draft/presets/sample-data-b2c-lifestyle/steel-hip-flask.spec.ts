@@ -42,12 +42,20 @@ describe(`with steelHipFlask preset`, () => {
               },
             },
             {
-              "name": "finish",
+              "name": "search-finish",
+              "value": "silver",
+            },
+            {
+              "name": "finish-label",
               "value": {
-                "de-DE": "Silber:#C0C0C0",
-                "en-GB": "Silver:#C0C0C0",
-                "en-US": "Silver:#C0C0C0",
+                "de-DE": "Silber",
+                "en-GB": "Silver",
+                "en-US": "Silver",
               },
+            },
+            {
+              "name": "finish-code",
+              "value": "#C0C0C0",
             },
           ],
           "images": [
@@ -212,8 +220,16 @@ describe(`with steelHipFlask preset`, () => {
               "value": "{"en-GB":"- Stainless steel","en-US":"- Stainless steel","de-DE":"- Edelstahl"}",
             },
             {
-              "name": "finish",
-              "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+              "name": "search-finish",
+              "value": ""silver"",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#C0C0C0"",
             },
           ],
           "images": [

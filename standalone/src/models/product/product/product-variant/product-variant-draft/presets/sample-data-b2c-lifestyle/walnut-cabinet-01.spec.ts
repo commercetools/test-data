@@ -21,12 +21,20 @@ describe(`with walnutCabinet01 preset`, () => {
             },
           },
           {
-            "name": "finish",
+            "name": "search-finish",
+            "value": "brown",
+          },
+          {
+            "name": "finish-label",
             "value": {
-              "de-DE": "Braun:#a52a2a",
-              "en-GB": "Brown:#a52a2a",
-              "en-US": "Brown:#a52a2a",
+              "de-DE": "Braun",
+              "en-GB": "Brown",
+              "en-US": "Brown",
             },
+          },
+          {
+            "name": "finish-code",
+            "value": "#a52a2a",
           },
         ],
         "images": [
@@ -134,8 +142,16 @@ describe(`with walnutCabinet01 preset`, () => {
             "value": "{"en-GB":"- Assembly included in delivery","en-US":"- Assembly included in delivery","de-DE":"- Montage im Lieferumfang enthalten"}",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Brown:#a52a2a","en-US":"Brown:#a52a2a","de-DE":"Braun:#a52a2a"}",
+            "name": "search-finish",
+            "value": ""brown"",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Brown","de-DE":"Braun","en-US":"Brown"}",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#a52a2a"",
           },
         ],
         "images": [

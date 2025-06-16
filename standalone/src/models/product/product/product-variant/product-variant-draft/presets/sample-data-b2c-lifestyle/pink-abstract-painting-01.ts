@@ -41,11 +41,13 @@ const pinkAbstractPainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Acryl auf Leinwand\n- 2 Fuß mal 2 Fuß',
         'en-US': '- Acrylic on canvas\n- 2ft by 2ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Pink:#FFC0CB',
-        'de-DE': 'Rosa:#FFC0CB',
-        'en-US': 'Pink:#FFC0CB',
+      AttributeDraft.random().name('search-color').value('pink'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Pink',
+        'de-DE': 'Rosa',
+        'en-US': 'Pink',
       }),
+      AttributeDraft.random().name('color-code').value('#FFC0CB'),
     ]);
 
 export default pinkAbstractPainting01;

@@ -47,11 +47,13 @@ const classicServingTray01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Aus lebensmittelechtem Kunststoff',
         'en-US': '- Made of food-grade plastic',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
-        'en-US': 'White:#FFFFFF',
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
       }),
+      AttributeDraft.random().name('color-code').value('#FFFFFF'),
     ]);
 
 export default classicServingTray01;

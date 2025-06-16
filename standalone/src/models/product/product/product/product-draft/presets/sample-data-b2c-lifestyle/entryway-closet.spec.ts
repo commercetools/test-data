@@ -41,20 +41,36 @@ describe(`with entrywayCloset preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "yellow",
+            },
+            {
+              "name": "search-finish",
+              "value": "brown",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Burlywood:#deb887",
-                "en-GB": "Burlywood:#deb887",
-                "en-US": "Burlywood:#deb887",
+                "de-DE": "Burlywood",
+                "en-GB": "Burlywood",
+                "en-US": "Burlywood",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#D2B48C",
+            },
+            {
+              "name": "finish-code",
+              "value": "#deb887",
             },
           ],
           "images": [

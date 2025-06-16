@@ -20,12 +20,20 @@ describe(`with willowTeapot01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "blue",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Himmel blau:#87CEEB",
-              "en-GB": "Sky Blue:#87CEEB",
-              "en-US": "Sky Blue:#87CEEB",
+              "de-DE": "Himmel blau",
+              "en-GB": "Sky Blue",
+              "en-US": "Sky Blue",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#87CEEB",
           },
         ],
         "images": [
@@ -106,8 +114,16 @@ describe(`with willowTeapot01 preset`, () => {
             "value": "{"en-GB":"- Hand wash only","en-US":"- Hand wash only","de-DE":"- Handwäsche nur"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Sky Blue:#87CEEB","de-DE":"Himmel blau:#87CEEB","en-US":"Sky Blue:#87CEEB"}",
+            "name": "search-color",
+            "value": ""blue"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sky Blue","de-DE":"Himmel blau","en-US":"Sky Blue"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#87CEEB"",
           },
         ],
         "images": [

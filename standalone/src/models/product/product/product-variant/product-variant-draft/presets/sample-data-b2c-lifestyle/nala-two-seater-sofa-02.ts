@@ -42,23 +42,26 @@ const nalaTwoSeaterSofa02 = (): TBuilder<TProductVariantDraft> =>
         .dimensions({ w: 6000, h: 3376 }),
     ])
     .attributes([
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Royal Blue:#4169E1',
-        'de-DE': 'Königs blau:#4169E1',
-        'en-US': 'Royal Blue:#4169E1',
-      }),
-
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Black:#000000',
-        'de-DE': 'Schwarz:#000000',
-        'en-US': 'Black:#000000',
-      }),
       AttributeDraft.random().name('new-arrival').value(true),
       AttributeDraft.random().name('productspec').value({
         'en-GB': '- Two-seater sofa\n- Cotton linen upholstery',
         'de-DE': '- Zweisitzer-Sofa\n- Polsterung aus Baumwollleinen',
         'en-US': '- Two-seater sofa\n- Cotton linen upholstery',
       }),
+      AttributeDraft.random().name('search-color').value('blue'),
+      AttributeDraft.random().name('search-finish').value('black'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Royal Blue',
+        'de-DE': 'Königs blau',
+        'en-US': 'Royal Blue',
+      }),
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Black',
+        'de-DE': 'Schwarz',
+        'en-US': 'Black',
+      }),
+      AttributeDraft.random().name('color-code').value('#4169E1'),
+      AttributeDraft.random().name('finish-code').value('#000000'),
     ]);
 
 export default nalaTwoSeaterSofa02;

@@ -41,16 +41,20 @@ const charlieArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Peru:#CD853F',
-        'de-DE': 'Peru:#CD853F',
-        'en-US': 'Peru:#CD853F',
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Peru',
+        'de-DE': 'Peru',
+        'en-US': 'Peru',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
+      AttributeDraft.random().name('color-code').value('#CD853F'),
+      AttributeDraft.random().name('finish-code').value('#D2B48C'),
     ]);
 
 export default charlieArmchair01;

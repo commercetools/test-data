@@ -30,20 +30,36 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "gray",
+          },
+          {
+            "name": "search-finish",
+            "value": "gray",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Grau:#808080",
-              "en-GB": "Grey:#808080",
-              "en-US": "Gray:#808080",
+              "de-DE": "Grau",
+              "en-GB": "Grey",
+              "en-US": "Gray",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Helles Schiefer grau:#778899",
-              "en-GB": "Lightslate Grey:#778899",
-              "en-US": "Lightslate Gray:#778899",
+              "de-DE": "Helles Schiefer grau",
+              "en-GB": "Lightslate Grey",
+              "en-US": "Lightslate Gray",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#808080",
+          },
+          {
+            "name": "finish-code",
+            "value": "#778899",
           },
         ],
         "images": [
@@ -140,12 +156,28 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
             "value": "{"en-US":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","en-GB":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site","de-DE":"- Cotton upholstery \\n- Manufactured wood\\n- Twin size\\n- Assembled on site"}",
           },
           {
-            "name": "color",
-            "value": "{"en-US":"Gray:#808080","en-GB":"Grey:#808080","de-DE":"Grau:#808080"}",
+            "name": "search-color",
+            "value": ""gray"",
           },
           {
-            "name": "finish",
-            "value": "{"en-US":"Lightslate Gray:#778899","en-GB":"Lightslate Grey:#778899","de-DE":"Helles Schiefer grau:#778899"}",
+            "name": "search-finish",
+            "value": ""gray"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Grey","de-DE":"Grau","en-US":"Gray"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Lightslate Grey","de-DE":"Helles Schiefer grau","en-US":"Lightslate Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#808080"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#778899"",
           },
         ],
         "images": [

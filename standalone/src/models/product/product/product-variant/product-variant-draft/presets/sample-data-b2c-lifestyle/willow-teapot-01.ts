@@ -41,11 +41,13 @@ const willowTeapot01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Hand wash only',
         'de-DE': '- Handwäsche nur',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Sky Blue:#87CEEB',
-        'de-DE': 'Himmel blau:#87CEEB',
-        'en-US': 'Sky Blue:#87CEEB',
+      AttributeDraft.random().name('search-color').value('blue'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Sky Blue',
+        'de-DE': 'Himmel blau',
+        'en-US': 'Sky Blue',
       }),
+      AttributeDraft.random().name('color-code').value('#87CEEB'),
     ]);
 
 export default willowTeapot01;

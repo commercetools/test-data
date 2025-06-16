@@ -54,11 +54,13 @@ const naturaRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 6 Fuß x 6 Fuß',
         'en-US': '- 6ft x 6ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Beige:#F5F5DC',
-        'de-DE': 'Beige:#F5F5DC',
-        'en-US': 'Beige:#F5F5DC',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Beige',
+        'de-DE': 'Beige',
+        'en-US': 'Beige',
       }),
+      AttributeDraft.random().name('color-code').value('#F5F5DC'),
     ]);
 
 export default naturaRug01;

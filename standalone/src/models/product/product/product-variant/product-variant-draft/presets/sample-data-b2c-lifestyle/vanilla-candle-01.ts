@@ -60,16 +60,20 @@ const vanillaCandle01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Comes in glass jar\n- 300 grams',
         'de-DE': '- Wird im Glas geliefert\n- 300 Gramm',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Beige:#F5F5DC',
-        'en-GB': 'Beige:#F5F5DC',
-        'de-DE': 'Beige:#F5F5DC',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('glass'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Beige',
+        'de-DE': 'Beige',
+        'en-US': 'Beige',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Glass:transparent',
-        'en-GB': 'Glass:transparent',
-        'de-DE': 'Glas:transparent',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Glass',
+        'de-DE': 'Glas',
+        'en-US': 'Glass',
       }),
+      AttributeDraft.random().name('color-code').value('#F5F5DC'),
+      AttributeDraft.random().name('finish-code').value('transparent'),
     ]);
 
 export default vanillaCandle01;

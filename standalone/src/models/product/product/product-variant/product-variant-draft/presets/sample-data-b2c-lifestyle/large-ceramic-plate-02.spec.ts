@@ -10,14 +10,6 @@ describe(`with largeCeramicPlate02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Hell grau:#D3D3D3",
-              "en-GB": "Light Grey:#D3D3D3",
-              "en-US": "Light Gray:#D3D3D3",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Ceramic
@@ -31,6 +23,22 @@ describe(`with largeCeramicPlate02 preset`, () => {
       - Sold as 1 piece
       - Dishwasher safe",
             },
+          },
+          {
+            "name": "search-color",
+            "value": "gray",
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Hell grau",
+              "en-GB": "Light Grey",
+              "en-US": "Light Gray",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#D3D3D3",
           },
         ],
         "images": [
@@ -115,12 +123,20 @@ describe(`with largeCeramicPlate02 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Light Gray:#D3D3D3","en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe","en-GB":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe\\n- Microwave safe","de-DE":"- Ceramic\\n- Sold as 1 piece\\n- Dishwasher safe"}",
+          },
+          {
+            "name": "search-color",
+            "value": ""gray"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D3D3D3"",
           },
         ],
         "images": [

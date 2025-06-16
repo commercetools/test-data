@@ -42,12 +42,20 @@ describe(`with patternedPillowCover preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "pink",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Lavendel:#fff0f5",
-                "en-GB": "Lavender Blush:#fff0f5",
-                "en-US": "Lavender Blush:#fff0f5",
+                "de-DE": "Lavendel",
+                "en-GB": "Lavender Blush",
+                "en-US": "Lavender Blush",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#fff0f5",
             },
           ],
           "images": [
@@ -160,16 +168,24 @@ describe(`with patternedPillowCover preset`, () => {
                 },
               },
               {
-                "name": "color",
+                "name": "new-arrival",
+                "value": false,
+              },
+              {
+                "name": "search-color",
+                "value": "black",
+              },
+              {
+                "name": "color-label",
                 "value": {
-                  "de-DE": "Schwarz:#000000",
-                  "en-GB": "Black:#000000",
-                  "en-US": "Black:#000000",
+                  "de-DE": "Schwarz",
+                  "en-GB": "Black",
+                  "en-US": "Black",
                 },
               },
               {
-                "name": "new-arrival",
-                "value": false,
+                "name": "color-code",
+                "value": "#000000",
               },
             ],
             "images": [
@@ -280,8 +296,16 @@ describe(`with patternedPillowCover preset`, () => {
               "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Lavender Blush:#fff0f5","de-DE":"Lavendel:#fff0f5","en-US":"Lavender Blush:#fff0f5"}",
+              "name": "search-color",
+              "value": ""pink"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Lavender Blush","de-DE":"Lavendel","en-US":"Lavender Blush"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#fff0f5"",
             },
           ],
           "images": [
@@ -405,12 +429,20 @@ describe(`with patternedPillowCover preset`, () => {
                 "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
               },
               {
-                "name": "color",
-                "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-              },
-              {
                 "name": "new-arrival",
                 "value": "false",
+              },
+              {
+                "name": "search-color",
+                "value": ""black"",
+              },
+              {
+                "name": "color-label",
+                "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+              },
+              {
+                "name": "color-code",
+                "value": ""#000000"",
               },
             ],
             "images": [

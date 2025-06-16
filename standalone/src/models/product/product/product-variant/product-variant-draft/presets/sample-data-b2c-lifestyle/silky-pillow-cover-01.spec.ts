@@ -18,12 +18,20 @@ describe(`with silkyPillowCover01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "silver",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Silber:#C0C0C0",
-              "en-GB": "Silver:#C0C0C0",
-              "en-US": "Silver:#C0C0C0",
+              "de-DE": "Silber",
+              "en-GB": "Silver",
+              "en-US": "Silver",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#C0C0C0",
           },
         ],
         "images": [
@@ -104,8 +112,16 @@ describe(`with silkyPillowCover01 preset`, () => {
             "value": "{"en-GB":"- Pillow not included","en-US":"- Pillow not included","de-DE":"- Kissen nicht im Lieferumfang enthalten"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Silver:#C0C0C0","de-DE":"Silber:#C0C0C0","en-US":"Silver:#C0C0C0"}",
+            "name": "search-color",
+            "value": ""silver"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Silver","de-DE":"Silber","en-US":"Silver"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#C0C0C0"",
           },
         ],
         "images": [

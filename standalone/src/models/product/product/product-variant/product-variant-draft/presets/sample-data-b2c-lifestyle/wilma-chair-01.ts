@@ -47,16 +47,20 @@ const wilmaChair01 = (): TBuilder<TProductVariantDraft> =>
         'en-US': '- Cushion covers are removable and machine washable',
         'de-DE': '- Kissenbezüge sind abnehmbar und maschinenwaschbar',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Black:#000000',
-        'en-US': 'Black:#000000',
-        'de-DE': 'Schwarz:#000000',
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('search-finish').value('black'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Floral White',
+        'de-DE': 'Blumen weiß',
+        'en-US': 'Floral White',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Floral White:#FFFAF0',
-        'de-DE': 'Blumen weiß:#FFFAF0',
-        'en-US': 'Floral White:#FFFAF0',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Black',
+        'de-DE': 'Schwarz',
+        'en-US': 'Black',
       }),
+      AttributeDraft.random().name('color-code').value('#FFFAF0'),
+      AttributeDraft.random().name('finish-code').value('#000000'),
     ]);
 
 export default wilmaChair01;

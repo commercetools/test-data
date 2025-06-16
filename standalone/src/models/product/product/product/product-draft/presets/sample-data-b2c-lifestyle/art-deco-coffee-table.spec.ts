@@ -49,20 +49,36 @@ describe(`with artDecoCoffeeTable preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "black",
+            },
+            {
+              "name": "search-finish",
+              "value": "gold",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
               },
             },
             {
-              "name": "finish",
+              "name": "finish-label",
               "value": {
-                "de-DE": "Gold:#FFD700",
-                "en-GB": "Gold:#FFD700",
-                "en-US": "Gold:#FFD700",
+                "de-DE": "Gold",
+                "en-GB": "Gold",
+                "en-US": "Gold",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#000000",
+            },
+            {
+              "name": "finish-code",
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -216,12 +232,28 @@ describe(`with artDecoCoffeeTable preset`, () => {
               "value": "{"en-US":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled","en-GB":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled","de-DE":"- Granite top\\n- 5ft by 3ft by 2ft\\n- Preassembled"}",
             },
             {
-              "name": "color",
-              "value": "{"en-US":"Black:#000000","en-GB":"Black:#000000","de-DE":"Schwarz:#000000"}",
+              "name": "search-color",
+              "value": ""black"",
             },
             {
-              "name": "finish",
-              "value": "{"en-US":"Gold:#FFD700","en-GB":"Gold:#FFD700","de-DE":"Gold:#FFD700"}",
+              "name": "search-finish",
+              "value": ""gold"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+            },
+            {
+              "name": "finish-label",
+              "value": "{"en-GB":"Gold","de-DE":"Gold","en-US":"Gold"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#000000"",
+            },
+            {
+              "name": "finish-code",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

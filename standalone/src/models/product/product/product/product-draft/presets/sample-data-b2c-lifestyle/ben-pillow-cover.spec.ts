@@ -44,12 +44,20 @@ describe(`with benPillowCover preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "yellow",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#D2B48C",
             },
           ],
           "images": [
@@ -191,8 +199,16 @@ describe(`with benPillowCover preset`, () => {
               "value": "{"en-GB":"- Machine-washable\\n- Cover is removable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Bezug ist abnehmbar\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine-washable\\n- Cover is removable\\n- Does not include pillow"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+              "name": "search-color",
+              "value": ""yellow"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#D2B48C"",
             },
           ],
           "images": [

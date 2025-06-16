@@ -53,16 +53,20 @@ const traditionalThreeSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'en-GB': '- Three seater sofa\n- Velvet upholstery\n- Assembly on site',
         'de-DE': '- Dreisitzer\n- Samtbezug\n- Selbstmontage',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Medium Sea Green:#3CB371',
-        'en-GB': 'Medium Sea Green:#3CB371',
-        'de-DE': 'Mittel meer grün:#3CB371',
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('brown'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Medium Sea Green',
+        'de-DE': 'Mittel meer grün',
+        'en-US': 'Medium Sea Green',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Saddle Brown:#8b4513',
-        'en-GB': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
       }),
+      AttributeDraft.random().name('color-code').value('#3CB371'),
+      AttributeDraft.random().name('finish-code').value('#8b4513'),
     ]);
 
 export default traditionalThreeSeaterSofa01;

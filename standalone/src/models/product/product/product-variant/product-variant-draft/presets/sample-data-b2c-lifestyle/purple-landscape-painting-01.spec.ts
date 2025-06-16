@@ -27,12 +27,20 @@ describe(`with purpleLandscapePainting01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "purple",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Violett:#800080",
-              "en-GB": "Purple:#800080",
-              "en-US": "Purple:#800080",
+              "de-DE": "Violett",
+              "en-GB": "Purple",
+              "en-US": "Purple",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#800080",
           },
         ],
         "images": [
@@ -113,8 +121,16 @@ describe(`with purpleLandscapePainting01 preset`, () => {
             "value": "{"en-GB":"- Oil painting on canvas\\n- Frame not included\\n- Size: 4ft by 3ft","de-DE":"- Ölgemälde auf Leinwand\\n- Rahmen nicht im Lieferumfang enthalten\\n- Größe: 4 Fuß x 3 Fuß","en-US":"- Oil painting on canvas\\n- Frame not included\\n- Size: 4ft by 3ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Purple:#800080","de-DE":"Violett:#800080","en-US":"Purple:#800080"}",
+            "name": "search-color",
+            "value": ""purple"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Purple","de-DE":"Violett","en-US":"Purple"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#800080"",
           },
         ],
         "images": [

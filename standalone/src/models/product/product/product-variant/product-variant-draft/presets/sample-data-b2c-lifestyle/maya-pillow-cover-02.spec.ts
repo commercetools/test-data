@@ -21,12 +21,20 @@ describe(`with mayaPillowCover02 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "yellow",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Beige:#F5F5DC",
-              "en-GB": "Beige:#F5F5DC",
-              "en-US": "Beige:#F5F5DC",
+              "de-DE": "Beige",
+              "en-GB": "Beige",
+              "en-US": "Beige",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#F5F5DC",
           },
         ],
         "images": [
@@ -107,8 +115,16 @@ describe(`with mayaPillowCover02 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- Does not include pillow","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Does not include pillow"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Beige:#F5F5DC","de-DE":"Beige:#F5F5DC","en-US":"Beige:#F5F5DC"}",
+            "name": "search-color",
+            "value": ""yellow"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Beige","de-DE":"Beige","en-US":"Beige"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#F5F5DC"",
           },
         ],
         "images": [

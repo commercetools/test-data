@@ -13,22 +13,6 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Peru:#CD853F",
-              "en-GB": "Peru:#CD853F",
-              "en-US": "Peru:#CD853F",
-            },
-          },
-          {
-            "name": "finish",
-            "value": {
-              "de-DE": "Schwarz:#000000",
-              "en-GB": "Black:#000000",
-              "en-US": "Black:#000000",
-            },
-          },
-          {
             "name": "new-arrival",
             "value": true,
           },
@@ -42,6 +26,38 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
               "en-US": "- Two-seater sofa
       - Cotton linen upholstery",
             },
+          },
+          {
+            "name": "search-color",
+            "value": "brown",
+          },
+          {
+            "name": "search-finish",
+            "value": "black",
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Peru",
+              "en-GB": "Peru",
+              "en-US": "Peru",
+            },
+          },
+          {
+            "name": "finish-label",
+            "value": {
+              "de-DE": "Schwarz",
+              "en-GB": "Black",
+              "en-US": "Black",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#CD853F",
+          },
+          {
+            "name": "finish-code",
+            "value": "#000000",
           },
         ],
         "images": [
@@ -126,20 +142,36 @@ describe(`with nalaTwoSeaterSofa03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-GB":"Peru:#CD853F","de-DE":"Peru:#CD853F","en-US":"Peru:#CD853F"}",
-          },
-          {
-            "name": "finish",
-            "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-          },
-          {
             "name": "new-arrival",
             "value": "true",
           },
           {
             "name": "productspec",
             "value": "{"en-GB":"- Two-seater sofa\\n- Cotton linen upholstery","de-DE":"- Zweisitzer-Sofa\\n- Polsterung aus Baumwollleinen","en-US":"- Two-seater sofa\\n- Cotton linen upholstery"}",
+          },
+          {
+            "name": "search-color",
+            "value": ""brown"",
+          },
+          {
+            "name": "search-finish",
+            "value": ""black"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Peru","de-DE":"Peru","en-US":"Peru"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#CD853F"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#000000"",
           },
         ],
         "images": [

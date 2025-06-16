@@ -47,12 +47,20 @@ describe(`with cubeJuteBasket preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "yellow",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Bräunen:#D2B48C",
-                "en-GB": "Tan:#D2B48C",
-                "en-US": "Tan:#D2B48C",
+                "de-DE": "Bräunen",
+                "en-GB": "Tan",
+                "en-US": "Tan",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#D2B48C",
             },
           ],
           "images": [

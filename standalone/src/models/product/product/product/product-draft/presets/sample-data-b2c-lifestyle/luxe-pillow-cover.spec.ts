@@ -30,14 +30,6 @@ describe(`with luxePillowCover preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": {
-                "de-DE": "Schwarz:#000000",
-                "en-GB": "Black:#000000",
-                "en-US": "Black:#000000",
-              },
-            },
-            {
               "name": "productspec",
               "value": {
                 "de-DE": "- Waschmaschinenfest
@@ -47,6 +39,22 @@ describe(`with luxePillowCover preset`, () => {
                 "en-US": "- Machine washable
       - Pillow not included",
               },
+            },
+            {
+              "name": "search-color",
+              "value": "black",
+            },
+            {
+              "name": "color-label",
+              "value": {
+                "de-DE": "Schwarz",
+                "en-GB": "Black",
+                "en-US": "Black",
+              },
+            },
+            {
+              "name": "color-code",
+              "value": "#000000",
             },
           ],
           "images": [
@@ -184,12 +192,20 @@ describe(`with luxePillowCover preset`, () => {
           "assets": undefined,
           "attributes": [
             {
-              "name": "color",
-              "value": "{"en-GB":"Black:#000000","de-DE":"Schwarz:#000000","en-US":"Black:#000000"}",
-            },
-            {
               "name": "productspec",
               "value": "{"en-GB":"- Machine washable\\n- Pillow not included","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten","en-US":"- Machine washable\\n- Pillow not included"}",
+            },
+            {
+              "name": "search-color",
+              "value": ""black"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Black","de-DE":"Schwarz","en-US":"Black"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#000000"",
             },
           ],
           "images": [

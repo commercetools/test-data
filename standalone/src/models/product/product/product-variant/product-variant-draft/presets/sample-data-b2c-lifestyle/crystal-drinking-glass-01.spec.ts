@@ -21,12 +21,20 @@ describe(`with crystalDrinkingGlass01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "transparent",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Transparent:transparent",
-              "en-GB": "Transparent:transparent",
-              "en-US": "Transparent:transparent",
+              "de-DE": "Transparent",
+              "en-GB": "Transparent",
+              "en-US": "Transparent",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "transparent",
           },
         ],
         "images": [
@@ -107,8 +115,16 @@ describe(`with crystalDrinkingGlass01 preset`, () => {
             "value": "{"en-GB":"- Set includes 6 glasses","de-DE":"- Das Set enthält 6 Gläser","en-US":"- Set includes 6 glasses"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Transparent:transparent","de-DE":"Transparent:transparent","en-US":"Transparent:transparent"}",
+            "name": "search-color",
+            "value": ""transparent"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Transparent","de-DE":"Transparent","en-US":"Transparent"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""transparent"",
           },
         ],
         "images": [

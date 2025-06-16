@@ -23,6 +23,22 @@ describe(`with indoorJutePlanter02 preset`, () => {
               "en-GB": "Small",
             },
           },
+          {
+            "name": "search-color",
+            "value": "brown",
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
+          },
         ],
         "images": [
           {
@@ -104,6 +120,18 @@ describe(`with indoorJutePlanter02 preset`, () => {
           {
             "name": "size",
             "value": "{"en-GB":"Small"}",
+          },
+          {
+            "name": "search-color",
+            "value": ""brown"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

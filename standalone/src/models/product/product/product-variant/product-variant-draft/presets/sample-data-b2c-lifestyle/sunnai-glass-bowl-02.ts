@@ -39,16 +39,20 @@ const sunnaiGlassBowl02 = (): TBuilder<TProductVariantDraft> =>
       AttributeDraft.random()
         .name('type')
         .value([{ 'en-GB': 'Deep' }]),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Transparent:transparent',
-        'de-DE': 'Transparent:transparent',
-        'en-US': 'Transparent:transparent',
+      AttributeDraft.random().name('search-color').value('transparent'),
+      AttributeDraft.random().name('search-finish').value('glass'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Transparent',
+        'de-DE': 'Transparent',
+        'en-US': 'Transparent',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Glass:transparent',
-        'de-DE': 'Glas:transparent',
-        'en-US': 'Glass:transparent',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Glass',
+        'de-DE': 'Glas',
+        'en-US': 'Glass',
       }),
+      AttributeDraft.random().name('color-code').value('transparent'),
+      AttributeDraft.random().name('finish-code').value('transparent'),
     ]);
 
 export default sunnaiGlassBowl02;

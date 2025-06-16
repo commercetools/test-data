@@ -21,20 +21,36 @@ describe(`with emeraldVelvetChair01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "green",
+          },
+          {
+            "name": "search-finish",
+            "value": "brown",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Grün:#008000",
-              "en-GB": "Green:#008000",
-              "en-US": "Green:#008000",
+              "de-DE": "Grün",
+              "en-GB": "Green",
+              "en-US": "Green",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Burlywood:#deb887",
-              "en-GB": "Burlywood:#deb887",
-              "en-US": "Burlywood:#deb887",
+              "de-DE": "Burlywood",
+              "en-GB": "Burlywood",
+              "en-US": "Burlywood",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#008000",
+          },
+          {
+            "name": "finish-code",
+            "value": "#deb887",
           },
         ],
         "images": [
@@ -115,12 +131,28 @@ describe(`with emeraldVelvetChair01 preset`, () => {
             "value": "{"en-GB":"- Dry clean only","de-DE":"- Nur chemische Reinigung","en-US":"- Dry clean only"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Green:#008000","de-DE":"Grün:#008000","en-US":"Green:#008000"}",
+            "name": "search-color",
+            "value": ""green"",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Burlywood:#deb887","de-DE":"Burlywood:#deb887","en-US":"Burlywood:#deb887"}",
+            "name": "search-finish",
+            "value": ""brown"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Green","de-DE":"Grün","en-US":"Green"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Burlywood","de-DE":"Burlywood","en-US":"Burlywood"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#008000"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#deb887"",
           },
         ],
         "images": [

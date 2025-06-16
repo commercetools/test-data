@@ -42,6 +42,13 @@ const indoorJutePlanter02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Pflanze nicht im Lieferumfang enthalten',
       }),
       AttributeDraft.random().name('size').value({ 'en-GB': 'Small' }),
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
+      }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
     ]);
 
 export default indoorJutePlanter02;

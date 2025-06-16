@@ -17,12 +17,20 @@ describe(`with juteRug01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "yellow",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -138,8 +146,16 @@ describe(`with juteRug01 preset`, () => {
             "value": "{"en-GB":"- 10ft x 12ft","de-DE":"- 10 Fuß x 12 Fuß","en-US":"- 10ft x 12ft"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-color",
+            "value": ""yellow"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

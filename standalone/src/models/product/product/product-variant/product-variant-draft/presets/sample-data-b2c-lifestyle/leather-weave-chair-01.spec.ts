@@ -14,20 +14,36 @@ describe(`with leatherWeaveChair01 preset`, () => {
             "value": true,
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "brown",
+          },
+          {
+            "name": "search-finish",
+            "value": "yellow",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Sattel braun:#8b4513",
-              "en-GB": "Saddle Brown:#8b4513",
-              "en-US": "Saddle Brown:#8b4513",
+              "de-DE": "Sattel braun",
+              "en-GB": "Saddle Brown",
+              "en-US": "Saddle Brown",
             },
           },
           {
-            "name": "finish",
+            "name": "finish-label",
             "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#8b4513",
+          },
+          {
+            "name": "finish-code",
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -116,12 +132,28 @@ describe(`with leatherWeaveChair01 preset`, () => {
             "value": "true",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Saddle Brown:#8b4513","de-DE":"Sattel braun:#8b4513","en-US":"Saddle Brown:#8b4513"}",
+            "name": "search-color",
+            "value": ""brown"",
           },
           {
-            "name": "finish",
-            "value": "{"en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C","en-US":"Tan:#D2B48C"}",
+            "name": "search-finish",
+            "value": ""yellow"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Saddle Brown","de-DE":"Sattel braun","en-US":"Saddle Brown"}",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#8b4513"",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

@@ -24,12 +24,20 @@ describe(`with ecruDoubleBed01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "gray",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Gainsboro:#dcdcdc",
-              "en-GB": "Gainsboro:#dcdcdc",
-              "en-US": "Gainsboro:#dcdcdc",
+              "de-DE": "Gainsboro",
+              "en-GB": "Gainsboro",
+              "en-US": "Gainsboro",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#dcdcdc",
           },
         ],
         "images": [
@@ -110,8 +118,16 @@ describe(`with ecruDoubleBed01 preset`, () => {
             "value": "{"en-GB":"- Comes with pillow-top headboard\\n- Assembly included","de-DE":"- Mit gepolstertem Kopfteil\\n- Montage inklusive","en-US":"- Comes with pillow-top headboard\\n- Assembly included"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Gainsboro:#dcdcdc","de-DE":"Gainsboro:#dcdcdc","en-US":"Gainsboro:#dcdcdc"}",
+            "name": "search-color",
+            "value": ""gray"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Gainsboro","de-DE":"Gainsboro","en-US":"Gainsboro"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#dcdcdc"",
           },
         ],
         "images": [

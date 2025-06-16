@@ -24,12 +24,20 @@ describe(`with lanaPillowCover01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "gray",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Hell grau:#D3D3D3",
-              "en-GB": "Light Grey:#D3D3D3",
-              "en-US": "Light Gray:#D3D3D3",
+              "de-DE": "Hell grau",
+              "en-GB": "Light Grey",
+              "en-US": "Light Gray",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#D3D3D3",
           },
         ],
         "images": [
@@ -110,8 +118,16 @@ describe(`with lanaPillowCover01 preset`, () => {
             "value": "{"en-GB":"- Machine washable\\n- Pillow not included\\n- Has a zip enclosure","de-DE":"- Waschmaschinenfest\\n- Kissen nicht im Lieferumfang enthalten\\n- Verfügt über ein Reißverschlussgehäuse","en-US":"- Machine washable\\n- Pillow not included\\n- Has a zip enclosure"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Light Grey:#D3D3D3","de-DE":"Hell grau:#D3D3D3","en-US":"Light Gray:#D3D3D3"}",
+            "name": "search-color",
+            "value": ""gray"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Light Grey","de-DE":"Hell grau","en-US":"Light Gray"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D3D3D3"",
           },
         ],
         "images": [

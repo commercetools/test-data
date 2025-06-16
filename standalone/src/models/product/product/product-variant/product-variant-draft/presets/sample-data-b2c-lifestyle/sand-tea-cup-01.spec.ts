@@ -17,12 +17,20 @@ describe(`with sandTeaCup01 preset`, () => {
             },
           },
           {
-            "name": "color",
+            "name": "search-color",
+            "value": "yellow",
+          },
+          {
+            "name": "color-label",
             "value": {
-              "de-DE": "Sand:#C2B280",
-              "en-GB": "Sand:#C2B280",
-              "en-US": "Sand:#C2B280",
+              "de-DE": "Sand",
+              "en-GB": "Sand",
+              "en-US": "Sand",
             },
+          },
+          {
+            "name": "color-code",
+            "value": "#C2B280",
           },
         ],
         "images": [
@@ -103,8 +111,16 @@ describe(`with sandTeaCup01 preset`, () => {
             "value": "{"en-GB":"- Includes 1 mug","en-US":"- Includes 1 mug","de-DE":"- Enthält 1 Tasse"}",
           },
           {
-            "name": "color",
-            "value": "{"en-GB":"Sand:#C2B280","de-DE":"Sand:#C2B280","en-US":"Sand:#C2B280"}",
+            "name": "search-color",
+            "value": ""yellow"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Sand","de-DE":"Sand","en-US":"Sand"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#C2B280"",
           },
         ],
         "images": [

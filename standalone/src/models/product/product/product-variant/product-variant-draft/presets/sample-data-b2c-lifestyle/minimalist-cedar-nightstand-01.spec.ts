@@ -13,12 +13,20 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "finish",
+            "name": "search-finish",
+            "value": "gray",
+          },
+          {
+            "name": "finish-label",
             "value": {
-              "de-DE": "Gainsboro:#dcdcdc",
-              "en-GB": "Gainsboro:#dcdcdc",
-              "en-US": "Gainsboro:#dcdcdc",
+              "de-DE": "Gainsboro",
+              "en-GB": "Gainsboro",
+              "en-US": "Gainsboro",
             },
+          },
+          {
+            "name": "finish-code",
+            "value": "#dcdcdc",
           },
         ],
         "images": [
@@ -111,8 +119,16 @@ describe(`with minimalistCedarNightstand01 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "finish",
-            "value": "{"en-GB":"Gainsboro:#dcdcdc","de-DE":"Gainsboro:#dcdcdc","en-US":"Gainsboro:#dcdcdc"}",
+            "name": "search-finish",
+            "value": ""gray"",
+          },
+          {
+            "name": "finish-label",
+            "value": "{"en-GB":"Gainsboro","de-DE":"Gainsboro","en-US":"Gainsboro"}",
+          },
+          {
+            "name": "finish-code",
+            "value": ""#dcdcdc"",
           },
         ],
         "images": [

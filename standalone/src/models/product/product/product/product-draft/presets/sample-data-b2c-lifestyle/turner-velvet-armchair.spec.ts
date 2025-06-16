@@ -43,12 +43,20 @@ describe(`with turnerVelvetArmchair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "blue",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Königs blau:#4169E1",
-                "en-GB": "Royal Blue:#4169E1",
-                "en-US": "Royal Blue:#4169E1",
+                "de-DE": "Königs blau",
+                "en-GB": "Royal Blue",
+                "en-US": "Royal Blue",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#4169E1",
             },
           ],
           "images": [
@@ -202,8 +210,16 @@ describe(`with turnerVelvetArmchair preset`, () => {
               "value": "{"en-GB":"- Dry clean only","en-US":"- Dry clean only","de-DE":"- Nur chemische Reinigung"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Royal Blue:#4169E1","de-DE":"Königs blau:#4169E1","en-US":"Royal Blue:#4169E1"}",
+              "name": "search-color",
+              "value": ""blue"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Royal Blue","de-DE":"Königs blau","en-US":"Royal Blue"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#4169E1"",
             },
           ],
           "images": [

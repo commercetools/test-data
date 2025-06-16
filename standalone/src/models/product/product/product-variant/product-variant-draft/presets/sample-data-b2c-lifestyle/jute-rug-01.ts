@@ -66,11 +66,13 @@ const juteRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- 10 Fuß x 12 Fuß',
         'en-US': '- 10ft x 12ft',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
     ]);
 
 export default juteRug01;

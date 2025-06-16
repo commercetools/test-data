@@ -45,12 +45,20 @@ describe(`with redModernPainting preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "red",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Rot:#ff0000",
-                "en-GB": "Red:#ff0000",
-                "en-US": "Red:#ff0000",
+                "de-DE": "Rot",
+                "en-GB": "Red",
+                "en-US": "Red",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#ff0000",
             },
           ],
           "images": [
@@ -196,8 +204,16 @@ describe(`with redModernPainting preset`, () => {
               "value": "{"en-GB":"- Acrylic on canvas\\n- 2ft by 2ft","en-US":"- Acrylic on canvas\\n- 2ft by 2ft","de-DE":"- Acryl auf Leinwand\\n- 2 Fuß mal 2 Fuß"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Red:#ff0000","de-DE":"Rot:#ff0000","en-US":"Red:#ff0000"}",
+              "name": "search-color",
+              "value": ""red"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Red","de-DE":"Rot","en-US":"Red"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#ff0000"",
             },
           ],
           "images": [

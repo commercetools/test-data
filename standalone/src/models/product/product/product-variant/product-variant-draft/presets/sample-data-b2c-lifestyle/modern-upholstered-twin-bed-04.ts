@@ -56,16 +56,20 @@ const modernUpholsteredTwinBed04 = (): TBuilder<TProductVariantDraft> =>
         'de-DE':
           '- Cotton upholstery \n- Manufactured wood\n- Twin size\n- Assembled on site',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-US': 'Lightslate Gray:#778899',
-        'en-GB': 'Lightslate Grey:#778899',
-        'de-DE': 'Helles Schiefer grau:#778899',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('gray'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-US': 'Tan:#D2B48C',
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Lightslate Grey',
+        'de-DE': 'Helles Schiefer grau',
+        'en-US': 'Lightslate Gray',
       }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
+      AttributeDraft.random().name('finish-code').value('#778899'),
     ]);
 
 export default modernUpholsteredTwinBed04;

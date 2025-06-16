@@ -54,11 +54,13 @@ const comfortCoffeeMug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Enthält 1 Tasse\n- Spülmaschinen- und mikrowellengeeignet',
         'en-US': '- Includes 1 mug\n- Dishwasher and microwave safe',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'White:#FFFFFF',
-        'de-DE': 'Weiß:#FFFFFF',
-        'en-US': 'White:#FFFFFF',
+      AttributeDraft.random().name('search-color').value('white'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'White',
+        'de-DE': 'Weiß',
+        'en-US': 'White',
       }),
+      AttributeDraft.random().name('color-code').value('#FFFFFF'),
     ]);
 
 export default comfortCoffeeMug01;

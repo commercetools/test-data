@@ -41,16 +41,20 @@ const emeraldVelvetChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Nur chemische Reinigung',
         'en-US': '- Dry clean only',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Green:#008000',
-        'de-DE': 'Grün:#008000',
-        'en-US': 'Green:#008000',
+      AttributeDraft.random().name('search-color').value('green'),
+      AttributeDraft.random().name('search-finish').value('brown'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Green',
+        'de-DE': 'Grün',
+        'en-US': 'Green',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Burlywood:#deb887',
-        'de-DE': 'Burlywood:#deb887',
-        'en-US': 'Burlywood:#deb887',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Burlywood',
+        'de-DE': 'Burlywood',
+        'en-US': 'Burlywood',
       }),
+      AttributeDraft.random().name('color-code').value('#008000'),
+      AttributeDraft.random().name('finish-code').value('#deb887'),
     ]);
 
 export default emeraldVelvetChair01;

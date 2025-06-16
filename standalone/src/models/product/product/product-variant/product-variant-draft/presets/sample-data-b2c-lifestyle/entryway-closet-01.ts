@@ -53,16 +53,20 @@ const entrywayCloset01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': '- Montage im Lieferumfang enthalten',
         'en-US': '- Assembly included in delivery',
       }),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('search-color').value('yellow'),
+      AttributeDraft.random().name('search-finish').value('brown'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Burlywood:#deb887',
-        'de-DE': 'Burlywood:#deb887',
-        'en-US': 'Burlywood:#deb887',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Burlywood',
+        'de-DE': 'Burlywood',
+        'en-US': 'Burlywood',
       }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
+      AttributeDraft.random().name('finish-code').value('#deb887'),
     ]);
 
 export default entrywayCloset01;

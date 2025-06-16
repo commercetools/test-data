@@ -10,14 +10,6 @@ describe(`with geometricPillowCase03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": {
-              "de-DE": "Bräunen:#D2B48C",
-              "en-GB": "Tan:#D2B48C",
-              "en-US": "Tan:#D2B48C",
-            },
-          },
-          {
             "name": "productspec",
             "value": {
               "de-DE": "- Velvet fabric
@@ -37,6 +29,22 @@ describe(`with geometricPillowCase03 preset`, () => {
       - Washable
       ",
             },
+          },
+          {
+            "name": "search-color",
+            "value": "yellow",
+          },
+          {
+            "name": "color-label",
+            "value": {
+              "de-DE": "Bräunen",
+              "en-GB": "Tan",
+              "en-US": "Tan",
+            },
+          },
+          {
+            "name": "color-code",
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -121,12 +129,20 @@ describe(`with geometricPillowCase03 preset`, () => {
         "assets": undefined,
         "attributes": [
           {
-            "name": "color",
-            "value": "{"en-US":"Tan:#D2B48C","en-GB":"Tan:#D2B48C","de-DE":"Bräunen:#D2B48C"}",
-          },
-          {
             "name": "productspec",
             "value": "{"en-US":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable\\n","en-GB":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable","de-DE":"- Velvet fabric\\n- Cotton lining\\n- Pillow case comes with zip for easy removal\\n- Pillow not included\\n- Washable"}",
+          },
+          {
+            "name": "search-color",
+            "value": ""yellow"",
+          },
+          {
+            "name": "color-label",
+            "value": "{"en-GB":"Tan","de-DE":"Bräunen","en-US":"Tan"}",
+          },
+          {
+            "name": "color-code",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

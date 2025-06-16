@@ -43,16 +43,20 @@ const leatherWeaveChair01 = (): TBuilder<TProductVariantDraft> =>
     ])
     .attributes([
       AttributeDraft.random().name('new-arrival').value(true),
-      AttributeDraft.random().name('color').value({
-        'en-GB': 'Saddle Brown:#8b4513',
-        'de-DE': 'Sattel braun:#8b4513',
-        'en-US': 'Saddle Brown:#8b4513',
+      AttributeDraft.random().name('search-color').value('brown'),
+      AttributeDraft.random().name('search-finish').value('yellow'),
+      AttributeDraft.random().name('color-label').value({
+        'en-GB': 'Saddle Brown',
+        'de-DE': 'Sattel braun',
+        'en-US': 'Saddle Brown',
       }),
-      AttributeDraft.random().name('finish').value({
-        'en-GB': 'Tan:#D2B48C',
-        'de-DE': 'Bräunen:#D2B48C',
-        'en-US': 'Tan:#D2B48C',
+      AttributeDraft.random().name('finish-label').value({
+        'en-GB': 'Tan',
+        'de-DE': 'Bräunen',
+        'en-US': 'Tan',
       }),
+      AttributeDraft.random().name('color-code').value('#8b4513'),
+      AttributeDraft.random().name('finish-code').value('#D2B48C'),
     ]);
 
 export default leatherWeaveChair01;

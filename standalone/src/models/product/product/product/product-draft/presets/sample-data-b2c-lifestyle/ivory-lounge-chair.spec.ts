@@ -49,12 +49,20 @@ describe(`with ivoryLoungeChair preset`, () => {
               },
             },
             {
-              "name": "color",
+              "name": "search-color",
+              "value": "white",
+            },
+            {
+              "name": "color-label",
               "value": {
-                "de-DE": "Elfenbein:#FFFFF0",
-                "en-GB": "Ivory:#FFFFF0",
-                "en-US": "Ivory:#FFFFF0",
+                "de-DE": "Elfenbein",
+                "en-GB": "Ivory",
+                "en-US": "Ivory",
               },
+            },
+            {
+              "name": "color-code",
+              "value": "#FFFFF0",
             },
           ],
           "images": [
@@ -220,8 +228,16 @@ describe(`with ivoryLoungeChair preset`, () => {
               "value": "{"en-GB":"- Dry clean only\\n- Assembly included in delivery","de-DE":"- Nur chemische Reinigung\\n- Montage im Lieferumfang enthalten","en-US":"- Dry clean only\\n- Assembly included in delivery"}",
             },
             {
-              "name": "color",
-              "value": "{"en-GB":"Ivory:#FFFFF0","de-DE":"Elfenbein:#FFFFF0","en-US":"Ivory:#FFFFF0"}",
+              "name": "search-color",
+              "value": ""white"",
+            },
+            {
+              "name": "color-label",
+              "value": "{"en-GB":"Ivory","de-DE":"Elfenbein","en-US":"Ivory"}",
+            },
+            {
+              "name": "color-code",
+              "value": ""#FFFFF0"",
             },
           ],
           "images": [
