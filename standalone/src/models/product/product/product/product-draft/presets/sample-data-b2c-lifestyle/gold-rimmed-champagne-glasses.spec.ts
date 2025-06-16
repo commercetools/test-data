@@ -86,19 +86,11 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "transparent",
-                "en-GB": "transparent",
-                "en-US": "transparent",
-              },
+              "value": "transparent",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#FFD700",
-                "en-GB": "#FFD700",
-                "en-US": "#FFD700",
-              },
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -285,11 +277,11 @@ describe(`with goldRimmedChampagneGlasses preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
+              "value": ""transparent"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

@@ -61,11 +61,7 @@ describe(`with walnutCabinet preset`, () => {
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#a52a2a",
-                "en-GB": "#a52a2a",
-                "en-US": "#a52a2a",
-              },
+              "value": "#a52a2a",
             },
           ],
           "images": [
@@ -247,7 +243,7 @@ describe(`with walnutCabinet preset`, () => {
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#a52a2a","en-GB":"#a52a2a","de-DE":"#a52a2a"}",
+              "value": ""#a52a2a"",
             },
           ],
           "images": [

@@ -62,11 +62,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#4169E1",
-                "en-GB": "#4169E1",
-                "en-US": "#4169E1",
-              },
+              "value": "#4169E1",
             },
           ],
           "images": [
@@ -229,7 +225,7 @@ describe(`with turnerVelvetArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
+              "value": ""#4169E1"",
             },
           ],
           "images": [

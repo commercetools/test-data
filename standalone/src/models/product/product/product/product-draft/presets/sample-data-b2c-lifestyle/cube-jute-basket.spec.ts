@@ -66,11 +66,7 @@ describe(`with cubeJuteBasket preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#D2B48C",
-                "en-GB": "#D2B48C",
-                "en-US": "#D2B48C",
-              },
+              "value": "#D2B48C",
             },
           ],
           "images": [

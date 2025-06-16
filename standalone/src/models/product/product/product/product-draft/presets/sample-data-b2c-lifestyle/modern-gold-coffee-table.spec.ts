@@ -103,19 +103,11 @@ describe(`with modernGoldCoffeeTable preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#FFFFFF",
-                "en-GB": "#FFFFFF",
-                "en-US": "#FFFFFF",
-              },
+              "value": "#FFFFFF",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#FFD700",
-                "en-GB": "#FFD700",
-                "en-US": "#FFD700",
-              },
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -310,11 +302,11 @@ describe(`with modernGoldCoffeeTable preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+              "value": ""#FFFFFF"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

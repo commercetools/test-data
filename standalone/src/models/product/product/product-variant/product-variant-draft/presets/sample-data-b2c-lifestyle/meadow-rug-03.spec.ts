@@ -39,11 +39,7 @@ describe(`with meadowRug03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#87CEEB",
-              "en-GB": "#87CEEB",
-              "en-US": "#87CEEB",
-            },
+            "value": "#87CEEB",
           },
         ],
         "images": [
@@ -133,7 +129,7 @@ describe(`with meadowRug03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
+            "value": ""#87CEEB"",
           },
         ],
         "images": [

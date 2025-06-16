@@ -50,11 +50,7 @@ describe(`with geometricPillowCase03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#D2B48C",
-              "en-GB": "#D2B48C",
-              "en-US": "#D2B48C",
-            },
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -152,7 +148,7 @@ describe(`with geometricPillowCase03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

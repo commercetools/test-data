@@ -65,11 +65,7 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#FFC0CB",
-                "en-GB": "#FFC0CB",
-                "en-US": "#FFC0CB",
-              },
+              "value": "#FFC0CB",
             },
           ],
           "images": [
@@ -224,7 +220,7 @@ describe(`with pinkAbstractPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
+              "value": ""#FFC0CB"",
             },
           ],
           "images": [

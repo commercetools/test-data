@@ -61,11 +61,7 @@ describe(`with sandTeaCup preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#C2B280",
-                "en-GB": "#C2B280",
-                "en-US": "#C2B280",
-              },
+              "value": "#C2B280",
             },
           ],
           "images": [
@@ -219,7 +215,7 @@ describe(`with sandTeaCup preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#C2B280","en-GB":"#C2B280","de-DE":"#C2B280"}",
+              "value": ""#C2B280"",
             },
           ],
           "images": [

@@ -61,19 +61,11 @@ describe(`with abigailLoungeChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFB6C1",
-              "en-GB": "#FFB6C1",
-              "en-US": "#FFB6C1",
-            },
+            "value": "#FFB6C1",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#FFD700",
-              "en-GB": "#FFD700",
-              "en-US": "#FFD700",
-            },
+            "value": "#FFD700",
           },
         ],
         "images": [
@@ -190,11 +182,11 @@ describe(`with abigailLoungeChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
+            "value": ""#FFB6C1"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+            "value": ""#FFD700"",
           },
         ],
         "images": [

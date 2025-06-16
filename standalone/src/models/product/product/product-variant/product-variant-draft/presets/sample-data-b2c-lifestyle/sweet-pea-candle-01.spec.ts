@@ -61,19 +61,11 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFC0CB",
-              "en-GB": "#FFC0CB",
-              "en-US": "#FFC0CB",
-            },
+            "value": "#FFC0CB",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "transparent",
-              "en-GB": "transparent",
-              "en-US": "transparent",
-            },
+            "value": "transparent",
           },
         ],
         "images": [
@@ -187,11 +179,11 @@ describe(`with sweetPeaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
+            "value": ""#FFC0CB"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
+            "value": ""transparent"",
           },
         ],
         "images": [

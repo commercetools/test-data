@@ -40,11 +40,7 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFF8DC",
-              "en-GB": "#FFF8DC",
-              "en-US": "#FFF8DC",
-            },
+            "value": "#FFF8DC",
           },
         ],
         "images": [
@@ -150,7 +146,7 @@ describe(`with traditionalArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFF8DC","en-GB":"#FFF8DC","de-DE":"#FFF8DC"}",
+            "value": ""#FFF8DC"",
           },
         ],
         "images": [

@@ -82,19 +82,11 @@ describe(`with travelCoffeeMug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#FFFFFF",
-                "en-GB": "#FFFFFF",
-                "en-US": "#FFFFFF",
-              },
+              "value": "#FFFFFF",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#C0C0C0",
-                "en-GB": "#C0C0C0",
-                "en-US": "#C0C0C0",
-              },
+              "value": "#C0C0C0",
             },
           ],
           "images": [
@@ -257,11 +249,11 @@ describe(`with travelCoffeeMug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+              "value": ""#FFFFFF"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
+              "value": ""#C0C0C0"",
             },
           ],
           "images": [

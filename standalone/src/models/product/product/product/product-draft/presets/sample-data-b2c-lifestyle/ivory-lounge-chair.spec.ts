@@ -68,11 +68,7 @@ describe(`with ivoryLoungeChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#FFFFF0",
-                "en-GB": "#FFFFF0",
-                "en-US": "#FFFFF0",
-              },
+              "value": "#FFFFF0",
             },
           ],
           "images": [
@@ -247,7 +243,7 @@ describe(`with ivoryLoungeChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#FFFFF0","en-GB":"#FFFFF0","de-DE":"#FFFFF0"}",
+              "value": ""#FFFFF0"",
             },
           ],
           "images": [

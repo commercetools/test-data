@@ -40,11 +40,7 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#DDA0DD",
-              "en-GB": "#DDA0DD",
-              "en-US": "#DDA0DD",
-            },
+            "value": "#DDA0DD",
           },
         ],
         "images": [
@@ -134,7 +130,7 @@ describe(`with mayaPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#DDA0DD","en-GB":"#DDA0DD","de-DE":"#DDA0DD"}",
+            "value": ""#DDA0DD"",
           },
         ],
         "images": [

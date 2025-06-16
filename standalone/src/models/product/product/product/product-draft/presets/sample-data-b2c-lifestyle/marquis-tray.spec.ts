@@ -73,11 +73,7 @@ describe(`with marquisTray preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#DAA520",
-                "en-GB": "#DAA520",
-                "en-US": "#DAA520",
-              },
+              "value": "#DAA520",
             },
           ],
           "images": [
@@ -244,7 +240,7 @@ describe(`with marquisTray preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
+              "value": ""#DAA520"",
             },
           ],
           "images": [

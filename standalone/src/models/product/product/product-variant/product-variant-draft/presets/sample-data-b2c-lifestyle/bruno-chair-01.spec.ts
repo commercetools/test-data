@@ -54,19 +54,11 @@ describe(`with brunoChair preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#4169E1",
-              "en-GB": "#4169E1",
-              "en-US": "#4169E1",
-            },
+            "value": "#4169E1",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#8b4513",
-              "en-GB": "#8b4513",
-              "en-US": "#8b4513",
-            },
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -164,11 +156,11 @@ describe(`with brunoChair preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
+            "value": ""#4169E1"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

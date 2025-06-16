@@ -60,11 +60,7 @@ describe(`with cobblestoneRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#D3D3D3",
-                "en-GB": "#D3D3D3",
-                "en-US": "#D3D3D3",
-              },
+              "value": "#D3D3D3",
             },
           ],
           "images": [
@@ -219,7 +215,7 @@ describe(`with cobblestoneRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
+              "value": ""#D3D3D3"",
             },
           ],
           "images": [

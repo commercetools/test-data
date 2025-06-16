@@ -43,11 +43,7 @@ describe(`with cocktailStrainer01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#C0C0C0",
-              "en-GB": "#C0C0C0",
-              "en-US": "#C0C0C0",
-            },
+            "value": "#C0C0C0",
           },
         ],
         "images": [
@@ -145,7 +141,7 @@ describe(`with cocktailStrainer01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
+            "value": ""#C0C0C0"",
           },
         ],
         "images": [

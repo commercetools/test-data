@@ -79,19 +79,11 @@ describe(`with rumiChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#fff0f5",
-                "en-GB": "#fff0f5",
-                "en-US": "#fff0f5",
-              },
+              "value": "#fff0f5",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#FFD700",
-                "en-GB": "#FFD700",
-                "en-US": "#FFD700",
-              },
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -253,11 +245,11 @@ describe(`with rumiChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
+              "value": ""#fff0f5"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

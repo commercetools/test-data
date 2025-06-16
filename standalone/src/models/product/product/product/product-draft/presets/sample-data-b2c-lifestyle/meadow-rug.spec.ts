@@ -61,11 +61,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#808080",
-                "en-GB": "#808080",
-                "en-US": "#808080",
-              },
+              "value": "#808080",
             },
           ],
           "images": [
@@ -194,11 +190,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -295,11 +287,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#87CEEB",
-                  "en-GB": "#87CEEB",
-                  "en-US": "#87CEEB",
-                },
+                "value": "#87CEEB",
               },
             ],
             "images": [
@@ -422,7 +410,7 @@ describe(`with meadowRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
+              "value": ""#808080"",
             },
           ],
           "images": [
@@ -555,7 +543,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -644,7 +632,7 @@ describe(`with meadowRug preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
+                "value": ""#87CEEB"",
               },
             ],
             "images": [

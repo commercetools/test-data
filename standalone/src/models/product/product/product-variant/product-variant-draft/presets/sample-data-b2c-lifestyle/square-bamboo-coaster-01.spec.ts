@@ -40,11 +40,7 @@ describe(`with squareBambooCoaster01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#f5deb3",
-              "en-GB": "#f5deb3",
-              "en-US": "#f5deb3",
-            },
+            "value": "#f5deb3",
           },
         ],
         "images": [
@@ -134,7 +130,7 @@ describe(`with squareBambooCoaster01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#f5deb3","en-GB":"#f5deb3","de-DE":"#f5deb3"}",
+            "value": ""#f5deb3"",
           },
         ],
         "images": [

@@ -40,11 +40,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#000000",
-              "en-GB": "#000000",
-              "en-US": "#000000",
-            },
+            "value": "#000000",
           },
         ],
         "images": [
@@ -142,7 +138,7 @@ describe(`with modernBlackCoaster01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+            "value": ""#000000"",
           },
         ],
         "images": [

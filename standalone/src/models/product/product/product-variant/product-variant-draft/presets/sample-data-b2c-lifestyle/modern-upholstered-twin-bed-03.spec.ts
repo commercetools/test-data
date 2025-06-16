@@ -67,19 +67,11 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#808080",
-              "en-GB": "#808080",
-              "en-US": "#808080",
-            },
+            "value": "#808080",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#778899",
-              "en-GB": "#778899",
-              "en-US": "#778899",
-            },
+            "value": "#778899",
           },
         ],
         "images": [
@@ -193,11 +185,11 @@ describe(`with modernUpholsteredTwinBed03 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#808080","en-GB":"#808080","de-DE":"#808080"}",
+            "value": ""#808080"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
+            "value": ""#778899"",
           },
         ],
         "images": [

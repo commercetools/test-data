@@ -64,11 +64,7 @@ describe(`with ashenRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#dcdcdc",
-                "en-GB": "#dcdcdc",
-                "en-US": "#dcdcdc",
-              },
+              "value": "#dcdcdc",
             },
           ],
           "images": [
@@ -230,7 +226,7 @@ describe(`with ashenRug preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#dcdcdc","en-GB":"#dcdcdc","de-DE":"#dcdcdc"}",
+              "value": ""#dcdcdc"",
             },
           ],
           "images": [

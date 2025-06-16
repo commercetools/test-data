@@ -58,19 +58,11 @@ describe(`with entrywayCloset01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#D2B48C",
-              "en-GB": "#D2B48C",
-              "en-US": "#D2B48C",
-            },
+            "value": "#D2B48C",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#deb887",
-              "en-GB": "#deb887",
-              "en-US": "#deb887",
-            },
+            "value": "#deb887",
           },
         ],
         "images": [
@@ -184,11 +176,11 @@ describe(`with entrywayCloset01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+            "value": ""#D2B48C"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#deb887","en-GB":"#deb887","de-DE":"#deb887"}",
+            "value": ""#deb887"",
           },
         ],
         "images": [

@@ -58,19 +58,11 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#008000",
-              "en-GB": "#008000",
-              "en-US": "#008000",
-            },
+            "value": "#008000",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#deb887",
-              "en-GB": "#deb887",
-              "en-US": "#deb887",
-            },
+            "value": "#deb887",
           },
         ],
         "images": [
@@ -168,11 +160,11 @@ describe(`with emeraldVelvetChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#008000","en-GB":"#008000","de-DE":"#008000"}",
+            "value": ""#008000"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#deb887","en-GB":"#deb887","de-DE":"#deb887"}",
+            "value": ""#deb887"",
           },
         ],
         "images": [

@@ -55,19 +55,11 @@ describe(`with rattanLoungeChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#faebd7",
-              "en-GB": "#faebd7",
-              "en-US": "#faebd7",
-            },
+            "value": "#faebd7",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#F5F5DC",
-              "en-GB": "#F5F5DC",
-              "en-US": "#F5F5DC",
-            },
+            "value": "#F5F5DC",
           },
         ],
         "images": [
@@ -173,11 +165,11 @@ describe(`with rattanLoungeChair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#faebd7","en-GB":"#faebd7","de-DE":"#faebd7"}",
+            "value": ""#faebd7"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+            "value": ""#F5F5DC"",
           },
         ],
         "images": [

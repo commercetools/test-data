@@ -65,11 +65,7 @@ describe(`with greenServingPlate preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#008000",
-                "en-GB": "#008000",
-                "en-US": "#008000",
-              },
+              "value": "#008000",
             },
           ],
           "images": [
@@ -236,7 +232,7 @@ describe(`with greenServingPlate preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#008000","en-GB":"#008000","de-DE":"#008000"}",
+              "value": ""#008000"",
             },
           ],
           "images": [

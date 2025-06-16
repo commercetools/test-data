@@ -37,11 +37,7 @@ describe(`with cloudQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#ADD8E6",
-              "en-GB": "#ADD8E6",
-              "en-US": "#ADD8E6",
-            },
+            "value": "#ADD8E6",
           },
         ],
         "images": [
@@ -139,7 +135,7 @@ describe(`with cloudQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#ADD8E6","en-GB":"#ADD8E6","de-DE":"#ADD8E6"}",
+            "value": ""#ADD8E6"",
           },
         ],
         "images": [

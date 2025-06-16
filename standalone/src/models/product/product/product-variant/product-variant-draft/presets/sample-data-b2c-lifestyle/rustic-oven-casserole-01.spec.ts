@@ -37,11 +37,7 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#CD853F",
-              "en-GB": "#CD853F",
-              "en-US": "#CD853F",
-            },
+            "value": "#CD853F",
           },
         ],
         "images": [
@@ -131,7 +127,7 @@ describe(`with rusticOvenCasserole01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
+            "value": ""#CD853F"",
           },
         ],
         "images": [

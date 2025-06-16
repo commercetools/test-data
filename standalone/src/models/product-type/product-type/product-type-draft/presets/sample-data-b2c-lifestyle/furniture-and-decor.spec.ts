@@ -237,7 +237,7 @@ describe(`with furnitureAndDecor preset`, () => {
             },
             "name": "color-code",
             "type": {
-              "name": "ltext",
+              "name": "text",
             },
           },
           {
@@ -263,7 +263,7 @@ describe(`with furnitureAndDecor preset`, () => {
             },
             "name": "finish-code",
             "type": {
-              "name": "ltext",
+              "name": "text",
             },
           },
         ],
@@ -621,7 +621,7 @@ describe(`with furnitureAndDecor preset`, () => {
             "level": "Variant",
             "name": "color-code",
             "type": {
-              "ltext": {
+              "text": {
                 "dummy": null,
               },
             },
@@ -662,7 +662,7 @@ describe(`with furnitureAndDecor preset`, () => {
             "level": "Variant",
             "name": "finish-code",
             "type": {
-              "ltext": {
+              "text": {
                 "dummy": null,
               },
             },

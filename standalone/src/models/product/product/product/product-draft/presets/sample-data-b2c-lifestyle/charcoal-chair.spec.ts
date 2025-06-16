@@ -79,19 +79,11 @@ describe(`with charcoalChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#2F4F4F",
-                "en-GB": "#2F4F4F",
-                "en-US": "#2F4F4F",
-              },
+              "value": "#2F4F4F",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#D2B48C",
-                "en-GB": "#D2B48C",
-                "en-US": "#D2B48C",
-              },
+              "value": "#D2B48C",
             },
           ],
           "images": [
@@ -262,11 +254,11 @@ describe(`with charcoalChair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+              "value": ""#2F4F4F"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+              "value": ""#D2B48C"",
             },
           ],
           "images": [

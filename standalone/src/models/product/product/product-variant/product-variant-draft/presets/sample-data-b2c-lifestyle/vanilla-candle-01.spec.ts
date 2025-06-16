@@ -61,19 +61,11 @@ describe(`with vanillaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#F5F5DC",
-              "en-GB": "#F5F5DC",
-              "en-US": "#F5F5DC",
-            },
+            "value": "#F5F5DC",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "transparent",
-              "en-GB": "transparent",
-              "en-US": "transparent",
-            },
+            "value": "transparent",
           },
         ],
         "images": [
@@ -198,11 +190,11 @@ describe(`with vanillaCandle01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+            "value": ""#F5F5DC"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"transparent","en-GB":"transparent","de-DE":"transparent"}",
+            "value": ""transparent"",
           },
         ],
         "images": [

@@ -64,19 +64,11 @@ describe(`with minimalistModernSideTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFFFFF",
-              "en-GB": "#FFFFFF",
-              "en-US": "#FFFFFF",
-            },
+            "value": "#FFFFFF",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#8b4513",
-              "en-GB": "#8b4513",
-              "en-US": "#8b4513",
-            },
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -174,11 +166,11 @@ describe(`with minimalistModernSideTable01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+            "value": ""#FFFFFF"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

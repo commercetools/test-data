@@ -82,19 +82,11 @@ describe(`with glamArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#DAA520",
-                "en-GB": "#DAA520",
-                "en-US": "#DAA520",
-              },
+              "value": "#DAA520",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#FFD700",
-                "en-GB": "#FFD700",
-                "en-US": "#FFD700",
-              },
+              "value": "#FFD700",
             },
           ],
           "images": [
@@ -257,11 +249,11 @@ describe(`with glamArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
+              "value": ""#DAA520"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+              "value": ""#FFD700"",
             },
           ],
           "images": [

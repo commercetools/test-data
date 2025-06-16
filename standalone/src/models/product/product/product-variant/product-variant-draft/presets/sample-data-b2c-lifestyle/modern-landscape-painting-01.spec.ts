@@ -46,11 +46,7 @@ describe(`with modernLandscapePainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#87CEEB",
-              "en-GB": "#87CEEB",
-              "en-US": "#87CEEB",
-            },
+            "value": "#87CEEB",
           },
         ],
         "images": [
@@ -140,7 +136,7 @@ describe(`with modernLandscapePainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#87CEEB","en-GB":"#87CEEB","de-DE":"#87CEEB"}",
+            "value": ""#87CEEB"",
           },
         ],
         "images": [

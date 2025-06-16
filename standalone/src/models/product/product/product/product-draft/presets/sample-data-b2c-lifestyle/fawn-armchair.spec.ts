@@ -78,19 +78,11 @@ describe(`with fawnArmchair preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#D2B48C",
-                "en-GB": "#D2B48C",
-                "en-US": "#D2B48C",
-              },
+              "value": "#D2B48C",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#000000",
-                "en-GB": "#000000",
-                "en-US": "#000000",
-              },
+              "value": "#000000",
             },
           ],
           "images": [

@@ -63,11 +63,7 @@ describe(`with ecruDoubleBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#dcdcdc",
-                "en-GB": "#dcdcdc",
-                "en-US": "#dcdcdc",
-              },
+              "value": "#dcdcdc",
             },
           ],
           "images": [

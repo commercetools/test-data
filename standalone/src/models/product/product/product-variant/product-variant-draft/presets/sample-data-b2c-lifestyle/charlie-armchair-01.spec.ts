@@ -55,19 +55,11 @@ describe(`with charlieArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#CD853F",
-              "en-GB": "#CD853F",
-              "en-US": "#CD853F",
-            },
+            "value": "#CD853F",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#D2B48C",
-              "en-GB": "#D2B48C",
-              "en-US": "#D2B48C",
-            },
+            "value": "#D2B48C",
           },
         ],
         "images": [
@@ -165,11 +157,11 @@ describe(`with charlieArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
+            "value": ""#CD853F"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+            "value": ""#D2B48C"",
           },
         ],
         "images": [

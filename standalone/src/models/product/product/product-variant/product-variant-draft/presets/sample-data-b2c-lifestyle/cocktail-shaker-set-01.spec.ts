@@ -43,11 +43,7 @@ describe(`with cocktailShakerSet01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#FFD700",
-              "en-GB": "#FFD700",
-              "en-US": "#FFD700",
-            },
+            "value": "#FFD700",
           },
         ],
         "images": [
@@ -137,7 +133,7 @@ describe(`with cocktailShakerSet01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#FFD700","en-GB":"#FFD700","de-DE":"#FFD700"}",
+            "value": ""#FFD700"",
           },
         ],
         "images": [

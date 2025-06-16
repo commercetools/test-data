@@ -43,11 +43,7 @@ describe(`with rusticCountryDresser01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#D3D3D3",
-              "en-GB": "#D3D3D3",
-              "en-US": "#D3D3D3",
-            },
+            "value": "#D3D3D3",
           },
         ],
         "images": [
@@ -161,7 +157,7 @@ describe(`with rusticCountryDresser01 preset`, () => {
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
+            "value": ""#D3D3D3"",
           },
         ],
         "images": [

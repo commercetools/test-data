@@ -73,11 +73,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#FFFFFF",
-                "en-GB": "#FFFFFF",
-                "en-US": "#FFFFFF",
-              },
+              "value": "#FFFFFF",
             },
           ],
           "images": [
@@ -218,11 +214,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFFFFF",
-                  "en-GB": "#FFFFFF",
-                  "en-US": "#FFFFFF",
-                },
+                "value": "#FFFFFF",
               },
             ],
             "images": [
@@ -331,11 +323,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFFFFF",
-                  "en-GB": "#FFFFFF",
-                  "en-US": "#FFFFFF",
-                },
+                "value": "#FFFFFF",
               },
             ],
             "images": [
@@ -444,11 +432,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFB6C1",
-                  "en-GB": "#FFB6C1",
-                  "en-US": "#FFB6C1",
-                },
+                "value": "#FFB6C1",
               },
             ],
             "images": [
@@ -565,11 +549,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFB6C1",
-                  "en-GB": "#FFB6C1",
-                  "en-US": "#FFB6C1",
-                },
+                "value": "#FFB6C1",
               },
             ],
             "images": [
@@ -686,11 +666,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFB6C1",
-                  "en-GB": "#FFB6C1",
-                  "en-US": "#FFB6C1",
-                },
+                "value": "#FFB6C1",
               },
             ],
             "images": [
@@ -807,11 +783,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#D3D3D3",
-                  "en-GB": "#D3D3D3",
-                  "en-US": "#D3D3D3",
-                },
+                "value": "#D3D3D3",
               },
             ],
             "images": [
@@ -920,11 +892,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#D3D3D3",
-                  "en-GB": "#D3D3D3",
-                  "en-US": "#D3D3D3",
-                },
+                "value": "#D3D3D3",
               },
             ],
             "images": [
@@ -1033,11 +1001,7 @@ describe(`with cottonSilkBedsheet preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#D3D3D3",
-                  "en-GB": "#D3D3D3",
-                  "en-US": "#D3D3D3",
-                },
+                "value": "#D3D3D3",
               },
             ],
             "images": [

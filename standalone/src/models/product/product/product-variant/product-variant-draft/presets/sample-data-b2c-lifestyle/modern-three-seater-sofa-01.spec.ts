@@ -64,19 +64,11 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#2F4F4F",
-              "en-GB": "#2F4F4F",
-              "en-US": "#2F4F4F",
-            },
+            "value": "#2F4F4F",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#8b4513",
-              "en-GB": "#8b4513",
-              "en-US": "#8b4513",
-            },
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -198,11 +190,11 @@ describe(`with modernThreeSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+            "value": ""#2F4F4F"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

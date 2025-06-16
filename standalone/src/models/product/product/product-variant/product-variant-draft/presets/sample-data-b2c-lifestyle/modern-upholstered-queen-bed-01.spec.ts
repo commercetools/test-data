@@ -64,19 +64,11 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFFFFF",
-              "en-GB": "#FFFFFF",
-              "en-US": "#FFFFFF",
-            },
+            "value": "#FFFFFF",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#000000",
-              "en-GB": "#000000",
-              "en-US": "#000000",
-            },
+            "value": "#000000",
           },
         ],
         "images": [
@@ -174,11 +166,11 @@ describe(`with modernUpholsteredQueenBed01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+            "value": ""#FFFFFF"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+            "value": ""#000000"",
           },
         ],
         "images": [

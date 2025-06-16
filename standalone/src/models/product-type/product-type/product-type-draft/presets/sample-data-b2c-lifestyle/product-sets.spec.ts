@@ -166,7 +166,7 @@ describe(`with productSets preset`, () => {
             },
             "name": "color-code",
             "type": {
-              "name": "ltext",
+              "name": "text",
             },
           },
           {
@@ -192,7 +192,7 @@ describe(`with productSets preset`, () => {
             },
             "name": "finish-code",
             "type": {
-              "name": "ltext",
+              "name": "text",
             },
           },
         ],
@@ -450,7 +450,7 @@ describe(`with productSets preset`, () => {
             "level": "Variant",
             "name": "color-code",
             "type": {
-              "ltext": {
+              "text": {
                 "dummy": null,
               },
             },
@@ -491,7 +491,7 @@ describe(`with productSets preset`, () => {
             "level": "Variant",
             "name": "finish-code",
             "type": {
-              "ltext": {
+              "text": {
                 "dummy": null,
               },
             },

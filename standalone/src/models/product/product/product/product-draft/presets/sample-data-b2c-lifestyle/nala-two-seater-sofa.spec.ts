@@ -98,19 +98,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#778899",
-                "en-GB": "#778899",
-                "en-US": "#778899",
-              },
+              "value": "#778899",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#000000",
-                "en-GB": "#000000",
-                "en-US": "#000000",
-              },
+              "value": "#000000",
             },
           ],
           "images": [
@@ -272,19 +264,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#4169E1",
-                  "en-GB": "#4169E1",
-                  "en-US": "#4169E1",
-                },
+                "value": "#4169E1",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -414,19 +398,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#CD853F",
-                  "en-GB": "#CD853F",
-                  "en-US": "#CD853F",
-                },
+                "value": "#CD853F",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -556,19 +532,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#00BFFF",
-                  "en-GB": "#00BFFF",
-                  "en-US": "#00BFFF",
-                },
+                "value": "#00BFFF",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -690,19 +658,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#D3D3D3",
-                  "en-GB": "#D3D3D3",
-                  "en-US": "#D3D3D3",
-                },
+                "value": "#D3D3D3",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -832,19 +792,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#8FBC8F",
-                  "en-GB": "#8FBC8F",
-                  "en-US": "#8FBC8F",
-                },
+                "value": "#8FBC8F",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -966,19 +918,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#2F4F4F",
-                  "en-GB": "#2F4F4F",
-                  "en-US": "#2F4F4F",
-                },
+                "value": "#2F4F4F",
               },
               {
                 "name": "finish-code",
-                "value": {
-                  "de-DE": "#000000",
-                  "en-GB": "#000000",
-                  "en-US": "#000000",
-                },
+                "value": "#000000",
               },
             ],
             "images": [
@@ -1126,11 +1070,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#778899","en-GB":"#778899","de-DE":"#778899"}",
+              "value": ""#778899"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+              "value": ""#000000"",
             },
           ],
           "images": [
@@ -1283,11 +1227,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#4169E1","en-GB":"#4169E1","de-DE":"#4169E1"}",
+                "value": ""#4169E1"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -1396,11 +1340,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#CD853F","en-GB":"#CD853F","de-DE":"#CD853F"}",
+                "value": ""#CD853F"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -1509,11 +1453,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#00BFFF","en-GB":"#00BFFF","de-DE":"#00BFFF"}",
+                "value": ""#00BFFF"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -1614,11 +1558,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#D3D3D3","en-GB":"#D3D3D3","de-DE":"#D3D3D3"}",
+                "value": ""#D3D3D3"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -1727,11 +1671,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#8FBC8F","en-GB":"#8FBC8F","de-DE":"#8FBC8F"}",
+                "value": ""#8FBC8F"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [
@@ -1832,11 +1776,11 @@ describe(`with nalaTwoSeaterSofa preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+                "value": ""#2F4F4F"",
               },
               {
                 "name": "finish-code",
-                "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+                "value": ""#000000"",
               },
             ],
             "images": [

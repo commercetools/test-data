@@ -75,11 +75,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#C0C0C0",
-                "en-GB": "#C0C0C0",
-                "en-US": "#C0C0C0",
-              },
+              "value": "#C0C0C0",
             },
           ],
           "images": [
@@ -229,11 +225,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#FFB6C1",
-                  "en-GB": "#FFB6C1",
-                  "en-US": "#FFB6C1",
-                },
+                "value": "#FFB6C1",
               },
             ],
             "images": [
@@ -351,11 +343,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#D2B48C",
-                  "en-GB": "#D2B48C",
-                  "en-US": "#D2B48C",
-                },
+                "value": "#D2B48C",
               },
             ],
             "images": [
@@ -487,7 +475,7 @@ describe(`with geometricPillowCase preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
+              "value": ""#C0C0C0"",
             },
           ],
           "images": [
@@ -628,7 +616,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#FFB6C1","en-GB":"#FFB6C1","de-DE":"#FFB6C1"}",
+                "value": ""#FFB6C1"",
               },
             ],
             "images": [
@@ -725,7 +713,7 @@ describe(`with geometricPillowCase preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+                "value": ""#D2B48C"",
               },
             ],
             "images": [

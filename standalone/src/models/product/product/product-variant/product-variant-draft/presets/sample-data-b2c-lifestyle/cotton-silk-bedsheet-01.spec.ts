@@ -56,11 +56,7 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFFFFF",
-              "en-GB": "#FFFFFF",
-              "en-US": "#FFFFFF",
-            },
+            "value": "#FFFFFF",
           },
         ],
         "images": [
@@ -158,7 +154,7 @@ describe(`with cottonSilkBedsheet01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFFFFF","en-GB":"#FFFFFF","de-DE":"#FFFFFF"}",
+            "value": ""#FFFFFF"",
           },
         ],
         "images": [

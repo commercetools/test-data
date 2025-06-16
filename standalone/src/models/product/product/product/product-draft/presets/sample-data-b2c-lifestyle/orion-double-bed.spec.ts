@@ -82,19 +82,11 @@ describe(`with orionDoubleBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#BCB88A",
-                "en-GB": "#BCB88A",
-                "en-US": "#BCB88A",
-              },
+              "value": "#BCB88A",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#C0C0C0",
-                "en-GB": "#C0C0C0",
-                "en-US": "#C0C0C0",
-              },
+              "value": "#C0C0C0",
             },
           ],
           "images": [
@@ -257,11 +249,11 @@ describe(`with orionDoubleBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#BCB88A","en-GB":"#BCB88A","de-DE":"#BCB88A"}",
+              "value": ""#BCB88A"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#C0C0C0","en-GB":"#C0C0C0","de-DE":"#C0C0C0"}",
+              "value": ""#C0C0C0"",
             },
           ],
           "images": [

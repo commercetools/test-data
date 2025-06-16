@@ -43,11 +43,7 @@ describe(`with purpleMinimalistAbstractPainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#800080",
-              "en-GB": "#800080",
-              "en-US": "#800080",
-            },
+            "value": "#800080",
           },
         ],
         "images": [
@@ -157,7 +153,7 @@ describe(`with purpleMinimalistAbstractPainting01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#800080","en-GB":"#800080","de-DE":"#800080"}",
+            "value": ""#800080"",
           },
         ],
         "images": [

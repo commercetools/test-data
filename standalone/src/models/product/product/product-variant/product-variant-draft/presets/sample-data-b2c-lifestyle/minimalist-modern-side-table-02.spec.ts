@@ -64,19 +64,11 @@ describe(`with minimalistModernSideTable02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#DAA520",
-              "en-GB": "#DAA520",
-              "en-US": "#DAA520",
-            },
+            "value": "#DAA520",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#8b4513",
-              "en-GB": "#8b4513",
-              "en-US": "#8b4513",
-            },
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -174,11 +166,11 @@ describe(`with minimalistModernSideTable02 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#DAA520","en-GB":"#DAA520","de-DE":"#DAA520"}",
+            "value": ""#DAA520"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

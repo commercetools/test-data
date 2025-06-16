@@ -40,11 +40,7 @@ describe(`with idunPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#A0522D",
-              "en-GB": "#A0522D",
-              "en-US": "#A0522D",
-            },
+            "value": "#A0522D",
           },
         ],
         "images": [
@@ -153,7 +149,7 @@ describe(`with idunPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#A0522D","en-GB":"#A0522D","de-DE":"#A0522D"}",
+            "value": ""#A0522D"",
           },
         ],
         "images": [

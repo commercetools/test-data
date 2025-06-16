@@ -55,19 +55,11 @@ describe(`with sallyArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#FFC0CB",
-              "en-GB": "#FFC0CB",
-              "en-US": "#FFC0CB",
-            },
+            "value": "#FFC0CB",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#F5F5DC",
-              "en-GB": "#F5F5DC",
-              "en-US": "#F5F5DC",
-            },
+            "value": "#F5F5DC",
           },
         ],
         "images": [
@@ -165,11 +157,11 @@ describe(`with sallyArmchair01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#FFC0CB","en-GB":"#FFC0CB","de-DE":"#FFC0CB"}",
+            "value": ""#FFC0CB"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+            "value": ""#F5F5DC"",
           },
         ],
         "images": [

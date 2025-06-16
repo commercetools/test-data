@@ -90,19 +90,11 @@ describe(`with rusticCountryQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#D2B48C",
-                "en-GB": "#D2B48C",
-                "en-US": "#D2B48C",
-              },
+              "value": "#D2B48C",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#8b4513",
-                "en-GB": "#8b4513",
-                "en-US": "#8b4513",
-              },
+              "value": "#8b4513",
             },
           ],
           "images": [
@@ -269,11 +261,11 @@ describe(`with rusticCountryQueenBed preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#D2B48C","en-GB":"#D2B48C","de-DE":"#D2B48C"}",
+              "value": ""#D2B48C"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+              "value": ""#8b4513"",
             },
           ],
           "images": [

@@ -98,19 +98,11 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#3CB371",
-                "en-GB": "#3CB371",
-                "en-US": "#3CB371",
-              },
+              "value": "#3CB371",
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#8b4513",
-                "en-GB": "#8b4513",
-                "en-US": "#8b4513",
-              },
+              "value": "#8b4513",
             },
           ],
           "images": [
@@ -301,11 +293,11 @@ describe(`with traditionalThreeSeaterSofa preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#3CB371","en-GB":"#3CB371","de-DE":"#3CB371"}",
+              "value": ""#3CB371"",
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+              "value": ""#8b4513"",
             },
           ],
           "images": [

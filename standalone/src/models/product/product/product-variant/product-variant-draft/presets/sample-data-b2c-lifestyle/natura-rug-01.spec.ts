@@ -39,11 +39,7 @@ describe(`with naturaRug01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#F5F5DC",
-              "en-GB": "#F5F5DC",
-              "en-US": "#F5F5DC",
-            },
+            "value": "#F5F5DC",
           },
         ],
         "images": [
@@ -152,7 +148,7 @@ describe(`with naturaRug01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+            "value": ""#F5F5DC"",
           },
         ],
         "images": [

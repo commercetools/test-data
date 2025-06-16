@@ -60,11 +60,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#DDA0DD",
-                "en-GB": "#DDA0DD",
-                "en-US": "#DDA0DD",
-              },
+              "value": "#DDA0DD",
             },
           ],
           "images": [
@@ -196,11 +192,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": {
-                  "de-DE": "#F5F5DC",
-                  "en-GB": "#F5F5DC",
-                  "en-US": "#F5F5DC",
-                },
+                "value": "#F5F5DC",
               },
             ],
             "images": [
@@ -320,7 +312,7 @@ describe(`with mayaPillowCover preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#DDA0DD","en-GB":"#DDA0DD","de-DE":"#DDA0DD"}",
+              "value": ""#DDA0DD"",
             },
           ],
           "images": [
@@ -453,7 +445,7 @@ describe(`with mayaPillowCover preset`, () => {
               },
               {
                 "name": "color-code",
-                "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+                "value": ""#F5F5DC"",
               },
             ],
             "images": [

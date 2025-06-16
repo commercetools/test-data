@@ -65,19 +65,11 @@ describe(`with nalaTwoSeaterSofa07 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#2F4F4F",
-              "en-GB": "#2F4F4F",
-              "en-US": "#2F4F4F",
-            },
+            "value": "#2F4F4F",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#000000",
-              "en-GB": "#000000",
-              "en-US": "#000000",
-            },
+            "value": "#000000",
           },
         ],
         "images": [
@@ -179,11 +171,11 @@ describe(`with nalaTwoSeaterSofa07 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#2F4F4F","en-GB":"#2F4F4F","de-DE":"#2F4F4F"}",
+            "value": ""#2F4F4F"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#000000","en-GB":"#000000","de-DE":"#000000"}",
+            "value": ""#000000"",
           },
         ],
         "images": [

@@ -73,11 +73,7 @@ describe(`with modernBookcase preset`, () => {
             },
             {
               "name": "finish-code",
-              "value": {
-                "de-DE": "#8b4513",
-                "en-GB": "#8b4513",
-                "en-US": "#8b4513",
-              },
+              "value": "#8b4513",
             },
           ],
           "images": [
@@ -244,7 +240,7 @@ describe(`with modernBookcase preset`, () => {
             },
             {
               "name": "finish-code",
-              "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+              "value": ""#8b4513"",
             },
           ],
           "images": [

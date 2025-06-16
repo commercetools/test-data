@@ -64,19 +64,11 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#F5F5DC",
-              "en-GB": "#F5F5DC",
-              "en-US": "#F5F5DC",
-            },
+            "value": "#F5F5DC",
           },
           {
             "name": "finish-code",
-            "value": {
-              "de-DE": "#8b4513",
-              "en-GB": "#8b4513",
-              "en-US": "#8b4513",
-            },
+            "value": "#8b4513",
           },
         ],
         "images": [
@@ -190,11 +182,11 @@ describe(`with traditionalLSeaterSofa01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#F5F5DC","en-GB":"#F5F5DC","de-DE":"#F5F5DC"}",
+            "value": ""#F5F5DC"",
           },
           {
             "name": "finish-code",
-            "value": "{"en-US":"#8b4513","en-GB":"#8b4513","de-DE":"#8b4513"}",
+            "value": ""#8b4513"",
           },
         ],
         "images": [

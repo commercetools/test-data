@@ -43,11 +43,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": {
-              "de-DE": "#fff0f5",
-              "en-GB": "#fff0f5",
-              "en-US": "#fff0f5",
-            },
+            "value": "#fff0f5",
           },
         ],
         "images": [
@@ -137,7 +133,7 @@ describe(`with patternedPillowCover01 preset`, () => {
           },
           {
             "name": "color-code",
-            "value": "{"en-US":"#fff0f5","en-GB":"#fff0f5","de-DE":"#fff0f5"}",
+            "value": ""#fff0f5"",
           },
         ],
         "images": [

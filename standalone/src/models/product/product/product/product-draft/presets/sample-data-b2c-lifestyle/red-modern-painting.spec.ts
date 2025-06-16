@@ -64,11 +64,7 @@ describe(`with redModernPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": {
-                "de-DE": "#ff0000",
-                "en-GB": "#ff0000",
-                "en-US": "#ff0000",
-              },
+              "value": "#ff0000",
             },
           ],
           "images": [
@@ -223,7 +219,7 @@ describe(`with redModernPainting preset`, () => {
             },
             {
               "name": "color-code",
-              "value": "{"en-US":"#ff0000","en-GB":"#ff0000","de-DE":"#ff0000"}",
+              "value": ""#ff0000"",
             },
           ],
           "images": [
