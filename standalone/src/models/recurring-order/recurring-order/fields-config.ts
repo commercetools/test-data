@@ -76,6 +76,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurringOrderGraphql> = {
           .buildGraphql()
       : model.originOrderRef;
     return {
+      ...model,
       cartRef,
       customerRef,
       businessUnitRef,
