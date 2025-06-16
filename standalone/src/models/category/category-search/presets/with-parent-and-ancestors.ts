@@ -1,10 +1,11 @@
-import { TCategorySearchBuilder } from '../../category/types';
-import CategorySearch from '../builder';
+import { TBuilder } from '@/core';
+import { TCategorySearchGraphql } from '../../category/types';
+import { CategorySearchGraphql } from '../index';
 
-const withParentAndAncestors = (): TCategorySearchBuilder => {
-  return CategorySearch()
-    .parent(CategorySearch())
-    .ancestors([CategorySearch()]);
+const withParentAndAncestors = (): TBuilder<TCategorySearchGraphql> => {
+  return CategorySearchGraphql.random()
+    .parent(CategorySearchGraphql.random())
+    .ancestors([CategorySearchGraphql.random()]);
 };
 
 export default withParentAndAncestors;

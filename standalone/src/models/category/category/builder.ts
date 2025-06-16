@@ -1,9 +1,9 @@
 import { Builder } from '@/core';
 import generator from './generator';
 import transformers from './transformers';
-import type { TCreateCategoryBuilder, TCategory } from './types';
+import type { TCreateCategoryTypeBuilder, TCategory } from './types';
 
-const Model: TCreateCategoryBuilder = () =>
+const Model: TCreateCategoryTypeBuilder<TCategory> = () =>
   Builder<TCategory>({
     generator,
     transformers,
