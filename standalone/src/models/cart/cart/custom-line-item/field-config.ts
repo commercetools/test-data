@@ -57,6 +57,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomLineItemGraphql> = {
       : model.taxCategory;
 
     return {
+      ...model,
       name,
       taxCategoryRef,
     };

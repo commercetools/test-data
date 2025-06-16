@@ -1,23 +1,43 @@
-import { KeyReferenceDraft } from '../../../../../commons';
+import { TBuilder } from '@/core';
+import { KeyReferenceDraft } from '@/models/commons';
+import { ProductSelectionDraftRest } from '@/models/product/product-selection';
+import type {
+  TProductSelectionSettingDraftGraphql,
+  TProductSelectionSettingDraftRest,
+} from '../../../types';
 import {
-  ProductSelectionDraft,
-  type TProductSelectionDraft,
-} from '../../../../../product/product-selection';
-import type { TProductSelectionSettingDraftBuilder } from '../../../types';
-import ProductSelectionSettingDraft from '../../builder';
+  RestModelBuilder,
+  GraphqlModelBuilder,
+  CompatModelBuilder,
+} from '../../builders';
 
-const defaultProductSelection = ProductSelectionDraft.presets.sampleDataB2B
-  .defaultProductSelection()
-  .build<TProductSelectionDraft>();
+const defaultProductSelectionKey =
+  ProductSelectionDraftRest.presets.sampleDataB2B
+    .defaultProductSelection()
+    .build().key;
 
-const defaultProductSelectionSetting =
-  (): TProductSelectionSettingDraftBuilder =>
-    ProductSelectionSettingDraft()
-      .productSelection(
-        KeyReferenceDraft.presets
-          .productSelection()
-          .key(defaultProductSelection.key!)
-      )
-      .active(true);
+export const populatePreset = <
+  TModel extends
+    | TProductSelectionSettingDraftRest
+    | TProductSelectionSettingDraftGraphql,
+>(
+  builder: TBuilder<TModel>
+) =>
+  builder
+    .productSelection(
+      KeyReferenceDraft.presets
+        .productSelection()
+        .key(defaultProductSelectionKey!)
+    )
+    .active(true);
 
-export default defaultProductSelectionSetting;
+export const restPreset = (): TBuilder<TProductSelectionSettingDraftRest> =>
+  populatePreset(RestModelBuilder());
+
+export const graphqlPreset =
+  (): TBuilder<TProductSelectionSettingDraftGraphql> =>
+    populatePreset(GraphqlModelBuilder());
+
+export const compatPreset = (): TBuilder<
+  TProductSelectionSettingDraftRest | TProductSelectionSettingDraftGraphql
+> => populatePreset(CompatModelBuilder());

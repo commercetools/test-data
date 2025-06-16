@@ -51,6 +51,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductSelectionGraphql> =
         : undefined;
 
       return {
+        ...model,
         name,
       };
     },

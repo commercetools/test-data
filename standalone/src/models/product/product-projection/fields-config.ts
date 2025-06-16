@@ -1,5 +1,5 @@
 import { type TModelFieldsConfig, fake, sequence } from '@/core';
-import { LocalizedString, Reference } from '@/models/commons';
+import { LocalizedString, Reference, ReferenceGraphql } from '@/models/commons';
 import { ProductVariant } from '@/models/product/product';
 import { ProductType } from '@/models/product-type';
 import { createRelatedDates } from '@/utils';
@@ -93,25 +93,29 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductProjectionGraphql> 
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.nameAllLocales)
         : null;
       const productTypeRef = model.productType
-        ? Reference.presets
+        ? ReferenceGraphql.presets
             .productTypeReference()
             .id(model.productType.id)
             .buildGraphql()
-        : undefined;
+        : ReferenceGraphql.presets.productTypeReference().buildGraphql();
       const slug = model.slugAllLocales
         ? LocalizedString.resolveGraphqlDefaultLocaleValue(model.slugAllLocales)
         : null;
       const stateRef = model.state
-        ? Reference.presets.stateReference().id(model.state.id).buildGraphql()
+        ? ReferenceGraphql.presets
+            .stateReference()
+            .id(model.state.id)
+            .buildGraphql()
         : null;
       const taxCategoryRef = model.taxCategory
-        ? Reference.presets
+        ? ReferenceGraphql.presets
             .taxCategoryReference()
             .id(model.taxCategory.id)
             .buildGraphql()
         : null;
 
       return {
+        ...model,
         categoriesRef,
         description,
         metaDescription,

@@ -1,22 +1,29 @@
-import type { Store, StoreDraft } from '@commercetools/platform-sdk';
-import type { TBuilder } from '@/core';
-import {
-  TLocalizedStringDraftGraphql,
-  TLocalizedStringGraphql,
-} from '@/models/commons';
+import { Store, StoreDraft } from '@commercetools/platform-sdk';
+import { TBuilder } from '@/core';
+import { TCtpStore, TCtpCreateStore } from '@/graphql-types';
 
-//StoreDraft
-export type TStoreDraft = StoreDraft;
-export type TStoreDraftBuilder = TBuilder<TStoreDraft>;
-export type TCreateStoreDraftBuilder = () => TStoreDraftBuilder;
-export type TStoreDraftGraphql = Omit<TStoreDraft, 'name'> & {
-  name: TLocalizedStringDraftGraphql | null;
-};
-//Store
-export type TStore = Store;
-export type TStoreBuilder = TBuilder<TStore>;
-export type TCreateStoreBuilder = () => TStoreBuilder;
-export type TStoreGraphql = TStore & {
-  __typename: 'Store';
-  nameAllLocales?: TLocalizedStringGraphql | null;
-};
+// REST types
+export type TStoreRest = Store;
+export type TStoreDraftRest = StoreDraft;
+
+// GraphQL types
+export type TStoreGraphql = TCtpStore;
+export type TStoreDraftGraphql = TCtpCreateStore;
+
+/**
+ * @deprecated Use `TStoreRest` or `TStoreGraphql` instead
+ */
+export type TStore = TStoreRest;
+
+/**
+ * @deprecated Use `TStoreDraftRest` or `TStoreDraftGraphql` instead
+ */
+export type TStoreDraft = TStoreDraftRest;
+
+export type TCreateStoreBuilder<
+  TStoreModel extends
+    | TStoreRest
+    | TStoreGraphql
+    | TStoreDraftRest
+    | TStoreDraftGraphql,
+> = () => TBuilder<TStoreModel>;

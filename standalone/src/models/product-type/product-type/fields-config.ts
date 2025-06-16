@@ -53,6 +53,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTypeGraphql> = {
         // @ts-expect-error - "attributes" exists in the REST model, which we use in the compatibility builder.
         model.attributes as unknown as TAttributeDefinitionGraphql[];
       return {
+        ...model,
         attributeDefinitions: {
           results: attributeDefinitions,
           name: 'attributeDefinitions',
