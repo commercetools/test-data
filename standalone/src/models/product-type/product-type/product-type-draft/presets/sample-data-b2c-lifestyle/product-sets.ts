@@ -14,6 +14,7 @@ import {
   AttributeDefinitionDraftGraphql,
   AttributeSetTypeDraftGraphql,
   AttributeLocalizableTextTypeDraftGraphql,
+  AttributeTextTypeDraftGraphql,
 } from '../../../../index';
 import {
   TProductTypeDraft,
@@ -164,7 +165,7 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('color-code')
-        .type(AttributeLocalizableTextTypeDraftRest.random())
+        .type(AttributeTextTypeDraftGraphql.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
@@ -193,7 +194,7 @@ export const restPreset = (): TBuilder<TProductTypeDraftRest> =>
       AttributeDefinitionDraftRest.presets
         .empty()
         .name('finish-code')
-        .type(AttributeLocalizableTextTypeDraftRest.random())
+        .type(AttributeTextTypeDraftGraphql.random())
         .label(
           LocalizedStringDraft.presets
             .empty()
