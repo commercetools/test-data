@@ -62,11 +62,7 @@ const minimalistCedarNightstand01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Gainsboro',
         'en-US': 'Gainsboro',
       }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#dcdcdc',
-        'en-GB': '#dcdcdc',
-        'de-DE': '#dcdcdc',
-      }),
+      AttributeDraft.random().name('finish-code').value('#dcdcdc'),
     ]);
 
 export default minimalistCedarNightstand01;

@@ -64,11 +64,7 @@ const geometricPillowCase03 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Bräunen',
         'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
     ]);
 
 export default geometricPillowCase03;

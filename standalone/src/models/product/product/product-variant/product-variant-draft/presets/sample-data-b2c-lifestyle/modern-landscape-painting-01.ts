@@ -56,11 +56,7 @@ const modernLandscapePainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Himmel blau',
         'en-US': 'Sky Blue',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#87CEEB',
-        'en-GB': '#87CEEB',
-        'de-DE': '#87CEEB',
-      }),
+      AttributeDraft.random().name('color-code').value('#87CEEB'),
     ]);
 
 export default modernLandscapePainting01;

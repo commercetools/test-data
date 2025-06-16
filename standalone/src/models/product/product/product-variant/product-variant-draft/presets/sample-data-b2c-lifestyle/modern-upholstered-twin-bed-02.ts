@@ -84,16 +84,8 @@ const modernUpholsteredTwinBed02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Helles Schiefer grau',
         'en-US': 'Lightslate Gray',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#2E8B57',
-        'en-GB': '#2E8B57',
-        'de-DE': '#2E8B57',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#778899',
-        'en-GB': '#778899',
-        'de-DE': '#778899',
-      }),
+      AttributeDraft.random().name('color-code').value('#2E8B57'),
+      AttributeDraft.random().name('finish-code').value('#778899'),
     ]);
 
 export default modernUpholsteredTwinBed02;

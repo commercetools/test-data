@@ -90,16 +90,8 @@ const goldRimmedChampagneGlasses01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Gold',
         'en-US': 'Gold',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': 'transparent',
-        'en-GB': 'transparent',
-        'de-DE': 'transparent',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#FFD700',
-        'en-GB': '#FFD700',
-        'de-DE': '#FFD700',
-      }),
+      AttributeDraft.random().name('color-code').value('transparent'),
+      AttributeDraft.random().name('finish-code').value('#FFD700'),
     ]);
 
 export default goldRimmedChampagneGlasses01;

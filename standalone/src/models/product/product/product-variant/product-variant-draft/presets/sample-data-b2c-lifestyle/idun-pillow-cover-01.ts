@@ -69,11 +69,7 @@ const idunPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Siena',
         'en-US': 'Siena',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#A0522D',
-        'en-GB': '#A0522D',
-        'de-DE': '#A0522D',
-      }),
+      AttributeDraft.random().name('color-code').value('#A0522D'),
     ]);
 
 export default idunPillowCover01;

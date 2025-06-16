@@ -55,11 +55,7 @@ const modernBookcase01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Sattel braun',
         'en-US': 'Saddle Brown',
       }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#8b4513',
-        'en-GB': '#8b4513',
-        'de-DE': '#8b4513',
-      }),
+      AttributeDraft.random().name('finish-code').value('#8b4513'),
     ]);
 
 export default modernBookcase01;

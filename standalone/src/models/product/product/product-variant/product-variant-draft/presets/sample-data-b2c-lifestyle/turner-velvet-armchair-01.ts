@@ -61,11 +61,7 @@ const turnerVelvetArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Königs blau',
         'en-US': 'Royal Blue',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#4169E1',
-        'en-GB': '#4169E1',
-        'de-DE': '#4169E1',
-      }),
+      AttributeDraft.random().name('color-code').value('#4169E1'),
     ]);
 
 export default turnerVelvetArmchair01;

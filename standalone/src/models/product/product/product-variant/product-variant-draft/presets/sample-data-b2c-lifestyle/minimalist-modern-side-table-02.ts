@@ -69,16 +69,8 @@ const minimalistModernSideTable02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Saddle Brown',
         'en-US': 'Saddle Brown',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#DAA520',
-        'en-GB': '#DAA520',
-        'de-DE': '#DAA520',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#8b4513',
-        'en-GB': '#8b4513',
-        'de-DE': '#8b4513',
-      }),
+      AttributeDraft.random().name('color-code').value('#DAA520'),
+      AttributeDraft.random().name('finish-code').value('#8b4513'),
     ]);
 
 export default minimalistModernSideTable02;

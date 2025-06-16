@@ -81,16 +81,8 @@ const entrywayCloset01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Burlywood',
         'en-US': 'Burlywood',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#deb887',
-        'en-GB': '#deb887',
-        'de-DE': '#deb887',
-      }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
+      AttributeDraft.random().name('finish-code').value('#deb887'),
     ]);
 
 export default entrywayCloset01;

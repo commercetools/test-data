@@ -69,16 +69,8 @@ const charlieArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Bräunen',
         'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#CD853F',
-        'en-GB': '#CD853F',
-        'de-DE': '#CD853F',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
+      AttributeDraft.random().name('color-code').value('#CD853F'),
+      AttributeDraft.random().name('finish-code').value('#D2B48C'),
     ]);
 
 export default charlieArmchair01;

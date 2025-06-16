@@ -55,11 +55,7 @@ const pinkAbstractPainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Rosa',
         'en-US': 'Pink',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFC0CB',
-        'en-GB': '#FFC0CB',
-        'de-DE': '#FFC0CB',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFC0CB'),
     ]);
 
 export default pinkAbstractPainting01;

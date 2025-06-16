@@ -56,11 +56,7 @@ const mayaPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Pflaume',
         'en-US': 'Plum',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#DDA0DD',
-        'en-GB': '#DDA0DD',
-        'de-DE': '#DDA0DD',
-      }),
+      AttributeDraft.random().name('color-code').value('#DDA0DD'),
     ]);
 
 export default mayaPillowCover01;

@@ -61,11 +61,7 @@ const cloudQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Hell blau',
         'en-US': 'Light Blue',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#ADD8E6',
-        'en-GB': '#ADD8E6',
-        'de-DE': '#ADD8E6',
-      }),
+      AttributeDraft.random().name('color-code').value('#ADD8E6'),
     ]);
 
 export default cloudQueenBed01;

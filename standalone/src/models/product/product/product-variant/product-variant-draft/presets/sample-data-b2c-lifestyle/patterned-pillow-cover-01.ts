@@ -56,11 +56,7 @@ const patternedPillowCover01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Lavendel',
         'en-US': 'Lavender Blush',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#fff0f5',
-        'en-GB': '#fff0f5',
-        'de-DE': '#fff0f5',
-      }),
+      AttributeDraft.random().name('color-code').value('#fff0f5'),
     ]);
 
 export default patternedPillowCover01;

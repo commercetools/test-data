@@ -69,16 +69,8 @@ const leahArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Bräunen',
         'en-US': 'Tan',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#808080',
-        'en-GB': '#808080',
-        'de-DE': '#808080',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
+      AttributeDraft.random().name('color-code').value('#808080'),
+      AttributeDraft.random().name('finish-code').value('#D2B48C'),
     ]);
 
 export default leahArmchair01;

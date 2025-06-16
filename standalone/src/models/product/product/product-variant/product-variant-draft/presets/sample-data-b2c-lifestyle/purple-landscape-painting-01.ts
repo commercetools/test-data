@@ -58,11 +58,7 @@ const purpleLandscapePainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Violett',
         'en-US': 'Purple',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#800080',
-        'en-GB': '#800080',
-        'de-DE': '#800080',
-      }),
+      AttributeDraft.random().name('color-code').value('#800080'),
     ]);
 
 export default purpleLandscapePainting01;

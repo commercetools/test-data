@@ -55,11 +55,7 @@ const sandTeaCup01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Sand',
         'en-US': 'Sand',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#C2B280',
-        'en-GB': '#C2B280',
-        'de-DE': '#C2B280',
-      }),
+      AttributeDraft.random().name('color-code').value('#C2B280'),
     ]);
 
 export default sandTeaCup01;

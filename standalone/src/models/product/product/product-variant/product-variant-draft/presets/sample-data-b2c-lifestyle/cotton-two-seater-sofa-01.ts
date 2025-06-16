@@ -62,11 +62,7 @@ const cottonTwoSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Weiß',
         'en-US': 'White',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFFFFF',
-        'en-GB': '#FFFFFF',
-        'de-DE': '#FFFFFF',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFFFFF'),
     ]);
 
 export default cottonTwoSeaterSofa01;

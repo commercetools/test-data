@@ -62,11 +62,7 @@ const largeCeramicPlate02 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Hell grau',
         'en-US': 'Light Gray',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#D3D3D3',
-        'en-GB': '#D3D3D3',
-        'de-DE': '#D3D3D3',
-      }),
+      AttributeDraft.random().name('color-code').value('#D3D3D3'),
     ]);
 
 export default largeCeramicPlate02;

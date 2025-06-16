@@ -55,11 +55,7 @@ const iceBucket01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Silber',
         'en-US': 'Silver',
       }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#C0C0C0',
-        'en-GB': '#C0C0C0',
-        'de-DE': '#C0C0C0',
-      }),
+      AttributeDraft.random().name('finish-code').value('#C0C0C0'),
     ]);
 
 export default iceBucket01;

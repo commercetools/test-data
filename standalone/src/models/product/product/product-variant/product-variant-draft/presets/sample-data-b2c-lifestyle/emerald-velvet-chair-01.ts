@@ -69,16 +69,8 @@ const emeraldVelvetChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Burlywood',
         'en-US': 'Burlywood',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#008000',
-        'en-GB': '#008000',
-        'de-DE': '#008000',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#deb887',
-        'en-GB': '#deb887',
-        'de-DE': '#deb887',
-      }),
+      AttributeDraft.random().name('color-code').value('#008000'),
+      AttributeDraft.random().name('finish-code').value('#deb887'),
     ]);
 
 export default emeraldVelvetChair01;

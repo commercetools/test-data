@@ -81,16 +81,8 @@ const sweetPeaCandle01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Glas',
         'en-US': 'Glass',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFC0CB',
-        'en-GB': '#FFC0CB',
-        'de-DE': '#FFC0CB',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': 'transparent',
-        'en-GB': 'transparent',
-        'de-DE': 'transparent',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFC0CB'),
+      AttributeDraft.random().name('finish-code').value('transparent'),
     ]);
 
 export default sweetPeaCandle01;

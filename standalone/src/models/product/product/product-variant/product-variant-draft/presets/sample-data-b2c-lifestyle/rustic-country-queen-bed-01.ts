@@ -72,16 +72,8 @@ const rusticCountryQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Sattel braun',
         'en-US': 'Saddle Brown',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#8b4513',
-        'en-GB': '#8b4513',
-        'de-DE': '#8b4513',
-      }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
+      AttributeDraft.random().name('finish-code').value('#8b4513'),
     ]);
 
 export default rusticCountryQueenBed01;

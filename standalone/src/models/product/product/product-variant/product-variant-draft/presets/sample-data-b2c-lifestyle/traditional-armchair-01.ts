@@ -67,11 +67,7 @@ const traditionalArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Mais seide',
         'en-US': 'Corn Silk',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFF8DC',
-        'en-GB': '#FFF8DC',
-        'de-DE': '#FFF8DC',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFF8DC'),
     ]);
 
 export default traditionalArmchair01;

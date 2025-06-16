@@ -88,16 +88,8 @@ const vanillaCandle01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Glas',
         'en-US': 'Glass',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#F5F5DC',
-        'en-GB': '#F5F5DC',
-        'de-DE': '#F5F5DC',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': 'transparent',
-        'en-GB': 'transparent',
-        'de-DE': 'transparent',
-      }),
+      AttributeDraft.random().name('color-code').value('#F5F5DC'),
+      AttributeDraft.random().name('finish-code').value('transparent'),
     ]);
 
 export default vanillaCandle01;

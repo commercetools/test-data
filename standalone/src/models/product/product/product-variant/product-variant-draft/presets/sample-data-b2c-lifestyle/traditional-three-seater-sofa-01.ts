@@ -81,16 +81,8 @@ const traditionalThreeSeaterSofa01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Sattel braun',
         'en-US': 'Saddle Brown',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#3CB371',
-        'en-GB': '#3CB371',
-        'de-DE': '#3CB371',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#8b4513',
-        'en-GB': '#8b4513',
-        'de-DE': '#8b4513',
-      }),
+      AttributeDraft.random().name('color-code').value('#3CB371'),
+      AttributeDraft.random().name('finish-code').value('#8b4513'),
     ]);
 
 export default traditionalThreeSeaterSofa01;

@@ -56,11 +56,7 @@ const squareBambooCoaster01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Weizen',
         'en-US': 'Wheat',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#f5deb3',
-        'en-GB': '#f5deb3',
-        'de-DE': '#f5deb3',
-      }),
+      AttributeDraft.random().name('color-code').value('#f5deb3'),
     ]);
 
 export default squareBambooCoaster01;

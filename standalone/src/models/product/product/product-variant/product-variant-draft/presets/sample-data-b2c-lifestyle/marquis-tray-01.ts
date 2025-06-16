@@ -55,11 +55,7 @@ const marquisTray01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Goldene Rute',
         'en-US': 'Golden Rod',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#DAA520',
-        'en-GB': '#DAA520',
-        'de-DE': '#DAA520',
-      }),
+      AttributeDraft.random().name('color-code').value('#DAA520'),
     ]);
 
 export default marquisTray01;

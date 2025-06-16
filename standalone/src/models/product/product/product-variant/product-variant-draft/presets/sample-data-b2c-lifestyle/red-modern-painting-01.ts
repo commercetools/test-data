@@ -55,11 +55,7 @@ const redModernPainting01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Rot',
         'en-US': 'Red',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#ff0000',
-        'en-GB': '#ff0000',
-        'de-DE': '#ff0000',
-      }),
+      AttributeDraft.random().name('color-code').value('#ff0000'),
     ]);
 
 export default redModernPainting01;

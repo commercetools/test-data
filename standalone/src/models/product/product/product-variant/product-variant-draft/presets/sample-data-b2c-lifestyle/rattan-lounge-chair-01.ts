@@ -75,16 +75,8 @@ const rattanLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Beige',
         'en-US': 'Beige',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#faebd7',
-        'en-GB': '#faebd7',
-        'de-DE': '#faebd7',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#F5F5DC',
-        'en-GB': '#F5F5DC',
-        'de-DE': '#F5F5DC',
-      }),
+      AttributeDraft.random().name('color-code').value('#faebd7'),
+      AttributeDraft.random().name('finish-code').value('#F5F5DC'),
     ]);
 
 export default rattanLoungeChair01;

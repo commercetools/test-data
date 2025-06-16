@@ -61,11 +61,7 @@ const greenServingPlate01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Grün',
         'en-US': 'Green',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#008000',
-        'en-GB': '#008000',
-        'de-DE': '#008000',
-      }),
+      AttributeDraft.random().name('color-code').value('#008000'),
     ]);
 
 export default greenServingPlate01;

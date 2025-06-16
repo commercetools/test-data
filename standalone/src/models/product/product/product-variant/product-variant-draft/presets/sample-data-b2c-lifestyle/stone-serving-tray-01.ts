@@ -55,11 +55,7 @@ const stoneServingTray01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Schiefer grau',
         'en-US': 'Slate Gray',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#2F4F4F',
-        'en-GB': '#2F4F4F',
-        'de-DE': '#2F4F4F',
-      }),
+      AttributeDraft.random().name('color-code').value('#2F4F4F'),
     ]);
 
 export default stoneServingTray01;

@@ -55,11 +55,7 @@ const ecruDoubleBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Gainsboro',
         'en-US': 'Gainsboro',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#dcdcdc',
-        'en-GB': '#dcdcdc',
-        'de-DE': '#dcdcdc',
-      }),
+      AttributeDraft.random().name('color-code').value('#dcdcdc'),
     ]);
 
 export default ecruDoubleBed01;

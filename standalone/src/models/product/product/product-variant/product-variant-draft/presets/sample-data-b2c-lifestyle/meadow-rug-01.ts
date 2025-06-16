@@ -55,11 +55,7 @@ const meadowRug01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Grau',
         'en-US': 'Gray',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#808080',
-        'en-GB': '#808080',
-        'de-DE': '#808080',
-      }),
+      AttributeDraft.random().name('color-code').value('#808080'),
     ]);
 
 export default meadowRug01;

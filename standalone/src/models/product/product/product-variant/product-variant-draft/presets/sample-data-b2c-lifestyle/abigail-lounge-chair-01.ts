@@ -85,16 +85,8 @@ const abigailLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Gold',
         'en-US': 'Gold',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFB6C1',
-        'en-GB': '#FFB6C1',
-        'de-DE': '#FFB6C1',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#FFD700',
-        'en-GB': '#FFD700',
-        'de-DE': '#FFD700',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFB6C1'),
+      AttributeDraft.random().name('finish-code').value('#FFD700'),
     ]);
 
 export default abigailLoungeChair01;

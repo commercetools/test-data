@@ -70,11 +70,7 @@ const modernGlamDresser01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Braun',
         'en-US': 'Brown',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#a52a2a',
-        'en-GB': '#a52a2a',
-        'de-DE': '#a52a2a',
-      }),
+      AttributeDraft.random().name('color-code').value('#a52a2a'),
     ]);
 
 export default modernGlamDresser01;

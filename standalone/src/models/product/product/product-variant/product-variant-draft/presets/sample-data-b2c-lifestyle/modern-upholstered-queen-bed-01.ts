@@ -72,16 +72,8 @@ const modernUpholsteredQueenBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Schwarz',
         'en-US': 'Black',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFFFFF',
-        'en-GB': '#FFFFFF',
-        'de-DE': '#FFFFFF',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#000000',
-        'en-GB': '#000000',
-        'de-DE': '#000000',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFFFFF'),
+      AttributeDraft.random().name('finish-code').value('#000000'),
     ]);
 
 export default modernUpholsteredQueenBed01;

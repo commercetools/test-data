@@ -55,11 +55,7 @@ const cocktailShakerSet01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Gold',
         'en-US': 'Gold',
       }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#FFD700',
-        'en-GB': '#FFD700',
-        'de-DE': '#FFD700',
-      }),
+      AttributeDraft.random().name('finish-code').value('#FFD700'),
     ]);
 
 export default cocktailShakerSet01;

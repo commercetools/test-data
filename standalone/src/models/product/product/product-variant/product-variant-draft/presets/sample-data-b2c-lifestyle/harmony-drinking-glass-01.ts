@@ -68,11 +68,7 @@ const harmonyDrinkingGlass01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Transparent',
         'en-US': 'Transparent',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': 'transparent',
-        'en-GB': 'transparent',
-        'de-DE': 'transparent',
-      }),
+      AttributeDraft.random().name('color-code').value('transparent'),
     ]);
 
 export default harmonyDrinkingGlass01;

@@ -68,11 +68,7 @@ const ivoryLoungeChair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Elfenbein',
         'en-US': 'Ivory',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#FFFFF0',
-        'en-GB': '#FFFFF0',
-        'de-DE': '#FFFFF0',
-      }),
+      AttributeDraft.random().name('color-code').value('#FFFFF0'),
     ]);
 
 export default ivoryLoungeChair01;

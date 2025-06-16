@@ -55,11 +55,7 @@ const rusticOvenCasserole01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Peru',
         'en-US': 'Peru',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#CD853F',
-        'en-GB': '#CD853F',
-        'de-DE': '#CD853F',
-      }),
+      AttributeDraft.random().name('color-code').value('#CD853F'),
     ]);
 
 export default rusticOvenCasserole01;

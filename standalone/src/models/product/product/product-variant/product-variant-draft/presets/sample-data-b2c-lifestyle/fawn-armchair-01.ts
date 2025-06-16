@@ -69,16 +69,8 @@ const fawnArmchair01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Schwarz',
         'en-US': 'Black',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#D2B48C',
-        'en-GB': '#D2B48C',
-        'de-DE': '#D2B48C',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#000000',
-        'en-GB': '#000000',
-        'de-DE': '#000000',
-      }),
+      AttributeDraft.random().name('color-code').value('#D2B48C'),
+      AttributeDraft.random().name('finish-code').value('#000000'),
     ]);
 
 export default fawnArmchair01;

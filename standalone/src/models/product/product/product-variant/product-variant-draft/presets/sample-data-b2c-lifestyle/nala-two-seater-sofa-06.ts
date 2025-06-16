@@ -70,16 +70,8 @@ const nalaTwoSeaterSofa06 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Schwarz',
         'en-US': 'Black',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#8FBC8F',
-        'en-GB': '#8FBC8F',
-        'de-DE': '#8FBC8F',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#000000',
-        'en-GB': '#000000',
-        'de-DE': '#000000',
-      }),
+      AttributeDraft.random().name('color-code').value('#8FBC8F'),
+      AttributeDraft.random().name('finish-code').value('#000000'),
     ]);
 
 export default nalaTwoSeaterSofa06;

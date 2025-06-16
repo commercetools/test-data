@@ -70,16 +70,8 @@ const orionDoubleBed01 = (): TBuilder<TProductVariantDraft> =>
         'de-DE': 'Silber',
         'en-US': 'Silver',
       }),
-      AttributeDraft.random().name('color-code').value({
-        'en-US': '#BCB88A',
-        'en-GB': '#BCB88A',
-        'de-DE': '#BCB88A',
-      }),
-      AttributeDraft.random().name('finish-code').value({
-        'en-US': '#C0C0C0',
-        'en-GB': '#C0C0C0',
-        'de-DE': '#C0C0C0',
-      }),
+      AttributeDraft.random().name('color-code').value('#BCB88A'),
+      AttributeDraft.random().name('finish-code').value('#C0C0C0'),
     ]);
 
 export default orionDoubleBed01;
