@@ -1,3 +1,3 @@
-const presets = {};
-
-export default presets;
+export const graphqlPresets = {};
+export const restPresets = {};
+export const compatPresets = {};

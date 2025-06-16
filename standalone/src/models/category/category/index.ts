@@ -1,6 +1,24 @@
-export * as CategoryDraft from './category-draft';
+import {
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from './builders';
+import * as presets from './presets';
 
-export { default as random } from './builder';
-export { default as presets } from './presets';
-export { default as draftPresets } from './category-draft/presets';
-export * from './types';
+export const CategoryRest = {
+  presets: presets.restPresets,
+  random: RestModelBuilder,
+};
+
+export const CategoryGraphql = {
+  presets: presets.graphqlPresets,
+  random: GraphqlModelBuilder,
+};
+
+/**
+ * @deprecated use CategoryRest or CategoryGraphql instead
+ */
+export const Category = {
+  presets: presets.graphqlPresets,
+  random: CompatModelBuilder,
+};
