@@ -17,13 +17,13 @@ export type TCategoryDraft = CategoryDraft;
 export type TCategory = Category;
 
 // REST types
-
 export type TCategoryDraftRest = CategoryDraft;
 export type TCategoryTypeRest = Category;
 
 // GraphQL types
 export type TCategoryTypeGraphql = TCtpCategory;
 export type TCategoryDraftTypeGraphql = TCtpCategoryDraft;
+// category search only exist in graphql model
 export type TCategorySearchGraphql = TCtpCategorySearch;
 
 // builders types
