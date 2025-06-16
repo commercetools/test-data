@@ -4,7 +4,7 @@ import * as presets from './presets';
 // There's no REST builder for CategorySearch because this entity is only available in GraphQL API.
 
 /**
- * @deprecated use GraphqlModelBuilder instead
+ * @deprecated use CategorySearchGraphql instead
  */
 export const CategorySearch = {
   presets: presets.graphqlPresets,

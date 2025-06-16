@@ -5,4 +5,4 @@ import { TCtpCategorySearch } from '@/graphql-types';
 
 export type TCategorySearchGraphql = TCtpCategorySearch;
 
-export type TCategorySearchBuilder = TBuilder<TCategorySearchGraphql>;
+export type TCategorySearchBuilder = () => TBuilder<TCategorySearchGraphql>;

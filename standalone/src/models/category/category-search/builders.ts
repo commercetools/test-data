@@ -1,13 +1,8 @@
 import { createSpecializedBuilder } from '@/core';
-import type {
-  TCategorySearchGraphql,
-  TCreateCategoryTypeBuilder,
-} from '../category/types';
 import { graphqlFieldsConfig } from './fields-config';
+import { TCategorySearchBuilder } from './types';
 
-export const GraphqlModelBuilder: TCreateCategoryTypeBuilder<
-  TCategorySearchGraphql
-> = () =>
+export const GraphqlModelBuilder: TCategorySearchBuilder = () =>
   createSpecializedBuilder({
     name: 'CategorySearchGraphqlBuilder',
     type: 'graphql',
