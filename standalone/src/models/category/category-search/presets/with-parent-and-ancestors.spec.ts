@@ -1,4 +1,4 @@
-import { TCategorySearchGraphql } from '../../category/types';
+import type { TCategorySearchGraphql } from '../types';
 import withParentAndAncestors from './with-parent-and-ancestors';
 
 it('should set the label only for en locale', () => {

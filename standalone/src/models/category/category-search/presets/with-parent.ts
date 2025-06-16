@@ -1,6 +1,6 @@
-import { TBuilder } from '../../../../core';
-import { TCategorySearchGraphql } from '../../category/types';
+import type { TBuilder } from '@/core';
 import { CategorySearchGraphql } from '../index';
+import type { TCategorySearchGraphql } from '../types';
 
 const withParent = (): TBuilder<TCategorySearchGraphql> => {
   return CategorySearchGraphql.random().parent(CategorySearchGraphql.random());

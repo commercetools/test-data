@@ -19,6 +19,6 @@ export const CategoryDraftGraphql = {
  * @deprecated use CategoryDraftRest or CategoryDraftGraphql instead
  */
 export const CategoryDraft = {
-  presets: presets.graphqlPresets,
+  presets: presets.compatPresets,
   random: CompatModelBuilder,
 };
