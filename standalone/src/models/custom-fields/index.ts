@@ -1,16 +1,8 @@
-import { RestModelBuilder, GraphqlModelBuilder } from './builders';
-import * as modelPresets from './presets';
+// Export types
+export * from './custom-fields/types';
+export * from './raw-custom-field/types';
 
-export * from './custom-fields-draft';
+// Export models
+export * from './custom-fields';
+export * from './custom-fields/custom-fields-draft';
 export * from './raw-custom-field';
-export * from './types';
-
-export const CustomFieldsRest = {
-  random: RestModelBuilder,
-  presets: modelPresets.restPresets,
-};
-
-export const CustomFieldsGraphql = {
-  random: GraphqlModelBuilder,
-  presets: modelPresets.graphqlPresets,
-};

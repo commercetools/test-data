@@ -3,7 +3,7 @@ import { ReferenceDraftRest, ReferenceDraftGraphql } from '@/models/commons';
 import type {
   TCustomFieldsDraftRest,
   TCustomFieldsDraftGraphql,
-} from '../types';
+} from '../../types';
 import { RestModelBuilder, GraphqlModelBuilder } from './builders';
 
 const populateRestModel = (model: TBuilder<TCustomFieldsDraftRest>) =>

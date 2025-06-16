@@ -3,7 +3,7 @@ import type {
   TCreateCustomFieldsBuilder,
   TCustomFieldsDraftGraphql,
   TCustomFieldsDraftRest,
-} from '../types';
+} from '../../types';
 import { restFieldsConfig, graphqlFieldsConfig } from './fields-config';
 
 export const RestModelBuilder: TCreateCustomFieldsBuilder<

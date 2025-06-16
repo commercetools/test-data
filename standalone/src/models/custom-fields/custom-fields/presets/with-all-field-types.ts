@@ -1,9 +1,6 @@
 import { TBuilder } from '@/core';
-import {
-  CustomFieldsRest,
-  CustomFieldsGraphql,
-  RawCustomFieldGraphql,
-} from '../index';
+import { RawCustomFieldGraphql } from '../../raw-custom-field';
+import { CustomFieldsRest, CustomFieldsGraphql } from '../index';
 import { TCustomFieldsGraphql, TCustomFieldsRest } from '../types';
 
 export const restPreset = (): TBuilder<TCustomFieldsRest> =>
