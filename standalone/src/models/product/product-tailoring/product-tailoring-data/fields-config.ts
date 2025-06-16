@@ -63,7 +63,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTailoringDataGraphq
             model.metaKeywordsAllLocales
           )
         : null;
+
       return {
+        ...model,
         name,
         description,
         slug,

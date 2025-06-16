@@ -35,7 +35,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TRecurrencePolicyGraphql> =
             model.descriptionAllLocales
           )
         : model.descriptionAllLocales;
+
       return {
+        ...model,
         name,
         description,
       };

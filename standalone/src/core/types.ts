@@ -128,10 +128,7 @@ export type TRestTransformer<
 
 export type TModelFieldsConfig<TModel> = {
   fields: Record<keyof TModel, Field>;
-  postBuild?: (
-    model: TModel,
-    context?: { isCompatMode?: boolean }
-  ) => Partial<TModel>;
+  postBuild?: (model: TModel, context?: { isCompatMode?: boolean }) => TModel;
 };
 
 export type TBuilderOptions<Model> = {
@@ -142,18 +139,15 @@ export type TBuilderOptions<Model> = {
   };
   type?: 'rest' | 'graphql';
   name?: string;
-  postBuild?: (
-    fields: Model,
-    context?: { isCompatMode?: boolean }
-  ) => Partial<Model>;
+  postBuild?: (fields: Model, context?: { isCompatMode?: boolean }) => Model;
   compatConfig?: {
     generators: {
       rest: TGeneratorResult<Model>;
       graphql: TGeneratorResult<Model>;
     };
     postBuilders?: {
-      rest?: (fields: Model) => Partial<Model>;
-      graphql?: (fields: Model) => Partial<Model>;
+      rest?: (fields: Model) => Model;
+      graphql?: (fields: Model) => Model;
     };
   };
 };

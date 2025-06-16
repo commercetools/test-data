@@ -48,6 +48,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
       const descriptionAllLocales =
         model.description as unknown as TLocalizedStringGraphql;
       return {
+        ...model,
         name: LocalizedString.resolveGraphqlDefaultLocaleValue(nameAllLocales),
         nameAllLocales,
         description: LocalizedString.resolveGraphqlDefaultLocaleValue(
@@ -65,7 +66,9 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TChannelGraphql> = {
           model.descriptionAllLocales
         )
       : undefined;
+
     return {
+      ...model,
       name,
       description,
     };

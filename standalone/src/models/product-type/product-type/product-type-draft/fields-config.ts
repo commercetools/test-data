@@ -28,25 +28,18 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TProductTypeDraftGraphql> =
         AttributeDefinitionDraftGraphql.random(),
       ]),
     },
-    // postBuild: (model, context) => {
-    //   // This is because of the compatibility mode, where the we have different
-    //   // properties for the attributeDefinitions between the REST and GraphQL models.
-    //   // @ts-expect-error - "attributes" exists in the REST model, which we use in the compatibility builder.
-    //   if (context?.isCompatMode && model.attributes) {
-    //     const attributeDefinitions =
-    //       // @ts-expect-error - "attributes" exists in the REST model, which we use in the compatibility builder.
-    //       model.attributes as unknown as TAttributeDefinitionGraphql[];
-    //     return {
-    //       attributeDefinitions: {
-    //         results: attributeDefinitions,
-    //         name: 'attributeDefinitions',
-    //         total: attributeDefinitions.length,
-    //         offset: 0,
-    //         __typename: 'AttributeDefinitionResult',
-    //       },
-    //     };
-    //   }
+    postBuild: (model, context) => {
+      // This is because of the compatibility mode, where the we have different
+      // properties for the attributeDefinitions between the REST and GraphQL models.
+      if (context?.isCompatMode && 'attributes' in model) {
+        const { attributes, ...rest } = model;
+        return {
+          ...rest,
+          attributeDefinitions:
+            attributes as TProductTypeDraftGraphql['attributeDefinitions'],
+        };
+      }
 
-    //   return model;
-    // },
+      return model;
+    },
   };

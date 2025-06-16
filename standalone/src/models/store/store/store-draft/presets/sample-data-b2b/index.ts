@@ -24,6 +24,6 @@ export const compatPresets = {
   deFrUk: deFrUk.compatPreset,
   defaultStore: defaultStore.compatPreset,
   spain: spain.compatPreset,
-  usLargeCustomers: usLargeCustomers.restPreset,
+  usLargeCustomers: usLargeCustomers.compatPreset,
   usMediumCustomers: usMediumCustomers.compatPreset,
 };

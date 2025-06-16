@@ -28,9 +28,10 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TDiscountedTotalPricePortio
             .cartDiscountReference()
             .id(model.discount.id)
             .buildGraphql()
-        : undefined;
+        : ReferenceGraphql.presets.cartDiscountReference().buildGraphql();
 
       return {
+        ...model,
         discountRef,
       };
     },

@@ -1,5 +1,18 @@
 # @commercetools/composable-commerce-test-data
 
+## 11.5.0
+
+### Minor Changes
+
+- [#862](https://github.com/commercetools/test-data/pull/862) [`5f22918`](https://github.com/commercetools/test-data/commit/5f22918770c2ff5dd99efd20597fc2ee3b2f6b73) Thanks [@CarlosCortizasCT](https://github.com/CarlosCortizasCT)! - We're changing how the internal `postBuild` callback used in the models definitions work.
+  You can read more about this function in [the docs](https://github.com/commercetools/test-data/blob/main/docs/contributing/test-data-models-overview.md#fields-config).
+
+  This refactor is internal and does not have any impact in the consumers.
+
+### Patch Changes
+
+- [#865](https://github.com/commercetools/test-data/pull/865) [`578e856`](https://github.com/commercetools/test-data/commit/578e8563542dd259faef441baf827b8ede7eb13b) Thanks [@YahiaElTai](https://github.com/YahiaElTai)! - We're fixing a preset in the `StoreDraft` model where we were exporting a REST one instead of the expected compatibility one (`StoreDraft.presets.useLargeCustomers`).
+
 ## 11.4.0
 
 ### Minor Changes
