@@ -1,9 +1,10 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import { TCategoryDraftBuilder } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 
-const kids = (): TCategoryDraftBuilder =>
-  empty()
+const kids = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(LocalizedStringDraft.presets.empty()['en-US']('Kids'))
     .slug(LocalizedStringDraft.presets.empty()['en-US']('kids'))
     .description(

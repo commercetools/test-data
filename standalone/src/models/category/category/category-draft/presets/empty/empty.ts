@@ -1,10 +1,11 @@
 import { TBuilder } from '@/core';
+import { LocalizedString } from '@/models/commons';
 import type { TCategoryDraftGraphql, TCategoryDraftRest } from '../../../types';
 import {
-  CategoryDraft,
-  CategoryDraftGraphql,
-  CategoryDraftRest,
-} from '../../index';
+  CompatModelBuilder,
+  GraphqlModelBuilder,
+  RestModelBuilder,
+} from '../../builders';
 
 const populateModel = (
   model: TBuilder<TCategoryDraftRest | TCategoryDraftGraphql>
@@ -19,11 +20,18 @@ const populateModel = (
     .metaDescription(undefined)
     .metaKeywords(undefined)
     .assets(undefined)
-    .custom(undefined);
+    .custom(undefined)
+    .name(LocalizedString.random())
+    .slug(LocalizedString.random());
 };
 
-export const restPreset = () => populateModel(CategoryDraftRest.random());
+export const restPreset = () => populateModel(RestModelBuilder());
 
-export const graphqlPreset = () => populateModel(CategoryDraftGraphql.random());
+export const graphqlPreset = () => populateModel(GraphqlModelBuilder());
 
-export const compatPreset = () => populateModel(CategoryDraft.random());
+export const compatPreset = <
+  TModel extends
+    | TCategoryDraftRest
+    | TCategoryDraftGraphql = TCategoryDraftRest,
+>(): TBuilder<TModel> =>
+  populateModel(CompatModelBuilder()) as TBuilder<TModel>;

@@ -1,15 +1,16 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import barGlassware from './bar-and-glassware';
 
 const barGlasswareDraft = barGlassware().build<TCategoryDraft>();
 
-const barAccessories = (): TCategoryDraftBuilder =>
-  empty()
+const barAccessories = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

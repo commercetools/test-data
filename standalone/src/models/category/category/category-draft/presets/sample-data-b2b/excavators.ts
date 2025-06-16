@@ -1,9 +1,10 @@
+import { TBuilder } from '@/core';
 import { LocalizedStringDraft } from '../../../../../commons';
-import type { TCategoryDraftBuilder } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 
-const excavators = (): TCategoryDraftBuilder =>
-  empty()
+const excavators = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

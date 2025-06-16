@@ -1,15 +1,16 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import excavators from './excavators';
 
 const excavatorsCategory = excavators().build<TCategoryDraft>();
 
-const largeScaleMiningExcavators = (): TCategoryDraftBuilder =>
-  empty()
+const largeScaleMiningExcavators = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

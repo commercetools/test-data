@@ -1,16 +1,17 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import highCapacityFrontEndLoaders from './high-capacity-front-end-loaders';
 
 const highCapacityFrontEndLoadersCategory =
   highCapacityFrontEndLoaders().build<TCategoryDraft>();
 
-const quarryLoaders = (): TCategoryDraftBuilder =>
-  empty()
+const quarryLoaders = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

@@ -1,16 +1,17 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import largeDiameterMiningDrills from './large-diameter-mining-drills';
 
 const largeDiameterMiningDrillsCategory =
   largeDiameterMiningDrills().build<TCategoryDraft>();
 
-const productionDrills = (): TCategoryDraftBuilder =>
-  empty()
+const productionDrills = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

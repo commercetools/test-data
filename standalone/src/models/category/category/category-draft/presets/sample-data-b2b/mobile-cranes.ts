@@ -1,16 +1,17 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import heavyDutyConstructionCranes from './heavy-duty-construction-cranes';
 
 const heavyDutyConstructionCranesCategory =
   heavyDutyConstructionCranes().build<TCategoryDraft>();
 
-const mobileCranes = (): TCategoryDraftBuilder =>
-  empty()
+const mobileCranes = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(
       LocalizedStringDraft.presets
         .empty()

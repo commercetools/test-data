@@ -1,15 +1,16 @@
+import { TBuilder } from '@/core';
 import {
   LocalizedStringDraft,
   KeyReferenceDraft,
 } from '../../../../../commons';
-import type { TCategoryDraftBuilder, TCategoryDraft } from '../../../types';
-import empty from '../empty';
+import type { TCategoryDraft } from '../../../types';
+import { compatPreset as emptyCompatPreset } from '../empty/empty';
 import kids from './kids';
 
 const kidsCategoryDraft = kids().build<TCategoryDraft>();
 
-const clothingKids = (): TCategoryDraftBuilder =>
-  empty()
+const clothingKids = (): TBuilder<TCategoryDraft> =>
+  emptyCompatPreset()
     .name(LocalizedStringDraft.presets.empty()['en-US']('Clothing'))
     .slug(LocalizedStringDraft.presets.empty()['en-US']('clothing_kids'))
     .parent(KeyReferenceDraft.presets.category().key(kidsCategoryDraft.key!))
