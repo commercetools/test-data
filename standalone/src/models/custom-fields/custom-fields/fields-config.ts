@@ -24,7 +24,7 @@ export const graphqlFieldsConfig: TModelFieldsConfig<TCustomFieldsGraphql> = {
           .typeReference()
           .id(model.type.id)
           .buildGraphql()
-      : undefined;
+      : ReferenceGraphql.presets.typeReference().buildGraphql();
 
     return {
       ...model,
